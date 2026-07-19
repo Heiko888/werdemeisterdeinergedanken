@@ -19,7 +19,11 @@ export function Compass() {
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal className="order-2 lg:order-1">
           <div className="relative mx-auto w-full max-w-sm">
-            <PhotoFrame aspect="square" caption="Stimmungsbild folgt" />
+            <PhotoFrame
+              src="/kompass-weg.webp"
+              alt="Der Weg der Bewusstseinsentwicklung: sieben Wegweiser entlang eines Waldpfads – von „Erkenne deine Gedanken“ bis „Entfalte dein Potenzial“ – mit einem energetischen Kompass im Vordergrund"
+              aspect="portrait"
+            />
           </div>
         </Reveal>
 
