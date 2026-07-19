@@ -41,7 +41,7 @@ export default function SevenStagesPage() {
                 <span className="relative z-10 flex h-13 w-13 shrink-0 items-center justify-center rounded-full border border-white/15 bg-navy-900 font-display text-lg font-bold text-gradient">
                   {stage.number}
                 </span>
-                <div className="flex-1 rounded-2xl border border-white/10 bg-navy-800/40 p-6 transition-colors hover:border-brand-400/30">
+                <div className="min-w-0 flex-1 rounded-2xl border border-white/10 bg-navy-800/40 p-6 transition-colors hover:border-brand-400/30">
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                     <h2 className="text-xl font-bold text-white sm:text-2xl">
                       {stage.title}

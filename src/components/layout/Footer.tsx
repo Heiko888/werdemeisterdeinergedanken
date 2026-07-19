@@ -32,7 +32,7 @@ export function Footer() {
       </Container>
 
       {/* Link-Bereich */}
-      <Container className="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-4">
+      <Container className="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
         <div className="flex flex-col gap-4">
           <Logo />
           <p className="max-w-xs text-sm leading-relaxed text-mist-300/70">
@@ -106,7 +106,7 @@ export function Footer() {
           </div>
           <a
             href={`mailto:${site.email}`}
-            className="mt-5 inline-block text-sm text-mist-300/70 transition-colors hover:text-white"
+            className="mt-5 inline-block break-all text-sm text-mist-300/70 transition-colors hover:text-white"
           >
             {site.email}
           </a>

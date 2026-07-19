@@ -26,24 +26,24 @@ export default function ContactPage() {
       />
 
       <section className="pb-8">
-        <Container className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+        <Container className="grid gap-10 lg:grid-cols-[1.4fr_1fr] [&>*]:min-w-0">
           <ContactForm />
 
-          <aside className="flex flex-col gap-5">
+          <aside className="flex min-w-0 flex-col gap-5">
             <div className="rounded-3xl border border-white/10 bg-navy-800/40 p-6">
               <h2 className="text-lg font-bold text-white">Direkt erreichen</h2>
               <a
                 href={`mailto:${site.email}`}
-                className="mt-4 flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-mist-100 transition-colors hover:border-brand-400/40"
+                className="mt-4 flex min-w-0 items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-mist-100 transition-colors hover:border-brand-400/40"
               >
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-500/20 text-lg text-cosmic-cyan">
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-500/20 text-lg text-cosmic-cyan">
                   <Mail />
                 </span>
-                <span>
+                <span className="min-w-0">
                   <span className="block text-xs uppercase tracking-wider text-mist-300/60">
                     E-Mail
                   </span>
-                  {site.email}
+                  <span className="block break-all">{site.email}</span>
                 </span>
               </a>
             </div>

@@ -13,13 +13,14 @@ export const site = {
   url: "https://www.werdemeisterdeinergedanken.de",
   author: "Heiko Schwaninger",
   email: "heiko.schwaninger@gmail.com", // TODO: ggf. offizielle Business-Adresse
-  // TODO: echte Profile eintragen
+  // Nur echte Profile eintragen (leere/Platzhalter weglassen, sonst tote Links).
   social: {
-    instagram: "https://www.instagram.com/",
+    youtube: "https://www.youtube.com/@WerdeMeisterdeinerGedanken",
     facebook: "https://www.facebook.com/Heiko.SPunkt",
-    youtube: "https://www.youtube.com/",
     linkedin: "https://de.linkedin.com/in/werdemeisterdeinergedanken",
-    telegram: "https://t.me/",
+    // TODO: echte URLs ergänzen, dann werden die Icons automatisch angezeigt:
+    // instagram: "https://www.instagram.com/…",
+    // telegram: "https://t.me/…",
   },
 } as const;
 
