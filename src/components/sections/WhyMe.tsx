@@ -32,7 +32,7 @@ export function WhyMe() {
           </div>
 
           <div className="mt-2 flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-300 to-cosmic-violet text-lg font-bold text-navy-950">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-400 to-teal-500 text-lg font-bold text-navy-950">
               HS
             </div>
             <div>

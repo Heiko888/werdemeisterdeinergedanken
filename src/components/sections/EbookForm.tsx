@@ -49,7 +49,7 @@ export function EbookForm() {
           placeholder="Deine E-Mail-Adresse"
           className="h-13 flex-1 rounded-full border border-white/15 bg-navy-950/60 px-5 text-sm text-white placeholder:text-mist-300/50 focus:border-brand-400 focus:outline-none"
         />
-        <Button type="submit" variant="gold" size="lg">
+        <Button type="submit" variant="accent" size="lg">
           E-Book sichern
           <ArrowRight />
         </Button>

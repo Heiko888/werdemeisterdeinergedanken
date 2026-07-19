@@ -34,13 +34,22 @@
   --color-brand-800: #1a3a8a;
   --color-brand-900: #1a336f;
 
-  /* ---- Kosmische Akzente ---- */
-  --color-cosmic-violet: #7c3aed;
-  --color-cosmic-magenta: #c026d3;
-  --color-cosmic-cyan: #22d3ee;
+  /* ---- Marken-Akzente aus dem Logo: Lindgrün → Teal ---- */
+  --color-leaf-300: #b6e06a;
+  --color-leaf-400: #a3d64f;
+  --color-leaf-500: #8cc63f;
+  --color-leaf-600: #74ab2f;
+  --color-teal-300: #5fd6d2;
+  --color-teal-400: #34c4c4;
+  --color-teal-500: #21b2bd;
+  --color-teal-600: #199aa8;
+
+  /* ---- Kosmische Tiefe (dezent, für Verläufe) ---- */
+  --color-cosmic-violet: #6d5ae0;
+  --color-cosmic-cyan: #34c4c4;
   --color-cosmic-teal: #2dd4bf;
 
-  /* ---- Gold (Sterne / Highlights / Logo) ---- */
+  /* ---- Gold (nur Sterne / Bewertungen) ---- */
   --color-gold-300: #f2d489;
   --color-gold-400: #e8c15f;
   --color-gold-500: #d9a93a;
@@ -187,20 +196,21 @@
   .text-gradient {
     background: linear-gradient(
       100deg,
-      var(--color-brand-300) 0%,
-      var(--color-cosmic-cyan) 45%,
-      var(--color-cosmic-violet) 100%
+      var(--color-leaf-400) 0%,
+      var(--color-teal-400) 50%,
+      var(--color-brand-400) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
-  .text-gradient-gold {
+  /* Marken-Signatur: Lindgrün → Teal (wie im Logo) */
+  .text-gradient-leaf {
     background: linear-gradient(
       100deg,
-      var(--color-gold-300),
-      var(--color-gold-500)
+      var(--color-leaf-500) 0%,
+      var(--color-teal-400) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -234,18 +244,18 @@
   .bg-cosmic {
     background:
       radial-gradient(
-        60% 50% at 15% 0%,
-        color-mix(in oklab, var(--color-cosmic-violet) 22%, transparent) 0%,
+        60% 50% at 12% 4%,
+        color-mix(in oklab, var(--color-teal-500) 20%, transparent) 0%,
         transparent 60%
       ),
       radial-gradient(
-        55% 45% at 90% 10%,
+        55% 45% at 90% 8%,
         color-mix(in oklab, var(--color-brand-500) 22%, transparent) 0%,
         transparent 55%
       ),
       radial-gradient(
-        50% 40% at 60% 100%,
-        color-mix(in oklab, var(--color-cosmic-cyan) 14%, transparent) 0%,
+        50% 42% at 60% 100%,
+        color-mix(in oklab, var(--color-leaf-500) 12%, transparent) 0%,
         transparent 55%
       ),
       var(--color-navy-950);

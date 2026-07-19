@@ -22,13 +22,13 @@ export function LeadMagnet() {
             <div className="relative animate-float">
               <div className="absolute -inset-6 rounded-full bg-brand-500/20 blur-3xl" />
               <div className="relative h-72 w-56 rounded-r-lg rounded-l-sm bg-gradient-to-br from-navy-700 to-navy-950 shadow-2xl ring-1 ring-white/10">
-                <div className="absolute left-0 top-0 h-full w-2.5 rounded-l-sm bg-gradient-to-b from-gold-300 to-cosmic-violet" />
+                <div className="absolute left-0 top-0 h-full w-2.5 rounded-l-sm bg-gradient-to-b from-leaf-400 to-teal-500" />
                 <div className="flex h-full flex-col items-center justify-between p-6 text-center">
                   <span className="mt-2 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-brand-200">
                     Kostenloses E-Book
                   </span>
                   <div className="flex flex-col items-center gap-3">
-                    <span className="h-14 w-14 rounded-full bg-gradient-to-br from-gold-300 via-cosmic-cyan to-cosmic-violet" />
+                    <span className="h-14 w-14 rounded-full bg-gradient-to-br from-leaf-400 via-teal-400 to-brand-500" />
                     <h3 className="font-display text-lg font-bold leading-tight text-white">
                       Werde Meister deiner Gedanken
                     </h3>

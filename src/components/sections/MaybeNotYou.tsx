@@ -10,7 +10,7 @@ export function MaybeNotYou() {
       <Container size="narrow" className="flex flex-col items-center gap-8 text-center">
         <Eyebrow>Ein anderer Blickwinkel</Eyebrow>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-          Was, wenn es <span className="text-gradient-gold">nicht an dir</span>{" "}
+          Was, wenn es <span className="text-gradient-leaf">nicht an dir</span>{" "}
           liegt?
         </h2>
         <p className="prose-lead max-w-2xl">

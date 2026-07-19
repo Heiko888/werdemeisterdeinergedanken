@@ -24,7 +24,7 @@ export function Footer() {
             unverbindlichen Gespräch finden wir heraus, wo du stehst – und was
             dein nächster Schritt ist.
           </p>
-          <Button href="/kontakt" variant="gold" size="lg">
+          <Button href="/kontakt" variant="accent" size="lg">
             Jetzt Gespräch vereinbaren
             <ArrowRight />
           </Button>

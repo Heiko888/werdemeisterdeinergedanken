@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
-type Variant = "primary" | "secondary" | "ghost" | "gold";
+type Variant = "primary" | "secondary" | "ghost" | "accent";
 type Size = "md" | "lg";
 
 const variants: Record<Variant, string> = {
@@ -11,7 +11,8 @@ const variants: Record<Variant, string> = {
   secondary:
     "glass-strong text-white hover:border-white/25 hover:-translate-y-0.5",
   ghost: "text-brand-200 hover:text-white hover:bg-white/5",
-  gold: "bg-gradient-to-r from-gold-300 to-gold-500 text-navy-950 font-semibold hover:brightness-110 hover:-translate-y-0.5",
+  accent:
+    "bg-gradient-to-r from-leaf-500 to-teal-400 text-navy-950 font-semibold hover:brightness-110 hover:-translate-y-0.5",
 };
 
 const sizes: Record<Size, string> = {

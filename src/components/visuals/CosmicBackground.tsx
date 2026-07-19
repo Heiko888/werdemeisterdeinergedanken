@@ -29,10 +29,10 @@ export function CosmicBackground({
       )}
 
       {/* Leucht-Orbs */}
-      <div className="absolute -left-24 top-[-10%] h-[28rem] w-[28rem] rounded-full bg-cosmic-violet/25 blur-[90px] animate-pulse-slow" />
+      <div className="absolute -left-24 top-[-10%] h-[28rem] w-[28rem] rounded-full bg-teal-500/20 blur-[90px] animate-pulse-slow" />
       <div className="absolute right-[-10%] top-[6%] h-[26rem] w-[26rem] rounded-full bg-brand-500/25 blur-[100px] animate-pulse-slow" />
       {variant === "hero" && (
-        <div className="absolute left-1/2 bottom-[-20%] h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-cosmic-cyan/15 blur-[110px]" />
+        <div className="absolute left-1/2 bottom-[-20%] h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-leaf-500/12 blur-[110px]" />
       )}
 
       {/* unterer Abschluss zum Body */}

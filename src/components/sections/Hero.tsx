@@ -23,7 +23,7 @@ export function Hero() {
             <span className="text-gradient">Schlüssel</span>.
             <br />
             Deine Gedanken sind der{" "}
-            <span className="text-gradient-gold">Code</span>.
+            <span className="text-gradient-leaf">Code</span>.
           </h1>
 
           <p className="prose-lead max-w-xl">

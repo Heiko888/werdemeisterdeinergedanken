@@ -66,7 +66,7 @@ export default function SevenStagesPage() {
               In einem kostenlosen Erstgespräch finden wir gemeinsam heraus, wo du
               gerade stehst und welcher Schritt für dich als Nächstes dran ist.
             </p>
-            <Button href="/kontakt" variant="gold" size="lg">
+            <Button href="/kontakt" variant="accent" size="lg">
               Kostenloses Erstgespräch
               <ArrowRight />
             </Button>

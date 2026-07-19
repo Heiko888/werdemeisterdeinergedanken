@@ -18,7 +18,7 @@ export function FinalCta() {
           bewusster wählst, verändert dein Leben ein Stück. Fang heute an.
         </p>
         <div className="flex flex-col gap-3 sm:flex-row">
-          <Button href="/kontakt" variant="gold" size="lg">
+          <Button href="/kontakt" variant="accent" size="lg">
             Kostenloses Erstgespräch
             <ArrowRight />
           </Button>

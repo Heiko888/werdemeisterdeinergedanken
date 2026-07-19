@@ -36,8 +36,8 @@ export function NeuralOrb({ className }: { className?: string }) {
   return (
     <div className={cn("relative aspect-square", className)}>
       {/* Glow */}
-      <div className="absolute inset-[12%] rounded-full bg-brand-500/30 blur-3xl animate-pulse-slow" />
-      <div className="absolute inset-[26%] rounded-full bg-cosmic-violet/25 blur-2xl" />
+      <div className="absolute inset-[12%] rounded-full bg-teal-500/30 blur-3xl animate-pulse-slow" />
+      <div className="absolute inset-[26%] rounded-full bg-leaf-500/20 blur-2xl" />
 
       <svg
         viewBox="0 0 200 200"
@@ -50,10 +50,10 @@ export function NeuralOrb({ className }: { className?: string }) {
             <stop offset="45%" stopColor="#3670ee" />
             <stop offset="100%" stopColor="#0b1636" />
           </radialGradient>
-          <linearGradient id="orb-ring" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#22d3ee" />
-            <stop offset="60%" stopColor="#7c3aed" />
-            <stop offset="100%" stopColor="#c026d3" />
+          <linearGradient id="orb-ring" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stopColor="#a6d64c" />
+            <stop offset="50%" stopColor="#34c4c4" />
+            <stop offset="100%" stopColor="#5b8cff" />
           </linearGradient>
         </defs>
 
@@ -109,7 +109,7 @@ export function NeuralOrb({ className }: { className?: string }) {
               cx={x}
               cy={y}
               r={i % 3 === 0 ? 2.6 : 1.8}
-              fill={i % 4 === 0 ? "#f2d489" : "#eaf0fb"}
+              fill={i % 4 === 0 ? "#a6d64c" : "#eaf0fb"}
             >
               <animate
                 attributeName="opacity"
