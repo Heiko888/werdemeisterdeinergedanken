@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
+import { Reveal } from "@/components/ui/Reveal";
 import { Check } from "@/components/ui/Icon";
 import { EbookForm } from "./EbookForm";
 
@@ -11,53 +12,61 @@ const bullets = [
 
 export function LeadMagnet() {
   return (
-    <section className="relative overflow-hidden bg-navy-900 py-20 sm:py-24">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-25" />
-      <div className="pointer-events-none absolute -left-20 top-1/2 -z-10 h-[24rem] w-[24rem] -translate-y-1/2 rounded-full bg-brand-600/15 blur-[110px]" />
-
-      <Container>
-        <div className="glass-strong grid items-center gap-10 rounded-3xl p-8 sm:p-12 lg:grid-cols-[1fr_1.1fr]">
-          {/* Buch-Mockup */}
+    <section className="relative border-t border-white/10 bg-navy-900 py-24 sm:py-32">
+      <Container className="grid items-center gap-16 lg:grid-cols-[0.8fr_1fr]">
+        {/* Buch-Mockup */}
+        <Reveal className="order-2 lg:order-1">
           <div className="flex justify-center">
-            <div className="relative animate-float">
-              <div className="absolute -inset-6 rounded-full bg-brand-500/20 blur-3xl" />
-              <div className="relative h-72 w-56 rounded-r-lg rounded-l-sm bg-gradient-to-br from-navy-700 to-navy-950 shadow-2xl ring-1 ring-white/10">
-                <div className="absolute left-0 top-0 h-full w-2.5 rounded-l-sm bg-gradient-to-b from-leaf-400 to-teal-500" />
-                <div className="flex h-full flex-col items-center justify-between p-6 text-center">
-                  <span className="mt-2 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-brand-200">
+            <div className="relative">
+              <div
+                aria-hidden
+                className="absolute -inset-8 -z-10 rounded-full opacity-40 blur-3xl"
+                style={{
+                  background:
+                    "radial-gradient(circle, color-mix(in oklab, var(--color-leaf-500) 26%, transparent), transparent 70%)",
+                }}
+              />
+              <div className="relative h-80 w-60 overflow-hidden rounded-[2px] bg-gradient-to-br from-navy-800 to-navy-950 shadow-2xl ring-1 ring-white/10">
+                <div className="absolute left-0 top-0 h-full w-2 bg-gradient-to-b from-leaf-400 to-teal-500" />
+                <div className="flex h-full flex-col items-center justify-between p-7 text-center">
+                  <span className="mt-1 text-[0.6rem] font-semibold uppercase tracking-[0.24em] text-leaf-400/80">
                     Kostenloses E-Book
                   </span>
-                  <div className="flex flex-col items-center gap-3">
-                    <span className="h-14 w-14 rounded-full bg-gradient-to-br from-leaf-400 via-teal-400 to-brand-500" />
-                    <h3 className="font-display text-lg font-bold leading-tight text-white">
+                  <div className="flex flex-col items-center gap-4">
+                    <span className="h-12 w-12 rounded-full bg-gradient-to-br from-leaf-400 via-teal-400 to-brand-500" />
+                    <h3 className="font-display text-xl italic leading-tight text-cream">
                       Werde Meister deiner Gedanken
                     </h3>
                   </div>
-                  <span className="text-[0.65rem] text-mist-300/60">
+                  <span className="text-[0.65rem] uppercase tracking-[0.18em] text-cream-dim/50">
                     Heiko Schwaninger
                   </span>
                 </div>
               </div>
             </div>
           </div>
+        </Reveal>
 
-          {/* Text + Formular */}
+        {/* Text + Formular */}
+        <Reveal delay={100} className="order-1 lg:order-2">
           <div className="flex flex-col items-start gap-6">
             <Eyebrow>Gratis-Einstieg</Eyebrow>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Werde du selbst zum bewussten Gestalter deiner Gedanken
+            <h2 className="text-[2rem] font-medium leading-[1.12] text-cream sm:text-4xl">
+              Werde zum bewussten{" "}
+              <em className="accent">Gestalter deiner Gedanken</em>
             </h2>
-            <p className="prose-lead">
+            <p className="text-[1.05rem] leading-relaxed text-cream-dim/75">
               Sichere dir das kostenlose E-Book und mach den ersten Schritt.
               Kompakt, klar und sofort umsetzbar.
             </p>
 
             <ul className="flex flex-col gap-2.5">
               {bullets.map((b) => (
-                <li key={b} className="flex items-center gap-3 text-sm text-mist-100/85">
-                  <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-500/20 text-cosmic-cyan">
-                    <Check className="text-xs" />
-                  </span>
+                <li
+                  key={b}
+                  className="flex items-center gap-3 text-sm text-cream-dim/80"
+                >
+                  <Check className="text-base text-leaf-400" />
                   {b}
                 </li>
               ))}
@@ -65,7 +74,7 @@ export function LeadMagnet() {
 
             <EbookForm />
           </div>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

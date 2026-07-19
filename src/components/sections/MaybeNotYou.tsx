@@ -1,43 +1,50 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Brain } from "@/components/ui/Icon";
+import { Reveal } from "@/components/ui/Reveal";
+import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { Eyebrow } from "@/components/ui/SectionHeading";
+import { ArrowRight } from "@/components/ui/Icon";
 
 export function MaybeNotYou() {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-24">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-cosmic opacity-90" />
-      <Container size="narrow" className="flex flex-col items-center gap-8 text-center">
-        <Eyebrow>Ein anderer Blickwinkel</Eyebrow>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-          Was, wenn es <span className="text-gradient-leaf">nicht an dir</span>{" "}
-          liegt?
-        </h2>
-        <p className="prose-lead max-w-2xl">
-          Vielleicht hast du dir schon oft die Schuld gegeben – zu wenig
-          Disziplin, zu wenig Willenskraft. Doch was, wenn das Problem nie deine
-          Schwäche war, sondern ein Programm, das nie hinterfragt wurde? Genau da
-          setzen wir an.
-        </p>
-
-        {/* Video-Platzhalter */}
-        <div className="group relative aspect-video w-full max-w-2xl overflow-hidden rounded-3xl border border-white/10 bg-navy-800/60">
-          <div className="absolute inset-0 bg-stars opacity-40" />
-          <div className="absolute inset-0 bg-gradient-to-tr from-cosmic-violet/25 via-transparent to-brand-500/25" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-            <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-3xl text-white backdrop-blur transition-transform duration-300 group-hover:scale-110">
-              <Brain />
-            </span>
-            <p className="text-sm font-medium text-mist-200/70">
-              Videobotschaft folgt in Kürze
+    <section className="relative py-24 sm:py-32">
+      <Container className="grid items-center gap-14 lg:grid-cols-2">
+        <Reveal>
+          <div className="flex flex-col items-start gap-6">
+            <div className="flex items-baseline gap-3">
+              <span className="font-display text-sm italic text-cream-dim/70">
+                06
+              </span>
+              <Eyebrow>Ein anderer Blickwinkel</Eyebrow>
+            </div>
+            <h2 className="text-[2.1rem] font-medium leading-[1.1] text-cream sm:text-5xl">
+              Was, wenn es{" "}
+              <em className="accent">nicht an dir</em> liegt?
+            </h2>
+            <p className="text-[1.05rem] leading-relaxed text-cream-dim/75">
+              Vielleicht hast du dir schon oft die Schuld gegeben – zu wenig
+              Disziplin, zu wenig Willenskraft. Doch was, wenn das Problem nie
+              deine Schwäche war, sondern ein Programm, das nie hinterfragt wurde?
+              Genau da setzen wir an.
             </p>
+            <Button href="/kontakt" variant="secondary" size="lg" className="mt-2">
+              Lass uns darüber sprechen
+              <ArrowRight />
+            </Button>
           </div>
-        </div>
+        </Reveal>
 
-        <Button href="/kontakt" variant="primary" size="lg">
-          Lass uns darüber sprechen
-          <ArrowRight />
-        </Button>
+        <Reveal delay={120}>
+          <div className="relative mx-auto w-full max-w-md">
+            <PhotoFrame aspect="landscape" caption="Videobotschaft folgt" />
+            {/* dezenter Play-Hinweis */}
+            <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-navy-950/40 backdrop-blur">
+              <svg viewBox="0 0 24 24" className="h-5 w-5 translate-x-0.5 fill-cream" aria-hidden>
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+          </div>
+        </Reveal>
       </Container>
     </section>
   );

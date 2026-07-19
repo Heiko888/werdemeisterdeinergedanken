@@ -9,33 +9,28 @@ export function Footer() {
   const year = 2026;
 
   return (
-    <footer className="relative mt-24 overflow-hidden border-t border-white/10 bg-navy-900">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-30" />
-      <div className="pointer-events-none absolute -top-1/2 left-1/2 -z-10 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-brand-500/10 blur-[120px]" />
-
+    <footer className="relative overflow-hidden border-t border-white/10 bg-navy-900">
       {/* CTA-Band */}
-      <Container className="py-14">
-        <div className="glass-strong flex flex-col items-center gap-6 rounded-3xl px-6 py-12 text-center sm:px-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white">
-            Bereit für neuen Input?
-          </h2>
-          <p className="prose-lead max-w-xl">
-            Mach den ersten Schritt zu einem klareren Kopf. In einem
-            unverbindlichen Gespräch finden wir heraus, wo du stehst – und was
-            dein nächster Schritt ist.
-          </p>
-          <Button href="/kontakt" variant="accent" size="lg">
-            Jetzt Gespräch vereinbaren
-            <ArrowRight />
-          </Button>
-        </div>
+      <Container className="flex flex-col items-center gap-6 py-20 text-center">
+        <h2 className="max-w-2xl text-[2rem] font-medium leading-[1.1] text-cream sm:text-4xl">
+          Bereit für <em className="accent">neuen Input</em>?
+        </h2>
+        <p className="max-w-xl text-[1.05rem] leading-relaxed text-cream-dim/75">
+          Mach den ersten Schritt zu einem klareren Kopf. In einem
+          unverbindlichen Gespräch finden wir heraus, wo du stehst – und was dein
+          nächster Schritt ist.
+        </p>
+        <Button href="/kontakt" variant="accent" size="lg">
+          Jetzt Gespräch vereinbaren
+          <ArrowRight />
+        </Button>
       </Container>
 
       {/* Link-Bereich */}
-      <Container className="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
+      <Container className="grid gap-10 border-t border-white/10 py-14 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
         <div className="flex flex-col gap-4">
           <Logo />
-          <p className="max-w-xs text-sm leading-relaxed text-mist-300/70">
+          <p className="max-w-xs text-sm leading-relaxed text-cream-dim/65">
             {site.tagline}. Ein Weg zurück zu Klarheit, innerer Ruhe und der
             Fähigkeit, deine Gedanken bewusst zu gestalten.
           </p>

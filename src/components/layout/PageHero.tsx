@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Container } from "@/components/ui/Container";
-import { CosmicBackground } from "@/components/visuals/CosmicBackground";
+import { Reveal } from "@/components/ui/Reveal";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 
 export function PageHero({
@@ -15,15 +15,34 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden pt-16 pb-16 sm:pt-24 sm:pb-20">
-      <CosmicBackground />
+    <section className="grain relative overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "radial-gradient(55% 60% at 50% 0%, color-mix(in oklab, var(--color-teal-500) 12%, transparent), transparent 65%)",
+        }}
+      />
       <Container className="flex flex-col items-center gap-6 text-center">
-        {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-        <h1 className="max-w-3xl text-[1.6rem] font-bold text-white [overflow-wrap:anywhere] sm:text-5xl md:text-6xl">
-          {title}
-        </h1>
-        {intro && <p className="prose-lead max-w-2xl">{intro}</p>}
-        {children}
+        {eyebrow && (
+          <Reveal>
+            <Eyebrow>{eyebrow}</Eyebrow>
+          </Reveal>
+        )}
+        <Reveal delay={80}>
+          <h1 className="max-w-3xl text-[2.1rem] font-medium leading-[1.08] text-cream [overflow-wrap:anywhere] sm:text-5xl md:text-[3.4rem]">
+            {title}
+          </h1>
+        </Reveal>
+        {intro && (
+          <Reveal delay={140}>
+            <p className="max-w-2xl text-[1.05rem] leading-relaxed text-cream-dim/75">
+              {intro}
+            </p>
+          </Reveal>
+        )}
+        {children && <Reveal delay={200}>{children}</Reveal>}
       </Container>
     </section>
   );

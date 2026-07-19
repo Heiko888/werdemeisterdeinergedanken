@@ -1,52 +1,60 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Reveal } from "@/components/ui/Reveal";
 import { StarRating } from "@/components/ui/StarRating";
 import { testimonials } from "@/lib/content";
 
 export function Testimonials() {
   return (
-    <section id="stimmen" className="relative overflow-hidden bg-navy-900 py-20 sm:py-28">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-20" />
-      <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[24rem] w-[44rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cosmic-violet/10 blur-[120px]" />
-
+    <section
+      id="stimmen"
+      className="relative border-t border-white/10 bg-navy-900 py-24 sm:py-32"
+    >
       <Container>
-        <SectionHeading
-          eyebrow="Stimmen"
-          title="Menschen, die den Weg gegangen sind"
-          intro="Echte Erfahrungen von Menschen, die gelernt haben, ihre Gedanken zu meistern."
-        />
+        <Reveal>
+          <SectionHeading
+            index="05"
+            eyebrow="Stimmen"
+            title={
+              <>
+                Menschen, die den Weg{" "}
+                <em className="accent">gegangen sind</em>
+              </>
+            }
+            intro="Echte Erfahrungen von Menschen, die gelernt haben, ihre Gedanken zu meistern."
+          />
+        </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-3">
-          {testimonials.map((t) => (
-            <figure
-              key={t.name}
-              className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-navy-800/50 p-7"
-            >
-              <StarRating rating={t.rating} />
-              <blockquote className="flex-1 text-sm leading-relaxed text-mist-100/85">
-                „{t.quote}“
-              </blockquote>
-              <figcaption className="flex items-center gap-3 border-t border-white/10 pt-4">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-cosmic-violet text-sm font-bold text-white">
-                  {t.name
-                    .split(" ")
-                    .map((w) => w[0])
-                    .join("")}
+        <div className="mt-16 grid gap-x-10 gap-y-12 md:grid-cols-3">
+          {testimonials.map((t, i) => (
+            <Reveal key={t.name} delay={i * 90}>
+              <figure className="flex min-w-0 flex-col gap-5 border-t border-white/10 pt-6">
+                <span
+                  className="font-display text-5xl italic leading-none text-leaf-400/50"
+                  aria-hidden
+                >
+                  &ldquo;
                 </span>
-                <span>
-                  <span className="block text-sm font-semibold text-white">
-                    {t.name}
+                <blockquote className="flex-1 font-display text-lg italic leading-relaxed text-cream/90">
+                  {t.quote}
+                </blockquote>
+                <figcaption className="flex items-center justify-between gap-3 pt-2">
+                  <span>
+                    <span className="block text-sm font-medium text-cream">
+                      {t.name}
+                    </span>
+                    <span className="block text-xs text-cream-dim/55">
+                      {t.role}
+                    </span>
                   </span>
-                  <span className="block text-xs text-mist-300/60">
-                    {t.role}
-                  </span>
-                </span>
-              </figcaption>
-            </figure>
+                  <StarRating rating={t.rating} className="text-sm" />
+                </figcaption>
+              </figure>
+            </Reveal>
           ))}
         </div>
 
-        <p className="mt-8 text-center text-xs text-mist-300/50">
+        <p className="mt-12 text-center text-xs text-cream-dim/45">
           Namen geändert · Erfahrungsberichte sind individuell und keine Garantie
           für ein bestimmtes Ergebnis.
         </p>

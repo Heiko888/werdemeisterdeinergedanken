@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "@/components/ui/Icon";
+import { Reveal } from "@/components/ui/Reveal";
+import { ArrowLink } from "@/components/ui/ArrowLink";
 import { stages } from "@/lib/content";
 import { cn } from "@/lib/cn";
 
@@ -21,75 +21,63 @@ export function StageCard({
   return (
     <article
       className={cn(
-        "group relative flex flex-col gap-3 rounded-2xl border border-white/10 bg-navy-800/40 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/40 hover:bg-navy-800/70",
+        "group relative flex min-w-0 flex-col gap-3 border-t border-white/10 pt-6 transition-colors duration-300 hover:border-leaf-400/40",
         className,
       )}
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        style={{
-          background:
-            "radial-gradient(120% 80% at 0% 0%, color-mix(in oklab, var(--color-brand-500) 16%, transparent), transparent 60%)",
-        }}
-      />
-      <div className="relative flex items-center gap-3">
-        <span className="font-display text-3xl font-bold text-gradient">
+      <div className="flex items-baseline justify-between">
+        <span className="font-display text-4xl italic text-leaf-400/80">
           {number}
         </span>
-        <span className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent" />
+        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-cream-dim/50">
+          {subtitle}
+        </span>
       </div>
-      <h3 className="relative text-xl font-bold text-white">{title}</h3>
-      <p className="relative text-xs font-semibold uppercase tracking-wider text-brand-200">
-        {subtitle}
-      </p>
-      <p className="relative text-sm leading-relaxed text-mist-200/70">
-        {description}
-      </p>
+      <h3 className="text-xl font-medium text-cream">{title}</h3>
+      <p className="text-sm leading-relaxed text-cream-dim/70">{description}</p>
     </article>
   );
 }
 
 export function SevenStages() {
   return (
-    <section id="angebot" className="relative overflow-hidden py-20 sm:py-28">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-20" />
-      <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[24rem] w-[40rem] -translate-x-1/2 rounded-full bg-cosmic-violet/10 blur-[120px]" />
-
+    <section id="angebot" className="relative py-24 sm:py-32">
       <Container>
-        <SectionHeading
-          eyebrow="Der Weg"
-          title={
-            <>
-              Die 7 Stufen der{" "}
-              <span className="text-gradient">Bewusstseinsentwicklung</span>
-            </>
-          }
-          intro="Kein loser Werkzeugkasten, sondern ein klarer Weg. Jede Stufe baut auf der vorherigen auf – von der ersten Ahnung bis zur echten Meisterschaft über deine Gedanken."
-        />
+        <Reveal>
+          <SectionHeading
+            index="01"
+            eyebrow="Der Weg"
+            title={
+              <>
+                Die 7 Stufen der{" "}
+                <em className="accent">Bewusstseinsentwicklung</em>
+              </>
+            }
+            intro="Kein loser Werkzeugkasten, sondern ein klarer Weg. Jede Stufe baut auf der vorherigen auf – von der ersten Ahnung bis zur echten Meisterschaft über deine Gedanken."
+          />
+        </Reveal>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {stages.map((stage) => (
-            <StageCard key={stage.number} {...stage} />
+        <div className="mt-16 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          {stages.map((stage, i) => (
+            <Reveal key={stage.number} delay={(i % 3) * 80}>
+              <StageCard {...stage} />
+            </Reveal>
           ))}
 
-          {/* Abschluss-Karte */}
-          <article className="relative flex flex-col justify-between gap-6 overflow-hidden rounded-2xl border border-brand-400/30 bg-gradient-to-br from-brand-600/30 to-cosmic-violet/20 p-6">
-            <div className="pointer-events-none absolute inset-0 bg-stars opacity-40" />
-            <div className="relative">
-              <h3 className="text-xl font-bold text-white">
-                Bereit, deinen Weg zu gehen?
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-mist-100/80">
-                Sieh dir die 7 Stufen im Detail an und finde heraus, wo du gerade
-                stehst.
-              </p>
+          <Reveal delay={80} className="sm:col-span-2 lg:col-span-1">
+            <div className="flex h-full flex-col justify-between gap-6 border-t border-leaf-400/30 pt-6">
+              <div>
+                <h3 className="font-display text-xl italic text-cream">
+                  Bereit, deinen Weg zu gehen?
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-cream-dim/70">
+                  Sieh dir die 7 Stufen im Detail an und finde heraus, wo du
+                  gerade stehst.
+                </p>
+              </div>
+              <ArrowLink href="/die-7-stufen">Stufen im Detail</ArrowLink>
             </div>
-            <Button href="/die-7-stufen" variant="secondary" className="relative w-fit">
-              Stufen im Detail
-              <ArrowRight />
-            </Button>
-          </article>
+          </Reveal>
         </div>
       </Container>
     </section>

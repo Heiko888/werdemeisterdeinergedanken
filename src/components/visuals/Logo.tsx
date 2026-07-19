@@ -31,10 +31,10 @@ export function Logo({
       <LogoMark className="transition-transform duration-300 group-hover:scale-105" />
       {!compact && (
         <span className="flex flex-col leading-none">
-          <span className="font-display text-[0.7rem] font-bold uppercase tracking-[0.14em] text-white">
+          <span className="font-sans text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-cream/90">
             Werde Meister deiner
           </span>
-          <span className="font-display text-[1.05rem] font-extrabold uppercase leading-none tracking-tight text-gradient-leaf">
+          <span className="font-sans text-[1.02rem] font-bold uppercase leading-none tracking-[0.12em] text-gradient-leaf">
             Gedanken
           </span>
         </span>

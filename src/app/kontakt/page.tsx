@@ -19,7 +19,7 @@ export default function ContactPage() {
         title={
           <>
             Lass uns über deinen{" "}
-            <span className="text-gradient">nächsten Schritt</span> sprechen
+            <em className="accent">nächsten Schritt</em> sprechen
           </>
         }
         intro="Ob konkrete Frage oder einfach der Wunsch, endlich anzufangen – schreib mir. Ich lese jede Nachricht persönlich."
@@ -75,11 +75,11 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-brand-400/25 bg-gradient-to-br from-brand-600/20 to-cosmic-violet/15 p-6">
-              <h2 className="text-lg font-bold text-white">
+            <div className="rounded-[2px] border border-leaf-400/25 bg-navy-800/40 p-6">
+              <h2 className="font-display text-lg italic text-cream">
                 Kostenloses Erstgespräch
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-mist-100/80">
+              <p className="mt-2 text-sm leading-relaxed text-cream-dim/75">
                 Unverbindlich und ehrlich. Wir klären, ob und wie ich dich am
                 besten unterstützen kann – ganz ohne Verkaufsdruck.
               </p>

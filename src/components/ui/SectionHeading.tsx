@@ -1,10 +1,22 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
-export function Eyebrow({ children }: { children: ReactNode }) {
+/** Feines editoriales Label: kurze Haarlinie + gesperrter Text. */
+export function Eyebrow({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-brand-200">
-      <span className="h-1.5 w-1.5 rounded-full bg-cosmic-cyan animate-pulse-slow" />
+    <span
+      className={cn(
+        "inline-flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-leaf-400/90",
+        className,
+      )}
+    >
+      <span className="h-px w-8 bg-leaf-400/50" aria-hidden />
       {children}
     </span>
   );
@@ -12,12 +24,14 @@ export function Eyebrow({ children }: { children: ReactNode }) {
 
 export function SectionHeading({
   eyebrow,
+  index,
   title,
   intro,
-  align = "center",
+  align = "left",
   className,
 }: {
   eyebrow?: string;
+  index?: string;
   title: ReactNode;
   intro?: ReactNode;
   align?: "center" | "left";
@@ -26,20 +40,29 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "flex flex-col gap-4",
+        "flex flex-col gap-5",
         align === "center" ? "items-center text-center" : "items-start text-left",
         className,
       )}
     >
-      {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-      <h2 className="text-[1.6rem] sm:text-4xl md:text-[2.75rem] font-bold text-white [overflow-wrap:anywhere]">
+      {(eyebrow || index) && (
+        <div className="flex items-baseline gap-3">
+          {index && (
+            <span className="font-display text-sm italic text-cream-dim/70">
+              {index}
+            </span>
+          )}
+          {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+        </div>
+      )}
+      <h2 className="max-w-3xl text-[1.75rem] font-medium leading-[1.1] text-cream [overflow-wrap:anywhere] sm:text-4xl md:text-[2.9rem]">
         {title}
       </h2>
       {intro && (
         <p
           className={cn(
-            "prose-lead",
-            align === "center" ? "max-w-2xl" : "max-w-xl",
+            "max-w-2xl text-[1.05rem] leading-relaxed text-cream-dim/75",
+            align === "center" && "mx-auto",
           )}
         >
           {intro}

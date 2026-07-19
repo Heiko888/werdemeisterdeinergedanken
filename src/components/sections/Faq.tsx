@@ -19,36 +19,35 @@ export function Faq({
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="relative py-20 sm:py-28">
+    <section className="relative border-t border-white/10 py-24 sm:py-32">
       <Container size="narrow">
         <SectionHeading eyebrow={eyebrow} title={title} />
 
-        <div className="mt-12 flex flex-col gap-3">
+        <div className="mt-12 flex flex-col">
           {items.map((item, i) => {
             const isOpen = open === i;
             return (
-              <div
-                key={item.question}
-                className={cn(
-                  "overflow-hidden rounded-2xl border transition-colors",
-                  isOpen
-                    ? "border-brand-400/40 bg-navy-800/60"
-                    : "border-white/10 bg-navy-800/30",
-                )}
-              >
+              <div key={item.question} className="border-t border-white/10 last:border-b">
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                  className="flex w-full items-center justify-between gap-4 py-5 text-left"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base font-semibold text-white">
+                  <span
+                    className={cn(
+                      "font-display text-lg transition-colors",
+                      isOpen ? "text-cream" : "text-cream/80",
+                    )}
+                  >
                     {item.question}
                   </span>
                   <span
                     className={cn(
-                      "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 text-lg text-brand-200 transition-transform duration-300",
-                      isOpen && "rotate-45 border-brand-400/50 text-cosmic-cyan",
+                      "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-lg transition-all duration-300",
+                      isOpen
+                        ? "rotate-45 border-leaf-400/50 text-leaf-400"
+                        : "border-white/15 text-cream-dim/60",
                     )}
                   >
                     <Plus />
@@ -57,13 +56,11 @@ export function Faq({
                 <div
                   className={cn(
                     "grid transition-all duration-300 ease-out",
-                    isOpen
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0",
+                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
                   )}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-5 text-sm leading-relaxed text-mist-200/75">
+                    <p className="max-w-2xl pb-6 text-[0.95rem] leading-relaxed text-cream-dim/70">
                       {item.answer}
                     </p>
                   </div>

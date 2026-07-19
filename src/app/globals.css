@@ -10,8 +10,9 @@
   /* ---- Typografie ---- */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, system-ui,
-    sans-serif;
+  /* Edle Serife für Überschriften */
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
 
   /* ---- Navy (Basis / dunkle Flächen) ---- */
   --color-navy-950: #050914;
@@ -60,9 +61,13 @@
   --color-mist-200: #dde5f1;
   --color-mist-300: #c3cfe2;
 
+  /* ---- Warmes Off-White für edle Anmutung ---- */
+  --color-cream: #f4f2ec;
+  --color-cream-dim: #d8d9d2;
+
   /* ---- Semantische Aliase ---- */
   --color-background: var(--color-navy-950);
-  --color-foreground: #eaf0fb;
+  --color-foreground: #e9edf4;
 
   /* ---- Radien ---- */
   --radius-xl: 1rem;
@@ -146,12 +151,13 @@
   h4,
   h5 {
     font-family: var(--font-display);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.12;
+    color: var(--color-cream);
     text-wrap: balance;
     /* Lange deutsche Komposita sauber umbrechen statt abschneiden */
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     hyphens: auto;
     /* Ankersprünge nicht unter dem Sticky-Header verstecken */
     scroll-margin-top: 6rem;
@@ -250,6 +256,34 @@
    ============================================================ */
 
 @layer utilities {
+  /* Feine Film-Grain-Textur für Tiefe (dezent). */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Serifen-Kursiv-Akzent für einzelne Wörter in Headlines */
+  .accent {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-leaf-400);
+  }
+
+  /* Feine editoriale Trennlinie */
+  .rule {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      color-mix(in oklab, var(--color-leaf-400) 60%, transparent),
+      transparent
+    );
+  }
+
   .bg-cosmic {
     background:
       radial-gradient(
