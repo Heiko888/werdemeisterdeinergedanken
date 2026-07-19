@@ -12,16 +12,16 @@ export function MaybeNotYou() {
         <Reveal>
           <div className="flex flex-col items-start gap-6">
             <div className="flex items-baseline gap-3">
-              <span className="font-display text-sm italic text-cream-dim/70">
+              <span className="font-display text-sm italic text-ink-soft/70">
                 06
               </span>
               <Eyebrow>Ein anderer Blickwinkel</Eyebrow>
             </div>
-            <h2 className="text-[2.1rem] font-medium leading-[1.1] text-cream sm:text-5xl">
+            <h2 className="text-[2.1rem] font-medium leading-[1.1] text-ink sm:text-5xl">
               Was, wenn es{" "}
               <em className="accent">nicht an dir</em> liegt?
             </h2>
-            <p className="text-[1.05rem] leading-relaxed text-cream-dim/75">
+            <p className="text-[1.05rem] leading-relaxed text-ink-soft/75">
               Vielleicht hast du dir schon oft die Schuld gegeben – zu wenig
               Disziplin, zu wenig Willenskraft. Doch was, wenn das Problem nie
               deine Schwäche war, sondern ein Programm, das nie hinterfragt wurde?
@@ -38,8 +38,8 @@ export function MaybeNotYou() {
           <div className="relative mx-auto w-full max-w-md">
             <PhotoFrame aspect="landscape" caption="Videobotschaft folgt" />
             {/* dezenter Play-Hinweis */}
-            <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-navy-950/40 backdrop-blur">
-              <svg viewBox="0 0 24 24" className="h-5 w-5 translate-x-0.5 fill-cream" aria-hidden>
+            <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-ink/20 bg-paper/70 backdrop-blur">
+              <svg viewBox="0 0 24 24" className="h-5 w-5 translate-x-0.5 fill-ink" aria-hidden>
                 <path d="M8 5v14l11-7z" />
               </svg>
             </span>

@@ -8,7 +8,7 @@ export function Testimonials() {
   return (
     <section
       id="stimmen"
-      className="relative border-t border-white/10 bg-navy-900 py-24 sm:py-32"
+      className="relative border-t border-ink/10 bg-white py-24 sm:py-32"
     >
       <Container>
         <Reveal>
@@ -28,22 +28,22 @@ export function Testimonials() {
         <div className="mt-16 grid gap-x-10 gap-y-12 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 90}>
-              <figure className="flex min-w-0 flex-col gap-5 border-t border-white/10 pt-6">
+              <figure className="flex min-w-0 flex-col gap-5 border-t border-ink/10 pt-6">
                 <span
-                  className="font-display text-5xl italic leading-none text-leaf-400/50"
+                  className="font-display text-5xl italic leading-none text-accent/50"
                   aria-hidden
                 >
                   &ldquo;
                 </span>
-                <blockquote className="flex-1 font-display text-lg italic leading-relaxed text-cream/90">
+                <blockquote className="flex-1 font-display text-lg italic leading-relaxed text-ink/90">
                   {t.quote}
                 </blockquote>
                 <figcaption className="flex items-center justify-between gap-3 pt-2">
                   <span>
-                    <span className="block text-sm font-medium text-cream">
+                    <span className="block text-sm font-medium text-ink">
                       {t.name}
                     </span>
-                    <span className="block text-xs text-cream-dim/55">
+                    <span className="block text-xs text-ink-soft/55">
                       {t.role}
                     </span>
                   </span>
@@ -54,7 +54,7 @@ export function Testimonials() {
           ))}
         </div>
 
-        <p className="mt-12 text-center text-xs text-cream-dim/45">
+        <p className="mt-12 text-center text-xs text-ink-soft/45">
           Namen geändert · Erfahrungsberichte sind individuell und keine Garantie
           für ein bestimmtes Ergebnis.
         </p>

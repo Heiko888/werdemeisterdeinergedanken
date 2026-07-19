@@ -19,7 +19,7 @@ export function Faq({
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="relative border-t border-white/10 py-24 sm:py-32">
+    <section className="relative border-t border-ink/10 py-24 sm:py-32">
       <Container size="narrow">
         <SectionHeading eyebrow={eyebrow} title={title} />
 
@@ -27,7 +27,7 @@ export function Faq({
           {items.map((item, i) => {
             const isOpen = open === i;
             return (
-              <div key={item.question} className="border-t border-white/10 last:border-b">
+              <div key={item.question} className="border-t border-ink/10 last:border-b">
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}
@@ -37,7 +37,7 @@ export function Faq({
                   <span
                     className={cn(
                       "font-display text-lg transition-colors",
-                      isOpen ? "text-cream" : "text-cream/80",
+                      isOpen ? "text-ink" : "text-ink/80",
                     )}
                   >
                     {item.question}
@@ -46,8 +46,8 @@ export function Faq({
                     className={cn(
                       "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-lg transition-all duration-300",
                       isOpen
-                        ? "rotate-45 border-leaf-400/50 text-leaf-400"
-                        : "border-white/15 text-cream-dim/60",
+                        ? "rotate-45 border-accent/50 text-accent"
+                        : "border-ink/15 text-ink-soft/60",
                     )}
                   >
                     <Plus />
@@ -60,7 +60,7 @@ export function Faq({
                   )}
                 >
                   <div className="overflow-hidden">
-                    <p className="max-w-2xl pb-6 text-[0.95rem] leading-relaxed text-cream-dim/70">
+                    <p className="max-w-2xl pb-6 text-[0.95rem] leading-relaxed text-ink-soft/70">
                       {item.answer}
                     </p>
                   </div>

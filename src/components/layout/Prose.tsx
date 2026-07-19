@@ -14,12 +14,12 @@ export function Prose({
   return (
     <div
       className={cn(
-        "flex flex-col gap-4 text-[0.95rem] leading-relaxed text-mist-200/80",
-        "[&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-white",
-        "[&_h3]:mt-5 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-white",
-        "[&_a]:text-brand-200 [&_a]:underline hover:[&_a]:text-white",
+        "flex flex-col gap-4 text-[0.95rem] leading-relaxed text-ink-soft/80",
+        "[&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-ink",
+        "[&_h3]:mt-5 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-ink",
+        "[&_a]:text-accent [&_a]:underline hover:[&_a]:text-ink",
         "[&_ul]:flex [&_ul]:flex-col [&_ul]:gap-1.5 [&_ul]:pl-5 [&_ul]:list-disc",
-        "[&_strong]:text-white",
+        "[&_strong]:text-ink",
         className,
       )}
     >

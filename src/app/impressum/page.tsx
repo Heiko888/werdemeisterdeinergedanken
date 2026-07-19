@@ -16,7 +16,7 @@ export default function ImprintPage() {
       <PageHero title="Impressum" />
       <section className="pb-8">
         <Container size="narrow">
-          <div className="rounded-3xl border border-white/10 bg-navy-800/40 p-6 sm:p-10">
+          <div className="rounded-3xl border border-ink/10 bg-white p-6 sm:p-10">
             <p className="mb-6 rounded-xl border border-gold-400/30 bg-gold-400/10 p-4 text-sm text-gold-300">
               Hinweis: Bitte die mit „[…]“ markierten Angaben durch deine echten
               Daten ersetzen. Diese Vorlage ersetzt keine Rechtsberatung.

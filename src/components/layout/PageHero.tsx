@@ -31,13 +31,13 @@ export function PageHero({
           </Reveal>
         )}
         <Reveal delay={80}>
-          <h1 className="max-w-3xl text-[2.1rem] font-medium leading-[1.08] text-cream [overflow-wrap:anywhere] sm:text-5xl md:text-[3.4rem]">
+          <h1 className="max-w-3xl text-[2.1rem] font-medium leading-[1.08] text-ink [overflow-wrap:anywhere] sm:text-5xl md:text-[3.4rem]">
             {title}
           </h1>
         </Reveal>
         {intro && (
           <Reveal delay={140}>
-            <p className="max-w-2xl text-[1.05rem] leading-relaxed text-cream-dim/75">
+            <p className="max-w-2xl text-[1.05rem] leading-relaxed text-ink-soft/75">
               {intro}
             </p>
           </Reveal>

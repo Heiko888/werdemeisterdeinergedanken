@@ -15,7 +15,7 @@ const benefits = [
 
 export function Compass() {
   return (
-    <section className="relative border-t border-white/10 bg-navy-900 py-24 sm:py-32">
+    <section className="relative border-t border-ink/10 bg-white py-24 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal className="order-2 lg:order-1">
           <div className="relative mx-auto w-full max-w-sm">
@@ -30,16 +30,16 @@ export function Compass() {
         <Reveal delay={100} className="order-1 lg:order-2">
           <div className="flex flex-col items-start gap-6">
             <div className="flex items-baseline gap-3">
-              <span className="font-display text-sm italic text-cream-dim/70">
+              <span className="font-display text-sm italic text-ink-soft/70">
                 02
               </span>
               <Eyebrow>Dein energetischer Kompass</Eyebrow>
             </div>
-            <h2 className="text-[2rem] font-medium leading-[1.12] text-cream sm:text-4xl">
+            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
               Durchlaufe alle 7 Stufen –{" "}
               <em className="accent">bewusst und geführt</em>
             </h2>
-            <p className="text-[1.05rem] leading-relaxed text-cream-dim/75">
+            <p className="text-[1.05rem] leading-relaxed text-ink-soft/75">
               Der Kompass zeigt dir jederzeit, wo du gerade stehst und was dein
               nächster Schritt ist. So wird aus einem diffusen Gefühl ein
               greifbarer Weg.
@@ -49,9 +49,9 @@ export function Compass() {
               {benefits.map((b) => (
                 <li
                   key={b}
-                  className="flex items-start gap-4 border-t border-white/10 py-3.5 text-sm leading-relaxed text-cream-dim/80"
+                  className="flex items-start gap-4 border-t border-ink/10 py-3.5 text-sm leading-relaxed text-ink-soft/80"
                 >
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-leaf-400" />
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                   {b}
                 </li>
               ))}

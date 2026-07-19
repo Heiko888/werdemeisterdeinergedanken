@@ -39,20 +39,20 @@ export default function SevenStagesPage() {
           <ol className="relative flex flex-col before:absolute before:left-[1.35rem] before:top-6 before:bottom-6 before:w-px before:bg-gradient-to-b before:from-leaf-400/50 before:via-teal-500/30 before:to-transparent">
             {stages.map((stage, i) => (
               <Reveal key={stage.number} delay={(i % 3) * 60}>
-                <li className="relative flex gap-6 border-t border-white/10 py-7 first:border-t-0">
-                  <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/15 bg-navy-950 font-display text-base italic text-leaf-400">
+                <li className="relative flex gap-6 border-t border-ink/10 py-7 first:border-t-0">
+                  <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-ink/15 bg-paper font-display text-base italic text-accent">
                     {stage.number}
                   </span>
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                      <h2 className="text-xl font-medium text-cream sm:text-2xl">
+                      <h2 className="text-xl font-medium text-ink sm:text-2xl">
                         {stage.title}
                       </h2>
-                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-cream-dim/50">
+                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
                         {stage.subtitle}
                       </span>
                     </div>
-                    <p className="mt-3 text-[0.95rem] leading-relaxed text-cream-dim/75 sm:text-base">
+                    <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-soft/75 sm:text-base">
                       {stage.description}
                     </p>
                   </div>
@@ -61,11 +61,11 @@ export default function SevenStagesPage() {
             ))}
           </ol>
 
-          <div className="mt-14 flex flex-col items-center gap-5 border-t border-leaf-400/25 pt-14 text-center">
-            <h2 className="font-display text-2xl italic text-cream sm:text-3xl">
+          <div className="mt-14 flex flex-col items-center gap-5 border-t border-accent/25 pt-14 text-center">
+            <h2 className="font-display text-2xl italic text-ink sm:text-3xl">
               Bereit, deine Stufe zu bestimmen?
             </h2>
-            <p className="max-w-xl text-[1.05rem] leading-relaxed text-cream-dim/75">
+            <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-soft/75">
               In einem kostenlosen Erstgespräch finden wir gemeinsam heraus, wo du
               gerade stehst und welcher Schritt für dich als Nächstes dran ist.
             </p>

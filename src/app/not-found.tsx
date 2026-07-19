@@ -14,13 +14,13 @@ export default function NotFound() {
         }}
       />
       <Container className="flex flex-col items-center gap-6 text-center">
-        <span className="font-display text-7xl italic text-leaf-400/80 sm:text-8xl">
+        <span className="font-display text-7xl italic text-accent/80 sm:text-8xl">
           404
         </span>
-        <h1 className="text-[2rem] font-medium text-cream sm:text-4xl">
+        <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
           Diese Seite existiert nicht
         </h1>
-        <p className="max-w-md text-[1.05rem] leading-relaxed text-cream-dim/75">
+        <p className="max-w-md text-[1.05rem] leading-relaxed text-ink-soft/75">
           Vielleicht ein Denkfehler im Code – kein Grund zur Sorge. Kehr zurück
           und finde deinen Weg.
         </p>

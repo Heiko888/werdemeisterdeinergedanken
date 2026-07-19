@@ -29,7 +29,7 @@ export function Footer() {
       {/* Link-Bereich */}
       <Container className="grid gap-10 border-t border-white/10 py-14 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
         <div className="flex flex-col gap-4">
-          <Logo />
+          <Logo tone="onDark" />
           <p className="max-w-xs text-sm leading-relaxed text-cream-dim/65">
             {site.tagline}. Ein Weg zurück zu Klarheit, innerer Ruhe und der
             Fähigkeit, deine Gedanken bewusst zu gestalten.

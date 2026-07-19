@@ -22,8 +22,8 @@ export function EbookForm() {
 
   if (status === "done") {
     return (
-      <div className="flex items-center gap-3 rounded-2xl border border-cosmic-teal/30 bg-cosmic-teal/10 px-5 py-4 text-sm text-mist-100">
-        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-cosmic-teal/20 text-cosmic-cyan">
+      <div className="flex items-center gap-3 rounded-2xl border border-accent/30 bg-accent/10 px-5 py-4 text-sm text-ink">
+        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-accent/20 text-accent">
           <Check />
         </span>
         <span>
@@ -47,16 +47,16 @@ export function EbookForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Deine E-Mail-Adresse"
-          className="h-13 flex-1 rounded-full border border-white/15 bg-navy-950/60 px-5 text-sm text-white placeholder:text-mist-300/50 focus:border-brand-400 focus:outline-none"
+          className="h-13 flex-1 rounded-full border border-ink/15 bg-paper/60 px-5 text-sm text-ink placeholder:text-ink-soft/50 focus:border-accent focus:outline-none"
         />
         <Button type="submit" variant="accent" size="lg">
           E-Book sichern
           <ArrowRight />
         </Button>
       </div>
-      <p className="mt-3 text-xs text-mist-300/50">
+      <p className="mt-3 text-xs text-ink-soft/50">
         Kein Spam. Abmeldung jederzeit möglich. Mit der Anmeldung stimmst du der{" "}
-        <a href="/datenschutz" className="underline hover:text-white">
+        <a href="/datenschutz" className="underline hover:text-ink">
           Datenschutzerklärung
         </a>{" "}
         zu.

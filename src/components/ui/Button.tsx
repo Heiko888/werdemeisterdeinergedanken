@@ -6,13 +6,12 @@ type Variant = "primary" | "secondary" | "ghost" | "accent";
 type Size = "md" | "lg";
 
 const variants: Record<Variant, string> = {
-  primary:
-    "bg-cream text-navy-950 font-semibold ring-1 ring-white/10 hover:bg-white",
+  primary: "bg-ink text-paper font-semibold hover:bg-ink/90",
   secondary:
-    "border border-white/15 text-cream hover:border-white/35 hover:bg-white/[0.04]",
-  ghost: "text-leaf-300 hover:text-cream",
+    "border border-ink/20 text-ink hover:border-ink/40 hover:bg-ink/[0.03]",
+  ghost: "text-accent hover:text-ink",
   accent:
-    "bg-gradient-to-r from-leaf-500 to-teal-400 text-navy-950 font-semibold hover:brightness-105",
+    "bg-gradient-to-r from-leaf-500 to-teal-500 text-navy-950 font-semibold shadow-sm hover:brightness-[1.03]",
 };
 
 const sizes: Record<Size, string> = {

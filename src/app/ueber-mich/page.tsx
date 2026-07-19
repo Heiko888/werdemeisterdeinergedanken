@@ -55,11 +55,11 @@ export default function AboutPage() {
           <Reveal>
             <div className="flex flex-col items-start gap-5">
               <Eyebrow>Meine Geschichte</Eyebrow>
-              <h2 className="text-[2rem] font-medium leading-[1.12] text-cream sm:text-4xl">
+              <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
                 Ich kenne den Kopf, der{" "}
                 <em className="accent">nie zur Ruhe kommt</em>
               </h2>
-              <div className="flex flex-col gap-4 text-[1.05rem] leading-relaxed text-cream-dim/75">
+              <div className="flex flex-col gap-4 text-[1.05rem] leading-relaxed text-ink-soft/75">
                 <p>
                   Ich rede nicht über etwas, das ich in Büchern gelesen habe. Ich
                   war selbst jahrelang gefangen in Gedankenschleifen, Anspannung
@@ -93,13 +93,13 @@ export default function AboutPage() {
           <ol className="mt-8 flex flex-col">
             {milestones.map((m) => (
               <Reveal key={m.year}>
-                <li className="flex flex-col gap-1 border-t border-white/10 py-6 last:border-b sm:flex-row sm:gap-8">
-                  <span className="w-40 shrink-0 font-display text-sm italic text-leaf-400/70">
+                <li className="flex flex-col gap-1 border-t border-ink/10 py-6 last:border-b sm:flex-row sm:gap-8">
+                  <span className="w-40 shrink-0 font-display text-sm italic text-accent/70">
                     {m.year}
                   </span>
                   <div>
-                    <h3 className="text-lg font-medium text-cream">{m.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-cream-dim/70">
+                    <h3 className="text-lg font-medium text-ink">{m.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-ink-soft/70">
                       {m.text}
                     </p>
                   </div>
@@ -111,21 +111,21 @@ export default function AboutPage() {
       </section>
 
       {/* Werte */}
-      <section className="border-t border-white/10 bg-navy-900 py-20 sm:py-24">
+      <section className="border-t border-ink/10 bg-white py-20 sm:py-24">
         <Container>
           <Eyebrow>Was mich leitet</Eyebrow>
-          <h2 className="mt-4 text-[2rem] font-medium text-cream sm:text-4xl">
+          <h2 className="mt-4 text-[2rem] font-medium text-ink sm:text-4xl">
             Meine Werte
           </h2>
           <div className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v, i) => (
               <Reveal key={v.title} delay={(i % 4) * 70}>
-                <div className="flex flex-col gap-2 border-t border-white/10 pt-5">
-                  <span className="font-display text-lg italic text-leaf-400/70">
+                <div className="flex flex-col gap-2 border-t border-ink/10 pt-5">
+                  <span className="font-display text-lg italic text-accent/70">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-lg font-medium text-cream">{v.title}</h3>
-                  <p className="text-sm leading-relaxed text-cream-dim/70">
+                  <h3 className="text-lg font-medium text-ink">{v.title}</h3>
+                  <p className="text-sm leading-relaxed text-ink-soft/70">
                     {v.text}
                   </p>
                 </div>

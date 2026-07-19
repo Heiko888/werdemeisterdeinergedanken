@@ -5,7 +5,7 @@ import { ArrowRight } from "@/components/ui/Icon";
 
 export function FinalCta() {
   return (
-    <section className="grain relative overflow-hidden border-t border-white/10 py-24 sm:py-32">
+    <section className="grain relative overflow-hidden border-t border-ink/10 py-24 sm:py-32">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
@@ -16,13 +16,13 @@ export function FinalCta() {
       />
       <Container size="narrow" className="flex flex-col items-center gap-8 text-center">
         <Reveal>
-          <h2 className="max-w-2xl text-[2.3rem] font-medium leading-[1.08] text-cream sm:text-5xl">
+          <h2 className="max-w-2xl text-[2.3rem] font-medium leading-[1.08] text-ink sm:text-5xl">
             Bereit für deinen{" "}
             <em className="accent">nächsten Schritt</em>?
           </h2>
         </Reveal>
         <Reveal delay={100}>
-          <p className="mx-auto max-w-xl text-[1.05rem] leading-relaxed text-cream-dim/75">
+          <p className="mx-auto max-w-xl text-[1.05rem] leading-relaxed text-ink-soft/75">
             Dein Bewusstsein wartet nicht. Jeder Tag, an dem du deine Gedanken
             bewusster wählst, verändert dein Leben ein Stück. Fang heute an.
           </p>

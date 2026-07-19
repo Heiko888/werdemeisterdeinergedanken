@@ -21,20 +21,20 @@ export function StageCard({
   return (
     <article
       className={cn(
-        "group relative flex min-w-0 flex-col gap-3 border-t border-white/10 pt-6 transition-colors duration-300 hover:border-leaf-400/40",
+        "group relative flex min-w-0 flex-col gap-3 border-t border-ink/10 pt-6 transition-colors duration-300 hover:border-accent/40",
         className,
       )}
     >
       <div className="flex items-baseline justify-between">
-        <span className="font-display text-4xl italic text-leaf-400/80">
+        <span className="font-display text-4xl italic text-accent/80">
           {number}
         </span>
-        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-cream-dim/50">
+        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
           {subtitle}
         </span>
       </div>
-      <h3 className="text-xl font-medium text-cream">{title}</h3>
-      <p className="text-sm leading-relaxed text-cream-dim/70">{description}</p>
+      <h3 className="text-xl font-medium text-ink">{title}</h3>
+      <p className="text-sm leading-relaxed text-ink-soft/70">{description}</p>
     </article>
   );
 }
@@ -65,12 +65,12 @@ export function SevenStages() {
           ))}
 
           <Reveal delay={80} className="sm:col-span-2 lg:col-span-1">
-            <div className="flex h-full flex-col justify-between gap-6 border-t border-leaf-400/30 pt-6">
+            <div className="flex h-full flex-col justify-between gap-6 border-t border-accent/30 pt-6">
               <div>
-                <h3 className="font-display text-xl italic text-cream">
+                <h3 className="font-display text-xl italic text-ink">
                   Bereit, deinen Weg zu gehen?
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-cream-dim/70">
+                <p className="mt-2 text-sm leading-relaxed text-ink-soft/70">
                   Sieh dir die 7 Stufen im Detail an und finde heraus, wo du
                   gerade stehst.
                 </p>

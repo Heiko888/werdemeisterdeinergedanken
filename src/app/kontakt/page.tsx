@@ -30,17 +30,17 @@ export default function ContactPage() {
           <ContactForm />
 
           <aside className="flex min-w-0 flex-col gap-5">
-            <div className="rounded-3xl border border-white/10 bg-navy-800/40 p-6">
-              <h2 className="text-lg font-bold text-white">Direkt erreichen</h2>
+            <div className="rounded-3xl border border-ink/10 bg-white p-6">
+              <h2 className="text-lg font-bold text-ink">Direkt erreichen</h2>
               <a
                 href={`mailto:${site.email}`}
-                className="mt-4 flex min-w-0 items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-mist-100 transition-colors hover:border-brand-400/40"
+                className="mt-4 flex min-w-0 items-center gap-3 rounded-xl border border-ink/10 bg-ink/[0.04] p-4 text-sm text-ink transition-colors hover:border-accent/40"
               >
-                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-500/20 text-lg text-cosmic-cyan">
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/12 text-lg text-accent">
                   <Mail />
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-xs uppercase tracking-wider text-mist-300/60">
+                  <span className="block text-xs uppercase tracking-wider text-ink-soft/60">
                     E-Mail
                   </span>
                   <span className="block break-all">{site.email}</span>
@@ -48,8 +48,8 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-navy-800/40 p-6">
-              <h2 className="text-lg font-bold text-white">Folge mir</h2>
+            <div className="rounded-3xl border border-ink/10 bg-white p-6">
+              <h2 className="text-lg font-bold text-ink">Folge mir</h2>
               <div className="mt-4 flex flex-wrap gap-2.5">
                 {(
                   Object.entries(site.social) as [
@@ -66,7 +66,7 @@ export default function ContactPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={key}
-                      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-mist-200 transition-all hover:-translate-y-0.5 hover:border-brand-400/50 hover:text-white"
+                      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/10 bg-ink/[0.04] text-lg text-ink-soft transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:text-ink"
                     >
                       <SocialIcon />
                     </a>
@@ -75,11 +75,11 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[2px] border border-leaf-400/25 bg-navy-800/40 p-6">
-              <h2 className="font-display text-lg italic text-cream">
+            <div className="rounded-[2px] border border-accent/25 bg-white p-6">
+              <h2 className="font-display text-lg italic text-ink">
                 Kostenloses Erstgespräch
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-cream-dim/75">
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft/75">
                 Unverbindlich und ehrlich. Wir klären, ob und wie ich dich am
                 besten unterstützen kann – ganz ohne Verkaufsdruck.
               </p>

@@ -29,7 +29,7 @@ export function PhotoFrame({
   return (
     <figure
       className={cn(
-        "relative overflow-hidden rounded-[2px] border border-white/10 bg-navy-900",
+        "relative overflow-hidden rounded-[2px] border border-ink/10 bg-surface-2",
         ratio,
         className,
       )}
@@ -44,20 +44,20 @@ export function PhotoFrame({
         />
       ) : (
         <>
-          {/* Duotone-Verlauf + Grain */}
-          <div className="grain absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-950" />
+          {/* heller Verlauf + Grain */}
+          <div className="grain absolute inset-0 bg-gradient-to-br from-surface via-surface-2 to-surface-2" />
           <div
             aria-hidden
-            className="absolute inset-0 opacity-40"
+            className="absolute inset-0 opacity-50"
             style={{
               background:
-                "radial-gradient(70% 55% at 50% 30%, color-mix(in oklab, var(--color-teal-500) 35%, transparent), transparent 70%)",
+                "radial-gradient(70% 55% at 50% 30%, color-mix(in oklab, var(--color-accent) 14%, transparent), transparent 70%)",
             }}
           />
           {/* Porträt-Silhouette */}
           <svg
             viewBox="0 0 100 125"
-            className="absolute inset-0 h-full w-full text-white/12"
+            className="absolute inset-0 h-full w-full text-ink/10"
             preserveAspectRatio="xMidYMax meet"
             aria-hidden
           >
@@ -68,10 +68,10 @@ export function PhotoFrame({
             />
           </svg>
           {/* feiner Innenrahmen */}
-          <div className="absolute inset-3 rounded-[2px] border border-white/10" />
+          <div className="absolute inset-3 rounded-[2px] border border-ink/10" />
           {/* Caption */}
-          <figcaption className="absolute bottom-4 left-4 flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.2em] text-cream-dim/60">
-            <span className="h-px w-6 bg-leaf-400/50" />
+          <figcaption className="absolute bottom-4 left-4 flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.2em] text-ink-soft/60">
+            <span className="h-px w-6 bg-accent/50" />
             {caption}
           </figcaption>
         </>

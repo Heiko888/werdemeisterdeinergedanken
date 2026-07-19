@@ -25,23 +25,23 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "w-full rounded-xl border border-white/15 bg-navy-950/60 px-4 py-3 text-sm text-white placeholder:text-mist-300/40 focus:border-brand-400 focus:outline-none";
+    "w-full rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 focus:border-accent focus:outline-none";
 
   if (status === "done") {
     return (
-      <div className="flex flex-col items-center gap-4 rounded-3xl border border-cosmic-teal/30 bg-cosmic-teal/10 p-10 text-center">
-        <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-cosmic-teal/20 text-2xl text-cosmic-cyan">
+      <div className="flex flex-col items-center gap-4 rounded-3xl border border-accent/30 bg-accent/10 p-10 text-center">
+        <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent/20 text-2xl text-accent">
           <Check />
         </span>
-        <h3 className="text-xl font-bold text-white">Danke für deine Nachricht!</h3>
+        <h3 className="text-xl font-bold text-ink">Danke für deine Nachricht!</h3>
         <p className="prose-lead max-w-md">
           Ich melde mich so bald wie möglich bei dir. Bis dahin: Bleib bewusst.
         </p>
-        <p className="text-sm text-mist-300/60">
+        <p className="text-sm text-ink-soft/60">
           Lieber direkt?{" "}
           <a
             href={`mailto:${site.email}`}
-            className="text-brand-200 underline hover:text-white"
+            className="text-accent underline hover:text-ink"
           >
             {site.email}
           </a>
@@ -53,11 +53,11 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-navy-800/40 p-6 sm:p-8"
+      className="flex flex-col gap-4 rounded-3xl border border-ink/10 bg-white p-6 sm:p-8"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="name" className="text-sm font-medium text-mist-100">
+          <label htmlFor="name" className="text-sm font-medium text-ink">
             Name
           </label>
           <input
@@ -70,7 +70,7 @@ export function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="email" className="text-sm font-medium text-mist-100">
+          <label htmlFor="email" className="text-sm font-medium text-ink">
             E-Mail
           </label>
           <input
@@ -85,7 +85,7 @@ export function ContactForm() {
         </div>
       </div>
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="message" className="text-sm font-medium text-mist-100">
+        <label htmlFor="message" className="text-sm font-medium text-ink">
           Nachricht
         </label>
         <textarea
@@ -98,11 +98,11 @@ export function ContactForm() {
           className={inputClass}
         />
       </div>
-      <label className="flex items-start gap-2 text-xs text-mist-300/60">
+      <label className="flex items-start gap-2 text-xs text-ink-soft/60">
         <input type="checkbox" required className="mt-0.5 accent-brand-500" />
         <span>
           Ich habe die{" "}
-          <a href="/datenschutz" className="underline hover:text-white">
+          <a href="/datenschutz" className="underline hover:text-ink">
             Datenschutzerklärung
           </a>{" "}
           gelesen und stimme der Verarbeitung meiner Daten zu.

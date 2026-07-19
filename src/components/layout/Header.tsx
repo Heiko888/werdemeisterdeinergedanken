@@ -34,7 +34,7 @@ export function Header() {
       className={cn(
         "sticky top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-white/10 bg-navy-950/80 backdrop-blur-xl"
+          ? "border-b border-ink/10 bg-paper/85 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent",
       )}
     >
@@ -47,8 +47,8 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                "rounded-full px-4 py-2 text-sm font-medium text-mist-200/80 transition-colors hover:bg-white/5 hover:text-white",
-                pathname === item.href && "text-white",
+                "rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
+                pathname === item.href && "text-ink",
               )}
             >
               {item.label}
@@ -65,7 +65,7 @@ export function Header() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-2xl text-white lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-ink/15 bg-ink/[0.03] text-2xl text-ink lg:hidden"
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
         >
@@ -76,7 +76,7 @@ export function Header() {
       {/* Mobiles Menü */}
       <div
         className={cn(
-          "lg:hidden overflow-hidden border-t border-white/10 bg-navy-950/95 backdrop-blur-xl transition-[max-height,opacity] duration-300",
+          "lg:hidden overflow-hidden border-t border-ink/10 bg-paper/95 backdrop-blur-xl transition-[max-height,opacity] duration-300",
           open ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0",
         )}
       >
@@ -86,7 +86,7 @@ export function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-3 text-base font-medium text-mist-200 hover:bg-white/5 hover:text-white"
+              className="rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink"
             >
               {item.label}
             </Link>

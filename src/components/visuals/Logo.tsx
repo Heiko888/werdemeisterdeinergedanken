@@ -18,9 +18,11 @@ export function LogoMark({ className }: { className?: string }) {
 export function Logo({
   className,
   compact = false,
+  tone = "onLight",
 }: {
   className?: string;
   compact?: boolean;
+  tone?: "onLight" | "onDark";
 }) {
   return (
     <Link
@@ -31,10 +33,20 @@ export function Logo({
       <LogoMark className="transition-transform duration-300 group-hover:scale-105" />
       {!compact && (
         <span className="flex flex-col leading-none">
-          <span className="font-sans text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-cream/90">
+          <span
+            className={cn(
+              "font-sans text-[0.68rem] font-semibold uppercase tracking-[0.2em]",
+              tone === "onDark" ? "text-cream/90" : "text-ink/80",
+            )}
+          >
             Werde Meister deiner
           </span>
-          <span className="font-sans text-[1.02rem] font-bold uppercase leading-none tracking-[0.12em] text-gradient-leaf">
+          <span
+            className={cn(
+              "font-sans text-[1.02rem] font-bold uppercase leading-none tracking-[0.12em]",
+              tone === "onDark" ? "text-gradient-leaf" : "text-accent",
+            )}
+          >
             Gedanken
           </span>
         </span>

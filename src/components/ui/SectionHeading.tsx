@@ -12,11 +12,11 @@ export function Eyebrow({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-leaf-400/90",
+        "inline-flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-accent/90",
         className,
       )}
     >
-      <span className="h-px w-8 bg-leaf-400/50" aria-hidden />
+      <span className="h-px w-8 bg-accent/50" aria-hidden />
       {children}
     </span>
   );
@@ -48,20 +48,20 @@ export function SectionHeading({
       {(eyebrow || index) && (
         <div className="flex items-baseline gap-3">
           {index && (
-            <span className="font-display text-sm italic text-cream-dim/70">
+            <span className="font-display text-sm italic text-ink-soft/70">
               {index}
             </span>
           )}
           {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
         </div>
       )}
-      <h2 className="max-w-3xl text-[1.75rem] font-medium leading-[1.1] text-cream [overflow-wrap:anywhere] sm:text-4xl md:text-[2.9rem]">
+      <h2 className="max-w-3xl text-[1.75rem] font-medium leading-[1.1] text-ink [overflow-wrap:anywhere] sm:text-4xl md:text-[2.9rem]">
         {title}
       </h2>
       {intro && (
         <p
           className={cn(
-            "max-w-2xl text-[1.05rem] leading-relaxed text-cream-dim/75",
+            "max-w-2xl text-[1.05rem] leading-relaxed text-ink-soft/75",
             align === "center" && "mx-auto",
           )}
         >

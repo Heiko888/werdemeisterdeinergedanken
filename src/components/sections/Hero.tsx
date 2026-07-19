@@ -27,7 +27,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={80}>
-            <h1 className="max-w-2xl text-[2.6rem] font-medium leading-[1.08] text-cream sm:text-5xl md:text-6xl">
+            <h1 className="max-w-2xl text-[2.6rem] font-medium leading-[1.08] text-ink sm:text-5xl md:text-6xl">
               Dein Bewusstsein ist der{" "}
               <em className="accent">Schlüssel</em>. Deine Gedanken sind der{" "}
               <em className="accent">Code</em>.
@@ -35,7 +35,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="max-w-xl text-lg leading-relaxed text-cream-dim/75">
+            <p className="max-w-xl text-lg leading-relaxed text-ink-soft/75">
               Die meisten Menschen werden von ihren Gedanken gelebt. Lerne, sie zu
               durchschauen, alte Muster zu entprogrammieren und deinen inneren
               Code bewusst neu zu schreiben – Schritt für Schritt.
@@ -55,11 +55,11 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={280}>
-            <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-cream-dim/70">
+            <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-ink-soft/70">
               {proof.map((p, i) => (
                 <li key={p} className="flex items-center gap-3">
                   {i > 0 && (
-                    <span className="hidden h-3 w-px bg-white/15 sm:inline-block" />
+                    <span className="hidden h-3 w-px bg-ink/15 sm:inline-block" />
                   )}
                   <span>{p}</span>
                 </li>
@@ -80,9 +80,9 @@ export function Hero() {
             />
             <PhotoFrame caption="Porträt Heiko" className="shadow-2xl" />
             {/* editoriales Detail: kleine Kennzahl */}
-            <div className="absolute -bottom-5 -right-5 hidden rounded-[2px] border border-white/10 bg-navy-900/95 px-5 py-4 backdrop-blur lg:block">
-              <p className="font-display text-3xl italic text-cream">7</p>
-              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-cream-dim/60">
+            <div className="absolute -bottom-5 -right-5 hidden rounded-[2px] border border-ink/10 bg-white/95 px-5 py-4 backdrop-blur lg:block">
+              <p className="font-display text-3xl italic text-ink">7</p>
+              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-ink-soft/60">
                 Stufen
               </p>
             </div>
