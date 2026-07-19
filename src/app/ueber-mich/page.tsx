@@ -44,8 +44,7 @@ export default function AboutPage() {
         eyebrow="Über mich"
         title={
           <>
-            Hallo, ich bin{" "}
-            <em className="accent">Heiko Schwaninger</em>
+            Hallo, ich bin <em className="accent">Heiko</em>
           </>
         }
         intro="Begleiter für mentale Entprogrammierung. Ich helfe Menschen, den Lärm im Kopf zu verstehen, alte Programme zu lösen und wieder selbst am Steuer zu sitzen."
