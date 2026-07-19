@@ -19,7 +19,7 @@ export function PageHero({
       <CosmicBackground />
       <Container className="flex flex-col items-center gap-6 text-center">
         {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-        <h1 className="max-w-3xl text-4xl font-bold text-white sm:text-5xl md:text-6xl">
+        <h1 className="max-w-3xl text-[1.6rem] font-bold text-white [overflow-wrap:anywhere] sm:text-5xl md:text-6xl">
           {title}
         </h1>
         {intro && <p className="prose-lead max-w-2xl">{intro}</p>}

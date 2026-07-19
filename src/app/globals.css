@@ -150,6 +150,15 @@
     letter-spacing: -0.02em;
     line-height: 1.1;
     text-wrap: balance;
+    /* Lange deutsche Komposita sauber umbrechen statt abschneiden */
+    overflow-wrap: break-word;
+    hyphens: auto;
+    /* Ankersprünge nicht unter dem Sticky-Header verstecken */
+    scroll-margin-top: 6rem;
+  }
+
+  section[id] {
+    scroll-margin-top: 5rem;
   }
 
   p {

@@ -32,7 +32,7 @@ export function SectionHeading({
       )}
     >
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-      <h2 className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold text-white">
+      <h2 className="text-[1.6rem] sm:text-4xl md:text-[2.75rem] font-bold text-white [overflow-wrap:anywhere]">
         {title}
       </h2>
       {intro && (
