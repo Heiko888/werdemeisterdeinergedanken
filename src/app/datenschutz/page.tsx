@@ -16,8 +16,8 @@ export default function PrivacyPage() {
       <PageHero title="Datenschutz" />
       <section className="pb-8">
         <Container size="narrow">
-          <div className="rounded-3xl border border-ink/10 bg-white p-6 sm:p-10">
-            <p className="mb-6 rounded-xl border border-gold-400/30 bg-gold-400/10 p-4 text-sm text-gold-300">
+          <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card sm:p-10">
+            <p className="mb-6 rounded-xl border border-gold-500/40 bg-gold-300/20 p-4 text-sm text-ink-soft">
               Hinweis: Diese Datenschutzerklärung ist eine anpassbare Vorlage.
               Bitte an die tatsächlich eingesetzten Dienste (Hosting, Analytics,
               Newsletter, Formulare) anpassen. Sie ersetzt keine Rechtsberatung.

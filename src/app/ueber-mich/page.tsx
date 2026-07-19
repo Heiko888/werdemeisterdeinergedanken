@@ -111,7 +111,7 @@ export default function AboutPage() {
       </section>
 
       {/* Werte */}
-      <section className="border-t border-ink/10 bg-white py-20 sm:py-24">
+      <section className="border-y border-ink/10 bg-white py-20 sm:py-24">
         <Container>
           <Eyebrow>Was mich leitet</Eyebrow>
           <h2 className="mt-4 text-[2rem] font-medium text-ink sm:text-4xl">

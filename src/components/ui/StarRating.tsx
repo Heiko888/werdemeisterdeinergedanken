@@ -10,14 +10,14 @@ export function StarRating({
 }) {
   return (
     <div
-      className={cn("flex items-center gap-0.5 text-gold-400", className)}
+      className={cn("flex items-center gap-0.5 text-gold-500", className)}
       role="img"
       aria-label={`${rating} von 5 Sternen`}
     >
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
-          className={cn("text-base", i < rating ? "text-gold-400" : "text-navy-600")}
+          className={cn("text-base", i < rating ? "text-gold-500" : "text-ink/15")}
         />
       ))}
     </div>

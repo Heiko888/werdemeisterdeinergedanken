@@ -30,7 +30,7 @@ export default function ContactPage() {
           <ContactForm />
 
           <aside className="flex min-w-0 flex-col gap-5">
-            <div className="rounded-3xl border border-ink/10 bg-white p-6">
+            <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card">
               <h2 className="text-lg font-bold text-ink">Direkt erreichen</h2>
               <a
                 href={`mailto:${site.email}`}
@@ -48,7 +48,7 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="rounded-3xl border border-ink/10 bg-white p-6">
+            <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card">
               <h2 className="text-lg font-bold text-ink">Folge mir</h2>
               <div className="mt-4 flex flex-wrap gap-2.5">
                 {(
@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[2px] border border-accent/25 bg-white p-6">
+            <div className="rounded-[2px] border border-accent/25 bg-white p-6 shadow-card">
               <h2 className="font-display text-lg italic text-ink">
                 Kostenloses Erstgespräch
               </h2>

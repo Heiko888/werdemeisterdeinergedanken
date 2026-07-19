@@ -71,7 +71,12 @@
   --color-surface-2: #efece2;   /* tieferes Creme für Wechsel-Sektionen */
   --color-ink: #16231f;         /* Überschriften / Text (tiefes Tannengrün-Schwarz) */
   --color-ink-soft: #48524e;    /* ruhiger Fließtext */
-  --color-accent: #0f766e;      /* Teal-Grün – Akzente, gut lesbar auf Hell */
+  --color-accent: #45951f;      /* kräftiges Lindgrün (wie im Logo), gut lesbar */
+
+  /* ---- Weiche Schatten für Struktur auf Hell ---- */
+  --shadow-card: 0 1px 2px -1px rgb(22 35 31 / 0.06),
+    0 14px 34px -18px rgb(22 35 31 / 0.14);
+  --shadow-soft: 0 20px 50px -34px rgb(22 35 31 / 0.28);
 
   /* ---- Semantische Aliase ---- */
   --color-background: var(--color-paper);

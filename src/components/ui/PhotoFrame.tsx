@@ -29,7 +29,7 @@ export function PhotoFrame({
   return (
     <figure
       className={cn(
-        "relative overflow-hidden rounded-[2px] border border-ink/10 bg-surface-2",
+        "relative overflow-hidden rounded-[2px] border border-ink/10 bg-surface-2 shadow-soft",
         ratio,
         className,
       )}
