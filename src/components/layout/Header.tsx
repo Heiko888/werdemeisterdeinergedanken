@@ -32,10 +32,10 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 transition-all duration-300",
+        "sticky top-0 z-50 border-b bg-white transition-all duration-300",
         scrolled
-          ? "border-b border-ink/10 bg-paper/85 backdrop-blur-xl"
-          : "border-b border-transparent bg-transparent",
+          ? "border-ink/10 shadow-[0_1px_12px_-6px_rgba(0,0,0,0.15)]"
+          : "border-ink/5",
       )}
     >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
@@ -76,7 +76,7 @@ export function Header() {
       {/* Mobiles Menü */}
       <div
         className={cn(
-          "lg:hidden overflow-hidden border-t border-ink/10 bg-paper/95 backdrop-blur-xl transition-[max-height,opacity] duration-300",
+          "lg:hidden overflow-hidden border-t border-ink/10 bg-white transition-[max-height,opacity] duration-300",
           open ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0",
         )}
       >
