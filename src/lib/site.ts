@@ -30,7 +30,7 @@ export const mainNav: NavItem[] = [
   { label: "Die 7 Stufen", href: "/die-7-stufen" },
   { label: "Über mich", href: "/ueber-mich" },
   { label: "Angebot", href: "/#angebot" },
-  { label: "Stimmen", href: "/#stimmen" },
+  { label: "Blog", href: "/blog" },
   { label: "Kontakt", href: "/kontakt" },
 ];
 
