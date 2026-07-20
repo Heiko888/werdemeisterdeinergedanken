@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
@@ -115,24 +116,25 @@ export default async function MembersPage() {
           </div>
 
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {stages.map((stage) => (
-              <div
+            {stages.map((stage, i) => (
+              <Link
                 key={stage.number}
-                className="flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card"
+                href={`/mitglieder/stufe/${i + 1}`}
+                className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
               >
                 <div className="flex items-center justify-between">
                   <span className="font-display text-2xl italic text-accent">
                     {stage.number}
                   </span>
-                  <span className="rounded-full border border-ink/10 px-2.5 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wider text-ink-soft/60">
-                    Bald
-                  </span>
+                  <ArrowRight className="text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
                 </div>
-                <h3 className="text-lg font-medium text-ink">{stage.title}</h3>
+                <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                  {stage.title}
+                </h3>
                 <p className="text-sm leading-relaxed text-ink-soft/70">
                   {stage.subtitle}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
 
