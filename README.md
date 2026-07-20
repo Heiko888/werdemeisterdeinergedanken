@@ -55,3 +55,34 @@ src/
   anbinden (z. B. Resend, Brevo, Mailchimp)
 - Texte & Testimonials nach Wunsch verfeinern
 - Optional: echte Fotos/Logo statt der generierten SVG-Motive
+
+## Mitgliederbereich (Supabase)
+
+Geschützter Bereich unter `/mitglieder` mit Login/Registrierung (`/login`) auf
+Basis von **Supabase Auth** (E-Mail + Passwort). Ohne Zugangsdaten bleibt die
+Seite lauffähig – der Bereich zeigt dann einen Hinweis.
+
+**Einrichtung:**
+
+1. Datenbank vorbereiten: SQL aus `supabase/migrations/0001_profiles.sql` im
+   Supabase-Dashboard (SQL Editor) ausführen. Legt die `profiles`-Tabelle mit
+   Row-Level-Security und einen Trigger an, der bei jeder Registrierung
+   automatisch ein Profil erstellt.
+2. Umgebungsvariablen setzen (`.env.local` lokal, in Vercel unter Settings →
+   Environment Variables) – Vorlage: `.env.local.example`:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   (Supabase-Dashboard → Project Settings → API)
+3. In Supabase unter **Authentication → URL Configuration** die Redirect-URLs
+   hinterlegen (`http://localhost:3000/**` und die spätere Vercel-Domain).
+
+**Relevante Dateien:**
+
+```
+src/lib/supabase/        Client (Browser/Server) + Konfiguration
+src/middleware.ts        Session-Refresh + Schutz von /mitglieder
+src/app/auth/            Server-Actions (Login/Registrierung/Logout) + Callback
+src/app/login/           Login-/Registrierungs-Seite
+src/app/mitglieder/      Geschütztes Dashboard
+supabase/migrations/     SQL für profiles-Tabelle + RLS
+```

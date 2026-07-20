@@ -56,7 +56,13 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-4 lg:flex">
+          <Link
+            href="/mitglieder"
+            className="text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+          >
+            Mitglieder
+          </Link>
           <Button href="/kontakt" variant="primary" size="md">
             Kostenloses Erstgespräch
           </Button>
@@ -91,6 +97,13 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          <Link
+            href="/mitglieder"
+            onClick={() => setOpen(false)}
+            className="rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink"
+          >
+            Mitglieder
+          </Link>
           <div className="mt-3">
             <Button
               href="/kontakt"
