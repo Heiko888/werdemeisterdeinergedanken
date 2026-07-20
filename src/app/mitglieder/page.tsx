@@ -5,7 +5,7 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "@/components/ui/Icon";
 import { createClient } from "@/lib/supabase/server";
-import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
 
@@ -17,40 +17,50 @@ export const metadata: Metadata = {
 };
 
 export default async function MembersPage() {
-  if (!isSupabaseConfigured) {
-    return (
-      <section className="py-24">
-        <Container size="narrow">
-          <div className="rounded-2xl border border-gold-500/40 bg-gold-300/20 p-8 text-sm leading-relaxed text-ink-soft shadow-card">
-            <strong className="block font-semibold text-ink">
-              Mitgliederbereich noch nicht aktiviert
-            </strong>
-            Sobald die Supabase-Zugangsdaten hinterlegt sind, ist dein
-            persönlicher Bereich hier erreichbar.
-          </div>
-        </Container>
-      </section>
-    );
+  let name = "";
+  let loggedIn = false;
+
+  // Login-Schutz aktiv + Supabase da → echte Auth erzwingen
+  if (REQUIRE_MEMBER_LOGIN && isSupabaseConfigured) {
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+
+    if (!user) redirect("/login?redirect=/mitglieder");
+
+    loggedIn = true;
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("full_name, email")
+      .eq("id", user.id)
+      .maybeSingle();
+
+    name =
+      profile?.full_name ||
+      (user.user_metadata?.full_name as string | undefined) ||
+      user.email?.split("@")[0] ||
+      "";
+  } else if (isSupabaseConfigured) {
+    // Schutz aus, aber falls jemand eingeloggt ist: mit Namen begrüßen
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (user) {
+      loggedIn = true;
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("full_name")
+        .eq("id", user.id)
+        .maybeSingle();
+      name =
+        profile?.full_name ||
+        (user.user_metadata?.full_name as string | undefined) ||
+        user.email?.split("@")[0] ||
+        "";
+    }
   }
-
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  if (!user) redirect("/login?redirect=/mitglieder");
-
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("full_name, email")
-    .eq("id", user.id)
-    .maybeSingle();
-
-  const name =
-    profile?.full_name ||
-    (user.user_metadata?.full_name as string | undefined) ||
-    user.email?.split("@")[0] ||
-    "Willkommen";
 
   return (
     <>
@@ -68,14 +78,23 @@ export default async function MembersPage() {
           <Eyebrow>Mein Bereich</Eyebrow>
           <div className="flex w-full flex-wrap items-end justify-between gap-4">
             <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
-              Schön, dass du da bist,{" "}
-              <em className="accent">{name}</em>
+              {name ? (
+                <>
+                  Schön, dass du da bist, <em className="accent">{name}</em>
+                </>
+              ) : (
+                <>
+                  Willkommen in deinem <em className="accent">Bereich</em>
+                </>
+              )}
             </h1>
-            <form action={signOut}>
-              <Button type="submit" variant="secondary">
-                Abmelden
-              </Button>
-            </form>
+            {loggedIn && (
+              <form action={signOut}>
+                <Button type="submit" variant="secondary">
+                  Abmelden
+                </Button>
+              </form>
+            )}
           </div>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
             Dein persönlicher Raum für deine Reise durch die 7 Stufen. Hier

@@ -1,10 +1,15 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
-import { SUPABASE_URL, SUPABASE_ANON_KEY, isSupabaseConfigured } from "@/lib/supabase/config";
+import {
+  SUPABASE_URL,
+  SUPABASE_ANON_KEY,
+  isSupabaseConfigured,
+  REQUIRE_MEMBER_LOGIN,
+} from "@/lib/supabase/config";
 
 export async function middleware(request: NextRequest) {
-  // Ohne Supabase-Konfiguration nichts tun (Seite bleibt lauffähig).
-  if (!isSupabaseConfigured) return NextResponse.next();
+  // Login-Schutz deaktiviert oder Supabase nicht konfiguriert → nichts tun.
+  if (!REQUIRE_MEMBER_LOGIN || !isSupabaseConfigured) return NextResponse.next();
 
   let response = NextResponse.next({ request });
 
