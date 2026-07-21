@@ -110,6 +110,16 @@ export function Plus(props: IconProps) {
   );
 }
 
+export function Play(props: IconProps) {
+  const { rest } = base(props);
+  return (
+    <svg viewBox="0 0 24 24" width="1em" height="1em" {...stroke} {...rest}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M10 8.5l6 3.5-6 3.5v-7z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
 export function Mail(props: IconProps) {
   const { rest } = base(props);
   return (
