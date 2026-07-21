@@ -110,6 +110,15 @@ export function Plus(props: IconProps) {
   );
 }
 
+export function Download(props: IconProps) {
+  const { rest } = base(props);
+  return (
+    <svg viewBox="0 0 24 24" width="1em" height="1em" {...stroke} {...rest}>
+      <path d="M12 4v10m0 0l-4-4m4 4l4-4M5 18h14" />
+    </svg>
+  );
+}
+
 export function Play(props: IconProps) {
   const { rest } = base(props);
   return (

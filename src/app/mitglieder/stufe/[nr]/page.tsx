@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Check, Play } from "@/components/ui/Icon";
+import { ArrowRight, Check, Play, Download } from "@/components/ui/Icon";
 import { stages } from "@/lib/content";
 import { getStageLesson } from "@/lib/stage-lessons";
 
@@ -183,6 +183,14 @@ export default async function StagePage({
                   </div>
                 ))}
               </div>
+
+              <a
+                href={`/mitglieder/stufe/${idx + 1}/uebungen`}
+                className="inline-flex items-center gap-2 self-start rounded-full border border-ink/20 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+              >
+                <Download />
+                Übungen als PDF herunterladen
+              </a>
             </div>
           )}
 
