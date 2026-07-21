@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "@/components/ui/Icon";
+import { ArrowRight, Download } from "@/components/ui/Icon";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
 import { signOut } from "@/app/auth/actions";
@@ -102,6 +102,13 @@ export default async function MembersPage() {
             findest du künftig deine Inhalte, deinen Fortschritt und exklusive
             Materialien.
           </p>
+          <a
+            href="/mitglieder/arbeitsheft"
+            className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+          >
+            <Download />
+            Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
+          </a>
         </Container>
       </section>
 

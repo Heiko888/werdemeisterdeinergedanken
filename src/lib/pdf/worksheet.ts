@@ -1,5 +1,10 @@
 /**
- * Erzeugt ein druckbares Übungs-Arbeitsblatt (PDF) für eine Stufe.
+ * PDF-Erzeugung für den Mitgliederbereich.
+ * Drei Dokumenttypen, aufgebaut aus denselben Bausteinen:
+ *   - buildWorksheetPdf  → Übungs-Arbeitsblatt einer Stufe (mit Schreibzeilen)
+ *   - buildLessonPdf     → komplette Lektion einer Stufe (zum Lesen)
+ *   - buildWorkbookPdf   → Gesamt-Arbeitsheft über alle 7 Stufen
+ *
  * Verwendet pdf-lib (reines JavaScript, keine nativen Abhängigkeiten),
  * damit es auch in der Serverless-Umgebung von Vercel zuverlässig läuft.
  */
@@ -24,6 +29,8 @@ const ACCENT = rgb(0.31, 0.62, 0.11);
 const HAIRLINE = rgb(0.85, 0.85, 0.82);
 const WRITE_LINE = rgb(0.8, 0.8, 0.78);
 
+type Color = ReturnType<typeof rgb>;
+
 /**
  * pdf-lib nutzt die WinAnsi-Kodierung. Umlaute sind darin enthalten,
  * einige typografische Sonderzeichen ersetzen wir sicherheitshalber
@@ -35,7 +42,7 @@ function ascii(s: string): string {
     .replace(/[‘’‚]/g, "'")
     .replace(/[–—]/g, "-")
     .replace(/…/g, "...")
-    .replace(/ /g, " ");
+    .replace(/ /g, " ");
 }
 
 type Fonts = { reg: PDFFont; bold: PDFFont; obl: PDFFont };
@@ -111,7 +118,7 @@ function paragraph(
   opts: {
     font?: PDFFont;
     size?: number;
-    color?: ReturnType<typeof rgb>;
+    color?: Color;
     lineHeight?: number;
     x?: number;
     maxW?: number;
@@ -147,82 +154,103 @@ function writingLines(ctx: Ctx, count: number) {
   }
 }
 
-export async function buildWorksheetPdf(
-  stage: Stage,
-  lesson: StageLesson,
-): Promise<Uint8Array> {
-  const doc = await PDFDocument.create();
-  doc.setTitle(`Übungen – Stufe ${stage.number}: ${stage.title}`);
-  doc.setAuthor("Werde Meister deiner Gedanken");
-  doc.setSubject("Übungs-Arbeitsblatt");
+function divider(ctx: Ctx, thickness = 1, gapBefore = 6, gapAfter = 14) {
+  ensure(ctx, gapBefore + gapAfter);
+  ctx.y -= gapBefore;
+  ctx.page.drawLine({
+    start: { x: MARGIN, y: ctx.y },
+    end: { x: PAGE.w - MARGIN, y: ctx.y },
+    thickness,
+    color: HAIRLINE,
+  });
+  ctx.y -= gapAfter;
+}
 
-  const fonts: Fonts = {
-    reg: await doc.embedFont(StandardFonts.Helvetica),
-    bold: await doc.embedFont(StandardFonts.HelveticaBold),
-    obl: await doc.embedFont(StandardFonts.HelveticaOblique),
-  };
+/* ---------------------------------------------------------------- */
+/* Wiederverwendbare Abschnitte                                     */
+/* ---------------------------------------------------------------- */
 
-  const ctx: Ctx = {
-    doc,
-    page: doc.addPage([PAGE.w, PAGE.h]),
-    y: PAGE.h - MARGIN,
-    fonts,
-    pageNo: 1,
-    footer: `Werde Meister deiner Gedanken · Stufe ${stage.number} – ${stage.title}`,
-  };
-
-  // Kopfzeile
+function sectionStageHeader(ctx: Ctx, stage: Stage, kindLabel: string) {
   ctx.y -= 4;
   paragraph(ctx, "WERDE MEISTER DEINER GEDANKEN", {
-    font: fonts.bold,
+    font: ctx.fonts.bold,
     size: 8.5,
     color: ACCENT,
     lineHeight: 12,
   });
   ctx.y -= 6;
-  paragraph(ctx, `Arbeitsblatt · Stufe ${stage.number}`, {
-    font: fonts.reg,
+  paragraph(ctx, `${kindLabel} · Stufe ${stage.number}`, {
+    font: ctx.fonts.reg,
     size: 10,
     color: INK_SOFT,
     lineHeight: 14,
   });
   paragraph(ctx, stage.title, {
-    font: fonts.bold,
+    font: ctx.fonts.bold,
     size: 22,
     color: INK,
     lineHeight: 26,
   });
   paragraph(ctx, stage.subtitle, {
-    font: fonts.reg,
+    font: ctx.fonts.reg,
     size: 11,
     color: ACCENT,
     lineHeight: 16,
     gapAfter: 10,
   });
+  divider(ctx);
+}
 
-  // Trennlinie
-  ensure(ctx, 12);
-  ctx.y -= 6;
-  ctx.page.drawLine({
-    start: { x: MARGIN, y: ctx.y },
-    end: { x: PAGE.w - MARGIN, y: ctx.y },
-    thickness: 1,
-    color: HAIRLINE,
-  });
-  ctx.y -= 14;
-
-  // Kerngedanke
+function sectionKeyIdea(ctx: Ctx, lesson: StageLesson) {
   paragraph(ctx, lesson.keyIdea, {
-    font: fonts.obl,
+    font: ctx.fonts.obl,
     size: 12,
     color: INK,
     lineHeight: 17,
     gapAfter: 18,
   });
+}
 
-  // Übungen
+function sectionIntro(ctx: Ctx, lesson: StageLesson) {
+  paragraph(ctx, lesson.intro, {
+    font: ctx.fonts.reg,
+    size: 10.5,
+    color: INK_SOFT,
+    lineHeight: 16,
+    gapAfter: 18,
+  });
+}
+
+function sectionLesson(ctx: Ctx, lesson: StageLesson) {
+  paragraph(ctx, "Die Lektion", {
+    font: ctx.fonts.bold,
+    size: 14,
+    color: INK,
+    lineHeight: 20,
+    gapAfter: 6,
+  });
+  lesson.sections.forEach((section) => {
+    ensure(ctx, 40);
+    paragraph(ctx, section.heading, {
+      font: ctx.fonts.bold,
+      size: 11.5,
+      color: INK,
+      lineHeight: 16,
+    });
+    paragraph(ctx, section.body, {
+      font: ctx.fonts.reg,
+      size: 10.5,
+      color: INK_SOFT,
+      lineHeight: 16,
+      gapAfter: 12,
+    });
+  });
+  ctx.y -= 4;
+}
+
+function sectionExercises(ctx: Ctx, lesson: StageLesson, interactive: boolean) {
   paragraph(ctx, "Deine Übungen", {
-    font: fonts.bold,
+    font: ctx.fonts.bold,
     size: 14,
     color: INK,
     lineHeight: 20,
@@ -231,23 +259,21 @@ export async function buildWorksheetPdf(
 
   lesson.exercises.forEach((exercise, i) => {
     ensure(ctx, 40);
-    // Titel + Dauer
     paragraph(ctx, `${i + 1}. ${exercise.title}`, {
-      font: fonts.bold,
+      font: ctx.fonts.bold,
       size: 12,
       color: INK,
       lineHeight: 17,
     });
     if (exercise.duration) {
       paragraph(ctx, exercise.duration, {
-        font: fonts.obl,
+        font: ctx.fonts.obl,
         size: 9.5,
         color: ACCENT,
         lineHeight: 13,
         gapAfter: 2,
       });
     }
-    // Schritte
     const stepIndent = MARGIN + 20;
     exercise.steps.forEach((step, s) => {
       ensure(ctx, 16);
@@ -256,11 +282,10 @@ export async function buildWorksheetPdf(
         x: MARGIN + 4,
         y: ctx.y,
         size: 10.5,
-        font: fonts.bold,
+        font: ctx.fonts.bold,
         color: ACCENT,
       });
-      const lines = wrap(step, fonts.reg, 10.5, CONTENT_W - 20);
-      lines.forEach((line, li) => {
+      wrap(step, ctx.fonts.reg, 10.5, CONTENT_W - 20).forEach((line, li) => {
         if (li > 0) {
           ensure(ctx, 15);
           ctx.y -= 15;
@@ -269,72 +294,247 @@ export async function buildWorksheetPdf(
           x: stepIndent,
           y: ctx.y,
           size: 10.5,
-          font: fonts.reg,
+          font: ctx.fonts.reg,
           color: INK_SOFT,
         });
       });
     });
-    // Notizen
-    ctx.y -= 12;
-    paragraph(ctx, "Meine Notizen:", {
-      font: fonts.obl,
-      size: 9.5,
-      color: INK_SOFT,
-      lineHeight: 12,
-    });
-    writingLines(ctx, 2);
+    if (interactive) {
+      ctx.y -= 12;
+      paragraph(ctx, "Meine Notizen:", {
+        font: ctx.fonts.obl,
+        size: 9.5,
+        color: INK_SOFT,
+        lineHeight: 12,
+      });
+      writingLines(ctx, 2);
+    }
     ctx.y -= 18;
   });
+}
 
-  // Reflexion
+function sectionReflection(ctx: Ctx, lesson: StageLesson, interactive: boolean) {
   ensure(ctx, 40);
   ctx.y -= 4;
   paragraph(ctx, "Zum Innehalten", {
-    font: fonts.bold,
+    font: ctx.fonts.bold,
     size: 14,
     color: INK,
     lineHeight: 20,
     gapAfter: 6,
   });
   lesson.reflection.forEach((question) => {
-    ensure(ctx, 40);
+    ensure(ctx, interactive ? 40 : 20);
     paragraph(ctx, question, {
-      font: fonts.reg,
+      font: ctx.fonts.reg,
       size: 10.5,
       color: INK,
       lineHeight: 15,
-      gapAfter: 2,
+      gapAfter: interactive ? 2 : 8,
     });
-    writingLines(ctx, 2);
-    ctx.y -= 14;
+    if (interactive) {
+      writingLines(ctx, 2);
+      ctx.y -= 14;
+    }
   });
+}
 
-  // Leitsatz
+function sectionAffirmation(ctx: Ctx, lesson: StageLesson) {
   ensure(ctx, 50);
-  ctx.y -= 4;
-  ctx.page.drawLine({
-    start: { x: MARGIN, y: ctx.y },
-    end: { x: PAGE.w - MARGIN, y: ctx.y },
-    thickness: 1,
-    color: HAIRLINE,
-  });
-  ctx.y -= 16;
+  divider(ctx, 1, 4, 16);
   paragraph(ctx, "Dein Leitsatz", {
-    font: fonts.bold,
+    font: ctx.fonts.bold,
     size: 9,
     color: ACCENT,
     lineHeight: 13,
   });
   paragraph(ctx, `„${lesson.affirmation}“`, {
-    font: fonts.obl,
+    font: ctx.fonts.obl,
     size: 13,
     color: INK,
     lineHeight: 18,
   });
+}
+
+/* ---------------------------------------------------------------- */
+/* Dokument-Grundgerüst                                             */
+/* ---------------------------------------------------------------- */
+
+async function startDoc(title: string, footer: string): Promise<Ctx> {
+  const doc = await PDFDocument.create();
+  doc.setTitle(title);
+  doc.setAuthor("Werde Meister deiner Gedanken");
+
+  const fonts: Fonts = {
+    reg: await doc.embedFont(StandardFonts.Helvetica),
+    bold: await doc.embedFont(StandardFonts.HelveticaBold),
+    obl: await doc.embedFont(StandardFonts.HelveticaOblique),
+  };
+
+  return {
+    doc,
+    page: doc.addPage([PAGE.w, PAGE.h]),
+    y: PAGE.h - MARGIN,
+    fonts,
+    pageNo: 1,
+    footer,
+  };
+}
+
+/* ---------------------------------------------------------------- */
+/* 1) Übungs-Arbeitsblatt einer Stufe                               */
+/* ---------------------------------------------------------------- */
+
+export async function buildWorksheetPdf(
+  stage: Stage,
+  lesson: StageLesson,
+): Promise<Uint8Array> {
+  const ctx = await startDoc(
+    `Übungen – Stufe ${stage.number}: ${stage.title}`,
+    `Werde Meister deiner Gedanken · Stufe ${stage.number} – ${stage.title}`,
+  );
+  ctx.doc.setSubject("Übungs-Arbeitsblatt");
+
+  sectionStageHeader(ctx, stage, "Arbeitsblatt");
+  sectionKeyIdea(ctx, lesson);
+  sectionExercises(ctx, lesson, true);
+  sectionReflection(ctx, lesson, true);
+  sectionAffirmation(ctx, lesson);
 
   drawFooter(ctx);
+  return ctx.doc.save();
+}
 
-  return doc.save();
+/* ---------------------------------------------------------------- */
+/* 2) Komplette Lektion einer Stufe                                 */
+/* ---------------------------------------------------------------- */
+
+export async function buildLessonPdf(
+  stage: Stage,
+  lesson: StageLesson,
+): Promise<Uint8Array> {
+  const ctx = await startDoc(
+    `Lektion – Stufe ${stage.number}: ${stage.title}`,
+    `Werde Meister deiner Gedanken · Stufe ${stage.number} – ${stage.title}`,
+  );
+  ctx.doc.setSubject("Lektion");
+
+  sectionStageHeader(ctx, stage, "Lektion");
+  sectionKeyIdea(ctx, lesson);
+  sectionIntro(ctx, lesson);
+  sectionLesson(ctx, lesson);
+  sectionExercises(ctx, lesson, false);
+  sectionReflection(ctx, lesson, false);
+  sectionAffirmation(ctx, lesson);
+
+  drawFooter(ctx);
+  return ctx.doc.save();
+}
+
+/* ---------------------------------------------------------------- */
+/* 3) Gesamt-Arbeitsheft über alle Stufen                           */
+/* ---------------------------------------------------------------- */
+
+export async function buildWorkbookPdf(
+  entries: { stage: Stage; lesson: StageLesson }[],
+): Promise<Uint8Array> {
+  const ctx = await startDoc(
+    "Das Arbeitsheft – Die 7 Stufen der Bewusstseinsentwicklung",
+    "Werde Meister deiner Gedanken · Das Arbeitsheft",
+  );
+  ctx.doc.setSubject("Arbeitsheft – Die 7 Stufen");
+
+  /* ---- Deckblatt ---- */
+  ctx.y = PAGE.h - 150;
+  paragraph(ctx, "WERDE MEISTER DEINER GEDANKEN", {
+    font: ctx.fonts.bold,
+    size: 10,
+    color: ACCENT,
+    lineHeight: 16,
+    gapAfter: 40,
+  });
+  paragraph(ctx, "Das Arbeitsheft", {
+    font: ctx.fonts.bold,
+    size: 34,
+    color: INK,
+    lineHeight: 40,
+  });
+  paragraph(ctx, "Die 7 Stufen der Bewusstseinsentwicklung", {
+    font: ctx.fonts.obl,
+    size: 15,
+    color: INK_SOFT,
+    lineHeight: 22,
+    gapAfter: 30,
+  });
+  paragraph(
+    ctx,
+    "Dein persönlicher Begleiter durch die 7 Stufen: Lektionen, praktische Übungen und Reflexionsfragen – mit Raum, deine Gedanken festzuhalten. Nimm dir Zeit, arbeite in deinem Tempo und kehre immer wieder zurück.",
+    {
+      font: ctx.fonts.reg,
+      size: 11,
+      color: INK_SOFT,
+      lineHeight: 17,
+    },
+  );
+
+  /* ---- Inhaltsverzeichnis ---- */
+  newPage(ctx);
+  paragraph(ctx, "Inhalt", {
+    font: ctx.fonts.bold,
+    size: 20,
+    color: INK,
+    lineHeight: 26,
+    gapAfter: 14,
+  });
+  entries.forEach(({ stage }) => {
+    ensure(ctx, 30);
+    ctx.y -= 24;
+    ctx.page.drawText(ascii(stage.number), {
+      x: MARGIN,
+      y: ctx.y,
+      size: 13,
+      font: ctx.fonts.bold,
+      color: ACCENT,
+    });
+    ctx.page.drawText(ascii(stage.title), {
+      x: MARGIN + 40,
+      y: ctx.y,
+      size: 13,
+      font: ctx.fonts.bold,
+      color: INK,
+    });
+    ctx.page.drawText(ascii(stage.subtitle), {
+      x: MARGIN + 40,
+      y: ctx.y - 15,
+      size: 9.5,
+      font: ctx.fonts.reg,
+      color: INK_SOFT,
+    });
+    ctx.y -= 15;
+    ctx.page.drawLine({
+      start: { x: MARGIN, y: ctx.y - 10 },
+      end: { x: PAGE.w - MARGIN, y: ctx.y - 10 },
+      thickness: 0.5,
+      color: HAIRLINE,
+    });
+    ctx.y -= 10;
+  });
+
+  /* ---- Stufen ---- */
+  entries.forEach(({ stage, lesson }) => {
+    newPage(ctx);
+    ctx.footer = `Werde Meister deiner Gedanken · Stufe ${stage.number} – ${stage.title}`;
+    sectionStageHeader(ctx, stage, "Stufe");
+    sectionKeyIdea(ctx, lesson);
+    sectionIntro(ctx, lesson);
+    sectionLesson(ctx, lesson);
+    sectionExercises(ctx, lesson, true);
+    sectionReflection(ctx, lesson, true);
+    sectionAffirmation(ctx, lesson);
+  });
+
+  drawFooter(ctx);
+  return ctx.doc.save();
 }
 
 /** Dateinamen-tauglicher Slug mit deutscher Umlaut-Umschrift. */

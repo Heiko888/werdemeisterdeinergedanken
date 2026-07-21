@@ -184,13 +184,22 @@ export default async function StagePage({
                 ))}
               </div>
 
-              <a
-                href={`/mitglieder/stufe/${idx + 1}/uebungen`}
-                className="inline-flex items-center gap-2 self-start rounded-full border border-ink/20 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
-              >
-                <Download />
-                Übungen als PDF herunterladen
-              </a>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={`/mitglieder/stufe/${idx + 1}/lektion`}
+                  className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                >
+                  <Download />
+                  Komplette Lektion als PDF
+                </a>
+                <a
+                  href={`/mitglieder/stufe/${idx + 1}/uebungen`}
+                  className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                >
+                  <Download />
+                  Übungen als PDF
+                </a>
+              </div>
             </div>
           )}
 
