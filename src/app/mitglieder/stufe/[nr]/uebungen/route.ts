@@ -1,6 +1,7 @@
 import { stages } from "@/lib/content";
 import { getStageLesson } from "@/lib/stage-lessons";
 import { buildWorksheetPdf, worksheetSlug } from "@/lib/pdf/worksheet";
+import { getLogoBytes } from "@/lib/pdf/assets";
 
 export function generateStaticParams() {
   return stages.map((_, i) => ({ nr: String(i + 1) }));
@@ -23,7 +24,7 @@ export async function GET(
     return new Response("Nicht gefunden", { status: 404 });
   }
 
-  const pdf = await buildWorksheetPdf(stage, lesson);
+  const pdf = await buildWorksheetPdf(stage, lesson, getLogoBytes());
   const filename = `Uebungen-Stufe-${stage.number}-${worksheetSlug(stage.title)}.pdf`;
 
   return new Response(pdf as BodyInit, {

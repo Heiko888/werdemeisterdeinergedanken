@@ -1,6 +1,9 @@
 import { stages } from "@/lib/content";
 import { getStageLesson } from "@/lib/stage-lessons";
 import { buildWorkbookPdf } from "@/lib/pdf/worksheet";
+import { getLogoBytes } from "@/lib/pdf/assets";
+
+export const dynamic = "force-static";
 
 export async function GET() {
   const entries = stages
@@ -10,7 +13,7 @@ export async function GET() {
     })
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
 
-  const pdf = await buildWorkbookPdf(entries);
+  const pdf = await buildWorkbookPdf(entries, getLogoBytes());
 
   return new Response(pdf as BodyInit, {
     headers: {
