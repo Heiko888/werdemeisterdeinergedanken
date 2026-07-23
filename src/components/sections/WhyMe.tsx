@@ -1,8 +1,10 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { values } from "@/lib/content";
+import heikoPortrait from "../../../public/heiko-portrait.webp";
 
 export function WhyMe() {
   return (
@@ -36,11 +38,14 @@ export function WhyMe() {
             </div>
 
             <div className="mt-2 flex items-center gap-4">
-              <span className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border border-ink/10 bg-gradient-to-br from-surface to-surface-2">
-                <svg viewBox="0 0 100 125" className="h-full w-full text-ink/20" preserveAspectRatio="xMidYMax meet" aria-hidden>
-                  <circle cx="50" cy="46" r="17" fill="currentColor" />
-                  <path d="M20 116c0-18 13-30 30-30s30 12 30 30z" fill="currentColor" />
-                </svg>
+              <span className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-ink/10 shadow-soft">
+                <Image
+                  src={heikoPortrait}
+                  alt="Heiko Schwaninger"
+                  fill
+                  sizes="80px"
+                  className="object-cover object-top"
+                />
               </span>
               <div>
                 <p className="font-display text-lg italic text-ink">
