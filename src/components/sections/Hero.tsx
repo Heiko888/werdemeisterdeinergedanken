@@ -78,7 +78,7 @@ export function Hero() {
                   "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 30%, transparent), transparent 70%)",
               }}
             />
-            <PhotoFrame caption="Porträt Heiko" />
+            <PhotoFrame src="/heiko-portrait.webp" alt="Heiko Schwaninger" />
             {/* editoriales Detail: kleine Kennzahl */}
             <div className="absolute -bottom-5 -right-5 hidden rounded-[2px] border border-ink/10 bg-white/95 px-5 py-4 backdrop-blur lg:block">
               <p className="font-display text-3xl italic text-ink">7</p>
