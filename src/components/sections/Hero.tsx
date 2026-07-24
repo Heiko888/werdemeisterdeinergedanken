@@ -1,9 +1,10 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { ArrowRight } from "@/components/ui/Icon";
+import heroFull from "../../../public/hero-full.webp";
 
 const proof = ["7-Stufen-Modell", "Ohne Esoterik-Floskeln", "Auf Augenhöhe"];
 
@@ -78,16 +79,14 @@ export function Hero() {
                   "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 30%, transparent), transparent 70%)",
               }}
             />
-            <PhotoFrame
-              src="/hero-neon.webp"
-              alt="Bewusstsein als leuchtende Geometrie – das 7-Stufen-Modell"
-            />
-            {/* editoriales Detail: kleine Kennzahl */}
-            <div className="absolute -bottom-5 -right-5 hidden rounded-[2px] border border-ink/10 bg-white/95 px-5 py-4 backdrop-blur lg:block">
-              <p className="font-display text-3xl italic text-ink">7</p>
-              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-ink-soft/60">
-                Stufen
-              </p>
+            <div className="overflow-hidden rounded-[4px] border border-ink/10 shadow-soft">
+              <Image
+                src={heroFull}
+                alt="Dein Bewusstsein ist der Schlüssel – das 7-Stufen-Modell"
+                sizes="(max-width: 768px) 100vw, 42vw"
+                className="h-auto w-full"
+                priority
+              />
             </div>
           </div>
         </Reveal>
