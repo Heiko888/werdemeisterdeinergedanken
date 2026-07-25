@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check, Play, Download } from "@/components/ui/Icon";
 import { stages } from "@/lib/content";
 import { getStageLesson } from "@/lib/stage-lessons";
+import { deepDivesForStage } from "@/lib/deep-dives";
 
 export function generateStaticParams() {
   return stages.map((_, i) => ({ nr: String(i + 1) }));
@@ -42,6 +43,7 @@ export default async function StagePage({
 
   const { idx, stage } = found;
   const lesson = getStageLesson(stage.number);
+  const related = deepDivesForStage(idx + 1);
   const prev = idx > 0 ? idx : null; // 0-basiert → Nummer = idx
   const next = idx < stages.length - 1 ? idx + 2 : null;
 
@@ -251,6 +253,39 @@ export default async function StagePage({
                 {stage.title}“. Sobald sie fertig sind, findest du sie an genau
                 dieser Stelle.
               </p>
+            </div>
+          )}
+
+          {/* Vertiefungen zu dieser Stufe */}
+          {related.length > 0 && (
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-1">
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                  Wissens-Bibliothek
+                </span>
+                <h2 className="font-display text-xl font-medium text-ink">
+                  Passende Vertiefungen
+                </h2>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {related.map((dive) => (
+                  <Link
+                    key={dive.slug}
+                    href={`/mitglieder/wissen/${dive.slug}`}
+                    className="group flex flex-col gap-1.5 rounded-2xl border border-ink/10 bg-white p-5 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/30"
+                  >
+                    <span className="flex items-center justify-between gap-3">
+                      <span className="font-medium text-ink transition-colors group-hover:text-accent">
+                        {dive.title}
+                      </span>
+                      <ArrowRight className="shrink-0 text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                    </span>
+                    <span className="text-sm leading-relaxed text-ink-soft/70">
+                      {dive.summary}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
           )}
 

@@ -9,6 +9,7 @@ import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
+import { deepDivesByCategory } from "@/lib/deep-dives";
 
 export const dynamic = "force-dynamic";
 
@@ -145,17 +146,64 @@ export default async function MembersPage() {
             ))}
           </div>
 
-          <div className="mt-12 flex flex-col items-start gap-4 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
-            <h2 className="font-display text-xl italic text-ink">
-              Inhalte sind in Vorbereitung
+        </Container>
+      </section>
+
+      {/* Vertiefungen – psychologische Wissens-Bibliothek */}
+      <section className="border-t border-ink/10 bg-white/60 py-16 sm:py-20">
+        <Container>
+          <div className="flex flex-col gap-2">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              Wissens-Bibliothek
+            </span>
+            <h2 className="font-display text-2xl font-medium text-ink">
+              Vertiefungen
             </h2>
             <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
-              Die Lektionen und Materialien zu den einzelnen Stufen werden Schritt
-              für Schritt hier freigeschaltet. Bei Fragen erreichst du mich
-              jederzeit direkt.
+              Die psychologischen Mechanismen hinter den 7 Stufen – zum
+              Nachschlagen und Vertiefen. Jedes Thema mit Übungen und
+              Reflexionsfragen.
+            </p>
+          </div>
+
+          {deepDivesByCategory().map((group) => (
+            <div key={group.category} className="mt-10">
+              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-soft/50">
+                {group.category}
+              </h3>
+              <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {group.items.map((dive) => (
+                  <Link
+                    key={dive.slug}
+                    href={`/mitglieder/wissen/${dive.slug}`}
+                    className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <h4 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                        {dive.title}
+                      </h4>
+                      <ArrowRight className="mt-1 shrink-0 text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                    </div>
+                    <p className="text-sm leading-relaxed text-ink-soft/70">
+                      {dive.summary}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          <div className="mt-12 flex flex-col items-start gap-4 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
+            <h3 className="font-display text-xl italic text-ink">
+              Ein Thema fehlt dir?
+            </h3>
+            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+              Die Bibliothek wächst Schritt für Schritt. Wenn dich ein bestimmter
+              psychologischer Mechanismus beschäftigt, schreib mir – oft wird
+              daraus die nächste Vertiefung.
             </p>
             <Button href="/kontakt" variant="accent">
-              Kontakt aufnehmen
+              Thema vorschlagen
               <ArrowRight />
             </Button>
           </div>
