@@ -80,7 +80,11 @@ export default function AboutPage() {
 
           <Reveal delay={120}>
             <div className="mx-auto w-full max-w-xs">
-              <PhotoFrame caption="Porträt Heiko" />
+              <PhotoFrame
+                src="/ueber-heiko-hund.webp"
+                alt="Heiko mit seinem Hund draußen in der Natur"
+                aspect="square"
+              />
             </div>
           </Reveal>
         </Container>
