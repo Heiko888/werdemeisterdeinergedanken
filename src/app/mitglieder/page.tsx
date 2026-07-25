@@ -10,6 +10,7 @@ import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/confi
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
 import { deepDivesByCategory } from "@/lib/deep-dives";
+import { practicesByCategory } from "@/lib/practices";
 
 export const dynamic = "force-dynamic";
 
@@ -207,6 +208,54 @@ export default async function MembersPage() {
               <ArrowRight />
             </Button>
           </div>
+        </Container>
+      </section>
+
+      {/* Praxis – gelebte Praxis (Meditation, Atem, Rituale) */}
+      <section className="border-t border-ink/10 py-16 sm:py-20">
+        <Container>
+          <div className="flex flex-col gap-2">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              Gelebte Praxis
+            </span>
+            <h2 className="font-display text-2xl font-medium text-ink">
+              Praxis
+            </h2>
+            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+              Was die Stufen wirksam macht: geführte Meditationen, Atemübungen
+              und Rituale für den Alltag – jede mit klarer Schritt-für-Schritt-
+              Anleitung.
+            </p>
+          </div>
+
+          {practicesByCategory().map((group) => (
+            <div key={group.category} className="mt-10">
+              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-soft/50">
+                {group.category}
+              </h3>
+              <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {group.items.map((practice) => (
+                  <Link
+                    key={practice.slug}
+                    href={`/mitglieder/praxis/${practice.slug}`}
+                    className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <h4 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                        {practice.title}
+                      </h4>
+                      <span className="mt-0.5 shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-soft/45">
+                        {practice.duration}
+                      </span>
+                    </div>
+                    <p className="text-sm leading-relaxed text-ink-soft/70">
+                      {practice.summary}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </Container>
       </section>
     </>
