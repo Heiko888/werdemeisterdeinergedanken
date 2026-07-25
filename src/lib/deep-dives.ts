@@ -383,6 +383,301 @@ export const deepDives: DeepDive[] = [
     relatedStage: 5,
     video: null,
   },
+
+  // ---------------------------------------------------------------
+  {
+    slug: "reiz-reaktions-luecke",
+    title: "Die Reiz-Reaktions-Lücke",
+    subtitle: "Der Raum, in dem du frei bist",
+    category: "Denken & Wahrnehmung",
+    summary:
+      "Zwischen dem, was passiert, und dem, was du tust, liegt ein winziger Moment – dein ganzer Freiraum.",
+    keyIdea:
+      "Zwischen Reiz und Reaktion liegt ein Raum. In diesem Raum liegt deine Macht zu wählen – und darin dein Wachstum.",
+    intro:
+      "Etwas passiert – und schon reagierst du. Der Kollege sagt etwas Spitzes, und noch bevor du denkst, bist du gekränkt und schießt zurück. Es fühlt sich an, als gäbe es keinen Zwischenraum. Doch genau dort liegt die wichtigste Fähigkeit überhaupt: den Moment zwischen Auslöser und Antwort zu dehnen. Wer diesen Spalt vergrößert, hört auf, ein Spielball zu sein.",
+    sections: [
+      {
+        heading: "Warum die Lücke oft verschwindet",
+        body: "Unter Stress übernimmt das schnelle, automatische System das Kommando – es reagiert in Millisekunden, bevor der überlegte Verstand überhaupt anspringt. Das war evolutionär sinnvoll, wenn hinter dem Busch ein Raubtier lauerte. Im Büro oder in der Beziehung führt dieselbe Blitzreaktion aber meist zu genau dem, was du hinterher bereust.",
+      },
+      {
+        heading: "Den Spalt dehnen",
+        body: "Du kannst den Reiz nicht verhindern – aber du kannst den Moment danach verlängern. Ein einziger bewusster Atemzug, ein innerliches „Stopp“, ein kurzes Benennen des Gefühls: Jede dieser Mikro-Pausen schiebt einen Keil zwischen Reiz und Reaktion. Und in diesem Keil entsteht die Wahl.",
+      },
+      {
+        heading: "Antworten statt reagieren",
+        body: "Reagieren ist automatisch und vergangenheitsgesteuert; antworten ist bewusst und wertegeleitet. Der Unterschied entscheidet, ob du deine alten Muster wiederholst oder etwas Neues tust. Mit jeder bewussten Antwort wird der Raum ein Stück größer und leichter zugänglich.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der eine Atemzug",
+        duration: "im Moment der Provokation",
+        steps: [
+          "Sobald du merkst, dass etwas in dir hochkommt, halte kurz inne.",
+          "Nimm bewusst einen einzigen, langsamen Atemzug – das reicht als erster Keil.",
+          "Frage innerlich: „Wie will ich hier wirklich antworten?“",
+          "Handle aus dieser Antwort – nicht aus dem ersten Impuls.",
+        ],
+      },
+      {
+        title: "Der Reaktions-Rückblick",
+        duration: "10 Minuten, abends",
+        steps: [
+          "Denk an eine Situation heute, in der du zu schnell reagiert hast.",
+          "Spiel sie in Zeitlupe durch: Wo genau war der Reiz, wo die Reaktion?",
+          "Überlege: An welcher Stelle hätte eine Mikro-Pause gepasst?",
+          "Stell dir die bewusste Antwort vor – so trainierst du sie für das nächste Mal.",
+        ],
+      },
+    ],
+    reflection: [
+      "In welchen Situationen ist deine Reiz-Reaktions-Lücke am kleinsten?",
+      "Welcher Mensch oder welcher Satz lässt sie bei dir sofort verschwinden?",
+      "Was wäre möglich, wenn dir zwischen Reiz und Reaktion nur ein Atemzug mehr bliebe?",
+    ],
+    takeaway:
+      "Du kannst den Reiz nicht wählen – aber den Moment danach. In diesem Spalt liegt deine ganze Freiheit.",
+    relatedStage: 2,
+    video: null,
+  },
+
+  // ---------------------------------------------------------------
+  {
+    slug: "gruebeln",
+    title: "Grübeln & Gedankenkreisen",
+    subtitle: "Raus aus der Endlosschleife",
+    category: "Denken & Wahrnehmung",
+    summary:
+      "Warum sich das ewige Wiederkäuen wie Problemlösen anfühlt – und es doch nie eines ist.",
+    keyIdea:
+      "Grübeln fühlt sich nützlich an, ist aber nur dasselbe Denken in Wiederholung – ohne Ausgang.",
+    intro:
+      "Nachts um drei drehen sich dieselben Gedanken zum zwanzigsten Mal. Es fühlt sich an, als würdest du an einer Lösung arbeiten – doch am Morgen bist du keinen Schritt weiter, nur erschöpfter. Grübeln ist kein Nachdenken, sondern ein Muster: dieselbe Frage, ohne je zur Antwort zu kommen. Der Ausweg liegt nicht in einem besseren Gedanken, sondern in einem anderen Umgang.",
+    sections: [
+      {
+        heading: "Warum das Gehirn kreisen liebt",
+        body: "Unerledigtes zieht Aufmerksamkeit an – das Gehirn hält offene Fragen wach, als wären sie Bedrohungen. Beim Grübeln verwechselt es Wiederholung mit Fortschritt: Weil das Thema wichtig ist, fühlt sich das Kreisen verantwortungsvoll an. Tatsächlich vertieft jede Runde nur die Sorge.",
+      },
+      {
+        heading: "Grübeln erkennt man am Muster, nicht am Inhalt",
+        body: "Echtes Problemlösen führt zu einem nächsten Schritt; Grübeln führt zu noch mehr Fragen. Ein einfacher Test: Frag dich nach ein paar Minuten – „Bin ich einer Antwort näher gekommen?“ Wenn nicht, denkst du nicht nach, du grübelst. Und dann hilft nur, das Muster zu unterbrechen.",
+      },
+      {
+        heading: "Unterbrechen statt gewinnen",
+        body: "Man kann ein Gedankenkarussell nicht durch Mitdenken anhalten – jede Runde füttert es. Wirksamer ist, die Aufmerksamkeit bewusst woandershin zu lenken: in den Körper, in eine Handlung, in die Sinne. Nicht als Flucht, sondern als klare Entscheidung, dem Kreisen die Energie zu entziehen.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Grübel-Test & Cut",
+        duration: "im Moment",
+        steps: [
+          "Wenn du merkst, dass du kreist, frag: „Löse ich gerade oder wiederhole ich?“",
+          "Bei „wiederhole“: Sag dir innerlich klar „Stopp – das ist Grübeln.“",
+          "Lenke die Aufmerksamkeit bewusst auf etwas Konkretes: 5 Dinge, die du gerade siehst.",
+          "Bei echten Problemen: notiere den einen nächsten Schritt – und leg das Thema weg.",
+        ],
+      },
+      {
+        title: "Das Sorgen-Fenster",
+        duration: "1x täglich, 15 Minuten",
+        steps: [
+          "Bestimme eine feste Zeit am Tag als dein „Sorgen-Fenster“.",
+          "Taucht tagsüber eine Grübelei auf, notiere sie kurz und vertage sie aufs Fenster.",
+          "Im Fenster gehst du die Liste durch – oft ist die Hälfte schon uninteressant.",
+          "So trainierst du deinem System ab, rund um die Uhr Alarm zu schlagen.",
+        ],
+      },
+    ],
+    reflection: [
+      "Zu welcher Tageszeit und in welcher Situation grübelst du am meisten?",
+      "Woran erkennst du bei dir den Unterschied zwischen Nachdenken und Kreisen?",
+      "Welche konkrete Handlung holt dich am zuverlässigsten aus dem Karussell?",
+    ],
+    takeaway:
+      "Grübeln ist Wiederholung, kein Fortschritt. Du gewinnst es nicht – du unterbrichst es.",
+    relatedStage: 2,
+    video: null,
+  },
+
+  // ---------------------------------------------------------------
+  {
+    slug: "emotionsregulation",
+    title: "Emotionsregulation",
+    subtitle: "Gefühle steuern, ohne sie zu unterdrücken",
+    category: "Emotion",
+    summary:
+      "Wie du starke Gefühle halten und lenken lernst – zwischen Wegdrücken und Überflutetwerden.",
+    keyIdea:
+      "Gefühle sind Wellen, keine Wände. Du musst sie weder wegdrücken noch von ihnen fortgerissen werden.",
+    intro:
+      "Es gibt zwei verbreitete Umgangsweisen mit starken Gefühlen – und beide funktionieren schlecht: sie wegdrücken, bis sie sich anderswo Bahn brechen, oder von ihnen überflutet werden und im Affekt handeln. Emotionsregulation ist der dritte Weg: das Gefühl spüren, halten und bewusst steuern. Das ist erlernbar wie ein Muskel.",
+    sections: [
+      {
+        heading: "Benennen beruhigt",
+        body: "Ein Gefühl in Worte zu fassen – „das ist Angst“, „da ist Wut“ – dämpft messbar seine Wucht. Das bloße Benennen holt die Emotion vom reinen Alarmmodus in einen Bereich, in dem du wieder überlegen kannst. Deshalb ist der erste Schritt nie Bekämpfen, sondern Erkennen.",
+      },
+      {
+        heading: "Die Welle reiten",
+        body: "Jedes Gefühl hat einen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab – meist schneller, als wir fürchten. Wer lernt, den Höhepunkt auszuhalten, statt sofort zu handeln oder wegzudrücken, merkt: Die Welle trägt einen, sie verschlingt einen nicht. Aushalten ist eine aktive, kraftvolle Fähigkeit.",
+      },
+      {
+        heading: "Den Körper als Hebel nutzen",
+        body: "Emotionen sind auch körperlich. Über den Körper hast du direkten Zugriff: langsames Ausatmen, längeres Aus- als Einatmen, kaltes Wasser, Bewegung – all das beruhigt das Nervensystem schneller als jedes Argument. Regulation beginnt oft unterhalb der Gedanken.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Benennen & Verorten",
+        duration: "5 Minuten",
+        steps: [
+          "Wenn ein Gefühl hochkommt, gib ihm einen Namen: „Das ist gerade …“.",
+          "Spüre nach, wo im Körper es sitzt – Brust, Bauch, Kehle, Schultern?",
+          "Atme bewusst dorthin, mit längerem Ausatmen als Einatmen.",
+          "Beobachte die Welle: Sie steigt, kippt und sinkt. Du musst nichts tun.",
+        ],
+      },
+      {
+        title: "Die 90-Sekunden-Regel",
+        duration: "im Affekt",
+        steps: [
+          "Wenn dich etwas heftig trifft, triff für 90 Sekunden keine Entscheidung.",
+          "Atme langsam und zähle innerlich mit – gib der ersten Welle Zeit abzuebben.",
+          "Erst danach fragst du: „Was ist jetzt wirklich dran?“",
+          "Aus dem ruhigeren Zustand heraus handelst du klüger als im Sturm.",
+        ],
+      },
+    ],
+    reflection: [
+      "Neigst du eher zum Wegdrücken oder zum Überflutetwerden?",
+      "Welches Gefühl fällt dir am schwersten auszuhalten?",
+      "Welcher körperliche Hebel beruhigt dich am zuverlässigsten?",
+    ],
+    takeaway:
+      "Gefühle sind Wellen mit Anfang und Ende. Benennen, halten, atmen – dann tragen sie dich, statt dich fortzureißen.",
+    relatedStage: 4,
+    video: null,
+  },
+
+  // ---------------------------------------------------------------
+  {
+    slug: "selbstmitgefuehl",
+    title: "Selbstmitgefühl",
+    subtitle: "Der freundliche Umgang mit dir",
+    category: "Selbstbild",
+    summary:
+      "Warum Härte gegen dich selbst dich nicht besser macht – und Freundlichkeit kein Weichspüler ist.",
+    keyIdea:
+      "Du wächst nicht, indem du dich kleinmachst, sondern indem du dich hältst wie einen Menschen, der dir wichtig ist.",
+    intro:
+      "Viele glauben insgeheim, sie müssten hart mit sich sein, um nicht nachzulassen – als wäre Selbstkritik der Motor der Entwicklung. Die Forschung zeigt das Gegenteil: Menschen, die sich selbst mit Freundlichkeit begegnen, sind widerstandsfähiger, lernen schneller aus Fehlern und geben seltener auf. Selbstmitgefühl ist kein Nachgeben, sondern innere Stärke.",
+    sections: [
+      {
+        heading: "Die drei Bausteine",
+        body: "Selbstmitgefühl besteht aus drei Teilen: Selbstfreundlichkeit statt Selbstverurteilung, dem Bewusstsein für gemeinsames Menschsein („auch andere scheitern, ich bin nicht allein damit“) und Achtsamkeit – dem klaren Hinschauen, ohne zu dramatisieren. Zusammen bilden sie eine Haltung, die trägt.",
+      },
+      {
+        heading: "Kein Weichspüler, sondern Realismus",
+        body: "Selbstmitgefühl beschönigt nichts. Es sagt nicht „alles super“, sondern „das war schmerzhaft, und ich stehe trotzdem zu mir“. Gerade weil es die Wahrheit nicht wegdrückt, macht es handlungsfähig – während Selbstverurteilung meist lähmt und in die Vermeidung treibt.",
+      },
+      {
+        heading: "Wie man es übt",
+        body: "Der einfachste Einstieg ist eine Frage: „Was würde ich jetzt einem guten Freund in derselben Lage sagen?“ Fast immer sind wir zu anderen wärmer und klüger als zu uns selbst. Diese Wärme bewusst nach innen zu richten, ist der Kern der Übung – anfangs ungewohnt, mit der Zeit selbstverständlich.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Die Freundes-Hand",
+        duration: "5 Minuten",
+        steps: [
+          "Denk an eine Situation, in der du hart mit dir warst.",
+          "Formuliere, was du einem geliebten Freund in genau dieser Lage sagen würdest.",
+          "Leg eine Hand auf die Brust und sag dir diese Worte – ruhig und ehrlich.",
+          "Spüre, wie sich der Ton in dir verändert, wenn du auf deiner Seite stehst.",
+        ],
+      },
+      {
+        title: "Die Selbstmitgefühls-Pause",
+        duration: "3 Minuten, im schweren Moment",
+        steps: [
+          "Sag innerlich: „Das ist gerade schwer.“ (Achtsamkeit)",
+          "Dann: „Schwere Momente gehören zum Menschsein – ich bin nicht allein.“ (gemeinsames Menschsein)",
+          "Dann: „Möge ich freundlich zu mir sein.“ (Selbstfreundlichkeit)",
+          "Atme ruhig und lass diese drei Sätze wirken, bevor du weitermachst.",
+        ],
+      },
+    ],
+    reflection: [
+      "Sprichst du mit dir härter, als du es mit einem Freund je tätest?",
+      "Woher stammt der Glaube, du müsstest streng mit dir sein?",
+      "Was würde sich ändern, wenn du fest auf deiner eigenen Seite stündest?",
+    ],
+    takeaway:
+      "Freundlichkeit zu dir ist kein Nachlassen, sondern der stabilere Boden. Menschen wachsen durch Ermutigung, nicht durch Abwertung.",
+    relatedStage: 4,
+    video: null,
+  },
+
+  // ---------------------------------------------------------------
+  {
+    slug: "werte-und-ziele",
+    title: "Werte & Ziele",
+    subtitle: "Die Richtung unter dem Tun",
+    category: "Ausrichtung",
+    summary:
+      "Warum Ziele ohne Werte leer bleiben – und wie du eine Richtung findest, die wirklich dich meint.",
+    keyIdea:
+      "Ziele sind Punkte auf einer Landkarte. Werte sind die Himmelsrichtung – sie geben jedem Schritt Bedeutung.",
+    intro:
+      "Viele jagen Zielen hinterher und fühlen sich trotzdem leer, wenn sie sie erreichen. Der Grund: Ein Ziel ist ein Punkt, den man abhakt – ein Wert ist eine Richtung, die man lebt. Wer weiß, wofür er eigentlich losgeht, trifft bessere Entscheidungen, hält länger durch und findet Sinn schon im Weg, nicht erst im Ergebnis.",
+    sections: [
+      {
+        heading: "Werte sind Richtungen, keine Ziele",
+        body: "„Ein guter Vater sein“ ist kein Ziel, das man erreicht und abhakt – es ist eine Richtung, in die man täglich geht. Ziele („dieses Projekt abschließen“) sind Meilensteine auf dem Weg. Werte geben ihnen erst Bedeutung: Sie beantworten nicht das Was, sondern das Wofür.",
+      },
+      {
+        heading: "Warum Klarheit über Werte entlastet",
+        body: "Wer seine Werte kennt, muss nicht jede Entscheidung neu aus dem Bauch treffen – er hat einen Kompass. Konflikte werden klarer („was davon zahlt auf das ein, was mir wichtig ist?“), und Verzicht fällt leichter, weil man weiß, wofür. Werte reduzieren die tägliche Reibung des Entscheidens.",
+      },
+      {
+        heading: "Vom Wert zur konkreten Handlung",
+        body: "Ein Wert bleibt folgenlos, wenn er nicht in Handlung übersetzt wird. Die Brücke ist die Frage: „Wie sähe dieser Wert heute in einer kleinen konkreten Handlung aus?“ So wird aus „Gesundheit ist mir wichtig“ ein Spaziergang – und aus einer Absichtserklärung ein gelebtes Leben.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Die Kern-Werte finden",
+        duration: "20 Minuten, schriftlich",
+        steps: [
+          "Denk an einen Moment, in dem du dich zutiefst stimmig gefühlt hast. Was war da wichtig?",
+          "Sammle 8–10 Wörter, die für dich zählen (z. B. Ehrlichkeit, Freiheit, Nähe, Wachstum).",
+          "Streiche zusammen, bis 3–4 Kern-Werte übrig bleiben.",
+          "Schreib zu jedem einen Satz: „Diesen Wert lebe ich, wenn ich …“.",
+        ],
+      },
+      {
+        title: "Der Werte-Check der Woche",
+        duration: "10 Minuten, wöchentlich",
+        steps: [
+          "Blick auf die vergangene Woche: Wo hast du nach deinen Werten gehandelt?",
+          "Wo bist du davon abgewichen – und was hat dich abgebracht?",
+          "Wähle einen Wert für die kommende Woche.",
+          "Lege eine kleine, konkrete Handlung fest, die ihn sichtbar macht.",
+        ],
+      },
+    ],
+    reflection: [
+      "Verfolgst du gerade Ziele, die eigentlich nicht deine sind?",
+      "Welche 3 Werte würden die Menschen nennen, die dich am besten kennen?",
+      "Wo klaffen dein Alltag und das, was dir wirklich wichtig ist, auseinander?",
+    ],
+    takeaway:
+      "Ziele erreichst du, Werte lebst du. Wer seine Richtung kennt, findet Sinn im Weg – nicht erst im Ergebnis.",
+    relatedStage: 6,
+    video: null,
+  },
 ];
 
 export function getDeepDive(slug: string): DeepDive | undefined {

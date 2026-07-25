@@ -55,6 +55,10 @@ export const stageLessons: StageLesson[] = [
         heading: "Erwachen ist kein Ziel, sondern ein Erinnern",
         body: "Du musst nichts Neues werden. Das Bewusstsein, das jetzt diese Worte liest, war immer schon da – hinter jedem Gedanken, in jedem Alter deines Lebens. Auf dieser Stufe geht es nur darum, dich immer öfter daran zu erinnern, wer da eigentlich wahrnimmt.",
       },
+      {
+        heading: "Metakognition – Denken über das Denken",
+        body: "Die Fähigkeit, den eigenen Gedanken zuzusehen, hat auch einen nüchternen Namen: Metakognition, das Denken über das Denken. Sie ist keine spirituelle Sonderbegabung, sondern eine trainierbare Funktion deines Gehirns. Jedes Mal, wenn du bemerkst „ich denke gerade“, aktivierst du genau diesen Beobachter-Modus – und je öfter du das tust, desto selbstverständlicher wird er.",
+      },
     ],
     exercises: [
       {
@@ -107,6 +111,10 @@ export const stageLessons: StageLesson[] = [
       {
         heading: "Beobachten heißt nicht bekämpfen",
         body: "Der häufigste Fehler: gegen die eigenen Gedanken ankämpfen. Doch was du bekämpfst, hältst du fest. Beobachten ist das Gegenteil – ein freundliches, wertfreies Hinsehen. Was gesehen wird, muss sich nicht mehr durchsetzen, um gehört zu werden.",
+      },
+      {
+        heading: "Kognitive Defusion – Abstand statt Kampf",
+        body: "In der modernen Psychologie heißt das, was du hier übst, kognitive Defusion: die Verschmelzung mit einem Gedanken lösen, ohne ihn zu bekämpfen. Statt „Ich bin ein Versager“ übst du „Ich bemerke den Gedanken, dass ich ein Versager sei“. Diese kleine sprachliche Verschiebung schafft sofort Distanz – der Gedanke wird zu einem Objekt in deinem Bewusstsein, nicht zur Brille, durch die du schaust.",
       },
     ],
     exercises: [
@@ -161,6 +169,10 @@ export const stageLessons: StageLesson[] = [
         heading: "Sehen ist schon Veränderung",
         body: "Du musst ein Muster nicht mit Gewalt „loswerden“. Sobald du es klar erkennst – seinen Auslöser, seine Geschichte, seinen Preis – kann es nicht mehr unbemerkt ablaufen. Bewusstheit entzieht dem Automatismus den Boden. Was du siehst, steuert dich nicht mehr blind.",
       },
+      {
+        heading: "Vom impliziten zum expliziten Muster",
+        body: "Muster wirken am stärksten, solange sie implizit bleiben – unausgesprochen, unter der Wahrnehmungsschwelle. Der entscheidende Schritt ist, sie explizit zu machen: in Worte zu fassen, aufzuschreiben, beim Namen zu nennen. Was einmal klar benannt ist, kann nicht mehr unbemerkt ablaufen – die Bewusstwerdung ist selbst schon der halbe Weg der Veränderung.",
+      },
     ],
     exercises: [
       {
@@ -213,6 +225,10 @@ export const stageLessons: StageLesson[] = [
       {
         heading: "Die Geschichte beenden",
         body: "Oft halten wir nicht am Gefühl fest, sondern an der Geschichte: „Er hat mir das angetan.“ „So bin ich eben.“ Loslassen heißt auch, eine Geschichte zu Ende zu erzählen – nicht um zu vergessen, sondern um nicht mehr aus der Wunde heraus zu leben.",
+      },
+      {
+        heading: "Die Welle reiten – warum Fühlen entlädt",
+        body: "Festgehaltene Gefühle verschwinden nicht, sie warten – und binden Energie. Ein Gefühl, dem du bewusst Raum gibst, folgt dagegen einem natürlichen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab, meist schneller als befürchtet. Loslassen heißt nicht, das Gefühl loszuwerden, sondern es lange genug auszuhalten, dass es von selbst durch dich hindurchziehen kann.",
       },
     ],
     exercises: [
@@ -267,6 +283,10 @@ export const stageLessons: StageLesson[] = [
         heading: "Wiederholung verankert",
         body: "Neue Denkbahnen entstehen nicht durch einmalige Einsicht, sondern durch Wiederholung mit Gefühl. Je öfter du einen stärkenden Gedanken denkst und dabei die passende Empfindung spürst, desto tiefer gräbt er sich ein – bis er sich irgendwann wie selbstverständlich anfühlt.",
       },
+      {
+        heading: "Selbstbild und Wiederholung – woran dein System glaubt",
+        body: "Dein Verhalten folgt selten deinen guten Vorsätzen, sondern deinem inneren Selbstbild – dem, was du tief für wahr über dich hältst. Genau dieses Bild formst du hier neu: nicht durch einmalige Einsicht, sondern durch wiederholte Gedanken, die mit Gefühl verankert werden. Was du oft genug denkst und fühlst, wird zu deiner neuen Normalität – und dein Handeln zieht wie von selbst nach.",
+      },
     ],
     exercises: [
       {
@@ -320,6 +340,10 @@ export const stageLessons: StageLesson[] = [
         heading: "Integrität als Kraftquelle",
         body: "Jedes Mal, wenn dein Handeln deinen Werten entspricht, gewinnst du Vertrauen zu dir selbst. Diese Selbst-Übereinstimmung ist die Wurzel echter Ausstrahlung. Menschen spüren, ob du stimmig bist – lange bevor du ein Wort sagst.",
       },
+      {
+        heading: "Kohärenz – wenn die Systeme zusammenspielen",
+        body: "Kohärenz ist mehr als ein gutes Gefühl – sie ist ein Zustand, in dem Kopf, Herz und Nervensystem im selben Takt schwingen. In ihm denkst du klarer, entscheidest ruhiger und wirkst auf andere stimmiger. Er entsteht nicht durch Anstrengung, sondern durch Ausrichtung: Wenn Denken, Fühlen und Handeln in dieselbe Richtung zeigen, hört der innere Widerstand auf, deine Energie zu fressen.",
+      },
     ],
     exercises: [
       {
@@ -372,6 +396,10 @@ export const stageLessons: StageLesson[] = [
       {
         heading: "Aus der Fülle leben und weitergeben",
         body: "Wer bei sich zu Hause ist, muss nicht mehr im Außen suchen, was nur innen zu finden ist. Aus dieser inneren Freiheit entsteht oft der Wunsch, weiterzugeben – ein Vorbild zu sein, nicht durch Worte, sondern durch die Art, wie du bist.",
+      },
+      {
+        heading: "Von der Praxis zur Haltung",
+        body: "Am Anfang ist jede dieser Fähigkeiten eine bewusste Technik – innehalten, beobachten, wählen. Mit genügend Wiederholung wird aus der Technik eine Haltung, die von selbst greift, auch ohne dass du daran denkst. Das ist Meisterschaft im eigentlichen Sinn: kein Zustand ohne Sturm, sondern ein Zuhause, in das du immer schneller zurückfindest.",
       },
     ],
     exercises: [

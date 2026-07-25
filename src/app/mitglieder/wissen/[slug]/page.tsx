@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Check, Play } from "@/components/ui/Icon";
+import { ArrowRight, Check, Play, Download } from "@/components/ui/Icon";
 import { deepDives, getDeepDive } from "@/lib/deep-dives";
 import { stages } from "@/lib/content";
 
@@ -160,6 +160,14 @@ export default async function DeepDivePage({
                   </div>
                 ))}
               </div>
+
+              <a
+                href={`/mitglieder/wissen/${dive.slug}/lektion`}
+                className="inline-flex items-center gap-2 self-start rounded-full border border-ink/20 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+              >
+                <Download />
+                Diese Vertiefung als PDF
+              </a>
             </div>
           )}
 

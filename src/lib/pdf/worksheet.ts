@@ -18,6 +18,7 @@ import {
 } from "pdf-lib";
 import type { Stage } from "@/lib/content";
 import type { StageLesson } from "@/lib/stage-lessons";
+import type { DeepDive } from "@/lib/deep-dives";
 
 const PAGE = { w: 595.28, h: 841.89 }; // A4 hochkant
 const MARGIN = 56;
@@ -206,7 +207,12 @@ function divider(ctx: Ctx, thickness = 1, gapBefore = 6, gapAfter = 14) {
 /* Wiederverwendbare Abschnitte                                     */
 /* ---------------------------------------------------------------- */
 
-function sectionStageHeader(ctx: Ctx, stage: Stage, kindLabel: string) {
+function sectionDocHeader(
+  ctx: Ctx,
+  eyebrow: string,
+  title: string,
+  subtitle: string,
+) {
   // Logo dezent oben rechts
   if (ctx.logo) {
     const w = 32;
@@ -226,19 +232,19 @@ function sectionStageHeader(ctx: Ctx, stage: Stage, kindLabel: string) {
     lineHeight: 12,
   });
   ctx.y -= 6;
-  paragraph(ctx, `${kindLabel} · Stufe ${stage.number}`, {
+  paragraph(ctx, eyebrow, {
     font: ctx.fonts.reg,
     size: 10,
     color: INK_SOFT,
     lineHeight: 14,
   });
-  paragraph(ctx, stage.title, {
+  paragraph(ctx, title, {
     font: ctx.fonts.bold,
     size: 22,
     color: INK,
     lineHeight: 26,
   });
-  paragraph(ctx, stage.subtitle, {
+  paragraph(ctx, subtitle, {
     font: ctx.fonts.reg,
     size: 11,
     color: ACCENT,
@@ -246,6 +252,15 @@ function sectionStageHeader(ctx: Ctx, stage: Stage, kindLabel: string) {
     gapAfter: 10,
   });
   divider(ctx);
+}
+
+function sectionStageHeader(ctx: Ctx, stage: Stage, kindLabel: string) {
+  sectionDocHeader(
+    ctx,
+    `${kindLabel} · Stufe ${stage.number}`,
+    stage.title,
+    stage.subtitle,
+  );
 }
 
 function sectionKeyIdea(ctx: Ctx, lesson: StageLesson) {
@@ -386,16 +401,16 @@ function sectionReflection(ctx: Ctx, lesson: StageLesson, interactive: boolean) 
   });
 }
 
-function sectionAffirmation(ctx: Ctx, lesson: StageLesson) {
+function sectionAffirmation(ctx: Ctx, text: string, label = "Dein Leitsatz") {
   ensure(ctx, 50);
   divider(ctx, 1, 4, 16);
-  paragraph(ctx, "Dein Leitsatz", {
+  paragraph(ctx, label, {
     font: ctx.fonts.bold,
     size: 9,
     color: ACCENT,
     lineHeight: 13,
   });
-  paragraph(ctx, `„${lesson.affirmation}“`, {
+  paragraph(ctx, `„${text}“`, {
     font: ctx.fonts.obl,
     size: 13,
     color: INK,
@@ -463,7 +478,7 @@ export async function buildWorksheetPdf(
   sectionKeyIdea(ctx, lesson);
   sectionExercises(ctx, lesson, true);
   sectionReflection(ctx, lesson, true);
-  sectionAffirmation(ctx, lesson);
+  sectionAffirmation(ctx, lesson.affirmation);
 
   drawFooter(ctx);
   return ctx.doc.save();
@@ -491,7 +506,7 @@ export async function buildLessonPdf(
   sectionLesson(ctx, lesson);
   sectionExercises(ctx, lesson, false);
   sectionReflection(ctx, lesson, false);
-  sectionAffirmation(ctx, lesson);
+  sectionAffirmation(ctx, lesson.affirmation);
 
   drawFooter(ctx);
   return ctx.doc.save();
@@ -675,8 +690,47 @@ export async function buildWorkbookPdf(
     sectionLesson(ctx, lesson);
     sectionExercises(ctx, lesson, true);
     sectionReflection(ctx, lesson, true);
-    sectionAffirmation(ctx, lesson);
+    sectionAffirmation(ctx, lesson.affirmation);
   });
+
+  drawFooter(ctx);
+  return ctx.doc.save();
+}
+
+/* ---------------------------------------------------------------- */
+/* 4) Vertiefung (Deep-Dive) als PDF                                */
+/* ---------------------------------------------------------------- */
+
+export async function buildDeepDivePdf(
+  dive: DeepDive,
+  logoBytes?: Uint8Array,
+): Promise<Uint8Array> {
+  const ctx = await startDoc(
+    `Vertiefung – ${dive.title}`,
+    `Werde Meister deiner Gedanken · Vertiefung: ${dive.title}`,
+    logoBytes,
+  );
+  ctx.doc.setSubject("Vertiefung");
+
+  // Auf die vorhandenen Bausteine abbilden
+  const lesson: StageLesson = {
+    number: "",
+    keyIdea: dive.keyIdea,
+    intro: dive.intro,
+    sections: dive.sections,
+    exercises: dive.exercises,
+    reflection: dive.reflection,
+    affirmation: dive.takeaway,
+    video: dive.video,
+  };
+
+  sectionDocHeader(ctx, `Vertiefung · ${dive.category}`, dive.title, dive.subtitle);
+  sectionKeyIdea(ctx, lesson);
+  sectionIntro(ctx, lesson);
+  sectionLesson(ctx, lesson);
+  sectionExercises(ctx, lesson, false);
+  sectionReflection(ctx, lesson, false);
+  sectionAffirmation(ctx, dive.takeaway, "Kernbotschaft");
 
   drawFooter(ctx);
   return ctx.doc.save();
