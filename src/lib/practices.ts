@@ -267,6 +267,29 @@ export const practices: Practice[] = [
     relatedStage: 4,
     video: null,
   },
+  {
+    slug: "praesenz-spaziergang",
+    title: "Präsenz-Spaziergang",
+    category: "Rituale",
+    duration: "10–20 Minuten",
+    summary:
+      "Ein Spaziergang, der dich raus aus dem Kopf und rein in den Moment holt – besonders schön mit Hund.",
+    purpose:
+      "Trainiert Präsenz im Alltag über die Sinne – Bewusstsein wird konkret erfahrbar.",
+    when: "Wann immer der Kopf voll ist. Ein Hund ist dabei der beste Lehrer.",
+    intro:
+      "Präsenz muss nicht auf dem Meditationskissen stattfinden. Ein bewusster Spaziergang ist gelebte Achtsamkeit – und ein Hund lebt ganz selbstverständlich im Jetzt, was wir sonst mühsam üben.",
+    steps: [
+      "Lass das Handy weg oder schalt es stumm. Dieser Spaziergang gehört dem Moment.",
+      "Geh die ersten Minuten bewusst langsamer als gewohnt und spüre deine Schritte.",
+      "Nimm nacheinander wahr: fünf Dinge, die du siehst, drei, die du hörst, eines, das du riechst.",
+      "Wenn du einen Hund dabei hast, beobachte ihn eine Weile – seine Neugier, seine völlige Gegenwart.",
+      "Wenn deine Gedanken abschweifen, kehr freundlich zu deinen Sinnen zurück – so oft es nötig ist.",
+    ],
+    tip: "Nicht die Strecke zählt, sondern wie oft du bewusst zurückkehrst. Jede Rückkehr ist Training.",
+    relatedStage: 2,
+    video: null,
+  },
 ];
 
 export function getPractice(slug: string): Practice | undefined {

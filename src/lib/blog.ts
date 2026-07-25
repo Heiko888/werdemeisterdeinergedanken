@@ -159,6 +159,63 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "was-mein-hund-mich-ueber-praesenz-lehrt",
+    title: "Was mein Hund mich über Präsenz lehrt",
+    excerpt:
+      "Ein Hund kennt kein Gestern und kein Morgen – nur das Jetzt. Warum das Zusammenleben mit ihm dein Bewusstsein trainiert.",
+    category: "Präsenz",
+    date: "2026-07-25",
+    dateLabel: "25. Juli 2026",
+    readingMinutes: 3,
+    content: [
+      {
+        type: "p",
+        text: "Das ist meine ganz persönliche Überzeugung: Ein Hund stärkt dein Bewusstsein. Nicht durch eine Methode, sondern einfach dadurch, wie er ist. Er holt dich sofort in den Moment.",
+      },
+      {
+        type: "h2",
+        text: "Ein Hund lebt, was wir üben",
+      },
+      {
+        type: "p",
+        text: "In der Meditation trainieren wir mühsam, im Jetzt zu bleiben. Ein Hund kann gar nicht anders. Er grübelt nicht über gestern und sorgt sich nicht um morgen. Er ist einfach da – neugierig, wach, ganz in dem, was gerade ist. Und diese Gegenwärtigkeit steckt an, wenn du dich darauf einlässt.",
+      },
+      {
+        type: "quote",
+        text: "Ein Hund holt dich sofort in den Moment. Er kennt kein Gestern und kein Morgen – nur das Jetzt.",
+      },
+      {
+        type: "h2",
+        text: "Warum das dein Bewusstsein stärkt",
+      },
+      {
+        type: "p",
+        text: "Präsenz ist kein esoterischer Zustand, sondern schlicht Aufmerksamkeit im Hier. Wenn du ohne Handy mit deinem Hund draußen bist, seine Bewegungen beobachtest, den Wind und den Boden spürst, dann bist du automatisch raus aus dem Kopf und drin in den Sinnen. Genau das üben wir auf den ersten Stufen: bemerken, was ist, statt gedanklich woanders zu sein.",
+      },
+      {
+        type: "p",
+        text: "Ein Hund wird so zu einem täglichen Lehrer – ohne ein Wort. Er erinnert dich immer wieder daran, wohin die Aufmerksamkeit gehört: in den Moment, der ohnehin der einzige ist, den es gibt.",
+      },
+      {
+        type: "h2",
+        text: "Nimm es mit in deinen Alltag",
+      },
+      {
+        type: "ul",
+        items: [
+          "Geh die nächste Runde bewusst ohne Handy.",
+          "Beobachte deinen Hund eine Minute lang – seine Neugier, seine völlige Gegenwart.",
+          "Nimm bewusst wahr, was du siehst, hörst und riechst.",
+          "Wenn die Gedanken abschweifen, kehr freundlich zu deinen Sinnen zurück.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Du brauchst keinen Hund, um präsent zu sein. Aber wenn du einen hast, hast du einen der besten Lehrer direkt an deiner Seite. Und Präsenz ist die Tür zu allem Weiteren.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
