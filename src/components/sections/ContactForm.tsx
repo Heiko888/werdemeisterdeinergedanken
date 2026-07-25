@@ -5,23 +5,49 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
 
-/**
- * Kontaktformular (Front-end).
- * TODO: An einen Versand-Endpunkt anbinden (Route Handler + Mail-Service
- * wie Resend/Brevo) oder als mailto-Fallback nutzen.
- */
+type Status = "idle" | "sending" | "done" | "error";
+
 export function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "done">("idle");
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState<Status>("idle");
+  const [error, setError] = useState("");
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+    company: "",
+  });
 
   function update(key: keyof typeof form) {
     return (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       setForm((f) => ({ ...f, [key]: e.target.value }));
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    setStatus("done");
+    setStatus("sending");
+    setError("");
+    try {
+      const res = await fetch("/api/kontakt", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.ok) {
+        setStatus("done");
+      } else {
+        setStatus("error");
+        setError(
+          data.error ||
+            `Etwas ist schiefgelaufen. Bitte schreib mir direkt an ${site.email}.`,
+        );
+      }
+    } catch {
+      setStatus("error");
+      setError(
+        `Verbindung fehlgeschlagen. Bitte versuch es erneut oder schreib mir direkt an ${site.email}.`,
+      );
+    }
   }
 
   const inputClass =
@@ -49,6 +75,8 @@ export function ContactForm() {
       </div>
     );
   }
+
+  const sending = status === "sending";
 
   return (
     <form
@@ -98,6 +126,23 @@ export function ContactForm() {
           className={inputClass}
         />
       </div>
+
+      {/* Honeypot gegen Spam – für echte Nutzer unsichtbar */}
+      <div
+        aria-hidden
+        className="absolute -left-[9999px] h-0 w-0 overflow-hidden"
+      >
+        <label htmlFor="company">Firma (bitte leer lassen)</label>
+        <input
+          id="company"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={form.company}
+          onChange={update("company")}
+        />
+      </div>
+
       <label className="flex items-start gap-2 text-xs text-ink-soft/60">
         <input type="checkbox" required className="mt-0.5 accent-brand-500" />
         <span>
@@ -108,9 +153,21 @@ export function ContactForm() {
           gelesen und stimme der Verarbeitung meiner Daten zu.
         </span>
       </label>
-      <Button type="submit" variant="primary" size="lg" className="w-full sm:w-fit">
-        Nachricht senden
-        <ArrowRight />
+
+      {status === "error" && (
+        <p className="rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-700">
+          {error}
+        </p>
+      )}
+
+      <Button
+        type="submit"
+        variant="primary"
+        size="lg"
+        className="w-full sm:w-fit"
+      >
+        {sending ? "Wird gesendet …" : "Nachricht senden"}
+        {!sending && <ArrowRight />}
       </Button>
     </form>
   );
