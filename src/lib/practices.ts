@@ -28,8 +28,10 @@ export type Practice = {
   tip?: string;
   /** Passende Stufe (1–7) */
   relatedStage: number;
-  /** YouTube-ID (Audio/Video) – oder null */
+  /** YouTube-ID (Video) – oder null */
   video: string | null;
+  /** MP3-Quelle zum Anhören: /pfad-in-public.mp3 oder volle URL – oder weglassen */
+  audio?: string | null;
 };
 
 export const practices: Practice[] = [

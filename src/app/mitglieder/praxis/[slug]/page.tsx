@@ -100,7 +100,24 @@ export default async function PracticePage({
             <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
               Geführte Aufnahme
             </span>
-            {practice.video ? (
+            {practice.audio ? (
+              <div className="mt-3 flex flex-col items-center gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">
+                  <Play />
+                </span>
+                <p className="text-sm font-medium text-ink">
+                  {practice.title} – zum Anhören
+                </p>
+                <audio
+                  controls
+                  preload="none"
+                  className="w-full"
+                  src={practice.audio}
+                >
+                  Dein Browser kann diese Audiodatei nicht abspielen.
+                </audio>
+              </div>
+            ) : practice.video ? (
               <div className="mt-3 aspect-video w-full overflow-hidden rounded-2xl border border-ink/10 shadow-card">
                 <iframe
                   className="h-full w-full"
