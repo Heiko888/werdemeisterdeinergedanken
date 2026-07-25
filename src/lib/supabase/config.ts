@@ -11,7 +11,14 @@ export const isSupabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 
 /**
  * Schalter für den Login-Schutz des Mitgliederbereichs.
- * Vorerst `false` → /mitglieder ist frei sichtbar (Vorschau ohne Anmeldung).
- * Auf `true` setzen, sobald Supabase aktiv ist, um den Zugang zu schützen.
+ * `true` → /mitglieder ist nur nach Anmeldung erreichbar.
  */
-export const REQUIRE_MEMBER_LOGIN = false;
+export const REQUIRE_MEMBER_LOGIN = true;
+
+/**
+ * Selbst-Registrierung durch Besucher.
+ * Vorerst `false` → geschlossener Bereich: nur „Anmelden“, keine Registrierung.
+ * Zugänge werden von Hand in Supabase angelegt.
+ * Auf `true` setzen, um die Registrierung für alle zu öffnen.
+ */
+export const ALLOW_SELF_REGISTRATION = false;

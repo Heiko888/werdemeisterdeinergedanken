@@ -11,7 +11,13 @@ const initial: AuthState = {};
 const inputClass =
   "w-full rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 focus:border-accent focus:outline-none";
 
-export function AuthForm({ redirectTo = "/mitglieder" }: { redirectTo?: string }) {
+export function AuthForm({
+  redirectTo = "/mitglieder",
+  allowRegister = true,
+}: {
+  redirectTo?: string;
+  allowRegister?: boolean;
+}) {
   const [mode, setMode] = useState<"login" | "register">("login");
   const [loginState, loginAction, loginPending] = useActionState(signIn, initial);
   const [signupState, signupAction, signupPending] = useActionState(
@@ -19,29 +25,33 @@ export function AuthForm({ redirectTo = "/mitglieder" }: { redirectTo?: string }
     initial,
   );
 
-  const state = mode === "login" ? loginState : signupState;
-  const pending = mode === "login" ? loginPending : signupPending;
+  // Geschlossener Bereich: immer Anmelde-Modus erzwingen
+  const activeMode = allowRegister ? mode : "login";
+  const state = activeMode === "login" ? loginState : signupState;
+  const pending = activeMode === "login" ? loginPending : signupPending;
 
   return (
     <div className="w-full max-w-md">
-      {/* Umschalter */}
-      <div className="mb-6 grid grid-cols-2 gap-1 rounded-full border border-ink/10 bg-white p-1 shadow-card">
-        {(["login", "register"] as const).map((m) => (
-          <button
-            key={m}
-            type="button"
-            onClick={() => setMode(m)}
-            className={cn(
-              "rounded-full py-2.5 text-sm font-medium transition-colors",
-              mode === m
-                ? "bg-ink text-paper"
-                : "text-ink-soft hover:text-ink",
-            )}
-          >
-            {m === "login" ? "Anmelden" : "Registrieren"}
-          </button>
-        ))}
-      </div>
+      {/* Umschalter (nur wenn Registrierung offen) */}
+      {allowRegister && (
+        <div className="mb-6 grid grid-cols-2 gap-1 rounded-full border border-ink/10 bg-white p-1 shadow-card">
+          {(["login", "register"] as const).map((m) => (
+            <button
+              key={m}
+              type="button"
+              onClick={() => setMode(m)}
+              className={cn(
+                "rounded-full py-2.5 text-sm font-medium transition-colors",
+                mode === m
+                  ? "bg-ink text-paper"
+                  : "text-ink-soft hover:text-ink",
+              )}
+            >
+              {m === "login" ? "Anmelden" : "Registrieren"}
+            </button>
+          ))}
+        </div>
+      )}
 
       {state.message ? (
         <div className="flex flex-col items-center gap-3 rounded-2xl border border-accent/30 bg-accent/10 p-8 text-center">
@@ -52,10 +62,10 @@ export function AuthForm({ redirectTo = "/mitglieder" }: { redirectTo?: string }
         </div>
       ) : (
         <form
-          action={mode === "login" ? loginAction : signupAction}
+          action={activeMode === "login" ? loginAction : signupAction}
           className="flex flex-col gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8"
         >
-          {mode === "register" && (
+          {activeMode === "register" && (
             <div className="flex flex-col gap-1.5">
               <label htmlFor="name" className="text-sm font-medium text-ink">
                 Name
@@ -93,10 +103,10 @@ export function AuthForm({ redirectTo = "/mitglieder" }: { redirectTo?: string }
               id="password"
               name="password"
               type="password"
-              autoComplete={mode === "login" ? "current-password" : "new-password"}
+              autoComplete={activeMode === "login" ? "current-password" : "new-password"}
               required
-              minLength={mode === "register" ? 8 : undefined}
-              placeholder={mode === "register" ? "Mind. 8 Zeichen" : "••••••••"}
+              minLength={activeMode === "register" ? 8 : undefined}
+              placeholder={activeMode === "register" ? "Mind. 8 Zeichen" : "••••••••"}
               className={inputClass}
             />
           </div>
@@ -117,14 +127,22 @@ export function AuthForm({ redirectTo = "/mitglieder" }: { redirectTo?: string }
           >
             {pending
               ? "Bitte warten …"
-              : mode === "login"
+              : activeMode === "login"
                 ? "Anmelden"
                 : "Konto erstellen"}
             {!pending && <ArrowRight />}
           </Button>
 
           <p className="text-center text-xs text-ink-soft/60">
-            {mode === "login" ? (
+            {!allowRegister ? (
+              <>
+                Noch keinen Zugang?{" "}
+                <a href="/kontakt" className="font-medium text-accent hover:text-ink">
+                  Schreib mir
+                </a>{" "}
+                – Zugänge werden persönlich vergeben.
+              </>
+            ) : activeMode === "login" ? (
               <>
                 Noch kein Zugang?{" "}
                 <button

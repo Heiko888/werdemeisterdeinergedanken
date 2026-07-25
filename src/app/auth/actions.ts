@@ -3,7 +3,10 @@
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
-import { isSupabaseConfigured } from "@/lib/supabase/config";
+import {
+  isSupabaseConfigured,
+  ALLOW_SELF_REGISTRATION,
+} from "@/lib/supabase/config";
 
 export type AuthState = { error?: string; message?: string };
 
@@ -45,6 +48,12 @@ export async function signUp(
 ): Promise<AuthState> {
   if (!isSupabaseConfigured)
     return { error: "Der Mitgliederbereich ist noch nicht konfiguriert." };
+
+  if (!ALLOW_SELF_REGISTRATION)
+    return {
+      error:
+        "Die Registrierung ist derzeit nicht möglich. Zugänge werden persönlich vergeben – melde dich gern über die Kontaktseite.",
+    };
 
   const name = String(formData.get("name") || "").trim();
   const email = String(formData.get("email") || "").trim();

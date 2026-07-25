@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { AuthForm } from "@/components/auth/AuthForm";
-import { isSupabaseConfigured } from "@/lib/supabase/config";
+import {
+  isSupabaseConfigured,
+  ALLOW_SELF_REGISTRATION,
+} from "@/lib/supabase/config";
 
 export const dynamic = "force-dynamic";
 
@@ -36,13 +39,17 @@ export default async function LoginPage({
             Willkommen zurück
           </h1>
           <p className="max-w-md text-[1.02rem] leading-relaxed text-ink-soft/75">
-            Melde dich an oder erstelle deinen Zugang, um in deinen persönlichen
-            Bereich zu gelangen.
+            {ALLOW_SELF_REGISTRATION
+              ? "Melde dich an oder erstelle deinen Zugang, um in deinen persönlichen Bereich zu gelangen."
+              : "Melde dich mit deinem persönlichen Zugang an, um in deinen Bereich zu gelangen."}
           </p>
         </div>
 
         {isSupabaseConfigured ? (
-          <AuthForm redirectTo={redirect ?? "/mitglieder"} />
+          <AuthForm
+            redirectTo={redirect ?? "/mitglieder"}
+            allowRegister={ALLOW_SELF_REGISTRATION}
+          />
         ) : (
           <div className="w-full max-w-md rounded-2xl border border-gold-500/40 bg-gold-300/20 p-6 text-left text-sm leading-relaxed text-ink-soft shadow-card">
             <strong className="block font-semibold text-ink">
