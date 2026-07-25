@@ -10,7 +10,7 @@ import { stages } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Die 7 Stufen der Bewusstseinsentwicklung",
   description:
-    "Der strukturierte Weg vom ersten Erwachen bis zur Meisterschaft über deine Gedanken – die 7 Stufen der Bewusstseinsentwicklung im Detail.",
+    "Der strukturierte Weg vom Autopilot bis zur Meisterschaft über deine Gedanken – die 7 Stufen der Bewusstseinsentwicklung im Detail.",
 };
 
 export default function SevenStagesPage() {

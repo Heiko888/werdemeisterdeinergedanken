@@ -85,7 +85,7 @@ export const deepDives: DeepDive[] = [
     ],
     takeaway:
       "Zwischen Situation und Gefühl steht immer ein Gedanke. Wer ihn erwischt, gewinnt die Wahl zurück.",
-    relatedStage: 2,
+    relatedStage: 1,
     video: null,
   },
 
@@ -144,7 +144,7 @@ export const deepDives: DeepDive[] = [
     ],
     takeaway:
       "Konditionierung ist gelerntes Reagieren – kein Schicksal. Neue Erfahrung schreibt die alte Kopplung um.",
-    relatedStage: 3,
+    relatedStage: 1,
     video: null,
   },
 
@@ -203,7 +203,7 @@ export const deepDives: DeepDive[] = [
     ],
     takeaway:
       "Denkfehler folgen wenigen Mustern. Wer sie benennt, muss ihnen nicht mehr glauben.",
-    relatedStage: 2,
+    relatedStage: 3,
     video: null,
   },
 
@@ -498,7 +498,7 @@ export const deepDives: DeepDive[] = [
     ],
     takeaway:
       "Grübeln ist Wiederholung, kein Fortschritt. Du gewinnst es nicht – du unterbrichst es.",
-    relatedStage: 2,
+    relatedStage: 3,
     video: null,
   },
 

@@ -35,17 +35,74 @@ export type StageLesson = {
 };
 
 export const stageLessons: StageLesson[] = [
-  // 01 – Erwachen
+  // 01 – Autopilot
   {
     number: "01",
     keyIdea:
+      "Was du nicht bewusst steuerst, steuert dich. Alles beginnt damit, den Autopiloten zu bemerken.",
+    intro:
+      "Die meisten Menschen leben große Teile ihres Lebens im Autopilot: Sie reagieren, funktionieren und wiederholen – gesteuert von Gewohnheiten, Prägungen und automatischen Gedanken, die sie nie bewusst gewählt haben. Diese erste Stufe ist der ehrliche Blick auf genau das. Nicht als Vorwurf, sondern als Ausgangspunkt: Denn was du erkennst, kann beginnen, sich zu verändern.",
+    sections: [
+      {
+        heading: "Das Leben im Autopilot",
+        body: "Autopilot bedeutet nicht Faulheit, sondern Effizienz: Dein Gehirn spart Energie, indem es Bewährtes automatisch abspult. Im Alltag ist das praktisch – bis dieselben Reaktionen, Konflikte und Gefühle sich immer wiederholen, obwohl du sie längst nicht mehr willst. Dann arbeitet die Effizienz gegen dich.",
+      },
+      {
+        heading: "Woher deine Programme stammen",
+        body: "Deine automatischen Muster sind gelernt: von Eltern, Schule, Erfahrungen, Gesellschaft und Medien – meist lange, bevor du wählen konntest. Jedes war einmal ein sinnvoller Schutz. Das Problem ist nicht ihre Herkunft, sondern dass sie heute noch unbemerkt laufen, obwohl die alte Situation längst vorbei ist.",
+      },
+      {
+        heading: "Warum sich der Autopilot wie Freiheit anfühlt",
+        body: "Das Tückische: Automatische Reaktionen fühlen sich an wie freie Entscheidungen. „So bin ich eben.“ Doch vieles, was wir für unseren Charakter halten, ist antrainiertes Reagieren. Genau diese Verwechslung hält den Autopiloten am Laufen – wir verteidigen Muster, die uns steuern, als wären sie wir selbst.",
+      },
+      {
+        heading: "Der erste Riss",
+        body: "Veränderung beginnt nicht mit einer Technik, sondern mit einem Bemerken: „Moment – das läuft hier gerade automatisch ab.“ Dieser kleine Riss im Automatischen ist der Anfang von allem. Er lässt sich nicht erzwingen, aber üben – und je öfter er auftaucht, desto mehr Wahl entsteht.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Autopilot-Check",
+        duration: "1 Minute, mehrmals täglich",
+        steps: [
+          "Halte mitten im Alltag kurz inne – an der Ampel, vor dem Griff zum Handy, zwischen zwei Aufgaben.",
+          "Frage dich ehrlich: „Handle ich gerade bewusst – oder automatisch?“",
+          "Bemerke die Antwort ohne Wertung. Es geht nur ums Sehen, nicht ums Ändern.",
+          "Geh dann bewusst weiter – eine Spur wacher als vorher.",
+        ],
+      },
+      {
+        title: "Ein Muster benennen",
+        duration: "15 Minuten, schriftlich",
+        steps: [
+          "Denk an eine Situation, in der du zuletzt stärker reagiert hast, als es „nötig“ war.",
+          "Schreib auf: Was war der Auslöser? Was hast du gefühlt, gedacht, getan?",
+          "Frage dich: „Wie alt fühle ich mich in diesem Moment wirklich?“",
+          "Fasse das Muster in einem Satz. Was einmal benannt ist, läuft nicht mehr ganz unbemerkt.",
+        ],
+      },
+    ],
+    reflection: [
+      "Welche Reaktion von dir wiederholt sich, obwohl du sie längst nicht mehr willst?",
+      "An welchen Stellen deines Alltags läufst du am meisten im Autopilot?",
+      "Was in dir ahnt schon, dass mehr möglich ist?",
+    ],
+    affirmation:
+      "Ich bin nicht mein Autopilot. Ich kann bemerken, was in mir abläuft – und das verändert alles.",
+    video: null,
+  },
+
+  // 02 – Erwachen
+  {
+    number: "02",
+    keyIdea:
       "Du bist nicht deine Gedanken. Du bist der Raum, in dem sie erscheinen.",
     intro:
-      "Alles beginnt mit einem einzigen Moment: Du bemerkst zum ersten Mal, dass da jemand ist, der deine Gedanken wahrnimmt. Solange du glaubst, deine Gedanken zu sein, bist du ihnen ausgeliefert. In dem Augenblick, in dem du sie bemerkst, entsteht ein winziger Abstand – und in diesem Abstand liegt deine ganze Freiheit.",
+      "Sobald du den Autopiloten bemerkst, geschieht etwas Neues: Du erwachst. Du erkennst, dass da jemand ist, der deine Gedanken wahrnimmt – und dass du nicht deine Gedanken bist, sondern derjenige, der sie bemerkt. In diesem winzigen Abstand liegt der Beginn deiner Freiheit.",
     sections: [
       {
         heading: "Der Moment, in dem alles beginnt",
-        body: "Erwachen ist kein spektakuläres Ereignis. Es ist ein leises Erkennen: „Oh – ich denke gerade.“ Genau dieses Erkennen kann kein Gedanke sein, denn es sieht dem Denken zu. Damit ist der erste Schritt getan: Du hast dich zum ersten Mal von deinen Gedanken unterschieden.",
+        body: "Erwachen ist kein spektakuläres Ereignis. Es ist ein leises Erkennen: „Oh – ich denke gerade.“ Genau dieses Erkennen kann kein Gedanke sein, denn es sieht dem Denken zu. Damit ist der erste bewusste Schritt getan: Du hast dich zum ersten Mal von deinen Gedanken unterschieden.",
       },
       {
         heading: "Warum wir uns mit dem Denken verwechseln",
@@ -92,13 +149,13 @@ export const stageLessons: StageLesson[] = [
     video: null,
   },
 
-  // 02 – Beobachten
+  // 03 – Selbstbeobachtung
   {
-    number: "02",
+    number: "03",
     keyIdea:
-      "Zwischen Reiz und Reaktion liegt ein Raum. In diesem Raum liegt deine Wahlfreiheit.",
+      "Was du ruhig beobachten kannst, bestimmt dich nicht mehr blind.",
     intro:
-      "Wenn du erst einmal erwacht bist, beginnt die eigentliche Übung: das Beobachten. Es ist die Kunst, deinen Gedanken zuzusehen, ohne dich sofort mit ihnen zu identifizieren. Der innere Beobachter urteilt nicht, kämpft nicht und will nichts wegdrücken – er schaut nur. Und genau dieses Schauen verändert alles.",
+      "Nach dem Erwachen beginnt die eigentliche Übung: das ruhige Zusehen. Du lernst, deinen Gedanken und Reaktionen zuzusehen, ohne dich sofort mit ihnen zu identifizieren – und dabei die Muster zu erkennen, die dich bisher gesteuert haben. Der innere Beobachter urteilt nicht, kämpft nicht und will nichts wegdrücken. Er schaut nur. Und genau dieses Schauen verändert alles.",
     sections: [
       {
         heading: "Der innere Beobachter",
@@ -109,12 +166,12 @@ export const stageLessons: StageLesson[] = [
         body: "Solange du mitten im Gedanken steckst, siehst du nur den Gedanken. Sobald du einen Schritt zurücktrittst, siehst du das Muster dahinter. Diese Distanz ist kein Wegdrücken und keine Kälte – sie ist die ruhige Übersicht, aus der heraus du überhaupt erst wählen kannst.",
       },
       {
-        heading: "Beobachten heißt nicht bekämpfen",
-        body: "Der häufigste Fehler: gegen die eigenen Gedanken ankämpfen. Doch was du bekämpfst, hältst du fest. Beobachten ist das Gegenteil – ein freundliches, wertfreies Hinsehen. Was gesehen wird, muss sich nicht mehr durchsetzen, um gehört zu werden.",
-      },
-      {
         heading: "Kognitive Defusion – Abstand statt Kampf",
         body: "In der modernen Psychologie heißt das, was du hier übst, kognitive Defusion: die Verschmelzung mit einem Gedanken lösen, ohne ihn zu bekämpfen. Statt „Ich bin ein Versager“ übst du „Ich bemerke den Gedanken, dass ich ein Versager sei“. Diese kleine sprachliche Verschiebung schafft sofort Distanz – der Gedanke wird zu einem Objekt in deinem Bewusstsein, nicht zur Brille, durch die du schaust.",
+      },
+      {
+        heading: "Muster werden sichtbar",
+        body: "Aus der Beobachterposition heraus erkennst du mehr als einzelne Gedanken – du siehst die Muster dahinter: wiederkehrende Reaktionen, Glaubenssätze, alte Prägungen. Was du klar benennen kannst, verliert seinen unbewussten Griff. Bewusstheit entzieht dem Automatismus den Boden.",
       },
     ],
     exercises: [
@@ -129,94 +186,37 @@ export const stageLessons: StageLesson[] = [
         ],
       },
       {
-        title: "Der Fluss",
-        duration: "5–8 Minuten",
+        title: "Der Muster-Spürsinn",
+        duration: "15 Minuten, schriftlich",
         steps: [
-          "Schließe die Augen und stell dir einen ruhig fließenden Fluss vor.",
-          "Lege jeden auftauchenden Gedanken gedanklich auf ein Blatt und lass es vorbeitreiben.",
-          "Wenn du merkst, dass du „mitgeschwommen“ bist, ist das kein Fehler – kehr einfach ans Ufer zurück.",
-          "Übe die freundliche Rückkehr. Genau sie ist das Training.",
+          "Denk an eine Situation, in der du zuletzt stärker reagiert hast, als es nötig war.",
+          "Schreib auf: Auslöser, Gefühl, Gedanke, Handlung.",
+          "Frage: An welche frühere Situation erinnert dich das? Woher könnte das Muster stammen?",
+          "Halte fest, wie das Muster heißt – so erkennst du es beim nächsten Mal früher.",
         ],
       },
     ],
     reflection: [
       "In welchen Situationen reißen dich deine Gedanken am schnellsten mit?",
-      "Was verändert sich, wenn du einen Gedanken nur benennst, statt ihm sofort zu glauben?",
+      "Welches Muster erkennst du gerade zum ersten Mal klar bei dir?",
       "Wie fühlt es sich an, am Ufer zu sitzen – statt mitzuschwimmen?",
     ],
     affirmation:
-      "Ich sehe meinen Gedanken ruhig zu. Ich muss ihnen nicht folgen.",
+      "Ich sehe meinen Gedanken und Mustern ruhig zu. Ich muss ihnen nicht folgen.",
     video: null,
   },
 
-  // 03 – Entprogrammieren
-  {
-    number: "03",
-    keyIdea:
-      "Was du nicht bewusst wählst, wählt dich. Sichtbare Muster verlieren ihre Macht.",
-    intro:
-      "Vieles, was du für „deine Persönlichkeit“ hältst, sind in Wahrheit alte Programme: Glaubenssätze, Prägungen und automatische Reaktionen, die du irgendwann übernommen hast – meist lange bevor du wählen konntest. Auf dieser Stufe machst du diese Programme sichtbar. Und alles, was sichtbar wird, verliert seinen unbewussten Griff.",
-    sections: [
-      {
-        heading: "Woher deine Muster stammen",
-        body: "Kein Muster ist grundlos entstanden. Jedes war einmal ein cleverer Schutz – eine Strategie, die dir als Kind geholfen hat, dazuzugehören, sicher zu sein oder Liebe zu bekommen. Das Problem ist nicht das Muster. Das Problem ist, dass es heute noch läuft, obwohl die Situation von damals längst vorbei ist.",
-      },
-      {
-        heading: "Glaubenssätze als unsichtbare Regeln",
-        body: "„Ich muss stark sein.“ „Ich bin nicht genug.“ „Man kann niemandem trauen.“ Solche Sätze arbeiten im Hintergrund wie Betriebssystem-Regeln. Du hörst sie nicht mehr bewusst – du lebst sie einfach. Der erste Schritt zur Freiheit ist, sie überhaupt in Worte zu fassen.",
-      },
-      {
-        heading: "Sehen ist schon Veränderung",
-        body: "Du musst ein Muster nicht mit Gewalt „loswerden“. Sobald du es klar erkennst – seinen Auslöser, seine Geschichte, seinen Preis – kann es nicht mehr unbemerkt ablaufen. Bewusstheit entzieht dem Automatismus den Boden. Was du siehst, steuert dich nicht mehr blind.",
-      },
-      {
-        heading: "Vom impliziten zum expliziten Muster",
-        body: "Muster wirken am stärksten, solange sie implizit bleiben – unausgesprochen, unter der Wahrnehmungsschwelle. Der entscheidende Schritt ist, sie explizit zu machen: in Worte zu fassen, aufzuschreiben, beim Namen zu nennen. Was einmal klar benannt ist, kann nicht mehr unbemerkt ablaufen – die Bewusstwerdung ist selbst schon der halbe Weg der Veränderung.",
-      },
-    ],
-    exercises: [
-      {
-        title: "Der Muster-Spürsinn",
-        duration: "15 Minuten, schriftlich",
-        steps: [
-          "Denk an eine Situation, in der du kürzlich stärker reagiert hast, als es „nötig“ gewesen wäre.",
-          "Schreib auf: Was genau war der Auslöser? Was hast du gefühlt, gedacht, getan?",
-          "Frage dich: „Wie alt fühle ich mich in diesem Moment wirklich?“",
-          "Spür nach, an welche frühere Situation dich das erinnert. Da liegt die Wurzel.",
-        ],
-      },
-      {
-        title: "Glaubenssatz ans Licht holen",
-        duration: "10 Minuten",
-        steps: [
-          "Vervollständige spontan und ehrlich: „Ich bin …“, „Das Leben ist …“, „Menschen sind …“.",
-          "Schreib die ersten Antworten auf, ohne sie zu zensieren.",
-          "Markiere die Sätze, die sich schwer oder einengend anfühlen.",
-          "Frage bei jedem: „Ist das wirklich wahr – oder nur alt und gewohnt?“",
-        ],
-      },
-    ],
-    reflection: [
-      "Welche Reaktion von dir wiederholt sich immer wieder, obwohl du sie eigentlich nicht mehr willst?",
-      "Welchen Glaubenssatz hast du vielleicht von deinen Eltern oder deinem Umfeld übernommen, ohne ihn je zu prüfen?",
-      "Was hat dich dieses Muster bisher gekostet – an Energie, Nähe oder Möglichkeiten?",
-    ],
-    affirmation:
-      "Ich erkenne meine Muster – und was ich erkenne, steuert mich nicht mehr blind.",
-    video: null,
-  },
-
-  // 04 – Loslassen
+  // 04 – Emotionale Reifung
   {
     number: "04",
     keyIdea:
-      "Loslassen ist kein Verlieren, sondern ein Freiwerden. Es schafft Raum für dich.",
+      "Emotionale Reife heißt: fühlen, was ist – und loslassen, was war.",
     intro:
-      "Erkennen allein reicht oft nicht – manche Muster sitzen im Körper und in festgehaltenen Gefühlen. Auf dieser Stufe geht es ums Loslassen: alte Emotionen fühlen und ziehen lassen, Geschichten beenden, die du dir seit Jahren erzählst. Wo etwas losgelassen wird, entsteht Raum – für Ruhe, für Energie, für dich.",
+      "Erkennen allein reicht oft nicht – manche Muster sitzen in festgehaltenen Gefühlen und im Körper. Auf dieser Stufe reifst du emotional: Du lernst, schwierige Gefühle zu halten statt wegzudrücken, alte Geschichten abzuschließen und Verantwortung für dein Inneres zu übernehmen. Wo etwas losgelassen wird, entsteht Raum – für Ruhe, für Energie, für dich.",
     sections: [
       {
         heading: "Was wir festhalten, hält uns fest",
-        body: "Nicht gefühlte Gefühle verschwinden nicht – sie warten. Sie binden Energie, färben deine Stimmung und melden sich in den unpassendsten Momenten. Loslassen beginnt paradoxerweise damit, das Gefühl endlich zuzulassen, statt es weiter wegzudrücken.",
+        body: "Nicht gefühlte Gefühle verschwinden nicht – sie warten. Sie binden Energie, färben deine Stimmung und melden sich in den unpassendsten Momenten. Emotionale Reifung beginnt paradoxerweise damit, das Gefühl endlich zuzulassen, statt es weiter wegzudrücken.",
       },
       {
         heading: "Fühlen statt analysieren",
@@ -224,11 +224,11 @@ export const stageLessons: StageLesson[] = [
       },
       {
         heading: "Die Geschichte beenden",
-        body: "Oft halten wir nicht am Gefühl fest, sondern an der Geschichte: „Er hat mir das angetan.“ „So bin ich eben.“ Loslassen heißt auch, eine Geschichte zu Ende zu erzählen – nicht um zu vergessen, sondern um nicht mehr aus der Wunde heraus zu leben.",
+        body: "Oft halten wir nicht am Gefühl fest, sondern an der Geschichte: „Er hat mir das angetan.“ „So bin ich eben.“ Reifung heißt auch, eine Geschichte zu Ende zu erzählen – nicht um zu vergessen, sondern um nicht mehr aus der alten Wunde heraus zu leben, sondern Verantwortung für das Heute zu übernehmen.",
       },
       {
         heading: "Die Welle reiten – warum Fühlen entlädt",
-        body: "Festgehaltene Gefühle verschwinden nicht, sie warten – und binden Energie. Ein Gefühl, dem du bewusst Raum gibst, folgt dagegen einem natürlichen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab, meist schneller als befürchtet. Loslassen heißt nicht, das Gefühl loszuwerden, sondern es lange genug auszuhalten, dass es von selbst durch dich hindurchziehen kann.",
+        body: "Jedes Gefühl hat einen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab, meist schneller als befürchtet. Wer lernt, den Höhepunkt auszuhalten, statt sofort zu handeln oder wegzudrücken, merkt: Die Welle trägt einen, sie verschlingt einen nicht. Aushalten ist eine aktive, kraftvolle Fähigkeit.",
       },
     ],
     exercises: [
@@ -263,13 +263,13 @@ export const stageLessons: StageLesson[] = [
     video: null,
   },
 
-  // 05 – Neu ausrichten
+  // 05 – Schöpferkraft
   {
     number: "05",
     keyIdea:
-      "Jetzt schreibst du den Code neu. Du wählst die Gedanken, die dich tragen.",
+      "Du bist nicht nur Beobachter deines Lebens – du bist sein Gestalter.",
     intro:
-      "Wo Altes gegangen ist, entsteht Raum für Neues. Auf dieser Stufe wirst du vom Beobachter zum bewussten Gestalter. Du wählst nicht länger die Gedanken, die dir zufällig einfallen, sondern jene, die dich stärken – und verankerst sie so lange, bis sie zu deiner neuen Normalität werden.",
+      "Wo Altes gegangen ist, entsteht Raum für Neues. Jetzt wirst du vom Beobachter zum bewussten Gestalter: Du wählst nicht länger nur die Gedanken, die dir zufällig einfallen, sondern jene, die dich stärken – und setzt sie in Handlung um. Denn innere Ausrichtung entfaltet ihre Kraft erst im Tun.",
     sections: [
       {
         heading: "Vom Beobachter zum Gestalter",
@@ -280,8 +280,8 @@ export const stageLessons: StageLesson[] = [
         body: "Ein neuer Gedanke wirkt nur, wenn er glaubwürdig ist. „Ich bin voller Selbstvertrauen“ springt oft zu weit. „Ich lerne gerade, mir selbst zu vertrauen“ ist ehrlich – und genau deshalb kraftvoll. Wähle Sätze, die dein System annehmen kann, und lass sie mit dir wachsen.",
       },
       {
-        heading: "Wiederholung verankert",
-        body: "Neue Denkbahnen entstehen nicht durch einmalige Einsicht, sondern durch Wiederholung mit Gefühl. Je öfter du einen stärkenden Gedanken denkst und dabei die passende Empfindung spürst, desto tiefer gräbt er sich ein – bis er sich irgendwann wie selbstverständlich anfühlt.",
+        heading: "Ausrichtung wird erst durch Handlung wirksam",
+        body: "Ein stärkender Gedanke bleibt Theorie, bis er in eine Handlung mündet. Schöpferkraft ist kein reines Wünschen – sie ist das Zusammenspiel von innerer Ausrichtung und konkretem Tun. Erst wenn beides zusammenkommt, verändert sich deine gelebte Realität.",
       },
       {
         heading: "Selbstbild und Wiederholung – woran dein System glaubt",
@@ -293,10 +293,10 @@ export const stageLessons: StageLesson[] = [
         title: "Den Satz umschreiben",
         duration: "15 Minuten, schriftlich",
         steps: [
-          "Nimm einen einengenden Glaubenssatz aus Stufe 3, den du erkannt hast.",
+          "Nimm einen einengenden Glaubenssatz, den du in den letzten Stufen erkannt hast.",
           "Formuliere eine neue, ehrliche Version – glaubwürdig, in der Gegenwart, in deinen Worten.",
           "Prüfe: Fühlt sich der neue Satz erreichbar an? Wenn nicht, mach ihn eine Stufe realistischer.",
-          "Schreib ihn auf und platziere ihn dort, wo du ihn täglich siehst.",
+          "Schreib ihn auf, platziere ihn sichtbar – und wähle eine kleine Handlung, die zu ihm passt.",
         ],
       },
       {
@@ -306,7 +306,7 @@ export const stageLessons: StageLesson[] = [
           "Nimm dir direkt nach dem Aufwachen einen Moment, bevor der Autopilot startet.",
           "Wähle bewusst einen Gedanken oder eine Absicht für den Tag.",
           "Spür kurz nach, wie es sich anfühlt, aus diesem Gedanken heraus in den Tag zu gehen.",
-          "Kehre tagsüber, wann immer du dich verlierst, kurz zu dieser Ausrichtung zurück.",
+          "Lege eine konkrete kleine Handlung fest, die diese Ausrichtung heute sichtbar macht.",
         ],
       },
     ],
@@ -315,22 +315,21 @@ export const stageLessons: StageLesson[] = [
       "Wie würdest du über dich sprechen, wenn du dein bester Freund wärst?",
       "Welche neue innere Grundhaltung möchtest du in den nächsten Wochen verankern?",
     ],
-    affirmation:
-      "Ich wähle meine Gedanken bewusst. Was ich nähre, wächst.",
+    affirmation: "Ich wähle meine Gedanken bewusst. Was ich nähre, wächst.",
     video: null,
   },
 
-  // 06 – In Kohärenz kommen
+  // 06 – Innere Ausrichtung
   {
     number: "06",
     keyIdea:
       "Wenn Kopf, Herz und Handeln an einem Strang ziehen, entsteht echte Kraft.",
     intro:
-      "Wissen allein verändert wenig – erst wenn Denken, Fühlen und Tun in dieselbe Richtung zeigen, wirst du wirklich frei und wirksam. Auf dieser Stufe geht es um Kohärenz: die innere Stimmigkeit, aus der Präsenz, Ausstrahlung und ruhige Kraft entstehen.",
+      "Wissen allein verändert wenig – erst wenn Denken, Fühlen und Tun in dieselbe Richtung zeigen, wirst du wirklich frei und wirksam. Auf dieser Stufe geht es um innere Ausrichtung: die Stimmigkeit, aus der Präsenz, Ausstrahlung und ruhige Kraft entstehen.",
     sections: [
       {
         heading: "Der stille Widerspruch",
-        body: "Viele Menschen denken das eine, fühlen das andere und tun ein drittes. Dieser innere Widerspruch kostet enorm viel Energie – meist unbemerkt. Kohärenz bedeutet, diese Spaltung zu schließen: Was du denkst, fühlst und tust, gehört wieder zusammen.",
+        body: "Viele Menschen denken das eine, fühlen das andere und tun ein drittes. Dieser innere Widerspruch kostet enorm viel Energie – meist unbemerkt. Innere Ausrichtung bedeutet, diese Spaltung zu schließen: Was du denkst, fühlst und tust, gehört wieder zusammen.",
       },
       {
         heading: "Das Herz als Kompass",

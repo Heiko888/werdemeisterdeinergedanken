@@ -10,54 +10,54 @@ export type Stage = {
   description: string;
 };
 
-/** Die 7 Stufen der Bewusstseinsentwicklung */
+/** Die 7 Stufen der Bewusstseinsentwicklung (Entwicklungsreise) */
 export const stages: Stage[] = [
   {
     number: "01",
-    title: "Erwachen",
-    subtitle: "Bewusst werden",
+    title: "Autopilot",
+    subtitle: "Du wirst gelebt",
     description:
-      "Der erste Impuls: Du erkennst, dass du nicht deine Gedanken bist – sondern derjenige, der sie wahrnimmt. Hier beginnt jede echte Veränderung.",
+      "Vieles läuft automatisch – Reaktionen, Gewohnheiten, Gedanken. Der erste Schritt ist zu bemerken, dass du im Autopilot lebst.",
   },
   {
     number: "02",
-    title: "Beobachten",
-    subtitle: "Der innere Beobachter",
+    title: "Erwachen",
+    subtitle: "Du bemerkst es",
     description:
-      "Du lernst, deinen Gedanken zuzusehen, ohne dich mit ihnen zu identifizieren. Distanz schafft Klarheit – und Klarheit schafft Wahlfreiheit.",
+      "Ein erster Riss im Automatischen: Du spürst, dass du mehr bist als deine Gedanken – und beginnst zu hinterfragen.",
   },
   {
     number: "03",
-    title: "Entprogrammieren",
-    subtitle: "Alte Muster erkennen",
+    title: "Selbstbeobachtung",
+    subtitle: "Du siehst dir zu",
     description:
-      "Prägungen, Glaubenssätze und automatische Reaktionen werden sichtbar. Was dich unbewusst gesteuert hat, verliert seine Macht über dich.",
+      "Du lernst, deinen Gedanken und Mustern zuzusehen, ohne dich mit ihnen zu identifizieren. Distanz schafft Wahlfreiheit.",
   },
   {
     number: "04",
-    title: "Loslassen",
-    subtitle: "Emotionale Freiheit",
+    title: "Emotionale Reifung",
+    subtitle: "Du lässt los",
     description:
-      "Du löst festgehaltene Emotionen und alte Geschichten. Es entsteht Raum – für Ruhe, für Energie, für dich.",
+      "Du löst festgehaltene Gefühle und alte Geschichten und übernimmst Verantwortung für dein Inneres. Es entsteht Raum – für Ruhe und Kraft.",
   },
   {
     number: "05",
-    title: "Neu ausrichten",
-    subtitle: "Gedanken bewusst gestalten",
+    title: "Schöpferkraft",
+    subtitle: "Du erschaffst bewusst",
     description:
-      "Jetzt schreibst du den Code neu. Du wählst Gedanken, die dich stärken, und verankerst sie, bis sie zu deiner neuen Normalität werden.",
+      "Vom Beobachter zum Gestalter: Du wählst Gedanken, die dich tragen, richtest dich innerlich aus und setzt sie in Handlung um.",
   },
   {
     number: "06",
-    title: "In Kohärenz kommen",
+    title: "Innere Ausrichtung",
     subtitle: "Kopf, Herz und Handeln",
     description:
-      "Denken, Fühlen und Tun ziehen an einem Strang. Diese innere Stimmigkeit ist die Quelle von Präsenz, Ausstrahlung und Wirkung.",
+      "Denken, Fühlen und Tun ziehen an einem Strang. Aus dieser Stimmigkeit entstehen Präsenz, Klarheit und Wirkung.",
   },
   {
     number: "07",
     title: "Meisterschaft",
-    subtitle: "Meister deiner Gedanken",
+    subtitle: "Du gestaltest",
     description:
       "Du reagierst nicht mehr – du gestaltest. Bewusstsein wird zu deinem Zuhause, aus dem heraus du dein Leben souverän formst.",
   },
