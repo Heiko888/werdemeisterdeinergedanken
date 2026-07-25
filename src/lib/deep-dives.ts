@@ -678,6 +678,69 @@ export const deepDives: DeepDive[] = [
     relatedStage: 6,
     video: null,
   },
+
+  // ---------------------------------------------------------------
+  {
+    slug: "muster-und-koerper",
+    title: "Muster, Körper & Gesundheit",
+    subtitle: "Wenn Denken unter die Haut geht",
+    category: "Körper & Gesundheit",
+    summary:
+      "Wie anhaltende Muster und Stress auf den Körper wirken – und warum innere Arbeit auch Körperarbeit ist.",
+    keyIdea:
+      "Was der Kopf dauerhaft denkt, trägt der Körper mit. Anhaltende Muster hinterlassen körperliche Spuren.",
+    intro:
+      "Gedanken und Gefühle bleiben nicht im Kopf. Jeder innere Zustand hat eine körperliche Seite – und wenn ein Muster chronisch wird, wird auch seine körperliche Antwort chronisch. Wer versteht, wie mentale Muster auf Körper und Gesundheit wirken, bekommt einen weiteren, sehr konkreten Grund, an ihnen zu arbeiten. Wichtig vorweg: Es geht um Einfluss und Unterstützung, nicht um Schuld – und nichts davon ersetzt eine ärztliche Behandlung.",
+    sections: [
+      {
+        heading: "Die Stressreaktion – genial, aber überfordert",
+        body: "Bei Gefahr schaltet dein Körper in Sekunden auf Kampf oder Flucht: Herzschlag hoch, Muskeln angespannt, Verdauung runter, Stresshormone wie Adrenalin und Cortisol werden ausgeschüttet. Für eine akute Bedrohung ist das perfekt. Das Problem: Dieselbe Reaktion springt auch bei einem sorgenvollen Gedanken an – und läuft bei vielen Menschen den ganzen Tag leise im Hintergrund.",
+      },
+      {
+        heading: "Der Körper unterscheidet nicht zwischen real und gedacht",
+        body: "Ein bedrohlicher Gedanke löst weitgehend dieselbe Körperantwort aus wie eine echte Gefahr. Deshalb reicht schon Grübeln, Selbstdruck oder ständige Anspannung, um das Stresssystem dauerhaft aktiv zu halten. Bleibt diese Aktivierung chronisch, zeigt sie sich körperlich: verspannter Nacken und Kiefer, flacher Schlaf, Verdauungsprobleme, ein geschwächtes Immunsystem, erhöhter Blutdruck.",
+      },
+      {
+        heading: "Wenn Muster zur Haltung werden",
+        body: "Festgehaltene Gefühle und wiederkehrende Muster setzen sich oft als körperliche Haltung fest – hochgezogene Schultern, flacher Atem, ein angespannter Bauch. Der Körper „merkt sich“ den Zustand. Das ist keine Einbildung, sondern hat reale Folgen. Und gleichzeitig ist es kein Grund für Selbstvorwürfe: Muster sind entstanden, nicht gewählt.",
+      },
+      {
+        heading: "Der Weg zurück führt über das Nervensystem",
+        body: "Die gute Nachricht: Der Weg funktioniert in beide Richtungen. So wie Muster den Körper anspannen, kann ein reguliertes Nervensystem ihn wieder entlasten. Bewusster Atem, Präsenz, Bewegung und das Lösen alter Muster senken die Stressaktivierung spürbar. Du arbeitest also nicht nur an deinem Kopf – du entlastest deinen ganzen Organismus.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Körper-Stress-Check",
+        duration: "5 Minuten, mehrmals täglich kurz",
+        steps: [
+          "Halte mehrmals am Tag kurz inne und scanne deinen Körper von oben nach unten.",
+          "Wo sitzt gerade Anspannung? Kiefer, Nacken, Schultern, Bauch?",
+          "Lass die Stelle bewusst ein Stück locker und atme ruhig dorthin.",
+          "Notiere über ein paar Tage, in welchen Situationen und bei welchen Gedanken sich dein Körper zusammenzieht.",
+        ],
+      },
+      {
+        title: "Das Nervensystem beruhigen",
+        duration: "3–5 Minuten",
+        steps: [
+          "Setz oder leg dich bequem hin.",
+          "Atme ein und zähle bis vier, atme aus und zähle bis sechs oder acht.",
+          "Verlängere bewusst das Ausatmen – das signalisiert dem Körper Sicherheit.",
+          "Bleib ein paar Minuten dabei und spür, wie die Anspannung nachlässt.",
+        ],
+      },
+    ],
+    reflection: [
+      "Wo im Körper zeigt sich Stress bei dir am zuverlässigsten?",
+      "Welcher wiederkehrende Gedanke oder welches Muster spannt dich körperlich am meisten an?",
+      "Was würde sich ändern, wenn du die Signale deines Körpers als frühe Hinweise ernst nehmen würdest?",
+    ],
+    takeaway:
+      "Anhaltende Muster gehen in den Körper – ein reguliertes Nervensystem entlastet ihn wieder. Innere Arbeit ist auch Körperarbeit.",
+    relatedStage: 4,
+    video: null,
+  },
 ];
 
 export function getDeepDive(slug: string): DeepDive | undefined {
