@@ -79,8 +79,8 @@ export function Hero() {
               }}
             />
             <PhotoFrame
-              src="/hero-neon.webp"
-              alt="Bewusstsein als leuchtende Geometrie – das 7-Stufen-Modell"
+              src="/hero-brain.webp"
+              alt="Leuchtendes Gehirn aus Datenpunkten – dein Bewusstsein als Schlüssel, deine Gedanken als Code"
             />
             {/* editoriales Detail: kleine Kennzahl */}
             <div className="absolute -bottom-5 -right-5 hidden rounded-[2px] border border-ink/10 bg-white/95 px-5 py-4 backdrop-blur lg:block">
