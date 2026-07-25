@@ -79,13 +79,23 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="mx-auto w-full max-w-xs">
+            <figure className="mx-auto w-full max-w-xs">
               <PhotoFrame
                 src="/ueber-heiko-hund.webp"
                 alt="Heiko mit seinem Hund draußen in der Natur"
                 aspect="square"
               />
-            </div>
+              <figcaption className="mt-5 border-l-2 border-accent/40 pl-4">
+                <p className="font-display text-[1.05rem] italic leading-snug text-ink">
+                  „Ein Hund holt dich sofort in den Moment.“
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-ink-soft/70">
+                  Meine persönliche Überzeugung: Hunde stärken dein Bewusstsein.
+                  Sie kennen kein Gestern und kein Morgen – nur das Jetzt. Diese
+                  Präsenz steckt an, wenn du dich darauf einlässt.
+                </p>
+              </figcaption>
+            </figure>
           </Reveal>
         </Container>
       </section>
