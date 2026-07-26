@@ -4,13 +4,17 @@ import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Download, Play } from "@/components/ui/Icon";
+import { ArrowRight, Check, Download, Play } from "@/components/ui/Icon";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
 import { deepDivesByCategory } from "@/lib/deep-dives";
-import { practicesByCategory, featuredPractice } from "@/lib/practices";
+import {
+  practicesByCategory,
+  practicesForStage,
+  featuredPractice,
+} from "@/lib/practices";
 
 export const dynamic = "force-dynamic";
 
@@ -22,36 +26,21 @@ export const metadata: Metadata = {
 export default async function MembersPage() {
   let name = "";
   let loggedIn = false;
+  let startStage: number | null = null;
+  let completedKeys: string[] = [];
 
-  // Login-Schutz aktiv + Supabase da → echte Auth erzwingen
-  if (REQUIRE_MEMBER_LOGIN && isSupabaseConfigured) {
+  if (isSupabaseConfigured) {
     const supabase = await createClient();
     const {
       data: { user },
     } = await supabase.auth.getUser();
 
-    if (!user) redirect("/login?redirect=/mitglieder");
+    // Login-Schutz: nur erzwingen, wenn eingeschaltet
+    if (REQUIRE_MEMBER_LOGIN && !user) redirect("/login?redirect=/mitglieder");
 
-    loggedIn = true;
-    const { data: profile } = await supabase
-      .from("profiles")
-      .select("full_name, email")
-      .eq("id", user.id)
-      .maybeSingle();
-
-    name =
-      profile?.full_name ||
-      (user.user_metadata?.full_name as string | undefined) ||
-      user.email?.split("@")[0] ||
-      "";
-  } else if (isSupabaseConfigured) {
-    // Schutz aus, aber falls jemand eingeloggt ist: mit Namen begrüßen
-    const supabase = await createClient();
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
     if (user) {
       loggedIn = true;
+
       const { data: profile } = await supabase
         .from("profiles")
         .select("full_name")
@@ -62,10 +51,46 @@ export default async function MembersPage() {
         (user.user_metadata?.full_name as string | undefined) ||
         user.email?.split("@")[0] ||
         "";
+
+      // Personalisierung + Fortschritt (Spalten/Tabelle aus Migration 0002).
+      // Vor der Migration bleiben die Felder leer – das Dashboard funktioniert
+      // dann wie bisher, ganz ohne Fehler.
+      const { data: testRow } = await supabase
+        .from("profiles")
+        .select("start_stage")
+        .eq("id", user.id)
+        .maybeSingle();
+      startStage = (testRow?.start_stage as number | null) ?? null;
+
+      const { data: progressRows } = await supabase
+        .from("progress")
+        .select("item_key")
+        .eq("user_id", user.id)
+        .eq("item_type", "stage")
+        .eq("status", "completed");
+      completedKeys = (progressRows ?? []).map((row) => row.item_key as string);
     }
   }
 
+  const completed = new Set(completedKeys);
+  const completedCount = stages.filter((s) => completed.has(s.number)).length;
+
   const featured = featuredPractice();
+  // Format-korrektes Label: Audio → „anhören", reines Video → „ansehen".
+  const featuredIsAudio = featured ? Boolean(featured.audio) : false;
+  const featuredKicker = featuredIsAudio
+    ? "Geführte Meditation"
+    : "Geführte Praxis";
+  const featuredCta = featuredIsAudio ? "Jetzt anhören" : "Jetzt ansehen";
+
+  // Empfehlung für den personalisierten Einstieg (aus dem Bewusstseinstest).
+  const startStageData =
+    startStage && startStage >= 1 && startStage <= stages.length
+      ? stages[startStage - 1]
+      : null;
+  const startStagePractice = startStage
+    ? practicesForStage(startStage)[0] ?? null
+    : null;
 
   return (
     <>
@@ -116,6 +141,68 @@ export default async function MembersPage() {
         </Container>
       </section>
 
+      {/* Personalisierter Einstieg – aus dem Bewusstseinstest */}
+      {loggedIn && startStageData && (
+        <section className="py-6">
+          <Container>
+            <div className="flex flex-col gap-5 rounded-2xl border border-accent/30 bg-white p-7 shadow-card sm:p-8">
+              <div className="flex flex-col gap-2">
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                  Dein Ausgangspunkt
+                </span>
+                <h2 className="font-display text-xl font-medium text-ink sm:text-2xl">
+                  Startstufe {startStageData.number} – {startStageData.title}
+                </h2>
+                <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+                  Dein Bewusstseinstest zeigt hier deinen aktuellen Schwerpunkt –
+                  ein guter Ort, um weiterzumachen.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <Button href={`/mitglieder/stufe/${startStage}`} variant="accent">
+                  Zu Stufe {startStageData.number}
+                  <ArrowRight />
+                </Button>
+                {startStagePractice && (
+                  <Link
+                    href={`/mitglieder/praxis/${startStagePractice.slug}`}
+                    className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                  >
+                    <Play />
+                    Passende Praxis: {startStagePractice.title}
+                  </Link>
+                )}
+              </div>
+            </div>
+          </Container>
+        </section>
+      )}
+
+      {/* Einladung zum Test, falls noch kein Ergebnis gespeichert ist */}
+      {loggedIn && !startStageData && (
+        <section className="py-6">
+          <Container>
+            <div className="flex flex-col items-start gap-4 rounded-2xl border border-ink/15 bg-white p-7 shadow-card sm:p-8">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                Finde deinen Startpunkt
+              </span>
+              <h2 className="font-display text-xl font-medium text-ink sm:text-2xl">
+                Wo stehst du gerade?
+              </h2>
+              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+                Mach den Bewusstseinstest – 21 Fragen, etwa 5 Minuten. Dein
+                Ergebnis landet direkt hier und zeigt dir, wo du am besten
+                weitermachst.
+              </p>
+              <Button href="/bewusstseinstest" variant="accent">
+                Bewusstseinstest starten
+                <ArrowRight />
+              </Button>
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* Jetzt anhören – aktuelle Meditation */}
       {featured && (
         <section className="py-6">
@@ -130,7 +217,7 @@ export default async function MembersPage() {
                 </span>
                 <div>
                   <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                    Geführte Meditation
+                    {featuredKicker}
                   </span>
                   <h2 className="mt-1 font-display text-xl font-medium text-ink sm:text-2xl">
                     {featured.title}
@@ -141,7 +228,7 @@ export default async function MembersPage() {
                 </div>
               </div>
               <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition-all group-hover:bg-ink/90">
-                Jetzt anhören
+                {featuredCta}
                 <ArrowRight />
               </span>
             </Link>
@@ -149,39 +236,64 @@ export default async function MembersPage() {
         </section>
       )}
 
-      {/* Fortschritt (Platzhalter) */}
+      {/* Fortschritt durch die 7 Stufen */}
       <section className="py-16 sm:py-20">
         <Container>
           <div className="flex items-baseline justify-between gap-4">
             <h2 className="font-display text-2xl font-medium text-ink">
               Deine 7 Stufen
             </h2>
-            <span className="text-sm text-ink-soft/60">0 / 7 abgeschlossen</span>
+            <span className="text-sm text-ink-soft/60">
+              {completedCount} / {stages.length} abgeschlossen
+            </span>
+          </div>
+
+          {/* Fortschrittsbalken */}
+          <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-ink/[0.06]">
+            <span
+              className="block h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 transition-all duration-500"
+              style={{
+                width: `${Math.round((completedCount / stages.length) * 100)}%`,
+              }}
+            />
           </div>
 
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {stages.map((stage, i) => (
-              <Link
-                key={stage.number}
-                href={`/mitglieder/stufe/${i + 1}`}
-                className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-display text-2xl italic text-accent">
-                    {stage.number}
-                  </span>
-                  <ArrowRight className="text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
-                </div>
-                <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
-                  {stage.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-ink-soft/70">
-                  {stage.subtitle}
-                </p>
-              </Link>
-            ))}
+            {stages.map((stage, i) => {
+              const isDone = completed.has(stage.number);
+              return (
+                <Link
+                  key={stage.number}
+                  href={`/mitglieder/stufe/${i + 1}`}
+                  className={`group flex flex-col gap-2 rounded-2xl border bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 ${
+                    isDone ? "border-accent/40" : "border-ink/10"
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-display text-2xl italic text-accent">
+                      {stage.number}
+                    </span>
+                    {isDone ? (
+                      <span
+                        className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-xs text-navy-950"
+                        title="Abgeschlossen"
+                      >
+                        <Check />
+                      </span>
+                    ) : (
+                      <ArrowRight className="text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                    {stage.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-ink-soft/70">
+                    {stage.subtitle}
+                  </p>
+                </Link>
+              );
+            })}
           </div>
-
         </Container>
       </section>
 

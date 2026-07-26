@@ -7,6 +7,7 @@ import { ArrowRight, Check, Play, Download } from "@/components/ui/Icon";
 import { stages } from "@/lib/content";
 import { getStageLesson } from "@/lib/stage-lessons";
 import { deepDivesForStage } from "@/lib/deep-dives";
+import { StageCompleteToggle } from "@/components/members/StageCompleteToggle";
 
 export function generateStaticParams() {
   return stages.map((_, i) => ({ nr: String(i + 1) }));
@@ -100,6 +101,9 @@ export default async function StagePage({
           <p className="text-lg leading-relaxed text-ink-soft/85">
             {lesson?.intro ?? stage.description}
           </p>
+
+          {/* Fortschritt: Stufe als abgeschlossen markieren */}
+          <StageCompleteToggle stageKey={stage.number} />
 
           {/* Video */}
           <div>

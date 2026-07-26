@@ -98,7 +98,7 @@ export const testStages: TestStage[] = [
       nextStep:
         "Nimm dir ein wiederkehrendes Muster vor und geh seiner Herkunft nach: Welcher Glaubenssatz, welche alte Erfahrung steckt darunter?",
       recommendation:
-        "Die Stufe „Entprogrammieren“ und die Vertiefungen zu Konditionierung und Kernüberzeugungen sind jetzt dein nächster Schritt.",
+        "Die Stufe „Selbstbeobachtung“ und die Vertiefungen zu Konditionierung und Kernüberzeugungen sind jetzt dein nächster Schritt.",
     },
   },
   {
