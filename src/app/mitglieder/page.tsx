@@ -15,6 +15,7 @@ import {
   practicesForStage,
   featuredPractice,
 } from "@/lib/practices";
+import { NewsletterToggle } from "@/components/members/NewsletterToggle";
 
 export const dynamic = "force-dynamic";
 
@@ -28,6 +29,7 @@ export default async function MembersPage() {
   let loggedIn = false;
   let startStage: number | null = null;
   let completedKeys: string[] = [];
+  let newsletterOptIn = false;
 
   if (isSupabaseConfigured) {
     const supabase = await createClient();
@@ -69,6 +71,14 @@ export default async function MembersPage() {
         .eq("item_type", "stage")
         .eq("status", "completed");
       completedKeys = (progressRows ?? []).map((row) => row.item_key as string);
+
+      // Opt-in für E-Mail-Impulse (Spalte aus Migration 0004 – sonst false)
+      const { data: prefsRow } = await supabase
+        .from("profiles")
+        .select("newsletter_opt_in")
+        .eq("id", user.id)
+        .maybeSingle();
+      newsletterOptIn = Boolean(prefsRow?.newsletter_opt_in);
     }
   }
 
@@ -296,6 +306,29 @@ export default async function MembersPage() {
           </div>
         </Container>
       </section>
+
+      {/* Wöchentliche E-Mail-Impulse */}
+      {loggedIn && (
+        <section className="border-t border-ink/10 py-12">
+          <Container>
+            <div className="flex flex-col items-start justify-between gap-5 rounded-2xl border border-ink/10 bg-white p-7 shadow-card sm:flex-row sm:items-center sm:p-8">
+              <div className="flex flex-col gap-1">
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                  Wöchentlicher Impuls
+                </span>
+                <h2 className="font-display text-xl font-medium text-ink">
+                  Ein Gedanke pro Woche in dein Postfach
+                </h2>
+                <p className="max-w-md text-[0.98rem] leading-relaxed text-ink-soft/70">
+                  Kurze, bodenständige Impulse entlang der 7 Stufen – jederzeit
+                  mit einem Klick abbestellbar.
+                </p>
+              </div>
+              <NewsletterToggle initialOptIn={newsletterOptIn} />
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Vertiefungen – psychologische Wissens-Bibliothek */}
       <section className="border-t border-ink/10 bg-white/60 py-16 sm:py-20">

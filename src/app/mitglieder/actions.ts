@@ -147,3 +147,32 @@ export async function saveNote(
 
   return { ok: !error };
 }
+
+// ------------------------------------------------------------
+// E-Mail-Impulse: Abo an-/abschalten
+// ------------------------------------------------------------
+
+/** Wöchentliche E-Mail-Impulse abonnieren bzw. abbestellen. */
+export async function setNewsletterOptIn(
+  optIn: boolean,
+): Promise<{ optIn: boolean }> {
+  if (!isSupabaseConfigured) return { optIn: false };
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { optIn: false };
+
+  const { error } = await supabase
+    .from("profiles")
+    .update({
+      newsletter_opt_in: optIn,
+      newsletter_opted_in_at: optIn ? new Date().toISOString() : null,
+    })
+    .eq("id", user.id);
+
+  if (error) return { optIn: !optIn };
+
+  revalidatePath("/mitglieder");
+  return { optIn };
+}
