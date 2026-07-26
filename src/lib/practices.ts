@@ -58,7 +58,7 @@ export const practices: Practice[] = [
     ],
     tip: "Das Abschweifen und Zurückkehren ist die Übung – jede Rückkehr zählt wie eine Wiederholung im Training.",
     relatedStage: 2,
-    video: null,
+    video: "3XiHP4U683Q",
   },
   {
     slug: "innerer-beobachter",
