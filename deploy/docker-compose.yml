@@ -1,0 +1,41 @@
+# Produktions-Deployment auf dem Hetzner-Server.
+# Baut das Image aus dem Dockerfile und lässt die App NUR lokal auf
+# 127.0.0.1:3000 lauschen – öffentlich erreichbar wird sie erst über nginx
+# (siehe deploy/nginx/werdemeisterdeinergedanken.conf).
+#
+# Nutzung:
+#   1. deploy/.env aus deploy/.env.example anlegen und Werte eintragen
+#   2. docker compose -f deploy/docker-compose.yml up -d --build
+#   3. Update später:  git pull && docker compose -f deploy/docker-compose.yml up -d --build
+#
+# Wichtig: NEXT_PUBLIC_* werden zur BUILD-Zeit ins Client-Bundle eingebacken
+# (deshalb als build.args), die übrigen Werte gelten zur Laufzeit (environment).
+
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+    image: wmdg-web:latest
+    restart: unless-stopped
+    # Nur an localhost binden – Zugriff ausschließlich über nginx
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      NODE_ENV: production
+      # Kanonischen Host erzwingen (neu./apex → www). Zum vorübergehenden
+      # Abschalten während des Umbaus: ENFORCE_CANONICAL_HOST=false
+      ENFORCE_CANONICAL_HOST: ${ENFORCE_CANONICAL_HOST:-true}
+      # Kontaktformular (Resend)
+      RESEND_API_KEY: ${RESEND_API_KEY}
+      CONTACT_TO: ${CONTACT_TO}
+      CONTACT_FROM: ${CONTACT_FROM}
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s

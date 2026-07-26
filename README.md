@@ -80,7 +80,7 @@ Seite lauffähig – der Bereich zeigt dann einen Hinweis.
 
 ```
 src/lib/supabase/        Client (Browser/Server) + Konfiguration
-src/middleware.ts        Session-Refresh + Schutz von /mitglieder
+src/proxy.ts             Session-Refresh + Schutz von /mitglieder + Host-Kanonisierung
 src/app/auth/            Server-Actions (Login/Registrierung/Logout) + Callback
 src/app/login/           Login-/Registrierungs-Seite
 src/app/mitglieder/      Geschütztes Dashboard
