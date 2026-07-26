@@ -37,6 +37,7 @@ type ButtonAsButton = CommonProps & {
   href?: undefined;
   onClick?: () => void;
   type?: "button" | "submit";
+  disabled?: boolean;
 };
 
 export function Button(props: ButtonAsLink | ButtonAsButton) {
@@ -54,7 +55,9 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
     className,
   );
 
-  if ("href" in props && props.href) {
+  // Vergleich gegen undefined statt Wahrheitsprüfung: nur so grenzt
+  // TypeScript die Union unten zuverlässig auf ButtonAsButton ein.
+  if (props.href !== undefined) {
     if (props.external) {
       return (
         <a
@@ -79,6 +82,7 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
     <button
       type={props.type ?? "button"}
       onClick={props.onClick}
+      disabled={props.disabled}
       className={classes}
     >
       {children}

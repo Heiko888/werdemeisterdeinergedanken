@@ -165,6 +165,7 @@ export function ContactForm() {
         variant="primary"
         size="lg"
         className="w-full sm:w-fit"
+        disabled={sending}
       >
         {sending ? "Wird gesendet …" : "Nachricht senden"}
         {!sending && <ArrowRight />}
