@@ -86,3 +86,64 @@ export async function setStageCompleted(
   revalidatePath("/mitglieder");
   return { completed };
 }
+
+// ------------------------------------------------------------
+// Journal / Notizen zu Reflexionsfragen
+// ------------------------------------------------------------
+
+type NoteItemType = "stage" | "deep_dive" | "practice";
+
+/** Alle Notizen zu einem Inhalt als { ref: body }-Map. */
+export async function getNotes(
+  itemType: NoteItemType,
+  itemKey: string,
+): Promise<Record<string, string>> {
+  if (!isSupabaseConfigured) return {};
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return {};
+
+  const { data } = await supabase
+    .from("notes")
+    .select("ref, body")
+    .eq("user_id", user.id)
+    .eq("item_type", itemType)
+    .eq("item_key", itemKey);
+
+  const map: Record<string, string> = {};
+  for (const row of data ?? []) {
+    map[row.ref as string] = (row.body as string) ?? "";
+  }
+  return map;
+}
+
+/** Eine Notiz speichern (Upsert pro Anker). */
+export async function saveNote(
+  itemType: NoteItemType,
+  itemKey: string,
+  ref: string,
+  body: string,
+): Promise<{ ok: boolean }> {
+  if (!isSupabaseConfigured) return { ok: false };
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { ok: false };
+
+  const { error } = await supabase.from("notes").upsert(
+    {
+      user_id: user.id,
+      item_type: itemType,
+      item_key: itemKey,
+      ref,
+      body: body ?? "",
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: "user_id,item_type,item_key,ref" },
+  );
+
+  return { ok: !error };
+}
