@@ -57,7 +57,12 @@ export function Compass() {
               ))}
             </ul>
 
-            <Button href="/kontakt" variant="accent" size="lg" className="mt-2">
+            <Button
+              href="/bewusstseinstest"
+              variant="accent"
+              size="lg"
+              className="mt-2"
+            >
               Meinen Standort bestimmen
               <ArrowRight />
             </Button>
