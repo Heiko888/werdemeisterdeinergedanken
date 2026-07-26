@@ -298,6 +298,11 @@ export function getPractice(slug: string): Practice | undefined {
   return practices.find((p) => p.slug === slug);
 }
 
+/** Erste Praxis mit einer Aufnahme (Video oder MP3) – fürs „Jetzt anhören". */
+export function featuredPractice(): Practice | undefined {
+  return practices.find((p) => p.video || p.audio);
+}
+
 export function practicesForStage(stageNr: number): Practice[] {
   return practices.filter((p) => p.relatedStage === stageNr);
 }

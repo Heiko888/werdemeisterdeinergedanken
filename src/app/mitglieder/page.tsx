@@ -4,13 +4,13 @@ import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Download } from "@/components/ui/Icon";
+import { ArrowRight, Download, Play } from "@/components/ui/Icon";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
 import { deepDivesByCategory } from "@/lib/deep-dives";
-import { practicesByCategory } from "@/lib/practices";
+import { practicesByCategory, featuredPractice } from "@/lib/practices";
 
 export const dynamic = "force-dynamic";
 
@@ -65,6 +65,8 @@ export default async function MembersPage() {
     }
   }
 
+  const featured = featuredPractice();
+
   return (
     <>
       {/* Kopf */}
@@ -113,6 +115,39 @@ export default async function MembersPage() {
           </a>
         </Container>
       </section>
+
+      {/* Jetzt anhören – aktuelle Meditation */}
+      {featured && (
+        <section className="py-6">
+          <Container>
+            <Link
+              href={`/mitglieder/praxis/${featured.slug}`}
+              className="group flex flex-col items-start gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-leaf-500/[0.08] to-teal-500/[0.08] p-7 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 sm:flex-row sm:items-center sm:justify-between sm:p-8"
+            >
+              <div className="flex items-center gap-5">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-2xl text-navy-950 shadow-sm">
+                  <Play />
+                </span>
+                <div>
+                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                    Geführte Meditation
+                  </span>
+                  <h2 className="mt-1 font-display text-xl font-medium text-ink sm:text-2xl">
+                    {featured.title}
+                  </h2>
+                  <p className="text-sm text-ink-soft/70">
+                    {featured.duration} · {featured.category}
+                  </p>
+                </div>
+              </div>
+              <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition-all group-hover:bg-ink/90">
+                Jetzt anhören
+                <ArrowRight />
+              </span>
+            </Link>
+          </Container>
+        </section>
+      )}
 
       {/* Fortschritt (Platzhalter) */}
       <section className="py-16 sm:py-20">
