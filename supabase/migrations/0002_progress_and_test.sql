@@ -14,9 +14,15 @@
 -- ------------------------------------------------------------
 -- 1. Allgemeiner updated_at-Trigger
 -- ------------------------------------------------------------
+-- `set search_path = ''` ist Absicht: ohne festen Suchpfad bestimmt die
+-- aufrufende Rolle, in welchen Schemata Bezeichner innerhalb der Funktion
+-- aufgelöst werden. Der Supabase-Linter meldet das sonst als Sicherheitswarnung
+-- (function_search_path_mutable). Die Funktion braucht keine Schema-Objekte,
+-- der leere Pfad ist daher unproblematisch.
 create or replace function public.touch_updated_at()
 returns trigger
 language plpgsql
+set search_path = ''
 as $$
 begin
   new.updated_at = now();
