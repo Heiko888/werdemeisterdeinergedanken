@@ -4,14 +4,15 @@ import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
 
-type Status = "idle" | "sending" | "sent" | "fallback";
+type Status = "idle" | "sending" | "confirm" | "sent" | "fallback";
 
 /**
  * Front-end-Formular für den Lead-Magneten.
- * Sendet die E-Mail an /api/ebook, das das E-Book automatisch als
- * PDF-Anhang verschickt. Ist der Versand (noch) nicht eingerichtet oder
- * schlägt er fehl, wird der direkte Download angeboten – so kommt jede*r
- * ans E-Book.
+ * Sendet die E-Mail an /api/ebook. Mit Double-Opt-in kommt zunächst eine
+ * Bestätigungsmail (Status „confirm"); erst nach dem Klick wird das E-Book
+ * geliefert. Bereits bestätigte Adressen bekommen es direkt („sent"). Ist
+ * der Versand nicht eingerichtet oder schlägt er fehl, wird der direkte
+ * Download angeboten – so kommt jede*r ans E-Book.
  */
 export function EbookForm() {
   const [email, setEmail] = useState("");
@@ -34,7 +35,7 @@ export function EbookForm() {
       const data = await res.json().catch(() => ({}));
 
       if (res.ok) {
-        setStatus("sent");
+        setStatus(data?.mode === "sent" ? "sent" : "confirm");
         return;
       }
       // Nicht eingerichtet → still auf den Direkt-Download ausweichen.
@@ -51,6 +52,21 @@ export function EbookForm() {
       setError("Verbindung fehlgeschlagen. Bitte versuch es später erneut.");
       setStatus("fallback");
     }
+  }
+
+  if (status === "confirm") {
+    return (
+      <div className="flex items-center gap-3 rounded-2xl border border-accent/30 bg-accent/10 px-5 py-4 text-sm text-ink">
+        <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/20 text-accent">
+          <Check />
+        </span>
+        <span>
+          Fast geschafft! Wir haben dir eine E-Mail geschickt. Bitte bestätige
+          darin kurz deine Anmeldung – dann kommt dein E-Book sofort zu dir
+          (schau ggf. auch im Spam-Ordner nach).
+        </span>
+      </div>
+    );
   }
 
   if (status === "sent") {

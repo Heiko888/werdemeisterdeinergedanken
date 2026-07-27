@@ -86,3 +86,29 @@ src/app/login/           Login-/Registrierungs-Seite
 src/app/mitglieder/      Geschütztes Dashboard
 supabase/migrations/     SQL für profiles-Tabelle + RLS
 ```
+
+## Gratis-E-Book (Lead-Magnet)
+
+Das kostenlose E-Book „Die 7 Stufen kompakt" wird zur Build-Zeit als PDF
+erzeugt (`/ebook`) und über den Lead-Magneten auf der Startseite ausgegeben.
+
+- **Nur `RESEND_API_KEY` gesetzt:** Nach dem Eintragen wird das E-Book direkt
+  per E-Mail verschickt (kein Double-Opt-in, keine Speicherung).
+- **Zusätzlich Double-Opt-in (DSGVO):** Migration
+  `supabase/migrations/0005_ebook_leads.sql` ausführen und
+  `SUPABASE_SERVICE_ROLE_KEY` setzen. Dann bekommen Interessent*innen zuerst
+  eine Bestätigungsmail; erst nach dem Klick wird das E-Book geliefert. Die
+  Leads landen in `public.ebook_leads` (RLS aktiv, nur Service-Role-Zugriff),
+  jede Mail enthält einen 1-Klick-Abmeldelink.
+- **Ohne `RESEND_API_KEY`:** Das Formular bietet den direkten Download an.
+
+**Relevante Dateien:**
+
+```
+src/components/sections/EbookForm.tsx   Formular (Front-end)
+src/app/api/ebook/route.ts              Anmeldung: Lead + Bestätigungsmail
+src/app/api/ebook/confirm/route.ts      Double-Opt-in-Bestätigung + Lieferung
+src/app/api/ebook/unsubscribe/route.ts  1-Klick-Abmeldung
+src/lib/ebook-mail.ts                   Bestätigungs-/Liefermail
+src/lib/pdf/                            PDF-Erzeugung + Datenzusammenstellung
+```
