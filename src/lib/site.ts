@@ -19,7 +19,8 @@ export const site = {
     youtube: "https://www.youtube.com/@WerdeMeisterdeinerGedanken",
     facebook: "https://www.facebook.com/Heiko.SPunkt",
     linkedin: "https://de.linkedin.com/in/werdemeisterdeinergedanken",
-    telegram: "https://t.me/c/2182042098/63",
+    // TODO: echte URLs ergänzen, dann werden die Icons automatisch angezeigt:
+    // telegram: "https://t.me/…",
   },
 } as const;
 
