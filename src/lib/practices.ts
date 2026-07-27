@@ -205,6 +205,29 @@ export const practices: Practice[] = [
 
   // ---------------- Rituale ----------------
   {
+    slug: "autopilot-check",
+    title: "Der Autopilot-Check",
+    category: "Rituale",
+    duration: "2 Minuten",
+    summary:
+      "Ein kurzer Stopp mitten im Tag, der den Autopiloten für einen Moment sichtbar macht.",
+    purpose:
+      "Trainiert das Bemerken – die erste und wichtigste Fähigkeit, um aus automatischen Mustern auszusteigen.",
+    when: "Ein- bis dreimal am Tag, am besten an eine feste Gewohnheit gekoppelt (z. B. nach dem Mittagessen).",
+    intro:
+      "Solange der Autopilot unsichtbar bleibt, fühlt er sich einfach wie „du“ an. Dieser Mini-Check unterbricht den Automatismus für einen Augenblick – mehr braucht es am Anfang nicht.",
+    steps: [
+      "Halte kurz inne, wo immer du gerade bist – im Stehen, Sitzen oder Gehen.",
+      "Nimm einen bewussten Atemzug und frag dich: Was tue ich gerade – und bin ich wirklich dabei?",
+      "Bemerke, was in dir läuft: Welcher Gedanke, welche Stimmung, welcher Impuls?",
+      "Benenne es innerlich in einem Wort („Eile“, „Sorge“, „Leere“) – ohne es zu bewerten.",
+      "Atme aus und geh weiter. Du hast den Autopiloten für einen Moment gesehen – das genügt.",
+    ],
+    tip: "Koppel den Check an einen festen Auslöser – Türklinke, rote Ampel, erster Schluck Kaffee. So erinnerst du dich, ohne daran denken zu müssen.",
+    relatedStage: 1,
+    video: null,
+  },
+  {
     slug: "morgen-ausrichtung",
     title: "Morgen-Ausrichtung",
     category: "Rituale",
@@ -290,6 +313,29 @@ export const practices: Practice[] = [
     ],
     tip: "Nicht die Strecke zählt, sondern wie oft du bewusst zurückkehrst. Jede Rückkehr ist Training.",
     relatedStage: 2,
+    video: null,
+  },
+  {
+    slug: "taegliche-rueckkehr",
+    title: "Die tägliche Rückkehr",
+    category: "Rituale",
+    duration: "5 Minuten",
+    summary:
+      "Meisterschaft ist kein Zustand, den man erreicht – sondern eine tägliche Rückkehr in die eigene Mitte.",
+    purpose:
+      "Verankert das Erreichte als gelebte Haltung – und hält den Blick offen fürs Weitergeben.",
+    when: "Als täglicher Ankerpunkt, morgens oder abends – gerade dann, wenn scheinbar „alles läuft“.",
+    intro:
+      "Auf dieser Stufe geht es nicht mehr ums Erreichen, sondern ums Bewahren und Weitergeben. Die Kunst ist, immer wieder bewusst in die eigene Mitte zurückzukehren, statt sie für selbstverständlich zu halten.",
+    steps: [
+      "Setz dich ruhig hin und spür für ein paar Atemzüge nach: Wie präsent bin ich heute wirklich?",
+      "Erinnere dich an einen Moment, in dem du kürzlich bewusst gestaltet hast, statt zu reagieren. Lass das Gefühl kurz da sein.",
+      "Frag dich: Wo hat mich zuletzt etwas aus der Mitte geworfen – und wie bin ich zurückgekehrt?",
+      "Richte dich neu aus: Welche Haltung will ich heute verkörpern – für mich und für die Menschen um mich?",
+      "Wähle eine kleine Geste des Weitergebens: ein offenes Ohr, ein ehrliches Wort, ein Moment echter Präsenz.",
+    ],
+    tip: "Nicht das Nie-mehr-Fallen ist Meisterschaft, sondern das ruhige, wertfreie Zurückkehren – jeden Tag aufs Neue.",
+    relatedStage: 7,
     video: null,
   },
 ];

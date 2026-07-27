@@ -3,10 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Check, Play, Download } from "@/components/ui/Icon";
+import { ArrowRight, Play, Download } from "@/components/ui/Icon";
 import { stages } from "@/lib/content";
 import { getStageLesson } from "@/lib/stage-lessons";
 import { deepDivesForStage } from "@/lib/deep-dives";
+import { StageCompleteToggle } from "@/components/members/StageCompleteToggle";
+import { JournalReflection } from "@/components/members/JournalReflection";
 
 export function generateStaticParams() {
   return stages.map((_, i) => ({ nr: String(i + 1) }));
@@ -100,6 +102,9 @@ export default async function StagePage({
           <p className="text-lg leading-relaxed text-ink-soft/85">
             {lesson?.intro ?? stage.description}
           </p>
+
+          {/* Fortschritt: Stufe als abgeschlossen markieren */}
+          <StageCompleteToggle stageKey={stage.number} />
 
           {/* Video */}
           <div>
@@ -205,26 +210,13 @@ export default async function StagePage({
             </div>
           )}
 
-          {/* Reflexion */}
+          {/* Reflexion (beschreibbar, mit Autosave) */}
           {lesson && lesson.reflection.length > 0 && (
-            <div className="flex flex-col gap-5 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
-              <h2 className="font-display text-xl font-medium text-ink">
-                Zum Innehalten
-              </h2>
-              <ul className="flex flex-col gap-4">
-                {lesson.reflection.map((question) => (
-                  <li
-                    key={question}
-                    className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-soft/85"
-                  >
-                    <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/12 text-xs text-accent">
-                      <Check />
-                    </span>
-                    {question}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <JournalReflection
+              itemType="stage"
+              itemKey={stage.number}
+              questions={lesson.reflection}
+            />
           )}
 
           {/* Verankerung */}

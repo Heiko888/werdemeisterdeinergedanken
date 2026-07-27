@@ -741,6 +741,64 @@ export const deepDives: DeepDive[] = [
     relatedStage: 4,
     video: null,
   },
+  // ---------------------------------------------------------------
+  {
+    slug: "integration-und-weitergabe",
+    title: "Integration & Weitergabe",
+    subtitle: "Vom Wissen zur gelebten Haltung",
+    category: "Ausrichtung",
+    summary:
+      "Wie aus einzelnen Erkenntnissen eine stabile innere Haltung wird – und warum Weitergeben sie vertieft.",
+    keyIdea:
+      "Was du wirklich integriert hast, erkennst du daran, dass du es lebst, ohne darüber nachzudenken – und mühelos weitergeben kannst.",
+    intro:
+      "Am Ende der Reise steht keine neue Technik, sondern eine Frage: Wird das Erkannte zur gelebten Haltung – auch dann, wenn niemand zusieht und der Alltag rau wird? Integration heißt, dass Bewusstheit vom Vorsatz zur zweiten Natur wird. Und oft ist es gerade das Weitergeben, das diese Haltung festigt.",
+    sections: [
+      {
+        heading: "Wissen ist nicht Integration",
+        body: "Etwas zu verstehen und es zu verkörpern sind zwei verschiedene Dinge. Du kannst alles über den inneren Beobachter wissen und trotzdem im Streit reagieren wie früher. Integration passiert nicht im Kopf, sondern durch Wiederholung im echten Leben – bis eine neue Reaktion sich natürlicher anfühlt als die alte.",
+      },
+      {
+        heading: "Rückfälle gehören dazu",
+        body: "Meisterschaft ist nicht das Ende des Fallens, sondern ein kürzerer Weg zurück. Wer erwartet, nie wieder in ein altes Muster zu rutschen, macht den Rückfall zum Drama. Wer ihn als normalen Teil des Weges sieht, kehrt ruhig und ohne Selbstverurteilung in die Mitte zurück – genau das ist die reifere Fähigkeit.",
+      },
+      {
+        heading: "Weitergeben vertieft",
+        body: "Sobald du etwas in eigenen Worten weitergibst – einem Freund, den eigenen Kindern, einfach durch die Art, wie du bist – musst du es klarer fassen und ehrlicher leben. Weitergeben ist kein Zusatz nach dem Lernen, sondern eine der stärksten Formen, das Gelernte selbst zu vertiefen.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Die Verkörperungs-Frage",
+        duration: "10 Minuten",
+        steps: [
+          "Wähle eine Einsicht, die dir auf deinem Weg besonders wichtig geworden ist.",
+          "Frag ehrlich: Weiß ich das nur – oder lebe ich es bereits, auch unter Druck?",
+          "Finde eine konkrete Alltagssituation, in der sich zeigt, ob es Haltung oder nur Theorie ist.",
+          "Nimm dir für die nächste Woche eine einzige, kleine Handlung vor, die diese Einsicht verkörpert.",
+        ],
+      },
+      {
+        title: "In eigenen Worten",
+        duration: "15 Minuten",
+        steps: [
+          "Stell dir vor, du erklärst einem Menschen, der dir wichtig ist, was dich am meisten verändert hat.",
+          "Schreib es in drei bis vier einfachen Sätzen auf – ohne Fachbegriffe.",
+          "Streiche alles, was du selbst noch nicht wirklich lebst. Was bleibt, ist dein echtes Fundament.",
+          "Überlege: Wem könntest du in nächster Zeit auf natürliche Weise etwas davon weitergeben?",
+        ],
+      },
+    ],
+    reflection: [
+      "Welche Einsicht lebst du bereits so selbstverständlich, dass du sie kaum noch bemerkst?",
+      "Wo rutschst du am ehesten in alte Muster – und wie sieht dein Weg zurück aus?",
+      "Was von deinem Weg möchtest du weitergeben – und an wen?",
+    ],
+    takeaway:
+      "Meisterschaft zeigt sich nicht im Nie-mehr-Fallen, sondern im ruhigen Zurückkehren – und im Weitergeben dessen, was du wirklich lebst.",
+    relatedStage: 7,
+    video: null,
+  },
 ];
 
 export function getDeepDive(slug: string): DeepDive | undefined {

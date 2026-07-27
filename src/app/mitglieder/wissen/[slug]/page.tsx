@@ -3,9 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Check, Play, Download } from "@/components/ui/Icon";
+import { ArrowRight, Play, Download } from "@/components/ui/Icon";
 import { deepDives, getDeepDive } from "@/lib/deep-dives";
 import { stages } from "@/lib/content";
+import { JournalReflection } from "@/components/members/JournalReflection";
 
 export function generateStaticParams() {
   return deepDives.map((d) => ({ slug: d.slug }));
@@ -171,26 +172,13 @@ export default async function DeepDivePage({
             </div>
           )}
 
-          {/* Reflexion */}
+          {/* Reflexion (beschreibbar, mit Autosave) */}
           {dive.reflection.length > 0 && (
-            <div className="flex flex-col gap-5 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
-              <h2 className="font-display text-xl font-medium text-ink">
-                Zum Innehalten
-              </h2>
-              <ul className="flex flex-col gap-4">
-                {dive.reflection.map((question) => (
-                  <li
-                    key={question}
-                    className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-soft/85"
-                  >
-                    <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/12 text-xs text-accent">
-                      <Check />
-                    </span>
-                    {question}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <JournalReflection
+              itemType="deep_dive"
+              itemKey={dive.slug}
+              questions={dive.reflection}
+            />
           )}
 
           {/* Kernbotschaft */}

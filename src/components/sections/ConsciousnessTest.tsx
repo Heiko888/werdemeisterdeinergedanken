@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
@@ -13,6 +13,7 @@ import {
   getTestStage,
   MAX_PER_STAGE,
 } from "@/lib/consciousness-test";
+import { saveStartStage } from "@/app/bewusstseinstest/actions";
 import { cn } from "@/lib/cn";
 
 export function ConsciousnessTest() {
@@ -22,10 +23,23 @@ export function ConsciousnessTest() {
   );
   const [current, setCurrent] = useState(0);
   const [done, setDone] = useState(false);
+  // Wurde das Ergebnis am (eingeloggten) Profil gespeichert?
+  const [memberSaved, setMemberSaved] = useState(false);
+  const savedRef = useRef(false);
 
   const scores = useMemo(() => scoreByStage(answers), [answers]);
   const resultNr = useMemo(() => topStage(scores), [scores]);
   const resultStage = getTestStage(resultNr);
+
+  // Beim Abschluss einmalig versuchen, das Ergebnis zu speichern.
+  // Ist niemand angemeldet, gibt die Action still `{ saved: false }` zurück.
+  useEffect(() => {
+    if (!done || !resultStage || savedRef.current) return;
+    savedRef.current = true;
+    saveStartStage(resultStage.nr, scores)
+      .then((res) => setMemberSaved(res.saved))
+      .catch(() => {});
+  }, [done, resultStage, scores]);
 
   function choose(value: number) {
     setAnswers((prev) => {
@@ -44,6 +58,8 @@ export function ConsciousnessTest() {
     setAnswers(new Array(total).fill(null));
     setCurrent(0);
     setDone(false);
+    setMemberSaved(false);
+    savedRef.current = false;
     if (typeof window !== "undefined") window.scrollTo({ top: 0 });
   }
 
@@ -141,14 +157,34 @@ export function ConsciousnessTest() {
             <p className="max-w-xl leading-relaxed text-ink-soft/80">
               {resultStage.result.recommendation}
             </p>
+            {memberSaved && (
+              <p className="max-w-xl text-sm leading-relaxed text-accent">
+                Dein Ergebnis ist in deinem Bereich gespeichert – dein Dashboard
+                begrüßt dich ab jetzt mit deiner Startstufe.
+              </p>
+            )}
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button href="/kontakt" variant="accent">
-                Kostenloses Klarheitsgespräch
-                <ArrowRight />
-              </Button>
-              <Button href="/#angebot" variant="secondary">
-                E-Book sichern
-              </Button>
+              {memberSaved ? (
+                <>
+                  <Button href="/mitglieder" variant="accent">
+                    Weiter zu deinem Bereich
+                    <ArrowRight />
+                  </Button>
+                  <Button href={`/mitglieder/stufe/${resultStage.nr}`} variant="secondary">
+                    Direkt zu Stufe {resultStage.nr}
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button href="/kontakt" variant="accent">
+                    Kostenloses Klarheitsgespräch
+                    <ArrowRight />
+                  </Button>
+                  <Button href="/#angebot" variant="secondary">
+                    E-Book sichern
+                  </Button>
+                </>
+              )}
             </div>
           </div>
 
