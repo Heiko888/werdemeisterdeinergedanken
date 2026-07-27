@@ -1,12 +1,17 @@
 import { stages } from "@/lib/content";
-import { getStageLesson } from "@/lib/stage-lessons";
-import { buildLessonPdf, worksheetSlug } from "@/lib/pdf/worksheet";
-import { getLogoBytes } from "@/lib/pdf/assets";
+import { worksheetSlug } from "@/lib/pdf/slug";
+import { getStaticPdf } from "@/lib/pdf/static-pdf";
+
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return stages.map((_, i) => ({ nr: String(i + 1) }));
 }
 
+/**
+ * Komplette Lektion einer Stufe – gestaltetes PDF im Markendesign
+ * (public/pdf/stufe-<nr>-lektion.pdf).
+ */
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ nr: string }> },
@@ -19,12 +24,9 @@ export async function GET(
   }
 
   const stage = stages[idx];
-  const lesson = getStageLesson(stage.number);
-  if (!lesson) {
-    return new Response("Nicht gefunden", { status: 404 });
-  }
+  const pdf = getStaticPdf(`stufe-${idx + 1}-lektion`);
+  if (!pdf) return new Response("Nicht gefunden", { status: 404 });
 
-  const pdf = await buildLessonPdf(stage, lesson, getLogoBytes());
   const filename = `Lektion-Stufe-${stage.number}-${worksheetSlug(stage.title)}.pdf`;
 
   return new Response(pdf as BodyInit, {

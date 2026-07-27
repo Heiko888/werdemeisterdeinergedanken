@@ -1,16 +1,14 @@
-import { buildEbookPdf } from "@/lib/pdf/worksheet";
-import { getEbookEntries } from "@/lib/pdf/ebook-entries";
-import { getLogoBytes } from "@/lib/pdf/assets";
+import { getEbookPdfBytes } from "@/lib/pdf/ebook-file";
 
 export const dynamic = "force-static";
 
 /**
- * Kostenloses Lead-Magnet-E-Book „Die 7 Stufen kompakt erklärt –
- * Erste Übungen für mehr Klarheit". Wird zur Build-Zeit statisch als PDF
- * erzeugt und direkt zum Download ausgeliefert.
+ * Kostenloses Lead-Magnet-E-Book „Die 7 Stufen kompakt".
+ * Liefert das fertige, gestaltete PDF (public/Die-7-Stufen-kompakt.pdf)
+ * direkt zum Download aus.
  */
 export async function GET() {
-  const pdf = await buildEbookPdf(getEbookEntries(), getLogoBytes());
+  const pdf = getEbookPdfBytes();
 
   return new Response(pdf as BodyInit, {
     headers: {

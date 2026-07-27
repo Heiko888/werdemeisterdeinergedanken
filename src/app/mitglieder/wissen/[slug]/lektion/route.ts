@@ -1,11 +1,17 @@
 import { deepDives, getDeepDive } from "@/lib/deep-dives";
-import { buildDeepDivePdf, worksheetSlug } from "@/lib/pdf/worksheet";
-import { getLogoBytes } from "@/lib/pdf/assets";
+import { worksheetSlug } from "@/lib/pdf/slug";
+import { getStaticPdf } from "@/lib/pdf/static-pdf";
+
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return deepDives.map((d) => ({ slug: d.slug }));
 }
 
+/**
+ * Vertiefung (Deep-Dive) als gestaltetes PDF im Markendesign
+ * (public/pdf/vertiefung-<slug>.pdf).
+ */
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ slug: string }> },
@@ -16,7 +22,9 @@ export async function GET(
     return new Response("Nicht gefunden", { status: 404 });
   }
 
-  const pdf = await buildDeepDivePdf(dive, getLogoBytes());
+  const pdf = getStaticPdf(`vertiefung-${slug}`);
+  if (!pdf) return new Response("Nicht gefunden", { status: 404 });
+
   const filename = `Vertiefung-${worksheetSlug(dive.title)}.pdf`;
 
   return new Response(pdf as BodyInit, {

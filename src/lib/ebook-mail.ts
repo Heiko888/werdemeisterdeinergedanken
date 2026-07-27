@@ -1,7 +1,5 @@
 import type { Resend } from "resend";
-import { buildEbookPdf } from "@/lib/pdf/worksheet";
-import { getEbookEntries } from "@/lib/pdf/ebook-entries";
-import { getLogoBytes } from "@/lib/pdf/assets";
+import { getEbookPdfBytes } from "@/lib/pdf/ebook-file";
 import { site } from "@/lib/site";
 
 /**
@@ -82,7 +80,7 @@ export async function sendEbookDeliveryMail(
   to: string,
   unsubscribeUrl?: string,
 ): Promise<void> {
-  const pdf = await buildEbookPdf(getEbookEntries(), getLogoBytes());
+  const pdf = getEbookPdfBytes();
   const downloadUrl = `${site.url}/ebook`;
 
   const unsubHtml = unsubscribeUrl
