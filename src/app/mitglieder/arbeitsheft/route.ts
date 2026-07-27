@@ -1,19 +1,14 @@
-import { stages } from "@/lib/content";
-import { getStageLesson } from "@/lib/stage-lessons";
-import { buildWorkbookPdf } from "@/lib/pdf/worksheet";
-import { getLogoBytes } from "@/lib/pdf/assets";
+import { getStaticPdf } from "@/lib/pdf/static-pdf";
 
 export const dynamic = "force-static";
 
+/**
+ * Gesamt-Arbeitsheft über alle 7 Stufen – gestaltetes PDF im Markendesign
+ * (public/pdf/arbeitsheft.pdf), direkt zum Download.
+ */
 export async function GET() {
-  const entries = stages
-    .map((stage) => {
-      const lesson = getStageLesson(stage.number);
-      return lesson ? { stage, lesson } : null;
-    })
-    .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
-
-  const pdf = await buildWorkbookPdf(entries, getLogoBytes());
+  const pdf = getStaticPdf("arbeitsheft");
+  if (!pdf) return new Response("Nicht gefunden", { status: 404 });
 
   return new Response(pdf as BodyInit, {
     headers: {
