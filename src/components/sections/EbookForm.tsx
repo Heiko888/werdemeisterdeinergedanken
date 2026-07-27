@@ -22,14 +22,27 @@ export function EbookForm() {
 
   if (status === "done") {
     return (
-      <div className="flex items-center gap-3 rounded-2xl border border-accent/30 bg-accent/10 px-5 py-4 text-sm text-ink">
-        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-accent/20 text-accent">
-          <Check />
-        </span>
-        <span>
-          Fast geschafft! Bitte bestätige deine Anmeldung in der E-Mail, die wir
-          dir gerade geschickt haben.
-        </span>
+      <div className="flex flex-col gap-4 rounded-2xl border border-accent/30 bg-accent/10 px-5 py-4 text-sm text-ink">
+        <div className="flex items-center gap-3">
+          <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/20 text-accent">
+            <Check />
+          </span>
+          <span>
+            Fast geschafft! Bitte bestätige deine Anmeldung in der E-Mail, die
+            wir dir gerade geschickt haben. Dein E-Book kannst du direkt hier
+            laden:
+          </span>
+        </div>
+        <Button
+          href="/ebook"
+          external
+          variant="accent"
+          size="lg"
+          className="self-start"
+        >
+          E-Book herunterladen
+          <ArrowRight />
+        </Button>
       </div>
     );
   }
