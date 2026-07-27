@@ -24,7 +24,10 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..");
 const BUILD = path.join(HERE, ".build");
 const PUBLIC = path.join(ROOT, "public");
-const PDFDIR = path.join(PUBLIC, "pdf");
+// Mitglieder-PDFs bewusst NICHT nach public/: alles dort liefert Next.js
+// direkt unter seinem Dateipfad aus, also am Login-Schutz vorbei.
+// Ausgeliefert werden sie ausschließlich über die Routen unter /mitglieder.
+const PDFDIR = path.join(ROOT, "content", "pdf");
 const env = { ...process.env, REPO_ROOT: ROOT, BUILD_DIR: BUILD };
 
 fs.mkdirSync(BUILD, { recursive: true });
@@ -113,7 +116,7 @@ async function main() {
     path.join(PDFDIR, "arbeitsheft.pdf"),
   );
 
-  console.log(`\n✓ Fertig: public/Die-7-Stufen-kompakt.pdf und ${manifest.single.length + 1} Dateien in public/pdf/`);
+  console.log(`\n✓ Fertig: public/Die-7-Stufen-kompakt.pdf und ${manifest.single.length + 1} Dateien in content/pdf/`);
 }
 
 main().catch((e) => {

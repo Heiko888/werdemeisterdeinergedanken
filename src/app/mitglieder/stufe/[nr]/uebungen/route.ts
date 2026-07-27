@@ -10,7 +10,7 @@ export function generateStaticParams() {
 
 /**
  * Übungs-Arbeitsblatt einer Stufe (mit Ausfüll-Linien) – gestaltetes PDF
- * im Markendesign (public/pdf/stufe-<nr>-uebungen.pdf).
+ * im Markendesign (content/pdf/stufe-<nr>-uebungen.pdf).
  */
 export async function GET(
   _request: Request,

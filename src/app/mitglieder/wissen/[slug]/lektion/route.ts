@@ -10,7 +10,7 @@ export function generateStaticParams() {
 
 /**
  * Vertiefung (Deep-Dive) als gestaltetes PDF im Markendesign
- * (public/pdf/vertiefung-<slug>.pdf).
+ * (content/pdf/vertiefung-<slug>.pdf).
  */
 export async function GET(
   _request: Request,

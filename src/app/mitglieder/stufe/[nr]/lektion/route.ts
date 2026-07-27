@@ -10,7 +10,7 @@ export function generateStaticParams() {
 
 /**
  * Komplette Lektion einer Stufe – gestaltetes PDF im Markendesign
- * (public/pdf/stufe-<nr>-lektion.pdf).
+ * (content/pdf/stufe-<nr>-lektion.pdf).
  */
 export async function GET(
   _request: Request,

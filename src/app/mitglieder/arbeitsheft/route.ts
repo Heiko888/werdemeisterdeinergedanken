@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 /**
  * Gesamt-Arbeitsheft über alle 7 Stufen – gestaltetes PDF im Markendesign
- * (public/pdf/arbeitsheft.pdf), direkt zum Download.
+ * (content/pdf/arbeitsheft.pdf), direkt zum Download.
  */
 export async function GET() {
   const pdf = getStaticPdf("arbeitsheft");

@@ -34,6 +34,11 @@ ENV PORT=3000
 RUN addgroup -g 1001 -S nodejs && adduser -S nextjs -u 1001
 
 COPY --from=builder /app/public ./public
+# Mitglieder-PDFs. Liegen bewusst außerhalb von public/, damit Next.js sie
+# nicht direkt ausliefert – sie kommen ausschließlich über die Routen unter
+# /mitglieder, also hinter dem Login. Ohne diese Zeile fehlen sie zur
+# Laufzeit und die Routen antworten mit 404.
+COPY --from=builder /app/content ./content
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
