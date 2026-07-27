@@ -23,6 +23,71 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "wie-frei-ist-unser-geist",
+    title: "Wie frei ist unser Geist?",
+    excerpt:
+      "Bis zu 60.000 Gedanken am Tag – doch wie viele davon sind wirklich deine? Über Gedankenkontrolle, äußere Einflüsse und den Weg zurück zur mentalen Freiheit.",
+    category: "Bewusstsein",
+    date: "2026-07-27",
+    dateLabel: "27. Juli 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Der menschliche Geist ist faszinierend: Er erzeugt unaufhörlich Gedanken, reflektiert, plant und analysiert. Doch in einer Welt voller Einflüsse – von sozialen Medien bis zu subtilen gesellschaftlichen Normen – stellt sich eine Frage: Wie viel Kontrolle haben wir wirklich über unsere Gedanken? Und was bedeutet Gedankenkontrolle überhaupt?",
+      },
+      {
+        type: "h2",
+        text: "Die unaufhörliche innere Stimme",
+      },
+      {
+        type: "p",
+        text: "Wir denken bis zu 60.000 Gedanken pro Tag – und viele davon laufen unbewusst und automatisiert ab. Sie entspringen Erinnerungen, Emotionen und Eindrücken, die wir über die Jahre gesammelt haben. Oft wiederholen sich dieselben Muster, besonders die negativen. Diese „mentale Endlosschleife“ kann uns in Zweifel und Stress gefangen halten, ohne dass wir es überhaupt bemerken.",
+      },
+      {
+        type: "h2",
+        text: "Zwei Gesichter der Gedankenkontrolle",
+      },
+      {
+        type: "p",
+        text: "Der Begriff hat zwei sehr unterschiedliche Bedeutungen. Das eine ist die Selbstkontrolle: die Fähigkeit, den eigenen Geist bewusst zu steuern, störende Gedanken zu entkräften und klarere Denkmuster zu fördern – der Kern jeder Achtsamkeitspraxis. Das andere ist die Manipulation von außen: die gezielte Beeinflussung deiner Gedanken durch andere, sei es durch Werbung, Propaganda oder psychologische Techniken.",
+      },
+      {
+        type: "quote",
+        text: "Selbstkontrolle ist ein Ausdruck von Freiheit. Manipulation zielt darauf ab, genau diese Freiheit einzuschränken.",
+      },
+      {
+        type: "h2",
+        text: "Wie äußere Faktoren dein Denken lenken",
+      },
+      {
+        type: "p",
+        text: "Werbung und Medien setzen uns täglich hunderten Botschaften aus, die unsere Kaufentscheidungen, Werte und sogar die Selbstwahrnehmung formen. Emotionale Ansprache oder künstlich erzeugter Mangel lenken die Gedanken in gewünschte Bahnen. Soziale Medien verstärken das: Algorithmen wissen, welche Inhalte uns fesseln, und zeigen gezielt das, was Aufmerksamkeit bindet – so entstehen Filterblasen, die unsere Sicht verengen.",
+      },
+      {
+        type: "p",
+        text: "Dazu kommt der Gruppendruck. Unser Bedürfnis nach Zugehörigkeit macht uns empfänglich für die Denkweisen unseres Umfelds. Oft übernehmen wir Meinungen und Verhaltensweisen, ohne sie je kritisch zu hinterfragen.",
+      },
+      {
+        type: "h2",
+        text: "Vier Wege zu mehr mentaler Freiheit",
+      },
+      {
+        type: "ul",
+        items: [
+          "Achtsamkeit üben: Regelmäßige Meditation beruhigt den Geist und lässt dich Gedanken beobachten, ohne dich von ihnen mitreißen zu lassen.",
+          "Informationsdiät: Schränke den Konsum von Nachrichten und sozialen Medien bewusst ein – das schützt vor unbemerkter Beeinflussung.",
+          "Kritisch denken: Frag dich, woher eine Information stammt und welche Absicht dahinterstehen könnte.",
+          "Positive Gewohnheiten: Richte den Fokus auf Dankbarkeit, lösungsorientiertes Denken und deine eigenen Ziele.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Unsere Gedanken formen unsere Realität – doch wir sind nicht immer ihre alleinigen Architekten. Die Balance zwischen bewusster Selbstkontrolle und der Abwehr äußerer Einflüsse entscheidet über ein freies, erfülltes Leben. Wer versteht, wie Gedanken entstehen und gelenkt werden, gewinnt ein Stück Kontrolle zurück – und damit seine geistige Freiheit. Frag dich einmal ganz bewusst: Welche deiner Gedanken sind wirklich deine eigenen?",
+      },
+    ],
+  },
+  {
     slug: "du-bist-nicht-deine-gedanken",
     title: "Du bist nicht deine Gedanken",
     excerpt:
