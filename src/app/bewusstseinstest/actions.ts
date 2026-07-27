@@ -33,17 +33,58 @@ export async function saveStartStage(
   } = await supabase.auth.getUser();
   if (!user) return { saved: false };
 
+  const takenAt = new Date().toISOString();
+
   const { error } = await supabase
     .from("profiles")
     .update({
       start_stage: startStage,
       test_scores: safeScores,
-      test_taken_at: new Date().toISOString(),
+      test_taken_at: takenAt,
     })
     .eq("id", user.id);
 
   if (error) return { saved: false };
 
+  // Verlauf: jedes Ergebnis als eigene Zeile festhalten (Migration 0005).
+  // Fehler hier sind unkritisch – das aktuelle Ergebnis ist bereits gespeichert.
+  await supabase.from("test_results").insert({
+    user_id: user.id,
+    top_stage: startStage,
+    scores: safeScores ?? [],
+    taken_at: takenAt,
+  });
+
   revalidatePath("/mitglieder");
+  revalidatePath("/mitglieder/standortbestimmung");
   return { saved: true };
+}
+
+export type TestHistoryEntry = {
+  topStage: number;
+  scores: number[];
+  takenAt: string;
+};
+
+/** Verlauf der Testergebnisse der aktuellen Person (neueste zuerst). */
+export async function getTestHistory(): Promise<TestHistoryEntry[]> {
+  if (!isSupabaseConfigured) return [];
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return [];
+
+  const { data } = await supabase
+    .from("test_results")
+    .select("top_stage, scores, taken_at")
+    .eq("user_id", user.id)
+    .order("taken_at", { ascending: false })
+    .limit(20);
+
+  return (data ?? []).map((row) => ({
+    topStage: row.top_stage as number,
+    scores: (row.scores as number[]) ?? [],
+    takenAt: row.taken_at as string,
+  }));
 }

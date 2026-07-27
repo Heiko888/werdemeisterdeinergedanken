@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
@@ -17,6 +18,7 @@ import { saveStartStage } from "@/app/bewusstseinstest/actions";
 import { cn } from "@/lib/cn";
 
 export function ConsciousnessTest() {
+  const router = useRouter();
   const total = testQuestions.length;
   const [answers, setAnswers] = useState<(number | null)[]>(
     () => new Array(total).fill(null),
@@ -37,9 +39,13 @@ export function ConsciousnessTest() {
     if (!done || !resultStage || savedRef.current) return;
     savedRef.current = true;
     saveStartStage(resultStage.nr, scores)
-      .then((res) => setMemberSaved(res.saved))
+      .then((res) => {
+        setMemberSaved(res.saved);
+        // Serverseitige Ansichten (z. B. der Verlauf im Bereich) aktualisieren.
+        if (res.saved) router.refresh();
+      })
       .catch(() => {});
-  }, [done, resultStage, scores]);
+  }, [done, resultStage, scores, router]);
 
   function choose(value: number) {
     setAnswers((prev) => {

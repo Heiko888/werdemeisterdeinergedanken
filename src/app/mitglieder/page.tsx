@@ -183,6 +183,13 @@ export default async function MembersPage() {
                   </Link>
                 )}
               </div>
+              <Link
+                href="/mitglieder/standortbestimmung"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-soft/70 underline-offset-4 transition-colors hover:text-accent hover:underline"
+              >
+                Test wiederholen &amp; Verlauf ansehen
+                <ArrowRight />
+              </Link>
             </div>
           </Container>
         </section>
@@ -204,7 +211,7 @@ export default async function MembersPage() {
                 Ergebnis landet direkt hier und zeigt dir, wo du am besten
                 weitermachst.
               </p>
-              <Button href="/bewusstseinstest" variant="accent">
+              <Button href="/mitglieder/standortbestimmung" variant="accent">
                 Bewusstseinstest starten
                 <ArrowRight />
               </Button>
