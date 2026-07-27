@@ -1,6 +1,5 @@
-import { stages } from "@/lib/content";
-import { getStageLesson } from "@/lib/stage-lessons";
 import { buildEbookPdf } from "@/lib/pdf/worksheet";
+import { getEbookEntries } from "@/lib/pdf/ebook-entries";
 import { getLogoBytes } from "@/lib/pdf/assets";
 
 export const dynamic = "force-static";
@@ -11,14 +10,7 @@ export const dynamic = "force-static";
  * erzeugt und direkt zum Download ausgeliefert.
  */
 export async function GET() {
-  const entries = stages
-    .map((stage) => {
-      const lesson = getStageLesson(stage.number);
-      return lesson ? { stage, lesson } : null;
-    })
-    .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
-
-  const pdf = await buildEbookPdf(entries, getLogoBytes());
+  const pdf = await buildEbookPdf(getEbookEntries(), getLogoBytes());
 
   return new Response(pdf as BodyInit, {
     headers: {
