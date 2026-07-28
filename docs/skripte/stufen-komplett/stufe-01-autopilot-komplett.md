@@ -1,0 +1,52 @@
+# Stufe 01 – Autopilot · „Du wirst gelebt"
+
+**Format:** Wort-für-Wort (Teleprompter) · **Ziellänge:** 6–8 Min
+`[Regie] Ruhig, direkt in die Kamera. Kein Intro-Geplänkel – erst der erste Satz, dann Titel einblenden.`
+
+---
+
+Die meisten Menschen treffen den Großteil ihrer Entscheidungen heute – ohne sie wirklich zu treffen.
+
+Wir reagieren. Wir funktionieren. Wir wiederholen. Und das meiste davon läuft völlig automatisch ab – gesteuert von Gewohnheiten, Prägungen und Gedanken, die wir uns nie bewusst ausgesucht haben.
+
+Genau da fangen wir an. Nicht mit einem Vorwurf. Sondern mit einem ehrlichen Blick auf das, was in dir jeden Tag abläuft. Denn alles, was du erkennst, kann anfangen, sich zu verändern.
+
+`[Regie] kurze Pause, Titel: Stufe 1 – Autopilot`
+
+Lass uns zuerst klären, was dieser Autopilot überhaupt ist. Denn er ist nichts Schlechtes. Im Gegenteil: Er ist Effizienz. Dein Gehirn spart Energie, indem es Bewährtes einfach automatisch abspult. Das ist im Alltag unglaublich praktisch. Stell dir vor, du müsstest jeden Morgen neu lernen, wie man Zähne putzt, Auto fährt oder den Weg zur Arbeit findet. Der Autopilot nimmt dir all das ab.
+
+Das Problem beginnt an einer anderen Stelle. Es beginnt dann, wenn sich dieselben Reaktionen wiederholen. Dieselben Konflikte. Dieselben Gefühle. Obwohl du sie längst nicht mehr willst. Du nimmst dir vor, ruhig zu bleiben – und rastest bei genau demselben Satz wieder aus. Du willst dich anders verhalten – und tust doch wieder das Gleiche.
+
+In diesem Moment arbeitet deine Effizienz gegen dich.
+
+Und jetzt die Frage, die viele entlastet: Woher kommt das eigentlich? Diese Muster sind nicht dein Schicksal und nicht dein Charakterfehler. Sie sind gelernt. Von deinen Eltern, in der Schule, durch Erfahrungen, durch die Gesellschaft, durch das, was du tausendfach gesehen und gehört hast. Und das meiste davon, lange bevor du überhaupt wählen konntest.
+
+Das Wichtigste dabei: Jedes dieser Muster war einmal ein sinnvoller Schutz. Es hat dir irgendwann geholfen. Das Problem ist nicht, woher es kommt. Das Problem ist, dass es heute noch unbemerkt weiterläuft – obwohl die alte Situation, für die es gemacht wurde, längst vorbei ist.
+
+`[Regie] Tempo etwas rausnehmen.`
+
+Und jetzt kommt das eigentlich Tückische. Diese automatischen Reaktionen fühlen sich nicht wie Automatismen an. Sie fühlen sich an wie freie Entscheidungen. Wie du selbst. Wir sagen dann diesen einen Satz, den du bestimmt kennst: „So bin ich eben."
+
+Aber vieles von dem, was wir für unseren Charakter halten, ist in Wahrheit antrainiertes Reagieren. Und genau hier liegt der Knoten: Wir verteidigen Muster, die uns steuern, als wären sie unser wahres Ich. Solange das so ist, bleibt der Autopilot unangreifbar.
+
+Wie fängt Veränderung also an? Nicht mit einer Technik. Nicht mit Disziplin. Sondern mit einem einzigen, kleinen Moment des Bemerkens: „Moment – das läuft hier gerade automatisch ab."
+
+Dieser winzige Riss im Automatischen – das ist der Anfang von allem. Du kannst ihn nicht erzwingen. Aber du kannst ihn üben. Und je öfter er auftaucht, desto mehr Wahl entsteht in dir.
+
+`[Regie] Übergang zur Übung, ruhiger.`
+
+Und dafür gebe ich dir gleich eine ganz einfache Übung mit. Sie heißt der Autopilot-Check.
+
+Du hältst mitten im Alltag kurz inne. An der roten Ampel. Bevor du zum Handy greifst. Zwischen zwei Aufgaben. Und dann stellst du dir eine einzige ehrliche Frage: „Handle ich gerade bewusst – oder automatisch?"
+
+Und dann – ganz wichtig – bewertest du die Antwort nicht. Es geht nicht ums Ändern. Es geht nur ums Sehen. Du bemerkst, was ist, und gehst dann bewusst weiter. Eine Spur wacher als vorher.
+
+Und wenn du magst, nimm dir für diese Woche noch etwas vor: Benenne ein einziges wiederkehrendes Muster bei dir. In einem Satz. Denn was einmal benannt ist, läuft nie wieder ganz unbemerkt.
+
+`[Regie] Abschluss, langsam, direkt in die Kamera.`
+
+In der nächsten Stufe schauen wir uns an, wer da eigentlich bemerkt, wenn du deinen Autopiloten ertappst. Denn das ist spannender, als du vielleicht denkst.
+
+Für heute nimm diesen einen Satz mit:
+
+Ich bin nicht mein Autopilot. Ich kann bemerken, was in mir abläuft – und das verändert alles.

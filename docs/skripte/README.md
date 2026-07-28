@@ -9,7 +9,7 @@ inhaltlich zusammen.
 
 | Bereich | Skript-Typ | Länge |
 |---|---|---|
-| **7 Stufen** | Stichpunkt-Drehbuch (frei sprechen) | 6–10 Min |
+| **7 Stufen** | Stichpunkt-Drehbuch (`stufen/`) **+ Wort-für-Wort komplett** (`stufen-komplett/`) | 6–10 Min |
 | **Vertiefungen** | Stichpunkt-Drehbuch (frei sprechen) | 3–5 Min |
 | **Praxis (Meditation/Atem/Ritual)** | Wort-für-Wort (zum Einsprechen) | nach Übungsdauer |
 
