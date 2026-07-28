@@ -366,6 +366,238 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "framing-wie-ein-wort-deine-meinung-macht",
+    title: "Framing: Wie ein einziges Wort deine Meinung macht",
+    excerpt:
+      "Investition oder Ausgabe, Reform oder Kürzung – dieselbe Wirklichkeit, zwei Gefühle. Wie sprachliche Rahmen dein Urteil lenken, bevor du überhaupt nachdenkst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Du glaubst, du reagierst auf Fakten. In Wirklichkeit reagierst du häufig zuerst auf den Rahmen, in dem dir diese Fakten präsentiert werden. Ein Frame – ein gedanklicher Deutungsrahmen – bestimmt, aus welcher Perspektive du ein Thema siehst. Und das Erstaunliche daran: Die verwendeten Informationen müssen dafür nicht einmal falsch sein.",
+      },
+      {
+        type: "h2",
+        text: "Der Rahmen liefert die Bewertung gleich mit",
+      },
+      {
+        type: "p",
+        text: "„Der Staat investiert zehn Milliarden Euro“ und „Der Staat gibt weitere zehn Milliarden aus“ beschreiben dieselbe Zahl. Doch „investiert“ klingt nach Zukunft und Nutzen, „gibt aus“ nach Kosten und Verschwendung. Die Zahl bleibt gleich, der gedankliche Rahmen verändert alles. Genauso bei Menschen: Ob jemand „Experte“, „Kritiker“ oder „Leugner“ genannt wird, entscheidet über dein Urteil, bevor du ein einziges Argument gehört hast.",
+      },
+      {
+        type: "quote",
+        text: "Ein Wort kann aus einer Kürzung eine Reform und aus Kontrolle plötzlich Schutz machen.",
+      },
+      {
+        type: "h2",
+        text: "Framing steckt schon in der Frage",
+      },
+      {
+        type: "p",
+        text: "„Warum weigert sich Person X, Verantwortung zu übernehmen?“ – diese Frage enthält das Urteil bereits. Sie setzt voraus, dass die Person sich weigert. Die offenere Variante wäre: „Wie begründet Person X ihre Entscheidung?“ Der erste Satz liefert die Bewertung mit, der zweite lässt sie offen. Achte darauf, wie oft dir eine Meinung schon in der Fragestellung untergeschoben wird.",
+      },
+      {
+        type: "h2",
+        text: "Auch Weglassen ist ein Rahmen",
+      },
+      {
+        type: "p",
+        text: "Fehlt die Vorgeschichte, fehlen Gegenargumente, steht eine Zahl ohne Vergleich da oder wird ein Einzelfall verallgemeinert – schon erscheint ein Thema in einem bestimmten Licht. Das ist nicht immer Absicht; jede Kommunikation braucht einen Rahmen, niemand kann alles zeigen. Problematisch wird es dort, wo ein Rahmen als einzige mögliche Wahrheit auftritt und jede andere Sicht moralisch abwertet.",
+      },
+      {
+        type: "h2",
+        text: "So erkennst du einen Frame",
+      },
+      {
+        type: "ul",
+        items: [
+          "Welche Wörter enthalten bereits eine Bewertung? Welche Emotion soll bei mir entstehen?",
+          "Welche Annahme wird als selbstverständlich vorausgesetzt? Welche Information fehlt?",
+          "Wie würde die Gegenseite denselben Vorgang beschreiben?",
+          "Und die schärfste Frage: Wer profitiert von genau diesem Deutungsrahmen?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Framing bedeutet nicht, dass alles gelogen ist. Es bedeutet, dass jede Botschaft eine Brille mitliefert. Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu haben – sondern damit, den Rahmen zu erkennen, bevor du die Bewertung darin übernimmst. Im Mitgliederbereich findest du dazu die ausführliche Vertiefung „Framing“ mit Übungen; einen kompakten Überblick über alle diese Mechanismen gibt das kostenlose E-Book „Die Gedanken, die nicht deine sind“.",
+      },
+    ],
+  },
+  {
+    slug: "filterblase-warum-dein-feed-nicht-die-welt-ist",
+    title: "Die Filterblase: Warum dein Feed nicht die Welt ist",
+    excerpt:
+      "Online siehst du keine Wirklichkeit, sondern eine Auswahl, die auf deinem Verhalten beruht. Wie Algorithmen dein Weltbild formen – und wie du gegensteuerst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Was du online siehst, ist kein Abbild der Welt. Es ist eine Auswahl, berechnet aus dem, worauf du bisher reagiert hast. Und das Ziel dahinter ist nicht Wahrheit, sondern Aufmerksamkeit – denn Aufmerksamkeit ist das Geschäftsmodell.",
+      },
+      {
+        type: "h2",
+        text: "Du bekommst mehr von dem, worauf du reagierst",
+      },
+      {
+        type: "p",
+        text: "Jeder Klick, jedes Verweilen ist ein Signal: „Davon will ich mehr.“ Der Algorithmus liefert prompt – und verstärkt so, was ohnehin schon da war. Deine Meinung wird dir immer öfter bestätigt, selten herausgefordert. So entsteht eine Filterblase, in der die eigene Sicht wie der gesunde Menschenverstand wirkt, weil alles andere ausgeblendet ist.",
+      },
+      {
+        type: "quote",
+        text: "Dein Feed ist ein Spiegel deines Verhaltens, kein Fenster zur Welt.",
+      },
+      {
+        type: "h2",
+        text: "Warum Empörung nach oben gespült wird",
+      },
+      {
+        type: "p",
+        text: "Inhalte, die starke Gefühle auslösen – vor allem Empörung und Angst –, werden häufiger geteilt und kommentiert. Also werden genau sie weiter verbreitet. Das Ruhige, Abwägende verschwindet, das Zugespitzte und Extreme wird sichtbar. Nicht weil es wahrer wäre, sondern weil es besser „performt“.",
+      },
+      {
+        type: "h2",
+        text: "Der Verlust der gemeinsamen Wirklichkeit",
+      },
+      {
+        type: "p",
+        text: "Wenn jeder eine andere, auf ihn zugeschnittene Auswahl sieht, zerfällt die gemeinsame Grundlage, über die man überhaupt streiten könnte. Zwei Menschen halten sich für gut informiert und leben doch in verschiedenen Welten. Das erklärt viel von der Härte heutiger Debatten – man streitet nicht nur über Meinungen, sondern über verschiedene Realitäten.",
+      },
+      {
+        type: "h2",
+        text: "So durchlöcherst du die Blase",
+      },
+      {
+        type: "ul",
+        items: [
+          "Folge bewusst ein, zwei seriösen Stimmen, die anderer Meinung sind als du.",
+          "Klicke eine Woche lang nicht auf das, was dich nur empört.",
+          "Suche aktiv die ruhigste, sachlichste Darstellung eines Streitthemas.",
+          "Frag dich bei jedem Beitrag: Warum sehe ich das gerade – und was sehe ich nicht?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Die Filterblase ist kein Grund für Technikangst, sondern für bewussten Umgang. Behandle deinen Feed als das, was er ist: eine Auswahl. Die vollständige Vertiefung „Algorithmen & Filterblasen“ mit Übungen findest du im Mitgliederbereich – Teil des Themenblocks „Wie dein Denken gelenkt wird“.",
+      },
+    ],
+  },
+  {
+    slug: "warum-oft-gehoert-sich-wie-wahr-anfuehlt",
+    title: "Warum sich „oft gehört“ wie „wahr“ anfühlt",
+    excerpt:
+      "Der Wiederholungseffekt: Je öfter du eine Aussage hörst, desto wahrer erscheint sie – ganz ohne Beweis. Wie das funktioniert und wie du dich davor schützt.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Es gibt einen gut belegten Effekt in der Psychologie: Je öfter wir eine Aussage hören, desto wahrer erscheint sie uns – unabhängig davon, ob sie stimmt. Das Gehirn nimmt eine Abkürzung und verwechselt „kommt mir bekannt vor“ mit „ist wahr“.",
+      },
+      {
+        type: "h2",
+        text: "Vertrautheit fühlt sich an wie Wahrheit",
+      },
+      {
+        type: "p",
+        text: "Beim ersten Hören sind wir skeptisch. Beim zehnten Mal fühlt sich dieselbe Aussage flüssig und vertraut an – und diese Flüssigkeit interpretiert das Gehirn als Wahrheit. Es braucht keine neuen Belege, nur Wiederholung. Genau deshalb wirken eingängige Slogans stärker als komplizierte, aber korrekte Erklärungen.",
+      },
+      {
+        type: "quote",
+        text: "Vertrautheit ist kein Beweis. Was oft wiederholt wird, verdient dieselbe Prüfung wie beim ersten Mal.",
+      },
+      {
+        type: "h2",
+        text: "Der scheinbare Konsens",
+      },
+      {
+        type: "p",
+        text: "Wenn viele dasselbe sagen, halten wir es für wahr – auch wenn alle es nur voneinander abgeschrieben haben. Eine einzige Quelle, oft genug zitiert, kann aussehen wie breite Übereinstimmung. Die entscheidende Frage lautet deshalb nicht „Wie viele sagen es?“, sondern „Auf wie viele unabhängige Quellen geht es zurück?“",
+      },
+      {
+        type: "h2",
+        text: "Dein einfacher Schutz",
+      },
+      {
+        type: "ul",
+        items: [
+          "Nimm eine Aussage, die du für selbstverständlich hältst – und frag: Kenne ich einen echten Beleg, oder habe ich das nur oft gehört?",
+          "Suche die ursprüngliche Quelle, nicht weitere Wiederholungen.",
+          "Zähle unabhängige Quellen, nicht laute Stimmen.",
+          "Prüfe bei einem griffigen Slogan: Ist das ein Argument – oder nur eine hübsch verpackte Behauptung?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Wiederholung ist der älteste Trick der Beeinflussung – und einer der wirksamsten, gerade weil er ohne Lüge auskommt. Wer den Effekt kennt, misstraut der bloßen Vertrautheit. Mehr dazu in der Vertiefung „Wiederholung wird zur Wahrheit“ im Mitgliederbereich und im kostenlosen E-Book „Die Gedanken, die nicht deine sind“.",
+      },
+    ],
+  },
+  {
+    slug: "reizueberflutung-warum-dein-gehirn-nicht-abschaltet",
+    title: "Reizüberflutung: Warum dein Gehirn nicht mehr abschaltet",
+    excerpt:
+      "Nachrichten, Pushs, Dauer-Empörung: Wie ständige Reize dein Nervensystem in Alarm halten – und warum du in diesem Zustand schlechter denkst und leichter lenkbar bist.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 7,
+    content: [
+      {
+        type: "p",
+        text: "Geräusche, Nachrichten, Benachrichtigungen, Gespräche und die Gedanken im eigenen Kopf konkurrieren jeden Tag um deine Aufmerksamkeit. Das Problem ist nicht, dass dein Gehirn keine vielen Reize verarbeiten könnte. Es entsteht, wenn zu viele Reize gleichzeitig wichtig erscheinen, ständig wechseln und emotional aufgeladen sind. Dann bleibt dein System in Alarmbereitschaft.",
+      },
+      {
+        type: "h2",
+        text: "Zwei Stressreaktionen – die schnelle und die langsame",
+      },
+      {
+        type: "p",
+        text: "Bewertet dein Gehirn etwas als relevant, aktiviert es zuerst den schnellen Weg: Adrenalin und Noradrenalin machen dich in Sekunden wacher und reaktionsbereit. Hält die Belastung an, kommt die langsamere Stressachse dazu, an deren Ende Cortisol steht. Beides ist für sich gesund. Zum Problem wird eine Stressreaktion, die zu oft anspringt und nicht mehr richtig herunterfährt.",
+      },
+      {
+        type: "quote",
+        text: "Ein Gehirn im Daueralarm trifft andere Entscheidungen als ein reguliertes.",
+      },
+      {
+        type: "h2",
+        text: "Warum du im Alarm schlechter denkst",
+      },
+      {
+        type: "p",
+        text: "Unter starkem Stress arbeitet der präfrontale Cortex weniger effektiv – also genau der Teil, der für planvolles Denken, Impulskontrolle und Abwägen zuständig ist. Gleichzeitig gewinnen die schnellen, emotionalen Systeme an Einfluss. Das erklärt, warum du dann unkonzentriert, vergesslich und impulsiv bist. Und es hat eine unbequeme Folge: Ein Mensch in Daueralarm denkt enger, sucht schnelle Antworten und ist dadurch leichter über Angst und einfache Parolen erreichbar.",
+      },
+      {
+        type: "h2",
+        text: "Der Kreislauf – und der Ausweg",
+      },
+      {
+        type: "p",
+        text: "Digitale Reize sind meist unvorhersehbar, und die bloße Möglichkeit, dass gleich etwas Wichtiges kommt, lässt dich immer wieder zur selben Quelle zurückkehren, die dich zugleich belastet. So entsteht ein widersprüchlicher Kreislauf: Der Reiz stresst dich – und du suchst den nächsten Reiz zur Beruhigung. Der Ausweg ist kein weiterer Input, sondern Ruhe.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Zähle einmal, wie viele Reizquellen gerade gleichzeitig laufen – und schalte eine ab.",
+          "Gönn dir bei Überforderung eine reizarme Pause: kein Bildschirm, keine neue Information.",
+          "Atme ein paar Minuten mit längerem Ausatmen als Einatmen – das signalisiert dem Körper Sicherheit.",
+          "Triff im Alarmzustand keine großen Entscheidungen. Warte, bis der Kopf klarer ist.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ruhe ist keine Zeitverschwendung. Sie ist der Zustand, in dem dein präfrontaler Cortex wieder Kontrolle übernimmt und der Raum zwischen Reiz und Reaktion entsteht, in dem du frei bist. Du kannst deine Gedanken nicht meistern, solange dein System glaubt, auf alles reagieren zu müssen. Die vollständige Vertiefung „Reizüberflutung & Alarmbereitschaft“ findest du im Mitgliederbereich.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
