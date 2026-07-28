@@ -1674,6 +1674,68 @@ export const deepDives: DeepDive[] = [
     relatedStage: 6,
     video: null,
   },
+
+  {
+    slug: "reizueberflutung",
+    title: "Reizüberflutung & Alarmbereitschaft",
+    subtitle: "Warum ein überflutetes Gehirn leichter zu lenken ist",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Zu viele gleichzeitige, wechselnde und emotionale Reize halten dein Nervensystem in Daueralarm – und in Alarm denkst du enger und bist leichter steuerbar.",
+    keyIdea:
+      "Bevor du fragst, was du denkst, entscheidet dein körperlicher Zustand, wie du denkst. Ein Gehirn im Alarm trifft andere Entscheidungen als ein reguliertes.",
+    intro:
+      "Geräusche, Nachrichten, Benachrichtigungen, Gespräche, Schlagzeilen und die Gedanken im eigenen Kopf konkurrieren jeden Tag um deine Aufmerksamkeit. Das Problem ist nicht, dass dein Gehirn keine vielen Reize verarbeiten könnte. Das Problem entsteht, wenn zu viele Reize gleichzeitig wichtig erscheinen, ständig wechseln und emotional aufgeladen sind. Dann bleibt dein System in Bereitschaft – und dieser Zustand verändert, wie du wahrnimmst, bewertest und entscheidest.",
+    sections: [
+      {
+        heading: "Dein Gehirn bewertet ununterbrochen",
+        body: "Jeder Reiz wird blitzschnell einsortiert: wichtig oder nicht, neu oder bekannt, gefährlich oder harmlos. An dieser Bewertung ist besonders die Amygdala beteiligt, vor allem bei Unsicherem und Negativem. Eine einzelne Benachrichtigung löst noch keinen Panikalarm aus. Kommen aber viele unvorhersehbare, emotional aufgeladene Reize zusammen, rutscht das Gehirn in erhöhte Wachsamkeit: „Irgendetwas könnte wichtig sein – bleib wach.“",
+      },
+      {
+        heading: "Zwei Stressreaktionen: die schnelle und die langsame",
+        body: "Bewertet dein Gehirn etwas als relevant, aktiviert es zuerst den schnellen Weg: Adrenalin und Noradrenalin machen dich innerhalb von Sekunden wacher und reaktionsbereit – Herz schneller, Atmung flacher, Muskeln angespannt. Hält die Belastung an, kommt die langsamere HPA-Achse dazu, an deren Ende Cortisol steht, das über Minuten Energie bereitstellt. Beides ist für sich gesund und nützlich. Das Problem ist nicht das Cortisol, sondern eine Stressreaktion, die zu oft anspringt und nicht mehr richtig herunterfährt.",
+      },
+      {
+        heading: "Warum du im Alarm schlechter denkst",
+        body: "Unter starkem Stress arbeitet der präfrontale Cortex weniger effektiv – also genau der Teil, der für planvolles Denken, Impulskontrolle, Arbeitsgedächtnis und Abwägen zuständig ist. Gleichzeitig gewinnen die schnellen, emotionalen und gewohnheitsbasierten Systeme an Einfluss. Das erklärt, warum du dann unkonzentriert, vergesslich, gereizt und impulsiv bist. Und genau hier liegt die Verbindung zu allem Vorherigen: Ein Mensch in Daueralarm denkt enger, sucht schnelle Antworten und ist dadurch leichter über Angst, Feindbilder und einfache Parolen erreichbar.",
+      },
+      {
+        heading: "Der Kreislauf – und der Ausweg",
+        body: "Digitale Reize sind meist unvorhersehbar, und die bloße Möglichkeit, dass gleich etwas Neues oder Wichtiges kommt, lässt dich über Dopamin immer wieder zur selben Quelle zurückkehren, die dich zugleich belastet. So entsteht ein widersprüchlicher Kreislauf: Der Reiz stresst dich – und du suchst den nächsten Reiz zur Beruhigung. Der Ausweg ist kein weiterer Input, sondern Ruhe. Erst wenn das System herunterfährt, übernimmt der präfrontale Cortex wieder, ordnet ein und schafft den Raum zwischen Reiz und Reaktion, in dem du überhaupt frei wählen kannst.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Die Reiz-Inventur",
+        duration: "5 Minuten",
+        steps: [
+          "Halt einmal mitten im Tag inne und zähle, wie viele Reizquellen gerade gleichzeitig um dich buhlen (Bildschirme, Töne, offene Tabs, Hintergrundgeräusche).",
+          "Schalte bewusst eine einzige davon ab – ein Ton, ein Fenster, ein Gerät.",
+          "Bemerke, ob dein Körper eine Spur ruhiger wird.",
+          "Mach das zur Gewohnheit: immer nur ein Kanal auf einmal, wo es geht.",
+        ],
+      },
+      {
+        title: "Das System herunterfahren",
+        duration: "10 Minuten, bei Überforderung",
+        steps: [
+          "Wenn du merkst, dass du nur noch reagierst, gönn dir eine reizarme Pause – kein Handy, kein Bildschirm, keine neue Information.",
+          "Atme ein paar Minuten ruhig, mit längerem Ausatmen als Einatmen – das signalisiert dem Körper Sicherheit.",
+          "Widerstehe dem Impuls, die Unruhe mit dem nächsten Reiz zu beruhigen.",
+          "Kehre erst danach zur Aufgabe zurück und bemerke, wie viel klarer du denkst.",
+        ],
+      },
+    ],
+    reflection: [
+      "In welchen Situationen greifst du zum Handy, gerade weil du schon überreizt bist?",
+      "Woran merkst du bei dir selbst, dass dein Denken von „abwägen“ auf „nur noch reagieren“ umgeschaltet hat?",
+      "Wann warst du zuletzt bewusst reizlos – und wie hat sich dein Denken danach angefühlt?",
+    ],
+    takeaway:
+      "Du kannst deine Gedanken nicht meistern, solange dein System glaubt, auf alles reagieren zu müssen. Ruhe ist keine Zeitverschwendung – sie ist der Zustand, in dem du wieder wählen kannst.",
+    relatedStage: 4,
+    video: null,
+  },
 ];
 
 export function getDeepDive(slug: string): DeepDive | undefined {
