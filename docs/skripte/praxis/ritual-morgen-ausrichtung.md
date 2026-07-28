@@ -1,0 +1,28 @@
+# Praxis – Morgen-Ausrichtung (Ritual)
+
+**Format:** Wort-für-Wort zum Einsprechen · **Länge:** ~5 Min · **Stufe 5**
+`[Regie] Ruhig, aber wach und zugewandt – Morgenstimmung, kein Einschlaf-Ton.`
+
+---
+
+Guten Morgen. … Bevor der Tag dich mitnimmt, … schenk dir diese paar Minuten. … Die ersten Minuten des Tages prägen seinen ganzen Ton. …
+
+Bleib noch einen Moment liegen oder sitzen. … Und ganz wichtig: … noch ohne Handy. … Die Nachrichten und To-dos warten – … dieser Moment gehört zuerst dir. …
+
+Nimm drei ruhige, bewusste Atemzüge. … Einatmen … und ausatmen. … Komm in deinem Körper an. … Spür, dass du wach wirst. … Dass ein neuer Tag beginnt. […Pause: 10 Sek]
+
+Und jetzt stell dir eine einzige Frage: … *Wie will ich diesem Tag begegnen?* […Pause: 5 Sek]
+
+Nicht: was muss ich alles schaffen. … Sondern: … aus welcher inneren Haltung heraus will ich heute unterwegs sein? …
+
+Und wähle dazu ein Wort. … Ein einziges. … Vielleicht *Ruhe*. … Vielleicht *Mut*. … *Klarheit*. … *Geduld*. … *Leichtigkeit*. … Nimm das Wort, das sich heute richtig anfühlt. […Pause: 8 Sek]
+
+Und jetzt stell dir kurz vor, … wie es sich anfühlt, aus dieser Haltung durch den Tag zu gehen. … Wie du mit diesem Wort im Rücken deine erste Aufgabe angehst. … Ein Gespräch führst. … Eine Herausforderung meisterst. […Pause: 10 Sek]
+
+Und zum Schluss: … Nimm dir eine kleine, konkrete Sache vor, … die zu dieser Ausrichtung passt. … Wenn dein Wort *Ruhe* ist – … vielleicht eine Sache heute bewusst langsamer. … Wenn es *Mut* ist – … vielleicht das eine Gespräch, das du sonst aufschiebst. […Pause: 8 Sek]
+
+Das war's. … Dein Wort begleitet dich jetzt wie ein leiser Kompass im Hintergrund. …
+
+Du musst nicht den ganzen Tag daran denken. … Es wirkt auch so. … Und wenn du dich verlierst, … erinnerst du dich einfach: … *heute geht es um dieses eine Wort.* …
+
+Steh jetzt bewusst auf. … Und geh ausgerichtet in deinen Tag.

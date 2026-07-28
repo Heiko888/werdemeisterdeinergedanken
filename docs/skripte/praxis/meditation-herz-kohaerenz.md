@@ -1,0 +1,36 @@
+# Praxis – Herz-Kohärenz (Meditation)
+
+**Format:** Wort-für-Wort zum Einsprechen · **Länge:** ~8 Min · **Stufe 6**
+`[Regie] Warm, ruhig. Beim Atem-Teil das Tempo selbst vorgeben (5 Sek ein / 5 Sek aus).`
+
+---
+
+Setz dich ruhig und aufrecht hin. … Die Füße auf dem Boden, der Körper entspannt, aber wach. … Schließe sanft die Augen. …
+
+Und leg eine Hand auf dein Herz. … Spür die Wärme deiner Hand … und darunter, ganz leise, den Rhythmus deines Herzens. […Pause: 8 Sek]
+
+Wir bringen jetzt drei Dinge in Einklang: … deinen Atem, … dein Herz … und ein warmes Gefühl. …
+
+Beginne damit, etwas langsamer zu atmen als gewohnt. … Ich zähle dich einmal ein. …
+
+Einatmen … zwei … drei … vier … fünf. … Und ausatmen … zwei … drei … vier … fünf. …
+
+*Ruhig und gleichmäßig.* … Einatmen … zwei … drei … vier … fünf. … Ausatmen … zwei … drei … vier … fünf. […Pause: 5 Sek]
+
+Und jetzt stell dir vor, … dein Atem strömt gar nicht durch die Nase, … sondern direkt durch die Herzgegend. … Durch dein Herz ein … und durch dein Herz aus. … Weiter in deinem ruhigen Rhythmus. […Pause: 15 Sek]
+
+Und während du so durch das Herz atmest, … ruf jetzt ein Gefühl von Wärme oder Dankbarkeit in dir hervor. …
+
+Denk an einen Menschen, den du gern hast. … An einen schönen Moment. … An dein Haustier, … an einen Ort, an dem du dich wohlfühlst. … Irgendetwas, das ein leises, warmes Ja in dir auslöst. […Pause: 10 Sek]
+
+Und lass dieses Gefühl mit dem Atem durch dein Herz strömen. … Einatmen – Wärme. … Ausatmen – Wärme. … *Atem, Herz und Gefühl schwingen jetzt im selben Takt.* […Pause: 20 Sek]
+
+Das ist Herz-Kohärenz. … Ein Zustand, in dem Kopf und Herz nicht mehr gegeneinander arbeiten, … sondern zusammen. … Ruhig … und klar zugleich. […Pause: 15 Sek]
+
+Bleib noch ein paar Atemzüge in diesem Zusammenspiel. … Ruhiger Atem … warmes Gefühl … Hand auf dem Herzen. […Pause: 20 Sek]
+
+Und jetzt lass das Zählen und das Vorstellen langsam los. … Kehr zurück zu deinem natürlichen Atem. …
+
+Nimm die Hand vom Herzen, … spür wieder den Raum um dich herum. … Und wenn du bereit bist, … öffne langsam die Augen.
+
+Diesen Zustand kannst du jederzeit abrufen – … vor einer Entscheidung, … in einem stressigen Moment, … oder einfach als kurzen Anker in deinem Tag. … Drei Minuten reichen schon.

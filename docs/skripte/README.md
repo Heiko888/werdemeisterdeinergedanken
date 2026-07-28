@@ -36,18 +36,20 @@ inhaltlich zusammen.
 - [ ] 06 – Innere Ausrichtung
 - [ ] 07 – Meisterschaft
 
-### Praxis
+### Praxis (Aufnahme = Video/MP3 online; Skript ✍️ = Sprechtext liegt vor)
 - [x] Atembeobachtung *(Video bereits online)*
-- [ ] Der innere Beobachter
-- [ ] Body-Scan
-- [ ] Herz-Kohärenz
-- [ ] Verlängertes Ausatmen
-- [ ] 4-6-Atmung
-- [ ] Box Breathing
-- [ ] Morgen-Ausrichtung
-- [ ] Abend-Reflexion
-- [ ] Loslass-Ritual
-- [ ] Präsenz-Spaziergang
+- [ ] Der innere Beobachter ✍️
+- [ ] Body-Scan ✍️
+- [ ] Herz-Kohärenz ✍️
+- [ ] Verlängertes Ausatmen ✍️
+- [ ] 4-6-Atmung ✍️
+- [ ] Box Breathing ✍️
+- [ ] Der Autopilot-Check ✍️
+- [ ] Morgen-Ausrichtung ✍️
+- [ ] Abend-Reflexion ✍️
+- [ ] Loslass-Ritual ✍️
+- [ ] Präsenz-Spaziergang ✍️
+- [ ] Die tägliche Rückkehr ✍️
 
 ### Vertiefungen
 - [ ] Automatische Gedanken
