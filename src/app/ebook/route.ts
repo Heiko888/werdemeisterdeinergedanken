@@ -15,7 +15,7 @@ export async function GET() {
       "Content-Type": "application/pdf",
       "Content-Disposition":
         'attachment; filename="Die-7-Stufen-kompakt.pdf"',
-      "Cache-Control": "public, max-age=3600",
+      "Cache-Control": "public, max-age=0, must-revalidate",
     },
   });
 }

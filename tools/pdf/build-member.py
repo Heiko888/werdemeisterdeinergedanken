@@ -24,7 +24,7 @@ def esc(s):
 CSS = r"""
 /*__FONTS__*/
 *{ margin:0; padding:0; box-sizing:border-box; }
-html{ background:#f6f4ee; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+html{ background:#ffffff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .serif{ font-family:'Fraunces',Georgia,serif; }
 @page{ size:A4; margin:15mm 17mm 16mm; }
@@ -33,7 +33,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
   --ink:#16231f; --ink-soft:#48524e; --accent:#4f9e1c;
   --teal-300:#5fd6d2; --teal-400:#34c4c4; --teal-500:#21b2bd;
   --leaf-500:#8cc63f; --leaf-600:#74ab2f; --gold-400:#e8c15f;
-  --surface:#ffffff; --hair:#e4ded0;
+  --surface:#f6f4ee; --hair:#e4ded0;
 }
 
 /* Kopf-Karte (Seite 1) */
@@ -103,7 +103,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .cover .eyebrow{ margin-top:13mm; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-400); font-weight:600;
   display:inline-flex; align-items:center; gap:9px; }
 .cover .eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--gold-400); }
-.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:56px; line-height:1.03; margin-top:12px; }
+.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:48px; line-height:1.08; margin-top:12px; }
 .cover h1 em{ font-style:italic; color:var(--teal-300); font-weight:500; }
 .cover .pr{ margin-top:15px; font-size:16px; line-height:1.5; color:#cdd8ec; max-width:150mm; text-shadow:0 1px 16px rgba(3,8,20,.8); }
 .cover .foot{ margin-top:auto; display:flex; justify-content:space-between; align-items:center;
