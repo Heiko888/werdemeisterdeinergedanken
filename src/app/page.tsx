@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { Trailer } from "@/components/sections/Trailer";
 import { SevenStages } from "@/components/sections/SevenStages";
 import { Compass } from "@/components/sections/Compass";
 import { WhyMe } from "@/components/sections/WhyMe";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Trailer />
       <SevenStages />
       <Compass />
       <WhyMe />
