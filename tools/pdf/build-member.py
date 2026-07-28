@@ -24,7 +24,7 @@ def esc(s):
 CSS = r"""
 /*__FONTS__*/
 *{ margin:0; padding:0; box-sizing:border-box; }
-html{ background:#f6f4ee; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+html{ background:#ffffff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .serif{ font-family:'Fraunces',Georgia,serif; }
 @page{ size:A4; margin:15mm 17mm 16mm; }
@@ -33,7 +33,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
   --ink:#16231f; --ink-soft:#48524e; --accent:#4f9e1c;
   --teal-300:#5fd6d2; --teal-400:#34c4c4; --teal-500:#21b2bd;
   --leaf-500:#8cc63f; --leaf-600:#74ab2f; --gold-400:#e8c15f;
-  --surface:#ffffff; --hair:#e4ded0;
+  --surface:#f6f4ee; --hair:#e4ded0;
 }
 
 /* Kopf-Karte (Seite 1) */

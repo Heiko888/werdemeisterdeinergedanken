@@ -28,7 +28,7 @@ CSS = r"""
   --teal-300:#5fd6d2; --teal-400:#34c4c4; --teal-500:#21b2bd;
   --violet:#6d5ae0; --cyan:#34c4c4;
   --gold-300:#f2d489; --gold-400:#e8c15f; --gold-500:#d9a93a;
-  --paper:#f6f4ee; --surface:#ffffff; --surface2:#efece2;
+  --paper:#ffffff; --surface:#f6f4ee; --surface2:#efece2;
   --ink:#16231f; --ink-soft:#48524e; --accent:#4f9e1c;
   --cream:#f4f2ec;
 }
