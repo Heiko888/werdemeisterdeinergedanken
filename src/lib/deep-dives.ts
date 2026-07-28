@@ -799,6 +799,881 @@ export const deepDives: DeepDive[] = [
     relatedStage: 7,
     video: null,
   },
+
+  // ===================================================================
+  // KATEGORIE: Mentale Selbstverteidigung
+  // Wie dein Denken von außen gelenkt wird – und wie du es bemerkst.
+  // Ton bewusst überparteilich: Mechanismus erklären, nicht Partei ergreifen.
+  // ===================================================================
+  {
+    slug: "propaganda",
+    title: "Propaganda & Konditionierung",
+    subtitle: "Wie Denken von außen geformt wird",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Propaganda zwingt selten direkt eine Meinung auf – sie wirkt über Wiederholung, Emotion und Vereinfachung.",
+    keyIdea:
+      "Wirksame Beeinflussung überzeugt dich nicht mit Argumenten – sie umgeht das Argument und arbeitet an deinem Gefühl.",
+    intro:
+      "Wir stellen uns Propaganda oft plump vor: laute Parolen, offensichtliche Lügen. Doch die wirksamste Beeinflussung ist leise. Sie sagt dir nicht, was du denken sollst – sie sorgt dafür, dass sich eine Sicht mit der Zeit einfach richtig anfühlt. Über Wiederholung, über Emotion, über Vereinfachung. Wer versteht, wie das funktioniert, wird schwerer steuerbar.",
+    sections: [
+      {
+        heading: "Wiederholung, Emotion, Vereinfachung",
+        body: "Drei Hebel wirken fast immer zusammen. Wiederholung macht eine Aussage vertraut – und Vertrautes halten wir für wahr. Emotion, besonders Angst, schaltet das ruhige Prüfen aus. Und Vereinfachung reduziert ein vielschichtiges Thema auf Gut gegen Böse, wo eine klare Seite Halt verspricht. Keiner dieser Hebel braucht eine einzige Lüge, um zu wirken.",
+      },
+      {
+        heading: "Feindbild und Zugehörigkeit",
+        body: "Nichts bindet eine Gruppe so schnell wie ein gemeinsamer Gegner. Ein Feindbild liefert eine einfache Ordnung: hier die Guten, dort die Anderen. Wer dazugehören will, übernimmt die Sicht der Gruppe – oft, ohne sie je geprüft zu haben. Zustimmung wird dann zum Zeichen von Zugehörigkeit, Zweifel zum Risiko der Ausgrenzung.",
+      },
+      {
+        heading: "Warum wir Ungeprüftes verteidigen",
+        body: "Haben wir eine Aussage einmal übernommen, wird sie Teil von uns. Sie zu hinterfragen fühlt sich dann an, als müssten wir uns selbst infrage stellen. Deshalb verteidigen Menschen mit Inbrunst Behauptungen, die sie nie überprüft haben – nicht aus Dummheit, sondern weil das eigene Selbstbild daran hängt.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Herkunfts-Check",
+        duration: "10 Minuten",
+        steps: [
+          "Wähle eine Überzeugung, die dir stark und selbstverständlich erscheint.",
+          "Frag: Woher habe ich das eigentlich? Habe ich es geprüft – oder oft genug gehört?",
+          "Prüfe den Ton: Arbeitet die Quelle mit Angst, Empörung oder klaren Feindbildern?",
+          "Formuliere die nüchternste, unaufgeregteste Version derselben Aussage. Was bleibt davon übrig?",
+        ],
+      },
+      {
+        title: "Die Gegenseite ernst nehmen",
+        duration: "15 Minuten",
+        steps: [
+          "Nimm ein Thema, bei dem du dir sehr sicher bist.",
+          "Schreib die beste, fairste Begründung der Gegenseite auf – so, dass sie ihr zustimmen würde.",
+          "Bemerke, wie viel Widerstand dabei in dir aufkommt.",
+          "Frage dich: Kämpfe ich gerade um die Wahrheit – oder um mein Dazugehören?",
+        ],
+      },
+    ],
+    reflection: [
+      "Welche Überzeugung hast du übernommen, ohne sie je wirklich geprüft zu haben?",
+      "Bei welchem Thema fällt es dir am schwersten, die Gegenseite auch nur anzuhören?",
+      "Woran merkst du, dass eine Botschaft eher dein Gefühl als deinen Verstand anspricht?",
+    ],
+    takeaway:
+      "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand.",
+    relatedStage: 1,
+    video: null,
+  },
+
+  {
+    slug: "framing",
+    title: "Framing",
+    subtitle: "Die unsichtbare Macht hinter den Worten",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Ein Frame ist ein Deutungsrahmen: Dieselbe Wirklichkeit wirkt je nach Wortwahl völlig anders – ganz ohne falsche Fakten.",
+    keyIdea:
+      "Wer den Rahmen bestimmt, beeinflusst deine Wahrnehmung, bevor du bewusst über den Inhalt nachdenkst.",
+    intro:
+      "Du glaubst, du reagierst auf Fakten. In Wirklichkeit reagierst du häufig zuerst auf den Rahmen, in dem dir diese Fakten präsentiert werden. Ein einziges Wort kann aus einem Kritiker einen Gegner machen, aus einer Kürzung eine Reform und aus Kontrolle plötzlich Schutz. Das Entscheidende: Die Informationen müssen dafür nicht einmal falsch sein.",
+    sections: [
+      {
+        heading: "Der Rahmen liefert die Bewertung gleich mit",
+        body: "„Der Staat investiert zehn Milliarden“ und „Der Staat gibt weitere zehn Milliarden aus“ beschreiben dieselbe Zahl. Doch „investiert“ klingt nach Zukunft und Nutzen, „gibt aus“ nach Verschwendung. Ein Frame liefert nie nur eine Information – er liefert immer eine Interpretation gleich mit. Auch bei Menschen: Ob jemand „Experte“, „Kritiker“ oder „Leugner“ genannt wird, entscheidet über dein Urteil, bevor du ein Argument gehört hast.",
+      },
+      {
+        heading: "Gewinn, Verlust und Moral",
+        body: "„90 Prozent der Arbeitsplätze bleiben erhalten“ und „10 Prozent gehen verloren“ können dasselbe meinen – und lösen doch verschiedene Gefühle aus. Besonders stark ist das Moral-Framing: Wird eine Maßnahme mit „Schutz“ und „Solidarität“ verknüpft, gerät jeder Zweifel automatisch in den Gegen-Rahmen „verantwortungslos“. Dann wird nicht mehr über die Sache gestritten, sondern über den Charakter der Beteiligten.",
+      },
+      {
+        heading: "Framing durch Weglassen",
+        body: "Auch das Nichtgesagte rahmt. Fehlt die Vorgeschichte, fehlen Gegenargumente, stehen Zahlen ohne Vergleich da, wird ein Einzelfall verallgemeinert – schon erscheint das Thema in einem bestimmten Licht. Das ist nicht immer Absicht; jede Kommunikation braucht einen Rahmen, niemand kann alles zeigen. Problematisch wird es, wo ein Rahmen als einzige Wahrheit auftritt und Gegenperspektiven moralisch abwertet.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Die Umformulierungs-Probe",
+        duration: "10 Minuten",
+        steps: [
+          "Nimm eine Schlagzeile oder Aussage, die dich emotional berührt hat.",
+          "Schreib sie so um, dass dieselben Fakten neutral klingen – ohne wertende Wörter.",
+          "Schreib sie dann so um, wie die Gegenseite denselben Vorgang beschreiben würde.",
+          "Vergleiche die drei Versionen: Was ändert sich am Gefühl, obwohl der Kern gleich bleibt?",
+        ],
+      },
+      {
+        title: "Die acht Frame-Fragen",
+        duration: "im Alltag, kurz",
+        steps: [
+          "Welche Wörter enthalten schon eine Bewertung? Welche Emotion soll entstehen?",
+          "Welche Annahme wird als selbstverständlich vorausgesetzt? Welche Info fehlt?",
+          "Wie würde die Gegenseite es beschreiben? Reagiere ich auf die Sache oder auf ein Etikett?",
+          "Und die schärfste Frage: Wer profitiert von genau diesem Deutungsrahmen?",
+        ],
+      },
+    ],
+    reflection: [
+      "Bei welchem Wort merkst du, dass du reagierst, bevor du den Inhalt geprüft hast?",
+      "Wo hast du zuletzt eine Bewertung übernommen, weil sie schon in der Frage steckte?",
+      "Würdest du anders denken, wenn dasselbe mit anderen Worten gesagt würde?",
+    ],
+    takeaway:
+      "Gedankenfreiheit beginnt damit, den Rahmen zu erkennen, bevor du die darin enthaltene Bewertung übernimmst.",
+    relatedStage: 3,
+    video: null,
+  },
+
+  {
+    slug: "sprache-und-etiketten",
+    title: "Sprache & Etiketten",
+    subtitle: "Wie Wörter deine Wahrnehmung färben",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Wörter beschreiben die Wirklichkeit nicht nur – sie geben ihr bereits eine Bedeutung, oft schon bevor du prüfst.",
+    keyIdea:
+      "Ein einziges Etikett kann eine Diskussion beenden – weil es die Bewertung ersetzt statt sie zu begründen.",
+    intro:
+      "Sprache ist nie ganz neutral. Jedes Wort trägt einen Beiklang, eine Wertung, ein Gefühl. Deshalb entscheidet die Wortwahl mit darüber, wie du eine Sache siehst – manchmal stärker als die Sache selbst. Die Kernfrage lautet: Denkst du noch über den Inhalt nach – oder reagierst du bereits auf das verwendete Wort?",
+    sections: [
+      {
+        heading: "Das Etikett ersetzt das Argument",
+        body: "Wird ein Mensch als „Experte“ bezeichnet, hört man ihm zu; als „Querulant“, hört man weg – bei identischem Satz. Etiketten sind Abkürzungen fürs Urteilen. Sie sparen Denkarbeit und genau darin liegt ihre Gefahr: Sie beenden das Prüfen, bevor es begonnen hat. Wer ein Etikett akzeptiert, hat die Bewertung schon übernommen.",
+      },
+      {
+        heading: "Weiche und harte Wörter für dieselbe Sache",
+        body: "„Sparpaket“ klingt vernünftig, „Leistungsabbau“ schmerzhaft – gemeint sein kann dasselbe. „Preisanpassung“ statt „Preiserhöhung“, „Beitrag“ statt „Abgabe“: Solche Wörter machen Unangenehmes weicher und Notwendiges selbstverständlicher. Das ist nicht automatisch Lüge, aber es lenkt. Die Frage ist immer: Welche Realität wird hier freundlicher angezogen, als sie ist?",
+      },
+      {
+        heading: "Wörter lösen Gefühle vor dem Inhalt aus",
+        body: "Manche Begriffe zünden sofort – zustimmend oder ablehnend –, noch bevor der eigentliche Sachverhalt geprüft ist. Genau das ist ihr Zweck. Sobald ein Reizwort fällt, denkst du nicht mehr über die Sache nach, sondern reagierst auf das Wort. Das Gegenmittel ist einfach, aber ungewohnt: einen Moment innehalten und das Wort vom Inhalt trennen.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Etikett abziehen",
+        duration: "5 Minuten",
+        steps: [
+          "Nimm eine Aussage, in der jemand mit einem Etikett belegt wird („Der Aktivist …“, „Die Leugner …“).",
+          "Streiche das Etikett und ersetze es durch eine neutrale Beschreibung der Handlung.",
+          "Prüfe die Aussage jetzt noch einmal – überzeugt sie ohne das Etikett noch?",
+          "Bemerke, wie viel Urteil vorher allein im Wort steckte.",
+        ],
+      },
+      {
+        title: "Die Reizwort-Liste",
+        duration: "eine Woche",
+        steps: [
+          "Notiere Wörter, bei denen du sofort und stark reagierst – zustimmend wie ablehnend.",
+          "Frag zu jedem: Reagiere ich auf die Sache oder auf das Wort?",
+          "Suche für ein Reizwort eine neutrale Alternative und benutze sie innerlich.",
+          "Beobachte, ob sich dein Urteil verändert, wenn das Reizwort weg ist.",
+        ],
+      },
+    ],
+    reflection: [
+      "Welches Wort bringt dich am schnellsten auf die Palme – und warum eigentlich?",
+      "Wo benutzt du selbst Etiketten, um dir das Prüfen zu ersparen?",
+      "Wann hat ein einzelnes Wort zuletzt eine Diskussion für dich beendet?",
+    ],
+    takeaway:
+      "Ein Etikett ist eine Bewertung ohne Begründung. Zieh es ab – und schau, was von der Aussage übrig bleibt.",
+    relatedStage: 3,
+    video: null,
+  },
+
+  {
+    slug: "medien-agenda",
+    title: "Medien & Aufmerksamkeit",
+    subtitle: "Worüber du nachdenkst, ist schon eine Entscheidung",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Medien müssen dir nicht sagen, was du denken sollst – es reicht, festzulegen, worüber du täglich nachdenkst.",
+    keyIdea:
+      "Nicht die Meinung wird dir vorgegeben, sondern das Thema. Und wer die Themen setzt, lenkt die Aufmerksamkeit.",
+    intro:
+      "Es gibt einen leisen, oft übersehenen Hebel: die Themenauswahl. Medien beeinflussen weniger, was du über ein Thema denkst, als vielmehr, über welche Themen du überhaupt nachdenkst. Was ständig vorkommt, erscheint wichtig; was fehlt, existiert im Alltag kaum. Diese Auswahl formt dein Bild der Welt, bevor eine einzige Wertung fällt.",
+    sections: [
+      {
+        heading: "Auswahl, Häufigkeit, Weglassen",
+        body: "Drei stille Werkzeuge: Was überhaupt zum Thema gemacht wird, wie oft darüber berichtet wird, und was weggelassen wird. Ein Thema, das täglich erscheint, wirkt dringlicher als eines, das nur einmal vorkommt – unabhängig von seiner tatsächlichen Bedeutung. Und was gar nicht vorkommt, fehlt in deinem Kopf, als gäbe es es nicht.",
+      },
+      {
+        heading: "Bilder, Überschriften, Zuspitzung",
+        body: "Dieselbe Nachricht wirkt je nach Bild, Überschrift und Tonfall völlig anders. Ein zugespitzter Titel entscheidet oft, ob und wie du weiterliest – viele lesen nur ihn. Die Auswahl der Bilder und der befragten Fachleute rahmt das Thema zusätzlich. All das kann seriös sein, aber es ist nie neutral: Jemand hat ausgewählt.",
+      },
+      {
+        heading: "Information oder Inszenierung",
+        body: "Nicht alles, was informiert aussieht, ist es. Manches ist Inszenierung – gebaut, um Aufmerksamkeit und Emotion zu erzeugen, nicht um einzuordnen. Der Unterschied zeigt sich an einer Frage: Werde ich hier schlauer und ruhiger – oder nur aufgeregter? Einordnung macht ruhig, Inszenierung macht abhängig.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Die Weglass-Frage",
+        duration: "10 Minuten",
+        steps: [
+          "Schau dir die Titelthemen einer Nachrichtenquelle an.",
+          "Frag bei jedem: Warum genau dieses Thema, warum jetzt, warum so groß?",
+          "Frag dann: Welches wichtige Thema kommt hier gar nicht vor?",
+          "Bemerke, wie sehr allein die Auswahl dein Bild der Lage prägt.",
+        ],
+      },
+      {
+        title: "Zwei Quellen, ein Ereignis",
+        duration: "15 Minuten",
+        steps: [
+          "Wähle ein aktuelles Ereignis und lies es bei zwei sehr unterschiedlichen Quellen.",
+          "Vergleiche Überschrift, Bildauswahl und welche Fakten betont werden.",
+          "Notiere, was die eine erwähnt und die andere weglässt.",
+          "Bilde dir dein Urteil erst aus der Zusammenschau – nicht aus einer Quelle.",
+        ],
+      },
+    ],
+    reflection: [
+      "Woher stammen die Themen, die dich gerade beschäftigen – hast du sie gewählt?",
+      "Welche Nachricht hat dich zuletzt aufgeregt, ohne dich klüger zu machen?",
+      "Was würde sich ändern, wenn du seltener, aber gründlicher Nachrichten liest?",
+    ],
+    takeaway:
+      "Wer die Themen setzt, lenkt dein Denken – nicht durch die Antwort, sondern durch die Frage, die überhaupt gestellt wird.",
+    relatedStage: 1,
+    video: null,
+  },
+
+  {
+    slug: "algorithmen",
+    title: "Algorithmen & Filterblasen",
+    subtitle: "Die personalisierte Realität",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Online siehst du nicht „die Welt“, sondern eine Auswahl, die auf deinem bisherigen Verhalten beruht.",
+    keyIdea:
+      "Der Algorithmus zeigt dir nicht, was wahr ist, sondern was dich hält – und das ist selten dasselbe.",
+    intro:
+      "Was du in deinen Feeds siehst, ist kein Abbild der Wirklichkeit. Es ist eine Auswahl, berechnet aus dem, worauf du bisher reagiert hast. Das Ziel dahinter ist nicht Wahrheit, sondern Aufmerksamkeit – denn Aufmerksamkeit ist das Geschäftsmodell. Wer das versteht, schaut mit anderen Augen auf den eigenen Bildschirm.",
+    sections: [
+      {
+        heading: "Du bekommst mehr von dem, worauf du reagierst",
+        body: "Jeder Klick, jedes Verweilen ist ein Signal: „Davon will ich mehr.“ Der Algorithmus liefert prompt – und verstärkt so, was ohnehin schon da war. Deine Meinung wird dir immer öfter bestätigt, selten herausgefordert. So entsteht eine Filterblase, in der die eigene Sicht wie der gesunde Menschenverstand wirkt, weil alles andere ausgeblendet ist.",
+      },
+      {
+        heading: "Empörung erzeugt Reichweite",
+        body: "Inhalte, die starke Gefühle auslösen – vor allem Empörung und Angst –, werden mehr geteilt und kommentiert. Also werden genau sie weiter nach oben gespült. Das Ruhige, Differenzierte, Abwägende verschwindet, das Zugespitzte und Extreme wird sichtbar. Nicht weil es wahrer wäre, sondern weil es besser „performt“.",
+      },
+      {
+        heading: "Der Verlust der gemeinsamen Wirklichkeit",
+        body: "Wenn jeder eine andere, auf ihn zugeschnittene Auswahl sieht, zerfällt die gemeinsame Grundlage, über die man überhaupt streiten könnte. Zwei Menschen halten sich für gut informiert und leben doch in verschiedenen Welten. Das erklärt viel von der Härte heutiger Debatten – man streitet nicht nur über Meinungen, sondern über verschiedene Realitäten.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Feed-Diagnose",
+        duration: "10 Minuten",
+        steps: [
+          "Scrolle bewusst durch einen deiner Feeds und beobachte, welche Gefühle geweckt werden.",
+          "Zähle grob: Wie viel bestätigt deine Sicht, wie viel fordert sie heraus?",
+          "Frag: Wovon sehe ich hier auffällig viel – und was fehlt fast völlig?",
+          "Bemerke, dass diese Auswahl aus deinem eigenen Verhalten entstanden ist.",
+        ],
+      },
+      {
+        title: "Die Blase durchlöchern",
+        duration: "im Alltag",
+        steps: [
+          "Folge bewusst ein, zwei seriösen Stimmen, die anderer Meinung sind als du.",
+          "Klicke eine Woche lang nicht auf das, was dich nur empört.",
+          "Suche aktiv nach der ruhigsten, sachlichsten Darstellung eines Streitthemas.",
+          "Beobachte, ob dein Feed – und dein Gefühl – sich verändern.",
+        ],
+      },
+    ],
+    reflection: [
+      "Wann hast du zuletzt online etwas gesehen, das deiner Meinung ernsthaft widersprach?",
+      "Welche Inhalte ziehen dich so zuverlässig in ihren Bann, dass du die Zeit vergisst?",
+      "Wie würde sich dein Weltbild ändern, wenn dein Feed einem anderen Menschen gehörte?",
+    ],
+    takeaway:
+      "Dein Feed ist ein Spiegel deines Verhaltens, kein Fenster zur Welt. Aufmerksamkeit ist die Ware – nicht die Wahrheit.",
+    relatedStage: 1,
+    video: null,
+  },
+
+  {
+    slug: "werbung-und-mangel",
+    title: "Werbung & künstlicher Mangel",
+    subtitle: "Wie ein Bedürfnis erschaffen wird",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Werbung verkauft nicht nur Produkte, sondern Vorstellungen davon, wer du sein solltest – und was dir angeblich fehlt.",
+    keyIdea:
+      "Vieles kaufst du nicht, weil du es brauchst, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt.",
+    intro:
+      "Gute Werbung verkauft kein Produkt. Sie verkauft ein Gefühl – und zwar meist zuerst ein unangenehmes: den Eindruck, dass etwas fehlt. Erst wird der Mangel geweckt, dann die Lösung angeboten. Wer diesen Mechanismus durchschaut, trifft freiere Entscheidungen, weil er den Impuls von echtem Bedürfnis unterscheiden kann.",
+    sections: [
+      {
+        heading: "Erst der Mangel, dann das Produkt",
+        body: "Kaum eine Werbung sagt „Du bist genug“. Sie deutet an, dass dir etwas fehlt: Schönheit, Erfolg, Zugehörigkeit, Ruhe. Dieses Fehlen ist oft künstlich erzeugt – wenige Sekunden zuvor war es gar nicht da. Das Produkt erscheint dann als Erlösung von einem Unbehagen, das die Werbung selbst erst geweckt hat.",
+      },
+      {
+        heading: "Vergleich und Status",
+        body: "Ein zweiter Hebel ist der Vergleich. Sobald du dich mit einem idealisierten Bild misst, entsteht ein Abstand – und den soll das Produkt schließen. Es geht selten um die Sache selbst, sondern um Status, Anerkennung, Dazugehören. Man kauft nicht die Uhr, sondern das Gefühl, jemand zu sein, der so eine Uhr trägt.",
+      },
+      {
+        heading: "Vom Gefühl zur Kaufentscheidung",
+        body: "Produkte werden gezielt mit Gefühlen verknüpft: Freiheit, Liebe, Sicherheit, Leichtigkeit. Nicht das Produkt löst diese Gefühle aus – die Verknüpfung wird hergestellt und tausendfach wiederholt. So wird Unsicherheit in eine Kaufentscheidung verwandelt. Der Ausweg ist nicht Askese, sondern eine Pause zwischen Impuls und Kauf.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Mangel-Check",
+        duration: "im Moment des Kaufimpulses",
+        steps: [
+          "Wenn du etwas kaufen willst, halte kurz inne.",
+          "Frag: Wollte ich das schon vorher – oder erst, seit ich die Werbung gesehen habe?",
+          "Frag weiter: Welches Gefühl verspreche ich mir wirklich davon?",
+          "Warte 24 Stunden. Ist der Wunsch dann noch da, war er vielleicht echt.",
+        ],
+      },
+      {
+        title: "Werbung entschlüsseln",
+        duration: "10 Minuten",
+        steps: [
+          "Nimm eine Werbung, die dich anspricht, und schau genau hin.",
+          "Frag: Welches Gefühl wird hier verkauft – nicht welches Produkt?",
+          "Frag: Welchen Mangel soll ich empfinden, damit ich kaufe?",
+          "Benenne die Verknüpfung laut: „Sie verbinden dieses Produkt mit …“",
+        ],
+      },
+    ],
+    reflection: [
+      "Was hast du zuletzt gekauft, das eigentlich ein Gefühl kaufen sollte?",
+      "In welchem Lebensbereich fühlst du dich am leichtesten „nicht genug“?",
+      "Wie oft entsteht dein Wunsch erst durch den Vergleich mit anderen?",
+    ],
+    takeaway:
+      "Werbung weckt den Mangel, den sie dann zu heilen verspricht. Die Pause zwischen Impuls und Kauf ist deine Freiheit.",
+    relatedStage: 1,
+    video: null,
+  },
+
+  {
+    slug: "gruppendruck",
+    title: "Gruppendruck & Schweigespirale",
+    subtitle: "Warum wir uns anpassen, obwohl wir zweifeln",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Menschen passen sich häufig an, obwohl sie innerlich Zweifel haben – aus Angst vor Ausgrenzung.",
+    keyIdea:
+      "Die Angst, nicht dazuzugehören, ist so alt und tief, dass sie unser Urteil überstimmen kann, ohne dass wir es merken.",
+    intro:
+      "Der Mensch ist ein Gruppenwesen. Über Jahrtausende bedeutete Ausschluss aus der Gruppe Lebensgefahr. Deshalb sitzt die Angst vor Ausgrenzung tief – tiefer als jedes Argument. Sie führt dazu, dass wir öffentlich mittragen, was wir privat bezweifeln. Wer diesen Mechanismus kennt, kann bewusster entscheiden, wann er sich anpasst und wann nicht.",
+    sections: [
+      {
+        heading: "Die Schweigespirale",
+        body: "Wer glaubt, mit seiner Meinung allein zu stehen, schweigt eher – aus Angst vor Ablehnung. Dadurch wirkt die andere Sicht noch stärker, was noch mehr Menschen zum Schweigen bringt. So entsteht eine Spirale: Nicht die Mehrheit setzt sich durch, sondern die, die sich am lautesten und selbstsichersten zeigt. Vieles, was wie Konsens aussieht, ist nur organisiertes Schweigen.",
+      },
+      {
+        heading: "Die Mehrheitsillusion",
+        body: "Wir überschätzen systematisch, wie viele Menschen so denken wie die lautesten Stimmen – und unterschätzen die stillen Zweifler. Oft sind viel mehr Menschen anderer Meinung, als es scheint; sie sagen es nur nicht. Diese Illusion verstärkt den Druck: Man passt sich einer Mehrheit an, die es so gar nicht gibt.",
+      },
+      {
+        heading: "Selbstzensur im Alltag",
+        body: "Anpassung ist nicht nur ein Phänomen großer Debatten – sie geschieht in Familie, Beruf und Freundeskreis. Wir schlucken einen Einwand, um den Frieden zu wahren, und nennen es Höflichkeit. Manchmal ist das klug. Problematisch wird es, wenn wir über die Jahre verlernen, überhaupt zu wissen, was wir selbst denken.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Privat gegen öffentlich",
+        duration: "10 Minuten",
+        steps: [
+          "Denk an ein Thema, bei dem du öffentlich etwas anderes sagst als privat.",
+          "Schreib beide Versionen nebeneinander auf.",
+          "Frag: Wovor genau schützt mich das Schweigen? Ist die Gefahr real oder gefühlt?",
+          "Überlege einen kleinen, sicheren Schritt, ehrlicher zu sein.",
+        ],
+      },
+      {
+        title: "Der Zweifler-Mut",
+        duration: "im Alltag",
+        steps: [
+          "Wenn du in einer Gruppe innerlich anderer Meinung bist, sag es einmal ruhig und freundlich.",
+          "Beobachte, wie viele insgeheim zustimmen, sobald einer anfängt.",
+          "Achte darauf, wie sich die gefühlte Mehrheit oft in Luft auflöst.",
+          "Bemerke: Meist ist die befürchtete Ausgrenzung viel kleiner als gedacht.",
+        ],
+      },
+    ],
+    reflection: [
+      "Wo sagst du öffentlich etwas anderes, als du privat denkst?",
+      "Wann hast du zuletzt geschwiegen, obwohl du Zweifel hattest?",
+      "Wessen Zustimmung ist dir so wichtig, dass du dafür deine Meinung zurückstellst?",
+    ],
+    takeaway:
+      "Vieles, was wie Mehrheit aussieht, ist nur lautes Selbstbewusstsein und stilles Schweigen. Deine ehrliche Stimme zählt mehr, als du denkst.",
+    relatedStage: 2,
+    video: null,
+  },
+
+  {
+    slug: "autoritaetshoerigkeit",
+    title: "Autorität & Gehorsam",
+    subtitle: "Wenn Titel das Prüfen ersetzen",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Titel, Status und Institutionen können dazu führen, dass Aussagen nicht mehr geprüft, sondern einfach geglaubt werden.",
+    keyIdea:
+      "Vertrauen in Fachwissen ist sinnvoll – blinder Gehorsam beginnt dort, wo du aufhörst, überhaupt noch mitzudenken.",
+    intro:
+      "Wir können nicht alles selbst überprüfen – deshalb vertrauen wir Fachleuten, und das ist vernünftig. Doch dasselbe Vertrauen kann kippen: in blinden Gehorsam, bei dem eine Aussage allein deshalb gilt, weil sie von einer Autorität kommt. Die Kunst ist, Vertrauen und Prüfen zusammenzuhalten, statt das eine gegen das andere einzutauschen.",
+    sections: [
+      {
+        heading: "Warum Autorität überzeugt",
+        body: "Dieselbe Aussage klingt glaubwürdiger, wenn ein Titel, eine Uniform oder eine Institution dahintersteht. Das ist eine uralte Abkürzung: Statt die Sache zu prüfen, prüfen wir die Quelle. Meist funktioniert das gut. Gefährlich wird es, wenn der Status das Argument komplett ersetzt und Rückfragen als Respektlosigkeit gelten.",
+      },
+      {
+        heading: "Fachwissen ist nicht dasselbe wie Meinung",
+        body: "Ein Fachmensch ist Experte auf seinem Gebiet – nicht automatisch bei allem. Oft wird echte Fachkompetenz in einem Bereich auf ganz andere Fragen übertragen, wo sie nichts mehr bedeutet. Ein guter Prüfstein: Spricht die Person hier aus belegbarem Fachwissen – oder äußert sie eine persönliche Meinung, die auch ihr Nachbar haben könnte?",
+      },
+      {
+        heading: "Ein Experte darf irren",
+        body: "Fachleute liegen manchmal falsch, korrigieren sich, streiten untereinander – das ist normal und sogar ein Zeichen von Seriosität. Wer Autorität für unfehlbar hält, missversteht, wie Wissen entsteht. Vertrauen heißt nicht, jeden Satz zu glauben, sondern die Redlichkeit und Offenlegung der Quelle einschätzen zu können.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Sache statt Status",
+        duration: "10 Minuten",
+        steps: [
+          "Nimm eine Aussage, die du glaubst, weil eine Autorität sie gesagt hat.",
+          "Blende den Status aus: Überzeugt die Begründung auch für sich allein?",
+          "Frag: Spricht die Person aus ihrem Fachgebiet – oder darüber hinaus?",
+          "Unterscheide klar: Was ist hier belegtes Wissen, was ist Meinung?",
+        ],
+      },
+      {
+        title: "Die Rückfrage üben",
+        duration: "im Alltag",
+        steps: [
+          "Wenn dich eine Autorität überzeugt, stell innerlich eine höfliche Rückfrage: „Woran erkenne ich das?“",
+          "Achte darauf, ob eine nachvollziehbare Begründung folgt – oder nur der Verweis auf den Status.",
+          "Bemerke, ob Rückfragen willkommen sind oder abgewürgt werden.",
+          "Nimm Offenheit für Nachfragen als Zeichen von Seriosität.",
+        ],
+      },
+    ],
+    reflection: [
+      "Wann ist dein Vertrauen zuletzt in unkritisches Übernehmen gekippt?",
+      "Bei welcher Instanz prüfst du grundsätzlich nichts mehr nach?",
+      "Wie unterscheidest du für dich Fachwissen von bloßer Meinung?",
+    ],
+    takeaway:
+      "Vertraue Fachwissen – aber hör nicht auf mitzudenken. Ein Titel ist ein Grund zuzuhören, kein Grund, nicht mehr zu prüfen.",
+    relatedStage: 3,
+    video: null,
+  },
+
+  {
+    slug: "angst-steuerung",
+    title: "Angst als Steuerungsmittel",
+    subtitle: "Warum Druck dich lenkbar macht",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Angst verengt die Wahrnehmung – unter Druck suchen Menschen nach schnellen Antworten, Sicherheit und klaren Führungsfiguren.",
+    keyIdea:
+      "Wer Angst erzeugt, muss dich nicht überzeugen – ein verängstigter Mensch prüft nicht mehr, er sucht nur noch Schutz.",
+    intro:
+      "Angst ist ein lebenswichtiges Signal. Aber sie hat einen Nebeneffekt: Sie verengt das Denken. Unter Bedrohung schaltet der Verstand vom ruhigen Abwägen auf schnelle Reaktion. Genau das macht ängstliche Menschen lenkbar – sie greifen nach jeder Antwort, die Sicherheit verspricht. Zu wissen, was Angst mit dem Denken macht, ist der erste Schutz davor.",
+    sections: [
+      {
+        heading: "Wie Angst das Denken verengt",
+        body: "Unter Bedrohung fährt das Gehirn das differenzierte Denken herunter und das schnelle Reagieren hoch. Zwischentöne verschwinden, die Welt wird zu Schwarz und Weiß. Das war bei realer Gefahr überlebenswichtig. Bei dauerhaftem, diffusem Druck aber führt es dazu, dass wir einfache, laute Antworten den komplexen, leisen vorziehen.",
+      },
+      {
+        heading: "Sicherheit gegen Freiheit",
+        body: "Ein verängstigter Mensch ist bereit, für das Versprechen von Sicherheit vieles aufzugeben – auch Freiheiten, die er sonst verteidigen würde. Das ist keine Schwäche, sondern ein tiefer Reflex. Deshalb ist das Muster so wirksam: erst Bedrohung betonen, dann Schutz anbieten. Die entscheidende Frage bleibt: Ist die Gefahr wirklich so groß – und ist der angebotene Schutz der Preis wert?",
+      },
+      {
+        heading: "Dauerkrise und erlernte Hilflosigkeit",
+        body: "Folgt eine Krise auf die nächste, ohne Atempause, stellt sich Erschöpfung ein. Menschen fühlen sich ohnmächtig, geben das eigene Urteil ab und überlassen anderen die Führung. Diese erlernte Hilflosigkeit ist bequem und gefährlich zugleich. Der Gegenpol ist nicht Sorglosigkeit, sondern die ruhige Frage: Was liegt tatsächlich in meiner Hand?",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Angst-Abstand",
+        duration: "im Moment der Anspannung",
+        steps: [
+          "Wenn eine Nachricht dich in Alarm versetzt, atme bewusst langsam aus.",
+          "Frag: Ist die Gefahr hier und jetzt real – oder wird sie erzeugt?",
+          "Frag: Wer bietet mir gerade Schutz an – und was soll ich dafür geben?",
+          "Triff im Angstzustand keine großen Entscheidungen. Warte, bis der Kopf klarer ist.",
+        ],
+      },
+      {
+        title: "Zurück in den Einflussbereich",
+        duration: "10 Minuten",
+        steps: [
+          "Schreib auf, was dir gerade Angst macht.",
+          "Teile es in zwei Spalten: Was kann ich beeinflussen – und was nicht?",
+          "Wähle eine kleine, konkrete Handlung aus der ersten Spalte.",
+          "Lass die zweite Spalte bewusst los. Sorge ohne Handlung erschöpft nur.",
+        ],
+      },
+    ],
+    reflection: [
+      "Welche Entscheidung hast du zuletzt aus Angst statt aus Klarheit getroffen?",
+      "Wo bist du bereit, für Sicherheit Freiheit aufzugeben – und ist der Preis es wert?",
+      "Wann hast du dich zuletzt ohnmächtig gefühlt – und was lag doch in deiner Hand?",
+    ],
+    takeaway:
+      "Angst verengt den Blick und macht lenkbar. Ruhe zurückzugewinnen ist kein Luxus, sondern Selbstschutz.",
+    relatedStage: 4,
+    video: null,
+  },
+
+  {
+    slug: "wiederholung-wahrheit",
+    title: "Wiederholung wird zur Wahrheit",
+    subtitle: "Warum Vertrautes glaubwürdig wirkt",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Eine Aussage kann vertraut und dadurch wahr wirken, obwohl sie nie bewiesen wurde.",
+    keyIdea:
+      "Dein Gehirn verwechselt Vertrautheit mit Wahrheit – was du oft hörst, fühlt sich richtig an, ganz ohne Beweis.",
+    intro:
+      "Es gibt einen gut belegten Effekt: Je öfter wir eine Aussage hören, desto wahrer erscheint sie uns – unabhängig davon, ob sie stimmt. Das Gehirn nimmt eine Abkürzung und verwechselt „kommt mir bekannt vor“ mit „ist wahr“. Slogans, Schlagwörter und ständig wiederkehrende Bilder nutzen genau das. Wer den Effekt kennt, misstraut der bloßen Vertrautheit.",
+    sections: [
+      {
+        heading: "Der Wiederholungseffekt",
+        body: "Beim ersten Hören sind wir skeptisch. Beim zehnten Mal fühlt sich dieselbe Aussage flüssig und vertraut an – und Flüssigkeit interpretiert das Gehirn als Wahrheit. Es braucht keine neuen Belege, nur Wiederholung. Deshalb wirken eingängige Slogans stärker als komplizierte, aber korrekte Erklärungen.",
+      },
+      {
+        heading: "Scheinbarer Konsens",
+        body: "Wenn viele dasselbe sagen, halten wir es für wahr – auch wenn alle es nur voneinander abgeschrieben haben. Eine einzige Quelle, oft genug zitiert, kann wie breiter Konsens aussehen. Die entscheidende Frage lautet nicht „Wie viele sagen es?“, sondern „Auf wie viele unabhängige Quellen geht es zurück?“",
+      },
+      {
+        heading: "Schlagwort statt Beweis",
+        body: "Ein griffiges Schlagwort ersetzt oft die Beweisführung. Es klingt gut, lässt sich leicht merken und weiterreichen – und genau das macht es gefährlich. Prüfe bei einem eingängigen Satz bewusst: Ist das ein Argument mit Begründung, oder nur eine oft wiederholte Behauptung im hübschen Gewand?",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Beleg-Test",
+        duration: "10 Minuten",
+        steps: [
+          "Nimm eine Aussage, die du für selbstverständlich wahr hältst.",
+          "Frag: Kenne ich einen echten Beleg – oder habe ich das nur oft gehört?",
+          "Suche nach der ursprünglichen Quelle, nicht nach weiteren Wiederholungen.",
+          "Wenn du keine Quelle findest, markiere die Aussage innerlich als „unbelegt“.",
+        ],
+      },
+      {
+        title: "Quellen zählen, nicht Stimmen",
+        duration: "im Alltag",
+        steps: [
+          "Wenn „alle“ etwas sagen, frag: Wie viele unabhängige Quellen sind das wirklich?",
+          "Prüfe, ob sich alle auf dieselbe eine Ursprungsmeldung berufen.",
+          "Unterscheide zwischen vielen Stimmen und vielen Belegen.",
+          "Miss der Zahl der Wiederholungen bewusst weniger Gewicht bei.",
+        ],
+      },
+    ],
+    reflection: [
+      "Welche Aussage glaubst du vor allem, weil du sie oft gehört hast?",
+      "Wann hat dich zuletzt ein griffiger Slogan überzeugt statt ein Argument?",
+      "Wie oft verwechselst du „viele sagen es“ mit „es ist belegt“?",
+    ],
+    takeaway:
+      "Vertrautheit ist kein Beweis. Was oft wiederholt wird, verdient dieselbe Prüfung wie beim ersten Mal.",
+    relatedStage: 1,
+    video: null,
+  },
+
+  {
+    slug: "ablenkung",
+    title: "Ablenkung & Überflutung",
+    subtitle: "Wenn Aufmerksamkeit selbst zum Ziel wird",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Nicht jede Beeinflussung verbreitet falsche Informationen – manchmal reicht es, die Aufmerksamkeit auf Nebensachen zu lenken.",
+    keyIdea:
+      "Man muss dir die Wahrheit nicht verbergen – es genügt, dich mit so viel Lärm zu fluten, dass du sie nie in Ruhe anschaust.",
+    intro:
+      "Es gibt eine Form der Beeinflussung, die ohne eine einzige Lüge auskommt: Ablenkung. Statt dir etwas vorzuenthalten, überflutet sie dich mit Reizen, Aufregern und ständig neuen Themen. Am Ende bist du erschöpft, zerstreut und hast den Fokus für das Wesentliche verloren. Aufmerksamkeit bewusst zu lenken – bei dir selbst – ist die Antwort darauf.",
+    sections: [
+      {
+        heading: "Empörung als Dauerzustand",
+        body: "Ein ständig wechselndes Karussell aus Aufregerthemen hält dich beschäftigt, ohne dass du je zur Ruhe kommst. Kaum hast du dich über das eine empört, kommt das nächste. Diese Dauererregung fühlt sich wie Anteilnahme an, führt aber zu nichts – außer zu Erschöpfung. Und ein erschöpfter Mensch prüft nicht mehr, er reagiert nur noch.",
+      },
+      {
+        heading: "Unterhaltung statt Einordnung",
+        body: "Vieles, was informiert aussieht, unterhält vor allem. Es liefert Aufregung, aber keine Einordnung, Reiz statt Zusammenhang. So entsteht das Gefühl, informiert zu sein, während das Verständnis auf der Strecke bleibt. Der Test ist einfach: Verstehe ich hinterher mehr – oder bin ich nur aufgewühlter?",
+      },
+      {
+        heading: "Informationsüberflutung",
+        body: "Zu viel Information wirkt wie zu wenig: Wenn alles gleich laut und dringend erscheint, kann man nichts mehr gewichten. Die schiere Menge lähmt das Urteil. Der Ausweg ist nicht mehr Konsum, sondern weniger und gezielter – ein paar gute Quellen in Ruhe, statt alles gleichzeitig im Halbschlaf.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Aufreger-Filter",
+        duration: "im Alltag",
+        steps: [
+          "Wenn dich etwas empört, frag: Betrifft das mein Leben – oder nur meine Erregung?",
+          "Frag: Kann ich hier irgendetwas tun? Wenn nein, ist es vor allem Ablenkung.",
+          "Lass bewusst ein Aufregerthema ziehen, ohne dich hineinziehen zu lassen.",
+          "Bemerke, wie schnell das nächste kommt – und wie wenig vom letzten bleibt.",
+        ],
+      },
+      {
+        title: "Fokus-Diät",
+        duration: "eine Woche",
+        steps: [
+          "Wähle zwei, drei verlässliche Quellen und lies nur diese – dafür in Ruhe.",
+          "Setz feste Zeiten für Nachrichten, statt den ganzen Tag zu grasen.",
+          "Beobachte, ob du weniger weißt – oder nur weniger aufgewühlt bist.",
+          "Nutze die freigewordene Aufmerksamkeit für eine Sache, die dir wirklich wichtig ist.",
+        ],
+      },
+    ],
+    reflection: [
+      "Worüber hast du dich diese Woche empört – und was ist davon geblieben?",
+      "Wann fühlst du dich informiert, obwohl du nur aufgewühlt bist?",
+      "Was würdest du klarer sehen, wenn weniger um deine Aufmerksamkeit buhlte?",
+    ],
+    takeaway:
+      "Ablenkung braucht keine Lüge. Deine Aufmerksamkeit bewusst zu schützen, ist eine Form der geistigen Selbstbestimmung.",
+    relatedStage: 3,
+    video: null,
+  },
+
+  {
+    slug: "kognitive-dissonanz",
+    title: "Kognitive Dissonanz",
+    subtitle: "Warum wir Unpassendes abwehren",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Menschen weisen Informationen oft nicht zurück, weil sie falsch sind, sondern weil sie das eigene Weltbild bedrohen.",
+    keyIdea:
+      "Es ist unangenehmer, sich selbst zu widersprechen, als die Wirklichkeit zu verbiegen – deshalb verbiegen wir lieber die Wirklichkeit.",
+    intro:
+      "Wenn eine neue Information nicht zu dem passt, was wir glauben, entsteht ein unangenehmes Spannungsgefühl – kognitive Dissonanz. Und weil wir Unbehagen scheuen, lösen wir die Spannung meist zur falschen Seite auf: Nicht die Information gewinnt, sondern das bestehende Weltbild. Das zu wissen, macht dich ehrlicher gegenüber dir selbst.",
+    sections: [
+      {
+        heading: "Warum wir Fehler ungern zugeben",
+        body: "Einen Irrtum einzugestehen bedroht das Bild, das wir von uns haben: klug, konsequent, auf der richtigen Seite. Also suchen wir Gründe, warum die unbequeme Information nicht zählt – statt unsere Sicht anzupassen. Je mehr wir in eine Überzeugung investiert haben, desto stärker verteidigen wir sie, gerade wenn sie wackelt.",
+      },
+      {
+        heading: "Selektive Wahrnehmung",
+        body: "Um die Spannung klein zu halten, filtert der Verstand: Passendes wird bemerkt und gewichtet, Unpassendes übersehen oder kleingeredet. So sammeln wir scheinbar immer mehr Belege für das, was wir ohnehin glauben. Nicht, weil die Belege überwiegen, sondern weil wir die anderen ausblenden.",
+      },
+      {
+        heading: "Abwertung Andersdenkender",
+        body: "Ein bequemer Weg, Dissonanz loszuwerden, ist, die Quelle abzuwerten: Wer anderer Meinung ist, ist eben dumm, böswillig oder manipuliert. Dann muss man sich mit dem Inhalt gar nicht mehr auseinandersetzen. Genau hier wird aus einem Denkfehler eine Spaltung – und die eigene Position immun gegen jede Korrektur.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Unbehagen-Marker",
+        duration: "im Moment",
+        steps: [
+          "Bemerke, wenn eine Information sofort Widerstand in dir auslöst.",
+          "Halt inne und frag: Wehre ich mich, weil es falsch ist – oder weil es unbequem ist?",
+          "Erlaube dir, die Information einen Moment gelten zu lassen, ohne sofort zu urteilen.",
+          "Beobachte, wie das Unbehagen selbst schon eine Information ist.",
+        ],
+      },
+      {
+        title: "Steelman statt Strohmann",
+        duration: "15 Minuten",
+        steps: [
+          "Nimm eine Position, die du ablehnst.",
+          "Formuliere ihre stärkste, klügste Fassung – nicht die schwächste.",
+          "Prüfe: Kann ich sie widerlegen, ohne die Menschen dahinter abzuwerten?",
+          "Bemerke, ob du wirklich das Argument kritisierst – oder nur die Gruppe.",
+        ],
+      },
+    ],
+    reflection: [
+      "Welche Information hast du zuletzt abgewehrt, weil sie unbequem war?",
+      "Wo wertest du Andersdenkende ab, statt ihre Argumente zu prüfen?",
+      "Wann hast du zuletzt öffentlich zugegeben, dich geirrt zu haben?",
+    ],
+    takeaway:
+      "Wir verteidigen oft nicht die Wahrheit, sondern unser Selbstbild. Unbehagen ist ein Hinweis, genauer hinzuschauen – nicht wegzuschauen.",
+    relatedStage: 3,
+    video: null,
+  },
+
+  {
+    slug: "normalisierung",
+    title: "Normalisierung",
+    subtitle: "Wie das Ungewöhnliche selbstverständlich wird",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Was häufig genug gezeigt, gesagt oder praktiziert wird, wirkt irgendwann selbstverständlich – auch wenn es das nicht ist.",
+    keyIdea:
+      "Große Veränderungen geschehen selten mit einem Knall, sondern in kleinen Schritten, an die man sich einzeln gewöhnt.",
+    intro:
+      "Der Mensch gewöhnt sich an fast alles, wenn es nur langsam genug kommt. Was gestern noch undenkbar war, wird durch stetige Wiederholung erst hinnehmbar, dann normal, schließlich selbstverständlich. Diese schleichende Gewöhnung ist wertneutral – sie kann Gutes wie Bedenkliches tragen. Der Schutz liegt darin, die Verschiebung bewusst zu bemerken.",
+    sections: [
+      {
+        heading: "Der Frosch im langsam heißen Wasser",
+        body: "Eine große Veränderung auf einen Schlag würde Widerstand wecken. In kleinen Schritten dagegen rutscht dieselbe Veränderung durch, weil jeder einzelne Schritt gering erscheint. Man passt sich Stück für Stück an – und merkt am Ende nicht, wie weit man gekommen ist. Nicht der Bruch normalisiert, sondern die kleine, ständige Verschiebung.",
+      },
+      {
+        heading: "„Das war doch schon immer so“",
+        body: "Ist etwas erst einmal normal, verschwindet die Erinnerung, dass es auch anders war. „Das war doch schon immer so“ ist der Satz, mit dem Gewöhnung sich selbst tarnt. Dabei stimmt es fast nie – vieles, was heute selbstverständlich wirkt, war vor kurzem noch strittig oder unbekannt.",
+      },
+      {
+        heading: "Grenzen verschieben sich unbemerkt",
+        body: "Was gesellschaftlich sagbar, machbar oder üblich ist, verschiebt sich ständig – mal zum Besseren, mal zum Schlechteren. Der Punkt ist nicht, jede Veränderung abzulehnen, sondern sie überhaupt zu bemerken. Wer die Verschiebung sieht, kann entscheiden, ob er sie mitträgt – statt sie nur unbewusst zu übernehmen.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Der Zeitsprung",
+        duration: "10 Minuten",
+        steps: [
+          "Wähle etwas, das dir heute völlig normal vorkommt.",
+          "Frag: Hätte ich das vor zehn Jahren auch normal gefunden?",
+          "Wenn nein: Wann und wie hat sich das verschoben?",
+          "Entscheide bewusst, ob du diese Normalität teilst – oder nur übernommen hast.",
+        ],
+      },
+      {
+        title: "Die Erst-Reaktion festhalten",
+        duration: "im Alltag",
+        steps: [
+          "Wenn dir etwas beim ersten Mal seltsam vorkommt, notiere dieses erste Gefühl.",
+          "Beobachte, ob es dir nach dem zehnten Mal noch seltsam vorkommt.",
+          "Frag: Hat sich die Sache verändert – oder nur meine Gewöhnung?",
+          "Nutze die erste, noch wache Reaktion als wertvolle Information.",
+        ],
+      },
+    ],
+    reflection: [
+      "Was findest du heute normal, das dich früher gestört hätte?",
+      "Wo sagst du „das war schon immer so“, ohne es je geprüft zu haben?",
+      "Welche Gewöhnung möchtest du bewusst nicht mitmachen?",
+    ],
+    takeaway:
+      "Gewöhnung tarnt Veränderung als Selbstverständlichkeit. Wer die Verschiebung bemerkt, behält die Wahl, ob er sie mitträgt.",
+    relatedStage: 1,
+    video: null,
+  },
+
+  {
+    slug: "bildmacht",
+    title: "Bilder statt Argumente",
+    subtitle: "Warum ein Bild schneller wirkt als ein Beweis",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Bilder erreichen Menschen oft schneller als Fakten – und ein Ausschnitt kann eine ganze Wirklichkeit ersetzen.",
+    keyIdea:
+      "Ein Bild fühlt sich an wie ein Beweis, obwohl es nur ein Ausschnitt ist – gewählt von jemandem, mit einer Absicht.",
+    intro:
+      "Bilder gehen direkt ins Gefühl, oft am Verstand vorbei. Sie bleiben länger haften als jeder Satz und wirken wie unmittelbare Wirklichkeit. Doch jedes Bild ist eine Auswahl: ein Ausschnitt, eine Perspektive, ein Moment aus vielen. Wer das mitdenkt, lässt sich von Bildern bewegen, ohne sich von ihnen überrumpeln zu lassen.",
+    sections: [
+      {
+        heading: "Der Ausschnitt ist die Botschaft",
+        body: "Was außerhalb des Bildrands liegt, existiert für den Betrachter nicht. Eine enge Aufnahme lässt eine kleine Gruppe riesig wirken – eine weite lässt eine große Menge verloren aussehen. Dasselbe Ereignis kann friedlich, bedrohlich, leer oder überwältigend erscheinen, je nachdem, welcher Ausschnitt gewählt wurde. Die Auswahl trifft immer jemand.",
+      },
+      {
+        heading: "Moment, Mimik, Musik",
+        body: "Ein einziger Sekundenbruchteil kann einen Menschen sympathisch oder abstoßend zeigen – ein Lächeln oder ein verzerrtes Gesicht, beides echt, beides selektiv. Kommt Musik dazu, wird das Gefühl vollends gesteuert: Dieselben Bilder wirken mit bedrohlicher Musik ganz anders als mit ruhiger. Die Inszenierung ist Teil der Botschaft.",
+      },
+      {
+        heading: "Bilder als Erinnerungsträger",
+        body: "Starke Bilder brennen sich ein und werden zur Erinnerung an ein ganzes Ereignis – auch wenn sie nur einen winzigen, untypischen Teil zeigten. Später erinnern wir uns an das Bild, nicht an die Zusammenhänge. So kann ein einzelnes Foto ein Urteil prägen, das durch keine spätere Einordnung mehr zu korrigieren ist.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Über den Rand hinausdenken",
+        duration: "im Alltag",
+        steps: [
+          "Bei einem wirkmächtigen Bild frag: Was könnte außerhalb des Ausschnitts liegen?",
+          "Frag: Warum genau dieser Moment, diese Perspektive, dieser Ausdruck?",
+          "Stell dir vor, wie dasselbe Motiv aus anderem Winkel aussähe.",
+          "Trenne das Gefühl, das das Bild weckt, von der Frage, was es wirklich belegt.",
+        ],
+      },
+      {
+        title: "Ton weg, dann urteilen",
+        duration: "5 Minuten",
+        steps: [
+          "Schau ein emotionales Video einmal ohne Ton.",
+          "Bemerke, wie viel schwächer die Wirkung ohne Musik ist.",
+          "Frag: Was bleibt an Fakten übrig, wenn die Inszenierung wegfällt?",
+          "Bilde dein Urteil aus dem Rest – nicht aus der Stimmung.",
+        ],
+      },
+    ],
+    reflection: [
+      "Welches Bild hat zuletzt dein Urteil geprägt – und was zeigte es wirklich?",
+      "Wie oft hältst du einen Ausschnitt für die ganze Wirklichkeit?",
+      "Wann hat dich Musik unter einem Video stärker bewegt als der Inhalt?",
+    ],
+    takeaway:
+      "Ein Bild ist ein gewählter Ausschnitt, kein vollständiger Beweis. Frag immer, was außerhalb des Rands liegt – und wer ihn gesetzt hat.",
+    relatedStage: 3,
+    video: null,
+  },
+
+  {
+    slug: "identitaet-und-meinung",
+    title: "Identität & Meinung",
+    subtitle: "Wenn Kritik als Angriff auf dich wirkt",
+    category: "Mentale Selbstverteidigung",
+    summary:
+      "Sobald eine Meinung Teil deiner Identität wird, fühlt sich Kritik daran wie ein persönlicher Angriff an.",
+    keyIdea:
+      "Solange du eine Meinung hast, kannst du sie prüfen. Sobald die Meinung dich hat, verteidigst du sie wie dein Leben.",
+    intro:
+      "Meinungen sind eigentlich Werkzeuge: Man nimmt sie an, prüft sie, legt sie bei Bedarf ab. Doch manche Meinungen verwachsen mit unserer Identität – mit einer Gruppe, einem Lager, einer Lebensweise, der wir uns zugehörig fühlen. Dann ist jede Kritik an der Meinung ein Angriff auf uns selbst. Die Kernfrage lautet: Hast du eine Meinung – oder hat die Meinung inzwischen dich?",
+    sections: [
+      {
+        heading: "Meinung wird zu Zugehörigkeit",
+        body: "Ob politisches Lager, Berufsgruppe, Bewegung, Marke, Lebensstil oder spirituelle Gemeinschaft – überall verschmelzen Meinungen mit Zugehörigkeit. Eine Position zu teilen heißt dann: dazuzugehören. Sie infrage zu stellen fühlt sich an, als riskierte man den Platz in der Gruppe. Deshalb prüft man solche Meinungen kaum noch – der Preis wäre zu hoch.",
+      },
+      {
+        heading: "Warum Kritik dann schmerzt",
+        body: "Wenn eine Überzeugung Teil deines Selbstbildes ist, aktiviert ein Gegenargument dieselbe Abwehr wie ein persönlicher Angriff. Der Körper geht in Verteidigung, der Verstand sucht Gegenargumente statt Wahrheit. Das ist kein Zeichen von Sturheit, sondern von Verschmelzung: Du verteidigst nicht die Sache, sondern dich.",
+      },
+      {
+        heading: "Meinungen wieder zu Werkzeugen machen",
+        body: "Die Freiheit liegt darin, einen Abstand zwischen dich und deine Meinungen zu legen – so wie du gelernt hast, zwischen dich und deine Gedanken zu treten. Eine Überzeugung ändern zu können ist keine Schwäche, sondern Reife. Du bleibst du, auch wenn eine Meinung geht. Was bleibt, bist nicht du minus eine Ansicht – sondern du, eine Illusion leichter.",
+      },
+    ],
+    exercises: [
+      {
+        title: "Identität oder Ansicht?",
+        duration: "10 Minuten",
+        steps: [
+          "Nimm eine Überzeugung, bei der Kritik dich schnell wütend macht.",
+          "Frag: Verteidige ich hier ein Argument – oder ein Stück meiner Identität?",
+          "Sag innerlich: „Ich bemerke die Meinung, dass …“ – statt „Ich bin …“.",
+          "Spür, ob dadurch ein wenig Abstand und Ruhe entsteht.",
+        ],
+      },
+      {
+        title: "Der ehrliche Preis",
+        duration: "15 Minuten",
+        steps: [
+          "Wähle eine Position, die eng mit deiner Gruppe verbunden ist.",
+          "Frag ehrlich: Was würde es mich kosten, hier anderer Meinung zu sein?",
+          "Unterscheide: Halte ich daran fest, weil es stimmt – oder wegen der Zugehörigkeit?",
+          "Erlaube dir, eine Sache zu prüfen, ohne die Gruppe zu verraten.",
+        ],
+      },
+    ],
+    reflection: [
+      "Bei welcher Meinung fühlt sich Widerspruch wie ein persönlicher Angriff an?",
+      "Welche Überzeugung könntest du nicht ablegen, ohne eine Zugehörigkeit zu riskieren?",
+      "Hast du deine Meinungen – oder haben sie dich?",
+    ],
+    takeaway:
+      "Eine Meinung ist ein Werkzeug, kein Körperteil. Wer sie prüfen kann, ohne sich bedroht zu fühlen, ist wirklich frei im Denken.",
+    relatedStage: 6,
+    video: null,
+  },
 ];
 
 export function getDeepDive(slug: string): DeepDive | undefined {
