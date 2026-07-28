@@ -27,14 +27,14 @@ inhaltlich zusammen.
 
 ## Status
 
-### Stufen
-- [ ] 01 – Autopilot
-- [ ] 02 – Erwachen
-- [ ] 03 – Selbstbeobachtung
-- [ ] 04 – Emotionale Reifung
-- [ ] 05 – Schöpferkraft
-- [ ] 06 – Innere Ausrichtung
-- [ ] 07 – Meisterschaft
+### Stufen (Aufnahme = Video online; Skript ✍️ = Sprechtext liegt vor)
+- [ ] 01 – Autopilot ✍️
+- [ ] 02 – Erwachen ✍️
+- [ ] 03 – Selbstbeobachtung ✍️
+- [ ] 04 – Emotionale Reifung ✍️
+- [ ] 05 – Schöpferkraft ✍️
+- [ ] 06 – Innere Ausrichtung ✍️
+- [ ] 07 – Meisterschaft ✍️
 
 ### Praxis (Aufnahme = Video/MP3 online; Skript ✍️ = Sprechtext liegt vor)
 - [x] Atembeobachtung *(Video bereits online)*
@@ -51,19 +51,20 @@ inhaltlich zusammen.
 - [ ] Präsenz-Spaziergang ✍️
 - [ ] Die tägliche Rückkehr ✍️
 
-### Vertiefungen
-- [ ] Automatische Gedanken
-- [ ] Kognitive Verzerrungen
-- [ ] Die Reiz-Reaktions-Lücke
-- [ ] Grübeln & Gedankenkreisen
-- [ ] Konditionierung
-- [ ] Kernüberzeugungen
-- [ ] Der innere Kritiker
-- [ ] Selbstmitgefühl
-- [ ] Neuroplastizität
-- [ ] Emotionsregulation
-- [ ] Werte & Ziele
-- [ ] Muster, Körper & Gesundheit
+### Vertiefungen (Aufnahme = Video online; Skript ✍️ = Sprechtext liegt vor)
+- [ ] Automatische Gedanken ✍️
+- [ ] Konditionierung ✍️
+- [ ] Kognitive Verzerrungen ✍️
+- [ ] Kernüberzeugungen ✍️
+- [ ] Der innere Kritiker ✍️
+- [ ] Neuroplastizität ✍️
+- [ ] Die Reiz-Reaktions-Lücke ✍️
+- [ ] Grübeln & Gedankenkreisen ✍️
+- [ ] Emotionsregulation ✍️
+- [ ] Selbstmitgefühl ✍️
+- [ ] Werte & Ziele ✍️
+- [ ] Muster, Körper & Gesundheit ✍️
+- [ ] Integration & Weitergabe ✍️
 
 ## Wenn ein Video/Audio fertig ist
 
