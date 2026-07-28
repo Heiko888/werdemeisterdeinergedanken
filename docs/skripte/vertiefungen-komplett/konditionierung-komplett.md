@@ -1,0 +1,17 @@
+# Vertiefung – Konditionierung (komplett)
+
+**Format:** Wort-für-Wort (Teleprompter) · **Ziellänge:** 3–5 Min · **Stufe 1**
+
+---
+
+Ein bestimmter Tonfall. Ein Gesichtsausdruck. Eine ganz bestimmte Situation. Und schon bist du angespannt – obwohl objektiv gerade gar nichts passiert ist. Kennst du das? Das ist keine Charakterschwäche. Das ist Konditionierung. Und das Gute daran: Was gelernt wurde, kann auch wieder umgelernt werden.
+
+Schauen wir uns an, wie dieses Lernen funktioniert. Die erste Form nennt man klassische Konditionierung. Du kennst vielleicht Pawlows Hunde: Sie fingen an zu speicheln, sobald eine Glocke klingelte – weil sie den Klang mit Futter gekoppelt hatten. Genau dasselbe macht dein System die ganze Zeit. Es koppelt neutrale Reize an Gefühle. Ein bestimmter Ort, ein Lied, eine Stimme – und plötzlich fühlst du Anspannung oder Wärme. Nicht wegen des Reizes selbst. Sondern wegen der Verbindung, die irgendwann einmal entstanden ist.
+
+Die zweite Form heißt operante Konditionierung. Sie ist genauso einfach: Verhalten, das belohnt wird, nimmt zu. Verhalten, das bestraft oder gemieden wird, nimmt ab. Nimm ein Kind, das immer dann Zuwendung bekam, wenn es sich angepasst und funktioniert hat. Dieses Kind lernt einen tiefen Satz: „Ich muss funktionieren, um geliebt zu werden." Und dieses Muster läuft dann weiter – bis ins Erwachsenenalter. Auch dann noch, wenn die alte Belohnung längst weggefallen ist.
+
+Aber jetzt kommt die entscheidende und befreiende Nachricht: Muster können auch wieder verblassen. Psychologen nennen das Löschung. Wenn ein konditionierter Reiz immer wieder auftritt, aber die alte, gefürchtete Folge ausbleibt, dann schwächt sich die Reaktion ab. Genau das passiert, wenn du eine alte Angst bewusst aushältst und dabei merkst: Es passiert ja gar nichts Schlimmes. Merk dir das gut – nicht das Wegdrücken löscht ein Muster. Neue Erfahrung löscht es.
+
+Wie kannst du das nutzen? Fang damit an, deine Auslöser zu kartieren. Notiere drei Situationen, in denen du regelmäßig überreagierst. Und finde zu jeder den konkreten Auslöser – ein Wort, ein Ton, ein Blick, ein Ort. Frag dich dann: Wann könnte diese Kopplung entstanden sein? Und stimmt die alte Erwartung eigentlich heute noch?
+
+Nimm diesen Gedanken mit: Konditionierung ist gelerntes Reagieren – kein Schicksal. Neue Erfahrung schreibt die alte Kopplung um.

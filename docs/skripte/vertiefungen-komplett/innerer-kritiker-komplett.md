@@ -1,0 +1,17 @@
+# Vertiefung – Der innere Kritiker (komplett)
+
+**Format:** Wort-für-Wort (Teleprompter) · **Ziellänge:** 4–5 Min · **Stufe 4**
+
+---
+
+„Streng dich mehr an." „Das war peinlich." „Andere können das viel besser." Kennst du diese Stimme? Fast jeder Mensch trägt sie in sich – eine innere Stimme, die urteilt, vergleicht und abwertet. Sie kann so vertraut sein, dass wir sie für unsere eigene Wahrheit halten. Aber sie ist etwas anderes. Und der wichtigste Satz gleich zu Beginn: Der innere Kritiker ist kein Feind. Er ist ein alter Beschützer mit veralteten Methoden.
+
+Woher stammt diese Stimme überhaupt? Sehr oft ist der innere Kritiker die verinnerlichte Stimme von Bezugspersonen. Oder einer Umgebung, in der Leistung Sicherheit versprochen hat. Und – das ist wichtig – er hatte einmal einen Zweck. Wer sich selbst antreibt und kleinhält, der eckt weniger an. Der wird seltener enttäuscht. Deshalb ist der Kritiker nicht einfach „schlecht". Er ist veraltet. Er wendet eine Strategie an, die vielleicht mal geholfen hat und die heute nur noch schadet.
+
+Und jetzt der häufigste Fehler im Umgang mit ihm: gegen den Kritiker anzukämpfen. Das macht ihn nämlich meist nur lauter. Widerstand nährt ihn. Viel wirksamer ist etwas anderes: ihn zu erkennen und ihm die Autorität zu entziehen. Innerlich einfach sagen: „Ah, da ist wieder die strenge Stimme." Du musst sie nicht besiegen. Du musst nur aufhören, jedes ihrer Worte für bare Münze zu nehmen.
+
+Und dann kannst du sogar noch einen Schritt weitergehen. Denn neben dem Kritiker lässt sich eine zweite Stimme kultivieren: die eines wohlwollenden, ehrlichen Mentors. Und lass mich das klarstellen, weil es oft falsch verstanden wird: Selbstmitgefühl ist kein Weichspülen. Es ist die realistischere Haltung. Denn die Forschung ist da eindeutig – Menschen wachsen nachweislich eher durch Ermutigung als durch Abwertung.
+
+Eine Übung dazu: Externalisiere deinen Kritiker. Schreib einen typischen Satz von ihm wörtlich auf. Gib der Stimme einen Namen oder eine Figur – so wird sie zu einem Gegenüber und ist nicht mehr einfach du selbst. Und dann frag sie innerlich: „Wovor willst du mich eigentlich schützen?" Dank ihr für die gute Absicht. Und entscheide dann ganz bewusst, ob ihr Rat heute überhaupt noch taugt.
+
+Nimm diesen Gedanken mit: Der innere Kritiker ist ein alter Beschützer. Du besiegst ihn nicht – du nimmst ihm die Autorität.

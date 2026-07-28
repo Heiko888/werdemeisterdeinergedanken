@@ -1,0 +1,17 @@
+# Vertiefung – Selbstmitgefühl (komplett)
+
+**Format:** Wort-für-Wort (Teleprompter) · **Ziellänge:** 4–5 Min · **Stufe 4**
+
+---
+
+Viele Menschen glauben insgeheim, sie müssten hart mit sich selbst sein. Streng. Fordernd. Als wäre die Selbstkritik der Motor, der uns antreibt und besser macht. Als würden wir sofort nachlassen, wenn wir freundlich zu uns wären. Aber die Forschung zeigt genau das Gegenteil. Menschen, die sich selbst mit Freundlichkeit begegnen, sind widerstandsfähiger. Sie lernen schneller aus Fehlern. Und sie geben seltener auf. Selbstmitgefühl ist kein Nachgeben. Es ist innere Stärke.
+
+Selbstmitgefühl besteht aus drei Bausteinen. Der erste ist Selbstfreundlichkeit statt Selbstverurteilung – dass du in schweren Momenten auf deiner eigenen Seite stehst statt gegen dich. Der zweite ist das Bewusstsein für das gemeinsame Menschsein: „Auch andere scheitern. Auch andere leiden. Ich bin mit diesem Schmerz nicht allein." Und der dritte ist Achtsamkeit – das klare Hinschauen, ohne gleich alles zu dramatisieren. Diese drei zusammen bilden eine Haltung, die dich wirklich trägt.
+
+Und lass mich mit einem hartnäckigen Missverständnis aufräumen. Selbstmitgefühl ist kein Weichspüler. Es beschönigt gar nichts. Es sagt nicht „alles ist super". Es sagt: „Das war schmerzhaft. Und ich stehe trotzdem zu mir." Und gerade weil es die Wahrheit nicht wegdrückt, macht es dich handlungsfähig. Während Selbstverurteilung meistens genau das Gegenteil bewirkt – sie lähmt dich und treibt dich in die Vermeidung.
+
+Wie übt man das? Der einfachste Einstieg ist eine einzige Frage: „Was würde ich jetzt einem guten Freund in genau derselben Lage sagen?" Denn fast immer sind wir zu anderen wärmer und klüger, als wir es zu uns selbst je wären. Diese Wärme, die du für andere so selbstverständlich hast, bewusst nach innen zu richten – das ist der ganze Kern der Übung. Am Anfang fühlt sich das ungewohnt an, fast fremd. Mit der Zeit wird es selbstverständlich.
+
+Eine konkrete Übung für den schweren Moment – die Selbstmitgefühls-Pause. Sie besteht aus drei Sätzen. Erster Satz: „Das ist gerade schwer." Das ist die Achtsamkeit. Zweiter Satz: „Schwere Momente gehören zum Menschsein – ich bin nicht allein damit." Das ist das gemeinsame Menschsein. Und dritter Satz: „Möge ich freundlich zu mir sein." Das ist die Selbstfreundlichkeit. Atme ruhig und lass diese drei Sätze wirken, bevor du weitermachst.
+
+Nimm diesen Gedanken mit: Freundlichkeit zu dir ist kein Nachlassen, sondern der stabilere Boden. Menschen wachsen durch Ermutigung, nicht durch Abwertung.
