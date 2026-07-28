@@ -56,7 +56,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
 .eyebrow{ margin-top:12mm; display:inline-flex; align-items:center; gap:9px;
   font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-300); font-weight:600; }
 .eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--gold-400); display:inline-block; }
-.title{ font-size:56px; line-height:1.03; font-weight:600; margin-top:13px; letter-spacing:-.5px;
+.title{ font-size:48px; line-height:1.08; font-weight:600; margin-top:13px; letter-spacing:-.4px;
   text-shadow:0 2px 30px rgba(3,8,20,.75); }
 .title em{ font-style:italic; color:var(--teal-300); font-weight:500; }
 .promise{ margin-top:16px; font-size:17.5px; line-height:1.5; color:#d3ddf0; max-width:150mm;

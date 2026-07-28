@@ -103,7 +103,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .cover .eyebrow{ margin-top:13mm; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-400); font-weight:600;
   display:inline-flex; align-items:center; gap:9px; }
 .cover .eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--gold-400); }
-.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:56px; line-height:1.03; margin-top:12px; }
+.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:48px; line-height:1.08; margin-top:12px; }
 .cover h1 em{ font-style:italic; color:var(--teal-300); font-weight:500; }
 .cover .pr{ margin-top:15px; font-size:16px; line-height:1.5; color:#cdd8ec; max-width:150mm; text-shadow:0 1px 16px rgba(3,8,20,.8); }
 .cover .foot{ margin-top:auto; display:flex; justify-content:space-between; align-items:center;
