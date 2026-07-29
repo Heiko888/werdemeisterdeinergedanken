@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/die-7-stufen",
     "/ueber-mich",
+    "/bewusstseinstest",
     "/blog",
     "/kontakt",
     "/impressum",

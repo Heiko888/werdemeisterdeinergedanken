@@ -38,8 +38,10 @@ function isRateLimited(ip: string): boolean {
 
 function clientIp(request: Request): string {
   return (
-    request.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+    // Siehe kontakt/route.ts: x-real-ip zuerst (nginx-gesetzt, nicht
+    // fälschbar); x-forwarded-for nur als Fallback und dort den letzten Eintrag.
     request.headers.get("x-real-ip") ||
+    request.headers.get("x-forwarded-for")?.split(",").pop()?.trim() ||
     "unknown"
   );
 }

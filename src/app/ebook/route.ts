@@ -8,7 +8,13 @@ export const dynamic = "force-static";
  * direkt zum Download aus.
  */
 export async function GET() {
-  const pdf = getEbookPdfBytes();
+  let pdf: Uint8Array;
+  try {
+    pdf = getEbookPdfBytes();
+  } catch {
+    // Datei fehlt o. Ä. → sauberes 404 statt 500.
+    return new Response("Nicht gefunden", { status: 404 });
+  }
 
   return new Response(pdf as BodyInit, {
     headers: {
