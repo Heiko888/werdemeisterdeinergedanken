@@ -17,11 +17,6 @@ export default function PrivacyPage() {
       <section className="pb-8">
         <Container size="narrow">
           <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card sm:p-10">
-            <p className="mb-6 rounded-xl border border-gold-500/40 bg-gold-300/20 p-4 text-sm text-ink-soft">
-              Hinweis: Diese Datenschutzerklärung ist eine anpassbare Vorlage.
-              Bitte an die tatsächlich eingesetzten Dienste (Hosting, Analytics,
-              Newsletter, Formulare) anpassen. Sie ersetzt keine Rechtsberatung.
-            </p>
             <Prose>
               <h2>1. Verantwortlicher</h2>
               <p>
@@ -29,7 +24,11 @@ export default function PrivacyPage() {
                 <br />
                 {site.author}
                 <br />
-                [Anschrift]
+                Dompfaffenweg 30
+                <br />
+                63920 Großheubach
+                <br />
+                Deutschland
                 <br />
                 E-Mail: <a href={`mailto:${site.email}`}>{site.email}</a>
               </p>
@@ -45,11 +44,12 @@ export default function PrivacyPage() {
 
               <h2>3. Hosting</h2>
               <p>
-                Diese Website wird bei [Hosting-Anbieter] gehostet. Der Anbieter
-                verarbeitet in unserem Auftrag Server-Logfiles (u. a. IP-Adresse,
-                Datum/Uhrzeit des Zugriffs, aufgerufene Seite). Rechtsgrundlage
-                ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer
-                sicheren Bereitstellung).
+                Diese Website wird bei der Hetzner Online GmbH,
+                Industriestr. 25, 91710 Gunzenhausen, Deutschland gehostet. Der
+                Anbieter verarbeitet in unserem Auftrag Server-Logfiles (u. a.
+                IP-Adresse, Datum/Uhrzeit des Zugriffs, aufgerufene Seite).
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+                Interesse an einer sicheren Bereitstellung).
               </p>
 
               <h2>4. Server-Logfiles</h2>
@@ -78,8 +78,10 @@ export default function PrivacyPage() {
                 Für den Versand des E-Books bzw. Newsletters verwenden wir das
                 Double-Opt-in-Verfahren. Es werden nur die von dir angegebenen
                 Daten (E-Mail-Adresse) verarbeitet. Du kannst die Einwilligung
-                jederzeit widerrufen, z. B. über den Abmeldelink. Als Dienst
-                kommt [Newsletter-Anbieter] zum Einsatz.
+                jederzeit widerrufen, z. B. über den Abmeldelink. Für den
+                E-Mail-Versand nutzen wir den Dienst Resend (Resend, Inc., USA);
+                die Speicherung deiner Anmeldedaten erfolgt bei unserem
+                Backend-Dienstleister Supabase.
               </p>
 
               <h2>7. Deine Rechte</h2>
