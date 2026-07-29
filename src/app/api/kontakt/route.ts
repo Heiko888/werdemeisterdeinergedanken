@@ -42,11 +42,13 @@ function isRateLimited(ip: string): boolean {
 }
 
 function clientIp(request: Request): string {
-  return (
-    request.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
-    request.headers.get("x-real-ip") ||
-    "unknown"
-  );
+  // `x-real-ip` wird von unserem nginx zuverlässig aus $remote_addr gesetzt
+  // und lässt sich vom Client nicht fälschen – daher zuerst prüfen. Der
+  // `x-forwarded-for`-Wert ist client-manipulierbar; wir nehmen davon nur den
+  // letzten (proxy-nächsten) Eintrag als Fallback, nicht den ersten.
+  const xff = request.headers.get("x-forwarded-for");
+  const xffLast = xff?.split(",").pop()?.trim();
+  return request.headers.get("x-real-ip") || xffLast || "unknown";
 }
 
 function isEmail(value: string): boolean {

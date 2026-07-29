@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, Play, Download } from "@/components/ui/Icon";
 import { deepDives, getDeepDive } from "@/lib/deep-dives";
 import { stages } from "@/lib/content";
+import { hasStaticPdf } from "@/lib/pdf/static-pdf";
 import { JournalReflection } from "@/components/members/JournalReflection";
 
 export function generateStaticParams() {
@@ -162,13 +163,15 @@ export default async function DeepDivePage({
                 ))}
               </div>
 
-              <a
-                href={`/mitglieder/wissen/${dive.slug}/lektion`}
-                className="inline-flex items-center gap-2 self-start rounded-full border border-ink/20 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
-              >
-                <Download />
-                Diese Vertiefung als PDF
-              </a>
+              {hasStaticPdf(`vertiefung-${dive.slug}`) && (
+                <a
+                  href={`/mitglieder/wissen/${dive.slug}/lektion`}
+                  className="inline-flex items-center gap-2 self-start rounded-full border border-ink/20 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                >
+                  <Download />
+                  Diese Vertiefung als PDF
+                </a>
+              )}
             </div>
           )}
 

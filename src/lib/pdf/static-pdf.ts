@@ -29,3 +29,12 @@ export function getStaticPdf(name: string): Uint8Array | null {
     return null;
   }
 }
+
+/**
+ * Prüft, ob ein Mitglieder-PDF vorhanden ist, ohne es (dauerhaft) zu laden.
+ * Für Seiten, die einen Download-Button nur dann zeigen sollen, wenn die
+ * Datei wirklich existiert – sonst liefe der Download ins 404.
+ */
+export function hasStaticPdf(name: string): boolean {
+  return getStaticPdf(name) !== null;
+}
