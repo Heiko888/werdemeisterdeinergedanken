@@ -63,7 +63,7 @@ export function ContactForm() {
         <p className="prose-lead max-w-md">
           Ich melde mich so bald wie möglich bei dir. Bis dahin: Bleib bewusst.
         </p>
-        <p className="text-sm text-ink-soft/60">
+        <p className="text-sm text-ink-muted">
           Lieber direkt?{" "}
           <a
             href={`mailto:${site.email}`}
@@ -143,7 +143,7 @@ export function ContactForm() {
         />
       </div>
 
-      <label className="flex items-start gap-2 text-xs text-ink-soft/60">
+      <label className="flex items-start gap-2 text-xs text-ink-muted">
         <input type="checkbox" required className="mt-0.5 accent-brand-500" />
         <span>
           Ich habe die{" "}

@@ -70,7 +70,7 @@ export function PhotoFrame({
           {/* feiner Innenrahmen */}
           <div className="absolute inset-3 rounded-[2px] border border-ink/10" />
           {/* Caption */}
-          <figcaption className="absolute bottom-4 left-4 flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.2em] text-ink-soft/60">
+          <figcaption className="absolute bottom-4 left-4 flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.2em] text-ink-muted">
             <span className="h-px w-6 bg-accent/50" />
             {caption}
           </figcaption>

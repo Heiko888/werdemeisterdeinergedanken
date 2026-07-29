@@ -86,7 +86,7 @@ export function JournalReflection({
         <h2 className="font-display text-xl font-medium text-ink">
           Zum Innehalten
         </h2>
-        <p className="text-sm text-ink-soft/60">
+        <p className="text-sm text-ink-muted">
           Schreib deine Gedanken direkt hierher – sie werden automatisch in
           deinem Bereich gespeichert und sind nur für dich sichtbar.
         </p>
@@ -111,7 +111,7 @@ export function JournalReflection({
             <span
               className={cn(
                 "ml-8 h-4 self-start text-xs transition-colors",
-                states[i] === "saved" ? "text-accent" : "text-ink-soft/40",
+                states[i] === "saved" ? "text-accent" : "text-ink-muted",
               )}
             >
               {states[i] === "saving"

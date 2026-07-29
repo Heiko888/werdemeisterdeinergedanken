@@ -37,7 +37,7 @@ export function PageHero({
         </Reveal>
         {intro && (
           <Reveal delay={140}>
-            <p className="max-w-2xl text-[1.05rem] leading-relaxed text-ink-soft/75">
+            <p className="max-w-2xl text-[1.05rem] leading-relaxed text-ink-mid">
               {intro}
             </p>
           </Reveal>

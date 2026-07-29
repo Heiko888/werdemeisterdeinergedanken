@@ -133,7 +133,7 @@ export function AuthForm({
             {!pending && <ArrowRight />}
           </Button>
 
-          <p className="text-center text-xs text-ink-soft/60">
+          <p className="text-center text-xs text-ink-muted">
             {!allowRegister ? (
               <>
                 Noch keinen Zugang?{" "}

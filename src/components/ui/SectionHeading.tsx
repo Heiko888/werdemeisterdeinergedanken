@@ -48,7 +48,7 @@ export function SectionHeading({
       {(eyebrow || index) && (
         <div className="flex items-baseline gap-3">
           {index && (
-            <span className="font-display text-sm italic text-ink-soft/70">
+            <span className="font-display text-sm italic text-ink-mid">
               {index}
             </span>
           )}
@@ -61,7 +61,7 @@ export function SectionHeading({
       {intro && (
         <p
           className={cn(
-            "max-w-2xl text-[1.05rem] leading-relaxed text-ink-soft/75",
+            "max-w-2xl text-[1.05rem] leading-relaxed text-ink-mid",
             align === "center" && "mx-auto",
           )}
         >

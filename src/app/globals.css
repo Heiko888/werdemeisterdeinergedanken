@@ -70,7 +70,13 @@
   --color-surface: #ffffff;     /* weiße Karten / Kontrast-Sektionen */
   --color-surface-2: #efece2;   /* tieferes Creme für Wechsel-Sektionen */
   --color-ink: #16231f;         /* Überschriften / Text (tiefes Tannengrün-Schwarz) */
-  --color-ink-soft: #48524e;    /* ruhiger Fließtext */
+  --color-ink-soft: #48524e;    /* ruhiger Fließtext (voll ~7,4:1 auf paper) */
+  /* WCAG-AA-taugliche Mitteltöne für sekundären Text – ersetzen die früheren
+     text-ink-muted…/80-Opacity-Stufen, die auf hellem Grund unter 4,5:1
+     fielen. Beide Werte sind solide (ohne Opacity) und erreichen ≥4,5:1 auf
+     allen drei hellen Flächen (paper #f6f4ee, surface #fff, surface-2 #efece2). */
+  --color-ink-mid: #565f5b;     /* sekundärer Fließtext – ~5,6:1 auf paper */
+  --color-ink-muted: #626b67;   /* tertiär / Bildunterschriften – ~4,7:1 auf paper */
   --color-accent: #4f9e1c;      /* frisches Grün (Button-Familie) für Labels/Links */
 
   /* ---- Weiche Schatten für Struktur auf Hell ---- */

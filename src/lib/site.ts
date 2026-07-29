@@ -12,7 +12,7 @@ export const site = {
     "Dein Bewusstsein ist der Schlüssel, deine Gedanken sind der Code. Durchlaufe die 7 Stufen der Bewusstseinsentwicklung und werde zum Meister deiner Gedanken.",
   url: "https://www.werdemeisterdeinergedanken.de",
   author: "Heiko Schwaninger",
-  email: "heiko.schwaninger@gmail.com", // TODO: ggf. offizielle Business-Adresse
+  email: "info@werdemeisterdeinergedanken.de", // offizielle Kontaktadresse
   // Nur echte Profile eintragen (leere/Platzhalter weglassen, sonst tote Links).
   social: {
     instagram: "https://www.instagram.com/werde.meister.deiner.gedanken/",

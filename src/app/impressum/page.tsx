@@ -18,25 +18,23 @@ export default function ImprintPage() {
         <Container size="narrow">
           <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card sm:p-10">
             <p className="mb-6 rounded-xl border border-gold-500/40 bg-gold-300/20 p-4 text-sm text-ink-soft">
-              Hinweis: Bitte die mit „[…]“ markierten Angaben durch deine echten
-              Daten ersetzen. Diese Vorlage ersetzt keine Rechtsberatung.
+              Hinweis: Noch offen ist die USt-IdNr. (unten mit „[…]“ markiert) –
+              bitte eintragen. Dieser Text ersetzt keine Rechtsberatung.
             </p>
             <Prose>
               <h2>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h2>
               <p>
                 {site.author}
                 <br />
-                [Straße und Hausnummer]
+                Dompfaffenweg 30
                 <br />
-                [PLZ Ort]
+                63920 Großheubach
                 <br />
-                [Land]
+                Deutschland
               </p>
 
               <h2>Kontakt</h2>
               <p>
-                Telefon: [Telefonnummer]
-                <br />
                 E-Mail:{" "}
                 <a href={`mailto:${site.email}`}>{site.email}</a>
               </p>
@@ -46,14 +44,14 @@ export default function ImprintPage() {
                 Umsatzsteuer-Identifikationsnummer gemäß § 27 a
                 Umsatzsteuergesetz:
                 <br />
-                [USt-IdNr. – falls vorhanden]
+                [USt-IdNr. bitte eintragen]
               </p>
 
               <h2>Redaktionell verantwortlich</h2>
               <p>
                 {site.author}
                 <br />
-                [Anschrift wie oben]
+                Anschrift wie oben
               </p>
 
               <h2>Streitschlichtung</h2>

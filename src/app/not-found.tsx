@@ -20,7 +20,7 @@ export default function NotFound() {
         <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
           Diese Seite existiert nicht
         </h1>
-        <p className="max-w-md text-[1.05rem] leading-relaxed text-ink-soft/75">
+        <p className="max-w-md text-[1.05rem] leading-relaxed text-ink-mid">
           Vielleicht ein Denkfehler im Code – kein Grund zur Sorge. Kehr zurück
           und finde deinen Weg.
         </p>

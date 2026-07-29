@@ -14,7 +14,7 @@ export function Prose({
   return (
     <div
       className={cn(
-        "flex flex-col gap-4 text-[0.95rem] leading-relaxed text-ink-soft/80",
+        "flex flex-col gap-4 text-[0.95rem] leading-relaxed text-ink-mid",
         "[&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-ink",
         "[&_h3]:mt-5 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-ink",
         "[&_a]:text-accent [&_a]:underline hover:[&_a]:text-ink",

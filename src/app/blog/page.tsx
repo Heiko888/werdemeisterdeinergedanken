@@ -51,7 +51,7 @@ export default function BlogPage() {
                   </div>
 
                   <div className="flex flex-1 flex-col gap-3 p-6">
-                    <div className="flex items-center gap-2 text-xs text-ink-soft/55">
+                    <div className="flex items-center gap-2 text-xs text-ink-muted">
                       <time dateTime={post.date}>{post.dateLabel}</time>
                       <span aria-hidden>·</span>
                       <span>{post.readingMinutes} Min. Lesezeit</span>
@@ -59,7 +59,7 @@ export default function BlogPage() {
                     <h2 className="font-display text-xl font-medium leading-snug text-ink transition-colors group-hover:text-accent">
                       {post.title}
                     </h2>
-                    <p className="text-sm leading-relaxed text-ink-soft/75">
+                    <p className="text-sm leading-relaxed text-ink-mid">
                       {post.excerpt}
                     </p>
                     <span className="mt-auto inline-flex items-center gap-2 pt-2 text-sm font-medium text-accent">

@@ -71,21 +71,21 @@ export function ConsciousnessTest() {
           <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
             Dein Ergebnis
           </span>
-          <p className="text-sm text-ink-soft/60">
+          <p className="text-sm text-ink-muted">
             Deine aktuelle Hauptstufe
           </p>
           <h2 className="font-display text-[2rem] font-medium leading-tight text-ink sm:text-4xl">
             Stufe {resultStage.nr}:{" "}
             <em className="accent not-italic">{resultStage.name}</em>
           </h2>
-          <p className="text-base font-medium uppercase tracking-wider text-ink-soft/60">
+          <p className="text-base font-medium uppercase tracking-wider text-ink-muted">
             {resultStage.tagline}
           </p>
         </div>
 
         {/* Profil über alle Stufen */}
         <div className="rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8">
-          <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-soft/50">
+          <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
             Dein Profil
           </h3>
           <ul className="mt-5 flex flex-col gap-3">
@@ -99,7 +99,7 @@ export function ConsciousnessTest() {
                   <span
                     className={cn(
                       "w-6 shrink-0 text-right font-display text-sm italic",
-                      active ? "text-accent" : "text-ink-soft/40",
+                      active ? "text-accent" : "text-ink-muted",
                     )}
                   >
                     {stage.nr}
@@ -109,7 +109,7 @@ export function ConsciousnessTest() {
                       "w-36 shrink-0 truncate text-sm sm:w-44",
                       active
                         ? "font-medium text-ink"
-                        : "text-ink-soft/70",
+                        : "text-ink-mid",
                     )}
                   >
                     {stage.name}
@@ -154,7 +154,7 @@ export function ConsciousnessTest() {
             <h3 className="font-display text-xl italic text-ink">
               Meine Empfehlung
             </h3>
-            <p className="max-w-xl leading-relaxed text-ink-soft/80">
+            <p className="max-w-xl leading-relaxed text-ink-mid">
               {resultStage.result.recommendation}
             </p>
             {memberSaved && (
@@ -191,7 +191,7 @@ export function ConsciousnessTest() {
           <button
             type="button"
             onClick={restart}
-            className="self-center text-sm font-medium text-ink-soft/60 underline-offset-4 transition-colors hover:text-ink hover:underline"
+            className="self-center text-sm font-medium text-ink-muted underline-offset-4 transition-colors hover:text-ink hover:underline"
           >
             Test wiederholen
           </button>
@@ -208,7 +208,7 @@ export function ConsciousnessTest() {
     <Container size="narrow" className="flex flex-col gap-8 py-6">
       {/* Fortschritt */}
       <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-between text-xs font-medium text-ink-soft/60">
+        <div className="flex items-center justify-between text-xs font-medium text-ink-muted">
           <span>
             Frage {current + 1} von {total}
           </span>
@@ -264,7 +264,7 @@ export function ConsciousnessTest() {
         <button
           type="button"
           onClick={() => setCurrent((c) => c - 1)}
-          className="group inline-flex items-center gap-2 self-start text-sm font-medium text-ink-soft/70 transition-colors hover:text-ink"
+          className="group inline-flex items-center gap-2 self-start text-sm font-medium text-ink-mid transition-colors hover:text-ink"
         >
           <ArrowRight className="rotate-180 transition-transform duration-300 group-hover:-translate-x-1" />
           Zurück

@@ -123,7 +123,7 @@ export default async function BlogPostPage({
             <h2 className="font-display text-xl italic text-ink">
               Bereit, es selbst zu erleben?
             </h2>
-            <p className="text-[1.02rem] leading-relaxed text-ink-soft/75">
+            <p className="text-[1.02rem] leading-relaxed text-ink-mid">
               Wenn dich dieser Impuls angesprochen hat, lass uns unverbindlich
               sprechen – und herausfinden, wo du gerade stehst.
             </p>
@@ -155,7 +155,7 @@ export default async function BlogPostPage({
                     <h3 className="font-display text-xl font-medium text-ink transition-colors group-hover:text-accent">
                       {p.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-ink-soft/75">
+                    <p className="text-sm leading-relaxed text-ink-mid">
                       {p.excerpt}
                     </p>
                   </Link>

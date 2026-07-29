@@ -12,7 +12,7 @@ export function MaybeNotYou() {
         <Reveal>
           <div className="flex flex-col items-start gap-6">
             <div className="flex items-baseline gap-3">
-              <span className="font-display text-sm italic text-ink-soft/70">
+              <span className="font-display text-sm italic text-ink-mid">
                 06
               </span>
               <Eyebrow>Ein anderer Blickwinkel</Eyebrow>
@@ -21,7 +21,7 @@ export function MaybeNotYou() {
               Was, wenn es{" "}
               <em className="accent">nicht an dir</em> liegt?
             </h2>
-            <p className="text-[1.05rem] leading-relaxed text-ink-soft/75">
+            <p className="text-[1.05rem] leading-relaxed text-ink-mid">
               Vielleicht hast du dir schon oft die Schuld gegeben – zu wenig
               Disziplin, zu wenig Willenskraft. Doch was, wenn das Problem nie
               deine Schwäche war, sondern ein Programm, das nie hinterfragt wurde?
