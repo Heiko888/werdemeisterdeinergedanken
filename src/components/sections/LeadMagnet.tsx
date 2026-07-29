@@ -46,7 +46,7 @@ export function LeadMagnet() {
               Werde zum bewussten{" "}
               <em className="accent">Gestalter deiner Gedanken</em>
             </h2>
-            <p className="text-[1.05rem] leading-relaxed text-ink-soft/75">
+            <p className="text-[1.05rem] leading-relaxed text-ink-mid">
               Sichere dir das kostenlose E-Book und mach den ersten Schritt.
               Kompakt, klar und sofort umsetzbar.
             </p>
@@ -55,7 +55,7 @@ export function LeadMagnet() {
               {bullets.map((b) => (
                 <li
                   key={b}
-                  className="flex items-center gap-3 text-sm text-ink-soft/80"
+                  className="flex items-center gap-3 text-sm text-ink-mid"
                 >
                   <Check className="text-base text-accent" />
                   {b}

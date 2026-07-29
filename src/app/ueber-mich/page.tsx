@@ -59,7 +59,7 @@ export default function AboutPage() {
                 Ich kenne den Kopf, der{" "}
                 <em className="accent">nie zur Ruhe kommt</em>
               </h2>
-              <div className="flex flex-col gap-4 text-[1.05rem] leading-relaxed text-ink-soft/75">
+              <div className="flex flex-col gap-4 text-[1.05rem] leading-relaxed text-ink-mid">
                 <p>
                   Ich rede nicht über etwas, das ich in Büchern gelesen habe. Ich
                   war selbst jahrelang gefangen in Gedankenschleifen, Anspannung
@@ -89,7 +89,7 @@ export default function AboutPage() {
                 <p className="font-display text-[1.05rem] italic leading-snug text-ink">
                   „Ein Hund holt dich sofort in den Moment.“
                 </p>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft/70">
+                <p className="mt-2 text-sm leading-relaxed text-ink-mid">
                   Meine persönliche Überzeugung: Hunde stärken dein Bewusstsein.
                   Sie kennen kein Gestern und kein Morgen – nur das Jetzt. Diese
                   Präsenz steckt an, wenn du dich darauf einlässt.
@@ -113,7 +113,7 @@ export default function AboutPage() {
                   </span>
                   <div>
                     <h3 className="text-lg font-medium text-ink">{m.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-ink-soft/70">
+                    <p className="mt-1 text-sm leading-relaxed text-ink-mid">
                       {m.text}
                     </p>
                   </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3 className="text-lg font-medium text-ink">{v.title}</h3>
-                  <p className="text-sm leading-relaxed text-ink-soft/70">
+                  <p className="text-sm leading-relaxed text-ink-mid">
                     {v.text}
                   </p>
                 </div>

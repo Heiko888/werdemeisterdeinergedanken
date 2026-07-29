@@ -38,7 +38,7 @@ export function WhatToExpect() {
                     {Icon && <Icon />}
                   </span>
                   <h3 className="text-xl font-medium text-ink">{item.title}</h3>
-                  <p className="text-sm leading-relaxed text-ink-soft/70">
+                  <p className="text-sm leading-relaxed text-ink-mid">
                     {item.text}
                   </p>
                 </article>

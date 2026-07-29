@@ -85,7 +85,7 @@ export function EbookForm() {
           href="/ebook"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-ink-soft/70 underline hover:text-ink"
+          className="text-xs text-ink-mid underline hover:text-ink"
         >
           E-Mail nicht angekommen? E-Book direkt herunterladen
         </a>
@@ -146,7 +146,7 @@ export function EbookForm() {
           <ArrowRight />
         </Button>
       </div>
-      <p className="mt-3 text-xs text-ink-soft/50">
+      <p className="mt-3 text-xs text-ink-muted">
         Kein Spam. Abmeldung jederzeit möglich. Mit der Anmeldung stimmst du der{" "}
         <a href="/datenschutz" className="underline hover:text-ink">
           Datenschutzerklärung

@@ -35,7 +35,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="max-w-xl text-lg leading-relaxed text-ink-soft/75">
+            <p className="max-w-xl text-lg leading-relaxed text-ink-mid">
               Die meisten Menschen werden von ihren Gedanken gelebt. Lerne, sie zu
               durchschauen, alte Muster zu entprogrammieren und deinen inneren
               Code bewusst neu zu schreiben – Schritt für Schritt.
@@ -55,7 +55,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={280}>
-            <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-ink-soft/70">
+            <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-ink-mid">
               {proof.map((p, i) => (
                 <li key={p} className="flex items-center gap-3">
                   {i > 0 && (
@@ -85,7 +85,7 @@ export function Hero() {
             {/* editoriales Detail: kleine Kennzahl */}
             <div className="absolute -bottom-5 -right-5 hidden rounded-[2px] border border-ink/10 bg-white/95 px-5 py-4 backdrop-blur lg:block">
               <p className="font-display text-3xl italic text-ink">7</p>
-              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-ink-soft/60">
+              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-ink-muted">
                 Stufen
               </p>
             </div>

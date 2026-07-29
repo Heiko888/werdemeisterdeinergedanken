@@ -40,7 +40,7 @@ export default function ContactPage() {
                   <Mail />
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-xs uppercase tracking-wider text-ink-soft/60">
+                  <span className="block text-xs uppercase tracking-wider text-ink-muted">
                     E-Mail
                   </span>
                   <span className="block break-all">{site.email}</span>
@@ -79,7 +79,7 @@ export default function ContactPage() {
               <h2 className="font-display text-lg italic text-ink">
                 Kostenloses Erstgespräch
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft/75">
+              <p className="mt-2 text-sm leading-relaxed text-ink-mid">
                 Unverbindlich und ehrlich. Wir klären, ob und wie ich dich am
                 besten unterstützen kann – ganz ohne Verkaufsdruck.
               </p>

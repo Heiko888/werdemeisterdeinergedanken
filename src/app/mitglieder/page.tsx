@@ -136,7 +136,7 @@ export default async function MembersPage() {
               </form>
             )}
           </div>
-          <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+          <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
             Dein persönlicher Raum für deine Reise durch die 7 Stufen. Hier
             findest du künftig deine Inhalte, deinen Fortschritt und exklusive
             Materialien.
@@ -163,7 +163,7 @@ export default async function MembersPage() {
                 <h2 className="font-display text-xl font-medium text-ink sm:text-2xl">
                   Startstufe {startStageData.number} – {startStageData.title}
                 </h2>
-                <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+                <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
                   Dein Bewusstseinstest zeigt hier deinen aktuellen Schwerpunkt –
                   ein guter Ort, um weiterzumachen.
                 </p>
@@ -199,7 +199,7 @@ export default async function MembersPage() {
               <h2 className="font-display text-xl font-medium text-ink sm:text-2xl">
                 Wo stehst du gerade?
               </h2>
-              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
                 Mach den Bewusstseinstest – 21 Fragen, etwa 5 Minuten. Dein
                 Ergebnis landet direkt hier und zeigt dir, wo du am besten
                 weitermachst.
@@ -232,7 +232,7 @@ export default async function MembersPage() {
                   <h2 className="mt-1 font-display text-xl font-medium text-ink sm:text-2xl">
                     {featured.title}
                   </h2>
-                  <p className="text-sm text-ink-soft/70">
+                  <p className="text-sm text-ink-mid">
                     {featured.duration} · {featured.category}
                   </p>
                 </div>
@@ -253,7 +253,7 @@ export default async function MembersPage() {
             <h2 className="font-display text-2xl font-medium text-ink">
               Deine 7 Stufen
             </h2>
-            <span className="text-sm text-ink-soft/60">
+            <span className="text-sm text-ink-muted">
               {completedCount} / {stages.length} abgeschlossen
             </span>
           </div>
@@ -291,13 +291,13 @@ export default async function MembersPage() {
                         <Check />
                       </span>
                     ) : (
-                      <ArrowRight className="text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                      <ArrowRight className="text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
                     )}
                   </div>
                   <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
                     {stage.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-ink-soft/70">
+                  <p className="text-sm leading-relaxed text-ink-mid">
                     {stage.subtitle}
                   </p>
                 </Link>
@@ -319,7 +319,7 @@ export default async function MembersPage() {
                 <h2 className="font-display text-xl font-medium text-ink">
                   Ein Gedanke pro Woche in dein Postfach
                 </h2>
-                <p className="max-w-md text-[0.98rem] leading-relaxed text-ink-soft/70">
+                <p className="max-w-md text-[0.98rem] leading-relaxed text-ink-mid">
                   Kurze, bodenständige Impulse entlang der 7 Stufen – jederzeit
                   mit einem Klick abbestellbar.
                 </p>
@@ -340,7 +340,7 @@ export default async function MembersPage() {
             <h2 className="font-display text-2xl font-medium text-ink">
               Vertiefungen
             </h2>
-            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
               Die psychologischen Mechanismen hinter den 7 Stufen – zum
               Nachschlagen und Vertiefen. Jedes Thema mit Übungen und
               Reflexionsfragen.
@@ -349,7 +349,7 @@ export default async function MembersPage() {
 
           {deepDivesByCategory().map((group) => (
             <div key={group.category} className="mt-10">
-              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-soft/50">
+              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
                 {group.category}
               </h3>
               <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -363,9 +363,9 @@ export default async function MembersPage() {
                       <h4 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
                         {dive.title}
                       </h4>
-                      <ArrowRight className="mt-1 shrink-0 text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                      <ArrowRight className="mt-1 shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
                     </div>
-                    <p className="text-sm leading-relaxed text-ink-soft/70">
+                    <p className="text-sm leading-relaxed text-ink-mid">
                       {dive.summary}
                     </p>
                   </Link>
@@ -378,7 +378,7 @@ export default async function MembersPage() {
             <h3 className="font-display text-xl italic text-ink">
               Ein Thema fehlt dir?
             </h3>
-            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
               Die Bibliothek wächst Schritt für Schritt. Wenn dich ein bestimmter
               psychologischer Mechanismus beschäftigt, schreib mir – oft wird
               daraus die nächste Vertiefung.
@@ -401,7 +401,7 @@ export default async function MembersPage() {
             <h2 className="font-display text-2xl font-medium text-ink">
               Praxis
             </h2>
-            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
               Was die Stufen wirksam macht: geführte Meditationen, Atemübungen
               und Rituale für den Alltag – jede mit klarer Schritt-für-Schritt-
               Anleitung.
@@ -410,7 +410,7 @@ export default async function MembersPage() {
 
           {practicesByCategory().map((group) => (
             <div key={group.category} className="mt-10">
-              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-soft/50">
+              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
                 {group.category}
               </h3>
               <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -424,11 +424,11 @@ export default async function MembersPage() {
                       <h4 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
                         {practice.title}
                       </h4>
-                      <span className="mt-0.5 shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-soft/45">
+                      <span className="mt-0.5 shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-muted">
                         {practice.duration}
                       </span>
                     </div>
-                    <p className="text-sm leading-relaxed text-ink-soft/70">
+                    <p className="text-sm leading-relaxed text-ink-mid">
                       {practice.summary}
                     </p>
                   </Link>

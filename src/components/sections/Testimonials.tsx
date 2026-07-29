@@ -43,7 +43,7 @@ export function Testimonials() {
                     <span className="block text-sm font-medium text-ink">
                       {t.name}
                     </span>
-                    <span className="block text-xs text-ink-soft/55">
+                    <span className="block text-xs text-ink-muted">
                       {t.role}
                     </span>
                   </span>
@@ -54,7 +54,7 @@ export function Testimonials() {
           ))}
         </div>
 
-        <p className="mt-12 text-center text-xs text-ink-soft/45">
+        <p className="mt-12 text-center text-xs text-ink-muted">
           Namen geändert · Erfahrungsberichte sind individuell und keine Garantie
           für ein bestimmtes Ergebnis.
         </p>

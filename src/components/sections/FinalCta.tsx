@@ -22,7 +22,7 @@ export function FinalCta() {
           </h2>
         </Reveal>
         <Reveal delay={100}>
-          <p className="mx-auto max-w-xl text-[1.05rem] leading-relaxed text-ink-soft/75">
+          <p className="mx-auto max-w-xl text-[1.05rem] leading-relaxed text-ink-mid">
             Dein Bewusstsein wartet nicht. Jeder Tag, an dem du deine Gedanken
             bewusster wählst, verändert dein Leben ein Stück. Fang heute an.
           </p>

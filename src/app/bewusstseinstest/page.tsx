@@ -29,7 +29,7 @@ export default function BewusstseinstestPage() {
           <h1 className="text-[1.9rem] font-medium leading-[1.1] text-ink [hyphens:none] [overflow-wrap:normal] sm:text-5xl">
             Wo findest du dich <em className="accent">gerade</em>?
           </h1>
-          <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-soft/75">
+          <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-mid">
             21 ehrliche Fragen zeigen dir, auf welcher der 7 Stufen der
             Bewusstseinsentwicklung du aktuell stehst – und welcher nächste
             Schritt für dich möglich ist. Antworte spontan; es gibt kein Richtig

@@ -30,7 +30,7 @@ export function Compass() {
         <Reveal delay={100} className="order-1 lg:order-2">
           <div className="flex flex-col items-start gap-6">
             <div className="flex items-baseline gap-3">
-              <span className="font-display text-sm italic text-ink-soft/70">
+              <span className="font-display text-sm italic text-ink-mid">
                 02
               </span>
               <Eyebrow>Dein energetischer Kompass</Eyebrow>
@@ -39,7 +39,7 @@ export function Compass() {
               Durchlaufe alle 7 Stufen –{" "}
               <em className="accent">bewusst und geführt</em>
             </h2>
-            <p className="text-[1.05rem] leading-relaxed text-ink-soft/75">
+            <p className="text-[1.05rem] leading-relaxed text-ink-mid">
               Der Kompass zeigt dir jederzeit, wo du gerade stehst und was dein
               nächster Schritt ist. So wird aus einem diffusen Gefühl ein
               greifbarer Weg.
@@ -49,7 +49,7 @@ export function Compass() {
               {benefits.map((b) => (
                 <li
                   key={b}
-                  className="flex items-start gap-4 border-t border-ink/10 py-3.5 text-sm leading-relaxed text-ink-soft/80"
+                  className="flex items-start gap-4 border-t border-ink/10 py-3.5 text-sm leading-relaxed text-ink-mid"
                 >
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                   {b}

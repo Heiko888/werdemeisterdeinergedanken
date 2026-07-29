@@ -29,12 +29,12 @@ export function StageCard({
         <span className="font-display text-4xl italic text-accent/80">
           {number}
         </span>
-        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
+        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
           {subtitle}
         </span>
       </div>
       <h3 className="text-xl font-medium text-ink">{title}</h3>
-      <p className="text-sm leading-relaxed text-ink-soft/70">{description}</p>
+      <p className="text-sm leading-relaxed text-ink-mid">{description}</p>
     </article>
   );
 }
@@ -70,7 +70,7 @@ export function SevenStages() {
                 <h3 className="font-display text-xl italic text-ink">
                   Bereit, deinen Weg zu gehen?
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft/70">
+                <p className="mt-2 text-sm leading-relaxed text-ink-mid">
                   Sieh dir die 7 Stufen im Detail an und finde heraus, wo du
                   gerade stehst.
                 </p>

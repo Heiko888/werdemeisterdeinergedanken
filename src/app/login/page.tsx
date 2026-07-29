@@ -38,7 +38,7 @@ export default async function LoginPage({
           <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
             Willkommen zurück
           </h1>
-          <p className="max-w-md text-[1.02rem] leading-relaxed text-ink-soft/75">
+          <p className="max-w-md text-[1.02rem] leading-relaxed text-ink-mid">
             {ALLOW_SELF_REGISTRATION
               ? "Melde dich an oder erstelle deinen Zugang, um in deinen persönlichen Bereich zu gelangen."
               : "Melde dich mit deinem persönlichen Zugang an, um in deinen Bereich zu gelangen."}

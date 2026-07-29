@@ -14,7 +14,7 @@ export function WhyMe() {
         <Reveal>
           <div className="flex flex-col items-start gap-6">
             <div className="flex items-baseline gap-3">
-              <span className="font-display text-sm italic text-ink-soft/70">
+              <span className="font-display text-sm italic text-ink-mid">
                 03
               </span>
               <Eyebrow>Warum ich das mache</Eyebrow>
@@ -23,7 +23,7 @@ export function WhyMe() {
               Ich war selbst gefangen{" "}
               <em className="accent">in meinem Kopf</em>
             </h2>
-            <div className="flex flex-col gap-4 text-[1.05rem] leading-relaxed text-ink-soft/75">
+            <div className="flex flex-col gap-4 text-[1.05rem] leading-relaxed text-ink-mid">
               <p>
                 Jahrelang habe ich funktioniert – und trotzdem gespürt, dass mich
                 etwas von innen bremst. Grübeln, Selbstzweifel, alte Muster, die
@@ -51,7 +51,7 @@ export function WhyMe() {
                 <p className="font-display text-lg italic text-ink">
                   Heiko Schwaninger
                 </p>
-                <p className="text-sm text-ink-soft/60">
+                <p className="text-sm text-ink-muted">
                   Begleiter für mentale Entprogrammierung
                 </p>
               </div>
@@ -78,7 +78,7 @@ export function WhyMe() {
                   </span>
                   <div>
                     <h3 className="text-lg font-medium text-ink">{v.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-ink-soft/70">
+                    <p className="mt-1 text-sm leading-relaxed text-ink-mid">
                       {v.text}
                     </p>
                   </div>

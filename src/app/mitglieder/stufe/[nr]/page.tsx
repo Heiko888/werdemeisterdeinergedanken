@@ -64,7 +64,7 @@ export default async function StagePage({
         <Container size="narrow" className="flex flex-col items-start gap-4">
           <Link
             href="/mitglieder"
-            className="inline-flex items-center gap-2 text-sm text-ink-soft/70 transition-colors hover:text-ink"
+            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
           >
             <ArrowRight className="rotate-180" />
             Mein Bereich
@@ -73,7 +73,7 @@ export default async function StagePage({
             <span className="font-display text-4xl italic text-accent sm:text-5xl">
               {stage.number}
             </span>
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
               Stufe {idx + 1} von {stages.length}
             </span>
           </div>
@@ -108,7 +108,7 @@ export default async function StagePage({
 
           {/* Video */}
           <div>
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
               Video zur Stufe
             </span>
             {lesson?.video ? (
@@ -126,7 +126,7 @@ export default async function StagePage({
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">
                   <Play />
                 </span>
-                <p className="max-w-xs px-6 text-sm leading-relaxed text-ink-soft/60">
+                <p className="max-w-xs px-6 text-sm leading-relaxed text-ink-muted">
                   Das Video zu dieser Stufe folgt in Kürze.
                 </p>
               </div>
@@ -222,7 +222,7 @@ export default async function StagePage({
           {/* Verankerung */}
           {lesson?.affirmation && (
             <div className="rounded-2xl border border-ink/10 bg-paper/50 p-8 text-center">
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
                 Dein Leitsatz
               </span>
               <p className="mt-3 font-display text-xl italic leading-snug text-ink sm:text-2xl">
@@ -234,13 +234,13 @@ export default async function StagePage({
           {/* Fallback, falls (noch) keine Lektion hinterlegt ist */}
           {!lesson && (
             <div className="flex flex-col items-start gap-4 rounded-2xl border border-dashed border-ink/20 bg-paper/40 p-8">
-              <span className="rounded-full border border-ink/10 bg-white px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-wider text-ink-soft/60">
+              <span className="rounded-full border border-ink/10 bg-white px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-wider text-ink-muted">
                 In Vorbereitung
               </span>
               <h2 className="font-display text-xl italic text-ink">
                 Die Lektion zu dieser Stufe wird gerade erstellt
               </h2>
-              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
                 Hier entstehen die Inhalte, Übungen und Materialien für „
                 {stage.title}“. Sobald sie fertig sind, findest du sie an genau
                 dieser Stelle.
@@ -270,9 +270,9 @@ export default async function StagePage({
                       <span className="font-medium text-ink transition-colors group-hover:text-accent">
                         {dive.title}
                       </span>
-                      <ArrowRight className="shrink-0 text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                      <ArrowRight className="shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
                     </span>
-                    <span className="text-sm leading-relaxed text-ink-soft/70">
+                    <span className="text-sm leading-relaxed text-ink-mid">
                       {dive.summary}
                     </span>
                   </Link>
@@ -286,7 +286,7 @@ export default async function StagePage({
             <h2 className="font-display text-xl italic text-ink">
               Fragen zu dieser Stufe?
             </h2>
-            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-soft/75">
+            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
               Wenn etwas in dir aufkommt oder du nicht weiterweißt – ich bin
               jederzeit für dich da. Schreib mir einfach.
             </p>

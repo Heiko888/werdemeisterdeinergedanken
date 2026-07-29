@@ -50,7 +50,7 @@ export default async function PracticePage({
         <Container size="narrow" className="flex flex-col items-start gap-4">
           <Link
             href="/mitglieder"
-            className="inline-flex items-center gap-2 text-sm text-ink-soft/70 transition-colors hover:text-ink"
+            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
           >
             <ArrowRight className="rotate-180" />
             Mein Bereich
@@ -61,7 +61,7 @@ export default async function PracticePage({
           <h1 className="text-[2rem] font-medium leading-[1.1] text-ink sm:text-4xl md:text-5xl">
             {practice.title}
           </h1>
-          <span className="rounded-full border border-ink/15 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink-soft/70">
+          <span className="rounded-full border border-ink/15 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink-mid">
             {practice.duration}
           </span>
         </Container>
@@ -97,7 +97,7 @@ export default async function PracticePage({
 
           {/* Audio / Video */}
           <div>
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
               Geführte Aufnahme
             </span>
             {practice.audio ? (
@@ -132,7 +132,7 @@ export default async function PracticePage({
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">
                   <Play />
                 </span>
-                <p className="max-w-xs px-6 text-sm leading-relaxed text-ink-soft/60">
+                <p className="max-w-xs px-6 text-sm leading-relaxed text-ink-muted">
                   Die geführte Audio-/Video-Version folgt in Kürze. Bis dahin
                   leitet dich die Anleitung unten Schritt für Schritt.
                 </p>
@@ -180,14 +180,14 @@ export default async function PracticePage({
               href={`/mitglieder/stufe/${practice.relatedStage}`}
               className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/30"
             >
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
                 Passt zu · Stufe {stage.number}
               </span>
               <span className="flex items-center justify-between gap-3">
                 <span className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
                   {stage.title} – {stage.subtitle}
                 </span>
-                <ArrowRight className="shrink-0 text-ink-soft/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                <ArrowRight className="shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
               </span>
             </Link>
           )}

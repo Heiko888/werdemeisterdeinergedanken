@@ -48,11 +48,11 @@ export default function SevenStagesPage() {
                       <h2 className="text-xl font-medium text-ink sm:text-2xl">
                         {stage.title}
                       </h2>
-                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-soft/50">
+                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
                         {stage.subtitle}
                       </span>
                     </div>
-                    <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-soft/75 sm:text-base">
+                    <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-mid sm:text-base">
                       {stage.description}
                     </p>
                   </div>
@@ -65,7 +65,7 @@ export default function SevenStagesPage() {
             <h2 className="font-display text-2xl italic text-ink sm:text-3xl">
               Bereit, deine Stufe zu bestimmen?
             </h2>
-            <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-soft/75">
+            <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-mid">
               In einem kostenlosen Erstgespräch finden wir gemeinsam heraus, wo du
               gerade stehst und welcher Schritt für dich als Nächstes dran ist.
             </p>
