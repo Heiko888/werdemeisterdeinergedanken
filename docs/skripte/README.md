@@ -19,6 +19,12 @@ inhaltlich zusammen.
 - **Fett** – der eine Satz, der genau so fallen sollte (Hook, Leitsatz)
 - Bei Praxis: `…` = bewusste Sprechpause, kursiv = Regieton (leise, langsam)
 
+## Reels (Social)
+
+`reels/mentale-selbstverteidigung.md` – 16 Kurz-Skripte (30–45 Sek) zum
+Themenblock „Wie dein Denken gelenkt wird", je mit Hook, Skript, On-Screen-Text
+und CTA.
+
 ## Drehreihenfolge (Empfehlung)
 
 1. **7 Stufen** – Kernprodukt, jeder durchläuft sie → `stufen/`
