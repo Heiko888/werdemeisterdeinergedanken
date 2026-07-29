@@ -598,6 +598,272 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "propaganda-erkennst-du-nicht-an-lauten-parolen",
+    title: "Propaganda erkennst du nicht an lauten Parolen",
+    excerpt:
+      "Die wirksamste Beeinflussung zwingt dir keine Meinung auf. Sie arbeitet leise – über Wiederholung, Emotion und Vereinfachung, ganz ohne eine einzige Lüge.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Wir stellen uns Propaganda gern plump vor: laute Parolen, offensichtliche Lügen. Doch die wirksamste Beeinflussung ist leise. Sie sagt dir nicht, was du denken sollst – sie sorgt dafür, dass sich eine bestimmte Sicht mit der Zeit einfach richtig anfühlt.",
+      },
+      {
+        type: "h2",
+        text: "Drei Hebel, keine Lüge",
+      },
+      {
+        type: "p",
+        text: "Fast immer wirken drei Dinge zusammen. Wiederholung macht eine Aussage vertraut – und Vertrautes halten wir für wahr. Emotion, besonders Angst, schaltet das ruhige Prüfen aus. Und Vereinfachung reduziert ein vielschichtiges Thema auf Gut gegen Böse, wo eine klare Seite Halt verspricht. Das Bemerkenswerte: Keiner dieser Hebel braucht eine einzige Lüge. Man kann mit wahren Einzelfakten ein völlig verzerrtes Bild erzeugen – allein durch Auswahl und Betonung.",
+      },
+      {
+        type: "quote",
+        text: "Nichts bindet eine Gruppe so schnell wie ein gemeinsamer Gegner.",
+      },
+      {
+        type: "h2",
+        text: "Feindbild und Zugehörigkeit",
+      },
+      {
+        type: "p",
+        text: "Ein Feindbild liefert eine einfache Ordnung: hier die Guten, dort die Anderen. Wer dazugehören will, übernimmt die Sicht der Gruppe – oft, ohne sie je geprüft zu haben. Zustimmung wird zum Zeichen von Zugehörigkeit, Zweifel zum Risiko der Ausgrenzung. Deshalb verteidigen Menschen mit Inbrunst Behauptungen, die sie nie überprüft haben: nicht aus Dummheit, sondern weil das eigene Selbstbild daran hängt.",
+      },
+      {
+        type: "h2",
+        text: "Dein Schutz",
+      },
+      {
+        type: "ul",
+        items: [
+          "Frag bei starken Überzeugungen: Habe ich das geprüft – oder nur oft gehört?",
+          "Prüfe den Ton: Arbeitet die Quelle mit Angst, Empörung oder klaren Feindbildern?",
+          "Formuliere die nüchternste Version derselben Aussage. Was bleibt übrig?",
+          "Nimm die beste Begründung der Gegenseite einmal ernst – und beobachte deinen Widerstand.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand. Die ausführliche Vertiefung „Propaganda & Konditionierung“ findest du im Mitgliederbereich; einen kompakten Überblick gibt das kostenlose E-Book „Die Gedanken, die nicht deine sind“.",
+      },
+    ],
+  },
+  {
+    slug: "werbung-und-der-kuenstliche-mangel",
+    title: "Werbung verkauft dir keinen Mangel – sie erschafft ihn",
+    excerpt:
+      "Vieles kaufst du nicht, weil du es brauchst, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Wie das funktioniert – und wie du aussteigst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Gute Werbung verkauft kein Produkt. Sie verkauft ein Gefühl – und zwar meist zuerst ein unangenehmes: den Eindruck, dass dir etwas fehlt. Erst wird der Mangel geweckt, dann die Lösung angeboten.",
+      },
+      {
+        type: "h2",
+        text: "Erst der Mangel, dann das Produkt",
+      },
+      {
+        type: "p",
+        text: "Kaum eine Werbung sagt „Du bist genug“. Sie deutet an, dass dir etwas fehlt: Schönheit, Erfolg, Zugehörigkeit, Ruhe. Dieses Fehlen ist oft künstlich erzeugt – wenige Sekunden zuvor war es gar nicht da. Das Produkt erscheint dann als Erlösung von einem Unbehagen, das die Werbung selbst erst geweckt hat.",
+      },
+      {
+        type: "quote",
+        text: "Du kaufst nicht die Uhr, sondern das Gefühl, jemand zu sein, der so eine Uhr trägt.",
+      },
+      {
+        type: "h2",
+        text: "Vergleich, Status, Gefühl",
+      },
+      {
+        type: "p",
+        text: "Sobald du dich mit einem idealisierten Bild misst, entsteht ein Abstand – und den soll das Produkt schließen. Es geht selten um die Sache selbst, sondern um Anerkennung und Dazugehören. Damit das wirkt, werden Produkte gezielt mit Gefühlen verknüpft: Freiheit, Liebe, Sicherheit. Nicht das Produkt löst diese Gefühle aus – die Verknüpfung wird hergestellt und tausendfach wiederholt.",
+      },
+      {
+        type: "h2",
+        text: "Die Pause als Ausweg",
+      },
+      {
+        type: "ul",
+        items: [
+          "Halte beim Kaufimpuls kurz inne und frag: Wollte ich das schon vorher – oder erst seit der Werbung?",
+          "Frag weiter: Welches Gefühl verspreche ich mir wirklich davon?",
+          "Warte 24 Stunden. Ist der Wunsch dann noch da, war er vielleicht echt.",
+          "Benenne die Verknüpfung laut: „Sie verbinden dieses Produkt mit …“",
+        ],
+      },
+      {
+        type: "p",
+        text: "Der Ausweg ist nicht Verzicht um jeden Preis, sondern Bewusstheit. Vieles kaufst du nicht aus Bedarf, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Mehr dazu in der Vertiefung „Werbung & künstlicher Mangel“ im Mitgliederbereich.",
+      },
+    ],
+  },
+  {
+    slug: "gruppendruck-und-die-schweigespirale",
+    title: "Gruppendruck: Warum wir schweigen, obwohl wir zweifeln",
+    excerpt:
+      "Die Angst vor Ausgrenzung sitzt tiefer als jedes Argument. Wie die Schweigespirale eine Mehrheit vortäuscht, die es oft gar nicht gibt.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Der Mensch ist ein Gruppenwesen. Über Jahrtausende bedeutete Ausschluss aus der Gemeinschaft Lebensgefahr. Deshalb sitzt die Angst vor Ausgrenzung tief – tiefer als jedes Argument. Sie führt dazu, dass wir öffentlich mittragen, was wir privat bezweifeln.",
+      },
+      {
+        type: "h2",
+        text: "Die Schweigespirale",
+      },
+      {
+        type: "p",
+        text: "Wer glaubt, mit seiner Meinung allein zu stehen, schweigt eher – aus Angst vor Ablehnung. Dadurch wirkt die andere Sicht noch stärker, was noch mehr Menschen zum Schweigen bringt. So entsteht eine Spirale: Nicht die Mehrheit setzt sich durch, sondern die, die sich am lautesten und selbstsichersten zeigt. Vieles, was wie Konsens aussieht, ist nur organisiertes Schweigen.",
+      },
+      {
+        type: "quote",
+        text: "Fast immer denken viel mehr Menschen wie du – sie sagen es nur nicht.",
+      },
+      {
+        type: "h2",
+        text: "Die Mehrheitsillusion",
+      },
+      {
+        type: "p",
+        text: "Wir überschätzen systematisch, wie viele Menschen so denken wie die lautesten Stimmen – und unterschätzen die stillen Zweifler. Diese Illusion verstärkt den Druck: Man passt sich einer Mehrheit an, die es so gar nicht gibt. Anpassung geschieht dabei nicht nur in großen Debatten, sondern täglich in Familie, Beruf und Freundeskreis.",
+      },
+      {
+        type: "p",
+        text: "Der Mut fängt klein an: einmal ruhig und freundlich sagen, was du wirklich denkst. Oft löst sich die gefühlte Mehrheit in Luft auf, sobald einer anfängt. Die vollständige Vertiefung „Gruppendruck & Schweigespirale“ findest du im Mitgliederbereich.",
+      },
+    ],
+  },
+  {
+    slug: "warum-du-verteidigst-was-dir-schadet",
+    title: "Warum du verteidigst, was dir schadet",
+    excerpt:
+      "Kognitive Dissonanz: Wir lehnen Informationen oft nicht ab, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. Wie du diesen Reflex durchschaust.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Wenn eine neue Information nicht zu dem passt, was wir glauben, entsteht ein unangenehmes Spannungsgefühl – kognitive Dissonanz. Und weil wir Unbehagen scheuen, lösen wir diese Spannung meist zur falschen Seite auf: Nicht die Information gewinnt, sondern das bestehende Weltbild.",
+      },
+      {
+        type: "h2",
+        text: "Warum wir Fehler ungern zugeben",
+      },
+      {
+        type: "p",
+        text: "Einen Irrtum einzugestehen bedroht das Bild, das wir von uns haben: klug, konsequent, auf der richtigen Seite. Also suchen wir Gründe, warum die unbequeme Information nicht zählt, statt unsere Sicht anzupassen. Je mehr wir in eine Überzeugung investiert haben, desto heftiger verteidigen wir sie – gerade dann, wenn sie zu wackeln beginnt.",
+      },
+      {
+        type: "quote",
+        text: "Unbehagen ist ein Hinweis, genauer hinzuschauen – nicht wegzuschauen.",
+      },
+      {
+        type: "h2",
+        text: "Selektive Wahrnehmung und Abwertung",
+      },
+      {
+        type: "p",
+        text: "Um die Spannung klein zu halten, filtert der Verstand: Passendes wird bemerkt, Unpassendes übersehen. So sammeln wir scheinbar immer mehr Belege für das, was wir ohnehin glauben. Und der bequemste Ausweg ist, die Quelle abzuwerten: Wer anders denkt, ist eben dumm, böswillig oder manipuliert. Dann muss man sich mit dem Inhalt gar nicht mehr befassen – genau hier wird aus einem Denkfehler eine Spaltung.",
+      },
+      {
+        type: "p",
+        text: "Die reifere Fähigkeit ist, einen Abstand zwischen dich und deine Überzeugungen zu legen. Eine Meinung ändern zu können ist keine Schwäche, sondern Reife. Mehr dazu in der Vertiefung „Kognitive Dissonanz“ im Mitgliederbereich.",
+      },
+    ],
+  },
+  {
+    slug: "wann-vertrauen-zu-blindem-gehorsam-wird",
+    title: "Wann Vertrauen zu blindem Gehorsam wird",
+    excerpt:
+      "Derselbe Satz klingt glaubwürdiger, wenn ein Titel davorsteht. Warum das sinnvoll sein kann – und wo Fachwissen aufhört und blinder Gehorsam beginnt.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Wir können nicht alles selbst überprüfen – deshalb vertrauen wir Fachleuten, und das ist vernünftig. Doch dasselbe Vertrauen kann kippen: in blinden Gehorsam, bei dem eine Aussage allein deshalb gilt, weil sie von einer Autorität kommt.",
+      },
+      {
+        type: "h2",
+        text: "Warum Autorität überzeugt",
+      },
+      {
+        type: "p",
+        text: "Dieselbe Aussage klingt glaubwürdiger, wenn ein Titel, eine Uniform oder eine Institution dahintersteht. Das ist eine uralte Abkürzung: Statt die Sache zu prüfen, prüfen wir die Quelle. Meist funktioniert das gut. Gefährlich wird es, wenn der Status das Argument komplett ersetzt und Rückfragen als Respektlosigkeit gelten.",
+      },
+      {
+        type: "quote",
+        text: "Ein Titel ist ein Grund zuzuhören – kein Grund, nicht mehr zu prüfen.",
+      },
+      {
+        type: "h2",
+        text: "Fachwissen ist nicht dasselbe wie Meinung",
+      },
+      {
+        type: "p",
+        text: "Ein Fachmensch ist Experte auf seinem Gebiet – nicht automatisch bei allem. Oft wird echte Kompetenz aus einem Bereich auf ganz andere Fragen übertragen, wo sie nichts mehr bedeutet. Ein guter Prüfstein: Spricht die Person aus belegbarem Fachwissen – oder äußert sie eine persönliche Meinung, die auch ihr Nachbar haben könnte? Und: Ein Experte darf sich irren, sich korrigieren, mit Kollegen streiten. Das ist ein Zeichen von Seriosität, nicht von Schwäche.",
+      },
+      {
+        type: "p",
+        text: "Vertraue Fachwissen – aber hör nicht auf mitzudenken. Offenheit für Rückfragen ist dabei selbst ein Gütesiegel. Die vollständige Vertiefung „Autorität & Gehorsam“ findest du im Mitgliederbereich.",
+      },
+    ],
+  },
+  {
+    slug: "hast-du-eine-meinung-oder-hat-sie-dich",
+    title: "Hast du eine Meinung – oder hat die Meinung dich?",
+    excerpt:
+      "Sobald eine Meinung Teil deiner Identität wird, fühlt sich Kritik daran wie ein persönlicher Angriff an. Warum das dich unfrei macht – und wie du den Abstand zurückgewinnst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-07-28",
+    dateLabel: "28. Juli 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Eine Meinung ist eigentlich ein Werkzeug: Man nimmt sie an, prüft sie, legt sie bei Bedarf ab. Doch manche Meinungen verwachsen mit unserer Identität – mit einer Gruppe, einem Lager, einer Lebensweise, der wir uns zugehörig fühlen. Und dann wird jede Kritik an der Meinung zu einem Angriff auf uns selbst.",
+      },
+      {
+        type: "h2",
+        text: "Meinung wird zu Zugehörigkeit",
+      },
+      {
+        type: "p",
+        text: "Ob politisches Lager, Berufsgruppe, Bewegung, Marke oder Lebensstil – überall verschmelzen Meinungen mit Zugehörigkeit. Eine Position zu teilen heißt dann: dazuzugehören. Sie infrage zu stellen fühlt sich an, als riskierte man den Platz in der Gruppe. Deshalb prüft man solche Meinungen kaum noch – der Preis wäre zu hoch.",
+      },
+      {
+        type: "quote",
+        text: "Solange du eine Meinung hast, kannst du sie prüfen. Sobald die Meinung dich hat, verteidigst du sie wie dein Leben.",
+      },
+      {
+        type: "h2",
+        text: "Warum Kritik dann schmerzt",
+      },
+      {
+        type: "p",
+        text: "Wenn eine Überzeugung Teil deines Selbstbildes ist, aktiviert ein Gegenargument dieselbe Abwehr wie ein persönlicher Angriff. Der Körper geht in Verteidigung, der Verstand sucht Gegenargumente statt Wahrheit. Das ist kein Zeichen von Sturheit, sondern von Verschmelzung: Du verteidigst nicht die Sache, sondern dich.",
+      },
+      {
+        type: "p",
+        text: "Die Freiheit liegt darin, einen Abstand zwischen dich und deine Meinungen zu legen – so wie zwischen dich und deine Gedanken. Eine Überzeugung ändern zu können ist keine Schwäche, sondern Reife. Du bleibst du, auch wenn eine Meinung geht. Die Vertiefung „Identität & Meinung“ findest du im Mitgliederbereich.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
