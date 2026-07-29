@@ -19,6 +19,14 @@ inhaltlich zusammen.
 - **Fett** – der eine Satz, der genau so fallen sollte (Hook, Leitsatz)
 - Bei Praxis: `…` = bewusste Sprechpause, kursiv = Regieton (leise, langsam)
 
+## Themenblock „Mentale Selbstverteidigung" (16 Themen)
+
+Video-Skripte zum Block „Wie dein Denken gelenkt wird":
+- `vertiefungen/mentale-selbstverteidigung-drehbuecher.md` – 16 Stichpunkt-Drehbücher (frei sprechen, 3–5 Min)
+- `vertiefungen-komplett/mentale-selbstverteidigung-komplett.md` – 16 komplette Wort-für-Wort-Skripte
+- `reels/mentale-selbstverteidigung.md` – 16 Kurz-Reels
+- Blog & E-Book: siehe `src/lib/blog.ts` bzw. `docs/ebook/`
+
 ## Reels (Social)
 
 `reels/mentale-selbstverteidigung.md` – 16 Kurz-Skripte (30–45 Sek) zum
