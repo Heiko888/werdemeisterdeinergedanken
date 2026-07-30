@@ -14,9 +14,11 @@ import {
   getJournalEntries,
   getCompletedStages,
   getStartStage,
+  getTestHistory,
 } from "@/app/mitglieder/actions";
 import { resolveEntry, formatDate } from "@/lib/journal";
 import { PrintButton } from "@/components/members/PrintButton";
+import { TestCurve } from "@/components/members/TestCurve";
 
 export const dynamic = "force-dynamic";
 
@@ -53,10 +55,11 @@ export default async function JournalPage() {
     }
   }
 
-  const [entries, completed, startStage] = await Promise.all([
+  const [entries, completed, startStage, testHistory] = await Promise.all([
     getJournalEntries(),
     getCompletedStages(),
     getStartStage(),
+    getTestHistory(),
   ]);
 
   const resolved = entries
@@ -131,6 +134,41 @@ export default async function JournalPage() {
           )}
         </Container>
       </section>
+
+      {/* Wachstumskurve – Bewusstseinstest über die Zeit */}
+      {testHistory.length >= 1 && (
+        <section className="border-b border-ink/10 py-12 print:py-4">
+          <Container>
+            <div className="mx-auto max-w-2xl">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <div>
+                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                    Deine Entwicklung
+                  </span>
+                  <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+                    Wo du über die Zeit stehst
+                  </h2>
+                </div>
+                <Link
+                  href="/bewusstseinstest"
+                  className="text-sm font-medium text-accent underline-offset-2 hover:underline print:hidden"
+                >
+                  Test erneut machen
+                </Link>
+              </div>
+              <p className="mt-2 max-w-xl text-[1rem] leading-relaxed text-ink-mid">
+                Deine Schwerpunkt-Stufe aus dem Bewusstseinstest (1–7).
+                {testHistory.length === 1
+                  ? " Wiederhole den Test in ein paar Wochen – dann wird hier deine Kurve sichtbar."
+                  : " Die Kurve wächst mit jedem neuen Testergebnis."}
+              </p>
+              <div className="mt-6 rounded-2xl border border-ink/10 bg-white p-5 shadow-card print:shadow-none sm:p-7">
+                <TestCurve points={testHistory} />
+              </div>
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Zeitverlauf der Reflexionen */}
       <section className="py-14 print:py-2 sm:py-20">

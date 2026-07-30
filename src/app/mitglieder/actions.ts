@@ -187,6 +187,34 @@ export async function getJournalEntries(): Promise<JournalEntry[]> {
     }));
 }
 
+export type TestPoint = { topStage: number; takenAt: string };
+
+/**
+ * Verlauf der Bewusstseinstests (älteste zuerst) für die Wachstumskurve.
+ * Leer, falls Migration 0006 noch nicht eingespielt ist oder niemand
+ * angemeldet ist – die Journal-Seite blendet die Kurve dann einfach aus.
+ */
+export async function getTestHistory(): Promise<TestPoint[]> {
+  if (!isSupabaseConfigured) return [];
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return [];
+
+  const { data, error } = await supabase
+    .from("test_results")
+    .select("top_stage, taken_at")
+    .eq("user_id", user.id)
+    .order("taken_at", { ascending: true });
+
+  if (error) return [];
+  return (data ?? []).map((row) => ({
+    topStage: row.top_stage as number,
+    takenAt: row.taken_at as string,
+  }));
+}
+
 /** Startstufe aus dem Bewusstseinstest (oder null). Für das Cockpit. */
 export async function getStartStage(): Promise<number | null> {
   if (!isSupabaseConfigured) return null;

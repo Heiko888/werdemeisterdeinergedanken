@@ -44,6 +44,16 @@ export async function saveStartStage(
 
   if (error) return { saved: false };
 
+  // Verlauf für die Wachstumskurve: jedes Ergebnis als eigener Datensatz.
+  // Bewusst nicht-fatal – falls Migration 0006 noch nicht eingespielt ist,
+  // bleibt das Speichern des Profil-Ergebnisses oben trotzdem gültig.
+  await supabase.from("test_results").insert({
+    user_id: user.id,
+    top_stage: startStage,
+    scores: safeScores,
+  });
+
   revalidatePath("/mitglieder");
   return { saved: true };
 }
+
