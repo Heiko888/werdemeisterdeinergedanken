@@ -16,6 +16,7 @@ import {
   getStartStage,
 } from "@/app/mitglieder/actions";
 import { resolveEntry, formatDate } from "@/lib/journal";
+import { PrintButton } from "@/components/members/PrintButton";
 
 export const dynamic = "force-dynamic";
 
@@ -75,19 +76,28 @@ export default async function JournalPage() {
   return (
     <>
       {/* Kopf + Cockpit */}
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 sm:py-20">
+      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 print:border-0 print:py-4 sm:py-20">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
+          className="pointer-events-none absolute inset-0 -z-10 print:hidden"
           style={{
             background:
               "radial-gradient(55% 60% at 20% 0%, color-mix(in oklab, var(--color-teal-500) 12%, transparent), transparent 65%)",
           }}
         />
         <Container className="flex flex-col items-start gap-5">
+          {/* Nur beim Drucken sichtbar: Buch-Kopf */}
+          <div className="hidden w-full flex-col gap-1 border-b border-ink/15 pb-4 print:flex">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              Werde Meister deiner Gedanken
+            </span>
+            <span className="font-display text-2xl font-medium text-ink">
+              Mein Journal
+            </span>
+          </div>
           <Link
             href="/mitglieder"
-            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
+            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink print:hidden"
           >
             <ArrowRight className="rotate-180" />
             Mein Bereich
@@ -115,11 +125,15 @@ export default async function JournalPage() {
             />
             <Stat value={lastDate} label="Zuletzt geschrieben" />
           </div>
+
+          {resolved.length > 0 && (
+            <PrintButton className="mt-1 inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent print:hidden" />
+          )}
         </Container>
       </section>
 
       {/* Zeitverlauf der Reflexionen */}
-      <section className="py-14 sm:py-20">
+      <section className="py-14 print:py-2 sm:py-20">
         <Container>
           {resolved.length === 0 ? (
             <div className="mx-auto flex max-w-xl flex-col items-start gap-4 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
@@ -143,7 +157,7 @@ export default async function JournalPage() {
             <ol className="mx-auto flex max-w-2xl flex-col gap-5">
               {resolved.map(({ entry, ctx }) => (
                 <li key={`${entry.itemType}-${entry.itemKey}-${entry.ref}`}>
-                  <article className="flex flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+                  <article className="flex break-inside-avoid flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card print:shadow-none">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <Link
                         href={ctx.href}
