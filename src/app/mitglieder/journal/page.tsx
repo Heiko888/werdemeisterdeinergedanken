@@ -19,6 +19,7 @@ import {
 import { resolveEntry, formatDate } from "@/lib/journal";
 import { PrintButton } from "@/components/members/PrintButton";
 import { TestCurve } from "@/components/members/TestCurve";
+import { buildStandort } from "@/lib/standortbestimmung";
 
 export const dynamic = "force-dynamic";
 
@@ -76,6 +77,13 @@ export default async function JournalPage() {
       ? stages[startStage - 1]
       : null;
 
+  const standort = buildStandort({
+    startStage,
+    completedCount,
+    entryTitles: resolved.map((r) => r.ctx.title),
+    testHistory,
+  });
+
   return (
     <>
       {/* Kopf + Cockpit */}
@@ -132,6 +140,55 @@ export default async function JournalPage() {
           {resolved.length > 0 && (
             <PrintButton className="mt-1 inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent print:hidden" />
           )}
+        </Container>
+      </section>
+
+      {/* Standortbestimmung – geerdete Spiegelung aus den eigenen Daten */}
+      <section className="py-10 print:py-4">
+        <Container>
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-leaf-500/[0.06] to-teal-500/[0.06] p-7 shadow-card sm:p-9">
+            <div>
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                Deine Standortbestimmung
+              </span>
+              <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+                Wo du gerade stehst
+              </h2>
+            </div>
+
+            {standort.hasData ? (
+              <div className="flex flex-col gap-3">
+                {standort.paragraphs.map((p) => (
+                  <p
+                    key={p.slice(0, 32)}
+                    className="text-[1.02rem] leading-relaxed text-ink-soft/90"
+                  >
+                    {p}
+                  </p>
+                ))}
+              </div>
+            ) : (
+              <p className="text-[1.02rem] leading-relaxed text-ink-mid">
+                {standort.invite}
+              </p>
+            )}
+
+            {standort.nextStep && (
+              <Link
+                href={standort.nextStep.href}
+                className="group mt-1 inline-flex w-fit items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition-all hover:bg-ink/90 print:hidden"
+              >
+                {standort.nextStep.label}
+                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            )}
+
+            <p className="text-xs text-ink-muted">
+              Diese Standortbestimmung fasst ausschließlich deine eigenen
+              Eingaben zusammen – keine Vorhersage. Sie wächst mit dem, was du
+              einbringst.
+            </p>
+          </div>
         </Container>
       </section>
 
