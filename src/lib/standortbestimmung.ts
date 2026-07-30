@@ -52,7 +52,7 @@ export function buildStandort(input: StandortInput): Standort {
     return {
       hasData: false,
       invite:
-        "Deine Standortbestimmung entsteht aus dem, was du selbst einbringst. Mach den Bewusstseinstest und schreib deine ersten Reflexionen – dann fasse ich hier für dich zusammen, wo du gerade stehst.",
+        "Deine Standortbestimmung entsteht aus dem, was du selbst einbringst – Stück für Stück. Mach den Bewusstseinstest und halte deine ersten Reflexionen fest; dann wächst hier nach und nach ein ehrliches Bild davon, wo du gerade stehst.",
       paragraphs: [],
       nextStep: { label: "Bewusstseinstest starten", href: "/bewusstseinstest" },
     };
@@ -67,38 +67,35 @@ export function buildStandort(input: StandortInput): Standort {
   // 1. Schwerpunkt
   if (stage && startStage) {
     paragraphs.push(
-      `Dein Schwerpunkt liegt gerade auf Stufe ${startStage} – ${stage.name}: „${stage.tagline}". ${stage.result.summary}`,
+      `Gerade jetzt scheint dein Schwerpunkt bei Stufe ${startStage} zu liegen – ${stage.name}, „${stage.tagline}". ${stage.result.summary}`,
     );
   } else {
     paragraphs.push(
-      "Du hast den Bewusstseinstest noch nicht gemacht – deine Standortbestimmung stützt sich daher allein auf deine Reflexionen. Ein Test würde das Bild schärfen.",
+      "Den Bewusstseinstest hast du noch nicht gemacht – deine Standortbestimmung lebt daher ganz von deinen Reflexionen. Ein Test würde das Bild schärfen, aber eilen musst du nichts.",
     );
   }
 
   // 2. Was sich in den Reflexionen zeigt
   if (reflectionCount > 0) {
     const { title, unique } = topTheme(entryTitles);
-    let s = `Du hast bisher zu ${reflectionCount} ${
-      reflectionCount === 1 ? "Frage" : "Fragen"
-    } reflektiert`;
-    s +=
-      unique > 1
-        ? `, verteilt über ${unique} Themen.`
-        : ".";
+    let s = `In deinem Journal haben sich schon ${reflectionCount} ${
+      reflectionCount === 1 ? "Reflexion" : "Reflexionen"
+    } gesammelt, bei denen du innegehalten hast`;
+    s += unique > 1 ? ` – über ${unique} verschiedene Themen hinweg.` : ".";
     if (title) {
-      s += ` Am meisten beschäftigt dich zurzeit „${title}" – dorthin kehrst du am häufigsten zurück.`;
+      s += ` Eines kehrt dabei besonders oft wieder: „${title}". Dort scheint gerade etwas in Bewegung zu sein.`;
     }
     paragraphs.push(s);
   } else {
     paragraphs.push(
-      "Reflexionen hast du noch keine geschrieben. Sobald du zu einer Frage in einer Stufe oder Vertiefung etwas festhältst, wird deine Standortbestimmung persönlicher.",
+      "Reflexionen hast du noch keine festgehalten. Sobald du zu einer Frage etwas notierst – und sei es ein einziger Satz – wird dieses Bild persönlicher und feiner.",
     );
   }
 
   // 3. Fortschritt
   if (completedCount > 0) {
     paragraphs.push(
-      `Auf deinem Weg hast du ${completedCount} von 7 Stufen als abgeschlossen markiert. Es geht nicht ums Abhaken, sondern ums Wiederkommen – jede Stufe darf dich mehrfach begleiten.`,
+      `${completedCount} von 7 Stufen hast du für dich als abgeschlossen markiert. Und doch geht es hier nie ums Abhaken, sondern ums Wiederkommen – jede Stufe darf dich mehr als einmal begleiten.`,
     );
   }
 
@@ -108,15 +105,15 @@ export function buildStandort(input: StandortInput): Standort {
     const last = testHistory[testHistory.length - 1].topStage;
     if (last > first) {
       paragraphs.push(
-        `Über deine Tests hat sich dein Schwerpunkt von Stufe ${first} zu Stufe ${last} bewegt – ein sichtbares Zeichen von Entwicklung.`,
+        `Zwischen deinen Tests hat sich dein Schwerpunkt von Stufe ${first} zu Stufe ${last} verschoben. Etwas ist in dir in Bewegung gekommen – das darf dich ruhig freuen.`,
       );
     } else if (last === first) {
       paragraphs.push(
-        `Dein Schwerpunkt ist über die Tests stabil bei Stufe ${first} geblieben – ein guter Boden, um genau hier tiefer zu gehen.`,
+        `Über deine Tests hinweg ist dein Schwerpunkt bei Stufe ${first} geblieben. Kein Stillstand – eher ein Boden, auf dem du gerade tiefer wurzelst.`,
       );
     } else {
       paragraphs.push(
-        `Dein Schwerpunkt liegt aktuell wieder stärker bei Stufe ${last}. Auch das Zurückkehren gehört zum Weg – Entwicklung verläuft selten geradlinig.`,
+        `Dein Schwerpunkt liegt gerade wieder näher bei Stufe ${last}. Auch das gehört dazu – ein Weg nach innen verläuft selten schnurgerade, und Zurückkehren ist kein Rückschritt.`,
       );
     }
   }
@@ -124,7 +121,9 @@ export function buildStandort(input: StandortInput): Standort {
   // Nächster Schritt
   let nextStep: Standort["nextStep"] = null;
   if (stage && startStage) {
-    paragraphs.push(`Dein nächster Schritt: ${stage.result.nextStep}`);
+    paragraphs.push(
+      `Wenn du magst, wartet hier ein guter nächster Schritt: ${stage.result.nextStep}`,
+    );
     nextStep = {
       label: `Zu Stufe ${startStage} – ${stage.name}`,
       href: `/mitglieder/stufe/${startStage}`,
