@@ -141,13 +141,25 @@ export default async function MembersPage() {
             findest du künftig deine Inhalte, deinen Fortschritt und exklusive
             Materialien.
           </p>
-          <a
-            href="/mitglieder/arbeitsheft"
-            className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
-          >
-            <Download />
-            Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
-          </a>
+          <div className="flex flex-wrap gap-3">
+            {loggedIn && (
+              <Link
+                href="/mitglieder/journal"
+                className="group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper shadow-card transition-all hover:bg-ink/90"
+              >
+                <Check />
+                Mein Journal
+                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            )}
+            <a
+              href="/mitglieder/arbeitsheft"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+            >
+              <Download />
+              Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
+            </a>
+          </div>
         </Container>
       </section>
 

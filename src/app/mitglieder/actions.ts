@@ -148,6 +148,63 @@ export async function saveNote(
   return { ok: !error };
 }
 
+export type JournalEntry = {
+  itemType: NoteItemType;
+  itemKey: string;
+  ref: string;
+  body: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+/**
+ * Alle (nicht-leeren) Journal-Einträge der Person – neueste zuerst.
+ * Grundlage für die zentrale „Mein Journal"-Übersicht.
+ */
+export async function getJournalEntries(): Promise<JournalEntry[]> {
+  if (!isSupabaseConfigured) return [];
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return [];
+
+  const { data } = await supabase
+    .from("notes")
+    .select("item_type, item_key, ref, body, created_at, updated_at")
+    .eq("user_id", user.id)
+    .order("updated_at", { ascending: false });
+
+  return (data ?? [])
+    .filter((row) => String(row.body ?? "").trim().length > 0)
+    .map((row) => ({
+      itemType: row.item_type as NoteItemType,
+      itemKey: row.item_key as string,
+      ref: row.ref as string,
+      body: row.body as string,
+      createdAt: row.created_at as string,
+      updatedAt: row.updated_at as string,
+    }));
+}
+
+/** Startstufe aus dem Bewusstseinstest (oder null). Für das Cockpit. */
+export async function getStartStage(): Promise<number | null> {
+  if (!isSupabaseConfigured) return null;
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return null;
+
+  const { data } = await supabase
+    .from("profiles")
+    .select("start_stage")
+    .eq("id", user.id)
+    .maybeSingle();
+
+  return (data?.start_stage as number | null) ?? null;
+}
+
 // ------------------------------------------------------------
 // E-Mail-Impulse: Abo an-/abschalten
 // ------------------------------------------------------------

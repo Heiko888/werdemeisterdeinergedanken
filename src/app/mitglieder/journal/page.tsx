@@ -1,0 +1,176 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { redirect } from "next/navigation";
+import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/SectionHeading";
+import { ArrowRight } from "@/components/ui/Icon";
+import { createClient } from "@/lib/supabase/server";
+import {
+  isSupabaseConfigured,
+  REQUIRE_MEMBER_LOGIN,
+} from "@/lib/supabase/config";
+import { stages } from "@/lib/content";
+import {
+  getJournalEntries,
+  getCompletedStages,
+  getStartStage,
+} from "@/app/mitglieder/actions";
+import { resolveEntry, formatDate } from "@/lib/journal";
+
+export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Mein Journal",
+  robots: { index: false, follow: false },
+};
+
+function Stat({
+  value,
+  label,
+}: {
+  value: string;
+  label: string;
+}) {
+  return (
+    <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
+      <span className="font-display text-3xl font-medium text-accent">
+        {value}
+      </span>
+      <span className="text-sm text-ink-mid">{label}</span>
+    </div>
+  );
+}
+
+export default async function JournalPage() {
+  if (isSupabaseConfigured) {
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (REQUIRE_MEMBER_LOGIN && !user) {
+      redirect("/login?redirect=/mitglieder/journal");
+    }
+  }
+
+  const [entries, completed, startStage] = await Promise.all([
+    getJournalEntries(),
+    getCompletedStages(),
+    getStartStage(),
+  ]);
+
+  const resolved = entries
+    .map((e) => ({ entry: e, ctx: resolveEntry(e.itemType, e.itemKey, e.ref) }))
+    .filter((x): x is { entry: (typeof entries)[number]; ctx: NonNullable<ReturnType<typeof resolveEntry>> } => x.ctx !== null);
+
+  const reflectionCount = entries.length;
+  const completedCount = stages.filter((s) =>
+    completed.includes(s.number),
+  ).length;
+  const lastDate = entries[0] ? formatDate(entries[0].updatedAt) : "–";
+  const startStageData =
+    startStage && startStage >= 1 && startStage <= stages.length
+      ? stages[startStage - 1]
+      : null;
+
+  return (
+    <>
+      {/* Kopf + Cockpit */}
+      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 sm:py-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            background:
+              "radial-gradient(55% 60% at 20% 0%, color-mix(in oklab, var(--color-teal-500) 12%, transparent), transparent 65%)",
+          }}
+        />
+        <Container className="flex flex-col items-start gap-5">
+          <Link
+            href="/mitglieder"
+            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
+          >
+            <ArrowRight className="rotate-180" />
+            Mein Bereich
+          </Link>
+          <Eyebrow>Dein wachsendes Journal</Eyebrow>
+          <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
+            Mein <em className="accent">Journal</em>
+          </h1>
+          <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+            Hier sammeln sich alle deine Reflexionen an einem Ort – aus den 7
+            Stufen und den Vertiefungen. Ein persönlicher Spiegel, der mit jeder
+            Frage, die du beantwortest, weiterwächst.
+          </p>
+
+          <div className="mt-2 grid w-full grid-cols-2 gap-3 sm:grid-cols-4">
+            <Stat value={String(reflectionCount)} label="Reflexionen" />
+            <Stat value={`${completedCount} / 7`} label="Stufen abgeschlossen" />
+            <Stat
+              value={startStageData ? startStageData.number : "–"}
+              label={
+                startStageData
+                  ? `Startstufe · ${startStageData.title}`
+                  : "Startstufe (Test)"
+              }
+            />
+            <Stat value={lastDate} label="Zuletzt geschrieben" />
+          </div>
+        </Container>
+      </section>
+
+      {/* Zeitverlauf der Reflexionen */}
+      <section className="py-14 sm:py-20">
+        <Container>
+          {resolved.length === 0 ? (
+            <div className="mx-auto flex max-w-xl flex-col items-start gap-4 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
+              <h2 className="font-display text-xl font-medium text-ink">
+                Dein Journal ist noch leer
+              </h2>
+              <p className="text-[1.02rem] leading-relaxed text-ink-mid">
+                Sobald du zu einer Reflexionsfrage in einer Stufe oder Vertiefung
+                etwas schreibst, erscheint es hier – und dein Journal beginnt zu
+                wachsen. Am besten fängst du mit der ersten Stufe an.
+              </p>
+              <Link
+                href="/mitglieder/stufe/1"
+                className="group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition-all hover:bg-ink/90"
+              >
+                Mit Stufe 1 beginnen
+                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            </div>
+          ) : (
+            <ol className="mx-auto flex max-w-2xl flex-col gap-5">
+              {resolved.map(({ entry, ctx }) => (
+                <li key={`${entry.itemType}-${entry.itemKey}-${entry.ref}`}>
+                  <article className="flex flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <Link
+                        href={ctx.href}
+                        className="group inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-accent"
+                      >
+                        {ctx.label} · {ctx.title}
+                        <ArrowRight className="text-ink-muted transition-transform group-hover:translate-x-0.5" />
+                      </Link>
+                      <time className="text-xs text-ink-muted">
+                        {formatDate(entry.updatedAt)}
+                      </time>
+                    </div>
+                    {ctx.question && (
+                      <p className="font-display text-[1.05rem] italic leading-snug text-ink">
+                        {ctx.question}
+                      </p>
+                    )}
+                    <p className="whitespace-pre-wrap text-[1rem] leading-relaxed text-ink-soft/90">
+                      {entry.body}
+                    </p>
+                  </article>
+                </li>
+              ))}
+            </ol>
+          )}
+        </Container>
+      </section>
+    </>
+  );
+}
