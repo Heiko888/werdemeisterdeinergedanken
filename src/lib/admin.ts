@@ -5,7 +5,9 @@
  * (kommagetrennt). Ohne Variable gilt die Haupt-Adresse als Admin.
  * Bewusst NICHT unter NEXT_PUBLIC_* – die Liste bleibt serverseitig.
  */
-const raw = process.env.ADMIN_EMAILS ?? "heiko.schwaninger@gmail.com";
+const raw =
+  process.env.ADMIN_EMAILS ??
+  "heiko.schwaninger@outlook.com,heiko.schwaninger@gmail.com";
 
 export const ADMIN_EMAILS = raw
   .split(",")
