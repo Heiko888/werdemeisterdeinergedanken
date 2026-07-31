@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Reel-Cover Vorlage</title>
+<style>
+  /* =====================================================================
+     Reel-Cover-Vorlage (9:16, 1080×1920) für die Serie
+     „Wie dein Denken gelenkt wird / Gedanken-Hygiene".
+
+     SO NUTZT DU SIE:
+     1. Leg dein Hintergrundbild (das Nano-Banana-Template) als
+        "vorlage.png" NEBEN diese Datei.
+     2. Ändere unten im <body> nur den Text: .tag, .headline, .accent.
+     3. Öffne die Datei im Browser, mach einen Screenshot (oder drucke
+        als Bild) – fertig ist ein Cover. Für alle 16 nur den Text tauschen.
+
+     Farben passend zum Marken-Look (Neon-Gehirn: Teal/Grün auf Navy).
+     ===================================================================== */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #05060c; }
+  .cover {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    font-family: "Arial Black", "Helvetica Neue", Inter, system-ui, sans-serif;
+  }
+  /* Fallback-Verlauf – wird von vorlage.png überdeckt, sobald vorhanden */
+  .cover::before {
+    content: "";
+    position: absolute; inset: 0; z-index: 0;
+    background:
+      radial-gradient(60% 40% at 78% 30%, rgba(52,196,196,.35), transparent 60%),
+      radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),
+      linear-gradient(160deg, #071026 0%, #0b2138 45%, #0a1730 100%);
+  }
+  .bg {
+    position: absolute; inset: 0; z-index: 1;
+    background-image: url("vorlage.png");
+    background-size: cover;
+    background-position: center;
+  }
+  /* Dunkler Verlauf unten → Text bleibt lesbar */
+  .scrim {
+    position: absolute; inset: 0; z-index: 2;
+    background: linear-gradient(to bottom,
+      transparent 42%,
+      rgba(5,9,20,.55) 74%,
+      rgba(5,9,20,.88) 100%);
+  }
+  .content { position: absolute; inset: 0; z-index: 3; }
+
+  /* Serien-Kennung oben rechts */
+  .tag {
+    position: absolute; top: 60px; right: 66px;
+    font-family: "Helvetica Neue", Inter, sans-serif;
+    font-weight: 700; font-size: 27px; letter-spacing: .22em;
+    text-transform: uppercase; color: #7fe0d8;
+    text-shadow: 0 2px 18px rgba(0,0,0,.6);
+  }
+
+  /* Headline im unteren, ruhigen Bereich */
+  .headline {
+    position: absolute; left: 84px; right: 84px; bottom: 330px;
+    font-size: 128px; line-height: 1.02; font-weight: 900;
+    color: #f3f7ff; letter-spacing: -1px;
+    text-shadow: 0 6px 46px rgba(0,0,0,.7);
+  }
+  .headline .accent {
+    color: #83e6bf; /* Teal-Grün wie das Neon-Gehirn */
+  }
+  /* Für lange Headlines diese Klasse an .headline hängen: */
+  .headline.small { font-size: 96px; }
+
+  /* Handle / Domain unten */
+  .handle {
+    position: absolute; left: 84px; bottom: 150px;
+    font-family: "Helvetica Neue", Inter, sans-serif;
+    font-weight: 600; font-size: 30px; letter-spacing: .04em;
+    color: #a7bad2; text-shadow: 0 2px 14px rgba(0,0,0,.7);
+  }
+</style>
+</head>
+<body>
+  <div class="cover">
+    <div class="bg"></div>
+    <div class="scrim"></div>
+    <div class="content">
+      <!-- ▼▼▼ NUR DIESE TEXTE PRO COVER ÄNDERN ▼▼▼ -->
+      <div class="tag">Gedanken-Hygiene · 02</div>
+      <div class="headline">
+        Ein <span class="accent">Wort</span><br>ändert alles
+      </div>
+      <div class="handle">werdemeisterdeinergedanken.de</div>
+      <!-- ▲▲▲ ------------------------------------ ▲▲▲ -->
+    </div>
+  </div>
+</body>
+</html>
