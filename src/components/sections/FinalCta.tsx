@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
@@ -5,24 +6,24 @@ import { ArrowRight } from "@/components/ui/Icon";
 
 export function FinalCta() {
   return (
-    <section className="grain relative overflow-hidden border-t border-ink/10 py-24 sm:py-32">
+    <section className="grain relative overflow-hidden bg-navy-900 py-24 text-cream sm:py-32">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(60% 60% at 50% 100%, color-mix(in oklab, var(--color-teal-500) 12%, transparent), transparent 70%)",
+            "radial-gradient(55% 55% at 50% 105%, color-mix(in oklab, var(--color-teal-500) 24%, transparent), transparent 65%), radial-gradient(45% 40% at 6% -5%, color-mix(in oklab, var(--color-brand-500) 20%, transparent), transparent 62%)",
         }}
       />
       <Container size="narrow" className="flex flex-col items-center gap-8 text-center">
         <Reveal>
-          <h2 className="max-w-2xl text-[2.3rem] font-medium leading-[1.08] text-ink sm:text-5xl">
+          <h2 className="max-w-2xl text-[2.3rem] font-medium leading-[1.08] text-cream sm:text-5xl">
             Bereit für deinen{" "}
             <em className="accent">nächsten Schritt</em>?
           </h2>
         </Reveal>
         <Reveal delay={100}>
-          <p className="mx-auto max-w-xl text-[1.05rem] leading-relaxed text-ink-mid">
+          <p className="mx-auto max-w-xl text-[1.05rem] leading-relaxed text-cream/75">
             Dein Bewusstsein wartet nicht. Jeder Tag, an dem du deine Gedanken
             bewusster wählst, verändert dein Leben ein Stück. Fang heute an.
           </p>
@@ -33,9 +34,12 @@ export function FinalCta() {
               Kostenloses Erstgespräch
               <ArrowRight />
             </Button>
-            <Button href="/die-7-stufen" variant="secondary" size="lg">
+            <Link
+              href="/die-7-stufen"
+              className="inline-flex h-13 items-center justify-center gap-2 rounded-full border border-cream/30 px-7 text-base font-medium text-cream transition-colors hover:border-cream/60 hover:bg-cream/5"
+            >
               Die 7 Stufen ansehen
-            </Button>
+            </Link>
           </div>
         </Reveal>
       </Container>
