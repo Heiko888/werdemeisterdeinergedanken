@@ -1,0 +1,43 @@
+# Praxis – Atembeobachtung (Meditation)
+
+**Format:** Wort-für-Wort zum Einsprechen · **Länge:** ~8 Min · **Stufe 1**
+`[Regie] Warme, ruhige Stimme. Deutlich langsamer sprechen als im Gespräch.`
+`… = Sprechpause (2–3 Sek) · […Pause: 10 Sek] = längere Stille · kursiv = leise/getragen.`
+
+---
+
+Schön, dass du dir diese Zeit nimmst. … Für die nächsten Minuten gibt es nichts zu tun und nichts zu erreichen. … Nur atmen … und zusehen.
+
+Setz dich aufrecht und bequem hin. … Die Füße ruhen auf dem Boden, … die Hände liegen locker in deinem Schoß. … Der Rücken ist aufgerichtet, aber nicht verspannt. … Würdevoll und entspannt zugleich.
+
+Und wenn du magst, … schließe jetzt sanft die Augen. … Wenn dir das lieber ist, lass den Blick einfach weich nach unten sinken. […Pause: 8 Sek]
+
+Nimm zu Beginn ein paar bewusste, etwas tiefere Atemzüge. … Einatmen durch die Nase … und langsam wieder ausatmen. … *Und mit jedem Ausatmen darfst du ein Stück mehr loslassen.* … Noch einmal einatmen … und ausatmen. […Pause: 10 Sek]
+
+Und jetzt … lass deinen Atem ganz von selbst geschehen. … Du musst nichts steuern, nichts vertiefen, nichts verändern. … Der Körper weiß, wie er atmet. … Du bist heute nur der stille Beobachter. […Pause: 10 Sek]
+
+Richte deine Aufmerksamkeit dorthin, … wo du den Atem am deutlichsten spürst. … Vielleicht ist es die kühle Luft an den Nasenflügeln beim Einatmen … und die wärmere Luft beim Ausatmen. … Vielleicht ist es das Heben und Senken deiner Brust. … Oder das sanfte Kommen und Gehen in deinem Bauch. …
+
+Such dir einen dieser Orte aus … und bleib dort. … Das ist für die nächsten Minuten dein Anker. […Pause: 15 Sek]
+
+Und jetzt beobachte einfach. … Ein Atemzug kommt herein … *… und geht wieder hinaus.* … Du musst ihn nicht kommentieren. … Nur bemerken: … Jetzt atme ich ein. … Jetzt atme ich aus. […Pause: 20 Sek]
+
+Vielleicht magst du innerlich ganz leise mitzählen. … Beim Ausatmen: … eins. … Beim nächsten Ausatmen: … zwei. … Und so weiter, bis zehn. … Und dann beginnst du wieder von vorn. […Pause: 20 Sek]
+
+Und irgendwann … wirst du merken, dass du gar nicht mehr beim Atem bist. … Dass du in einen Gedanken abgeglitten bist … an später, an früher, an irgendetwas. …
+
+*Das ist völlig in Ordnung.* … Genau das tut der Geist. … Das ist kein Fehler und kein Versagen. …
+
+Im Gegenteil: … Der Moment, in dem du bemerkst „Ah, ich bin abgeschweift", … ist der wertvollste Moment der ganzen Übung. … Denn in genau diesem Moment bist du wieder wach. … Wieder da. […Pause: 8 Sek]
+
+Ganz ohne Ärger, … ohne dich zu bewerten, … kehrst du einfach freundlich zum Atem zurück. … Und zählst wieder von vorn. … Eins … beim Ausatmen. […Pause: 20 Sek]
+
+*Die Übung ist nicht, nicht abzuschweifen.* … Die Übung ist das freundliche Zurückkehren. … Jedes Mal, wenn du zurückkommst, … trainierst du deine Aufmerksamkeit … wie einen Muskel. […Pause: 20 Sek]
+
+Bleib jetzt noch einen Moment einfach bei deinem Atem. … Nichts tun. … Nur da sein … und atmen. […Pause: 25 Sek]
+
+Und langsam … bring deine Aufmerksamkeit zurück in den Raum. … Spür wieder den Boden unter deinen Füßen … und den Sitz unter dir. … Beweg sanft die Finger … vielleicht die Schultern. …
+
+Nimm noch einen tiefen Atemzug. … Und wenn du bereit bist, … öffne wieder die Augen.
+
+*Diese Ruhe darfst du mitnehmen.* … Und du kannst jederzeit im Tag hierher zurückkehren – … mit einem einzigen bewussten Atemzug.

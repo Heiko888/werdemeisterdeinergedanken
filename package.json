@@ -13,7 +13,8 @@
     "carousels:slides": "node docs/carousels/build.mjs",
     "carousels:png": "node docs/carousels/export-png.mjs",
     "reel-drehbuch": "node tools/pdf/reel-drehbuch.mjs",
-    "endcard": "node docs/reels/covers/endcard.mjs"
+    "endcard": "node docs/reels/covers/endcard.mjs",
+    "langvideo-drehbuch": "node tools/pdf/langvideo-drehbuch.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",
