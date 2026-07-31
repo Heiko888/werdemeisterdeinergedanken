@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/visuals/Logo";
-import { Button } from "@/components/ui/Button";
-import { ArrowRight, socialIcons } from "@/components/ui/Icon";
+import { socialIcons } from "@/components/ui/Icon";
 import { mainNav, legalNav, site } from "@/lib/site";
 
 export function Footer() {
@@ -10,24 +9,8 @@ export function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-navy-900">
-      {/* CTA-Band */}
-      <Container className="flex flex-col items-center gap-6 py-20 text-center">
-        <h2 className="max-w-2xl text-[2rem] font-medium leading-[1.1] text-cream sm:text-4xl">
-          Bereit für <em className="accent">neuen Input</em>?
-        </h2>
-        <p className="max-w-xl text-[1.05rem] leading-relaxed text-cream-dim/75">
-          Mach den ersten Schritt zu einem klareren Kopf. In einem
-          unverbindlichen Gespräch finden wir heraus, wo du stehst – und was dein
-          nächster Schritt ist.
-        </p>
-        <Button href="/kontakt" variant="accent" size="lg">
-          Jetzt Gespräch vereinbaren
-          <ArrowRight />
-        </Button>
-      </Container>
-
       {/* Link-Bereich */}
-      <Container className="grid gap-10 border-t border-white/10 py-14 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
+      <Container className="grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
         <div className="flex flex-col gap-4">
           <Logo tone="onDark" />
           <p className="max-w-xs text-sm leading-relaxed text-cream-dim/65">
