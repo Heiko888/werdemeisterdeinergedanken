@@ -56,13 +56,13 @@ function Bar({ filmed, total }: { filmed: number; total: number }) {
   );
 }
 
-function SectionRow({ s }: { s: ContentSection }) {
+function SectionRow({ s, verb = "gedreht" }: { s: ContentSection; verb?: string }) {
   return (
     <div className="flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <span className="font-medium text-ink">{s.label}</span>
         <span className="text-sm tabular-nums text-ink-mid">
-          {s.filmed} / {s.total} gedreht
+          {s.filmed} / {s.total} {verb}
           {s.pending > 0 && (
             <span className="ml-2 rounded-full bg-gold-300/40 px-2 py-0.5 text-xs font-semibold text-ink">
               {s.pending} offen
@@ -282,6 +282,32 @@ export default async function AdminPage() {
               ))}
             </div>
 
+            {/* Carousels als eigene Produktionslinie */}
+            <div className="mt-8 flex items-baseline justify-between">
+              <p className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
+                Carousels (Foliensequenzen)
+              </p>
+              <span className="text-sm tabular-nums text-ink-mid">
+                {content.carousels.produced} / {content.carousels.total} erstellt
+              </span>
+            </div>
+            <div className="mt-3 flex flex-col gap-3">
+              {content.carousels.series.map((s) => (
+                <SectionRow
+                  key={s.key}
+                  verb="erstellt"
+                  s={{
+                    key: s.key,
+                    label: `Carousel · ${s.label}`,
+                    hint: "Slides in docs/skripte/carousels/",
+                    total: s.total,
+                    filmed: s.produced,
+                    pending: s.total - s.produced,
+                  }}
+                />
+              ))}
+            </div>
+
             {/* Weiteres Marketing-Material */}
             <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
               <Stat
@@ -290,8 +316,8 @@ export default async function AdminPage() {
                 sub={`× ${content.coverFormats} Formate`}
               />
               <Stat value={content.reels.total} label="Reels geplant" />
+              <Stat value={content.carousels.total} label="Carousels geplant" />
               <Stat value={content.blogPosts} label="Blog-Artikel" />
-              <Stat value={content.totals.total} label="Langvideos geplant" />
             </div>
           </div>
         </Container>

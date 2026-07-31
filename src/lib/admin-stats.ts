@@ -16,6 +16,7 @@ import { deepDives } from "@/lib/deep-dives";
 import { stageLessons } from "@/lib/stage-lessons";
 import { postsSorted } from "@/lib/blog";
 import { allReels, reelSeries } from "@/lib/reels";
+import { allCarousels, carouselSeries } from "@/lib/carousels";
 
 const SELBSTVERTEIDIGUNG = "Mentale Selbstverteidigung";
 
@@ -125,6 +126,13 @@ export type ContentInventory = {
     pending: number;
     series: { key: string; label: string; total: number; filmed: number }[];
   };
+  /** Carousels (Foliensequenzen) als eigene Produktionslinie */
+  carousels: {
+    total: number;
+    produced: number;
+    pending: number;
+    series: { key: string; label: string; total: number; produced: number }[];
+  };
   blogPosts: number;
   coverMotifs: number;
   coverFormats: number;
@@ -191,10 +199,24 @@ export function getContentInventory(): ContentInventory {
     })),
   };
 
+  const carouselsProduced = allCarousels.filter((c) => c.produced).length;
+  const carousels = {
+    total: allCarousels.length,
+    produced: carouselsProduced,
+    pending: allCarousels.length - carouselsProduced,
+    series: carouselSeries.map((s) => ({
+      key: s.key,
+      label: s.label,
+      total: s.carousels.length,
+      produced: s.carousels.filter((c) => c.produced).length,
+    })),
+  };
+
   return {
     sections,
     totals,
     reels,
+    carousels,
     blogPosts: postsSorted.length,
     coverMotifs,
     coverFormats: 5,
