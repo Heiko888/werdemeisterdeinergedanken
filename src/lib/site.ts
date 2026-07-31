@@ -31,9 +31,7 @@ export const mainNav: NavItem[] = [
   { label: "Mitgliedschaft", href: "/mitgliedschaft" },
   { label: "Bewusstseinstest", href: "/bewusstseinstest" },
   { label: "Über mich", href: "/ueber-mich" },
-  { label: "Angebot", href: "/#angebot" },
   { label: "Blog", href: "/blog" },
-  { label: "Kontakt", href: "/kontakt" },
 ];
 
 export const legalNav: NavItem[] = [

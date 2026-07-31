@@ -47,7 +47,7 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                "rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
+                "whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
                 pathname === item.href && "text-ink",
               )}
             >
@@ -63,7 +63,7 @@ export function Header() {
           >
             Mitglieder
           </Link>
-          <Button href="/kontakt" variant="primary" size="md">
+          <Button href="/kontakt" variant="primary" size="md" className="whitespace-nowrap">
             Kostenloses Erstgespräch
           </Button>
         </div>
