@@ -18,8 +18,7 @@ E-Book – Link in Bio", „Speichern & beim nächsten Mal dran denken".
 
 Kurze, fette Cover-Sätze (2–5 Wörter) zum Einblenden aufs Standbild – der
 Stopp-Effekt beim Scrollen. Primärvorschlag **fett**, dahinter Alternativen.
-Empfehlung: einheitliches Template + kleine Serien-Kennung „Gedanken-Hygiene
-#1–16" in einer Ecke.
+Empfehlung: einheitliches Template + kleine Serien-Kennung „Mentale Selbstverteidigung #1–16" in einer Ecke.
 
 | # | Thema | Primär | Alternativen |
 |---|---|---|---|
@@ -69,7 +68,7 @@ farblich hervorheben (z. B. **Lüge**, **Feed**, **Angst**).
 **HOOK:** „Medien müssen dir nicht sagen, was du denken sollst."
 **SKRIPT:** Es reicht, festzulegen, worüber du täglich nachdenkst. Was ständig vorkommt, wirkt wichtig. Was fehlt, existiert im Kopf kaum. Drei stille Werkzeuge: Auswahl, Häufigkeit, Weglassen. Ein Thema jeden Tag wirkt dringlicher als eins, das nur einmal auftaucht – egal wie wichtig es wirklich ist. Die Frage, die den Blick verändert: Welches wichtige Thema kommt hier eigentlich gar nicht vor?
 **ON-SCREEN:** Auswahl · Häufigkeit · Weglassen.
-**CTA:** „Folge für mehr Gedanken-Hygiene."
+**CTA:** „Folge für mehr Durchblick."
 
 ## 5 · Algorithmen & Filterblasen
 **HOOK:** „Du siehst online nicht die Welt. Du siehst dich selbst."
