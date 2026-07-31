@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Check } from "@/components/ui/Icon";
 import { EbookForm } from "./EbookForm";
-import ebookCover from "../../../public/ebook-cover.webp";
+import ebookMockup from "../../../public/ebook-mockup.webp";
 
 const bullets = [
   "Die 7 Stufen kompakt erklärt",
@@ -29,10 +29,10 @@ export function LeadMagnet() {
                 }}
               />
               <Image
-                src={ebookCover}
+                src={ebookMockup}
                 alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
                 priority
-                className="h-auto w-56 drop-shadow-2xl sm:w-64"
+                className="h-auto w-64 sm:w-72"
               />
             </div>
           </div>
