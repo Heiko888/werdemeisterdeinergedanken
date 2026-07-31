@@ -15,21 +15,21 @@ export default function BewusstseinstestPage() {
   return (
     <>
       {/* Kopf */}
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 sm:py-20">
+      <section className="grain relative overflow-hidden bg-navy-900 py-20 text-cream sm:py-24">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
           style={{
             background:
-              "radial-gradient(55% 45% at 50% 0%, color-mix(in oklab, var(--color-teal-500) 12%, transparent), transparent 65%)",
+              "radial-gradient(50% 55% at 50% -5%, color-mix(in oklab, var(--color-teal-500) 22%, transparent), transparent 62%), radial-gradient(45% 40% at 6% 100%, color-mix(in oklab, var(--color-brand-500) 20%, transparent), transparent 62%)",
           }}
         />
         <Container size="narrow" className="flex flex-col items-center gap-5 text-center">
           <Eyebrow>Bewusstseinstest</Eyebrow>
-          <h1 className="text-[1.9rem] font-medium leading-[1.1] text-ink [hyphens:none] [overflow-wrap:normal] sm:text-5xl">
+          <h1 className="text-[1.9rem] font-medium leading-[1.1] text-cream [hyphens:none] [overflow-wrap:normal] sm:text-5xl">
             Wo findest du dich <em className="accent">gerade</em>?
           </h1>
-          <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-mid">
+          <p className="max-w-xl text-[1.05rem] leading-relaxed text-cream/75">
             21 ehrliche Fragen zeigen dir, auf welcher der 7 Stufen der
             Bewusstseinsentwicklung du aktuell stehst – und welcher nächste
             Schritt für dich möglich ist. Antworte spontan; es gibt kein Richtig
