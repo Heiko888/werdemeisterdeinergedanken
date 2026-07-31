@@ -170,7 +170,7 @@ COVER = """
   <div class="inner">
     <div class="brandrow"><img src="__LOGO__"><span>Werde Meister<br>deiner Gedanken</span></div>
     <div class="eyebrow">Kostenloses E-Book</div>
-    <h1 class="title serif">Die 7 Stufen<br><em>der Bewusstseinsentwicklung</em></h1>
+    <h1 class="title serif">Die 7 Stufen der<br><em>Bewusstseinsentwicklung</em></h1>
     <p class="promise">Der Weg vom <b>Autopilot</b> zur <b>Meisterschaft</b> deiner Gedanken &ndash;
        kompakt erkl&auml;rt, mit einer <b>ersten &Uuml;bung f&uuml;r jede Stufe</b>, die du sofort ausprobieren kannst.</p>
     <div class="bullets">
