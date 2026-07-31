@@ -7,7 +7,7 @@ import { ArrowRight } from "@/components/ui/Icon";
 
 export function MaybeNotYou() {
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="relative py-16 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal>
           <div className="flex flex-col items-start gap-6">

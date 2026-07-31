@@ -71,7 +71,7 @@ export default function MitgliedschaftPage() {
         <div className="grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-[1.15fr_.85fr]">
           <div>
             <Eyebrow>Der Mitgliederbereich</Eyebrow>
-            <h1 className="mt-4 text-[2.6rem] font-medium leading-[1.03] text-cream sm:text-6xl">
+            <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
               Vom Autopilot zur <em className="accent">Meisterschaft</em>
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/75">
@@ -114,7 +114,7 @@ export default function MitgliedschaftPage() {
       </DarkSection>
 
       {/* Problem */}
-      <section className="bg-paper py-20 sm:py-28">
+      <section className="bg-paper py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Kennst du das?</Eyebrow>
@@ -184,7 +184,7 @@ export default function MitgliedschaftPage() {
       </DarkSection>
 
       {/* Was drin ist */}
-      <section className="bg-paper py-20 sm:py-28">
+      <section className="bg-paper py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Deine Mitgliedschaft</Eyebrow>
@@ -234,7 +234,7 @@ export default function MitgliedschaftPage() {
       </DarkSection>
 
       {/* Stimmen */}
-      <section className="bg-paper py-20 sm:py-28">
+      <section className="bg-paper py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Stimmen</Eyebrow>
@@ -333,7 +333,7 @@ export default function MitgliedschaftPage() {
       </DarkSection>
 
       {/* FAQ */}
-      <section id="faq" className="bg-paper py-20 sm:py-28">
+      <section id="faq" className="bg-paper py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Häufige Fragen</Eyebrow>

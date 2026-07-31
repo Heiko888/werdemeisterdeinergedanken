@@ -22,14 +22,14 @@ export function Hero() {
         }}
       />
 
-      <Container className="grid items-center gap-14 pt-20 pb-24 sm:pt-28 sm:pb-32 lg:grid-cols-[1.1fr_0.9fr]">
+      <Container className="grid items-center gap-14 pt-14 pb-16 sm:pt-28 sm:pb-32 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="flex flex-col items-start gap-8">
           <Reveal>
             <Eyebrow>Bewusstseinsentwicklung in 7 Stufen</Eyebrow>
           </Reveal>
 
           <Reveal delay={80}>
-            <h1 className="max-w-2xl text-[2.6rem] font-medium leading-[1.08] text-cream sm:text-5xl md:text-6xl">
+            <h1 className="max-w-2xl text-[2.15rem] font-medium leading-[1.08] text-cream sm:text-5xl md:text-6xl">
               Dein Bewusstsein ist der{" "}
               <em className="accent">Schlüssel</em>. Deine Gedanken sind der{" "}
               <em className="accent">Code</em>.

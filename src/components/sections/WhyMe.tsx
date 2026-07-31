@@ -8,7 +8,7 @@ import heikoPortrait from "../../../public/heiko-portrait.webp";
 
 export function WhyMe() {
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="relative py-16 sm:py-32">
       <Container className="grid gap-16 lg:grid-cols-[1fr_0.85fr]">
         {/* Story */}
         <Reveal>

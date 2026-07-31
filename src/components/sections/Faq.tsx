@@ -19,7 +19,7 @@ export function Faq({
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="relative border-t border-ink/10 py-24 sm:py-32">
+    <section className="relative border-t border-ink/10 py-16 sm:py-32">
       <Container size="narrow">
         <SectionHeading eyebrow={eyebrow} title={title} />
 

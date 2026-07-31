@@ -23,7 +23,7 @@ export default async function LoginPage({
   const { redirect } = await searchParams;
 
   return (
-    <section className="grain relative overflow-hidden py-20 sm:py-28">
+    <section className="grain relative overflow-hidden py-14 sm:py-28">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
