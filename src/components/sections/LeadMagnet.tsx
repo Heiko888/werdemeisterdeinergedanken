@@ -30,7 +30,7 @@ export function LeadMagnet() {
               />
               <Image
                 src={ebookCover}
-                alt="E-Book „Werde Meister deiner Gedanken“ von Heiko Schwaninger – Wie du mit Energie, Bewusstsein und Praxis dein Leben neu gestaltest"
+                alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
                 priority
                 className="h-auto w-56 drop-shadow-2xl sm:w-64"
               />
