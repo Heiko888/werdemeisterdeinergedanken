@@ -11,7 +11,9 @@
     "covers": "node docs/reels/covers/build.mjs",
     "covers:png": "node docs/reels/covers/export-png.mjs",
     "carousels:slides": "node docs/carousels/build.mjs",
-    "carousels:png": "node docs/carousels/export-png.mjs"
+    "carousels:png": "node docs/carousels/export-png.mjs",
+    "reel-drehbuch": "node tools/pdf/reel-drehbuch.mjs",
+    "endcard": "node docs/reels/covers/endcard.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",
