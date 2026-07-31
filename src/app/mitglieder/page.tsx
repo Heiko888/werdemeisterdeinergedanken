@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check, Download, Play } from "@/components/ui/Icon";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
+import { isAdminEmail } from "@/lib/admin";
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
 import { deepDivesByCategory } from "@/lib/deep-dives";
@@ -30,6 +31,7 @@ export default async function MembersPage() {
   let startStage: number | null = null;
   let completedKeys: string[] = [];
   let newsletterOptIn = false;
+  let isAdmin = false;
 
   if (isSupabaseConfigured) {
     const supabase = await createClient();
@@ -42,6 +44,7 @@ export default async function MembersPage() {
 
     if (user) {
       loggedIn = true;
+      isAdmin = isAdminEmail(user.email);
 
       const { data: profile } = await supabase
         .from("profiles")
@@ -159,6 +162,15 @@ export default async function MembersPage() {
               <Download />
               Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
             </a>
+            {isAdmin && (
+              <Link
+                href="/admin"
+                className="group inline-flex items-center gap-2 rounded-full border border-accent/40 bg-white px-5 py-2.5 text-sm font-medium text-accent shadow-card transition-all hover:border-accent/70"
+              >
+                Marketing-Cockpit
+                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            )}
           </div>
         </Container>
       </section>
