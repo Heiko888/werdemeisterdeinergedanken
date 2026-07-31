@@ -274,7 +274,7 @@
 
 /* =====================================================================
    Reel-Cover-Vorlage (9:16, 1080×1920) – Serie „Mentale Selbstverteidigung".
-   Schrift & Akzent-Verlauf wie auf der Website (Fraunces + leaf→teal).
+   Schrift & Verlauf wie auf der Website (Fraunces + leaf→teal).
    NUTZUNG: 1) Dein Nano-Banana-Bild als "vorlage.png" neben diese Datei.
             2) Unten im <body> nur Text ändern (Tag · Headline · Akzentwort).
             3) Im Browser öffnen → Screenshot → fertig. Für alle 16 Text tauschen.
@@ -293,9 +293,14 @@ html,body { background:#05060c; }
 .scrim { position:absolute; inset:0; z-index:2;
   background:linear-gradient(to bottom, transparent 42%, rgba(5,9,20,.55) 74%, rgba(5,9,20,.9) 100%); }
 .content { position:absolute; inset:0; z-index:3; }
+/* Serien-Tag oben: Marken-Verlauf leaf→teal (wie das .accent der Website) */
 .tag { position:absolute; top:62px; right:66px; left:84px; text-align:right;
-  font-family:'Inter',sans-serif; font-weight:700; font-size:24px; letter-spacing:.16em;
-  text-transform:uppercase; color:#7fe0d8; text-shadow:0 2px 18px rgba(0,0,0,.6); }
+  font-family:'Inter',sans-serif; font-weight:800; font-size:24px; letter-spacing:.16em;
+  text-transform:uppercase;
+  background:linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent;
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,.55)); }
 .headline { position:absolute; left:84px; right:84px; bottom:330px;
   font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:132px; line-height:1.04;
   letter-spacing:-1px; color:#f4f7ff; filter:drop-shadow(0 6px 34px rgba(0,0,0,.6)); }
