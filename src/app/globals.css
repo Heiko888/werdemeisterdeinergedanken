@@ -161,7 +161,9 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    /* `clip` verhindert horizontales Scrollen, ohne den Body zum
+       Scroll-Container zu machen – sonst klebt der sticky-Header nicht mehr. */
+    overflow-x: clip;
   }
 
   h1,
