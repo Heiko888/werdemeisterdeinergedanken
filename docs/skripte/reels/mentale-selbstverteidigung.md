@@ -14,6 +14,39 @@ E-Book – Link in Bio", „Speichern & beim nächsten Mal dran denken".
 
 ---
 
+## Thumbnail-Texte (Reel-Cover)
+
+Kurze, fette Cover-Sätze (2–5 Wörter) zum Einblenden aufs Standbild – der
+Stopp-Effekt beim Scrollen. Primärvorschlag **fett**, dahinter Alternativen.
+Empfehlung: einheitliches Template + kleine Serien-Kennung „Gedanken-Hygiene
+#1–16" in einer Ecke.
+
+| # | Thema | Primär | Alternativen |
+|---|---|---|---|
+| 1 | Propaganda | **Ohne eine einzige Lüge** | „Keine Lüge nötig" · „So wirkt Propaganda wirklich" |
+| 2 | Framing | **Ein Wort ändert alles** | „Gleiche Zahl, anderes Gefühl" · „Investiert oder verschwendet?" |
+| 3 | Sprache & Etiketten | **Ein Wort beendet jede Debatte** | „Experte oder Querulant?" · „Das Etikett denkt für dich" |
+| 4 | Medien | **Nicht WAS – sondern WORÜBER** | „Wer wählt deine Themen?" · „Was NICHT berichtet wird" |
+| 5 | Algorithmen | **Dein Feed ≠ die Welt** | „Du siehst dich selbst" · „Warum du Recht zu haben glaubst" |
+| 6 | Werbung | **Sie verkauft dir den Mangel** | „Dir fehlt nichts" · „Warum du wirklich kaufst" |
+| 7 | Gruppendruck | **Laut ≠ Mehrheit** | „Die Mehrheit gibt's nicht" · „Warum alle schweigen" |
+| 8 | Autorität | **Titel ≠ Wahrheit** | „Darf ein Experte irren?" · „Wann Vertrauen blind wird" |
+| 9 | Angst | **Angst macht dich lenkbar** | „Erst Bedrohung, dann ‚Schutz'" · „Warum Angst funktioniert" |
+| 10 | Wiederholung | **Oft gehört = wahr?** | „Der Wiederholungs-Trick" · „Warum du es glaubst" |
+| 11 | Ablenkung | **Keine Lüge. Nur Lärm.** | „Wie man dich ablenkt" · „Empörung macht müde" |
+| 12 | Kognitive Dissonanz | **Warum du wegschaust** | „Unbequem ≠ falsch" · „Warum wir Fehler leugnen" |
+| 13 | Normalisierung | **„War doch schon immer so"?** | „Wie das Undenkbare normal wird" · „Schritt für Schritt" |
+| 14 | Bilder | **Ein Bild ist kein Beweis** | „Was liegt außerhalb?" · „Der Ausschnitt lügt" |
+| 15 | Identität & Meinung | **Hast du eine Meinung – oder sie dich?** | „Wenn Kritik weh tut" · „Deine Meinung = du?" |
+| 16 | Reizüberflutung | **Dein Gehirn im Daueralarm** | „Warum du schlechter denkst" · „Zu viele Reize" |
+
+**Design-Tipps fürs Cover:** max. 3 Zeilen, sehr großer Schriftgrad, hoher
+Kontrast (heller Text auf dunklem Marken-Navy, Akzentwort in Teal/Grün);
+gleiches Layout für alle 16 → sofort als Serie erkennbar; ein Schlüsselwort
+farblich hervorheben (z. B. **Lüge**, **Feed**, **Angst**).
+
+---
+
 ## 1 · Propaganda
 **HOOK:** „Propaganda erkennst du nicht an lauten Parolen. Sondern hieran."
 **SKRIPT:** Die wirksamste Beeinflussung zwingt dir keine Meinung auf. Sie arbeitet mit drei leisen Hebeln: Wiederholung – was du oft hörst, hältst du für wahr. Emotion – wer Angst hat, prüft nicht mehr. Und Vereinfachung – ein komplexes Thema wird zu Gut gegen Böse. Das Verrückte: Keiner dieser Hebel braucht eine einzige Lüge. Man kann dich mit wahren Fakten komplett in die Irre führen – allein durch Auswahl. Die eine Schutzfrage: Woher habe ich das eigentlich – geprüft oder nur oft gehört?
