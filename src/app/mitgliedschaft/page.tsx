@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { Button } from "@/components/ui/Button";
+import { CheckoutButton } from "@/components/membership/CheckoutButton";
 import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { stages, testimonials, faqs } from "@/lib/content";
 import { practices } from "@/lib/practices";
@@ -79,9 +79,7 @@ export default function MitgliedschaftPage() {
               das mit dir wächst. Raus aus alten Mustern, rein in echte innere Klarheit.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="/kontakt" variant="accent" size="lg">
-                Mitglied werden
-              </Button>
+              <CheckoutButton size="lg">Mitglied werden</CheckoutButton>
               <Link
                 href="/bewusstseinstest"
                 className="inline-flex h-13 items-center justify-center gap-2 rounded-full border border-cream/30 px-7 text-base font-medium text-cream transition-colors hover:border-cream/60 hover:bg-cream/5"
@@ -301,9 +299,9 @@ export default function MitgliedschaftPage() {
                 </li>
               ))}
             </ul>
-            <Button href="/kontakt" variant="accent" size="lg" className="mt-8 w-full">
+            <CheckoutButton size="lg" className="mt-8 w-full">
               Mitglied werden
-            </Button>
+            </CheckoutButton>
           </div>
           <div>
             <Eyebrow>Zugang</Eyebrow>
@@ -374,9 +372,7 @@ export default function MitgliedschaftPage() {
           Der erste Schritt ist nicht ändern, sondern sehen. Fang heute an.
         </p>
         <div className="mt-8 flex justify-center">
-          <Button href="/kontakt" variant="accent" size="lg">
-            Jetzt Mitglied werden
-          </Button>
+          <CheckoutButton size="lg">Jetzt Mitglied werden</CheckoutButton>
         </div>
         <p className="text-gradient-leaf mt-7 text-sm font-semibold tracking-wide">
           www.werdemeisterdeinergedanken.de
