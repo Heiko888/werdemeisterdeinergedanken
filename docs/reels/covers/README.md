@@ -42,9 +42,16 @@ covers/
    `<bereich>/<format>/`-Ordner legen (sonst zeigt sich der gebrandete Verlauf).
 2. `index.html` im Ordner `covers/` öffnen und durchklicken – oder direkt eine
    `cover-NN.html` im Browser öffnen.
-3. Screenshot in der angegebenen Größe – fertig. (Tipp: DevTools-Geräteansicht
-   auf die Zielgröße stellen, dann Vollbild-Screenshot.)
-   Alternativ automatisiert exportieren (siehe unten).
+3. **Automatisch als PNG exportieren** (empfohlen – ein Befehl, alle Cover):
+   ```
+   npm run covers:png                       # alle Bereiche & Formate
+   node docs/reels/covers/export-png.mjs stufen          # nur ein Bereich
+   node docs/reels/covers/export-png.mjs stufen reel-9x16   # Bereich + Format
+   SCALE=2 npm run covers:png               # doppelte Auflösung
+   ```
+   Ergebnis: `docs/reels/covers/export/<bereich>/<format>/cover-NN.png` –
+   pixelgenau, gerendert mit demselben Chromium wie die PDF-Pipeline.
+   (Alternativ von Hand: DevTools-Geräteansicht auf die Zielgröße, Screenshot.)
 
 ## Texte/Motive ändern oder ergänzen
 Alles steht **an einer Stelle**: in `build.mjs` im Array `COLLECTIONS`

@@ -248,21 +248,50 @@ export default async function AdminPage() {
               </p>
             )}
 
-            <div className="mt-6 flex flex-col gap-3">
+            <p className="mt-6 mb-2 text-sm font-semibold uppercase tracking-wide text-ink-muted">
+              Langvideos
+            </p>
+            <div className="flex flex-col gap-3">
               {content.sections.map((s) => (
                 <SectionRow key={s.key} s={s} />
               ))}
             </div>
 
+            {/* Reels als eigene Produktionslinie */}
+            <div className="mt-8 flex items-baseline justify-between">
+              <p className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
+                Reels (Kurzvideos)
+              </p>
+              <span className="text-sm tabular-nums text-ink-mid">
+                {content.reels.filmed} / {content.reels.total} gedreht
+              </span>
+            </div>
+            <div className="mt-3 flex flex-col gap-3">
+              {content.reels.series.map((s) => (
+                <SectionRow
+                  key={s.key}
+                  s={{
+                    key: s.key,
+                    label: `Reels · ${s.label}`,
+                    hint: "Skripte in docs/skripte/reels/",
+                    total: s.total,
+                    filmed: s.filmed,
+                    pending: s.total - s.filmed,
+                  }}
+                />
+              ))}
+            </div>
+
             {/* Weiteres Marketing-Material */}
-            <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
               <Stat
                 value={content.coverMotifs}
                 label="Cover-Motive"
                 sub={`× ${content.coverFormats} Formate`}
               />
+              <Stat value={content.reels.total} label="Reels geplant" />
               <Stat value={content.blogPosts} label="Blog-Artikel" />
-              <Stat value={content.totals.total} label="Videos geplant" />
+              <Stat value={content.totals.total} label="Langvideos geplant" />
             </div>
           </div>
         </Container>

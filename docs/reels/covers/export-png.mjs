@@ -1,0 +1,98 @@
+/**
+ * PNG-Export für alle Cover.
+ * --------------------------
+ * Rendert jede cover-NN.html mit Chromium pixelgenau als PNG – dasselbe
+ * Chromium, das auch die PDF-Pipeline nutzt (kein Zusatz-Tool nötig).
+ *
+ *   node docs/reels/covers/export-png.mjs                 # alles
+ *   node docs/reels/covers/export-png.mjs selbstverteidigung   # nur ein Bereich
+ *   node docs/reels/covers/export-png.mjs stufen reel-9x16     # Bereich + Format
+ *
+ * Ausgabe:  docs/reels/covers/export/<bereich>/<format>/cover-NN.png
+ * Für den echten Hintergrund vorher deine vorlage.png in die jeweiligen
+ * <bereich>/<format>-Ordner legen (sonst rendert der Marken-Verlauf).
+ *
+ * Optional: SCALE=2 node … → doppelte Auflösung (z. B. 2160×3840).
+ */
+import { existsSync, mkdirSync, readdirSync } from "node:fs";
+import { spawnSync } from "node:child_process";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { dirname, join } from "node:path";
+import { FORMATS, COLLECTIONS, pad2 } from "./data.mjs";
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const SCALE = Number(process.env.SCALE || "1") || 1;
+
+function findChrome() {
+  if (process.env.CHROME_BIN && existsSync(process.env.CHROME_BIN)) return process.env.CHROME_BIN;
+  const roots = [process.env.PLAYWRIGHT_BROWSERS_PATH, "/opt/pw-browsers"].filter(Boolean);
+  for (const r of roots) {
+    try {
+      for (const d of readdirSync(r)) {
+        if (!d.startsWith("chromium")) continue;
+        for (const bin of [
+          "chrome-linux/chrome",
+          "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+          "chrome-win/chrome.exe",
+        ]) {
+          const p = join(r, d, bin);
+          if (existsSync(p)) return p;
+        }
+      }
+    } catch {}
+  }
+  for (const c of ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser"]) {
+    const r = spawnSync(process.platform === "win32" ? "where" : "which", [c], { encoding: "utf8" });
+    if (r.status === 0) return r.stdout.trim().split("\n")[0];
+  }
+  throw new Error(
+    "Kein Chromium/Chrome gefunden. Setze CHROME_BIN oder führe aus:  npx playwright install chromium",
+  );
+}
+
+const CHROME = findChrome();
+const [onlyColl, onlyFormat] = process.argv.slice(2);
+
+function shot(htmlPath, pngPath, w, h) {
+  const r = spawnSync(
+    CHROME,
+    [
+      "--headless=new",
+      "--no-sandbox",
+      "--disable-gpu",
+      "--hide-scrollbars",
+      `--force-device-scale-factor=${SCALE}`,
+      `--window-size=${w},${h}`,
+      "--virtual-time-budget=2500", // wartet aufs Rendern (Schriften)
+      `--screenshot=${pngPath}`,
+      pathToFileURL(htmlPath).href,
+    ],
+    { stdio: "ignore" },
+  );
+  if (r.status !== 0 || !existsSync(pngPath)) {
+    throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
+  }
+}
+
+let n = 0;
+const collections = COLLECTIONS.filter((c) => !onlyColl || c.key === onlyColl);
+if (collections.length === 0) {
+  console.error(`Unbekannter Bereich: ${onlyColl}. Verfügbar: ${COLLECTIONS.map((c) => c.key).join(", ")}`);
+  process.exit(1);
+}
+
+for (const coll of collections) {
+  const formats = FORMATS.filter((f) => !onlyFormat || f.key === onlyFormat);
+  for (const f of formats) {
+    const srcDir = join(HERE, coll.key, f.key);
+    const outDir = join(HERE, "export", coll.key, f.key);
+    mkdirSync(outDir, { recursive: true });
+    coll.items.forEach((_it, i) => {
+      const nn = pad2(i + 1);
+      shot(join(srcDir, `cover-${nn}.html`), join(outDir, `cover-${nn}.png`), f.w, f.h);
+      n++;
+    });
+    console.log(`✓ ${coll.key}/${f.key} · ${coll.items.length} PNG`);
+  }
+}
+console.log(`\nFertig: ${n} PNG in docs/reels/covers/export/${SCALE > 1 ? `  (×${SCALE})` : ""}`);

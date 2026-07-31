@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "pdf": "node tools/pdf/generate.mjs"
+    "pdf": "node tools/pdf/generate.mjs",
+    "covers": "node docs/reels/covers/build.mjs",
+    "covers:png": "node docs/reels/covers/export-png.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",

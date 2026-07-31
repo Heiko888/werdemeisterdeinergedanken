@@ -45,3 +45,7 @@ next-env.d.ts
 
 # PDF-Generator (Build-Zwischenstände)
 tools/pdf/.build/
+
+# Cover-Studio: exportierte PNG + eigene Hintergrundbilder (nicht versionieren)
+docs/reels/covers/export/
+docs/reels/covers/**/vorlage.png

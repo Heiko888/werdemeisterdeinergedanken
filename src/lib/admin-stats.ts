@@ -15,6 +15,7 @@ import { practices } from "@/lib/practices";
 import { deepDives } from "@/lib/deep-dives";
 import { stageLessons } from "@/lib/stage-lessons";
 import { postsSorted } from "@/lib/blog";
+import { allReels, reelSeries } from "@/lib/reels";
 
 const SELBSTVERTEIDIGUNG = "Mentale Selbstverteidigung";
 
@@ -117,6 +118,13 @@ export type ContentSection = {
 export type ContentInventory = {
   sections: ContentSection[];
   totals: { total: number; filmed: number; pending: number };
+  /** Reels als eigene Produktionslinie (Kurzvideos, getrennt von Langvideos) */
+  reels: {
+    total: number;
+    filmed: number;
+    pending: number;
+    series: { key: string; label: string; total: number; filmed: number }[];
+  };
   blogPosts: number;
   coverMotifs: number;
   coverFormats: number;
@@ -170,9 +178,23 @@ export function getContentInventory(): ContentInventory {
   // Cover-Motive = 7 Stufen + Praxis + alle Vertiefungen (inkl. Selbstverteidigung)
   const coverMotifs = stages.length + practices.length + deepDives.length;
 
+  const reelsFilmed = allReels.filter((r) => r.filmed).length;
+  const reels = {
+    total: allReels.length,
+    filmed: reelsFilmed,
+    pending: allReels.length - reelsFilmed,
+    series: reelSeries.map((s) => ({
+      key: s.key,
+      label: s.label,
+      total: s.reels.length,
+      filmed: s.reels.filter((r) => r.filmed).length,
+    })),
+  };
+
   return {
     sections,
     totals,
+    reels,
     blogPosts: postsSorted.length,
     coverMotifs,
     coverFormats: 5,
