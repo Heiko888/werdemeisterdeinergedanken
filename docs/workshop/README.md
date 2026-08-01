@@ -21,7 +21,7 @@ deiner Gedanken". Jedes Thema enthält drei Bausteine:
 | Ordner | Thema | Fokus |
 |---|---|---|
 | `7-stufen/` | Die 7 Stufen der Bewusstseinsentwicklung | Der Kern-Weg vom Autopilot zur Meisterschaft |
-| `mentale-selbstverteidigung/` | Mentale Selbstverteidigung | Wie dein Denken gelenkt wird – und wie du dich schützt |
+| `mentale-selbstverteidigung/` | Mentale Selbstverteidigung (Ganztags) | Alle 16 Mechanismen, mit denen Denken gelenkt wird |
 | `praxis/` | Der Praxis-Werkzeugkasten | Atem, Meditation und Rituale für den Alltag |
 | `vertiefungen/` | Deinen Kopf verstehen | Die psychologischen Mechanismen hinter den Gedanken |
 
