@@ -1,8 +1,26 @@
 import { NextResponse } from "next/server";
 import { getStripe, STRIPE_PRICE_ID } from "@/lib/stripe";
 import { createClient } from "@/lib/supabase/server";
+import { site } from "@/lib/site";
 
 export const runtime = "nodejs";
+
+/**
+ * Basis-URL für Rückkehr-Links (Stripe success/cancel und die Fallbacks).
+ *
+ * Hinter dem Reverse-Proxy ist `request.url` die INTERNE Adresse
+ * (http://localhost:3000) – daraus gebaute Links führen ins Leere, im
+ * Stripe-Fall sogar nach dem Bezahlen. In Produktion deshalb die kanonische
+ * Domain aus site.ts, lokal weiterhin die echte Request-Herkunft, damit
+ * `next dev` nutzbar bleibt.
+ *
+ * Bewusst NICHT aus `x-forwarded-host` gebaut: der Header ist clientseitig
+ * setzbar, damit wären die Rückkehr-Links von außen manipulierbar.
+ */
+function baseUrl(request: Request): string {
+  if (process.env.NODE_ENV === "production") return site.url;
+  return new URL(request.url).origin;
+}
 
 /**
  * Startet den Stripe-Checkout für die Abo-Mitgliedschaft.
@@ -17,7 +35,7 @@ export const runtime = "nodejs";
  *   3. Weiterleitung (303) auf die gehostete Stripe-Bezahlseite.
  */
 export async function POST(request: Request) {
-  const origin = new URL(request.url).origin;
+  const origin = baseUrl(request);
   const stripe = getStripe();
 
   if (!stripe || !STRIPE_PRICE_ID) {
@@ -68,6 +86,5 @@ export async function POST(request: Request) {
 
 /** Direkter Aufruf per GET → zurück zur Verkaufsseite. */
 export function GET(request: Request) {
-  const origin = new URL(request.url).origin;
-  return NextResponse.redirect(`${origin}/mitgliedschaft`, 303);
+  return NextResponse.redirect(`${baseUrl(request)}/mitgliedschaft`, 303);
 }
