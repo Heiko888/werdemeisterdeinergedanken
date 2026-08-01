@@ -78,11 +78,13 @@ export default function MitgliedschaftPage() {
               Ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System,
               das mit dir wächst. Raus aus alten Mustern, rein in echte innere Klarheit.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <CheckoutButton size="lg">Mitglied werden</CheckoutButton>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <CheckoutButton size="lg" className="w-full sm:w-auto">
+                Mitglied werden
+              </CheckoutButton>
               <Link
                 href="/bewusstseinstest"
-                className="inline-flex h-13 items-center justify-center gap-2 rounded-full border border-cream/30 px-7 text-base font-medium text-cream transition-colors hover:border-cream/60 hover:bg-cream/5"
+                className="inline-flex min-h-[3.25rem] w-full items-center justify-center gap-2 rounded-full border border-cream/30 px-7 py-3 text-center text-base font-medium leading-tight text-cream transition-colors hover:border-cream/60 hover:bg-cream/5 sm:w-auto"
               >
                 Kostenlosen Bewusstseinstest machen
               </Link>
