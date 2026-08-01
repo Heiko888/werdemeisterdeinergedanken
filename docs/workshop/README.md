@@ -22,7 +22,7 @@ deiner Gedanken". Jedes Thema enthält drei Bausteine:
 |---|---|---|
 | `7-stufen/` | Die 7 Stufen der Bewusstseinsentwicklung | Der Kern-Weg vom Autopilot zur Meisterschaft |
 | `mentale-selbstverteidigung/` | Mentale Selbstverteidigung (Ganztags) | Alle 16 Mechanismen, mit denen Denken gelenkt wird |
-| `praxis/` | Der Praxis-Werkzeugkasten | Atem, Meditation und Rituale für den Alltag |
+| `praxis/` | Der Praxis-Werkzeugkasten (Ganztags) | Alle 13 Übungen: Atem, Meditation und Rituale |
 | `vertiefungen/` | Deinen Kopf verstehen | Die psychologischen Mechanismen hinter den Gedanken |
 
 ## Aufbau der Präsentationen
