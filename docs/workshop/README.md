@@ -23,14 +23,18 @@ deiner Gedanken". Jedes Thema enthält drei Bausteine:
 | `7-stufen/` | Die 7 Stufen der Bewusstseinsentwicklung | Der Kern-Weg vom Autopilot zur Meisterschaft |
 | `mentale-selbstverteidigung/` | Mentale Selbstverteidigung (Ganztags) | Alle 16 Mechanismen, mit denen Denken gelenkt wird |
 | `praxis/` | Der Praxis-Werkzeugkasten (Ganztags) | Alle 13 Übungen: Atem, Meditation und Rituale |
-| `vertiefungen/` | Deinen Kopf verstehen | Die psychologischen Mechanismen hinter den Gedanken |
+| `vertiefungen/` | Deinen Kopf verstehen (Ganztags) | Alle 13 Bausteine: die Mechanismen hinter den Gedanken |
 
 ## Aufbau der Präsentationen
 
-Jeder Foliensatz folgt demselben Bogen (ca. 18 Folien, halbtägiger Workshop):
-Titel → Agenda → Kernbotschaft → Ausgangspunkt (mit Kennzahl) → Übung 1 →
-Kapitel → Themen-Überblick → 7 Themen-Folien → Übung 2 → Zusammenfassung →
-Angebot → Abschluss.
+Jeder Foliensatz folgt demselben Bogen: Titel → Agenda → Kernbotschaft →
+Ausgangspunkt (mit Kennzahl) → Übung 1 → Kapitel → Themen-Überblick →
+Themen-Folien → Übung 2 → Zusammenfassung → Angebot → Abschluss.
+
+- **7 Stufen** – Halbtag, ~18 Folien, 7 Stufen
+- **Mentale Selbstverteidigung** – Ganztag, 28 Folien, 16 Mechanismen
+- **Praxis-Werkzeugkasten** – Ganztag, 25 Folien, 13 Übungen
+- **Deinen Kopf verstehen** – Ganztag, 25 Folien, 13 Bausteine
 
 ## Marke
 
