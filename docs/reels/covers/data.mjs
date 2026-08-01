@@ -94,6 +94,17 @@ export const COLLECTIONS = [
       { theme: "Integration & Weitergabe", cls: "small", html: `Vom Wissen zur<br>gelebten ${A("Haltung")}` },
     ],
   },
+  {
+    key: "landing",
+    label: "Landing / Funnel",
+    series: "Bewusstseins-Test",
+    note: "Teaser-Cover für den Funnel-Einstieg: Was, wenn es nicht an dir liegt?",
+    items: [
+      { theme: "Nicht deine Schuld", cls: "",      html: `Nicht deine<br>${A("Schuld")}` },
+      { theme: "Es ist ein Programm", cls: "",     html: `Es ist ein<br>${A("Programm")}` },
+      { theme: "Zu wenig Disziplin?", cls: "small", html: `Zu wenig Disziplin?<br>${A("Nein.")}` },
+    ],
+  },
 ];
 
 // ===========================================================================
