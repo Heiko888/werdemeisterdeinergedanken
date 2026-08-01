@@ -140,6 +140,14 @@ export const reelSeries: ReelSeries[] = [
       { topic: "Integration & Weitergabe", variant: "B", filmed: false },
     ],
   },
+  {
+    key: "landing",
+    label: "Landing / Funnel",
+    script: "docs/skripte/landing/reel-nicht-deine-schuld.md",
+    reels: [
+      { topic: "Nicht deine Schuld", hook: "Was, wenn dein Problem nie zu wenig Disziplin war?", filmed: false },
+    ],
+  },
 ];
 
 export const allReels: Reel[] = reelSeries.flatMap((s) => s.reels);

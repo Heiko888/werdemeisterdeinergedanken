@@ -12,10 +12,13 @@ const ROOT = join(HERE, "..", "..");
 const OUTDIR = process.argv[2] || ROOT;
 
 const BUILD = {
-  title: "Intro-Video-Drehbuch · Wort für Wort",
-  subtitle: "Was, wenn es nicht an dir liegt? · Startseite / Bewusstseinstest",
+  title: "Landing-Video-Drehbuch",
+  subtitle: "Was, wenn es nicht an dir liegt? · Intro-Video + Teaser-Reel",
   file: "Intro-Video-Drehbuch.pdf",
-  source: join(ROOT, "docs", "skripte", "landing", "intro-nicht-deine-schuld.md"),
+  sources: [
+    join(ROOT, "docs", "skripte", "landing", "intro-nicht-deine-schuld.md"),
+    join(ROOT, "docs", "skripte", "landing", "reel-nicht-deine-schuld.md"),
+  ],
 };
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -27,16 +30,20 @@ function inline(s) {
 }
 function mdToHtml(md) {
   const out = [];
+  let listOpen = false;
+  const closeList = () => { if (listOpen) { out.push("</ul>"); listOpen = false; } };
   for (const raw of md.split(/\r?\n/)) {
     const line = raw.trimEnd();
-    if (line === "---" || !line.trim()) continue;
+    if (line === "---" || !line.trim()) { closeList(); continue; }
     let m;
-    if ((m = line.match(/^#\s+(.*)$/))) out.push(`<h1>${inline(m[1])}</h1>`);
-    else if ((m = line.match(/^##\s+(.*)$/))) out.push(`<h2>${inline(m[1])}</h2>`);
-    else if ((m = line.match(/^\*\*([^:*]+):\*\*\s*(.*)$/))) out.push(`<p class="field"><span class="lbl">${esc(m[1])}</span> ${inline(m[2])}</p>`);
-    else if (/^`\[Regie\]/.test(line)) out.push(`<p class="regie">${inline(line.replace(/^`|`$/g, ""))}</p>`);
-    else out.push(`<p>${inline(line)}</p>`);
+    if ((m = line.match(/^#\s+(.*)$/))) { closeList(); out.push(`<h1>${inline(m[1])}</h1>`); }
+    else if ((m = line.match(/^##\s+(.*)$/))) { closeList(); out.push(`<h2>${inline(m[1])}</h2>`); }
+    else if ((m = line.match(/^\*\*([^:*]+):\*\*\s*(.*)$/))) { closeList(); out.push(`<p class="field"><span class="lbl">${esc(m[1])}</span> ${inline(m[2])}</p>`); }
+    else if (/^`\[Regie\]/.test(line)) { closeList(); out.push(`<p class="regie">${inline(line.replace(/^`|`$/g, ""))}</p>`); }
+    else if ((m = line.match(/^[-*]\s+(.*)$/))) { if (!listOpen) { out.push("<ul>"); listOpen = true; } out.push(`<li>${inline(m[1])}</li>`); }
+    else { closeList(); out.push(`<p>${inline(line)}</p>`); }
   }
+  closeList();
   return out.join("\n");
 }
 function findChrome() {
@@ -81,7 +88,13 @@ strong{ font-weight:700; } em{ font-style:italic; color:#3a4a5e; }
 code{ font-family:inherit; color:inherit; background:transparent; padding:0; }
 `;
 
-const md = readFileSync(BUILD.source, "utf8");
+const body = BUILD.sources
+  .map((src, i) => {
+    const section = mdToHtml(readFileSync(src, "utf8"));
+    return i === 0 ? section : `<section style="break-before:page">${section}</section>`;
+  })
+  .join("\n");
+
 const html = `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>${BUILD.title}</title>
 <style>${CSS}</style></head><body>
 <div class="cover">
@@ -90,7 +103,7 @@ const html = `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>
   <h1>${BUILD.title.replace(" · ", "<br>")}</h1>
   <p>${BUILD.subtitle}</p>
 </div>
-${mdToHtml(md)}
+${body}
 </body></html>`;
 
 const tmp = join(HERE, ".intro-video.html");
