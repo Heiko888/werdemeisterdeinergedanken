@@ -63,7 +63,7 @@ export function Compass() {
               size="lg"
               className="mt-2"
             >
-              Meinen Standort bestimmen
+              Wo stehe ich gerade
               <ArrowRight />
             </Button>
           </div>
