@@ -55,11 +55,10 @@ const { w: W, h: H } = FORMAT;
 // Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
 // je nach Build ~87px unten weg → der Footer wurde abgeschnitten.
 const browser = await chromium.launch({ executablePath: findChrome() });
+const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: SCALE });
 async function shot(htmlPath, pngPath) {
-  const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: SCALE });
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "networkidle" });
   await page.screenshot({ path: pngPath });
-  await page.close();
   if (!existsSync(pngPath)) throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
 }
 

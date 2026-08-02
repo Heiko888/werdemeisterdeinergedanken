@@ -126,12 +126,12 @@ for (const F of FORMATS) {
   const css = cssFor(F.w, F.h, F.pad);
   const dir = join(OUTBASE, F.key);
   mkdirSync(dir, { recursive: true });
+  const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
   for (let i = 0; i < SLIDES.length; i++) {
-    const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
     await page.setContent(slideHtml(SLIDES[i], i, css), { waitUntil: "networkidle" });
     await page.screenshot({ path: join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`) });
-    await page.close();
   }
+  await page.close();
   console.log(`✓ ${F.key}: ${TOTAL} Slides`);
 }
 await browser.close();

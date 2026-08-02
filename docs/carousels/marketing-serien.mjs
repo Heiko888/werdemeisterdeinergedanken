@@ -254,18 +254,18 @@ const browser = await chromium.launch({ executablePath: findChrome() });
 for (const F of FORMATS) {
   if (only && F.key !== only) continue;
   const css = cssFor(F.w, F.h, F.pad);
+  const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
   for (const series of SERIES) {
     const dir = join(OUTBASE, series.key, F.key);
     mkdirSync(dir, { recursive: true });
     const total = series.slides.length;
     for (let i = 0; i < series.slides.length; i++) {
-      const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
       await page.setContent(slideHtml(series, series.slides[i], i, total, css), { waitUntil: "networkidle" });
       await page.screenshot({ path: join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`) });
-      await page.close();
     }
     console.log(`✓ ${F.key} · ${series.label}: ${total} Slides`);
   }
+  await page.close();
 }
 await browser.close();
 console.log("Fertig.");
