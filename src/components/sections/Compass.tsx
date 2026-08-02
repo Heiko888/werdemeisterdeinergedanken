@@ -21,7 +21,7 @@ export function Compass() {
           <div className="relative mx-auto w-full max-w-sm">
             <PhotoFrame
               src="/kompass-weg.webp"
-              alt="Der Weg der Bewusstseinsentwicklung: sieben Wegweiser entlang eines Waldpfads – von „Erkenne deine Gedanken“ bis „Entfalte dein Potenzial“ – mit einem energetischen Kompass im Vordergrund"
+              alt="Ein Wanderer mit Rucksack liest einen Kompass an einem moosgrünen Waldpfad, gesäumt von sieben nummerierten Wegsteinen (1 bis 7), die zu einem großen Kompass auf einem Baumstumpf führen – der Weg durch die 7 Stufen der Bewusstseinsentwicklung"
               aspect="portrait"
             />
           </div>
