@@ -41,7 +41,7 @@ function bodyFs(text) {
 
 const SLIDE_CSS = `/* Carousel-Slide 4:5 · generiert – nicht von Hand ändern */
 *{ margin:0; padding:0; box-sizing:border-box; }
-html,body{ background:#05060c; }
+html,body{ background:#05060c; overflow:hidden; }
 .slide{ position:relative; width:${W}px; height:${H}px; overflow:hidden;
   font-family:'Inter',system-ui,sans-serif; color:#f4f7ff; }
 .slide::before{ content:""; position:absolute; inset:0; z-index:0;

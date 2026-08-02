@@ -5,8 +5,8 @@
  *
  *   node docs/carousels/stufen-ueberblick.mjs [ausgabe-verzeichnis]
  */
-import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:fs";
-import { spawnSync } from "node:child_process";
+import { readFileSync, existsSync, readdirSync, mkdirSync } from "node:fs";
+import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -57,7 +57,7 @@ html,body{ background:#05060c; overflow:hidden; }
     radial-gradient(55% 40% at 82% 18%, rgba(52,196,196,.30), transparent 60%),
     radial-gradient(60% 45% at 12% 88%, rgba(40,90,150,.32), transparent 60%),
     linear-gradient(160deg,#071026 0%,#0b2138 48%,#0a1730 100%); }
-.numbg{ position:absolute; z-index:1; right:36px; top:70px; font-family:'Fraunces',Georgia,serif;
+.numbg{ position:absolute; z-index:1; right:36px; top:50%; transform:translateY(-50%); font-family:'Fraunces',Georgia,serif;
   font-weight:600; font-size:520px; line-height:.8; color:rgba(255,255,255,.05); }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; padding:${PAD}px 84px ${Math.max(56, PAD - 12)}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
@@ -116,22 +116,23 @@ function findChrome() {
   }
   throw new Error("Kein Chromium gefunden.");
 }
-const CHROME = findChrome();
+const require = createRequire(import.meta.url);
+const { chromium } = require("/opt/node22/lib/node_modules/playwright");
 const only = process.env.FORMAT;
+// Playwright rendert pixelgenau (Chromium-CLI --window-size kappt je nach Build ~87px unten).
+const browser = await chromium.launch({ executablePath: findChrome() });
 for (const F of FORMATS) {
   if (only && F.key !== only) continue;
   const css = cssFor(F.w, F.h, F.pad);
   const dir = join(OUTBASE, F.key);
   mkdirSync(dir, { recursive: true });
-  SLIDES.forEach((s, i) => {
-    const tmp = join(HERE, `.slide-${F.key}-${i}.html`);
-    writeFileSync(tmp, slideHtml(s, i, css));
-    const out = join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`);
-    const r = spawnSync(CHROME, ["--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
-      `--window-size=${F.w},${F.h}`, "--default-background-color=00000000", `--screenshot=${out}`, tmp], { stdio: "ignore" });
-    rmSync(tmp, { force: true });
-    if (r.status !== 0 || !existsSync(out)) throw new Error(`Render fehlgeschlagen: ${F.key} slide ${i + 1}`);
-  });
+  for (let i = 0; i < SLIDES.length; i++) {
+    const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
+    await page.setContent(slideHtml(SLIDES[i], i, css), { waitUntil: "networkidle" });
+    await page.screenshot({ path: join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`) });
+    await page.close();
+  }
   console.log(`✓ ${F.key}: ${TOTAL} Slides`);
 }
+await browser.close();
 console.log("Fertig.");

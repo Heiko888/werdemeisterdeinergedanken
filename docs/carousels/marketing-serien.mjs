@@ -5,8 +5,8 @@
  *
  *   node docs/carousels/marketing-serien.mjs [ausgabe-basis-verzeichnis]
  */
-import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:fs";
-import { spawnSync } from "node:child_process";
+import { readFileSync, existsSync, readdirSync, mkdirSync } from "node:fs";
+import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -145,7 +145,7 @@ html,body{ background:#05060c; overflow:hidden; }
   background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
   filter:drop-shadow(0 8px 30px rgba(52,196,196,.25)); }
 .statlabel{ font-weight:700; font-size:30px; line-height:1.3; color:#e7eefb; }
-.numbg{ position:absolute; z-index:1; right:40px; top:64px; font-family:'Fraunces',Georgia,serif;
+.numbg{ position:absolute; z-index:1; right:40px; top:50%; transform:translateY(-50%); font-family:'Fraunces',Georgia,serif;
   font-weight:600; font-size:440px; line-height:.8; color:rgba(255,255,255,.05); }
 .rubric{ display:flex; align-items:center; gap:16px; }
 .rubric .num{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:40px;
@@ -244,9 +244,13 @@ function findChrome() {
   }
   throw new Error("Kein Chromium gefunden.");
 }
-const CHROME = findChrome();
+const require = createRequire(import.meta.url);
+const { chromium } = require("/opt/node22/lib/node_modules/playwright");
 const only = process.env.FORMAT; // optional: nur ein Format rendern
 
+// Playwright rendert das Viewport pixelgenau (Chromium-CLI --window-size lässt
+// je nach Build ~87px unten weg → abgeschnittener Footer).
+const browser = await chromium.launch({ executablePath: findChrome() });
 for (const F of FORMATS) {
   if (only && F.key !== only) continue;
   const css = cssFor(F.w, F.h, F.pad);
@@ -254,16 +258,14 @@ for (const F of FORMATS) {
     const dir = join(OUTBASE, series.key, F.key);
     mkdirSync(dir, { recursive: true });
     const total = series.slides.length;
-    series.slides.forEach((s, i) => {
-      const tmp = join(HERE, `.ms-${series.key}-${F.key}-${i}.html`);
-      writeFileSync(tmp, slideHtml(series, s, i, total, css));
-      const out = join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`);
-      const r = spawnSync(CHROME, ["--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
-        `--window-size=${F.w},${F.h}`, "--default-background-color=00000000", `--screenshot=${out}`, tmp], { stdio: "ignore" });
-      rmSync(tmp, { force: true });
-      if (r.status !== 0 || !existsSync(out)) throw new Error(`Render fehlgeschlagen: ${series.key}/${F.key} slide ${i + 1}`);
-    });
+    for (let i = 0; i < series.slides.length; i++) {
+      const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
+      await page.setContent(slideHtml(series, series.slides[i], i, total, css), { waitUntil: "networkidle" });
+      await page.screenshot({ path: join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`) });
+      await page.close();
+    }
     console.log(`✓ ${F.key} · ${series.label}: ${total} Slides`);
   }
 }
+await browser.close();
 console.log("Fertig.");

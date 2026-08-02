@@ -16,6 +16,7 @@
  */
 import { existsSync, mkdirSync, readdirSync } from "node:fs";
 import { spawnSync } from "node:child_process";
+import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import { FORMATS, COLLECTIONS, pad2 } from "./data.mjs";
@@ -50,28 +51,19 @@ function findChrome() {
   );
 }
 
-const CHROME = findChrome();
+const require = createRequire(import.meta.url);
+const { chromium } = require("/opt/node22/lib/node_modules/playwright");
 const [onlyColl, onlyFormat] = process.argv.slice(2);
 
-function shot(htmlPath, pngPath, w, h) {
-  const r = spawnSync(
-    CHROME,
-    [
-      "--headless=new",
-      "--no-sandbox",
-      "--disable-gpu",
-      "--hide-scrollbars",
-      `--force-device-scale-factor=${SCALE}`,
-      `--window-size=${w},${h}`,
-      "--virtual-time-budget=2500", // wartet aufs Rendern (Schriften)
-      `--screenshot=${pngPath}`,
-      pathToFileURL(htmlPath).href,
-    ],
-    { stdio: "ignore" },
-  );
-  if (r.status !== 0 || !existsSync(pngPath)) {
-    throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
-  }
+// Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
+// je nach Build ~87px unten weg → der Footer/Handle wurde abgeschnitten.
+const browser = await chromium.launch({ executablePath: findChrome() });
+async function shot(htmlPath, pngPath, w, h) {
+  const page = await browser.newPage({ viewport: { width: w, height: h }, deviceScaleFactor: SCALE });
+  await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "networkidle" });
+  await page.screenshot({ path: pngPath });
+  await page.close();
+  if (!existsSync(pngPath)) throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
 }
 
 let n = 0;
@@ -87,12 +79,13 @@ for (const coll of collections) {
     const srcDir = join(HERE, coll.key, f.key);
     const outDir = join(HERE, "export", coll.key, f.key);
     mkdirSync(outDir, { recursive: true });
-    coll.items.forEach((_it, i) => {
+    for (let i = 0; i < coll.items.length; i++) {
       const nn = pad2(i + 1);
-      shot(join(srcDir, `cover-${nn}.html`), join(outDir, `cover-${nn}.png`), f.w, f.h);
+      await shot(join(srcDir, `cover-${nn}.html`), join(outDir, `cover-${nn}.png`), f.w, f.h);
       n++;
-    });
+    }
     console.log(`✓ ${coll.key}/${f.key} · ${coll.items.length} PNG`);
   }
 }
+await browser.close();
 console.log(`\nFertig: ${n} PNG in docs/reels/covers/export/${SCALE > 1 ? `  (×${SCALE})` : ""}`);

@@ -13,6 +13,7 @@
  */
 import { existsSync, mkdirSync, readdirSync } from "node:fs";
 import { spawnSync } from "node:child_process";
+import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import { FORMAT, loadCarousels } from "./data.mjs";
@@ -47,20 +48,19 @@ function findChrome() {
 const gen = spawnSync(process.execPath, [join(HERE, "build.mjs")], { stdio: "inherit" });
 if (gen.status !== 0) throw new Error("build.mjs fehlgeschlagen");
 
-const CHROME = findChrome();
+const require = createRequire(import.meta.url);
+const { chromium } = require("/opt/node22/lib/node_modules/playwright");
 const { w: W, h: H } = FORMAT;
 
-function shot(htmlPath, pngPath) {
-  const r = spawnSync(
-    CHROME,
-    [
-      "--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
-      `--force-device-scale-factor=${SCALE}`, `--window-size=${W},${H}`,
-      "--virtual-time-budget=2500", `--screenshot=${pngPath}`, pathToFileURL(htmlPath).href,
-    ],
-    { stdio: "ignore" },
-  );
-  if (r.status !== 0 || !existsSync(pngPath)) throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
+// Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
+// je nach Build ~87px unten weg → der Footer wurde abgeschnitten.
+const browser = await chromium.launch({ executablePath: findChrome() });
+async function shot(htmlPath, pngPath) {
+  const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: SCALE });
+  await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "networkidle" });
+  await page.screenshot({ path: pngPath });
+  await page.close();
+  if (!existsSync(pngPath)) throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
 }
 
 const data = loadCarousels().filter((s) => !onlySeries || s.key === onlySeries);
@@ -76,12 +76,13 @@ for (const s of data) {
     const srcDir = join(BUILD, s.key, car.slug);
     const outDir = join(HERE, "export", s.key, car.slug);
     mkdirSync(outDir, { recursive: true });
-    car.slides.forEach((_sl, i) => {
+    for (let i = 0; i < car.slides.length; i++) {
       const nn = String(i + 1).padStart(2, "0");
-      shot(join(srcDir, `slide-${nn}.html`), join(outDir, `slide-${nn}.png`));
+      await shot(join(srcDir, `slide-${nn}.html`), join(outDir, `slide-${nn}.png`));
       n++;
-    });
+    }
     console.log(`✓ ${s.key}/${car.slug} · ${car.slides.length} Slides`);
   }
 }
+await browser.close();
 console.log(`\nFertig: ${n} PNG in docs/carousels/export/${SCALE > 1 ? `  (×${SCALE})` : ""}`);
