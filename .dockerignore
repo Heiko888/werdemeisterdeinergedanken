@@ -36,3 +36,10 @@ yarn-error.log*
 
 # Vercel (Altlast der alten Hosting-Variante)
 .vercel
+
+# Marketing-Material (Skripte, Carousels, Cover, Banner). Wächst stetig und
+# landet über "COPY . ." nur im Build-Kontext – das Runner-Image kopiert
+# ohnehin bloß public/, content/, .next/ und node_modules. Die docs/-Pfade in
+# src/lib/reels.ts und carousels.ts sind reine Metadaten-Strings, es liest sie
+# nichts aus dem Dateisystem.
+docs
