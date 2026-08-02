@@ -77,6 +77,7 @@ html,body{ background:#05060c; overflow:hidden; }
 .lead{ font-family:'Fraunces',Georgia,serif; font-weight:600; line-height:1.12; letter-spacing:-.5px;
   color:#f4f7ff; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
 .body.sec{ color:#c3d1e4; }
+.body b.lbl{ font-weight:800; color:#f4f7ff; }
 .clist{ display:flex; flex-direction:column; gap:24px; }
 .cli{ display:flex; gap:22px; align-items:flex-start; }
 .cli .cd{ margin-top:15px; width:16px; height:16px; border-radius:50%; background:${GRAD}; flex:0 0 auto; }
@@ -127,6 +128,11 @@ const OV = {
   "vertiefungen/selbstmitgefuehl/4": { type: "cards", title: "Kein Weichspüler, sondern Realismus", cards: [{ head: "Nicht", text: '„alles super"' }, { head: "Sondern", text: '„das war schmerzhaft, und ich stehe trotzdem zu mir"' }], note: "Gerade weil es die Wahrheit nicht wegdrückt, macht es handlungsfähig." },
 };
 const ovKey = (car, slide) => `${car.series}/${car.slug}/${slide.num}`;
+// Kurzes Label am Satzanfang vor einem Doppelpunkt kräftiger setzen.
+function emphColon(t) {
+  const m = t.match(/^([^:.!?]{2,44}:)(\s)/);
+  return m ? `<b class="lbl">${m[1]}</b>${t.slice(m[1].length)}` : t;
+}
 function compMid(car, o) {
   const head = `<div class="eyebrow">${car.topic}</div>${o.title ? `<div class="lead" style="font-size:52px">${o.title}</div>` : ""}`;
   if (o.type === "cards") return `<div class="mid">${head}<div class="cards2">${o.cards.map((c) => `<div class="ccard"><h3>${c.head}</h3><p>${c.text}</p></div>`).join("")}</div>${o.note ? `<div class="cnote">${o.note}</div>` : ""}</div>`;
@@ -183,7 +189,7 @@ function midHtml(car, slide, total) {
   return `<div class="mid">
         <div class="eyebrow">${car.topic}</div>
         ${lead ? `<div class="lead" style="font-size:${leadFs}px">${lead}</div>` : ""}
-        ${body ? `<div class="body${sec ? " sec" : ""}" style="font-size:${bfs}px">${body}</div>` : ""}
+        ${body ? `<div class="body${sec ? " sec" : ""}" style="font-size:${bfs}px">${emphColon(body)}</div>` : ""}
       </div>`;
 }
 
