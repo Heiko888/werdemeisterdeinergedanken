@@ -77,6 +77,16 @@ html,body{ background:#05060c; overflow:hidden; }
 .lead{ font-family:'Fraunces',Georgia,serif; font-weight:600; line-height:1.12; letter-spacing:-.5px;
   color:#f4f7ff; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
 .body.sec{ color:#c3d1e4; }
+.clist{ display:flex; flex-direction:column; gap:24px; }
+.cli{ display:flex; gap:22px; align-items:flex-start; }
+.cli .cd{ margin-top:15px; width:16px; height:16px; border-radius:50%; background:${GRAD}; flex:0 0 auto; }
+.cli .ct{ font-size:36px; line-height:1.3; color:#eaf1fb; }
+.cli .ct b{ font-weight:700; color:#fff; font-family:'Fraunces',Georgia,serif; }
+.cnote{ margin-top:22px; font-size:29px; line-height:1.4; color:#a7bad2; font-style:italic; }
+.cards2{ display:flex; gap:26px; }
+.ccard{ flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.10); border-radius:24px; padding:34px 30px; display:flex; flex-direction:column; gap:14px; }
+.ccard h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:42px; line-height:1.08; }
+.ccard p{ font-size:29px; line-height:1.34; color:#c8d5e7; }
 .cta{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:56px; line-height:1.16;
   letter-spacing:-.5px; }
 .cta-action{ margin-top:20px; padding-left:24px; border-left:5px solid; border-image:${GRAD} 1;
@@ -100,7 +110,25 @@ function dots(active, total) {
     `<span class="dot${i === active ? " on" : ""}"></span>`).join("")}</div>`;
 }
 
+// Kuratierte Rich-Komponenten für einzelne Slides (Inhalt = vorhandene Wörter).
+const OV = {
+  "selbstverteidigung/medien-agenda/4": { type: "list", title: "Drei stille Werkzeuge", items: [{ lead: "Auswahl" }, { lead: "Häufigkeit" }, { lead: "Weglassen" }], note: "Ein tägliches Thema wirkt dringlicher als eines, das nur einmal auftaucht." },
+  "selbstverteidigung/framing/5": { type: "list", title: "Auch Weglassen rahmt", items: [{ lead: "Fehlende Vorgeschichte" }, { lead: "Zahlen ohne Vergleich" }, { lead: "Ein Einzelfall als Regel" }], note: "Schon steht das Thema in einem bestimmten Licht." },
+  "selbstverteidigung/identitaet-und-meinung/2": { type: "list", title: "Meinungen sind Werkzeuge", items: [{ lead: "Annehmen" }, { lead: "Prüfen" }, { lead: "Bei Bedarf ablegen" }] },
+  "selbstverteidigung/sprache-und-etiketten/5": { type: "list", title: "Weiche Wörter lenken", items: [{ lead: '„Preisanpassung"', text: 'statt „Preiserhöhung"' }, { lead: '„Beitrag"', text: 'statt „Abgabe"' }], note: "Unangenehmes wird freundlicher angezogen, als es ist." },
+  "praxis/praesenz-spaziergang/4": { type: "list", title: "Nimm wahr", items: [{ lead: "5 Dinge", text: "die du siehst" }, { lead: "3 Dinge", text: "die du hörst" }, { lead: "1 Ding", text: "das du riechst" }] },
+  "praxis/der-autopilot-check/4": { type: "list", title: "Bemerke, was in dir läuft", items: [{ lead: "Gedanke" }, { lead: "Stimmung" }, { lead: "Impuls" }] },
+  "vertiefungen/werte-und-ziele/3": { type: "cards", title: "Ziele oder Werte?", cards: [{ head: "Ziele", text: "Meilensteine – das Was." }, { head: "Werte", text: "Geben ihnen Bedeutung – das Wofür." }] },
+};
+const ovKey = (car, slide) => `${car.series}/${car.slug}/${slide.num}`;
+function compMid(car, o) {
+  const head = `<div class="eyebrow">${car.topic}</div>${o.title ? `<div class="lead" style="font-size:52px">${o.title}</div>` : ""}`;
+  if (o.type === "cards") return `<div class="mid">${head}<div class="cards2">${o.cards.map((c) => `<div class="ccard"><h3>${c.head}</h3><p>${c.text}</p></div>`).join("")}</div></div>`;
+  return `<div class="mid">${head}<div class="clist">${o.items.map((it) => `<div class="cli"><span class="cd"></span><span class="ct">${it.text ? `<b>${it.lead}</b> — ${it.text}` : `<b>${it.lead}</b>`}</span></div>`).join("")}</div>${o.note ? `<div class="cnote">${o.note}</div>` : ""}</div>`;
+}
+
 function midHtml(car, slide, total) {
+  if (slide.role === "body") { const o = OV[ovKey(car, slide)]; if (o) return compMid(car, o); }
   if (slide.role === "cover") {
     return `<div class="mid">
         <div class="eyebrow">${car.topic}</div>
@@ -168,7 +196,7 @@ function slideHtml(car, slide, idx, total) {
   <div class="slide">
     <div class="bg"></div>
     <div class="scrim"></div>
-    ${slide.role === "body" ? `<div class="numbg">${String(idx + 1).padStart(2, "0")}</div>` : ""}
+    ${slide.role === "body" && !OV[ovKey(car, slide)] ? `<div class="numbg">${String(idx + 1).padStart(2, "0")}</div>` : ""}
     <div class="content">
       <div class="top">
         <img class="logo" src="../../../logo.png" alt="Logo">
