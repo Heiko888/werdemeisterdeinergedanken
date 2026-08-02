@@ -72,7 +72,9 @@ html,body{ background:#05060c; overflow:hidden; }
   filter:drop-shadow(0 4px 22px rgba(0,0,0,.5)); }
 .cta{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:56px; line-height:1.16;
   letter-spacing:-.5px; }
-.cta-handle{ margin-top:8px; font-weight:700; font-size:30px; letter-spacing:.02em;
+.cta-action{ margin-top:20px; padding-left:24px; border-left:5px solid; border-image:${GRAD} 1;
+  font-size:31px; line-height:1.38; color:#cfe0d6; font-weight:600; max-width:88%; }
+.cta-handle{ margin-top:22px; font-weight:700; font-size:30px; letter-spacing:.02em;
   background:${GRAD}; -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent; }
 .foot{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
@@ -100,10 +102,21 @@ function midHtml(car, slide, total) {
       </div>`;
   }
   if (slide.role === "cta") {
+    // CTA gliedern: „Merksatz:"-Präfix → Kicker; erste Aussage = Kernsatz,
+    // Rest = abgesetzte Handlungszeile (statt eines langen Fließtexts).
+    let t = slide.text.trim();
+    let kicker = "Dein nächster Schritt";
+    const mk = t.match(/^Merksatz:\s*/i);
+    if (mk) { t = t.slice(mk[0].length).trim(); kicker = "Merksatz"; }
+    const sent = t.match(/[^.!?]+[.!?]+(?:\s|$)/g);
+    let lead = t, action = "";
+    if (sent && sent.length >= 2) { lead = sent[0].trim(); action = sent.slice(1).join(" ").trim(); }
+    action = action.replace(/^Handlung:\s*/i, "");
+    const leadFs = lead.length > 96 ? 44 : lead.length > 64 ? 50 : 56;
     return `<div class="mid">
-        <div class="eyebrow">Dein nächster Schritt</div>
-        <div class="cta">${slide.text}</div>
-        <div class="cta-handle">${HANDLE}</div>
+        <div class="eyebrow">${kicker}</div>
+        <div class="cta" style="font-size:${leadFs}px">${lead}</div>
+        ${action ? `<div class="cta-action">${action}</div>` : ""}
       </div>`;
   }
   return `<div class="mid">
