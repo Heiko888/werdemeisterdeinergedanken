@@ -22,7 +22,7 @@ const TARGETS = [
   { key: "instagram", file: "instagram/WMDG-Instagram-Story.png", w: 1080, h: 1920,
     brain: 460, gap: 56, textW: 920, h1: 82, eb: 20, sub: 27, url: 24, vertical: true },
   { key: "instagram-logo", file: "instagram/WMDG-Instagram-Story-Logo.png", w: 1080, h: 1920,
-    brain: 560, eb: 24, url: 32, logoOnly: true },
+    brain: 560, eb: 24, url: 42, logoOnly: true },
 ];
 
 const css = (t) => `
@@ -52,7 +52,7 @@ h1 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip
 .glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(t.brain*0.92)}px;height:${Math.round(t.brain*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.35), transparent 66%);filter:blur(30px)}
 .brain{position:relative;width:${t.brain}px;height:${t.brain}px;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(52,196,196,.45))}
 .logocard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;text-align:center}
-.wordmark{font-weight:800;font-size:48px;letter-spacing:6px;text-transform:uppercase;line-height:1.45;color:rgba(244,242,236,.9)}
+.wordmark{font-weight:800;font-size:68px;letter-spacing:7px;text-transform:uppercase;line-height:1.4;color:rgba(244,242,236,.92)}
 .wordmark span{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
 .logocard .url{margin-top:0;font-size:${t.url}px}
 `;
