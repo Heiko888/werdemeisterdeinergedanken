@@ -128,7 +128,10 @@ Regeln:
     const anthropic = new Anthropic({ apiKey });
     const response = await anthropic.messages.create({
       model: MODEL,
-      max_tokens: 2500,
+      // Deckelt Denk- UND Antworttokens zusammen: Thinking ist bei
+      // claude-opus-5 standardmäßig an. Ein Reading braucht nur ~400 Tokens,
+      // der Rest ist Puffer, damit nichts mitten im Satz abbricht.
+      max_tokens: 8000,
       output_config: { effort: "low" },
       system,
       messages: [
@@ -140,6 +143,9 @@ Regeln:
     });
 
     if (response.stop_reason === "refusal") return { status: "error" };
+    // Abgeschnitten – lieber gar kein Reading als ein halbes, das gespeichert
+    // und später als fertig angezeigt wird.
+    if (response.stop_reason === "max_tokens") return { status: "error" };
 
     const body = response.content
       .filter((b): b is Anthropic.TextBlock => b.type === "text")
