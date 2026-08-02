@@ -70,6 +70,13 @@ html,body{ background:#05060c; overflow:hidden; }
 .sub{ font-size:34px; line-height:1.35; color:#b7c6dc; max-width:80%; }
 .body{ font-family:'Fraunces',Georgia,serif; font-weight:500; line-height:1.32; color:#eef3fb;
   filter:drop-shadow(0 4px 22px rgba(0,0,0,.5)); }
+.numbg{ position:absolute; z-index:2; right:44px; top:50%; transform:translateY(-50%);
+  font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:460px; line-height:.8;
+  color:rgba(255,255,255,.05); pointer-events:none; }
+.minibar{ width:72px; height:5px; border-radius:5px; background:${GRAD}; }
+.lead{ font-family:'Fraunces',Georgia,serif; font-weight:600; line-height:1.12; letter-spacing:-.5px;
+  color:#f4f7ff; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
+.body.sec{ color:#c3d1e4; }
 .cta{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:56px; line-height:1.16;
   letter-spacing:-.5px; }
 .cta-action{ margin-top:20px; padding-left:24px; border-left:5px solid; border-image:${GRAD} 1;
@@ -119,9 +126,23 @@ function midHtml(car, slide, total) {
         ${action ? `<div class="cta-action">${action}</div>` : ""}
       </div>`;
   }
+  // Body edler gliedern: erster Satz als Lead-Titel (Fraunces), Rest als
+  // sekundärer Fließtext. Bei langem/einzelnem Satz bleibt es ein Block.
+  const t = slide.text.trim();
+  const sents = t.match(/[^.!?]+[.!?]+(?:\s|$)/g);
+  let lead = "", body = t, sec = false;
+  if (sents && sents.length >= 2 && sents[0].trim().length <= 118) {
+    lead = sents[0].trim();
+    body = sents.slice(1).join(" ").trim();
+    sec = true;
+  }
+  const leadFs = lead.length > 96 ? 46 : lead.length > 60 ? 52 : 58;
+  const bfs = sec ? (body.length <= 120 ? 36 : body.length <= 220 ? 32 : 29) : bodyFs(body);
   return `<div class="mid">
         <div class="eyebrow">${car.topic}</div>
-        <div class="body" style="font-size:${bodyFs(slide.text)}px">${slide.text}</div>
+        <div class="minibar"></div>
+        ${lead ? `<div class="lead" style="font-size:${leadFs}px">${lead}</div>` : ""}
+        ${body ? `<div class="body${sec ? " sec" : ""}" style="font-size:${bfs}px">${body}</div>` : ""}
       </div>`;
 }
 
@@ -140,6 +161,7 @@ function slideHtml(car, slide, idx, total) {
   <div class="slide">
     <div class="bg"></div>
     <div class="scrim"></div>
+    ${slide.role === "body" ? `<div class="numbg">${String(idx + 1).padStart(2, "0")}</div>` : ""}
     <div class="content">
       <div class="top">
         <img class="logo" src="../../../logo.png" alt="Logo">
