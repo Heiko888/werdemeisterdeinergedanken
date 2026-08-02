@@ -21,6 +21,8 @@ const TARGETS = [
     brain: 290, gap: 60, textW: 720, h1: 60, eb: 16, sub: 19, url: 18, safe: false },
   { key: "instagram", file: "instagram/WMDG-Instagram-Story.png", w: 1080, h: 1920,
     brain: 460, gap: 56, textW: 920, h1: 82, eb: 20, sub: 27, url: 24, vertical: true },
+  { key: "instagram-logo", file: "instagram/WMDG-Instagram-Story-Logo.png", w: 1080, h: 1920,
+    brain: 560, eb: 24, url: 26, logoOnly: true },
 ];
 
 const css = (t) => `
@@ -49,9 +51,22 @@ h1 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip
 .bwrap{position:relative;flex:0 0 auto}
 .glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(t.brain*0.92)}px;height:${Math.round(t.brain*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.35), transparent 66%);filter:blur(30px)}
 .brain{position:relative;width:${t.brain}px;height:${t.brain}px;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(52,196,196,.45))}
+.logocard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;text-align:center}
+.wordmark{font-weight:800;font-size:34px;letter-spacing:8px;text-transform:uppercase;line-height:1.5;color:rgba(244,242,236,.86)}
+.wordmark span{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logocard .url{margin-top:0;font-size:${t.url}px}
 `;
 
-const htmlFor = (t) => `<!doctype html><html><head><meta charset="utf8">
+const logoBody = (t) => `<div class="bg"></div><div class="stars"></div>
+<div class="logocard">
+  <div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>
+  <div class="wordmark">Werde Meister deiner<br><span>Gedanken</span></div>
+  <div class="url">www.werdemeisterdeinergedanken.de</div>
+</div>`;
+
+const htmlFor = (t) => t.logoOnly
+  ? `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fontsUrl}"><style>${css(t)}</style></head><body>${logoBody(t)}</body></html>`
+  : `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>${css(t)}</style></head><body>
 <div class="bg"></div><div class="stars"></div>
 <div class="wrap">
