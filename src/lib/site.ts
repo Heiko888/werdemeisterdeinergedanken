@@ -18,7 +18,7 @@ export const site = {
     instagram: "https://www.instagram.com/werde.meister.deiner.gedanken/",
     youtube: "https://www.youtube.com/@WerdeMeisterdeinerGedanken",
     facebook: "https://www.facebook.com/Heiko.SPunkt",
-    linkedin: "https://de.linkedin.com/in/werdemeisterdeinergedanken",
+    linkedin: "https://www.linkedin.com/in/werdemeisterdeinergedanken/",
     // TODO: echte URLs ergänzen, dann werden die Icons automatisch angezeigt:
     // telegram: "https://t.me/…",
   },
