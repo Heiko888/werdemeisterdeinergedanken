@@ -19,6 +19,8 @@ const TARGETS = [
     brain: 340, gap: 76, textW: 820, h1: 72, eb: 18, sub: 21, url: 20, safe: true },
   { key: "facebook", file: "facebook/WMDG-Facebook-Cover.png", w: 1640, h: 624,
     brain: 290, gap: 60, textW: 720, h1: 60, eb: 16, sub: 19, url: 18, safe: false },
+  { key: "instagram", file: "instagram/WMDG-Instagram-Story.png", w: 1080, h: 1920,
+    brain: 460, gap: 56, textW: 920, h1: 82, eb: 20, sub: 27, url: 24, vertical: true },
 ];
 
 const css = (t) => `
@@ -37,6 +39,7 @@ body{width:${t.w}px;height:${t.h}px;overflow:hidden;font-family:Inter,sans-serif
   radial-gradient(1.4px 1.4px at 90% 38%,rgba(200,180,255,.5),transparent),
   radial-gradient(1.1px 1.1px at 44% 74%,rgba(255,255,255,.4),transparent);}
 .wrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:${t.gap}px}
+${t.vertical ? `.wrap{flex-direction:column-reverse;text-align:center;gap:52px} .content{width:auto;max-width:${t.textW}px} .sub{margin-left:auto;margin-right:auto} .eyebrow{margin-bottom:20px}` : ""}
 .content{width:${t.textW}px}
 .eyebrow{font-size:${t.eb}px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#34c4c4;margin-bottom:16px}
 h1{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${t.h1}px;line-height:1.04;letter-spacing:-.5px}
