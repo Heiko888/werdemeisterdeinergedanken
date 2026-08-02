@@ -14,7 +14,11 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const COVERS = join(ROOT, "docs", "reels", "covers");
 const OUTBASE = process.argv[2] || join(HERE, "export");
-const W = 1080, H = 1350;
+const FORMATS = [
+  { key: "feed-4x5", w: 1080, h: 1350, pad: 84 },
+  { key: "feed-1x1", w: 1080, h: 1080, pad: 60 },
+  { key: "reel-9x16", w: 1080, h: 1920, pad: 130 },
+];
 const HANDLE = "www.werdemeisterdeinergedanken.de";
 const GRAD = "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)";
 
@@ -111,7 +115,7 @@ const SERIES = [
 ];
 
 // ---------------------------------------------------------------------------
-const CSS = `
+const cssFor = (W, H, PAD) => `
 *{ margin:0; padding:0; box-sizing:border-box; }
 html,body{ background:#05060c; }
 .slide{ position:relative; width:${W}px; height:${H}px; overflow:hidden;
@@ -121,7 +125,7 @@ html,body{ background:#05060c; }
     radial-gradient(55% 40% at 82% 18%, rgba(52,196,196,.30), transparent 60%),
     radial-gradient(60% 45% at 12% 88%, rgba(40,90,150,.32), transparent 60%),
     linear-gradient(160deg,#071026 0%,#0b2138 48%,#0a1730 100%); }
-.content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; padding:84px 80px 72px; }
+.content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; padding:${PAD}px 80px ${Math.max(56, PAD - 12)}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
 .logo{ width:160px; height:auto; filter:drop-shadow(0 4px 22px rgba(52,196,196,.30)); }
 .tag{ text-align:right; padding-top:6px; font-weight:800; font-size:19px; letter-spacing:.13em;
@@ -222,11 +226,11 @@ function mid(s) {
     default: return "";
   }
 }
-function slideHtml(series, s, idx, total) {
+function slideHtml(series, s, idx, total, css) {
   const isCover = s.role === "cover";
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? '<span class="swipe">wischen →</span>' : `${idx + 1}/${total}`}</span></div>`;
-  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${CSS}</style></head>
+  return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
   <div class="top"><img class="logo" src="${logoUri}" alt=""><div class="tag">${isCover ? "" : series.tag}</div></div>
   ${mid(s)}
@@ -241,20 +245,25 @@ function findChrome() {
   throw new Error("Kein Chromium gefunden.");
 }
 const CHROME = findChrome();
+const only = process.env.FORMAT; // optional: nur ein Format rendern
 
-for (const series of SERIES) {
-  const dir = join(OUTBASE, series.key);
-  mkdirSync(dir, { recursive: true });
-  const total = series.slides.length;
-  series.slides.forEach((s, i) => {
-    const tmp = join(HERE, `.ms-${series.key}-${i}.html`);
-    writeFileSync(tmp, slideHtml(series, s, i, total));
-    const out = join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`);
-    const r = spawnSync(CHROME, ["--headless=new", "--no-sandbox", "--disable-gpu", "--force-device-scale-factor=1",
-      `--window-size=${W},${H}`, "--default-background-color=00000000", `--screenshot=${out}`, tmp], { stdio: "ignore" });
-    rmSync(tmp, { force: true });
-    if (r.status !== 0 || !existsSync(out)) throw new Error(`Render fehlgeschlagen: ${series.key} slide ${i + 1}`);
-  });
-  console.log(`✓ ${series.label}: ${total} Slides → ${dir}`);
+for (const F of FORMATS) {
+  if (only && F.key !== only) continue;
+  const css = cssFor(F.w, F.h, F.pad);
+  for (const series of SERIES) {
+    const dir = join(OUTBASE, series.key, F.key);
+    mkdirSync(dir, { recursive: true });
+    const total = series.slides.length;
+    series.slides.forEach((s, i) => {
+      const tmp = join(HERE, `.ms-${series.key}-${F.key}-${i}.html`);
+      writeFileSync(tmp, slideHtml(series, s, i, total, css));
+      const out = join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`);
+      const r = spawnSync(CHROME, ["--headless=new", "--no-sandbox", "--disable-gpu", "--force-device-scale-factor=1",
+        `--window-size=${F.w},${F.h}`, "--default-background-color=00000000", `--screenshot=${out}`, tmp], { stdio: "ignore" });
+      rmSync(tmp, { force: true });
+      if (r.status !== 0 || !existsSync(out)) throw new Error(`Render fehlgeschlagen: ${series.key}/${F.key} slide ${i + 1}`);
+    });
+    console.log(`✓ ${F.key} · ${series.label}: ${total} Slides`);
+  }
 }
 console.log("Fertig.");
