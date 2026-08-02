@@ -40,6 +40,7 @@ export const carouselSeries: CarouselSeries[] = [
     label: "Die 7 Stufen",
     script: "docs/skripte/carousels/stufen.md",
     carousels: [
+      c("Überblick · alle 7 Stufen", 9),
       c("Autopilot", 7), c("Erwachen", 7), c("Selbstbeobachtung", 7),
       c("Emotionale Reifung", 7), c("Schöpferkraft", 7), c("Innere Ausrichtung", 7),
       c("Meisterschaft", 7),
