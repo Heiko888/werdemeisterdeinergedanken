@@ -1,3 +1,4 @@
+import { APP_GLOW } from "@/lib/gradients";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "@/components/ui/Icon";
@@ -10,7 +11,7 @@ export default function NotFound() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(55% 50% at 50% 0%, color-mix(in oklab, var(--color-teal-500) 12%, transparent), transparent 65%)",
+            APP_GLOW,
         }}
       />
       <Container className="flex flex-col items-center gap-6 text-center">

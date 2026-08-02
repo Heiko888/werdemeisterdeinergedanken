@@ -1,3 +1,4 @@
+import { HERO_GLOW } from "@/lib/gradients";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -12,7 +13,7 @@ export function FinalCta() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(55% 55% at 50% 105%, color-mix(in oklab, var(--color-teal-500) 24%, transparent), transparent 65%), radial-gradient(45% 40% at 6% -5%, color-mix(in oklab, var(--color-brand-500) 20%, transparent), transparent 62%)",
+            HERO_GLOW,
         }}
       />
       <Container size="narrow" className="flex flex-col items-center gap-8 text-center">

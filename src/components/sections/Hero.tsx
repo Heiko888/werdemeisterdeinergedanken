@@ -1,3 +1,4 @@
+import { HERO_GLOW } from "@/lib/gradients";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
@@ -18,7 +19,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(55% 45% at 82% 6%, color-mix(in oklab, var(--color-teal-500) 20%, transparent), transparent 60%), radial-gradient(52% 45% at 6% 98%, color-mix(in oklab, var(--color-brand-500) 22%, transparent), transparent 60%)",
+            HERO_GLOW,
         }}
       />
 

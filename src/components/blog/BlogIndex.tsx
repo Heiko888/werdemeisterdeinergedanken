@@ -1,4 +1,5 @@
 "use client";
+import { HERO_GLOW } from "@/lib/gradients";
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
@@ -135,7 +136,7 @@ function FeaturedCard({ post }: { post: BlogCard }) {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 60% at 88% 12%, color-mix(in oklab, var(--color-teal-500) 24%, transparent), transparent 60%), radial-gradient(55% 55% at 4% 100%, color-mix(in oklab, var(--color-brand-500) 22%, transparent), transparent 60%)",
+            HERO_GLOW,
         }}
       />
 

@@ -1,3 +1,4 @@
+import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -47,7 +48,7 @@ export default async function DeepDivePage({
           className="pointer-events-none absolute inset-0 -z-10"
           style={{
             background:
-              "radial-gradient(55% 60% at 20% 0%, color-mix(in oklab, var(--color-teal-500) 12%, transparent), transparent 65%)",
+              APP_GLOW,
           }}
         />
         <Container size="narrow" className="flex flex-col items-start gap-4">

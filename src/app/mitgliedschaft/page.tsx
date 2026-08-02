@@ -1,3 +1,4 @@
+import { HERO_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -38,7 +39,7 @@ const steps = [
 
 // Identisch zur Startseite (Hero.tsx), damit der Hero-Verlauf konsistent ist.
 const NAVY_GLOW =
-  "radial-gradient(55% 45% at 82% 6%, color-mix(in oklab, var(--color-teal-500) 20%, transparent), transparent 60%), radial-gradient(52% 45% at 6% 98%, color-mix(in oklab, var(--color-brand-500) 22%, transparent), transparent 60%)";
+  HERO_GLOW;
 
 function DarkSection({
   children,

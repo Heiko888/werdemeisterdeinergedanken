@@ -1,3 +1,4 @@
+import { HERO_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
@@ -21,7 +22,7 @@ export default function BewusstseinstestPage() {
           className="pointer-events-none absolute inset-0 -z-10"
           style={{
             background:
-              "radial-gradient(50% 55% at 50% -5%, color-mix(in oklab, var(--color-teal-500) 22%, transparent), transparent 62%), radial-gradient(45% 40% at 6% 100%, color-mix(in oklab, var(--color-brand-500) 20%, transparent), transparent 62%)",
+              HERO_GLOW,
           }}
         />
         <Container size="narrow" className="flex flex-col items-center gap-5 text-center">
