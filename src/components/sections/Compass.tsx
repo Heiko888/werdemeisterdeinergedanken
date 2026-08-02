@@ -18,7 +18,7 @@ export function Compass() {
     <section className="relative border-y border-ink/10 bg-white py-16 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal className="order-2 lg:order-1">
-          <div className="relative mx-auto w-full max-w-sm">
+          <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
             <PhotoFrame
               src="/kompass-weg.webp"
               alt="Ein Wanderer mit Rucksack liest einen Kompass an einem moosgrünen Waldpfad, gesäumt von sieben nummerierten Wegsteinen (1 bis 7), die zu einem großen Kompass auf einem Baumstumpf führen – der Weg durch die 7 Stufen der Bewusstseinsentwicklung"
