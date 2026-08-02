@@ -103,6 +103,7 @@ function dots(active, total) {
 function midHtml(car, slide, total) {
   if (slide.role === "cover") {
     return `<div class="mid">
+        <div class="eyebrow">${car.topic}</div>
         <div class="headline">${slide.text}</div>
         <div class="bar"></div>
         ${slide.sub ? `<div class="sub">${slide.sub}</div>` : ""}
@@ -147,7 +148,6 @@ function midHtml(car, slide, total) {
   const bfs = sec ? (body.length <= 120 ? 36 : body.length <= 220 ? 32 : 29) : bodyFs(body);
   return `<div class="mid">
         <div class="eyebrow">${car.topic}</div>
-        <div class="minibar"></div>
         ${lead ? `<div class="lead" style="font-size:${leadFs}px">${lead}</div>` : ""}
         ${body ? `<div class="body${sec ? " sec" : ""}" style="font-size:${bfs}px">${body}</div>` : ""}
       </div>`;
