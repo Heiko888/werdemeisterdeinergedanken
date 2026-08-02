@@ -159,15 +159,15 @@ export function ConsciousnessTest() {
             </p>
             {memberSaved && (
               <p className="max-w-xl text-sm leading-relaxed text-accent">
-                Dein Ergebnis ist in deinem Bereich gespeichert – dein Dashboard
-                begrüßt dich ab jetzt mit deiner Startstufe.
+                Dein Ergebnis ist in deinem Bereich gespeichert – dein
+                Gedankenprofil zeigt dir jetzt, wo noch Bedarf ist.
               </p>
             )}
             <div className="flex flex-col gap-3 sm:flex-row">
               {memberSaved ? (
                 <>
-                  <Button href="/mitglieder" variant="accent">
-                    Weiter zu deinem Bereich
+                  <Button href="/mitglieder/gedankenprofil" variant="accent">
+                    Zu meinem Gedankenprofil
                     <ArrowRight />
                   </Button>
                   <Button href={`/mitglieder/stufe/${resultStage.nr}`} variant="secondary">

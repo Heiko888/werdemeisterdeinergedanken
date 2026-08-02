@@ -155,6 +155,15 @@ export default async function MembersPage() {
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             )}
+            {loggedIn && (
+              <Link
+                href="/mitglieder/gedankenprofil"
+                className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+              >
+                Mein Gedankenprofil
+                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            )}
             <a
               href="/mitglieder/arbeitsheft"
               className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"

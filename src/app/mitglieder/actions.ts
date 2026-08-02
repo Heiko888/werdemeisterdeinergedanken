@@ -233,6 +233,44 @@ export async function getStartStage(): Promise<number | null> {
   return (data?.start_stage as number | null) ?? null;
 }
 
+export type TestProfile = {
+  /** Schwerpunkt-Stufe (1–7) oder null. */
+  startStage: number | null;
+  /** Punkte je Stufe (Index 0 = Stufe 1), 0–12; null wenn kein Test. */
+  scores: number[] | null;
+};
+
+/**
+ * Schwerpunkt-Stufe + Punktzahl je Stufe aus dem letzten Test (Spalten aus
+ * Migration 0002). Grundlage für das Gedankenprofil. Ohne Test/Anmeldung
+ * bleiben beide Felder null – die Seite zeigt dann eine Einladung.
+ */
+export async function getTestProfile(): Promise<TestProfile> {
+  if (!isSupabaseConfigured) return { startStage: null, scores: null };
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { startStage: null, scores: null };
+
+  const { data } = await supabase
+    .from("profiles")
+    .select("start_stage, test_scores")
+    .eq("id", user.id)
+    .maybeSingle();
+
+  const rawScores = data?.test_scores as number[] | null | undefined;
+  const scores =
+    Array.isArray(rawScores) && rawScores.length === 7
+      ? rawScores.map((n) => Math.max(0, Math.round(Number(n) || 0)))
+      : null;
+
+  return {
+    startStage: (data?.start_stage as number | null) ?? null,
+    scores,
+  };
+}
+
 // ------------------------------------------------------------
 // E-Mail-Impulse: Abo an-/abschalten
 // ------------------------------------------------------------
