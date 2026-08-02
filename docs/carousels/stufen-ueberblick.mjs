@@ -49,7 +49,7 @@ const bodyFs = (t) => (t.length <= 130 ? 46 : t.length <= 200 ? 41 : 37);
 
 const cssFor = (W, H, PAD) => `
 *{ margin:0; padding:0; box-sizing:border-box; }
-html,body{ background:#05060c; }
+html,body{ background:#05060c; overflow:hidden; }
 .slide{ position:relative; width:${W}px; height:${H}px; overflow:hidden;
   font-family:'Inter',system-ui,sans-serif; color:#f4f7ff; }
 .slide::before{ content:""; position:absolute; inset:0; z-index:0;
@@ -127,7 +127,7 @@ for (const F of FORMATS) {
     const tmp = join(HERE, `.slide-${F.key}-${i}.html`);
     writeFileSync(tmp, slideHtml(s, i, css));
     const out = join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`);
-    const r = spawnSync(CHROME, ["--headless=new", "--no-sandbox", "--disable-gpu", "--force-device-scale-factor=1",
+    const r = spawnSync(CHROME, ["--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
       `--window-size=${F.w},${F.h}`, "--default-background-color=00000000", `--screenshot=${out}`, tmp], { stdio: "ignore" });
     rmSync(tmp, { force: true });
     if (r.status !== 0 || !existsSync(out)) throw new Error(`Render fehlgeschlagen: ${F.key} slide ${i + 1}`);
