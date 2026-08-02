@@ -70,6 +70,16 @@ export const carouselSeries: CarouselSeries[] = [
       c("Integration & Weitergabe", 7),
     ],
   },
+  {
+    key: "marketing",
+    label: "Marketing / Funnel",
+    script: "docs/carousels/marketing-serien.mjs",
+    carousels: [
+      c("Bis zu 60.000 Gedanken", 9),
+      c("4 Wege zur mentalen Freiheit", 8),
+      c("Wer denkt hier eigentlich?", 8),
+    ],
+  },
 ];
 
 export const allCarousels: Carousel[] = carouselSeries.flatMap((s) => s.carousels);
