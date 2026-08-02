@@ -119,11 +119,17 @@ const OV = {
   "praxis/praesenz-spaziergang/4": { type: "list", title: "Nimm wahr", items: [{ lead: "5 Dinge", text: "die du siehst" }, { lead: "3 Dinge", text: "die du hörst" }, { lead: "1 Ding", text: "das du riechst" }] },
   "praxis/der-autopilot-check/4": { type: "list", title: "Bemerke, was in dir läuft", items: [{ lead: "Gedanke" }, { lead: "Stimmung" }, { lead: "Impuls" }] },
   "vertiefungen/werte-und-ziele/3": { type: "cards", title: "Ziele oder Werte?", cards: [{ head: "Ziele", text: "Meilensteine – das Was." }, { head: "Werte", text: "Geben ihnen Bedeutung – das Wofür." }] },
+  // --- 2. Charge ---
+  "selbstverteidigung/propaganda/3": { type: "list", title: "Drei stille Hebel", items: [{ lead: "Wiederholung", text: "macht vertraut" }, { lead: "Emotion", text: "schaltet das Prüfen aus" }, { lead: "Vereinfachung", text: "macht aus Vielschichtigem Gut gegen Böse" }] },
+  "selbstverteidigung/wiederholung/6": { type: "cards", title: "Die bessere Frage", cards: [{ head: "Nicht", text: '„Wie viele sagen es?"' }, { head: "Sondern", text: '„Auf wie viele unabhängige Quellen geht es zurück?"' }] },
+  "stufen/autopilot/4": { type: "list", title: "Deine Muster sind gelernt", items: [{ lead: "Eltern" }, { lead: "Schule" }, { lead: "Erfahrung" }], note: "Jedes war einmal Schutz. Heute laufen sie unbemerkt weiter." },
+  "stufen/innere-ausrichtung/3": { type: "list", title: "Denken, Fühlen, Handeln", items: [{ lead: "Denken", text: "das eine" }, { lead: "Fühlen", text: "das andere" }, { lead: "Tun", text: "ein drittes" }], note: "Dieser Widerspruch kostet enorm Energie." },
+  "vertiefungen/selbstmitgefuehl/4": { type: "cards", title: "Kein Weichspüler, sondern Realismus", cards: [{ head: "Nicht", text: '„alles super"' }, { head: "Sondern", text: '„das war schmerzhaft, und ich stehe trotzdem zu mir"' }], note: "Gerade weil es die Wahrheit nicht wegdrückt, macht es handlungsfähig." },
 };
 const ovKey = (car, slide) => `${car.series}/${car.slug}/${slide.num}`;
 function compMid(car, o) {
   const head = `<div class="eyebrow">${car.topic}</div>${o.title ? `<div class="lead" style="font-size:52px">${o.title}</div>` : ""}`;
-  if (o.type === "cards") return `<div class="mid">${head}<div class="cards2">${o.cards.map((c) => `<div class="ccard"><h3>${c.head}</h3><p>${c.text}</p></div>`).join("")}</div></div>`;
+  if (o.type === "cards") return `<div class="mid">${head}<div class="cards2">${o.cards.map((c) => `<div class="ccard"><h3>${c.head}</h3><p>${c.text}</p></div>`).join("")}</div>${o.note ? `<div class="cnote">${o.note}</div>` : ""}</div>`;
   return `<div class="mid">${head}<div class="clist">${o.items.map((it) => `<div class="cli"><span class="cd"></span><span class="ct">${it.text ? `<b>${it.lead}</b> — ${it.text}` : `<b>${it.lead}</b>`}</span></div>`).join("")}</div>${o.note ? `<div class="cnote">${o.note}</div>` : ""}</div>`;
 }
 
