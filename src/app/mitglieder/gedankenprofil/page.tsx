@@ -18,6 +18,11 @@ import {
   buildGedankenprofil,
   type StageLevel,
 } from "@/lib/gedankenprofil";
+import {
+  isReadingConfigured,
+  getLatestReading,
+} from "@/app/mitglieder/reading-actions";
+import { ReadingPanel } from "@/components/members/ReadingPanel";
 import { cn } from "@/lib/cn";
 
 export const dynamic = "force-dynamic";
@@ -65,6 +70,11 @@ export default async function GedankenprofilPage() {
     scores,
     completedNumbers,
   });
+
+  // KI-Reading nur anbieten, wenn serverseitig konfiguriert und ein Test vorliegt.
+  const readingConfigured = await isReadingConfigured();
+  const initialReading =
+    readingConfigured && profil.hasTest ? await getLatestReading() : null;
 
   return (
     <>
@@ -309,6 +319,17 @@ export default async function GedankenprofilPage() {
               </div>
             </Container>
           </section>
+
+          {/* Persönliches KI-Reading – nur auf ausdrückliche Freigabe */}
+          {readingConfigured && (
+            <section className="border-t border-ink/10 py-14 sm:py-20">
+              <Container>
+                <div className="mx-auto max-w-2xl">
+                  <ReadingPanel initialReading={initialReading} />
+                </div>
+              </Container>
+            </section>
+          )}
         </>
       )}
     </>
