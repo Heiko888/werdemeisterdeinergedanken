@@ -128,13 +128,20 @@ function midHtml(car, slide, total) {
   }
   // Body edler gliedern: erster Satz als Lead-Titel (Fraunces), Rest als
   // sekundärer Fließtext. Bei langem/einzelnem Satz bleibt es ein Block.
+  // Satzende nur bei ausgeglichenen Anführungszeichen (Punkte in „…" ignorieren).
   const t = slide.text.trim();
-  const sents = t.match(/[^.!?]+[.!?]+(?:\s|$)/g);
   let lead = "", body = t, sec = false;
-  if (sents && sents.length >= 2 && sents[0].trim().length <= 118) {
-    lead = sents[0].trim();
-    body = sents.slice(1).join(" ").trim();
-    sec = true;
+  let depth = 0, cut = -1;
+  for (let i = 0; i < t.length; i++) {
+    const c = t[i];
+    if (c === "„") depth++;                                  // öffnendes dt. Anführungszeichen
+    else if (c === "“" || c === "”") { if (depth > 0) depth--; } // schließende
+    else if (c === '"') depth = depth ? 0 : 1;               // gerades (selten)
+    else if ((c === "." || c === "!" || c === "?") && depth === 0 && (t[i + 1] === " " || i + 1 === t.length)) { cut = i + 1; break; }
+  }
+  if (cut > 0 && cut < t.length) {
+    const l = t.slice(0, cut).trim();
+    if (l.length >= 10 && l.length <= 118) { lead = l; body = t.slice(cut).trim(); sec = true; }
   }
   const leadFs = lead.length > 96 ? 46 : lead.length > 60 ? 52 : 58;
   const bfs = sec ? (body.length <= 120 ? 36 : body.length <= 220 ? 32 : 29) : bodyFs(body);
