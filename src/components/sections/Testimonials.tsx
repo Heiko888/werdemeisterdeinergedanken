@@ -8,7 +8,7 @@ export function Testimonials() {
   return (
     <section
       id="stimmen"
-      className="relative border-y border-ink/10 bg-white py-16 sm:py-32"
+      className="relative border-t border-ink/10 bg-paper py-16 sm:py-32"
     >
       <Container>
         <Reveal>

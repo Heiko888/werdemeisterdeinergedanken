@@ -14,7 +14,7 @@ const bullets = [
 
 export function LeadMagnet() {
   return (
-    <section className="relative border-y border-ink/10 bg-white py-16 sm:py-32">
+    <section className="relative border-t border-ink/10 bg-paper py-16 sm:py-32">
       <Container className="grid items-center gap-16 lg:grid-cols-[0.8fr_1fr]">
         {/* Buch-Cover */}
         <Reveal className="order-2 lg:order-1">
