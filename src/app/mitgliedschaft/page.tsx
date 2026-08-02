@@ -36,8 +36,9 @@ const steps = [
   ["Dranbleiben & wachsen", "Journal und Wachstumskurve halten dich sanft auf Kurs."],
 ];
 
+// Identisch zur Startseite (Hero.tsx), damit der Hero-Verlauf konsistent ist.
 const NAVY_GLOW =
-  "radial-gradient(55% 40% at 82% 8%, color-mix(in oklab, var(--color-teal-500) 16%, transparent), transparent 60%), radial-gradient(50% 45% at 8% 96%, color-mix(in oklab, var(--color-brand-500) 20%, transparent), transparent 60%)";
+  "radial-gradient(55% 45% at 82% 6%, color-mix(in oklab, var(--color-teal-500) 20%, transparent), transparent 60%), radial-gradient(52% 45% at 6% 98%, color-mix(in oklab, var(--color-brand-500) 22%, transparent), transparent 60%)";
 
 function DarkSection({
   children,
