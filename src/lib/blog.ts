@@ -1086,6 +1086,146 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "das-asch-experiment-warum-wir-mitmachen",
+    title: "Das Asch-Experiment: Warum wir mitmachen, obwohl wir es besser wissen",
+    excerpt:
+      "Ein simples Experiment mit ein paar Linien zeigt, wie leicht die Gruppe unser Urteil verbiegt – und was das über deine eigenen „Überzeugungen“ verrät.",
+    category: "Wissenschaft",
+    date: "2026-08-17",
+    dateLabel: "17. August 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Stell dir vor, du sitzt mit sieben anderen in einem Raum. Man zeigt euch zwei Karten: auf der einen eine Linie, auf der anderen drei Vergleichslinien. Die Frage ist kinderleicht – welche ist gleich lang? Doch die anderen sagen reihum eine offensichtlich falsche Antwort. Jetzt bist du dran. Sagst du die Wahrheit – oder was die Gruppe sagt?",
+      },
+      {
+        type: "h2",
+        text: "Was Solomon Asch herausfand",
+      },
+      {
+        type: "p",
+        text: "Genau dieses Experiment führte der Psychologe Solomon Asch in den 1950er-Jahren durch. Die anderen im Raum waren eingeweiht und antworteten absichtlich falsch. Das Ergebnis war ernüchternd: Rund ein Drittel der Testpersonen schloss sich in solchen Durchgängen der falschen Mehrheit an. Über mehrere Runden hinweg machte die große Mehrheit mindestens einmal mit. Menschen verleugneten das, was sie mit eigenen Augen sahen – nur um nicht aus der Reihe zu tanzen.",
+      },
+      {
+        type: "quote",
+        text: "Der Druck der Gruppe verändert nicht nur, was du sagst. Manchmal verändert er, was du zu sehen glaubst.",
+      },
+      {
+        type: "h2",
+        text: "Zustimmung ist nicht gleich Überzeugung",
+      },
+      {
+        type: "p",
+        text: "Interessant ist das Warum. Manche machten mit, obwohl sie die richtige Antwort kannten – aus Angst, unangenehm aufzufallen. Andere begannen tatsächlich zu zweifeln: „Die werden schon recht haben.“ Beides passiert bis heute in jeder Konferenz, jedem Familienessen, jedem Kommentarbereich. Die Mechanik ist dieselbe wie bei Stanley Milgrams berühmtem Gehorsamsexperiment: Nicht böse Menschen, sondern normaler sozialer Druck bringt uns dazu, gegen das eigene Urteil zu handeln.",
+      },
+      {
+        type: "h2",
+        text: "Der Schutz: den Abstand bemerken",
+      },
+      {
+        type: "p",
+        text: "Asch fand auch das Gegenmittel. Sobald nur eine einzige weitere Person die Wahrheit sagte, brach der Konformitätsdruck fast zusammen. Ein einziger Verbündeter genügt. Für dich heißt das: Wenn sich etwas „komisch richtig“ anfühlt, nur weil alle es sagen, halte kurz inne. Frag dich: Würde ich das auch allein für wahr halten? Diese eine Frage ist der Abstand zwischen „mitgezogen werden“ und selbst urteilen.",
+      },
+      {
+        type: "p",
+        text: "Die vollständige Vertiefung zu Gruppendruck und Zugehörigkeit findest du im Mitgliederbereich.",
+      },
+    ],
+  },
+  {
+    slug: "der-placebo-effekt-wie-erwartung-wirkt",
+    title: "Der Placebo-Effekt: Wie eine Erwartung deinen Körper verändert",
+    excerpt:
+      "Eine Tablette ohne Wirkstoff, die trotzdem hilft: Der Placebo-Effekt ist kein Trick der Einbildung, sondern messbare Biologie – und ein Beleg dafür, wie stark Überzeugungen wirken.",
+    category: "Wissenschaft",
+    date: "2026-08-21",
+    dateLabel: "21. August 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Ein Mensch bekommt eine Tablette, die keinen einzigen Wirkstoff enthält – nur Zucker. Und trotzdem lassen seine Schmerzen nach. Kein Betrug, kein Einbilden im abwertenden Sinn: Der Effekt ist real und im Labor tausendfach dokumentiert. Er heißt Placebo-Effekt, und er sagt mehr über die Macht deiner Erwartung aus als fast alles andere.",
+      },
+      {
+        type: "h2",
+        text: "Erwartung wird zu Biologie",
+      },
+      {
+        type: "p",
+        text: "Das Entscheidende: Beim Placebo bleibt es nicht bei einem „guten Gefühl“. Die Forschung – etwa die Arbeiten von Fabrizio Benedetti – zeigt, dass der Körper dabei reale Stoffe ausschüttet: körpereigene, schmerzlindernde Endorphine zum Beispiel, oder Dopamin bei Belohnungserwartung. Gibt man ein Mittel, das genau diese Endorphine blockiert, verschwindet auch der Placebo-Effekt. Das beweist: Hier wirkt echte Physiologie, angestoßen allein durch die Überzeugung, dass Hilfe kommt.",
+      },
+      {
+        type: "quote",
+        text: "Der Körper reagiert nicht nur auf das Mittel, sondern auf die Bedeutung, die du ihm gibst.",
+      },
+      {
+        type: "h2",
+        text: "Die ehrliche Grenze",
+      },
+      {
+        type: "p",
+        text: "Hier ist die nötige Ehrlichkeit: Erwartung heilt keinen Knochenbruch und ersetzt keine Medizin. Der Placebo-Effekt wirkt vor allem dort, wo Wahrnehmung mitspielt – Schmerz, Übelkeit, Müdigkeit, Stimmung. Wer das überdehnt und „positives Denken“ gegen ernste Krankheiten verkauft, missbraucht die Wissenschaft. Der seriöse Kern bleibt trotzdem stark genug.",
+      },
+      {
+        type: "h2",
+        text: "Was du daraus mitnimmst",
+      },
+      {
+        type: "p",
+        text: "Deine innere Haltung ist kein Beiwerk – sie mischt bei körperlichen Prozessen mit. Wovon du überzeugt bist, wie du eine Situation deutest, welche Erwartung du in dich trägst: All das wirkt. Das ist keine Aufforderung, dir etwas vorzumachen, sondern eine Einladung, bewusster zu wählen, welche Überzeugungen du nährst. Mehr dazu im Artikel „Wie Gedanken deinen Körper und deine Gesundheit formen“.",
+      },
+    ],
+  },
+  {
+    slug: "was-meditation-im-gehirn-veraendert",
+    title: "Was Meditation wirklich im Gehirn verändert",
+    excerpt:
+      "Zwischen Esoterik und Hype: Was die Forschung über Achtsamkeit tatsächlich zeigt – vom ruhigeren Alarmzentrum bis zum abschweifenden Geist. Ehrlich eingeordnet.",
+    category: "Wissenschaft",
+    date: "2026-08-25",
+    dateLabel: "25. August 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Kaum ein Thema wird so überhöht wie Meditation – und kaum eines so schnell belächelt. Beides wird der Sache nicht gerecht. Lohnender ist die nüchterne Frage: Was lässt sich tatsächlich messen, wenn Menschen regelmäßig Achtsamkeit üben?",
+      },
+      {
+        type: "h2",
+        text: "Der abschweifende Geist",
+      },
+      {
+        type: "p",
+        text: "Zwei Harvard-Forscher, Killingsworth und Gilbert, befragten 2010 über 2.000 Menschen mitten im Alltag. Ergebnis: In rund 47 Prozent der Wachzeit war ihr Geist nicht bei dem, was sie gerade taten. Er wanderte – und in diesen Momenten waren die Menschen im Schnitt unglücklicher. Nicht die Tätigkeit entschied über das Wohlbefinden, sondern das Abschweifen selbst. Genau hier setzt Achtsamkeit an: Sie trainiert, immer wieder zurückzukehren.",
+      },
+      {
+        type: "h2",
+        text: "Was sich im Gehirn zeigt",
+      },
+      {
+        type: "p",
+        text: "2011 untersuchte ein Team um Britta Hölzel Menschen vor und nach einem achtwöchigen Achtsamkeitsprogramm (MBSR, entwickelt von Jon Kabat-Zinn). Danach zeigte sich mehr graue Substanz im Hippocampus, der für Lernen und Gedächtnis wichtig ist – und Hinweise auf eine weniger reaktive Amygdala, das Alarmzentrum. Das passt zum Alltagseindruck vieler Übender: nicht weniger Gefühle, aber weniger Mitgerissenwerden.",
+      },
+      {
+        type: "quote",
+        text: "Achtsamkeit macht dich nicht gefühllos. Sie vergrößert den Abstand zwischen Reiz und Reaktion.",
+      },
+      {
+        type: "h2",
+        text: "Die nötige Vorsicht",
+      },
+      {
+        type: "p",
+        text: "Ehrlich bleiben heißt auch: Viele dieser Hirnstudien haben kleine Stichproben, und nicht jeder spektakuläre Befund hält jeder Wiederholung stand. Meditation ist kein Wundermittel und ersetzt bei ernsten Beschwerden keine Behandlung. Als tägliche Übung für einen klareren, weniger getriebenen Kopf ist ihr Nutzen aber gut belegt.",
+      },
+      {
+        type: "p",
+        text: "Du brauchst dafür keine Stunde auf dem Kissen. Drei Minuten Atemfokus am Tag genügen, um anzufangen. Die konkrete Anleitung findest du in den Praxis-Übungen im Mitgliederbereich.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {

@@ -148,6 +148,20 @@ export const reelSeries: ReelSeries[] = [
       { topic: "Nicht deine Schuld", hook: "Was, wenn dein Problem nie zu wenig Disziplin war?", filmed: false },
     ],
   },
+  {
+    key: "wissenschaft",
+    label: "Die Wissenschaft dahinter",
+    script: "docs/skripte/reels/wissenschaft.md",
+    reels: [
+      { topic: "Freier Wille", hook: "Dein Gehirn entscheidet, bevor du es merkst.", filmed: false },
+      { topic: "Neuroplastizität", hook: "Dein Gehirn baut sich ständig um.", filmed: false },
+      { topic: "Gefühle benennen", hook: "Ein Wort beruhigt dein aufgewühltes Gehirn.", filmed: false },
+      { topic: "Denkfehler", hook: "Du liegst nicht zufällig daneben – sondern vorhersehbar.", filmed: false },
+      { topic: "Willenskraft", hook: "Wenn Disziplin reicht – warum scheitert sie so oft?", filmed: false },
+      { topic: "Abschweifender Geist", hook: "Fast die Hälfte des Tages bist du gedanklich woanders.", filmed: false },
+      { topic: "Placebo", hook: "Eine Überzeugung verändert echte Körperprozesse.", filmed: false },
+    ],
+  },
 ];
 
 export const allReels: Reel[] = reelSeries.flatMap((s) => s.reels);
