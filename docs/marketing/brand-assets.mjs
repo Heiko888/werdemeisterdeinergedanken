@@ -101,6 +101,24 @@ const quoteTile = (w, h, q) => shell(w, h, `
 </div>
 <div class="foot"><img src="${brainUrl}"><span class="t">Werde Meister deiner Gedanken</span></div>`);
 
+// Studien-Fakt-Kachel – Eyebrow, großer Serifen-Fakt, Quellenzeile, Marke unten
+const factTile = (w, h, f) => shell(w, h, `
+.fwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.18)}px;text-align:center}
+.eyebrow{font-size:${Math.round(w*0.026)}px;letter-spacing:.22em;margin-bottom:${Math.round(w*0.05)}px}
+.fact{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.066)}px;line-height:1.26;letter-spacing:-.3px}
+.fact em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.src{margin-top:${Math.round(w*0.05)}px;font-size:${Math.round(w*0.028)}px;line-height:1.4;color:rgba(244,242,236,.6)}
+.src b{color:rgba(163,214,79,.9);font-weight:700}
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.07)}px;display:flex;align-items:center;justify-content:center;gap:14px}
+.foot img{width:${Math.round(w*0.05)}px;height:${Math.round(w*0.05)}px;object-fit:contain}
+.foot .t{font-size:${Math.round(w*0.026)}px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(244,242,236,.7)}
+`, `<div class="fwrap">
+  <div class="eyebrow">Studien-Fakt</div>
+  <div class="fact">${f.t}</div>
+  <div class="src"><b>Quelle:</b> ${f.src}</div>
+</div>
+<div class="foot"><img src="${brainUrl}"><span class="t">Werde Meister deiner Gedanken</span></div>`);
+
 // ---------- Inhalte ---------------------------------------------------------
 const THUMBS = [
   { key: "01", eyebrow: "Mentale Selbstverteidigung",
@@ -121,6 +139,22 @@ const QUOTES = [
   { key: "04", t: `Raus aus dem Autopilot – rein in echte innere <em>Klarheit</em>.` },
 ];
 
+// Studien-Fakten (belegt; Umstrittenes wird in der Quellenzeile gekennzeichnet)
+const FACTS = [
+  { key: "01", t: `In rund <em>47 %</em> der Wachzeit ist unser Geist nicht bei der Sache – und dann unglücklicher.`,
+    src: `Killingsworth & Gilbert, Harvard, 2010 („Science“)` },
+  { key: "02", t: `Ein Gefühl zu <em>benennen</em> dämpft die Amygdala – die Alarmzentrale des Gehirns.`,
+    src: `Lieberman et al., UCLA, 2007` },
+  { key: "03", t: `Jonglieren zu lernen verändert in drei Monaten die <em>Struktur</em> des Gehirns.`,
+    src: `Draganski et al., 2004 („Nature“)` },
+  { key: "04", t: `Wir liegen nicht zufällig daneben – sondern <em>vorhersehbar</em>.`,
+    src: `Tversky & Kahneman, 1974 („Science“)` },
+  { key: "05", t: `Willenskraft als „Muskel“, der ermüdet? Eine große Replikation fand den Effekt <em>nicht</em>.`,
+    src: `Baumeister 1998 – Replikation: Hagger 2016 (umstritten)` },
+  { key: "06", t: `Dein Gehirn bleibt <em>formbar</em> – ein Leben lang.`,
+    src: `Maguire 2000 · Draganski 2004 (Neuroplastizität)` },
+];
+
 const TARGETS = [];
 // Avatare
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, html: () => avatarRound(1080) });
@@ -133,6 +167,11 @@ for (const d of THUMBS)
 for (const q of QUOTES) {
   TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t) });
   TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1350, html: () => quoteTile(1080, 1350, q.t) });
+}
+// Studien-Fakten-Kacheln (1:1 und 4:5)
+for (const f of FACTS) {
+  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1080, html: () => factTile(1080, 1080, f) });
+  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1350, html: () => factTile(1080, 1350, f) });
 }
 
 // ---------- Render ----------------------------------------------------------
