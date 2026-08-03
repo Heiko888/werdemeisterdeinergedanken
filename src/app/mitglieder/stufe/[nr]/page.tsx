@@ -10,6 +10,7 @@ import { getStageLesson } from "@/lib/stage-lessons";
 import { deepDivesForStage } from "@/lib/deep-dives";
 import { StageCompleteToggle } from "@/components/members/StageCompleteToggle";
 import { JournalReflection } from "@/components/members/JournalReflection";
+import { site } from "@/lib/site";
 
 export function generateStaticParams() {
   return stages.map((_, i) => ({ nr: String(i + 1) }));
@@ -112,11 +113,11 @@ export default async function StagePage({
             <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
               Video zur Stufe
             </span>
-            {lesson?.video ? (
+            {(lesson?.video ?? site.placeholderVideoId) ? (
               <div className="mt-3 aspect-video w-full overflow-hidden rounded-2xl border border-ink/10 shadow-card">
                 <iframe
                   className="h-full w-full"
-                  src={`https://www.youtube-nocookie.com/embed/${lesson.video}`}
+                  src={`https://www.youtube-nocookie.com/embed/${lesson?.video ?? site.placeholderVideoId}`}
                   title={`Video zu Stufe ${stage.number} – ${stage.title}`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
