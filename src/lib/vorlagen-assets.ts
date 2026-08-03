@@ -7,16 +7,18 @@
  */
 
 export type VorlagenAsset = {
-  kategorie: "social" | "reels" | "workshop";
+  kategorie: "social" | "reels" | "carousel" | "workshop";
   titel: string;
   unterKategorie: string;
-  kind: "image" | "file";
-  /** Nur bei kind === "image": kleines Vorschaubild. */
+  kind: "image" | "file" | "carousel";
+  /** Nur bei kind === "image" | "carousel": kleines Vorschaubild (Cover). */
   thumb?: string;
   /** Download-/Ansehen-Link (liegt unter public/). */
   href: string;
   /** Nur bei kind === "file". */
   format?: string;
+  /** Nur bei kind === "carousel": Anzahl der Slides. */
+  slides?: number;
   sizeMB?: number;
 };
 
@@ -740,6 +742,496 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/vorlagen/thumbs/reels/reel-wissenschaft-07.webp",
     "href": "/vorlagen/reels/reel-wissenschaft-07.webp"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 6 atmung",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__4-6-atmung.webp",
+    "href": "/vorlagen/carousels/praxis__4-6-atmung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "abend reflexion",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__abend-reflexion.webp",
+    "href": "/vorlagen/carousels/praxis__abend-reflexion.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "atembeobachtung",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__atembeobachtung.webp",
+    "href": "/vorlagen/carousels/praxis__atembeobachtung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "body scan",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__body-scan.webp",
+    "href": "/vorlagen/carousels/praxis__body-scan.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "box breathing",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__box-breathing.webp",
+    "href": "/vorlagen/carousels/praxis__box-breathing.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der autopilot check",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__der-autopilot-check.webp",
+    "href": "/vorlagen/carousels/praxis__der-autopilot-check.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere beobachter",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__der-innere-beobachter.webp",
+    "href": "/vorlagen/carousels/praxis__der-innere-beobachter.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die taegliche rueckkehr",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__die-taegliche-rueckkehr.webp",
+    "href": "/vorlagen/carousels/praxis__die-taegliche-rueckkehr.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "herz kohaerenz",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__herz-kohaerenz.webp",
+    "href": "/vorlagen/carousels/praxis__herz-kohaerenz.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "loslass ritual",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__loslass-ritual.webp",
+    "href": "/vorlagen/carousels/praxis__loslass-ritual.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "morgen ausrichtung",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__morgen-ausrichtung.webp",
+    "href": "/vorlagen/carousels/praxis__morgen-ausrichtung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "praesenz spaziergang",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__praesenz-spaziergang.webp",
+    "href": "/vorlagen/carousels/praxis__praesenz-spaziergang.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "verlaengertes ausatmen",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.2,
+    "thumb": "/vorlagen/thumbs/carousels/praxis__verlaengertes-ausatmen.webp",
+    "href": "/vorlagen/carousels/praxis__verlaengertes-ausatmen.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ablenkung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__ablenkung.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__ablenkung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "algorithmen",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__algorithmen.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__algorithmen.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "angst steuerung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__angst-steuerung.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__angst-steuerung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autoritaetshoerigkeit",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__autoritaetshoerigkeit.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "bildmacht",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__bildmacht.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__bildmacht.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "framing",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__framing.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__framing.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruppendruck",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__gruppendruck.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__gruppendruck.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "identitaet und meinung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__identitaet-und-meinung.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive dissonanz",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__kognitive-dissonanz.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "medien agenda",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__medien-agenda.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__medien-agenda.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "normalisierung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__normalisierung.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__normalisierung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "propaganda",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__propaganda.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__propaganda.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "reizueberflutung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__reizueberflutung.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__reizueberflutung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "sprache und etiketten",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__sprache-und-etiketten.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werbung und mangel",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__werbung-und-mangel.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "wiederholung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__wiederholung.webp",
+    "href": "/vorlagen/carousels/selbstverteidigung__wiederholung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autopilot",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/stufen__autopilot.webp",
+    "href": "/vorlagen/carousels/stufen__autopilot.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionale reifung",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/stufen__emotionale-reifung.webp",
+    "href": "/vorlagen/carousels/stufen__emotionale-reifung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "erwachen",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/stufen__erwachen.webp",
+    "href": "/vorlagen/carousels/stufen__erwachen.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "innere ausrichtung",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/stufen__innere-ausrichtung.webp",
+    "href": "/vorlagen/carousels/stufen__innere-ausrichtung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "meisterschaft",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/stufen__meisterschaft.webp",
+    "href": "/vorlagen/carousels/stufen__meisterschaft.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "schoepferkraft",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/stufen__schoepferkraft.webp",
+    "href": "/vorlagen/carousels/stufen__schoepferkraft.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstbeobachtung",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/stufen__selbstbeobachtung.webp",
+    "href": "/vorlagen/carousels/stufen__selbstbeobachtung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "automatische gedanken",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__automatische-gedanken.webp",
+    "href": "/vorlagen/carousels/vertiefungen__automatische-gedanken.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere kritiker",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__der-innere-kritiker.webp",
+    "href": "/vorlagen/carousels/vertiefungen__der-innere-kritiker.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die reiz reaktions luecke",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__die-reiz-reaktions-luecke.webp",
+    "href": "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionsregulation",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__emotionsregulation.webp",
+    "href": "/vorlagen/carousels/vertiefungen__emotionsregulation.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruebeln und gedankenkreisen",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__gruebeln-und-gedankenkreisen.webp",
+    "href": "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "integration und weitergabe",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__integration-und-weitergabe.webp",
+    "href": "/vorlagen/carousels/vertiefungen__integration-und-weitergabe.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kernueberzeugungen",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__kernueberzeugungen.webp",
+    "href": "/vorlagen/carousels/vertiefungen__kernueberzeugungen.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive verzerrungen",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__kognitive-verzerrungen.webp",
+    "href": "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "konditionierung",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__konditionierung.webp",
+    "href": "/vorlagen/carousels/vertiefungen__konditionierung.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "muster koerper und gesundheit",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__muster-koerper-und-gesundheit.webp",
+    "href": "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "neuroplastizitaet",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__neuroplastizitaet.webp",
+    "href": "/vorlagen/carousels/vertiefungen__neuroplastizitaet.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstmitgefuehl",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__selbstmitgefuehl.webp",
+    "href": "/vorlagen/carousels/vertiefungen__selbstmitgefuehl.zip"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werte und ziele",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.3,
+    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__werte-und-ziele.webp",
+    "href": "/vorlagen/carousels/vertiefungen__werte-und-ziele.zip"
   },
   {
     "kategorie": "workshop",
