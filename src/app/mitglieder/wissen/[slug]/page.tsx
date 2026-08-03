@@ -9,6 +9,7 @@ import { deepDives, getDeepDive } from "@/lib/deep-dives";
 import { stages } from "@/lib/content";
 import { hasStaticPdf } from "@/lib/pdf/static-pdf";
 import { JournalReflection } from "@/components/members/JournalReflection";
+import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { site } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -91,15 +92,10 @@ export default async function DeepDivePage({
               Video zur Vertiefung
             </span>
             {(dive.video ?? site.placeholderVideoId) ? (
-              <div className="mt-3 aspect-video w-full overflow-hidden rounded-2xl border border-ink/10 shadow-card">
-                <iframe
-                  className="h-full w-full"
-                  src={`https://www.youtube-nocookie.com/embed/${dive.video ?? site.placeholderVideoId}`}
-                  title={`Video zu ${dive.title}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+              <VideoEmbed
+                videoId={(dive.video ?? site.placeholderVideoId)!}
+                title={`Video zu ${dive.title}`}
+              />
             ) : (
               <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">

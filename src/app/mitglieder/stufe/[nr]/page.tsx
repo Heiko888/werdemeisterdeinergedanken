@@ -10,6 +10,7 @@ import { getStageLesson } from "@/lib/stage-lessons";
 import { deepDivesForStage } from "@/lib/deep-dives";
 import { StageCompleteToggle } from "@/components/members/StageCompleteToggle";
 import { JournalReflection } from "@/components/members/JournalReflection";
+import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { site } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -114,15 +115,10 @@ export default async function StagePage({
               Video zur Stufe
             </span>
             {(lesson?.video ?? site.placeholderVideoId) ? (
-              <div className="mt-3 aspect-video w-full overflow-hidden rounded-2xl border border-ink/10 shadow-card">
-                <iframe
-                  className="h-full w-full"
-                  src={`https://www.youtube-nocookie.com/embed/${lesson?.video ?? site.placeholderVideoId}`}
-                  title={`Video zu Stufe ${stage.number} – ${stage.title}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+              <VideoEmbed
+                videoId={(lesson?.video ?? site.placeholderVideoId)!}
+                title={`Video zu Stufe ${stage.number} – ${stage.title}`}
+              />
             ) : (
               <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">

@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { ArrowRight, Play } from "@/components/ui/Icon";
 import { practices, getPractice } from "@/lib/practices";
 import { stages } from "@/lib/content";
+import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { site } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -120,15 +121,10 @@ export default async function PracticePage({
                 </audio>
               </div>
             ) : (practice.video ?? site.placeholderVideoId) ? (
-              <div className="mt-3 aspect-video w-full overflow-hidden rounded-2xl border border-ink/10 shadow-card">
-                <iframe
-                  className="h-full w-full"
-                  src={`https://www.youtube-nocookie.com/embed/${practice.video ?? site.placeholderVideoId}`}
-                  title={`Geführte Praxis: ${practice.title}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+              <VideoEmbed
+                videoId={(practice.video ?? site.placeholderVideoId)!}
+                title={`Geführte Praxis: ${practice.title}`}
+              />
             ) : (
               <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">
