@@ -163,6 +163,46 @@ function DateiKarte({ a }: { a: VorlagenAsset }) {
   );
 }
 
+function CarouselKarte({ a }: { a: VorlagenAsset }) {
+  return (
+    <figure className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card">
+      <a
+        href={a.thumb}
+        target="_blank"
+        rel="noreferrer"
+        className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-ink/[0.03]"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={a.thumb}
+          alt={a.titel}
+          loading="lazy"
+          className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+        />
+        <span className="absolute right-2 top-2 rounded-full bg-ink/80 px-2 py-0.5 text-[0.7rem] font-semibold text-white backdrop-blur">
+          {a.slides} Slides
+        </span>
+      </a>
+      <figcaption className="flex flex-1 flex-col gap-2 p-3">
+        <div className="flex flex-col gap-0.5">
+          <span className="text-[0.7rem] font-semibold uppercase tracking-wide text-accent">
+            {a.unterKategorie}
+          </span>
+          <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
+        </div>
+        <a
+          href={a.href}
+          download
+          className="mt-auto inline-flex items-center justify-center gap-1.5 rounded-lg bg-ink px-3 py-1.5 text-xs font-medium text-white transition-opacity hover:opacity-90"
+        >
+          <Download className="h-3.5 w-3.5" />
+          Alle Slides (ZIP{a.sizeMB ? `, ${a.sizeMB} MB` : ""})
+        </a>
+      </figcaption>
+    </figure>
+  );
+}
+
 function PdfKarte({ p }: { p: PdfItem }) {
   return (
     <a
@@ -209,10 +249,12 @@ export default async function VorlagenPage() {
 
   const social = vorlagenAssets.filter((a) => a.kategorie === "social");
   const reels = vorlagenAssets.filter((a) => a.kategorie === "reels");
+  const carousels = vorlagenAssets.filter((a) => a.kategorie === "carousel");
   const workshop = vorlagenAssets.filter((a) => a.kategorie === "workshop");
   const pdfs = buildPdfListe();
 
   const reelsGruppen = groupBy(reels, (a) => a.unterKategorie);
+  const carouselsGruppen = groupBy(carousels, (a) => a.unterKategorie);
   const workshopGruppen = groupBy(workshop, (a) => a.unterKategorie);
   const pdfGruppen = groupBy(pdfs, (p) => p.gruppe);
 
@@ -246,6 +288,7 @@ export default async function VorlagenPage() {
           <div className="mt-2 flex flex-wrap gap-2">
             <NavPill href="#social" label="Social-Grafiken" count={social.length} />
             <NavPill href="#reels" label="Reel-Cover" count={reels.length} />
+            <NavPill href="#carousels" label="Carousels" count={carousels.length} />
             <NavPill href="#pdf" label="PDF-Dokumente" count={pdfs.length} />
             <NavPill href="#workshop" label="Workshop" count={workshop.length} />
           </div>
@@ -292,6 +335,32 @@ export default async function VorlagenPage() {
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
                 {items.map((a) => (
                   <BildKarte key={a.href} a={a} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </Container>
+      </section>
+
+      {/* Carousels */}
+      <section id="carousels" className="scroll-mt-8 border-t border-ink/10 py-12 sm:py-14">
+        <Container>
+          <Eyebrow>Carousels</Eyebrow>
+          <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+            Foliensequenzen zum Durchwischen
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-ink-mid">
+            Mehrseitige Bild-Strecken (4:5) für Instagram & LinkedIn. Ein Klick lädt
+            alle Slides eines Carousels als ZIP – direkt hochladbar.
+          </p>
+          {carouselsGruppen.map(([serie, items]) => (
+            <div key={serie} className="mt-8">
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
+                {serie} <span className="text-ink-muted/70">({items.length})</span>
+              </h3>
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+                {items.map((a) => (
+                  <CarouselKarte key={a.href} a={a} />
                 ))}
               </div>
             </div>

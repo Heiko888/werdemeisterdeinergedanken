@@ -24,6 +24,7 @@ import {
   statSync,
   writeFileSync,
 } from "node:fs";
+import { spawnSync } from "node:child_process";
 import { basename, dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -176,7 +177,87 @@ async function buildReels() {
   return files.length;
 }
 
-// --- 3. Workshop-Dateien (Download, keine Vorschau) -------------------------
+// --- 3. Carousels (Cover als Vorschau, alle Slides als ZIP) -----------------
+
+async function buildCarousels() {
+  const src = join(ROOT, "docs", "carousels", "export");
+  if (!existsSync(src)) return 0;
+
+  const dir = join(OUT, "carousels");
+  ensureDir(dir);
+  ensureDir(join(THUMB_DIR, "carousels"));
+  const tmpRoot = join(OUT, ".tmp-carousels");
+
+  const SERIE = {
+    "selbstverteidigung": "Mentale Selbstverteidigung",
+    "stufen": "Die 7 Stufen",
+    "praxis": "Praxis",
+    "vertiefungen": "Vertiefungen",
+  };
+
+  let count = 0;
+  // Struktur: export/<serie>/<slug>/slide-NN.png
+  for (const serie of readdirSync(src, { withFileTypes: true })) {
+    if (!serie.isDirectory()) continue;
+    const serieDir = join(src, serie.name);
+    for (const carousel of readdirSync(serieDir, { withFileTypes: true })) {
+      if (!carousel.isDirectory()) continue;
+      const cDir = join(serieDir, carousel.name);
+      const slides = collect(cDir, [".png"]);
+      if (slides.length === 0) continue;
+
+      const id = `${serie.name}__${carousel.name}`;
+
+      // Cover-Vorschau (erste Slide) klein als webp.
+      await sharp(slides[0])
+        .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+        .webp({ quality: 74 })
+        .toFile(join(THUMB_DIR, "carousels", `${id}.webp`));
+
+      // Alle Slides als webp in einen Temp-Ordner, dann zippen.
+      const tmp = join(tmpRoot, id);
+      ensureDir(tmp);
+      let n = 0;
+      for (const slide of slides) {
+        n++;
+        await sharp(slide)
+          .resize({ width: 1080, withoutEnlargement: true })
+          .webp({ quality: 80 })
+          .toFile(join(tmp, `slide-${String(n).padStart(2, "0")}.webp`));
+      }
+
+      const zipName = `${id}.zip`;
+      const zipPath = join(dir, zipName);
+      if (existsSync(zipPath)) rmSync(zipPath);
+      const res = spawnSync(
+        "zip",
+        ["-j", "-q", zipPath, ...readdirSync(tmp).map((f) => join(tmp, f))],
+        { stdio: "inherit" },
+      );
+      if (res.status !== 0) {
+        throw new Error(`zip fehlgeschlagen für ${id}`);
+      }
+
+      assets.push({
+        kategorie: "carousel",
+        titel: prettifyName(carousel.name),
+        unterKategorie: SERIE[serie.name] ?? prettifyLabel(serie.name),
+        kind: "carousel",
+        slides: slides.length,
+        sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
+        thumb: `/vorlagen/thumbs/carousels/${id}.webp`,
+        href: `/vorlagen/carousels/${zipName}`,
+      });
+      count++;
+    }
+  }
+
+  // Temp-Ordner entfernen – nur ZIPs bleiben.
+  if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
+  return count;
+}
+
+// --- 4. Workshop-Dateien (Download, keine Vorschau) -------------------------
 
 function buildWorkshop() {
   const src = join(ROOT, "docs", "workshop");
@@ -225,16 +306,18 @@ function writeManifest() {
  */
 
 export type VorlagenAsset = {
-  kategorie: "social" | "reels" | "workshop";
+  kategorie: "social" | "reels" | "carousel" | "workshop";
   titel: string;
   unterKategorie: string;
-  kind: "image" | "file";
-  /** Nur bei kind === "image": kleines Vorschaubild. */
+  kind: "image" | "file" | "carousel";
+  /** Nur bei kind === "image" | "carousel": kleines Vorschaubild (Cover). */
   thumb?: string;
   /** Download-/Ansehen-Link (liegt unter public/). */
   href: string;
   /** Nur bei kind === "file". */
   format?: string;
+  /** Nur bei kind === "carousel": Anzahl der Slides. */
+  slides?: number;
   sizeMB?: number;
 };
 
@@ -259,6 +342,8 @@ async function main() {
   console.log(`✓ Social-Grafiken: ${social}`);
   const reels = await buildReels();
   console.log(`✓ Reel-Cover (9x16): ${reels}`);
+  const carousels = await buildCarousels();
+  console.log(`✓ Carousels (als ZIP): ${carousels}`);
   const workshop = buildWorkshop();
   console.log(`✓ Workshop-Dateien: ${workshop}`);
 
@@ -266,7 +351,7 @@ async function main() {
   console.log(`✓ Katalog: ${path} (${assets.length} Einträge)`);
 
   // Deploy-Größe ausgeben
-  const size = collect(OUT, [".webp", ".pptx", ".pdf", ".png"]).reduce(
+  const size = collect(OUT, [".webp", ".pptx", ".pdf", ".png", ".zip"]).reduce(
     (s, f) => s + statSync(f).size,
     0,
   );
