@@ -27,6 +27,11 @@ export type DeepDive = {
   relatedStage: number;
   /** YouTube-Video-ID – oder null */
   video: string | null;
+  /**
+   * Wissenschaftlicher Hintergrund: reale Studien/Quellen, ehrlich eingeordnet.
+   * `note` markiert Vorsicht (umstritten, kleine Stichprobe, populärwiss.).
+   */
+  sources?: { ref: string; finding: string; note?: string }[];
 };
 
 export const deepDives: DeepDive[] = [
@@ -87,6 +92,10 @@ export const deepDives: DeepDive[] = [
       "Zwischen Situation und Gefühl steht immer ein Gedanke. Wer ihn erwischt, gewinnt die Wahl zurück.",
     relatedStage: 1,
     video: null,
+    sources: [
+      { ref: "Aaron T. Beck (1960er)", finding: "Automatische Gedanken und Denkverzerrungen als Motor von Depression und Angst – das Fundament der kognitiven Verhaltenstherapie." },
+      { ref: "Daniel Kahneman (2011)", finding: "„System 1“: der schnelle, automatische Denkmodus, der blitzschnell und ungefragt bewertet." },
+    ],
   },
 
   // ---------------------------------------------------------------
@@ -205,6 +214,10 @@ export const deepDives: DeepDive[] = [
       "Denkfehler folgen wenigen Mustern. Wer sie benennt, muss ihnen nicht mehr glauben.",
     relatedStage: 3,
     video: null,
+    sources: [
+      { ref: "Tversky & Kahneman (1974, „Science“)", finding: "Menschen liegen systematisch – also vorhersehbar – daneben: Verfügbarkeitsheuristik, Verankerung, Repräsentativität." },
+      { ref: "Aaron T. Beck (1960er)", finding: "Verzerrungen wie Schwarz-Weiß-Denken und Katastrophisieren befeuern depressive und ängstliche Zustände." },
+    ],
   },
 
   // ---------------------------------------------------------------
@@ -382,6 +395,11 @@ export const deepDives: DeepDive[] = [
       "Dein Gehirn folgt dem, was du wiederholst. Häufigkeit schlägt Intensität – und macht Veränderung real.",
     relatedStage: 5,
     video: null,
+    sources: [
+      { ref: "Hebb (1949)", finding: "Grundprinzip der Plastizität: Nervenzellen, die gemeinsam feuern, verstärken ihre Verbindung („fire together, wire together“)." },
+      { ref: "Maguire et al. (2000, PNAS)", finding: "Londoner Taxifahrer besitzen einen vergrößerten hinteren Hippocampus – je länger im Dienst, desto ausgeprägter." },
+      { ref: "Draganski et al. (2004, „Nature“)", finding: "Jonglieren-Lernen mehrt in rund 3 Monaten messbar die graue Substanz; bei Aufhören bildet sie sich teils zurück." },
+    ],
   },
 
   // ---------------------------------------------------------------
@@ -441,6 +459,10 @@ export const deepDives: DeepDive[] = [
       "Du kannst den Reiz nicht wählen – aber den Moment danach. In diesem Spalt liegt deine ganze Freiheit.",
     relatedStage: 2,
     video: null,
+    sources: [
+      { ref: "Lieberman et al. (2007, „Psychological Science“)", finding: "Ein Gefühl zu benennen (Affect Labeling) dämpft die Amygdala und aktiviert den präfrontalen Kortex – der Spalt wird nutzbar." },
+      { ref: "„Zwischen Reiz und Reaktion …“", finding: "Der berühmte Satz wird häufig Viktor Frankl zugeschrieben.", note: "Die wörtliche Quelle ist nicht belegt; der Gedanke passt zu Frankls Logotherapie, das Zitat ist aber nicht sicher von ihm." },
+    ],
   },
 
   // ---------------------------------------------------------------
@@ -500,6 +522,10 @@ export const deepDives: DeepDive[] = [
       "Grübeln ist Wiederholung, kein Fortschritt. Du gewinnst es nicht – du unterbrichst es.",
     relatedStage: 3,
     video: null,
+    sources: [
+      { ref: "Nolen-Hoeksema (1991 ff.)", finding: "Response-Styles-Theorie: Grübeln verlängert und vertieft depressive Stimmung, statt sie zu lösen." },
+      { ref: "Killingsworth & Gilbert (2010, „Science“)", finding: "Der Geist schweift rund 47 % der Wachzeit ab – und ist in diesen Momenten unglücklicher." },
+    ],
   },
 
   // ---------------------------------------------------------------
@@ -559,6 +585,10 @@ export const deepDives: DeepDive[] = [
       "Gefühle sind Wellen mit Anfang und Ende. Benennen, halten, atmen – dann tragen sie dich, statt dich fortzureißen.",
     relatedStage: 4,
     video: null,
+    sources: [
+      { ref: "Lieberman et al. (2007, UCLA)", finding: "„Putting Feelings Into Words“: Das Benennen einer Emotion senkt messbar die Aktivität der Amygdala." },
+      { ref: "Jill Bolte Taylor (2008)", finding: "„90-Sekunden-Regel“: Die körperliche Welle einer Emotion ebbt nach etwa 90 s ab, wenn wir sie nicht gedanklich neu befeuern.", note: "Populärwissenschaftliche Faustregel aus ihrem Buch, kein exakt vermessener Laborwert – als Orientierung nutzen." },
+    ],
   },
 
   // ---------------------------------------------------------------
@@ -618,6 +648,10 @@ export const deepDives: DeepDive[] = [
       "Freundlichkeit zu dir ist kein Nachlassen, sondern der stabilere Boden. Menschen wachsen durch Ermutigung, nicht durch Abwertung.",
     relatedStage: 4,
     video: null,
+    sources: [
+      { ref: "Kristin Neff (2003)", finding: "Führte Selbstmitgefühl als messbares Konstrukt ein (Self-Compassion Scale); es geht mit weniger Angst und Depression einher." },
+      { ref: "Neff & Germer (2013)", finding: "Ein achtwöchiges Selbstmitgefühls-Training steigert Wohlbefinden und Selbstmitgefühl nachweislich." },
+    ],
   },
 
   // ---------------------------------------------------------------

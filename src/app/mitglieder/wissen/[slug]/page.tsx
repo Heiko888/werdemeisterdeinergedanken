@@ -195,6 +195,34 @@ export default async function DeepDivePage({
             </p>
           </div>
 
+          {/* Wissenschaftlicher Hintergrund */}
+          {dive.sources && dive.sources.length > 0 && (
+            <div className="rounded-2xl border border-ink/10 bg-white p-7 shadow-card sm:p-8">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
+                Wissenschaftlicher Hintergrund
+              </span>
+              <ul className="mt-5 flex flex-col gap-5">
+                {dive.sources.map((s) => (
+                  <li key={s.ref} className="flex flex-col gap-1 border-t border-ink/10 pt-4 first:border-t-0 first:pt-0">
+                    <span className="text-sm font-semibold text-ink">{s.ref}</span>
+                    <span className="text-sm leading-relaxed text-ink-mid">{s.finding}</span>
+                    {s.note && (
+                      <span className="mt-1 text-xs leading-relaxed text-ink-muted">
+                        <span className="font-semibold uppercase tracking-wide">Einordnung:</span>{" "}
+                        {s.note}
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-xs leading-relaxed text-ink-muted">
+                Eine einzelne Studie ist ein Hinweis, kein Beweis. Wo Befunde
+                umstritten oder populärwissenschaftlich sind, ist das bewusst
+                gekennzeichnet.
+              </p>
+            </div>
+          )}
+
           {/* Querverweis zur Stufe */}
           {stage && (
             <Link

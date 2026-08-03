@@ -864,6 +864,228 @@ export const posts: Post[] = [
       },
     ],
   },
+
+  // === Serie: „Die Wissenschaft dahinter“ ===============================
+  {
+    slug: "entscheidest-du-oder-dein-gehirn",
+    title: "Entscheidest du – oder entscheidet dein Gehirn?",
+    excerpt:
+      "Was Hirnforschung über den freien Willen wirklich sagt – und warum die berühmten Libet-Experimente kein Grund sind, das Denken aufzugeben, sondern es zu trainieren.",
+    category: "Wissenschaft",
+    date: "2026-08-01",
+    dateLabel: "1. August 2026",
+    readingMinutes: 7,
+    content: [
+      {
+        type: "p",
+        text: "Stell dir vor, dein Gehirn hätte deine Entscheidung schon getroffen, bevor du sie überhaupt bemerkst. Genau das legen zwei der bekanntesten Experimente der Hirnforschung nahe. Doch was sie wirklich zeigen – und was nicht –, ist subtiler, als die Schlagzeilen behaupten.",
+      },
+      {
+        type: "h2",
+        text: "Das Libet-Experiment (1983)",
+      },
+      {
+        type: "p",
+        text: "Der Neurophysiologe Benjamin Libet ließ Probanden spontan einen Finger bewegen und dabei den Moment festhalten, in dem sie den Entschluss „spürten“. Gleichzeitig maß er die Hirnaktivität. Das Ergebnis: Ein sogenanntes Bereitschaftspotenzial baute sich rund 350 Millisekunden auf, bevor die Menschen ihre Entscheidung bewusst wahrnahmen. Das Gehirn schien früher dran zu sein als das Bewusstsein.",
+      },
+      {
+        type: "p",
+        text: "2008 gingen John-Dylan Haynes und Kollegen noch weiter: Mit einem Hirnscanner konnten sie einfache Ja/Nein-Entscheidungen bis zu sieben, in Einzelfällen zehn Sekunden im Voraus vorhersagen – wenn auch nur knapp über Zufallsniveau.",
+      },
+      {
+        type: "quote",
+        text: "Die spannende Frage ist nicht, ob dein Gehirn dir zuvorkommt. Sondern, was du mit dem schmalen Spalt bewusster Wahl anfängst, der bleibt.",
+      },
+      {
+        type: "h2",
+        text: "Warum die Deutung umstritten ist",
+      },
+      {
+        type: "p",
+        text: "Hier wird es ehrlich: Libets Befund ist berühmt, aber seine Interpretation ist bis heute heftig umstritten. Der Neurowissenschaftler Aaron Schurger zeigte 2012, dass das Bereitschaftspotenzial gar keine „Entscheidung im Voraus“ sein muss – es könnte schlicht zufälliges neuronales Rauschen sein, das irgendwann eine Schwelle überschreitet. Und Libet selbst betonte: Selbst wenn der Impuls früh entsteht, bleibt dem Bewusstsein ein Veto – die Freiheit, im letzten Moment Nein zu sagen.",
+      },
+      {
+        type: "p",
+        text: "Dazu kommt: Beide Experimente untersuchten triviale Entscheidungen – Finger heben, links oder rechts. Über bedeutsame Entscheidungen (Berufswahl, wie du auf einen Konflikt reagierst) sagen sie fast nichts aus.",
+      },
+      {
+        type: "h2",
+        text: "Was das für dich bedeutet",
+      },
+      {
+        type: "p",
+        text: "Die Wissenschaft macht eines unbestreitbar deutlich: Ein großer Teil dessen, was wir „unsere Entscheidung“ nennen, läuft automatisch ab – vorgeformt durch Gewohnheit, Prägung und blitzschnelle Bewertung. Genau das nennt der Nobelpreisträger Daniel Kahneman „System 1“, den schnellen, automatischen Modus des Denkens.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Der Autopilot ist real – aber er ist nicht dein Schicksal.",
+          "Bewusstheit ist der Muskel, der den automatischen Impuls überhaupt erst sichtbar macht.",
+          "Zwischen Impuls und Handlung liegt ein Spalt. Ihn zu trainieren ist die eigentliche Freiheitsarbeit.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Nicht der freie Wille ist die Illusion, sondern die Vorstellung, wir seien ständig bewusst am Steuer. Die gute Nachricht: Der Spalt lässt sich vergrößern. Wie, das zeigen die 7 Stufen im Mitgliederbereich.",
+      },
+    ],
+  },
+  {
+    slug: "neuroplastizitaet-warum-dein-gehirn-formbar-ist",
+    title: "Neuroplastizität: Warum sich dein Gehirn ein Leben lang verändert",
+    excerpt:
+      "Taxifahrer mit größerem Hippocampus, Jongleure mit mehr grauer Substanz: Was die Forschung über die Formbarkeit deines Gehirns weiß – und wie du sie für dich nutzt.",
+    category: "Wissenschaft",
+    date: "2026-08-05",
+    dateLabel: "5. August 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Lange galt das erwachsene Gehirn als fertig verdrahtet – festgelegt, unveränderlich. Heute wissen wir: Das Gegenteil ist wahr. Dein Gehirn baut sich um, solange du lebst. Dieser Umbau hat einen Namen: Neuroplastizität. Und er ist der wissenschaftliche Grund, warum Veränderung überhaupt möglich ist.",
+      },
+      {
+        type: "h2",
+        text: "„Was zusammen feuert, verdrahtet sich zusammen“",
+      },
+      {
+        type: "p",
+        text: "Schon 1949 formulierte der Psychologe Donald Hebb das Grundprinzip: Nervenzellen, die wiederholt gemeinsam aktiv sind, verstärken ihre Verbindung. Jeder Gedanke, jede Handlung, die du wiederholst, gräbt eine tiefere Bahn. Deshalb fühlen sich alte Muster wie „einfach so“ an – sie sind buchstäblich gut ausgebaute Wege.",
+      },
+      {
+        type: "h2",
+        text: "Zwei Studien, die es sichtbar machen",
+      },
+      {
+        type: "p",
+        text: "Eleanor Maguire untersuchte im Jahr 2000 die Gehirne Londoner Taxifahrer. Sie müssen tausende Straßen auswendig kennen – und tatsächlich war ihr hinterer Hippocampus, die Region für räumliches Gedächtnis, deutlich größer als bei Kontrollpersonen. Je länger jemand fuhr, desto ausgeprägter der Effekt. Das Gehirn wuchs mit der Aufgabe.",
+      },
+      {
+        type: "p",
+        text: "2004 zeigten Bogdan Draganski und Kollegen im Fachblatt Nature: Menschen, die drei Monate lang jonglieren lernten, hatten messbar mehr graue Substanz in den bewegungs- und sehverarbeitenden Arealen. Hörten sie wieder auf, bildete sich der Zuwachs teilweise zurück. Übung formt Struktur – Vernachlässigung baut sie ab.",
+      },
+      {
+        type: "quote",
+        text: "Du bist nicht das Opfer deiner Verdrahtung. Du bist, mit jeder Wiederholung, ihr Architekt.",
+      },
+      {
+        type: "h2",
+        text: "So nutzt du Plastizität bewusst",
+      },
+      {
+        type: "ul",
+        items: [
+          "Wiederholung schlägt Intensität: Kleine, tägliche Reize formen stärker als seltene Kraftakte.",
+          "Alte Bahn stilllegen heißt, sie nicht mehr zu befeuern – nicht, sie „wegzudrücken“.",
+          "Neue Bahn bauen braucht Aufmerksamkeit: Nur was bewusst und wiederholt geübt wird, verdrahtet sich neu.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Neuroplastizität ist keine Esoterik, sondern messbare Biologie. Sie bedeutet: Kein Muster ist endgültig. Die Vertiefung „Neuroplastizität“ im Mitgliederbereich zeigt dir die konkrete Übung dazu.",
+      },
+    ],
+  },
+  {
+    slug: "gefuehle-benennen-beruhigt-das-gehirn",
+    title: "Warum ein Gefühl zu benennen dein Gehirn beruhigt",
+    excerpt:
+      "„Name it to tame it“: Eine bekannte Hirnstudie zeigt, dass schon das Benennen einer Emotion die Alarmzentrale im Gehirn herunterfährt. Die Wissenschaft hinter einem einfachen Werkzeug.",
+    category: "Wissenschaft",
+    date: "2026-08-09",
+    dateLabel: "9. August 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Es klingt fast zu simpel: Du bist aufgewühlt, benennst innerlich „Das ist Angst“ oder „Das ist Ärger“ – und wirst ruhiger. Kein Wegatmen, kein Positiv-Denken, nur ein Wort. Und trotzdem passiert im Gehirn dabei etwas Messbares.",
+      },
+      {
+        type: "h2",
+        text: "Die Studie: Feelings into Words",
+      },
+      {
+        type: "p",
+        text: "2007 untersuchte der Neurowissenschaftler Matthew Lieberman an der UCLA, was beim Benennen von Gefühlen im Gehirn geschieht. Probanden sahen Gesichter mit starken Emotionen. Ordneten sie dem Ausdruck ein Wort zu („wütend“, „ängstlich“), sank die Aktivität in der Amygdala – der Alarmzentrale, die für Stress- und Angstreaktionen zuständig ist. Gleichzeitig wurde der rechte präfrontale Kortex aktiver, der Bereich für bewusste Steuerung.",
+      },
+      {
+        type: "quote",
+        text: "Ein Gefühl in Worte zu fassen ist, als legtest du die Hand auf ein zitterndes Instrument: Die Schwingung wird nicht verboten – sie wird gehalten.",
+      },
+      {
+        type: "p",
+        text: "Fachlich heißt das Affect Labeling. Der Effekt: Das Gefühl bleibt, aber es reißt dich nicht mehr mit. Aus „Ich bin wütend“ (verschmolzen) wird „Ich bemerke Wut“ (mit Abstand).",
+      },
+      {
+        type: "h2",
+        text: "Und die 90 Sekunden?",
+      },
+      {
+        type: "p",
+        text: "Die Hirnforscherin Jill Bolte Taylor beschreibt eine verwandte Beobachtung: Die körperliche Welle einer Emotion – die Hormone, das Herzklopfen – ebbt nach etwa 90 Sekunden ab, wenn wir sie nicht ständig mit Gedanken neu befeuern. Wichtig zur Ehrlichkeit: Das ist eine gut nachvollziehbare Faustregel aus ihrem Buch, kein exakt vermessener Laborwert. Als Orientierung ist sie Gold wert: Der erste Sturm ist kürzer, als er sich anfühlt.",
+      },
+      {
+        type: "h2",
+        text: "Das Werkzeug in einem Satz",
+      },
+      {
+        type: "p",
+        text: "Wenn dich das nächste Mal ein Gefühl packt, benenne es leise und präzise: „Da ist Angst. Da ist Enttäuschung.“ Du unterbrichst damit den Automatismus und gibst dem bewussten Teil deines Gehirns die Führung zurück. Mehr dazu in der Vertiefung „Emotionsregulation“.",
+      },
+    ],
+  },
+  {
+    slug: "denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt",
+    title: "Denkfehler: Wie dein Kopf die Wirklichkeit systematisch verzerrt",
+    excerpt:
+      "Verfügbarkeitsheuristik, Verankerung, Bestätigungsfehler: Die Kognitionsforschung hat unsere blinden Flecken kartiert. Wer sie kennt, denkt freier.",
+    category: "Wissenschaft",
+    date: "2026-08-13",
+    dateLabel: "13. August 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Wir halten unser Denken für einen neutralen Beobachter der Wirklichkeit. Die Forschung sagt: Es ist eher ein Erzähler mit festen Vorlieben. Unser Gehirn nimmt ständig Abkürzungen – meist nützlich, manchmal irreführend. Diese Abkürzungen heißen Heuristiken, und ihre Nebenwirkungen kognitive Verzerrungen.",
+      },
+      {
+        type: "h2",
+        text: "Kahneman und Tversky: die Kartografen der Denkfehler",
+      },
+      {
+        type: "p",
+        text: "1974 veröffentlichten Amos Tversky und der spätere Nobelpreisträger Daniel Kahneman im Fachblatt Science eine Arbeit, die die Psychologie veränderte. Sie zeigten, dass Menschen systematisch – also vorhersehbar – danebenliegen. Ein paar der bekanntesten Muster:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Verfügbarkeitsheuristik: Was uns leicht einfällt (weil es dramatisch oder oft gehört ist), halten wir für häufiger. Deshalb wirken seltene Gefahren riesig.",
+          "Verankerung: Die erste Zahl, die wir hören, färbt jede spätere Einschätzung – selbst wenn sie willkürlich ist.",
+          "Bestätigungsfehler: Wir suchen und glauben bevorzugt, was unsere Meinung stützt, und übersehen den Rest.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Beck: Denkfehler machen Stimmung",
+      },
+      {
+        type: "p",
+        text: "Der Psychiater Aaron Beck entdeckte in den 1960er-Jahren, dass genau solche Verzerrungen depressive und ängstliche Zustände befeuern: Schwarz-Weiß-Denken, Katastrophisieren, Übergeneralisieren. Aus dieser Erkenntnis entstand die kognitive Verhaltenstherapie – heute eine der am besten belegten Psychotherapien überhaupt.",
+      },
+      {
+        type: "quote",
+        text: "Ein Denkfehler, den du erkennst, verliert seine Macht. Ein Denkfehler, den du für die Wahrheit hältst, regiert dich.",
+      },
+      {
+        type: "h2",
+        text: "Der Ausweg ist nicht mehr Intelligenz",
+      },
+      {
+        type: "p",
+        text: "Das Tückische: Verzerrungen verschwinden nicht, nur weil man klug ist – sie laufen unter dem Radar. Was hilft, ist ein anderer Zugang: den Gedanken kurz anhalten und prüfen. Ist das ein Fakt oder eine Interpretation? Würde ein neutraler Beobachter das genauso sehen? Diese kleine Pause ist der ganze Unterschied zwischen „gedacht werden“ und „denken“. Die Vertiefung „Kognitive Verzerrungen“ führt dich Schritt für Schritt hindurch.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
