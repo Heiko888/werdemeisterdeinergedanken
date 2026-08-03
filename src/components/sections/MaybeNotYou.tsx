@@ -1,9 +1,10 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
-import { PhotoFrame } from "@/components/ui/PhotoFrame";
+import { VideoMessage } from "@/components/ui/VideoMessage";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight } from "@/components/ui/Icon";
+import { site } from "@/lib/site";
 
 export function MaybeNotYou() {
   return (
@@ -36,13 +37,11 @@ export function MaybeNotYou() {
 
         <Reveal delay={120}>
           <div className="relative mx-auto w-full max-w-md">
-            <PhotoFrame aspect="landscape" caption="Videobotschaft folgt" />
-            {/* dezenter Play-Hinweis */}
-            <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-ink/20 bg-paper/70 backdrop-blur">
-              <svg viewBox="0 0 24 24" className="h-5 w-5 translate-x-0.5 fill-ink" aria-hidden>
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </span>
+            <VideoMessage
+              youtubeId={site.videoMessage.youtubeId}
+              title={site.videoMessage.title}
+              aspect="landscape"
+            />
           </div>
         </Reveal>
       </Container>
