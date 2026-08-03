@@ -14,7 +14,8 @@
     "carousels:png": "node docs/carousels/export-png.mjs",
     "reel-drehbuch": "node tools/pdf/reel-drehbuch.mjs",
     "endcard": "node docs/reels/covers/endcard.mjs",
-    "langvideo-drehbuch": "node tools/pdf/langvideo-drehbuch.mjs"
+    "langvideo-drehbuch": "node tools/pdf/langvideo-drehbuch.mjs",
+    "vorlagen:galerie": "node tools/vorlagen/build-gallery.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.115.0",
