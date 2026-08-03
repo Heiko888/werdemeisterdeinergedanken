@@ -1,0 +1,279 @@
+/**
+ * Baut die Vorlagen-Galerie fürs Admin-Dashboard (/admin/vorlagen).
+ * ------------------------------------------------------------------
+ * Die fertigen Vorlagen liegen in `docs/` – dieser Ordner wird aber NICHT mit
+ * der Website veröffentlicht. Damit du die Vorlagen im Dashboard sehen und
+ * herunterladen kannst, kopiert dieses Skript die fertigen Dateien nach
+ * `public/vorlagen/` (das wird veröffentlicht) und erzeugt dabei:
+ *
+ *   1. kleine webp-Vorschaubilder  → schnelles Laden im Dashboard
+ *   2. optimierte Voll-Downloads   → webp für Bilder, Originale für Dokumente
+ *   3. einen Katalog               → src/lib/vorlagen-assets.ts (statisch)
+ *
+ * Neu erzeugen (z. B. nach neuen Grafiken):
+ *   npm run vorlagen:galerie
+ *
+ * Vorher ggf. die Cover exportieren:  npm run covers && npm run covers:png
+ */
+import {
+  cpSync,
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  rmSync,
+  statSync,
+  writeFileSync,
+} from "node:fs";
+import { basename, dirname, extname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+import sharp from "sharp";
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(HERE, "..", "..");
+const OUT = join(ROOT, "public", "vorlagen");
+const THUMB_DIR = join(OUT, "thumbs");
+
+const THUMB_WIDTH = 640; // Vorschau
+const FULL_WIDTH = 2000; // Download-Obergrenze (Grafiken)
+
+// --- Helfer ----------------------------------------------------------------
+
+function ensureDir(dir) {
+  mkdirSync(dir, { recursive: true });
+}
+
+/** Rekursiv alle Dateien mit passender Endung sammeln. */
+function collect(dir, exts) {
+  const out = [];
+  const walk = (d) => {
+    if (!existsSync(d)) return;
+    for (const entry of readdirSync(d, { withFileTypes: true })) {
+      if (entry.name.startsWith(".")) continue;
+      const full = join(d, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (exts.includes(extname(entry.name).toLowerCase())) out.push(full);
+    }
+  };
+  walk(dir);
+  return out.sort();
+}
+
+/** „WMDG-Zitat-01.png" / Ordnernamen → lesbarer Titel. */
+function prettifyName(name) {
+  return name
+    .replace(/\.[a-z0-9]+$/i, "")
+    .replace(/^WMDG-/i, "")
+    .replace(/@2x/i, "")
+    .replace(/[-_]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function prettifyLabel(str) {
+  const map = {
+    "selbstverteidigung": "Mentale Selbstverteidigung",
+    "stufen": "Die 7 Stufen",
+    "praxis": "Praxis",
+    "vertiefungen": "Vertiefungen",
+    "wissenschaft": "Wissenschaft",
+    "landing": "Landing / Allgemein",
+  };
+  return map[str] ?? prettifyName(str);
+}
+
+const assets = [];
+
+// --- 1. Social-Grafiken -----------------------------------------------------
+
+async function buildSocial() {
+  const src = join(ROOT, "docs", "marketing");
+  const files = collect(src, [".png"]).filter(
+    // @2x-Varianten überspringen – die 1x-Version reicht als Download
+    (f) => !/@2x\./i.test(f),
+  );
+  const dir = join(OUT, "social");
+  ensureDir(dir);
+  ensureDir(join(THUMB_DIR, "social"));
+
+  const KANAL = {
+    facebook: "Facebook",
+    instagram: "Instagram",
+    linkedin: "LinkedIn",
+    youtube: "YouTube",
+    messenger: "Messenger",
+    profil: "Profil & Kanal",
+    zitate: "Zitate & Fakten",
+  };
+
+  let i = 0;
+  for (const file of files) {
+    const rel = file.slice(src.length + 1); // z. B. "zitate/1x1/WMDG-Zitat-01.png"
+    const kanalKey = rel.split("/")[0];
+    const kanal = KANAL[kanalKey] ?? prettifyName(kanalKey);
+    const id = `social-${String(++i).padStart(3, "0")}`;
+
+    const fullName = `${id}.webp`;
+    const thumbName = `${id}.webp`;
+    await sharp(file)
+      .resize({ width: FULL_WIDTH, withoutEnlargement: true })
+      .webp({ quality: 82 })
+      .toFile(join(dir, fullName));
+    await sharp(file)
+      .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+      .webp({ quality: 72 })
+      .toFile(join(THUMB_DIR, "social", thumbName));
+
+    assets.push({
+      kategorie: "social",
+      titel: prettifyName(basename(file)),
+      unterKategorie: kanal,
+      kind: "image",
+      thumb: `/vorlagen/thumbs/social/${thumbName}`,
+      href: `/vorlagen/social/${fullName}`,
+    });
+  }
+  return files.length;
+}
+
+// --- 2. Reel-Cover (nur vertikales 9x16-Format) -----------------------------
+
+async function buildReels() {
+  const src = join(ROOT, "docs", "reels", "covers", "export");
+  if (!existsSync(src)) return 0;
+  const files = collect(src, [".png"]).filter((f) =>
+    f.includes("/reel-9x16/"),
+  );
+  const dir = join(OUT, "reels");
+  ensureDir(dir);
+  ensureDir(join(THUMB_DIR, "reels"));
+
+  let i = 0;
+  for (const file of files) {
+    const rel = file.slice(src.length + 1); // "stufen/reel-9x16/cover-03.png"
+    const bereich = rel.split("/")[0];
+    const nr = basename(file).replace(/[^0-9]/g, "");
+    const id = `reel-${bereich}-${nr}`;
+
+    const fullName = `${id}.webp`;
+    await sharp(file)
+      .resize({ width: 1080, withoutEnlargement: true })
+      .webp({ quality: 80 })
+      .toFile(join(dir, fullName));
+    await sharp(file)
+      .resize({ width: 420, withoutEnlargement: true })
+      .webp({ quality: 70 })
+      .toFile(join(THUMB_DIR, "reels", fullName));
+
+    assets.push({
+      kategorie: "reels",
+      titel: `${prettifyLabel(bereich)} · Cover ${nr}`,
+      unterKategorie: prettifyLabel(bereich),
+      kind: "image",
+      thumb: `/vorlagen/thumbs/reels/${fullName}`,
+      href: `/vorlagen/reels/${fullName}`,
+    });
+  }
+  return files.length;
+}
+
+// --- 3. Workshop-Dateien (Download, keine Vorschau) -------------------------
+
+function buildWorkshop() {
+  const src = join(ROOT, "docs", "workshop");
+  const files = collect(src, [".pptx", ".pdf"]);
+  const dir = join(OUT, "workshop");
+  ensureDir(dir);
+
+  const THEMA = {
+    "7-stufen": "Die 7 Stufen",
+    "mentale-selbstverteidigung": "Mentale Selbstverteidigung",
+    "praxis": "Praxis-Werkzeugkasten",
+    "vertiefungen": "Deinen Kopf verstehen",
+  };
+
+  for (const file of files) {
+    const rel = file.slice(src.length + 1);
+    const parts = rel.split("/");
+    const thema = parts.length > 1 ? (THEMA[parts[0]] ?? prettifyLabel(parts[0])) : "Universell";
+    const name = basename(file);
+    cpSync(file, join(dir, name));
+
+    const ext = extname(name).slice(1).toUpperCase();
+    assets.push({
+      kategorie: "workshop",
+      titel: prettifyName(name),
+      unterKategorie: thema,
+      kind: "file",
+      format: ext,
+      sizeMB: Number((statSync(file).size / 1024 / 1024).toFixed(1)),
+      href: `/vorlagen/workshop/${name}`,
+    });
+  }
+  return files.length;
+}
+
+// --- Katalog schreiben ------------------------------------------------------
+
+function writeManifest() {
+  const path = join(ROOT, "src", "lib", "vorlagen-assets.ts");
+  const header = `/**
+ * AUTO-GENERIERT von tools/vorlagen/build-gallery.mjs – NICHT von Hand ändern.
+ * Neu erzeugen mit:  npm run vorlagen:galerie
+ *
+ * Liste aller Vorlagen-Dateien, die unter public/vorlagen/ veröffentlicht sind
+ * und im Dashboard (/admin/vorlagen) als Galerie erscheinen.
+ */
+
+export type VorlagenAsset = {
+  kategorie: "social" | "reels" | "workshop";
+  titel: string;
+  unterKategorie: string;
+  kind: "image" | "file";
+  /** Nur bei kind === "image": kleines Vorschaubild. */
+  thumb?: string;
+  /** Download-/Ansehen-Link (liegt unter public/). */
+  href: string;
+  /** Nur bei kind === "file". */
+  format?: string;
+  sizeMB?: number;
+};
+
+export const vorlagenAssets: VorlagenAsset[] = ${JSON.stringify(
+    assets,
+    null,
+    2,
+  )};
+`;
+  writeFileSync(path, header);
+  return path;
+}
+
+// --- Lauf -------------------------------------------------------------------
+
+async function main() {
+  // Alten Stand entfernen, sauber neu aufbauen.
+  if (existsSync(OUT)) rmSync(OUT, { recursive: true, force: true });
+  ensureDir(OUT);
+
+  const social = await buildSocial();
+  console.log(`✓ Social-Grafiken: ${social}`);
+  const reels = await buildReels();
+  console.log(`✓ Reel-Cover (9x16): ${reels}`);
+  const workshop = buildWorkshop();
+  console.log(`✓ Workshop-Dateien: ${workshop}`);
+
+  const path = writeManifest();
+  console.log(`✓ Katalog: ${path} (${assets.length} Einträge)`);
+
+  // Deploy-Größe ausgeben
+  const size = collect(OUT, [".webp", ".pptx", ".pdf", ".png"]).reduce(
+    (s, f) => s + statSync(f).size,
+    0,
+  );
+  console.log(`→ public/vorlagen/ ≈ ${(size / 1024 / 1024).toFixed(1)} MB`);
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
