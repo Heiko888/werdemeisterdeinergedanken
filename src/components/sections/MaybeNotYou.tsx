@@ -36,11 +36,11 @@ export function MaybeNotYou() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="relative mx-auto w-full max-w-md">
+          <div className="relative mx-auto w-full">
             <VideoMessage
               youtubeId={site.videoMessage.youtubeId}
               title={site.videoMessage.title}
-              aspect="landscape"
+              aspect="video"
             />
           </div>
         </Reveal>
