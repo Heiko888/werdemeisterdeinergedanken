@@ -1,0 +1,40 @@
+/* Format 2:3 · Pinterest · generiert von build.mjs – nicht von Hand ändern */
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#05060c; }
+.cover { position:relative; width:1000px; height:1500px; overflow:hidden;
+  font-family:'Inter',system-ui,sans-serif; }
+.cover::before { content:""; position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(60% 40% at 78% 30%, rgba(52,196,196,.35), transparent 60%),
+    radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),
+    linear-gradient(160deg,#071026 0%,#0b2138 45%,#0a1730 100%); }
+.bg { position:absolute; inset:0; z-index:1;
+  background-image:url("vorlage.png"); background-size:cover; background-position:center; }
+.scrim { position:absolute; inset:0; z-index:2;
+  background:linear-gradient(to bottom, transparent 40%, rgba(5,9,20,.55) 72%, rgba(5,9,20,.92) 100%); }
+.content { position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
+  padding:76px; }
+.top { display:flex; align-items:flex-start; justify-content:space-between; gap:40px; }
+.logo { width:200px; height:auto; flex:0 0 auto;
+  filter:drop-shadow(0 4px 26px rgba(52,196,196,.30)); }
+.tag { text-align:right; padding-top:8px; font-family:'Inter',sans-serif; font-weight:800;
+  font-size:21px; letter-spacing:.14em; text-transform:uppercase;
+  background:linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent;
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,.55)); }
+.spacer { flex:1 1 auto; }
+.headline { max-width:100%; font-family:'Fraunces',Georgia,serif; font-weight:600;
+  font-size:120px; line-height:1.04; letter-spacing:-1px; color:#f4f7ff;
+  filter:drop-shadow(0 6px 34px rgba(0,0,0,.6)); }
+.headline.small { font-size:94px; }
+/* Kursiv + Verlauf: padding-right, damit der Verlauf den schrägen Überhang
+   des letzten Buchstabens voll abdeckt (sonst wird z. B. das „d" abgeschnitten) */
+.headline .accent { font-style:italic; font-weight:500;
+  padding-right:.14em; margin-right:-.06em;
+  background:linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent; }
+.handle { margin-top:24px; font-family:'Inter',sans-serif; font-weight:600;
+  font-size:28px; letter-spacing:.04em; color:#a7bad2;
+  text-shadow:0 2px 14px rgba(0,0,0,.7); }

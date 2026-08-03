@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { ArrowRight, Play } from "@/components/ui/Icon";
 import { practices, getPractice } from "@/lib/practices";
 import { stages } from "@/lib/content";
+import { site } from "@/lib/site";
 
 export function generateStaticParams() {
   return practices.map((p) => ({ slug: p.slug }));
@@ -118,11 +119,11 @@ export default async function PracticePage({
                   Dein Browser kann diese Audiodatei nicht abspielen.
                 </audio>
               </div>
-            ) : practice.video ? (
+            ) : (practice.video ?? site.placeholderVideoId) ? (
               <div className="mt-3 aspect-video w-full overflow-hidden rounded-2xl border border-ink/10 shadow-card">
                 <iframe
                   className="h-full w-full"
-                  src={`https://www.youtube-nocookie.com/embed/${practice.video}`}
+                  src={`https://www.youtube-nocookie.com/embed/${practice.video ?? site.placeholderVideoId}`}
                   title={`Geführte Praxis: ${practice.title}`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

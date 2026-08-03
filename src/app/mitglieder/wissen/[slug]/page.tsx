@@ -9,6 +9,7 @@ import { deepDives, getDeepDive } from "@/lib/deep-dives";
 import { stages } from "@/lib/content";
 import { hasStaticPdf } from "@/lib/pdf/static-pdf";
 import { JournalReflection } from "@/components/members/JournalReflection";
+import { site } from "@/lib/site";
 
 export function generateStaticParams() {
   return deepDives.map((d) => ({ slug: d.slug }));
@@ -89,11 +90,11 @@ export default async function DeepDivePage({
             <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
               Video zur Vertiefung
             </span>
-            {dive.video ? (
+            {(dive.video ?? site.placeholderVideoId) ? (
               <div className="mt-3 aspect-video w-full overflow-hidden rounded-2xl border border-ink/10 shadow-card">
                 <iframe
                   className="h-full w-full"
-                  src={`https://www.youtube-nocookie.com/embed/${dive.video}`}
+                  src={`https://www.youtube-nocookie.com/embed/${dive.video ?? site.placeholderVideoId}`}
                   title={`Video zu ${dive.title}`}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
