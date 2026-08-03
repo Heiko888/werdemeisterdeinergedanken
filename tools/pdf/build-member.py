@@ -42,11 +42,15 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
   background:radial-gradient(70% 130% at 88% 0%, rgba(52,196,196,.28), transparent 60%),
              linear-gradient(140deg,#08102a,#12244d); }
 .dochead .num{ position:absolute; right:14px; top:-14px; font-family:'Fraunces',serif; font-weight:600;
-  font-size:118px; line-height:1; color:transparent; -webkit-text-stroke:1.4px rgba(95,214,210,.34); }
+  font-size:118px; line-height:1; color:transparent; -webkit-text-stroke:1.4px rgba(95,214,210,.34);
+  z-index:0; pointer-events:none; }
 .dochead .num.gold{ -webkit-text-stroke-color:rgba(242,212,137,.5); }
+/* Textspalte im Kopf: hält immer Abstand zur großen Hintergrundzahl rechts,
+   damit Titel/Label/Untertitel niemals in die Zahl hineinlaufen. */
+.dochead .hgroup{ position:relative; z-index:1; padding-right:150px; }
 .dochead .eyebrow{ font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--teal-300); font-weight:600; }
-.dochead h1{ font-family:'Fraunces',serif; font-weight:600; font-size:30px; letter-spacing:-.3px; margin-top:8px; line-height:1.05; }
-.dochead .sub{ font-size:13px; color:#9fd6d2; font-style:italic; margin-top:5px; }
+.dochead h1{ font-family:'Fraunces',serif; font-weight:600; font-size:30px; letter-spacing:-.3px; margin-top:10px; line-height:1.1; }
+.dochead .sub{ font-size:13px; color:#9fd6d2; font-style:italic; margin-top:7px; }
 
 .klabel{ font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:700;
   margin:22px 0 10px; break-after:avoid; }
@@ -128,8 +132,8 @@ def doc(inner, cover=False):
 
 def dochead(eyebrow, title, sub, num=None, gold=False):
     numhtml = ('<div class="num serif%s">%s</div>' % (" gold" if gold else "", esc(num))) if num else ""
-    return ('<div class="dochead">%s<div class="eyebrow">%s</div>'
-            '<h1>%s</h1><div class="sub">%s</div></div>'
+    return ('<div class="dochead">%s<div class="hgroup"><div class="eyebrow">%s</div>'
+            '<h1>%s</h1><div class="sub">%s</div></div></div>'
             ) % (numhtml, esc(eyebrow), esc(title), esc(sub))
 
 def exercise_html(ex, interactive):
