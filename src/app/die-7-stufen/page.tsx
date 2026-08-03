@@ -25,7 +25,7 @@ export default function SevenStagesPage() {
           </>
         }
         intro="Ein klarer, aufeinander aufbauender Weg. Jede Stufe bringt dich näher an einen Zustand, in dem du deine Gedanken nicht mehr erleidest, sondern bewusst gestaltest."
-        image="/hero-7-stufen.png"
+        image="/hero-7-stufen.webp"
       >
         <div className="mt-2 flex flex-col gap-3 sm:flex-row">
           <Button href="/bewusstseinstest" variant="accent" size="lg">
