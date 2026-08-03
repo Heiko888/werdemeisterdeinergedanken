@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
-import { CosmicBackground } from "@/components/visuals/CosmicBackground";
+import { HERO_GLOW } from "@/lib/gradients";
 import { getPost, posts, postsSorted } from "@/lib/blog";
 
 export function generateStaticParams() {
@@ -41,8 +41,12 @@ export default async function BlogPostPage({
   return (
     <>
       {/* Artikel-Kopf: dunkler Marken-Header als Akzent */}
-      <header className="relative overflow-hidden bg-navy-950 pt-20 pb-16 text-cream sm:pt-24 sm:pb-20">
-        <CosmicBackground variant="subtle" />
+      <header className="grain relative overflow-hidden bg-navy-900 pt-20 pb-16 text-cream sm:pt-24 sm:pb-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{ background: HERO_GLOW }}
+        />
         <Container size="narrow" className="flex flex-col items-start gap-5">
           <Link
             href="/blog"
