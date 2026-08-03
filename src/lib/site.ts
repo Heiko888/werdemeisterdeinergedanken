@@ -19,6 +19,12 @@ export const site = {
     youtubeId: "gOvtKBnqGvk",
     title: "Videobotschaft: Ein anderer Blickwinkel",
   },
+  // Platzhalter-Video, das vorerst überall dort erscheint, wo noch kein
+  // eigenes Video produziert wurde (Stufen, Vertiefungen, Praxis …). Sobald
+  // ein Einzelvideo eingetragen ist, ersetzt es den Platzhalter automatisch.
+  // Auf null setzen, um die Platzhalter global zu entfernen (dann erscheint
+  // wieder der «folgt in Kürze»-Hinweis).
+  placeholderVideoId: "gOvtKBnqGvk" as string | null,
   // Nur echte Profile eintragen (leere/Platzhalter weglassen, sonst tote Links).
   social: {
     instagram: "https://www.instagram.com/werde.meister.deiner.gedanken/",
