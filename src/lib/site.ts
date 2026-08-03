@@ -13,6 +13,12 @@ export const site = {
   url: "https://www.werdemeisterdeinergedanken.de",
   author: "Heiko Schwaninger",
   email: "info@werdemeisterdeinergedanken.de", // offizielle Kontaktadresse
+  // Persönliche Videobotschaft – datenschutzfreundlich über youtube-nocookie
+  // eingebettet (siehe CSP frame-src in next.config.ts).
+  videoMessage: {
+    youtubeId: "gOvtKBnqGvk",
+    title: "Videobotschaft: Ein anderer Blickwinkel",
+  },
   // Nur echte Profile eintragen (leere/Platzhalter weglassen, sonst tote Links).
   social: {
     instagram: "https://www.instagram.com/werde.meister.deiner.gedanken/",
