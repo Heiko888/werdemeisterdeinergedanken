@@ -1,6 +1,10 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
-import { posts } from "@/lib/blog";
+import { publishedPosts } from "@/lib/blog";
+
+// Stündlich nachziehen, damit vorausdatierte Artikel an ihrem Erscheinungstag
+// ohne Deploy in die Sitemap kommen.
+export const revalidate = 3600;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
@@ -20,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "" ? 1 : 0.7,
   }));
 
-  const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
+  const blogEntries: MetadataRoute.Sitemap = publishedPosts().map((post) => ({
     url: `${site.url}/blog/${post.slug}`,
     lastModified: post.date,
     changeFrequency: "yearly",

@@ -9,11 +9,14 @@
  */
 
 import type { Block } from "@/lib/blog";
-import { postsSorted } from "@/lib/blog";
+import { publishedPosts } from "@/lib/blog";
 import { site } from "@/lib/site";
 
-// Der Feed hängt an keiner Anfrage, darf also beim Build erzeugt werden.
+// Der Feed hängt an keiner Anfrage, darf also beim Build erzeugt werden …
 export const dynamic = "force-static";
+// … muss aber stündlich nachziehen, damit vorausdatierte Artikel an ihrem
+// Erscheinungstag ohne Deploy in den Feed rutschen.
+export const revalidate = 3600;
 
 function escapeXml(value: string): string {
   return value
@@ -56,7 +59,9 @@ function toRfc822(isoDate: string): string {
 }
 
 export function GET(): Response {
-  const items = postsSorted
+  const feedPosts = publishedPosts();
+
+  const items = feedPosts
     .map((post) => {
       const url = `${site.url}/blog/${post.slug}`;
       return `    <item>
@@ -73,8 +78,8 @@ export function GET(): Response {
 
   // Kein Build-Zeitstempel, sondern das Datum des neuesten Artikels: so ändert
   // sich der Feed nur, wenn sich inhaltlich etwas geändert hat.
-  const lastBuildDate = postsSorted[0]
-    ? toRfc822(postsSorted[0].date)
+  const lastBuildDate = feedPosts[0]
+    ? toRfc822(feedPosts[0].date)
     : toRfc822("2026-01-01");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
