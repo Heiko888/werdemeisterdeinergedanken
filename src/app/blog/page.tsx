@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { BlogIndex, type BlogCard } from "@/components/blog/BlogIndex";
-import { postsSorted } from "@/lib/blog";
+import { publishedPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -9,9 +9,13 @@ export const metadata: Metadata = {
     "Impulse zu Bewusstsein, mentaler Entprogrammierung und einem klaren Kopf – kurze, ehrliche Artikel von Heiko Schwaninger.",
 };
 
+// Stündlich neu erzeugen, damit vorausdatierte Artikel an ihrem Erscheinungstag
+// von selbst auftauchen und nicht auf den nächsten Deploy warten müssen.
+export const revalidate = 3600;
+
 export default function BlogPage() {
   // Schlanke Karten-Daten an die Client-Komponente übergeben (ohne `content`).
-  const cards: BlogCard[] = postsSorted.map(
+  const cards: BlogCard[] = publishedPosts().map(
     ({ slug, title, excerpt, category, date, dateLabel, readingMinutes }) => ({
       slug,
       title,

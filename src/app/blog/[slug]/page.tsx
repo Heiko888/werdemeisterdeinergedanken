@@ -6,11 +6,18 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { HERO_GLOW } from "@/lib/gradients";
-import { getPost, posts, postsSorted } from "@/lib/blog";
+import { getPost, isPublished, posts, publishedPosts } from "@/lib/blog";
 
+// Auch vorausdatierte Artikel werden gebaut: die Seite bleibt über ihre URL
+// erreichbar (praktisch zum Gegenlesen), sie ist nur nirgends verlinkt und
+// wird bis zum Erscheinungstag auf noindex gesetzt.
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
+
+// Stündlich nachziehen, damit ein Artikel an seinem Erscheinungstag von selbst
+// indexierbar wird.
+export const revalidate = 3600;
 
 export async function generateMetadata({
   params,
@@ -24,6 +31,8 @@ export async function generateMetadata({
     title: post.title,
     description: post.excerpt,
     openGraph: { title: post.title, description: post.excerpt, type: "article" },
+    // Noch nicht erschienen: erreichbar, aber nicht für Suchmaschinen.
+    ...(isPublished(post) ? {} : { robots: { index: false, follow: false } }),
   };
 }
 
@@ -36,7 +45,9 @@ export default async function BlogPostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
-  const more = postsSorted.filter((p) => p.slug !== slug).slice(0, 2);
+  const more = publishedPosts()
+    .filter((p) => p.slug !== slug)
+    .slice(0, 2);
 
   return (
     <>

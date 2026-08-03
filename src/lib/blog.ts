@@ -1232,7 +1232,38 @@ export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
-/** Neueste zuerst. */
+/** Neueste zuerst. Enthält auch vorausdatierte Artikel. */
 export const postsSorted: Post[] = [...posts].sort((a, b) =>
   a.date < b.date ? 1 : -1,
 );
+
+/**
+ * Das heutige Datum als „JJJJ-MM-TT“ in deutscher Zeit. Der Server läuft in
+ * UTC, deshalb ausdrücklich Europe/Berlin — sonst erscheint ein Artikel je
+ * nach Jahreszeit ein bis zwei Stunden zu spät.
+ */
+function heute(): string {
+  return new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Europe/Berlin",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
+/** Ist der Artikel schon erschienen, oder ist er vorausdatiert? */
+export function isPublished(post: Post): boolean {
+  return post.date <= heute();
+}
+
+/**
+ * Die öffentlich sichtbaren Artikel, neueste zuerst.
+ *
+ * Vorausdatierte Beiträge dienen als Redaktionsplan und sollen erst an ihrem
+ * Datum in Übersicht, Feed und Sitemap auftauchen. Bewusst eine Funktion und
+ * keine Konstante: der Container läuft tagelang durch, ein einmal beim Start
+ * berechneter Wert würde nie wieder nachrücken.
+ */
+export function publishedPosts(): Post[] {
+  return postsSorted.filter(isPublished);
+}
