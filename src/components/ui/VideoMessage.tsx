@@ -19,7 +19,7 @@ export function VideoMessage({
 }: {
   youtubeId: string;
   title: string;
-  aspect?: "landscape" | "square" | "portrait";
+  aspect?: "video" | "landscape" | "square" | "portrait";
   className?: string;
 }) {
   const [playing, setPlaying] = useState(false);
@@ -29,7 +29,9 @@ export function VideoMessage({
       ? "aspect-square"
       : aspect === "portrait"
         ? "aspect-[4/5]"
-        : "aspect-[4/3]";
+        : aspect === "landscape"
+          ? "aspect-[4/3]"
+          : "aspect-video";
 
   // hqdefault ist bei allen Videos vorhanden und wird über die CSP (img-src
   // https:) geladen.
