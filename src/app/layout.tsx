@@ -39,6 +39,14 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: site.author }],
   creator: site.author,
+  // Feed-Autodiscovery: Browser und Feedreader finden /rss.xml damit von selbst.
+  alternates: {
+    types: {
+      "application/rss+xml": [
+        { url: `${site.url}/rss.xml`, title: `${site.name} — Blog` },
+      ],
+    },
+  },
   openGraph: {
     type: "website",
     locale: "de_DE",
