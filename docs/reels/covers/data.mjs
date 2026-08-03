@@ -95,6 +95,21 @@ export const COLLECTIONS = [
     ],
   },
   {
+    key: "wissenschaft",
+    label: "Die Wissenschaft dahinter",
+    series: "Die Wissenschaft dahinter",
+    note: "Belegte Studien, ehrlich eingeordnet – ohne Hype.",
+    items: [
+      { theme: "Freier Wille",         cls: "small", html: `Wer entscheidet –<br>du oder dein ${A("Gehirn?")}` },
+      { theme: "Neuroplastizität",     cls: "",      html: `Dein Gehirn<br>bleibt ${A("formbar")}` },
+      { theme: "Gefühle benennen",     cls: "small", html: `Ein Wort, das<br>dich ${A("beruhigt")}` },
+      { theme: "Denkfehler",           cls: "",      html: `Dein Kopf<br>${A("täuscht")} dich` },
+      { theme: "Willenskraft",         cls: "small", html: `Willenskraft ist<br>${A("überschätzt")}` },
+      { theme: "Abschweifender Geist", cls: "small", html: `47 % der Zeit<br>${A("woanders")}` },
+      { theme: "Placebo",              cls: "small", html: `Erwartung wirkt<br>im ${A("Körper")}` },
+    ],
+  },
+  {
     key: "landing",
     label: "Landing / Funnel",
     series: "Bewusstseins-Test",
