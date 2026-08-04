@@ -75,12 +75,8 @@ body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;pos
 .sub{margin-top:20px;font-size:29px;line-height:1.34;color:#c2d0e4;max-width:760px}
 .foot{display:flex;align-items:center;gap:16px}
 .foot .u{font-weight:600;font-size:23px;color:#9db1cb;letter-spacing:.02em}
-.num{position:absolute;right:56px;top:50%;transform:translateY(-50%);z-index:1;font-family:Fraunces,serif;font-weight:600;
+.num{position:absolute;right:64px;top:50%;transform:translateY(-50%);z-index:1;font-family:Fraunces,serif;font-weight:600;
   font-size:420px;line-height:.8;color:rgba(255,255,255,.05)}
-.play{position:absolute;right:96px;top:50%;transform:translateY(-50%);z-index:2;width:132px;height:132px;border-radius:50%;
-  background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.35);backdrop-filter:blur(2px);
-  display:flex;align-items:center;justify-content:center;box-shadow:0 10px 40px rgba(0,0,0,.35)}
-.play::after{content:"";margin-left:8px;border-style:solid;border-width:26px 0 26px 44px;border-color:transparent transparent transparent #f4f7ff}
 `;
 
 function thumbHtml({ eyebrow, title, sub, num }) {
@@ -90,7 +86,6 @@ function thumbHtml({ eyebrow, title, sub, num }) {
 <body>
   <div class="bg"></div><div class="stars"></div>
   ${num ? `<div class="num">${num}</div>` : ""}
-  <div class="play"></div>
   <div class="frame">
     <div class="top"><img class="logo" src="${brainUrl}" alt=""><div class="tag">Mitgliederbereich · Video</div></div>
     <div class="mid">
