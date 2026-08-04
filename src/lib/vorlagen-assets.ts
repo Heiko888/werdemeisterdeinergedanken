@@ -19,6 +19,8 @@ export type VorlagenAsset = {
   format?: string;
   /** Nur bei kind === "carousel": Anzahl der Slides. */
   slides?: number;
+  /** Nur bei kind === "carousel": Pfade aller Slide-Vorschaubilder in Reihenfolge. */
+  slidePaths?: string[];
   sizeMB?: number;
 };
 
@@ -750,7 +752,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__4-6-atmung.webp",
+    "thumb": "/vorlagen/carousels/praxis__4-6-atmung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__4-6-atmung/slide-01.webp",
+      "/vorlagen/carousels/praxis__4-6-atmung/slide-02.webp",
+      "/vorlagen/carousels/praxis__4-6-atmung/slide-03.webp",
+      "/vorlagen/carousels/praxis__4-6-atmung/slide-04.webp",
+      "/vorlagen/carousels/praxis__4-6-atmung/slide-05.webp",
+      "/vorlagen/carousels/praxis__4-6-atmung/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__4-6-atmung.zip"
   },
   {
@@ -760,7 +770,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__abend-reflexion.webp",
+    "thumb": "/vorlagen/carousels/praxis__abend-reflexion/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__abend-reflexion/slide-01.webp",
+      "/vorlagen/carousels/praxis__abend-reflexion/slide-02.webp",
+      "/vorlagen/carousels/praxis__abend-reflexion/slide-03.webp",
+      "/vorlagen/carousels/praxis__abend-reflexion/slide-04.webp",
+      "/vorlagen/carousels/praxis__abend-reflexion/slide-05.webp",
+      "/vorlagen/carousels/praxis__abend-reflexion/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__abend-reflexion.zip"
   },
   {
@@ -770,7 +788,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__atembeobachtung.webp",
+    "thumb": "/vorlagen/carousels/praxis__atembeobachtung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__atembeobachtung/slide-01.webp",
+      "/vorlagen/carousels/praxis__atembeobachtung/slide-02.webp",
+      "/vorlagen/carousels/praxis__atembeobachtung/slide-03.webp",
+      "/vorlagen/carousels/praxis__atembeobachtung/slide-04.webp",
+      "/vorlagen/carousels/praxis__atembeobachtung/slide-05.webp",
+      "/vorlagen/carousels/praxis__atembeobachtung/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__atembeobachtung.zip"
   },
   {
@@ -780,7 +806,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__body-scan.webp",
+    "thumb": "/vorlagen/carousels/praxis__body-scan/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__body-scan/slide-01.webp",
+      "/vorlagen/carousels/praxis__body-scan/slide-02.webp",
+      "/vorlagen/carousels/praxis__body-scan/slide-03.webp",
+      "/vorlagen/carousels/praxis__body-scan/slide-04.webp",
+      "/vorlagen/carousels/praxis__body-scan/slide-05.webp",
+      "/vorlagen/carousels/praxis__body-scan/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__body-scan.zip"
   },
   {
@@ -790,7 +824,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__box-breathing.webp",
+    "thumb": "/vorlagen/carousels/praxis__box-breathing/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__box-breathing/slide-01.webp",
+      "/vorlagen/carousels/praxis__box-breathing/slide-02.webp",
+      "/vorlagen/carousels/praxis__box-breathing/slide-03.webp",
+      "/vorlagen/carousels/praxis__box-breathing/slide-04.webp",
+      "/vorlagen/carousels/praxis__box-breathing/slide-05.webp",
+      "/vorlagen/carousels/praxis__box-breathing/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__box-breathing.zip"
   },
   {
@@ -800,7 +842,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__der-autopilot-check.webp",
+    "thumb": "/vorlagen/carousels/praxis__der-autopilot-check/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__der-autopilot-check/slide-01.webp",
+      "/vorlagen/carousels/praxis__der-autopilot-check/slide-02.webp",
+      "/vorlagen/carousels/praxis__der-autopilot-check/slide-03.webp",
+      "/vorlagen/carousels/praxis__der-autopilot-check/slide-04.webp",
+      "/vorlagen/carousels/praxis__der-autopilot-check/slide-05.webp",
+      "/vorlagen/carousels/praxis__der-autopilot-check/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__der-autopilot-check.zip"
   },
   {
@@ -810,7 +860,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__der-innere-beobachter.webp",
+    "thumb": "/vorlagen/carousels/praxis__der-innere-beobachter/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__der-innere-beobachter/slide-01.webp",
+      "/vorlagen/carousels/praxis__der-innere-beobachter/slide-02.webp",
+      "/vorlagen/carousels/praxis__der-innere-beobachter/slide-03.webp",
+      "/vorlagen/carousels/praxis__der-innere-beobachter/slide-04.webp",
+      "/vorlagen/carousels/praxis__der-innere-beobachter/slide-05.webp",
+      "/vorlagen/carousels/praxis__der-innere-beobachter/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__der-innere-beobachter.zip"
   },
   {
@@ -820,7 +878,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__die-taegliche-rueckkehr.webp",
+    "thumb": "/vorlagen/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
+      "/vorlagen/carousels/praxis__die-taegliche-rueckkehr/slide-02.webp",
+      "/vorlagen/carousels/praxis__die-taegliche-rueckkehr/slide-03.webp",
+      "/vorlagen/carousels/praxis__die-taegliche-rueckkehr/slide-04.webp",
+      "/vorlagen/carousels/praxis__die-taegliche-rueckkehr/slide-05.webp",
+      "/vorlagen/carousels/praxis__die-taegliche-rueckkehr/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__die-taegliche-rueckkehr.zip"
   },
   {
@@ -830,7 +896,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__herz-kohaerenz.webp",
+    "thumb": "/vorlagen/carousels/praxis__herz-kohaerenz/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__herz-kohaerenz/slide-01.webp",
+      "/vorlagen/carousels/praxis__herz-kohaerenz/slide-02.webp",
+      "/vorlagen/carousels/praxis__herz-kohaerenz/slide-03.webp",
+      "/vorlagen/carousels/praxis__herz-kohaerenz/slide-04.webp",
+      "/vorlagen/carousels/praxis__herz-kohaerenz/slide-05.webp",
+      "/vorlagen/carousels/praxis__herz-kohaerenz/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__herz-kohaerenz.zip"
   },
   {
@@ -840,7 +914,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__loslass-ritual.webp",
+    "thumb": "/vorlagen/carousels/praxis__loslass-ritual/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__loslass-ritual/slide-01.webp",
+      "/vorlagen/carousels/praxis__loslass-ritual/slide-02.webp",
+      "/vorlagen/carousels/praxis__loslass-ritual/slide-03.webp",
+      "/vorlagen/carousels/praxis__loslass-ritual/slide-04.webp",
+      "/vorlagen/carousels/praxis__loslass-ritual/slide-05.webp",
+      "/vorlagen/carousels/praxis__loslass-ritual/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__loslass-ritual.zip"
   },
   {
@@ -850,7 +932,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__morgen-ausrichtung.webp",
+    "thumb": "/vorlagen/carousels/praxis__morgen-ausrichtung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__morgen-ausrichtung/slide-01.webp",
+      "/vorlagen/carousels/praxis__morgen-ausrichtung/slide-02.webp",
+      "/vorlagen/carousels/praxis__morgen-ausrichtung/slide-03.webp",
+      "/vorlagen/carousels/praxis__morgen-ausrichtung/slide-04.webp",
+      "/vorlagen/carousels/praxis__morgen-ausrichtung/slide-05.webp",
+      "/vorlagen/carousels/praxis__morgen-ausrichtung/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__morgen-ausrichtung.zip"
   },
   {
@@ -860,7 +950,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__praesenz-spaziergang.webp",
+    "thumb": "/vorlagen/carousels/praxis__praesenz-spaziergang/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__praesenz-spaziergang/slide-01.webp",
+      "/vorlagen/carousels/praxis__praesenz-spaziergang/slide-02.webp",
+      "/vorlagen/carousels/praxis__praesenz-spaziergang/slide-03.webp",
+      "/vorlagen/carousels/praxis__praesenz-spaziergang/slide-04.webp",
+      "/vorlagen/carousels/praxis__praesenz-spaziergang/slide-05.webp",
+      "/vorlagen/carousels/praxis__praesenz-spaziergang/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__praesenz-spaziergang.zip"
   },
   {
@@ -870,7 +968,15 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 6,
     "sizeMB": 0.2,
-    "thumb": "/vorlagen/thumbs/carousels/praxis__verlaengertes-ausatmen.webp",
+    "thumb": "/vorlagen/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
+      "/vorlagen/carousels/praxis__verlaengertes-ausatmen/slide-02.webp",
+      "/vorlagen/carousels/praxis__verlaengertes-ausatmen/slide-03.webp",
+      "/vorlagen/carousels/praxis__verlaengertes-ausatmen/slide-04.webp",
+      "/vorlagen/carousels/praxis__verlaengertes-ausatmen/slide-05.webp",
+      "/vorlagen/carousels/praxis__verlaengertes-ausatmen/slide-06.webp"
+    ],
     "href": "/vorlagen/carousels/praxis__verlaengertes-ausatmen.zip"
   },
   {
@@ -880,7 +986,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__ablenkung.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__ablenkung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__ablenkung.zip"
   },
   {
@@ -890,7 +1005,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__algorithmen.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__algorithmen/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__algorithmen.zip"
   },
   {
@@ -900,7 +1024,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__angst-steuerung.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__angst-steuerung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__angst-steuerung.zip"
   },
   {
@@ -910,7 +1043,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__autoritaetshoerigkeit.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__autoritaetshoerigkeit.zip"
   },
   {
@@ -920,7 +1062,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__bildmacht.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__bildmacht/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__bildmacht.zip"
   },
   {
@@ -930,7 +1081,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__framing.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__framing/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__framing/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__framing/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__framing/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__framing/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__framing/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__framing/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__framing/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__framing.zip"
   },
   {
@@ -940,7 +1100,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__gruppendruck.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__gruppendruck/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__gruppendruck.zip"
   },
   {
@@ -950,7 +1119,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__identitaet-und-meinung.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__identitaet-und-meinung.zip"
   },
   {
@@ -960,7 +1138,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__kognitive-dissonanz.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__kognitive-dissonanz.zip"
   },
   {
@@ -970,7 +1157,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__medien-agenda.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__medien-agenda/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__medien-agenda.zip"
   },
   {
@@ -980,7 +1176,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__normalisierung.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__normalisierung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__normalisierung.zip"
   },
   {
@@ -990,7 +1195,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__propaganda.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__propaganda/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__propaganda/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__propaganda/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__propaganda/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__propaganda/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__propaganda/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__propaganda/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__propaganda/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__propaganda.zip"
   },
   {
@@ -1000,7 +1214,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__reizueberflutung.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__reizueberflutung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__reizueberflutung.zip"
   },
   {
@@ -1010,7 +1233,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__sprache-und-etiketten.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__sprache-und-etiketten.zip"
   },
   {
@@ -1020,7 +1252,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__werbung-und-mangel.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__werbung-und-mangel.zip"
   },
   {
@@ -1030,7 +1271,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/selbstverteidigung__wiederholung.webp",
+    "thumb": "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-01.webp",
+      "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-02.webp",
+      "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-03.webp",
+      "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-04.webp",
+      "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-05.webp",
+      "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-06.webp",
+      "/vorlagen/carousels/selbstverteidigung__wiederholung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/selbstverteidigung__wiederholung.zip"
   },
   {
@@ -1040,7 +1290,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/stufen__autopilot.webp",
+    "thumb": "/vorlagen/carousels/stufen__autopilot/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/stufen__autopilot/slide-01.webp",
+      "/vorlagen/carousels/stufen__autopilot/slide-02.webp",
+      "/vorlagen/carousels/stufen__autopilot/slide-03.webp",
+      "/vorlagen/carousels/stufen__autopilot/slide-04.webp",
+      "/vorlagen/carousels/stufen__autopilot/slide-05.webp",
+      "/vorlagen/carousels/stufen__autopilot/slide-06.webp",
+      "/vorlagen/carousels/stufen__autopilot/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/stufen__autopilot.zip"
   },
   {
@@ -1050,7 +1309,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/stufen__emotionale-reifung.webp",
+    "thumb": "/vorlagen/carousels/stufen__emotionale-reifung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/stufen__emotionale-reifung/slide-01.webp",
+      "/vorlagen/carousels/stufen__emotionale-reifung/slide-02.webp",
+      "/vorlagen/carousels/stufen__emotionale-reifung/slide-03.webp",
+      "/vorlagen/carousels/stufen__emotionale-reifung/slide-04.webp",
+      "/vorlagen/carousels/stufen__emotionale-reifung/slide-05.webp",
+      "/vorlagen/carousels/stufen__emotionale-reifung/slide-06.webp",
+      "/vorlagen/carousels/stufen__emotionale-reifung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/stufen__emotionale-reifung.zip"
   },
   {
@@ -1060,7 +1328,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/stufen__erwachen.webp",
+    "thumb": "/vorlagen/carousels/stufen__erwachen/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/stufen__erwachen/slide-01.webp",
+      "/vorlagen/carousels/stufen__erwachen/slide-02.webp",
+      "/vorlagen/carousels/stufen__erwachen/slide-03.webp",
+      "/vorlagen/carousels/stufen__erwachen/slide-04.webp",
+      "/vorlagen/carousels/stufen__erwachen/slide-05.webp",
+      "/vorlagen/carousels/stufen__erwachen/slide-06.webp",
+      "/vorlagen/carousels/stufen__erwachen/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/stufen__erwachen.zip"
   },
   {
@@ -1070,7 +1347,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/stufen__innere-ausrichtung.webp",
+    "thumb": "/vorlagen/carousels/stufen__innere-ausrichtung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/stufen__innere-ausrichtung/slide-01.webp",
+      "/vorlagen/carousels/stufen__innere-ausrichtung/slide-02.webp",
+      "/vorlagen/carousels/stufen__innere-ausrichtung/slide-03.webp",
+      "/vorlagen/carousels/stufen__innere-ausrichtung/slide-04.webp",
+      "/vorlagen/carousels/stufen__innere-ausrichtung/slide-05.webp",
+      "/vorlagen/carousels/stufen__innere-ausrichtung/slide-06.webp",
+      "/vorlagen/carousels/stufen__innere-ausrichtung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/stufen__innere-ausrichtung.zip"
   },
   {
@@ -1080,7 +1366,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/stufen__meisterschaft.webp",
+    "thumb": "/vorlagen/carousels/stufen__meisterschaft/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/stufen__meisterschaft/slide-01.webp",
+      "/vorlagen/carousels/stufen__meisterschaft/slide-02.webp",
+      "/vorlagen/carousels/stufen__meisterschaft/slide-03.webp",
+      "/vorlagen/carousels/stufen__meisterschaft/slide-04.webp",
+      "/vorlagen/carousels/stufen__meisterschaft/slide-05.webp",
+      "/vorlagen/carousels/stufen__meisterschaft/slide-06.webp",
+      "/vorlagen/carousels/stufen__meisterschaft/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/stufen__meisterschaft.zip"
   },
   {
@@ -1090,7 +1385,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/stufen__schoepferkraft.webp",
+    "thumb": "/vorlagen/carousels/stufen__schoepferkraft/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/stufen__schoepferkraft/slide-01.webp",
+      "/vorlagen/carousels/stufen__schoepferkraft/slide-02.webp",
+      "/vorlagen/carousels/stufen__schoepferkraft/slide-03.webp",
+      "/vorlagen/carousels/stufen__schoepferkraft/slide-04.webp",
+      "/vorlagen/carousels/stufen__schoepferkraft/slide-05.webp",
+      "/vorlagen/carousels/stufen__schoepferkraft/slide-06.webp",
+      "/vorlagen/carousels/stufen__schoepferkraft/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/stufen__schoepferkraft.zip"
   },
   {
@@ -1100,7 +1404,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/stufen__selbstbeobachtung.webp",
+    "thumb": "/vorlagen/carousels/stufen__selbstbeobachtung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/stufen__selbstbeobachtung/slide-01.webp",
+      "/vorlagen/carousels/stufen__selbstbeobachtung/slide-02.webp",
+      "/vorlagen/carousels/stufen__selbstbeobachtung/slide-03.webp",
+      "/vorlagen/carousels/stufen__selbstbeobachtung/slide-04.webp",
+      "/vorlagen/carousels/stufen__selbstbeobachtung/slide-05.webp",
+      "/vorlagen/carousels/stufen__selbstbeobachtung/slide-06.webp",
+      "/vorlagen/carousels/stufen__selbstbeobachtung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/stufen__selbstbeobachtung.zip"
   },
   {
@@ -1110,7 +1423,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__automatische-gedanken.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__automatische-gedanken/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__automatische-gedanken.zip"
   },
   {
@@ -1120,7 +1442,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__der-innere-kritiker.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__der-innere-kritiker/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__der-innere-kritiker.zip"
   },
   {
@@ -1130,7 +1461,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__die-reiz-reaktions-luecke.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__die-reiz-reaktions-luecke.zip"
   },
   {
@@ -1140,7 +1480,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__emotionsregulation.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__emotionsregulation/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__emotionsregulation.zip"
   },
   {
@@ -1150,7 +1499,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__gruebeln-und-gedankenkreisen.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__gruebeln-und-gedankenkreisen.zip"
   },
   {
@@ -1160,7 +1518,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__integration-und-weitergabe.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__integration-und-weitergabe/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__integration-und-weitergabe.zip"
   },
   {
@@ -1170,7 +1537,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__kernueberzeugungen.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__kernueberzeugungen/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__kernueberzeugungen.zip"
   },
   {
@@ -1180,7 +1556,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__kognitive-verzerrungen.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__kognitive-verzerrungen.zip"
   },
   {
@@ -1190,7 +1575,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__konditionierung.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__konditionierung/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__konditionierung/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__konditionierung/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__konditionierung/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__konditionierung/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__konditionierung/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__konditionierung/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__konditionierung/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__konditionierung.zip"
   },
   {
@@ -1200,7 +1594,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__muster-koerper-und-gesundheit.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__muster-koerper-und-gesundheit.zip"
   },
   {
@@ -1210,7 +1613,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__neuroplastizitaet.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__neuroplastizitaet/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__neuroplastizitaet.zip"
   },
   {
@@ -1220,7 +1632,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__selbstmitgefuehl.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__selbstmitgefuehl/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__selbstmitgefuehl.zip"
   },
   {
@@ -1230,7 +1651,16 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 0.3,
-    "thumb": "/vorlagen/thumbs/carousels/vertiefungen__werte-und-ziele.webp",
+    "thumb": "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-01.webp",
+    "slidePaths": [
+      "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-01.webp",
+      "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-02.webp",
+      "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-03.webp",
+      "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-04.webp",
+      "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-05.webp",
+      "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-06.webp",
+      "/vorlagen/carousels/vertiefungen__werte-und-ziele/slide-07.webp"
+    ],
     "href": "/vorlagen/carousels/vertiefungen__werte-und-ziele.zip"
   },
   {

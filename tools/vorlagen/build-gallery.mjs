@@ -185,7 +185,6 @@ async function buildCarousels() {
 
   const dir = join(OUT, "carousels");
   ensureDir(dir);
-  ensureDir(join(THUMB_DIR, "carousels"));
   const tmpRoot = join(OUT, ".tmp-carousels");
 
   const SERIE = {
@@ -207,23 +206,27 @@ async function buildCarousels() {
       if (slides.length === 0) continue;
 
       const id = `${serie.name}__${carousel.name}`;
+      const slideDir = join(dir, id);
+      ensureDir(slideDir);
 
-      // Cover-Vorschau (erste Slide) klein als webp.
-      await sharp(slides[0])
-        .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
-        .webp({ quality: 74 })
-        .toFile(join(THUMB_DIR, "carousels", `${id}.webp`));
-
-      // Alle Slides als webp in einen Temp-Ordner, dann zippen.
+      // Jede Slide einzeln: kleine Preview-webp (lose, für die Galerie) +
+      // Voll-webp im Temp-Ordner (kommt gleich ins ZIP zum Download).
       const tmp = join(tmpRoot, id);
       ensureDir(tmp);
+      const slidePaths = [];
       let n = 0;
       for (const slide of slides) {
         n++;
+        const name = `slide-${String(n).padStart(2, "0")}.webp`;
+        await sharp(slide)
+          .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+          .webp({ quality: 76 })
+          .toFile(join(slideDir, name));
         await sharp(slide)
           .resize({ width: 1080, withoutEnlargement: true })
           .webp({ quality: 80 })
-          .toFile(join(tmp, `slide-${String(n).padStart(2, "0")}.webp`));
+          .toFile(join(tmp, name));
+        slidePaths.push(`/vorlagen/carousels/${id}/${name}`);
       }
 
       const zipName = `${id}.zip`;
@@ -245,7 +248,8 @@ async function buildCarousels() {
         kind: "carousel",
         slides: slides.length,
         sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
-        thumb: `/vorlagen/thumbs/carousels/${id}.webp`,
+        thumb: slidePaths[0],
+        slidePaths,
         href: `/vorlagen/carousels/${zipName}`,
       });
       count++;
@@ -318,6 +322,8 @@ export type VorlagenAsset = {
   format?: string;
   /** Nur bei kind === "carousel": Anzahl der Slides. */
   slides?: number;
+  /** Nur bei kind === "carousel": Pfade aller Slide-Vorschaubilder in Reihenfolge. */
+  slidePaths?: string[];
   sizeMB?: number;
 };
 

@@ -164,32 +164,46 @@ function DateiKarte({ a }: { a: VorlagenAsset }) {
 }
 
 function CarouselKarte({ a }: { a: VorlagenAsset }) {
+  const slides = a.slidePaths && a.slidePaths.length > 0
+    ? a.slidePaths
+    : a.thumb
+      ? [a.thumb]
+      : [];
   return (
     <figure className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card">
-      <a
-        href={a.thumb}
-        target="_blank"
-        rel="noreferrer"
-        className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-ink/[0.03]"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={a.thumb}
-          alt={a.titel}
-          loading="lazy"
-          className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
-        />
-        <span className="absolute right-2 top-2 rounded-full bg-ink/80 px-2 py-0.5 text-[0.7rem] font-semibold text-white backdrop-blur">
-          {a.slides} Slides
-        </span>
-      </a>
-      <figcaption className="flex flex-1 flex-col gap-2 p-3">
+      {/* Slide-Viewer: alle Slides einzeln, horizontal durchwischbar */}
+      <div className="flex snap-x snap-mandatory gap-2 overflow-x-auto p-2 [scrollbar-width:thin]">
+        {slides.map((src, i) => (
+          <a
+            key={src}
+            href={src}
+            target="_blank"
+            rel="noreferrer"
+            className="relative flex aspect-[4/5] w-[86%] flex-none snap-start items-center justify-center overflow-hidden rounded-lg bg-ink/[0.03]"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={src}
+              alt={`${a.titel} – Slide ${i + 1}`}
+              loading="lazy"
+              className="h-full w-full object-contain"
+            />
+            <span className="absolute left-1.5 top-1.5 rounded-full bg-ink/70 px-1.5 py-0.5 text-[0.65rem] font-semibold text-white">
+              {i + 1}/{slides.length}
+            </span>
+          </a>
+        ))}
+      </div>
+      <figcaption className="flex flex-1 flex-col gap-2 border-t border-ink/5 p-3">
         <div className="flex flex-col gap-0.5">
           <span className="text-[0.7rem] font-semibold uppercase tracking-wide text-accent">
             {a.unterKategorie}
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
         </div>
+        <span className="text-[0.7rem] text-ink-muted">
+          ← alle {a.slides} Slides durchwischen →
+        </span>
         <a
           href={a.href}
           download
@@ -358,7 +372,7 @@ export default async function VorlagenPage() {
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
                 {serie} <span className="text-ink-muted/70">({items.length})</span>
               </h3>
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {items.map((a) => (
                   <CarouselKarte key={a.href} a={a} />
                 ))}
