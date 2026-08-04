@@ -137,12 +137,15 @@ const ebookPost = (w, h) => {
   const land = w > h * 1.15;            // deutlich breiter → Querformat
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v); // Schrift an kürzerer Kante
-  const bookW = land ? Math.round(h * 0.62)
-    : Math.round(w * (h > w * 1.4 ? 0.4 : h > w ? 0.36 : 0.3));
+  // Buch höhenbasiert dimensionieren → verlässlicher Rand oben/unten,
+  // kein Überlaufen mehr (Mockup-Ratio h/w ≈ 1,37).
+  const bookH = land ? Math.round(h * 0.66)
+    : Math.round(h * (h > w * 1.4 ? 0.32 : h > w ? 0.28 : 0.26));
+  const bookW = Math.round(bookH / 1.37);
   const common = `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
-.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.25)}px;height:${Math.round(bookW*1.25)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.26), transparent 68%);filter:blur(38px)}
-.book{position:relative;width:${bookW}px;height:auto;filter:drop-shadow(0 22px 50px rgba(0,0,0,.55))}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.35)}px;height:${Math.round(bookW*1.35)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.26), transparent 68%);filter:blur(38px)}
+.book{position:relative;width:auto;height:${bookH}px;filter:drop-shadow(0 22px 50px rgba(0,0,0,.55))}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px}
 .h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .bul{display:flex;flex-direction:column;gap:${b(0.022)}px}
