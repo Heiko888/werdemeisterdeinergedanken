@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -6,8 +7,86 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
+import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { HERO_GLOW } from "@/lib/gradients";
-import { getPost, isPublished, posts, publishedPosts } from "@/lib/blog";
+import {
+  getPost,
+  isPublished,
+  posts,
+  publishedPosts,
+  type CtaVariant,
+  type Post,
+} from "@/lib/blog";
+
+/**
+ * Rendert Inline-Links im Markdown-Stil `[Text](/pfad)` innerhalb eines
+ * Absatzes. So können Artikel echte Querverweise (z. B. auf Vertiefungen im
+ * Mitgliederbereich) tragen, ohne ein volles Markdown-Setup.
+ */
+const INLINE_LINK = /\[([^\]]+)\]\(([^)]+)\)/g;
+function renderInline(text: string): ReactNode {
+  const parts: ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  INLINE_LINK.lastIndex = 0;
+  while ((m = INLINE_LINK.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    const [, label, href] = m;
+    parts.push(
+      <Link
+        key={m.index}
+        href={href}
+        className="font-medium text-accent underline decoration-accent/40 underline-offset-2 transition-colors hover:decoration-accent"
+      >
+        {label}
+      </Link>,
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length <= 1 ? (parts[0] ?? text) : parts;
+}
+
+/** Kontextabhängiger Abschluss-CTA – passend zum Thema statt immer gleich. */
+type Cta = { title: string; body: string; href: string; label: string };
+
+const CTA_BY_VARIANT: Record<CtaVariant, Cta> = {
+  erstgespraech: {
+    title: "Bereit, es selbst zu erleben?",
+    body: "Wenn dich dieser Impuls angesprochen hat, lass uns unverbindlich sprechen – und herausfinden, wo du gerade stehst.",
+    href: "/kontakt",
+    label: "Kostenloses Erstgespräch",
+  },
+  ebook: {
+    title: "Der kompakte Einstieg – kostenlos",
+    body: "Die wichtigsten Mechanismen und die 7 Stufen auf einen Blick. Hol dir das kostenlose E-Book „Die 7 Stufen kompakt“ – sofort per E-Mail.",
+    href: "/#ebook",
+    label: "E-Book gratis sichern",
+  },
+  stufen: {
+    title: "Der ganze Weg – Schritt für Schritt",
+    body: "Von der ersten Beobachtung bis zur Integration: Sieh dir die 7 Stufen der Bewusstseinsentwicklung im Überblick an.",
+    href: "/die-7-stufen",
+    label: "Die 7 Stufen entdecken",
+  },
+  test: {
+    title: "Wo stehst du gerade?",
+    body: "Ein kurzer Bewusstseinstest zeigt dir, auf welcher Stufe du beginnst – in wenigen Minuten.",
+    href: "/bewusstseinstest",
+    label: "Bewusstseinstest starten",
+  },
+};
+
+const CTA_BY_CATEGORY: Record<string, CtaVariant> = {
+  "Mentale Selbstverteidigung": "ebook",
+  Wissenschaft: "stufen",
+  Bewusstsein: "test",
+};
+
+function ctaFor(post: Post): Cta {
+  const variant = post.cta ?? CTA_BY_CATEGORY[post.category] ?? "erstgespraech";
+  return CTA_BY_VARIANT[variant];
+}
 
 // Auch vorausdatierte Artikel werden gebaut: die Seite bleibt über ihre URL
 // erreichbar (praktisch zum Gegenlesen), sie ist nur nirgends verlinkt und
@@ -46,12 +125,20 @@ export default async function BlogPostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
-  const more = publishedPosts()
-    .filter((p) => p.slug !== slug)
-    .slice(0, 2);
+  // „Weitere Impulse": erst thematisch verwandte (gleiche Kategorie), dann
+  // mit den neuesten übrigen auffüllen – nie themenfremd wie zuvor.
+  const others = publishedPosts().filter((p) => p.slug !== slug);
+  const sameCategory = others.filter((p) => p.category === post.category);
+  const more = [
+    ...sameCategory,
+    ...others.filter((p) => p.category !== post.category),
+  ].slice(0, 2);
+
+  const cta = ctaFor(post);
 
   return (
     <>
+      <ReadingProgress />
       {/* Artikel-Kopf: dunkler Marken-Header als Akzent */}
       <header className="grain relative overflow-hidden bg-navy-900 pt-20 pb-16 text-cream sm:pt-24 sm:pb-20">
         <div
@@ -62,7 +149,7 @@ export default async function BlogPostPage({
         <Container size="narrow" className="flex flex-col items-start gap-5">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-cream-dim/70 transition-colors hover:text-cream"
+            className="-mx-2 inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm text-cream-dim/70 transition-colors hover:text-cream"
           >
             <ArrowRight className="rotate-180" />
             Alle Artikel
@@ -111,7 +198,7 @@ export default async function BlogPostPage({
                     >
                       „
                     </span>
-                    {block.text}
+                    {renderInline(block.text)}
                   </blockquote>
                 );
               if (block.type === "ul")
@@ -123,7 +210,7 @@ export default async function BlogPostPage({
                         className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-soft/85"
                       >
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                        {it}
+                        {renderInline(it)}
                       </li>
                     ))}
                   </ul>
@@ -137,7 +224,7 @@ export default async function BlogPostPage({
                       : "text-[1.05rem] leading-[1.75] text-ink-soft/85"
                   }
                 >
-                  {block.text}
+                  {renderInline(block.text)}
                 </p>
               );
             })}
@@ -172,14 +259,13 @@ export default async function BlogPostPage({
               id="artikel-cta"
               className="font-display text-xl italic text-ink"
             >
-              Bereit, es selbst zu erleben?
+              {cta.title}
             </h2>
             <p className="text-[1.02rem] leading-relaxed text-ink-mid">
-              Wenn dich dieser Impuls angesprochen hat, lass uns unverbindlich
-              sprechen – und herausfinden, wo du gerade stehst.
+              {cta.body}
             </p>
-            <Button href="/kontakt" variant="accent" size="lg">
-              Kostenloses Erstgespräch
+            <Button href={cta.href} variant="accent" size="lg">
+              {cta.label}
               <ArrowRight />
             </Button>
           </aside>

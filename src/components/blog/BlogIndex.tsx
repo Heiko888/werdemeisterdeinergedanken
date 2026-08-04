@@ -64,7 +64,7 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       <section className="pt-8 pb-4 sm:pt-12">
         <Container>
           <div className="flex flex-col gap-3">
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-muted">
               Nach Thema filtern
             </span>
             <div className="-mx-1 flex flex-wrap gap-2">
@@ -77,19 +77,18 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
                     onClick={() => setActive(f.label)}
                     aria-pressed={on}
                     className={[
-                      "inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                      "inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-medium transition-colors",
                       on
                         ? "bg-navy-900 text-cream shadow-card"
-                        : "border border-ink/15 bg-white text-ink-mid hover:border-accent/40 hover:text-ink",
+                        : "border border-ink/10 bg-white/70 text-ink-mid hover:border-accent/40 hover:text-ink",
                     ].join(" ")}
                   >
                     {f.label}
+                    <span aria-hidden className={on ? "text-cream/35" : "text-ink-muted/50"}>
+                      ·
+                    </span>
                     <span
-                      className={
-                        on
-                          ? "text-cream/55"
-                          : "text-ink-muted"
-                      }
+                      className={`tabular-nums ${on ? "text-cream/60" : "text-ink-muted"}`}
                     >
                       {f.count}
                     </span>
@@ -104,6 +103,11 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       {/* Artikel-Raster */}
       <section className="pb-8">
         <Container>
+          <div aria-live="polite" className="sr-only">
+            {active === ALL
+              ? `Alle ${posts.length} Artikel`
+              : `${grid.length} Artikel in „${active}“`}
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {grid.map((post, i) => (
               <Reveal key={post.slug} delay={(i % 3) * 70}>
