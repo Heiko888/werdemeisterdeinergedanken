@@ -213,7 +213,7 @@ def workbook_cover(stages):
         '<div class="cover"><img class="brain" src="%s"><div class="inner">'
         '<div class="brandrow"><img src="%s"><span>Werde Meister<br>deiner Gedanken</span></div>'
         '<div class="eyebrow">Das Arbeitsheft</div>'
-        '<h1 class="serif">Die 7 Stufen<br><em>der Bewusstseinsentwicklung</em></h1>'
+        '<h1 class="serif">Die 7 Stufen <em>der<br>Bewusstseinsentwicklung</em></h1>'
         '<p class="pr">Dein persönlicher Begleiter: Lektionen, Übungen und Reflexionsfragen '
         'zu allen 7 Stufen – mit Raum, deine Gedanken festzuhalten.</p>'
         '<div class="foot"><span class="n">Ein Arbeitsheft von Heiko Schwaninger</span>'
