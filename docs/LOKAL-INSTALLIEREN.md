@@ -1,132 +1,149 @@
 # Vorlagen & Website lokal installieren
 
-Diese Anleitung zeigt in einfachen Schritten, wie du das komplette Projekt –
-inklusive der Vorlagen-Bibliothek unter `/admin/vorlagen` – auf deinem eigenen
-Rechner (Windows oder Mac) betreibst. Es liegt **nichts** „nur auf dem Server":
-Alle Vorlagen-Dateien und alle Bau-Funktionen sind Teil dieses Projekts.
+Diese Anleitung zeigt Schritt für Schritt, wie du das komplette Projekt auf
+deinem eigenen Rechner (Windows oder Mac) betreibst – **inklusive der
+Funktionen, um die Vorlagen selbst neu zu erzeugen** (Reel-Cover, Carousels,
+PDFs). Diese Bau-Funktionen waren ursprünglich für die Server-Umgebung
+eingerichtet; mit dieser Anleitung laufen sie auch lokal.
 
-Für die reinen Vorlagen-Funktionen brauchst du **nur Node.js**. Für die
-geschützte Admin-Ansicht selbst zusätzlich die Supabase-Zugangsdaten
-(siehe Abschnitt 5).
+Es gibt **zwei Ebenen**:
+
+| Ebene | Was du brauchst |
+| --- | --- |
+| **A. Vorlagen ansehen & herunterladen** (Website + Galerie) | nur Node.js |
+| **B. Vorlagen NEU erzeugen** (Bilder & PDFs bauen) | zusätzlich Playwright/Chromium – und für PDFs Python 3 |
 
 ---
 
-## 1. Node.js installieren (einmalig)
+## Ebene A – Website & Galerie lokal betreiben
 
-Node.js ist das Programm, das den Website-Code und die Vorlagen-Skripte
-ausführt.
+### 1. Node.js installieren (einmalig)
+
+Node.js ist das Programm, das den Website-Code und die Skripte ausführt.
 
 1. Öffne <https://nodejs.org>
 2. Lade die **LTS-Version** herunter (empfohlen: Node 20 oder neuer)
-3. Installiere sie mit den Standard-Einstellungen (immer „Weiter" klicken)
+3. Installiere sie mit den Standard-Einstellungen
 
-**Prüfen, ob es geklappt hat:** Öffne ein Terminal
-(Windows: „Eingabeaufforderung" oder „PowerShell" · Mac: „Terminal") und tippe:
+**Prüfen:** Terminal öffnen (Windows: „PowerShell" · Mac: „Terminal") und
+tippen:
 
 ```bash
 node -v
 ```
 
-Wenn eine Versionsnummer wie `v20.x.x` erscheint, ist alles bereit.
+Erscheint eine Version wie `v20.x.x`, ist alles bereit.
 
----
-
-## 2. Projekt öffnen
-
-Wechsle im Terminal in den Projektordner (dahin, wo diese Datei liegt),
-zum Beispiel:
+### 2. In den Projektordner wechseln
 
 ```bash
 cd Pfad/zu/werdemeisterdeinergedanken
 ```
 
-Tipp: Du kannst den Ordner auch bei den meisten Systemen ins Terminal-Fenster
-ziehen, dann wird der Pfad automatisch eingefügt.
+Tipp: Du kannst den Ordner meist ins Terminal ziehen, dann steht der Pfad da.
 
----
-
-## 3. Abhängigkeiten installieren (einmalig pro Rechner)
+### 3. Abhängigkeiten installieren (einmalig)
 
 ```bash
 npm install
 ```
 
-Das lädt alle benötigten Bausteine herunter. Beim ersten Mal dauert es ein paar
-Minuten – danach ist es erledigt.
+Beim ersten Mal dauert es ein paar Minuten.
 
----
-
-## 4. Website lokal starten
+### 4. Website starten
 
 ```bash
 npm run dev
 ```
 
-Danach im Browser öffnen: <http://localhost:3000>
+Im Browser öffnen: <http://localhost:3000> ·
+Vorlagen-Galerie: <http://localhost:3000/admin/vorlagen>
+(Beenden mit `Strg + C` bzw. `Ctrl + C`.)
 
-Die Vorlagen-Seite erreichst du unter:
-<http://localhost:3000/admin/vorlagen>
+### 5. Login für die Admin-Seite
 
-Zum Beenden im Terminal `Strg + C` (Mac: `Ctrl + C`) drücken.
+Die Galerie ist durch einen Login geschützt. Damit sie lokal funktioniert:
 
----
-
-## 5. Login für die Admin-Seite (nur für `/admin/vorlagen`)
-
-Die Galerie-Seite ist durch einen Login geschützt. Damit sie lokal wie auf dem
-Server funktioniert, brauchst du eine kleine Konfigurationsdatei:
-
-1. Kopiere die Vorlage `.env.local.example` und nenne die Kopie `.env.local`
-2. Trage darin mindestens ein:
+1. Kopiere `.env.local.example` und nenne die Kopie `.env.local`
+2. Trage darin ein (Werte aus Supabase → *Project Settings → API*):
    - `NEXT_PUBLIC_SUPABASE_URL`
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+3. `npm run dev` neu starten, unter <http://localhost:3000/login> mit deiner
+   Admin-E-Mail anmelden (`heiko.schwaninger@gmail.com` ist bereits als Admin
+   hinterlegt).
 
-   (Beide Werte findest du im Supabase-Dashboard unter
-   *Project Settings → API*.)
-3. `npm run dev` neu starten und unter
-   <http://localhost:3000/login> mit deiner Admin-E-Mail anmelden.
-   Deine Adresse `heiko.schwaninger@gmail.com` ist bereits als Admin
-   hinterlegt.
-
-**Ohne diese Datei** zeigt die Seite nur den Hinweis „Noch nicht verbunden" –
-die Vorlagen-Dateien und die Bau-Befehle (Abschnitt 6) funktionieren aber
-trotzdem.
+Ohne `.env.local` zeigt die Seite nur „Noch nicht verbunden" – die fertigen
+Vorlagen-Dateien liegen aber trotzdem im Projekt.
 
 ---
 
-## 6. Vorlagen neu erzeugen (die „Funktionen")
+## Ebene B – Vorlagen selbst neu erzeugen
 
-Diese Befehle laufen komplett auf deinem Rechner, **ganz ohne Server und ohne
-Login**. Jeder Befehl kommt in ein Terminal im Projektordner:
+Die fertigen Vorlagen sind bereits im Projekt. Wenn du sie **neu bauen**
+willst, brauchst du zusätzlich einen Browser (Chromium) zum Rendern – und für
+die PDFs außerdem Python.
 
-| Befehl | Was es macht |
-| --- | --- |
-| `npm run pdf` | Erzeugt die gestalteten PDF-Dokumente |
-| `npm run covers` | Baut die Reel-Cover (Titelbilder) |
-| `npm run carousels:slides` | Baut die Carousel-Folien |
-| `npm run vorlagen:galerie` | Aktualisiert die Galerie auf `/admin/vorlagen` |
+### 6. Chromium für Playwright installieren (einmalig)
 
-Weitere Befehle stehen in der `package.json` unter `"scripts"`.
+Nach `npm install` (Schritt 3) einmal ausführen:
 
-**Ablauf:** Zuerst die einzelnen Vorlagen bauen (z. B. `npm run covers`),
+```bash
+npx playwright install chromium
+```
+
+Das lädt einen Browser herunter, mit dem die Bilder und PDFs pixelgenau
+gerendert werden. Die Skripte finden dieses Chromium anschließend automatisch.
+
+> Alternativ nutzen die Skripte ein bereits installiertes Google Chrome /
+> Chromium aus dem System. Du kannst den Pfad auch fest vorgeben, z. B.:
+> `CHROME_BIN="/Pfad/zu/chrome" npm run covers:png`
+
+### 7. Für die PDFs zusätzlich: Python 3
+
+Nur nötig für `npm run pdf`. Prüfen mit `python3 --version`. Falls nicht
+vorhanden, von <https://www.python.org/downloads/> installieren.
+
+### 8. Vorlagen bauen
+
+| Befehl | Was es macht | Browser? | Python? |
+| --- | --- | :---: | :---: |
+| `npm run covers` | Reel-Cover als HTML bauen | – | – |
+| `npm run covers:png` | Reel-Cover als PNG exportieren | ✓ | – |
+| `npm run carousels:slides` | Carousel-Folien als HTML bauen | – | – |
+| `npm run carousels:png` | Carousel-Folien als PNG exportieren | ✓ | – |
+| `npm run pdf` | Alle PDF-Dokumente erzeugen | ✓ | ✓ |
+| `npm run vorlagen:galerie` | Galerie auf `/admin/vorlagen` aktualisieren | – | – |
+
+**Typischer Ablauf:** zuerst bauen/exportieren (z. B. `npm run covers:png`),
 danach `npm run vorlagen:galerie`, damit die neuen Dateien in der Galerie
-auftauchen.
+erscheinen.
+
+### 9. Eigene Hintergrundbilder (optional)
+
+Einige Cover-/Carousel-Vorlagen können ein Hintergrundbild `vorlage.png`
+verwenden. Diese Bilder sind **bewusst nicht im Projekt gespeichert**
+(`.gitignore`). Ohne sie wird automatisch der Marken-Farbverlauf gerendert –
+das Bauen funktioniert also auch ohne. Möchtest du einen echten Foto-
+Hintergrund, lege eine `vorlage.png` in den jeweiligen Format-Ordner unter
+`docs/reels/covers/<bereich>/<format>/` bzw. das passende Carousel-Verzeichnis,
+bevor du den PNG-Export startest.
 
 ---
 
 ## Kurzfassung
 
 ```bash
-# einmalig:
-# 1. Node.js von nodejs.org installieren
+# Einmalig einrichten:
+# 1. Node.js von nodejs.org installieren (LTS)
 npm install
+npx playwright install chromium     # nur für Ebene B (Vorlagen bauen)
 
-# jedes Mal:
-npm run dev            # Website lokal: http://localhost:3000
+# Website lokal:
+npm run dev                          # http://localhost:3000
 
-# Vorlagen bauen (nach Bedarf):
-npm run pdf
-npm run covers
-npm run carousels:slides
+# Vorlagen neu bauen (nach Bedarf):
+npm run covers:png
+npm run carousels:png
+npm run pdf                          # braucht zusätzlich Python 3
 npm run vorlagen:galerie
 ```

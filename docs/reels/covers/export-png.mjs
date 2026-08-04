@@ -21,11 +21,17 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import { FORMATS, COLLECTIONS, pad2 } from "./data.mjs";
 
+const require = createRequire(import.meta.url);
 const HERE = dirname(fileURLToPath(import.meta.url));
 const SCALE = Number(process.env.SCALE || "1") || 1;
 
 function findChrome() {
   if (process.env.CHROME_BIN && existsSync(process.env.CHROME_BIN)) return process.env.CHROME_BIN;
+  // Von Playwright installiertes Chromium (nach `npx playwright install chromium`).
+  try {
+    const p = require("playwright").chromium.executablePath();
+    if (p && existsSync(p)) return p;
+  } catch {}
   const roots = [process.env.PLAYWRIGHT_BROWSERS_PATH, "/opt/pw-browsers"].filter(Boolean);
   for (const r of roots) {
     try {
@@ -51,8 +57,7 @@ function findChrome() {
   );
 }
 
-const require = createRequire(import.meta.url);
-const { chromium } = require("/opt/node22/lib/node_modules/playwright");
+const { chromium } = require("playwright");
 const [onlyColl, onlyFormat] = process.argv.slice(2);
 
 // Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
