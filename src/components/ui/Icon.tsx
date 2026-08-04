@@ -24,6 +24,15 @@ export function ArrowRight(props: IconProps) {
   );
 }
 
+export function ArrowUp(props: IconProps) {
+  const { rest } = base(props);
+  return (
+    <svg viewBox="0 0 24 24" width="1em" height="1em" {...stroke} {...rest}>
+      <path d="M12 19V5M6 11l6-6 6 6" />
+    </svg>
+  );
+}
+
 export function Check(props: IconProps) {
   const { rest } = base(props);
   return (
