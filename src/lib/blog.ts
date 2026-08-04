@@ -4,11 +4,19 @@
  * Zitat, Liste) – so bleibt die Formatierung sauber und ohne Markdown-Setup.
  */
 
+import type { AccentKey } from "./blog-accent";
+
+export { CATEGORY_ACCENT, accentFor } from "./blog-accent";
+export type { AccentKey } from "./blog-accent";
+
 export type Block =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
   | { type: "quote"; text: string }
   | { type: "ul"; items: string[] };
+
+/** Kontextabhängiger Abschluss-CTA eines Artikels. */
+export type CtaVariant = "erstgespraech" | "ebook" | "stufen" | "test";
 
 export type Post = {
   slug: string;
@@ -18,6 +26,12 @@ export type Post = {
   date: string; // ISO, für <time> und Sortierung
   dateLabel: string; // angezeigt
   readingMinutes: number;
+  /** Optionaler Override für das generierte Cover-Motiv (sonst = slug). */
+  coverSeed?: string;
+  /** Optionaler Farb-Override; sonst aus der Kategorie abgeleitet. */
+  accent?: AccentKey;
+  /** Optionaler CTA-Override am Artikelende; sonst aus der Kategorie. */
+  cta?: CtaVariant;
   content: Block[];
 };
 
@@ -423,7 +437,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Framing bedeutet nicht, dass alles gelogen ist. Es bedeutet, dass jede Botschaft eine Brille mitliefert. Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu haben – sondern damit, den Rahmen zu erkennen, bevor du die Bewertung darin übernimmst. Im Mitgliederbereich findest du dazu die ausführliche Vertiefung „Framing“ mit Übungen; einen kompakten Überblick über alle diese Mechanismen gibt das kostenlose E-Book „Die Gedanken, die nicht deine sind“.",
+        text: "Framing bedeutet nicht, dass alles gelogen ist. Es bedeutet, dass jede Botschaft eine Brille mitliefert. Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu haben – sondern damit, den Rahmen zu erkennen, bevor du die Bewertung darin übernimmst. Im Mitgliederbereich findest du dazu die ausführliche [Vertiefung „Framing“](/mitglieder/wissen/framing) mit Übungen; einen kompakten Einstieg in den ganzen Weg gibt dir das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
       },
     ],
   },
@@ -433,8 +447,8 @@ export const posts: Post[] = [
     excerpt:
       "Online siehst du keine Wirklichkeit, sondern eine Auswahl, die auf deinem Verhalten beruht. Wie Algorithmen dein Weltbild formen – und wie du gegensteuerst.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-27",
+    dateLabel: "27. Juli 2026",
     readingMinutes: 6,
     content: [
       {
@@ -484,7 +498,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Die Filterblase ist kein Grund für Technikangst, sondern für bewussten Umgang. Behandle deinen Feed als das, was er ist: eine Auswahl. Die vollständige Vertiefung „Algorithmen & Filterblasen“ mit Übungen findest du im Mitgliederbereich – Teil des Themenblocks „Wie dein Denken gelenkt wird“.",
+        text: "Die Filterblase ist kein Grund für Technikangst, sondern für bewussten Umgang. Behandle deinen Feed als das, was er ist: eine Auswahl. Die vollständige [Vertiefung „Algorithmen & Filterblasen“](/mitglieder/wissen/algorithmen) mit Übungen findest du im Mitgliederbereich – Teil des Themenblocks „Wie dein Denken gelenkt wird“.",
       },
     ],
   },
@@ -494,8 +508,8 @@ export const posts: Post[] = [
     excerpt:
       "Der Wiederholungseffekt: Je öfter du eine Aussage hörst, desto wahrer erscheint sie – ganz ohne Beweis. Wie das funktioniert und wie du dich davor schützt.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-26",
+    dateLabel: "26. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -537,7 +551,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Wiederholung ist der älteste Trick der Beeinflussung – und einer der wirksamsten, gerade weil er ohne Lüge auskommt. Wer den Effekt kennt, misstraut der bloßen Vertrautheit. Mehr dazu in der Vertiefung „Wiederholung wird zur Wahrheit“ im Mitgliederbereich und im kostenlosen E-Book „Die Gedanken, die nicht deine sind“.",
+        text: "Wiederholung ist der älteste Trick der Beeinflussung – und einer der wirksamsten, gerade weil er ohne Lüge auskommt. Wer den Effekt kennt, misstraut der bloßen Vertrautheit. Mehr dazu in der [Vertiefung „Wiederholung wird zur Wahrheit“](/mitglieder/wissen/wiederholung-wahrheit) im Mitgliederbereich und im kostenlosen [E-Book „Die 7 Stufen kompakt“](/#ebook).",
       },
     ],
   },
@@ -547,8 +561,8 @@ export const posts: Post[] = [
     excerpt:
       "Nachrichten, Pushs, Dauer-Empörung: Wie ständige Reize dein Nervensystem in Alarm halten – und warum du in diesem Zustand schlechter denkst und leichter lenkbar bist.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-25",
+    dateLabel: "25. Juli 2026",
     readingMinutes: 7,
     content: [
       {
@@ -594,7 +608,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Ruhe ist keine Zeitverschwendung. Sie ist der Zustand, in dem dein präfrontaler Cortex wieder Kontrolle übernimmt und der Raum zwischen Reiz und Reaktion entsteht, in dem du frei bist. Du kannst deine Gedanken nicht meistern, solange dein System glaubt, auf alles reagieren zu müssen. Die vollständige Vertiefung „Reizüberflutung & Alarmbereitschaft“ findest du im Mitgliederbereich.",
+        text: "Ruhe ist keine Zeitverschwendung. Sie ist der Zustand, in dem dein präfrontaler Cortex wieder Kontrolle übernimmt und der Raum zwischen Reiz und Reaktion entsteht, in dem du frei bist. Du kannst deine Gedanken nicht meistern, solange dein System glaubt, auf alles reagieren zu müssen. Die vollständige [Vertiefung „Reizüberflutung & Alarmbereitschaft“](/mitglieder/wissen/reizueberflutung) findest du im Mitgliederbereich.",
       },
     ],
   },
@@ -604,8 +618,8 @@ export const posts: Post[] = [
     excerpt:
       "Die wirksamste Beeinflussung zwingt dir keine Meinung auf. Sie arbeitet leise – über Wiederholung, Emotion und Vereinfachung, ganz ohne eine einzige Lüge.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-24",
+    dateLabel: "24. Juli 2026",
     readingMinutes: 6,
     content: [
       {
@@ -647,7 +661,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand. Die ausführliche Vertiefung „Propaganda & Konditionierung“ findest du im Mitgliederbereich; einen kompakten Überblick gibt das kostenlose E-Book „Die Gedanken, die nicht deine sind“.",
+        text: "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand. Die ausführliche [Vertiefung „Propaganda & Konditionierung“](/mitglieder/wissen/propaganda) findest du im Mitgliederbereich; einen kompakten Überblick gibt das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
       },
     ],
   },
@@ -657,8 +671,8 @@ export const posts: Post[] = [
     excerpt:
       "Vieles kaufst du nicht, weil du es brauchst, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Wie das funktioniert – und wie du aussteigst.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-23",
+    dateLabel: "23. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -700,7 +714,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Der Ausweg ist nicht Verzicht um jeden Preis, sondern Bewusstheit. Vieles kaufst du nicht aus Bedarf, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Mehr dazu in der Vertiefung „Werbung & künstlicher Mangel“ im Mitgliederbereich.",
+        text: "Der Ausweg ist nicht Verzicht um jeden Preis, sondern Bewusstheit. Vieles kaufst du nicht aus Bedarf, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Mehr dazu in der [Vertiefung „Werbung & künstlicher Mangel“](/mitglieder/wissen/werbung-und-mangel) im Mitgliederbereich.",
       },
     ],
   },
@@ -710,8 +724,8 @@ export const posts: Post[] = [
     excerpt:
       "Die Angst vor Ausgrenzung sitzt tiefer als jedes Argument. Wie die Schweigespirale eine Mehrheit vortäuscht, die es oft gar nicht gibt.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-22",
+    dateLabel: "22. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -740,7 +754,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Der Mut fängt klein an: einmal ruhig und freundlich sagen, was du wirklich denkst. Oft löst sich die gefühlte Mehrheit in Luft auf, sobald einer anfängt. Die vollständige Vertiefung „Gruppendruck & Schweigespirale“ findest du im Mitgliederbereich.",
+        text: "Der Mut fängt klein an: einmal ruhig und freundlich sagen, was du wirklich denkst. Oft löst sich die gefühlte Mehrheit in Luft auf, sobald einer anfängt. Die vollständige [Vertiefung „Gruppendruck & Schweigespirale“](/mitglieder/wissen/gruppendruck) findest du im Mitgliederbereich.",
       },
     ],
   },
@@ -750,8 +764,8 @@ export const posts: Post[] = [
     excerpt:
       "Kognitive Dissonanz: Wir lehnen Informationen oft nicht ab, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. Wie du diesen Reflex durchschaust.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-21",
+    dateLabel: "21. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -780,7 +794,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Die reifere Fähigkeit ist, einen Abstand zwischen dich und deine Überzeugungen zu legen. Eine Meinung ändern zu können ist keine Schwäche, sondern Reife. Mehr dazu in der Vertiefung „Kognitive Dissonanz“ im Mitgliederbereich.",
+        text: "Die reifere Fähigkeit ist, einen Abstand zwischen dich und deine Überzeugungen zu legen. Eine Meinung ändern zu können ist keine Schwäche, sondern Reife. Mehr dazu in der [Vertiefung „Kognitive Dissonanz“](/mitglieder/wissen/kognitive-dissonanz) im Mitgliederbereich.",
       },
     ],
   },
@@ -790,8 +804,8 @@ export const posts: Post[] = [
     excerpt:
       "Derselbe Satz klingt glaubwürdiger, wenn ein Titel davorsteht. Warum das sinnvoll sein kann – und wo Fachwissen aufhört und blinder Gehorsam beginnt.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-20",
+    dateLabel: "20. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -820,7 +834,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Vertraue Fachwissen – aber hör nicht auf mitzudenken. Offenheit für Rückfragen ist dabei selbst ein Gütesiegel. Die vollständige Vertiefung „Autorität & Gehorsam“ findest du im Mitgliederbereich.",
+        text: "Vertraue Fachwissen – aber hör nicht auf mitzudenken. Offenheit für Rückfragen ist dabei selbst ein Gütesiegel. Die vollständige [Vertiefung „Autorität & Gehorsam“](/mitglieder/wissen/autoritaetshoerigkeit) findest du im Mitgliederbereich.",
       },
     ],
   },
@@ -830,8 +844,8 @@ export const posts: Post[] = [
     excerpt:
       "Sobald eine Meinung Teil deiner Identität wird, fühlt sich Kritik daran wie ein persönlicher Angriff an. Warum das dich unfrei macht – und wie du den Abstand zurückgewinnst.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-19",
+    dateLabel: "19. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -860,7 +874,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Die Freiheit liegt darin, einen Abstand zwischen dich und deine Meinungen zu legen – so wie zwischen dich und deine Gedanken. Eine Überzeugung ändern zu können ist keine Schwäche, sondern Reife. Du bleibst du, auch wenn eine Meinung geht. Die Vertiefung „Identität & Meinung“ findest du im Mitgliederbereich.",
+        text: "Die Freiheit liegt darin, einen Abstand zwischen dich und deine Meinungen zu legen – so wie zwischen dich und deine Gedanken. Eine Überzeugung ändern zu können ist keine Schwäche, sondern Reife. Du bleibst du, auch wenn eine Meinung geht. Die [Vertiefung „Identität & Meinung“](/mitglieder/wissen/identitaet-und-meinung) findest du im Mitgliederbereich.",
       },
     ],
   },
@@ -982,7 +996,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Neuroplastizität ist keine Esoterik, sondern messbare Biologie. Sie bedeutet: Kein Muster ist endgültig. Die Vertiefung „Neuroplastizität“ im Mitgliederbereich zeigt dir die konkrete Übung dazu.",
+        text: "Neuroplastizität ist keine Esoterik, sondern messbare Biologie. Sie bedeutet: Kein Muster ist endgültig. Die [Vertiefung „Neuroplastizität“](/mitglieder/wissen/neuroplastizitaet) im Mitgliederbereich zeigt dir die konkrete Übung dazu.",
       },
     ],
   },
@@ -1030,7 +1044,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Wenn dich das nächste Mal ein Gefühl packt, benenne es leise und präzise: „Da ist Angst. Da ist Enttäuschung.“ Du unterbrichst damit den Automatismus und gibst dem bewussten Teil deines Gehirns die Führung zurück. Mehr dazu in der Vertiefung „Emotionsregulation“.",
+        text: "Wenn dich das nächste Mal ein Gefühl packt, benenne es leise und präzise: „Da ist Angst. Da ist Enttäuschung.“ Du unterbrichst damit den Automatismus und gibst dem bewussten Teil deines Gehirns die Führung zurück. Mehr dazu in der [Vertiefung „Emotionsregulation“](/mitglieder/wissen/emotionsregulation).",
       },
     ],
   },
@@ -1082,7 +1096,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Das Tückische: Verzerrungen verschwinden nicht, nur weil man klug ist – sie laufen unter dem Radar. Was hilft, ist ein anderer Zugang: den Gedanken kurz anhalten und prüfen. Ist das ein Fakt oder eine Interpretation? Würde ein neutraler Beobachter das genauso sehen? Diese kleine Pause ist der ganze Unterschied zwischen „gedacht werden“ und „denken“. Die Vertiefung „Kognitive Verzerrungen“ führt dich Schritt für Schritt hindurch.",
+        text: "Das Tückische: Verzerrungen verschwinden nicht, nur weil man klug ist – sie laufen unter dem Radar. Was hilft, ist ein anderer Zugang: den Gedanken kurz anhalten und prüfen. Ist das ein Fakt oder eine Interpretation? Würde ein neutraler Beobachter das genauso sehen? Diese kleine Pause ist der ganze Unterschied zwischen „gedacht werden“ und „denken“. Die [Vertiefung „Kognitive Verzerrungen“](/mitglieder/wissen/kognitive-verzerrungen) führt dich Schritt für Schritt hindurch.",
       },
     ],
   },
@@ -1130,7 +1144,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Die vollständige Vertiefung zu Gruppendruck und Zugehörigkeit findest du im Mitgliederbereich.",
+        text: "Die vollständige [Vertiefung zu Gruppendruck und Zugehörigkeit](/mitglieder/wissen/gruppendruck) findest du im Mitgliederbereich.",
       },
     ],
   },
@@ -1234,7 +1248,7 @@ export function getPost(slug: string): Post | undefined {
 
 /** Neueste zuerst. Enthält auch vorausdatierte Artikel. */
 export const postsSorted: Post[] = [...posts].sort((a, b) =>
-  a.date < b.date ? 1 : -1,
+  a.date === b.date ? 0 : a.date < b.date ? 1 : -1,
 );
 
 /**

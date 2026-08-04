@@ -2,12 +2,12 @@
 import { HERO_GLOW } from "@/lib/gradients";
 
 import { useMemo, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
-import brainLogo from "../../../public/logo-brain.png";
+import { BlogCover } from "@/components/blog/BlogCover";
+import { accentFor, type AccentKey } from "@/lib/blog-accent";
 
 /** Schlanke Artikel-Form (ohne `content`) – reicht für die Übersicht. */
 export type BlogCard = {
@@ -18,6 +18,10 @@ export type BlogCard = {
   date: string;
   dateLabel: string;
   readingMinutes: number;
+  /** Optionaler Farb-Override fürs Cover; sonst aus der Kategorie. */
+  accent?: AccentKey;
+  /** Optionaler Cover-Seed; sonst = slug. */
+  coverSeed?: string;
 };
 
 const ALL = "Alle";
@@ -60,7 +64,7 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       <section className="pt-8 pb-4 sm:pt-12">
         <Container>
           <div className="flex flex-col gap-3">
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-muted">
               Nach Thema filtern
             </span>
             <div className="-mx-1 flex flex-wrap gap-2">
@@ -73,19 +77,18 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
                     onClick={() => setActive(f.label)}
                     aria-pressed={on}
                     className={[
-                      "inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                      "inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-medium transition-colors",
                       on
                         ? "bg-navy-900 text-cream shadow-card"
-                        : "border border-ink/15 bg-white text-ink-mid hover:border-accent/40 hover:text-ink",
+                        : "border border-ink/10 bg-white/70 text-ink-mid hover:border-accent/40 hover:text-ink",
                     ].join(" ")}
                   >
                     {f.label}
+                    <span aria-hidden className={on ? "text-cream/35" : "text-ink-muted/50"}>
+                      ·
+                    </span>
                     <span
-                      className={
-                        on
-                          ? "text-cream/55"
-                          : "text-ink-muted"
-                      }
+                      className={`tabular-nums ${on ? "text-cream/60" : "text-ink-muted"}`}
                     >
                       {f.count}
                     </span>
@@ -100,6 +103,11 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       {/* Artikel-Raster */}
       <section className="pb-8">
         <Container>
+          <div aria-live="polite" className="sr-only">
+            {active === ALL
+              ? `Alle ${posts.length} Artikel`
+              : `${grid.length} Artikel in „${active}“`}
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {grid.map((post, i) => (
               <Reveal key={post.slug} delay={(i % 3) * 70}>
@@ -162,21 +170,12 @@ function FeaturedCard({ post }: { post: BlogCard }) {
           </span>
         </div>
 
-        {/* Marken-Motiv statt leerer Fläche */}
+        {/* Artikel-eigenes generatives Cover statt generischem Logo */}
         <div className="relative hidden lg:block">
-          <div
-            aria-hidden
-            className="absolute inset-0 -z-10 opacity-70 blur-2xl"
-            style={{
-              background:
-                "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 34%, transparent), transparent 66%)",
-            }}
-          />
-          <Image
-            src={brainLogo}
-            alt=""
-            aria-hidden
-            className="mx-auto w-[min(260px,80%)] drop-shadow-[0_12px_50px_rgba(52,196,196,0.35)]"
+          <BlogCover
+            seed={post.coverSeed ?? post.slug}
+            accent={accentFor(post)}
+            className="aspect-[4/3] w-full rounded-2xl shadow-xl ring-1 ring-white/10"
           />
         </div>
       </div>
@@ -188,31 +187,29 @@ function PostCard({ post }: { post: BlogCard }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg"
     >
-      {/* Marken-Haarlinie oben, erscheint beim Hover */}
-      <span
-        aria-hidden
-        className="absolute inset-x-0 top-0 h-[3px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        style={{
-          background:
-            "linear-gradient(100deg, var(--color-leaf-500), var(--color-teal-500))",
-        }}
+      <BlogCover
+        seed={post.coverSeed ?? post.slug}
+        accent={accentFor(post)}
+        className="aspect-[16/10] w-full"
       />
 
-      <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
-        {post.category}
-      </span>
-      <h2 className="mt-3 font-display text-xl font-medium leading-snug text-ink transition-colors group-hover:text-accent">
-        {post.title}
-      </h2>
-      <p className="mt-2.5 text-sm leading-relaxed text-ink-mid">
-        {post.excerpt}
-      </p>
+      <div className="flex flex-1 flex-col p-6">
+        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+          {post.category}
+        </span>
+        <h2 className="mt-3 font-display text-xl font-medium leading-snug text-ink transition-colors group-hover:text-accent">
+          {post.title}
+        </h2>
+        <p className="mt-2.5 text-sm leading-relaxed text-ink-mid">
+          {post.excerpt}
+        </p>
 
-      <div className="mt-auto flex items-center justify-between gap-3 pt-6">
-        <Meta post={post} tone="light" />
-        <ArrowRight className="text-accent transition-transform duration-300 group-hover:translate-x-1" />
+        <div className="mt-auto flex items-center justify-between gap-3 pt-6">
+          <Meta post={post} tone="light" />
+          <ArrowRight className="text-accent transition-transform duration-300 group-hover:translate-x-1" />
+        </div>
       </div>
     </Link>
   );

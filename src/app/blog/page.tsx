@@ -16,7 +16,7 @@ export const revalidate = 3600;
 export default function BlogPage() {
   // Schlanke Karten-Daten an die Client-Komponente übergeben (ohne `content`).
   const cards: BlogCard[] = publishedPosts().map(
-    ({ slug, title, excerpt, category, date, dateLabel, readingMinutes }) => ({
+    ({
       slug,
       title,
       excerpt,
@@ -24,6 +24,18 @@ export default function BlogPage() {
       date,
       dateLabel,
       readingMinutes,
+      accent,
+      coverSeed,
+    }) => ({
+      slug,
+      title,
+      excerpt,
+      category,
+      date,
+      dateLabel,
+      readingMinutes,
+      accent,
+      coverSeed,
     }),
   );
 
