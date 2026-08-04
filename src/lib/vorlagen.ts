@@ -70,9 +70,9 @@ export const vorlagenKatalog: VorlagenGruppe[] = [
     icon: "Brain",
     titel: "E-Books (Lead-Magnet)",
     beschreibung:
-      "Das kostenlose E-Book „Die 7 Stufen – kompakt“, mit dem neue Interessenten in den Newsletter kommen. Die Texte stehen direkt im Generator und werden dort gepflegt.",
+      "Das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“, mit dem neue Interessenten in den Newsletter kommen. Die Texte stehen direkt im Generator und werden dort gepflegt.",
     ordner: "docs/ebook/ · tools/pdf/",
-    ergebnis: "public/Die-7-Stufen-kompakt.pdf",
+    ergebnis: "public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf",
     schritte: [
       {
         text: "Wird zusammen mit den PDFs gebaut",

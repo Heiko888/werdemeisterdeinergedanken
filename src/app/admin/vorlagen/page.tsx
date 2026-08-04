@@ -27,8 +27,8 @@ type PdfItem = { titel: string; href: string; gruppe: string };
 function buildPdfListe(): PdfItem[] {
   const items: PdfItem[] = [
     {
-      titel: "Gratis-E-Book · Die 7 Stufen kompakt",
-      href: "/Die-7-Stufen-kompakt.pdf",
+      titel: "Gratis-E-Book · Die 7 Stufen der Bewusstseinsentwicklung",
+      href: "/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf",
       gruppe: "Grundlagen",
     },
     {
