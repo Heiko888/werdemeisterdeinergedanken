@@ -120,32 +120,60 @@ const factTile = (w, h, f) => shell(w, h, `
 </div>
 <div class="foot"><img src="${brainUrl}"><span class="t">Werde Meister deiner Gedanken</span></div>`);
 
-// Gratis-E-Book-Einzelpost – Buch-Mockup, Headline, Vorteile, CTA
-const ebookPost = (w, h) => shell(w, h, `
-.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 ${Math.round(w*0.09)}px;gap:${Math.round(w*(h>w?0.03:0.02))}px}
-.eyebrow{font-size:${Math.round(w*0.026)}px;letter-spacing:.22em}
-.bookwrap{position:relative;display:flex;justify-content:center;margin:${Math.round(w*0.005)}px 0}
-.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.5)}px;height:${Math.round(w*0.5)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.28), transparent 68%);filter:blur(34px)}
-.book{position:relative;width:${Math.round(w*(h>w?0.42:h===w?0.28:0.34))}px;height:auto;filter:drop-shadow(0 22px 50px rgba(0,0,0,.55))}
-.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${Math.round(w*0.062)}px;line-height:1.12;letter-spacing:-.5px;max-width:94%}
+// Gratis-E-Book-Einzelpost – orientierungsbewusst (Querformat = zweispaltig),
+// bewusst luftig. Schriftgrößen an der kürzeren Kante ausgerichtet.
+const EBOOK_BULLETS = `<div class="bul">
+    <div class="li"><span class="ck">✓</span><span>Die 7 Stufen kompakt erklärt</span></div>
+    <div class="li"><span class="ck">✓</span><span>Erste Übungen für mehr Klarheit</span></div>
+    <div class="li"><span class="ck">✓</span><span>Sofort per E-Mail – 100 % kostenlos</span></div>
+  </div>`;
+const EBOOK_TEXT = `<div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
+    <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
+    ${EBOOK_BULLETS}
+    <div class="cta">Gratis sichern – Link in Bio</div>
+    <div class="url">www.werdemeisterdeinergedanken.de</div>`;
+
+const ebookPost = (w, h) => {
+  const land = w > h * 1.15;            // deutlich breiter → Querformat
+  const base = Math.min(w, h);
+  const b = (v) => Math.round(base * v); // Schrift an kürzerer Kante
+  const bookW = land ? Math.round(h * 0.62)
+    : Math.round(w * (h > w * 1.4 ? 0.4 : h > w ? 0.36 : 0.3));
+  const common = `
+.eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.25)}px;height:${Math.round(bookW*1.25)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.26), transparent 68%);filter:blur(38px)}
+.book{position:relative;width:${bookW}px;height:auto;filter:drop-shadow(0 22px 50px rgba(0,0,0,.55))}
+.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px}
 .h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.bul{display:flex;flex-direction:column;gap:${Math.round(w*0.016)}px;margin-top:${Math.round(w*0.01)}px}
-.bul .li{display:flex;align-items:center;justify-content:center;gap:12px;font-size:${Math.round(w*0.03)}px;color:rgba(244,242,236,.82)}
-.bul .ck{display:inline-flex;align-items:center;justify-content:center;width:${Math.round(w*0.036)}px;height:${Math.round(w*0.036)}px;border-radius:50%;background:rgba(163,214,79,.16);color:#a3d64f;font-size:${Math.round(w*0.022)}px;font-weight:800}
-.cta{margin-top:${Math.round(w*0.025)}px;padding:${Math.round(w*0.022)}px ${Math.round(w*0.05)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${Math.round(w*0.03)}px;letter-spacing:.02em}
-.url{margin-top:${Math.round(w*0.02)}px;font-size:${Math.round(w*0.024)}px}
+.bul{display:flex;flex-direction:column;gap:${b(0.022)}px}
+.bul .li{display:flex;align-items:center;gap:${b(0.016)}px;font-size:${b(0.031)}px;color:rgba(244,242,236,.84)}
+.bul .ck{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:${b(0.042)}px;height:${b(0.042)}px;border-radius:50%;background:rgba(163,214,79,.16);color:#a3d64f;font-size:${b(0.024)}px;font-weight:800}
+.cta{align-self:${land ? "flex-start" : "center"};padding:${b(0.024)}px ${b(0.05)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.02em}
+.url{font-size:${b(0.026)}px}`;
+
+  if (land) {
+    return shell(w, h, `${common}
+.post{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.06)}px;padding:0 ${Math.round(w*0.07)}px}
+.bookwrap{position:relative;flex:0 0 auto;display:flex;justify-content:center}
+.col{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:${b(0.032)}px;max-width:${Math.round(w*0.46)}px}
+.bul{align-items:flex-start}
 `, `<div class="post">
-  <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
-  <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
-  <div class="bul">
-    <div class="li"><span class="ck">✓</span> Die 7 Stufen kompakt erklärt</div>
-    <div class="li"><span class="ck">✓</span> Erste Übungen für mehr Klarheit</div>
-    <div class="li"><span class="ck">✓</span> Sofort per E-Mail – 100 % kostenlos</div>
-  </div>
-  <div class="cta">Gratis sichern – Link in Bio</div>
-  <div class="url">www.werdemeisterdeinergedanken.de</div>
+  <div class="col">${EBOOK_TEXT}</div>
 </div>`);
+  }
+  // Hoch-/Quadratformat: zentrierte Säule mit viel Luft
+  return shell(w, h, `${common}
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.07)}px ${Math.round(w*0.1)}px;gap:${b(0.05)}px}
+.bookwrap{position:relative;display:flex;justify-content:center}
+.col{display:flex;flex-direction:column;align-items:center;gap:${b(0.04)}px}
+.bul{align-items:flex-start}
+.h{max-width:96%}
+`, `<div class="post">
+  <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
+  <div class="col">${EBOOK_TEXT}</div>
+</div>`);
+};
 
 // ---------- Inhalte ---------------------------------------------------------
 const THUMBS = [
@@ -201,10 +229,16 @@ for (const f of FACTS) {
   TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1080, html: () => factTile(1080, 1080, f) });
   TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1350, html: () => factTile(1080, 1350, f) });
 }
-// Gratis-E-Book – Einzelpost (1:1, 4:5, 9:16 Story)
-TARGETS.push({ file: `ebook/WMDG-Ebook-Post-1x1.png`,   w: 1080, h: 1080, html: () => ebookPost(1080, 1080) });
-TARGETS.push({ file: `ebook/WMDG-Ebook-Post-4x5.png`,   w: 1080, h: 1350, html: () => ebookPost(1080, 1350) });
-TARGETS.push({ file: `ebook/WMDG-Ebook-Story-9x16.png`, w: 1080, h: 1920, html: () => ebookPost(1080, 1920) });
+// Gratis-E-Book – Einzelpost in 5 Formaten (wie die Cover)
+const EBOOK_FORMATS = [
+  { key: "9x16", w: 1080, h: 1920 }, // Reel / Story
+  { key: "4x5",  w: 1080, h: 1350 }, // Feed hoch
+  { key: "1x1",  w: 1080, h: 1080 }, // Feed quadratisch
+  { key: "16x9", w: 1920, h: 1080 }, // YouTube / Querformat
+  { key: "2x3",  w: 1000, h: 1500 }, // Pinterest
+];
+for (const F of EBOOK_FORMATS)
+  TARGETS.push({ file: `ebook/WMDG-Ebook-${F.key}.png`, w: F.w, h: F.h, html: () => ebookPost(F.w, F.h) });
 
 // ---------- Render ----------------------------------------------------------
 const require = createRequire(import.meta.url);
