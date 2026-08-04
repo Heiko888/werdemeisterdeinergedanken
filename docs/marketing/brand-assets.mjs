@@ -175,13 +175,16 @@ for (const f of FACTS) {
 }
 
 // ---------- Render ----------------------------------------------------------
+const require = createRequire(import.meta.url);
 function findChrome(){
+  if(process.env.CHROME_BIN && existsSync(process.env.CHROME_BIN)) return process.env.CHROME_BIN;
+  try{ const p=require("playwright").chromium.executablePath(); if(p && existsSync(p)) return p; }catch{}
   for(const r of [process.env.PLAYWRIGHT_BROWSERS_PATH,"/opt/pw-browsers"].filter(Boolean)){
     try{ for(const d of readdirSync(r)){ if(d.startsWith("chromium")){ const p=join(r,d,"chrome-linux/chrome"); if(existsSync(p)) return p; } } }catch{}
   }
+  throw new Error("Kein Chromium/Chrome gefunden. Führe aus:  npx playwright install chromium");
 }
-const require = createRequire(import.meta.url);
-const { chromium } = require("/opt/node22/lib/node_modules/playwright");
+const { chromium } = require("playwright");
 const browser = await chromium.launch({ executablePath: findChrome() });
 for (const t of TARGETS){
   const page = await browser.newPage({ viewport:{ width:t.w, height:t.h }, deviceScaleFactor:1 });

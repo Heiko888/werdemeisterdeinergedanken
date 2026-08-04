@@ -43,6 +43,11 @@ function python() {
 
 function findChrome() {
   if (process.env.CHROME_BIN && fs.existsSync(process.env.CHROME_BIN)) return process.env.CHROME_BIN;
+  // Von Playwright installiertes Chromium (nach `npx playwright install chromium`).
+  try {
+    const p = require("playwright").chromium.executablePath();
+    if (p && fs.existsSync(p)) return p;
+  } catch {}
   const roots = [process.env.PLAYWRIGHT_BROWSERS_PATH, "/opt/pw-browsers"].filter(Boolean);
   for (const r of roots) {
     try {
