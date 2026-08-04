@@ -7,7 +7,7 @@
  *   • Praxis-Übungen    → src/lib/practices.ts
  *
  *   node docs/marketing/video-thumbnails.mjs
- * Ausgabe: docs/marketing/video-thumbnails/<bereich>/<slug>.png
+ * Ausgabe: public/video-thumbnails/<bereich>/<slug>.png (servierbar, als Video-Poster)
  */
 import { writeFileSync, readFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:fs";
 import { createRequire } from "node:module";
@@ -41,9 +41,9 @@ function deepDives() {
 }
 function practices() {
   const t = read("src/lib/practices.ts");
-  const re = /title:\s*"([^"]+)",[\s\S]*?video:\s*(null|"[^"]+")/g;
+  const re = /slug:\s*"([^"]+)",[\s\S]{0,60}?title:\s*"([^"]+)"/g;
   const out = []; let m;
-  while ((m = re.exec(t))) out.push({ title: m[1] });
+  while ((m = re.exec(t))) out.push({ slug: m[1], title: m[2] });
   return out;
 }
 
@@ -111,7 +111,7 @@ for (const d of deepDives())
   JOBS.push({ dir: "vertiefungen", name: d.slug,
     data: { eyebrow: `Vertiefung · ${d.category}`, title: d.title, sub: d.subtitle } });
 for (const p of practices())
-  JOBS.push({ dir: "praxis", name: slugify(p.title),
+  JOBS.push({ dir: "praxis", name: p.slug,
     data: { eyebrow: "Praxis · Geführte Übung", title: p.title, sub: "" } });
 
 // ---------- Chromium --------------------------------------------------------
@@ -132,11 +132,11 @@ for (const j of JOBS) {
   const tmp = join(HERE, `.thumb.html`);
   writeFileSync(tmp, thumbHtml(j.data));
   await page.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
-  const outDir = join(HERE, "video-thumbnails", j.dir);
+  const outDir = join(ROOT, "public", "video-thumbnails", j.dir);
   mkdirSync(outDir, { recursive: true });
   await page.screenshot({ path: join(outDir, `${j.name}.png`) });
   rmSync(tmp, { force: true });
   n++;
 }
 await browser.close();
-console.log(`✓ ${n} Video-Thumbnails (Stufen + Vertiefungen + Praxis) in docs/marketing/video-thumbnails/`);
+console.log(`✓ ${n} Video-Thumbnails (Stufen + Vertiefungen + Praxis) in public/video-thumbnails/`);
