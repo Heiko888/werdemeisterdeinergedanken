@@ -2,9 +2,18 @@ import type { SVGProps } from "react";
 
 type IconProps = SVGProps<SVGSVGElement> & { title?: string };
 
+/**
+ * Gemeinsame Icon-Semantik: Ohne `title` sind die SVGs rein dekorativ und
+ * werden für Screenreader ausgeblendet (`aria-hidden`). Mit `title` bekommen
+ * sie eine Bild-Rolle samt Beschriftung. Ein vom Aufrufer gesetztes
+ * `aria-hidden`/`role` gewinnt (steht im Spread hinter den Defaults).
+ */
 function base(props: IconProps) {
-  const { title, children, ...rest } = props;
-  return { title, children, rest };
+  const { title, ...rest } = props;
+  const a11y: SVGProps<SVGSVGElement> = title
+    ? { role: "img", "aria-label": title }
+    : { "aria-hidden": true };
+  return { rest: { ...a11y, ...rest } };
 }
 
 const stroke = {

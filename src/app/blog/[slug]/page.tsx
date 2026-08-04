@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -85,26 +86,31 @@ export default async function BlogPostPage({
       {/* Artikel-Inhalt */}
       <article className="py-16 sm:py-20">
         <Container size="narrow">
-          <div className="flex flex-col gap-6">
-            <p className="text-lg leading-relaxed text-ink-soft/85">
-              {post.excerpt}
-            </p>
+          <div className="flex flex-col gap-7 sm:gap-8">
+            <p className="prose-lead">{post.excerpt}</p>
+            <span aria-hidden className="rule block h-px w-16" />
             {post.content.map((block, i) => {
               if (block.type === "h2")
                 return (
-                  <h2
-                    key={i}
-                    className="mt-6 font-display text-2xl font-medium text-ink"
-                  >
-                    {block.text}
-                  </h2>
+                  <div key={i} className="mt-4 flex flex-col gap-3">
+                    <span aria-hidden className="rule block h-px w-12" />
+                    <h2 className="font-display text-2xl font-medium text-ink">
+                      {block.text}
+                    </h2>
+                  </div>
                 );
               if (block.type === "quote")
                 return (
                   <blockquote
                     key={i}
-                    className="my-2 border-l-2 border-accent/60 pl-5 font-display text-xl italic leading-relaxed text-ink/90"
+                    className="relative my-4 pl-9 font-display text-[1.5rem] italic leading-snug text-ink sm:text-[1.7rem]"
                   >
+                    <span
+                      aria-hidden
+                      className="absolute -top-2 left-0 select-none font-display text-6xl not-italic leading-none text-accent/25"
+                    >
+                      „
+                    </span>
                     {block.text}
                   </blockquote>
                 );
@@ -125,7 +131,11 @@ export default async function BlogPostPage({
               return (
                 <p
                   key={i}
-                  className="text-[1.05rem] leading-[1.75] text-ink-soft/85"
+                  className={
+                    i === 0
+                      ? "text-[1.05rem] leading-[1.75] text-ink-soft/85 first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:font-display first-letter:text-6xl first-letter:font-medium first-letter:leading-[0.7] first-letter:text-accent"
+                      : "text-[1.05rem] leading-[1.75] text-ink-soft/85"
+                  }
                 >
                   {block.text}
                 </p>
@@ -133,9 +143,35 @@ export default async function BlogPostPage({
             })}
           </div>
 
-          {/* CTA */}
-          <div className="mt-14 flex flex-col items-start gap-5 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
-            <h2 className="font-display text-xl italic text-ink">
+          {/* Autor-Signatur – Gesicht schafft Vertrauen und Handschrift */}
+          <div className="mt-14 flex items-center gap-4 border-t border-ink/10 pt-8">
+            <Image
+              src="/heiko-portrait.webp"
+              alt="Heiko Schwaninger"
+              width={56}
+              height={56}
+              className="h-14 w-14 rounded-full object-cover ring-1 ring-ink/10"
+            />
+            <div className="flex flex-col">
+              <span className="font-display text-base font-medium text-ink">
+                Heiko Schwaninger
+              </span>
+              <span className="text-sm text-ink-mid">
+                Begleiter für Bewusstseinsentwicklung
+              </span>
+            </div>
+          </div>
+
+          {/* CTA – eigenes Landmark, damit die Überschriften-Gliederung des
+              Artikels sauber bleibt */}
+          <aside
+            aria-labelledby="artikel-cta"
+            className="mt-10 flex flex-col items-start gap-5 rounded-2xl border border-accent/25 bg-white p-8 shadow-card"
+          >
+            <h2
+              id="artikel-cta"
+              className="font-display text-xl italic text-ink"
+            >
               Bereit, es selbst zu erleben?
             </h2>
             <p className="text-[1.02rem] leading-relaxed text-ink-mid">
@@ -146,7 +182,7 @@ export default async function BlogPostPage({
               Kostenloses Erstgespräch
               <ArrowRight />
             </Button>
-          </div>
+          </aside>
         </Container>
       </article>
 

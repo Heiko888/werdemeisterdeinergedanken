@@ -4,6 +4,11 @@
  * Zitat, Liste) – so bleibt die Formatierung sauber und ohne Markdown-Setup.
  */
 
+import type { AccentKey } from "./blog-accent";
+
+export { CATEGORY_ACCENT, accentFor } from "./blog-accent";
+export type { AccentKey } from "./blog-accent";
+
 export type Block =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
@@ -18,6 +23,10 @@ export type Post = {
   date: string; // ISO, für <time> und Sortierung
   dateLabel: string; // angezeigt
   readingMinutes: number;
+  /** Optionaler Override für das generierte Cover-Motiv (sonst = slug). */
+  coverSeed?: string;
+  /** Optionaler Farb-Override; sonst aus der Kategorie abgeleitet. */
+  accent?: AccentKey;
   content: Block[];
 };
 
@@ -423,7 +432,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Framing bedeutet nicht, dass alles gelogen ist. Es bedeutet, dass jede Botschaft eine Brille mitliefert. Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu haben – sondern damit, den Rahmen zu erkennen, bevor du die Bewertung darin übernimmst. Im Mitgliederbereich findest du dazu die ausführliche Vertiefung „Framing“ mit Übungen; einen kompakten Überblick über alle diese Mechanismen gibt das kostenlose E-Book „Die Gedanken, die nicht deine sind“.",
+        text: "Framing bedeutet nicht, dass alles gelogen ist. Es bedeutet, dass jede Botschaft eine Brille mitliefert. Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu haben – sondern damit, den Rahmen zu erkennen, bevor du die Bewertung darin übernimmst. Im Mitgliederbereich findest du dazu die ausführliche Vertiefung „Framing“ mit Übungen; einen kompakten Einstieg in den ganzen Weg gibt dir das kostenlose E-Book „Die 7 Stufen kompakt“.",
       },
     ],
   },
@@ -433,8 +442,8 @@ export const posts: Post[] = [
     excerpt:
       "Online siehst du keine Wirklichkeit, sondern eine Auswahl, die auf deinem Verhalten beruht. Wie Algorithmen dein Weltbild formen – und wie du gegensteuerst.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-27",
+    dateLabel: "27. Juli 2026",
     readingMinutes: 6,
     content: [
       {
@@ -494,8 +503,8 @@ export const posts: Post[] = [
     excerpt:
       "Der Wiederholungseffekt: Je öfter du eine Aussage hörst, desto wahrer erscheint sie – ganz ohne Beweis. Wie das funktioniert und wie du dich davor schützt.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-26",
+    dateLabel: "26. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -537,7 +546,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Wiederholung ist der älteste Trick der Beeinflussung – und einer der wirksamsten, gerade weil er ohne Lüge auskommt. Wer den Effekt kennt, misstraut der bloßen Vertrautheit. Mehr dazu in der Vertiefung „Wiederholung wird zur Wahrheit“ im Mitgliederbereich und im kostenlosen E-Book „Die Gedanken, die nicht deine sind“.",
+        text: "Wiederholung ist der älteste Trick der Beeinflussung – und einer der wirksamsten, gerade weil er ohne Lüge auskommt. Wer den Effekt kennt, misstraut der bloßen Vertrautheit. Mehr dazu in der Vertiefung „Wiederholung wird zur Wahrheit“ im Mitgliederbereich und im kostenlosen E-Book „Die 7 Stufen kompakt“.",
       },
     ],
   },
@@ -547,8 +556,8 @@ export const posts: Post[] = [
     excerpt:
       "Nachrichten, Pushs, Dauer-Empörung: Wie ständige Reize dein Nervensystem in Alarm halten – und warum du in diesem Zustand schlechter denkst und leichter lenkbar bist.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-25",
+    dateLabel: "25. Juli 2026",
     readingMinutes: 7,
     content: [
       {
@@ -604,8 +613,8 @@ export const posts: Post[] = [
     excerpt:
       "Die wirksamste Beeinflussung zwingt dir keine Meinung auf. Sie arbeitet leise – über Wiederholung, Emotion und Vereinfachung, ganz ohne eine einzige Lüge.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-24",
+    dateLabel: "24. Juli 2026",
     readingMinutes: 6,
     content: [
       {
@@ -647,7 +656,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand. Die ausführliche Vertiefung „Propaganda & Konditionierung“ findest du im Mitgliederbereich; einen kompakten Überblick gibt das kostenlose E-Book „Die Gedanken, die nicht deine sind“.",
+        text: "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand. Die ausführliche Vertiefung „Propaganda & Konditionierung“ findest du im Mitgliederbereich; einen kompakten Überblick gibt das kostenlose E-Book „Die 7 Stufen kompakt“.",
       },
     ],
   },
@@ -657,8 +666,8 @@ export const posts: Post[] = [
     excerpt:
       "Vieles kaufst du nicht, weil du es brauchst, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Wie das funktioniert – und wie du aussteigst.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-23",
+    dateLabel: "23. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -710,8 +719,8 @@ export const posts: Post[] = [
     excerpt:
       "Die Angst vor Ausgrenzung sitzt tiefer als jedes Argument. Wie die Schweigespirale eine Mehrheit vortäuscht, die es oft gar nicht gibt.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-22",
+    dateLabel: "22. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -750,8 +759,8 @@ export const posts: Post[] = [
     excerpt:
       "Kognitive Dissonanz: Wir lehnen Informationen oft nicht ab, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. Wie du diesen Reflex durchschaust.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-21",
+    dateLabel: "21. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -790,8 +799,8 @@ export const posts: Post[] = [
     excerpt:
       "Derselbe Satz klingt glaubwürdiger, wenn ein Titel davorsteht. Warum das sinnvoll sein kann – und wo Fachwissen aufhört und blinder Gehorsam beginnt.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-20",
+    dateLabel: "20. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -830,8 +839,8 @@ export const posts: Post[] = [
     excerpt:
       "Sobald eine Meinung Teil deiner Identität wird, fühlt sich Kritik daran wie ein persönlicher Angriff an. Warum das dich unfrei macht – und wie du den Abstand zurückgewinnst.",
     category: "Mentale Selbstverteidigung",
-    date: "2026-07-28",
-    dateLabel: "28. Juli 2026",
+    date: "2026-07-19",
+    dateLabel: "19. Juli 2026",
     readingMinutes: 5,
     content: [
       {
@@ -1234,7 +1243,7 @@ export function getPost(slug: string): Post | undefined {
 
 /** Neueste zuerst. Enthält auch vorausdatierte Artikel. */
 export const postsSorted: Post[] = [...posts].sort((a, b) =>
-  a.date < b.date ? 1 : -1,
+  a.date === b.date ? 0 : a.date < b.date ? 1 : -1,
 );
 
 /**
