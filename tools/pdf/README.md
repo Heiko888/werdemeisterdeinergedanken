@@ -8,7 +8,7 @@ npm run pdf
 
 Das schreibt:
 
-- `public/Die-7-Stufen-kompakt.pdf` – das kostenlose Lead-Magnet-E-Book (11 Seiten)
+- `public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf` – das kostenlose Lead-Magnet-E-Book (11 Seiten)
 - `content/pdf/*.pdf` – die 28 Mitglieder-Dokumente:
   - `arbeitsheft.pdf` – Gesamt-Arbeitsheft (mit Gehirn-Cover)
   - `stufe-<1..7>-lektion.pdf` – Lektion je Stufe

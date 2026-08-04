@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Erzeugt das gestaltete Gratis-E-Book „Die 7 Stufen kompakt" als book.html.
+# Erzeugt das gestaltete Gratis-E-Book „Die 7 Stufen der Bewusstseinsentwicklung" als book.html.
 # Pfade sind relativ zum Skript / per Env konfigurierbar (siehe generate.mjs).
 import base64, os
 
