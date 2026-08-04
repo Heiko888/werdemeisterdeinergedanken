@@ -18,6 +18,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import { FORMAT, loadCarousels } from "./data.mjs";
 
+const require = createRequire(import.meta.url);
 const HERE = dirname(fileURLToPath(import.meta.url));
 const BUILD = join(HERE, "build");
 const SCALE = Number(process.env.SCALE || "1") || 1;
@@ -25,6 +26,11 @@ const [onlySeries, onlySlug] = process.argv.slice(2);
 
 function findChrome() {
   if (process.env.CHROME_BIN && existsSync(process.env.CHROME_BIN)) return process.env.CHROME_BIN;
+  // Von Playwright installiertes Chromium (nach `npx playwright install chromium`).
+  try {
+    const p = require("playwright").chromium.executablePath();
+    if (p && existsSync(p)) return p;
+  } catch {}
   const roots = [process.env.PLAYWRIGHT_BROWSERS_PATH, "/opt/pw-browsers"].filter(Boolean);
   for (const r of roots) {
     try {
@@ -48,8 +54,7 @@ function findChrome() {
 const gen = spawnSync(process.execPath, [join(HERE, "build.mjs")], { stdio: "inherit" });
 if (gen.status !== 0) throw new Error("build.mjs fehlgeschlagen");
 
-const require = createRequire(import.meta.url);
-const { chromium } = require("/opt/node22/lib/node_modules/playwright");
+const { chromium } = require("playwright");
 const { w: W, h: H } = FORMAT;
 
 // Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
