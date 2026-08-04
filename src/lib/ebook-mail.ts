@@ -33,7 +33,7 @@ export async function sendEbookConfirmationMail(
   const html = shell(`
     <h1 style="font-size:22px;line-height:1.25;color:#141b2b;margin:0 0 1rem">Nur noch ein Schritt 🌱</h1>
     <p style="margin:0 0 1rem;font-size:16px;line-height:1.6;color:#2a3446">
-      schön, dass du dein kostenloses E-Book <strong>„Die 7 Stufen kompakt"</strong>
+      schön, dass du dein kostenloses E-Book <strong>„Die 7 Stufen der Bewusstseinsentwicklung"</strong>
       anfordern möchtest. Bitte bestätige kurz, dass diese E-Mail wirklich dir gehört –
       dann schicken wir dir dein Exemplar sofort zu.
     </p>
@@ -53,7 +53,7 @@ export async function sendEbookConfirmationMail(
 
   const text = `Nur noch ein Schritt.
 
-Schön, dass du dein kostenloses E-Book „Die 7 Stufen kompakt" anfordern möchtest. Bitte bestätige kurz deine Anmeldung – dann schicken wir dir dein Exemplar sofort zu:
+Schön, dass du dein kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung" anfordern möchtest. Bitte bestätige kurz deine Anmeldung – dann schicken wir dir dein Exemplar sofort zu:
 
 ${confirmUrl}
 
@@ -92,7 +92,7 @@ export async function sendEbookDeliveryMail(
     <h1 style="font-size:22px;line-height:1.25;color:#141b2b;margin:0 0 1rem">Dein E-Book ist da 🌱</h1>
     <p style="margin:0 0 1rem;font-size:16px;line-height:1.6;color:#2a3446">
       danke fürs Bestätigen. Im Anhang findest du dein kostenloses E-Book
-      <strong>„Die 7 Stufen kompakt – Erste Übungen für mehr Klarheit"</strong>.
+      <strong>„Die 7 Stufen der Bewusstseinsentwicklung – Erste Übungen für mehr Klarheit"</strong>.
     </p>
     <p style="margin:0 0 1.25rem;font-size:16px;line-height:1.6;color:#2a3446">
       Mein Tipp: Nimm dir eine einzige Übung vor und bleib ein paar Tage dabei.
@@ -107,7 +107,7 @@ export async function sendEbookDeliveryMail(
 
   const text = `Dein E-Book ist da.
 
-Danke fürs Bestätigen. Im Anhang findest du dein kostenloses E-Book „Die 7 Stufen kompakt – Erste Übungen für mehr Klarheit".
+Danke fürs Bestätigen. Im Anhang findest du dein kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung – Erste Übungen für mehr Klarheit".
 
 Mein Tipp: Nimm dir eine einzige Übung vor und bleib ein paar Tage dabei.
 
@@ -120,12 +120,12 @@ Werde Meister deiner Gedanken`;
   const { error } = await resend.emails.send({
     from: EBOOK_FROM,
     to,
-    subject: "Dein E-Book: Die 7 Stufen kompakt",
+    subject: "Dein E-Book: Die 7 Stufen der Bewusstseinsentwicklung",
     text,
     html,
     attachments: [
       {
-        filename: "Die-7-Stufen-kompakt.pdf",
+        filename: "Die-7-Stufen-der-Bewusstseinsentwicklung.pdf",
         content: Buffer.from(pdf),
       },
     ],

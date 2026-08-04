@@ -89,7 +89,7 @@ supabase/migrations/     SQL für profiles-Tabelle + RLS
 
 ## Gratis-E-Book (Lead-Magnet)
 
-Das kostenlose E-Book „Die 7 Stufen kompakt" wird zur Build-Zeit als PDF
+Das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung" wird zur Build-Zeit als PDF
 erzeugt (`/ebook`) und über den Lead-Magneten auf der Startseite ausgegeben.
 
 - **Nur `RESEND_API_KEY` gesetzt:** Nach dem Eintragen wird das E-Book direkt

@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const runtime = "nodejs";
 
 /**
- * Lead-Erfassung für das kostenlose E-Book „Die 7 Stufen kompakt".
+ * Lead-Erfassung für das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung".
  *
  * Ablauf mit Double-Opt-in (wenn Supabase eingerichtet ist):
  *   1. E-Mail wird als Lead mit Status „pending" gespeichert.

@@ -100,7 +100,7 @@ async function main() {
   execFileSync(PY, [path.join(HERE, "build-member.py")], { env, stdio: "inherit" });
 
   console.log("• E-Book rendern …");
-  renderPdf(path.join(BUILD, "ebook.html"), path.join(PUBLIC, "Die-7-Stufen-kompakt.pdf"));
+  renderPdf(path.join(BUILD, "ebook.html"), path.join(PUBLIC, "Die-7-Stufen-der-Bewusstseinsentwicklung.pdf"));
 
   console.log("• Mitglieder-Dokumente rendern …");
   const manifest = JSON.parse(fs.readFileSync(path.join(BUILD, "m-manifest.json"), "utf8"));
@@ -116,7 +116,7 @@ async function main() {
     path.join(PDFDIR, "arbeitsheft.pdf"),
   );
 
-  console.log(`\n✓ Fertig: public/Die-7-Stufen-kompakt.pdf und ${manifest.single.length + 1} Dateien in content/pdf/`);
+  console.log(`\n✓ Fertig: public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf und ${manifest.single.length + 1} Dateien in content/pdf/`);
 }
 
 main().catch((e) => {

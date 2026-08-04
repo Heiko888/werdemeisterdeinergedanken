@@ -7,7 +7,7 @@ import { EbookForm } from "./EbookForm";
 import ebookMockup from "../../../public/ebook-mockup.webp";
 
 const bullets = [
-  "Die 7 Stufen kompakt erklärt",
+  "Die 7 Stufen im Überblick",
   "Erste Übungen für mehr Klarheit",
   "Sofort per E-Mail – 100 % kostenlos",
 ];

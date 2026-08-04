@@ -76,7 +76,7 @@ sofern nicht als *noindex* markiert.
 | `/blog` | `app/blog/page.tsx` | Blog-Übersicht |
 | `/blog/[slug]` | `app/blog/[slug]/page.tsx` | Einzelartikel (17 Beiträge) mit OpenGraph-Metadaten, aus `lib/blog.ts` |
 | `/kontakt` | `app/kontakt/page.tsx` | Kontaktformular (Honeypot + Rate-Limit) → sendet über `/api/kontakt` |
-| `/ebook` | `app/ebook/route.ts` | Route-Handler: liefert das Lead-Magnet-PDF „Die 7 Stufen kompakt" als Download |
+| `/ebook` | `app/ebook/route.ts` | Route-Handler: liefert das Lead-Magnet-PDF „Die 7 Stufen der Bewusstseinsentwicklung" als Download |
 | `/login` | `app/login/page.tsx` | Supabase-Anmeldung; leitet nach Login zu `/mitglieder` *(noindex)* |
 | `/impressum` | `app/impressum/page.tsx` | Rechtliche Angaben (Footer) *(noindex)* |
 | `/datenschutz` | `app/datenschutz/page.tsx` | DSGVO-Hinweise (Footer) *(noindex)* |
