@@ -2,12 +2,14 @@
 import { HERO_GLOW } from "@/lib/gradients";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { BlogCover } from "@/components/blog/BlogCover";
 import { accentFor, type AccentKey } from "@/lib/blog-accent";
+import brainLogo from "../../../public/logo-brain.png";
 
 /** Schlanke Artikel-Form (ohne `content`) – reicht für die Übersicht. */
 export type BlogCard = {
@@ -170,13 +172,24 @@ function FeaturedCard({ post }: { post: BlogCard }) {
           </span>
         </div>
 
-        {/* Artikel-eigenes generatives Cover statt generischem Logo */}
+        {/* Hero-Bild: leuchtendes Gehirn aus Datenpunkten (wie auf der Startseite) */}
         <div className="relative hidden lg:block">
-          <BlogCover
-            seed={post.coverSeed ?? post.slug}
-            accent={accentFor(post)}
-            className="aspect-[4/3] w-full rounded-2xl shadow-xl ring-1 ring-white/10"
-          />
+          <div className="relative mx-auto w-fit">
+            <div
+              aria-hidden
+              className="absolute -inset-6 rounded-full opacity-70 blur-2xl"
+              style={{
+                background:
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 34%, transparent), transparent 66%)",
+              }}
+            />
+            <Image
+              src={brainLogo}
+              alt=""
+              aria-hidden
+              className="relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(52,196,196,0.4)]"
+            />
+          </div>
         </div>
       </div>
     </Link>
