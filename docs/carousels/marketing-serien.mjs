@@ -143,6 +143,27 @@ const SERIES = [
         sub: "Speichere den Post und schreib mir die Zahl in die Kommentare. Die Vertiefungen mit allen Quellen findest du auf der Website.", button: "Mehr erfahren →" },
     ],
   },
+  {
+    key: "gratis-ebook", label: "Gratis-E-Book", tag: "Gratis-Einstieg",
+    slides: [
+      { role: "cover", eyebrow: "Gratis-Einstieg",
+        title: "Werde zum bewussten Gestalter deiner Gedanken",
+        sub: "Das kostenlose E-Book: Die 7 Stufen der Bewusstseinsentwicklung – kompakt, klar, sofort umsetzbar." },
+      { role: "setup", eyebrow: "Für dich, wenn …", title: "Der erste Schritt ist der leichteste",
+        text: "Du musst nicht alles auf einmal verstehen. Dieses E-Book bringt dir die 7 Stufen auf den Punkt – und gibt dir erste Übungen, mit denen du heute anfangen kannst. Ohne Vorwissen, ohne Druck." },
+      { role: "list", eyebrow: "Das bekommst du", title: "In diesem E-Book",
+        items: [
+          { lead: "Die 7 Stufen kompakt", text: "Der ganze Weg vom Autopilot zur Meisterschaft – klar und verständlich erklärt." },
+          { lead: "Erste Übungen", text: "Konkrete Mini-Praktiken, die im Alltag sofort für mehr Klarheit sorgen." },
+          { lead: "Sofort & kostenlos", text: "Direkt per E-Mail in dein Postfach – 100 % gratis, jederzeit abbestellbar." },
+        ] },
+      { role: "step", rubric: "So geht's", n: "1", title: "In 30 Sekunden im Postfach",
+        text: "Trag auf der Website deine E-Mail-Adresse ein – das E-Book landet sofort bei dir. Kein Kleingedrucktes, keine Kosten.",
+        hintLabel: "Gut zu wissen", hint: "Du bekommst nur, was dich wirklich weiterbringt. Abmelden geht mit einem Klick, jederzeit." },
+      { role: "cta", eyebrow: "Mach den ersten Schritt", title: "Hol dir das kostenlose E-Book",
+        sub: "Link in Bio – oder direkt auf werdemeisterdeinergedanken.de. Speichere den Post, damit du ihn wiederfindest.", button: "Gratis sichern →" },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------

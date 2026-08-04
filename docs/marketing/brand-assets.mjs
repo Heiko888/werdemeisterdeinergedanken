@@ -7,7 +7,7 @@
  *
  *   node docs/marketing/brand-assets.mjs
  */
-import { writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:fs";
+import { writeFileSync, readFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:fs";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
@@ -16,6 +16,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
+const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook-mockup.webp")).toString("base64")}`;
 
 // ---------- gemeinsame Marken-Optik ----------------------------------------
 const BG = `
@@ -119,6 +120,33 @@ const factTile = (w, h, f) => shell(w, h, `
 </div>
 <div class="foot"><img src="${brainUrl}"><span class="t">Werde Meister deiner Gedanken</span></div>`);
 
+// Gratis-E-Book-Einzelpost – Buch-Mockup, Headline, Vorteile, CTA
+const ebookPost = (w, h) => shell(w, h, `
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 ${Math.round(w*0.09)}px;gap:${Math.round(w*(h>w?0.03:0.02))}px}
+.eyebrow{font-size:${Math.round(w*0.026)}px;letter-spacing:.22em}
+.bookwrap{position:relative;display:flex;justify-content:center;margin:${Math.round(w*0.005)}px 0}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.5)}px;height:${Math.round(w*0.5)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.28), transparent 68%);filter:blur(34px)}
+.book{position:relative;width:${Math.round(w*(h>w?0.42:h===w?0.28:0.34))}px;height:auto;filter:drop-shadow(0 22px 50px rgba(0,0,0,.55))}
+.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${Math.round(w*0.062)}px;line-height:1.12;letter-spacing:-.5px;max-width:94%}
+.h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.bul{display:flex;flex-direction:column;gap:${Math.round(w*0.016)}px;margin-top:${Math.round(w*0.01)}px}
+.bul .li{display:flex;align-items:center;justify-content:center;gap:12px;font-size:${Math.round(w*0.03)}px;color:rgba(244,242,236,.82)}
+.bul .ck{display:inline-flex;align-items:center;justify-content:center;width:${Math.round(w*0.036)}px;height:${Math.round(w*0.036)}px;border-radius:50%;background:rgba(163,214,79,.16);color:#a3d64f;font-size:${Math.round(w*0.022)}px;font-weight:800}
+.cta{margin-top:${Math.round(w*0.025)}px;padding:${Math.round(w*0.022)}px ${Math.round(w*0.05)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${Math.round(w*0.03)}px;letter-spacing:.02em}
+.url{margin-top:${Math.round(w*0.02)}px;font-size:${Math.round(w*0.024)}px}
+`, `<div class="post">
+  <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
+  <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
+  <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
+  <div class="bul">
+    <div class="li"><span class="ck">✓</span> Die 7 Stufen kompakt erklärt</div>
+    <div class="li"><span class="ck">✓</span> Erste Übungen für mehr Klarheit</div>
+    <div class="li"><span class="ck">✓</span> Sofort per E-Mail – 100 % kostenlos</div>
+  </div>
+  <div class="cta">Gratis sichern – Link in Bio</div>
+  <div class="url">www.werdemeisterdeinergedanken.de</div>
+</div>`);
+
 // ---------- Inhalte ---------------------------------------------------------
 const THUMBS = [
   { key: "01", eyebrow: "Mentale Selbstverteidigung",
@@ -173,6 +201,10 @@ for (const f of FACTS) {
   TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1080, html: () => factTile(1080, 1080, f) });
   TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1350, html: () => factTile(1080, 1350, f) });
 }
+// Gratis-E-Book – Einzelpost (1:1, 4:5, 9:16 Story)
+TARGETS.push({ file: `ebook/WMDG-Ebook-Post-1x1.png`,   w: 1080, h: 1080, html: () => ebookPost(1080, 1080) });
+TARGETS.push({ file: `ebook/WMDG-Ebook-Post-4x5.png`,   w: 1080, h: 1350, html: () => ebookPost(1080, 1350) });
+TARGETS.push({ file: `ebook/WMDG-Ebook-Story-9x16.png`, w: 1080, h: 1920, html: () => ebookPost(1080, 1920) });
 
 // ---------- Render ----------------------------------------------------------
 const require = createRequire(import.meta.url);
