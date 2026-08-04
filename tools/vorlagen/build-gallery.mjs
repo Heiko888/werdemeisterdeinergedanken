@@ -4,7 +4,13 @@
  * Die fertigen Vorlagen liegen in `docs/` – dieser Ordner wird aber NICHT mit
  * der Website veröffentlicht. Damit du die Vorlagen im Dashboard sehen und
  * herunterladen kannst, kopiert dieses Skript die fertigen Dateien nach
- * `public/vorlagen/` (das wird veröffentlicht) und erzeugt dabei:
+ * `content/vorlagen/` und erzeugt dabei:
+ *
+ * ACHTUNG: Zielordner ist `content/`, NICHT `public/`. Alles unter public/
+ * liefert Next.js direkt unter seinem Dateipfad aus – an jeder Prüfung
+ * vorbei. Die Workshop-Workbooks und Moderationspläne wären damit ohne
+ * Login abrufbar. Ausgeliefert wird ausschließlich über die Route
+ * /admin/vorlagen/datei/… hinter dem Admin-Check.
  *
  *   1. kleine webp-Vorschaubilder  → schnelles Laden im Dashboard
  *   2. optimierte Voll-Downloads   → webp für Bilder, Originale für Dokumente
@@ -31,7 +37,7 @@ import sharp from "sharp";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
-const OUT = join(ROOT, "public", "vorlagen");
+const OUT = join(ROOT, "content", "vorlagen");
 const THUMB_DIR = join(OUT, "thumbs");
 
 const THUMB_WIDTH = 640; // Vorschau
@@ -129,8 +135,8 @@ async function buildSocial() {
       titel: prettifyName(basename(file)),
       unterKategorie: kanal,
       kind: "image",
-      thumb: `/vorlagen/thumbs/social/${thumbName}`,
-      href: `/vorlagen/social/${fullName}`,
+      thumb: `/admin/vorlagen/datei/thumbs/social/${thumbName}`,
+      href: `/admin/vorlagen/datei/social/${fullName}`,
     });
   }
   return files.length;
@@ -170,8 +176,8 @@ async function buildReels() {
       titel: `${prettifyLabel(bereich)} · Cover ${nr}`,
       unterKategorie: prettifyLabel(bereich),
       kind: "image",
-      thumb: `/vorlagen/thumbs/reels/${fullName}`,
-      href: `/vorlagen/reels/${fullName}`,
+      thumb: `/admin/vorlagen/datei/thumbs/reels/${fullName}`,
+      href: `/admin/vorlagen/datei/reels/${fullName}`,
     });
   }
   return files.length;
@@ -226,7 +232,7 @@ async function buildCarousels() {
           .resize({ width: 1080, withoutEnlargement: true })
           .webp({ quality: 80 })
           .toFile(join(tmp, name));
-        slidePaths.push(`/vorlagen/carousels/${id}/${name}`);
+        slidePaths.push(`/admin/vorlagen/datei/carousels/${id}/${name}`);
       }
 
       const zipName = `${id}.zip`;
@@ -250,7 +256,7 @@ async function buildCarousels() {
         sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
         thumb: slidePaths[0],
         slidePaths,
-        href: `/vorlagen/carousels/${zipName}`,
+        href: `/admin/vorlagen/datei/carousels/${zipName}`,
       });
       count++;
     }
@@ -291,7 +297,7 @@ function buildWorkshop() {
       kind: "file",
       format: ext,
       sizeMB: Number((statSync(file).size / 1024 / 1024).toFixed(1)),
-      href: `/vorlagen/workshop/${name}`,
+      href: `/admin/vorlagen/datei/workshop/${name}`,
     });
   }
   return files.length;
@@ -305,7 +311,8 @@ function writeManifest() {
  * AUTO-GENERIERT von tools/vorlagen/build-gallery.mjs – NICHT von Hand ändern.
  * Neu erzeugen mit:  npm run vorlagen:galerie
  *
- * Liste aller Vorlagen-Dateien, die unter public/vorlagen/ veröffentlicht sind
+ * Liste aller Vorlagen-Dateien, die unter content/vorlagen/ liegen und über
+ * die Route /admin/vorlagen/datei/… (nur für Admins) ausgeliefert werden
  * und im Dashboard (/admin/vorlagen) als Galerie erscheinen.
  */
 
@@ -316,7 +323,7 @@ export type VorlagenAsset = {
   kind: "image" | "file" | "carousel";
   /** Nur bei kind === "image" | "carousel": kleines Vorschaubild (Cover). */
   thumb?: string;
-  /** Download-/Ansehen-Link (liegt unter public/). */
+  /** Download-/Ansehen-Link (Route /admin/vorlagen/datei/…, nur für Admins). */
   href: string;
   /** Nur bei kind === "file". */
   format?: string;
@@ -361,7 +368,7 @@ async function main() {
     (s, f) => s + statSync(f).size,
     0,
   );
-  console.log(`→ public/vorlagen/ ≈ ${(size / 1024 / 1024).toFixed(1)} MB`);
+  console.log(`→ content/vorlagen/ ≈ ${(size / 1024 / 1024).toFixed(1)} MB`);
 }
 
 main().catch((e) => {
