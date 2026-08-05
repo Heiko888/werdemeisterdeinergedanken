@@ -55,6 +55,7 @@ Die Datenbank umfasst **26 Kapitel**, thematisch in fünf Teile gegliedert.
 | # | Kapitel | Worum es geht |
 |:--:|---|---|
 | 11 | [Achtsamkeit, Meditation & mentales Training](./11-achtsamkeit-meditation-mentales-training.md) | Was Training am Gehirn nachweislich bewirkt |
+| 12 | [Schlaf, Träume & veränderte Bewusstseinszustände](./12-veraenderte-bewusstseinszustaende.md) | Schlaf, Flow, Hypnose, Psychedelika |
 | 14 | [Gewohnheiten & Verhaltensänderung](./14-gewohnheiten-und-verhaltensaenderung.md) | Habit Loop, Wenn-Dann-Pläne, Systeme statt Vorsätze |
 | 15 | [Stress, Angst & Trauma](./15-stress-angst-und-trauma.md) | HPA-Achse, chronischer Stress, Resilienz |
 | 16 | [Belohnung, Motivation & Sucht](./16-belohnung-motivation-und-sucht.md) | Dopamin richtig verstanden, digitale Reize |
@@ -100,7 +101,7 @@ Jedes Kapitel folgt derselben Struktur, damit du dich schnell zurechtfindest:
   eignen sich Teil IV (v. a. Kap. 14, 15, 16) und die mentale Selbstverteidigung
   in Kap. 13 & 19.
 - **Als Quellen-Backbone** für Blog, Carousels und Vertiefungen – ergänzend zu
-  [`../skripte/wissenschaft/studien-themen.md`](../skripte/wissenschaft/studien-themen.md).
+  [`../../docs/skripte/wissenschaft/studien-themen.md`](../../docs/skripte/wissenschaft/studien-themen.md).
 
 ---
 
