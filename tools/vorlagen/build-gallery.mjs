@@ -208,7 +208,11 @@ async function buildCarousels() {
     for (const carousel of readdirSync(serieDir, { withFileTypes: true })) {
       if (!carousel.isDirectory()) continue;
       const cDir = join(serieDir, carousel.name);
-      const slides = collect(cDir, [".png"]);
+      // Seit der Format-Erweiterung liegen die Slides unter <slug>/<format>/.
+      // Für die Galerie-Vorschau immer 4:5 nehmen (Fallback: alte flache Struktur).
+      const fmtDir = join(cDir, "feed-4x5");
+      const slidesRoot = existsSync(fmtDir) ? fmtDir : cDir;
+      const slides = collect(slidesRoot, [".png"]);
       if (slides.length === 0) continue;
 
       const id = `${serie.name}__${carousel.name}`;
