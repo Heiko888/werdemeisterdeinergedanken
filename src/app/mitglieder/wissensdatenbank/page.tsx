@@ -9,7 +9,7 @@ import { chapters, PARTS, type ChapterMeta } from "@/lib/wissensdatenbank";
 export const metadata: Metadata = {
   title: "Wissensdatenbank – Gehirn, Bewusstsein & Gedanken",
   description:
-    "Eine wissenschaftlich fundierte Wissensdatenbank zu Gehirn, Bewusstsein und Gedanken: 26 Kapitel von Neuroanatomie über Bewusstseinstheorien bis zu Gewohnheiten – ehrlich, mit Evidenz-Einordnung.",
+    "Eine wissenschaftlich fundierte Wissensdatenbank zu Gehirn, Bewusstsein und Gedanken: 27 Kapitel von Neuroanatomie über Bewusstseinstheorien bis zu Gewohnheiten – ehrlich, mit Evidenz-Einordnung.",
   // Geschützter Mitgliederbereich – nicht indexieren.
   robots: { index: false, follow: false },
 };
@@ -27,7 +27,7 @@ export default function WissenPage() {
             Gehirn, Bewusstsein & <em className="accent">Gedanken</em>
           </>
         }
-        intro="26 Kapitel, wissenschaftlich fundiert und ehrlich eingeordnet: von der Anatomie des Gehirns über die großen Theorien des Bewusstseins bis zu Gewohnheiten, Emotionen und mentaler Selbstverteidigung. Nur reale Studien – Umstrittenes ist als solches markiert."
+        intro="27 Kapitel, wissenschaftlich fundiert und ehrlich eingeordnet: von der Anatomie des Gehirns über die großen Theorien des Bewusstseins bis zu Gewohnheiten, Emotionen und mentaler Selbstverteidigung. Nur reale Studien – Umstrittenes ist als solches markiert."
       />
 
       {/* Evidenz-Legende */}

@@ -258,6 +258,7 @@ export const PARTS: { title: string; hint: string; slugs: string[] }[] = [
       "04-theorien-des-bewusstseins",
       "05-neuronale-korrelate-des-bewusstseins",
       "06-aufmerksamkeit-und-wahrnehmung",
+      "27-das-unbewusste",
     ],
   },
   {
