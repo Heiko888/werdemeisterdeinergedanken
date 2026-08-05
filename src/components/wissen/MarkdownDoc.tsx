@@ -7,14 +7,17 @@ import type { Block } from "@/lib/wissensdatenbank";
  * in typografisch sauberes JSX – im Stil der übrigen Fließtext-Seiten.
  */
 
+/** Basis-Route der Wissensdatenbank (liegt im geschützten Mitgliederbereich). */
+export const WISSEN_BASE = "/mitglieder/wissensdatenbank";
+
 /** Interne `.md`-Verweise in App-Routen übersetzen, externes/Anker unverändert. */
 function toHref(raw: string): string {
   const r = raw.trim();
   if (/^(https?:)?\/\//.test(r) || r.startsWith("mailto:") || r.startsWith("#"))
     return r;
   const h = r.replace(/^\.\//, "").replace(/\.md$/, "");
-  if (h.startsWith("../") || h === "README") return "/wissen";
-  return `/wissen/${h}`;
+  if (h.startsWith("../") || h === "README") return WISSEN_BASE;
+  return `${WISSEN_BASE}/${h}`;
 }
 
 function Anchor({ href, children }: { href: string; children: ReactNode }) {

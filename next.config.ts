@@ -44,6 +44,25 @@ const nextConfig: NextConfig = {
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
+  /**
+   * Die Wissensdatenbank liegt jetzt im geschützten Mitgliederbereich unter
+   * /mitglieder/wissensdatenbank. Alte öffentliche /wissen-Links dauerhaft
+   * dorthin umleiten (der Mitgliederbereich erzwingt anschließend den Login).
+   */
+  async redirects() {
+    return [
+      {
+        source: "/wissen",
+        destination: "/mitglieder/wissensdatenbank",
+        permanent: true,
+      },
+      {
+        source: "/wissen/:slug",
+        destination: "/mitglieder/wissensdatenbank/:slug",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
