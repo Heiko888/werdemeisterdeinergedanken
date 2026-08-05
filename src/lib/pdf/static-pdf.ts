@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 /**
@@ -17,11 +17,15 @@ import { join } from "node:path";
  */
 const cache = new Map<string, Uint8Array>();
 
+function pdfPath(name: string): string {
+  return join(process.cwd(), "content", "pdf", `${name}.pdf`);
+}
+
 export function getStaticPdf(name: string): Uint8Array | null {
   const cached = cache.get(name);
   if (cached) return cached;
   try {
-    const buf = readFileSync(join(process.cwd(), "content", "pdf", `${name}.pdf`));
+    const buf = readFileSync(pdfPath(name));
     const bytes = new Uint8Array(buf);
     cache.set(name, bytes);
     return bytes;
@@ -31,10 +35,12 @@ export function getStaticPdf(name: string): Uint8Array | null {
 }
 
 /**
- * Prüft, ob ein Mitglieder-PDF vorhanden ist, ohne es (dauerhaft) zu laden.
- * Für Seiten, die einen Download-Button nur dann zeigen sollen, wenn die
- * Datei wirklich existiert – sonst liefe der Download ins 404.
+ * Prüft, ob es das PDF gibt – ohne es zu laden.
+ *
+ * Nötig, weil Inhalte (z. B. neue Vertiefungen) im Code stehen können, bevor
+ * das gestaltete PDF erzeugt wurde. Seiten blenden den Download-Knopf sonst
+ * ein und der Klick landet auf einem 404.
  */
 export function hasStaticPdf(name: string): boolean {
-  return getStaticPdf(name) !== null;
+  return cache.has(name) || existsSync(pdfPath(name));
 }
