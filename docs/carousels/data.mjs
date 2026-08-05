@@ -14,8 +14,18 @@ const SKRIPTE = join(HERE, "..", "skripte", "carousels");
 export const HANDLE = "www.werdemeisterdeinergedanken.de";
 export const GRAD = "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)";
 
-/** Instagram-Carousel-Standard: 4:5 Hochformat. */
-export const FORMAT = { key: "feed-4x5", label: "4:5 · Carousel", w: 1080, h: 1350 };
+/**
+ * Ausgabeformate. Breite ist überall 1080px (Schriftgrößen bleiben gültig),
+ * nur Höhe + vertikale Paddings ändern sich – die `.mid`-Spalte ist zentriert,
+ * darum wirkt 9:16 luftiger und 1:1 kompakter.
+ */
+export const FORMATS = [
+  { key: "feed-4x5",  label: "4:5 · Carousel",      w: 1080, h: 1350, padTop: 88,  padX: 84, padBottom: 76 },
+  { key: "feed-1x1",  label: "1:1 · Feed",          w: 1080, h: 1080, padTop: 60,  padX: 84, padBottom: 56 },
+  { key: "reel-9x16", label: "9:16 · Reel / Story", w: 1080, h: 1920, padTop: 150, padX: 84, padBottom: 130 },
+];
+/** Standard-/Rückwärtskompat-Format (4:5). */
+export const FORMAT = FORMATS[0];
 
 export const SERIES = [
   { key: "selbstverteidigung", label: "Mentale Selbstverteidigung", file: "selbstverteidigung.md" },
