@@ -209,20 +209,22 @@ async function buildCarousels() {
       if (!carousel.isDirectory()) continue;
       const cDir = join(serieDir, carousel.name);
       // Seit der Format-Erweiterung liegen die Slides unter <slug>/<format>/.
-      // Für die Galerie-Vorschau immer 4:5 nehmen (Fallback: alte flache Struktur).
-      const fmtDir = join(cDir, "feed-4x5");
-      const slidesRoot = existsSync(fmtDir) ? fmtDir : cDir;
-      const slides = collect(slidesRoot, [".png"]);
+      // Vorschau immer 4:5; das Download-ZIP enthält alle vorhandenen Formate.
+      const FMT_ORDER = ["feed-4x5", "feed-1x1", "reel-9x16"];
+      const formats = FMT_ORDER.filter((f) => existsSync(join(cDir, f)));
+      const flat = formats.length === 0; // alte flache Struktur
+      const previewRoot = flat
+        ? cDir
+        : join(cDir, formats.includes("feed-4x5") ? "feed-4x5" : formats[0]);
+      const slides = collect(previewRoot, [".png"]);
       if (slides.length === 0) continue;
 
       const id = `${serie.name}__${carousel.name}`;
       const slideDir = join(dir, id);
       ensureDir(slideDir);
 
-      // Jede Slide einzeln: kleine Preview-webp (lose, für die Galerie) +
-      // Voll-webp im Temp-Ordner (kommt gleich ins ZIP zum Download).
+      // Kleine Preview-webp (4:5) für die Galerie-Karten.
       const tmp = join(tmpRoot, id);
-      ensureDir(tmp);
       const slidePaths = [];
       let n = 0;
       for (const slide of slides) {
@@ -232,21 +234,31 @@ async function buildCarousels() {
           .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
           .webp({ quality: 76 })
           .toFile(join(slideDir, name));
-        await sharp(slide)
-          .resize({ width: 1080, withoutEnlargement: true })
-          .webp({ quality: 80 })
-          .toFile(join(tmp, name));
         slidePaths.push(`/admin/vorlagen/datei/carousels/${id}/${name}`);
+      }
+
+      // Download-Inhalt: alle vorhandenen Formate als webp@1080, je in eigenem Ordner.
+      const zipFormats = flat
+        ? [{ key: "feed-4x5", root: cDir }]
+        : formats.map((f) => ({ key: f, root: join(cDir, f) }));
+      for (const zf of zipFormats) {
+        const fslides = collect(zf.root, [".png"]);
+        const fdir = join(tmp, zf.key);
+        ensureDir(fdir);
+        let m = 0;
+        for (const slide of fslides) {
+          m++;
+          await sharp(slide)
+            .resize({ width: 1080, withoutEnlargement: true })
+            .webp({ quality: 80 })
+            .toFile(join(fdir, `slide-${String(m).padStart(2, "0")}.webp`));
+        }
       }
 
       const zipName = `${id}.zip`;
       const zipPath = join(dir, zipName);
       if (existsSync(zipPath)) rmSync(zipPath);
-      const res = spawnSync(
-        "zip",
-        ["-j", "-q", zipPath, ...readdirSync(tmp).map((f) => join(tmp, f))],
-        { stdio: "inherit" },
-      );
+      const res = spawnSync("zip", ["-r", "-q", zipPath, "."], { cwd: tmp, stdio: "inherit" });
       if (res.status !== 0) {
         throw new Error(`zip fehlgeschlagen für ${id}`);
       }
