@@ -26,6 +26,8 @@ export async function generateMetadata({
     title: `${doc.title} – Wissensdatenbank`,
     description,
     openGraph: { title: doc.title, description, type: "article" },
+    // Geschützter Mitgliederbereich – nicht indexieren.
+    robots: { index: false, follow: false },
   };
 }
 
@@ -57,7 +59,7 @@ export default async function WissenDocPage({
       <article className="py-14 sm:py-18">
         <Container size="narrow">
           <Link
-            href="/wissen"
+            href="/mitglieder/wissensdatenbank"
             className="-mx-2 mb-8 inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm text-ink-mid transition-colors hover:text-ink"
           >
             <ArrowRight className="rotate-180" />
@@ -74,7 +76,7 @@ export default async function WissenDocPage({
             >
               {prev ? (
                 <Link
-                  href={`/wissen/${prev.slug}`}
+                  href={`/mitglieder/wissensdatenbank/${prev.slug}`}
                   className="group flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 transition-colors hover:border-accent/30"
                 >
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-ink-mid">
@@ -90,7 +92,7 @@ export default async function WissenDocPage({
               )}
               {next && (
                 <Link
-                  href={`/wissen/${next.slug}`}
+                  href={`/mitglieder/wissensdatenbank/${next.slug}`}
                   className="group flex flex-col items-end gap-1 rounded-2xl border border-ink/10 bg-white p-5 text-right transition-colors hover:border-accent/30"
                 >
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-ink-mid">
@@ -114,17 +116,16 @@ export default async function WissenDocPage({
               Vom Wissen zur Praxis
             </h2>
             <p className="text-[1.02rem] leading-relaxed text-ink-mid">
-              Theorie ist der Anfang. Im Mitgliederbereich wird daraus ein Weg –
-              die 7 Stufen, Praxisübungen und Vertiefungen, die dir helfen, das
-              Gelesene wirklich zu leben.
+              Theorie ist der Anfang. Bring das Gelesene auf deinen Weg – über die
+              7 Stufen und die passenden Praxisübungen.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Button href="/mitgliedschaft" variant="accent" size="lg">
-                Mitglied werden
+              <Button href="/mitglieder/praxis" variant="accent" size="lg">
+                Zur Praxis
                 <ArrowRight />
               </Button>
-              <Button href="/bewusstseinstest" variant="secondary" size="lg">
-                Bewusstseinstest starten
+              <Button href="/mitglieder" variant="secondary" size="lg">
+                Zu meinem Bereich
               </Button>
             </div>
           </aside>

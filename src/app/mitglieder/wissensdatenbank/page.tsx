@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Wissensdatenbank – Gehirn, Bewusstsein & Gedanken",
   description:
     "Eine wissenschaftlich fundierte Wissensdatenbank zu Gehirn, Bewusstsein und Gedanken: 26 Kapitel von Neuroanatomie über Bewusstseinstheorien bis zu Gewohnheiten – ehrlich, mit Evidenz-Einordnung.",
+  // Geschützter Mitgliederbereich – nicht indexieren.
+  robots: { index: false, follow: false },
 };
 
 export default function WissenPage() {
@@ -37,7 +39,7 @@ export default function WissenPage() {
             <span>⚠️ umstritten / vorläufig</span>
             <span>🔬 aktuelle Forschung</span>
             <Link
-              href="/wissen/glossar"
+              href="/mitglieder/wissensdatenbank/glossar"
               className="ml-auto inline-flex items-center gap-1.5 font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
             >
               Zum Glossar
@@ -70,7 +72,7 @@ export default function WissenPage() {
                     return (
                       <Reveal key={slug}>
                         <Link
-                          href={`/wissen/${slug}`}
+                          href={`/mitglieder/wissensdatenbank/${slug}`}
                           className="group flex h-full flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
                         >
                           <span className="font-display text-sm italic text-accent">

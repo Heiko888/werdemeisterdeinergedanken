@@ -381,6 +381,27 @@ export default async function MembersPage() {
             </p>
           </div>
 
+          {/* Einstieg in die große Wissensdatenbank (26 Kapitel) */}
+          <Link
+            href="/mitglieder/wissensdatenbank"
+            className="group mt-8 flex flex-col items-start gap-3 rounded-2xl border border-accent/30 bg-white p-8 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/50 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
+          >
+            <div className="flex flex-col gap-2">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                Wissensdatenbank · 26 Kapitel
+              </span>
+              <h3 className="font-display text-xl font-medium text-ink transition-colors group-hover:text-accent sm:text-2xl">
+                Gehirn, Bewusstsein & Gedanken
+              </h3>
+              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+                Von Neuroanatomie über die großen Theorien des Bewusstseins bis zu
+                Gewohnheiten, Emotionen und mentaler Selbstverteidigung – ehrlich
+                eingeordnet, mit Evidenz und Glossar.
+              </p>
+            </div>
+            <ArrowRight className="shrink-0 text-accent transition-transform group-hover:translate-x-1" />
+          </Link>
+
           {deepDivesByCategory().map((group) => (
             <div key={group.category} className="mt-10">
               <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
