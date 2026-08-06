@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Check, Download, Play } from "@/components/ui/Icon";
+import { ArrowRight, Brain, Check, Download, Play } from "@/components/ui/Icon";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
 import { isAdminEmail } from "@/lib/admin";
@@ -165,6 +165,14 @@ export default async function MembersPage() {
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             )}
+            <Link
+              href="/mitglieder/wissensdatenbank"
+              className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+            >
+              <Brain />
+              Wissensdatenbank
+              <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+            </Link>
             <a
               href="/mitglieder/arbeitsheft"
               className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
