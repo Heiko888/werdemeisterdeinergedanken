@@ -47,6 +47,14 @@ export const MARKETING_TITEL = {
 
 const UNTER_KATEGORIE = "Marketing / Funnel";
 
+/** Format-Metadaten (Label + Pixelmaße) für die Card-Beschriftung. */
+export const FORMAT_META = {
+  "feed-4x5": { label: "4:5", w: 1080, h: 1350 },
+  "feed-1x1": { label: "1:1", w: 1080, h: 1080 },
+  "reel-9x16": { label: "9:16", w: 1080, h: 1920 },
+};
+const FORMAT_ORDER = ["feed-4x5", "feed-1x1", "reel-9x16"];
+
 /** Captions je Serien-Key aus docs/skripte/carousels/marketing.md lesen. */
 export function readMarketingCaptions() {
   const md = join(ROOT, "docs", "skripte", "carousels", "marketing.md");
@@ -165,6 +173,31 @@ export function attachCaptions(assets) {
   return assets;
 }
 
+/**
+ * Verfügbare Formate je Carousel aus dem committeten Download-ZIP ableiten
+ * (Ordnernamen feed-4x5/feed-1x1/reel-9x16) und als `formate` an die Einträge
+ * hängen. So stimmt die Card-Beschriftung auch ohne frischen Voll-Build.
+ */
+export function backfillFormate(OUT, assets) {
+  for (const a of assets) {
+    if (a.kind !== "carousel") continue;
+    const m = String(a.href || "").match(/\/carousels\/([^/]+)\.zip$/);
+    if (!m) continue;
+    const zip = join(OUT, "carousels", `${m[1]}.zip`);
+    if (!existsSync(zip)) continue;
+    const res = spawnSync("unzip", ["-Z1", zip], { encoding: "utf8" });
+    if (res.status !== 0 || !res.stdout) continue;
+    const dirs = new Set(
+      res.stdout.split("\n").map((l) => l.split("/")[0].trim()),
+    );
+    const formate = FORMAT_ORDER.filter((k) => dirs.has(k)).map(
+      (k) => FORMAT_META[k],
+    );
+    if (formate.length) a.formate = formate;
+  }
+  return assets;
+}
+
 /** Alle PNG-Slides eines Ordners in Reihenfolge (slide-01, slide-02, …). */
 function collectPng(dir) {
   if (!existsSync(dir)) return [];
@@ -254,6 +287,7 @@ export async function buildMarketingCarousels({ OUT, assets }) {
       thumb: slidePaths[0],
       slidePaths,
       href: `/admin/vorlagen/datei/carousels/${zipName}`,
+      formate: formats.map((f) => FORMAT_META[f]).filter(Boolean),
       ...(captions[key] ? { caption: captions[key] } : {}),
     });
     count++;
@@ -293,6 +327,8 @@ export type VorlagenAsset = {
   caption?: string;
   /** Mehrere einzeln kopierbare Captions (z. B. Reel-Varianten A/B/C je Stufe). */
   captions?: { label: string; titel?: string; text: string }[];
+  /** Nur bei kind === "carousel": enthaltene Formate (Label + Pixelmaße). */
+  formate?: { label: string; w: number; h: number }[];
   sizeMB?: number;
 };
 
@@ -320,6 +356,7 @@ async function applyStandalone() {
   const before = assets.length;
   const n = await buildMarketingCarousels({ OUT, assets });
   attachCaptions(assets);
+  backfillFormate(OUT, assets);
   const mitCaption = assets.filter((a) => a.caption).length;
   writeFileSync(manifestPath, renderManifest(assets));
   console.log(

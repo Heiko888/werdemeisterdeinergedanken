@@ -175,6 +175,22 @@ function CarouselKarte({ a }: { a: VorlagenAsset }) {
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
         </div>
+        {a.formate && a.formate.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1">
+            <span className="text-[0.65rem] font-semibold uppercase tracking-wide text-ink-muted">
+              Formate
+            </span>
+            {a.formate.map((f) => (
+              <span
+                key={f.label}
+                className="rounded-md bg-ink/5 px-1.5 py-0.5 text-[0.65rem] font-medium tabular-nums text-ink-mid"
+                title={`${f.label} · ${f.w}×${f.h} px`}
+              >
+                {f.label} · {f.w}×{f.h}
+              </span>
+            ))}
+          </div>
+        )}
         <span className="text-[0.7rem] text-ink-muted">
           ← alle {a.slides} Slides durchwischen →
         </span>

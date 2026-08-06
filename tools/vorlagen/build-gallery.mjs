@@ -37,6 +37,7 @@ import sharp from "sharp";
 import {
   attachCaptions,
   buildMarketingCarousels,
+  FORMAT_META,
   renderManifest,
 } from "./marketing-carousels.mjs";
 
@@ -282,6 +283,7 @@ async function buildCarousels() {
         thumb: slidePaths[0],
         slidePaths,
         href: `/admin/vorlagen/datei/carousels/${zipName}`,
+        formate: zipFormats.map((zf) => FORMAT_META[zf.key]).filter(Boolean),
       });
       count++;
     }
