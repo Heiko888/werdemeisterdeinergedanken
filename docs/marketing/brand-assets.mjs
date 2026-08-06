@@ -248,15 +248,17 @@ TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080,
 // YouTube-Thumbnails
 for (const d of THUMBS)
   TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, html: () => thumbnail(1280, 720, d) });
-// Zitat-Kacheln (1:1 und 4:5)
+// Zitat-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const q of QUOTES) {
-  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t) });
-  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1350, html: () => quoteTile(1080, 1350, q.t) });
+  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t) });
+  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, html: () => quoteTile(1080, 1350, q.t) });
+  TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, html: () => quoteTile(1080, 1920, q.t) });
 }
-// Studien-Fakten-Kacheln (1:1 und 4:5)
+// Studien-Fakten-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const f of FACTS) {
-  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1080, html: () => factTile(1080, 1080, f) });
-  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1350, html: () => factTile(1080, 1350, f) });
+  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1080, html: () => factTile(1080, 1080, f) });
+  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1350, html: () => factTile(1080, 1350, f) });
+  TARGETS.push({ file: `zitate/studien-9x16/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1920, html: () => factTile(1080, 1920, f) });
 }
 // Gratis-E-Book – Einzelpost in 5 Formaten (wie die Cover)
 const EBOOK_FORMATS = [
