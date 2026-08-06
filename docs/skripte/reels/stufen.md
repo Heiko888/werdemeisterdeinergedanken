@@ -53,6 +53,7 @@ Link in Bio", „Mach den kostenlosen Bewusstseinstest – Link in Bio".
 **SKRIPT:** Denk kurz darüber nach: Du kannst deine Gedanken bemerken. Also kannst du nicht nur deine Gedanken sein – da ist auch der, der sie wahrnimmt. Das Bewusstsein, das jetzt diese Worte liest, war immer schon da: hinter jedem Gedanken, in jedem Alter deines Lebens. Du musst also nichts Neues werden. Es geht nur darum, dich immer öfter daran zu erinnern, wer da eigentlich wahrnimmt. In diesem kleinen Perspektivwechsel liegt der Beginn deiner Freiheit – nicht in mehr Denken, sondern in mehr Bemerken.
 **ON-SCREEN:** Du bemerkst deine Gedanken · Also bist du mehr als sie · Der Wahrnehmer war immer da · Erinnern statt werden
 **CTA:** Mach den kostenlosen Bewusstseinstest und finde deine Stufe – Link in Bio.
+**Caption:** Wenn du deine Gedanken hören kannst – wer hört dann zu? Du kannst deine Gedanken bemerken, also kannst du nicht nur deine Gedanken sein. Der, der wahrnimmt, war immer schon da – hinter jedem Gedanken, in jedem Alter deines Lebens. Du musst nichts Neues werden; erinnere dich nur öfter daran, wer da eigentlich zusieht. Genau in diesem kleinen Perspektivwechsel beginnt deine Freiheit – nicht in mehr Denken, sondern in mehr Bemerken. Mach den kostenlosen Bewusstseinstest und finde deine Stufe – Link in Bio. #werdemeisterdeinergedanken #dubistnichtdeinegedanken #erwachen #bewusstsein #achtsamkeit #metakognition #selbstwahrnehmung #bewusstseinstest
 
 ### Variante C — „Die 3-Sekunden-Pause"
 **HOOK:** „Drei Atemzüge, die deinen Autopiloten unterbrechen."
