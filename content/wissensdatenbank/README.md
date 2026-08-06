@@ -25,7 +25,7 @@ verständlich aufbereitet, aber ohne die Fakten zu verbiegen.
 
 ## Die Kapitel
 
-Die Datenbank umfasst **26 Kapitel**, thematisch in fünf Teile gegliedert.
+Die Datenbank umfasst **27 Kapitel**, thematisch in fünf Teile gegliedert.
 
 ### Teil I · Das biologische Fundament
 | # | Kapitel | Worum es geht |
@@ -40,6 +40,7 @@ Die Datenbank umfasst **26 Kapitel**, thematisch in fünf Teile gegliedert.
 | 04 | [Theorien des Bewusstseins](./04-theorien-des-bewusstseins.md) | Das „harte Problem", GWT, IIT, Predictive Processing |
 | 05 | [Neuronale Korrelate des Bewusstseins](./05-neuronale-korrelate-des-bewusstseins.md) | Koma, Split-Brain, Anästhesie – wo Bewusstsein sitzt |
 | 06 | [Aufmerksamkeit & Wahrnehmung](./06-aufmerksamkeit-und-wahrnehmung.md) | Wahrnehmung als aktiver Konstruktionsprozess |
+| 27 | [Das Unbewusste](./27-das-unbewusste.md) | Adaptives Unbewusstes, Priming, Mythos „Unterbewusstsein" |
 
 ### Teil III · Denken, Erinnern, Fühlen, Entscheiden
 | # | Kapitel | Worum es geht |

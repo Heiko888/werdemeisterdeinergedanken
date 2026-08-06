@@ -381,14 +381,14 @@ export default async function MembersPage() {
             </p>
           </div>
 
-          {/* Einstieg in die große Wissensdatenbank (26 Kapitel) */}
+          {/* Einstieg in die große Wissensdatenbank (27 Kapitel) */}
           <Link
             href="/mitglieder/wissensdatenbank"
             className="group mt-8 flex flex-col items-start gap-3 rounded-2xl border border-accent/30 bg-white p-8 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/50 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
           >
             <div className="flex flex-col gap-2">
               <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                Wissensdatenbank · 26 Kapitel
+                Wissensdatenbank · 27 Kapitel
               </span>
               <h3 className="font-display text-xl font-medium text-ink transition-colors group-hover:text-accent sm:text-2xl">
                 Gehirn, Bewusstsein & Gedanken
