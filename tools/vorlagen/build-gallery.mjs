@@ -305,6 +305,7 @@ function buildWorkshop() {
     "blog": "Blog & Deep-Dives",
     "journal": "Journal & Impulse",
     "reel-skripte": "Reel-Drehbücher",
+    "video-drehbuecher": "Video-Drehbücher",
   };
 
   for (const file of files) {

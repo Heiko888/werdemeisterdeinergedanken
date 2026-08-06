@@ -31,7 +31,7 @@ const BUILDS = [
     variant: "komplett",
     title: "Langvideo-Drehbuch · Wort für Wort",
     subtitle: "Zum Ablesen (Teleprompter) · Mitgliederbereich",
-    file: "Langvideo-Drehbuch-WortFuerWort.pdf",
+    file: "WMDG-Video-Drehbuch-Ablesen.pdf",
     sections: [
       { label: "Die 7 Stufen", files: files("stufen-komplett") },
       { label: "Praxis", files: files("praxis") },
@@ -43,7 +43,7 @@ const BUILDS = [
     variant: "stichpunkt",
     title: "Langvideo-Drehbuch · Stichpunkt",
     subtitle: "Zum freien Sprechen · Mitgliederbereich",
-    file: "Langvideo-Drehbuch-Stichpunkt.pdf",
+    file: "WMDG-Video-Drehbuch-Stichpunkt.pdf",
     note: "Praxis-Meditationen gibt es nur als Wort-für-Wort-Fassung (siehe zweites PDF) – sie werden ohnehin ruhig vorgelesen.",
     sections: [
       { label: "Die 7 Stufen", files: files("stufen") },

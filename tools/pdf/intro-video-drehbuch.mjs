@@ -14,7 +14,7 @@ const OUTDIR = process.argv[2] || ROOT;
 const BUILD = {
   title: "Landing-Video-Drehbuch",
   subtitle: "Was, wenn es nicht an dir liegt? · Intro-Video + Teaser-Reel",
-  file: "Intro-Video-Drehbuch.pdf",
+  file: "WMDG-Video-Drehbuch-Intro.pdf",
   sources: [
     join(ROOT, "docs", "skripte", "landing", "intro-nicht-deine-schuld.md"),
     join(ROOT, "docs", "skripte", "landing", "reel-nicht-deine-schuld.md"),
