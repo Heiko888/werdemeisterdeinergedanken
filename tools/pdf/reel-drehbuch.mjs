@@ -4,7 +4,7 @@
  *
  *   node tools/pdf/reel-drehbuch.mjs [out.pdf]
  */
-import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync, mkdirSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
@@ -12,13 +12,16 @@ import { dirname, join } from "node:path";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const REELS = join(ROOT, "docs", "skripte", "reels");
-const OUT = process.argv[2] || join(ROOT, "Reel-Drehbuch.pdf");
+// Ausgabeordner: unter docs/workshop/, damit die Vorlagen-Galerie die PDFs
+// automatisch als Downloads aufnimmt (Workshop-Ingest).
+const OUT_DIR = process.argv[2] || join(ROOT, "docs", "workshop", "reel-skripte");
 
 const SERIES = [
-  { file: "mentale-selbstverteidigung.md", label: "Mentale Selbstverteidigung" },
-  { file: "stufen.md", label: "Die 7 Stufen" },
-  { file: "praxis.md", label: "Praxis" },
-  { file: "vertiefungen.md", label: "Vertiefungen" },
+  { file: "stufen.md", label: "Die 7 Stufen", token: "7-Stufen" },
+  { file: "praxis.md", label: "Praxis", token: "Praxis" },
+  { file: "vertiefungen.md", label: "Vertiefungen", token: "Vertiefungen" },
+  { file: "mentale-selbstverteidigung.md", label: "Mentale Selbstverteidigung", token: "Mentale-Selbstverteidigung" },
+  { file: "wissenschaft.md", label: "Die Wissenschaft dahinter", token: "Wissenschaft" },
 ];
 
 const esc = (s) =>
@@ -95,16 +98,10 @@ function findChrome() {
 // --- HTML zusammenbauen -----------------------------------------------------
 const fontsCss = readFileSync(join(ROOT, "docs", "reels", "covers", "_fonts.css"), "utf8");
 const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "docs", "reels", "covers", "logo.png")).toString("base64")}`;
+const DATE = new Date().toISOString().slice(0, 10);
+const reelCount = (md) => (md.match(/^###\s+/gm) || []).length || (md.match(/^##\s+\d/gm) || []).length;
 
-let totalReels = 0;
-const sections = SERIES.map((s) => {
-  const md = readFileSync(join(REELS, s.file), "utf8");
-  totalReels += (md.match(/^###\s+/gm) || []).length || (md.match(/^##\s+\d/gm) || []).length;
-  return `<section class="serie"><h1>${s.label}</h1>\n${mdToHtml(md)}</section>`;
-}).join("\n");
-
-const html = `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Reel-Drehbuch</title>
-<style>
+const STYLE = `
 ${fontsCss}
 :root{ --ink:#1a2230; --mid:#4b5769; --muted:#8b96a6; --leaf:#6aab24; --teal:#199aa8; }
 @page{ size:A4; margin:20mm 18mm; }
@@ -131,25 +128,51 @@ ul{ margin:1mm 0 3mm 5mm; } li{ margin:.5mm 0; }
 table{ width:100%; border-collapse:collapse; font-size:9pt; margin:2mm 0 4mm; }
 th,td{ border:1px solid #e0e7f0; padding:1.6mm 2mm; text-align:left; vertical-align:top; }
 th{ background:#eef4f5; font-weight:700; }
-strong{ font-weight:700; }
-</style></head><body>
+strong{ font-weight:700; }`;
+
+const pageHtml = (title, subtitle, count, body) =>
+  `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>${title}</title>
+<style>${STYLE}</style></head><body>
 <div class="cover">
   <img src="${logoUri}" alt="Logo">
   <div class="brow">Werde Meister deiner Gedanken</div>
   <h1>Reel-Drehbuch</h1>
-  <p>Alle Serien · Mentale Selbstverteidigung · 7 Stufen · Praxis · Vertiefungen</p>
-  <p>${totalReels} Reels · Stand ${new Date().toISOString().slice(0, 10)}</p>
+  <p>${subtitle}</p>
+  <p>${count} Reels · Stand ${DATE}</p>
 </div>
-${sections}
+${body}
 </body></html>`;
 
-const tmp = join(HERE, ".reel-drehbuch.html");
-writeFileSync(tmp, html);
 const CHROME = findChrome();
-const r = spawnSync(CHROME, [
-  "--headless=new", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
-  `--print-to-pdf=${OUT}`, tmp,
-], { stdio: "ignore" });
-if (!process.env.KEEP_HTML) rmSync(tmp, { force: true });
-if (r.status !== 0 || !existsSync(OUT)) throw new Error("PDF-Render fehlgeschlagen");
-console.log(`✓ ${OUT} (${totalReels} Reels)`);
+function renderPdf(html, outPath) {
+  const tmp = join(HERE, ".reel-drehbuch.html");
+  writeFileSync(tmp, html);
+  const r = spawnSync(CHROME, [
+    "--headless=new", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
+    `--print-to-pdf=${outPath}`, tmp,
+  ], { stdio: "ignore" });
+  if (!process.env.KEEP_HTML) rmSync(tmp, { force: true });
+  if (r.status !== 0 || !existsSync(outPath)) throw new Error(`PDF-Render fehlgeschlagen: ${outPath}`);
+}
+
+mkdirSync(OUT_DIR, { recursive: true });
+let grand = 0;
+const allSections = [];
+for (const s of SERIES) {
+  const md = readFileSync(join(REELS, s.file), "utf8");
+  const c = reelCount(md);
+  grand += c;
+  const section = `<section class="serie"><h1>${s.label}</h1>\n${mdToHtml(md)}</section>`;
+  allSections.push(section);
+  const out = join(OUT_DIR, `WMDG-Reel-Drehbuch-${s.token}.pdf`);
+  renderPdf(pageHtml(`Reel-Drehbuch · ${s.label}`, s.label, c, section), out);
+  console.log(`✓ ${out} (${c} Reels)`);
+}
+const outAll = join(OUT_DIR, "WMDG-Reel-Drehbuch-Alle-Serien.pdf");
+renderPdf(
+  pageHtml("Reel-Drehbuch · Alle Serien",
+    "Alle Serien · 7 Stufen · Praxis · Vertiefungen · Mentale Selbstverteidigung · Wissenschaft",
+    grand, allSections.join("\n")),
+  outAll,
+);
+console.log(`✓ ${outAll} (${grand} Reels gesamt)`);

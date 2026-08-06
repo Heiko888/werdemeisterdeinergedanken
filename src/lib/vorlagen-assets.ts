@@ -2308,6 +2308,60 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "workshop",
+    "titel": "Reel Drehbuch 7 Stufen",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-7-Stufen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Alle Serien",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.5,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Alle-Serien.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Mentale Selbstverteidigung",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Mentale-Selbstverteidigung.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Praxis",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Praxis.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Vertiefungen",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Vertiefungen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Wissenschaft",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Wissenschaft.pdf"
+  },
+  {
+    "kategorie": "workshop",
     "titel": "Moderationsplan Vertiefungen Kopf verstehen",
     "unterKategorie": "Deinen Kopf verstehen",
     "kind": "file",

@@ -29,8 +29,10 @@ const securityHeaders = [
       "default-src 'self'",
       "img-src 'self' data: blob: https:",
       "style-src 'self' 'unsafe-inline'",
-      "script-src 'self' 'unsafe-inline'",
+      // googletagmanager.com: Google-Analytics-Script (lädt erst nach Einwilligung).
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
       "font-src 'self' data:",
+      // https: deckt die GA-Beacons (google-analytics.com) mit ab.
       "connect-src 'self' https:",
       "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
       "frame-ancestors 'self'",

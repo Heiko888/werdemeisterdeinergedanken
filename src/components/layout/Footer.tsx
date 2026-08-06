@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/visuals/Logo";
 import { socialIcons } from "@/components/ui/Icon";
+import { CookieSettingsButton } from "@/components/analytics/CookieSettingsButton";
+import { GA_ID } from "@/lib/analytics";
 import { mainNav, legalNav, site } from "@/lib/site";
 
 export function Footer() {
@@ -52,6 +54,11 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            {GA_ID && (
+              <li>
+                <CookieSettingsButton />
+              </li>
+            )}
           </ul>
         </div>
 

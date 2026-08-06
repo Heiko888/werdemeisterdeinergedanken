@@ -304,6 +304,7 @@ function buildWorkshop() {
     "bewusstseinstest": "Bewusstseinstest & Profil",
     "blog": "Blog & Deep-Dives",
     "journal": "Journal & Impulse",
+    "reel-skripte": "Reel-Drehbücher",
   };
 
   for (const file of files) {
