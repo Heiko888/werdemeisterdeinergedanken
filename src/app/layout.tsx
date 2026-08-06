@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BackToTop } from "@/components/ui/BackToTop";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { site } from "@/lib/site";
 
 const inter = Inter({
@@ -87,6 +88,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <BackToTop />
+        <GoogleAnalytics />
       </body>
     </html>
   );

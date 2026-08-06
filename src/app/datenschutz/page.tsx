@@ -80,20 +80,67 @@ export default function PrivacyPage() {
                 danach automatische Löschung.
               </p>
 
-              <h2>5. Cookies</h2>
+              <h2>5. Cookies &amp; Einwilligung</h2>
               <p>
-                Wir setzen ausschließlich technisch notwendige Cookies ein. Das
-                betrifft im Wesentlichen das Login-Cookie unseres
-                Authentifizierungs-Dienstes Supabase, das dich nach der Anmeldung
-                im Mitgliederbereich eingeloggt hält (gültig bis zum Logout bzw.
-                bis zum Ablauf der Sitzung). Es kommen keine Statistik- oder
-                Marketing-Cookies und keine Tracking-Dienste zum Einsatz; ein
-                Cookie-Einwilligungsbanner ist daher nicht erforderlich.
-                Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO in Verbindung mit
-                § 25 Abs. 2 Nr. 2 TTDSG (unbedingt erforderliche Cookies).
+                Technisch notwendige Cookies setzen wir ohne gesonderte
+                Einwilligung ein. Das betrifft im Wesentlichen das Login-Cookie
+                unseres Authentifizierungs-Dienstes Supabase, das dich nach der
+                Anmeldung im Mitgliederbereich eingeloggt hält (gültig bis zum
+                Logout bzw. bis zum Ablauf der Sitzung). Rechtsgrundlage ist
+                Art. 6 Abs. 1 lit. f DSGVO in Verbindung mit § 25 Abs. 2 Nr. 2
+                TTDSG (unbedingt erforderliche Cookies).
+              </p>
+              <p>
+                Darüber hinaus setzen wir zur Reichweitenmessung Google Analytics
+                ein (siehe Punkt 6) – jedoch ausschließlich mit deiner
+                ausdrücklichen Einwilligung. Beim ersten Besuch fragt dich ein
+                Cookie-Banner um Zustimmung. Ohne deine Einwilligung werden
+                <strong> keine</strong> Analyse-Cookies gesetzt und das
+                Google-Analytics-Script wird gar nicht erst geladen. Deine
+                Auswahl kannst du jederzeit über den Link &bdquo;Cookie-Einstellungen&ldquo;
+                im Seitenfuß ändern oder widerrufen; die Rechtmäßigkeit der bis
+                zum Widerruf erfolgten Verarbeitung bleibt unberührt.
+                Rechtsgrundlage für die Analyse-Cookies ist Art. 6 Abs. 1 lit. a
+                DSGVO (Einwilligung) in Verbindung mit § 25 Abs. 1 TTDSG.
               </p>
 
-              <h2>6. Kontaktaufnahme &amp; Formulare</h2>
+              <h2>6. Google Analytics</h2>
+              <p>
+                Zur statistischen Auswertung der Nutzung unserer Website
+                verwenden wir Google Analytics 4, einen Dienst der Google Ireland
+                Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google
+                verarbeitet die Daten in unserem Auftrag; dabei kann es zu einer
+                Übermittlung in die USA an die Google LLC kommen, für die Google
+                Standardvertragsklauseln und zusätzliche Schutzmaßnahmen
+                vorsieht.
+              </p>
+              <p>
+                Erhoben werden pseudonymisierte Nutzungsdaten wie aufgerufene
+                Seiten, ungefährer Standort (auf Basis der gekürzten IP-Adresse),
+                Verweildauer, verwendetes Gerät und Browser sowie die Referrer-
+                Quelle. Die IP-Anonymisierung ist aktiviert, sodass deine
+                IP-Adresse nicht vollständig gespeichert wird. Wir nutzen diese
+                Daten ausschließlich, um die Website zu verbessern; eine
+                Zusammenführung mit deinen Account-Daten findet nicht statt.
+              </p>
+              <p>
+                Das Laden von Google Analytics und das Setzen der zugehörigen
+                Cookies erfolgt erst nach deiner aktiven Einwilligung über den
+                Cookie-Banner. Du kannst diese Einwilligung jederzeit über den
+                Link &bdquo;Cookie-Einstellungen&ldquo; im Seitenfuß widerrufen.
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+                <br />
+                Datenschutz Google:{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  policies.google.com/privacy
+                </a>
+              </p>
+
+              <h2>7. Kontaktaufnahme &amp; Formulare</h2>
               <p>
                 Wenn du uns über das Kontaktformular oder per E-Mail
                 kontaktierst, werden deine Angaben (Name, E-Mail-Adresse,
@@ -102,7 +149,7 @@ export default function PrivacyPage() {
                 geben wir nicht ohne deine Einwilligung weiter.
               </p>
 
-              <h2>7. Newsletter &amp; E-Book-Anmeldung</h2>
+              <h2>8. Newsletter &amp; E-Book-Anmeldung</h2>
               <p>
                 Für den Bezug unserer E-Mail-Impulse bzw. des kostenlosen E-Books
                 verwenden wir das Double-Opt-in-Verfahren: Du erhältst zunächst
@@ -115,7 +162,7 @@ export default function PrivacyPage() {
                 Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
               </p>
 
-              <h2>8. Resend – E-Mail-Versand</h2>
+              <h2>9. Resend – E-Mail-Versand</h2>
               <p>
                 Bestätigungs- und Benachrichtigungs-E-Mails (z. B.
                 Double-Opt-in, E-Book-Zustellung, Kontaktbestätigung) versenden
@@ -136,7 +183,7 @@ export default function PrivacyPage() {
                 </a>
               </p>
 
-              <h2>9. Supabase – Account &amp; Datenhaltung</h2>
+              <h2>10. Supabase – Account &amp; Datenhaltung</h2>
               <p>
                 Für Anmeldung/Login und die Speicherung deiner Inhalte im
                 Mitgliederbereich nutzen wir Supabase (Server-Standort innerhalb
@@ -169,7 +216,7 @@ export default function PrivacyPage() {
                 </a>
               </p>
 
-              <h2>10. Deine Rechte</h2>
+              <h2>11. Deine Rechte</h2>
               <p>Dir stehen jederzeit folgende Rechte zu:</p>
               <ul>
                 <li>Auskunft über deine gespeicherten Daten (Art. 15 DSGVO)</li>
@@ -189,7 +236,7 @@ export default function PrivacyPage() {
                 <a href={`mailto:${site.email}`}>{site.email}</a>.
               </p>
 
-              <h2>11. Beschwerderecht</h2>
+              <h2>12. Beschwerderecht</h2>
               <p>
                 Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu
                 beschweren, z. B.:
@@ -207,7 +254,7 @@ export default function PrivacyPage() {
                 </a>
               </p>
 
-              <h2>12. Aktualität</h2>
+              <h2>13. Aktualität</h2>
               <p>
                 Diese Datenschutzerklärung ist aktuell gültig. Durch die
                 Weiterentwicklung der Website oder geänderte gesetzliche Vorgaben
