@@ -188,7 +188,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
@@ -196,7 +196,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
@@ -204,7 +204,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
+    "titel": "Zitat 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
@@ -212,7 +212,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
+    "titel": "Zitat 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
@@ -220,7 +220,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Zitat 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
@@ -228,7 +228,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Zitat 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
@@ -236,7 +236,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Zitat 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
@@ -244,7 +244,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Zitat 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
@@ -252,7 +252,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Zitat 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
@@ -260,7 +260,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Zitat 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
@@ -268,7 +268,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Zitat 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
@@ -276,7 +276,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
@@ -284,7 +284,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
@@ -292,7 +292,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
@@ -300,7 +300,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
@@ -308,11 +308,299 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
     "href": "/admin/vorlagen/datei/social/social-036.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
+    "href": "/admin/vorlagen/datei/social/social-037.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
+    "href": "/admin/vorlagen/datei/social/social-038.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
+    "href": "/admin/vorlagen/datei/social/social-039.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
+    "href": "/admin/vorlagen/datei/social/social-040.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
+    "href": "/admin/vorlagen/datei/social/social-041.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
+    "href": "/admin/vorlagen/datei/social/social-042.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
+    "href": "/admin/vorlagen/datei/social/social-043.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
+    "href": "/admin/vorlagen/datei/social/social-044.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
+    "href": "/admin/vorlagen/datei/social/social-045.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
+    "href": "/admin/vorlagen/datei/social/social-046.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
+    "href": "/admin/vorlagen/datei/social/social-047.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
+    "href": "/admin/vorlagen/datei/social/social-048.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
+    "href": "/admin/vorlagen/datei/social/social-049.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
+    "href": "/admin/vorlagen/datei/social/social-050.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
+    "href": "/admin/vorlagen/datei/social/social-051.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
+    "href": "/admin/vorlagen/datei/social/social-052.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
+    "href": "/admin/vorlagen/datei/social/social-053.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
+    "href": "/admin/vorlagen/datei/social/social-054.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
+    "href": "/admin/vorlagen/datei/social/social-055.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
+    "href": "/admin/vorlagen/datei/social/social-056.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
+    "href": "/admin/vorlagen/datei/social/social-057.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
+    "href": "/admin/vorlagen/datei/social/social-058.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
+    "href": "/admin/vorlagen/datei/social/social-059.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
+    "href": "/admin/vorlagen/datei/social/social-060.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
+    "href": "/admin/vorlagen/datei/social/social-061.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
+    "href": "/admin/vorlagen/datei/social/social-062.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
+    "href": "/admin/vorlagen/datei/social/social-063.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
+    "href": "/admin/vorlagen/datei/social/social-064.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
+    "href": "/admin/vorlagen/datei/social/social-065.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
+    "href": "/admin/vorlagen/datei/social/social-066.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
+    "href": "/admin/vorlagen/datei/social/social-067.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
+    "href": "/admin/vorlagen/datei/social/social-068.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
+    "href": "/admin/vorlagen/datei/social/social-069.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
+    "href": "/admin/vorlagen/datei/social/social-070.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
+    "href": "/admin/vorlagen/datei/social/social-071.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
+    "href": "/admin/vorlagen/datei/social/social-072.webp"
   },
   {
     "kategorie": "reels",
