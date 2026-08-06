@@ -1,0 +1,391 @@
+{
+  "slug": "blog",
+  "fileStem": "Deinen-Kopf-durchdenken",
+  "eyebrow": "WORKSHOP · DEEP-DIVES",
+  "title1": "Deinen Kopf",
+  "title2": "durchdenken",
+  "subtitle": "Eine kuratierte Themenreihe aus den stärksten Deep-Dives – von den eigenen Gedanken bis zu den Kräften, die sie von außen lenken.",
+  "author": "Heiko Schwaninger  ·  werdemeisterdeinergedanken.de",
+  "format": "Ganztag",
+  "dauer": "ca. 6 Std. (Ganztag)",
+  "gruppe": "6–15 Personen",
+  "leitung": "Heiko Schwaninger",
+  "agenda": [
+    {"title": "Ankommen", "desc": "Warum wir uns von unseren Gedanken leben lassen."},
+    {"title": "Der Blick nach innen", "desc": "Beobachter, automatische Gedanken und der freie Raum dazwischen."},
+    {"title": "Denkfallen & Regulation", "desc": "Verzerrungen und Grübeln erkennen, Gefühle halten, Bahnen neu legen."},
+    {"title": "Der Blick nach außen", "desc": "Wie dein Denken von außen gelenkt wird – und wohin du selbst willst."},
+    {"title": "Dranbleiben", "desc": "Dein Thema wählen und den ersten kleinen Schritt festlegen."}
+  ],
+  "kernbotschaft": {
+    "pre": "Die meisten Menschen halten ihre Gedanken für die Wahrheit – und werden so ",
+    "accent": "von ihnen gelebt",
+    "post": ", statt sie zu leben.",
+    "tail": "Genau hier setzt jedes einzelne dieser Themen an."
+  },
+  "notesKernbotschaft": "Wirken lassen. Kurze Stille nach dem Satz.",
+  "ausgangspunkt": {
+    "kicker": "AUSGANGSPUNKT",
+    "title": "Warum diese Themen?",
+    "p1": "Wir denken bis zu 60.000 Gedanken am Tag – und die meisten laufen unbemerkt, automatisch und immer in denselben Bahnen. Wir werden gedacht, statt zu denken.",
+    "p2": "Zwei Harvard-Forscher fanden: In fast der Hälfte unserer Wachzeit ist der Geist gar nicht bei dem, was wir tun – und genau dann sind wir unglücklicher. Diese Reihe holt ihn Stück für Stück zurück.",
+    "metricPre": "rund",
+    "metric": "47 %",
+    "metricLabel": "unserer Wachzeit ist der Geist nicht bei der Sache",
+    "metricNote": "Killingsworth & Gilbert, Harvard 2010.",
+    "notes": "Zahl kurz stehen lassen. Nicht dramatisieren – nüchtern einordnen."
+  },
+  "uebung1": {
+    "kicker": "ÜBUNG 1 · 3 MINUTEN",
+    "title": "Gedanken beobachten",
+    "steps": [
+      "Setz dich bequem hin und schließ für einen Moment die Augen.",
+      "Beobachte deine Gedanken, als wären sie Wolken, die vorbeiziehen.",
+      "Benenne sie innerlich: „Da ist ein Gedanke über die Zukunft.“",
+      "Kehr dann sanft zu deinem Atem zurück."
+    ],
+    "mitnehmen": "Wenn du einen Gedanken bemerkst, bist du nicht dieser Gedanke – sondern der, der ihn wahrnimmt.",
+    "notes": "Ruhig anleiten, Pausen lassen. Danach kurz sammeln, was aufgefallen ist."
+  },
+  "kapitelIntro": {
+    "kicker": "DIE THEMENREIHE",
+    "title": "Elf Themen, ein roter Faden",
+    "subtitle": "Von den eigenen Gedanken bis zu den Kräften, die sie von außen lenken.",
+    "notes": "Überleitung: Wir gehen jetzt Thema für Thema – jedes für sich, alle verbunden."
+  },
+  "landkarte": {
+    "kicker": "ÜBERBLICK",
+    "title": "Unsere Themenreihe",
+    "items": [
+      {"title": "Du bist nicht deine Gedanken", "sub": "Der innere Beobachter"},
+      {"title": "Automatische Gedanken", "sub": "Situation – Gedanke – Gefühl"},
+      {"title": "Die Reiz-Reaktions-Lücke", "sub": "Der Raum der Freiheit"},
+      {"title": "Kognitive Verzerrungen", "sub": "Die häufigsten Denkfehler"},
+      {"title": "Grübeln & Gedankenkreisen", "sub": "Raus aus der Schleife"},
+      {"title": "Der innere Kritiker", "sub": "Die strenge Stimme"},
+      {"title": "Emotionsregulation", "sub": "Gefühle sind Wellen"},
+      {"title": "Neuroplastizität", "sub": "Warum Veränderung geht"},
+      {"title": "Framing", "sub": "Die Macht der Worte"},
+      {"title": "Algorithmen & Filterblasen", "sub": "Dein Feed ist nicht die Welt"},
+      {"title": "Werte & Ziele", "sub": "Die Richtung unter dem Tun"}
+    ],
+    "notes": "Überblick geben, nicht vorlesen. Das ist die Landkarte für den Tag."
+  },
+  "module": [
+    {
+      "badge": "Modul 01",
+      "title": "Du bist nicht deine Gedanken",
+      "sub": "Der innere Beobachter",
+      "body": "In dir gibt es eine Instanz, die deine Gedanken bemerkt. Wenn du sagen kannst „Ich habe gerade den Gedanken, dass ich das nicht schaffe“, dann bist du nicht dieser Gedanke – sondern der, der ihn wahrnimmt.",
+      "reflexion": "Welchen Gedanken hältst du gerade für die Wahrheit – obwohl du nur der bist, der ihn bemerkt?",
+      "notes": "Der Grundstein. Den feinen Unterschied wirklich spüren lassen."
+    },
+    {
+      "badge": "Modul 02",
+      "title": "Automatische Gedanken",
+      "sub": "Situation – Gedanke – Gefühl",
+      "body": "Zwischen Situation und Gefühl liegt immer ein Gedanke. Zwei Menschen, dieselbe Absage – der eine denkt „Ich bin nicht gut genug“, der andere „Das hat nicht gepasst“. Der Gedanke entscheidet, nicht das Ereignis.",
+      "reflexion": "Welcher automatische Gedanke taucht bei dir am häufigsten auf?",
+      "notes": "Am Beispiel durchgehen. Situation, Gedanke, Gefühl klar trennen."
+    },
+    {
+      "badge": "Modul 03",
+      "title": "Die Reiz-Reaktions-Lücke",
+      "sub": "Der Raum, in dem du frei bist",
+      "body": "Zwischen Reiz und Reaktion liegt ein Raum. Du kannst den Reiz nicht verhindern – aber den Moment danach dehnen. Ein einziger bewusster Atemzug schiebt einen Keil dazwischen, und in diesem Keil entsteht die Wahl.",
+      "reflexion": "In welchen Situationen ist deine Reiz-Reaktions-Lücke am kleinsten?",
+      "notes": "Reagieren gegen antworten. Der Kern des ganzen Tages."
+    },
+    {
+      "badge": "Modul 04",
+      "title": "Kognitive Verzerrungen",
+      "sub": "Die häufigsten Denkfehler",
+      "body": "Schwarz-Weiß-Denken, Katastrophisieren, Gedankenlesen – die meisten Grübelschleifen bestehen aus wenigen Mustern. Ein Gefühl belegt nur, dass du etwas glaubst, nicht dass es stimmt. Wer die Muster benennt, muss ihnen nicht mehr glauben.",
+      "reflexion": "Welche Verzerrung ist dein persönlicher Klassiker?",
+      "notes": "Ein, zwei Muster benennen. Nicht die ganze Liste durchgehen."
+    },
+    {
+      "badge": "Modul 05",
+      "title": "Grübeln & Gedankenkreisen",
+      "sub": "Raus aus der Endlosschleife",
+      "body": "Grübeln fühlt sich nützlich an, ist aber nur dasselbe Denken in Wiederholung – ohne Ausgang. Echtes Problemlösen führt zu einem nächsten Schritt, Grübeln zu noch mehr Fragen. Du gewinnst es nicht, du unterbrichst es.",
+      "reflexion": "Woran erkennst du bei dir den Unterschied zwischen Nachdenken und Kreisen?",
+      "notes": "Den einfachen Test anbieten: „Bin ich einer Antwort näher gekommen?“"
+    },
+    {
+      "badge": "Modul 06",
+      "title": "Der innere Kritiker",
+      "sub": "Die strenge Stimme verstehen",
+      "body": "Der innere Kritiker ist kein Feind, sondern ein alter Beschützer mit veralteten Methoden. Dagegen anzukämpfen macht ihn lauter. Du musst ihn nicht besiegen – nur aufhören, jedes seiner Worte für bare Münze zu nehmen.",
+      "reflexion": "Wovor will dich deine strenge Stimme im Kern beschützen?",
+      "notes": "Wohlwollend bleiben. Der Kritiker will schützen, nicht schaden."
+    },
+    {
+      "badge": "Modul 07",
+      "title": "Emotionsregulation",
+      "sub": "Gefühle sind Wellen, keine Wände",
+      "body": "Wegdrücken und Überflutetwerden funktionieren beide schlecht. Der dritte Weg: das Gefühl benennen, halten und atmen. Jede Welle steigt, erreicht einen Höhepunkt und ebbt wieder ab – meist schneller, als wir fürchten.",
+      "reflexion": "Neigst du eher zum Wegdrücken oder zum Überflutetwerden?",
+      "notes": "Benennen beruhigt. Kurz das lange Ausatmen demonstrieren."
+    },
+    {
+      "badge": "Modul 08",
+      "title": "Neuroplastizität",
+      "sub": "Warum Veränderung möglich ist",
+      "body": "Was zusammen feuert, verdrahtet sich. Jeder Gedanke, den du wiederholst, macht die zugehörige Bahn ein Stück breiter – ungenutzte Bahnen verblassen. Veränderung ist kein Wunschdenken, sondern Biologie. Häufigkeit schlägt Intensität.",
+      "reflexion": "Welche neue Bahn würdest du gern anlegen – und was wäre der kleinste tägliche Schritt?",
+      "notes": "Die gute Nachricht des Tages: Kein Muster ist endgültig."
+    },
+    {
+      "badge": "Modul 09",
+      "title": "Framing",
+      "sub": "Wie ein einziges Wort deine Meinung macht",
+      "body": "„Der Staat investiert zehn Milliarden“ und „gibt zehn Milliarden aus“ meinen dieselbe Zahl – und lösen zwei Gefühle aus. Ein Rahmen liefert die Bewertung gleich mit, ganz ohne falsche Fakten. Freiheit beginnt damit, ihn zu erkennen.",
+      "reflexion": "Bei welchem Wort merkst du, dass du reagierst, bevor du den Inhalt geprüft hast?",
+      "notes": "Hier kippt der Blick von innen nach außen. Überparteilich bleiben."
+    },
+    {
+      "badge": "Modul 10",
+      "title": "Algorithmen & Filterblasen",
+      "sub": "Dein Feed ist nicht die Welt",
+      "body": "Was du online siehst, ist kein Abbild der Welt, sondern eine Auswahl aus deinem bisherigen Verhalten. Empörung wird nach oben gespült, weil sie „performt“ – nicht weil sie wahrer wäre. Dein Feed ist ein Spiegel, kein Fenster.",
+      "reflexion": "Wann hast du zuletzt online etwas gesehen, das deiner Meinung ernsthaft widersprach?",
+      "notes": "Kein Technik-Bashing – bewusster Umgang, nicht Angst."
+    },
+    {
+      "badge": "Modul 11",
+      "title": "Werte & Ziele",
+      "sub": "Die Richtung unter dem Tun",
+      "body": "Ziele sind Punkte auf einer Landkarte, Werte sind die Himmelsrichtung. Wer weiß, wofür er losgeht, entscheidet leichter und findet Sinn schon im Weg. Ein Wert wird erst real, wenn er in eine kleine konkrete Handlung übersetzt wird.",
+      "reflexion": "Verfolgst du gerade Ziele, die eigentlich nicht deine sind?",
+      "notes": "Guter Abschluss der Reihe: vom Erkennen zum Ausrichten."
+    }
+  ],
+  "uebung2": {
+    "kicker": "ÜBUNG 2 · SELBSTEINSCHÄTZUNG",
+    "title": "Wo stehst du?",
+    "steps": [
+      "Geh die elf Themen im Kopf durch und markiere die drei, die dich am meisten betreffen.",
+      "Schreib zu jedem einen konkreten Moment aus deiner letzten Woche auf.",
+      "Frag bei jedem: Wollte ich so reagieren – oder lief es automatisch?",
+      "Wähle ein einziges Thema, an dem du in den nächsten Wochen dranbleibst."
+    ],
+    "mitnehmen": "Nicht alles auf einmal. Ein Thema, bewusst gelebt, verändert mehr als zehn, die du nur gehört hast.",
+    "notes": "Erst still arbeiten lassen, dann in Paaren austauschen."
+  },
+  "zusammenfassung": {
+    "kicker": "WAS BLEIBT",
+    "title": "Drei Bewegungen für den Alltag",
+    "items": [
+      {"title": "Beobachten", "text": "Zwischen dich und deine Gedanken passt ein Abstand. In ihm liegt deine Freiheit."},
+      {"title": "Prüfen", "text": "Nichts stimmt, nur weil es vertraut klingt oder oft wiederholt wird – innen wie außen."},
+      {"title": "Wählen", "text": "Zwischen Reiz und Reaktion liegt ein Raum – und in ihm entscheidest du."}
+    ],
+    "notes": "Drei Wörter mitgeben. Der Rest darf verblassen."
+  },
+  "angebot": {
+    "kicker": "WIE ES WEITERGEHT",
+    "title": "Vertief die Themen in deinem Tempo",
+    "features": [
+      "Alle Vertiefungen als Wissens-Bibliothek – jederzeit nachlesbar.",
+      "Die 7 Stufen der Bewusstseinsentwicklung, Schritt für Schritt.",
+      "Praxis-Übungen und Reflexionsfragen zu jedem Thema.",
+      "Neue Deep-Dives und Artikel, laufend ergänzt."
+    ],
+    "preis": "49 €",
+    "preisSuffix": "/ Monat",
+    "url": "werdemeisterdeinergedanken.de/mitgliedschaft",
+    "note": "Erster Schritt kostenlos: der Bewusstseinstest.",
+    "notes": "Kein Druck. Nur eine Tür für die, die weitergehen wollen."
+  },
+  "abschluss": {
+    "pre": "Werde Meister deiner ",
+    "accent": "Gedanken",
+    "post": ".",
+    "thanks": "Danke, dass du heute dabei warst.",
+    "url": "werdemeisterdeinergedanken.de",
+    "notes": "Ruhig enden. Kurze Stille, dann verabschieden."
+  },
+  "workbook": {
+    "coverSubtitle": "Dein persönliches Workbook – zum Mitdenken, Reflektieren und Festhalten.",
+    "intro": {
+      "body": "Dieses Heft begleitet dich durch die elf Themen des Tages. Schreib von Hand – das verlangsamt und vertieft. Es gibt kein Richtig, nur dein ehrliches Hinschauen.",
+      "grundKicker": "DIE GRUNDÜBUNG",
+      "grundText": "Dreimal am Tag 60 Sekunden: Beobachte deine Gedanken wie Wolken – und benenne sie, statt ihnen zu folgen."
+    },
+    "sections": [
+      {
+        "kicker": "EINSTIEG",
+        "title": "Warum du hier bist",
+        "body": "Bevor es losgeht: Halte fest, was dich heute hergeführt hat – und woran du merken würdest, dass sich etwas gelöst hat.",
+        "uebungKicker": "ÜBUNG · ANKOMMEN",
+        "steps": [
+          "Schreib in einem Satz auf, was in deinem Kopf gerade am lautesten ist.",
+          "Notiere, was sich ändern dürfte, wenn dieser Lärm leiser würde."
+        ],
+        "prompt": "Was erhoffst du dir von diesem Tag?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 01 · DU BIST NICHT DEINE GEDANKEN",
+        "title": "Der innere Beobachter",
+        "body": "In dir ist eine Instanz, die deine Gedanken bemerkt. Sie zu spüren ist der Anfang echter Freiheit.",
+        "uebungKicker": "ÜBUNG · BENENNEN",
+        "steps": [
+          "Nimm dir 60 Sekunden und beobachte deine Gedanken wie vorbeiziehende Wolken.",
+          "Benenne innerlich: „Da ist ein Gedanke über …“"
+        ],
+        "prompt": "Welchen Gedanken hältst du gerade für die Wahrheit – obwohl du nur der bist, der ihn bemerkt?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 02 · AUTOMATISCHE GEDANKEN",
+        "title": "Situation – Gedanke – Gefühl",
+        "body": "Zwischen Situation und Gefühl steht immer ein Gedanke. Wer ihn erwischt, gewinnt die Wahl zurück.",
+        "uebungKicker": "ÜBUNG · GEDANKENPROTOKOLL",
+        "steps": [
+          "Denk an einen Moment heute, in dem deine Stimmung kippte.",
+          "Halte fest: Situation, Gefühl – und welcher Gedanke dazwischenlag."
+        ],
+        "prompt": "Welcher automatische Gedanke taucht bei dir am häufigsten auf?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 03 · DIE REIZ-REAKTIONS-LÜCKE",
+        "title": "Der Raum, in dem du frei bist",
+        "body": "Du kannst den Reiz nicht wählen – aber den Moment danach. Ein Atemzug genügt als erster Keil.",
+        "uebungKicker": "ÜBUNG · EIN ATEMZUG",
+        "steps": [
+          "Beim nächsten Ärger: halt kurz inne und nimm einen langsamen Atemzug.",
+          "Frag innerlich: „Wie will ich hier wirklich antworten?“"
+        ],
+        "prompt": "Welcher Mensch oder welcher Satz lässt deine Lücke sofort verschwinden?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 04 · KOGNITIVE VERZERRUNGEN",
+        "title": "Die häufigsten Denkfehler",
+        "body": "Grübelschleifen bestehen aus wenigen Mustern. Wer sie benennt, muss ihnen nicht mehr glauben.",
+        "uebungKicker": "ÜBUNG · VERZERRUNG BENENNEN",
+        "steps": [
+          "Schreib einen belastenden Gedanken der letzten Tage auf.",
+          "Benenne das Muster (Schwarz-Weiß, Katastrophisieren …) und formuliere ihn fair neu."
+        ],
+        "prompt": "Welche Verzerrung ist dein persönlicher Klassiker?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 05 · GRÜBELN & GEDANKENKREISEN",
+        "title": "Raus aus der Endlosschleife",
+        "body": "Grübeln ist Wiederholung, kein Fortschritt. Du gewinnst es nicht – du unterbrichst es.",
+        "uebungKicker": "ÜBUNG · TEST & CUT",
+        "steps": [
+          "Frag dich: „Löse ich gerade – oder wiederhole ich?“",
+          "Bei „wiederhole“: lenke die Aufmerksamkeit auf fünf Dinge, die du gerade siehst."
+        ],
+        "prompt": "Welche konkrete Handlung holt dich am zuverlässigsten aus dem Karussell?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 06 · DER INNERE KRITIKER",
+        "title": "Die strenge Stimme verstehen",
+        "body": "Der Kritiker ist ein alter Beschützer mit veralteten Methoden. Du besiegst ihn nicht – du nimmst ihm die Autorität.",
+        "uebungKicker": "ÜBUNG · MENTOR-ANTWORT",
+        "steps": [
+          "Schreib einen typischen Satz deines Kritikers wörtlich auf.",
+          "Formuliere die Antwort eines wohlwollenden Mentors – ehrlich, aber unterstützend."
+        ],
+        "prompt": "Wovor will dich deine strenge Stimme im Kern beschützen?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 07 · EMOTIONSREGULATION",
+        "title": "Gefühle sind Wellen, keine Wände",
+        "body": "Weder wegdrücken noch fortreißen lassen: benennen, halten, atmen – dann tragen sie dich.",
+        "uebungKicker": "ÜBUNG · BENENNEN & VERORTEN",
+        "steps": [
+          "Gib dem Gefühl einen Namen: „Das ist gerade …“.",
+          "Atme dorthin, wo es im Körper sitzt – länger aus als ein."
+        ],
+        "prompt": "Welches Gefühl fällt dir am schwersten auszuhalten?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 08 · NEUROPLASTIZITÄT",
+        "title": "Warum Veränderung möglich ist",
+        "body": "Was du wiederholst, verstärkst du – ganz konkret im Gehirn. Häufigkeit schlägt Intensität.",
+        "uebungKicker": "ÜBUNG · DIE EINE BAHN",
+        "steps": [
+          "Wähle einen stärkenden Gedanken oder eine kleine Handlung.",
+          "Wiederhole ihn täglich zur selben Gelegenheit – verbunden mit einem guten Gefühl."
+        ],
+        "prompt": "Welche neue Bahn würdest du gern anlegen – und was wäre der kleinste tägliche Schritt?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 09 · FRAMING",
+        "title": "Wie ein Wort deine Meinung macht",
+        "body": "„Investiert“ oder „gibt aus“ – dieselbe Zahl, zwei Gefühle. Erkenne den Rahmen, bevor du die Bewertung übernimmst.",
+        "uebungKicker": "ÜBUNG · UMFORMULIEREN",
+        "steps": [
+          "Nimm eine Aussage, die dich emotional berührt hat.",
+          "Schreib sie einmal neutral und einmal aus Sicht der Gegenseite."
+        ],
+        "prompt": "Bei welchem Wort reagierst du, bevor du den Inhalt geprüft hast?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 10 · ALGORITHMEN & FILTERBLASEN",
+        "title": "Dein Feed ist nicht die Welt",
+        "body": "Online siehst du eine Auswahl aus deinem Verhalten – ein Spiegel, kein Fenster. Empörung wird nach oben gespült.",
+        "uebungKicker": "ÜBUNG · FEED-DIAGNOSE",
+        "steps": [
+          "Scrolle bewusst und zähle: Wie viel bestätigt deine Sicht, wie viel fordert sie heraus?",
+          "Folge einer seriösen Stimme, die anderer Meinung ist als du."
+        ],
+        "prompt": "Wann hast du zuletzt online etwas gesehen, das deiner Meinung ernsthaft widersprach?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 11 · WERTE & ZIELE",
+        "title": "Die Richtung unter dem Tun",
+        "body": "Ziele erreichst du, Werte lebst du. Wer seine Richtung kennt, findet Sinn schon im Weg.",
+        "uebungKicker": "ÜBUNG · KERN-WERTE",
+        "steps": [
+          "Sammle 8–10 Wörter, die für dich zählen, und streiche auf 3–4 zusammen.",
+          "Schreib zu jedem: „Diesen Wert lebe ich, wenn ich …“."
+        ],
+        "prompt": "Verfolgst du gerade Ziele, die eigentlich nicht deine sind?",
+        "lines": 3
+      }
+    ]
+  },
+  "moderation": {
+    "ziel": [
+      "Die Teilnehmer erleben den Abstand zwischen sich und ihren Gedanken.",
+      "Sie erkennen die häufigsten Denkfallen und Beeinflussungsmechanismen wieder.",
+      "Jeder geht mit einem konkreten Thema und einer kleinen Übung nach Hause."
+    ],
+    "material": [
+      "Beamer / Bildschirm + Präsentation",
+      "Gedruckte Workbooks je Teilnehmer",
+      "Stifte",
+      "Moderationskarten / Flipchart",
+      "Wasser / Getränke"
+    ],
+    "ablauf": [
+      {"time": "9:00", "dur": "20 Min", "block": "Ankommen & Begrüßung", "what": "Vorstellung, Rahmen des Tages, Kernbotschaft.", "material": "Folie 1–5", "pause": false},
+      {"time": "9:20", "dur": "15 Min", "block": "Übung 1: Gedanken beobachten", "what": "Angeleitete Beobachtung, kurzes Sammeln.", "material": "Übung 1", "pause": false},
+      {"time": "9:35", "dur": "25 Min", "block": "Warum diese Themen", "what": "Ausgangspunkt und Überblick über die Reihe.", "material": "Ausgangspunkt · Landkarte", "pause": false},
+      {"time": "10:00", "dur": "60 Min", "block": "Block A: Der Blick nach innen", "what": "Module 01–04 mit Reflexionen.", "material": "Module 01–04", "pause": false},
+      {"time": "11:00", "dur": "15 Min", "block": "Kurze Pause", "what": "Bewegung, Luft, ankommen.", "material": "—", "pause": false},
+      {"time": "11:15", "dur": "60 Min", "block": "Block B: Denkfallen & Regulation", "what": "Module 05–08 mit Reflexionen.", "material": "Module 05–08", "pause": false},
+      {"time": "12:15", "dur": "45 Min", "block": "Mittagspause", "what": "Gemeinsam essen, Kopf lüften.", "material": "—", "pause": true},
+      {"time": "13:00", "dur": "45 Min", "block": "Block C: Der Blick nach außen", "what": "Module 09–11 mit Reflexionen.", "material": "Module 09–11", "pause": false},
+      {"time": "13:45", "dur": "25 Min", "block": "Übung 2: Wo stehst du?", "what": "Selbsteinschätzung, Austausch in Paaren.", "material": "Übung 2", "pause": false},
+      {"time": "14:10", "dur": "20 Min", "block": "Zusammenfassung: Was bleibt", "what": "Drei Bewegungen für den Alltag.", "material": "Zusammenfassung", "pause": false},
+      {"time": "14:30", "dur": "20 Min", "block": "Wie es weitergeht & Abschluss", "what": "Angebot, offene Fragen, ruhiges Ende.", "material": "Angebot · Abschluss", "pause": false},
+      {"time": "14:50", "dur": "20 Min", "block": "Offene Runde", "what": "Fragen, Resonanz, Verabschiedung.", "material": "—", "pause": false}
+    ]
+  }
+}

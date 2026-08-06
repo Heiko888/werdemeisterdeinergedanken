@@ -1,0 +1,334 @@
+{
+  "slug": "wissensdatenbank",
+  "fileStem": "Wissensreise-Dein-Gehirn-verstehen",
+  "eyebrow": "WORKSHOP · WISSENSREISE",
+  "title1": "Dein Gehirn",
+  "title2": "verstehen",
+  "subtitle": "Eine Reise durch Gehirn, Bewusstsein und Gedanken – ehrlich, klar und ohne Neuro-Mythen. In zehn Modulen vom biologischen Fundament bis zu den großen Fragen.",
+  "author": "Heiko Schwaninger  ·  werdemeisterdeinergedanken.de",
+  "format": "Ganztag",
+  "dauer": "ca. 6 Std. (Ganztag)",
+  "gruppe": "6–15 Personen",
+  "leitung": "Heiko Schwaninger",
+  "agenda": [
+    {"title": "Das Fundament", "desc": "Wie dein Gehirn gebaut ist und warum es sich ein Leben lang verändert."},
+    {"title": "Bewusstsein & Wahrnehmung", "desc": "Was Erleben ist und warum du nie die Welt siehst, sondern deine Vermutung über sie."},
+    {"title": "Denken & Fühlen", "desc": "Wie Gedanken, Erinnerungen und Emotionen im Gehirn entstehen."},
+    {"title": "Verändern & Regulieren", "desc": "Was sich am Gehirn nachweislich beeinflussen lässt – und was nur Marketing ist."},
+    {"title": "Selbst & Grenzfragen", "desc": "Das Ich, die Verzerrungen des Denkens und die offenen Ränder der Forschung."}
+  ],
+  "kernbotschaft": {
+    "pre": "Du bist nicht deine Gedanken – du bist das ",
+    "accent": "formbare Gehirn",
+    "post": ", das sie hervorbringt.",
+    "tail": "Und genau dieses Gehirn kannst du verstehen lernen."
+  },
+  "notesKernbotschaft": "Wirken lassen. Kurze Stille nach dem Satz. Betonen: Verstehen entlastet – es ist kein Charakterfehler, wenn eine Angst hochschießt, bevor du denken kannst.",
+  "ausgangspunkt": {
+    "kicker": "AUSGANGSPUNKT",
+    "title": "Die komplexeste Struktur des Universums",
+    "p1": "Rund anderthalb Kilogramm formbares Gewebe, geschützt vom Schädel – und doch das komplexeste bekannte Gebilde überhaupt. Jede Emotion, jeder Gedanke, jede Entscheidung hat hier ein biologisches Substrat.",
+    "p2": "Wer seine Gedanken meistern will, gewinnt Halt, wenn er weiß, welche Strukturen dabei im Spiel sind – ohne in platten Biologismus zu verfallen.",
+    "metricPre": "rund",
+    "metric": "86 Mrd.",
+    "metricLabel": "Nervenzellen in deinem Kopf",
+    "metricNote": "vernetzt über Billionen von Synapsen (Herculano-Houzel, 2009)",
+    "notes": "Die Zahl groß stehen lassen. Hinweis: Die alte Behauptung „zehnmal mehr Glia als Neuronen“ ist überholt – das Verhältnis liegt nahe eins zu eins."
+  },
+  "uebung1": {
+    "kicker": "ÜBUNG 1 · 3 MINUTEN",
+    "title": "Der Spalt zwischen Reiz und Reaktion",
+    "steps": [
+      "Setz dich bequem hin und schließ für einen Moment die Augen.",
+      "Denk an eine Situation von gestern, in der du automatisch reagiert hast.",
+      "Spür nach: Wo war der winzige Moment zwischen dem Auslöser und deiner Reaktion?",
+      "Öffne die Augen und halt in einem Satz fest, was du bemerkt hast."
+    ],
+    "mitnehmen": "Genau in diesem Spalt zwischen Reiz und Reaktion liegt dein Spielraum – dort setzt alle Arbeit an den Gedanken an.",
+    "notes": "Ruhig anleiten, Tempo langsam. Betonen, dass es kein Richtig oder Falsch gibt."
+  },
+  "kapitelIntro": {
+    "kicker": "DIE WISSENSREISE",
+    "title": "Zehn Module durch dein Gehirn",
+    "subtitle": "Wir verdichten 27 Kapitel zu zehn Etappen – vom biologischen Fundament bis zu Bewusstsein, Selbst und den großen offenen Fragen.",
+    "notes": "Kurz Orientierung geben: Es geht nicht ums Auswendiglernen, sondern um Aha-Momente."
+  },
+  "landkarte": {
+    "kicker": "DIE LANDKARTE",
+    "title": "Wohin uns die Reise führt",
+    "items": [
+      {"title": "Aufbau & Neuronen", "sub": "Die Landkarte im Kopf"},
+      {"title": "Neuroplastizität", "sub": "Das formbare Gehirn"},
+      {"title": "Bewusstsein", "sub": "Das große Rätsel"},
+      {"title": "Aufmerksamkeit & Wahrnehmung", "sub": "Deine Vermutung über die Welt"},
+      {"title": "Gedanken, Gedächtnis & Lernen", "sub": "Wie Denken entsteht"},
+      {"title": "Emotionen & Motivation", "sub": "Konstruierte Gefühle"},
+      {"title": "Verändern & Regulieren", "sub": "Wille, Achtsamkeit, Gewohnheit"},
+      {"title": "Selbst & soziales Gehirn", "sub": "Das Ich als Prozess"},
+      {"title": "Verzerrungen", "sub": "Mentale Selbstverteidigung"},
+      {"title": "Gesundheit, KI & Placebo", "sub": "Beleg statt Behauptung"}
+    ],
+    "notes": "Landkarte kurz durchgehen, keine Details – nur Vorfreude wecken."
+  },
+  "module": [
+    {
+      "badge": "Modul 01",
+      "title": "Aufbau & Neuronen",
+      "sub": "Die Landkarte im Kopf",
+      "body": "Rund 86 Milliarden Neuronen kommunizieren über Billionen von Synapsen. Die alte Idee „ein Areal, eine Funktion“ ist überholt: Die meisten Leistungen entstehen in verteilten Netzwerken – lokale Spezialisierung und globale Vernetzung zugleich. (Kap. 01–02)",
+      "reflexion": "Wenn eine Angst hochschießt, bevor du „nachdenken“ kannst – was sagt dir das über schnelle und langsame Prozesse in dir?",
+      "notes": "Kurz die drei großen Bereiche nennen: Kortex, limbische Strukturen, Hirnstamm. Mythos „nur 10 % Nutzung“ entkräften."
+    },
+    {
+      "badge": "Modul 02",
+      "title": "Neuroplastizität",
+      "sub": "Das formbare Gehirn",
+      "body": "Das Gehirn baut sich ein Leben lang durch Erfahrung um: Was oft genutzt wird, verstärkt sich, was brachliegt, wird zurückgebaut. Londoner Taxifahrer bekamen einen größeren Hippocampus, drei Monate Jonglieren ließ graue Substanz wachsen – die aber zurückging, sobald das Üben aufhörte. (Kap. 03)",
+      "reflexion": "Welches Muster in dir ist eingeübt – und würde sich mit Wiederholung schwächen oder überschreiben lassen?",
+      "notes": "„Fire together, wire together“ erklären. Warnung: Kein Programm „rewired“ dein Gehirn über Nacht – es braucht Wiederholung und Geduld."
+    },
+    {
+      "badge": "Modul 03",
+      "title": "Bewusstsein",
+      "sub": "Das große Rätsel",
+      "body": "Warum wird all die Nervenaktivität überhaupt von einem Erleben begleitet? Das ist das „harte Problem“ (Chalmers). Es gibt ein halbes Dutzend ernstzunehmender, konkurrierender Theorien – aber keine ist bewiesen. Wer dir Gewissheit verspricht, verkauft dir etwas, das es nicht gibt. (Kap. 04–05)",
+      "reflexion": "Wie fühlt es sich an, dass dein vertrautestes Erleben zugleich das größte ungelöste Rätsel der Wissenschaft ist?",
+      "notes": "Ehrlichkeit vor Effekt. Split-Brain und Anästhesie kurz als Fenster ins Thema erwähnen, nicht ausführen."
+    },
+    {
+      "badge": "Modul 04",
+      "title": "Aufmerksamkeit & Wahrnehmung",
+      "sub": "Deine Vermutung über die Welt",
+      "body": "Du siehst nie die Welt direkt, sondern das beste Modell, das dein Gehirn aus Sinnesdaten und Erwartung errechnet – „kontrollierte Halluzination“. Aufmerksamkeit ist der schmale Flaschenhals, der entscheidet, was überhaupt bewusst wird. Vieles läuft unbewusst und geprägt ab. (Kap. 06, 27)",
+      "reflexion": "Wo hast du zuletzt etwas „gesehen“, das mehr deine Erwartung war als die Wirklichkeit?",
+      "notes": "Das mehrdeutige B/13-Beispiel bringen. Der Autopilot beginnt nicht bei den Gedanken, sondern bei den Augen."
+    },
+    {
+      "badge": "Modul 05",
+      "title": "Gedanken, Gedächtnis & Lernen",
+      "sub": "Wie Denken entsteht",
+      "body": "Ein Gedanke ist kein Ding, sondern ein kurzlebiges neuronales Muster. Es gibt schnelles, automatisches (System 1) und langsames, willentliches Denken (System 2). Die populäre Zahl „60.000 Gedanken pro Tag“ ist wissenschaftlich nicht belegt – niemand kann sinnvoll zählen, was ein einzelner Gedanke ist. (Kap. 07–08, 18, 23)",
+      "reflexion": "Welche deiner täglichen Gedanken sind automatisch abgespult – und welche wählst du wirklich?",
+      "notes": "Den 60.000-Mythos offen als Mythos benennen; das schafft Glaubwürdigkeit. Erinnerungen sind rekonstruktiv, nicht abgespielt."
+    },
+    {
+      "badge": "Modul 06",
+      "title": "Emotionen & Motivation",
+      "sub": "Konstruierte Gefühle",
+      "body": "Emotionen sind keine Naturgewalten, die uns überfallen, sondern Konstruktionen aus Körperzustand, Situation und Bedeutung – und genau deshalb beeinflussbar. Die Amygdala ist ein Bedrohungsdetektor, kein simples „Angstzentrum“. Dopamin ist Motivations- und Erwartungssignal, nicht bloß „Belohnung“. (Kap. 09, 16)",
+      "reflexion": "Dieselbe körperliche Erregung kann Angst oder Aufregung sein – wie deutest du deine gerade?",
+      "notes": "Schachter & Singer: Erregung plus Deutung ergibt die Emotion. Dieser Deutungsspielraum ist der Angelpunkt jeder Regulation."
+    },
+    {
+      "badge": "Modul 07",
+      "title": "Verändern & Regulieren",
+      "sub": "Wille, Achtsamkeit, Gewohnheit",
+      "body": "Zwischen Reiz und Reaktion liegt ein bewusster Spielraum, auch wenn der freie Wille umstritten ist. Achtsamkeitstraining verändert nachweislich Aufmerksamkeit und Stressreaktion. Gewohnheiten verlagern sich vom bewussten Steuern in automatische Schaltkreise – und Körpersignale (Interozeption) sind Teil der Regulation. (Kap. 10–12, 14, 15, 22)",
+      "reflexion": "Welche kleine, tägliche Gewohnheit würde – konsequent wiederholt – am meisten verändern?",
+      "notes": "Systeme schlagen Vorsätze. Tägliche fünf Minuten schlagen den einmaligen Kraftakt."
+    },
+    {
+      "badge": "Modul 08",
+      "title": "Selbst & soziales Gehirn",
+      "sub": "Das Ich als Prozess",
+      "body": "Es gibt kein anatomisches „Ich-Zentrum“. Das Selbst ist ein fortlaufender Prozess, den das Gehirn aus Körpersignalen, Erinnerungen und einer erzählenden Instanz webt. Zugleich ist das Gehirn zutiefst sozial: Empathie, Theory of Mind und Beeinflussung prägen, wer wir werden. (Kap. 17, 19, 21)",
+      "reflexion": "Wenn dein „Ich“ eher Vorgang als Ding ist – was heißt das für die Geschichten, die du über dich erzählst?",
+      "notes": "Behutsam bleiben – „kein festes Ich“ kann verunsichern. Betonen: Prozess heißt auch veränderbar."
+    },
+    {
+      "badge": "Modul 09",
+      "title": "Verzerrungen",
+      "sub": "Mentale Selbstverteidigung",
+      "body": "Dein Gehirn ist kein neutraler Beobachter, sondern ein interessengeleiteter Erzähler. Es nutzt Faustregeln, die meist nützlich sind, aber systematisch – also vorhersagbar – in die Irre führen (Tversky & Kahneman). Wer diese Muster kennt und benennt, ist ihnen weniger ausgeliefert. (Kap. 13)",
+      "reflexion": "Welcher Denkfehler ist dir zuletzt aufgefallen – bei dir selbst, nicht bei anderen?",
+      "notes": "Ehrlich bleiben: Nicht jeder populäre „Bias“ hat der Replikationskrise standgehalten. Auch die Bias-Forschung hat Verzerrungen."
+    },
+    {
+      "badge": "Modul 10",
+      "title": "Gesundheit, KI & Placebo",
+      "sub": "Beleg statt Behauptung",
+      "body": "Was dem Gehirn wirklich nützt, ist unspektakulär und kostenlos: Schlaf, Bewegung, vernünftige Ernährung, geistige und soziale Anregung. Der Placebo-Effekt zeigt, wie eine Erwartung in Körperchemie übersetzt wird. Und ob Maschinen je Bewusstsein haben könnten, bleibt offen. (Kap. 20, 24–26)",
+      "reflexion": "Welche „langweilige“, gut belegte Maßnahme tust du zu selten – und warum eigentlich?",
+      "notes": "Korrelation ist nicht Kausalität. Placebo ist ein Verstärker der Selbstregulation, kein Ersatz für Medizin."
+    }
+  ],
+  "uebung2": {
+    "kicker": "ÜBUNG 2 · WO BETRIFFT MICH DAS?",
+    "title": "Ein Modul, ein Aha",
+    "steps": [
+      "Blick auf die zehn Module zurück – welches hat dich am meisten berührt?",
+      "Schreib in einem Satz auf, was dich daran überrascht oder erleichtert hat.",
+      "Frag dich: Wo im Alltag betrifft mich das konkret?",
+      "Formuliere einen kleinen, konkreten Schritt, den du diese Woche ausprobierst."
+    ],
+    "mitnehmen": "Wissen entlastet erst, wenn du es auf dein eigenes Leben beziehst – ein Aha und ein Schritt genügen für den Anfang.",
+    "notes": "Freiwilliges Teilen in die Runde einladen, ohne Druck. Ein bis zwei Stimmen reichen."
+  },
+  "zusammenfassung": {
+    "kicker": "WAS BLEIBT",
+    "title": "Drei Einsichten für den Alltag",
+    "items": [
+      {"title": "Formbar", "text": "Dein Gehirn verändert sich lebenslang – durch Aufmerksamkeit und Wiederholung, nicht durch Wunschdenken."},
+      {"title": "Konstruiert", "text": "Wahrnehmung, Gefühle und das Ich sind aktive Konstruktionen – und genau deshalb beeinflussbar."},
+      {"title": "Ehrlich", "text": "Zwischen verständlich und korrekt liegt ein schmaler Grat – lieber eine ehrliche Unsicherheit als eine bequeme Gewissheit."}
+    ],
+    "notes": "Ruhig sprechen. Diese drei Sätze sind der Kern des Tages."
+  },
+  "angebot": {
+    "kicker": "WIE ES WEITERGEHT",
+    "title": "Bleib auf der Wissensreise",
+    "features": [
+      "Zugang zur vollständigen Wissensdatenbank mit 27 Kapiteln",
+      "Alle Quellen mit Evidenz-Markierung – ehrlich statt reißerisch",
+      "Neue Vertiefungen, Impulse und Übungen jeden Monat",
+      "Eine Community, die Neugier ernst nimmt"
+    ],
+    "preis": "49 €",
+    "preisSuffix": "/ Monat",
+    "url": "werdemeisterdeinergedanken.de/mitgliedschaft",
+    "note": "Erster Schritt kostenlos: der Bewusstseinstest.",
+    "notes": "Kein Verkaufsdruck. Als Einladung formulieren, nicht als Abschluss."
+  },
+  "abschluss": {
+    "pre": "Werde Meister deiner ",
+    "accent": "Gedanken",
+    "post": ".",
+    "thanks": "Danke, dass du heute dabei warst.",
+    "url": "werdemeisterdeinergedanken.de",
+    "notes": "Kurze Stille. Ruhig und warm verabschieden."
+  },
+  "workbook": {
+    "coverSubtitle": "Dein persönliches Workbook – zum Mitdenken, Reflektieren und Festhalten.",
+    "intro": {
+      "body": "Dieses Heft begleitet dich durch die zehn Module. Zu jedem gibt es einen kurzen Kontext, eine kleine Übung und eine Schreibfrage. Es gibt kein Richtig oder Falsch – schreib, was für dich stimmt.",
+      "grundKicker": "DIE GRUNDÜBUNG",
+      "grundText": "Bemerke den Spalt zwischen Reiz und Reaktion – dort beginnt jede Freiheit."
+    },
+    "sections": [
+      {
+        "kicker": "EINSTIEG · ANKOMMEN",
+        "title": "Warum du heute hier bist",
+        "body": "Bevor es losgeht: Was hat dich zu diesem Workshop geführt? Halte deine Erwartung fest, damit du am Ende vergleichen kannst.",
+        "uebungKicker": "ÜBUNG · ABSICHT",
+        "steps": ["Atme dreimal ruhig durch.", "Vervollständige den Satz: „Heute möchte ich verstehen, …“"],
+        "prompt": "Was erhoffst du dir vom heutigen Tag – und was würde ihn für dich wertvoll machen?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 01 · AUFBAU & NEURONEN",
+        "title": "Die Landkarte im Kopf",
+        "body": "86 Milliarden Neuronen, verteilte Netzwerke statt fester „Zentren“. Schnelle emotionale Reaktionen sind älter und schneller als dein bewusstes Denken.",
+        "uebungKicker": "ÜBUNG · SCHNELL & LANGSAM",
+        "steps": ["Denk an eine Situation mit einer schnellen Gefühlsreaktion.", "Markiere den Moment, in dem dein „innerer Regisseur“ nachzog."],
+        "prompt": "Wo reagierst du schneller, als du denken kannst – und wie ginge es dir, das nicht als Fehler zu sehen?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 02 · NEUROPLASTIZITÄT",
+        "title": "Das formbare Gehirn",
+        "body": "Was du wiederholst, verdrahtet sich fester; was brachliegt, wird zurückgebaut. Auch Grübelschleifen sind eingeübte Muster – und damit veränderbar.",
+        "uebungKicker": "ÜBUNG · WIEDERHOLUNG",
+        "steps": ["Wähle ein Muster, das du stärken willst.", "Lege eine tägliche Fünf-Minuten-Handlung dafür fest."],
+        "prompt": "Welche eingeschliffene Denkspur würdest du gern schwächen – und durch welche neue ersetzen?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 03 · BEWUSSTSEIN",
+        "title": "Das große Rätsel",
+        "body": "Dein Erleben ist das Vertrauteste – und wissenschaftlich das Ungelösteste. Keine Bewusstseinstheorie ist bewiesen; Ehrlichkeit vor Effekt.",
+        "uebungKicker": "ÜBUNG · STAUNEN",
+        "steps": ["Halte kurz inne und beobachte dein eigenes Erleben.", "Lass die Frage offen, ohne sie lösen zu wollen."],
+        "prompt": "Was löst es in dir aus, ein Rätsel bewohnen zu dürfen, statt es lösen zu müssen?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 04 · AUFMERKSAMKEIT & WAHRNEHMUNG",
+        "title": "Deine Vermutung über die Welt",
+        "body": "Du siehst dein Modell der Welt, nicht die Welt selbst. Aufmerksamkeit ist der Flaschenhals, der entscheidet, was bewusst wird.",
+        "uebungKicker": "ÜBUNG · ERWARTUNG",
+        "steps": ["Erinnere dich an eine Situation, die du falsch „gesehen“ hast.", "Frag dich, welche Erwartung sie gefärbt hat."],
+        "prompt": "Wo hat deine Erwartung zuletzt deine Wahrnehmung geformt – ohne dass du es merktest?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 05 · GEDANKEN, GEDÄCHTNIS & LERNEN",
+        "title": "Wie Denken entsteht",
+        "body": "Ein Gedanke ist ein Muster, kein Ding. Die „60.000 Gedanken am Tag“ sind ein unbelegter Mythos – Meisterschaft heißt nicht abschalten, sondern verstehen.",
+        "uebungKicker": "ÜBUNG · SYSTEM 1 & 2",
+        "steps": ["Sammle drei automatische Gedanken von heute.", "Markiere, welchen du wirklich gewählt hast."],
+        "prompt": "Welcher wiederkehrende Gedanke läuft automatisch – und was passiert, wenn du ihn nur beobachtest?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 06 · EMOTIONEN & MOTIVATION",
+        "title": "Konstruierte Gefühle",
+        "body": "Erregung plus Deutung ergibt die Emotion. Die Amygdala ist Bedrohungsdetektor, Dopamin ein Erwartungssignal – beides beeinflussbar.",
+        "uebungKicker": "ÜBUNG · UMDEUTEN",
+        "steps": ["Erinnere ein Gefühl von diese Woche.", "Frage: Welche Deutung habe ich der Erregung gegeben?"],
+        "prompt": "Wo könntest du dieselbe körperliche Erregung anders deuten – Angst als Aufregung, Druck als Bedeutung?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 07 · VERÄNDERN & REGULIEREN",
+        "title": "Wille, Achtsamkeit, Gewohnheit",
+        "body": "Zwischen Reiz und Reaktion liegt Spielraum. Systeme schlagen Vorsätze; Körpersignale und Wiederholung sind deine Verbündeten.",
+        "uebungKicker": "ÜBUNG · WENN-DANN",
+        "steps": ["Wähle eine Situation, die dich oft aus der Bahn wirft.", "Formuliere einen Wenn-Dann-Plan dafür."],
+        "prompt": "Welche kleine tägliche Praxis würde konsequent wiederholt am meisten für dich verändern?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 08 · SELBST & SOZIALES GEHIRN",
+        "title": "Das Ich als Prozess",
+        "body": "Es gibt kein festes „Ich-Zentrum“; das Selbst ist eine fortlaufende Erzählung. Und es ist zutiefst sozial geformt.",
+        "uebungKicker": "ÜBUNG · GESCHICHTE",
+        "steps": ["Notiere einen Satz, den du oft über dich sagst.", "Frage: Stimmt er noch – oder ist er nur eingeübt?"],
+        "prompt": "Welche Geschichte über dich würdest du gern neu erzählen, wenn das „Ich“ ein Prozess ist?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 09 · VERZERRUNGEN",
+        "title": "Mentale Selbstverteidigung",
+        "body": "Dein Gehirn erzählt interessengeleitet. Denkfehler sind systematisch – und damit erkennbar und teils entschärfbar.",
+        "uebungKicker": "ÜBUNG · BEI MIR SELBST",
+        "steps": ["Denk an eine feste Überzeugung von dir.", "Frage: Welche Belege dagegen blende ich vielleicht aus?"],
+        "prompt": "Wo hast du dich zuletzt selbst getäuscht – und was hätte dich früher stutzig machen können?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 10 · GESUNDHEIT, KI & PLACEBO",
+        "title": "Beleg statt Behauptung",
+        "body": "Das Wirksamste ist unspektakulär: Schlaf, Bewegung, Anregung, Verbindung. Erwartung wirkt real – ist aber kein Ersatz für Medizin.",
+        "uebungKicker": "ÜBUNG · DAS LANGWEILIGE",
+        "steps": ["Wähle eine gut belegte Basismaßnahme.", "Lege einen ersten winzigen Schritt für morgen fest."],
+        "prompt": "Welche einfache, belegte Gewohnheit vernachlässigst du – und was hält dich wirklich davon ab?",
+        "lines": 3
+      }
+    ]
+  },
+  "moderation": {
+    "ziel": [
+      "Teilnehmende gewinnen ein ehrliches, mythenfreies Grundbild von Gehirn, Bewusstsein und Gedanken.",
+      "Sie erleben, dass Verstehen entlastet und Veränderung möglich, aber an Regeln gebunden ist.",
+      "Jede Person nimmt mindestens ein persönliches Aha und einen konkreten nächsten Schritt mit."
+    ],
+    "material": [
+      "Beamer / Bildschirm + Präsentation",
+      "Gedruckte Workbooks je Teilnehmer",
+      "Stifte",
+      "Moderationskarten & Flipchart",
+      "Wasser / Getränke"
+    ],
+    "ablauf": [
+      {"time": "0:00", "dur": "15 Min", "block": "Ankommen & Begrüßung", "what": "Vorstellung, Rahmen, Kernbotschaft. Erwartung ins Workbook.", "material": "Folie 1–3", "pause": false},
+      {"time": "0:15", "dur": "15 Min", "block": "Ausgangspunkt & Übung 1", "what": "Die 86 Mrd. Neuronen, der Spalt zwischen Reiz und Reaktion.", "material": "Folie 4–5", "pause": false},
+      {"time": "0:30", "dur": "60 Min", "block": "Das Fundament (Modul 01–02)", "what": "Aufbau, Neuronen, Neuroplastizität – mit Beispielen und Reflexion.", "material": "Modul 01–02", "pause": false},
+      {"time": "1:30", "dur": "15 Min", "block": "Pause", "what": "Kurze Bewegungspause.", "material": "–", "pause": false},
+      {"time": "1:45", "dur": "75 Min", "block": "Bewusstsein & Wahrnehmung (Modul 03–05)", "what": "Hard Problem, Wahrnehmung als Konstruktion, Gedanken & Gedächtnis.", "material": "Modul 03–05", "pause": false},
+      {"time": "3:00", "dur": "60 Min", "block": "Mittagspause", "what": "Gemeinsames Essen, informeller Austausch.", "material": "–", "pause": true},
+      {"time": "4:00", "dur": "60 Min", "block": "Fühlen & Verändern (Modul 06–07)", "what": "Emotionen konstruieren, Wille, Achtsamkeit, Gewohnheiten.", "material": "Modul 06–07", "pause": false},
+      {"time": "5:00", "dur": "45 Min", "block": "Selbst & Grenzfragen (Modul 08–10)", "what": "Ich als Prozess, Verzerrungen, Gesundheit, KI, Placebo.", "material": "Modul 08–10", "pause": false},
+      {"time": "5:45", "dur": "15 Min", "block": "Übung 2, Zusammenfassung & Abschluss", "what": "Ein Modul, ein Aha. Drei Einsichten. Einladung & Verabschiedung.", "material": "Folie Übung 2–Abschluss", "pause": false}
+    ]
+  }
+}
