@@ -300,6 +300,7 @@ function buildWorkshop() {
     "mentale-selbstverteidigung": "Mentale Selbstverteidigung",
     "praxis": "Praxis-Werkzeugkasten",
     "vertiefungen": "Deinen Kopf verstehen",
+    "reel-skripte": "Reel-Drehbücher",
   };
 
   for (const file of files) {
