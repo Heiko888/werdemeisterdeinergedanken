@@ -306,6 +306,7 @@ function buildWorkshop() {
     "journal": "Journal & Impulse",
     "reel-skripte": "Reel-Drehbücher",
     "video-drehbuecher": "Video-Drehbücher",
+    "carousel-texte": "Carousel-Texte",
   };
 
   for (const file of files) {

@@ -2308,6 +2308,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "workshop",
+    "titel": "Carousel Texte 7 Stufen",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-7-Stufen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Alle Serien",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.7,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Alle-Serien.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Mentale Selbstverteidigung",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.2,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Mentale-Selbstverteidigung.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Praxis",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Praxis.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Vertiefungen",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Vertiefungen.pdf"
+  },
+  {
+    "kategorie": "workshop",
     "titel": "Moderationsplan Journal und Impulse Die Kraft der Reflexion",
     "unterKategorie": "Journal & Impulse",
     "kind": "file",
