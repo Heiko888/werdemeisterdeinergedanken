@@ -57,7 +57,7 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
         </div>
-        {a.caption && <CaptionBox caption={a.caption} />}
+        <CaptionList a={a} />
         <div className="mt-auto flex gap-2 pt-1">
           <a
             href={a.href}
@@ -81,13 +81,19 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
   );
 }
 
-function CaptionBox({ caption }: { caption: string }) {
+function CaptionBox({
+  caption,
+  label = "Caption",
+}: {
+  caption: string;
+  label?: string;
+}) {
   const [kopiert, setKopiert] = useState(false);
   return (
     <div className="mt-1 rounded-lg border border-ink/10 bg-ink/[0.02] p-2.5">
       <div className="mb-1.5 flex items-center justify-between gap-2">
         <span className="text-[0.7rem] font-semibold uppercase tracking-wide text-accent">
-          Caption
+          {label}
         </span>
         <button
           type="button"
@@ -110,6 +116,25 @@ function CaptionBox({ caption }: { caption: string }) {
       </p>
     </div>
   );
+}
+
+/** Zeigt entweder eine einzelne Caption oder mehrere Varianten (je eigener Button). */
+function CaptionList({ a }: { a: VorlagenAsset }) {
+  if (a.captions && a.captions.length > 0) {
+    return (
+      <div className="flex flex-col gap-1.5">
+        {a.captions.map((c) => (
+          <CaptionBox
+            key={c.label}
+            label={c.titel ? `${c.label} · „${c.titel}“` : c.label}
+            caption={c.text}
+          />
+        ))}
+      </div>
+    );
+  }
+  if (a.caption) return <CaptionBox caption={a.caption} />;
+  return null;
 }
 
 function CarouselKarte({ a }: { a: VorlagenAsset }) {
@@ -153,7 +178,7 @@ function CarouselKarte({ a }: { a: VorlagenAsset }) {
         <span className="text-[0.7rem] text-ink-muted">
           ← alle {a.slides} Slides durchwischen →
         </span>
-        {a.caption && <CaptionBox caption={a.caption} />}
+        <CaptionList a={a} />
         <a
           href={a.href}
           download

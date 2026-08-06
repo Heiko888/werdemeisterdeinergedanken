@@ -22,8 +22,10 @@ export type VorlagenAsset = {
   slides?: number;
   /** Nur bei kind === "carousel": Pfade aller Slide-Vorschaubilder in Reihenfolge. */
   slidePaths?: string[];
-  /** Nur bei Marketing-Carousels: fertige Post-Caption zum Kopieren. */
+  /** Fertige Post-Caption zum Kopieren (Marketing- & Studio-Carousels). */
   caption?: string;
+  /** Mehrere einzeln kopierbare Captions (z. B. Reel-Varianten A/B/C je Stufe). */
+  captions?: { label: string; titel?: string; text: string }[];
   sizeMB?: number;
 };
 
@@ -1091,7 +1093,23 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-01.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-01.webp",
-    "caption": "Variante A · „Läuft das automatisch?“\nDas meiste an deinem Tag hast du heute nicht bewusst entschieden – dein Gehirn spult Bewährtes automatisch ab. Praktisch, bis sich dieselben Konflikte und Gefühle wiederholen, obwohl du sie längst nicht mehr willst. Das ist keine Schwäche, sondern dein Startpunkt: Was du bemerkst, kann anfangen, sich zu verändern. Folge für die nächste Stufe. #werdemeisterdeinergedanken #autopilot #gewohnheiten #bewusstsein #achtsamkeit #selbsterkenntnis #mentaltraining #persönlichkeitsentwicklung\n\nVariante B · „Das bin doch ich“\n„So bin ich eben\" – dieser Satz hält den Autopiloten am Laufen, weil sich automatische Reaktionen wie freie Entscheidungen anfühlen. Doch deine Muster sind gelernt, lange bevor du wählen konntest; jedes war einmal ein sinnvoller Schutz. Das Problem ist nur, dass sie heute unbemerkt weiterlaufen. Du bist nicht dein Muster – du bist der, der es zum ersten Mal von außen betrachtet. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #autopilot #muster #konditionierung #bewusstsein #achtsamkeit #selbstreflexion #persönlichkeitsentwicklung\n\nVariante C · „Der Autopilot-Check“\nEine Mini-Übung für zwischendurch: Halte im Alltag kurz inne – an der Ampel, vor dem Griff zum Handy, zwischen zwei Aufgaben – und frag dich ehrlich: Handle ich gerade bewusst oder automatisch? Nicht bewerten, nur bemerken. Jedes Bemerken ist ein kleiner Riss im Automatischen – und genau dieser Riss ist der Anfang von allem. Speicher dir die Übung und probier sie heute dreimal. #werdemeisterdeinergedanken #autopilot #achtsamkeitsübung #achtsamkeit #bewusstsein #innehalten #mentaltraining #präsenz"
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Läuft das automatisch?",
+        "text": "Das meiste an deinem Tag hast du heute nicht bewusst entschieden – dein Gehirn spult Bewährtes automatisch ab. Praktisch, bis sich dieselben Konflikte und Gefühle wiederholen, obwohl du sie längst nicht mehr willst. Das ist keine Schwäche, sondern dein Startpunkt: Was du bemerkst, kann anfangen, sich zu verändern. Folge für die nächste Stufe. #werdemeisterdeinergedanken #autopilot #gewohnheiten #bewusstsein #achtsamkeit #selbsterkenntnis #mentaltraining #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Das bin doch ich",
+        "text": "„So bin ich eben\" – dieser Satz hält den Autopiloten am Laufen, weil sich automatische Reaktionen wie freie Entscheidungen anfühlen. Doch deine Muster sind gelernt, lange bevor du wählen konntest; jedes war einmal ein sinnvoller Schutz. Das Problem ist nur, dass sie heute unbemerkt weiterlaufen. Du bist nicht dein Muster – du bist der, der es zum ersten Mal von außen betrachtet. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #autopilot #muster #konditionierung #bewusstsein #achtsamkeit #selbstreflexion #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Der Autopilot-Check",
+        "text": "Eine Mini-Übung für zwischendurch: Halte im Alltag kurz inne – an der Ampel, vor dem Griff zum Handy, zwischen zwei Aufgaben – und frag dich ehrlich: Handle ich gerade bewusst oder automatisch? Nicht bewerten, nur bemerken. Jedes Bemerken ist ein kleiner Riss im Automatischen – und genau dieser Riss ist der Anfang von allem. Speicher dir die Übung und probier sie heute dreimal. #werdemeisterdeinergedanken #autopilot #achtsamkeitsübung #achtsamkeit #bewusstsein #innehalten #mentaltraining #präsenz"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1100,7 +1118,23 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-02.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-02.webp",
-    "caption": "Variante A · „Oh, ich denke gerade“\nErwachen ist kein spektakuläres Ereignis, sondern ein leises „Oh – ich denke gerade\". Dieses Erkennen kann selbst kein Gedanke sein, denn es sieht dem Denken zu – und genau da entsteht zum ersten Mal ein Abstand zwischen dir und deinen Gedanken. Von klein auf haben wir gelernt, jeden Gedanken für bare Münze zu nehmen; dabei sind Gedanken nur Angebote, die kommen und gehen. Folge für die nächste Stufe. #werdemeisterdeinergedanken #erwachen #bewusstsein #achtsamkeit #metakognition #gedanken #selbstwahrnehmung #innerearbeit\n\nVariante B · „Du bist nicht deine Gedanken“\nWenn du deine Gedanken hören kannst – wer hört dann zu? Du kannst deine Gedanken bemerken, also kannst du nicht nur deine Gedanken sein. Der, der wahrnimmt, war immer schon da – hinter jedem Gedanken, in jedem Alter deines Lebens. Du musst nichts Neues werden; erinnere dich nur öfter daran, wer da eigentlich zusieht. Genau in diesem kleinen Perspektivwechsel beginnt deine Freiheit – nicht in mehr Denken, sondern in mehr Bemerken. Mach den kostenlosen Bewusstseinstest und finde deine Stufe – Link in Bio. #werdemeisterdeinergedanken #dubistnichtdeinegedanken #erwachen #bewusstsein #achtsamkeit #metakognition #selbstwahrnehmung #bewusstseinstest\n\nVariante C · „Die 3-Sekunden-Pause“\nEine kurze Übung, die überall geht: Halte im Alltag kurz inne – beim Türöffnen, an der roten Ampel, vor dem Griff zum Handy – nimm drei ruhige Atemzüge und frag innerlich: Wer nimmt das hier gerade wahr? Erwarte keine Antwort in Worten, spür einfach, dass da ein Wahrnehmender ist, hinter dem Gedankenstrom. Diese Fähigkeit ist keine Sonderbegabung, sondern trainierbar. Speicher dir die Übung und nutze sie heute. #werdemeisterdeinergedanken #erwachen #atemübung #achtsamkeit #bewusstsein #innehalten #präsenz #mentaltraining"
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Oh, ich denke gerade",
+        "text": "Erwachen ist kein spektakuläres Ereignis, sondern ein leises „Oh – ich denke gerade\". Dieses Erkennen kann selbst kein Gedanke sein, denn es sieht dem Denken zu – und genau da entsteht zum ersten Mal ein Abstand zwischen dir und deinen Gedanken. Von klein auf haben wir gelernt, jeden Gedanken für bare Münze zu nehmen; dabei sind Gedanken nur Angebote, die kommen und gehen. Folge für die nächste Stufe. #werdemeisterdeinergedanken #erwachen #bewusstsein #achtsamkeit #metakognition #gedanken #selbstwahrnehmung #innerearbeit"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Du bist nicht deine Gedanken",
+        "text": "Wenn du deine Gedanken hören kannst – wer hört dann zu? Du kannst deine Gedanken bemerken, also kannst du nicht nur deine Gedanken sein. Der, der wahrnimmt, war immer schon da – hinter jedem Gedanken, in jedem Alter deines Lebens. Du musst nichts Neues werden; erinnere dich nur öfter daran, wer da eigentlich zusieht. Genau in diesem kleinen Perspektivwechsel beginnt deine Freiheit – nicht in mehr Denken, sondern in mehr Bemerken. Mach den kostenlosen Bewusstseinstest und finde deine Stufe – Link in Bio. #werdemeisterdeinergedanken #dubistnichtdeinegedanken #erwachen #bewusstsein #achtsamkeit #metakognition #selbstwahrnehmung #bewusstseinstest"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Die 3-Sekunden-Pause",
+        "text": "Eine kurze Übung, die überall geht: Halte im Alltag kurz inne – beim Türöffnen, an der roten Ampel, vor dem Griff zum Handy – nimm drei ruhige Atemzüge und frag innerlich: Wer nimmt das hier gerade wahr? Erwarte keine Antwort in Worten, spür einfach, dass da ein Wahrnehmender ist, hinter dem Gedankenstrom. Diese Fähigkeit ist keine Sonderbegabung, sondern trainierbar. Speicher dir die Übung und nutze sie heute. #werdemeisterdeinergedanken #erwachen #atemübung #achtsamkeit #bewusstsein #innehalten #präsenz #mentaltraining"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1109,7 +1143,23 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-03.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-03.webp",
-    "caption": "Variante A · „Du springst in jeden Gedanken“\nStell dir vor, du sitzt am Ufer eines Flusses – deine Gedanken sind das Wasser, das vorbeizieht. Bisher bist du bei jedem Gedanken hineingesprungen und mitgeschwommen; der innere Beobachter dagegen bleibt am Ufer und schaut zu. Solange du im Gedanken steckst, siehst du nur den Gedanken – erst ein Schritt zurück zeigt dir das Muster dahinter. Diese Distanz ist keine Kälte, sondern die ruhige Übersicht, aus der du wählen kannst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #selbstbeobachtung #innererbeobachter #achtsamkeit #bewusstsein #gedankenbeobachten #mentaleklarheit #persönlichkeitsentwicklung\n\nVariante B · „Nicht ich bin – ich bemerke“\n„Ich bin ein Versager\" fühlt sich an wie die Wahrheit. Doch sieh, was passiert, wenn du umformulierst: „Ich bemerke den Gedanken, dass ich ein Versager sei.\" Plötzlich ist der Gedanke ein Objekt in deinem Bewusstsein – nicht mehr die Brille, durch die du schaust. In der Psychologie heißt das kognitive Defusion: Abstand schaffen, ohne zu kämpfen. Was du ruhig beobachten kannst, bestimmt dich nicht mehr blind. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #selbstbeobachtung #defusion #gedanken #achtsamkeit #bewusstsein #innererkritiker #mentaltraining\n\nVariante C · „Gib dem Gedanken ein Etikett“\nEine ruhige Übung für zehn Minuten: Beobachte deinen Gedankenstrom, ohne einzugreifen, und gib jedem Gedanken eine schlichte Etikette – „planen\", „erinnern\", „sorgen\", „bewerten\". Mehr nicht. Allein das Benennen schafft Abstand. Und zum Schluss die entscheidende Frage: Bist du der Gedanke – oder der, der ihn benennt? Was du klar benennen kannst, verliert seinen unbewussten Griff. Speicher dir die Übung. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeitsübung #gedankenbeobachten #achtsamkeit #bewusstsein #mentaleklarheit #innerearbeit"
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Du springst in jeden Gedanken",
+        "text": "Stell dir vor, du sitzt am Ufer eines Flusses – deine Gedanken sind das Wasser, das vorbeizieht. Bisher bist du bei jedem Gedanken hineingesprungen und mitgeschwommen; der innere Beobachter dagegen bleibt am Ufer und schaut zu. Solange du im Gedanken steckst, siehst du nur den Gedanken – erst ein Schritt zurück zeigt dir das Muster dahinter. Diese Distanz ist keine Kälte, sondern die ruhige Übersicht, aus der du wählen kannst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #selbstbeobachtung #innererbeobachter #achtsamkeit #bewusstsein #gedankenbeobachten #mentaleklarheit #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Nicht ich bin – ich bemerke",
+        "text": "„Ich bin ein Versager\" fühlt sich an wie die Wahrheit. Doch sieh, was passiert, wenn du umformulierst: „Ich bemerke den Gedanken, dass ich ein Versager sei.\" Plötzlich ist der Gedanke ein Objekt in deinem Bewusstsein – nicht mehr die Brille, durch die du schaust. In der Psychologie heißt das kognitive Defusion: Abstand schaffen, ohne zu kämpfen. Was du ruhig beobachten kannst, bestimmt dich nicht mehr blind. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #selbstbeobachtung #defusion #gedanken #achtsamkeit #bewusstsein #innererkritiker #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Gib dem Gedanken ein Etikett",
+        "text": "Eine ruhige Übung für zehn Minuten: Beobachte deinen Gedankenstrom, ohne einzugreifen, und gib jedem Gedanken eine schlichte Etikette – „planen\", „erinnern\", „sorgen\", „bewerten\". Mehr nicht. Allein das Benennen schafft Abstand. Und zum Schluss die entscheidende Frage: Bist du der Gedanke – oder der, der ihn benennt? Was du klar benennen kannst, verliert seinen unbewussten Griff. Speicher dir die Übung. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeitsübung #gedankenbeobachten #achtsamkeit #bewusstsein #mentaleklarheit #innerearbeit"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1118,7 +1168,23 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-04.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-04.webp",
-    "caption": "Variante A · „Was du wegdrückst, wartet“\nManche Muster sitzen nicht im Kopf, sondern in festgehaltenen Gefühlen und im Körper. Nicht gefühlte Gefühle verschwinden nicht – sie warten, binden Energie und melden sich in den unpassendsten Momenten. Der Verstand erklärt sie lieber, statt sie zu fühlen. Doch ein Gefühl löst sich nicht durch Analyse, sondern durch bewusste Anwesenheit. Wo etwas losgelassen wird, entsteht Raum – für Ruhe, für Energie, für dich. Folge für die nächste Stufe. #werdemeisterdeinergedanken #emotionaleReife #gefühle #loslassen #achtsamkeit #innerearbeit #selbstheilung #persönlichkeitsentwicklung\n\nVariante B · „Reite die Welle“\nWir meiden unangenehme Gefühle, weil wir glauben, sie würden uns verschlingen. Doch jedes Gefühl hat einen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab – meist schneller als gedacht. Wer lernt, den Höhepunkt auszuhalten, statt sofort zu handeln, merkt: Die Welle trägt dich, sie verschlingt dich nicht. Aushalten ist keine Passivität, sondern eine aktive, kraftvolle Fähigkeit. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #emotionaleReife #gefühle #emotionsregulation #achtsamkeit #loslassen #innereruhe #mentaltraining\n\nVariante C · „Lad das Gefühl ein“\nEine Übung von zehn Minuten: Erinnere dich an etwas Mittelschweres, das dich noch belastet. Spür nach, wo im Körper sich das Gefühl meldet – Brust, Bauch, Kehle – atme sanft hinein und lass es da sein, ohne etwas ändern zu wollen. Dann sag innerlich: „Du darfst da sein. Und du darfst gehen.\" Beobachte, wie sich die Intensität wandelt. Was Raum bekommt, darf durch dich hindurchziehen – und gehen. Speicher dir die Übung für einen ruhigen Moment. #werdemeisterdeinergedanken #emotionaleReife #körperwahrnehmung #gefühlezulassen #achtsamkeit #loslassen #innerearbeit #selbstmitgefühl"
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Was du wegdrückst, wartet",
+        "text": "Manche Muster sitzen nicht im Kopf, sondern in festgehaltenen Gefühlen und im Körper. Nicht gefühlte Gefühle verschwinden nicht – sie warten, binden Energie und melden sich in den unpassendsten Momenten. Der Verstand erklärt sie lieber, statt sie zu fühlen. Doch ein Gefühl löst sich nicht durch Analyse, sondern durch bewusste Anwesenheit. Wo etwas losgelassen wird, entsteht Raum – für Ruhe, für Energie, für dich. Folge für die nächste Stufe. #werdemeisterdeinergedanken #emotionaleReife #gefühle #loslassen #achtsamkeit #innerearbeit #selbstheilung #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Reite die Welle",
+        "text": "Wir meiden unangenehme Gefühle, weil wir glauben, sie würden uns verschlingen. Doch jedes Gefühl hat einen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab – meist schneller als gedacht. Wer lernt, den Höhepunkt auszuhalten, statt sofort zu handeln, merkt: Die Welle trägt dich, sie verschlingt dich nicht. Aushalten ist keine Passivität, sondern eine aktive, kraftvolle Fähigkeit. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #emotionaleReife #gefühle #emotionsregulation #achtsamkeit #loslassen #innereruhe #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Lad das Gefühl ein",
+        "text": "Eine Übung von zehn Minuten: Erinnere dich an etwas Mittelschweres, das dich noch belastet. Spür nach, wo im Körper sich das Gefühl meldet – Brust, Bauch, Kehle – atme sanft hinein und lass es da sein, ohne etwas ändern zu wollen. Dann sag innerlich: „Du darfst da sein. Und du darfst gehen.\" Beobachte, wie sich die Intensität wandelt. Was Raum bekommt, darf durch dich hindurchziehen – und gehen. Speicher dir die Übung für einen ruhigen Moment. #werdemeisterdeinergedanken #emotionaleReife #körperwahrnehmung #gefühlezulassen #achtsamkeit #loslassen #innerearbeit #selbstmitgefühl"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1127,7 +1193,23 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-05.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-05.webp",
-    "caption": "Variante A · „Vom Beobachter zum Gestalter“\nDie ersten Stufen haben dich frei gemacht von automatischem Denken – jetzt nutzt du diese Freiheit aktiv. Denn Gedanken sind formbar: Was du regelmäßig denkst, wird zur Spur, und was zur Spur wird, wird mit der Zeit zur Straße in deinem Kopf. Bisher hast du diese Straßen unbewusst gebaut; ab jetzt entscheidest du, welche du anlegst. Du bist nicht nur Beobachter deines Lebens, sondern sein Gestalter – denn was du nährst, wächst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #schöpferkraft #gedankenkraft #mindset #bewusstgestalten #neuroplastizität #selbstbild #persönlichkeitsentwicklung\n\nVariante B · „Der Satz muss wahr werden dürfen“\nDeshalb funktionieren die meisten Affirmationen nicht: „Ich bin voller Selbstvertrauen\" wirkt nicht, wenn dein System dem Satz nicht glaubt. „Ich lerne gerade, mir selbst zu vertrauen\" springt nicht zu weit – er ist ehrlich und genau deshalb kraftvoll. Wähle Sätze, die dein System annehmen kann, und lass sie mit dir wachsen. Denn dein Verhalten folgt deinem inneren Selbstbild, geformt durch wiederholte Gedanken, die mit Gefühl verankert werden. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #schöpferkraft #affirmationen #selbstbild #mindset #selbstvertrauen #gedankenkraft #mentaltraining\n\nVariante C · „Richte deinen Morgen aus“\nDie ersten drei Minuten entscheiden über deinen Tag. Nimm dir direkt nach dem Aufwachen einen Moment – bevor der Autopilot startet und das Handy übernimmt – und wähle bewusst einen Gedanken oder eine Absicht. Spür kurz nach, wie es sich anfühlt, aus diesem Gedanken heraus in den Tag zu gehen. Und das Entscheidende: Ein stärkender Gedanke bleibt Theorie, bis er in Handlung mündet – leg also eine kleine, konkrete Handlung fest. Speicher dir die Übung für morgen früh. #werdemeisterdeinergedanken #schöpferkraft #morgenroutine #ausrichtung #achtsamkeit #mindset #gewohnheiten #präsenz"
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Vom Beobachter zum Gestalter",
+        "text": "Die ersten Stufen haben dich frei gemacht von automatischem Denken – jetzt nutzt du diese Freiheit aktiv. Denn Gedanken sind formbar: Was du regelmäßig denkst, wird zur Spur, und was zur Spur wird, wird mit der Zeit zur Straße in deinem Kopf. Bisher hast du diese Straßen unbewusst gebaut; ab jetzt entscheidest du, welche du anlegst. Du bist nicht nur Beobachter deines Lebens, sondern sein Gestalter – denn was du nährst, wächst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #schöpferkraft #gedankenkraft #mindset #bewusstgestalten #neuroplastizität #selbstbild #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Der Satz muss wahr werden dürfen",
+        "text": "Deshalb funktionieren die meisten Affirmationen nicht: „Ich bin voller Selbstvertrauen\" wirkt nicht, wenn dein System dem Satz nicht glaubt. „Ich lerne gerade, mir selbst zu vertrauen\" springt nicht zu weit – er ist ehrlich und genau deshalb kraftvoll. Wähle Sätze, die dein System annehmen kann, und lass sie mit dir wachsen. Denn dein Verhalten folgt deinem inneren Selbstbild, geformt durch wiederholte Gedanken, die mit Gefühl verankert werden. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #schöpferkraft #affirmationen #selbstbild #mindset #selbstvertrauen #gedankenkraft #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Richte deinen Morgen aus",
+        "text": "Die ersten drei Minuten entscheiden über deinen Tag. Nimm dir direkt nach dem Aufwachen einen Moment – bevor der Autopilot startet und das Handy übernimmt – und wähle bewusst einen Gedanken oder eine Absicht. Spür kurz nach, wie es sich anfühlt, aus diesem Gedanken heraus in den Tag zu gehen. Und das Entscheidende: Ein stärkender Gedanke bleibt Theorie, bis er in Handlung mündet – leg also eine kleine, konkrete Handlung fest. Speicher dir die Übung für morgen früh. #werdemeisterdeinergedanken #schöpferkraft #morgenroutine #ausrichtung #achtsamkeit #mindset #gewohnheiten #präsenz"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1136,7 +1218,23 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-06.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-06.webp",
-    "caption": "Variante A · „Der stille Widerspruch“\nViele leben in einem stillen Widerspruch: Der Kopf will das eine, das Herz will das andere, und getan wird ein drittes. Dieser innere Zwiespalt kostet enorm viel Energie – meist völlig unbemerkt. Du fühlst dich erschöpft und weißt nicht recht, warum. Innere Ausrichtung bedeutet, diese Spaltung zu schließen: Wenn Denken, Fühlen und Handeln in dieselbe Richtung zeigen, hört der Widerstand auf, deine Kraft zu fressen. Aus dieser Stimmigkeit entstehen Präsenz und Klarheit. Folge für die nächste Stufe. #werdemeisterdeinergedanken #innereausrichtung #stimmigkeit #werte #achtsamkeit #bewusstsein #klarheit #persönlichkeitsentwicklung\n\nVariante B · „Das Herz als Kompass“\nWir haben gelernt, dem Verstand alles zu überlassen. Doch der Kopf ist ein brillanter Diener und ein schlechter Meister. Lern, dein Fühlen als Kompass ernst zu nehmen – nicht als Laune, sondern als leise, ehrliche Rückmeldung. Wenn Kopf und Herz sich einig sind, wird Handeln müheloser, und jedes Handeln nach deinen Werten stärkt dein Vertrauen zu dir selbst. Diese Selbst-Übereinstimmung strahlt, lange bevor du ein Wort sagst. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #innereausrichtung #herzkompass #werte #intuition #stimmigkeit #bewusstsein #mentaltraining\n\nVariante C · „Der Kohärenz-Check“\nEine klärende Übung für zehn Minuten: Denk an eine anstehende Entscheidung oder eine wiederkehrende Situation und frag nacheinander – Was denkt mein Kopf? Was fühlt mein Herz? Was tue ich tatsächlich? Spür, wo diese drei auseinandergehen; genau dort liegt deine Spannung. Du musst nichts Großes umwerfen – wähle einen kleinen, konkreten Schritt, der sie wieder in Einklang bringt. Kohärenz entsteht durch Ausrichtung, nicht durch Anstrengung. Speicher dir den Check für deine nächste Entscheidung. #werdemeisterdeinergedanken #innereausrichtung #kohärenz #entscheidungen #werte #achtsamkeit #klarheit #selbstführung"
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Der stille Widerspruch",
+        "text": "Viele leben in einem stillen Widerspruch: Der Kopf will das eine, das Herz will das andere, und getan wird ein drittes. Dieser innere Zwiespalt kostet enorm viel Energie – meist völlig unbemerkt. Du fühlst dich erschöpft und weißt nicht recht, warum. Innere Ausrichtung bedeutet, diese Spaltung zu schließen: Wenn Denken, Fühlen und Handeln in dieselbe Richtung zeigen, hört der Widerstand auf, deine Kraft zu fressen. Aus dieser Stimmigkeit entstehen Präsenz und Klarheit. Folge für die nächste Stufe. #werdemeisterdeinergedanken #innereausrichtung #stimmigkeit #werte #achtsamkeit #bewusstsein #klarheit #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Das Herz als Kompass",
+        "text": "Wir haben gelernt, dem Verstand alles zu überlassen. Doch der Kopf ist ein brillanter Diener und ein schlechter Meister. Lern, dein Fühlen als Kompass ernst zu nehmen – nicht als Laune, sondern als leise, ehrliche Rückmeldung. Wenn Kopf und Herz sich einig sind, wird Handeln müheloser, und jedes Handeln nach deinen Werten stärkt dein Vertrauen zu dir selbst. Diese Selbst-Übereinstimmung strahlt, lange bevor du ein Wort sagst. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #innereausrichtung #herzkompass #werte #intuition #stimmigkeit #bewusstsein #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Der Kohärenz-Check",
+        "text": "Eine klärende Übung für zehn Minuten: Denk an eine anstehende Entscheidung oder eine wiederkehrende Situation und frag nacheinander – Was denkt mein Kopf? Was fühlt mein Herz? Was tue ich tatsächlich? Spür, wo diese drei auseinandergehen; genau dort liegt deine Spannung. Du musst nichts Großes umwerfen – wähle einen kleinen, konkreten Schritt, der sie wieder in Einklang bringt. Kohärenz entsteht durch Ausrichtung, nicht durch Anstrengung. Speicher dir den Check für deine nächste Entscheidung. #werdemeisterdeinergedanken #innereausrichtung #kohärenz #entscheidungen #werte #achtsamkeit #klarheit #selbstführung"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1145,7 +1243,23 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-07.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-07.webp",
-    "caption": "Variante A · „Vom Reagieren zum Gestalten“\nViele stellen sich Meisterschaft als einen Punkt vor, an dem nichts mehr wackelt – ein Missverständnis. Meisterschaft ist kein Endpunkt, an dem du „fertig\" bist, sondern eine neue Art zu leben: Innehalten, beobachten, loslassen und neu wählen geschehen nicht mehr als Technik, sondern als Haltung. Der Abstand zwischen Reiz und Reaktion ist dein natürliches Zuhause geworden – du reagierst nicht mehr, du gestaltest. Und selbst wenn ein Tag dich aus der Bahn wirft, findest du schneller zurück. Folge für die nächste Stufe. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #achtsamkeit #reizreaktionslücke #haltung #mentaltraining #persönlichkeitsentwicklung\n\nVariante B · „Der Weg ist kein Ziel“\nNiemand ist „für immer\" Meister – auch du nicht. Das klingt ernüchternd, ist aber eine Befreiung: Auch dich werden Tage aus der Bahn werfen. Der Unterschied zu früher ist nicht, dass kein Sturm mehr kommt, sondern dass du schneller zurückfindest – mit Geduld und ohne Selbstverurteilung. Aus wiederholter Technik wird eine Haltung, die von selbst greift. Das ist Meisterschaft im eigentlichen Sinn: ein Zuhause, in das du immer schneller zurückkehrst. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #meisterschaft #selbstmitgefühl #achtsamkeit #bewusstsein #geduld #innerearbeit #persönlichkeitsentwicklung\n\nVariante C · „Umgang mit dem Sturm“\nEine Übung für den Moment der Herausforderung: Wenn dich etwas triggert, halte für einen Atemzug inne, bevor du reagierst. Nur ein Atemzug. Benenne dann innerlich: „Da ist Wut.\" „Da ist Angst.\" Du bist nicht das Gefühl – du bemerkst es. Und dann die entscheidende Frage: Wer will ich in diesem Moment sein? Handle aus dieser Antwort heraus, bewusst gewählt statt automatisch ausgelöst. Genau da schließt sich der Kreis zur ersten Stufe. Speicher dir die Übung für den nächsten Sturm. #werdemeisterdeinergedanken #meisterschaft #trigger #emotionsregulation #achtsamkeit #bewusstsein #reizreaktionslücke #mentaltraining"
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Vom Reagieren zum Gestalten",
+        "text": "Viele stellen sich Meisterschaft als einen Punkt vor, an dem nichts mehr wackelt – ein Missverständnis. Meisterschaft ist kein Endpunkt, an dem du „fertig\" bist, sondern eine neue Art zu leben: Innehalten, beobachten, loslassen und neu wählen geschehen nicht mehr als Technik, sondern als Haltung. Der Abstand zwischen Reiz und Reaktion ist dein natürliches Zuhause geworden – du reagierst nicht mehr, du gestaltest. Und selbst wenn ein Tag dich aus der Bahn wirft, findest du schneller zurück. Folge für die nächste Stufe. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #achtsamkeit #reizreaktionslücke #haltung #mentaltraining #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Der Weg ist kein Ziel",
+        "text": "Niemand ist „für immer\" Meister – auch du nicht. Das klingt ernüchternd, ist aber eine Befreiung: Auch dich werden Tage aus der Bahn werfen. Der Unterschied zu früher ist nicht, dass kein Sturm mehr kommt, sondern dass du schneller zurückfindest – mit Geduld und ohne Selbstverurteilung. Aus wiederholter Technik wird eine Haltung, die von selbst greift. Das ist Meisterschaft im eigentlichen Sinn: ein Zuhause, in das du immer schneller zurückkehrst. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #meisterschaft #selbstmitgefühl #achtsamkeit #bewusstsein #geduld #innerearbeit #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Umgang mit dem Sturm",
+        "text": "Eine Übung für den Moment der Herausforderung: Wenn dich etwas triggert, halte für einen Atemzug inne, bevor du reagierst. Nur ein Atemzug. Benenne dann innerlich: „Da ist Wut.\" „Da ist Angst.\" Du bist nicht das Gefühl – du bemerkst es. Und dann die entscheidende Frage: Wer will ich in diesem Moment sein? Handle aus dieser Antwort heraus, bewusst gewählt statt automatisch ausgelöst. Genau da schließt sich der Kreis zur ersten Stufe. Speicher dir die Übung für den nächsten Sturm. #werdemeisterdeinergedanken #meisterschaft #trigger #emotionsregulation #achtsamkeit #bewusstsein #reizreaktionslücke #mentaltraining"
+      }
+    ]
   },
   {
     "kategorie": "reels",

@@ -105,9 +105,9 @@ export function readStudioCaptions() {
 }
 
 /**
- * Captions der 7-Stufen-Reels → { "01".."07": kombinierter Text }.
- * Pro Stufe existiert nur EIN Cover, aber drei Reel-Varianten (A/B/C) – daher
- * werden die drei Captions je Stufe klar beschriftet zusammengefasst.
+ * Captions der 7-Stufen-Reels → { "01".."07": [{ label, titel, text }, …] }.
+ * Pro Stufe existiert nur EIN Cover, aber drei Reel-Varianten (A/B/C) – jede
+ * Variante bleibt ein eigener, einzeln kopierbarer Eintrag.
  */
 export function readStufenReelCaptions() {
   const path = join(ROOT, "docs", "skripte", "reels", "stufen.md");
@@ -118,18 +118,21 @@ export function readStufenReelCaptions() {
     const head = stage.split("\n", 1)[0];
     const nr = head.match(/^(\d+)/);
     if (!nr) continue;
-    const parts = [];
+    const varianten = [];
     for (const v of stage.split(/\n### /).slice(1)) {
       const vh = v.split("\n", 1)[0]; // z. B. Variante A — „Läuft das automatisch?"
       const label = vh.match(/^(Variante\s+[A-C])/)?.[1] ?? "Variante";
       const titel = vh.match(/[„“"]([^„“"]+)[”“"]/)?.[1] ?? "";
       const capM = v.match(/\*\*Caption:\*\*\s*([\s\S]*?)(?:\n\n|\n---|$)/);
       if (capM) {
-        const cap = capM[1].trim().replace(/\s+/g, " ");
-        parts.push(`${label}${titel ? ` · „${titel}“` : ""}\n${cap}`);
+        varianten.push({
+          label,
+          ...(titel ? { titel } : {}),
+          text: capM[1].trim().replace(/\s+/g, " "),
+        });
       }
     }
-    if (parts.length) out[nr[1].padStart(2, "0")] = parts.join("\n\n");
+    if (varianten.length) out[nr[1].padStart(2, "0")] = varianten;
   }
   return out;
 }
@@ -152,8 +155,11 @@ export function attachCaptions(assets) {
       if (cap) a.caption = cap;
     } else if (a.kategorie === "reels") {
       const m = href.match(/\/reels\/reel-stufen-(\d+)\.webp$/);
-      const cap = m && reelStufen[m[1].padStart(2, "0")];
-      if (cap) a.caption = cap;
+      const varianten = m && reelStufen[m[1].padStart(2, "0")];
+      if (varianten) {
+        a.captions = varianten;
+        delete a.caption; // evtl. alte kombinierte Einzel-Caption entfernen
+      }
     }
   }
   return assets;
@@ -283,8 +289,10 @@ export type VorlagenAsset = {
   slides?: number;
   /** Nur bei kind === "carousel": Pfade aller Slide-Vorschaubilder in Reihenfolge. */
   slidePaths?: string[];
-  /** Nur bei Marketing-Carousels: fertige Post-Caption zum Kopieren. */
+  /** Fertige Post-Caption zum Kopieren (Marketing- & Studio-Carousels). */
   caption?: string;
+  /** Mehrere einzeln kopierbare Captions (z. B. Reel-Varianten A/B/C je Stufe). */
+  captions?: { label: string; titel?: string; text: string }[];
   sizeMB?: number;
 };
 
