@@ -56,6 +56,7 @@ GREEN = RGBColor(0x4F, 0x9E, 0x1C)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 MUTED = RGBColor(0xAE, 0xB6, 0xC6)
 MUTED2 = RGBColor(0xD8, 0xDB, 0xE6)
+MUTED3 = RGBColor(0xC3, 0xCC, 0xDD)
 
 HEAD = "Cambria"
 BODY = "Calibri"
@@ -473,18 +474,22 @@ def slide_closing(prs, s):
     c = s["abschluss"]
     sl = new_slide(prs)
     bg_image(sl, os.path.join(ASSETS, "bg-title.png"))
-    tf = textbox(sl, ML, 2.4, CW, 1.6, anchor=MSO_ANCHOR.MIDDLE)
+    # Standard-Schlussfolie: zentriert, in der unteren Bildhälfte.
+    # Titel 40pt (Akzentwort in Leaf), Dank 18pt gedämpft, URL 14pt Teal fett.
+    tf = textbox(sl, 1.0, 4.1, 11.33, 1.0)
     p = para(tf, first=True)
-    p.line_spacing = 1.05
+    p.alignment = PP_ALIGN.CENTER
     run(p, c["pre"], 40, WHITE, bold=True, font=HEAD)
-    run(p, c["accent"], 40, TEAL_BRIGHT, bold=True, font=HEAD)
+    run(p, c["accent"], 40, LEAF_BRIGHT, bold=True, font=HEAD)
     run(p, c["post"], 40, WHITE, bold=True, font=HEAD)
-    tf = textbox(sl, ML, 4.35, CW, 0.6)
+    tf = textbox(sl, 1.0, 5.2, 11.33, 0.5)
     p = para(tf, first=True)
-    run(p, c["thanks"], 17, MUTED2, font=BODY)
-    tf = textbox(sl, ML, 6.55, CW, 0.4)
+    p.alignment = PP_ALIGN.CENTER
+    run(p, c["thanks"], 18, MUTED3, font=BODY)
+    tf = textbox(sl, 1.0, 6.4, 11.33, 0.4)
     p = para(tf, first=True)
-    run(p, c["url"], 13, MUTED, font=BODY)
+    p.alignment = PP_ALIGN.CENTER
+    run(p, c["url"], 14, TEAL_BRIGHT, bold=True, font=BODY)
     notes(sl, c.get("notes") or "Abschluss. Raum für Fragen. Danken. Zum Bewusstseinstest / zur Mitgliedschaft einladen.")
 
 
