@@ -201,9 +201,13 @@ async function buildCarousels() {
   };
 
   let count = 0;
-  // Struktur: export/<serie>/<slug>/slide-NN.png
+  // Struktur: export/<serie>/<slug>/<format>/slide-NN.png
+  // Nur die Studio-Serien (SERIE) verarbeiten – Marketing-Serien liegen im
+  // selben export/ mit anderer Struktur (<key>/<format>/) und gehören nicht
+  // in die Admin-Carousel-Galerie.
   for (const serie of readdirSync(src, { withFileTypes: true })) {
     if (!serie.isDirectory()) continue;
+    if (!SERIE[serie.name]) continue;
     const serieDir = join(src, serie.name);
     for (const carousel of readdirSync(serieDir, { withFileTypes: true })) {
       if (!carousel.isDirectory()) continue;

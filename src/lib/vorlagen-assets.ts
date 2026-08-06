@@ -28,135 +28,135 @@ export type VorlagenAsset = {
 export const vorlagenAssets: VorlagenAsset[] = [
   {
     "kategorie": "social",
-    "titel": "Facebook Cover",
-    "unterKategorie": "Facebook",
+    "titel": "Ebook 16x9",
+    "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-001.webp",
     "href": "/admin/vorlagen/datei/social/social-001.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story Logo",
-    "unterKategorie": "Instagram",
+    "titel": "Ebook 1x1",
+    "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-002.webp",
     "href": "/admin/vorlagen/datei/social/social-002.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story",
-    "unterKategorie": "Instagram",
+    "titel": "Ebook 2x3",
+    "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-003.webp",
     "href": "/admin/vorlagen/datei/social/social-003.webp"
   },
   {
     "kategorie": "social",
-    "titel": "LinkedIn Banner",
-    "unterKategorie": "LinkedIn",
+    "titel": "Ebook 4x5",
+    "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-004.webp",
     "href": "/admin/vorlagen/datei/social/social-004.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Messenger Kanalbild",
-    "unterKategorie": "Messenger",
+    "titel": "Ebook 9x16",
+    "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-005.webp",
     "href": "/admin/vorlagen/datei/social/social-005.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Kanalbild Quadrat",
-    "unterKategorie": "Profil & Kanal",
+    "titel": "Facebook Cover",
+    "unterKategorie": "Facebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-006.webp",
     "href": "/admin/vorlagen/datei/social/social-006.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Profilbild Rund",
-    "unterKategorie": "Profil & Kanal",
+    "titel": "Instagram Story Logo",
+    "unterKategorie": "Instagram",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-007.webp",
     "href": "/admin/vorlagen/datei/social/social-007.webp"
   },
   {
     "kategorie": "social",
-    "titel": "YouTube Banner",
-    "unterKategorie": "YouTube",
+    "titel": "Instagram Story",
+    "unterKategorie": "Instagram",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-008.webp",
     "href": "/admin/vorlagen/datei/social/social-008.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail 01",
-    "unterKategorie": "YouTube",
+    "titel": "LinkedIn Banner",
+    "unterKategorie": "LinkedIn",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-009.webp",
     "href": "/admin/vorlagen/datei/social/social-009.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail 02",
-    "unterKategorie": "YouTube",
+    "titel": "Messenger Kanalbild",
+    "unterKategorie": "Messenger",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-010.webp",
     "href": "/admin/vorlagen/datei/social/social-010.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail vorlage",
-    "unterKategorie": "YouTube",
+    "titel": "Kanalbild Quadrat",
+    "unterKategorie": "Profil & Kanal",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-011.webp",
     "href": "/admin/vorlagen/datei/social/social-011.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Profilbild Rund",
+    "unterKategorie": "Profil & Kanal",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-012.webp",
     "href": "/admin/vorlagen/datei/social/social-012.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "YouTube Banner",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-013.webp",
     "href": "/admin/vorlagen/datei/social/social-013.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Thumbnail 01",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-014.webp",
     "href": "/admin/vorlagen/datei/social/social-014.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Thumbnail 02",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-015.webp",
     "href": "/admin/vorlagen/datei/social/social-015.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Thumbnail vorlage",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-016.webp",
     "href": "/admin/vorlagen/datei/social/social-016.webp"
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
+    "titel": "Zitat 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
@@ -164,7 +164,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
@@ -172,7 +172,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
@@ -180,7 +180,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
@@ -188,7 +188,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Zitat 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
@@ -196,7 +196,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
@@ -204,7 +204,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
@@ -212,7 +212,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
@@ -220,7 +220,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
@@ -228,7 +228,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Studienfakt 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
@@ -236,7 +236,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Studienfakt 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
@@ -244,7 +244,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Studienfakt 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
@@ -252,7 +252,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Studienfakt 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
@@ -260,7 +260,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Studienfakt 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
@@ -268,11 +268,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
     "href": "/admin/vorlagen/datei/social/social-031.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
+    "href": "/admin/vorlagen/datei/social/social-032.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
+    "href": "/admin/vorlagen/datei/social/social-033.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
+    "href": "/admin/vorlagen/datei/social/social-034.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
+    "href": "/admin/vorlagen/datei/social/social-035.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
+    "href": "/admin/vorlagen/datei/social/social-036.webp"
   },
   {
     "kategorie": "reels",
@@ -752,7 +792,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
@@ -770,7 +810,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__abend-reflexion/slide-01.webp",
@@ -788,7 +828,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__atembeobachtung/slide-01.webp",
@@ -806,7 +846,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-01.webp",
@@ -824,7 +864,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.5,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-01.webp",
@@ -842,7 +882,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check/slide-01.webp",
@@ -860,7 +900,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter/slide-01.webp",
@@ -878,7 +918,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
@@ -896,7 +936,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz/slide-01.webp",
@@ -914,7 +954,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual/slide-01.webp",
@@ -932,7 +972,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung/slide-01.webp",
@@ -950,7 +990,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang/slide-01.webp",
@@ -968,7 +1008,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.2,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
@@ -986,7 +1026,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-01.webp",
@@ -1005,7 +1045,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-01.webp",
@@ -1024,7 +1064,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung/slide-01.webp",
@@ -1043,7 +1083,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
@@ -1062,7 +1102,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht/slide-01.webp",
@@ -1081,7 +1121,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-01.webp",
@@ -1100,7 +1140,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
@@ -1119,7 +1159,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung/slide-01.webp",
@@ -1138,7 +1178,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
@@ -1157,7 +1197,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda/slide-01.webp",
@@ -1176,7 +1216,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung/slide-01.webp",
@@ -1195,7 +1235,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-01.webp",
@@ -1214,7 +1254,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
@@ -1233,7 +1273,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
@@ -1252,7 +1292,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
@@ -1271,7 +1311,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-01.webp",
@@ -1290,7 +1330,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__autopilot/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__autopilot/slide-01.webp",
@@ -1309,7 +1349,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung/slide-01.webp",
@@ -1328,7 +1368,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__erwachen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__erwachen/slide-01.webp",
@@ -1347,7 +1387,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung/slide-01.webp",
@@ -1366,7 +1406,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__meisterschaft/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__meisterschaft/slide-01.webp",
@@ -1385,7 +1425,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__schoepferkraft/slide-01.webp",
@@ -1404,7 +1444,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung/slide-01.webp",
@@ -1423,7 +1463,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
@@ -1442,7 +1482,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker/slide-01.webp",
@@ -1461,7 +1501,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
@@ -1480,7 +1520,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-01.webp",
@@ -1499,7 +1539,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
@@ -1518,7 +1558,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
@@ -1537,7 +1577,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
@@ -1556,7 +1596,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen/slide-01.webp",
@@ -1575,7 +1615,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-01.webp",
@@ -1594,7 +1634,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
@@ -1613,7 +1653,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
@@ -1632,7 +1672,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl/slide-01.webp",
@@ -1651,7 +1691,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.3,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele/slide-01.webp",
