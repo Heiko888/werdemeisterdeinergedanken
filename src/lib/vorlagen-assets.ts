@@ -28,6 +28,8 @@ export type VorlagenAsset = {
   captions?: { label: string; titel?: string; text: string }[];
   /** Nur bei kind === "carousel": enthaltene Formate (Label + Pixelmaße). */
   formate?: { label: string; w: number; h: number }[];
+  /** Nur bei kind === "image": Pixelmaße + Seitenverhältnis der Grafik. */
+  masse?: { label: string; w: number; h: number };
   sizeMB?: number;
 };
 
@@ -38,7 +40,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-001.webp",
-    "href": "/admin/vorlagen/datei/social/social-001.webp"
+    "href": "/admin/vorlagen/datei/social/social-001.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -46,7 +53,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-002.webp",
-    "href": "/admin/vorlagen/datei/social/social-002.webp"
+    "href": "/admin/vorlagen/datei/social/social-002.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -54,7 +66,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-003.webp",
-    "href": "/admin/vorlagen/datei/social/social-003.webp"
+    "href": "/admin/vorlagen/datei/social/social-003.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
+    }
   },
   {
     "kategorie": "social",
@@ -62,7 +79,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-004.webp",
-    "href": "/admin/vorlagen/datei/social/social-004.webp"
+    "href": "/admin/vorlagen/datei/social/social-004.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -70,7 +92,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "ebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-005.webp",
-    "href": "/admin/vorlagen/datei/social/social-005.webp"
+    "href": "/admin/vorlagen/datei/social/social-005.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -78,7 +105,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Facebook",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-006.webp",
-    "href": "/admin/vorlagen/datei/social/social-006.webp"
+    "href": "/admin/vorlagen/datei/social/social-006.webp",
+    "masse": {
+      "label": "",
+      "w": 1640,
+      "h": 624
+    }
   },
   {
     "kategorie": "social",
@@ -86,15 +118,77 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Instagram",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-007.webp",
-    "href": "/admin/vorlagen/datei/social/social-007.webp"
+    "href": "/admin/vorlagen/datei/social/social-007.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story",
+    "titel": "Instagram Story 9x16",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-008.webp",
-    "href": "/admin/vorlagen/datei/social/social-008.webp"
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-9x16.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-9x16.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 4x5",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-4x5.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-4x5.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-1x1.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-1x1.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-16x9.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-16x9.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 2x3",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-2x3.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-2x3.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
+    }
   },
   {
     "kategorie": "social",
@@ -102,7 +196,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "LinkedIn",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-009.webp",
-    "href": "/admin/vorlagen/datei/social/social-009.webp"
+    "href": "/admin/vorlagen/datei/social/social-009.webp",
+    "masse": {
+      "label": "4:1",
+      "w": 1584,
+      "h": 396
+    }
   },
   {
     "kategorie": "social",
@@ -110,7 +209,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Messenger",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-010.webp",
-    "href": "/admin/vorlagen/datei/social/social-010.webp"
+    "href": "/admin/vorlagen/datei/social/social-010.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -118,7 +222,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-011.webp",
-    "href": "/admin/vorlagen/datei/social/social-011.webp"
+    "href": "/admin/vorlagen/datei/social/social-011.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -126,7 +235,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-012.webp",
-    "href": "/admin/vorlagen/datei/social/social-012.webp"
+    "href": "/admin/vorlagen/datei/social/social-012.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -134,7 +248,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-013.webp",
-    "href": "/admin/vorlagen/datei/social/social-013.webp"
+    "href": "/admin/vorlagen/datei/social/social-013.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2000,
+      "h": 1125
+    }
   },
   {
     "kategorie": "social",
@@ -142,7 +261,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-014.webp",
-    "href": "/admin/vorlagen/datei/social/social-014.webp"
+    "href": "/admin/vorlagen/datei/social/social-014.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
   },
   {
     "kategorie": "social",
@@ -150,7 +274,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-015.webp",
-    "href": "/admin/vorlagen/datei/social/social-015.webp"
+    "href": "/admin/vorlagen/datei/social/social-015.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
   },
   {
     "kategorie": "social",
@@ -158,7 +287,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-016.webp",
-    "href": "/admin/vorlagen/datei/social/social-016.webp"
+    "href": "/admin/vorlagen/datei/social/social-016.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
   },
   {
     "kategorie": "social",
@@ -166,7 +300,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
-    "href": "/admin/vorlagen/datei/social/social-017.webp"
+    "href": "/admin/vorlagen/datei/social/social-017.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -174,7 +313,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
-    "href": "/admin/vorlagen/datei/social/social-018.webp"
+    "href": "/admin/vorlagen/datei/social/social-018.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -182,7 +326,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
-    "href": "/admin/vorlagen/datei/social/social-019.webp"
+    "href": "/admin/vorlagen/datei/social/social-019.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -190,7 +339,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
-    "href": "/admin/vorlagen/datei/social/social-020.webp"
+    "href": "/admin/vorlagen/datei/social/social-020.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -198,7 +352,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
-    "href": "/admin/vorlagen/datei/social/social-021.webp"
+    "href": "/admin/vorlagen/datei/social/social-021.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -206,7 +365,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
-    "href": "/admin/vorlagen/datei/social/social-022.webp"
+    "href": "/admin/vorlagen/datei/social/social-022.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -214,7 +378,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
-    "href": "/admin/vorlagen/datei/social/social-023.webp"
+    "href": "/admin/vorlagen/datei/social/social-023.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -222,7 +391,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
-    "href": "/admin/vorlagen/datei/social/social-024.webp"
+    "href": "/admin/vorlagen/datei/social/social-024.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -230,7 +404,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
-    "href": "/admin/vorlagen/datei/social/social-025.webp"
+    "href": "/admin/vorlagen/datei/social/social-025.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -238,7 +417,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
-    "href": "/admin/vorlagen/datei/social/social-026.webp"
+    "href": "/admin/vorlagen/datei/social/social-026.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -246,7 +430,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
-    "href": "/admin/vorlagen/datei/social/social-027.webp"
+    "href": "/admin/vorlagen/datei/social/social-027.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -254,7 +443,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
-    "href": "/admin/vorlagen/datei/social/social-028.webp"
+    "href": "/admin/vorlagen/datei/social/social-028.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -262,7 +456,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
-    "href": "/admin/vorlagen/datei/social/social-029.webp"
+    "href": "/admin/vorlagen/datei/social/social-029.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -270,7 +469,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
-    "href": "/admin/vorlagen/datei/social/social-030.webp"
+    "href": "/admin/vorlagen/datei/social/social-030.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -278,7 +482,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
-    "href": "/admin/vorlagen/datei/social/social-031.webp"
+    "href": "/admin/vorlagen/datei/social/social-031.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -286,7 +495,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
-    "href": "/admin/vorlagen/datei/social/social-032.webp"
+    "href": "/admin/vorlagen/datei/social/social-032.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -294,7 +508,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
-    "href": "/admin/vorlagen/datei/social/social-033.webp"
+    "href": "/admin/vorlagen/datei/social/social-033.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -302,7 +521,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
-    "href": "/admin/vorlagen/datei/social/social-034.webp"
+    "href": "/admin/vorlagen/datei/social/social-034.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -310,7 +534,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
-    "href": "/admin/vorlagen/datei/social/social-035.webp"
+    "href": "/admin/vorlagen/datei/social/social-035.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -318,7 +547,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
-    "href": "/admin/vorlagen/datei/social/social-036.webp"
+    "href": "/admin/vorlagen/datei/social/social-036.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -326,7 +560,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
-    "href": "/admin/vorlagen/datei/social/social-037.webp"
+    "href": "/admin/vorlagen/datei/social/social-037.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -334,7 +573,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
-    "href": "/admin/vorlagen/datei/social/social-038.webp"
+    "href": "/admin/vorlagen/datei/social/social-038.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -342,7 +586,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
-    "href": "/admin/vorlagen/datei/social/social-039.webp"
+    "href": "/admin/vorlagen/datei/social/social-039.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -350,7 +599,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
-    "href": "/admin/vorlagen/datei/social/social-040.webp"
+    "href": "/admin/vorlagen/datei/social/social-040.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -358,7 +612,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
-    "href": "/admin/vorlagen/datei/social/social-041.webp"
+    "href": "/admin/vorlagen/datei/social/social-041.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -366,7 +625,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
-    "href": "/admin/vorlagen/datei/social/social-042.webp"
+    "href": "/admin/vorlagen/datei/social/social-042.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -374,7 +638,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
-    "href": "/admin/vorlagen/datei/social/social-043.webp"
+    "href": "/admin/vorlagen/datei/social/social-043.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -382,7 +651,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
-    "href": "/admin/vorlagen/datei/social/social-044.webp"
+    "href": "/admin/vorlagen/datei/social/social-044.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -390,7 +664,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
-    "href": "/admin/vorlagen/datei/social/social-045.webp"
+    "href": "/admin/vorlagen/datei/social/social-045.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -398,7 +677,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
-    "href": "/admin/vorlagen/datei/social/social-046.webp"
+    "href": "/admin/vorlagen/datei/social/social-046.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -406,7 +690,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
-    "href": "/admin/vorlagen/datei/social/social-047.webp"
+    "href": "/admin/vorlagen/datei/social/social-047.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -414,7 +703,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
-    "href": "/admin/vorlagen/datei/social/social-048.webp"
+    "href": "/admin/vorlagen/datei/social/social-048.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -422,7 +716,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
-    "href": "/admin/vorlagen/datei/social/social-049.webp"
+    "href": "/admin/vorlagen/datei/social/social-049.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -430,7 +729,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
-    "href": "/admin/vorlagen/datei/social/social-050.webp"
+    "href": "/admin/vorlagen/datei/social/social-050.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -438,7 +742,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
-    "href": "/admin/vorlagen/datei/social/social-051.webp"
+    "href": "/admin/vorlagen/datei/social/social-051.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -446,7 +755,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
-    "href": "/admin/vorlagen/datei/social/social-052.webp"
+    "href": "/admin/vorlagen/datei/social/social-052.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -454,7 +768,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
-    "href": "/admin/vorlagen/datei/social/social-053.webp"
+    "href": "/admin/vorlagen/datei/social/social-053.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -462,7 +781,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
-    "href": "/admin/vorlagen/datei/social/social-054.webp"
+    "href": "/admin/vorlagen/datei/social/social-054.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -470,7 +794,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
-    "href": "/admin/vorlagen/datei/social/social-055.webp"
+    "href": "/admin/vorlagen/datei/social/social-055.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -478,7 +807,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
-    "href": "/admin/vorlagen/datei/social/social-056.webp"
+    "href": "/admin/vorlagen/datei/social/social-056.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -486,7 +820,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
-    "href": "/admin/vorlagen/datei/social/social-057.webp"
+    "href": "/admin/vorlagen/datei/social/social-057.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -494,7 +833,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
-    "href": "/admin/vorlagen/datei/social/social-058.webp"
+    "href": "/admin/vorlagen/datei/social/social-058.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -502,7 +846,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
-    "href": "/admin/vorlagen/datei/social/social-059.webp"
+    "href": "/admin/vorlagen/datei/social/social-059.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -510,7 +859,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
-    "href": "/admin/vorlagen/datei/social/social-060.webp"
+    "href": "/admin/vorlagen/datei/social/social-060.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -518,7 +872,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
-    "href": "/admin/vorlagen/datei/social/social-061.webp"
+    "href": "/admin/vorlagen/datei/social/social-061.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -526,7 +885,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
-    "href": "/admin/vorlagen/datei/social/social-062.webp"
+    "href": "/admin/vorlagen/datei/social/social-062.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -534,7 +898,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
-    "href": "/admin/vorlagen/datei/social/social-063.webp"
+    "href": "/admin/vorlagen/datei/social/social-063.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -542,7 +911,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
-    "href": "/admin/vorlagen/datei/social/social-064.webp"
+    "href": "/admin/vorlagen/datei/social/social-064.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -550,7 +924,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
-    "href": "/admin/vorlagen/datei/social/social-065.webp"
+    "href": "/admin/vorlagen/datei/social/social-065.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -558,7 +937,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
-    "href": "/admin/vorlagen/datei/social/social-066.webp"
+    "href": "/admin/vorlagen/datei/social/social-066.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -566,7 +950,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
-    "href": "/admin/vorlagen/datei/social/social-067.webp"
+    "href": "/admin/vorlagen/datei/social/social-067.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -574,7 +963,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
-    "href": "/admin/vorlagen/datei/social/social-068.webp"
+    "href": "/admin/vorlagen/datei/social/social-068.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -582,7 +976,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
-    "href": "/admin/vorlagen/datei/social/social-069.webp"
+    "href": "/admin/vorlagen/datei/social/social-069.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -590,7 +989,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
-    "href": "/admin/vorlagen/datei/social/social-070.webp"
+    "href": "/admin/vorlagen/datei/social/social-070.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -598,7 +1002,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
-    "href": "/admin/vorlagen/datei/social/social-071.webp"
+    "href": "/admin/vorlagen/datei/social/social-071.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -606,7 +1015,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
-    "href": "/admin/vorlagen/datei/social/social-072.webp"
+    "href": "/admin/vorlagen/datei/social/social-072.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "kategorie": "social",
@@ -614,7 +1028,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-073.webp",
-    "href": "/admin/vorlagen/datei/social/social-073.webp"
+    "href": "/admin/vorlagen/datei/social/social-073.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -622,7 +1041,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-074.webp",
-    "href": "/admin/vorlagen/datei/social/social-074.webp"
+    "href": "/admin/vorlagen/datei/social/social-074.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -630,7 +1054,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-075.webp",
-    "href": "/admin/vorlagen/datei/social/social-075.webp"
+    "href": "/admin/vorlagen/datei/social/social-075.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -638,7 +1067,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-076.webp",
-    "href": "/admin/vorlagen/datei/social/social-076.webp"
+    "href": "/admin/vorlagen/datei/social/social-076.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -646,7 +1080,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
-    "href": "/admin/vorlagen/datei/social/social-077.webp"
+    "href": "/admin/vorlagen/datei/social/social-077.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -654,7 +1093,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
-    "href": "/admin/vorlagen/datei/social/social-078.webp"
+    "href": "/admin/vorlagen/datei/social/social-078.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -662,7 +1106,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
-    "href": "/admin/vorlagen/datei/social/social-079.webp"
+    "href": "/admin/vorlagen/datei/social/social-079.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -670,7 +1119,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
-    "href": "/admin/vorlagen/datei/social/social-080.webp"
+    "href": "/admin/vorlagen/datei/social/social-080.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -678,7 +1132,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
-    "href": "/admin/vorlagen/datei/social/social-081.webp"
+    "href": "/admin/vorlagen/datei/social/social-081.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -686,7 +1145,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
-    "href": "/admin/vorlagen/datei/social/social-082.webp"
+    "href": "/admin/vorlagen/datei/social/social-082.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -694,7 +1158,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
-    "href": "/admin/vorlagen/datei/social/social-083.webp"
+    "href": "/admin/vorlagen/datei/social/social-083.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -702,7 +1171,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
-    "href": "/admin/vorlagen/datei/social/social-084.webp"
+    "href": "/admin/vorlagen/datei/social/social-084.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -710,7 +1184,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
-    "href": "/admin/vorlagen/datei/social/social-085.webp"
+    "href": "/admin/vorlagen/datei/social/social-085.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -718,7 +1197,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
-    "href": "/admin/vorlagen/datei/social/social-086.webp"
+    "href": "/admin/vorlagen/datei/social/social-086.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
   },
   {
     "kategorie": "social",
@@ -726,7 +1210,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
-    "href": "/admin/vorlagen/datei/social/social-087.webp"
+    "href": "/admin/vorlagen/datei/social/social-087.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -734,7 +1223,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
-    "href": "/admin/vorlagen/datei/social/social-088.webp"
+    "href": "/admin/vorlagen/datei/social/social-088.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -742,7 +1236,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
-    "href": "/admin/vorlagen/datei/social/social-089.webp"
+    "href": "/admin/vorlagen/datei/social/social-089.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -750,7 +1249,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
-    "href": "/admin/vorlagen/datei/social/social-090.webp"
+    "href": "/admin/vorlagen/datei/social/social-090.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -758,7 +1262,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
-    "href": "/admin/vorlagen/datei/social/social-091.webp"
+    "href": "/admin/vorlagen/datei/social/social-091.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -766,7 +1275,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
-    "href": "/admin/vorlagen/datei/social/social-092.webp"
+    "href": "/admin/vorlagen/datei/social/social-092.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -774,7 +1288,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
-    "href": "/admin/vorlagen/datei/social/social-093.webp"
+    "href": "/admin/vorlagen/datei/social/social-093.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -782,7 +1301,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
-    "href": "/admin/vorlagen/datei/social/social-094.webp"
+    "href": "/admin/vorlagen/datei/social/social-094.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -790,7 +1314,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
-    "href": "/admin/vorlagen/datei/social/social-095.webp"
+    "href": "/admin/vorlagen/datei/social/social-095.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -798,7 +1327,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
-    "href": "/admin/vorlagen/datei/social/social-096.webp"
+    "href": "/admin/vorlagen/datei/social/social-096.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -806,7 +1340,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
-    "href": "/admin/vorlagen/datei/social/social-097.webp"
+    "href": "/admin/vorlagen/datei/social/social-097.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -814,7 +1353,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
-    "href": "/admin/vorlagen/datei/social/social-098.webp"
+    "href": "/admin/vorlagen/datei/social/social-098.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -822,7 +1366,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
-    "href": "/admin/vorlagen/datei/social/social-099.webp"
+    "href": "/admin/vorlagen/datei/social/social-099.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "social",
@@ -830,7 +1379,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
-    "href": "/admin/vorlagen/datei/social/social-100.webp"
+    "href": "/admin/vorlagen/datei/social/social-100.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -838,7 +1392,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Landing / Allgemein",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-01.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-landing-01.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-landing-01.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -846,7 +1405,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Landing / Allgemein",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-02.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-landing-02.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-landing-02.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -854,7 +1418,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Landing / Allgemein",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-03.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-landing-03.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-landing-03.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -862,7 +1431,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-01.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-01.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-01.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -870,7 +1444,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-02.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-02.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-02.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -878,7 +1457,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-03.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-03.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-03.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -886,7 +1470,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-04.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-04.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-04.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -894,7 +1483,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-05.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-05.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-05.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -902,7 +1496,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-06.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-06.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-06.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -910,7 +1509,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-07.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-07.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-07.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -918,7 +1522,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-08.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-08.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-08.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -926,7 +1535,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-09.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-09.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-09.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -934,7 +1548,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-10.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-10.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-10.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -942,7 +1561,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-11.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-11.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-11.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -950,7 +1574,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-12.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-12.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-12.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -958,7 +1587,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-13.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-praxis-13.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-13.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -966,7 +1600,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-01.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -974,7 +1613,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-02.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -982,7 +1626,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-03.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -990,7 +1639,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-04.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -998,7 +1652,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-05.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1006,7 +1665,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-06.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1014,7 +1678,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-07.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1022,7 +1691,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-08.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1030,7 +1704,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-09.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1038,7 +1717,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-10.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1046,7 +1730,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-11.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1054,7 +1743,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-12.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1062,7 +1756,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-13.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1070,7 +1769,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-14.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1078,7 +1782,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-15.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1086,7 +1795,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-16.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1111,7 +1825,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "titel": "Der Autopilot-Check",
         "text": "Eine Mini-Übung für zwischendurch: Halte im Alltag kurz inne – an der Ampel, vor dem Griff zum Handy, zwischen zwei Aufgaben – und frag dich ehrlich: Handle ich gerade bewusst oder automatisch? Nicht bewerten, nur bemerken. Jedes Bemerken ist ein kleiner Riss im Automatischen – und genau dieser Riss ist der Anfang von allem. Speicher dir die Übung und probier sie heute dreimal. #werdemeisterdeinergedanken #autopilot #achtsamkeitsübung #achtsamkeit #bewusstsein #innehalten #mentaltraining #präsenz"
       }
-    ]
+    ],
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1136,7 +1855,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "titel": "Die 3-Sekunden-Pause",
         "text": "Eine kurze Übung, die überall geht: Halte im Alltag kurz inne – beim Türöffnen, an der roten Ampel, vor dem Griff zum Handy – nimm drei ruhige Atemzüge und frag innerlich: Wer nimmt das hier gerade wahr? Erwarte keine Antwort in Worten, spür einfach, dass da ein Wahrnehmender ist, hinter dem Gedankenstrom. Diese Fähigkeit ist keine Sonderbegabung, sondern trainierbar. Speicher dir die Übung und nutze sie heute. #werdemeisterdeinergedanken #erwachen #atemübung #achtsamkeit #bewusstsein #innehalten #präsenz #mentaltraining"
       }
-    ]
+    ],
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1161,7 +1885,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "titel": "Gib dem Gedanken ein Etikett",
         "text": "Eine ruhige Übung für zehn Minuten: Beobachte deinen Gedankenstrom, ohne einzugreifen, und gib jedem Gedanken eine schlichte Etikette – „planen\", „erinnern\", „sorgen\", „bewerten\". Mehr nicht. Allein das Benennen schafft Abstand. Und zum Schluss die entscheidende Frage: Bist du der Gedanke – oder der, der ihn benennt? Was du klar benennen kannst, verliert seinen unbewussten Griff. Speicher dir die Übung. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeitsübung #gedankenbeobachten #achtsamkeit #bewusstsein #mentaleklarheit #innerearbeit"
       }
-    ]
+    ],
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1186,7 +1915,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "titel": "Lad das Gefühl ein",
         "text": "Eine Übung von zehn Minuten: Erinnere dich an etwas Mittelschweres, das dich noch belastet. Spür nach, wo im Körper sich das Gefühl meldet – Brust, Bauch, Kehle – atme sanft hinein und lass es da sein, ohne etwas ändern zu wollen. Dann sag innerlich: „Du darfst da sein. Und du darfst gehen.\" Beobachte, wie sich die Intensität wandelt. Was Raum bekommt, darf durch dich hindurchziehen – und gehen. Speicher dir die Übung für einen ruhigen Moment. #werdemeisterdeinergedanken #emotionaleReife #körperwahrnehmung #gefühlezulassen #achtsamkeit #loslassen #innerearbeit #selbstmitgefühl"
       }
-    ]
+    ],
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1211,7 +1945,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "titel": "Richte deinen Morgen aus",
         "text": "Die ersten drei Minuten entscheiden über deinen Tag. Nimm dir direkt nach dem Aufwachen einen Moment – bevor der Autopilot startet und das Handy übernimmt – und wähle bewusst einen Gedanken oder eine Absicht. Spür kurz nach, wie es sich anfühlt, aus diesem Gedanken heraus in den Tag zu gehen. Und das Entscheidende: Ein stärkender Gedanke bleibt Theorie, bis er in Handlung mündet – leg also eine kleine, konkrete Handlung fest. Speicher dir die Übung für morgen früh. #werdemeisterdeinergedanken #schöpferkraft #morgenroutine #ausrichtung #achtsamkeit #mindset #gewohnheiten #präsenz"
       }
-    ]
+    ],
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1236,7 +1975,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "titel": "Der Kohärenz-Check",
         "text": "Eine klärende Übung für zehn Minuten: Denk an eine anstehende Entscheidung oder eine wiederkehrende Situation und frag nacheinander – Was denkt mein Kopf? Was fühlt mein Herz? Was tue ich tatsächlich? Spür, wo diese drei auseinandergehen; genau dort liegt deine Spannung. Du musst nichts Großes umwerfen – wähle einen kleinen, konkreten Schritt, der sie wieder in Einklang bringt. Kohärenz entsteht durch Ausrichtung, nicht durch Anstrengung. Speicher dir den Check für deine nächste Entscheidung. #werdemeisterdeinergedanken #innereausrichtung #kohärenz #entscheidungen #werte #achtsamkeit #klarheit #selbstführung"
       }
-    ]
+    ],
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1261,7 +2005,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "titel": "Umgang mit dem Sturm",
         "text": "Eine Übung für den Moment der Herausforderung: Wenn dich etwas triggert, halte für einen Atemzug inne, bevor du reagierst. Nur ein Atemzug. Benenne dann innerlich: „Da ist Wut.\" „Da ist Angst.\" Du bist nicht das Gefühl – du bemerkst es. Und dann die entscheidende Frage: Wer will ich in diesem Moment sein? Handle aus dieser Antwort heraus, bewusst gewählt statt automatisch ausgelöst. Genau da schließt sich der Kreis zur ersten Stufe. Speicher dir die Übung für den nächsten Sturm. #werdemeisterdeinergedanken #meisterschaft #trigger #emotionsregulation #achtsamkeit #bewusstsein #reizreaktionslücke #mentaltraining"
       }
-    ]
+    ],
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1269,7 +2018,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-01.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-01.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-01.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1277,7 +2031,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-02.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-02.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-02.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1285,7 +2044,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-03.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-03.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-03.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1293,7 +2057,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-04.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-04.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-04.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1301,7 +2070,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-05.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-05.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-05.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1309,7 +2083,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-06.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-06.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-06.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1317,7 +2096,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-07.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-07.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-07.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1325,7 +2109,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-08.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-08.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-08.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1333,7 +2122,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-09.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-09.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-09.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1341,7 +2135,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-10.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-10.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-10.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1349,7 +2148,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-11.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-11.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-11.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1357,7 +2161,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-12.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-12.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-12.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1365,7 +2174,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-13.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-13.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-13.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1373,7 +2187,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-01.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-01.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-01.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1381,7 +2200,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-02.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-02.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-02.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1389,7 +2213,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-03.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-03.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-03.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1397,7 +2226,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-04.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-04.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-04.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1405,7 +2239,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-05.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-05.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-05.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1413,7 +2252,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-06.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-06.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-06.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "reels",
@@ -1421,7 +2265,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-07.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-07.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-07.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "kategorie": "carousel",
