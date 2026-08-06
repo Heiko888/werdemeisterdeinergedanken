@@ -56,6 +56,12 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
             {a.unterKategorie}
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
+          {a.masse && (
+            <span className="mt-0.5 inline-flex w-fit items-center rounded-md bg-ink/5 px-1.5 py-0.5 text-[0.65rem] font-medium tabular-nums text-ink-mid">
+              {a.masse.label ? `${a.masse.label} · ` : ""}
+              {a.masse.w}×{a.masse.h}
+            </span>
+          )}
         </div>
         <CaptionList a={a} />
         <div className="mt-auto flex gap-2 pt-1">

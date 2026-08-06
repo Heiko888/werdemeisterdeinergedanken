@@ -198,6 +198,38 @@ export function backfillFormate(OUT, assets) {
   return assets;
 }
 
+/** Seitenverhältnis-Label aus Pixelmaßen (1080×1350 → „4:5"). Krumme
+ *  Verhältnisse (Teil > 20) liefern "" – dann zählen nur die Pixelmaße. */
+export function ratioLabel(w, h) {
+  const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+  const d = gcd(w, h) || 1;
+  const rw = w / d, rh = h / d;
+  return Math.max(rw, rh) > 20 ? "" : `${rw}:${rh}`;
+}
+
+/**
+ * Pixelmaße + Seitenverhältnis an alle Bild-Grafiken (kind === "image") hängen.
+ * Liest die Maße aus der ausgelieferten Datei unter content/vorlagen/, sodass
+ * die Card-Angabe zum tatsächlichen Download passt.
+ */
+export async function backfillMasse(OUT, assets) {
+  for (const a of assets) {
+    if (a.kind !== "image") continue;
+    const rel = String(a.href || "").replace(/^\/admin\/vorlagen\/datei\//, "");
+    const file = join(OUT, rel);
+    if (!rel || !existsSync(file)) continue;
+    try {
+      const md = await sharp(file).metadata();
+      if (md.width && md.height) {
+        a.masse = { label: ratioLabel(md.width, md.height), w: md.width, h: md.height };
+      }
+    } catch {
+      /* Datei nicht lesbar – überspringen */
+    }
+  }
+  return assets;
+}
+
 /** Alle PNG-Slides eines Ordners in Reihenfolge (slide-01, slide-02, …). */
 function collectPng(dir) {
   if (!existsSync(dir)) return [];
@@ -329,6 +361,8 @@ export type VorlagenAsset = {
   captions?: { label: string; titel?: string; text: string }[];
   /** Nur bei kind === "carousel": enthaltene Formate (Label + Pixelmaße). */
   formate?: { label: string; w: number; h: number }[];
+  /** Nur bei kind === "image": Pixelmaße + Seitenverhältnis der Grafik. */
+  masse?: { label: string; w: number; h: number };
   sizeMB?: number;
 };
 

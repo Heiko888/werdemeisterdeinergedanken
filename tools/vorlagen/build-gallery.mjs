@@ -36,6 +36,7 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import {
   attachCaptions,
+  backfillMasse,
   buildMarketingCarousels,
   FORMAT_META,
   renderManifest,
@@ -366,6 +367,10 @@ async function main() {
   // Post-Captions aus den Skripten an Carousels & 7-Stufen-Reels hängen.
   attachCaptions(assets);
   console.log(`✓ Captions gesetzt: ${assets.filter((a) => a.caption).length} Einträge`);
+
+  // Pixelmaße an alle Bild-Grafiken hängen.
+  await backfillMasse(OUT, assets);
+  console.log(`✓ Maße gesetzt: ${assets.filter((a) => a.masse).length} Bild-Grafiken`);
 
   const path = writeManifest();
   console.log(`✓ Katalog: ${path} (${assets.length} Einträge)`);
