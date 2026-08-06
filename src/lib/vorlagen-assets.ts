@@ -22,6 +22,8 @@ export type VorlagenAsset = {
   slides?: number;
   /** Nur bei kind === "carousel": Pfade aller Slide-Vorschaubilder in Reihenfolge. */
   slidePaths?: string[];
+  /** Nur bei Marketing-Carousels: fertige Post-Caption zum Kopieren. */
+  caption?: string;
   sizeMB?: number;
 };
 
@@ -2566,5 +2568,109 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "format": "PPTX",
     "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich?",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
   }
 ];

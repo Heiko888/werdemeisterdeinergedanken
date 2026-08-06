@@ -34,6 +34,7 @@ import { spawnSync } from "node:child_process";
 import { basename, dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { buildMarketingCarousels, renderManifest } from "./marketing-carousels.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -334,40 +335,7 @@ function buildWorkshop() {
 
 function writeManifest() {
   const path = join(ROOT, "src", "lib", "vorlagen-assets.ts");
-  const header = `/**
- * AUTO-GENERIERT von tools/vorlagen/build-gallery.mjs – NICHT von Hand ändern.
- * Neu erzeugen mit:  npm run vorlagen:galerie
- *
- * Liste aller Vorlagen-Dateien, die unter content/vorlagen/ liegen und über
- * die Route /admin/vorlagen/datei/… (nur für Admins) ausgeliefert werden
- * und im Dashboard (/admin/vorlagen) als Galerie erscheinen.
- */
-
-export type VorlagenAsset = {
-  kategorie: "social" | "reels" | "carousel" | "workshop";
-  titel: string;
-  unterKategorie: string;
-  kind: "image" | "file" | "carousel";
-  /** Nur bei kind === "image" | "carousel": kleines Vorschaubild (Cover). */
-  thumb?: string;
-  /** Download-/Ansehen-Link (Route /admin/vorlagen/datei/…, nur für Admins). */
-  href: string;
-  /** Nur bei kind === "file". */
-  format?: string;
-  /** Nur bei kind === "carousel": Anzahl der Slides. */
-  slides?: number;
-  /** Nur bei kind === "carousel": Pfade aller Slide-Vorschaubilder in Reihenfolge. */
-  slidePaths?: string[];
-  sizeMB?: number;
-};
-
-export const vorlagenAssets: VorlagenAsset[] = ${JSON.stringify(
-    assets,
-    null,
-    2,
-  )};
-`;
-  writeFileSync(path, header);
+  writeFileSync(path, renderManifest(assets));
   return path;
 }
 
@@ -383,7 +351,9 @@ async function main() {
   const reels = await buildReels();
   console.log(`✓ Reel-Cover (9x16): ${reels}`);
   const carousels = await buildCarousels();
-  console.log(`✓ Carousels (als ZIP): ${carousels}`);
+  console.log(`✓ Carousels (Studio, als ZIP): ${carousels}`);
+  const marketing = await buildMarketingCarousels({ OUT, assets });
+  console.log(`✓ Carousels (Marketing/Funnel, als ZIP): ${marketing}`);
   const workshop = buildWorkshop();
   console.log(`✓ Workshop-Dateien: ${workshop}`);
 

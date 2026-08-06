@@ -80,6 +80,37 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
   );
 }
 
+function CaptionBox({ caption }: { caption: string }) {
+  const [kopiert, setKopiert] = useState(false);
+  return (
+    <div className="mt-1 rounded-lg border border-ink/10 bg-ink/[0.02] p-2.5">
+      <div className="mb-1.5 flex items-center justify-between gap-2">
+        <span className="text-[0.7rem] font-semibold uppercase tracking-wide text-accent">
+          Caption
+        </span>
+        <button
+          type="button"
+          onClick={() => {
+            navigator.clipboard?.writeText(caption).then(
+              () => {
+                setKopiert(true);
+                setTimeout(() => setKopiert(false), 1800);
+              },
+              () => {},
+            );
+          }}
+          className="inline-flex items-center gap-1 rounded-md border border-ink/15 px-2 py-1 text-[0.7rem] font-medium text-ink-mid transition-colors hover:border-accent/40 hover:text-accent"
+        >
+          {kopiert ? "Kopiert ✓" : "Kopieren"}
+        </button>
+      </div>
+      <p className="max-h-24 overflow-y-auto whitespace-pre-line text-[0.72rem] leading-relaxed text-ink-mid [scrollbar-width:thin]">
+        {caption}
+      </p>
+    </div>
+  );
+}
+
 function CarouselKarte({ a }: { a: VorlagenAsset }) {
   const slides =
     a.slidePaths && a.slidePaths.length > 0
@@ -121,6 +152,7 @@ function CarouselKarte({ a }: { a: VorlagenAsset }) {
         <span className="text-[0.7rem] text-ink-muted">
           ← alle {a.slides} Slides durchwischen →
         </span>
+        {a.caption && <CaptionBox caption={a.caption} />}
         <a
           href={a.href}
           download
