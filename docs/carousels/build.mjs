@@ -16,7 +16,7 @@
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { HANDLE, GRAD, FORMAT, slugify, loadCarousels } from "./data.mjs";
+import { HANDLE, GRAD, FORMAT, FORMATS, slugify, loadCarousels } from "./data.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const BUILD = join(HERE, "build");
@@ -27,7 +27,7 @@ mkdirSync(BUILD, { recursive: true });
 copyFileSync(join(COVERS, "_fonts.css"), join(HERE, "_fonts.css"));
 copyFileSync(join(COVERS, "logo.png"), join(HERE, "logo.png"));
 
-const { w: W, h: H } = FORMAT;
+const { w: W, h: H } = FORMAT; // 4:5 – für Galerie-Vorschau-Skalierung
 
 /** Schriftgröße der Body-Slide nach Textlänge (damit alles reinpasst). */
 function bodyFs(text) {
@@ -39,10 +39,11 @@ function bodyFs(text) {
   return 33;
 }
 
-const SLIDE_CSS = `/* Carousel-Slide 4:5 · generiert – nicht von Hand ändern */
+/** Slide-CSS je Format – Breite/Schrift konstant, nur Höhe + vert. Paddings. */
+const slideCssFor = (F) => `/* Carousel-Slide ${F.key} · generiert */
 *{ margin:0; padding:0; box-sizing:border-box; }
 html,body{ background:#05060c; overflow:hidden; }
-.slide{ position:relative; width:${W}px; height:${H}px; overflow:hidden;
+.slide{ position:relative; width:${F.w}px; height:${F.h}px; overflow:hidden;
   font-family:'Inter',system-ui,sans-serif; color:#f4f7ff; }
 .slide::before{ content:""; position:absolute; inset:0; z-index:0;
   background:
@@ -54,7 +55,7 @@ html,body{ background:#05060c; overflow:hidden; }
 .scrim{ position:absolute; inset:0; z-index:2;
   background:linear-gradient(180deg, rgba(5,9,20,.62), rgba(5,9,20,.42) 40%, rgba(5,9,20,.72)); }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
-  padding:88px 84px 76px; }
+  padding:${F.padTop}px ${F.padX}px ${F.padBottom}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
 .logo{ width:170px; height:auto; filter:drop-shadow(0 4px 22px rgba(52,196,196,.30)); }
 .tag{ text-align:right; padding-top:6px; font-weight:800; font-size:20px; letter-spacing:.13em;
@@ -103,8 +104,6 @@ html,body{ background:#05060c; overflow:hidden; }
 .count{ font-size:24px; color:#9db1cb; font-variant-numeric:tabular-nums; }
 .swipe{ font-size:26px; color:#9db1cb; font-weight:600; }
 `;
-
-writeFileSync(join(BUILD, "_slide.css"), SLIDE_CSS);
 
 function dots(active, total) {
   return `<div class="dots">${Array.from({ length: total }, (_, i) =>
@@ -193,17 +192,18 @@ function midHtml(car, slide, total) {
       </div>`;
 }
 
-function slideHtml(car, slide, idx, total) {
+function slideHtml(car, slide, idx, total, F) {
   const isCover = slide.role === "cover";
   const foot = `<div class="foot">
         <span class="handle">${isCover ? car.seriesLabel : HANDLE}</span>
         ${dots(idx, total)}
         <span class="count">${isCover ? '<span class="swipe">wischen →</span>' : `${idx + 1}/${total}`}</span>
       </div>`;
+  // Slide-HTML liegt in <serie>/<slug>/<format>/ → vier Ebenen bis docs/carousels.
   return `<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><title>${car.topic} – Slide ${idx + 1}</title>
-<link rel="stylesheet" href="../../../_fonts.css">
-<link rel="stylesheet" href="../../_slide.css"></head>
+<link rel="stylesheet" href="../../../../_fonts.css">
+<style>${slideCssFor(F)}</style></head>
 <body>
   <div class="slide">
     <div class="bg"></div>
@@ -211,7 +211,7 @@ function slideHtml(car, slide, idx, total) {
     ${slide.role === "body" && !OV[ovKey(car, slide)] ? `<div class="numbg">${String(idx + 1).padStart(2, "0")}</div>` : ""}
     <div class="content">
       <div class="top">
-        <img class="logo" src="../../../logo.png" alt="Logo">
+        <img class="logo" src="../../../../logo.png" alt="Logo">
         <div class="tag">${car.seriesLabel}</div>
       </div>
       ${midHtml(car, slide, total)}
@@ -265,22 +265,26 @@ function frame(src, w, h) {
 
 // --- Schreiben --------------------------------------------------------------
 const data = loadCarousels();
+const GALLERY_FMT = FORMATS[0]; // Vorschau-Galerie zeigt das 4:5-Format
 let slideCount = 0;
 for (const s of data) {
   for (const car of s.carousels) {
-    const dir = join(BUILD, s.key, car.slug);
-    mkdirSync(dir, { recursive: true });
     const total = car.slides.length;
-    car.slides.forEach((slide, i) => {
-      writeFileSync(join(dir, `slide-${String(i + 1).padStart(2, "0")}.html`), slideHtml(car, slide, i, total));
-      slideCount++;
-    });
-    // Carousel-Galerie
+    // Slide-HTML je Format in eigenem Unterordner: <serie>/<slug>/<format>/
+    for (const F of FORMATS) {
+      const fdir = join(BUILD, s.key, car.slug, F.key);
+      mkdirSync(fdir, { recursive: true });
+      car.slides.forEach((slide, i) => {
+        writeFileSync(join(fdir, `slide-${String(i + 1).padStart(2, "0")}.html`), slideHtml(car, slide, i, total, F));
+        slideCount++;
+      });
+    }
+    // Carousel-Galerie (4:5-Vorschau)
     const cards = car.slides.map((slide, i) =>
-      `    <figure class="card">${frame(`slide-${String(i + 1).padStart(2, "0")}.html`, W, H)}
+      `    <figure class="card">${frame(`${GALLERY_FMT.key}/slide-${String(i + 1).padStart(2, "0")}.html`, W, H)}
       <figcaption>Slide ${i + 1}${slide.role !== "body" ? ` · ${slide.role === "cover" ? "Cover" : "CTA"}` : ""}</figcaption></figure>`,
     ).join("\n");
-    writeFileSync(join(dir, "index.html"),
+    writeFileSync(join(BUILD, s.key, car.slug, "index.html"),
       galleryShell(`${car.topic} · Carousel`, `${s.label} · ${total} Slides`, cards, "../../index.html"));
   }
 }
@@ -288,7 +292,7 @@ for (const s of data) {
 // Master-Übersicht: pro Carousel das Cover (Slide 1)
 const mcards = data.flatMap((s) =>
   s.carousels.map((car) =>
-    `    <a class="card" href="${s.key}/${car.slug}/index.html">${frame(`${s.key}/${car.slug}/slide-01.html`, W, H)}
+    `    <a class="card" href="${s.key}/${car.slug}/index.html">${frame(`${s.key}/${car.slug}/${GALLERY_FMT.key}/slide-01.html`, W, H)}
       <figcaption>${car.topic}<br><span class="go">${car.slides.length} Slides →</span></figcaption></a>`),
 ).join("\n");
 writeFileSync(join(BUILD, "index.html"),

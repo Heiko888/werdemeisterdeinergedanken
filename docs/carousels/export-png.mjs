@@ -16,7 +16,7 @@ import { spawnSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
-import { FORMAT, loadCarousels } from "./data.mjs";
+import { FORMATS, loadCarousels } from "./data.mjs";
 
 const require = createRequire(import.meta.url);
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -55,13 +55,13 @@ const gen = spawnSync(process.execPath, [join(HERE, "build.mjs")], { stdio: "inh
 if (gen.status !== 0) throw new Error("build.mjs fehlgeschlagen");
 
 const { chromium } = require("playwright");
-const { w: W, h: H } = FORMAT;
+const only = process.env.FORMAT; // optional: nur ein Format (z. B. feed-1x1)
+const formats = FORMATS.filter((F) => !only || F.key === only);
 
 // Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
 // je nach Build ~87px unten weg → der Footer wurde abgeschnitten.
 const browser = await chromium.launch({ executablePath: findChrome() });
-const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: SCALE });
-async function shot(htmlPath, pngPath) {
+async function shot(page, htmlPath, pngPath) {
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "networkidle" });
   await page.screenshot({ path: pngPath });
   if (!existsSync(pngPath)) throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
@@ -74,19 +74,24 @@ if (data.length === 0) {
 }
 
 let n = 0;
-for (const s of data) {
-  const carousels = s.carousels.filter((c) => !onlySlug || c.slug === onlySlug);
-  for (const car of carousels) {
-    const srcDir = join(BUILD, s.key, car.slug);
-    const outDir = join(HERE, "export", s.key, car.slug);
-    mkdirSync(outDir, { recursive: true });
-    for (let i = 0; i < car.slides.length; i++) {
-      const nn = String(i + 1).padStart(2, "0");
-      await shot(join(srcDir, `slide-${nn}.html`), join(outDir, `slide-${nn}.png`));
-      n++;
+for (const F of formats) {
+  // Ein Page pro Format (fixes Viewport) – spart Neu-Setzen je Slide.
+  const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: SCALE });
+  for (const s of data) {
+    const carousels = s.carousels.filter((c) => !onlySlug || c.slug === onlySlug);
+    for (const car of carousels) {
+      const srcDir = join(BUILD, s.key, car.slug, F.key);
+      const outDir = join(HERE, "export", s.key, car.slug, F.key);
+      mkdirSync(outDir, { recursive: true });
+      for (let i = 0; i < car.slides.length; i++) {
+        const nn = String(i + 1).padStart(2, "0");
+        await shot(page, join(srcDir, `slide-${nn}.html`), join(outDir, `slide-${nn}.png`));
+        n++;
+      }
     }
-    console.log(`✓ ${s.key}/${car.slug} · ${car.slides.length} Slides`);
+    console.log(`✓ ${F.key} · ${s.key}: ${s.carousels.length} Carousels`);
   }
+  await page.close();
 }
 await browser.close();
 console.log(`\nFertig: ${n} PNG in docs/carousels/export/${SCALE > 1 ? `  (×${SCALE})` : ""}`);
