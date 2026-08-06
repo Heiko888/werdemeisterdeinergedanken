@@ -34,7 +34,11 @@ import { spawnSync } from "node:child_process";
 import { basename, dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
-import { buildMarketingCarousels, renderManifest } from "./marketing-carousels.mjs";
+import {
+  attachCaptions,
+  buildMarketingCarousels,
+  renderManifest,
+} from "./marketing-carousels.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -356,6 +360,10 @@ async function main() {
   console.log(`✓ Carousels (Marketing/Funnel, als ZIP): ${marketing}`);
   const workshop = buildWorkshop();
   console.log(`✓ Workshop-Dateien: ${workshop}`);
+
+  // Post-Captions aus den Skripten an Carousels & 7-Stufen-Reels hängen.
+  attachCaptions(assets);
+  console.log(`✓ Captions gesetzt: ${assets.filter((a) => a.caption).length} Einträge`);
 
   const path = writeManifest();
   console.log(`✓ Katalog: ${path} (${assets.length} Einträge)`);

@@ -57,6 +57,7 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
         </div>
+        {a.caption && <CaptionBox caption={a.caption} />}
         <div className="mt-auto flex gap-2 pt-1">
           <a
             href={a.href}
@@ -342,7 +343,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
             <p className="mt-2 text-sm text-ink-mid">
               {q ? (
                 <>
-                  Für „<span className="font-medium text-ink">{query}</span>" gibt es
+                  Für „<span className="font-medium text-ink">{query}</span>“ gibt es
                   keinen Treffer{kat !== "alle" ? " in dieser Kategorie" : ""}.
                 </>
               ) : (

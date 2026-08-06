@@ -61,6 +61,104 @@ export function readMarketingCaptions() {
   return caps;
 }
 
+/** Slug wie im Studio-Carousel-Build (docs/carousels/data.mjs). */
+function slugify(s) {
+  return s
+    .toLowerCase()
+    .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
+    .replace(/&/g, "und")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/** Studio-Carousel-Serien → Skript-Datei. */
+const STUDIO_SKRIPTE = {
+  selbstverteidigung: "selbstverteidigung.md",
+  stufen: "stufen.md",
+  praxis: "praxis.md",
+  vertiefungen: "vertiefungen.md",
+};
+
+/**
+ * Captions der Studio-Carousels je Serie → { serie: { slug: caption } }.
+ * Slug wird – wie im Build – aus dem Heading-Thema abgeleitet
+ * (`## 01 · Autopilot — …` → „Autopilot" → „autopilot").
+ */
+export function readStudioCaptions() {
+  const dir = join(ROOT, "docs", "skripte", "carousels");
+  const out = {};
+  for (const [serie, file] of Object.entries(STUDIO_SKRIPTE)) {
+    const path = join(dir, file);
+    if (!existsSync(path)) continue;
+    const map = {};
+    for (const block of readFileSync(path, "utf8").split(/\n## /).slice(1)) {
+      const head = block.split("\n", 1)[0];
+      const hm = head.match(/^\S+\s*·\s*(.+)$/);
+      if (!hm) continue;
+      const topic = hm[1].split(/\s+—\s+/)[0].trim();
+      const capM = block.match(/\*\*Caption:\*\*\s*([\s\S]*?)(?:\n\n|\n---|$)/);
+      if (topic && capM) map[slugify(topic)] = capM[1].trim().replace(/\s+/g, " ");
+    }
+    out[serie] = map;
+  }
+  return out;
+}
+
+/**
+ * Captions der 7-Stufen-Reels → { "01".."07": kombinierter Text }.
+ * Pro Stufe existiert nur EIN Cover, aber drei Reel-Varianten (A/B/C) – daher
+ * werden die drei Captions je Stufe klar beschriftet zusammengefasst.
+ */
+export function readStufenReelCaptions() {
+  const path = join(ROOT, "docs", "skripte", "reels", "stufen.md");
+  if (!existsSync(path)) return {};
+  const text = readFileSync(path, "utf8");
+  const out = {};
+  for (const stage of text.split(/\n## /).slice(1)) {
+    const head = stage.split("\n", 1)[0];
+    const nr = head.match(/^(\d+)/);
+    if (!nr) continue;
+    const parts = [];
+    for (const v of stage.split(/\n### /).slice(1)) {
+      const vh = v.split("\n", 1)[0]; // z. B. Variante A — „Läuft das automatisch?"
+      const label = vh.match(/^(Variante\s+[A-C])/)?.[1] ?? "Variante";
+      const titel = vh.match(/[„“"]([^„“"]+)[”“"]/)?.[1] ?? "";
+      const capM = v.match(/\*\*Caption:\*\*\s*([\s\S]*?)(?:\n\n|\n---|$)/);
+      if (capM) {
+        const cap = capM[1].trim().replace(/\s+/g, " ");
+        parts.push(`${label}${titel ? ` · „${titel}“` : ""}\n${cap}`);
+      }
+    }
+    if (parts.length) out[nr[1].padStart(2, "0")] = parts.join("\n\n");
+  }
+  return out;
+}
+
+/**
+ * Captions an bestehende Katalog-Einträge hängen (mutiert `assets`):
+ *  - Studio-Carousels  → passende Skript-Caption (per Serie+Slug aus href)
+ *  - 7-Stufen-Reel-Cover → kombinierte Stufen-Caption
+ * Marketing-Carousels bleiben unberührt (setzen ihre Caption selbst).
+ */
+export function attachCaptions(assets) {
+  const studio = readStudioCaptions();
+  const reelStufen = readStufenReelCaptions();
+  for (const a of assets) {
+    const href = String(a.href || "");
+    if (a.kind === "carousel") {
+      const m = href.match(/\/carousels\/([a-z0-9]+)__([a-z0-9-]+)\.zip$/);
+      if (!m || m[1] === "marketing") continue;
+      const cap = studio[m[1]]?.[m[2]];
+      if (cap) a.caption = cap;
+    } else if (a.kategorie === "reels") {
+      const m = href.match(/\/reels\/reel-stufen-(\d+)\.webp$/);
+      const cap = m && reelStufen[m[1].padStart(2, "0")];
+      if (cap) a.caption = cap;
+    }
+  }
+  return assets;
+}
+
 /** Alle PNG-Slides eines Ordners in Reihenfolge (slide-01, slide-02, …). */
 function collectPng(dir) {
   if (!existsSync(dir)) return [];
@@ -213,10 +311,13 @@ async function applyStandalone() {
   );
   const before = assets.length;
   const n = await buildMarketingCarousels({ OUT, assets });
+  attachCaptions(assets);
+  const mitCaption = assets.filter((a) => a.caption).length;
   writeFileSync(manifestPath, renderManifest(assets));
   console.log(
     `✓ ${n} Marketing-Carousels eingetragen (Katalog: ${before} → ${assets.length} Einträge)`,
   );
+  console.log(`✓ Captions gesetzt: ${mitCaption} Einträge (Marketing + Studio-Carousels + Stufen-Reels)`);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
