@@ -22,6 +22,12 @@ export type VorlagenAsset = {
   slides?: number;
   /** Nur bei kind === "carousel": Pfade aller Slide-Vorschaubilder in Reihenfolge. */
   slidePaths?: string[];
+  /** Fertige Post-Caption zum Kopieren (Marketing- & Studio-Carousels). */
+  caption?: string;
+  /** Mehrere einzeln kopierbare Captions (z. B. Reel-Varianten A/B/C je Stufe). */
+  captions?: { label: string; titel?: string; text: string }[];
+  /** Nur bei kind === "carousel": enthaltene Formate (Label + Pixelmaße). */
+  formate?: { label: string; w: number; h: number }[];
   sizeMB?: number;
 };
 
@@ -1088,7 +1094,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-01.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-stufen-01.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-01.webp",
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Läuft das automatisch?",
+        "text": "Das meiste an deinem Tag hast du heute nicht bewusst entschieden – dein Gehirn spult Bewährtes automatisch ab. Praktisch, bis sich dieselben Konflikte und Gefühle wiederholen, obwohl du sie längst nicht mehr willst. Das ist keine Schwäche, sondern dein Startpunkt: Was du bemerkst, kann anfangen, sich zu verändern. Folge für die nächste Stufe. #werdemeisterdeinergedanken #autopilot #gewohnheiten #bewusstsein #achtsamkeit #selbsterkenntnis #mentaltraining #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Das bin doch ich",
+        "text": "„So bin ich eben\" – dieser Satz hält den Autopiloten am Laufen, weil sich automatische Reaktionen wie freie Entscheidungen anfühlen. Doch deine Muster sind gelernt, lange bevor du wählen konntest; jedes war einmal ein sinnvoller Schutz. Das Problem ist nur, dass sie heute unbemerkt weiterlaufen. Du bist nicht dein Muster – du bist der, der es zum ersten Mal von außen betrachtet. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #autopilot #muster #konditionierung #bewusstsein #achtsamkeit #selbstreflexion #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Der Autopilot-Check",
+        "text": "Eine Mini-Übung für zwischendurch: Halte im Alltag kurz inne – an der Ampel, vor dem Griff zum Handy, zwischen zwei Aufgaben – und frag dich ehrlich: Handle ich gerade bewusst oder automatisch? Nicht bewerten, nur bemerken. Jedes Bemerken ist ein kleiner Riss im Automatischen – und genau dieser Riss ist der Anfang von allem. Speicher dir die Übung und probier sie heute dreimal. #werdemeisterdeinergedanken #autopilot #achtsamkeitsübung #achtsamkeit #bewusstsein #innehalten #mentaltraining #präsenz"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1096,7 +1119,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-02.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-stufen-02.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-02.webp",
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Oh, ich denke gerade",
+        "text": "Erwachen ist kein spektakuläres Ereignis, sondern ein leises „Oh – ich denke gerade\". Dieses Erkennen kann selbst kein Gedanke sein, denn es sieht dem Denken zu – und genau da entsteht zum ersten Mal ein Abstand zwischen dir und deinen Gedanken. Von klein auf haben wir gelernt, jeden Gedanken für bare Münze zu nehmen; dabei sind Gedanken nur Angebote, die kommen und gehen. Folge für die nächste Stufe. #werdemeisterdeinergedanken #erwachen #bewusstsein #achtsamkeit #metakognition #gedanken #selbstwahrnehmung #innerearbeit"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Du bist nicht deine Gedanken",
+        "text": "Wenn du deine Gedanken hören kannst – wer hört dann zu? Du kannst deine Gedanken bemerken, also kannst du nicht nur deine Gedanken sein. Der, der wahrnimmt, war immer schon da – hinter jedem Gedanken, in jedem Alter deines Lebens. Du musst nichts Neues werden; erinnere dich nur öfter daran, wer da eigentlich zusieht. Genau in diesem kleinen Perspektivwechsel beginnt deine Freiheit – nicht in mehr Denken, sondern in mehr Bemerken. Mach den kostenlosen Bewusstseinstest und finde deine Stufe – Link in Bio. #werdemeisterdeinergedanken #dubistnichtdeinegedanken #erwachen #bewusstsein #achtsamkeit #metakognition #selbstwahrnehmung #bewusstseinstest"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Die 3-Sekunden-Pause",
+        "text": "Eine kurze Übung, die überall geht: Halte im Alltag kurz inne – beim Türöffnen, an der roten Ampel, vor dem Griff zum Handy – nimm drei ruhige Atemzüge und frag innerlich: Wer nimmt das hier gerade wahr? Erwarte keine Antwort in Worten, spür einfach, dass da ein Wahrnehmender ist, hinter dem Gedankenstrom. Diese Fähigkeit ist keine Sonderbegabung, sondern trainierbar. Speicher dir die Übung und nutze sie heute. #werdemeisterdeinergedanken #erwachen #atemübung #achtsamkeit #bewusstsein #innehalten #präsenz #mentaltraining"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1104,7 +1144,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-03.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-stufen-03.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-03.webp",
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Du springst in jeden Gedanken",
+        "text": "Stell dir vor, du sitzt am Ufer eines Flusses – deine Gedanken sind das Wasser, das vorbeizieht. Bisher bist du bei jedem Gedanken hineingesprungen und mitgeschwommen; der innere Beobachter dagegen bleibt am Ufer und schaut zu. Solange du im Gedanken steckst, siehst du nur den Gedanken – erst ein Schritt zurück zeigt dir das Muster dahinter. Diese Distanz ist keine Kälte, sondern die ruhige Übersicht, aus der du wählen kannst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #selbstbeobachtung #innererbeobachter #achtsamkeit #bewusstsein #gedankenbeobachten #mentaleklarheit #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Nicht ich bin – ich bemerke",
+        "text": "„Ich bin ein Versager\" fühlt sich an wie die Wahrheit. Doch sieh, was passiert, wenn du umformulierst: „Ich bemerke den Gedanken, dass ich ein Versager sei.\" Plötzlich ist der Gedanke ein Objekt in deinem Bewusstsein – nicht mehr die Brille, durch die du schaust. In der Psychologie heißt das kognitive Defusion: Abstand schaffen, ohne zu kämpfen. Was du ruhig beobachten kannst, bestimmt dich nicht mehr blind. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #selbstbeobachtung #defusion #gedanken #achtsamkeit #bewusstsein #innererkritiker #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Gib dem Gedanken ein Etikett",
+        "text": "Eine ruhige Übung für zehn Minuten: Beobachte deinen Gedankenstrom, ohne einzugreifen, und gib jedem Gedanken eine schlichte Etikette – „planen\", „erinnern\", „sorgen\", „bewerten\". Mehr nicht. Allein das Benennen schafft Abstand. Und zum Schluss die entscheidende Frage: Bist du der Gedanke – oder der, der ihn benennt? Was du klar benennen kannst, verliert seinen unbewussten Griff. Speicher dir die Übung. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeitsübung #gedankenbeobachten #achtsamkeit #bewusstsein #mentaleklarheit #innerearbeit"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1112,7 +1169,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-04.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-stufen-04.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-04.webp",
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Was du wegdrückst, wartet",
+        "text": "Manche Muster sitzen nicht im Kopf, sondern in festgehaltenen Gefühlen und im Körper. Nicht gefühlte Gefühle verschwinden nicht – sie warten, binden Energie und melden sich in den unpassendsten Momenten. Der Verstand erklärt sie lieber, statt sie zu fühlen. Doch ein Gefühl löst sich nicht durch Analyse, sondern durch bewusste Anwesenheit. Wo etwas losgelassen wird, entsteht Raum – für Ruhe, für Energie, für dich. Folge für die nächste Stufe. #werdemeisterdeinergedanken #emotionaleReife #gefühle #loslassen #achtsamkeit #innerearbeit #selbstheilung #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Reite die Welle",
+        "text": "Wir meiden unangenehme Gefühle, weil wir glauben, sie würden uns verschlingen. Doch jedes Gefühl hat einen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab – meist schneller als gedacht. Wer lernt, den Höhepunkt auszuhalten, statt sofort zu handeln, merkt: Die Welle trägt dich, sie verschlingt dich nicht. Aushalten ist keine Passivität, sondern eine aktive, kraftvolle Fähigkeit. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #emotionaleReife #gefühle #emotionsregulation #achtsamkeit #loslassen #innereruhe #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Lad das Gefühl ein",
+        "text": "Eine Übung von zehn Minuten: Erinnere dich an etwas Mittelschweres, das dich noch belastet. Spür nach, wo im Körper sich das Gefühl meldet – Brust, Bauch, Kehle – atme sanft hinein und lass es da sein, ohne etwas ändern zu wollen. Dann sag innerlich: „Du darfst da sein. Und du darfst gehen.\" Beobachte, wie sich die Intensität wandelt. Was Raum bekommt, darf durch dich hindurchziehen – und gehen. Speicher dir die Übung für einen ruhigen Moment. #werdemeisterdeinergedanken #emotionaleReife #körperwahrnehmung #gefühlezulassen #achtsamkeit #loslassen #innerearbeit #selbstmitgefühl"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1120,7 +1194,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-05.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-stufen-05.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-05.webp",
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Vom Beobachter zum Gestalter",
+        "text": "Die ersten Stufen haben dich frei gemacht von automatischem Denken – jetzt nutzt du diese Freiheit aktiv. Denn Gedanken sind formbar: Was du regelmäßig denkst, wird zur Spur, und was zur Spur wird, wird mit der Zeit zur Straße in deinem Kopf. Bisher hast du diese Straßen unbewusst gebaut; ab jetzt entscheidest du, welche du anlegst. Du bist nicht nur Beobachter deines Lebens, sondern sein Gestalter – denn was du nährst, wächst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #schöpferkraft #gedankenkraft #mindset #bewusstgestalten #neuroplastizität #selbstbild #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Der Satz muss wahr werden dürfen",
+        "text": "Deshalb funktionieren die meisten Affirmationen nicht: „Ich bin voller Selbstvertrauen\" wirkt nicht, wenn dein System dem Satz nicht glaubt. „Ich lerne gerade, mir selbst zu vertrauen\" springt nicht zu weit – er ist ehrlich und genau deshalb kraftvoll. Wähle Sätze, die dein System annehmen kann, und lass sie mit dir wachsen. Denn dein Verhalten folgt deinem inneren Selbstbild, geformt durch wiederholte Gedanken, die mit Gefühl verankert werden. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #schöpferkraft #affirmationen #selbstbild #mindset #selbstvertrauen #gedankenkraft #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Richte deinen Morgen aus",
+        "text": "Die ersten drei Minuten entscheiden über deinen Tag. Nimm dir direkt nach dem Aufwachen einen Moment – bevor der Autopilot startet und das Handy übernimmt – und wähle bewusst einen Gedanken oder eine Absicht. Spür kurz nach, wie es sich anfühlt, aus diesem Gedanken heraus in den Tag zu gehen. Und das Entscheidende: Ein stärkender Gedanke bleibt Theorie, bis er in Handlung mündet – leg also eine kleine, konkrete Handlung fest. Speicher dir die Übung für morgen früh. #werdemeisterdeinergedanken #schöpferkraft #morgenroutine #ausrichtung #achtsamkeit #mindset #gewohnheiten #präsenz"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1128,7 +1219,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-06.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-stufen-06.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-06.webp",
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Der stille Widerspruch",
+        "text": "Viele leben in einem stillen Widerspruch: Der Kopf will das eine, das Herz will das andere, und getan wird ein drittes. Dieser innere Zwiespalt kostet enorm viel Energie – meist völlig unbemerkt. Du fühlst dich erschöpft und weißt nicht recht, warum. Innere Ausrichtung bedeutet, diese Spaltung zu schließen: Wenn Denken, Fühlen und Handeln in dieselbe Richtung zeigen, hört der Widerstand auf, deine Kraft zu fressen. Aus dieser Stimmigkeit entstehen Präsenz und Klarheit. Folge für die nächste Stufe. #werdemeisterdeinergedanken #innereausrichtung #stimmigkeit #werte #achtsamkeit #bewusstsein #klarheit #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Das Herz als Kompass",
+        "text": "Wir haben gelernt, dem Verstand alles zu überlassen. Doch der Kopf ist ein brillanter Diener und ein schlechter Meister. Lern, dein Fühlen als Kompass ernst zu nehmen – nicht als Laune, sondern als leise, ehrliche Rückmeldung. Wenn Kopf und Herz sich einig sind, wird Handeln müheloser, und jedes Handeln nach deinen Werten stärkt dein Vertrauen zu dir selbst. Diese Selbst-Übereinstimmung strahlt, lange bevor du ein Wort sagst. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #innereausrichtung #herzkompass #werte #intuition #stimmigkeit #bewusstsein #mentaltraining"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Der Kohärenz-Check",
+        "text": "Eine klärende Übung für zehn Minuten: Denk an eine anstehende Entscheidung oder eine wiederkehrende Situation und frag nacheinander – Was denkt mein Kopf? Was fühlt mein Herz? Was tue ich tatsächlich? Spür, wo diese drei auseinandergehen; genau dort liegt deine Spannung. Du musst nichts Großes umwerfen – wähle einen kleinen, konkreten Schritt, der sie wieder in Einklang bringt. Kohärenz entsteht durch Ausrichtung, nicht durch Anstrengung. Speicher dir den Check für deine nächste Entscheidung. #werdemeisterdeinergedanken #innereausrichtung #kohärenz #entscheidungen #werte #achtsamkeit #klarheit #selbstführung"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1136,7 +1244,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-07.webp",
-    "href": "/admin/vorlagen/datei/reels/reel-stufen-07.webp"
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-07.webp",
+    "captions": [
+      {
+        "label": "Variante A",
+        "titel": "Vom Reagieren zum Gestalten",
+        "text": "Viele stellen sich Meisterschaft als einen Punkt vor, an dem nichts mehr wackelt – ein Missverständnis. Meisterschaft ist kein Endpunkt, an dem du „fertig\" bist, sondern eine neue Art zu leben: Innehalten, beobachten, loslassen und neu wählen geschehen nicht mehr als Technik, sondern als Haltung. Der Abstand zwischen Reiz und Reaktion ist dein natürliches Zuhause geworden – du reagierst nicht mehr, du gestaltest. Und selbst wenn ein Tag dich aus der Bahn wirft, findest du schneller zurück. Folge für die nächste Stufe. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #achtsamkeit #reizreaktionslücke #haltung #mentaltraining #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante B",
+        "titel": "Der Weg ist kein Ziel",
+        "text": "Niemand ist „für immer\" Meister – auch du nicht. Das klingt ernüchternd, ist aber eine Befreiung: Auch dich werden Tage aus der Bahn werfen. Der Unterschied zu früher ist nicht, dass kein Sturm mehr kommt, sondern dass du schneller zurückfindest – mit Geduld und ohne Selbstverurteilung. Aus wiederholter Technik wird eine Haltung, die von selbst greift. Das ist Meisterschaft im eigentlichen Sinn: ein Zuhause, in das du immer schneller zurückkehrst. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #meisterschaft #selbstmitgefühl #achtsamkeit #bewusstsein #geduld #innerearbeit #persönlichkeitsentwicklung"
+      },
+      {
+        "label": "Variante C",
+        "titel": "Umgang mit dem Sturm",
+        "text": "Eine Übung für den Moment der Herausforderung: Wenn dich etwas triggert, halte für einen Atemzug inne, bevor du reagierst. Nur ein Atemzug. Benenne dann innerlich: „Da ist Wut.\" „Da ist Angst.\" Du bist nicht das Gefühl – du bemerkst es. Und dann die entscheidende Frage: Wer will ich in diesem Moment sein? Handle aus dieser Antwort heraus, bewusst gewählt statt automatisch ausgelöst. Genau da schließt sich der Kreis zur ersten Stufe. Speicher dir die Übung für den nächsten Sturm. #werdemeisterdeinergedanken #meisterschaft #trigger #emotionsregulation #achtsamkeit #bewusstsein #reizreaktionslücke #mentaltraining"
+      }
+    ]
   },
   {
     "kategorie": "reels",
@@ -1314,7 +1439,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung.zip",
+    "caption": "Wenn du einen festen Rhythmus brauchst, gibt dir die 4-6-Atmung Halt. Akut bei Stress, vor Gesprächen oder in Wartemomenten. Speicher dir das Carousel. #werdemeisterdeinergedanken #atemübung #46atmung #stressabbau #beruhigen #atem #achtsamkeit #alltag",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1332,7 +1475,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__abend-reflexion/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__abend-reflexion/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion.zip",
+    "caption": "Nicht bewerten, nur bemerken: Die Abend-Reflexion macht Muster sichtbar und beruhigt den Kopf vor dem Schlaf. Speicher dir das Carousel. #werdemeisterdeinergedanken #abendritual #reflexion #dankbarkeit #achtsamkeit #innererbeobachter #tagesabschluss #mentaltraining",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1350,7 +1511,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__atembeobachtung/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__atembeobachtung/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung.zip",
+    "caption": "Die Kunst liegt nicht darin, nicht abzuschweifen – sondern im freundlichen Zurückkehren. Fünf Minuten genügen für den Anfang. Speicher dir das Carousel als Erinnerung. #werdemeisterdeinergedanken #atembeobachtung #meditation #achtsamkeit #innereruhe #atem #mentaltraining #präsenz",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1368,7 +1547,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__body-scan.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__body-scan.zip",
+    "caption": "Gefühle und Anspannung sitzen im Körper. Der Body-Scan bringt dich aus dem Kopf ins Spüren – ideal zum Runterkommen am Abend. Speicher ihn dir für später. #werdemeisterdeinergedanken #bodyscan #körperwahrnehmung #entspannung #achtsamkeit #meditation #anspannunglösen #innereruhe",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1386,7 +1583,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__box-breathing.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__box-breathing.zip",
+    "caption": "Box Breathing wird sogar in Hochdruck-Berufen genutzt: vier gleich lange Phasen bilden ein Quadrat aus Atem – ruhig und klar. Speicher es dir für fordernde Momente. #werdemeisterdeinergedanken #boxbreathing #atemübung #fokus #gelassenheit #atem #mentaltraining #innereruhe",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1404,7 +1619,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check.zip",
+    "caption": "Solange der Autopilot unsichtbar bleibt, fühlt er sich einfach wie „du\" an. Dieser Mini-Check unterbricht ihn – gekoppelt an Türklinke oder rote Ampel. Speicher dir die Erinnerung. #werdemeisterdeinergedanken #autopilot #bewusstheit #achtsamkeit #gewohnheiten #präsenz #alltag #mentaltraining",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1422,7 +1655,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter.zip",
+    "caption": "In dieser Meditation bist du nicht der Denker, sondern der Zeuge. Am Ufer sitzen und zusehen verändert alles. Folg uns für den ganzen Weg. #werdemeisterdeinergedanken #innererbeobachter #gedanken #defusion #achtsamkeit #meditation #mentaltraining #loslassen",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1440,7 +1691,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr.zip",
+    "caption": "Auf dieser Stufe geht es nicht mehr ums Erreichen, sondern ums Bewahren und Weitergeben. Die Kunst ist, immer wieder bewusst in die eigene Mitte zurückzukehren. Folg uns für den ganzen Weg. #werdemeisterdeinergedanken #meisterschaft #präsenz #haltung #achtsamkeit #weitergeben #mitte #mentaltraining",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1458,7 +1727,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz.zip",
+    "caption": "Wenn Atem, Herz und Gefühl zusammenspielen, entsteht innere Stimmigkeit. Ein guter Anker vor Entscheidungen oder bei Stress. Speicher dir die Übung. #werdemeisterdeinergedanken #herzkohärenz #dankbarkeit #atem #innereruhe #meditation #klarheit #mentaltraining",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1476,7 +1763,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual.zip",
+    "caption": "Manches lässt sich nicht wegdenken, aber verabschieden. Ein Ritual gibt dem Loslassen einen klaren, spürbaren Rahmen. Speicher es dir für später. #werdemeisterdeinergedanken #loslassen #ritual #abschluss #innereruhe #achtsamkeit #neuanfang #mentaltraining",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1494,7 +1799,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung.zip",
+    "caption": "Die ersten Minuten des Tages prägen seinen Ton. Statt sofort in Nachrichten zu kippen, richtest du dich bewusst aus. Speicher dir das Ritual für morgen. #werdemeisterdeinergedanken #morgenritual #ausrichtung #achtsamkeit #tagesstart #absicht #präsenz #mentaltraining",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1512,7 +1835,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang.zip",
+    "caption": "Präsenz muss nicht auf dem Kissen stattfinden. Ein bewusster Spaziergang ist gelebte Achtsamkeit – und ein Hund lebt ganz selbstverständlich im Jetzt. Speicher dir die Übung. #werdemeisterdeinergedanken #präsenz #spaziergang #achtsamkeit #sinne #imjetzt #natur #mentaltraining",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1530,7 +1871,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-05.webp",
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-06.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen.zip"
+    "href": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen.zip",
+    "caption": "Ein einfacher Hebel mit großer Wirkung: Ist das Ausatmen länger, schaltet der Körper auf Beruhigung. Gut bei Anspannung oder vor dem Einschlafen. Speicher es dir. #werdemeisterdeinergedanken #atemübung #ausatmen #nervensystem #entspannung #beruhigen #atem #innereruhe",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1549,7 +1908,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung.zip",
+    "caption": "Man muss dir die Wahrheit nicht verbergen – es reicht, dich mit Lärm zu fluten, bis du sie nie in Ruhe anschaust. Dauerempörung fühlt sich wie Anteilnahme an und macht doch nur müde. Wähl ein paar gute Quellen und lies sie in Ruhe. #ablenkung #aufmerksamkeit #mentaleselbstverteidigung #kritischesdenken #fokus #klardenken #werdemeisterdeinergedanken #digitaldetox",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1568,7 +1945,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen.zip",
+    "caption": "Dein Feed ist ein Spiegel, kein Fenster. Er zeigt dir mehr von dem, worauf du schon reagiert hast – und spült Empörung nach oben, weil sie Reichweite bringt. Zähl einmal: Wie viel bestätigt deine Sicht, wie viel fordert sie heraus? #algorithmen #filterblase #mentaleselbstverteidigung #medienkompetenz #kritischesdenken #klardenken #werdemeisterdeinergedanken #socialmedia",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1587,7 +1982,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung.zip",
+    "caption": "Ein ängstlicher Mensch ist der am leichtesten zu lenkende – Angst verengt das Denken auf Schwarz und Weiß. Das Muster: erst Bedrohung, dann Schutz. Atme langsam aus, bevor du entscheidest, und frag: Wer bietet mir gerade Schutz an – und was soll ich dafür geben? #angst #mentaleselbstverteidigung #kritischesdenken #ruhe #selbstschutz #klardenken #werdemeisterdeinergedanken #gelassenheit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1606,7 +2019,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit.zip",
+    "caption": "Fachleuten zu vertrauen ist klug – blinder Gehorsam beginnt dort, wo du aufhörst mitzudenken. Zwei Fragen helfen: Spricht die Person aus ihrem Fachgebiet? Und darf sie sich irren? Offenheit für Rückfragen ist ein Zeichen von Seriosität. #autorität #kritischesdenken #mentaleselbstverteidigung #medienkompetenz #wissenschaft #klardenken #werdemeisterdeinergedanken #vertrauen",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1625,7 +2056,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht.zip",
+    "caption": "Ein Bild fühlt sich an wie ein Beweis, obwohl es nur ein Ausschnitt ist – gewählt von jemandem, mit einer Absicht. Der Rahmen entscheidet, ob dasselbe Ereignis friedlich oder bedrohlich wirkt. Schau ein emotionales Video einmal ohne Ton und urteile aus dem Rest. #bilder #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #fakenews #klardenken #werdemeisterdeinergedanken #wahrnehmung",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1644,7 +2093,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing.zip",
+    "caption": "Dieselben Fakten, ein anderes Wort – und schon fühlt sich alles anders an. Das ist Framing. Es braucht keine falschen Zahlen, nur den passenden Rahmen. Übe die Umformulierungs-Probe: schreib eine Schlagzeile neutral um und schau, was vom Gefühl bleibt. #framing #mentaleselbstverteidigung #kritischesdenken #sprache #medienkompetenz #klardenken #werdemeisterdeinergedanken #kommunikation",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1663,7 +2130,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck.zip",
+    "caption": "Die Mehrheit, vor der du dich fürchtest, gibt es oft gar nicht. Wer glaubt, allein zu stehen, schweigt – und verstärkt so eine gefühlte Mehrheit, die keine ist. Sag einmal ruhig, was du denkst, und schau, wie viele nicken. #gruppendruck #schweigespirale #mentaleselbstverteidigung #kritischesdenken #mut #klardenken #werdemeisterdeinergedanken #selbstbestimmung",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1682,7 +2167,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung.zip",
+    "caption": "Solange du eine Meinung hast, kannst du sie prüfen. Sobald die Meinung dich hat, verteidigst du sie wie dein Leben. Sie ändern zu können ist keine Schwäche, sondern Reife. Frag ehrlich: Halte ich daran fest, weil es stimmt – oder wegen der Zugehörigkeit? #identität #meinung #mentaleselbstverteidigung #selbstreflexion #kritischesdenken #klardenken #werdemeisterdeinergedanken #freiheit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1701,7 +2204,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz.zip",
+    "caption": "Wir weisen Informationen oft nicht zurück, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. Es ist unbequemer, sich selbst zu widersprechen, als die Wirklichkeit zu verbiegen. Nimm die stärkste Fassung einer Position, die du ablehnst – und prüf sie fair. #kognitivedissonanz #kritischesdenken #mentaleselbstverteidigung #selbstreflexion #psychologie #klardenken #werdemeisterdeinergedanken #ehrlichkeit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1720,7 +2241,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda.zip",
+    "caption": "Die stärkste Lenkung ist nicht die Meinung, sondern das Thema. Was oft vorkommt, wirkt wichtig; was fehlt, verschwindet aus deinem Kopf. Lies ein Ereignis bei zwei sehr unterschiedlichen Quellen und schau, was die eine weglässt. #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #nachrichten #aufmerksamkeit #klardenken #werdemeisterdeinergedanken #informiert",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1739,7 +2278,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung.zip",
+    "caption": "Große Veränderungen kommen selten mit einem Knall, sondern in kleinen Schritten, an die man sich einzeln gewöhnt. „War doch schon immer so\" ist der Tarnsatz der Gewöhnung – und stimmt fast nie. Nutz deine erste Reaktion als Information, bevor sie verblasst. #normalisierung #kritischesdenken #mentaleselbstverteidigung #gesellschaft #achtsamkeit #klardenken #werdemeisterdeinergedanken #wahrnehmung",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1758,7 +2315,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda.zip",
+    "caption": "Propaganda erkennst du nicht an Parolen, sondern an drei leisen Hebeln: Wiederholung, Emotion, Vereinfachung. Keiner braucht eine Lüge. Frag dich bei deiner stärksten Überzeugung: geprüft oder nur oft gehört? Speicher dir die Frage. #mentaleselbstverteidigung #kritischesdenken #medienkompetenz #propaganda #gedankenfreiheit #klardenken #werdemeisterdeinergedanken #achtsamkeit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1777,7 +2352,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung.zip",
+    "caption": "Bevor du fragst, was du denkst, entscheidet dein Zustand, wie du denkst. Zu viele wechselnde, emotionale Reize halten dein System in Daueralarm – und in Alarm denkst du enger und bist leichter steuerbar. Schalt eine Reizquelle ab und atme länger aus als ein. #reizüberflutung #stress #mentaleselbstverteidigung #nervensystem #achtsamkeit #klardenken #werdemeisterdeinergedanken #ruhe",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1796,7 +2389,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten.zip",
+    "caption": "„Experte\" oder „Querulant\" – ein einziges Wort entscheidet, ob du zuhörst, bei identischem Satz. Etiketten sparen dir das Denken und genau das ist ihre Gefahr. Zieh das Etikett ab und prüf die Handlung. Welches Reizwort triggert dich sofort? #sprache #etiketten #mentaleselbstverteidigung #kritischesdenken #medienkompetenz #klardenken #werdemeisterdeinergedanken #wörter",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1815,7 +2426,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel.zip",
+    "caption": "Werbung verkauft dir selten ein Produkt – öfter einen Mangel, den sie erst weckt. Erst das Loch, dann die Lösung. Die Pause zwischen Impuls und Kauf ist deine Freiheit. Warte 24 Stunden: Ist der Wunsch dann noch da, war er vielleicht echt. #werbung #konsum #mentaleselbstverteidigung #kritischesdenken #achtsamkeit #klardenken #werdemeisterdeinergedanken #minimalismus",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1834,7 +2463,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung.zip"
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung.zip",
+    "caption": "Dein Gehirn verwechselt „kommt mir bekannt vor\" mit „ist wahr\". Ein Satz, oft genug wiederholt, fühlt sich richtig an – ganz ohne Beleg. Zähl Quellen, nicht Stimmen: Berufen sich alle nur auf dieselbe Ursprungsmeldung? #wiederholung #kritischesdenken #mentaleselbstverteidigung #medienkompetenz #faktencheck #klardenken #werdemeisterdeinergedanken #wahrheit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1853,7 +2500,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__autopilot/slide-06.webp",
       "/admin/vorlagen/datei/carousels/stufen__autopilot/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/stufen__autopilot.zip"
+    "href": "/admin/vorlagen/datei/carousels/stufen__autopilot.zip",
+    "caption": "Vieles in deinem Alltag läuft ab, ohne dass du es bewusst wählst. Das ist keine Schwäche, sondern Effizienz — bis dieselben Muster sich gegen dich wenden. Der erste Schritt ist nicht Ändern, sondern Sehen. Folge für den Weg durch alle 7 Stufen. #werdemeisterdeinergedanken #autopilot #bewusstsein #achtsamkeit #selbsterkenntnis #gewohnheiten #persönlichkeitsentwicklung #mindset",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1872,7 +2537,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung.zip"
+    "href": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung.zip",
+    "caption": "Erkennen allein reicht oft nicht — manche Muster lösen sich erst, wenn du das Gefühl endlich zulässt. Wo etwas losgelassen wird, entsteht Raum für Ruhe und Kraft. Aushalten ist eine aktive, kraftvolle Fähigkeit. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #emotionaleReife #loslassen #gefühle #innerearbeit #selbstheilung #achtsamkeit #persönlichkeitsentwicklung",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1891,7 +2574,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__erwachen/slide-06.webp",
       "/admin/vorlagen/datei/carousels/stufen__erwachen/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/stufen__erwachen.zip"
+    "href": "/admin/vorlagen/datei/carousels/stufen__erwachen.zip",
+    "caption": "Sobald du den Autopiloten bemerkst, geschieht etwas Neues: Du erkennst, dass da jemand ist, der deine Gedanken wahrnimmt. Diese Fähigkeit hat auch einen nüchternen Namen — Metakognition — und sie ist trainierbar. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #erwachen #bewusstsein #gedanken #achtsamkeit #metakognition #selbstwahrnehmung #innerearbeit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1910,7 +2611,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung.zip"
+    "href": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung.zip",
+    "caption": "Auf dieser Stufe geht es um innere Ausrichtung: die Stimmigkeit, aus der Präsenz, Ausstrahlung und ruhige Kraft entstehen. Sie entsteht nicht durch Anstrengung, sondern dadurch, dass Denken, Fühlen und Handeln in dieselbe Richtung zeigen. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #innereAusrichtung #kohärenz #integrität #präsenz #achtsamkeit #persönlichkeitsentwicklung #innerearbeit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1929,7 +2648,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__meisterschaft/slide-06.webp",
       "/admin/vorlagen/datei/carousels/stufen__meisterschaft/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/stufen__meisterschaft.zip"
+    "href": "/admin/vorlagen/datei/carousels/stufen__meisterschaft.zip",
+    "caption": "Meisterschaft ist kein Zustand ohne Sturm, sondern ein Zuhause, in das du immer schneller zurückkehrst. Aus Reagieren wird Gestalten, aus Getriebensein wird Präsenz. Du bist der bewusste Raum, aus dem heraus du dein Leben souverän formst. Folge für den ganzen Weg. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #präsenz #innerefreiheit #achtsamkeit #persönlichkeitsentwicklung #selbstführung",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1948,7 +2685,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__schoepferkraft/slide-06.webp",
       "/admin/vorlagen/datei/carousels/stufen__schoepferkraft/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft.zip"
+    "href": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft.zip",
+    "caption": "Jetzt wirst du vom Beobachter zum bewussten Gestalter: Du wählst nicht länger nur die Gedanken, die dir zufällig einfallen, sondern jene, die dich stärken — und setzt sie um. Denn innere Ausrichtung entfaltet ihre Kraft erst im Tun. Folge für den ganzen Weg. #werdemeisterdeinergedanken #schöpferkraft #mindset #gedankenkraft #selbstbild #bewusstgestalten #persönlichkeitsentwicklung #innerearbeit",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1967,7 +2722,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung.zip"
+    "href": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung.zip",
+    "caption": "Nach dem Erwachen beginnt die eigentliche Übung: das ruhige Zusehen. Der innere Beobachter urteilt nicht und kämpft nicht — er schaut nur. Genau dieses Schauen entzieht dem Automatismus den Boden. Folge für den ganzen Weg. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeit #bewusstsein #gedankenbeobachten #innererbeobachter #mentaleklarheit #persönlichkeitsentwicklung",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -1986,7 +2759,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken.zip",
+    "caption": "Zwischen dem, was passiert, und dem, was du fühlst, liegt immer ein Gedanke. Meist bemerkst du ihn nicht – deshalb hältst du ihn für die Wahrheit. Schreib ihn einmal auf und prüf ihn wie eine Hypothese. Genau da beginnt Veränderung. #gedanken #mentalegesundheit #selbstreflexion #achtsamkeit #psychologie #innerearbeit #kognitiveverzerrung #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2005,7 +2796,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker.zip",
+    "caption": "Der innere Kritiker meint es gut, aber mit veralteten Methoden. Wenn du ihn als Gegenüber erkennst statt als deine Wahrheit, hörst du auf, jedes seiner Worte für bare Münze zu nehmen. An seine Seite tritt ein wohlwollender Mentor. #innererkritiker #selbstmitgefühl #selbstwert #mentalegesundheit #psychologie #innerearbeit #achtsamkeit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2024,7 +2833,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke.zip",
+    "caption": "Zwischen dem, was dir passiert, und dem, was du tust, liegt ein winziger Moment. Wer ihn dehnt, hört auf, ein Spielball zu sein. Ein einziger bewusster Atemzug reicht als erster Keil zwischen Reiz und Reaktion. #reizreaktion #selbstregulation #achtsamkeit #mentalegesundheit #psychologie #innerearbeit #gelassenheit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2043,7 +2870,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation.zip",
+    "caption": "Gefühle haben Anfang und Ende. Du musst sie weder wegdrücken noch dich von ihnen fortreißen lassen. Über den Körper hast du direkten Zugriff: langsames, längeres Ausatmen signalisiert dem Nervensystem Sicherheit – schneller als jedes Argument. #emotionsregulation #gefühle #selbstregulation #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2062,7 +2907,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen.zip",
+    "caption": "Grübeln ist kein Nachdenken, sondern dasselbe Denken in Wiederholung – ohne Ausgang. Der Test ist einfach: Bin ich einer Antwort näher gekommen? Wenn nicht, hilft kein besserer Gedanke, sondern eine klare Entscheidung, dem Kreisen die Energie zu entziehen. #grübeln #gedankenkreisen #mentalegesundheit #schlaf #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2081,7 +2944,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe.zip",
+    "caption": "Etwas zu verstehen und es zu verkörpern sind zwei verschiedene Dinge. Eine Einsicht wird zur zweiten Natur, wenn du sie im rauen Alltag wiederholst – und wenn du sie in eigenen Worten weitergibst. Genau das festigt die Haltung am meisten. #integration #haltung #persönlichkeitsentwicklung #mentalegesundheit #psychologie #innerearbeit #selbstreflexion #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2100,7 +2981,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen.zip",
+    "caption": "Unter deinen vielen Gedanken liegen wenige tiefe Sätze, die einmal sinnvoll waren und heute nur noch filtern. Sie zu finden verändert mehr als jeder Einzelgedanke. Und sie lösen sich nicht durch Behauptungen, sondern durch echte Gegenbeweise. #kernüberzeugungen #glaubenssätze #innerearbeit #mentalegesundheit #psychologie #selbstwert #selbstreflexion #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2119,7 +3018,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen.zip",
+    "caption": "Denkfehler folgen nur einer Handvoll Muster. Wenn du sie kennst, erkennst du sie wieder – und ein scheinbar wahrer Gedanke wird zu einem erkennbaren Muster, dem du nicht mehr ausgeliefert bist. #kognitiveverzerrung #denkfehler #mentalegesundheit #psychologie #selbstreflexion #grübeln #achtsamkeit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2138,7 +3055,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung.zip",
+    "caption": "Vieles, was sich wie dein Wesen anfühlt, ist antrainiertes Reagieren aus einer anderen Zeit. Die gute Nachricht: Jede neue Erfahrung, in der das Befürchtete ausbleibt, schreibt die alte Kopplung ein Stück um. #konditionierung #nervensystem #gewohnheiten #mentalegesundheit #psychologie #innerearbeit #selbstregulation #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2157,7 +3092,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit.zip",
+    "caption": "Anhaltende Muster gehen in den Körper: hochgezogene Schultern, flacher Atem, ein angespannter Bauch. Das ist keine Einbildung und kein Grund für Selbstvorwürfe – Muster sind entstanden, nicht gewählt. Und ein reguliertes Nervensystem entlastet den ganzen Organismus wieder. #nervensystem #stress #körperundgeist #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2176,7 +3129,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet.zip",
+    "caption": "Umlernen ist keine schöne Idee, sondern Biologie. Was du wiederholst, verstärkst du ganz konkret im Gehirn. Deshalb wirkt regelmäßiges Üben mit innerer Beteiligung stärker als jede einmalige Einsicht. #neuroplastizität #gehirn #gewohnheiten #mentalegesundheit #psychologie #innerearbeit #veränderung #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2195,7 +3166,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl.zip",
+    "caption": "Du wächst nicht, indem du dich kleinmachst, sondern indem du dich hältst wie einen Menschen, der dir wichtig ist. Selbstmitgefühl beschönigt nichts – gerade deshalb ist es der stabilere Boden, von dem aus du handeln kannst. #selbstmitgefühl #selbstfürsorge #selbstwert #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -2214,7 +3203,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele/slide-06.webp",
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele/slide-07.webp"
     ],
-    "href": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele.zip"
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele.zip",
+    "caption": "Ziele sind Punkte auf einer Landkarte. Werte sind die Himmelsrichtung – sie geben jedem Schritt Bedeutung. Und ein Wert wird erst real, wenn er in einer kleinen konkreten Handlung sichtbar wird: aus „Gesundheit ist mir wichtig\" wird ein Spaziergang. #werte #sinn #ziele #mentalegesundheit #psychologie #selbstreflexion #innerearbeit #werdemeisterdeinergedanken",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "workshop",
@@ -2566,5 +3573,194 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "format": "PPTX",
     "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich?",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
   }
 ];

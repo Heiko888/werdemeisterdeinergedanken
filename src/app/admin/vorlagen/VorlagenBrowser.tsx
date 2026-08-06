@@ -57,6 +57,7 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
         </div>
+        <CaptionList a={a} />
         <div className="mt-auto flex gap-2 pt-1">
           <a
             href={a.href}
@@ -78,6 +79,62 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
       </figcaption>
     </figure>
   );
+}
+
+function CaptionBox({
+  caption,
+  label = "Caption",
+}: {
+  caption: string;
+  label?: string;
+}) {
+  const [kopiert, setKopiert] = useState(false);
+  return (
+    <div className="mt-1 rounded-lg border border-ink/10 bg-ink/[0.02] p-2.5">
+      <div className="mb-1.5 flex items-center justify-between gap-2">
+        <span className="text-[0.7rem] font-semibold uppercase tracking-wide text-accent">
+          {label}
+        </span>
+        <button
+          type="button"
+          onClick={() => {
+            navigator.clipboard?.writeText(caption).then(
+              () => {
+                setKopiert(true);
+                setTimeout(() => setKopiert(false), 1800);
+              },
+              () => {},
+            );
+          }}
+          className="inline-flex items-center gap-1 rounded-md border border-ink/15 px-2 py-1 text-[0.7rem] font-medium text-ink-mid transition-colors hover:border-accent/40 hover:text-accent"
+        >
+          {kopiert ? "Kopiert ✓" : "Kopieren"}
+        </button>
+      </div>
+      <p className="max-h-24 overflow-y-auto whitespace-pre-line text-[0.72rem] leading-relaxed text-ink-mid [scrollbar-width:thin]">
+        {caption}
+      </p>
+    </div>
+  );
+}
+
+/** Zeigt entweder eine einzelne Caption oder mehrere Varianten (je eigener Button). */
+function CaptionList({ a }: { a: VorlagenAsset }) {
+  if (a.captions && a.captions.length > 0) {
+    return (
+      <div className="flex flex-col gap-1.5">
+        {a.captions.map((c) => (
+          <CaptionBox
+            key={c.label}
+            label={c.titel ? `${c.label} · „${c.titel}“` : c.label}
+            caption={c.text}
+          />
+        ))}
+      </div>
+    );
+  }
+  if (a.caption) return <CaptionBox caption={a.caption} />;
+  return null;
 }
 
 function CarouselKarte({ a }: { a: VorlagenAsset }) {
@@ -118,9 +175,26 @@ function CarouselKarte({ a }: { a: VorlagenAsset }) {
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
         </div>
+        {a.formate && a.formate.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1">
+            <span className="text-[0.65rem] font-semibold uppercase tracking-wide text-ink-muted">
+              Formate
+            </span>
+            {a.formate.map((f) => (
+              <span
+                key={f.label}
+                className="rounded-md bg-ink/5 px-1.5 py-0.5 text-[0.65rem] font-medium tabular-nums text-ink-mid"
+                title={`${f.label} · ${f.w}×${f.h} px`}
+              >
+                {f.label} · {f.w}×{f.h}
+              </span>
+            ))}
+          </div>
+        )}
         <span className="text-[0.7rem] text-ink-muted">
           ← alle {a.slides} Slides durchwischen →
         </span>
+        <CaptionList a={a} />
         <a
           href={a.href}
           download
@@ -310,7 +384,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
             <p className="mt-2 text-sm text-ink-mid">
               {q ? (
                 <>
-                  Für „<span className="font-medium text-ink">{query}</span>" gibt es
+                  Für „<span className="font-medium text-ink">{query}</span>“ gibt es
                   keinen Treffer{kat !== "alle" ? " in dieser Kategorie" : ""}.
                 </>
               ) : (
