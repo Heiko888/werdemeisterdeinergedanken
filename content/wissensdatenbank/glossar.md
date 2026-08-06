@@ -19,6 +19,7 @@ ausführlich behandelt wird.
 ## A
 
 - **Achtsamkeit** – absichtsvolles, nicht-wertendes Gewahrsein des gegenwärtigen Moments (nach Kabat-Zinn). <sub>↳ [11](./11-achtsamkeit-meditation-mentales-training.md)</sub>
+- **Adaptives Unbewusstes** – effiziente, automatische Verarbeitungssysteme, die den Alltag mühelos tragen (Wilson). <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Adulte Neurogenese** – Neubildung von Neuronen im erwachsenen Gehirn; beim Menschen umstritten. <sub>↳ [03](./03-neuroplastizitaet.md) · [21](./21-entwicklung-und-alterung-des-gehirns.md)</sub>
 - **Adversarial Collaboration** – gemeinsames Vorab-Festlegen gegensätzlicher Vorhersagen durch rivalisierende Lager. <sub>↳ [04](./04-theorien-des-bewusstseins.md)</sub>
 - **Affect Labeling** – das Benennen von Gefühlen, das die emotionale Reaktion (Amygdala-Aktivität) dämpfen kann. <sub>↳ [09](./09-emotionen-und-limbisches-system.md) · [23](./23-sprache-und-denken.md)</sub>
@@ -50,6 +51,7 @@ ausführlich behandelt wird.
 - **Biologischer Naturalismus** – Searles Gegenposition: Bewusstsein ist ein biologisch verursachtes Phänomen des neuronalen Gewebes. <sub>↳ [25](./25-ki-maschinen-und-bewusstsein.md)</sub>
 - **Biomarker** – objektiv messbarer Indikator; in der Psychiatrie diagnostisch bislang nicht etabliert. <sub>↳ [24](./24-psychische-gesundheit-neurowissenschaftlich.md)</sub>
 - **Biopsychosoziales Modell** – Krankheitsverständnis, das biologische, psychische und soziale Ebenen als zusammenwirkend begreift. <sub>↳ [24](./24-psychische-gesundheit-neurowissenschaftlich.md)</sub>
+- **Blindsight** – Reaktion auf visuelle Reize ohne bewusstes Sehen bei Schädigung des primären Sehrindenareals (Weiskrantz). <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Blocking** – ein bereits gut vorhergesagter US verhindert, dass ein zusätzlicher Reiz gelernt wird. <sub>↳ [18](./18-konditionierung-und-lernen.md)</sub>
 - **Blut-Hirn-Schranke** – selektive Barriere, die das Gehirn schützt und den Stoffaustausch kontrolliert. <sub>↳ [01](./01-neuroanatomie-aufbau-des-gehirns.md)</sub>
 
@@ -67,7 +69,7 @@ ausführlich behandelt wird.
 
 - **Darm-Hirn-Achse** – bidirektionale Kommunikation zwischen Darm, Mikrobiom und Gehirn über Nerven, Immunsystem und Metabolite. <sub>↳ [22](./22-gehirn-und-koerper-interozeption.md)</sub>
 - **Default Mode Network (DMN)** – Netzwerk medialer Hirnstrukturen, das im Ruhezustand aktiv wird und selbstbezogenes Denken trägt. <sub>↳ [06](./06-aufmerksamkeit-und-wahrnehmung.md) · [07](./07-gedanken-und-kognition.md) · [11](./11-achtsamkeit-meditation-mentales-training.md) · [12](./12-veraenderte-bewusstseinszustaende.md) · [17](./17-das-selbst-und-identitaet.md)</sub>
-- **Deklarativ vs. non-deklarativ** – bewusst berichtbares Wissen vs. Fertigkeiten, Priming, Konditionierung. <sub>↳ [08](./08-gedaechtnis-und-lernen.md)</sub>
+- **Deklarativ vs. non-deklarativ** – bewusst berichtbares Wissen vs. Fertigkeiten, Priming, Konditionierung. <sub>↳ [08](./08-gedaechtnis-und-lernen.md) · [27](./27-das-unbewusste.md)</sub>
 - **Doppelverblindung** – Studiendesign, bei dem weder Behandelte noch Behandelnde die Gruppenzuordnung kennen. <sub>↳ [26](./26-placebo-nocebo-und-erwartung.md)</sub>
 - **Dorsales Striatum** – Teil der Basalganglien, zentral für den Übergang zu gewohnheitsmäßigem, reizgetriebenem Verhalten. <sub>↳ [14](./14-gewohnheiten-und-verhaltensaenderung.md)</sub>
 - **Dual-Stream-Modell** – Theorie zweier Sprachverarbeitungswege: ventral (Verstehen) und dorsal (Laut-zu-Motorik) nach Hickok & Poeppel. <sub>↳ [23](./23-sprache-und-denken.md)</sub>
@@ -128,6 +130,7 @@ ausführlich behandelt wird.
 - **Illusionismus** – die Position, phänomenales Bewusstsein sei eine überzeugende Repräsentations-Täuschung. <sub>↳ [04](./04-theorien-des-bewusstseins.md)</sub>
 - **Illusory Truth Effect** – Steigerung der gefühlten Glaubwürdigkeit einer Aussage durch bloße Wiederholung. <sub>↳ [13](./13-kognitive-verzerrungen-und-selbsttaeuschung.md)</sub>
 - **Implementationsabsicht** – konkreter Wenn-Dann-Plan (Gollwitzer), der Situation und Handlung fest verknüpft. <sub>↳ [14](./14-gewohnheiten-und-verhaltensaenderung.md)</sub>
+- **Impliziter Assoziationstest (IAT)** – Reaktionszeit-Maß für automatische Assoziationen; Aussagekraft für Verhalten umstritten. <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Inattentional Blindness** – Übersehen eines deutlich sichtbaren Reizes, weil die Aufmerksamkeit anderweitig gebunden ist. <sub>↳ [06](./06-aufmerksamkeit-und-wahrnehmung.md)</sub>
 - **Inneres Sprechen** – nach innen verlagertes, oft dialogisches Sprechen mit sich selbst; Werkzeug der Selbstregulation (Wygotski, Fernyhough). <sub>↳ [07](./07-gedanken-und-kognition.md) · [23](./23-sprache-und-denken.md)</sub>
 - **Insula** – Hirnregion, die Körpersignale integriert; anteriorer Teil zentral für subjektives Körper- und Gefühlserleben. <sub>↳ [22](./22-gehirn-und-koerper-interozeption.md)</sub>
@@ -195,6 +198,7 @@ ausführlich behandelt wird.
 - **Neuron** – Nervenzelle; Grundeinheit der Informationsverarbeitung im Gehirn. <sub>↳ [02](./02-neuronen-synapsen-neurotransmitter.md)</sub>
 - **Neuroplastizität** – die lebenslange Fähigkeit des Nervensystems, Struktur und Funktion durch Erfahrung zu verändern. <sub>↳ [03](./03-neuroplastizitaet.md)</sub>
 - **Neuroplastizitäts-Hypothese** – Depression als Zustand reduzierter synaptischer Formbarkeit unter chronischem Stress. <sub>↳ [24](./24-psychische-gesundheit-neurowissenschaftlich.md)</sub>
+- **Neuropsychoanalyse** – moderner Versuch, psychodynamische Ideen mit der Hirnforschung zu verbinden; spekulativ. <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Neurorecht (Neurolaw)** – Schnittstelle von Hirnforschung, Verantwortung und Strafrecht. <sub>↳ [10](./10-freier-wille-und-entscheidung.md)</sub>
 - **Neurotransmitter** – chemischer Botenstoff, der Signale über den synaptischen Spalt trägt. <sub>↳ [02](./02-neuronen-synapsen-neurotransmitter.md)</sub>
 - **Nocebo-Effekt** – Negative Erwartung erzeugt reale Symptome, Schmerzen oder Nebenwirkungen. <sub>↳ [26](./26-placebo-nocebo-und-erwartung.md)</sub>
@@ -219,6 +223,7 @@ ausführlich behandelt wird.
 - **Präfrontaler Kortex** – vorderer Frontallappen; zentral für Planung, Impulskontrolle und exekutive Funktionen. <sub>↳ [01](./01-neuroanatomie-aufbau-des-gehirns.md)</sub>
 - **Predictive Coding** – Modell, nach dem das Gehirn Wahrnehmung durch fortlaufende Vorhersagen erzeugt und nur Vorhersagefehler nach oben weiterleitet. <sub>↳ [06](./06-aufmerksamkeit-und-wahrnehmung.md)</sub>
 - **Preparedness** – evolutionär vorgeprägte Bereitschaft, bestimmte Assoziationen leichter zu lernen (z. B. Geschmack–Übelkeit). <sub>↳ [18](./18-konditionierung-und-lernen.md)</sub>
+- **Priming** – Bahnung: ein Reiz erleichtert die Verarbeitung eines verwandten; semantisch robust, sozial/behavioral fraglich. <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Protoselbst / Kernselbst / autobiografisches Selbst** – Damasios drei aufeinander aufbauende Schichten des Selbst. <sub>↳ [17](./17-das-selbst-und-identitaet.md)</sub>
 - **Publikationsbias** – Verzerrung durch bevorzugte Veröffentlichung positiver Ergebnisse. <sub>↳ [11](./11-achtsamkeit-meditation-mentales-training.md)</sub>
 
@@ -259,6 +264,7 @@ ausführlich behandelt wird.
 - **Stochastischer Papagei** – Kritischer Begriff für Sprachmodelle, die Form ohne Bedeutungsbezug statistisch zusammensetzen. <sub>↳ [25](./25-ki-maschinen-und-bewusstsein.md)</sub>
 - **Strukturelle Plastizität** – physischer Umbau: neue Synapsen, Dendriten, graue Substanz. <sub>↳ [03](./03-neuroplastizitaet.md)</sub>
 - **Subjektive vs. objektive Endpunkte** – Placebo wirkt v. a. auf selbstberichtetes Erleben, kaum auf messbare Krankheitsparameter. <sub>↳ [26](./26-placebo-nocebo-und-erwartung.md)</sub>
+- **Subliminale Wahrnehmung** – Verarbeitung nicht bewusst erlebter Reize; real, aber flach und kurzlebig. <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Substrat-Unabhängigkeit** – Idee, dass dieselbe geistige Funktion in verschiedenen Materialien (Neuronen, Silizium) realisierbar ist. <sub>↳ [25](./25-ki-maschinen-und-bewusstsein.md)</sub>
 - **Synapse** – Kontaktstelle zur Signalübertragung zwischen zwei Zellen. <sub>↳ [02](./02-neuronen-synapsen-neurotransmitter.md)</sub>
 - **Synaptisches Pruning** – erfahrungsabhängiger Abbau überschüssiger Synapsen, der grobe Netzwerke zu präzisen formt. <sub>↳ [21](./21-entwicklung-und-alterung-des-gehirns.md)</sub>
@@ -279,6 +285,7 @@ ausführlich behandelt wird.
 
 ## U
 
+- **Unbewusste, das** – Sammelbegriff für mentale Prozesse ohne bewusstes Erleben; wissenschaftlich präziser als das populäre „Unterbewusstsein". <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Universalgrammatik** – Chomskys Annahme eines angeborenen grammatischen Grundgerüsts; umstritten gegenüber gebrauchsbasierten Ansätzen. <sub>↳ [23](./23-sprache-und-denken.md)</sub>
 - **Unresponsive Wakefulness Syndrome (UWS)** – Wachheit ohne nachweisbares Erleben; neuerer Begriff für den "vegetativen Zustand". <sub>↳ [05](./05-neuronale-korrelate-des-bewusstseins.md)</sub>
 
@@ -288,6 +295,7 @@ ausführlich behandelt wird.
 - **Variable Verstärkung** – Unvorhersehbare Belohnung; erzeugt besonders hartnäckiges Verhalten (Spielautomaten-Prinzip). <sub>↳ [16](./16-belohnung-motivation-und-sucht.md)</sub>
 - **Variabler Verstärkungsplan** – unvorhersehbare Belohnung; erzeugt besonders stabile, löschungsresistente Verhaltensmuster. <sub>↳ [18](./18-konditionierung-und-lernen.md)</sub>
 - **Verdecktes Bewusstsein** – Erhaltenes Erleben ohne jede äußere motorische Reaktion, nur über Hirnaktivität nachweisbar. <sub>↳ [05](./05-neuronale-korrelate-des-bewusstseins.md)</sub>
+- **Verdrängung** – Freuds postuliertes aktives Fernhalten bedrohlicher Inhalte; in klassischer Form empirisch kaum gestützt. <sub>↳ [27](./27-das-unbewusste.md)</sub>
 - **Vergessenskurve** – von Ebbinghaus beschriebener, anfangs steiler Verlauf des Vergessens. <sub>↳ [08](./08-gedaechtnis-und-lernen.md)</sub>
 - **Verhaltenssucht** – Substanzfreie Abhängigkeit; im DSM-5 bislang nur Glücksspiel anerkannt. <sub>↳ [16](./16-belohnung-motivation-und-sucht.md)</sub>
 - **Verlustaversion** – Verluste wiegen psychologisch schwerer als gleich große Gewinne; Kern des Framing-Effekts. <sub>↳ [13](./13-kognitive-verzerrungen-und-selbsttaeuschung.md)</sub>
