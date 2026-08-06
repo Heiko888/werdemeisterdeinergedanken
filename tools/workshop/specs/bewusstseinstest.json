@@ -1,0 +1,316 @@
+{
+  "slug": "bewusstseinstest",
+  "fileStem": "Bewusstseinstest-Wo-stehst-du",
+  "eyebrow": "WORKSHOP · SELBSTERKENNTNIS",
+  "title1": "Wo stehst du",
+  "title2": "gerade?",
+  "subtitle": "Bewusstseinstest & Gedankenprofil. Ein ehrlicher Blick auf deine sieben Stufen – und den nächsten Schritt.",
+  "author": "Heiko Schwaninger  ·  werdemeisterdeinergedanken.de",
+  "format": "Halbtag",
+  "dauer": "ca. 3,5 Std. (halbtags)",
+  "gruppe": "6–15 Personen",
+  "leitung": "Heiko Schwaninger",
+  "agenda": [
+    {"title": "Ankommen", "desc": "Warum eine ehrliche Selbsteinschätzung der Anfang jeder Entwicklung ist."},
+    {"title": "Der Test", "desc": "21 Aussagen, sieben Stufen – du machst den Bewusstseinstest selbst."},
+    {"title": "Die Landkarte", "desc": "Die sieben Stufen der Bewusstseinsentwicklung im Überblick."},
+    {"title": "Die Dimensionen", "desc": "Jede Stufe einzeln verstehen – was sie misst und wozu sie einlädt."},
+    {"title": "Dein Profil", "desc": "Dein eigenes Ergebnis deuten und den nächsten Schritt festhalten."}
+  ],
+  "kernbotschaft": {
+    "pre": "Veränderung beginnt nicht mit einem Ziel, sondern mit einer ehrlichen Frage: ",
+    "accent": "Wo stehst du gerade?",
+    "post": "",
+    "tail": "Der Test macht aus dieser Frage eine Landkarte deiner sieben Stufen."
+  },
+  "notesKernbotschaft": "Wirken lassen. Kurze Stille nach der Frage. Niemand muss laut antworten.",
+  "ausgangspunkt": {
+    "kicker": "AUSGANGSPUNKT",
+    "title": "Ein Spiegel, kein Urteil",
+    "p1": "Der Bewusstseinstest ist keine Prüfung und keine Vorhersage. Er fasst nur zusammen, was du selbst einbringst – ein ehrlicher Spiegel, der mit jedem neuen Durchgang schärfer wird.",
+    "p2": "Sieben Stufen, von Autopilot bis Meisterschaft. Jede wird über drei Aussagen erfasst, jede Antwort auf einer Skala von „trifft gar nicht zu“ bis „trifft voll zu“.",
+    "metricPre": "genau",
+    "metric": "21",
+    "metricLabel": "Aussagen · 3 pro Stufe",
+    "metricNote": "Sieben Stufen, etwa fünf Minuten – daraus entsteht dein Gedankenprofil.",
+    "notes": "Betonen: kein richtig oder falsch. Der Wert liegt in der Ehrlichkeit gegenüber sich selbst."
+  },
+  "uebung1": {
+    "kicker": "ÜBUNG 1 · 10 MINUTEN",
+    "title": "Mach den Test",
+    "steps": [
+      "Öffne den Bewusstseinstest auf werdemeisterdeinergedanken.de/bewusstseinstest.",
+      "Lies jede der 21 Aussagen und antworte spontan, nicht wie du sein möchtest.",
+      "Wähle bei jeder Aussage einen Wert von „trifft gar nicht zu“ bis „trifft voll zu“.",
+      "Notiere dir am Ende deine Schwerpunkt-Stufe – die mit der höchsten Punktzahl."
+    ],
+    "mitnehmen": "Deine erste Antwort ist meist die ehrlichste. Vertrau ihr.",
+    "notes": "Ruhe im Raum halten. Zeit geben. Wer keinen Zugang hat, arbeitet mit dem gedruckten Bogen im Workbook."
+  },
+  "kapitelIntro": {
+    "kicker": "DIE STUFEN",
+    "title": "Deine sieben Stufen",
+    "subtitle": "Jede Stufe ist eine Dimension deiner Selbsteinschätzung – schauen wir sie einzeln an.",
+    "notes": "Übergang: Jetzt haben alle einen Wert. Bevor wir deuten, verstehen wir, was die Stufen bedeuten."
+  },
+  "landkarte": {
+    "kicker": "DIE LANDKARTE",
+    "title": "Die sieben Stufen im Überblick",
+    "items": [
+      {"title": "Autopilot", "sub": "Du wirst gelebt"},
+      {"title": "Erwachen", "sub": "Du bemerkst es"},
+      {"title": "Selbstbeobachtung", "sub": "Du siehst dir zu"},
+      {"title": "Emotionale Reifung", "sub": "Du lässt los"},
+      {"title": "Schöpferkraft", "sub": "Du erschaffst bewusst"},
+      {"title": "Innere Ausrichtung", "sub": "Kopf, Herz und Handeln"},
+      {"title": "Meisterschaft", "sub": "Du gestaltest"}
+    ],
+    "notes": "Keine Stufe ist besser als die andere. Es ist ein Weg, kein Ranking. Kurz die Reihenfolge nachfahren."
+  },
+  "module": [
+    {
+      "badge": "Stufe 01",
+      "title": "Autopilot",
+      "sub": "Du wirst gelebt",
+      "body": "Reaktionen, Gewohnheiten und Gedanken laufen weitgehend automatisch ab, ohne dass du sie bewusst wählst. Der erste Schritt ist, den Autopiloten überhaupt zu bemerken.",
+      "reflexion": "Wo reagierst du im Alltag, ohne es zu merken?",
+      "notes": "Kein Makel. Das System hält uns so funktionsfähig. Entlastend rahmen."
+    },
+    {
+      "badge": "Stufe 02",
+      "title": "Erwachen",
+      "sub": "Du bemerkst es",
+      "body": "Du spürst zunehmend, dass etwas nicht mehr stimmt – auch wenn du es noch nicht benennen kannst. Du beginnst zu hinterfragen, warum du bestimmte Dinge tust.",
+      "reflexion": "Was in deinem Leben fühlt sich gerade nicht mehr ganz stimmig an?",
+      "notes": "Erwachen ist unbequem. Neugier statt Selbstkritik betonen."
+    },
+    {
+      "badge": "Stufe 03",
+      "title": "Selbstbeobachtung",
+      "sub": "Du siehst dir zu",
+      "body": "Du kannst deine Gedanken beobachten, ohne ihnen sofort zu glauben, und bemerkst, wenn ein altes Muster anspringt. Immer öfter hältst du kurz inne, bevor du reagierst.",
+      "reflexion": "Welches Muster erkennst du an dir – auch wenn es noch anspringt?",
+      "notes": "Der innere Beobachter ist das Fundament. Aber Beobachten allein verändert noch nicht."
+    },
+    {
+      "badge": "Stufe 04",
+      "title": "Emotionale Reifung",
+      "sub": "Du lässt los",
+      "body": "Du kannst schwierige Gefühle zulassen und aushalten, ohne sie wegzudrücken. Alte Verletzungen verlieren an Macht, und du übernimmst Verantwortung für deine Gefühle.",
+      "reflexion": "Welches alte Gefühl möchte gerade eigentlich losgelassen werden?",
+      "notes": "Behutsam. Kann berühren. Nach der Reflexion kurze Stille lassen."
+    },
+    {
+      "badge": "Stufe 05",
+      "title": "Schöpferkraft",
+      "sub": "Du erschaffst bewusst",
+      "body": "Du wählst bewusst Gedanken, die dich stärken, und erlebst, dass deine innere Ausrichtung deine äußere Realität beeinflusst. Vor allem setzt du das Erkannte in Handlungen um.",
+      "reflexion": "Was möchtest du bewusst gestalten – und welcher kleine Schritt gehört dazu?",
+      "notes": "Vom Bewältigen zum Gestalten. Vision und Handlung gehören zusammen."
+    },
+    {
+      "badge": "Stufe 06",
+      "title": "Innere Ausrichtung",
+      "sub": "Kopf, Herz und Handeln",
+      "body": "Dein Denken, Fühlen und Handeln ziehen meist an einem Strang. Du triffst Entscheidungen aus innerer Stimmigkeit statt aus Angst und spürst eine ruhige, klare Richtung.",
+      "reflexion": "Wo ziehen Kopf, Herz und Handeln bei dir schon an einem Strang – und wo nicht?",
+      "notes": "Kohärenz auch unter Druck zu halten ist die Kunst. Ruhig sprechen."
+    },
+    {
+      "badge": "Stufe 07",
+      "title": "Meisterschaft",
+      "sub": "Du gestaltest",
+      "body": "Du ruhst so in dir, dass äußere Umstände dich selten aus der Mitte werfen. Auch in Herausforderungen bleibst du präsent und gibst aus innerer Freiheit etwas weiter.",
+      "reflexion": "Was von dem, was du gefunden hast, könntest du für andere nutzbar machen?",
+      "notes": "Meisterschaft ist kein Besitz, sondern tägliche Haltung. Mit Demut rahmen."
+    }
+  ],
+  "uebung2": {
+    "kicker": "ÜBUNG 2 · DEIN PROFIL DEUTEN",
+    "title": "Wo stehst du – und was kommt jetzt?",
+    "steps": [
+      "Schau auf deine sieben Werte: Wo ist eine Stufe verankert, wo im Aufbau, wo Entwicklungsraum?",
+      "Markiere deinen Schwerpunkt – die Stufe mit der höchsten Punktzahl.",
+      "Frag dich ehrlich: Wackelt darunter eine Grundlage, die weiter oben viel trägt?",
+      "Notiere einen einzigen nächsten Schritt für die Stufe, die dich gerade am meisten einlädt."
+    ],
+    "mitnehmen": "Nicht alles auf einmal. Ein Schritt, der wirklich zu dir passt, reicht.",
+    "notes": "Betonen: Das Profil bewertet nicht, es spiegelt. Der nächste Schritt darf klein sein."
+  },
+  "zusammenfassung": {
+    "kicker": "WAS BLEIBT",
+    "title": "Drei Dinge zum Mitnehmen",
+    "items": [
+      {"title": "Ehrlichkeit", "text": "Der Anfang jeder Entwicklung ist ein ehrlicher Blick darauf, wo du stehst."},
+      {"title": "Landkarte", "text": "Die sieben Stufen zeigen dir nicht ein Urteil, sondern eine Richtung."},
+      {"title": "Schritt", "text": "Ein einziger, konkreter nächster Schritt bewegt mehr als ein großer Plan."}
+    ],
+    "notes": "Ruhig zusammenfassen. Die drei Worte langsam nennen."
+  },
+  "angebot": {
+    "kicker": "WIE ES WEITERGEHT",
+    "title": "Dein Weg durch die sieben Stufen",
+    "features": [
+      "Alle sieben Stufen als geführter Weg im Mitgliederbereich",
+      "Dein Gedankenprofil mit persönlicher Bedarfsanalyse",
+      "Praxisübungen und Vertiefungen passend zu deiner Stufe",
+      "Test jederzeit wiederholbar – dein Profil wächst mit dir"
+    ],
+    "preis": "49 €",
+    "preisSuffix": "/ Monat",
+    "url": "werdemeisterdeinergedanken.de/mitgliedschaft",
+    "note": "Erster Schritt kostenlos: der Bewusstseinstest.",
+    "notes": "Kein Druck. Einladung, nicht Verkauf. Auf den kostenlosen Test hinweisen."
+  },
+  "abschluss": {
+    "pre": "Werde Meister deiner ",
+    "accent": "Gedanken",
+    "post": ".",
+    "thanks": "Danke, dass du heute dabei warst.",
+    "url": "werdemeisterdeinergedanken.de",
+    "notes": "Warm abschließen. Kurze Stille, dann Raum für Fragen."
+  },
+  "workbook": {
+    "coverSubtitle": "Dein persönliches Workbook – zum Mitdenken, Reflektieren und Festhalten.",
+    "intro": {
+      "body": "Dieses Heft begleitet dich durch den Workshop. Halte hier deine Testwerte, deine Gedanken zu jeder Stufe und deinen nächsten Schritt fest. Es ist dein Spiegel, nicht deine Bewertung.",
+      "grundKicker": "DIE GRUNDÜBUNG",
+      "grundText": "Antworte ehrlich, nicht wie du sein möchtest. Deine erste Antwort ist meist die wahrste."
+    },
+    "sections": [
+      {
+        "kicker": "EINSTIEG · DEIN AUSGANGSPUNKT",
+        "title": "Wo stehst du gerade?",
+        "body": "Bevor der Test dir eine Zahl gibt, halte deine eigene Einschätzung fest. So kannst du beides später vergleichen.",
+        "uebungKicker": "ÜBUNG · ERSTE AHNUNG",
+        "steps": [
+          "Auf welcher der sieben Stufen vermutest du dich gerade – aus dem Bauch?",
+          "Woran machst du das fest?"
+        ],
+        "prompt": "Was erhoffst du dir von einem ehrlichen Blick auf deinen Standort?",
+        "lines": 3
+      },
+      {
+        "kicker": "STUFE 01 · AUTOPILOT",
+        "title": "Du wirst gelebt",
+        "body": "Vieles läuft automatisch – Reaktionen, Gewohnheiten, Gedanken. Der erste Schritt ist, das überhaupt zu bemerken.",
+        "uebungKicker": "ÜBUNG · BEMERKEN",
+        "steps": [
+          "Wo im Alltag reagierst du, ohne es zu merken?",
+          "Was triggert dich besonders zuverlässig?"
+        ],
+        "prompt": "Beschreibe eine Situation, in der du zuletzt im Autopilot reagiert hast.",
+        "lines": 3
+      },
+      {
+        "kicker": "STUFE 02 · ERWACHEN",
+        "title": "Du bemerkst es",
+        "body": "Du spürst, dass etwas nicht mehr stimmt, und beginnst zu hinterfragen, warum du bestimmte Dinge tust.",
+        "uebungKicker": "ÜBUNG · HINTERFRAGEN",
+        "steps": [
+          "Was fühlt sich gerade nicht mehr stimmig an?",
+          "Welche Frage stellst du dir in letzter Zeit öfter?"
+        ],
+        "prompt": "Was möchtest du nicht länger unbemerkt über dich bestimmen lassen?",
+        "lines": 3
+      },
+      {
+        "kicker": "STUFE 03 · SELBSTBEOBACHTUNG",
+        "title": "Du siehst dir zu",
+        "body": "Du kannst deine Gedanken beobachten, ohne ihnen sofort zu glauben, und hältst öfter inne, bevor du reagierst.",
+        "uebungKicker": "ÜBUNG · MUSTER SEHEN",
+        "steps": [
+          "Welches wiederkehrende Muster erkennst du an dir?",
+          "Wann gelingt es dir, kurz innezuhalten?"
+        ],
+        "prompt": "Nimm ein Muster und geh seiner Herkunft nach: Welcher Glaubenssatz steckt darunter?",
+        "lines": 3
+      },
+      {
+        "kicker": "STUFE 04 · EMOTIONALE REIFUNG",
+        "title": "Du lässt los",
+        "body": "Du kannst schwierige Gefühle aushalten, statt sie wegzudrücken, und übernimmst Verantwortung für sie.",
+        "uebungKicker": "ÜBUNG · RAUM GEBEN",
+        "steps": [
+          "Welches Gefühl drückst du eher weg?",
+          "Wo gibst du anderen die Schuld, statt bei dir zu bleiben?"
+        ],
+        "prompt": "Welche alte Geschichte möchte eigentlich abgeschlossen werden?",
+        "lines": 3
+      },
+      {
+        "kicker": "STUFE 05 · SCHÖPFERKRAFT",
+        "title": "Du erschaffst bewusst",
+        "body": "Du wählst bewusst stärkende Gedanken und setzt das, was du erkennst, in konkrete Handlungen um.",
+        "uebungKicker": "ÜBUNG · GESTALTEN",
+        "steps": [
+          "Welche stärkende Ausrichtung möchtest du täglich verankern?",
+          "In welche kleine Handlung übersetzt du sie?"
+        ],
+        "prompt": "Was möchtest du in deinem Leben bewusst erschaffen?",
+        "lines": 3
+      },
+      {
+        "kicker": "STUFE 06 · INNERE AUSRICHTUNG",
+        "title": "Kopf, Herz und Handeln",
+        "body": "Denken, Fühlen und Handeln ziehen an einem Strang. Du entscheidest aus Stimmigkeit statt aus Angst.",
+        "uebungKicker": "ÜBUNG · KOHÄRENZ",
+        "steps": [
+          "Wo ziehen Kopf, Herz und Handeln bei dir schon zusammen?",
+          "Wo ziehen sie noch auseinander?"
+        ],
+        "prompt": "Welche Entscheidung würdest du treffen, wenn du ganz aus innerer Stimmigkeit handelst?",
+        "lines": 3
+      },
+      {
+        "kicker": "STUFE 07 · MEISTERSCHAFT",
+        "title": "Du gestaltest",
+        "body": "Du ruhst in dir, bleibst auch in Herausforderungen präsent und gibst aus innerer Freiheit etwas weiter.",
+        "uebungKicker": "ÜBUNG · WEITERGEBEN",
+        "steps": [
+          "Was wirft dich selten aus der Mitte – und warum?",
+          "Wo bleibst du auch unter Druck präsent?"
+        ],
+        "prompt": "Was von dem, was du gefunden hast, könntest du für andere nutzbar machen?",
+        "lines": 3
+      },
+      {
+        "kicker": "ABSCHLUSS · DEIN NÄCHSTER SCHRITT",
+        "title": "Dein Profil deuten",
+        "body": "Schau auf deine sieben Werte und deinen Schwerpunkt. Wähle eine Stufe, die dich gerade am meisten einlädt.",
+        "uebungKicker": "ÜBUNG · EIN SCHRITT",
+        "steps": [
+          "Welche Stufen sind verankert, welche im Aufbau, welche Entwicklungsraum?",
+          "Wo liegt dein Schwerpunkt – und wackelt darunter eine Grundlage?"
+        ],
+        "prompt": "Mein einziger nächster Schritt in den kommenden zwei Wochen ist:",
+        "lines": 4
+      }
+    ]
+  },
+  "moderation": {
+    "ziel": [
+      "Die Teilnehmenden machen den Bewusstseinstest und kennen ihre Schwerpunkt-Stufe.",
+      "Sie verstehen die sieben Stufen als Dimensionen ihrer Selbsteinschätzung, nicht als Ranking.",
+      "Jede Person verlässt den Workshop mit einem konkreten, kleinen nächsten Schritt."
+    ],
+    "material": [
+      "Beamer / Bildschirm + Präsentation",
+      "Gedruckte Workbooks je Teilnehmer",
+      "Stifte",
+      "Smartphone oder Tablet für den Test (oder gedruckter Testbogen)",
+      "Wasser / Getränke"
+    ],
+    "ablauf": [
+      {"time": "0:00", "dur": "15 Min", "block": "Ankommen & Begrüßung", "what": "Einstieg, Rahmen, Ton. Warum ein ehrlicher Blick der Anfang ist.", "material": "Folie 1–2", "pause": false},
+      {"time": "0:15", "dur": "15 Min", "block": "Warum Selbsteinschätzung", "what": "Kernbotschaft und Ausgangspunkt: Spiegel statt Urteil, 21 Aussagen, 7 Stufen.", "material": "Kernbotschaft, Ausgangspunkt", "pause": false},
+      {"time": "0:30", "dur": "20 Min", "block": "Übung 1: Den Test machen", "what": "Alle machen den Bewusstseinstest und notieren ihre Schwerpunkt-Stufe.", "material": "Übung 1, Test / Testbogen", "pause": false},
+      {"time": "0:50", "dur": "15 Min", "block": "Die Landkarte", "what": "Kapitel-Intro und Überblick über die sieben Stufen.", "material": "Kapitel-Intro, Landkarte", "pause": false},
+      {"time": "1:05", "dur": "15 Min", "block": "Pause", "what": "Kurze Pause, ankommen lassen.", "material": "—", "pause": true},
+      {"time": "1:20", "dur": "60 Min", "block": "Die sieben Stufen im Detail", "what": "Modul-Folien Stufe 01–07, je mit Reflexionsfrage und kurzer Workbook-Notiz.", "material": "Module 01–07", "pause": false},
+      {"time": "2:20", "dur": "30 Min", "block": "Übung 2: Dein Profil deuten", "what": "Werte lesen, Schwerpunkt markieren, nächsten Schritt festhalten.", "material": "Übung 2, Workbook", "pause": false},
+      {"time": "2:50", "dur": "25 Min", "block": "Zusammenfassung & Ausblick", "what": "Was bleibt, wie es weitergeht, Mitgliederbereich und Gedankenprofil.", "material": "Zusammenfassung, Angebot", "pause": false},
+      {"time": "3:15", "dur": "15 Min", "block": "Abschluss & Fragen", "what": "Abschlussfolie, Raum für Fragen, warm verabschieden.", "material": "Abschluss", "pause": false}
+    ]
+  }
+}

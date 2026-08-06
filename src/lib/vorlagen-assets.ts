@@ -2332,5 +2332,113 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "format": "PPTX",
     "sizeMB": 2.4,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Vertiefungen-Kopf-verstehen.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Wissensreise Dein Gehirn verstehen",
+    "unterKategorie": "Wissensdatenbank",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.0,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Wissensreise-Dein-Gehirn-verstehen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Wissensreise Dein Gehirn verstehen",
+    "unterKategorie": "Wissensdatenbank",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.7,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Wissensreise-Dein-Gehirn-verstehen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Wissensreise Dein Gehirn verstehen",
+    "unterKategorie": "Wissensdatenbank",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Bewusstseinstest Wo stehst du",
+    "unterKategorie": "Bewusstseinstest & Profil",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.0,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Bewusstseinstest-Wo-stehst-du.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Bewusstseinstest Wo stehst du",
+    "unterKategorie": "Bewusstseinstest & Profil",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.7,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Bewusstseinstest-Wo-stehst-du.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Bewusstseinstest Wo stehst du",
+    "unterKategorie": "Bewusstseinstest & Profil",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.8,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Bewusstseinstest-Wo-stehst-du.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Deinen Kopf durchdenken",
+    "unterKategorie": "Blog & Deep-Dives",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.0,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Deinen-Kopf-durchdenken.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Deinen Kopf durchdenken",
+    "unterKategorie": "Blog & Deep-Dives",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.7,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Deinen-Kopf-durchdenken.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Deinen Kopf durchdenken",
+    "unterKategorie": "Blog & Deep-Dives",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Deinen-Kopf-durchdenken.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Journal und Impulse Die Kraft der Reflexion",
+    "unterKategorie": "Journal & Impulse",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.0,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Journal-und-Impulse-Die-Kraft-der-Reflexion.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Journal und Impulse Die Kraft der Reflexion",
+    "unterKategorie": "Journal & Impulse",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.7,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Journal-und-Impulse-Die-Kraft-der-Reflexion.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Journal und Impulse Die Kraft der Reflexion",
+    "unterKategorie": "Journal & Impulse",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.8,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Journal-und-Impulse-Die-Kraft-der-Reflexion.pptx"
   }
 ];

@@ -300,6 +300,10 @@ function buildWorkshop() {
     "mentale-selbstverteidigung": "Mentale Selbstverteidigung",
     "praxis": "Praxis-Werkzeugkasten",
     "vertiefungen": "Deinen Kopf verstehen",
+    "wissensdatenbank": "Wissensdatenbank",
+    "bewusstseinstest": "Bewusstseinstest & Profil",
+    "blog": "Blog & Deep-Dives",
+    "journal": "Journal & Impulse",
   };
 
   for (const file of files) {

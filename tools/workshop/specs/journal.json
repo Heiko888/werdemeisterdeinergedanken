@@ -1,0 +1,305 @@
+{
+  "slug": "journal",
+  "fileStem": "Journal-und-Impulse-Die-Kraft-der-Reflexion",
+  "eyebrow": "WORKSHOP · JOURNALING",
+  "title1": "Die Kraft der",
+  "title2": "Reflexion",
+  "subtitle": "Schreiben schafft Abstand – und aus Abstand entsteht Klarheit. Ein Praxis-Halbtag rund um Journaling und tägliche Impulse.",
+  "author": "Heiko Schwaninger  ·  werdemeisterdeinergedanken.de",
+  "format": "Halbtag",
+  "dauer": "ca. 3,5 Std. (halbtags)",
+  "gruppe": "6–15 Personen",
+  "leitung": "Heiko Schwaninger",
+  "agenda": [
+    {"title": "Warum Schreiben wirkt", "desc": "Wie ein aufgeschriebener Gedanke aufhört, sich im Kreis zu drehen."},
+    {"title": "Freies Schreiben", "desc": "Zum Ankommen erst einmal die Hand laufen lassen – ungefiltert."},
+    {"title": "Die sieben Bausteine", "desc": "Von der Morgenseite bis zum Tagesrückblick, jeweils mit Reflexion."},
+    {"title": "Gedanken umschreiben", "desc": "Die ausführliche Schreibübung: vom alten zum tragenden Satz."},
+    {"title": "Deine Routine", "desc": "Eine kleine, tragfähige Schreibgewohnheit für den Alltag."}
+  ],
+  "kernbotschaft": {
+    "pre": "Die meisten Menschen tragen ihre Gedanken ungeschrieben mit sich herum – ",
+    "accent": "Schreiben schafft Abstand",
+    "post": ".",
+    "tail": "Und aus Abstand entsteht Klarheit."
+  },
+  "notesKernbotschaft": "Wirken lassen. Kurze Stille nach dem Satz – die Teilnehmenden sollen ihn selbst nachspüren.",
+  "ausgangspunkt": {
+    "kicker": "AUSGANGSPUNKT",
+    "title": "Warum Schreiben wirkt",
+    "p1": "Ein Gedanke im Kopf dreht sich im Kreis. Sobald du ihn aufschreibst, wird er zu etwas, das du anschauen kannst – von außen, mit Abstand. Aus „So ist es“ wird „Da ist ein Gedanke“.",
+    "p2": "Genau das übt dieser Halbtag: das ruhige Zu-Papier-Bringen dessen, was in dir läuft. Als leise Begleiter dienen dazwischen die wöchentlichen Impulse – jeder ein Gedanke und eine kleine Übung.",
+    "metricPre": "",
+    "metric": "7",
+    "metricLabel": "wöchentliche Impulse",
+    "metricNote": "Ein Gedanke, eine Mini-Übung – die Serie begleitet dich Woche für Woche und läuft zyklisch weiter.",
+    "notes": "Die Zahl 7 nicht überhöhen. Betonen: Es geht nicht um Menge, sondern um Kontinuität."
+  },
+  "uebung1": {
+    "kicker": "ÜBUNG 1 · 10 MINUTEN",
+    "title": "Freies Schreiben – der erste Gedanke",
+    "steps": [
+      "Nimm ein leeres Blatt und schreib zehn Minuten am Stück – ehrlich, ungefiltert, ohne abzusetzen.",
+      "Beginne mit dem Satz „Gerade geht mir durch den Kopf …“ und lass die Hand einfach weiterlaufen.",
+      "Korrigiere nichts, bewerte nichts. Auch „mir fällt nichts ein“ ist ein gültiger Satz.",
+      "Lies zum Schluss einmal ruhig durch und unterstreiche den einen Satz, der dich am meisten berührt."
+    ],
+    "mitnehmen": "Was aus dem Kopf aufs Papier wandert, hört auf, sich im Kreis zu drehen.",
+    "notes": "Zeit wirklich geben und die Stille aushalten. Niemand muss vorlesen – das Blatt bleibt privat."
+  },
+  "kapitelIntro": {
+    "kicker": "DER WEG",
+    "title": "Sieben Bausteine des Schreibens",
+    "subtitle": "Von der Morgenseite bis zum Tagesrückblick – kleine Formen, die deine Reflexion tragen.",
+    "notes": "Ruhiger Übergang. Klarmachen: Das sind Werkzeuge, keine Pflicht – jede:r nimmt mit, was passt."
+  },
+  "landkarte": {
+    "kicker": "DEINE WERKZEUGE",
+    "title": "Womit du schreibst",
+    "items": [
+      {"title": "Morgenseiten", "sub": "Frei starten"},
+      {"title": "Autopilot-Check", "sub": "Bemerken, was läuft"},
+      {"title": "„Da ist ein Gedanke“", "sub": "Abstand schreiben"},
+      {"title": "Gedanken benennen", "sub": "Muster sichtbar machen"},
+      {"title": "Gefühle als Welle", "sub": "Fühlen und loslassen"},
+      {"title": "Den Satz umschreiben", "sub": "Neu wählen"},
+      {"title": "Tagesrückblick", "sub": "Den Tag schließen"}
+    ],
+    "notes": "Kurz durchgehen, nicht erklären. Die Tiefe kommt in den einzelnen Modul-Folien."
+  },
+  "module": [
+    {
+      "badge": "Modul 01",
+      "title": "Morgenseiten",
+      "sub": "Der Tag beginnt mit dir",
+      "body": "Bevor der Autopilot übernimmt, gehören die ersten Minuten dir. Ein paar Zeilen am Morgen – frei, ohne Ziel – richten dich aus, statt dich in den Tag stolpern zu lassen.",
+      "reflexion": "Wie will ich diesem Tag begegnen – in einem Wort?",
+      "notes": "Anknüpfen an das Ritual Morgen-Ausrichtung: erst schreiben, dann zum Handy greifen."
+    },
+    {
+      "badge": "Modul 02",
+      "title": "Der Autopilot-Check",
+      "sub": "Bemerken, was läuft",
+      "body": "Vieles läuft automatisch – Reaktionen, Gewohnheiten, Gedanken. Ein kurzer schriftlicher Stopp macht den Autopiloten für einen Moment sichtbar: Was tue ich gerade, und bin ich wirklich dabei?",
+      "reflexion": "An welchen Stellen deines Alltags läufst du am meisten im Autopilot?",
+      "notes": "Betonen: Es geht ums Sehen, nicht ums Ändern. Ein Wort genügt oft schon."
+    },
+    {
+      "badge": "Modul 03",
+      "title": "„Da ist ein Gedanke“",
+      "sub": "Abstand schreiben",
+      "body": "Statt „So ist es“ schreibst du „Da ist der Gedanke, dass …“. Diese kleine Verschiebung macht aus einer scheinbaren Wahrheit ein Angebot – und schafft sofort Abstand.",
+      "reflexion": "Welchen Gedanken hältst du für wahr, nur weil er in deinem Kopf auftaucht?",
+      "notes": "Live vormachen: einen Satz laut umformulieren. Der Unterschied ist sofort spürbar."
+    },
+    {
+      "badge": "Modul 04",
+      "title": "Gedanken benennen",
+      "sub": "Muster sichtbar machen",
+      "body": "Gib jedem Gedanken eine schlichte Etikette – „planen“, „sorgen“, „bewerten“. Schwarz auf weiß treten hinter den einzelnen Gedanken die Muster hervor, die dich bisher gesteuert haben.",
+      "reflexion": "Welches Muster erkennst du gerade zum ersten Mal klar bei dir?",
+      "notes": "Ruhig lassen. Manche entdecken hier zum ersten Mal ein wiederkehrendes Muster – Raum dafür geben."
+    },
+    {
+      "badge": "Modul 05",
+      "title": "Gefühle als Welle",
+      "sub": "Fühlen und loslassen",
+      "body": "Manche Themen sitzen tiefer als der Kopf. Sie brauchen einen Ort, an dem sie ungefiltert raus dürfen – ein Brief, den niemand liest, lässt ein Gefühl als Welle durchziehen, statt es festzuhalten.",
+      "reflexion": "Welche Last würdest du gern zu Ende schreiben und loslassen?",
+      "notes": "Sensibel moderieren. Zusichern, dass nichts geteilt wird. Wer mag, zerreißt das Blatt danach."
+    },
+    {
+      "badge": "Modul 06",
+      "title": "Den Satz umschreiben",
+      "sub": "Neu wählen",
+      "body": "Einen einengenden Glaubenssatz erkennst du – dann formulierst du ihn neu: ehrlich, in der Gegenwart, glaubwürdig. Aus „Ich bin …“ wird „Ich lerne gerade, …“.",
+      "reflexion": "Welchen Satz über dich möchtest du ehrlicher und stärkender formulieren?",
+      "notes": "Warnen vor zu großen Sprüngen. Der neue Satz muss sich erreichbar anfühlen, sonst glaubt das System ihn nicht."
+    },
+    {
+      "badge": "Modul 07",
+      "title": "Der Tagesrückblick",
+      "sub": "Den Tag schließen",
+      "body": "Am Abend ziehst du den Tag ohne Wertung noch einmal vorbei: Wo war ich bewusst? Wofür bin ich dankbar? Nicht bilanzieren – nur bemerken, und den Kopf für die Nacht beruhigen.",
+      "reflexion": "Wofür bist du heute dankbar – und sei es eine Kleinigkeit?",
+      "notes": "Anknüpfen an das Ritual Abend-Reflexion. Kein Selbst-Gericht, nur freundliches Bemerken."
+    }
+  ],
+  "uebung2": {
+    "kicker": "ÜBUNG 2 · GEDANKEN UMSCHREIBEN",
+    "title": "Vom alten zum tragenden Satz",
+    "steps": [
+      "Schreib einen einengenden Satz auf, den du oft über dich denkst – wörtlich, so hart wie er klingt.",
+      "Darunter: Woher kenne ich diesen Satz? Seit wann begleitet er mich?",
+      "Formuliere eine neue, ehrliche Version – in der Gegenwart, in deinen Worten. Prüfe: Fühlt sie sich erreichbar an?",
+      "Wähle eine kleine Handlung für diese Woche, die zum neuen Satz passt, und schreib sie dazu."
+    ],
+    "mitnehmen": "Was du oft genug denkst und fühlst, wird zu deiner neuen Normalität.",
+    "notes": "Genug Zeit geben – das ist die Kern-Schreibübung des Tages. Bei Schritt 3 auf Glaubwürdigkeit achten."
+  },
+  "zusammenfassung": {
+    "kicker": "WAS BLEIBT",
+    "title": "Drei Dinge zum Mitnehmen",
+    "items": [
+      {"title": "Abstand", "text": "Aufgeschrieben wird ein Gedanke zu etwas, das du anschauen kannst – statt darin zu stecken."},
+      {"title": "Routine", "text": "Nicht die Menge zählt, sondern die Kontinuität: ein paar ehrliche Zeilen, regelmäßig."},
+      {"title": "Spiegel", "text": "Dein Journal wächst mit jeder Frage, die du beantwortest – ein Spiegel, der zeigt, wo du stehst."}
+    ],
+    "notes": "Langsam sprechen. Jeden der drei Begriffe kurz stehen lassen."
+  },
+  "angebot": {
+    "kicker": "WIE ES WEITERGEHT",
+    "title": "Weiterschreiben im Mitgliederbereich",
+    "features": [
+      "Wöchentliche Impulse per E-Mail – ein Gedanke und eine kleine Übung",
+      "Dein digitales Journal, das mit jeder Reflexion weiterwächst",
+      "Reflexionsfragen aus den 7 Stufen und den Vertiefungen",
+      "Rituale wie Morgen-Ausrichtung und Abend-Reflexion zum Anhören"
+    ],
+    "preis": "49 €",
+    "preisSuffix": "/ Monat",
+    "url": "werdemeisterdeinergedanken.de/mitgliedschaft",
+    "note": "Erster Schritt kostenlos: der Bewusstseinstest.",
+    "notes": "Kein Verkaufsdruck. Als natürliche Fortsetzung des Geschriebenen anbieten, nicht als Pflicht."
+  },
+  "abschluss": {
+    "pre": "Werde Meister deiner ",
+    "accent": "Gedanken",
+    "post": ".",
+    "thanks": "Danke, dass du heute geschrieben hast.",
+    "url": "werdemeisterdeinergedanken.de",
+    "notes": "Ruhig ausklingen lassen. Einladen, das erste Blatt gleich morgen wieder zur Hand zu nehmen."
+  },
+  "workbook": {
+    "coverSubtitle": "Dein persönliches Workbook – zum Mitdenken, Reflektieren und Festhalten.",
+    "intro": {
+      "body": "Dieses Heft ist dein Schreibraum für heute – und darüber hinaus. Nutze die Seiten frei: Es gibt kein Richtig, nur ehrlich. Was du hier festhältst, liest niemand außer dir.",
+      "grundKicker": "DIE GRUNDÜBUNG",
+      "grundText": "Schreib, bevor du denkst – die Hand weiß oft mehr als der Kopf."
+    },
+    "sections": [
+      {
+        "kicker": "EINSTIEG · FREIES SCHREIBEN",
+        "title": "Der erste Gedanke",
+        "body": "Zehn Minuten am Stück, ohne abzusetzen und ohne zu korrigieren.",
+        "uebungKicker": "ÜBUNG · MORGENSEITEN",
+        "steps": [
+          "Beginne mit „Gerade geht mir durch den Kopf …“ und lass die Hand laufen.",
+          "Unterstreiche zum Schluss den Satz, der dich am meisten berührt."
+        ],
+        "prompt": "Was möchte gerade heraus, wenn ich es nur zulasse?",
+        "lines": 4
+      },
+      {
+        "kicker": "MODUL 01 · MORGENSEITEN",
+        "title": "Der Tag beginnt mit dir",
+        "body": "Die ersten Minuten prägen den Ton des Tages – bevor der Autopilot übernimmt.",
+        "uebungKicker": "ÜBUNG · AUSRICHTEN",
+        "steps": [
+          "Wähle ein Wort oder eine Absicht für heute.",
+          "Notiere eine kleine Handlung, die dazu passt."
+        ],
+        "prompt": "Wie will ich diesem Tag begegnen – in einem Wort?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 02 · AUTOPILOT-CHECK",
+        "title": "Bemerken, was läuft",
+        "body": "Ein kurzer Stopp macht den Autopiloten für einen Moment sichtbar.",
+        "uebungKicker": "ÜBUNG · INNEHALTEN",
+        "steps": [
+          "Halte kurz inne: Was tue ich gerade – und bin ich wirklich dabei?",
+          "Benenne in einem Wort, was in dir läuft."
+        ],
+        "prompt": "An welchen Stellen deines Alltags läufst du am meisten im Autopilot?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 03 · ABSTAND",
+        "title": "„Da ist ein Gedanke“",
+        "body": "Aus „So ist es“ wird „Da ist der Gedanke, dass …“ – und ein Abstand entsteht.",
+        "uebungKicker": "ÜBUNG · UMFORMULIEREN",
+        "steps": [
+          "Schreib einen Gedanken auf, der dich gerade beschäftigt.",
+          "Setz „Da ist der Gedanke, dass …“ davor und lies ihn neu."
+        ],
+        "prompt": "Welchen Gedanken hältst du für wahr, nur weil er auftaucht?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 04 · MUSTER",
+        "title": "Gedanken benennen",
+        "body": "Etiketten wie „planen“ oder „sorgen“ machen die Muster hinter den Gedanken sichtbar.",
+        "uebungKicker": "ÜBUNG · ETIKETTIEREN",
+        "steps": [
+          "Beobachte ein paar Minuten deinen Gedankenstrom.",
+          "Gib jedem Gedanken ein schlichtes Etikett."
+        ],
+        "prompt": "Welches Muster erkennst du gerade zum ersten Mal klar bei dir?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 05 · LOSLASSEN",
+        "title": "Gefühle als Welle",
+        "body": "Ein Brief, den niemand liest, lässt ein Gefühl durchziehen, statt es festzuhalten.",
+        "uebungKicker": "ÜBUNG · ABSCHIEDSBRIEF",
+        "steps": [
+          "Schreib ehrlich und ungefiltert an das, was dich belastet.",
+          "Beende mit einem Satz des Loslassens in deinen eigenen Worten."
+        ],
+        "prompt": "Welche Last würdest du gern zu Ende schreiben und loslassen?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 06 · NEU WÄHLEN",
+        "title": "Den Satz umschreiben",
+        "body": "Aus „Ich bin …“ wird „Ich lerne gerade, …“ – ehrlich, in der Gegenwart.",
+        "uebungKicker": "ÜBUNG · UMSCHREIBEN",
+        "steps": [
+          "Notiere einen einengenden Glaubenssatz.",
+          "Formuliere eine neue, glaubwürdige Version."
+        ],
+        "prompt": "Welchen Satz über dich möchtest du stärkender formulieren?",
+        "lines": 3
+      },
+      {
+        "kicker": "MODUL 07 · TAGESRÜCKBLICK",
+        "title": "Den Tag schließen",
+        "body": "Ohne Wertung den Tag vorbeiziehen lassen – und den Kopf für die Nacht beruhigen.",
+        "uebungKicker": "ÜBUNG · RÜCKBLICK",
+        "steps": [
+          "Frage: Wo war ich heute bewusst? Wo hat der Autopilot übernommen?",
+          "Halte eine Erkenntnis für morgen fest."
+        ],
+        "prompt": "Wofür bist du heute dankbar – und sei es eine Kleinigkeit?",
+        "lines": 3
+      }
+    ]
+  },
+  "moderation": {
+    "ziel": [
+      "Die Teilnehmenden erleben, wie Schreiben Abstand zu den eigenen Gedanken schafft.",
+      "Sie lernen sieben einfache Journaling-Formen kennen und probieren sie schreibend aus.",
+      "Jede:r nimmt eine tragfähige, alltagstaugliche Schreibroutine mit nach Hause."
+    ],
+    "material": [
+      "Beamer / Bildschirm + Präsentation",
+      "Gedruckte Workbooks je Teilnehmer",
+      "Stifte (und Ersatzstifte)",
+      "Blanko-Papier für die freien Schreibübungen",
+      "Wasser / Getränke"
+    ],
+    "ablauf": [
+      {"time": "0:00", "dur": "15 Min", "block": "Ankommen & Begrüßung", "what": "Kurze Vorstellung, Rahmen und Haltung: Alles Geschriebene bleibt privat.", "material": "Folie 1–2", "pause": false},
+      {"time": "0:15", "dur": "15 Min", "block": "Warum Schreiben wirkt", "what": "Kernbotschaft und Ausgangspunkt: der Gedanke, der aufhört, sich zu drehen.", "material": "Folie 3–5", "pause": false},
+      {"time": "0:30", "dur": "20 Min", "block": "Übung 1: Freies Schreiben", "what": "Zehn Minuten ungefiltert schreiben, danach kurzer Austausch in Ruhe.", "material": "Folie 6", "pause": false},
+      {"time": "0:50", "dur": "10 Min", "block": "Überblick: Die Bausteine", "what": "Die sieben Schreibformen als Landkarte vorstellen.", "material": "Folie 7–8", "pause": false},
+      {"time": "1:00", "dur": "40 Min", "block": "Module 01–04 mit Reflexionen", "what": "Morgenseiten, Autopilot-Check, „Da ist ein Gedanke“, Gedanken benennen – je mit kurzer Schreibphase.", "material": "Folie 9–12", "pause": false},
+      {"time": "1:40", "dur": "15 Min", "block": "Kaffeepause", "what": "Kurz durchatmen und sich bewegen.", "material": "–", "pause": true},
+      {"time": "1:55", "dur": "35 Min", "block": "Module 05–07 mit Reflexionen", "what": "Gefühle als Welle, Den Satz umschreiben, Tagesrückblick – je mit Schreibphase.", "material": "Folie 13–15", "pause": false},
+      {"time": "2:30", "dur": "30 Min", "block": "Übung 2: Gedanken umschreiben", "what": "Die ausführliche Schreibübung: vom alten zum tragenden Satz.", "material": "Folie 16", "pause": false},
+      {"time": "3:00", "dur": "15 Min", "block": "Was bleibt & Routine bauen", "what": "Zusammenfassung und Verabredung einer kleinen täglichen Schreibgewohnheit.", "material": "Folie 17", "pause": false},
+      {"time": "3:15", "dur": "15 Min", "block": "Ausblick & Abschluss", "what": "Impulse und Mitgliederbereich als Fortsetzung, ruhiger Abschluss.", "material": "Folie 18–19", "pause": false}
+    ]
+  }
+}
