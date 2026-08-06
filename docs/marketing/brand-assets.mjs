@@ -178,6 +178,51 @@ const ebookPost = (w, h) => {
 </div>`);
 };
 
+// Instagram-Story / Key-Visual – Brain + Marke, orientierungsbewusst.
+// Querformat = zweispaltig (Brain + Text), sonst zentrierte Säule.
+const STORY_TEXT = `
+    <div class="eyebrow">Bewusstsein · Mentale Selbstverteidigung · 7 Stufen</div>
+    <div class="h">Werde Meister deiner<br><span class="g">Gedanken</span>.</div>
+    <div class="sub">Raus aus dem Autopilot – rein in echte innere Klarheit. Schritt für Schritt.</div>
+    <div class="url">www.werdemeisterdeinergedanken.de</div>`;
+
+const storyPost = (w, h) => {
+  const land = w > h * 1.15;
+  const base = Math.min(w, h);
+  const b = (v) => Math.round(base * v);
+  const brainSize = land
+    ? Math.round(h * 0.66)
+    : Math.round(base * (h > w * 1.4 ? 0.5 : h > w ? 0.44 : 0.36));
+  const common = `
+.eyebrow{font-size:${b(0.024)}px;letter-spacing:.16em}
+.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.32), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
+.brain{position:relative;width:${brainSize}px;height:${brainSize}px}
+.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
+.h .g{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:${b(0.033)}px;line-height:1.42;color:rgba(244,242,236,.80)}
+.url{font-size:${b(0.028)}px}`;
+
+  if (land) {
+    return shell(w, h, `${common}
+.post{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.05)}px;padding:0 ${Math.round(w*0.08)}px}
+.brainwrap{position:relative;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+.col{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:${b(0.036)}px;max-width:${Math.round(w*0.5)}px}
+`, `<div class="post">
+  <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${brainUrl}"></div>
+  <div class="col">${STORY_TEXT}</div>
+</div>`);
+  }
+  // Hoch-/Quadratformat: Brain oben, zentrierte Textsäule darunter
+  return shell(w, h, `${common}
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.06)}px ${Math.round(w*0.09)}px;gap:${b(0.045)}px}
+.brainwrap{position:relative;display:flex;align-items:center;justify-content:center}
+.col{display:flex;flex-direction:column;align-items:center;gap:${b(0.034)}px;max-width:96%}
+`, `<div class="post">
+  <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${brainUrl}"></div>
+  <div class="col">${STORY_TEXT}</div>
+</div>`);
+};
+
 // ---------- Inhalte ---------------------------------------------------------
 const THUMBS = [
   { key: "01", eyebrow: "Mentale Selbstverteidigung",
@@ -270,6 +315,9 @@ const EBOOK_FORMATS = [
 ];
 for (const F of EBOOK_FORMATS)
   TARGETS.push({ file: `ebook/WMDG-Ebook-${F.key}.png`, w: F.w, h: F.h, html: () => ebookPost(F.w, F.h) });
+// Instagram-Story / Key-Visual – dieselben 5 Formate wie das E-Book
+for (const F of EBOOK_FORMATS)
+  TARGETS.push({ file: `instagram/WMDG-Instagram-Story-${F.key}.png`, w: F.w, h: F.h, html: () => storyPost(F.w, F.h) });
 
 // ---------- Render ----------------------------------------------------------
 const require = createRequire(import.meta.url);
@@ -282,8 +330,11 @@ function findChrome(){
   throw new Error("Kein Chromium/Chrome gefunden. Führe aus:  npx playwright install chromium");
 }
 const { chromium } = require("playwright");
+// Optional nur eine Teilmenge rendern:  ONLY=instagram node docs/marketing/brand-assets.mjs
+const only = process.env.ONLY;
+const targets = only ? TARGETS.filter((t) => t.file.includes(only)) : TARGETS;
 const browser = await chromium.launch({ executablePath: findChrome() });
-for (const t of TARGETS){
+for (const t of targets){
   const page = await browser.newPage({ viewport:{ width:t.w, height:t.h }, deviceScaleFactor:1 });
   const tmp = join(HERE, `.tmp-asset.html`);
   writeFileSync(tmp, t.html());

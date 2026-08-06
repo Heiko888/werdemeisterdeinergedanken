@@ -90,11 +90,43 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story",
+    "titel": "Instagram Story 9x16",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-008.webp",
-    "href": "/admin/vorlagen/datei/social/social-008.webp"
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-9x16.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-9x16.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 4x5",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-4x5.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-4x5.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-1x1.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-1x1.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-16x9.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-16x9.webp"
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 2x3",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-2x3.webp",
+    "href": "/admin/vorlagen/datei/social/social-story-2x3.webp"
   },
   {
     "kategorie": "social",
