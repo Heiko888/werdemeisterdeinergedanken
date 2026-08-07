@@ -167,7 +167,7 @@ const ebookPost = (w, h) => {
   // Buch höhenbasiert dimensionieren → verlässlicher Rand oben/unten,
   // kein Überlaufen mehr (Mockup-Ratio h/w ≈ 1,37).
   const bookH = land ? Math.round(h * 0.66)
-    : Math.round(h * (h > w * 1.4 ? 0.36 : h > w ? 0.38 : 0.40));
+    : Math.round(h * (h > w * 1.4 ? 0.34 : h > w ? 0.35 : 0.40));
   const bookW = Math.round(bookH / 1.37);
   const common = `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
@@ -195,11 +195,11 @@ const ebookPost = (w, h) => {
   // Hochformat (4:5, 9:16, 2:3): Eyebrow oben, dann das Cover, darunter
   // Headline, Punkte und CTA – das Buch liegt zwischen Eyebrow und Headline.
   return shell(w, h, `${common}
-.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.055)}px ${Math.round(w*0.1)}px;gap:${b(0.038)}px}
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.07)}px ${Math.round(w*0.1)}px;gap:${b(0.062)}px}
 .bookwrap{position:relative;display:flex;justify-content:center}
-.col{display:flex;flex-direction:column;align-items:center;gap:${b(0.038)}px}
-.bul{align-items:flex-start}
-.h{max-width:96%}
+.col{display:flex;flex-direction:column;align-items:center;gap:${b(0.05)}px}
+.bul{align-items:flex-start;gap:${b(0.03)}px}
+.h{max-width:96%;line-height:1.18}
 `, `<div class="post">
   <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
