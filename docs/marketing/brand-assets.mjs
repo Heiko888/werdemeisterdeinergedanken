@@ -140,7 +140,7 @@ const ebookPost = (w, h) => {
   // Buch höhenbasiert dimensionieren → verlässlicher Rand oben/unten,
   // kein Überlaufen mehr (Mockup-Ratio h/w ≈ 1,37).
   const bookH = land ? Math.round(h * 0.66)
-    : Math.round(h * (h > w * 1.4 ? 0.32 : h > w ? 0.28 : 0.26));
+    : Math.round(h * (h > w * 1.4 ? 0.36 : h > w ? 0.38 : 0.40));
   const bookW = Math.round(bookH / 1.37);
   const common = `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
@@ -167,7 +167,7 @@ const ebookPost = (w, h) => {
   }
   // Hoch-/Quadratformat: zentrierte Säule mit viel Luft
   return shell(w, h, `${common}
-.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.07)}px ${Math.round(w*0.1)}px;gap:${b(0.05)}px}
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.055)}px ${Math.round(w*0.1)}px;gap:${b(0.04)}px}
 .bookwrap{position:relative;display:flex;justify-content:center}
 .col{display:flex;flex-direction:column;align-items:center;gap:${b(0.04)}px}
 .bul{align-items:flex-start}
