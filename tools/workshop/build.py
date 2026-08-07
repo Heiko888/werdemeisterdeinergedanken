@@ -57,6 +57,14 @@ WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 MUTED = RGBColor(0xAE, 0xB6, 0xC6)
 MUTED2 = RGBColor(0xD8, 0xDB, 0xE6)
 MUTED3 = RGBColor(0xC3, 0xCC, 0xDD)
+# Helle Inhaltsfolien (weißer Grund)
+INK = RGBColor(0x1A, 0x22, 0x33)      # Überschriften auf Weiß
+SOFT = RGBColor(0x48, 0x52, 0x4E)     # Fließtext auf Weiß
+NUM_DARK = RGBColor(0x08, 0x10, 0x2A)  # Zahl auf dem Farbkreis
+MINT = RGBColor(0xE7, 0xF4, 0xF5)     # Reflexions-Karte (hell-teal)
+GREENTINT = RGBColor(0xF2, 0xF6, 0xEC)  # Zusammenfassungs-Karten (hell-grün)
+DEEPNAVY = RGBColor(0x0F, 0x1E, 0x44)  # Preis-Karte
+LIGHTONNAVY = RGBColor(0xE7, 0xEC, 0xF5)  # Fließtext auf Navy
 
 HEAD = "Cambria"
 BODY = "Calibri"
@@ -175,307 +183,143 @@ def notes(slide, text):
 
 
 # --------------------------------------------------------------------------- #
-# Folien-Typen
+# Folien-Typen  –  Design 1:1 nach den bestehenden Decks („Deinen Kopf
+# verstehen" als Vorbild): Hero-Folien auf Navy-Bild, Inhaltsfolien auf Weiß.
 # --------------------------------------------------------------------------- #
-ML = 0.95          # linker Rand
+ML = 0.8            # linker Rand
 CW = 13.333 - 2 * ML  # Inhaltsbreite
+CIRCLE = os.path.join(ASSETS, "circle.png")
 
 
 def new_slide(prs):
     return prs.slides.add_slide(prs.slide_layouts[6])
 
 
+def bg_white(slide):
+    bg = slide.background
+    bg.fill.solid()
+    bg.fill.fore_color.rgb = WHITE
+
+
+def disc(slide, l, t, d, number, size):
+    """Nummern-Kreis: Farbverlauf-Scheibe (Bild) mit dunkler Zahl darüber."""
+    slide.shapes.add_picture(CIRCLE, IN(l), IN(t), IN(d), IN(d))
+    tf = textbox(slide, l, t, d, d, anchor=MSO_ANCHOR.MIDDLE)
+    p = para(tf, first=True)
+    p.alignment = PP_ALIGN.CENTER
+    run(p, str(number), size, NUM_DARK, bold=True, font=HEAD)
+
+
+def head_light(slide, kick, title, title_size=30, title_w=11.7):
+    """Grüner Kicker + dunkle Serifen-Überschrift auf Weiß."""
+    tf = textbox(slide, ML, 0.7, 8.0, 0.35)
+    kicker(tf, kick, GREEN, 12)
+    tf = textbox(slide, ML, 1.05, title_w, 1.0)
+    p = para(tf, first=True)
+    p.line_spacing = 1.03
+    run(p, title, title_size, INK, bold=True, font=HEAD)
+
+
+# ------------------------------- Hero-Folien -------------------------------- #
 def slide_title(prs, s):
     sl = new_slide(prs)
     bg_image(sl, os.path.join(ASSETS, "bg-title.png"))
-    # Gehirn dezent oben rechts
-    sl.shapes.add_picture(os.path.join(ASSETS, "brain.png"), IN(9.55), IN(0.7),
-                          height=IN(2.5))
-    tf = textbox(sl, ML, 1.15, 8.4, 0.5)
-    kicker(tf, s["eyebrow"], LEAF_BRIGHT, 13)
-    tf = textbox(sl, ML, 1.75, 9.6, 2.7)
+    sl.shapes.add_picture(os.path.join(ASSETS, "brain.png"), IN(9.7), IN(1.85),
+                          width=IN(3.0), height=IN(3.0))
+    tf = textbox(sl, 0.85, 1.2, 8.0, 0.35)
+    kicker(tf, s["eyebrow"], LEAF_BRIGHT, 12)
+    tf = textbox(sl, 0.8, 1.8, 8.7, 2.5)
     p = para(tf, first=True)
-    p.line_spacing = 1.02
-    run(p, s["title1"] + " ", 52, WHITE, bold=True, font=HEAD)
+    p.line_spacing = 1.0
+    run(p, s["title1"], 48, WHITE, bold=True, font=HEAD)
     p2 = tf.add_paragraph()
-    p2.line_spacing = 1.02
-    run(p2, s["title2"], 52, TEAL_BRIGHT, bold=True, font=HEAD)
-    tf = textbox(sl, ML, 4.55, 8.6, 1.1)
+    p2.line_spacing = 1.0
+    run(p2, s["title2"], 44, TEAL_BRIGHT, bold=False, font=HEAD)
+    tf = textbox(sl, 0.85, 4.55, 8.3, 1.0)
     p = para(tf, first=True)
     p.line_spacing = 1.2
-    run(p, s["subtitle"], 17, MUTED2, font=BODY)
-    tf = textbox(sl, ML, 6.55, 10, 0.4)
+    run(p, s["subtitle"], 16, MUTED2, font=BODY)
+    tf = textbox(sl, 0.85, 6.5, 9.0, 0.4)
     p = para(tf, first=True)
-    run(p, s["author"], 13, MUTED, font=BODY)
+    run(p, s["author"], 13, MUTED, bold=True, font=BODY)
     notes(sl, s.get("notesTitle") or "Begrüßung. Kurz vorstellen. Rahmen setzen: heute geht es ums bewusste Sehen, nicht um Ratschläge. Vertraulichkeit im Raum betonen.")
-
-
-def slide_agenda(prs, s):
-    a = s["agenda"]
-    sl = new_slide(prs)
-    bg_solid(sl, NAVY)
-    tf = textbox(sl, ML, 0.7, CW, 0.4)
-    kicker(tf, "ÜBERBLICK", LEAF)
-    tf = textbox(sl, ML, 1.12, CW, 0.7)
-    p = para(tf, first=True)
-    run(p, "Was dich heute erwartet", 30, WHITE, bold=True, font=HEAD)
-    top = 2.15
-    row_h = (6.9 - top) / len(a)
-    for i, it in enumerate(a):
-        y = top + i * row_h
-        circle(sl, ML, y, 0.5, i + 1, fill=TEAL if i % 2 == 0 else GREEN, size=16)
-        tf = textbox(sl, ML + 0.75, y - 0.04, CW - 0.75, row_h, anchor=MSO_ANCHOR.TOP)
-        p = para(tf, first=True)
-        run(p, it["title"], 17, WHITE, bold=True, font=BODY)
-        p2 = tf.add_paragraph()
-        p2.space_before = Pt(1)
-        run(p2, it["desc"], 13.5, MUTED, font=BODY)
-    notes(sl, s.get("notesAgenda") or "Agenda ruhig durchgehen. Zeitrahmen nennen. Frage in die Runde: Was möchtet ihr heute mitnehmen?")
 
 
 def slide_statement(prs, s):
     k = s["kernbotschaft"]
     sl = new_slide(prs)
     bg_image(sl, os.path.join(ASSETS, "bg-divider.png"))
-    tf = textbox(sl, ML + 0.4, 2.1, CW - 0.8, 3.0, anchor=MSO_ANCHOR.MIDDLE)
+    tf = textbox(sl, 1.1, 2.2, 11.1, 2.6, anchor=MSO_ANCHOR.TOP)
     p = para(tf, first=True)
-    p.alignment = PP_ALIGN.LEFT
     p.line_spacing = 1.12
-    run(p, k["pre"], 32, WHITE, bold=True, font=HEAD)
-    run(p, k["accent"], 32, TEAL_BRIGHT, bold=True, font=HEAD)
-    run(p, k["post"], 32, WHITE, bold=True, font=HEAD)
+    run(p, k["pre"], 40, WHITE, bold=True, font=HEAD)
+    run(p, k["accent"], 40, LEAF_BRIGHT, bold=True, font=HEAD)
+    run(p, k["post"], 40, WHITE, bold=True, font=HEAD)
     if k.get("tail"):
-        p2 = tf.add_paragraph()
-        p2.space_before = Pt(14)
-        run(p2, k["tail"], 18, MUTED2, font=BODY)
-    notes(sl, k.get("notes") or "Wirken lassen. Kurze Stille nach dem Satz.")
-
-
-def slide_metric(prs, s):
-    a = s["ausgangspunkt"]
-    sl = new_slide(prs)
-    bg_solid(sl, NAVY)
-    tf = textbox(sl, ML, 0.7, 7.3, 0.4)
-    kicker(tf, a["kicker"], LEAF)
-    tf = textbox(sl, ML, 1.12, 7.3, 1.0)
-    p = para(tf, first=True)
-    p.line_spacing = 1.05
-    run(p, a["title"], 26, WHITE, bold=True, font=HEAD)
-    tf = textbox(sl, ML, 2.55, 6.9, 3.4)
-    p = para(tf, first=True)
-    p.line_spacing = 1.22
-    p.space_after = Pt(12)
-    run(p, a["p1"], 15, MUTED2, font=BODY)
-    p2 = tf.add_paragraph()
-    p2.line_spacing = 1.22
-    run(p2, a["p2"], 15, MUTED2, font=BODY)
-    # Kennzahl-Karte rechts
-    rrect(sl, 8.7, 2.2, 3.7, 3.0, PANEL, radius=0.09)
-    tf = textbox(sl, 8.95, 2.5, 3.2, 0.4)
-    p = para(tf, first=True)
-    p.alignment = PP_ALIGN.CENTER
-    run(p, a.get("metricPre", "").upper(), 12, LEAF, bold=True, tracking=2)
-    tf = textbox(sl, 8.95, 2.95, 3.2, 1.2)
-    p = para(tf, first=True)
-    p.alignment = PP_ALIGN.CENTER
-    run(p, a["metric"], 54, TEAL_BRIGHT, bold=True, font=HEAD)
-    tf = textbox(sl, 8.95, 4.15, 3.2, 0.4)
-    p = para(tf, first=True)
-    p.alignment = PP_ALIGN.CENTER
-    run(p, a["metricLabel"], 15, WHITE, bold=True)
-    tf = textbox(sl, 8.95, 4.6, 3.2, 0.55)
-    p = para(tf, first=True)
-    p.alignment = PP_ALIGN.CENTER
-    p.line_spacing = 1.1
-    run(p, a["metricNote"], 11.5, MUTED, font=BODY)
-    notes(sl, a.get("notes") or "Kennzahl verankern. Überleitung zur ersten Übung.")
-
-
-def slide_exercise(prs, s, ex):
-    sl = new_slide(prs)
-    bg_solid(sl, NAVY)
-    tf = textbox(sl, ML, 0.7, CW, 0.4)
-    kicker(tf, ex["kicker"], TEAL)
-    tf = textbox(sl, ML, 1.12, CW, 0.7)
-    p = para(tf, first=True)
-    run(p, ex["title"], 30, WHITE, bold=True, font=HEAD)
-    steps = ex["steps"]
-    top = 2.15
-    row_h = min(0.82, (5.2 - top) / max(len(steps), 1) + 0.0)
-    row_h = (5.35 - top) / len(steps)
-    for i, st in enumerate(steps):
-        y = top + i * row_h
-        circle(sl, ML, y, 0.46, i + 1, fill=TEAL if i % 2 == 0 else GREEN, size=15)
-        tf = textbox(sl, ML + 0.72, y - 0.02, CW - 0.72, row_h, anchor=MSO_ANCHOR.MIDDLE)
+        tf = textbox(sl, 1.12, 5.0, 10.0, 0.9)
         p = para(tf, first=True)
-        p.line_spacing = 1.08
-        run(p, st, 15.5, MUTED2, font=BODY)
-    # MITNEHMEN-Box
-    rrect(sl, ML, 5.65, CW, 1.15, PANEL, radius=0.11)
-    tf = textbox(sl, ML + 0.35, 5.85, CW - 0.7, 0.35)
-    kicker(tf, "MITNEHMEN", LEAF, 11.5)
-    tf = textbox(sl, ML + 0.35, 6.2, CW - 0.7, 0.55)
-    p = para(tf, first=True)
-    p.line_spacing = 1.1
-    run(p, ex["mitnehmen"], 14.5, WHITE, italic=True, font=BODY)
-    notes(sl, ex.get("notes") or "Übung anleiten und Zeit lassen. Danach 2–3 Stimmen einsammeln. Nichts bewerten.")
+        p.line_spacing = 1.2
+        run(p, k["tail"], 17, MUTED3, font=BODY)
+    notes(sl, k.get("notes") or "Wirken lassen. Kurze Stille nach dem Satz.")
 
 
 def slide_divider(prs, s, d):
     sl = new_slide(prs)
     bg_image(sl, os.path.join(ASSETS, "bg-divider.png"))
-    tf = textbox(sl, ML, 2.5, CW, 0.4)
-    kicker(tf, d["kicker"], LEAF, 13)
-    tf = textbox(sl, ML, 3.0, CW, 1.0)
+    tf = textbox(sl, 1.1, 2.35, 8.0, 0.35)
+    kicker(tf, d["kicker"], LEAF_BRIGHT, 12)
+    tf = textbox(sl, 1.05, 2.75, 11.2, 1.2)
     p = para(tf, first=True)
-    run(p, d["title"], 34, WHITE, bold=True, font=HEAD)
-    tf = textbox(sl, ML, 4.15, 9.6, 1.2)
+    run(p, d["title"], 42, WHITE, bold=True, font=HEAD)
+    tf = textbox(sl, 1.1, 4.05, 10.2, 0.9)
     p = para(tf, first=True)
     p.line_spacing = 1.2
-    run(p, d["subtitle"], 16, MUTED2, font=BODY)
+    run(p, d["subtitle"], 17, MUTED3, font=BODY)
     notes(sl, d.get("notes") or "Übergang zum Kern. Betonen: eine Landkarte, kein starres Schema.")
-
-
-def slide_overview(prs, s):
-    o = s["landkarte"]
-    items = o["items"]
-    sl = new_slide(prs)
-    bg_solid(sl, NAVY)
-    tf = textbox(sl, ML, 0.6, CW, 0.4)
-    kicker(tf, o["kicker"], LEAF)
-    tf = textbox(sl, ML, 1.02, CW, 0.7)
-    p = para(tf, first=True)
-    run(p, o["title"], 28, WHITE, bold=True, font=HEAD)
-    # zwei Spalten
-    n = len(items)
-    col = (n + 1) // 2
-    top = 2.05
-    colw = CW / 2
-    avail = 6.95 - top
-    for i, it in enumerate(items):
-        c = 0 if i < col else 1
-        r = i if i < col else i - col
-        rows = col if c == 0 else n - col
-        row_h = avail / max(rows, 1)
-        x = ML + c * colw
-        y = top + r * row_h
-        circle(sl, x, y, 0.44, i + 1, fill=TEAL if i % 2 == 0 else GREEN, size=14)
-        tf = textbox(sl, x + 0.62, y - 0.04, colw - 0.85, row_h, anchor=MSO_ANCHOR.MIDDLE)
-        p = para(tf, first=True)
-        run(p, it["title"], 15, WHITE, bold=True)
-        if it.get("sub"):
-            p2 = tf.add_paragraph()
-            run(p2, it["sub"], 11.5, MUTED, font=BODY)
-    notes(sl, o.get("notes") or "Überblick geben, noch nicht vertiefen. Ankündigen: Wir gehen jedes einzeln durch.")
-
-
-def slide_module(prs, s, m):
-    sl = new_slide(prs)
-    bg_solid(sl, NAVY)
-    # großer Geist-Zahl links
-    num = m["badge"].split()[-1]
-    tf = textbox(sl, ML - 0.15, 1.1, 3.0, 3.2, anchor=MSO_ANCHOR.MIDDLE)
-    p = para(tf, first=True)
-    p.alignment = PP_ALIGN.LEFT
-    run(p, num, 200, PANEL, bold=True, font=HEAD)
-    # Inhalt rechts
-    x = 3.25
-    tf = textbox(sl, x, 1.35, 9.2, 0.4)
-    kicker(tf, m["badge"], LEAF, 12.5)
-    tf = textbox(sl, x, 1.8, 9.2, 0.7)
-    p = para(tf, first=True)
-    run(p, m["title"], 30, WHITE, bold=True, font=HEAD)
-    tf = textbox(sl, x, 2.55, 9.2, 0.4)
-    p = para(tf, first=True)
-    run(p, m["sub"], 16, TEAL_BRIGHT, bold=True, font=BODY)
-    tf = textbox(sl, x, 3.15, 8.7, 1.9)
-    p = para(tf, first=True)
-    p.line_spacing = 1.25
-    run(p, m["body"], 15, MUTED2, font=BODY)
-    # Reflexion
-    hairline(sl, x, 5.25, 8.5, TEAL)
-    tf = textbox(sl, x, 5.45, 8.7, 0.35)
-    kicker(tf, "REFLEXION", TEAL, 11.5)
-    tf = textbox(sl, x, 5.8, 8.7, 0.7)
-    p = para(tf, first=True)
-    p.line_spacing = 1.12
-    run(p, m["reflexion"], 16, WHITE, italic=True, font=BODY)
-    notes(sl, m.get("notes") or f"{m['badge']} – Kernaussage erklären, eigenes Beispiel erzählen. Reflexionsfrage in die Runde oder ins Workbook geben.")
-
-
-def slide_summary(prs, s):
-    z = s["zusammenfassung"]
-    items = z["items"]
-    sl = new_slide(prs)
-    bg_solid(sl, NAVY)
-    tf = textbox(sl, ML, 0.7, CW, 0.4)
-    kicker(tf, z["kicker"], LEAF)
-    tf = textbox(sl, ML, 1.12, CW, 0.7)
-    p = para(tf, first=True)
-    run(p, z["title"], 30, WHITE, bold=True, font=HEAD)
-    n = len(items)
-    gap = 0.4
-    cw = (CW - (n - 1) * gap) / n
-    top = 2.5
-    for i, it in enumerate(items):
-        x = ML + i * (cw + gap)
-        rrect(sl, x, top, cw, 3.4, PANEL, radius=0.08)
-        circle(sl, x + 0.35, top + 0.4, 0.7, i + 1, fill=TEAL if i % 2 == 0 else GREEN, size=22)
-        tf = textbox(sl, x + 0.35, top + 1.35, cw - 0.7, 0.5)
-        p = para(tf, first=True)
-        run(p, it["title"], 20, WHITE, bold=True, font=HEAD)
-        tf = textbox(sl, x + 0.35, top + 1.95, cw - 0.7, 1.3)
-        p = para(tf, first=True)
-        p.line_spacing = 1.2
-        run(p, it["text"], 14, MUTED2, font=BODY)
-    notes(sl, z.get("notes") or "Zusammenfassen. Der rote Faden. Überleitung zum Angebot.")
 
 
 def slide_offer(prs, s):
     a = s["angebot"]
     sl = new_slide(prs)
-    bg_solid(sl, NAVY)
-    tf = textbox(sl, ML, 0.7, 7.5, 0.4)
-    kicker(tf, a["kicker"], LEAF)
-    tf = textbox(sl, ML, 1.12, 7.5, 1.0)
+    bg_image(sl, os.path.join(ASSETS, "bg-title.png"))
+    tf = textbox(sl, 0.85, 1.1, 8.0, 0.35)
+    kicker(tf, a["kicker"], LEAF_BRIGHT, 12)
+    tf = textbox(sl, 0.8, 1.5, 8.6, 1.0)
     p = para(tf, first=True)
-    p.line_spacing = 1.05
-    run(p, a["title"], 28, WHITE, bold=True, font=HEAD)
-    top = 2.7
+    p.line_spacing = 1.03
+    run(p, a["title"], 38, WHITE, bold=True, font=HEAD)
+    tf = textbox(sl, 0.9, 2.85, 7.9, 2.6)
     for i, f in enumerate(a["features"]):
-        y = top + i * 0.72
-        circle(sl, ML, y, 0.4, "✓" if False else i + 1, fill=TEAL if i % 2 == 0 else GREEN, size=14)
-        tf = textbox(sl, ML + 0.62, y - 0.02, 6.6, 0.7, anchor=MSO_ANCHOR.MIDDLE)
-        p = para(tf, first=True)
-        run(p, f, 15.5, MUTED2, font=BODY)
+        p = para(tf, first=(i == 0))
+        p.line_spacing = 1.15
+        p.space_after = Pt(9)
+        run(p, "›  ", 17, LEAF_BRIGHT, bold=True, font=BODY)
+        run(p, f, 17, LIGHTONNAVY, font=BODY)
     # Preis-Karte
-    rrect(sl, 8.55, 2.5, 3.85, 2.7, PANEL, radius=0.09)
-    tf = textbox(sl, 8.8, 2.85, 3.35, 0.9)
+    rrect(sl, 9.3, 2.9, 3.3, 2.0, DEEPNAVY, radius=0.1)
+    tf = textbox(sl, 9.3, 3.15, 3.3, 0.4)
     p = para(tf, first=True)
     p.alignment = PP_ALIGN.CENTER
-    run(p, a["preis"], 46, TEAL_BRIGHT, bold=True, font=HEAD)
-    run(p, " " + a.get("preisSuffix", ""), 15, MUTED, font=BODY)
-    tf = textbox(sl, 8.8, 3.95, 3.35, 0.4)
+    run(p, "Mitgliedschaft", 13, MUTED, font=BODY)
+    tf = textbox(sl, 9.3, 3.55, 3.3, 0.8)
     p = para(tf, first=True)
     p.alignment = PP_ALIGN.CENTER
-    run(p, "Mitgliedschaft", 14, WHITE, bold=True)
-    tf = textbox(sl, 8.8, 4.4, 3.35, 0.5)
+    run(p, a["preis"], 40, WHITE, bold=True, font=HEAD)
+    run(p, "  " + a.get("preisSuffix", ""), 16, MUTED3, font=BODY)
+    tf = textbox(sl, 9.1, 4.45, 3.7, 0.35)
     p = para(tf, first=True)
     p.alignment = PP_ALIGN.CENTER
-    p.line_spacing = 1.05
-    run(p, a["url"], 11, MUTED, font=BODY)
-    tf = textbox(sl, ML, 6.35, CW, 0.5)
+    run(p, a["url"], 11.5, LEAF_BRIGHT, bold=True, font=BODY)
+    tf = textbox(sl, 0.9, 5.7, 8.0, 0.4)
     p = para(tf, first=True)
-    run(p, a["note"], 13.5, LEAF_BRIGHT, italic=True, font=BODY)
+    run(p, a["note"], 15, MUTED3, italic=True, font=BODY)
     notes(sl, a.get("notes") or "Angebot ruhig, ohne Druck. Einladung, nicht Verkauf. Auf den kostenlosen Bewusstseinstest hinweisen.")
 
 
 def slide_closing(prs, s):
     c = s["abschluss"]
     sl = new_slide(prs)
-    bg_image(sl, os.path.join(ASSETS, "bg-title.png"))
-    # Standard-Schlussfolie: zentriert, in der unteren Bildhälfte.
-    # Titel 40pt (Akzentwort in Leaf), Dank 18pt gedämpft, URL 14pt Teal fett.
+    bg_image(sl, os.path.join(ASSETS, "bg-divider.png"))
     tf = textbox(sl, 1.0, 4.1, 11.33, 1.0)
     p = para(tf, first=True)
     p.alignment = PP_ALIGN.CENTER
@@ -491,6 +335,183 @@ def slide_closing(prs, s):
     p.alignment = PP_ALIGN.CENTER
     run(p, c["url"], 14, TEAL_BRIGHT, bold=True, font=BODY)
     notes(sl, c.get("notes") or "Abschluss. Raum für Fragen. Danken. Zum Bewusstseinstest / zur Mitgliedschaft einladen.")
+
+
+# ------------------------------ Inhaltsfolien ------------------------------- #
+def slide_agenda(prs, s):
+    a = s["agenda"]
+    sl = new_slide(prs)
+    bg_white(sl)
+    head_light(sl, "ÜBERBLICK", "Was dich heute erwartet", 38, 11.0)
+    top = 2.15
+    step = 0.98
+    for i, it in enumerate(a):
+        y = top + i * step
+        disc(sl, 0.85, y, 0.62, i + 1, 21)
+        tf = textbox(sl, 1.75, y - 0.04, 10.6, 0.42)
+        p = para(tf, first=True)
+        run(p, it["title"], 18, INK, bold=True, font=BODY)
+        tf = textbox(sl, 1.75, y + 0.36, 10.6, 0.42)
+        p = para(tf, first=True)
+        run(p, it["desc"], 14, SOFT, font=BODY)
+    notes(sl, s.get("notesAgenda") or "Agenda ruhig durchgehen. Zeitrahmen nennen. Frage in die Runde: Was möchtet ihr heute mitnehmen?")
+
+
+def slide_metric(prs, s):
+    a = s["ausgangspunkt"]
+    sl = new_slide(prs)
+    bg_white(sl)
+    tf = textbox(sl, ML, 0.7, 8.0, 0.35)
+    kicker(tf, a["kicker"], GREEN, 12)
+    tf = textbox(sl, ML, 1.05, 7.7, 1.3)
+    p = para(tf, first=True)
+    p.line_spacing = 1.05
+    run(p, a["title"], 32, INK, bold=True, font=HEAD)
+    tf = textbox(sl, ML, 2.5, 7.4, 2.6)
+    p = para(tf, first=True)
+    p.line_spacing = 1.3
+    p.space_after = Pt(12)
+    run(p, a["p1"], 16.5, SOFT, font=BODY)
+    p2 = tf.add_paragraph()
+    p2.line_spacing = 1.3
+    run(p2, a["p2"], 16.5, SOFT, font=BODY)
+    # Navy-Kennzahl-Karte rechts
+    rrect(sl, 8.7, 1.7, 3.9, 4.2, NAVY, radius=0.08)
+    y = 2.55
+    if a.get("metricPre"):
+        tf = textbox(sl, 8.9, 2.35, 3.5, 0.35)
+        p = para(tf, first=True)
+        p.alignment = PP_ALIGN.CENTER
+        run(p, a["metricPre"].upper(), 12, LEAF_BRIGHT, bold=True, tracking=2)
+        y = 2.8
+    val = a["metric"]
+    vsize = 40 if len(str(val)) <= 7 else 30
+    tf = textbox(sl, 8.75, y, 3.8, 1.15)
+    p = para(tf, first=True)
+    p.alignment = PP_ALIGN.CENTER
+    run(p, val, vsize, LEAF_BRIGHT, bold=True, font=HEAD)
+    tf = textbox(sl, 8.9, 3.95, 3.5, 0.5)
+    p = para(tf, first=True)
+    p.alignment = PP_ALIGN.CENTER
+    run(p, a["metricLabel"], 16, WHITE, bold=True, font=BODY)
+    tf = textbox(sl, 9.0, 4.5, 3.3, 1.2)
+    p = para(tf, first=True)
+    p.alignment = PP_ALIGN.CENTER
+    p.line_spacing = 1.15
+    run(p, a["metricNote"], 13, MUTED3, font=BODY)
+    notes(sl, a.get("notes") or "Kennzahl verankern. Überleitung zur ersten Übung.")
+
+
+def slide_exercise(prs, s, ex):
+    sl = new_slide(prs)
+    bg_white(sl)
+    tf = textbox(sl, ML, 0.7, 11.0, 0.35)
+    kicker(tf, ex["kicker"], GREEN, 12)
+    tf = textbox(sl, ML, 1.05, 11.6, 0.9)
+    p = para(tf, first=True)
+    run(p, ex["title"], 36, INK, bold=True, font=HEAD)
+    steps = ex["steps"]
+    top = 2.35
+    span = 3.55
+    step = min(0.92, span / max(len(steps), 1)) if len(steps) > 4 else 0.92
+    for i, st in enumerate(steps):
+        y = top + i * step
+        disc(sl, 0.85, y, 0.56, i + 1, 19)
+        tf = textbox(sl, 1.7, y - 0.02, 7.0, step, anchor=MSO_ANCHOR.MIDDLE)
+        p = para(tf, first=True)
+        p.line_spacing = 1.1
+        run(p, st, 16.5, INK, font=BODY)
+    # MITNEHMEN-Karte rechts (Navy)
+    rrect(sl, 9.15, 2.35, 3.45, 3.5, NAVY, radius=0.09)
+    tf = textbox(sl, 9.4, 2.65, 3.0, 0.3)
+    kicker(tf, "MITNEHMEN", LEAF_BRIGHT, 11)
+    tf = textbox(sl, 9.4, 3.05, 3.0, 2.6)
+    p = para(tf, first=True)
+    p.line_spacing = 1.2
+    run(p, ex["mitnehmen"], 18, WHITE, font=BODY)
+    notes(sl, ex.get("notes") or "Übung anleiten und Zeit lassen. Danach 2–3 Stimmen einsammeln. Nichts bewerten.")
+
+
+def slide_overview(prs, s):
+    o = s["landkarte"]
+    items = o["items"]
+    sl = new_slide(prs)
+    bg_white(sl)
+    head_light(sl, o["kicker"], o["title"], 28, 11.7)
+    n = len(items)
+    col = (n + 1) // 2
+    top = 2.0
+    span = 4.7
+    rows_max = max(col, n - col)
+    step = min(1.18, span / max(rows_max, 1))
+    for i, it in enumerate(items):
+        c = 0 if i < col else 1
+        r = i if i < col else i - col
+        xc = 0.8 if c == 0 else 7.05
+        xt = 1.7 if c == 0 else 7.95
+        y = top + r * step
+        disc(sl, xc, y, 0.66, i + 1, 22)
+        tf = textbox(sl, xt, y - 0.02, 5.2, 0.42)
+        p = para(tf, first=True)
+        run(p, it["title"], 15, INK, bold=True, font=BODY)
+        if it.get("sub"):
+            tf = textbox(sl, xt, y + 0.35, 5.25, 0.5)
+            p = para(tf, first=True)
+            run(p, it["sub"], 11.5, TEAL, font=BODY)
+    notes(sl, o.get("notes") or "Überblick geben, noch nicht vertiefen. Ankündigen: Wir gehen jedes einzeln durch.")
+
+
+def slide_module(prs, s, m):
+    sl = new_slide(prs)
+    bg_white(sl)
+    num = m["badge"].split()[-1]
+    disc(sl, 0.85, 0.75, 1.5, num, 51)
+    tf = textbox(sl, 2.65, 0.7, 8.0, 0.4)
+    kicker(tf, m["badge"], GREEN, 13)
+    tf = textbox(sl, 2.6, 1.05, 9.9, 1.0)
+    p = para(tf, first=True)
+    p.line_spacing = 1.02
+    run(p, m["title"], 31, INK, bold=True, font=HEAD)
+    tf = textbox(sl, 2.62, 2.05, 9.9, 0.6)
+    p = para(tf, first=True)
+    run(p, m["sub"], 18, TEAL, bold=False, font=BODY)
+    tf = textbox(sl, 0.85, 3.6, 8.0, 2.2)
+    p = para(tf, first=True)
+    p.line_spacing = 1.3
+    run(p, m["body"], 17, SOFT, font=BODY)
+    # REFLEXION-Karte (hell-teal)
+    rrect(sl, 9.15, 3.5, 3.45, 2.8, MINT, radius=0.09)
+    tf = textbox(sl, 9.4, 3.75, 3.0, 0.3)
+    kicker(tf, "REFLEXION", TEAL, 11)
+    tf = textbox(sl, 9.4, 4.15, 3.0, 2.0)
+    p = para(tf, first=True)
+    p.line_spacing = 1.18
+    run(p, m["reflexion"], 16, INK, font=BODY)
+    notes(sl, m.get("notes") or f"{m['badge']} – Kernaussage erklären, eigenes Beispiel erzählen. Reflexionsfrage in die Runde oder ins Workbook geben.")
+
+
+def slide_summary(prs, s):
+    z = s["zusammenfassung"]
+    items = z["items"]
+    sl = new_slide(prs)
+    bg_white(sl)
+    head_light(sl, z["kicker"], z["title"], 34, 11.6)
+    n = len(items)
+    gap = 0.35
+    cw = (11.75 - (n - 1) * gap) / n
+    top = 2.4
+    for i, it in enumerate(items):
+        x = 0.8 + i * (cw + gap)
+        rrect(sl, x, top, cw, 3.4, GREENTINT, radius=0.07)
+        disc(sl, x + 0.35, top + 0.35, 0.7, i + 1, 24)
+        tf = textbox(sl, x + 0.35, top + 1.3, cw - 0.7, 0.5)
+        p = para(tf, first=True)
+        run(p, it["title"], 22, INK, bold=True, font=HEAD)
+        tf = textbox(sl, x + 0.35, top + 1.85, cw - 0.7, 1.4)
+        p = para(tf, first=True)
+        p.line_spacing = 1.2
+        run(p, it["text"], 14, SOFT, font=BODY)
+    notes(sl, z.get("notes") or "Zusammenfassen. Der rote Faden. Überleitung zum Angebot.")
 
 
 def build_pptx(s, out_path):
