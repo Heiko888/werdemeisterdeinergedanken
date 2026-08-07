@@ -320,6 +320,12 @@ def slide_closing(prs, s):
     c = s["abschluss"]
     sl = new_slide(prs)
     bg_image(sl, os.path.join(ASSETS, "bg-divider.png"))
+    # Marken-Logo mittig über dem Abschlusstitel (Bild 640×588).
+    logo_h = 1.7
+    logo_w = logo_h * 640 / 588
+    sl.shapes.add_picture(os.path.join(ASSETS, "brain.png"),
+                          IN((13.333 - logo_w) / 2), IN(2.05),
+                          width=IN(logo_w), height=IN(logo_h))
     tf = textbox(sl, 1.0, 4.1, 11.33, 1.0)
     p = para(tf, first=True)
     p.alignment = PP_ALIGN.CENTER

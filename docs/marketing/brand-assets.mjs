@@ -140,13 +140,14 @@ const ebookPost = (w, h) => {
 
   // Quadratformat (1:1): Buch-Cover groß als Hintergrund, Text unten überlagert.
   if (w === h) {
-    const bookHsq = Math.round(h * 0.96);
+    const bookHsq = Math.round(h * 0.55);
     return shell(w, h, `
-.eyebrow{font-size:${b(0.026)}px;letter-spacing:.18em}
-.bookglow{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.92)}px;height:${Math.round(bookHsq*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
-.book{position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
-.scrim{position:absolute;inset:0;background:linear-gradient(to top, #08102a 12%, rgba(8,16,42,.96) 33%, rgba(8,16,42,.62) 50%, rgba(8,16,42,0) 70%)}
-.foot{position:absolute;left:0;right:0;bottom:${Math.round(h*0.075)}px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:${b(0.03)}px;padding:0 ${Math.round(w*0.085)}px}
+.eyebrow{position:relative;display:inline-block;z-index:0;font-size:${b(0.026)}px;letter-spacing:.18em}
+.eyebrow::before{content:"";position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:calc(100% + ${b(0.1)}px);height:${b(0.1)}px;border-radius:999px;background:radial-gradient(ellipse at center, rgba(255,255,255,.42), rgba(255,255,255,.2) 50%, rgba(255,255,255,0) 76%);filter:blur(${b(0.014)}px);z-index:-1}
+.bookglow{position:absolute;left:50%;top:31%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*1.05)}px;height:${Math.round(bookHsq*1.05)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
+.book{position:absolute;left:50%;top:33%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
+.scrim{position:absolute;inset:0;background:linear-gradient(to top, #08102a 14%, rgba(8,16,42,.96) 32%, rgba(8,16,42,.5) 48%, rgba(8,16,42,0) 66%)}
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(h*0.07)}px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:${b(0.03)}px;padding:0 ${Math.round(w*0.085)}px}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.072)}px;line-height:1.08;letter-spacing:-.5px;max-width:94%}
 .h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .cta{margin-top:${b(0.012)}px;padding:${b(0.028)}px ${b(0.058)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.034)}px;letter-spacing:.02em}
