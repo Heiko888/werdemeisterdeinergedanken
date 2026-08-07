@@ -144,8 +144,7 @@ const ebookPost = (w, h) => {
     const bookHsq = Math.round(h * 0.42);
     return shell(w, h, `
 .post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.06)}px ${Math.round(w*0.09)}px;gap:${b(0.042)}px}
-.eyebrow{position:relative;display:inline-block;z-index:0;font-size:${b(0.026)}px;letter-spacing:.18em}
-.eyebrow::before{content:"";position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:calc(100% + ${b(0.12)}px);height:${b(0.12)}px;border-radius:999px;background:radial-gradient(ellipse at center, rgba(255,255,255,.72), rgba(255,255,255,.44) 48%, rgba(255,255,255,0) 78%);filter:blur(${b(0.012)}px);z-index:-1}
+.eyebrow{font-size:${b(0.026)}px;letter-spacing:.18em}
 .bookwrap{position:relative;display:flex;justify-content:center}
 .bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.9)}px;height:${Math.round(bookHsq*0.9)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.26), transparent 68%);filter:blur(40px)}
 .book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(0 22px 52px rgba(0,0,0,.6))}
