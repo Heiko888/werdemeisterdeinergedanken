@@ -147,8 +147,8 @@ const ebookPost = (w, h) => {
 .bookglow{position:absolute;left:50%;top:31%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*1.05)}px;height:${Math.round(bookHsq*1.05)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
 .book{position:absolute;left:50%;top:33%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
 .scrim{position:absolute;inset:0;background:linear-gradient(to top, #08102a 14%, rgba(8,16,42,.96) 32%, rgba(8,16,42,.5) 48%, rgba(8,16,42,0) 66%)}
-.foot{position:absolute;left:0;right:0;bottom:${Math.round(h*0.07)}px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:${b(0.03)}px;padding:0 ${Math.round(w*0.085)}px}
-.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.072)}px;line-height:1.08;letter-spacing:-.5px;max-width:94%}
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(h*0.08)}px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:${b(0.045)}px;padding:0 ${Math.round(w*0.085)}px}
+.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.072)}px;line-height:1.16;letter-spacing:-.5px;max-width:94%}
 .h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .cta{margin-top:${b(0.012)}px;padding:${b(0.028)}px ${b(0.058)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.034)}px;letter-spacing:.02em}
 .url{font-size:${b(0.027)}px}
@@ -183,10 +183,12 @@ const ebookPost = (w, h) => {
 
   if (land) {
     return shell(w, h, `${common}
-.post{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.06)}px;padding:0 ${Math.round(w*0.07)}px}
+.post{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.07)}px;padding:0 ${Math.round(w*0.07)}px}
 .bookwrap{position:relative;flex:0 0 auto;display:flex;justify-content:center}
-.col{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:${b(0.032)}px;max-width:${Math.round(w*0.46)}px}
-.bul{align-items:flex-start}
+.col{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:${b(0.05)}px;max-width:${Math.round(w*0.46)}px}
+.h{line-height:1.18}
+.bul{align-items:flex-start;gap:${b(0.03)}px}
+.cta{margin-top:${b(0.01)}px}
 `, `<div class="post">
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
   <div class="col">${EBOOK_TEXT}</div>
