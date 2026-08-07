@@ -138,30 +138,28 @@ const ebookPost = (w, h) => {
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v); // Schrift an kürzerer Kante
 
-  // Quadratformat (1:1): Buch-Cover groß als Hintergrund, Text unten überlagert.
+  // Quadratformat (1:1): gestapelt – Eyebrow oben, Cover in der Mitte
+  // (ganz sichtbar), Headline + CTA darunter.
   if (w === h) {
-    const bookHsq = Math.round(h * 0.55);
+    const bookHsq = Math.round(h * 0.42);
     return shell(w, h, `
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.06)}px ${Math.round(w*0.09)}px;gap:${b(0.042)}px}
 .eyebrow{position:relative;display:inline-block;z-index:0;font-size:${b(0.026)}px;letter-spacing:.18em}
 .eyebrow::before{content:"";position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:calc(100% + ${b(0.12)}px);height:${b(0.12)}px;border-radius:999px;background:radial-gradient(ellipse at center, rgba(255,255,255,.72), rgba(255,255,255,.44) 48%, rgba(255,255,255,0) 78%);filter:blur(${b(0.012)}px);z-index:-1}
-.bookglow{position:absolute;left:50%;top:31%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*1.05)}px;height:${Math.round(bookHsq*1.05)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
-.book{position:absolute;left:50%;top:33%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
-.scrim{position:absolute;inset:0;background:linear-gradient(to top, #08102a 14%, rgba(8,16,42,.96) 32%, rgba(8,16,42,.5) 48%, rgba(8,16,42,0) 66%)}
-.foot{position:absolute;left:0;right:0;bottom:${Math.round(h*0.08)}px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:${b(0.045)}px;padding:0 ${Math.round(w*0.085)}px}
-.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.072)}px;line-height:1.16;letter-spacing:-.5px;max-width:94%}
+.bookwrap{position:relative;display:flex;justify-content:center}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.9)}px;height:${Math.round(bookHsq*0.9)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.26), transparent 68%);filter:blur(40px)}
+.book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(0 22px 52px rgba(0,0,0,.6))}
+.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px;max-width:98%}
 .h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.cta{margin-top:${b(0.012)}px;padding:${b(0.028)}px ${b(0.058)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.034)}px;letter-spacing:.02em}
+.cta{margin-top:${b(0.006)}px;padding:${b(0.028)}px ${b(0.058)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.034)}px;letter-spacing:.02em}
 .url{font-size:${b(0.027)}px}
-`, `
-  <div class="bookglow"></div>
-  <img class="book" src="${ebookUri}">
-  <div class="scrim"></div>
-  <div class="foot">
-    <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
-    <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
-    <div class="cta">Gratis sichern – Link in Bio</div>
-    <div class="url">www.werdemeisterdeinergedanken.de</div>
-  </div>`);
+`, `<div class="post">
+  <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
+  <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
+  <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
+  <div class="cta">Gratis sichern – Link in Bio</div>
+  <div class="url">www.werdemeisterdeinergedanken.de</div>
+</div>`);
   }
 
   // Buch höhenbasiert dimensionieren → verlässlicher Rand oben/unten,
