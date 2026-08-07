@@ -192,16 +192,23 @@ const ebookPost = (w, h) => {
   <div class="col">${EBOOK_TEXT}</div>
 </div>`);
   }
-  // Hoch-/Quadratformat: zentrierte Säule mit viel Luft
+  // Hochformat (4:5, 9:16, 2:3): Eyebrow oben, dann das Cover, darunter
+  // Headline, Punkte und CTA – das Buch liegt zwischen Eyebrow und Headline.
   return shell(w, h, `${common}
-.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.055)}px ${Math.round(w*0.1)}px;gap:${b(0.04)}px}
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.055)}px ${Math.round(w*0.1)}px;gap:${b(0.038)}px}
 .bookwrap{position:relative;display:flex;justify-content:center}
-.col{display:flex;flex-direction:column;align-items:center;gap:${b(0.04)}px}
+.col{display:flex;flex-direction:column;align-items:center;gap:${b(0.038)}px}
 .bul{align-items:flex-start}
 .h{max-width:96%}
 `, `<div class="post">
+  <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
-  <div class="col">${EBOOK_TEXT}</div>
+  <div class="col">
+    <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
+    ${EBOOK_BULLETS}
+    <div class="cta">Gratis sichern – Link in Bio</div>
+    <div class="url">www.werdemeisterdeinergedanken.de</div>
+  </div>
 </div>`);
 };
 
