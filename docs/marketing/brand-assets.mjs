@@ -140,11 +140,11 @@ const ebookPost = (w, h) => {
 
   // Quadratformat (1:1): Buch-Cover groß als Hintergrund, Text unten überlagert.
   if (w === h) {
-    const bookHsq = Math.round(h * 0.96);
+    const bookHsq = Math.round(h * 0.92);
     return shell(w, h, `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.18em}
-.bookglow{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.92)}px;height:${Math.round(bookHsq*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
-.book{position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
+.bookglow{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.92)}px;height:${Math.round(bookHsq*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
+.book{position:absolute;left:50%;top:51%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
 .scrim{position:absolute;inset:0;background:linear-gradient(to top, #08102a 12%, rgba(8,16,42,.96) 33%, rgba(8,16,42,.62) 50%, rgba(8,16,42,0) 70%)}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(h*0.075)}px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:${b(0.03)}px;padding:0 ${Math.round(w*0.085)}px}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.072)}px;line-height:1.08;letter-spacing:-.5px;max-width:94%}
