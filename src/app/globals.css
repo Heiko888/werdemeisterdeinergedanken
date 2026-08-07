@@ -93,7 +93,8 @@
   --radius-2xl: 1.5rem;
   --radius-3xl: 2rem;
 
-  /* ---- Eigener Breakpoint ---- */
+  /* ---- Eigene Breakpoints ---- */
+  --breakpoint-xs: 30rem;   /* schmale Smartphones: dichte Karten-Raster einspaltig */
   --breakpoint-3xl: 100rem;
 
   /* ---- Animationen ---- */
