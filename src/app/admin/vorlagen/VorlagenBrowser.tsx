@@ -31,16 +31,20 @@ function groupBy<T>(items: T[], key: (t: T) => string): [string, T[]][] {
 // --- Karten -----------------------------------------------------------------
 
 function BildKarte({ a }: { a: VorlagenAsset }) {
-  const hochformat = a.kategorie === "reels";
+  // Kachel im echten Seitenverhältnis der Grafik (aus a.masse) – so wird ein
+  // quadratisches (1:1) oder hohes (9:16) Cover nicht mehr in eine 4:3-Box
+  // gezwängt und dabei winzig, sondern füllt seine Kachel vollständig aus.
+  const fallback = a.kategorie === "reels" ? 9 / 16 : 4 / 3;
+  const ratio =
+    a.masse && a.masse.w && a.masse.h ? a.masse.w / a.masse.h : fallback;
   return (
     <figure className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card">
       <a
         href={a.href}
         target="_blank"
         rel="noreferrer"
-        className={`relative flex items-center justify-center overflow-hidden bg-ink/[0.03] ${
-          hochformat ? "aspect-[9/16]" : "aspect-[4/3]"
-        }`}
+        className="relative flex items-center justify-center overflow-hidden bg-ink/[0.03]"
+        style={{ aspectRatio: ratio }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -419,7 +423,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
             <h2 className="mt-1 font-display text-2xl font-medium text-ink">
               Banner, Zitate & Fakten zum Posten
             </h2>
-            <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            <div className="mt-6 grid grid-cols-2 items-start gap-4 sm:grid-cols-3 lg:grid-cols-4">
               {gefiltert.social.map((a) => (
                 <BildKarte key={a.href} a={a} />
               ))}
@@ -443,7 +447,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
                   {thema}
                   <span className="text-ink-muted/70">({items.length})</span>
                 </h3>
-                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                <div className="grid grid-cols-2 items-start gap-4 sm:grid-cols-3 lg:grid-cols-5">
                   {items.map((a) => (
                     <BildKarte key={a.href} a={a} />
                   ))}
