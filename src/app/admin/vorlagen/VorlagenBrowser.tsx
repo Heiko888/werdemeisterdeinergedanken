@@ -28,6 +28,26 @@ function groupBy<T>(items: T[], key: (t: T) => string): [string, T[]][] {
   return [...map.entries()];
 }
 
+// Dokument-Typ eines Workshop-Materials aus dem Dateinamen ableiten.
+const WORKSHOP_TYP_ORDER = [
+  "Präsentation",
+  "Präsentationsvorlage",
+  "Workbook",
+  "Moderationsplan",
+  "Reel-Drehbuch",
+  "Video-Drehbuch",
+];
+function workshopTyp(a: VorlagenAsset): string {
+  const n = a.href.split("/").pop() ?? "";
+  if (/Praesentationsvorlage/i.test(n)) return "Präsentationsvorlage";
+  if (/^WMDG-Workshop-/i.test(n)) return "Präsentation";
+  if (/^WMDG-Workbook-/i.test(n)) return "Workbook";
+  if (/^WMDG-Moderationsplan-/i.test(n)) return "Moderationsplan";
+  if (/Reel-Drehbuch/i.test(n)) return "Reel-Drehbuch";
+  if (/Drehbuch/i.test(n)) return "Video-Drehbuch";
+  return a.format ?? "Datei";
+}
+
 // --- Karten -----------------------------------------------------------------
 
 function BildKarte({ a }: { a: VorlagenAsset }) {
@@ -219,14 +239,26 @@ function CarouselKarte({ a }: { a: VorlagenAsset }) {
 }
 
 function DateiKarte({ a }: { a: VorlagenAsset }) {
+  const typ = workshopTyp(a);
+  const istPraesentation =
+    typ === "Präsentation" || typ === "Präsentationsvorlage";
   return (
-    <div className="flex flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
+    <div
+      className={`flex flex-col gap-3 rounded-2xl border bg-white p-5 shadow-card ${
+        istPraesentation ? "border-accent/40" : "border-ink/10"
+      }`}
+    >
       <div className="flex items-start justify-between gap-3">
-        <div className="flex flex-col gap-0.5">
-          <span className="text-[0.7rem] font-semibold uppercase tracking-wide text-accent">
-            {a.unterKategorie}
+        <div className="flex flex-col gap-1">
+          <span
+            className={`inline-flex w-fit items-center rounded-md px-2 py-0.5 text-[0.7rem] font-semibold uppercase tracking-wide ${
+              istPraesentation ? "bg-accent/15 text-accent" : "bg-ink/5 text-ink-mid"
+            }`}
+          >
+            {typ}
           </span>
           <span className="text-sm font-medium leading-snug text-ink">{a.titel}</span>
+          <span className="text-[0.7rem] text-ink-muted">{a.unterKategorie}</span>
         </div>
         <span className="shrink-0 rounded-md bg-ink/5 px-2 py-1 text-[0.7rem] font-semibold text-ink-mid">
           {a.format}
@@ -310,13 +342,18 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
   const gefiltert = useMemo(() => {
     const matchA = (a: VorlagenAsset) =>
       !q || `${a.titel} ${a.unterKategorie}`.toLowerCase().includes(q);
+    const matchW = (a: VorlagenAsset) =>
+      !q ||
+      `${a.titel} ${a.unterKategorie} ${workshopTyp(a)}`
+        .toLowerCase()
+        .includes(q);
     const matchP = (p: PdfItem) =>
       !q || `${p.titel} ${p.gruppe}`.toLowerCase().includes(q);
     return {
       social: social.filter(matchA),
       reels: reels.filter(matchA),
       carousel: carousels.filter(matchA),
-      workshop: workshop.filter(matchA),
+      workshop: workshop.filter(matchW),
       pdf: pdfs.filter(matchP),
     };
   }, [q, social, reels, carousels, workshop, pdfs]);
@@ -516,6 +553,11 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
             <h2 className="mt-1 font-display text-2xl font-medium text-ink">
               Präsentationen & Workbooks
             </h2>
+            <p className="mt-2 max-w-2xl text-sm text-ink-mid">
+              Je Thema drei Dateien: die{" "}
+              <span className="font-semibold text-accent">Präsentation</span> (PPTX),
+              das Workbook und der Moderationsplan (beide PDF).
+            </p>
             <div className="mt-6 flex flex-col gap-8">
               {groupBy(gefiltert.workshop, (a) => a.unterKategorie).map(([thema, items]) => (
                 <div key={thema}>
@@ -523,9 +565,15 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
                     {thema} <span className="text-ink-muted/70">({items.length})</span>
                   </h3>
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {items.map((a) => (
-                      <DateiKarte key={a.href} a={a} />
-                    ))}
+                    {[...items]
+                      .sort(
+                        (x, y) =>
+                          WORKSHOP_TYP_ORDER.indexOf(workshopTyp(x)) -
+                          WORKSHOP_TYP_ORDER.indexOf(workshopTyp(y)),
+                      )
+                      .map((a) => (
+                        <DateiKarte key={a.href} a={a} />
+                      ))}
                   </div>
                 </div>
               ))}

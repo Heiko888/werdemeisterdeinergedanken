@@ -137,10 +137,36 @@ const ebookPost = (w, h) => {
   const land = w > h * 1.15;            // deutlich breiter → Querformat
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v); // Schrift an kürzerer Kante
+
+  // Quadratformat (1:1): Buch-Cover groß als Hintergrund, Text unten überlagert.
+  if (w === h) {
+    const bookHsq = Math.round(h * 0.96);
+    return shell(w, h, `
+.eyebrow{font-size:${b(0.026)}px;letter-spacing:.18em}
+.bookglow{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.92)}px;height:${Math.round(bookHsq*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
+.book{position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
+.scrim{position:absolute;inset:0;background:linear-gradient(to top, #08102a 12%, rgba(8,16,42,.96) 33%, rgba(8,16,42,.62) 50%, rgba(8,16,42,0) 70%)}
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(h*0.075)}px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:${b(0.03)}px;padding:0 ${Math.round(w*0.085)}px}
+.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.072)}px;line-height:1.08;letter-spacing:-.5px;max-width:94%}
+.h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.cta{margin-top:${b(0.012)}px;padding:${b(0.028)}px ${b(0.058)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.034)}px;letter-spacing:.02em}
+.url{font-size:${b(0.027)}px}
+`, `
+  <div class="bookglow"></div>
+  <img class="book" src="${ebookUri}">
+  <div class="scrim"></div>
+  <div class="foot">
+    <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
+    <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
+    <div class="cta">Gratis sichern – Link in Bio</div>
+    <div class="url">www.werdemeisterdeinergedanken.de</div>
+  </div>`);
+  }
+
   // Buch höhenbasiert dimensionieren → verlässlicher Rand oben/unten,
   // kein Überlaufen mehr (Mockup-Ratio h/w ≈ 1,37).
   const bookH = land ? Math.round(h * 0.66)
-    : Math.round(h * (h > w * 1.4 ? 0.32 : h > w ? 0.28 : 0.26));
+    : Math.round(h * (h > w * 1.4 ? 0.36 : h > w ? 0.38 : 0.40));
   const bookW = Math.round(bookH / 1.37);
   const common = `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
@@ -167,7 +193,7 @@ const ebookPost = (w, h) => {
   }
   // Hoch-/Quadratformat: zentrierte Säule mit viel Luft
   return shell(w, h, `${common}
-.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.07)}px ${Math.round(w*0.1)}px;gap:${b(0.05)}px}
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.055)}px ${Math.round(w*0.1)}px;gap:${b(0.04)}px}
 .bookwrap{position:relative;display:flex;justify-content:center}
 .col{display:flex;flex-direction:column;align-items:center;gap:${b(0.04)}px}
 .bul{align-items:flex-start}
