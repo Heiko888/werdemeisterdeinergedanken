@@ -142,7 +142,8 @@ const ebookPost = (w, h) => {
   if (w === h) {
     const bookHsq = Math.round(h * 0.55);
     return shell(w, h, `
-.eyebrow{font-size:${b(0.026)}px;letter-spacing:.18em}
+.eyebrow{position:relative;display:inline-block;z-index:0;font-size:${b(0.026)}px;letter-spacing:.18em}
+.eyebrow::before{content:"";position:absolute;left:50%;top:54%;transform:translate(-50%,-50%);width:calc(100% + ${b(0.11)}px);height:${b(0.11)}px;border-radius:999px;background:radial-gradient(ellipse at center, rgba(255,255,255,.92), rgba(255,255,255,.5) 52%, rgba(255,255,255,0) 78%);filter:blur(${b(0.01)}px);z-index:-1}
 .bookglow{position:absolute;left:50%;top:31%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*1.05)}px;height:${Math.round(bookHsq*1.05)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.24), transparent 66%);filter:blur(46px)}
 .book{position:absolute;left:50%;top:33%;transform:translate(-50%,-50%);height:${bookHsq}px;width:auto;filter:drop-shadow(0 28px 64px rgba(0,0,0,.62))}
 .scrim{position:absolute;inset:0;background:linear-gradient(to top, #08102a 14%, rgba(8,16,42,.96) 32%, rgba(8,16,42,.5) 48%, rgba(8,16,42,0) 66%)}
