@@ -96,10 +96,10 @@ const thumbnail = (w, h, data) => shell(w, h, `
 // Optional `portrait`: freigestellte Person als Hintergrundebene (Text bleibt
 // vorderste Ebene) – per DOM-Reihenfolge zwischen bg/stars und dem Text.
 const quoteTile = (w, h, q, portrait) => shell(w, h, `
-.portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:${Math.round(h*0.94)}px;width:auto}
+.portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:${Math.round(h*0.94)}px;width:auto;filter:brightness(1.32) saturate(1.06)}
 .pscrim{position:absolute;inset:0;background:
-  linear-gradient(to top, rgba(8,16,42,.62) 0%, rgba(8,16,42,.5) 42%, rgba(8,16,42,.68) 100%),
-  radial-gradient(60% 42% at 50% 46%, rgba(8,16,42,.62), transparent 72%);}
+  linear-gradient(to top, rgba(8,16,42,.4) 0%, rgba(8,16,42,.22) 42%, rgba(8,16,42,.4) 100%),
+  radial-gradient(58% 40% at 50% 47%, rgba(8,16,42,.48), transparent 74%);}
 .qwrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.2)}px;text-align:center}
 .quote-mark{font-family:Fraunces,serif;font-size:${Math.round(w*0.16)}px;line-height:.7;color:rgba(52,196,196,.30);margin-bottom:${Math.round(w*0.03)}px}
 .quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.072)}px;line-height:1.24;letter-spacing:-.3px;text-shadow:0 2px 18px rgba(8,16,42,.7)}
