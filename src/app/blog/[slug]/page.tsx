@@ -149,7 +149,7 @@ export default async function BlogPostPage({
         <Container size="narrow" className="flex flex-col items-start gap-5">
           <Link
             href="/blog"
-            className="-mx-2 inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm text-cream-dim/70 transition-colors hover:text-cream"
+            className="-mx-2 inline-flex min-h-11 items-center gap-2 rounded-lg px-3 py-2 text-sm text-cream-dim/70 transition-colors hover:text-cream"
           >
             <ArrowRight className="rotate-180" />
             Alle Artikel
@@ -160,7 +160,7 @@ export default async function BlogPostPage({
           <h1 className="text-[2rem] font-medium leading-[1.1] text-cream sm:text-4xl md:text-5xl">
             {post.title}
           </h1>
-          <div className="flex items-center gap-2 text-sm text-cream-dim/60">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-cream-dim/60">
             <time dateTime={post.date}>{post.dateLabel}</time>
             <span aria-hidden>·</span>
             <span>{post.readingMinutes} Min. Lesezeit</span>

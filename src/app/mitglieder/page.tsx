@@ -175,7 +175,7 @@ export default async function MembersPage() {
             </Link>
             <a
               href="/mitglieder/arbeitsheft"
-              className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+              className="inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:rounded-full"
             >
               <Download />
               Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
@@ -218,7 +218,7 @@ export default async function MembersPage() {
                 {startStagePractice && (
                   <Link
                     href={`/mitglieder/praxis/${startStagePractice.slug}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                    className="inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent sm:rounded-full"
                   >
                     <Play />
                     Passende Praxis: {startStagePractice.title}
