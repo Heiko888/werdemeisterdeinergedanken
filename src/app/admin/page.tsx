@@ -206,19 +206,27 @@ export default async function AdminPage() {
               </h2>
               <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
                 {funnel.tests.byStage.map((count, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <span className="w-28 shrink-0 text-sm text-ink-mid">
-                      Stufe {i + 1} · {stages[i]?.title ?? ""}
-                    </span>
+                  // Auf Handy stapeln (Label + Zahl oben, Balken darunter), damit
+                  // die langen Stufen-Titel nicht in ein enges w-28-Label gequetscht
+                  // werden. Ab sm wieder kompakt in einer Zeile.
+                  <div
+                    key={i}
+                    className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-3"
+                  >
+                    <div className="flex items-baseline justify-between gap-2 sm:contents">
+                      <span className="text-sm text-ink-mid sm:w-28 sm:shrink-0">
+                        Stufe {i + 1} · {stages[i]?.title ?? ""}
+                      </span>
+                      <span className="text-sm tabular-nums text-ink-mid sm:order-last sm:w-8 sm:text-right">
+                        {count}
+                      </span>
+                    </div>
                     <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-ink/10">
                       <div
                         className="h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500"
                         style={{ width: `${(count / maxStage) * 100}%` }}
                       />
                     </div>
-                    <span className="w-8 text-right text-sm tabular-nums text-ink-mid">
-                      {count}
-                    </span>
                   </div>
                 ))}
               </div>
