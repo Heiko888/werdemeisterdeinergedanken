@@ -40,7 +40,7 @@ export default function WissenPage() {
             <span>🔬 aktuelle Forschung</span>
             <Link
               href="/mitglieder/wissensdatenbank/glossar"
-              className="ml-auto inline-flex items-center gap-1.5 font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
+              className="inline-flex items-center gap-1.5 font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent sm:ml-auto"
             >
               Zum Glossar
               <ArrowRight />

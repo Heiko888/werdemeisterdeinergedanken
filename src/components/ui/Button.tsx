@@ -16,7 +16,7 @@ const variants: Record<Variant, string> = {
 
 const sizes: Record<Size, string> = {
   md: "h-11 px-5 text-sm",
-  lg: "h-13 px-7 text-base py-3.5",
+  lg: "min-h-13 px-7 text-base py-3.5",
 };
 
 type CommonProps = {

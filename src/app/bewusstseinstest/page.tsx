@@ -27,7 +27,7 @@ export default function BewusstseinstestPage() {
         />
         <Container size="narrow" className="flex flex-col items-center gap-5 text-center">
           <Eyebrow>Bewusstseinstest</Eyebrow>
-          <h1 className="text-[1.9rem] font-medium leading-[1.1] text-cream [hyphens:none] [overflow-wrap:normal] sm:text-5xl">
+          <h1 className="text-[1.9rem] font-medium leading-[1.1] text-cream sm:[hyphens:none] sm:[overflow-wrap:normal] sm:text-5xl">
             Wo findest du dich <em className="accent">gerade</em>?
           </h1>
           <p className="max-w-xl text-[1.05rem] leading-relaxed text-cream/75">

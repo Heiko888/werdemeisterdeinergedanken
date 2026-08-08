@@ -274,7 +274,7 @@ export default async function GedankenprofilPage() {
                           {b.practice && (
                             <Link
                               href={`/mitglieder/praxis/${b.practice.slug}`}
-                              className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                              className="inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent sm:rounded-full"
                             >
                               <Play />
                               Passende Praxis: {b.practice.title}
@@ -283,7 +283,7 @@ export default async function GedankenprofilPage() {
                           {b.deepDive && (
                             <Link
                               href={`/mitglieder/wissen/${b.deepDive.slug}`}
-                              className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                              className="inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent sm:rounded-full"
                             >
                               Vertiefung: {b.deepDive.title}
                               <ArrowRight />

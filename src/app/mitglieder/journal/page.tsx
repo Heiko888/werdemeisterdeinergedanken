@@ -124,7 +124,7 @@ export default async function JournalPage() {
             Frage, die du beantwortest, weiterwächst.
           </p>
 
-          <div className="mt-2 grid w-full grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="mt-2 grid w-full grid-cols-1 gap-3 xs:grid-cols-2 sm:grid-cols-4">
             <Stat value={String(reflectionCount)} label="Reflexionen" />
             <Stat value={`${completedCount} / 7`} label="Stufen abgeschlossen" />
             <Stat
