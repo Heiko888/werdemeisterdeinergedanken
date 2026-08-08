@@ -30,7 +30,7 @@ export default function PrivacyPage() {
                 <br />
                 Deutschland
                 <br />
-                E-Mail: <a href={`mailto:${site.email}`}>{site.email}</a>
+                E-Mail: <a href={`mailto:${site.email}`} className="break-all">{site.email}</a>
               </p>
 
               <h2>2. Allgemeines zur Datenverarbeitung</h2>
@@ -202,7 +202,7 @@ export default function PrivacyPage() {
               <p>
                 Speicherdauer: bis zur Löschung deines Accounts. Auf deinen Wunsch
                 löschen wir deinen Account vollständig – eine formlose Mail an{" "}
-                <a href={`mailto:${site.email}`}>{site.email}</a> genügt.
+                <a href={`mailto:${site.email}`} className="break-all">{site.email}</a> genügt.
                 Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
                 (Vertragserfüllung).
                 <br />
@@ -233,7 +233,7 @@ export default function PrivacyPage() {
               </ul>
               <p>
                 Zur Ausübung genügt eine Mail an{" "}
-                <a href={`mailto:${site.email}`}>{site.email}</a>.
+                <a href={`mailto:${site.email}`} className="break-all">{site.email}</a>.
               </p>
 
               <h2>12. Beschwerderecht</h2>
