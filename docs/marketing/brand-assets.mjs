@@ -17,6 +17,11 @@ const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
 const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook-mockup.webp")).toString("base64")}`;
+// Freigestellte Person (Greenscreen entfernt) – als Hintergrund für Zitat 07.
+const heikoFreiPath = join(ROOT, "public/heiko-freigestellt.png");
+const heikoUri = existsSync(heikoFreiPath)
+  ? `data:image/png;base64,${readFileSync(heikoFreiPath).toString("base64")}`
+  : null;
 
 // ---------- gemeinsame Marken-Optik ----------------------------------------
 const BG = `
@@ -87,16 +92,23 @@ const thumbnail = (w, h, data) => shell(w, h, `
 </div>
 <div class="glow"></div><img class="brain" src="${brainUrl}">`);
 
-// Zitat-Kachel – großer Serifensatz, Marke dezent unten
-const quoteTile = (w, h, q) => shell(w, h, `
+// Zitat-Kachel – großer Serifensatz, Marke dezent unten.
+// Optional `portrait`: freigestellte Person als Hintergrundebene (Text bleibt
+// vorderste Ebene) – per DOM-Reihenfolge zwischen bg/stars und dem Text.
+const quoteTile = (w, h, q, portrait) => shell(w, h, `
+.portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:${Math.round(h*0.94)}px;width:auto}
+.pscrim{position:absolute;inset:0;background:
+  linear-gradient(to top, rgba(8,16,42,.62) 0%, rgba(8,16,42,.5) 42%, rgba(8,16,42,.68) 100%),
+  radial-gradient(60% 42% at 50% 46%, rgba(8,16,42,.62), transparent 72%);}
 .qwrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.2)}px;text-align:center}
 .quote-mark{font-family:Fraunces,serif;font-size:${Math.round(w*0.16)}px;line-height:.7;color:rgba(52,196,196,.30);margin-bottom:${Math.round(w*0.03)}px}
-.quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.072)}px;line-height:1.24;letter-spacing:-.3px}
+.quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.072)}px;line-height:1.24;letter-spacing:-.3px;text-shadow:0 2px 18px rgba(8,16,42,.7)}
 .quote em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.075)}px;display:flex;align-items:center;justify-content:center;gap:14px}
 .foot img{width:${Math.round(w*0.05)}px;height:${Math.round(w*0.05)}px;object-fit:contain}
 .foot .t{font-size:${Math.round(w*0.026)}px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(244,242,236,.7)}
-`, `<div class="qwrap">
+`, `${portrait ? `<img class="portrait" src="${portrait}"><div class="pscrim"></div>` : ""}
+<div class="qwrap">
   <div class="quote-mark">„</div>
   <div class="quote">${q}</div>
 </div>
@@ -328,9 +340,10 @@ for (const d of THUMBS)
   TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, html: () => thumbnail(1280, 720, d) });
 // Zitat-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const q of QUOTES) {
-  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t) });
-  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, html: () => quoteTile(1080, 1350, q.t) });
-  TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, html: () => quoteTile(1080, 1920, q.t) });
+  const bg = q.key === "07" ? heikoUri : null; // Zitat 07: Person im Hintergrund
+  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t, bg) });
+  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, html: () => quoteTile(1080, 1350, q.t, bg) });
+  TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, html: () => quoteTile(1080, 1920, q.t, bg) });
 }
 // Studien-Fakten-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const f of FACTS) {
