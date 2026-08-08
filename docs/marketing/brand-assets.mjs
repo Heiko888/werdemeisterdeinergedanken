@@ -18,9 +18,12 @@ const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
 const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook-mockup.webp")).toString("base64")}`;
 // Freigestellte Person (Greenscreen entfernt) – als Hintergrund für Zitat 07.
-const heikoFreiPath = join(ROOT, "public/heiko-freigestellt.png");
+// WebP mit Alpha statt PNG: 0,2 statt 4,7 MB bei gleicher sichtbarer Qualität.
+// Auf Höhe 1920 skaliert – exakt die größte Kachel (9:16), die Person wird mit
+// 94 % der Kachelhöhe gerendert, also nie hochskaliert.
+const heikoFreiPath = join(ROOT, "public/heiko-freigestellt.webp");
 const heikoUri = existsSync(heikoFreiPath)
-  ? `data:image/png;base64,${readFileSync(heikoFreiPath).toString("base64")}`
+  ? `data:image/webp;base64,${readFileSync(heikoFreiPath).toString("base64")}`
   : null;
 
 // ---------- gemeinsame Marken-Optik ----------------------------------------
