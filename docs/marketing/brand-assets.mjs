@@ -96,7 +96,6 @@ const thumbnail = (w, h, data) => shell(w, h, `
 // Optional `portrait`: freigestellte Person als Hintergrundebene (Text bleibt
 // vorderste Ebene) – per DOM-Reihenfolge zwischen bg/stars und dem Text.
 const quoteTile = (w, h, q, portrait) => shell(w, h, `
-.logo-tl{position:absolute;top:${Math.round(w*0.055)}px;left:${Math.round(w*0.055)}px;height:${Math.round(w*0.085)}px;width:auto;filter:drop-shadow(0 2px 12px rgba(0,0,0,.45))}
 .portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:${Math.round(h*0.94)}px;width:auto;filter:brightness(1.32) saturate(1.06)}
 .pscrim{position:absolute;inset:0;background:
   radial-gradient(60% 48% at 50% 50%, rgba(8,16,42,.66), rgba(8,16,42,.32) 52%, transparent 74%);}
@@ -107,7 +106,7 @@ const quoteTile = (w, h, q, portrait) => shell(w, h, `
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.075)}px;display:flex;align-items:center;justify-content:center;gap:14px}
 .foot img{width:${Math.round(w*0.05)}px;height:${Math.round(w*0.05)}px;object-fit:contain}
 .foot .t{font-size:${Math.round(w*0.026)}px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(244,242,236,.7)}
-`, `${portrait ? `<img class="portrait" src="${portrait}"><div class="pscrim"></div><img class="logo-tl" src="${brainUrl}">` : ""}
+`, `${portrait ? `<img class="portrait" src="${portrait}"><div class="pscrim"></div>` : ""}
 <div class="qwrap">
   <div class="quote-mark">„</div>
   <div class="quote">${q}</div>
