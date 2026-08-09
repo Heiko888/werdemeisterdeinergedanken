@@ -19,8 +19,24 @@ export const metadata: Metadata = {
 };
 
 // Preis-Platzhalter – vor dem Livegang durch das echte Modell ersetzen.
-const PRICE = "49 €";
-const PRICE_PER = "/ Monat";
+const PLANS = {
+  monat: {
+    plan: "monat" as const,
+    label: "Monatlich",
+    price: "49 €",
+    per: "/ Monat",
+    note: "Monatlich kündbar",
+  },
+  jahr: {
+    plan: "jahr" as const,
+    label: "Jährlich",
+    price: "490 €",
+    per: "/ Jahr",
+    note: "2 Monate gratis · ≈ 40,83 €/Monat",
+  },
+};
+const PRICE = PLANS.monat.price;
+const PRICE_PER = PLANS.monat.per;
 
 const features = [
   ["Geführte Videos", "Zu jeder Stufe ein klarer, ruhiger Impuls zum Mitgehen."],
@@ -127,6 +143,10 @@ export default async function MitgliedschaftPage({
                 Kostenlosen Bewusstseinstest machen
               </Link>
             </div>
+            <p className="mt-4 text-sm text-cream/60">
+              Ab {PRICE} {PRICE_PER} · oder {PLANS.jahr.price} {PLANS.jahr.per}{" "}
+              <span className="text-cream/45">(2 Monate gratis)</span> · jederzeit kündbar
+            </p>
             <p className="mt-6 flex items-center gap-2 text-sm text-cream/55">
               <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-leaf-500 to-teal-500" />
               Bodenständig, ehrlich, ohne esoterisches Blabla. In deinem Tempo.
@@ -317,13 +337,7 @@ export default async function MitgliedschaftPage({
             <span className="text-xs font-bold uppercase tracking-[0.16em] text-cream/60">
               Mitgliedschaft
             </span>
-            <div className="mt-2 font-display text-5xl font-medium text-cream">
-              {PRICE}
-              <span className="ml-1 font-sans text-base font-medium text-cream/60">
-                {PRICE_PER}
-              </span>
-            </div>
-            <ul className="mt-7 flex flex-col gap-3">
+            <ul className="mt-5 flex flex-col gap-3">
               {[
                 "Alle 7 Stufen mit geführten Videos",
                 `${practices.length} Praxis-Übungen & ${deepDives.length} Vertiefungen`,
@@ -339,9 +353,48 @@ export default async function MitgliedschaftPage({
                 </li>
               ))}
             </ul>
-            <CheckoutButton size="lg" className="mt-8 w-full">
-              Mitglied werden
-            </CheckoutButton>
+
+            {/* Zwei Abo-Optionen: Jahr (hervorgehoben) + Monat */}
+            <div className="mt-7 flex flex-col gap-3">
+              <div className="relative rounded-2xl border border-leaf-500/40 bg-leaf-500/10 p-5">
+                <span className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950">
+                  2 Monate gratis
+                </span>
+                <div className="text-xs font-bold uppercase tracking-[0.14em] text-cream/60">
+                  {PLANS.jahr.label}
+                </div>
+                <div className="mt-1 font-display text-4xl font-medium text-cream">
+                  {PLANS.jahr.price}
+                  <span className="ml-1 font-sans text-base font-medium text-cream/60">
+                    {PLANS.jahr.per}
+                  </span>
+                </div>
+                <div className="mt-1 text-sm text-cream/60">{PLANS.jahr.note}</div>
+                <CheckoutButton plan="jahr" size="lg" className="mt-4 w-full">
+                  Jährlich Mitglied werden
+                </CheckoutButton>
+              </div>
+
+              <div className="rounded-2xl border border-cream/15 p-5">
+                <div className="flex items-baseline justify-between">
+                  <div>
+                    <div className="text-xs font-bold uppercase tracking-[0.14em] text-cream/60">
+                      {PLANS.monat.label}
+                    </div>
+                    <div className="mt-1 font-display text-3xl font-medium text-cream">
+                      {PLANS.monat.price}
+                      <span className="ml-1 font-sans text-sm font-medium text-cream/60">
+                        {PLANS.monat.per}
+                      </span>
+                    </div>
+                  </div>
+                  <span className="text-sm text-cream/50">{PLANS.monat.note}</span>
+                </div>
+                <CheckoutButton plan="monat" variant="secondary" size="lg" className="mt-4 w-full">
+                  Monatlich Mitglied werden
+                </CheckoutButton>
+              </div>
+            </div>
           </div>
           <div>
             <Eyebrow>Zugang</Eyebrow>

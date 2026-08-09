@@ -13,13 +13,28 @@ import Stripe from "stripe";
  *   STRIPE_PRICE_ID          – Preis-ID des Abo-Produkts (price_…)
  *   STRIPE_WEBHOOK_SECRET    – Signatur-Geheimnis des Webhooks (whsec_…)
  */
-export const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID;
+export const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID; // Monatsabo (Standard)
+export const STRIPE_PRICE_ID_YEARLY = process.env.STRIPE_PRICE_ID_YEARLY; // Jahresabo (optional)
 export const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET;
 
 const SECRET = process.env.STRIPE_SECRET_KEY;
 
-/** True, wenn Checkout starten kann (Key + Preis vorhanden). */
+/** True, wenn Checkout starten kann (Key + mind. Monatspreis vorhanden). */
 export const isStripeConfigured = Boolean(SECRET && STRIPE_PRICE_ID);
+
+/** True, wenn zusätzlich ein Jahresabo hinterlegt ist. */
+export const hasYearlyPlan = Boolean(STRIPE_PRICE_ID_YEARLY);
+
+export type Plan = "monat" | "jahr";
+
+/**
+ * Preis-ID zu einem Plan auflösen. „jahr“ nutzt das Jahresabo, fällt aber auf
+ * das Monatsabo zurück, falls STRIPE_PRICE_ID_YEARLY (noch) nicht gesetzt ist.
+ */
+export function priceIdForPlan(plan: Plan | undefined): string | undefined {
+  if (plan === "jahr" && STRIPE_PRICE_ID_YEARLY) return STRIPE_PRICE_ID_YEARLY;
+  return STRIPE_PRICE_ID;
+}
 
 let cached: Stripe | null = null;
 

@@ -12,14 +12,20 @@ export function CheckoutButton({
   children,
   size = "lg",
   className,
+  plan = "monat",
+  variant = "accent",
 }: {
   children: ReactNode;
   size?: "md" | "lg";
   className?: string;
+  /** Gewählter Abo-Takt: Monats- oder Jahresabo. */
+  plan?: "monat" | "jahr";
+  variant?: "accent" | "secondary";
 }) {
   return (
     <form action="/api/checkout" method="POST" className="contents">
-      <Button type="submit" variant="accent" size={size} className={className}>
+      <input type="hidden" name="plan" value={plan} />
+      <Button type="submit" variant={variant} size={size} className={className}>
         {children}
       </Button>
     </form>

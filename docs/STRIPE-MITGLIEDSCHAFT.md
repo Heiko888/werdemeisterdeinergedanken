@@ -9,7 +9,10 @@ und schickt der Kundin/dem Kunden eine Mail zum Setzen des Passworts.
 Der Code ist fertig. Zum Scharfschalten nur diese Schritte (alle in deinen
 Dashboards – nichts davon geht ohne deine Zugangsdaten):
 
-1. **Stripe-Produkt + Preis** anlegen → `STRIPE_PRICE_ID` (`price_…`) notieren.
+1. **Stripe-Produkt + Preise** anlegen: ein Produkt „Mitgliedschaft" mit zwei
+   wiederkehrenden Preisen – **49 €/Monat** → `STRIPE_PRICE_ID` und **490 €/Jahr**
+   → `STRIPE_PRICE_ID_YEARLY` (die Jahres-Option erscheint nur, wenn diese
+   zweite ID gesetzt ist; sonst wird überall das Monatsabo genutzt).
 2. **Stripe API-Key** (`sk_…`) und **Webhook** (Endpoint
    `…/api/stripe/webhook`, Events s. u.) anlegen → `STRIPE_WEBHOOK_SECRET`
    (`whsec_…`) notieren.
