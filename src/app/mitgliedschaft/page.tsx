@@ -65,9 +65,45 @@ function DarkSection({
   );
 }
 
-export default function MitgliedschaftPage() {
+const NOTICES: Record<string, { tone: "info" | "warn"; text: string }> = {
+  abo: {
+    tone: "info",
+    text: "Für den Mitgliederbereich brauchst du eine aktive Mitgliedschaft. Schließe sie hier in einer Minute ab – dein Zugang wird sofort freigeschaltet.",
+  },
+  abgebrochen: {
+    tone: "info",
+    text: "Der Checkout wurde abgebrochen – kein Problem. Du kannst jederzeit fortfahren, wenn du bereit bist.",
+  },
+  fehler: {
+    tone: "warn",
+    text: "Beim Checkout ist leider etwas schiefgelaufen. Bitte versuch es erneut – oder melde dich über die Kontaktseite, dann kümmern wir uns persönlich.",
+  },
+};
+
+export default async function MitgliedschaftPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ zugang?: string; checkout?: string }>;
+}) {
+  const { zugang, checkout } = await searchParams;
+  const notice =
+    (zugang === "abo" && NOTICES.abo) ||
+    (checkout && NOTICES[checkout]) ||
+    null;
+
   return (
     <>
+      {notice && (
+        <div
+          className={`border-b px-4 py-3 text-center text-sm leading-relaxed ${
+            notice.tone === "warn"
+              ? "border-red-500/30 bg-red-500/10 text-red-900"
+              : "border-accent/30 bg-accent/10 text-ink"
+          }`}
+        >
+          <Container>{notice.text}</Container>
+        </div>
+      )}
       {/* Hero */}
       <DarkSection className="!py-0">
         <div className="grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-[1.15fr_.85fr]">

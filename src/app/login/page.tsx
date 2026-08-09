@@ -1,5 +1,6 @@
 import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { AuthForm } from "@/components/auth/AuthForm";
@@ -47,10 +48,25 @@ export default async function LoginPage({
         </div>
 
         {isSupabaseConfigured ? (
-          <AuthForm
-            redirectTo={redirect ?? "/mitglieder"}
-            allowRegister={ALLOW_SELF_REGISTRATION}
-          />
+          <div className="flex w-full max-w-md flex-col items-center gap-5">
+            <AuthForm
+              redirectTo={redirect ?? "/mitglieder"}
+              allowRegister={ALLOW_SELF_REGISTRATION}
+            />
+            {!ALLOW_SELF_REGISTRATION && (
+              <p className="text-sm leading-relaxed text-ink-mid">
+                Noch kein Zugang?{" "}
+                <Link
+                  href="/mitgliedschaft"
+                  className="font-semibold text-accent underline-offset-4 hover:underline"
+                >
+                  Jetzt Mitglied werden
+                </Link>{" "}
+                – nach der Buchung richtest du dein Passwort ein und bist sofort
+                drin.
+              </p>
+            )}
+          </div>
         ) : (
           <div className="w-full max-w-md rounded-2xl border border-gold-500/40 bg-gold-300/20 p-6 text-left text-sm leading-relaxed text-ink-soft shadow-card">
             <strong className="block font-semibold text-ink">

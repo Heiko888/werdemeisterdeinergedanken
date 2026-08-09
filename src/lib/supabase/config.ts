@@ -16,12 +16,14 @@ export const isSupabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 export const REQUIRE_MEMBER_LOGIN = true;
 
 /**
- * Selbst-Registrierung durch Besucher.
- * Vorerst `false` → geschlossener Bereich: nur „Anmelden“, keine Registrierung.
- * Zugänge werden von Hand in Supabase angelegt.
- * Auf `true` setzen, um die Registrierung für alle zu öffnen.
+ * Selbst-Registrierung durch Besucher (freie Konten ohne Zahlung).
+ * Standard `false` → keine freie Registrierung: Zugänge entstehen durch den
+ * Stripe-Checkout (Webhook legt das Konto automatisch an) oder von Hand.
+ * Per Umgebungsvariable `ALLOW_SELF_REGISTRATION=true` freischalten – z. B. für
+ * das Modell „erst registrieren, dann bezahlen“.
  */
-export const ALLOW_SELF_REGISTRATION = false;
+export const ALLOW_SELF_REGISTRATION =
+  process.env.ALLOW_SELF_REGISTRATION === "true";
 
 /**
  * Bezahlschranke für den Mitgliederbereich.
