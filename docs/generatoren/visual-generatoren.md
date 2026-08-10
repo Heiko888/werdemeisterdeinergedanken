@@ -121,3 +121,35 @@ Design-Änderungen **nicht** automatisch mit `build.mjs` synchronisiert.
 **Eigenständige Generatoren** (`marketing-serien.mjs`, `stufen-ueberblick.mjs`)
 und **`endcard.mjs`** laufen ohne Zwischenschritt/`data.mjs`; nur Fonts/Logo aus
 `docs/reels/covers/` nötig.
+
+---
+
+## Cover-Nummer ↔ Thema: Vertiefungen
+
+Die Reel-Cover werden fortlaufend nummeriert (`reel-vertiefungen-NN.webp`), und
+das Admin-Dashboard `/admin/vorlagen` betitelt sie nach **Nummer**
+(„Vertiefungen · Cover NN"), **nicht** nach Thema. Die Reihenfolge ergibt sich
+aus dem `vertiefungen`-Block in `docs/reels/covers/data.mjs`. Zuordnung:
+
+| Cover | Thema | Motiv-Text | Slug (Carousel/PDF) |
+|:---:|---|---|---|
+| 01 | Automatische Gedanken | „Die Stimme, die schon **geurteilt** hat" | `automatische-gedanken` |
+| 02 | Konditionierung | „Alte Reize feuern **noch**" | `konditionierung` |
+| 03 | Kognitive Verzerrungen | „Denkfehler, die sich **wahr** anfühlen" | `kognitive-verzerrungen` |
+| 04 | Kernüberzeugungen | „Die Regel unter dem **Gedanken**" | `kernueberzeugungen` |
+| 05 | Der innere Kritiker | „Wessen Stimme ist das **wirklich?**" | `der-innere-kritiker` |
+| 06 | Neuroplastizität | „Dein Gehirn kann sich **ändern**" | `neuroplastizitaet` |
+| 07 | Reiz-Reaktions-Lücke | „Zwischen Reiz und Reaktion: **du**" | `die-reiz-reaktions-luecke` |
+| 08 | Grübeln | „Raus aus der **Endlosschleife**" | `gruebeln-und-gedankenkreisen` |
+| 09 | Emotionsregulation | „Fühlen, ohne zu **ertrinken**" | `emotionsregulation` |
+| 10 | Selbstmitgefühl | „Sei dein eigener **Freund**" | `selbstmitgefuehl` |
+| 11 | **Werte & Ziele** | „Die Richtung unter dem **Tun**" | `werte-und-ziele` |
+| 12 | Muster & Körper | „Wenn Denken unter die **Haut** geht" | `muster-koerper-und-gesundheit` |
+| 13 | Integration & Weitergabe | „Vom Wissen zur gelebten **Haltung**" | `integration-und-weitergabe` |
+
+Dieselbe Reihenfolge gilt für die Galerie-Thumbnails
+(`thumbs/reels/reel-vertiefungen-NN.webp`) und – bis auf die abweichende
+Slug-Schreibweise – für die Reel-Drehbücher in
+`docs/skripte/reels/vertiefungen.md` (dort als „NN · Thema" nummeriert). Bei den
+Deep-Dives in `src/lib/deep-dives.ts` weichen einzelne Slugs ab (z. B.
+`innerer-kritiker`, `reiz-reaktions-luecke`, `gruebeln`, `muster-und-koerper`).
