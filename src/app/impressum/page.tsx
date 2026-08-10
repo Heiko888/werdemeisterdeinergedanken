@@ -36,7 +36,7 @@ export default function ImprintPage() {
               <h2>Kontakt</h2>
               <p>
                 E-Mail:{" "}
-                <a href={`mailto:${site.email}`}>{site.email}</a>
+                <a href={`mailto:${site.email}`} className="break-all">{site.email}</a>
               </p>
 
               <h2>Umsatzsteuer-ID</h2>
