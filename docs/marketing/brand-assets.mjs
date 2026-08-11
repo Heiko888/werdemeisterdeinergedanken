@@ -156,26 +156,29 @@ const ebookPost = (w, h) => {
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v); // Schrift an kürzerer Kante
 
-  // Quadratformat (1:1): gestapelt – Eyebrow oben, Cover in der Mitte
-  // (ganz sichtbar), Headline + CTA darunter.
+  // Quadratformat (1:1): Conversion-Post – kurzer Eyebrow, großes Cover als
+  // Produkt, Headline, aktiver CTA + „Link in Bio" (keine URL).
   if (w === h) {
-    const bookHsq = Math.round(h * 0.42);
+    const bookHsq = Math.round(h * 0.52);
     return shell(w, h, `
-.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.06)}px ${Math.round(w*0.09)}px;gap:${b(0.042)}px}
-.eyebrow{font-size:${b(0.026)}px;letter-spacing:.18em}
+.post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.05)}px ${Math.round(w*0.09)}px;gap:${b(0.032)}px}
+.eyebrow{font-size:${b(0.028)}px;letter-spacing:.2em}
 .bookwrap{position:relative;display:flex;justify-content:center}
-.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.9)}px;height:${Math.round(bookHsq*0.9)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.26), transparent 68%);filter:blur(40px)}
-.book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(0 22px 52px rgba(0,0,0,.6))}
-.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px;max-width:98%}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.82)}px;height:${Math.round(bookHsq*0.82)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.24), transparent 68%);filter:blur(44px)}
+.book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(0 24px 58px rgba(0,0,0,.62))}
+.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.06)}px;line-height:1.16;letter-spacing:-.5px;max-width:98%}
 .h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.cta{margin-top:${b(0.006)}px;padding:${b(0.028)}px ${b(0.058)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.034)}px;letter-spacing:.02em}
-.url{font-size:${b(0.027)}px}
+.ctaGroup{display:flex;flex-direction:column;align-items:center;gap:${b(0.013)}px;margin-top:${b(0.008)}px}
+.cta{padding:${b(0.019)}px ${b(0.05)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.01em}
+.cta-note{font-size:${b(0.023)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,242,236,.55)}
 `, `<div class="post">
-  <div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
+  <div class="eyebrow">Dein Gratis-Einstieg</div>
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
   <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
-  <div class="cta">Gratis sichern – Link in Bio</div>
-  <div class="url">www.werdemeisterdeinergedanken.de</div>
+  <div class="ctaGroup">
+    <div class="cta">E-Book gratis sichern →</div>
+    <div class="cta-note">Link in Bio</div>
+  </div>
 </div>`);
   }
 
