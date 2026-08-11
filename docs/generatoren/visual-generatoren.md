@@ -124,12 +124,29 @@ und **`endcard.mjs`** laufen ohne Zwischenschritt/`data.mjs`; nur Fonts/Logo aus
 
 ---
 
-## Cover-Nummer ↔ Thema: Vertiefungen
+## Cover-Nummer ↔ Thema (alle Serien)
 
-Die Reel-Cover werden fortlaufend nummeriert (`reel-vertiefungen-NN.webp`), und
-das Admin-Dashboard `/admin/vorlagen` betitelt sie nach **Nummer**
-(„Vertiefungen · Cover NN"), **nicht** nach Thema. Die Reihenfolge ergibt sich
-aus dem `vertiefungen`-Block in `docs/reels/covers/data.mjs`. Zuordnung:
+Die Reel-Cover werden **je Serie** fortlaufend nummeriert
+(`reel-<serie>-NN.webp`). Das Admin-Dashboard `/admin/vorlagen` betitelt sie nur
+nach **Serie + Nummer** („Vertiefungen · Cover 11"), **nicht** nach Thema — und
+jede Serie hat ihre eigene „01, 02, …". Die Nummer steht außerdem sichtbar oben
+rechts im Cover selbst. Die Reihenfolge ergibt sich aus `COLLECTIONS` in
+`docs/reels/covers/data.mjs`; die Zuordnung unten ist gegen die gerenderten
+Bilder verifiziert.
+
+### Die 7 Stufen (`reel-stufen-NN`)
+
+| Cover | Thema | Motiv-Text | Slug |
+|:---:|---|---|---|
+| 01 | Autopilot | „Du wirst **gelebt**" | `autopilot` |
+| 02 | Erwachen | „Der Moment, in dem du **aufwachst**" | `erwachen` |
+| 03 | Selbstbeobachtung | „Sieh dir selbst **zu**" | `selbstbeobachtung` |
+| 04 | Emotionale Reifung | „Fühlen – ohne **festzuhalten**" | `emotionale-reifung` |
+| 05 | Schöpferkraft | „Du erschaffst – **bewusst**" | `schoepferkraft` |
+| 06 | Innere Ausrichtung | „Kopf, Herz und **Handeln**" | `innere-ausrichtung` |
+| 07 | Meisterschaft | „Du bist der **Gestalter**" | `meisterschaft` |
+
+### Vertiefungen (`reel-vertiefungen-NN`)
 
 | Cover | Thema | Motiv-Text | Slug (Carousel/PDF) |
 |:---:|---|---|---|
@@ -147,9 +164,70 @@ aus dem `vertiefungen`-Block in `docs/reels/covers/data.mjs`. Zuordnung:
 | 12 | Muster & Körper | „Wenn Denken unter die **Haut** geht" | `muster-koerper-und-gesundheit` |
 | 13 | Integration & Weitergabe | „Vom Wissen zur gelebten **Haltung**" | `integration-und-weitergabe` |
 
-Dieselbe Reihenfolge gilt für die Galerie-Thumbnails
-(`thumbs/reels/reel-vertiefungen-NN.webp`) und – bis auf die abweichende
-Slug-Schreibweise – für die Reel-Drehbücher in
-`docs/skripte/reels/vertiefungen.md` (dort als „NN · Thema" nummeriert). Bei den
-Deep-Dives in `src/lib/deep-dives.ts` weichen einzelne Slugs ab (z. B.
-`innerer-kritiker`, `reiz-reaktions-luecke`, `gruebeln`, `muster-und-koerper`).
+### Praxis (`reel-praxis-NN`)
+
+| Cover | Thema | Motiv-Text | Slug |
+|:---:|---|---|---|
+| 01 | Atembeobachtung | „Zurück zum **Atem**" | `atembeobachtung` |
+| 02 | Der innere Beobachter | „Wer schaut da **zu?**" | `der-innere-beobachter` |
+| 03 | Body-Scan | „Hör deinem Körper **zu**" | `body-scan` |
+| 04 | Herz-Kohärenz | „Bring Herz und Atem in **Takt**" | `herz-kohaerenz` |
+| 05 | Verlängertes Ausatmen | „Länger aus – **ruhiger**" | `verlaengertes-ausatmen` |
+| 06 | 4-6-Atmung | „Vier ein. Sechs **aus.**" | `4-6-atmung` |
+| 07 | Box Breathing | „Atme im **Viereck**" | `box-breathing` |
+| 08 | Der Autopilot-Check | „Läufst du – oder **lebst** du?" | `der-autopilot-check` |
+| 09 | Morgen-Ausrichtung | „Wie willst du den Tag **treffen?**" | `morgen-ausrichtung` |
+| 10 | Abend-Reflexion | „Was war heute **wirklich?**" | `abend-reflexion` |
+| 11 | Loslass-Ritual | „Leg es **ab**" | `loslass-ritual` |
+| 12 | Präsenz-Spaziergang | „Geh – ganz **da**" | `praesenz-spaziergang` |
+| 13 | Die tägliche Rückkehr | „Immer wieder **zurück**" | `die-taegliche-rueckkehr` |
+
+### Mentale Selbstverteidigung (`reel-selbstverteidigung-NN`)
+
+| Cover | Thema | Motiv-Text | Slug |
+|:---:|---|---|---|
+| 01 | Propaganda | „Ohne eine einzige **Lüge**" | `propaganda` |
+| 02 | Framing | „Ein **Wort** ändert alles" | `framing` |
+| 03 | Sprache & Etiketten | „Ein Wort beendet jede **Debatte**" | `sprache-und-etiketten` |
+| 04 | Medien-Agenda | „Nicht WAS – sondern **WORÜBER**" | `medien-agenda` |
+| 05 | Algorithmen | „Dein **Feed** ≠ die Welt" | `algorithmen` |
+| 06 | Werbung & Mangel | „Sie verkauft dir den **Mangel**" | `werbung-und-mangel` |
+| 07 | Gruppendruck | „Laut ≠ **Mehrheit**" | `gruppendruck` |
+| 08 | Autoritätshörigkeit | „Titel ≠ **Wahrheit**" | `autoritaetshoerigkeit` |
+| 09 | Angst-Steuerung | „Angst macht dich **lenkbar**" | `angst-steuerung` |
+| 10 | Wiederholung | „Oft gehört = **wahr?**" | `wiederholung` |
+| 11 | Ablenkung | „Keine Lüge. Nur **Lärm.**" | `ablenkung` |
+| 12 | Kognitive Dissonanz | „Warum du **wegschaust**" | `kognitive-dissonanz` |
+| 13 | Normalisierung | „„War doch schon immer **so**?"" | `normalisierung` |
+| 14 | Bildmacht | „Ein Bild ist kein **Beweis**" | `bildmacht` |
+| 15 | Identität & Meinung | „Hast du eine Meinung – oder sie **dich?**" | `identitaet-und-meinung` |
+| 16 | Reizüberflutung | „Dein Gehirn im **Daueralarm**" | `reizueberflutung` |
+
+### Die Wissenschaft dahinter (`reel-wissenschaft-NN`)
+
+| Cover | Thema | Motiv-Text |
+|:---:|---|---|
+| 01 | Freier Wille | „Wer entscheidet – du oder dein **Gehirn?**" |
+| 02 | Neuroplastizität | „Dein Gehirn bleibt **formbar**" |
+| 03 | Gefühle benennen | „Ein Wort, das dich **beruhigt**" |
+| 04 | Denkfehler | „Dein Kopf **täuscht** dich" |
+| 05 | Willenskraft | „Willenskraft ist **überschätzt**" |
+| 06 | Abschweifender Geist | „47 % der Zeit **woanders**" |
+| 07 | Placebo | „Erwartung wirkt im **Körper**" |
+
+### Landing / Funnel (`reel-landing-NN`)
+
+| Cover | Thema | Motiv-Text |
+|:---:|---|---|
+| 01 | Nicht deine Schuld | „Nicht deine **Schuld**" |
+| 02 | Es ist ein Programm | „Es ist ein **Programm**" |
+| 03 | Zu wenig Disziplin? | „Zu wenig Disziplin? **Nein.**" |
+
+**Hinweise:**
+- Dieselbe Reihenfolge gilt für die Galerie-Thumbnails
+  (`thumbs/reels/reel-<serie>-NN.webp`).
+- Die **Slug-Schreibweise** der Deep-Dives in `src/lib/deep-dives.ts` weicht bei
+  einigen ab (z. B. `innerer-kritiker`, `reiz-reaktions-luecke`, `gruebeln`,
+  `muster-und-koerper`, `wiederholung-wahrheit`).
+- Der Produktions-**Status-Tracker** `src/lib/reels.ts` nummeriert Reels
+  unabhängig von der Cover-Nummer — beide nicht verwechseln.
