@@ -231,3 +231,97 @@ Bilder verifiziert.
   `muster-und-koerper`, `wiederholung-wahrheit`).
 - Der Produktions-**Status-Tracker** `src/lib/reels.ts` nummeriert Reels
   unabhängig von der Cover-Nummer — beide nicht verwechseln.
+
+---
+
+## Carousels: Ordner ↔ Thema ↔ Slides
+
+Carousels liegen unter `content/vorlagen/carousels/<serie>__<slug>/` (Ordner mit
+`slide-01.webp … slide-NN.webp`) plus je ein gleichnamiges `.zip`. Im
+Admin-Dashboard sind sie – anders als die Reel-Cover – **nach Thema** benannt.
+**54 Carousels** insgesamt. Die vier Serien `stufen/praxis/vertiefungen/
+selbstverteidigung` stammen aus `docs/skripte/carousels/*.md` (via `data.mjs`),
+die Marketing-Serie aus `MARKETING_TITEL` in `tools/vorlagen/marketing-carousels.mjs`.
+
+### Marketing / Funnel (5) — Slugs `marketing__…`
+
+| Slug | Titel (Dashboard) | Slides |
+|---|---|:---:|
+| `60000-gedanken` | Bis zu 60.000 Gedanken am Tag | 9 |
+| `4-wege-freiheit` | 4 Wege zur mentalen Freiheit | 8 |
+| `wer-denkt-hier` | Wer denkt hier eigentlich? | 8 |
+| `studien-fakten` | Studien-Fakten | 9 |
+| `gratis-ebook` | Gratis-E-Book | 5 |
+
+### Die 7 Stufen (7) — Slugs `stufen__…`
+
+| Slug | Thema | Slides |
+|---|---|:---:|
+| `autopilot` | 01 · Autopilot | 7 |
+| `erwachen` | 02 · Erwachen | 7 |
+| `selbstbeobachtung` | 03 · Selbstbeobachtung | 7 |
+| `emotionale-reifung` | 04 · Emotionale Reifung | 7 |
+| `schoepferkraft` | 05 · Schöpferkraft | 7 |
+| `innere-ausrichtung` | 06 · Innere Ausrichtung | 7 |
+| `meisterschaft` | 07 · Meisterschaft | 7 |
+
+### Praxis (13) — Slugs `praxis__…`
+
+| Slug | Thema | Slides |
+|---|---|:---:|
+| `atembeobachtung` | Atembeobachtung | 6 |
+| `der-innere-beobachter` | Der innere Beobachter | 6 |
+| `body-scan` | Body-Scan | 6 |
+| `herz-kohaerenz` | Herz-Kohärenz | 6 |
+| `verlaengertes-ausatmen` | Verlängertes Ausatmen | 6 |
+| `4-6-atmung` | 4-6-Atmung | 6 |
+| `box-breathing` | Box Breathing | 6 |
+| `der-autopilot-check` | Der Autopilot-Check | 6 |
+| `morgen-ausrichtung` | Morgen-Ausrichtung | 6 |
+| `abend-reflexion` | Abend-Reflexion | 6 |
+| `loslass-ritual` | Loslass-Ritual | 6 |
+| `praesenz-spaziergang` | Präsenz-Spaziergang | 6 |
+| `die-taegliche-rueckkehr` | Die tägliche Rückkehr | 6 |
+
+### Vertiefungen (13) — Slugs `vertiefungen__…`
+
+| Slug | Thema | Slides |
+|---|---|:---:|
+| `automatische-gedanken` | Automatische Gedanken | 7 |
+| `konditionierung` | Konditionierung | 7 |
+| `kognitive-verzerrungen` | Kognitive Verzerrungen | 7 |
+| `kernueberzeugungen` | Kernüberzeugungen | 7 |
+| `der-innere-kritiker` | Der innere Kritiker | 7 |
+| `neuroplastizitaet` | Neuroplastizität | 7 |
+| `die-reiz-reaktions-luecke` | Reiz-Reaktions-Lücke | 7 |
+| `gruebeln-und-gedankenkreisen` | Grübeln | 7 |
+| `emotionsregulation` | Emotionsregulation | 7 |
+| `selbstmitgefuehl` | Selbstmitgefühl | 7 |
+| `werte-und-ziele` | Werte & Ziele | 7 |
+| `muster-koerper-und-gesundheit` | Muster & Körper | 7 |
+| `integration-und-weitergabe` | Integration & Weitergabe | 7 |
+
+### Mentale Selbstverteidigung (16) — Slugs `selbstverteidigung__…`
+
+| Slug | Thema | Slides |
+|---|---|:---:|
+| `propaganda` | Propaganda | 7 |
+| `framing` | Framing | 7 |
+| `sprache-und-etiketten` | Sprache & Etiketten | 7 |
+| `medien-agenda` | Medien-Agenda | 7 |
+| `algorithmen` | Algorithmen | 7 |
+| `werbung-und-mangel` | Werbung & Mangel | 7 |
+| `gruppendruck` | Gruppendruck | 7 |
+| `autoritaetshoerigkeit` | Autoritätshörigkeit | 7 |
+| `angst-steuerung` | Angst-Steuerung | 7 |
+| `wiederholung` | Wiederholung | 7 |
+| `ablenkung` | Ablenkung | 7 |
+| `kognitive-dissonanz` | Kognitive Dissonanz | 7 |
+| `normalisierung` | Normalisierung | 7 |
+| `bildmacht` | Bildmacht | 7 |
+| `identitaet-und-meinung` | Identität & Meinung | 7 |
+| `reizueberflutung` | Reizüberflutung | 7 |
+
+Die Slide-Preview je Ordner ist eine 4:5-`webp`; der Voll-Download (`<serie>__
+<slug>.zip`) enthält alle drei Formate (`feed-4x5`, `feed-1x1`, `reel-9x16`) als
+`webp@1080`.
