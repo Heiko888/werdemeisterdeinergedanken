@@ -87,19 +87,27 @@ const thumbnail = (w, h, data) => shell(w, h, `
 </div>
 <div class="glow"></div><img class="brain" src="${brainUrl}">`);
 
-// Zitat-Kachel – großer Serifensatz, Marke dezent unten
+// Zitat-Kachel – großer Serifensatz, Marke als dezente Signatur unten.
+// Designcode: ein Wort im Zitat trägt den Grün-Türkis-Verlauf (<em>) und ist
+// die visuelle Pointe. Großes, sehr transparentes Anführungszeichen hinter dem
+// Text; weiche Tiefe im Hintergrund (Glow, keine konkreten Motive).
 const quoteTile = (w, h, q) => shell(w, h, `
-.qwrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.2)}px;text-align:center}
-.quote-mark{font-family:Fraunces,serif;font-size:${Math.round(w*0.16)}px;line-height:.7;color:rgba(52,196,196,.30);margin-bottom:${Math.round(w*0.03)}px}
-.quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.072)}px;line-height:1.24;letter-spacing:-.3px}
-.quote em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.075)}px;display:flex;align-items:center;justify-content:center;gap:14px}
-.foot img{width:${Math.round(w*0.05)}px;height:${Math.round(w*0.05)}px;object-fit:contain}
-.foot .t{font-size:${Math.round(w*0.026)}px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(244,242,236,.7)}
-`, `<div class="qwrap">
-  <div class="quote-mark">„</div>
-  <div class="quote">${q}</div>
-</div>
+.aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.10), rgba(52,196,196,0) 66%);filter:blur(46px)}
+.qstars{position:absolute;inset:0;background-image:
+  radial-gradient(2.4px 2.4px at 16% 23%, rgba(255,255,255,.5), transparent),
+  radial-gradient(1.7px 1.7px at 79% 15%, rgba(185,222,255,.45), transparent),
+  radial-gradient(2.8px 2.8px at 29% 83%, rgba(255,255,255,.4), transparent),
+  radial-gradient(1.6px 1.6px at 89% 71%, rgba(200,240,235,.5), transparent),
+  radial-gradient(2px 2px at 62% 90%, rgba(255,255,255,.34), transparent);}
+.qmark{position:absolute;left:50%;top:${Math.round(h*0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w*0.6)}px;line-height:.62;color:rgba(130,210,215,.095);pointer-events:none}
+.qwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.3)}px;text-align:center}
+.quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.067)}px;line-height:1.32;letter-spacing:-.3px}
+.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px}
+.foot img{width:${Math.round(w*0.037)}px;height:${Math.round(w*0.037)}px;object-fit:contain;opacity:.88}
+.foot .t{font-size:${Math.round(w*0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.62)}
+`, `<div class="aura"></div><div class="qstars"></div><div class="qmark">„</div>
+<div class="qwrap"><div class="quote">${q}</div></div>
 <div class="foot"><img src="${brainUrl}"><span class="t">Werde Meister deiner Gedanken</span></div>`);
 
 // Studien-Fakt-Kachel – Eyebrow, großer Serifen-Fakt, Quellenzeile, Marke unten
