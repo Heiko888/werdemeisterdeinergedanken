@@ -110,18 +110,28 @@ const quoteTile = (w, h, q) => shell(w, h, `
 <div class="qwrap"><div class="quote">${q}</div></div>
 <div class="foot"><img src="${brainUrl}"><span class="t">Werde Meister deiner Gedanken</span></div>`);
 
-// Studien-Fakt-Kachel – Eyebrow, großer Serifen-Fakt, Quellenzeile, Marke unten
+// Studien-Fakt-Kachel – gleiches Serien-Template wie die Zitate (Verlauf,
+// Serifenschrift, Grün-Türkis-Schlüsselwort als Pointe, Signatur unten),
+// nur mit Eyebrow + Quellenzeile statt Anführungszeichen.
 const factTile = (w, h, f) => shell(w, h, `
-.fwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.18)}px;text-align:center}
-.eyebrow{font-size:${Math.round(w*0.026)}px;letter-spacing:.22em;margin-bottom:${Math.round(w*0.05)}px}
-.fact{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.066)}px;line-height:1.26;letter-spacing:-.3px}
-.fact em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.src{margin-top:${Math.round(w*0.05)}px;font-size:${Math.round(w*0.028)}px;line-height:1.4;color:rgba(244,242,236,.6)}
+.aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.10), rgba(52,196,196,0) 66%);filter:blur(46px)}
+.qstars{position:absolute;inset:0;background-image:
+  radial-gradient(2.4px 2.4px at 16% 23%, rgba(255,255,255,.5), transparent),
+  radial-gradient(1.7px 1.7px at 79% 15%, rgba(185,222,255,.45), transparent),
+  radial-gradient(2.8px 2.8px at 29% 83%, rgba(255,255,255,.4), transparent),
+  radial-gradient(1.6px 1.6px at 89% 71%, rgba(200,240,235,.5), transparent),
+  radial-gradient(2px 2px at 62% 90%, rgba(255,255,255,.34), transparent);}
+.fwrap{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.24)}px;text-align:center}
+.eyebrow{font-size:${Math.round(w*0.024)}px;letter-spacing:.22em;margin-bottom:${Math.round(w*0.045)}px}
+.fact{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.064)}px;line-height:1.3;letter-spacing:-.3px}
+.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.src{margin-top:${Math.round(w*0.045)}px;font-size:${Math.round(w*0.026)}px;line-height:1.4;color:rgba(244,242,236,.55)}
 .src b{color:rgba(163,214,79,.9);font-weight:700}
-.foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.07)}px;display:flex;align-items:center;justify-content:center;gap:14px}
-.foot img{width:${Math.round(w*0.05)}px;height:${Math.round(w*0.05)}px;object-fit:contain}
-.foot .t{font-size:${Math.round(w*0.026)}px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(244,242,236,.7)}
-`, `<div class="fwrap">
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px}
+.foot img{width:${Math.round(w*0.037)}px;height:${Math.round(w*0.037)}px;object-fit:contain;opacity:.88}
+.foot .t{font-size:${Math.round(w*0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.62)}
+`, `<div class="aura"></div><div class="qstars"></div>
+<div class="fwrap">
   <div class="eyebrow">Studien-Fakt</div>
   <div class="fact">${f.t}</div>
   <div class="src"><b>Quelle:</b> ${f.src}</div>
