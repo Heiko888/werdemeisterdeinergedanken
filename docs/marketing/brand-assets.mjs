@@ -253,7 +253,7 @@ const ebookPost = (w, h) => {
 const STORY_TEXT = `
     <div class="eyebrow">Bewusstsein · Mentale Selbstverteidigung · 7 Stufen</div>
     <div class="h">Werde Meister deiner<br><span class="g">Gedanken</span>.</div>
-    <div class="sub">Raus aus dem Autopilot – rein in echte innere Klarheit. Schritt für Schritt.</div>
+    <div class="sub">Raus aus fremden Mustern. Rein in dein eigenes Denken.</div>
     <div class="url">www.werdemeisterdeinergedanken.de</div>`;
 
 const storyPost = (w, h) => {
