@@ -17,11 +17,6 @@ const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
 const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook-mockup.webp")).toString("base64")}`;
-// Freigestellte Person (Greenscreen entfernt) – als Hintergrund für Zitat 07.
-const heikoFreiPath = join(ROOT, "public/heiko-freigestellt.png");
-const heikoUri = existsSync(heikoFreiPath)
-  ? `data:image/png;base64,${readFileSync(heikoFreiPath).toString("base64")}`
-  : null;
 
 // ---------- gemeinsame Marken-Optik ----------------------------------------
 const BG = `
@@ -339,7 +334,7 @@ for (const d of THUMBS)
   TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, html: () => thumbnail(1280, 720, d) });
 // Zitat-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const q of QUOTES) {
-  const bg = q.key === "07" ? heikoUri : null; // Zitat 07: Person im Hintergrund
+  const bg = null; // Zitat-Kacheln ohne Personen-Foto (Hintergrund entfernt)
   TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t, bg) });
   TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, html: () => quoteTile(1080, 1350, q.t, bg) });
   TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, html: () => quoteTile(1080, 1920, q.t, bg) });
