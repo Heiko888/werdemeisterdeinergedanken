@@ -47,13 +47,20 @@ html,body{ background:#05060c; overflow:hidden; }
   font-family:'Inter',system-ui,sans-serif; color:#f4f7ff; }
 .slide::before{ content:""; position:absolute; inset:0; z-index:0;
   background:
-    radial-gradient(55% 40% at 82% 18%, rgba(52,196,196,.30), transparent 60%),
-    radial-gradient(60% 45% at 12% 88%, rgba(40,90,150,.32), transparent 60%),
-    linear-gradient(160deg,#071026 0%,#0b2138 48%,#0a1730 100%); }
-.bg{ position:absolute; inset:0; z-index:1;
-  background-image:url("vorlage.png"); background-size:cover; background-position:center; opacity:.9; }
+    radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
+    radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
+    radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
+    #08102a; }
+.slide::after{ content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background-image:
+    radial-gradient(2.4px 2.4px at 18% 22%, rgba(255,255,255,.5), transparent),
+    radial-gradient(1.7px 1.7px at 80% 16%, rgba(185,222,255,.45), transparent),
+    radial-gradient(2.8px 2.8px at 30% 82%, rgba(255,255,255,.4), transparent),
+    radial-gradient(1.6px 1.6px at 88% 70%, rgba(200,240,235,.5), transparent),
+    radial-gradient(2px 2px at 60% 90%, rgba(255,255,255,.34), transparent); }
+.bg{ display:none; }
 .scrim{ position:absolute; inset:0; z-index:2;
-  background:linear-gradient(180deg, rgba(5,9,20,.62), rgba(5,9,20,.42) 40%, rgba(5,9,20,.72)); }
+  background:linear-gradient(180deg, rgba(8,16,42,.28), rgba(8,16,42,.10) 42%, rgba(8,16,42,.42)); }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
   padding:${F.padTop}px ${F.padX}px ${F.padBottom}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
@@ -63,8 +70,7 @@ html,body{ background:#05060c; overflow:hidden; }
   -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:22px; }
 .eyebrow{ font-weight:800; font-size:22px; letter-spacing:.15em; text-transform:uppercase;
-  background:${GRAD}; -webkit-background-clip:text; background-clip:text;
-  -webkit-text-fill-color:transparent; color:transparent; }
+  color:#34c4c4; }
 .headline{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:92px; line-height:1.03;
   letter-spacing:-1px; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
 .bar{ width:120px; height:6px; border-radius:6px; background:${GRAD}; }

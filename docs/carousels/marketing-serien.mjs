@@ -174,9 +174,17 @@ html,body{ background:#05060c; overflow:hidden; }
   font-family:'Inter',system-ui,sans-serif; color:#f4f7ff; }
 .slide::before{ content:""; position:absolute; inset:0; z-index:0;
   background:
-    radial-gradient(55% 40% at 82% 18%, rgba(52,196,196,.30), transparent 60%),
-    radial-gradient(60% 45% at 12% 88%, rgba(40,90,150,.32), transparent 60%),
-    linear-gradient(160deg,#071026 0%,#0b2138 48%,#0a1730 100%); }
+    radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
+    radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
+    radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
+    #08102a; }
+.slide::after{ content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background-image:
+    radial-gradient(2.4px 2.4px at 18% 22%, rgba(255,255,255,.5), transparent),
+    radial-gradient(1.7px 1.7px at 80% 16%, rgba(185,222,255,.45), transparent),
+    radial-gradient(2.8px 2.8px at 30% 82%, rgba(255,255,255,.4), transparent),
+    radial-gradient(1.6px 1.6px at 88% 70%, rgba(200,240,235,.5), transparent),
+    radial-gradient(2px 2px at 60% 90%, rgba(255,255,255,.34), transparent); }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; padding:${PAD}px 80px ${Math.max(56, PAD - 12)}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
 .logo{ width:160px; height:auto; filter:drop-shadow(0 4px 22px rgba(52,196,196,.30)); }
@@ -184,7 +192,7 @@ html,body{ background:#05060c; overflow:hidden; }
   text-transform:uppercase; background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
-  background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  color:#34c4c4; }
 .headline{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:76px; line-height:1.05;
   letter-spacing:-1px; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
 .title{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:62px; line-height:1.08; letter-spacing:-.5px;
