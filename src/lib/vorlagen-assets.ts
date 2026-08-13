@@ -4611,5 +4611,227 @@ export const vorlagenAssets: VorlagenAsset[] = [
       }
     ],
     "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "das wissen",
+    "unterKategorie": "Mitgliederbereich",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Wir konsumieren mehr Wissen über den Geist als je zuvor – und fühlen uns selten klarer. Deshalb steckt hinter den 7 Stufen echte Substanz: eine Wissensdatenbank mit 27 Kapiteln, 31 Vertiefungen zu den psychologischen Mechanismen dahinter, jeweils mit Übungen und Reflexionsfragen. Dazu das Arbeitsheft aller Stufen als PDF. Verstehen statt nur konsumieren. Link in Bio. #werdemeisterdeinergedanken #psychologie #metakognition #achtsamkeit #bewusstsein #selbsterkenntnis #mentaleklarheit #wissen"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "dein journal",
+    "unterKategorie": "Mitgliederbereich",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Manche Gedanken brauchen einfach einen Ort, an dem sie landen dürfen – ohne Publikum und ohne Bewertung. Genau dafür ist dein Journal im Mitgliederbereich da: privat, nur für dich. Dein Gedankenprofil macht sichtbar, was dich bewegt und wie du dich über die Zeit entwickelst. Kein Feed, keine Likes – nur ein ehrlicher Blick nach innen. Link in Bio. #werdemeisterdeinergedanken #journaling #selbstreflexion #achtsamkeit #innerearbeit #bewusstsein #tagebuch #mentalegesundheit"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "dein raum",
+    "unterKategorie": "Mitgliederbereich",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Der Mitgliederbereich ist kein weiterer Online-Kurs, den du „durchklickst\". Es ist ein ruhiger, geschützter Raum für deine Reise durch die 7 Stufen – in deinem Tempo, mit deinem sichtbaren Fortschritt, geführten Meditationen und einem Journal, das nur du siehst. Beginne dort, wo du gerade wirklich stehst. Der Einstieg ist der kostenlose Bewusstseinstest. Link in Bio. #werdemeisterdeinergedanken #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #innereruhe #selbsterkenntnis #meditation #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der einstieg",
+    "unterKategorie": "Mitgliederbereich",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Wo stehst du gerade – wirklich? 21 Fragen, 5 Minuten, ein ehrlicher Blick. Die meisten von uns leben im Autopilot, ohne es zu bemerken. Der Bewusstseinstest zeigt dir ohne Bewertung, auf welcher der 7 Stufen du stehst – und dein Ergebnis wartet danach direkt in deinem persönlichen Bereich. Kostenlos und ohne Anmeldung. Link in Bio. #werdemeisterdeinergedanken #bewusstseinstest #achtsamkeit #selbstreflexion #autopilot #bewusstsein #persönlichkeitsentwicklung #klarheit"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der weg",
+    "unterKategorie": "Mitgliederbereich",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Sieben Stufen, ein Weg: vom Autopilot, in dem du gelebt wirst, bis zur Meisterschaft, in der du bewusst gestaltest. Im Mitgliederbereich gehst du sie Stufe für Stufe – in deinem Tempo, mit sichtbarem Fortschritt und passenden Übungen zu jeder Stufe. Es ist kein Ziel zum Abhaken, sondern eine Art zu leben. Wo startest du? Finde es im Bewusstseinstest heraus. Link in Bio. #werdemeisterdeinergedanken #die7stufen #bewusstsein #meisterschaft #achtsamkeit #persönlichkeitsentwicklung #bewusstseinsentwicklung #innerearbeit"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "zur ruhe kommen",
+    "unterKategorie": "Mitgliederbereich",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Zwischen Autopilot und vollem Alltag brauchst du keinen weiteren Ratschlag – sondern einen Moment Ruhe. Im Mitgliederbereich warten 15 geführte Meditationen und Praxis-Einheiten zum Anhören, abgestimmt auf die 7 Stufen. Ob drei oder fünfzehn Minuten: du wählst, was gerade passt. Denn Praxis ist der Ort, an dem aus Verstehen ein Erleben wird. Link in Bio. #werdemeisterdeinergedanken #meditation #achtsamkeit #geführtemeditation #innereruhe #bewusstsein #entspannung #selbstfürsorge"
   }
 ];
