@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -7,18 +7,34 @@ import { BackToTop } from "@/components/ui/BackToTop";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { site } from "@/lib/site";
 
-const inter = Inter({
+// Fonts bewusst selbst-gehostet (next/font/local) statt next/font/google:
+// - Kein Download von Google zur Build-Zeit → deterministische, robuste Builds
+//   (der Google-Fetch schlug auf Vercel/Turbopack sporadisch fehl).
+// - Kein Google-Fonts-Request im Browser → besser für Datenschutz (DSGVO).
+// Es sind die variablen Schnitte (latin); die Dateien liegen in ./fonts/
+// (Inter & Fraunces, SIL Open Font License – siehe *-OFL.txt).
+const inter = localFont({
+  src: "./fonts/Inter-latin-variable.woff2",
   variable: "--font-inter",
-  subsets: ["latin"],
+  weight: "100 900",
   display: "swap",
 });
 
 // Edle Serife für Überschriften (editorial, hochwertig)
-const fraunces = Fraunces({
+const fraunces = localFont({
+  src: [
+    {
+      path: "./fonts/Fraunces-latin-variable.woff2",
+      weight: "100 900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Fraunces-latin-italic-variable.woff2",
+      weight: "100 900",
+      style: "italic",
+    },
+  ],
   variable: "--font-fraunces",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
   display: "swap",
 });
 

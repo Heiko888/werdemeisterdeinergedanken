@@ -32,6 +32,7 @@ export const SERIES = [
   { key: "stufen", label: "Die 7 Stufen", file: "stufen.md" },
   { key: "praxis", label: "Praxis", file: "praxis.md" },
   { key: "vertiefungen", label: "Vertiefungen", file: "vertiefungen.md" },
+  { key: "mitgliederbereich", label: "Mitgliederbereich", file: "mitgliederbereich.md" },
 ];
 
 export function slugify(s) {
