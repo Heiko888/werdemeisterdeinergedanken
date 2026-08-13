@@ -126,9 +126,9 @@ export const COLLECTIONS = [
 // FORMATE. Flex-Layout → format-agnostisch.
 // ===========================================================================
 export const FORMATS = [
-  { key: "reel-9x16",      label: "9:16 · Reel / Story",         w: 1080, h: 1920, pad: 84, logoW: 220, tagFs: 23, headFs: 132, headSmallFs: 100, handleFs: 30, handleGap: 26, headMaxW: "100%" },
-  { key: "feed-4x5",       label: "4:5 · Feed (Hochformat)",     w: 1080, h: 1350, pad: 80, logoW: 210, tagFs: 22, headFs: 120, headSmallFs: 96,  handleFs: 29, handleGap: 24, headMaxW: "100%" },
-  { key: "feed-1x1",       label: "1:1 · Feed (quadratisch)",    w: 1080, h: 1080, pad: 76, logoW: 200, tagFs: 21, headFs: 104, headSmallFs: 86,  handleFs: 28, handleGap: 22, headMaxW: "100%" },
-  { key: "landscape-16x9", label: "16:9 · YouTube / Querformat", w: 1920, h: 1080, pad: 90, logoW: 220, tagFs: 23, headFs: 150, headSmallFs: 120, handleFs: 32, handleGap: 28, headMaxW: "66%" },
-  { key: "pin-2x3",        label: "2:3 · Pinterest",             w: 1000, h: 1500, pad: 76, logoW: 200, tagFs: 21, headFs: 120, headSmallFs: 94,  handleFs: 28, handleGap: 24, headMaxW: "100%" },
+  { key: "reel-9x16",      label: "9:16 · Reel / Story",         w: 1080, h: 1920, pad: 84, logoW: 150, tagFs: 23, headFs: 132, headSmallFs: 100, handleFs: 30, handleGap: 26, headMaxW: "100%" },
+  { key: "feed-4x5",       label: "4:5 · Feed (Hochformat)",     w: 1080, h: 1350, pad: 80, logoW: 146, tagFs: 22, headFs: 120, headSmallFs: 96,  handleFs: 29, handleGap: 24, headMaxW: "100%" },
+  { key: "feed-1x1",       label: "1:1 · Feed (quadratisch)",    w: 1080, h: 1080, pad: 76, logoW: 140, tagFs: 21, headFs: 104, headSmallFs: 86,  handleFs: 28, handleGap: 22, headMaxW: "100%" },
+  { key: "landscape-16x9", label: "16:9 · YouTube / Querformat", w: 1920, h: 1080, pad: 90, logoW: 168, tagFs: 23, headFs: 150, headSmallFs: 120, handleFs: 32, handleGap: 28, headMaxW: "66%" },
+  { key: "pin-2x3",        label: "2:3 · Pinterest",             w: 1000, h: 1500, pad: 76, logoW: 140, tagFs: 21, headFs: 120, headSmallFs: 94,  handleFs: 28, handleGap: 24, headMaxW: "100%" },
 ];
