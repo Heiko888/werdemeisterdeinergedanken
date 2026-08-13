@@ -85,6 +85,7 @@ const STUDIO_SKRIPTE = {
   stufen: "stufen.md",
   praxis: "praxis.md",
   vertiefungen: "vertiefungen.md",
+  mitgliederbereich: "mitgliederbereich.md",
 };
 
 /**

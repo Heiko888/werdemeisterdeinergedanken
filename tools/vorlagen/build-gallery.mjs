@@ -205,6 +205,7 @@ async function buildCarousels() {
     "stufen": "Die 7 Stufen",
     "praxis": "Praxis",
     "vertiefungen": "Vertiefungen",
+    "mitgliederbereich": "Mitgliederbereich",
   };
 
   let count = 0;
