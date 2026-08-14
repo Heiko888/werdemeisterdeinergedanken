@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { Block } from "@/lib/wissensdatenbank";
 
@@ -271,6 +272,26 @@ export function MarkdownDoc({ blocks }: { blocks: Block[] }) {
                   </tbody>
                 </table>
               </div>
+            );
+          case "image":
+            return (
+              <figure key={i} className="my-2 flex flex-col gap-3">
+                <div className="overflow-hidden rounded-2xl border border-ink/10 bg-ink/[0.02] shadow-card">
+                  <Image
+                    src={block.src}
+                    alt={block.alt}
+                    width={2000}
+                    height={1080}
+                    sizes="(max-width: 768px) 100vw, 720px"
+                    className="h-auto w-full"
+                  />
+                </div>
+                {block.alt && (
+                  <figcaption className="text-center text-[0.85rem] leading-relaxed text-ink-mid">
+                    {block.alt}
+                  </figcaption>
+                )}
+              </figure>
             );
           case "hr":
             return <span key={i} aria-hidden className="rule my-2 block h-px w-full" />;

@@ -29,6 +29,7 @@ export type Block =
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
   | { type: "table"; head: string[]; rows: string[][] }
+  | { type: "image"; src: string; alt: string }
   | { type: "hr" };
 
 type RawBlock = Block | { type: "h1"; text: string };
@@ -67,7 +68,10 @@ export function slugifyHeading(text: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
-const BLOCK_START = /^(#{1,3}\s|>|\||[-*]\s|\d+\.\s|---+\s*$)/;
+const BLOCK_START = /^(#{1,3}\s|>|\||[-*]\s|\d+\.\s|---+\s*$|!\[)/;
+
+/** Alleinstehendes Bild: `![alt](src)` als eigene Zeile. */
+const IMAGE_LINE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 
 function parseRow(line: string): string[] {
   return line
@@ -98,6 +102,15 @@ function parseBlocks(md: string): RawBlock[] {
     // Horizontale Linie
     if (/^---+$/.test(t)) {
       blocks.push({ type: "hr" });
+      i++;
+      continue;
+    }
+
+    // Alleinstehendes Bild (eigene Zeile) – der Alt-Text dient zugleich als
+    // Bildunterschrift.
+    const img = IMAGE_LINE.exec(t);
+    if (img) {
+      blocks.push({ type: "image", alt: img[1].trim(), src: img[2].trim() });
       i++;
       continue;
     }
