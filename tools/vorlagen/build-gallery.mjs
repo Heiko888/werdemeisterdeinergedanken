@@ -205,7 +205,6 @@ async function buildCarousels() {
     "stufen": "Die 7 Stufen",
     "praxis": "Praxis",
     "vertiefungen": "Vertiefungen",
-    "mitgliederbereich": "Mitgliederbereich",
   };
 
   let count = 0;
@@ -316,6 +315,7 @@ function buildWorkshop() {
     "reel-skripte": "Reel-Drehbücher",
     "video-drehbuecher": "Video-Drehbücher",
     "carousel-texte": "Carousel-Texte",
+    "anleitungen": "Anleitungen",
   };
 
   for (const file of files) {

@@ -114,63 +114,11 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story Logo",
+    "titel": "Instagram Story 16x9",
     "unterKategorie": "Instagram",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-007.webp",
     "href": "/admin/vorlagen/datei/social/social-007.webp",
-    "masse": {
-      "label": "9:16",
-      "w": 1080,
-      "h": 1920
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Instagram Story 9x16",
-    "unterKategorie": "Instagram",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-9x16.webp",
-    "href": "/admin/vorlagen/datei/social/social-story-9x16.webp",
-    "masse": {
-      "label": "9:16",
-      "w": 1080,
-      "h": 1920
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Instagram Story 4x5",
-    "unterKategorie": "Instagram",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-4x5.webp",
-    "href": "/admin/vorlagen/datei/social/social-story-4x5.webp",
-    "masse": {
-      "label": "4:5",
-      "w": 1080,
-      "h": 1350
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Instagram Story 1x1",
-    "unterKategorie": "Instagram",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-1x1.webp",
-    "href": "/admin/vorlagen/datei/social/social-story-1x1.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Instagram Story 16x9",
-    "unterKategorie": "Instagram",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-16x9.webp",
-    "href": "/admin/vorlagen/datei/social/social-story-16x9.webp",
     "masse": {
       "label": "16:9",
       "w": 1920,
@@ -179,11 +127,24 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
+    "titel": "Instagram Story 1x1",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-008.webp",
+    "href": "/admin/vorlagen/datei/social/social-008.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
     "titel": "Instagram Story 2x3",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-story-2x3.webp",
-    "href": "/admin/vorlagen/datei/social/social-story-2x3.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-009.webp",
+    "href": "/admin/vorlagen/datei/social/social-009.webp",
     "masse": {
       "label": "2:3",
       "w": 1000,
@@ -192,11 +153,63 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
+    "titel": "Instagram Story 4x5",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-010.webp",
+    "href": "/admin/vorlagen/datei/social/social-010.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 9x16",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-011.webp",
+    "href": "/admin/vorlagen/datei/social/social-011.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story Logo",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-012.webp",
+    "href": "/admin/vorlagen/datei/social/social-012.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-013.webp",
+    "href": "/admin/vorlagen/datei/social/social-013.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
     "titel": "LinkedIn Banner",
     "unterKategorie": "LinkedIn",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-009.webp",
-    "href": "/admin/vorlagen/datei/social/social-009.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-014.webp",
+    "href": "/admin/vorlagen/datei/social/social-014.webp",
     "masse": {
       "label": "4:1",
       "w": 1584,
@@ -208,8 +221,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Messenger Kanalbild",
     "unterKategorie": "Messenger",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-010.webp",
-    "href": "/admin/vorlagen/datei/social/social-010.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-015.webp",
+    "href": "/admin/vorlagen/datei/social/social-015.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -221,8 +234,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Kanalbild Quadrat",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-011.webp",
-    "href": "/admin/vorlagen/datei/social/social-011.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-016.webp",
+    "href": "/admin/vorlagen/datei/social/social-016.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -234,8 +247,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Profilbild Rund",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-012.webp",
-    "href": "/admin/vorlagen/datei/social/social-012.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
+    "href": "/admin/vorlagen/datei/social/social-017.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -247,8 +260,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "YouTube Banner",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-013.webp",
-    "href": "/admin/vorlagen/datei/social/social-013.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
+    "href": "/admin/vorlagen/datei/social/social-018.webp",
     "masse": {
       "label": "16:9",
       "w": 2000,
@@ -260,8 +273,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 01",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-014.webp",
-    "href": "/admin/vorlagen/datei/social/social-014.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
+    "href": "/admin/vorlagen/datei/social/social-019.webp",
     "masse": {
       "label": "16:9",
       "w": 1280,
@@ -273,8 +286,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 02",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-015.webp",
-    "href": "/admin/vorlagen/datei/social/social-015.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
+    "href": "/admin/vorlagen/datei/social/social-020.webp",
     "masse": {
       "label": "16:9",
       "w": 1280,
@@ -286,8 +299,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail vorlage",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-016.webp",
-    "href": "/admin/vorlagen/datei/social/social-016.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
+    "href": "/admin/vorlagen/datei/social/social-021.webp",
     "masse": {
       "label": "16:9",
       "w": 1280,
@@ -297,71 +310,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "Zitat 01",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
-    "href": "/admin/vorlagen/datei/social/social-017.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 02",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
-    "href": "/admin/vorlagen/datei/social/social-018.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 03",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
-    "href": "/admin/vorlagen/datei/social/social-019.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 04",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
-    "href": "/admin/vorlagen/datei/social/social-020.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 05",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
-    "href": "/admin/vorlagen/datei/social/social-021.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
@@ -374,7 +322,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
@@ -387,7 +335,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
@@ -400,7 +348,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
@@ -413,7 +361,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
@@ -426,7 +374,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
@@ -439,7 +387,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
+    "titel": "Zitat 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
@@ -452,7 +400,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
+    "titel": "Zitat 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
@@ -465,7 +413,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
+    "titel": "Zitat 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
@@ -478,72 +426,72 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
+    "titel": "Zitat 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
     "href": "/admin/vorlagen/datei/social/social-031.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
+    "titel": "Zitat 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
     "href": "/admin/vorlagen/datei/social/social-032.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
+    "titel": "Zitat 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
     "href": "/admin/vorlagen/datei/social/social-033.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
+    "titel": "Zitat 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
     "href": "/admin/vorlagen/datei/social/social-034.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
+    "titel": "Zitat 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
     "href": "/admin/vorlagen/datei/social/social-035.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
+    "titel": "Zitat 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
@@ -556,7 +504,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
@@ -569,7 +517,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
@@ -582,7 +530,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
@@ -595,7 +543,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
@@ -608,7 +556,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
@@ -621,7 +569,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
+    "titel": "Zitat 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
@@ -634,7 +582,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
+    "titel": "Zitat 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
@@ -647,7 +595,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
+    "titel": "Zitat 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
@@ -660,72 +608,72 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
+    "titel": "Zitat 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
     "href": "/admin/vorlagen/datei/social/social-045.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
+    "titel": "Zitat 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
     "href": "/admin/vorlagen/datei/social/social-046.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
+    "titel": "Zitat 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
     "href": "/admin/vorlagen/datei/social/social-047.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
+    "titel": "Zitat 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
     "href": "/admin/vorlagen/datei/social/social-048.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
+    "titel": "Zitat 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
     "href": "/admin/vorlagen/datei/social/social-049.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
+    "titel": "Zitat 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
@@ -738,7 +686,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
@@ -751,7 +699,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
@@ -764,7 +712,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
@@ -777,7 +725,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
@@ -790,7 +738,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
@@ -803,7 +751,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
+    "titel": "Zitat 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
@@ -816,7 +764,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
+    "titel": "Zitat 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
@@ -829,7 +777,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
+    "titel": "Zitat 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
@@ -842,72 +790,72 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Zitat 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
     "href": "/admin/vorlagen/datei/social/social-059.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Zitat 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
     "href": "/admin/vorlagen/datei/social/social-060.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Zitat 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
     "href": "/admin/vorlagen/datei/social/social-061.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Zitat 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
     "href": "/admin/vorlagen/datei/social/social-062.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Zitat 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
     "href": "/admin/vorlagen/datei/social/social-063.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
@@ -920,7 +868,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
+    "titel": "Studienfakt 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
@@ -933,7 +881,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
+    "titel": "Studienfakt 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
@@ -946,7 +894,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
+    "titel": "Studienfakt 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
@@ -959,7 +907,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
+    "titel": "Studienfakt 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
@@ -972,7 +920,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
+    "titel": "Studienfakt 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
@@ -985,7 +933,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
+    "titel": "Studienfakt 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
@@ -998,7 +946,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
+    "titel": "Studienfakt 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
@@ -1011,7 +959,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
+    "titel": "Studienfakt 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
@@ -1024,72 +972,72 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Studienfakt 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-073.webp",
     "href": "/admin/vorlagen/datei/social/social-073.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Studienfakt 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-074.webp",
     "href": "/admin/vorlagen/datei/social/social-074.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Studienfakt 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-075.webp",
     "href": "/admin/vorlagen/datei/social/social-075.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Studienfakt 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-076.webp",
     "href": "/admin/vorlagen/datei/social/social-076.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Studienfakt 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
     "href": "/admin/vorlagen/datei/social/social-077.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
@@ -1102,7 +1050,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
+    "titel": "Studienfakt 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
@@ -1115,7 +1063,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
+    "titel": "Studienfakt 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
@@ -1128,7 +1076,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
+    "titel": "Studienfakt 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
@@ -1141,7 +1089,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
+    "titel": "Studienfakt 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
@@ -1154,7 +1102,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
+    "titel": "Studienfakt 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
@@ -1167,7 +1115,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
+    "titel": "Studienfakt 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
@@ -1180,7 +1128,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
+    "titel": "Studienfakt 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
@@ -1193,7 +1141,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
+    "titel": "Studienfakt 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
@@ -1206,72 +1154,72 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Studienfakt 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
     "href": "/admin/vorlagen/datei/social/social-087.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Studienfakt 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
     "href": "/admin/vorlagen/datei/social/social-088.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Studienfakt 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
     "href": "/admin/vorlagen/datei/social/social-089.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Studienfakt 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
     "href": "/admin/vorlagen/datei/social/social-090.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Studienfakt 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
     "href": "/admin/vorlagen/datei/social/social-091.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
@@ -1284,7 +1232,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
+    "titel": "Studienfakt 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
@@ -1297,7 +1245,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
+    "titel": "Studienfakt 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
@@ -1310,7 +1258,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
+    "titel": "Studienfakt 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
@@ -1323,7 +1271,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
+    "titel": "Studienfakt 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
@@ -1336,7 +1284,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
+    "titel": "Studienfakt 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
@@ -1349,7 +1297,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
+    "titel": "Studienfakt 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
@@ -1362,7 +1310,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
+    "titel": "Studienfakt 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
@@ -1375,11 +1323,76 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
+    "titel": "Studienfakt 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
     "href": "/admin/vorlagen/datei/social/social-100.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-101.webp",
+    "href": "/admin/vorlagen/datei/social/social-101.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-102.webp",
+    "href": "/admin/vorlagen/datei/social/social-102.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-103.webp",
+    "href": "/admin/vorlagen/datei/social/social-103.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-104.webp",
+    "href": "/admin/vorlagen/datei/social/social-104.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-105.webp",
+    "href": "/admin/vorlagen/datei/social/social-105.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2289,7 +2302,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung.zip",
-    "caption": "Wenn du einen festen Rhythmus brauchst, gibt dir die 4-6-Atmung Halt. Akut bei Stress, vor Gesprächen oder in Wartemomenten. Speicher dir das Carousel. #werdemeisterdeinergedanken #atemübung #46atmung #stressabbau #beruhigen #atem #achtsamkeit #alltag",
     "formate": [
       {
         "label": "4:5",
@@ -2306,7 +2318,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Wenn du einen festen Rhythmus brauchst, gibt dir die 4-6-Atmung Halt. Akut bei Stress, vor Gesprächen oder in Wartemomenten. Speicher dir das Carousel. #werdemeisterdeinergedanken #atemübung #46atmung #stressabbau #beruhigen #atem #achtsamkeit #alltag"
   },
   {
     "kategorie": "carousel",
@@ -2325,7 +2338,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__abend-reflexion/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion.zip",
-    "caption": "Nicht bewerten, nur bemerken: Die Abend-Reflexion macht Muster sichtbar und beruhigt den Kopf vor dem Schlaf. Speicher dir das Carousel. #werdemeisterdeinergedanken #abendritual #reflexion #dankbarkeit #achtsamkeit #innererbeobachter #tagesabschluss #mentaltraining",
     "formate": [
       {
         "label": "4:5",
@@ -2342,7 +2354,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Nicht bewerten, nur bemerken: Die Abend-Reflexion macht Muster sichtbar und beruhigt den Kopf vor dem Schlaf. Speicher dir das Carousel. #werdemeisterdeinergedanken #abendritual #reflexion #dankbarkeit #achtsamkeit #innererbeobachter #tagesabschluss #mentaltraining"
   },
   {
     "kategorie": "carousel",
@@ -2361,7 +2374,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__atembeobachtung/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung.zip",
-    "caption": "Die Kunst liegt nicht darin, nicht abzuschweifen – sondern im freundlichen Zurückkehren. Fünf Minuten genügen für den Anfang. Speicher dir das Carousel als Erinnerung. #werdemeisterdeinergedanken #atembeobachtung #meditation #achtsamkeit #innereruhe #atem #mentaltraining #präsenz",
     "formate": [
       {
         "label": "4:5",
@@ -2378,7 +2390,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Die Kunst liegt nicht darin, nicht abzuschweifen – sondern im freundlichen Zurückkehren. Fünf Minuten genügen für den Anfang. Speicher dir das Carousel als Erinnerung. #werdemeisterdeinergedanken #atembeobachtung #meditation #achtsamkeit #innereruhe #atem #mentaltraining #präsenz"
   },
   {
     "kategorie": "carousel",
@@ -2397,7 +2410,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__body-scan.zip",
-    "caption": "Gefühle und Anspannung sitzen im Körper. Der Body-Scan bringt dich aus dem Kopf ins Spüren – ideal zum Runterkommen am Abend. Speicher ihn dir für später. #werdemeisterdeinergedanken #bodyscan #körperwahrnehmung #entspannung #achtsamkeit #meditation #anspannunglösen #innereruhe",
     "formate": [
       {
         "label": "4:5",
@@ -2414,7 +2426,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Gefühle und Anspannung sitzen im Körper. Der Body-Scan bringt dich aus dem Kopf ins Spüren – ideal zum Runterkommen am Abend. Speicher ihn dir für später. #werdemeisterdeinergedanken #bodyscan #körperwahrnehmung #entspannung #achtsamkeit #meditation #anspannunglösen #innereruhe"
   },
   {
     "kategorie": "carousel",
@@ -2433,7 +2446,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__box-breathing.zip",
-    "caption": "Box Breathing wird sogar in Hochdruck-Berufen genutzt: vier gleich lange Phasen bilden ein Quadrat aus Atem – ruhig und klar. Speicher es dir für fordernde Momente. #werdemeisterdeinergedanken #boxbreathing #atemübung #fokus #gelassenheit #atem #mentaltraining #innereruhe",
     "formate": [
       {
         "label": "4:5",
@@ -2450,7 +2462,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Box Breathing wird sogar in Hochdruck-Berufen genutzt: vier gleich lange Phasen bilden ein Quadrat aus Atem – ruhig und klar. Speicher es dir für fordernde Momente. #werdemeisterdeinergedanken #boxbreathing #atemübung #fokus #gelassenheit #atem #mentaltraining #innereruhe"
   },
   {
     "kategorie": "carousel",
@@ -2469,7 +2482,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check.zip",
-    "caption": "Solange der Autopilot unsichtbar bleibt, fühlt er sich einfach wie „du\" an. Dieser Mini-Check unterbricht ihn – gekoppelt an Türklinke oder rote Ampel. Speicher dir die Erinnerung. #werdemeisterdeinergedanken #autopilot #bewusstheit #achtsamkeit #gewohnheiten #präsenz #alltag #mentaltraining",
     "formate": [
       {
         "label": "4:5",
@@ -2486,7 +2498,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Solange der Autopilot unsichtbar bleibt, fühlt er sich einfach wie „du\" an. Dieser Mini-Check unterbricht ihn – gekoppelt an Türklinke oder rote Ampel. Speicher dir die Erinnerung. #werdemeisterdeinergedanken #autopilot #bewusstheit #achtsamkeit #gewohnheiten #präsenz #alltag #mentaltraining"
   },
   {
     "kategorie": "carousel",
@@ -2505,7 +2518,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter.zip",
-    "caption": "In dieser Meditation bist du nicht der Denker, sondern der Zeuge. Am Ufer sitzen und zusehen verändert alles. Folg uns für den ganzen Weg. #werdemeisterdeinergedanken #innererbeobachter #gedanken #defusion #achtsamkeit #meditation #mentaltraining #loslassen",
     "formate": [
       {
         "label": "4:5",
@@ -2522,7 +2534,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "In dieser Meditation bist du nicht der Denker, sondern der Zeuge. Am Ufer sitzen und zusehen verändert alles. Folg uns für den ganzen Weg. #werdemeisterdeinergedanken #innererbeobachter #gedanken #defusion #achtsamkeit #meditation #mentaltraining #loslassen"
   },
   {
     "kategorie": "carousel",
@@ -2541,7 +2554,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr.zip",
-    "caption": "Auf dieser Stufe geht es nicht mehr ums Erreichen, sondern ums Bewahren und Weitergeben. Die Kunst ist, immer wieder bewusst in die eigene Mitte zurückzukehren. Folg uns für den ganzen Weg. #werdemeisterdeinergedanken #meisterschaft #präsenz #haltung #achtsamkeit #weitergeben #mitte #mentaltraining",
     "formate": [
       {
         "label": "4:5",
@@ -2558,7 +2570,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Auf dieser Stufe geht es nicht mehr ums Erreichen, sondern ums Bewahren und Weitergeben. Die Kunst ist, immer wieder bewusst in die eigene Mitte zurückzukehren. Folg uns für den ganzen Weg. #werdemeisterdeinergedanken #meisterschaft #präsenz #haltung #achtsamkeit #weitergeben #mitte #mentaltraining"
   },
   {
     "kategorie": "carousel",
@@ -2577,7 +2590,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz.zip",
-    "caption": "Wenn Atem, Herz und Gefühl zusammenspielen, entsteht innere Stimmigkeit. Ein guter Anker vor Entscheidungen oder bei Stress. Speicher dir die Übung. #werdemeisterdeinergedanken #herzkohärenz #dankbarkeit #atem #innereruhe #meditation #klarheit #mentaltraining",
     "formate": [
       {
         "label": "4:5",
@@ -2594,7 +2606,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Wenn Atem, Herz und Gefühl zusammenspielen, entsteht innere Stimmigkeit. Ein guter Anker vor Entscheidungen oder bei Stress. Speicher dir die Übung. #werdemeisterdeinergedanken #herzkohärenz #dankbarkeit #atem #innereruhe #meditation #klarheit #mentaltraining"
   },
   {
     "kategorie": "carousel",
@@ -2613,7 +2626,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual.zip",
-    "caption": "Manches lässt sich nicht wegdenken, aber verabschieden. Ein Ritual gibt dem Loslassen einen klaren, spürbaren Rahmen. Speicher es dir für später. #werdemeisterdeinergedanken #loslassen #ritual #abschluss #innereruhe #achtsamkeit #neuanfang #mentaltraining",
     "formate": [
       {
         "label": "4:5",
@@ -2630,7 +2642,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Manches lässt sich nicht wegdenken, aber verabschieden. Ein Ritual gibt dem Loslassen einen klaren, spürbaren Rahmen. Speicher es dir für später. #werdemeisterdeinergedanken #loslassen #ritual #abschluss #innereruhe #achtsamkeit #neuanfang #mentaltraining"
   },
   {
     "kategorie": "carousel",
@@ -2649,7 +2662,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung.zip",
-    "caption": "Die ersten Minuten des Tages prägen seinen Ton. Statt sofort in Nachrichten zu kippen, richtest du dich bewusst aus. Speicher dir das Ritual für morgen. #werdemeisterdeinergedanken #morgenritual #ausrichtung #achtsamkeit #tagesstart #absicht #präsenz #mentaltraining",
     "formate": [
       {
         "label": "4:5",
@@ -2666,7 +2678,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Die ersten Minuten des Tages prägen seinen Ton. Statt sofort in Nachrichten zu kippen, richtest du dich bewusst aus. Speicher dir das Ritual für morgen. #werdemeisterdeinergedanken #morgenritual #ausrichtung #achtsamkeit #tagesstart #absicht #präsenz #mentaltraining"
   },
   {
     "kategorie": "carousel",
@@ -2685,7 +2698,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang.zip",
-    "caption": "Präsenz muss nicht auf dem Kissen stattfinden. Ein bewusster Spaziergang ist gelebte Achtsamkeit – und ein Hund lebt ganz selbstverständlich im Jetzt. Speicher dir die Übung. #werdemeisterdeinergedanken #präsenz #spaziergang #achtsamkeit #sinne #imjetzt #natur #mentaltraining",
     "formate": [
       {
         "label": "4:5",
@@ -2702,7 +2714,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Präsenz muss nicht auf dem Kissen stattfinden. Ein bewusster Spaziergang ist gelebte Achtsamkeit – und ein Hund lebt ganz selbstverständlich im Jetzt. Speicher dir die Übung. #werdemeisterdeinergedanken #präsenz #spaziergang #achtsamkeit #sinne #imjetzt #natur #mentaltraining"
   },
   {
     "kategorie": "carousel",
@@ -2721,7 +2734,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-06.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen.zip",
-    "caption": "Ein einfacher Hebel mit großer Wirkung: Ist das Ausatmen länger, schaltet der Körper auf Beruhigung. Gut bei Anspannung oder vor dem Einschlafen. Speicher es dir. #werdemeisterdeinergedanken #atemübung #ausatmen #nervensystem #entspannung #beruhigen #atem #innereruhe",
     "formate": [
       {
         "label": "4:5",
@@ -2738,7 +2750,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Ein einfacher Hebel mit großer Wirkung: Ist das Ausatmen länger, schaltet der Körper auf Beruhigung. Gut bei Anspannung oder vor dem Einschlafen. Speicher es dir. #werdemeisterdeinergedanken #atemübung #ausatmen #nervensystem #entspannung #beruhigen #atem #innereruhe"
   },
   {
     "kategorie": "carousel",
@@ -2758,7 +2771,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung.zip",
-    "caption": "Man muss dir die Wahrheit nicht verbergen – es reicht, dich mit Lärm zu fluten, bis du sie nie in Ruhe anschaust. Dauerempörung fühlt sich wie Anteilnahme an und macht doch nur müde. Wähl ein paar gute Quellen und lies sie in Ruhe. #ablenkung #aufmerksamkeit #mentaleselbstverteidigung #kritischesdenken #fokus #klardenken #werdemeisterdeinergedanken #digitaldetox",
     "formate": [
       {
         "label": "4:5",
@@ -2775,7 +2787,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Man muss dir die Wahrheit nicht verbergen – es reicht, dich mit Lärm zu fluten, bis du sie nie in Ruhe anschaust. Dauerempörung fühlt sich wie Anteilnahme an und macht doch nur müde. Wähl ein paar gute Quellen und lies sie in Ruhe. #ablenkung #aufmerksamkeit #mentaleselbstverteidigung #kritischesdenken #fokus #klardenken #werdemeisterdeinergedanken #digitaldetox"
   },
   {
     "kategorie": "carousel",
@@ -2795,7 +2808,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen.zip",
-    "caption": "Dein Feed ist ein Spiegel, kein Fenster. Er zeigt dir mehr von dem, worauf du schon reagiert hast – und spült Empörung nach oben, weil sie Reichweite bringt. Zähl einmal: Wie viel bestätigt deine Sicht, wie viel fordert sie heraus? #algorithmen #filterblase #mentaleselbstverteidigung #medienkompetenz #kritischesdenken #klardenken #werdemeisterdeinergedanken #socialmedia",
     "formate": [
       {
         "label": "4:5",
@@ -2812,7 +2824,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Dein Feed ist ein Spiegel, kein Fenster. Er zeigt dir mehr von dem, worauf du schon reagiert hast – und spült Empörung nach oben, weil sie Reichweite bringt. Zähl einmal: Wie viel bestätigt deine Sicht, wie viel fordert sie heraus? #algorithmen #filterblase #mentaleselbstverteidigung #medienkompetenz #kritischesdenken #klardenken #werdemeisterdeinergedanken #socialmedia"
   },
   {
     "kategorie": "carousel",
@@ -2832,7 +2845,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung.zip",
-    "caption": "Ein ängstlicher Mensch ist der am leichtesten zu lenkende – Angst verengt das Denken auf Schwarz und Weiß. Das Muster: erst Bedrohung, dann Schutz. Atme langsam aus, bevor du entscheidest, und frag: Wer bietet mir gerade Schutz an – und was soll ich dafür geben? #angst #mentaleselbstverteidigung #kritischesdenken #ruhe #selbstschutz #klardenken #werdemeisterdeinergedanken #gelassenheit",
     "formate": [
       {
         "label": "4:5",
@@ -2849,7 +2861,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Ein ängstlicher Mensch ist der am leichtesten zu lenkende – Angst verengt das Denken auf Schwarz und Weiß. Das Muster: erst Bedrohung, dann Schutz. Atme langsam aus, bevor du entscheidest, und frag: Wer bietet mir gerade Schutz an – und was soll ich dafür geben? #angst #mentaleselbstverteidigung #kritischesdenken #ruhe #selbstschutz #klardenken #werdemeisterdeinergedanken #gelassenheit"
   },
   {
     "kategorie": "carousel",
@@ -2869,7 +2882,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit.zip",
-    "caption": "Fachleuten zu vertrauen ist klug – blinder Gehorsam beginnt dort, wo du aufhörst mitzudenken. Zwei Fragen helfen: Spricht die Person aus ihrem Fachgebiet? Und darf sie sich irren? Offenheit für Rückfragen ist ein Zeichen von Seriosität. #autorität #kritischesdenken #mentaleselbstverteidigung #medienkompetenz #wissenschaft #klardenken #werdemeisterdeinergedanken #vertrauen",
     "formate": [
       {
         "label": "4:5",
@@ -2886,7 +2898,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Fachleuten zu vertrauen ist klug – blinder Gehorsam beginnt dort, wo du aufhörst mitzudenken. Zwei Fragen helfen: Spricht die Person aus ihrem Fachgebiet? Und darf sie sich irren? Offenheit für Rückfragen ist ein Zeichen von Seriosität. #autorität #kritischesdenken #mentaleselbstverteidigung #medienkompetenz #wissenschaft #klardenken #werdemeisterdeinergedanken #vertrauen"
   },
   {
     "kategorie": "carousel",
@@ -2906,7 +2919,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht.zip",
-    "caption": "Ein Bild fühlt sich an wie ein Beweis, obwohl es nur ein Ausschnitt ist – gewählt von jemandem, mit einer Absicht. Der Rahmen entscheidet, ob dasselbe Ereignis friedlich oder bedrohlich wirkt. Schau ein emotionales Video einmal ohne Ton und urteile aus dem Rest. #bilder #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #fakenews #klardenken #werdemeisterdeinergedanken #wahrnehmung",
     "formate": [
       {
         "label": "4:5",
@@ -2923,7 +2935,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Ein Bild fühlt sich an wie ein Beweis, obwohl es nur ein Ausschnitt ist – gewählt von jemandem, mit einer Absicht. Der Rahmen entscheidet, ob dasselbe Ereignis friedlich oder bedrohlich wirkt. Schau ein emotionales Video einmal ohne Ton und urteile aus dem Rest. #bilder #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #fakenews #klardenken #werdemeisterdeinergedanken #wahrnehmung"
   },
   {
     "kategorie": "carousel",
@@ -2943,7 +2956,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing.zip",
-    "caption": "Dieselben Fakten, ein anderes Wort – und schon fühlt sich alles anders an. Das ist Framing. Es braucht keine falschen Zahlen, nur den passenden Rahmen. Übe die Umformulierungs-Probe: schreib eine Schlagzeile neutral um und schau, was vom Gefühl bleibt. #framing #mentaleselbstverteidigung #kritischesdenken #sprache #medienkompetenz #klardenken #werdemeisterdeinergedanken #kommunikation",
     "formate": [
       {
         "label": "4:5",
@@ -2960,7 +2972,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Dieselben Fakten, ein anderes Wort – und schon fühlt sich alles anders an. Das ist Framing. Es braucht keine falschen Zahlen, nur den passenden Rahmen. Übe die Umformulierungs-Probe: schreib eine Schlagzeile neutral um und schau, was vom Gefühl bleibt. #framing #mentaleselbstverteidigung #kritischesdenken #sprache #medienkompetenz #klardenken #werdemeisterdeinergedanken #kommunikation"
   },
   {
     "kategorie": "carousel",
@@ -2980,7 +2993,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck.zip",
-    "caption": "Die Mehrheit, vor der du dich fürchtest, gibt es oft gar nicht. Wer glaubt, allein zu stehen, schweigt – und verstärkt so eine gefühlte Mehrheit, die keine ist. Sag einmal ruhig, was du denkst, und schau, wie viele nicken. #gruppendruck #schweigespirale #mentaleselbstverteidigung #kritischesdenken #mut #klardenken #werdemeisterdeinergedanken #selbstbestimmung",
     "formate": [
       {
         "label": "4:5",
@@ -2997,7 +3009,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Die Mehrheit, vor der du dich fürchtest, gibt es oft gar nicht. Wer glaubt, allein zu stehen, schweigt – und verstärkt so eine gefühlte Mehrheit, die keine ist. Sag einmal ruhig, was du denkst, und schau, wie viele nicken. #gruppendruck #schweigespirale #mentaleselbstverteidigung #kritischesdenken #mut #klardenken #werdemeisterdeinergedanken #selbstbestimmung"
   },
   {
     "kategorie": "carousel",
@@ -3017,7 +3030,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung.zip",
-    "caption": "Solange du eine Meinung hast, kannst du sie prüfen. Sobald die Meinung dich hat, verteidigst du sie wie dein Leben. Sie ändern zu können ist keine Schwäche, sondern Reife. Frag ehrlich: Halte ich daran fest, weil es stimmt – oder wegen der Zugehörigkeit? #identität #meinung #mentaleselbstverteidigung #selbstreflexion #kritischesdenken #klardenken #werdemeisterdeinergedanken #freiheit",
     "formate": [
       {
         "label": "4:5",
@@ -3034,7 +3046,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Solange du eine Meinung hast, kannst du sie prüfen. Sobald die Meinung dich hat, verteidigst du sie wie dein Leben. Sie ändern zu können ist keine Schwäche, sondern Reife. Frag ehrlich: Halte ich daran fest, weil es stimmt – oder wegen der Zugehörigkeit? #identität #meinung #mentaleselbstverteidigung #selbstreflexion #kritischesdenken #klardenken #werdemeisterdeinergedanken #freiheit"
   },
   {
     "kategorie": "carousel",
@@ -3054,7 +3067,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz.zip",
-    "caption": "Wir weisen Informationen oft nicht zurück, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. Es ist unbequemer, sich selbst zu widersprechen, als die Wirklichkeit zu verbiegen. Nimm die stärkste Fassung einer Position, die du ablehnst – und prüf sie fair. #kognitivedissonanz #kritischesdenken #mentaleselbstverteidigung #selbstreflexion #psychologie #klardenken #werdemeisterdeinergedanken #ehrlichkeit",
     "formate": [
       {
         "label": "4:5",
@@ -3071,7 +3083,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Wir weisen Informationen oft nicht zurück, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. Es ist unbequemer, sich selbst zu widersprechen, als die Wirklichkeit zu verbiegen. Nimm die stärkste Fassung einer Position, die du ablehnst – und prüf sie fair. #kognitivedissonanz #kritischesdenken #mentaleselbstverteidigung #selbstreflexion #psychologie #klardenken #werdemeisterdeinergedanken #ehrlichkeit"
   },
   {
     "kategorie": "carousel",
@@ -3091,7 +3104,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda.zip",
-    "caption": "Die stärkste Lenkung ist nicht die Meinung, sondern das Thema. Was oft vorkommt, wirkt wichtig; was fehlt, verschwindet aus deinem Kopf. Lies ein Ereignis bei zwei sehr unterschiedlichen Quellen und schau, was die eine weglässt. #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #nachrichten #aufmerksamkeit #klardenken #werdemeisterdeinergedanken #informiert",
     "formate": [
       {
         "label": "4:5",
@@ -3108,7 +3120,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Die stärkste Lenkung ist nicht die Meinung, sondern das Thema. Was oft vorkommt, wirkt wichtig; was fehlt, verschwindet aus deinem Kopf. Lies ein Ereignis bei zwei sehr unterschiedlichen Quellen und schau, was die eine weglässt. #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #nachrichten #aufmerksamkeit #klardenken #werdemeisterdeinergedanken #informiert"
   },
   {
     "kategorie": "carousel",
@@ -3128,7 +3141,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung.zip",
-    "caption": "Große Veränderungen kommen selten mit einem Knall, sondern in kleinen Schritten, an die man sich einzeln gewöhnt. „War doch schon immer so\" ist der Tarnsatz der Gewöhnung – und stimmt fast nie. Nutz deine erste Reaktion als Information, bevor sie verblasst. #normalisierung #kritischesdenken #mentaleselbstverteidigung #gesellschaft #achtsamkeit #klardenken #werdemeisterdeinergedanken #wahrnehmung",
     "formate": [
       {
         "label": "4:5",
@@ -3145,7 +3157,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Große Veränderungen kommen selten mit einem Knall, sondern in kleinen Schritten, an die man sich einzeln gewöhnt. „War doch schon immer so\" ist der Tarnsatz der Gewöhnung – und stimmt fast nie. Nutz deine erste Reaktion als Information, bevor sie verblasst. #normalisierung #kritischesdenken #mentaleselbstverteidigung #gesellschaft #achtsamkeit #klardenken #werdemeisterdeinergedanken #wahrnehmung"
   },
   {
     "kategorie": "carousel",
@@ -3165,7 +3178,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda.zip",
-    "caption": "Propaganda erkennst du nicht an Parolen, sondern an drei leisen Hebeln: Wiederholung, Emotion, Vereinfachung. Keiner braucht eine Lüge. Frag dich bei deiner stärksten Überzeugung: geprüft oder nur oft gehört? Speicher dir die Frage. #mentaleselbstverteidigung #kritischesdenken #medienkompetenz #propaganda #gedankenfreiheit #klardenken #werdemeisterdeinergedanken #achtsamkeit",
     "formate": [
       {
         "label": "4:5",
@@ -3182,7 +3194,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Propaganda erkennst du nicht an Parolen, sondern an drei leisen Hebeln: Wiederholung, Emotion, Vereinfachung. Keiner braucht eine Lüge. Frag dich bei deiner stärksten Überzeugung: geprüft oder nur oft gehört? Speicher dir die Frage. #mentaleselbstverteidigung #kritischesdenken #medienkompetenz #propaganda #gedankenfreiheit #klardenken #werdemeisterdeinergedanken #achtsamkeit"
   },
   {
     "kategorie": "carousel",
@@ -3202,7 +3215,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung.zip",
-    "caption": "Bevor du fragst, was du denkst, entscheidet dein Zustand, wie du denkst. Zu viele wechselnde, emotionale Reize halten dein System in Daueralarm – und in Alarm denkst du enger und bist leichter steuerbar. Schalt eine Reizquelle ab und atme länger aus als ein. #reizüberflutung #stress #mentaleselbstverteidigung #nervensystem #achtsamkeit #klardenken #werdemeisterdeinergedanken #ruhe",
     "formate": [
       {
         "label": "4:5",
@@ -3219,7 +3231,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Bevor du fragst, was du denkst, entscheidet dein Zustand, wie du denkst. Zu viele wechselnde, emotionale Reize halten dein System in Daueralarm – und in Alarm denkst du enger und bist leichter steuerbar. Schalt eine Reizquelle ab und atme länger aus als ein. #reizüberflutung #stress #mentaleselbstverteidigung #nervensystem #achtsamkeit #klardenken #werdemeisterdeinergedanken #ruhe"
   },
   {
     "kategorie": "carousel",
@@ -3239,7 +3252,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten.zip",
-    "caption": "„Experte\" oder „Querulant\" – ein einziges Wort entscheidet, ob du zuhörst, bei identischem Satz. Etiketten sparen dir das Denken und genau das ist ihre Gefahr. Zieh das Etikett ab und prüf die Handlung. Welches Reizwort triggert dich sofort? #sprache #etiketten #mentaleselbstverteidigung #kritischesdenken #medienkompetenz #klardenken #werdemeisterdeinergedanken #wörter",
     "formate": [
       {
         "label": "4:5",
@@ -3256,7 +3268,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "„Experte\" oder „Querulant\" – ein einziges Wort entscheidet, ob du zuhörst, bei identischem Satz. Etiketten sparen dir das Denken und genau das ist ihre Gefahr. Zieh das Etikett ab und prüf die Handlung. Welches Reizwort triggert dich sofort? #sprache #etiketten #mentaleselbstverteidigung #kritischesdenken #medienkompetenz #klardenken #werdemeisterdeinergedanken #wörter"
   },
   {
     "kategorie": "carousel",
@@ -3276,7 +3289,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel.zip",
-    "caption": "Werbung verkauft dir selten ein Produkt – öfter einen Mangel, den sie erst weckt. Erst das Loch, dann die Lösung. Die Pause zwischen Impuls und Kauf ist deine Freiheit. Warte 24 Stunden: Ist der Wunsch dann noch da, war er vielleicht echt. #werbung #konsum #mentaleselbstverteidigung #kritischesdenken #achtsamkeit #klardenken #werdemeisterdeinergedanken #minimalismus",
     "formate": [
       {
         "label": "4:5",
@@ -3293,7 +3305,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Werbung verkauft dir selten ein Produkt – öfter einen Mangel, den sie erst weckt. Erst das Loch, dann die Lösung. Die Pause zwischen Impuls und Kauf ist deine Freiheit. Warte 24 Stunden: Ist der Wunsch dann noch da, war er vielleicht echt. #werbung #konsum #mentaleselbstverteidigung #kritischesdenken #achtsamkeit #klardenken #werdemeisterdeinergedanken #minimalismus"
   },
   {
     "kategorie": "carousel",
@@ -3313,7 +3326,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung.zip",
-    "caption": "Dein Gehirn verwechselt „kommt mir bekannt vor\" mit „ist wahr\". Ein Satz, oft genug wiederholt, fühlt sich richtig an – ganz ohne Beleg. Zähl Quellen, nicht Stimmen: Berufen sich alle nur auf dieselbe Ursprungsmeldung? #wiederholung #kritischesdenken #mentaleselbstverteidigung #medienkompetenz #faktencheck #klardenken #werdemeisterdeinergedanken #wahrheit",
     "formate": [
       {
         "label": "4:5",
@@ -3330,7 +3342,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Dein Gehirn verwechselt „kommt mir bekannt vor\" mit „ist wahr\". Ein Satz, oft genug wiederholt, fühlt sich richtig an – ganz ohne Beleg. Zähl Quellen, nicht Stimmen: Berufen sich alle nur auf dieselbe Ursprungsmeldung? #wiederholung #kritischesdenken #mentaleselbstverteidigung #medienkompetenz #faktencheck #klardenken #werdemeisterdeinergedanken #wahrheit"
   },
   {
     "kategorie": "carousel",
@@ -3350,7 +3363,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__autopilot/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/stufen__autopilot.zip",
-    "caption": "Vieles in deinem Alltag läuft ab, ohne dass du es bewusst wählst. Das ist keine Schwäche, sondern Effizienz — bis dieselben Muster sich gegen dich wenden. Der erste Schritt ist nicht Ändern, sondern Sehen. Folge für den Weg durch alle 7 Stufen. #werdemeisterdeinergedanken #autopilot #bewusstsein #achtsamkeit #selbsterkenntnis #gewohnheiten #persönlichkeitsentwicklung #mindset",
     "formate": [
       {
         "label": "4:5",
@@ -3367,7 +3379,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Vieles in deinem Alltag läuft ab, ohne dass du es bewusst wählst. Das ist keine Schwäche, sondern Effizienz — bis dieselben Muster sich gegen dich wenden. Der erste Schritt ist nicht Ändern, sondern Sehen. Folge für den Weg durch alle 7 Stufen. #werdemeisterdeinergedanken #autopilot #bewusstsein #achtsamkeit #selbsterkenntnis #gewohnheiten #persönlichkeitsentwicklung #mindset"
   },
   {
     "kategorie": "carousel",
@@ -3387,7 +3400,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung.zip",
-    "caption": "Erkennen allein reicht oft nicht — manche Muster lösen sich erst, wenn du das Gefühl endlich zulässt. Wo etwas losgelassen wird, entsteht Raum für Ruhe und Kraft. Aushalten ist eine aktive, kraftvolle Fähigkeit. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #emotionaleReife #loslassen #gefühle #innerearbeit #selbstheilung #achtsamkeit #persönlichkeitsentwicklung",
     "formate": [
       {
         "label": "4:5",
@@ -3404,7 +3416,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Erkennen allein reicht oft nicht — manche Muster lösen sich erst, wenn du das Gefühl endlich zulässt. Wo etwas losgelassen wird, entsteht Raum für Ruhe und Kraft. Aushalten ist eine aktive, kraftvolle Fähigkeit. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #emotionaleReife #loslassen #gefühle #innerearbeit #selbstheilung #achtsamkeit #persönlichkeitsentwicklung"
   },
   {
     "kategorie": "carousel",
@@ -3424,7 +3437,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__erwachen/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/stufen__erwachen.zip",
-    "caption": "Sobald du den Autopiloten bemerkst, geschieht etwas Neues: Du erkennst, dass da jemand ist, der deine Gedanken wahrnimmt. Diese Fähigkeit hat auch einen nüchternen Namen — Metakognition — und sie ist trainierbar. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #erwachen #bewusstsein #gedanken #achtsamkeit #metakognition #selbstwahrnehmung #innerearbeit",
     "formate": [
       {
         "label": "4:5",
@@ -3441,7 +3453,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Sobald du den Autopiloten bemerkst, geschieht etwas Neues: Du erkennst, dass da jemand ist, der deine Gedanken wahrnimmt. Diese Fähigkeit hat auch einen nüchternen Namen — Metakognition — und sie ist trainierbar. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #erwachen #bewusstsein #gedanken #achtsamkeit #metakognition #selbstwahrnehmung #innerearbeit"
   },
   {
     "kategorie": "carousel",
@@ -3461,7 +3474,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung.zip",
-    "caption": "Auf dieser Stufe geht es um innere Ausrichtung: die Stimmigkeit, aus der Präsenz, Ausstrahlung und ruhige Kraft entstehen. Sie entsteht nicht durch Anstrengung, sondern dadurch, dass Denken, Fühlen und Handeln in dieselbe Richtung zeigen. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #innereAusrichtung #kohärenz #integrität #präsenz #achtsamkeit #persönlichkeitsentwicklung #innerearbeit",
     "formate": [
       {
         "label": "4:5",
@@ -3478,7 +3490,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Auf dieser Stufe geht es um innere Ausrichtung: die Stimmigkeit, aus der Präsenz, Ausstrahlung und ruhige Kraft entstehen. Sie entsteht nicht durch Anstrengung, sondern dadurch, dass Denken, Fühlen und Handeln in dieselbe Richtung zeigen. Folge für alle 7 Stufen. #werdemeisterdeinergedanken #innereAusrichtung #kohärenz #integrität #präsenz #achtsamkeit #persönlichkeitsentwicklung #innerearbeit"
   },
   {
     "kategorie": "carousel",
@@ -3498,7 +3511,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__meisterschaft/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/stufen__meisterschaft.zip",
-    "caption": "Meisterschaft ist kein Zustand ohne Sturm, sondern ein Zuhause, in das du immer schneller zurückkehrst. Aus Reagieren wird Gestalten, aus Getriebensein wird Präsenz. Du bist der bewusste Raum, aus dem heraus du dein Leben souverän formst. Folge für den ganzen Weg. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #präsenz #innerefreiheit #achtsamkeit #persönlichkeitsentwicklung #selbstführung",
     "formate": [
       {
         "label": "4:5",
@@ -3515,7 +3527,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Meisterschaft ist kein Zustand ohne Sturm, sondern ein Zuhause, in das du immer schneller zurückkehrst. Aus Reagieren wird Gestalten, aus Getriebensein wird Präsenz. Du bist der bewusste Raum, aus dem heraus du dein Leben souverän formst. Folge für den ganzen Weg. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #präsenz #innerefreiheit #achtsamkeit #persönlichkeitsentwicklung #selbstführung"
   },
   {
     "kategorie": "carousel",
@@ -3535,7 +3548,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__schoepferkraft/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft.zip",
-    "caption": "Jetzt wirst du vom Beobachter zum bewussten Gestalter: Du wählst nicht länger nur die Gedanken, die dir zufällig einfallen, sondern jene, die dich stärken — und setzt sie um. Denn innere Ausrichtung entfaltet ihre Kraft erst im Tun. Folge für den ganzen Weg. #werdemeisterdeinergedanken #schöpferkraft #mindset #gedankenkraft #selbstbild #bewusstgestalten #persönlichkeitsentwicklung #innerearbeit",
     "formate": [
       {
         "label": "4:5",
@@ -3552,7 +3564,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Jetzt wirst du vom Beobachter zum bewussten Gestalter: Du wählst nicht länger nur die Gedanken, die dir zufällig einfallen, sondern jene, die dich stärken — und setzt sie um. Denn innere Ausrichtung entfaltet ihre Kraft erst im Tun. Folge für den ganzen Weg. #werdemeisterdeinergedanken #schöpferkraft #mindset #gedankenkraft #selbstbild #bewusstgestalten #persönlichkeitsentwicklung #innerearbeit"
   },
   {
     "kategorie": "carousel",
@@ -3572,7 +3585,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung.zip",
-    "caption": "Nach dem Erwachen beginnt die eigentliche Übung: das ruhige Zusehen. Der innere Beobachter urteilt nicht und kämpft nicht — er schaut nur. Genau dieses Schauen entzieht dem Automatismus den Boden. Folge für den ganzen Weg. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeit #bewusstsein #gedankenbeobachten #innererbeobachter #mentaleklarheit #persönlichkeitsentwicklung",
     "formate": [
       {
         "label": "4:5",
@@ -3589,7 +3601,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Nach dem Erwachen beginnt die eigentliche Übung: das ruhige Zusehen. Der innere Beobachter urteilt nicht und kämpft nicht — er schaut nur. Genau dieses Schauen entzieht dem Automatismus den Boden. Folge für den ganzen Weg. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeit #bewusstsein #gedankenbeobachten #innererbeobachter #mentaleklarheit #persönlichkeitsentwicklung"
   },
   {
     "kategorie": "carousel",
@@ -3609,7 +3622,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken.zip",
-    "caption": "Zwischen dem, was passiert, und dem, was du fühlst, liegt immer ein Gedanke. Meist bemerkst du ihn nicht – deshalb hältst du ihn für die Wahrheit. Schreib ihn einmal auf und prüf ihn wie eine Hypothese. Genau da beginnt Veränderung. #gedanken #mentalegesundheit #selbstreflexion #achtsamkeit #psychologie #innerearbeit #kognitiveverzerrung #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3626,7 +3638,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Zwischen dem, was passiert, und dem, was du fühlst, liegt immer ein Gedanke. Meist bemerkst du ihn nicht – deshalb hältst du ihn für die Wahrheit. Schreib ihn einmal auf und prüf ihn wie eine Hypothese. Genau da beginnt Veränderung. #gedanken #mentalegesundheit #selbstreflexion #achtsamkeit #psychologie #innerearbeit #kognitiveverzerrung #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3646,7 +3659,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker.zip",
-    "caption": "Der innere Kritiker meint es gut, aber mit veralteten Methoden. Wenn du ihn als Gegenüber erkennst statt als deine Wahrheit, hörst du auf, jedes seiner Worte für bare Münze zu nehmen. An seine Seite tritt ein wohlwollender Mentor. #innererkritiker #selbstmitgefühl #selbstwert #mentalegesundheit #psychologie #innerearbeit #achtsamkeit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3663,7 +3675,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Der innere Kritiker meint es gut, aber mit veralteten Methoden. Wenn du ihn als Gegenüber erkennst statt als deine Wahrheit, hörst du auf, jedes seiner Worte für bare Münze zu nehmen. An seine Seite tritt ein wohlwollender Mentor. #innererkritiker #selbstmitgefühl #selbstwert #mentalegesundheit #psychologie #innerearbeit #achtsamkeit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3683,7 +3696,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke.zip",
-    "caption": "Zwischen dem, was dir passiert, und dem, was du tust, liegt ein winziger Moment. Wer ihn dehnt, hört auf, ein Spielball zu sein. Ein einziger bewusster Atemzug reicht als erster Keil zwischen Reiz und Reaktion. #reizreaktion #selbstregulation #achtsamkeit #mentalegesundheit #psychologie #innerearbeit #gelassenheit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3700,7 +3712,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Zwischen dem, was dir passiert, und dem, was du tust, liegt ein winziger Moment. Wer ihn dehnt, hört auf, ein Spielball zu sein. Ein einziger bewusster Atemzug reicht als erster Keil zwischen Reiz und Reaktion. #reizreaktion #selbstregulation #achtsamkeit #mentalegesundheit #psychologie #innerearbeit #gelassenheit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3720,7 +3733,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation.zip",
-    "caption": "Gefühle haben Anfang und Ende. Du musst sie weder wegdrücken noch dich von ihnen fortreißen lassen. Über den Körper hast du direkten Zugriff: langsames, längeres Ausatmen signalisiert dem Nervensystem Sicherheit – schneller als jedes Argument. #emotionsregulation #gefühle #selbstregulation #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3737,7 +3749,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Gefühle haben Anfang und Ende. Du musst sie weder wegdrücken noch dich von ihnen fortreißen lassen. Über den Körper hast du direkten Zugriff: langsames, längeres Ausatmen signalisiert dem Nervensystem Sicherheit – schneller als jedes Argument. #emotionsregulation #gefühle #selbstregulation #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3757,7 +3770,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen.zip",
-    "caption": "Grübeln ist kein Nachdenken, sondern dasselbe Denken in Wiederholung – ohne Ausgang. Der Test ist einfach: Bin ich einer Antwort näher gekommen? Wenn nicht, hilft kein besserer Gedanke, sondern eine klare Entscheidung, dem Kreisen die Energie zu entziehen. #grübeln #gedankenkreisen #mentalegesundheit #schlaf #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3774,7 +3786,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Grübeln ist kein Nachdenken, sondern dasselbe Denken in Wiederholung – ohne Ausgang. Der Test ist einfach: Bin ich einer Antwort näher gekommen? Wenn nicht, hilft kein besserer Gedanke, sondern eine klare Entscheidung, dem Kreisen die Energie zu entziehen. #grübeln #gedankenkreisen #mentalegesundheit #schlaf #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3794,7 +3807,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe.zip",
-    "caption": "Etwas zu verstehen und es zu verkörpern sind zwei verschiedene Dinge. Eine Einsicht wird zur zweiten Natur, wenn du sie im rauen Alltag wiederholst – und wenn du sie in eigenen Worten weitergibst. Genau das festigt die Haltung am meisten. #integration #haltung #persönlichkeitsentwicklung #mentalegesundheit #psychologie #innerearbeit #selbstreflexion #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3811,7 +3823,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Etwas zu verstehen und es zu verkörpern sind zwei verschiedene Dinge. Eine Einsicht wird zur zweiten Natur, wenn du sie im rauen Alltag wiederholst – und wenn du sie in eigenen Worten weitergibst. Genau das festigt die Haltung am meisten. #integration #haltung #persönlichkeitsentwicklung #mentalegesundheit #psychologie #innerearbeit #selbstreflexion #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3831,7 +3844,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen.zip",
-    "caption": "Unter deinen vielen Gedanken liegen wenige tiefe Sätze, die einmal sinnvoll waren und heute nur noch filtern. Sie zu finden verändert mehr als jeder Einzelgedanke. Und sie lösen sich nicht durch Behauptungen, sondern durch echte Gegenbeweise. #kernüberzeugungen #glaubenssätze #innerearbeit #mentalegesundheit #psychologie #selbstwert #selbstreflexion #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3848,7 +3860,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Unter deinen vielen Gedanken liegen wenige tiefe Sätze, die einmal sinnvoll waren und heute nur noch filtern. Sie zu finden verändert mehr als jeder Einzelgedanke. Und sie lösen sich nicht durch Behauptungen, sondern durch echte Gegenbeweise. #kernüberzeugungen #glaubenssätze #innerearbeit #mentalegesundheit #psychologie #selbstwert #selbstreflexion #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3868,7 +3881,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen.zip",
-    "caption": "Denkfehler folgen nur einer Handvoll Muster. Wenn du sie kennst, erkennst du sie wieder – und ein scheinbar wahrer Gedanke wird zu einem erkennbaren Muster, dem du nicht mehr ausgeliefert bist. #kognitiveverzerrung #denkfehler #mentalegesundheit #psychologie #selbstreflexion #grübeln #achtsamkeit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3885,7 +3897,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Denkfehler folgen nur einer Handvoll Muster. Wenn du sie kennst, erkennst du sie wieder – und ein scheinbar wahrer Gedanke wird zu einem erkennbaren Muster, dem du nicht mehr ausgeliefert bist. #kognitiveverzerrung #denkfehler #mentalegesundheit #psychologie #selbstreflexion #grübeln #achtsamkeit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3905,7 +3918,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung.zip",
-    "caption": "Vieles, was sich wie dein Wesen anfühlt, ist antrainiertes Reagieren aus einer anderen Zeit. Die gute Nachricht: Jede neue Erfahrung, in der das Befürchtete ausbleibt, schreibt die alte Kopplung ein Stück um. #konditionierung #nervensystem #gewohnheiten #mentalegesundheit #psychologie #innerearbeit #selbstregulation #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3922,7 +3934,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Vieles, was sich wie dein Wesen anfühlt, ist antrainiertes Reagieren aus einer anderen Zeit. Die gute Nachricht: Jede neue Erfahrung, in der das Befürchtete ausbleibt, schreibt die alte Kopplung ein Stück um. #konditionierung #nervensystem #gewohnheiten #mentalegesundheit #psychologie #innerearbeit #selbstregulation #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3942,7 +3955,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit.zip",
-    "caption": "Anhaltende Muster gehen in den Körper: hochgezogene Schultern, flacher Atem, ein angespannter Bauch. Das ist keine Einbildung und kein Grund für Selbstvorwürfe – Muster sind entstanden, nicht gewählt. Und ein reguliertes Nervensystem entlastet den ganzen Organismus wieder. #nervensystem #stress #körperundgeist #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3959,7 +3971,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Anhaltende Muster gehen in den Körper: hochgezogene Schultern, flacher Atem, ein angespannter Bauch. Das ist keine Einbildung und kein Grund für Selbstvorwürfe – Muster sind entstanden, nicht gewählt. Und ein reguliertes Nervensystem entlastet den ganzen Organismus wieder. #nervensystem #stress #körperundgeist #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -3979,7 +3992,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet.zip",
-    "caption": "Umlernen ist keine schöne Idee, sondern Biologie. Was du wiederholst, verstärkst du ganz konkret im Gehirn. Deshalb wirkt regelmäßiges Üben mit innerer Beteiligung stärker als jede einmalige Einsicht. #neuroplastizität #gehirn #gewohnheiten #mentalegesundheit #psychologie #innerearbeit #veränderung #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -3996,7 +4008,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Umlernen ist keine schöne Idee, sondern Biologie. Was du wiederholst, verstärkst du ganz konkret im Gehirn. Deshalb wirkt regelmäßiges Üben mit innerer Beteiligung stärker als jede einmalige Einsicht. #neuroplastizität #gehirn #gewohnheiten #mentalegesundheit #psychologie #innerearbeit #veränderung #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -4016,7 +4029,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl.zip",
-    "caption": "Du wächst nicht, indem du dich kleinmachst, sondern indem du dich hältst wie einen Menschen, der dir wichtig ist. Selbstmitgefühl beschönigt nichts – gerade deshalb ist es der stabilere Boden, von dem aus du handeln kannst. #selbstmitgefühl #selbstfürsorge #selbstwert #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -4033,7 +4045,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
+    ],
+    "caption": "Du wächst nicht, indem du dich kleinmachst, sondern indem du dich hältst wie einen Menschen, der dir wichtig ist. Selbstmitgefühl beschönigt nichts – gerade deshalb ist es der stabilere Boden, von dem aus du handeln kannst. #selbstmitgefühl #selbstfürsorge #selbstwert #mentalegesundheit #psychologie #achtsamkeit #innerearbeit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -4053,7 +4066,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele/slide-07.webp"
     ],
     "href": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele.zip",
-    "caption": "Ziele sind Punkte auf einer Landkarte. Werte sind die Himmelsrichtung – sie geben jedem Schritt Bedeutung. Und ein Wert wird erst real, wenn er in einer kleinen konkreten Handlung sichtbar wird: aus „Gesundheit ist mir wichtig\" wird ein Spaziergang. #werte #sinn #ziele #mentalegesundheit #psychologie #selbstreflexion #innerearbeit #werdemeisterdeinergedanken",
     "formate": [
       {
         "label": "4:5",
@@ -4070,358 +4082,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "w": 1080,
         "h": 1920
       }
-    ]
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan 7 Stufen",
-    "unterKategorie": "Die 7 Stufen",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-7-Stufen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook 7 Stufen",
-    "unterKategorie": "Die 7 Stufen",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-7-Stufen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop 7 Stufen",
-    "unterKategorie": "Die 7 Stufen",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 2.2,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-7-Stufen.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Praesentationsvorlage",
-    "unterKategorie": "Universell",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 1.8,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Praesentationsvorlage.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan Bewusstseinstest Wo stehst du",
-    "unterKategorie": "Bewusstseinstest & Profil",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Bewusstseinstest-Wo-stehst-du.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook Bewusstseinstest Wo stehst du",
-    "unterKategorie": "Bewusstseinstest & Profil",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.7,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Bewusstseinstest-Wo-stehst-du.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop Bewusstseinstest Wo stehst du",
-    "unterKategorie": "Bewusstseinstest & Profil",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 0.8,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Bewusstseinstest-Wo-stehst-du.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan Deinen Kopf durchdenken",
-    "unterKategorie": "Blog & Deep-Dives",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Deinen-Kopf-durchdenken.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook Deinen Kopf durchdenken",
-    "unterKategorie": "Blog & Deep-Dives",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.7,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Deinen-Kopf-durchdenken.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop Deinen Kopf durchdenken",
-    "unterKategorie": "Blog & Deep-Dives",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Deinen-Kopf-durchdenken.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Carousel Texte 7 Stufen",
-    "unterKategorie": "Carousel-Texte",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-7-Stufen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Carousel Texte Alle Serien",
-    "unterKategorie": "Carousel-Texte",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1.7,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Alle-Serien.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Carousel Texte Mentale Selbstverteidigung",
-    "unterKategorie": "Carousel-Texte",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1.2,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Mentale-Selbstverteidigung.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Carousel Texte Praxis",
-    "unterKategorie": "Carousel-Texte",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1.1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Praxis.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Carousel Texte Vertiefungen",
-    "unterKategorie": "Carousel-Texte",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1.1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Vertiefungen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan Journal und Impulse Die Kraft der Reflexion",
-    "unterKategorie": "Journal & Impulse",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Journal-und-Impulse-Die-Kraft-der-Reflexion.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook Journal und Impulse Die Kraft der Reflexion",
-    "unterKategorie": "Journal & Impulse",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.7,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Journal-und-Impulse-Die-Kraft-der-Reflexion.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop Journal und Impulse Die Kraft der Reflexion",
-    "unterKategorie": "Journal & Impulse",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 0.8,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Journal-und-Impulse-Die-Kraft-der-Reflexion.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan Mentale Selbstverteidigung",
-    "unterKategorie": "Mentale Selbstverteidigung",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Mentale-Selbstverteidigung.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook Mentale Selbstverteidigung",
-    "unterKategorie": "Mentale Selbstverteidigung",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Mentale-Selbstverteidigung.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop Mentale Selbstverteidigung",
-    "unterKategorie": "Mentale Selbstverteidigung",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 2.4,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Mentale-Selbstverteidigung.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan Praxis Werkzeugkasten",
-    "unterKategorie": "Praxis-Werkzeugkasten",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Praxis-Werkzeugkasten.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook Praxis Werkzeugkasten",
-    "unterKategorie": "Praxis-Werkzeugkasten",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Praxis-Werkzeugkasten.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop Praxis Werkzeugkasten",
-    "unterKategorie": "Praxis-Werkzeugkasten",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 2.4,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Praxis-Werkzeugkasten.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Reel Drehbuch 7 Stufen",
-    "unterKategorie": "Reel-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-7-Stufen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Reel Drehbuch Alle Serien",
-    "unterKategorie": "Reel-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1.5,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Alle-Serien.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Reel Drehbuch Mentale Selbstverteidigung",
-    "unterKategorie": "Reel-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Mentale-Selbstverteidigung.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Reel Drehbuch Praxis",
-    "unterKategorie": "Reel-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Praxis.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Reel Drehbuch Vertiefungen",
-    "unterKategorie": "Reel-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Vertiefungen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Reel Drehbuch Wissenschaft",
-    "unterKategorie": "Reel-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Wissenschaft.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan Vertiefungen Kopf verstehen",
-    "unterKategorie": "Deinen Kopf verstehen",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Vertiefungen-Kopf-verstehen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook Vertiefungen Kopf verstehen",
-    "unterKategorie": "Deinen Kopf verstehen",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Vertiefungen-Kopf-verstehen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop Vertiefungen Kopf verstehen",
-    "unterKategorie": "Deinen Kopf verstehen",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 2.4,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Vertiefungen-Kopf-verstehen.pptx"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Video Drehbuch Ablesen",
-    "unterKategorie": "Video-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1.4,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Ablesen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Video Drehbuch Intro",
-    "unterKategorie": "Video-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Intro.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Video Drehbuch Stichpunkt",
-    "unterKategorie": "Video-Drehbücher",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1.5,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Stichpunkt.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Moderationsplan Wissensreise Dein Gehirn verstehen",
-    "unterKategorie": "Wissensdatenbank",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 1,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Wissensreise-Dein-Gehirn-verstehen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workbook Wissensreise Dein Gehirn verstehen",
-    "unterKategorie": "Wissensdatenbank",
-    "kind": "file",
-    "format": "PDF",
-    "sizeMB": 0.7,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Wissensreise-Dein-Gehirn-verstehen.pdf"
-  },
-  {
-    "kategorie": "workshop",
-    "titel": "Workshop Wissensreise Dein Gehirn verstehen",
-    "unterKategorie": "Wissensdatenbank",
-    "kind": "file",
-    "format": "PPTX",
-    "sizeMB": 0.9,
-    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
+    ],
+    "caption": "Ziele sind Punkte auf einer Landkarte. Werte sind die Himmelsrichtung – sie geben jedem Schritt Bedeutung. Und ein Wert wird erst real, wenn er in einer kleinen konkreten Handlung sichtbar wird: aus „Gesundheit ist mir wichtig\" wird ein Spaziergang. #werte #sinn #ziele #mentalegesundheit #psychologie #selbstreflexion #innerearbeit #werdemeisterdeinergedanken"
   },
   {
     "kategorie": "carousel",
@@ -4613,225 +4275,363 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
   },
   {
-    "kategorie": "carousel",
-    "titel": "das wissen",
-    "unterKategorie": "Mitgliederbereich",
-    "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 0.8,
-    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen/slide-07.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__das-wissen.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Wir konsumieren mehr Wissen über den Geist als je zuvor – und fühlen uns selten klarer. Deshalb steckt hinter den 7 Stufen echte Substanz: eine Wissensdatenbank mit 27 Kapiteln, 31 Vertiefungen zu den psychologischen Mechanismen dahinter, jeweils mit Übungen und Reflexionsfragen. Dazu das Arbeitsheft aller Stufen als PDF. Verstehen statt nur konsumieren. Link in Bio. #werdemeisterdeinergedanken #psychologie #metakognition #achtsamkeit #bewusstsein #selbsterkenntnis #mentaleklarheit #wissen"
+    "kategorie": "workshop",
+    "titel": "Moderationsplan 7 Stufen",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-7-Stufen.pdf"
   },
   {
-    "kategorie": "carousel",
-    "titel": "dein journal",
-    "unterKategorie": "Mitgliederbereich",
-    "kind": "carousel",
-    "slides": 7,
+    "kategorie": "workshop",
+    "titel": "Workbook 7 Stufen",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-7-Stufen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop 7 Stufen",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 2.2,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-7-Stufen.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Praesentationsvorlage",
+    "unterKategorie": "Universell",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 1.8,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Praesentationsvorlage.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Anleitung Stripe Mitgliedschaft",
+    "unterKategorie": "Anleitungen",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Anleitung-Stripe-Mitgliedschaft.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Bewusstseinstest Wo stehst du",
+    "unterKategorie": "Bewusstseinstest & Profil",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Bewusstseinstest-Wo-stehst-du.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Bewusstseinstest Wo stehst du",
+    "unterKategorie": "Bewusstseinstest & Profil",
+    "kind": "file",
+    "format": "PDF",
     "sizeMB": 0.7,
-    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal/slide-07.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-journal.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Manche Gedanken brauchen einfach einen Ort, an dem sie landen dürfen – ohne Publikum und ohne Bewertung. Genau dafür ist dein Journal im Mitgliederbereich da: privat, nur für dich. Dein Gedankenprofil macht sichtbar, was dich bewegt und wie du dich über die Zeit entwickelst. Kein Feed, keine Likes – nur ein ehrlicher Blick nach innen. Link in Bio. #werdemeisterdeinergedanken #journaling #selbstreflexion #achtsamkeit #innerearbeit #bewusstsein #tagebuch #mentalegesundheit"
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Bewusstseinstest-Wo-stehst-du.pdf"
   },
   {
-    "kategorie": "carousel",
-    "titel": "dein raum",
-    "unterKategorie": "Mitgliederbereich",
-    "kind": "carousel",
-    "slides": 7,
+    "kategorie": "workshop",
+    "titel": "Workshop Bewusstseinstest Wo stehst du",
+    "unterKategorie": "Bewusstseinstest & Profil",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Bewusstseinstest-Wo-stehst-du.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Deinen Kopf durchdenken",
+    "unterKategorie": "Blog & Deep-Dives",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Deinen-Kopf-durchdenken.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Deinen Kopf durchdenken",
+    "unterKategorie": "Blog & Deep-Dives",
+    "kind": "file",
+    "format": "PDF",
     "sizeMB": 0.7,
-    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum/slide-07.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__dein-raum.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Der Mitgliederbereich ist kein weiterer Online-Kurs, den du „durchklickst\". Es ist ein ruhiger, geschützter Raum für deine Reise durch die 7 Stufen – in deinem Tempo, mit deinem sichtbaren Fortschritt, geführten Meditationen und einem Journal, das nur du siehst. Beginne dort, wo du gerade wirklich stehst. Der Einstieg ist der kostenlose Bewusstseinstest. Link in Bio. #werdemeisterdeinergedanken #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #innereruhe #selbsterkenntnis #meditation #mindset"
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Deinen-Kopf-durchdenken.pdf"
   },
   {
-    "kategorie": "carousel",
-    "titel": "der einstieg",
-    "unterKategorie": "Mitgliederbereich",
-    "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 0.8,
-    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg/slide-07.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-einstieg.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Wo stehst du gerade – wirklich? 21 Fragen, 5 Minuten, ein ehrlicher Blick. Die meisten von uns leben im Autopilot, ohne es zu bemerken. Der Bewusstseinstest zeigt dir ohne Bewertung, auf welcher der 7 Stufen du stehst – und dein Ergebnis wartet danach direkt in deinem persönlichen Bereich. Kostenlos und ohne Anmeldung. Link in Bio. #werdemeisterdeinergedanken #bewusstseinstest #achtsamkeit #selbstreflexion #autopilot #bewusstsein #persönlichkeitsentwicklung #klarheit"
+    "kategorie": "workshop",
+    "titel": "Workshop Deinen Kopf durchdenken",
+    "unterKategorie": "Blog & Deep-Dives",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Deinen-Kopf-durchdenken.pptx"
   },
   {
-    "kategorie": "carousel",
-    "titel": "der weg",
-    "unterKategorie": "Mitgliederbereich",
-    "kind": "carousel",
-    "slides": 7,
+    "kategorie": "workshop",
+    "titel": "Carousel Texte 7 Stufen",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-7-Stufen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Alle Serien",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.7,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Alle-Serien.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Mentale Selbstverteidigung",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.2,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Mentale-Selbstverteidigung.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Praxis",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Praxis.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Carousel Texte Vertiefungen",
+    "unterKategorie": "Carousel-Texte",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Vertiefungen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Journal und Impulse Die Kraft der Reflexion",
+    "unterKategorie": "Journal & Impulse",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Journal-und-Impulse-Die-Kraft-der-Reflexion.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Journal und Impulse Die Kraft der Reflexion",
+    "unterKategorie": "Journal & Impulse",
+    "kind": "file",
+    "format": "PDF",
     "sizeMB": 0.7,
-    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg/slide-07.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__der-weg.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Sieben Stufen, ein Weg: vom Autopilot, in dem du gelebt wirst, bis zur Meisterschaft, in der du bewusst gestaltest. Im Mitgliederbereich gehst du sie Stufe für Stufe – in deinem Tempo, mit sichtbarem Fortschritt und passenden Übungen zu jeder Stufe. Es ist kein Ziel zum Abhaken, sondern eine Art zu leben. Wo startest du? Finde es im Bewusstseinstest heraus. Link in Bio. #werdemeisterdeinergedanken #die7stufen #bewusstsein #meisterschaft #achtsamkeit #persönlichkeitsentwicklung #bewusstseinsentwicklung #innerearbeit"
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Journal-und-Impulse-Die-Kraft-der-Reflexion.pdf"
   },
   {
-    "kategorie": "carousel",
-    "titel": "zur ruhe kommen",
-    "unterKategorie": "Mitgliederbereich",
-    "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 0.8,
-    "thumb": "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen/slide-07.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/mitgliederbereich__zur-ruhe-kommen.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Zwischen Autopilot und vollem Alltag brauchst du keinen weiteren Ratschlag – sondern einen Moment Ruhe. Im Mitgliederbereich warten 15 geführte Meditationen und Praxis-Einheiten zum Anhören, abgestimmt auf die 7 Stufen. Ob drei oder fünfzehn Minuten: du wählst, was gerade passt. Denn Praxis ist der Ort, an dem aus Verstehen ein Erleben wird. Link in Bio. #werdemeisterdeinergedanken #meditation #achtsamkeit #geführtemeditation #innereruhe #bewusstsein #entspannung #selbstfürsorge"
+    "kategorie": "workshop",
+    "titel": "Workshop Journal und Impulse Die Kraft der Reflexion",
+    "unterKategorie": "Journal & Impulse",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Journal-und-Impulse-Die-Kraft-der-Reflexion.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Mentale Selbstverteidigung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Mentale-Selbstverteidigung.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Mentale Selbstverteidigung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Mentale-Selbstverteidigung.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Mentale Selbstverteidigung",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 2.4,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Mentale-Selbstverteidigung.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Praxis Werkzeugkasten",
+    "unterKategorie": "Praxis-Werkzeugkasten",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Praxis-Werkzeugkasten.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Praxis Werkzeugkasten",
+    "unterKategorie": "Praxis-Werkzeugkasten",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Praxis-Werkzeugkasten.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Praxis Werkzeugkasten",
+    "unterKategorie": "Praxis-Werkzeugkasten",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 2.4,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Praxis-Werkzeugkasten.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch 7 Stufen",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-7-Stufen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Alle Serien",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.5,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Alle-Serien.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Mentale Selbstverteidigung",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Mentale-Selbstverteidigung.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Praxis",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Praxis.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Vertiefungen",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Vertiefungen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Reel Drehbuch Wissenschaft",
+    "unterKategorie": "Reel-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Wissenschaft.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Vertiefungen Kopf verstehen",
+    "unterKategorie": "Deinen Kopf verstehen",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Vertiefungen-Kopf-verstehen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Vertiefungen Kopf verstehen",
+    "unterKategorie": "Deinen Kopf verstehen",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Vertiefungen-Kopf-verstehen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Vertiefungen Kopf verstehen",
+    "unterKategorie": "Deinen Kopf verstehen",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 2.4,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Vertiefungen-Kopf-verstehen.pptx"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Video Drehbuch Ablesen",
+    "unterKategorie": "Video-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.4,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Ablesen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Video Drehbuch Intro",
+    "unterKategorie": "Video-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Intro.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Video Drehbuch Stichpunkt",
+    "unterKategorie": "Video-Drehbücher",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1.5,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Stichpunkt.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Moderationsplan Wissensreise Dein Gehirn verstehen",
+    "unterKategorie": "Wissensdatenbank",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 1,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Moderationsplan-Wissensreise-Dein-Gehirn-verstehen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workbook Wissensreise Dein Gehirn verstehen",
+    "unterKategorie": "Wissensdatenbank",
+    "kind": "file",
+    "format": "PDF",
+    "sizeMB": 0.7,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workbook-Wissensreise-Dein-Gehirn-verstehen.pdf"
+  },
+  {
+    "kategorie": "workshop",
+    "titel": "Workshop Wissensreise Dein Gehirn verstehen",
+    "unterKategorie": "Wissensdatenbank",
+    "kind": "file",
+    "format": "PPTX",
+    "sizeMB": 0.9,
+    "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
   }
 ];
