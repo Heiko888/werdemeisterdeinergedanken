@@ -6,6 +6,8 @@
 
 Rund anderthalb Kilogramm formbares Gewebe, eingebettet in Flüssigkeit und geschützt vom Schädelknochen – das ist das Organ, das dich zu dem macht, was du bist. Auf den ersten Blick wirkt das Gehirn wie eine gefaltete Masse aus grauem Gewebe. Tatsächlich ist es die komplexeste bekannte Struktur des Universums: ein Netzwerk aus schätzungsweise 86 Milliarden Nervenzellen (Neuronen), die über Billionen von Kontaktstellen (Synapsen) miteinander kommunizieren.
 
+![Das Gehirn als Netzwerk: Überblick über präfrontalen Kortex, limbisches System (Amygdala, Hippocampus), Basalganglien, Thalamus, Balken, Kleinhirn, Hirnstamm, Hypothalamus und Cingulum sowie graue und weiße Substanz.](/wissensdatenbank/das-gehirn-ein-netzwerk.webp)
+
 Wer die Anatomie des Gehirns verstehen will, sollte eine Grundeinsicht vorwegnehmen: Die klassische Vorstellung, jedes Areal sei für genau eine Aufgabe zuständig – eine Art moderne Phrenologie – ist überholt. Zwar gibt es funktionale Schwerpunkte (etwa den visuellen Kortex im Hinterkopf), doch die meisten kognitiven Leistungen entstehen in verteilten Netzwerken. Diese Doppelnatur – lokale Spezialisierung *und* globale Vernetzung – ist der rote Faden dieses Kapitels.
 
 Warum ist das für dich wichtig? Weil jede Gedankenarbeit, jede Emotion, jede Entscheidung ein biologisches Substrat hat. Wer seine Gedanken meistern will, gewinnt Halt, wenn er weiß, welche Strukturen bei Angst, Impulskontrolle oder Gewohnheitsbildung im Spiel sind – ohne dabei in einen platten Biologismus zu verfallen.
