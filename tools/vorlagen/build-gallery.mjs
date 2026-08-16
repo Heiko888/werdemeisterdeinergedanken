@@ -102,8 +102,9 @@ const assets = [];
 async function buildSocial() {
   const src = join(ROOT, "docs", "marketing");
   const files = collect(src, [".png"]).filter(
-    // @2x-Varianten überspringen – die 1x-Version reicht als Download
-    (f) => !/@2x\./i.test(f),
+    // @2x-Varianten überspringen – die 1x-Version reicht als Download.
+    // Story-Overlays haben eine eigene Aufbaufunktion (buildStoryOverlays).
+    (f) => !/@2x\./i.test(f) && !f.includes("/story-overlays/"),
   );
   const dir = join(OUT, "social");
   ensureDir(dir);
@@ -295,6 +296,109 @@ async function buildCarousels() {
   return count;
 }
 
+// --- 3b. Story-Overlays „Persönliche Geschichten" (Bild-Carousel-Vorlage) ---
+// Pro Story ein Eintrag: Vorschau je Format (Hintergrund + Overlay komponiert),
+// Download-ZIP mit allen Formaten (transparente Overlays + Hintergründe) für
+// den Canva-Workflow. Wird als kategorie:"carousel" gelistet (Tab „Carousels").
+
+async function buildStoryOverlays() {
+  const src = join(ROOT, "docs", "marketing", "story-overlays");
+  if (!existsSync(src)) return 0;
+
+  const FMT = [
+    { key: "4x5",  label: "4:5", w: 1080, h: 1350 },
+    { key: "1x1",  label: "1:1", w: 1080, h: 1080 },
+    { key: "9x16", label: "9:16", w: 1080, h: 1920 },
+  ].filter((f) => existsSync(join(src, f.key)));
+  if (FMT.length === 0) return 0;
+
+  const dir = join(OUT, "story");
+  ensureDir(dir);
+  const tmpRoot = join(OUT, ".tmp-story");
+
+  // Overlay-Dateien im ersten Format bestimmen die Story-Liste.
+  const base = FMT[0];
+  const overlays = collect(join(src, base.key), [".png"]).filter(
+    (f) => /overlay-\d+/.test(basename(f)),
+  );
+
+  let count = 0;
+  for (const ovBase of overlays) {
+    const file = basename(ovBase); // overlay-01-slug.png
+    const m = file.match(/^overlay-(\d+)-(.+)\.png$/);
+    if (!m) continue;
+    const nr = m[1];
+    const slug = m[2];
+    const id = `story-${nr}-${slug}`;
+
+    // Vorschau je Format: Hintergrund + Overlay komponieren → webp.
+    const slideDir = join(dir, id);
+    ensureDir(slideDir);
+    const slidePaths = [];
+    const tmp = join(tmpRoot, id);
+    ensureDir(tmp);
+
+    for (const F of FMT) {
+      const bg = join(src, F.key, "_hintergrund.png");
+      const ov = join(src, F.key, file);
+      if (!existsSync(bg) || !existsSync(ov)) continue;
+      // sharp wendet resize intern VOR composite an → beide Ebenen vorab auf
+      // Vorschaubreite bringen, dann compositen (sonst Dimensions-Fehler).
+      const bgBuf = await sharp(bg).resize({ width: THUMB_WIDTH, withoutEnlargement: true }).toBuffer();
+      const ovBuf = await sharp(ov).resize({ width: THUMB_WIDTH, withoutEnlargement: true }).toBuffer();
+      const preview = await sharp(bgBuf)
+        .composite([{ input: ovBuf }])
+        .webp({ quality: 78 })
+        .toBuffer();
+      const name = `preview-${F.key}.webp`;
+      writeFileSync(join(slideDir, name), preview);
+      slidePaths.push(`/admin/vorlagen/datei/story/${id}/${name}`);
+      // Original-PNGs (transparent + Hintergrund) fürs ZIP ablegen.
+      cpSync(ov, join(tmp, `overlay-${F.key}.png`));
+      cpSync(bg, join(tmp, `hintergrund-${F.key}.png`));
+    }
+
+    // Kurzanleitung ins ZIP.
+    writeFileSync(
+      join(tmp, "SO-GEHTS.txt"),
+      [
+        "Persönliche Geschichten – Bild-Carousel-Vorlage",
+        "",
+        "In Canva 3 Ebenen stapeln (von hinten nach vorne):",
+        "  1) hintergrund-<format>.png   (ganz nach hinten)",
+        "  2) dein freigestelltes Foto   (Mitte, rechts platzieren)",
+        "  3) overlay-<format>.png       (ganz nach vorne)",
+        "",
+        "Der dunkle Verlauf (Scrim) im Overlay hält den Text lesbar.",
+        "Formate: 4:5 (Feed), 1:1 (Feed), 9:16 (Story/Reel).",
+      ].join("\n"),
+    );
+
+    const zipName = `${id}.zip`;
+    const zipPath = join(dir, zipName);
+    if (existsSync(zipPath)) rmSync(zipPath);
+    const res = spawnSync("zip", ["-r", "-q", zipPath, "."], { cwd: tmp, stdio: "inherit" });
+    if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
+
+    assets.push({
+      kategorie: "carousel",
+      titel: prettifyName(slug),
+      unterKategorie: "Persönliche Geschichten",
+      kind: "carousel",
+      slides: slidePaths.length,
+      sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
+      thumb: slidePaths[0],
+      slidePaths,
+      href: `/admin/vorlagen/datei/story/${zipName}`,
+      formate: FMT.map((f) => ({ label: f.label, w: f.w, h: f.h })),
+    });
+    count++;
+  }
+
+  if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
+  return count;
+}
+
 // --- 4. Workshop-Dateien (Download, keine Vorschau) -------------------------
 
 function buildWorkshop() {
@@ -360,6 +464,8 @@ async function main() {
   console.log(`✓ Reel-Cover (9x16): ${reels}`);
   const carousels = await buildCarousels();
   console.log(`✓ Carousels (Studio, als ZIP): ${carousels}`);
+  const stories = await buildStoryOverlays();
+  console.log(`✓ Story-Overlays (Persönliche Geschichten, als ZIP): ${stories}`);
   const marketing = await buildMarketingCarousels({ OUT, assets });
   console.log(`✓ Carousels (Marketing/Funnel, als ZIP): ${marketing}`);
   const workshop = buildWorkshop();

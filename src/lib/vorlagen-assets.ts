@@ -244,7 +244,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Profilbild Rund",
+    "titel": "Profilbild 1080",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
@@ -257,11 +257,50 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "YouTube Banner",
-    "unterKategorie": "YouTube",
+    "titel": "Profilbild Rund",
+    "unterKategorie": "Profil & Kanal",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
     "href": "/admin/vorlagen/datei/social/social-018.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild rund 1080",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
+    "href": "/admin/vorlagen/datei/social/social-019.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild rund 500",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
+    "href": "/admin/vorlagen/datei/social/social-020.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 500,
+      "h": 500
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "YouTube Banner",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
+    "href": "/admin/vorlagen/datei/social/social-021.webp",
     "masse": {
       "label": "16:9",
       "w": 2000,
@@ -273,8 +312,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 01",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
-    "href": "/admin/vorlagen/datei/social/social-019.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
+    "href": "/admin/vorlagen/datei/social/social-022.webp",
     "masse": {
       "label": "16:9",
       "w": 1280,
@@ -286,8 +325,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 02",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
-    "href": "/admin/vorlagen/datei/social/social-020.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
+    "href": "/admin/vorlagen/datei/social/social-023.webp",
     "masse": {
       "label": "16:9",
       "w": 1280,
@@ -299,8 +338,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail vorlage",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
-    "href": "/admin/vorlagen/datei/social/social-021.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
+    "href": "/admin/vorlagen/datei/social/social-024.webp",
     "masse": {
       "label": "16:9",
       "w": 1280,
@@ -310,45 +349,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "Zitat 01",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
-    "href": "/admin/vorlagen/datei/social/social-022.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 02",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
-    "href": "/admin/vorlagen/datei/social/social-023.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 03",
-    "unterKategorie": "Zitate & Fakten",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
-    "href": "/admin/vorlagen/datei/social/social-024.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
@@ -361,7 +361,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
@@ -374,7 +374,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
@@ -387,7 +387,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
@@ -400,7 +400,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
@@ -413,7 +413,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
@@ -426,7 +426,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
+    "titel": "Zitat 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
@@ -439,7 +439,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
+    "titel": "Zitat 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
@@ -452,7 +452,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
+    "titel": "Zitat 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
@@ -465,7 +465,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
+    "titel": "Zitat 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
@@ -478,7 +478,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
+    "titel": "Zitat 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
@@ -491,46 +491,46 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
+    "titel": "Zitat 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
     "href": "/admin/vorlagen/datei/social/social-036.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
+    "titel": "Zitat 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
     "href": "/admin/vorlagen/datei/social/social-037.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
+    "titel": "Zitat 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
     "href": "/admin/vorlagen/datei/social/social-038.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
+    "titel": "Zitat 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
@@ -543,7 +543,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
@@ -556,7 +556,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
@@ -569,7 +569,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
@@ -582,7 +582,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
@@ -595,7 +595,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
@@ -608,7 +608,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
+    "titel": "Zitat 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
@@ -621,7 +621,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
+    "titel": "Zitat 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
@@ -634,7 +634,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
+    "titel": "Zitat 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
@@ -647,7 +647,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
+    "titel": "Zitat 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
@@ -660,7 +660,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
+    "titel": "Zitat 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
@@ -673,46 +673,46 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
+    "titel": "Zitat 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
     "href": "/admin/vorlagen/datei/social/social-050.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
+    "titel": "Zitat 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
     "href": "/admin/vorlagen/datei/social/social-051.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
+    "titel": "Zitat 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
     "href": "/admin/vorlagen/datei/social/social-052.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
+    "titel": "Zitat 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
@@ -725,7 +725,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
+    "titel": "Zitat 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
@@ -738,7 +738,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
+    "titel": "Zitat 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
@@ -751,7 +751,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
+    "titel": "Zitat 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
@@ -764,7 +764,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
+    "titel": "Zitat 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
@@ -777,7 +777,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
+    "titel": "Zitat 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
@@ -790,7 +790,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
+    "titel": "Zitat 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
@@ -803,7 +803,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
+    "titel": "Zitat 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
@@ -816,7 +816,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
+    "titel": "Zitat 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
@@ -829,7 +829,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
+    "titel": "Zitat 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
@@ -842,7 +842,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
+    "titel": "Zitat 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
@@ -855,46 +855,46 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Zitat 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
     "href": "/admin/vorlagen/datei/social/social-064.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Zitat 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
     "href": "/admin/vorlagen/datei/social/social-065.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Zitat 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
     "href": "/admin/vorlagen/datei/social/social-066.webp",
     "masse": {
-      "label": "1:1",
+      "label": "9:16",
       "w": 1080,
-      "h": 1080
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
@@ -907,7 +907,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Studienfakt 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
@@ -920,7 +920,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
@@ -933,7 +933,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
+    "titel": "Studienfakt 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
@@ -946,7 +946,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
+    "titel": "Studienfakt 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
@@ -959,7 +959,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
+    "titel": "Studienfakt 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
@@ -972,7 +972,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
+    "titel": "Studienfakt 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-073.webp",
@@ -985,7 +985,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
+    "titel": "Studienfakt 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-074.webp",
@@ -998,7 +998,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
+    "titel": "Studienfakt 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-075.webp",
@@ -1011,7 +1011,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
+    "titel": "Studienfakt 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-076.webp",
@@ -1024,7 +1024,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
+    "titel": "Studienfakt 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
@@ -1037,46 +1037,46 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Studienfakt 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
     "href": "/admin/vorlagen/datei/social/social-078.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Studienfakt 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
     "href": "/admin/vorlagen/datei/social/social-079.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Studienfakt 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
     "href": "/admin/vorlagen/datei/social/social-080.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
@@ -1089,7 +1089,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Studienfakt 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
@@ -1102,7 +1102,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
@@ -1115,7 +1115,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
+    "titel": "Studienfakt 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
@@ -1128,7 +1128,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
+    "titel": "Studienfakt 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
@@ -1141,7 +1141,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
+    "titel": "Studienfakt 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
@@ -1154,7 +1154,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
+    "titel": "Studienfakt 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
@@ -1167,7 +1167,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
+    "titel": "Studienfakt 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
@@ -1180,7 +1180,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
+    "titel": "Studienfakt 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
@@ -1193,7 +1193,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
+    "titel": "Studienfakt 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
@@ -1206,7 +1206,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
+    "titel": "Studienfakt 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
@@ -1219,46 +1219,46 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
+    "titel": "Studienfakt 12",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
     "href": "/admin/vorlagen/datei/social/social-092.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
+    "titel": "Studienfakt 13",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
     "href": "/admin/vorlagen/datei/social/social-093.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
+    "titel": "Studienfakt 14",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
     "href": "/admin/vorlagen/datei/social/social-094.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
+    "titel": "Studienfakt 01",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
@@ -1271,7 +1271,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
+    "titel": "Studienfakt 02",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
@@ -1284,7 +1284,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
+    "titel": "Studienfakt 03",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
@@ -1297,7 +1297,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
+    "titel": "Studienfakt 04",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
@@ -1310,7 +1310,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
+    "titel": "Studienfakt 05",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
@@ -1323,7 +1323,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
+    "titel": "Studienfakt 06",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
@@ -1336,7 +1336,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
+    "titel": "Studienfakt 07",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-101.webp",
@@ -1349,7 +1349,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
+    "titel": "Studienfakt 08",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-102.webp",
@@ -1362,7 +1362,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
+    "titel": "Studienfakt 09",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-103.webp",
@@ -1375,7 +1375,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
+    "titel": "Studienfakt 10",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-104.webp",
@@ -1388,11 +1388,50 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
+    "titel": "Studienfakt 11",
     "unterKategorie": "Zitate & Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-105.webp",
     "href": "/admin/vorlagen/datei/social/social-105.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-106.webp",
+    "href": "/admin/vorlagen/datei/social/social-106.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-107.webp",
+    "href": "/admin/vorlagen/datei/social/social-107.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14",
+    "unterKategorie": "Zitate & Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-108.webp",
+    "href": "/admin/vorlagen/datei/social/social-108.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -4084,6 +4123,198 @@ export const vorlagenAssets: VorlagenAsset[] = [
       }
     ],
     "caption": "Ziele sind Punkte auf einer Landkarte. Werte sind die Himmelsrichtung – sie geben jedem Schritt Bedeutung. Und ein Wert wird erst real, wenn er in einer kleinen konkreten Handlung sichtbar wird: aus „Gesundheit ist mir wichtig\" wird ein Spaziergang. #werte #sinn #ziele #mentalegesundheit #psychologie #selbstreflexion #innerearbeit #werdemeisterdeinergedanken"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ja ich meine dich",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.7,
+    "thumb": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "aufgehoert zu funktionieren",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.8,
+    "thumb": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "nie faul",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.8,
+    "thumb": "/admin/vorlagen/datei/story/story-03-nie-faul/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-03-nie-faul/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-03-nie-faul.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "lautester kritiker",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.7,
+    "thumb": "/admin/vorlagen/datei/story/story-04-lautester-kritiker/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-04-lautester-kritiker.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "nicht meine gedanken",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.7,
+    "thumb": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "vom gruebeln zur stille",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.7,
+    "thumb": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
