@@ -40,12 +40,13 @@ Die letzte Slide bringt einen Merksatz und den Handlungsaufruf. Jede Serie hat e
 **Ziel:** Die 7 Stufen als klaren, gangbaren Weg zeigen – nachvollziehbar im Mitgliederbereich.
 
 **Slide 1 · Cover:** „7 Stufen. Ein Weg." — Vom Autopilot zur Meisterschaft.
-**Slide 2:** 01 Autopilot – du wirst gelebt. 02 Erwachen – du bemerkst es. Der Weg beginnt mit einem leisen Bemerken.
-**Slide 3:** 03 Selbstbeobachtung – du siehst dir zu. 04 Emotionale Reifung – du lässt los.
-**Slide 4:** 05 Schöpferkraft – du erschaffst bewusst. 06 Innere Ausrichtung – Kopf, Herz und Handeln.
-**Slide 5:** 07 Meisterschaft – du gestaltest. Kein Ziel zum Abhaken, sondern eine Art zu leben.
-**Slide 6:** Im Mitgliederbereich gehst du Stufe für Stufe – mit sichtbarem Fortschritt und passenden Übungen.
-**Slide 7 · CTA:** Starte deinen Weg durch die 7 Stufen. Mach den Bewusstseinstest. Link in Bio.
+**Slide 2:** 01 Autopilot – du wirst gelebt, ohne es zu merken. Hier beginnt jeder Weg: im unbemerkten Automatikmodus.
+**Slide 3:** 02 Erwachen – du bemerkst es zum ersten Mal. Der Weg beginnt mit einem leisen, wachen Innehalten.
+**Slide 4:** 03 Selbstbeobachtung – du siehst dir zu. 04 Emotionale Reifung – du lässt los.
+**Slide 5:** 05 Schöpferkraft – du erschaffst bewusst. 06 Innere Ausrichtung – Kopf, Herz und Handeln.
+**Slide 6:** 07 Meisterschaft – du gestaltest. Kein Ziel zum Abhaken, sondern eine Art zu leben.
+**Slide 7:** Im Mitgliederbereich gehst du Stufe für Stufe – mit sichtbarem Fortschritt und passenden Übungen.
+**Slide 8 · CTA:** Starte deinen Weg durch die 7 Stufen. Mach den Bewusstseinstest. Link in Bio.
 **Caption:** Sieben Stufen, ein Weg: vom Autopilot, in dem du gelebt wirst, bis zur Meisterschaft, in der du bewusst gestaltest. Im Mitgliederbereich gehst du sie Stufe für Stufe – in deinem Tempo, mit sichtbarem Fortschritt und passenden Übungen zu jeder Stufe. Es ist kein Ziel zum Abhaken, sondern eine Art zu leben. Wo startest du? Finde es im Bewusstseinstest heraus. Link in Bio. #werdemeisterdeinergedanken #die7stufen #bewusstsein #meisterschaft #achtsamkeit #persönlichkeitsentwicklung #bewusstseinsentwicklung #innerearbeit
 
 ---
