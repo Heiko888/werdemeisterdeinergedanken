@@ -199,9 +199,21 @@ export function backfillFormate(OUT, assets) {
   return assets;
 }
 
-/** Seitenverhältnis-Label aus Pixelmaßen (1080×1350 → „4:5"). Krumme
- *  Verhältnisse (Teil > 20) liefern "" – dann zählen nur die Pixelmaße. */
+/** Seitenverhältnis-Label aus Pixelmaßen (1080×1350 → „4:5").
+ *  Bekannte Zielformate werden mit 2 % Toleranz „eingeschnappt", damit eine
+ *  ±1px-Abweichung (z. B. 1081×1350) nicht zu einem leeren oder unsinnigen
+ *  Label führt. Nur wirklich krumme Verhältnisse (Teil > 20) liefern "" –
+ *  dann zählen im Dashboard nur die Pixelmaße. */
 export function ratioLabel(w, h) {
+  if (!w || !h) return "";
+  const r = w / h;
+  const KNOWN = [
+    [1, 1], [4, 5], [5, 4], [9, 16], [16, 9],
+    [2, 3], [3, 2], [3, 4], [4, 3], [4, 1],
+  ];
+  for (const [rw, rh] of KNOWN) {
+    if (Math.abs(r - rw / rh) / (rw / rh) <= 0.02) return `${rw}:${rh}`;
+  }
   const gcd = (a, b) => (b ? gcd(b, a % b) : a);
   const d = gcd(w, h) || 1;
   const rw = w / d, rh = h / d;
@@ -281,7 +293,8 @@ export async function buildMarketingCarousels({ OUT, assets }) {
       const name = `slide-${String(n).padStart(2, "0")}.webp`;
       await sharp(slide)
         .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
-        .webp({ quality: 76 })
+        .sharpen({ sigma: 0.7 })
+        .webp({ quality: 82, effort: 6, smartSubsample: true })
         .toFile(join(slideDir, name));
       slidePaths.push(`/admin/vorlagen/datei/carousels/${id}/${name}`);
     }
@@ -296,7 +309,7 @@ export async function buildMarketingCarousels({ OUT, assets }) {
         m++;
         await sharp(slide)
           .resize({ width: 1080, withoutEnlargement: true })
-          .webp({ quality: 80 })
+          .webp({ quality: 88, effort: 6, smartSubsample: true })
           .toFile(join(fdir, `slide-${String(m).padStart(2, "0")}.webp`));
       }
     }

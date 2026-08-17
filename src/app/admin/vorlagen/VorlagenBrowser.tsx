@@ -28,6 +28,23 @@ function groupBy<T>(items: T[], key: (t: T) => string): [string, T[]][] {
   return [...map.entries()];
 }
 
+// Reihenfolge, in der Formate innerhalb eines Kanals erscheinen sollen.
+const FORMAT_REIHENFOLGE = [
+  "1:1", "4:5", "9:16", "2:3", "3:2", "16:9", "5:4", "4:3", "3:4", "4:1",
+];
+function formatOf(a: VorlagenAsset): string {
+  return a.masse?.label || "?";
+}
+function sortFormate(
+  groups: [string, VorlagenAsset[]][],
+): [string, VorlagenAsset[]][] {
+  const idx = (f: string) => {
+    const i = FORMAT_REIHENFOLGE.indexOf(f);
+    return i === -1 ? 99 : i;
+  };
+  return [...groups].sort((a, b) => idx(a[0]) - idx(b[0]));
+}
+
 // Dokument-Typ eines Workshop-Materials aus dem Dateinamen ableiten.
 const WORKSHOP_TYP_ORDER = [
   "Präsentation",
@@ -463,11 +480,43 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
             <h2 className="mt-1 font-display text-2xl font-medium text-ink">
               Banner, Zitate & Fakten zum Posten
             </h2>
-            <div className="mt-6 grid grid-cols-1 items-start gap-4 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-              {gefiltert.social.map((a) => (
-                <BildKarte key={a.href} a={a} />
-              ))}
-            </div>
+            {groupBy(gefiltert.social, (a) => a.unterKategorie).map(
+              ([kanal, kanalItems]) => {
+                const formate = sortFormate(groupBy(kanalItems, formatOf));
+                // Format-Überschriften nur bei Kanälen mit vielen, gemischten
+                // Formaten (v. a. Zitate & Studien-Fakten). Kleine Kanäle
+                // bleiben ruhig – die Karten sind dort trotzdem formatsortiert.
+                const zeigeFormate =
+                  formate.length > 1 && kanalItems.length >= 12;
+                return (
+                  <div key={kanal} className="mt-8">
+                    <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
+                      {kanal}{" "}
+                      <span className="text-ink-muted/70">
+                        ({kanalItems.length})
+                      </span>
+                    </h3>
+                    {formate.map(([fmt, items]) => (
+                      <div key={fmt} className="mt-4">
+                        {zeigeFormate && (
+                          <h4 className="mb-2 text-[0.72rem] font-semibold uppercase tracking-wide text-accent">
+                            {fmt === "?" ? "Weitere Formate" : `Format ${fmt}`}{" "}
+                            <span className="font-normal text-ink-muted/70">
+                              ({items.length})
+                            </span>
+                          </h4>
+                        )}
+                        <div className="grid grid-cols-1 items-start gap-4 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+                          {items.map((a) => (
+                            <BildKarte key={a.href} a={a} />
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                );
+              },
+            )}
           </Container>
         </section>
       )}

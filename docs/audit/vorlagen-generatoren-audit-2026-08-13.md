@@ -465,5 +465,23 @@ Key ausgeblendet, Ergebnis in Supabase `gedanken_readings`).
 | **P4** | Falls gewünscht: Canva-Brand-Templates mit Datensatz anlegen (Voraussetzung für Auto-Serien) | Canva (kein Code) | mittel |
 | **P4** | GA4-ID nicht als Code-Default, sondern nur per Env; YouTube-Video-IDs zentralisieren | `src/lib/site.ts` u. a. | klein |
 
+### Umsetzungsstand
+
+**✅ P1/P2 umgesetzt in diesem Branch:**
+- `tools/vorlagen/build-gallery.mjs` (`buildSocial`): Format aus dem Unterordner ableiten, **Zitate**
+  und **Studien-Fakten** in getrennte Unterkategorien, Format im Titel (`Zitat 01 · 4:5`).
+- `src/app/admin/vorlagen/VorlagenBrowser.tsx`: Social-Grafiken nach **Kanal + Format** gruppiert
+  (eigene Format-Überschriften bei großen, gemischten Kanälen) — **wirkt sofort** auf dem bestehenden
+  Katalog über `masse.label`, auch ohne Neu-Build.
+- WebP-Qualität für textlastige Grafiken angehoben (Social-Voll 82→90, Reel-Voll 80→86,
+  Carousel/Marketing-ZIP 80→88), Previews/Thumbs nachgeschärft (`.sharpen({sigma:0.7})`,
+  72/76→82, `smartSubsample:true`, `effort:6`), Reel-Thumb 420→512 px.
+- `marketing-carousels.mjs` `ratioLabel`: Toleranz-Snapping auf bekannte Formate (robust gegen
+  ±1px-Abweichungen).
+
+> **Wichtig:** Die Generator-Änderungen (Titel/Kategorie/WebP) greifen erst nach erneutem
+> `npm run vorlagen:galerie` (regeneriert `content/vorlagen/` + `src/lib/vorlagen-assets.ts`). Die
+> **Galerie-Gruppierung wirkt sofort**. Offen bleiben P3 (@2x-Rendering, Reel-Zusatzformate) und P4.
+
 > Nach jeder Änderung an den Generatoren: `npm run vorlagen:galerie` neu ausführen und
 > `content/vorlagen/` + `src/lib/vorlagen-assets.ts` neu committen.
