@@ -126,24 +126,51 @@ async function buildSocial() {
   let i = 0;
   for (const file of files) {
     const rel = file.slice(src.length + 1); // z. B. "zitate/1x1/WMDG-Zitat-01.png"
-    const kanalKey = rel.split("/")[0];
-    const kanal = KANAL[kanalKey] ?? prettifyName(kanalKey);
+    const parts = rel.split("/");
+    const kanalKey = parts[0];
+
+    // Format aus dem zweiten Pfadsegment ableiten – aber nur, wenn es wirklich
+    // ein Format-Ordner ist (z. B. "1x1", "4x5", "9x16", "studien-4x5").
+    // "youtube/thumbnails/…" o. Ä. sind KEINE Formate und bleiben unberührt.
+    const seg = parts.length > 2 ? parts[1] : "";
+    const istFormatSeg = /^(studien-)?\d+x\d+$/i.test(seg);
+    const istStudien = istFormatSeg && /^studien-/i.test(seg);
+    const fmtLabel = istFormatSeg
+      ? seg.replace(/^studien-/i, "").replace(/x/i, ":") // "4x5" → "4:5"
+      : "";
+
+    // Zitate und Studien-Fakten liegen im selben Kanal-Ordner, sind aber
+    // inhaltlich verschieden – hier sauber in zwei Unterkategorien trennen.
+    const kanal =
+      kanalKey === "zitate"
+        ? istStudien
+          ? "Studien-Fakten"
+          : "Zitate"
+        : (KANAL[kanalKey] ?? prettifyName(kanalKey));
+
     const id = `social-${String(++i).padStart(3, "0")}`;
 
     const fullName = `${id}.webp`;
     const thumbName = `${id}.webp`;
+    // Voll-Download: höhere Qualität + smartSubsample, damit farbige Textkanten
+    // (Akzentwörter im Marken-Grün) nicht ausfransen.
     await sharp(file)
       .resize({ width: FULL_WIDTH, withoutEnlargement: true })
-      .webp({ quality: 82 })
+      .webp({ quality: 90, effort: 6, smartSubsample: true })
       .toFile(join(dir, fullName));
+    // Thumbnail: nach dem Downscale leicht nachschärfen, sonst wirkt Text weich.
     await sharp(file)
       .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
-      .webp({ quality: 72 })
+      .sharpen({ sigma: 0.7 })
+      .webp({ quality: 82, effort: 6, smartSubsample: true })
       .toFile(join(THUMB_DIR, "social", thumbName));
 
+    // Format in den Titel aufnehmen, damit die drei Varianten je Zitat
+    // (1:1 / 4:5 / 9:16) unterscheidbar und einzeln durchsuchbar sind.
+    const basisTitel = prettifyName(basename(file));
     assets.push({
       kategorie: "social",
-      titel: prettifyName(basename(file)),
+      titel: fmtLabel ? `${basisTitel} · ${fmtLabel}` : basisTitel,
       unterKategorie: kanal,
       kind: "image",
       thumb: `/admin/vorlagen/datei/thumbs/social/${thumbName}`,
@@ -175,11 +202,14 @@ async function buildReels() {
     const fullName = `${id}.webp`;
     await sharp(file)
       .resize({ width: 1080, withoutEnlargement: true })
-      .webp({ quality: 80 })
+      .webp({ quality: 86, effort: 6, smartSubsample: true })
       .toFile(join(dir, fullName));
+    // Thumb von 420 → 512 px (bei 420 war der Cover-Text kaum lesbar) und
+    // nach dem Downscale nachschärfen.
     await sharp(file)
-      .resize({ width: 420, withoutEnlargement: true })
-      .webp({ quality: 70 })
+      .resize({ width: 512, withoutEnlargement: true })
+      .sharpen({ sigma: 0.7 })
+      .webp({ quality: 80, effort: 6, smartSubsample: true })
       .toFile(join(THUMB_DIR, "reels", fullName));
 
     assets.push({
@@ -247,7 +277,8 @@ async function buildCarousels() {
         const name = `slide-${String(n).padStart(2, "0")}.webp`;
         await sharp(slide)
           .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
-          .webp({ quality: 76 })
+          .sharpen({ sigma: 0.7 })
+          .webp({ quality: 82, effort: 6, smartSubsample: true })
           .toFile(join(slideDir, name));
         slidePaths.push(`/admin/vorlagen/datei/carousels/${id}/${name}`);
       }
@@ -265,7 +296,7 @@ async function buildCarousels() {
           m++;
           await sharp(slide)
             .resize({ width: 1080, withoutEnlargement: true })
-            .webp({ quality: 80 })
+            .webp({ quality: 88, effort: 6, smartSubsample: true })
             .toFile(join(fdir, `slide-${String(m).padStart(2, "0")}.webp`));
         }
       }
