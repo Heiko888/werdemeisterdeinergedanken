@@ -103,6 +103,19 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
               {a.masse.w}×{a.masse.h}
             </span>
           )}
+          {a.formate && a.formate.length > 0 && (
+            <div className="mt-1 flex flex-wrap gap-1">
+              {a.formate.map((f) => (
+                <span
+                  key={f.label}
+                  className="rounded-md bg-ink/5 px-1.5 py-0.5 text-[0.6rem] font-medium tabular-nums text-ink-mid"
+                  title={`${f.label} · ${f.w}×${f.h} px`}
+                >
+                  {f.label}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
         <CaptionList a={a} />
         {/* Buttons untereinander: In den engen Kachel-Rastern (bis zu 4–5
@@ -117,6 +130,16 @@ function BildKarte({ a }: { a: VorlagenAsset }) {
             <Download className="h-3.5 w-3.5" />
             Herunterladen
           </a>
+          {a.zipHref && (
+            <a
+              href={a.zipHref}
+              download
+              className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-accent/40 px-3 py-2 text-xs font-medium text-accent transition-colors hover:bg-accent/5"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Alle Formate (ZIP)
+            </a>
+          )}
           <a
             href={a.href}
             target="_blank"

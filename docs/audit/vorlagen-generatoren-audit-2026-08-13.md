@@ -479,9 +479,29 @@ Key ausgeblendet, Ergebnis in Supabase `gedanken_readings`).
 - `marketing-carousels.mjs` `ratioLabel`: Toleranz-Snapping auf bekannte Formate (robust gegen
   ±1px-Abweichungen).
 
-> **Wichtig:** Die Generator-Änderungen (Titel/Kategorie/WebP) greifen erst nach erneutem
+**✅ P3 umgesetzt (Folge-Branch):**
+- `docs/marketing/brand-assets.mjs`: neue **`SCALE`-Option** (`SCALE=2 node docs/marketing/brand-assets.mjs`)
+  → Zitat-/Faktengrafiken werden in **2160×2700** statt 1080×1350 gerendert (`deviceScaleFactor`).
+- `build-gallery.mjs`: **`FULL_WIDTH` 2000 → 2160** (passt zum @2x-Quellmaterial).
+- `buildSocial`: **@2x-Grafiken werden bevorzugt** statt verworfen (LinkedIn-Banner 3168 px statt 1584 px).
+- `buildReels`: die bisher **verworfenen Cover-Zusatzformate** (1:1, 4:5, 2:3, 16:9) werden je Cover als
+  **ZIP** angeboten; die Galerie-Karte zeigt Format-Badges + „Alle Formate (ZIP)"-Button
+  (`zipHref`/`formate`, neu in `VorlagenAsset`).
+
+**✅ P4 umgesetzt (Folge-Branch):**
+- `src/lib/analytics.ts`: **GA4-ID nicht mehr als Code-Default** — Tracking läuft nur noch mit gesetzter
+  `NEXT_PUBLIC_GA_ID`. `deploy/.env.example` um den Eintrag ergänzt.
+- YouTube-IDs bleiben bewusst pro Lektion (echte, unterschiedliche Videos); Platzhalter zentral in
+  `src/lib/site.ts` (`placeholderVideoId`). Kein erzwungenes Sammel-Refactor.
+
+> ⚠️ **Produktion:** Nach P4 muss `NEXT_PUBLIC_GA_ID` in der Laufzeitumgebung gesetzt sein, sonst wird
+> **kein** Analytics mehr geladen. P3-Wirkung (schärfere Zitate) entsteht erst nach
+> `SCALE=2 node docs/marketing/brand-assets.mjs` **und** anschließendem `npm run vorlagen:galerie`.
+
+> **Wichtig:** Die Generator-Änderungen (Titel/Kategorie/WebP/@2x/Reel-ZIP) greifen erst nach erneutem
 > `npm run vorlagen:galerie` (regeneriert `content/vorlagen/` + `src/lib/vorlagen-assets.ts`). Die
-> **Galerie-Gruppierung wirkt sofort**. Offen bleiben P3 (@2x-Rendering, Reel-Zusatzformate) und P4.
+> **Galerie-Gruppierung, Format-Badges und der ZIP-Button wirken sofort** über den Katalog.
+> Offen bleibt nur noch **P4-Canva** (Brand-Templates mit Datensatz in Canva anlegen — kein Code).
 
 > Nach jeder Änderung an den Generatoren: `npm run vorlagen:galerie` neu ausführen und
 > `content/vorlagen/` + `src/lib/vorlagen-assets.ts` neu committen.
