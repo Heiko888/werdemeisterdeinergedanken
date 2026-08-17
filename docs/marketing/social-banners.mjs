@@ -24,7 +24,7 @@ const TARGETS = [
   { key: "instagram-logo", file: "instagram/WMDG-Instagram-Story-Logo.png", w: 1080, h: 1920,
     brain: 560, eb: 24, url: 42, logoOnly: true },
   { key: "linkedin", file: "linkedin/WMDG-LinkedIn-Banner.png", w: 1584, h: 396,
-    brain: 300, gap: 40, textW: 760, h1: 54, eb: 16, sub: 18, url: 17, linkedin: true, retina: true },
+    brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true },
 ];
 
 const css = (t) => `
@@ -44,7 +44,7 @@ body{width:${t.w}px;height:${t.h}px;overflow:hidden;font-family:Inter,sans-serif
   radial-gradient(1.1px 1.1px at 44% 74%,rgba(255,255,255,.4),transparent);}
 .wrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:${t.gap}px}
 ${t.vertical ? `.wrap{flex-direction:column-reverse;text-align:center;gap:52px} .content{width:auto;max-width:${t.textW}px} .sub{margin-left:auto;margin-right:auto} .eyebrow{margin-bottom:20px}` : ""}
-${t.linkedin ? `.wrap{left:0;top:47%;transform:translateY(-50%);width:100%;justify-content:space-between;padding:0 104px;gap:40px} .content{width:${t.textW}px} .eyebrow{letter-spacing:2.4px}` : ""}
+${t.linkedin ? `.wrap{left:470px;top:46%;transform:translateY(-50%)} .content{width:${t.textW}px}` : ""}
 .content{width:${t.textW}px}
 .eyebrow{font-size:${t.eb}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#34c4c4;margin-bottom:16px}
 h1{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${t.h1}px;line-height:1.04;letter-spacing:-.5px}
