@@ -403,15 +403,20 @@ const { chromium } = require("playwright");
 // Optional nur eine Teilmenge rendern:  ONLY=instagram node docs/marketing/brand-assets.mjs
 const only = process.env.ONLY;
 const targets = only ? TARGETS.filter((t) => t.file.includes(only)) : TARGETS;
+// Optional: SCALE=2 node docs/marketing/brand-assets.mjs → doppelte Auflösung.
+// Damit werden die textlastigen Zitat-/Faktengrafiken z. B. 2160×2700 statt
+// 1080×1350 gerendert – erst so haben die Downloads echte Schärfereserve
+// (passt zu FULL_WIDTH=2160 in tools/vorlagen/build-gallery.mjs).
+const SCALE = Number(process.env.SCALE || "1") || 1;
 const browser = await chromium.launch({ executablePath: findChrome() });
 for (const t of targets){
-  const page = await browser.newPage({ viewport:{ width:t.w, height:t.h }, deviceScaleFactor:1 });
+  const page = await browser.newPage({ viewport:{ width:t.w, height:t.h }, deviceScaleFactor: SCALE });
   const tmp = join(HERE, `.tmp-asset.html`);
   writeFileSync(tmp, t.html());
   await page.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
   mkdirSync(join(HERE, dirname(t.file)), { recursive:true });
   await page.screenshot({ path: join(HERE, t.file) });
   await page.close(); rmSync(tmp,{force:true});
-  console.log("✓", t.file, `${t.w}×${t.h}`);
+  console.log("✓", t.file, `${t.w * SCALE}×${t.h * SCALE}`);
 }
 await browser.close();

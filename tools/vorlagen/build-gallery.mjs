@@ -48,7 +48,7 @@ const OUT = join(ROOT, "content", "vorlagen");
 const THUMB_DIR = join(OUT, "thumbs");
 
 const THUMB_WIDTH = 640; // Vorschau
-const FULL_WIDTH = 2000; // Download-Obergrenze (Grafiken)
+const FULL_WIDTH = 2160; // Download-Obergrenze (Grafiken) – passt zu @2x-Quellen (z. B. Zitat 4:5 = 2160×2700)
 
 // --- Helfer ----------------------------------------------------------------
 
@@ -101,14 +101,20 @@ const assets = [];
 
 async function buildSocial() {
   const src = join(ROOT, "docs", "marketing");
-  const files = collect(src, [".png"]).filter(
-    // @2x-Varianten überspringen – die 1x-Version reicht als Download.
-    // Story-Overlays & Story-Carousels haben eigene Aufbaufunktionen.
-    (f) =>
-      !/@2x\./i.test(f) &&
-      !f.includes("/story-overlays/") &&
-      !f.includes("/story-carousels/"),
+  // Story-Overlays & Story-Carousels haben eigene Aufbaufunktionen.
+  const alle = collect(src, [".png"]).filter(
+    (f) => !f.includes("/story-overlays/") && !f.includes("/story-carousels/"),
   );
+  // @2x bevorzugen: existiert zu einer Grafik eine @2x-Variante, wird die
+  // schärfere @2x-Datei genommen und die 1x-Version übersprungen (statt @2x
+  // pauschal zu verwerfen). So liefert die Galerie z. B. den LinkedIn-Banner
+  // in 3168px statt 1584px.
+  const hat2x = new Set(
+    alle
+      .filter((f) => /@2x\./i.test(f))
+      .map((f) => f.replace(/@2x(\.[a-z0-9]+)$/i, "$1")),
+  );
+  const files = alle.filter((f) => (/@2x\./i.test(f) ? true : !hat2x.has(f)));
   const dir = join(OUT, "social");
   ensureDir(dir);
   ensureDir(join(THUMB_DIR, "social"));
@@ -192,11 +198,24 @@ async function buildReels() {
   ensureDir(dir);
   ensureDir(join(THUMB_DIR, "reels"));
 
+  // Der Cover-Generator erzeugt je Cover mehrere Formate. Die Galerie zeigt
+  // weiterhin 9:16 als Karte, bietet aber ALLE vorhandenen Zusatzformate als
+  // ZIP-Download an – bisher wurden sie erzeugt und verworfen.
+  const REEL_FMT = [
+    { key: "reel-9x16", label: "9:16", w: 1080, h: 1920 },
+    { key: "feed-4x5", label: "4:5", w: 1080, h: 1350 },
+    { key: "feed-1x1", label: "1:1", w: 1080, h: 1080 },
+    { key: "pin-2x3", label: "2:3", w: 1080, h: 1620 },
+    { key: "landscape-16x9", label: "16:9", w: 1920, h: 1080 },
+  ];
+  const tmpRoot = join(OUT, ".tmp-reels");
+
   let i = 0;
   for (const file of files) {
     const rel = file.slice(src.length + 1); // "stufen/reel-9x16/cover-03.png"
     const bereich = rel.split("/")[0];
-    const nr = basename(file).replace(/[^0-9]/g, "");
+    const coverFile = basename(file); // "cover-03.png"
+    const nr = coverFile.replace(/[^0-9]/g, "");
     const id = `reel-${bereich}-${nr}`;
 
     const fullName = `${id}.webp`;
@@ -212,6 +231,34 @@ async function buildReels() {
       .webp({ quality: 80, effort: 6, smartSubsample: true })
       .toFile(join(THUMB_DIR, "reels", fullName));
 
+    // Vorhandene Zusatzformate zu diesem Cover einsammeln.
+    const vorhandene = REEL_FMT.filter((F) =>
+      existsSync(join(src, bereich, F.key, coverFile)),
+    );
+    let zipHref;
+    let formate;
+    if (vorhandene.length > 1) {
+      const tmp = join(tmpRoot, id);
+      for (const F of vorhandene) {
+        const fdir = join(tmp, F.key);
+        ensureDir(fdir);
+        await sharp(join(src, bereich, F.key, coverFile))
+          .resize({ width: F.w, withoutEnlargement: true })
+          .webp({ quality: 86, effort: 6, smartSubsample: true })
+          .toFile(join(fdir, `cover-${nr}.webp`));
+      }
+      const zipName = `${id}.zip`;
+      const zipPath = join(dir, zipName);
+      if (existsSync(zipPath)) rmSync(zipPath);
+      const res = spawnSync("zip", ["-r", "-q", zipPath, "."], {
+        cwd: tmp,
+        stdio: "inherit",
+      });
+      if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
+      zipHref = `/admin/vorlagen/datei/reels/${zipName}`;
+      formate = vorhandene.map((F) => ({ label: F.label, w: F.w, h: F.h }));
+    }
+
     assets.push({
       kategorie: "reels",
       titel: `${prettifyLabel(bereich)} · Cover ${nr}`,
@@ -219,8 +266,13 @@ async function buildReels() {
       kind: "image",
       thumb: `/admin/vorlagen/datei/thumbs/reels/${fullName}`,
       href: `/admin/vorlagen/datei/reels/${fullName}`,
+      ...(formate ? { formate } : {}),
+      ...(zipHref ? { zipHref } : {}),
     });
   }
+
+  // Temp-Ordner entfernen – nur ZIPs bleiben.
+  if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
   return files.length;
 }
 

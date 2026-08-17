@@ -3,12 +3,13 @@
  *
  * Die Measurement-ID ist client-seitig ohnehin öffentlich (sie steht im
  * Seitenquelltext) und darf daher mit NEXT_PUBLIC_ ausgeliefert werden.
- * Über die Env-Variable NEXT_PUBLIC_GA_ID lässt sie sich pro Umgebung
- * überschreiben (z. B. eine separate Test-Property). Ist sie leer gesetzt
- * (NEXT_PUBLIC_GA_ID=""), bleibt das Tracking komplett inaktiv.
+ * Die Measurement-ID wird ausschließlich über die Env-Variable
+ * NEXT_PUBLIC_GA_ID gesetzt. Es gibt bewusst KEINEN Code-Default mehr:
+ * ohne gesetzte Variable bleibt das Tracking komplett inaktiv. In Produktion
+ * daher NEXT_PUBLIC_GA_ID setzen (z. B. G-XF5D83V7HD), sonst wird kein
+ * Analytics-Skript geladen.
  */
-export const GA_ID =
-  process.env.NEXT_PUBLIC_GA_ID ?? "G-XF5D83V7HD";
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 /** localStorage-Schlüssel, unter dem die Einwilligung gemerkt wird. */
 export const CONSENT_STORAGE_KEY = "wmdg-analytics-consent";

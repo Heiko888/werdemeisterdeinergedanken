@@ -30,6 +30,8 @@ export type VorlagenAsset = {
   formate?: { label: string; w: number; h: number }[];
   /** Nur bei kind === "image": Pixelmaße + Seitenverhältnis der Grafik. */
   masse?: { label: string; w: number; h: number };
+  /** Optionaler Zusatz-Download, z. B. Reel-Cover als ZIP mit allen Formaten. */
+  zipHref?: string;
   sizeMB?: number;
 };
 
