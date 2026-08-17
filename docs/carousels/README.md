@@ -32,7 +32,7 @@ Der Parser (`data.mjs`) liest sie ein; das Layout kommt aus `build.mjs`.
 
 ## Serien
 Mentale Selbstverteidigung (16) · Die 7 Stufen (7) · Praxis (13) ·
-Vertiefungen (13) · Mitgliederbereich (6) = **55 Carousels, 372 Slides**.
+Vertiefungen (13) · Mitgliederbereich (6) = **55 Carousels, 373 Slides**.
 
 > Generierte Dateien (`build/`, `export/`) und die kopierten Assets
 > (`_fonts.css`, `logo.png`) sind bewusst aus Git ausgenommen – sie entstehen
