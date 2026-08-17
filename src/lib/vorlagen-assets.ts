@@ -45,8 +45,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-001.webp",
     "masse": {
       "label": "16:9",
-      "w": 1920,
-      "h": 1080
+      "w": 2160,
+      "h": 1215
     }
   },
   {
@@ -58,8 +58,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-002.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
@@ -71,8 +71,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-003.webp",
     "masse": {
       "label": "2:3",
-      "w": 1000,
-      "h": 1500
+      "w": 2000,
+      "h": 3000
     }
   },
   {
@@ -84,8 +84,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-004.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
@@ -97,8 +97,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-005.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
@@ -123,8 +123,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-007.webp",
     "masse": {
       "label": "16:9",
-      "w": 1920,
-      "h": 1080
+      "w": 2160,
+      "h": 1215
     }
   },
   {
@@ -136,8 +136,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-008.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
@@ -149,8 +149,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-009.webp",
     "masse": {
       "label": "2:3",
-      "w": 1000,
-      "h": 1500
+      "w": 2000,
+      "h": 3000
     }
   },
   {
@@ -162,8 +162,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-010.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
@@ -175,8 +175,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-011.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
@@ -214,8 +214,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-014.webp",
     "masse": {
       "label": "4:1",
-      "w": 1584,
-      "h": 396
+      "w": 2160,
+      "h": 540
     }
   },
   {
@@ -227,8 +227,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-015.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
@@ -240,8 +240,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-016.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
@@ -266,8 +266,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-018.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
@@ -305,8 +305,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-021.webp",
     "masse": {
       "label": "16:9",
-      "w": 2000,
-      "h": 1125
+      "w": 2160,
+      "h": 1215
     }
   },
   {
@@ -318,8 +318,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-022.webp",
     "masse": {
       "label": "16:9",
-      "w": 1280,
-      "h": 720
+      "w": 2160,
+      "h": 1215
     }
   },
   {
@@ -331,8 +331,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-023.webp",
     "masse": {
       "label": "16:9",
-      "w": 1280,
-      "h": 720
+      "w": 2160,
+      "h": 1215
     }
   },
   {
@@ -344,1100 +344,1100 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-024.webp",
     "masse": {
       "label": "16:9",
-      "w": 1280,
-      "h": 720
+      "w": 2160,
+      "h": 1215
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 01 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
     "href": "/admin/vorlagen/datei/social/social-025.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 02 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
     "href": "/admin/vorlagen/datei/social/social-026.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 03 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
     "href": "/admin/vorlagen/datei/social/social-027.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 04 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
     "href": "/admin/vorlagen/datei/social/social-028.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 05 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
     "href": "/admin/vorlagen/datei/social/social-029.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 06 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
     "href": "/admin/vorlagen/datei/social/social-030.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 07 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
     "href": "/admin/vorlagen/datei/social/social-031.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 08 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
     "href": "/admin/vorlagen/datei/social/social-032.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 09 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
     "href": "/admin/vorlagen/datei/social/social-033.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 10 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
     "href": "/admin/vorlagen/datei/social/social-034.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 11 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
     "href": "/admin/vorlagen/datei/social/social-035.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 12 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
     "href": "/admin/vorlagen/datei/social/social-036.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 13 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
     "href": "/admin/vorlagen/datei/social/social-037.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 14 · 1:1",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
     "href": "/admin/vorlagen/datei/social/social-038.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 01 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
     "href": "/admin/vorlagen/datei/social/social-039.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 02 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
     "href": "/admin/vorlagen/datei/social/social-040.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 03 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
     "href": "/admin/vorlagen/datei/social/social-041.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 04 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
     "href": "/admin/vorlagen/datei/social/social-042.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 05 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
     "href": "/admin/vorlagen/datei/social/social-043.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 06 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
     "href": "/admin/vorlagen/datei/social/social-044.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 07 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
     "href": "/admin/vorlagen/datei/social/social-045.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 08 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
     "href": "/admin/vorlagen/datei/social/social-046.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 09 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
     "href": "/admin/vorlagen/datei/social/social-047.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 10 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
     "href": "/admin/vorlagen/datei/social/social-048.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 11 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
     "href": "/admin/vorlagen/datei/social/social-049.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 12 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
     "href": "/admin/vorlagen/datei/social/social-050.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 13 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
     "href": "/admin/vorlagen/datei/social/social-051.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 14 · 4:5",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
     "href": "/admin/vorlagen/datei/social/social-052.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 01 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
     "href": "/admin/vorlagen/datei/social/social-053.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 02 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
     "href": "/admin/vorlagen/datei/social/social-054.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 03 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
     "href": "/admin/vorlagen/datei/social/social-055.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 04 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
     "href": "/admin/vorlagen/datei/social/social-056.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 05 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
     "href": "/admin/vorlagen/datei/social/social-057.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 06 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
     "href": "/admin/vorlagen/datei/social/social-058.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 07 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
     "href": "/admin/vorlagen/datei/social/social-059.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 08 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
     "href": "/admin/vorlagen/datei/social/social-060.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 09 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
     "href": "/admin/vorlagen/datei/social/social-061.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 10 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
     "href": "/admin/vorlagen/datei/social/social-062.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 11 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
     "href": "/admin/vorlagen/datei/social/social-063.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 12 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
     "href": "/admin/vorlagen/datei/social/social-064.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 13 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
     "href": "/admin/vorlagen/datei/social/social-065.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Zitat 14 · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
     "href": "/admin/vorlagen/datei/social/social-066.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 01 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
     "href": "/admin/vorlagen/datei/social/social-067.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 02 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
     "href": "/admin/vorlagen/datei/social/social-068.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 03 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
     "href": "/admin/vorlagen/datei/social/social-069.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 04 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
     "href": "/admin/vorlagen/datei/social/social-070.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 05 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
     "href": "/admin/vorlagen/datei/social/social-071.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 06 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
     "href": "/admin/vorlagen/datei/social/social-072.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 07 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-073.webp",
     "href": "/admin/vorlagen/datei/social/social-073.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 08 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-074.webp",
     "href": "/admin/vorlagen/datei/social/social-074.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 09 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-075.webp",
     "href": "/admin/vorlagen/datei/social/social-075.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 10 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-076.webp",
     "href": "/admin/vorlagen/datei/social/social-076.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 11 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
     "href": "/admin/vorlagen/datei/social/social-077.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 12 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
     "href": "/admin/vorlagen/datei/social/social-078.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 13 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
     "href": "/admin/vorlagen/datei/social/social-079.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 14 · 1:1",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
     "href": "/admin/vorlagen/datei/social/social-080.webp",
     "masse": {
       "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "w": 2160,
+      "h": 2160
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 01 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
     "href": "/admin/vorlagen/datei/social/social-081.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 02 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
     "href": "/admin/vorlagen/datei/social/social-082.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 03 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
     "href": "/admin/vorlagen/datei/social/social-083.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 04 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
     "href": "/admin/vorlagen/datei/social/social-084.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 05 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
     "href": "/admin/vorlagen/datei/social/social-085.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 06 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
     "href": "/admin/vorlagen/datei/social/social-086.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 07 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
     "href": "/admin/vorlagen/datei/social/social-087.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 08 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
     "href": "/admin/vorlagen/datei/social/social-088.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 09 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
     "href": "/admin/vorlagen/datei/social/social-089.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 10 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
     "href": "/admin/vorlagen/datei/social/social-090.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 11 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
     "href": "/admin/vorlagen/datei/social/social-091.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 12 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
     "href": "/admin/vorlagen/datei/social/social-092.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 13 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
     "href": "/admin/vorlagen/datei/social/social-093.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 14 · 4:5",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
     "href": "/admin/vorlagen/datei/social/social-094.webp",
     "masse": {
       "label": "4:5",
-      "w": 1080,
-      "h": 1350
+      "w": 2160,
+      "h": 2700
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 01 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
     "href": "/admin/vorlagen/datei/social/social-095.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 02",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 02 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
     "href": "/admin/vorlagen/datei/social/social-096.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 03",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 03 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
     "href": "/admin/vorlagen/datei/social/social-097.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 04",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 04 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
     "href": "/admin/vorlagen/datei/social/social-098.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 05",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 05 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
     "href": "/admin/vorlagen/datei/social/social-099.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 06",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 06 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
     "href": "/admin/vorlagen/datei/social/social-100.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 07",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 07 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-101.webp",
     "href": "/admin/vorlagen/datei/social/social-101.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 08",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 08 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-102.webp",
     "href": "/admin/vorlagen/datei/social/social-102.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 09",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 09 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-103.webp",
     "href": "/admin/vorlagen/datei/social/social-103.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 10",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 10 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-104.webp",
     "href": "/admin/vorlagen/datei/social/social-104.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 11",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 11 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-105.webp",
     "href": "/admin/vorlagen/datei/social/social-105.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 12",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 12 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-106.webp",
     "href": "/admin/vorlagen/datei/social/social-106.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 13",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 13 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-107.webp",
     "href": "/admin/vorlagen/datei/social/social-107.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 14",
-    "unterKategorie": "Zitate & Fakten",
+    "titel": "Studienfakt 14 · 9:16",
+    "unterKategorie": "Studien-Fakten",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-108.webp",
     "href": "/admin/vorlagen/datei/social/social-108.webp",
     "masse": {
       "label": "9:16",
-      "w": 1080,
-      "h": 1920
+      "w": 2160,
+      "h": 3840
     }
   },
   {
@@ -1447,6 +1447,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-01.webp",
     "href": "/admin/vorlagen/datei/reels/reel-landing-01.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-01.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1460,6 +1488,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-02.webp",
     "href": "/admin/vorlagen/datei/reels/reel-landing-02.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-02.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1473,6 +1529,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-03.webp",
     "href": "/admin/vorlagen/datei/reels/reel-landing-03.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-03.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1486,6 +1570,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-01.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-01.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-01.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1499,6 +1611,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-02.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-02.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-02.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1512,6 +1652,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-03.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-03.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-03.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1525,6 +1693,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-04.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-04.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-04.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1538,6 +1734,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-05.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-05.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-05.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1551,6 +1775,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-06.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-06.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-06.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1564,6 +1816,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-07.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-07.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-07.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1577,6 +1857,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-08.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-08.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-08.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1590,6 +1898,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-09.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-09.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-09.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1603,6 +1939,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-10.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-10.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-10.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1616,6 +1980,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-11.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-11.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-11.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1629,6 +2021,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-12.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-12.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-12.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1642,6 +2062,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-13.webp",
     "href": "/admin/vorlagen/datei/reels/reel-praxis-13.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-13.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1655,6 +2103,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-01.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1668,6 +2144,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-02.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1681,6 +2185,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-03.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1694,6 +2226,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-04.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1707,6 +2267,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-05.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1720,6 +2308,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-06.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1733,6 +2349,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-07.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1746,6 +2390,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-08.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1759,6 +2431,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-09.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1772,6 +2472,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-10.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1785,6 +2513,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-11.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1798,6 +2554,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-12.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1811,6 +2595,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-13.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1824,6 +2636,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-14.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1837,6 +2677,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-15.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1850,6 +2718,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-16.webp",
     "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1863,21 +2759,49 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-01.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-01.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-01.zip",
     "captions": [
       {
         "label": "Variante A",
         "titel": "Läuft das automatisch?",
-        "text": "Das meiste an deinem Tag hast du heute nicht bewusst entschieden – dein Gehirn spult Bewährtes automatisch ab. Praktisch, bis sich dieselben Konflikte und Gefühle wiederholen, obwohl du sie längst nicht mehr willst. Das ist keine Schwäche, sondern dein Startpunkt: Was du bemerkst, kann anfangen, sich zu verändern. Folge für die nächste Stufe. #werdemeisterdeinergedanken #autopilot #gewohnheiten #bewusstsein #achtsamkeit #selbsterkenntnis #mentaltraining #persönlichkeitsentwicklung"
+        "text": "Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide. Das Ergebnis war ernüchternd: aufgestanden, Handy, derselbe Kaffee, derselbe Weg – und abends derselbe Ärger wie am Tag davor. Ich dachte lange, so bin ich halt. War ich aber nicht. Das war mein Autopilot. Der ist nicht dein Feind, der spart deinem Gehirn Energie. Zum Problem wird er erst, wenn er wiederholt, was du längst nicht mehr willst. Geändert hat sich bei mir nichts, als ich mich mehr zusammengerissen hab – sondern als ich es zum ersten Mal gemerkt hab. Folge für die nächste Stufe. #werdemeisterdeinergedanken #autopilot #gewohnheiten #bewusstsein #achtsamkeit #selbsterkenntnis #mentaltraining #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante B",
         "titel": "Das bin doch ich",
-        "text": "„So bin ich eben\" – dieser Satz hält den Autopiloten am Laufen, weil sich automatische Reaktionen wie freie Entscheidungen anfühlen. Doch deine Muster sind gelernt, lange bevor du wählen konntest; jedes war einmal ein sinnvoller Schutz. Das Problem ist nur, dass sie heute unbemerkt weiterlaufen. Du bist nicht dein Muster – du bist der, der es zum ersten Mal von außen betrachtet. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #autopilot #muster #konditionierung #bewusstsein #achtsamkeit #selbstreflexion #persönlichkeitsentwicklung"
+        "text": "„So bin ich eben.\" Den Satz hab ich jahrelang gesagt, als wäre er eine Tatsache – dabei war er nur eine bequeme Ausrede. Das meiste, was ich für meinen Charakter gehalten hab, war antrainiert: von den Eltern, von der Schule, von Erfahrungen, die ich hatte, bevor ich überhaupt wählen konnte. Und jedes dieser Muster hat mir mal geholfen. Das Problem ist nicht, wo sie herkommen – sondern dass sie heute noch laufen, obwohl die alte Situation längst vorbei ist. Du bist nicht dein Muster. Du bist der, der es sich zum ersten Mal von außen anschaut. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #autopilot #muster #konditionierung #bewusstsein #achtsamkeit #selbstreflexion #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante C",
         "titel": "Der Autopilot-Check",
-        "text": "Eine Mini-Übung für zwischendurch: Halte im Alltag kurz inne – an der Ampel, vor dem Griff zum Handy, zwischen zwei Aufgaben – und frag dich ehrlich: Handle ich gerade bewusst oder automatisch? Nicht bewerten, nur bemerken. Jedes Bemerken ist ein kleiner Riss im Automatischen – und genau dieser Riss ist der Anfang von allem. Speicher dir die Übung und probier sie heute dreimal. #werdemeisterdeinergedanken #autopilot #achtsamkeitsübung #achtsamkeit #bewusstsein #innehalten #mentaltraining #präsenz"
+        "text": "Diese eine Frage stell ich mir seit Jahren mehrmals am Tag – und sie ist völlig unspektakulär. Ich halte kurz inne: an der roten Ampel, bevor ich zum Handy greife, zwischen zwei Terminen. Und dann frag ich mich ehrlich: Handle ich gerade bewusst oder automatisch? Ganz wichtig – die Antwort wird nicht bewertet. Am Anfang war sie bei mir fast immer „automatisch\", und das war okay. Es geht nicht ums Ändern, es geht erst mal nur ums Sehen. Dreimal am Tag reicht. Jedes Mal kriegt das Automatische einen kleinen Riss – und dieser Riss ist der Anfang von allem. Speicher dir die Übung und probier sie heute. #werdemeisterdeinergedanken #autopilot #achtsamkeitsübung #achtsamkeit #bewusstsein #innehalten #mentaltraining #präsenz"
       }
     ],
     "masse": {
@@ -1893,21 +2817,49 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-02.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-02.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-02.zip",
     "captions": [
       {
         "label": "Variante A",
         "titel": "Oh, ich denke gerade",
-        "text": "Erwachen ist kein spektakuläres Ereignis, sondern ein leises „Oh – ich denke gerade\". Dieses Erkennen kann selbst kein Gedanke sein, denn es sieht dem Denken zu – und genau da entsteht zum ersten Mal ein Abstand zwischen dir und deinen Gedanken. Von klein auf haben wir gelernt, jeden Gedanken für bare Münze zu nehmen; dabei sind Gedanken nur Angebote, die kommen und gehen. Folge für die nächste Stufe. #werdemeisterdeinergedanken #erwachen #bewusstsein #achtsamkeit #metakognition #gedanken #selbstwahrnehmung #innerearbeit"
+        "text": "Ich saß im Stau und hab mich zum ersten Mal beim Denken erwischt. Kein großer Moment, kein Blitz – ich hab mich innerlich über jemanden aufgeregt, und plötzlich war da ein zweiter Satz: „Ah, ich denke gerade.\" Klingt banal. Aber dieses Bemerken kann selbst kein Gedanke sein, es schaut dem Denken ja zu. Uns hat nie jemand beigebracht, dass Gedanken einfach nur Angebote sind, die kommen und gehen – wir nehmen sie für bare Münze, seit wir klein sind. Deshalb fühlen sich alte Muster so echt an. Folge für die nächste Stufe. #werdemeisterdeinergedanken #erwachen #bewusstsein #achtsamkeit #metakognition #gedanken #selbstwahrnehmung #innerearbeit"
       },
       {
         "label": "Variante B",
         "titel": "Du bist nicht deine Gedanken",
-        "text": "Wenn du deine Gedanken hören kannst – wer hört dann zu? Du kannst deine Gedanken bemerken, also kannst du nicht nur deine Gedanken sein. Der, der wahrnimmt, war immer schon da – hinter jedem Gedanken, in jedem Alter deines Lebens. Du musst nichts Neues werden; erinnere dich nur öfter daran, wer da eigentlich zusieht. Genau in diesem kleinen Perspektivwechsel beginnt deine Freiheit – nicht in mehr Denken, sondern in mehr Bemerken. Mach den kostenlosen Bewusstseinstest und finde deine Stufe – Link in Bio. #werdemeisterdeinergedanken #dubistnichtdeinegedanken #erwachen #bewusstsein #achtsamkeit #metakognition #selbstwahrnehmung #bewusstseinstest"
+        "text": "Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu? Die Frage hat mich damals nicht mehr losgelassen. Du kannst deine Gedanken bemerken, du machst es gerade. Also kannst du nicht nur deine Gedanken sein – da ist auch der, der sie hört. Und der war immer schon da: mit sechs, mit zwanzig, heute. Hinter jedem Gedanken, den du je hattest, saß derselbe stille Zuhörer. Ich fand das unglaublich entlastend: Ich muss nichts Neues werden, ich muss mich nur öfter erinnern, wer da zuhört. Da fängt Freiheit an – nicht bei mehr Denken, sondern bei mehr Bemerken. Mach den kostenlosen Bewusstseinstest und finde deine Stufe – Link in Bio. #werdemeisterdeinergedanken #dubistnichtdeinegedanken #erwachen #bewusstsein #achtsamkeit #metakognition #selbstwahrnehmung #bewusstseinstest"
       },
       {
         "label": "Variante C",
         "titel": "Die 3-Sekunden-Pause",
-        "text": "Eine kurze Übung, die überall geht: Halte im Alltag kurz inne – beim Türöffnen, an der roten Ampel, vor dem Griff zum Handy – nimm drei ruhige Atemzüge und frag innerlich: Wer nimmt das hier gerade wahr? Erwarte keine Antwort in Worten, spür einfach, dass da ein Wahrnehmender ist, hinter dem Gedankenstrom. Diese Fähigkeit ist keine Sonderbegabung, sondern trainierbar. Speicher dir die Übung und nutze sie heute. #werdemeisterdeinergedanken #erwachen #atemübung #achtsamkeit #bewusstsein #innehalten #präsenz #mentaltraining"
+        "text": "Drei Atemzüge – das war meine allererste echte Übung, weil sie überall geht und keine Zeit kostet. Ich halte kurz inne: beim Türöffnen, an der roten Ampel, bevor ich das Handy nehme. Drei ruhige Atemzüge. Und dann frag ich innerlich: Wer nimmt das hier gerade wahr? Erwarte keine Antwort in Worten – ich hab am Anfang darauf gewartet, die kam nie. Spür einfach, dass da jemand ist, hinter dem ganzen Gedankenlärm. Den eigenen Gedanken zusehen zu können ist keine Sonderbegabung, das ist Training. Wie ein Muskel. Speicher dir die Übung und nutze sie heute. #werdemeisterdeinergedanken #erwachen #atemübung #achtsamkeit #bewusstsein #innehalten #präsenz #mentaltraining"
       }
     ],
     "masse": {
@@ -1923,21 +2875,49 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-03.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-03.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-03.zip",
     "captions": [
       {
         "label": "Variante A",
         "titel": "Du springst in jeden Gedanken",
-        "text": "Stell dir vor, du sitzt am Ufer eines Flusses – deine Gedanken sind das Wasser, das vorbeizieht. Bisher bist du bei jedem Gedanken hineingesprungen und mitgeschwommen; der innere Beobachter dagegen bleibt am Ufer und schaut zu. Solange du im Gedanken steckst, siehst du nur den Gedanken – erst ein Schritt zurück zeigt dir das Muster dahinter. Diese Distanz ist keine Kälte, sondern die ruhige Übersicht, aus der du wählen kannst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #selbstbeobachtung #innererbeobachter #achtsamkeit #bewusstsein #gedankenbeobachten #mentaleklarheit #persönlichkeitsentwicklung"
+        "text": "Ich bin früher in jeden einzelnen Gedanken reingesprungen. Stell dir einen Fluss vor: Du sitzt am Ufer, deine Gedanken sind das Wasser. Kaum kam bei mir eine Sorge vorbei, war ich schon drin und mitgeschwommen – und zwei Stunden später hab ich mich gefragt, wie ich da hingekommen bin. Der innere Beobachter macht was anderes: Der bleibt sitzen. Nichts muss aufgehalten werden, es darf alles vorbeiziehen. Solange du im Gedanken steckst, siehst du nur den Gedanken – erst ein Schritt zurück zeigt dir das Muster dahinter. Das ist keine Kälte, das ist Überblick. Folge für die nächste Stufe. #werdemeisterdeinergedanken #selbstbeobachtung #innererbeobachter #achtsamkeit #bewusstsein #gedankenbeobachten #mentaleklarheit #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante B",
         "titel": "Nicht ich bin – ich bemerke",
-        "text": "„Ich bin ein Versager\" fühlt sich an wie die Wahrheit. Doch sieh, was passiert, wenn du umformulierst: „Ich bemerke den Gedanken, dass ich ein Versager sei.\" Plötzlich ist der Gedanke ein Objekt in deinem Bewusstsein – nicht mehr die Brille, durch die du schaust. In der Psychologie heißt das kognitive Defusion: Abstand schaffen, ohne zu kämpfen. Was du ruhig beobachten kannst, bestimmt dich nicht mehr blind. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #selbstbeobachtung #defusion #gedanken #achtsamkeit #bewusstsein #innererkritiker #mentaltraining"
+        "text": "Ein einziges Wort hat mich aus dem Griff eines Gedankens geholt. „Ich bin ein Versager\" – den Satz kannte ich gut, und er fühlt sich nicht an wie ein Gedanke, sondern wie die Wahrheit. Dann hab ich gelernt, ihn umzubauen: „Ich bemerke den Gedanken, dass ich ein Versager sei.\" Hör auf den Unterschied. Plötzlich ist der Satz ein Ding in meinem Kopf und nicht mehr die Brille, durch die ich schaue. In der Psychologie heißt das kognitive Defusion – klingt sperrig, heißt einfach: Du klebst nicht mehr am Gedanken fest. Du kämpfst nicht, du gehst einen Schritt zur Seite. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #selbstbeobachtung #defusion #gedanken #achtsamkeit #bewusstsein #innererkritiker #mentaltraining"
       },
       {
         "label": "Variante C",
         "titel": "Gib dem Gedanken ein Etikett",
-        "text": "Eine ruhige Übung für zehn Minuten: Beobachte deinen Gedankenstrom, ohne einzugreifen, und gib jedem Gedanken eine schlichte Etikette – „planen\", „erinnern\", „sorgen\", „bewerten\". Mehr nicht. Allein das Benennen schafft Abstand. Und zum Schluss die entscheidende Frage: Bist du der Gedanke – oder der, der ihn benennt? Was du klar benennen kannst, verliert seinen unbewussten Griff. Speicher dir die Übung. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeitsübung #gedankenbeobachten #achtsamkeit #bewusstsein #mentaleklarheit #innerearbeit"
+        "text": "So hab ich Ordnung in mein Gedankenchaos gekriegt: Nimm dir zehn Minuten, setz dich hin und schau deinen Gedanken zu, ohne einzugreifen. Jedes Mal, wenn einer kommt, gibst du ihm ein Etikett – ein Wort reicht. „Planen.\" „Erinnern.\" „Sorgen.\" „Bewerten.\" Mehr nicht, dann zurück zum Zuschauen. Ich war überrascht, wie viel Abstand allein das Benennen macht. Und irgendwann kommt die eigentliche Frage von selbst: Bin ich der Gedanke – oder der, der ihn gerade benennt? Was du klar benennen kannst, verliert seinen Griff. Speicher dir die Übung. #werdemeisterdeinergedanken #selbstbeobachtung #achtsamkeitsübung #gedankenbeobachten #achtsamkeit #bewusstsein #mentaleklarheit #innerearbeit"
       }
     ],
     "masse": {
@@ -1953,21 +2933,49 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-04.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-04.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-04.zip",
     "captions": [
       {
         "label": "Variante A",
         "titel": "Was du wegdrückst, wartet",
-        "text": "Manche Muster sitzen nicht im Kopf, sondern in festgehaltenen Gefühlen und im Körper. Nicht gefühlte Gefühle verschwinden nicht – sie warten, binden Energie und melden sich in den unpassendsten Momenten. Der Verstand erklärt sie lieber, statt sie zu fühlen. Doch ein Gefühl löst sich nicht durch Analyse, sondern durch bewusste Anwesenheit. Wo etwas losgelassen wird, entsteht Raum – für Ruhe, für Energie, für dich. Folge für die nächste Stufe. #werdemeisterdeinergedanken #emotionaleReife #gefühle #loslassen #achtsamkeit #innerearbeit #selbstheilung #persönlichkeitsentwicklung"
+        "text": "Ich hab jahrelang geglaubt, verstehen reicht. Tat es nicht. Ich konnte meine Muster sauber erklären – geändert hat sich trotzdem nichts. Weil manche Sachen gar nicht im Kopf sitzen, sondern im Bauch, in der Brust, im Hals. Gefühle, die du nicht fühlst, verschwinden nicht: Sie warten, ziehen Energie ab, färben deine Stimmung und melden sich im ungünstigsten Moment. Und der Verstand erklärt sie lieber, als sie zu fühlen – da ist er richtig kreativ. Aber ein Gefühl löst sich nicht durch Analyse, es löst sich, wenn du wirklich da bist. Wo etwas gehen darf, wird Platz frei. Folge für die nächste Stufe. #werdemeisterdeinergedanken #emotionaleReife #gefühle #loslassen #achtsamkeit #innerearbeit #selbstheilung #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante B",
         "titel": "Reite die Welle",
-        "text": "Wir meiden unangenehme Gefühle, weil wir glauben, sie würden uns verschlingen. Doch jedes Gefühl hat einen Verlauf: Es steigt, erreicht einen Höhepunkt und ebbt wieder ab – meist schneller als gedacht. Wer lernt, den Höhepunkt auszuhalten, statt sofort zu handeln, merkt: Die Welle trägt dich, sie verschlingt dich nicht. Aushalten ist keine Passivität, sondern eine aktive, kraftvolle Fähigkeit. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #emotionaleReife #gefühle #emotionsregulation #achtsamkeit #loslassen #innereruhe #mentaltraining"
+        "text": "Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert. Kürzer, als ich dachte. Deutlich kürzer. Wir gehen unangenehmen Gefühlen aus dem Weg, weil wir glauben, sie verschlingen uns. Aber jedes Gefühl hat einen Verlauf: Es steigt an, hat einen Höhepunkt und ebbt wieder ab. Genau am Höhepunkt wollen wir irgendwas tun – essen, streiten, wegscrollen. Wenn du da einmal sitzen bleibst, merkst du: Die Welle trägt dich, sie verschluckt dich nicht. Aushalten ist nichts Passives, das ist eine der aktivsten Sachen überhaupt. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #emotionaleReife #gefühle #emotionsregulation #achtsamkeit #loslassen #innereruhe #mentaltraining"
       },
       {
         "label": "Variante C",
         "titel": "Lad das Gefühl ein",
-        "text": "Eine Übung von zehn Minuten: Erinnere dich an etwas Mittelschweres, das dich noch belastet. Spür nach, wo im Körper sich das Gefühl meldet – Brust, Bauch, Kehle – atme sanft hinein und lass es da sein, ohne etwas ändern zu wollen. Dann sag innerlich: „Du darfst da sein. Und du darfst gehen.\" Beobachte, wie sich die Intensität wandelt. Was Raum bekommt, darf durch dich hindurchziehen – und gehen. Speicher dir die Übung für einen ruhigen Moment. #werdemeisterdeinergedanken #emotionaleReife #körperwahrnehmung #gefühlezulassen #achtsamkeit #loslassen #innerearbeit #selbstmitgefühl"
+        "text": "Diesen einen Satz sag ich zu jedem Gefühl, das nicht gehen will. Nimm dir zehn Minuten und such dir was Mittelschweres – nicht das Schlimmste, was du hast. Erinnere dich daran und spür nach: Wo meldet sich das im Körper? Brust, Bauch, Kehle. Dann atme sanft dahin, nicht dagegen, und lass es da sein, ohne irgendwas ändern zu wollen – ehrlich der schwerste Teil. Und dann innerlich: „Du darfst da sein. Und du darfst gehen.\" Jetzt beobachte, was mit der Intensität passiert. Was Raum kriegt, zieht durch. Und was durchzieht, geht auch wieder. Speicher dir die Übung. #werdemeisterdeinergedanken #emotionaleReife #körperwahrnehmung #gefühlezulassen #achtsamkeit #loslassen #innerearbeit #selbstmitgefühl"
       }
     ],
     "masse": {
@@ -1983,21 +2991,49 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-05.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-05.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-05.zip",
     "captions": [
       {
         "label": "Variante A",
         "titel": "Vom Beobachter zum Gestalter",
-        "text": "Die ersten Stufen haben dich frei gemacht von automatischem Denken – jetzt nutzt du diese Freiheit aktiv. Denn Gedanken sind formbar: Was du regelmäßig denkst, wird zur Spur, und was zur Spur wird, wird mit der Zeit zur Straße in deinem Kopf. Bisher hast du diese Straßen unbewusst gebaut; ab jetzt entscheidest du, welche du anlegst. Du bist nicht nur Beobachter deines Lebens, sondern sein Gestalter – denn was du nährst, wächst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #schöpferkraft #gedankenkraft #mindset #bewusstgestalten #neuroplastizität #selbstbild #persönlichkeitsentwicklung"
+        "text": "Was du oft denkst, wird zur Straße in deinem Kopf – und das ist wörtlich gemeint. Die ersten Stufen haben dich frei gemacht vom automatischen Denken, jetzt benutzt du diese Freiheit. Gedanken hinterlassen nämlich Spuren, ganz real im Gehirn. Die Forschung nennt das Neuroplastizität – heißt einfach: Dein Gehirn baut sich nach dem um, was du oft machst. Ein oft gedachter Gedanke wird zum Trampelpfad, der Trampelpfad zur Straße, und irgendwann ist es eine Autobahn, die du fährst, ohne zu lenken. Bisher hast du die unbewusst gebaut. Ab jetzt entscheidest du. Was du fütterst, wächst. Folge für die nächste Stufe. #werdemeisterdeinergedanken #schöpferkraft #gedankenkraft #mindset #bewusstgestalten #neuroplastizität #selbstbild #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante B",
         "titel": "Der Satz muss wahr werden dürfen",
-        "text": "Deshalb funktionieren die meisten Affirmationen nicht: „Ich bin voller Selbstvertrauen\" wirkt nicht, wenn dein System dem Satz nicht glaubt. „Ich lerne gerade, mir selbst zu vertrauen\" springt nicht zu weit – er ist ehrlich und genau deshalb kraftvoll. Wähle Sätze, die dein System annehmen kann, und lass sie mit dir wachsen. Denn dein Verhalten folgt deinem inneren Selbstbild, geformt durch wiederholte Gedanken, die mit Gefühl verankert werden. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #schöpferkraft #affirmationen #selbstbild #mindset #selbstvertrauen #gedankenkraft #mentaltraining"
+        "text": "Warum die meisten Affirmationen nicht funktionieren – ich hab's selbst falsch gemacht. „Ich bin voller Selbstvertrauen\", gesagt vor dem Spiegel, und innerlich hat alles in mir gesagt: Ja, klar. Wenn ein Satz sich anfühlt wie eine Lüge, wirkt er nicht – dein System glaubt ihn nicht, fertig. Funktioniert hat ein kleinerer Satz: „Ich lerne gerade, mir selbst zu vertrauen.\" Der springt nicht zu weit, der ist ehrlich, und genau deshalb hat er gewirkt. Nimm Sätze, die dein System annehmen kann, und lass sie mit dir mitwachsen. Dein Verhalten folgt nicht deinen Vorsätzen, sondern dem Bild, das du von dir hast. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #schöpferkraft #affirmationen #selbstbild #mindset #selbstvertrauen #gedankenkraft #mentaltraining"
       },
       {
         "label": "Variante C",
         "titel": "Richte deinen Morgen aus",
-        "text": "Die ersten drei Minuten entscheiden über deinen Tag. Nimm dir direkt nach dem Aufwachen einen Moment – bevor der Autopilot startet und das Handy übernimmt – und wähle bewusst einen Gedanken oder eine Absicht. Spür kurz nach, wie es sich anfühlt, aus diesem Gedanken heraus in den Tag zu gehen. Und das Entscheidende: Ein stärkender Gedanke bleibt Theorie, bis er in Handlung mündet – leg also eine kleine, konkrete Handlung fest. Speicher dir die Übung für morgen früh. #werdemeisterdeinergedanken #schöpferkraft #morgenroutine #ausrichtung #achtsamkeit #mindset #gewohnheiten #präsenz"
+        "text": "Was ich in den ersten drei Minuten nach dem Aufwachen mache – und zwar bevor ich das Handy anfasse, das ist der ganze Trick. Ich nehm mir einen Moment, noch im Bett, bevor der Autopilot anspringt, und wähle einen Gedanken für den Tag. Ein Satz reicht. Dann spür ich kurz nach, wie es sich anfühlt, aus diesem Satz heraus in den Tag zu gehen. Und jetzt der Teil, den ich jahrelang weggelassen hab: Ein guter Gedanke bleibt Theorie, solange nichts passiert. Also leg ich eine kleine, konkrete Handlung fest. Eine einzige, für heute. Erst wenn Ausrichtung und Tun zusammenkommen, ändert sich wirklich was. Speicher dir die Übung für morgen früh. #werdemeisterdeinergedanken #schöpferkraft #morgenroutine #ausrichtung #achtsamkeit #mindset #gewohnheiten #präsenz"
       }
     ],
     "masse": {
@@ -2013,21 +3049,49 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-06.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-06.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-06.zip",
     "captions": [
       {
         "label": "Variante A",
         "titel": "Der stille Widerspruch",
-        "text": "Viele leben in einem stillen Widerspruch: Der Kopf will das eine, das Herz will das andere, und getan wird ein drittes. Dieser innere Zwiespalt kostet enorm viel Energie – meist völlig unbemerkt. Du fühlst dich erschöpft und weißt nicht recht, warum. Innere Ausrichtung bedeutet, diese Spaltung zu schließen: Wenn Denken, Fühlen und Handeln in dieselbe Richtung zeigen, hört der Widerstand auf, deine Kraft zu fressen. Aus dieser Stimmigkeit entstehen Präsenz und Klarheit. Folge für die nächste Stufe. #werdemeisterdeinergedanken #innereausrichtung #stimmigkeit #werte #achtsamkeit #bewusstsein #klarheit #persönlichkeitsentwicklung"
+        "text": "Ich war ständig müde, und keiner konnte mir sagen, warum. Genug geschlafen, nichts Schlimmes los – und trotzdem leer. Bis mir aufgefallen ist, was im Hintergrund läuft: Mein Kopf wollte das eine, mein Bauch was anderes, und gemacht hab ich ein Drittes. Jeden Tag, bei fast jeder Entscheidung. Dieser stille Widerspruch kostet unfassbar viel Kraft, und das Fiese ist: Du merkst ihn nicht, du merkst nur das Ergebnis. Innere Ausrichtung heißt einfach: Denken, Fühlen und Tun zeigen wieder in dieselbe Richtung. Dann hört der Widerstand auf, deine Kraft zu fressen. Folge für die nächste Stufe. #werdemeisterdeinergedanken #innereausrichtung #stimmigkeit #werte #achtsamkeit #bewusstsein #klarheit #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante B",
         "titel": "Das Herz als Kompass",
-        "text": "Wir haben gelernt, dem Verstand alles zu überlassen. Doch der Kopf ist ein brillanter Diener und ein schlechter Meister. Lern, dein Fühlen als Kompass ernst zu nehmen – nicht als Laune, sondern als leise, ehrliche Rückmeldung. Wenn Kopf und Herz sich einig sind, wird Handeln müheloser, und jedes Handeln nach deinen Werten stärkt dein Vertrauen zu dir selbst. Diese Selbst-Übereinstimmung strahlt, lange bevor du ein Wort sagst. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #innereausrichtung #herzkompass #werte #intuition #stimmigkeit #bewusstsein #mentaltraining"
+        "text": "Dein Kopf ist ein brillanter Diener – aber ein ziemlich schlechter Chef. Ich hab lange alles dem Verstand überlassen. Der hat mir sauber ausgerechnet, was ich wollte, nur nie, was ich gebraucht hab. Auf dieser Stufe lernst du, dein Fühlen wieder ernst zu nehmen – nicht als Laune, sondern als leise, ehrliche Rückmeldung. Und wenn Kopf und Bauch mal einer Meinung sind, wird Handeln plötzlich leicht: kein Ringen, kein Aufschieben. Jedes Mal, wenn du nach deinen Werten handelst, wächst Vertrauen zu dir selbst. Und genau das spüren Leute an dir, bevor du was gesagt hast. Mach den kostenlosen Bewusstseinstest – Link in Bio. #werdemeisterdeinergedanken #innereausrichtung #herzkompass #werte #intuition #stimmigkeit #bewusstsein #mentaltraining"
       },
       {
         "label": "Variante C",
         "titel": "Der Kohärenz-Check",
-        "text": "Eine klärende Übung für zehn Minuten: Denk an eine anstehende Entscheidung oder eine wiederkehrende Situation und frag nacheinander – Was denkt mein Kopf? Was fühlt mein Herz? Was tue ich tatsächlich? Spür, wo diese drei auseinandergehen; genau dort liegt deine Spannung. Du musst nichts Großes umwerfen – wähle einen kleinen, konkreten Schritt, der sie wieder in Einklang bringt. Kohärenz entsteht durch Ausrichtung, nicht durch Anstrengung. Speicher dir den Check für deine nächste Entscheidung. #werdemeisterdeinergedanken #innereausrichtung #kohärenz #entscheidungen #werte #achtsamkeit #klarheit #selbstführung"
+        "text": "Drei Fragen, und ich weiß, wo bei mir gerade die Spannung sitzt. Nimm dir zehn Minuten und denk an eine Entscheidung, die ansteht, oder eine Situation, die immer wiederkommt. Dann frag nacheinander, mit einer Pause dazwischen: Was denkt mein Kopf? Was fühlt mein Herz? Und was tue ich tatsächlich? Schreib's ruhig auf, das macht es ehrlicher. Und dann schau, wo die drei auseinandergehen – genau da sitzt deine Spannung. Du musst nicht dein Leben umbauen, nimm einen kleinen Schritt, der sie wieder in dieselbe Richtung dreht. Fachleute nennen das Kohärenz, heißt nur: Es passt zusammen. Speicher dir den Check. #werdemeisterdeinergedanken #innereausrichtung #kohärenz #entscheidungen #werte #achtsamkeit #klarheit #selbstführung"
       }
     ],
     "masse": {
@@ -2043,21 +3107,49 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-07.webp",
     "href": "/admin/vorlagen/datei/reels/reel-stufen-07.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-07.zip",
     "captions": [
       {
         "label": "Variante A",
         "titel": "Vom Reagieren zum Gestalten",
-        "text": "Viele stellen sich Meisterschaft als einen Punkt vor, an dem nichts mehr wackelt – ein Missverständnis. Meisterschaft ist kein Endpunkt, an dem du „fertig\" bist, sondern eine neue Art zu leben: Innehalten, beobachten, loslassen und neu wählen geschehen nicht mehr als Technik, sondern als Haltung. Der Abstand zwischen Reiz und Reaktion ist dein natürliches Zuhause geworden – du reagierst nicht mehr, du gestaltest. Und selbst wenn ein Tag dich aus der Bahn wirft, findest du schneller zurück. Folge für die nächste Stufe. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #achtsamkeit #reizreaktionslücke #haltung #mentaltraining #persönlichkeitsentwicklung"
+        "text": "Ich dachte, irgendwann wackelt nichts mehr. Das war ein Irrtum. Meisterschaft ist kein Punkt, an dem du fertig bist, und ganz sicher kein Zustand ohne Sturm. Auf den Stufen davor hast du gelernt: innehalten, hinschauen, loslassen, neu wählen – und irgendwann machst du das nicht mehr als Übung, sondern einfach, weil du so geworden bist. Zwischen dem, was passiert, und dem, was du tust, liegt ein Raum: die Reiz-Reaktions-Lücke, der kurze Moment, in dem du wählen kannst. Am Anfang musst du ihn suchen, irgendwann wohnst du da. Du reagierst nicht mehr, du gestaltest. Folge für die nächste Stufe. #werdemeisterdeinergedanken #meisterschaft #bewusstsein #achtsamkeit #reizreaktionslücke #haltung #mentaltraining #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante B",
         "titel": "Der Weg ist kein Ziel",
-        "text": "Niemand ist „für immer\" Meister – auch du nicht. Das klingt ernüchternd, ist aber eine Befreiung: Auch dich werden Tage aus der Bahn werfen. Der Unterschied zu früher ist nicht, dass kein Sturm mehr kommt, sondern dass du schneller zurückfindest – mit Geduld und ohne Selbstverurteilung. Aus wiederholter Technik wird eine Haltung, die von selbst greift. Das ist Meisterschaft im eigentlichen Sinn: ein Zuhause, in das du immer schneller zurückkehrst. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #meisterschaft #selbstmitgefühl #achtsamkeit #bewusstsein #geduld #innerearbeit #persönlichkeitsentwicklung"
+        "text": "Niemand ist für immer Meister. Ich auch nicht. Klingt ernüchternd, ist aber die beste Nachricht auf diesem ganzen Weg – weil es den Druck rausnimmt. Auch mich werfen Tage aus der Bahn, immer noch. Der Unterschied zu früher ist nicht, dass keine Stürme mehr kommen, sondern wie lange ich brauche, um zurückzufinden: früher Wochen, dann Tage, heute manchmal Minuten. Und ich nehm mich dabei nicht mehr ganz so ernst – das hilft mehr, als man denkt. Aus bewusster Technik wird mit genug Wiederholung eine Haltung, die von allein greift. Das ist Meisterschaft: ein Zuhause, in das du immer schneller zurückfindest. Hol dir das kostenlose E-Book – Link in Bio. #werdemeisterdeinergedanken #meisterschaft #selbstmitgefühl #achtsamkeit #bewusstsein #geduld #innerearbeit #persönlichkeitsentwicklung"
       },
       {
         "label": "Variante C",
         "titel": "Umgang mit dem Sturm",
-        "text": "Eine Übung für den Moment der Herausforderung: Wenn dich etwas triggert, halte für einen Atemzug inne, bevor du reagierst. Nur ein Atemzug. Benenne dann innerlich: „Da ist Wut.\" „Da ist Angst.\" Du bist nicht das Gefühl – du bemerkst es. Und dann die entscheidende Frage: Wer will ich in diesem Moment sein? Handle aus dieser Antwort heraus, bewusst gewählt statt automatisch ausgelöst. Genau da schließt sich der Kreis zur ersten Stufe. Speicher dir die Übung für den nächsten Sturm. #werdemeisterdeinergedanken #meisterschaft #trigger #emotionsregulation #achtsamkeit #bewusstsein #reizreaktionslücke #mentaltraining"
+        "text": "Wenn mich was triggert, stell ich mir genau eine Frage. Aber vorher kommt ein Atemzug – nur einer. Nicht antworten, nicht rechtfertigen, nicht zurückschießen. Erst atmen. Dann benenne ich innerlich, was da ist: „Da ist Wut.\" „Da ist Angst.\" Achte auf die Formulierung – nicht „ich bin wütend\", sondern „da ist Wut\". Du bist nicht das Gefühl, du bemerkst es. Und dann die Frage: Wer will ich in diesem Moment sein? Aus dieser Antwort heraus handelst du – bewusst gewählt statt automatisch ausgelöst. Am Anfang braucht das Übung, ich hab den Moment oft genug verpasst. Speicher dir die Übung für den nächsten Sturm. #werdemeisterdeinergedanken #meisterschaft #trigger #emotionsregulation #achtsamkeit #bewusstsein #reizreaktionslücke #mentaltraining"
       }
     ],
     "masse": {
@@ -2073,6 +3165,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-01.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-01.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-01.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2086,6 +3206,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-02.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-02.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-02.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2099,6 +3247,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-03.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-03.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-03.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2112,6 +3288,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-04.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-04.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-04.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2125,6 +3329,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-05.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-05.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-05.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2138,6 +3370,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-06.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-06.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-06.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2151,6 +3411,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-07.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-07.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-07.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2164,6 +3452,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-08.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-08.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-08.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2177,6 +3493,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-09.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-09.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-09.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2190,6 +3534,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-10.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-10.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-10.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2203,6 +3575,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-11.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-11.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-11.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2216,6 +3616,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-12.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-12.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-12.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2229,6 +3657,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-13.webp",
     "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-13.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-13.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2242,6 +3698,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-01.webp",
     "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-01.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-01.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2255,6 +3739,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-02.webp",
     "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-02.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-02.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2268,6 +3780,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-03.webp",
     "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-03.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-03.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2281,6 +3821,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-04.webp",
     "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-04.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-04.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2294,6 +3862,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-05.webp",
     "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-05.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-05.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2307,6 +3903,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-06.webp",
     "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-06.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-06.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2320,6 +3944,34 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-07.webp",
     "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-07.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-07.zip",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -2332,7 +3984,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
@@ -2368,7 +4020,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__abend-reflexion/slide-01.webp",
@@ -2404,7 +4056,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__atembeobachtung/slide-01.webp",
@@ -2440,7 +4092,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-01.webp",
@@ -2476,7 +4128,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.5,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-01.webp",
@@ -2512,7 +4164,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check/slide-01.webp",
@@ -2548,7 +4200,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter/slide-01.webp",
@@ -2584,7 +4236,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.7,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
@@ -2620,7 +4272,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz/slide-01.webp",
@@ -2656,7 +4308,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual/slide-01.webp",
@@ -2692,7 +4344,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung/slide-01.webp",
@@ -2728,7 +4380,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang/slide-01.webp",
@@ -2764,7 +4416,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.6,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
@@ -2800,7 +4452,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-01.webp",
@@ -2837,7 +4489,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-01.webp",
@@ -2874,7 +4526,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung/slide-01.webp",
@@ -2911,7 +4563,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
@@ -2948,7 +4600,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht/slide-01.webp",
@@ -2985,7 +4637,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-01.webp",
@@ -3022,7 +4674,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
@@ -3059,7 +4711,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung/slide-01.webp",
@@ -3096,7 +4748,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
@@ -3133,7 +4785,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda/slide-01.webp",
@@ -3170,7 +4822,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung/slide-01.webp",
@@ -3207,7 +4859,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-01.webp",
@@ -3244,7 +4896,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
@@ -3281,7 +4933,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
@@ -3318,7 +4970,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
@@ -3355,7 +5007,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-01.webp",
@@ -3392,7 +5044,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__autopilot/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__autopilot/slide-01.webp",
@@ -3429,7 +5081,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung/slide-01.webp",
@@ -3466,7 +5118,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__erwachen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__erwachen/slide-01.webp",
@@ -3503,7 +5155,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung/slide-01.webp",
@@ -3540,7 +5192,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__meisterschaft/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__meisterschaft/slide-01.webp",
@@ -3577,7 +5229,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__schoepferkraft/slide-01.webp",
@@ -3614,7 +5266,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.8,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung/slide-01.webp",
@@ -3651,7 +5303,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
@@ -3688,7 +5340,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker/slide-01.webp",
@@ -3725,7 +5377,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
@@ -3762,7 +5414,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-01.webp",
@@ -3799,7 +5451,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
@@ -3836,7 +5488,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
@@ -3873,7 +5525,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
@@ -3910,7 +5562,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen/slide-01.webp",
@@ -3947,7 +5599,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-01.webp",
@@ -3984,7 +5636,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
@@ -4021,7 +5673,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
@@ -4058,7 +5710,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl/slide-01.webp",
@@ -4095,7 +5747,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 0.9,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele/slide-01.webp",
@@ -4355,195 +6007,6 @@ export const vorlagenAssets: VorlagenAsset[] = [
         "h": 1920
       }
     ]
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Bis zu 60.000 Gedanken am Tag",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 9,
-    "sizeMB": 1.3,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "4 Wege zur mentalen Freiheit",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 8,
-    "sizeMB": 1.2,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Wer denkt hier eigentlich?",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 8,
-    "sizeMB": 1.2,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Studien-Fakten",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 9,
-    "sizeMB": 1.4,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Gratis-E-Book",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.7,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
   },
   {
     "kategorie": "workshop",
@@ -4904,5 +6367,194 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "format": "PPTX",
     "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.6,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich?",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.5,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.8,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
   }
 ];
