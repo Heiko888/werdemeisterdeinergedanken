@@ -4318,7 +4318,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "sommer 2023",
+    "titel": "Der Sommer, der alles veränderte",
     "unterKategorie": "Persönliche Geschichten · Story",
     "kind": "carousel",
     "slides": 9,

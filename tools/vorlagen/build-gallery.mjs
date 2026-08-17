@@ -420,6 +420,11 @@ async function buildStoryCarousels() {
     { key: "9x16", label: "9:16", w: 1080, h: 1920 },
   ];
 
+  // Klartext-Titel je Story-Ordner (sonst prettifyName als Fallback).
+  const TITEL = {
+    "sommer-2023": "Der Sommer, der alles veränderte",
+  };
+
   let count = 0;
   for (const story of readdirSync(src, { withFileTypes: true })) {
     if (!story.isDirectory()) continue;
@@ -474,7 +479,7 @@ async function buildStoryCarousels() {
 
     assets.push({
       kategorie: "carousel",
-      titel: prettifyName(story.name),
+      titel: TITEL[story.name] ?? prettifyName(story.name),
       unterKategorie: "Persönliche Geschichten · Story",
       kind: "carousel",
       slides: slidePaths.length,
