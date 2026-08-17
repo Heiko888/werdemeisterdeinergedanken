@@ -60,15 +60,25 @@ function findChrome() {
 const { chromium } = require("playwright");
 const [onlyColl, onlyFormat] = process.argv.slice(2);
 
+// Overlay-Variante: dasselbe Cover, aber Hintergrund transparent (designter
+// Marken-Verlauf + optionale vorlage.png ausgeblendet). Scrim + Inhalt (Logo,
+// Headline, Handle) bleiben → transparentes PNG zum Überlagern eines eigenen
+// Fotos in Canva. Landet parallel unter export-overlay/.
+const OVERLAY_CSS = `html,body{background:transparent !important}
+.cover::before,.bg{display:none !important}`;
+
 // Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
 // je nach Build ~87px unten weg → der Footer/Handle wurde abgeschnitten.
 const browser = await chromium.launch({ executablePath: findChrome() });
 const page = await browser.newPage({ deviceScaleFactor: SCALE });
-async function shot(htmlPath, pngPath, w, h) {
+async function shot(htmlPath, pngPath, ovPath, w, h) {
   await page.setViewportSize({ width: w, height: h });
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "networkidle" });
   await page.screenshot({ path: pngPath });
   if (!existsSync(pngPath)) throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
+  // Overlay-Variante (transparent) im selben Seitenaufruf.
+  await page.addStyleTag({ content: OVERLAY_CSS });
+  await page.screenshot({ path: ovPath, omitBackground: true });
 }
 
 let n = 0;
@@ -83,10 +93,18 @@ for (const coll of collections) {
   for (const f of formats) {
     const srcDir = join(HERE, coll.key, f.key);
     const outDir = join(HERE, "export", coll.key, f.key);
+    const ovDir = join(HERE, "export-overlay", coll.key, f.key);
     mkdirSync(outDir, { recursive: true });
+    mkdirSync(ovDir, { recursive: true });
     for (let i = 0; i < coll.items.length; i++) {
       const nn = pad2(i + 1);
-      await shot(join(srcDir, `cover-${nn}.html`), join(outDir, `cover-${nn}.png`), f.w, f.h);
+      await shot(
+        join(srcDir, `cover-${nn}.html`),
+        join(outDir, `cover-${nn}.png`),
+        join(ovDir, `overlay-${nn}.png`),
+        f.w,
+        f.h,
+      );
       n++;
     }
     console.log(`✓ ${coll.key}/${f.key} · ${coll.items.length} PNG`);

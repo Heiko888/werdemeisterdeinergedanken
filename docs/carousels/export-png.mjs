@@ -60,11 +60,20 @@ const formats = FORMATS.filter((F) => !only || F.key === only);
 
 // Playwright rendert das Viewport pixelgenau. Chromium-CLI --window-size lässt
 // je nach Build ~87px unten weg → der Footer wurde abgeschnitten.
+// Overlay-Variante: dieselbe Slide, aber Hintergrund (designter Marken-Verlauf
+// + Sterne) transparent. Scrim + Inhalt bleiben → transparentes PNG zum
+// Überlagern eines eigenen Fotos in Canva. Landet parallel unter export-overlay/.
+const OVERLAY_CSS = `html,body{background:transparent !important}
+.slide::before,.slide::after,.bg{display:none !important}`;
+
 const browser = await chromium.launch({ executablePath: findChrome() });
-async function shot(page, htmlPath, pngPath) {
+async function shot(page, htmlPath, pngPath, ovPath) {
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "networkidle" });
   await page.screenshot({ path: pngPath });
   if (!existsSync(pngPath)) throw new Error(`Render fehlgeschlagen: ${htmlPath}`);
+  // Overlay-Variante (transparent) im selben Seitenaufruf.
+  await page.addStyleTag({ content: OVERLAY_CSS });
+  await page.screenshot({ path: ovPath, omitBackground: true });
 }
 
 const data = loadCarousels().filter((s) => !onlySeries || s.key === onlySeries);
@@ -82,10 +91,17 @@ for (const F of formats) {
     for (const car of carousels) {
       const srcDir = join(BUILD, s.key, car.slug, F.key);
       const outDir = join(HERE, "export", s.key, car.slug, F.key);
+      const ovDir = join(HERE, "export-overlay", s.key, car.slug, F.key);
       mkdirSync(outDir, { recursive: true });
+      mkdirSync(ovDir, { recursive: true });
       for (let i = 0; i < car.slides.length; i++) {
         const nn = String(i + 1).padStart(2, "0");
-        await shot(page, join(srcDir, `slide-${nn}.html`), join(outDir, `slide-${nn}.png`));
+        await shot(
+          page,
+          join(srcDir, `slide-${nn}.html`),
+          join(outDir, `slide-${nn}.png`),
+          join(ovDir, `slide-${nn}.png`),
+        );
         n++;
       }
     }
