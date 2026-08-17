@@ -4318,6 +4318,44 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "sommer 2023",
+    "unterKategorie": "Persönliche Geschichten · Story",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 11.1,
+    "thumb": "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-01.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-02.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-03.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-04.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-05.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-06.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-07.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-08.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Bis zu 60.000 Gedanken am Tag",
     "unterKategorie": "Marketing / Funnel",
     "kind": "carousel",

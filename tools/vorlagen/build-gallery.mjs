@@ -103,8 +103,11 @@ async function buildSocial() {
   const src = join(ROOT, "docs", "marketing");
   const files = collect(src, [".png"]).filter(
     // @2x-Varianten überspringen – die 1x-Version reicht als Download.
-    // Story-Overlays haben eine eigene Aufbaufunktion (buildStoryOverlays).
-    (f) => !/@2x\./i.test(f) && !f.includes("/story-overlays/"),
+    // Story-Overlays & Story-Carousels haben eigene Aufbaufunktionen.
+    (f) =>
+      !/@2x\./i.test(f) &&
+      !f.includes("/story-overlays/") &&
+      !f.includes("/story-carousels/"),
   );
   const dir = join(OUT, "social");
   ensureDir(dir);
@@ -399,6 +402,95 @@ async function buildStoryOverlays() {
   return count;
 }
 
+// --- 3c. Story-Carousels „Persönliche Geschichten" (komplette Geschichten) ---
+// Vollständige Bild-Geschichten (Titel-Overlay + fertige Body-Slides) je Story.
+// Vorschau: alle Slides im 4:5-Format; ZIP enthält alle Formate + Anleitung.
+
+async function buildStoryCarousels() {
+  const src = join(ROOT, "docs", "marketing", "story-carousels");
+  if (!existsSync(src)) return 0;
+
+  const dir = join(OUT, "story-carousel");
+  ensureDir(dir);
+  const tmpRoot = join(OUT, ".tmp-story-carousel");
+
+  const FMT = [
+    { key: "4x5", label: "4:5", w: 1080, h: 1350 },
+    { key: "1x1", label: "1:1", w: 1080, h: 1080 },
+    { key: "9x16", label: "9:16", w: 1080, h: 1920 },
+  ];
+
+  let count = 0;
+  for (const story of readdirSync(src, { withFileTypes: true })) {
+    if (!story.isDirectory()) continue;
+    const storyDir = join(src, story.name);
+    const previewFmt = existsSync(join(storyDir, "4x5")) ? "4x5" : FMT.find((f) => existsSync(join(storyDir, f.key)))?.key;
+    if (!previewFmt) continue;
+
+    const id = `story-carousel-${story.name}`;
+    const slideDir = join(dir, id);
+    ensureDir(slideDir);
+
+    // Vorschau (4:5): alle Slides in Reihenfolge. Cover = Hintergrund+Overlay.
+    const pdir = join(storyDir, previewFmt);
+    const bg = join(pdir, "_hintergrund.png");
+    const files = collect(pdir, [".png"]).filter((f) => !basename(f).startsWith("_"));
+    // Reihenfolge: 01-overlay zuerst, dann 02..NN numerisch.
+    files.sort((a, b) => {
+      const na = basename(a).startsWith("01-overlay") ? 1 : parseInt(basename(a), 10);
+      const nb = basename(b).startsWith("01-overlay") ? 1 : parseInt(basename(b), 10);
+      return na - nb;
+    });
+
+    const slidePaths = [];
+    let n = 0;
+    for (const f of files) {
+      n++;
+      const name = `slide-${String(n).padStart(2, "0")}.webp`;
+      const isCover = basename(f).startsWith("01-overlay");
+      let buf;
+      if (isCover && existsSync(bg)) {
+        const bgBuf = await sharp(bg).resize({ width: THUMB_WIDTH, withoutEnlargement: true }).toBuffer();
+        const ovBuf = await sharp(f).resize({ width: THUMB_WIDTH, withoutEnlargement: true }).toBuffer();
+        buf = await sharp(bgBuf).composite([{ input: ovBuf }]).webp({ quality: 78 }).toBuffer();
+      } else {
+        buf = await sharp(f).resize({ width: THUMB_WIDTH, withoutEnlargement: true }).webp({ quality: 78 }).toBuffer();
+      }
+      writeFileSync(join(slideDir, name), buf);
+      slidePaths.push(`/admin/vorlagen/datei/story-carousel/${id}/${name}`);
+    }
+
+    // ZIP: gesamte Story (alle Formate + SO-GEHTS.txt).
+    const tmp = join(tmpRoot, id);
+    ensureDir(tmp);
+    cpSync(storyDir, join(tmp, story.name), { recursive: true });
+    const zipName = `${id}.zip`;
+    const zipPath = join(dir, zipName);
+    if (existsSync(zipPath)) rmSync(zipPath);
+    const res = spawnSync("zip", ["-r", "-q", zipPath, "."], { cwd: tmp, stdio: "inherit" });
+    if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
+
+    const formate = FMT.filter((f) => existsSync(join(storyDir, f.key))).map((f) => ({ label: f.label, w: f.w, h: f.h }));
+
+    assets.push({
+      kategorie: "carousel",
+      titel: prettifyName(story.name),
+      unterKategorie: "Persönliche Geschichten · Story",
+      kind: "carousel",
+      slides: slidePaths.length,
+      sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
+      thumb: slidePaths[0],
+      slidePaths,
+      href: `/admin/vorlagen/datei/story-carousel/${zipName}`,
+      formate,
+    });
+    count++;
+  }
+
+  if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
+  return count;
+}
+
 // --- 4. Workshop-Dateien (Download, keine Vorschau) -------------------------
 
 function buildWorkshop() {
@@ -466,6 +558,8 @@ async function main() {
   console.log(`✓ Carousels (Studio, als ZIP): ${carousels}`);
   const stories = await buildStoryOverlays();
   console.log(`✓ Story-Overlays (Persönliche Geschichten, als ZIP): ${stories}`);
+  const storyCarousels = await buildStoryCarousels();
+  console.log(`✓ Story-Carousels (komplette Geschichten, als ZIP): ${storyCarousels}`);
   const marketing = await buildMarketingCarousels({ OUT, assets });
   console.log(`✓ Carousels (Marketing/Funnel, als ZIP): ${marketing}`);
   const workshop = buildWorkshop();
