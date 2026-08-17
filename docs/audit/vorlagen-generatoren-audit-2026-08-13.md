@@ -401,6 +401,24 @@ Im **Code** existiert **keine** Canva-Integration (kein Treffer in `src/`, `tool
 Repo-Pipeline und das Canva-Konto sind heute **zwei getrennte Welten**. Eine Kopplung (Repo-Assets →
 Canva-Autofill → Export zurück) wäre ein bewusst zu bauendes Projekt.
 
+### 6.5 Overlay-Workflow (3-Ebenen für Canva) — auf Zitate & Fakten erweitert
+
+Der bestehende Overlay-Ansatz (transparentes Text-Overlay + Marken-Hintergrund, das in Canva über ein
+eigenes Foto gelegt wird) existierte bislang **nur** für „Persönliche Geschichten"
+(`tools/marketing/story-overlays.mjs`). Er ist jetzt auf die bestehenden Post-Serien **Zitate** und
+**Studien-Fakten** ausgeweitet:
+
+- **`docs/marketing/content-data.mjs`** (neu): gemeinsame Textquelle für Zitate & Fakten; `brand-assets.mjs`
+  importiert sie jetzt (Single Source, keine Text-Dopplung).
+- **`tools/marketing/content-overlays.mjs`** (neu): rendert je Zitat/Fakt ein transparentes Overlay
+  (Scrim + Typografie **1:1 wie die Grafik-Kacheln**) + Marken-Hintergrund in 3 Formaten (4:5/1:1/9:16).
+  Aufruf: `npm run content-overlays`.
+- **`build-gallery.mjs`** (`buildContentOverlays`): listet je Zitat/Fakt eine Overlay-Karte
+  („Zitate · Overlay" / „Studien-Fakten · Overlay") mit Format-Vorschau + ZIP (transparente Overlays +
+  Hintergründe + `SO-GEHTS.txt`).
+
+Erzeugen: `npm run content-overlays && npm run vorlagen:galerie` (rendert lokal via Chromium/Playwright).
+
 ---
 
 ## 7. Externe Dienste & weitere Content-Quellen

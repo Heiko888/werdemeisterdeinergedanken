@@ -579,6 +579,132 @@ async function buildStoryCarousels() {
   return count;
 }
 
+// --- 3d. Content-Overlays „Zitate" & „Studien-Fakten" -----------------------
+// Overlay-Variante der bestehenden Zitat-/Fakten-Posts: transparentes Text-
+// Overlay + Marken-Hintergrund je Format, zum Legen über ein eigenes Foto in
+// Canva. Pro Zitat/Fakt ein Eintrag (kategorie:"carousel", Tab „Carousels").
+
+async function buildContentOverlays() {
+  const root = join(ROOT, "docs", "marketing", "content-overlays");
+  if (!existsSync(root)) return 0;
+
+  const FMT = [
+    { key: "4x5", label: "4:5", w: 1080, h: 1350 },
+    { key: "1x1", label: "1:1", w: 1080, h: 1080 },
+    { key: "9x16", label: "9:16", w: 1080, h: 1920 },
+  ];
+  const SERIE = {
+    "zitate": "Zitate · Overlay",
+    "studien-fakten": "Studien-Fakten · Overlay",
+  };
+
+  const dir = join(OUT, "content-overlay");
+  ensureDir(dir);
+  const tmpRoot = join(OUT, ".tmp-content-overlay");
+
+  let count = 0;
+  for (const [serie, label] of Object.entries(SERIE)) {
+    const src = join(root, serie);
+    if (!existsSync(src)) continue;
+    const formate = FMT.filter((f) => existsSync(join(src, f.key)));
+    if (formate.length === 0) continue;
+
+    const base = formate[0];
+    const overlays = collect(join(src, base.key), [".png"]).filter((f) =>
+      /overlay-\d+/.test(basename(f)),
+    );
+
+    for (const ovBase of overlays) {
+      const file = basename(ovBase); // overlay-NN.png
+      const m = file.match(/^overlay-(\d+)\.png$/);
+      if (!m) continue;
+      const nr = m[1];
+      const id = `overlay-${serie}-${nr}`;
+
+      // Vorschau je Format: Hintergrund + Overlay komponieren → webp.
+      const slideDir = join(dir, id);
+      ensureDir(slideDir);
+      const slidePaths = [];
+      const tmp = join(tmpRoot, id);
+      ensureDir(tmp);
+
+      for (const F of formate) {
+        const bg = join(src, F.key, "_hintergrund.png");
+        const ov = join(src, F.key, file);
+        if (!existsSync(ov)) continue;
+        // sharp wendet resize intern VOR composite an → beide Ebenen vorab auf
+        // Vorschaubreite bringen, dann compositen (sonst Dimensions-Fehler).
+        const ovBuf = await sharp(ov)
+          .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+          .toBuffer();
+        const name = `preview-${F.key}.webp`;
+        let previewBuf;
+        if (existsSync(bg)) {
+          const bgBuf = await sharp(bg)
+            .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+            .toBuffer();
+          previewBuf = await sharp(bgBuf)
+            .composite([{ input: ovBuf }])
+            .webp({ quality: 82, effort: 6, smartSubsample: true })
+            .toBuffer();
+        } else {
+          previewBuf = await sharp(ovBuf)
+            .webp({ quality: 82, effort: 6, smartSubsample: true })
+            .toBuffer();
+        }
+        writeFileSync(join(slideDir, name), previewBuf);
+        slidePaths.push(`/admin/vorlagen/datei/content-overlay/${id}/${name}`);
+        // Original-PNGs (transparent + Hintergrund) fürs ZIP ablegen.
+        cpSync(ov, join(tmp, `overlay-${F.key}.png`));
+        if (existsSync(bg)) cpSync(bg, join(tmp, `hintergrund-${F.key}.png`));
+      }
+      if (slidePaths.length === 0) continue;
+
+      // Kurzanleitung ins ZIP.
+      writeFileSync(
+        join(tmp, "SO-GEHTS.txt"),
+        [
+          `${label} – Overlay-Vorlage`,
+          "",
+          "In Canva 3 Ebenen stapeln (von hinten nach vorne):",
+          "  1) hintergrund-<format>.png   ODER dein eigenes Foto (ganz nach hinten)",
+          "  2) optional: dein freigestelltes Foto (Mitte)",
+          "  3) overlay-<format>.png       (ganz nach vorne)",
+          "",
+          "Der dunkle Scrim im Overlay hält den Text auf jedem Foto lesbar.",
+          "Formate: 4:5 (Feed), 1:1 (Feed), 9:16 (Story/Reel).",
+        ].join("\n"),
+      );
+
+      const zipName = `${id}.zip`;
+      const zipPath = join(dir, zipName);
+      if (existsSync(zipPath)) rmSync(zipPath);
+      const res = spawnSync("zip", ["-r", "-q", zipPath, "."], {
+        cwd: tmp,
+        stdio: "inherit",
+      });
+      if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
+
+      assets.push({
+        kategorie: "carousel",
+        titel: `${serie === "zitate" ? "Zitat" : "Fakt"} ${nr}`,
+        unterKategorie: label,
+        kind: "carousel",
+        slides: slidePaths.length,
+        sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
+        thumb: slidePaths[0],
+        slidePaths,
+        href: `/admin/vorlagen/datei/content-overlay/${zipName}`,
+        formate: formate.map((f) => ({ label: f.label, w: f.w, h: f.h })),
+      });
+      count++;
+    }
+  }
+
+  if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
+  return count;
+}
+
 // --- 4. Workshop-Dateien (Download, keine Vorschau) -------------------------
 
 function buildWorkshop() {
@@ -648,6 +774,8 @@ async function main() {
   console.log(`✓ Story-Overlays (Persönliche Geschichten, als ZIP): ${stories}`);
   const storyCarousels = await buildStoryCarousels();
   console.log(`✓ Story-Carousels (komplette Geschichten, als ZIP): ${storyCarousels}`);
+  const contentOverlays = await buildContentOverlays();
+  console.log(`✓ Content-Overlays (Zitate & Fakten, als ZIP): ${contentOverlays}`);
   const marketing = await buildMarketingCarousels({ OUT, assets });
   console.log(`✓ Carousels (Marketing/Funnel, als ZIP): ${marketing}`);
   const workshop = buildWorkshop();
