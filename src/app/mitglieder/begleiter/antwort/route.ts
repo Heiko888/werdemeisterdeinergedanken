@@ -122,10 +122,16 @@ export async function POST(request: Request): Promise<Response> {
   });
 
   // ---- Frage speichern, bevor geantwortet wird ----
-  const { error: insertError } = await supabase
+  // Die id merken: Scheitert der KI-Aufruf, wird diese Zeile wieder entfernt,
+  // damit ein Fehlversuch weder den Verlauf verschmutzt (sonst stünden lauter
+  // unbeantwortete Fragen als Kontext im nächsten Aufruf) noch das Tageslimit
+  // verbraucht.
+  const { data: savedQuestion, error: insertError } = await supabase
     .from("begleiter_messages")
-    .insert({ user_id: user.id, role: "user", body: message });
-  if (insertError) return fail("not_configured", 503);
+    .insert({ user_id: user.id, role: "user", body: message })
+    .select("id")
+    .single();
+  if (insertError || !savedQuestion) return fail("not_configured", 503);
 
   // ---- Antwort streamen ----
   const anthropic = new Anthropic({ apiKey });
@@ -156,10 +162,22 @@ export async function POST(request: Request): Promise<Response> {
             controller.enqueue(encoder.encode(event.delta.text));
           }
         }
-      } catch {
+      } catch (err) {
+        // Den echten Fehler in die Server-Logs schreiben – nur so lässt sich
+        // im Betrieb erkennen, WORAN der KI-Aufruf scheitert (ungültiger Key,
+        // fehlendes Guthaben, blockierter Ausgang, Modell nicht verfügbar …).
+        // Der Text an die Person bleibt bewusst allgemein.
+        console.error("[begleiter] KI-Aufruf fehlgeschlagen:", err);
+
         // Abbruch mitten im Stream: Der Status steht schon auf 200, deshalb
-        // kommt der Hinweis als Text – und die Antwort wird nicht gespeichert.
+        // kommt der Hinweis als Text.
         if (!answer) {
+          // Ohne Antwort war der Versuch ergebnislos – die gespeicherte Frage
+          // wieder entfernen (siehe Kommentar oben beim Speichern).
+          await supabase
+            .from("begleiter_messages")
+            .delete()
+            .eq("id", savedQuestion.id);
           controller.enqueue(
             encoder.encode(
               "Die Antwort konnte gerade nicht erzeugt werden. Versuch es in einem Moment noch einmal.",
