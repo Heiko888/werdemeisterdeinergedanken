@@ -5,7 +5,14 @@ import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Brain, Check, Download, Play } from "@/components/ui/Icon";
+import {
+  ArrowRight,
+  Brain,
+  Check,
+  Download,
+  Play,
+  Spark,
+} from "@/components/ui/Icon";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/config";
 import { isAdminEmail } from "@/lib/admin";
@@ -18,6 +25,7 @@ import {
   featuredPractice,
 } from "@/lib/practices";
 import { NewsletterToggle } from "@/components/members/NewsletterToggle";
+import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
 
 export const dynamic = "force-dynamic";
 
@@ -86,6 +94,9 @@ export default async function MembersPage() {
     }
   }
 
+  // Der KI-Begleiter wird nur verlinkt, wenn er serverseitig eingerichtet ist.
+  const begleiterVerfuegbar = loggedIn && (await isBegleiterConfigured());
+
   const completed = new Set(completedKeys);
   const completedCount = stages.filter((s) => completed.has(s.number)).length;
 
@@ -153,6 +164,16 @@ export default async function MembersPage() {
               >
                 <Check />
                 Mein Journal
+                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            )}
+            {begleiterVerfuegbar && (
+              <Link
+                href="/mitglieder/begleiter"
+                className="group inline-flex items-center gap-2 rounded-full border border-accent/40 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/70 hover:text-accent"
+              >
+                <Spark />
+                Dein Begleiter
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             )}
