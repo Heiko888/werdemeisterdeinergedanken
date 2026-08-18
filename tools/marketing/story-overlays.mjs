@@ -14,6 +14,7 @@ import { writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
+import { ARROW } from "../../docs/_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -72,7 +73,7 @@ const overlayBody = (s, i) => `<div class="scrim"></div>
   <h1>${s.head}</h1><div class="bar"></div>
   <div class="sub">${s.sub}</div>
 </div>
-<div class="foot"><span class="h">Persönliche Geschichten</span><span class="s">wischen →</span></div>`;
+<div class="foot"><span class="h">Persönliche Geschichten</span><span class="s">wischen ${ARROW}</span></div>`;
 
 const doc = (F, body, transparent) =>
   `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">

@@ -17,6 +17,7 @@ import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { HANDLE, GRAD, FORMAT, FORMATS, loadCarousels } from "./data.mjs";
+import { ARROW } from "../_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const BUILD = join(HERE, "build");
@@ -203,7 +204,7 @@ function slideHtml(car, slide, idx, total, F) {
   const foot = `<div class="foot">
         <span class="handle">${isCover ? car.seriesLabel : HANDLE}</span>
         ${dots(idx, total)}
-        <span class="count">${isCover ? '<span class="swipe">wischen →</span>' : `${idx + 1}/${total}`}</span>
+        <span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span>
       </div>`;
   // Slide-HTML liegt in <serie>/<slug>/<format>/ → vier Ebenen bis docs/carousels.
   return `<!doctype html>
@@ -324,7 +325,7 @@ if (outSelf) {
         : slide.role === "cta"
           ? `<div class="mid"><div class="eyebrow">Dein nächster Schritt</div><div class="cta">${slide.text}</div><div class="cta-handle">${HANDLE}</div></div>`
           : `<div class="mid"><div class="eyebrow">${car.topic}</div><div class="body" style="font-size:${bodyFs(slide.text)}px">${slide.text}</div></div>`;
-    const foot = `<div class="foot"><span class="handle">${isCover ? car.seriesLabel : HANDLE}</span>${dots(i, total)}<span class="count">${isCover ? '<span class="swipe">wischen →</span>' : `${i + 1}/${total}`}</span></div>`;
+    const foot = `<div class="foot"><span class="handle">${isCover ? car.seriesLabel : HANDLE}</span>${dots(i, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${i + 1}/${total}`}</span></div>`;
     return `<div class="frame" style="width:${gfw}px;height:${gfh}px"><div class="slide" style="transform:scale(${gscale.toFixed(4)})">
       <div class="content"><div class="top"><div class="logo"></div><div class="tag">${car.seriesLabel}</div></div>${mid}${foot}</div></div></div>`;
   };
