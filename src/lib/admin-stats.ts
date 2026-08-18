@@ -32,10 +32,15 @@ export type FunnelStats = {
   tests: { total: number; byStage: number[] };
 };
 
+/** Zaehl-Query, wie sie `admin.from(t).select("*", { count, head })` liefert. */
+type CountQuery = ReturnType<
+  ReturnType<NonNullable<ReturnType<typeof createAdminClient>>["from"]>["select"]
+>;
+
 async function safeCount(
   admin: ReturnType<typeof createAdminClient>,
   table: string,
-  build?: (q: any) => any,
+  build?: (q: CountQuery) => CountQuery,
 ): Promise<number> {
   if (!admin) return 0;
   try {
