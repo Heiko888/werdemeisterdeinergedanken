@@ -144,17 +144,6 @@ const factTile = (w, h, f) => shell(w, h, `
 
 // Gratis-E-Book-Einzelpost – orientierungsbewusst (Querformat = zweispaltig),
 // bewusst luftig. Schriftgrößen an der kürzeren Kante ausgerichtet.
-const EBOOK_BULLETS = `<div class="bul">
-    <div class="li"><span class="ck">✓</span><span>Die 7 Stufen kompakt erklärt</span></div>
-    <div class="li"><span class="ck">✓</span><span>Erste Übungen für mehr Klarheit</span></div>
-    <div class="li"><span class="ck">✓</span><span>Sofort per E-Mail – 100 % kostenlos</span></div>
-  </div>`;
-const EBOOK_TEXT = `<div class="eyebrow">Gratis-Einstieg · Kostenloses E-Book</div>
-    <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
-    ${EBOOK_BULLETS}
-    <div class="cta">Gratis sichern – Link in Bio</div>
-    <div class="url">www.werdemeisterdeinergedanken.de</div>`;
-
 const ebookPost = (w, h) => {
   const land = w > h * 1.15;            // deutlich breiter → Querformat
   const base = Math.min(w, h);

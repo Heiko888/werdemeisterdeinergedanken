@@ -149,13 +149,11 @@ strong{ font-weight:700; } em{ font-style:italic; color:#3a4a5e; }
 `;
 
 function renderPdf(build) {
-  let scripts = 0;
   const body = build.sections
     .filter((s) => s.files.length)
     .map((s) => {
       const inner = s.files.map((f) => {
         const md = readFileSync(f, "utf8");
-        scripts += Math.max(1, (md.match(/^##\s+/gm) || []).length ? 1 : 1); // Datei = mind. 1 Skript
         return mdToHtml(md);
       }).join('\n<hr style="border:0;border-top:1px solid #e6ecf4;margin:6mm 0">\n');
       return `<section class="serie"><h1>${s.label}</h1>\n${inner}</section>`;

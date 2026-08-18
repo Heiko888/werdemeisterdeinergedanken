@@ -51,7 +51,7 @@ const STORIES = [
   },
 ];
 
-const cssFor = (F, total) => `*{margin:0;box-sizing:border-box}
+const cssFor = (F) => `*{margin:0;box-sizing:border-box}
 body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative}
 .bg{position:absolute;inset:0;background:
  radial-gradient(52% 80% at 22% 14%, rgba(33,178,189,.28), transparent 60%),
@@ -81,7 +81,7 @@ em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:te
 
 const dots = (i, total) => `<div class="dots">${Array.from({ length: total }, (_, k) => `<span class="dot ${k === i ? "on" : ""}"></span>`).join("")}</div>`;
 
-function slideInner(s, i, total, nr) {
+function slideInner(s) {
   if (s.role === "cover") {
     // NUR Text + Scrim (transparent) – das Foto kommt in Canva darunter.
     return `<div class="scrim"></div><div class="cover-box"><div class="cover-eb">${s.eyebrow}</div><div class="cover-h">${s.head}</div></div>`;
@@ -97,8 +97,8 @@ function doc(F, s, i, total, nr, { transparent, withBg }) {
   const pageno = i === 0 ? "" : `<div class="pageno">${nr}</div>`;
   const bg = withBg ? `<div class="bg"></div><div class="stars"></div>` : "";
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>body{background:${transparent ? "transparent" : "#08102a"}}${cssFor(F, total)}</style></head><body>
-${bg}<img class="brainmini" src="${brain}">${pageno}${slideInner(s, i, total, nr)}${foot}</body></html>`;
+<style>body{background:${transparent ? "transparent" : "#08102a"}}${cssFor(F)}</style></head><body>
+${bg}<img class="brainmini" src="${brain}">${pageno}${slideInner(s)}${foot}</body></html>`;
 }
 
 const require = createRequire(import.meta.url);
@@ -124,7 +124,7 @@ for (const story of STORIES) {
     {
       const pg = await browser.newPage({ viewport: { width: F.w, height: F.h } });
       const tmp = join(HERE, `.h-${F.key}.html`);
-      writeFileSync(tmp, `<!doctype html><html><head><style>body{margin:0}${cssFor(F, total)}</style></head><body><div class="bg"></div><div class="stars"></div></body></html>`);
+      writeFileSync(tmp, `<!doctype html><html><head><style>body{margin:0}${cssFor(F)}</style></head><body><div class="bg"></div><div class="stars"></div></body></html>`);
       await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
       await pg.screenshot({ path: join(dir, "_hintergrund.png") });
       await pg.close(); rmSync(tmp, { force: true });

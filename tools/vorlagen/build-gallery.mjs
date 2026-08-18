@@ -209,8 +209,6 @@ async function buildReels() {
     { key: "landscape-16x9", label: "16:9", w: 1920, h: 1080 },
   ];
   const tmpRoot = join(OUT, ".tmp-reels");
-
-  let i = 0;
   for (const file of files) {
     const rel = file.slice(src.length + 1); // "stufen/reel-9x16/cover-03.png"
     const bereich = rel.split("/")[0];
