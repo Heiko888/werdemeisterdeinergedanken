@@ -65,11 +65,15 @@ Ordner `slide-01.webp … slide-NN.webp` (5–9 Slides):
 
 **`content/vorlagen/reels/`** — 59 `.webp` (reel-landing 3, reel-praxis 13,
 reel-selbstverteidigung 16, reel-stufen 7, reel-vertiefungen 13,
-reel-wissenschaft 7).
+reel-wissenschaft 7) **+ 59 gleichnamige `.zip`** (alle Formate je Cover).
 
-**`content/vorlagen/thumbs/`** — `reels/` 59 `.webp`, `social/` 108 `.webp`.
+**`content/vorlagen/thumbs/`** — `reels/` 59 `.webp`, `social/` 198 `.webp`.
 
-**`content/vorlagen/social/`** — 108 `.webp` (`social-001 … social-108`).
+**`content/vorlagen/social/`** — 198 `.webp` (`social-001 … social-198`).
+
+**`content/vorlagen/content-overlay/`** — 28 Ordner + 28 gleichnamige `.zip`
+(`overlay-zitate-NN`, `overlay-studien-fakten-NN`), aus
+`tools/marketing/content-overlays.mjs`.
 
 **`content/vorlagen/story/`** — 6 Ordner + 6 gleichnamige `.zip`
 (Titel-Overlays „Persönliche Geschichten", aus
@@ -78,10 +82,11 @@ reel-wissenschaft 7).
 **`content/vorlagen/story-carousel/`** — 1 Ordner + 1 `.zip` (komplette
 Bild-Geschichte, aus `tools/marketing/story-carousels.mjs`).
 
-> **Noch nicht gebaut:** `content-overlay/`, `cover-overlay/` und
-> `carousel-overlay/` fehlen im Repo — die zugehörigen Generatoren bzw. der
-> Overlay-Export kamen nach dem letzten `npm run vorlagen:galerie`-Lauf dazu.
-> Sie entstehen beim nächsten Vollbau.
+> **Noch nicht gebaut:** `cover-overlay/` und `carousel-overlay/` fehlen im
+> Repo. Sie speisen sich aus `docs/{reels/covers,carousels}/export-overlay/`
+> (#78) — diese Exporte sind git-ignoriert und müssen vor dem Galerie-Bau
+> lokal per `npm run covers:png` bzw. `npm run carousels:png` erzeugt werden.
+> Ohne sie tragen die beiden Schritte still 0 Einträge ein.
 
 **`content/vorlagen/workshop/`** — 39 Dateien: 5 Carousel-Text-PDFs, 8
 Moderationspläne, 6 Reel-Drehbücher, 3 Video-Drehbücher, 8 Workbooks, 8
@@ -103,7 +108,7 @@ Aggregat: **86 Markdown**, **106 PNG**, **30 PDF**, **9 PPTX**.
   praxis 13, reels 5, stufen 7, stufen-komplett 7, vertiefungen 14,
   vertiefungen-komplett 14, wissenschaft 1 + README. **Quelle der Carousel-/
   Reel-/Video-Generatoren.**
-- `docs/marketing/` — **160 PNG** + Generator-Skripte (nach Kanal gruppiert);
+- `docs/marketing/` — **250 PNG** + Generator-Skripte (nach Kanal gruppiert);
   darin die Overlay-Ordner `story-overlays/`, `story-carousels/` und
   `content-overlays/` aus `tools/marketing/*.mjs`.
 - `docs/carousels/` & `docs/reels/covers/` — Generatoren + Templates (Ausgabe
@@ -142,8 +147,8 @@ Mitglieder-PDFs liegen geschützt unter `content/pdf/`.
 | Bewusstseinstest | 21 Aussagen / 7 Test-Stufen |
 | E-Mail-Impulse | 7 |
 | Carousels | 53 im Status-Katalog · **54 Bildordner** (+ 54 ZIP) |
-| Reels | 97 im Status-Katalog · **59 Cover** (+ 59 Thumbs) |
-| Social-Grafiken | 108 (+ 108 Thumbs) |
+| Reels | 97 im Status-Katalog · **59 Cover** (+ 59 Thumbs, + 59 ZIP) |
+| Social-Grafiken | 198 (+ 198 Thumbs) |
 | Mitglieder-PDFs (`content/pdf/`) | 44 |
 | Workshop-Materialien | 39 |
 | Marketing-Rohtext-Skripte (`docs/skripte/`) | 70 MD |

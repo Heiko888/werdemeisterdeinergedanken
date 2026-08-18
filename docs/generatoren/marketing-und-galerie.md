@@ -239,11 +239,16 @@ content/vorlagen/
 └── workshop/          WMDG-*.pptx / WMDG-*.pdf
 ```
 
-**Stand im Repo:** `social`, `reels`, `thumbs`, `carousels`, `story`,
-`story-carousel` und `workshop` sind eingecheckt. Die drei Overlay-Bereiche
-`content-overlay`, `cover-overlay` und `carousel-overlay` entstehen erst beim
-**nächsten** Galerie-Vollbau — die zugehörigen Generatoren (#77) und der
-Overlay-Export (#78) kamen nach dem letzten `vorlagen:galerie`-Lauf dazu.
+**Stand im Repo:** eingecheckt sind `social` (198 webp), `reels` (59 webp +
+59 ZIP), `thumbs`, `carousels` (54 Ordner), `story` (6), `story-carousel` (1),
+`content-overlay` (28) und `workshop`; der Katalog zählt 386 Einträge.
+
+`cover-overlay` und `carousel-overlay` fehlen noch. Sie lesen aus
+`docs/{reels/covers,carousels}/export-overlay/` — diese Ordner sind
+git-ignoriert und entstehen erst durch einen lokalen Lauf von
+`npm run covers:png` bzw. `npm run carousels:png`. Fehlen sie, tragen
+`buildCoverOverlays()` und `buildCarouselOverlays()` **still 0 Einträge** ein
+(`existsSync`-Guard, kein Fehler).
 
 Trenner im Carousel-Namen: **doppelter Unterstrich** `<serie>__<slug>`. Ein
 Carousel-Ordner enthält **ausschließlich `slide-NN.webp`** — **kein `meta.json`**,
