@@ -38,11 +38,1181 @@ export type VorlagenAsset = {
 export const vorlagenAssets: VorlagenAsset[] = [
   {
     "kategorie": "social",
-    "titel": "Ebook 16x9",
-    "unterKategorie": "ebook",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-001.webp",
     "href": "/admin/vorlagen/datei/social/social-001.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-002.webp",
+    "href": "/admin/vorlagen/datei/social/social-002.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-003.webp",
+    "href": "/admin/vorlagen/datei/social/social-003.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-004.webp",
+    "href": "/admin/vorlagen/datei/social/social-004.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-005.webp",
+    "href": "/admin/vorlagen/datei/social/social-005.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-006.webp",
+    "href": "/admin/vorlagen/datei/social/social-006.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-007.webp",
+    "href": "/admin/vorlagen/datei/social/social-007.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-008.webp",
+    "href": "/admin/vorlagen/datei/social/social-008.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-009.webp",
+    "href": "/admin/vorlagen/datei/social/social-009.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-010.webp",
+    "href": "/admin/vorlagen/datei/social/social-010.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-011.webp",
+    "href": "/admin/vorlagen/datei/social/social-011.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-012.webp",
+    "href": "/admin/vorlagen/datei/social/social-012.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-013.webp",
+    "href": "/admin/vorlagen/datei/social/social-013.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-014.webp",
+    "href": "/admin/vorlagen/datei/social/social-014.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-015.webp",
+    "href": "/admin/vorlagen/datei/social/social-015.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-016.webp",
+    "href": "/admin/vorlagen/datei/social/social-016.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
+    "href": "/admin/vorlagen/datei/social/social-017.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
+    "href": "/admin/vorlagen/datei/social/social-018.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
+    "href": "/admin/vorlagen/datei/social/social-019.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
+    "href": "/admin/vorlagen/datei/social/social-020.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
+    "href": "/admin/vorlagen/datei/social/social-021.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
+    "href": "/admin/vorlagen/datei/social/social-022.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
+    "href": "/admin/vorlagen/datei/social/social-023.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
+    "href": "/admin/vorlagen/datei/social/social-024.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
+    "href": "/admin/vorlagen/datei/social/social-025.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
+    "href": "/admin/vorlagen/datei/social/social-026.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
+    "href": "/admin/vorlagen/datei/social/social-027.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
+    "href": "/admin/vorlagen/datei/social/social-028.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
+    "href": "/admin/vorlagen/datei/social/social-029.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
+    "href": "/admin/vorlagen/datei/social/social-030.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
+    "href": "/admin/vorlagen/datei/social/social-031.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
+    "href": "/admin/vorlagen/datei/social/social-032.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
+    "href": "/admin/vorlagen/datei/social/social-033.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
+    "href": "/admin/vorlagen/datei/social/social-034.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
+    "href": "/admin/vorlagen/datei/social/social-035.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
+    "href": "/admin/vorlagen/datei/social/social-036.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
+    "href": "/admin/vorlagen/datei/social/social-037.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
+    "href": "/admin/vorlagen/datei/social/social-038.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
+    "href": "/admin/vorlagen/datei/social/social-039.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
+    "href": "/admin/vorlagen/datei/social/social-040.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
+    "href": "/admin/vorlagen/datei/social/social-041.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
+    "href": "/admin/vorlagen/datei/social/social-042.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
+    "href": "/admin/vorlagen/datei/social/social-043.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
+    "href": "/admin/vorlagen/datei/social/social-044.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
+    "href": "/admin/vorlagen/datei/social/social-045.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
+    "href": "/admin/vorlagen/datei/social/social-046.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
+    "href": "/admin/vorlagen/datei/social/social-047.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
+    "href": "/admin/vorlagen/datei/social/social-048.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
+    "href": "/admin/vorlagen/datei/social/social-049.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
+    "href": "/admin/vorlagen/datei/social/social-050.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
+    "href": "/admin/vorlagen/datei/social/social-051.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
+    "href": "/admin/vorlagen/datei/social/social-052.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
+    "href": "/admin/vorlagen/datei/social/social-053.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
+    "href": "/admin/vorlagen/datei/social/social-054.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
+    "href": "/admin/vorlagen/datei/social/social-055.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
+    "href": "/admin/vorlagen/datei/social/social-056.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
+    "href": "/admin/vorlagen/datei/social/social-057.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
+    "href": "/admin/vorlagen/datei/social/social-058.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
+    "href": "/admin/vorlagen/datei/social/social-059.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
+    "href": "/admin/vorlagen/datei/social/social-060.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
+    "href": "/admin/vorlagen/datei/social/social-061.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
+    "href": "/admin/vorlagen/datei/social/social-062.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
+    "href": "/admin/vorlagen/datei/social/social-063.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
+    "href": "/admin/vorlagen/datei/social/social-064.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
+    "href": "/admin/vorlagen/datei/social/social-065.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
+    "href": "/admin/vorlagen/datei/social/social-066.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
+    "href": "/admin/vorlagen/datei/social/social-067.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
+    "href": "/admin/vorlagen/datei/social/social-068.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
+    "href": "/admin/vorlagen/datei/social/social-069.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
+    "href": "/admin/vorlagen/datei/social/social-070.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
+    "href": "/admin/vorlagen/datei/social/social-071.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
+    "href": "/admin/vorlagen/datei/social/social-072.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-073.webp",
+    "href": "/admin/vorlagen/datei/social/social-073.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-074.webp",
+    "href": "/admin/vorlagen/datei/social/social-074.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-075.webp",
+    "href": "/admin/vorlagen/datei/social/social-075.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-076.webp",
+    "href": "/admin/vorlagen/datei/social/social-076.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
+    "href": "/admin/vorlagen/datei/social/social-077.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
+    "href": "/admin/vorlagen/datei/social/social-078.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
+    "href": "/admin/vorlagen/datei/social/social-079.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
+    "href": "/admin/vorlagen/datei/social/social-080.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
+    "href": "/admin/vorlagen/datei/social/social-081.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
+    "href": "/admin/vorlagen/datei/social/social-082.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
+    "href": "/admin/vorlagen/datei/social/social-083.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
+    "href": "/admin/vorlagen/datei/social/social-084.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
+    "href": "/admin/vorlagen/datei/social/social-085.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
+    "href": "/admin/vorlagen/datei/social/social-086.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
+    "href": "/admin/vorlagen/datei/social/social-087.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
+    "href": "/admin/vorlagen/datei/social/social-088.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
+    "href": "/admin/vorlagen/datei/social/social-089.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
+    "href": "/admin/vorlagen/datei/social/social-090.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 16x9",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
+    "href": "/admin/vorlagen/datei/social/social-091.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -54,8 +1224,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 1x1",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-002.webp",
-    "href": "/admin/vorlagen/datei/social/social-002.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
+    "href": "/admin/vorlagen/datei/social/social-092.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -67,8 +1237,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 2x3",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-003.webp",
-    "href": "/admin/vorlagen/datei/social/social-003.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
+    "href": "/admin/vorlagen/datei/social/social-093.webp",
     "masse": {
       "label": "2:3",
       "w": 2000,
@@ -80,8 +1250,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 4x5",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-004.webp",
-    "href": "/admin/vorlagen/datei/social/social-004.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
+    "href": "/admin/vorlagen/datei/social/social-094.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -93,8 +1263,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 9x16",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-005.webp",
-    "href": "/admin/vorlagen/datei/social/social-005.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
+    "href": "/admin/vorlagen/datei/social/social-095.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -106,8 +1276,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Facebook Cover",
     "unterKategorie": "Facebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-006.webp",
-    "href": "/admin/vorlagen/datei/social/social-006.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
+    "href": "/admin/vorlagen/datei/social/social-096.webp",
     "masse": {
       "label": "",
       "w": 1640,
@@ -119,8 +1289,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 16x9",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-007.webp",
-    "href": "/admin/vorlagen/datei/social/social-007.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
+    "href": "/admin/vorlagen/datei/social/social-097.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -132,8 +1302,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 1x1",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-008.webp",
-    "href": "/admin/vorlagen/datei/social/social-008.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
+    "href": "/admin/vorlagen/datei/social/social-098.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -145,8 +1315,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 2x3",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-009.webp",
-    "href": "/admin/vorlagen/datei/social/social-009.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
+    "href": "/admin/vorlagen/datei/social/social-099.webp",
     "masse": {
       "label": "2:3",
       "w": 2000,
@@ -158,8 +1328,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 4x5",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-010.webp",
-    "href": "/admin/vorlagen/datei/social/social-010.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
+    "href": "/admin/vorlagen/datei/social/social-100.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -171,8 +1341,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 9x16",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-011.webp",
-    "href": "/admin/vorlagen/datei/social/social-011.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-101.webp",
+    "href": "/admin/vorlagen/datei/social/social-101.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -184,8 +1354,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story Logo",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-012.webp",
-    "href": "/admin/vorlagen/datei/social/social-012.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-102.webp",
+    "href": "/admin/vorlagen/datei/social/social-102.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -197,8 +1367,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-013.webp",
-    "href": "/admin/vorlagen/datei/social/social-013.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-103.webp",
+    "href": "/admin/vorlagen/datei/social/social-103.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -210,8 +1380,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "LinkedIn Banner",
     "unterKategorie": "LinkedIn",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-014.webp",
-    "href": "/admin/vorlagen/datei/social/social-014.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-104.webp",
+    "href": "/admin/vorlagen/datei/social/social-104.webp",
     "masse": {
       "label": "4:1",
       "w": 2160,
@@ -223,8 +1393,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Messenger Kanalbild",
     "unterKategorie": "Messenger",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-015.webp",
-    "href": "/admin/vorlagen/datei/social/social-015.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-105.webp",
+    "href": "/admin/vorlagen/datei/social/social-105.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -236,8 +1406,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Kanalbild Quadrat",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-016.webp",
-    "href": "/admin/vorlagen/datei/social/social-016.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-106.webp",
+    "href": "/admin/vorlagen/datei/social/social-106.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -249,8 +1419,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Profilbild 1080",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
-    "href": "/admin/vorlagen/datei/social/social-017.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-107.webp",
+    "href": "/admin/vorlagen/datei/social/social-107.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -262,8 +1432,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Profilbild Rund",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
-    "href": "/admin/vorlagen/datei/social/social-018.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-108.webp",
+    "href": "/admin/vorlagen/datei/social/social-108.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -275,8 +1445,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Profilbild rund 1080",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
-    "href": "/admin/vorlagen/datei/social/social-019.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-109.webp",
+    "href": "/admin/vorlagen/datei/social/social-109.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -288,8 +1458,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Profilbild rund 500",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
-    "href": "/admin/vorlagen/datei/social/social-020.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-110.webp",
+    "href": "/admin/vorlagen/datei/social/social-110.webp",
     "masse": {
       "label": "1:1",
       "w": 500,
@@ -301,8 +1471,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "YouTube Banner",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
-    "href": "/admin/vorlagen/datei/social/social-021.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-111.webp",
+    "href": "/admin/vorlagen/datei/social/social-111.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -314,8 +1484,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 01",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
-    "href": "/admin/vorlagen/datei/social/social-022.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-112.webp",
+    "href": "/admin/vorlagen/datei/social/social-112.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -327,8 +1497,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 02",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
-    "href": "/admin/vorlagen/datei/social/social-023.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-113.webp",
+    "href": "/admin/vorlagen/datei/social/social-113.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -340,8 +1510,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail vorlage",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
-    "href": "/admin/vorlagen/datei/social/social-024.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-114.webp",
+    "href": "/admin/vorlagen/datei/social/social-114.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -353,8 +1523,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 01 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
-    "href": "/admin/vorlagen/datei/social/social-025.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-115.webp",
+    "href": "/admin/vorlagen/datei/social/social-115.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -366,8 +1536,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 02 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
-    "href": "/admin/vorlagen/datei/social/social-026.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-116.webp",
+    "href": "/admin/vorlagen/datei/social/social-116.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -379,8 +1549,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 03 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
-    "href": "/admin/vorlagen/datei/social/social-027.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-117.webp",
+    "href": "/admin/vorlagen/datei/social/social-117.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -392,8 +1562,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 04 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
-    "href": "/admin/vorlagen/datei/social/social-028.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-118.webp",
+    "href": "/admin/vorlagen/datei/social/social-118.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -405,8 +1575,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 05 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
-    "href": "/admin/vorlagen/datei/social/social-029.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-119.webp",
+    "href": "/admin/vorlagen/datei/social/social-119.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -418,8 +1588,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 06 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
-    "href": "/admin/vorlagen/datei/social/social-030.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-120.webp",
+    "href": "/admin/vorlagen/datei/social/social-120.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -431,8 +1601,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 07 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
-    "href": "/admin/vorlagen/datei/social/social-031.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-121.webp",
+    "href": "/admin/vorlagen/datei/social/social-121.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -444,8 +1614,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 08 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
-    "href": "/admin/vorlagen/datei/social/social-032.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-122.webp",
+    "href": "/admin/vorlagen/datei/social/social-122.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -457,8 +1627,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 09 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
-    "href": "/admin/vorlagen/datei/social/social-033.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-123.webp",
+    "href": "/admin/vorlagen/datei/social/social-123.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -470,8 +1640,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 10 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
-    "href": "/admin/vorlagen/datei/social/social-034.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-124.webp",
+    "href": "/admin/vorlagen/datei/social/social-124.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -483,8 +1653,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 11 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
-    "href": "/admin/vorlagen/datei/social/social-035.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-125.webp",
+    "href": "/admin/vorlagen/datei/social/social-125.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -496,8 +1666,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 12 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
-    "href": "/admin/vorlagen/datei/social/social-036.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-126.webp",
+    "href": "/admin/vorlagen/datei/social/social-126.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -509,8 +1679,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 13 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
-    "href": "/admin/vorlagen/datei/social/social-037.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-127.webp",
+    "href": "/admin/vorlagen/datei/social/social-127.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -522,8 +1692,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 14 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
-    "href": "/admin/vorlagen/datei/social/social-038.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-128.webp",
+    "href": "/admin/vorlagen/datei/social/social-128.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -535,8 +1705,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 01 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
-    "href": "/admin/vorlagen/datei/social/social-039.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-129.webp",
+    "href": "/admin/vorlagen/datei/social/social-129.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -548,8 +1718,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 02 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
-    "href": "/admin/vorlagen/datei/social/social-040.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-130.webp",
+    "href": "/admin/vorlagen/datei/social/social-130.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -561,8 +1731,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 03 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
-    "href": "/admin/vorlagen/datei/social/social-041.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-131.webp",
+    "href": "/admin/vorlagen/datei/social/social-131.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -574,8 +1744,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 04 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
-    "href": "/admin/vorlagen/datei/social/social-042.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-132.webp",
+    "href": "/admin/vorlagen/datei/social/social-132.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -587,8 +1757,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 05 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
-    "href": "/admin/vorlagen/datei/social/social-043.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-133.webp",
+    "href": "/admin/vorlagen/datei/social/social-133.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -600,8 +1770,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 06 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
-    "href": "/admin/vorlagen/datei/social/social-044.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-134.webp",
+    "href": "/admin/vorlagen/datei/social/social-134.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -613,8 +1783,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 07 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
-    "href": "/admin/vorlagen/datei/social/social-045.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-135.webp",
+    "href": "/admin/vorlagen/datei/social/social-135.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -626,8 +1796,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 08 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
-    "href": "/admin/vorlagen/datei/social/social-046.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-136.webp",
+    "href": "/admin/vorlagen/datei/social/social-136.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -639,8 +1809,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 09 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
-    "href": "/admin/vorlagen/datei/social/social-047.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-137.webp",
+    "href": "/admin/vorlagen/datei/social/social-137.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -652,8 +1822,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 10 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
-    "href": "/admin/vorlagen/datei/social/social-048.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-138.webp",
+    "href": "/admin/vorlagen/datei/social/social-138.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -665,8 +1835,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 11 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
-    "href": "/admin/vorlagen/datei/social/social-049.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-139.webp",
+    "href": "/admin/vorlagen/datei/social/social-139.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -678,8 +1848,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 12 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
-    "href": "/admin/vorlagen/datei/social/social-050.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-140.webp",
+    "href": "/admin/vorlagen/datei/social/social-140.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -691,8 +1861,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 13 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
-    "href": "/admin/vorlagen/datei/social/social-051.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-141.webp",
+    "href": "/admin/vorlagen/datei/social/social-141.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -704,8 +1874,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 14 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
-    "href": "/admin/vorlagen/datei/social/social-052.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-142.webp",
+    "href": "/admin/vorlagen/datei/social/social-142.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -717,8 +1887,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 01 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
-    "href": "/admin/vorlagen/datei/social/social-053.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-143.webp",
+    "href": "/admin/vorlagen/datei/social/social-143.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -730,8 +1900,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 02 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
-    "href": "/admin/vorlagen/datei/social/social-054.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-144.webp",
+    "href": "/admin/vorlagen/datei/social/social-144.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -743,8 +1913,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 03 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
-    "href": "/admin/vorlagen/datei/social/social-055.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-145.webp",
+    "href": "/admin/vorlagen/datei/social/social-145.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -756,8 +1926,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 04 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
-    "href": "/admin/vorlagen/datei/social/social-056.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-146.webp",
+    "href": "/admin/vorlagen/datei/social/social-146.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -769,8 +1939,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 05 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
-    "href": "/admin/vorlagen/datei/social/social-057.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-147.webp",
+    "href": "/admin/vorlagen/datei/social/social-147.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -782,8 +1952,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 06 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
-    "href": "/admin/vorlagen/datei/social/social-058.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-148.webp",
+    "href": "/admin/vorlagen/datei/social/social-148.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -795,8 +1965,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 07 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
-    "href": "/admin/vorlagen/datei/social/social-059.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-149.webp",
+    "href": "/admin/vorlagen/datei/social/social-149.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -808,8 +1978,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 08 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
-    "href": "/admin/vorlagen/datei/social/social-060.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-150.webp",
+    "href": "/admin/vorlagen/datei/social/social-150.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -821,8 +1991,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 09 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
-    "href": "/admin/vorlagen/datei/social/social-061.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-151.webp",
+    "href": "/admin/vorlagen/datei/social/social-151.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -834,8 +2004,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 10 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
-    "href": "/admin/vorlagen/datei/social/social-062.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-152.webp",
+    "href": "/admin/vorlagen/datei/social/social-152.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -847,8 +2017,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 11 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
-    "href": "/admin/vorlagen/datei/social/social-063.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-153.webp",
+    "href": "/admin/vorlagen/datei/social/social-153.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -860,8 +2030,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 12 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
-    "href": "/admin/vorlagen/datei/social/social-064.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-154.webp",
+    "href": "/admin/vorlagen/datei/social/social-154.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -873,8 +2043,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 13 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
-    "href": "/admin/vorlagen/datei/social/social-065.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-155.webp",
+    "href": "/admin/vorlagen/datei/social/social-155.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -886,8 +2056,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 14 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
-    "href": "/admin/vorlagen/datei/social/social-066.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-156.webp",
+    "href": "/admin/vorlagen/datei/social/social-156.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -899,8 +2069,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
-    "href": "/admin/vorlagen/datei/social/social-067.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-157.webp",
+    "href": "/admin/vorlagen/datei/social/social-157.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -912,8 +2082,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
-    "href": "/admin/vorlagen/datei/social/social-068.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-158.webp",
+    "href": "/admin/vorlagen/datei/social/social-158.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -925,8 +2095,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
-    "href": "/admin/vorlagen/datei/social/social-069.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-159.webp",
+    "href": "/admin/vorlagen/datei/social/social-159.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -938,8 +2108,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
-    "href": "/admin/vorlagen/datei/social/social-070.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-160.webp",
+    "href": "/admin/vorlagen/datei/social/social-160.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -951,8 +2121,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
-    "href": "/admin/vorlagen/datei/social/social-071.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-161.webp",
+    "href": "/admin/vorlagen/datei/social/social-161.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -964,8 +2134,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
-    "href": "/admin/vorlagen/datei/social/social-072.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-162.webp",
+    "href": "/admin/vorlagen/datei/social/social-162.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -977,8 +2147,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-073.webp",
-    "href": "/admin/vorlagen/datei/social/social-073.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-163.webp",
+    "href": "/admin/vorlagen/datei/social/social-163.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -990,8 +2160,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-074.webp",
-    "href": "/admin/vorlagen/datei/social/social-074.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-164.webp",
+    "href": "/admin/vorlagen/datei/social/social-164.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -1003,8 +2173,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-075.webp",
-    "href": "/admin/vorlagen/datei/social/social-075.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-165.webp",
+    "href": "/admin/vorlagen/datei/social/social-165.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -1016,8 +2186,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-076.webp",
-    "href": "/admin/vorlagen/datei/social/social-076.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-166.webp",
+    "href": "/admin/vorlagen/datei/social/social-166.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -1029,8 +2199,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
-    "href": "/admin/vorlagen/datei/social/social-077.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-167.webp",
+    "href": "/admin/vorlagen/datei/social/social-167.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -1042,8 +2212,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
-    "href": "/admin/vorlagen/datei/social/social-078.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-168.webp",
+    "href": "/admin/vorlagen/datei/social/social-168.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -1055,8 +2225,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
-    "href": "/admin/vorlagen/datei/social/social-079.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-169.webp",
+    "href": "/admin/vorlagen/datei/social/social-169.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -1068,8 +2238,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
-    "href": "/admin/vorlagen/datei/social/social-080.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-170.webp",
+    "href": "/admin/vorlagen/datei/social/social-170.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -1081,8 +2251,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
-    "href": "/admin/vorlagen/datei/social/social-081.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-171.webp",
+    "href": "/admin/vorlagen/datei/social/social-171.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1094,8 +2264,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
-    "href": "/admin/vorlagen/datei/social/social-082.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-172.webp",
+    "href": "/admin/vorlagen/datei/social/social-172.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1107,8 +2277,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
-    "href": "/admin/vorlagen/datei/social/social-083.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-173.webp",
+    "href": "/admin/vorlagen/datei/social/social-173.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1120,8 +2290,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
-    "href": "/admin/vorlagen/datei/social/social-084.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-174.webp",
+    "href": "/admin/vorlagen/datei/social/social-174.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1133,8 +2303,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
-    "href": "/admin/vorlagen/datei/social/social-085.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-175.webp",
+    "href": "/admin/vorlagen/datei/social/social-175.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1146,8 +2316,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
-    "href": "/admin/vorlagen/datei/social/social-086.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-176.webp",
+    "href": "/admin/vorlagen/datei/social/social-176.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1159,8 +2329,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
-    "href": "/admin/vorlagen/datei/social/social-087.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-177.webp",
+    "href": "/admin/vorlagen/datei/social/social-177.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1172,8 +2342,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
-    "href": "/admin/vorlagen/datei/social/social-088.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-178.webp",
+    "href": "/admin/vorlagen/datei/social/social-178.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1185,8 +2355,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
-    "href": "/admin/vorlagen/datei/social/social-089.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-179.webp",
+    "href": "/admin/vorlagen/datei/social/social-179.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1198,8 +2368,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
-    "href": "/admin/vorlagen/datei/social/social-090.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-180.webp",
+    "href": "/admin/vorlagen/datei/social/social-180.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1211,8 +2381,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
-    "href": "/admin/vorlagen/datei/social/social-091.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-181.webp",
+    "href": "/admin/vorlagen/datei/social/social-181.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1224,8 +2394,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
-    "href": "/admin/vorlagen/datei/social/social-092.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-182.webp",
+    "href": "/admin/vorlagen/datei/social/social-182.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1237,8 +2407,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
-    "href": "/admin/vorlagen/datei/social/social-093.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-183.webp",
+    "href": "/admin/vorlagen/datei/social/social-183.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1250,8 +2420,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
-    "href": "/admin/vorlagen/datei/social/social-094.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-184.webp",
+    "href": "/admin/vorlagen/datei/social/social-184.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -1263,8 +2433,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
-    "href": "/admin/vorlagen/datei/social/social-095.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-185.webp",
+    "href": "/admin/vorlagen/datei/social/social-185.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1276,8 +2446,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
-    "href": "/admin/vorlagen/datei/social/social-096.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-186.webp",
+    "href": "/admin/vorlagen/datei/social/social-186.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1289,8 +2459,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
-    "href": "/admin/vorlagen/datei/social/social-097.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-187.webp",
+    "href": "/admin/vorlagen/datei/social/social-187.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1302,8 +2472,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
-    "href": "/admin/vorlagen/datei/social/social-098.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-188.webp",
+    "href": "/admin/vorlagen/datei/social/social-188.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1315,8 +2485,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
-    "href": "/admin/vorlagen/datei/social/social-099.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-189.webp",
+    "href": "/admin/vorlagen/datei/social/social-189.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1328,8 +2498,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
-    "href": "/admin/vorlagen/datei/social/social-100.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-190.webp",
+    "href": "/admin/vorlagen/datei/social/social-190.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1341,8 +2511,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-101.webp",
-    "href": "/admin/vorlagen/datei/social/social-101.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-191.webp",
+    "href": "/admin/vorlagen/datei/social/social-191.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1354,8 +2524,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-102.webp",
-    "href": "/admin/vorlagen/datei/social/social-102.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-192.webp",
+    "href": "/admin/vorlagen/datei/social/social-192.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1367,8 +2537,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-103.webp",
-    "href": "/admin/vorlagen/datei/social/social-103.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-193.webp",
+    "href": "/admin/vorlagen/datei/social/social-193.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1380,8 +2550,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-104.webp",
-    "href": "/admin/vorlagen/datei/social/social-104.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-194.webp",
+    "href": "/admin/vorlagen/datei/social/social-194.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1393,8 +2563,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-105.webp",
-    "href": "/admin/vorlagen/datei/social/social-105.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-195.webp",
+    "href": "/admin/vorlagen/datei/social/social-195.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1406,8 +2576,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-106.webp",
-    "href": "/admin/vorlagen/datei/social/social-106.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-196.webp",
+    "href": "/admin/vorlagen/datei/social/social-196.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1419,8 +2589,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-107.webp",
-    "href": "/admin/vorlagen/datei/social/social-107.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-197.webp",
+    "href": "/admin/vorlagen/datei/social/social-197.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -1432,8 +2602,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-108.webp",
-    "href": "/admin/vorlagen/datei/social/social-108.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-198.webp",
+    "href": "/admin/vorlagen/datei/social/social-198.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -6009,6 +7179,1091 @@ export const vorlagenAssets: VorlagenAsset[] = [
     ]
   },
   {
+    "kategorie": "carousel",
+    "titel": "Zitat 01",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.2,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-01/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-01/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-01/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-01/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-01.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 02",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-02/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-02/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-02/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-02/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-02.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 03",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-03/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-03/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-03/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-03/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-03.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 04",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.2,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-04/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-04/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-04/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-04/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-04.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 05",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-05/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-05/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-05/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-05/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-05.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 06",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-06/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-06/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-06/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-06/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-06.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 07",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-07/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-07/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-07/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-07/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-07.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 08",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-08/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-08/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-08/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-08/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-08.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 09",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-09/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-09/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-09/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-09/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-09.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 10",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-10/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-10/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-10/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-10/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-10.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 11",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-11/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-11/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-11/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-11/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-11.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 12",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.2,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-12/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-12/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-12/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-12/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-12.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 13",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.2,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-13/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-13/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-13/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-13/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-13.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 14",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-14/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-14/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-14/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-14/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-14.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 01",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-01/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-01/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-01/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-01/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-01.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 02",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-02/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-02/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-02/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-02/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-02.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 03",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-03/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-03/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-03/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-03/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-03.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 04",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-04/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-04/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-04/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-04/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-04.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 05",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.5,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-05/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-05/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-05/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-05/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-05.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 06",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.2,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-06/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-06/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-06/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-06/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-06.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 07",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-07/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-07/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-07/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-07/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-07.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 08",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.5,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-08/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-08/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-08/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-08/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-08.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 09",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-09/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-09/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-09/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-09/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-09.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 10",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-10/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-10/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-10/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-10/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-10.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 11",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-11/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-11/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-11/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-11/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-11.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 12",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-12/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-12/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-12/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-12/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-12.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 13",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-13/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-13/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-13/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-13/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-13.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Fakt 14",
+    "unterKategorie": "Studien-Fakten · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.6,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-14/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-14/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-14/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-14/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-14.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.6,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich?",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.5,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.8,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
+  },
+  {
     "kategorie": "workshop",
     "titel": "Moderationsplan 7 Stufen",
     "unterKategorie": "Die 7 Stufen",
@@ -6367,194 +8622,5 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "format": "PPTX",
     "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Bis zu 60.000 Gedanken am Tag",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 9,
-    "sizeMB": 1.6,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "4 Wege zur mentalen Freiheit",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 8,
-    "sizeMB": 1.4,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Wer denkt hier eigentlich?",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 8,
-    "sizeMB": 1.5,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Studien-Fakten",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 9,
-    "sizeMB": 1.8,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Gratis-E-Book",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
   }
 ];
