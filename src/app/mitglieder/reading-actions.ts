@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { getTestProfile, getCompletedStages } from "@/app/mitglieder/actions";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
+import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
 
 /**
  * KI-Readings zum Gedankenprofil.
@@ -17,7 +18,7 @@ import { buildGedankenprofil } from "@/lib/gedankenprofil";
  * die Seite blendet die Reading-Option dann einfach aus.
  */
 
-const MODEL = "claude-opus-5";
+const MODEL = KI_MODELL;
 
 /** Ist die KI-Reading-Funktion serverseitig konfiguriert? */
 export async function isReadingConfigured(): Promise<boolean> {
@@ -126,21 +127,23 @@ Regeln:
 
   try {
     const anthropic = new Anthropic({ apiKey });
-    const response = await anthropic.messages.create({
-      model: MODEL,
-      // Deckelt Denk- UND Antworttokens zusammen: Thinking ist bei
-      // claude-opus-5 standardmäßig an. Ein Reading braucht nur ~400 Tokens,
-      // der Rest ist Puffer, damit nichts mitten im Satz abbricht.
-      max_tokens: 8000,
-      output_config: { effort: "low" },
-      system,
-      messages: [
-        {
-          role: "user",
-          content: `Hier ist mein Gedankenprofil. Schreib mir mein persönliches Reading dazu.\n\n${profileFacts}`,
-        },
-      ],
-    });
+    const response = await mitErsatzmodell((modell) =>
+      anthropic.messages.create({
+        model: modell,
+        // Deckelt Denk- UND Antworttokens zusammen: Thinking ist bei
+        // Opus standardmäßig an. Ein Reading braucht nur ~400 Tokens,
+        // der Rest ist Puffer, damit nichts mitten im Satz abbricht.
+        max_tokens: 8000,
+        output_config: { effort: "low" },
+        system,
+        messages: [
+          {
+            role: "user",
+            content: `Hier ist mein Gedankenprofil. Schreib mir mein persönliches Reading dazu.\n\n${profileFacts}`,
+          },
+        ],
+      }),
+    );
 
     if (response.stop_reason === "refusal") return { status: "error" };
     // Abgeschnitten – lieber gar kein Reading als ein halbes, das gespeichert
@@ -177,7 +180,11 @@ Regeln:
       status: "ok",
       reading: { body, createdAt, model: response.model ?? MODEL },
     };
-  } catch {
+  } catch (err) {
+    // Den echten Fehler in die Server-Logs schreiben – ohne ihn ist im Betrieb
+    // nicht zu erkennen, WORAN der Aufruf scheitert (Key, Guthaben, Kapazität).
+    // Der Text an die Person bleibt bewusst allgemein.
+    console.error("[reading] KI-Aufruf fehlgeschlagen:", err);
     return { status: "error" };
   }
 }

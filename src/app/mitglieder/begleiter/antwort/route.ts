@@ -16,6 +16,7 @@ import {
   MAX_INPUT_CHARS,
   type BegleiterError,
 } from "@/lib/begleiter";
+import { KI_MODELL_ERSATZ, istKapazitaetsfehler } from "@/lib/ki-modell";
 
 /**
  * KI-Begleiter – Antwort erzeugen (gestreamt).
@@ -140,52 +141,75 @@ export async function POST(request: Request): Promise<Response> {
   const stream = new ReadableStream<Uint8Array>({
     async start(controller) {
       let answer = "";
-      try {
-        const events = anthropic.messages.stream({
-          model: BEGLEITER_MODEL,
-          // Deckelt Denk- UND Antworttokens zusammen: Thinking ist bei
-          // claude-opus-5 standardmäßig an. Eine Antwort braucht ~300 Tokens,
-          // der Rest ist Puffer, damit nichts mitten im Satz abbricht.
-          max_tokens: 8000,
-          output_config: { effort: "low" },
-          system,
-          messages: [...history, { role: "user", content: message }],
-        });
+      // Welches Modell tatsächlich geantwortet hat – wandert in den Verlauf.
+      let benutztesModell = BEGLEITER_MODEL;
 
-        for await (const event of events) {
-          // Nur den sichtbaren Text weitergeben – Denkschritte bleiben intern.
-          if (
-            event.type === "content_block_delta" &&
-            event.delta.type === "text_delta"
-          ) {
-            answer += event.delta.text;
-            controller.enqueue(encoder.encode(event.delta.text));
+      // Hat das Hauptmodell gerade keine Kapazität (529 „Overloaded"), wird
+      // die Frage einmal an das Ersatzmodell weitergereicht. Nur solange noch
+      // kein Wort beim Leser angekommen ist – mitten im Text neu anzusetzen
+      // würde die halbe Antwort doppeln. Fehler des Ersatzmodells beenden den
+      // Versuch endgültig (die Schleife läuft dann aus).
+      for (const modell of [BEGLEITER_MODEL, KI_MODELL_ERSATZ]) {
+        benutztesModell = modell;
+        try {
+          const events = anthropic.messages.stream({
+            model: modell,
+            // Deckelt Denk- UND Antworttokens zusammen: Thinking ist bei
+            // Opus standardmäßig an. Eine Antwort braucht ~300 Tokens,
+            // der Rest ist Puffer, damit nichts mitten im Satz abbricht.
+            max_tokens: 8000,
+            output_config: { effort: "low" },
+            system,
+            messages: [...history, { role: "user", content: message }],
+          });
+
+          for await (const event of events) {
+            // Nur den sichtbaren Text weitergeben – Denkschritte bleiben intern.
+            if (
+              event.type === "content_block_delta" &&
+              event.delta.type === "text_delta"
+            ) {
+              answer += event.delta.text;
+              controller.enqueue(encoder.encode(event.delta.text));
+            }
           }
-        }
-      } catch (err) {
-        // Den echten Fehler in die Server-Logs schreiben – nur so lässt sich
-        // im Betrieb erkennen, WORAN der KI-Aufruf scheitert (ungültiger Key,
-        // fehlendes Guthaben, blockierter Ausgang, Modell nicht verfügbar …).
-        // Der Text an die Person bleibt bewusst allgemein.
-        console.error("[begleiter] KI-Aufruf fehlgeschlagen:", err);
+          break;
+        } catch (err) {
+          if (
+            modell !== KI_MODELL_ERSATZ &&
+            !answer &&
+            istKapazitaetsfehler(err)
+          ) {
+            console.warn(
+              `[begleiter] ${modell} nicht verfügbar – weiche auf ${KI_MODELL_ERSATZ} aus:`,
+              err,
+            );
+            continue;
+          }
+          // Den echten Fehler in die Server-Logs schreiben – nur so lässt sich
+          // im Betrieb erkennen, WORAN der KI-Aufruf scheitert (ungültiger Key,
+          // fehlendes Guthaben, blockierter Ausgang, Modell nicht verfügbar …).
+          // Der Text an die Person bleibt bewusst allgemein.
+          console.error("[begleiter] KI-Aufruf fehlgeschlagen:", err);
 
-        // Abbruch mitten im Stream: Der Status steht schon auf 200, deshalb
-        // kommt der Hinweis als Text.
-        if (!answer) {
-          // Ohne Antwort war der Versuch ergebnislos – die gespeicherte Frage
-          // wieder entfernen (siehe Kommentar oben beim Speichern).
-          await supabase
-            .from("begleiter_messages")
-            .delete()
-            .eq("id", savedQuestion.id);
-          controller.enqueue(
-            encoder.encode(
-              "Die Antwort konnte gerade nicht erzeugt werden. Versuch es in einem Moment noch einmal.",
-            ),
-          );
+          // Abbruch mitten im Stream: Der Status steht schon auf 200, deshalb
+          // kommt der Hinweis als Text.
+          if (!answer) {
+            // Ohne Antwort war der Versuch ergebnislos – die gespeicherte Frage
+            // wieder entfernen (siehe Kommentar oben beim Speichern).
+            await supabase
+              .from("begleiter_messages")
+              .delete()
+              .eq("id", savedQuestion.id);
+            controller.enqueue(
+              encoder.encode(
+                "Die Antwort konnte gerade nicht erzeugt werden. Versuch es in einem Moment noch einmal.",
+              ),
+            );
+          }
+          controller.close();
+          return;
         }
-        controller.close();
-        return;
       }
 
       // Nur vollständige Antworten in den Verlauf aufnehmen.
@@ -194,7 +218,7 @@ export async function POST(request: Request): Promise<Response> {
           user_id: user.id,
           role: "assistant",
           body: answer.trim(),
-          model: BEGLEITER_MODEL,
+          model: benutztesModell,
         });
       }
       controller.close();
