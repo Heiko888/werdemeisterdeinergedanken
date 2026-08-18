@@ -24,6 +24,7 @@ import {
   getLatestReading,
 } from "@/app/mitglieder/reading-actions";
 import { ReadingPanel } from "@/components/members/ReadingPanel";
+import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
 import { cn } from "@/lib/cn";
 
 export const dynamic = "force-dynamic";
@@ -74,6 +75,8 @@ export default async function GedankenprofilPage() {
 
   // KI-Reading nur anbieten, wenn serverseitig konfiguriert und ein Test vorliegt.
   const readingConfigured = await isReadingConfigured();
+  // Der Begleiter kennt dieses Profil – deshalb hier der direkte Weg hin.
+  const begleiterVerfuegbar = await isBegleiterConfigured();
   const initialReading =
     readingConfigured && profil.hasTest ? await getLatestReading() : null;
 
@@ -327,6 +330,27 @@ export default async function GedankenprofilPage() {
               <Container>
                 <div className="mx-auto max-w-2xl">
                   <ReadingPanel initialReading={initialReading} />
+                </div>
+              </Container>
+            </section>
+          )}
+
+          {begleiterVerfuegbar && (
+            <section className="border-t border-ink/10 py-12 sm:py-16">
+              <Container>
+                <div className="mx-auto flex max-w-2xl flex-col items-start gap-4 rounded-2xl border border-ink/10 bg-white p-7 shadow-card sm:p-8">
+                  <h2 className="font-display text-xl font-medium text-ink">
+                    Fragen zu deinem Profil?
+                  </h2>
+                  <p className="text-[1.02rem] leading-relaxed text-ink-mid">
+                    Dein Begleiter kennt diese Auswertung. Frag ihn, was die
+                    Werte für deinen Alltag bedeuten – und welcher nächste
+                    Schritt gerade zu dir passt.
+                  </p>
+                  <Button href="/mitglieder/begleiter" variant="secondary">
+                    Zum Begleiter
+                    <ArrowRight />
+                  </Button>
                 </div>
               </Container>
             </section>
