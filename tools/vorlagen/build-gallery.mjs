@@ -705,6 +705,215 @@ async function buildContentOverlays() {
   return count;
 }
 
+// --- 3e. Cover-Overlays (Reel-/Feed-Cover als transparente Ebene) -----------
+// Aus docs/reels/covers/export-overlay/<bereich>/<format>/overlay-NN.png:
+// pro Cover ein Eintrag, Vorschau = fertiges Cover, ZIP = transparente Overlays
+// aller Formate + Anleitung. Zum Legen über ein eigenes Foto in Canva.
+
+const OVERLAY_HELP = [
+  "Overlay-Vorlage (transparent) – 3-Ebenen-Workflow in Canva:",
+  "",
+  "  1) dein eigenes Foto / Hintergrund   (ganz nach hinten)",
+  "  2) overlay-<format>.png              (ganz nach vorne)",
+  "",
+  "Der Scrim im Overlay hält den Text auf jedem Foto lesbar.",
+  "Overlay in Originalgröße (1080 Breite) 1:1 auf das Format legen.",
+].join("\n");
+
+async function buildCoverOverlays() {
+  const ovRoot = join(ROOT, "docs", "reels", "covers", "export-overlay");
+  const fullRoot = join(ROOT, "docs", "reels", "covers", "export");
+  if (!existsSync(ovRoot)) return 0;
+
+  const FMT = [
+    { key: "reel-9x16", label: "9:16", w: 1080, h: 1920 },
+    { key: "feed-4x5", label: "4:5", w: 1080, h: 1350 },
+    { key: "feed-1x1", label: "1:1", w: 1080, h: 1080 },
+    { key: "pin-2x3", label: "2:3", w: 1080, h: 1620 },
+    { key: "landscape-16x9", label: "16:9", w: 1920, h: 1080 },
+  ];
+  const dir = join(OUT, "cover-overlay");
+  ensureDir(dir);
+  const tmpRoot = join(OUT, ".tmp-cover-overlay");
+
+  let count = 0;
+  for (const bereich of readdirSync(ovRoot, { withFileTypes: true })) {
+    if (!bereich.isDirectory()) continue;
+    const bDir = join(ovRoot, bereich.name);
+    const formate = FMT.filter((f) => existsSync(join(bDir, f.key)));
+    if (formate.length === 0) continue;
+
+    const prevFmt = formate.find((f) => f.key === "reel-9x16") ?? formate[0];
+    const overlays = collect(join(bDir, prevFmt.key), [".png"]).filter((f) =>
+      /overlay-\d+/.test(basename(f)),
+    );
+
+    for (const ov of overlays) {
+      const nr = basename(ov).replace(/[^0-9]/g, "");
+      const id = `cover-overlay-${bereich.name}-${nr}`;
+      const slideDir = join(dir, id);
+      ensureDir(slideDir);
+      const tmp = join(tmpRoot, id);
+      ensureDir(tmp);
+
+      const slidePaths = [];
+      for (const F of formate) {
+        const ovPng = join(bDir, F.key, `overlay-${nr}.png`);
+        if (!existsSync(ovPng)) continue;
+        const full = join(fullRoot, bereich.name, F.key, `cover-${nr}.png`);
+        const name = `preview-${F.key}.webp`;
+        // Vorschau: fertiges Cover (falls vorhanden), sonst Overlay auf Dunkel.
+        let buf;
+        if (existsSync(full)) {
+          buf = await sharp(full)
+            .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+            .webp({ quality: 82, effort: 6, smartSubsample: true })
+            .toBuffer();
+        } else {
+          buf = await sharp(ovPng)
+            .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+            .flatten({ background: "#08102a" })
+            .webp({ quality: 82, effort: 6, smartSubsample: true })
+            .toBuffer();
+        }
+        writeFileSync(join(slideDir, name), buf);
+        slidePaths.push(`/admin/vorlagen/datei/cover-overlay/${id}/${name}`);
+        cpSync(ovPng, join(tmp, `overlay-${F.key}.png`));
+      }
+      if (slidePaths.length === 0) continue;
+
+      writeFileSync(join(tmp, "SO-GEHTS.txt"), OVERLAY_HELP);
+      const zipName = `${id}.zip`;
+      const zipPath = join(dir, zipName);
+      if (existsSync(zipPath)) rmSync(zipPath);
+      const res = spawnSync("zip", ["-r", "-q", zipPath, "."], { cwd: tmp, stdio: "inherit" });
+      if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
+
+      assets.push({
+        kategorie: "carousel",
+        titel: `${prettifyLabel(bereich.name)} · Cover ${nr}`,
+        unterKategorie: `${prettifyLabel(bereich.name)} · Cover-Overlay`,
+        kind: "carousel",
+        slides: slidePaths.length,
+        sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
+        thumb: slidePaths[0],
+        slidePaths,
+        href: `/admin/vorlagen/datei/cover-overlay/${zipName}`,
+        formate: formate.map((f) => ({ label: f.label, w: f.w, h: f.h })),
+      });
+      count++;
+    }
+  }
+
+  if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
+  return count;
+}
+
+// --- 3f. Carousel-Overlays (jede Slide als transparente Ebene) --------------
+// Aus docs/carousels/export-overlay/<serie>/<slug>/<format>/slide-NN.png:
+// pro Carousel ein Eintrag, Vorschau = fertige Slides (4:5), ZIP = transparente
+// Overlays aller Slides in allen Formaten + Anleitung.
+
+async function buildCarouselOverlays() {
+  const ovRoot = join(ROOT, "docs", "carousels", "export-overlay");
+  const fullRoot = join(ROOT, "docs", "carousels", "export");
+  if (!existsSync(ovRoot)) return 0;
+
+  const FMT = [
+    { key: "feed-4x5", label: "4:5", w: 1080, h: 1350 },
+    { key: "feed-1x1", label: "1:1", w: 1080, h: 1080 },
+    { key: "reel-9x16", label: "9:16", w: 1080, h: 1920 },
+  ];
+  const SERIE = {
+    "selbstverteidigung": "Mentale Selbstverteidigung",
+    "stufen": "Die 7 Stufen",
+    "praxis": "Praxis",
+    "vertiefungen": "Vertiefungen",
+    "mitgliederbereich": "Mitgliederbereich",
+  };
+  const dir = join(OUT, "carousel-overlay");
+  ensureDir(dir);
+  const tmpRoot = join(OUT, ".tmp-carousel-overlay");
+
+  let count = 0;
+  for (const serie of readdirSync(ovRoot, { withFileTypes: true })) {
+    if (!serie.isDirectory()) continue;
+    const serieDir = join(ovRoot, serie.name);
+    for (const carousel of readdirSync(serieDir, { withFileTypes: true })) {
+      if (!carousel.isDirectory()) continue;
+      const cDir = join(serieDir, carousel.name);
+      const formate = FMT.filter((f) => existsSync(join(cDir, f.key)));
+      if (formate.length === 0) continue;
+
+      const prevFmt = formate.find((f) => f.key === "feed-4x5") ?? formate[0];
+      const slides = collect(join(cDir, prevFmt.key), [".png"]);
+      if (slides.length === 0) continue;
+
+      const id = `carousel-overlay-${serie.name}__${carousel.name}`;
+      const slideDir = join(dir, id);
+      ensureDir(slideDir);
+      const tmp = join(tmpRoot, id);
+
+      // Vorschau: fertige Slides (falls vorhanden), sonst Overlay auf Dunkel.
+      const slidePaths = [];
+      let n = 0;
+      for (const slide of slides) {
+        n++;
+        const nn = String(n).padStart(2, "0");
+        const full = join(fullRoot, serie.name, carousel.name, prevFmt.key, basename(slide));
+        const name = `slide-${nn}.webp`;
+        let buf;
+        if (existsSync(full)) {
+          buf = await sharp(full)
+            .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+            .webp({ quality: 82, effort: 6, smartSubsample: true })
+            .toBuffer();
+        } else {
+          buf = await sharp(slide)
+            .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+            .flatten({ background: "#08102a" })
+            .webp({ quality: 82, effort: 6, smartSubsample: true })
+            .toBuffer();
+        }
+        writeFileSync(join(slideDir, name), buf);
+        slidePaths.push(`/admin/vorlagen/datei/carousel-overlay/${id}/${name}`);
+      }
+
+      // ZIP: transparente Overlays aller Formate (je Format ein Ordner).
+      for (const F of formate) {
+        const fdir = join(tmp, F.key);
+        ensureDir(fdir);
+        for (const slide of collect(join(cDir, F.key), [".png"])) {
+          cpSync(slide, join(fdir, basename(slide)));
+        }
+      }
+      writeFileSync(join(tmp, "SO-GEHTS.txt"), OVERLAY_HELP);
+      const zipName = `${id}.zip`;
+      const zipPath = join(dir, zipName);
+      if (existsSync(zipPath)) rmSync(zipPath);
+      const res = spawnSync("zip", ["-r", "-q", zipPath, "."], { cwd: tmp, stdio: "inherit" });
+      if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
+
+      assets.push({
+        kategorie: "carousel",
+        titel: prettifyName(carousel.name),
+        unterKategorie: `${SERIE[serie.name] ?? prettifyLabel(serie.name)} · Overlay`,
+        kind: "carousel",
+        slides: slidePaths.length,
+        sizeMB: Number((statSync(zipPath).size / 1024 / 1024).toFixed(1)),
+        thumb: slidePaths[0],
+        slidePaths,
+        href: `/admin/vorlagen/datei/carousel-overlay/${zipName}`,
+        formate: formate.map((f) => ({ label: f.label, w: f.w, h: f.h })),
+      });
+      count++;
+    }
+  }
+
+  if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
+  return count;
+}
+
 // --- 4. Workshop-Dateien (Download, keine Vorschau) -------------------------
 
 function buildWorkshop() {
@@ -776,6 +985,10 @@ async function main() {
   console.log(`✓ Story-Carousels (komplette Geschichten, als ZIP): ${storyCarousels}`);
   const contentOverlays = await buildContentOverlays();
   console.log(`✓ Content-Overlays (Zitate & Fakten, als ZIP): ${contentOverlays}`);
+  const coverOverlays = await buildCoverOverlays();
+  console.log(`✓ Cover-Overlays (Reel-/Feed-Cover, als ZIP): ${coverOverlays}`);
+  const carouselOverlays = await buildCarouselOverlays();
+  console.log(`✓ Carousel-Overlays (Slides als transparente Ebenen, als ZIP): ${carouselOverlays}`);
   const marketing = await buildMarketingCarousels({ OUT, assets });
   console.log(`✓ Carousels (Marketing/Funnel, als ZIP): ${marketing}`);
   const workshop = buildWorkshop();

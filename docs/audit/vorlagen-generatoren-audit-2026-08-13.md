@@ -419,6 +419,16 @@ eigenes Foto gelegt wird) existierte bislang **nur** für „Persönliche Geschi
 
 Erzeugen: `npm run content-overlays && npm run vorlagen:galerie` (rendert lokal via Chromium/Playwright).
 
+Zusätzlich sind **Reel-/Feed-Cover** und **Carousels** als Overlay verfügbar: Die bestehenden
+Cover-/Slide-Templates (`docs/reels/covers/`, `docs/carousels/`) sind bereits geschichtet
+(designter Hintergrund → `.scrim` → `.content`). Der PNG-Export (`export-png.mjs`) erzeugt daher
+neben dem fertigen PNG **im selben Seitenaufruf** eine **transparente Overlay-Variante** (Hintergrund
+ausgeblendet, `omitBackground`) unter `export-overlay/…`. `build-gallery.mjs` listet sie via
+`buildCoverOverlays` / `buildCarouselOverlays` als Overlay-Karten (Vorschau = fertiges Cover/Slide,
+ZIP = transparente Overlays aller Formate + `SO-GEHTS.txt`). So bleibt der Look identisch — es ist
+dasselbe Rendering, nur ohne Hintergrund. Erzeugen: `npm run covers:png` bzw. `npm run carousels:png`
+(schreiben jetzt zusätzlich `export-overlay/`), danach `npm run vorlagen:galerie`.
+
 ---
 
 ## 7. Externe Dienste & weitere Content-Quellen
