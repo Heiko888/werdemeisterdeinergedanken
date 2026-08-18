@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { ArrowUp } from "@/components/ui/Icon";
 import { cn } from "@/lib/cn";
 
@@ -10,6 +11,15 @@ import { cn } from "@/lib/cn";
  */
 export function BackToTop() {
   const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
+
+  // Im Mitgliederbereich schwebt zusätzlich der Chat-Avatar (BegleiterLauncher)
+  // in derselben Ecke. Damit sich beide nicht überdecken, stapelt sich dieser
+  // Knopf dort ÜBER dem Avatar (mittig gleiche Spalte). Auf der Begleiter-Seite
+  // selbst gibt es keinen Avatar – dort bleibt die normale Eck-Position.
+  const ueberAvatar =
+    (pathname?.startsWith("/mitglieder") ?? false) &&
+    !(pathname?.startsWith("/mitglieder/begleiter") ?? false);
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 600);
@@ -30,10 +40,14 @@ export function BackToTop() {
       aria-label="Zum Seitenanfang"
       title="Zum Seitenanfang"
       className={cn(
-        "fixed bottom-6 right-5 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full",
+        "fixed z-40 inline-flex h-12 w-12 items-center justify-center rounded-full",
         "bg-gradient-to-r from-leaf-500 to-teal-400 text-white shadow-soft ring-1 ring-white/20",
         "transition-all duration-300 hover:from-leaf-600 hover:to-teal-500 hover:-translate-y-0.5",
-        "sm:bottom-8 sm:right-8",
+        // Position: im Mitgliederbereich über dem Chat-Avatar stapeln (mittig
+        // dieselbe Spalte), sonst wie gehabt in der unteren rechten Ecke.
+        ueberAvatar
+          ? "bottom-24 right-5 sm:right-7"
+          : "bottom-6 right-5 sm:bottom-8 sm:right-8",
         visible
           ? "opacity-100 translate-y-0"
           : "pointer-events-none translate-y-3 opacity-0",
