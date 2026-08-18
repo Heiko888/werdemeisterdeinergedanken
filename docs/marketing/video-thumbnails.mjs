@@ -20,10 +20,6 @@ const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
 const read = (p) => readFileSync(join(ROOT, p), "utf8");
 
-const slugify = (s) => s.toLowerCase()
-  .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
-  .replace(/&/g, "und").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-
 // ---------- Daten aus den TS-Quellen ziehen --------------------------------
 function stages() {
   const t = read("src/lib/content.ts");

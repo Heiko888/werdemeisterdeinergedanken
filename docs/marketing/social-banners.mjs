@@ -60,7 +60,7 @@ h1 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip
 .logocard .url{margin-top:0;font-size:${t.url}px}
 `;
 
-const logoBody = (t) => `<div class="bg"></div><div class="stars"></div>
+const logoBody = () => `<div class="bg"></div><div class="stars"></div>
 <div class="logocard">
   <div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>
   <div class="wordmark">Werde Meister deiner<br><span>Gedanken</span></div>
@@ -68,7 +68,7 @@ const logoBody = (t) => `<div class="bg"></div><div class="stars"></div>
 </div>`;
 
 const htmlFor = (t) => t.logoOnly
-  ? `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fontsUrl}"><style>${css(t)}</style></head><body>${logoBody(t)}</body></html>`
+  ? `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fontsUrl}"><style>${css(t)}</style></head><body>${logoBody()}</body></html>`
   : `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>${css(t)}</style></head><body>
 <div class="bg"></div><div class="stars"></div>

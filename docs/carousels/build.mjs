@@ -16,7 +16,7 @@
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { HANDLE, GRAD, FORMAT, FORMATS, slugify, loadCarousels } from "./data.mjs";
+import { HANDLE, GRAD, FORMAT, FORMATS, loadCarousels } from "./data.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const BUILD = join(HERE, "build");
@@ -144,7 +144,7 @@ function compMid(car, o) {
   return `<div class="mid">${head}<div class="clist">${o.items.map((it) => `<div class="cli"><span class="cd"></span><span class="ct">${it.text ? `<b>${it.lead}</b> — ${it.text}` : `<b>${it.lead}</b>`}</span></div>`).join("")}</div>${o.note ? `<div class="cnote">${o.note}</div>` : ""}</div>`;
 }
 
-function midHtml(car, slide, total) {
+function midHtml(car, slide) {
   if (slide.role === "body") { const o = OV[ovKey(car, slide)]; if (o) return compMid(car, o); }
   if (slide.role === "cover") {
     return `<div class="mid">
@@ -220,7 +220,7 @@ function slideHtml(car, slide, idx, total, F) {
         <img class="logo" src="../../../../logo.png" alt="Logo">
         <div class="tag">${car.seriesLabel}</div>
       </div>
-      ${midHtml(car, slide, total)}
+      ${midHtml(car, slide)}
       ${foot}
     </div>
   </div>
