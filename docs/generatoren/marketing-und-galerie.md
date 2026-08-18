@@ -90,23 +90,26 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 ## docs/_glyphs.mjs — gezeichnete Sonderzeichen
 
 - **Zweck:** Stellt Zeichen bereit, die die eingebetteten Schriften nicht
-  abdecken – aktuell `ARROW` (Rechtspfeil) als Inline-SVG.
+  abdecken – `ARROW` (Rechtspfeil →) und `NEQ` (Ungleich ≠), beide als
+  Inline-SVG.
 - **Warum:** Der `unicode-range` des Latin-Subsets in
   `tools/pdf/assets/fonts.css` und `docs/reels/covers/_fonts.css` enthält
-  `U+2191` (↑) und `U+2193` (↓), aber **nicht `U+2192` (→)**. Für ein nicht
-  abgedecktes Zeichen greift Chromium auf eine Schrift des Betriebssystems
-  zurück. Folge: dieselbe Codebasis erzeugt auf verschiedenen Rechnern
-  minimal verschiedene PNGs (andere Grundlinie, andere Strichstärke), und die
-  abweichende Glyphen-Metrik verschiebt zusätzlich die Zeile darunter.
+  `U+2191` (↑) und `U+2193` (↓), aber **weder `U+2192` (→) noch `U+2260` (≠)**.
+  Für ein nicht abgedecktes Zeichen greift Chromium auf eine Schrift des
+  Betriebssystems zurück. Folge: dieselbe Codebasis erzeugt auf verschiedenen
+  Rechnern minimal verschiedene PNGs (andere Grundlinie, andere Strichstärke),
+  und die abweichende Glyphen-Metrik verschiebt zusätzlich die Zeile darunter.
 - **Eigenschaften:** Das SVG bringt seine Maße selbst mit (`1em`, folgt also
   der Schriftgröße) und erbt die Farbe über `currentColor`. Es braucht in
-  keinem Generator-Stylesheet eine eigene Regel.
-- **Genutzt von:** `docs/marketing/brand-assets.mjs`, `docs/carousels/build.mjs`,
-  `docs/carousels/marketing-serien.mjs`, `docs/carousels/stufen-ueberblick.mjs`,
-  `tools/marketing/story-overlays.mjs`, `tools/marketing/story-carousels.mjs`.
+  keinem Generator-Stylesheet eine eigene Regel. `NEQ` ist auf die fetten
+  Cover-Headlines (Fraunces 600) ausgelegt – kräftige Balken mit flachen Enden.
+- **Genutzt von:** `ARROW` in `docs/marketing/brand-assets.mjs`,
+  `docs/carousels/build.mjs`, `docs/carousels/marketing-serien.mjs`,
+  `docs/carousels/stufen-ueberblick.mjs`, `tools/marketing/story-overlays.mjs`,
+  `tools/marketing/story-carousels.mjs`; `NEQ` in `docs/reels/covers/data.mjs`.
 - **Regel:** Neue Sonderzeichen in gerendertem Markup vorher gegen den
   `unicode-range` prüfen – oder hier ergänzen. In Kommentaren, `console.log`
-  und den HTML-Galerieseiten ist ein „→" unproblematisch, die werden nicht
+  und den HTML-Galerieseiten sind „→"/„≠" unproblematisch, die werden nicht
   zu PNG gerendert.
 
 ---
