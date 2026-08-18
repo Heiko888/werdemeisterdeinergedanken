@@ -17,6 +17,7 @@ import { writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
+import { ARROW } from "../../docs/_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -46,7 +47,7 @@ const STORIES = [
       { role: "body", lead: `Also fing ich an, tief zu graben.`, body: `Nicht nach Schuld – nach dem <em>Muster</em> darunter.` },
       { role: "body", lead: `Und da sah ich sie:`, body: `die <em>verdeckten Muster</em>, die mich lenkten.` },
       { role: "body", lead: `Das war nicht das Ende meiner Geschichte.`, body: `Es war der Anfang, sie <em>selbst zu schreiben</em>.` },
-      { role: "cta", kicker: `Dein nächster Schritt`, lead: `Du bist nicht kaputt. Du läufst nur auf einem alten Programm.`, action: `Folge für den Weg zurück zu dir. → werdemeisterdeinergedanken.de` },
+      { role: "cta", kicker: `Dein nächster Schritt`, lead: `Du bist nicht kaputt. Du läufst nur auf einem alten Programm.`, action: `Folge für den Weg zurück zu dir. ${ARROW} werdemeisterdeinergedanken.de` },
     ],
   },
 ];

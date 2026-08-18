@@ -48,8 +48,9 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 - **Zweck:** Marken-Zusatzvorlagen: Profil/Avatar, Kanalbild, YouTube-Thumbnails
   (3), Zitat-Kacheln (14), Studien-Fakt-Kacheln (14), E-Book-Post, Instagram-Story
   — jeweils in mehreren Formaten.
-- **Aufruf:** `node docs/marketing/brand-assets.mjs`; Teilmenge via Env `ONLY`
-  (z. B. `ONLY=instagram node …`).
+- **Aufruf:** `SCALE=2 node docs/marketing/brand-assets.mjs`; Teilmenge via Env
+  `ONLY` (z. B. `SCALE=2 ONLY=instagram node …`). **`SCALE=2` ist Pflicht** –
+  siehe Stolperfalle unten.
 - **Voraussetzungen:** wie social-banners. Zusätzlich `public/ebook-mockup.webp`
   (**Pflicht**, base64-Read) und optional `public/heiko-freigestellt.png`.
 - **Eingaben:** `THUMBS` und `EBOOK_FORMATS` inline; **`QUOTES` und `FACTS`
@@ -59,7 +60,14 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 - **Ausgaben:** PNGs unter `docs/marketing/…` (`profil/`, `messenger/`,
   `youtube/thumbnails/`, `zitate/{1x1,4x5,9x16}/`, `zitate/studien-*`, `ebook/`,
   `instagram/`).
-- **Stolperfalle:** sehr viele Targets → langer Lauf; `ONLY` zum Eingrenzen.
+- **Stolperfallen:**
+  - Sehr viele Targets → langer Lauf; `ONLY` zum Eingrenzen.
+  - **`SCALE` hat den Default 1, die eingecheckten Assets sind aber 2×.** Ohne
+    `SCALE=2` werden sie beim Neubauen stillschweigend halbiert (2160×2700 →
+    1080×1350) – ohne Warnung, nur kleinere Dateien. Der Schalter wirkt über
+    `deviceScaleFactor` und passt zu `FULL_WIDTH=2160` im Galerie-Build.
+  - Der Pfeil im CTA kommt aus **`docs/_glyphs.mjs`** (`ARROW`), nicht als
+    Textzeichen – `U+2192` fehlt im eingebetteten Schrift-Subset.
 
 ## docs/marketing/video-thumbnails.mjs
 
@@ -76,6 +84,30 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 - **Stolperfalle:** Regex ist an feste Feldreihenfolge der TS-Dateien gekoppelt —
   Formatänderungen dort brechen die Extraktion. Wird **nicht** von der Galerie
   eingesammelt (liegt in `public/`).
+
+---
+
+## docs/_glyphs.mjs — gezeichnete Sonderzeichen
+
+- **Zweck:** Stellt Zeichen bereit, die die eingebetteten Schriften nicht
+  abdecken – aktuell `ARROW` (Rechtspfeil) als Inline-SVG.
+- **Warum:** Der `unicode-range` des Latin-Subsets in
+  `tools/pdf/assets/fonts.css` und `docs/reels/covers/_fonts.css` enthält
+  `U+2191` (↑) und `U+2193` (↓), aber **nicht `U+2192` (→)**. Für ein nicht
+  abgedecktes Zeichen greift Chromium auf eine Schrift des Betriebssystems
+  zurück. Folge: dieselbe Codebasis erzeugt auf verschiedenen Rechnern
+  minimal verschiedene PNGs (andere Grundlinie, andere Strichstärke), und die
+  abweichende Glyphen-Metrik verschiebt zusätzlich die Zeile darunter.
+- **Eigenschaften:** Das SVG bringt seine Maße selbst mit (`1em`, folgt also
+  der Schriftgröße) und erbt die Farbe über `currentColor`. Es braucht in
+  keinem Generator-Stylesheet eine eigene Regel.
+- **Genutzt von:** `docs/marketing/brand-assets.mjs`, `docs/carousels/build.mjs`,
+  `docs/carousels/marketing-serien.mjs`, `docs/carousels/stufen-ueberblick.mjs`,
+  `tools/marketing/story-overlays.mjs`, `tools/marketing/story-carousels.mjs`.
+- **Regel:** Neue Sonderzeichen in gerendertem Markup vorher gegen den
+  `unicode-range` prüfen – oder hier ergänzen. In Kommentaren, `console.log`
+  und den HTML-Galerieseiten ist ein „→" unproblematisch, die werden nicht
+  zu PNG gerendert.
 
 ---
 

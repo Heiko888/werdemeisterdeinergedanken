@@ -103,7 +103,7 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 | Endcards | `npm run endcard` | Inline | `docs/reels/covers/endcard/*` (HTML) |
 | Social-Banner | `node docs/marketing/social-banners.mjs` | Inline | `docs/marketing/**/*.png` |
 | Profil-Avatar | `node docs/marketing/profile-avatar.mjs` | Inline | `docs/marketing/profil/*.png` |
-| Brand-Assets | `node docs/marketing/brand-assets.mjs` | Inline + `docs/marketing/content-data.mjs` | `docs/marketing/**/*.png` |
+| Brand-Assets | `SCALE=2 node docs/marketing/brand-assets.mjs` | Inline + `docs/marketing/content-data.mjs` | `docs/marketing/**/*.png` |
 | Video-Thumbnails | `node docs/marketing/video-thumbnails.mjs` | `src/lib/{content,deep-dives,practices}.ts` | `public/video-thumbnails/**` |
 | Story-Overlays | `npm run story-overlays` | Inline (`STORIES`) | `docs/marketing/story-overlays/**` |
 | Content-Overlays | `npm run content-overlays` | `docs/marketing/content-data.mjs` | `docs/marketing/content-overlays/**` |
@@ -145,6 +145,45 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
   (Supabase, Resend, Stripe), **nicht** die Generatoren — diese laufen ohne
   gesetzte Secrets.
 
+## Zwei Fallstricke beim Neubauen
+
+**1. `SCALE=2` bei den Brand-Assets.** `brand-assets.mjs` rendert per
+`deviceScaleFactor` und hat den Default `SCALE=1`. Die eingecheckten Grafiken
+sind aber durchweg in **doppelter Auflösung** abgelegt (Zitate/Fakten/E-Book
+z. B. 2160×2700 statt 1080×1350) – so gewollt seit „Marken-Assets in doppelter
+Auflösung". Wer das Skript ohne den Schalter startet, **halbiert die Assets
+stillschweigend**: es gibt keine Warnung, nur kleinere Dateien.
+
+```bash
+SCALE=2 node docs/marketing/brand-assets.mjs                # alle
+SCALE=2 ONLY=ebook node docs/marketing/brand-assets.mjs     # Teilmenge
+```
+
+Betroffen sind nur `brand-assets.mjs`, `marketing-serien.mjs` und
+`stufen-ueberblick.mjs` – die Story-Generatoren in `tools/marketing/` kennen
+keinen `SCALE`-Schalter und rendern immer 1×.
+
+**2. Sonderzeichen gehören nicht in gerendertes Markup.** Die eingebetteten
+Schriften decken nur ein Latin-Subset ab. Ein Zeichen außerhalb davon holt sich
+Chromium aus einer **Schrift des Betriebssystems** – dann rendert dieselbe
+Codebasis auf zwei Rechnern verschiedene PNGs, und weil die fremde Glyphe die
+Zeilenhöhe verändert, verrutscht zusätzlich die Zeile darunter.
+
+Konkret fehlt `U+2192` (→) im Subset, obwohl `U+2191` (↑) und `U+2193` (↓)
+enthalten sind. Deshalb liegt der Pfeil seit Kurzem als gezeichnetes Inline-SVG
+in **`docs/_glyphs.mjs`**:
+
+```js
+import { ARROW } from "../_glyphs.mjs";
+`<div class="cta">E-Book gratis sichern ${ARROW}</div>`
+```
+
+Wer neue Sonderzeichen in Bild-Markup aufnimmt, prüft vorher den
+`unicode-range` in `tools/pdf/assets/fonts.css` bzw.
+`docs/reels/covers/_fonts.css` – oder zeichnet das Zeichen ebenfalls.
+
+---
+
 ## Reproduzierbarkeits-Reihenfolge (Vollbau der Galerie)
 
 ```bash
@@ -153,7 +192,8 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 npm run covers && npm run covers:png
 npm run carousels:slides && npm run carousels:png
 node docs/carousels/marketing-serien.mjs
-node docs/marketing/social-banners.mjs && node docs/marketing/brand-assets.mjs
+node docs/marketing/social-banners.mjs
+SCALE=2 node docs/marketing/brand-assets.mjs      # SCALE=2 ist Pflicht, s. u.
 # 2b. Overlay-Vorlagen (transparente Ebenen für eigene Fotos in Canva)
 npm run story-overlays && npm run content-overlays
 node tools/marketing/story-carousels.mjs

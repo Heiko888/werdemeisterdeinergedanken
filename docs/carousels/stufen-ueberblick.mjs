@@ -9,6 +9,7 @@ import { readFileSync, existsSync, readdirSync, mkdirSync } from "node:fs";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { ARROW } from "../_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -41,7 +42,7 @@ const SLIDES = [
   { role: "stage", n: "07", label: "Meisterschaft", title: "Meister deiner Gedanken",
     text: "Du reagierst nicht mehr – du gestaltest. Bewusstsein wird zu deinem Zuhause, aus dem heraus du dein Leben souverän formst." },
   { role: "cta", eyebrow: "Dein nächster Schritt", title: "Bereit, deinen Weg zu gehen?",
-    sub: "Sieh dir die 7 Stufen im Detail an und finde heraus, wo du gerade stehst.", button: "Find meine Stufe →" },
+    sub: "Sieh dir die 7 Stufen im Detail an und finde heraus, wo du gerade stehst.", button: `Find meine Stufe ${ARROW}` },
 ];
 
 const TOTAL = SLIDES.length;
@@ -100,7 +101,7 @@ function mid(s) {
 }
 function slideHtml(s, idx, css) {
   const isCover = s.role === "cover";
-  const foot = `<div class="foot"><span class="handle">${isCover ? "Die 7 Stufen" : HANDLE}</span>${dots(idx)}<span class="count">${isCover ? '<span class="swipe">wischen →</span>' : `${idx + 1}/${TOTAL}`}</span></div>`;
+  const foot = `<div class="foot"><span class="handle">${isCover ? "Die 7 Stufen" : HANDLE}</span>${dots(idx)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${TOTAL}`}</span></div>`;
   const numbg = s.role === "stage" ? `<div class="numbg">${s.n}</div>` : "";
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
