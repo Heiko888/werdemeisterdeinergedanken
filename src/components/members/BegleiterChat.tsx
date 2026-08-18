@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { clearConversation } from "@/app/mitglieder/begleiter/actions";
+import { cn } from "@/lib/cn";
 import {
   BEGLEITER_SUGGESTIONS,
   BEGLEITER_WELCOME,
@@ -34,8 +35,15 @@ function Paragraphs({ text }: { text: string }) {
 
 export function BegleiterChat({
   initialMessages,
+  fill = false,
 }: {
   initialMessages: ChatMessage[];
+  /**
+   * `true` = das Gespräch füllt einen fest hohen Rahmen (Overlay-Panel):
+   * der Verlauf scrollt für sich, Eingabe und Knöpfe bleiben unten stehen.
+   * `false` (Standard) = wächst als Karte auf der eigenen Seite mit.
+   */
+  fill?: boolean;
 }) {
   const [messages, setMessages] = useState<ChatMessage[]>(initialMessages);
   const [draft, setDraft] = useState("");
@@ -153,9 +161,22 @@ export function BegleiterChat({
   const zuLang = draft.length > MAX_INPUT_CHARS;
 
   return (
-    <div className="flex flex-col gap-5 rounded-2xl border border-accent/25 bg-white p-5 shadow-card sm:p-7">
+    <div
+      className={cn(
+        "flex flex-col bg-white",
+        fill
+          ? "h-full gap-4 p-4"
+          : "gap-5 rounded-2xl border border-accent/25 p-5 shadow-card sm:p-7",
+      )}
+    >
       {/* Verlauf */}
-      <div className="flex flex-col gap-4">
+      <div
+        className={cn(
+          "flex flex-col gap-4",
+          // Im Panel scrollt nur der Verlauf; Eingabe & Knöpfe bleiben unten.
+          fill && "min-h-0 flex-1 overflow-y-auto pr-1",
+        )}
+      >
         {leer && (
           <div className="rounded-2xl border border-ink/10 bg-paper/60 px-5 py-4">
             <p className="text-[1.02rem] leading-relaxed text-ink-soft/90">

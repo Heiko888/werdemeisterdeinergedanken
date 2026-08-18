@@ -7,6 +7,8 @@ import {
 } from "@/lib/supabase/config";
 import { isAdminEmail } from "@/lib/admin";
 import { isActiveMember } from "@/lib/membership";
+import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
+import { BegleiterLauncher } from "@/components/members/BegleiterLauncher";
 
 /**
  * Zweite Schutzschicht für den Mitgliederbereich (Defense-in-Depth).
@@ -43,5 +45,15 @@ export default async function MembersLayout({
     }
   }
 
-  return <>{children}</>;
+  // Der schwebende Begleiter erscheint auf allen Mitglieder-Seiten – aber nur,
+  // wenn er serverseitig eingerichtet ist (sonst gäbe es einen Knopf, der ins
+  // Leere führt). Die Prüfung ist eine reine Env-Abfrage, kein Datenbankaufruf.
+  const begleiterVerfuegbar = await isBegleiterConfigured();
+
+  return (
+    <>
+      {children}
+      {begleiterVerfuegbar && <BegleiterLauncher />}
+    </>
+  );
 }
