@@ -133,12 +133,13 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
   oder `CHROME_BIN=/pfad/zu/chrome` setzen.
 - **npm-Pakete:** `pdf-lib` (Merge in `generate.mjs`), `playwright`, `typescript`
   (für `extract-content.mjs`) — alle in `package.json`.
-- **`sharp`** — von `npm run vorlagen:galerie` direkt importiert, aber **nicht
-  in `package.json` deklariert**. Auflösbar ist es aktuell nur über die
-  transitive Abhängigkeit von `next@16.2.10` (`sharp@0.34.5`, prüfbar mit
-  `npm ls sharp`). Das ist eine stille Falle: fällt die Abhängigkeit bei einem
-  Next-Update weg, bricht der Galerie-Build. Gehört als direkte Dependency
-  aufgenommen.
+- **`sharp`** — von `npm run vorlagen:galerie` direkt importiert und seit
+  Kurzem auch **als direkte Dependency deklariert** (`^0.34.5`). Vorher war es
+  nur transitiv über `next@16.2.10` auflösbar und dort als **optional**
+  markiert — ein `npm ci --omit=optional` oder eine Plattform ohne passendes
+  Prebuilt hätte es übersprungen und den Galerie-Build mit
+  „Cannot find package 'sharp'" abbrechen lassen. `npm ls sharp` zeigt es jetzt
+  auf oberster Ebene (mit `next` dedupliziert).
 - **System-Binaries:** `zip`/`unzip` (nur Galerie-Build).
 - **Env-Variablen** (aus `.env.local.example`) betreffen die Website-Runtime
   (Supabase, Resend, Stripe), **nicht** die Generatoren — diese laufen ohne

@@ -312,7 +312,7 @@ export default async function MitgliedschaftPage({
                   ))}
                 </div>
                 <blockquote className="mt-4 font-display text-lg leading-snug text-ink">
-                  „{t.quote}"
+                  „{t.quote}&ldquo;
                 </blockquote>
                 <figcaption className="mt-5 flex flex-col">
                   <span className="font-semibold text-ink">{t.name}</span>

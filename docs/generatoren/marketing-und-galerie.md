@@ -136,12 +136,10 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 - **Aufruf:** `npm run vorlagen:galerie`. Empfohlener Vorlauf (Header-Kommentar):
   `npm run covers && npm run covers:png`.
 - **Voraussetzungen:**
-  - Paket **`sharp`** (Import) — **nicht in `package.json` deklariert**. Es ist
-    heute nur deshalb auflösbar, weil `next@16.2.10` es transitiv mitbringt
-    (`sharp@0.34.5`). Ein `npm ls sharp` zeigt das. Sobald Next die Abhängigkeit
-    fallen lässt oder gegen eine andere Version tauscht, bricht
-    `vorlagen:galerie` ohne Vorwarnung → gehört als **direkte** Dependency
-    deklariert.
+  - Paket **`sharp`** (Import) — als **direkte Dependency** in `package.json`
+    (`^0.34.5`), mit `next` dedupliziert. Historie: früher nur transitiv über
+    `next` verfügbar und dort **optional** — `npm ci --omit=optional` hätte den
+    Galerie-Build brechen lassen.
   - System-Binaries **`zip`** und (via `marketing-carousels.mjs`) **`unzip`**.
   - **Kein** Playwright/Chromium (arbeitet nur mit fertigen PNGs).
   - Importiert `./marketing-carousels.mjs`.
@@ -176,7 +174,7 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
   `src/lib/vorlagen-assets.ts`. Download-/Thumb-Links zeigen auf die
   Admin-Route `/admin/vorlagen/datei/…`.
 - **Reproduzierbarkeit:**
-  - `sharp` installieren; `zip`/`unzip` im PATH.
+  - `npm ci` (bringt `sharp` mit); `zip`/`unzip` im PATH.
   - Quellordner müssen vorbefüllt sein: **`docs/carousels/export/` existiert
     aktuell nicht** → ohne vorherigen Export tragen die Carousel-/Reel-Schritte
     **still 0 Einträge** ein (`existsSync`-Guards, kein Fehler).
