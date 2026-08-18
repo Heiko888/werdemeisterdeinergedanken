@@ -238,6 +238,35 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 
 ---
 
+## Wo `content/vorlagen/` liegt (seit 18.08.2026)
+
+Das Verzeichnis ist **nicht mehr im Repo** und **nicht mehr im Docker-Image**:
+es steht in `.gitignore` und liegt auf dem Server unter
+**`/opt/website-vorlagen`**. Von dort mountet `docker-compose.yml`
+(Service `website`) es schreibgeschützt nach `/app/content/vorlagen` — also
+genau an die Stelle, an der es vorher im Image lag. Für den Code ändert sich
+dadurch nichts: die Ausliefer-Route liest weiterhin
+`join(process.cwd(), "content", "vorlagen")`.
+
+Grund: Der Vollbau schreibt jede Datei neu, und die transparenten Overlays
+komprimieren schlecht. Versioniert wären das mehrere hundert MB **pro Lauf**
+in der Git-Historie, bei rund 650 MB Gesamtbestand. Die Dateien sind aus
+`docs/**` jederzeit reproduzierbar; versioniert bleibt nur der Katalog
+`src/lib/vorlagen-assets.ts`.
+
+Folgen für die Praxis:
+
+- **Generator-Läufe** müssen nach `/opt/website-vorlagen` schreiben. Im
+  Container also zusätzlich `-v /opt/website-vorlagen:/app/content/vorlagen`
+  mounten (schreibend), dann stimmt der Standardpfad wieder.
+- **Ein frischer Clone hat keine Galerie.** `/admin/vorlagen` zeigt dann leere
+  Karten, bis `npm run vorlagen:galerie` gelaufen ist. Der Katalog listet die
+  Einträge trotzdem, weil er im Repo liegt.
+- **Der Deploy braucht keinen Rebuild mehr**, wenn sich nur Galerie-Dateien
+  geändert haben — das Volume wird zur Laufzeit gelesen. Ein Rebuild ist nur
+  nötig, wenn sich `src/lib/vorlagen-assets.ts` ändert (der Katalog wird
+  einkompiliert).
+
 ## Verhältnis `tools/vorlagen/*` ↔ `content/vorlagen/*`
 
 - **`tools/vorlagen/*` ERZEUGT `content/vorlagen/*` vollständig** — keine

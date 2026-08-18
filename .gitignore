@@ -59,3 +59,12 @@ docs/carousels/export-jpg/
 docs/carousels/_fonts.css
 docs/carousels/logo.png
 docs/carousels/**/vorlage.png
+
+# Vorlagen-Galerie (generiert, ~650 MB Binaerdaten).
+# Liegt seit 18.08.2026 unter /opt/website-vorlagen auf dem Server und wird
+# per Volume nach /app/content/vorlagen in den Container gemountet – siehe
+# docs/generatoren/marketing-und-galerie.md. Der Katalog
+# src/lib/vorlagen-assets.ts bleibt versioniert, die Binaerdaten nicht:
+# sie sind reproduzierbar (npm run vorlagen:galerie) und haben das Repo
+# sonst pro Lauf um mehrere hundert MB wachsen lassen.
+content/vorlagen/

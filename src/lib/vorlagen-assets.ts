@@ -8076,6 +8076,4570 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 01",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 02",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 03",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 01",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 02",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 03",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 04",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 05",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 06",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 07",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 08",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 09",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 10",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 11",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 12",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 13",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 01",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 03",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 01",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 02",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 03",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 04",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 05",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 06",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 07",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 01",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 02",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 03",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 04",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 05",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 06",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 07",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 08",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 09",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 10",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 11",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 12",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 13",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 01",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 02",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 03",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 04",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 05",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 06",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 07",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "das wissen",
+    "unterKategorie": "Mitgliederbereich · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "dein journal",
+    "unterKategorie": "Mitgliederbereich · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.2,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "dein raum",
+    "unterKategorie": "Mitgliederbereich · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der einstieg",
+    "unterKategorie": "Mitgliederbereich · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der weg",
+    "unterKategorie": "Mitgliederbereich · Overlay",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 6.2,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "zur ruhe kommen",
+    "unterKategorie": "Mitgliederbereich · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.5,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 6 atmung",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "abend reflexion",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "atembeobachtung",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "body scan",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "box breathing",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 3.9,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der autopilot check",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.3,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere beobachter",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die taegliche rueckkehr",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "herz kohaerenz",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "loslass ritual",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "morgen ausrichtung",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "praesenz spaziergang",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.5,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "verlaengertes ausatmen",
+    "unterKategorie": "Praxis · Overlay",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 4.2,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ablenkung",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.9,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "algorithmen",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.8,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "angst steuerung",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.9,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autoritaetshoerigkeit",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.8,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "bildmacht",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "framing",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruppendruck",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "identitaet und meinung",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.8,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive dissonanz",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.1,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "medien agenda",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "normalisierung",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.9,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "propaganda",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "reizueberflutung",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.2,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "sprache und etiketten",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werbung und mangel",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "wiederholung",
+    "unterKategorie": "Mentale Selbstverteidigung · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.8,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autopilot",
+    "unterKategorie": "Die 7 Stufen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionale reifung",
+    "unterKategorie": "Die 7 Stufen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.8,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "erwachen",
+    "unterKategorie": "Die 7 Stufen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "innere ausrichtung",
+    "unterKategorie": "Die 7 Stufen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "meisterschaft",
+    "unterKategorie": "Die 7 Stufen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "schoepferkraft",
+    "unterKategorie": "Die 7 Stufen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.7,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstbeobachtung",
+    "unterKategorie": "Die 7 Stufen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "automatische gedanken",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere kritiker",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die reiz reaktions luecke",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.4,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionsregulation",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.2,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruebeln und gedankenkreisen",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.3,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "integration und weitergabe",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.1,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kernueberzeugungen",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.3,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive verzerrungen",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.3,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "konditionierung",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.3,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "muster koerper und gesundheit",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.6,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "neuroplastizitaet",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.3,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstmitgefuehl",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 6.3,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werte und ziele",
+    "unterKategorie": "Vertiefungen · Overlay",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 5.9,
+    "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-01.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-02.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-03.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-04.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-05.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Bis zu 60.000 Gedanken am Tag",
     "unterKategorie": "Marketing / Funnel",
     "kind": "carousel",
