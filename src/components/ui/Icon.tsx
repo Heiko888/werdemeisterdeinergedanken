@@ -147,6 +147,16 @@ export function Play(props: IconProps) {
   );
 }
 
+export function Chat(props: IconProps) {
+  const { rest } = base(props);
+  return (
+    <svg viewBox="0 0 24 24" width="1em" height="1em" {...stroke} {...rest}>
+      <path d="M5 5h14a2 2 0 012 2v8a2 2 0 01-2 2H9l-4 3v-3H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
+      <path d="M8.5 10.5h7M8.5 13h4" />
+    </svg>
+  );
+}
+
 export function Mail(props: IconProps) {
   const { rest } = base(props);
   return (
