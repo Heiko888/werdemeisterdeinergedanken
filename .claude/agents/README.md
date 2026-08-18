@@ -49,3 +49,26 @@ Einen einzelnen Prüfer gezielt aufrufen: „Nutze den **mitglieder-waechter**, 
 **4. Aus Prüfung wird Umsetzung.** Aktuell berichten die Agenten nur. Ein ergänzendes **umsetzungs-team** könnte gefundene 🔴-Punkte nach deiner Freigabe direkt beheben (z. B. eine fehlende `middleware.ts` anlegen) – bewusst getrennt, damit Prüfen und Ändern nie vermischt werden.
 
 **5. Schweregrade schärfen.** Passe in den einzelnen Agenten-Dateien an, was für *dein* Projekt „kritisch" heißt – z. B. Rechtstexte (Impressum/Datenschutz) immer als 🔴, weil rechtlich relevant.
+
+---
+
+# Zweites Team: das Generator-Team
+
+Neben dem Prüf-Team liegt in diesem Ordner ein **Generator-Team**. Es prüft
+nicht die Website, sondern **dokumentiert die Build-Generatoren** (PDFs,
+Carousels, Reels-Cover, Marketing-Assets, Workshop-Präsentationen, Vorlagen-
+Galerie), damit sie reproduzierbar sind. Ergebnis landet in `docs/generatoren/`.
+
+Start: `/generatoren-doku` (optional mit Schwerpunkt, z. B. „nur PDF").
+
+| Agent | Dokumentiert |
+|-------|--------------|
+| **generator-architekt** | Koordination, Gesamt-Übersicht `docs/generatoren/README.md`, Datenfluss-Diagramm, Abgleich gegen `package.json`. |
+| **pdf-dokumentar** | PDF-Generatoren (`tools/pdf/`): E-Books, Mitglieder-PDFs, Drehbücher. |
+| **visual-dokumentar** | Bild-Generatoren: Carousels, Reels-Cover, Marketing-Renderer, Vorlagen-Galerie. |
+| **workshop-dokumentar** | Workshop-Präsentations-Generator (`tools/workshop/`) + Spec-Format. |
+| **content-inventar** | Vollständiges Inhalts-Inventar (Quell-Daten + erzeugte Assets, mit Zählungen). |
+
+Wichtig: Das Generator-Team schreibt **nur** nach `docs/generatoren/` und ändert
+keinen Generator- oder App-Code. Prüfen (Prüf-Team) und Dokumentieren
+(Generator-Team) bleiben bewusst getrennt.

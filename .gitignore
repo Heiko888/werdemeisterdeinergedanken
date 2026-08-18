@@ -48,11 +48,13 @@ tools/pdf/.build/
 
 # Cover-Studio: exportierte PNG + eigene Hintergrundbilder (nicht versionieren)
 docs/reels/covers/export/
+docs/reels/covers/export-overlay/
 docs/reels/covers/**/vorlage.png
 
 # Carousel-Studio: generierte Slides/PNG + kopierte Assets (nicht versionieren)
 docs/carousels/build/
 docs/carousels/export/
+docs/carousels/export-overlay/
 docs/carousels/export-jpg/
 docs/carousels/_fonts.css
 docs/carousels/logo.png
