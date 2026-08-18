@@ -9,6 +9,7 @@ import { readFileSync, existsSync, readdirSync, mkdirSync } from "node:fs";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { ARROW } from "../_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -53,7 +54,7 @@ const SERIES = [
       { role: "step", rubric: "Weg zur Freiheit", n: "04", title: "Positive Gewohnheiten",
         text: "Richte den Fokus auf Dankbarkeit, lösungsorientiertes Denken und deine ganz eigenen Ziele." },
       { role: "cta", eyebrow: "Deine geistige Freiheit", title: "Welche deiner Gedanken sind wirklich deine eigenen?",
-        sub: "Wer versteht, wie Gedanken entstehen und gelenkt werden, gewinnt ein Stück Kontrolle zurück – und damit seine Freiheit.", button: "Zurück zur mentalen Freiheit →" },
+        sub: "Wer versteht, wie Gedanken entstehen und gelenkt werden, gewinnt ein Stück Kontrolle zurück – und damit seine Freiheit.", button: `Zurück zur mentalen Freiheit ${ARROW}` },
     ],
   },
   {
@@ -83,7 +84,7 @@ const SERIES = [
           { lead: "Positive Gewohnheiten", text: "Fokus auf Dankbarkeit & Ziele." },
         ], close: "Du musst nicht alles auf einmal. Wähle einen Weg für diese Woche." },
       { role: "cta", eyebrow: "Dein Weg beginnt jetzt", title: "Welchen Weg gehst du als Erstes?",
-        sub: "Speichere den Post, wähle einen Weg und starte heute. Schreib mir die Zahl in die Kommentare.", button: "Jetzt starten →" },
+        sub: "Speichere den Post, wähle einen Weg und starte heute. Schreib mir die Zahl in die Kommentare.", button: `Jetzt starten ${ARROW}` },
     ],
   },
   {
@@ -109,7 +110,7 @@ const SERIES = [
         text: "Du kannst Einflüssen nicht entkommen – aber du kannst sie durchschauen. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst.",
         merksatz: "Zwischen Reiz und Reaktion liegt ein Raum. In diesem Raum liegt deine Freiheit." },
       { role: "cta", eyebrow: "Nimm dein Denken zurück", title: "Welche Gedanken sind wirklich deine?",
-        sub: "Beobachte heute einmal bewusst, was deine Gedanken auslöst. Teile deine Erkenntnis in den Kommentaren.", button: "Mehr erfahren →" },
+        sub: "Beobachte heute einmal bewusst, was deine Gedanken auslöst. Teile deine Erkenntnis in den Kommentaren.", button: `Mehr erfahren ${ARROW}` },
     ],
   },
   {
@@ -140,7 +141,7 @@ const SERIES = [
         text: "Eine einzelne Studie ist ein Hinweis, kein Beweis. Frag: Wie groß war die Stichprobe? Wurde der Befund wiederholt? Wird hier ein Effekt überhöht? Gute Wissenschaft nennt ihre Grenzen selbst.",
         merksatz: "Nicht die lauteste Zahl gewinnt, sondern die, die der Wiederholung standhält." },
       { role: "cta", eyebrow: "Wissen, das dich freier macht", title: "Welcher Fakt hat dich überrascht?",
-        sub: "Speichere den Post und schreib mir die Zahl in die Kommentare. Die Vertiefungen mit allen Quellen findest du auf der Website.", button: "Mehr erfahren →" },
+        sub: "Speichere den Post und schreib mir die Zahl in die Kommentare. Die Vertiefungen mit allen Quellen findest du auf der Website.", button: `Mehr erfahren ${ARROW}` },
     ],
   },
   {
@@ -161,7 +162,7 @@ const SERIES = [
         text: "Trag auf der Website deine E-Mail-Adresse ein – das E-Book landet sofort bei dir. Kein Kleingedrucktes, keine Kosten.",
         hintLabel: "Gut zu wissen", hint: "Du bekommst nur, was dich wirklich weiterbringt. Abmelden geht mit einem Klick, jederzeit." },
       { role: "cta", eyebrow: "Mach den ersten Schritt", title: "Hol dir das kostenlose E-Book",
-        sub: "Link in Bio – oder direkt auf werdemeisterdeinergedanken.de. Speichere den Post, damit du ihn wiederfindest.", button: "Gratis sichern →" },
+        sub: "Link in Bio – oder direkt auf werdemeisterdeinergedanken.de. Speichere den Post, damit du ihn wiederfindest.", button: `Gratis sichern ${ARROW}` },
     ],
   },
 ];
@@ -289,7 +290,7 @@ function mid(s) {
 function slideHtml(series, s, idx, total, css) {
   const isCover = s.role === "cover";
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
-  const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? '<span class="swipe">wischen →</span>' : `${idx + 1}/${total}`}</span></div>`;
+  const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
   <div class="top"><img class="logo" src="${logoUri}" alt=""><div class="tag">${isCover ? "" : series.tag}</div></div>

@@ -21,6 +21,7 @@ const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook
 // Zitat-/Fakten-Texte kommen aus der gemeinsamen Quelle (auch von den Overlays
 // genutzt), damit sie nur an einer Stelle gepflegt werden.
 import { QUOTES, FACTS } from "./content-data.mjs";
+import { ARROW } from "../_glyphs.mjs";
 
 // ---------- gemeinsame Marken-Optik ----------------------------------------
 const BG = `
@@ -169,7 +170,7 @@ const ebookPost = (w, h) => {
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
   <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
   <div class="ctaGroup">
-    <div class="cta">E-Book gratis sichern →</div>
+    <div class="cta">E-Book gratis sichern ${ARROW}</div>
     <div class="cta-note">Link in Bio</div>
   </div>
 </div>`);
@@ -211,7 +212,7 @@ const ebookPost = (w, h) => {
     <div class="eyebrow">Dein Gratis-Einstieg</div>
     <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
     <div class="ctaGroup">
-      <div class="cta">E-Book gratis sichern →</div>
+      <div class="cta">E-Book gratis sichern ${ARROW}</div>
       <div class="cta-note">Link in Bio</div>
     </div>
   </div>
@@ -235,7 +236,7 @@ const ebookPost = (w, h) => {
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
   <div class="h">Werde zum bewussten <em>Gestalter deiner Gedanken</em></div>
   <div class="ctaGroup">
-    <div class="cta">E-Book gratis sichern →</div>
+    <div class="cta">E-Book gratis sichern ${ARROW}</div>
     <div class="cta-note">Link in Bio</div>
   </div>
 </div>`);
