@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { getConversation } from "@/app/mitglieder/begleiter/actions";
 import { BegleiterChat } from "@/components/members/BegleiterChat";
@@ -23,6 +23,47 @@ export function BegleiterLauncher() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[] | null>(null);
   const [loading, setLoading] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const launcherRef = useRef<HTMLButtonElement>(null);
+  // Merkt sich den vorigen Offen-Zustand, um den Fokus nur dann auf den
+  // Auslöser zurückzugeben, wenn wirklich geschlossen wurde (nicht beim Mount).
+  const wasOpen = useRef(false);
+
+  // Tastaturbedienung des Overlays: Escape schließt, Tab bleibt im Dialog
+  // (Fokus-Trap), Fokus wandert beim Öffnen hinein und beim Schließen zurück.
+  useEffect(() => {
+    if (open) {
+      closeRef.current?.focus();
+      wasOpen.current = true;
+      const onKey = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          setOpen(false);
+          return;
+        }
+        if (e.key !== "Tab") return;
+        const focusables = dialogRef.current?.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), textarea, input:not([disabled]), select, [tabindex]:not([tabindex="-1"])',
+        );
+        if (!focusables || focusables.length === 0) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      };
+      window.addEventListener("keydown", onKey);
+      return () => window.removeEventListener("keydown", onKey);
+    }
+    if (wasOpen.current) {
+      launcherRef.current?.focus();
+      wasOpen.current = false;
+    }
+  }, [open]);
 
   // Auf der eigenen Begleiter-Seite kein Bubble (sonst zwei Gespräche).
   if (pathname?.startsWith("/mitglieder/begleiter")) return null;
@@ -48,7 +89,9 @@ export function BegleiterLauncher() {
       {/* Overlay-Panel */}
       {open && (
         <div
+          ref={dialogRef}
           role="dialog"
+          aria-modal="true"
           aria-label="Dein Begleiter"
           className="fixed bottom-24 right-4 z-50 flex h-[min(600px,calc(100dvh-8rem))] w-[min(400px,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-accent/25 bg-white shadow-2xl sm:right-6"
         >
@@ -63,6 +106,7 @@ export function BegleiterLauncher() {
               </span>
             </div>
             <button
+              ref={closeRef}
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Gespräch schließen"
@@ -87,6 +131,7 @@ export function BegleiterLauncher() {
 
       {/* Avatar-Knopf */}
       <button
+        ref={launcherRef}
         type="button"
         onClick={toggle}
         aria-expanded={open}
