@@ -91,7 +91,7 @@ export function Footer() {
           </div>
           <a
             href={`mailto:${site.email}`}
-            className="mt-5 inline-block break-all text-sm text-mist-300/70 transition-colors hover:text-white"
+            className="mt-5 inline-block break-words text-sm text-mist-300/70 transition-colors hover:text-white"
           >
             {site.email}
           </a>
