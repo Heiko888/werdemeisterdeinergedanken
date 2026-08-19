@@ -9,6 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import { HERO_GLOW } from "@/lib/gradients";
+import { site } from "@/lib/site";
 import {
   getPost,
   isPublished,
@@ -107,10 +108,32 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return { title: "Artikel nicht gefunden" };
+  const url = `${site.url}/blog/${slug}`;
   return {
     title: post.title,
     description: post.excerpt,
-    openGraph: { title: post.title, description: post.excerpt, type: "article" },
+    // Kanonische URL, damit Suchmaschinen den Artikel eindeutig zuordnen.
+    alternates: { canonical: `/blog/${slug}` },
+    // Wichtig: Next merged verschachtelte Felder NICHT feldweise, sondern
+    // ersetzt das gesamte openGraph-/twitter-Objekt je Segment. Deshalb hier
+    // url, siteName, locale und twitter vollständig setzen – sonst zeigt die
+    // Linkvorschau auf die Startseite bzw. verliert Titel/Beschreibung.
+    // Das Vorschaubild liefert die dateibasierte opengraph-image.tsx (höhere
+    // Priorität, wird automatisch als og:image/twitter:image ergänzt).
+    openGraph: {
+      type: "article",
+      url,
+      siteName: site.name,
+      locale: "de_DE",
+      title: post.title,
+      description: post.excerpt,
+      publishedTime: post.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+    },
     // Noch nicht erschienen: erreichbar, aber nicht für Suchmaschinen.
     ...(isPublished(post) ? {} : { robots: { index: false, follow: false } }),
   };
