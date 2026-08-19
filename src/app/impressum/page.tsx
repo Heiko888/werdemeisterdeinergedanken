@@ -3,12 +3,13 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Prose } from "@/components/layout/Prose";
 import { site } from "@/lib/site";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/impressum", {
   title: "Impressum",
   description: "Impressum und Anbieterkennzeichnung.",
   robots: { index: false, follow: true },
-};
+});
 
 export default function ImprintPage() {
   return (

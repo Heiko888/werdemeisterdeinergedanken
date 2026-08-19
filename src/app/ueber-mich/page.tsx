@@ -7,12 +7,13 @@ import { ArrowRight } from "@/components/ui/Icon";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { values } from "@/lib/content";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/ueber-mich", {
   title: "Über mich",
   description:
     "Heiko Schwaninger – Begleiter für mentale Entprogrammierung. Meine Geschichte, meine Haltung und warum ich Menschen helfe, ihre Gedanken zu meistern.",
-};
+});
 
 const milestones = [
   {
