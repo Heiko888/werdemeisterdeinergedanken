@@ -11,6 +11,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, rmSync, mkdirSync
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { ARROW, DOTS } from "../../docs/_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -89,11 +90,11 @@ Hostings – niemals in E-Mails, Chats oder ins Repository.</div>
 <div class="step">
 <ol>
   <li>Stripe-Dashboard oben rechts in den <strong>Testmodus</strong> schalten.</li>
-  <li><strong>Mehr → Produktkatalog → + Produkt hinzufügen</strong>.</li>
+  <li><strong>Mehr ${ARROW} Produktkatalog ${ARROW} + Produkt hinzufügen</strong>.</li>
   <li>Name: <strong>Mitgliedschaft</strong>.</li>
-  <li>Preis 1: <strong>49 €</strong> · <strong>Wiederkehrend</strong> · Intervall <strong>Monatlich</strong> → speichern.</li>
-  <li>Am selben Produkt: <strong>+ weiteren Preis</strong> → <strong>490 €</strong> · <strong>Wiederkehrend</strong> · Intervall <strong>Jährlich</strong> → speichern.</li>
-  <li>Bei jedem Preis: <strong>⋯ → ID kopieren</strong> (beginnt mit <code>price_…</code>).</li>
+  <li>Preis 1: <strong>49 €</strong> · <strong>Wiederkehrend</strong> · Intervall <strong>Monatlich</strong> ${ARROW} speichern.</li>
+  <li>Am selben Produkt: <strong>+ weiteren Preis</strong> ${ARROW} <strong>490 €</strong> · <strong>Wiederkehrend</strong> · Intervall <strong>Jährlich</strong> ${ARROW} speichern.</li>
+  <li>Bei jedem Preis: <strong>${DOTS} ${ARROW} ID kopieren</strong> (beginnt mit <code>price_…</code>).</li>
 </ol>
 </div>
 <table>
@@ -109,13 +110,13 @@ Monatsabo (kein toter Button).</p>
 
 <h1>2 · API-Schlüssel</h1>
 <ol>
-  <li><strong>Entwickler → API-Schlüssel</strong>.</li>
-  <li><strong>Geheimer Schlüssel</strong> kopieren (<code>sk_test_…</code> im Testmodus) → <code>STRIPE_SECRET_KEY</code>.</li>
+  <li><strong>Entwickler ${ARROW} API-Schlüssel</strong>.</li>
+  <li><strong>Geheimer Schlüssel</strong> kopieren (<code>sk_test_…</code> im Testmodus) ${ARROW} <code>STRIPE_SECRET_KEY</code>.</li>
 </ol>
 
 <h1>3 · Webhook</h1>
 <ol>
-  <li><strong>Entwickler → Webhooks → Endpunkt hinzufügen</strong>.</li>
+  <li><strong>Entwickler ${ARROW} Webhooks ${ARROW} Endpunkt hinzufügen</strong>.</li>
   <li>URL: <code>https://www.werdemeisterdeinergedanken.de/api/stripe/webhook</code></li>
   <li>Events auswählen:
     <ul>
@@ -124,11 +125,11 @@ Monatsabo (kein toter Button).</p>
       <li><code>customer.subscription.deleted</code></li>
     </ul>
   </li>
-  <li>Nach dem Anlegen das <strong>Signing secret</strong> kopieren (<code>whsec_…</code>) → <code>STRIPE_WEBHOOK_SECRET</code>.</li>
+  <li>Nach dem Anlegen das <strong>Signing secret</strong> kopieren (<code>whsec_…</code>) ${ARROW} <code>STRIPE_WEBHOOK_SECRET</code>.</li>
 </ol>
 
 <h1>4 · Umgebungsvariablen setzen</h1>
-<p>Im Hosting (z. B. Vercel → Settings → Environment Variables) eintragen:</p>
+<p>Im Hosting (z. B. Vercel ${ARROW} Settings ${ARROW} Environment Variables) eintragen:</p>
 <span class="env"><b>STRIPE_SECRET_KEY</b>=sk_test_…
 <b>STRIPE_PRICE_ID</b>=price_…            # 49 €/Monat
 <b>STRIPE_PRICE_ID_YEARLY</b>=price_…     # 490 €/Jahr
@@ -142,11 +143,11 @@ aktivem RLS an).</p>
 
 <h1>5 · Testlauf (Testmodus)</h1>
 <ol>
-  <li>Auf <code>/mitgliedschaft</code> ein Abo wählen → Checkout.</li>
+  <li>Auf <code>/mitgliedschaft</code> ein Abo wählen ${ARROW} Checkout.</li>
   <li>Testkarte <strong>4242 4242 4242 4242</strong>, beliebiges künftiges Datum, beliebige CVC/PLZ.</li>
   <li>Prüfen: In Supabase steht in <code>memberships</code> ein Eintrag mit Status <strong>active</strong>.</li>
   <li>Prüfen: Die <strong>Passwort-setzen-Mail</strong> kommt an (über Resend).</li>
-  <li>Über den Link Passwort setzen → Login → Zugang zum Mitgliederbereich.</li>
+  <li>Über den Link Passwort setzen ${ARROW} Login ${ARROW} Zugang zum Mitgliederbereich.</li>
 </ol>
 <div class="note"><b>Kommt keine Mail?</b> Dann fehlt meist <code>RESEND_API_KEY</code>
 oder die Absender-Domain ist bei Resend noch nicht verifiziert (ohne
