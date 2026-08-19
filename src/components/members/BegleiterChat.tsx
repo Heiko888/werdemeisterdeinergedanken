@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import Link from "next/link";
 import { clearConversation } from "@/app/mitglieder/begleiter/actions";
 import { cn } from "@/lib/cn";
 import {
@@ -20,13 +21,69 @@ import {
  * Supabase; hier steht nur die Anzeige.
  */
 
+/**
+ * Erkennt Links im Antworttext und macht sie anklickbar.
+ *
+ * Der Begleiter nennt Inhalte als echte Pfade (z. B. „(/mitglieder/praxis/
+ * atembeobachtung)"). Zwei Fälle werden linkbar gemacht:
+ * - **Interne Pfade** unter bekannten Startsegmenten → Next-`<Link>` (schnelle
+ *   In-App-Navigation, kein voller Neuladen). Die Allowlist verhindert, dass
+ *   Alltags-Schrägstriche wie „und/oder" fälschlich zu Links werden.
+ * - **Echte URLs** (`http(s)://…`) → normaler Link in neuem Tab.
+ */
+const LINK_RE =
+  /(https?:\/\/[^\s)]+)|(\/(?:mitglieder|bewusstseinstest|kontakt|blog|die-7-stufen|mitgliedschaft|ueber-mich|datenschutz|impressum)(?:\/[\w-]+)*)/g;
+
+const linkClass =
+  "font-medium text-accent underline decoration-accent/40 underline-offset-2 transition-colors hover:text-ink hover:decoration-ink/40 [overflow-wrap:anywhere]";
+
+function linkify(text: string): ReactNode[] {
+  const out: ReactNode[] = [];
+  let last = 0;
+  let key = 0;
+  LINK_RE.lastIndex = 0;
+  for (let m = LINK_RE.exec(text); m !== null; m = LINK_RE.exec(text)) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    const treffer = m[0];
+    if (m[1]) {
+      // Externe URL – neuer Tab, Referrer sparsam. Nachlaufende Satzzeichen
+      // (z. B. der Punkt am Satzende) gehören nicht in die URL, sondern bleiben
+      // als Text stehen.
+      const tail = treffer.match(/[.,;:!?]+$/)?.[0] ?? "";
+      const url = tail ? treffer.slice(0, -tail.length) : treffer;
+      out.push(
+        <a
+          key={key++}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={linkClass}
+        >
+          {url}
+        </a>,
+      );
+      if (tail) out.push(tail);
+    } else {
+      // Interner Pfad – In-App-Navigation.
+      out.push(
+        <Link key={key++} href={treffer} className={linkClass}>
+          {treffer}
+        </Link>,
+      );
+    }
+    last = m.index + treffer.length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 /** Antworttext in Absätze zerlegen – Zeilenumbrüche innerhalb bleiben erhalten. */
 function Paragraphs({ text }: { text: string }) {
   return (
     <>
       {text.split(/\n{2,}/).map((para, i) => (
         <p key={i} className="whitespace-pre-wrap">
-          {para.trim()}
+          {linkify(para.trim())}
         </p>
       ))}
     </>
