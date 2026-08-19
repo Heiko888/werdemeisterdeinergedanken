@@ -9,23 +9,21 @@ und `docs/reels/covers/logo.png` (das Cover-Studio ist die Quelle; das
 Carousel-`build.mjs` kopiert sie herüber). Generierte Ordner `build/`,
 `export/` und `export-overlay/` sind git-ignoriert.
 
-**Sonderzeichen im Markup:** Der Rechtspfeil kommt als gezeichnetes Inline-SVG
-aus **`docs/_glyphs.mjs`** (`ARROW`), nicht als Textzeichen – `U+2192` fehlt im
-`unicode-range` von `_fonts.css`, wodurch Chromium sonst eine System-Schrift
-zöge und die PNGs von Rechner zu Rechner leicht abwichen. Betrifft
-`build.mjs` („wischen →" im Slide-Footer), `marketing-serien.mjs` und
-`stufen-ueberblick.mjs` (CTA-Buttons). In den HTML-Galerieseiten (`index.html`)
-darf ein „→" stehen bleiben – die werden nicht zu PNG gerendert.
+**Sonderzeichen im Markup:** Zeichen außerhalb des eingebetteten Schrift-Subsets
+kommen als gezeichnetes Inline-SVG aus **`docs/_glyphs.mjs`**, nicht als
+Textzeichen – sonst zöge Chromium eine System-Schrift und die PNGs wichen von
+Rechner zu Rechner ab. Zwei Fälle:
 
-> **Noch offen:** `docs/reels/covers/data.mjs` setzt in drei Cover-Titeln
-> `≠` (**U+2260**) – „Dein Feed ≠ die Welt" (05), „Laut ≠ Mehrheit" (07),
-> „Titel ≠ Wahrheit" (08). Auch dieses Zeichen fehlt im `unicode-range` und
-> kommt daher aus einer System-Schrift; die drei Cover sind also nicht
-> maschinenunabhängig reproduzierbar. Kein akutes Problem, weil
-> `docs/reels/covers/export/` git-ignoriert ist und kein eingechecktes Asset
-> davon abhängt. Eine Behebung analog zum Pfeil (`NEQ` in `docs/_glyphs.mjs`)
-> ist möglich, verlangt aber typografisches Augenmaß: das Zeichen steht in
-> 120px-Headlines direkt neben echten Inter-Glyphen.
+- `ARROW` (→, `U+2192`): `build.mjs` („wischen →" im Slide-Footer),
+  `marketing-serien.mjs` und `stufen-ueberblick.mjs` (CTA-Buttons).
+- `NEQ` (≠, `U+2260`): `data.mjs`, drei Cover-Titel der Serie
+  „Mentale Selbstverteidigung" – „Dein Feed ≠ die Welt" (05),
+  „Laut ≠ Mehrheit" (07), „Titel ≠ Wahrheit" (08). Das `≠` steht in den
+  fetten Fraunces-Headlines (bis 150px), darum sind Strichstärke und flache
+  Enden bewusst an einen fetten Serif angelehnt.
+
+In den HTML-Galerieseiten (`index.html`) dürfen „→"/„≠" als Text stehen
+bleiben – die werden nicht zu PNG gerendert.
 
 **Chromium-Suche** in allen PNG-Exportern (`findChrome`): `CHROME_BIN` →
 `require("playwright").chromium.executablePath()` → `PLAYWRIGHT_BROWSERS_PATH`

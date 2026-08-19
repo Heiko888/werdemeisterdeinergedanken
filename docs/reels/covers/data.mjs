@@ -4,6 +4,7 @@
  *
  * Motive/Texte ändert man ausschließlich hier.
  */
+import { NEQ } from "../../_glyphs.mjs";
 export const HANDLE = "www.werdemeisterdeinergedanken.de";
 export const GRAD = "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)";
 export const A = (s) => `<span class="accent">${s}</span>`; // Akzentwort
@@ -23,10 +24,10 @@ export const COLLECTIONS = [
       { theme: "Framing",             cls: "",      html: `Ein ${A("Wort")}<br>ändert alles` },
       { theme: "Sprache & Etiketten", cls: "small", html: `Ein Wort beendet<br>jede ${A("Debatte")}` },
       { theme: "Medien-Agenda",       cls: "small", html: `Nicht WAS –<br>sondern ${A("WORÜBER")}` },
-      { theme: "Algorithmen",         cls: "",      html: `Dein ${A("Feed")}<br>≠ die Welt` },
+      { theme: "Algorithmen",         cls: "",      html: `Dein ${A("Feed")}<br>${NEQ} die Welt` },
       { theme: "Werbung & Mangel",    cls: "",      html: `Sie verkauft dir<br>den ${A("Mangel")}` },
-      { theme: "Gruppendruck",        cls: "",      html: `Laut ≠<br>${A("Mehrheit")}` },
-      { theme: "Autoritätshörigkeit", cls: "",      html: `Titel ≠<br>${A("Wahrheit")}` },
+      { theme: "Gruppendruck",        cls: "",      html: `Laut ${NEQ}<br>${A("Mehrheit")}` },
+      { theme: "Autoritätshörigkeit", cls: "",      html: `Titel ${NEQ}<br>${A("Wahrheit")}` },
       { theme: "Angst-Steuerung",     cls: "",      html: `Angst macht<br>dich ${A("lenkbar")}` },
       { theme: "Wiederholung",        cls: "",      html: `Oft gehört<br>= ${A("wahr?")}` },
       { theme: "Ablenkung",           cls: "",      html: `Keine Lüge.<br>Nur ${A("Lärm.")}` },
