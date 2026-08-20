@@ -20,7 +20,12 @@ import {
 import { resolveEntry, formatDate } from "@/lib/journal";
 import { PrintButton } from "@/components/members/PrintButton";
 import { TestCurve } from "@/components/members/TestCurve";
+import { MusterSpiegelPanel } from "@/components/members/MusterSpiegelPanel";
 import { buildStandort } from "@/lib/standortbestimmung";
+import {
+  isMusterSpiegelConfigured,
+  getLatestMusterSpiegel,
+} from "@/app/mitglieder/muster-actions";
 
 export const dynamic = "force-dynamic";
 
@@ -57,12 +62,15 @@ export default async function JournalPage() {
     }
   }
 
-  const [entries, completed, startStage, testHistory] = await Promise.all([
-    getJournalEntries(),
-    getCompletedStages(),
-    getStartStage(),
-    getTestHistory(),
-  ]);
+  const [entries, completed, startStage, testHistory, spiegelConfigured, latestSpiegel] =
+    await Promise.all([
+      getJournalEntries(),
+      getCompletedStages(),
+      getStartStage(),
+      getTestHistory(),
+      isMusterSpiegelConfigured(),
+      getLatestMusterSpiegel(),
+    ]);
 
   const resolved = entries
     .map((e) => ({ entry: e, ctx: resolveEntry(e.itemType, e.itemKey, e.ref) }))
@@ -192,6 +200,16 @@ export default async function JournalPage() {
           </div>
         </Container>
       </section>
+
+      {/* Muster-Spiegel – optionale KI-Vertiefung der Standortbestimmung.
+          Nur wenn serverseitig konfiguriert und überhaupt Reflexionen da sind. */}
+      {spiegelConfigured && resolved.length > 0 && (
+        <section className="pb-10 print:hidden">
+          <Container>
+            <MusterSpiegelPanel initialSpiegel={latestSpiegel} />
+          </Container>
+        </section>
+      )}
 
       {/* Wachstumskurve – Bewusstseinstest über die Zeit */}
       {testHistory.length >= 1 && (
