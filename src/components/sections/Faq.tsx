@@ -33,6 +33,8 @@ export function Faq({
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="flex w-full items-center justify-between gap-4 py-5 text-left"
                   aria-expanded={isOpen}
+                  id={`faq-frage-${i}`}
+                  aria-controls={`faq-antwort-${i}`}
                 >
                   <span
                     className={cn(
@@ -54,6 +56,9 @@ export function Faq({
                   </span>
                 </button>
                 <div
+                  id={`faq-antwort-${i}`}
+                  role="region"
+                  aria-labelledby={`faq-frage-${i}`}
                   className={cn(
                     "grid transition-all duration-300 ease-out",
                     isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",

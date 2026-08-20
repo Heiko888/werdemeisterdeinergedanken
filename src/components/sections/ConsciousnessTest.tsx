@@ -223,12 +223,20 @@ export function ConsciousnessTest() {
       </div>
 
       {/* Frage */}
-      <p className="min-h-[3.5rem] font-display text-xl leading-snug text-ink sm:text-2xl">
+      <p
+        id="test-frage"
+        className="min-h-[3.5rem] font-display text-xl leading-snug text-ink sm:text-2xl"
+      >
         {question.text}
       </p>
 
-      {/* Antworten */}
-      <div className="flex flex-col gap-3">
+      {/* Antworten – als Gruppe an die Frage gekoppelt, damit der Bezug auch
+          bei Sprung-Navigation mit Screenreadern erhalten bleibt. */}
+      <div
+        role="group"
+        aria-labelledby="test-frage"
+        className="flex flex-col gap-3"
+      >
         {answerScale.map((option) => {
           const selected = answers[current] === option.value;
           return (
