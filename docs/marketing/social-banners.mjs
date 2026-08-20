@@ -25,6 +25,10 @@ const TARGETS = [
     brain: 560, eb: 24, url: 42, logoOnly: true },
   { key: "linkedin", file: "linkedin/WMDG-LinkedIn-Banner.png", w: 1584, h: 396,
     brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true },
+  // WhatsApp-Banner in derselben breiten LinkedIn-Optik (Gehirn rechts, Text
+  // links). Gleiche Maße, damit die Grafik 1:1 wie der LinkedIn-Banner wirkt.
+  { key: "whatsapp", file: "whatsapp/WMDG-WhatsApp-Banner.png", w: 1584, h: 396,
+    brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true },
 ];
 
 const css = (t) => `
