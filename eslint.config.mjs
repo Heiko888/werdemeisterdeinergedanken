@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Node-Test-Dateien (laufen über `npm test`, nicht über den Next-Build).
+    // Sie nutzen bewusst `.ts`-Importe für den nativen Node-Test-Runner.
+    "src/**/*.test.ts",
   ]),
 ]);
 
