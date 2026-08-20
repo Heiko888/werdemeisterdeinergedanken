@@ -27,8 +27,14 @@ const TARGETS = [
     brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true },
   // WhatsApp-Banner in derselben breiten LinkedIn-Optik (Gehirn rechts, Text
   // links). Gleiche Maße, damit die Grafik 1:1 wie der LinkedIn-Banner wirkt.
+  // WhatsApp-Titelbild: das runde Profilbild liegt mittig ueber dem Banner.
+  // Deshalb KEIN Gehirn (Profilbild ist bereits eins) und der Text steht
+  // komplett in der linken Spalte, ausserhalb des mittigen Profilkreises.
   { key: "whatsapp", file: "whatsapp/WMDG-WhatsApp-Banner.png", w: 1584, h: 396,
-    brain: 288, textW: 760, h1: 58, eb: 18, sub: 20, url: 18, pinned: true, padX: 96, retina: true },
+    textW: 450, h1: 42, eb: 14, sub: 17, url: 17, pinned: true, padX: 80,
+    noBrain: true, retina: true,
+    eyebrowText: "Mentale Selbstverteidigung",
+    subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
 ];
 
 const css = (t) => `
@@ -81,12 +87,12 @@ const htmlFor = (t) => t.logoOnly
 <div class="bg"></div><div class="stars"></div>
 <div class="wrap">
   <div class="content">
-    <div class="eyebrow">Bewusstsein · Mentale Selbstverteidigung · 7 Stufen</div>
-    <h1>Werde Meister deiner <em>Gedanken</em>.</h1>
-    <div class="sub">Raus aus fremden Mustern. Rein in dein eigenes Denken.</div>
+    <div class="eyebrow">${t.eyebrowText ?? "Bewusstsein · Mentale Selbstverteidigung · 7 Stufen"}</div>
+    <h1>${t.headlineHtml ?? "Werde Meister deiner <em>Gedanken</em>."}</h1>
+    <div class="sub">${t.subText ?? "Raus aus fremden Mustern. Rein in dein eigenes Denken."}</div>
     <div class="url">www.werdemeisterdeinergedanken.de</div>
   </div>
-  <div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>
+  ${t.noBrain ? "" : `<div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>`}
 </div></body></html>`;
 
 const require = createRequire(import.meta.url);
