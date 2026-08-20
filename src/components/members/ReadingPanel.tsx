@@ -92,7 +92,10 @@ export function ReadingPanel({
       )}
 
       {error && (
-        <p className="rounded-xl border border-ink/10 bg-paper/60 px-4 py-3 text-sm leading-relaxed text-ink-mid">
+        <p
+          role="alert"
+          className="rounded-xl border border-ink/10 bg-paper/60 px-4 py-3 text-sm leading-relaxed text-ink-mid"
+        >
           {error}
         </p>
       )}

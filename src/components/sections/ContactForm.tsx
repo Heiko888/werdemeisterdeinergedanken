@@ -55,7 +55,10 @@ export function ContactForm() {
 
   if (status === "done") {
     return (
-      <div className="flex flex-col items-center gap-4 rounded-3xl border border-accent/30 bg-accent/10 p-10 text-center">
+      <div
+        role="status"
+        className="flex flex-col items-center gap-4 rounded-3xl border border-accent/30 bg-accent/10 p-10 text-center"
+      >
         <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent/20 text-2xl text-accent">
           <Check />
         </span>
@@ -155,7 +158,10 @@ export function ContactForm() {
       </label>
 
       {status === "error" && (
-        <p className="rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-700">
+        <p
+          role="alert"
+          className="rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-700"
+        >
           {error}
         </p>
       )}

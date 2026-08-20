@@ -29,6 +29,16 @@ export function Header() {
     };
   }, [open]);
 
+  // Menü per Escape schließen (Tastaturbedienung)
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <header
       className={cn(
@@ -74,13 +84,18 @@ export function Header() {
           className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-ink/15 bg-ink/[0.03] text-2xl text-ink lg:hidden"
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
+          aria-controls="mobiles-menue"
         >
           {open ? <Close /> : <Menu />}
         </button>
       </div>
 
-      {/* Mobiles Menü */}
+      {/* Mobiles Menü. `inert` im geschlossenen Zustand nimmt die (unsichtbaren)
+          Links aus dem Tab-Fluss und blendet sie für Screenreader aus, ohne die
+          Auf-/Zu-Animation zu verlieren. */}
       <div
+        id="mobiles-menue"
+        inert={!open}
         className={cn(
           "lg:hidden overflow-hidden border-t border-ink/10 bg-white transition-[max-height,opacity] duration-300",
           open ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0",

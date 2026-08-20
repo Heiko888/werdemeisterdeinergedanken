@@ -7,15 +7,17 @@ import { publishedPosts } from "@/lib/blog";
 export const revalidate = 3600;
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Nur öffentlich indexierbare Seiten. /impressum und /datenschutz stehen
+  // bewusst NICHT hier: sie tragen `noindex` und gehören daher nicht in die
+  // Sitemap (eine Sitemap listet Seiten, die indexiert werden sollen).
   const routes = [
     "",
     "/die-7-stufen",
+    "/mitgliedschaft",
     "/ueber-mich",
     "/bewusstseinstest",
     "/blog",
     "/kontakt",
-    "/impressum",
-    "/datenschutz",
   ];
 
   const staticEntries: MetadataRoute.Sitemap = routes.map((path) => ({

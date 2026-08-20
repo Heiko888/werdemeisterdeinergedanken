@@ -15,6 +15,8 @@ import { deepDives } from "@/lib/deep-dives";
 import { practices } from "@/lib/practices";
 import { chapters } from "@/lib/wissensdatenbank";
 import type { Gedankenprofil } from "@/lib/gedankenprofil";
+import type { JournalEntry } from "@/app/mitglieder/actions";
+import { resolveEntry } from "@/lib/journal";
 
 /**
  * Verzeichnis aller Mitglieder-Inhalte mit echten Pfaden.
@@ -102,6 +104,43 @@ export function profileFacts(profil: Gedankenprofil): string {
 }
 
 /**
+ * Kurzfassung der jüngsten Journal-Reflexionen als privater Kontext für den
+ * Begleiter. So kann er konkret auf die eigene Reise der Person eingehen
+ * („du hast neulich zu Stufe 3 notiert …") statt allgemein zu bleiben.
+ *
+ * Bewusst knapp gehalten: die jüngsten Einträge, jeweils mit Herkunft und
+ * einem kurzen Ausschnitt. Die vollständigen Texte gehören nicht in jeden
+ * Prompt – der Begleiter soll anknüpfen, nicht zitieren.
+ */
+export function journalFacts(entries: JournalEntry[]): string {
+  const MAX_ENTRIES = 8;
+  const SNIPPET = 180;
+
+  const lines: string[] = [];
+  for (const e of entries) {
+    if (lines.length >= MAX_ENTRIES) break;
+    const ctx = resolveEntry(e.itemType, e.itemKey, e.ref);
+    if (!ctx) continue;
+    const body = e.body.trim().replace(/\s+/g, " ");
+    if (!body) continue;
+    const snippet = body.length > SNIPPET ? `${body.slice(0, SNIPPET)}…` : body;
+    const frage = ctx.question ? ` (zur Frage: „${ctx.question}")` : "";
+    lines.push(`- ${ctx.label} · ${ctx.title}${frage}: „${snippet}"`);
+  }
+
+  if (lines.length === 0) {
+    return "Die Person hat noch keine Reflexionen ins Journal geschrieben – setz also nichts über ihren bisherigen Weg voraus.";
+  }
+
+  return [
+    "Die jüngsten Reflexionen der Person aus ihrem Journal (privat, nur als",
+    "Kontext – knüpf sanft daran an, wenn es passt, aber recite sie nicht und",
+    "deute nichts hinein, was nicht dasteht):",
+    ...lines,
+  ].join("\n");
+}
+
+/**
  * Der System-Prompt des Begleiters.
  *
  * Enthält bewusst harte Grenzen: keine Therapie, keine Diagnosen, keine
@@ -111,10 +150,12 @@ export function profileFacts(profil: Gedankenprofil): string {
 export function buildSystemPrompt({
   name,
   profile,
+  journal,
   catalogue,
 }: {
   name: string;
   profile: string;
+  journal: string;
   catalogue: string;
 }): string {
   const anrede = name
@@ -164,6 +205,9 @@ GRENZEN
 
 STAND DER PERSON
 ${profile}
+
+AUS DEM JOURNAL DER PERSON
+${journal}
 
 VERZEICHNIS DER VERFÜGBAREN INHALTE
 ${catalogue}`;

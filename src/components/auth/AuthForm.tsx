@@ -54,7 +54,10 @@ export function AuthForm({
       )}
 
       {state.message ? (
-        <div className="flex flex-col items-center gap-3 rounded-2xl border border-accent/30 bg-accent/10 p-8 text-center">
+        <div
+          role="status"
+          className="flex flex-col items-center gap-3 rounded-2xl border border-accent/30 bg-accent/10 p-8 text-center"
+        >
           <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/20 text-xl text-accent">
             <Check />
           </span>
@@ -114,7 +117,10 @@ export function AuthForm({
           <input type="hidden" name="redirect" value={redirectTo} />
 
           {state.error && (
-            <p className="rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-700">
+            <p
+              role="alert"
+              className="rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-700"
+            >
               {state.error}
             </p>
           )}

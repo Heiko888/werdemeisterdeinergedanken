@@ -7,6 +7,7 @@ import {
   isSupabaseConfigured,
   REQUIRE_MEMBER_LOGIN,
 } from "@/lib/supabase/config";
+import { isAdminEmail } from "@/lib/admin";
 
 // In Next.js 16 heißt „Middleware“ jetzt „Proxy“ (gleiche Funktion, neuer Name).
 // Diese Datei ersetzt das frühere src/middleware.ts.
@@ -71,7 +72,10 @@ function markNonCanonicalNoindex(
 /** Session-Refresh + Schutz von /mitglieder. Supabase wird nur auf den relevanten Pfaden angefragt. */
 async function withAuth(request: NextRequest): Promise<NextResponse> {
   const path = request.nextUrl.pathname;
-  const isAuthPath = path.startsWith("/mitglieder") || path === "/login";
+  const isAuthPath =
+    path.startsWith("/mitglieder") ||
+    path.startsWith("/admin") ||
+    path === "/login";
 
   // Kein Auth-Pfad, Login-Schutz aus oder Supabase nicht konfiguriert → nichts tun.
   if (!isAuthPath || !REQUIRE_MEMBER_LOGIN || !isSupabaseConfigured) {
@@ -107,6 +111,24 @@ async function withAuth(request: NextRequest): Promise<NextResponse> {
     url.pathname = "/login";
     url.searchParams.set("redirect", path);
     return NextResponse.redirect(url);
+  }
+
+  // Geschützt: /admin → zweite Schicht (Defense-in-Depth) zusätzlich zum
+  // seiten-eigenen Check in src/app/admin/*. Ohne Login zur Anmeldung, ohne
+  // Admin-Recht zurück in den normalen Mitgliederbereich.
+  if (path.startsWith("/admin")) {
+    if (!user) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/login";
+      url.searchParams.set("redirect", path);
+      return NextResponse.redirect(url);
+    }
+    if (!isAdminEmail(user.email)) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/mitglieder";
+      url.search = "";
+      return NextResponse.redirect(url);
+    }
   }
 
   // Bereits eingeloggt und auf /login → direkt ins Dashboard

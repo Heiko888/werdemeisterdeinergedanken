@@ -6,7 +6,11 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/impressum", "/datenschutz", "/mitglieder", "/login"],
+      // /impressum und /datenschutz werden NICHT gesperrt: sie steuern ihre
+      // Nicht-Indexierung über das `noindex`-Meta-Tag – ein Crawl-Verbot würde
+      // verhindern, dass Suchmaschinen dieses Tag überhaupt lesen. Nur die
+      // wirklich privaten Bereiche werden vom Crawling ausgeschlossen.
+      disallow: ["/mitglieder", "/login"],
     },
     sitemap: `${site.url}/sitemap.xml`,
   };

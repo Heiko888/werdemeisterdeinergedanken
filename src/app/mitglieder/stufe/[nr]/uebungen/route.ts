@@ -1,21 +1,22 @@
 import { stages } from "@/lib/content";
 import { worksheetSlug } from "@/lib/pdf/slug";
 import { getStaticPdf } from "@/lib/pdf/static-pdf";
+import { guardMemberDownload } from "@/lib/members/download-guard";
 
-export const dynamic = "force-static";
-
-export function generateStaticParams() {
-  return stages.map((_, i) => ({ nr: String(i + 1) }));
-}
+// Session-abhängiger Zugriffsschutz → nicht statisch vorrendern.
+export const dynamic = "force-dynamic";
 
 /**
  * Übungs-Arbeitsblatt einer Stufe (mit Ausfüll-Linien) – gestaltetes PDF
  * im Markendesign (content/pdf/stufe-<nr>-uebungen.pdf).
  */
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ nr: string }> },
 ) {
+  const denied = await guardMemberDownload(request);
+  if (denied) return denied;
+
   const { nr } = await params;
   const idx = Number(nr) - 1;
 

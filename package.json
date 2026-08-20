@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "node --test \"src/**/*.test.ts\"",
     "pdf": "node tools/pdf/generate.mjs",
     "covers": "node docs/reels/covers/build.mjs",
     "covers:png": "node docs/reels/covers/export-png.mjs",
@@ -18,6 +19,7 @@
     "story-overlays": "node tools/marketing/story-overlays.mjs",
     "content-overlays": "node tools/marketing/content-overlays.mjs",
     "whatsapp:mitgliedschaft": "node tools/marketing/whatsapp-mitgliedschaft.mjs",
+    "whatsapp:safezone": "node docs/marketing/whatsapp-safezone.mjs",
     "vorlagen:galerie": "node tools/vorlagen/build-gallery.mjs"
   },
   "dependencies": {

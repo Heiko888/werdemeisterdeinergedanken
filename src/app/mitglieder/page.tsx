@@ -186,6 +186,16 @@ export default async function MembersPage() {
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             )}
+            {begleiterVerfuegbar && (
+              <Link
+                href="/mitglieder/detektor"
+                className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+              >
+                <Spark />
+                Manipulations-Detektor
+                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            )}
             <Link
               href="/mitglieder/wissensdatenbank"
               className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"

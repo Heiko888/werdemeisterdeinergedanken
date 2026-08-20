@@ -2,12 +2,17 @@ import Anthropic from "@anthropic-ai/sdk";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { isAdminEmail } from "@/lib/admin";
-import { getTestProfile, getCompletedStages } from "@/app/mitglieder/actions";
+import {
+  getTestProfile,
+  getCompletedStages,
+  getJournalEntries,
+} from "@/app/mitglieder/actions";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
 import {
   buildSystemPrompt,
   contentCatalogue,
   profileFacts,
+  journalFacts,
 } from "@/lib/begleiter-prompt";
 import {
   BEGLEITER_MODEL,
@@ -107,10 +112,12 @@ export async function POST(request: Request): Promise<Response> {
     (user.user_metadata?.full_name as string | undefined) ||
     "";
 
-  const [{ startStage, scores }, completedKeys] = await Promise.all([
-    getTestProfile(),
-    getCompletedStages(),
-  ]);
+  const [{ startStage, scores }, completedKeys, journalEntries] =
+    await Promise.all([
+      getTestProfile(),
+      getCompletedStages(),
+      getJournalEntries(),
+    ]);
   const completedNumbers = completedKeys
     .map((k) => Number(k))
     .filter((n) => Number.isInteger(n) && n >= 1 && n <= 7);
@@ -119,6 +126,7 @@ export async function POST(request: Request): Promise<Response> {
   const system = buildSystemPrompt({
     name,
     profile: profileFacts(profil),
+    journal: journalFacts(journalEntries),
     catalogue: contentCatalogue(),
   });
 

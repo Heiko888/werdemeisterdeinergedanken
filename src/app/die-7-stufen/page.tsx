@@ -6,12 +6,13 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { Faq } from "@/components/sections/Faq";
 import { stages } from "@/lib/content";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/die-7-stufen", {
   title: "Die 7 Stufen der Bewusstseinsentwicklung",
   description:
     "Der strukturierte Weg vom Autopilot bis zur Meisterschaft über deine Gedanken – die 7 Stufen der Bewusstseinsentwicklung im Detail.",
-};
+});
 
 export default function SevenStagesPage() {
   return (
