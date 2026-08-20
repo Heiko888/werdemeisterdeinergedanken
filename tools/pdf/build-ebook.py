@@ -104,7 +104,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
   line-height:1; color:transparent; -webkit-text-stroke:1.5px rgba(95,214,210,.35); }
 .shead h1{ font-family:'Fraunces',serif; font-size:44px; font-weight:600; margin-top:10px; letter-spacing:-.4px; }
 .shead .sub{ font-size:15px; color:#bcd; margin-top:4px; font-style:italic; color:#9fd6d2; }
-.sbody{ padding:14mm 22mm 0; flex:1; }
+.sbody{ padding:14mm 22mm 18mm; flex:1; }
 .blocklabel{ font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:10px; }
 .signs{ display:flex; flex-direction:column; gap:9px; margin-bottom:16px; }
 .signs div{ position:relative; padding-left:26px; font-size:13.5px; line-height:1.5; color:var(--ink); }
@@ -232,6 +232,44 @@ CSS += """
 .cta .btn{ display:inline-block; margin-top:15px; background:linear-gradient(135deg,var(--teal-400),var(--leaf-500));
   color:#06231f; font-weight:700; font-size:13px; padding:11px 22px; border-radius:999px; }
 .pagenum{ position:absolute; bottom:12mm; right:22mm; font-size:10px; color:#b3ab99; letter-spacing:.05em; }
+
+/* ---------- EINHEITLICHE FUSSZEILE (alle Innenseiten) ---------- */
+.pgfoot{ position:absolute; left:22mm; right:22mm; bottom:10mm; display:flex;
+  justify-content:space-between; align-items:center; font-size:9.5px; color:#a49c8b;
+  letter-spacing:.04em; border-top:1px solid #e8e2d4; padding-top:6px; }
+.pgfoot .l{ font-weight:500; }
+.pgfoot .r{ display:flex; align-items:baseline; gap:12px; }
+.pgfoot .r .dom{ color:#a49c8b; }
+.pgfoot .r .pg{ font-family:'Fraunces',serif; font-weight:700; font-size:12px; color:var(--accent);
+  min-width:14px; text-align:right; }
+
+/* ---------- INHALTSVERZEICHNIS ---------- */
+.toc{ margin-top:22px; }
+.trow{ display:flex; align-items:baseline; gap:12px; padding:12.5px 0; }
+.trow + .trow{ border-top:1px solid #ece7db; }
+.trow .tn{ font-family:'Fraunces',serif; font-weight:600; color:var(--teal-500); font-size:18px;
+  width:26px; flex:none; text-align:center; }
+.trow.plain .tn{ color:#c9c1b0; font-size:14px; }
+.trow .tt{ font-size:15px; color:var(--ink); font-weight:600; }
+.trow .tt em{ font-style:normal; color:var(--ink-soft); font-weight:400; }
+.trow .dots{ flex:1; align-self:center; border-bottom:1px dotted #cbc4b4; margin:0 4px; height:0; }
+.trow .pg{ font-family:'Fraunces',serif; font-size:15.5px; color:var(--ink-soft); font-weight:600;
+  min-width:22px; text-align:right; }
+.tgroup{ margin:20px 0 2px; font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--accent); font-weight:700; }
+
+/* ---------- PERSÖNLICHE SEITE „Warum es diesen Weg gibt" ---------- */
+.storyhead{ font-size:25px; line-height:1.2; margin-top:8px; letter-spacing:-.2px; }
+.story .stx{ font-size:11.7px; line-height:1.52; color:var(--ink-soft); margin-top:9px; max-width:none; }
+.story .stx.first{ margin-top:15px; }
+.story .stx em{ font-style:italic; color:var(--ink); }
+.story .stx b{ color:var(--ink); font-weight:600; }
+.wendepunkt{ margin:15px 0; border-left:3px solid var(--gold-400); background:var(--surface);
+  border-radius:0 14px 14px 0; padding:15px 20px; box-shadow:0 12px 30px -26px rgba(22,35,31,.5); }
+.wendepunkt .k{ font-size:10.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--gold-500); font-weight:700; }
+.wendepunkt p{ font-family:'Fraunces',serif; font-style:italic; font-size:17px; color:var(--ink);
+  margin-top:6px; line-height:1.4; }
 """
 
 # ---------- Inhalte der 7 Stufen ----------
@@ -355,11 +393,10 @@ def stage_page(s, idx, total=7):
     </div>
     <div class="reflect"><div class="q serif">&rdquo;</div><p>%s</p></div>
   </div>
-  <div class="sfoot"><span>Werde Meister deiner Gedanken · Stufe %s</span><span class="dom">werdemeisterdeinergedanken.de</span></div>
  </div>
 </div>
 """ % (gold, s["n"], s["n"], s["title"], s["sub"], signs, s["key"], s["body"],
-       s["ex"]["title"], s["ex"]["dur"], steps, s["refl"], s["n"])
+       s["ex"]["title"], s["ex"]["dur"], steps, s["refl"])
     return html.replace("__STARS__", stars())
 
 WELCOME = """
@@ -382,7 +419,50 @@ WELCOME = """
     <p>„Was du bewusst bemerkst, kann beginnen, sich zu verändern.“</p>
   </div>
  </div>
- <div class="pagenum">Werde Meister deiner Gedanken</div>
+</div>
+"""
+
+STORY = """
+<div class="page">
+ <div class="pad story">
+  <div class="kicker">Warum es diesen Weg gibt</div>
+  <h2 class="h2 serif storyhead">Die Ereignisse waren irgendwann vorbei. In meinem Kopf liefen sie weiter.</h2>
+  <p class="stx first">Es begann mit einem Mieter, der nicht mehr zahlte. Was wie ein normaler Mietausfall
+     aussah, wurde zu einer Kettenreaktion: Er betrieb ein Inkassounternehmen, veruntreute Kundengelder
+     und bestellte nebenbei Waren auf meinen Namen. Die Rechnungen landeten bei mir. Er wurde später zu
+     sechs Jahren Haft verurteilt — meine Objekte waren da längst in der Versteigerung.</p>
+  <p class="stx">Es folgten die Privatinsolvenz und die Insolvenz meiner GmbH. Von außen waren das
+     wirtschaftliche Vorgänge. Innen klang es anders. Nicht „ich bin insolvent“, sondern:
+     <em>ich bin gescheitert.</em> Aus einem Ereignis war ein Selbstbild geworden.</p>
+  <p class="stx">Dazu kamen Jahre mit Verfahren, Terminen und Post, die man nicht öffnen möchte. Wer das
+     nie erlebt hat, unterschätzt, was es mit einem Menschen macht. Es ist nicht der einzelne Termin.
+     Es ist der Dauerzustand: Über allem hängt etwas, das du nicht steuern kannst und dessen Ausgang
+     jemand anderes bestimmt. Irgendwann planst du nicht mehr in Jahren, sondern von Brief zu Brief.</p>
+  <p class="stx">Genau dort entstand der Kreislauf, der mich am längsten festgehalten hat: Aus Angst,
+     etwas falsch zu machen, schob ich Entscheidungen auf. Durch das Aufschieben wuchs der Druck. Durch
+     den Druck wuchs die Angst. Ich war nicht faul. Ich war gelähmt.</p>
+  <p class="stx">Arbeit war mein Beruhigungsmittel — teilweise bis tief in die Nacht. Von außen sah das
+     nach Leistung aus. Es war Flucht. Solange ich beschäftigt war, musste ich nicht fühlen.</p>
+  <p class="stx">Dann starb Lena, meine Lebensgefährtin. Das war der Punkt, an dem meine bisherige Art,
+     mit dem Leben umzugehen, endgültig gesprengt wurde. Härter arbeiten ging nicht mehr. Mehr
+     kontrollieren ging nicht mehr. Positiv denken wäre Hohn gewesen.</p>
+  <p class="stx">Rund zwölf Jahre lief das so. Und irgendwann habe ich den Satz verstanden, um den es in
+     allem geht, was ich heute tue:</p>
+  <div class="wendepunkt">
+    <div class="k">Mein Wendepunkt</div>
+    <p>„Die Ereignisse waren real. Aber irgendwann liefen sie hauptsächlich noch in meinem Kopf weiter.“</p>
+  </div>
+  <p class="stx">Was mir dann geholfen hat, war unspektakulär. Meine erste Meditation war alles andere als
+     ruhig: Es juckte, ich war unruhig, die Gedanken liefen ununterbrochen. Erst über den Atem als Anker
+     habe ich begriffen, dass ich einen Reiz bemerken kann, ohne sofort darauf zu reagieren. Zwischen Reiz
+     und Reaktion entstand ein Abstand. In diesem Abstand hatte ich zum ersten Mal seit Jahren wieder eine Wahl.</p>
+  <p class="stx">Von da an ging es Schritt für Schritt. Erst bemerken. Dann zusehen. Dann fühlen, was ich
+     jahrelang weggedrückt hatte. Dann wieder handeln — kleine Schritte, nicht die große Wende.</p>
+  <p class="stx">Im Rückblick hatte dieser Weg eine Reihenfolge. Ich konnte nichts loslassen, bevor ich es
+     überhaupt gesehen hatte. Ich konnte nichts Neues gestalten, solange das Alte noch in mir saß. Genau
+     diese Reihenfolge sind die 7 Stufen auf den nächsten Seiten. Kein Modell vom Schreibtisch, sondern der
+     Weg, den ich gegangen bin — nur aufgeräumt, damit du ihn nicht im Dunkeln suchen musst.</p>
+ </div>
 </div>
 """
 
@@ -409,9 +489,52 @@ CLOSING = """
     <span class="btn">werdemeisterdeinergedanken.de</span>
   </div>
  </div>
- <div class="pagenum">Werde Meister deiner Gedanken</div>
 </div>
 """
+
+# ---------- Inhaltsverzeichnis ----------
+# Die Seiten sind fixe A4-Blöcke ohne Reflow, daher sind die Seitenzahlen
+# deterministisch: Cover=1, Inhalt=2, Einstieg=3, Meine Geschichte=4,
+# Überblick=5, Stufe 1–7=6–12, Abschluss=13. Wer die Reihenfolge unten in
+# inner/book ändert, muss diese Zahlen mitziehen.
+def toc_page():
+    def plain(title, sub, pg):
+        return ('<div class="trow plain"><span class="tn">&bull;</span>'
+                '<span class="tt">%s<em> &middot; %s</em></span>'
+                '<span class="dots"></span><span class="pg">%d</span></div>') % (title, sub, pg)
+    rows = plain("Zum Einstieg", "Sch&ouml;n, dass du da bist", 3)
+    rows += plain("Warum es diesen Weg gibt", "Meine Geschichte", 4)
+    rows += plain("Der &Uuml;berblick", "Eine Reise in 7 Stufen", 5)
+    rows += '<div class="tgroup">Die 7 Stufen</div>'
+    for i, (num, name, sub) in enumerate(STAGES):
+        rows += ('<div class="trow"><span class="tn">%s</span>'
+                 '<span class="tt">%s<em> &middot; %s</em></span>'
+                 '<span class="dots"></span><span class="pg">%d</span></div>') % (
+                     num.lstrip("0") or "0", name, sub, 6 + i)
+    rows += '<div class="tgroup">Zum Abschluss</div>'
+    rows += plain("Wie es weitergeht", "Dein n&auml;chster Schritt", 13)
+    return """
+<div class="page">
+ <div class="pad">
+  <div class="kicker">Inhalt</div>
+  <h2 class="h2 serif">Inhaltsverzeichnis</h2>
+  <p class="lead">Sieben Stufen &ndash; vom Autopilot zur Meisterschaft. Du kannst der Reihe
+     nach lesen oder direkt bei der Stufe einsteigen, die dich anspricht.</p>
+  <div class="toc">%s</div>
+ </div>
+</div>
+""" % rows
+
+# ---------- Einheitliche Fußzeile (alle Seiten außer Cover) ----------
+FOOT = ('<div class="pgfoot"><span class="l">Die 7 Stufen der Bewusstseinsentwicklung</span>'
+        '<span class="r"><span class="dom">werdemeisterdeinergedanken.de</span>'
+        '<span class="pg">%d</span></span></div>')
+
+def with_footer(page_html, page_num):
+    # Fußzeile als direktes Kind von .page (absolut positioniert) unmittelbar
+    # vor dessen schließendem </div> einsetzen.
+    idx = page_html.rstrip().rfind("</div>")
+    return page_html[:idx] + FOOT % page_num + page_html[idx:] + "\n"
 
 def doc(*pages):
     return ("<!doctype html><html lang='de'><head><meta charset='utf-8'>"
@@ -419,7 +542,10 @@ def doc(*pages):
             + "".join(pages) + "</body></html>")
 
 stage_pages = [stage_page(s, i) for i, s in enumerate(STAGES_FULL)]
-book = [COVER, WELCOME, OVERVIEW] + stage_pages + [CLOSING]
+# Reihenfolge = Seitenzahlen (siehe toc_page): Cover, Inhalt, Einstieg, Überblick,
+# Stufe 1–7, Abschluss.
+inner = [toc_page(), WELCOME, STORY, OVERVIEW] + stage_pages + [CLOSING]
+book = [COVER] + [with_footer(p, i + 2) for i, p in enumerate(inner)]
 
 with open(os.path.join(BUILD, "ebook.html"), "w", encoding="utf-8") as f:
     f.write(doc(*book))
