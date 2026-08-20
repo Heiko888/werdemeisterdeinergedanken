@@ -25,6 +25,23 @@ const TARGETS = [
     brain: 560, eb: 24, url: 42, logoOnly: true },
   { key: "linkedin", file: "linkedin/WMDG-LinkedIn-Banner.png", w: 1584, h: 396,
     brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true },
+  // WhatsApp-Banner in derselben breiten LinkedIn-Optik (Gehirn rechts, Text
+  // links). Gleiche Maße, damit die Grafik 1:1 wie der LinkedIn-Banner wirkt.
+  // WhatsApp-Titelbild: das runde Profilbild liegt mittig ueber dem Banner.
+  // Deshalb KEIN Gehirn (Profilbild ist bereits eins) und der Text steht
+  // komplett in der linken Spalte, ausserhalb des mittigen Profilkreises.
+  { key: "whatsapp", file: "whatsapp/WMDG-WhatsApp-Banner.png", w: 1584, h: 396,
+    textW: 450, h1: 42, eb: 14, sub: 17, url: 17, pinned: true, padX: 80,
+    noBrain: true, noUrl: true, retina: true,
+    eyebrowText: "Mentale Selbstverteidigung",
+    subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
+  // WhatsApp-Banner auf 1920×1080-Arbeitsflaeche (passend zur Safe-Zone-Vorlage):
+  // Text links in der Safe-Zone, mittiger Profilkreis bleibt frei, keine URL.
+  { key: "whatsapp-xl", file: "whatsapp/WMDG-WhatsApp-Banner-1920x1080.png", w: 1920, h: 1080,
+    textW: 540, h1: 64, eb: 19, sub: 24, url: 24, pinned: true, padX: 140,
+    noBrain: true, noUrl: true,
+    eyebrowText: "Mentale Selbstverteidigung",
+    subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
 ];
 
 const css = (t) => `
@@ -58,6 +75,9 @@ h1 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip
 .wordmark{font-weight:800;font-size:68px;letter-spacing:7px;text-transform:uppercase;line-height:1.4;color:rgba(244,242,236,.92)}
 .wordmark span{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
 .logocard .url{margin-top:0;font-size:${t.url}px}
+${t.pinned ? `.wrap{left:0;top:0;transform:none;width:${t.w}px;height:${t.h}px;display:block;gap:0}
+.content{position:absolute;left:${t.padX ?? 110}px;top:50%;transform:translateY(-50%);width:${t.textW}px}
+.bwrap{position:absolute;right:${t.padX ?? 110}px;top:50%;transform:translateY(-50%);flex:none}` : ""}
 `;
 
 const logoBody = () => `<div class="bg"></div><div class="stars"></div>
@@ -74,12 +94,12 @@ const htmlFor = (t) => t.logoOnly
 <div class="bg"></div><div class="stars"></div>
 <div class="wrap">
   <div class="content">
-    <div class="eyebrow">Bewusstsein · Mentale Selbstverteidigung · 7 Stufen</div>
-    <h1>Werde Meister deiner <em>Gedanken</em>.</h1>
-    <div class="sub">Raus aus fremden Mustern. Rein in dein eigenes Denken.</div>
-    <div class="url">www.werdemeisterdeinergedanken.de</div>
+    <div class="eyebrow">${t.eyebrowText ?? "Bewusstsein · Mentale Selbstverteidigung · 7 Stufen"}</div>
+    <h1>${t.headlineHtml ?? "Werde Meister deiner <em>Gedanken</em>."}</h1>
+    <div class="sub">${t.subText ?? "Raus aus fremden Mustern. Rein in dein eigenes Denken."}</div>
+    ${t.noUrl ? "" : `<div class="url">www.werdemeisterdeinergedanken.de</div>`}
   </div>
-  <div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>
+  ${t.noBrain ? "" : `<div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>`}
 </div></body></html>`;
 
 const require = createRequire(import.meta.url);
