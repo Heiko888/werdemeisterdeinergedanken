@@ -168,7 +168,7 @@ export const vorlagenKatalog: VorlagenGruppe[] = [
         text: "deploy/.env.example nach deploy/.env kopieren und Werte eintragen (nicht committen).",
       },
       {
-        text: "Impressum/Datenschutz enthalten Platzhalter in [Klammern] – vor Livegang ersetzen.",
+        text: "Impressum/Datenschutz als anpassbare Grundlage – Angaben bei Bedarf an den eigenen Stand anpassen.",
       },
     ],
   },

@@ -7,14 +7,9 @@ import {
   isSupabaseConfigured,
   ALLOW_SELF_REGISTRATION,
 } from "@/lib/supabase/config";
+import { safeInternalPath } from "@/lib/safe-redirect";
 
 export type AuthState = { error?: string; message?: string };
-
-function safeRedirect(target: FormDataEntryValue | null): string {
-  const t = typeof target === "string" ? target : "";
-  // nur interne Pfade zulassen
-  return t.startsWith("/") && !t.startsWith("//") ? t : "/mitglieder";
-}
 
 export async function signIn(
   _prev: AuthState,
@@ -25,7 +20,7 @@ export async function signIn(
 
   const email = String(formData.get("email") || "").trim();
   const password = String(formData.get("password") || "");
-  const redirectTo = safeRedirect(formData.get("redirect"));
+  const redirectTo = safeInternalPath(formData.get("redirect"));
 
   const supabase = await createClient();
   const { error } = await supabase.auth.signInWithPassword({ email, password });

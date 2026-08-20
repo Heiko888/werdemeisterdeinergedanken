@@ -5,12 +5,13 @@ import Image from "next/image";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { Mail, socialIcons } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/kontakt", {
   title: "Kontakt",
   description:
     "Nimm Kontakt auf und vereinbare ein kostenloses Erstgespräch. Gemeinsam finden wir heraus, wo du stehst und was dein nächster Schritt ist.",
-};
+});
 
 export default function ContactPage() {
   return (

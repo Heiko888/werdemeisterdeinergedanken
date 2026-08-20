@@ -39,6 +39,10 @@ export function BackToTop() {
       onClick={toTop}
       aria-label="Zum Seitenanfang"
       title="Zum Seitenanfang"
+      // Solange unsichtbar: nicht per Tab erreichbar und für Screenreader
+      // ausgeblendet – sonst gäbe es einen unsichtbaren Fokus-Stopp in der Ecke.
+      tabIndex={visible ? 0 : -1}
+      aria-hidden={!visible}
       className={cn(
         "fixed z-40 inline-flex h-12 w-12 items-center justify-center rounded-full",
         "bg-gradient-to-r from-leaf-500 to-teal-400 text-white shadow-soft ring-1 ring-white/20",

@@ -16,6 +16,9 @@ import {
 import { saveStartStage } from "@/app/bewusstseinstest/actions";
 import { cn } from "@/lib/cn";
 
+// Zwischenspeicher der Antworten – überlebt den Login-Umweg (siehe unten).
+const TEST_STORAGE_KEY = "wmdg:test-antworten";
+
 export function ConsciousnessTest() {
   const total = testQuestions.length;
   const [answers, setAnswers] = useState<(number | null)[]>(
@@ -31,15 +34,74 @@ export function ConsciousnessTest() {
   const resultNr = useMemo(() => topStage(scores), [scores]);
   const resultStage = getTestStage(resultNr);
 
+  // Rehydration nach Rückkehr vom Login (?fortsetzen=1): zwischengespeicherte
+  // Antworten laden und direkt ins Ergebnis springen, damit die Action das
+  // Ergebnis nun (angemeldet) nachträgt – der Test muss nicht neu gemacht werden.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("fortsetzen") !== "1") return;
+    try {
+      const raw = window.localStorage.getItem(TEST_STORAGE_KEY);
+      const saved: unknown = raw ? JSON.parse(raw) : null;
+      if (
+        Array.isArray(saved) &&
+        saved.length === total &&
+        saved.every((v) => typeof v === "number")
+      ) {
+        // Bewusstes einmaliges Synchronisieren beim Mount: Die Quelle
+        // (URL-Parameter + localStorage) steht auf dem Server nicht zur
+        // Verfügung, ein Lazy-Init im useState würde einen Hydration-Mismatch
+        // erzeugen. Deshalb hier per Effekt und nur bei ?fortsetzen=1.
+        /* eslint-disable react-hooks/set-state-in-effect */
+        setAnswers(saved as number[]);
+        setCurrent(total - 1);
+        setDone(true);
+        /* eslint-enable react-hooks/set-state-in-effect */
+      }
+    } catch {
+      // Defekter Eintrag → ignorieren.
+    }
+    // Parameter entfernen, damit ein Reload das Ergebnis nicht erneut erzwingt.
+    params.delete("fortsetzen");
+    const rest = params.toString();
+    window.history.replaceState(
+      null,
+      "",
+      window.location.pathname + (rest ? `?${rest}` : ""),
+    );
+  }, [total]);
+
+  // Antworten zwischenspeichern, sobald der Test fertig ist – überlebt so den
+  // Login-Umweg für ausgeloggte Mitglieder.
+  useEffect(() => {
+    if (!done || typeof window === "undefined") return;
+    try {
+      window.localStorage.setItem(TEST_STORAGE_KEY, JSON.stringify(answers));
+    } catch {
+      // Speicher nicht verfügbar (privater Modus o. Ä.) → unkritisch.
+    }
+  }, [done, answers]);
+
   // Beim Abschluss einmalig versuchen, das Ergebnis zu speichern.
   // Ist niemand angemeldet, gibt die Action still `{ saved: false }` zurück.
   useEffect(() => {
     if (!done || !resultStage || savedRef.current) return;
     savedRef.current = true;
-    saveStartStage(resultStage.nr, scores)
-      .then((res) => setMemberSaved(res.saved))
+    saveStartStage(answers)
+      .then((res) => {
+        setMemberSaved(res.saved);
+        // Erfolgreich am Profil gespeichert → Zwischenspeicher entfernen.
+        if (res.saved && typeof window !== "undefined") {
+          try {
+            window.localStorage.removeItem(TEST_STORAGE_KEY);
+          } catch {
+            // ignorieren
+          }
+        }
+      })
       .catch(() => {});
-  }, [done, resultStage, scores]);
+  }, [done, resultStage, answers]);
 
   function choose(value: number) {
     setAnswers((prev) => {
@@ -60,7 +122,14 @@ export function ConsciousnessTest() {
     setDone(false);
     setMemberSaved(false);
     savedRef.current = false;
-    if (typeof window !== "undefined") window.scrollTo({ top: 0 });
+    if (typeof window !== "undefined") {
+      try {
+        window.localStorage.removeItem(TEST_STORAGE_KEY);
+      } catch {
+        // ignorieren
+      }
+      window.scrollTo({ top: 0 });
+    }
   }
 
   /* ---------- Ergebnis ---------- */
@@ -186,6 +255,20 @@ export function ConsciousnessTest() {
                 </>
               )}
             </div>
+            {!memberSaved && (
+              <p className="max-w-xl text-sm leading-relaxed text-ink-mid">
+                Schon Mitglied?{" "}
+                <a
+                  href="/login?redirect=%2Fbewusstseinstest%3Ffortsetzen%3D1"
+                  className="font-medium text-accent underline-offset-2 hover:underline"
+                >
+                  Melde dich an
+                </a>{" "}
+                – dann speichern wir dein Ergebnis in deinem Bereich und tragen
+                es in deinen Verlauf ein. Deine Antworten bleiben dafür kurz
+                gespeichert.
+              </p>
+            )}
           </div>
 
           <button
@@ -223,12 +306,20 @@ export function ConsciousnessTest() {
       </div>
 
       {/* Frage */}
-      <p className="min-h-[3.5rem] font-display text-xl leading-snug text-ink sm:text-2xl">
+      <p
+        id="test-frage"
+        className="min-h-[3.5rem] font-display text-xl leading-snug text-ink sm:text-2xl"
+      >
         {question.text}
       </p>
 
-      {/* Antworten */}
-      <div className="flex flex-col gap-3">
+      {/* Antworten – als Gruppe an die Frage gekoppelt, damit der Bezug auch
+          bei Sprung-Navigation mit Screenreadern erhalten bleibt. */}
+      <div
+        role="group"
+        aria-labelledby="test-frage"
+        className="flex flex-col gap-3"
+      >
         {answerScale.map((option) => {
           const selected = answers[current] === option.value;
           return (

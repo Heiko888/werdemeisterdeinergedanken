@@ -24,11 +24,13 @@ export function TestCurve({ points }: { points: TestPoint[] }) {
   const showEveryDate = n <= 5;
 
   return (
+    <>
     <svg
       viewBox={`0 0 ${W} ${H}`}
       className="h-auto w-full"
       role="img"
       aria-label="Verlauf deiner Schwerpunkt-Stufe über die Zeit"
+      aria-describedby="test-curve-daten"
     >
       {/* Gitterlinien + Stufen-Beschriftung */}
       {[1, 2, 3, 4, 5, 6, 7].map((s) => (
@@ -83,5 +85,16 @@ export function TestCurve({ points }: { points: TestPoint[] }) {
         </g>
       ))}
     </svg>
+
+    {/* Textalternative für Screenreader: dieselben Daten als Liste, damit der
+        Verlauf nicht nur visuell (in der Kurve) zugänglich ist. */}
+    <ul id="test-curve-daten" className="sr-only">
+      {points.map((p, i) => (
+        <li key={`sr-${p.takenAt}-${i}`}>
+          {formatDate(p.takenAt)}: Stufe {p.topStage}
+        </li>
+      ))}
+    </ul>
+    </>
   );
 }

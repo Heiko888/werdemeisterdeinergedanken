@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { BlogIndex, type BlogCard } from "@/components/blog/BlogIndex";
 import { publishedPosts } from "@/lib/blog";
+import { withCanonical } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withCanonical("/blog", {
   title: "Blog",
   description:
     "Impulse zu Bewusstsein, mentaler Entprogrammierung und einem klaren Kopf – kurze, ehrliche Artikel von Heiko Schwaninger.",
-};
+});
 
 // Stündlich neu erzeugen, damit vorausdatierte Artikel an ihrem Erscheinungstag
 // von selbst auftauchen und nicht auf den nächsten Deploy warten müssen.

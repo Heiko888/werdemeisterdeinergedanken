@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "node --test \"src/**/*.test.ts\"",
     "pdf": "node tools/pdf/generate.mjs",
     "covers": "node docs/reels/covers/build.mjs",
     "covers:png": "node docs/reels/covers/export-png.mjs",
