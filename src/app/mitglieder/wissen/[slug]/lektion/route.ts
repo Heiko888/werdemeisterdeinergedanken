@@ -1,21 +1,22 @@
-import { deepDives, getDeepDive } from "@/lib/deep-dives";
+import { getDeepDive } from "@/lib/deep-dives";
 import { worksheetSlug } from "@/lib/pdf/slug";
 import { getStaticPdf } from "@/lib/pdf/static-pdf";
+import { guardMemberDownload } from "@/lib/members/download-guard";
 
-export const dynamic = "force-static";
-
-export function generateStaticParams() {
-  return deepDives.map((d) => ({ slug: d.slug }));
-}
+// Session-abhängiger Zugriffsschutz → nicht statisch vorrendern.
+export const dynamic = "force-dynamic";
 
 /**
  * Vertiefung (Deep-Dive) als gestaltetes PDF im Markendesign
  * (content/pdf/vertiefung-<slug>.pdf).
  */
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ slug: string }> },
 ) {
+  const denied = await guardMemberDownload(request);
+  if (denied) return denied;
+
   const { slug } = await params;
   const dive = getDeepDive(slug);
   if (!dive) {
