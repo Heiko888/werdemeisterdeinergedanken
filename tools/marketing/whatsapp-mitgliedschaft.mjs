@@ -1,12 +1,13 @@
 /**
  * WhatsApp-Verkaufsserie für den Mitgliederbereich.
  * ------------------------------------------------
- * Sieben gebrandete Bild-Folien (4:5, 1080×1350) zum Teilen in WhatsApp
- * (Chat, Broadcast, Status). Sie verkaufen die Mitgliedschaft: Hook →
- * Problem → Weg (7 Stufen) → Inhalte → So funktioniert's → Preis → CTA.
+ * Sieben gebrandete Bild-Folien in zwei Formaten – 4:5 (1080×1350) fürs
+ * Teilen im Chat/Broadcast und 9:16 (1080×1920) für den WhatsApp-Status.
+ * Sie verkaufen die Mitgliedschaft: Hook → Problem → Weg (7 Stufen) →
+ * Inhalte → So funktioniert's → Preis → CTA.
  *
  *   node tools/marketing/whatsapp-mitgliedschaft.mjs
- *   Ausgabe: docs/marketing/whatsapp-mitgliedschaft/4x5/01.png … 07.png
+ *   Ausgabe: docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16}/01.png … 07.png
  *
  * Gleiche Marken-Optik (Navy/Leaf/Teal, Fraunces/Inter, Gehirn-Logo) wie die
  * übrigen Marketing-Generatoren. Texte unten in SLIDES pflegen. Akzentwort in
@@ -23,7 +24,13 @@ const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-frei.png")).href;
 const OUT = join(ROOT, "docs/marketing/whatsapp-mitgliedschaft");
 
-const F = { key: "4x5", w: 1080, h: 1350 };
+// Zwei Formate: 4:5 fürs Teilen im Chat/Broadcast (kein Crop), 9:16 für den
+// WhatsApp-Status. padTop/padBottom halten Kopf- und Fußzeile aus den
+// Status-Bedienleisten (oben Profil, unten Antwortfeld) heraus.
+const FORMATS = [
+  { key: "4x5", w: 1080, h: 1350, padTop: 60, padBottom: 56 },
+  { key: "9x16", w: 1080, h: 1920, padTop: 150, padBottom: 150 },
+];
 const DOMAIN = "werdemeisterdeinergedanken.de";
 
 // ===========================================================================
@@ -99,7 +106,7 @@ const SLIDES = [
 // ===========================================================================
 // Stil
 // ===========================================================================
-const css = `
+const cssFor = (F) => `
 *{margin:0;padding:0;box-sizing:border-box}
 body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#08102a}
 .bg{position:absolute;inset:0;background:
@@ -111,8 +118,8 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
  radial-gradient(1.4px 1.4px at 66% 16%,rgba(255,255,255,.4),transparent),
  radial-gradient(1.4px 1.4px at 84% 58%,rgba(180,210,255,.45),transparent),
  radial-gradient(1.2px 1.2px at 40% 72%,rgba(255,255,255,.35),transparent)}
-.brainmini{position:absolute;top:60px;left:64px;width:80px;z-index:6;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
-.pageno{position:absolute;top:74px;right:64px;font-size:22px;font-weight:700;letter-spacing:2px;color:rgba(163,214,79,.9);z-index:6}
+.brainmini{position:absolute;top:${F.padTop}px;left:64px;width:80px;z-index:6;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
+.pageno{position:absolute;top:${F.padTop + 14}px;right:64px;font-size:22px;font-weight:700;letter-spacing:2px;color:rgba(163,214,79,.9);z-index:6}
 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 72px;z-index:5}
 .tick{width:66px;height:6px;border-radius:4px;background:linear-gradient(100deg,#a3d64f,#34c4c4);margin-bottom:28px}
@@ -160,7 +167,7 @@ em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:te
 .cta-url{margin-top:40px;display:inline-flex;align-items:center;gap:14px;align-self:flex-start;
  font-size:30px;font-weight:700;color:#08102a;background:linear-gradient(120deg,#a3d64f,#34c4c4);padding:20px 34px;border-radius:16px}
 /* Footer */
-.foot{position:absolute;left:64px;right:64px;bottom:56px;display:flex;justify-content:space-between;align-items:center;z-index:6}
+.foot{position:absolute;left:64px;right:64px;bottom:${F.padBottom}px;display:flex;justify-content:space-between;align-items:center;z-index:6}
 .foot .h{font-size:22px;font-weight:700;color:rgba(244,242,236,.6)}
 .dots{display:flex;gap:8px}.dot{width:9px;height:9px;border-radius:50%;background:rgba(244,242,236,.25)}
 .dot.on{background:linear-gradient(100deg,#a3d64f,#34c4c4)}
@@ -196,13 +203,13 @@ function inner(s) {
   }
 }
 
-function docFor(s, i, total) {
+function docFor(F, s, i, total) {
   const foot = `<div class="foot"><span class="h">${DOMAIN}</span>${dots(i, total)}<span class="c">${i + 1}/${total}</span></div>`;
   // Cover trägt das große Logo im Textblock – kein zweites Mini-Logo oben.
   const pageno = i === 0 ? "" : `<div class="pageno">${String(i + 1).padStart(2, "0")}</div>`;
   const brainmini = i === 0 ? "" : `<img class="brainmini" src="${brain}">`;
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>${css}</style></head><body><div class="bg"></div><div class="stars"></div>
+<style>${cssFor(F)}</style></head><body><div class="bg"></div><div class="stars"></div>
 ${brainmini}${pageno}${inner(s)}${foot}</body></html>`;
 }
 
@@ -220,19 +227,21 @@ function findChrome() {
 }
 const { chromium } = require("playwright");
 if (existsSync(OUT)) rmSync(OUT, { recursive: true, force: true });
-const dir = join(OUT, F.key);
-mkdirSync(dir, { recursive: true });
 const browser = await chromium.launch({ executablePath: findChrome() });
 const total = SLIDES.length;
-for (let i = 0; i < SLIDES.length; i++) {
-  const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
-  const tmp = join(HERE, `.wa-${i}.html`);
-  writeFileSync(tmp, docFor(SLIDES[i], i, total));
-  await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
-  await pg.screenshot({ path: join(dir, `${String(i + 1).padStart(2, "0")}.png`) });
-  await pg.close();
-  rmSync(tmp, { force: true });
-  console.log("✓", `${i + 1}/${total}`, SLIDES[i].role);
+for (const F of FORMATS) {
+  const dir = join(OUT, F.key);
+  mkdirSync(dir, { recursive: true });
+  for (let i = 0; i < SLIDES.length; i++) {
+    const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
+    const tmp = join(HERE, `.wa-${F.key}-${i}.html`);
+    writeFileSync(tmp, docFor(F, SLIDES[i], i, total));
+    await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+    await pg.screenshot({ path: join(dir, `${String(i + 1).padStart(2, "0")}.png`) });
+    await pg.close();
+    rmSync(tmp, { force: true });
+  }
+  console.log("✓", F.key, `(${total} Folien)`);
 }
 await browser.close();
-console.log("\nFertig →", join("docs/marketing/whatsapp-mitgliedschaft", F.key));
+console.log("\nFertig → docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16}");
