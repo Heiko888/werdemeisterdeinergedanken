@@ -156,66 +156,66 @@ export default async function MembersPage() {
             findest du künftig deine Inhalte, deinen Fortschritt und exklusive
             Materialien.
           </p>
-          <div className="grid grid-cols-2 gap-3 [&>*]:justify-center [&>*]:text-center sm:flex sm:flex-wrap sm:[&>*]:justify-start sm:[&>*]:text-left">
+          <div className="grid grid-flow-dense grid-cols-2 gap-2.5 [&>*]:justify-center [&>*]:text-center sm:flex sm:flex-wrap sm:gap-3 sm:[&>*]:justify-start sm:[&>*]:text-left">
             {loggedIn && (
               <Link
                 href="/mitglieder/journal"
-                className="group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper shadow-card transition-all hover:bg-ink/90"
+                className="group inline-flex items-center gap-1.5 rounded-full bg-ink px-3 py-2 text-[0.8rem] font-semibold leading-tight text-paper shadow-card transition-all hover:bg-ink/90 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 <Check />
                 Mein Journal
-                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
               </Link>
             )}
             {begleiterVerfuegbar && (
               <Link
                 href="/mitglieder/begleiter"
-                className="group inline-flex items-center gap-2 rounded-full border border-accent/40 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/70 hover:text-accent"
+                className="group inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/70 hover:text-accent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 <Spark />
                 Dein Begleiter
-                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
               </Link>
             )}
             {loggedIn && (
               <Link
                 href="/mitglieder/gedankenprofil"
-                className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+                className="group inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 Mein Gedankenprofil
-                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
               </Link>
             )}
             {begleiterVerfuegbar && (
               <Link
                 href="/mitglieder/detektor"
-                className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 <Spark />
                 Manipulations-Detektor
-                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
               </Link>
             )}
             {loggedIn && (
               <Link
                 href="/mitglieder/programm"
-                className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 21 Tage Autopilot-Ausstieg
-                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
               </Link>
             )}
             <Link
               href="/mitglieder/wissensdatenbank"
-              className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+              className="group inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
             >
               <Brain />
               Wissensdatenbank
-              <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+              <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
             </Link>
             <a
               href="/mitglieder/arbeitsheft"
-              className="col-span-2 inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:rounded-full"
+              className="col-span-2 inline-flex items-center gap-1.5 rounded-2xl border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:rounded-full sm:px-5 sm:py-2.5 sm:text-sm"
             >
               <Download />
               Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
@@ -223,10 +223,10 @@ export default async function MembersPage() {
             {isAdmin && (
               <Link
                 href="/admin"
-                className="group inline-flex items-center gap-2 rounded-full border border-accent/40 bg-white px-5 py-2.5 text-sm font-medium text-accent shadow-card transition-all hover:border-accent/70"
+                className="group inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-accent shadow-card transition-all hover:border-accent/70 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 Marketing-Cockpit
-                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
               </Link>
             )}
           </div>
