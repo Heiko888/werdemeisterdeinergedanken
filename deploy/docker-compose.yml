@@ -19,6 +19,10 @@ services:
       args:
         NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
         NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+        # NEXT_PUBLIC_GA_ID wird zur Build-Zeit ins Client-Bundle eingebacken.
+        # Ohne diese Zeile bleibt GA_ID leer und der Cookie-/Consent-Banner
+        # erscheint nicht (GoogleAnalytics.tsx: `if (!GA_ID) return null`).
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID}
     image: wmdg-web:latest
     restart: unless-stopped
     # Nur an localhost binden – Zugriff ausschließlich über nginx
