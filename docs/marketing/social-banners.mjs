@@ -28,7 +28,7 @@ const TARGETS = [
   // WhatsApp-Banner in derselben breiten LinkedIn-Optik (Gehirn rechts, Text
   // links). Gleiche Maße, damit die Grafik 1:1 wie der LinkedIn-Banner wirkt.
   { key: "whatsapp", file: "whatsapp/WMDG-WhatsApp-Banner.png", w: 1584, h: 396,
-    brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true },
+    brain: 288, textW: 760, h1: 58, eb: 18, sub: 20, url: 18, pinned: true, padX: 96, retina: true },
 ];
 
 const css = (t) => `
@@ -62,6 +62,9 @@ h1 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip
 .wordmark{font-weight:800;font-size:68px;letter-spacing:7px;text-transform:uppercase;line-height:1.4;color:rgba(244,242,236,.92)}
 .wordmark span{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
 .logocard .url{margin-top:0;font-size:${t.url}px}
+${t.pinned ? `.wrap{left:0;top:0;transform:none;width:${t.w}px;height:${t.h}px;display:block;gap:0}
+.content{position:absolute;left:${t.padX ?? 110}px;top:50%;transform:translateY(-50%);width:${t.textW}px}
+.bwrap{position:absolute;right:${t.padX ?? 110}px;top:50%;transform:translateY(-50%);flex:none}` : ""}
 `;
 
 const logoBody = () => `<div class="bg"></div><div class="stars"></div>
