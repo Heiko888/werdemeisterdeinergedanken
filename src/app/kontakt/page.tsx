@@ -26,7 +26,7 @@ export default function ContactPage() {
         intro="Ob konkrete Frage oder einfach der Wunsch, endlich anzufangen – schreib mir. Ich lese jede Nachricht persönlich."
       />
 
-      <section className="pb-8">
+      <section className="pt-10 pb-8 sm:pt-16">
         <Container className="grid gap-10 lg:grid-cols-[1.4fr_1fr] [&>*]:min-w-0">
           <ContactForm />
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
               width={1536}
               height={2048}
               sizes="(max-width: 1024px) 100vw, 40vw"
-              className="h-auto w-full rounded-[2px] border border-ink/10 shadow-card"
+              className="h-auto w-full rounded-3xl border border-ink/10 shadow-card"
             />
 
             <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card">
