@@ -18,6 +18,7 @@
     "langvideo-drehbuch": "node tools/pdf/langvideo-drehbuch.mjs",
     "story-overlays": "node tools/marketing/story-overlays.mjs",
     "content-overlays": "node tools/marketing/content-overlays.mjs",
+    "whatsapp:safezone": "node docs/marketing/whatsapp-safezone.mjs",
     "vorlagen:galerie": "node tools/vorlagen/build-gallery.mjs"
   },
   "dependencies": {
