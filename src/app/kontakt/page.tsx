@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/sections/ContactForm";
+import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { Mail, socialIcons } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
 
@@ -30,6 +31,12 @@ export default function ContactPage() {
           <ContactForm />
 
           <aside className="flex min-w-0 flex-col gap-5">
+            <PhotoFrame
+              src="/heiko-brain-portrait.webp"
+              alt="Heiko Schwaninger vor einem leuchtenden Gehirn-Netzwerk"
+              aspect="portrait"
+            />
+
             <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card">
               <h2 className="text-lg font-bold text-ink">Direkt erreichen</h2>
               <a
