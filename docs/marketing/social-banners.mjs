@@ -32,7 +32,7 @@ const TARGETS = [
   // komplett in der linken Spalte, ausserhalb des mittigen Profilkreises.
   { key: "whatsapp", file: "whatsapp/WMDG-WhatsApp-Banner.png", w: 1584, h: 396,
     textW: 450, h1: 42, eb: 14, sub: 17, url: 17, pinned: true, padX: 80,
-    noBrain: true, retina: true,
+    noBrain: true, noUrl: true, retina: true,
     eyebrowText: "Mentale Selbstverteidigung",
     subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
 ];
@@ -90,7 +90,7 @@ const htmlFor = (t) => t.logoOnly
     <div class="eyebrow">${t.eyebrowText ?? "Bewusstsein · Mentale Selbstverteidigung · 7 Stufen"}</div>
     <h1>${t.headlineHtml ?? "Werde Meister deiner <em>Gedanken</em>."}</h1>
     <div class="sub">${t.subText ?? "Raus aus fremden Mustern. Rein in dein eigenes Denken."}</div>
-    <div class="url">www.werdemeisterdeinergedanken.de</div>
+    ${t.noUrl ? "" : `<div class="url">www.werdemeisterdeinergedanken.de</div>`}
   </div>
   ${t.noBrain ? "" : `<div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>`}
 </div></body></html>`;
