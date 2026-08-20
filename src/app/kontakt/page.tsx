@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
+import Image from "next/image";
 import { ContactForm } from "@/components/sections/ContactForm";
-import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { Mail, socialIcons } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
 
@@ -31,10 +31,13 @@ export default function ContactPage() {
           <ContactForm />
 
           <aside className="flex min-w-0 flex-col gap-5">
-            <PhotoFrame
+            <Image
               src="/heiko-brain-portrait.webp"
               alt="Heiko Schwaninger vor einem leuchtenden Gehirn-Netzwerk"
-              aspect="portrait"
+              width={1536}
+              height={2048}
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="h-auto w-full rounded-[2px] border border-ink/10 shadow-card"
             />
 
             <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card">
