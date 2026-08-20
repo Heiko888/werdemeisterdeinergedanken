@@ -71,13 +71,16 @@ npm-Script und werden von keinem Orchestrator aufgerufen — manuell starten.
 
 ## build-ebook.py — Gratis-E-Book „7 Stufen"
 
-- **Zweck:** Erzeugt das HTML des Lead-Magnet-E-Books (11 Seiten) im Markendesign.
+- **Zweck:** Erzeugt das HTML des Lead-Magnet-E-Books (12 Seiten, mit Inhaltsverzeichnis) im Markendesign.
 - **Aufruf:** `python3 tools/pdf/build-ebook.py` (über `npm run pdf`).
 - **Voraussetzungen:** Python 3 (nur Stdlib). Fonts aus `assets/fonts.css`.
 - **Eingaben:** `assets/fonts.css`, `assets/brain-freigestellt.png`,
   `public/logo-brain.png`, `public/heiko-portrait.webp`. **Textinhalte stehen fest
   im Skript** (`STAGES_FULL`, `COVER`, `WELCOME`, `OVERVIEW`, `CLOSING`) — **nicht**
-  aus `content.json`.
+  aus `content.json`. Das Inhaltsverzeichnis (`toc_page`) und die einheitliche
+  Fußzeile mit Seitenzahlen (`with_footer`) werden aus der festen Seitenreihenfolge
+  erzeugt; wird diese in `inner`/`book` geändert, müssen die Seitenzahlen in
+  `toc_page` mitgezogen werden.
 - **Ausgaben:** `tools/pdf/.build/ebook.html` (→ von `generate.mjs` zu PDF gerendert).
 - **Reproduzierbarkeit:** Inhaltsänderungen direkt in `STAGES_FULL` pflegen
   (bewusst gekürzte Fassung, laut README abweichend von den Lektionen). Die vier
