@@ -35,6 +35,13 @@ const TARGETS = [
     noBrain: true, noUrl: true, retina: true,
     eyebrowText: "Mentale Selbstverteidigung",
     subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
+  // WhatsApp-Banner auf 1920×1080-Arbeitsflaeche (passend zur Safe-Zone-Vorlage):
+  // Text links in der Safe-Zone, mittiger Profilkreis bleibt frei, keine URL.
+  { key: "whatsapp-xl", file: "whatsapp/WMDG-WhatsApp-Banner-1920x1080.png", w: 1920, h: 1080,
+    textW: 540, h1: 64, eb: 19, sub: 24, url: 24, pinned: true, padX: 140,
+    noBrain: true, noUrl: true,
+    eyebrowText: "Mentale Selbstverteidigung",
+    subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
 ];
 
 const css = (t) => `
