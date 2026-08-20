@@ -125,6 +125,7 @@ async function buildSocial() {
     linkedin: "LinkedIn",
     youtube: "YouTube",
     messenger: "Messenger",
+    whatsapp: "WhatsApp",
     profil: "Profil & Kanal",
     zitate: "Zitate & Fakten",
   };

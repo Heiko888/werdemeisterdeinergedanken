@@ -2,6 +2,7 @@
  * Marken-Zusatzvorlagen im WMDG-Look:
  *   • Profilbild / Avatar (rund-sicher, universell für alle Kanäle)
  *   • Profil-/Kanalbild quadratisch mit Wortmarke (Telegram/WhatsApp-Kanal)
+ *   • WhatsApp Business (rundes Profilbild, Info-Kachel, Status-Banner 9:16)
  *   • YouTube-Video-Thumbnail (16:9, klickstark, Titel-Platzhalter)
  *   • Zitat-Kacheln (1:1 und 4:5) aus Marken-Kernsätzen
  *
@@ -307,6 +308,11 @@ const TARGETS = [];
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, html: () => avatarRound(1080) });
 TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, html: () => channelSquare(1080) });
 TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, html: () => channelSquare(1080) });
+// WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
+// Info-/Katalog-Kachel mit Wortmarke und ein Status-Banner im Hochformat (9:16).
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Profilbild.png",  w: 1080, h: 1080, html: () => avatarRound(1080) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Kanalbild.png",   w: 1080, h: 1080, html: () => channelSquare(1080) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Status-9x16.png", w: 1080, h: 1920, html: () => storyPost(1080, 1920) });
 // YouTube-Thumbnails
 for (const d of THUMBS)
   TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, html: () => thumbnail(1280, 720, d) });
