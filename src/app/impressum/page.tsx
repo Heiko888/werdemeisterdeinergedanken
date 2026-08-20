@@ -18,10 +18,6 @@ export default function ImprintPage() {
       <section className="pb-8">
         <Container size="narrow">
           <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card sm:p-10">
-            <p className="mb-6 rounded-xl border border-gold-500/40 bg-gold-300/20 p-4 text-sm text-ink-soft">
-              Hinweis: Noch offen ist die USt-IdNr. (unten mit „[…]“ markiert) –
-              bitte eintragen. Dieser Text ersetzt keine Rechtsberatung.
-            </p>
             <Prose>
               <h2>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h2>
               <p>
@@ -45,7 +41,7 @@ export default function ImprintPage() {
                 Umsatzsteuer-Identifikationsnummer gemäß § 27 a
                 Umsatzsteuergesetz:
                 <br />
-                [USt-IdNr. bitte eintragen]
+                DE415501288
               </p>
 
               <h2>Redaktionell verantwortlich</h2>

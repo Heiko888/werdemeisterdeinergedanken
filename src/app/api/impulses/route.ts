@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { timingSafeEqual } from "crypto";
 import { Resend } from "resend";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { impulses } from "@/lib/impulses";
@@ -29,11 +30,21 @@ const FROM =
   process.env.CONTACT_FROM ||
   "Werde Meister deiner Gedanken <onboarding@resend.dev>";
 
+/** Zeitkonstanter String-Vergleich – verhindert Timing-Rückschlüsse aufs Secret. */
+function safeEqual(a: string, b: string): boolean {
+  const ab = Buffer.from(a);
+  const bb = Buffer.from(b);
+  if (ab.length !== bb.length) return false;
+  return timingSafeEqual(ab, bb);
+}
+
 function authorized(request: Request): boolean {
   const secret = process.env.CRON_SECRET;
   if (!secret) return false;
-  if (request.headers.get("authorization") === `Bearer ${secret}`) return true;
-  return new URL(request.url).searchParams.get("secret") === secret;
+  const header = request.headers.get("authorization");
+  if (header && safeEqual(header, `Bearer ${secret}`)) return true;
+  const query = new URL(request.url).searchParams.get("secret");
+  return query != null && safeEqual(query, secret);
 }
 
 function escapeHtml(value: string): string {
