@@ -156,7 +156,7 @@ export default async function MembersPage() {
             findest du künftig deine Inhalte, deinen Fortschritt und exklusive
             Materialien.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-2 gap-3 [&>*]:justify-center [&>*]:text-center sm:flex sm:flex-wrap sm:[&>*]:justify-start sm:[&>*]:text-left">
             {loggedIn && (
               <Link
                 href="/mitglieder/journal"
@@ -215,7 +215,7 @@ export default async function MembersPage() {
             </Link>
             <a
               href="/mitglieder/arbeitsheft"
-              className="inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:rounded-full"
+              className="col-span-2 inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:rounded-full"
             >
               <Download />
               Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
