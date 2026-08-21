@@ -208,10 +208,10 @@ export default async function MembersPage() {
             {loggedIn && (
               <Link
                 href="/mitglieder/rueckkehr"
-                className="group inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent"
+                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 Die tägliche Rückkehr
-                <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
               </Link>
             )}
             <Link
