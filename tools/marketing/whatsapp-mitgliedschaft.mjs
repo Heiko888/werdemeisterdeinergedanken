@@ -27,9 +27,13 @@ const OUT = join(ROOT, "docs/marketing/whatsapp-mitgliedschaft");
 // Zwei Formate: 4:5 fürs Teilen im Chat/Broadcast (kein Crop), 9:16 für den
 // WhatsApp-Status. padTop/padBottom halten Kopf- und Fußzeile aus den
 // Status-Bedienleisten (oben Profil, unten Antwortfeld) heraus.
+// pad = seitlicher Rand der Textspalte. Beim breiten 16:9 größer, damit die
+// Zeilen nicht über die volle Breite laufen (zentrierte, ruhige Spalte).
 const FORMATS = [
-  { key: "4x5", w: 1080, h: 1350, padTop: 60, padBottom: 56 },
-  { key: "9x16", w: 1080, h: 1920, padTop: 150, padBottom: 150 },
+  { key: "4x5", w: 1080, h: 1350, padTop: 60, padBottom: 56, pad: 72 },
+  { key: "9x16", w: 1080, h: 1920, padTop: 150, padBottom: 150, pad: 72 },
+  { key: "1x1", w: 1080, h: 1080, padTop: 60, padBottom: 56, pad: 72 },
+  { key: "16x9", w: 1920, h: 1080, padTop: 60, padBottom: 56, pad: 380 },
 ];
 const DOMAIN = "werdemeisterdeinergedanken.de";
 
@@ -118,10 +122,12 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
  radial-gradient(1.4px 1.4px at 66% 16%,rgba(255,255,255,.4),transparent),
  radial-gradient(1.4px 1.4px at 84% 58%,rgba(180,210,255,.45),transparent),
  radial-gradient(1.2px 1.2px at 40% 72%,rgba(255,255,255,.35),transparent)}
+.scrim{position:absolute;inset:0;z-index:4;background:linear-gradient(180deg,
+ rgba(5,9,20,.72) 0%, rgba(5,9,20,.55) 32%, rgba(5,9,20,.55) 66%, rgba(5,9,20,.82) 100%)}
 .brainmini{position:absolute;top:${F.padTop}px;left:64px;width:80px;z-index:6;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
 .pageno{position:absolute;top:${F.padTop + 14}px;right:64px;font-size:22px;font-weight:700;letter-spacing:2px;color:rgba(163,214,79,.9);z-index:6}
 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 72px;z-index:5}
+.wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 ${F.pad}px;z-index:5}
 .tick{width:66px;height:6px;border-radius:4px;background:linear-gradient(100deg,#a3d64f,#34c4c4);margin-bottom:28px}
 .kicker{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#a3d64f;margin-bottom:20px}
 .lead{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:62px;line-height:1.06;letter-spacing:-.4px}
@@ -203,13 +209,19 @@ function inner(s) {
   }
 }
 
-function docFor(F, s, i, total) {
+function docFor(F, s, i, total, overlay = false) {
   const foot = `<div class="foot"><span class="h">${DOMAIN}</span>${dots(i, total)}<span class="c">${i + 1}/${total}</span></div>`;
   // Cover trägt das große Logo im Textblock – kein zweites Mini-Logo oben.
   const pageno = i === 0 ? "" : `<div class="pageno">${String(i + 1).padStart(2, "0")}</div>`;
   const brainmini = i === 0 ? "" : `<img class="brainmini" src="${brain}">`;
+  // Overlay-Modus für Canva: transparenter Hintergrund (eigenes Foto darunter),
+  // nur ein weicher Scrim hält den Text auf jedem Bild lesbar.
+  const layers = overlay
+    ? `<div class="scrim"></div>`
+    : `<div class="bg"></div><div class="stars"></div>`;
+  const bodyStyle = overlay ? ` style="background:transparent"` : "";
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>${cssFor(F)}</style></head><body><div class="bg"></div><div class="stars"></div>
+<style>${cssFor(F)}</style></head><body${bodyStyle}>${layers}
 ${brainmini}${pageno}${inner(s)}${foot}</body></html>`;
 }
 
@@ -231,17 +243,44 @@ const browser = await chromium.launch({ executablePath: findChrome() });
 const total = SLIDES.length;
 for (const F of FORMATS) {
   const dir = join(OUT, F.key);
+  const overlayDir = join(dir, "overlay");
   mkdirSync(dir, { recursive: true });
-  for (let i = 0; i < SLIDES.length; i++) {
+  mkdirSync(overlayDir, { recursive: true });
+  // Marken-Hintergrund (Ebene 1 in Canva) – nur bg + Sterne, ohne Text/Logo.
+  // Stapel in Canva: _hintergrund.png → (eigenes Foto) → overlay/NN.png.
+  {
     const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
-    const tmp = join(HERE, `.wa-${F.key}-${i}.html`);
-    writeFileSync(tmp, docFor(F, SLIDES[i], i, total));
+    const tmp = join(HERE, `.wbg-${F.key}.html`);
+    writeFileSync(tmp, `<!doctype html><html><head><meta charset="utf8"><style>${cssFor(F)}</style></head><body><div class="bg"></div><div class="stars"></div></body></html>`);
     await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
-    await pg.screenshot({ path: join(dir, `${String(i + 1).padStart(2, "0")}.png`) });
+    await pg.screenshot({ path: join(overlayDir, "_hintergrund.png") });
     await pg.close();
     rmSync(tmp, { force: true });
   }
-  console.log("✓", F.key, `(${total} Folien)`);
+  for (let i = 0; i < SLIDES.length; i++) {
+    const name = `${String(i + 1).padStart(2, "0")}.png`;
+    // 1) Fertige Folie mit Marken-Hintergrund.
+    {
+      const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
+      const tmp = join(HERE, `.wa-${F.key}-${i}.html`);
+      writeFileSync(tmp, docFor(F, SLIDES[i], i, total, false));
+      await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+      await pg.screenshot({ path: join(dir, name) });
+      await pg.close();
+      rmSync(tmp, { force: true });
+    }
+    // 2) Transparentes Overlay für Canva (Foto kommt in Canva darunter).
+    {
+      const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
+      const tmp = join(HERE, `.wo-${F.key}-${i}.html`);
+      writeFileSync(tmp, docFor(F, SLIDES[i], i, total, true));
+      await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+      await pg.screenshot({ path: join(overlayDir, name), omitBackground: true });
+      await pg.close();
+      rmSync(tmp, { force: true });
+    }
+  }
+  console.log("✓", F.key, `(${total} Folien + ${total} Overlays)`);
 }
 await browser.close();
-console.log("\nFertig → docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16}");
+console.log("\nFertig → docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16,1x1,16x9}/(overlay/)");
