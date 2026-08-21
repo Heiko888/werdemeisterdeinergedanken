@@ -2,35 +2,82 @@
 
 > Gepflegt vom **themen-stratege**. Jede Zeile = ein Wochenthema mit dem
 > vorhandenen Projekt-Material. Die Kanal-Planer lesen hier, welche Assets es
-> gibt; der **redaktions-planer** wählt das nächste offene Thema.
+> gibt; der **redaktions-planer** arbeitet die Blöcke **von oben nach unten** ab.
 > Status: `offen` · `geplant` · `veröffentlicht`.
 
-## Serie: Mentale Selbstverteidigung (Priorität)
+## Empfohlene Reihenfolge (Dramaturgie)
 
-| # | Thema | Status | Reel-Hook | Blog-Slug (`/wissen/blog/…`) | Deep-Dive (`/mitglieder/wissen/…`) | Praxis | Zitate |
-|---|---|---|---|---|---|---|---|
-| 1 | **Framing** | veröffentlicht (Muster-Woche) | „Ein Wort ändert alles" | `framing-wie-ein-wort-deine-meinung-macht` | `framing` | `innerer-beobachter` | `zitate/` |
-| 2 | **Propaganda** | offen | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` | `autopilot-check` | `zitate/` · `zitate/studien-4x5` |
-| 3 | **Filterblase / Algorithmen** | offen | „Dein Feed ≠ die Welt" | `filterblase-warum-dein-feed-nicht-die-welt-ist` | `algorithmen` | `autopilot-check` | `zitate/` |
-| 4 | **Wiederholung = Wahrheit?** | offen | „Oft gehört = wahr?" | `warum-oft-gehoert-sich-wie-wahr-anfuehlt` | `wiederholung-wahrheit` | `innerer-beobachter` | `zitate/studien-4x5` |
-| 5 | **Reizüberflutung** | offen | „Dein Gehirn im Daueralarm" | `reizueberflutung-warum-dein-gehirn-nicht-abschaltet` | `reizueberflutung` | `atembeobachtung` | `zitate/` |
-| 6 | **Werbung & Mangel** | offen | „Sie verkauft dir den Mangel" | `werbung-und-der-kuenstliche-mangel` | `werbung-und-mangel` | `innerer-beobachter` | `zitate/` |
-| 7 | **Gruppendruck** | offen | „Laut ≠ Mehrheit" | `gruppendruck-und-die-schweigespirale` | `gruppendruck` | `innerer-beobachter` | `zitate/studien-4x5` |
-| 8 | **Autoritätshörigkeit** | offen | „Titel ≠ Wahrheit" | `wann-vertrauen-zu-blindem-gehorsam-wird` | `autoritaetshoerigkeit` | `innerer-beobachter` | `zitate/` |
-| 9 | **Identität & Meinung** | offen | „Hast du eine Meinung – oder sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` | `innerer-beobachter` | `zitate/` |
-| 10 | **Kognitive Dissonanz** | offen | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` | `innerer-beobachter` | `zitate/` |
+**Sanft einsteigen, dann vertiefen.** Zuerst die eigentliche Programm-Reise – die
+**7 Stufen** (Wochen 1–7). Sie holen neue Leute dort ab, wo sie stehen
+(Autopilot, Alltag, Selbstbeobachtung), bevor gesellschaftskritische, „härtere"
+Themen kommen. Danach ein paar ruhigere **Praxis-/Wissenschafts-Wochen**, und
+erst als **vertiefender Block** die **Mentale Selbstverteidigung** (Framing,
+Propaganda …). So steigt niemand mit „Propaganda" kalt ein.
 
-### Weitere Themen der Serie (Deep-Dive vorhanden, ohne dedizierten Blog → ⚠ Blog ggf. ergänzen)
-`sprache-und-etiketten` · `medien-agenda` · `angst-steuerung` · `ablenkung` · `normalisierung` · `bildmacht`
-(alle in `src/lib/deep-dives.ts`; Reel-Hooks in `src/lib/reels.ts`, Serie „selbstverteidigung").
-
-## Weitere Themenblöcke (für Abwechslung zwischen den Selbstverteidigungs-Wochen)
-- **Die 7 Stufen** – Reel-Serie „stufen" (`src/lib/reels.ts`), Stufen-PDFs `content/pdf/stufe-*-lektion.pdf`. Gut für Programm-/Pitch-Wochen.
-- **Praxis** – Atmung/Achtsamkeit, `src/lib/practices.ts`, Reel-Serie „praxis". Ruhigere Wochen.
-- **Die Wissenschaft dahinter** – `content/wissensdatenbank/*.md`, Reel-Serie „wissenschaft", Studien-Zitate `docs/marketing/zitate/studien-*`.
+```
+Block A · Die 7 Stufen (Woche 1–7)   → Einstieg, Programm-Reise, Funnel zu /mitglieder
+Block B · Praxis & Wissenschaft      → Atmung, Achtsamkeit, „Warum das wirkt" (Ruhe/Vertrauen)
+Block C · Mentale Selbstverteidigung → Framing, Propaganda … (tiefer, gesellschaftskritisch)
+```
 
 ---
 
-**Funnel-Ziele (für Pitch-Posts):** E-Book „Die 7 Stufen kompakt" → `/#ebook` · Mitgliedschaft → `/mitglieder`
+## Block A — Die 7 Stufen (Priorität, Wochen 1–7)
 
-*Alle Slugs/Pfade sind gegen `src/lib/blog.ts`, `src/lib/deep-dives.ts`, `src/lib/practices.ts` und die Ordner unter `docs/marketing/` belegt. Beim Ergänzen neuer Zeilen: Slug immer per `rg` prüfen, nie erfinden.*
+Gemeinsam je Stufe: Reel-Serie **„stufen"** (je 3 Varianten A/B/C) in
+`src/lib/reels.ts` · Skript `docs/skripte/reels/stufen.md` · Lektion
+`/mitglieder/stufe/N` + PDF `content/pdf/stufe-N-lektion.pdf` (+ `-uebungen.pdf`) ·
+Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
+
+| Woche | Stufe / Thema | Status | Reel-Hook (Beispiel) | Blog-Slug (`/wissen/blog/…`) | Deep-Dive (`/mitglieder/wissen/…`) | Praxis |
+|---|---|---|---|---|---|---|
+| 1 | **Stufe 1 · Autopilot** | offen | „Wie oft entscheide ich wirklich?" | `drei-muster-die-dich-unbewusst-steuern` | `automatische-gedanken` | `autopilot-check` |
+| 2 | **Stufe 2 · Erwachen** | offen | „Wer hört zu, wenn du denkst?" | `du-bist-nicht-deine-gedanken` | `reiz-reaktions-luecke` | `atembeobachtung` |
+| 3 | **Stufe 3 · Selbstbeobachtung** | offen | „Nicht in jeden Gedanken springen" | `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` | `kognitive-verzerrungen` | `innerer-beobachter` |
+| 4 | **Stufe 4 · Emotionale Reifung** | offen | „Wie lang dauert ein Gefühl wirklich?" | `gefuehle-benennen-beruhigt-das-gehirn` | `emotionsregulation` | `verlaengertes-ausatmen` |
+| 5 | **Stufe 5 · Schöpferkraft** | offen | „Was du oft denkst, wird zur Straße im Kopf" | `neuroplastizitaet-warum-dein-gehirn-formbar-ist` | `neuroplastizitaet` | `morgen-ausrichtung` |
+| 6 | **Stufe 6 · Innere Ausrichtung** | offen | „Der Kopf ist ein guter Diener, schlechter Chef" | `warum-willenskraft-ueberschaetzt-wird` | `werte-und-ziele` | `herz-kohaerenz` |
+| 7 | **Stufe 7 · Meisterschaft** | offen | „Niemand ist für immer Meister" | `wie-frei-ist-unser-geist` | `integration-und-weitergabe` | `box-breathing` |
+
+> Reel-Varianten A/B/C je Stufe erlauben Wiederholung/AB-Tests über mehrere Wochen.
+> ⚠ Für Stufe 3/6/7 ist der Blog-Slug thematisch **naheliegend**, nicht 1:1 –
+> bei Bedarf einen passenden Stufen-Blog ergänzen.
+
+## Block B — Praxis & Wissenschaft (Wochen 8–10, ruhigere Blöcke)
+
+| Thema | Status | Material |
+|---|---|---|
+| **Atmung & Nervensystem** | offen | Reel-Serie „praxis" · Praxis `atembeobachtung`, `vier-sechs-atmung`, `box-breathing` · Blog `gefuehle-benennen-beruhigt-das-gehirn` |
+| **Was Meditation im Gehirn verändert** | offen | Blog `was-meditation-im-gehirn-veraendert` · Reel-Serie „wissenschaft" · Studien-Zitate `docs/marketing/zitate/studien-4x5` |
+| **Der Placebo-Effekt / Erwartung** | offen | Blog `der-placebo-effekt-wie-erwartung-wirkt` · DD `muster-und-koerper` · Studien-Zitate |
+
+## Block C — Mentale Selbstverteidigung (vertiefend, ab Woche 11)
+
+Serie „selbstverteidigung" in `src/lib/reels.ts`. Erst einsetzen, wenn die
+Community die Grundlagen (Block A) kennt.
+
+| Thema | Status | Reel-Hook | Blog-Slug | Deep-Dive |
+|---|---|---|---|---|
+| **Framing** | offen | „Ein Wort ändert alles" | `framing-wie-ein-wort-deine-meinung-macht` | `framing` |
+| **Filterblase / Algorithmen** | offen | „Dein Feed ≠ die Welt" | `filterblase-warum-dein-feed-nicht-die-welt-ist` | `algorithmen` |
+| **Wiederholung = Wahrheit?** | offen | „Oft gehört = wahr?" | `warum-oft-gehoert-sich-wie-wahr-anfuehlt` | `wiederholung-wahrheit` |
+| **Reizüberflutung** | offen | „Dein Gehirn im Daueralarm" | `reizueberflutung-warum-dein-gehirn-nicht-abschaltet` | `reizueberflutung` |
+| **Werbung & Mangel** | offen | „Sie verkauft dir den Mangel" | `werbung-und-der-kuenstliche-mangel` | `werbung-und-mangel` |
+| **Gruppendruck** | offen | „Laut ≠ Mehrheit" | `gruppendruck-und-die-schweigespirale` | `gruppendruck` |
+| **Autoritätshörigkeit** | offen | „Titel ≠ Wahrheit" | `wann-vertrauen-zu-blindem-gehorsam-wird` | `autoritaetshoerigkeit` |
+| **Propaganda** | offen | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
+| **Kognitive Dissonanz** | offen | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
+| **Identität & Meinung** | offen | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
+
+> Weitere Deep-Dives der Serie (Blog ggf. ergänzen): `sprache-und-etiketten` ·
+> `medien-agenda` · `angst-steuerung` · `ablenkung` · `normalisierung` · `bildmacht`.
+
+---
+
+**Funnel-Ziele (für Pitch-Posts):** E-Book „Die 7 Stufen kompakt" → `/#ebook` ·
+Mitgliedschaft → `/mitglieder` · konkrete Stufe → `/mitglieder/stufe/N`
+
+*Alle Slugs/Pfade sind gegen `src/lib/blog.ts`, `src/lib/deep-dives.ts`,
+`src/lib/practices.ts`, `src/lib/programm.ts` und die Ordner unter
+`docs/marketing/` belegt. Beim Ergänzen neuer Zeilen: Slug per `rg` prüfen,
+nie erfinden.*

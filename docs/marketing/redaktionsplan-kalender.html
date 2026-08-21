@@ -1,4 +1,4 @@
-<title>Framing-Woche</title>
+<title>Autopilot-Woche</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -233,15 +233,16 @@
 
   <div class="theme-card">
     <div class="top">
-      <p class="k">Wochenthema · Serie Mentale Selbstverteidigung</p>
-      <h2>Framing — Wie ein einziges Wort deine Meinung macht</h2>
+      <p class="k">Woche 1 · Serie Die 7 Stufen</p>
+      <h2>Stufe 1 · Autopilot — Wie oft entscheidest du wirklich?</h2>
     </div>
     <div class="mats">
-      <span class="mat">🎬 Reel-Skript <code>docs/skripte/reels/mentale-selbstverteidigung.md</code></span>
-      <span class="mat">📝 Blog <code>/wissen/blog/framing-…</code></span>
-      <span class="mat">📚 Vertiefung <code>/mitglieder/wissen/framing</code></span>
-      <span class="mat">💬 Zitate <code>docs/marketing/zitate/</code></span>
-      <span class="mat">🎯 Funnel <code>/#ebook · /mitglieder</code></span>
+      <span class="mat">🎬 Reel-Skript <code>docs/skripte/reels/stufen.md</code></span>
+      <span class="mat">🖼️ Carousel <code>60000-gedanken</code></span>
+      <span class="mat">📝 Blog <code>/wissen/blog/drei-muster-…</code></span>
+      <span class="mat">📘 Lektion <code>/mitglieder/stufe/1</code></span>
+      <span class="mat">🧘 Praxis <code>autopilot-check</code></span>
+      <span class="mat">🎯 Funnel <code>/#ebook · /mitglieder/stufe/1</code></span>
     </div>
   </div>
 
@@ -275,7 +276,7 @@
   </section>
 
   <div class="reuse">
-    <b>So wiederholst du das Muster:</b> Die Tagesstruktur bleibt gleich, nur das Wochenthema wechselt. Fertig im Backlog: Propaganda · Filterblase/Algorithmen · Wiederholung = Wahrheit · Reizüberflutung · Werbung &amp; Mangel · Gruppendruck · Autoritätshörigkeit — je mit Reel, Blog, Vertiefung und Zitaten aus <code>src/lib/reels.ts</code> &amp; <code>src/lib/deep-dives.ts</code>.
+    <b>So geht es weiter:</b> Die Tagesstruktur bleibt gleich, nur das Wochenthema wechselt. Empfohlene Reihenfolge — erst die <b>7 Stufen</b> (Woche 1 Autopilot → 2 Erwachen → 3 Selbstbeobachtung → 4 Emotionale Reifung → 5 Schöpferkraft → 6 Innere Ausrichtung → 7 Meisterschaft), dann ruhigere <b>Praxis-/Wissenschafts-Wochen</b>, und erst als vertiefender Block die <b>Mentale Selbstverteidigung</b> (Framing, Filterblase … Propaganda). Vollständiger Fahrplan: <code>docs/marketing/redaktionsplan/themen-backlog.md</code>.
   </div>
 
   <footer>Erstellt aus vorhandenem Projekt-Material · Werde Meister deiner Gedanken</footer>
@@ -291,29 +292,29 @@
 
   const DAYS = [
     { wd: "Montag",     n: "Aufmerksamkeit", rest: false, posts: [
-      { t: "18:00", ch: "ig", fmt: "🎬 Reel",    title: "„Framing – Ein Wort ändert alles.“ Investition vs. Ausgabe – zwei Gefühle.", src: "Reel-Skript Selbstverteidigung", cta: "Folgen · Speichern" },
+      { t: "18:00", ch: "ig", fmt: "🎬 Reel",    title: "„Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide.“ (Autopilot A)", src: "Reel-Serie stufen", cta: "Folgen · Speichern" },
       { t: "19:00", ch: "fb", fmt: "🎬 Reel",    title: "Gleiches Reel als Cross-Post + 2–3 Sätze Kontext.", src: "s. IG", cta: "Kommentar-Frage" },
     ]},
     { wd: "Dienstag",   n: "Aha", rest: false, posts: [
-      { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Reform oder Kürzung? Dasselbe Gesetz – zwei Urteile.“ Berufsbezug: Meetings & Verhandlungen.", src: "Blog-Kernidee", cta: "Diskussion" },
-      { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„5 Framing-Tricks, die du täglich siehst“ — Cover → 5 Beispiele → Recap → CTA.", src: "docs/carousels/marketing-serien.mjs", cta: "Speichern & Teilen" },
+      { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Wie viele Entscheidungen triffst du im Meeting wirklich bewusst?“ Autopilot im Arbeitsalltag.", src: "Blog drei-muster-…", cta: "Diskussion" },
+      { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Bis zu 60.000 Gedanken am Tag“ — wie viel läuft automatisch? Cover → Zahlen → Aha → CTA.", src: "carousels/marketing-serien.mjs", cta: "Speichern & Teilen" },
     ]},
     { wd: "Mittwoch",   n: "Tiefe", rest: false, posts: [
-      { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss + Link „Framing: Wie ein Wort deine Meinung macht“.", src: "Blog framing-…", cta: "Blog-Klick" },
-      { t: "09:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post: „Der Rahmen entscheidet – bevor du nachdenkst.“", src: "Carousel-Slides", cta: "Website" },
-      { t: "17:00", ch: "yt", fmt: "▶️ Video",    title: "Hauptvideo (6–8 min): „Framing erklärt – so lenkt Sprache dein Urteil.“", src: "Blog + Vertiefung framing", cta: "Abo · E-Book in Beschreibung" },
+      { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss + Link „Drei Muster, die dich unbewusst steuern“.", src: "Blog drei-muster-…", cta: "Blog-Klick" },
+      { t: "09:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post: „Autopilot – der unsichtbare Chef deines Tages.“", src: "Carousel-Slides", cta: "Website" },
+      { t: "17:00", ch: "yt", fmt: "▶️ Video",    title: "Hauptvideo (6–8 min): „Autopilot: Warum du weniger entscheidest, als du denkst.“", src: "Blog + Stufe-1-Lektion + Deep-Dive", cta: "Abo · E-Book in Beschreibung" },
       { t: "17:30", ch: "yt", fmt: "⚡ Short",     title: "Reel als Short zweitverwertet, verlinkt aufs Hauptvideo.", src: "Reel (Mo)", cta: "Zum Hauptvideo" },
     ]},
     { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
-      { t: "19:00", ch: "ig", fmt: "📚 Story", title: "3-teilig: Umfrage („Ausgabe“ oder „Investition“?) → Auflösung → Mini-Übung „Der innere Beobachter“.", src: "src/lib/practices.ts", cta: "Antwort-Sticker · Blog-Link" },
+      { t: "19:00", ch: "ig", fmt: "📚 Story", title: "3-teilig: Umfrage („Wie viel % läuft bei dir auf Autopilot?“) → Auflösung → Mini-Übung „Der Autopilot-Check“.", src: "practices.ts · autopilot-check", cta: "Antwort-Sticker · Blog-Link" },
     ]},
     { wd: "Freitag",    n: "Angebot", rest: false, posts: [
-      { t: "07:30", ch: "li", fmt: "🎯 Pitch", title: "„Wenn dich Sprache lenkt, kannst du das trainieren.“ Soft-Pitch E-Book „Die 7 Stufen kompakt“.", src: "Funnel /#ebook", cta: "E-Book laden" },
-      { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "Zitatkarte zum Thema + Story-Verweis auf E-Book / Mitgliederbereich.", src: "docs/marketing/zitate/ · /mitglieder", cta: "Link in Bio" },
-      { t: "17:00", ch: "fb", fmt: "💬 Zitat/Studie", title: "Community-Frage: „Welcher Begriff wird bei euch beschönigend benutzt?“ + Zitatkarte.", src: "docs/marketing/zitate/", cta: "Kommentare" },
+      { t: "07:30", ch: "li", fmt: "🎯 Pitch", title: "„Bewusster entscheiden lässt sich üben – in 7 Stufen.“ Soft-Pitch E-Book „Die 7 Stufen kompakt“.", src: "Funnel /#ebook", cta: "E-Book laden" },
+      { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "Zitatkarte zum Thema + Story-Verweis auf E-Book / Stufe 1.", src: "zitate/ · /mitglieder/stufe/1", cta: "Link in Bio" },
+      { t: "17:00", ch: "fb", fmt: "💬 Zitat/Studie", title: "Community-Frage: „Welche Gewohnheit machst du komplett automatisch?“ + Zitatkarte.", src: "docs/marketing/zitate/", cta: "Kommentare" },
     ]},
     { wd: "Samstag",    n: "Ruhetag", rest: true, posts: [
-      { t: "opt.", ch: "ig", fmt: "📚 Story", title: "Optional: Wochen-Recap-Story „Das war Framing-Woche“ + Ausblick.", src: "—", cta: "Bindung", opt: true },
+      { t: "opt.", ch: "ig", fmt: "📚 Story", title: "Optional: Wochen-Recap-Story „Das war Stufe 1“ + Ausblick auf Stufe 2 · Erwachen.", src: "—", cta: "Bindung", opt: true },
     ]},
     { wd: "Sonntag",    n: "Ruhetag", rest: true, posts: [
       { t: "opt.", ch: "fb", fmt: "📝 Beitrag", title: "Optional: leiser Reflexions-Post / Zitat als Wochenausklang.", src: "docs/marketing/zitate/", cta: "Nähe", opt: true },

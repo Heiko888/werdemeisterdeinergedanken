@@ -20,7 +20,7 @@ Du bist die **Chefredaktion** – der Kopf des Redaktions-Teams. Du legst das Wo
 Standard, wenn nichts anderes gesagt: **fokussiert**.
 
 ## Ablauf
-1. **Thema(en) wählen.** Nimm das/die Wochenthema(en) aus `$ARGUMENTS`, sonst das nächste offene aus `docs/marketing/redaktionsplan/themen-backlog.md` (Vorrang Serie *Mentale Selbstverteidigung*). Bei mehreren Wochen: ein Thema je Woche.
+1. **Thema(en) wählen.** Nimm das/die Wochenthema(en) aus `$ARGUMENTS`, sonst das nächste offene aus `docs/marketing/redaktionsplan/themen-backlog.md`. **Reihenfolge beachten:** erst die 7 Stufen (Block A), dann Praxis/Wissenschaft (Block B), erst danach Mentale Selbstverteidigung (Block C). Neue Follower dürfen **nicht** mit „harten" Themen (z. B. Propaganda) einsteigen. Bei mehreren Wochen: ein Thema je Woche in Backlog-Reihenfolge.
 2. **Material sichern.** Beauftrage den **themen-stratege**, die Material-Map je Thema zu erstellen/aktualisieren (echte Slugs/Pfade). Kläre Lücken (⚠) vorab.
 3. **Kanäle planen lassen.** Gib jedem Kanal-Planer Thema + Material-Map + Frequenz-Stufe. Starte **instagram-planer, facebook-planer, linkedin-planer, youtube-planer parallel**. Wichtig: alle planen dasselbe Kernthema; der Reel ist auf IG/FB/YouTube-Short dieselbe Idee.
 4. **Zusammenführen.** Baue aus den vier Teil-Plänen den **Master-Tagesplan (Mo–So)** in `docs/marketing/redaktionsplan.md`: eine Tabelle **Tag · Uhrzeit · Kanal · Format · Inhalt/Hook · Quelle · CTA**, plus Frequenz-Zusammenfassung, Format-Legende und Themen-Backlog-Verweis. Achte auf einen sinnvollen Tagesmix (nicht alle Kanäle zur selben Uhrzeit).
