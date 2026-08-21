@@ -118,6 +118,8 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
  radial-gradient(1.4px 1.4px at 66% 16%,rgba(255,255,255,.4),transparent),
  radial-gradient(1.4px 1.4px at 84% 58%,rgba(180,210,255,.45),transparent),
  radial-gradient(1.2px 1.2px at 40% 72%,rgba(255,255,255,.35),transparent)}
+.scrim{position:absolute;inset:0;z-index:4;background:linear-gradient(180deg,
+ rgba(5,9,20,.72) 0%, rgba(5,9,20,.55) 32%, rgba(5,9,20,.55) 66%, rgba(5,9,20,.82) 100%)}
 .brainmini{position:absolute;top:${F.padTop}px;left:64px;width:80px;z-index:6;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
 .pageno{position:absolute;top:${F.padTop + 14}px;right:64px;font-size:22px;font-weight:700;letter-spacing:2px;color:rgba(163,214,79,.9);z-index:6}
 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
@@ -203,13 +205,19 @@ function inner(s) {
   }
 }
 
-function docFor(F, s, i, total) {
+function docFor(F, s, i, total, overlay = false) {
   const foot = `<div class="foot"><span class="h">${DOMAIN}</span>${dots(i, total)}<span class="c">${i + 1}/${total}</span></div>`;
   // Cover trägt das große Logo im Textblock – kein zweites Mini-Logo oben.
   const pageno = i === 0 ? "" : `<div class="pageno">${String(i + 1).padStart(2, "0")}</div>`;
   const brainmini = i === 0 ? "" : `<img class="brainmini" src="${brain}">`;
+  // Overlay-Modus für Canva: transparenter Hintergrund (eigenes Foto darunter),
+  // nur ein weicher Scrim hält den Text auf jedem Bild lesbar.
+  const layers = overlay
+    ? `<div class="scrim"></div>`
+    : `<div class="bg"></div><div class="stars"></div>`;
+  const bodyStyle = overlay ? ` style="background:transparent"` : "";
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>${cssFor(F)}</style></head><body><div class="bg"></div><div class="stars"></div>
+<style>${cssFor(F)}</style></head><body${bodyStyle}>${layers}
 ${brainmini}${pageno}${inner(s)}${foot}</body></html>`;
 }
 
@@ -231,17 +239,33 @@ const browser = await chromium.launch({ executablePath: findChrome() });
 const total = SLIDES.length;
 for (const F of FORMATS) {
   const dir = join(OUT, F.key);
+  const overlayDir = join(dir, "overlay");
   mkdirSync(dir, { recursive: true });
+  mkdirSync(overlayDir, { recursive: true });
   for (let i = 0; i < SLIDES.length; i++) {
-    const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
-    const tmp = join(HERE, `.wa-${F.key}-${i}.html`);
-    writeFileSync(tmp, docFor(F, SLIDES[i], i, total));
-    await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
-    await pg.screenshot({ path: join(dir, `${String(i + 1).padStart(2, "0")}.png`) });
-    await pg.close();
-    rmSync(tmp, { force: true });
+    const name = `${String(i + 1).padStart(2, "0")}.png`;
+    // 1) Fertige Folie mit Marken-Hintergrund.
+    {
+      const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
+      const tmp = join(HERE, `.wa-${F.key}-${i}.html`);
+      writeFileSync(tmp, docFor(F, SLIDES[i], i, total, false));
+      await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+      await pg.screenshot({ path: join(dir, name) });
+      await pg.close();
+      rmSync(tmp, { force: true });
+    }
+    // 2) Transparentes Overlay für Canva (Foto kommt in Canva darunter).
+    {
+      const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
+      const tmp = join(HERE, `.wo-${F.key}-${i}.html`);
+      writeFileSync(tmp, docFor(F, SLIDES[i], i, total, true));
+      await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+      await pg.screenshot({ path: join(overlayDir, name), omitBackground: true });
+      await pg.close();
+      rmSync(tmp, { force: true });
+    }
   }
-  console.log("✓", F.key, `(${total} Folien)`);
+  console.log("✓", F.key, `(${total} Folien + ${total} Overlays)`);
 }
 await browser.close();
-console.log("\nFertig → docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16}");
+console.log("\nFertig → docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16}/(overlay/)");
