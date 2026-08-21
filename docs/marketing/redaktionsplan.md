@@ -87,6 +87,97 @@ als vertiefender Block (siehe Themen-Backlog).
 
 ---
 
+## Wochen 2–7 (Kurzform je Stufe)
+
+Gleiche Tagesstruktur wie Woche 1 (Mo Reel · Di LI-Text + IG-Carousel · Mi FB-Blog + LI-Carousel + YT-Video/Short · Do IG-Story-Übung · Fr Pitch + Zitate). Nur die Bausteine wechseln. Reel jeweils aus Serie *stufen* (`docs/skripte/reels/stufen.md`), Carousel je Stufe aus `docs/carousels/stufen-ueberblick.mjs`, Lektion `/mitglieder/stufe/N`.
+
+### Woche 2 · Stufe 2 · Erwachen — „Wer hört zu, wenn du denkst?"
+- 🎬 **Reel-Hook:** „Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu?"
+- 🖼️ **Carousel:** „Du bist nicht deine Gedanken" · 📝 **Blog:** `du-bist-nicht-deine-gedanken`
+- 📚 **Deep-Dive:** `reiz-reaktions-luecke` · 🧘 **Praxis (Story):** `atembeobachtung`
+- ▶️ **Video:** „Erwachen: Der Moment, in dem du dich beim Denken erwischst." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/2`
+
+### Woche 3 · Stufe 3 · Selbstbeobachtung — „Nicht in jeden Gedanken springen"
+- 🎬 **Reel-Hook:** „Ich bin früher in jeden einzelnen Gedanken reingesprungen."
+- 🖼️ **Carousel:** „Setz dich ans Ufer" · 📝 **Blog:** `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt`
+- 📚 **Deep-Dive:** `kognitive-verzerrungen` · 🧘 **Praxis (Story):** `innerer-beobachter`
+- ▶️ **Video:** „Selbstbeobachtung: Gedanken sehen, ohne mitzuspringen." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/3`
+
+### Woche 4 · Stufe 4 · Emotionale Reifung — „Fühlen, ohne überflutet zu werden"
+- 🎬 **Reel-Hook:** „Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert."
+- 🖼️ **Carousel:** „Fühlen, was ist" · 📝 **Blog:** `gefuehle-benennen-beruhigt-das-gehirn`
+- 📚 **Deep-Dive:** `emotionsregulation` · 🧘 **Praxis (Story):** `verlaengertes-ausatmen`
+- ▶️ **Video:** „Emotionale Reifung: Fühlen, ohne überflutet zu werden." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/4`
+
+### Woche 5 · Stufe 5 · Schöpferkraft — „Du schreibst den Code neu"
+- 🎬 **Reel-Hook:** „Was du oft denkst, wird zur Straße in deinem Kopf. Und das ist wörtlich gemeint."
+- 🖼️ **Carousel:** „Du schreibst den Code neu" · 📝 **Blog:** `neuroplastizitaet-warum-dein-gehirn-formbar-ist`
+- 📚 **Deep-Dive:** `neuroplastizitaet` · 🧘 **Praxis (Story):** `morgen-ausrichtung`
+- ▶️ **Video:** „Schöpferkraft: Wie du neue Bahnen im Kopf anlegst." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/5`
+
+### Woche 6 · Stufe 6 · Innere Ausrichtung — „Kopf, Herz und Handeln"
+- 🎬 **Reel-Hook:** „Dein Kopf ist ein brillanter Diener. Aber ein ziemlich schlechter Chef."
+- 🖼️ **Carousel:** „Kopf, Herz und Handeln" · 📝 **Blog:** `warum-willenskraft-ueberschaetzt-wird`
+- 📚 **Deep-Dive:** `werte-und-ziele` · 🧘 **Praxis (Story):** `herz-kohaerenz`
+- ▶️ **Video:** „Innere Ausrichtung: Wenn Kopf, Herz und Handeln zusammenfinden." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/6`
+
+### Woche 7 · Stufe 7 · Meisterschaft — „Was nach den 7 Stufen kommt"
+- 🎬 **Reel-Hook:** „Niemand ist für immer Meister. Ich auch nicht."
+- 🖼️ **Carousel:** „Meister deiner Gedanken" · 📝 **Blog:** `wie-frei-ist-unser-geist`
+- 📚 **Deep-Dive:** `integration-und-weitergabe` · 🧘 **Praxis (Story):** `box-breathing`
+- ▶️ **Video:** „Meisterschaft: Was nach den 7 Stufen kommt." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/7`
+
+> Jede Stufe hat 3 Reel-Varianten (A/B/C) in `src/lib/reels.ts` – für Wiederholung/AB-Tests über mehrere Wochen. Der interaktive Kalender zeigt alle 7 Wochen (oben umschaltbar).
+
+---
+
+## Woche 8–10 · Block B — Praxis & Wissenschaft (ruhigere Phase)
+
+Gleiche Tagesstruktur, aber ruhigerer, stärker praxis-/studienbasierter Ton. Kein Stufen-Lektion-Bezug; Pitch-Ziel ist E-Book bzw. `/mitglieder/praxis`. Reels aus den Serien *praxis* / *wissenschaft*, Carousels aus `docs/carousels/marketing-serien.mjs` (`4-wege-freiheit`, `studien-fakten`).
+
+### Woche 8 · Atmung & Nervensystem — „Der schnellste Weg zur Ruhe"
+- 🎬 **Reel** (Serie *praxis*): „Ausatmen länger als einatmen – und dein Nervensystem schaltet um."
+- 🖼️ **Carousel:** „4 Wege zur mentalen Freiheit" (`4-wege-freiheit`) · 📝 **Blog:** `gefuehle-benennen-beruhigt-das-gehirn`
+- 📚 **Deep-Dive:** `muster-und-koerper` · 🧘 **Praxis (Story):** `vier-sechs-atmung` (auch `box-breathing`)
+- ▶️ **Video:** „Atmung & Nervensystem: 3 Übungen, die dich in 2 Minuten runterbringen." · 🎯 **Pitch:** E-Book / `/mitglieder/praxis`
+
+### Woche 9 · Was Meditation im Gehirn verändert — „Was wirklich passiert, wenn du meditierst"
+- 🎬 **Reel** (Serie *wissenschaft*): „Fast die Hälfte des Tages bist du gedanklich woanders."
+- 🖼️ **Carousel:** „Studien-Fakten" (`studien-fakten`) · 📝 **Blog:** `was-meditation-im-gehirn-veraendert`
+- 💬 **Studien-Zitate:** `docs/marketing/zitate/studien-4x5` · 🧘 **Praxis (Story):** `atembeobachtung`
+- ▶️ **Video:** „Was Meditation wirklich im Gehirn verändert (laut Forschung)." · 🎯 **Pitch:** E-Book / `/mitglieder/praxis`
+
+### Woche 10 · Der Placebo-Effekt / Erwartung — „Wie eine Erwartung deinen Körper verändert"
+- 🎬 **Reel** (Serie *wissenschaft*): „Eine Überzeugung verändert echte Körperprozesse."
+- 🖼️ **Carousel:** „Studien-Fakten" (`studien-fakten`) · 📝 **Blog:** `der-placebo-effekt-wie-erwartung-wirkt`
+- 📚 **Deep-Dive:** `muster-und-koerper` · 🧘 **Praxis (Story):** `morgen-ausrichtung`
+- ▶️ **Video:** „Der Placebo-Effekt: Wie Erwartung echte Körperprozesse steuert." · 🎯 **Pitch:** E-Book / `/mitglieder`
+
+> Danach folgt **Block C · Mentale Selbstverteidigung** (ab Woche 11): Framing, Filterblase … Propaganda – erst, wenn die Community die Grundlagen kennt.
+
+---
+
+## Woche 11–20 · Block C — Mentale Selbstverteidigung (vertiefend)
+
+Gleiche Tagesstruktur. Reels aus Serie *selbstverteidigung* (`docs/skripte/reels/mentale-selbstverteidigung.md`), Carousel „Wer denkt hier eigentlich?" (`wer-denkt-hier`), Pitch-Ziel jeweils die Vertiefung `/mitglieder/wissen/<slug>`. Erst hier, weil die Community jetzt die Grundlagen (Block A/B) kennt.
+
+| Woche | Thema | Reel-Hook | Blog-Slug | Deep-Dive / Pitch |
+|---|---|---|---|---|
+| 11 | **Framing** | „Ein Wort ändert alles" | `framing-wie-ein-wort-deine-meinung-macht` | `framing` |
+| 12 | **Filterblase / Algorithmen** | „Dein Feed ≠ die Welt" | `filterblase-warum-dein-feed-nicht-die-welt-ist` | `algorithmen` |
+| 13 | **Wiederholung = Wahrheit?** | „Oft gehört = wahr?" | `warum-oft-gehoert-sich-wie-wahr-anfuehlt` | `wiederholung-wahrheit` |
+| 14 | **Reizüberflutung** | „Dein Gehirn im Daueralarm" | `reizueberflutung-warum-dein-gehirn-nicht-abschaltet` | `reizueberflutung` |
+| 15 | **Werbung & Mangel** | „Sie verkauft dir den Mangel" | `werbung-und-der-kuenstliche-mangel` | `werbung-und-mangel` |
+| 16 | **Gruppendruck** | „Laut ≠ Mehrheit" | `gruppendruck-und-die-schweigespirale` | `gruppendruck` |
+| 17 | **Autoritätshörigkeit** | „Titel ≠ Wahrheit" | `wann-vertrauen-zu-blindem-gehorsam-wird` | `autoritaetshoerigkeit` |
+| 18 | **Propaganda** | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
+| 19 | **Kognitive Dissonanz** | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
+| 20 | **Identität & Meinung** | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
+
+Story-Übung je Woche meist „Der innere Beobachter" (`innerer-beobachter`) bzw. „Der Autopilot-Check" (`autopilot-check`). LinkedIn-Beiträge mit Berufsbezug (Meetings, Führung, Entscheidungen). Details/Formulierungen: interaktiver Kalender (Woche 11–20).
+
+---
+
 ## Der Fahrplan (empfohlene Reihenfolge)
 
 Die Tagesstruktur bleibt jede Woche gleich – nur das Wochenthema wechselt. Erst
@@ -129,6 +220,8 @@ Inhalte zu erfinden.
 
 ---
 
-*Erstellt aus vorhandenem Projekt-Material. Nächster Schritt: Wochen 2–7 (die
-restlichen Stufen) mit `/redaktionsplan` ausrollen – oder ein Thema gezielt
-planen, z. B. `/redaktionsplan Stufe 2 Erwachen`.*
+*Erstellt aus vorhandenem Projekt-Material. Woche 1–20 sind vollständig geplant –
+Block A · 7 Stufen (1–7), Block B · Praxis & Wissenschaft (8–10) und Block C ·
+Mentale Selbstverteidigung (11–20). Damit ist rund ein halbes Jahr Content
+kanalübergreifend durchgeplant. Für weitere Themen (z. B. Sprache & Etiketten,
+Medien-Agenda, Angst-Steuerung) oder einen neuen Zyklus: `/redaktionsplan`.*

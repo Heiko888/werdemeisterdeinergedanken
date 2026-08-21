@@ -153,13 +153,22 @@ export default async function AdminPage() {
             <Stat value={funnel.tests.total} label="Bewusstseinstests" />
           </div>
 
-          <Link
-            href="/admin/vorlagen"
-            className="mt-2 inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
-          >
-            Alle Vorlagen verwalten
-            <ArrowRight />
-          </Link>
+          <div className="mt-2 flex flex-wrap gap-3">
+            <Link
+              href="/admin/redaktionsplan"
+              className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            >
+              Redaktionsplan öffnen
+              <ArrowRight />
+            </Link>
+            <Link
+              href="/admin/vorlagen"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
+            >
+              Alle Vorlagen verwalten
+              <ArrowRight />
+            </Link>
+          </div>
         </Container>
       </section>
 
