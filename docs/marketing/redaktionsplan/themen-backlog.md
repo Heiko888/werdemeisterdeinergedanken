@@ -68,9 +68,16 @@ Community die Grundlagen (Block A) kennt.
 | **Propaganda** | geplant | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
 | **Kognitive Dissonanz** | geplant | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
 | **Identität & Meinung** | geplant | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
+| **Sprache & Etiketten** | geplant | „Ein Wort beendet jede Debatte" | ⚠ kein Blog (Vertiefung) | `sprache-und-etiketten` |
+| **Medien-Agenda** | geplant | „Nicht WAS – sondern WORÜBER" | ⚠ kein Blog (Vertiefung) | `medien-agenda` |
+| **Angst-Steuerung** | geplant | „Angst macht dich lenkbar" | ⚠ kein Blog (Vertiefung) | `angst-steuerung` |
+| **Ablenkung** | geplant | „Keine Lüge. Nur Lärm." | ⚠ kein Blog (Vertiefung) | `ablenkung` |
+| **Normalisierung** | geplant | „War doch schon immer so?" | ⚠ kein Blog (Vertiefung) | `normalisierung` |
+| **Bildmacht** | geplant | „Ein Bild ist kein Beweis" | ⚠ kein Blog (Vertiefung) | `bildmacht` |
 
-> Weitere Deep-Dives der Serie (Blog ggf. ergänzen): `sprache-und-etiketten` ·
-> `medien-agenda` · `angst-steuerung` · `ablenkung` · `normalisierung` · `bildmacht`.
+> Woche 21–26 haben nur eine Vertiefung, keinen dedizierten Blog. Die FB-/
+> LinkedIn-Langform-Posts verlinken die Vertiefung (`/mitglieder/wissen/<slug>`);
+> ein Blog kann später ergänzt und im Cockpit nachgetragen werden.
 
 ---
 

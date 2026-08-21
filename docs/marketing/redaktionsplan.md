@@ -173,8 +173,19 @@ Gleiche Tagesstruktur. Reels aus Serie *selbstverteidigung* (`docs/skripte/reels
 | 18 | **Propaganda** | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
 | 19 | **Kognitive Dissonanz** | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
 | 20 | **Identität & Meinung** | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
+| 21 | **Sprache & Etiketten** | „Ein Wort beendet jede Debatte" | ⚠ kein Blog | `sprache-und-etiketten` |
+| 22 | **Medien-Agenda** | „Nicht WAS – sondern WORÜBER" | ⚠ kein Blog | `medien-agenda` |
+| 23 | **Angst-Steuerung** | „Angst macht dich lenkbar" | ⚠ kein Blog | `angst-steuerung` |
+| 24 | **Ablenkung** | „Keine Lüge. Nur Lärm." | ⚠ kein Blog | `ablenkung` |
+| 25 | **Normalisierung** | „War doch schon immer so?" | ⚠ kein Blog | `normalisierung` |
+| 26 | **Bildmacht** | „Ein Bild ist kein Beweis" | ⚠ kein Blog | `bildmacht` |
 
-Story-Übung je Woche meist „Der innere Beobachter" (`innerer-beobachter`) bzw. „Der Autopilot-Check" (`autopilot-check`). LinkedIn-Beiträge mit Berufsbezug (Meetings, Führung, Entscheidungen). Details/Formulierungen: interaktiver Kalender (Woche 11–20).
+Story-Übung je Woche meist „Der innere Beobachter" (`innerer-beobachter`) bzw. „Der Autopilot-Check" (`autopilot-check`). LinkedIn-Beiträge mit Berufsbezug (Meetings, Führung, Entscheidungen). Details/Formulierungen: interaktiver Kalender (Woche 11–26).
+
+> **Woche 21–26** haben (noch) keinen dedizierten Blog – die Langform ist die
+> **Vertiefung** im Mitgliederbereich (`/mitglieder/wissen/<slug>`); die FB-/
+> LinkedIn-„Blog"-Posts verlinken sie als Teaser/Pitch. Ein Blog kann später
+> ergänzt und im Cockpit nachgetragen werden.
 
 ---
 
