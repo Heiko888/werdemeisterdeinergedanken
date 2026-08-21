@@ -31,13 +31,13 @@ Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
 
 | Woche | Stufe / Thema | Status | Reel-Hook (Beispiel) | Blog-Slug (`/wissen/blog/…`) | Deep-Dive (`/mitglieder/wissen/…`) | Praxis |
 |---|---|---|---|---|---|---|
-| 1 | **Stufe 1 · Autopilot** | offen | „Wie oft entscheide ich wirklich?" | `drei-muster-die-dich-unbewusst-steuern` | `automatische-gedanken` | `autopilot-check` |
-| 2 | **Stufe 2 · Erwachen** | offen | „Wer hört zu, wenn du denkst?" | `du-bist-nicht-deine-gedanken` | `reiz-reaktions-luecke` | `atembeobachtung` |
-| 3 | **Stufe 3 · Selbstbeobachtung** | offen | „Nicht in jeden Gedanken springen" | `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` | `kognitive-verzerrungen` | `innerer-beobachter` |
-| 4 | **Stufe 4 · Emotionale Reifung** | offen | „Wie lang dauert ein Gefühl wirklich?" | `gefuehle-benennen-beruhigt-das-gehirn` | `emotionsregulation` | `verlaengertes-ausatmen` |
-| 5 | **Stufe 5 · Schöpferkraft** | offen | „Was du oft denkst, wird zur Straße im Kopf" | `neuroplastizitaet-warum-dein-gehirn-formbar-ist` | `neuroplastizitaet` | `morgen-ausrichtung` |
-| 6 | **Stufe 6 · Innere Ausrichtung** | offen | „Der Kopf ist ein guter Diener, schlechter Chef" | `warum-willenskraft-ueberschaetzt-wird` | `werte-und-ziele` | `herz-kohaerenz` |
-| 7 | **Stufe 7 · Meisterschaft** | offen | „Niemand ist für immer Meister" | `wie-frei-ist-unser-geist` | `integration-und-weitergabe` | `box-breathing` |
+| 1 | **Stufe 1 · Autopilot** | geplant | „Wie oft entscheide ich wirklich?" | `drei-muster-die-dich-unbewusst-steuern` | `automatische-gedanken` | `autopilot-check` |
+| 2 | **Stufe 2 · Erwachen** | geplant | „Wer hört zu, wenn du denkst?" | `du-bist-nicht-deine-gedanken` | `reiz-reaktions-luecke` | `atembeobachtung` |
+| 3 | **Stufe 3 · Selbstbeobachtung** | geplant | „Nicht in jeden Gedanken springen" | `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` | `kognitive-verzerrungen` | `innerer-beobachter` |
+| 4 | **Stufe 4 · Emotionale Reifung** | geplant | „Wie lang dauert ein Gefühl wirklich?" | `gefuehle-benennen-beruhigt-das-gehirn` | `emotionsregulation` | `verlaengertes-ausatmen` |
+| 5 | **Stufe 5 · Schöpferkraft** | geplant | „Was du oft denkst, wird zur Straße im Kopf" | `neuroplastizitaet-warum-dein-gehirn-formbar-ist` | `neuroplastizitaet` | `morgen-ausrichtung` |
+| 6 | **Stufe 6 · Innere Ausrichtung** | geplant | „Der Kopf ist ein guter Diener, schlechter Chef" | `warum-willenskraft-ueberschaetzt-wird` | `werte-und-ziele` | `herz-kohaerenz` |
+| 7 | **Stufe 7 · Meisterschaft** | geplant | „Niemand ist für immer Meister" | `wie-frei-ist-unser-geist` | `integration-und-weitergabe` | `box-breathing` |
 
 > Reel-Varianten A/B/C je Stufe erlauben Wiederholung/AB-Tests über mehrere Wochen.
 > ⚠ Für Stufe 3/6/7 ist der Blog-Slug thematisch **naheliegend**, nicht 1:1 –

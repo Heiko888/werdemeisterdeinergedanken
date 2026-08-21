@@ -1,4 +1,4 @@
-<title>Autopilot-Woche</title>
+<title>7-Stufen-Redaktionsplan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -102,6 +102,21 @@
   .freq .pill b { font-family: "IBM Plex Mono", monospace; font-size: 14px; }
   .freq .pill span { font-size: 13px; color: var(--ink-faint); }
   .freq .dot { width: 9px; height: 9px; border-radius: 50%; align-self: center; }
+
+  /* ---------- week switcher ---------- */
+  .weekbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 4px; }
+  .weekbtn {
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 600; cursor: pointer;
+    background: var(--surface); color: var(--ink-soft);
+    border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; line-height: 1.2;
+    display: flex; flex-direction: column; gap: 2px; min-width: 92px;
+    transition: border-color .15s, color .15s, background .15s, transform .1s;
+  }
+  .weekbtn .wnum { font-size: 11px; color: var(--ink-faint); letter-spacing: .06em; }
+  .weekbtn .wname { font-family: "Figtree", sans-serif; font-size: 13px; font-weight: 600; }
+  .weekbtn:hover { border-color: var(--line-strong); color: var(--ink); transform: translateY(-1px); }
+  .weekbtn[aria-current="true"] { border-color: transparent; background: var(--grad); color: #06231f; }
+  .weekbtn[aria-current="true"] .wnum { color: #06231f; opacity: .75; }
 
   /* ---------- theme banner ---------- */
   .theme-card {
@@ -219,9 +234,9 @@
 
 <div class="wrap">
   <header>
-    <p class="eyebrow">Redaktionsplan · Muster-Woche · fokussierte Frequenz</p>
-    <h1>Eine Woche, ein Thema — <span class="accent">alle Kanäle gleichzeitig</span></h1>
-    <p class="lede">Instagram, Facebook, LinkedIn und YouTube spielen dieselbe Kernidee — jeweils im passenden Format. Aus einer Idee entstehen 11 Postings, die die Botschaft über die Woche vertiefen: Aufmerksamkeit → Aha → Anwenden → Angebot.</p>
+    <p class="eyebrow">Redaktionsplan · Die 7 Stufen · Woche 1–7 · fokussierte Frequenz</p>
+    <h1>Sieben Wochen, die 7 Stufen — <span class="accent">alle Kanäle gleichzeitig</span></h1>
+    <p class="lede">Der Einstieg beginnt sanft mit der Programm-Reise: Autopilot → Erwachen → Selbstbeobachtung → Emotionale Reifung → Schöpferkraft → Innere Ausrichtung → Meisterschaft. Jede Woche ein Thema auf Instagram, Facebook, LinkedIn und YouTube — 11 Postings aus einer Idee, im Bogen Aufmerksamkeit → Aha → Anwenden → Angebot. Oben die Woche wählen.</p>
 
     <div class="freq" aria-label="Frequenz pro Kanal">
       <span class="pill"><span class="dot" style="background:var(--ch-ig)"></span><b>4×</b> <span>Instagram</span></span>
@@ -231,19 +246,14 @@
     </div>
   </header>
 
+  <div class="weekbar" id="weekbar" aria-label="Woche wählen"></div>
+
   <div class="theme-card">
     <div class="top">
-      <p class="k">Woche 1 · Serie Die 7 Stufen</p>
-      <h2>Stufe 1 · Autopilot — Wie oft entscheidest du wirklich?</h2>
+      <p class="k" id="theme-k">Woche 1 · Serie Die 7 Stufen</p>
+      <h2 id="theme-h">Stufe 1 · Autopilot — Wie oft entscheidest du wirklich?</h2>
     </div>
-    <div class="mats">
-      <span class="mat">🎬 Reel-Skript <code>docs/skripte/reels/stufen.md</code></span>
-      <span class="mat">🖼️ Carousel <code>60000-gedanken</code></span>
-      <span class="mat">📝 Blog <code>/wissen/blog/drei-muster-…</code></span>
-      <span class="mat">📘 Lektion <code>/mitglieder/stufe/1</code></span>
-      <span class="mat">🧘 Praxis <code>autopilot-check</code></span>
-      <span class="mat">🎯 Funnel <code>/#ebook · /mitglieder/stufe/1</code></span>
-    </div>
+    <div class="mats" id="theme-mats"></div>
   </div>
 
   <div class="controls">
@@ -290,70 +300,194 @@
     yt: { name: "YouTube",   v: "var(--ch-yt)" },
   };
 
-  const DAYS = [
-    { wd: "Montag",     n: "Aufmerksamkeit", rest: false, posts: [
-      { t: "18:00", ch: "ig", fmt: "🎬 Reel",    title: "„Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide.“ (Autopilot A)", src: "Reel-Serie stufen", cta: "Folgen · Speichern" },
-      { t: "19:00", ch: "fb", fmt: "🎬 Reel",    title: "Gleiches Reel als Cross-Post + 2–3 Sätze Kontext.", src: "s. IG", cta: "Kommentar-Frage" },
-    ]},
-    { wd: "Dienstag",   n: "Aha", rest: false, posts: [
-      { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Wie viele Entscheidungen triffst du im Meeting wirklich bewusst?“ Autopilot im Arbeitsalltag.", src: "Blog drei-muster-…", cta: "Diskussion" },
-      { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Bis zu 60.000 Gedanken am Tag“ — wie viel läuft automatisch? Cover → Zahlen → Aha → CTA.", src: "carousels/marketing-serien.mjs", cta: "Speichern & Teilen" },
-    ]},
-    { wd: "Mittwoch",   n: "Tiefe", rest: false, posts: [
-      { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss + Link „Drei Muster, die dich unbewusst steuern“.", src: "Blog drei-muster-…", cta: "Blog-Klick" },
-      { t: "09:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post: „Autopilot – der unsichtbare Chef deines Tages.“", src: "Carousel-Slides", cta: "Website" },
-      { t: "17:00", ch: "yt", fmt: "▶️ Video",    title: "Hauptvideo (6–8 min): „Autopilot: Warum du weniger entscheidest, als du denkst.“", src: "Blog + Stufe-1-Lektion + Deep-Dive", cta: "Abo · E-Book in Beschreibung" },
-      { t: "17:30", ch: "yt", fmt: "⚡ Short",     title: "Reel als Short zweitverwertet, verlinkt aufs Hauptvideo.", src: "Reel (Mo)", cta: "Zum Hauptvideo" },
-    ]},
-    { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
-      { t: "19:00", ch: "ig", fmt: "📚 Story", title: "3-teilig: Umfrage („Wie viel % läuft bei dir auf Autopilot?“) → Auflösung → Mini-Übung „Der Autopilot-Check“.", src: "practices.ts · autopilot-check", cta: "Antwort-Sticker · Blog-Link" },
-    ]},
-    { wd: "Freitag",    n: "Angebot", rest: false, posts: [
-      { t: "07:30", ch: "li", fmt: "🎯 Pitch", title: "„Bewusster entscheiden lässt sich üben – in 7 Stufen.“ Soft-Pitch E-Book „Die 7 Stufen kompakt“.", src: "Funnel /#ebook", cta: "E-Book laden" },
-      { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "Zitatkarte zum Thema + Story-Verweis auf E-Book / Stufe 1.", src: "zitate/ · /mitglieder/stufe/1", cta: "Link in Bio" },
-      { t: "17:00", ch: "fb", fmt: "💬 Zitat/Studie", title: "Community-Frage: „Welche Gewohnheit machst du komplett automatisch?“ + Zitatkarte.", src: "docs/marketing/zitate/", cta: "Kommentare" },
-    ]},
-    { wd: "Samstag",    n: "Ruhetag", rest: true, posts: [
-      { t: "opt.", ch: "ig", fmt: "📚 Story", title: "Optional: Wochen-Recap-Story „Das war Stufe 1“ + Ausblick auf Stufe 2 · Erwachen.", src: "—", cta: "Bindung", opt: true },
-    ]},
-    { wd: "Sonntag",    n: "Ruhetag", rest: true, posts: [
-      { t: "opt.", ch: "fb", fmt: "📝 Beitrag", title: "Optional: leiser Reflexions-Post / Zitat als Wochenausklang.", src: "docs/marketing/zitate/", cta: "Nähe", opt: true },
-    ]},
+  // Baut die (identische) Tagesstruktur je Woche aus den wochenspezifischen Bausteinen.
+  function mkWeek(s) {
+    return [
+      { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+        { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: `„${s.reelHook}“`, src: "Reel-Serie stufen", cta: "Folgen · Speichern" },
+        { t: "19:00", ch: "fb", fmt: "🎬 Reel", title: "Gleiches Reel als Cross-Post + 2–3 Sätze Kontext.", src: "s. IG", cta: "Kommentar-Frage" },
+      ]},
+      { wd: "Dienstag", n: "Aha", rest: false, posts: [
+        { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: `„${s.liBeitrag}“ — Stufe ${s.n} im Arbeitsalltag.`, src: `Blog ${s.blogSlug}`, cta: "Diskussion" },
+        { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: `„${s.carousel}“ — Cover → Kernidee → Aha → CTA.`, src: s.carouselSrc, cta: "Speichern & Teilen" },
+      ]},
+      { wd: "Mittwoch", n: "Tiefe", rest: false, posts: [
+        { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: `Blog-Anriss + Link „${s.blogTitle}“.`, src: `Blog ${s.blogSlug}`, cta: "Blog-Klick" },
+        { t: "09:00", ch: "li", fmt: "🖼️ Carousel", title: `Document-Post: „${s.carousel}“ (sachlicher Ton).`, src: "Carousel-Slides", cta: "Website" },
+        { t: "17:00", ch: "yt", fmt: "▶️ Video", title: `Hauptvideo (6–8 min): „${s.video}“`, src: `Blog + Stufe-${s.n}-Lektion + Deep-Dive`, cta: "Abo · E-Book in Beschreibung" },
+        { t: "17:30", ch: "yt", fmt: "⚡ Short", title: "Reel als Short zweitverwertet, verlinkt aufs Hauptvideo.", src: "Reel (Mo)", cta: "Zum Hauptvideo" },
+      ]},
+      { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+        { t: "19:00", ch: "ig", fmt: "📚 Story", title: `3-teilig: Umfrage („${s.poll}“) → Auflösung → Mini-Übung „${s.practiceName}“.`, src: `practices.ts · ${s.practice}`, cta: "Antwort-Sticker · Blog-Link" },
+      ]},
+      { wd: "Freitag", n: "Angebot", rest: false, posts: [
+        { t: "07:30", ch: "li", fmt: "🎯 Pitch", title: `„${s.pitch}“ Soft-Pitch E-Book „Die 7 Stufen kompakt“.`, src: "Funnel /#ebook", cta: "E-Book laden" },
+        { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: `Zitatkarte zum Thema + Story-Verweis auf E-Book / Stufe ${s.n}.`, src: `zitate/ · /mitglieder/stufe/${s.n}`, cta: "Link in Bio" },
+        { t: "17:00", ch: "fb", fmt: "💬 Zitat/Studie", title: `Community-Frage: „${s.community}“ + Zitatkarte.`, src: "docs/marketing/zitate/", cta: "Kommentare" },
+      ]},
+      { wd: "Samstag", n: "Ruhetag", rest: true, posts: [
+        { t: "opt.", ch: "ig", fmt: "📚 Story", title: `Optional: Wochen-Recap-Story „Das war Stufe ${s.n}“${s.next ? " + Ausblick auf " + s.next : ""}.`, src: "—", cta: "Bindung", opt: true },
+      ]},
+      { wd: "Sonntag", n: "Ruhetag", rest: true, posts: [
+        { t: "opt.", ch: "fb", fmt: "📝 Beitrag", title: "Optional: leiser Reflexions-Post / Zitat als Wochenausklang.", src: "docs/marketing/zitate/", cta: "Nähe", opt: true },
+      ]},
+    ];
+  }
+
+  const WEEKS = [
+    { n: 1, stage: "Autopilot", headline: "Wie oft entscheidest du wirklich?",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>60000-gedanken</code>", "📝 Blog <code>drei-muster-…</code>", "📘 <code>/mitglieder/stufe/1</code>", "🧘 <code>autopilot-check</code>"],
+      days: mkWeek({ n: 1, next: "Stufe 2 · Erwachen",
+        reelHook: "Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide.",
+        liBeitrag: "Wie viele Entscheidungen triffst du im Meeting wirklich bewusst?",
+        carousel: "Bis zu 60.000 Gedanken am Tag", carouselSrc: "carousels/marketing-serien.mjs",
+        blogTitle: "Drei Muster, die dich unbewusst steuern", blogSlug: "drei-muster-…",
+        video: "Autopilot: Warum du weniger entscheidest, als du denkst.",
+        practice: "autopilot-check", practiceName: "Der Autopilot-Check",
+        poll: "Wie viel % läuft bei dir auf Autopilot?",
+        pitch: "Bewusster entscheiden lässt sich üben – in 7 Stufen.",
+        community: "Welche Gewohnheit machst du komplett automatisch?" }) },
+
+    { n: 2, stage: "Erwachen", headline: "Wer hört zu, wenn du denkst?",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>du-bist-nicht-deine-gedanken</code>", "📘 <code>/mitglieder/stufe/2</code>", "🧘 <code>atembeobachtung</code>"],
+      days: mkWeek({ n: 2, next: "Stufe 3 · Selbstbeobachtung",
+        reelHook: "Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu?",
+        liBeitrag: "Zwischen Reiz und Reaktion liegt ein Moment – im Job entscheidet er über alles.",
+        carousel: "Du bist nicht deine Gedanken", carouselSrc: "carousels/stufen-ueberblick.mjs",
+        blogTitle: "Du bist nicht deine Gedanken", blogSlug: "du-bist-nicht-deine-gedanken",
+        video: "Erwachen: Der Moment, in dem du dich beim Denken erwischst.",
+        practice: "atembeobachtung", practiceName: "Atembeobachtung",
+        poll: "Ertappst du dich manchmal im Gedankenkarussell?",
+        pitch: "Den Beobachter kannst du trainieren – Schritt für Schritt.",
+        community: "Wann hast du dich zuletzt beim Denken „erwischt“?" }) },
+
+    { n: 3, stage: "Selbstbeobachtung", headline: "Nicht in jeden Gedanken springen.",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>denkfehler-…</code>", "📘 <code>/mitglieder/stufe/3</code>", "🧘 <code>innerer-beobachter</code>"],
+      days: mkWeek({ n: 3, next: "Stufe 4 · Emotionale Reifung",
+        reelHook: "Ich bin früher in jeden einzelnen Gedanken reingesprungen.",
+        liBeitrag: "Nicht jeder Gedanke verdient eine Reaktion – gilt auch fürs Postfach.",
+        carousel: "Setz dich ans Ufer", carouselSrc: "carousels/stufen-ueberblick.mjs",
+        blogTitle: "Denkfehler: Wie dein Kopf die Wirklichkeit verzerrt", blogSlug: "denkfehler-…",
+        video: "Selbstbeobachtung: Gedanken sehen, ohne mitzuspringen.",
+        practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
+        poll: "Welcher Denkfehler erwischt dich am häufigsten?",
+        pitch: "Beobachten statt reagieren – das ist Übungssache.",
+        community: "In welche Gedanken springst du am schnellsten rein?" }) },
+
+    { n: 4, stage: "Emotionale Reifung", headline: "Fühlen, ohne überflutet zu werden.",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>gefuehle-benennen-…</code>", "📘 <code>/mitglieder/stufe/4</code>", "🧘 <code>verlaengertes-ausatmen</code>"],
+      days: mkWeek({ n: 4, next: "Stufe 5 · Schöpferkraft",
+        reelHook: "Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert.",
+        liBeitrag: "Emotionen im Job wegdrücken kostet Energie – benennen entlastet.",
+        carousel: "Fühlen, was ist", carouselSrc: "carousels/stufen-ueberblick.mjs",
+        blogTitle: "Warum ein Gefühl zu benennen dein Gehirn beruhigt", blogSlug: "gefuehle-benennen-…",
+        video: "Emotionale Reifung: Fühlen, ohne überflutet zu werden.",
+        practice: "verlaengertes-ausatmen", practiceName: "Verlängertes Ausatmen",
+        poll: "Was machst du, wenn ein Gefühl nicht gehen will?",
+        pitch: "Gefühle regulieren lässt sich lernen – ganz ohne Wegdrücken.",
+        community: "Welches Gefühl fällt dir am schwersten zuzulassen?" }) },
+
+    { n: 5, stage: "Schöpferkraft", headline: "Du schreibst den Code neu.",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>neuroplastizitaet-…</code>", "📘 <code>/mitglieder/stufe/5</code>", "🧘 <code>morgen-ausrichtung</code>"],
+      days: mkWeek({ n: 5, next: "Stufe 6 · Innere Ausrichtung",
+        reelHook: "Was du oft denkst, wird zur Straße in deinem Kopf. Und das ist wörtlich gemeint.",
+        liBeitrag: "Neuroplastizität heißt: Auch berufliche Muster sind veränderbar.",
+        carousel: "Du schreibst den Code neu", carouselSrc: "carousels/stufen-ueberblick.mjs",
+        blogTitle: "Neuroplastizität: Warum sich dein Gehirn ein Leben lang verändert", blogSlug: "neuroplastizitaet-…",
+        video: "Schöpferkraft: Wie du neue Bahnen im Kopf anlegst.",
+        practice: "morgen-ausrichtung", practiceName: "Morgen-Ausrichtung",
+        poll: "Welche mentale Gewohnheit willst du neu anlegen?",
+        pitch: "Neue Denk-Bahnen entstehen durch Wiederholung – hier ist der Weg.",
+        community: "Welchen Gedanken denkst du zu oft?" }) },
+
+    { n: 6, stage: "Innere Ausrichtung", headline: "Kopf, Herz und Handeln.",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>warum-willenskraft-…</code>", "📘 <code>/mitglieder/stufe/6</code>", "🧘 <code>herz-kohaerenz</code>"],
+      days: mkWeek({ n: 6, next: "Stufe 7 · Meisterschaft",
+        reelHook: "Dein Kopf ist ein brillanter Diener. Aber ein ziemlich schlechter Chef.",
+        liBeitrag: "Willenskraft ist überschätzt – Ausrichtung schlägt Disziplin.",
+        carousel: "Kopf, Herz und Handeln", carouselSrc: "carousels/stufen-ueberblick.mjs",
+        blogTitle: "Warum Willenskraft überschätzt wird", blogSlug: "warum-willenskraft-…",
+        video: "Innere Ausrichtung: Wenn Kopf, Herz und Handeln zusammenfinden.",
+        practice: "herz-kohaerenz", practiceName: "Herz-Kohärenz",
+        poll: "Woran merkst du, dass du „aus der Spur“ bist?",
+        pitch: "Ausrichtung statt Dauerdisziplin – so findest du sie.",
+        community: "Was gibt dir im Alltag wieder Klarheit?" }) },
+
+    { n: 7, stage: "Meisterschaft", headline: "Was nach den 7 Stufen kommt.",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>wie-frei-ist-unser-geist</code>", "📘 <code>/mitglieder/stufe/7</code>", "🧘 <code>box-breathing</code>"],
+      days: mkWeek({ n: 7, next: "Block B · Praxis & Wissenschaft",
+        reelHook: "Niemand ist für immer Meister. Ich auch nicht.",
+        liBeitrag: "Souveränität heißt nicht, nie getriggert zu werden – sondern schneller zurückzufinden.",
+        carousel: "Meister deiner Gedanken", carouselSrc: "carousels/stufen-ueberblick.mjs",
+        blogTitle: "Wie frei ist unser Geist?", blogSlug: "wie-frei-ist-unser-geist",
+        video: "Meisterschaft: Was nach den 7 Stufen kommt.",
+        practice: "box-breathing", practiceName: "Box Breathing",
+        poll: "Was hilft dir, nach einem Trigger schnell zurückzufinden?",
+        pitch: "Der ganze Weg in 7 Stufen – starte mit dem kostenlosen E-Book.",
+        community: "Was hat sich verändert, seit du bewusster denkst?" }) },
   ];
 
   const board = document.getElementById("board");
-  DAYS.forEach(day => {
-    const col = document.createElement("div");
-    col.className = "day" + (day.rest ? " rest" : "");
-    col.innerHTML = `<div class="day-head"><span class="wd">${day.wd}</span><span class="n">${day.n}</span></div>`;
-    day.posts.forEach(p => {
-      const c = document.createElement("article");
-      c.className = "card" + (p.opt ? " opt" : "");
-      c.dataset.ch = p.ch;
-      c.style.setProperty("--ch", CH[p.ch].v);
-      c.innerHTML = `
-        <div class="row1">
-          <span class="time">${p.t}</span>
-          <span class="chan"><span class="dot"></span>${CH[p.ch].name}</span>
-        </div>
-        <span class="fmt">${p.fmt}</span>
-        <p class="title">${p.title}</p>
-        <div class="src">${p.src}</div>
-        <span class="cta">→ ${p.cta}</span>`;
-      col.appendChild(c);
+  const weekbar = document.getElementById("weekbar");
+  let activeCh = "all";
+  let activeWeek = 0;
+
+  function renderBoard(days) {
+    board.innerHTML = "";
+    days.forEach(day => {
+      const col = document.createElement("div");
+      col.className = "day" + (day.rest ? " rest" : "");
+      col.innerHTML = `<div class="day-head"><span class="wd">${day.wd}</span><span class="n">${day.n}</span></div>`;
+      day.posts.forEach(p => {
+        const c = document.createElement("article");
+        c.className = "card" + (p.opt ? " opt" : "");
+        c.dataset.ch = p.ch;
+        c.style.setProperty("--ch", CH[p.ch].v);
+        if (activeCh !== "all" && p.ch !== activeCh) c.classList.add("dim");
+        c.innerHTML = `
+          <div class="row1">
+            <span class="time">${p.t}</span>
+            <span class="chan"><span class="dot"></span>${CH[p.ch].name}</span>
+          </div>
+          <span class="fmt">${p.fmt}</span>
+          <p class="title">${p.title}</p>
+          <div class="src">${p.src}</div>
+          <span class="cta">→ ${p.cta}</span>`;
+        col.appendChild(c);
+      });
+      board.appendChild(col);
     });
-    board.appendChild(col);
+  }
+
+  function renderWeek(i) {
+    activeWeek = i;
+    const w = WEEKS[i];
+    document.getElementById("theme-k").textContent = `Woche ${w.n} · Serie Die 7 Stufen`;
+    document.getElementById("theme-h").textContent = `Stufe ${w.n} · ${w.stage} — ${w.headline}`;
+    document.getElementById("theme-mats").innerHTML = w.mats.map(m => `<span class="mat">${m}</span>`).join("");
+    weekbar.querySelectorAll(".weekbtn").forEach((b, k) => b.setAttribute("aria-current", k === i ? "true" : "false"));
+    renderBoard(w.days);
+  }
+
+  WEEKS.forEach((w, i) => {
+    const b = document.createElement("button");
+    b.className = "weekbtn";
+    b.innerHTML = `<span class="wnum">Woche ${w.n}</span><span class="wname">${w.stage}</span>`;
+    b.addEventListener("click", () => renderWeek(i));
+    weekbar.appendChild(b);
   });
 
   // channel filter
   const filters = document.querySelectorAll(".filter");
   filters.forEach(btn => btn.addEventListener("click", () => {
-    const ch = btn.dataset.ch;
+    activeCh = btn.dataset.ch;
     filters.forEach(b => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
     document.querySelectorAll(".card").forEach(card => {
-      card.classList.toggle("dim", ch !== "all" && card.dataset.ch !== ch);
+      card.classList.toggle("dim", activeCh !== "all" && card.dataset.ch !== activeCh);
     });
   }));
+
+  renderWeek(0);
 
   // theme toggle
   const root = document.documentElement;

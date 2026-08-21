@@ -87,6 +87,50 @@ als vertiefender Block (siehe Themen-Backlog).
 
 ---
 
+## Wochen 2–7 (Kurzform je Stufe)
+
+Gleiche Tagesstruktur wie Woche 1 (Mo Reel · Di LI-Text + IG-Carousel · Mi FB-Blog + LI-Carousel + YT-Video/Short · Do IG-Story-Übung · Fr Pitch + Zitate). Nur die Bausteine wechseln. Reel jeweils aus Serie *stufen* (`docs/skripte/reels/stufen.md`), Carousel je Stufe aus `docs/carousels/stufen-ueberblick.mjs`, Lektion `/mitglieder/stufe/N`.
+
+### Woche 2 · Stufe 2 · Erwachen — „Wer hört zu, wenn du denkst?"
+- 🎬 **Reel-Hook:** „Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu?"
+- 🖼️ **Carousel:** „Du bist nicht deine Gedanken" · 📝 **Blog:** `du-bist-nicht-deine-gedanken`
+- 📚 **Deep-Dive:** `reiz-reaktions-luecke` · 🧘 **Praxis (Story):** `atembeobachtung`
+- ▶️ **Video:** „Erwachen: Der Moment, in dem du dich beim Denken erwischst." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/2`
+
+### Woche 3 · Stufe 3 · Selbstbeobachtung — „Nicht in jeden Gedanken springen"
+- 🎬 **Reel-Hook:** „Ich bin früher in jeden einzelnen Gedanken reingesprungen."
+- 🖼️ **Carousel:** „Setz dich ans Ufer" · 📝 **Blog:** `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt`
+- 📚 **Deep-Dive:** `kognitive-verzerrungen` · 🧘 **Praxis (Story):** `innerer-beobachter`
+- ▶️ **Video:** „Selbstbeobachtung: Gedanken sehen, ohne mitzuspringen." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/3`
+
+### Woche 4 · Stufe 4 · Emotionale Reifung — „Fühlen, ohne überflutet zu werden"
+- 🎬 **Reel-Hook:** „Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert."
+- 🖼️ **Carousel:** „Fühlen, was ist" · 📝 **Blog:** `gefuehle-benennen-beruhigt-das-gehirn`
+- 📚 **Deep-Dive:** `emotionsregulation` · 🧘 **Praxis (Story):** `verlaengertes-ausatmen`
+- ▶️ **Video:** „Emotionale Reifung: Fühlen, ohne überflutet zu werden." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/4`
+
+### Woche 5 · Stufe 5 · Schöpferkraft — „Du schreibst den Code neu"
+- 🎬 **Reel-Hook:** „Was du oft denkst, wird zur Straße in deinem Kopf. Und das ist wörtlich gemeint."
+- 🖼️ **Carousel:** „Du schreibst den Code neu" · 📝 **Blog:** `neuroplastizitaet-warum-dein-gehirn-formbar-ist`
+- 📚 **Deep-Dive:** `neuroplastizitaet` · 🧘 **Praxis (Story):** `morgen-ausrichtung`
+- ▶️ **Video:** „Schöpferkraft: Wie du neue Bahnen im Kopf anlegst." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/5`
+
+### Woche 6 · Stufe 6 · Innere Ausrichtung — „Kopf, Herz und Handeln"
+- 🎬 **Reel-Hook:** „Dein Kopf ist ein brillanter Diener. Aber ein ziemlich schlechter Chef."
+- 🖼️ **Carousel:** „Kopf, Herz und Handeln" · 📝 **Blog:** `warum-willenskraft-ueberschaetzt-wird`
+- 📚 **Deep-Dive:** `werte-und-ziele` · 🧘 **Praxis (Story):** `herz-kohaerenz`
+- ▶️ **Video:** „Innere Ausrichtung: Wenn Kopf, Herz und Handeln zusammenfinden." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/6`
+
+### Woche 7 · Stufe 7 · Meisterschaft — „Was nach den 7 Stufen kommt"
+- 🎬 **Reel-Hook:** „Niemand ist für immer Meister. Ich auch nicht."
+- 🖼️ **Carousel:** „Meister deiner Gedanken" · 📝 **Blog:** `wie-frei-ist-unser-geist`
+- 📚 **Deep-Dive:** `integration-und-weitergabe` · 🧘 **Praxis (Story):** `box-breathing`
+- ▶️ **Video:** „Meisterschaft: Was nach den 7 Stufen kommt." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/7`
+
+> Jede Stufe hat 3 Reel-Varianten (A/B/C) in `src/lib/reels.ts` – für Wiederholung/AB-Tests über mehrere Wochen. Der interaktive Kalender zeigt alle 7 Wochen (oben umschaltbar).
+
+---
+
 ## Der Fahrplan (empfohlene Reihenfolge)
 
 Die Tagesstruktur bleibt jede Woche gleich – nur das Wochenthema wechselt. Erst
@@ -129,6 +173,7 @@ Inhalte zu erfinden.
 
 ---
 
-*Erstellt aus vorhandenem Projekt-Material. Nächster Schritt: Wochen 2–7 (die
-restlichen Stufen) mit `/redaktionsplan` ausrollen – oder ein Thema gezielt
-planen, z. B. `/redaktionsplan Stufe 2 Erwachen`.*
+*Erstellt aus vorhandenem Projekt-Material. Die 7-Stufen-Startphase (Woche 1–7)
+ist vollständig geplant (Detail Woche 1 oben, Kurzform Woche 2–7). Nächster
+Schritt: Block B (Praxis & Wissenschaft, Woche 8–10) mit `/redaktionsplan`
+ausrollen – oder gezielt ein Thema planen, z. B. `/redaktionsplan Atmung`.*
