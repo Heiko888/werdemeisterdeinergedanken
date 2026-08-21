@@ -27,9 +27,13 @@ const OUT = join(ROOT, "docs/marketing/whatsapp-mitgliedschaft");
 // Zwei Formate: 4:5 fürs Teilen im Chat/Broadcast (kein Crop), 9:16 für den
 // WhatsApp-Status. padTop/padBottom halten Kopf- und Fußzeile aus den
 // Status-Bedienleisten (oben Profil, unten Antwortfeld) heraus.
+// pad = seitlicher Rand der Textspalte. Beim breiten 16:9 größer, damit die
+// Zeilen nicht über die volle Breite laufen (zentrierte, ruhige Spalte).
 const FORMATS = [
-  { key: "4x5", w: 1080, h: 1350, padTop: 60, padBottom: 56 },
-  { key: "9x16", w: 1080, h: 1920, padTop: 150, padBottom: 150 },
+  { key: "4x5", w: 1080, h: 1350, padTop: 60, padBottom: 56, pad: 72 },
+  { key: "9x16", w: 1080, h: 1920, padTop: 150, padBottom: 150, pad: 72 },
+  { key: "1x1", w: 1080, h: 1080, padTop: 60, padBottom: 56, pad: 72 },
+  { key: "16x9", w: 1920, h: 1080, padTop: 60, padBottom: 56, pad: 380 },
 ];
 const DOMAIN = "werdemeisterdeinergedanken.de";
 
@@ -123,7 +127,7 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
 .brainmini{position:absolute;top:${F.padTop}px;left:64px;width:80px;z-index:6;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
 .pageno{position:absolute;top:${F.padTop + 14}px;right:64px;font-size:22px;font-weight:700;letter-spacing:2px;color:rgba(163,214,79,.9);z-index:6}
 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 72px;z-index:5}
+.wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 ${F.pad}px;z-index:5}
 .tick{width:66px;height:6px;border-radius:4px;background:linear-gradient(100deg,#a3d64f,#34c4c4);margin-bottom:28px}
 .kicker{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#a3d64f;margin-bottom:20px}
 .lead{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:62px;line-height:1.06;letter-spacing:-.4px}
@@ -279,4 +283,4 @@ for (const F of FORMATS) {
   console.log("✓", F.key, `(${total} Folien + ${total} Overlays)`);
 }
 await browser.close();
-console.log("\nFertig → docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16}/(overlay/)");
+console.log("\nFertig → docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16,1x1,16x9}/(overlay/)");
