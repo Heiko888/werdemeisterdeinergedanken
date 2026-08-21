@@ -144,7 +144,7 @@ export function ProgrammBegleiter({
             type="button"
             onClick={toggle}
             disabled={pending}
-            className={`inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold shadow-card transition-all disabled:cursor-not-allowed disabled:opacity-60 ${
+            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-[0.8rem] font-semibold leading-tight shadow-card transition-all disabled:cursor-not-allowed disabled:opacity-60 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm ${
               istDone
                 ? "border border-ink/20 bg-white text-ink hover:border-accent/40 hover:text-accent"
                 : "bg-ink text-paper hover:bg-ink/90"
@@ -159,7 +159,7 @@ export function ProgrammBegleiter({
               onClick={() => setViewTag((t) => Math.max(1, t - 1))}
               disabled={tag.tag <= 1}
               aria-label="Vorheriger Tag"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40 sm:h-10 sm:w-10"
             >
               <ArrowRight className="rotate-180" />
             </button>
@@ -168,7 +168,7 @@ export function ProgrammBegleiter({
               onClick={() => setViewTag((t) => Math.min(tage.length, t + 1))}
               disabled={tag.tag >= tage.length}
               aria-label="Nächster Tag"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40 sm:h-10 sm:w-10"
             >
               <ArrowRight />
             </button>
@@ -189,7 +189,7 @@ export function ProgrammBegleiter({
               </span>
               <p className="text-sm leading-relaxed text-ink-mid">{w.fokus}</p>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2">
               {tage
                 .filter((d) => d.woche === w.nr)
                 .map((d) => {
@@ -202,7 +202,7 @@ export function ProgrammBegleiter({
                       type="button"
                       onClick={() => setViewTag(d.tag)}
                       aria-current={aktiv ? "true" : undefined}
-                      className={`inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium tabular-nums transition-all ${
+                      className={`inline-flex min-w-[3.75rem] items-center justify-center gap-1 rounded-full border px-2.5 py-1.5 text-[0.8rem] font-medium leading-tight tabular-nums transition-all sm:min-w-[4.5rem] sm:px-3 sm:text-sm ${
                         aktiv
                           ? "border-accent bg-accent/10 text-ink"
                           : dDone
@@ -210,7 +210,8 @@ export function ProgrammBegleiter({
                             : "border-ink/15 bg-white text-ink-mid hover:border-accent/40 hover:text-ink"
                       }`}
                     >
-                      {dDone ? "✓" : ""} Tag {d.tag}
+                      {dDone && <span aria-hidden>✓</span>}
+                      <span>Tag {d.tag}</span>
                     </button>
                   );
                 })}
