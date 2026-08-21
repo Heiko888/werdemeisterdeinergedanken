@@ -131,6 +131,32 @@ Gleiche Tagesstruktur wie Woche 1 (Mo Reel · Di LI-Text + IG-Carousel · Mi FB-
 
 ---
 
+## Woche 8–10 · Block B — Praxis & Wissenschaft (ruhigere Phase)
+
+Gleiche Tagesstruktur, aber ruhigerer, stärker praxis-/studienbasierter Ton. Kein Stufen-Lektion-Bezug; Pitch-Ziel ist E-Book bzw. `/mitglieder/praxis`. Reels aus den Serien *praxis* / *wissenschaft*, Carousels aus `docs/carousels/marketing-serien.mjs` (`4-wege-freiheit`, `studien-fakten`).
+
+### Woche 8 · Atmung & Nervensystem — „Der schnellste Weg zur Ruhe"
+- 🎬 **Reel** (Serie *praxis*): „Ausatmen länger als einatmen – und dein Nervensystem schaltet um."
+- 🖼️ **Carousel:** „4 Wege zur mentalen Freiheit" (`4-wege-freiheit`) · 📝 **Blog:** `gefuehle-benennen-beruhigt-das-gehirn`
+- 📚 **Deep-Dive:** `muster-und-koerper` · 🧘 **Praxis (Story):** `vier-sechs-atmung` (auch `box-breathing`)
+- ▶️ **Video:** „Atmung & Nervensystem: 3 Übungen, die dich in 2 Minuten runterbringen." · 🎯 **Pitch:** E-Book / `/mitglieder/praxis`
+
+### Woche 9 · Was Meditation im Gehirn verändert — „Was wirklich passiert, wenn du meditierst"
+- 🎬 **Reel** (Serie *wissenschaft*): „Fast die Hälfte des Tages bist du gedanklich woanders."
+- 🖼️ **Carousel:** „Studien-Fakten" (`studien-fakten`) · 📝 **Blog:** `was-meditation-im-gehirn-veraendert`
+- 💬 **Studien-Zitate:** `docs/marketing/zitate/studien-4x5` · 🧘 **Praxis (Story):** `atembeobachtung`
+- ▶️ **Video:** „Was Meditation wirklich im Gehirn verändert (laut Forschung)." · 🎯 **Pitch:** E-Book / `/mitglieder/praxis`
+
+### Woche 10 · Der Placebo-Effekt / Erwartung — „Wie eine Erwartung deinen Körper verändert"
+- 🎬 **Reel** (Serie *wissenschaft*): „Eine Überzeugung verändert echte Körperprozesse."
+- 🖼️ **Carousel:** „Studien-Fakten" (`studien-fakten`) · 📝 **Blog:** `der-placebo-effekt-wie-erwartung-wirkt`
+- 📚 **Deep-Dive:** `muster-und-koerper` · 🧘 **Praxis (Story):** `morgen-ausrichtung`
+- ▶️ **Video:** „Der Placebo-Effekt: Wie Erwartung echte Körperprozesse steuert." · 🎯 **Pitch:** E-Book / `/mitglieder`
+
+> Danach folgt **Block C · Mentale Selbstverteidigung** (ab Woche 11): Framing, Filterblase … Propaganda – erst, wenn die Community die Grundlagen kennt.
+
+---
+
 ## Der Fahrplan (empfohlene Reihenfolge)
 
 Die Tagesstruktur bleibt jede Woche gleich – nur das Wochenthema wechselt. Erst
@@ -173,7 +199,7 @@ Inhalte zu erfinden.
 
 ---
 
-*Erstellt aus vorhandenem Projekt-Material. Die 7-Stufen-Startphase (Woche 1–7)
-ist vollständig geplant (Detail Woche 1 oben, Kurzform Woche 2–7). Nächster
-Schritt: Block B (Praxis & Wissenschaft, Woche 8–10) mit `/redaktionsplan`
-ausrollen – oder gezielt ein Thema planen, z. B. `/redaktionsplan Atmung`.*
+*Erstellt aus vorhandenem Projekt-Material. Woche 1–10 sind vollständig geplant
+(Block A · 7 Stufen und Block B · Praxis & Wissenschaft). Nächster Schritt:
+Block C · Mentale Selbstverteidigung (ab Woche 11) mit `/redaktionsplan`
+ausrollen – oder gezielt ein Thema planen, z. B. `/redaktionsplan Framing`.*

@@ -1,4 +1,4 @@
-<title>7-Stufen-Redaktionsplan</title>
+<title>WMDG-Redaktionsplan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -234,9 +234,9 @@
 
 <div class="wrap">
   <header>
-    <p class="eyebrow">Redaktionsplan · Die 7 Stufen · Woche 1–7 · fokussierte Frequenz</p>
-    <h1>Sieben Wochen, die 7 Stufen — <span class="accent">alle Kanäle gleichzeitig</span></h1>
-    <p class="lede">Der Einstieg beginnt sanft mit der Programm-Reise: Autopilot → Erwachen → Selbstbeobachtung → Emotionale Reifung → Schöpferkraft → Innere Ausrichtung → Meisterschaft. Jede Woche ein Thema auf Instagram, Facebook, LinkedIn und YouTube — 11 Postings aus einer Idee, im Bogen Aufmerksamkeit → Aha → Anwenden → Angebot. Oben die Woche wählen.</p>
+    <p class="eyebrow">Redaktionsplan · Woche 1–10 · Block A + B · fokussierte Frequenz</p>
+    <h1>Zehn Wochen, ein Fahrplan — <span class="accent">alle Kanäle gleichzeitig</span></h1>
+    <p class="lede">Sanfter Einstieg mit den <b>7 Stufen</b> (Woche 1–7: Autopilot → Meisterschaft), dann die ruhigere Phase <b>Praxis &amp; Wissenschaft</b> (Woche 8–10: Atmung · Meditation · Placebo). Jede Woche ein Thema auf Instagram, Facebook, LinkedIn und YouTube — 11 Postings aus einer Idee, im Bogen Aufmerksamkeit → Aha → Anwenden → Angebot. Oben die Woche wählen.</p>
 
     <div class="freq" aria-label="Frequenz pro Kanal">
       <span class="pill"><span class="dot" style="background:var(--ch-ig)"></span><b>4×</b> <span>Instagram</span></span>
@@ -327,6 +327,40 @@
       ]},
       { wd: "Samstag", n: "Ruhetag", rest: true, posts: [
         { t: "opt.", ch: "ig", fmt: "📚 Story", title: `Optional: Wochen-Recap-Story „Das war Stufe ${s.n}“${s.next ? " + Ausblick auf " + s.next : ""}.`, src: "—", cta: "Bindung", opt: true },
+      ]},
+      { wd: "Sonntag", n: "Ruhetag", rest: true, posts: [
+        { t: "opt.", ch: "fb", fmt: "📝 Beitrag", title: "Optional: leiser Reflexions-Post / Zitat als Wochenausklang.", src: "docs/marketing/zitate/", cta: "Nähe", opt: true },
+      ]},
+    ];
+  }
+
+  // Block B (Praxis & Wissenschaft): gleiche Struktur, ohne Stufen-Lektion-Bezug.
+  function mkWeekB(s) {
+    return [
+      { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+        { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: `„${s.reelHook}“`, src: s.reelSrc, cta: "Folgen · Speichern" },
+        { t: "19:00", ch: "fb", fmt: "🎬 Reel", title: "Gleiches Reel als Cross-Post + 2–3 Sätze Kontext.", src: "s. IG", cta: "Kommentar-Frage" },
+      ]},
+      { wd: "Dienstag", n: "Aha", rest: false, posts: [
+        { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: `„${s.liBeitrag}“`, src: `Blog ${s.blogSlug}`, cta: "Diskussion" },
+        { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: `„${s.carousel}“ — Cover → Kernidee → Aha → CTA.`, src: s.carouselSrc, cta: "Speichern & Teilen" },
+      ]},
+      { wd: "Mittwoch", n: "Tiefe", rest: false, posts: [
+        { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: `Blog-Anriss + Link „${s.blogTitle}“.`, src: `Blog ${s.blogSlug}`, cta: "Blog-Klick" },
+        { t: "09:00", ch: "li", fmt: "🖼️ Carousel", title: `Document-Post: „${s.carousel}“ (sachlicher, studienbasierter Ton).`, src: s.carouselSrc, cta: "Website" },
+        { t: "17:00", ch: "yt", fmt: "▶️ Video", title: `Hauptvideo (6–8 min): „${s.video}“`, src: s.videoSrc, cta: "Abo · E-Book in Beschreibung" },
+        { t: "17:30", ch: "yt", fmt: "⚡ Short", title: "Reel als Short zweitverwertet, verlinkt aufs Hauptvideo.", src: "Reel (Mo)", cta: "Zum Hauptvideo" },
+      ]},
+      { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+        { t: "19:00", ch: "ig", fmt: "📚 Story", title: `3-teilig: Umfrage („${s.poll}“) → Auflösung → Mini-Übung „${s.practiceName}“.`, src: `practices.ts · ${s.practice}`, cta: "Antwort-Sticker · Blog-Link" },
+      ]},
+      { wd: "Freitag", n: "Angebot", rest: false, posts: [
+        { t: "07:30", ch: "li", fmt: "🎯 Pitch", title: `„${s.pitch}“ Soft-Pitch E-Book „Die 7 Stufen kompakt“.`, src: "Funnel /#ebook", cta: "E-Book laden" },
+        { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: `Studien-/Zitatkarte + Story-Verweis auf E-Book / Praxis.`, src: `${s.zitate} · ${s.pitchHref}`, cta: "Link in Bio" },
+        { t: "17:00", ch: "fb", fmt: "💬 Zitat/Studie", title: `Community-Frage: „${s.community}“ + Studienkarte.`, src: s.zitate, cta: "Kommentare" },
+      ]},
+      { wd: "Samstag", n: "Ruhetag", rest: true, posts: [
+        { t: "opt.", ch: "ig", fmt: "📚 Story", title: `Optional: Wochen-Recap-Story „${s.recap}“${s.next ? " + Ausblick auf " + s.next : ""}.`, src: "—", cta: "Bindung", opt: true },
       ]},
       { wd: "Sonntag", n: "Ruhetag", rest: true, posts: [
         { t: "opt.", ch: "fb", fmt: "📝 Beitrag", title: "Optional: leiser Reflexions-Post / Zitat als Wochenausklang.", src: "docs/marketing/zitate/", cta: "Nähe", opt: true },
@@ -425,6 +459,51 @@
         poll: "Was hilft dir, nach einem Trigger schnell zurückzufinden?",
         pitch: "Der ganze Weg in 7 Stufen – starte mit dem kostenlosen E-Book.",
         community: "Was hat sich verändert, seit du bewusster denkst?" }) },
+
+    { n: 8, stage: "Atmung", serie: "Praxis & Wissenschaft",
+      kicker: "Woche 8 · Block B · Praxis", title: "Atmung & Nervensystem — Der schnellste Weg zur Ruhe",
+      mats: ["🎬 Reel <code>praxis.md</code>", "🖼️ Carousel <code>4-wege-freiheit</code>", "📝 Blog <code>gefuehle-benennen-…</code>", "📚 Deep-Dive <code>muster-und-koerper</code>", "🧘 <code>vier-sechs-atmung</code>"],
+      days: mkWeekB({ next: "Woche 9 · Meditation",
+        reelHook: "Ausatmen länger als einatmen – und dein Nervensystem schaltet um.", reelSrc: "Reel-Serie praxis",
+        liBeitrag: "Vor dem schwierigen Gespräch: vier bewusste Atemzüge. Kein Eso – pure Physiologie.",
+        carousel: "4 Wege zur mentalen Freiheit", carouselSrc: "carousels/marketing-serien.mjs",
+        blogTitle: "Warum ein Gefühl zu benennen dein Gehirn beruhigt", blogSlug: "gefuehle-benennen-…",
+        video: "Atmung & Nervensystem: 3 Übungen, die dich in 2 Minuten runterbringen.", videoSrc: "Blog + Praxis-Übungen + Deep-Dive muster-und-koerper",
+        practice: "vier-sechs-atmung", practiceName: "4-6-Atmung",
+        poll: "Wie atmest du gerade – flach oder tief?",
+        pitch: "Ruhe auf Knopfdruck lässt sich trainieren.", pitchHref: "/mitglieder/praxis",
+        community: "Welche Atem-Übung hilft dir am schnellsten?",
+        zitate: "docs/marketing/zitate/", recap: "Atem-Woche" }) },
+
+    { n: 9, stage: "Meditation", serie: "Praxis & Wissenschaft",
+      kicker: "Woche 9 · Block B · Wissenschaft", title: "Was Meditation wirklich im Gehirn verändert",
+      mats: ["🎬 Reel <code>wissenschaft.md</code>", "🖼️ Carousel <code>studien-fakten</code>", "📝 Blog <code>was-meditation-…</code>", "💬 Studien-Zitate <code>zitate/studien-4x5</code>", "🧘 <code>atembeobachtung</code>"],
+      days: mkWeekB({ next: "Woche 10 · Placebo & Erwartung",
+        reelHook: "Fast die Hälfte des Tages bist du gedanklich woanders.", reelSrc: "Reel-Serie wissenschaft",
+        liBeitrag: "Meditation ist kein Wellness-Gimmick – die Bildgebung zeigt messbare Veränderungen.",
+        carousel: "Studien-Fakten", carouselSrc: "carousels/marketing-serien.mjs",
+        blogTitle: "Was Meditation wirklich im Gehirn verändert", blogSlug: "was-meditation-im-gehirn-veraendert",
+        video: "Was Meditation wirklich im Gehirn verändert (laut Forschung).", videoSrc: "Blog + Studien-Zitate + Reel-Serie wissenschaft",
+        practice: "atembeobachtung", practiceName: "Atembeobachtung",
+        poll: "Wie oft schweifst du am Tag gedanklich ab?",
+        pitch: "Schon wenige Minuten täglich verändern messbar etwas.", pitchHref: "/mitglieder/praxis",
+        community: "Was hält dich vom regelmäßigen Meditieren ab?",
+        zitate: "docs/marketing/zitate/studien-4x5", recap: "Meditations-Woche" }) },
+
+    { n: 10, stage: "Placebo", serie: "Praxis & Wissenschaft",
+      kicker: "Woche 10 · Block B · Wissenschaft", title: "Der Placebo-Effekt — Wie Erwartung deinen Körper verändert",
+      mats: ["🎬 Reel <code>wissenschaft.md</code>", "🖼️ Carousel <code>studien-fakten</code>", "📝 Blog <code>der-placebo-effekt-…</code>", "📚 Deep-Dive <code>muster-und-koerper</code>", "🧘 <code>morgen-ausrichtung</code>"],
+      days: mkWeekB({ next: "Block C · Mentale Selbstverteidigung",
+        reelHook: "Eine Überzeugung verändert echte Körperprozesse.", reelSrc: "Reel-Serie wissenschaft",
+        liBeitrag: "Erwartung ist ein Wirkstoff – im Guten wie im Schlechten, auch im Team.",
+        carousel: "Studien-Fakten", carouselSrc: "carousels/marketing-serien.mjs",
+        blogTitle: "Der Placebo-Effekt: Wie eine Erwartung deinen Körper verändert", blogSlug: "der-placebo-effekt-wie-erwartung-wirkt",
+        video: "Der Placebo-Effekt: Wie Erwartung echte Körperprozesse steuert.", videoSrc: "Blog + Deep-Dive muster-und-koerper + Studien-Zitate",
+        practice: "morgen-ausrichtung", practiceName: "Morgen-Ausrichtung",
+        poll: "Hast du den Placebo-Effekt schon mal an dir bemerkt?",
+        pitch: "Erwartung bewusst setzen – das ist der Anfang.", pitchHref: "/mitglieder",
+        community: "Wo hat dich eine Erwartung schon mal getäuscht?",
+        zitate: "docs/marketing/zitate/studien-4x5", recap: "Placebo-Woche" }) },
   ];
 
   const board = document.getElementById("board");
@@ -462,8 +541,8 @@
   function renderWeek(i) {
     activeWeek = i;
     const w = WEEKS[i];
-    document.getElementById("theme-k").textContent = `Woche ${w.n} · Serie Die 7 Stufen`;
-    document.getElementById("theme-h").textContent = `Stufe ${w.n} · ${w.stage} — ${w.headline}`;
+    document.getElementById("theme-k").textContent = w.kicker || `Woche ${w.n} · Serie Die 7 Stufen`;
+    document.getElementById("theme-h").textContent = w.title || `Stufe ${w.n} · ${w.stage} — ${w.headline}`;
     document.getElementById("theme-mats").innerHTML = w.mats.map(m => `<span class="mat">${m}</span>`).join("");
     weekbar.querySelectorAll(".weekbtn").forEach((b, k) => b.setAttribute("aria-current", k === i ? "true" : "false"));
     renderBoard(w.days);

@@ -47,9 +47,9 @@ Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
 
 | Thema | Status | Material |
 |---|---|---|
-| **Atmung & Nervensystem** | offen | Reel-Serie „praxis" · Praxis `atembeobachtung`, `vier-sechs-atmung`, `box-breathing` · Blog `gefuehle-benennen-beruhigt-das-gehirn` |
-| **Was Meditation im Gehirn verändert** | offen | Blog `was-meditation-im-gehirn-veraendert` · Reel-Serie „wissenschaft" · Studien-Zitate `docs/marketing/zitate/studien-4x5` |
-| **Der Placebo-Effekt / Erwartung** | offen | Blog `der-placebo-effekt-wie-erwartung-wirkt` · DD `muster-und-koerper` · Studien-Zitate |
+| **Atmung & Nervensystem** | geplant | Reel-Serie „praxis" · Praxis `atembeobachtung`, `vier-sechs-atmung`, `box-breathing` · Blog `gefuehle-benennen-beruhigt-das-gehirn` |
+| **Was Meditation im Gehirn verändert** | geplant | Blog `was-meditation-im-gehirn-veraendert` · Reel-Serie „wissenschaft" · Studien-Zitate `docs/marketing/zitate/studien-4x5` |
+| **Der Placebo-Effekt / Erwartung** | geplant | Blog `der-placebo-effekt-wie-erwartung-wirkt` · DD `muster-und-koerper` · Studien-Zitate |
 
 ## Block C — Mentale Selbstverteidigung (vertiefend, ab Woche 11)
 
