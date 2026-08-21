@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import brainLogo from "../../../public/logo-brain.png";
 import { APP_GLOW } from "@/lib/gradients";
 import { Container } from "@/components/ui/Container";
 import { ArrowRight } from "@/components/ui/Icon";
@@ -10,9 +8,10 @@ import { ArrowRight } from "@/components/ui/Icon";
  * Kopf einer Lektion – Stufe, Vertiefung oder Praxis.
  *
  * Übernimmt die Bildsprache der Video-Thumbnails
- * (docs/marketing/video-thumbnails.mjs): Marken-Emblem oben, Eyebrow im
- * Grün→Teal-Verlauf, Titel in Fraunces und – wo es eine Nummer gibt – die
- * große Geister-Ziffer als Wasserzeichen. Anders als das PNG ist hier alles
+ * (docs/marketing/video-thumbnails.mjs): Eyebrow im Grün→Teal-Verlauf, Titel
+ * in Fraunces und – wo es eine Nummer gibt – die große Geister-Ziffer als
+ * Wasserzeichen. Das Brain-Emblem bleibt dem Thumbnail vorbehalten; auf der
+ * Seite trägt es der Header schon. Anders als das PNG ist hier alles
  * Text: scharf auf jedem Display, markierbar, ohne zusätzliche Ladezeit.
  */
 export function LessonHero({
@@ -47,22 +46,13 @@ export function LessonHero({
         </span>
       )}
       <Container size="narrow" className="flex flex-col items-start gap-4">
-        <div className="flex w-full items-center justify-between gap-4">
-          <Link
-            href="/mitglieder"
-            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
-          >
-            <ArrowRight className="rotate-180" />
-            Mein Bereich
-          </Link>
-          <Image
-            src={brainLogo}
-            alt=""
-            aria-hidden
-            className="h-9 w-auto sm:h-11"
-            style={{ filter: "drop-shadow(0 4px 20px rgba(52,196,196,0.3))" }}
-          />
-        </div>
+        <Link
+          href="/mitglieder"
+          className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
+        >
+          <ArrowRight className="rotate-180" />
+          Mein Bereich
+        </Link>
         <span className="text-gradient-leaf text-[0.7rem] font-bold uppercase tracking-[0.2em] sm:text-xs">
           {eyebrow}
         </span>
