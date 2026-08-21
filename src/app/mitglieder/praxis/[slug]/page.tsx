@@ -41,7 +41,7 @@ export default async function PracticePage({
   return (
     <>
       {/* Kopf */}
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-14 sm:py-16">
+      <section className="member-hero overflow-hidden py-14 sm:py-16">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
@@ -64,7 +64,7 @@ export default async function PracticePage({
           <h1 className="text-[2rem] font-medium leading-[1.1] text-ink sm:text-4xl md:text-5xl">
             {practice.title}
           </h1>
-          <span className="rounded-full border border-ink/15 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink-mid">
+          <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink-mid backdrop-blur-sm">
             {practice.duration}
           </span>
         </Container>

@@ -1,4 +1,3 @@
-import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -119,16 +118,8 @@ export default async function MembersPage() {
 
   return (
     <>
-      {/* Kopf */}
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 sm:py-20">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
-          style={{
-            background:
-              APP_GLOW,
-          }}
-        />
+      {/* Kopf – dunkle Navy-Kopfzone (Marken-Blau) */}
+      <section className="member-hero overflow-hidden py-16 sm:py-20">
         <Container className="flex flex-col items-start gap-4">
           <Eyebrow>Mein Bereich</Eyebrow>
           <div className="flex w-full flex-wrap items-end justify-between gap-4">
@@ -160,7 +151,7 @@ export default async function MembersPage() {
             {loggedIn && (
               <Link
                 href="/mitglieder/journal"
-                className="group inline-flex items-center gap-1.5 rounded-full bg-ink px-3 py-2 text-[0.8rem] font-semibold leading-tight text-paper shadow-card transition-all hover:bg-ink/90 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+                className="group inline-flex items-center gap-1.5 rounded-full bg-brand-500 px-3 py-2 text-[0.8rem] font-semibold leading-tight text-white shadow-[0_12px_30px_-14px_rgba(54,112,238,0.9)] transition-all hover:bg-brand-400 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 <Check />
                 Mein Journal
@@ -170,7 +161,7 @@ export default async function MembersPage() {
             {begleiterVerfuegbar && (
               <Link
                 href="/mitglieder/begleiter"
-                className="group inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/70 hover:text-accent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+                className="group inline-flex items-center gap-1.5 rounded-full border border-teal-300/50 bg-teal-400/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/80 hover:bg-teal-400/20 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 <Spark />
                 Dein Begleiter
@@ -180,7 +171,7 @@ export default async function MembersPage() {
             {loggedIn && (
               <Link
                 href="/mitglieder/gedankenprofil"
-                className="group inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+                className="group inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 Mein Gedankenprofil
                 <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
@@ -189,7 +180,7 @@ export default async function MembersPage() {
             {begleiterVerfuegbar && (
               <Link
                 href="/mitglieder/detektor"
-                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 <Spark />
                 Manipulations-Detektor
@@ -199,7 +190,7 @@ export default async function MembersPage() {
             {loggedIn && (
               <Link
                 href="/mitglieder/programm"
-                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 21 Tage Autopilot-Ausstieg
                 <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
@@ -208,7 +199,7 @@ export default async function MembersPage() {
             {loggedIn && (
               <Link
                 href="/mitglieder/rueckkehr"
-                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 Die tägliche Rückkehr
                 <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
@@ -216,7 +207,7 @@ export default async function MembersPage() {
             )}
             <Link
               href="/mitglieder/wissensdatenbank"
-              className="group inline-flex items-center gap-1.5 rounded-full border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+              className="group inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
             >
               <Brain />
               Wissensdatenbank
@@ -224,7 +215,7 @@ export default async function MembersPage() {
             </Link>
             <a
               href="/mitglieder/arbeitsheft"
-              className="col-span-2 inline-flex items-center gap-1.5 rounded-2xl border border-ink/20 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent sm:col-auto sm:gap-2 sm:rounded-full sm:px-5 sm:py-2.5 sm:text-sm"
+              className="col-span-2 inline-flex items-center gap-1.5 rounded-2xl border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:rounded-full sm:px-5 sm:py-2.5 sm:text-sm"
             >
               <Download />
               Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
@@ -232,7 +223,7 @@ export default async function MembersPage() {
             {isAdmin && (
               <Link
                 href="/admin"
-                className="group inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-white px-3 py-2 text-[0.8rem] font-medium leading-tight text-accent shadow-card transition-all hover:border-accent/70 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+                className="group inline-flex items-center gap-1.5 rounded-full border border-teal-300/50 bg-teal-400/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/80 hover:bg-teal-400/20 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
               >
                 Marketing-Cockpit
                 <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
@@ -350,9 +341,9 @@ export default async function MembersPage() {
           </div>
 
           {/* Fortschrittsbalken */}
-          <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-ink/[0.06]">
+          <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-brand-500/[0.12]">
             <span
-              className="block h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 transition-all duration-500"
+              className="block h-full rounded-full bg-gradient-to-r from-brand-500 to-teal-400 transition-all duration-500"
               style={{
                 width: `${Math.round((completedCount / stages.length) * 100)}%`,
               }}
@@ -366,12 +357,14 @@ export default async function MembersPage() {
                 <Link
                   key={stage.number}
                   href={`/mitglieder/stufe/${i + 1}`}
-                  className={`group flex flex-col gap-2 rounded-2xl border bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 ${
-                    isDone ? "border-accent/40" : "border-ink/10"
+                  className={`group flex flex-col gap-2 rounded-2xl border p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-300/60 ${
+                    isDone
+                      ? "border-brand-300/60 bg-gradient-to-b from-brand-50 to-white"
+                      : "border-ink/10 bg-white"
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-display text-2xl italic text-accent">
+                    <span className="font-display text-2xl italic text-brand-500">
                       {stage.number}
                     </span>
                     {isDone ? (

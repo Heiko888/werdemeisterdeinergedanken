@@ -83,7 +83,7 @@ export default async function GedankenprofilPage() {
   return (
     <>
       {/* Kopf */}
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 sm:py-20">
+      <section className="member-hero overflow-hidden py-16 sm:py-20">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
@@ -110,7 +110,7 @@ export default async function GedankenprofilPage() {
             mit jedem neuen Test schärfer wird.
           </p>
           {profil.hasTest && profil.summary && (
-            <p className="max-w-xl rounded-2xl border border-accent/25 bg-white px-6 py-4 text-[1.02rem] leading-relaxed text-ink-soft/90 shadow-card">
+            <p className="max-w-xl rounded-2xl border border-teal-300/30 bg-white/10 px-6 py-4 text-[1.02rem] leading-relaxed text-ink-soft/90 shadow-card backdrop-blur-sm">
               {profil.summary}
             </p>
           )}

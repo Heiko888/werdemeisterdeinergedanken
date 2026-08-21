@@ -44,7 +44,7 @@ export default async function DeepDivePage({
   return (
     <>
       {/* Kopf */}
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-14 sm:py-16">
+      <section className="member-hero overflow-hidden py-14 sm:py-16">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"

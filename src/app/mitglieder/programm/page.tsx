@@ -36,7 +36,7 @@ export default async function ProgrammPage() {
 
   return (
     <>
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 sm:py-20">
+      <section className="member-hero overflow-hidden py-16 sm:py-20">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"

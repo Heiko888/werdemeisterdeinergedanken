@@ -96,7 +96,7 @@ export default async function JournalPage() {
   return (
     <>
       {/* Kopf + Cockpit */}
-      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 print:border-0 print:py-4 sm:py-20">
+      <section className="member-hero overflow-hidden py-16 print:border-0 print:py-4 sm:py-20">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10 print:hidden"
@@ -147,7 +147,7 @@ export default async function JournalPage() {
           </div>
 
           {resolved.length > 0 && (
-            <PrintButton className="mt-1 inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink shadow-card transition-all hover:border-accent/40 hover:text-accent print:hidden" />
+            <PrintButton className="mt-1 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 print:hidden" />
           )}
         </Container>
       </section>
