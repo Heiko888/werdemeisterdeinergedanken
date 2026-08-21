@@ -72,3 +72,46 @@ Start: `/generatoren-doku` (optional mit Schwerpunkt, z. B. „nur PDF").
 Wichtig: Das Generator-Team schreibt **nur** nach `docs/generatoren/` und ändert
 keinen Generator- oder App-Code. Prüfen (Prüf-Team) und Dokumentieren
 (Generator-Team) bleiben bewusst getrennt.
+
+---
+
+# Drittes Team: das Redaktions-Team
+
+Dieses Team plant **nicht** den Code, sondern den **Social-Media-Content**: Es
+erstellt einen kanalübergreifenden Redaktionsplan für **Instagram, Facebook,
+LinkedIn und YouTube** – nach dem Prinzip **ein Wochenthema, alle Kanäle
+gleichzeitig**. Ergebnis landet in `docs/marketing/` (Master-Plan + Kalender)
+und `docs/marketing/redaktionsplan/` (Themen-Backlog + Teil-Pläne je Kanal).
+
+Start:
+
+```
+/redaktionsplan
+/redaktionsplan Thema Propaganda, 4 Wochen, aktiv
+/redaktionsplan nur Instagram
+```
+
+`$ARGUMENTS` steuert Thema, Anzahl Wochen, Frequenz-Stufe (`fokussiert` |
+`aktiv` | `maximal`, Standard `fokussiert`) und optionalen Kanal-Fokus.
+
+| Agent | Plant |
+|-------|-------|
+| **redaktions-planer** | Koordination: wählt das Wochenthema, steuert die Kanal-Planer, führt alles zum Master-Plan `docs/marketing/redaktionsplan.md` zusammen und aktualisiert den Kalender `redaktionsplan-kalender.html`. |
+| **themen-stratege** | Themen-Backlog + Material-Map je Thema (welches vorhandene Reel/Blog/Vertiefung/Praxis/Zitat passt) → `docs/marketing/redaktionsplan/themen-backlog.md`. |
+| **instagram-planer** | Reels, Carousels, Stories, Pitch → `redaktionsplan/instagram.md`. |
+| **facebook-planer** | Beiträge, Reel-Crossposts, Community-Fragen → `redaktionsplan/facebook.md`. |
+| **linkedin-planer** | Klartext-Textbeiträge, Document-Carousels, Pitches (Berufsbezug) → `redaktionsplan/linkedin.md`. |
+| **youtube-planer** | Hauptvideo (Langform) + Shorts inkl. Titel/Beschreibung → `redaktionsplan/youtube.md`. |
+
+**Frequenz-Stufen** (Posts pro Woche):
+
+| Stufe | Instagram | Facebook | LinkedIn | YouTube |
+|---|---|---|---|---|
+| fokussiert | 4× | 3× | 3× | 1× (+Short) |
+| aktiv | 6× (+Stories) | 4× | 4× | 1–2× (+2 Shorts) |
+| maximal | täglich | täglich | werktags täglich | 2× + Shorts |
+
+Wichtig: Das Redaktions-Team nutzt **nur vorhandenes Projekt-Material** (Slugs/
+Pfade werden am Code belegt, nichts erfunden) und schreibt **ausschließlich**
+nach `docs/marketing/`. Es ändert **keinen** App-, Generator- oder Content-Code –
+die Produktion der Posts (Filmen, Rendern, Veröffentlichen) bleibt bei dir.
