@@ -1,0 +1,373 @@
+<title>Framing-Woche</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+
+<style>
+  :root {
+    --brand-green: #7bb832;
+    --brand-teal: #17a5b0;
+    --grad: linear-gradient(115deg, #8cc63f 0%, #21b2bd 100%);
+
+    --bg: #f4f7f6;
+    --surface: #ffffff;
+    --surface-2: #eef2f1;
+    --ink: #0f1c1e;
+    --ink-soft: #3a4b4d;
+    --ink-faint: #6c7d7e;
+    --line: #dde5e3;
+    --line-strong: #c6d2cf;
+
+    --ch-ig: #d6336c;
+    --ch-fb: #1877f2;
+    --ch-li: #0a66c2;
+    --ch-yt: #e5322d;
+    --ch-none: #9aa8a7;
+
+    --shadow: 0 1px 2px rgba(15,28,30,.06), 0 8px 24px rgba(15,28,30,.05);
+    --radius: 14px;
+    --maxw: 1240px;
+  }
+
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --bg: #0c1415;
+      --surface: #121e20;
+      --surface-2: #17262880;
+      --ink: #eaf1f0;
+      --ink-soft: #b6c5c4;
+      --ink-faint: #7f918f;
+      --line: #23343580;
+      --line-strong: #2e4143;
+      --ch-ig: #f06595;
+      --ch-fb: #4d94ff;
+      --ch-li: #4a95e0;
+      --ch-yt: #ff6b66;
+      --ch-none: #6a7a79;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0c1415;
+    --surface: #121e20;
+    --surface-2: #17262880;
+    --ink: #eaf1f0;
+    --ink-soft: #b6c5c4;
+    --ink-faint: #7f918f;
+    --line: #23343580;
+    --line-strong: #2e4143;
+    --ch-ig: #f06595;
+    --ch-fb: #4d94ff;
+    --ch-li: #4a95e0;
+    --ch-yt: #ff6b66;
+    --ch-none: #6a7a79;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Figtree", system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 40px) 64px; }
+
+  /* ---------- header ---------- */
+  header { margin-bottom: 28px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--brand-teal); margin: 0 0 14px;
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800; font-size: clamp(30px, 5.2vw, 52px); line-height: 1.02;
+    letter-spacing: -.02em; text-wrap: balance; margin: 0 0 10px; max-width: 20ch;
+  }
+  h1 .accent {
+    background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .lede { font-size: clamp(15px, 2vw, 18px); color: var(--ink-soft); margin: 0; max-width: 60ch; }
+
+  /* ---------- frequency strip ---------- */
+  .freq { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .freq .pill {
+    display: inline-flex; align-items: baseline; gap: 8px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 14px; box-shadow: var(--shadow);
+  }
+  .freq .pill b { font-family: "IBM Plex Mono", monospace; font-size: 14px; }
+  .freq .pill span { font-size: 13px; color: var(--ink-faint); }
+  .freq .dot { width: 9px; height: 9px; border-radius: 50%; align-self: center; }
+
+  /* ---------- theme banner ---------- */
+  .theme-card {
+    margin: 26px 0 30px; border-radius: var(--radius); overflow: hidden;
+    border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--surface);
+  }
+  .theme-card .top { background: var(--grad); padding: 20px clamp(18px,3vw,28px); color: #06231f; }
+  .theme-card .top .k {
+    font-family: "IBM Plex Mono", monospace; font-size: 11.5px; font-weight: 600;
+    letter-spacing: .12em; text-transform: uppercase; opacity: .8; margin: 0 0 6px;
+  }
+  .theme-card .top h2 {
+    font-family: "Bricolage Grotesque", sans-serif; font-weight: 700;
+    font-size: clamp(20px, 3vw, 27px); margin: 0; letter-spacing: -.01em; text-wrap: balance;
+  }
+  .theme-card .mats { display: flex; flex-wrap: wrap; gap: 8px 10px; padding: 16px clamp(18px,3vw,28px); }
+  .mat {
+    display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--ink-soft);
+    background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 5px 11px;
+  }
+  .mat code { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--ink-faint); }
+
+  /* ---------- controls ---------- */
+  .controls {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+    margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--line);
+  }
+  .controls .label {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-faint); margin-right: 4px;
+  }
+  .filter {
+    font-family: inherit; font-size: 13px; font-weight: 500; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 7px;
+    background: var(--surface); color: var(--ink-soft);
+    border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px;
+    transition: border-color .15s, color .15s, background .15s;
+  }
+  .filter:hover { border-color: var(--line-strong); color: var(--ink); }
+  .filter .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .filter[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .filter[aria-pressed="true"] .dot { outline: 2px solid var(--bg); outline-offset: 1px; }
+  .spacer { flex: 1 1 auto; }
+  #themeToggle {
+    font-family: inherit; font-size: 13px; cursor: pointer; color: var(--ink-soft);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px;
+  }
+  #themeToggle:hover { border-color: var(--line-strong); color: var(--ink); }
+
+  /* ---------- board ---------- */
+  .board-scroll { overflow-x: auto; padding-bottom: 8px; margin: 0 -4px; }
+  .board {
+    display: grid; grid-template-columns: repeat(7, minmax(180px, 1fr));
+    gap: 12px; padding: 4px; min-width: 900px;
+  }
+  .day { display: flex; flex-direction: column; gap: 10px; }
+  .day-head {
+    position: sticky; top: 0; display: flex; align-items: baseline; justify-content: space-between;
+    padding: 4px 2px 8px; border-bottom: 2px solid var(--line-strong);
+  }
+  .day-head .wd { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 16px; letter-spacing: -.01em; }
+  .day-head .n  { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-faint); }
+  .day.rest .day-head { border-bottom-style: dashed; }
+  .day.rest .wd { color: var(--ink-faint); font-weight: 500; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--ch);
+    border-radius: 11px; padding: 11px 12px 12px; box-shadow: var(--shadow);
+    transition: opacity .18s, transform .12s, box-shadow .12s;
+  }
+  .card:hover { transform: translateY(-2px); }
+  .card.dim { opacity: .26; filter: saturate(.4); }
+  .card .row1 { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 7px; }
+  .card .time { font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 600; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+  .chan { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: var(--ch); }
+  .chan .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ch); }
+  .fmt {
+    display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600;
+    background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px;
+    margin-bottom: 8px; color: var(--ink-soft);
+  }
+  .card .title { font-size: 13.5px; font-weight: 600; line-height: 1.35; color: var(--ink); margin: 0 0 6px; }
+  .card .src { font-size: 11.5px; color: var(--ink-faint); line-height: 1.4; }
+  .card .cta { display: block; margin-top: 7px; font-size: 11px; color: var(--brand-teal); font-weight: 600; }
+  .card.opt { background: transparent; box-shadow: none; border-style: dashed; }
+
+  /* ---------- legend ---------- */
+  .legend { margin-top: 34px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .legend h3 {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--ink-faint); font-weight: 600; margin: 0 0 14px;
+  }
+  .legend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px 20px; }
+  .leg { display: flex; gap: 10px; align-items: baseline; font-size: 13px; }
+  .leg .em { font-size: 15px; line-height: 1; }
+  .leg b { font-weight: 600; }
+  .leg span { color: var(--ink-faint); }
+
+  .reuse {
+    margin-top: 30px; background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 18px clamp(16px,3vw,24px); font-size: 13.5px; color: var(--ink-soft);
+  }
+  .reuse b { color: var(--ink); }
+  footer { margin-top: 40px; font-size: 12.5px; color: var(--ink-faint); text-align: center; }
+
+  @media (max-width: 640px) {
+    .board { min-width: 760px; }
+    .freq .pill span { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+    .card:hover { transform: none; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Redaktionsplan · Muster-Woche · fokussierte Frequenz</p>
+    <h1>Eine Woche, ein Thema — <span class="accent">alle Kanäle gleichzeitig</span></h1>
+    <p class="lede">Instagram, Facebook, LinkedIn und YouTube spielen dieselbe Kernidee — jeweils im passenden Format. Aus einer Idee entstehen 11 Postings, die die Botschaft über die Woche vertiefen: Aufmerksamkeit → Aha → Anwenden → Angebot.</p>
+
+    <div class="freq" aria-label="Frequenz pro Kanal">
+      <span class="pill"><span class="dot" style="background:var(--ch-ig)"></span><b>4×</b> <span>Instagram</span></span>
+      <span class="pill"><span class="dot" style="background:var(--ch-fb)"></span><b>3×</b> <span>Facebook</span></span>
+      <span class="pill"><span class="dot" style="background:var(--ch-li)"></span><b>3×</b> <span>LinkedIn</span></span>
+      <span class="pill"><span class="dot" style="background:var(--ch-yt)"></span><b>1×</b> <span>YouTube (+ Short)</span></span>
+    </div>
+  </header>
+
+  <div class="theme-card">
+    <div class="top">
+      <p class="k">Wochenthema · Serie Mentale Selbstverteidigung</p>
+      <h2>Framing — Wie ein einziges Wort deine Meinung macht</h2>
+    </div>
+    <div class="mats">
+      <span class="mat">🎬 Reel-Skript <code>docs/skripte/reels/mentale-selbstverteidigung.md</code></span>
+      <span class="mat">📝 Blog <code>/wissen/blog/framing-…</code></span>
+      <span class="mat">📚 Vertiefung <code>/mitglieder/wissen/framing</code></span>
+      <span class="mat">💬 Zitate <code>docs/marketing/zitate/</code></span>
+      <span class="mat">🎯 Funnel <code>/#ebook · /mitglieder</code></span>
+    </div>
+  </div>
+
+  <div class="controls">
+    <span class="label">Kanal filtern</span>
+    <button class="filter" data-ch="all" aria-pressed="true">Alle</button>
+    <button class="filter" data-ch="ig" aria-pressed="false"><span class="dot" style="background:var(--ch-ig)"></span>Instagram</button>
+    <button class="filter" data-ch="fb" aria-pressed="false"><span class="dot" style="background:var(--ch-fb)"></span>Facebook</button>
+    <button class="filter" data-ch="li" aria-pressed="false"><span class="dot" style="background:var(--ch-li)"></span>LinkedIn</button>
+    <button class="filter" data-ch="yt" aria-pressed="false"><span class="dot" style="background:var(--ch-yt)"></span>YouTube</button>
+    <span class="spacer"></span>
+    <button id="themeToggle" aria-label="Farbschema wechseln">◐ Theme</button>
+  </div>
+
+  <div class="board-scroll">
+    <div class="board" id="board"></div>
+  </div>
+
+  <section class="legend">
+    <h3>Format-Legende</h3>
+    <div class="legend-grid">
+      <div class="leg"><span class="em">🎬</span><div><b>Reel</b> · <span>Kurzvideo 9:16, Reichweite & Hook</span></div></div>
+      <div class="leg"><span class="em">🖼️</span><div><b>Carousel</b> · <span>Feed-Beitrag, mehrere Slides, speicherbar</span></div></div>
+      <div class="leg"><span class="em">📝</span><div><b>Beitrag</b> · <span>Text-/Bild-Post, Diskussion & Blog-Verweis</span></div></div>
+      <div class="leg"><span class="em">📚</span><div><b>Story</b> · <span>Interaktion: Umfrage, Quiz, Mini-Übung</span></div></div>
+      <div class="leg"><span class="em">▶️</span><div><b>Video</b> · <span>YouTube-Langform, Tiefe & Autorität</span></div></div>
+      <div class="leg"><span class="em">⚡</span><div><b>Short</b> · <span>YouTube-Short, Reel-Zweitverwertung</span></div></div>
+      <div class="leg"><span class="em">🎯</span><div><b>Pitch</b> · <span>Soft-CTA: E-Book / Mitgliedschaft</span></div></div>
+      <div class="leg"><span class="em">💬</span><div><b>Zitat/Studie</b> · <span>Beweis, teilbar, Ruhepunkt</span></div></div>
+    </div>
+  </section>
+
+  <div class="reuse">
+    <b>So wiederholst du das Muster:</b> Die Tagesstruktur bleibt gleich, nur das Wochenthema wechselt. Fertig im Backlog: Propaganda · Filterblase/Algorithmen · Wiederholung = Wahrheit · Reizüberflutung · Werbung &amp; Mangel · Gruppendruck · Autoritätshörigkeit — je mit Reel, Blog, Vertiefung und Zitaten aus <code>src/lib/reels.ts</code> &amp; <code>src/lib/deep-dives.ts</code>.
+  </div>
+
+  <footer>Erstellt aus vorhandenem Projekt-Material · Werde Meister deiner Gedanken</footer>
+</div>
+
+<script>
+  const CH = {
+    ig: { name: "Instagram", v: "var(--ch-ig)" },
+    fb: { name: "Facebook",  v: "var(--ch-fb)" },
+    li: { name: "LinkedIn",  v: "var(--ch-li)" },
+    yt: { name: "YouTube",   v: "var(--ch-yt)" },
+  };
+
+  const DAYS = [
+    { wd: "Montag",     n: "Aufmerksamkeit", rest: false, posts: [
+      { t: "18:00", ch: "ig", fmt: "🎬 Reel",    title: "„Framing – Ein Wort ändert alles.“ Investition vs. Ausgabe – zwei Gefühle.", src: "Reel-Skript Selbstverteidigung", cta: "Folgen · Speichern" },
+      { t: "19:00", ch: "fb", fmt: "🎬 Reel",    title: "Gleiches Reel als Cross-Post + 2–3 Sätze Kontext.", src: "s. IG", cta: "Kommentar-Frage" },
+    ]},
+    { wd: "Dienstag",   n: "Aha", rest: false, posts: [
+      { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Reform oder Kürzung? Dasselbe Gesetz – zwei Urteile.“ Berufsbezug: Meetings & Verhandlungen.", src: "Blog-Kernidee", cta: "Diskussion" },
+      { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„5 Framing-Tricks, die du täglich siehst“ — Cover → 5 Beispiele → Recap → CTA.", src: "docs/carousels/marketing-serien.mjs", cta: "Speichern & Teilen" },
+    ]},
+    { wd: "Mittwoch",   n: "Tiefe", rest: false, posts: [
+      { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss + Link „Framing: Wie ein Wort deine Meinung macht“.", src: "Blog framing-…", cta: "Blog-Klick" },
+      { t: "09:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post: „Der Rahmen entscheidet – bevor du nachdenkst.“", src: "Carousel-Slides", cta: "Website" },
+      { t: "17:00", ch: "yt", fmt: "▶️ Video",    title: "Hauptvideo (6–8 min): „Framing erklärt – so lenkt Sprache dein Urteil.“", src: "Blog + Vertiefung framing", cta: "Abo · E-Book in Beschreibung" },
+      { t: "17:30", ch: "yt", fmt: "⚡ Short",     title: "Reel als Short zweitverwertet, verlinkt aufs Hauptvideo.", src: "Reel (Mo)", cta: "Zum Hauptvideo" },
+    ]},
+    { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+      { t: "19:00", ch: "ig", fmt: "📚 Story", title: "3-teilig: Umfrage („Ausgabe“ oder „Investition“?) → Auflösung → Mini-Übung „Der innere Beobachter“.", src: "src/lib/practices.ts", cta: "Antwort-Sticker · Blog-Link" },
+    ]},
+    { wd: "Freitag",    n: "Angebot", rest: false, posts: [
+      { t: "07:30", ch: "li", fmt: "🎯 Pitch", title: "„Wenn dich Sprache lenkt, kannst du das trainieren.“ Soft-Pitch E-Book „Die 7 Stufen kompakt“.", src: "Funnel /#ebook", cta: "E-Book laden" },
+      { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "Zitatkarte zum Thema + Story-Verweis auf E-Book / Mitgliederbereich.", src: "docs/marketing/zitate/ · /mitglieder", cta: "Link in Bio" },
+      { t: "17:00", ch: "fb", fmt: "💬 Zitat/Studie", title: "Community-Frage: „Welcher Begriff wird bei euch beschönigend benutzt?“ + Zitatkarte.", src: "docs/marketing/zitate/", cta: "Kommentare" },
+    ]},
+    { wd: "Samstag",    n: "Ruhetag", rest: true, posts: [
+      { t: "opt.", ch: "ig", fmt: "📚 Story", title: "Optional: Wochen-Recap-Story „Das war Framing-Woche“ + Ausblick.", src: "—", cta: "Bindung", opt: true },
+    ]},
+    { wd: "Sonntag",    n: "Ruhetag", rest: true, posts: [
+      { t: "opt.", ch: "fb", fmt: "📝 Beitrag", title: "Optional: leiser Reflexions-Post / Zitat als Wochenausklang.", src: "docs/marketing/zitate/", cta: "Nähe", opt: true },
+    ]},
+  ];
+
+  const board = document.getElementById("board");
+  DAYS.forEach(day => {
+    const col = document.createElement("div");
+    col.className = "day" + (day.rest ? " rest" : "");
+    col.innerHTML = `<div class="day-head"><span class="wd">${day.wd}</span><span class="n">${day.n}</span></div>`;
+    day.posts.forEach(p => {
+      const c = document.createElement("article");
+      c.className = "card" + (p.opt ? " opt" : "");
+      c.dataset.ch = p.ch;
+      c.style.setProperty("--ch", CH[p.ch].v);
+      c.innerHTML = `
+        <div class="row1">
+          <span class="time">${p.t}</span>
+          <span class="chan"><span class="dot"></span>${CH[p.ch].name}</span>
+        </div>
+        <span class="fmt">${p.fmt}</span>
+        <p class="title">${p.title}</p>
+        <div class="src">${p.src}</div>
+        <span class="cta">→ ${p.cta}</span>`;
+      col.appendChild(c);
+    });
+    board.appendChild(col);
+  });
+
+  // channel filter
+  const filters = document.querySelectorAll(".filter");
+  filters.forEach(btn => btn.addEventListener("click", () => {
+    const ch = btn.dataset.ch;
+    filters.forEach(b => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
+    document.querySelectorAll(".card").forEach(card => {
+      card.classList.toggle("dim", ch !== "all" && card.dataset.ch !== ch);
+    });
+  }));
+
+  // theme toggle
+  const root = document.documentElement;
+  const tBtn = document.getElementById("themeToggle");
+  function current() {
+    if (root.dataset.theme) return root.dataset.theme;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  try {
+    const saved = localStorage.getItem("wmdg-plan-theme");
+    if (saved) root.dataset.theme = saved;
+  } catch (e) {}
+  tBtn.addEventListener("click", () => {
+    const next = current() === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("wmdg-plan-theme", next); } catch (e) {}
+  });
+</script>
