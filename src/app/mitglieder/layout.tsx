@@ -52,7 +52,9 @@ export default async function MembersLayout({
 
   return (
     <>
-      {children}
+      {/* Kühler Blau-Weiß-Grund (mist-50) statt warmem Papier – bringt einen
+          Hauch Marken-Blau in die ganze Fläche, hinter den weißen Karten. */}
+      <div className="min-h-screen bg-mist-50">{children}</div>
       {begleiterVerfuegbar && <BegleiterLauncher />}
     </>
   );
