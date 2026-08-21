@@ -1,9 +1,11 @@
 import { HERO_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ConsciousnessTest } from "@/components/sections/ConsciousnessTest";
 import { site } from "@/lib/site";
+import heroBild from "../../../public/hero-bewusstseinstest.webp";
 
 export const metadata: Metadata = {
   title: "Bewusstseinstest – Wo findest du dich gerade?",
@@ -17,12 +19,22 @@ export default function BewusstseinstestPage() {
     <>
       {/* Kopf */}
       <section className="grain relative overflow-hidden bg-navy-900 py-20 text-cream sm:py-24">
+        {/* Hintergrundbild – Kompass & Treppe ins Licht, bewusst dezent */}
+        <Image
+          src={heroBild}
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="pointer-events-none absolute inset-0 -z-20 object-cover object-center opacity-30"
+        />
+        {/* Navy-Schleier für Lesbarkeit + Glow (hält das Bild zurückhaltend) */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
           style={{
-            background:
-              HERO_GLOW,
+            background: `${HERO_GLOW}, linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 90%, transparent), color-mix(in oklab, var(--color-navy-900) 60%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 82%, transparent))`,
           }}
         />
         <Container size="narrow" className="flex flex-col items-center gap-5 text-center">
