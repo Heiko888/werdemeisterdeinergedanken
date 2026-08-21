@@ -27,17 +27,17 @@ export default function BewusstseinstestPage() {
           fill
           priority
           sizes="100vw"
-          className="pointer-events-none absolute inset-0 -z-20 object-cover object-center opacity-30"
+          className="pointer-events-none absolute inset-0 z-0 object-cover object-center opacity-55"
         />
         {/* Navy-Schleier für Lesbarkeit + Glow (hält das Bild zurückhaltend) */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
+          className="pointer-events-none absolute inset-0 z-0"
           style={{
-            background: `${HERO_GLOW}, linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 90%, transparent), color-mix(in oklab, var(--color-navy-900) 60%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 82%, transparent))`,
+            background: `${HERO_GLOW}, linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 80%, transparent), color-mix(in oklab, var(--color-navy-900) 45%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 72%, transparent))`,
           }}
         />
-        <Container size="narrow" className="flex flex-col items-center gap-5 text-center">
+        <Container size="narrow" className="relative z-10 flex flex-col items-center gap-5 text-center">
           <Eyebrow>Bewusstseinstest</Eyebrow>
           <h1 className="text-[1.9rem] font-medium leading-[1.1] text-cream sm:[hyphens:none] sm:[overflow-wrap:normal] sm:text-5xl">
             Wo findest du dich <em className="accent">gerade</em>?
