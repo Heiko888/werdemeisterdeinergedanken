@@ -1,4 +1,3 @@
-import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -7,6 +6,7 @@ import { ArrowRight, Play } from "@/components/ui/Icon";
 import { practices, getPractice } from "@/lib/practices";
 import { stages } from "@/lib/content";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
+import { LessonHero } from "@/components/members/LessonHero";
 import { site } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -41,34 +41,14 @@ export default async function PracticePage({
   return (
     <>
       {/* Kopf */}
-      <section className="member-hero overflow-hidden py-14 sm:py-16">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
-          style={{
-            background:
-              APP_GLOW,
-          }}
-        />
-        <Container size="narrow" className="flex flex-col items-start gap-4">
-          <Link
-            href="/mitglieder"
-            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
-          >
-            <ArrowRight className="rotate-180" />
-            Mein Bereich
-          </Link>
-          <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-            Praxis · {practice.category}
-          </span>
-          <h1 className="text-[2rem] font-medium leading-[1.1] text-ink sm:text-4xl md:text-5xl">
-            {practice.title}
-          </h1>
-          <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink-mid backdrop-blur-sm">
-            {practice.duration}
-          </span>
-        </Container>
-      </section>
+      <LessonHero
+        eyebrow={`Praxis · ${practice.category}`}
+        title={practice.title}
+      >
+        <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink-mid backdrop-blur-sm">
+          {practice.duration}
+        </span>
+      </LessonHero>
 
       {/* Inhalt */}
       <section className="py-14 sm:py-20">

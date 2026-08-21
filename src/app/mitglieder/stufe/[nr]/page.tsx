@@ -1,4 +1,3 @@
-import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -11,6 +10,7 @@ import { deepDivesForStage } from "@/lib/deep-dives";
 import { StageCompleteToggle } from "@/components/members/StageCompleteToggle";
 import { JournalReflection } from "@/components/members/JournalReflection";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
+import { LessonHero } from "@/components/members/LessonHero";
 import { site } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -55,39 +55,12 @@ export default async function StagePage({
   return (
     <>
       {/* Kopf */}
-      <section className="member-hero overflow-hidden py-14 sm:py-16">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
-          style={{
-            background:
-              APP_GLOW,
-          }}
-        />
-        <Container size="narrow" className="flex flex-col items-start gap-4">
-          <Link
-            href="/mitglieder"
-            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
-          >
-            <ArrowRight className="rotate-180" />
-            Mein Bereich
-          </Link>
-          <div className="flex items-baseline gap-4">
-            <span className="font-display text-4xl italic text-accent sm:text-5xl">
-              {stage.number}
-            </span>
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
-              Stufe {idx + 1} von {stages.length}
-            </span>
-          </div>
-          <h1 className="text-[2rem] font-medium leading-[1.1] text-ink sm:text-4xl md:text-5xl">
-            {stage.title}
-          </h1>
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent">
-            {stage.subtitle}
-          </p>
-        </Container>
-      </section>
+      <LessonHero
+        eyebrow={`Die ${stages.length} Stufen · Stufe ${stage.number}`}
+        title={stage.title}
+        subtitle={stage.subtitle}
+        watermark={stage.number}
+      />
 
       {/* Inhalt */}
       <section className="py-14 sm:py-20">
