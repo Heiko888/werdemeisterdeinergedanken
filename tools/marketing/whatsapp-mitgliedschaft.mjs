@@ -242,6 +242,17 @@ for (const F of FORMATS) {
   const overlayDir = join(dir, "overlay");
   mkdirSync(dir, { recursive: true });
   mkdirSync(overlayDir, { recursive: true });
+  // Marken-Hintergrund (Ebene 1 in Canva) – nur bg + Sterne, ohne Text/Logo.
+  // Stapel in Canva: _hintergrund.png → (eigenes Foto) → overlay/NN.png.
+  {
+    const pg = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 2 });
+    const tmp = join(HERE, `.wbg-${F.key}.html`);
+    writeFileSync(tmp, `<!doctype html><html><head><meta charset="utf8"><style>${cssFor(F)}</style></head><body><div class="bg"></div><div class="stars"></div></body></html>`);
+    await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+    await pg.screenshot({ path: join(overlayDir, "_hintergrund.png") });
+    await pg.close();
+    rmSync(tmp, { force: true });
+  }
   for (let i = 0; i < SLIDES.length; i++) {
     const name = `${String(i + 1).padStart(2, "0")}.png`;
     // 1) Fertige Folie mit Marken-Hintergrund.
