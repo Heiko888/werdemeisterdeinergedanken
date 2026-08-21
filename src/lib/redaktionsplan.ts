@@ -109,6 +109,8 @@ function mkWeekA(s: SpecA): PlanPost[] {
 
 type SpecB = {
   next?: string;
+  /** Bezeichnung der Langform (Standard „Blog"); z. B. „Vertiefung", wenn kein Blog existiert. */
+  langform?: string;
   reelHook: string;
   reelSrc: string;
   liBeitrag: string;
@@ -130,12 +132,14 @@ type SpecB = {
 
 /** Block B & C (Praxis/Wissenschaft, Mentale Selbstverteidigung) – ohne Stufen-Bezug. */
 function mkWeekB(s: SpecB): PlanPost[] {
+  const lf = s.langform ?? "Blog";
+  const istBlog = lf === "Blog";
   return [
     { wochentag: 1, uhrzeit: "18:00", kanal: "ig", format: "🎬 Reel", titel: `„${s.reelHook}“`, quelle: s.reelSrc, cta: "Folgen · Speichern" },
     { wochentag: 1, uhrzeit: "19:00", kanal: "fb", format: "🎬 Reel", titel: "Gleiches Reel als Cross-Post + 2–3 Sätze Kontext.", quelle: "s. IG", cta: "Kommentar-Frage" },
-    { wochentag: 2, uhrzeit: "07:30", kanal: "li", format: "📝 Beitrag", titel: `„${s.liBeitrag}“`, quelle: `Blog ${s.blogSlug}`, cta: "Diskussion" },
+    { wochentag: 2, uhrzeit: "07:30", kanal: "li", format: "📝 Beitrag", titel: `„${s.liBeitrag}“`, quelle: `${lf} ${s.blogSlug}`, cta: "Diskussion" },
     { wochentag: 2, uhrzeit: "12:30", kanal: "ig", format: "🖼️ Carousel", titel: `„${s.carousel}“ — Cover → Kernidee → Aha → CTA.`, quelle: s.carouselSrc, cta: "Speichern & Teilen" },
-    { wochentag: 3, uhrzeit: "08:00", kanal: "fb", format: "📝 Beitrag", titel: `Blog-Anriss + Link „${s.blogTitle}“.`, quelle: `Blog ${s.blogSlug}`, cta: "Blog-Klick" },
+    { wochentag: 3, uhrzeit: "08:00", kanal: "fb", format: "📝 Beitrag", titel: `${istBlog ? "Blog-Anriss + Link" : "Teaser + Link zur Vertiefung"} „${s.blogTitle}“.`, quelle: `${lf} ${s.blogSlug}`, cta: istBlog ? "Blog-Klick" : "Zur Vertiefung" },
     { wochentag: 3, uhrzeit: "09:00", kanal: "li", format: "🖼️ Carousel", titel: `Document-Post: „${s.carousel}“ (sachlicher Ton).`, quelle: s.carouselSrc, cta: "Website" },
     { wochentag: 3, uhrzeit: "17:00", kanal: "yt", format: "▶️ Video", titel: `Hauptvideo (6–8 min): „${s.video}“`, quelle: s.videoSrc, cta: "Abo · E-Book in Beschreibung" },
     { wochentag: 3, uhrzeit: "17:30", kanal: "yt", format: "⚡ Short", titel: "Reel als Short zweitverwertet, verlinkt aufs Hauptvideo.", quelle: "Reel (Mo)", cta: "Zum Hauptvideo" },
@@ -392,6 +396,82 @@ export const DEFAULT_PLAN: PlanWoche[] = [
       pitch: "Meinung von Identität trennen – der letzte Schritt zur Freiheit.", pitchHref: "/mitglieder/wissen/identitaet-und-meinung",
       community: "Welche Meinung würdest du ungern aufgeben?",
       zitate: "docs/marketing/zitate/", recap: "Identitäts-Woche" }) },
+
+  // ---- Block C · Mentale Selbstverteidigung (Fortsetzung) ---------------
+  // Diese Themen haben (noch) keinen dedizierten Blog – die „Langform" ist die
+  // Vertiefung im Mitgliederbereich; FB/LI verlinken sie als Teaser/Pitch.
+  { woche: 21, block: "C", serie: "Mentale Selbstverteidigung", thema: "Sprache & Etiketten", titel: "Sprache & Etiketten — Wie ein Etikett das Denken beendet",
+    posts: mkWeekB({ next: "Woche 22 · Medien-Agenda", langform: "Vertiefung",
+      reelHook: "Ein Wort beendet jede Debatte.", reelSrc: "Reel-Serie selbstverteidigung",
+      liBeitrag: "Ein Etikett beendet jedes Argument – im Team gefährlich.",
+      carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
+      blogTitle: "Sprache & Etiketten: Wie ein Etikett das Denken beendet", blogSlug: "sprache-und-etiketten",
+      video: "Sprache & Etiketten: Wie ein Wort jede Debatte beendet.", videoSrc: "Vertiefung sprache-und-etiketten + Reel-Serie selbstverteidigung",
+      practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
+      poll: "Welches Etikett beendet bei euch jede Diskussion?",
+      pitch: "Etiketten erkennen, bevor sie das Denken ersetzen.", pitchHref: "/mitglieder/wissen/sprache-und-etiketten",
+      community: "Welches Label wird bei euch als Totschlagargument benutzt?",
+      zitate: "docs/marketing/zitate/", recap: "Sprache-Woche" }) },
+  { woche: 22, block: "C", serie: "Mentale Selbstverteidigung", thema: "Medien-Agenda", titel: "Medien-Agenda — Nicht was du denkst, sondern worüber",
+    posts: mkWeekB({ next: "Woche 23 · Angst-Steuerung", langform: "Vertiefung",
+      reelHook: "Nicht WAS – sondern WORÜBER.", reelSrc: "Reel-Serie selbstverteidigung",
+      liBeitrag: "Nicht die Meinung wird gesteuert, sondern das Thema – auch in Meetings.",
+      carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
+      blogTitle: "Medien-Agenda: Nicht was du denkst, sondern worüber", blogSlug: "medien-agenda",
+      video: "Medien-Agenda: Wie bestimmt wird, worüber du nachdenkst.", videoSrc: "Vertiefung medien-agenda + Reel-Serie selbstverteidigung",
+      practice: "autopilot-check", practiceName: "Der Autopilot-Check",
+      poll: "Worüber denkst du gerade nach – wer hat das gesetzt?",
+      pitch: "Die Agenda hinter den Themen sehen.", pitchHref: "/mitglieder/wissen/medien-agenda",
+      community: "Welches Thema war zuletzt überall – und warum?",
+      zitate: "docs/marketing/zitate/", recap: "Agenda-Woche" }) },
+  { woche: 23, block: "C", serie: "Mentale Selbstverteidigung", thema: "Angst-Steuerung", titel: "Angst-Steuerung — Warum Angst dich lenkbar macht",
+    posts: mkWeekB({ next: "Woche 24 · Ablenkung", langform: "Vertiefung",
+      reelHook: "Angst macht dich lenkbar.", reelSrc: "Reel-Serie selbstverteidigung",
+      liBeitrag: "Angst verengt den Blick – eine schlechte Basis für Entscheidungen.",
+      carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
+      blogTitle: "Angst-Steuerung: Warum Angst dich lenkbar macht", blogSlug: "angst-steuerung",
+      video: "Angst-Steuerung: Wie Angst dein Urteil verengt.", videoSrc: "Vertiefung angst-steuerung + Reel-Serie selbstverteidigung",
+      practice: "verlaengertes-ausatmen", practiceName: "Verlängertes Ausatmen",
+      poll: "Woran merkst du, dass Angst gerade entscheidet?",
+      pitch: "Aus dem Angst-Modus zurückfinden – das ist trainierbar.", pitchHref: "/mitglieder/wissen/angst-steuerung",
+      community: "Wo wurde zuletzt mit deiner Angst gearbeitet?",
+      zitate: "docs/marketing/zitate/", recap: "Angst-Woche" }) },
+  { woche: 24, block: "C", serie: "Mentale Selbstverteidigung", thema: "Ablenkung", titel: "Ablenkung — Keine Lüge, nur Lärm",
+    posts: mkWeekB({ next: "Woche 25 · Normalisierung", langform: "Vertiefung",
+      reelHook: "Keine Lüge. Nur Lärm.", reelSrc: "Reel-Serie selbstverteidigung",
+      liBeitrag: "Nicht Desinformation lähmt, sondern Dauerlärm – auch im Postfach.",
+      carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
+      blogTitle: "Ablenkung: Keine Lüge – nur Lärm", blogSlug: "ablenkung",
+      video: "Ablenkung: Wie Lärm wichtiger wirkt als Wahrheit.", videoSrc: "Vertiefung ablenkung + Reel-Serie selbstverteidigung",
+      practice: "autopilot-check", practiceName: "Der Autopilot-Check",
+      poll: "Was lenkt dich gerade am meisten ab?",
+      pitch: "Fokus zurückgewinnen im Dauerlärm.", pitchHref: "/mitglieder/wissen/ablenkung",
+      community: "Was raubt dir am meisten Aufmerksamkeit?",
+      zitate: "docs/marketing/zitate/", recap: "Ablenkungs-Woche" }) },
+  { woche: 25, block: "C", serie: "Mentale Selbstverteidigung", thema: "Normalisierung", titel: "Normalisierung — Warum „war schon immer so“ kein Argument ist",
+    posts: mkWeekB({ next: "Woche 26 · Bildmacht", langform: "Vertiefung",
+      reelHook: "„War doch schon immer so?“", reelSrc: "Reel-Serie selbstverteidigung",
+      liBeitrag: "„War schon immer so“ ist kein Argument – nur Gewöhnung.",
+      carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
+      blogTitle: "Normalisierung: Warum „war schon immer so“ kein Argument ist", blogSlug: "normalisierung",
+      video: "Normalisierung: Wie das Unnormale normal wird.", videoSrc: "Vertiefung normalisierung + Reel-Serie selbstverteidigung",
+      practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
+      poll: "Was hast du zuletzt als „normal“ akzeptiert?",
+      pitch: "Schleichende Normalisierung bemerken.", pitchHref: "/mitglieder/wissen/normalisierung",
+      community: "Was wurde bei euch normal, was es nicht sein sollte?",
+      zitate: "docs/marketing/zitate/", recap: "Normalisierungs-Woche" }) },
+  { woche: 26, block: "C", serie: "Mentale Selbstverteidigung", thema: "Bildmacht", titel: "Bildmacht — Warum ein Bild kein Beweis ist",
+    posts: mkWeekB({ next: "einen neuen Themen-Zyklus", langform: "Vertiefung",
+      reelHook: "Ein Bild ist kein Beweis.", reelSrc: "Reel-Serie selbstverteidigung",
+      liBeitrag: "Ein Bild überzeugt schneller als Fakten – Vorsicht in Präsentationen.",
+      carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
+      blogTitle: "Bildmacht: Warum ein Bild kein Beweis ist", blogSlug: "bildmacht",
+      video: "Bildmacht: Warum ein Bild kein Beweis ist.", videoSrc: "Vertiefung bildmacht + Reel-Serie selbstverteidigung",
+      practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
+      poll: "Welches Bild hat dich zuletzt überzeugt – zu Recht?",
+      pitch: "Bilder lesen statt ihnen zu glauben.", pitchHref: "/mitglieder/wissen/bildmacht",
+      community: "Welches Bild ging viral und war irreführend?",
+      zitate: "docs/marketing/zitate/", recap: "Bildmacht-Woche" }) },
 ];
 
 /** Wochen-Metadaten (ohne Posts) – für Umschalter, Banner, Filter. */
