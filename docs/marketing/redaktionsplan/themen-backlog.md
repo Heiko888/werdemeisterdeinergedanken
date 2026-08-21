@@ -58,16 +58,16 @@ Community die Grundlagen (Block A) kennt.
 
 | Thema | Status | Reel-Hook | Blog-Slug | Deep-Dive |
 |---|---|---|---|---|
-| **Framing** | offen | „Ein Wort ändert alles" | `framing-wie-ein-wort-deine-meinung-macht` | `framing` |
-| **Filterblase / Algorithmen** | offen | „Dein Feed ≠ die Welt" | `filterblase-warum-dein-feed-nicht-die-welt-ist` | `algorithmen` |
-| **Wiederholung = Wahrheit?** | offen | „Oft gehört = wahr?" | `warum-oft-gehoert-sich-wie-wahr-anfuehlt` | `wiederholung-wahrheit` |
-| **Reizüberflutung** | offen | „Dein Gehirn im Daueralarm" | `reizueberflutung-warum-dein-gehirn-nicht-abschaltet` | `reizueberflutung` |
-| **Werbung & Mangel** | offen | „Sie verkauft dir den Mangel" | `werbung-und-der-kuenstliche-mangel` | `werbung-und-mangel` |
-| **Gruppendruck** | offen | „Laut ≠ Mehrheit" | `gruppendruck-und-die-schweigespirale` | `gruppendruck` |
-| **Autoritätshörigkeit** | offen | „Titel ≠ Wahrheit" | `wann-vertrauen-zu-blindem-gehorsam-wird` | `autoritaetshoerigkeit` |
-| **Propaganda** | offen | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
-| **Kognitive Dissonanz** | offen | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
-| **Identität & Meinung** | offen | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
+| **Framing** | geplant | „Ein Wort ändert alles" | `framing-wie-ein-wort-deine-meinung-macht` | `framing` |
+| **Filterblase / Algorithmen** | geplant | „Dein Feed ≠ die Welt" | `filterblase-warum-dein-feed-nicht-die-welt-ist` | `algorithmen` |
+| **Wiederholung = Wahrheit?** | geplant | „Oft gehört = wahr?" | `warum-oft-gehoert-sich-wie-wahr-anfuehlt` | `wiederholung-wahrheit` |
+| **Reizüberflutung** | geplant | „Dein Gehirn im Daueralarm" | `reizueberflutung-warum-dein-gehirn-nicht-abschaltet` | `reizueberflutung` |
+| **Werbung & Mangel** | geplant | „Sie verkauft dir den Mangel" | `werbung-und-der-kuenstliche-mangel` | `werbung-und-mangel` |
+| **Gruppendruck** | geplant | „Laut ≠ Mehrheit" | `gruppendruck-und-die-schweigespirale` | `gruppendruck` |
+| **Autoritätshörigkeit** | geplant | „Titel ≠ Wahrheit" | `wann-vertrauen-zu-blindem-gehorsam-wird` | `autoritaetshoerigkeit` |
+| **Propaganda** | geplant | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
+| **Kognitive Dissonanz** | geplant | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
+| **Identität & Meinung** | geplant | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
 
 > Weitere Deep-Dives der Serie (Blog ggf. ergänzen): `sprache-und-etiketten` ·
 > `medien-agenda` · `angst-steuerung` · `ablenkung` · `normalisierung` · `bildmacht`.

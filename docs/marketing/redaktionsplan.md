@@ -157,6 +157,27 @@ Gleiche Tagesstruktur, aber ruhigerer, stärker praxis-/studienbasierter Ton. Ke
 
 ---
 
+## Woche 11–20 · Block C — Mentale Selbstverteidigung (vertiefend)
+
+Gleiche Tagesstruktur. Reels aus Serie *selbstverteidigung* (`docs/skripte/reels/mentale-selbstverteidigung.md`), Carousel „Wer denkt hier eigentlich?" (`wer-denkt-hier`), Pitch-Ziel jeweils die Vertiefung `/mitglieder/wissen/<slug>`. Erst hier, weil die Community jetzt die Grundlagen (Block A/B) kennt.
+
+| Woche | Thema | Reel-Hook | Blog-Slug | Deep-Dive / Pitch |
+|---|---|---|---|---|
+| 11 | **Framing** | „Ein Wort ändert alles" | `framing-wie-ein-wort-deine-meinung-macht` | `framing` |
+| 12 | **Filterblase / Algorithmen** | „Dein Feed ≠ die Welt" | `filterblase-warum-dein-feed-nicht-die-welt-ist` | `algorithmen` |
+| 13 | **Wiederholung = Wahrheit?** | „Oft gehört = wahr?" | `warum-oft-gehoert-sich-wie-wahr-anfuehlt` | `wiederholung-wahrheit` |
+| 14 | **Reizüberflutung** | „Dein Gehirn im Daueralarm" | `reizueberflutung-warum-dein-gehirn-nicht-abschaltet` | `reizueberflutung` |
+| 15 | **Werbung & Mangel** | „Sie verkauft dir den Mangel" | `werbung-und-der-kuenstliche-mangel` | `werbung-und-mangel` |
+| 16 | **Gruppendruck** | „Laut ≠ Mehrheit" | `gruppendruck-und-die-schweigespirale` | `gruppendruck` |
+| 17 | **Autoritätshörigkeit** | „Titel ≠ Wahrheit" | `wann-vertrauen-zu-blindem-gehorsam-wird` | `autoritaetshoerigkeit` |
+| 18 | **Propaganda** | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
+| 19 | **Kognitive Dissonanz** | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
+| 20 | **Identität & Meinung** | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
+
+Story-Übung je Woche meist „Der innere Beobachter" (`innerer-beobachter`) bzw. „Der Autopilot-Check" (`autopilot-check`). LinkedIn-Beiträge mit Berufsbezug (Meetings, Führung, Entscheidungen). Details/Formulierungen: interaktiver Kalender (Woche 11–20).
+
+---
+
 ## Der Fahrplan (empfohlene Reihenfolge)
 
 Die Tagesstruktur bleibt jede Woche gleich – nur das Wochenthema wechselt. Erst
@@ -199,7 +220,8 @@ Inhalte zu erfinden.
 
 ---
 
-*Erstellt aus vorhandenem Projekt-Material. Woche 1–10 sind vollständig geplant
-(Block A · 7 Stufen und Block B · Praxis & Wissenschaft). Nächster Schritt:
-Block C · Mentale Selbstverteidigung (ab Woche 11) mit `/redaktionsplan`
-ausrollen – oder gezielt ein Thema planen, z. B. `/redaktionsplan Framing`.*
+*Erstellt aus vorhandenem Projekt-Material. Woche 1–20 sind vollständig geplant –
+Block A · 7 Stufen (1–7), Block B · Praxis & Wissenschaft (8–10) und Block C ·
+Mentale Selbstverteidigung (11–20). Damit ist rund ein halbes Jahr Content
+kanalübergreifend durchgeplant. Für weitere Themen (z. B. Sprache & Etiketten,
+Medien-Agenda, Angst-Steuerung) oder einen neuen Zyklus: `/redaktionsplan`.*
