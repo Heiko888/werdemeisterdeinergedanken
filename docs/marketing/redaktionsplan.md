@@ -22,7 +22,7 @@ als vertiefender Block (siehe Themen-Backlog).
 |---|---|---|
 | **Reels / Kurzskripte** | `src/lib/reels.ts` · `docs/skripte/reels/` (98 Skripte, 6 Serien) | IG-Reel, YT-Short, FB-Reel |
 | **7 Stufen (Lektionen)** | `/mitglieder/stufe/N` · `content/pdf/stufe-N-lektion.pdf` | Carousel, YT-Video, Pitch-Ziel |
-| **Blog / Langtext** | `src/lib/blog.ts` (25 Artikel) | Blog-Link, LinkedIn-Textbeitrag, YT-Video-Skript |
+| **Blog / Langtext** | `src/lib/blog.ts` (29 Artikel) | Blog-Link, LinkedIn-Textbeitrag, YT-Video-Skript |
 | **Vertiefungen / Deep-Dives** | `src/lib/deep-dives.ts` · `content/pdf/vertiefung-*.pdf` (31) | Carousel, YT-Video, Pitch (Mitgliederbereich) |
 | **Praxis-Übungen** | `src/lib/practices.ts` (15) | Story-Übung, Reel, Mini-Practice-Post |
 | **Zitate / Studien** | `docs/marketing/zitate/` (1x1, 4x5, 9x16) | Zitat-Post, Story, Beweis-/Proof-Post |
@@ -173,19 +173,18 @@ Gleiche Tagesstruktur. Reels aus Serie *selbstverteidigung* (`docs/skripte/reels
 | 18 | **Propaganda** | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
 | 19 | **Kognitive Dissonanz** | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
 | 20 | **Identität & Meinung** | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
-| 21 | **Sprache & Etiketten** | „Ein Wort beendet jede Debatte" | ⚠ kein Blog | `sprache-und-etiketten` |
-| 22 | **Medien-Agenda** | „Nicht WAS – sondern WORÜBER" | ⚠ kein Blog | `medien-agenda` |
-| 23 | **Angst-Steuerung** | „Angst macht dich lenkbar" | ⚠ kein Blog | `angst-steuerung` |
-| 24 | **Ablenkung** | „Keine Lüge. Nur Lärm." | ⚠ kein Blog | `ablenkung` |
-| 25 | **Normalisierung** | „War doch schon immer so?" | ⚠ kein Blog | `normalisierung` |
-| 26 | **Bildmacht** | „Ein Bild ist kein Beweis" | ⚠ kein Blog | `bildmacht` |
+| 21 | **Sprache & Etiketten** | „Ein Wort beendet jede Debatte" | `sprache-und-etiketten-wie-ein-etikett-das-denken-beendet` | `sprache-und-etiketten` |
+| 22 | **Medien-Agenda** | „Nicht WAS – sondern WORÜBER" | `medien-agenda-nicht-was-sondern-worueber` | `medien-agenda` |
+| 23 | **Angst-Steuerung** | „Angst macht dich lenkbar" | `angst-steuerung-warum-angst-dich-lenkbar-macht` | `angst-steuerung` |
+| 24 | **Ablenkung** | „Keine Lüge. Nur Lärm." | `ablenkung-keine-luege-nur-laerm` | `ablenkung` |
+| 25 | **Normalisierung** | „War doch schon immer so?" | `normalisierung-war-doch-schon-immer-so` | `normalisierung` |
+| 26 | **Bildmacht** | „Ein Bild ist kein Beweis" | `bildmacht-ein-bild-ist-kein-beweis` | `bildmacht` |
 
 Story-Übung je Woche meist „Der innere Beobachter" (`innerer-beobachter`) bzw. „Der Autopilot-Check" (`autopilot-check`). LinkedIn-Beiträge mit Berufsbezug (Meetings, Führung, Entscheidungen). Details/Formulierungen: interaktiver Kalender (Woche 11–26).
 
-> **Woche 21–26** haben (noch) keinen dedizierten Blog – die Langform ist die
-> **Vertiefung** im Mitgliederbereich (`/mitglieder/wissen/<slug>`); die FB-/
-> LinkedIn-„Blog"-Posts verlinken sie als Teaser/Pitch. Ein Blog kann später
-> ergänzt und im Cockpit nachgetragen werden.
+> **Woche 21–26** haben jetzt eigene Blogartikel (`src/lib/blog.ts`, Kategorie
+> „Mentale Selbstverteidigung", als geplante Beiträge vordatiert). Die FB-/
+> LinkedIn-Langform-Posts verlinken den Blog, die Vertiefung bleibt das Pitch-Ziel.
 
 ---
 

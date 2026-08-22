@@ -1240,6 +1240,372 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "sprache-und-etiketten-wie-ein-etikett-das-denken-beendet",
+    title: "Sprache & Etiketten: Wie ein Etikett das Denken beendet",
+    excerpt:
+      "„Schwurbler“, „Gutmensch“, „Nestbeschmutzer“ – ein einziges Etikett kann jede Debatte beenden, bevor sie beginnt. Wie Begriffe zu Urteilen werden und wie du dich davon löst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-08-29",
+    dateLabel: "29. August 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Manchmal reicht ein Wort, um ein Gegenüber zum Schweigen zu bringen. Nicht durch ein Argument, sondern durch ein Etikett. Ist ein Mensch erst einmal als „Spinner“, „Ideologe“ oder „Fanatiker“ einsortiert, muss niemand mehr zuhören, was er sagt. Das Etikett hat die Denkarbeit bereits erledigt – und genau das macht es so wirksam und so gefährlich.",
+      },
+      {
+        type: "h2",
+        text: "Ein Etikett ist ein Urteil im Miniformat",
+      },
+      {
+        type: "p",
+        text: "Begriffe sind nie neutral. Ob du jemanden „Freiheitskämpfer“ oder „Aufständischen“ nennst, ob du von „Steuerlast“ oder „Solidarbeitrag“ sprichst – dieselbe Sache, zwei völlig verschiedene Gefühle. Ein Etikett verpackt eine ganze Bewertung in ein einziges Wort. Wer es benutzt, muss nicht mehr begründen; die Wertung reist im Begriff mit.",
+      },
+      {
+        type: "h2",
+        text: "Warum Etiketten das Denken abkürzen",
+      },
+      {
+        type: "p",
+        text: "Unser Gehirn liebt Abkürzungen. Eine Schublade spart Energie: Ist ein Mensch erst einmal einsortiert, müssen wir ihn nicht mehr einzeln prüfen. Das ist im Alltag praktisch – und in Debatten fatal. Denn sobald ein Etikett klebt, hören wir nicht mehr die Aussage, sondern nur noch die Kategorie. Widerspruch wird dann nicht mehr geprüft, sondern dem Label zugeschrieben.",
+      },
+      {
+        type: "quote",
+        text: "Ein Etikett muss nichts beweisen. Es muss nur kleben bleiben.",
+      },
+      {
+        type: "h2",
+        text: "Vom Menschen zur Kategorie",
+      },
+      {
+        type: "p",
+        text: "Die stärkste Wirkung entfalten Etiketten, wenn sie eine Person nicht beschreiben, sondern ersetzen. „Der ist doch nur ein …“ – und schon steht keine Person mehr vor dir, sondern eine Gattung. Alles, was diese Person sagt, wird durch die Brille des Etiketts gelesen. Selbst ein richtiger Gedanke wirkt falsch, wenn er aus dem „falschen“ Mund kommt. Das ist bequem, aber es ist das Gegenteil von Denken.",
+      },
+      {
+        type: "h2",
+        text: "So entschärfst du Etiketten",
+      },
+      {
+        type: "ul",
+        items: [
+          "Trenne die Aussage von der Person: Wäre der Satz auch dann richtig oder falsch, wenn ihn jemand anderes gesagt hätte?",
+          "Frag nach der Definition: Was genau soll das Etikett eigentlich bedeuten – und stimmt das hier konkret?",
+          "Achte auf das Gefühl, das der Begriff auslösen soll. Wut und Verachtung sind selten gute Ratgeber.",
+          "Und die entscheidende Frage: Wird hier ein Argument widerlegt – oder nur ein Mensch abgestempelt?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Sich von Etiketten zu lösen heißt nicht, jede Aussage gutzuheißen. Es heißt, den Menschen wieder vom Wort zu trennen und selbst zu prüfen. Wie du diesen Reflex trainierst, zeigt dir die Vertiefung [„Sprache & Etiketten“](/mitglieder/wissen/sprache-und-etiketten) im Mitgliederbereich; einen kompakten Einstieg gibt dir das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+      },
+    ],
+  },
+  {
+    slug: "medien-agenda-nicht-was-sondern-worueber",
+    title: "Medien-Agenda: Nicht was du denkst, sondern worüber",
+    excerpt:
+      "Die stärkste Beeinflussung schreibt dir keine Meinung vor – sie bestimmt, worüber du überhaupt nachdenkst. Wie Agenda-Setting funktioniert und wie du es durchschaust.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-09-02",
+    dateLabel: "2. September 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Wir glauben, wir bilden uns frei eine Meinung. Doch die wichtigste Weiche wird gestellt, lange bevor wir zu urteilen beginnen: bei der Frage, worüber wir überhaupt nachdenken. Was gar nicht erst auftaucht, kann uns nicht beschäftigen. Wer die Themen setzt, muss uns keine Meinung mehr vorschreiben.",
+      },
+      {
+        type: "h2",
+        text: "Agenda-Setting: die Themen als Hebel",
+      },
+      {
+        type: "p",
+        text: "Der Kommunikationsforscher formulierte es einmal so: Medien sagen uns nicht, was wir denken sollen – aber sehr wohl, worüber. Das nennt man Agenda-Setting. Ein Thema, das täglich auftaucht, erscheint automatisch wichtig. Eines, das fehlt, existiert für die öffentliche Debatte praktisch nicht. Die Auswahl selbst ist die Botschaft.",
+      },
+      {
+        type: "h2",
+        text: "Die Macht der Auswahl",
+      },
+      {
+        type: "p",
+        text: "Jeden Tag passiert unendlich viel. Was davon zur „Nachricht“ wird, ist immer eine Entscheidung – nach Reichweite, Aufregungspotenzial, Interessen. Kein Vorwurf, sondern eine Notwendigkeit: Niemand kann alles zeigen. Aber genau darin liegt der Hebel. Nicht die Lüge lenkt, sondern die Gewichtung. Ein reales Problem kann riesig wirken, weil es überall ist – und ein anderes verschwindet, obwohl es größer wäre.",
+      },
+      {
+        type: "quote",
+        text: "Nicht die Antwort formt deine Meinung, sondern die Frage, die man dir überhaupt stellt.",
+      },
+      {
+        type: "h2",
+        text: "Themen kommen und gehen",
+      },
+      {
+        type: "p",
+        text: "Erinnerst du dich an das Thema, das vor drei Monaten „alles“ war? Meist ist es spurlos verschwunden – nicht, weil es gelöst wurde, sondern weil ein neues nachgerückt ist. Diese Taktung sagt wenig über die Bedeutung der Themen und viel über die Mechanik der Aufmerksamkeit. Wer das bemerkt, liest Schlagzeilen anders.",
+      },
+      {
+        type: "h2",
+        text: "So durchschaust du die Agenda",
+      },
+      {
+        type: "ul",
+        items: [
+          "Frag nicht nur „Was wird gesagt?“, sondern „Worüber wird gerade auffällig viel – und worüber auffällig wenig gesprochen?“",
+          "Wer setzt dieses Thema, und wem nützt es, dass gerade darüber geredet wird?",
+          "Ist das Thema wirklich neu wichtig – oder nur neu laut?",
+          "Welche Frage würdest du stellen, wenn niemand sie dir vorgeben würde?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Die Agenda zu durchschauen macht dich nicht zum Zyniker, sondern zum aufmerksameren Zeitgenossen. Du entscheidest wieder mit, was deine Aufmerksamkeit verdient. Tiefer geht die Vertiefung [„Medien-Agenda“](/mitglieder/wissen/medien-agenda) im Mitgliederbereich; den Überblick über den ganzen Weg gibt dir das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+      },
+    ],
+  },
+  {
+    slug: "angst-steuerung-warum-angst-dich-lenkbar-macht",
+    title: "Angst-Steuerung: Warum Angst dich lenkbar macht",
+    excerpt:
+      "Angst verengt den Blick und schaltet das ruhige Denken ab – der ideale Zustand, um gelenkt zu werden. Wie das funktioniert und wie du wieder in den klaren Modus zurückfindest.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-09-06",
+    dateLabel: "6. September 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Angst ist überlebenswichtig. Sie richtet in Sekunden alle Ressourcen auf eine Gefahr aus. Doch genau diese Kraft hat eine Kehrseite: Wer in Angst ist, denkt eng, schnell und schwarz-weiß. Und ein Mensch, der eng, schnell und schwarz-weiß denkt, ist leicht zu lenken. Deshalb ist Angst eines der ältesten Werkzeuge der Beeinflussung.",
+      },
+      {
+        type: "h2",
+        text: "Angst verengt den Blick",
+      },
+      {
+        type: "p",
+        text: "Unter Bedrohung schaltet der Körper in den Alarmmodus. Das ruhige, abwägende Denken tritt in den Hintergrund, der schnelle Reflex übernimmt. Das ist bei echter Gefahr sinnvoll. Nur: Dasselbe passiert auch bei ausgedachten oder aufgebauschten Bedrohungen. Der Körper unterscheidet nicht zwischen dem Säbelzahntiger und der Schlagzeile – er reagiert auf die Bewertung, nicht auf die Realität.",
+      },
+      {
+        type: "h2",
+        text: "Wer Angst macht, macht lenkbar",
+      },
+      {
+        type: "p",
+        text: "Ängstliche Menschen suchen Sicherheit – und nehmen dafür fast jede angebotene Lösung an. „Nur wenn du X tust, bist du sicher.“ In diesem Muster steckt eine gewaltige Macht: Erst wird eine Bedrohung groß gemacht, dann eine Rettung angeboten. Wer beides in der Hand hält, hält auch die Entscheidung in der Hand. Das gilt für Werbung ebenso wie für Politik und manche Schlagzeile.",
+      },
+      {
+        type: "quote",
+        text: "Wer deine Angst kontrolliert, muss deine Meinung nicht mehr überzeugen.",
+      },
+      {
+        type: "h2",
+        text: "Daueralarm ohne echte Gefahr",
+      },
+      {
+        type: "p",
+        text: "Ein ständiger Strom beunruhigender Meldungen hält viele Menschen in leiser Daueranspannung. Nicht ein einzelnes Ereignis, sondern die Dauer macht müde und lenkbar. In diesem Zustand greifen wir zu einfachen Antworten, weil das anstrengende Abwägen zu viel Kraft kostet. Der erste Schritt zurück ist deshalb kein Argument, sondern Beruhigung.",
+      },
+      {
+        type: "h2",
+        text: "So holst du dich aus dem Angst-Modus",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bemerke die Körperreaktion zuerst: flacher Atem, Enge, Anspannung. Das Gefühl ist echt – die Gefahr oft nicht.",
+          "Verlängere das Ausatmen. Ein ruhiger Atem signalisiert dem Nervensystem: keine akute Gefahr.",
+          "Frag konkret: Was genau ist die Bedrohung, wie wahrscheinlich ist sie, und was kann ich tatsächlich tun?",
+          "Achte auf das Muster „Bedrohung + einzige Rettung“. Wer beides liefert, will meist etwas von dir.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Angst lässt sich nicht abschalten – aber du kannst lernen, aus ihrem Griff zurückzufinden, bevor du entscheidest. Wie das geht, vertieft die Vertiefung [„Angst-Steuerung“](/mitglieder/wissen/angst-steuerung) im Mitgliederbereich; passende Atem-Übungen und der ganze Weg warten im kostenlosen [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+      },
+    ],
+  },
+  {
+    slug: "ablenkung-keine-luege-nur-laerm",
+    title: "Ablenkung: Keine Lüge – nur Lärm",
+    excerpt:
+      "Man muss die Wahrheit nicht verbieten, wenn man sie im Lärm verschwinden lässt. Wie Ablenkung deine Aufmerksamkeit kapert und wie du deinen Fokus zurückholst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-09-10",
+    dateLabel: "10. September 2026",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "p",
+        text: "Die wirksamste Art, eine unbequeme Wahrheit unschädlich zu machen, ist nicht das Verbot. Es ist der Lärm. Wenn hundert laute Reize gleichzeitig um deine Aufmerksamkeit buhlen, geht das Wichtige unter, ganz ohne dass jemand es verbieten müsste. Keine Lüge – nur Lärm.",
+      },
+      {
+        type: "h2",
+        text: "Nicht Zensur, sondern Überflutung",
+      },
+      {
+        type: "p",
+        text: "Früher war Information knapp und Kontrolle bedeutete, sie zurückzuhalten. Heute ist Information im Überfluss da – und Kontrolle bedeutet, sie zu überfluten. In der Masse aus Meldungen, Empörungen und Nebensächlichkeiten kann das Entscheidende einfach verschwinden. Was untergeht, muss nicht verboten werden.",
+      },
+      {
+        type: "h2",
+        text: "Aufmerksamkeit ist die eigentliche Währung",
+      },
+      {
+        type: "p",
+        text: "Deine Aufmerksamkeit ist begrenzt und wertvoll – deshalb wird um sie gekämpft. Jede Benachrichtigung, jede Empörungswelle, jeder Aufreger zieht ein Stück davon ab. Das Ziel ist selten dein Nutzen, sondern deine Zeit. Und wer deine Zeit hat, hat auch, worüber du nachdenkst und worüber nicht.",
+      },
+      {
+        type: "quote",
+        text: "Du musst niemandem den Mund verbieten, wenn alle gleichzeitig reden.",
+      },
+      {
+        type: "h2",
+        text: "Das Wichtige verschwindet im Lauten",
+      },
+      {
+        type: "p",
+        text: "Das Laute ist selten das Wichtige. Empörung verbreitet sich schneller als Abwägung, der Skandal schneller als die stille Entwicklung, die dein Leben wirklich prägt. Wer nur dem Lautesten folgt, verpasst oft genau das, worauf es ankommt – nicht weil es versteckt wurde, sondern weil es leise war.",
+      },
+      {
+        type: "h2",
+        text: "So schützt du deinen Fokus",
+      },
+      {
+        type: "ul",
+        items: [
+          "Frag bei jeder Aufregung: Betrifft mich das wirklich – und kann ich etwas daran ändern?",
+          "Unterscheide laut von wichtig. Das Dringliche schreit, das Wichtige flüstert oft.",
+          "Setze bewusste Ruhezonen: Zeiten ohne Feed, ohne Benachrichtigung, ohne Aufreger.",
+          "Merke dir am Abend: Was hat heute meine Aufmerksamkeit bekommen – und war es das wert?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Fokus ist im Dauerlärm keine Selbstverständlichkeit, sondern eine Entscheidung, die du täglich neu triffst. Wie du sie trainierst, zeigt die Vertiefung [„Ablenkung“](/mitglieder/wissen/ablenkung) im Mitgliederbereich; der ruhige rote Faden durch den ganzen Weg steckt im kostenlosen [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+      },
+    ],
+  },
+  {
+    slug: "normalisierung-war-doch-schon-immer-so",
+    title: "Normalisierung: Warum „war schon immer so“ kein Argument ist",
+    excerpt:
+      "Was oft genug wiederholt wird, fühlt sich irgendwann normal an – auch das, was es nicht sein sollte. Wie schleichende Gewöhnung deine Grenzen verschiebt und wie du sie zurückholst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-09-14",
+    dateLabel: "14. September 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Das Erschreckendste verliert seinen Schrecken, wenn es nur oft genug wiederkehrt. Was uns beim ersten Mal empört, nehmen wir beim zehnten Mal kaum noch wahr. Diese leise Kraft heißt Normalisierung – und sie ist deshalb so mächtig, weil sie ohne Zwang auskommt. Sie braucht nur Zeit und Wiederholung.",
+      },
+      {
+        type: "h2",
+        text: "Wiederholung macht das Fremde vertraut",
+      },
+      {
+        type: "p",
+        text: "Unser Gehirn verwechselt Vertrautheit gern mit Richtigkeit. Was wir schon oft gesehen haben, fühlt sich sicher an – unabhängig davon, ob es gut ist. Genau deshalb wirkt das Wiederholte irgendwann normal, selbst wenn es das nicht verdient. Die Gewöhnung ersetzt das Urteil.",
+      },
+      {
+        type: "h2",
+        text: "Die verschobene Grenze",
+      },
+      {
+        type: "p",
+        text: "Normalisierung arbeitet in kleinen Schritten. Keine einzelne Veränderung ist groß genug, um Widerspruch auszulösen – aber in der Summe verschiebt sich die Grenze dessen, was als selbstverständlich gilt. Hätte man dir den Endzustand am Anfang gezeigt, hättest du protestiert. In vielen kleinen Schritten gewöhnst du dich daran. Genau das ist der Trick.",
+      },
+      {
+        type: "quote",
+        text: "„War schon immer so“ beschreibt eine Gewohnheit – und begründet gar nichts.",
+      },
+      {
+        type: "h2",
+        text: "„Normal“ ist kein Gütesiegel",
+      },
+      {
+        type: "p",
+        text: "Dass etwas verbreitet, üblich oder alt ist, sagt nichts darüber, ob es gut, richtig oder fair ist. „Das macht doch jeder“ und „das war schon immer so“ sind keine Argumente, sondern Verweise auf Gewohnheit. Sie beenden das Nachdenken, statt es zu eröffnen. Ein Blick von außen – oder von früher – macht schnell sichtbar, was sich unbemerkt verschoben hat.",
+      },
+      {
+        type: "h2",
+        text: "So bemerkst du Normalisierung",
+      },
+      {
+        type: "ul",
+        items: [
+          "Frag dich: Hätte mich das vor fünf Jahren noch gestört? Wenn ja – warum jetzt nicht mehr?",
+          "Ersetze „war schon immer so“ durch „ist das gut so?“ und prüf es neu.",
+          "Achte auf die kleinen Schritte, nicht auf den großen Sprung – dort passiert die Verschiebung.",
+          "Hol dir den Blick von außen: Wie würde jemand urteilen, der das zum ersten Mal sieht?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Normalisierung zu bemerken heißt, die eigenen Maßstäbe bewusst zu halten, statt sie leise verschieben zu lassen. Mehr dazu in der Vertiefung [„Normalisierung“](/mitglieder/wissen/normalisierung) im Mitgliederbereich; den ganzen Weg zu mehr Klarheit bündelt das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+      },
+    ],
+  },
+  {
+    slug: "bildmacht-ein-bild-ist-kein-beweis",
+    title: "Bildmacht: Warum ein Bild kein Beweis ist",
+    excerpt:
+      "Ein Bild überzeugt schneller als jedes Argument – und genau darin liegt die Gefahr. Warum Bilder am kritischen Denken vorbeigehen und wie du sie wieder lesen lernst.",
+    category: "Mentale Selbstverteidigung",
+    date: "2026-09-18",
+    dateLabel: "18. September 2026",
+    readingMinutes: 6,
+    content: [
+      {
+        type: "p",
+        text: "Ein starkes Bild wirkt in Sekundenbruchteilen. Es weckt Gefühle, bevor der Verstand überhaupt eine Frage stellen kann. Genau das macht Bilder so überzeugend – und so leicht zu missbrauchen. Denn ein Bild zeigt immer nur einen Ausschnitt, behauptet aber, die ganze Wirklichkeit zu sein.",
+      },
+      {
+        type: "h2",
+        text: "Bilder gehen an der Prüfung vorbei",
+      },
+      {
+        type: "p",
+        text: "Ein Argument kannst du zerlegen, ein Bild triffst du direkt. Es spricht das schnelle, emotionale Denken an, nicht das langsame, prüfende. Deshalb bleibt ein Bild hängen, wo ein Text längst vergessen ist – und deshalb glauben wir Bildern fast automatisch. „Ich hab’s doch gesehen“ fühlt sich an wie Beweis. Ist es aber nicht.",
+      },
+      {
+        type: "h2",
+        text: "Der Rahmen ist die halbe Botschaft",
+      },
+      {
+        type: "p",
+        text: "Jedes Bild ist eine Auswahl: Was ist drauf – und was wurde weggeschnitten? Derselbe Moment wirkt völlig anders, je nachdem, was der Ausschnitt zeigt und was er verschweigt. Ein enger Bildausschnitt kann eine kleine Gruppe wie eine Masse aussehen lassen oder umgekehrt. Nicht die Kamera lügt, sondern der Rahmen entscheidet.",
+      },
+      {
+        type: "quote",
+        text: "Ein Bild beweist, dass etwas fotografiert wurde – nicht, was es bedeutet.",
+      },
+      {
+        type: "h2",
+        text: "Ein Bild belegt nicht seinen Kontext",
+      },
+      {
+        type: "p",
+        text: "Wann wurde es aufgenommen, wo, und was geschah davor und danach? Ein echtes Foto kann im falschen Zusammenhang komplett in die Irre führen – ganz ohne Fälschung. Ein altes Bild als aktuell ausgegeben, eine Szene ohne Vorgeschichte, ein Einzelfall als Beleg für das Ganze: Der Trick liegt selten im Bild selbst, sondern in der Behauptung, die man darüber legt.",
+      },
+      {
+        type: "h2",
+        text: "So liest du Bilder kritisch",
+      },
+      {
+        type: "ul",
+        items: [
+          "Frag: Was liegt außerhalb des Ausschnitts – und warum sehe ich es nicht?",
+          "Prüf den Kontext: Wann und wo entstand das Bild, und was zeigt die Bildunterschrift wirklich?",
+          "Trenne das Bild von seiner Behauptung. Das Foto kann echt sein und die Aussage trotzdem falsch.",
+          "Spür dem Gefühl nach, das ausgelöst werden soll – und atme einmal durch, bevor du es übernimmst.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Bilder lesen zu lernen heißt nicht, nichts mehr zu glauben, sondern die Frage wieder zuzulassen, bevor das Gefühl entscheidet. Die Vertiefung [„Bildmacht“](/mitglieder/wissen/bildmacht) im Mitgliederbereich geht in die Tiefe; den ganzen Weg zu klarem Denken bündelt das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
