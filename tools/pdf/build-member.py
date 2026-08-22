@@ -49,38 +49,32 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 }
 
 /* ============================================================
-   DECKBLATT  (Workshop-Stil: Starfield + Gehirn rechts)
+   DECKBLATT  (Workbook-Stil: zentriert, Gehirn mittig, Name-Zeile)
    ============================================================ */
 .cover{ position:relative; width:210mm; height:297mm; overflow:hidden; color:#eaf0ff;
   background:#08102a; z-index:5; }
 .cover .bg{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
-.cover .brain{ position:absolute; right:-24mm; top:96mm; width:150mm; z-index:1;
-  opacity:.96; filter:drop-shadow(0 8px 40px rgba(52,196,196,.25)); }
-.cover .inner{ position:relative; z-index:2; height:100%; padding:24mm 22mm 20mm;
-  display:flex; flex-direction:column; }
-.cover .brandrow{ display:flex; align-items:center; gap:11px; }
-.cover .brandrow img{ width:34px; height:34px; }
-.cover .brandrow span{ font-size:10.5px; letter-spacing:.24em; text-transform:uppercase;
-  color:var(--teal-300); font-weight:600; line-height:1.3; }
-.cover .eyebrow{ margin-top:20mm; display:inline-flex; align-items:center; gap:9px;
-  font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--leaf-400); font-weight:700; }
-.cover .eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--leaf-400); }
-.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:46px; line-height:1.08;
-  margin-top:14px; letter-spacing:-.4px; max-width:120mm; text-shadow:0 2px 30px rgba(3,8,20,.7); }
-.cover .sub{ margin-top:14px; font-family:'Fraunces',serif; font-style:italic; font-weight:500;
-  font-size:23px; line-height:1.3; color:var(--teal-300); max-width:118mm;
+.cover .inner{ position:relative; z-index:2; height:100%; padding:30mm 24mm;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+.cover .brandrow{ position:absolute; top:20mm; left:0; right:0; display:flex; justify-content:center;
+  align-items:center; gap:10px; z-index:2; }
+.cover .brandrow img{ width:30px; height:30px; }
+.cover .brandrow span{ font-size:10px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--teal-300); font-weight:600; line-height:1.3; text-align:left; }
+.cover .eyebrow{ font-size:12px; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--leaf-400); font-weight:700; margin-bottom:9mm; }
+.cover .brain{ width:52mm; height:auto; filter:drop-shadow(0 6px 34px rgba(52,196,196,.4)); }
+.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:45px; line-height:1.1;
+  margin-top:10mm; letter-spacing:-.4px; max-width:160mm; text-shadow:0 2px 30px rgba(3,8,20,.7); }
+.cover h1 .ac{ color:var(--teal-300); }
+.cover .sub{ margin-top:6mm; font-size:15px; line-height:1.55; color:#c6d2ea; max-width:125mm;
   text-shadow:0 1px 16px rgba(3,8,20,.85); }
-.cover .promise{ margin-top:16px; font-size:14px; line-height:1.55; color:#d3ddf0; max-width:105mm;
-  text-shadow:0 1px 16px rgba(3,8,20,.85); }
-.cover .num{ position:absolute; right:16mm; top:14mm; font-family:'Fraunces',serif; font-weight:600;
-  font-size:150px; line-height:1; color:transparent; -webkit-text-stroke:1.6px rgba(95,214,210,.4);
-  z-index:2; }
-.cover .num.gold{ -webkit-text-stroke-color:rgba(242,212,137,.55); }
-.cover .foot{ margin-top:auto; display:flex; justify-content:space-between; align-items:center;
-  border-top:1px solid rgba(255,255,255,.15); padding-top:6mm; }
-.cover .author b{ display:block; font-size:13px; color:#fff; font-weight:600; }
-.cover .author span{ font-size:11px; color:#a7b4d0; }
-.cover .dom{ font-size:12px; color:var(--teal-300); letter-spacing:.04em; }
+.cover .namerow{ position:absolute; left:24mm; right:24mm; bottom:18mm; z-index:2;
+  display:flex; justify-content:center; align-items:center; gap:12px; font-size:12px; color:#a7b4d0; }
+.cover .namerow .nm{ display:inline-flex; align-items:baseline; gap:8px; }
+.cover .namerow .ln{ display:inline-block; width:46mm; border-bottom:1px solid rgba(255,255,255,.4); }
+.cover .namerow .sep{ color:rgba(255,255,255,.3); }
+.cover .namerow .dom{ color:var(--teal-300); letter-spacing:.04em; }
 
 /* ============================================================
    INHALTSSEITEN
@@ -169,22 +163,27 @@ def doc(inner, plain=False):
     return ("<!doctype html><html lang='de'><head><meta charset='utf-8'>"
             "<style>" + CSS + extra + "</style></head><body>" + inner + "</body></html>")
 
-# ---------------- Deckblatt (Workshop-Stil) ----------------
+# ---------------- Deckblatt (zentriert, Workbook-Stil) ----------------
 def cover(eyebrow, title, sub, promise="", num=None, gold=False):
-    numhtml = ('<div class="num serif%s">%s</div>' % (" gold" if gold else "", esc(num))) if num else ""
-    prom = ('<p class="promise">%s</p>' % esc(promise)) if promise else ""
+    # Zweifarbiger Titel wie im Workbook: letztes Wort in Teal (bei mehrwortigen
+    # Titeln), einwortige Titel bleiben komplett weiß.
+    words = title.split()
+    if len(words) > 1:
+        titled = esc(" ".join(words[:-1])) + ' <span class="ac">' + esc(words[-1]) + "</span>"
+    else:
+        titled = esc(title)
     return (
-        '<div class="cover"><img class="bg" src="%s"><img class="brain" src="%s">%s'
+        '<div class="cover"><img class="bg" src="%s">'
         '<div class="inner">'
-        '<div class="brandrow"><img src="%s"><span>Werde Meister<br>deiner Gedanken</span></div>'
         '<div class="eyebrow">%s</div>'
+        '<img class="brain" src="%s">'
         '<h1 class="serif">%s</h1>'
-        '<div class="sub">%s</div>%s'
-        '<div class="foot">'
-        '<div class="author"><b>Heiko Schwaninger</b><span>Begleiter für Bewusstseinsentwicklung</span></div>'
-        '<div class="dom">werdemeisterdeinergedanken.de</div>'
-        '</div></div></div>'
-    ) % (BG_TITLE, BRAIN_WS, numhtml, LOGO, esc(eyebrow), esc(title), esc(sub), prom)
+        '<div class="sub">%s</div>'
+        '</div>'
+        '<div class="namerow"><span class="nm">Name:<span class="ln"></span></span>'
+        '<span class="sep">·</span><span class="dom">werdemeisterdeinergedanken.de</span></div>'
+        '</div>'
+    ) % (BG_TITLE, esc(eyebrow), BRAIN_WS, titled, esc(sub))
 
 # ---------------- Inhaltsseiten-Bausteine ----------------
 def chead(eyebrow, title, sub, num=None, gold=False):
