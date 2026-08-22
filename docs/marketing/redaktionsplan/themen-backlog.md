@@ -68,16 +68,16 @@ Community die Grundlagen (Block A) kennt.
 | **Propaganda** | geplant | „Ohne eine einzige Lüge" | `propaganda-erkennst-du-nicht-an-lauten-parolen` | `propaganda` |
 | **Kognitive Dissonanz** | geplant | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
 | **Identität & Meinung** | geplant | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
-| **Sprache & Etiketten** | geplant | „Ein Wort beendet jede Debatte" | ⚠ kein Blog (Vertiefung) | `sprache-und-etiketten` |
-| **Medien-Agenda** | geplant | „Nicht WAS – sondern WORÜBER" | ⚠ kein Blog (Vertiefung) | `medien-agenda` |
-| **Angst-Steuerung** | geplant | „Angst macht dich lenkbar" | ⚠ kein Blog (Vertiefung) | `angst-steuerung` |
-| **Ablenkung** | geplant | „Keine Lüge. Nur Lärm." | ⚠ kein Blog (Vertiefung) | `ablenkung` |
-| **Normalisierung** | geplant | „War doch schon immer so?" | ⚠ kein Blog (Vertiefung) | `normalisierung` |
-| **Bildmacht** | geplant | „Ein Bild ist kein Beweis" | ⚠ kein Blog (Vertiefung) | `bildmacht` |
+| **Sprache & Etiketten** | geplant | „Ein Wort beendet jede Debatte" | `sprache-und-etiketten-wie-ein-etikett-das-denken-beendet` | `sprache-und-etiketten` |
+| **Medien-Agenda** | geplant | „Nicht WAS – sondern WORÜBER" | `medien-agenda-nicht-was-sondern-worueber` | `medien-agenda` |
+| **Angst-Steuerung** | geplant | „Angst macht dich lenkbar" | `angst-steuerung-warum-angst-dich-lenkbar-macht` | `angst-steuerung` |
+| **Ablenkung** | geplant | „Keine Lüge. Nur Lärm." | `ablenkung-keine-luege-nur-laerm` | `ablenkung` |
+| **Normalisierung** | geplant | „War doch schon immer so?" | `normalisierung-war-doch-schon-immer-so` | `normalisierung` |
+| **Bildmacht** | geplant | „Ein Bild ist kein Beweis" | `bildmacht-ein-bild-ist-kein-beweis` | `bildmacht` |
 
-> Woche 21–26 haben nur eine Vertiefung, keinen dedizierten Blog. Die FB-/
-> LinkedIn-Langform-Posts verlinken die Vertiefung (`/mitglieder/wissen/<slug>`);
-> ein Blog kann später ergänzt und im Cockpit nachgetragen werden.
+> Woche 21–26 haben jetzt eigene Blogartikel (`src/lib/blog.ts`, Kategorie
+> „Mentale Selbstverteidigung", vordatiert als geplante Beiträge). Blog + Vertiefung
+> sind vorhanden.
 
 ---
 
