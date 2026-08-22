@@ -41,7 +41,12 @@ COPY --from=builder /app/public ./public
 # /mitglieder, also hinter dem Login. Ohne diese Zeile fehlen sie zur
 # Laufzeit und die Routen antworten mit 404.
 COPY --from=builder /app/content ./content
-COPY --from=builder /app/.next ./.next
+# --chown ist hier nicht kosmetisch: Next.js schreibt den ISR-/Prerender-Cache
+# zur Laufzeit nach .next/server/app/ zurück. Ohne Schreibrecht für den
+# nextjs-User meldet der Container bei jeder Revalidierung
+# "Failed to update prerender cache ... EACCES" und rendert die Seite bei
+# jedem Abruf neu, statt sie zu cachen.
+COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
