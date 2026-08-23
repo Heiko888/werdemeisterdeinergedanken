@@ -27,6 +27,7 @@ export default function BlogPage() {
       readingMinutes,
       accent,
       coverSeed,
+      image,
     }) => ({
       slug,
       title,
@@ -37,6 +38,7 @@ export default function BlogPage() {
       readingMinutes,
       accent,
       coverSeed,
+      image,
     }),
   );
 
