@@ -138,6 +138,10 @@ export const posts: Post[] = [
   },
   {
     slug: "wie-frei-ist-unser-geist",
+    image: {
+      src: "/blog/geist-freiheit.png",
+      alt: "Ein Mensch steht vor einem gewaltigen, mit Runen verzierten Steintor, hinter dem eine weite Landschaft im Sonnenaufgang liegt – die Schwelle zur geistigen Freiheit.",
+    },
     title: "Wie frei ist unser Geist?",
     excerpt:
       "Bis zu 60.000 Gedanken am Tag – doch wie viele davon sind wirklich deine? Über Gedankenkontrolle, äußere Einflüsse und den Weg zurück zur mentalen Freiheit.",
@@ -256,6 +260,10 @@ export const posts: Post[] = [
   },
   {
     slug: "warum-willenskraft-ueberschaetzt-wird",
+    image: {
+      src: "/blog/willenskraft.png",
+      alt: "Ein Mensch überquert eine Hängebrücke in Richtung eines Berggipfels, zu dem sich ein Pfad hinaufwindet – der Weg der Veränderung führt über die Wurzel, nicht über Zwang.",
+    },
     title: "Warum Willenskraft überschätzt wird",
     excerpt:
       "Wenn du dich immer wieder zusammenreißen musst, ist nicht deine Disziplin das Problem – sondern ein unbewusstes Programm.",
@@ -296,6 +304,10 @@ export const posts: Post[] = [
   },
   {
     slug: "drei-muster-die-dich-unbewusst-steuern",
+    image: {
+      src: "/blog/muster-erkennen.png",
+      alt: "Ein Mensch blickt von einer Klippe über ein weites Tal; neben ihm leuchten feine geometrische Symbole – die eigenen inneren Muster werden sichtbar.",
+    },
     title: "Drei Muster, die dich unbewusst steuern",
     excerpt:
       "Diese drei inneren Programme laufen bei fast jedem – und bestimmen leise, wie du entscheidest und fühlst.",
@@ -584,6 +596,10 @@ export const posts: Post[] = [
   },
   {
     slug: "reizueberflutung-warum-dein-gehirn-nicht-abschaltet",
+    image: {
+      src: "/blog/reizueberflutung.png",
+      alt: "Ein Mensch an einer Weggabelung: links ein ruhiger, lampenbeleuchteter Weg, rechts ein Sturm aus flackernden Bildschirmen und Lärm.",
+    },
     title: "Reizüberflutung: Warum dein Gehirn nicht mehr abschaltet",
     excerpt:
       "Nachrichten, Pushs, Dauer-Empörung: Wie ständige Reize dein Nervensystem in Alarm halten – und warum du in diesem Zustand schlechter denkst und leichter lenkbar bist.",
@@ -795,6 +811,10 @@ export const posts: Post[] = [
   },
   {
     slug: "warum-du-verteidigst-was-dir-schadet",
+    image: {
+      src: "/blog/loslassen.png",
+      alt: "Ein Mensch sitzt am Berghang und blickt in den Sonnenuntergang, während sich ein Teil seiner Gestalt in davonfliegende Fragmente auflöst – das Loslassen eines starren Selbstbildes.",
+    },
     title: "Warum du verteidigst, was dir schadet",
     excerpt:
       "Kognitive Dissonanz: Wir lehnen Informationen oft nicht ab, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. Wie du diesen Reflex durchschaust.",
@@ -875,6 +895,10 @@ export const posts: Post[] = [
   },
   {
     slug: "hast-du-eine-meinung-oder-hat-sie-dich",
+    image: {
+      src: "/blog/maske.png",
+      alt: "Eine rissige weiße Maske zerfällt zu Staub – das falsche Gesicht einer mit der Identität verwachsenen Meinung löst sich auf.",
+    },
     title: "Hast du eine Meinung – oder hat die Meinung dich?",
     excerpt:
       "Sobald eine Meinung Teil deiner Identität wird, fühlt sich Kritik daran wie ein persönlicher Angriff an. Warum das dich unfrei macht – und wie du den Abstand zurückgewinnst.",
@@ -1419,6 +1443,10 @@ export const posts: Post[] = [
   },
   {
     slug: "angst-steuerung-warum-angst-dich-lenkbar-macht",
+    image: {
+      src: "/blog/angst-steuerung.png",
+      alt: "Eine überlebensgroße Hand führt einen kleinen Menschen wie eine Marionette an Fäden, im Hintergrund eine Wand aus Krisenbildern – wer Angst steuert, muss nicht mehr überzeugen.",
+    },
     title: "Angst-Steuerung: Warum Angst dich lenkbar macht",
     excerpt:
       "Angst verengt den Blick und schaltet das ruhige Denken ab – der ideale Zustand, um gelenkt zu werden. Wie das funktioniert und wie du wieder in den klaren Modus zurückfindest.",
