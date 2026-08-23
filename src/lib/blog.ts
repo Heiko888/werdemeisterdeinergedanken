@@ -718,6 +718,10 @@ export const posts: Post[] = [
   },
   {
     slug: "werbung-und-der-kuenstliche-mangel",
+    image: {
+      src: "/blog/werbung.png",
+      alt: "Ein Mensch sitzt mit Fernbedienung wie eine Marionette an Fäden vor einem Bildschirm voller Reiz- und Statusbilder, umgeben von Fast Food – Konsum als ferngesteuerter Reflex.",
+    },
     title: "Werbung verkauft dir keinen Mangel – sie erschafft ihn",
     excerpt:
       "Vieles kaufst du nicht, weil du es brauchst, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Wie das funktioniert – und wie du aussteigst.",
@@ -1390,6 +1394,10 @@ export const posts: Post[] = [
   },
   {
     slug: "medien-agenda-nicht-was-sondern-worueber",
+    image: {
+      src: "/blog/medien-agenda.png",
+      alt: "Ein Mensch steht am Übergang zwischen einer düsteren, von einer Marionettenhand gelenkten Stadt und einem offenen, sonnigen Weg ins Freie – wer die Agenda durchschaut, wählt selbst.",
+    },
     title: "Medien-Agenda: Nicht was du denkst, sondern worüber",
     excerpt:
       "Die stärkste Beeinflussung schreibt dir keine Meinung vor – sie bestimmt, worüber du überhaupt nachdenkst. Wie Agenda-Setting funktioniert und wie du es durchschaust.",
