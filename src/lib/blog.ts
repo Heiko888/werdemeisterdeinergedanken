@@ -53,6 +53,10 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "wie-gedanken-koerper-und-gesundheit-formen",
+    image: {
+      src: "/blog/gedanken-koerper.png",
+      alt: "Ein Mensch mit leuchtendem Gehirn und sichtbarem Herzen, umgeben von Szenen aus Ernährung, Bewegung, Schlaf und Gewohnheiten – wie Gedanken bis in Körper und Gesundheit wirken.",
+    },
     title: "Wie Gedanken deinen Körper und deine Gesundheit formen",
     excerpt:
       "Vom Placebo-Effekt bis zur Neuroplastizität: Wie deine Denkmuster ganz konkret auf Körper, Verhalten und Wohlbefinden wirken – und wie du das für dich nutzt.",
@@ -1133,6 +1137,10 @@ export const posts: Post[] = [
   },
   {
     slug: "denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt",
+    image: {
+      src: "/blog/denkfehler.png",
+      alt: "Ein Mensch, dessen Sicht sich in Spiegelscherben bricht – links eine friedliche Naturlandschaft, rechts eine chaotische Stadt: dieselbe Welt, systematisch verzerrt wahrgenommen.",
+    },
     title: "Denkfehler: Wie dein Kopf die Wirklichkeit systematisch verzerrt",
     excerpt:
       "Verfügbarkeitsheuristik, Verankerung, Bestätigungsfehler: Die Kognitionsforschung hat unsere blinden Flecken kartiert. Wer sie kennt, denkt freier.",
@@ -1285,6 +1293,10 @@ export const posts: Post[] = [
   },
   {
     slug: "was-meditation-im-gehirn-veraendert",
+    image: {
+      src: "/blog/meditation.png",
+      alt: "Eine meditierende Frau mit leuchtendem Gehirn; links dunkle, aufgewühlte Gedanken, rechts ruhige, klare Bilder aus der Natur – was sich beim Üben im Gehirn verschiebt.",
+    },
     title: "Was Meditation wirklich im Gehirn verändert",
     excerpt:
       "Zwischen Esoterik und Hype: Was die Forschung über Achtsamkeit tatsächlich zeigt – vom ruhigeren Alarmzentrum bis zum abschweifenden Geist. Ehrlich eingeordnet.",
@@ -1333,6 +1345,10 @@ export const posts: Post[] = [
   },
   {
     slug: "sprache-und-etiketten-wie-ein-etikett-das-denken-beendet",
+    image: {
+      src: "/blog/etiketten.png",
+      alt: "Eine Frau mit geschlossenen Augen, auf Stirn und Körper klebende Etiketten wie „faul“, „schwach“ und „naiv“, während Menschen ringsum mit Fingern auf sie zeigen.",
+    },
     title: "Sprache & Etiketten: Wie ein Etikett das Denken beendet",
     excerpt:
       "„Schwurbler“, „Gutmensch“, „Nestbeschmutzer“ – ein einziges Etikett kann jede Debatte beenden, bevor sie beginnt. Wie Begriffe zu Urteilen werden und wie du dich davon löst.",
@@ -1589,6 +1605,10 @@ export const posts: Post[] = [
   },
   {
     slug: "normalisierung-war-doch-schon-immer-so",
+    image: {
+      src: "/blog/normalisierung.png",
+      alt: "Eine Menge gesenkter Köpfe, an Fäden geführt, vor rauchenden Schloten; ein verwittertes Schild verkündet „War schon immer so“.",
+    },
     title: "Normalisierung: Warum „war schon immer so“ kein Argument ist",
     excerpt:
       "Was oft genug wiederholt wird, fühlt sich irgendwann normal an – auch das, was es nicht sein sollte. Wie schleichende Gewöhnung deine Grenzen verschiebt und wie du sie zurückholst.",
