@@ -53,6 +53,10 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "wie-gedanken-koerper-und-gesundheit-formen",
+    image: {
+      src: "/blog/gedanken-koerper.png",
+      alt: "Ein Mensch mit leuchtendem Gehirn und sichtbarem Herzen, umgeben von Szenen aus Ernährung, Bewegung, Schlaf und Gewohnheiten – wie Gedanken bis in Körper und Gesundheit wirken.",
+    },
     title: "Wie Gedanken deinen Körper und deine Gesundheit formen",
     excerpt:
       "Vom Placebo-Effekt bis zur Neuroplastizität: Wie deine Denkmuster ganz konkret auf Körper, Verhalten und Wohlbefinden wirken – und wie du das für dich nutzt.",
@@ -413,6 +417,10 @@ export const posts: Post[] = [
   },
   {
     slug: "framing-wie-ein-wort-deine-meinung-macht",
+    image: {
+      src: "/blog/framing.png",
+      alt: "Ein Mensch hält zwei gerahmte Bilder derselben Straße: links düster, brennend und zerstört – rechts sonnig, grün und friedlich. Dieselbe Wirklichkeit, zwei Rahmen.",
+    },
     title: "Framing: Wie ein einziges Wort deine Meinung macht",
     excerpt:
       "Investition oder Ausgabe, Reform oder Kürzung – dieselbe Wirklichkeit, zwei Gefühle. Wie sprachliche Rahmen dein Urteil lenken, bevor du überhaupt nachdenkst.",
@@ -714,6 +722,10 @@ export const posts: Post[] = [
   },
   {
     slug: "werbung-und-der-kuenstliche-mangel",
+    image: {
+      src: "/blog/werbung.png",
+      alt: "Ein Mensch sitzt mit Fernbedienung wie eine Marionette an Fäden vor einem Bildschirm voller Reiz- und Statusbilder, umgeben von Fast Food – Konsum als ferngesteuerter Reflex.",
+    },
     title: "Werbung verkauft dir keinen Mangel – sie erschafft ihn",
     excerpt:
       "Vieles kaufst du nicht, weil du es brauchst, sondern weil dir vorher das Gefühl gegeben wurde, dass dir etwas fehlt. Wie das funktioniert – und wie du aussteigst.",
@@ -855,6 +867,10 @@ export const posts: Post[] = [
   },
   {
     slug: "wann-vertrauen-zu-blindem-gehorsam-wird",
+    image: {
+      src: "/blog/blinder-gehorsam.png",
+      alt: "Ein steinerner, verbundener Kopf zerfällt, während endlose Reihen von Menschen geordnet auf leuchtende Großbildschirme am Horizont zumarschieren – Vertrauen, das zu blindem Gehorsam erstarrt.",
+    },
     title: "Wann Vertrauen zu blindem Gehorsam wird",
     excerpt:
       "Derselbe Satz klingt glaubwürdiger, wenn ein Titel davorsteht. Warum das sinnvoll sein kann – und wo Fachwissen aufhört und blinder Gehorsam beginnt.",
@@ -1121,6 +1137,10 @@ export const posts: Post[] = [
   },
   {
     slug: "denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt",
+    image: {
+      src: "/blog/denkfehler.png",
+      alt: "Ein Mensch, dessen Sicht sich in Spiegelscherben bricht – links eine friedliche Naturlandschaft, rechts eine chaotische Stadt: dieselbe Welt, systematisch verzerrt wahrgenommen.",
+    },
     title: "Denkfehler: Wie dein Kopf die Wirklichkeit systematisch verzerrt",
     excerpt:
       "Verfügbarkeitsheuristik, Verankerung, Bestätigungsfehler: Die Kognitionsforschung hat unsere blinden Flecken kartiert. Wer sie kennt, denkt freier.",
@@ -1273,6 +1293,10 @@ export const posts: Post[] = [
   },
   {
     slug: "was-meditation-im-gehirn-veraendert",
+    image: {
+      src: "/blog/meditation.png",
+      alt: "Eine meditierende Frau mit leuchtendem Gehirn; links dunkle, aufgewühlte Gedanken, rechts ruhige, klare Bilder aus der Natur – was sich beim Üben im Gehirn verschiebt.",
+    },
     title: "Was Meditation wirklich im Gehirn verändert",
     excerpt:
       "Zwischen Esoterik und Hype: Was die Forschung über Achtsamkeit tatsächlich zeigt – vom ruhigeren Alarmzentrum bis zum abschweifenden Geist. Ehrlich eingeordnet.",
@@ -1321,6 +1345,10 @@ export const posts: Post[] = [
   },
   {
     slug: "sprache-und-etiketten-wie-ein-etikett-das-denken-beendet",
+    image: {
+      src: "/blog/etiketten.png",
+      alt: "Eine Frau mit geschlossenen Augen, auf Stirn und Körper klebende Etiketten wie „faul“, „schwach“ und „naiv“, während Menschen ringsum mit Fingern auf sie zeigen.",
+    },
     title: "Sprache & Etiketten: Wie ein Etikett das Denken beendet",
     excerpt:
       "„Schwurbler“, „Gutmensch“, „Nestbeschmutzer“ – ein einziges Etikett kann jede Debatte beenden, bevor sie beginnt. Wie Begriffe zu Urteilen werden und wie du dich davon löst.",
@@ -1382,6 +1410,10 @@ export const posts: Post[] = [
   },
   {
     slug: "medien-agenda-nicht-was-sondern-worueber",
+    image: {
+      src: "/blog/medien-agenda.png",
+      alt: "Ein Mensch steht am Übergang zwischen einer düsteren, von einer Marionettenhand gelenkten Stadt und einem offenen, sonnigen Weg ins Freie – wer die Agenda durchschaut, wählt selbst.",
+    },
     title: "Medien-Agenda: Nicht was du denkst, sondern worüber",
     excerpt:
       "Die stärkste Beeinflussung schreibt dir keine Meinung vor – sie bestimmt, worüber du überhaupt nachdenkst. Wie Agenda-Setting funktioniert und wie du es durchschaust.",
@@ -1508,6 +1540,10 @@ export const posts: Post[] = [
   },
   {
     slug: "ablenkung-keine-luege-nur-laerm",
+    image: {
+      src: "/blog/ablenkung.png",
+      alt: "Ein Mensch liegt nachts um 2:47 Uhr wach im Bett und starrt aufs Handy, umgeben von unzähligen Benachrichtigungen – der Lärm, der nie aufhört.",
+    },
     title: "Ablenkung: Keine Lüge – nur Lärm",
     excerpt:
       "Man muss die Wahrheit nicht verbieten, wenn man sie im Lärm verschwinden lässt. Wie Ablenkung deine Aufmerksamkeit kapert und wie du deinen Fokus zurückholst.",
@@ -1569,6 +1605,10 @@ export const posts: Post[] = [
   },
   {
     slug: "normalisierung-war-doch-schon-immer-so",
+    image: {
+      src: "/blog/normalisierung.png",
+      alt: "Eine Menge gesenkter Köpfe, an Fäden geführt, vor rauchenden Schloten; ein verwittertes Schild verkündet „War schon immer so“.",
+    },
     title: "Normalisierung: Warum „war schon immer so“ kein Argument ist",
     excerpt:
       "Was oft genug wiederholt wird, fühlt sich irgendwann normal an – auch das, was es nicht sein sollte. Wie schleichende Gewöhnung deine Grenzen verschiebt und wie du sie zurückholst.",
@@ -1630,6 +1670,10 @@ export const posts: Post[] = [
   },
   {
     slug: "bildmacht-ein-bild-ist-kein-beweis",
+    image: {
+      src: "/blog/bildmacht.png",
+      alt: "Eine Frau blickt auf ihr Smartphone, umgeben von einer Wand aus dramatischen Medienbildern – Explosionen, Gesichter und Konflikte, die schneller wirken als jedes Argument.",
+    },
     title: "Bildmacht: Warum ein Bild kein Beweis ist",
     excerpt:
       "Ein Bild überzeugt schneller als jedes Argument – und genau darin liegt die Gefahr. Warum Bilder am kritischen Denken vorbeigehen und wie du sie wieder lesen lernst.",
