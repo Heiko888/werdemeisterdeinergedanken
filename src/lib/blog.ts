@@ -855,6 +855,10 @@ export const posts: Post[] = [
   },
   {
     slug: "wann-vertrauen-zu-blindem-gehorsam-wird",
+    image: {
+      src: "/blog/blinder-gehorsam.png",
+      alt: "Ein steinerner, verbundener Kopf zerfällt, während endlose Reihen von Menschen geordnet auf leuchtende Großbildschirme am Horizont zumarschieren – Vertrauen, das zu blindem Gehorsam erstarrt.",
+    },
     title: "Wann Vertrauen zu blindem Gehorsam wird",
     excerpt:
       "Derselbe Satz klingt glaubwürdiger, wenn ein Titel davorsteht. Warum das sinnvoll sein kann – und wo Fachwissen aufhört und blinder Gehorsam beginnt.",
