@@ -325,9 +325,11 @@ def workbook_body(stages, lessons):
             + '<div class="klabel">Die Lektion</div>' + sections_html(lesson["sections"])
             + '<div class="klabel teal">Deine Übungen</div>'
             + "".join(exercise_html(e, True) for e in lesson["exercises"])
+            # Footer INNERHALB des closer-Blocks: so bricht er zusammen mit
+            # Reflexion + Leitsatz um und landet nie allein auf einer leeren Seite.
             + '<div class="closer"><div class="klabel teal">Zum Innehalten</div>' + reflection_html(lesson["reflection"], True)
-            + affirm_html(lesson["affirmation"]) + '</div>'
-            + docfoot(label)
+            + affirm_html(lesson["affirmation"])
+            + docfoot(label) + '</div>'
             + '</div>'
         ) + '</div>'
     return doc(toc + body, plain=True)
