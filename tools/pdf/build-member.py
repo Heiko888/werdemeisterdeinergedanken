@@ -36,7 +36,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 
 /* Inhaltsseiten reservieren unten Platz für die Fußzeile; das Deckblatt (erste
    Seite) läuft randlos bis zur Kante. */
-@page{ size:A4; margin:12mm 0 14mm 0; }
+@page{ size:A4; margin:16mm 17mm; }
 @page:first{ margin:0; }
 
 :root{
@@ -80,82 +80,89 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .cover .namerow .dom{ color:var(--teal-300); letter-spacing:.04em; }
 
 /* ============================================================
-   INHALTSSEITEN
+   INHALTSSEITEN  (heller Referenz-Stil: WMDG-Workbook-7-Stufen)
+   Weiße Seiten, grün→teal Nummern-Disc, große Serif-Überschrift,
+   dunkler Navy-Callout fürs Zitat – kein Kopf-Band mehr.
    ============================================================ */
-/* Randloses Kopf-Band (wie E-Book/Workshop, statt schwebender Karte) */
-/* Kopf-Band randlos: negatives margin zieht es in den oberen Seitenrand,
-   damit es auf der ersten Inhaltsseite bis an Ober- und Seitenkante läuft;
-   Folgeseiten behalten dadurch ihren oberen Rand. */
-.chead{ position:relative; overflow:hidden; color:#eaf0ff;
-  margin:-12mm 0 0 0;
-  background:
-    radial-gradient(60% 120% at 88% 12%, rgba(52,196,196,.30), transparent 60%),
-    linear-gradient(140deg, #08102a, #12224b);
-  padding:12mm 18mm 9mm; }
-.chead .big{ position:absolute; right:16mm; top:6mm; font-family:'Fraunces',serif; font-weight:600;
-  font-size:108px; line-height:1; color:transparent; -webkit-text-stroke:1.4px rgba(95,214,210,.32); }
-.chead .big.gold{ -webkit-text-stroke-color:rgba(242,212,137,.5); }
-.chead .eyebrow{ font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--teal-300); font-weight:600; }
-.chead h1{ font-family:'Fraunces',serif; font-weight:600; font-size:31px; letter-spacing:-.3px; margin-top:8px; line-height:1.08; }
-.chead .sub{ font-size:14px; color:#9fd6d2; font-style:italic; margin-top:6px; }
-
 .content{ break-before:page; }
-.cbody{ padding:11mm 18mm 0; }
+.cbody{ }
 
-.klabel{ font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:700;
-  margin:14px 0 7px; break-after:avoid; }
-.klabel:first-of-type{ margin-top:0; }
-.pquote{ border-left:3px solid var(--teal-400); padding:2px 0 2px 18px; margin:3px 0 11px; break-inside:avoid; }
-.pquote p{ font-family:'Fraunces',serif; font-style:italic; font-size:17.5px; line-height:1.38; color:var(--ink); }
-.lead{ font-size:13px; line-height:1.6; color:var(--ink-soft); margin-bottom:11px; }
-.h3{ font-family:'Fraunces',serif; font-weight:600; font-size:15px; color:var(--ink); margin:12px 0 4px; break-after:avoid; }
-.body{ font-size:12px; line-height:1.6; color:#3a453f; margin-bottom:6px; }
+/* Heller Seitenkopf: Nummern-Disc + grüner Kicker + Serif-Titel + teal Untertitel */
+.phead{ display:flex; gap:15px; align-items:flex-start; margin-bottom:16px; break-after:avoid; }
+.phead .disc{ flex:none; width:38px; height:38px; border-radius:50%;
+  background:linear-gradient(150deg,#8cc63f,#21b2bd); color:var(--navy-900);
+  font-family:'Fraunces',serif; font-weight:600; font-size:18px; display:grid; place-items:center;
+  box-shadow:0 8px 18px -8px rgba(33,178,189,.6); }
+.phead .kicker{ font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+.phead h1{ font-family:'Fraunces',serif; font-weight:600; font-size:30px; color:var(--navy-900);
+  line-height:1.12; margin-top:2px; letter-spacing:-.2px; }
+.phead .subt{ font-family:'Fraunces',serif; font-style:italic; font-size:15px; color:var(--teal-500); margin-top:3px; }
 
-.exercise{ background:var(--surface); border:1px solid var(--hair); border-left:4px solid var(--leaf-500);
-  border-radius:14px; padding:12px 18px; margin:9px 0; break-inside:avoid;
-  box-shadow:0 12px 30px -26px rgba(22,35,31,.5); }
-.exercise .top{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
-.exercise .top b{ font-size:14.5px; }
-.chip{ flex:none; font-size:10px; font-weight:600; color:var(--accent); background:rgba(79,158,28,.12);
-  border-radius:999px; padding:4px 10px; }
-.exlabel{ font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--leaf-600); font-weight:700; margin-top:2px; }
-.steps{ margin-top:9px; display:flex; flex-direction:column; gap:7px; }
-.steps li{ list-style:none; display:flex; gap:11px; font-size:11.5px; line-height:1.48; color:var(--ink); }
-.steps .num{ flex:none; width:19px; height:19px; border-radius:50%; background:var(--teal-500); color:#fff;
-  font-size:10.5px; font-weight:700; display:grid; place-items:center; }
-.notes{ margin-top:8px; }
-.notes .nl{ font-size:9.5px; letter-spacing:.06em; color:var(--ink-soft); font-style:italic; margin-bottom:6px; }
-/* Großzügige Schreiblinien wie im Referenz-Workbook – mehr Raum zum Ausfüllen. */
-.line{ border-bottom:1.4px solid #d9d3c4; height:26px; }
+.klabel{ font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700;
+  margin:20px 0 9px; break-after:avoid; }
+.klabel.teal{ color:var(--teal-500); }
+
+/* Zitat/Leitsatz im dunklen Navy-Callout (wie Referenz). */
+.callout{ break-inside:avoid; margin:6px 0 15px; border-radius:16px; padding:17px 22px; color:#eaf0ff;
+  background:
+    radial-gradient(70% 130% at 88% 0%, rgba(52,196,196,.26), transparent 60%),
+    linear-gradient(140deg,#08102a,#12244d); }
+.callout .k{ font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--leaf-500); }
+.callout .q{ font-family:'Fraunces',serif; font-style:italic; font-size:15.5px; line-height:1.5; margin-top:8px; color:#eef2ff; }
+
+.lead{ font-size:13.5px; line-height:1.62; color:#2c3a35; margin-bottom:12px; }
+.h3{ font-family:'Fraunces',serif; font-weight:600; font-size:18px; color:var(--navy-900); margin:16px 0 4px; break-after:avoid; }
+.body{ font-size:13.5px; line-height:1.62; color:#2c3a35; margin-bottom:9px; }
+
+/* Übungen schlicht wie in der Referenz: Serif-Titel + Teal-Label + nummerierte Schritte. */
+.ex{ break-inside:avoid; margin:12px 0 6px; }
+.ex .exhead{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
+.ex .extitle{ font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:var(--navy-900); }
+.chip{ flex:none; font-size:10px; font-weight:700; letter-spacing:.03em; color:var(--accent);
+  background:rgba(79,158,28,.12); border-radius:999px; padding:4px 11px; }
+.exlabel{ font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--teal-500); font-weight:700; margin-top:3px; }
+.steps{ margin-top:10px; list-style:none; counter-reset:st; }
+.steps li{ font-size:13.5px; line-height:1.55; color:#26332e; margin:6px 0; padding-left:23px; position:relative; }
+.steps li:before{ counter-increment:st; content:counter(st) "."; position:absolute; left:0; color:var(--teal-500); font-weight:700; }
+.notes{ margin-top:11px; }
+.notes .nl{ font-size:10px; letter-spacing:.06em; color:var(--ink-soft); font-style:italic; margin-bottom:8px; }
+
+/* Großzügige Schreiblinien wie im Referenz-Workbook – viel Raum zum Ausfüllen. */
+.line{ border-bottom:1.4px solid #d9d3c4; height:30px; }
 .line + .line{ margin-top:0; }
 
-.refitem{ break-inside:avoid; margin-bottom:7px; }
-.refitem .q{ font-size:12px; line-height:1.5; color:var(--ink); }
-.refitem.read .q{ padding-left:17px; position:relative; }
-.refitem.read .q::before{ content:""; position:absolute; left:0; top:6px; width:6px; height:6px;
+.refitem{ break-inside:avoid; margin-bottom:9px; }
+.refitem .q{ font-family:'Fraunces',serif; font-style:italic; font-size:14.5px; line-height:1.5; color:var(--navy-900); }
+.refitem.read .q{ font-family:'Inter',ui-sans-serif,sans-serif; font-style:normal; font-size:13.5px;
+  color:#2c3a35; padding-left:18px; position:relative; }
+.refitem.read .q::before{ content:""; position:absolute; left:0; top:7px; width:6px; height:6px;
   border-radius:50%; background:var(--teal-400); }
 
-.affirm{ break-inside:avoid; margin-top:10px; border-radius:14px; padding:12px 18px;
-  background:var(--surface); border:1px solid var(--hair); border-left:3px solid var(--teal-400); }
-.affirm .k{ font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:700; }
-.affirm p{ font-family:'Fraunces',serif; font-style:italic; font-size:15px; color:var(--ink); margin-top:5px; line-height:1.4; }
+/* Leitsatz/Kernbotschaft ebenfalls als dunkler Navy-Callout. */
+.affirm{ break-inside:avoid; margin-top:15px; border-radius:16px; padding:17px 22px; color:#eaf0ff;
+  background:
+    radial-gradient(70% 130% at 12% 0%, rgba(140,198,63,.22), transparent 60%),
+    linear-gradient(140deg,#08102a,#12244d); }
+.affirm .k{ font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--leaf-500); }
+.affirm p{ font-family:'Fraunces',serif; font-style:italic; font-size:16px; color:#eef2ff; margin-top:8px; line-height:1.45; }
 
 /* Reflexion + Leitsatz bleiben als Block zusammen (kein verwaister Kasten). */
 .closer{ break-inside:avoid; }
 
 /* Fußzeile am Ende des Inhalts (fixe Positionierung ist in Chromium beim
    PDF-Druck über mehrere Seiten unzuverlässig). */
-.docfoot{ margin-top:16px; padding-top:8px; border-top:1px solid var(--hair);
+.docfoot{ margin-top:22px; padding-top:9px; border-top:1px solid var(--hair);
   display:flex; justify-content:space-between; align-items:center;
-  font-size:9.5px; color:#9a9384; break-inside:avoid; }
+  font-size:10px; color:#9a9384; break-inside:avoid; }
 .docfoot .dom{ color:var(--accent); font-weight:600; }
 
 /* Arbeitsheft: Inhaltsverzeichnis + Stufen-Trenner */
-.toc h2{ font-family:'Fraunces',serif; font-weight:600; font-size:26px; margin-bottom:6px; }
-.toc .row{ display:flex; align-items:center; gap:15px; padding:11px 0; border-bottom:1px solid var(--hair); }
-.toc .n{ font-family:'Fraunces',serif; font-size:22px; color:var(--teal-500); width:38px; text-align:center; }
-.toc .n.g{ color:var(--gold-400); }
-.toc b{ font-size:14px; } .toc span{ display:block; font-size:11.5px; color:var(--ink-soft); }
+.toc h2{ font-family:'Fraunces',serif; font-weight:600; font-size:28px; color:var(--navy-900); margin-bottom:8px; }
+.toc .row{ display:flex; align-items:center; gap:15px; padding:12px 0; border-bottom:1px solid var(--hair); }
+.toc .disc{ flex:none; width:36px; height:36px; border-radius:50%;
+  background:linear-gradient(150deg,#8cc63f,#21b2bd); color:var(--navy-900);
+  font-family:'Fraunces',serif; font-weight:600; font-size:16px; display:grid; place-items:center; }
+.toc b{ font-size:15px; color:var(--navy-900); } .toc span{ display:block; font-size:12.5px; color:#2c3a35; }
 .stagebreak{ break-before:page; }
 """
 CSS = CSS.replace("/*__FONTS__*/", FONTS)
@@ -163,7 +170,7 @@ CSS = CSS.replace("/*__FONTS__*/", FONTS)
 def doc(inner, plain=False):
     # plain=True: kein randloses Deckblatt auf Seite 1 (z. B. Arbeitsheft-
     # Innenteil ohne Cover) – erste Seite bekommt denselben Rand wie alle.
-    extra = "@page:first{margin:12mm 0 14mm 0}" if plain else ""
+    extra = "@page:first{margin:16mm 17mm}" if plain else ""
     return ("<!doctype html><html lang='de'><head><meta charset='utf-8'>"
             "<style>" + CSS + extra + "</style></head><body>" + inner + "</body></html>")
 
@@ -191,19 +198,26 @@ def cover(eyebrow, title, sub, promise="", num=None, gold=False):
 
 # ---------------- Inhaltsseiten-Bausteine ----------------
 def chead(eyebrow, title, sub, num=None, gold=False):
-    numhtml = ('<div class="big serif%s">%s</div>' % (" gold" if gold else "", esc(num))) if num else ""
-    return ('<div class="chead">%s<div class="eyebrow">%s</div>'
-            '<h1>%s</h1><div class="sub">%s</div></div>'
-            ) % (numhtml, esc(eyebrow), esc(title), esc(sub))
+    # Heller Seitenkopf im Referenz-Stil: grün→teal Nummern-Disc (bei Stufen),
+    # grüner Kicker, Serif-Titel, teal-kursiver Untertitel. Kein Navy-Band.
+    disc = ('<div class="disc">%s</div>' % esc(str(int(num)))) if num else ""
+    return ('<div class="phead">%s<div>'
+            '<div class="kicker">%s</div>'
+            '<h1 class="serif">%s</h1>'
+            '<div class="subt">%s</div></div></div>'
+            ) % (disc, esc(eyebrow), esc(title), esc(sub))
+
+def quote_html(text, label="Kerngedanke"):
+    # Zitat im dunklen Navy-Callout wie im Referenz-Workbook.
+    return '<div class="callout"><div class="k">%s</div><div class="q">„%s“</div></div>' % (esc(label), esc(text))
 
 def exercise_html(ex, interactive):
-    steps = "".join('<li><span class="num">%d</span><span>%s</span></li>' % (i+1, esc(s))
-                    for i, s in enumerate(ex["steps"]))
+    steps = "".join('<li>%s</li>' % esc(s) for s in ex["steps"])
     dur = ('<span class="chip">%s</span>' % esc(ex["duration"].replace(", ", " · "))) if ex.get("duration") else ""
     notes = ('<div class="notes"><div class="nl">Meine Notizen</div>'
              '<div class="line"></div><div class="line"></div></div>') if interactive else ""
-    return ('<div class="exercise"><div class="top"><b>%s</b>%s</div>'
-            '<div class="exlabel">Übung</div><ul class="steps">%s</ul>%s</div>'
+    return ('<div class="ex"><div class="exhead"><div class="extitle serif">%s</div>%s</div>'
+            '<div class="exlabel">Übung</div><ol class="steps">%s</ol>%s</div>'
             ) % (esc(ex["title"]), dur, steps, notes)
 
 def reflection_html(questions, interactive):
@@ -235,12 +249,12 @@ def lesson_doc(stage, lesson):
         + '<div class="content">'
         + chead("Lektion · Stufe %s" % stage["number"], stage["title"], stage["subtitle"], stage["number"], gold)
         + '<div class="cbody">'
-        + '<div class="pquote"><p>„%s“</p></div>' % esc(lesson["keyIdea"])
+        + quote_html(lesson["keyIdea"])
         + '<div class="lead">%s</div>' % esc(lesson["intro"])
         + '<div class="klabel">Die Lektion</div>' + sections_html(lesson["sections"])
-        + '<div class="klabel">Deine Übungen</div>'
+        + '<div class="klabel teal">Deine Übungen</div>'
         + "".join(exercise_html(e, False) for e in lesson["exercises"])
-        + '<div class="closer"><div class="klabel">Zum Innehalten</div>' + reflection_html(lesson["reflection"], False)
+        + '<div class="closer"><div class="klabel teal">Zum Innehalten</div>' + reflection_html(lesson["reflection"], False)
         + affirm_html(lesson["affirmation"]) + '</div>'
         + docfoot(label)
         + '</div></div>'
@@ -256,10 +270,10 @@ def worksheet_doc(stage, lesson):
         + '<div class="content">'
         + chead("Arbeitsblatt · Stufe %s" % stage["number"], stage["title"], stage["subtitle"], stage["number"], gold)
         + '<div class="cbody">'
-        + '<div class="pquote"><p>„%s“</p></div>' % esc(lesson["keyIdea"])
-        + '<div class="klabel">Deine Übungen</div>'
+        + quote_html(lesson["keyIdea"])
+        + '<div class="klabel teal">Deine Übungen</div>'
         + "".join(exercise_html(e, True) for e in lesson["exercises"])
-        + '<div class="closer"><div class="klabel">Zum Innehalten</div>' + reflection_html(lesson["reflection"], True)
+        + '<div class="closer"><div class="klabel teal">Zum Innehalten</div>' + reflection_html(lesson["reflection"], True)
         + affirm_html(lesson["affirmation"]) + '</div>'
         + docfoot(label)
         + '</div></div>'
@@ -273,12 +287,12 @@ def deepdive_doc(d):
         + '<div class="content">'
         + chead("Vertiefung · %s" % d["category"], d["title"], d["subtitle"])
         + '<div class="cbody">'
-        + '<div class="pquote"><p>„%s“</p></div>' % esc(d["keyIdea"])
+        + quote_html(d["keyIdea"])
         + '<div class="lead">%s</div>' % esc(d["intro"])
         + '<div class="klabel">Die Vertiefung</div>' + sections_html(d["sections"])
-        + '<div class="klabel">Deine Übungen</div>'
+        + '<div class="klabel teal">Deine Übungen</div>'
         + "".join(exercise_html(e, False) for e in d["exercises"])
-        + '<div class="closer"><div class="klabel">Zum Innehalten</div>' + reflection_html(d["reflection"], False)
+        + '<div class="closer"><div class="klabel teal">Zum Innehalten</div>' + reflection_html(d["reflection"], False)
         + affirm_html(d["takeaway"], "Kernbotschaft") + '</div>'
         + docfoot(label)
         + '</div></div>'
@@ -295,9 +309,8 @@ def workbook_cover(stages):
 def workbook_body(stages, lessons):
     rows = ""
     for s in stages:
-        g = " g" if s["number"] == "07" else ""
-        rows += ('<div class="row"><div class="n%s">%s</div><div><b>%s</b>'
-                 '<span>%s</span></div></div>') % (g, s["number"], esc(s["title"]), esc(s["subtitle"]))
+        rows += ('<div class="row"><div class="disc">%s</div><div><b>%s</b>'
+                 '<span>%s</span></div></div>') % (str(int(s["number"])), esc(s["title"]), esc(s["subtitle"]))
     toc = '<div class="cbody"><div class="toc"><h2 class="serif">Inhalt</h2>%s</div></div>' % rows
     body = ""
     for s in stages:
@@ -307,12 +320,12 @@ def workbook_body(stages, lessons):
         body += '<div class="stagebreak">' + (
             chead("Stufe %s" % s["number"], s["title"], s["subtitle"], s["number"], gold)
             + '<div class="cbody">'
-            + '<div class="pquote"><p>„%s“</p></div>' % esc(lesson["keyIdea"])
+            + quote_html(lesson["keyIdea"])
             + '<div class="lead">%s</div>' % esc(lesson["intro"])
             + '<div class="klabel">Die Lektion</div>' + sections_html(lesson["sections"])
-            + '<div class="klabel">Deine Übungen</div>'
+            + '<div class="klabel teal">Deine Übungen</div>'
             + "".join(exercise_html(e, True) for e in lesson["exercises"])
-            + '<div class="closer"><div class="klabel">Zum Innehalten</div>' + reflection_html(lesson["reflection"], True)
+            + '<div class="closer"><div class="klabel teal">Zum Innehalten</div>' + reflection_html(lesson["reflection"], True)
             + affirm_html(lesson["affirmation"]) + '</div>'
             + docfoot(label)
             + '</div>'
