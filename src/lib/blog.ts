@@ -413,6 +413,10 @@ export const posts: Post[] = [
   },
   {
     slug: "framing-wie-ein-wort-deine-meinung-macht",
+    image: {
+      src: "/blog/framing.png",
+      alt: "Ein Mensch hält zwei gerahmte Bilder derselben Straße: links düster, brennend und zerstört – rechts sonnig, grün und friedlich. Dieselbe Wirklichkeit, zwei Rahmen.",
+    },
     title: "Framing: Wie ein einziges Wort deine Meinung macht",
     excerpt:
       "Investition oder Ausgabe, Reform oder Kürzung – dieselbe Wirklichkeit, zwei Gefühle. Wie sprachliche Rahmen dein Urteil lenken, bevor du überhaupt nachdenkst.",
@@ -1512,6 +1516,10 @@ export const posts: Post[] = [
   },
   {
     slug: "ablenkung-keine-luege-nur-laerm",
+    image: {
+      src: "/blog/ablenkung.png",
+      alt: "Ein Mensch liegt nachts um 2:47 Uhr wach im Bett und starrt aufs Handy, umgeben von unzähligen Benachrichtigungen – der Lärm, der nie aufhört.",
+    },
     title: "Ablenkung: Keine Lüge – nur Lärm",
     excerpt:
       "Man muss die Wahrheit nicht verbieten, wenn man sie im Lärm verschwinden lässt. Wie Ablenkung deine Aufmerksamkeit kapert und wie du deinen Fokus zurückholst.",
@@ -1634,6 +1642,10 @@ export const posts: Post[] = [
   },
   {
     slug: "bildmacht-ein-bild-ist-kein-beweis",
+    image: {
+      src: "/blog/bildmacht.png",
+      alt: "Eine Frau blickt auf ihr Smartphone, umgeben von einer Wand aus dramatischen Medienbildern – Explosionen, Gesichter und Konflikte, die schneller wirken als jedes Argument.",
+    },
     title: "Bildmacht: Warum ein Bild kein Beweis ist",
     excerpt:
       "Ein Bild überzeugt schneller als jedes Argument – und genau darin liegt die Gefahr. Warum Bilder am kritischen Denken vorbeigehen und wie du sie wieder lesen lernst.",
