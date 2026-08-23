@@ -360,6 +360,10 @@ export const posts: Post[] = [
   },
   {
     slug: "was-mein-hund-mich-ueber-praesenz-lehrt",
+    image: {
+      src: "/blog/hund-praesenz.png",
+      alt: "Ein Mann sitzt mit seinem Hund an einem Bach im grünen Wald – beide ganz im Moment, aufmerksam und ohne Ablenkung.",
+    },
     title: "Was mein Hund mich über Präsenz lehrt",
     excerpt:
       "Ein Hund kennt kein Gestern und kein Morgen – nur das Jetzt. Warum das Zusammenleben mit ihm dein Bewusstsein trainiert.",
