@@ -20,8 +20,7 @@ def enc(p, mime):
 
 FONTS = open(os.path.join(ASSETS, "fonts.css")).read()
 LOGO  = enc(os.path.join(ROOT, "public/logo-brain.png"), "image/png")
-# Deckblatt-Motive aus dem Workshop, damit die Cover identisch aussehen.
-BG_TITLE = enc(os.path.join(WS_ASSETS, "bg-title.png"), "image/png")
+# Gehirn-Motiv aus dem Workshop, damit die Cover identisch zum Referenz-Workbook sind.
 BRAIN_WS = enc(os.path.join(WS_ASSETS, "brain.png"), "image/png")
 C = json.load(open(os.path.join(BUILD, "content.json"), encoding="utf-8"))
 
@@ -52,8 +51,12 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
    DECKBLATT  (Workbook-Stil: zentriert, Gehirn mittig, Name-Zeile)
    ============================================================ */
 .cover{ position:relative; width:210mm; height:297mm; overflow:hidden; color:#eaf0ff;
-  background:#08102a; z-index:5; }
-.cover .bg{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+  /* Verlaufs-Hintergrund wie im Referenz-Workbook (WMDG-Workbook-7-Stufen) */
+  background:
+    radial-gradient(120% 80% at 82% 6%, rgba(52,196,196,.20), transparent 55%),
+    radial-gradient(90% 60% at 12% 98%, rgba(140,198,63,.14), transparent 55%),
+    linear-gradient(158deg,#0a1330,#0a1024);
+  z-index:5; }
 .cover .inner{ position:relative; z-index:2; height:100%; padding:30mm 24mm;
   display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
 .cover .brandrow{ position:absolute; top:20mm; left:0; right:0; display:flex; justify-content:center;
@@ -61,13 +64,13 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .cover .brandrow img{ width:30px; height:30px; }
 .cover .brandrow span{ font-size:10px; letter-spacing:.24em; text-transform:uppercase;
   color:var(--teal-300); font-weight:600; line-height:1.3; text-align:left; }
-.cover .eyebrow{ font-size:12px; letter-spacing:.28em; text-transform:uppercase;
-  color:var(--leaf-400); font-weight:700; margin-bottom:9mm; }
-.cover .brain{ width:52mm; height:auto; filter:drop-shadow(0 6px 34px rgba(52,196,196,.4)); }
-.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:45px; line-height:1.1;
-  margin-top:10mm; letter-spacing:-.4px; max-width:160mm; text-shadow:0 2px 30px rgba(3,8,20,.7); }
-.cover h1 .ac{ color:var(--teal-300); }
-.cover .sub{ margin-top:6mm; font-size:15px; line-height:1.55; color:#c6d2ea; max-width:125mm;
+.cover .eyebrow{ font-size:13px; letter-spacing:.34em; text-transform:uppercase;
+  color:var(--leaf-500); font-weight:700; margin-bottom:7mm; }
+.cover .brain{ width:40mm; height:auto; filter:drop-shadow(0 8px 30px rgba(52,196,196,.35)); }
+.cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:40px; line-height:1.16;
+  margin-top:8mm; letter-spacing:-.3px; max-width:160mm; text-shadow:0 2px 30px rgba(3,8,20,.7); }
+.cover h1 .ac{ color:var(--teal-400); }
+.cover .sub{ margin-top:6mm; font-size:15px; line-height:1.55; color:#c6cfe6; max-width:125mm;
   text-shadow:0 1px 16px rgba(3,8,20,.85); }
 .cover .namerow{ position:absolute; left:24mm; right:24mm; bottom:18mm; z-index:2;
   display:flex; justify-content:center; align-items:center; gap:12px; font-size:12px; color:#a7b4d0; }
@@ -104,9 +107,9 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .klabel:first-of-type{ margin-top:0; }
 .pquote{ border-left:3px solid var(--teal-400); padding:2px 0 2px 18px; margin:3px 0 11px; break-inside:avoid; }
 .pquote p{ font-family:'Fraunces',serif; font-style:italic; font-size:17.5px; line-height:1.38; color:var(--ink); }
-.lead{ font-size:12.5px; line-height:1.58; color:var(--ink-soft); margin-bottom:11px; }
+.lead{ font-size:13px; line-height:1.6; color:var(--ink-soft); margin-bottom:11px; }
 .h3{ font-family:'Fraunces',serif; font-weight:600; font-size:15px; color:var(--ink); margin:12px 0 4px; break-after:avoid; }
-.body{ font-size:11.5px; line-height:1.58; color:var(--ink-soft); margin-bottom:6px; }
+.body{ font-size:12px; line-height:1.6; color:#3a453f; margin-bottom:6px; }
 
 .exercise{ background:var(--surface); border:1px solid var(--hair); border-left:4px solid var(--leaf-500);
   border-radius:14px; padding:12px 18px; margin:9px 0; break-inside:avoid;
@@ -122,7 +125,8 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
   font-size:10.5px; font-weight:700; display:grid; place-items:center; }
 .notes{ margin-top:8px; }
 .notes .nl{ font-size:9.5px; letter-spacing:.06em; color:var(--ink-soft); font-style:italic; margin-bottom:6px; }
-.line{ border-bottom:1px solid #cfc9ba; height:15px; }
+/* Großzügige Schreiblinien wie im Referenz-Workbook – mehr Raum zum Ausfüllen. */
+.line{ border-bottom:1.4px solid #d9d3c4; height:26px; }
 .line + .line{ margin-top:0; }
 
 .refitem{ break-inside:avoid; margin-bottom:7px; }
@@ -173,7 +177,7 @@ def cover(eyebrow, title, sub, promise="", num=None, gold=False):
     else:
         titled = esc(title)
     return (
-        '<div class="cover"><img class="bg" src="%s">'
+        '<div class="cover">'
         '<div class="inner">'
         '<div class="eyebrow">%s</div>'
         '<img class="brain" src="%s">'
@@ -183,7 +187,7 @@ def cover(eyebrow, title, sub, promise="", num=None, gold=False):
         '<div class="namerow"><span class="nm">Name:<span class="ln"></span></span>'
         '<span class="sep">·</span><span class="dom">werdemeisterdeinergedanken.de</span></div>'
         '</div>'
-    ) % (BG_TITLE, esc(eyebrow), BRAIN_WS, titled, esc(sub))
+    ) % (esc(eyebrow), BRAIN_WS, titled, esc(sub))
 
 # ---------------- Inhaltsseiten-Bausteine ----------------
 def chead(eyebrow, title, sub, num=None, gold=False):
