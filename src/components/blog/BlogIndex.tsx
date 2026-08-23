@@ -24,6 +24,8 @@ export type BlogCard = {
   accent?: AccentKey;
   /** Optionaler Cover-Seed; sonst = slug. */
   coverSeed?: string;
+  /** Optionales redaktionelles Titelbild; ersetzt das generative Cover. */
+  image?: { src: string; alt: string };
 };
 
 const ALL = "Alle";
@@ -172,25 +174,47 @@ function FeaturedCard({ post }: { post: BlogCard }) {
           </span>
         </div>
 
-        {/* Hero-Bild: leuchtendes Gehirn aus Datenpunkten (wie auf der Startseite) */}
-        <div className="relative hidden lg:block">
-          <div className="relative mx-auto w-fit">
+        {/* Rechtes Panel: echtes Titelbild, sonst das leuchtende Marken-Gehirn */}
+        {post.image ? (
+          <div className="relative hidden lg:block">
             <div
               aria-hidden
-              className="absolute -inset-6 rounded-full opacity-70 blur-2xl"
+              className="absolute -inset-4 rounded-3xl opacity-60 blur-2xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 34%, transparent), transparent 66%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 30%, transparent), transparent 68%)",
               }}
             />
-            <Image
-              src={brainLogo}
-              alt=""
-              aria-hidden
-              className="relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(52,196,196,0.4)]"
-            />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl ring-1 ring-white/10">
+              <Image
+                src={post.image.src}
+                alt={post.image.alt}
+                fill
+                sizes="(min-width: 1024px) 420px, 0px"
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="relative hidden lg:block">
+            <div className="relative mx-auto w-fit">
+              <div
+                aria-hidden
+                className="absolute -inset-6 rounded-full opacity-70 blur-2xl"
+                style={{
+                  background:
+                    "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 34%, transparent), transparent 66%)",
+                }}
+              />
+              <Image
+                src={brainLogo}
+                alt=""
+                aria-hidden
+                className="relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(52,196,196,0.4)]"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </Link>
   );
@@ -202,11 +226,23 @@ function PostCard({ post }: { post: BlogCard }) {
       href={`/blog/${post.slug}`}
       className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg"
     >
-      <BlogCover
-        seed={post.coverSeed ?? post.slug}
-        accent={accentFor(post)}
-        className="aspect-[16/10] w-full"
-      />
+      {post.image ? (
+        <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy-900">
+          <Image
+            src={post.image.src}
+            alt={post.image.alt}
+            fill
+            sizes="(min-width: 1024px) 384px, (min-width: 768px) 50vw, 100vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </div>
+      ) : (
+        <BlogCover
+          seed={post.coverSeed ?? post.slug}
+          accent={accentFor(post)}
+          className="aspect-[16/10] w-full"
+        />
+      )}
 
       <div className="flex flex-1 flex-col p-6">
         <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">

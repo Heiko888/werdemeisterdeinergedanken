@@ -193,8 +193,25 @@ export default async function BlogPostPage({
         </Container>
       </header>
 
+      {/* Titelbild – überlappt den dunklen Header für einen redaktionellen
+          Übergang. Nur wenn ein redaktionelles Bild hinterlegt ist. */}
+      {post.image && (
+        <Container size="narrow" className="relative z-10 -mt-8 sm:-mt-12">
+          <figure className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-xl ring-1 ring-white/10">
+            <Image
+              src={post.image.src}
+              alt={post.image.alt}
+              fill
+              priority
+              sizes="(min-width: 768px) 768px, 100vw"
+              className="object-cover"
+            />
+          </figure>
+        </Container>
+      )}
+
       {/* Artikel-Inhalt */}
-      <article className="py-16 sm:py-20">
+      <article className={post.image ? "pt-10 pb-16 sm:pt-14 sm:pb-20" : "py-16 sm:py-20"}>
         <Container size="narrow">
           <div className="flex flex-col gap-7 sm:gap-8">
             <p className="prose-lead">{post.excerpt}</p>

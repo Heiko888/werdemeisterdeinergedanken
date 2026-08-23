@@ -15,6 +15,16 @@ export type Block =
   | { type: "quote"; text: string }
   | { type: "ul"; items: string[] };
 
+/**
+ * Redaktionelles Artikelbild. Liegt unter `/public` (z. B.
+ * `/blog/placebo-effekt.png`). Der `alt`-Text ist Pflicht – er trägt sowohl die
+ * Barrierefreiheit als auch die Bildunterschrift im Artikel.
+ */
+export type PostImage = {
+  src: string;
+  alt: string;
+};
+
 /** Kontextabhängiger Abschluss-CTA eines Artikels. */
 export type CtaVariant = "erstgespraech" | "ebook" | "stufen" | "test";
 
@@ -28,6 +38,11 @@ export type Post = {
   readingMinutes: number;
   /** Optionaler Override für das generierte Cover-Motiv (sonst = slug). */
   coverSeed?: string;
+  /**
+   * Optionales redaktionelles Titelbild. Ist es gesetzt, ersetzt es in
+   * Übersicht und Artikelkopf das generative Cover-Motiv.
+   */
+  image?: PostImage;
   /** Optionaler Farb-Override; sonst aus der Kategorie abgeleitet. */
   accent?: AccentKey;
   /** Optionaler CTA-Override am Artikelende; sonst aus der Kategorie. */
@@ -188,6 +203,10 @@ export const posts: Post[] = [
   },
   {
     slug: "du-bist-nicht-deine-gedanken",
+    image: {
+      src: "/blog/innerer-beobachter.png",
+      alt: "Ein Mann betrachtet sein Spiegelbild, das in viele Facetten zerbricht – der Beobachter tritt neben seine eigenen Gedanken.",
+    },
     title: "Du bist nicht deine Gedanken",
     excerpt:
       "Der wichtigste Perspektivwechsel auf dem Weg zu einem klaren Kopf – und warum er alles verändert.",
@@ -443,6 +462,10 @@ export const posts: Post[] = [
   },
   {
     slug: "filterblase-warum-dein-feed-nicht-die-welt-ist",
+    image: {
+      src: "/blog/filterblase.png",
+      alt: "Ein Mensch sitzt in einer Blase aus perfekt kuratierten Bildern, während die reale Welt im Dunkeln an ihm vorbeigeht.",
+    },
     title: "Die Filterblase: Warum dein Feed nicht die Welt ist",
     excerpt:
       "Online siehst du keine Wirklichkeit, sondern eine Auswahl, die auf deinem Verhalten beruht. Wie Algorithmen dein Weltbild formen – und wie du gegensteuerst.",
@@ -504,6 +527,10 @@ export const posts: Post[] = [
   },
   {
     slug: "warum-oft-gehoert-sich-wie-wahr-anfuehlt",
+    image: {
+      src: "/blog/wiederholung.png",
+      alt: "Viele Bildschirme zeigen denselben Nachrichtensprecher – dieselbe Botschaft, immer und immer wiederholt, bis sie vertraut wirkt.",
+    },
     title: "Warum sich „oft gehört“ wie „wahr“ anfühlt",
     excerpt:
       "Der Wiederholungseffekt: Je öfter du eine Aussage hörst, desto wahrer erscheint sie – ganz ohne Beweis. Wie das funktioniert und wie du dich davor schützt.",
@@ -614,6 +641,10 @@ export const posts: Post[] = [
   },
   {
     slug: "propaganda-erkennst-du-nicht-an-lauten-parolen",
+    image: {
+      src: "/blog/propaganda.png",
+      alt: "Eine Menge blickt auf eine überlebensgroße Leinwand mit einem lautstark auftretenden Redner – Zustimmung als Zeichen von Zugehörigkeit.",
+    },
     title: "Propaganda erkennst du nicht an lauten Parolen",
     excerpt:
       "Die wirksamste Beeinflussung zwingt dir keine Meinung auf. Sie arbeitet leise – über Wiederholung, Emotion und Vereinfachung, ganz ohne eine einzige Lüge.",
@@ -720,6 +751,10 @@ export const posts: Post[] = [
   },
   {
     slug: "gruppendruck-und-die-schweigespirale",
+    image: {
+      src: "/blog/gruppendruck.png",
+      alt: "Ein Mensch mit offenem Gesicht steht inmitten einer Menge weiß maskierter Gestalten – einer, der nicht mitschweigt.",
+    },
     title: "Gruppendruck: Warum wir schweigen, obwohl wir zweifeln",
     excerpt:
       "Die Angst vor Ausgrenzung sitzt tiefer als jedes Argument. Wie die Schweigespirale eine Mehrheit vortäuscht, die es oft gar nicht gibt.",
@@ -882,6 +917,10 @@ export const posts: Post[] = [
   // === Serie: „Die Wissenschaft dahinter“ ===============================
   {
     slug: "entscheidest-du-oder-dein-gehirn",
+    image: {
+      src: "/blog/freier-wille.png",
+      alt: "Ein Mensch steht am Scheideweg zwischen einem dunklen Weg aus Konditionierung und einem hellen Weg aus bewusster Wahl.",
+    },
     title: "Entscheidest du – oder entscheidet dein Gehirn?",
     excerpt:
       "Was Hirnforschung über den freien Willen wirklich sagt – und warum die berühmten Libet-Experimente kein Grund sind, das Denken aufzugeben, sondern es zu trainieren.",
@@ -946,6 +985,10 @@ export const posts: Post[] = [
   },
   {
     slug: "neuroplastizitaet-warum-dein-gehirn-formbar-ist",
+    image: {
+      src: "/blog/neuroplastizitaet.png",
+      alt: "Ein Gehirn, dessen neuronales Netz von kühlem Blau in leuchtendes Gold übergeht – Verbindungen, die sich lebenslang neu verdrahten.",
+    },
     title: "Neuroplastizität: Warum sich dein Gehirn ein Leben lang verändert",
     excerpt:
       "Taxifahrer mit größerem Hippocampus, Jongleure mit mehr grauer Substanz: Was die Forschung über die Formbarkeit deines Gehirns weiß – und wie du sie für dich nutzt.",
@@ -1002,6 +1045,10 @@ export const posts: Post[] = [
   },
   {
     slug: "gefuehle-benennen-beruhigt-das-gehirn",
+    image: {
+      src: "/blog/gefuehle-benennen.png",
+      alt: "Eine Frau mit geschlossenen Augen benennt ihre Gefühle; aus dem dunklen Sturm links werden rechts klar benannte Emotionen.",
+    },
     title: "Warum ein Gefühl zu benennen dein Gehirn beruhigt",
     excerpt:
       "„Name it to tame it“: Eine bekannte Hirnstudie zeigt, dass schon das Benennen einer Emotion die Alarmzentrale im Gehirn herunterfährt. Die Wissenschaft hinter einem einfachen Werkzeug.",
@@ -1102,6 +1149,10 @@ export const posts: Post[] = [
   },
   {
     slug: "das-asch-experiment-warum-wir-mitmachen",
+    image: {
+      src: "/blog/asch-experiment.png",
+      alt: "Sieben Menschen blicken in dieselbe Richtung, einer dreht sich gegen den Strom – der Moment, in dem einer der Mehrheit widerspricht.",
+    },
     title: "Das Asch-Experiment: Warum wir mitmachen, obwohl wir es besser wissen",
     excerpt:
       "Ein simples Experiment mit ein paar Linien zeigt, wie leicht die Gruppe unser Urteil verbiegt – und was das über deine eigenen „Überzeugungen“ verrät.",
@@ -1150,6 +1201,10 @@ export const posts: Post[] = [
   },
   {
     slug: "der-placebo-effekt-wie-erwartung-wirkt",
+    image: {
+      src: "/blog/placebo-effekt.png",
+      alt: "Eine offene Hand hält eine Tablette; darüber leuchtet ein vernetztes Gehirn – die Erwartung wirkt bis in die Körperchemie hinein.",
+    },
     title: "Der Placebo-Effekt: Wie eine Erwartung deinen Körper verändert",
     excerpt:
       "Eine Tablette ohne Wirkstoff, die trotzdem hilft: Der Placebo-Effekt ist kein Trick der Einbildung, sondern messbare Biologie – und ein Beleg dafür, wie stark Überzeugungen wirken.",
