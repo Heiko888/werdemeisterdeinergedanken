@@ -21,6 +21,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "gruebeln": "/hero-gruebeln.webp",
   "konditionierung": "/hero-vertiefung-konditionierung.webp",
   "kernueberzeugungen": "/hero-kernueberzeugungen.webp",
+  "innerer-kritiker": "/hero-innerer-kritiker.webp",
 };
 
 export function generateStaticParams() {
