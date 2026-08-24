@@ -38,6 +38,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "autoritaetshoerigkeit": "/hero-autoritaet.webp",
   "angst-steuerung": "/hero-angst-steuerung.webp",
   "wiederholung-wahrheit": "/hero-wiederholung.webp",
+  "ablenkung": "/hero-ablenkung.webp",
 };
 
 export function generateStaticParams() {
