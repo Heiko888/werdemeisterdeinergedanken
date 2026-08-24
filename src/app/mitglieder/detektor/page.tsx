@@ -1,5 +1,6 @@
 import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -36,12 +37,29 @@ export default async function DetektorPage() {
   return (
     <>
       <section className="member-hero overflow-hidden py-16 sm:py-20">
+        {/* Titelbild – der Puppenspieler an den Fäden: reine Dekoration hinter
+            dem Text, deshalb bewusst alt="". Darüber ein Navy-Schleier (links
+            am dichtesten, damit die Überschrift und der Fließtext lesbar
+            bleiben) und zuletzt der übliche APP_GLOW für den Farbton. */}
+        <Image
+          src="/hero-detektor.webp"
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="z-0 object-cover object-center"
+        />
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
+          className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-navy-950/55"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0"
           style={{ background: APP_GLOW }}
         />
-        <Container className="flex flex-col items-start gap-5">
+        <Container className="relative z-10 flex flex-col items-start gap-5">
           <Link
             href="/mitglieder"
             className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
