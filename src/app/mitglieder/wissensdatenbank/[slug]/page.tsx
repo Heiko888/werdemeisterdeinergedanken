@@ -8,6 +8,12 @@ import { ArrowRight } from "@/components/ui/Icon";
 import { MarkdownDoc } from "@/components/wissen/MarkdownDoc";
 import { chapterSlugs, getDoc } from "@/lib/wissensdatenbank";
 
+// Optionale Titelbilder pro Kapitel – nur Kapitel mit einem Eintrag bekommen
+// ein vollflächiges Hero-Bild, alle anderen den reinen Verlauf-Hero.
+const CHAPTER_HERO_IMAGES: Record<string, string> = {
+  "01-neuroanatomie-aufbau-des-gehirns": "/hero-anatomie.webp",
+};
+
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
 export function generateStaticParams() {
   return [...chapterSlugs(), "glossar"].map((slug) => ({ slug }));
@@ -54,6 +60,7 @@ export default async function WissenDocPage({
         }
         title={doc.title}
         intro={doc.lead || undefined}
+        image={CHAPTER_HERO_IMAGES[slug]}
       />
 
       <article className="py-14 sm:py-18">
