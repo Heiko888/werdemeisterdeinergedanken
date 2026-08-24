@@ -19,6 +19,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "kognitive-verzerrungen": "/hero-vertiefung-verzerrungen.webp",
   "reiz-reaktions-luecke": "/hero-reiz-reaktion.webp",
   "gruebeln": "/hero-gruebeln.webp",
+  "konditionierung": "/hero-vertiefung-konditionierung.webp",
 };
 
 export function generateStaticParams() {
