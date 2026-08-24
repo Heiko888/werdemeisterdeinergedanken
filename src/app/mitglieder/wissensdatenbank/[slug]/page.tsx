@@ -31,6 +31,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "16-belohnung-motivation-und-sucht": "/hero-belohnung.webp",
   "20-gehirngesundheit-schlaf-bewegung-ernaehrung": "/hero-gehirngesundheit.webp",
   "22-gehirn-und-koerper-interozeption": "/hero-interozeption.webp",
+  "13-kognitive-verzerrungen-und-selbsttaeuschung": "/hero-verzerrungen.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
