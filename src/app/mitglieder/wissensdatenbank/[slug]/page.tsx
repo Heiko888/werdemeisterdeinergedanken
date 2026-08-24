@@ -37,6 +37,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "21-entwicklung-und-alterung-des-gehirns": "/hero-entwicklung.webp",
   "24-psychische-gesundheit-neurowissenschaftlich": "/hero-psychische-gesundheit.webp",
   "25-ki-maschinen-und-bewusstsein": "/hero-ki.webp",
+  "26-placebo-nocebo-und-erwartung": "/hero-placebo.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
