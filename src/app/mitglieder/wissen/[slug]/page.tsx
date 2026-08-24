@@ -39,6 +39,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "angst-steuerung": "/hero-angst-steuerung.webp",
   "wiederholung-wahrheit": "/hero-wiederholung.webp",
   "ablenkung": "/hero-ablenkung.webp",
+  "kognitive-dissonanz": "/hero-dissonanz.webp",
 };
 
 export function generateStaticParams() {
