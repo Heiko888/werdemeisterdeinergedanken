@@ -20,6 +20,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "reiz-reaktions-luecke": "/hero-reiz-reaktion.webp",
   "gruebeln": "/hero-gruebeln.webp",
   "konditionierung": "/hero-vertiefung-konditionierung.webp",
+  "kernueberzeugungen": "/hero-kernueberzeugungen.webp",
 };
 
 export function generateStaticParams() {
