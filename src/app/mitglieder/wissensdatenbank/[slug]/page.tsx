@@ -22,6 +22,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "08-gedaechtnis-und-lernen": "/hero-gedaechtnis.webp",
   "09-emotionen-und-limbisches-system": "/hero-emotionen.webp",
   "10-freier-wille-und-entscheidung": "/hero-freier-wille.webp",
+  "18-konditionierung-und-lernen": "/hero-konditionierung.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
