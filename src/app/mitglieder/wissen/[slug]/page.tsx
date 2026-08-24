@@ -43,6 +43,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "normalisierung": "/hero-normalisierung.webp",
   "bildmacht": "/hero-bildmacht.webp",
   "identitaet-und-meinung": "/hero-identitaet-meinung.webp",
+  "reizueberflutung": "/hero-reizueberflutung.webp",
 };
 
 export function generateStaticParams() {
