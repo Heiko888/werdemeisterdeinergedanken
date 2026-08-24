@@ -28,6 +28,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "12-veraenderte-bewusstseinszustaende": "/hero-bewusstseinszustaende.webp",
   "14-gewohnheiten-und-verhaltensaenderung": "/hero-gewohnheiten.webp",
   "15-stress-angst-und-trauma": "/hero-stress.webp",
+  "16-belohnung-motivation-und-sucht": "/hero-belohnung.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
