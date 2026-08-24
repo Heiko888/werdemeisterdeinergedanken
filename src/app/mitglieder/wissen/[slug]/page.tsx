@@ -42,6 +42,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "kognitive-dissonanz": "/hero-dissonanz.webp",
   "normalisierung": "/hero-normalisierung.webp",
   "bildmacht": "/hero-bildmacht.webp",
+  "identitaet-und-meinung": "/hero-identitaet-meinung.webp",
 };
 
 export function generateStaticParams() {
