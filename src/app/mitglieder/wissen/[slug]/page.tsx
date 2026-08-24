@@ -17,6 +17,7 @@ import { site } from "@/lib/site";
 const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "automatische-gedanken": "/hero-automatische-gedanken.webp",
   "kognitive-verzerrungen": "/hero-vertiefung-verzerrungen.webp",
+  "reiz-reaktions-luecke": "/hero-reiz-reaktion.webp",
 };
 
 export function generateStaticParams() {
