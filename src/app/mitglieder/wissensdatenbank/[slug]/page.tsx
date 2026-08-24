@@ -13,6 +13,7 @@ import { chapterSlugs, getDoc } from "@/lib/wissensdatenbank";
 const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "01-neuroanatomie-aufbau-des-gehirns": "/hero-anatomie.webp",
   "02-neuronen-synapsen-neurotransmitter": "/hero-neuronen.webp",
+  "03-neuroplastizitaet": "/hero-neuroplastizitaet.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
