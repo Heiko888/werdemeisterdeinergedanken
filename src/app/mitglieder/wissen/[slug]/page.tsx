@@ -16,6 +16,7 @@ import { site } from "@/lib/site";
 // bekommen ein vollflächiges Hero-Bild, alle anderen den reinen Verlauf-Hero.
 const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "automatische-gedanken": "/hero-automatische-gedanken.webp",
+  "kognitive-verzerrungen": "/hero-vertiefung-verzerrungen.webp",
 };
 
 export function generateStaticParams() {
