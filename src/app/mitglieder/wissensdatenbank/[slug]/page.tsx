@@ -20,6 +20,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "27-das-unbewusste": "/hero-unbewusste.webp",
   "07-gedanken-und-kognition": "/hero-gedanken.webp",
   "08-gedaechtnis-und-lernen": "/hero-gedaechtnis.webp",
+  "09-emotionen-und-limbisches-system": "/hero-emotionen.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
