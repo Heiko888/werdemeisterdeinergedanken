@@ -27,6 +27,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "emotionsregulation": "/hero-emotionsregulation.webp",
   "werte-und-ziele": "/hero-werte-ziele.webp",
   "integration-und-weitergabe": "/hero-integration.webp",
+  "muster-und-koerper": "/hero-muster-koerper.webp",
 };
 
 export function generateStaticParams() {
