@@ -35,6 +35,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "17-das-selbst-und-identitaet": "/hero-selbst.webp",
   "19-das-soziale-gehirn-und-beeinflussung": "/hero-soziales-gehirn.webp",
   "21-entwicklung-und-alterung-des-gehirns": "/hero-entwicklung.webp",
+  "24-psychische-gesundheit-neurowissenschaftlich": "/hero-psychische-gesundheit.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
