@@ -30,6 +30,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "muster-und-koerper": "/hero-muster-koerper.webp",
   "propaganda": "/hero-propaganda.webp",
   "framing": "/hero-framing.webp",
+  "sprache-und-etiketten": "/hero-sprache-etiketten.webp",
 };
 
 export function generateStaticParams() {
