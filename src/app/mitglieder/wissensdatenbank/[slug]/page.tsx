@@ -32,6 +32,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "20-gehirngesundheit-schlaf-bewegung-ernaehrung": "/hero-gehirngesundheit.webp",
   "22-gehirn-und-koerper-interozeption": "/hero-interozeption.webp",
   "13-kognitive-verzerrungen-und-selbsttaeuschung": "/hero-verzerrungen.webp",
+  "17-das-selbst-und-identitaet": "/hero-selbst.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
