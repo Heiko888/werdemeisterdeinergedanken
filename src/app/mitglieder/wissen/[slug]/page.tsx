@@ -12,6 +12,29 @@ import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { LessonHero } from "@/components/members/LessonHero";
 import { site } from "@/lib/site";
 
+// Optionale Titelbilder pro Vertiefung – nur Vertiefungen mit einem Eintrag
+// bekommen ein vollflächiges Hero-Bild, alle anderen den reinen Verlauf-Hero.
+const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
+  "automatische-gedanken": "/hero-automatische-gedanken.webp",
+  "kognitive-verzerrungen": "/hero-vertiefung-verzerrungen.webp",
+  "reiz-reaktions-luecke": "/hero-reiz-reaktion.webp",
+  "gruebeln": "/hero-gruebeln.webp",
+  "konditionierung": "/hero-vertiefung-konditionierung.webp",
+  "kernueberzeugungen": "/hero-kernueberzeugungen.webp",
+  "innerer-kritiker": "/hero-innerer-kritiker.webp",
+  "selbstmitgefuehl": "/hero-selbstmitgefuehl.webp",
+  "neuroplastizitaet": "/hero-vertiefung-neuroplastizitaet.webp",
+  "emotionsregulation": "/hero-emotionsregulation.webp",
+  "werte-und-ziele": "/hero-werte-ziele.webp",
+  "integration-und-weitergabe": "/hero-integration.webp",
+  "muster-und-koerper": "/hero-muster-koerper.webp",
+  "propaganda": "/hero-propaganda.webp",
+  "framing": "/hero-framing.webp",
+  "sprache-und-etiketten": "/hero-sprache-etiketten.webp",
+  "medien-agenda": "/hero-medien-agenda.webp",
+  "algorithmen": "/hero-algorithmen.webp",
+};
+
 export function generateStaticParams() {
   return deepDives.map((d) => ({ slug: d.slug }));
 }
@@ -48,6 +71,7 @@ export default async function DeepDivePage({
         eyebrow={`Vertiefung · ${dive.category}`}
         title={dive.title}
         subtitle={dive.subtitle}
+        image={DEEPDIVE_HERO_IMAGES[dive.slug]}
       />
 
       {/* Inhalt */}
