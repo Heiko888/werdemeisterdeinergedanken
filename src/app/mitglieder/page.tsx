@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -120,7 +121,23 @@ export default async function MembersPage() {
     <>
       {/* Kopf – dunkle Navy-Kopfzone (Marken-Blau) */}
       <section className="member-hero overflow-hidden py-16 sm:py-20">
-        <Container className="flex flex-col items-start gap-4">
+        {/* Titelbild – leuchtendes Gehirn über dem Weg: reine Dekoration hinter
+            dem Text (deshalb alt=""). Darüber ein nach links dichter werdender
+            Navy-Schleier, damit Begrüßung und Buttons lesbar bleiben. */}
+        <Image
+          src="/hero-mitglieder.webp"
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="z-0 object-cover object-center"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-navy-950/55"
+        />
+        <Container className="relative z-10 flex flex-col items-start gap-4">
           <Eyebrow>Mein Bereich</Eyebrow>
           <div className="flex w-full flex-wrap items-end justify-between gap-4">
             <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
