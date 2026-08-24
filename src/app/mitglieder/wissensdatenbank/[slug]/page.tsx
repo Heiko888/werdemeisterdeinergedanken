@@ -15,6 +15,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "02-neuronen-synapsen-neurotransmitter": "/hero-neuronen.webp",
   "03-neuroplastizitaet": "/hero-neuroplastizitaet.webp",
   "04-theorien-des-bewusstseins": "/hero-bewusstsein.webp",
+  "05-neuronale-korrelate-des-bewusstseins": "/hero-ncc.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
