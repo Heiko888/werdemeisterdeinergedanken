@@ -35,6 +35,15 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "algorithmen": "/hero-algorithmen.webp",
   "werbung-und-mangel": "/hero-werbung-mangel.webp",
   "gruppendruck": "/hero-gruppendruck.webp",
+  "autoritaetshoerigkeit": "/hero-autoritaet.webp",
+  "angst-steuerung": "/hero-angst-steuerung.webp",
+  "wiederholung-wahrheit": "/hero-wiederholung.webp",
+  "ablenkung": "/hero-ablenkung.webp",
+  "kognitive-dissonanz": "/hero-dissonanz.webp",
+  "normalisierung": "/hero-normalisierung.webp",
+  "bildmacht": "/hero-bildmacht.webp",
+  "identitaet-und-meinung": "/hero-identitaet-meinung.webp",
+  "reizueberflutung": "/hero-reizueberflutung.webp",
 };
 
 export function generateStaticParams() {
