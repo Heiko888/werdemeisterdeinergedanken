@@ -28,6 +28,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "werte-und-ziele": "/hero-werte-ziele.webp",
   "integration-und-weitergabe": "/hero-integration.webp",
   "muster-und-koerper": "/hero-muster-koerper.webp",
+  "propaganda": "/hero-propaganda.webp",
 };
 
 export function generateStaticParams() {
