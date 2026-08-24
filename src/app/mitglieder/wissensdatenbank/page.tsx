@@ -28,6 +28,7 @@ export default function WissenPage() {
           </>
         }
         intro="27 Kapitel, wissenschaftlich fundiert und ehrlich eingeordnet: von der Anatomie des Gehirns über die großen Theorien des Bewusstseins bis zu Gewohnheiten, Emotionen und mentaler Selbstverteidigung. Nur reale Studien – Umstrittenes ist als solches markiert."
+        image="/hero-wissensdatenbank.webp"
       />
 
       {/* Evidenz-Legende */}
