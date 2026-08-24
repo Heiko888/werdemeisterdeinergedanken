@@ -24,6 +24,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "innerer-kritiker": "/hero-innerer-kritiker.webp",
   "selbstmitgefuehl": "/hero-selbstmitgefuehl.webp",
   "neuroplastizitaet": "/hero-vertiefung-neuroplastizitaet.webp",
+  "emotionsregulation": "/hero-emotionsregulation.webp",
 };
 
 export function generateStaticParams() {
