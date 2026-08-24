@@ -30,6 +30,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "15-stress-angst-und-trauma": "/hero-stress.webp",
   "16-belohnung-motivation-und-sucht": "/hero-belohnung.webp",
   "20-gehirngesundheit-schlaf-bewegung-ernaehrung": "/hero-gehirngesundheit.webp",
+  "22-gehirn-und-koerper-interozeption": "/hero-interozeption.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
