@@ -40,6 +40,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "wiederholung-wahrheit": "/hero-wiederholung.webp",
   "ablenkung": "/hero-ablenkung.webp",
   "kognitive-dissonanz": "/hero-dissonanz.webp",
+  "normalisierung": "/hero-normalisierung.webp",
 };
 
 export function generateStaticParams() {
