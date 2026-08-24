@@ -21,6 +21,23 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "07-gedanken-und-kognition": "/hero-gedanken.webp",
   "08-gedaechtnis-und-lernen": "/hero-gedaechtnis.webp",
   "09-emotionen-und-limbisches-system": "/hero-emotionen.webp",
+  "10-freier-wille-und-entscheidung": "/hero-freier-wille.webp",
+  "18-konditionierung-und-lernen": "/hero-konditionierung.webp",
+  "23-sprache-und-denken": "/hero-sprache.webp",
+  "11-achtsamkeit-meditation-mentales-training": "/hero-achtsamkeit.webp",
+  "12-veraenderte-bewusstseinszustaende": "/hero-bewusstseinszustaende.webp",
+  "14-gewohnheiten-und-verhaltensaenderung": "/hero-gewohnheiten.webp",
+  "15-stress-angst-und-trauma": "/hero-stress.webp",
+  "16-belohnung-motivation-und-sucht": "/hero-belohnung.webp",
+  "20-gehirngesundheit-schlaf-bewegung-ernaehrung": "/hero-gehirngesundheit.webp",
+  "22-gehirn-und-koerper-interozeption": "/hero-interozeption.webp",
+  "13-kognitive-verzerrungen-und-selbsttaeuschung": "/hero-verzerrungen.webp",
+  "17-das-selbst-und-identitaet": "/hero-selbst.webp",
+  "19-das-soziale-gehirn-und-beeinflussung": "/hero-soziales-gehirn.webp",
+  "21-entwicklung-und-alterung-des-gehirns": "/hero-entwicklung.webp",
+  "24-psychische-gesundheit-neurowissenschaftlich": "/hero-psychische-gesundheit.webp",
+  "25-ki-maschinen-und-bewusstsein": "/hero-ki.webp",
+  "26-placebo-nocebo-und-erwartung": "/hero-placebo.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
