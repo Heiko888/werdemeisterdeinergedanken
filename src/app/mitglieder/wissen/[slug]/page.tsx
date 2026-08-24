@@ -36,6 +36,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "werbung-und-mangel": "/hero-werbung-mangel.webp",
   "gruppendruck": "/hero-gruppendruck.webp",
   "autoritaetshoerigkeit": "/hero-autoritaet.webp",
+  "angst-steuerung": "/hero-angst-steuerung.webp",
 };
 
 export function generateStaticParams() {
