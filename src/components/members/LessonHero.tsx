@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { APP_GLOW } from "@/lib/gradients";
@@ -19,6 +20,7 @@ export function LessonHero({
   title,
   subtitle,
   watermark,
+  image,
   children,
 }: {
   eyebrow: ReactNode;
@@ -27,14 +29,36 @@ export function LessonHero({
   subtitle?: string;
   /** Ziffer als Wasserzeichen; nur die Stufen haben eine. */
   watermark?: string;
+  /**
+   * Optionales Titelbild: vollflächig hinter dem Text, darüber ein Navy-
+   * Schleier für den Kontrast. Reine Dekoration – deshalb `alt=""`.
+   */
+  image?: string;
   /** Zusätzliche Elemente unter dem Titel, z. B. die Dauer-Plakette. */
   children?: ReactNode;
 }) {
   return (
     <section className="member-hero overflow-hidden py-14 sm:py-16">
+      {image && (
+        <>
+          <Image
+            src={image}
+            alt=""
+            aria-hidden
+            fill
+            priority
+            sizes="100vw"
+            className="z-0 object-cover object-center"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-navy-950/55"
+          />
+        </>
+      )}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
+        className={`pointer-events-none absolute inset-0 ${image ? "z-0" : "-z-10"}`}
         style={{ background: APP_GLOW }}
       />
       {watermark && (
@@ -45,7 +69,10 @@ export function LessonHero({
           {watermark}
         </span>
       )}
-      <Container size="narrow" className="flex flex-col items-start gap-4">
+      <Container
+        size="narrow"
+        className={`${image ? "relative z-10 " : ""}flex flex-col items-start gap-4`}
+      >
         <Link
           href="/mitglieder"
           className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
