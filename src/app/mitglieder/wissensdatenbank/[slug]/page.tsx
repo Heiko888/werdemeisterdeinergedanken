@@ -13,6 +13,14 @@ import { chapterSlugs, getDoc } from "@/lib/wissensdatenbank";
 const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "01-neuroanatomie-aufbau-des-gehirns": "/hero-anatomie.webp",
   "02-neuronen-synapsen-neurotransmitter": "/hero-neuronen.webp",
+  "03-neuroplastizitaet": "/hero-neuroplastizitaet.webp",
+  "04-theorien-des-bewusstseins": "/hero-bewusstsein.webp",
+  "05-neuronale-korrelate-des-bewusstseins": "/hero-ncc.webp",
+  "06-aufmerksamkeit-und-wahrnehmung": "/hero-wahrnehmung.webp",
+  "27-das-unbewusste": "/hero-unbewusste.webp",
+  "07-gedanken-und-kognition": "/hero-gedanken.webp",
+  "08-gedaechtnis-und-lernen": "/hero-gedaechtnis.webp",
+  "09-emotionen-und-limbisches-system": "/hero-emotionen.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
