@@ -26,6 +26,7 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "neuroplastizitaet": "/hero-vertiefung-neuroplastizitaet.webp",
   "emotionsregulation": "/hero-emotionsregulation.webp",
   "werte-und-ziele": "/hero-werte-ziele.webp",
+  "integration-und-weitergabe": "/hero-integration.webp",
 };
 
 export function generateStaticParams() {
