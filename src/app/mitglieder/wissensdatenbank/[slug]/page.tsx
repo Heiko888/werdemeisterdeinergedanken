@@ -25,6 +25,7 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "18-konditionierung-und-lernen": "/hero-konditionierung.webp",
   "23-sprache-und-denken": "/hero-sprache.webp",
   "11-achtsamkeit-meditation-mentales-training": "/hero-achtsamkeit.webp",
+  "12-veraenderte-bewusstseinszustaende": "/hero-bewusstseinszustaende.webp",
 };
 
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
