@@ -68,3 +68,7 @@ docs/carousels/**/vorlage.png
 # sie sind reproduzierbar (npm run vorlagen:galerie) und haben das Repo
 # sonst pro Lauf um mehrere hundert MB wachsen lassen.
 content/vorlagen/
+
+# Python-Cache
+__pycache__/
+*.pyc

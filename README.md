@@ -11,7 +11,7 @@ Violett/Cyan-Akzente, Gold).
 - **React 19**
 - **Tailwind CSS 4** (Design-Tokens via `@theme` in `src/app/globals.css`)
 - **TypeScript**
-- Fonts: **Sora** (Headlines) & **Inter** (Fließtext) via `next/font`
+- Fonts: **Fraunces** (Headlines) & **Inter** (Fließtext), selbst gehostet via `next/font/local`
 - Alle Visuals als SVG/CSS – **keine externen Bilder nötig**
 
 ## Entwicklung
