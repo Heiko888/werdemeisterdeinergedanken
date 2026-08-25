@@ -57,10 +57,39 @@ Quelle: `src/app/globals.css`.
 
 ## Ikonografie
 
-Eigene Icons (z. B. `compass`, `spark`, `shield`) über `src/components/ui/Icon`.
+Eigenes, konsistentes Icon-Set. Quelle: `src/components/ui/Icon.tsx`.
 
-⚠️ PRÜFEN: Vollständige Icon-Liste & Stilregeln (Strichstärke, Größenraster)
-dokumentieren.
+**Stilregeln (verbindlich, aus dem Code):**
+- Raster: `viewBox="0 0 24 24"`, Größe `1em` (skaliert mit Schriftgröße)
+- Strichstärke: `strokeWidth 1.7`
+- Linienenden/-ecken: `round` (`strokeLinecap`/`strokeLinejoin`)
+- Standard: Outline (`fill: none`) – nur Star & Social-Icons sind gefüllt (`fill: currentColor`)
+- Farbe folgt `currentColor` (erbt Textfarbe/Verlauf)
+
+**Funktions-Icons (15):** ArrowRight, ArrowUp, Check, Compass, Spark, Shield,
+Brain, Star, Menu, Close, Plus, Download, Play, Chat, Mail.
+
+**Social-Icons (5):** Instagram, Facebook, Youtube, Linkedin, Telegram
+(gebündelt als `socialIcons`).
+
+> **Regel:** Neue Icons im selben Stil (24er-Raster, 1.7 Strich, runde Enden,
+> Outline) in `Icon.tsx` ergänzen – keine fremden Icon-Fonts/Sets mischen.
+
+## Motion / Animation
+
+Die Marke ist **ruhig** – Bewegung ist dezent und langsam, nie ablenkend.
+Quelle: `src/app/globals.css` (`--animate-*`, Keyframes).
+
+| Token | Verhalten | Einsatz |
+|-------|-----------|---------|
+| `--animate-float` | 7 s, ease-in-out, endlos | sanftes Schweben (Emblem/Orbs) |
+| `--animate-pulse-slow` | 5 s, ease-in-out, endlos | langsames Glühen/Pulsieren |
+| `--animate-drift` | 22 s, linear, endlos | sehr langsames Driften (Hintergrund/Sterne) |
+
+**Regeln:**
+- Lange Dauern (5–22 s), weiche Easings – nichts Schnelles/Hektisches.
+- `prefers-reduced-motion: reduce` wird respektiert (Animationen praktisch aus).
+- Bewegung als Atmosphäre, nicht als Blickfang.
 
 ## Bild-Don'ts
 

@@ -21,6 +21,7 @@ Alle im Ordner `public/`:
 | `logo-brain-frei.png` | Freigestellte Variante des Emblems |
 | `logo.svg` | Vektor-Logo (skalierbar, für Print/große Flächen) |
 | `logo-full.png` | Vollständiges Logo (Emblem + Wortmarke) als Rastergrafik |
+| `src/app/icon.png` | Favicon / App-Icon (Next.js App-Icon-Konvention), 28 KB |
 
 ⚠️ PRÜFEN: Ob eine **rein vektorisierte Wortmarke** (SVG mit Text als Pfade)
 existiert – aktuell wird die Wortmarke im Web als HTML-Text mit CSS-Verlauf
@@ -45,11 +46,14 @@ Zusätzlich `compact` = nur Emblem ohne Wortmarke (z. B. enge Header, Favicon-Ko
 
 ## Schutzraum & Mindestgröße
 
-⚠️ PRÜFEN / FESTLEGEN – noch nicht formal definiert. Empfehlung als Startwert:
+Verbindliche Werte, abgeleitet aus dem gelebten Web-Standard (`Logo.tsx`):
 
-- **Schutzraum:** mindestens die halbe Höhe des Emblems ringsum freihalten.
-- **Mindesthöhe Emblem:** 32 px digital (im Web aktuell `h-10` ≈ 40 px).
-- Emblem und Wortmarke im Standardabstand `gap-3` (0.75 rem) nebeneinander.
+- **Emblemhöhe im Web:** `h-10` ≈ **40 px** (Header-Standard).
+- **Abstand Emblem ↔ Wortmarke:** `gap-3` = **0.75 rem** (12 px).
+- **Mindesthöhe Emblem:** **32 px** digital (darunter Detailverlust).
+- **Schutzraum:** mindestens die **halbe Emblemhöhe** ringsum freihalten.
+
+⚠️ PRÜFEN: Print-Mindestgrößen (mm) noch festzulegen.
 
 ## Logo-Don'ts
 

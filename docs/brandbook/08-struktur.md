@@ -8,7 +8,8 @@ in der jeweiligen Quelle**, dann zieht das Brandbook nach.
 
 | Markenelement | Quelle der Wahrheit | Brandbook-Kapitel |
 |---------------|---------------------|-------------------|
-| Name, Tagline, Domain, Social, Navigation | `src/lib/site.ts` | 01, 07 |
+| Name, Tagline, Domain, Social | `src/lib/site.ts` (`site`) | 01, 07 |
+| Navigation | `src/lib/site.ts` (`mainNav`, `legalNav` – eigene Exporte) | 07 |
 | Werte, 7 Stufen, Erwartungen, Testimonials, FAQ | `src/lib/content.ts` | 01 |
 | Farben (Tokens) | `src/app/globals.css` (`@theme`) | 04 |
 | Verläufe, Glas, Animationen, h-Stile | `src/app/globals.css` | 04, 05, 06 |
@@ -16,6 +17,8 @@ in der jeweiligen Quelle**, dann zieht das Brandbook nach.
 | Font-Dateien & Lizenzen | `src/app/fonts/` | 05 |
 | Logo (Web-Komponente) | `src/components/visuals/Logo.tsx` | 03 |
 | Logo-Dateien | `public/logo-*.{png,svg}` | 03 |
+| Favicon / App-Icon | `src/app/icon.png` | 03 |
+| Icon-Set (Funktions- & Social-Icons) | `src/components/ui/Icon.tsx` | 06 |
 | Visual-Bausteine (Hintergrund, Orb) | `src/components/visuals/` | 06 |
 | Kernsätze / Studien-Fakten (Text) | `docs/marketing/content-data.mjs` | 02, 07 |
 | Grafik-Assets & Look (Generator) | `docs/marketing/brand-assets.mjs` | 06, 07 |
@@ -31,11 +34,13 @@ src/
   app/
     globals.css          → Design-Tokens: Farben, Verläufe, Typo-Stile  ★
     layout.tsx           → Font-Einbindung (Fraunces + Inter)           ★
+    icon.png             → Favicon / App-Icon
     fonts/               → Selbst gehostete Fonts + OFL-Lizenzen
   components/
     visuals/Logo.tsx     → Logo (Emblem + Wortmarke)                    ★
     visuals/             → CosmicBackground, NeuralOrb
-    ui/                  → Button, Icon, Container …
+    ui/Icon.tsx          → Icon-Set (15 Funktions- + 5 Social-Icons)    ★
+    ui/                  → Button, Container …
   lib/
     site.ts              → Name, Tagline, Kontakt, Social, Navigation   ★
     content.ts           → Werte, 7 Stufen, Erwartungen, FAQ            ★
@@ -63,18 +68,29 @@ tools/
 
 ★ = Kern-Markenquellen.
 
-## Bekannte Abweichung / offene Punkte (für den Vollständigkeits-Check)
+## Erledigt (Vollständigkeits-Check, Schritt 2)
 
-- ⚠️ **README nennt „Sora"**, Code nutzt **Fraunces** → README korrigieren
-  (verbindlich: Fraunces + Inter). Siehe Kapitel 05.
-- ⚠️ **Logo:** einfarbige Fallback-Version & vektorisierte Wortmarke prüfen (Kap. 03).
-- ⚠️ **Schutzraum/Mindestgrößen** des Logos formal festlegen (Kap. 03).
-- ⚠️ **Foto-Richtlinie** schriftlich fixieren (Kap. 06).
-- ⚠️ **Icon-Set** dokumentieren (Kap. 06).
+- ✅ **README-Font-Fehler** („Sora" → Fraunces) korrigiert (Kap. 05).
+- ✅ **Testimonials & FAQ** in Kapitel 01 ergänzt.
+- ✅ **Favicon/App-Icon** (`src/app/icon.png`) dokumentiert (Kap. 03, 08).
+- ✅ **Icon-Set** aus `Icon.tsx` dokumentiert (Kap. 06).
+- ✅ **Logo-Schutzraum/Mindestgrößen** (digital) aus Code verbindlich gemacht (Kap. 03).
+- ✅ **Motion-Regeln** ergänzt (Kap. 06).
+- ✅ **Gold-Regel** auf öffentliche Flächen präzisiert (Kap. 04).
+
+## Offene Punkte — brauchen eine Entscheidung/Inhalt von Heiko
+
+Diese Lücken lassen sich **nicht** aus dem Code füllen:
+
 - ⚠️ **Zielgruppe/Persona** schärfen (Kap. 01).
-- ⚠️ **Kontrast der Akzentfarben als Text** auf Hell prüfen (Kap. 04).
-
-> Diese Liste ist die Agenda für Schritt 2 („prüfen, ob alles vorhanden ist").
+- ⚠️ **Einfarbige Logo-Fallback-Version** erstellen (Kap. 03).
+- ⚠️ **Vektorisierte Wortmarke** (SVG mit Pfaden) erstellen (Kap. 03).
+- ⚠️ **Print-Mindestgrößen** des Logos (mm) festlegen (Kap. 03).
+- ⚠️ **Foto-Richtlinie** schriftlich fixieren (Kap. 06).
+- ⚠️ **Kontrast der Akzentfarben als Text** auf Hell messen/festlegen (Kap. 04).
+- ⚠️ **Fehlende Kapitel** (optional, je nach Bedarf): E-Mail-Signatur, Print-
+  Anwendungen (Visitenkarte/Briefpapier), Marken-/Trademark-Recht,
+  Asset-Zugriff für Externe.
 
 ---
 

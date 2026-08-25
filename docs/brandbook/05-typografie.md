@@ -14,10 +14,9 @@
   `Fraunces-latin-variable.woff2`, `Fraunces-latin-italic-variable.woff2`.
 - Variable Achsen: Gewicht `100–900`; Fraunces zusätzlich mit Kursive.
 
-> ⚠️ PRÜFEN — **Wichtige Abweichung in der Doku:** Die `README.md` nennt als
-> Fonts noch **„Sora & Inter"**. Der tatsächliche Code (`src/app/layout.tsx`,
-> `globals.css`) verwendet aber **Fraunces & Inter**. Verbindlich ist der Code:
-> **Fraunces + Inter**. Die README sollte entsprechend korrigiert werden.
+> ✅ ERLEDIGT — Frühere Abweichung: Die `README.md` nannte als Font noch
+> „Sora". Verbindlich ist und war der Code (**Fraunces + Inter**); die README
+> wurde entsprechend korrigiert.
 
 ## CSS-Variablen (Tokens)
 

@@ -72,8 +72,10 @@ CTAs und Zitat-Akzenten vor.
 | `gold-400` | `#e8c15f` |
 | `gold-500` | `#d9a93a` |
 
-> **Regel:** Gold ausschließlich für Bewertungssterne/Ratings – nicht als
-> allgemeiner Akzent.
+> **Regel:** Auf **öffentlichen Markenflächen** Gold ausschließlich für
+> Bewertungssterne/Ratings – nicht als allgemeiner Akzent. (In internen
+> Admin-/Login-Tools wird Gold vereinzelt für Badges genutzt; das ist keine
+> nach außen sichtbare Markenfläche und bleibt davon unberührt.)
 
 ## Neutral / Licht
 

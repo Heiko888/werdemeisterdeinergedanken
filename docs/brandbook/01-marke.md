@@ -64,6 +64,30 @@ Das inhaltliche Rückgrat der Marke. Quelle: `src/lib/content.ts` (`stages`).
 | 06 | Innere Ausrichtung | Kopf, Herz und Handeln |
 | 07 | Meisterschaft | Du gestaltest |
 
+## Stimmen / Testimonials
+
+Quelle: `src/lib/content.ts` (`testimonials`). Alle mit 5★-Bewertung.
+
+| Stimme | Rolle | Kernaussage |
+|--------|-------|-------------|
+| Sandra M. | Unternehmerin | „Zum ersten Mal habe ich verstanden, warum ich immer wieder in denselben Mustern gelandet bin. … Das hat mein Leben verändert." |
+| Michael R. | Projektleiter | „Bodenständig, ehrlich und ohne esoterisches Blabla. Absolut empfehlenswert." |
+| Julia K. | Coachin | „Die 7 Stufen geben dem Ganzen eine Struktur … Ich bin ruhiger, klarer und deutlich freier im Kopf geworden." |
+
+> Ton der Testimonials zahlt bewusst auf die Werte ein: bodenständig,
+> struktur­gebend, kein Guru-Getue. Neue Stimmen im selben Ton auswählen.
+
+## FAQ (Markenbotschaften)
+
+Die FAQ sind mehr als Support – sie transportieren zentrale Marken­botschaften.
+Quelle: `src/lib/content.ts` (`faqs`).
+
+- **Für wen ist das Ganze gedacht?** → Eigenverantwortung, kein Vorwissen nötig.
+- **Muss ich an Esoterik glauben?** → Nein; bodenständig, Erfahren statt Glauben.
+- **Wie viel Zeit sollte ich einplanen?** → Kontinuität vor Menge.
+- **Was, wenn ich schon vieles ausprobiert habe?** → Wurzel statt Symptome, roter Faden.
+- **Wie fange ich am besten an?** → Gratis-E-Book oder direkte Nachricht.
+
 ---
 
 **Quelle der Wahrheit:** `src/lib/content.ts`, `src/lib/site.ts`
