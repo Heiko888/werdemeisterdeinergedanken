@@ -28,6 +28,11 @@ Mitgliederbereichs (`/mitglieder`). Empfängt neue Mitglieder, gibt Orientierung
 Druck raus. Enthält Stichpunkt-Drehbuch, Wort-für-Wort-Version, On-Screen-Text
 und eine 45-Sek-Kurzfassung.
 
+Gebrandete **PDF** (zum Ausdrucken / Teleprompter):
+`willkommen/Willkommensvideo-Dashboard.pdf` – erzeugt mit `npm run
+willkommen-skript` (Generator: `tools/pdf/willkommen-skript.mjs`, Text 1:1 aus
+der Markdown-Fassung). Optik wie die Praxis-Sprecherskripte.
+
 ## Themenblock „Mentale Selbstverteidigung" (16 Themen)
 
 Video-Skripte zum Block „Wie dein Denken gelenkt wird":
