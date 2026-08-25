@@ -6,18 +6,16 @@ Das Logo besteht aus zwei Elementen:
 
 1. **Emblem / Bildmarke** – ein stilisiertes Gehirn („Brain-Mark"), das mit
    organischen Blatt-/Neuronen-Formen die Verbindung von Natur und Geist trägt.
-2. **Wortmarke** – „Werde Meister deiner **Gedanken**", in Versalien (uppercase).
+2. **Wortmarke** – „Werde Meister deiner **Gedanken**", zweizeilig, in
+   Versalien (uppercase), in **Inter** mit dem Marken-Verlauf
+   **Lindgrün → Türkis**.
 
 Quelle (Web-Komponente): `src/components/visuals/Logo.tsx`.
 
-> **Zwei Wortmarken-Renderings – nicht verwechseln:**
-> - **Grafisches Logo** (`public/logo-full.png`): **handgezeichnete** Wortmarke –
->   „WERDE MEISTER DEINER" in Schwarz, „GEDANKEN" in Grün (Grunge-Stil).
-> - **Digitale Web-Wortmarke** (`Logo.tsx`): in **Inter** gesetzt, mit dem
->   Marken-Verlauf **Lindgrün → Türkis** (siehe „Wortmarke im Web" unten).
->
-> ⚠️ PRÜFEN: Ob die beiden Wortmarken-Stile bewusst nebeneinander bestehen
-> sollen oder langfristig vereinheitlicht werden.
+> **Veraltet – nicht mehr verwenden:** `public/logo-full.png` zeigt eine
+> **alte** Logo-Version mit handgezeichneter Wortmarke („WERDE MEISTER DEINER"
+> schwarz, „GEDANKEN" grün, Grunge-Stil). Das ist **nicht** mehr das gültige
+> Logo. Gültig ist Emblem + Inter-Wortmarke wie oben.
 
 ## Logo-Dateien
 
@@ -28,8 +26,8 @@ Alle im Ordner `public/`:
 | `logo-brain.png` | Freigestelltes Gehirn-Emblem (Standard im Web, Header) |
 | `logo-brain-frei.png` | Freigestellte Variante des Emblems |
 | `logo.svg` | Vektor-Logo (skalierbar, für Print/große Flächen) |
-| `logo-full.png` | Vollständiges Logo (Emblem + Wortmarke) als Rastergrafik |
 | `src/app/icon.png` | Favicon / App-Icon (Next.js App-Icon-Konvention), 28 KB |
+| `logo-full.png` | **Veraltet** – alte Version mit handgezeichneter Wortmarke, nicht mehr verwenden |
 
 ⚠️ PRÜFEN: Ob eine **rein vektorisierte Wortmarke** (SVG mit Text als Pfade)
 existiert – aktuell wird die Wortmarke im Web als HTML-Text mit CSS-Verlauf

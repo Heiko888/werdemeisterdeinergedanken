@@ -21,7 +21,6 @@ def enc(p, mime):
 
 FONTS = open(os.path.join(ASSETS, "fonts.css")).read()
 BRAIN_WS = enc(os.path.join(WS_ASSETS, "brain.png"), "image/png")
-LOGO_FULL = enc(os.path.join(ROOT, "public/logo-full.png"), "image/png")
 LOGO_BRAIN = enc(os.path.join(ROOT, "public/logo-brain.png"), "image/png")
 
 def esc(s):
@@ -135,20 +134,26 @@ td.mono{ font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; col
 /* Logo-Beispiele */
 .logogrid{ display:flex; gap:12px; margin:6px 0 8px; }
 .logotile{ flex:1; border:1px solid var(--hair); border-radius:14px; overflow:hidden; break-inside:avoid; }
-.logotile .stage{ height:150px; display:grid; place-items:center; padding:14px; }
-.logotile .stage img{ max-width:80%; max-height:118px; object-fit:contain; }
+.logotile .stage{ height:120px; display:grid; place-items:center; padding:14px; }
+.logotile .embsolo{ max-width:70%; max-height:92px; object-fit:contain; }
 .logotile.light .stage{ background:#ffffff; }
-.logotile.paper .stage{ background:var(--surface); }
 .logotile.dark .stage{ background:
   radial-gradient(90% 120% at 80% 8%, rgba(52,196,196,.28), transparent 55%),
   linear-gradient(150deg,#0a1330,#0a1024); }
 .logotile .cap{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
   color:var(--ink-soft); padding:8px 10px; border-top:1px solid var(--hair); background:#fbfaf6; }
-.logofull{ border:1px solid var(--hair); border-radius:14px; overflow:hidden; margin:6px 0 8px; break-inside:avoid; }
-.logofull .stage{ background:#ffffff; display:grid; place-items:center; padding:20px; }
-.logofull .stage img{ max-width:62%; max-height:210px; object-fit:contain; }
-.logofull .cap{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
-  color:var(--ink-soft); padding:8px 12px; border-top:1px solid var(--hair); background:#fbfaf6; }
+
+/* Logo-Lockup (Emblem + Wortmarke) – wie im Web (Logo.tsx) */
+.lock{ display:flex; align-items:center; gap:12px; }
+.lock .emb{ height:52px; width:auto; object-fit:contain; }
+.wm{ display:flex; flex-direction:column; line-height:1; }
+.wm .l1{ font-family:'Inter',sans-serif; font-weight:600; font-size:11px; text-transform:uppercase;
+  letter-spacing:.2em;
+  background:linear-gradient(100deg,#8cc63f,#34c4c4); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.wm .l2{ font-family:'Inter',sans-serif; font-weight:700; font-size:17px; text-transform:uppercase;
+  letter-spacing:.12em; line-height:1; margin-top:2px;
+  background:linear-gradient(100deg,#8cc63f,#34c4c4); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.wm.dark .l1, .wm.dark .l2{ filter:drop-shadow(0 1px 8px rgba(33,178,189,.45)); }
 
 .affirm{ break-inside:avoid; margin-top:15px; border-radius:16px; padding:17px 22px; color:#eaf0ff;
   background:
@@ -248,19 +253,32 @@ def docfoot(lbl):
     return ('<div class="docfoot"><span>%s</span><span class="dom">werdemeisterdeinergedanken.de</span></div>'
             ) % esc(lbl)
 
+def wordmark(tone):
+    # Aktuelle Wortmarke wie im Web (Logo.tsx): Inter, Versalien, zweizeilig,
+    # Marken-Verlauf Lindgrün → Türkis.
+    return ('<div class="wm %s"><span class="l1">Werde Meister deiner</span>'
+            '<span class="l2">Gedanken</span></div>') % tone
+
+def lockup(tone):
+    return ('<div class="lock"><img class="emb" src="%s">%s</div>') % (LOGO_BRAIN, wordmark(tone))
+
 def logo_examples():
-    # Vollversion (auf Weiß) + Emblem auf Dunkel und Hell.
-    full = ('<div class="logofull"><div class="stage"><img src="%s"></div>'
-            '<div class="cap">Vollversion · Emblem + Wortmarke (auf Hell)</div></div>') % LOGO_FULL
-    tiles = (
+    # Aktuelles Logo-Lockup (Emblem + Wortmarke) auf Dunkel und Hell,
+    # dazu das Emblem solo.
+    return (
         '<div class="logogrid">'
-        '<div class="logotile dark"><div class="stage"><img src="%s"></div>'
-        '<div class="cap">Emblem auf Dunkel</div></div>'
-        '<div class="logotile light"><div class="stage"><img src="%s"></div>'
-        '<div class="cap">Emblem auf Hell</div></div>'
+        '<div class="logotile dark"><div class="stage">%s</div>'
+        '<div class="cap">Logo auf Dunkel</div></div>'
+        '<div class="logotile light"><div class="stage">%s</div>'
+        '<div class="cap">Logo auf Hell</div></div>'
         '</div>'
-    ) % (LOGO_BRAIN, LOGO_BRAIN)
-    return full + tiles
+        '<div class="logogrid">'
+        '<div class="logotile dark"><div class="stage"><img class="embsolo" src="%s"></div>'
+        '<div class="cap">Emblem solo · auf Dunkel</div></div>'
+        '<div class="logotile light"><div class="stage"><img class="embsolo" src="%s"></div>'
+        '<div class="cap">Emblem solo · auf Hell</div></div>'
+        '</div>'
+    ) % (lockup("dark"), lockup("light"), LOGO_BRAIN, LOGO_BRAIN)
 
 def td(v, cls=""):
     return (v, cls)
@@ -367,17 +385,16 @@ parts.append(chapter("2", "Kapitel 02", "Tonalität & Sprache",
 parts.append(chapter("3", "Kapitel 03", "Logo",
     "Emblem, Wortmarke & Anwendung", [
     lead("Das Logo besteht aus dem <b>Gehirn-Emblem</b> (Brain-Mark, Lindgrün → Türkis) und "
-         "der <b>Wortmarke</b> „Werde Meister deiner Gedanken“ in Versalien. Das grafische Logo "
-         "(unten) nutzt eine handgezeichnete Wortmarke; die digitale Wortmarke im Web ist in "
-         "Inter gesetzt und trägt den Marken-Verlauf."),
+         "der <b>Wortmarke</b> „Werde Meister deiner Gedanken“ – zweizeilig, in Versalien, "
+         "in <b>Inter</b> mit dem Marken-Verlauf Lindgrün → Türkis."),
     label("Logo-Beispiele", teal=True),
     logo_examples(),
     label("Logo-Dateien"),
     table(["Datei", "Verwendung"], [
         [M("logo-brain.png"), C("Freigestelltes Emblem (Standard im Web, Header)")],
         [M("logo.svg"), C("Vektor-Logo (Print, große Flächen)")],
-        [M("logo-full.png"), C("Vollständiges Logo (Emblem + Wortmarke)")],
         [M("src/app/icon.png"), C("Favicon / App-Icon")],
+        [M("logo-full.png"), C("<b>Veraltet</b> – alte Version mit handgezeichneter Wortmarke, nicht mehr verwenden")],
     ]),
     label("Schutzraum & Mindestgröße", teal=True),
     bullets([
