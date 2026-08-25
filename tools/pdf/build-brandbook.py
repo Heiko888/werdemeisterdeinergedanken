@@ -113,6 +113,14 @@ ul.bullets li:before{ content:""; position:absolute; left:2px; top:8px; width:6p
   border-radius:50%; background:var(--teal-400); }
 ul.bullets li b{ color:var(--navy-900); }
 
+ol.steps{ list-style:none; counter-reset:st; margin:4px 0 12px; }
+ol.steps li{ font-size:13px; line-height:1.55; color:#2c3a35; margin:7px 0; padding-left:30px; position:relative; break-inside:avoid; }
+ol.steps li:before{ counter-increment:st; content:counter(st); position:absolute; left:0; top:1px;
+  width:20px; height:20px; border-radius:50%; background:linear-gradient(150deg,#8cc63f,#21b2bd);
+  color:var(--navy-900); font-family:'Fraunces',serif; font-weight:600; font-size:11px;
+  display:grid; place-items:center; }
+ol.steps li b{ color:var(--navy-900); }
+
 /* Tabellen */
 table.tbl{ width:100%; border-collapse:collapse; margin:6px 0 14px; break-inside:auto; }
 table.tbl th{ text-align:left; font-size:9.5px; letter-spacing:.12em; text-transform:uppercase;
@@ -227,6 +235,9 @@ def h3(text):
 def bullets(items):
     return '<ul class="bullets">' + "".join('<li>%s</li>' % it for it in items) + '</ul>'
 
+def steps(items):
+    return '<ol class="steps">' + "".join('<li>%s</li>' % it for it in items) + '</ol>'
+
 def callout(text, k="Kerngedanke"):
     return '<div class="callout"><div class="k">%s</div><div class="q">„%s“</div></div>' % (esc(k), esc(text))
 
@@ -314,6 +325,7 @@ toc_rows = [
     ("06", "Bildwelt & Grafik", "Kosmischer Look, Fotografie, Motion"),
     ("07", "Anwendungen", "Kanäle, Formate, Generatoren"),
     ("08", "Struktur", "Quellen der Wahrheit im Projekt"),
+    ("09", "Mitgliederbereich", "Funktionen & Bedienungsanleitung"),
 ]
 rows = ""
 for n, t, s in toc_rows:
@@ -531,6 +543,56 @@ parts.append(chapter("8", "Kapitel 08", "Struktur",
     ]),
     affirm("Ändert sich ein Markenelement, wird es zuerst im Code geändert und danach im "
            "Brandbook nachgezogen – so bleiben Doku und Umsetzung konsistent.", "Pflege-Prinzip"),
+]))
+
+# 09 Mitgliederbereich
+parts.append(chapter("9", "Kapitel 09", "Mitgliederbereich",
+    "Funktionen & Bedienungsanleitung", [
+    lead("Der geschützte Lernbereich unter <b>/mitglieder</b> – das Herzstück des "
+         "Angebots. Er übersetzt die 7 Stufen in einen begleiteten Weg mit Lektionen, "
+         "Übungen, Journal, großer Wissens- & Praxis-Bibliothek, geführten Programmen, "
+         "PDF-Downloads und KI-Werkzeugen. Nur nach Login erreichbar."),
+    label("Funktionsübersicht"),
+    table(["Bereich", "Was es kann"], [
+        [C("<b>Dashboard</b>"), C("Fortschrittsbalken (x/7), personalisierter Einstieg, Schnellzugriffe")],
+        [C("<b>Die 7 Stufen</b>"), C("Kerngedanke, Lektion, 2 Übungen, Reflexion, Leitsatz, PDF-Downloads")],
+        [C("<b>Vertiefungen</b>"), C("29 Deep Dives mit Lektion, Übungen, Quellen")],
+        [C("<b>Praxis</b>"), C("13 geführte Meditationen, Atemübungen & Rituale")],
+        [C("<b>Wissensdatenbank</b>"), C("27 Kapitel in 5 Teilen + Glossar")],
+        [C("<b>Journal</b>"), C("Reflexionen, Statistik, Wachstumskurve, Druckfunktion")],
+        [C("<b>Gedankenprofil</b>"), C("Auswertung der 7 Stufen aus dem Bewusstseinstest")],
+        [C("<b>21-Tage-Programm</b>"), C("„Autopilot-Ausstieg“ mit Tagesfortschritt")],
+        [C("<b>Tägliche Rückkehr</b>"), C("Tägliche Mini-Praxis danach")],
+        [C("<b>KI-Begleiter</b>"), C("Chat, der Inhalte & deinen Stand kennt")],
+        [C("<b>Manipulations-Detektor</b>"), C("KI prüft Text gegen 16 Manipulationstechniken")],
+    ]),
+    label("Bedienungsanleitung (für Mitglieder)", teal=True),
+    steps([
+        "<b>Anmelden</b> über /login (E-Mail & Passwort).",
+        "<b>Bewusstseinstest</b> machen – daraus entsteht dein Gedankenprofil und ein personalisierter Einstieg.",
+        "<b>Dashboard</b> öffnen – Fortschritt und empfohlener nächster Schritt.",
+        "<b>Stufe für Stufe</b> arbeiten: Lektion lesen, Übungen machen, Reflexionsfragen ausfüllen (Autosave), Leitsatz mitnehmen, Stufe abschließen.",
+        "<b>Vertiefen</b> mit Vertiefungen, Praxis-Übungen und Wissensdatenbank.",
+        "<b>Dranbleiben</b> mit dem 21-Tage-Programm und der täglichen Rückkehr.",
+        "<b>KI-Werkzeuge</b> nutzen: Begleiter, Detektor, Muster-Spiegel/Reading.",
+        "<b>Journal & Downloads</b>: Weg nachvollziehen (Wachstumskurve) und PDFs laden.",
+    ]),
+    label("Downloads & Umfang"),
+    table(["Element", "Anzahl"], [
+        [C("PDF-Downloads (Arbeitsheft, Lektionen, Übungen, Vertiefungen)"), M("44")],
+        [C("Stufen · Lektionen · Übungen"), M("7 · 7 · 14")],
+        [C("Vertiefungen · Praxis"), M("29 · 13")],
+        [C("Wissensdatenbank-Kapitel"), M("27 + Glossar")],
+        [C("21-Tage-Programm"), M("21 Tage")],
+    ]),
+    label("Zugang & Schutz"),
+    bullets([
+        "<b>Login</b> über Supabase Auth; zweifacher Schutz (Middleware + Layout + Download-Guard)",
+        "<b>Bezahlschranke (Stripe)</b> vorbereitet, aktuell aus – Login genügt",
+        "PDFs werden <b>geschützt</b> ausgeliefert (nicht öffentlich)",
+    ]),
+    affirm("Vor Livegang: echte Preise setzen, Bezahlschranke aktivieren, Videos ergänzen, "
+           "ANTHROPIC_API_KEY für die KI-Werkzeuge hinterlegen.", "Hinweis zum Stand"),
 ]))
 
 # ---------------- Ausgabe ----------------
