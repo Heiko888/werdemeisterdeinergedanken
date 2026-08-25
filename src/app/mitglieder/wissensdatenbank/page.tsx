@@ -31,6 +31,19 @@ export default function WissenPage() {
         image="/hero-wissensdatenbank.webp"
       />
 
+      {/* Zurück zu meinem Bereich – einheitliche Orientierung wie in Praxis */}
+      <section className="pt-8">
+        <Container>
+          <Link
+            href="/mitglieder"
+            className="-mx-2 inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm text-ink-mid transition-colors hover:text-ink"
+          >
+            <ArrowRight className="rotate-180" />
+            Zu meinem Bereich
+          </Link>
+        </Container>
+      </section>
+
       {/* Evidenz-Legende */}
       <section className="border-b border-ink/10 bg-white py-8">
         <Container>

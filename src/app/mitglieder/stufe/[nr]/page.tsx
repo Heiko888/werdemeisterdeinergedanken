@@ -51,6 +51,7 @@ export default async function StagePage({
   const related = deepDivesForStage(idx + 1);
   const prev = idx > 0 ? idx : null; // 0-basiert → Nummer = idx
   const next = idx < stages.length - 1 ? idx + 2 : null;
+  const nextStage = next ? stages[next - 1] : null;
 
   return (
     <>
@@ -268,8 +269,8 @@ export default async function StagePage({
             </Button>
           </div>
 
-          {/* Vor / Zurück */}
-          <div className="flex items-center justify-between gap-4 border-t border-ink/10 pt-8">
+          {/* Vor / Zurück – der nächste Schritt zieht als gefüllter CTA */}
+          <div className="flex flex-col gap-5 border-t border-ink/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
             {prev ? (
               <Link
                 href={`/mitglieder/stufe/${prev}`}
@@ -279,18 +280,45 @@ export default async function StagePage({
                 Vorherige Stufe
               </Link>
             ) : (
-              <span />
+              <Link
+                href="/mitglieder"
+                className="group inline-flex items-center gap-2 text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+              >
+                <ArrowRight className="rotate-180 transition-transform duration-300 group-hover:-translate-x-1" />
+                Zu meinem Bereich
+              </Link>
             )}
-            {next ? (
+
+            {next && nextStage ? (
               <Link
                 href={`/mitglieder/stufe/${next}`}
-                className="group inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-ink"
+                className="group inline-flex items-center justify-between gap-4 rounded-2xl bg-brand-500 px-6 py-4 text-white shadow-[0_14px_34px_-14px_rgba(54,112,238,0.9)] transition-all hover:bg-brand-400 sm:justify-start"
               >
-                Nächste Stufe
-                <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                <span className="flex flex-col text-left">
+                  <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-white/70">
+                    Nächster Schritt
+                  </span>
+                  <span className="text-sm font-semibold leading-snug">
+                    Stufe {next}: {nextStage.title}
+                  </span>
+                </span>
+                <ArrowRight className="shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             ) : (
-              <span />
+              <Link
+                href="/mitglieder"
+                className="group inline-flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-leaf-500 to-teal-500 px-6 py-4 text-navy-950 shadow-card transition-all hover:opacity-95 sm:justify-start"
+              >
+                <span className="flex flex-col text-left">
+                  <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-navy-950/60">
+                    Geschafft
+                  </span>
+                  <span className="text-sm font-semibold leading-snug">
+                    Alle Stufen durchlaufen – zu meinem Bereich
+                  </span>
+                </span>
+                <ArrowRight className="shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
             )}
           </div>
         </Container>
