@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/mitgliedschaft",
     "/ueber-mich",
     "/bewusstseinstest",
+    "/gratis-ebook",
     "/blog",
     "/kontakt",
   ];
