@@ -252,14 +252,14 @@ export default async function MembersPage() {
               </div>
             ) : (
               currentStage && (
-                <div className="flex flex-col gap-6 rounded-2xl border border-brand-300/60 bg-white p-7 shadow-card sm:p-9">
+                <div className="flex flex-col gap-6 rounded-2xl border border-teal-500/30 bg-white p-7 shadow-card sm:p-9">
                   <div className="flex flex-col gap-2">
-                    <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-brand-500">
+                    <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-teal-600">
                       Hier weitermachen · Stufe {currentOrdinal} von {stages.length}
                     </span>
                     <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">
                       Stufe {currentStage.number}:{" "}
-                      <span className="text-brand-600">{currentStage.title}</span>
+                      <span className="text-teal-600">{currentStage.title}</span>
                     </h2>
                     <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
                       {currentStage.description}
@@ -268,7 +268,7 @@ export default async function MembersPage() {
                   <div className="flex flex-wrap items-center gap-3">
                     <Link
                       href={`/mitglieder/stufe/${currentOrdinal}`}
-                      className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_-14px_rgba(54,112,238,0.9)] transition-all hover:bg-brand-400"
+                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 px-6 py-3 text-sm font-semibold text-navy-950 shadow-card transition-all hover:opacity-95"
                     >
                       Weiter mit Stufe {currentOrdinal}
                       <ArrowRight />
@@ -371,7 +371,7 @@ export default async function MembersPage() {
                     href={`/mitglieder/stufe/${ordinal}`}
                     className={`group flex flex-1 gap-5 rounded-2xl transition-all ${
                       isCurrent
-                        ? "border border-brand-300/60 bg-white p-4 shadow-card -my-1"
+                        ? "border border-teal-500/40 bg-white p-4 shadow-card -my-1"
                         : "p-1 hover:opacity-80"
                     }`}
                   >
@@ -380,7 +380,7 @@ export default async function MembersPage() {
                         isDone
                           ? "bg-gradient-to-br from-leaf-500 to-teal-500 text-navy-950"
                           : isCurrent
-                            ? "bg-brand-500 text-white ring-4 ring-brand-500/25"
+                            ? "bg-teal-500 text-white ring-4 ring-teal-500/25"
                             : "border border-ink/10 bg-mist-100 text-ink-mid"
                       }`}
                     >
@@ -397,12 +397,12 @@ export default async function MembersPage() {
                           </span>
                         )}
                         {isCurrent && (
-                          <span className="rounded-full bg-brand-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-brand-600">
+                          <span className="rounded-full bg-teal-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-teal-600">
                             Du bist hier
                           </span>
                         )}
                         {isNext && (
-                          <span className="rounded-full bg-teal-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-teal-600">
+                          <span className="rounded-full bg-ink/[0.06] px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-ink-muted">
                             Als Nächstes
                           </span>
                         )}
@@ -411,7 +411,7 @@ export default async function MembersPage() {
                         {stage.subtitle}
                       </p>
                       {isCurrent && (
-                        <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
+                        <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-teal-600">
                           Weitermachen
                           <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
                         </span>
