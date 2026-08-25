@@ -21,6 +21,8 @@ def enc(p, mime):
 
 FONTS = open(os.path.join(ASSETS, "fonts.css")).read()
 BRAIN_WS = enc(os.path.join(WS_ASSETS, "brain.png"), "image/png")
+LOGO_FULL = enc(os.path.join(ROOT, "public/logo-full.png"), "image/png")
+LOGO_BRAIN = enc(os.path.join(ROOT, "public/logo-brain.png"), "image/png")
 
 def esc(s):
     return _html.escape(s, quote=False)
@@ -130,6 +132,24 @@ td.mono{ font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; col
 .sw .nm{ font-size:10.5px; font-weight:700; color:var(--navy-900); }
 .sw .hx{ font-family:ui-monospace,Menlo,monospace; font-size:9.5px; color:var(--ink-soft); }
 
+/* Logo-Beispiele */
+.logogrid{ display:flex; gap:12px; margin:6px 0 8px; }
+.logotile{ flex:1; border:1px solid var(--hair); border-radius:14px; overflow:hidden; break-inside:avoid; }
+.logotile .stage{ height:150px; display:grid; place-items:center; padding:14px; }
+.logotile .stage img{ max-width:80%; max-height:118px; object-fit:contain; }
+.logotile.light .stage{ background:#ffffff; }
+.logotile.paper .stage{ background:var(--surface); }
+.logotile.dark .stage{ background:
+  radial-gradient(90% 120% at 80% 8%, rgba(52,196,196,.28), transparent 55%),
+  linear-gradient(150deg,#0a1330,#0a1024); }
+.logotile .cap{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
+  color:var(--ink-soft); padding:8px 10px; border-top:1px solid var(--hair); background:#fbfaf6; }
+.logofull{ border:1px solid var(--hair); border-radius:14px; overflow:hidden; margin:6px 0 8px; break-inside:avoid; }
+.logofull .stage{ background:#ffffff; display:grid; place-items:center; padding:20px; }
+.logofull .stage img{ max-width:62%; max-height:210px; object-fit:contain; }
+.logofull .cap{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
+  color:var(--ink-soft); padding:8px 12px; border-top:1px solid var(--hair); background:#fbfaf6; }
+
 .affirm{ break-inside:avoid; margin-top:15px; border-radius:16px; padding:17px 22px; color:#eaf0ff;
   background:
     radial-gradient(70% 130% at 12% 0%, rgba(140,198,63,.22), transparent 60%),
@@ -227,6 +247,20 @@ def swatches(items):  # items: (name, hex)
 def docfoot(lbl):
     return ('<div class="docfoot"><span>%s</span><span class="dom">werdemeisterdeinergedanken.de</span></div>'
             ) % esc(lbl)
+
+def logo_examples():
+    # Vollversion (auf Weiß) + Emblem auf Dunkel und Hell.
+    full = ('<div class="logofull"><div class="stage"><img src="%s"></div>'
+            '<div class="cap">Vollversion · Emblem + Wortmarke (auf Hell)</div></div>') % LOGO_FULL
+    tiles = (
+        '<div class="logogrid">'
+        '<div class="logotile dark"><div class="stage"><img src="%s"></div>'
+        '<div class="cap">Emblem auf Dunkel</div></div>'
+        '<div class="logotile light"><div class="stage"><img src="%s"></div>'
+        '<div class="cap">Emblem auf Hell</div></div>'
+        '</div>'
+    ) % (LOGO_BRAIN, LOGO_BRAIN)
+    return full + tiles
 
 def td(v, cls=""):
     return (v, cls)
@@ -332,8 +366,12 @@ parts.append(chapter("2", "Kapitel 02", "Tonalität & Sprache",
 # 03 Logo
 parts.append(chapter("3", "Kapitel 03", "Logo",
     "Emblem, Wortmarke & Anwendung", [
-    lead("Das Logo besteht aus dem <b>Gehirn-Emblem</b> (Brain-Mark) und der <b>Wortmarke</b> "
-         "„Werde Meister deiner Gedanken“ in Versalien mit dem Marken-Verlauf Lindgrün → Türkis."),
+    lead("Das Logo besteht aus dem <b>Gehirn-Emblem</b> (Brain-Mark, Lindgrün → Türkis) und "
+         "der <b>Wortmarke</b> „Werde Meister deiner Gedanken“ in Versalien. Das grafische Logo "
+         "(unten) nutzt eine handgezeichnete Wortmarke; die digitale Wortmarke im Web ist in "
+         "Inter gesetzt und trägt den Marken-Verlauf."),
+    label("Logo-Beispiele", teal=True),
+    logo_examples(),
     label("Logo-Dateien"),
     table(["Datei", "Verwendung"], [
         [M("logo-brain.png"), C("Freigestelltes Emblem (Standard im Web, Header)")],

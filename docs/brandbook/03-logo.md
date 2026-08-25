@@ -6,10 +6,18 @@ Das Logo besteht aus zwei Elementen:
 
 1. **Emblem / Bildmarke** – ein stilisiertes Gehirn („Brain-Mark"), das mit
    organischen Blatt-/Neuronen-Formen die Verbindung von Natur und Geist trägt.
-2. **Wortmarke** – „Werde Meister deiner **Gedanken**", zweizeilig, in
-   Versalien (uppercase), mit dem Marken-Verlauf **Lindgrün → Türkis**.
+2. **Wortmarke** – „Werde Meister deiner **Gedanken**", in Versalien (uppercase).
 
 Quelle (Web-Komponente): `src/components/visuals/Logo.tsx`.
+
+> **Zwei Wortmarken-Renderings – nicht verwechseln:**
+> - **Grafisches Logo** (`public/logo-full.png`): **handgezeichnete** Wortmarke –
+>   „WERDE MEISTER DEINER" in Schwarz, „GEDANKEN" in Grün (Grunge-Stil).
+> - **Digitale Web-Wortmarke** (`Logo.tsx`): in **Inter** gesetzt, mit dem
+>   Marken-Verlauf **Lindgrün → Türkis** (siehe „Wortmarke im Web" unten).
+>
+> ⚠️ PRÜFEN: Ob die beiden Wortmarken-Stile bewusst nebeneinander bestehen
+> sollen oder langfristig vereinheitlicht werden.
 
 ## Logo-Dateien
 
