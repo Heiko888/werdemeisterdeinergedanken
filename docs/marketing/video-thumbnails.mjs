@@ -95,6 +95,9 @@ function thumbHtml({ eyebrow, title, sub, num }) {
 }
 
 const JOBS = [];
+// Willkommensvideo auf dem Dashboard (/mitglieder) – Top-Level, kein Unterordner.
+JOBS.push({ dir: ".", name: "willkommen",
+  data: { eyebrow: "Willkommen", title: "Schön, dass du da bist", sub: "Dein Bereich – so findest du dich zurecht" } });
 for (const s of stages())
   JOBS.push({ dir: "stufen", name: `stufe-${s.num}`,
     data: { eyebrow: `Die 7 Stufen · Stufe ${s.num}`, title: s.title, sub: s.subtitle, num: s.num } });

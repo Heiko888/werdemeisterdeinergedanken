@@ -9,6 +9,7 @@ inhaltlich zusammen.
 
 | Bereich | Skript-Typ | Länge |
 |---|---|---|
+| **Willkommen (Dashboard)** | Stichpunkt-Drehbuch **+ Wort-für-Wort** (`willkommen/`) | 2–3 Min |
 | **7 Stufen** | Stichpunkt-Drehbuch (`stufen/`) **+ Wort-für-Wort komplett** (`stufen-komplett/`) | 6–10 Min |
 | **Vertiefungen** | Stichpunkt-Drehbuch (`vertiefungen/`) **+ Wort-für-Wort komplett** (`vertiefungen-komplett/`) | 3–5 Min |
 | **Praxis (Meditation/Atem/Ritual)** | Wort-für-Wort (zum Einsprechen) | nach Übungsdauer |
@@ -18,6 +19,14 @@ inhaltlich zusammen.
 - `→` – Kernaussage / Talking Point (frei ausformulieren)
 - **Fett** – der eine Satz, der genau so fallen sollte (Hook, Leitsatz)
 - Bei Praxis: `…` = bewusste Sprechpause, kursiv = Regieton (leise, langsam)
+
+## Willkommensvideo (Dashboard)
+
+`willkommen/dashboard-willkommen.md` – das Intro auf der Startseite des
+Mitgliederbereichs (`/mitglieder`). Empfängt neue Mitglieder, gibt Orientierung
+(„Hier weitermachen", 7 Stufen, Praxis, Vertiefungen, Werkzeugkasten) und nimmt
+Druck raus. Enthält Stichpunkt-Drehbuch, Wort-für-Wort-Version, On-Screen-Text
+und eine 45-Sek-Kurzfassung.
 
 ## Themenblock „Mentale Selbstverteidigung" (16 Themen)
 
@@ -40,6 +49,9 @@ und CTA.
 3. **Vertiefungen** – nach und nach → `vertiefungen/`
 
 ## Status
+
+### Willkommen (Aufnahme = Video online; Skript ✍️ = Sprechtext liegt vor)
+- [ ] Dashboard-Willkommen ✍️
 
 ### Stufen (Aufnahme = Video online; Skript ✍️ = Sprechtext liegt vor)
 - [ ] 01 – Autopilot ✍️

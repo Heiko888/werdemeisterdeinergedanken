@@ -25,6 +25,8 @@ import {
   featuredPractice,
 } from "@/lib/practices";
 import { NewsletterToggle } from "@/components/members/NewsletterToggle";
+import { VideoEmbed } from "@/components/members/VideoEmbed";
+import { site } from "@/lib/site";
 import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
 
 export const dynamic = "force-dynamic";
@@ -223,6 +225,43 @@ export default async function MembersPage() {
               />
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Willkommensvideo – kurzes Intro & Orientierung fürs Dashboard.
+          Facade-Muster wie auf den Stufen-Seiten: erst Poster, YouTube lädt
+          erst beim Klick. Solange kein eigenes Video eingetragen ist, greift
+          der globale Platzhalter (site.placeholderVideoId). */}
+      <section className="pt-8 sm:pt-10">
+        <Container>
+          <div className="flex flex-col gap-2">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              Willkommen
+            </span>
+            <h2 className="font-display text-2xl font-medium text-ink">
+              Kurz zur Orientierung
+            </h2>
+            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+              In zwei Minuten zeige ich dir, wie du dich hier zurechtfindest –
+              und worum es auf deiner Reise durch die 7 Stufen wirklich geht.
+            </p>
+          </div>
+          {site.placeholderVideoId ? (
+            <VideoEmbed
+              videoId={site.placeholderVideoId}
+              title="Willkommen in deinem Bereich"
+              poster="/video-thumbnails/willkommen.png"
+            />
+          ) : (
+            <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">
+              <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">
+                <Play />
+              </span>
+              <p className="max-w-xs px-6 text-sm leading-relaxed text-ink-muted">
+                Das Willkommensvideo folgt in Kürze.
+              </p>
+            </div>
+          )}
         </Container>
       </section>
 
