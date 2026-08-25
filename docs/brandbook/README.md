@@ -24,6 +24,7 @@ an einem Ort fest.
 | 07 | [Anwendungen](./07-anwendungen.md) | Social Media, Vorlagen, Asset-Formate, Generatoren |
 | 08 | [Struktur & Quellen der Wahrheit](./08-struktur.md) | Wo im Repo welche Markenelemente definiert sind |
 | 09 | [Mitgliederbereich](./09-mitgliederbereich.md) | Funktionen & Bedienungsanleitung des geschützten Bereichs |
+| 10 | [Perspektiven & Weiterentwicklung](./10-perspektiven.md) | Ausblick: nächste Schritte in drei Horizonten |
 
 ---
 

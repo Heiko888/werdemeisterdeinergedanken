@@ -326,6 +326,7 @@ toc_rows = [
     ("07", "Anwendungen", "Kanäle, Formate, Generatoren"),
     ("08", "Struktur", "Quellen der Wahrheit im Projekt"),
     ("09", "Mitgliederbereich", "Funktionen & Bedienungsanleitung"),
+    ("10", "Perspektiven", "Weiterentwicklung in drei Horizonten"),
 ]
 rows = ""
 for n, t, s in toc_rows:
@@ -593,6 +594,47 @@ parts.append(chapter("9", "Kapitel 09", "Mitgliederbereich",
     ]),
     affirm("Vor Livegang: echte Preise setzen, Bezahlschranke aktivieren, Videos ergänzen, "
            "ANTHROPIC_API_KEY für die KI-Werkzeuge hinterlegen.", "Hinweis zum Stand"),
+]))
+
+# 10 Perspektiven
+parts.append(chapter("10", "Kapitel 10", "Perspektiven & Weiterentwicklung",
+    "Ausblick auf die nächsten Schritte", [
+    lead("Sinnvolle nächste Schritte – bewusst <b>geerdet</b> in dem, was schon existiert. "
+         "Vieles ist bereits angelegt und muss nur aktiviert oder gefüllt werden. Dies sind "
+         "<b>Möglichkeiten</b>, keine Beschlüsse."),
+    label("Kurzfristig – Vorhandenes scharf schalten"),
+    bullets([
+        "<b>Bezahlschranke aktivieren</b> – Stripe ist integriert; nur einschalten & echte Preise setzen",
+        "<b>Videos einspielen</b> – die Slots existieren überall (aktuell leer)",
+        "<b>KI-Werkzeuge live</b> – API-Key hinterlegen (Begleiter, Detektor, Reading)",
+        "<b>Marken-Feinschliff</b> – Mono-Logo & vektorisierte Wortmarke, altes Logo entfernen",
+    ]),
+    label("Mittelfristig – Erlebnis & Bindung", teal=True),
+    bullets([
+        "<b>Audio-Versionen</b> der Praxis-Übungen & Meditationen",
+        "<b>E-Mail-Journey</b> an die 7 Stufen gekoppelt (Opt-in existiert)",
+        "<b>Motivation</b> – Streaks, Meilensteine, Abschluss-Zertifikate",
+        "<b>Community</b> – moderierter Austausch, Live-Calls",
+        "<b>PWA / Mobile</b> mit Push-Erinnerung für die tägliche Rückkehr",
+    ]),
+    label("Langfristig – Angebot & Reichweite"),
+    bullets([
+        "<b>Angebots-Stufen</b> – Basis · Plus (Community) · 1:1-Begleitung; Workshops, Firmen",
+        "<b>Inhaltliche Breite</b> – mehr Vertiefungen, Podcast aus vorhandenen Kernsätzen",
+        "<b>Personalisierte Lernpfade</b> per KI (aus Gedankenprofil & Journal)",
+        "<b>Internationalisierung</b> – perspektivisch englische Fassung",
+    ]),
+    label("Nach Themen"),
+    table(["Feld", "Perspektive"], [
+        [C("<b>Produkt</b>"), C("Paywall, Videos, Zertifikate, Community, PWA")],
+        [C("<b>Inhalt</b>"), C("Audio, mehr Vertiefungen, Podcast, Übersetzung")],
+        [C("<b>KI</b>"), C("Werkzeuge live, personalisierte Pfade, Begleiter-Gedächtnis")],
+        [C("<b>Marke</b>"), C("Wortmarke vereinheitlichen, Mono-Logo, Foto-Richtlinie, Motion")],
+        [C("<b>Marketing</b>"), C("E-Mail-Journey, Kanäle skalieren, SEO, Automation")],
+        [C("<b>Monetarisierung</b>"), C("Angebots-Stufen, 1:1, Workshops, Firmenkunden")],
+    ]),
+    affirm("Werte zuerst, Tiefe vor Menge, ruhiger Look bleibt, Barrierefreiheit mitdenken – "
+           "und jede Erweiterung zuerst im Code/Content, dann im Brandbook.", "Leitplanken"),
 ]))
 
 # ---------------- Ausgabe ----------------
