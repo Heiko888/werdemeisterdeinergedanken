@@ -36,25 +36,46 @@ export default function SevenStagesPage() {
         </div>
       </PageHero>
 
-      <section className="py-8 sm:py-12">
+      {/* Der leuchtende Pfad – dunkles Kontrast-Band (das Herzstück der Seite) */}
+      <section className="relative isolate overflow-hidden bg-cosmic py-16 text-cream sm:py-24">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
+        />
         <Container size="narrow">
-          <ol className="relative flex flex-col before:absolute before:left-[1.35rem] before:top-6 before:bottom-6 before:w-px before:bg-gradient-to-b before:from-leaf-400/50 before:via-teal-500/30 before:to-transparent">
+          <ol className="relative">
+            <span
+              aria-hidden
+              className="absolute left-7 top-10 bottom-10 w-0.5 -translate-x-1/2"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(140,198,63,.1), #8cc63f, #21b2bd, rgba(33,178,189,.1))",
+              }}
+            />
             {stages.map((stage, i) => (
               <Reveal key={stage.number} delay={(i % 3) * 60}>
-                <li className="relative flex gap-6 border-t border-ink/10 py-7 first:border-t-0">
-                  <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-ink/15 bg-paper font-display text-base italic text-accent">
+                <li className="relative flex gap-6 py-5">
+                  <span
+                    className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full font-display text-lg font-medium text-cream"
+                    style={{
+                      background:
+                        "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#8cc63f,#21b2bd) border-box",
+                      border: "1.5px solid transparent",
+                      boxShadow: "0 0 22px -4px rgba(52,196,196,.5)",
+                    }}
+                  >
                     {stage.number}
                   </span>
-                  <div className="min-w-0 flex-1">
+                  <div className="min-w-0 flex-1 pt-1">
                     <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                      <h2 className="text-xl font-medium text-ink sm:text-2xl">
+                      <h2 className="text-xl font-medium text-cream sm:text-2xl">
                         {stage.title}
                       </h2>
-                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
+                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-teal-300/80">
                         {stage.subtitle}
                       </span>
                     </div>
-                    <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-mid sm:text-base">
+                    <p className="mt-2 text-[0.95rem] leading-relaxed text-cream/70 sm:text-base">
                       {stage.description}
                     </p>
                   </div>
@@ -62,8 +83,13 @@ export default function SevenStagesPage() {
               </Reveal>
             ))}
           </ol>
+        </Container>
+      </section>
 
-          <div className="mt-14 flex flex-col items-center gap-5 border-t border-accent/25 pt-14 text-center">
+      {/* Abschluss-CTA – heller Release nach dem dunklen Pfad */}
+      <section className="bg-surface-2 py-16 sm:py-24">
+        <Container size="narrow">
+          <div className="flex flex-col items-center gap-5 text-center">
             <h2 className="font-display text-2xl italic text-ink sm:text-3xl">
               Bereit, deine Stufe zu bestimmen?
             </h2>
