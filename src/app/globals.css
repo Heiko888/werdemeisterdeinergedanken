@@ -274,6 +274,22 @@
   }
 
   /* ------------------------------------------------------------
+     Hell-auf-Dunkel-Umschalter für einzelne Sektionen.
+     Remappt dieselben ink-/accent-Variablen wie .member-hero – aber OHNE
+     eigenen Hintergrund. Auf eine dunkle Sektion (z. B. .bg-cosmic) gelegt,
+     schaltet der komplette Inhalt (Überschriften text-ink, Fließtext
+     text-ink-mid, Eyebrow text-accent …) automatisch auf helle Werte,
+     ohne dass in der Sektion jede Textfarbe einzeln angefasst werden muss.
+     ------------------------------------------------------------ */
+  .on-dark {
+    --color-ink: #ffffff;
+    --color-ink-soft: color-mix(in oklab, #ffffff 84%, transparent);
+    --color-ink-mid: color-mix(in oklab, #ffffff 74%, transparent);
+    --color-ink-muted: color-mix(in oklab, #ffffff 64%, transparent);
+    --color-accent: var(--color-teal-300);
+  }
+
+  /* ------------------------------------------------------------
      Mitgliederbereich – dunkle Navy-Kopfzone
      Bringt das Marken-Blau (wie in den Marketing-Carousels) in den
      eingeloggten Bereich. Trick: alle text-ink- und accent-Utilities zeigen

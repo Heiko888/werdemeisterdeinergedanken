@@ -65,7 +65,7 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       )}
 
       {/* Filter nach Themen */}
-      <section className="pt-8 pb-4 sm:pt-12">
+      <section className="bg-surface-2 pt-10 pb-4 sm:pt-14">
         <Container>
           <div className="flex flex-col gap-3">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-muted">
@@ -105,7 +105,7 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       </section>
 
       {/* Artikel-Raster */}
-      <section className="pb-8">
+      <section className="bg-surface-2 pb-16 sm:pb-20">
         <Container>
           <div aria-live="polite" className="sr-only">
             {active === ALL

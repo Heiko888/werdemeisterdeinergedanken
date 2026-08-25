@@ -15,7 +15,7 @@ const benefits = [
 
 export function Compass() {
   return (
-    <section className="relative border-t border-ink/10 bg-paper py-16 sm:py-32">
+    <section className="relative bg-surface-2 py-16 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal className="order-2 lg:order-1">
           <div className="relative mx-auto w-full max-w-md lg:max-w-lg">

@@ -101,19 +101,29 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Meilensteine */}
-      <section className="py-12 sm:py-16">
+      {/* Meilensteine – vertikale Timeline mit gefüllten Markern */}
+      <section className="bg-surface-2 py-16 sm:py-24">
         <Container size="narrow">
           <Eyebrow>Mein Weg</Eyebrow>
-          <ol className="mt-8 flex flex-col">
+          <ol className="relative mt-10">
+            <span
+              aria-hidden
+              className="absolute left-[7px] top-2 bottom-3 w-px bg-gradient-to-b from-leaf-500/60 via-teal-500/40 to-transparent"
+            />
             {milestones.map((m) => (
               <Reveal key={m.year}>
-                <li className="flex flex-col gap-1 border-t border-ink/10 py-6 last:border-b sm:flex-row sm:gap-8">
-                  <span className="w-40 shrink-0 font-display text-sm italic text-accent/70">
-                    {m.year}
-                  </span>
-                  <div>
-                    <h3 className="text-lg font-medium text-ink">{m.title}</h3>
+                <li className="relative flex gap-6 pb-9 last:pb-0">
+                  <span
+                    aria-hidden
+                    className="relative z-10 mt-1.5 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 ring-4 ring-surface-2"
+                  />
+                  <div className="-mt-1 min-w-0">
+                    <span className="font-display text-sm italic text-accent/80">
+                      {m.year}
+                    </span>
+                    <h3 className="mt-0.5 text-lg font-medium text-ink">
+                      {m.title}
+                    </h3>
                     <p className="mt-1 text-sm leading-relaxed text-ink-mid">
                       {m.text}
                     </p>
@@ -125,18 +135,22 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Werte */}
-      <section className="border-y border-ink/10 bg-white py-20 sm:py-24">
+      {/* Werte – dunkles Kontrast-Band, die Zahlen leuchten auf Navy */}
+      <section className="relative isolate overflow-hidden bg-cosmic on-dark py-20 sm:py-28">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
+        />
         <Container>
           <Eyebrow>Was mich leitet</Eyebrow>
           <h2 className="mt-4 text-[2rem] font-medium text-ink sm:text-4xl">
             Meine Werte
           </h2>
-          <div className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v, i) => (
               <Reveal key={v.title} delay={(i % 4) * 70}>
-                <div className="flex flex-col gap-2 border-t border-ink/10 pt-5">
-                  <span className="font-display text-lg italic text-accent/70">
+                <div className="flex flex-col gap-2 border-t border-white/15 pt-5">
+                  <span className="font-display text-3xl italic text-accent">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3 className="text-lg font-medium text-ink">{v.title}</h3>
