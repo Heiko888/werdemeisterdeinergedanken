@@ -1,0 +1,67 @@
+# 03 · Logo
+
+## Aufbau
+
+Das Logo besteht aus zwei Elementen:
+
+1. **Emblem / Bildmarke** – ein stilisiertes Gehirn („Brain-Mark"), das mit
+   organischen Blatt-/Neuronen-Formen die Verbindung von Natur und Geist trägt.
+2. **Wortmarke** – „Werde Meister deiner **Gedanken**", zweizeilig, in
+   Versalien (uppercase), mit dem Marken-Verlauf **Lindgrün → Türkis**.
+
+Quelle (Web-Komponente): `src/components/visuals/Logo.tsx`.
+
+## Logo-Dateien
+
+Alle im Ordner `public/`:
+
+| Datei | Verwendung |
+|-------|------------|
+| `logo-brain.png` | Freigestelltes Gehirn-Emblem (Standard im Web, Header) |
+| `logo-brain-frei.png` | Freigestellte Variante des Emblems |
+| `logo.svg` | Vektor-Logo (skalierbar, für Print/große Flächen) |
+| `logo-full.png` | Vollständiges Logo (Emblem + Wortmarke) als Rastergrafik |
+
+⚠️ PRÜFEN: Ob eine **rein vektorisierte Wortmarke** (SVG mit Text als Pfade)
+existiert – aktuell wird die Wortmarke im Web als HTML-Text mit CSS-Verlauf
+gerendert (`Logo.tsx`), nicht als Bilddatei.
+
+## Wortmarke im Web
+
+- Font: **Inter**, `font-weight` 600/700, `text-transform: uppercase`.
+- Tracking: obere Zeile `0.2em`, untere Zeile `0.12em`.
+- Farbe: Verlaufsklasse `.text-gradient-leaf` (Lindgrün → Türkis).
+- Zwei Zeilen: „Werde Meister deiner" (klein) / „Gedanken" (groß).
+
+## Tonwert-Varianten
+
+Die Komponente unterstützt zwei Kontraste (Prop `tone`):
+
+- `onLight` – für helle Flächen (Papier/Weiß). Dezenter Glow.
+- `onDark` – für dunkle Flächen (Navy/Footer). Stärkerer Glow
+  (Türkis + Lindgrün Drop-Shadow).
+
+Zusätzlich `compact` = nur Emblem ohne Wortmarke (z. B. enge Header, Favicon-Kontext).
+
+## Schutzraum & Mindestgröße
+
+⚠️ PRÜFEN / FESTLEGEN – noch nicht formal definiert. Empfehlung als Startwert:
+
+- **Schutzraum:** mindestens die halbe Höhe des Emblems ringsum freihalten.
+- **Mindesthöhe Emblem:** 32 px digital (im Web aktuell `h-10` ≈ 40 px).
+- Emblem und Wortmarke im Standardabstand `gap-3` (0.75 rem) nebeneinander.
+
+## Logo-Don'ts
+
+- Emblem nicht verzerren, drehen oder umfärben (der Verlauf ist Teil der Marke).
+- Wortmarke nicht in Kleinbuchstaben setzen (immer Versalien).
+- Nicht auf unruhige Fotos ohne ausreichenden Kontrast / Abdunkelung setzen.
+- Marken-Verlauf nicht durch Vollfarben ersetzen (außer bewusst als 1-Farb-Version,
+  siehe unten).
+
+⚠️ PRÜFEN / FESTLEGEN: **Einfarbige Fallback-Version** (z. B. reines Cream auf
+Navy, reines Ink auf Papier) für Fax/Stempel/Gravur/sehr kleine Größen.
+
+---
+
+**Quelle der Wahrheit:** `src/components/visuals/Logo.tsx`, `public/logo-*.{png,svg}`
