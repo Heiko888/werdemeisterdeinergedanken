@@ -24,12 +24,37 @@ ehrlich, auf Augenhöhe, ohne Guru-Getue. Werkzeuge statt Abhängigkeit.
 
 ## Zielgruppe
 
-Menschen, die spüren, dass sie „gelebt werden" statt selbst zu gestalten, und
-die einen klaren, ehrlichen Weg zu innerer Klarheit suchen – ohne
-Abhängigkeit von einem Coach, sondern mit Werkzeugen für den Alltag.
+### Kern-Persona: „Die/der bewusst Suchende"
 
-⚠️ PRÜFEN: Zielgruppe ist aus Ton & Inhalten abgeleitet – bei Bedarf mit
-konkreten Persona(s), Alter, Lebenssituation schärfen.
+Der primäre Fokus der Marke. Menschen auf einer echten Sinn- und
+Selbstfindungssuche, die spüren, dass sie „gelebt werden" statt selbst zu
+gestalten – und die bereit sind, in die Tiefe zu gehen.
+
+| Merkmal | Ausprägung |
+|---------|------------|
+| **Grundhaltung** | Offen für Bewusstseins-, Innen- und Sinnthemen; sucht Tiefe und Ganzheit, keine Oberflächen-Tipps. |
+| **Alter/Situation** | Breit (ca. 25–55), oft in einer Umbruch- oder Frage-Phase des Lebens. |
+| **Motivation** | Innere Klarheit, Selbsterkenntnis, echte Veränderung an der Wurzel – ein roter Faden statt loser Techniken. |
+| **Schmerzpunkt** | Gedankenkreisen, alte Muster, das Gefühl von Fremdgesteuertsein und innerer Unruhe. |
+| **Erwartung an die Marke** | Ein Begleiter auf Augenhöhe, der Tiefe zugänglich macht – warm, ermutigend, ohne Dogma. |
+
+### Ansprache dieser Persona
+
+- **Wärmer und einladender** als rein sachlich-„beweisgetrieben": Bewusstsein,
+  Freiheit, innere Ruhe und Selbsterkenntnis dürfen als Sehnsucht angesprochen
+  werden.
+- **Tiefe zugänglich machen:** große Themen (Bewusstsein, Muster, Freiheit) in
+  einfache, erlebbare Schritte übersetzen – nie abgehoben oder esoterisch-vage.
+- **Einladen statt behaupten:** Fragen, die zum Bemerken anstoßen (siehe Kap. 02).
+
+### Sekundäres Segment (mitnehmen, nicht abschrecken)
+
+Der bodenständig-skeptische Typ (wie in den Testimonials: Unternehmer:in,
+Projektleiter:in) ist ein wichtiges **Zweitpublikum**. Für ihn gilt: die Tiefe
+bleibt, aber **belegt und erdverbunden** – das „ohne esoterisches Blabla"
+(Michael R.) muss trotz spiritueller Kern-Ansprache glaubwürdig bleiben.
+Deshalb: spirituelle Wärme **ja**, Guru-Sprech und Dogma **nein** (siehe Werte
+& Kap. 02).
 
 ## Markenwerte
 

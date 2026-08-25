@@ -77,12 +77,14 @@ tools/
 - ✅ **Logo-Schutzraum/Mindestgrößen** (digital) aus Code verbindlich gemacht (Kap. 03).
 - ✅ **Motion-Regeln** ergänzt (Kap. 06).
 - ✅ **Gold-Regel** auf öffentliche Flächen präzisiert (Kap. 04).
+- ✅ **Zielgruppe/Persona** festgelegt: Kern „bewusst Suchende", sekundär
+  bodenständig-skeptisch (Kap. 01).
+- ✅ **Foto-Richtlinie** „Heiko im Zentrum" festgeschrieben (Kap. 06).
 
 ## Offene Punkte — brauchen eine Entscheidung/Inhalt von Heiko
 
 Diese Lücken lassen sich **nicht** aus dem Code füllen:
 
-- ⚠️ **Zielgruppe/Persona** schärfen (Kap. 01).
 - ⚠️ **Einfarbige Logo-Fallback-Version** erstellen (Kap. 03).
 - ⚠️ **Vektorisierte Wortmarke** (SVG mit Pfaden) erstellen (Kap. 03).
 - ⚠️ **Print-Mindestgrößen** des Logos (mm) festlegen (Kap. 03).

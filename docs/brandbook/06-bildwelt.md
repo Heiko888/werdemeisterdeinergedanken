@@ -33,17 +33,54 @@ Das freigestellte Gehirn (`public/logo-brain.png`) ist das wiederkehrende
 Key-Visual – zentriert (Avatar), als Säule (Story) oder rechts als Motiv
 (Thumbnail), immer mit Glow hinterlegt.
 
-## Fotografie
+## Fotografie — Richtlinie „Heiko im Zentrum"
 
-- Portraits von Heiko: warm, nahbar, freigestellt oder vor ruhigem Hintergrund
-  (`public/heiko-*.webp`).
-- Hero-Motive pro Thema als `public/hero-*.webp` (großer, kuratierter Bestand
-  zu Bewusstseins-/Neuro-Themen).
-- Über Fotos werden Marken-Overlays gelegt (transparente Zitat-/Fakten-Ebenen),
-  statt Text direkt einzubetten – siehe `tools/marketing/content-overlays.mjs`.
+**Leitprinzip:** Die echte Person **Heiko trägt die Marke.** Vertrauen entsteht
+über sein Gesicht und seine Präsenz; der kosmische Marken-Look bildet den
+**Rahmen** (Hintergrund, Glow, Emblem, Overlays) – nicht umgekehrt. Menschen
+folgen einem Menschen, nicht einer Abstraktion.
 
-⚠️ PRÜFEN / FESTLEGEN: Verbindliche Foto-Richtlinie (Bildstil, Farbstimmung,
-erlaubte Motive, Freisteller-Regeln) ist noch nicht schriftlich fixiert.
+### Hierarchie der Bildmotive
+
+1. **Heiko-Portraits (Priorität 1)** — nahbar, warm, echt. Ruhiger, präsenter
+   Ausdruck (kein gestelltes Dauerlächeln, kein Guru-Pathos). Freigestellt oder
+   vor ruhigem Hintergrund. Vorhanden: `public/heiko-portrait.webp`,
+   `heiko-freigestellt.webp`, `heiko-brain-portrait.webp`,
+   `ueber-heiko-hund.webp` (nahbar/privat).
+2. **Themen-Heros (Priorität 2)** — kuratierte Motive je Inhaltsthema
+   (`public/hero-*.webp`) zu Bewusstseins-/Neuro-Themen. Unterstützen den
+   Inhalt, ersetzen aber nicht die Person.
+3. **Kosmische Key-Visuals (Priorität 3)** — Emblem + Marken-Look, wenn kein
+   Foto passt (Zitate, abstrakte Botschaften).
+
+### Bildstil & Farbstimmung
+
+- **Warm & nahbar**, natürliche Hauttöne – nicht kühl-technisch.
+- Sanfte Anbindung an die Markenwelt: dunkle/ruhige Hintergründe, dezenter
+  Türkis-Glow, viel Ruhe im Bild (Weite, wenig Clutter).
+- Zur Marke gebrückt wird über **Rahmen, Glow und Overlays**, nicht über harte
+  Farbfilter, die die Person unnatürlich einfärben.
+
+### Freisteller & Komposition
+
+- Heiko bevorzugt **freigestellt** vor kosmischem Hintergrund oder mit
+  klarem Freiraum für Wortmarke/Claim/CTA.
+- Blickrichtung/Freiraum so wählen, dass Text (Eyebrow → Headline → CTA) Platz
+  hat; Person nicht vom Text überdecken.
+
+### Text auf Fotos
+
+Über Fotos werden **transparente Marken-Overlays** (Zitat-/Fakten-Ebenen)
+gelegt, statt Text fest einzubrennen – erzeugt via
+`tools/marketing/content-overlays.mjs`. So bleibt das Foto flexibel nutzbar und
+der Text konsistent im Marken-Look.
+
+### Foto-Don'ts
+
+- Keine generischen Stockfotos, die Heiko/die Marke nicht repräsentieren.
+- Keine grellen Filter oder unnatürlichen Hauttöne.
+- Person nicht in unruhige, kontrastarme Hintergründe „ertränken".
+- Kosmischen Look nicht die Person überstrahlen lassen – er rahmt, er dominiert nicht.
 
 ## Wiederkehrende CSS-Bausteine (Web)
 
