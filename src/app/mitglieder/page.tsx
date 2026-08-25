@@ -10,7 +10,6 @@ import {
   Brain,
   Check,
   Download,
-  Lock,
   Play,
   Spark,
 } from "@/components/ui/Icon";
@@ -110,9 +109,10 @@ export default async function MembersPage() {
     : "Geführte Praxis";
   const featuredCta = featuredIsAudio ? "Jetzt anhören" : "Jetzt ansehen";
 
-  // Chronologischer Lernpfad (linear freigeschaltet): die aktuelle Stufe ist die
-  // erste noch nicht abgeschlossene. Alles davor gilt als erledigt, alles danach
-  // als gesperrt. So gibt es immer einen "Hier weitermachen"-Anker – auch ohne Test.
+  // Chronologischer Lernpfad (sanfte Führung, keine Sperre): die aktuelle Stufe
+  // ist die erste noch nicht abgeschlossene. Alles davor gilt als erledigt, die
+  // direkt folgende als "Als Nächstes". Alle Stufen bleiben frei zugänglich – so
+  // gibt es immer einen "Hier weitermachen"-Anker, auch ohne Test.
   const currentIndex = stages.findIndex((s) => !completed.has(s.number));
   const allStagesDone = currentIndex === -1;
   const currentOrdinal = allStagesDone ? stages.length : currentIndex + 1;
@@ -361,74 +361,9 @@ export default async function MembersPage() {
               const ordinal = i + 1;
               const isDone = completed.has(stage.number);
               const isCurrent = !isDone && i === currentIndex;
-              const isLocked = !isDone && !isCurrent;
-
-              const node = (
-                <span
-                  className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-lg font-medium ${
-                    isDone
-                      ? "bg-gradient-to-br from-leaf-500 to-teal-500 text-navy-950"
-                      : isCurrent
-                        ? "bg-brand-500 text-white ring-4 ring-brand-500/25"
-                        : "border border-ink/10 bg-mist-100 text-ink-muted"
-                  }`}
-                >
-                  {isDone ? <Check /> : isLocked ? <Lock /> : stage.number}
-                </span>
-              );
-
-              const body = (
-                <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                    <h3
-                      className={`text-lg font-medium ${
-                        isLocked ? "text-ink-muted" : "text-ink"
-                      }`}
-                    >
-                      {stage.title}
-                    </h3>
-                    {isDone && (
-                      <span className="rounded-full bg-leaf-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-accent">
-                        Erledigt
-                      </span>
-                    )}
-                    {isCurrent && (
-                      <span className="rounded-full bg-brand-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-brand-600">
-                        Du bist hier
-                      </span>
-                    )}
-                    {isLocked && (
-                      <span className="rounded-full bg-ink/[0.06] px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-ink-muted">
-                        Gesperrt
-                      </span>
-                    )}
-                  </div>
-                  <p
-                    className={`mt-1 text-sm leading-relaxed ${
-                      isLocked ? "text-ink-muted/80" : "text-ink-mid"
-                    }`}
-                  >
-                    {stage.subtitle}
-                  </p>
-                  {isCurrent && (
-                    <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
-                      Weitermachen
-                      <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
-                    </span>
-                  )}
-                </div>
-              );
-
-              if (isLocked) {
-                return (
-                  <li key={stage.number} className="relative flex gap-5 pb-8 last:pb-0">
-                    <span aria-hidden className="opacity-70">
-                      {node}
-                    </span>
-                    <div className="pt-1.5 opacity-70">{body}</div>
-                  </li>
-                );
-              }
+              // Sanfte Führung statt Sperre: alle Stufen bleiben frei zugänglich.
+              // „Als Nächstes" markiert die Stufe direkt nach der aktuellen.
+              const isNext = !isDone && !isCurrent && i === currentIndex + 1;
 
               return (
                 <li key={stage.number} className="relative flex pb-8 last:pb-0">
@@ -440,8 +375,48 @@ export default async function MembersPage() {
                         : "p-1 hover:opacity-80"
                     }`}
                   >
-                    {node}
-                    <div className="pt-1.5">{body}</div>
+                    <span
+                      className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-lg font-medium ${
+                        isDone
+                          ? "bg-gradient-to-br from-leaf-500 to-teal-500 text-navy-950"
+                          : isCurrent
+                            ? "bg-brand-500 text-white ring-4 ring-brand-500/25"
+                            : "border border-ink/10 bg-mist-100 text-ink-mid"
+                      }`}
+                    >
+                      {isDone ? <Check /> : stage.number}
+                    </span>
+                    <div className="min-w-0 flex-1 pt-1.5">
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                        <h3 className="text-lg font-medium text-ink">
+                          {stage.title}
+                        </h3>
+                        {isDone && (
+                          <span className="rounded-full bg-leaf-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-accent">
+                            Erledigt
+                          </span>
+                        )}
+                        {isCurrent && (
+                          <span className="rounded-full bg-brand-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-brand-600">
+                            Du bist hier
+                          </span>
+                        )}
+                        {isNext && (
+                          <span className="rounded-full bg-teal-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-teal-600">
+                            Als Nächstes
+                          </span>
+                        )}
+                      </div>
+                      <p className="mt-1 text-sm leading-relaxed text-ink-mid">
+                        {stage.subtitle}
+                      </p>
+                      {isCurrent && (
+                        <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
+                          Weitermachen
+                          <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                        </span>
+                      )}
+                    </div>
                   </Link>
                 </li>
               );
