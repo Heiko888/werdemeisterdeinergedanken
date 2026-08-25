@@ -17,6 +17,7 @@
     "reel-drehbuch": "node tools/pdf/reel-drehbuch.mjs",
     "endcard": "node docs/reels/covers/endcard.mjs",
     "langvideo-drehbuch": "node tools/pdf/langvideo-drehbuch.mjs",
+    "willkommen-skript": "node tools/pdf/willkommen-skript.mjs",
     "story-overlays": "node tools/marketing/story-overlays.mjs",
     "content-overlays": "node tools/marketing/content-overlays.mjs",
     "whatsapp:mitgliedschaft": "node tools/marketing/whatsapp-mitgliedschaft.mjs",
