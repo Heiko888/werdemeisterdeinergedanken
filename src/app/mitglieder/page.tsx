@@ -10,6 +10,7 @@ import {
   Brain,
   Check,
   Download,
+  Lock,
   Play,
   Spark,
 } from "@/components/ui/Icon";
@@ -99,6 +100,7 @@ export default async function MembersPage() {
 
   const completed = new Set(completedKeys);
   const completedCount = stages.filter((s) => completed.has(s.number)).length;
+  const progressPercent = Math.round((completedCount / stages.length) * 100);
 
   const featured = featuredPractice();
   // Format-korrektes Label: Audio → „anhören", reines Video → „ansehen".
@@ -108,22 +110,60 @@ export default async function MembersPage() {
     : "Geführte Praxis";
   const featuredCta = featuredIsAudio ? "Jetzt anhören" : "Jetzt ansehen";
 
-  // Empfehlung für den personalisierten Einstieg (aus dem Bewusstseinstest).
-  const startStageData =
-    startStage && startStage >= 1 && startStage <= stages.length
-      ? stages[startStage - 1]
-      : null;
-  const startStagePractice = startStage
-    ? practicesForStage(startStage)[0] ?? null
-    : null;
+  // Chronologischer Lernpfad (linear freigeschaltet): die aktuelle Stufe ist die
+  // erste noch nicht abgeschlossene. Alles davor gilt als erledigt, alles danach
+  // als gesperrt. So gibt es immer einen "Hier weitermachen"-Anker – auch ohne Test.
+  const currentIndex = stages.findIndex((s) => !completed.has(s.number));
+  const allStagesDone = currentIndex === -1;
+  const currentOrdinal = allStagesDone ? stages.length : currentIndex + 1;
+  const currentStage = allStagesDone ? null : stages[currentIndex];
+  const currentPractice = allStagesDone
+    ? null
+    : practicesForStage(currentOrdinal)[0] ?? null;
+
+  // Werkzeuge (Ebene 3): die früheren Hero-Pills, gruppiert und entzerrt.
+  const tools = [
+    loggedIn && { href: "/mitglieder/journal", label: "Mein Journal", icon: Check },
+    begleiterVerfuegbar && {
+      href: "/mitglieder/begleiter",
+      label: "Dein Begleiter",
+      icon: Spark,
+    },
+    loggedIn && {
+      href: "/mitglieder/gedankenprofil",
+      label: "Mein Gedankenprofil",
+      icon: Brain,
+    },
+    begleiterVerfuegbar && {
+      href: "/mitglieder/detektor",
+      label: "Manipulations-Detektor",
+      icon: Spark,
+    },
+    loggedIn && {
+      href: "/mitglieder/programm",
+      label: "21 Tage Autopilot-Ausstieg",
+      icon: ArrowRight,
+    },
+    loggedIn && {
+      href: "/mitglieder/rueckkehr",
+      label: "Die tägliche Rückkehr",
+      icon: ArrowRight,
+    },
+    {
+      href: "/mitglieder/wissensdatenbank",
+      label: "Wissensdatenbank",
+      icon: Brain,
+    },
+    isAdmin && { href: "/admin", label: "Marketing-Cockpit", icon: Spark },
+  ].filter(Boolean) as { href: string; label: string; icon: typeof Check }[];
 
   return (
     <>
-      {/* Kopf – dunkle Navy-Kopfzone (Marken-Blau) */}
-      <section className="member-hero overflow-hidden py-16 sm:py-20">
+      {/* Kopf – dunkle Navy-Kopfzone (Marken-Blau), jetzt schlank ohne Pill-Wolke */}
+      <section className="member-hero overflow-hidden py-14 sm:py-20">
         {/* Titelbild – leuchtendes Gehirn über dem Weg: reine Dekoration hinter
             dem Text (deshalb alt=""). Darüber ein nach links dichter werdender
-            Navy-Schleier, damit Begrüßung und Buttons lesbar bleiben. */}
+            Navy-Schleier, damit Begrüßung und Fortschritt lesbar bleiben. */}
         <Image
           src="/hero-mitglieder.webp"
           alt=""
@@ -160,154 +200,104 @@ export default async function MembersPage() {
             )}
           </div>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-            Dein persönlicher Raum für deine Reise durch die 7 Stufen. Hier
-            findest du künftig deine Inhalte, deinen Fortschritt und exklusive
-            Materialien.
+            Dein persönlicher Raum für deine Reise durch die 7 Stufen. Unten
+            siehst du, wo du stehst und was als Nächstes dran ist.
           </p>
-          <div className="grid grid-flow-dense grid-cols-2 gap-2.5 [&>*]:justify-center [&>*]:text-center sm:flex sm:flex-wrap sm:gap-3 sm:[&>*]:justify-start sm:[&>*]:text-left">
-            {loggedIn && (
-              <Link
-                href="/mitglieder/journal"
-                className="group inline-flex items-center gap-1.5 rounded-full bg-brand-500 px-3 py-2 text-[0.8rem] font-semibold leading-tight text-white shadow-[0_12px_30px_-14px_rgba(54,112,238,0.9)] transition-all hover:bg-brand-400 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-              >
-                <Check />
-                Mein Journal
-                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-              </Link>
-            )}
-            {begleiterVerfuegbar && (
-              <Link
-                href="/mitglieder/begleiter"
-                className="group inline-flex items-center gap-1.5 rounded-full border border-teal-300/50 bg-teal-400/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/80 hover:bg-teal-400/20 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-              >
-                <Spark />
-                Dein Begleiter
-                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-              </Link>
-            )}
-            {loggedIn && (
-              <Link
-                href="/mitglieder/gedankenprofil"
-                className="group inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-              >
-                Mein Gedankenprofil
-                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-              </Link>
-            )}
-            {begleiterVerfuegbar && (
-              <Link
-                href="/mitglieder/detektor"
-                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-              >
-                <Spark />
-                Manipulations-Detektor
-                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-              </Link>
-            )}
-            {loggedIn && (
-              <Link
-                href="/mitglieder/programm"
-                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-              >
-                21 Tage Autopilot-Ausstieg
-                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-              </Link>
-            )}
-            {loggedIn && (
-              <Link
-                href="/mitglieder/rueckkehr"
-                className="group col-span-2 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-              >
-                Die tägliche Rückkehr
-                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-              </Link>
-            )}
-            <Link
-              href="/mitglieder/wissensdatenbank"
-              className="group inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-            >
-              <Brain />
-              Wissensdatenbank
-              <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-            </Link>
-            <a
-              href="/mitglieder/arbeitsheft"
-              className="col-span-2 inline-flex items-center gap-1.5 rounded-2xl border border-white/20 bg-white/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 sm:col-auto sm:gap-2 sm:rounded-full sm:px-5 sm:py-2.5 sm:text-sm"
-            >
-              <Download />
-              Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
-            </a>
-            {isAdmin && (
-              <Link
-                href="/admin"
-                className="group inline-flex items-center gap-1.5 rounded-full border border-teal-300/50 bg-teal-400/10 px-3 py-2 text-[0.8rem] font-medium leading-tight text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/80 hover:bg-teal-400/20 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-              >
-                Marketing-Cockpit
-                <ArrowRight className="hidden transition-transform group-hover:translate-x-0.5 sm:inline-block" />
-              </Link>
-            )}
+
+          {/* Mini-Fortschritt direkt im Kopf */}
+          <div className="mt-2 flex w-full max-w-md flex-col gap-2">
+            <div className="flex items-baseline justify-between text-sm text-ink-mid">
+              <span>
+                {allStagesDone
+                  ? "Alle Stufen abgeschlossen"
+                  : `Stufe ${currentOrdinal} von ${stages.length}`}
+              </span>
+              <span className="tabular-nums text-ink-muted">
+                {progressPercent}%
+              </span>
+            </div>
+            <div className="h-2 w-full overflow-hidden rounded-full bg-white/15">
+              <span
+                className="block h-full rounded-full bg-gradient-to-r from-leaf-400 to-teal-400 transition-all duration-500"
+                style={{ width: `${progressPercent}%` }}
+              />
+            </div>
           </div>
         </Container>
       </section>
 
-      {/* Personalisierter Einstieg – aus dem Bewusstseinstest */}
-      {loggedIn && startStageData && (
-        <section className="py-6">
+      {/* EBENE 1 – „Hier weitermachen": der einzige dominante Anker */}
+      {loggedIn && (
+        <section className="py-8 sm:py-10">
           <Container>
-            <div className="flex flex-col gap-5 rounded-2xl border border-accent/30 bg-white p-7 shadow-card sm:p-8">
-              <div className="flex flex-col gap-2">
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                  Dein Ausgangspunkt
+            {allStagesDone ? (
+              <div className="flex flex-col items-start gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-leaf-500/[0.08] to-teal-500/[0.08] p-7 shadow-card sm:p-9">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-xl text-navy-950">
+                  <Check />
                 </span>
-                <h2 className="font-display text-xl font-medium text-ink sm:text-2xl">
-                  Startstufe {startStageData.number} – {startStageData.title}
+                <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">
+                  Du hast alle 7 Stufen abgeschlossen.
                 </h2>
                 <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-                  Dein Bewusstseinstest zeigt hier deinen aktuellen Schwerpunkt –
-                  ein guter Ort, um weiterzumachen.
+                  Ein großer Schritt. Vertiefe, wiederhole oder halte deine
+                  Reise im Journal fest – Meisterschaft ist kein Ziel, sondern
+                  eine Praxis.
                 </p>
+                <div className="flex flex-wrap gap-3">
+                  <Button href="/mitglieder/journal" variant="accent">
+                    Zu meinem Journal
+                    <ArrowRight />
+                  </Button>
+                </div>
               </div>
-              <div className="flex flex-wrap gap-3">
-                <Button href={`/mitglieder/stufe/${startStage}`} variant="accent">
-                  Zu Stufe {startStageData.number}
-                  <ArrowRight />
-                </Button>
-                {startStagePractice && (
-                  <Link
-                    href={`/mitglieder/praxis/${startStagePractice.slug}`}
-                    className="inline-flex items-center gap-2 rounded-2xl border border-ink/20 bg-white px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent sm:rounded-full"
-                  >
-                    <Play />
-                    Passende Praxis: {startStagePractice.title}
-                  </Link>
-                )}
-              </div>
-            </div>
-          </Container>
-        </section>
-      )}
-
-      {/* Einladung zum Test, falls noch kein Ergebnis gespeichert ist */}
-      {loggedIn && !startStageData && (
-        <section className="py-6">
-          <Container>
-            <div className="flex flex-col items-start gap-4 rounded-2xl border border-ink/15 bg-white p-7 shadow-card sm:p-8">
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                Finde deinen Startpunkt
-              </span>
-              <h2 className="font-display text-xl font-medium text-ink sm:text-2xl">
-                Wo stehst du gerade?
-              </h2>
-              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-                Mach den Bewusstseinstest – 21 Fragen, etwa 5 Minuten. Dein
-                Ergebnis landet direkt hier und zeigt dir, wo du am besten
-                weitermachst.
-              </p>
-              <Button href="/bewusstseinstest" variant="accent">
-                Bewusstseinstest starten
-                <ArrowRight />
-              </Button>
-            </div>
+            ) : (
+              currentStage && (
+                <div className="flex flex-col gap-6 rounded-2xl border border-brand-300/60 bg-white p-7 shadow-card sm:p-9">
+                  <div className="flex flex-col gap-2">
+                    <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-brand-500">
+                      Hier weitermachen · Stufe {currentOrdinal} von {stages.length}
+                    </span>
+                    <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">
+                      Stufe {currentStage.number}:{" "}
+                      <span className="text-brand-600">{currentStage.title}</span>
+                    </h2>
+                    <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+                      {currentStage.description}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Link
+                      href={`/mitglieder/stufe/${currentOrdinal}`}
+                      className="inline-flex items-center gap-2 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_-14px_rgba(54,112,238,0.9)] transition-all hover:bg-brand-400"
+                    >
+                      Weiter mit Stufe {currentOrdinal}
+                      <ArrowRight />
+                    </Link>
+                    {currentPractice && (
+                      <Link
+                        href={`/mitglieder/praxis/${currentPractice.slug}`}
+                        className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-3 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                      >
+                        <Play />
+                        Passende Praxis: {currentPractice.title}
+                      </Link>
+                    )}
+                  </div>
+                  {!startStage && (
+                    <p className="text-sm text-ink-muted">
+                      Noch nicht sicher, wo du stehst?{" "}
+                      <Link
+                        href="/bewusstseinstest"
+                        className="font-medium text-accent underline-offset-4 hover:underline"
+                      >
+                        Mach den Bewusstseinstest
+                      </Link>{" "}
+                      – dein Ergebnis passt den Startpunkt an.
+                    </p>
+                  )}
+                </div>
+              )
+            )}
           </Container>
         </section>
       )}
@@ -345,66 +335,118 @@ export default async function MembersPage() {
         </section>
       )}
 
-      {/* Fortschritt durch die 7 Stufen */}
-      <section className="py-16 sm:py-20">
-        <Container>
+      {/* EBENE 2 – „Dein Weg": chronologischer Stepper mit Status */}
+      <section className="py-14 sm:py-20">
+        <Container size="narrow">
           <div className="flex items-baseline justify-between gap-4">
-            <h2 className="font-display text-2xl font-medium text-ink">
-              Deine 7 Stufen
-            </h2>
-            <span className="text-sm text-ink-muted">
+            <div>
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                Dein Weg
+              </span>
+              <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+                Die 7 Stufen
+              </h2>
+            </div>
+            <span className="shrink-0 text-sm text-ink-muted">
               {completedCount} / {stages.length} abgeschlossen
             </span>
           </div>
 
-          {/* Fortschrittsbalken */}
-          <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-brand-500/[0.12]">
+          <ol className="relative mt-10">
             <span
-              className="block h-full rounded-full bg-gradient-to-r from-brand-500 to-teal-400 transition-all duration-500"
-              style={{
-                width: `${Math.round((completedCount / stages.length) * 100)}%`,
-              }}
+              aria-hidden
+              className="absolute left-6 top-6 bottom-8 w-0.5 -translate-x-1/2 bg-gradient-to-b from-leaf-500/40 via-teal-500/30 to-ink/10"
             />
-          </div>
-
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {stages.map((stage, i) => {
+              const ordinal = i + 1;
               const isDone = completed.has(stage.number);
-              return (
-                <Link
-                  key={stage.number}
-                  href={`/mitglieder/stufe/${i + 1}`}
-                  className={`group flex flex-col gap-2 rounded-2xl border p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-300/60 ${
+              const isCurrent = !isDone && i === currentIndex;
+              const isLocked = !isDone && !isCurrent;
+
+              const node = (
+                <span
+                  className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-lg font-medium ${
                     isDone
-                      ? "border-brand-300/60 bg-gradient-to-b from-brand-50 to-white"
-                      : "border-ink/10 bg-white"
+                      ? "bg-gradient-to-br from-leaf-500 to-teal-500 text-navy-950"
+                      : isCurrent
+                        ? "bg-brand-500 text-white ring-4 ring-brand-500/25"
+                        : "border border-ink/10 bg-mist-100 text-ink-muted"
                   }`}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="font-display text-2xl italic text-brand-500">
-                      {stage.number}
-                    </span>
-                    {isDone ? (
-                      <span
-                        className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-xs text-navy-950"
-                        title="Abgeschlossen"
-                      >
-                        <Check />
+                  {isDone ? <Check /> : isLocked ? <Lock /> : stage.number}
+                </span>
+              );
+
+              const body = (
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                    <h3
+                      className={`text-lg font-medium ${
+                        isLocked ? "text-ink-muted" : "text-ink"
+                      }`}
+                    >
+                      {stage.title}
+                    </h3>
+                    {isDone && (
+                      <span className="rounded-full bg-leaf-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-accent">
+                        Erledigt
                       </span>
-                    ) : (
-                      <ArrowRight className="text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                    )}
+                    {isCurrent && (
+                      <span className="rounded-full bg-brand-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-brand-600">
+                        Du bist hier
+                      </span>
+                    )}
+                    {isLocked && (
+                      <span className="rounded-full bg-ink/[0.06] px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-ink-muted">
+                        Gesperrt
+                      </span>
                     )}
                   </div>
-                  <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
-                    {stage.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-ink-mid">
+                  <p
+                    className={`mt-1 text-sm leading-relaxed ${
+                      isLocked ? "text-ink-muted/80" : "text-ink-mid"
+                    }`}
+                  >
                     {stage.subtitle}
                   </p>
-                </Link>
+                  {isCurrent && (
+                    <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
+                      Weitermachen
+                      <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                    </span>
+                  )}
+                </div>
+              );
+
+              if (isLocked) {
+                return (
+                  <li key={stage.number} className="relative flex gap-5 pb-8 last:pb-0">
+                    <span aria-hidden className="opacity-70">
+                      {node}
+                    </span>
+                    <div className="pt-1.5 opacity-70">{body}</div>
+                  </li>
+                );
+              }
+
+              return (
+                <li key={stage.number} className="relative flex pb-8 last:pb-0">
+                  <Link
+                    href={`/mitglieder/stufe/${ordinal}`}
+                    className={`group flex flex-1 gap-5 rounded-2xl transition-all ${
+                      isCurrent
+                        ? "border border-brand-300/60 bg-white p-4 shadow-card -my-1"
+                        : "p-1 hover:opacity-80"
+                    }`}
+                  >
+                    {node}
+                    <div className="pt-1.5">{body}</div>
+                  </Link>
+                </li>
               );
             })}
-          </div>
+          </ol>
         </Container>
       </section>
 
@@ -426,6 +468,56 @@ export default async function MembersPage() {
                 </p>
               </div>
               <NewsletterToggle initialOptIn={newsletterOptIn} />
+            </div>
+          </Container>
+        </section>
+      )}
+
+      {/* EBENE 3 – Vertiefen & Üben + Werkzeuge (entzerrt, auf Wechsel-Fläche) */}
+      {/* Werkzeuge – die früheren Hero-Pills, jetzt als ruhiger Werkzeugkasten */}
+      {tools.length > 0 && (
+        <section className="border-t border-ink/10 bg-surface-2 py-14 sm:py-16">
+          <Container>
+            <div className="flex flex-col gap-2">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                Dein Werkzeugkasten
+              </span>
+              <h2 className="font-display text-2xl font-medium text-ink">
+                Werkzeuge & mehr
+              </h2>
+              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+                Alles Weitere für deine Reise – jederzeit griffbereit, aber
+                bewusst im Hintergrund, damit dein Weg im Vordergrund bleibt.
+              </p>
+            </div>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {tools.map(({ href, label, icon: Icon }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white p-5 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                >
+                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500/15 to-teal-500/15 text-lg text-accent">
+                    <Icon />
+                  </span>
+                  <span className="flex-1 text-[0.98rem] font-medium leading-snug text-ink transition-colors group-hover:text-accent">
+                    {label}
+                  </span>
+                  <ArrowRight className="shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                </Link>
+              ))}
+              <a
+                href="/mitglieder/arbeitsheft"
+                className="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white p-5 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+              >
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500/15 to-teal-500/15 text-lg text-accent">
+                  <Download />
+                </span>
+                <span className="flex-1 text-[0.98rem] font-medium leading-snug text-ink transition-colors group-hover:text-accent">
+                  Gesamt-Arbeitsheft (alle 7 Stufen) als PDF
+                </span>
+                <ArrowRight className="shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+              </a>
             </div>
           </Container>
         </section>

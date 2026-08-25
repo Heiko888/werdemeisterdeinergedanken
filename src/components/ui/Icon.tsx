@@ -51,6 +51,16 @@ export function Check(props: IconProps) {
   );
 }
 
+export function Lock(props: IconProps) {
+  const { rest } = base(props);
+  return (
+    <svg viewBox="0 0 24 24" width="1em" height="1em" {...stroke} {...rest}>
+      <rect x="5" y="10.5" width="14" height="9.5" rx="2" />
+      <path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" />
+    </svg>
+  );
+}
+
 export function Compass(props: IconProps) {
   const { rest } = base(props);
   return (
