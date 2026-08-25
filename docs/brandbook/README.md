@@ -51,6 +51,20 @@ nachgezogen. So bleiben Doku und Umsetzung konsistent.
 
 ---
 
+## PDF-Ausgabe
+
+Das Brandbook gibt es auch als gestaltetes **PDF im Mitglieder-PDF-Design**
+(Cover, Nummern-Disc, Navy-Callouts, Fraunces/Inter):
+
+- Datei: [`WMDG-Brandbook.pdf`](./WMDG-Brandbook.pdf)
+- Neu erzeugen: `npm run pdf:brandbook`
+- Generator: `tools/pdf/build-brandbook.py` (Inhalt/Layout) +
+  `tools/pdf/build-brandbook.mjs` (HTML → PDF via Chromium)
+
+> Voraussetzungen wie beim übrigen PDF-Build (Node, Python 3, Chromium –
+> siehe `tools/pdf/README.md`). Inhaltliche Änderungen erst in den
+> Kapitel-Markdowns/Code pflegen, dann das PDF neu bauen.
+
 ## Pflege
 
 - Änderungen an Markenelementen: erst Code, dann Brandbook.
