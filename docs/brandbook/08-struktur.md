@@ -80,6 +80,8 @@ tools/
 - ✅ **Zielgruppe/Persona** festgelegt: Kern „bewusst Suchende", sekundär
   bodenständig-skeptisch (Kap. 01).
 - ✅ **Foto-Richtlinie** „Heiko im Zentrum" festgeschrieben (Kap. 06).
+- ✅ **Kontrast der Akzentfarben als Text** auf Hell gemessen; verbindliche
+  Regeln + AA-taugliche Ersatztöne dokumentiert (Kap. 04).
 
 ## Offene Punkte — brauchen eine Entscheidung/Inhalt von Heiko
 
@@ -88,8 +90,8 @@ Diese Lücken lassen sich **nicht** aus dem Code füllen:
 - ⚠️ **Einfarbige Logo-Fallback-Version** erstellen (Kap. 03).
 - ⚠️ **Vektorisierte Wortmarke** (SVG mit Pfaden) erstellen (Kap. 03).
 - ⚠️ **Print-Mindestgrößen** des Logos (mm) festlegen (Kap. 03).
-- ⚠️ **Foto-Richtlinie** schriftlich fixieren (Kap. 06).
-- ⚠️ **Kontrast der Akzentfarben als Text** auf Hell messen/festlegen (Kap. 04).
+- 🛠️ **Code-Vorschlag offen:** AA-taugliches Link/Label-Token in `globals.css`
+  ergänzen bzw. `--color-accent` umstellen (Details in Kap. 04).
 - ⚠️ **Fehlende Kapitel** (optional, je nach Bedarf): E-Mail-Signatur, Print-
   Anwendungen (Visitenkarte/Briefpapier), Marken-/Trademark-Recht,
   Asset-Zugriff für Externe.

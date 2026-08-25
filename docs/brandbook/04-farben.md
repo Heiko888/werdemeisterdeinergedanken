@@ -110,9 +110,41 @@ auf allen drei hellen Flächen (`paper`, `surface`, `surface-2`).
 > **Regel:** Für sekundären Text keine Opacity-Stufen auf hellem Grund nutzen –
 > stattdessen `ink-mid` / `ink-muted` verwenden.
 
-⚠️ PRÜFEN: Kontraste der Akzentfarben (leaf/teal) als **Text** auf hellen
-Flächen – der Verlauf ist v. a. für große Headlines/Grafik gedacht, nicht für
-kleinen Fließtext.
+### Akzentfarben als Text auf Hell (gemessen)
+
+Kontrast der Marken-Akzente als **Text** auf den drei hellen Flächen
+(WCAG-Verhältnis, gerundet). AA-Normaltext braucht ≥ 4,5:1, Großtext/UI ≥ 3,0:1.
+
+| Farbe | paper `#f6f4ee` | surface `#fff` | surface-2 `#efece2` | Fazit als Text |
+|-------|:---:|:---:|:---:|----|
+| `accent #4f9e1c` | 3,06 | 3,37 | 2,85 | ❌ kein Normaltext; nur Großtext auf paper/surface |
+| `teal-600 #199aa8` | 3,07 | 3,37 | 2,85 | ❌ kein Normaltext; nur Großtext auf paper/surface |
+| `leaf-600 #74ab2f` | 2,51 | 2,76 | 2,33 | ❌ nicht für Text |
+| `leaf-500 #8cc63f` | 1,86 | 2,05 | 1,73 | ❌ nur Grafik/Verlauf |
+| `teal-400 #34c4c4` | 1,94 | 2,13 | 1,81 | ❌ nur Grafik/Verlauf |
+
+**Ergebnis:** **Keine** Marken-Akzentfarbe (leaf/teal) und auch nicht das
+aktuelle `accent #4f9e1c` erreicht AA für **Normaltext** auf Hell. Der
+Signatur-Verlauf (leaf-500 → teal-400) liegt mit ~1,7–2,1:1 weit darunter.
+
+### Verbindliche Regeln
+
+1. **Fließtext/kleine Links auf Hell** nie in leaf/teal oder im Verlauf setzen –
+   dafür `ink`, `ink-soft`, `ink-mid`, `ink-muted` verwenden.
+2. **Marken-Verlauf** (`.text-gradient*`) nur für **große Display-Headlines**
+   (≥ ~24 px/fett) und **Grafik** – nie für Fließtext oder kleine UI-Labels.
+3. Braucht ein **Link/Label in Marken-Grün/-Teal echten AA-Normaltext-Kontrast**
+   auf Hell, die abgedunkelten, AA-tauglichen Varianten nutzen:
+   - **Grün (AA):** `#3a7615` – ≥ 4,7:1 auf allen drei hellen Flächen
+   - **Teal (AA):** `#0f6d77` – ≥ 5,1:1 auf allen drei hellen Flächen
+4. Auf **Dunkel** (navy) ist der Verlauf/`teal-300` als Akzent unkritisch –
+   dort sorgt der dunkle Grund für ausreichenden Kontrast.
+
+> ⚠️ Empfehlung (Code): `--color-accent` (`#4f9e1c`) erreicht nur Großtext-Niveau
+> und fällt auf `surface-2` sogar darunter. Für farbige Links/Labels als
+> Normaltext auf Hell ein AA-taugliches Token (z. B. `#3a7615`) ergänzen bzw.
+> `accent` darauf umstellen. Das ist eine **Code-Änderung in `globals.css`** –
+> hier als Vorschlag dokumentiert, noch nicht umgesetzt.
 
 ---
 
