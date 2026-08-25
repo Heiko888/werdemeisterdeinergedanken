@@ -36,6 +36,17 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+/**
+ * Liefert nur den Vornamen, sauber groß geschrieben – egal ob die Quelle ein
+ * voller Name ("Heiko Schwaninger") oder der E-Mail-Teil ("heiko.schwaninger")
+ * ist. Getrennt wird an Leerzeichen, Punkt, Unterstrich oder Bindestrich.
+ */
+function firstName(raw: string): string {
+  const token = raw.trim().split(/[\s._-]+/)[0] ?? "";
+  if (!token) return "";
+  return token.charAt(0).toUpperCase() + token.slice(1);
+}
+
 export default async function MembersPage() {
   let name = "";
   let loggedIn = false;
@@ -62,11 +73,14 @@ export default async function MembersPage() {
         .select("full_name")
         .eq("id", user.id)
         .maybeSingle();
-      name =
+      // Bewusst KEIN Rückfall auf den E-Mail-Teil: daraus einen „Namen" zu raten
+      // erzeugt bei Fantasie-Adressen Fantasie-Namen. Ohne echten Namen wird
+      // stattdessen neutral begrüßt (siehe Fallback in der Überschrift).
+      const rawName =
         profile?.full_name ||
         (user.user_metadata?.full_name as string | undefined) ||
-        user.email?.split("@")[0] ||
         "";
+      name = firstName(rawName);
 
       // Personalisierung + Fortschritt (Spalten/Tabelle aus Migration 0002).
       // Vor der Migration bleiben die Felder leer – das Dashboard funktioniert
