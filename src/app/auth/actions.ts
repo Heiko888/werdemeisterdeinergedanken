@@ -54,6 +54,9 @@ export async function signUp(
   const email = String(formData.get("email") || "").trim();
   const password = String(formData.get("password") || "");
 
+  if (!name)
+    return { error: "Bitte gib deinen Namen an." };
+
   if (password.length < 8)
     return { error: "Das Passwort muss mindestens 8 Zeichen lang sein." };
 

@@ -73,10 +73,12 @@ export default async function MembersPage() {
         .select("full_name")
         .eq("id", user.id)
         .maybeSingle();
+      // Bewusst KEIN Rückfall auf den E-Mail-Teil: daraus einen „Namen" zu raten
+      // erzeugt bei Fantasie-Adressen Fantasie-Namen. Ohne echten Namen wird
+      // stattdessen neutral begrüßt (siehe Fallback in der Überschrift).
       const rawName =
         profile?.full_name ||
         (user.user_metadata?.full_name as string | undefined) ||
-        user.email?.split("@")[0] ||
         "";
       name = firstName(rawName);
 
