@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
+import { Card } from "@/components/ui/Card";
 import { Compass, Spark, Shield } from "@/components/ui/Icon";
 import { expectations } from "@/lib/content";
 
@@ -12,7 +13,7 @@ const iconMap = {
 
 export function WhatToExpect() {
   return (
-    <section className="relative border-t border-ink/10 py-16 sm:py-32">
+    <section className="relative bg-surface-2 py-16 sm:py-32">
       <Container>
         <Reveal>
           <SectionHeading
@@ -33,15 +34,19 @@ export function WhatToExpect() {
             const Icon = iconMap[item.icon as keyof typeof iconMap];
             return (
               <Reveal key={item.title} delay={i * 90}>
-                <article className="flex min-w-0 flex-col gap-4 border-t border-ink/10 pt-6">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-accent/30 text-xl text-accent">
+                <Card
+                  as="article"
+                  interactive
+                  className="flex min-w-0 flex-col gap-4"
+                >
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-xl text-cream shadow-card">
                     {Icon && <Icon />}
                   </span>
                   <h3 className="text-xl font-medium text-ink">{item.title}</h3>
                   <p className="text-sm leading-relaxed text-ink-mid">
                     {item.text}
                   </p>
-                </article>
+                </Card>
               </Reveal>
             );
           })}

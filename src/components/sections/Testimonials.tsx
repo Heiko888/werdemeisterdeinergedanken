@@ -8,8 +8,12 @@ export function Testimonials() {
   return (
     <section
       id="stimmen"
-      className="relative border-t border-ink/10 bg-paper py-16 sm:py-32"
+      className="relative isolate overflow-hidden bg-cosmic on-dark py-16 sm:py-32"
     >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
+      />
       <Container>
         <Reveal>
           <SectionHeading
@@ -28,9 +32,9 @@ export function Testimonials() {
         <div className="mt-16 grid gap-x-10 gap-y-12 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 90}>
-              <figure className="flex min-w-0 flex-col gap-5 border-t border-ink/10 pt-6">
+              <figure className="glass flex h-full min-w-0 flex-col gap-5 rounded-2xl p-7">
                 <span
-                  className="font-display text-5xl italic leading-none text-accent/50"
+                  className="font-display text-5xl italic leading-none text-accent/60"
                   aria-hidden
                 >
                   &ldquo;
