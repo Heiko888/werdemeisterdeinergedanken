@@ -208,11 +208,19 @@ export default async function MembersPage() {
               )}
             </h1>
             {loggedIn && (
-              <form action={signOut}>
-                <Button type="submit" variant="secondary">
-                  Abmelden
-                </Button>
-              </form>
+              <div className="flex items-center gap-2.5">
+                <Link
+                  href="/mitglieder/einstellungen"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15"
+                >
+                  Einstellungen
+                </Link>
+                <form action={signOut}>
+                  <Button type="submit" variant="secondary">
+                    Abmelden
+                  </Button>
+                </form>
+              </div>
             )}
           </div>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">

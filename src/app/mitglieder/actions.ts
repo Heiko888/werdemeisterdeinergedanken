@@ -299,3 +299,61 @@ export async function setNewsletterOptIn(
   revalidatePath("/mitglieder");
   return { optIn };
 }
+
+/**
+ * Anzeigenamen setzen. Schreibt profiles.full_name (RLS: nur eigene Zeile) und
+ * zieht die Auth-Metadaten mit, damit beide Quellen konsistent sind.
+ */
+export async function updateDisplayName(
+  rawName: string,
+): Promise<{ ok: boolean; name?: string; error?: string }> {
+  if (!isSupabaseConfigured)
+    return { ok: false, error: "Der Mitgliederbereich ist noch nicht konfiguriert." };
+
+  const name = rawName.trim();
+  if (!name) return { ok: false, error: "Bitte gib deinen Namen an." };
+  if (name.length > 80) return { ok: false, error: "Der Name ist zu lang." };
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { ok: false, error: "Du bist nicht angemeldet." };
+
+  const { error } = await supabase
+    .from("profiles")
+    .update({ full_name: name })
+    .eq("id", user.id);
+  if (error) return { ok: false, error: "Konnte nicht gespeichert werden." };
+
+  // Metadaten mitziehen (Fallback-Quelle im Dashboard).
+  await supabase.auth.updateUser({ data: { full_name: name } });
+
+  revalidatePath("/mitglieder");
+  revalidatePath("/mitglieder/einstellungen");
+  return { ok: true, name };
+}
+
+/**
+ * Passwort der angemeldeten Person ändern (session-basiert über Supabase Auth –
+ * das alte Passwort ist dafür nicht nötig, da die Sitzung bereits geprüft ist).
+ */
+export async function updatePassword(
+  password: string,
+): Promise<{ ok: boolean; error?: string }> {
+  if (!isSupabaseConfigured)
+    return { ok: false, error: "Der Mitgliederbereich ist noch nicht konfiguriert." };
+  if (password.length < 8)
+    return { ok: false, error: "Das Passwort muss mindestens 8 Zeichen lang sein." };
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { ok: false, error: "Du bist nicht angemeldet." };
+
+  const { error } = await supabase.auth.updateUser({ password });
+  if (error) return { ok: false, error: error.message };
+
+  return { ok: true };
+}
