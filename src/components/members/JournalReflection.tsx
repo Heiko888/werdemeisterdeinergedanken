@@ -17,7 +17,7 @@ export function JournalReflection({
   itemKey,
   questions,
 }: {
-  itemType: "stage" | "deep_dive";
+  itemType: "stage" | "deep_dive" | "practice";
   itemKey: string;
   questions: string[];
 }) {

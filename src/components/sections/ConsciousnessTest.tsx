@@ -300,7 +300,7 @@ export function ConsciousnessTest() {
         <div className="h-1.5 w-full overflow-hidden rounded-full bg-ink/[0.06]">
           <span
             className="block h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 transition-all duration-300"
-            style={{ width: `${(current / total) * 100}%` }}
+            style={{ width: `${progress}%` }}
           />
         </div>
       </div>

@@ -14,6 +14,16 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
+  // Im (login-geschützten) Mitgliederbereich ist das Publikum ein zahlendes
+  // Mitglied – Verkaufs-Einladungen gehören dort nicht hin. Wir blenden deshalb
+  // „Mitgliedschaft" aus der Navigation und den „Erstgespräch"-CTA aus. Der
+  // Bereich selbst ist per Proxy/Layout auth-geschützt, sodass der Pfad hier ein
+  // verlässlicher Stellvertreter für „eingeloggtes Mitglied" ist.
+  const imMitgliederbereich = pathname.startsWith("/mitglieder");
+  const navItems = imMitgliederbereich
+    ? mainNav.filter((item) => item.href !== "/mitgliedschaft")
+    : mainNav;
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
@@ -52,7 +62,7 @@ export function Header() {
         <Logo />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Hauptmenü">
-          {mainNav.map((item) => (
+          {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -73,9 +83,11 @@ export function Header() {
           >
             Mitglieder
           </Link>
-          <Button href="/kontakt" variant="primary" size="md" className="whitespace-nowrap">
-            Kostenloses Erstgespräch
-          </Button>
+          {!imMitgliederbereich && (
+            <Button href="/kontakt" variant="primary" size="md" className="whitespace-nowrap">
+              Kostenloses Erstgespräch
+            </Button>
+          )}
         </div>
 
         <button
@@ -102,7 +114,7 @@ export function Header() {
         )}
       >
         <nav className="flex flex-col gap-1 px-5 py-5" aria-label="Mobiles Menü">
-          {mainNav.map((item) => (
+          {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -119,17 +131,19 @@ export function Header() {
           >
             Mitglieder
           </Link>
-          <div className="mt-3">
-            <Button
-              href="/kontakt"
-              variant="primary"
-              size="lg"
-              className="w-full"
-              onClick={() => setOpen(false)}
-            >
-              Kostenloses Erstgespräch
-            </Button>
-          </div>
+          {!imMitgliederbereich && (
+            <div className="mt-3">
+              <Button
+                href="/kontakt"
+                variant="primary"
+                size="lg"
+                className="w-full"
+                onClick={() => setOpen(false)}
+              >
+                Kostenloses Erstgespräch
+              </Button>
+            </div>
+          )}
         </nav>
       </div>
     </header>

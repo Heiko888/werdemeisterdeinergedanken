@@ -32,7 +32,30 @@ export type Practice = {
   video: string | null;
   /** MP3-Quelle zum Anhören: /pfad-in-public.mp3 oder volle URL – oder weglassen */
   audio?: string | null;
+  /**
+   * Eigene Reflexionsfragen für den „Nachklang"-Block (fließen ins Journal).
+   * Weglassen → es greifen die allgemeinen Fragen (DEFAULT_PRACTICE_REFLECTION).
+   */
+  reflection?: string[];
 };
+
+/**
+ * Allgemeine Reflexionsfragen nach einer Praxis. Bewusst kurz und für jede Übung
+ * passend – so lässt sich die Praxis sofort ans Journal anbinden, auch bevor für
+ * jede Übung eigene Fragen formuliert sind. Einzelne Übungen können über das
+ * optionale `reflection`-Feld eigene Fragen setzen.
+ */
+export const DEFAULT_PRACTICE_REFLECTION: string[] = [
+  "Was hast du während dieser Übung bemerkt – im Körper, im Atem, in den Gedanken?",
+  "Wie fühlst du dich jetzt im Vergleich zu vorher?",
+];
+
+/** Die Reflexionsfragen einer Praxis (eigene, sonst die allgemeinen). */
+export function practiceReflection(practice: Practice): string[] {
+  return practice.reflection && practice.reflection.length > 0
+    ? practice.reflection
+    : DEFAULT_PRACTICE_REFLECTION;
+}
 
 export const practices: Practice[] = [
   // ---------------- Meditationen ----------------

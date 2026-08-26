@@ -3,9 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { ArrowRight, Play } from "@/components/ui/Icon";
-import { practices, getPractice } from "@/lib/practices";
+import { practices, getPractice, practiceReflection } from "@/lib/practices";
 import { stages } from "@/lib/content";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
+import { JournalReflection } from "@/components/members/JournalReflection";
 import { LessonHero } from "@/components/members/LessonHero";
 import { site } from "@/lib/site";
 
@@ -152,6 +153,13 @@ export default async function PracticePage({
               </p>
             </div>
           )}
+
+          {/* Nachklang – Reflexion nach der Übung (fließt ins Journal) */}
+          <JournalReflection
+            itemType="practice"
+            itemKey={practice.slug}
+            questions={practiceReflection(practice)}
+          />
 
           {/* Querverweis zur Stufe */}
           {stage && (

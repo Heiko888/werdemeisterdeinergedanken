@@ -28,6 +28,7 @@ import { NewsletterToggle } from "@/components/members/NewsletterToggle";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { site } from "@/lib/site";
 import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
+import { isDetektorConfigured } from "@/app/mitglieder/detektor-actions";
 
 export const dynamic = "force-dynamic";
 
@@ -112,6 +113,11 @@ export default async function MembersPage() {
 
   // Der KI-Begleiter wird nur verlinkt, wenn er serverseitig eingerichtet ist.
   const begleiterVerfuegbar = loggedIn && (await isBegleiterConfigured());
+  // Der Manipulations-Detektor hängt an seinem eigenen Konfigurations-Check
+  // (nicht am Begleiter): beide brauchen zwar denselben API-Key, aber semantisch
+  // ist der Detektor ein eigenes Werkzeug – so bleibt der Link korrekt, falls
+  // sich die Voraussetzungen später auseinanderentwickeln.
+  const detektorVerfuegbar = loggedIn && (await isDetektorConfigured());
 
   const completed = new Set(completedKeys);
   const completedCount = stages.filter((s) => completed.has(s.number)).length;
@@ -125,11 +131,23 @@ export default async function MembersPage() {
     : "Geführte Praxis";
   const featuredCta = featuredIsAudio ? "Jetzt anhören" : "Jetzt ansehen";
 
-  // Chronologischer Lernpfad (sanfte Führung, keine Sperre): die aktuelle Stufe
-  // ist die erste noch nicht abgeschlossene. Alles davor gilt als erledigt, die
-  // direkt folgende als "Als Nächstes". Alle Stufen bleiben frei zugänglich – so
-  // gibt es immer einen "Hier weitermachen"-Anker, auch ohne Test.
-  const currentIndex = stages.findIndex((s) => !completed.has(s.number));
+  // Chronologischer Lernpfad (sanfte Führung, keine Sperre): der Wiedereinstieg
+  // ist die erste noch nicht abgeschlossene Stufe – frühestens aber die Stufe,
+  // die der Bewusstseinstest ermittelt hat (start_stage). So wird ein frisch
+  // eingestuftes Mitglied bei „seiner" Stufe abgeholt, statt pauschal bei Stufe 1;
+  // frühere Stufen bleiben frei zugänglich. Ohne Test gilt wie bisher die erste
+  // offene Stufe. Dieser Anker steuert zugleich das „Du bist hier" im Stepper.
+  const floorIndex = startStage
+    ? Math.min(Math.max(startStage - 1, 0), stages.length - 1)
+    : 0;
+  let currentIndex = stages.findIndex(
+    (s, i) => i >= floorIndex && !completed.has(s.number),
+  );
+  // Ist ab der Startstufe alles erledigt, aber davor noch etwas offen, nimm die
+  // erste offene Stufe überhaupt – kein „alles geschafft", solange etwas fehlt.
+  if (currentIndex === -1) {
+    currentIndex = stages.findIndex((s) => !completed.has(s.number));
+  }
   const allStagesDone = currentIndex === -1;
   const currentOrdinal = allStagesDone ? stages.length : currentIndex + 1;
   const currentStage = allStagesDone ? null : stages[currentIndex];
@@ -150,7 +168,7 @@ export default async function MembersPage() {
       label: "Mein Gedankenprofil",
       icon: Brain,
     },
-    begleiterVerfuegbar && {
+    detektorVerfuegbar && {
       href: "/mitglieder/detektor",
       label: "Manipulations-Detektor",
       icon: Spark,
