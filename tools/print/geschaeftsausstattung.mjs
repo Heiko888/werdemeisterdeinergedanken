@@ -237,7 +237,7 @@ function cardPreview() {
 // BRIEFPAPIER  A4 (210×297 mm)  —  Kopf + Fuß, Satzspiegel für DIN-5008-Nähe
 // ============================================================================
 function letterhead({ sample = false } = {}) {
-  const tel = CONTACT.phone ? `<span class="dot">·</span>Tel ${CONTACT.phone}` : "";
+  const telLine = CONTACT.phone ? `Tel ${CONTACT.phone}<br>` : "";
   const body = sample ? `
     <div class="addr">
       <div class="ret">${CONTACT.name} · ${CONTACT.street} · ${CONTACT.city}</div>
@@ -300,7 +300,7 @@ function letterhead({ sample = false } = {}) {
       <div class="line"></div>
       <div class="cols">
         <div><b>Anschrift</b>${CONTACT.name}<br>${CONTACT.street}<br>${CONTACT.city}</div>
-        <div><b>Kontakt</b>${CONTACT.email}<br><span class="green">${CONTACT.web}</span>${tel}</div>
+        <div><b>Kontakt</b>${telLine}${CONTACT.email}<br><span class="green">${CONTACT.web}</span></div>
         <div><b>Rechtliches</b>USt-IdNr.<br>${CONTACT.ustId}</div>
       </div>
     </div>
