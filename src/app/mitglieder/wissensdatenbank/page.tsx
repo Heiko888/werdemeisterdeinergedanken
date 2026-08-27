@@ -3,8 +3,9 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
-import { ArrowRight, Spark } from "@/components/ui/Icon";
+import { ArrowRight, Spark, Check } from "@/components/ui/Icon";
 import { chapters, PARTS, type ChapterMeta } from "@/lib/wissensdatenbank";
+import { getGeleseneKapitel } from "@/app/mitglieder/wissenskapitel-actions";
 
 export const metadata: Metadata = {
   title: "Wissensdatenbank – Gehirn, Bewusstsein & Gedanken",
@@ -14,9 +15,21 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default function WissenPage() {
+// Personalisierter Lese-Fortschritt → pro Aufruf serverseitig rendern.
+export const dynamic = "force-dynamic";
+
+export default async function WissenPage() {
   const all = chapters();
   const bySlug = new Map<string, ChapterMeta>(all.map((c) => [c.slug, c]));
+
+  // Lese-Status (defensiv: fehlt Migration 0014, bleibt die Menge leer).
+  const chapterSlugSet = new Set(all.map((c) => c.slug));
+  const gelesen = new Set(
+    (await getGeleseneKapitel()).filter((s) => chapterSlugSet.has(s)),
+  );
+  const gelesenCount = gelesen.size;
+  const gesamt = all.length;
+  const prozent = gesamt > 0 ? Math.round((gelesenCount / gesamt) * 100) : 0;
 
   return (
     <>
@@ -91,6 +104,28 @@ export default function WissenPage() {
         </Container>
       </section>
 
+      {/* Lese-Fortschritt – erscheint, sobald das erste Kapitel gelesen ist */}
+      {gelesenCount > 0 && (
+        <section className="pt-6">
+          <Container>
+            <div className="flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+              <div className="flex items-baseline justify-between gap-4 text-sm">
+                <span className="font-medium text-ink">Dein Lesefortschritt</span>
+                <span className="tabular-nums text-ink-muted">
+                  {gelesenCount} / {gesamt} gelesen · {prozent}%
+                </span>
+              </div>
+              <div className="h-2 w-full overflow-hidden rounded-full bg-mist-100">
+                <span
+                  className="block h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 transition-all duration-500"
+                  style={{ width: `${prozent}%` }}
+                />
+              </div>
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* Kapitel nach Teilen gruppiert */}
       <section className="py-16 sm:py-20">
         <Container>
@@ -117,8 +152,16 @@ export default function WissenPage() {
                           href={`/mitglieder/wissensdatenbank/${slug}`}
                           className="group flex h-full flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
                         >
-                          <span className="font-display text-sm italic text-accent">
-                            {c.number}
+                          <span className="flex items-center justify-between gap-2">
+                            <span className="font-display text-sm italic text-accent">
+                              {c.number}
+                            </span>
+                            {gelesen.has(slug) && (
+                              <span className="inline-flex items-center gap-1 rounded-full bg-leaf-500/15 px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-accent">
+                                <Check />
+                                Gelesen
+                              </span>
+                            )}
                           </span>
                           <h3 className="font-display text-lg font-medium leading-snug text-ink transition-colors group-hover:text-accent">
                             {c.title}

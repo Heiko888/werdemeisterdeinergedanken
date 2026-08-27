@@ -21,6 +21,8 @@ import { stages } from "@/lib/content";
 import { deepDivesForStage } from "@/lib/deep-dives";
 import { practicesForStage } from "@/lib/practices";
 import { NewsletterToggle } from "@/components/members/NewsletterToggle";
+import { MomentumRow } from "@/components/members/MomentumRow";
+import { PROGRAMM_TAGE_GESAMT } from "@/lib/programm";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { site } from "@/lib/site";
 import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
@@ -51,6 +53,10 @@ export default async function MembersPage() {
   let completedKeys: string[] = [];
   let newsletterOptIn = false;
   let isAdmin = false;
+  // Momentum-Signale für den Kopf (Serie, Programm-Fortschritt, letzte Aktivität).
+  let rueckkehrTage: string[] = [];
+  let programmDone = 0;
+  let lastActivity: string | null = null;
 
   if (isSupabaseConfigured) {
     const supabase = await createClient();
@@ -104,6 +110,41 @@ export default async function MembersPage() {
         .eq("id", user.id)
         .maybeSingle();
       newsletterOptIn = Boolean(prefsRow?.newsletter_opt_in);
+
+      // Momentum-Signale (jeweils defensiv – fehlt eine Tabelle/Migration,
+      // bleibt der Wert leer und der Kopf zeigt die Reihe einfach nicht).
+      const { data: rueckkehrRows } = await supabase
+        .from("rueckkehr")
+        .select("datum")
+        .eq("user_id", user.id)
+        .order("datum", { ascending: false })
+        .limit(400);
+      rueckkehrTage = (rueckkehrRows ?? []).map((row) => row.datum as string);
+
+      const { data: programmRows } = await supabase
+        .from("progress")
+        .select("item_key")
+        .eq("user_id", user.id)
+        .eq("item_type", "programm")
+        .eq("status", "completed");
+      programmDone = (programmRows ?? []).length;
+
+      // „Zuletzt aktiv": das jüngste von letzter Reflexion und letzter Rückkehr.
+      const { data: lastNote } = await supabase
+        .from("notes")
+        .select("updated_at")
+        .eq("user_id", user.id)
+        .order("updated_at", { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      const kandidaten = [
+        lastNote?.updated_at as string | undefined,
+        rueckkehrTage[0] ? `${rueckkehrTage[0]}T00:00:00Z` : undefined,
+      ].filter(Boolean) as string[];
+      lastActivity =
+        kandidaten.length > 0
+          ? kandidaten.reduce((a, b) => (new Date(a) > new Date(b) ? a : b))
+          : null;
     }
   }
 
@@ -261,6 +302,17 @@ export default async function MembersPage() {
               />
             </div>
           </div>
+
+          {/* Momentum – Serie, Programm-Fortschritt & letzte Aktivität auf einen
+              Blick (nur, wenn es etwas zu zeigen gibt). */}
+          {loggedIn && (
+            <MomentumRow
+              rueckkehrTage={rueckkehrTage}
+              programmDone={programmDone}
+              programmTotal={PROGRAMM_TAGE_GESAMT}
+              lastActivity={lastActivity}
+            />
+          )}
         </Container>
       </section>
 
