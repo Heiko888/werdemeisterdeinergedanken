@@ -1,4 +1,3 @@
-import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -42,7 +41,7 @@ function Stat({
   label: string;
 }) {
   return (
-    <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
+    <div className="flex flex-col gap-1 rounded-2xl border border-white/15 bg-white/10 p-5 shadow-card backdrop-blur-sm">
       <span className="font-display text-3xl font-medium text-accent">
         {value}
       </span>
@@ -97,14 +96,6 @@ export default async function JournalPage() {
     <>
       {/* Kopf + Cockpit */}
       <section className="member-hero overflow-hidden py-16 print:border-0 print:py-4 sm:py-20">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 print:hidden"
-          style={{
-            background:
-              APP_GLOW,
-          }}
-        />
         <Container className="flex flex-col items-start gap-5">
           {/* Nur beim Drucken sichtbar: Buch-Kopf */}
           <div className="hidden w-full flex-col gap-1 border-b border-ink/15 pb-4 print:flex">
