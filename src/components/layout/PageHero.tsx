@@ -15,12 +15,19 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
  * langen, weichen Verlauf, der das Hero-Ende exakt in die Hintergrundfarbe der
  * folgenden Sektion überführt – so entsteht kein harter horizontaler Schnitt.
  * Auf Mobile ist der Verlauf bewusst länger als auf Desktop.
+ *
+ * Optional mit `imagePosition` (ein CSS-`object-position`-Wert, z. B. "left"
+ * oder "30% center"): steuert, welcher Bildausschnitt beim `object-cover`-Zuschnitt
+ * erhalten bleibt. Nützlich, wenn das Motiv nicht mittig sitzt (z. B. ein Arm am
+ * linken Rand), der sonst auf schmalen/hohen Containern weggeschnitten würde.
+ * Standard ist "center".
  */
 export function PageHero({
   eyebrow,
   title,
   intro,
   image,
+  imagePosition,
   fadeToColor,
   children,
 }: {
@@ -28,6 +35,7 @@ export function PageHero({
   title: ReactNode;
   intro?: ReactNode;
   image?: string;
+  imagePosition?: string;
   fadeToColor?: string;
   children?: ReactNode;
 }) {
@@ -43,6 +51,7 @@ export function PageHero({
             priority
             sizes="100vw"
             className="z-0 object-cover"
+            style={imagePosition ? { objectPosition: imagePosition } : undefined}
           />
           <div
             aria-hidden
