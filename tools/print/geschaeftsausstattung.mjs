@@ -50,9 +50,9 @@ const CONTACT = {
   city: "63920 Großheubach",
   country: "Deutschland",
   ustId: "DE415501288",
-  // Telefon bewusst leer (keine öffentliche Nummer hinterlegt). Bei Bedarf
-  // hier eintragen – erscheint dann automatisch auf Karte & Briefbogen.
-  phone: "",
+  // Erscheint automatisch auf Karte & Briefbogen. Leeren ("") blendet die
+  // Telefonzeile wieder aus.
+  phone: "0173 6537620",
 };
 
 // ---------- Farb-Tokens (Spiegel aus globals.css) ---------------------------
@@ -223,6 +223,7 @@ function cardPreview() {
     <div class="card back">
       <div class="btop"><img src="${BRAIN}" alt=""><div><div class="nm">${CONTACT.name}</div><div class="role">${CONTACT.role}</div></div></div>
       <div class="ct">
+        ${CONTACT.phone ? `<div class="r"><span class="k">Tel</span><span class="v">${CONTACT.phone}</span></div>` : ""}
         <div class="r"><span class="k">Mail</span><span class="v">${CONTACT.email}</span></div>
         <div class="r"><span class="k">Web</span><span class="v">${CONTACT.web}</span></div>
         <div class="r"><span class="k">Insta</span><span class="v">${CONTACT.instagram}</span></div>
