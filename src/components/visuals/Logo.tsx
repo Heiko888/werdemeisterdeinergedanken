@@ -41,6 +41,15 @@ export function Logo({
             "flex flex-col leading-none",
             tone === "onDark" ? "text-cream" : "text-ink",
           )}
+          style={{
+            // Feine Teal-Kontur (Markenfarbe kehrt in die Schrift zurück), sitzt
+            // via paint-order HINTER der soliden Füllung, damit die Buchstaben
+            // scharf und lesbar bleiben. Hell: teal-500, Dunkel: das hellere teal-300.
+            paintOrder: "stroke fill",
+            WebkitTextStroke: `0.6px ${
+              tone === "onDark" ? "var(--color-teal-300)" : "var(--color-teal-500)"
+            }`,
+          }}
         >
           <span className="font-sans text-[0.68rem] font-semibold uppercase tracking-[0.2em]">
             Werde Meister deiner

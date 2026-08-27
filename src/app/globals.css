@@ -44,6 +44,9 @@
   --color-teal-400: #34c4c4;
   --color-teal-500: #21b2bd;
   --color-teal-600: #199aa8;
+  /* Tiefes Teal für farbigen Text auf Hell: #0f766e erreicht ~5,5:1 auf Weiß
+     (das Marken-Grün #4f9e1c läge nur bei 3,4:1 und fiele als Text durch AA). */
+  --color-teal-700: #0f766e;
 
   /* ---- Kosmische Tiefe (dezent, für Verläufe) ---- */
   --color-cosmic-violet: #6d5ae0;
