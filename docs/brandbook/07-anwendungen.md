@@ -63,6 +63,38 @@ Quelle: `docs/marketing/brand-assets.mjs`.
 Banner, Workshop) sind in `docs/generatoren/` dokumentiert – Verweis hier
 genügt, Details dort.
 
+## Print & Geschäftsausstattung
+
+Visitenkarte und Briefpapier werden – wie die Social-Assets – **generiert**
+(reproduzierbar per Skript), nicht manuell gebaut. Rendering über
+Playwright/Chromium als **Vektor-PDF** mit eingebetteten Schriften.
+
+```bash
+npm run print          # → tools/print/out/
+```
+
+Quelle: `tools/print/geschaeftsausstattung.mjs` (Kontaktdaten dort im
+`CONTACT`-Objekt, gespiegelt aus `src/lib/site.ts` + `src/app/impressum/page.tsx`).
+
+| Anwendung | Maße | Aufbau |
+|-----------|------|--------|
+| **Visitenkarte** | 85×55 mm + 3 mm Beschnitt, doppelseitig | **Vorderseite** dunkel (Navy + kosmischer Verlauf): Emblem, Wortmarke (Signatur-Verlauf auf „Gedanken"), Tagline als Eyebrow. **Rückseite** hell (Papier): Name + Rolle, Kontaktspalte (Mail/Web/Instagram), Markenzeile in der Fußzeile. Schnittmarken angelegt. |
+| **Briefpapier** | A4 (210×297 mm) | Kopf mit Emblem + Wortmarke + Tagline, feine Signatur-Linie; DIN-5008-naher Satzspiegel (Rücksende-Zeile, Adressfeld, Datum, Betreff); Fußzeile mit Anschrift, Kontakt, USt-IdNr. Als leerer Bogen **und** als Muster-Anschreiben. |
+
+**Print-Regeln:**
+
+- **Beschnitt** 3 mm ringsum bei randabfallenden Elementen (Visitenkarten-
+  Vorderseite); Schnittmarken sind im PDF eingezeichnet.
+- Chromium rendert **RGB** – für Offsetdruck beim Dienstleister nach **CMYK**
+  wandeln lassen (oder RGB-Digitaldruck wählen).
+- Emblem-Mindestgröße im Druck: mind. **12 mm** Höhe (Visitenkarte nutzt 16 mm,
+  Briefbogen 15 mm). Schutzraum wie in Kap. 03 (mind. halbe Emblemhöhe ringsum).
+- Farben/Schriften spiegeln die Quelle der Wahrheit (Kap. 04/05); kein
+  Marken-Grün/-Teal als **Fließtext** auf Hell – dafür `ink`-Töne bzw. die
+  AA-Ersatztöne (`#0f6d77` Teal, `#3a7615` Grün).
+
+Details & Datenpflege: `tools/print/README.md`.
+
 ## Redaktionsplan
 
 Ein kanalübergreifender Redaktionsplan wird über das Redaktions-Team gepflegt
@@ -72,4 +104,4 @@ Skill `/redaktionsplan`).
 ---
 
 **Quelle der Wahrheit:** `docs/marketing/`, `tools/marketing/`,
-`src/lib/site.ts`
+`tools/print/`, `src/lib/site.ts`
