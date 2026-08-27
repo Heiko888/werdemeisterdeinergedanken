@@ -1,13 +1,18 @@
-# Geschäftsausstattung (Print)
+# Geschäftsausstattung (Print & E-Mail-Signatur)
 
-Druckfertige **Visitenkarte** und **Briefpapier** im Marken-Look von
-„Werde Meister deiner Gedanken" – reproduzierbar per Skript.
+Druckfertige **Visitenkarte**, **Briefpapier** und eine **E-Mail-Signatur** im
+Marken-Look von „Werde Meister deiner Gedanken" – reproduzierbar per Skript.
 
 ```bash
-npm run print
+npm run print       # Visitenkarte + Briefpapier (PDF)
+npm run signatur    # E-Mail-Signatur (HTML + Text)
 # oder direkt:
 node tools/print/geschaeftsausstattung.mjs
+node tools/print/email-signatur.mjs
 ```
+
+Kontakt- und Markendaten liegen gebündelt in `tools/print/marke.mjs`
+(Single Source of Truth für beide Generatoren).
 
 Ausgabe → `tools/print/out/`
 
@@ -18,6 +23,30 @@ Ausgabe → `tools/print/out/`
 | `WMDG-Briefpapier.pdf` | **A4**-Briefbogen, leer – die eigentliche Vorlage zum Beschreiben |
 | `WMDG-Briefpapier-Muster.pdf` | A4-Briefbogen mit Beispiel-Anschreiben (zeigt den Satzspiegel) |
 | `WMDG-Briefpapier-Vorschau.png` / `-Muster-Vorschau.png` | Bildschirm-Vorschauen |
+
+## E-Mail-Signatur (`npm run signatur`)
+
+Ausgabe → `tools/print/out/`
+
+| Datei | Inhalt |
+|-------|--------|
+| `WMDG-Email-Signatur.html` | Anleitungsseite: gerenderte Signatur zum Markieren + Kopieren, plus Quelltext |
+| `WMDG-Email-Signatur-Snippet.html` | Nur die Signatur (Tabelle) – für Editoren, die HTML direkt entgegennehmen (Outlook …) |
+| `WMDG-Email-Signatur.txt` | Nur-Text-Variante (Fallback) |
+| `WMDG-Email-Signatur-Vorschau.png` | Bildschirm-Vorschau |
+
+**E-Mail-tauglich gebaut:** Tabellen-Layout, ausschließlich Inline-Styles,
+**websichere Schriften** (Georgia ≈ Fraunces, Arial ≈ Inter – E-Mail-Clients
+laden keine eigenen Schriften), **keine Verlaufsschrift** (rendern viele Clients
+nicht) → stattdessen solide, AA-konforme Markenfarben.
+
+- **Logo:** wird als gehostetes Bild von
+  `https://www.werdemeisterdeinergedanken.de/email/wmdg-signatur-logo.png`
+  geladen (liegt unter `public/email/`, wird mit der Website ausgeliefert – erst
+  **nach dem nächsten Deploy** erreichbar). E-Mail-Clients strippen eingebettete
+  Bilder, daher der bewusste Hosting-Weg.
+- **Einsetzen:** Gmail / Apple Mail → Signatur auf der HTML-Seite markieren,
+  kopieren, im Signatur-Editor einfügen. Outlook → `…-Snippet.html` verwenden.
 
 ## Aufbau
 
@@ -31,10 +60,10 @@ Ausgabe → `tools/print/out/`
 
 ## Datenpflege
 
-Alle Kontakt- und Markendaten stehen gebündelt im `CONTACT`-Objekt oben in
-`geschaeftsausstattung.mjs` (gespiegelt aus `src/lib/site.ts` und
-`src/app/impressum/page.tsx`). Eine **Telefonnummer** ist bewusst leer – wird sie
-in `CONTACT.phone` eingetragen, erscheint sie automatisch auf Karte und Briefbogen.
+Alle Kontakt- und Markendaten stehen gebündelt im `CONTACT`-Objekt in
+`tools/print/marke.mjs` (gespiegelt aus `src/lib/site.ts` und
+`src/app/impressum/page.tsx`) – von dort ziehen **alle drei** Generatoren.
+`CONTACT.phone` steuert die Telefonzeile: leeren (`""`) blendet sie überall aus.
 
 ## Technik
 

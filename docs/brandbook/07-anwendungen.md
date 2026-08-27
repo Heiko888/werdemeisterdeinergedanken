@@ -95,6 +95,29 @@ Quelle: `tools/print/geschaeftsausstattung.mjs` (Kontaktdaten dort im
 
 Details & Datenpflege: `tools/print/README.md`.
 
+## E-Mail-Signatur
+
+Ebenfalls generiert (`npm run signatur`, Quelle
+`tools/print/email-signatur.mjs`). Ausgabe: fertige HTML-Signatur (Anleitungs-
+seite + Snippet) sowie eine Nur-Text-Variante in `tools/print/out/`.
+
+**E-Mail-Besonderheiten** (bewusst anders als Web/Print):
+
+- **Tabellen-Layout + Inline-Styles** – E-Mail-Clients strippen `<style>`,
+  `<head>` und unterstützen kein Flexbox/Grid.
+- **Websichere Schriften** statt Fraunces/Inter: **Georgia** (≈ Fraunces) für
+  den Namen, **Arial** (≈ Inter) für den Rest – Clients laden keine eigenen
+  Fonts.
+- **Keine Verlaufsschrift** – der `-webkit-background-clip`-Trick rendert in
+  Gmail/Outlook nicht. Stattdessen solide, **AA-taugliche** Markenfarben
+  (`ink`, Teal `#0f6d77`, Grün `#3a7615`) und ein Teal-Trennbalken.
+- **Logo als gehostetes Bild** (`public/email/wmdg-signatur-logo.png`, ~120 px,
+  ausgeliefert über die Website) – eingebettete Bilder werden von Clients
+  entfernt.
+
+Aufbau: Emblem · Teal-Trennlinie · Name (Serife) + Rolle (Teal) · Kontaktzeilen
+(Tel/Mail/Web/Insta) · Markenzeile + Tagline als Eyebrow.
+
 ## Redaktionsplan
 
 Ein kanalübergreifender Redaktionsplan wird über das Redaktions-Team gepflegt
