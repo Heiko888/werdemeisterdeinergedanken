@@ -51,6 +51,7 @@ export default async function MembersPage() {
   let loggedIn = false;
   let startStage: number | null = null;
   let completedKeys: string[] = [];
+  let startedKeys: string[] = [];
   let newsletterOptIn = false;
   let isAdmin = false;
   // Momentum-Signale für den Kopf (Serie, Programm-Fortschritt, letzte Aktivität).
@@ -102,6 +103,16 @@ export default async function MembersPage() {
         .eq("item_type", "stage")
         .eq("status", "completed");
       completedKeys = (progressRows ?? []).map((row) => row.item_key as string);
+
+      // „Begonnene" Stufen (aus echter Aktivität, z. B. eine Reflexion) –
+      // ein weiches Signal neben dem manuellen „abgeschlossen".
+      const { data: startedRows } = await supabase
+        .from("progress")
+        .select("item_key")
+        .eq("user_id", user.id)
+        .eq("item_type", "stage")
+        .eq("status", "in_progress");
+      startedKeys = (startedRows ?? []).map((row) => row.item_key as string);
 
       // Opt-in für E-Mail-Impulse (Spalte aus Migration 0004 – sonst false)
       const { data: prefsRow } = await supabase
@@ -157,6 +168,8 @@ export default async function MembersPage() {
   const detektorVerfuegbar = loggedIn && (await isDetektorConfigured());
 
   const completed = new Set(completedKeys);
+  // „Begonnen" nur dort zeigen, wo (noch) nicht abgeschlossen.
+  const started = new Set(startedKeys.filter((k) => !completed.has(k)));
   const completedCount = stages.filter((s) => completed.has(s.number)).length;
   const progressPercent = Math.round((completedCount / stages.length) * 100);
 
@@ -455,9 +468,14 @@ export default async function MembersPage() {
               const ordinal = i + 1;
               const isDone = completed.has(stage.number);
               const isCurrent = !isDone && i === currentIndex;
+              // „Begonnen": an dieser Stufe wurde schon gearbeitet (z. B. eine
+              // Reflexion geschrieben), sie ist aber weder aktuell noch erledigt.
+              const isStarted =
+                !isDone && !isCurrent && started.has(stage.number);
               // Sanfte Führung statt Sperre: alle Stufen bleiben frei zugänglich.
               // „Als Nächstes" markiert die Stufe direkt nach der aktuellen.
-              const isNext = !isDone && !isCurrent && i === currentIndex + 1;
+              const isNext =
+                !isDone && !isCurrent && !isStarted && i === currentIndex + 1;
 
               return (
                 <li key={stage.number} className="relative flex pb-8 last:pb-0">
@@ -475,7 +493,9 @@ export default async function MembersPage() {
                           ? "bg-gradient-to-br from-leaf-500 to-teal-500 text-navy-950"
                           : isCurrent
                             ? "bg-teal-500 text-white ring-4 ring-teal-500/25"
-                            : "border border-ink/10 bg-mist-100 text-ink-mid"
+                            : isStarted
+                              ? "border border-teal-500/30 bg-teal-500/10 text-teal-700"
+                              : "border border-ink/10 bg-mist-100 text-ink-mid"
                       }`}
                     >
                       {isDone ? <Check /> : stage.number}
@@ -493,6 +513,11 @@ export default async function MembersPage() {
                         {isCurrent && (
                           <span className="rounded-full bg-teal-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-teal-600">
                             Du bist hier
+                          </span>
+                        )}
+                        {isStarted && (
+                          <span className="rounded-full bg-teal-500/12 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-teal-700">
+                            Begonnen
                           </span>
                         )}
                         {isNext && (

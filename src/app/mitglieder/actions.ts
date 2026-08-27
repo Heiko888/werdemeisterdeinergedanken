@@ -3,6 +3,9 @@
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { stages } from "@/lib/content";
+import { getDeepDive } from "@/lib/deep-dives";
+import { getPractice } from "@/lib/practices";
 
 /**
  * Fortschritts-Actions für den Mitgliederbereich.
@@ -26,6 +29,25 @@ export async function getCompletedStages(): Promise<string[]> {
     .eq("user_id", user.id)
     .eq("item_type", "stage")
     .eq("status", "completed");
+
+  return (data ?? []).map((row) => row.item_key as string);
+}
+
+/** Schlüssel aller „begonnenen" Stufen (status = in_progress) der Person. */
+export async function getStartedStages(): Promise<string[]> {
+  if (!isSupabaseConfigured) return [];
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return [];
+
+  const { data } = await supabase
+    .from("progress")
+    .select("item_key")
+    .eq("user_id", user.id)
+    .eq("item_type", "stage")
+    .eq("status", "in_progress");
 
   return (data ?? []).map((row) => row.item_key as string);
 }
@@ -119,6 +141,23 @@ export async function getNotes(
   return map;
 }
 
+/**
+ * Leitet aus einer Notiz die zugehörige Stufe ab ("01"…"07") – direkt (Stufen-
+ * Reflexion) oder über die relatedStage einer Vertiefung bzw. Praxis. Gibt null
+ * zurück, wenn sich keine Stufe zuordnen lässt.
+ */
+function stufeFuerNotiz(itemType: NoteItemType, itemKey: string): string | null {
+  if (itemType === "stage") {
+    return stages.some((s) => s.number === itemKey) ? itemKey : null;
+  }
+  const relStage =
+    itemType === "deep_dive"
+      ? getDeepDive(itemKey)?.relatedStage
+      : getPractice(itemKey)?.relatedStage;
+  if (!relStage || relStage < 1 || relStage > stages.length) return null;
+  return String(relStage).padStart(2, "0");
+}
+
 /** Eine Notiz speichern (Upsert pro Anker). */
 export async function saveNote(
   itemType: NoteItemType,
@@ -144,6 +183,25 @@ export async function saveNote(
     },
     { onConflict: "user_id,item_type,item_key,ref" },
   );
+
+  // Fortschritt aus echter Aktivität: Wer eine Reflexion schreibt, markiert die
+  // zugehörige Stufe automatisch als „begonnen". Bewusst nur einfügen
+  // (ignoreDuplicates) – eine bereits abgeschlossene Stufe wird nie zurückgestuft,
+  // und wiederholtes Autosave erzeugt keine Änderung.
+  if (!error && (body ?? "").trim().length > 0) {
+    const stageKey = stufeFuerNotiz(itemType, itemKey);
+    if (stageKey) {
+      await supabase.from("progress").upsert(
+        {
+          user_id: user.id,
+          item_type: "stage",
+          item_key: stageKey,
+          status: "in_progress",
+        },
+        { onConflict: "user_id,item_type,item_key", ignoreDuplicates: true },
+      );
+    }
+  }
 
   return { ok: !error };
 }
