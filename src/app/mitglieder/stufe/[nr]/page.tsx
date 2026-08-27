@@ -7,6 +7,7 @@ import { ArrowRight, Play, Download } from "@/components/ui/Icon";
 import { stages } from "@/lib/content";
 import { getStageLesson } from "@/lib/stage-lessons";
 import { deepDivesForStage } from "@/lib/deep-dives";
+import { practicesForStage } from "@/lib/practices";
 import { StageCompleteToggle } from "@/components/members/StageCompleteToggle";
 import { JournalReflection } from "@/components/members/JournalReflection";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
@@ -49,6 +50,7 @@ export default async function StagePage({
   const { idx, stage } = found;
   const lesson = getStageLesson(stage.number);
   const related = deepDivesForStage(idx + 1);
+  const stagePractices = practicesForStage(idx + 1);
   const prev = idx > 0 ? idx : null; // 0-basiert → Nummer = idx
   const next = idx < stages.length - 1 ? idx + 2 : null;
   const nextStage = next ? stages[next - 1] : null;
@@ -179,6 +181,41 @@ export default async function StagePage({
                   <Download />
                   Übungen als PDF
                 </a>
+              </div>
+            </div>
+          )}
+
+          {/* Praxis zu dieser Stufe – die passenden Übungen zum Anwenden */}
+          {stagePractices.length > 0 && (
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-1">
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                  Gelebte Praxis
+                </span>
+                <h2 className="font-display text-xl font-medium text-ink">
+                  Praxis zu dieser Stufe
+                </h2>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {stagePractices.map((practice) => (
+                  <Link
+                    key={practice.slug}
+                    href={`/mitglieder/praxis/${practice.slug}`}
+                    className="group flex flex-col gap-1.5 rounded-2xl border border-ink/10 bg-white p-5 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/30"
+                  >
+                    <span className="flex items-center justify-between gap-3">
+                      <span className="font-medium text-ink transition-colors group-hover:text-accent">
+                        {practice.title}
+                      </span>
+                      <span className="shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-muted">
+                        {practice.duration}
+                      </span>
+                    </span>
+                    <span className="text-sm leading-relaxed text-ink-mid">
+                      {practice.summary}
+                    </span>
+                  </Link>
+                ))}
               </div>
             </div>
           )}

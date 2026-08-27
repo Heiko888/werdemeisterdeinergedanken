@@ -18,16 +18,13 @@ import { isSupabaseConfigured, REQUIRE_MEMBER_LOGIN } from "@/lib/supabase/confi
 import { isAdminEmail } from "@/lib/admin";
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
-import { deepDivesByCategory } from "@/lib/deep-dives";
-import {
-  practicesByCategory,
-  practicesForStage,
-  featuredPractice,
-} from "@/lib/practices";
+import { deepDivesForStage } from "@/lib/deep-dives";
+import { practicesForStage } from "@/lib/practices";
 import { NewsletterToggle } from "@/components/members/NewsletterToggle";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { site } from "@/lib/site";
 import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
+import { isDetektorConfigured } from "@/app/mitglieder/detektor-actions";
 
 export const dynamic = "force-dynamic";
 
@@ -112,30 +109,47 @@ export default async function MembersPage() {
 
   // Der KI-Begleiter wird nur verlinkt, wenn er serverseitig eingerichtet ist.
   const begleiterVerfuegbar = loggedIn && (await isBegleiterConfigured());
+  // Der Manipulations-Detektor hängt an seinem eigenen Konfigurations-Check
+  // (nicht am Begleiter): beide brauchen zwar denselben API-Key, aber semantisch
+  // ist der Detektor ein eigenes Werkzeug – so bleibt der Link korrekt, falls
+  // sich die Voraussetzungen später auseinanderentwickeln.
+  const detektorVerfuegbar = loggedIn && (await isDetektorConfigured());
 
   const completed = new Set(completedKeys);
   const completedCount = stages.filter((s) => completed.has(s.number)).length;
   const progressPercent = Math.round((completedCount / stages.length) * 100);
 
-  const featured = featuredPractice();
-  // Format-korrektes Label: Audio → „anhören", reines Video → „ansehen".
-  const featuredIsAudio = featured ? Boolean(featured.audio) : false;
-  const featuredKicker = featuredIsAudio
-    ? "Geführte Meditation"
-    : "Geführte Praxis";
-  const featuredCta = featuredIsAudio ? "Jetzt anhören" : "Jetzt ansehen";
-
-  // Chronologischer Lernpfad (sanfte Führung, keine Sperre): die aktuelle Stufe
-  // ist die erste noch nicht abgeschlossene. Alles davor gilt als erledigt, die
-  // direkt folgende als "Als Nächstes". Alle Stufen bleiben frei zugänglich – so
-  // gibt es immer einen "Hier weitermachen"-Anker, auch ohne Test.
-  const currentIndex = stages.findIndex((s) => !completed.has(s.number));
+  // Chronologischer Lernpfad (sanfte Führung, keine Sperre): der Wiedereinstieg
+  // ist die erste noch nicht abgeschlossene Stufe – frühestens aber die Stufe,
+  // die der Bewusstseinstest ermittelt hat (start_stage). So wird ein frisch
+  // eingestuftes Mitglied bei „seiner" Stufe abgeholt, statt pauschal bei Stufe 1;
+  // frühere Stufen bleiben frei zugänglich. Ohne Test gilt wie bisher die erste
+  // offene Stufe. Dieser Anker steuert zugleich das „Du bist hier" im Stepper.
+  const floorIndex = startStage
+    ? Math.min(Math.max(startStage - 1, 0), stages.length - 1)
+    : 0;
+  let currentIndex = stages.findIndex(
+    (s, i) => i >= floorIndex && !completed.has(s.number),
+  );
+  // Ist ab der Startstufe alles erledigt, aber davor noch etwas offen, nimm die
+  // erste offene Stufe überhaupt – kein „alles geschafft", solange etwas fehlt.
+  if (currentIndex === -1) {
+    currentIndex = stages.findIndex((s) => !completed.has(s.number));
+  }
   const allStagesDone = currentIndex === -1;
   const currentOrdinal = allStagesDone ? stages.length : currentIndex + 1;
   const currentStage = allStagesDone ? null : stages[currentIndex];
   const currentPractice = allStagesDone
     ? null
     : practicesForStage(currentOrdinal)[0] ?? null;
+
+  // Kuratierte Auswahl fürs Dashboard: nur wenige, zur aktuellen Stufe passende
+  // Vertiefungen und Übungen. Die vollständigen Bibliotheken liegen auf eigenen
+  // Seiten (/mitglieder/wissen bzw. /mitglieder/praxis) – so bleibt das Dashboard
+  // ein Cockpit („was jetzt dran ist") statt ein Index von allem.
+  const focusStage = allStagesDone ? null : currentStage;
+  const stageDeepDives = deepDivesForStage(currentOrdinal).slice(0, 3);
+  const stagePractices = practicesForStage(currentOrdinal).slice(0, 3);
 
   // Werkzeuge (Ebene 3): die früheren Hero-Pills, gruppiert und entzerrt.
   const tools = [
@@ -150,7 +164,7 @@ export default async function MembersPage() {
       label: "Mein Gedankenprofil",
       icon: Brain,
     },
-    begleiterVerfuegbar && {
+    detektorVerfuegbar && {
       href: "/mitglieder/detektor",
       label: "Manipulations-Detektor",
       icon: Spark,
@@ -363,39 +377,6 @@ export default async function MembersPage() {
         </section>
       )}
 
-      {/* Jetzt anhören – aktuelle Meditation */}
-      {featured && (
-        <section className="py-6">
-          <Container>
-            <Link
-              href={`/mitglieder/praxis/${featured.slug}`}
-              className="group flex flex-col items-start gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-leaf-500/[0.08] to-teal-500/[0.08] p-7 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 sm:flex-row sm:items-center sm:justify-between sm:p-8"
-            >
-              <div className="flex items-center gap-5">
-                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-2xl text-navy-950 shadow-sm">
-                  <Play />
-                </span>
-                <div>
-                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                    {featuredKicker}
-                  </span>
-                  <h2 className="mt-1 font-display text-xl font-medium text-ink sm:text-2xl">
-                    {featured.title}
-                  </h2>
-                  <p className="text-sm text-ink-mid">
-                    {featured.duration} · {featured.category}
-                  </p>
-                </div>
-              </div>
-              <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition-all group-hover:bg-ink/90">
-                {featuredCta}
-                <ArrowRight />
-              </span>
-            </Link>
-          </Container>
-        </section>
-      )}
-
       {/* EBENE 2 – „Dein Weg": chronologischer Stepper mit Status */}
       <section className="py-14 sm:py-20">
         <Container size="narrow">
@@ -559,133 +540,134 @@ export default async function MembersPage() {
         </section>
       )}
 
-      {/* Vertiefungen – psychologische Wissens-Bibliothek */}
+      {/* Vertiefen zu deiner Stufe – kuratierte Auswahl statt ganzer Bibliothek */}
       <section className="border-t border-ink/10 bg-white/60 py-16 sm:py-20">
         <Container>
-          <div className="flex flex-col gap-2">
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-              Wissens-Bibliothek
-            </span>
-            <h2 className="font-display text-2xl font-medium text-ink">
-              Vertiefungen
-            </h2>
-            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-              Die psychologischen Mechanismen hinter den 7 Stufen – zum
-              Nachschlagen und Vertiefen. Jedes Thema mit Übungen und
-              Reflexionsfragen.
-            </p>
-          </div>
-
-          {/* Einstieg in die große Wissensdatenbank (27 Kapitel) */}
-          <Link
-            href="/mitglieder/wissensdatenbank"
-            className="group mt-8 flex flex-col items-start gap-3 rounded-2xl border border-accent/30 bg-white p-8 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/50 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
-          >
+          <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="flex flex-col gap-2">
               <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                Wissensdatenbank · 27 Kapitel
+                Wissens-Bibliothek
               </span>
-              <h3 className="font-display text-xl font-medium text-ink transition-colors group-hover:text-accent sm:text-2xl">
-                Gehirn, Bewusstsein & Gedanken
-              </h3>
+              <h2 className="font-display text-2xl font-medium text-ink">
+                Vertiefungen
+                {focusStage && (
+                  <span className="text-ink-muted">
+                    {" "}· passend zu Stufe {focusStage.number}
+                  </span>
+                )}
+              </h2>
               <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-                Von Neuroanatomie über die großen Theorien des Bewusstseins bis zu
-                Gewohnheiten, Emotionen und mentaler Selbstverteidigung – ehrlich
-                eingeordnet, mit Evidenz und Glossar.
+                Die psychologischen Mechanismen hinter deiner aktuellen Stufe –
+                jedes Thema mit Übungen und Reflexionsfragen.
               </p>
             </div>
-            <ArrowRight className="shrink-0 text-accent transition-transform group-hover:translate-x-1" />
-          </Link>
+            <Link
+              href="/mitglieder/wissen"
+              className="group inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+            >
+              Alle Vertiefungen ansehen
+              <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          </div>
 
-          {deepDivesByCategory().map((group) => (
-            <div key={group.category} className="mt-10">
-              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
-                {group.category}
-              </h3>
-              <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((dive) => (
-                  <Link
-                    key={dive.slug}
-                    href={`/mitglieder/wissen/${dive.slug}`}
-                    className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <h4 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
-                        {dive.title}
-                      </h4>
-                      <ArrowRight className="mt-1 shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
-                    </div>
-                    <p className="text-sm leading-relaxed text-ink-mid">
-                      {dive.summary}
-                    </p>
-                  </Link>
-                ))}
+          {stageDeepDives.length > 0 && (
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {stageDeepDives.map((dive) => (
+                <Link
+                  key={dive.slug}
+                  href={`/mitglieder/wissen/${dive.slug}`}
+                  className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                      {dive.title}
+                    </h3>
+                    <ArrowRight className="mt-1 shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                  </div>
+                  <p className="text-sm leading-relaxed text-ink-mid">
+                    {dive.summary}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {/* Nachschlage-Bibliothek (27 Kapitel) – kompakter Einstieg */}
+          <Link
+            href="/mitglieder/wissensdatenbank"
+            className="group mt-6 flex items-center justify-between gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
+          >
+            <div className="flex items-center gap-4">
+              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500/15 to-teal-500/15 text-lg text-accent">
+                <Brain />
+              </span>
+              <div>
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                  Wissensdatenbank · 27 Kapitel
+                </span>
+                <p className="font-display text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                  Gehirn, Bewusstsein &amp; Gedanken – zum Nachschlagen
+                </p>
               </div>
             </div>
-          ))}
-
-          <div className="mt-12 flex flex-col items-start gap-4 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
-            <h3 className="font-display text-xl italic text-ink">
-              Ein Thema fehlt dir?
-            </h3>
-            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-              Die Bibliothek wächst Schritt für Schritt. Wenn dich ein bestimmter
-              psychologischer Mechanismus beschäftigt, schreib mir – oft wird
-              daraus die nächste Vertiefung.
-            </p>
-            <Button href="/kontakt" variant="accent">
-              Thema vorschlagen
-              <ArrowRight />
-            </Button>
-          </div>
+            <ArrowRight className="shrink-0 text-ink-muted transition-all group-hover:translate-x-1 group-hover:text-accent" />
+          </Link>
         </Container>
       </section>
 
-      {/* Praxis – gelebte Praxis (Meditation, Atem, Rituale) */}
+      {/* Üben zu deiner Stufe – kuratierte Auswahl statt ganzer Bibliothek */}
       <section className="border-t border-ink/10 py-16 sm:py-20">
         <Container>
-          <div className="flex flex-col gap-2">
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
-              Gelebte Praxis
-            </span>
-            <h2 className="font-display text-2xl font-medium text-ink">
-              Praxis
-            </h2>
-            <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-              Was die Stufen wirksam macht: geführte Meditationen, Atemübungen
-              und Rituale für den Alltag – jede mit klarer Schritt-für-Schritt-
-              Anleitung.
-            </p>
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div className="flex flex-col gap-2">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                Gelebte Praxis
+              </span>
+              <h2 className="font-display text-2xl font-medium text-ink">
+                Praxis
+                {focusStage && (
+                  <span className="text-ink-muted">
+                    {" "}· passend zu Stufe {focusStage.number}
+                  </span>
+                )}
+              </h2>
+              <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+                Was die Stufen wirksam macht: geführte Übungen für den Alltag –
+                jede mit klarer Schritt-für-Schritt-Anleitung.
+              </p>
+            </div>
+            <Link
+              href="/mitglieder/praxis"
+              className="group inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+            >
+              Alle Übungen ansehen
+              <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+            </Link>
           </div>
 
-          {practicesByCategory().map((group) => (
-            <div key={group.category} className="mt-10">
-              <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
-                {group.category}
-              </h3>
-              <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((practice) => (
-                  <Link
-                    key={practice.slug}
-                    href={`/mitglieder/praxis/${practice.slug}`}
-                    className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <h4 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
-                        {practice.title}
-                      </h4>
-                      <span className="mt-0.5 shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-muted">
-                        {practice.duration}
-                      </span>
-                    </div>
-                    <p className="text-sm leading-relaxed text-ink-mid">
-                      {practice.summary}
-                    </p>
-                  </Link>
-                ))}
-              </div>
+          {stagePractices.length > 0 && (
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {stagePractices.map((practice) => (
+                <Link
+                  key={practice.slug}
+                  href={`/mitglieder/praxis/${practice.slug}`}
+                  className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                      {practice.title}
+                    </h3>
+                    <span className="mt-0.5 shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-muted">
+                      {practice.duration}
+                    </span>
+                  </div>
+                  <p className="text-sm leading-relaxed text-ink-mid">
+                    {practice.summary}
+                  </p>
+                </Link>
+              ))}
             </div>
-          ))}
+          )}
         </Container>
       </section>
     </>

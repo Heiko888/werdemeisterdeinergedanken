@@ -9,6 +9,7 @@
 import { stages } from "@/lib/content";
 import { stageLessons } from "@/lib/stage-lessons";
 import { deepDives } from "@/lib/deep-dives";
+import { getPractice, practiceReflection } from "@/lib/practices";
 
 export type JournalItemType = "stage" | "deep_dive" | "practice";
 
@@ -68,12 +69,15 @@ export function resolveEntry(
     };
   }
 
-  // practice: derzeit keine Reflexionsfragen – defensiv behandeln
+  // practice: Titel und Reflexionsfrage aus der Praxis-Bibliothek auflösen.
+  const practice = getPractice(itemKey);
+  if (!practice) return null;
+  const questions = practiceReflection(practice);
   return {
-    title: itemKey,
-    label: "Praxis",
-    href: `/mitglieder/praxis/${itemKey}`,
-    question: null,
+    title: practice.title,
+    label: `Praxis · ${practice.category}`,
+    href: `/mitglieder/praxis/${practice.slug}`,
+    question: idx != null && questions[idx] ? questions[idx] : null,
   };
 }
 

@@ -9,6 +9,7 @@ import { isAdminEmail } from "@/lib/admin";
 import { isActiveMember } from "@/lib/membership";
 import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
 import { BegleiterLauncher } from "@/components/members/BegleiterLauncher";
+import { MemberNav } from "@/components/members/MemberNav";
 
 /**
  * Zweite Schutzschicht für den Mitgliederbereich (Defense-in-Depth).
@@ -52,6 +53,9 @@ export default async function MembersLayout({
 
   return (
     <>
+      {/* Persistente Mitglieder-Navigation – macht die Kernbereiche von jeder
+          Unterseite aus erreichbar (nicht mehr nur über das Dashboard). */}
+      <MemberNav />
       {/* Kühler Blau-Weiß-Grund (mist-50) statt warmem Papier – bringt einen
           Hauch Marken-Blau in die ganze Fläche, hinter den weißen Karten. */}
       <div className="min-h-screen bg-mist-50">{children}</div>
