@@ -259,7 +259,7 @@ export default async function MembersPage() {
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-navy-950/55"
+          className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/92 via-navy-950/80 to-navy-950/62"
         />
         <Container className="relative z-10 flex flex-col items-start gap-4">
           <Eyebrow>Mein Bereich</Eyebrow>

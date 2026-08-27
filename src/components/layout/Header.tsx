@@ -67,9 +67,11 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                "whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
-                pathname === item.href && "text-ink",
+                "relative whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
+                pathname === item.href &&
+                  "font-semibold text-teal-700 hover:text-teal-700 after:absolute after:inset-x-4 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-leaf-500 after:to-teal-500 after:content-['']",
               )}
+              aria-current={pathname === item.href ? "page" : undefined}
             >
               {item.label}
             </Link>
@@ -84,7 +86,7 @@ export function Header() {
             Mitglieder
           </Link>
           {!imMitgliederbereich && (
-            <Button href="/kontakt" variant="primary" size="md" className="whitespace-nowrap">
+            <Button href="/kontakt" variant="accent" size="md" className="whitespace-nowrap">
               Kostenloses Erstgespräch
             </Button>
           )}
@@ -119,7 +121,12 @@ export function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink"
+              className={cn(
+                "rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink",
+                pathname === item.href &&
+                  "border-l-2 border-teal-500 font-semibold text-teal-700",
+              )}
+              aria-current={pathname === item.href ? "page" : undefined}
             >
               {item.label}
             </Link>
@@ -135,7 +142,7 @@ export function Header() {
             <div className="mt-3">
               <Button
                 href="/kontakt"
-                variant="primary"
+                variant="accent"
                 size="lg"
                 className="w-full"
                 onClick={() => setOpen(false)}
