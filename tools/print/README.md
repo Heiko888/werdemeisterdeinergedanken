@@ -4,15 +4,17 @@ Druckfertige **Visitenkarte**, **Briefpapier** und eine **E-Mail-Signatur** im
 Marken-Look von „Werde Meister deiner Gedanken" – reproduzierbar per Skript.
 
 ```bash
-npm run print       # Visitenkarte + Briefpapier (PDF)
-npm run signatur    # E-Mail-Signatur (HTML + Text)
+npm run print              # Visitenkarte + Briefpapier (PDF)
+npm run signatur           # E-Mail-Signatur (HTML + Text, hell + dunkel)
+npm run briefpapier:word   # Briefpapier als Word-Vorlage (.docx)
 # oder direkt:
 node tools/print/geschaeftsausstattung.mjs
 node tools/print/email-signatur.mjs
+node tools/print/briefpapier-word.mjs
 ```
 
 Kontakt- und Markendaten liegen gebündelt in `tools/print/marke.mjs`
-(Single Source of Truth für beide Generatoren).
+(Single Source of Truth für alle Generatoren).
 
 Ausgabe → `tools/print/out/`
 
@@ -23,6 +25,25 @@ Ausgabe → `tools/print/out/`
 | `WMDG-Briefpapier.pdf` | **A4**-Briefbogen, leer – die eigentliche Vorlage zum Beschreiben |
 | `WMDG-Briefpapier-Muster.pdf` | A4-Briefbogen mit Beispiel-Anschreiben (zeigt den Satzspiegel) |
 | `WMDG-Briefpapier-Vorschau.png` / `-Muster-Vorschau.png` | Bildschirm-Vorschauen |
+
+## Briefpapier als Word-Vorlage (`npm run briefpapier:word`)
+
+Ausgabe → `tools/print/out/WMDG-Briefpapier-Vorlage.docx`
+
+Beschreibbarer **A4-Briefbogen** zum Download: Marken-Kopf (Emblem + Wortmarke +
+Tagline) und Fußzeile (Anschrift, Kontakt, USt-IdNr.) wiederholen sich auf jeder
+Seite; dazwischen ein DIN-5008-naher Satzspiegel mit Platzhaltern
+(`[ … ]`), die einfach überschrieben werden.
+
+- **Schriften:** Word kennt Fraunces/Inter nicht → **websichere** Schriften
+  (Georgia ≈ Fraunces für den Betreff, Arial ≈ Inter für den Rest).
+- **Farben:** solide, AA-taugliche Markenfarben statt Verlauf (Kap. 04); die
+  Kopf-/Fuß-Trennlinie ist ein Teal-Absatzrahmen.
+- **Kopf/Fuß** liegen in der Word-Kopf-/Fußzeile → auf jeder Folgeseite
+  automatisch vorhanden, der Textbereich bleibt frei beschreibbar.
+
+> Baut auf `docx` (npm, devDependency). Das eingebettete Logo stammt aus
+> `public/email/wmdg-signatur-logo.png` – die .docx ist damit eigenständig.
 
 ## E-Mail-Signatur (`npm run signatur`)
 
