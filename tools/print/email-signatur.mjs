@@ -35,12 +35,26 @@ const telHref = "tel:" + CONTACT.phone.replace(/[^\d+]/g, "");
 const SERIF = "Georgia, 'Times New Roman', Times, serif";       // ≈ Fraunces
 const SANS = "Arial, 'Helvetica Neue', Helvetica, sans-serif";  // ≈ Inter
 
+// Farb-Themes: hell (Papier/Weiß) und dunkel (Navy-Karte).
+// Auf Dunkel sind Teal/Grün als Akzent unkritisch (Kap. 04); auf Hell gelten
+// die AA-Ersatztöne.
+const THEMES = {
+  light: {
+    bg: "transparent", name: C.ink, role: C.tealAA, label: C.inkMuted,
+    value: C.ink, mail: C.greenAA, link: C.tealAA, divider: C.teal, tagline: C.tealAA,
+  },
+  dark: {
+    bg: C.navy900, name: C.cream, role: C.teal300, label: C.slate,
+    value: C.cream, mail: C.leafBright, link: C.teal300, divider: C.teal300, tagline: C.teal300,
+  },
+};
+
 // Eine Kontaktzeile (Label + Wert/Link).
-function line(label, valueHtml) {
+function line(t, label, valueHtml) {
   return `<tr>
-    <td style="padding:1px 0;font:400 13px/1.5 ${SANS};color:${C.inkMuted};white-space:nowrap;" valign="top">
-      <span style="display:inline-block;width:34px;font:700 10px/1.5 ${SANS};letter-spacing:.10em;text-transform:uppercase;color:${C.inkMuted};">${label}</span>
-      <span style="font:400 13px/1.5 ${SANS};color:${C.ink};">${valueHtml}</span>
+    <td style="padding:1px 0;white-space:nowrap;" valign="top">
+      <span style="display:inline-block;width:34px;font:700 10px/1.5 ${SANS};letter-spacing:.10em;text-transform:uppercase;color:${t.label};">${label}</span>
+      <span style="font:400 13px/1.5 ${SANS};color:${t.value};">${valueHtml}</span>
     </td>
   </tr>`;
 }
@@ -48,24 +62,31 @@ const a = (href, text, color) =>
   `<a href="${href}" style="color:${color};text-decoration:none;">${text}</a>`;
 
 // Die eigentliche Signatur (reines Tabellen-Snippet, überall einbettbar).
-function signature() {
+// variant: "light" (Standard) | "dark" (Navy-Karte für dunkle Mail-Oberflächen).
+function signature(variant = "light") {
+  const t = THEMES[variant];
   const telRow = CONTACT.phone
-    ? line("Tel", a(telHref, CONTACT.phone, C.ink)) : "";
-  return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:${SANS};">
+    ? line(t, "Tel", a(telHref, CONTACT.phone, t.value)) : "";
+  // Auf Dunkel bekommt die Tabelle einen eigenen Navy-Grund + Innenabstand,
+  // damit sie überall wie eine bewusste dunkle Karte wirkt.
+  const wrapStyle = variant === "dark"
+    ? `border-collapse:separate;background:${t.bg};padding:22px 26px;border-radius:12px;`
+    : "border-collapse:collapse;";
+  return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="${wrapStyle}font-family:${SANS};">
   <tr>
     <td valign="top" style="padding:0 16px 0 0;">
       <img src="${LOGO_URL}" width="72" height="72" alt="Werde Meister deiner Gedanken" style="display:block;width:72px;height:72px;border:0;outline:none;">
     </td>
-    <td valign="top" style="padding:0 0 0 16px;border-left:3px solid ${C.teal};">
-      <div style="font:700 18px/1.2 ${SERIF};color:${C.ink};">${CONTACT.name}</div>
-      <div style="font:400 13px/1.4 ${SANS};color:${C.tealAA};padding-top:2px;">${CONTACT.role}</div>
+    <td valign="top" style="padding:0 0 0 16px;border-left:3px solid ${t.divider};">
+      <div style="font:700 18px/1.2 ${SERIF};color:${t.name};">${CONTACT.name}</div>
+      <div style="font:400 13px/1.4 ${SANS};color:${t.role};padding-top:2px;">${CONTACT.role}</div>
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin-top:9px;">
         ${telRow}
-        ${line("Mail", a("mailto:" + CONTACT.email, CONTACT.email, C.greenAA))}
-        ${line("Web", a(CONTACT.webHref, CONTACT.web, C.tealAA))}
-        ${line("Insta", a(CONTACT.instagramHref, CONTACT.instagram, C.tealAA))}
+        ${line(t, "Mail", a("mailto:" + CONTACT.email, CONTACT.email, t.mail))}
+        ${line(t, "Web", a(CONTACT.webHref, CONTACT.web, t.link))}
+        ${line(t, "Insta", a(CONTACT.instagramHref, CONTACT.instagram, t.link))}
       </table>
-      <div style="font:700 10px/1.4 ${SANS};letter-spacing:.14em;text-transform:uppercase;color:${C.tealAA};padding-top:11px;">${CONTACT.brand} · ${CONTACT.tagline}</div>
+      <div style="font:700 10px/1.4 ${SANS};letter-spacing:.14em;text-transform:uppercase;color:${t.tagline};padding-top:11px;">${CONTACT.brand} · ${CONTACT.tagline}</div>
     </td>
   </tr>
 </table>`;
@@ -87,9 +108,10 @@ function plain() {
   return lines.join("\n").replace(/\n{3,}/g, "\n\n") + "\n";
 }
 
-// Anleitungsseite (Signatur gerendert + Quelltext zum Kopieren).
+// Anleitungsseite (beide Varianten gerendert + Quelltext zum Kopieren).
 function page() {
-  const sig = signature();
+  const light = signature("light");
+  const dark = signature("dark");
   const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   return `<!doctype html><html lang="de"><head><meta charset="utf-8">
 <title>WMDG · E-Mail-Signatur</title>
@@ -103,39 +125,55 @@ function page() {
   pre{background:${C.paper};border:1px solid #e2ddd0;border-radius:10px;padding:16px;overflow-x:auto;font:400 12px/1.5 ui-monospace,Menlo,Consolas,monospace;color:#2a352f;white-space:pre-wrap;word-break:break-word;}
   ol{margin:0;padding-left:20px;color:${C.inkMid};} ol li{margin:6px 0;}
   code{background:${C.paper};padding:1px 5px;border-radius:5px;font:400 13px/1 ui-monospace,Menlo,Consolas,monospace;}
+  .tag{display:inline-block;font:700 10px/1 ${SANS};letter-spacing:.1em;text-transform:uppercase;color:${C.inkMuted};margin-bottom:12px;}
 </style></head><body><div class="wrap">
   <h1>E-Mail-Signatur</h1>
   <p class="lead">Werde Meister deiner Gedanken · fertig zum Einsetzen in Gmail, Outlook &amp; Apple Mail.</p>
 
   <div class="card">
-    <h2>Vorschau</h2>
-    ${sig}
+    <span class="tag">Hell — für helle Mail-Oberflächen</span>
+    ${light}
+  </div>
+
+  <div class="card">
+    <span class="tag">Dunkel — für dunkle Mail-Oberflächen / Dark Mode</span>
+    ${dark}
   </div>
 
   <div class="card">
     <h2>So setzt du sie ein</h2>
     <ol>
-      <li><b>Gmail / Apple Mail:</b> die Signatur oben mit der Maus markieren, kopieren (⌘/Strg+C) und im Signatur-Editor einfügen (⌘/Strg+V).</li>
-      <li><b>Outlook / HTML-Editoren:</b> den Quelltext unten verwenden (Datei <code>WMDG-Email-Signatur-Snippet.html</code>).</li>
-      <li>Das Logo wird von <code>${LOGO_URL}</code> geladen – erst nach dem nächsten Website-Deploy erreichbar. Bis dahin zeigt die Vorschau ggf. ein leeres Bild.</li>
+      <li>Die gewünschte Variante (hell <b>oder</b> dunkel) mit der Maus markieren, kopieren (⌘/Strg+C) und im Signatur-Editor einfügen (⌘/Strg+V) — Gmail, Apple Mail.</li>
+      <li><b>Outlook / HTML-Editoren:</b> den passenden Quelltext bzw. die Snippet-Datei verwenden (<code>…-Snippet.html</code> hell, <code>…-Dark-Snippet.html</code> dunkel).</li>
+      <li>Die <b>dunkle</b> Variante bringt ihren eigenen Navy-Grund mit — sie bleibt dunkel, egal ob der Client hell oder dunkel darstellt. Die <b>helle</b> hat keinen eigenen Grund; zwingt ein Client sie in Dark Mode, kann sie dort schlechter lesbar werden — dann die dunkle nehmen.</li>
+      <li>Das Logo wird von <code>${LOGO_URL}</code> geladen — erst nach dem nächsten Website-Deploy erreichbar. Bis dahin zeigt die Vorschau ggf. ein leeres Bild.</li>
     </ol>
   </div>
 
   <div class="card">
-    <h2>Quelltext (HTML)</h2>
-    <pre>${esc(sig)}</pre>
+    <h2>Quelltext — hell</h2>
+    <pre>${esc(light)}</pre>
+  </div>
+
+  <div class="card">
+    <h2>Quelltext — dunkel</h2>
+    <pre>${esc(dark)}</pre>
   </div>
 </div></body></html>`;
 }
 
 // ---------- Ausgabe ---------------------------------------------------------
+const snippetDoc = (sig, bg) =>
+  `<!doctype html><html><head><meta charset="utf-8"></head><body style="background:${bg};">\n${sig}\n</body></html>`;
+
 mkdirSync(OUT, { recursive: true });
 writeFileSync(join(OUT, "WMDG-Email-Signatur.html"), page());
-writeFileSync(join(OUT, "WMDG-Email-Signatur-Snippet.html"),
-  `<!doctype html><html><head><meta charset="utf-8"></head><body>\n${signature()}\n</body></html>`);
+writeFileSync(join(OUT, "WMDG-Email-Signatur-Snippet.html"), snippetDoc(signature("light"), "#ffffff"));
+writeFileSync(join(OUT, "WMDG-Email-Signatur-Dark-Snippet.html"), snippetDoc(signature("dark"), C.navy900));
 writeFileSync(join(OUT, "WMDG-Email-Signatur.txt"), plain());
 console.log("✓ WMDG-Email-Signatur.html");
 console.log("✓ WMDG-Email-Signatur-Snippet.html");
+console.log("✓ WMDG-Email-Signatur-Dark-Snippet.html");
 console.log("✓ WMDG-Email-Signatur.txt");
 
 // ---------- Vorschau-PNG (Playwright) ---------------------------------------
@@ -150,18 +188,24 @@ function findChrome() {
 }
 const { chromium } = require("playwright");
 const browser = await chromium.launch({ executablePath: findChrome() });
-const pg = await browser.newPage({ viewport: { width: 620, height: 260 }, deviceScaleFactor: 2 });
 // Für die Vorschau das lokale, optimierte Logo als data-URI einbetten
 // (setContent-Origin ist about:blank; von dort blockt Chromium file://-Bilder).
 const { readFileSync } = await import("node:fs");
 const localLogo = "data:image/png;base64," +
   readFileSync(join(HERE, "..", "..", "public/email/wmdg-signatur-logo.png")).toString("base64");
-await pg.setContent(
-  `<div style="background:#ffffff;padding:28px 30px;display:inline-block;">${signature().replace(LOGO_URL, localLogo)}</div>`,
-  { waitUntil: "networkidle" });
-const box = await pg.$eval("table", (el) => { const r = el.parentElement.getBoundingClientRect(); return { w: Math.ceil(r.width), h: Math.ceil(r.height) }; });
-await pg.setViewportSize({ width: box.w, height: box.h });
-await pg.screenshot({ path: join(OUT, "WMDG-Email-Signatur-Vorschau.png") });
-console.log("✓ WMDG-Email-Signatur-Vorschau.png");
+
+async function preview(variant, pageBg, file) {
+  const pg = await browser.newPage({ viewport: { width: 700, height: 300 }, deviceScaleFactor: 2 });
+  await pg.setContent(
+    `<div style="background:${pageBg};padding:28px 30px;display:inline-block;">${signature(variant).replace(LOGO_URL, localLogo)}</div>`,
+    { waitUntil: "networkidle" });
+  const box = await pg.$eval("body > div", (el) => { const r = el.getBoundingClientRect(); return { w: Math.ceil(r.width), h: Math.ceil(r.height) }; });
+  await pg.setViewportSize({ width: box.w, height: box.h });
+  await pg.screenshot({ path: join(OUT, file) });
+  await pg.close();
+  console.log("✓", file);
+}
+await preview("light", "#ffffff", "WMDG-Email-Signatur-Vorschau.png");
+await preview("dark", C.navy950, "WMDG-Email-Signatur-Dark-Vorschau.png");
 await browser.close();
 console.log("\nFertig →", OUT);

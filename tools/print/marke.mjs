@@ -37,9 +37,12 @@ export const C = {
   inkMid: "#565f5b",
   inkMuted: "#626b67",
   cream: "#f4f2ec",
+  creamDim: "#d8d9d2",
+  slate: "#9aa7b8", // gedämpftes Hell für Labels auf Navy
   leaf: "#8cc63f",
   leafBright: "#a3d64f",
   teal: "#34c4c4",
+  teal300: "#5fd6d2", // heller Teal-Akzent auf Dunkel (Kap. 04: auf Navy unkritisch)
   tealAA: "#0f6d77", // AA-taugliches Teal für Text auf Hell
   greenAA: "#3a7615", // AA-taugliches Grün für Text auf Hell
 };
