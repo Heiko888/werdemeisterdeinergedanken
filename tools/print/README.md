@@ -30,10 +30,11 @@ Ausgabe → `tools/print/out/`
 
 | Datei | Inhalt |
 |-------|--------|
-| `WMDG-Email-Signatur.html` | Anleitungsseite: gerenderte Signatur zum Markieren + Kopieren, plus Quelltext |
-| `WMDG-Email-Signatur-Snippet.html` | Nur die Signatur (Tabelle) – für Editoren, die HTML direkt entgegennehmen (Outlook …) |
+| `WMDG-Email-Signatur.html` | Anleitungsseite: **beide** Varianten (hell + dunkel) gerendert zum Markieren + Kopieren, plus Quelltext |
+| `WMDG-Email-Signatur-Snippet.html` | helle Signatur (Tabelle) – für Editoren, die HTML direkt entgegennehmen (Outlook …) |
+| `WMDG-Email-Signatur-Dark-Snippet.html` | dunkle Variante (Navy-Karte) für dunkle Mail-Oberflächen / Dark Mode |
 | `WMDG-Email-Signatur.txt` | Nur-Text-Variante (Fallback) |
-| `WMDG-Email-Signatur-Vorschau.png` | Bildschirm-Vorschau |
+| `WMDG-Email-Signatur-Vorschau.png` / `-Dark-Vorschau.png` | Bildschirm-Vorschauen |
 
 **E-Mail-tauglich gebaut:** Tabellen-Layout, ausschließlich Inline-Styles,
 **websichere Schriften** (Georgia ≈ Fraunces, Arial ≈ Inter – E-Mail-Clients
@@ -45,8 +46,13 @@ nicht) → stattdessen solide, AA-konforme Markenfarben.
   geladen (liegt unter `public/email/`, wird mit der Website ausgeliefert – erst
   **nach dem nächsten Deploy** erreichbar). E-Mail-Clients strippen eingebettete
   Bilder, daher der bewusste Hosting-Weg.
-- **Einsetzen:** Gmail / Apple Mail → Signatur auf der HTML-Seite markieren,
-  kopieren, im Signatur-Editor einfügen. Outlook → `…-Snippet.html` verwenden.
+- **Zwei Varianten:** **hell** (kein eigener Grund, für helle Oberflächen) und
+  **dunkel** (bringt einen eigenen Navy-Grund mit → bleibt dunkel, egal wie der
+  Client rendert; ideal für Dark-Mode-Clients). Auf Navy sind Teal/Grün als
+  Akzent unkritisch (Kap. 04); die helle Variante nutzt die AA-Ersatztöne.
+- **Einsetzen:** Gmail / Apple Mail → gewünschte Variante auf der HTML-Seite
+  markieren, kopieren, im Signatur-Editor einfügen. Outlook → `…-Snippet.html`
+  (hell) bzw. `…-Dark-Snippet.html` (dunkel) verwenden.
 
 ## Aufbau
 

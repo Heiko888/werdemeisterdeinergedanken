@@ -118,6 +118,11 @@ seite + Snippet) sowie eine Nur-Text-Variante in `tools/print/out/`.
 Aufbau: Emblem · Teal-Trennlinie · Name (Serife) + Rolle (Teal) · Kontaktzeilen
 (Tel/Mail/Web/Insta) · Markenzeile + Tagline als Eyebrow.
 
+**Zwei Varianten:** **hell** (für helle Mail-Oberflächen, AA-Ersatztöne) und
+**dunkel** (Navy-Karte mit eigenem Grund für Dark-Mode-Clients; auf Navy sind
+Teal-300/Grün als Akzent unkritisch, Kap. 04). Beide werden vom selben Generator
+erzeugt (`signature("light" | "dark")`).
+
 ## Redaktionsplan
 
 Ein kanalübergreifender Redaktionsplan wird über das Redaktions-Team gepflegt
