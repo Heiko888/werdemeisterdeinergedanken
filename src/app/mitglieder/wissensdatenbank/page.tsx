@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
-import { ArrowRight } from "@/components/ui/Icon";
+import { ArrowRight, Spark } from "@/components/ui/Icon";
 import { chapters, PARTS, type ChapterMeta } from "@/lib/wissensdatenbank";
 
 export const metadata: Metadata = {
@@ -40,6 +40,34 @@ export default function WissenPage() {
           >
             <ArrowRight className="rotate-180" />
             Zu meinem Bereich
+          </Link>
+        </Container>
+      </section>
+
+      {/* Rollen-Trennung sichtbar machen: die Wissensdatenbank ist zum
+          Nachschlagen; die Vertiefungen sind zum Anwenden & Üben an der Stufe.
+          Gegenstück zum Querverweis auf der Vertiefungen-Seite. */}
+      <section className="pt-2">
+        <Container>
+          <Link
+            href="/mitglieder/wissen"
+            className="group flex items-center justify-between gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
+          >
+            <div className="flex items-center gap-4">
+              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500/15 to-teal-500/15 text-lg text-accent">
+                <Spark />
+              </span>
+              <div>
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                  Zum Anwenden &amp; Üben · an deiner Stufe
+                </span>
+                <p className="font-display text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                  Vertiefungen: die Mechanismen hinter den 7 Stufen – mit Übungen
+                  und Reflexion
+                </p>
+              </div>
+            </div>
+            <ArrowRight className="shrink-0 text-ink-muted transition-all group-hover:translate-x-1 group-hover:text-accent" />
           </Link>
         </Container>
       </section>
