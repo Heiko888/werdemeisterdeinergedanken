@@ -93,6 +93,12 @@ Quelle: `tools/print/geschaeftsausstattung.mjs` (Kontaktdaten dort im
   Marken-Grün/-Teal als **Fließtext** auf Hell – dafür `ink`-Töne bzw. die
   AA-Ersatztöne (`#0f6d77` Teal, `#3a7615` Grün).
 
+Für den Alltag gibt es den Briefbogen zusätzlich als **Word-Vorlage** zum
+Download (`npm run briefpapier:word` → `WMDG-Briefpapier-Vorlage.docx`):
+beschreibbarer A4-Bogen mit Marken-Kopf/-Fuß in der Word-Kopf-/Fußzeile und
+DIN-5008-nahem Satzspiegel mit Platzhaltern. Websichere Schriften (Georgia ≈
+Fraunces, Arial ≈ Inter) und solide, AA-taugliche Markenfarben.
+
 Details & Datenpflege: `tools/print/README.md`.
 
 ## E-Mail-Signatur

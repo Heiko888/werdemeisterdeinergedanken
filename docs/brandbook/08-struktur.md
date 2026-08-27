@@ -23,6 +23,7 @@ in der jeweiligen Quelle**, dann zieht das Brandbook nach.
 | Kernsätze / Studien-Fakten (Text) | `docs/marketing/content-data.mjs` | 02, 07 |
 | Grafik-Assets & Look (Generator) | `docs/marketing/brand-assets.mjs` | 06, 07 |
 | Geschäftsausstattung (Visitenkarte/Briefpapier) | `tools/print/geschaeftsausstattung.mjs` | 07 |
+| Briefpapier als Word-Vorlage (.docx) | `tools/print/briefpapier-word.mjs` | 07 |
 | E-Mail-Signatur | `tools/print/email-signatur.mjs` | 07 |
 | Kontakt-/Markendaten (Print & Signatur) | `tools/print/marke.mjs` | 07 |
 | Foto-Overlays | `tools/marketing/content-overlays.mjs` | 06, 07 |
@@ -69,7 +70,8 @@ tools/
   print/                         → Geschäftsausstattung
     marke.mjs                    → Kontakt-/Markendaten (Single Source)
     geschaeftsausstattung.mjs    → Visitenkarte + Briefpapier (Print-PDF)
-    email-signatur.mjs           → E-Mail-Signatur (HTML + Text)
+    briefpapier-word.mjs         → Briefpapier als Word-Vorlage (.docx)
+    email-signatur.mjs           → E-Mail-Signatur (HTML + Text, hell/dunkel)
   pdf/, workshop/, vorlagen/     → weitere Generatoren
 ```
 

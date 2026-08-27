@@ -24,7 +24,8 @@
     "whatsapp:safezone": "node docs/marketing/whatsapp-safezone.mjs",
     "vorlagen:galerie": "node tools/vorlagen/build-gallery.mjs",
     "print": "node tools/print/geschaeftsausstattung.mjs",
-    "signatur": "node tools/print/email-signatur.mjs"
+    "signatur": "node tools/print/email-signatur.mjs",
+    "briefpapier:word": "node tools/print/briefpapier-word.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.115.0",
@@ -43,6 +44,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "docx": "^9.7.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
     "playwright": "^1.49.1",
