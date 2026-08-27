@@ -35,7 +35,7 @@ export default function VertiefungenPage() {
           </>
         }
         intro="Die psychologischen Mechanismen hinter den 7 Stufen – zum Nachschlagen und Vertiefen. Jedes Thema mit klarer Einordnung, Übungen und Reflexionsfragen, die direkt in dein Journal fließen."
-        image="/hero-brain.webp"
+        image="/hero-vertiefungen.webp"
       />
 
       {/* Zurück zu meinem Bereich – einheitliche Orientierung wie in Praxis */}
