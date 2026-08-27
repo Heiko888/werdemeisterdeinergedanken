@@ -22,6 +22,7 @@ in der jeweiligen Quelle**, dann zieht das Brandbook nach.
 | Visual-Bausteine (Hintergrund, Orb) | `src/components/visuals/` | 06 |
 | Kernsätze / Studien-Fakten (Text) | `docs/marketing/content-data.mjs` | 02, 07 |
 | Grafik-Assets & Look (Generator) | `docs/marketing/brand-assets.mjs` | 06, 07 |
+| Geschäftsausstattung (Visitenkarte/Briefpapier) | `tools/print/geschaeftsausstattung.mjs` | 07 |
 | Foto-Overlays | `tools/marketing/content-overlays.mjs` | 06, 07 |
 | Fotos / Hero-Motive | `public/*.webp`, `public/blog/`, `public/wissensdatenbank/` | 06 |
 | Redaktionsplan | `docs/marketing/redaktionsplan.md` | 07 |
@@ -63,6 +64,7 @@ docs/
 
 tools/
   marketing/content-overlays.mjs → transparente Foto-Overlays
+  print/geschaeftsausstattung.mjs → Visitenkarte + Briefpapier (Print-PDF)
   pdf/, workshop/, vorlagen/     → weitere Generatoren
 ```
 
@@ -82,6 +84,8 @@ tools/
 - ✅ **Foto-Richtlinie** „Heiko im Zentrum" festgeschrieben (Kap. 06).
 - ✅ **Kontrast der Akzentfarben als Text** auf Hell gemessen; verbindliche
   Regeln + AA-taugliche Ersatztöne dokumentiert (Kap. 04).
+- ✅ **Print-Anwendungen** (Visitenkarte + Briefpapier) als reproduzierbarer
+  Generator umgesetzt und dokumentiert (`tools/print/`, Kap. 07).
 
 ## Offene Punkte — brauchen eine Entscheidung/Inhalt von Heiko
 
@@ -92,9 +96,8 @@ Diese Lücken lassen sich **nicht** aus dem Code füllen:
 - ⚠️ **Print-Mindestgrößen** des Logos (mm) festlegen (Kap. 03).
 - 🛠️ **Code-Vorschlag offen:** AA-taugliches Link/Label-Token in `globals.css`
   ergänzen bzw. `--color-accent` umstellen (Details in Kap. 04).
-- ⚠️ **Fehlende Kapitel** (optional, je nach Bedarf): E-Mail-Signatur, Print-
-  Anwendungen (Visitenkarte/Briefpapier), Marken-/Trademark-Recht,
-  Asset-Zugriff für Externe.
+- ⚠️ **Fehlende Kapitel** (optional, je nach Bedarf): E-Mail-Signatur,
+  Marken-/Trademark-Recht, Asset-Zugriff für Externe.
 
 ---
 
