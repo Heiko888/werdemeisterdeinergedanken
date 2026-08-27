@@ -32,7 +32,7 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="grain relative overflow-hidden bg-navy-900 pt-16 pb-14 text-cream sm:pt-32 sm:pb-24">
+    <section className="on-dark grain relative overflow-hidden bg-navy-900 pt-16 pb-14 text-cream sm:pt-32 sm:pb-24">
       {image && (
         <>
           <Image
@@ -46,7 +46,7 @@ export function PageHero({
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-navy-900/80 via-navy-900/70 to-navy-900/85"
+            className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-navy-900/85 via-navy-900/82 to-navy-900/90"
           />
         </>
       )}
