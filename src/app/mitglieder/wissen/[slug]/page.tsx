@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Play, Download } from "@/components/ui/Icon";
+import { ArrowRight, Play, Download, Brain } from "@/components/ui/Icon";
 import { deepDives, getDeepDive } from "@/lib/deep-dives";
+import { kapitelZuVertiefung } from "@/lib/library-links";
 import { stages } from "@/lib/content";
 import { hasStaticPdf } from "@/lib/pdf/static-pdf";
 import { JournalReflection } from "@/components/members/JournalReflection";
@@ -250,6 +251,29 @@ export default async function DeepDivePage({
               </span>
             </Link>
           )}
+
+          {/* Themen-Brücke: dasselbe Thema zum Nachschlagen in der Wissensdatenbank */}
+          {(() => {
+            const kapitel = kapitelZuVertiefung(dive.slug);
+            if (!kapitel) return null;
+            return (
+              <Link
+                href={`/mitglieder/wissensdatenbank/${kapitel.slug}`}
+                className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/30"
+              >
+                <span className="inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
+                  <Brain />
+                  Zum Nachschlagen · Wissensdatenbank
+                </span>
+                <span className="flex items-center justify-between gap-3">
+                  <span className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                    {kapitel.title}
+                  </span>
+                  <ArrowRight className="shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                </span>
+              </Link>
+            );
+          })()}
 
           {/* Fragen */}
           <div className="flex items-center justify-between gap-4 border-t border-ink/10 pt-8">

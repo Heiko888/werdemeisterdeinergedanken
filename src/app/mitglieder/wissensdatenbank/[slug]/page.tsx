@@ -4,10 +4,11 @@ import { notFound } from "next/navigation";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "@/components/ui/Icon";
+import { ArrowRight, Spark } from "@/components/ui/Icon";
 import { MarkdownDoc } from "@/components/wissen/MarkdownDoc";
 import { KapitelGelesenToggle } from "@/components/members/KapitelGelesenToggle";
 import { chapterSlugs, getDoc } from "@/lib/wissensdatenbank";
+import { vertiefungZuKapitel } from "@/lib/library-links";
 
 // Optionale Titelbilder pro Kapitel – nur Kapitel mit einem Eintrag bekommen
 // ein vollflächiges Hero-Bild, alle anderen den reinen Verlauf-Hero.
@@ -150,6 +151,29 @@ export default async function WissenDocPage({
               )}
             </nav>
           )}
+
+          {/* Themen-Brücke: dasselbe Thema zum Anwenden & Üben als Vertiefung */}
+          {(() => {
+            const vertiefung = vertiefungZuKapitel(slug);
+            if (!vertiefung) return null;
+            return (
+              <Link
+                href={`/mitglieder/wissen/${vertiefung.slug}`}
+                className="group mt-12 flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/30"
+              >
+                <span className="inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
+                  <Spark />
+                  Zum Anwenden &amp; Üben · Vertiefung
+                </span>
+                <span className="flex items-center justify-between gap-3">
+                  <span className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                    {vertiefung.title}
+                  </span>
+                  <ArrowRight className="shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                </span>
+              </Link>
+            );
+          })()}
 
           {/* Mitglieder-CTA */}
           <aside
