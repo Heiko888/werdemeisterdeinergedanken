@@ -52,6 +52,30 @@ export async function getStartedStages(): Promise<string[]> {
   return (data ?? []).map((row) => row.item_key as string);
 }
 
+/**
+ * Wurde an einer Stufe schon gearbeitet, ohne sie abzuschließen? (in_progress)
+ * Für den leisen „schon begonnen"-Hinweis auf der Detailseite.
+ */
+export async function isStageStarted(stageKey: string): Promise<boolean> {
+  if (!isSupabaseConfigured) return false;
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return false;
+
+  const { data } = await supabase
+    .from("progress")
+    .select("item_key")
+    .eq("user_id", user.id)
+    .eq("item_type", "stage")
+    .eq("item_key", stageKey)
+    .eq("status", "in_progress")
+    .maybeSingle();
+
+  return Boolean(data);
+}
+
 /** Ist eine einzelne Stufe abgeschlossen? (für die Detailseite) */
 export async function isStageCompleted(stageKey: string): Promise<boolean> {
   if (!isSupabaseConfigured) return false;
