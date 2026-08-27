@@ -21,7 +21,10 @@ const items = [
   { href: "/mitglieder", label: "Mein Bereich" },
   { href: "/mitglieder/praxis", label: "Praxis" },
   { href: "/mitglieder/journal", label: "Journal" },
-  { href: "/mitglieder/wissensdatenbank", label: "Wissen" },
+  // „Wissen" führt auf die Vertiefungen (interaktiv, an die Stufe gekoppelt) und
+  // bleibt auch auf der reinen Nachschlage-Wissensdatenbank aktiv – beide liegen
+  // unter dem Pfad-Präfix /mitglieder/wissen…
+  { href: "/mitglieder/wissen", label: "Wissen", match: "/mitglieder/wissen" },
   { href: "/mitglieder/programm", label: "Programm" },
   { href: "/mitglieder/einstellungen", label: "Einstellungen" },
 ] as const;
@@ -29,12 +32,14 @@ const items = [
 export function MemberNav() {
   const pathname = usePathname();
 
-  // „Mein Bereich" ist nur auf dem Dashboard selbst aktiv; alle anderen Einträge
-  // auch auf ihren Unterseiten (z. B. eine einzelne Praxis unter /praxis/…).
-  const isActive = (href: string) =>
-    href === "/mitglieder"
-      ? pathname === "/mitglieder"
-      : pathname === href || pathname.startsWith(`${href}/`);
+  // „Mein Bereich" ist nur auf dem Dashboard selbst aktiv; Einträge mit `match`
+  // gelten für einen ganzen Pfad-Präfix (z. B. „Wissen" für Vertiefungen UND
+  // Wissensdatenbank); alle übrigen auch auf ihren Unterseiten.
+  const isActive = (item: (typeof items)[number]) => {
+    if (item.href === "/mitglieder") return pathname === "/mitglieder";
+    if ("match" in item && item.match) return pathname.startsWith(item.match);
+    return pathname === item.href || pathname.startsWith(`${item.href}/`);
+  };
 
   return (
     <nav
@@ -47,7 +52,7 @@ export function MemberNav() {
           style={{ scrollbarWidth: "none" }}
         >
           {items.map((item) => {
-            const active = isActive(item.href);
+            const active = isActive(item);
             return (
               <li key={item.href} className="shrink-0">
                 <Link
