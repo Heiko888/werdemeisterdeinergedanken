@@ -10,18 +10,25 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
  * vollflächig hinter dem Text, darüber ein Navy-Schleier für den Kontrast
  * und zuletzt der übliche HERO_GLOW, damit der Farbton zum Rest passt.
  * Das Bild ist reine Dekoration hinter der H1 – deshalb bewusst `alt=""`.
+ *
+ * Optional mit `fadeToColor` (eine CSS-Farbe): erzeugt am unteren Rand einen
+ * langen, weichen Verlauf, der das Hero-Ende exakt in die Hintergrundfarbe der
+ * folgenden Sektion überführt – so entsteht kein harter horizontaler Schnitt.
+ * Auf Mobile ist der Verlauf bewusst länger als auf Desktop.
  */
 export function PageHero({
   eyebrow,
   title,
   intro,
   image,
+  fadeToColor,
   children,
 }: {
   eyebrow?: string;
   title: ReactNode;
   intro?: ReactNode;
   image?: string;
+  fadeToColor?: string;
   children?: ReactNode;
 }) {
   return (
@@ -51,6 +58,15 @@ export function PageHero({
             HERO_GLOW,
         }}
       />
+      {fadeToColor && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-2/3 sm:h-1/2"
+          style={{
+            background: `linear-gradient(to bottom, transparent 0%, color-mix(in oklab, ${fadeToColor} 55%, transparent) 50%, ${fadeToColor} 100%)`,
+          }}
+        />
+      )}
       <Container className="relative z-10 flex flex-col items-center gap-6 text-center">
         {eyebrow && (
           <Reveal>
