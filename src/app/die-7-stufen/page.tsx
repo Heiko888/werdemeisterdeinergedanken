@@ -43,6 +43,17 @@ export default function SevenStagesPage() {
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
         />
+        {/* Nahtloser Anschluss an den Hero: die oberen Sektions-Glows blenden
+            erst unterhalb der Kante ein (navy-950 → transparent), damit Hero
+            und Stufen-Band als eine zusammenhängende Fläche wirken. */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 sm:h-56"
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--color-navy-950), transparent)",
+          }}
+        />
         <Container size="narrow">
           <ol className="relative">
             <span

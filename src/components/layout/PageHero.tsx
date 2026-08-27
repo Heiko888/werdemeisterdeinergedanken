@@ -61,9 +61,9 @@ export function PageHero({
       {fadeToColor && (
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-2/3 sm:h-1/2"
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-3/4 sm:h-3/5"
           style={{
-            background: `linear-gradient(to bottom, transparent 0%, color-mix(in oklab, ${fadeToColor} 55%, transparent) 50%, ${fadeToColor} 100%)`,
+            background: `linear-gradient(to bottom, transparent 0%, color-mix(in oklab, ${fadeToColor} 45%, transparent) 45%, color-mix(in oklab, ${fadeToColor} 85%, transparent) 75%, ${fadeToColor} 100%)`,
           }}
         />
       )}
