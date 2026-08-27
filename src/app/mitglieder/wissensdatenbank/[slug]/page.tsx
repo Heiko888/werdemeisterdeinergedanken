@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "@/components/ui/Icon";
 import { MarkdownDoc } from "@/components/wissen/MarkdownDoc";
+import { KapitelGelesenToggle } from "@/components/members/KapitelGelesenToggle";
 import { chapterSlugs, getDoc } from "@/lib/wissensdatenbank";
 
 // Optionale Titelbilder pro Kapitel – nur Kapitel mit einem Eintrag bekommen
@@ -100,6 +101,16 @@ export default async function WissenDocPage({
           </Link>
 
           <MarkdownDoc blocks={doc.blocks} />
+
+          {/* Lese-Status – nur für nummerierte Kapitel (nicht fürs Glossar) */}
+          {doc.number && (
+            <div className="mt-12 flex flex-col items-start gap-3 border-t border-ink/10 pt-8">
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink-muted">
+                Dieses Kapitel
+              </span>
+              <KapitelGelesenToggle slug={slug} />
+            </div>
+          )}
 
           {/* Vor/Zurück zwischen Kapiteln */}
           {(prev || next) && (
