@@ -16,6 +16,10 @@ import {
 import { saveStartStage } from "@/app/bewusstseinstest/actions";
 import { cn } from "@/lib/cn";
 
+// ⚖️ ZFU/FernUSG (Risiko MITTEL): Reine Selbsteinschätzung ohne Auswertung
+// durch den Anbieter ist i. d. R. keine Lernerfolgskontrolle. Wird daraus eine
+// begleitete/kommentierte Fortschrittsbewertung, kann die Einordnung kippen.
+// Siehe docs/recht/zfu-einschaetzung.md.
 // Zwischenspeicher der Antworten – überlebt den Login-Umweg (siehe unten).
 const TEST_STORAGE_KEY = "wmdg:test-antworten";
 

@@ -27,6 +27,10 @@ import {
   getLatestMusterSpiegel,
 } from "@/app/mitglieder/muster-actions";
 
+// ⚖️ ZFU/FernUSG (Risiko GERING): Journal (Selbstreflexion) und die hier
+// eingebettete Wachstumskurve (TestCurve) sind ohne individuelle Rückmeldung
+// des Anbieters keine Lernerfolgskontrolle. Kommt Feedback/Bewertung dazu,
+// neu bewerten. Siehe docs/recht/zfu-einschaetzung.md.
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {

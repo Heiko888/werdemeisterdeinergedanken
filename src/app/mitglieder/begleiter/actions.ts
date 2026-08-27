@@ -10,6 +10,11 @@ import type { ChatMessage, ChatRole } from "@/lib/begleiter";
  * Das Erzeugen einer Antwort läuft nicht über eine Server-Action, sondern über
  * den Route-Handler `begleiter/antwort/route.ts`: Nur so kann die Antwort
  * gestreamt werden (Wort für Wort statt zehn Sekunden Warten).
+ *
+ * ⚖️ ZFU/FernUSG (Risiko HOCH): Ein individuelles Eingehen auf den Lernstand
+ * kann als „Überwachung des Lernerfolgs" (§ 1 Abs. 1 FernUSG) gewertet werden
+ * und damit eine ZFU-Zulassung auslösen. Verhalten des Begleiters bewusst
+ * gestalten. Siehe docs/recht/zfu-einschaetzung.md.
  */
 
 /** Ist der Begleiter serverseitig einsatzbereit? */
