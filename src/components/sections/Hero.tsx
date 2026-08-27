@@ -12,7 +12,7 @@ const proof = ["7-Stufen-Modell", "Ohne Esoterik-Floskeln", "Auf Augenhöhe"];
 
 export function Hero() {
   return (
-    <section className="grain relative overflow-hidden bg-navy-900 text-cream">
+    <section className="on-dark grain relative overflow-hidden bg-navy-900 text-cream">
       {/* Navy-Grund mit Glow (wie /mitgliedschaft) */}
       <div
         aria-hidden

@@ -69,7 +69,7 @@ function DarkSection({
   return (
     <section
       id={id}
-      className={`relative overflow-hidden bg-navy-900 py-20 text-cream sm:py-28 ${className}`}
+      className={`on-dark relative overflow-hidden bg-navy-900 py-20 text-cream sm:py-28 ${className}`}
     >
       <div
         aria-hidden
