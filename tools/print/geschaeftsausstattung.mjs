@@ -52,7 +52,7 @@ const CONTACT = {
   ustId: "DE415501288",
   // Erscheint automatisch auf Karte & Briefbogen. Leeren ("") blendet die
   // Telefonzeile wieder aus.
-  phone: "0173 6537620",
+  phone: "+49 173 6537620",
 };
 
 // ---------- Farb-Tokens (Spiegel aus globals.css) ---------------------------
