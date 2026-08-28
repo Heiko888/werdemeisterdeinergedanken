@@ -54,8 +54,9 @@ Mitternachtsblau.
 
 ## Teal/Cyan — die Bewusstseinsfarbe
 
-**Teal ist der Bewusstseins-/Fokus-Akzent** der Marke: Eyebrows, Links auf
-Dunkel, Kachel-Akzente, Fokus-Glows. Das frühere Lindgrün (`leaf-*`) ist
+**Teal ist der Bewusstseins-/Fokus-Akzent** der Marke: das **Gehirn-Emblem**
+(teal-dominant), Eyebrows, Links auf Dunkel, Kachel-Akzente, Fokus-Glows. Das
+frühere Lindgrün (`leaf-*`) ist
 **Legacy** und stark zurückgenommen – die tragende Signatur ist heute Gold
 (siehe unten), nicht mehr der Grün-Türkis-Verlauf.
 
