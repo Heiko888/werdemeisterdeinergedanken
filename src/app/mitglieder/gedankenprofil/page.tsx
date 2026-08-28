@@ -96,7 +96,7 @@ export default async function GedankenprofilPage() {
           fill
           priority
           sizes="100vw"
-          className="z-0 object-cover object-center"
+          className="z-0 object-cover object-[center_18%]"
         />
         <div
           aria-hidden

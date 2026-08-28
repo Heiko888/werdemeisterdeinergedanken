@@ -49,7 +49,7 @@ export default async function ProgrammPage() {
           fill
           priority
           sizes="100vw"
-          className="z-0 object-cover object-center"
+          className="z-0 object-cover object-[center_35%]"
         />
         <div
           aria-hidden
