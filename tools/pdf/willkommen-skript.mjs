@@ -174,6 +174,15 @@ const ONSCREEN = [
 const KURZ =
   "Schön, dass du da bist. Das hier ist dein Bereich – kein Kurs zum Wegkonsumieren, sondern dein Raum für die Reise durch die 7 Stufen. Der rote Faden: Das meiste in uns läuft automatisch. Hier lernst du, das zu bemerken – und wieder zu wählen. Ganz oben findest du immer „Hier weitermachen“, deinen Anker für den nächsten Schritt. Die Stufen sind dein Weg, die Praxis macht ihn wirksam, die Vertiefungen erklären das Warum. Und keine Sorge: Es geht nicht darum, nie wieder zu fallen, sondern ruhig zurückzukehren. Fang klein an – scroll nach unten und starte mit Stufe 1. Ich freue mich, dass du da bist.";
 
+// Echte 60-Sek-Fassung – eigenständig einsprechbar, ruhiger Ton (~150 Wörter).
+const SECHZIG = [
+  { t: "text", x: "Schön, dass du da bist. Ich bin Heiko – und das hier ist dein Bereich. Kein Kurs zum Wegkonsumieren, sondern dein persönlicher Raum für die Reise durch sieben Stufen, in deinem Tempo." },
+  { t: "text", x: "Worum es geht? Das meiste in uns läuft automatisch ab – Reaktionen, Gewohnheiten, Gedanken. Hier lernst du, das zu bemerken. Und wo du etwas bemerkst, kannst du wieder wählen. Es geht nicht darum, ein anderer Mensch zu werden, sondern wacher zu werden für den, der du schon bist." },
+  { t: "text", x: "Zur Orientierung: Ganz oben ist immer „Hier weitermachen“ – dein Anker für den nächsten Schritt. Die sieben Stufen sind dein Weg, die Praxis macht ihn wirksam, die Vertiefungen erklären das Warum." },
+  { t: "text", x: "Und keine Sorge: Es geht nicht darum, nie wieder zu fallen, sondern ruhig zurückzukehren. Ein verpasster Tag ist kein Bruch." },
+  { t: "text", x: "Dein erster Schritt: Scroll ein Stück nach unten und beginne mit Stufe eins. Fang klein an – ich freue mich, dass du da bist." },
+];
+
 // ---------------------------------------------------------------------------
 // Styling – Marken-Look, angelehnt an praxis-sprecherskript.mjs
 // ---------------------------------------------------------------------------
@@ -272,6 +281,9 @@ function renderOnscreen() {
   <table class="osl"><tbody>${rows}</tbody></table>
   <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:13.5pt;color:#12324a;margin:8mm 0 2mm;">Kurzfassung (≈ 45 Sek)</h3>
   <div class="kurz">${esc(KURZ)}</div>
+  <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:13.5pt;color:#12324a;margin:8mm 0 2mm;">60-Sek-Fassung (Teleprompter)</h3>
+  <p class="lead">Eigenständige Ein-Minuten-Version zum direkten Einsprechen – ruhig, warm, kleine Pausen nach Gefühl.</p>
+  ${SECHZIG.map((s) => `<p class="text">${esc(s.x)}</p>`).join("\n")}
 </section>`;
 }
 

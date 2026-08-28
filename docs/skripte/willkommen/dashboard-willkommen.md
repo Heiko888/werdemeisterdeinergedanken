@@ -89,3 +89,17 @@ Fang klein an. Eine Stufe, eine Praxis. Der Rest ergibt sich unterwegs. Ich freu
 ## Kurzfassung (≈ 45 Sek, falls ein knappes Intro gewünscht ist)
 
 > Schön, dass du da bist. Das hier ist dein Bereich – kein Kurs zum Wegkonsumieren, sondern dein Raum für die Reise durch die 7 Stufen. Der rote Faden: Das meiste in uns läuft automatisch. Hier lernst du, das zu bemerken – und wieder zu wählen. Ganz oben findest du immer „Hier weitermachen", deinen Anker für den nächsten Schritt. Die Stufen sind dein Weg, die Praxis macht ihn wirksam, die Vertiefungen erklären das Warum. Und keine Sorge: Es geht nicht darum, nie wieder zu fallen, sondern ruhig zurückzukehren. Fang klein an – scroll nach unten und starte mit Stufe 1. Ich freue mich, dass du da bist.
+
+## 60-Sek-Fassung (echte Ein-Minuten-Version, Teleprompter)
+
+Eigenständige Ein-Minuten-Version zum direkten Einsprechen – ruhig, warm, kleine Pausen nach Gefühl.
+
+Schön, dass du da bist. Ich bin Heiko – und das hier ist dein Bereich. Kein Kurs zum Wegkonsumieren, sondern dein persönlicher Raum für die Reise durch sieben Stufen, in deinem Tempo.
+
+Worum es geht? Das meiste in uns läuft automatisch ab – Reaktionen, Gewohnheiten, Gedanken. Hier lernst du, das zu bemerken. Und wo du etwas bemerkst, kannst du wieder wählen. Es geht nicht darum, ein anderer Mensch zu werden, sondern wacher zu werden für den, der du schon bist.
+
+Zur Orientierung: Ganz oben ist immer „Hier weitermachen" – dein Anker für den nächsten Schritt. Die sieben Stufen sind dein Weg, die Praxis macht ihn wirksam, die Vertiefungen erklären das Warum.
+
+Und keine Sorge: Es geht nicht darum, nie wieder zu fallen, sondern ruhig zurückzukehren. Ein verpasster Tag ist kein Bruch.
+
+Dein erster Schritt: Scroll ein Stück nach unten und beginne mit Stufe eins. Fang klein an – ich freue mich, dass du da bist.
