@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { getPost, posts } from "@/lib/blog";
+import { getPost, isCategoryDeactivated, posts } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 // Metadaten für das Vorschaubild (Social Shares: WhatsApp, LinkedIn, X, …)
@@ -9,7 +9,9 @@ export const contentType = "image/png";
 
 // Für jeden Artikel zur Build-Zeit ein eigenes Vorschaubild erzeugen.
 export function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }));
+  return posts
+    .filter((p) => !isCategoryDeactivated(p))
+    .map((p) => ({ slug: p.slug }));
 }
 
 /**
@@ -22,7 +24,10 @@ export default async function Image({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getPost(slug);
+  const found = getPost(slug);
+  // Artikel aus ausgeblendeten Kategorien geben nur das generische Motiv
+  // zurück – Titel und Kategorie bleiben verborgen.
+  const post = found && !isCategoryDeactivated(found) ? found : undefined;
   const title = post?.title ?? site.name;
   const kicker = post?.category ?? "Blog";
 
