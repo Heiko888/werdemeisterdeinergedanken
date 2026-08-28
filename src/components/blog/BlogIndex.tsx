@@ -203,14 +203,14 @@ function FeaturedCard({ post }: { post: BlogCard }) {
                 className="absolute -inset-6 rounded-full opacity-70 blur-2xl"
                 style={{
                   background:
-                    "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 34%, transparent), transparent 66%)",
+                    "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 66%)",
                 }}
               />
               <Image
                 src={brainLogo}
                 alt=""
                 aria-hidden
-                className="relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(52,196,196,0.4)]"
+                className="logo-gold relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
               />
             </div>
           </div>

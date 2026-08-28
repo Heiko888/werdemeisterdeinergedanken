@@ -88,7 +88,7 @@ export function Hero() {
               src={brainLogo}
               alt="Leuchtendes Gehirn aus Datenpunkten – dein Bewusstsein als Schlüssel, deine Gedanken als Code"
               priority
-              className="mx-auto w-[min(420px,80vw)] drop-shadow-[0_12px_60px_rgba(52,196,196,0.4)]"
+              className="logo-gold mx-auto w-[min(420px,80vw)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
