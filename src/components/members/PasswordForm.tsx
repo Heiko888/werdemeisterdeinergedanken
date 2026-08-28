@@ -5,7 +5,7 @@ import { updatePassword } from "@/app/mitglieder/actions";
 import { cn } from "@/lib/cn";
 
 const inputClass =
-  "w-full rounded-xl border border-ink/15 bg-white px-4 py-2.5 text-ink outline-none transition-colors focus:border-accent/50";
+  "min-h-11 w-full rounded-xl border border-ink/15 bg-white px-4 py-2.5 text-ink outline-none transition-colors focus:border-accent/50";
 
 /**
  * Passwort ändern – neues Passwort zweimal eingeben. Die Prüfung auf
@@ -77,7 +77,7 @@ export function PasswordForm() {
         <button
           type="submit"
           disabled={pending || !pw1 || !pw2}
-          className="shrink-0 rounded-full border border-ink/20 bg-white px-6 py-2.5 text-sm font-semibold text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full border border-ink/20 bg-white px-6 py-2.5 text-sm font-semibold text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-50"
         >
           {pending ? "Ändern …" : "Passwort ändern"}
         </button>

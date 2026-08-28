@@ -138,7 +138,7 @@ export default async function JournalPage() {
           </div>
 
           {resolved.length > 0 && (
-            <PrintButton className="mt-1 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 print:hidden" />
+            <PrintButton className="mt-1 inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 print:hidden" />
           )}
         </Container>
       </section>

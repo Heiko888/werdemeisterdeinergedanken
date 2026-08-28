@@ -59,7 +59,7 @@ export function MemberNav() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "block whitespace-nowrap rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors",
+                    "flex min-h-11 items-center whitespace-nowrap rounded-full px-3.5 text-sm font-medium transition-colors",
                     active
                       ? "bg-teal-500/12 text-teal-700"
                       : "text-ink-soft hover:bg-ink/[0.04] hover:text-ink",
