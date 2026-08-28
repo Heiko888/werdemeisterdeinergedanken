@@ -165,16 +165,23 @@ export default function SevenStagesPage() {
         <Container size="narrow">
           <div className="flex flex-col items-center gap-5 text-center">
             <h2 className="font-display text-2xl italic text-ink sm:text-3xl">
-              Bereit, deine Stufe zu bestimmen?
+              Finde heraus, wo du gerade stehst.
             </h2>
             <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-mid">
-              In einem kostenlosen Erstgespräch finden wir gemeinsam heraus, wo du
-              gerade stehst und welcher Schritt für dich als Nächstes dran ist.
+              Der Bewusstseinstest zeigt dir in wenigen Minuten deine aktuelle
+              Stufe – und welcher Schritt als Nächstes dran ist. Willst du danach
+              persönlich draufschauen, ist das kostenlose Erstgespräch dein
+              zweiter Schritt.
             </p>
-            <Button href="/kontakt" variant="accent" size="lg">
-              Kostenloses Erstgespräch
-              <ArrowRight />
-            </Button>
+            <div className="mt-1 flex flex-col gap-3 sm:flex-row">
+              <Button href="/bewusstseinstest" variant="accent" size="lg">
+                Bewusstseinstest starten
+                <ArrowRight />
+              </Button>
+              <Button href="/kontakt" variant="secondary" size="lg">
+                Kostenloses Erstgespräch
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
