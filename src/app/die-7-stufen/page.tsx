@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight } from "@/components/ui/Icon";
 import { Faq } from "@/components/sections/Faq";
 import { stages } from "@/lib/content";
@@ -18,85 +18,95 @@ export const metadata: Metadata = withCanonical("/die-7-stufen", {
 export default function SevenStagesPage() {
   return (
     <>
-      <PageHero
-        eyebrow="Der Weg"
-        title={
-          <>
-            Die 7 Stufen der{" "}
-            <em className="accent">Bewusstseinsentwicklung</em>
-          </>
-        }
-        intro="Ein klarer, aufeinander aufbauender Weg. Jede Stufe bringt dich näher an einen Zustand, in dem du deine Gedanken nicht mehr erleidest, sondern bewusst gestaltest."
-        image="/hero-7-stufen.webp"
-        imageClassName="saturate-[1.55] brightness-[1.18] contrast-[1.08]"
-        overlayClassName="from-navy-900/52 via-navy-900/38 to-navy-900/62"
-        fadeToColor="var(--color-navy-950)"
-      >
-        <div className="mt-2 flex flex-col gap-3 sm:flex-row">
-          <Button href="/bewusstseinstest" variant="accent" size="lg">
-            Wo stehe ich gerade?
-            <ArrowRight />
-          </Button>
-        </div>
-      </PageHero>
-
-      {/* Der leuchtende Pfad – dunkles Kontrast-Band (das Herzstück der Seite).
-          Seitenspezifisch kräftigere Glows als das globale .bg-cosmic: die
-          Teal-/Blau-/Lind-Schimmer sind hier bewusst gesättigter, damit der
-          Hintergrund auf dieser Kern-Seite lebendiger wirkt. */}
+      {/* Hero UND der leuchtende Pfad teilen sich EINE zusammenhängende dunkle
+          Fläche mit EINEM durchlaufenden Hintergrundbild. So beginnt das Motiv
+          nicht bei „Autopilot" neu, sondern läuft vom Kopf der Seite ohne Bruch
+          bis in die Timeline weiter und blendet dort ins farbige Kosmos-Feld aus.
+          Seitenspezifisch kräftigere Glows als das globale .bg-cosmic, damit der
+          Pfad lebendig wirkt. */}
       <section
-        className="relative isolate overflow-hidden py-16 text-cream sm:py-24"
+        className="on-dark grain relative isolate overflow-hidden text-cream"
         style={{
           background:
-            "radial-gradient(62% 52% at 12% 4%, color-mix(in oklab, var(--color-teal-500) 36%, transparent) 0%, transparent 62%)," +
-            "radial-gradient(58% 48% at 90% 8%, color-mix(in oklab, var(--color-brand-500) 38%, transparent) 0%, transparent 58%)," +
-            "radial-gradient(56% 48% at 60% 100%, color-mix(in oklab, var(--color-leaf-500) 26%, transparent) 0%, transparent 60%)," +
+            "radial-gradient(52% 26% at 14% 30%, color-mix(in oklab, var(--color-teal-500) 30%, transparent) 0%, transparent 62%)," +
+            "radial-gradient(50% 24% at 88% 44%, color-mix(in oklab, var(--color-brand-500) 32%, transparent) 0%, transparent 58%)," +
+            "radial-gradient(54% 22% at 18% 70%, color-mix(in oklab, var(--color-teal-500) 22%, transparent) 0%, transparent 60%)," +
+            "radial-gradient(52% 24% at 82% 92%, color-mix(in oklab, var(--color-leaf-500) 22%, transparent) 0%, transparent 60%)," +
             "var(--color-navy-950)",
         }}
       >
+        {/* Das durchlaufende Bild (Hochformat): oben verankert, deckt Hero +
+            Anfang der Timeline und blendet nach unten weich ins Kosmos-Feld aus.
+            Ein einziges Bild – kein zweiter, neu ansetzender Ausschnitt. */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
-        />
-        {/* Sternbilder-Fortsetzung: Das Hero-Motiv läuft weich in die Stufen-
-            Sektion hinein, damit die Konstellationen nicht am Hero-Rand hart
-            enden, sondern sichtbar „in die nächste Sektion laufen". Am oberen
-            Rand setzt es (wo der Hero noch dunkel ausklingt) erst dezent ein,
-            steigt kurz darunter auf und blendet nach unten in die farbigen
-            Glows der Sektion aus. `object-bottom` zeigt den unteren Bildbereich,
-            sodass es als Fortsetzung wirkt und nicht als Wiederholung. */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[36rem] overflow-hidden sm:h-[46rem]"
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[46rem] overflow-hidden sm:h-[64rem]"
         >
           <Image
             src="/hero-7-stufen.webp"
             alt=""
             aria-hidden
             fill
+            priority
             sizes="100vw"
-            className="object-cover object-bottom opacity-[0.5] saturate-[1.45] brightness-[1.1]"
+            className="object-cover object-top saturate-[1.5] brightness-[1.12] contrast-[1.05]"
             style={{
               maskImage:
-                "linear-gradient(to bottom, transparent 0%, #000 18%, #000 40%, transparent 94%)",
+                "linear-gradient(to bottom, #000 0%, #000 60%, transparent 100%)",
               WebkitMaskImage:
-                "linear-gradient(to bottom, transparent 0%, #000 18%, #000 40%, transparent 94%)",
+                "linear-gradient(to bottom, #000 0%, #000 60%, transparent 100%)",
             }}
           />
         </div>
-        {/* Weicher Anschluss an den Hero: Navy-Deckel über dem obersten Rand,
-            damit weder der harte Hero-Ausklang noch die farbigen Sektions-Glows
-            eine sichtbare Kante bilden. Die Konstellationen tauchen dadurch
-            langsam aus dem Dunkel auf, statt am Rand hart zu beginnen. */}
+
+        {/* Feine Sterne über die gesamte Fläche – auch dort, wo das Bild schon
+            ausgeblendet ist, damit die Timeline im selben Kosmos bleibt. */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-48 sm:h-64"
+          className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-60"
+        />
+
+        {/* Hero-Scrim: dezenter Navy-Schleier über dem Kopfbereich für den
+            Textkontrast (ersetzt den früheren PageHero-Overlay). */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[32rem] sm:h-[42rem]"
           style={{
             background:
-              "linear-gradient(to bottom, var(--color-navy-950) 0%, color-mix(in oklab, var(--color-navy-950) 55%, transparent) 55%, transparent 100%)",
+              "linear-gradient(to bottom, color-mix(in oklab, var(--color-navy-900) 52%, transparent) 0%, color-mix(in oklab, var(--color-navy-900) 30%, transparent) 45%, transparent 100%)",
           }}
         />
-        <Container size="narrow">
+
+        {/* Kopfbereich */}
+        <Container className="relative z-10 flex flex-col items-center gap-6 pt-16 pb-14 text-center sm:pt-28 sm:pb-20">
+          <Reveal>
+            <Eyebrow>Der Weg</Eyebrow>
+          </Reveal>
+          <Reveal delay={80}>
+            <h1 className="max-w-3xl text-[1.7rem] font-medium leading-[1.1] text-cream sm:text-5xl sm:[hyphens:none] sm:[overflow-wrap:normal] md:text-[3.4rem]">
+              Die 7 Stufen der{" "}
+              <em className="accent">Bewusstseinsentwicklung</em>
+            </h1>
+          </Reveal>
+          <Reveal delay={140}>
+            <p className="max-w-2xl text-[1.05rem] leading-relaxed text-cream/75">
+              Ein klarer, aufeinander aufbauender Weg. Jede Stufe bringt dich
+              näher an einen Zustand, in dem du deine Gedanken nicht mehr
+              erleidest, sondern bewusst gestaltest.
+            </p>
+          </Reveal>
+          <Reveal delay={200}>
+            <div className="mt-2 flex flex-col gap-3 sm:flex-row">
+              <Button href="/bewusstseinstest" variant="accent" size="lg">
+                Wo stehe ich gerade?
+                <ArrowRight />
+              </Button>
+            </div>
+          </Reveal>
+        </Container>
+
+        {/* Der leuchtende Pfad */}
+        <Container size="narrow" className="relative z-10 pb-16 sm:pb-24">
           <ol className="relative">
             <span
               aria-hidden
