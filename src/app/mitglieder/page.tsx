@@ -244,7 +244,7 @@ export default async function MembersPage() {
   return (
     <>
       {/* Kopf – dunkle Navy-Kopfzone (Marken-Blau), jetzt schlank ohne Pill-Wolke */}
-      <section className="member-hero overflow-hidden py-14 sm:py-20">
+      <section className="member-hero flex flex-col justify-center overflow-hidden py-14 min-h-[22rem] sm:min-h-[34rem] sm:py-20">
         {/* Titelbild – leuchtendes Gehirn über dem Weg: reine Dekoration hinter
             dem Text (deshalb alt=""). Darüber ein nach links dichter werdender
             Navy-Schleier, damit Begrüßung und Fortschritt lesbar bleiben. */}
