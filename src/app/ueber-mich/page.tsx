@@ -50,7 +50,7 @@ export default function AboutPage() {
         }
         intro="Begleiter für mentale Entprogrammierung. Ich helfe Menschen, den Lärm im Kopf zu verstehen, alte Programme zu lösen und wieder selbst am Steuer zu sitzen."
         image="/ueber-heiko-berg.webp"
-        imagePosition="30% center"
+        imagePosition="30% 15%"
       />
 
       <section className="py-12 sm:py-16">
