@@ -57,6 +57,7 @@ export default function ImprintPage() {
                 Online-Streitbeilegung (OS) bereit:{" "}
                 <a
                   href="https://ec.europa.eu/consumers/odr/"
+                  className="break-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

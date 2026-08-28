@@ -55,6 +55,7 @@ export default function PrivacyPage() {
                 Datenschutz Hetzner:{" "}
                 <a
                   href="https://www.hetzner.com/de/rechtliches/datenschutz"
+                  className="break-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -134,6 +135,7 @@ export default function PrivacyPage() {
                 Datenschutz Google:{" "}
                 <a
                   href="https://policies.google.com/privacy"
+                  className="break-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -177,6 +179,7 @@ export default function PrivacyPage() {
                 Datenschutz Resend:{" "}
                 <a
                   href="https://resend.com/legal/privacy-policy"
+                  className="break-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -210,6 +213,7 @@ export default function PrivacyPage() {
                 Datenschutz Supabase:{" "}
                 <a
                   href="https://supabase.com/privacy"
+                  className="break-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -248,6 +252,7 @@ export default function PrivacyPage() {
                 <br />
                 <a
                   href="https://www.datenschutz-bayern.de"
+                  className="break-all"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

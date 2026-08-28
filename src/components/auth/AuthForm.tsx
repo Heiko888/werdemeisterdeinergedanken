@@ -41,7 +41,7 @@ export function AuthForm({
               type="button"
               onClick={() => setMode(m)}
               className={cn(
-                "rounded-full py-2.5 text-sm font-medium transition-colors",
+                "flex min-h-11 items-center justify-center rounded-full py-2.5 text-sm font-medium transition-colors",
                 mode === m
                   ? "bg-ink text-paper"
                   : "text-ink-soft hover:text-ink",
