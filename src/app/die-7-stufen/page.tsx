@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -57,15 +58,42 @@ export default function SevenStagesPage() {
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
         />
-        {/* Nahtloser Anschluss an den Hero: die oberen Sektions-Glows blenden
-            erst unterhalb der Kante ein (navy-950 → transparent), damit Hero
-            und Stufen-Band als eine zusammenhängende Fläche wirken. */}
+        {/* Sternbilder-Fortsetzung: Das Hero-Motiv läuft weich in die Stufen-
+            Sektion hinein, damit die Konstellationen nicht am Hero-Rand hart
+            enden, sondern sichtbar „in die nächste Sektion laufen". Am oberen
+            Rand setzt es (wo der Hero noch dunkel ausklingt) erst dezent ein,
+            steigt kurz darunter auf und blendet nach unten in die farbigen
+            Glows der Sektion aus. `object-bottom` zeigt den unteren Bildbereich,
+            sodass es als Fortsetzung wirkt und nicht als Wiederholung. */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 sm:h-56"
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[36rem] overflow-hidden sm:h-[46rem]"
+        >
+          <Image
+            src="/hero-7-stufen.webp"
+            alt=""
+            aria-hidden
+            fill
+            sizes="100vw"
+            className="object-cover object-bottom opacity-[0.5] saturate-[1.45] brightness-[1.1]"
+            style={{
+              maskImage:
+                "linear-gradient(to bottom, transparent 0%, #000 18%, #000 40%, transparent 94%)",
+              WebkitMaskImage:
+                "linear-gradient(to bottom, transparent 0%, #000 18%, #000 40%, transparent 94%)",
+            }}
+          />
+        </div>
+        {/* Weicher Anschluss an den Hero: Navy-Deckel über dem obersten Rand,
+            damit weder der harte Hero-Ausklang noch die farbigen Sektions-Glows
+            eine sichtbare Kante bilden. Die Konstellationen tauchen dadurch
+            langsam aus dem Dunkel auf, statt am Rand hart zu beginnen. */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-48 sm:h-64"
           style={{
             background:
-              "linear-gradient(to bottom, var(--color-navy-950), transparent)",
+              "linear-gradient(to bottom, var(--color-navy-950) 0%, color-mix(in oklab, var(--color-navy-950) 55%, transparent) 55%, transparent 100%)",
           }}
         />
         <Container size="narrow">
