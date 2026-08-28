@@ -14,14 +14,17 @@
   --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
   --font-serif: var(--font-fraunces), Georgia, serif;
 
-  /* ---- Navy (Basis / dunkle Flächen) ---- */
-  --color-navy-950: #050914;
-  --color-navy-900: #08102a;
-  --color-navy-850: #0b1636;
-  --color-navy-800: #0f1e44;
-  --color-navy-700: #16294f;
-  --color-navy-600: #1f3565;
-  --color-navy-500: #2b4684;
+  /* ---- Navy → Anthrazit (Basis / dunkle Flächen) ----
+     Entsättigt Richtung Graphit-Anthrazit mit kühlem Blau-Unterton (statt des
+     früheren gesättigten Mitternachtsblau). Trägt den Wechsel zur
+     realistisch-cinematischen Bildwelt: dunkel und ruhig statt „kosmisch". */
+  --color-navy-950: #090b10;
+  --color-navy-900: #0f1218;
+  --color-navy-850: #141821;
+  --color-navy-800: #1b202b;
+  --color-navy-700: #232935;
+  --color-navy-600: #2e3542;
+  --color-navy-500: #3b4453;
 
   /* ---- Brand-Blau (Primär / CTA) ---- */
   --color-brand-50: #eef4ff;
@@ -47,11 +50,6 @@
   /* Tiefes Teal für farbigen Text auf Hell: #0f766e erreicht ~5,5:1 auf Weiß
      (das Marken-Grün #4f9e1c läge nur bei 3,4:1 und fiele als Text durch AA). */
   --color-teal-700: #0f766e;
-
-  /* ---- Kosmische Tiefe (dezent, für Verläufe) ---- */
-  --color-cosmic-violet: #6d5ae0;
-  --color-cosmic-cyan: #34c4c4;
-  --color-cosmic-teal: #2dd4bf;
 
   /* ---- Gold (Marken-Akzent: Schriftzug, CTAs, Sterne, Feinlinien) ----
      Das Gold aus dem Logo ist jetzt der tragende Akzent der ganzen Marke –
@@ -338,20 +336,9 @@
         var(--color-navy-950) 100%
       );
   }
-  /* Dezentes Sternenfeld – unter dem Inhalt, über der Navy-Fläche. */
-  .member-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background-image:
-      radial-gradient(1.5px 1.5px at 22% 34%, rgba(255, 255, 255, 0.5), transparent),
-      radial-gradient(1.5px 1.5px at 72% 22%, rgba(180, 210, 255, 0.5), transparent),
-      radial-gradient(1px 1px at 46% 72%, rgba(255, 255, 255, 0.4), transparent),
-      radial-gradient(1px 1px at 88% 60%, rgba(200, 180, 255, 0.45), transparent),
-      radial-gradient(1px 1px at 12% 82%, rgba(255, 255, 255, 0.35), transparent);
-  }
+  /* Kosmos-Rückbau: früher lag hier ein Sternenfeld über der Navy-Fläche.
+     Für die ruhige, cinematische Bildwelt entfernt – der Header trägt jetzt
+     nur noch die weichen Teal-/Blau-Verläufe aus .member-hero. */
 }
 
 /* ============================================================
@@ -500,36 +487,36 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
+  /* Ruhige, cinematische Tiefe: ein führender Teal-Schimmer (Bewusstsein) und
+     ein sehr dezenter Gold-Akzent (Erkenntnis) über Anthrazit. Der frühere
+     kräftige Königsblau-Glow ist stark zurückgenommen – kein „kosmischer"
+     Farbrausch mehr, sondern eine ruhige dunkle Fläche mit Fokuslicht. */
   .bg-cosmic {
     background:
       radial-gradient(
-        60% 50% at 12% 4%,
-        color-mix(in oklab, var(--color-teal-500) 20%, transparent) 0%,
-        transparent 60%
+        58% 48% at 14% 2%,
+        color-mix(in oklab, var(--color-teal-500) 16%, transparent) 0%,
+        transparent 62%
       ),
       radial-gradient(
-        55% 45% at 90% 8%,
-        color-mix(in oklab, var(--color-brand-500) 22%, transparent) 0%,
-        transparent 55%
+        50% 44% at 88% 10%,
+        color-mix(in oklab, var(--color-brand-500) 8%, transparent) 0%,
+        transparent 58%
       ),
       radial-gradient(
-        50% 42% at 60% 100%,
-        color-mix(in oklab, var(--color-gold-500) 14%, transparent) 0%,
-        transparent 55%
+        48% 40% at 62% 104%,
+        color-mix(in oklab, var(--color-gold-500) 9%, transparent) 0%,
+        transparent 58%
       ),
       var(--color-navy-950);
   }
 
+  /* Kosmos-Rückbau: Sternenfeld deaktiviert. Die Klasse bleibt bestehen
+     (wird an mehreren Stellen als Layer eingehängt), rendert aber bewusst
+     nichts mehr – die realistisch-cinematische Bildwelt kommt ohne Sterne aus.
+     Später ganz aus dem Markup entfernbar. */
   .bg-stars {
-    background-image:
-      radial-gradient(1.5px 1.5px at 20% 30%, rgba(255, 255, 255, 0.7), transparent),
-      radial-gradient(1.5px 1.5px at 70% 20%, rgba(255, 255, 255, 0.55), transparent),
-      radial-gradient(1px 1px at 40% 70%, rgba(255, 255, 255, 0.5), transparent),
-      radial-gradient(1px 1px at 85% 60%, rgba(255, 255, 255, 0.45), transparent),
-      radial-gradient(1.5px 1.5px at 55% 45%, rgba(180, 210, 255, 0.6), transparent),
-      radial-gradient(1px 1px at 10% 80%, rgba(255, 255, 255, 0.4), transparent),
-      radial-gradient(1px 1px at 90% 85%, rgba(200, 180, 255, 0.5), transparent);
-    background-size: 100% 100%;
+    background-image: none;
   }
 
   .bg-grid {
