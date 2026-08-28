@@ -12,6 +12,7 @@ import { HERO_GLOW } from "@/lib/gradients";
 import { site } from "@/lib/site";
 import {
   getPost,
+  isCategoryDeactivated,
   isPublished,
   posts,
   publishedPosts,
@@ -93,7 +94,9 @@ function ctaFor(post: Post): Cta {
 // erreichbar (praktisch zum Gegenlesen), sie ist nur nirgends verlinkt und
 // wird bis zum Erscheinungstag auf noindex gesetzt.
 export function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }));
+  return posts
+    .filter((p) => !isCategoryDeactivated(p))
+    .map((p) => ({ slug: p.slug }));
 }
 
 // Stündlich nachziehen, damit ein Artikel an seinem Erscheinungstag von selbst
@@ -107,7 +110,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
-  if (!post) return { title: "Artikel nicht gefunden" };
+  if (!post || isCategoryDeactivated(post))
+    return {
+      title: "Artikel nicht gefunden",
+      robots: { index: false, follow: false },
+    };
   const url = `${site.url}/blog/${slug}`;
   return {
     title: post.title,
@@ -146,7 +153,8 @@ export default async function BlogPostPage({
 }) {
   const { slug } = await params;
   const post = getPost(slug);
-  if (!post) notFound();
+  // Nicht vorhanden oder in einer komplett ausgeblendeten Kategorie: 404.
+  if (!post || isCategoryDeactivated(post)) notFound();
 
   // „Weitere Impulse": erst thematisch verwandte (gleiche Kategorie), dann
   // mit den neuesten übrigen auffüllen – nie themenfremd wie zuvor.

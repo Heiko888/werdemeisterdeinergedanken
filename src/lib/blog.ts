@@ -1768,13 +1768,32 @@ export function isPublished(post: Post): boolean {
 }
 
 /**
+ * Komplett ausgeblendete Kategorien.
+ *
+ * Artikel dieser Kategorien erscheinen nirgends öffentlich – nicht in der
+ * Blog-Übersicht, im RSS-Feed, in der Sitemap und auch nicht über ihre eigene
+ * URL (die Artikelseite liefert dann 404). Die Inhalte bleiben im Code
+ * erhalten; ein Eintrag lässt sich durch Entfernen aus dieser Liste jederzeit
+ * wieder aktivieren.
+ */
+export const DEACTIVATED_CATEGORIES: ReadonlySet<string> = new Set([
+  "Mentale Selbstverteidigung",
+]);
+
+/** Gehört der Artikel zu einer komplett ausgeblendeten Kategorie? */
+export function isCategoryDeactivated(post: Post): boolean {
+  return DEACTIVATED_CATEGORIES.has(post.category);
+}
+
+/**
  * Die öffentlich sichtbaren Artikel, neueste zuerst.
  *
  * Vorausdatierte Beiträge dienen als Redaktionsplan und sollen erst an ihrem
  * Datum in Übersicht, Feed und Sitemap auftauchen. Bewusst eine Funktion und
  * keine Konstante: der Container läuft tagelang durch, ein einmal beim Start
- * berechneter Wert würde nie wieder nachrücken.
+ * berechneter Wert würde nie wieder nachrücken. Artikel aus deaktivierten
+ * Kategorien werden zusätzlich vollständig herausgefiltert.
  */
 export function publishedPosts(): Post[] {
-  return postsSorted.filter(isPublished);
+  return postsSorted.filter((p) => isPublished(p) && !isCategoryDeactivated(p));
 }
