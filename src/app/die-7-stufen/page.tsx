@@ -43,13 +43,13 @@ export default function SevenStagesPage() {
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[46rem] overflow-hidden sm:h-[64rem]"
         >
           <Image
-            src="/hero-7-stufen.webp"
+            src="/kompass-weg.webp"
             alt=""
             aria-hidden
             fill
             priority
             sizes="100vw"
-            className="object-cover object-top saturate-[1.5] brightness-[1.12] contrast-[1.05]"
+            className="object-cover object-top saturate-[1.05] brightness-[1.02] contrast-[1.02]"
             style={{
               maskImage:
                 "linear-gradient(to bottom, #000 0%, #000 60%, transparent 100%)",

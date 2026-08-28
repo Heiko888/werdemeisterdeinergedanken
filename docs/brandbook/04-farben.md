@@ -7,23 +7,35 @@ spiegelt sie.
 
 ## Markencharakter
 
-Tiefes Mitternachtsblau + kosmische Weite als Basis, dazu die lebendige
-Marken-Signatur **Lindgrün → Türkis** (aus dem Logo) als Akzent. Gold nur
-sehr sparsam (Sterne/Bewertungen). Für helle Flächen ein warmes Elfenbein-Papier.
+Ruhiges **Anthrazit/Navy** als Basis (entsättigt, mit kühlem Blau-Unterton) –
+eine realistisch-cinematische Tiefe statt „kosmischer" Weite. Der **tragende
+Marken-Akzent ist warmes Gold** (Wortmarke „Meister", Akzentwörter, CTAs);
+**Teal/Cyan** ist die Bewusstseinsfarbe (Eyebrows, Fokus, Kachel-Akzente).
+Königsblau kommt nur noch dezent in Verläufen vor. Für helle Flächen ein
+warmes Elfenbein-Papier.
+
+> **Kurswechsel (2026):** Weg von der kosmischen Bildwelt (Sternenfelder,
+> spirituelle Violett-Sphären) hin zu realistisch-cinematisch. Navy ist
+> entsättigt, `cosmic-violet` ist entfallen, Sternenfelder sind deaktiviert.
+> Siehe Kap. 06.
 
 ---
 
-## Navy — Basis / dunkle Flächen
+## Navy → Anthrazit — Basis / dunkle Flächen
+
+Entsättigt Richtung Graphit-Anthrazit (kühler Blau-Unterton bleibt) – trägt
+die ruhige, cinematische Grundstimmung statt des früheren gesättigten
+Mitternachtsblau.
 
 | Token | Hex | Zweck |
 |-------|-----|-------|
-| `navy-950` | `#050914` | tiefstes Schwarzblau |
-| `navy-900` | `#08102a` | Haupt-Hintergrund dunkel (auch Grafik-BG) |
-| `navy-850` | `#0b1636` | |
-| `navy-800` | `#0f1e44` | |
-| `navy-700` | `#16294f` | |
-| `navy-600` | `#1f3565` | |
-| `navy-500` | `#2b4684` | |
+| `navy-950` | `#090b10` | tiefstes Anthrazit (Grafik-BG, `.bg-cosmic`) |
+| `navy-900` | `#0f1218` | Haupt-Hintergrund dunkel |
+| `navy-850` | `#141821` | |
+| `navy-800` | `#1b202b` | |
+| `navy-700` | `#232935` | |
+| `navy-600` | `#2e3542` | |
+| `navy-500` | `#3b4453` | |
 
 ## Brand-Blau — Primär / CTA
 
@@ -40,10 +52,12 @@ sehr sparsam (Sterne/Bewertungen). Für helle Flächen ein warmes Elfenbein-Papi
 | `brand-800` | `#1a3a8a` |
 | `brand-900` | `#1a336f` |
 
-## Marken-Akzent — Lindgrün → Teal (aus dem Logo)
+## Teal/Cyan — die Bewusstseinsfarbe
 
-Die **Marken-Signatur**. Kommt als Verlauf in Logo-Wortmarke, Betonungen,
-CTAs und Zitat-Akzenten vor.
+**Teal ist der Bewusstseins-/Fokus-Akzent** der Marke: Eyebrows, Links auf
+Dunkel, Kachel-Akzente, Fokus-Glows. Das frühere Lindgrün (`leaf-*`) ist
+**Legacy** und stark zurückgenommen – die tragende Signatur ist heute Gold
+(siehe unten), nicht mehr der Grün-Türkis-Verlauf.
 
 | Token | Hex |
 |-------|-----|
@@ -56,26 +70,24 @@ CTAs und Zitat-Akzenten vor.
 | `teal-500` | `#21b2bd` |
 | `teal-600` | `#199aa8` |
 
-## Kosmische Tiefe (dezent, für Verläufe)
+## Gold — der tragende Marken-Akzent
 
-| Token | Hex |
-|-------|-----|
-| `cosmic-violet` | `#6d5ae0` |
-| `cosmic-cyan` | `#34c4c4` |
-| `cosmic-teal` | `#2dd4bf` |
+Das Gold aus dem Logo ist die **tragende Signatur der Marke**: Wortmarke
+(„Meister"), Akzentwörter in Headlines (`.accent`), CTAs, Feinlinien und
+Bewertungssterne. Auf Dunkel leuchtet `gold-300`, auf Hell tragen die
+abgedunkelten `gold-600/700` echten AA-Text-Kontrast.
 
-## Gold — nur Sterne / Bewertungen
+| Token | Hex | Zweck |
+|-------|-----|-------|
+| `gold-300` | `#f2d489` | leuchtendes Gold auf Dunkel (Wortmarke, Akzent) |
+| `gold-400` | `#e8c15f` | Signatur-Verlauf, CTAs |
+| `gold-500` | `#d9a93a` | Sterne, kräftiger Akzent |
+| `gold-600` | `#a8842a` | warmes Antikgold – Feinlinien/Deko auf Hell |
+| `gold-700` | `#7e6410` | tiefes Gold – AA-Text/Links auf hellen Flächen (`--color-accent`) |
 
-| Token | Hex |
-|-------|-----|
-| `gold-300` | `#f2d489` |
-| `gold-400` | `#e8c15f` |
-| `gold-500` | `#d9a93a` |
-
-> **Regel:** Auf **öffentlichen Markenflächen** Gold ausschließlich für
-> Bewertungssterne/Ratings – nicht als allgemeiner Akzent. (In internen
-> Admin-/Login-Tools wird Gold vereinzelt für Badges genutzt; das ist keine
-> nach außen sichtbare Markenfläche und bleibt davon unberührt.)
+> **Regel:** Gold ist der Leitakzent – **sparsam und gezielt** einsetzen
+> (ein Akzentwort je Satz, Wortmarke, primärer CTA, Sterne), nicht flächig.
+> Auf Hell für Text/Links nur die AA-tauglichen `gold-600/700` verwenden.
 
 ## Neutral / Licht
 

@@ -13,8 +13,8 @@ import type { AccentKey } from "@/lib/blog-accent";
 const PAIRS: Record<AccentKey, [string, string]> = {
   leaf: ["var(--color-gold-400)", "var(--color-gold-500)"],
   teal: ["var(--color-teal-500)", "var(--color-brand-500)"],
-  brand: ["var(--color-brand-500)", "var(--color-cosmic-violet)"],
-  cosmic: ["var(--color-cosmic-violet)", "var(--color-teal-400)"],
+  brand: ["var(--color-brand-500)", "var(--color-teal-400)"],
+  cosmic: ["var(--color-teal-500)", "var(--color-teal-300)"],
   navy: ["var(--color-brand-400)", "var(--color-teal-500)"],
 };
 
