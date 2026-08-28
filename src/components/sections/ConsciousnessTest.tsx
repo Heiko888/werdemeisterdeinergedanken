@@ -274,7 +274,7 @@ export function ConsciousnessTest() {
           <button
             type="button"
             onClick={restart}
-            className="self-center text-sm font-medium text-ink-muted underline-offset-4 transition-colors hover:text-ink hover:underline"
+            className="inline-flex min-h-11 items-center justify-center self-center px-4 py-2 text-sm font-medium text-ink-muted underline-offset-4 transition-colors hover:text-ink hover:underline"
           >
             Test wiederholen
           </button>
@@ -290,14 +290,21 @@ export function ConsciousnessTest() {
   return (
     <Container size="narrow" className="flex flex-col gap-8 py-6">
       {/* Fortschritt */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2" aria-live="polite">
         <div className="flex items-center justify-between text-xs font-medium text-ink-muted">
           <span>
             Frage {current + 1} von {total}
           </span>
           <span>{progress}%</span>
         </div>
-        <div className="h-1.5 w-full overflow-hidden rounded-full bg-ink/[0.06]">
+        <div
+          role="progressbar"
+          aria-valuenow={progress}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={`Fortschritt: Frage ${current + 1} von ${total}`}
+          className="h-1.5 w-full overflow-hidden rounded-full bg-ink/[0.06]"
+        >
           <span
             className="block h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 transition-all duration-300"
             style={{ width: `${progress}%` }}
@@ -355,7 +362,7 @@ export function ConsciousnessTest() {
         <button
           type="button"
           onClick={() => setCurrent((c) => c - 1)}
-          className="group inline-flex items-center gap-2 self-start text-sm font-medium text-ink-mid transition-colors hover:text-ink"
+          className="group -mx-3 inline-flex min-h-11 items-center gap-2 self-start rounded-lg px-3 py-2 text-sm font-medium text-ink-mid transition-colors hover:bg-ink/[0.03] hover:text-ink"
         >
           <ArrowRight className="rotate-180 transition-transform duration-300 group-hover:-translate-x-1" />
           Zurück
