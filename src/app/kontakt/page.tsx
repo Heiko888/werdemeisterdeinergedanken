@@ -27,7 +27,7 @@ export default function ContactPage() {
         intro="Ob konkrete Frage oder einfach der Wunsch, endlich anzufangen – schreib mir. Ich lese jede Nachricht persönlich."
       />
 
-      <section className="pt-10 pb-8 sm:pt-16">
+      <section className="bg-paper-aura grain-soft relative pt-10 pb-8 sm:pt-16">
         <Container className="grid gap-10 lg:grid-cols-[1.4fr_1fr] [&>*]:min-w-0">
           <ContactForm />
 

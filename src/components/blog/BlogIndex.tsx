@@ -55,7 +55,7 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
     <>
       {/* Neuester Beitrag – herausgehoben */}
       {showFeatured && featured && (
-        <section className="pt-4 pb-2 sm:pt-6">
+        <section className="bg-paper-aura grain-soft relative pt-4 pb-2 sm:pt-6">
           <Container>
             <Reveal>
               <FeaturedCard post={featured} />
@@ -65,7 +65,7 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       )}
 
       {/* Filter nach Themen */}
-      <section className="bg-surface-2 pt-10 pb-4 sm:pt-14">
+      <section className="bg-surface-aura grain-soft relative pt-10 pb-4 sm:pt-14">
         <Container>
           <div className="flex flex-col gap-3">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-muted">
@@ -105,7 +105,7 @@ export function BlogIndex({ posts }: { posts: BlogCard[] }) {
       </section>
 
       {/* Artikel-Raster */}
-      <section className="bg-surface-2 pb-16 sm:pb-20">
+      <section className="bg-surface-aura grain-soft relative pb-16 sm:pb-20">
         <Container>
           <div aria-live="polite" className="sr-only">
             {active === ALL
