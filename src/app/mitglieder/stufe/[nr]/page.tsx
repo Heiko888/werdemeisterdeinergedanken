@@ -329,7 +329,7 @@ export default async function StagePage({
             {next && nextStage ? (
               <Link
                 href={`/mitglieder/stufe/${next}`}
-                className="group inline-flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-leaf-500 to-teal-500 px-6 py-4 text-navy-950 shadow-card transition-all hover:opacity-95 sm:justify-start"
+                className="group inline-flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-gold-400 to-gold-500 px-6 py-4 text-navy-950 shadow-card transition-all hover:opacity-95 sm:justify-start"
               >
                 <span className="flex flex-col text-left">
                   <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-navy-950/60">
@@ -344,7 +344,7 @@ export default async function StagePage({
             ) : (
               <Link
                 href="/mitglieder"
-                className="group inline-flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-leaf-500 to-teal-500 px-6 py-4 text-navy-950 shadow-card transition-all hover:opacity-95 sm:justify-start"
+                className="group inline-flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-gold-400 to-gold-500 px-6 py-4 text-navy-950 shadow-card transition-all hover:opacity-95 sm:justify-start"
               >
                 <span className="flex flex-col text-left">
                   <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-navy-950/60">

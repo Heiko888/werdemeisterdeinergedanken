@@ -42,7 +42,7 @@ const BLOCK_FARBE: Record<string, string> = {
 const STATUS_STYLE: Record<PostStatus, string> = {
   geplant: "bg-ink/5 text-ink-mid",
   erstellt: "bg-gold-300/40 text-ink",
-  veroeffentlicht: "bg-leaf-500/20 text-leaf-700",
+  veroeffentlicht: "bg-gold-500/20 text-gold-700",
 };
 
 /** Nächster Status im Kreis geplant → erstellt → veröffentlicht → geplant. */
@@ -384,7 +384,7 @@ function EditDialog({
     onChange({ ...form, [key]: value });
 
   const feld =
-    "w-full rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-teal-500";
+    "w-full rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-gold-600";
   const label = "text-xs font-semibold uppercase tracking-wide text-ink-muted";
 
   return (

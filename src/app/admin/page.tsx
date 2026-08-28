@@ -46,7 +46,7 @@ function Bar({ filmed, total }: { filmed: number; total: number }) {
     <div className="flex items-center gap-3">
       <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-ink/10">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500"
+          className="h-full rounded-full bg-gradient-to-r from-gold-400 to-gold-500"
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -232,7 +232,7 @@ export default async function AdminPage() {
                     </div>
                     <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-ink/10">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500"
+                        className="h-full rounded-full bg-gradient-to-r from-gold-400 to-gold-500"
                         style={{ width: `${(count / maxStage) * 100}%` }}
                       />
                     </div>

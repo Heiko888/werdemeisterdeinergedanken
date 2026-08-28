@@ -38,7 +38,7 @@ export function NewsletterToggle({ initialOptIn }: { initialOptIn: boolean }) {
       <span
         className={cn(
           "relative h-5 w-9 shrink-0 rounded-full transition-colors",
-          optIn ? "bg-gradient-to-r from-leaf-500 to-teal-500" : "bg-ink/20",
+          optIn ? "bg-gradient-to-r from-gold-400 to-gold-500" : "bg-ink/20",
         )}
       >
         <span

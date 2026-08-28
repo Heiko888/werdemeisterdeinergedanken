@@ -195,7 +195,7 @@ async function sendWelcomeMail(email: string, actionLink: string) {
         <p style="line-height:1.6">Deine Mitgliedschaft ist aktiv. Setze jetzt dein Passwort,
         dann kommst du direkt in deinen Bereich mit allen 7 Stufen, Übungen und Vertiefungen.</p>
         <p style="margin:24px 0">
-          <a href="${actionLink}" style="display:inline-block;background:#4f9e1c;color:#fff;
+          <a href="${actionLink}" style="display:inline-block;background:#e8c15f;color:#08102a;
           text-decoration:none;padding:12px 22px;border-radius:9999px;font-weight:600">
             Passwort setzen &amp; einloggen
           </a>

@@ -110,14 +110,14 @@ export default function AboutPage() {
           <ol className="relative mt-10">
             <span
               aria-hidden
-              className="absolute left-[7px] top-2 bottom-3 w-px bg-gradient-to-b from-leaf-500/60 via-teal-500/40 to-transparent"
+              className="absolute left-[7px] top-2 bottom-3 w-px bg-gradient-to-b from-gold-500/55 via-gold-400/35 to-transparent"
             />
             {milestones.map((m) => (
               <Reveal key={m.year}>
                 <li className="relative flex gap-6 pb-9 last:pb-0">
                   <span
                     aria-hidden
-                    className="relative z-10 mt-1.5 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 ring-4 ring-surface-2"
+                    className="relative z-10 mt-1.5 h-3.5 w-3.5 shrink-0 rounded-full bg-gradient-to-br from-gold-400 to-gold-500 ring-4 ring-surface-2"
                   />
                   <div className="-mt-1 min-w-0">
                     <span className="font-display text-sm italic text-accent/80">

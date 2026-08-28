@@ -43,7 +43,7 @@ export function SevenStages() {
   return (
     <section
       id="angebot"
-      className="bg-paper-aura grain-soft relative isolate overflow-hidden border-b border-ink/10 py-16 sm:py-32"
+      className="bg-paper-aura seam-gold grain-soft relative isolate overflow-hidden py-16 sm:py-32"
     >
       <Container className="relative z-10">
         <Reveal>
@@ -70,7 +70,7 @@ export function SevenStages() {
           <Reveal delay={80} className="sm:col-span-2 lg:col-span-1">
             <Card
               tone="accent"
-              className="flex h-full flex-col justify-between gap-6 bg-gradient-to-br from-accent/[0.07] to-teal-500/[0.05]"
+              className="flex h-full flex-col justify-between gap-6 bg-gradient-to-br from-accent/[0.07] to-gold-500/[0.05]"
             >
               <div>
                 <h3 className="font-display text-xl italic text-ink">

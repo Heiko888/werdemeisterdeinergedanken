@@ -70,7 +70,7 @@ export function StageCompleteToggle({ stageKey }: { stageKey: string }) {
           className={cn(
             "flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-[0.7rem] transition-colors",
             done
-              ? "border-accent bg-gradient-to-br from-leaf-500 to-teal-500 text-navy-950"
+              ? "border-accent bg-gradient-to-br from-gold-400 to-gold-500 text-navy-950"
               : "border-ink/25 text-transparent",
           )}
         >
@@ -82,7 +82,7 @@ export function StageCompleteToggle({ stageKey }: { stageKey: string }) {
       {/* Leiser Hinweis: an dieser Stufe wurde schon gearbeitet (z. B. eine
           Reflexion geschrieben), sie ist aber noch nicht abgeschlossen. */}
       {!done && started && (
-        <span className="text-sm text-teal-700">
+        <span className="text-sm text-gold-700">
           Du hast an dieser Stufe schon gearbeitet.
         </span>
       )}

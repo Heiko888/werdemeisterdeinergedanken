@@ -112,7 +112,7 @@ export function MomentumRow({
         <a
           key={c.label}
           href={c.href}
-          className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-sm backdrop-blur-sm transition-colors hover:border-teal-300/50 hover:bg-white/15"
+          className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-sm backdrop-blur-sm transition-colors hover:border-gold-400/40 hover:bg-white/15"
         >
           <span className="text-ink-muted">{c.label}</span>
           <span className="font-semibold tabular-nums text-ink">{c.value}</span>

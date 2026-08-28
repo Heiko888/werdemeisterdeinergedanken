@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 
 export function MaybeNotYou() {
   return (
-    <section className="bg-paper-aura grain-soft relative border-t border-ink/10 py-16 sm:py-32">
+    <section className="bg-paper-aura seam-gold grain-soft relative py-16 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal>
           <div className="flex flex-col items-start gap-6">

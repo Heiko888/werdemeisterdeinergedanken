@@ -109,7 +109,7 @@ export function ProgrammBegleiter({
             {woche ? ` · Woche ${woche.nr} – ${woche.titel}` : ""}
           </span>
           {istDone && (
-            <span className="rounded-full bg-leaf-500/15 px-3 py-1 text-xs font-semibold text-leaf-600">
+            <span className="rounded-full bg-gold-500/15 px-3 py-1 text-xs font-semibold text-gold-700">
               abgeschlossen
             </span>
           )}
@@ -206,7 +206,7 @@ export function ProgrammBegleiter({
                         aktiv
                           ? "border-accent bg-accent/10 text-ink"
                           : dDone
-                            ? "border-leaf-500/40 bg-leaf-500/[0.08] text-leaf-600"
+                            ? "border-gold-500/45 bg-gold-500/[0.08] text-gold-700"
                             : "border-ink/15 bg-white text-ink-mid hover:border-accent/40 hover:text-ink"
                       }`}
                     >

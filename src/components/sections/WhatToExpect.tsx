@@ -39,7 +39,7 @@ export function WhatToExpect() {
                   interactive
                   className="flex min-w-0 flex-col gap-4"
                 >
-                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-xl text-cream shadow-card">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-xl text-navy-950 shadow-card">
                     {Icon && <Icon />}
                   </span>
                   <h3 className="text-xl font-medium text-ink">{item.title}</h3>

@@ -11,7 +11,7 @@ const variants: Record<Variant, string> = {
     "border border-ink/20 text-ink hover:border-ink/40 hover:bg-ink/[0.03]",
   ghost: "text-accent hover:text-ink",
   accent:
-    "bg-gradient-to-r from-leaf-500 to-teal-500 text-navy-950 font-semibold shadow-sm hover:brightness-[1.03]",
+    "bg-gradient-to-r from-gold-400 to-gold-500 text-navy-950 font-semibold shadow-sm hover:brightness-[1.03]",
 };
 
 const sizes: Record<Size, string> = {

@@ -154,21 +154,21 @@ function FeaturedCard({ post }: { post: BlogCard }) {
 
       <div className="relative grid items-center gap-8 p-7 sm:p-10 lg:grid-cols-[1.5fr_0.9fr] lg:p-14">
         <div className="flex flex-col items-start gap-4">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-leaf-400">
-            <span className="h-1.5 w-1.5 rounded-full bg-leaf-400" />
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-gold-300">
+            <span className="h-1.5 w-1.5 rounded-full bg-gold-300" />
             Neuester Beitrag
           </span>
           <span className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-cream/55">
             {post.category}
           </span>
-          <h2 className="max-w-xl text-[1.7rem] font-medium leading-[1.12] text-cream transition-colors group-hover:text-leaf-400 sm:text-3xl md:text-[2.4rem]">
+          <h2 className="max-w-xl text-[1.7rem] font-medium leading-[1.12] text-cream transition-colors group-hover:text-gold-300 sm:text-3xl md:text-[2.4rem]">
             {post.title}
           </h2>
           <p className="max-w-lg text-[1.02rem] leading-relaxed text-cream/75">
             {post.excerpt}
           </p>
           <Meta post={post} tone="dark" />
-          <span className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-leaf-400">
+          <span className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-gold-300">
             Weiterlesen
             <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
           </span>

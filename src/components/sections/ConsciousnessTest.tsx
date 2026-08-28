@@ -188,7 +188,7 @@ export function ConsciousnessTest() {
                       className={cn(
                         "absolute inset-y-0 left-0 rounded-full",
                         active
-                          ? "bg-gradient-to-r from-leaf-500 to-teal-500"
+                          ? "bg-gradient-to-r from-gold-400 to-gold-500"
                           : "bg-ink/20",
                       )}
                       style={{ width: `${pct}%` }}
@@ -306,7 +306,7 @@ export function ConsciousnessTest() {
           className="h-1.5 w-full overflow-hidden rounded-full bg-ink/[0.06]"
         >
           <span
-            className="block h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 transition-all duration-300"
+            className="block h-full rounded-full bg-gradient-to-r from-gold-400 to-gold-500 transition-all duration-300"
             style={{ width: `${progress}%` }}
           />
         </div>

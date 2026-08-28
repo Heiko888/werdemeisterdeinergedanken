@@ -48,7 +48,7 @@ export default function WillkommenPage() {
                   key={title}
                   className="flex items-start gap-4 rounded-2xl border border-ink/10 bg-paper/40 p-6 shadow-card"
                 >
-                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-sm font-semibold text-navy-950">
+                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-sm font-semibold text-navy-950">
                     {i + 1}
                   </span>
                   <div className="flex flex-col gap-1">
