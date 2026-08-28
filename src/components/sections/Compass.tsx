@@ -37,7 +37,7 @@ export function Compass() {
               <span className="font-display text-sm italic text-ink-mid">
                 02
               </span>
-              <Eyebrow>Dein energetischer Kompass</Eyebrow>
+              <Eyebrow>Dein innerer Kompass</Eyebrow>
             </div>
             <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
               Durchlaufe alle 7 Stufen –{" "}

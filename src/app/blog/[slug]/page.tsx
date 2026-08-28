@@ -284,7 +284,7 @@ export default async function BlogPostPage({
                 Heiko Schwaninger
               </span>
               <span className="text-sm text-ink-mid">
-                Begleiter für Bewusstseinsentwicklung
+                Begleiter für mentale Entprogrammierung
               </span>
             </div>
           </div>

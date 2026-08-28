@@ -251,7 +251,7 @@ export default function GratisEbookPage() {
                 <span className="text-sm font-medium text-ink">
                   Heiko Schwaninger{" "}
                   <span className="font-normal text-ink-muted">
-                    · Begleiter für Bewusstseinsentwicklung
+                    · Begleiter für mentale Entprogrammierung
                   </span>
                 </span>
               </div>

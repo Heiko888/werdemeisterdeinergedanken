@@ -162,6 +162,6 @@ export const faqs: Faq[] = [
   {
     question: "Wie fange ich am besten an?",
     answer:
-      "Sichere dir das kostenlose E-Book „Werde Meister deiner Gedanken“ oder schreib mir direkt. Von dort finden wir gemeinsam den passenden nächsten Schritt.",
+      "Sichere dir das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ oder schreib mir direkt. Von dort finden wir gemeinsam den passenden nächsten Schritt.",
   },
 ];
