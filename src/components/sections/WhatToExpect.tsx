@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Card } from "@/components/ui/Card";
+import { SeamFade } from "@/components/ui/SeamFade";
 import { Compass, Spark, Shield } from "@/components/ui/Icon";
 import { expectations } from "@/lib/content";
 
@@ -13,7 +14,8 @@ const iconMap = {
 
 export function WhatToExpect() {
   return (
-    <section className="relative bg-surface-2 py-16 sm:py-32">
+    <section className="bg-surface-aura grain-soft relative isolate py-16 sm:py-32">
+      <SeamFade edge="bottom" />
       <Container>
         <Reveal>
           <SectionHeading
