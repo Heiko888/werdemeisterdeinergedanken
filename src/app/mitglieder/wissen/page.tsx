@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
@@ -93,22 +94,34 @@ export default function VertiefungenPage() {
                       <Reveal key={dive.slug}>
                         <Link
                           href={`/mitglieder/wissen/${dive.slug}`}
-                          className="group flex h-full flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                          className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
                         >
-                          {label && (
-                            <span className="w-fit rounded-full bg-gold-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-gold-700">
-                              {label}
-                            </span>
-                          )}
-                          <div className="flex items-start justify-between gap-3">
-                            <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
-                              {dive.title}
-                            </h3>
-                            <ArrowRight className="mt-1 shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                          <div className="relative aspect-video w-full overflow-hidden bg-navy-900">
+                            <Image
+                              src={`/video-thumbnails/vertiefungen/${dive.slug}.png`}
+                              alt=""
+                              aria-hidden
+                              fill
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                            />
                           </div>
-                          <p className="text-sm leading-relaxed text-ink-mid">
-                            {dive.summary}
-                          </p>
+                          <div className="flex flex-1 flex-col gap-2 p-6">
+                            {label && (
+                              <span className="w-fit rounded-full bg-gold-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-gold-700">
+                                {label}
+                              </span>
+                            )}
+                            <div className="flex items-start justify-between gap-3">
+                              <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                                {dive.title}
+                              </h3>
+                              <ArrowRight className="mt-1 shrink-0 text-ink-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
+                            </div>
+                            <p className="text-sm leading-relaxed text-ink-mid">
+                              {dive.summary}
+                            </p>
+                          </div>
                         </Link>
                       </Reveal>
                     );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
@@ -45,19 +46,31 @@ export default function PraxisIndexPage() {
                   <Link
                     key={practice.slug}
                     href={`/mitglieder/praxis/${practice.slug}`}
-                    className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
                   >
-                    <div className="flex items-start justify-between gap-3">
-                      <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
-                        {practice.title}
-                      </h3>
-                      <span className="mt-0.5 shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-muted">
-                        {practice.duration}
-                      </span>
+                    <div className="relative aspect-video w-full overflow-hidden bg-navy-900">
+                      <Image
+                        src={`/video-thumbnails/praxis/${practice.slug}.png`}
+                        alt=""
+                        aria-hidden
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
                     </div>
-                    <p className="text-sm leading-relaxed text-ink-mid">
-                      {practice.summary}
-                    </p>
+                    <div className="flex flex-col gap-2 p-6">
+                      <div className="flex items-start justify-between gap-3">
+                        <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
+                          {practice.title}
+                        </h3>
+                        <span className="mt-0.5 shrink-0 text-xs font-semibold uppercase tracking-wider text-ink-muted">
+                          {practice.duration}
+                        </span>
+                      </div>
+                      <p className="text-sm leading-relaxed text-ink-mid">
+                        {practice.summary}
+                      </p>
+                    </div>
                   </Link>
                 ))}
               </div>
