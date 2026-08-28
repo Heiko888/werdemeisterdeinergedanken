@@ -16,7 +16,7 @@ export function LeadMagnet() {
   return (
     <section
       id="ebook"
-      className="relative scroll-mt-24 bg-surface-2 py-16 sm:py-32"
+      className="bg-surface-aura grain-soft relative scroll-mt-24 py-16 sm:py-32"
     >
       <Container className="grid items-center gap-16 lg:grid-cols-[0.8fr_1fr]">
         {/* Buch-Cover */}

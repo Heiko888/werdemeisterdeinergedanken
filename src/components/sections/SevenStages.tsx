@@ -41,7 +41,10 @@ export function StageCard({
 
 export function SevenStages() {
   return (
-    <section id="angebot" className="relative py-16 sm:py-32">
+    <section
+      id="angebot"
+      className="bg-paper-aura grain-soft relative py-16 sm:py-32"
+    >
       <Container>
         <Reveal>
           <SectionHeading

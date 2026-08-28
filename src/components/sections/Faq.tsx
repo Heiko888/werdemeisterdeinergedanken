@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Plus } from "@/components/ui/Icon";
+import { SeamFade } from "@/components/ui/SeamFade";
 import { faqs as defaultFaqs, type Faq as FaqType } from "@/lib/content";
 import { cn } from "@/lib/cn";
 
@@ -19,7 +20,8 @@ export function Faq({
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="relative border-t border-ink/10 py-16 sm:py-32">
+    <section className="bg-paper-aura grain-soft relative isolate border-t border-ink/10 py-16 sm:py-32">
+      <SeamFade edge="bottom" tone="navy" />
       <Container size="narrow">
         <SectionHeading eyebrow={eyebrow} title={title} />
 

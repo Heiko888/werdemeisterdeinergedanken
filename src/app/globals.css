@@ -383,6 +383,58 @@
     );
   }
 
+  /* ------------------------------------------------------------
+     Helle Sektionen: warme Atmosphäre statt flacher Fläche.
+     Das helle Gegenstück zu .bg-cosmic – sehr dezente Teal-/Lind-/
+     Blau-Schimmer über dem Papier-/Creme-Grund. Sie geben den hellen
+     Sektionen dieselbe Tiefe und denselben Farbklang wie den dunklen
+     (Hero, Stimmen, Final-CTA), damit sie nicht mehr steril wirken und
+     der Wechsel hell↔dunkel nicht mehr hart „bricht".
+     Die Glows sitzen bewusst an den oberen/unteren Kanten und greifen
+     die Farben der benachbarten dunklen Sektionen auf – so fließt die
+     Farbe über die Schnittkanten hinweg.
+     ------------------------------------------------------------ */
+  .bg-paper-aura {
+    background:
+      radial-gradient(
+        68% 58% at 14% -8%,
+        color-mix(in oklab, var(--color-teal-500) 14%, transparent),
+        transparent 60%
+      ),
+      radial-gradient(
+        58% 52% at 94% 108%,
+        color-mix(in oklab, var(--color-leaf-500) 11%, transparent),
+        transparent 58%
+      ),
+      var(--color-paper);
+  }
+  .bg-surface-aura {
+    background:
+      radial-gradient(
+        66% 56% at 90% -8%,
+        color-mix(in oklab, var(--color-brand-500) 13%, transparent),
+        transparent 60%
+      ),
+      radial-gradient(
+        58% 52% at 8% 108%,
+        color-mix(in oklab, var(--color-teal-500) 11%, transparent),
+        transparent 58%
+      ),
+      var(--color-surface-2);
+  }
+
+  /* Sehr feiner Grain für helle Flächen – nimmt den sterilen, zu glatten
+     Eindruck, ohne wie Schmutz zu wirken (dezenter als .grain für Dunkel). */
+  .grain-soft::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.022;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
   .bg-cosmic {
     background:
       radial-gradient(
