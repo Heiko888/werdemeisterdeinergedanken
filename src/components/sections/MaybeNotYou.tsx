@@ -2,15 +2,13 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { VideoMessage } from "@/components/ui/VideoMessage";
-import { SeamFade } from "@/components/ui/SeamFade";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
 
 export function MaybeNotYou() {
   return (
-    <section className="bg-paper-aura grain-soft relative isolate border-t border-ink/10 py-16 sm:py-32">
-      <SeamFade edge="top" />
+    <section className="bg-paper-aura grain-soft relative border-t border-ink/10 py-16 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal>
           <div className="flex flex-col items-start gap-6">

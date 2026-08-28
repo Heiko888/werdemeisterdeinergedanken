@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { SeamFade } from "@/components/ui/SeamFade";
 import { CheckoutButton } from "@/components/membership/CheckoutButton";
 import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { stages, testimonials, faqs } from "@/lib/content";
@@ -173,9 +172,7 @@ export default async function MitgliedschaftPage({
       </DarkSection>
 
       {/* Problem */}
-      <section className="bg-paper-aura grain-soft relative isolate py-14 sm:py-28">
-        <SeamFade edge="top" tone="navy" />
-        <SeamFade edge="bottom" tone="navy" />
+      <section className="bg-paper-aura grain-soft relative py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Kennst du das?</Eyebrow>
@@ -245,9 +242,7 @@ export default async function MitgliedschaftPage({
       </DarkSection>
 
       {/* Was drin ist */}
-      <section className="bg-paper-aura grain-soft relative isolate py-14 sm:py-28">
-        <SeamFade edge="top" tone="navy" />
-        <SeamFade edge="bottom" tone="navy" />
+      <section className="bg-paper-aura grain-soft relative py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Deine Mitgliedschaft</Eyebrow>
@@ -297,9 +292,7 @@ export default async function MitgliedschaftPage({
       </DarkSection>
 
       {/* Stimmen */}
-      <section className="bg-paper-aura grain-soft relative isolate py-14 sm:py-28">
-        <SeamFade edge="top" tone="navy" />
-        <SeamFade edge="bottom" tone="navy" />
+      <section className="bg-paper-aura grain-soft relative py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Stimmen</Eyebrow>
@@ -433,10 +426,8 @@ export default async function MitgliedschaftPage({
       {/* FAQ */}
       <section
         id="faq"
-        className="bg-paper-aura grain-soft relative isolate py-14 sm:py-28"
+        className="bg-paper-aura grain-soft relative py-14 sm:py-28"
       >
-        <SeamFade edge="top" tone="navy" />
-        <SeamFade edge="bottom" tone="navy" />
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Häufige Fragen</Eyebrow>
