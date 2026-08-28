@@ -142,6 +142,51 @@ export default function SevenStagesPage() {
                     <p className="mt-2 text-[0.95rem] leading-relaxed text-cream/70 sm:text-base">
                       {stage.description}
                     </p>
+
+                    {stage.detail && (
+                      <dl className="mt-5 grid gap-4 sm:grid-cols-2">
+                        {[
+                          {
+                            label: "Woran du sie erkennst",
+                            text: stage.detail.recognize,
+                            accent: false,
+                          },
+                          {
+                            label: "Was dich hier festhält",
+                            text: stage.detail.stuck,
+                            accent: false,
+                          },
+                          {
+                            label: "Was hier entsteht",
+                            text: stage.detail.skill,
+                            accent: false,
+                          },
+                          {
+                            label: "Dein nächster Schritt",
+                            text: stage.detail.next,
+                            accent: true,
+                          },
+                        ].map((item) => (
+                          <div
+                            key={item.label}
+                            className="border-t border-cream/12 pt-3"
+                          >
+                            <dt
+                              className={`text-[0.68rem] font-semibold uppercase tracking-[0.16em] ${
+                                item.accent
+                                  ? "text-gold-300/90"
+                                  : "text-teal-300/80"
+                              }`}
+                            >
+                              {item.label}
+                            </dt>
+                            <dd className="mt-1.5 text-[0.9rem] leading-relaxed text-cream/70">
+                              {item.text}
+                            </dd>
+                          </div>
+                        ))}
+                      </dl>
+                    )}
                   </div>
                 </li>
               </Reveal>

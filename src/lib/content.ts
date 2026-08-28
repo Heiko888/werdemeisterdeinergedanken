@@ -8,6 +8,21 @@ export type Stage = {
   title: string;
   subtitle: string;
   description: string;
+  /**
+   * Optionale Vertiefung je Stufe – nur auf /die-7-stufen gerendert, damit
+   * aus sieben Karten sieben echte Entwicklungsschritte werden. Startseite
+   * (SevenStages) nutzt weiterhin nur die Kurzbeschreibung.
+   */
+  detail?: {
+    /** Woran du diese Stufe erkennst – Anzeichen und Gefühl. */
+    recognize: string;
+    /** Was dich auf dieser Stufe festhält – die typische Falle. */
+    stuck: string;
+    /** Welche Fähigkeit hier entsteht. */
+    skill: string;
+    /** Dein nächster Schritt in Richtung der folgenden Stufe. */
+    next: string;
+  };
 };
 
 /** Die 7 Stufen der Bewusstseinsentwicklung (Entwicklungsreise) */
@@ -18,6 +33,15 @@ export const stages: Stage[] = [
     subtitle: "Du wirst gelebt",
     description:
       "Vieles läuft automatisch – Reaktionen, Gewohnheiten, Gedanken. Der erste Schritt ist zu bemerken, dass du im Autopilot lebst.",
+    detail: {
+      recognize:
+        "Du funktionierst, aber du entscheidest wenig bewusst. Reaktionen kommen schneller, als du denken kannst, und abends fragst du dich, wohin der Tag verschwunden ist. Es fühlt sich normal an – gerade deshalb fällt es kaum auf.",
+      stuck:
+        "Der Autopilot ist bequem. Solange nichts wirklich wehtut, gibt es keinen Grund, ihn zu hinterfragen – und genau diese Unauffälligkeit hält dich in ihm fest.",
+      skill:
+        "Die erste Fähigkeit ist winzig und entscheidend: überhaupt zu bemerken, dass da ein Automatismus läuft.",
+      next: "Schau dir einmal am Tag bewusst über die Schulter. Ein einziger wacher Moment reicht als Anfang.",
+    },
   },
   {
     number: "02",
@@ -25,6 +49,15 @@ export const stages: Stage[] = [
     subtitle: "Du bemerkst es",
     description:
       "Ein erster Riss im Automatischen: Du spürst, dass du mehr bist als deine Gedanken – und beginnst zu hinterfragen.",
+    detail: {
+      recognize:
+        "Das „So bin ich eben“ stimmt nicht mehr ganz. Du ertappst dich bei Gedanken und fragst zum ersten Mal: Ist der wirklich meiner? Ein leiser Riss im Selbstverständlichen.",
+      stuck:
+        "Der Reflex, den Riss schnell wieder zuzukleben – mit Ablenkung, Erklärungen, Weitermachen. Erwachen ist unbequem, und Unbequemes will man loswerden.",
+      skill:
+        "Du beginnst zu unterscheiden zwischen dem, was in dir passiert, und dem, was du bist. Diese Unterscheidung ist der Anfang von Freiheit.",
+      next: "Halte den Fragen stand, statt sie wegzuschieben. Schreib auf, was dir auffällt – Bemerken wird stärker, wenn du es festhältst.",
+    },
   },
   {
     number: "03",
@@ -32,6 +65,15 @@ export const stages: Stage[] = [
     subtitle: "Du siehst dir zu",
     description:
       "Du lernst, deinen Gedanken und Mustern zuzusehen, ohne dich mit ihnen zu identifizieren. Distanz schafft Wahlfreiheit.",
+    detail: {
+      recognize:
+        "Du kannst einen Gedanken denken und ihn zugleich betrachten. Zwischen Reiz und Reaktion öffnet sich ein Spalt, in dem du zum ersten Mal wählen kannst.",
+      stuck:
+        "Die Identifikation. Du verwechselst dich noch oft mit dem, was du beobachtest, und wirst vom Gefühl mitgerissen, statt bei ihm zu bleiben.",
+      skill:
+        "Distanz ohne Kälte. Du lernst dabeizubleiben, ohne dich zu verlieren – der Beobachter in dir wird ruhiger und verlässlicher.",
+      next: "Übe den Spalt bewusst: eine kurze Pause zwischen Auslöser und Antwort, jeden Tag ein Stück länger.",
+    },
   },
   {
     number: "04",
@@ -39,6 +81,15 @@ export const stages: Stage[] = [
     subtitle: "Du lässt los",
     description:
       "Du löst festgehaltene Gefühle und alte Geschichten und übernimmst Verantwortung für dein Inneres. Es entsteht Raum – für Ruhe und Kraft.",
+    detail: {
+      recognize:
+        "Alte Gefühle tauchen auf – und du drückst sie nicht mehr weg, sondern lässt sie da sein. Du merkst, dass ein Gefühl dich nicht zerstört, wenn du es wirklich fühlst.",
+      stuck:
+        "Die Geschichten, die du um deine Gefühle gebaut hast – Schuld, Groll, „hätte nur“. Solange die Geschichte bleibt, bleibt das Gefühl.",
+      skill:
+        "Du übernimmst Verantwortung für dein Inneres, ohne dich dafür zu verurteilen. Es entsteht Raum – und in ihm: Ruhe und Kraft.",
+      next: "Geh dorthin, wo es sich eng anfühlt, statt darum herum. Was du fühlst, darfst du loslassen.",
+    },
   },
   {
     number: "05",
@@ -46,6 +97,15 @@ export const stages: Stage[] = [
     subtitle: "Du erschaffst bewusst",
     description:
       "Vom Beobachter zum Gestalter: Du wählst Gedanken, die dich tragen, richtest dich innerlich aus und setzt sie in Handlung um.",
+    detail: {
+      recognize:
+        "Du wartest nicht mehr, bis Gedanken dir passieren – du wählst sie. Du merkst, dass du innere Zustände selbst herstellen kannst, statt auf sie zu hoffen.",
+      stuck:
+        "Der alte Glaube, dass du nur Passagier bist. Schöpferkraft fühlt sich anfangs fast vermessen an – „darf ich das überhaupt?“.",
+      skill:
+        "Vom Beobachter zum Gestalter. Du richtest dich innerlich aus und setzt das, was du wählst, in Handlung um.",
+      next: "Wähle bewusst einen tragenden Gedanken pro Tag – und handle einmal danach, und sei es klein.",
+    },
   },
   {
     number: "06",
@@ -53,6 +113,15 @@ export const stages: Stage[] = [
     subtitle: "Kopf, Herz und Handeln",
     description:
       "Denken, Fühlen und Tun ziehen an einem Strang. Aus dieser Stimmigkeit entstehen Präsenz, Klarheit und Wirkung.",
+    detail: {
+      recognize:
+        "Denken, Fühlen und Tun widersprechen sich seltener. Entscheidungen fühlen sich stimmig an statt zerrissen – du erkennst dich in deinem Handeln wieder.",
+      stuck:
+        "Die letzten Kompromisse mit dir selbst – dort, wo du noch gegen dein besseres Wissen lebst, weil es bequemer oder erwartet ist.",
+      skill:
+        "Stimmigkeit. Aus dem Einklang von Kopf, Herz und Handeln entstehen Präsenz, Klarheit und echte Wirkung.",
+      next: "Bring die eine Stelle in Ordnung, an der du noch gegen dich lebst. Ausrichtung zeigt sich im Konkreten.",
+    },
   },
   {
     number: "07",
@@ -60,6 +129,15 @@ export const stages: Stage[] = [
     subtitle: "Du gestaltest",
     description:
       "Du reagierst nicht mehr – du gestaltest. Bewusstsein wird zu deinem Zuhause, aus dem heraus du dein Leben souverän formst.",
+    detail: {
+      recognize:
+        "Du reagierst nicht mehr, du gestaltest. Auch unter Druck bleibt ein ruhiger Ort in dir, aus dem heraus du antwortest, statt zurückzuschlagen.",
+      stuck:
+        "Nichts hält dich mehr fest – aber Meisterschaft ist kein Ziel, das man erreicht und ablegt. Sie will täglich gelebt werden.",
+      skill:
+        "Bewusstsein wird zu deinem Zuhause – der Ort, aus dem du dein Leben souverän formst, statt es zu erleiden.",
+      next: "Gib weiter, was du gefunden hast. Nichts festigt Meisterschaft so sehr, wie einen anderen Menschen auf seinem Weg zu begleiten.",
+    },
   },
 ];
 
