@@ -46,7 +46,7 @@ export function Logo({
           )}
         >
           {/* Zeile 1: „WERDE MEISTER“ – schlank & gesperrt, „Meister“ in Gold */}
-          <span className="font-sans text-[1.05rem] font-light uppercase leading-none tracking-[0.2em]">
+          <span className="font-display text-[1.12rem] font-normal uppercase leading-none tracking-[0.1em]">
             Werde{" "}
             <span className={tone === "onDark" ? "text-gold-300" : "text-gold-500"}>
               Meister
@@ -62,7 +62,7 @@ export function Logo({
                 tone === "onDark" ? "bg-gold-300/80" : "bg-gold-500/80",
               )}
             />
-            <span className="font-sans text-[0.52rem] font-normal uppercase leading-none tracking-[0.34em]">
+            <span className="font-display text-[0.54rem] font-normal uppercase leading-none tracking-[0.24em]">
               Deiner Gedanken
             </span>
             <span
