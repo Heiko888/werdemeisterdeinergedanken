@@ -12,7 +12,7 @@ export function CookieSettingsButton() {
     <button
       type="button"
       onClick={() => window.dispatchEvent(new Event(OPEN_CONSENT_EVENT))}
-      className="text-left text-sm text-mist-300/70 transition-colors hover:text-white"
+      className="inline-flex min-h-11 items-center text-left text-sm text-mist-300/70 transition-colors hover:text-white"
     >
       Cookie-Einstellungen
     </button>

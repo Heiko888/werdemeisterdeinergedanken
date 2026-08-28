@@ -51,7 +51,7 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "w-full rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 focus:border-accent focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+    "w-full rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
   if (status === "done") {
     return (
@@ -147,7 +147,11 @@ export function ContactForm() {
       </div>
 
       <label className="flex items-start gap-2 text-xs text-ink-muted">
-        <input type="checkbox" required className="mt-0.5 accent-brand-500" />
+        <input
+          type="checkbox"
+          required
+          className="mt-0.5 h-5 w-5 shrink-0 accent-brand-500"
+        />
         <span>
           Ich habe die{" "}
           <a href="/datenschutz" className="underline hover:text-ink">

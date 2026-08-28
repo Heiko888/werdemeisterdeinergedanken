@@ -31,7 +31,10 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={cn("group inline-flex items-center gap-3 rounded-xl", className)}
+      className={cn(
+        "group inline-flex min-h-11 items-center gap-3 rounded-xl py-1",
+        className,
+      )}
       aria-label="Werde Meister deiner Gedanken – Startseite"
     >
       <LogoMark className="transition-transform duration-300 group-hover:scale-105" />
