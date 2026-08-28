@@ -42,6 +42,27 @@ const CHAPTER_HERO_IMAGES: Record<string, string> = {
   "26-placebo-nocebo-und-erwartung": "/hero-placebo.webp",
 };
 
+// Optionaler Bildausschnitt (object-position) pro Kapitel – nur wo der mittige
+// object-cover-Zuschnitt das Motiv (Kopf/Gehirn) anschneiden würde. Fehlt ein
+// Eintrag, bleibt es beim Standard „center".
+const CHAPTER_HERO_POSITIONS: Record<string, string> = {
+  "01-neuroanatomie-aufbau-des-gehirns": "center 15%",
+  "06-aufmerksamkeit-und-wahrnehmung": "center 22%",
+  "08-gedaechtnis-und-lernen": "center 15%",
+  "09-emotionen-und-limbisches-system": "center 15%",
+  "18-konditionierung-und-lernen": "center 22%",
+  "23-sprache-und-denken": "left 22%",
+  "12-veraenderte-bewusstseinszustaende": "left center",
+  "20-gehirngesundheit-schlaf-bewegung-ernaehrung": "left center",
+  "22-gehirn-und-koerper-interozeption": "center 22%",
+  "13-kognitive-verzerrungen-und-selbsttaeuschung": "center 15%",
+  "17-das-selbst-und-identitaet": "center 22%",
+  "19-das-soziale-gehirn-und-beeinflussung": "center 22%",
+  "24-psychische-gesundheit-neurowissenschaftlich": "center 22%",
+  "25-ki-maschinen-und-bewusstsein": "center 22%",
+  "26-placebo-nocebo-und-erwartung": "right 22%",
+};
+
 // Alle Kapitel plus die Glossar-Sonderseite werden zur Build-Zeit erzeugt.
 export function generateStaticParams() {
   return [...chapterSlugs(), "glossar"].map((slug) => ({ slug }));
@@ -89,6 +110,7 @@ export default async function WissenDocPage({
         title={doc.title}
         intro={doc.lead || undefined}
         image={CHAPTER_HERO_IMAGES[slug]}
+        imagePosition={CHAPTER_HERO_POSITIONS[slug]}
       />
 
       <article className="py-14 sm:py-18">
