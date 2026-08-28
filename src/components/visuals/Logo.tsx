@@ -41,24 +41,37 @@ export function Logo({
       {!compact && (
         <span
           className={cn(
-            "flex flex-col leading-none",
+            "flex flex-col gap-[0.32rem] leading-none",
             tone === "onDark" ? "text-cream" : "text-ink",
           )}
-          style={{
-            // Feine Teal-Kontur (Markenfarbe kehrt in die Schrift zurück), sitzt
-            // via paint-order HINTER der soliden Füllung, damit die Buchstaben
-            // scharf und lesbar bleiben. Hell: teal-500, Dunkel: das hellere teal-300.
-            paintOrder: "stroke fill",
-            WebkitTextStroke: `0.6px ${
-              tone === "onDark" ? "var(--color-teal-300)" : "var(--color-teal-500)"
-            }`,
-          }}
         >
-          <span className="font-sans text-[0.68rem] font-semibold uppercase tracking-[0.2em]">
-            Werde Meister deiner
+          {/* Zeile 1: „WERDE MEISTER“ – schlank & gesperrt, „Meister“ in Gold */}
+          <span className="font-display text-[1.12rem] font-normal uppercase leading-none tracking-[0.1em]">
+            Werde{" "}
+            <span className={tone === "onDark" ? "text-gold-300" : "text-gold-500"}>
+              Meister
+            </span>
           </span>
-          <span className="font-sans text-[1.02rem] font-bold uppercase leading-none tracking-[0.12em]">
-            Gedanken
+          {/* Zeile 2: „DEINER GEDANKEN“ – kleiner, weit gesperrt, mit goldenen
+              Flankier-Strichen (rein dekorativ). */}
+          <span className="flex items-center gap-2">
+            <span
+              aria-hidden
+              className={cn(
+                "h-px w-3 shrink-0",
+                tone === "onDark" ? "bg-gold-300/80" : "bg-gold-500/80",
+              )}
+            />
+            <span className="font-display text-[0.54rem] font-normal uppercase leading-none tracking-[0.24em]">
+              Deiner Gedanken
+            </span>
+            <span
+              aria-hidden
+              className={cn(
+                "h-px w-3 shrink-0",
+                tone === "onDark" ? "bg-gold-300/80" : "bg-gold-500/80",
+              )}
+            />
           </span>
         </span>
       )}
