@@ -21,6 +21,11 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
  * erhalten bleibt. Nützlich, wenn das Motiv nicht mittig sitzt (z. B. ein Arm am
  * linken Rand), der sonst auf schmalen/hohen Containern weggeschnitten würde.
  * Standard ist "center".
+ *
+ * Optional mit `imageClassName` (zusätzliche Klassen aufs Bild, z. B.
+ * `saturate-125 brightness-110`): lässt ein dunkles/blasses Motiv kräftiger
+ * wirken. Optional mit `overlayClassName`: ersetzt den Standard-Navy-Schleier,
+ * um bei einem farbigen Motiv weniger abzudunkeln (Text bleibt hell auf dunkel).
  */
 export function PageHero({
   eyebrow,
@@ -28,6 +33,8 @@ export function PageHero({
   intro,
   image,
   imagePosition,
+  imageClassName,
+  overlayClassName = "from-navy-900/85 via-navy-900/82 to-navy-900/90",
   fadeToColor,
   children,
 }: {
@@ -36,6 +43,8 @@ export function PageHero({
   intro?: ReactNode;
   image?: string;
   imagePosition?: string;
+  imageClassName?: string;
+  overlayClassName?: string;
   fadeToColor?: string;
   children?: ReactNode;
 }) {
@@ -59,12 +68,12 @@ export function PageHero({
             fill
             priority
             sizes="100vw"
-            className="z-0 object-cover"
+            className={`z-0 object-cover${imageClassName ? ` ${imageClassName}` : ""}`}
             style={imagePosition ? { objectPosition: imagePosition } : undefined}
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-navy-900/85 via-navy-900/82 to-navy-900/90"
+            className={`pointer-events-none absolute inset-0 z-0 bg-gradient-to-b ${overlayClassName}`}
           />
         </>
       )}

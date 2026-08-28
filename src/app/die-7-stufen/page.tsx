@@ -27,6 +27,8 @@ export default function SevenStagesPage() {
         }
         intro="Ein klarer, aufeinander aufbauender Weg. Jede Stufe bringt dich näher an einen Zustand, in dem du deine Gedanken nicht mehr erleidest, sondern bewusst gestaltest."
         image="/hero-7-stufen.webp"
+        imageClassName="saturate-[1.35] brightness-110 contrast-105"
+        overlayClassName="from-navy-900/70 via-navy-900/58 to-navy-900/78"
         fadeToColor="var(--color-navy-950)"
       >
         <div className="mt-2 flex flex-col gap-3 sm:flex-row">
