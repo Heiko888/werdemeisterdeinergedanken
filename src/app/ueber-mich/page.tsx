@@ -6,6 +6,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { PhotoFrame } from "@/components/ui/PhotoFrame";
+import { SeamFade } from "@/components/ui/SeamFade";
 import { values } from "@/lib/content";
 import { withCanonical } from "@/lib/seo";
 
@@ -51,9 +52,10 @@ export default function AboutPage() {
         intro="Begleiter für mentale Entprogrammierung. Ich helfe Menschen, den Lärm im Kopf zu verstehen, alte Programme zu lösen und wieder selbst am Steuer zu sitzen."
         image="/ueber-heiko-berg.webp"
         imagePosition="30% 15%"
+        fadeToColor="var(--color-paper)"
       />
 
-      <section className="py-12 sm:py-16">
+      <section className="bg-paper-aura grain-soft relative py-12 sm:py-16">
         <Container className="grid items-center gap-14 lg:grid-cols-[1fr_0.8fr]">
           <Reveal>
             <div className="flex flex-col items-start gap-5">
@@ -104,7 +106,8 @@ export default function AboutPage() {
       </section>
 
       {/* Meilensteine – vertikale Timeline mit gefüllten Markern */}
-      <section className="bg-surface-2 py-16 sm:py-24">
+      <section className="bg-surface-aura grain-soft relative isolate py-16 sm:py-24">
+        <SeamFade edge="bottom" tone="deep" />
         <Container size="narrow">
           <Eyebrow>Mein Weg</Eyebrow>
           <ol className="relative mt-10">
