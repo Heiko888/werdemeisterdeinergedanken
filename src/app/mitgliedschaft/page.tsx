@@ -158,14 +158,14 @@ export default async function MitgliedschaftPage({
               className="absolute inset-[-8%] -z-10 rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 22%, transparent), transparent 62%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 22%, transparent), transparent 62%)",
               }}
             />
             <Image
               src={brainLogo}
               alt="Werde Meister deiner Gedanken – Logo"
               priority
-              className="mx-auto w-[min(400px,78vw)] drop-shadow-[0_10px_60px_rgba(52,196,196,0.35)]"
+              className="logo-gold mx-auto w-[min(400px,78vw)] drop-shadow-[0_10px_60px_rgba(217,169,58,0.35)]"
             />
           </div>
         </div>
