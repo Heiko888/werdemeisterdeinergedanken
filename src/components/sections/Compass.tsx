@@ -15,7 +15,11 @@ const benefits = [
 
 export function Compass() {
   return (
-    <section className="bg-surface-aura grain-soft relative py-16 sm:py-32">
+    <section className="relative isolate overflow-hidden bg-cosmic on-dark py-16 sm:py-32">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
+      />
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal className="order-2 lg:order-1">
           <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
