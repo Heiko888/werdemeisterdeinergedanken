@@ -45,7 +45,17 @@ export function LessonHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="member-hero overflow-hidden py-14 sm:py-16">
+    <section
+      className={`member-hero overflow-hidden ${
+        image
+          ? // Mit Hintergrundbild: feste Mindesthöhe und vertikal zentrierter
+            // Inhalt, damit das querformatige Motiv als vollwertiges Herobild
+            // wirkt und nicht auf einen schmalen Streifen zusammenschrumpft –
+            // wie bei PageHero.
+            "flex flex-col justify-center min-h-[22rem] py-14 sm:min-h-[34rem] sm:py-16"
+          : "py-14 sm:py-16"
+      }`}
+    >
       {image && (
         <>
           <Image
