@@ -39,8 +39,20 @@ export default function SevenStagesPage() {
         </div>
       </PageHero>
 
-      {/* Der leuchtende Pfad – dunkles Kontrast-Band (das Herzstück der Seite) */}
-      <section className="relative isolate overflow-hidden bg-cosmic py-16 text-cream sm:py-24">
+      {/* Der leuchtende Pfad – dunkles Kontrast-Band (das Herzstück der Seite).
+          Seitenspezifisch kräftigere Glows als das globale .bg-cosmic: die
+          Teal-/Blau-/Lind-Schimmer sind hier bewusst gesättigter, damit der
+          Hintergrund auf dieser Kern-Seite lebendiger wirkt. */}
+      <section
+        className="relative isolate overflow-hidden py-16 text-cream sm:py-24"
+        style={{
+          background:
+            "radial-gradient(62% 52% at 12% 4%, color-mix(in oklab, var(--color-teal-500) 36%, transparent) 0%, transparent 62%)," +
+            "radial-gradient(58% 48% at 90% 8%, color-mix(in oklab, var(--color-brand-500) 38%, transparent) 0%, transparent 58%)," +
+            "radial-gradient(56% 48% at 60% 100%, color-mix(in oklab, var(--color-leaf-500) 26%, transparent) 0%, transparent 60%)," +
+            "var(--color-navy-950)",
+        }}
+      >
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
@@ -100,8 +112,18 @@ export default function SevenStagesPage() {
         </Container>
       </section>
 
-      {/* Abschluss-CTA – heller Release nach dem dunklen Pfad */}
-      <section className="bg-surface-aura grain-soft relative py-16 sm:py-24">
+      {/* Abschluss-CTA – heller Release nach dem dunklen Pfad.
+          Seitenspezifisch kräftigere Aura als das globale .bg-surface-aura,
+          damit der Farbklang zum verstärkten Stufen-Band passt. */}
+      <section
+        className="grain-soft relative py-16 sm:py-24"
+        style={{
+          background:
+            "radial-gradient(66% 56% at 90% -8%, color-mix(in oklab, var(--color-brand-500) 24%, transparent), transparent 62%)," +
+            "radial-gradient(58% 52% at 8% 108%, color-mix(in oklab, var(--color-teal-500) 20%, transparent), transparent 60%)," +
+            "var(--color-surface-2)",
+        }}
+      >
         <Container size="narrow">
           <div className="flex flex-col items-center gap-5 text-center">
             <h2 className="font-display text-2xl italic text-ink sm:text-3xl">
