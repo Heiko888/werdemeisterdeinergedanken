@@ -13,7 +13,7 @@ const iconMap = {
 
 export function WhatToExpect() {
   return (
-    <section className="bg-surface-aura grain-soft relative isolate overflow-hidden py-16 sm:py-32">
+    <section className="bg-surface-aura grain-soft relative isolate overflow-hidden border-b border-ink/10 py-16 sm:py-32">
       <Container className="relative z-10">
         <Reveal>
           <SectionHeading

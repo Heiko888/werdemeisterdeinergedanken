@@ -43,7 +43,7 @@ export function SevenStages() {
   return (
     <section
       id="angebot"
-      className="bg-paper-aura grain-soft relative isolate overflow-hidden py-16 sm:py-32"
+      className="bg-paper-aura grain-soft relative isolate overflow-hidden border-b border-ink/10 py-16 sm:py-32"
     >
       <Container className="relative z-10">
         <Reveal>
