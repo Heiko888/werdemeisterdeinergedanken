@@ -61,7 +61,7 @@ const CTA_BY_VARIANT: Record<CtaVariant, Cta> = {
   },
   ebook: {
     title: "Der kompakte Einstieg – kostenlos",
-    body: "Die wichtigsten Mechanismen und die 7 Stufen auf einen Blick. Hol dir das kostenlose E-Book „Die 7 Stufen kompakt“ – sofort per E-Mail.",
+    body: "Die wichtigsten Mechanismen und die 7 Stufen auf einen Blick. Hol dir das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ – sofort per E-Mail.",
     href: "/#ebook",
     label: "E-Book gratis sichern",
   },
@@ -292,7 +292,7 @@ export default async function BlogPostPage({
                 Heiko Schwaninger
               </span>
               <span className="text-sm text-ink-mid">
-                Begleiter für Bewusstseinsentwicklung
+                Begleiter für mentale Entprogrammierung
               </span>
             </div>
           </div>
