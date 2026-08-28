@@ -101,7 +101,7 @@ export default function SevenStagesPage() {
       </section>
 
       {/* Abschluss-CTA – heller Release nach dem dunklen Pfad */}
-      <section className="bg-surface-2 py-16 sm:py-24">
+      <section className="bg-surface-aura grain-soft relative py-16 sm:py-24">
         <Container size="narrow">
           <div className="flex flex-col items-center gap-5 text-center">
             <h2 className="font-display text-2xl italic text-ink sm:text-3xl">

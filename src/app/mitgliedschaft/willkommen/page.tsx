@@ -39,7 +39,7 @@ export default function WillkommenPage() {
         intro="Deine Mitgliedschaft ist aktiv. Nur noch ein kleiner Schritt, dann kann es losgehen."
       />
 
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-paper-aura grain-soft relative py-16 sm:py-24">
         <Container size="narrow">
           <Reveal>
             <ol className="flex flex-col gap-6">

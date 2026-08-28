@@ -52,7 +52,7 @@ export default function BewusstseinstestPage() {
       </section>
 
       {/* Test */}
-      <section className="py-12 sm:py-16">
+      <section className="bg-paper-aura grain-soft relative py-12 sm:py-16">
         <ConsciousnessTest />
       </section>
     </>

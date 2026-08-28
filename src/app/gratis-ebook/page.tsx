@@ -146,7 +146,7 @@ export default function GratisEbookPage() {
       </section>
 
       {/* Das steckt drin: die 7 Stufen als Vorschau */}
-      <section className="py-16 sm:py-28">
+      <section className="bg-paper-aura grain-soft relative py-16 sm:py-28">
         <Container>
           <SectionHeading
             align="center"
@@ -189,7 +189,7 @@ export default function GratisEbookPage() {
       </section>
 
       {/* So kommst du an dein E-Book: der Ablauf in 3 Schritten */}
-      <section className="border-t border-ink/10 bg-surface-2 py-16 sm:py-28">
+      <section className="bg-surface-aura grain-soft relative border-t border-ink/10 py-16 sm:py-28">
         <Container>
           <SectionHeading
             align="center"
@@ -227,7 +227,7 @@ export default function GratisEbookPage() {
       </section>
 
       {/* Wer dahintersteht – kurze Vertrauensbrücke */}
-      <section className="py-16 sm:py-28">
+      <section className="bg-paper-aura grain-soft relative py-16 sm:py-28">
         <Container size="narrow">
           <Reveal>
             <Card className="flex flex-col items-center gap-6 text-center sm:flex-row sm:text-left">

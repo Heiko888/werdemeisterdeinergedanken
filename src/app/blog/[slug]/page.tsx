@@ -314,7 +314,7 @@ export default async function BlogPostPage({
 
       {/* Weitere Artikel */}
       {more.length > 0 && (
-        <section className="border-t border-ink/10 bg-white py-16 sm:py-20">
+        <section className="bg-surface-aura grain-soft relative border-t border-ink/10 py-16 sm:py-20">
           <Container>
             <h2 className="mb-8 font-display text-2xl font-medium text-ink">
               Weitere Impulse

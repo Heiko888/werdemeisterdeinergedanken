@@ -15,7 +15,7 @@ export default function PrivacyPage() {
   return (
     <>
       <PageHero title="Datenschutz" />
-      <section className="pb-8">
+      <section className="bg-paper-aura grain-soft relative pb-8">
         <Container size="narrow">
           <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-card sm:p-10">
             <Prose>
