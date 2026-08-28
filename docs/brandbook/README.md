@@ -20,7 +20,7 @@ an einem Ort fest.
 | 03 | [Logo](./03-logo.md) | Emblem, Wortmarke, Varianten, Schutzraum, Don'ts |
 | 04 | [Farben](./04-farben.md) | Vollständige Farbpalette mit Design-Tokens |
 | 05 | [Typografie](./05-typografie.md) | Fraunces & Inter, Hierarchie, Anwendung |
-| 06 | [Bildwelt & Grafik](./06-bildwelt.md) | Kosmischer Look, Verläufe, Glow, Bildsprache |
+| 06 | [Bildwelt & Grafik](./06-bildwelt.md) | Realistisch-cinematisch, Verläufe, Glow, Bildsprache |
 | 07 | [Anwendungen](./07-anwendungen.md) | Social Media, Vorlagen, Asset-Formate, Generatoren |
 | 08 | [Struktur & Quellen der Wahrheit](./08-struktur.md) | Wo im Repo welche Markenelemente definiert sind |
 
@@ -45,8 +45,9 @@ nachgezogen. So bleiben Doku und Umsetzung konsistent.
 - **Inhaber/Autor:** Heiko Schwaninger
 - **Claim / Tagline:** Bewusstseinsentwicklung in 7 Stufen
 - **Domain:** www.werdemeisterdeinergedanken.de
-- **Kern-Look:** Tiefes Mitternachtsblau + kosmische Weite, Marken-Signatur
-  Lindgrün → Türkis (aus dem Logo), edle Serifen-Headlines
+- **Kern-Look:** Ruhiges Anthrazit/Navy (realistisch-cinematisch), tragende
+  Marken-Signatur in warmem Gold, Teal als Bewusstseins-Akzent, edle
+  Serifen-Headlines
 - **Schriften:** Fraunces (Headlines) · Inter (Fließtext)
 
 ---

@@ -25,33 +25,30 @@ import { QUOTES, FACTS } from "./content-data.mjs";
 import { ARROW } from "../_glyphs.mjs";
 
 // ---------- gemeinsame Marken-Optik ----------------------------------------
+// Realistisch-cinematische Bildwelt: Anthrazit-Basis (#090b10, an globals.css
+// navy-950 angeglichen), ruhige Tiefe statt Kosmos. Führender Teal-Schimmer
+// (Bewusstsein), Königsblau stark zurückgenommen, dezenter Gold-Akzent
+// (Erkenntnis). KEIN Sternenfeld mehr.
 const BG = `
 .bg{position:absolute;inset:0;background:
-  radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
-  radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
-  radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
-  #08102a;}
-.stars{position:absolute;inset:0;background-image:
-  radial-gradient(1.6px 1.6px at 20% 30%,rgba(255,255,255,.7),transparent),
-  radial-gradient(1.5px 1.5px at 68% 22%,rgba(255,255,255,.5),transparent),
-  radial-gradient(1.3px 1.3px at 82% 62%,rgba(180,210,255,.55),transparent),
-  radial-gradient(1.2px 1.2px at 55% 48%,rgba(255,255,255,.45),transparent),
-  radial-gradient(1.4px 1.4px at 90% 38%,rgba(200,180,255,.5),transparent),
-  radial-gradient(1.1px 1.1px at 44% 74%,rgba(255,255,255,.4),transparent);}`;
+  radial-gradient(52% 110% at 86% 10%, rgba(33,178,189,.20), transparent 60%),
+  radial-gradient(46% 110% at 6% 96%, rgba(54,112,238,.10), transparent 60%),
+  radial-gradient(42% 90% at 74% 92%, rgba(217,169,58,.12), transparent 60%),
+  #090b10;}`;
 
 const shell = (w, h, extra, body) => `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
-body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#08102a}
+body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10}
 ${BG}
 .brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(52,196,196,.45))}
 .glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.35), transparent 66%);filter:blur(30px)}
 .wordmark{font-weight:800;text-transform:uppercase;color:rgba(244,242,236,.92)}
-.wordmark span{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
-.url{font-weight:700;color:#a3d64f;letter-spacing:.3px}
+.wordmark span{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.url{font-weight:700;color:#e8c15f;letter-spacing:.3px}
 .eyebrow{font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#34c4c4}
 ${extra}
-</style></head><body><div class="bg"></div><div class="stars"></div>${body}</body></html>`;
+</style></head><body><div class="bg"></div>${body}</body></html>`;
 
 // ---------- Layouts ---------------------------------------------------------
 
@@ -82,7 +79,7 @@ const thumbnail = (w, h, data) => shell(w, h, `
 .wrap{position:absolute;left:64px;top:50%;transform:translateY(-50%);width:${w-640}px}
 .eyebrow{font-size:23px;margin-bottom:20px}
 .title{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:62px;line-height:1.06;letter-spacing:-.5px}
-.title em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.title em{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .kicker{margin-top:24px;font-size:24px;font-weight:700;color:rgba(244,242,236,.72);line-height:1.3}
 .glow{right:100px;top:50%;transform:translateY(-50%);width:${Math.round(h*0.6)}px;height:${Math.round(h*0.6)}px}
 .brain{position:absolute;right:120px;top:50%;transform:translateY(-50%);width:${Math.round(h*0.6)}px;height:${Math.round(h*0.6)}px}
@@ -99,16 +96,11 @@ const thumbnail = (w, h, data) => shell(w, h, `
 // Text; weiche Tiefe im Hintergrund (Glow, keine konkreten Motive).
 const quoteTile = (w, h, q) => shell(w, h, `
 .aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.10), rgba(52,196,196,0) 66%);filter:blur(46px)}
-.qstars{position:absolute;inset:0;background-image:
-  radial-gradient(2.4px 2.4px at 16% 23%, rgba(255,255,255,.5), transparent),
-  radial-gradient(1.7px 1.7px at 79% 15%, rgba(185,222,255,.45), transparent),
-  radial-gradient(2.8px 2.8px at 29% 83%, rgba(255,255,255,.4), transparent),
-  radial-gradient(1.6px 1.6px at 89% 71%, rgba(200,240,235,.5), transparent),
-  radial-gradient(2px 2px at 62% 90%, rgba(255,255,255,.34), transparent);}
+.qstars{display:none}
 .qmark{position:absolute;left:50%;top:${Math.round(h*0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w*0.6)}px;line-height:.62;color:rgba(130,210,215,.095);pointer-events:none}
 .qwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.3)}px;text-align:center}
 .quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.067)}px;line-height:1.32;letter-spacing:-.3px}
-.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px}
 .foot img{width:${Math.round(w*0.037)}px;height:${Math.round(w*0.037)}px;object-fit:contain;opacity:.88}
 .foot .t{font-size:${Math.round(w*0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.62)}
@@ -121,18 +113,13 @@ const quoteTile = (w, h, q) => shell(w, h, `
 // nur mit Eyebrow + Quellenzeile statt Anführungszeichen.
 const factTile = (w, h, f) => shell(w, h, `
 .aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.10), rgba(52,196,196,0) 66%);filter:blur(46px)}
-.qstars{position:absolute;inset:0;background-image:
-  radial-gradient(2.4px 2.4px at 16% 23%, rgba(255,255,255,.5), transparent),
-  radial-gradient(1.7px 1.7px at 79% 15%, rgba(185,222,255,.45), transparent),
-  radial-gradient(2.8px 2.8px at 29% 83%, rgba(255,255,255,.4), transparent),
-  radial-gradient(1.6px 1.6px at 89% 71%, rgba(200,240,235,.5), transparent),
-  radial-gradient(2px 2px at 62% 90%, rgba(255,255,255,.34), transparent);}
+.qstars{display:none}
 .fwrap{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.24)}px;text-align:center}
 .eyebrow{font-size:${Math.round(w*0.024)}px;letter-spacing:.22em;margin-bottom:${Math.round(w*0.045)}px}
 .fact{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.064)}px;line-height:1.3;letter-spacing:-.3px}
-.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
 .src{margin-top:${Math.round(w*0.045)}px;font-size:${Math.round(w*0.026)}px;line-height:1.4;color:rgba(244,242,236,.55)}
-.src b{color:rgba(163,214,79,.9);font-weight:700}
+.src b{color:rgba(232,193,95,.9);font-weight:700}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px}
 .foot img{width:${Math.round(w*0.037)}px;height:${Math.round(w*0.037)}px;object-fit:contain;opacity:.88}
 .foot .t{font-size:${Math.round(w*0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.62)}
@@ -162,9 +149,9 @@ const ebookPost = (w, h) => {
 .bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.82)}px;height:${Math.round(bookHsq*0.82)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.24), transparent 68%);filter:blur(44px)}
 .book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(0 24px 58px rgba(0,0,0,.62))}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.06)}px;line-height:1.16;letter-spacing:-.5px;max-width:98%}
-.h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.h em{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .ctaGroup{display:flex;flex-direction:column;align-items:center;gap:${b(0.007)}px;margin-top:${b(0.006)}px}
-.cta{padding:${b(0.019)}px ${b(0.042)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.01em}
+.cta{padding:${b(0.019)}px ${b(0.042)}px;border-radius:999px;background:linear-gradient(100deg,#f2d489,#e8c15f);color:#241a06;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.01em}
 .cta-note{font-size:${b(0.023)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,242,236,.68)}
 `, `<div class="post">
   <div class="eyebrow">Dein Gratis-Einstieg</div>
@@ -184,14 +171,14 @@ const ebookPost = (w, h) => {
   const bookW = Math.round(bookH / 1.37);
   const common = `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
-.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.35)}px;height:${Math.round(bookW*1.35)}px;border-radius:50%;background:radial-gradient(circle, rgba(163,214,79,.26), transparent 68%);filter:blur(38px)}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.35)}px;height:${Math.round(bookW*1.35)}px;border-radius:50%;background:radial-gradient(circle, rgba(232,193,95,.24), transparent 68%);filter:blur(38px)}
 .book{position:relative;width:auto;height:${bookH}px;filter:drop-shadow(0 22px 50px rgba(0,0,0,.55))}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px}
-.h em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.h em{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .bul{display:flex;flex-direction:column;gap:${b(0.022)}px}
 .bul .li{display:flex;align-items:center;gap:${b(0.016)}px;font-size:${b(0.031)}px;color:rgba(244,242,236,.84)}
-.bul .ck{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:${b(0.042)}px;height:${b(0.042)}px;border-radius:50%;background:rgba(163,214,79,.16);color:#a3d64f;font-size:${b(0.024)}px;font-weight:800}
-.cta{align-self:${land ? "flex-start" : "center"};padding:${b(0.024)}px ${b(0.05)}px;border-radius:999px;background:linear-gradient(100deg,#a3d64f,#34c4c4);color:#06222a;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.02em}
+.bul .ck{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:${b(0.042)}px;height:${b(0.042)}px;border-radius:50%;background:rgba(232,193,95,.16);color:#e8c15f;font-size:${b(0.024)}px;font-weight:800}
+.cta{align-self:${land ? "flex-start" : "center"};padding:${b(0.024)}px ${b(0.05)}px;border-radius:999px;background:linear-gradient(100deg,#f2d489,#e8c15f);color:#241a06;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.02em}
 .url{font-size:${b(0.026)}px}`;
 
   if (land) {
@@ -263,7 +250,7 @@ const storyPost = (w, h) => {
 .brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.32), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
 .brain{position:relative;width:${brainSize}px;height:${brainSize}px}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
-.h .g{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.h .g{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
 .sub{font-size:${b(0.033)}px;line-height:1.42;color:rgba(244,242,236,.80)}
 .url{font-size:${b(0.028)}px}`;
 

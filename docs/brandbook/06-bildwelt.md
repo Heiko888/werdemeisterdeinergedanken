@@ -2,30 +2,48 @@
 
 ## Grundstimmung
 
-Die visuelle Welt von WMDG ist **kosmisch, ruhig und tief**: ein nächtlicher
-Sternenhimmel über tiefem Mitternachtsblau, aus dem heraus die
-Marken-Signatur (Lindgrün → Türkis) und das Gehirn-Emblem leuchten. Sie
-übersetzt „Weite des Bewusstseins" und „Klarheit im Dunkel".
+Die visuelle Welt von WMDG ist **realistisch, cinematisch und ruhig**:
+glaubwürdige Situationen und Motive über tiefem **Anthrazit/Navy**, aus dem
+heraus ein Teal-Fokuslicht (Bewusstsein) und warmes Gold (Erkenntnis)
+leuchten. Reale Präsenz statt Abstraktion – „Klarheit im eigenen Kopf" statt
+mystischer Weite.
+
+> **Kurswechsel (2026):** Der frühere kosmische Look (Sternenfelder,
+> spirituelle Violett-Sphären, „Weltraum"-Tiefe) ist bewusst aufgegeben. Er
+> passte nicht zur Haltung „ohne Esoterik-Floskeln". Sternenfelder sind
+> deaktiviert, `cosmic-violet` ist entfallen, Navy ist zu Anthrazit
+> entsättigt.
 
 ## Die vier Bausteine des Looks
 
-Quelle: `docs/marketing/brand-assets.mjs` (`BG`, `shell`, Glow/Stars).
+Quelle: `docs/marketing/brand-assets.mjs` (`BG`, `shell`, Glow) und
+`src/app/globals.css` (`.bg-cosmic`).
 
-1. **Kosmischer Hintergrund** – Basisfarbe `#08102a` (navy-900) mit weichen
-   Radial-Verläufen in Türkis, Königsblau und dezentem Lindgrün:
+1. **Anthrazit-Grund** – Basisfarbe `#090b10` (navy-950) mit sehr dezenten
+   Radial-Verläufen: führendes Teal (Bewusstsein), stark zurückgenommenes
+   Königsblau, ein warmer Gold-Schimmer (Erkenntnis):
    ```css
    background:
-     radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
-     radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
-     radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
-     #08102a;
+     radial-gradient(52% 110% at 86% 10%, rgba(33,178,189,.20), transparent 60%),
+     radial-gradient(46% 110% at 6% 96%, rgba(54,112,238,.10), transparent 60%),
+     radial-gradient(42% 90% at 74% 92%, rgba(217,169,58,.12), transparent 60%),
+     #090b10;
    ```
-2. **Sternenfeld** – feine, unregelmäßig verteilte Punkte
-   (weiß/blau/violett getönt), sehr dezent.
-3. **Glow** – weicher radialer Türkis-Schein hinter Emblem/Motiven
-   (`rgba(52,196,196,.35)`, `filter: blur(...)`).
-4. **Marken-Verlauf** – Lindgrün → Türkis (`linear-gradient(100deg,#a3d64f,#34c4c4)`)
-   für Akzentwörter, CTAs und die Wortmarke.
+2. **Kein Sternenfeld** – die Sterne sind entfernt; die Tiefe entsteht aus
+   Anthrazit + weichem Fokuslicht, nicht aus „Weltraum".
+3. **Fokus-Glow** – weicher radialer Teal-Schein hinter Emblem/Motiven
+   (`rgba(52,196,196,.35)`, `filter: blur(...)`) – Licht als Fokus, dezent.
+4. **Gold-Signatur** – warmes Gold (`linear-gradient(100deg,#f2d489,#e8c15f)`)
+   für Akzentwörter, CTAs und die Wortmarke; Teal bleibt der Eyebrow-/
+   Bewusstseins-Akzent.
+
+## Motiv-Kanon (wiederkehrende Bildmotive)
+
+Statt kosmischer Sphären trägt die Bildwelt einen festen Satz **realistischer,
+cinematischer Motive**: **Gehirn / neuronales Netz**, **Kompass / Orientierung**,
+**Licht & Fokus**, **Weg / Entwicklung**, **Spiegel / Beobachter** und der
+**Mensch in realer Situation**. Sie kehren wieder, bleiben aber subtil – nie
+plakativ, nie esoterisch.
 
 ## Emblem in der Bildwelt
 
@@ -36,7 +54,7 @@ Key-Visual – zentriert (Avatar), als Säule (Story) oder rechts als Motiv
 ## Fotografie — Richtlinie „Heiko im Zentrum"
 
 **Leitprinzip:** Die echte Person **Heiko trägt die Marke.** Vertrauen entsteht
-über sein Gesicht und seine Präsenz; der kosmische Marken-Look bildet den
+über sein Gesicht und seine Präsenz; der ruhige Anthrazit-Marken-Look bildet den
 **Rahmen** (Hintergrund, Glow, Emblem, Overlays) – nicht umgekehrt. Menschen
 folgen einem Menschen, nicht einer Abstraktion.
 
@@ -50,7 +68,7 @@ folgen einem Menschen, nicht einer Abstraktion.
 2. **Themen-Heros (Priorität 2)** — kuratierte Motive je Inhaltsthema
    (`public/hero-*.webp`) zu Bewusstseins-/Neuro-Themen. Unterstützen den
    Inhalt, ersetzen aber nicht die Person.
-3. **Kosmische Key-Visuals (Priorität 3)** — Emblem + Marken-Look, wenn kein
+3. **Marken-Key-Visuals (Priorität 3)** — Emblem + Marken-Look, wenn kein
    Foto passt (Zitate, abstrakte Botschaften).
 
 ### Bildstil & Farbstimmung
@@ -63,7 +81,7 @@ folgen einem Menschen, nicht einer Abstraktion.
 
 ### Freisteller & Komposition
 
-- Heiko bevorzugt **freigestellt** vor kosmischem Hintergrund oder mit
+- Heiko bevorzugt **freigestellt** vor ruhigem Anthrazit-Hintergrund oder mit
   klarem Freiraum für Wortmarke/Claim/CTA.
 - Blickrichtung/Freiraum so wählen, dass Text (Eyebrow → Headline → CTA) Platz
   hat; Person nicht vom Text überdecken.
@@ -80,7 +98,7 @@ der Text konsistent im Marken-Look.
 - Keine generischen Stockfotos, die Heiko/die Marke nicht repräsentieren.
 - Keine grellen Filter oder unnatürlichen Hauttöne.
 - Person nicht in unruhige, kontrastarme Hintergründe „ertränken".
-- Kosmischen Look nicht die Person überstrahlen lassen – er rahmt, er dominiert nicht.
+- Den Marken-Look nicht die Person überstrahlen lassen – er rahmt, er dominiert nicht.
 
 ## Wiederkehrende CSS-Bausteine (Web)
 
@@ -88,7 +106,7 @@ Quelle: `src/app/globals.css`.
 
 - `.text-gradient`, `.text-gradient-leaf` – Marken-Verläufe für Text.
 - `.glass`, `.glass-strong` – milchige Glas-Flächen auf Dunkel.
-- Kosmische Hintergründe/Sterne als Layer-Klassen.
+- Dunkle Anthrazit-Hintergründe/Glows als Layer-Klassen.
 - Animationen: `float`, `pulse-slow`, `drift` – dezente, langsame Bewegung
   (respektiert `prefers-reduced-motion`).
 
@@ -121,7 +139,7 @@ Quelle: `src/app/globals.css` (`--animate-*`, Keyframes).
 |-------|-----------|---------|
 | `--animate-float` | 7 s, ease-in-out, endlos | sanftes Schweben (Emblem/Orbs) |
 | `--animate-pulse-slow` | 5 s, ease-in-out, endlos | langsames Glühen/Pulsieren |
-| `--animate-drift` | 22 s, linear, endlos | sehr langsames Driften (Hintergrund/Sterne) |
+| `--animate-drift` | 22 s, linear, endlos | sehr langsames Driften (Hintergrund/Glows) |
 
 **Regeln:**
 - Lange Dauern (5–22 s), weiche Easings – nichts Schnelles/Hektisches.
@@ -132,7 +150,7 @@ Quelle: `src/app/globals.css` (`--animate-*`, Keyframes).
 
 - Keine grellen, gesättigten Vollfarbflächen als Hintergrund – die Tiefe
   (Navy + Glow) ist zentral.
-- Sterne/Glow dezent halten, nicht überladen.
+- Glow dezent halten, nicht überladen.
 - Marken-Verlauf nicht flächig als Hintergrund – er ist Akzent, kein Füller.
 
 ---
