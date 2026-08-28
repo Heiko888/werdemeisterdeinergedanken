@@ -480,7 +480,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Framing bedeutet nicht, dass alles gelogen ist. Es bedeutet, dass jede Botschaft eine Brille mitliefert. Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu haben – sondern damit, den Rahmen zu erkennen, bevor du die Bewertung darin übernimmst. Im Mitgliederbereich findest du dazu die ausführliche [Vertiefung „Framing“](/mitglieder/wissen/framing) mit Übungen; einen kompakten Einstieg in den ganzen Weg gibt dir das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Framing bedeutet nicht, dass alles gelogen ist. Es bedeutet, dass jede Botschaft eine Brille mitliefert. Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu haben – sondern damit, den Rahmen zu erkennen, bevor du die Bewertung darin übernimmst. Im Mitgliederbereich findest du dazu die ausführliche [Vertiefung „Framing“](/mitglieder/wissen/framing) mit Übungen; einen kompakten Einstieg in den ganzen Weg gibt dir das kostenlose [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -602,7 +602,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Wiederholung ist der älteste Trick der Beeinflussung – und einer der wirksamsten, gerade weil er ohne Lüge auskommt. Wer den Effekt kennt, misstraut der bloßen Vertrautheit. Mehr dazu in der [Vertiefung „Wiederholung wird zur Wahrheit“](/mitglieder/wissen/wiederholung-wahrheit) im Mitgliederbereich und im kostenlosen [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Wiederholung ist der älteste Trick der Beeinflussung – und einer der wirksamsten, gerade weil er ohne Lüge auskommt. Wer den Effekt kennt, misstraut der bloßen Vertrautheit. Mehr dazu in der [Vertiefung „Wiederholung wird zur Wahrheit“](/mitglieder/wissen/wiederholung-wahrheit) im Mitgliederbereich und im kostenlosen [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -720,7 +720,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand. Die ausführliche [Vertiefung „Propaganda & Konditionierung“](/mitglieder/wissen/propaganda) findest du im Mitgliederbereich; einen kompakten Überblick gibt das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Beeinflussung wirkt über Wiederholung, Emotion und Vereinfachung – nicht über Beweise. Wer das bemerkt, gewinnt Abstand. Die ausführliche [Vertiefung „Propaganda & Konditionierung“](/mitglieder/wissen/propaganda) findest du im Mitgliederbereich; einen kompakten Überblick gibt das kostenlose [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -1408,7 +1408,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Sich von Etiketten zu lösen heißt nicht, jede Aussage gutzuheißen. Es heißt, den Menschen wieder vom Wort zu trennen und selbst zu prüfen. Wie du diesen Reflex trainierst, zeigt dir die Vertiefung [„Sprache & Etiketten“](/mitglieder/wissen/sprache-und-etiketten) im Mitgliederbereich; einen kompakten Einstieg gibt dir das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Sich von Etiketten zu lösen heißt nicht, jede Aussage gutzuheißen. Es heißt, den Menschen wieder vom Wort zu trennen und selbst zu prüfen. Wie du diesen Reflex trainierst, zeigt dir die Vertiefung [„Sprache & Etiketten“](/mitglieder/wissen/sprache-und-etiketten) im Mitgliederbereich; einen kompakten Einstieg gibt dir das kostenlose [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -1473,7 +1473,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Die Agenda zu durchschauen macht dich nicht zum Zyniker, sondern zum aufmerksameren Zeitgenossen. Du entscheidest wieder mit, was deine Aufmerksamkeit verdient. Tiefer geht die Vertiefung [„Medien-Agenda“](/mitglieder/wissen/medien-agenda) im Mitgliederbereich; den Überblick über den ganzen Weg gibt dir das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Die Agenda zu durchschauen macht dich nicht zum Zyniker, sondern zum aufmerksameren Zeitgenossen. Du entscheidest wieder mit, was deine Aufmerksamkeit verdient. Tiefer geht die Vertiefung [„Medien-Agenda“](/mitglieder/wissen/medien-agenda) im Mitgliederbereich; den Überblick über den ganzen Weg gibt dir das kostenlose [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -1538,7 +1538,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Angst lässt sich nicht abschalten – aber du kannst lernen, aus ihrem Griff zurückzufinden, bevor du entscheidest. Wie das geht, vertieft die Vertiefung [„Angst-Steuerung“](/mitglieder/wissen/angst-steuerung) im Mitgliederbereich; passende Atem-Übungen und der ganze Weg warten im kostenlosen [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Angst lässt sich nicht abschalten – aber du kannst lernen, aus ihrem Griff zurückzufinden, bevor du entscheidest. Wie das geht, vertieft die Vertiefung [„Angst-Steuerung“](/mitglieder/wissen/angst-steuerung) im Mitgliederbereich; passende Atem-Übungen und der ganze Weg warten im kostenlosen [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -1603,7 +1603,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Fokus ist im Dauerlärm keine Selbstverständlichkeit, sondern eine Entscheidung, die du täglich neu triffst. Wie du sie trainierst, zeigt die Vertiefung [„Ablenkung“](/mitglieder/wissen/ablenkung) im Mitgliederbereich; der ruhige rote Faden durch den ganzen Weg steckt im kostenlosen [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Fokus ist im Dauerlärm keine Selbstverständlichkeit, sondern eine Entscheidung, die du täglich neu triffst. Wie du sie trainierst, zeigt die Vertiefung [„Ablenkung“](/mitglieder/wissen/ablenkung) im Mitgliederbereich; der ruhige rote Faden durch den ganzen Weg steckt im kostenlosen [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -1668,7 +1668,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Normalisierung zu bemerken heißt, die eigenen Maßstäbe bewusst zu halten, statt sie leise verschieben zu lassen. Mehr dazu in der Vertiefung [„Normalisierung“](/mitglieder/wissen/normalisierung) im Mitgliederbereich; den ganzen Weg zu mehr Klarheit bündelt das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Normalisierung zu bemerken heißt, die eigenen Maßstäbe bewusst zu halten, statt sie leise verschieben zu lassen. Mehr dazu in der Vertiefung [„Normalisierung“](/mitglieder/wissen/normalisierung) im Mitgliederbereich; den ganzen Weg zu mehr Klarheit bündelt das kostenlose [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
@@ -1733,7 +1733,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Bilder lesen zu lernen heißt nicht, nichts mehr zu glauben, sondern die Frage wieder zuzulassen, bevor das Gefühl entscheidet. Die Vertiefung [„Bildmacht“](/mitglieder/wissen/bildmacht) im Mitgliederbereich geht in die Tiefe; den ganzen Weg zu klarem Denken bündelt das kostenlose [E-Book „Die 7 Stufen kompakt“](/#ebook).",
+        text: "Bilder lesen zu lernen heißt nicht, nichts mehr zu glauben, sondern die Frage wieder zuzulassen, bevor das Gefühl entscheidet. Die Vertiefung [„Bildmacht“](/mitglieder/wissen/bildmacht) im Mitgliederbereich geht in die Tiefe; den ganzen Weg zu klarem Denken bündelt das kostenlose [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
       },
     ],
   },
