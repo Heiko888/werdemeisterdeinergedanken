@@ -36,7 +36,7 @@ export default async function DetektorPage() {
 
   return (
     <>
-      <section className="member-hero overflow-hidden py-16 sm:py-20">
+      <section className="member-hero flex flex-col justify-center overflow-hidden py-16 min-h-[22rem] sm:min-h-[34rem] sm:py-20">
         {/* Titelbild – der Puppenspieler an den Fäden: reine Dekoration hinter
             dem Text, deshalb bewusst alt="". Darüber ein Navy-Schleier (links
             am dichtesten, damit die Überschrift und der Fließtext lesbar

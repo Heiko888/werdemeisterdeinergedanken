@@ -40,7 +40,16 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="on-dark grain relative overflow-hidden bg-navy-900 pt-16 pb-14 text-cream sm:pt-32 sm:pb-24">
+    <section
+      className={`on-dark grain relative overflow-hidden bg-navy-900 text-cream ${
+        image
+          ? // Mit Hintergrundbild: feste Mindesthöhe und vertikal zentrierter
+            // Inhalt, damit das (querformatige) Motiv als vollwertiges Herobild
+            // wirkt und nicht auf einen schmalen Streifen zusammenschrumpft.
+            "flex flex-col justify-center min-h-[22rem] py-16 sm:min-h-[34rem] sm:py-24"
+          : "pt-16 pb-14 sm:pt-32 sm:pb-24"
+      }`}
+    >
       {image && (
         <>
           <Image
