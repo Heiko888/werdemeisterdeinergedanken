@@ -19,15 +19,17 @@ export function Faq({
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="bg-paper-aura grain-soft relative border-t border-ink/10 py-16 sm:py-32">
+    <section className="bg-paper-aura grain-soft relative py-16 sm:py-32">
       <Container size="narrow">
         <SectionHeading eyebrow={eyebrow} title={title} />
 
-        <div className="mt-12 flex flex-col">
+        {/* Akkordeon in einer umrandeten Karte – gibt dem FAQ-Block einen
+            Körper statt loser Zeilen auf der nackten Fläche. */}
+        <div className="mt-12 flex flex-col overflow-hidden rounded-3xl border border-gold-400/20 bg-surface px-6 shadow-card sm:px-8">
           {items.map((item, i) => {
             const isOpen = open === i;
             return (
-              <div key={item.question} className="border-t border-ink/10 last:border-b">
+              <div key={item.question} className="border-t border-ink/10 first:border-t-0">
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}

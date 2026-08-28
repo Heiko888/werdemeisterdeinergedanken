@@ -63,17 +63,18 @@ export function WhyMe() {
           </div>
         </Reveal>
 
-        {/* Werte */}
+        {/* Werte – in eine erhöhte Karte mit dezentem Gold-Ring gefasst,
+            damit die Liste nicht mehr nackt auf der Fläche liegt. */}
         <Reveal delay={120}>
-          <div className="flex flex-col gap-6">
+          <div className="glow-gold rounded-3xl border border-gold-400/25 bg-surface p-7 shadow-card sm:p-8">
             <Eyebrow>Was mich leitet</Eyebrow>
-            <ul className="flex flex-col">
+            <ul className="mt-5 flex flex-col">
               {values.map((v, i) => (
                 <li
                   key={v.title}
-                  className="flex gap-5 border-t border-ink/10 py-5 last:border-b"
+                  className="flex gap-5 border-t border-ink/10 py-5 first:border-t-0 first:pt-0 last:pb-0"
                 >
-                  <span className="font-display text-lg italic text-accent/70">
+                  <span className="font-display text-lg italic text-gold-700">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
