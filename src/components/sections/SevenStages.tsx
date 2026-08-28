@@ -45,17 +45,6 @@ export function SevenStages() {
       id="angebot"
       className="bg-paper-aura grain-soft relative isolate overflow-hidden py-16 sm:py-32"
     >
-      {/* Weicher Auslauf in die folgende dunkle „Kompass“-Sektion: der untere
-          Rand der hellen Fläche löst sich in exakt deren Grundfarbe (navy-950)
-          auf – Navy trifft Navy, keine harte Kante / kein Balken. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-28 sm:h-44"
-        style={{
-          background:
-            "linear-gradient(to bottom, transparent, var(--color-navy-950))",
-        }}
-      />
       <Container className="relative z-10">
         <Reveal>
           <SectionHeading

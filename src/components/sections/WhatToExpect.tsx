@@ -14,19 +14,6 @@ const iconMap = {
 export function WhatToExpect() {
   return (
     <section className="bg-surface-aura grain-soft relative isolate overflow-hidden py-16 sm:py-32">
-      {/* Weicher Auslauf in die folgende dunkle „Stimmen“-Sektion: der untere
-          Rand der hellen Fläche löst sich in exakt deren Grundfarbe
-          (navy-950) auf, damit Navy auf Navy trifft – keine harte Kante /
-          kein sichtbarer Balken am Übergang. Liegt in der leeren unteren
-          Sektionszone hinter dem Inhalt. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-28 sm:h-44"
-        style={{
-          background:
-            "linear-gradient(to bottom, transparent, var(--color-navy-950))",
-        }}
-      />
       <Container className="relative z-10">
         <Reveal>
           <SectionHeading
