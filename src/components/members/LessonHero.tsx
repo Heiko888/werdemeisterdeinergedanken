@@ -21,6 +21,7 @@ export function LessonHero({
   subtitle,
   watermark,
   image,
+  imagePosition,
   children,
 }: {
   eyebrow: ReactNode;
@@ -34,6 +35,12 @@ export function LessonHero({
    * Schleier für den Kontrast. Reine Dekoration – deshalb `alt=""`.
    */
   image?: string;
+  /**
+   * Optionaler `object-position`-Wert (z. B. "center 20%"), damit bei
+   * hohen Motiven der Kopf nicht vom object-cover-Zuschnitt abgeschnitten
+   * wird. Standard ist "center".
+   */
+  imagePosition?: string;
   /** Zusätzliche Elemente unter dem Titel, z. B. die Dauer-Plakette. */
   children?: ReactNode;
 }) {
@@ -49,6 +56,7 @@ export function LessonHero({
             priority
             sizes="100vw"
             className="z-0 object-cover object-center"
+            style={imagePosition ? { objectPosition: imagePosition } : undefined}
           />
           <div
             aria-hidden

@@ -47,6 +47,24 @@ const DEEPDIVE_HERO_IMAGES: Record<string, string> = {
   "reizueberflutung": "/hero-reizueberflutung.webp",
 };
 
+// Optionaler Bildausschnitt (object-position) pro Vertiefung – nur wo der
+// mittige object-cover-Zuschnitt das Motiv (Kopf/Gehirn/Figur) anschneiden
+// würde. Fehlt ein Eintrag, bleibt es beim Standard „center".
+const DEEPDIVE_HERO_POSITIONS: Record<string, string> = {
+  "automatische-gedanken": "right",
+  "kognitive-verzerrungen": "center 22%",
+  "gruebeln": "center 65%",
+  "innerer-kritiker": "center 15%",
+  "selbstmitgefuehl": "left",
+  "neuroplastizitaet": "center 22%",
+  "werte-und-ziele": "left 22%",
+  "integration-und-weitergabe": "left 22%",
+  "muster-und-koerper": "center 22%",
+  "propaganda": "center 22%",
+  "bildmacht": "center 22%",
+  "reizueberflutung": "right",
+};
+
 export function generateStaticParams() {
   return deepDives.map((d) => ({ slug: d.slug }));
 }
@@ -84,6 +102,7 @@ export default async function DeepDivePage({
         title={dive.title}
         subtitle={dive.subtitle}
         image={DEEPDIVE_HERO_IMAGES[dive.slug]}
+        imagePosition={DEEPDIVE_HERO_POSITIONS[dive.slug]}
       />
 
       {/* Inhalt */}
