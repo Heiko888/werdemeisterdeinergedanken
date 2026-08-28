@@ -21,8 +21,8 @@ export function Compass() {
           <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
             <PhotoFrame
               src="/kompass-weg.webp"
-              alt="Ein Wanderer mit Rucksack liest einen Kompass an einem moosgrünen Waldpfad, gesäumt von sieben nummerierten Wegsteinen (1 bis 7), die zu einem großen Kompass auf einem Baumstumpf führen – der Weg durch die 7 Stufen der Bewusstseinsentwicklung"
-              aspect="portrait"
+              alt="Ein Mann steht bei Sonnenuntergang auf einem Bergkamm und liest einen Kompass in seiner Hand; vor ihm führt ein Pfad mit leuchtenden Wegmarken den Grat entlang – Sinnbild für den bewussten, geführten Weg durch die 7 Stufen der Bewusstseinsentwicklung"
+              aspect="landscape"
             />
           </div>
         </Reveal>
