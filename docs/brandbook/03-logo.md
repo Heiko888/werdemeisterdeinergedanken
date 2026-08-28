@@ -6,6 +6,8 @@ Das Logo besteht aus zwei Elementen:
 
 1. **Emblem / Bildmarke** – ein stilisiertes Gehirn („Brain-Mark"), das mit
    organischen Blatt-/Neuronen-Formen die Verbindung von Natur und Geist trägt.
+   Farblich **teal-dominant** (Bewusstsein), mit lebendigem Neon-Glow; die
+   Wortmarke „Meister" setzt dazu den warmen **Gold**-Akzent (Erkenntnis).
 2. **Wortmarke** – „Werde Meister deiner **Gedanken**", in Versalien (uppercase).
 
 Quelle (Web-Komponente): `src/components/visuals/Logo.tsx`.
