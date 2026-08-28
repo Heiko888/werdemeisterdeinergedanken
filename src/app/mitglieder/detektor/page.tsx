@@ -48,7 +48,7 @@ export default async function DetektorPage() {
           fill
           priority
           sizes="100vw"
-          className="z-0 object-cover object-center"
+          className="z-0 object-cover object-[center_20%]"
         />
         <div
           aria-hidden
