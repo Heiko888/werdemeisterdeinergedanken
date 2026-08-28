@@ -25,12 +25,12 @@ export function Footer() {
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
             Navigation
           </h3>
-          <ul className="flex flex-col gap-2.5">
+          <ul className="flex flex-col gap-0.5">
             {mainNav.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-mist-300/70 transition-colors hover:text-white"
+                  className="inline-flex min-h-11 items-center text-sm text-mist-300/70 transition-colors hover:text-white"
                 >
                   {item.label}
                 </Link>
@@ -43,12 +43,12 @@ export function Footer() {
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
             Rechtliches
           </h3>
-          <ul className="flex flex-col gap-2.5">
+          <ul className="flex flex-col gap-0.5">
             {legalNav.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-mist-300/70 transition-colors hover:text-white"
+                  className="inline-flex min-h-11 items-center text-sm text-mist-300/70 transition-colors hover:text-white"
                 >
                   {item.label}
                 </Link>
@@ -82,7 +82,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={key}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-mist-200 transition-all hover:-translate-y-0.5 hover:border-brand-400/50 hover:text-white"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-mist-200 transition-all hover:-translate-y-0.5 hover:border-brand-400/50 hover:text-white"
                 >
                   <SocialIcon />
                 </a>

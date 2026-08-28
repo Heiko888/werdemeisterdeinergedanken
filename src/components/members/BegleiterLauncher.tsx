@@ -110,7 +110,7 @@ export function BegleiterLauncher() {
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Gespräch schließen"
-              className="grid h-9 w-9 place-items-center rounded-full text-ink-mid transition-colors hover:bg-ink/5 hover:text-ink"
+              className="grid h-11 w-11 place-items-center rounded-full text-ink-mid transition-colors hover:bg-ink/5 hover:text-ink"
             >
               <Close />
             </button>

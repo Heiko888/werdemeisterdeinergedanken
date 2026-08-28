@@ -172,6 +172,10 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
           <span className="text-sm text-ink-mid">letzte 4 Wochen</span>
         </div>
         <div
+          role="img"
+          aria-label={`Rhythmus der letzten ${rhythmus.length} Tage: an ${
+            rhythmus.filter((f) => f.done).length
+          } Tagen zurückgekehrt.`}
           className="grid gap-1.5"
           style={{ gridTemplateColumns: "repeat(7, minmax(0, 1fr))" }}
         >
@@ -179,6 +183,7 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
             <div
               key={f.datum}
               title={f.datum}
+              aria-hidden
               className={`aspect-square rounded-md border ${
                 f.done
                   ? "border-accent/40 bg-accent/70"

@@ -34,12 +34,12 @@ export function DisplayNameForm({ initialName }: { initialName: string }) {
           onChange={(e) => setName(e.target.value)}
           maxLength={80}
           placeholder="z. B. Heiko"
-          className="w-full rounded-xl border border-ink/15 bg-white px-4 py-2.5 text-ink outline-none transition-colors focus:border-accent/50"
+          className="min-h-11 w-full rounded-xl border border-ink/15 bg-white px-4 py-2.5 text-ink outline-none transition-colors focus:border-accent/50"
         />
         <button
           type="submit"
           disabled={pending || name.trim() === initialName.trim() || !name.trim()}
-          className="shrink-0 rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 px-6 py-2.5 text-sm font-semibold text-navy-950 shadow-card transition-all hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 px-6 py-2.5 text-sm font-semibold text-navy-950 shadow-card transition-all hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {pending ? "Speichern …" : "Speichern"}
         </button>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/visuals/Logo";
 import { Button } from "@/components/ui/Button";
@@ -13,6 +13,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const menuRef = useRef<HTMLElement>(null);
 
   // Im (login-geschützten) Mitgliederbereich ist das Publikum ein zahlendes
   // Mitglied – Verkaufs-Einladungen gehören dort nicht hin. Wir blenden deshalb
@@ -47,6 +48,15 @@ export function Header() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  // Beim Öffnen den Fokus auf den ersten Menülink setzen, damit Tastatur- und
+  // Screenreader-Nutzer direkt im Menü landen (preventScroll verhindert einen
+  // Sprung auf Mobil, da das Menü direkt unter dem Button aufklappt).
+  useEffect(() => {
+    if (!open) return;
+    const firstLink = menuRef.current?.querySelector<HTMLElement>("a, button");
+    firstLink?.focus({ preventScroll: true });
   }, [open]);
 
   return (
@@ -115,7 +125,11 @@ export function Header() {
           open ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0",
         )}
       >
-        <nav className="flex flex-col gap-1 px-5 py-5" aria-label="Mobiles Menü">
+        <nav
+          ref={menuRef}
+          className="flex flex-col gap-1 px-5 py-5"
+          aria-label="Mobiles Menü"
+        >
           {navItems.map((item) => (
             <Link
               key={item.href}

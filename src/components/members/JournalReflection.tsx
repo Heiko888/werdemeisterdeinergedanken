@@ -106,7 +106,7 @@ export function JournalReflection({
               placeholder={ready ? "Deine Gedanken dazu …" : "Lädt …"}
               readOnly={!ready}
               rows={3}
-              className="ml-8 w-[calc(100%-2rem)] resize-y rounded-xl border border-ink/12 bg-paper/40 px-4 py-3 text-[0.98rem] leading-relaxed text-ink placeholder:text-ink-soft/40 focus:border-accent/50 focus:bg-white focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              className="ml-8 w-[calc(100%-2rem)] resize-y rounded-xl border border-ink/12 bg-paper/40 px-4 py-3 text-[0.98rem] leading-relaxed text-ink placeholder:text-ink-muted focus:border-accent/50 focus:bg-white focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             />
             <span
               aria-live="polite"

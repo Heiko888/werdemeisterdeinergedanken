@@ -29,7 +29,7 @@ export function NewsletterToggle({ initialOptIn }: { initialOptIn: boolean }) {
       onClick={toggle}
       disabled={pending}
       className={cn(
-        "inline-flex items-center gap-3 rounded-full border px-4 py-2.5 text-sm font-medium transition-all disabled:opacity-60",
+        "inline-flex min-h-11 items-center gap-3 rounded-full border px-4 py-2.5 text-sm font-medium transition-all disabled:opacity-60",
         optIn
           ? "border-accent/40 bg-accent/[0.08] text-ink"
           : "border-ink/20 bg-white text-ink hover:border-accent/40",

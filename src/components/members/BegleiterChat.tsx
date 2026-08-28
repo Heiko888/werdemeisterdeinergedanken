@@ -283,7 +283,7 @@ export function BegleiterChat({
               type="button"
               onClick={() => send(s)}
               disabled={pending}
-              className="rounded-full border border-ink/15 bg-white px-4 py-2 text-left text-sm text-ink-mid transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-60"
+              className="inline-flex min-h-11 items-center rounded-full border border-ink/15 bg-white px-4 py-2 text-left text-sm text-ink-mid transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-60"
             >
               {s}
             </button>
