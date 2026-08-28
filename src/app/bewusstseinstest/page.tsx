@@ -18,7 +18,7 @@ export default function BewusstseinstestPage() {
   return (
     <>
       {/* Kopf */}
-      <section className="on-dark grain relative overflow-hidden bg-navy-900 py-20 text-cream sm:py-24">
+      <section className="on-dark grain relative flex min-h-[22rem] flex-col justify-center overflow-hidden bg-navy-900 py-16 text-cream sm:min-h-[34rem] sm:py-24">
         {/* Hintergrundbild – Kompass & Treppe ins Licht, bewusst dezent */}
         <Image
           src={heroBild}
