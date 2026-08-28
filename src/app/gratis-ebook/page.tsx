@@ -81,7 +81,7 @@ export default function GratisEbookPage() {
   return (
     <>
       {/* Hero: Cover + Formular (der eine Zweck dieser Seite – die Anmeldung) */}
-      <section className="grain relative overflow-hidden bg-navy-900 pt-16 pb-16 text-cream sm:pt-28 sm:pb-24">
+      <section className="on-dark grain relative overflow-hidden bg-navy-900 pt-16 pb-16 text-cream sm:pt-28 sm:pb-24">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
@@ -97,7 +97,7 @@ export default function GratisEbookPage() {
                   className="absolute inset-0 -z-10 rounded-full opacity-60 blur-3xl"
                   style={{
                     background:
-                      "radial-gradient(circle, color-mix(in oklab, var(--color-leaf-500) 35%, transparent), transparent 70%)",
+                      "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 35%, transparent), transparent 70%)",
                   }}
                 />
                 <Image
@@ -113,7 +113,7 @@ export default function GratisEbookPage() {
           {/* Text + Formular */}
           <Reveal delay={100} className="order-1 lg:order-2">
             <div className="flex flex-col items-start gap-6">
-              <Eyebrow className="text-leaf-300/90">Kostenloses E-Book</Eyebrow>
+              <Eyebrow className="text-gold-300/90">Kostenloses E-Book</Eyebrow>
               <h1 className="max-w-2xl text-[1.8rem] font-medium leading-[1.1] text-cream sm:[hyphens:none] sm:text-5xl">
                 Die 7 Stufen der{" "}
                 <em className="accent">Bewusstseinsentwicklung</em>
@@ -130,7 +130,7 @@ export default function GratisEbookPage() {
                     key={b}
                     className="flex items-start gap-3 text-[0.95rem] text-cream/80"
                   >
-                    <Check className="mt-0.5 shrink-0 text-base text-leaf-300" />
+                    <Check className="mt-0.5 shrink-0 text-base text-gold-300" />
                     {b}
                   </li>
                 ))}
@@ -146,7 +146,7 @@ export default function GratisEbookPage() {
       </section>
 
       {/* Das steckt drin: die 7 Stufen als Vorschau */}
-      <section className="bg-paper-aura grain-soft relative py-16 sm:py-28">
+      <section className="bg-paper-aura seam-gold grain-soft relative py-16 sm:py-28">
         <Container>
           <SectionHeading
             align="center"
@@ -268,7 +268,7 @@ export default function GratisEbookPage() {
       />
 
       {/* Abschluss-CTA: zweiter Anmelde-Anlauf am Seitenende */}
-      <section className="grain relative overflow-hidden bg-navy-900 py-16 text-cream sm:py-24">
+      <section className="on-dark grain relative overflow-hidden bg-navy-900 py-16 text-cream sm:py-24">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
@@ -276,7 +276,7 @@ export default function GratisEbookPage() {
         />
         <Container size="narrow">
           <Reveal className="flex flex-col items-center gap-6 text-center">
-            <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-leaf-500/15 text-leaf-300">
+            <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold-500/15 text-gold-300">
               <Spark className="text-xl" />
             </span>
             <h2 className="max-w-2xl text-[1.6rem] font-medium leading-[1.12] text-cream sm:text-4xl">

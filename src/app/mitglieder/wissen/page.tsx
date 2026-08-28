@@ -60,7 +60,7 @@ export default function VertiefungenPage() {
             className="group flex flex-col items-start gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30 sm:flex-row sm:items-center sm:justify-between"
           >
             <div className="flex items-center gap-4">
-              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500/15 to-teal-500/15 text-lg text-accent">
+              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-500/15 to-gold-500/15 text-lg text-accent">
                 <Brain />
               </span>
               <div>
@@ -96,7 +96,7 @@ export default function VertiefungenPage() {
                           className="group flex h-full flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
                         >
                           {label && (
-                            <span className="w-fit rounded-full bg-teal-500/12 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-teal-700">
+                            <span className="w-fit rounded-full bg-gold-500/15 px-2.5 py-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-gold-700">
                               {label}
                             </span>
                           )}

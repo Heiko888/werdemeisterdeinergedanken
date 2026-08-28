@@ -79,7 +79,7 @@ export function Header() {
               className={cn(
                 "relative whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
                 pathname === item.href &&
-                  "font-semibold text-teal-700 hover:text-teal-700 after:absolute after:inset-x-4 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-leaf-500 after:to-teal-500 after:content-['']",
+                  "font-semibold text-gold-700 hover:text-gold-700 after:absolute after:inset-x-4 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-gold-400 after:to-gold-500 after:content-['']",
               )}
               aria-current={pathname === item.href ? "page" : undefined}
             >
@@ -138,7 +138,7 @@ export function Header() {
               className={cn(
                 "rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink",
                 pathname === item.href &&
-                  "border-l-2 border-teal-500 font-semibold text-teal-700",
+                  "border-l-2 border-gold-600 font-semibold text-gold-700",
               )}
               aria-current={pathname === item.href ? "page" : undefined}
             >

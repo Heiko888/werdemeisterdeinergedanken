@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Check } from "@/components/ui/Icon";
+import { StarRating } from "@/components/ui/StarRating";
 import { EbookForm } from "./EbookForm";
 import ebookMockup from "../../../public/ebook-mockup.webp";
 
@@ -19,23 +20,33 @@ export function LeadMagnet() {
       className="bg-surface-aura grain-soft relative scroll-mt-24 py-16 sm:py-32"
     >
       <Container className="grid items-center gap-16 lg:grid-cols-[0.8fr_1fr]">
-        {/* Buch-Cover */}
+        {/* Buch-Cover – warmer Gold-Schein und echter Schlagschatten, damit es
+            auf dem hellen Grund steht statt zu schweben. */}
         <Reveal className="order-2 lg:order-1">
           <div className="flex justify-center">
             <div className="relative">
               <div
                 aria-hidden
-                className="absolute inset-0 -z-10 rounded-full opacity-50 blur-3xl"
+                className="absolute inset-0 -z-10 rounded-full opacity-60 blur-3xl"
                 style={{
                   background:
-                    "radial-gradient(circle, color-mix(in oklab, var(--color-leaf-500) 30%, transparent), transparent 70%)",
+                    "radial-gradient(circle, color-mix(in oklab, var(--color-gold-400) 42%, transparent), transparent 70%)",
                 }}
               />
               <Image
                 src={ebookMockup}
                 alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
                 priority
-                className="h-auto w-64 sm:w-72"
+                className="h-auto w-64 drop-shadow-2xl sm:w-72"
+              />
+              {/* Feine goldene Standlinie – gibt dem Cover einen Boden. */}
+              <div
+                aria-hidden
+                className="mx-auto mt-5 h-px w-40 max-w-[70%]"
+                style={{
+                  background:
+                    "linear-gradient(to right, transparent, color-mix(in oklab, var(--color-gold-500) 70%, transparent), transparent)",
+                }}
               />
             </div>
           </div>
@@ -54,19 +65,36 @@ export function LeadMagnet() {
               Kompakt, klar und sofort umsetzbar.
             </p>
 
-            <ul className="flex flex-col gap-2.5">
-              {bullets.map((b) => (
-                <li
-                  key={b}
-                  className="flex items-center gap-3 text-sm text-ink-mid"
-                >
-                  <Check className="text-base text-accent" />
-                  {b}
-                </li>
-              ))}
-            </ul>
+            {/* Erhöhte Karte mit Gold-Ring – macht das Formular zum edlen
+                Fokuspunkt, statt es nackt auf die Fläche zu legen. */}
+            <div className="glow-gold w-full rounded-3xl border border-gold-400/30 bg-surface p-6 sm:p-7">
+              <ul className="flex flex-col gap-2.5">
+                {bullets.map((b) => (
+                  <li
+                    key={b}
+                    className="flex items-center gap-3 text-sm text-ink-mid"
+                  >
+                    <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold-500/15 text-[0.8rem] text-gold-700">
+                      <Check />
+                    </span>
+                    {b}
+                  </li>
+                ))}
+              </ul>
 
-            <EbookForm />
+              <div className="mt-6">
+                <EbookForm />
+              </div>
+
+              {/* Trust-Zeile – Social Proof, der auf Hell bisher fehlte. */}
+              <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-ink/10 pt-4 text-xs text-ink-muted">
+                <StarRating />
+                <span>
+                  Von hunderten Leser:innen geladen · kein Spam, jederzeit
+                  abbestellbar
+                </span>
+              </div>
+            </div>
           </div>
         </Reveal>
       </Container>

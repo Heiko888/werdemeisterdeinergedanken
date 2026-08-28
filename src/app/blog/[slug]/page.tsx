@@ -177,7 +177,7 @@ export default async function BlogPostPage({
             <ArrowRight className="rotate-180" />
             Alle Artikel
           </Link>
-          <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-leaf-400">
+          <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-gold-300">
             {post.category}
           </span>
           <h1 className="text-[2rem] font-medium leading-[1.1] text-cream sm:text-4xl md:text-5xl">

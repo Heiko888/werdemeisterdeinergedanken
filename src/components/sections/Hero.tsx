@@ -81,7 +81,7 @@ export function Hero() {
               className="absolute -inset-6 -z-10 rounded-full opacity-70 blur-2xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 34%, transparent), transparent 66%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 32%, transparent), transparent 66%)",
               }}
             />
             <Image
@@ -95,7 +95,7 @@ export function Hero() {
               className="absolute -bottom-3 -right-2 hidden rounded-xl px-5 py-4 backdrop-blur lg:block"
               style={{
                 background:
-                  "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#8cc63f,#21b2bd) border-box",
+                  "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                 border: "1.5px solid transparent",
                 boxShadow: "0 0 26px -6px rgba(52,196,196,.5)",
               }}

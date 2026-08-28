@@ -41,7 +41,7 @@ export function ReadingProgress() {
         style={{
           transform: `scaleX(${progress})`,
           background:
-            "linear-gradient(100deg, var(--color-leaf-500), var(--color-teal-500))",
+            "linear-gradient(100deg, var(--color-gold-400), var(--color-gold-500))",
         }}
       />
     </div>

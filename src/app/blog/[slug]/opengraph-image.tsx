@@ -52,7 +52,7 @@ export default async function Image({
             fontWeight: 600,
             letterSpacing: "6px",
             textTransform: "uppercase",
-            color: "#8cc63f",
+            color: "#e8c15f",
           }}
         >
           <span
@@ -61,7 +61,7 @@ export default async function Image({
               width: "42px",
               height: "6px",
               borderRadius: "999px",
-              backgroundImage: "linear-gradient(90deg, #8cc63f, #21b2bd)",
+              backgroundImage: "linear-gradient(90deg, #e8c15f, #d9a93a)",
             }}
           />
           {kicker}

@@ -138,7 +138,7 @@ export default async function JournalPage() {
           </div>
 
           {resolved.length > 0 && (
-            <PrintButton className="mt-1 inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white shadow-card backdrop-blur-sm transition-all hover:border-teal-300/60 hover:bg-white/15 print:hidden" />
+            <PrintButton className="mt-1 inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white shadow-card backdrop-blur-sm transition-all hover:border-gold-400/45 hover:bg-white/15 print:hidden" />
           )}
         </Container>
       </section>
@@ -146,7 +146,7 @@ export default async function JournalPage() {
       {/* Standortbestimmung – geerdete Spiegelung aus den eigenen Daten */}
       <section className="py-10 print:py-4">
         <Container>
-          <div className="mx-auto flex max-w-2xl flex-col gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-leaf-500/[0.06] to-teal-500/[0.06] p-7 shadow-card sm:p-9">
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-gold-500/[0.06] to-gold-500/[0.06] p-7 shadow-card sm:p-9">
             <div>
               <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
                 Deine Standortbestimmung

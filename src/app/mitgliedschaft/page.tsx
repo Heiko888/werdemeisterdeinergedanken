@@ -148,7 +148,7 @@ export default async function MitgliedschaftPage({
               <span className="text-cream/45">(2 Monate gratis)</span> · jederzeit kündbar
             </p>
             <p className="mt-6 flex items-center gap-2 text-sm text-cream/55">
-              <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-leaf-500 to-teal-500" />
+              <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
               Bodenständig, ehrlich, ohne esoterisches Blabla. In deinem Tempo.
             </p>
           </div>
@@ -216,7 +216,7 @@ export default async function MitgliedschaftPage({
             className="absolute bottom-6 left-8 top-6 w-0.5"
             style={{
               background:
-                "linear-gradient(180deg, rgba(140,198,63,.1), #8cc63f, #21b2bd, rgba(33,178,189,.1))",
+                "linear-gradient(180deg, rgba(232,193,95,.12), #e8c15f, #d9a93a, rgba(217,169,58,.12))",
             }}
           />
           {stages.map((s) => (
@@ -225,7 +225,7 @@ export default async function MitgliedschaftPage({
                 className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full font-display text-xl font-medium text-cream"
                 style={{
                   background:
-                    "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#8cc63f,#21b2bd) border-box",
+                    "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                   border: "1.5px solid transparent",
                   boxShadow: "0 0 22px -4px rgba(52,196,196,.5)",
                 }}
@@ -256,7 +256,7 @@ export default async function MitgliedschaftPage({
                 key={t}
                 className="rounded-2xl border border-ink/10 bg-white p-7 shadow-card transition-transform duration-200 hover:-translate-y-1"
               >
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-leaf-500 to-teal-500 text-navy-950 shadow-sm">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-gold-400 to-gold-500 text-navy-950 shadow-sm">
                   <Check />
                 </span>
                 <h3 className="mt-4 text-xl font-medium text-ink">{t}</h3>
@@ -281,7 +281,7 @@ export default async function MitgliedschaftPage({
               key={t}
               className="rounded-2xl border border-cream/10 bg-cream/[0.03] p-8"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 font-display text-lg font-medium text-navy-950">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-r from-gold-400 to-gold-500 font-display text-lg font-medium text-navy-950">
                 {i + 1}
               </span>
               <h3 className="mt-4 text-xl font-medium text-cream">{t}</h3>
@@ -346,7 +346,7 @@ export default async function MitgliedschaftPage({
                 "Neue Inhalte & Impulse laufend",
               ].map((li) => (
                 <li key={li} className="flex items-start gap-3 text-[0.98rem] text-cream/85">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 text-navy-950">
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-gold-400 to-gold-500 text-navy-950">
                     <Check className="h-3 w-3" />
                   </span>
                   {li}
@@ -356,8 +356,8 @@ export default async function MitgliedschaftPage({
 
             {/* Zwei Abo-Optionen: Jahr (hervorgehoben) + Monat */}
             <div className="mt-7 flex flex-col gap-3">
-              <div className="relative rounded-2xl border border-leaf-500/40 bg-leaf-500/10 p-5">
-                <span className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950">
+              <div className="relative rounded-2xl border border-gold-500/45 bg-gold-500/12 p-5">
+                <span className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950">
                   2 Monate gratis
                 </span>
                 <div className="text-xs font-bold uppercase tracking-[0.14em] text-cream/60">
@@ -443,7 +443,7 @@ export default async function MitgliedschaftPage({
               >
                 <summary className="flex cursor-pointer items-center justify-between gap-4 py-5 font-display text-xl font-medium text-ink marker:content-none [&::-webkit-details-marker]:hidden">
                   {f.question}
-                  <span className="shrink-0 text-teal-500 transition-transform duration-200 group-open:rotate-45">
+                  <span className="shrink-0 text-gold-700 transition-transform duration-200 group-open:rotate-45">
                     <svg viewBox="0 0 20 20" width="22" height="22" aria-hidden>
                       <path fill="currentColor" d="M9 3h2v6h6v2h-6v6H9v-6H3V9h6z" />
                     </svg>

@@ -201,7 +201,7 @@ function ConsentBanner({
             type="button"
             onClick={onAccept}
             className={cn(
-              "inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 px-5 text-sm font-semibold text-navy-950 shadow-sm transition-all hover:brightness-[1.03]",
+              "inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-5 text-sm font-semibold text-navy-950 shadow-sm transition-all hover:brightness-[1.03]",
               "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
             )}
           >

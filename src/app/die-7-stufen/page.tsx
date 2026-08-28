@@ -31,7 +31,7 @@ export default function SevenStagesPage() {
             "radial-gradient(52% 26% at 14% 30%, color-mix(in oklab, var(--color-teal-500) 30%, transparent) 0%, transparent 62%)," +
             "radial-gradient(50% 24% at 88% 44%, color-mix(in oklab, var(--color-brand-500) 32%, transparent) 0%, transparent 58%)," +
             "radial-gradient(54% 22% at 18% 70%, color-mix(in oklab, var(--color-teal-500) 22%, transparent) 0%, transparent 60%)," +
-            "radial-gradient(52% 24% at 82% 92%, color-mix(in oklab, var(--color-leaf-500) 22%, transparent) 0%, transparent 60%)," +
+            "radial-gradient(52% 24% at 82% 92%, color-mix(in oklab, var(--color-gold-500) 22%, transparent) 0%, transparent 60%)," +
             "var(--color-navy-950)",
         }}
       >
@@ -113,7 +113,7 @@ export default function SevenStagesPage() {
               className="absolute left-7 top-10 bottom-10 w-0.5 -translate-x-1/2"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(140,198,63,.1), #8cc63f, #21b2bd, rgba(33,178,189,.1))",
+                  "linear-gradient(180deg, rgba(232,193,95,.12), #e8c15f, #d9a93a, rgba(217,169,58,.12))",
               }}
             />
             {stages.map((stage, i) => (
@@ -123,7 +123,7 @@ export default function SevenStagesPage() {
                     className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full font-display text-lg font-medium text-cream"
                     style={{
                       background:
-                        "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#8cc63f,#21b2bd) border-box",
+                        "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                       border: "1.5px solid transparent",
                       boxShadow: "0 0 22px -4px rgba(52,196,196,.5)",
                     }}
@@ -135,7 +135,7 @@ export default function SevenStagesPage() {
                       <h2 className="text-xl font-medium text-cream sm:text-2xl">
                         {stage.title}
                       </h2>
-                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-teal-300/80">
+                      <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-gold-300/80">
                         {stage.subtitle}
                       </span>
                     </div>

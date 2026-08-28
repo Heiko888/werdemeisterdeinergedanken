@@ -109,7 +109,7 @@ export function DetektorPanel() {
           </p>
 
           {ergebnis.funde.length === 0 ? (
-            <div className="rounded-2xl border border-leaf-500/30 bg-leaf-500/[0.06] p-6">
+            <div className="rounded-2xl border border-gold-500/35 bg-gold-500/[0.06] p-6">
               <p className="text-[1rem] leading-relaxed text-ink-mid">
                 Keine der bekannten Techniken ist hier deutlich erkennbar. Das
                 heißt nicht, dass der Text „neutral“ ist – nur, dass die

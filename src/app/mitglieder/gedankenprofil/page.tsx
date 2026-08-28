@@ -42,8 +42,8 @@ const levelLabel: Record<StageLevel, string> = {
 };
 
 const levelBarClass: Record<StageLevel, string> = {
-  verankert: "bg-gradient-to-r from-leaf-500 to-teal-500",
-  "im-aufbau": "bg-gradient-to-r from-teal-500/70 to-teal-500/90",
+  verankert: "bg-gradient-to-r from-gold-400 to-gold-500",
+  "im-aufbau": "bg-gradient-to-r from-gold-500/70 to-gold-500/90",
   entwicklungsraum: "bg-ink/25",
 };
 
@@ -128,7 +128,7 @@ export default async function GedankenprofilPage() {
             mit jedem neuen Test schärfer wird.
           </p>
           {profil.hasTest && profil.summary && (
-            <p className="max-w-xl rounded-2xl border border-teal-300/30 bg-white/10 px-6 py-4 text-[1.02rem] leading-relaxed text-ink-soft/90 shadow-card backdrop-blur-sm">
+            <p className="max-w-xl rounded-2xl border border-gold-400/30 bg-white/10 px-6 py-4 text-[1.02rem] leading-relaxed text-ink-soft/90 shadow-card backdrop-blur-sm">
               {profil.summary}
             </p>
           )}
@@ -200,7 +200,7 @@ export default async function GedankenprofilPage() {
                               )}
                               {p.done && (
                                 <span
-                                  className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500 to-teal-500 text-[0.6rem] text-navy-950"
+                                  className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-[0.6rem] text-navy-950"
                                   title="Abgeschlossen"
                                 >
                                   <Check />

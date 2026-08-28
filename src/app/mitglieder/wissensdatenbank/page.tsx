@@ -68,7 +68,7 @@ export default async function WissenPage() {
             className="group flex items-center justify-between gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
           >
             <div className="flex items-center gap-4">
-              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-leaf-500/15 to-teal-500/15 text-lg text-accent">
+              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-500/15 to-gold-500/15 text-lg text-accent">
                 <Spark />
               </span>
               <div>
@@ -118,7 +118,7 @@ export default async function WissenPage() {
               </div>
               <div className="h-2 w-full overflow-hidden rounded-full bg-mist-100">
                 <span
-                  className="block h-full rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 transition-all duration-500"
+                  className="block h-full rounded-full bg-gradient-to-r from-gold-400 to-gold-500 transition-all duration-500"
                   style={{ width: `${prozent}%` }}
                 />
               </div>
@@ -158,7 +158,7 @@ export default async function WissenPage() {
                               {c.number}
                             </span>
                             {gelesen.has(slug) && (
-                              <span className="inline-flex items-center gap-1 rounded-full bg-leaf-500/15 px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-accent">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-gold-500/15 px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-accent">
                                 <Check />
                                 Gelesen
                               </span>

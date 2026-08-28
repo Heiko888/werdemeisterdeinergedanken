@@ -148,7 +148,7 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
         </div>
 
         {heuteSchon ? (
-          <div className="flex items-center gap-2 rounded-full border border-leaf-500/40 bg-leaf-500/[0.08] px-5 py-3 text-sm font-semibold text-leaf-600">
+          <div className="flex items-center gap-2 rounded-full border border-gold-500/45 bg-gold-500/[0.08] px-5 py-3 text-sm font-semibold text-gold-700">
             ✓ Du bist heute zurückgekehrt. Schön, dass du da warst.
           </div>
         ) : (

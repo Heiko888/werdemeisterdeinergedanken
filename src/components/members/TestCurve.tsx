@@ -60,7 +60,7 @@ export function TestCurve({ points }: { points: TestPoint[] }) {
         <polyline
           points={line}
           fill="none"
-          stroke="#21b2bd"
+          stroke="#d9a93a"
           strokeWidth={2.5}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -70,7 +70,7 @@ export function TestCurve({ points }: { points: TestPoint[] }) {
       {/* Punkte + Datumsbeschriftung */}
       {points.map((p, i) => (
         <g key={`${p.takenAt}-${i}`}>
-          <circle cx={x(i)} cy={y(p.topStage)} r={5} fill="#4f9e1c" />
+          <circle cx={x(i)} cy={y(p.topStage)} r={5} fill="#7e6410" />
           {(showEveryDate || i === 0 || i === n - 1) && (
             <text
               x={x(i)}

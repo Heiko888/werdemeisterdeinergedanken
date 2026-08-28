@@ -61,7 +61,7 @@ export function MemberNav() {
                   className={cn(
                     "flex min-h-11 items-center whitespace-nowrap rounded-full px-3.5 text-sm font-medium transition-colors",
                     active
-                      ? "bg-teal-500/12 text-teal-700"
+                      ? "bg-gold-500/15 text-gold-700"
                       : "text-ink-soft hover:bg-ink/[0.04] hover:text-ink",
                   )}
                 >

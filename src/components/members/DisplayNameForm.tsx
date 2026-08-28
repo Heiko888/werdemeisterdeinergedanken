@@ -39,7 +39,7 @@ export function DisplayNameForm({ initialName }: { initialName: string }) {
         <button
           type="submit"
           disabled={pending || name.trim() === initialName.trim() || !name.trim()}
-          className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-leaf-500 to-teal-500 px-6 py-2.5 text-sm font-semibold text-navy-950 shadow-card transition-all hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-6 py-2.5 text-sm font-semibold text-navy-950 shadow-card transition-all hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {pending ? "Speichern …" : "Speichern"}
         </button>

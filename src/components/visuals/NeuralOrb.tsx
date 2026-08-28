@@ -37,7 +37,7 @@ export function NeuralOrb({ className }: { className?: string }) {
     <div className={cn("relative aspect-square", className)}>
       {/* Glow */}
       <div className="absolute inset-[12%] rounded-full bg-teal-500/30 blur-3xl animate-pulse-slow" />
-      <div className="absolute inset-[26%] rounded-full bg-leaf-500/20 blur-2xl" />
+      <div className="absolute inset-[26%] rounded-full bg-gold-500/20 blur-2xl" />
 
       <svg
         viewBox="0 0 200 200"

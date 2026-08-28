@@ -7,7 +7,7 @@ import { ArrowRight } from "@/components/ui/Icon";
 
 export function FinalCta() {
   return (
-    <section className="grain relative overflow-hidden bg-navy-900 py-24 text-cream sm:py-32">
+    <section className="on-dark grain relative overflow-hidden bg-navy-900 py-24 text-cream sm:py-32">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"

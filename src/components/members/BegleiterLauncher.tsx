@@ -136,7 +136,7 @@ export function BegleiterLauncher() {
         onClick={toggle}
         aria-expanded={open}
         aria-label={open ? "Gespräch schließen" : "Begleiter öffnen"}
-        className="fixed bottom-5 right-4 z-50 grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-teal-500 to-brand-500 text-xl text-white shadow-card ring-1 ring-white/40 transition-all hover:scale-105 hover:brightness-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:right-6"
+        className="fixed bottom-5 right-4 z-50 grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-xl text-navy-950 shadow-card ring-1 ring-white/40 transition-all hover:scale-105 hover:brightness-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:right-6"
       >
         {open ? <Close /> : <Chat />}
       </button>
