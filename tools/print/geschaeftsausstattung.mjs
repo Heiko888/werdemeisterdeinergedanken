@@ -29,8 +29,9 @@ const OUT = join(HERE, "out");
 
 // Schriften als data-URI-woff2 (self-contained, identisch zum restlichen Toolset).
 const fontsCss = readFileSync(join(ROOT, "tools/pdf/assets/fonts.css"), "utf8");
-// Freigestelltes Gehirn-Emblem als data-URI (PDF bleibt eigenständig).
-const brainB64 = readFileSync(join(ROOT, "public/logo-brain.png")).toString("base64");
+// Goldenes Gehirn-Emblem als data-URI (wie im Website-Header; erzeugt von
+// tools/print/gold-emblem.mjs). PDF bleibt eigenständig.
+const brainB64 = readFileSync(join(ROOT, "public/logo-brain-gold.png")).toString("base64");
 const BRAIN = `data:image/png;base64,${brainB64}`;
 
 // Kontakt-, Marken- & Farbdaten (Single Source of Truth für tools/print/*).
