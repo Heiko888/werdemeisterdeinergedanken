@@ -48,7 +48,12 @@ export function Logo({
           {/* Zeile 1: „WERDE MEISTER“ – schlank & gesperrt, „Meister“ in Gold */}
           <span className="font-display text-[1.12rem] font-normal uppercase leading-none tracking-[0.1em]">
             Werde{" "}
-            <span className={tone === "onDark" ? "text-gold-300" : "text-gold-500"}>
+            <span
+              className={cn(
+                "bg-clip-text",
+                tone === "onDark" ? "text-gradient-leaf" : "text-gradient-gold-deep",
+              )}
+            >
               Meister
             </span>
           </span>
