@@ -49,6 +49,17 @@ const bgCss = `
   radial-gradient(1.4px 1.4px at 90% 38%,rgba(200,180,255,.5),transparent),
   radial-gradient(1.1px 1.1px at 44% 74%,rgba(255,255,255,.4),transparent);}`;
 
+// Helle Marken-Fläche (Creme) – 1:1 wie der Website-Header (.bg-paper-aura):
+// Papier-Grund #f6f4ee mit dezenten Gold-Schimmern (gold-400/300/500) und
+// weichem Inset-Schatten oben. Ohne Sternchen (die wären auf Hell unsichtbar).
+const bgCssHell = `
+.bg-hell{position:absolute;inset:0;background:
+  radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
+  radial-gradient(60% 55% at 96% 4%, rgba(242,212,137,.12), transparent 60%),
+  radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),
+  #f6f4ee;
+  box-shadow:inset 0 26px 44px -34px rgba(8,16,42,.22);}`;
+
 // Scrim: dunkelt die Mitte (Textzone) genug ab, damit heller Fraunces-Satz auf
 // jedem Foto lesbar bleibt – ohne das Foto komplett zu verdecken.
 const scrimCss = `
@@ -135,6 +146,16 @@ for (const S of SERIES) {
       writeFileSync(tmp, doc(F, bgCss, `<div class="bg"></div><div class="stars"></div>`, false));
       await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
       await pg.screenshot({ path: join(fdir, "_hintergrund.png") });
+      await pg.close(); rmSync(tmp, { force: true });
+    }
+
+    // Helle Creme-Variante desselben Hintergrunds (wie Website-Header).
+    {
+      const pg = await browser.newPage({ viewport: { width: F.w, height: F.h } });
+      const tmp = join(HERE, `.bghell-${S.key}-${F.key}.html`);
+      writeFileSync(tmp, doc(F, bgCssHell, `<div class="bg-hell"></div>`, false));
+      await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+      await pg.screenshot({ path: join(fdir, "_hintergrund-hell.png") });
       await pg.close(); rmSync(tmp, { force: true });
     }
 
