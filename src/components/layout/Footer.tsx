@@ -25,7 +25,7 @@ export function Footer() {
               }}
             />
             <Image
-              src="/eisvogel-gold.png"
+              src="/eisvogel-gold.webp"
               alt="Goldener Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
               width={320}
               height={320}
