@@ -12,7 +12,7 @@ import { dirname, join } from "node:path";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
-const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
+const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 
 const TARGETS = [
   { key: "youtube", file: "youtube/WMDG-YouTube-Banner.png", w: 2560, h: 1440,
@@ -48,9 +48,9 @@ const css = (t) => `
 *{margin:0;box-sizing:border-box}
 body{width:${t.w}px;height:${t.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#08102a}
 .bg{position:absolute;inset:0;background:
-  radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
-  radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
-  radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
+  radial-gradient(50% 120% at 88% 12%, rgba(233,193,95,.30), transparent 60%),
+  radial-gradient(46% 120% at 6% 96%, rgba(168,132,42,.22), transparent 60%),
+  radial-gradient(40% 90% at 74% 90%, rgba(242,212,137,.14), transparent 60%),
   #08102a;}
 .stars{position:absolute;inset:0;background-image:
   radial-gradient(1.6px 1.6px at 20% 30%,rgba(255,255,255,.7),transparent),
@@ -63,17 +63,17 @@ body{width:${t.w}px;height:${t.h}px;overflow:hidden;font-family:Inter,sans-serif
 ${t.vertical ? `.wrap{flex-direction:column-reverse;text-align:center;gap:52px} .content{width:auto;max-width:${t.textW}px} .sub{margin-left:auto;margin-right:auto} .eyebrow{margin-bottom:20px}` : ""}
 ${t.linkedin ? `.wrap{left:470px;top:46%;transform:translateY(-50%)} .content{width:${t.textW}px}` : ""}
 .content{width:${t.textW}px}
-.eyebrow{font-size:${t.eb}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#34c4c4;margin-bottom:16px}
+.eyebrow{font-size:${t.eb}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489;margin-bottom:16px}
 h1{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${t.h1}px;line-height:1.04;letter-spacing:-.5px}
-h1 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+h1 em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .sub{margin-top:18px;font-size:${t.sub}px;color:rgba(244,242,236,.72);line-height:1.4;max-width:${t.textW}px}
-.url{margin-top:14px;font-size:${t.url}px;font-weight:700;color:#a3d64f;letter-spacing:.3px}
+.url{margin-top:14px;font-size:${t.url}px;font-weight:700;color:#f2d489;letter-spacing:.3px}
 .bwrap{position:relative;flex:0 0 auto}
-.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(t.brain*0.92)}px;height:${Math.round(t.brain*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.35), transparent 66%);filter:blur(30px)}
-.brain{position:relative;width:${t.brain}px;height:${t.brain}px;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(52,196,196,.45))}
+.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(t.brain*0.92)}px;height:${Math.round(t.brain*0.92)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.35), transparent 66%);filter:blur(30px)}
+.brain{position:relative;width:${t.brain}px;height:${t.brain}px;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(233,193,95,.45))}
 .logocard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;text-align:center}
 .wordmark{font-weight:800;font-size:68px;letter-spacing:7px;text-transform:uppercase;line-height:1.4;color:rgba(244,242,236,.92)}
-.wordmark span{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wordmark span{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
 .logocard .url{margin-top:0;font-size:${t.url}px}
 ${t.pinned ? `.wrap{left:0;top:0;transform:none;width:${t.w}px;height:${t.h}px;display:block;gap:0}
 .content{position:absolute;left:${t.padX ?? 110}px;top:50%;transform:translateY(-50%);width:${t.textW}px}

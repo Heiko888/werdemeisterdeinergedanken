@@ -21,7 +21,7 @@ import { dirname, join } from "node:path";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
-const brain = pathToFileURL(join(ROOT, "public/logo-brain-frei.png")).href;
+const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const OUT = join(ROOT, "docs/marketing/whatsapp-mitgliedschaft");
 
 // Zwei Formate: 4:5 fürs Teilen im Chat/Broadcast (kein Crop), 9:16 für den
@@ -114,9 +114,9 @@ const cssFor = (F) => `
 *{margin:0;padding:0;box-sizing:border-box}
 body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#08102a}
 .bg{position:absolute;inset:0;background:
- radial-gradient(52% 70% at 20% 12%, rgba(33,178,189,.28), transparent 60%),
- radial-gradient(48% 72% at 92% 92%, rgba(54,112,238,.20), transparent 60%),
- radial-gradient(40% 60% at 78% 20%, rgba(140,198,63,.12), transparent 60%),#08102a}
+ radial-gradient(52% 70% at 20% 12%, rgba(233,193,95,.28), transparent 60%),
+ radial-gradient(48% 72% at 92% 92%, rgba(168,132,42,.20), transparent 60%),
+ radial-gradient(40% 60% at 78% 20%, rgba(242,212,137,.12), transparent 60%),#08102a}
 .stars{position:absolute;inset:0;background-image:
  radial-gradient(1.6px 1.6px at 22% 24%,rgba(255,255,255,.55),transparent),
  radial-gradient(1.4px 1.4px at 66% 16%,rgba(255,255,255,.4),transparent),
@@ -124,30 +124,30 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
  radial-gradient(1.2px 1.2px at 40% 72%,rgba(255,255,255,.35),transparent)}
 .scrim{position:absolute;inset:0;z-index:4;background:linear-gradient(180deg,
  rgba(5,9,20,.72) 0%, rgba(5,9,20,.55) 32%, rgba(5,9,20,.55) 66%, rgba(5,9,20,.82) 100%)}
-.brainmini{position:absolute;top:${F.padTop}px;left:64px;width:80px;z-index:6;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
-.pageno{position:absolute;top:${F.padTop + 14}px;right:64px;font-size:22px;font-weight:700;letter-spacing:2px;color:rgba(163,214,79,.9);z-index:6}
-em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.brainmini{position:absolute;top:${F.padTop}px;left:64px;width:80px;z-index:6;filter:drop-shadow(0 6px 30px rgba(233,193,95,.5))}
+.pageno{position:absolute;top:${F.padTop + 14}px;right:64px;font-size:22px;font-weight:700;letter-spacing:2px;color:rgba(242,212,137,.9);z-index:6}
+em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 ${F.pad}px;z-index:5}
-.tick{width:66px;height:6px;border-radius:4px;background:linear-gradient(100deg,#a3d64f,#34c4c4);margin-bottom:28px}
-.kicker{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#a3d64f;margin-bottom:20px}
+.tick{width:66px;height:6px;border-radius:4px;background:linear-gradient(100deg,#f2d489,#d9a93a);margin-bottom:28px}
+.kicker{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489;margin-bottom:20px}
 .lead{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:62px;line-height:1.06;letter-spacing:-.4px}
 .sub{margin-top:28px;font-size:34px;line-height:1.34;color:rgba(244,242,236,.82)}
 .body{margin-top:26px;font-size:36px;line-height:1.36;color:rgba(244,242,236,.82)}
 /* Cover */
-.cover-eb{font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#a3d64f;margin-bottom:26px}
+.cover-eb{font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489;margin-bottom:26px}
 .cover-h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:86px;line-height:1.03;letter-spacing:-.6px}
-.brainbig{width:150px;margin-bottom:44px;filter:drop-shadow(0 10px 40px rgba(52,196,196,.55))}
+.brainbig{width:150px;margin-bottom:44px;filter:drop-shadow(0 10px 40px rgba(233,193,95,.55))}
 /* Liste 7 Stufen */
 .rows{margin-top:40px;display:flex;flex-direction:column;gap:16px}
 .row{display:flex;align-items:center;gap:22px}
 .num{flex:none;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
- font-family:Fraunces,serif;font-size:26px;font-weight:600;color:#08102a;background:linear-gradient(120deg,#a3d64f,#34c4c4)}
+ font-family:Fraunces,serif;font-size:26px;font-weight:600;color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a)}
 .rowtext{font-size:29px;line-height:1.2;color:rgba(244,242,236,.9)}
 /* Features */
 .feat{margin-top:40px;display:flex;flex-direction:column;gap:22px}
 .fitem{display:flex;gap:20px;align-items:flex-start}
 .fcheck{flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;
- background:rgba(140,198,63,.16);border:2px solid rgba(140,198,63,.5)}
+ background:rgba(242,212,137,.16);border:2px solid rgba(242,212,137,.5)}
 .fcheck svg{width:22px;height:22px}
 .ftext .ft{font-size:30px;font-weight:700;color:#f4f2ec;line-height:1.2}
 .ftext .fd{margin-top:4px;font-size:25px;line-height:1.28;color:rgba(244,242,236,.72)}
@@ -155,31 +155,31 @@ em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:te
 .steps{margin-top:44px;display:flex;flex-direction:column;gap:30px}
 .step{display:flex;gap:26px;align-items:flex-start}
 .stepnum{flex:none;width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;
- font-family:Fraunces,serif;font-size:32px;font-weight:600;color:#08102a;background:linear-gradient(120deg,#a3d64f,#34c4c4)}
+ font-family:Fraunces,serif;font-size:32px;font-weight:600;color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a)}
 .steptext .st{font-size:33px;font-weight:700;color:#f4f2ec;line-height:1.2}
 .steptext .sd{margin-top:6px;font-size:27px;line-height:1.3;color:rgba(244,242,236,.75)}
 /* Price */
 .plans{margin-top:44px;display:flex;flex-direction:column;gap:22px}
 .plan{position:relative;border-radius:22px;padding:30px 34px;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.12)}
-.plan.best{border-color:rgba(140,198,63,.55);background:rgba(140,198,63,.08)}
+.plan.best{border-color:rgba(242,212,137,.55);background:rgba(242,212,137,.08)}
 .plan .pl{font-size:24px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(244,242,236,.7)}
 .plan .pp{margin-top:8px;font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:58px;line-height:1}
 .plan .pp span{font-family:Inter,sans-serif;font-size:28px;font-weight:600;color:rgba(244,242,236,.65)}
 .plan .pn{margin-top:10px;font-size:25px;color:rgba(244,242,236,.72)}
 .badge{position:absolute;top:26px;right:30px;font-size:20px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
- color:#08102a;background:linear-gradient(120deg,#a3d64f,#34c4c4);padding:7px 16px;border-radius:999px}
+ color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a);padding:7px 16px;border-radius:999px}
 /* CTA */
-.cta-action{margin-top:30px;padding-left:24px;border-left:6px solid;border-image:linear-gradient(120deg,#8cc63f,#21b2bd) 1;font-size:36px;line-height:1.35;color:#f4f2ec;font-weight:600}
+.cta-action{margin-top:30px;padding-left:24px;border-left:6px solid;border-image:linear-gradient(120deg,#f2d489,#d9a93a) 1;font-size:36px;line-height:1.35;color:#f4f2ec;font-weight:600}
 .cta-url{margin-top:40px;display:inline-flex;align-items:center;gap:14px;align-self:flex-start;
- font-size:30px;font-weight:700;color:#08102a;background:linear-gradient(120deg,#a3d64f,#34c4c4);padding:20px 34px;border-radius:16px}
+ font-size:30px;font-weight:700;color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a);padding:20px 34px;border-radius:16px}
 /* Footer */
 .foot{position:absolute;left:64px;right:64px;bottom:${F.padBottom}px;display:flex;justify-content:space-between;align-items:center;z-index:6}
 .foot .h{font-size:22px;font-weight:700;color:rgba(244,242,236,.6)}
 .dots{display:flex;gap:8px}.dot{width:9px;height:9px;border-radius:50%;background:rgba(244,242,236,.25)}
-.dot.on{background:linear-gradient(100deg,#a3d64f,#34c4c4)}
+.dot.on{background:linear-gradient(100deg,#f2d489,#d9a93a)}
 .foot .c{font-size:22px;font-weight:700;color:rgba(244,242,236,.6)}`;
 
-const CHECK = `<svg viewBox="0 0 24 24" fill="none" stroke="#a3d64f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`;
+const CHECK = `<svg viewBox="0 0 24 24" fill="none" stroke="#f2d489" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`;
 
 const dots = (i, total) =>
   `<div class="dots">${Array.from({ length: total }, (_, k) => `<span class="dot ${k === i ? "on" : ""}"></span>`).join("")}</div>`;

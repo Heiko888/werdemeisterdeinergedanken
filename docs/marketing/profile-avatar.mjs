@@ -15,7 +15,7 @@ import { dirname, join } from "node:path";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
-const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-frei.png")).href;
+const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 
 // r = Rand-Radius in px (0 = quadratisch, w/2 = Vollkreis)
 const TARGETS = [
@@ -30,9 +30,9 @@ html,body{width:${t.w}px;height:${t.w}px;overflow:hidden;background:transparent}
 .disc{position:relative;width:${t.w}px;height:${t.w}px;overflow:hidden;
   ${t.round ? "border-radius:50%;" : ""}
   background:
-    radial-gradient(60% 60% at 50% 38%, rgba(33,178,189,.30), transparent 62%),
-    radial-gradient(70% 70% at 22% 88%, rgba(54,112,238,.24), transparent 60%),
-    radial-gradient(60% 60% at 82% 84%, rgba(140,198,63,.16), transparent 60%),
+    radial-gradient(60% 60% at 50% 38%, rgba(233,193,95,.30), transparent 62%),
+    radial-gradient(70% 70% at 22% 88%, rgba(168,132,42,.24), transparent 60%),
+    radial-gradient(60% 60% at 82% 84%, rgba(242,212,137,.16), transparent 60%),
     #08102a;}
 .stars{position:absolute;inset:0;background-image:
   radial-gradient(1.6px 1.6px at 26% 30%,rgba(255,255,255,.7),transparent),
@@ -41,13 +41,13 @@ html,body{width:${t.w}px;height:${t.w}px;overflow:hidden;background:transparent}
   radial-gradient(1.2px 1.2px at 40% 72%,rgba(255,255,255,.45),transparent),
   radial-gradient(1.4px 1.4px at 88% 40%,rgba(200,180,255,.5),transparent);}
 .ring{position:absolute;inset:${Math.round(t.w*0.02)}px;border-radius:50%;
-  ${t.round ? `border:${Math.max(2,Math.round(t.w*0.006))}px solid rgba(163,214,79,.28);` : ""}}
+  ${t.round ? `border:${Math.max(2,Math.round(t.w*0.006))}px solid rgba(242,212,137,.28);` : ""}}
 .glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
   width:${Math.round(t.w*0.62)}px;height:${Math.round(t.w*0.62)}px;border-radius:50%;
-  background:radial-gradient(circle, rgba(52,196,196,.40), transparent 66%);filter:blur(${Math.round(t.w*0.03)}px)}
+  background:radial-gradient(circle, rgba(233,193,95,.40), transparent 66%);filter:blur(${Math.round(t.w*0.03)}px)}
 .brain{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
   width:${Math.round(t.w*0.56)}px;height:auto;object-fit:contain;
-  filter:drop-shadow(0 ${Math.round(t.w*0.01)}px ${Math.round(t.w*0.055)}px rgba(52,196,196,.5))}
+  filter:drop-shadow(0 ${Math.round(t.w*0.01)}px ${Math.round(t.w*0.055)}px rgba(233,193,95,.5))}
 `;
 
 const htmlFor = (t) => `<!doctype html><html><head><meta charset="utf8">

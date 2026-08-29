@@ -22,7 +22,7 @@ import { ARROW } from "../../docs/_glyphs.mjs";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
-const brain = pathToFileURL(join(ROOT, "public/logo-brain-frei.png")).href;
+const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const OUT = join(ROOT, "docs/marketing/story-carousels");
 
 const FORMATS = [
@@ -55,30 +55,30 @@ const STORIES = [
 const cssFor = (F) => `*{margin:0;box-sizing:border-box}
 body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative}
 .bg{position:absolute;inset:0;background:
- radial-gradient(52% 80% at 22% 14%, rgba(33,178,189,.28), transparent 60%),
- radial-gradient(46% 80% at 92% 94%, rgba(54,112,238,.20), transparent 60%),#08102a}
+ radial-gradient(52% 80% at 22% 14%, rgba(233,193,95,.28), transparent 60%),
+ radial-gradient(46% 80% at 92% 94%, rgba(168,132,42,.20), transparent 60%),#08102a}
 .stars{position:absolute;inset:0;background-image:
  radial-gradient(1.5px 1.5px at 24% 26%,rgba(255,255,255,.55),transparent),
  radial-gradient(1.3px 1.3px at 66% 18%,rgba(255,255,255,.4),transparent),
  radial-gradient(1.3px 1.3px at 82% 60%,rgba(180,210,255,.45),transparent)}
-.brainmini{position:absolute;top:56px;left:64px;width:84px;z-index:6;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
-.pageno{position:absolute;top:70px;right:64px;font-size:21px;font-weight:700;letter-spacing:2px;color:rgba(163,214,79,.9);z-index:6}
-em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.brainmini{position:absolute;top:56px;left:64px;width:84px;z-index:6;filter:drop-shadow(0 6px 30px rgba(233,193,95,.5))}
+.pageno{position:absolute;top:70px;right:64px;font-size:21px;font-weight:700;letter-spacing:2px;color:rgba(242,212,137,.9);z-index:6}
+em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .foot{position:absolute;left:64px;right:64px;bottom:54px;display:flex;justify-content:space-between;align-items:center;z-index:6}
 .foot .h{font-size:21px;font-weight:700;color:rgba(244,242,236,.6)}
 .foot .c{font-size:21px;font-weight:700;color:rgba(244,242,236,.6)}
-.dots{display:flex;gap:7px}.dot{width:8px;height:8px;border-radius:50%;background:rgba(244,242,236,.25)}.dot.on{background:linear-gradient(100deg,#a3d64f,#34c4c4)}
+.dots{display:flex;gap:7px}.dot{width:8px;height:8px;border-radius:50%;background:rgba(244,242,236,.25)}.dot.on{background:linear-gradient(100deg,#f2d489,#d9a93a)}
 .scrim{position:absolute;inset:0;z-index:4;background:linear-gradient(to bottom, transparent 40%, rgba(5,9,20,.55) 70%, rgba(5,9,20,.92) 100%),linear-gradient(to right, rgba(5,9,20,.7), transparent 60%)}
 .cover-box{position:absolute;left:64px;right:64px;bottom:150px;z-index:5;display:flex;flex-direction:column;gap:18px}
-.cover-eb{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#a3d64f}
+.cover-eb{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489}
 .cover-h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:84px;line-height:1.03;letter-spacing:-.5px}
 .wrap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 64px;z-index:5}
-.tick{width:64px;height:6px;border-radius:4px;background:linear-gradient(100deg,#a3d64f,#34c4c4);margin-bottom:30px}
+.tick{width:64px;height:6px;border-radius:4px;background:linear-gradient(100deg,#f2d489,#d9a93a);margin-bottom:30px}
 .lead{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:60px;line-height:1.08;letter-spacing:-.3px}
 .body{margin-top:26px;font-size:38px;line-height:1.35;color:rgba(244,242,236,.82)}
-.cta-kicker{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#a3d64f;margin-bottom:22px}
+.cta-kicker{font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489;margin-bottom:22px}
 .cta-lead{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:56px;line-height:1.1}
-.cta-action{margin-top:26px;padding-left:22px;border-left:5px solid;border-image:linear-gradient(120deg,#8cc63f,#21b2bd) 1;font-size:32px;line-height:1.4;color:rgba(244,242,236,.9)}`;
+.cta-action{margin-top:26px;padding-left:22px;border-left:5px solid;border-image:linear-gradient(120deg,#f2d489,#d9a93a) 1;font-size:32px;line-height:1.4;color:rgba(244,242,236,.9)}`;
 
 const dots = (i, total) => `<div class="dots">${Array.from({ length: total }, (_, k) => `<span class="dot ${k === i ? "on" : ""}"></span>`).join("")}</div>`;
 

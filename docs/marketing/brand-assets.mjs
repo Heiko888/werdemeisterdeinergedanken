@@ -16,7 +16,7 @@ import { dirname, join } from "node:path";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
-const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
+const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook-mockup.webp")).toString("base64")}`;
 
 // Zitat-/Fakten-Texte kommen aus der gemeinsamen Quelle (auch von den Overlays
@@ -31,8 +31,8 @@ import { ARROW } from "../_glyphs.mjs";
 // (Erkenntnis). KEIN Sternenfeld mehr.
 const BG = `
 .bg{position:absolute;inset:0;background:
-  radial-gradient(52% 110% at 86% 10%, rgba(33,178,189,.20), transparent 60%),
-  radial-gradient(46% 110% at 6% 96%, rgba(54,112,238,.10), transparent 60%),
+  radial-gradient(52% 110% at 86% 10%, rgba(233,193,95,.20), transparent 60%),
+  radial-gradient(46% 110% at 6% 96%, rgba(168,132,42,.10), transparent 60%),
   radial-gradient(42% 90% at 74% 92%, rgba(217,169,58,.12), transparent 60%),
   #090b10;}`;
 
@@ -41,12 +41,12 @@ const shell = (w, h, extra, body) => `<!doctype html><html><head><meta charset="
 *{margin:0;box-sizing:border-box}
 body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10}
 ${BG}
-.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(52,196,196,.45))}
-.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.35), transparent 66%);filter:blur(30px)}
+.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(233,193,95,.45))}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.35), transparent 66%);filter:blur(30px)}
 .wordmark{font-weight:800;text-transform:uppercase;color:rgba(244,242,236,.92)}
 .wordmark span{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
 .url{font-weight:700;color:#e8c15f;letter-spacing:.3px}
-.eyebrow{font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#34c4c4}
+.eyebrow{font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#f2d489}
 ${extra}
 </style></head><body><div class="bg"></div>${body}</body></html>`;
 
@@ -55,7 +55,7 @@ ${extra}
 // Rundes Profilbild – Icon zentriert, komplett kreis-sicher (kein Text am Rand)
 const avatarRound = (w) => shell(w, w, `
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(52,196,196,.18)}
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(233,193,95,.18)}
 .glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.62)}px;height:${Math.round(w*0.62)}px}
 .brain{width:${Math.round(w*0.6)}px;height:${Math.round(w*0.6)}px}
 `, `<div class="center"><div class="ring"></div><div class="glow"></div>
@@ -95,7 +95,7 @@ const thumbnail = (w, h, data) => shell(w, h, `
 // die visuelle Pointe. Großes, sehr transparentes Anführungszeichen hinter dem
 // Text; weiche Tiefe im Hintergrund (Glow, keine konkreten Motive).
 const quoteTile = (w, h, q) => shell(w, h, `
-.aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.10), rgba(52,196,196,0) 66%);filter:blur(46px)}
+.aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.10), rgba(233,193,95,0) 66%);filter:blur(46px)}
 .qstars{display:none}
 .qmark{position:absolute;left:50%;top:${Math.round(h*0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w*0.6)}px;line-height:.62;color:rgba(130,210,215,.095);pointer-events:none}
 .qwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.3)}px;text-align:center}
@@ -112,7 +112,7 @@ const quoteTile = (w, h, q) => shell(w, h, `
 // Serifenschrift, Grün-Türkis-Schlüsselwort als Pointe, Signatur unten),
 // nur mit Eyebrow + Quellenzeile statt Anführungszeichen.
 const factTile = (w, h, f) => shell(w, h, `
-.aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.10), rgba(52,196,196,0) 66%);filter:blur(46px)}
+.aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.10), rgba(233,193,95,0) 66%);filter:blur(46px)}
 .qstars{display:none}
 .fwrap{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.24)}px;text-align:center}
 .eyebrow{font-size:${Math.round(w*0.024)}px;letter-spacing:.22em;margin-bottom:${Math.round(w*0.045)}px}
@@ -146,7 +146,7 @@ const ebookPost = (w, h) => {
 .post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.045)}px ${Math.round(w*0.09)}px;gap:${b(0.03)}px}
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.16em}
 .bookwrap{position:relative;display:flex;justify-content:center}
-.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.82)}px;height:${Math.round(bookHsq*0.82)}px;border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.24), transparent 68%);filter:blur(44px)}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.82)}px;height:${Math.round(bookHsq*0.82)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.24), transparent 68%);filter:blur(44px)}
 .book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(0 24px 58px rgba(0,0,0,.62))}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.06)}px;line-height:1.16;letter-spacing:-.5px;max-width:98%}
 .h em{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
@@ -247,7 +247,7 @@ const storyPost = (w, h) => {
     : Math.round(base * (h > w * 1.4 ? 0.5 : h > w ? 0.44 : 0.36));
   const common = `
 .eyebrow{font-size:${b(0.024)}px;letter-spacing:.16em}
-.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(52,196,196,.32), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
+.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.32), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
 .brain{position:relative;width:${brainSize}px;height:${brainSize}px}
 .h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
 .h .g{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}

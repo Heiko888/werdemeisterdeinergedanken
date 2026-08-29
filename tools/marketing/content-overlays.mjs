@@ -22,7 +22,7 @@ import { QUOTES, FACTS } from "../../docs/marketing/content-data.mjs";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
-const brain = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
+const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const OUT = join(ROOT, "docs/marketing/content-overlays");
 
 // Breite überall 1080 → Schriftgrößen (w-basiert) bleiben über alle Formate
@@ -37,9 +37,9 @@ const FORMATS = [
 // kein eigenes Foto genutzt wird.
 const bgCss = `
 .bg{position:absolute;inset:0;background:
-  radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
-  radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
-  radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
+  radial-gradient(50% 120% at 88% 12%, rgba(233,193,95,.30), transparent 60%),
+  radial-gradient(46% 120% at 6% 96%, rgba(168,132,42,.24), transparent 60%),
+  radial-gradient(40% 90% at 74% 90%, rgba(242,212,137,.14), transparent 60%),
   #08102a;}
 .stars{position:absolute;inset:0;background-image:
   radial-gradient(1.6px 1.6px at 20% 30%,rgba(255,255,255,.7),transparent),
@@ -61,7 +61,7 @@ const quoteCss = (w, h) => `
 .qmark{position:absolute;left:50%;top:${Math.round(h * 0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w * 0.6)}px;line-height:.62;color:rgba(130,210,215,.14);pointer-events:none;z-index:2}
 .qwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w - Math.round(w * 0.3)}px;text-align:center;z-index:3}
 .quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w * 0.067)}px;line-height:1.32;letter-spacing:-.3px;text-shadow:0 2px 24px rgba(0,0,0,.45)}
-.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w * 0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px;z-index:3}
 .foot img{width:${Math.round(w * 0.037)}px;height:${Math.round(w * 0.037)}px;object-fit:contain;opacity:.88}
 .foot .t{font-size:${Math.round(w * 0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.72)}`;
@@ -73,11 +73,11 @@ const quoteBody = (q) => `<div class="scrim"></div><div class="qmark">„</div>
 // Fakten-Overlay – Typografie 1:1 wie factTile in brand-assets.mjs.
 const factCss = (w) => `
 .fwrap{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${w - Math.round(w * 0.24)}px;text-align:center;z-index:3}
-.eyebrow{font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#34c4c4;font-size:${Math.round(w * 0.024)}px;margin-bottom:${Math.round(w * 0.045)}px}
+.eyebrow{font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#f2d489;font-size:${Math.round(w * 0.024)}px;margin-bottom:${Math.round(w * 0.045)}px}
 .fact{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w * 0.064)}px;line-height:1.3;letter-spacing:-.3px;text-shadow:0 2px 24px rgba(0,0,0,.45)}
-.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
 .src{margin-top:${Math.round(w * 0.045)}px;font-size:${Math.round(w * 0.026)}px;line-height:1.4;color:rgba(244,242,236,.7)}
-.src b{color:rgba(163,214,79,.95);font-weight:700}
+.src b{color:rgba(242,212,137,.95);font-weight:700}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w * 0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px;z-index:3}
 .foot img{width:${Math.round(w * 0.037)}px;height:${Math.round(w * 0.037)}px;object-fit:contain;opacity:.88}
 .foot .t{font-size:${Math.round(w * 0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.72)}`;

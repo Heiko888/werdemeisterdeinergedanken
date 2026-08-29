@@ -17,7 +17,7 @@ import { dirname, join } from "node:path";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
-const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
+const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const read = (p) => readFileSync(join(ROOT, p), "utf8");
 
 // ---------- Daten aus den TS-Quellen ziehen --------------------------------
@@ -54,17 +54,17 @@ const css = `
 *{margin:0;box-sizing:border-box}
 body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10;color:#f4f7ff}
 .bg{position:absolute;inset:0;background:
-  radial-gradient(58% 90% at 86% 8%, rgba(52,196,196,.18), transparent 60%),
-  radial-gradient(60% 95% at 6% 98%, rgba(54,112,238,.10), transparent 60%),
+  radial-gradient(58% 90% at 86% 8%, rgba(233,193,95,.18), transparent 60%),
+  radial-gradient(60% 95% at 6% 98%, rgba(168,132,42,.10), transparent 60%),
   radial-gradient(50% 80% at 78% 96%, rgba(217,169,58,.10), transparent 60%),
   linear-gradient(160deg,#0c0f15 0%,#111722 55%,#0b0e14 100%);}
 .frame{position:absolute;inset:0;padding:64px 72px;display:flex;flex-direction:column;justify-content:space-between;z-index:3}
 .top{display:flex;align-items:flex-start;justify-content:space-between;gap:28px}
-.logo{width:150px;height:auto;filter:drop-shadow(0 4px 20px rgba(52,196,196,.28))}
+.logo{width:150px;height:auto;filter:drop-shadow(0 4px 20px rgba(233,193,95,.28))}
 .tag{padding-top:6px;text-align:right;font-weight:800;font-size:19px;letter-spacing:.14em;text-transform:uppercase;
   background:linear-gradient(120deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .mid{max-width:820px}
-.eyebrow{font-weight:800;font-size:22px;letter-spacing:.13em;text-transform:uppercase;color:#34c4c4;margin-bottom:22px}
+.eyebrow{font-weight:800;font-size:22px;letter-spacing:.13em;text-transform:uppercase;color:#f2d489;margin-bottom:22px}
 .title{font-family:Fraunces,serif;font-weight:600;line-height:1.05;letter-spacing:-1px;filter:drop-shadow(0 6px 28px rgba(0,0,0,.5))}
 .sub{margin-top:20px;font-size:29px;line-height:1.34;color:#c2d0e4;max-width:760px}
 .foot{display:flex;align-items:center;gap:16px}

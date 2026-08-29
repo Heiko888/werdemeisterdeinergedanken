@@ -19,7 +19,7 @@ import { ARROW } from "../../docs/_glyphs.mjs";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
-const brain = pathToFileURL(join(ROOT, "public/logo-brain-frei.png")).href;
+const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const OUT = join(ROOT, "docs/marketing/story-overlays");
 
 // ===========================================================================
@@ -45,22 +45,22 @@ const STORIES = [
 
 const cssFor = (F) => `*{margin:0;box-sizing:border-box}
 body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:transparent}
-.eyebrow{font-size:${F.ebFs}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#a3d64f}
+.eyebrow{font-size:${F.ebFs}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489}
 h1{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${F.headFs}px;line-height:1.03;letter-spacing:-.5px}
-h1 em{background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.bar{width:92px;height:6px;border-radius:4px;background:linear-gradient(100deg,#a3d64f,#34c4c4)}
+h1 em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.bar{width:92px;height:6px;border-radius:4px;background:linear-gradient(100deg,#f2d489,#d9a93a)}
 .sub{font-size:${F.subFs}px;color:rgba(244,242,236,.85);line-height:1.35;max-width:${Math.round(F.w*0.6)}px}
-.brainmini{position:absolute;top:${F.brainTop}px;left:60px;width:92px;z-index:9;filter:drop-shadow(0 6px 30px rgba(52,196,196,.5))}
+.brainmini{position:absolute;top:${F.brainTop}px;left:60px;width:92px;z-index:9;filter:drop-shadow(0 6px 30px rgba(233,193,95,.5))}
 .txt{position:absolute;left:64px;bottom:${F.txtBottom}px;width:${Math.round(F.w*0.6)}px;z-index:9;display:flex;flex-direction:column;gap:20px}
 .foot{position:absolute;left:64px;right:64px;bottom:52px;display:flex;justify-content:space-between;align-items:center;z-index:9}
 .foot .h{font-size:22px;font-weight:700;color:rgba(244,242,236,.72)}
-.foot .s{font-size:22px;font-weight:700;color:#a3d64f}
+.foot .s{font-size:22px;font-weight:700;color:#f2d489}
 .scrim{position:absolute;inset:0;z-index:5;background:
  linear-gradient(to bottom, transparent ${F.scrimTop}%, rgba(5,9,20,.5) ${F.scrimTop+30}%, rgba(5,9,20,.92) 100%),
  linear-gradient(to right, rgba(5,9,20,.75) 0%, rgba(5,9,20,.15) 42%, transparent 62%)}
 .bg{position:absolute;inset:0;background:
- radial-gradient(50% 90% at 20% 16%, rgba(33,178,189,.30), transparent 60%),
- radial-gradient(46% 90% at 92% 96%, rgba(54,112,238,.22), transparent 60%),#08102a}
+ radial-gradient(50% 90% at 20% 16%, rgba(233,193,95,.30), transparent 60%),
+ radial-gradient(46% 90% at 92% 96%, rgba(168,132,42,.22), transparent 60%),#08102a}
 .stars{position:absolute;inset:0;background-image:
  radial-gradient(1.6px 1.6px at 24% 30%,rgba(255,255,255,.6),transparent),
  radial-gradient(1.4px 1.4px at 60% 18%,rgba(255,255,255,.4),transparent),
