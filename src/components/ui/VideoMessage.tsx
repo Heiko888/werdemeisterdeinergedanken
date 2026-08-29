@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
 
 /**
@@ -33,10 +33,20 @@ export function VideoMessage({
           ? "aspect-[4/3]"
           : "aspect-video";
 
-  // hqdefault ist bei allen Videos vorhanden und wird über die CSP (img-src
-  // https:) geladen.
-  const poster = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+  // maxresdefault ist das native 16:9-Vorschaubild (1280×720, scharf, ohne
+  // schwarze Balken) und passt damit exakt in den Video-Rahmen. Es ist nur bei
+  // Videos mit HD-Quelle vorhanden – fehlt es, liefert YouTube 404 und wir
+  // fallen auf hqdefault zurück, das bei allen Videos existiert. Beide werden
+  // über die CSP (img-src https:) geladen.
+  const posterMax = `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`;
+  const posterFallback = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+  const [poster, setPoster] = useState(posterMax);
   const embed = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1`;
+
+  // Bei einem Video-Wechsel wieder mit dem hochauflösenden Vorschaubild starten.
+  useEffect(() => {
+    setPoster(posterMax);
+  }, [posterMax]);
 
   return (
     <figure
@@ -69,6 +79,9 @@ export function VideoMessage({
             alt=""
             className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
             loading="lazy"
+            onError={() => {
+              if (poster !== posterFallback) setPoster(posterFallback);
+            }}
           />
           {/* dezente Abdunklung für Kontrast */}
           <span
