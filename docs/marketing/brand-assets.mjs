@@ -35,34 +35,43 @@ const BG = `
   radial-gradient(46% 110% at 6% 96%, rgba(168,132,42,.10), transparent 60%),
   radial-gradient(42% 90% at 74% 92%, rgba(217,169,58,.12), transparent 60%),
   #090b10;}`;
+// Helle Creme-Fläche – 1:1 wie der Website-Header (.bg-paper-aura).
+const BG_HELL = `
+.bg{position:absolute;inset:0;background:
+  radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
+  radial-gradient(60% 55% at 96% 4%, rgba(242,212,137,.12), transparent 60%),
+  radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),
+  #f6f4ee;
+  box-shadow:inset 0 26px 44px -34px rgba(8,16,42,.22);}`;
 
-const shell = (w, h, extra, body) => `<!doctype html><html><head><meta charset="utf8">
+// hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent in tiefem Gold #7e6410).
+const shell = (w, h, extra, body, hell) => `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
-body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10}
-${BG}
+body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${hell ? "#f6f4ee" : "#090b10"}}
+${hell ? BG_HELL : BG}
 .brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(233,193,95,.45))}
-.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.35), transparent 66%);filter:blur(30px)}
-.wordmark{font-weight:800;text-transform:uppercase;color:rgba(244,242,236,.92)}
-.wordmark span{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
-.url{font-weight:700;color:#e8c15f;letter-spacing:.3px}
-.eyebrow{font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#f2d489}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".22" : ".35"}), transparent 66%);filter:blur(30px)}
+.wordmark{font-weight:800;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
+.wordmark span{background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
+.url{font-weight:700;color:${hell ? "#7e6410" : "#e8c15f"};letter-spacing:.3px}
+.eyebrow{font-weight:700;letter-spacing:4px;text-transform:uppercase;color:${hell ? "#7e6410" : "#f2d489"}}
 ${extra}
 </style></head><body><div class="bg"></div>${body}</body></html>`;
 
 // ---------- Layouts ---------------------------------------------------------
 
 // Rundes Profilbild – Icon zentriert, komplett kreis-sicher (kein Text am Rand)
-const avatarRound = (w) => shell(w, w, `
+const avatarRound = (w, hell) => shell(w, w, `
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(233,193,95,.18)}
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(${hell ? "168,132,42,.38" : "233,193,95,.18"})}
 .glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.62)}px;height:${Math.round(w*0.62)}px}
 .brain{width:${Math.round(w*0.6)}px;height:${Math.round(w*0.6)}px}
 `, `<div class="center"><div class="ring"></div><div class="glow"></div>
-  <img class="brain" src="${brainUrl}"></div>`);
+  <img class="brain" src="${brainUrl}"></div>`, hell);
 
 // Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel)
-const channelSquare = (w) => shell(w, w, `
+const channelSquare = (w, hell) => shell(w, w, `
 .stack{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:${Math.round(w*0.045)}px;text-align:center;padding:0 ${Math.round(w*0.08)}px}
 .glow{left:50%;top:38%;transform:translate(-50%,-50%);width:${Math.round(w*0.5)}px;height:${Math.round(w*0.5)}px}
 .brain{width:${Math.round(w*0.44)}px;height:${Math.round(w*0.44)}px}
@@ -72,7 +81,7 @@ const channelSquare = (w) => shell(w, w, `
   <img class="brain" src="${brainUrl}">
   <div class="wordmark">Werde Meister deiner<br><span>Gedanken</span></div>
   <div class="url">www.werdemeisterdeinergedanken.de</div>
-</div>`);
+</div>`, hell);
 
 // YouTube-Video-Thumbnail 16:9 – klickstark, großer Titel + Akzentwort
 const thumbnail = (w, h, data) => shell(w, h, `
@@ -246,7 +255,7 @@ const STORY_TEXT = `
     <div class="sub">Raus aus fremden Mustern. Rein in dein eigenes Denken.</div>
     <div class="url">www.werdemeisterdeinergedanken.de</div>`;
 
-const storyPost = (w, h) => {
+const storyPost = (w, h, hell) => {
   const land = w > h * 1.15;
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v);
@@ -255,11 +264,11 @@ const storyPost = (w, h) => {
     : Math.round(base * (h > w * 1.4 ? 0.5 : h > w ? 0.44 : 0.36));
   const common = `
 .eyebrow{font-size:${b(0.024)}px;letter-spacing:.16em}
-.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.32), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
+.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".2" : ".32"}), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
 .brain{position:relative;width:${brainSize}px;height:${brainSize}px}
-.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
-.h .g{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{font-size:${b(0.033)}px;line-height:1.42;color:rgba(244,242,236,.80)}
+.h{font-family:Fraunces,serif;font-weight:600;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
+.h .g{background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:${b(0.033)}px;line-height:1.42;color:${hell ? "rgba(22,35,31,.80)" : "rgba(244,242,236,.80)"}}
 .url{font-size:${b(0.028)}px}`;
 
   if (land) {
@@ -270,7 +279,7 @@ const storyPost = (w, h) => {
 `, `<div class="post">
   <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${brainUrl}"></div>
   <div class="col">${STORY_TEXT}</div>
-</div>`);
+</div>`, hell);
   }
   // Hoch-/Quadratformat: Brain oben, zentrierte Textsäule darunter
   return shell(w, h, `${common}
@@ -280,7 +289,7 @@ const storyPost = (w, h) => {
 `, `<div class="post">
   <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${brainUrl}"></div>
   <div class="col">${STORY_TEXT}</div>
-</div>`);
+</div>`, hell);
 };
 
 // ---------- Inhalte ---------------------------------------------------------
@@ -300,14 +309,14 @@ const THUMBS = [
 
 const TARGETS = [];
 // Avatare
-TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, html: () => avatarRound(1080) });
-TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, html: () => channelSquare(1080) });
-TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, html: () => channelSquare(1080) });
+TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, hell: true, html: (hell) => avatarRound(1080, hell) });
+TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (hell) => channelSquare(1080, hell) });
+TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (hell) => channelSquare(1080, hell) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
 // Info-/Katalog-Kachel mit Wortmarke und ein Status-Banner im Hochformat (9:16).
-TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Profilbild.png",  w: 1080, h: 1080, html: () => avatarRound(1080) });
-TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Kanalbild.png",   w: 1080, h: 1080, html: () => channelSquare(1080) });
-TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Status-9x16.png", w: 1080, h: 1920, html: () => storyPost(1080, 1920) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Profilbild.png",  w: 1080, h: 1080, hell: true, html: (hell) => avatarRound(1080, hell) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Kanalbild.png",   w: 1080, h: 1080, hell: true, html: (hell) => channelSquare(1080, hell) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Status-9x16.png", w: 1080, h: 1920, hell: true, html: (hell) => storyPost(1080, 1920, hell) });
 // YouTube-Thumbnails
 for (const d of THUMBS)
   TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, html: () => thumbnail(1280, 720, d) });
@@ -335,7 +344,7 @@ for (const F of EBOOK_FORMATS)
   TARGETS.push({ file: `ebook/WMDG-Ebook-${F.key}.png`, w: F.w, h: F.h, html: () => ebookPost(F.w, F.h) });
 // Instagram-Story / Key-Visual – dieselben 5 Formate wie das E-Book
 for (const F of EBOOK_FORMATS)
-  TARGETS.push({ file: `instagram/WMDG-Instagram-Story-${F.key}.png`, w: F.w, h: F.h, html: () => storyPost(F.w, F.h) });
+  TARGETS.push({ file: `instagram/WMDG-Instagram-Story-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (hell) => storyPost(F.w, F.h, hell) });
 
 // ---------- Render ----------------------------------------------------------
 const require = createRequire(import.meta.url);
@@ -358,13 +367,18 @@ const targets = only ? TARGETS.filter((t) => t.file.includes(only)) : TARGETS;
 const SCALE = Number(process.env.SCALE || "1") || 1;
 const browser = await chromium.launch({ executablePath: findChrome() });
 for (const t of targets){
-  const page = await browser.newPage({ viewport:{ width:t.w, height:t.h }, deviceScaleFactor: SCALE });
-  const tmp = join(HERE, `.tmp-asset.html`);
-  writeFileSync(tmp, t.html());
-  await page.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
-  mkdirSync(join(HERE, dirname(t.file)), { recursive:true });
-  await page.screenshot({ path: join(HERE, t.file) });
-  await page.close(); rmSync(tmp,{force:true});
-  console.log("✓", t.file, `${t.w * SCALE}×${t.h * SCALE}`);
+  // Standard (dunkel) und – wo markiert (t.hell) – zusätzlich die Creme-Variante.
+  const variants = t.hell ? [false, true] : [false];
+  for (const hell of variants){
+    const outFile = hell ? t.file.replace(/\.png$/, "-hell.png") : t.file;
+    const page = await browser.newPage({ viewport:{ width:t.w, height:t.h }, deviceScaleFactor: SCALE });
+    const tmp = join(HERE, `.tmp-asset.html`);
+    writeFileSync(tmp, t.html(hell));
+    await page.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
+    mkdirSync(join(HERE, dirname(outFile)), { recursive:true });
+    await page.screenshot({ path: join(HERE, outFile) });
+    await page.close(); rmSync(tmp,{force:true});
+    console.log("✓", outFile, `${t.w * SCALE}×${t.h * SCALE}`);
+  }
 }
 await browser.close();
