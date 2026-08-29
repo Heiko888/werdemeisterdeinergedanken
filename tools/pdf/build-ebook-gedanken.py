@@ -103,8 +103,8 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
 .brandrow img{ width:38px; height:38px; }
 .brandrow span{ font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--teal-300); font-weight:600; line-height:1.3; }
 .eyebrow{ margin-top:12mm; display:inline-flex; align-items:center; gap:9px;
-  font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-300); font-weight:600; }
-.eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--gold-400); display:inline-block; }
+  font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-700); font-weight:700; }
+.eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--gold-500); display:inline-block; }
 .title{ font-size:46px; line-height:1.08; font-weight:600; margin-top:13px; letter-spacing:-.4px;
  }
 .title em{ font-style:italic; color:var(--gold-700); font-weight:500; }
