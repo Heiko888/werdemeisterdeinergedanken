@@ -30,7 +30,9 @@ const SERIF = "Georgia";                 // ≈ Fraunces
 const SANS = "Arial";                    // ≈ Inter
 const hex = (h) => h.replace("#", "").toUpperCase();
 const INK = hex(C.ink), MUTED = hex(C.inkMuted), MID = hex(C.inkMid);
-const TEAL = hex(C.tealAA), GREEN = hex(C.greenAA), LINE = hex(C.teal);
+// Gold als tragende Markenfarbe: gold-600 (Antikgold) für die große Wortmarke
+// und Feinlinien, gold-700 (AA auf Hell) für kleine Texte/Links.
+const GOLD_WORD = hex(C.gold600), GOLD_TEXT = hex(C.gold700), LINE = hex(C.gold600);
 
 const logo = readFileSync(join(ROOT, "public/email/wmdg-signatur-logo.png"));
 
@@ -40,7 +42,7 @@ const noBorder = { style: BorderStyle.NONE, size: 0, color: "auto" };
 const noBorders = { top: noBorder, bottom: noBorder, left: noBorder, right: noBorder,
   insideHorizontal: noBorder, insideVertical: noBorder };
 
-// Feine Marken-Linie (Teal) als Absatz-Unterkante.
+// Feine Marken-Linie (Gold) als Absatz-Unterkante.
 const ruleP = (opts = {}) => new Paragraph({
   border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: LINE, space: 1 } },
   spacing: { after: 0, ...opts.spacing },
@@ -58,7 +60,7 @@ function header() {
         color: INK, characterSpacing: 40 })] }),
       new Paragraph({ children: [new TextRun({
         text: CONTACT.wordmarkBottom.toUpperCase(), font: SANS, bold: true, size: 40,
-        color: GREEN, characterSpacing: 30 })] }),
+        color: GOLD_WORD, characterSpacing: 30 })] }),
     ],
   });
   const emblem = new TableCell({
@@ -72,7 +74,7 @@ function header() {
     width: { size: 2554, type: WidthType.DXA },
     children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({
       text: CONTACT.tagline.toUpperCase(), font: SANS, bold: true, size: 17,
-      color: TEAL, characterSpacing: 30 })] })],
+      color: GOLD_TEXT, characterSpacing: 30 })] })],
   });
   return new Header({ children: [
     new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, borders: noBorders,
@@ -97,7 +99,7 @@ function footer() {
   const kontakt = [
     ...(CONTACT.phone ? [{ text: "Tel " + CONTACT.phone }] : []),
     { text: CONTACT.email },
-    { text: CONTACT.web, color: GREEN },
+    { text: CONTACT.web, color: GOLD_TEXT },
   ];
   return new Footer({ children: [
     ruleP(),

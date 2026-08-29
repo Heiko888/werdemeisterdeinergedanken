@@ -41,19 +41,20 @@ const base = () => `
 ${fontsCss}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-.grad{background:linear-gradient(100deg,${C.leaf},${C.teal});-webkit-background-clip:text;background-clip:text;color:transparent}
+/* Marken-Signatur-Verlauf (Gold) auf Dunkel – wie der goldene Logo-Schriftzug. */
+.grad{background:linear-gradient(100deg,${C.gold300},${C.gold400});-webkit-background-clip:text;background-clip:text;color:transparent}
+/* Auf Hell braucht der Schriftzug tieferes Gold, sonst zu blass (Kap. 04). */
+.gradLight{background:linear-gradient(100deg,${C.gold500},${C.gold700});-webkit-background-clip:text;background-clip:text;color:transparent}
+/* Ruhiger, cinematischer Grund (statt „kosmisch") mit warmem Gold-Schimmer. */
 .cosmos{background:
-  radial-gradient(60% 120% at 85% 12%, rgba(52,196,196,.30), transparent 60%),
-  radial-gradient(52% 120% at 8% 94%, rgba(54,112,238,.20), transparent 60%),
-  radial-gradient(44% 90% at 72% 92%, rgba(140,198,63,.14), transparent 60%),
+  radial-gradient(70% 120% at 82% 8%, rgba(242,212,137,.16), transparent 62%),
+  radial-gradient(60% 120% at 10% 98%, rgba(168,132,42,.12), transparent 60%),
   ${C.navy900};}
 .stars{position:absolute;inset:0;pointer-events:none;background-image:
-  radial-gradient(1.5px 1.5px at 22% 28%,rgba(255,255,255,.65),transparent),
-  radial-gradient(1.4px 1.4px at 66% 20%,rgba(255,255,255,.45),transparent),
-  radial-gradient(1.3px 1.3px at 82% 60%,rgba(180,210,255,.5),transparent),
-  radial-gradient(1.2px 1.2px at 52% 46%,rgba(255,255,255,.4),transparent),
-  radial-gradient(1.3px 1.3px at 90% 36%,rgba(200,180,255,.45),transparent),
-  radial-gradient(1.2px 1.2px at 34% 74%,rgba(255,255,255,.4),transparent);}
+  radial-gradient(1.3px 1.3px at 22% 28%,rgba(255,255,255,.40),transparent),
+  radial-gradient(1.2px 1.2px at 66% 20%,rgba(255,255,255,.28),transparent),
+  radial-gradient(1.2px 1.2px at 88% 64%,rgba(242,212,137,.30),transparent),
+  radial-gradient(1.1px 1.1px at 52% 46%,rgba(255,255,255,.22),transparent);}
 `;
 
 // ============================================================================
@@ -87,12 +88,12 @@ function cardFront({ marks = false } = {}) {
     .page{position:absolute;inset:0}
     .safe{position:absolute;left:${b}mm;top:${b}mm;width:${CARD.w}mm;height:${CARD.h}mm;overflow:hidden}
     .fill{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 7mm}
-    .brain{width:16mm;height:auto;filter:drop-shadow(0 0 4mm rgba(52,196,196,.45)) drop-shadow(0 0 2mm rgba(140,198,63,.35))}
+    .brain{width:16mm;height:auto;filter:drop-shadow(0 0 4mm rgba(242,212,137,.40)) drop-shadow(0 0 2mm rgba(232,193,95,.30))}
     .wm{margin-top:3.4mm;line-height:1}
     .wm .t{font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:3.1mm;color:${C.cream}}
     .wm .g{font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:6.6mm;margin-top:1.1mm}
-    .eyebrow{margin-top:3.6mm;font-size:2.35mm;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:${C.teal}}
-    .rule{margin:2.6mm auto 0;width:14mm;height:.4mm;border-radius:1mm;background:linear-gradient(100deg,${C.leafBright},${C.teal})}
+    .eyebrow{margin-top:3.6mm;font-size:2.35mm;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:${C.gold300}}
+    .rule{margin:2.6mm auto 0;width:14mm;height:.4mm;border-radius:1mm;background:linear-gradient(100deg,${C.gold300},${C.gold500})}
   </style></head><body>
     <div class="page cosmos"><div class="stars"></div></div>
     <div class="safe"><div class="fill">
@@ -121,14 +122,14 @@ function cardBack({ marks = false } = {}) {
     .top{display:flex;align-items:center;gap:2.4mm}
     .top img{width:8.4mm;height:auto}
     .top .nm{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:4.6mm;color:${C.ink};letter-spacing:-.01em;line-height:1.05}
-    .role{margin-top:1.1mm;font-size:2.5mm;font-weight:600;letter-spacing:.02em;color:${C.tealAA}}
+    .role{margin-top:1.1mm;font-size:2.5mm;font-weight:600;letter-spacing:.02em;color:${C.gold700}}
     .contact{margin-top:4.2mm;display:flex;flex-direction:column;gap:1.5mm}
     .row{display:flex;align-items:baseline;gap:2.4mm;font-size:2.7mm}
     .row .k{flex:0 0 8mm;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:2mm;color:${C.inkMuted}}
     .row .v{color:${C.ink};font-weight:500}
     .foot{position:absolute;left:7mm;right:7mm;bottom:5.2mm;display:flex;align-items:center;gap:2mm}
-    .foot .line{flex:1;height:.3mm;background:linear-gradient(100deg,${C.leaf},${C.teal});opacity:.65}
-    .foot .site{font-size:2.35mm;font-weight:600;color:${C.greenAA};letter-spacing:.01em;white-space:nowrap}
+    .foot .line{flex:1;height:.3mm;background:${C.gold600};opacity:.75}
+    .foot .site{font-size:2.35mm;font-weight:600;color:${C.gold700};letter-spacing:.01em;white-space:nowrap}
   </style></head><body>
     <div class="page"></div>
     <div class="safe">
@@ -159,23 +160,23 @@ function cardPreview() {
     .card{width:${CARD.w * scale}px;height:${CARD.h * scale}px;border-radius:${3 * scale}px;overflow:hidden;
       box-shadow:0 ${3 * scale}px ${9 * scale}px rgba(8,16,42,.30);position:relative}
     .front{color:${C.cream};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 ${7 * scale}px}
-    .front img{width:${16 * scale}px;filter:drop-shadow(0 0 ${4 * scale}px rgba(52,196,196,.45))}
+    .front img{width:${16 * scale}px;filter:drop-shadow(0 0 ${4 * scale}px rgba(242,212,137,.40))}
     .wt{margin-top:${3.4 * scale}px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:${3.1 * scale}px}
     .wg{font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:${6.6 * scale}px;margin-top:${1.1 * scale}px}
-    .eb{margin-top:${3.6 * scale}px;font-size:${2.35 * scale}px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:${C.teal}}
-    .rl{margin-top:${2.6 * scale}px;width:${14 * scale}px;height:${1.6}px;border-radius:2px;background:linear-gradient(100deg,${C.leafBright},${C.teal})}
+    .eb{margin-top:${3.6 * scale}px;font-size:${2.35 * scale}px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:${C.gold300}}
+    .rl{margin-top:${2.6 * scale}px;width:${14 * scale}px;height:${1.6}px;border-radius:2px;background:linear-gradient(100deg,${C.gold300},${C.gold500})}
     .back{background:${C.paper};padding:${6 * scale}px ${7 * scale}px;position:relative}
     .btop{display:flex;align-items:center;gap:${2.4 * scale}px}
     .btop img{width:${8.4 * scale}px}
     .nm{font-family:Fraunces,serif;font-weight:500;font-size:${4.6 * scale}px;color:${C.ink};line-height:1.05}
-    .role{margin-top:${1.1 * scale}px;font-size:${2.5 * scale}px;font-weight:600;color:${C.tealAA}}
+    .role{margin-top:${1.1 * scale}px;font-size:${2.5 * scale}px;font-weight:600;color:${C.gold700}}
     .ct{margin-top:${4.2 * scale}px;display:flex;flex-direction:column;gap:${1.5 * scale}px}
     .r{display:flex;gap:${2.4 * scale}px;font-size:${2.7 * scale}px}
     .r .k{flex:0 0 ${8 * scale}px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:${2 * scale}px;color:${C.inkMuted}}
     .r .v{color:${C.ink};font-weight:500}
     .bf{position:absolute;left:${7 * scale}px;right:${7 * scale}px;bottom:${5.2 * scale}px;display:flex;align-items:center;gap:${2 * scale}px}
-    .bf .ln{flex:1;height:1.6px;background:linear-gradient(100deg,${C.leaf},${C.teal});opacity:.65}
-    .bf .st{font-size:${2.35 * scale}px;font-weight:600;color:${C.greenAA};white-space:nowrap}
+    .bf .ln{flex:1;height:1.6px;background:${C.gold600};opacity:.75}
+    .bf .st{font-size:${2.35 * scale}px;font-weight:600;color:${C.gold700};white-space:nowrap}
   </style></head><body>
     <div class="card cosmos front"><div class="stars"></div>
       <img src="${BRAIN}" alt="">
@@ -231,8 +232,8 @@ function letterhead({ sample = false } = {}) {
     .brandbox img{width:15mm;height:auto}
     .wm .t{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:2.9mm;color:${C.ink};line-height:1}
     .wm .g{font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:5.4mm;line-height:1.05;margin-top:.6mm}
-    .tag{text-align:right;font-size:2.5mm;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:${C.tealAA};max-width:48mm}
-    .hrule{position:absolute;top:32mm;left:20mm;right:20mm;height:.5mm;border-radius:1mm;background:linear-gradient(100deg,${C.leafBright},${C.teal})}
+    .tag{text-align:right;font-size:2.5mm;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:${C.gold700};max-width:48mm}
+    .hrule{position:absolute;top:32mm;left:20mm;right:20mm;height:.5mm;border-radius:1mm;background:linear-gradient(100deg,${C.gold500},${C.gold600})}
     /* Textbereich */
     .body{position:absolute;top:45mm;left:25mm;right:20mm;bottom:34mm}
     .addr{margin-top:0}
@@ -245,15 +246,15 @@ function letterhead({ sample = false } = {}) {
     .placeholder{min-height:120mm}
     /* Fußzeile */
     .foot{position:absolute;left:20mm;right:20mm;bottom:14mm}
-    .foot .line{height:.4mm;background:linear-gradient(100deg,${C.leaf},${C.teal});opacity:.7;margin-bottom:3mm}
+    .foot .line{height:.4mm;background:${C.gold600};opacity:.8;margin-bottom:3mm}
     .cols{display:flex;justify-content:space-between;gap:8mm;font-size:2.5mm;line-height:1.5;color:${C.inkMuted}}
     .cols b{color:${C.ink};font-weight:600;display:block;margin-bottom:.6mm;font-size:2.5mm;letter-spacing:.04em}
-    .cols .green{color:${C.greenAA};font-weight:600}
+    .cols .green{color:${C.gold700};font-weight:600}
   </style></head><body>
     <div class="head">
       <div class="brandbox">
         <img src="${BRAIN}" alt="">
-        <div class="wm"><div class="t">${CONTACT.wordmarkTop}</div><div class="g grad">${CONTACT.wordmarkBottom}</div></div>
+        <div class="wm"><div class="t">${CONTACT.wordmarkTop}</div><div class="g gradLight">${CONTACT.wordmarkBottom}</div></div>
       </div>
       <div class="tag">${CONTACT.tagline}</div>
     </div>

@@ -89,9 +89,11 @@ Quelle: `tools/print/geschaeftsausstattung.mjs` (Kontaktdaten dort im
   wandeln lassen (oder RGB-Digitaldruck wählen).
 - Emblem-Mindestgröße im Druck: mind. **12 mm** Höhe (Visitenkarte nutzt 16 mm,
   Briefbogen 15 mm). Schutzraum wie in Kap. 03 (mind. halbe Emblemhöhe ringsum).
-- Farben/Schriften spiegeln die Quelle der Wahrheit (Kap. 04/05); kein
-  Marken-Grün/-Teal als **Fließtext** auf Hell – dafür `ink`-Töne bzw. die
-  AA-Ersatztöne (`#0f6d77` Teal, `#3a7615` Grün).
+- Farben/Schriften spiegeln die Quelle der Wahrheit (Kap. 04/05). Der
+  **goldene Logo-Schriftzug** ist der tragende Akzent: auf Dunkel leuchtet
+  Gold (`gold-300/400`), auf Hell tragen die tiefen Töne (`gold-600`
+  Antikgold für Feinlinien, `gold-700` als AA-Text/Link). Fließtext bleibt
+  in `ink`-Tönen.
 
 Für den Alltag gibt es den Briefbogen zusätzlich als **Word-Vorlage** zum
 Download (`npm run briefpapier:word` → `WMDG-Briefpapier-Vorlage.docx`):
