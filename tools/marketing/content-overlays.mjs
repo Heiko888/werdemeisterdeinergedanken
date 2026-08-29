@@ -58,17 +58,21 @@ const scrimCss = `
 
 // Zitat-Overlay – Typografie 1:1 wie quoteTile in brand-assets.mjs.
 const quoteCss = (w, h) => `
-.qmark{position:absolute;left:50%;top:${Math.round(h * 0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w * 0.6)}px;line-height:.62;color:rgba(130,210,215,.14);pointer-events:none;z-index:2}
+.qmark{position:absolute;left:50%;top:${Math.round(h * 0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w * 0.6)}px;line-height:.62;color:rgba(242,212,137,.14);pointer-events:none;z-index:2}
 .qwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w - Math.round(w * 0.3)}px;text-align:center;z-index:3}
 .quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w * 0.067)}px;line-height:1.32;letter-spacing:-.3px;text-shadow:0 2px 24px rgba(0,0,0,.45)}
 .quote em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
-.foot{position:absolute;left:0;right:0;bottom:${Math.round(w * 0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px;z-index:3}
-.foot img{width:${Math.round(w * 0.037)}px;height:${Math.round(w * 0.037)}px;object-fit:contain;opacity:.88}
-.foot .t{font-size:${Math.round(w * 0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.72)}`;
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(w * 0.072)}px;display:flex;align-items:center;justify-content:center;gap:${Math.round(w * 0.016)}px;z-index:3}
+.foot img{width:${Math.round(w * 0.052)}px;height:${Math.round(w * 0.052)}px;object-fit:contain}
+.foot .wm{display:flex;flex-direction:column;gap:${Math.round(w * 0.006)}px;line-height:1;text-align:left}
+.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w * 0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,242,236,.92)}
+.foot .wm1 em{font-style:normal;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot .wm2{display:flex;align-items:center;gap:${Math.round(w * 0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w * 0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,242,236,.72)}
+.foot .wm2 i{display:block;height:1px;width:${Math.round(w * 0.022)}px;background:rgba(242,212,137,.85)}`;
 
 const quoteBody = (q) => `<div class="scrim"></div><div class="qmark">„</div>
 <div class="qwrap"><div class="quote">${q.t}</div></div>
-<div class="foot"><img src="${brain}"><span class="t">Werde Meister deiner Gedanken</span></div>`;
+<div class="foot"><img src="${brain}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`;
 
 // Fakten-Overlay – Typografie 1:1 wie factTile in brand-assets.mjs.
 const factCss = (w) => `
@@ -78,9 +82,13 @@ const factCss = (w) => `
 .fact em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
 .src{margin-top:${Math.round(w * 0.045)}px;font-size:${Math.round(w * 0.026)}px;line-height:1.4;color:rgba(244,242,236,.7)}
 .src b{color:rgba(242,212,137,.95);font-weight:700}
-.foot{position:absolute;left:0;right:0;bottom:${Math.round(w * 0.072)}px;display:flex;align-items:center;justify-content:center;gap:10px;z-index:3}
-.foot img{width:${Math.round(w * 0.037)}px;height:${Math.round(w * 0.037)}px;object-fit:contain;opacity:.88}
-.foot .t{font-size:${Math.round(w * 0.023)}px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:rgba(244,242,236,.72)}`;
+.foot{position:absolute;left:0;right:0;bottom:${Math.round(w * 0.072)}px;display:flex;align-items:center;justify-content:center;gap:${Math.round(w * 0.016)}px;z-index:3}
+.foot img{width:${Math.round(w * 0.052)}px;height:${Math.round(w * 0.052)}px;object-fit:contain}
+.foot .wm{display:flex;flex-direction:column;gap:${Math.round(w * 0.006)}px;line-height:1;text-align:left}
+.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w * 0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,242,236,.92)}
+.foot .wm1 em{font-style:normal;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot .wm2{display:flex;align-items:center;gap:${Math.round(w * 0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w * 0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,242,236,.72)}
+.foot .wm2 i{display:block;height:1px;width:${Math.round(w * 0.022)}px;background:rgba(242,212,137,.85)}`;
 
 const factBody = (f) => `<div class="scrim"></div>
 <div class="fwrap">
@@ -88,7 +96,7 @@ const factBody = (f) => `<div class="scrim"></div>
   <div class="fact">${f.t}</div>
   <div class="src"><b>Quelle:</b> ${f.src}</div>
 </div>
-<div class="foot"><img src="${brain}"><span class="t">Werde Meister deiner Gedanken</span></div>`;
+<div class="foot"><img src="${brain}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`;
 
 const doc = (F, css, body, transparent) =>
   `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
