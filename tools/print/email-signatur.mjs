@@ -40,12 +40,12 @@ const SANS = "Arial, 'Helvetica Neue', Helvetica, sans-serif";  // ≈ Inter
 // die AA-Ersatztöne.
 const THEMES = {
   light: {
-    bg: "transparent", name: C.ink, role: C.tealAA, label: C.inkMuted,
-    value: C.ink, mail: C.greenAA, link: C.tealAA, divider: C.teal, tagline: C.tealAA,
+    bg: "transparent", name: C.ink, role: C.gold700, label: C.inkMuted,
+    value: C.ink, mail: C.gold700, link: C.gold700, divider: C.gold600, tagline: C.gold700,
   },
   dark: {
-    bg: C.navy900, name: C.cream, role: C.teal300, label: C.slate,
-    value: C.cream, mail: C.leafBright, link: C.teal300, divider: C.teal300, tagline: C.teal300,
+    bg: C.navy900, name: C.cream, role: C.gold300, label: C.slate,
+    value: C.cream, mail: C.gold300, link: C.gold300, divider: C.gold400, tagline: C.gold300,
   },
 };
 

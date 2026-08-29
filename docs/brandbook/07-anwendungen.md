@@ -78,7 +78,7 @@ Quelle: `tools/print/geschaeftsausstattung.mjs` (Kontaktdaten dort im
 
 | Anwendung | Maße | Aufbau |
 |-----------|------|--------|
-| **Visitenkarte** | 85×55 mm + 3 mm Beschnitt, doppelseitig | **Vorderseite** dunkel (Anthrazit + Marken-Verlauf): Emblem, Wortmarke (Signatur-Verlauf auf „Gedanken"), Tagline als Eyebrow. **Rückseite** hell (Papier): Name + Rolle, Kontaktspalte (Mail/Web/Instagram), Markenzeile in der Fußzeile. Schnittmarken angelegt. |
+| **Visitenkarte** | 85×55 mm + 3 mm Beschnitt, doppelseitig | **Vorderseite** dunkel (Anthrazit): Emblem, Wortmarke im Original-Lockup „WERDE **MEISTER** / DEINER GEDANKEN" (MEISTER gold), Tagline als Eyebrow. **Rückseite** hell (Papier): Name + Rolle, Kontaktspalte (Mail/Web/Instagram), Markenzeile mit goldenem „Meister" in der Fußzeile. Schnittmarken angelegt. |
 | **Briefpapier** | A4 (210×297 mm) | Kopf mit Emblem + Wortmarke + Tagline, feine Signatur-Linie; DIN-5008-naher Satzspiegel (Rücksende-Zeile, Adressfeld, Datum, Betreff); Fußzeile mit Anschrift, Kontakt, USt-IdNr. Als leerer Bogen **und** als Muster-Anschreiben. |
 
 **Print-Regeln:**

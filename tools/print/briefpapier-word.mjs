@@ -55,12 +55,17 @@ function header() {
     verticalAlign: VerticalAlign.CENTER, margins: { left: 120 }, borders: noBorders,
     width: { size: 5600, type: WidthType.DXA },
     children: [
-      new Paragraph({ spacing: { after: 20 }, children: [new TextRun({
-        text: CONTACT.wordmarkTop.toUpperCase(), font: SANS, bold: true, size: 20,
-        color: INK, characterSpacing: 40 })] }),
+      // Zeile 1: WERDE MEISTER (MEISTER gold, wie im Original-Logo)
+      new Paragraph({ spacing: { after: 30 }, children: [
+        new TextRun({ text: CONTACT.lockup.pre.toUpperCase() + " ", font: SANS,
+          bold: true, size: 30, color: INK, characterSpacing: 40 }),
+        new TextRun({ text: CONTACT.lockup.gold.toUpperCase(), font: SANS,
+          bold: true, size: 30, color: GOLD_WORD, characterSpacing: 40 }),
+      ] }),
+      // Zeile 2: DEINER GEDANKEN
       new Paragraph({ children: [new TextRun({
-        text: CONTACT.wordmarkBottom.toUpperCase(), font: SANS, bold: true, size: 40,
-        color: GOLD_WORD, characterSpacing: 30 })] }),
+        text: CONTACT.lockup.sub.toUpperCase(), font: SANS, bold: true, size: 16,
+        color: INK, characterSpacing: 60 })] }),
     ],
   });
   const emblem = new TableCell({

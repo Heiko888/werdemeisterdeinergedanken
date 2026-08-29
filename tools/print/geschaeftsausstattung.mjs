@@ -36,6 +36,9 @@ const BRAIN = `data:image/png;base64,${brainB64}`;
 // Kontakt-, Marken- & Farbdaten (Single Source of Truth für tools/print/*).
 import { CONTACT, C } from "./marke.mjs";
 
+// Markenzeile mit goldenem „Meister" (wie im Original-Logo).
+const brandGold = CONTACT.brand.replace(CONTACT.lockup.gold, `<b>${CONTACT.lockup.gold}</b>`);
+
 // Gemeinsames CSS (Schriften, kosmischer Hintergrund, Verlaufstext).
 const base = () => `
 ${fontsCss}
@@ -89,9 +92,11 @@ function cardFront({ marks = false } = {}) {
     .safe{position:absolute;left:${b}mm;top:${b}mm;width:${CARD.w}mm;height:${CARD.h}mm;overflow:hidden}
     .fill{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 7mm}
     .brain{width:16mm;height:auto;filter:drop-shadow(0 0 4mm rgba(242,212,137,.40)) drop-shadow(0 0 2mm rgba(232,193,95,.30))}
-    .wm{margin-top:3.4mm;line-height:1}
-    .wm .t{font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:3.1mm;color:${C.cream}}
-    .wm .g{font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:6.6mm;margin-top:1.1mm}
+    .wm{margin-top:3.4mm;text-align:center}
+    .wm .l1{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:6mm;line-height:1;color:${C.cream}}
+    .wm .l2{margin-top:1.7mm;display:flex;align-items:center;justify-content:center;gap:2.4mm;font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:2.4mm;color:${C.cream}}
+    .wm .l2 i{display:block;width:5mm;height:.35mm;background:linear-gradient(90deg,${C.gold300},${C.gold500})}
+    .wm .l2 span{padding-left:.32em}
     .eyebrow{margin-top:3.6mm;font-size:2.35mm;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:${C.gold300}}
     .rule{margin:2.6mm auto 0;width:14mm;height:.4mm;border-radius:1mm;background:linear-gradient(100deg,${C.gold300},${C.gold500})}
   </style></head><body>
@@ -99,8 +104,8 @@ function cardFront({ marks = false } = {}) {
     <div class="safe"><div class="fill">
       <img class="brain" src="${BRAIN}" alt="">
       <div class="wm">
-        <div class="t">${CONTACT.wordmarkTop}</div>
-        <div class="g grad">${CONTACT.wordmarkBottom}</div>
+        <div class="l1">${CONTACT.lockup.pre} <span class="grad">${CONTACT.lockup.gold}</span></div>
+        <div class="l2"><i></i><span>${CONTACT.lockup.sub}</span><i></i></div>
       </div>
       <div class="eyebrow">${CONTACT.tagline}</div>
       <div class="rule"></div>
@@ -129,7 +134,8 @@ function cardBack({ marks = false } = {}) {
     .row .v{color:${C.ink};font-weight:500}
     .foot{position:absolute;left:7mm;right:7mm;bottom:5.2mm;display:flex;align-items:center;gap:2mm}
     .foot .line{flex:1;height:.3mm;background:${C.gold600};opacity:.75}
-    .foot .site{font-size:2.35mm;font-weight:600;color:${C.gold700};letter-spacing:.01em;white-space:nowrap}
+    .foot .site{font-size:2.35mm;font-weight:600;color:${C.inkMid};letter-spacing:.01em;white-space:nowrap}
+    .foot .site b{color:${C.gold700};font-weight:700}
   </style></head><body>
     <div class="page"></div>
     <div class="safe">
@@ -143,7 +149,7 @@ function cardBack({ marks = false } = {}) {
         <div class="row"><span class="k">Web</span><span class="v">${CONTACT.web}</span></div>
         <div class="row"><span class="k">Insta</span><span class="v">${CONTACT.instagram}</span></div>
       </div>
-      <div class="foot"><span class="line"></span><span class="site">${CONTACT.brand}</span></div>
+      <div class="foot"><span class="line"></span><span class="site">${brandGold}</span></div>
     </div>
   </body></html>`;
 }
@@ -161,8 +167,10 @@ function cardPreview() {
       box-shadow:0 ${3 * scale}px ${9 * scale}px rgba(8,16,42,.30);position:relative}
     .front{color:${C.cream};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 ${7 * scale}px}
     .front img{width:${16 * scale}px;filter:drop-shadow(0 0 ${4 * scale}px rgba(242,212,137,.40))}
-    .wt{margin-top:${3.4 * scale}px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:${3.1 * scale}px}
-    .wg{font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:${6.6 * scale}px;margin-top:${1.1 * scale}px}
+    .l1{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:${6 * scale}px;line-height:1;color:${C.cream}}
+    .l2{margin-top:${1.7 * scale}px;display:flex;align-items:center;justify-content:center;gap:${2.4 * scale}px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:${2.4 * scale}px;color:${C.cream}}
+    .l2 i{display:block;width:${5 * scale}px;height:${1.4}px;background:linear-gradient(90deg,${C.gold300},${C.gold500})}
+    .l2 span{padding-left:.32em}
     .eb{margin-top:${3.6 * scale}px;font-size:${2.35 * scale}px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:${C.gold300}}
     .rl{margin-top:${2.6 * scale}px;width:${14 * scale}px;height:${1.6}px;border-radius:2px;background:linear-gradient(100deg,${C.gold300},${C.gold500})}
     .back{background:${C.paper};padding:${6 * scale}px ${7 * scale}px;position:relative}
@@ -176,12 +184,15 @@ function cardPreview() {
     .r .v{color:${C.ink};font-weight:500}
     .bf{position:absolute;left:${7 * scale}px;right:${7 * scale}px;bottom:${5.2 * scale}px;display:flex;align-items:center;gap:${2 * scale}px}
     .bf .ln{flex:1;height:1.6px;background:${C.gold600};opacity:.75}
-    .bf .st{font-size:${2.35 * scale}px;font-weight:600;color:${C.gold700};white-space:nowrap}
+    .bf .st{font-size:${2.35 * scale}px;font-weight:600;color:${C.inkMid};white-space:nowrap}
+    .bf .st b{color:${C.gold700};font-weight:700}
   </style></head><body>
     <div class="card cosmos front"><div class="stars"></div>
       <img src="${BRAIN}" alt="">
-      <div class="wt">${CONTACT.wordmarkTop}</div>
-      <div class="wg grad">${CONTACT.wordmarkBottom}</div>
+      <div class="wm">
+        <div class="l1">${CONTACT.lockup.pre} <span class="grad">${CONTACT.lockup.gold}</span></div>
+        <div class="l2"><i></i><span>${CONTACT.lockup.sub}</span><i></i></div>
+      </div>
       <div class="eb">${CONTACT.tagline}</div><div class="rl"></div>
     </div>
     <div class="card back">
@@ -192,7 +203,7 @@ function cardPreview() {
         <div class="r"><span class="k">Web</span><span class="v">${CONTACT.web}</span></div>
         <div class="r"><span class="k">Insta</span><span class="v">${CONTACT.instagram}</span></div>
       </div>
-      <div class="bf"><span class="ln"></span><span class="st">${CONTACT.brand}</span></div>
+      <div class="bf"><span class="ln"></span><span class="st">${brandGold}</span></div>
     </div>
   </body></html>`;
 }
@@ -230,8 +241,10 @@ function letterhead({ sample = false } = {}) {
     .head{position:absolute;top:14mm;left:20mm;right:20mm;display:flex;align-items:center;justify-content:space-between}
     .brandbox{display:flex;align-items:center;gap:4mm}
     .brandbox img{width:15mm;height:auto}
-    .wm .t{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:2.9mm;color:${C.ink};line-height:1}
-    .wm .g{font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:5.4mm;line-height:1.05;margin-top:.6mm}
+    .wm .l1{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:4.8mm;line-height:1;color:${C.ink}}
+    .wm .l2{margin-top:1.1mm;display:flex;align-items:center;gap:2mm;font-weight:600;letter-spacing:.26em;text-transform:uppercase;font-size:2mm;color:${C.ink}}
+    .wm .l2 i{display:block;width:4mm;height:.35mm;background:linear-gradient(90deg,${C.gold500},${C.gold600})}
+    .wm .l2 span{padding-left:.26em}
     .tag{text-align:right;font-size:2.5mm;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:${C.gold700};max-width:48mm}
     .hrule{position:absolute;top:32mm;left:20mm;right:20mm;height:.5mm;border-radius:1mm;background:linear-gradient(100deg,${C.gold500},${C.gold600})}
     /* Textbereich */
@@ -254,7 +267,7 @@ function letterhead({ sample = false } = {}) {
     <div class="head">
       <div class="brandbox">
         <img src="${BRAIN}" alt="">
-        <div class="wm"><div class="t">${CONTACT.wordmarkTop}</div><div class="g gradLight">${CONTACT.wordmarkBottom}</div></div>
+        <div class="wm"><div class="l1">${CONTACT.lockup.pre} <span class="gradLight">${CONTACT.lockup.gold}</span></div><div class="l2"><i></i><span>${CONTACT.lockup.sub}</span><i></i></div></div>
       </div>
       <div class="tag">${CONTACT.tagline}</div>
     </div>
