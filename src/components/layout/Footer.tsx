@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/visuals/Logo";
 import { socialIcons } from "@/components/ui/Icon";
@@ -11,6 +12,55 @@ export function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-navy-900">
+      {/* Krafttier & Symbol – der goldene Eisvogel */}
+      <div className="relative border-b border-white/10">
+        <Container className="flex flex-col items-center gap-8 py-14 text-center sm:flex-row sm:gap-11 sm:text-left">
+          <div className="relative shrink-0">
+            <div
+              aria-hidden
+              className="absolute -inset-6 -z-10 rounded-full opacity-70 blur-2xl"
+              style={{
+                background:
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 66%)",
+              }}
+            />
+            <Image
+              src="/eisvogel-gold.png"
+              alt="Goldener Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
+              width={320}
+              height={320}
+              sizes="(min-width: 640px) 176px, 144px"
+              className="mx-auto w-36 drop-shadow-[0_12px_50px_rgba(217,169,58,0.35)] sm:w-44"
+            />
+          </div>
+
+          <div className="max-w-xl">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-gold-300">
+              Krafttier &amp; Symbol
+            </p>
+            <p className="text-lg leading-relaxed text-cream">
+              Der <span className="font-medium text-gold-300">Eisvogel</span>{" "}
+              begleitet diesen Weg – er steht für einen klaren, wachen Geist und
+              den Mut, im richtigen Moment einzutauchen.
+            </p>
+            <ul className="mt-5 flex flex-col gap-x-8 gap-y-2 text-sm text-cream-dim/70 sm:flex-row sm:flex-wrap">
+              <li>
+                <span className="font-medium text-cream">Glück &amp; Hoffnung</span>{" "}
+                – Zeichen für einen neuen Lebensabschnitt.
+              </li>
+              <li>
+                <span className="font-medium text-cream">Fokus &amp; Präzision</span>{" "}
+                – blitzschnell und treffsicher.
+              </li>
+              <li>
+                <span className="font-medium text-cream">Klarheit &amp; Reinheit</span>{" "}
+                – Flaggschiff für lebendige Gewässer.
+              </li>
+            </ul>
+          </div>
+        </Container>
+      </div>
+
       {/* Link-Bereich */}
       <Container className="grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
         <div className="flex flex-col gap-4">
