@@ -10,6 +10,8 @@ export const CONTACT = {
   brand: "Werde Meister deiner Gedanken",
   wordmarkTop: "Werde Meister deiner",
   wordmarkBottom: "Gedanken",
+  // Original-Logo-Lockup: „WERDE MEISTER" (MEISTER gold) über „DEINER GEDANKEN".
+  lockup: { pre: "Werde", gold: "Meister", sub: "Deiner Gedanken" },
   tagline: "Bewusstseinsentwicklung in 7 Stufen",
   role: "Mentaltraining & Bewusstseinsarbeit",
   email: "info@werdemeisterdeinergedanken.de",

@@ -38,7 +38,7 @@ Seite; dazwischen ein DIN-5008-naher Satzspiegel mit Platzhaltern
 - **Schriften:** Word kennt Fraunces/Inter nicht → **websichere** Schriften
   (Georgia ≈ Fraunces für den Betreff, Arial ≈ Inter für den Rest).
 - **Farben:** solide, AA-taugliche Markenfarben statt Verlauf (Kap. 04); die
-  Kopf-/Fuß-Trennlinie ist ein Teal-Absatzrahmen.
+  Kopf-/Fuß-Trennlinie ist ein Gold-Absatzrahmen.
 - **Kopf/Fuß** liegen in der Word-Kopf-/Fußzeile → auf jeder Folgeseite
   automatisch vorhanden, der Textbereich bleibt frei beschreibbar.
 
@@ -69,7 +69,7 @@ nicht) → stattdessen solide, AA-konforme Markenfarben.
   Bilder, daher der bewusste Hosting-Weg.
 - **Zwei Varianten:** **hell** (kein eigener Grund, für helle Oberflächen) und
   **dunkel** (bringt einen eigenen Navy-Grund mit → bleibt dunkel, egal wie der
-  Client rendert; ideal für Dark-Mode-Clients). Auf Navy sind Teal/Grün als
+  Client rendert; ideal für Dark-Mode-Clients). Auf Navy leuchtet das Gold als
   Akzent unkritisch (Kap. 04); die helle Variante nutzt die AA-Ersatztöne.
 - **Einsetzen:** Gmail / Apple Mail → gewünschte Variante auf der HTML-Seite
   markieren, kopieren, im Signatur-Editor einfügen. Outlook → `…-Snippet.html`
@@ -77,8 +77,8 @@ nicht) → stattdessen solide, AA-konforme Markenfarben.
 
 ## Aufbau
 
-- **Visitenkarte Vorderseite** – dunkel (Navy + kosmischer Verlauf), freigestelltes
-  Gehirn-Emblem, Wortmarke (Signatur-Verlauf auf „Gedanken"), Tagline als Eyebrow.
+- **Visitenkarte Vorderseite** – dunkel (ruhiges Anthrazit mit warmem Gold-Schimmer),
+  freigestelltes Gehirn-Emblem, Wortmarke im Original-Lockup „WERDE MEISTER / DEINER GEDANKEN" (MEISTER gold), Tagline als Eyebrow.
 - **Visitenkarte Rückseite** – hell (Papier), Name + Rolle, Kontaktspalte
   (Mail / Web / Instagram), Markenzeile in der Fußzeile.
 - **Briefbogen** – Kopf mit Logo + Wortmarke + Tagline, feine Signatur-Linie,
