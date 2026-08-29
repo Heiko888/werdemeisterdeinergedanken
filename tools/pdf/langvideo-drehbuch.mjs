@@ -116,36 +116,38 @@ function findChrome() {
 }
 
 const fontsCss = readFileSync(join(ROOT, "docs", "reels", "covers", "_fonts.css"), "utf8");
-const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "docs", "reels", "covers", "logo.png")).toString("base64")}`;
+const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
 const CHROME = findChrome();
 
 const CSS = `
 ${fontsCss}
-:root{ --ink:#1a2230; --mid:#4b5769; --muted:#8b96a6; --leaf:#6aab24; --teal:#199aa8; }
+:root{ --ink:#16231f; --mid:#48524e; --muted:#626b67; --leaf:#7e6410; --teal:#7e6410; }
 @page{ size:A4; margin:20mm 18mm; }
 *{ box-sizing:border-box; }
-body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:11.5pt; line-height:1.55; }
-.cover{ height:257mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; }
+body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:11.5pt; line-height:1.55; background:#f6f4ee; }
+.cover{ height:257mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always;
+  background:radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
+    radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%), #f6f4ee; }
 .cover img{ width:150px; margin-bottom:26px; }
 .brow{ font-size:11pt; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
 .cover h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:32pt; margin:0 0 6px; border:0; }
 .cover p{ color:var(--mid); font-size:12pt; margin:2px 0; max-width:150mm; }
 .serie{ page-break-before:always; }
 h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:24pt; margin:0 0 5mm; padding-bottom:3mm;
-  border-bottom:2px solid; border-image:linear-gradient(90deg,#8cc63f,#21b2bd) 1; }
-h2{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:16pt; margin:8mm 0 2mm; color:#12324a; break-after:avoid; }
+  border-bottom:2px solid; border-image:linear-gradient(90deg,#e8c15f,#d9a93a) 1; }
+h2{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:16pt; margin:8mm 0 2mm; color:#16231f; break-after:avoid; }
 h3{ font-weight:800; font-size:11pt; letter-spacing:.02em; margin:5mm 0 1.5mm; color:var(--teal); text-transform:uppercase; break-after:avoid; }
-h4{ font-weight:700; font-size:10.5pt; margin:3mm 0 1mm; color:#33506a; break-after:avoid; }
+h4{ font-weight:700; font-size:10.5pt; margin:3mm 0 1mm; color:#2b3a35; break-after:avoid; }
 p{ margin:0 0 2mm; } p.field{ margin:0 0 1.5mm; }
 .field .lbl{ display:inline-block; min-width:70px; font-weight:800; font-size:9pt; letter-spacing:.04em; text-transform:uppercase; color:var(--leaf); }
 ul{ margin:1mm 0 3mm 5mm; } li{ margin:.6mm 0; }
-code{ font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:8.6pt; background:#eef2f7; color:#3a4a5e;
+code{ font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:8.6pt; background:#efece2; color:#48524e;
   padding:.4mm 1.4mm; border-radius:3px; }
-.note{ background:#f7f9fc; border:1px solid #e6ecf4; border-radius:8px; padding:3mm 4mm; color:var(--mid); font-size:10pt; margin:0 0 4mm; }
+.note{ background:#ffffff; border:1px solid #e7e2d4; border-radius:8px; padding:3mm 4mm; color:var(--mid); font-size:10pt; margin:0 0 4mm; }
 table{ width:100%; border-collapse:collapse; font-size:9pt; margin:2mm 0 4mm; }
-th,td{ border:1px solid #e0e7f0; padding:1.6mm 2mm; text-align:left; vertical-align:top; }
-th{ background:#eef4f5; font-weight:700; }
-strong{ font-weight:700; } em{ font-style:italic; color:#3a4a5e; }
+th,td{ border:1px solid #e7e2d4; padding:1.6mm 2mm; text-align:left; vertical-align:top; }
+th{ background:#efece2; font-weight:700; }
+strong{ font-weight:700; } em{ font-style:italic; color:#48524e; }
 `;
 
 function renderPdf(build) {
@@ -155,7 +157,7 @@ function renderPdf(build) {
       const inner = s.files.map((f) => {
         const md = readFileSync(f, "utf8");
         return mdToHtml(md);
-      }).join('\n<hr style="border:0;border-top:1px solid #e6ecf4;margin:6mm 0">\n');
+      }).join('\n<hr style="border:0;border-top:1px solid #e7e2d4;margin:6mm 0">\n');
       return `<section class="serie"><h1>${s.label}</h1>\n${inner}</section>`;
     })
     .join("\n");
