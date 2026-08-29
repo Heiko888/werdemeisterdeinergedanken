@@ -43,25 +43,30 @@ const STORIES = [
   { slug: "vom-gruebeln-zur-stille", head: `Vom Grübeln<br>zur <em>Stille</em>`, sub: `Was passierte, als ich aufhörte, gegen mich zu kämpfen.` },
 ];
 
-const cssFor = (F) => `*{margin:0;box-sizing:border-box}
+// hell=true → Creme-Theme (Grund #f6f4ee, dunkle Tinte-Schrift, Akzent tiefes Gold).
+const cssFor = (F, hell) => `*{margin:0;box-sizing:border-box}
 body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:transparent}
-.eyebrow{font-size:${F.ebFs}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489}
-h1{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${F.headFs}px;line-height:1.03;letter-spacing:-.5px}
-h1 em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.bar{width:92px;height:6px;border-radius:4px;background:linear-gradient(100deg,#f2d489,#d9a93a)}
-.sub{font-size:${F.subFs}px;color:rgba(244,242,236,.85);line-height:1.35;max-width:${Math.round(F.w*0.6)}px}
+.eyebrow{font-size:${F.ebFs}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${hell ? "#7e6410" : "#f2d489"}}
+h1{font-family:Fraunces,serif;font-weight:600;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${F.headFs}px;line-height:1.03;letter-spacing:-.5px}
+h1 em{background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.bar{width:92px;height:6px;border-radius:4px;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"}}
+.sub{font-size:${F.subFs}px;color:${hell ? "rgba(22,35,31,.85)" : "rgba(244,242,236,.85)"};line-height:1.35;max-width:${Math.round(F.w*0.6)}px}
 .brainmini{position:absolute;top:${F.brainTop}px;left:60px;width:92px;z-index:9;filter:drop-shadow(0 6px 30px rgba(233,193,95,.5))}
 .txt{position:absolute;left:64px;bottom:${F.txtBottom}px;width:${Math.round(F.w*0.6)}px;z-index:9;display:flex;flex-direction:column;gap:20px}
 .foot{position:absolute;left:64px;right:64px;bottom:52px;display:flex;justify-content:space-between;align-items:center;z-index:9}
-.foot .h{font-size:22px;font-weight:700;color:rgba(244,242,236,.72)}
-.foot .s{font-size:22px;font-weight:700;color:#f2d489}
-.scrim{position:absolute;inset:0;z-index:5;background:
+.foot .h{font-size:22px;font-weight:700;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"}}
+.foot .s{font-size:22px;font-weight:700;color:${hell ? "#7e6410" : "#f2d489"}}
+.scrim{position:absolute;inset:0;z-index:5;background:${hell ? `
+ linear-gradient(to bottom, transparent ${F.scrimTop}%, rgba(246,244,238,.5) ${F.scrimTop+30}%, rgba(246,244,238,.92) 100%),
+ linear-gradient(to right, rgba(246,244,238,.75) 0%, rgba(246,244,238,.15) 42%, transparent 62%)` : `
  linear-gradient(to bottom, transparent ${F.scrimTop}%, rgba(5,9,20,.5) ${F.scrimTop+30}%, rgba(5,9,20,.92) 100%),
- linear-gradient(to right, rgba(5,9,20,.75) 0%, rgba(5,9,20,.15) 42%, transparent 62%)}
-.bg{position:absolute;inset:0;background:
+ linear-gradient(to right, rgba(5,9,20,.75) 0%, rgba(5,9,20,.15) 42%, transparent 62%)`}}
+.bg{position:absolute;inset:0;background:${hell ? `
+ radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
+ radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),#f6f4ee` : `
  radial-gradient(50% 90% at 20% 16%, rgba(233,193,95,.30), transparent 60%),
- radial-gradient(46% 90% at 92% 96%, rgba(168,132,42,.22), transparent 60%),#090b10}
-.stars{position:absolute;inset:0;background-image:
+ radial-gradient(46% 90% at 92% 96%, rgba(168,132,42,.22), transparent 60%),#090b10`}}
+.stars{display:${hell ? "none" : "block"};position:absolute;inset:0;background-image:
  radial-gradient(1.6px 1.6px at 24% 30%,rgba(255,255,255,.6),transparent),
  radial-gradient(1.4px 1.4px at 60% 18%,rgba(255,255,255,.4),transparent),
  radial-gradient(1.3px 1.3px at 84% 60%,rgba(180,210,255,.5),transparent)}`;
@@ -75,9 +80,9 @@ const overlayBody = (s, i) => `<div class="scrim"></div>
 </div>
 <div class="foot"><span class="h">Persönliche Geschichten</span><span class="s">wischen ${ARROW}</span></div>`;
 
-const doc = (F, body, transparent) =>
+const doc = (F, body, transparent, hell) =>
   `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>body{background:${transparent ? "transparent" : "#090b10"}}${cssFor(F)}</style></head><body>${body}</body></html>`;
+<style>body{background:${transparent ? "transparent" : (hell ? "#f6f4ee" : "#090b10")}}${cssFor(F, hell)}</style></head><body>${body}</body></html>`;
 
 const require = createRequire(import.meta.url);
 function findChrome(){
@@ -95,25 +100,28 @@ const browser = await chromium.launch({ executablePath: findChrome() });
 for (const F of FORMATS) {
   const fdir = join(OUT, F.key);
   mkdirSync(fdir, { recursive: true });
-  // Gemeinsamer Hintergrund je Format
-  {
+  // Gemeinsamer Hintergrund je Format – dunkel + Creme.
+  for (const hell of [false, true]) {
     const pg = await browser.newPage({ viewport:{ width:F.w, height:F.h } });
-    const tmp = join(HERE, `.bg-${F.key}.html`);
-    writeFileSync(tmp, doc(F, `<div class="bg"></div><div class="stars"></div>`, false));
+    const tmp = join(HERE, `.bg-${F.key}${hell ? "-hell" : ""}.html`);
+    writeFileSync(tmp, doc(F, `<div class="bg"></div><div class="stars"></div>`, false, hell));
     await pg.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
-    await pg.screenshot({ path: join(fdir, "_hintergrund.png") });
+    await pg.screenshot({ path: join(fdir, hell ? "_hintergrund-hell.png" : "_hintergrund.png") });
     await pg.close(); rmSync(tmp, { force:true });
   }
-  // Pro Story ein transparentes Overlay
+  // Pro Story ein transparentes Overlay – dunkle Schrift (hell) und helle (dunkel).
   for (let i = 0; i < STORIES.length; i++) {
     const s = STORIES[i];
-    const pg = await browser.newPage({ viewport:{ width:F.w, height:F.h } });
-    const tmp = join(HERE, `.ov-${F.key}-${s.slug}.html`);
-    writeFileSync(tmp, doc(F, overlayBody(s, i), true));
-    await pg.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
-    await pg.screenshot({ path: join(fdir, `overlay-${String(i+1).padStart(2,"0")}-${s.slug}.png`), omitBackground:true });
-    await pg.close(); rmSync(tmp, { force:true });
+    for (const hell of [false, true]) {
+      const pg = await browser.newPage({ viewport:{ width:F.w, height:F.h } });
+      const tmp = join(HERE, `.ov-${F.key}-${s.slug}${hell ? "-hell" : ""}.html`);
+      writeFileSync(tmp, doc(F, overlayBody(s, i), true, hell));
+      await pg.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
+      const suffix = hell ? "-hell" : "";
+      await pg.screenshot({ path: join(fdir, `overlay-${String(i+1).padStart(2,"0")}-${s.slug}${suffix}.png`), omitBackground:true });
+      await pg.close(); rmSync(tmp, { force:true });
+    }
   }
-  console.log("✓ Format", F.key, "→", STORIES.length, "Overlays + Hintergrund");
+  console.log("✓ Format", F.key, "→", STORIES.length, "Overlays ×2 + 2 Hintergründe");
 }
 await browser.close();
