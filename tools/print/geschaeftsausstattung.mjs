@@ -93,7 +93,7 @@ function cardFront({ marks = false } = {}) {
     .safe{position:absolute;left:${b}mm;top:${b}mm;width:${CARD.w}mm;height:${CARD.h}mm;overflow:hidden}
     .fill{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 7mm}
     .brain{width:16mm;height:auto;filter:drop-shadow(0 0 4mm rgba(242,212,137,.40)) drop-shadow(0 0 2mm rgba(232,193,95,.30))}
-    .wm{margin-top:3.4mm;text-align:center}
+    .wm{margin-top:7mm;text-align:center}
     .wm .l1{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:6mm;line-height:1;color:${C.cream}}
     .wm .l2{margin-top:1.7mm;display:flex;align-items:center;justify-content:center;gap:2.4mm;font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:2.4mm;color:${C.cream}}
     .wm .l2 i{display:block;width:5mm;height:.35mm;background:linear-gradient(90deg,${C.gold300},${C.gold500})}
@@ -167,7 +167,7 @@ function cardPreview() {
     .card{width:${CARD.w * scale}px;height:${CARD.h * scale}px;border-radius:${3 * scale}px;overflow:hidden;
       box-shadow:0 ${3 * scale}px ${9 * scale}px rgba(8,16,42,.30);position:relative}
     .front{color:${C.cream};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 ${7 * scale}px}
-    .front img{width:${16 * scale}px;filter:drop-shadow(0 0 ${4 * scale}px rgba(242,212,137,.40))}
+    .front img{width:${16 * scale}px;margin-bottom:${7 * scale}px;filter:drop-shadow(0 0 ${4 * scale}px rgba(242,212,137,.40))}
     .l1{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:${6 * scale}px;line-height:1;color:${C.cream}}
     .l2{margin-top:${1.7 * scale}px;display:flex;align-items:center;justify-content:center;gap:${2.4 * scale}px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:${2.4 * scale}px;color:${C.cream}}
     .l2 i{display:block;width:${5 * scale}px;height:${1.4}px;background:linear-gradient(90deg,${C.gold300},${C.gold500})}
