@@ -84,12 +84,12 @@ const channelSquare = (w, hell) => shell(w, w, `
 </div>`, hell);
 
 // YouTube-Video-Thumbnail 16:9 – klickstark, großer Titel + Akzentwort
-const thumbnail = (w, h, data) => shell(w, h, `
+const thumbnail = (w, h, data, hell) => shell(w, h, `
 .wrap{position:absolute;left:64px;top:50%;transform:translateY(-50%);width:${w-640}px}
 .eyebrow{font-size:23px;margin-bottom:20px}
-.title{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:62px;line-height:1.06;letter-spacing:-.5px}
-.title em{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.kicker{margin-top:24px;font-size:24px;font-weight:700;color:rgba(244,242,236,.72);line-height:1.3}
+.title{font-family:Fraunces,serif;font-weight:600;color:${hell ? "#16231f" : "#f4f2ec"};font-size:62px;line-height:1.06;letter-spacing:-.5px}
+.title em{background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.kicker{margin-top:24px;font-size:24px;font-weight:700;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"};line-height:1.3}
 .glow{right:100px;top:50%;transform:translateY(-50%);width:${Math.round(h*0.6)}px;height:${Math.round(h*0.6)}px}
 .brain{position:absolute;right:120px;top:50%;transform:translateY(-50%);width:${Math.round(h*0.6)}px;height:${Math.round(h*0.6)}px}
 `, `<div class="wrap">
@@ -97,7 +97,7 @@ const thumbnail = (w, h, data) => shell(w, h, `
   <div class="title">${data.title}</div>
   <div class="kicker">${data.kicker}</div>
 </div>
-<div class="glow"></div><img class="brain" src="${brainUrl}">`);
+<div class="glow"></div><img class="brain" src="${brainUrl}">`, hell);
 
 // Zitat-Kachel – großer Serifensatz, Marke als dezente Signatur unten.
 // Designcode: ein Wort im Zitat trägt den Grün-Türkis-Verlauf (<em>) und ist
@@ -319,7 +319,7 @@ TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Kanalbild.png",   w: 1080, h: 1080,
 TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Status-9x16.png", w: 1080, h: 1920, hell: true, html: (hell) => storyPost(1080, 1920, hell) });
 // YouTube-Thumbnails
 for (const d of THUMBS)
-  TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, html: () => thumbnail(1280, 720, d) });
+  TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, hell: true, html: (hell) => thumbnail(1280, 720, d, hell) });
 // Zitat-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const q of QUOTES) {
   TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t) });

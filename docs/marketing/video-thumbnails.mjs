@@ -50,33 +50,38 @@ const fit = (t, big, mid, sm) => (t.length <= 22 ? big : t.length <= 34 ? mid : 
 // Realistisch-cinematische Bildwelt: Anthrazit-Basis (an globals.css navy-950
 // angeglichen), kein Sternenfeld. Eyebrow in Teal (Bewusstsein), Tag in Gold
 // (Signatur, wie die Website-Wortmarke), Titel in ruhigem Off-White.
-const css = `
+// hell=true → Creme-Grund (#f6f4ee, wie Website-Header) statt Navy.
+const css = (hell) => `
 *{margin:0;box-sizing:border-box}
-body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10;color:#f4f7ff}
-.bg{position:absolute;inset:0;background:
+body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${hell ? "#f6f4ee" : "#090b10"};color:${hell ? "#16231f" : "#f4f7ff"}}
+.bg{position:absolute;inset:0;background:${hell ? `
+  radial-gradient(64% 92% at 82% 4%, rgba(232,193,95,.26), transparent 62%),
+  radial-gradient(60% 95% at 4% 100%, rgba(217,169,58,.14), transparent 60%),
+  radial-gradient(50% 80% at 80% 98%, rgba(242,212,137,.14), transparent 60%),
+  linear-gradient(160deg,#f8f6f0 0%,#f1eee5 55%,#f6f4ee 100%);` : `
   radial-gradient(58% 90% at 86% 8%, rgba(233,193,95,.18), transparent 60%),
   radial-gradient(60% 95% at 6% 98%, rgba(168,132,42,.10), transparent 60%),
   radial-gradient(50% 80% at 78% 96%, rgba(217,169,58,.10), transparent 60%),
-  linear-gradient(160deg,#0c0f15 0%,#111722 55%,#0b0e14 100%);}
+  linear-gradient(160deg,#0c0f15 0%,#111722 55%,#0b0e14 100%);`}}
 .frame{position:absolute;inset:0;padding:64px 72px;display:flex;flex-direction:column;justify-content:space-between;z-index:3}
 .top{display:flex;align-items:flex-start;justify-content:space-between;gap:28px}
 .logo{width:150px;height:auto;filter:drop-shadow(0 4px 20px rgba(233,193,95,.28))}
 .tag{padding-top:6px;text-align:right;font-weight:800;font-size:19px;letter-spacing:.14em;text-transform:uppercase;
-  background:linear-gradient(120deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  background:${hell ? "linear-gradient(120deg,#d9a93a,#7e6410)" : "linear-gradient(120deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .mid{max-width:820px}
-.eyebrow{font-weight:800;font-size:22px;letter-spacing:.13em;text-transform:uppercase;color:#f2d489;margin-bottom:22px}
-.title{font-family:Fraunces,serif;font-weight:600;line-height:1.05;letter-spacing:-1px;filter:drop-shadow(0 6px 28px rgba(0,0,0,.5))}
-.sub{margin-top:20px;font-size:29px;line-height:1.34;color:#c2d0e4;max-width:760px}
+.eyebrow{font-weight:800;font-size:22px;letter-spacing:.13em;text-transform:uppercase;color:${hell ? "#7e6410" : "#f2d489"};margin-bottom:22px}
+.title{font-family:Fraunces,serif;font-weight:600;line-height:1.05;letter-spacing:-1px;filter:drop-shadow(0 6px 28px ${hell ? "rgba(246,244,238,.6)" : "rgba(0,0,0,.5)"})}
+.sub{margin-top:20px;font-size:29px;line-height:1.34;color:${hell ? "rgba(22,35,31,.72)" : "#c2d0e4"};max-width:760px}
 .foot{display:flex;align-items:center;gap:16px}
-.foot .u{font-weight:600;font-size:23px;color:#9db1cb;letter-spacing:.02em}
+.foot .u{font-weight:600;font-size:23px;color:${hell ? "#7e6410" : "#9db1cb"};letter-spacing:.02em}
 .num{position:absolute;right:64px;top:50%;transform:translateY(-50%);z-index:1;font-family:Fraunces,serif;font-weight:600;
-  font-size:420px;line-height:.8;color:rgba(255,255,255,.05)}
+  font-size:420px;line-height:.8;color:${hell ? "rgba(22,35,31,.05)" : "rgba(255,255,255,.05)"}}
 `;
 
-function thumbHtml({ eyebrow, title, sub, num }) {
+function thumbHtml({ eyebrow, title, sub, num }, hell) {
   const tf = fit(title, 84, 68, 54);
   return `<!doctype html><html lang="de"><head><meta charset="utf8">
-<link rel="stylesheet" href="${fontsUrl}"><style>${css}</style></head>
+<link rel="stylesheet" href="${fontsUrl}"><style>${css(hell)}</style></head>
 <body>
   <div class="bg"></div>
   ${num ? `<div class="num">${num}</div>` : ""}
@@ -121,14 +126,17 @@ const browser = await chromium.launch({ executablePath: findChrome() });
 const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 let n = 0;
 for (const j of JOBS) {
-  const tmp = join(HERE, `.thumb.html`);
-  writeFileSync(tmp, thumbHtml(j.data));
-  await page.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
   const outDir = join(ROOT, "public", "video-thumbnails", j.dir);
   mkdirSync(outDir, { recursive: true });
-  await page.screenshot({ path: join(outDir, `${j.name}.png`) });
-  rmSync(tmp, { force: true });
+  // Standard (dunkel) + Creme-Variante (-hell) je Thumbnail.
+  for (const hell of [false, true]) {
+    const tmp = join(HERE, `.thumb.html`);
+    writeFileSync(tmp, thumbHtml(j.data, hell));
+    await page.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+    await page.screenshot({ path: join(outDir, `${j.name}${hell ? "-hell" : ""}.png`) });
+    rmSync(tmp, { force: true });
+  }
   n++;
 }
 await browser.close();
-console.log(`✓ ${n} Video-Thumbnails (Stufen + Vertiefungen + Praxis) in public/video-thumbnails/`);
+console.log(`✓ ${n} Video-Thumbnails ×2 (dunkel + Creme) in public/video-thumbnails/`);
