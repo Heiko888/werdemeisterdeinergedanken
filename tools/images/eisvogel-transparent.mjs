@@ -6,7 +6,7 @@
 //   node tools/images/eisvogel-transparent.mjs [quelle] [ziel]
 //
 // Standard:
-//   Quelle: public/eisvogel-gold-source.png  (dein Original mit weißem Hintergrund)
+//   Quelle: tools/images/eisvogel-gold-source.png  (Original mit weißem Hintergrund)
 //   Ziel:   public/eisvogel-gold.webp        (freigestellt, wird vom Footer geladen)
 //
 // Warum Flood-Fill statt simpler Schwelle: So wird nur der zusammenhängende
@@ -20,7 +20,7 @@ import sharp from "sharp";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..", "..");
 
-const srcArg = process.argv[2] ?? "public/eisvogel-gold-source.png";
+const srcArg = process.argv[2] ?? "tools/images/eisvogel-gold-source.png";
 const outArg = process.argv[3] ?? "public/eisvogel-gold.webp";
 const srcPath = path.resolve(repoRoot, srcArg);
 const outPath = path.resolve(repoRoot, outArg);
