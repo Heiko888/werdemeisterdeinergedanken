@@ -98,8 +98,13 @@ Alle Kontakt- und Markendaten stehen gebündelt im `CONTACT`-Objekt in
   Ausgabe als **Vektor-PDF** mit eingebetteten Schriften (`page.pdf`,
   `preferCSSPageSize`).
 - Schriften (Fraunces + Inter) kommen als data-URI aus
-  `tools/pdf/assets/fonts.css`; das Emblem aus `public/logo-brain.png` –
-  die PDFs sind damit **eigenständig** (keine externen Abhängigkeiten).
+  `tools/pdf/assets/fonts.css`; das **goldene** Emblem aus
+  `public/logo-brain-gold.png` – die PDFs sind damit **eigenständig**.
+- **Goldenes Emblem:** Der Website-Header färbt das Gehirn per CSS-Filter gold
+  (`.logo-gold` in `globals.css`). Da Word/E-Mail keine CSS-Filter können, backt
+  `npm run gold-emblem` (`tools/print/gold-emblem.mjs`) den Filter einmal in
+  `public/logo-brain-gold.png` (+ die optimierte `public/email/…-logo.png`).
+  Bei einem neuen Basis-Emblem einmal `npm run gold-emblem` laufen lassen.
 - Farben/Schriften spiegeln die Quelle der Wahrheit
   (`docs/brandbook/04-farben.md`, `05-typografie.md`).
 
