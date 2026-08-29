@@ -95,7 +95,11 @@ body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font
 /* Titelseite / Kopf eines Skripts */
 .cover{ height:255mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; background:radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%), radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%), #f6f4ee; }
 .cover img{ width:140px; margin-bottom:24px; }
-.brow{ font-size:10.5pt; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
+.brow{ display:flex; flex-direction:column; align-items:center; gap:3px; margin-bottom:10px; line-height:1; }
+.brow .wm1{ font-family:'Fraunces',serif; font-size:15pt; font-weight:400; letter-spacing:.08em; text-transform:uppercase; color:#16231f; }
+.brow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.brow .wm2{ display:flex; align-items:center; gap:7px; font-family:'Fraunces',serif; font-size:8pt; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:#48524e; }
+.brow .wm2 i{ display:block; height:1px; width:14px; background:#d9a93a; }
 .cover h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:30pt; margin:0 0 10px; line-height:1.12; }
 .cover p{ color:var(--mid); font-size:12pt; margin:2px 0; }
 .cover .meta{ margin-top:22px; color:var(--muted); font-size:10.5pt; }
@@ -190,7 +194,7 @@ function page(inner, title) {
 function coverFor(titelHtml, unter, meta) {
   return `<div class="cover">
   <img src="${logoUri}" alt="Logo">
-  <div class="brow">Werde Meister deiner Gedanken</div>
+  <div class="brow"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div>
   <h1>${titelHtml}</h1>
   ${unter ? `<p>${unter}</p>` : ""}
   <p class="meta">${meta}</p>

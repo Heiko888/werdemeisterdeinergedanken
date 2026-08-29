@@ -58,9 +58,12 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
   display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
 .cover .brandrow{ position:absolute; top:20mm; left:0; right:0; display:flex; justify-content:center;
   align-items:center; gap:10px; z-index:2; }
-.cover .brandrow img{ width:26px; height:26px; }
-.cover .brandrow span{ font-size:10px; letter-spacing:.24em; text-transform:uppercase;
-  color:var(--gold-700); font-weight:600; }
+.cover .brandrow img{ width:30px; height:30px; }
+.cover .brandrow .wm{ display:flex; flex-direction:column; gap:2.5px; line-height:1; text-align:left; }
+.cover .brandrow .wm1{ font-family:'Fraunces',serif; font-size:13px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); }
+.cover .brandrow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.cover .brandrow .wm2{ display:flex; align-items:center; gap:5px; font-family:'Fraunces',serif; font-size:7px; font-weight:400; letter-spacing:.24em; text-transform:uppercase; color:var(--ink-soft); }
+.cover .brandrow .wm2 i{ display:block; height:1px; width:10px; background:var(--gold-500); }
 .cover .eyebrow{ font-size:13px; letter-spacing:.34em; text-transform:uppercase;
   color:var(--accent); font-weight:700; margin-bottom:7mm; }
 .cover .brain{ width:42mm; height:auto; filter:drop-shadow(0 8px 30px rgba(233,193,95,.4)); }
@@ -187,7 +190,7 @@ def cover(eyebrow, title, sub, tag):
         titled = esc(title)
     return (
         '<div class="cover">'
-        '<div class="brandrow"><img src="%s"><span>Werde Meister deiner Gedanken</span></div>'
+        '<div class="brandrow"><img src="%s"><span class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></span></div>'
         '<div class="inner">'
         '<div class="eyebrow">%s</div>'
         '<img class="brain" src="%s">'

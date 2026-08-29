@@ -49,7 +49,11 @@ ${fontsCss}
 body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); background:#f6f4ee; font-size:11pt; line-height:1.5; }
 .cover{ height:261mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; }
 .cover img{ width:150px; margin-bottom:26px; }
-.brow{ font-size:11pt; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
+.brow{ display:flex; flex-direction:column; align-items:center; gap:3px; margin-bottom:10px; line-height:1; }
+.brow .wm1{ font-family:'Fraunces',serif; font-size:15pt; font-weight:400; letter-spacing:.08em; text-transform:uppercase; color:#16231f; }
+.brow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.brow .wm2{ display:flex; align-items:center; gap:7px; font-family:'Fraunces',serif; font-size:8pt; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:#48524e; }
+.brow .wm2 i{ display:block; height:1px; width:14px; background:#d9a93a; }
 .cover h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:30pt; margin:0 0 8px; border:0; line-height:1.1; }
 .cover p{ color:var(--mid); font-size:12pt; margin:2px 0; }
 h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:20pt; margin:0 0 4mm; padding-bottom:2.5mm;
@@ -178,7 +182,7 @@ const html = `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>
 <style>${STYLE}</style></head><body>
 <div class="cover">
   <img src="${logoUri}" alt="Logo">
-  <div class="brow">Werde Meister deiner Gedanken</div>
+  <div class="brow"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div>
   <h1>Stripe-Mitgliedschaft<br>einrichten</h1>
   <p>Self-Service „Bezahlen zuerst" · Monats- &amp; Jahresabo</p>
   <p>Schritt-für-Schritt-Anleitung · Stand ${DATE}</p>

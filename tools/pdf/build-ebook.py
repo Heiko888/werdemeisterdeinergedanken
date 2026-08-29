@@ -55,7 +55,11 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
 .cover .inner{ position:relative; height:100%; padding:19mm 22mm 15mm; display:flex; flex-direction:column; }
 .brandrow{ display:flex; align-items:center; gap:11px; }
 .brandrow img{ width:38px; height:38px; }
-.brandrow span{ font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--teal-300); font-weight:600; line-height:1.3; }
+.brandrow .wm{ display:flex; flex-direction:column; gap:3px; line-height:1; }
+.brandrow .wm1{ font-family:'Fraunces',serif; font-size:15px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); }
+.brandrow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.brandrow .wm2{ display:flex; align-items:center; gap:6px; font-family:'Fraunces',serif; font-size:8px; font-weight:400; letter-spacing:.24em; text-transform:uppercase; color:var(--ink-soft); }
+.brandrow .wm2 i{ display:block; height:1px; width:11px; background:var(--gold-500); }
 .eyebrow{ margin-top:12mm; display:inline-flex; align-items:center; gap:9px;
   font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-700); font-weight:700; }
 .eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--gold-500); display:inline-block; }
@@ -169,7 +173,7 @@ COVER = """
 <div class="page cover">
   <img class="brain" src="__BRAIN__">
   <div class="inner">
-    <div class="brandrow"><img src="__LOGO__"><span>Werde Meister<br>deiner Gedanken</span></div>
+    <div class="brandrow"><img src="__LOGO__"><span class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></span></div>
     <div class="eyebrow">Kostenloses E-Book</div>
     <h1 class="title serif">Die 7 Stufen<br>der <em>Bewusstseinsentwicklung</em></h1>
     <p class="promise">Der Weg vom <b>Autopilot</b> zur <b>Meisterschaft</b> deiner Gedanken &ndash;
