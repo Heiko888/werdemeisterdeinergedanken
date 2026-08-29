@@ -112,11 +112,11 @@ const SLIDES = [
 // ===========================================================================
 const cssFor = (F) => `
 *{margin:0;padding:0;box-sizing:border-box}
-body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#08102a}
+body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10}
 .bg{position:absolute;inset:0;background:
  radial-gradient(52% 70% at 20% 12%, rgba(233,193,95,.28), transparent 60%),
  radial-gradient(48% 72% at 92% 92%, rgba(168,132,42,.20), transparent 60%),
- radial-gradient(40% 60% at 78% 20%, rgba(242,212,137,.12), transparent 60%),#08102a}
+ radial-gradient(40% 60% at 78% 20%, rgba(242,212,137,.12), transparent 60%),#090b10}
 .stars{position:absolute;inset:0;background-image:
  radial-gradient(1.6px 1.6px at 22% 24%,rgba(255,255,255,.55),transparent),
  radial-gradient(1.4px 1.4px at 66% 16%,rgba(255,255,255,.4),transparent),
@@ -141,7 +141,7 @@ em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:te
 .rows{margin-top:40px;display:flex;flex-direction:column;gap:16px}
 .row{display:flex;align-items:center;gap:22px}
 .num{flex:none;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
- font-family:Fraunces,serif;font-size:26px;font-weight:600;color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a)}
+ font-family:Fraunces,serif;font-size:26px;font-weight:600;color:#090b10;background:linear-gradient(120deg,#f2d489,#d9a93a)}
 .rowtext{font-size:29px;line-height:1.2;color:rgba(244,242,236,.9)}
 /* Features */
 .feat{margin-top:40px;display:flex;flex-direction:column;gap:22px}
@@ -155,7 +155,7 @@ em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:te
 .steps{margin-top:44px;display:flex;flex-direction:column;gap:30px}
 .step{display:flex;gap:26px;align-items:flex-start}
 .stepnum{flex:none;width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;
- font-family:Fraunces,serif;font-size:32px;font-weight:600;color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a)}
+ font-family:Fraunces,serif;font-size:32px;font-weight:600;color:#090b10;background:linear-gradient(120deg,#f2d489,#d9a93a)}
 .steptext .st{font-size:33px;font-weight:700;color:#f4f2ec;line-height:1.2}
 .steptext .sd{margin-top:6px;font-size:27px;line-height:1.3;color:rgba(244,242,236,.75)}
 /* Price */
@@ -167,11 +167,11 @@ em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:te
 .plan .pp span{font-family:Inter,sans-serif;font-size:28px;font-weight:600;color:rgba(244,242,236,.65)}
 .plan .pn{margin-top:10px;font-size:25px;color:rgba(244,242,236,.72)}
 .badge{position:absolute;top:26px;right:30px;font-size:20px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
- color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a);padding:7px 16px;border-radius:999px}
+ color:#090b10;background:linear-gradient(120deg,#f2d489,#d9a93a);padding:7px 16px;border-radius:999px}
 /* CTA */
 .cta-action{margin-top:30px;padding-left:24px;border-left:6px solid;border-image:linear-gradient(120deg,#f2d489,#d9a93a) 1;font-size:36px;line-height:1.35;color:#f4f2ec;font-weight:600}
 .cta-url{margin-top:40px;display:inline-flex;align-items:center;gap:14px;align-self:flex-start;
- font-size:30px;font-weight:700;color:#08102a;background:linear-gradient(120deg,#f2d489,#d9a93a);padding:20px 34px;border-radius:16px}
+ font-size:30px;font-weight:700;color:#090b10;background:linear-gradient(120deg,#f2d489,#d9a93a);padding:20px 34px;border-radius:16px}
 /* Footer */
 .foot{position:absolute;left:64px;right:64px;bottom:${F.padBottom}px;display:flex;justify-content:space-between;align-items:center;z-index:6}
 .foot .h{font-size:22px;font-weight:700;color:rgba(244,242,236,.6)}

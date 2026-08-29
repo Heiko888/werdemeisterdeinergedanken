@@ -40,7 +40,7 @@ const bgCss = `
   radial-gradient(50% 120% at 88% 12%, rgba(233,193,95,.30), transparent 60%),
   radial-gradient(46% 120% at 6% 96%, rgba(168,132,42,.24), transparent 60%),
   radial-gradient(40% 90% at 74% 90%, rgba(242,212,137,.14), transparent 60%),
-  #08102a;}
+  #090b10;}
 .stars{position:absolute;inset:0;background-image:
   radial-gradient(1.6px 1.6px at 20% 30%,rgba(255,255,255,.7),transparent),
   radial-gradient(1.5px 1.5px at 68% 22%,rgba(255,255,255,.5),transparent),
@@ -93,7 +93,7 @@ const factBody = (f) => `<div class="scrim"></div>
 const doc = (F, css, body, transparent) =>
   `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
 <style>*{margin:0;box-sizing:border-box}
-body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${transparent ? "transparent" : "#08102a"}}
+body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${transparent ? "transparent" : "#090b10"}}
 ${css}</style></head><body>${body}</body></html>`;
 
 // Serien: key (Ordner) → { css, body, items }.

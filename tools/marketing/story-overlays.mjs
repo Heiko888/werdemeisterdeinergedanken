@@ -60,7 +60,7 @@ h1 em{background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip
  linear-gradient(to right, rgba(5,9,20,.75) 0%, rgba(5,9,20,.15) 42%, transparent 62%)}
 .bg{position:absolute;inset:0;background:
  radial-gradient(50% 90% at 20% 16%, rgba(233,193,95,.30), transparent 60%),
- radial-gradient(46% 90% at 92% 96%, rgba(168,132,42,.22), transparent 60%),#08102a}
+ radial-gradient(46% 90% at 92% 96%, rgba(168,132,42,.22), transparent 60%),#090b10}
 .stars{position:absolute;inset:0;background-image:
  radial-gradient(1.6px 1.6px at 24% 30%,rgba(255,255,255,.6),transparent),
  radial-gradient(1.4px 1.4px at 60% 18%,rgba(255,255,255,.4),transparent),
@@ -77,7 +77,7 @@ const overlayBody = (s, i) => `<div class="scrim"></div>
 
 const doc = (F, body, transparent) =>
   `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>body{background:${transparent ? "transparent" : "#08102a"}}${cssFor(F)}</style></head><body>${body}</body></html>`;
+<style>body{background:${transparent ? "transparent" : "#090b10"}}${cssFor(F)}</style></head><body>${body}</body></html>`;
 
 const require = createRequire(import.meta.url);
 function findChrome(){

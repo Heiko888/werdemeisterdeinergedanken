@@ -32,12 +32,12 @@ const TEXT_W = PB_CX - PB_R - TEXT_X - 40, TEXT_H = SAFE_H - 170;
 const html = `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
-body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#08102a}
+body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10}
 .bg{position:absolute;inset:0;background:
   radial-gradient(50% 120% at 88% 12%, rgba(233,193,95,.30), transparent 60%),
   radial-gradient(46% 120% at 6% 96%, rgba(168,132,42,.24), transparent 60%),
   radial-gradient(40% 90% at 74% 90%, rgba(242,212,137,.14), transparent 60%),
-  #08102a;}
+  #090b10;}
 /* Crop-Bänder (können abgeschnitten werden) */
 .crop{position:absolute;background:
   repeating-linear-gradient(45deg, rgba(255,90,90,.16) 0 14px, rgba(255,90,90,0) 14px 28px);

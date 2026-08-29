@@ -56,7 +56,7 @@ const cssFor = (F) => `*{margin:0;box-sizing:border-box}
 body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative}
 .bg{position:absolute;inset:0;background:
  radial-gradient(52% 80% at 22% 14%, rgba(233,193,95,.28), transparent 60%),
- radial-gradient(46% 80% at 92% 94%, rgba(168,132,42,.20), transparent 60%),#08102a}
+ radial-gradient(46% 80% at 92% 94%, rgba(168,132,42,.20), transparent 60%),#090b10}
 .stars{position:absolute;inset:0;background-image:
  radial-gradient(1.5px 1.5px at 24% 26%,rgba(255,255,255,.55),transparent),
  radial-gradient(1.3px 1.3px at 66% 18%,rgba(255,255,255,.4),transparent),
@@ -98,7 +98,7 @@ function doc(F, s, i, total, nr, { transparent, withBg }) {
   const pageno = i === 0 ? "" : `<div class="pageno">${nr}</div>`;
   const bg = withBg ? `<div class="bg"></div><div class="stars"></div>` : "";
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>body{background:${transparent ? "transparent" : "#08102a"}}${cssFor(F)}</style></head><body>
+<style>body{background:${transparent ? "transparent" : "#090b10"}}${cssFor(F)}</style></head><body>
 ${bg}<img class="brainmini" src="${brain}">${pageno}${slideInner(s)}${foot}</body></html>`;
 }
 

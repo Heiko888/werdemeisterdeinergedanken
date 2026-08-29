@@ -33,7 +33,7 @@ html,body{width:${t.w}px;height:${t.w}px;overflow:hidden;background:transparent}
     radial-gradient(60% 60% at 50% 38%, rgba(233,193,95,.30), transparent 62%),
     radial-gradient(70% 70% at 22% 88%, rgba(168,132,42,.24), transparent 60%),
     radial-gradient(60% 60% at 82% 84%, rgba(242,212,137,.16), transparent 60%),
-    #08102a;}
+    #090b10;}
 .stars{position:absolute;inset:0;background-image:
   radial-gradient(1.6px 1.6px at 26% 30%,rgba(255,255,255,.7),transparent),
   radial-gradient(1.5px 1.5px at 68% 24%,rgba(255,255,255,.5),transparent),
