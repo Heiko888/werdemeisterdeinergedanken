@@ -51,7 +51,7 @@ export function Logo({
             <span
               className={cn(
                 "bg-clip-text",
-                tone === "onDark" ? "text-gradient-leaf" : "text-gradient-gold-deep",
+                tone === "onDark" ? "text-gradient-gold-bright" : "text-gradient-gold-deep",
               )}
             >
               Meister
