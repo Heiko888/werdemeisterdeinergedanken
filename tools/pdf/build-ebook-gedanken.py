@@ -96,8 +96,8 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
   radial-gradient(60% 42% at 18% 14%, rgba(242,212,137,.26), transparent 60%),
   radial-gradient(55% 40% at 88% 96%, rgba(217,169,58,.18), transparent 62%),
   linear-gradient(160deg,#f8f6f0 0%,#f1eee5 52%,#f6f4ee 100%); }
-.cover .brain{ position:absolute; left:50%; top:calc(55% - 12mm); transform:translate(-50%,-50%);
-  width:64%; max-width:none; mix-blend-mode:normal; opacity:.62; }
+.cover .brain{ position:absolute; left:50%; top:calc(60% - 12mm); transform:translate(-50%,-50%);
+  width:66%; max-width:none; mix-blend-mode:normal; opacity:.62; }
 .cover .inner{ position:relative; height:100%; padding:19mm 22mm 15mm; display:flex; flex-direction:column; }
 .brandrow{ display:flex; align-items:center; gap:11px; }
 .brandrow img{ width:38px; height:38px; }
