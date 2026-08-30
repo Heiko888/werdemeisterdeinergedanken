@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight } from "@/components/ui/Icon";
-import brainLogo from "../../../public/logo-brain.png";
+import heikoHero from "../../../public/heiko-hero.webp";
 
 const proof = ["7-Stufen-Modell", "Ohne Esoterik-Floskeln", "Auf Augenhöhe"];
 
@@ -85,10 +85,10 @@ export function Hero() {
               }}
             />
             <Image
-              src={brainLogo}
-              alt="Leuchtendes Gehirn aus Datenpunkten – dein Bewusstsein als Schlüssel, deine Gedanken als Code"
+              src={heikoHero}
+              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="logo-gold mx-auto w-[min(420px,80vw)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
+              className="mx-auto w-[min(420px,80vw)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
