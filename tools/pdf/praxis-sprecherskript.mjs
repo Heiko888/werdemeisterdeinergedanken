@@ -73,7 +73,7 @@ const fontsCss = readFileSync(
   "utf8",
 );
 const logoUri = `data:image/png;base64,${readFileSync(
-  join(ROOT, "docs", "reels", "covers", "logo.png"),
+  join(ROOT, "public", "logo-brain-gold.png"),
 ).toString("base64")}`;
 const DATE = new Date().toISOString().slice(0, 10);
 
@@ -87,15 +87,19 @@ function esc(s) {
 
 const STYLE = `
 ${fontsCss}
-:root{ --ink:#1a2230; --mid:#4b5769; --muted:#8b96a6; --leaf:#6aab24; --teal:#199aa8; --line:#e0e7f0; }
+:root{ --ink:#16231f; --mid:#48524e; --muted:#626b67; --leaf:#7e6410; --teal:#7e6410; --line:#e4dfd2; --gold:#d9a93a; --gold-deep:#7e6410; }
 @page{ size:A4; margin:16mm 18mm; }
 *{ box-sizing:border-box; }
-body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:12pt; line-height:1.55; }
+body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:12pt; line-height:1.55; background:#f6f4ee; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 
 /* Titelseite / Kopf eines Skripts */
-.cover{ height:255mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; }
+.cover{ height:255mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; background:radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%), radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%), #f6f4ee; }
 .cover img{ width:140px; margin-bottom:24px; }
-.brow{ font-size:10.5pt; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
+.brow{ display:flex; flex-direction:column; align-items:center; gap:3px; margin-bottom:10px; line-height:1; }
+.brow .wm1{ font-family:'Fraunces',serif; font-size:15pt; font-weight:400; letter-spacing:.08em; text-transform:uppercase; color:#16231f; }
+.brow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.brow .wm2{ display:flex; align-items:center; gap:7px; font-family:'Fraunces',serif; font-size:8pt; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:#48524e; }
+.brow .wm2 i{ display:block; height:1px; width:14px; background:#d9a93a; }
 .cover h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:30pt; margin:0 0 10px; line-height:1.12; }
 .cover p{ color:var(--mid); font-size:12pt; margin:2px 0; }
 .cover .meta{ margin-top:22px; color:var(--muted); font-size:10.5pt; }
@@ -103,15 +107,15 @@ body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font
 /* Skript-Kopf */
 .skript{ page-break-inside:auto; }
 .skript + .skript{ page-break-before:always; }
-.kopf{ border-bottom:2px solid; border-image:linear-gradient(90deg,#8cc63f,#21b2bd) 1; padding-bottom:4mm; margin-bottom:6mm; }
+.kopf{ border-bottom:2px solid; border-image:linear-gradient(90deg,#e8c15f,#d9a93a) 1; padding-bottom:4mm; margin-bottom:6mm; }
 .kopf .kat{ font-size:10pt; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--teal); }
 .kopf h2{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:22pt; margin:1.5mm 0 3mm; line-height:1.1; }
 .tags{ display:flex; flex-wrap:wrap; gap:6px 10px; font-size:9.5pt; color:var(--mid); }
 .tags span{ display:inline-flex; align-items:center; gap:5px; }
 .tags .k{ color:var(--muted); }
-.tags code{ font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9pt; background:#eef2f7; color:#0f3a4d; padding:.4mm 1.6mm; border-radius:3px; }
-.worum{ margin:4mm 0 7mm; padding:3.2mm 4.2mm; background:#eef7ee; border:1px solid #cfe6c7; border-left:4px solid var(--leaf); border-radius:8px; color:#31532a; font-size:10.5pt; line-height:1.5; }
-.worum b{ color:#2c5c11; }
+.tags code{ font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9pt; background:#efece2; color:#7e6410; padding:.4mm 1.6mm; border-radius:3px; }
+.worum{ margin:4mm 0 7mm; padding:3.2mm 4.2mm; background:#faf4e4; border:1px solid #ecdcae; border-left:4px solid #d9a93a; border-radius:8px; color:#5c4708; font-size:10.5pt; line-height:1.5; }
+.worum b{ color:#4a3a08; }
 
 /* Gesprochener Text – gross und ruhig zum Vorlesen */
 .text{ font-size:14pt; line-height:1.75; margin:0 0 5mm; break-inside:avoid; }
@@ -119,19 +123,19 @@ body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font
 /* Pause – klar abgesetzte Stille */
 .pause{ display:flex; align-items:center; gap:10px; margin:0 0 5mm; break-inside:avoid; color:var(--muted); }
 .pause .bar{ flex:1; border-top:1.4px dashed #c2ccd8; }
-.pause .pill{ display:inline-flex; align-items:center; gap:7px; padding:1.6mm 4mm; border-radius:999px; background:#f2f5f9; border:1px solid var(--line); font-size:10pt; font-weight:700; letter-spacing:.02em; color:#5a6675; white-space:nowrap; }
-.pause .pill .dot{ width:7px; height:7px; border-radius:50%; background:var(--teal); }
+.pause .pill{ display:inline-flex; align-items:center; gap:7px; padding:1.6mm 4mm; border-radius:999px; background:#efece2; border:1px solid var(--line); font-size:10pt; font-weight:700; letter-spacing:.02em; color:#626b67; white-space:nowrap; }
+.pause .pill .dot{ width:7px; height:7px; border-radius:50%; background:#d9a93a; }
 
 /* Regie – wird NICHT gesprochen */
 .regie{ margin:0 0 5mm; padding:2.6mm 3.8mm; background:#fff7ed; border:1px solid #f2d5a8; border-left:4px solid #e0912f; border-radius:8px; font-size:10pt; line-height:1.5; color:#7a4a0c; break-inside:avoid; }
 .regie b{ color:#9a5a0c; font-weight:800; letter-spacing:.04em; text-transform:uppercase; font-size:8.5pt; display:block; margin-bottom:1mm; }
 
 /* Leitfaden */
-.leit h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:22pt; margin:0 0 5mm; padding-bottom:3mm; border-bottom:2px solid; border-image:linear-gradient(90deg,#8cc63f,#21b2bd) 1; }
-.leit h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:13.5pt; color:#12324a; margin:6mm 0 2mm; }
+.leit h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:22pt; margin:0 0 5mm; padding-bottom:3mm; border-bottom:2px solid; border-image:linear-gradient(90deg,#e8c15f,#d9a93a) 1; }
+.leit h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:13.5pt; color:#16231f; margin:6mm 0 2mm; }
 .leit ul{ margin:0 0 3mm 5mm; padding:0; } .leit li{ margin:1.6mm 0; line-height:1.5; }
 .leit .unter{ color:var(--mid); font-size:11pt; margin:-2mm 0 6mm; }
-.leit code{ font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9.5pt; background:#eef2f7; color:#0f3a4d; padding:.4mm 1.6mm; border-radius:3px; }
+.leit code{ font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9.5pt; background:#efece2; color:#7e6410; padding:.4mm 1.6mm; border-radius:3px; }
 `;
 
 function renderSegment(seg) {
@@ -190,7 +194,7 @@ function page(inner, title) {
 function coverFor(titelHtml, unter, meta) {
   return `<div class="cover">
   <img src="${logoUri}" alt="Logo">
-  <div class="brow">Werde Meister deiner Gedanken</div>
+  <div class="brow"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div>
   <h1>${titelHtml}</h1>
   ${unter ? `<p>${unter}</p>` : ""}
   <p class="meta">${meta}</p>

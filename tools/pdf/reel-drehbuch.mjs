@@ -97,37 +97,42 @@ function findChrome() {
 
 // --- HTML zusammenbauen -----------------------------------------------------
 const fontsCss = readFileSync(join(ROOT, "docs", "reels", "covers", "_fonts.css"), "utf8");
-const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "docs", "reels", "covers", "logo.png")).toString("base64")}`;
+const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
 const DATE = new Date().toISOString().slice(0, 10);
 const reelCount = (md) => (md.match(/^###\s+/gm) || []).length || (md.match(/^##\s+\d/gm) || []).length;
 
 const STYLE = `
 ${fontsCss}
-:root{ --ink:#1a2230; --mid:#4b5769; --muted:#8b96a6; --leaf:#6aab24; --teal:#199aa8; }
+:root{ --ink:#16231f; --mid:#48524e; --muted:#626b67; --leaf:#7e6410; --teal:#7e6410; }
 @page{ size:A4; margin:20mm 18mm; }
 *{ box-sizing:border-box; }
-body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:11.5pt; line-height:1.5; }
-.cover{ height:257mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; }
+body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:11.5pt; line-height:1.5; background:#f6f4ee; }
+.cover{ height:257mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always;
+  background:radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
+    radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%), #f6f4ee; }
 .cover img{ width:150px; margin-bottom:26px; }
-.brow{ font-size:11pt; font-weight:800; letter-spacing:.2em; text-transform:uppercase;
-  color:var(--teal); margin-bottom:10px; }
+.brow{ display:flex; flex-direction:column; align-items:center; gap:3px; margin-bottom:10px; line-height:1; }
+.brow .wm1{ font-family:'Fraunces',serif; font-size:15pt; font-weight:400; letter-spacing:.08em; text-transform:uppercase; color:#16231f; }
+.brow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.brow .wm2{ display:flex; align-items:center; gap:7px; font-family:'Fraunces',serif; font-size:8pt; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:#48524e; }
+.brow .wm2 i{ display:block; height:1px; width:14px; background:#d9a93a; }
 .cover h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:34pt; margin:0 0 6px; border:0; }
 .cover p{ color:var(--mid); font-size:12pt; margin:2px 0; }
 .serie{ page-break-before:always; }
 h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:24pt; margin:0 0 4mm;
-  padding-bottom:3mm; border-bottom:2px solid; border-image:linear-gradient(90deg,#8cc63f,#21b2bd) 1; }
-h2{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:15pt; margin:7mm 0 2mm; color:#12324a; }
+  padding-bottom:3mm; border-bottom:2px solid; border-image:linear-gradient(90deg,#e8c15f,#d9a93a) 1; }
+h2{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:15pt; margin:7mm 0 2mm; color:#16231f; }
 h3{ font-weight:800; font-size:10.5pt; letter-spacing:.02em; margin:0 0 2mm; color:var(--teal); text-transform:uppercase; }
 .intro{ color:var(--mid); font-size:10.5pt; }
-.reel{ break-inside:avoid; page-break-inside:avoid; background:#f7f9fc; border:1px solid #e6ecf4;
+.reel{ break-inside:avoid; page-break-inside:avoid; background:#ffffff; border:1px solid #e7e2d4;
   border-radius:8px; padding:4mm 5mm; margin:0 0 4mm; }
 .field{ margin:0 0 1.5mm; }
 .field .lbl{ display:inline-block; min-width:74px; font-weight:800; font-size:9pt; letter-spacing:.04em;
   text-transform:uppercase; color:var(--leaf); }
 ul{ margin:1mm 0 3mm 5mm; } li{ margin:.5mm 0; }
 table{ width:100%; border-collapse:collapse; font-size:9pt; margin:2mm 0 4mm; }
-th,td{ border:1px solid #e0e7f0; padding:1.6mm 2mm; text-align:left; vertical-align:top; }
-th{ background:#eef4f5; font-weight:700; }
+th,td{ border:1px solid #e7e2d4; padding:1.6mm 2mm; text-align:left; vertical-align:top; }
+th{ background:#efece2; font-weight:700; }
 strong{ font-weight:700; }`;
 
 const pageHtml = (title, subtitle, count, body) =>
@@ -135,7 +140,7 @@ const pageHtml = (title, subtitle, count, body) =>
 <style>${STYLE}</style></head><body>
 <div class="cover">
   <img src="${logoUri}" alt="Logo">
-  <div class="brow">Werde Meister deiner Gedanken</div>
+  <div class="brow"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div>
   <h1>Reel-Drehbuch</h1>
   <p>${subtitle}</p>
   <p>${count} Reels · Stand ${DATE}</p>

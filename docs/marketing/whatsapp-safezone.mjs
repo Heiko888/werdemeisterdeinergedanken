@@ -32,12 +32,12 @@ const TEXT_W = PB_CX - PB_R - TEXT_X - 40, TEXT_H = SAFE_H - 170;
 const html = `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
-body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#08102a}
+body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#090b10}
 .bg{position:absolute;inset:0;background:
-  radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
-  radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
-  radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
-  #08102a;}
+  radial-gradient(50% 120% at 88% 12%, rgba(233,193,95,.30), transparent 60%),
+  radial-gradient(46% 120% at 6% 96%, rgba(168,132,42,.24), transparent 60%),
+  radial-gradient(40% 90% at 74% 90%, rgba(242,212,137,.14), transparent 60%),
+  #090b10;}
 /* Crop-Bänder (können abgeschnitten werden) */
 .crop{position:absolute;background:
   repeating-linear-gradient(45deg, rgba(255,90,90,.16) 0 14px, rgba(255,90,90,0) 14px 28px);
@@ -50,20 +50,20 @@ body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;pos
   font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,160,160,.95)}
 /* Safe-Zone */
 .safe{position:absolute;left:${SAFE_X}px;top:${SAFE_Y}px;width:${SAFE_W}px;height:${SAFE_H}px;
-  border:2px dashed rgba(163,214,79,.85);border-radius:10px}
+  border:2px dashed rgba(242,212,137,.85);border-radius:10px}
 .safelbl{position:absolute;right:${CROP + 14}px;top:${SAFE_Y + 14}px;text-align:right;
-  font-size:17px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#a3d64f}
+  font-size:17px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#f2d489}
 /* Empfohlene Textspalte */
 .textzone{position:absolute;left:${TEXT_X}px;top:${TEXT_Y}px;width:${TEXT_W}px;height:${TEXT_H}px;
-  border:2px solid rgba(52,196,196,.85);border-radius:10px;background:rgba(52,196,196,.06);
+  border:2px solid rgba(233,193,95,.85);border-radius:10px;background:rgba(233,193,95,.06);
   display:flex;flex-direction:column;justify-content:center;gap:18px;padding:0 34px}
-.tz-eyebrow{font-size:19px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#34c4c4}
+.tz-eyebrow{font-size:19px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#f2d489}
 .tz-h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:60px;line-height:1.05;letter-spacing:-.5px}
-.tz-h em{font-style:italic;background:linear-gradient(100deg,#a3d64f,#34c4c4);-webkit-background-clip:text;background-clip:text;color:transparent}
-.tz-note{position:absolute;left:${TEXT_X}px;top:${TEXT_Y - 30}px;font-size:15px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#34c4c4}
+.tz-h em{font-style:italic;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tz-note{position:absolute;left:${TEXT_X}px;top:${TEXT_Y - 30}px;font-size:15px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#f2d489}
 /* Profilbild */
 .pb{position:absolute;left:${PB_CX - PB_R}px;top:${PB_CY - PB_R}px;width:${PB_R*2}px;height:${PB_R*2}px;
-  border-radius:50%;border:3px solid rgba(54,112,238,.95);
+  border-radius:50%;border:3px solid rgba(168,132,42,.95);
   background:rgba(8,16,42,.72);backdrop-filter:blur(2px);
   display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px}
 .pb b{font-size:26px;font-weight:800;color:#fff;letter-spacing:1px}

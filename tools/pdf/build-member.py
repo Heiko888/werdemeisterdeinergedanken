@@ -19,9 +19,9 @@ def enc(p, mime):
     return "data:%s;base64,%s" % (mime, base64.b64encode(open(p, "rb").read()).decode())
 
 FONTS = open(os.path.join(ASSETS, "fonts.css")).read()
-LOGO  = enc(os.path.join(ROOT, "public/logo-brain.png"), "image/png")
+LOGO  = enc(os.path.join(ROOT, "public/logo-brain-gold.png"), "image/png")
 # Gehirn-Motiv aus dem Workshop, damit die Cover identisch zum Referenz-Workbook sind.
-BRAIN_WS = enc(os.path.join(WS_ASSETS, "brain.png"), "image/png")
+BRAIN_WS = enc(os.path.join(ROOT, "public/logo-brain-gold.png"), "image/png")
 C = json.load(open(os.path.join(BUILD, "content.json"), encoding="utf-8"))
 
 def esc(s):
@@ -30,7 +30,7 @@ def esc(s):
 CSS = r"""
 /*__FONTS__*/
 *{ margin:0; padding:0; box-sizing:border-box; }
-html{ background:#ffffff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+html{ background:#f6f4ee; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .serif{ font-family:'Fraunces',Georgia,serif; }
 
@@ -40,22 +40,22 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 @page:first{ margin:0; }
 
 :root{
-  --ink:#16231f; --ink-soft:#48524e; --accent:#4f9e1c;
-  --teal-300:#5fd6d2; --teal-400:#34c4c4; --teal-500:#21b2bd;
-  --leaf-400:#a3d64f; --leaf-500:#8cc63f; --leaf-600:#74ab2f; --gold-400:#e8c15f;
+  --ink:#16231f; --ink-soft:#48524e; --accent:#7e6410;
+  --teal-300:#7e6410; --teal-400:#d9a93a; --teal-500:#7e6410;
+  --leaf-400:#7e6410; --leaf-500:#d9a93a; --leaf-600:#7e6410; --gold-400:#e8c15f; --gold-500:#d9a93a; --gold-700:#7e6410;
   --surface:#f6f4ee; --hair:#e4ded0;
-  --navy-900:#08102a;
+  --navy-900:#16231f;
 }
 
 /* ============================================================
    DECKBLATT  (Workbook-Stil: zentriert, Gehirn mittig, Name-Zeile)
    ============================================================ */
-.cover{ position:relative; width:210mm; height:297mm; overflow:hidden; color:#eaf0ff;
+.cover{ position:relative; width:210mm; height:297mm; overflow:hidden; color:var(--ink);
   /* Verlaufs-Hintergrund wie im Referenz-Workbook (WMDG-Workbook-7-Stufen) */
   background:
-    radial-gradient(120% 80% at 82% 6%, rgba(52,196,196,.20), transparent 55%),
-    radial-gradient(90% 60% at 12% 98%, rgba(140,198,63,.14), transparent 55%),
-    linear-gradient(158deg,#0a1330,#0a1024);
+    radial-gradient(120% 80% at 82% 6%, rgba(233,193,95,.24), transparent 55%),
+    radial-gradient(90% 60% at 12% 98%, rgba(217,169,58,.14), transparent 55%),
+    linear-gradient(158deg,#f8f6f0,#f1eee5);
   z-index:5; }
 .cover .inner{ position:relative; z-index:2; height:100%; padding:30mm 24mm;
   display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
@@ -63,21 +63,20 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
   align-items:center; gap:10px; z-index:2; }
 .cover .brandrow img{ width:30px; height:30px; }
 .cover .brandrow span{ font-size:10px; letter-spacing:.24em; text-transform:uppercase;
-  color:var(--teal-300); font-weight:600; line-height:1.3; text-align:left; }
+  color:var(--gold-700); font-weight:600; line-height:1.3; text-align:left; }
 .cover .eyebrow{ font-size:13px; letter-spacing:.34em; text-transform:uppercase;
-  color:var(--leaf-500); font-weight:700; margin-bottom:7mm; }
-.cover .brain{ width:40mm; height:auto; filter:drop-shadow(0 8px 30px rgba(52,196,196,.35)); }
+  color:var(--accent); font-weight:700; margin-bottom:7mm; }
+.cover .brain{ width:40mm; height:auto; filter:drop-shadow(0 8px 30px rgba(233,193,95,.4)); }
 .cover h1{ font-family:'Fraunces',serif; font-weight:600; font-size:40px; line-height:1.16;
-  margin-top:8mm; letter-spacing:-.3px; max-width:160mm; text-shadow:0 2px 30px rgba(3,8,20,.7); }
-.cover h1 .ac{ color:var(--teal-400); }
-.cover .sub{ margin-top:6mm; font-size:15px; line-height:1.55; color:#c6cfe6; max-width:125mm;
-  text-shadow:0 1px 16px rgba(3,8,20,.85); }
+  margin-top:8mm; letter-spacing:-.3px; max-width:160mm; }
+.cover h1 .ac{ color:var(--gold-700); }
+.cover .sub{ margin-top:6mm; font-size:15px; line-height:1.55; color:var(--ink-soft); max-width:125mm; }
 .cover .namerow{ position:absolute; left:24mm; right:24mm; bottom:18mm; z-index:2;
-  display:flex; justify-content:center; align-items:center; gap:12px; font-size:12px; color:#a7b4d0; }
+  display:flex; justify-content:center; align-items:center; gap:12px; font-size:12px; color:var(--ink-soft); }
 .cover .namerow .nm{ display:inline-flex; align-items:baseline; gap:8px; }
-.cover .namerow .ln{ display:inline-block; width:46mm; border-bottom:1px solid rgba(255,255,255,.4); }
-.cover .namerow .sep{ color:rgba(255,255,255,.3); }
-.cover .namerow .dom{ color:var(--teal-300); letter-spacing:.04em; }
+.cover .namerow .ln{ display:inline-block; width:46mm; border-bottom:1px solid rgba(22,35,31,.4); }
+.cover .namerow .sep{ color:rgba(22,35,31,.3); }
+.cover .namerow .dom{ color:var(--gold-700); letter-spacing:.04em; }
 
 /* ============================================================
    INHALTSSEITEN  (heller Referenz-Stil: WMDG-Workbook-7-Stufen)
@@ -90,7 +89,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 /* Heller Seitenkopf: Nummern-Disc + grüner Kicker + Serif-Titel + teal Untertitel */
 .phead{ display:flex; gap:15px; align-items:flex-start; margin-bottom:16px; break-after:avoid; }
 .phead .disc{ flex:none; width:38px; height:38px; border-radius:50%;
-  background:linear-gradient(150deg,#8cc63f,#21b2bd); color:var(--navy-900);
+  background:linear-gradient(150deg,#e8c15f,#d9a93a); color:#241a06;
   font-family:'Fraunces',serif; font-weight:600; font-size:18px; display:grid; place-items:center;
   box-shadow:0 8px 18px -8px rgba(33,178,189,.6); }
 .phead .kicker{ font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
@@ -103,12 +102,13 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .klabel.teal{ color:var(--teal-500); }
 
 /* Zitat/Leitsatz im dunklen Navy-Callout (wie Referenz). */
-.callout{ break-inside:avoid; margin:6px 0 15px; border-radius:16px; padding:17px 22px; color:#eaf0ff;
+.callout{ break-inside:avoid; margin:6px 0 15px; border-radius:16px; padding:17px 22px; color:var(--ink);
+  border:1px solid rgba(168,132,42,.4);
   background:
-    radial-gradient(70% 130% at 88% 0%, rgba(52,196,196,.26), transparent 60%),
-    linear-gradient(140deg,#08102a,#12244d); }
-.callout .k{ font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--leaf-500); }
-.callout .q{ font-family:'Fraunces',serif; font-style:italic; font-size:15.5px; line-height:1.5; margin-top:8px; color:#eef2ff; }
+    radial-gradient(70% 130% at 88% 0%, rgba(233,193,95,.22), transparent 60%),
+    linear-gradient(140deg,#f3ead2,#efe6cf); }
+.callout .k{ font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); }
+.callout .q{ font-family:'Fraunces',serif; font-style:italic; font-size:15.5px; line-height:1.5; margin-top:8px; color:var(--ink); }
 
 .lead{ font-size:13.5px; line-height:1.62; color:#2c3a35; margin-bottom:12px; }
 .h3{ font-family:'Fraunces',serif; font-weight:600; font-size:18px; color:var(--navy-900); margin:16px 0 4px; break-after:avoid; }
@@ -119,7 +119,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .ex .exhead{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
 .ex .extitle{ font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:var(--navy-900); }
 .chip{ flex:none; font-size:10px; font-weight:700; letter-spacing:.03em; color:var(--accent);
-  background:rgba(79,158,28,.12); border-radius:999px; padding:4px 11px; }
+  background:rgba(126,100,16,.12); border-radius:999px; padding:4px 11px; }
 .exlabel{ font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--teal-500); font-weight:700; margin-top:3px; }
 .steps{ margin-top:10px; list-style:none; counter-reset:st; }
 .steps li{ font-size:13.5px; line-height:1.55; color:#26332e; margin:6px 0; padding-left:23px; position:relative; }
@@ -139,12 +139,13 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
   border-radius:50%; background:var(--teal-400); }
 
 /* Leitsatz/Kernbotschaft ebenfalls als dunkler Navy-Callout. */
-.affirm{ break-inside:avoid; margin-top:15px; border-radius:16px; padding:17px 22px; color:#eaf0ff;
+.affirm{ break-inside:avoid; margin-top:15px; border-radius:16px; padding:17px 22px; color:var(--ink);
+  border:1px solid rgba(168,132,42,.4);
   background:
-    radial-gradient(70% 130% at 12% 0%, rgba(140,198,63,.22), transparent 60%),
-    linear-gradient(140deg,#08102a,#12244d); }
-.affirm .k{ font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--leaf-500); }
-.affirm p{ font-family:'Fraunces',serif; font-style:italic; font-size:16px; color:#eef2ff; margin-top:8px; line-height:1.45; }
+    radial-gradient(70% 130% at 12% 0%, rgba(233,193,95,.22), transparent 60%),
+    linear-gradient(140deg,#f3ead2,#efe6cf); }
+.affirm .k{ font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); }
+.affirm p{ font-family:'Fraunces',serif; font-style:italic; font-size:16px; color:var(--ink); margin-top:8px; line-height:1.45; }
 
 /* Reflexion + Leitsatz bleiben als Block zusammen (kein verwaister Kasten). */
 .closer{ break-inside:avoid; }
@@ -160,7 +161,7 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .toc h2{ font-family:'Fraunces',serif; font-weight:600; font-size:28px; color:var(--navy-900); margin-bottom:8px; }
 .toc .row{ display:flex; align-items:center; gap:15px; padding:12px 0; border-bottom:1px solid var(--hair); }
 .toc .disc{ flex:none; width:36px; height:36px; border-radius:50%;
-  background:linear-gradient(150deg,#8cc63f,#21b2bd); color:var(--navy-900);
+  background:linear-gradient(150deg,#e8c15f,#d9a93a); color:#241a06;
   font-family:'Fraunces',serif; font-weight:600; font-size:16px; display:grid; place-items:center; }
 .toc b{ font-size:15px; color:var(--navy-900); } .toc span{ display:block; font-size:12.5px; color:#2c3a35; }
 .stagebreak{ break-before:page; }

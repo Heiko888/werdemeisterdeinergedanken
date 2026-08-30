@@ -66,7 +66,7 @@ const fontsCss = readFileSync(
   "utf8",
 );
 const logoUri = `data:image/png;base64,${readFileSync(
-  join(ROOT, "docs", "reels", "covers", "logo.png"),
+  join(ROOT, "public", "logo-brain-gold.png"),
 ).toString("base64")}`;
 const DATE = new Date().toISOString().slice(0, 10);
 
@@ -179,36 +179,40 @@ const KURZ =
 // ---------------------------------------------------------------------------
 const STYLE = `
 ${fontsCss}
-:root{ --ink:#1a2230; --mid:#4b5769; --muted:#8b96a6; --leaf:#6aab24; --teal:#199aa8; --line:#e0e7f0; }
+:root{ --ink:#16231f; --mid:#48524e; --muted:#626b67; --leaf:#7e6410; --teal:#7e6410; --line:#e4dfd2; --gold:#d9a93a; --gold-deep:#7e6410; }
 @page{ size:A4; margin:16mm 18mm; }
 *{ box-sizing:border-box; }
-body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:12pt; line-height:1.55; }
+body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font-size:12pt; line-height:1.55; background:#f6f4ee; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 
-.cover{ height:255mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; }
+.cover{ height:255mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; page-break-after:always; background:radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%), radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%), #f6f4ee; }
 .cover img{ width:140px; margin-bottom:24px; }
-.brow{ font-size:10.5pt; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
+.brow{ display:flex; flex-direction:column; align-items:center; gap:3px; margin-bottom:10px; line-height:1; }
+.brow .wm1{ font-family:'Fraunces',serif; font-size:15pt; font-weight:400; letter-spacing:.08em; text-transform:uppercase; color:#16231f; }
+.brow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.brow .wm2{ display:flex; align-items:center; gap:7px; font-family:'Fraunces',serif; font-size:8pt; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:#48524e; }
+.brow .wm2 i{ display:block; height:1px; width:14px; background:#d9a93a; }
 .cover h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:32pt; margin:0 0 10px; line-height:1.12; }
 .cover p{ color:var(--mid); font-size:12pt; margin:2px 0; }
 .cover .meta{ margin-top:22px; color:var(--muted); font-size:10.5pt; }
 
 /* Abschnitts-Kopf */
-.h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:22pt; margin:0 0 2mm; padding-bottom:3mm; border-bottom:2px solid; border-image:linear-gradient(90deg,#8cc63f,#21b2bd) 1; }
+.h1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:22pt; margin:0 0 2mm; padding-bottom:3mm; border-bottom:2px solid; border-image:linear-gradient(90deg,#e8c15f,#d9a93a) 1; }
 .lead{ color:var(--mid); font-size:11pt; margin:0 0 6mm; }
 .sec{ page-break-before:always; }
 
 /* Meta-/Legenden-Karte auf der ersten Inhaltsseite */
-.card{ margin:0 0 7mm; padding:3.4mm 4.4mm; background:#f3f7fb; border:1px solid var(--line); border-radius:9px; font-size:10.5pt; line-height:1.55; color:var(--mid); }
+.card{ margin:0 0 7mm; padding:3.4mm 4.4mm; background:#efece2; border:1px solid var(--line); border-radius:9px; font-size:10.5pt; line-height:1.55; color:var(--mid); }
 .card b{ color:var(--ink); }
 .card .row{ margin:.6mm 0; }
 
 /* Drehbuch-Block */
 .block{ break-inside:avoid; margin:0 0 6mm; }
 .block .bk{ display:flex; align-items:baseline; gap:10px; margin:0 0 2.4mm; }
-.block .bk h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:14pt; margin:0; color:#12324a; }
-.block .bk .zeit{ font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9pt; color:#0f3a4d; background:#eef2f7; padding:.5mm 2mm; border-radius:4px; }
+.block .bk h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:14pt; margin:0; color:#16231f; }
+.block .bk .zeit{ font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9pt; color:#7e6410; background:#efece2; padding:.5mm 2mm; border-radius:4px; }
 .point{ position:relative; margin:0 0 2.6mm 6mm; line-height:1.55; }
 .point::before{ content:"→"; position:absolute; left:-6mm; color:var(--teal); font-weight:800; }
-.fett{ margin:0 0 2.8mm; padding:2.6mm 3.6mm; background:#eef7ee; border:1px solid #cfe6c7; border-left:4px solid var(--leaf); border-radius:8px; font-weight:700; color:#2c5c11; line-height:1.5; break-inside:avoid; }
+.fett{ margin:0 0 2.8mm; padding:2.6mm 3.6mm; background:#faf4e4; border:1px solid #ecdcae; border-left:4px solid #d9a93a; border-radius:8px; font-weight:700; color:#5c4708; line-height:1.5; break-inside:avoid; }
 
 /* Regie – nicht sprechen */
 .regie{ margin:0 0 3mm; padding:2.4mm 3.6mm; background:#fff7ed; border:1px solid #f2d5a8; border-left:4px solid #e0912f; border-radius:8px; font-size:10pt; line-height:1.5; color:#7a4a0c; break-inside:avoid; }
@@ -220,10 +224,10 @@ body{ margin:0; font-family:'Inter',system-ui,sans-serif; color:var(--ink); font
 /* On-Screen-Tabelle */
 .osl{ margin:2mm 0 0; border-collapse:collapse; width:100%; font-size:11pt; }
 .osl td{ padding:2.2mm 3mm; border-bottom:1px solid var(--line); vertical-align:top; }
-.osl td.z{ width:22mm; font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9.5pt; color:#0f3a4d; }
+.osl td.z{ width:22mm; font-family:'DejaVu Sans Mono',ui-monospace,Menlo,Consolas,monospace; font-size:9.5pt; color:#7e6410; }
 
 /* Kurzfassung */
-.kurz{ margin:3mm 0 0; padding:5mm 6mm; background:#f3f7fb; border:1px solid var(--line); border-left:4px solid var(--teal); border-radius:10px; font-size:12.5pt; line-height:1.7; color:#26313f; }
+.kurz{ margin:3mm 0 0; padding:5mm 6mm; background:#efece2; border:1px solid var(--line); border-left:4px solid #d9a93a; border-radius:10px; font-size:12.5pt; line-height:1.7; color:#2a3430; }
 `;
 
 function renderDrehbuchZeile(z) {
@@ -270,7 +274,7 @@ function renderOnscreen() {
   <h1 class="h1">On-Screen-Text &amp; Kurzfassung</h1>
   <p class="lead">Optionale Einblendungen (Zeitmarke → Text) und eine 45-Sek-Fassung, falls ein knappes Intro gewünscht ist.</p>
   <table class="osl"><tbody>${rows}</tbody></table>
-  <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:13.5pt;color:#12324a;margin:8mm 0 2mm;">Kurzfassung (≈ 45 Sek)</h3>
+  <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:13.5pt;color:#16231f;margin:8mm 0 2mm;">Kurzfassung (≈ 45 Sek)</h3>
   <div class="kurz">${esc(KURZ)}</div>
 </section>`;
 }
@@ -287,7 +291,7 @@ function firstPageCard() {
 function coverHtml() {
   return `<div class="cover">
   <img src="${logoUri}" alt="Logo">
-  <div class="brow">Werde Meister deiner Gedanken</div>
+  <div class="brow"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div>
   <h1>${esc(META.titel)}</h1>
   <p>${esc(META.unter)}</p>
   <p class="meta">Video-Skript · ${esc(META.laenge)} · Stand ${DATE}</p>
