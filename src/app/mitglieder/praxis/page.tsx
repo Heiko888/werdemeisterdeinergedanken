@@ -22,8 +22,6 @@ export default function PraxisIndexPage() {
         eyebrow="Gelebte Praxis"
         title="Praxis"
         intro="Was die Stufen wirksam macht: geführte Meditationen, Atemübungen und Rituale für den Alltag – jede mit klarer Schritt-für-Schritt-Anleitung."
-        image="/hero-praxis.webp"
-        imagePosition="center"
       />
 
       <section className="py-14 sm:py-18">
