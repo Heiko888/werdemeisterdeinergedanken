@@ -1,9 +1,11 @@
 import { HERO_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ConsciousnessTest } from "@/components/sections/ConsciousnessTest";
 import { site } from "@/lib/site";
+import heroBild from "../../../public/hero-bewusstseinstest.webp";
 
 export const metadata: Metadata = {
   title: "Bewusstseinstest – Wo findest du dich gerade?",
@@ -17,11 +19,23 @@ export default function BewusstseinstestPage() {
     <>
       {/* Kopf */}
       <section className="on-dark grain relative flex min-h-[22rem] flex-col justify-center overflow-hidden bg-navy-900 py-16 text-cream sm:min-h-[34rem] sm:py-24">
-        {/* Ruhiger Marken-Glow auf Navy – ohne Titelbild */}
+        {/* Hintergrundbild – Kompass & Treppe ins Licht, bewusst dezent */}
+        <Image
+          src={heroBild}
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="pointer-events-none absolute inset-0 z-0 object-cover object-center opacity-55"
+        />
+        {/* Navy-Schleier für Lesbarkeit + Glow (hält das Bild zurückhaltend) */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 z-0"
-          style={{ background: HERO_GLOW }}
+          style={{
+            background: `${HERO_GLOW}, linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 80%, transparent), color-mix(in oklab, var(--color-navy-900) 45%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 72%, transparent))`,
+          }}
         />
         <Container size="narrow" className="relative z-10 flex flex-col items-center gap-5 text-center">
           <Eyebrow>Bewusstseinstest</Eyebrow>
