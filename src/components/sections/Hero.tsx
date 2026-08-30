@@ -31,9 +31,8 @@ export function Hero() {
 
           <Reveal delay={80}>
             <h1 className="max-w-2xl text-[2.15rem] font-medium leading-[1.08] text-cream sm:text-5xl md:text-6xl">
-              Dein Bewusstsein ist der{" "}
-              <em className="accent">Schlüssel</em>. Deine Gedanken sind der{" "}
-              <em className="accent">Code</em>.
+              Nicht die <em className="accent">Umstände</em> formen dich,
+              sondern was du darüber <em className="accent">denkst</em>.
             </h1>
           </Reveal>
 
