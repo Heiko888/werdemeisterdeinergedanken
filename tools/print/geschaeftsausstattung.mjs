@@ -315,31 +315,28 @@ async function png(html, file, w, h) {
   console.log("✓", file);
 }
 
-// Visitenkarte: 2-seitiges PDF (Vorder- + Rückseite) mit Schnittmarken.
-// Wir legen beide Seiten in ein Dokument, indem wir sie als zwei @page-Bögen
-// hintereinander rendern.
-const cardDoc = `<!doctype html><html><head><meta charset="utf-8"><style>
-  @page{size:${CW}mm ${CH}mm;margin:0}
-  *{margin:0;padding:0;box-sizing:border-box}
-  .sheet{width:${CW}mm;height:${CH}mm;position:relative;overflow:hidden;page-break-after:always}
-  .sheet:last-child{page-break-after:auto}
-</style></head><body>
-  <div class="sheet">${extractBody(cardFront({ marks: true }))}</div>
-  <div class="sheet">${extractBody(cardBack({ marks: true }))}</div>
-</body></html>`;
-
-function extractBody(doc) {
-  // Zieht <style>…</style> + Body-Inhalt aus einem vollständigen Dokument,
-  // damit beide Kartenseiten in EIN PDF-Dokument gebündelt werden können.
-  const style = doc.match(/<style>([\s\S]*?)<\/style>/)?.[1] ?? "";
-  const body = doc.match(/<body>([\s\S]*?)<\/body>/)?.[1] ?? "";
-  // @page-Regel entfernen (kommt schon vom Container) und scopen entfällt –
-  // die Klassen sind pro Seite eindeutig genug.
-  const scoped = style.replace(/@page\{[^}]*\}/g, "");
-  return `<style>${scoped}</style>${body}`;
+// Visitenkarte: Vorder- und Rückseite jeweils als eigenes 1-seitiges PDF
+// rendern und mit pdf-lib zu EINEM 2-seitigen Dokument zusammenführen.
+// Wichtig: getrennt rendern, damit sich die Styles beider Seiten nicht
+// gegenseitig überschreiben – sonst überdeckt der helle Rückseiten-Grund
+// (.page{background:paper}) den dunklen Vordergrund (.cosmos).
+const { PDFDocument } = require("pdf-lib");
+async function pdfBuffer(html) {
+  const page = await browser.newPage();
+  await page.setContent(html, { waitUntil: "networkidle" });
+  const buf = await page.pdf({ printBackground: true, preferCSSPageSize: true });
+  await page.close();
+  return buf;
 }
+const cardMerged = await PDFDocument.create();
+for (const html of [cardFront({ marks: true }), cardBack({ marks: true })]) {
+  const doc = await PDFDocument.load(await pdfBuffer(html));
+  const [pg] = await cardMerged.copyPages(doc, [0]);
+  cardMerged.addPage(pg);
+}
+writeFileSync(join(OUT, "WMDG-Visitenkarte.pdf"), await cardMerged.save());
+console.log("✓ WMDG-Visitenkarte.pdf");
 
-await pdf(cardDoc, "WMDG-Visitenkarte.pdf");
 await pdf(letterhead({ sample: false }), "WMDG-Briefpapier.pdf");
 await pdf(letterhead({ sample: true }), "WMDG-Briefpapier-Muster.pdf");
 
