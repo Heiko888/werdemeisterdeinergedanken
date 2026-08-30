@@ -160,6 +160,9 @@ Umgesetzt wurden die **im Code behebbaren 🔴-Punkte**:
 
 Validierung: `eslint` der geänderten Dateien ohne Befund, `next build` „Compiled successfully".
 
-**Bewusst nicht umgesetzt (kein Code-Fix möglich):**
-- `public/blog/neuroplastizitaet.png` (🔴) und `public/hero-mitglieder.webp` (🔴) – falsch eingefärbte Raster-/Foto-Motive. Diese brauchen neu erstellte Bild-Assets in warm-golden/cinematic; sie lassen sich nicht per Code umfärben. Empfehlung: neu generieren/ersetzen und dann austauschen.
+**Bild-Punkte – ebenfalls umgesetzt (Nachtrag):**
+- `public/hero-mitglieder.webp` (🔴) und `public/blog/neuroplastizitaet` (🔴) wurden durch **neu erzeugte, abstrakt-atmosphärische Motive** ersetzt (Navy `#090b10` + Gold-Glow, feines Grain/Nebel, Vignette) – gerendert mit der projekteigenen Chromium-Pipeline direkt aus den Design-Tokens, als optimiertes WebP (je ~7 KB). Bewusste Design-Entscheidung: **weg vom Gehirn-/Neon-Motiv** (blieb dem alten kosmischen Look zu ähnlich) hin zu ruhiger, edler Licht-Atmosphäre. Das alte blaue `neuroplastizitaet.png` (2 MB) wurde entfernt und die Referenz in `src/lib/blog.ts` samt `alt`-Text angepasst.
+
+**Noch offen / Aufräumen:**
 - Das alte `public/logo-brain.png` (blau) wird nun nirgends mehr referenziert und kann bei der nächsten Asset-Bereinigung gelöscht werden (steht bereits auf der Aufräum-Liste).
+- Weitere Mitglieder-Heroes mit blau/gold-gemischter Bildsprache (`hero-programm.webp`, `hero-gedankenprofil.webp`) waren nur 🟠 – auf Wunsch lassen sie sich mit derselben Pipeline auf denselben abstrakt-atmosphärischen Stil umstellen.

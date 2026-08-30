@@ -1030,8 +1030,8 @@ export const posts: Post[] = [
   {
     slug: "neuroplastizitaet-warum-dein-gehirn-formbar-ist",
     image: {
-      src: "/blog/neuroplastizitaet.png",
-      alt: "Ein Gehirn, dessen neuronales Netz von kühlem Blau in leuchtendes Gold übergeht – Verbindungen, die sich lebenslang neu verdrahten.",
+      src: "/blog/neuroplastizitaet.webp",
+      alt: "Warmes goldenes Licht, das aus tiefem Dunkel aufscheint – ein ruhiges Sinnbild für ein Gehirn, das sich lebenslang neu formt.",
     },
     title: "Neuroplastizität: Warum sich dein Gehirn ein Leben lang verändert",
     excerpt:
