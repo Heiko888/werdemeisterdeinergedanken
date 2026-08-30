@@ -30,6 +30,7 @@ Einen einzelnen Prüfer gezielt aufrufen: „Nutze den **mitglieder-waechter**, 
 | **sicherheits-pruefer** | API-Routen, Secrets, Eingabevalidierung, Service-Role-Key, Rate-Limiting, Security-Header. |
 | **barrierefreiheit-pruefer** | a11y: Semantik, Alt-Texte, Tastatur/Fokus, Kontrast, mobile Darstellung. |
 | **inhalts-pruefer** | Vollständigkeit: 7 Stufen, Praxis, Vertiefungen, Blog, PDFs, Impressum/Datenschutz. |
+| **design-pruefer** | Design-Umstellung: Ist der Wechsel vom alten „kosmischen" Look aufs neue Design (Anthrazit/Gold, Papier-Flächen, cinematische Bildwelt) überall vollzogen? Altlasten (`bg-cosmic`, `CosmicBackground`, Fremd-Paletten, harte Hex-Farben), Token-/Typografie-Treue und Bilder, die nicht zum Design passen. |
 
 ## Wie du das Team weiter ausbaust
 
