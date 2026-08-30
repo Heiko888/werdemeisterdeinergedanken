@@ -9,7 +9,7 @@ import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { stages, testimonials, faqs } from "@/lib/content";
 import { practices } from "@/lib/practices";
 import { deepDives } from "@/lib/deep-dives";
-import brainLogo from "../../../public/logo-brain.png";
+import brainLogo from "../../../public/logo-brain-gold.png";
 
 export const metadata: Metadata = {
   title: "Mitgliedschaft",
@@ -165,7 +165,7 @@ export default async function MitgliedschaftPage({
               src={brainLogo}
               alt="Werde Meister deiner Gedanken – Logo"
               priority
-              className="logo-gold mx-auto w-[min(400px,78vw)] drop-shadow-[0_10px_60px_rgba(217,169,58,0.35)]"
+              className="mx-auto w-[min(400px,78vw)] drop-shadow-[0_10px_60px_rgba(217,169,58,0.35)]"
             />
           </div>
         </div>
@@ -225,9 +225,9 @@ export default async function MitgliedschaftPage({
                 className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full font-display text-xl font-medium text-cream"
                 style={{
                   background:
-                    "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
+                    "linear-gradient(#090b10,#090b10) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                   border: "1.5px solid transparent",
-                  boxShadow: "0 0 22px -4px rgba(52,196,196,.5)",
+                  boxShadow: "0 0 22px -4px rgba(232,193,95,.5)",
                 }}
               >
                 {s.number}

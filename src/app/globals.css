@@ -575,16 +575,6 @@
       0 2px 10px -6px color-mix(in oklab, var(--color-gold-500) 30%, transparent);
   }
 
-  /* Das Marken-Emblem (buntes Gehirn-PNG) einheitlich in Gold einfärben, statt
-     Blau/Grün/Cyan. grayscale(1) erhält die Leucht-Struktur (helle Knoten,
-     Netz-Linien, Glow), sepia + saturate + hue-rotate legen den Goldton
-     darüber (≈ gold-400 #e8c15f). So bleibt das Logo als goldenes Gehirn
-     erkennbar, ohne dass eine neue Grafik nötig ist. */
-  .logo-gold {
-    filter: grayscale(1) sepia(1) saturate(2.6) hue-rotate(-8deg)
-      brightness(1.05) contrast(1.02);
-  }
-
   .mask-fade-y {
     -webkit-mask-image: linear-gradient(
       to bottom,

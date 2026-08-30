@@ -6,6 +6,15 @@
 > (Anthrazit/Navy + Gold, Papier-Flächen, realistisch-cinematische Bildwelt)
 > vollständig vollzogen? Passen alle Bilder zum Design?
 
+> **Update 2026-08-30 — 🔴-Punkte umgesetzt.** Alle im Code behebbaren roten Punkte
+> wurden behoben (Favicon aus Gold-Asset neu erzeugt, `#08102a` → `navy-950 #090b10`
+> in 6 Dateien, Teal-Glow → Gold auf allen Stufen-Badges, Logo-Einbindungen auf das
+> fertige `logo-brain-gold.png` umgestellt und den `.logo-gold`-Filter-Hack entfernt).
+> Lint + `next build` grün. **Offen bleiben die zwei bild-inhaltlichen 🔴-Punkte**
+> `public/blog/neuroplastizitaet.png` und `public/hero-mitglieder.webp` – diese sind
+> falsch eingefärbte Raster-/Foto-Motive und brauchen neue Bild-Assets (kein Code-Fix).
+> Details am Ende unter „Umsetzungs-Log".
+
 **Fazit:** Design-Wechsel weitgehend, mit Restpunkten 🟠 — Token-System, Typografie und die meisten Sektionen/Seiten sind vollständig auf Navy/Gold/Papier umgestellt; es bestehen aber **mehrere aktive, sichtbare Altlasten** (u. a. das **Favicon**, ein hartcodierter alter „Mitternachtsblau"-Ton in 6 Dateien, inkonsistente Glow-Farben auf identischen UI-Elementen, OG-Preview-Bilder in Teal/Leaf statt Gold) sowie **eine Reihe von Bildern mit deutlich kosmisch-blauer/neon-türkiser Bildsprache**, die dem neuen „warmes Gold, dunkel, realistisch-cinematisch"-Look widersprechen.
 
 **Kennzahlen:**
@@ -135,3 +144,22 @@ Es wurde eine Stichprobe zentraler Marketing-/Blog-Bilder direkt geöffnet und v
 - **Alle 29 Blog-Cover-PNGs** vollständig durchsehen (aktuell nur 8 stichprobenartig geprüft) und gegen die Gold/Warm-Vorgabe bewerten – ggf. gemeinsam mit dem Team festlegen, ob der wiederkehrende „Blau = alt/negativ vs. Gold = neu/positiv"-Kontrast als bewusstes Stilmittel bestehen bleibt oder vereinheitlicht werden soll.
 - **Stage-Badge-Glow** (`Hero.tsx`, `mitgliedschaft/page.tsx`, `die-7-stufen/page.tsx`) nach Farbangleichung nebeneinander im Browser vergleichen.
 - **Logo-Ersetzung** (`logo-brain.png` → `logo-brain-gold.png`) nach Umstellung in allen drei Einbindungsorten (`Logo.tsx`, `BlogIndex.tsx`, `mitgliedschaft/page.tsx`) visuell gegenprüfen, insbesondere Kantenschärfe/Transparenz des bereits vorhandenen Gold-Assets.
+
+---
+
+## Umsetzungs-Log (2026-08-30)
+
+Umgesetzt wurden die **im Code behebbaren 🔴-Punkte**:
+
+| Punkt | Änderung | Dateien |
+|---|---|---|
+| Favicon zeigt altes blau/türkises Neon-Gehirn | Favicon 256×256 neu aus `public/logo-brain-gold.png` erzeugt (Transparenz erhalten) | `src/app/icon.png` |
+| Hartcodiertes „Mitternachtsblau" `#08102a` | → `navy-950` `#090b10` (bzw. `rgba(9,11,16,…)`) | `Hero.tsx`, `mitgliedschaft/page.tsx`, `die-7-stufen/page.tsx`, `opengraph-image.tsx`, `blog/[slug]/opengraph-image.tsx`, `api/stripe/webhook/route.ts` |
+| Inkonsistenter Teal-Glow auf Stufen-/Kennzahl-Badges | → Gold `rgba(232,193,95,.5)` (wie bereits in `die-7-stufen`) | `Hero.tsx`, `mitgliedschaft/page.tsx` |
+| Logo nur per fragilem CSS-Filter golden (Quell-PNG blau) | Einbindungen auf `logo-brain-gold.png` umgestellt, `.logo-gold`-Filter entfernt | `Logo.tsx`, `BlogIndex.tsx`, `mitgliedschaft/page.tsx`, `globals.css` |
+
+Validierung: `eslint` der geänderten Dateien ohne Befund, `next build` „Compiled successfully".
+
+**Bewusst nicht umgesetzt (kein Code-Fix möglich):**
+- `public/blog/neuroplastizitaet.png` (🔴) und `public/hero-mitglieder.webp` (🔴) – falsch eingefärbte Raster-/Foto-Motive. Diese brauchen neu erstellte Bild-Assets in warm-golden/cinematic; sie lassen sich nicht per Code umfärben. Empfehlung: neu generieren/ersetzen und dann austauschen.
+- Das alte `public/logo-brain.png` (blau) wird nun nirgends mehr referenziert und kann bei der nächsten Asset-Bereinigung gelöscht werden (steht bereits auf der Aufräum-Liste).

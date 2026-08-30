@@ -95,9 +95,9 @@ export function Hero() {
               className="absolute -bottom-3 -right-2 hidden rounded-xl px-5 py-4 backdrop-blur lg:block"
               style={{
                 background:
-                  "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
+                  "linear-gradient(rgba(9,11,16,.85),rgba(9,11,16,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                 border: "1.5px solid transparent",
-                boxShadow: "0 0 26px -6px rgba(52,196,196,.5)",
+                boxShadow: "0 0 26px -6px rgba(232,193,95,.5)",
               }}
             >
               <p className="font-display text-3xl italic text-cream">7</p>

@@ -126,7 +126,7 @@ export default function SevenStagesPage() {
                     className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full font-display text-lg font-medium text-cream"
                     style={{
                       background:
-                        "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
+                        "linear-gradient(#090b10,#090b10) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                       border: "1.5px solid transparent",
                       boxShadow: "0 0 22px -4px rgba(232,193,95,.5)",
                     }}

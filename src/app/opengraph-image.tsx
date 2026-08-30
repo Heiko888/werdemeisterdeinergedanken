@@ -21,7 +21,7 @@ export default function Image() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "96px",
-          backgroundColor: "#08102a",
+          backgroundColor: "#090b10",
           backgroundImage:
             "radial-gradient(1000px 500px at 12% 0%, rgba(33,178,189,0.28), transparent 60%), radial-gradient(900px 500px at 100% 100%, rgba(140,198,63,0.20), transparent 55%)",
           color: "#f4f2ec",
