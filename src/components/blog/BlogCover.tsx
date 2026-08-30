@@ -10,12 +10,15 @@ import type { AccentKey } from "@/lib/blog-accent";
  * unterschiedlich aus. Rein dekorativ → `aria-hidden`.
  */
 
+// Alle Farbwelten liegen im warmen Gold-Spektrum – so bleiben die generativen
+// Cover untereinander unterscheidbar (je Kategorie ein anderes Gold-Paar) und
+// zugleich stimmig zum durchgehend warmen Marken-Look (kein Blau/Türkis mehr).
 const PAIRS: Record<AccentKey, [string, string]> = {
   leaf: ["var(--color-gold-400)", "var(--color-gold-500)"],
-  teal: ["var(--color-teal-500)", "var(--color-brand-500)"],
-  brand: ["var(--color-brand-500)", "var(--color-teal-400)"],
-  cosmic: ["var(--color-teal-500)", "var(--color-teal-300)"],
-  navy: ["var(--color-brand-400)", "var(--color-teal-500)"],
+  teal: ["var(--color-gold-500)", "var(--color-gold-300)"],
+  brand: ["var(--color-gold-400)", "var(--color-gold-600)"],
+  cosmic: ["var(--color-gold-300)", "var(--color-gold-500)"],
+  navy: ["var(--color-gold-500)", "var(--color-gold-400)"],
 };
 
 /** Stabiler 32-bit-Hash (FNV-1a). Gleicher Seed → gleiches Motiv. */

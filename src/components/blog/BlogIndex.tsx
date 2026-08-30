@@ -182,7 +182,7 @@ function FeaturedCard({ post }: { post: BlogCard }) {
               className="absolute -inset-4 rounded-3xl opacity-60 blur-2xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 30%, transparent), transparent 68%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 28%, transparent), transparent 68%)",
               }}
             />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl ring-1 ring-white/10">
