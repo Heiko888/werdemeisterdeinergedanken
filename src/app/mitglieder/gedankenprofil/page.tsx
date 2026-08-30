@@ -1,6 +1,5 @@
 import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -85,23 +84,8 @@ export default async function GedankenprofilPage() {
     <>
       {/* Kopf */}
       <section className="member-hero flex flex-col justify-center overflow-hidden py-16 min-h-[22rem] sm:min-h-[34rem] sm:py-20">
-        {/* Titelbild – Denker mit leuchtendem Gehirn und Weg ins Licht: reine
-            Dekoration hinter dem Text (deshalb alt=""). Darüber ein nach links
-            dichter werdender Navy-Schleier für die Lesbarkeit, dann der übliche
-            APP_GLOW für den Farbton. */}
-        <Image
-          src="/hero-gedankenprofil.webp"
-          alt=""
-          aria-hidden
-          fill
-          priority
-          sizes="100vw"
-          className="z-0 object-cover object-[center_18%]"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/92 via-navy-950/80 to-navy-950/62"
-        />
+        {/* Ruhiger Marken-Verlauf (member-hero) mit weichem APP_GLOW für den
+            Farbton – ohne Titelbild. */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 z-0"
