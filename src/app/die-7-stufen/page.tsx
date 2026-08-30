@@ -28,9 +28,12 @@ export default function SevenStagesPage() {
         className="on-dark grain relative isolate overflow-hidden text-cream"
         style={{
           background:
-            "radial-gradient(52% 26% at 14% 30%, color-mix(in oklab, var(--color-teal-500) 30%, transparent) 0%, transparent 62%)," +
-            "radial-gradient(50% 24% at 88% 44%, color-mix(in oklab, var(--color-brand-500) 32%, transparent) 0%, transparent 58%)," +
-            "radial-gradient(54% 22% at 18% 70%, color-mix(in oklab, var(--color-teal-500) 22%, transparent) 0%, transparent 60%)," +
+            // Warme Bildwelt: der goldene Pfad + Sonnenuntergang des Fotos setzt
+            // sich in warmen Glows fort (Champagner → Sonnengold → Antikgold),
+            // statt in türkis/blaue Flächen zu brechen.
+            "radial-gradient(52% 26% at 14% 30%, color-mix(in oklab, var(--color-gold-400) 22%, transparent) 0%, transparent 62%)," +
+            "radial-gradient(54% 26% at 88% 40%, color-mix(in oklab, var(--color-gold-500) 30%, transparent) 0%, transparent 58%)," +
+            "radial-gradient(54% 22% at 18% 72%, color-mix(in oklab, var(--color-gold-600) 20%, transparent) 0%, transparent 60%)," +
             "radial-gradient(52% 24% at 82% 92%, color-mix(in oklab, var(--color-gold-500) 22%, transparent) 0%, transparent 60%)," +
             "var(--color-navy-950)",
         }}
@@ -125,7 +128,7 @@ export default function SevenStagesPage() {
                       background:
                         "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                       border: "1.5px solid transparent",
-                      boxShadow: "0 0 22px -4px rgba(52,196,196,.5)",
+                      boxShadow: "0 0 22px -4px rgba(232,193,95,.5)",
                     }}
                   >
                     {stage.number}
@@ -202,8 +205,10 @@ export default function SevenStagesPage() {
         className="grain-soft relative py-16 sm:py-24"
         style={{
           background:
-            "radial-gradient(66% 56% at 90% -8%, color-mix(in oklab, var(--color-brand-500) 24%, transparent), transparent 62%)," +
-            "radial-gradient(58% 52% at 8% 108%, color-mix(in oklab, var(--color-teal-500) 20%, transparent), transparent 60%)," +
+            // Warmer Nachklang zum Stufen-Band – gold statt blau/türkis, aber
+            // auf der hellen Fläche bewusst zurückhaltender als der Hero.
+            "radial-gradient(66% 56% at 90% -8%, color-mix(in oklab, var(--color-gold-400) 22%, transparent), transparent 62%)," +
+            "radial-gradient(58% 52% at 8% 108%, color-mix(in oklab, var(--color-gold-500) 14%, transparent), transparent 60%)," +
             "var(--color-surface-2)",
         }}
       >
