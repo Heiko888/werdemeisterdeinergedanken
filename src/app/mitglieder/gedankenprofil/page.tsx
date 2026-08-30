@@ -85,7 +85,7 @@ export default async function GedankenprofilPage() {
     <>
       {/* Kopf */}
       <section className="member-hero flex flex-col justify-center overflow-hidden py-16 min-h-[22rem] sm:min-h-[34rem] sm:py-20">
-        {/* Titelbild – Denker mit leuchtendem Gehirn und Weg ins Licht: reine
+        {/* Titelbild – abstrakt-atmosphärischer Gold-Glow auf tiefem Navy: reine
             Dekoration hinter dem Text (deshalb alt=""). Darüber ein nach links
             dichter werdender Navy-Schleier für die Lesbarkeit, dann der übliche
             APP_GLOW für den Farbton. */}
