@@ -178,7 +178,7 @@ export default function SevenStagesPage() {
                               className={`text-[0.68rem] font-semibold uppercase tracking-[0.16em] ${
                                 item.accent
                                   ? "text-gold-300/90"
-                                  : "text-teal-300/80"
+                                  : "text-gold-400/80"
                               }`}
                             >
                               {item.label}
