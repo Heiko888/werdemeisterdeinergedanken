@@ -37,11 +37,19 @@ export function MaybeNotYou() {
 
         <Reveal delay={120}>
           <div className="relative mx-auto w-full">
-            <VideoMessage
-              youtubeId={site.videoMessage.youtubeId}
-              title={site.videoMessage.title}
-              aspect="video"
-            />
+            {site.videoMessage.youtubeId ? (
+              <VideoMessage
+                youtubeId={site.videoMessage.youtubeId}
+                title={site.videoMessage.title}
+                aspect="video"
+              />
+            ) : (
+              <div className="flex aspect-video items-center justify-center rounded-[2px] border border-ink/10 bg-surface-2 shadow-soft">
+                <p className="px-6 text-center text-[0.95rem] leading-relaxed text-ink-mid">
+                  Die persönliche Videobotschaft folgt in Kürze.
+                </p>
+              </div>
+            )}
           </div>
         </Reveal>
       </Container>
