@@ -70,7 +70,7 @@ body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;pos
   background:${hell ? "linear-gradient(120deg,#d9a93a,#7e6410)" : "linear-gradient(120deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .mid{max-width:820px}
 .eyebrow{font-weight:800;font-size:22px;letter-spacing:.13em;text-transform:uppercase;color:${hell ? "#7e6410" : "#f2d489"};margin-bottom:22px}
-.title{font-family:Fraunces,serif;font-weight:600;line-height:1.05;letter-spacing:-1px;filter:drop-shadow(0 6px 28px ${hell ? "rgba(246,244,238,.6)" : "rgba(0,0,0,.5)"})}
+.title{font-family:Fraunces,serif;font-weight:600;line-height:1.05;letter-spacing:-1px;text-wrap:balance;filter:drop-shadow(0 6px 28px ${hell ? "rgba(246,244,238,.6)" : "rgba(0,0,0,.5)"})}
 .sub{margin-top:20px;font-size:29px;line-height:1.34;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.82)"};max-width:760px}
 .foot{display:flex;align-items:center;gap:16px}
 .foot .u{font-weight:600;font-size:23px;color:${hell ? "#7e6410" : "#e8c15f"};letter-spacing:.02em}
