@@ -23,8 +23,8 @@ export function Hero() {
         }}
       />
 
-      <Container className="grid items-center gap-14 pt-14 pb-16 sm:pt-28 sm:pb-32 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="flex flex-col items-start gap-8">
+      <Container className="grid gap-8 pt-14 sm:gap-10 sm:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div className="flex flex-col items-start gap-7 pb-2 sm:gap-8 lg:self-center lg:pb-28">
           <Reveal>
             <Eyebrow>Bewusstseinsentwicklung in 7 Stufen</Eyebrow>
           </Reveal>
@@ -73,25 +73,26 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={200} className="relative mx-auto w-full max-w-sm lg:max-w-none">
+        <Reveal delay={200} className="relative w-full self-end">
           <div className="relative mx-auto w-fit">
+            {/* Gold-Glow hinter Kopf/Oberkörper */}
             <div
               aria-hidden
-              className="absolute -inset-6 -z-10 rounded-full opacity-70 blur-2xl"
+              className="pointer-events-none absolute left-1/2 top-[6%] -z-10 aspect-square w-[78%] -translate-x-1/2 rounded-full opacity-70 blur-2xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 32%, transparent), transparent 66%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 66%)",
               }}
             />
             <Image
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto w-[min(420px,80vw)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
+              className="mx-auto block w-[min(320px,74vw)] lg:w-[min(440px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
-              className="absolute -bottom-3 -right-2 hidden rounded-xl px-5 py-4 backdrop-blur lg:block"
+              className="absolute bottom-16 right-0 rounded-xl px-5 py-4 backdrop-blur sm:bottom-20 lg:bottom-28"
               style={{
                 background:
                   "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
