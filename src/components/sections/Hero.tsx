@@ -23,7 +23,7 @@ export function Hero() {
         }}
       />
 
-      <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:pb-0">
+      <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[0.95fr_1fr] lg:items-end lg:pb-0">
         <div className="flex flex-col items-start gap-7 sm:gap-8 lg:self-center lg:pb-28">
           <Reveal>
             <Eyebrow>Bewusstseinsentwicklung in 7 Stufen</Eyebrow>
@@ -106,7 +106,7 @@ export function Hero() {
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto block w-[min(320px,74vw)] lg:w-[min(510px,100%)]"
+              className="mx-auto block w-[min(320px,74vw)] lg:w-[min(560px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
