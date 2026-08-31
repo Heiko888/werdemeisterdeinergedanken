@@ -12,44 +12,6 @@ export function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-navy-900">
-      {/* Krafttier & Symbol – der goldene Eisvogel (dezentes, schmales Band) */}
-      <div className="relative border-b border-white/10">
-        <Container className="flex flex-col items-center gap-4 py-7 text-center sm:flex-row sm:justify-between sm:gap-6 sm:text-left">
-          <div className="min-w-0 sm:order-1">
-            <p className="text-sm leading-relaxed text-cream-dim/80">
-              <span className="font-medium text-gold-300">Der Eisvogel</span> –
-              mein Symbol für einen klaren, wachen Geist.
-            </p>
-            <ul className="mt-1 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-cream-dim/55 sm:justify-start">
-              <li>Glück &amp; Hoffnung</li>
-              <li aria-hidden className="text-cream-dim/25">·</li>
-              <li>Fokus &amp; Präzision</li>
-              <li aria-hidden className="text-cream-dim/25">·</li>
-              <li>Klarheit &amp; Reinheit</li>
-            </ul>
-          </div>
-
-          <div className="relative shrink-0 sm:order-2">
-            <div
-              aria-hidden
-              className="absolute -inset-3 -z-10 rounded-full opacity-60 blur-xl"
-              style={{
-                background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), transparent 68%)",
-              }}
-            />
-            <Image
-              src="/eisvogel-gold.webp"
-              alt="Goldener Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
-              width={320}
-              height={320}
-              sizes="(min-width: 640px) 80px, 64px"
-              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(217,169,58,0.3)] sm:w-20"
-            />
-          </div>
-        </Container>
-      </div>
-
       {/* Link-Bereich */}
       <Container className="grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4 [&>*]:min-w-0">
         <div className="flex flex-col gap-4">
@@ -136,6 +98,44 @@ export function Footer() {
           </a>
         </div>
       </Container>
+
+      {/* Krafttier & Symbol – der goldene Eisvogel (mittig, ganz unten) */}
+      <div className="hairline">
+        <Container className="flex flex-col items-center gap-3 py-8 text-center">
+          <div className="relative shrink-0">
+            <div
+              aria-hidden
+              className="absolute -inset-3 -z-10 rounded-full opacity-60 blur-xl"
+              style={{
+                background:
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), transparent 68%)",
+              }}
+            />
+            <Image
+              src="/eisvogel-gold.webp"
+              alt="Goldener Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
+              width={320}
+              height={320}
+              sizes="(min-width: 640px) 80px, 64px"
+              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(217,169,58,0.3)] sm:w-20"
+            />
+          </div>
+
+          <div className="min-w-0">
+            <p className="text-sm leading-relaxed text-cream-dim/80">
+              <span className="font-medium text-gold-300">Der Eisvogel</span> –
+              mein Symbol für einen klaren, wachen Geist.
+            </p>
+            <ul className="mt-1 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-cream-dim/55">
+              <li>Glück &amp; Hoffnung</li>
+              <li aria-hidden className="text-cream-dim/25">·</li>
+              <li>Fokus &amp; Präzision</li>
+              <li aria-hidden className="text-cream-dim/25">·</li>
+              <li>Klarheit &amp; Reinheit</li>
+            </ul>
+          </div>
+        </Container>
+      </div>
 
       <div className="hairline">
         <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-mist-300/60 sm:flex-row">
