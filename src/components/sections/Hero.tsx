@@ -23,8 +23,8 @@ export function Hero() {
         }}
       />
 
-      <Container className="grid gap-8 pt-14 sm:gap-10 sm:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-        <div className="flex flex-col items-start gap-7 pb-2 sm:gap-8 lg:self-center lg:pb-28">
+      <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:pb-0">
+        <div className="flex flex-col items-start gap-7 sm:gap-8 lg:self-center lg:pb-28">
           <Reveal>
             <Eyebrow>Bewusstseinsentwicklung in 7 Stufen</Eyebrow>
           </Reveal>
@@ -34,6 +34,24 @@ export function Hero() {
               Nicht die <em className="accent">Umstände</em> formen dich,
               sondern was du darüber <em className="accent">denkst</em>.
             </h1>
+          </Reveal>
+
+          {/* Mobil: Porträt direkt unter der Überschrift (Desktop nutzt die rechte Spalte) */}
+          <Reveal delay={120} className="relative mx-auto w-fit self-center lg:hidden">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute left-1/2 top-[6%] -z-10 aspect-square w-[80%] -translate-x-1/2 rounded-full opacity-70 blur-2xl"
+              style={{
+                background:
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 66%)",
+              }}
+            />
+            <Image
+              src={heikoHero}
+              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
+              priority
+              className="block w-[min(280px,68vw)]"
+            />
           </Reveal>
 
           <Reveal delay={160}>
@@ -73,7 +91,7 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={200} className="relative w-full self-end">
+        <Reveal delay={200} className="relative hidden w-full self-end lg:block">
           <div className="relative mx-auto w-fit">
             {/* Gold-Glow hinter Kopf/Oberkörper */}
             <div
