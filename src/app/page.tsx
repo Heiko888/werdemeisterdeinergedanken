@@ -3,7 +3,7 @@ import { SevenStages } from "@/components/sections/SevenStages";
 import { Compass } from "@/components/sections/Compass";
 import { WhyMe } from "@/components/sections/WhyMe";
 import { WhatToExpect } from "@/components/sections/WhatToExpect";
-import { Creed } from "@/components/sections/Creed";
+// import { Creed } from "@/components/sections/Creed";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { MaybeNotYou } from "@/components/sections/MaybeNotYou";
 import { LeadMagnet } from "@/components/sections/LeadMagnet";
@@ -18,7 +18,7 @@ export default function Home() {
       <Compass />
       <WhyMe />
       <WhatToExpect />
-      <Creed />
+      {/* <Creed /> */}
       <Testimonials />
       <MaybeNotYou />
       <LeadMagnet />
