@@ -150,7 +150,7 @@ export function ContactForm() {
         <input
           type="checkbox"
           required
-          className="mt-0.5 h-5 w-5 shrink-0 accent-brand-500"
+          className="mt-0.5 h-5 w-5 shrink-0 accent-gold-500"
         />
         <span>
           Ich habe die{" "}

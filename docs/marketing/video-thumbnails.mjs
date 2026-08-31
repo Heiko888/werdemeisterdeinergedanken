@@ -18,6 +18,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
+const heikoUrl = pathToFileURL(join(ROOT, "public/heiko-hero.webp")).href;
 const read = (p) => readFileSync(join(ROOT, p), "utf8");
 
 // ---------- Daten aus den TS-Quellen ziehen --------------------------------
@@ -76,16 +77,26 @@ body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;pos
 .foot .u{font-weight:600;font-size:23px;color:${hell ? "#7e6410" : "#e8c15f"};letter-spacing:.02em}
 .num{position:absolute;right:64px;top:50%;transform:translateY(-50%);z-index:1;font-family:Fraunces,serif;font-weight:600;
   font-size:420px;line-height:.8;color:${hell ? "rgba(22,35,31,.05)" : "rgba(255,255,255,.05)"}}
+/* Freigestelltes Porträt rechts (nur Willkommens-Folie) */
+.pglow{position:absolute;right:150px;bottom:56px;width:520px;height:520px;border-radius:50%;z-index:1;
+  background:radial-gradient(circle, rgba(217,169,58,${hell ? ".26" : ".30"}), transparent 66%);filter:blur(46px)}
+.portrait{position:absolute;right:48px;bottom:0;height:704px;width:auto;z-index:2;
+  filter:drop-shadow(0 24px 60px rgba(0,0,0,${hell ? ".28" : ".5"}))}
+.frame.has-portrait .mid{max-width:600px}
+/* Tag nicht über den Kopf: bei Porträt nach oben links neben das Logo, etwas kleiner */
+.frame.has-portrait .top{justify-content:flex-start}
+.frame.has-portrait .tag{align-self:center;text-align:left;font-size:16px}
 `;
 
-function thumbHtml({ eyebrow, title, sub, num, tag }, hell) {
+function thumbHtml({ eyebrow, title, sub, num, portrait, tag }, hell) {
   const tf = fit(title, 84, 68, 54);
   return `<!doctype html><html lang="de"><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>${css(hell)}</style></head>
 <body>
   <div class="bg"></div>
   ${num ? `<div class="num">${num}</div>` : ""}
-  <div class="frame">
+  ${portrait ? `<div class="pglow"></div><img class="portrait" src="${heikoUrl}" alt="">` : ""}
+  <div class="frame${portrait ? " has-portrait" : ""}">
     <div class="top"><img class="logo" src="${brainUrl}" alt=""><div class="tag">${tag ?? "Mitgliederbereich · Video"}</div></div>
     <div class="mid">
       <div class="eyebrow">${eyebrow}</div>
@@ -100,7 +111,7 @@ function thumbHtml({ eyebrow, title, sub, num, tag }, hell) {
 const JOBS = [];
 // Willkommensvideo auf dem Dashboard (/mitglieder) – Top-Level, kein Unterordner.
 JOBS.push({ dir: ".", name: "willkommen",
-  data: { eyebrow: "Willkommen", title: "Schön, dass du da bist", sub: "Dein Bereich – so findest du dich zurecht" } });
+  data: { eyebrow: "Willkommen", title: "Schön, dass du da bist", sub: "Dein Bereich – so findest du dich zurecht", portrait: true } });
 // Persönliche Videobotschaft auf der Startseite (Sektion «Ein anderer
 // Blickwinkel»). Öffentlich, daher kein «Mitgliederbereich»-Tag.
 JOBS.push({ dir: "landing", name: "ein-anderer-blickwinkel",
@@ -127,16 +138,13 @@ let chromium;
 try { ({ chromium } = require("/opt/node22/lib/node_modules/playwright")); }
 catch { ({ chromium } = require("playwright")); }
 
-// Optionaler Filter: `node docs/marketing/video-thumbnails.mjs landing` rendert
-// nur Jobs, deren Ordner oder Name den Begriff enthält (praktisch bei Einzel-
-// updates, ohne alle 100 Thumbnails neu zu erzeugen).
-const only = process.argv[2];
-const jobs = only ? JOBS.filter((j) => j.dir.includes(only) || j.name.includes(only)) : JOBS;
-
 const browser = await chromium.launch({ executablePath: findChrome() });
 const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
+// Optional nur bestimmte Jobs rendern: ONLY=willkommen node docs/marketing/video-thumbnails.mjs
+const ONLY = process.env.ONLY?.split(",").map((s) => s.trim()).filter(Boolean);
 let n = 0;
-for (const j of jobs) {
+for (const j of JOBS) {
+  if (ONLY && !ONLY.includes(j.name)) continue;
   const outDir = join(ROOT, "public", "video-thumbnails", j.dir);
   mkdirSync(outDir, { recursive: true });
   // Standard (dunkel) + Creme-Variante (-hell) je Thumbnail.

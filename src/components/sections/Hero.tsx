@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight } from "@/components/ui/Icon";
-import brainLogo from "../../../public/logo-brain.png";
+import heikoHero from "../../../public/heiko-hero.webp";
 
 const proof = ["7-Stufen-Modell", "Ohne Esoterik-Floskeln", "Auf Augenhöhe"];
 
@@ -23,18 +23,35 @@ export function Hero() {
         }}
       />
 
-      <Container className="grid items-center gap-14 pt-14 pb-16 sm:pt-28 sm:pb-32 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="flex flex-col items-start gap-8">
+      <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[0.95fr_1fr] lg:items-end lg:pb-0">
+        <div className="flex flex-col items-start gap-7 sm:gap-8 lg:self-center lg:pb-28">
           <Reveal>
             <Eyebrow>Bewusstseinsentwicklung in 7 Stufen</Eyebrow>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="max-w-2xl text-[2.15rem] font-medium leading-[1.08] text-cream sm:text-5xl md:text-6xl">
-              Dein Bewusstsein ist der{" "}
-              <em className="accent">Schlüssel</em>. Deine Gedanken sind der{" "}
-              <em className="accent">Code</em>.
+              Nicht die <em className="accent">Umstände</em> formen dich,
+              sondern was du darüber <em className="accent">denkst</em>.
             </h1>
+          </Reveal>
+
+          {/* Mobil: Porträt direkt unter der Überschrift (Desktop nutzt die rechte Spalte) */}
+          <Reveal delay={120} className="relative mx-auto w-fit self-center lg:hidden">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[104%] w-[100%] -translate-x-1/2 -translate-y-1/2 opacity-70 blur-2xl"
+              style={{
+                background:
+                  "radial-gradient(50% 50% at 50% 46%, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 70%)",
+              }}
+            />
+            <Image
+              src={heikoHero}
+              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
+              priority
+              className="block w-[min(280px,68vw)] [filter:drop-shadow(0_0_8px_rgba(217,169,58,0.6))_drop-shadow(0_0_20px_rgba(217,169,58,0.4))]"
+            />
           </Reveal>
 
           <Reveal delay={160}>
@@ -74,25 +91,26 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={200} className="relative mx-auto w-full max-w-sm lg:max-w-none">
+        <Reveal delay={200} className="relative hidden w-full self-end lg:block">
           <div className="relative mx-auto w-fit">
+            {/* Gold-Glow hinter Kopf/Oberkörper */}
             <div
               aria-hidden
-              className="absolute -inset-6 -z-10 rounded-full opacity-70 blur-2xl"
+              className="pointer-events-none absolute left-1/2 top-[6%] -z-10 aspect-square w-[78%] -translate-x-1/2 rounded-full opacity-70 blur-2xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 32%, transparent), transparent 66%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 66%)",
               }}
             />
             <Image
-              src={brainLogo}
-              alt="Leuchtendes Gehirn aus Datenpunkten – dein Bewusstsein als Schlüssel, deine Gedanken als Code"
+              src={heikoHero}
+              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="logo-gold mx-auto w-[min(420px,80vw)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
+              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_11px_rgba(217,169,58,0.6))_drop-shadow(0_0_30px_rgba(217,169,58,0.4))] lg:w-[min(560px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
-              className="absolute -bottom-3 -right-2 hidden rounded-xl px-5 py-4 backdrop-blur lg:block"
+              className="absolute bottom-16 right-0 rounded-xl px-5 py-4 backdrop-blur sm:bottom-20 lg:bottom-28"
               style={{
                 background:
                   "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
