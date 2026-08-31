@@ -14,8 +14,22 @@ export function Footer() {
     <footer className="relative overflow-hidden border-t border-white/10 bg-navy-900">
       {/* Krafttier & Symbol – der goldene Eisvogel (dezentes, schmales Band) */}
       <div className="relative border-b border-white/10">
-        <Container className="flex flex-col items-center gap-4 py-7 text-center sm:flex-row sm:gap-6 sm:text-left">
-          <div className="relative shrink-0">
+        <Container className="flex flex-col items-center gap-4 py-7 text-center sm:flex-row sm:justify-between sm:gap-6 sm:text-left">
+          <div className="min-w-0 sm:order-1">
+            <p className="text-sm leading-relaxed text-cream-dim/80">
+              <span className="font-medium text-gold-300">Der Eisvogel</span> –
+              mein Symbol für einen klaren, wachen Geist.
+            </p>
+            <ul className="mt-1 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-cream-dim/55 sm:justify-start">
+              <li>Glück &amp; Hoffnung</li>
+              <li aria-hidden className="text-cream-dim/25">·</li>
+              <li>Fokus &amp; Präzision</li>
+              <li aria-hidden className="text-cream-dim/25">·</li>
+              <li>Klarheit &amp; Reinheit</li>
+            </ul>
+          </div>
+
+          <div className="relative shrink-0 sm:order-2">
             <div
               aria-hidden
               className="absolute -inset-3 -z-10 rounded-full opacity-60 blur-xl"
@@ -32,20 +46,6 @@ export function Footer() {
               sizes="(min-width: 640px) 80px, 64px"
               className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(217,169,58,0.3)] sm:w-20"
             />
-          </div>
-
-          <div className="min-w-0">
-            <p className="text-sm leading-relaxed text-cream-dim/80">
-              <span className="font-medium text-gold-300">Der Eisvogel</span> –
-              mein Symbol für einen klaren, wachen Geist.
-            </p>
-            <ul className="mt-1 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-cream-dim/55 sm:justify-start">
-              <li>Glück &amp; Hoffnung</li>
-              <li aria-hidden className="text-cream-dim/25">·</li>
-              <li>Fokus &amp; Präzision</li>
-              <li aria-hidden className="text-cream-dim/25">·</li>
-              <li>Klarheit &amp; Reinheit</li>
-            </ul>
           </div>
         </Container>
       </div>
