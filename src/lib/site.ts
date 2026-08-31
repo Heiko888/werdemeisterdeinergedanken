@@ -16,10 +16,11 @@ export const site = {
   // Persönliche Videobotschaft – datenschutzfreundlich über youtube-nocookie
   // eingebettet (siehe CSP frame-src in next.config.ts).
   // Hier die echte YouTube-ID des «Ein anderer Blickwinkel»-Videos eintragen
-  // (der Teil hinter youtu.be/… bzw. hinter v=). Solange sie null ist, zeigt
-  // die Sektion einen «folgt in Kürze»-Hinweis statt eines fremden Vorschau-
-  // bilds – bewusst NICHT den globalen Platzhalter, damit kein falsches
-  // Thumbnail für die persönliche Botschaft erscheint.
+  // (der Teil hinter youtu.be/… bzw. hinter v=). Solange sie null ist, läuft
+  // das globale Platzhalter-Video (placeholderVideoId) – dann aber mit dem
+  // gebrandeten Marken-Cover (public/video-platzhalter-cover.svg) statt dessen
+  // unpassendem YouTube-Vorschaubild. Sobald hier eine echte ID steht, greift
+  // automatisch deren eigenes Thumbnail (siehe MaybeNotYou-Sektion).
   videoMessage: {
     youtubeId: null as string | null,
     title: "Videobotschaft: Ein anderer Blickwinkel",
