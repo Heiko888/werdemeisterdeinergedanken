@@ -16,11 +16,18 @@ export function VideoMessage({
   title,
   aspect = "landscape",
   className,
+  poster: posterOverride,
 }: {
   youtubeId: string;
   title: string;
   aspect?: "video" | "landscape" | "square" | "portrait";
   className?: string;
+  /**
+   * Eigenes Vorschaubild statt des automatisch aus der YouTube-ID abgeleiteten.
+   * Nötig z. B. für das Platzhalter-Video, dessen YouTube-Thumbnail nicht zur
+   * Sektion passt – hier wird stattdessen ein gebrandetes Marken-Cover gezeigt.
+   */
+  poster?: string;
 }) {
   const [playing, setPlaying] = useState(false);
 
@@ -40,13 +47,14 @@ export function VideoMessage({
   // über die CSP (img-src https:) geladen.
   const posterMax = `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`;
   const posterFallback = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
-  const [poster, setPoster] = useState(posterMax);
+  // Ein übergebenes Cover hat Vorrang; sonst das native YouTube-Vorschaubild.
+  const [poster, setPoster] = useState(posterOverride ?? posterMax);
   const embed = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1`;
 
-  // Bei einem Video-Wechsel wieder mit dem hochauflösenden Vorschaubild starten.
+  // Bei einem Video-/Cover-Wechsel wieder mit dem Ausgangsbild starten.
   useEffect(() => {
-    setPoster(posterMax);
-  }, [posterMax]);
+    setPoster(posterOverride ?? posterMax);
+  }, [posterOverride, posterMax]);
 
   return (
     <figure
@@ -80,7 +88,10 @@ export function VideoMessage({
             className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
             loading="lazy"
             onError={() => {
-              if (poster !== posterFallback) setPoster(posterFallback);
+              // Nur beim YouTube-Vorschaubild auf hqdefault zurückfallen –
+              // ein eigenes Cover existiert lokal und braucht keinen Fallback.
+              if (!posterOverride && poster !== posterFallback)
+                setPoster(posterFallback);
             }}
           />
           {/* dezente Abdunklung für Kontrast */}

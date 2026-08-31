@@ -71,7 +71,7 @@ body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;pos
   background:${hell ? "linear-gradient(120deg,#d9a93a,#7e6410)" : "linear-gradient(120deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .mid{max-width:820px}
 .eyebrow{font-weight:800;font-size:22px;letter-spacing:.13em;text-transform:uppercase;color:${hell ? "#7e6410" : "#f2d489"};margin-bottom:22px}
-.title{font-family:Fraunces,serif;font-weight:600;line-height:1.05;letter-spacing:-1px;filter:drop-shadow(0 6px 28px ${hell ? "rgba(246,244,238,.6)" : "rgba(0,0,0,.5)"})}
+.title{font-family:Fraunces,serif;font-weight:600;line-height:1.05;letter-spacing:-1px;text-wrap:balance;filter:drop-shadow(0 6px 28px ${hell ? "rgba(246,244,238,.6)" : "rgba(0,0,0,.5)"})}
 .sub{margin-top:20px;font-size:29px;line-height:1.34;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.82)"};max-width:760px}
 .foot{display:flex;align-items:center;gap:16px}
 .foot .u{font-weight:600;font-size:23px;color:${hell ? "#7e6410" : "#e8c15f"};letter-spacing:.02em}
@@ -88,7 +88,7 @@ body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;pos
 .frame.has-portrait .tag{align-self:center;text-align:left;font-size:16px}
 `;
 
-function thumbHtml({ eyebrow, title, sub, num, portrait }, hell) {
+function thumbHtml({ eyebrow, title, sub, num, portrait, tag }, hell) {
   const tf = fit(title, 84, 68, 54);
   return `<!doctype html><html lang="de"><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>${css(hell)}</style></head>
@@ -97,7 +97,7 @@ function thumbHtml({ eyebrow, title, sub, num, portrait }, hell) {
   ${num ? `<div class="num">${num}</div>` : ""}
   ${portrait ? `<div class="pglow"></div><img class="portrait" src="${heikoUrl}" alt="">` : ""}
   <div class="frame${portrait ? " has-portrait" : ""}">
-    <div class="top"><img class="logo" src="${brainUrl}" alt=""><div class="tag">Mitgliederbereich · Video</div></div>
+    <div class="top"><img class="logo" src="${brainUrl}" alt=""><div class="tag">${tag ?? "Mitgliederbereich · Video"}</div></div>
     <div class="mid">
       <div class="eyebrow">${eyebrow}</div>
       <div class="title" style="font-size:${tf}px">${title}</div>
@@ -112,6 +112,11 @@ const JOBS = [];
 // Willkommensvideo auf dem Dashboard (/mitglieder) – Top-Level, kein Unterordner.
 JOBS.push({ dir: ".", name: "willkommen",
   data: { eyebrow: "Willkommen", title: "Schön, dass du da bist", sub: "Dein Bereich – so findest du dich zurecht", portrait: true } });
+// Persönliche Videobotschaft auf der Startseite (Sektion «Ein anderer
+// Blickwinkel»). Öffentlich, daher kein «Mitgliederbereich»-Tag.
+JOBS.push({ dir: "landing", name: "ein-anderer-blickwinkel",
+  data: { tag: "Videobotschaft", eyebrow: "Ein anderer Blickwinkel",
+    title: "Was, wenn es nicht an dir liegt?", sub: "Eine persönliche Botschaft" } });
 for (const s of stages())
   JOBS.push({ dir: "stufen", name: `stufe-${s.num}`,
     data: { eyebrow: `Die 7 Stufen · Stufe ${s.num}`, title: s.title, sub: s.subtitle, num: s.num } });
