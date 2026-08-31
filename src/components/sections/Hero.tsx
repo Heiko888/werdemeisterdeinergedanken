@@ -85,9 +85,9 @@ export function Hero() {
             />
             <Image
               src={heikoHero}
-              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
+              alt="Heiko Schwaninger am Berg im Abendlicht – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto w-[min(420px,80vw)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
+              className="mx-auto w-[min(420px,80vw)] rounded-2xl drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
