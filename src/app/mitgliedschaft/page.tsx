@@ -9,7 +9,7 @@ import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { stages, testimonials, faqs } from "@/lib/content";
 import { practices } from "@/lib/practices";
 import { deepDives } from "@/lib/deep-dives";
-import brainLogo from "../../../public/logo-brain.png";
+import heroBild from "../../../public/mitgliedschaft-hero.webp";
 
 export const metadata: Metadata = {
   title: "Mitgliedschaft",
@@ -121,14 +121,32 @@ export default async function MitgliedschaftPage({
         </div>
       )}
       {/* Hero */}
-      <DarkSection className="!py-0">
-        <div className="grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-[1.15fr_.85fr]">
-          <div>
+      <section className="on-dark relative flex items-center overflow-hidden bg-navy-900 text-cream">
+        {/* Hintergrundbild – der Aufstieg vom Autopilot zur Meisterschaft */}
+        <Image
+          src={heroBild}
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="pointer-events-none absolute inset-0 z-0 object-cover object-center"
+        />
+        {/* Navy-Schleier für Lesbarkeit des Textes über dem Bild */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0"
+          style={{
+            background: `${NAVY_GLOW}, linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 92%, transparent), color-mix(in oklab, var(--color-navy-900) 68%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 40%, transparent))`,
+          }}
+        />
+        <Container className="relative z-10">
+          <div className="max-w-xl py-20 sm:py-28">
             <Eyebrow>Der Mitgliederbereich</Eyebrow>
             <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
               Vom Autopilot zur <em className="accent">Meisterschaft</em>
             </h1>
-            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/75">
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/80">
               Ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System,
               das mit dir wächst. Raus aus alten Mustern, rein in echte innere Klarheit.
             </p>
@@ -143,33 +161,17 @@ export default async function MitgliedschaftPage({
                 Kostenlosen Bewusstseinstest machen
               </Link>
             </div>
-            <p className="mt-4 text-sm text-cream/60">
+            <p className="mt-4 text-sm text-cream/70">
               Ab {PRICE} {PRICE_PER} · oder {PLANS.jahr.price} {PLANS.jahr.per}{" "}
-              <span className="text-cream/45">(2 Monate gratis)</span> · jederzeit kündbar
+              <span className="text-cream/50">(2 Monate gratis)</span> · jederzeit kündbar
             </p>
-            <p className="mt-6 flex items-center gap-2 text-sm text-cream/55">
+            <p className="mt-6 flex items-center gap-2 text-sm text-cream/65">
               <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
               Bodenständig, ehrlich, ohne esoterisches Blabla. In deinem Tempo.
             </p>
           </div>
-          <div className="relative mx-auto">
-            <div
-              aria-hidden
-              className="absolute inset-[-8%] -z-10 rounded-full"
-              style={{
-                background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 22%, transparent), transparent 62%)",
-              }}
-            />
-            <Image
-              src={brainLogo}
-              alt="Werde Meister deiner Gedanken – Logo"
-              priority
-              className="logo-gold mx-auto w-[min(400px,78vw)] drop-shadow-[0_10px_60px_rgba(217,169,58,0.35)]"
-            />
-          </div>
-        </div>
-      </DarkSection>
+        </Container>
+      </section>
 
       {/* Problem */}
       <section className="bg-paper-aura grain-soft relative py-14 sm:py-28">
