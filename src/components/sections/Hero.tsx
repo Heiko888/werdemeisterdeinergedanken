@@ -88,7 +88,7 @@ export function Hero() {
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto block w-[min(320px,74vw)] lg:w-[min(440px,100%)]"
+              className="mx-auto block w-[min(320px,74vw)] lg:w-[min(510px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
