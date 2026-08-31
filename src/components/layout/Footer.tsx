@@ -12,16 +12,16 @@ export function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-navy-900">
-      {/* Krafttier & Symbol – der goldene Eisvogel */}
+      {/* Krafttier & Symbol – der goldene Eisvogel (dezentes, schmales Band) */}
       <div className="relative border-b border-white/10">
-        <Container className="flex flex-col items-center gap-8 py-14 text-center sm:flex-row sm:gap-11 sm:text-left">
+        <Container className="flex flex-col items-center gap-4 py-7 text-center sm:flex-row sm:gap-6 sm:text-left">
           <div className="relative shrink-0">
             <div
               aria-hidden
-              className="absolute -inset-6 -z-10 rounded-full opacity-70 blur-2xl"
+              className="absolute -inset-3 -z-10 rounded-full opacity-60 blur-xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 66%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), transparent 68%)",
               }}
             />
             <Image
@@ -29,33 +29,22 @@ export function Footer() {
               alt="Goldener Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
               width={320}
               height={320}
-              sizes="(min-width: 640px) 176px, 144px"
-              className="mx-auto w-36 drop-shadow-[0_12px_50px_rgba(217,169,58,0.35)] sm:w-44"
+              sizes="(min-width: 640px) 80px, 64px"
+              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(217,169,58,0.3)] sm:w-20"
             />
           </div>
 
-          <div className="max-w-xl">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-gold-300">
-              Krafttier &amp; Symbol
+          <div className="min-w-0">
+            <p className="text-sm leading-relaxed text-cream-dim/80">
+              <span className="font-medium text-gold-300">Der Eisvogel</span> –
+              mein Symbol für einen klaren, wachen Geist.
             </p>
-            <p className="text-lg leading-relaxed text-cream">
-              Der <span className="font-medium text-gold-300">Eisvogel</span>{" "}
-              begleitet diesen Weg – er steht für einen klaren, wachen Geist und
-              den Mut, im richtigen Moment einzutauchen.
-            </p>
-            <ul className="mt-5 flex flex-col gap-x-8 gap-y-2 text-sm text-cream-dim/70 sm:flex-row sm:flex-wrap">
-              <li>
-                <span className="font-medium text-cream">Glück &amp; Hoffnung</span>{" "}
-                – Zeichen für einen neuen Lebensabschnitt.
-              </li>
-              <li>
-                <span className="font-medium text-cream">Fokus &amp; Präzision</span>{" "}
-                – blitzschnell und treffsicher.
-              </li>
-              <li>
-                <span className="font-medium text-cream">Klarheit &amp; Reinheit</span>{" "}
-                – Flaggschiff für lebendige Gewässer.
-              </li>
+            <ul className="mt-1 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-cream-dim/55 sm:justify-start">
+              <li>Glück &amp; Hoffnung</li>
+              <li aria-hidden className="text-cream-dim/25">·</li>
+              <li>Fokus &amp; Präzision</li>
+              <li aria-hidden className="text-cream-dim/25">·</li>
+              <li>Klarheit &amp; Reinheit</li>
             </ul>
           </div>
         </Container>
