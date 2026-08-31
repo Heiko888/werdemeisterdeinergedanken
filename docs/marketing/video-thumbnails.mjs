@@ -83,6 +83,9 @@ body{width:${W}px;height:${H}px;overflow:hidden;font-family:Inter,sans-serif;pos
 .portrait{position:absolute;right:48px;bottom:0;height:704px;width:auto;z-index:2;
   filter:drop-shadow(0 24px 60px rgba(0,0,0,${hell ? ".28" : ".5"}))}
 .frame.has-portrait .mid{max-width:600px}
+/* Tag nicht über den Kopf: bei Porträt nach oben links neben das Logo, etwas kleiner */
+.frame.has-portrait .top{justify-content:flex-start}
+.frame.has-portrait .tag{align-self:center;text-align:left;font-size:16px}
 `;
 
 function thumbHtml({ eyebrow, title, sub, num, portrait }, hell) {
