@@ -103,23 +103,24 @@ const thumbnail = (w, h, data, hell) => shell(w, h, `
 // Designcode: ein Wort im Zitat trägt den Grün-Türkis-Verlauf (<em>) und ist
 // die visuelle Pointe. Großes, sehr transparentes Anführungszeichen hinter dem
 // Text; weiche Tiefe im Hintergrund (Glow, keine konkreten Motive).
-const quoteTile = (w, h, q) => shell(w, h, `
-.aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.10), rgba(233,193,95,0) 66%);filter:blur(46px)}
+// hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent in tiefem Gold #7e6410).
+const quoteTile = (w, h, q, hell) => shell(w, h, `
+.aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".16" : ".10"}), rgba(233,193,95,0) 66%);filter:blur(46px)}
 .qstars{display:none}
-.qmark{position:absolute;left:50%;top:${Math.round(h*0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w*0.6)}px;line-height:.62;color:rgba(242,212,137,.095);pointer-events:none}
+.qmark{position:absolute;left:50%;top:${Math.round(h*0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w*0.6)}px;line-height:.62;color:${hell ? "rgba(126,100,16,.10)" : "rgba(242,212,137,.095)"};pointer-events:none}
 .qwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.3)}px;text-align:center}
-.quote{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.067)}px;line-height:1.32;letter-spacing:-.3px}
-.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{font-family:Fraunces,serif;font-weight:500;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.067)}px;line-height:1.32;letter-spacing:-.3px}
+.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.016)}px}
 .foot img{width:${Math.round(w*0.052)}px;height:${Math.round(w*0.052)}px;object-fit:contain}
 .foot .wm{display:flex;flex-direction:column;gap:${Math.round(w*0.006)}px;line-height:1;text-align:left}
-.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,242,236,.92)}
-.foot .wm1 em{font-style:normal;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
-.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,242,236,.72)}
-.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:rgba(242,212,137,.85)}
+.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
+.foot .wm1 em{font-style:normal;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"};-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"}}
+.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:${hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)"}}
 `, `<div class="aura"></div><div class="qstars"></div><div class="qmark">„</div>
 <div class="qwrap"><div class="quote">${q}</div></div>
-<div class="foot"><img src="${brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`);
+<div class="foot"><img src="${brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`, hell);
 
 // Studien-Fakt-Kachel – gleiches Serien-Template wie die Zitate (Verlauf,
 // Serifenschrift, Grün-Türkis-Schlüsselwort als Pointe, Signatur unten),
@@ -151,10 +152,22 @@ const factTile = (w, h, f, hell) => shell(w, h, `
 
 // Gratis-E-Book-Einzelpost – orientierungsbewusst (Querformat = zweispaltig),
 // bewusst luftig. Schriftgrößen an der kürzeren Kante ausgerichtet.
-const ebookPost = (w, h) => {
+// hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent/Buttons in tiefem Gold).
+const ebookPost = (w, h, hell) => {
   const land = w > h * 1.15;            // deutlich breiter → Querformat
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v); // Schrift an kürzerer Kante
+  // Farb-Tokens je Theme
+  const ink      = hell ? "#16231f" : "#f4f2ec";
+  const accent   = hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)";
+  const ctaBg    = hell ? "linear-gradient(100deg,#c79a2f,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)";
+  const ctaFg    = hell ? "#fdfaf1" : "#241a06";
+  const noteCol  = hell ? "rgba(22,35,31,.66)" : "rgba(244,242,236,.68)";
+  const bulCol   = hell ? "rgba(22,35,31,.82)" : "rgba(244,242,236,.84)";
+  const ckBg     = hell ? "rgba(168,132,42,.20)" : "rgba(232,193,95,.16)";
+  const ckCol    = hell ? "#7e6410" : "#e8c15f";
+  const bookSh   = hell ? "0 22px 50px rgba(8,16,42,.28)" : "0 22px 50px rgba(0,0,0,.55)";
+  const bookShSq = hell ? "0 24px 58px rgba(8,16,42,.30)" : "0 24px 58px rgba(0,0,0,.62)";
 
   // Quadratformat (1:1): Conversion-Post – kurzer Eyebrow, großes Cover als
   // Produkt, Headline, aktiver CTA + „Link in Bio" (keine URL).
@@ -165,12 +178,12 @@ const ebookPost = (w, h) => {
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.16em}
 .bookwrap{position:relative;display:flex;justify-content:center}
 .bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.82)}px;height:${Math.round(bookHsq*0.82)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.24), transparent 68%);filter:blur(44px)}
-.book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(0 24px 58px rgba(0,0,0,.62))}
-.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.06)}px;line-height:1.16;letter-spacing:-.5px;max-width:98%}
-.h em{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(${bookShSq})}
+.h{font-family:Fraunces,serif;font-weight:600;color:${ink};font-size:${b(0.06)}px;line-height:1.16;letter-spacing:-.5px;max-width:98%}
+.h em{background:${accent};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .ctaGroup{display:flex;flex-direction:column;align-items:center;gap:${b(0.007)}px;margin-top:${b(0.006)}px}
-.cta{padding:${b(0.019)}px ${b(0.042)}px;border-radius:999px;background:linear-gradient(100deg,#f2d489,#e8c15f);color:#241a06;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.01em}
-.cta-note{font-size:${b(0.023)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,242,236,.68)}
+.cta{padding:${b(0.019)}px ${b(0.042)}px;border-radius:999px;background:${ctaBg};color:${ctaFg};font-weight:800;font-size:${b(0.032)}px;letter-spacing:.01em}
+.cta-note{font-size:${b(0.023)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:${noteCol}}
 `, `<div class="post">
   <div class="eyebrow">Dein Gratis-Einstieg</div>
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
@@ -179,7 +192,7 @@ const ebookPost = (w, h) => {
     <div class="cta">E-Book gratis sichern ${ARROW}</div>
     <div class="cta-note">Link in Bio</div>
   </div>
-</div>`);
+</div>`, hell);
   }
 
   // Buch höhenbasiert dimensionieren → verlässlicher Rand oben/unten,
@@ -190,13 +203,13 @@ const ebookPost = (w, h) => {
   const common = `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
 .bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.35)}px;height:${Math.round(bookW*1.35)}px;border-radius:50%;background:radial-gradient(circle, rgba(232,193,95,.24), transparent 68%);filter:blur(38px)}
-.book{position:relative;width:auto;height:${bookH}px;filter:drop-shadow(0 22px 50px rgba(0,0,0,.55))}
-.h{font-family:Fraunces,serif;font-weight:600;color:#f4f2ec;font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px}
-.h em{background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.book{position:relative;width:auto;height:${bookH}px;filter:drop-shadow(${bookSh})}
+.h{font-family:Fraunces,serif;font-weight:600;color:${ink};font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px}
+.h em{background:${accent};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .bul{display:flex;flex-direction:column;gap:${b(0.022)}px}
-.bul .li{display:flex;align-items:center;gap:${b(0.016)}px;font-size:${b(0.031)}px;color:rgba(244,242,236,.84)}
-.bul .ck{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:${b(0.042)}px;height:${b(0.042)}px;border-radius:50%;background:rgba(232,193,95,.16);color:#e8c15f;font-size:${b(0.024)}px;font-weight:800}
-.cta{align-self:${land ? "flex-start" : "center"};padding:${b(0.024)}px ${b(0.05)}px;border-radius:999px;background:linear-gradient(100deg,#f2d489,#e8c15f);color:#241a06;font-weight:800;font-size:${b(0.032)}px;letter-spacing:.02em}
+.bul .li{display:flex;align-items:center;gap:${b(0.016)}px;font-size:${b(0.031)}px;color:${bulCol}}
+.bul .ck{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:${b(0.042)}px;height:${b(0.042)}px;border-radius:50%;background:${ckBg};color:${ckCol};font-size:${b(0.024)}px;font-weight:800}
+.cta{align-self:${land ? "flex-start" : "center"};padding:${b(0.024)}px ${b(0.05)}px;border-radius:999px;background:${ctaBg};color:${ctaFg};font-weight:800;font-size:${b(0.032)}px;letter-spacing:.02em}
 .url{font-size:${b(0.026)}px}`;
 
   if (land) {
@@ -211,7 +224,7 @@ const ebookPost = (w, h) => {
 .h{line-height:1.16}
 .ctaGroup{display:flex;flex-direction:column;align-items:flex-start;gap:${b(0.008)}px;margin-top:${b(0.006)}px}
 .cta{align-self:flex-start;padding:${b(0.019)}px ${b(0.044)}px;font-size:${b(0.032)}px;margin-top:0}
-.cta-note{font-size:${b(0.022)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,242,236,.68)}
+.cta-note{font-size:${b(0.022)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:${noteCol}}
 `, `<div class="post">
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
   <div class="col">
@@ -222,7 +235,7 @@ const ebookPost = (w, h) => {
       <div class="cta-note">Link in Bio</div>
     </div>
   </div>
-</div>`);
+</div>`, hell);
   }
   // Hochformat (4:5, 9:16, 2:3): Conversion-Aufbau – kurzer Eyebrow, großes
   // Cover, Headline, aktiver CTA + „Link in Bio" (keine Punkte, keine URL).
@@ -236,7 +249,7 @@ const ebookPost = (w, h) => {
 .h{max-width:96%;line-height:1.18}
 .ctaGroup{display:flex;flex-direction:column;align-items:center;gap:${b(0.007)}px;margin-top:${b(0.004)}px}
 .cta{align-self:center;padding:${b(0.017)}px ${b(0.04)}px;font-size:${b(0.03)}px;margin-top:0}
-.cta-note{font-size:${b(0.021)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,242,236,.68)}
+.cta-note{font-size:${b(0.021)}px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:${noteCol}}
 `, `<div class="post">
   <div class="eyebrow">Dein Gratis-Einstieg</div>
   <div class="bookwrap"><div class="bookglow"></div><img class="book" src="${ebookUri}"></div>
@@ -245,7 +258,7 @@ const ebookPost = (w, h) => {
     <div class="cta">E-Book gratis sichern ${ARROW}</div>
     <div class="cta-note">Link in Bio</div>
   </div>
-</div>`);
+</div>`, hell);
 };
 
 // Instagram-Story / Key-Visual – Brain + Marke, orientierungsbewusst.
@@ -323,18 +336,15 @@ for (const d of THUMBS)
   TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, hell: true, html: (hell) => thumbnail(1280, 720, d, hell) });
 // Zitat-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const q of QUOTES) {
-  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, html: () => quoteTile(1080, 1080, q.t) });
-  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, html: () => quoteTile(1080, 1350, q.t) });
-  TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, html: () => quoteTile(1080, 1920, q.t) });
+  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, hell: true, html: (hell) => quoteTile(1080, 1080, q.t, hell) });
+  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, hell: true, html: (hell) => quoteTile(1080, 1350, q.t, hell) });
+  TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, hell: true, html: (hell) => quoteTile(1080, 1920, q.t, hell) });
 }
-// Studien-Fakten-Kacheln (1:1, 4:5 und 9:16 Story)
-// Ausgewählte Fakten gibt es zusätzlich als Creme-Variante (-hell.png).
-const FACTS_HELL = new Set(["11"]); // "Acht Wochen Achtsamkeit"
+// Studien-Fakten-Kacheln (1:1, 4:5 und 9:16 Story) – je dunkel + Creme (-hell.png).
 for (const f of FACTS) {
-  const hell = FACTS_HELL.has(f.key);
-  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1080, hell, html: (hell) => factTile(1080, 1080, f, hell) });
-  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1350, hell, html: (hell) => factTile(1080, 1350, f, hell) });
-  TARGETS.push({ file: `zitate/studien-9x16/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1920, hell, html: (hell) => factTile(1080, 1920, f, hell) });
+  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1080, hell: true, html: (hell) => factTile(1080, 1080, f, hell) });
+  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1350, hell: true, html: (hell) => factTile(1080, 1350, f, hell) });
+  TARGETS.push({ file: `zitate/studien-9x16/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1920, hell: true, html: (hell) => factTile(1080, 1920, f, hell) });
 }
 // Gratis-E-Book – Einzelpost in 5 Formaten (wie die Cover)
 const EBOOK_FORMATS = [
@@ -345,7 +355,7 @@ const EBOOK_FORMATS = [
   { key: "2x3",  w: 1000, h: 1500 }, // Pinterest
 ];
 for (const F of EBOOK_FORMATS)
-  TARGETS.push({ file: `ebook/WMDG-Ebook-${F.key}.png`, w: F.w, h: F.h, html: () => ebookPost(F.w, F.h) });
+  TARGETS.push({ file: `ebook/WMDG-Ebook-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (hell) => ebookPost(F.w, F.h, hell) });
 // Instagram-Story / Key-Visual – dieselben 5 Formate wie das E-Book
 for (const F of EBOOK_FORMATS)
   TARGETS.push({ file: `instagram/WMDG-Instagram-Story-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (hell) => storyPost(F.w, F.h, hell) });
