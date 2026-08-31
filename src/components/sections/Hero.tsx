@@ -40,17 +40,17 @@ export function Hero() {
           <Reveal delay={120} className="relative mx-auto w-fit self-center lg:hidden">
             <div
               aria-hidden
-              className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[106%] w-[104%] -translate-x-1/2 -translate-y-1/2 opacity-90 blur-2xl"
+              className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[104%] w-[100%] -translate-x-1/2 -translate-y-1/2 opacity-70 blur-2xl"
               style={{
                 background:
-                  "radial-gradient(50% 50% at 50% 46%, color-mix(in oklab, var(--color-gold-500) 42%, transparent), transparent 70%)",
+                  "radial-gradient(50% 50% at 50% 46%, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 70%)",
               }}
             />
             <Image
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="block w-[min(280px,68vw)]"
+              className="block w-[min(280px,68vw)] [filter:drop-shadow(0_0_8px_rgba(217,169,58,0.6))_drop-shadow(0_0_20px_rgba(217,169,58,0.4))]"
             />
           </Reveal>
 
