@@ -35,8 +35,10 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:#16231f; }
 .serif{ font-family:'Fraunces',Georgia,serif; }
 
 /* Inhaltsseiten reservieren unten Platz für die Fußzeile; das Deckblatt (erste
-   Seite) läuft randlos bis zur Kante. */
-@page{ size:A4; margin:16mm 17mm; }
+   Seite) läuft randlos bis zur Kante. Chromium füllt den @page-Randbereich beim
+   PDF-Druck NICHT mit dem html-Hintergrund (er bliebe papierweiß) – deshalb den
+   Creme-Ton direkt auf die Seite legen, damit auch die Ränder cremefarben sind. */
+@page{ size:A4; margin:16mm 17mm; background:#f6f4ee; }
 @page:first{ margin:0; }
 
 :root{
