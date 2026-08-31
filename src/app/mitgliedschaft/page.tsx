@@ -121,27 +121,45 @@ export default async function MitgliedschaftPage({
         </div>
       )}
       {/* Hero */}
-      <section className="on-dark relative flex items-center overflow-hidden bg-navy-900 text-cream">
-        {/* Hintergrundbild – der Aufstieg vom Autopilot zur Meisterschaft */}
-        <Image
-          src={heroBild}
-          alt=""
-          aria-hidden
-          fill
-          priority
-          sizes="100vw"
-          className="pointer-events-none absolute inset-0 z-0 object-cover object-center"
-        />
-        {/* Navy-Schleier für Lesbarkeit des Textes über dem Bild */}
+      <section className="on-dark relative flex flex-col overflow-hidden bg-navy-900 text-cream lg:block">
+        {/* Der Aufstieg vom Autopilot zur Meisterschaft.
+            Bis lg als eigenes Band im Fluss – im hohen, schmalen Hero würde
+            object-cover sonst links und rechts fast alle Figuren wegschneiden.
+            Ab lg liegt das Bild wie bisher als Hintergrund hinter dem Text. */}
+        <div className="relative aspect-[2400/1340] w-full lg:absolute lg:inset-0 lg:z-0 lg:aspect-auto">
+          <Image
+            src={heroBild}
+            alt=""
+            aria-hidden
+            fill
+            priority
+            sizes="100vw"
+            className="pointer-events-none object-cover object-center"
+          />
+          {/* Unterkante ins Navy blenden, damit Bildband und Textblock mobil
+              ineinander übergehen statt hart abzusetzen */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-900 to-transparent lg:hidden"
+          />
+        </div>
+        {/* Goldener Hero-Glow – identisch zur Startseite */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 z-0"
+          style={{ background: NAVY_GLOW }}
+        />
+        {/* Navy-Schleier für Lesbarkeit des Textes über dem Bild – erst ab lg,
+            darunter steht der Text ohnehin auf reinem Navy unter dem Bild */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0 hidden lg:block"
           style={{
-            background: `${NAVY_GLOW}, linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 92%, transparent), color-mix(in oklab, var(--color-navy-900) 68%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 40%, transparent))`,
+            background: `linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 92%, transparent), color-mix(in oklab, var(--color-navy-900) 68%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 40%, transparent))`,
           }}
         />
         <Container className="relative z-10">
-          <div className="max-w-xl py-20 sm:py-28">
+          <div className="max-w-xl pb-16 pt-10 sm:pb-20 sm:pt-12 lg:py-28">
             <Eyebrow>Der Mitgliederbereich</Eyebrow>
             <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
               Vom Autopilot zur <em className="accent">Meisterschaft</em>
