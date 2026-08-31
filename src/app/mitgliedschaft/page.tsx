@@ -121,12 +121,12 @@ export default async function MitgliedschaftPage({
         </div>
       )}
       {/* Hero */}
-      <section className="on-dark relative flex flex-col overflow-hidden bg-navy-900 text-cream lg:block">
+      <section className="on-dark relative flex flex-col overflow-hidden bg-navy-900 text-cream lg:min-h-[42vw] lg:justify-center">
         {/* Der Aufstieg vom Autopilot zur Meisterschaft.
             Bis lg als eigenes Band im Fluss – im hohen, schmalen Hero würde
             object-cover sonst links und rechts fast alle Figuren wegschneiden.
             Ab lg liegt das Bild wie bisher als Hintergrund hinter dem Text. */}
-        <div className="relative aspect-[2400/1340] w-full lg:absolute lg:inset-0 lg:z-0 lg:aspect-auto">
+        <div className="relative aspect-[2400/1340] w-full shrink-0 lg:absolute lg:inset-0 lg:z-0 lg:aspect-auto">
           <Image
             src={heroBild}
             alt=""
@@ -134,7 +134,7 @@ export default async function MitgliedschaftPage({
             fill
             priority
             sizes="100vw"
-            className="pointer-events-none object-cover object-center"
+            className="pointer-events-none object-cover object-center lg:object-[center_16%]"
           />
           {/* Unterkante ins Navy blenden, damit Bildband und Textblock mobil
               ineinander übergehen statt hart abzusetzen */}
