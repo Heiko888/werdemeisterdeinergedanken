@@ -124,29 +124,30 @@ const quoteTile = (w, h, q) => shell(w, h, `
 // Studien-Fakt-Kachel – gleiches Serien-Template wie die Zitate (Verlauf,
 // Serifenschrift, Grün-Türkis-Schlüsselwort als Pointe, Signatur unten),
 // nur mit Eyebrow + Quellenzeile statt Anführungszeichen.
-const factTile = (w, h, f) => shell(w, h, `
-.aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.10), rgba(233,193,95,0) 66%);filter:blur(46px)}
+// hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent in tiefem Gold #7e6410).
+const factTile = (w, h, f, hell) => shell(w, h, `
+.aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".16" : ".10"}), rgba(233,193,95,0) 66%);filter:blur(46px)}
 .qstars{display:none}
 .fwrap{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.24)}px;text-align:center}
 .eyebrow{font-size:${Math.round(w*0.024)}px;letter-spacing:.22em;margin-bottom:${Math.round(w*0.045)}px}
-.fact{font-family:Fraunces,serif;font-weight:500;color:#f4f2ec;font-size:${Math.round(w*0.064)}px;line-height:1.3;letter-spacing:-.3px}
-.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:linear-gradient(100deg,#f2d489,#e8c15f);-webkit-background-clip:text;background-clip:text;color:transparent}
-.src{margin-top:${Math.round(w*0.045)}px;font-size:${Math.round(w*0.026)}px;line-height:1.4;color:rgba(244,242,236,.55)}
-.src b{color:rgba(232,193,95,.9);font-weight:700}
+.fact{font-family:Fraunces,serif;font-weight:500;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.064)}px;line-height:1.3;letter-spacing:-.3px}
+.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
+.src{margin-top:${Math.round(w*0.045)}px;font-size:${Math.round(w*0.026)}px;line-height:1.4;color:${hell ? "rgba(22,35,31,.6)" : "rgba(244,242,236,.55)"}}
+.src b{color:${hell ? "#7e6410" : "rgba(232,193,95,.9)"};font-weight:700}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.016)}px}
 .foot img{width:${Math.round(w*0.052)}px;height:${Math.round(w*0.052)}px;object-fit:contain}
 .foot .wm{display:flex;flex-direction:column;gap:${Math.round(w*0.006)}px;line-height:1;text-align:left}
-.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:rgba(244,242,236,.92)}
-.foot .wm1 em{font-style:normal;background:linear-gradient(100deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;color:transparent}
-.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,242,236,.72)}
-.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:rgba(242,212,137,.85)}
+.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
+.foot .wm1 em{font-style:normal;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"};-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"}}
+.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:${hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)"}}
 `, `<div class="aura"></div><div class="qstars"></div>
 <div class="fwrap">
   <div class="eyebrow">Studien-Fakt</div>
   <div class="fact">${f.t}</div>
   <div class="src"><b>Quelle:</b> ${f.src}</div>
 </div>
-<div class="foot"><img src="${brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`);
+<div class="foot"><img src="${brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`, hell);
 
 // Gratis-E-Book-Einzelpost – orientierungsbewusst (Querformat = zweispaltig),
 // bewusst luftig. Schriftgrößen an der kürzeren Kante ausgerichtet.
@@ -327,10 +328,13 @@ for (const q of QUOTES) {
   TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, html: () => quoteTile(1080, 1920, q.t) });
 }
 // Studien-Fakten-Kacheln (1:1, 4:5 und 9:16 Story)
+// Ausgewählte Fakten gibt es zusätzlich als Creme-Variante (-hell.png).
+const FACTS_HELL = new Set(["11"]); // "Acht Wochen Achtsamkeit"
 for (const f of FACTS) {
-  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1080, html: () => factTile(1080, 1080, f) });
-  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1350, html: () => factTile(1080, 1350, f) });
-  TARGETS.push({ file: `zitate/studien-9x16/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1920, html: () => factTile(1080, 1920, f) });
+  const hell = FACTS_HELL.has(f.key);
+  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1080, hell, html: (hell) => factTile(1080, 1080, f, hell) });
+  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1350, hell, html: (hell) => factTile(1080, 1350, f, hell) });
+  TARGETS.push({ file: `zitate/studien-9x16/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1920, hell, html: (hell) => factTile(1080, 1920, f, hell) });
 }
 // Gratis-E-Book – Einzelpost in 5 Formaten (wie die Cover)
 const EBOOK_FORMATS = [
