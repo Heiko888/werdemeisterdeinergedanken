@@ -8,13 +8,15 @@ import { site } from "@/lib/site";
 
 export function MaybeNotYou() {
   // Solange kein eigenes «Ein anderer Blickwinkel»-Video existiert, läuft das
-  // globale Platzhalter-Video – aber mit gebrandetem Marken-Cover statt seines
-  // (unpassenden) YouTube-Vorschaubilds. Sobald videoMessage.youtubeId gesetzt
-  // ist, greift dessen echtes Thumbnail automatisch.
+  // globale Platzhalter-Video – aber mit dem gebrandeten Marken-Thumbnail
+  // (gleiches Layout wie die Mitgliederbereich-Thumbnails, erzeugt von
+  // docs/marketing/video-thumbnails.mjs) statt seines unpassenden YouTube-
+  // Vorschaubilds. Sobald videoMessage.youtubeId gesetzt ist, greift dessen
+  // echtes Thumbnail automatisch.
   const videoId = site.videoMessage.youtubeId ?? site.placeholderVideoId;
   const poster = site.videoMessage.youtubeId
     ? undefined
-    : "/video-platzhalter-cover.svg";
+    : "/video-thumbnails/landing/ein-anderer-blickwinkel.png";
 
   return (
     <section className="bg-paper-aura seam-gold grain-soft relative py-16 sm:py-32">
