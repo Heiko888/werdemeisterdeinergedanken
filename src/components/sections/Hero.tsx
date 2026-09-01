@@ -41,7 +41,12 @@ export function Hero() {
           proportional mit – statt in einem zentrierten Container bei fester
           Pixelbreite auf großen Bildschirmen klein und „verrutscht" zu wirken. */}
       <div className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden items-end lg:flex">
-        <div className="relative w-[clamp(30rem,42vw,48rem)]">
+        {/* h-full statt reiner Breitenangabe: Bei clamp(30rem,42vw,48rem) ergibt
+            sich die Bildhöhe aus der Breite und wird ab etwa 1600 px Viewport
+            höher als die Sektion – deren overflow-hidden kappte dann den Kopf.
+            Jetzt begrenzt die Sektionshöhe das Bild (object-contain), unten und
+            rechts ausgerichtet, damit es viewport-bündig bleibt. */}
+        <div className="relative h-full w-[clamp(30rem,42vw,48rem)]">
           {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
               Schulter umhüllt und diffus in den Navy-Grund ausläuft. */}
           <div
@@ -59,7 +64,7 @@ export function Hero() {
             // Nur ab lg sichtbar (hidden lg:flex); Breite = clamp(30rem,42vw,48rem),
             // also hoechstens 48rem (768px).
             sizes="48rem"
-            className="block w-full [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)]"
+            className="block h-full w-full object-contain object-right-bottom [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)]"
           />
           {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
           <div
