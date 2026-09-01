@@ -35,51 +35,51 @@ export function Hero() {
         }}
       />
 
-      {/* Desktop-Porträt: an die rechte untere Ecke der Section (= Viewport-Rand)
-          geankert und über eine Viewport-Breite skaliert. Dadurch behält das
-          Bild auf jedem Monitor dieselbe Position (bündig rechts) und wächst
-          proportional mit – statt in einem zentrierten Container bei fester
-          Pixelbreite auf großen Bildschirmen klein und „verrutscht" zu wirken. */}
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden items-end lg:flex">
-        {/* h-full statt reiner Breitenangabe: Bei clamp(30rem,42vw,48rem) ergibt
-            sich die Bildhöhe aus der Breite und wird ab etwa 1600 px Viewport
-            höher als die Sektion – deren overflow-hidden kappte dann den Kopf.
-            Jetzt begrenzt die Sektionshöhe das Bild (object-contain), unten und
-            rechts ausgerichtet, damit es viewport-bündig bleibt. */}
-        <div className="relative h-full w-[clamp(30rem,42vw,48rem)]">
-          {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
-              Schulter umhüllt und diffus in den Navy-Grund ausläuft. */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 -z-10 opacity-85 blur-[80px]"
-            style={{
-              background:
-                "radial-gradient(46% 42% at 50% 34%, color-mix(in oklab, var(--color-gold-500) 34%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 16%, transparent) 40%, color-mix(in oklab, var(--color-gold-500) 5%, transparent) 66%, transparent 92%)",
-            }}
-          />
-          <Image
-            src={heikoHero}
-            alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
-            priority
-            // Nur ab lg sichtbar (hidden lg:flex); Breite = clamp(30rem,42vw,48rem),
-            // also hoechstens 48rem (768px).
-            sizes="48rem"
-            className="block h-full w-full object-contain object-right-bottom [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)]"
-          />
-          {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
-          <div
-            className="absolute bottom-24 right-8 rounded-xl px-5 py-4 backdrop-blur xl:right-16"
-            style={{
-              background:
-                "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
-              border: "1.5px solid transparent",
-              boxShadow: "0 0 26px -6px rgba(52,196,196,.5)",
-            }}
-          >
-            <p className="font-display text-3xl italic text-cream">7</p>
-            <p className="text-[0.7rem] uppercase tracking-[0.2em] text-cream/60">
-              Stufen
-            </p>
+      {/* Desktop-Porträt: NICHT mehr am Viewport-Rand „klebend", sondern am
+          rechten Rand des Inhalts-Containers (max-w-6xl, gleiche px wie
+          <Container>) verankert. Dadurch steht das Bild direkt neben der
+          Textspalte – auf breiten Monitoren entsteht keine große Lücke mehr
+          zwischen Text (links) und Bild (rechts). */}
+      <div className="pointer-events-none absolute inset-0 z-0 hidden lg:block">
+        <div className="mx-auto flex h-full max-w-6xl items-end justify-end px-5 sm:px-8">
+          {/* h-full: Die Bildhöhe wird von der Sektionshöhe begrenzt
+              (object-contain), unten/rechts ausgerichtet. Breite an die rechte
+              Container-Spalte angelehnt, damit das Bild nah am Text sitzt, ihn
+              aber nicht überlagert. */}
+          <div className="relative h-full w-[clamp(24rem,34vw,36rem)]">
+            {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
+                Schulter umhüllt und diffus in den Navy-Grund ausläuft. */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 -z-10 opacity-85 blur-[80px]"
+              style={{
+                background:
+                  "radial-gradient(46% 42% at 50% 34%, color-mix(in oklab, var(--color-gold-500) 34%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 16%, transparent) 40%, color-mix(in oklab, var(--color-gold-500) 5%, transparent) 66%, transparent 92%)",
+              }}
+            />
+            <Image
+              src={heikoHero}
+              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
+              priority
+              // Nur ab lg sichtbar; Breite hoechstens 36rem (576px).
+              sizes="36rem"
+              className="block h-full w-full object-contain object-right-bottom [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)]"
+            />
+            {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
+            <div
+              className="absolute bottom-24 right-4 rounded-xl px-5 py-4 backdrop-blur xl:right-8"
+              style={{
+                background:
+                  "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
+                border: "1.5px solid transparent",
+                boxShadow: "0 0 26px -6px rgba(52,196,196,.5)",
+              }}
+            >
+              <p className="font-display text-3xl italic text-cream">7</p>
+              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-cream/60">
+                Stufen
+              </p>
+            </div>
           </div>
         </div>
       </div>
