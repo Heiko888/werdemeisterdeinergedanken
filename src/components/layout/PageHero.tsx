@@ -26,6 +26,13 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
  * `saturate-125 brightness-110`): lässt ein dunkles/blasses Motiv kräftiger
  * wirken. Optional mit `overlayClassName`: ersetzt den Standard-Navy-Schleier,
  * um bei einem farbigen Motiv weniger abzudunkeln (Text bleibt hell auf dunkel).
+ *
+ * Optional mit `mobileBand` (das Seitenverhältnis des Bildes als CSS-Wert, z. B.
+ * "1672 / 941"): zeigt das Herobild auf Mobile – wie auf der Mitgliedschaftsseite –
+ * als vollflächiges Bildband im Fluss (unbeschnitten, in voller Höhe) mit dem Text
+ * darunter auf Navy. Ab `lg` bleibt alles beim gewohnten Verhalten: das Bild liegt
+ * als Hintergrund hinter dem Text. Nur so ist auf schmalen Displays das ganze
+ * Querformat-Motiv sichtbar, statt links und rechts weggeschnitten zu werden.
  */
 export function PageHero({
   eyebrow,
@@ -36,6 +43,7 @@ export function PageHero({
   imageClassName,
   overlayClassName = "from-navy-900/85 via-navy-900/82 to-navy-900/90",
   fadeToColor,
+  mobileBand,
   children,
 }: {
   eyebrow?: string;
@@ -46,8 +54,73 @@ export function PageHero({
   imageClassName?: string;
   overlayClassName?: string;
   fadeToColor?: string;
+  mobileBand?: string;
   children?: ReactNode;
 }) {
+  // Mit Bildband auf Mobile: das Bild liegt als eigenes Band im Fluss und wird
+  // erst ab lg zum Hintergrund. Dafür ist der Aufbau der Sektion ein anderer.
+  if (image && mobileBand) {
+    return (
+      <section className="on-dark grain relative flex flex-col overflow-hidden bg-navy-900 text-cream lg:min-h-[34rem] lg:justify-center">
+        {/* Bild: bis lg als Band im Fluss (volle Höhe, unbeschnitten),
+            ab lg als vollflächiger Hintergrund hinter dem Text. */}
+        <div
+          className="relative w-full shrink-0 lg:absolute lg:inset-0 lg:z-0"
+          style={{ aspectRatio: mobileBand }}
+        >
+          <Image
+            src={image}
+            alt=""
+            aria-hidden
+            fill
+            priority
+            sizes="100vw"
+            className={`pointer-events-none z-0 object-cover${imageClassName ? ` ${imageClassName}` : ""}`}
+            style={imagePosition ? { objectPosition: imagePosition } : undefined}
+          />
+          {/* Unterkante mobil ins Navy blenden, damit Bildband und Textblock
+              weich ineinander übergehen statt hart abzusetzen. */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-900 to-transparent lg:hidden"
+          />
+        </div>
+        {/* Navy-Schleier für Lesbarkeit über dem Bild – erst ab lg, darunter
+            steht der Text ohnehin auf reinem Navy unter dem Band. */}
+        <div
+          aria-hidden
+          className={`pointer-events-none absolute inset-0 z-0 hidden bg-gradient-to-b lg:block ${overlayClassName}`}
+        />
+        {/* Gold-Glow wie auf den übrigen Seiten, damit der Farbton passt. */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0"
+          style={{ background: HERO_GLOW }}
+        />
+        <Container className="relative z-10 flex flex-col items-center gap-6 pb-14 pt-8 text-center sm:pb-16 sm:pt-10 lg:py-24">
+          {eyebrow && (
+            <Reveal>
+              <Eyebrow>{eyebrow}</Eyebrow>
+            </Reveal>
+          )}
+          <Reveal delay={80}>
+            <h1 className="max-w-3xl text-[1.7rem] font-medium leading-[1.1] text-cream sm:[hyphens:none] sm:[overflow-wrap:normal] sm:text-5xl md:text-[3.4rem]">
+              {title}
+            </h1>
+          </Reveal>
+          {intro && (
+            <Reveal delay={140}>
+              <p className="max-w-2xl text-[1.05rem] leading-relaxed text-cream/75">
+                {intro}
+              </p>
+            </Reveal>
+          )}
+          {children && <Reveal delay={200}>{children}</Reveal>}
+        </Container>
+      </section>
+    );
+  }
+
   return (
     <section
       className={`on-dark grain relative overflow-hidden bg-navy-900 text-cream ${
