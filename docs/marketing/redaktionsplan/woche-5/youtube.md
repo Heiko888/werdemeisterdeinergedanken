@@ -55,10 +55,7 @@ https://werdemeisterdeinergedanken.de/#ebook
 
 **Stichwort-Tags:** Schöpferkraft, Neuroplastizität, Gedankenkraft, Mindset, Persönlichkeitsentwicklung
 
-**Thumbnail:** Basis `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe). Die nummerierten Motive
-`WMDG-Thumbnail-01-hell.png`/`-02-hell.png` sind für Woche 1 belegt; für
-Stufe 5 noch aus der Vorlage zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-stufe-5-hell.png` (Creme-Variante, Standard laut Kanal-Vorgabe; 2560×1440). Stufenspezifisches Motiv für Stufe 5 ist erstellt und einsatzbereit.
 
 ---
 

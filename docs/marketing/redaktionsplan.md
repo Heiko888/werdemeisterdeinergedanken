@@ -382,13 +382,12 @@ wird hier geschlossen.
 **Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
 **Tagesmix:** identisch zum Muster aus Woche 2–6, mit Sonderrolle als Abschlusswoche von Block A: LinkedIn-Donnerstag nutzt als einzige Woche eine Haupt-CTA auf `/mitglieder` statt nur `/#ebook`.
 
-> **YouTube-Thumbnail-Hinweis (Woche 2–7):** Für alle sechs Wochen existieren
-> noch keine eigenen, nummerierten Stufen-Thumbnails (nur die generische
-> Basis `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`,
-> Creme-Variante). Die nummerierten Motive `WMDG-Thumbnail-01-hell.png` /
-> `-02-hell.png` sind bereits für Woche 1 belegt. **⚠ zu klären:**
-> Thumbnails für Stufe 2–7 aus der Vorlage produzieren, bevor die jeweiligen
-> Videos live gehen.
+> **YouTube-Thumbnail-Hinweis (Woche 2–7):** Für jede Woche existiert ein
+> eigenes, stufenspezifisches Thumbnail in der Creme-Variante (Standard):
+> `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-stufe-N-hell.png` (N = 2..7,
+> je 2560×1440, dunkle Variante ohne `-hell` ebenfalls vorhanden). Woche 1 nutzt
+> weiterhin `WMDG-Thumbnail-02-hell.png`. Damit sind alle Stufen-Thumbnails
+> einsatzbereit.
 
 > Jede Stufe hat 3 Reel-Varianten (A/B/C) in `src/lib/reels.ts` – für Wiederholung/AB-Tests über mehrere Wochen. Der interaktive Kalender zeigt alle 7 Wochen (oben umschaltbar).
 

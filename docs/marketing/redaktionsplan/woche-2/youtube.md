@@ -53,11 +53,7 @@ Gedanken": https://werdemeisterdeinergedanken.de/#ebook
 
 **Stichwort-Tags:** Erwachen, innerer Beobachter, Reiz-Reaktions-Lücke, Achtsamkeit, Persönlichkeitsentwicklung
 
-**Thumbnail:** Basis `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe). Die stufenspezifischen
-Thumbnails `WMDG-Thumbnail-01-hell.png`/`-02-hell.png` sind bereits für
-Woche 1 (Stufe 1) belegt; für Stufe 2 liegt noch kein eigenes nummeriertes
-Motiv vor — Produktion aus der Vorlage nachholen, bevor das Video live geht.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-stufe-2-hell.png` (Creme-Variante, Standard laut Kanal-Vorgabe; 2560×1440). Stufenspezifisches Motiv für Stufe 2 ist erstellt und einsatzbereit.
 
 ---
 

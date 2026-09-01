@@ -54,10 +54,7 @@ Welle aushältst, statt ihr auszuweichen. Hol dir dazu das kostenlose E-Book
 
 **Stichwort-Tags:** Emotionale Reifung, Gefühle regulieren, Emotionsregulation, Achtsamkeit, Persönlichkeitsentwicklung
 
-**Thumbnail:** Basis `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe). Die nummerierten Motive
-`WMDG-Thumbnail-01-hell.png`/`-02-hell.png` sind für Woche 1 belegt; für
-Stufe 4 noch aus der Vorlage zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-stufe-4-hell.png` (Creme-Variante, Standard laut Kanal-Vorgabe; 2560×1440). Stufenspezifisches Motiv für Stufe 4 ist erstellt und einsatzbereit.
 
 ---
 
