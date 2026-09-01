@@ -22,6 +22,19 @@ export function Hero() {
         }}
       />
 
+      {/* Weicher Übergang zur hellen Folge-Sektion: Navy-Grund und Porträt lösen
+          sich zum unteren Rand hin in den Papierton auf, damit der Wechsel
+          dunkel→hell nicht als harte Kante bricht. Die Ausblende sitzt bewusst
+          nur im unteren Bereich, damit Text und „7 Stufen"-Kennzahl klar bleiben. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-36 sm:h-48 lg:h-56"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent 0%, transparent 44%, color-mix(in oklab, var(--color-paper) 42%, transparent) 74%, var(--color-paper) 100%)",
+        }}
+      />
+
       <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[0.95fr_1fr] lg:items-end lg:pb-0">
         <div className="flex flex-col items-start gap-7 sm:gap-8 lg:self-center lg:pb-28">
           <Reveal>
