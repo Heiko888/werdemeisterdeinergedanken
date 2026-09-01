@@ -1,4 +1,5 @@
 import { HERO_GLOW } from "@/lib/gradients";
+import { heroImageAspect } from "@/lib/hero-image";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { Container } from "@/components/ui/Container";
@@ -27,12 +28,17 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
  * wirken. Optional mit `overlayClassName`: ersetzt den Standard-Navy-Schleier,
  * um bei einem farbigen Motiv weniger abzudunkeln (Text bleibt hell auf dunkel).
  *
- * Optional mit `mobileBand` (das Seitenverhältnis des Bildes als CSS-Wert, z. B.
- * "1672 / 941"): zeigt das Herobild auf Mobile – wie auf der Mitgliedschaftsseite –
- * als vollflächiges Bildband im Fluss (unbeschnitten, in voller Höhe) mit dem Text
- * darunter auf Navy. Ab `lg` bleibt alles beim gewohnten Verhalten: das Bild liegt
- * als Hintergrund hinter dem Text. Nur so ist auf schmalen Displays das ganze
- * Querformat-Motiv sichtbar, statt links und rechts weggeschnitten zu werden.
+ * Mobile Bildband (Standard, sobald `image` gesetzt ist): Das Herobild liegt auf
+ * Mobile – wie auf der Mitgliedschaftsseite – als vollflächiges Bildband im Fluss
+ * (unbeschnitten, in voller Höhe) mit dem Text darunter auf Navy. Ab `lg` bleibt
+ * alles beim gewohnten Verhalten: das Bild liegt als Hintergrund hinter dem Text.
+ * Nur so ist auf schmalen Displays das ganze Querformat-Motiv sichtbar, statt
+ * links und rechts weggeschnitten zu werden. Das dafür nötige Seitenverhältnis
+ * wird automatisch aus der Bilddatei gelesen – jedes künftige Herobild bekommt
+ * die Mobilansicht also von selbst.
+ *
+ * Optional mit `mobileBand`: überschreibt das Seitenverhältnis von Hand (CSS-Wert,
+ * z. B. "1672 / 941"), falls das Bild einmal nicht automatisch gelesen werden kann.
  */
 export function PageHero({
   eyebrow,
@@ -59,14 +65,17 @@ export function PageHero({
 }) {
   // Mit Bildband auf Mobile: das Bild liegt als eigenes Band im Fluss und wird
   // erst ab lg zum Hintergrund. Dafür ist der Aufbau der Sektion ein anderer.
-  if (image && mobileBand) {
+  // Das Seitenverhältnis kommt automatisch aus der Datei; `mobileBand` kann es
+  // überschreiben. Fehlt beides (z. B. externe URL), greift der klassische Aufbau.
+  const bandAspect = image ? (mobileBand ?? heroImageAspect(image)) : undefined;
+  if (image && bandAspect) {
     return (
       <section className="on-dark grain relative flex flex-col overflow-hidden bg-navy-900 text-cream lg:min-h-[34rem] lg:justify-center">
         {/* Bild: bis lg als Band im Fluss (volle Höhe, unbeschnitten),
             ab lg als vollflächiger Hintergrund hinter dem Text. */}
         <div
           className="relative w-full shrink-0 lg:absolute lg:inset-0 lg:z-0"
-          style={{ aspectRatio: mobileBand }}
+          style={{ aspectRatio: bandAspect }}
         >
           <Image
             src={image}
