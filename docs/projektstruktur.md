@@ -105,6 +105,7 @@ Seiten sind *noindex* und in `robots.txt` gesperrt.
 | `/mitglieder/praxis/[slug]` | `app/mitglieder/praxis/[slug]/page.tsx` | Praxis (13) – Meditationen, Atemübungen & Rituale mit Schritt-für-Schritt-Anleitung |
 | `/mitglieder/arbeitsheft` | `.../arbeitsheft/route.ts` | Gesamt-Arbeitsheft über alle 7 Stufen als PDF |
 | `/admin` | `app/admin/page.tsx` | Marketing-Cockpit: Funnel-Statistiken & Content-Inventar (nur Admin-E-Mails) *(noindex)* |
+| `/admin/marken-uebersicht` | `app/admin/marken-uebersicht/page.tsx` | Marken-Übersicht: Farbsystem, alle Logos & Vorlagen-Bestand mit Lücken-Check Creme↔Dunkel (nur Admin) *(noindex)* |
 
 ### Die 7 Stufen (`/mitglieder/stufe/1–7`)
 

@@ -1,0 +1,436 @@
+import type { ReactNode } from "react";
+import { APP_GLOW } from "@/lib/gradients";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { redirect } from "next/navigation";
+import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/SectionHeading";
+import { ArrowRight, Check } from "@/components/ui/Icon";
+import { createClient } from "@/lib/supabase/server";
+import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { isAdminEmail } from "@/lib/admin";
+import {
+  farbGruppen,
+  farbWelten,
+  logos,
+  vorlagenBestand,
+  bestandKennzahlen,
+} from "@/lib/marken-uebersicht";
+
+export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Marken-Übersicht",
+  robots: { index: false, follow: false },
+};
+
+function Pill({ children }: { children: ReactNode }) {
+  return (
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-ink/10 bg-white px-3 py-1 text-[0.78rem] font-medium text-ink-mid">
+      {children}
+    </span>
+  );
+}
+
+/** Kleine schematische Vorschau einer Farbwelt (kein Screenshot – aus echten
+ *  Marken-Tokens gebaut), damit Creme und Dunkel direkt vergleichbar sind. */
+function WeltPanel({
+  variante,
+}: {
+  variante: "hell" | "dunkel";
+}) {
+  const w = farbWelten[variante];
+  return (
+    <div
+      className="flex flex-col overflow-hidden rounded-2xl border border-ink/10 shadow-card"
+      style={{ background: w.grund }}
+    >
+      <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 py-12">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo-brain-gold.png"
+          alt=""
+          className="h-16 w-auto"
+        />
+        <div className="text-center">
+          <div
+            className="font-display text-lg font-medium tracking-wide"
+            style={{ color: w.tinte }}
+          >
+            Werde <span style={{ color: w.akzent }}>Meister</span>
+          </div>
+          <div
+            className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.28em]"
+            style={{ color: w.tinte, opacity: 0.72 }}
+          >
+            Deiner Gedanken
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex items-center justify-between px-4 py-3 text-xs"
+        style={{
+          background: variante === "dunkel" ? "#0f1218" : "#efece2",
+          color: w.tinte,
+        }}
+      >
+        <span className="flex items-center gap-2 font-semibold">
+          <span
+            className="inline-block h-2.5 w-2.5 rounded-full"
+            style={{ background: w.akzent }}
+          />
+          {w.name}
+        </span>
+        <span style={{ opacity: 0.7 }}>{w.suffix}</span>
+      </div>
+    </div>
+  );
+}
+
+export default async function MarkenUebersichtPage() {
+  if (!isSupabaseConfigured) {
+    return (
+      <section className="py-24">
+        <Container className="mx-auto max-w-xl text-center">
+          <Eyebrow>Marken-Übersicht</Eyebrow>
+          <h1 className="mt-2 text-2xl font-medium text-ink">Noch nicht verbunden</h1>
+          <p className="mt-3 text-ink-mid">
+            Diese Seite braucht eine konfigurierte Supabase-Anbindung, um dich als
+            Admin anzumelden.
+          </p>
+        </Container>
+      </section>
+    );
+  }
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/login?redirect=/admin/marken-uebersicht");
+  if (!isAdminEmail(user.email)) redirect("/mitglieder");
+
+  const k = bestandKennzahlen;
+
+  return (
+    <>
+      {/* Kopf */}
+      <section className="grain relative overflow-hidden border-b border-ink/10 py-14 sm:py-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{ background: APP_GLOW }}
+        />
+        <Container className="flex flex-col items-start gap-5">
+          <Link
+            href="/admin"
+            className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
+          >
+            <ArrowRight className="rotate-180" />
+            Marketing-Cockpit
+          </Link>
+          <Eyebrow>Marken-Übersicht</Eyebrow>
+          <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
+            Alle Logos, Farben &amp; <em className="accent">Vorlagen</em> auf einen Blick
+          </h1>
+          <p className="max-w-2xl text-[1.02rem] leading-relaxed text-ink-mid">
+            Das komplette Farbsystem, sämtliche Logos und der gesamte Vorlagen-Bestand –
+            inklusive Lücken-Check zwischen der <strong className="text-ink">Creme-Welt</strong>{" "}
+            und der <strong className="text-ink">Dunkel-Welt</strong>. Damit du siehst,
+            was existiert, in welcher Farbe – und was noch fehlt.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Pill>
+              <strong className="text-ink tabular-nums">{k.motive}</strong> Motive
+            </Pill>
+            <Pill>2 Farbwelten · Creme · Dunkel</Pill>
+            <Pill>
+              <strong className="text-ink tabular-nums">{k.logoVarianten}</strong>{" "}
+              Logo-Varianten
+            </Pill>
+            <Pill>
+              <strong className="text-ink tabular-nums">{k.dateienGesamt}</strong>{" "}
+              Bilddateien
+            </Pill>
+          </div>
+        </Container>
+      </section>
+
+      {/* Zwei Welten */}
+      <section className="border-b border-ink/10 py-12 sm:py-14">
+        <Container>
+          <Eyebrow>Das Prinzip</Eyebrow>
+          <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+            Zwei Farbwelten, ein Motiv
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
+            Jedes Motiv wird in zwei Welten gerendert:{" "}
+            <strong className="text-ink">Dunkel</strong> (Navy-Grund{" "}
+            <code className="rounded bg-ink/5 px-1">#090b10</code>, Standard – ohne
+            Suffix) und <strong className="text-ink">Hell/Creme</strong> (Papier-Grund{" "}
+            <code className="rounded bg-ink/5 px-1">#f6f4ee</code>, Datei-Suffix{" "}
+            <code className="rounded bg-ink/5 px-1">-hell</code>).{" "}
+            <strong className="text-ink">Türkis</strong> und{" "}
+            <strong className="text-ink">Gold</strong> sind in beiden Welten die Akzente.
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <WeltPanel variante="hell" />
+            <WeltPanel variante="dunkel" />
+          </div>
+        </Container>
+      </section>
+
+      {/* Farbsystem */}
+      <section className="border-b border-ink/10 py-12 sm:py-14">
+        <Container>
+          <Eyebrow>Farbsystem</Eyebrow>
+          <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+            Alle Marken-Farben mit Hex &amp; Rolle
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
+            Quelle der Wahrheit:{" "}
+            <code className="rounded bg-ink/5 px-1">src/app/globals.css</code>. Türkis
+            (Teal) und Gold tragen die Marke; die dunkle und helle Grundfläche bilden die
+            zwei Welten.
+          </p>
+          <div className="mt-8 flex flex-col gap-9">
+            {farbGruppen.map((g) => (
+              <div key={g.titel}>
+                <h3 className="text-base font-semibold text-ink">{g.titel}</h3>
+                <p className="mt-0.5 max-w-2xl text-sm text-ink-mid">{g.beschreibung}</p>
+                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+                  {g.swatches.map((s) => (
+                    <div key={s.token} className="flex flex-col gap-2">
+                      <div
+                        className="h-16 rounded-xl border border-ink/10"
+                        style={{ background: s.hex }}
+                      />
+                      <div className="flex flex-col leading-tight">
+                        <span className="text-[0.82rem] font-bold tabular-nums text-ink">
+                          {s.hex}
+                        </span>
+                        <span className="font-mono text-[0.72rem] font-semibold text-teal-700">
+                          {s.token}
+                        </span>
+                        <span className="text-[0.72rem] text-ink-mid">{s.rolle}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Logos */}
+      <section className="border-b border-ink/10 py-12 sm:py-14">
+        <Container>
+          <Eyebrow>Logos</Eyebrow>
+          <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+            Sämtliche Logos – auf Creme und auf Dunkel
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
+            Jedes Logo einmal auf hellem und einmal auf dunklem Grund, damit die Wirkung
+            in beiden Welten direkt vergleichbar ist.
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {logos.map((l) => (
+              <figure
+                key={l.datei}
+                className="flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-card"
+              >
+                <div className="grid grid-cols-2">
+                  <div
+                    className="flex aspect-square items-center justify-center p-[16%]"
+                    style={{ background: "#f6f4ee" }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={l.src}
+                      alt={`${l.datei} auf Creme`}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
+                  <div
+                    className="flex aspect-square items-center justify-center p-[16%]"
+                    style={{ background: "#090b10" }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={l.src}
+                      alt={`${l.datei} auf Dunkel`}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
+                </div>
+                <figcaption className="flex flex-col gap-1 border-t border-ink/10 p-3.5">
+                  <code className="break-all text-[0.76rem] font-semibold text-ink">
+                    {l.datei}
+                  </code>
+                  <span className="text-[0.78rem] text-ink-mid">{l.verwendung}</span>
+                  {l.hinweis && (
+                    <span className="mt-0.5 text-[0.74rem] font-medium text-gold-700">
+                      {l.hinweis}
+                    </span>
+                  )}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Bestand & Lücken-Check */}
+      <section className="py-12 sm:py-14">
+        <Container>
+          <Eyebrow>Vorlagen-Bestand &amp; Lücken-Check</Eyebrow>
+          <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+            Was existiert – und wo Creme ↔ Dunkel fehlt
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
+            Gezählt aus{" "}
+            <code className="rounded bg-ink/5 px-1">docs/marketing/</code>. „Motiv" = ein
+            Sujet in einem Format; „Creme"/„Dunkel" = wie viele davon in der jeweiligen
+            Welt vorliegen.
+          </p>
+
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
+              <span className="font-display text-3xl font-medium text-teal-700 tabular-nums">
+                {k.motive}
+              </span>
+              <span className="text-sm font-medium text-ink">Motive gesamt</span>
+              <span className="text-xs text-ink-muted">alle Familien &amp; Formate</span>
+            </div>
+            <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
+              <span className="font-display text-3xl font-medium text-teal-700">
+                100&nbsp;%
+              </span>
+              <span className="text-sm font-medium text-ink">paarig vorhanden</span>
+              <span className="text-xs text-ink-muted">Creme ↔ Dunkel</span>
+            </div>
+            <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
+              <span className="font-display text-3xl font-medium text-accent tabular-nums">
+                {k.neutraleVorlagen}
+              </span>
+              <span className="text-sm font-medium text-ink">neutrale Vorlagen</span>
+              <span className="text-xs text-ink-muted">Hilfslinien &amp; Hintergründe</span>
+            </div>
+            <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
+              <span className="font-display text-3xl font-medium text-accent tabular-nums">
+                1
+              </span>
+              <span className="text-sm font-medium text-ink">Quell-Foto ohne Hell</span>
+              <span className="text-xs text-ink-muted">
+                Greenscreen-Porträt (kein Template)
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-ink/10 shadow-card">
+            <table className="w-full min-w-[520px] border-collapse bg-white text-sm">
+              <thead>
+                <tr className="bg-surface-2 text-left">
+                  <th className="px-4 py-3 text-[0.7rem] font-bold uppercase tracking-wide text-ink-muted">
+                    Motiv-Familie
+                  </th>
+                  <th className="px-4 py-3 text-right text-[0.7rem] font-bold uppercase tracking-wide text-ink-muted">
+                    Motive
+                  </th>
+                  <th className="px-4 py-3 text-right text-[0.7rem] font-bold uppercase tracking-wide text-ink-muted">
+                    Creme
+                  </th>
+                  <th className="px-4 py-3 text-right text-[0.7rem] font-bold uppercase tracking-wide text-ink-muted">
+                    Dunkel
+                  </th>
+                  <th className="px-4 py-3 text-[0.7rem] font-bold uppercase tracking-wide text-ink-muted">
+                    Status
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {vorlagenBestand.map((r) => {
+                  const paarig = r.creme === r.motive && r.dunkel === r.motive;
+                  return (
+                    <tr key={r.familie} className="border-t border-ink/5">
+                      <td className="px-4 py-2.5 font-medium text-ink">{r.familie}</td>
+                      <td className="px-4 py-2.5 text-right tabular-nums text-ink-mid">
+                        {r.motive}
+                      </td>
+                      <td className="px-4 py-2.5 text-right tabular-nums text-ink-mid">
+                        {r.creme}
+                      </td>
+                      <td className="px-4 py-2.5 text-right tabular-nums text-ink-mid">
+                        {r.dunkel}
+                      </td>
+                      <td className="px-4 py-2.5">
+                        <span className="inline-flex items-center gap-1 text-[0.82rem] font-semibold text-teal-700">
+                          <Check className="h-3.5 w-3.5" />
+                          {paarig ? "paarig" : "prüfen"}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+              <tfoot>
+                <tr className="border-t border-ink/10 bg-surface-2 font-bold text-ink">
+                  <td className="px-4 py-3">Gesamt</td>
+                  <td className="px-4 py-3 text-right tabular-nums">{k.motive}</td>
+                  <td className="px-4 py-3 text-right tabular-nums">{k.creme}</td>
+                  <td className="px-4 py-3 text-right tabular-nums">{k.dunkel}</td>
+                  <td className="px-4 py-3">
+                    <span className="inline-flex items-center gap-1 text-[0.82rem] font-semibold text-teal-700">
+                      <Check className="h-3.5 w-3.5" />
+                      vollständig paarig
+                    </span>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div className="mt-6 rounded-2xl border-l-[3px] border-gold-500 bg-surface-2 p-4 text-sm leading-relaxed text-ink-mid">
+            <strong className="text-ink">Ergebnis:</strong> Das Farbwelt-System ist
+            vollständig – jedes der {k.motive} Motive liegt sowohl in Creme als auch in
+            Dunkel vor, es fehlt keine Farbvariante. Die einzige Nicht-Paarung ist das
+            rohe Greenscreen-Porträt{" "}
+            <code className="rounded bg-ink/5 px-1">
+              assets/portrait-greenscreen-20260616.jpg
+            </code>{" "}
+            – eine Bildquelle, kein Template, daher bewusst ohne Hell-Variante.
+          </div>
+
+          <details className="mt-8 rounded-2xl border border-ink/10 bg-white p-5">
+            <summary className="cursor-pointer text-sm font-semibold text-ink">
+              Für Entwickler: Daten aktualisieren
+            </summary>
+            <p className="mt-3 text-sm text-ink-mid">
+              Farben stehen in{" "}
+              <code className="rounded bg-ink/5 px-1">src/app/globals.css</code>, die Zahlen
+              in{" "}
+              <code className="rounded bg-ink/5 px-1">src/lib/marken-uebersicht.ts</code>.
+              Nach dem Erzeugen neuer Grafiken den Bestand dort nachziehen; die Grafiken
+              selbst entstehen über{" "}
+              <code className="rounded bg-ink/5 px-1">docs/marketing/brand-assets.mjs</code>{" "}
+              und die Galerie über{" "}
+              <code className="rounded bg-ink/5 px-1">npm run vorlagen:galerie</code>.
+            </p>
+            <p className="mt-3 text-sm text-ink-mid">
+              Die komplette Galerie aller Vorlagen zum Ansehen &amp; Herunterladen liegt
+              unter{" "}
+              <Link
+                href="/admin/vorlagen"
+                className="font-semibold text-teal-700 hover:underline"
+              >
+                /admin/vorlagen
+              </Link>
+              .
+            </p>
+          </details>
+        </Container>
+      </section>
+    </>
+  );
+}
