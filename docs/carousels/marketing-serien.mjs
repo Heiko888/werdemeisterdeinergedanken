@@ -21,7 +21,45 @@ const FORMATS = [
   { key: "reel-9x16", w: 1080, h: 1920, pad: 130 },
 ];
 const HANDLE = "www.werdemeisterdeinergedanken.de";
-const GRAD = "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)";
+
+// Marken-Palette – dunkel (Gold auf Anthrazit) und hell (Creme, tiefes Gold).
+// 1:1 an brand-assets.mjs angeglichen, damit die Carousels zur restlichen
+// Bildwelt passen. hell=true → Creme-Grund #f6f4ee, dunkle Tinte-Schrift.
+const PAL = (hell) => hell ? {
+  page: "#efe9de", stars: "none",
+  bg: `radial-gradient(78% 62% at 50% -12%, rgba(232,193,95,.22), transparent 62%),
+       radial-gradient(60% 55% at 96% 4%, rgba(242,212,137,.12), transparent 60%),
+       radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),
+       #f6f4ee`,
+  grad: "linear-gradient(120deg,#d9a93a 0%,#7e6410 100%)",
+  eyebrow: "#7e6410", ink: "#16231f", sub: "rgba(22,35,31,.66)",
+  body: "rgba(22,35,31,.82)", strong: "#16231f", statlabel: "rgba(22,35,31,.85)",
+  numbg: "rgba(22,35,31,.05)",
+  cardBg: "rgba(22,35,31,.045)", cardBorder: "rgba(22,35,31,.12)", cardText: "rgba(22,35,31,.72)",
+  chipGoodBg: "rgba(120,150,40,.14)", chipGoodText: "#5c6b1f", chipGoodBorder: "rgba(120,150,40,.4)",
+  chipBadBg: "rgba(180,80,50,.12)", chipBadText: "#9a4426", chipBadBorder: "rgba(180,80,50,.38)",
+  onGrad: "#fdfaf1",
+  hintBg: "rgba(168,132,42,.10)", hintBorder: "#b8901f", hintHl: "#7e6410",
+  merkText: "#4a5a2f", merkBorder: "#a8842a",
+  muted: "rgba(22,35,31,.55)", dotOff: "rgba(22,35,31,.18)", logoShadow: "rgba(168,132,42,.28)",
+} : {
+  page: "#05060c", stars: "block",
+  bg: `radial-gradient(52% 110% at 86% 10%, rgba(233,193,95,.20), transparent 60%),
+       radial-gradient(46% 110% at 6% 96%, rgba(168,132,42,.12), transparent 60%),
+       radial-gradient(42% 90% at 74% 92%, rgba(217,169,58,.12), transparent 60%),
+       #090b10`,
+  grad: "linear-gradient(120deg,#f2d489 0%,#e8c15f 100%)",
+  eyebrow: "#f2d489", ink: "#f4f2ec", sub: "rgba(244,242,236,.72)",
+  body: "rgba(244,242,236,.86)", strong: "#ffffff", statlabel: "rgba(244,242,236,.9)",
+  numbg: "rgba(255,255,255,.05)",
+  cardBg: "rgba(255,255,255,.05)", cardBorder: "rgba(255,255,255,.10)", cardText: "rgba(244,242,236,.78)",
+  chipGoodBg: "rgba(140,198,63,.16)", chipGoodText: "#b9e08a", chipGoodBorder: "rgba(140,198,63,.4)",
+  chipBadBg: "rgba(230,120,90,.14)", chipBadText: "#f0b49b", chipBadBorder: "rgba(230,120,90,.38)",
+  onGrad: "#241a06",
+  hintBg: "rgba(233,193,95,.10)", hintBorder: "#e8c15f", hintHl: "#f2d489",
+  merkText: "#efe2c4", merkBorder: "#e8c15f",
+  muted: "rgba(244,242,236,.6)", dotOff: "rgba(255,255,255,.22)", logoShadow: "rgba(233,193,95,.30)",
+};
 
 // ---------------------------------------------------------------------------
 const SERIES = [
@@ -246,18 +284,16 @@ const SERIES = [
 ];
 
 // ---------------------------------------------------------------------------
-const cssFor = (W, H, PAD) => `
+const cssFor = (W, H, PAD, hell) => { const p = PAL(hell); return `
 *{ margin:0; padding:0; box-sizing:border-box; }
-html,body{ background:#05060c; overflow:hidden; }
+html,body{ background:${p.page}; overflow:hidden; }
 .slide{ position:relative; width:${W}px; height:${H}px; overflow:hidden;
-  font-family:'Inter',system-ui,sans-serif; color:#f4f7ff; }
+  font-family:'Inter',system-ui,sans-serif; color:${p.ink}; }
 .slide::before{ content:""; position:absolute; inset:0; z-index:0;
   background:
-    radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
-    radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
-    radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
-    #08102a; }
+    ${p.bg}; }
 .slide::after{ content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  display:${p.stars === "block" ? "block" : "none"};
   background-image:
     radial-gradient(2.4px 2.4px at 18% 22%, rgba(255,255,255,.5), transparent),
     radial-gradient(1.7px 1.7px at 80% 16%, rgba(185,222,255,.45), transparent),
@@ -266,69 +302,76 @@ html,body{ background:#05060c; overflow:hidden; }
     radial-gradient(2px 2px at 60% 90%, rgba(255,255,255,.34), transparent); }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; padding:${PAD}px 80px ${Math.max(56, PAD - 12)}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
-.logo{ width:160px; height:auto; filter:drop-shadow(0 4px 22px rgba(52,196,196,.30)); }
+.logo{ width:160px; height:auto; filter:drop-shadow(0 4px 22px ${p.logoShadow}); }
 .tag{ text-align:right; padding-top:6px; font-weight:800; font-size:19px; letter-spacing:.13em;
-  text-transform:uppercase; background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  text-transform:uppercase; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.top.cover{ align-items:center; justify-content:flex-start; gap:26px; }
+.wm{ display:flex; flex-direction:column; gap:6px; line-height:1; }
+.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:34px; letter-spacing:.02em; text-transform:uppercase; color:${p.ink}; }
+.wm .wm1 b{ font-weight:600; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.wm .wm2{ font-weight:700; font-size:17px; letter-spacing:.26em; text-transform:uppercase; color:${p.muted}; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
-  color:#34c4c4; }
-.headline{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:76px; line-height:1.05;
-  letter-spacing:-1px; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
-.title{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:62px; line-height:1.08; letter-spacing:-.5px;
-  filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
-.bar{ width:120px; height:6px; border-radius:6px; background:${GRAD}; }
-.sub{ font-size:33px; line-height:1.38; color:#c2d0e4; max-width:92%; }
-.body{ font-family:'Fraunces',Georgia,serif; font-weight:500; line-height:1.34; color:#eef3fb;
-  filter:drop-shadow(0 4px 22px rgba(0,0,0,.5)); }
+  color:${p.eyebrow}; }
+.headline{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:76px; line-height:1.05; color:${p.ink};
+  letter-spacing:-1px; filter:drop-shadow(0 6px 30px rgba(0,0,0,${hell ? ".12" : ".55"})); }
+.title{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:62px; line-height:1.08; letter-spacing:-.5px; color:${p.ink};
+  filter:drop-shadow(0 6px 30px rgba(0,0,0,${hell ? ".12" : ".55"})); }
+.bar{ width:120px; height:6px; border-radius:6px; background:${p.grad}; }
+.sub{ font-size:33px; line-height:1.38; color:${p.sub}; max-width:92%; }
+.body{ font-family:'Fraunces',Georgia,serif; font-weight:500; line-height:1.34; color:${p.body};
+  filter:drop-shadow(0 4px 22px rgba(0,0,0,${hell ? ".08" : ".5"})); }
 .numbig{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:180px; line-height:.9; letter-spacing:-2px;
-  background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 8px 30px rgba(52,196,196,.25)); }
-.statlabel{ font-weight:700; font-size:30px; line-height:1.3; color:#e7eefb; }
+  background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 8px 30px rgba(184,144,34,.25)); }
+.statlabel{ font-weight:700; font-size:30px; line-height:1.3; color:${p.statlabel}; }
 .numbg{ position:absolute; z-index:1; right:40px; top:50%; transform:translateY(-50%); font-family:'Fraunces',Georgia,serif;
-  font-weight:600; font-size:440px; line-height:.8; color:rgba(255,255,255,.05); }
+  font-weight:600; font-size:440px; line-height:.8; color:${p.numbg}; }
 .rubric{ display:flex; align-items:center; gap:16px; }
 .rubric .num{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:40px;
-  background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
 .cards{ display:flex; gap:26px; }
-.card{ flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.10);
+.card{ flex:1; background:${p.cardBg}; border:1px solid ${p.cardBorder};
   border-radius:26px; padding:38px 34px; display:flex; flex-direction:column; gap:18px; }
-.card h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:40px; line-height:1.1; }
-.card p{ font-size:27px; line-height:1.38; color:#c8d5e7; flex:1; }
+.card h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:40px; line-height:1.1; color:${p.ink}; }
+.card p{ font-size:27px; line-height:1.38; color:${p.cardText}; flex:1; }
 .chip{ align-self:flex-start; padding:12px 22px; border-radius:999px; font-weight:700; font-size:23px; }
-.chip.good{ background:rgba(140,198,63,.16); color:#b9e08a; border:1px solid rgba(140,198,63,.4); }
-.chip.bad{ background:rgba(230,120,90,.14); color:#f0b49b; border:1px solid rgba(230,120,90,.38); }
+.chip.good{ background:${p.chipGoodBg}; color:${p.chipGoodText}; border:1px solid ${p.chipGoodBorder}; }
+.chip.bad{ background:${p.chipBadBg}; color:${p.chipBadText}; border:1px solid ${p.chipBadBorder}; }
 .list{ display:flex; flex-direction:column; gap:30px; margin-top:6px; }
 .li{ display:flex; gap:22px; align-items:flex-start; }
-.li .dot{ margin-top:14px; width:16px; height:16px; border-radius:50%; background:${GRAD}; flex:0 0 auto; }
-.li .txt{ font-size:31px; line-height:1.36; color:#dbe6f4; }
-.li .txt b{ font-weight:800; color:#fff; }
+.li .dot{ margin-top:14px; width:16px; height:16px; border-radius:50%; background:${p.grad}; flex:0 0 auto; }
+.li .txt{ font-size:31px; line-height:1.36; color:${p.body}; }
+.li .txt b{ font-weight:800; color:${p.strong}; }
 .rec{ display:flex; flex-direction:column; gap:22px; margin-top:4px; }
 .rec .row{ display:flex; gap:22px; align-items:flex-start; }
-.rec .n{ flex:0 0 auto; width:52px; height:52px; border-radius:50%; background:${GRAD}; color:#04121a;
+.rec .n{ flex:0 0 auto; width:52px; height:52px; border-radius:50%; background:${p.grad}; color:${p.onGrad};
   font-weight:800; font-size:28px; display:flex; align-items:center; justify-content:center; }
-.rec .rt{ font-size:30px; line-height:1.32; color:#dbe6f4; padding-top:6px; }
-.rec .rt b{ font-weight:800; color:#fff; }
-.close{ margin-top:22px; font-size:28px; line-height:1.4; color:#a7bad2; font-style:italic; }
-.hint{ margin-top:12px; background:rgba(52,196,196,.09); border-left:5px solid #21b2bd; border-radius:12px;
+.rec .rt{ font-size:30px; line-height:1.32; color:${p.body}; padding-top:6px; }
+.rec .rt b{ font-weight:800; color:${p.strong}; }
+.close{ margin-top:22px; font-size:28px; line-height:1.4; color:${p.muted}; font-style:italic; }
+.hint{ margin-top:12px; background:${p.hintBg}; border-left:5px solid ${p.hintBorder}; border-radius:12px;
   padding:24px 28px; }
-.hint .hl{ font-weight:800; font-size:22px; letter-spacing:.06em; text-transform:uppercase; color:#5fd0d6; }
-.hint .ht{ margin-top:8px; font-size:29px; line-height:1.36; color:#dbe6f4; }
+.hint .hl{ font-weight:800; font-size:22px; letter-spacing:.06em; text-transform:uppercase; color:${p.hintHl}; }
+.hint .ht{ margin-top:8px; font-size:29px; line-height:1.36; color:${p.body}; }
 .merk{ margin-top:14px; font-family:'Fraunces',Georgia,serif; font-style:italic; font-weight:500;
-  font-size:34px; line-height:1.34; color:#cfe9c4; border-left:5px solid #8cc63f; padding-left:26px; }
-.cta{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:64px; line-height:1.12; letter-spacing:-.5px; }
-.btn{ align-self:flex-start; margin-top:14px; padding:22px 40px; border-radius:999px; background:${GRAD};
-  color:#04121a; font-weight:800; font-size:29px; }
+  font-size:34px; line-height:1.34; color:${p.merkText}; border-left:5px solid ${p.merkBorder}; padding-left:26px; }
+.cta{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:64px; line-height:1.12; letter-spacing:-.5px; color:${p.ink}; }
+.btn{ align-self:flex-start; margin-top:14px; padding:22px 40px; border-radius:999px; background:${p.grad};
+  color:${p.onGrad}; font-weight:800; font-size:29px; }
 .foot{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
-.handle{ font-weight:600; font-size:25px; letter-spacing:.03em; color:#9db1cb; }
+.handle{ font-weight:600; font-size:25px; letter-spacing:.03em; color:${p.muted}; }
 .dots{ display:flex; align-items:center; gap:9px; }
-.dot2{ width:10px; height:10px; border-radius:50%; background:rgba(255,255,255,.22); }
-.dot2.on{ background:${GRAD}; box-shadow:0 0 12px rgba(52,196,196,.5); }
-.count{ font-size:23px; color:#9db1cb; font-variant-numeric:tabular-nums; }
-.swipe{ font-size:25px; color:#9db1cb; font-weight:600; }
-`;
+.dot2{ width:10px; height:10px; border-radius:50%; background:${p.dotOff}; }
+.dot2.on{ background:${p.grad}; box-shadow:0 0 12px rgba(184,144,34,.4); }
+.count{ font-size:23px; color:${p.muted}; font-variant-numeric:tabular-nums; }
+.swipe{ font-size:25px; color:${p.muted}; font-weight:600; }
+`; };
 
 const fontsCss = readFileSync(join(COVERS, "_fonts.css"), "utf8");
-const logoUri = `data:image/png;base64,${readFileSync(join(COVERS, "logo.png")).toString("base64")}`;
+// Goldenes Marken-Gehirn (wie brand-assets.mjs) statt des bunten Reels-Logos –
+// passt zur Gold-/Creme-Markenoptik.
+const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
 const fit = (t, big, mid, sm) => (t.length <= 120 ? big : t.length <= 240 ? mid : sm);
 
 function dots(active, total) {
@@ -369,9 +412,14 @@ function slideHtml(series, s, idx, total, css) {
   const isCover = s.role === "cover";
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
+  // Cover trägt die Wortmarke (Schriftlogo) neben dem Gehirn; Folgeslides den Tag.
+  const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2">Deiner Gedanken</span></div>`;
+  const top = isCover
+    ? `<div class="top cover"><img class="logo" src="${logoUri}" alt="">${wm}</div>`
+    : `<div class="top"><img class="logo" src="${logoUri}" alt=""><div class="tag">${series.tag}</div></div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
-  <div class="top"><img class="logo" src="${logoUri}" alt=""><div class="tag">${isCover ? "" : series.tag}</div></div>
+  ${top}
   ${mid(s)}
   ${foot}
 </div></div></body></html>`;
@@ -394,17 +442,22 @@ const only = process.env.FORMAT; // optional: nur ein Format rendern
 const browser = await chromium.launch({ executablePath: findChrome() });
 for (const F of FORMATS) {
   if (only && F.key !== only) continue;
-  const css = cssFor(F.w, F.h, F.pad);
   const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
-  for (const series of SERIES) {
-    const dir = join(OUTBASE, series.key, F.key);
-    mkdirSync(dir, { recursive: true });
-    const total = series.slides.length;
-    for (let i = 0; i < series.slides.length; i++) {
-      await page.setContent(slideHtml(series, series.slides[i], i, total, css), { waitUntil: "networkidle" });
-      await page.screenshot({ path: join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`) });
+  // Jede Serie in beiden Themes: dunkel (Standard, Unterordner <format>)
+  // und Creme (Unterordner <format>-hell).
+  for (const hell of [false, true]) {
+    const css = cssFor(F.w, F.h, F.pad, hell);
+    const sub = hell ? `${F.key}-hell` : F.key;
+    for (const series of SERIES) {
+      const dir = join(OUTBASE, series.key, sub);
+      mkdirSync(dir, { recursive: true });
+      const total = series.slides.length;
+      for (let i = 0; i < series.slides.length; i++) {
+        await page.setContent(slideHtml(series, series.slides[i], i, total, css), { waitUntil: "networkidle" });
+        await page.screenshot({ path: join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`) });
+      }
+      console.log(`✓ ${sub} · ${series.label}: ${total} Slides`);
     }
-    console.log(`✓ ${F.key} · ${series.label}: ${total} Slides`);
   }
   await page.close();
 }
