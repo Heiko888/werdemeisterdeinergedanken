@@ -49,7 +49,7 @@ export function Hero() {
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="block w-[min(280px,68vw)] [filter:drop-shadow(0_0_8px_rgba(217,169,58,0.6))_drop-shadow(0_0_20px_rgba(217,169,58,0.4))]"
+              className="block w-[min(280px,68vw)] [filter:drop-shadow(0_0_8px_rgba(217,169,58,0.6))_drop-shadow(0_0_20px_rgba(217,169,58,0.4))] [-webkit-mask-image:linear-gradient(to_bottom,#000_62%,rgba(0,0,0,0.55)_82%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_62%,rgba(0,0,0,0.55)_82%,transparent_100%)]"
             />
           </Reveal>
 
@@ -102,7 +102,7 @@ export function Hero() {
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_11px_rgba(217,169,58,0.6))_drop-shadow(0_0_30px_rgba(217,169,58,0.4))] lg:w-[min(560px,100%)]"
+              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_11px_rgba(217,169,58,0.6))_drop-shadow(0_0_30px_rgba(217,169,58,0.4))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
