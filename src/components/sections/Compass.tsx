@@ -20,18 +20,13 @@ export function Compass() {
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-stars opacity-70"
       />
-      <Container className="grid items-center gap-14 lg:grid-cols-2">
-        <Reveal className="order-2 lg:order-1">
-          <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
-            <PhotoFrame
-              src="/kompass-weg.webp"
-              alt="Ein Mann steht bei Sonnenuntergang auf einem Bergkamm und liest einen Kompass in seiner Hand; vor ihm führt ein Pfad mit leuchtenden Wegmarken den Grat entlang – Sinnbild für den bewussten, geführten Weg durch die 7 Stufen der Bewusstseinsentwicklung"
-              aspect="landscape"
-            />
-          </div>
-        </Reveal>
-
-        <Reveal delay={100} className="order-1 lg:order-2">
+      {/* Mobil: Eyebrow + Überschrift, dann das Bild, dann Text/Liste/Button –
+          das Motiv soll direkt unter der Überschrift stehen, nicht ganz unten.
+          Ab lg wieder zweispaltig: Bild links über beide Textzeilen, Kopf und
+          Rest rechts untereinander. Deshalb explizite Grid-Positionen statt
+          `order`, das den Textblock nicht aufteilen könnte. */}
+      <Container className="grid items-start gap-x-14 gap-y-8 lg:grid-cols-2 lg:gap-y-6">
+        <Reveal delay={100} className="lg:col-start-2 lg:row-start-1">
           <div className="flex flex-col items-start gap-6">
             <div className="flex items-baseline gap-3">
               <span className="font-display text-sm italic text-ink-mid">
@@ -43,6 +38,21 @@ export function Compass() {
               Durchlaufe alle 7 Stufen –{" "}
               <em className="accent">bewusst und geführt</em>
             </h2>
+          </div>
+        </Reveal>
+
+        <Reveal className="lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:self-center">
+          <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
+            <PhotoFrame
+              src="/kompass-weg.webp"
+              alt="Ein Mann steht bei Sonnenuntergang auf einem Bergkamm und liest einen Kompass in seiner Hand; vor ihm führt ein Pfad mit leuchtenden Wegmarken den Grat entlang – Sinnbild für den bewussten, geführten Weg durch die 7 Stufen der Bewusstseinsentwicklung"
+              aspect="landscape"
+            />
+          </div>
+        </Reveal>
+
+        <Reveal delay={100} className="lg:col-start-2 lg:row-start-2">
+          <div className="flex flex-col items-start gap-6">
             <p className="text-[1.05rem] leading-relaxed text-ink-mid">
               Der Kompass zeigt dir jederzeit, wo du gerade stehst und was dein
               nächster Schritt ist. So wird aus einem diffusen Gefühl ein
