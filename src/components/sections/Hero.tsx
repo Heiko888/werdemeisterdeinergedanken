@@ -102,20 +102,22 @@ export function Hero() {
 
         <Reveal delay={200} className="relative hidden w-full self-end lg:block">
           <div className="relative mx-auto w-fit">
-            {/* Gold-Glow hinter Kopf/Oberkörper */}
+            {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
+                Schulter umhüllt und rundum diffus in den Navy-Grund ausläuft –
+                statt eines engen Rands, der an der Silhouette hart abriss. */}
             <div
               aria-hidden
-              className="pointer-events-none absolute left-1/2 top-[2%] -z-10 aspect-square w-[92%] -translate-x-1/2 rounded-full opacity-60 blur-3xl"
+              className="pointer-events-none absolute inset-0 -z-10 opacity-70 blur-[72px]"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), color-mix(in oklab, var(--color-gold-500) 12%, transparent) 40%, transparent 72%)",
+                  "radial-gradient(46% 40% at 50% 33%, color-mix(in oklab, var(--color-gold-500) 30%, transparent), color-mix(in oklab, var(--color-gold-500) 11%, transparent) 46%, transparent 78%)",
               }}
             />
             <Image
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_22px_rgba(217,169,58,0.4))_drop-shadow(0_0_48px_rgba(217,169,58,0.28))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
+              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_42px_rgba(217,169,58,0.26))_drop-shadow(0_0_96px_rgba(217,169,58,0.16))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
