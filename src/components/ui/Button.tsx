@@ -10,7 +10,7 @@ const variants: Record<Variant, string> = {
   // heller), Lichtkante oben (inset-Highlight), satter Schatten – beim Hover ein
   // dezenter warmer Gold-Schein, der den Button mit der Marke verbindet.
   primary:
-    "bg-gradient-to-b from-[#243731] to-ink text-paper font-semibold shadow-[inset_0_1px_0_rgb(255_255_255_/_0.1),0_2px_6px_-1px_rgb(22_35_31_/_0.35),0_10px_26px_-10px_rgb(22_35_31_/_0.5)] hover:-translate-y-0.5 hover:from-[#2b423a] hover:shadow-[inset_0_1px_0_rgb(255_255_255_/_0.14),0_4px_10px_-1px_rgb(22_35_31_/_0.4),0_16px_36px_-10px_rgb(22_35_31_/_0.55),0_10px_30px_-12px_rgb(217_169_58_/_0.4)] active:translate-y-0 active:shadow-[inset_0_2px_4px_rgb(0_0_0_/_0.35)]",
+    "bg-gradient-to-b from-[#243731] to-ink text-paper font-semibold shadow-[inset_0_1px_0_rgb(255_255_255_/_0.1),0_2px_6px_-1px_rgb(22_35_31_/_0.35),0_10px_26px_-10px_rgb(22_35_31_/_0.5),0_8px_24px_-12px_rgb(217_169_58_/_0.4)] hover:-translate-y-0.5 hover:from-[#2b423a] hover:shadow-[inset_0_1px_0_rgb(255_255_255_/_0.14),0_4px_10px_-1px_rgb(22_35_31_/_0.4),0_16px_36px_-10px_rgb(22_35_31_/_0.55),0_14px_34px_-10px_rgb(217_169_58_/_0.6)] active:translate-y-0 active:shadow-[inset_0_2px_4px_rgb(0_0_0_/_0.35)]",
   // Theme-fähiger Umriss: `text-ink`/`border-ink` zeigen auf CSS-Variablen, die
   // in `.on-dark`-Sektionen (Hero, Final-CTA) automatisch auf Hell umschalten –
   // so ist derselbe Sekundär-Button auf hellem wie auf dunklem Grund korrekt.
@@ -22,7 +22,7 @@ const variants: Record<Variant, string> = {
   // glänzende Lichtkante oben (inset-Highlight) und ein von oben beleuchteter
   // Verlauf (gold-300 → gold-500). Beim Hover wächst der Glow spürbar.
   accent:
-    "bg-gradient-to-b from-gold-300 via-gold-400 to-gold-500 text-navy-950 font-semibold shadow-[inset_0_1px_0_rgb(255_255_255_/_0.45),0_2px_5px_-1px_rgb(22_35_31_/_0.22),0_8px_28px_-8px_rgb(217_169_58_/_0.75)] hover:-translate-y-0.5 hover:brightness-[1.05] hover:shadow-[inset_0_1px_0_rgb(255_255_255_/_0.55),0_3px_8px_-1px_rgb(22_35_31_/_0.28),0_16px_44px_-8px_rgb(217_169_58_/_0.95)] active:translate-y-0 active:shadow-[inset_0_1px_2px_rgb(120_90_20_/_0.35),0_2px_6px_-2px_rgb(22_35_31_/_0.3)]",
+    "bg-gradient-to-b from-gold-300 via-gold-400 to-gold-500 text-navy-950 font-semibold shadow-[inset_0_1px_0_rgb(255_255_255_/_0.5),0_2px_6px_-1px_rgb(22_35_31_/_0.2),0_4px_16px_-2px_rgb(217_169_58_/_0.6),0_12px_34px_-6px_rgb(217_169_58_/_0.85)] hover:-translate-y-0.5 hover:brightness-[1.05] hover:shadow-[inset_0_1px_0_rgb(255_255_255_/_0.6),0_3px_10px_-1px_rgb(22_35_31_/_0.26),0_6px_22px_-2px_rgb(232_193_95_/_0.8),0_22px_60px_-6px_rgb(232_193_95_/_1)] active:translate-y-0 active:shadow-[inset_0_1px_2px_rgb(120_90_20_/_0.35),0_2px_6px_-2px_rgb(22_35_31_/_0.3)]",
 };
 
 // Feste, saubere Höhen – so sind ein Akzent- und ein Sekundär-Button im selben
