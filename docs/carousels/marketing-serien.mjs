@@ -305,6 +305,11 @@ html,body{ background:${p.page}; overflow:hidden; }
 .logo{ width:160px; height:auto; filter:drop-shadow(0 4px 22px ${p.logoShadow}); }
 .tag{ text-align:right; padding-top:6px; font-weight:800; font-size:19px; letter-spacing:.13em;
   text-transform:uppercase; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.top.cover{ align-items:center; justify-content:flex-start; gap:26px; }
+.wm{ display:flex; flex-direction:column; gap:6px; line-height:1; }
+.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:34px; letter-spacing:.02em; text-transform:uppercase; color:${p.ink}; }
+.wm .wm1 b{ font-weight:600; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.wm .wm2{ font-weight:700; font-size:17px; letter-spacing:.26em; text-transform:uppercase; color:${p.muted}; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
   color:${p.eyebrow}; }
@@ -364,7 +369,9 @@ html,body{ background:${p.page}; overflow:hidden; }
 `; };
 
 const fontsCss = readFileSync(join(COVERS, "_fonts.css"), "utf8");
-const logoUri = `data:image/png;base64,${readFileSync(join(COVERS, "logo.png")).toString("base64")}`;
+// Goldenes Marken-Gehirn (wie brand-assets.mjs) statt des bunten Reels-Logos –
+// passt zur Gold-/Creme-Markenoptik.
+const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
 const fit = (t, big, mid, sm) => (t.length <= 120 ? big : t.length <= 240 ? mid : sm);
 
 function dots(active, total) {
@@ -405,9 +412,14 @@ function slideHtml(series, s, idx, total, css) {
   const isCover = s.role === "cover";
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
+  // Cover trägt die Wortmarke (Schriftlogo) neben dem Gehirn; Folgeslides den Tag.
+  const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2">Deiner Gedanken</span></div>`;
+  const top = isCover
+    ? `<div class="top cover"><img class="logo" src="${logoUri}" alt="">${wm}</div>`
+    : `<div class="top"><img class="logo" src="${logoUri}" alt=""><div class="tag">${series.tag}</div></div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
-  <div class="top"><img class="logo" src="${logoUri}" alt=""><div class="tag">${isCover ? "" : series.tag}</div></div>
+  ${top}
   ${mid(s)}
   ${foot}
 </div></div></body></html>`;
