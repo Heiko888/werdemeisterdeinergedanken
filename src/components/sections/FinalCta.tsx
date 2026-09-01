@@ -1,5 +1,4 @@
 import { HERO_GLOW } from "@/lib/gradients";
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
@@ -35,12 +34,9 @@ export function FinalCta() {
               Kostenloses Erstgespräch
               <ArrowRight />
             </Button>
-            <Link
-              href="/die-7-stufen"
-              className="inline-flex h-13 items-center justify-center gap-2 rounded-full border border-cream/30 px-7 text-base font-medium text-cream transition-colors hover:border-cream/60 hover:bg-cream/5"
-            >
+            <Button href="/die-7-stufen" variant="secondary" size="lg">
               Die 7 Stufen ansehen
-            </Link>
+            </Button>
           </div>
         </Reveal>
       </Container>

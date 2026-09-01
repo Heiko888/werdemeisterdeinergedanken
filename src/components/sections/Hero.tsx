@@ -1,6 +1,5 @@
 import { HERO_GLOW } from "@/lib/gradients";
 import Image from "next/image";
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
@@ -68,12 +67,9 @@ export function Hero() {
                 Die 7 Stufen entdecken
                 <ArrowRight />
               </Button>
-              <Link
-                href="/kontakt"
-                className="inline-flex h-13 items-center justify-center gap-2 rounded-full border border-cream/30 px-7 text-base font-medium text-cream transition-colors hover:border-cream/60 hover:bg-cream/5"
-              >
+              <Button href="/kontakt" variant="secondary" size="lg">
                 Kostenloses Erstgespräch
-              </Link>
+              </Button>
             </div>
           </Reveal>
 

@@ -6,17 +6,23 @@ type Variant = "primary" | "secondary" | "ghost" | "accent";
 type Size = "md" | "lg";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-ink text-paper font-semibold hover:bg-ink/90",
+  primary:
+    "bg-ink text-paper font-semibold shadow-sm hover:bg-ink/90 hover:-translate-y-0.5 hover:shadow-card active:translate-y-0",
+  // Theme-fähiger Umriss: `text-ink`/`border-ink` zeigen auf CSS-Variablen, die
+  // in `.on-dark`-Sektionen (Hero, Final-CTA) automatisch auf Hell umschalten –
+  // so ist derselbe Sekundär-Button auf hellem wie auf dunklem Grund korrekt.
   secondary:
-    "border border-ink/20 text-ink hover:border-ink/40 hover:bg-ink/[0.03]",
+    "border border-ink/25 text-ink hover:border-ink/45 hover:bg-ink/[0.04] active:bg-ink/[0.06]",
   ghost: "text-accent hover:text-ink",
   accent:
-    "bg-gradient-to-r from-gold-400 to-gold-500 text-navy-950 font-semibold shadow-sm hover:brightness-[1.03]",
+    "bg-gradient-to-r from-gold-400 to-gold-500 text-navy-950 font-semibold shadow-[0_1px_2px_-1px_rgb(22_35_31_/_0.2),0_10px_26px_-14px_rgb(168_132_42_/_0.7)] hover:-translate-y-0.5 hover:brightness-[1.04] hover:shadow-[0_2px_4px_-1px_rgb(22_35_31_/_0.24),0_16px_34px_-14px_rgb(168_132_42_/_0.85)] active:translate-y-0",
 };
 
+// Feste, saubere Höhen – so sind ein Akzent- und ein Sekundär-Button im selben
+// CTA-Paar garantiert exakt gleich groß (früher mischte `lg` min-h + py).
 const sizes: Record<Size, string> = {
   md: "h-11 px-5 text-sm",
-  lg: "min-h-13 px-7 text-base py-3.5",
+  lg: "h-13 px-7 text-base",
 };
 
 type CommonProps = {
@@ -49,7 +55,7 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
   } = props;
 
   const classes = cn(
-    "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-60",
+    "inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:pointer-events-none disabled:opacity-60",
     variants[variant],
     sizes[size],
     className,

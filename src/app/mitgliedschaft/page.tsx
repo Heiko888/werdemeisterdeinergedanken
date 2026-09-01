@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { CheckoutButton } from "@/components/membership/CheckoutButton";
 import { ArrowRight, Check, Star } from "@/components/ui/Icon";
@@ -172,12 +173,14 @@ export default async function MitgliedschaftPage({
               <CheckoutButton size="lg" className="w-full sm:w-auto">
                 Mitglied werden
               </CheckoutButton>
-              <Link
+              <Button
                 href="/bewusstseinstest"
-                className="inline-flex min-h-[3.25rem] w-full items-center justify-center gap-2 rounded-full border border-cream/30 px-7 py-3 text-center text-base font-medium leading-tight text-cream transition-colors hover:border-cream/60 hover:bg-cream/5 sm:w-auto"
+                variant="secondary"
+                size="lg"
+                className="w-full sm:w-auto"
               >
                 Kostenlosen Bewusstseinstest machen
-              </Link>
+              </Button>
             </div>
             <p className="mt-4 text-sm text-cream/80">
               Ab {PRICE} {PRICE_PER} · oder {PLANS.jahr.price} {PLANS.jahr.per}{" "}
@@ -425,13 +428,10 @@ export default async function MitgliedschaftPage({
               Kein Druck, keine Deadlines. Du beginnst, wo du stehst, und gehst in
               deinem Tempo – begleitet, Schritt für Schritt.
             </p>
-            <Link
-              href="#faq"
-              className="mt-6 inline-flex items-center gap-2 rounded-full border border-cream/25 px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:border-cream/50"
-            >
+            <Button href="#faq" variant="secondary" size="md" className="mt-6">
               Häufige Fragen ansehen
               <ArrowRight />
-            </Link>
+            </Button>
             <p className="mt-5 text-sm text-cream/55">
               Noch unsicher? Starte kostenlos mit dem{" "}
               <Link href="/bewusstseinstest" className="text-gradient-leaf font-medium">

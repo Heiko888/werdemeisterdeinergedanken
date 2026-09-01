@@ -128,7 +128,7 @@ export function EbookForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Deine E-Mail-Adresse"
-          className="h-13 flex-1 rounded-full border border-ink/15 bg-paper/60 px-5 text-sm text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          className="h-13 flex-1 rounded-xl border border-ink/15 bg-paper/60 px-5 text-sm text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         />
         {/* Honeypot: für echte Nutzer unsichtbar, füllen nur Bots aus. */}
         <input
