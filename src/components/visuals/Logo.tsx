@@ -11,10 +11,10 @@ export function LogoMark({ className }: { className?: string }) {
       alt="Werde Meister deiner Gedanken – Logo"
       priority
       // Das Logo erscheint nur ~44 px breit (h-10). Ohne sizes erzeugt Next ein
-      // 1x/2x-Srcset aus der vollen Bildbreite (640 px, 78 KB) – mit sizes holt
-      // der Browser eine passend kleine Variante.
+      // 1x/2x-Srcset aus der vollen Bildbreite – mit sizes holt der Browser eine
+      // passend kleine Variante.
       sizes="44px"
-      className={cn("logo-gold h-10 w-auto", className)}
+      className={cn("h-10 w-auto", className)}
     />
   );
 }
