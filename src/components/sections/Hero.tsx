@@ -103,14 +103,16 @@ export function Hero() {
         <Reveal delay={200} className="relative hidden w-full self-end lg:block">
           <div className="relative mx-auto w-fit">
             {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
-                Schulter umhüllt und rundum diffus in den Navy-Grund ausläuft –
-                statt eines engen Rands, der an der Silhouette hart abriss. */}
+                Schulter umhüllt und diffus in den Navy-Grund ausläuft.
+                Wichtig: inset-0 (bleibt im Bild) + Blur – der Glow darf NICHT
+                über die Sektions-Oberkante hinausragen, sonst kappt das
+                overflow-hidden der Section ihn als harte Kante über dem Kopf. */}
             <div
               aria-hidden
-              className="pointer-events-none absolute -inset-x-[14%] -inset-y-[20%] -z-10 opacity-80 blur-[90px]"
+              className="pointer-events-none absolute inset-0 -z-10 opacity-85 blur-[80px]"
               style={{
                 background:
-                  "radial-gradient(44% 40% at 50% 30%, color-mix(in oklab, var(--color-gold-500) 34%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 17%, transparent) 38%, color-mix(in oklab, var(--color-gold-500) 6%, transparent) 64%, transparent 90%)",
+                  "radial-gradient(46% 42% at 50% 34%, color-mix(in oklab, var(--color-gold-500) 34%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 16%, transparent) 40%, color-mix(in oklab, var(--color-gold-500) 5%, transparent) 66%, transparent 92%)",
               }}
             />
             <Image
