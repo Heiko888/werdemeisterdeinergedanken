@@ -22,6 +22,19 @@ export function Hero() {
         }}
       />
 
+      {/* Warmes Oberlicht: füllt den Bereich direkt unter dem (weißen) Header
+          mit einem weichen, breiten Gold-Schein, damit dort oben kein dunkler
+          Leerraum entsteht. Läuft nach unten sanft auf transparent aus –
+          keine harte Kante. Hero-spezifisch (die geteilte HERO_GLOW bleibt). */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-1/2"
+        style={{
+          background:
+            "radial-gradient(80% 100% at 50% 0%, color-mix(in oklab, var(--color-gold-500) 13%, transparent), transparent 70%)",
+        }}
+      />
+
       {/* Weicher Übergang zur hellen Folge-Sektion: Navy-Grund und Porträt lösen
           sich zum unteren Rand hin in den Papierton auf, damit der Wechsel
           dunkel→hell nicht als harte Kante bricht. Die Ausblende sitzt bewusst
