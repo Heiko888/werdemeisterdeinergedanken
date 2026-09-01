@@ -41,7 +41,7 @@ function WeltPanel({
   variante: keyof typeof farbWelten;
 }) {
   const w = farbWelten[variante];
-  const emblem = variante === "tuerkis" ? "/logo-brain.png" : "/logo-brain-gold.png";
+  const emblem = variante === "tuerkis" ? "/logo-brain-tuerkis.png" : "/logo-brain-gold.png";
   return (
     <div
       className="flex flex-col overflow-hidden rounded-2xl border border-ink/10 shadow-card"

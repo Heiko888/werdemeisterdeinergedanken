@@ -14,8 +14,9 @@ Marken-Material gibt – damit der Überblick nicht verloren geht.
      Gold-Akzente. Standard (Datei **ohne** Suffix).
    - **Hell · Creme** – Grund `#f6f4ee`, Gold-Gehirn, Datei-Suffix `-hell`.
    - **Türkis · Teal** – Navy-Grund mit Teal-Schimmer, Türkis-Gehirn
-     (`logo-brain.png`) + Grün→Teal-Akzente. Datei-Suffix `-tuerkis`. **Neu** –
-     in allen Generatoren angelegt (siehe unten), Dateien entstehen beim Rendern.
+     (`logo-brain-tuerkis.png`, Seitenansicht grün→teal→blau) + Grün→Teal-Akzente.
+     Datei-Suffix `-tuerkis`. **Neu** – in allen Generatoren angelegt (siehe
+     unten), Dateien entstehen beim Rendern.
 2. **Komplettes Farbsystem** – alle Marken-Farben mit Hex-Wert, Token-Name und
    Rolle (Quelle: `src/app/globals.css`).
 3. **Sämtliche Logos** – jedes Logo auf Creme **und** auf Dunkel nebeneinander.

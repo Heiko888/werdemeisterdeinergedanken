@@ -18,7 +18,7 @@ const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 // Zwei Emblem-Farbwelten: Gold (Standard „dunkel") und Türkis (Variante).
 const brainGoldUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
-const brainTealUrl = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
+const brainTealUrl = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook-mockup.webp")).toString("base64")}`;
 
 // Zitat-/Fakten-Texte kommen aus der gemeinsamen Quelle (auch von den Overlays

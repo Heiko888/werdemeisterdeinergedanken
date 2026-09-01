@@ -166,7 +166,12 @@ export const logos: LogoDatei[] = [
   {
     src: "/logo-brain-gold.png",
     datei: "logo-brain-gold.png",
-    verwendung: "Gold-Emblem – für Marketing-Grafiken (brand-assets.mjs)",
+    verwendung: "Gold-Emblem – Marketing-Grafiken (dunkel/hell)",
+  },
+  {
+    src: "/logo-brain-tuerkis.png",
+    datei: "logo-brain-tuerkis.png",
+    verwendung: "Türkis-Emblem (Seitenansicht) – für die Türkis-Variante",
   },
   {
     src: "/logo-full.png",
@@ -225,5 +230,5 @@ export const bestandKennzahlen = {
   neutraleVorlagen: 18,
   /** Bild-Dateien insgesamt unter docs/marketing/. */
   dateienGesamt: 756,
-  logoVarianten: 6,
+  logoVarianten: 7,
 };

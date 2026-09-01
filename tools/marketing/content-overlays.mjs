@@ -23,7 +23,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
-const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain.png")).href;
+const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/content-overlays");
 
 // Drei Farbwelten. Türkis erhält das Suffix -tuerkis (wie -hell).
