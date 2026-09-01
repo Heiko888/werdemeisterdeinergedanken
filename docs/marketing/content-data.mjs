@@ -24,6 +24,18 @@ export const QUOTES = [
   { key: "12", t: `Wovon du überzeugt bist, formt mit, wie es dir <em>geht</em>.` },
   { key: "13", t: `Der erste Schritt ist nicht Kontrolle. Es ist <em>Bemerken</em>.` },
   { key: "14", t: `Zwischen „so bin ich eben“ und „so wähle ich“ liegt deine ganze <em>Freiheit</em>.` },
+  { key: "15", t: `Dein Atem ist die Fernbedienung für dein <em>Nervensystem</em>.` },
+  { key: "16", t: `Acht Wochen Übung – und dein Gehirn ist messbar ein <em>anderes</em>.` },
+  { key: "17", t: `Deine Erwartung schreibt an deiner Wirklichkeit <em>mit</em>.` },
+  { key: "18", t: `Wie etwas genannt wird, entscheidet, wie du es <em>fühlst</em>.` },
+  { key: "19", t: `Dein Feed ist nicht die Welt. Nur ein <em>Ausschnitt</em>.` },
+  { key: "20", t: `Oft gehört ist nicht wahr. Nur <em>vertraut</em>.` },
+  { key: "21", t: `Man verkauft dir den Mangel, den du vorher gar nicht <em>hattest</em>.` },
+  { key: "22", t: `Laut ist nicht Mehrheit. Und Mehrheit ist nicht <em>Wahrheit</em>.` },
+  { key: "23", t: `Ein Titel ist kein Argument. Prüf die <em>Sache</em>.` },
+  { key: "24", t: `Manipulation braucht keine Lüge – nur die richtige <em>Auswahl</em>.` },
+  { key: "25", t: `Angst macht dich lenkbar. Ruhe macht dich <em>frei</em>.` },
+  { key: "26", t: `Ein Bild ist kein Beweis. Frag, was außerhalb des <em>Rands</em> liegt.` },
 ];
 
 // Studien-Fakten (belegt; Umstrittenes wird in der Quellenzeile gekennzeichnet)
