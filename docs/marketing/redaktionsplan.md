@@ -113,45 +113,282 @@ frei, da kein Kanal-Plan hierfür einen Slot vorsieht.
 
 ---
 
-## Wochen 2–7 (Kurzform je Stufe)
+## Wochen 2–7 (vollständig durchgeplant)
 
-Gleiche Tagesstruktur wie Woche 1 (Mo Reel · Di LI-Text + IG-Carousel · Mi FB-Blog + LI-Carousel + YT-Video/Short · Do IG-Story-Übung · Fr Pitch + Zitate). Nur die Bausteine wechseln. Reel jeweils aus Serie *stufen* (`docs/skripte/reels/stufen.md`), Carousel je Stufe aus `docs/carousels/stufen-ueberblick.mjs`, Lektion `/mitglieder/stufe/N`.
+Gleiche Grund-Dramaturgie wie Woche 1 (Aufmerksamkeit → Aha → Anwenden →
+Angebot), gleiche Frequenz **fokussiert** (IG 4 · FB 3 · LI 3 · YT 1 Video + 1
+Short = **12 Postings/Woche**). Nur die inhaltlichen Bausteine wechseln je
+Stufe. Reel jeweils aus Serie *stufen* (`src/lib/reels.ts`, Skript
+`docs/skripte/reels/stufen.md`), Stufen-Carousel aus
+`docs/carousels/stufen-ueberblick.mjs`, Lektion `/mitglieder/stufe/N` + PDF
+`content/pdf/stufe-N-lektion.pdf` (+ `-uebungen.pdf`). Quelle je Zeile: die
+vier Kanal-Teilpläne unter `docs/marketing/redaktionsplan/woche-N/{instagram,
+facebook,linkedin,youtube}.md`.
+
+> **Wichtige Korrektur (Woche 7):** Mehrere Kanal-Planer haben unabhängig
+> voneinander vermerkt, dass die im Backlog für Stufe 7 genannte Praxis
+> `box-breathing` in `src/lib/practices.ts` tatsächlich `relatedStage: 6`
+> trägt (identisch mit `herz-kohaerenz` aus Woche 6), **nicht** `relatedStage:
+> 7`. Die tatsächlich zu Stufe 7 passende Praxis ist **`taegliche-rueckkehr`**
+> (`src/lib/practices.ts`, Zeile 341–363, `relatedStage: 7`, Zitat
+> „Meisterschaft ist kein Zustand, den man erreicht – sondern eine tägliche
+> Rückkehr in die eigene Mitte"), die inhaltlich auch enger zum Deep-Dive
+> `integration-und-weitergabe` passt. **In diesem Master-Plan und im
+> Kalender wird für Woche 7 durchgängig `taegliche-rueckkehr` statt
+> `box-breathing` verwendet.**
+
+---
 
 ### Woche 2 · Stufe 2 · Erwachen — „Wer hört zu, wenn du denkst?"
-- 🎬 **Reel-Hook:** „Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu?"
-- 🖼️ **Carousel:** „Du bist nicht deine Gedanken" · 📝 **Blog:** `du-bist-nicht-deine-gedanken`
-- 📚 **Deep-Dive:** `reiz-reaktions-luecke` · 🧘 **Praxis (Story):** `atembeobachtung`
-- ▶️ **Video:** „Erwachen: Der Moment, in dem du dich beim Denken erwischst." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/2`
+
+**Kernbotschaft:** Wer seine Gedanken bemerken kann, ist offensichtlich mehr
+als diese Gedanken – der innere Beobachter ist der erste Schritt aus der
+Verschmelzung mit dem eigenen Denken.
+
+**Verfügbares Material:**
+- 🎬 Reel „Erwachen" (Varianten A/B) → `src/lib/reels.ts` (Serie „stufen"), Skript `docs/skripte/reels/stufen.md`, Abschnitt „02 · Erwachen"
+- 🖼️ Carousel-Slide „02 · Erwachen – Du bist nicht deine Gedanken" → `docs/carousels/stufen-ueberblick.mjs`; für LinkedIn zusätzlich Carousel „Wer denkt hier eigentlich?" (`wer-denkt-hier`) → `docs/carousels/marketing-serien.mjs`
+- 📝 Blog „Du bist nicht deine Gedanken" → `/blog/du-bist-nicht-deine-gedanken` (`src/lib/blog.ts`)
+- 📚 Deep-Dive „Die Reiz-Reaktions-Lücke" → `/mitglieder/wissen/reiz-reaktions-luecke` (`relatedStage: 2`)
+- 📘 Lektion „Stufe 2 · Erwachen" → `/mitglieder/stufe/2` + PDF `content/pdf/stufe-2-lektion.pdf` (+ `-uebungen.pdf`, `vertiefung-reiz-reaktions-luecke.pdf`)
+- 🧘 Praxis „Atembeobachtung" → `src/lib/practices.ts` (`atembeobachtung`, `relatedStage: 2`)
+- 💬 Zitat-Karten (Creme `-hell.png`) → `WMDG-Zitat-03-hell.png` (Sonntags-Pitch) · `WMDG-Zitat-02-hell.png` (FB-Community-Post)
+- 🎯 Funnel: E-Book → `/#ebook` · Stufe 2 → `/mitglieder/stufe/2`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu?" (Erwachen, Variante B) | `src/lib/reels.ts` (Serie „stufen") · `docs/skripte/reels/stufen.md`, „02 · Erwachen — Variante B" | „Folge für die nächste Stufe" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Variante A: „Ich saß im Stau und hab mich zum ersten Mal beim Denken erwischt." Das Bemerken kann selbst kein Gedanke sein. | `src/lib/reels.ts`, Variante A · `docs/skripte/reels/stufen.md` | „Mehr zu Stufe 2 in der Lektion" → `/mitglieder/stufe/2` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Der Kollege sagt einen Satz – und bevor du nachgedacht hast, bist du schon in der Verteidigung." Der innere Beobachter im Meeting. | Blog `/blog/du-bist-nicht-deine-gedanken` (`src/lib/blog.ts`, Zeile 213–264) | Kommentar-Frage: „In welcher Besprechung merkst du am ehesten, wie schnell du reagierst?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Die meisten halten Gedanken für die Wahrheit – dabei gibt es eine Instanz, die sie nur bemerkt. | Blog `/blog/du-bist-nicht-deine-gedanken` | „Ganzen Artikel lesen" → `/blog/du-bist-nicht-deine-gedanken` |
+| **Mi** | 08:15 | LinkedIn | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – Remedy-Slide „Zwischen Reiz und Reaktion liegt ein Raum", zugespitzt auf Verhandlungen/Entscheidungen im Job. | Carousel `wer-denkt-hier` in `docs/carousels/marketing-serien.mjs`, Zeilen 91–114 | „Speichern für die nächste Verhandlung unter Druck." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Erwachen: Du bist nicht deine Gedanken – der Moment, der alles ändert." | Carousel-Slide „02 · Erwachen" (`docs/carousels/stufen-ueberblick.mjs`) + Blog + Deep-Dive `reiz-reaktions-luecke` | „Link in Bio · Speichern" |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Wer hört eigentlich zu, wenn du denkst? (Stufe 2: Erwachen)." | Blog `du-bist-nicht-deine-gedanken` + Deep-Dive `reiz-reaktions-luecke` + Lektion `/mitglieder/stufe/2` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Die wichtigste Führungskompetenz ist kein neues Framework – sie dauert fünf Minuten: den eigenen Atem beobachten." | Praxis `atembeobachtung` · Deep-Dive `reiz-reaktions-luecke` · Lektion `/mitglieder/stufe/2` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Wenn du deine Gedanken hören kannst — wer hört dann zu?" (identisch zum IG/FB-Reel, Variante B) | Reel-Serie „stufen", Variante B · `docs/skripte/reels/stufen.md`, Zeile 108–125 | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | Zitatkarte „Raum zwischen Reiz und Reaktion" + Community-Frage: „In welcher Situation ist deine Reiz-Reaktions-Lücke am kleinsten?" | Zitat `WMDG-Zitat-02-hell.png` · Deep-Dive `reiz-reaktions-luecke` | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Kannst du 60 Sekunden lang nur deinem Atem zuhören?" + Mini-Übung „Atembeobachtung". | Praxis `atembeobachtung` → `/mitglieder/praxis/atembeobachtung` | „Probier die Mini-Version + antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Du bist nicht deine Gedanken. Du bist der, der sie bemerkt." | Zitat `WMDG-Zitat-03-hell.png` · Lektion `/mitglieder/stufe/2` | „E-Book laden (/#ebook) → Stufe 2 in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 (Mo Reel, Mi Carousel, Fr Story, So Zitat+Pitch) · FB 3 (Mo Reel-Crosspost, Mi Beitrag, Fr Zitat+Community) · LI 3 (Di Beitrag, Mi Carousel, Do Pitch) · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** Mo Reichweite (IG+FB), Di LinkedIn solo (Berufsbezug), Mi gebündelter Aha-Tag (FB 08:00 → LI 08:15 → IG 12:30 → YT 17:00, zeitlich gestaffelt), Do Anwenden (LI-Pitch + YT-Short), Fr Wochenausklang (FB-Zitat + IG-Story), So ruhiger Abschluss mit Funnel. Sa frei.
+
+---
 
 ### Woche 3 · Stufe 3 · Selbstbeobachtung — „Nicht in jeden Gedanken springen"
-- 🎬 **Reel-Hook:** „Ich bin früher in jeden einzelnen Gedanken reingesprungen."
-- 🖼️ **Carousel:** „Setz dich ans Ufer" · 📝 **Blog:** `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt`
-- 📚 **Deep-Dive:** `kognitive-verzerrungen` · 🧘 **Praxis (Story):** `innerer-beobachter`
-- ▶️ **Video:** „Selbstbeobachtung: Gedanken sehen, ohne mitzuspringen." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/3`
+
+**Kernbotschaft:** Nicht jeder Gedanke verdient eine Reaktion. Kognitive
+Verzerrungen (Verankerung, Verfügbarkeitsheuristik, Bestätigungsfehler)
+zeigen, wie systematisch unser Denken die Wirklichkeit verzerrt – wer sie
+kennt, kann Abstand gewinnen, statt in jeden Gedanken „reinzuspringen".
+
+**Verfügbares Material:**
+- 🎬 Reel „Selbstbeobachtung" (Variante A) → `src/lib/reels.ts`, Skript `docs/skripte/reels/stufen.md`, Abschnitt „03 · Selbstbeobachtung"
+- 🖼️ Carousel-Slide „03 · Selbstbeobachtung – Setz dich ans Ufer" → `docs/carousels/stufen-ueberblick.mjs`; LinkedIn zusätzlich „Studien-Fakten" (`studien-fakten`, Fakt „04") → `docs/carousels/marketing-serien.mjs`
+- 📝 Blog „Denkfehler: Wie dein Kopf die Wirklichkeit verzerrt" → `/blog/denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` (`src/lib/blog.ts`, Zeile 1143)
+- 📚 Deep-Dive „Kognitive Verzerrungen" → `/mitglieder/wissen/kognitive-verzerrungen` (`relatedStage: 3`, `src/lib/deep-dives.ts`, Zeile 162)
+- 📘 Lektion „Stufe 3" → `/mitglieder/stufe/3` + PDF `content/pdf/stufe-3-lektion.pdf` (+ `-uebungen.pdf`, `vertiefung-kognitive-verzerrungen.pdf`)
+- 🧘 Praxis „Der innere Beobachter" → `src/lib/practices.ts` (`innerer-beobachter`, `relatedStage: 3`, Zeile 87)
+- 💬 Studien-Kacheln (Creme) → `docs/marketing/zitate/studien-4x5/WMDG-Studienfakt-04-hell.png` (Sonntag) · `docs/marketing/zitate/studien-1x1/WMDG-Studienfakt-02-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Stufe 3 → `/mitglieder/stufe/3`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Ich bin früher in jeden einzelnen Gedanken reingesprungen." (Variante A) | `src/lib/reels.ts` · `docs/skripte/reels/stufen.md`, „03 · Selbstbeobachtung — Variante A" | „Folge für die nächste Stufe" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Gleiche Variante A: Gedanken sind wie ein Fluss – der innere Beobachter bleibt am Ufer sitzen und lässt alles vorbeiziehen. | s. IG-Reel (Mo) | „Mehr zu Stufe 3 in der Lektion" → `/mitglieder/stufe/3` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Die erste Zahl in einer Verhandlung entscheidet mehr, als den meisten lieb ist." Verankerung, Verfügbarkeitsheuristik, Bestätigungsfehler im Job. | Blog `/blog/denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` (Zeile 1143–1197) | Kommentar-Frage: „Welchen Denkfehler hast du bei dir selbst erwischt?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Unser Denken ist eher ein Erzähler mit festen Vorlieben als ein neutraler Beobachter der Wirklichkeit. | Blog `/blog/denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` | „Ganzen Artikel lesen" |
+| **Mi** | 08:15 | LinkedIn | 🖼️ Carousel | Document-Post „Studien-Fakten" – Fakt-Slide „Dein Kopf verzerrt – systematisch" (Tversky & Kahneman 1974), zugespitzt auf Strategie-/Entscheidungsrunden. | Carousel `studien-fakten` in `docs/carousels/marketing-serien.mjs`, Zeilen 117–145 | „Speichern für die nächste Kennzahl ohne Kontext." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Selbstbeobachtung – Setz dich ans Ufer: 3 Denkfehler, die dich reinziehen." | Carousel-Slide „03 · Selbstbeobachtung" + Blog + Deep-Dive `kognitive-verzerrungen` | „Link in Bio · Speichern, falls dich das gerade ertappt." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Warum dein Kopf Gedanken für Fakten hält (Stufe 3: Selbstbeobachtung)." | Blog + Deep-Dive `kognitive-verzerrungen` + Lektion `/mitglieder/stufe/3` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Du musst deinen inneren Kritiker nicht zum Schweigen bringen – du musst nur lernen, ihm nicht mehr automatisch zu glauben." | Praxis `innerer-beobachter` · Deep-Dive `kognitive-verzerrungen` · Lektion `/mitglieder/stufe/3` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Nicht in jeden Gedanken springen" (identisch zum IG/FB-Reel, Variante A) | Reel-Serie „stufen", Variante A · `docs/skripte/reels/stufen.md`, Zeile 149–164 | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | Studien-Karte „Denkfehler sind vorhersehbar" (Tversky & Kahneman, 1974, „Science") + Community-Frage: „Welcher Denkfehler ist dein persönlicher Klassiker?" | Studien-Karte `WMDG-Studienfakt-02-hell.png` · Deep-Dive `kognitive-verzerrungen` | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Springst du noch in jeden Gedanken – oder schaust du inzwischen manchmal nur zu?" + Mini-Übung „Der innere Beobachter". | Praxis `innerer-beobachter` → `/mitglieder/praxis/innerer-beobachter` | „Probier die 10-Minuten-Übung + antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Der erste Schritt ist nicht Kontrolle. Es ist Bemerken." | Studien-Kachel `WMDG-Studienfakt-04-hell.png` · Lektion `/mitglieder/stufe/3` | „E-Book laden (/#ebook) → Stufe 3 in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zu Woche 2 (Mo Reichweite, Di LinkedIn solo, Mi gebündelter Aha-Tag, Do Anwenden, Fr/So Wochenausklang). Statt einer Alltags-Zitatkachel wird am Sonntag bewusst eine Studienfakt-Kachel gezeigt, weil sie 1:1 zum Wochenblog (Tversky & Kahneman) passt.
+
+---
 
 ### Woche 4 · Stufe 4 · Emotionale Reifung — „Fühlen, ohne überflutet zu werden"
-- 🎬 **Reel-Hook:** „Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert."
-- 🖼️ **Carousel:** „Fühlen, was ist" · 📝 **Blog:** `gefuehle-benennen-beruhigt-das-gehirn`
-- 📚 **Deep-Dive:** `emotionsregulation` · 🧘 **Praxis (Story):** `verlaengertes-ausatmen`
-- ▶️ **Video:** „Emotionale Reifung: Fühlen, ohne überflutet zu werden." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/4`
+
+**Kernbotschaft:** Ein Gefühl zu benennen dämpft nachweislich die Amygdala
+(Lieberman, UCLA 2007) – Gefühle sind Wellen mit Anfang und Ende, die man
+aushalten statt wegdrücken oder von ihnen überflutet werden muss.
+
+**Verfügbares Material:**
+- 🎬 Reel „Emotionale Reifung" (Varianten A/B) → `src/lib/reels.ts`, Skript `docs/skripte/reels/stufen.md`, Abschnitt „04 · Emotionale Reifung"
+- 🖼️ Carousel-Slide „04 · Emotionale Reifung – Fühlen, was ist" → `docs/carousels/stufen-ueberblick.mjs`; LinkedIn zusätzlich „Studien-Fakten" (Fakt „02" + 47-%-Stat) → `docs/carousels/marketing-serien.mjs`
+- 📝 Blog „Warum ein Gefühl zu benennen dein Gehirn beruhigt" → `/blog/gefuehle-benennen-beruhigt-das-gehirn` (`src/lib/blog.ts`, Zeile 1091)
+- 📚 Deep-Dive „Emotionsregulation" → `/mitglieder/wissen/emotionsregulation` (`relatedStage: 4`, `src/lib/deep-dives.ts`, Zeile 533)
+- 📘 Lektion „Stufe 4" → `/mitglieder/stufe/4` + PDF `content/pdf/stufe-4-lektion.pdf` (+ `-uebungen.pdf`, `vertiefung-emotionsregulation.pdf`)
+- 🧘 Praxis „Verlängertes Ausatmen" → `src/lib/practices.ts` (`verlaengertes-ausatmen`, `relatedStage: 4`, Zeile 161)
+- 💬 Studien-Kacheln (Creme) → `docs/marketing/zitate/studien-4x5/WMDG-Studienfakt-02-hell.png` (Sonntag) · `docs/marketing/zitate/studien-1x1/WMDG-Studienfakt-03-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Stufe 4 → `/mitglieder/stufe/4`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert." (Variante B) | `src/lib/reels.ts` · „04 · Emotionale Reifung — Variante B" | „Folge für die nächste Stufe" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Variante A: „Ich hab jahrelang geglaubt, verstehen reicht." Gefühle, die man nicht fühlt, verschwinden nicht – sie warten. | `src/lib/reels.ts`, Variante A | „Mehr zu Stufe 4 in der Lektion" → `/mitglieder/stufe/4` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Ein einziges Wort kann verhindern, dass eine schwierige Rückmeldung zur Eskalation wird." Affect Labeling (Lieberman, UCLA 2007) vor Feedback-Gesprächen. | Blog `/blog/gefuehle-benennen-beruhigt-das-gehirn` (Zeile 1091–1141) | Kommentar-Frage: „Vor welcher Art Gespräch hilft dir das Benennen am meisten?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Innerlich „Das ist Angst" benennen – und ruhiger werden. UCLA-Studie zur Amygdala. | Blog `/blog/gefuehle-benennen-beruhigt-das-gehirn` | „Ganzen Artikel lesen" |
+| **Mi** | 08:15 | LinkedIn | 🖼️ Carousel | Document-Post „Studien-Fakten" – Fakt „Ein Gefühl zu benennen beruhigt" (Lieberman 2007) + Eröffnung „47 % abschweifender Geist" (Killingsworth & Gilbert 2010), zugespitzt auf Meeting-Präsenz. | Carousel `studien-fakten`, Zeilen 117–145 | „Speichern für das nächste Gespräch mit hochkommendem Gefühl." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Emotionale Reifung – Fühlen, was ist: Wie lang dauert ein Gefühl wirklich?" | Carousel-Slide „04" + Blog + Deep-Dive `emotionsregulation` | „Link in Bio · Speichern für den nächsten schweren Moment." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Wie lang dauert ein Gefühl wirklich? (Stufe 4: Emotionale Reifung)." | Blog + Deep-Dive `emotionsregulation` + Lektion `/mitglieder/stufe/4` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Bevor du die scharfe Antwort abschickst: ein Atemzug, der länger aus- als einatmet, reicht oft schon." | Praxis `verlaengertes-ausatmen` · Deep-Dive `emotionsregulation` · Lektion `/mitglieder/stufe/4` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Ich hab auf die Uhr geschaut, wie lang ein schweres Gefühl dauert" (identisch zu IG/FB, Variante B) | Reel-Serie „stufen", Variante B · `docs/skripte/reels/stufen.md`, Zeile 225–242 | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | Studien-Karte „Benennen beruhigt das Gehirn" (Lieberman 2007) + Community-Frage: „Welches Gefühl fällt dir am schwersten auszuhalten?" | Studien-Karte `WMDG-Studienfakt-03-hell.png` · Deep-Dive `emotionsregulation` | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Drückst du Gefühle eher weg – oder lässt du dich von ihnen überfluten?" + Mini-Übung „Verlängertes Ausatmen". | Praxis `verlaengertes-ausatmen` → `/mitglieder/praxis/verlaengertes-ausatmen` | „Probier die 3-Minuten-Übung + antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Ein Gefühl zu benennen dämpft die Amygdala – die Alarmzentrale des Gehirns." | Studien-Kachel `WMDG-Studienfakt-02-hell.png` (Lieberman/UCLA 2007) · Lektion `/mitglieder/stufe/4` | „E-Book laden (/#ebook) → Stufe 4 in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster aus Woche 2/3. Reel-Variante zwischen IG (B) und FB-Crosspost (A) bewusst unterschiedlich, um beide Perspektiven der Woche zu zeigen.
+
+---
 
 ### Woche 5 · Stufe 5 · Schöpferkraft — „Du schreibst den Code neu"
-- 🎬 **Reel-Hook:** „Was du oft denkst, wird zur Straße in deinem Kopf. Und das ist wörtlich gemeint."
-- 🖼️ **Carousel:** „Du schreibst den Code neu" · 📝 **Blog:** `neuroplastizitaet-warum-dein-gehirn-formbar-ist`
-- 📚 **Deep-Dive:** `neuroplastizitaet` · 🧘 **Praxis (Story):** `morgen-ausrichtung`
-- ▶️ **Video:** „Schöpferkraft: Wie du neue Bahnen im Kopf anlegst." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/5`
+
+**Kernbotschaft:** Neuroplastizität heißt: Ein oft gedachter Gedanke wird zur
+„Straße" im Kopf – wörtlich gemeint (Maguire 2000, Draganski 2004). Das
+Gehirn bleibt formbar, ein Leben lang; ab jetzt entscheidest du bewusst,
+welche Bahnen du anlegst.
+
+**Verfügbares Material:**
+- 🎬 Reel „Schöpferkraft" (Variante A) → `src/lib/reels.ts`, Skript `docs/skripte/reels/stufen.md`, Abschnitt „05 · Schöpferkraft"
+- 🖼️ Carousel-Slide „05 · Schöpferkraft – Du schreibst den Code neu" → `docs/carousels/stufen-ueberblick.mjs`; LinkedIn zusätzlich „Studien-Fakten" (Fakt „01") → `docs/carousels/marketing-serien.mjs`
+- 📝 Blog „Neuroplastizität: Warum sich dein Gehirn ein Leben lang verändert" → `/blog/neuroplastizitaet-warum-dein-gehirn-formbar-ist` (`src/lib/blog.ts`, Zeile 1031)
+- 📚 Deep-Dive „Neuroplastizität" → `/mitglieder/wissen/neuroplastizitaet` (`relatedStage: 5`, `src/lib/deep-dives.ts`, Zeile 343)
+- 📘 Lektion „Stufe 5" → `/mitglieder/stufe/5` + PDF `content/pdf/stufe-5-lektion.pdf` (+ `-uebungen.pdf`, `vertiefung-neuroplastizitaet.pdf`)
+- 🧘 Praxis „Morgen-Ausrichtung" → `src/lib/practices.ts` (`morgen-ausrichtung`, `relatedStage: 5`, Zeile 254)
+- 💬 Studien-Kacheln (Creme) → `docs/marketing/zitate/studien-4x5/WMDG-Studienfakt-06-hell.png` (Sonntag) · `docs/marketing/zitate/studien-1x1/WMDG-Studienfakt-04-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Stufe 5 → `/mitglieder/stufe/5`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Was du oft denkst, wird zur Straße in deinem Kopf. Und das ist wörtlich gemeint." (Variante A) | `src/lib/reels.ts` · „05 · Schöpferkraft — Variante A" | „Folge für die nächste Stufe" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Gleiche Variante A: Gedanken hinterlassen reale Spuren im Gehirn – Trampelpfad wird Straße wird Autobahn. | s. IG-Reel (Mo) | „Mehr zu Stufe 5 in der Lektion" → `/mitglieder/stufe/5` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Dein Kommunikationsstil unter Druck ist kein Charakterzug – es ist eine ausgebaute Straße im Kopf, die du selbst gebaut hast." Maguire/Draganski im Führungskontext. | Blog `/blog/neuroplastizitaet-warum-dein-gehirn-formbar-ist` (Zeile 1031–1089) | Kommentar-Frage: „Welche berufliche Reaktions-Gewohnheit würdest du gern umbauen?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Londoner Taxifahrer mit vergrößertem Hippocampus, Jongleure mit mehr grauer Substanz nach drei Monaten Übung. | Blog `/blog/neuroplastizitaet-warum-dein-gehirn-formbar-ist` | „Ganzen Artikel lesen" |
+| **Mi** | 08:15 | LinkedIn | 🖼️ Carousel | Document-Post „Studien-Fakten" – Fakt „01" (Neuroplastizität), zugespitzt auf gezieltes Kompetenztraining im Job. | Carousel `studien-fakten`, Zeilen 117–145, Fakt-Slide „01" | „Speichern als Erinnerung für die nächste neue Gewohnheit." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Schöpferkraft – Du schreibst den Code neu: dein Gehirn ist formbar." | Carousel-Slide „05" + Blog + Deep-Dive `neuroplastizitaet` | „Link in Bio · Speichern, falls du eine neue Bahn bauen willst." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Was du oft denkst, wird zur Straße im Kopf (Stufe 5: Schöpferkraft)." | Blog + Deep-Dive `neuroplastizitaet` + Lektion `/mitglieder/stufe/5` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Die ersten fünf Minuten deines Arbeitstages entscheiden mehr über deinen Fokus als die nächsten fünf Stunden." | Praxis `morgen-ausrichtung` · Deep-Dive `neuroplastizitaet` · Lektion `/mitglieder/stufe/5` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Was du oft denkst, wird zur Straße im Kopf" / „Vom Beobachter zum Gestalter" (identisch zu IG/FB, Variante A) | Reel-Serie „stufen", Variante A · `docs/skripte/reels/stufen.md`, Zeile 267–283 | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | Studien-Karte „Dein Gehirn baut sich ständig um" (Draganski 2004, „Nature") + Community-Frage: „Welche ‚Bahn' in dir ist besonders breit geworden?" | Studien-Karte `WMDG-Studienfakt-04-hell.png` · Deep-Dive `neuroplastizitaet` | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Handy zuerst oder Ausrichtung zuerst – was machst du morgens als Erstes?" + Mini-Übung „Morgen-Ausrichtung". | Praxis `morgen-ausrichtung` → `/mitglieder/praxis/morgen-ausrichtung` | „Probier die 5-Minuten-Übung morgen früh + antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Dein Gehirn bleibt formbar – ein Leben lang." | Studien-Kachel `WMDG-Studienfakt-06-hell.png` (Maguire 2000 · Draganski 2004) · Lektion `/mitglieder/stufe/5` | „E-Book laden (/#ebook) → Stufe 5 in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster aus Woche 2–4. Diese Woche verwenden IG-Reel und FB-Crosspost erstmals dieselbe Variante (A) – bewusst konsistent, weil der Hook wortgleich zum Backlog ist.
+
+---
 
 ### Woche 6 · Stufe 6 · Innere Ausrichtung — „Kopf, Herz und Handeln"
-- 🎬 **Reel-Hook:** „Dein Kopf ist ein brillanter Diener. Aber ein ziemlich schlechter Chef."
-- 🖼️ **Carousel:** „Kopf, Herz und Handeln" · 📝 **Blog:** `warum-willenskraft-ueberschaetzt-wird`
-- 📚 **Deep-Dive:** `werte-und-ziele` · 🧘 **Praxis (Story):** `herz-kohaerenz`
-- ▶️ **Video:** „Innere Ausrichtung: Wenn Kopf, Herz und Handeln zusammenfinden." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/6`
+
+**Kernbotschaft:** Willenskraft ist eine begrenzte Ressource, die gegen tief
+verankerte Muster fast immer verliert (Baumeister 1998 – Replikation Hagger
+2016 fand den „Ego-Depletion"-Effekt nicht bestätigt). Tragfähiger ist
+Klarheit über die eigenen Werte, damit Kopf, Herz und Handeln in dieselbe
+Richtung zeigen.
+
+**Verfügbares Material:**
+- 🎬 Reel „Innere Ausrichtung" (Variante B) → `src/lib/reels.ts`, Skript `docs/skripte/reels/stufen.md`, Abschnitt „06 · Innere Ausrichtung"
+- 🖼️ Carousel-Slide „06 · Innere Ausrichtung – Kopf, Herz und Handeln" → `docs/carousels/stufen-ueberblick.mjs`; LinkedIn zusätzlich „Studien-Fakten" (Fakt „05") → `docs/carousels/marketing-serien.mjs`
+- 📝 Blog „Warum Willenskraft überschätzt wird" → `/blog/warum-willenskraft-ueberschaetzt-wird` (`src/lib/blog.ts`, Zeile 266, Kategorie „Muster lösen")
+- 📚 Deep-Dive „Werte & Ziele" → `/mitglieder/wissen/werte-und-ziele` (`relatedStage: 6`, `src/lib/deep-dives.ts`, Zeile 659)
+- 📘 Lektion „Stufe 6" → `/mitglieder/stufe/6` + PDF `content/pdf/stufe-6-lektion.pdf` (+ `-uebungen.pdf`, `vertiefung-werte-und-ziele.pdf`)
+- 🧘 Praxis „Herz-Kohärenz" → `src/lib/practices.ts` (`herz-kohaerenz`, `relatedStage: 6`, Zeile 135)
+- 💬 Zitat-/Studien-Karten (Creme) → `docs/marketing/zitate/studien-4x5/WMDG-Studienfakt-05-hell.png` (Sonntag) · `docs/marketing/zitate/1x1/WMDG-Zitat-03-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Stufe 6 → `/mitglieder/stufe/6`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Dein Kopf ist ein brillanter Diener. Aber ein ziemlich schlechter Chef." (Variante B) | `src/lib/reels.ts` · „06 · Innere Ausrichtung — Variante B" | „Folge für die nächste Stufe" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Variante A: „Ich war ständig müde, und keiner konnte mir sagen, warum." Der stille Widerspruch zwischen Kopf, Bauch und Handeln. | `src/lib/reels.ts`, Variante A | „Mehr zu Stufe 6 in der Lektion" → `/mitglieder/stufe/6` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „„Ich müsste mich nur mehr zusammenreißen" ist selten eine Diagnose – meistens ist es ein Symptom." Ego-Depletion-Studie (Baumeister/Hagger) im Führungskontext. | Blog `/blog/warum-willenskraft-ueberschaetzt-wird` (Zeile 266–308) | Kommentar-Frage: „Wo verlässt du dich im Job eher auf Willenskraft als auf Klarheit über das Ziel?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: „Ich müsste nur diszipliniert genug sein" – Willenskraft ist begrenzt und verliert gegen alte Muster. | Blog `/blog/warum-willenskraft-ueberschaetzt-wird` | „Ganzen Artikel lesen" |
+| **Mi** | 08:15 | LinkedIn | 🖼️ Carousel | Document-Post „Studien-Fakten" – Fakt „Willenskraft ist überschätzt" (Baumeister 1998, Replikation Hagger 2016), zugespitzt auf Teamkultur. | Carousel `studien-fakten`, Zeilen 117–145, Fakt-Slide „05" | „Speichern für das nächste Team-Gespräch über Motivation." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Innere Ausrichtung – Kopf, Herz und Handeln: warum Willenskraft allein nicht reicht." | Carousel-Slide „06" + Blog + Deep-Dive `werte-und-ziele` | „Link in Bio · Speichern, falls du dich gerade zusammenreißen musst." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Der Kopf ist ein guter Diener, aber ein schlechter Chef (Stufe 6: Innere Ausrichtung)." | Blog + Deep-Dive `werte-und-ziele` + Lektion `/mitglieder/stufe/6` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Vor der nächsten großen Entscheidung: eine Hand aufs Herz, fünf Sekunden ein-, fünf Sekunden ausatmen." | Praxis `herz-kohaerenz` · Deep-Dive `werte-und-ziele` · Lektion `/mitglieder/stufe/6` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Dein Kopf ist ein brillanter Diener, aber ein schlechter Chef" (identisch zu IG/FB, Variante B) | Reel-Serie „stufen", Variante B · `docs/skripte/reels/stufen.md`, Zeile 342–358 | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | Zitat-Karte „Werte als Kompass" + Community-Frage: „Welche 3 Werte würden die Menschen nennen, die dich am besten kennen?" | Zitat `WMDG-Zitat-03-hell.png` · Deep-Dive `werte-und-ziele` | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Ziehen bei dir gerade Kopf und Herz an einem Strang – oder eher gegeneinander?" + Mini-Übung „Herz-Kohärenz". | Praxis `herz-kohaerenz` → `/mitglieder/praxis/herz-kohaerenz` | „Probier die 5-Minuten-Übung + antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Willenskraft als „Muskel", der ermüdet? Eine große Replikation fand den Effekt nicht." | Studien-Kachel `WMDG-Studienfakt-05-hell.png` (Baumeister 1998 / Hagger 2016) · Lektion `/mitglieder/stufe/6` | „E-Book laden (/#ebook) → Stufe 6 in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster aus Woche 2–5. Die Sonntags-Kachel weist die wissenschaftliche Kontroverse transparent aus (Redlichkeit statt Übertreibung).
+
+---
 
 ### Woche 7 · Stufe 7 · Meisterschaft — „Was nach den 7 Stufen kommt"
-- 🎬 **Reel-Hook:** „Niemand ist für immer Meister. Ich auch nicht."
-- 🖼️ **Carousel:** „Meister deiner Gedanken" · 📝 **Blog:** `wie-frei-ist-unser-geist`
-- 📚 **Deep-Dive:** `integration-und-weitergabe` · 🧘 **Praxis (Story):** `box-breathing`
-- ▶️ **Video:** „Meisterschaft: Was nach den 7 Stufen kommt." · 🎯 **Pitch:** E-Book / `/mitglieder/stufe/7`
+
+**Kernbotschaft:** Meisterschaft ist kein Zustand ohne Stürme, sondern die
+Fähigkeit, immer schneller in die eigene Mitte zurückzufinden – „eine
+tägliche Rückkehr", kein Ziel, das man einmal erreicht. Zugleich Abschluss
+von Block A: der Bogen von „Einstieg" (E-Book) zu „ganzer Weg" (Mitgliedschaft)
+wird hier geschlossen.
+
+> **Korrektur der Praxis-Zuordnung:** Statt der im Backlog genannten
+> `box-breathing` (`relatedStage: 6`) wird hier durchgängig
+> **`taegliche-rueckkehr`** (`relatedStage: 7`) verwendet – siehe Hinweis am
+> Anfang dieses Abschnitts.
+
+**Verfügbares Material:**
+- 🎬 Reel „Meisterschaft" (Variante B) → `src/lib/reels.ts`, Skript `docs/skripte/reels/stufen.md`, Abschnitt „07 · Meisterschaft"
+- 🖼️ Carousel-Slide „07 · Meisterschaft – Meister deiner Gedanken" → `docs/carousels/stufen-ueberblick.mjs`; LinkedIn zusätzlich „4 Wege zur mentalen Freiheit" (`4-wege-freiheit`, Recap-Slide) → `docs/carousels/marketing-serien.mjs`
+- 📝 Blog „Wie frei ist unser Geist?" → `/blog/wie-frei-ist-unser-geist` (`src/lib/blog.ts`, Zeile 144)
+- 📚 Deep-Dive „Integration & Weitergabe" → `/mitglieder/wissen/integration-und-weitergabe` (`relatedStage: 7`, `src/lib/deep-dives.ts`, Zeile 780)
+- 📘 Lektion „Stufe 7" → `/mitglieder/stufe/7` + PDF `content/pdf/stufe-7-lektion.pdf` (+ `-uebungen.pdf`, `vertiefung-integration-und-weitergabe.pdf`)
+- 🧘 Praxis **„Die tägliche Rückkehr"** → `src/lib/practices.ts` (`taegliche-rueckkehr`, `relatedStage: 7`, Zeile 341–363) — *korrigiert, s. o.*
+- 💬 Zitat-Karten (Creme) → `docs/marketing/zitate/1x1/WMDG-Zitat-07-hell.png` (Sonntag) · `WMDG-Zitat-04-hell.png` (FB-Freitag) · `docs/marketing/zitate/4x5/WMDG-Zitat-14-hell.png` (LI-Sharepic)
+- 🎯 Funnel: E-Book → `/#ebook` · Stufe 7 → `/mitglieder/stufe/7` · Haupt-CTA Donnerstag: volle Mitgliedschaft → `/mitglieder`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Niemand ist für immer Meister. Ich auch nicht." (Variante B) | `src/lib/reels.ts` · „07 · Meisterschaft — Variante B" | „Folge für den Praxis-/Wissenschafts-Block" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Variante A: „Ich dachte, irgendwann wackelt nichts mehr. Das war ein Irrtum." Meisterschaft ist kein Punkt, an dem man fertig ist. | `src/lib/reels.ts`, Variante A | „Mehr zu Stufe 7 in der Lektion" → `/mitglieder/stufe/7` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Meisterschaft zeigt sich nicht darin, nie wieder in ein altes Muster zu rutschen – sondern darin, wie schnell du zurückfindest." Rückfälle + Mentoring vertiefen das eigene Können. | Blog `/blog/wie-frei-ist-unser-geist` (Zeile 144–210) i. V. m. Deep-Dive `integration-und-weitergabe` (Zeile 780–835) | Kommentar-Frage: „Wem hast du zuletzt etwas beigebracht, das dir selbst danach klarer wurde?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Bis zu 60.000 Gedanken am Tag – wie viel Kontrolle hat man wirklich über die eigenen Gedanken? Vier Wege zu mehr mentaler Freiheit. | Blog `/blog/wie-frei-ist-unser-geist` | „Ganzen Artikel lesen" |
+| **Mi** | 08:15 | LinkedIn | 🖼️ Carousel | Document-Post „4 Wege zurück zu deiner mentalen Freiheit" – Recap-Slide als Zusammenfassung der ganzen Stufen-Reise, gerahmt als Abschluss von Block A. | Carousel `4-wege-freiheit` in `docs/carousels/marketing-serien.mjs`, Zeilen 61–89 | „Speichern als Rückblick auf die ganze Stufen-Reise." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Meisterschaft – Meister deiner Gedanken: Wie frei ist dein Geist wirklich?" | Carousel-Slide „07" + Blog + Deep-Dive `integration-und-weitergabe` | „Link in Bio · Speichern, falls du deine 7 Stufen zusammenfassen willst." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Niemand ist für immer Meister — und das ist die gute Nachricht (Stufe 7: Meisterschaft)." Praxisteil am Ende: **„Die tägliche Rückkehr"** (korrigiert von `box-breathing`). | Blog `wie-frei-ist-unser-geist` + Deep-Dive `integration-und-weitergabe` + Lektion `/mitglieder/stufe/7` + Praxis `taegliche-rueckkehr` | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Meisterschaft ist kein Zustand, den du erreichst – sondern eine tägliche Rückkehr in deine Mitte." Letzter Post der Stufen-Serie, CTA bewusst auf die volle Mitgliedschaft zugespitzt. | Praxis **`taegliche-rueckkehr`** (korrigiert von `box-breathing`) · Deep-Dive `integration-und-weitergabe` · Lektion `/mitglieder/stufe/7` | Soft-CTA „E-Book" → `/#ebook`; Haupt-CTA „Alle 7 Stufen im Zusammenhang – jetzt Mitglied werden" → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Niemand ist für immer Meister. Ich auch nicht." (identisch zu IG/FB, Variante B) – Abschluss der siebenwöchigen Video-Reihe. | Reel-Serie „stufen", Variante B · `docs/skripte/reels/stufen.md`, Zeile 403–419 | „Hol dir das kostenlose E-Book — ganzes Video oben verlinkt." |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | Zitat-Karte „Meisterschaft als tägliche Rückkehr" + Community-Frage: „Woran erkennst du am schnellsten, dass du aus deiner Mitte gefallen bist – und was bringt dich zurück?" | Zitat `WMDG-Zitat-04-hell.png` · Deep-Dive `integration-und-weitergabe` · Praxis **`taegliche-rueckkehr`** (korrigiert von `box-breathing`) | Kommentiere deine Antwort · Mini-Übung „Die tägliche Rückkehr" |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Wie schnell findest du zurück in deine Mitte, wenn dich etwas aus der Bahn wirft?" + Mini-Übung **„Die tägliche Rückkehr"** (korrigiert von „Box Breathing"). | Praxis `taegliche-rueckkehr` → `/mitglieder/praxis/taegliche-rueckkehr` | „Probier die 5-Minuten-Übung + antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Freiheit beginnt mit einer Frage: Ist dieser Gedanke wirklich meiner?" | Zitat `WMDG-Zitat-07-hell.png` · Lektion `/mitglieder/stufe/7` | „E-Book laden (/#ebook) → Stufe 7 in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster aus Woche 2–6, mit Sonderrolle als Abschlusswoche von Block A: LinkedIn-Donnerstag nutzt als einzige Woche eine Haupt-CTA auf `/mitglieder` statt nur `/#ebook`.
+
+> **YouTube-Thumbnail-Hinweis (Woche 2–7):** Für alle sechs Wochen existieren
+> noch keine eigenen, nummerierten Stufen-Thumbnails (nur die generische
+> Basis `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`,
+> Creme-Variante). Die nummerierten Motive `WMDG-Thumbnail-01-hell.png` /
+> `-02-hell.png` sind bereits für Woche 1 belegt. **⚠ zu klären:**
+> Thumbnails für Stufe 2–7 aus der Vorlage produzieren, bevor die jeweiligen
+> Videos live gehen.
 
 > Jede Stufe hat 3 Reel-Varianten (A/B/C) in `src/lib/reels.ts` – für Wiederholung/AB-Tests über mehrere Wochen. Der interaktive Kalender zeigt alle 7 Wochen (oben umschaltbar).
 
