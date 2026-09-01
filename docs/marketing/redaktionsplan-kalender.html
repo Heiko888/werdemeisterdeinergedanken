@@ -411,81 +411,198 @@
 
     { n: 2, stage: "Erwachen", headline: "Wer hört zu, wenn du denkst?",
       mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>du-bist-nicht-deine-gedanken</code>", "📘 <code>/mitglieder/stufe/2</code>", "🧘 <code>atembeobachtung</code>"],
-      days: mkWeek({ n: 2, next: "Stufe 3 · Selbstbeobachtung",
-        reelHook: "Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu?",
-        liBeitrag: "Zwischen Reiz und Reaktion liegt ein Moment – im Job entscheidet er über alles.",
-        carousel: "Du bist nicht deine Gedanken", carouselSrc: "carousels/stufen-ueberblick.mjs",
-        blogTitle: "Du bist nicht deine Gedanken", blogSlug: "du-bist-nicht-deine-gedanken",
-        video: "Erwachen: Der Moment, in dem du dich beim Denken erwischst.",
-        practice: "atembeobachtung", practiceName: "Atembeobachtung",
-        poll: "Ertappst du dich manchmal im Gedankenkarussell?",
-        pitch: "Den Beobachter kannst du trainieren – Schritt für Schritt.",
-        community: "Wann hast du dich zuletzt beim Denken „erwischt“?" }) },
+      // Woche 2 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-2/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Wenn du deine Gedanken hören kannst – wer hört dann eigentlich zu?“ (Erwachen, Variante B)", src: "Reel-Serie stufen · src/lib/reels.ts · docs/skripte/reels/stufen.md", cta: "Folgen · Speichern" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Variante A: „Ich saß im Stau und hab mich zum ersten Mal beim Denken erwischt.“ Das Bemerken kann selbst kein Gedanke sein.", src: "Reel-Serie stufen, Variante A", cta: "Mehr zu Stufe 2 → /mitglieder/stufe/2" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Der Kollege sagt einen Satz – und bevor du nachgedacht hast, bist du schon in der Verteidigung.“ Der innere Beobachter im Meeting.", src: "Blog /blog/du-bist-nicht-deine-gedanken", cta: "Kommentar-Frage: „In welcher Besprechung reagierst du am schnellsten?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Die meisten halten Gedanken für die Wahrheit – dabei gibt es eine Instanz, die sie nur bemerkt.", src: "Blog /blog/du-bist-nicht-deine-gedanken", cta: "Ganzen Artikel lesen" },
+          { t: "08:15", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Wer denkt hier eigentlich?“ – Remedy-Slide „Zwischen Reiz und Reaktion liegt ein Raum“, zugespitzt auf Verhandlungen im Job.", src: "Carousel wer-denkt-hier · docs/carousels/marketing-serien.mjs", cta: "Speichern & Teilen" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Erwachen: Du bist nicht deine Gedanken – der Moment, der alles ändert.“", src: "Carousel stufen-ueberblick · Blog + Deep-Dive reiz-reaktions-luecke", cta: "Link in Bio · Speichern" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Wer hört eigentlich zu, wenn du denkst? (Stufe 2: Erwachen).“", src: "Blog du-bist-nicht-deine-gedanken + Deep-Dive reiz-reaktions-luecke + /mitglieder/stufe/2", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Die wichtigste Führungskompetenz ist kein neues Framework – sie dauert fünf Minuten: den eigenen Atem beobachten.“", src: "Praxis atembeobachtung · Deep-Dive reiz-reaktions-luecke", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Wenn du deine Gedanken hören kannst — wer hört dann zu?“ (identisch zum IG/FB-Reel, Variante B).", src: "Reel-Serie stufen, Variante B", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "Zitatkarte „Raum zwischen Reiz und Reaktion“ + Community-Frage: „In welcher Situation ist deine Reiz-Reaktions-Lücke am kleinsten?“", src: "Zitat WMDG-Zitat-02-hell.png · Deep-Dive reiz-reaktions-luecke", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Kannst du 60 Sekunden lang nur deinem Atem zuhören?“ + Mini-Übung „Atembeobachtung“.", src: "Praxis atembeobachtung → /mitglieder/praxis/atembeobachtung", cta: "Mini-Version + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Du bist nicht deine Gedanken. Du bist der, der sie bemerkt.“ Zitat-Kachel + Verweis auf Lektion & E-Book.", src: "Zitat WMDG-Zitat-03-hell.png · Lektion /mitglieder/stufe/2", cta: "E-Book laden (/#ebook) → Stufe 2 in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 3, stage: "Selbstbeobachtung", headline: "Nicht in jeden Gedanken springen.",
       mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>denkfehler-…</code>", "📘 <code>/mitglieder/stufe/3</code>", "🧘 <code>innerer-beobachter</code>"],
-      days: mkWeek({ n: 3, next: "Stufe 4 · Emotionale Reifung",
-        reelHook: "Ich bin früher in jeden einzelnen Gedanken reingesprungen.",
-        liBeitrag: "Nicht jeder Gedanke verdient eine Reaktion – gilt auch fürs Postfach.",
-        carousel: "Setz dich ans Ufer", carouselSrc: "carousels/stufen-ueberblick.mjs",
-        blogTitle: "Denkfehler: Wie dein Kopf die Wirklichkeit verzerrt", blogSlug: "denkfehler-…",
-        video: "Selbstbeobachtung: Gedanken sehen, ohne mitzuspringen.",
-        practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
-        poll: "Welcher Denkfehler erwischt dich am häufigsten?",
-        pitch: "Beobachten statt reagieren – das ist Übungssache.",
-        community: "In welche Gedanken springst du am schnellsten rein?" }) },
+      // Woche 3 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-3/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Ich bin früher in jeden einzelnen Gedanken reingesprungen.“ (Variante A)", src: "Reel-Serie stufen · docs/skripte/reels/stufen.md, „03 · Selbstbeobachtung — Variante A“", cta: "Folgen · Speichern" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiche Variante A: Gedanken sind wie ein Fluss – der innere Beobachter bleibt am Ufer sitzen und lässt alles vorbeiziehen.", src: "s. IG-Reel (Mo)", cta: "Mehr zu Stufe 3 → /mitglieder/stufe/3" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Die erste Zahl in einer Verhandlung entscheidet mehr, als den meisten lieb ist.“ Verankerung, Verfügbarkeitsheuristik, Bestätigungsfehler im Job.", src: "Blog /blog/denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt", cta: "Kommentar-Frage: „Welchen Denkfehler hast du bei dir erwischt?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Unser Denken ist eher ein Erzähler mit festen Vorlieben als ein neutraler Beobachter der Wirklichkeit.", src: "Blog /blog/denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt", cta: "Ganzen Artikel lesen" },
+          { t: "08:15", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Studien-Fakten“ – Fakt „Dein Kopf verzerrt – systematisch“ (Tversky & Kahneman 1974), zugespitzt auf Strategie-/Entscheidungsrunden.", src: "Carousel studien-fakten · docs/carousels/marketing-serien.mjs", cta: "Speichern für die nächste Kennzahl ohne Kontext" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Selbstbeobachtung – Setz dich ans Ufer: 3 Denkfehler, die dich reinziehen.“", src: "Carousel stufen-ueberblick · Blog + Deep-Dive kognitive-verzerrungen", cta: "Link in Bio · Speichern" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Warum dein Kopf Gedanken für Fakten hält (Stufe 3: Selbstbeobachtung).“", src: "Blog denkfehler-… + Deep-Dive kognitive-verzerrungen + /mitglieder/stufe/3", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Du musst deinen inneren Kritiker nicht zum Schweigen bringen – du musst nur lernen, ihm nicht mehr automatisch zu glauben.“", src: "Praxis innerer-beobachter · Deep-Dive kognitive-verzerrungen", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Nicht in jeden Gedanken springen“ (identisch zum IG/FB-Reel, Variante A).", src: "Reel-Serie stufen, Variante A", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "Studien-Karte „Denkfehler sind vorhersehbar“ (Tversky & Kahneman, 1974) + Community-Frage: „Welcher Denkfehler ist dein persönlicher Klassiker?“", src: "Studien-Karte WMDG-Studienfakt-02-hell.png · Deep-Dive kognitive-verzerrungen", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Springst du noch in jeden Gedanken – oder schaust du inzwischen manchmal nur zu?“ + Mini-Übung „Der innere Beobachter“.", src: "Praxis innerer-beobachter → /mitglieder/praxis/innerer-beobachter", cta: "10-Minuten-Übung + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Der erste Schritt ist nicht Kontrolle. Es ist Bemerken.“", src: "Studien-Kachel WMDG-Studienfakt-04-hell.png · Lektion /mitglieder/stufe/3", cta: "E-Book laden (/#ebook) → Stufe 3 in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 4, stage: "Emotionale Reifung", headline: "Fühlen, ohne überflutet zu werden.",
       mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>gefuehle-benennen-…</code>", "📘 <code>/mitglieder/stufe/4</code>", "🧘 <code>verlaengertes-ausatmen</code>"],
-      days: mkWeek({ n: 4, next: "Stufe 5 · Schöpferkraft",
-        reelHook: "Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert.",
-        liBeitrag: "Emotionen im Job wegdrücken kostet Energie – benennen entlastet.",
-        carousel: "Fühlen, was ist", carouselSrc: "carousels/stufen-ueberblick.mjs",
-        blogTitle: "Warum ein Gefühl zu benennen dein Gehirn beruhigt", blogSlug: "gefuehle-benennen-…",
-        video: "Emotionale Reifung: Fühlen, ohne überflutet zu werden.",
-        practice: "verlaengertes-ausatmen", practiceName: "Verlängertes Ausatmen",
-        poll: "Was machst du, wenn ein Gefühl nicht gehen will?",
-        pitch: "Gefühle regulieren lässt sich lernen – ganz ohne Wegdrücken.",
-        community: "Welches Gefühl fällt dir am schwersten zuzulassen?" }) },
+      // Woche 4 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-4/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Ich hab mal auf die Uhr geschaut, wie lang ein schweres Gefühl wirklich dauert.“ (Variante B)", src: "Reel-Serie stufen · docs/skripte/reels/stufen.md, „04 · Emotionale Reifung — Variante B“", cta: "Folgen · Speichern" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Variante A: „Ich hab jahrelang geglaubt, verstehen reicht.“ Gefühle, die man nicht fühlt, verschwinden nicht – sie warten.", src: "Reel-Serie stufen, Variante A", cta: "Mehr zu Stufe 4 → /mitglieder/stufe/4" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Ein einziges Wort kann verhindern, dass eine schwierige Rückmeldung zur Eskalation wird.“ Affect Labeling (Lieberman, UCLA 2007) vor Feedback-Gesprächen.", src: "Blog /blog/gefuehle-benennen-beruhigt-das-gehirn", cta: "Kommentar-Frage: „Vor welcher Art Gespräch hilft dir das Benennen am meisten?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Innerlich „Das ist Angst“ benennen – und ruhiger werden. UCLA-Studie zur Amygdala.", src: "Blog /blog/gefuehle-benennen-beruhigt-das-gehirn", cta: "Ganzen Artikel lesen" },
+          { t: "08:15", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Studien-Fakten“ – Fakt „Ein Gefühl zu benennen beruhigt“ (Lieberman 2007) + „47 % abschweifender Geist“, zugespitzt auf Meeting-Präsenz.", src: "Carousel studien-fakten · docs/carousels/marketing-serien.mjs", cta: "Speichern für das nächste Gespräch mit hochkommendem Gefühl" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Emotionale Reifung – Fühlen, was ist: Wie lang dauert ein Gefühl wirklich?“", src: "Carousel stufen-ueberblick · Blog + Deep-Dive emotionsregulation", cta: "Link in Bio · Speichern" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Wie lang dauert ein Gefühl wirklich? (Stufe 4: Emotionale Reifung).“", src: "Blog gefuehle-benennen-… + Deep-Dive emotionsregulation + /mitglieder/stufe/4", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Bevor du die scharfe Antwort abschickst: ein Atemzug, der länger aus- als einatmet, reicht oft schon.“", src: "Praxis verlaengertes-ausatmen · Deep-Dive emotionsregulation", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Ich hab auf die Uhr geschaut, wie lang ein schweres Gefühl dauert“ (identisch zu IG/FB, Variante B).", src: "Reel-Serie stufen, Variante B", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "Studien-Karte „Benennen beruhigt das Gehirn“ (Lieberman 2007) + Community-Frage: „Welches Gefühl fällt dir am schwersten auszuhalten?“", src: "Studien-Karte WMDG-Studienfakt-03-hell.png · Deep-Dive emotionsregulation", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Drückst du Gefühle eher weg – oder lässt du dich von ihnen überfluten?“ + Mini-Übung „Verlängertes Ausatmen“.", src: "Praxis verlaengertes-ausatmen → /mitglieder/praxis/verlaengertes-ausatmen", cta: "3-Minuten-Übung + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Ein Gefühl zu benennen dämpft die Amygdala – die Alarmzentrale des Gehirns.“", src: "Studien-Kachel WMDG-Studienfakt-02-hell.png (Lieberman/UCLA 2007) · Lektion /mitglieder/stufe/4", cta: "E-Book laden (/#ebook) → Stufe 4 in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 5, stage: "Schöpferkraft", headline: "Du schreibst den Code neu.",
       mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>neuroplastizitaet-…</code>", "📘 <code>/mitglieder/stufe/5</code>", "🧘 <code>morgen-ausrichtung</code>"],
-      days: mkWeek({ n: 5, next: "Stufe 6 · Innere Ausrichtung",
-        reelHook: "Was du oft denkst, wird zur Straße in deinem Kopf. Und das ist wörtlich gemeint.",
-        liBeitrag: "Neuroplastizität heißt: Auch berufliche Muster sind veränderbar.",
-        carousel: "Du schreibst den Code neu", carouselSrc: "carousels/stufen-ueberblick.mjs",
-        blogTitle: "Neuroplastizität: Warum sich dein Gehirn ein Leben lang verändert", blogSlug: "neuroplastizitaet-…",
-        video: "Schöpferkraft: Wie du neue Bahnen im Kopf anlegst.",
-        practice: "morgen-ausrichtung", practiceName: "Morgen-Ausrichtung",
-        poll: "Welche mentale Gewohnheit willst du neu anlegen?",
-        pitch: "Neue Denk-Bahnen entstehen durch Wiederholung – hier ist der Weg.",
-        community: "Welchen Gedanken denkst du zu oft?" }) },
+      // Woche 5 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-5/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Was du oft denkst, wird zur Straße in deinem Kopf. Und das ist wörtlich gemeint.“ (Variante A)", src: "Reel-Serie stufen · docs/skripte/reels/stufen.md, „05 · Schöpferkraft — Variante A“", cta: "Folgen · Speichern" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiche Variante A: Gedanken hinterlassen reale Spuren im Gehirn – Trampelpfad wird Straße wird Autobahn.", src: "s. IG-Reel (Mo)", cta: "Mehr zu Stufe 5 → /mitglieder/stufe/5" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Dein Kommunikationsstil unter Druck ist kein Charakterzug – es ist eine ausgebaute Straße im Kopf, die du selbst gebaut hast.“ Maguire/Draganski im Führungskontext.", src: "Blog /blog/neuroplastizitaet-warum-dein-gehirn-formbar-ist", cta: "Kommentar-Frage: „Welche berufliche Gewohnheit würdest du gern umbauen?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Londoner Taxifahrer mit vergrößertem Hippocampus, Jongleure mit mehr grauer Substanz nach drei Monaten Übung.", src: "Blog /blog/neuroplastizitaet-warum-dein-gehirn-formbar-ist", cta: "Ganzen Artikel lesen" },
+          { t: "08:15", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Studien-Fakten“ – Fakt „01“ (Neuroplastizität), zugespitzt auf gezieltes Kompetenztraining im Job.", src: "Carousel studien-fakten · docs/carousels/marketing-serien.mjs", cta: "Speichern als Erinnerung für die nächste neue Gewohnheit" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Schöpferkraft – Du schreibst den Code neu: dein Gehirn ist formbar.“", src: "Carousel stufen-ueberblick · Blog + Deep-Dive neuroplastizitaet", cta: "Link in Bio · Speichern" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Was du oft denkst, wird zur Straße im Kopf (Stufe 5: Schöpferkraft).“", src: "Blog neuroplastizitaet-… + Deep-Dive neuroplastizitaet + /mitglieder/stufe/5", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Die ersten fünf Minuten deines Arbeitstages entscheiden mehr über deinen Fokus als die nächsten fünf Stunden.“", src: "Praxis morgen-ausrichtung · Deep-Dive neuroplastizitaet", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Was du oft denkst, wird zur Straße im Kopf“ / „Vom Beobachter zum Gestalter“ (identisch zu IG/FB, Variante A).", src: "Reel-Serie stufen, Variante A", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "Studien-Karte „Dein Gehirn baut sich ständig um“ (Draganski 2004, „Nature“) + Community-Frage: „Welche ‚Bahn‘ in dir ist besonders breit geworden?“", src: "Studien-Karte WMDG-Studienfakt-04-hell.png · Deep-Dive neuroplastizitaet", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Handy zuerst oder Ausrichtung zuerst – was machst du morgens als Erstes?“ + Mini-Übung „Morgen-Ausrichtung“.", src: "Praxis morgen-ausrichtung → /mitglieder/praxis/morgen-ausrichtung", cta: "5-Minuten-Übung + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Dein Gehirn bleibt formbar – ein Leben lang.“", src: "Studien-Kachel WMDG-Studienfakt-06-hell.png (Maguire 2000 · Draganski 2004) · Lektion /mitglieder/stufe/5", cta: "E-Book laden (/#ebook) → Stufe 5 in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 6, stage: "Innere Ausrichtung", headline: "Kopf, Herz und Handeln.",
       mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>warum-willenskraft-…</code>", "📘 <code>/mitglieder/stufe/6</code>", "🧘 <code>herz-kohaerenz</code>"],
-      days: mkWeek({ n: 6, next: "Stufe 7 · Meisterschaft",
-        reelHook: "Dein Kopf ist ein brillanter Diener. Aber ein ziemlich schlechter Chef.",
-        liBeitrag: "Willenskraft ist überschätzt – Ausrichtung schlägt Disziplin.",
-        carousel: "Kopf, Herz und Handeln", carouselSrc: "carousels/stufen-ueberblick.mjs",
-        blogTitle: "Warum Willenskraft überschätzt wird", blogSlug: "warum-willenskraft-…",
-        video: "Innere Ausrichtung: Wenn Kopf, Herz und Handeln zusammenfinden.",
-        practice: "herz-kohaerenz", practiceName: "Herz-Kohärenz",
-        poll: "Woran merkst du, dass du „aus der Spur“ bist?",
-        pitch: "Ausrichtung statt Dauerdisziplin – so findest du sie.",
-        community: "Was gibt dir im Alltag wieder Klarheit?" }) },
+      // Woche 6 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-6/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Dein Kopf ist ein brillanter Diener. Aber ein ziemlich schlechter Chef.“ (Variante B)", src: "Reel-Serie stufen · docs/skripte/reels/stufen.md, „06 · Innere Ausrichtung — Variante B“", cta: "Folgen · Speichern" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Variante A: „Ich war ständig müde, und keiner konnte mir sagen, warum.“ Der stille Widerspruch zwischen Kopf, Bauch und Handeln.", src: "Reel-Serie stufen, Variante A", cta: "Mehr zu Stufe 6 → /mitglieder/stufe/6" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„„Ich müsste mich nur mehr zusammenreißen“ ist selten eine Diagnose – meistens ist es ein Symptom.“ Ego-Depletion-Studie (Baumeister/Hagger) im Führungskontext.", src: "Blog /blog/warum-willenskraft-ueberschaetzt-wird", cta: "Kommentar-Frage: „Wo verlässt du dich im Job eher auf Willenskraft als auf Klarheit?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: „Ich müsste nur diszipliniert genug sein“ – Willenskraft ist begrenzt und verliert gegen alte Muster.", src: "Blog /blog/warum-willenskraft-ueberschaetzt-wird", cta: "Ganzen Artikel lesen" },
+          { t: "08:15", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Studien-Fakten“ – Fakt „Willenskraft ist überschätzt“ (Baumeister 1998, Replikation Hagger 2016), zugespitzt auf Teamkultur.", src: "Carousel studien-fakten · docs/carousels/marketing-serien.mjs", cta: "Speichern für das nächste Team-Gespräch über Motivation" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Innere Ausrichtung – Kopf, Herz und Handeln: warum Willenskraft allein nicht reicht.“", src: "Carousel stufen-ueberblick · Blog + Deep-Dive werte-und-ziele", cta: "Link in Bio · Speichern" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Der Kopf ist ein guter Diener, aber ein schlechter Chef (Stufe 6: Innere Ausrichtung).“", src: "Blog warum-willenskraft-… + Deep-Dive werte-und-ziele + /mitglieder/stufe/6", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Vor der nächsten großen Entscheidung: eine Hand aufs Herz, fünf Sekunden ein-, fünf Sekunden ausatmen.“", src: "Praxis herz-kohaerenz · Deep-Dive werte-und-ziele", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Dein Kopf ist ein brillanter Diener, aber ein schlechter Chef“ (identisch zu IG/FB, Variante B).", src: "Reel-Serie stufen, Variante B", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "Zitat-Karte „Werte als Kompass“ + Community-Frage: „Welche 3 Werte würden die Menschen nennen, die dich am besten kennen?“", src: "Zitat WMDG-Zitat-03-hell.png · Deep-Dive werte-und-ziele", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Ziehen bei dir gerade Kopf und Herz an einem Strang – oder eher gegeneinander?“ + Mini-Übung „Herz-Kohärenz“.", src: "Praxis herz-kohaerenz → /mitglieder/praxis/herz-kohaerenz", cta: "5-Minuten-Übung + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Willenskraft als „Muskel“, der ermüdet? Eine große Replikation fand den Effekt nicht.“", src: "Studien-Kachel WMDG-Studienfakt-05-hell.png (Baumeister 1998 / Hagger 2016) · Lektion /mitglieder/stufe/6", cta: "E-Book laden (/#ebook) → Stufe 6 in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 7, stage: "Meisterschaft", headline: "Was nach den 7 Stufen kommt.",
-      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>wie-frei-ist-unser-geist</code>", "📘 <code>/mitglieder/stufe/7</code>", "🧘 <code>box-breathing</code>"],
-      days: mkWeek({ n: 7, next: "Block B · Praxis & Wissenschaft",
-        reelHook: "Niemand ist für immer Meister. Ich auch nicht.",
-        liBeitrag: "Souveränität heißt nicht, nie getriggert zu werden – sondern schneller zurückzufinden.",
-        carousel: "Meister deiner Gedanken", carouselSrc: "carousels/stufen-ueberblick.mjs",
-        blogTitle: "Wie frei ist unser Geist?", blogSlug: "wie-frei-ist-unser-geist",
-        video: "Meisterschaft: Was nach den 7 Stufen kommt.",
-        practice: "box-breathing", practiceName: "Box Breathing",
-        poll: "Was hilft dir, nach einem Trigger schnell zurückzufinden?",
-        pitch: "Der ganze Weg in 7 Stufen – starte mit dem kostenlosen E-Book.",
-        community: "Was hat sich verändert, seit du bewusster denkst?" }) },
+      // Korrektur: statt „box-breathing“ (relatedStage: 6 in src/lib/practices.ts)
+      // wird für Stufe 7 die tatsächlich passende Praxis „taegliche-rueckkehr“
+      // (relatedStage: 7) verwendet – s. Hinweis in docs/marketing/redaktionsplan.md.
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>wie-frei-ist-unser-geist</code>", "📘 <code>/mitglieder/stufe/7</code>", "🧘 <code>taegliche-rueckkehr</code> (korrigiert von <code>box-breathing</code>)"],
+      // Woche 7 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-7/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Niemand ist für immer Meister. Ich auch nicht.“ (Variante B)", src: "Reel-Serie stufen · docs/skripte/reels/stufen.md, „07 · Meisterschaft — Variante B“", cta: "Folgen für den Praxis-/Wissenschafts-Block" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Variante A: „Ich dachte, irgendwann wackelt nichts mehr. Das war ein Irrtum.“ Meisterschaft ist kein Punkt, an dem man fertig ist.", src: "Reel-Serie stufen, Variante A", cta: "Mehr zu Stufe 7 → /mitglieder/stufe/7" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Meisterschaft zeigt sich nicht darin, nie wieder in ein altes Muster zu rutschen – sondern darin, wie schnell du zurückfindest.“ Rückfälle + Mentoring vertiefen das eigene Können.", src: "Blog /blog/wie-frei-ist-unser-geist + Deep-Dive integration-und-weitergabe", cta: "Kommentar-Frage: „Wem hast du zuletzt etwas beigebracht, das dir selbst danach klarer wurde?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Bis zu 60.000 Gedanken am Tag – wie viel Kontrolle hat man wirklich? Vier Wege zu mehr mentaler Freiheit.", src: "Blog /blog/wie-frei-ist-unser-geist", cta: "Ganzen Artikel lesen" },
+          { t: "08:15", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „4 Wege zurück zu deiner mentalen Freiheit“ – Recap-Slide als Zusammenfassung der ganzen Stufen-Reise, Abschluss von Block A.", src: "Carousel 4-wege-freiheit · docs/carousels/marketing-serien.mjs", cta: "Speichern als Rückblick auf die ganze Stufen-Reise" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Meisterschaft – Meister deiner Gedanken: Wie frei ist dein Geist wirklich?“", src: "Carousel stufen-ueberblick · Blog + Deep-Dive integration-und-weitergabe", cta: "Link in Bio · Speichern" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Niemand ist für immer Meister — und das ist die gute Nachricht (Stufe 7: Meisterschaft).“ Praxisteil am Ende: „Die tägliche Rückkehr“.", src: "Blog wie-frei-ist-unser-geist + Deep-Dive integration-und-weitergabe + Praxis taegliche-rueckkehr", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Meisterschaft ist kein Zustand, den du erreichst – sondern eine tägliche Rückkehr in deine Mitte.“ Letzter Post der Stufen-Serie, CTA auf volle Mitgliedschaft.", src: "Praxis taegliche-rueckkehr (korrigiert von box-breathing) · Deep-Dive integration-und-weitergabe", cta: "E-Book → /#ebook; Haupt-CTA: Mitglied werden → /mitglieder" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Niemand ist für immer Meister. Ich auch nicht.“ (identisch zu IG/FB, Variante B) – Abschluss der siebenwöchigen Video-Reihe.", src: "Reel-Serie stufen, Variante B", cta: "Hol dir das kostenlose E-Book — Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "Zitat-Karte „Meisterschaft als tägliche Rückkehr“ + Community-Frage: „Woran erkennst du am schnellsten, dass du aus deiner Mitte gefallen bist?“", src: "Zitat WMDG-Zitat-04-hell.png · Deep-Dive integration-und-weitergabe · Praxis taegliche-rueckkehr (korrigiert)", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Wie schnell findest du zurück in deine Mitte, wenn dich etwas aus der Bahn wirft?“ + Mini-Übung „Die tägliche Rückkehr“ (korrigiert von „Box Breathing“).", src: "Praxis taegliche-rueckkehr → /mitglieder/praxis/taegliche-rueckkehr", cta: "5-Minuten-Übung + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Freiheit beginnt mit einer Frage: Ist dieser Gedanke wirklich meiner?“", src: "Zitat WMDG-Zitat-07-hell.png · Lektion /mitglieder/stufe/7", cta: "E-Book laden (/#ebook) → Stufe 7 in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 8, stage: "Atmung", serie: "Praxis & Wissenschaft",
       kicker: "Woche 8 · Block B · Praxis", title: "Atmung & Nervensystem — Der schnellste Weg zur Ruhe",

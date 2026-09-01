@@ -37,7 +37,7 @@ Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
 | 4 | **Stufe 4 · Emotionale Reifung** | geplant | „Wie lang dauert ein Gefühl wirklich?" | `gefuehle-benennen-beruhigt-das-gehirn` | `emotionsregulation` | `verlaengertes-ausatmen` |
 | 5 | **Stufe 5 · Schöpferkraft** | geplant | „Was du oft denkst, wird zur Straße im Kopf" | `neuroplastizitaet-warum-dein-gehirn-formbar-ist` | `neuroplastizitaet` | `morgen-ausrichtung` |
 | 6 | **Stufe 6 · Innere Ausrichtung** | geplant | „Der Kopf ist ein guter Diener, schlechter Chef" | `warum-willenskraft-ueberschaetzt-wird` | `werte-und-ziele` | `herz-kohaerenz` |
-| 7 | **Stufe 7 · Meisterschaft** | geplant | „Niemand ist für immer Meister" | `wie-frei-ist-unser-geist` | `integration-und-weitergabe` | `box-breathing` |
+| 7 | **Stufe 7 · Meisterschaft** | geplant | „Niemand ist für immer Meister" | `wie-frei-ist-unser-geist` | `integration-und-weitergabe` | `taegliche-rueckkehr` (korrigiert, s. Fußnote) |
 
 > Reel-Varianten A/B/C je Stufe erlauben Wiederholung/AB-Tests über mehrere Wochen.
 > ⚠ Für Stufe 3/6/7 ist der Blog-Slug thematisch **naheliegend**, nicht 1:1 –
@@ -48,6 +48,24 @@ Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
 > `/blog/drei-muster-die-dich-unbewusst-steuern` verwenden. Die
 > Spaltenüberschrift wurde für die übrigen Wochen noch nicht einzeln
 > gegengeprüft – bitte bei Bedarf je Woche verifizieren.
+> ⚠ **Korrektur Woche 7 (Praxis):** Mehrere Kanal-Planer (Instagram, Facebook,
+> LinkedIn, YouTube) haben unabhängig voneinander geprüft, dass `box-breathing`
+> in `src/lib/practices.ts` `relatedStage: 6` trägt (identisch zu
+> `herz-kohaerenz` aus Woche 6), **nicht** `relatedStage: 7`. Die tatsächlich
+> zu Stufe 7 passende Praxis ist **`taegliche-rueckkehr`** (`src/lib/practices.ts`,
+> Zeile 341–363, `relatedStage: 7`), die inhaltlich exakt zu Deep-Dive
+> `integration-und-weitergabe` passt. Diese Tabelle sowie
+> `docs/marketing/redaktionsplan.md` und `docs/marketing/redaktionsplan-kalender.html`
+> verwenden für Woche 7 durchgängig `taegliche-rueckkehr`.
+>
+> **Fußnote – bestätigte Slug-Prüfung (Wochen 1–7):** Für alle sieben Wochen
+> des Block A wurden Blog-Slug (`src/lib/blog.ts`), Deep-Dive-Slug inkl.
+> `relatedStage` (`src/lib/deep-dives.ts`) und Praxis-Slug inkl.
+> `relatedStage` (`src/lib/practices.ts`) von den vier Kanal-Planern
+> unabhängig per `rg`/`ls` gegen den Code geprüft (Ergebnisse dokumentiert in
+> `docs/marketing/redaktionsplan/woche-N/{instagram,facebook,linkedin,youtube}.md`,
+> Abschnitt „Material-Check" bzw. „Hinweise"). Keine erfundenen Slugs, keine
+> offenen Lücken außer der oben genannten Praxis-Korrektur für Woche 7.
 
 ## Block B — Praxis & Wissenschaft (Wochen 8–10, ruhigere Blöcke)
 

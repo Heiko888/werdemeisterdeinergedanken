@@ -317,6 +317,25 @@ const THUMBS = [
   { key: "vorlage", eyebrow: "Bewusstsein · Klarheit",
     title: `Dein Titel<br>kommt <em>hierhin</em>.`,
     kicker: "Untertitel / Nutzenversprechen als Platzhalter" },
+  // Die 7 Stufen – Stufe 2–7 (Woche 2–7 im Redaktionsplan). Stufe 1 ist "02".
+  { key: "stufe-2", eyebrow: "Die 7 Stufen · Stufe 2",
+    title: `Wer hört zu,<br>wenn du <em>denkst</em>?`,
+    kicker: "Stufe 2: Der Moment des Erwachens" },
+  { key: "stufe-3", eyebrow: "Die 7 Stufen · Stufe 3",
+    title: `Dein Kopf hält Gedanken<br>für <em>Fakten</em>.`,
+    kicker: "Stufe 3: Selbstbeobachtung" },
+  { key: "stufe-4", eyebrow: "Die 7 Stufen · Stufe 4",
+    title: `Wie lang dauert<br>ein <em>Gefühl</em> wirklich?`,
+    kicker: "Stufe 4: Emotionale Reifung" },
+  { key: "stufe-5", eyebrow: "Die 7 Stufen · Stufe 5",
+    title: `Oft gedacht wird<br>zur <em>Straße</em> im Kopf.`,
+    kicker: "Stufe 5: Schöpferkraft" },
+  { key: "stufe-6", eyebrow: "Die 7 Stufen · Stufe 6",
+    title: `Guter Diener,<br>schlechter <em>Chef</em>.`,
+    kicker: "Stufe 6: Innere Ausrichtung" },
+  { key: "stufe-7", eyebrow: "Die 7 Stufen · Stufe 7",
+    title: `Niemand ist für<br>immer <em>Meister</em>.`,
+    kicker: "Stufe 7: Meisterschaft" },
 ];
 
 // QUOTES und FACTS werden aus ./content-data.mjs importiert (siehe oben).
