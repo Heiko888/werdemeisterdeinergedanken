@@ -75,6 +75,10 @@ export function Hero() {
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
+              // Ohne `sizes` nimmt der Browser 100vw an und laedt die groesste
+              // Variante (99 KB) fuer ein 280 px breites Bild. 280px = 68vw bei
+              // 412px Viewport – darunter greift die Prozentangabe.
+              sizes="(min-width: 412px) 280px, 68vw"
               className="block w-[min(280px,68vw)] [filter:drop-shadow(0_0_8px_rgba(217,169,58,0.6))_drop-shadow(0_0_20px_rgba(217,169,58,0.4))] [-webkit-mask-image:linear-gradient(to_bottom,#000_62%,rgba(0,0,0,0.55)_82%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_62%,rgba(0,0,0,0.55)_82%,transparent_100%)]"
             />
           </Reveal>
@@ -132,6 +136,9 @@ export function Hero() {
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
+              // Dieser Zweig wird erst ab lg angezeigt (hidden lg:block), dort
+              // ist das Bild hoechstens 560 px breit.
+              sizes="560px"
               className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
