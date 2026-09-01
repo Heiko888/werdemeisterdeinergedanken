@@ -878,22 +878,377 @@ Lüge. Abschluss von Block C.
 
 ---
 
-## Woche 19–20 · Block C — Mentale Selbstverteidigung (Fortsetzung, kompakte Übersicht)
+## Woche 19–26 · Block C — Mentale Selbstverteidigung (Fortsetzung, zweite Hälfte)
 
-Gleiche Tagesstruktur und Frequenz **fokussiert** (12 Postings/Woche). Diese
-beiden Wochen sind (Stand dieser Planung) noch nicht Gegenstand eines
-eigenen Auftrags und bleiben in kompakter Form; Details im interaktiven
-Kalender.
+Gleiche Tagesstruktur und Frequenz **fokussiert** (IG 4 · FB 3 · LI 3 · YT 1
+Video + 1 Short = **12 Postings/Woche**) wie Woche 11–18. Reels weiterhin aus
+Serie *selbstverteidigung* (`src/lib/reels.ts`, Skript
+`docs/skripte/reels/mentale-selbstverteidigung.md`) – alle acht Themen dieser
+Wochen sind dort zum Planungszeitpunkt mit `filmed: false` markiert, deshalb
+gibt es (wie schon in Woche 11–18) keinen nativen Video-Crosspost auf
+LinkedIn. Carousel-Quelle weiterhin aus `docs/carousels/marketing-serien.mjs`
+(Serien „wer-denkt-hier", „60000-gedanken", „4-wege-freiheit",
+„studien-fakten"); Pitch-Ziel jeweils die Vertiefung
+`/mitglieder/wissen/<slug>`. Quelle je Zeile: die vier Kanal-Teilpläne unter
+`docs/marketing/redaktionsplan/woche-N/{instagram,facebook,linkedin,
+youtube}.md`.
 
-| Woche | Thema | Reel-Hook | Blog-Slug | Deep-Dive / Pitch |
-|---|---|---|---|---|
-| 19 | **Kognitive Dissonanz** | „Warum du wegschaust" | `warum-du-verteidigst-was-dir-schadet` | `kognitive-dissonanz` |
-| 20 | **Identität & Meinung** | „Meinung – oder hat sie dich?" | `hast-du-eine-meinung-oder-hat-sie-dich` | `identitaet-und-meinung` |
+> **Bekannte Lücke – Carousel-Material (Fortsetzung):** Auch für die zweite
+> Hälfte von Block C existiert **kein eigener** Carousel-Slide je Thema. Für
+> alle acht Wochen (19–26) wird jeweils der inhaltlich nächstliegende
+> vorhandene Slide aus „wer-denkt-hier", „60000-gedanken", „4-wege-freiheit"
+> oder „studien-fakten" genutzt (⚠ in der jeweiligen Woche markiert); zwei
+> Warnsignal-Items derselben Liste („Starke Emotion", „Schwarz-Weiß & „alle"")
+> und zwei Step-Slides („Algorithmen & Filterblasen", „Werbung & Medien")
+> werden dabei mit anderem Fokus als in ihrer Erstverwendung (Woche 12/14/15)
+> ein zweites Mal herangezogen. Über den gesamten Block C (16 Wochen, 11–26)
+> decken die evergreenen Serien damit weiterhin nur drei Themen mit einem
+> **eigenen** Schritt ab (Algorithmen/Filterblasen W12, Werbung & Mangel W15,
+> Gruppendruck W16) – **Empfehlung an den Themen-Strategen/Carousel-Team:**
+> eine eigene Carousel-Serie „Mentale Selbstverteidigung" mit den 13
+> fehlenden Themen-Schritten produzieren.
+>
+> **YouTube-Thumbnail-Hinweis (Woche 19–26):** Wie schon für Woche 8–18 gibt
+> es weiterhin **kein** eigenes, themenspezifisches Thumbnail-Motiv für Block
+> C. Alle Videos/Shorts dieser Wochen nutzen ersatzweise die Basis-Vorlage
+> `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
+> (Creme-Variante, Standard) — **Motiv noch zu produzieren** (von allen acht
+> YouTube-Teilplänen unabhängig gemeldet).
 
-> Woche 21–26 haben eigene Blogartikel (`src/lib/blog.ts`, Kategorie „Mentale
-> Selbstverteidigung") und sind – wie Woche 19–20 – kompakt im interaktiven
-> Kalender hinterlegt (`docs/marketing/redaktionsplan-kalender.html`). Details
-> siehe dort bzw. `docs/marketing/redaktionsplan/themen-backlog.md`.
+---
+
+### Woche 19 · Kognitive Dissonanz — „Warum du wegschaust"
+
+**Kernbotschaft:** Wir lehnen Informationen selten ab, weil sie falsch sind –
+sondern weil sie unser Weltbild bedrohen. Je mehr Zeit, Status oder
+Überzeugung in eine Sicht investiert wurde, desto heftiger wird sie
+verteidigt, gerade wenn sie zu wackeln beginnt: Wir werten lieber die Quelle
+ab, als den Inhalt zu prüfen. Unbehagen ist dabei ein Hinweis, genauer
+hinzuschauen – nicht wegzuschauen.
+
+**Verfügbares Material:**
+- 🎬 Reel „Kognitive Dissonanz" → Reel-Serie *selbstverteidigung* (`src/lib/reels.ts`), Skript `docs/skripte/reels/mentale-selbstverteidigung.md`, Abschnitt „12 · Kognitive Dissonanz"
+- 🖼️ Carousel „Bis zu 60.000 Gedanken am Tag", Compare-Slide „Gedankenkontrolle", Karte „Selbstkontrolle" → `docs/carousels/marketing-serien.mjs` ⚠ *kein eigener Dissonanz-Schritt vorhanden, Karte nennt „störende Gedanken entkräften" wörtlich*
+- 📝 Blog „Warum du verteidigst, was dir schadet" → `/blog/warum-du-verteidigst-was-dir-schadet`
+- 📚 Deep-Dive „Kognitive Dissonanz" (Übung „Der Unbehagen-Marker") → `/mitglieder/wissen/kognitive-dissonanz` + PDF `content/pdf/vertiefung-kognitive-dissonanz.pdf`
+- 🧘 Praxis „Loslass-Ritual" (`loslass-ritual`) → `src/lib/practices.ts`
+- 💬 Zitat-Karten (Creme) → `WMDG-Zitat-06-hell.png` (Sonntag) · `WMDG-Zitat-13-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/kognitive-dissonanz`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Warum du wegschaust." | Reel-Serie selbstverteidigung · `docs/skripte/reels/mentale-selbstverteidigung.md`, „12 · Kognitive Dissonanz" | „Wann hast du zuletzt zugegeben, dich geirrt zu haben? Schreib's in die Kommentare." |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Wenn eine neue Information nicht zum eigenen Weltbild passt, entsteht Unbehagen – und wir werten lieber die Quelle ab, als den Inhalt zu prüfen. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/kognitive-dissonanz` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Bevor im Projekt-Review eine unbequeme Zahl auftaucht, wird selten die Zahl geprüft – meistens die Quelle." Kognitive Dissonanz in Reviews, Kennzahlen und Feedback-Kultur. | Blog `/blog/warum-du-verteidigst-was-dir-schadet` (`src/lib/blog.ts`, Zeile 829–871) | Kommentar-Frage: „Bei welcher eigenen Entscheidung im Job fällt es dir am schwersten, eine gegenteilige Zahl oder Rückmeldung einfach gelten zu lassen?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Wir lehnen Informationen oft nicht ab, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen. | Blog `/blog/warum-du-verteidigst-was-dir-schadet` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – Remedy-Slide „Bewusstheit gibt dir die Kontrolle zurück", reflexiv auf die eigene Abwehrreaktion bei unbequemer Rückmeldung zugespitzt. | Carousel `wer-denkt-hier` (`docs/carousels/marketing-serien.mjs`, Remedy-Slide Zeile 109–111) | „Speichern für das nächste Review, in dem eine unbequeme Zahl schnell abgetan wird." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Selbstkontrolle oder Selbstschutz? Was du tust, wenn ein Gedanke wehtut." | Carousel `60000-gedanken`, Compare-Slide „Gedankenkontrolle"/„Selbstkontrolle" ⚠ · Blog + Deep-Dive `kognitive-dissonanz` | „Die Frage, die den blinden Fleck sichtbar macht – ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Warum du verteidigst, was dir schadet — Kognitive Dissonanz erklärt." | Blog + Deep-Dive `kognitive-dissonanz` (PDF vertiefung-kognitive-dissonanz.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Eine Meinung ändern zu können ist im Job keine Schwäche, sondern die eigentliche Führungsqualität." Übung „Der Unbehagen-Marker". | Deep-Dive `kognitive-dissonanz` · PDF vertiefung-kognitive-dissonanz.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Wir lehnen Informationen nicht ab, weil sie falsch sind" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Kognitive Dissonanz" | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „Unbehagen ist ein Hinweis, genauer hinzuschauen – nicht wegzuschauen" + Frage: „Wann hast du zuletzt zugegeben, dich geirrt zu haben – und wie hat sich das angefühlt?" | Zitat `WMDG-Zitat-13-hell.png` · Deep-Dive kognitive-dissonanz | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Welche Überzeugung hältst du fest, obwohl sie dir eigentlich schadet?" + Mini-Übung „Loslass-Ritual". | Praxis `loslass-ritual` → `/mitglieder/praxis/loslass-ritual` | „Schreib heute auf, was du eigentlich loslassen müsstest – und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Alte Muster sind keine Schwäche. Sie waren einmal dein Schutz." | Zitat `WMDG-Zitat-06-hell.png` · Vertiefung `/mitglieder/wissen/kognitive-dissonanz` | „E-Book laden (/#ebook) → Vertiefung ‚Kognitive Dissonanz' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen. Erste Woche der zweiten Hälfte von Block C – kein LinkedIn-Video-Crosspost, da die Reel-Serie *selbstverteidigung* auch hier `filmed: false` markiert ist.
+
+---
+
+### Woche 20 · Identität & Meinung — „Meinung – oder hat sie dich?"
+
+**Kernbotschaft:** Eine Meinung ist eigentlich ein Werkzeug: annehmen,
+prüfen, bei Bedarf ablegen. Verschmilzt sie aber mit der eigenen Identität –
+mit einer Gruppe, einem Lager, einem Lebensstil –, fühlt sich jede Kritik
+daran wie ein persönlicher Angriff an, und der Verstand sucht Gegenargumente
+statt Wahrheit. Eine Meinung ändern zu können ist Reife, keine Schwäche.
+
+**Verfügbares Material:**
+- 🎬 Reel „Identität & Meinung" → Reel-Serie *selbstverteidigung*, Skript, Abschnitt „15 · Identität & Meinung"
+- 🖼️ Carousel „Bis zu 60.000 Gedanken am Tag", Liste „Äußere Einflüsse", Item „Gruppendruck" → `docs/carousels/marketing-serien.mjs` ⚠ *kein eigener Identitäts-Schritt vorhanden, Item nennt „Meinungen … ungeprüft übernehmen" wörtlich*
+- 📝 Blog „Hast du eine Meinung – oder hat sie dich?" → `/blog/hast-du-eine-meinung-oder-hat-sie-dich`
+- 📚 Deep-Dive „Identität & Meinung" (Übung „Identität oder Ansicht?") → `/mitglieder/wissen/identitaet-und-meinung` + PDF `content/pdf/vertiefung-identitaet-und-meinung.pdf`
+- 🧘 Praxis „Morgen-Ausrichtung" (`morgen-ausrichtung`) → `src/lib/practices.ts`
+- 💬 Zitat-Karten (Creme) → `WMDG-Zitat-07-hell.png` (Sonntag) · `WMDG-Zitat-14-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/identitaet-und-meinung`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Hast du eine Meinung – oder sie dich?" | Reel-Serie selbstverteidigung · „15 · Identität & Meinung" | „Bei welchem Thema fühlt sich Widerspruch persönlich an? Schreib's in die Kommentare." |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Eine Meinung ist eigentlich ein Werkzeug – verschmilzt sie mit der Identität, fühlt sich jede Kritik daran wie ein Angriff auf einen selbst an. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/identitaet-und-meinung` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Sobald ‚das machen wir hier so' zur Identität einer Abteilung wird, ist jeder Verbesserungsvorschlag ein Angriff." Meinung als Zugehörigkeit im Team- und Fachkontext. | Blog `/blog/hast-du-eine-meinung-oder-hat-sie-dich` (`src/lib/blog.ts`, Zeile 917–959) | Kommentar-Frage: „Welche Arbeitsweise in deinem Team würde sofort Widerstand auslösen, wenn sie infrage gestellt würde – unabhängig davon, ob sie noch die beste ist?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Sobald eine Meinung Teil der Identität wird, fühlt sich Kritik daran wie ein persönlicher Angriff an – der Körper geht in Verteidigung. | Blog `/blog/hast-du-eine-meinung-oder-hat-sie-dich` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – Step-Slide „Gruppendruck", zugespitzt auf Team-/Abteilungszugehörigkeit als ungeprüfte Quelle fachlicher Positionen. | Carousel `wer-denkt-hier` (Step-Slide Zeile 101–102) | „Speichern für die nächste Diskussion, in der eine Meinung eigentlich nur eine Zugehörigkeit verteidigt." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Wer denkt hier eigentlich? – Meinungen, die gar nicht deine sind." | Carousel `60000-gedanken`, Item „Gruppendruck" ⚠ · Blog + Deep-Dive `identitaet-und-meinung` | „Der Test, ob eine Meinung wirklich deine ist – ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Hast du eine Meinung — oder hat die Meinung dich? Identität & Meinung erklärt." | Blog + Deep-Dive `identitaet-und-meinung` (PDF vertiefung-identitaet-und-meinung.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Du bleibst du, auch wenn eine berufliche Meinung geht – das ist der eigentliche Kern von Souveränität im Job." Übung „Identität oder Ansicht?". | Deep-Dive `identitaet-und-meinung` · PDF vertiefung-identitaet-und-meinung.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Hast du eine Meinung — oder hat die Meinung längst dich?" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Identität & Meinung" | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „Solange du eine Meinung hast, kannst du sie prüfen. Sobald die Meinung dich hat, verteidigst du sie wie dein Leben" + Frage: „Bei welchem Thema fühlt sich Widerspruch für dich ganz persönlich an?" | Zitat `WMDG-Zitat-14-hell.png` · Deep-Dive identitaet-und-meinung | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Welche Meinung würdest du nie laut infrage stellen – selbst wenn du insgeheim zweifelst?" + Mini-Übung „Morgen-Ausrichtung". | Praxis `morgen-ausrichtung` → `/mitglieder/praxis/morgen-ausrichtung` | „Wähle morgen früh bewusst eine Haltung, statt in eine alte Position zu rutschen – und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Freiheit beginnt mit einer Frage: Ist dieser Gedanke wirklich meiner?" | Zitat `WMDG-Zitat-07-hell.png` · Vertiefung `/mitglieder/wissen/identitaet-und-meinung` | „E-Book laden (/#ebook) → Vertiefung ‚Identität & Meinung' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen.
+
+---
+
+### Woche 21 · Sprache & Etiketten — „Ein Wort beendet jede Debatte"
+
+**Kernbotschaft:** „Schwurbler", „Gutmensch", „Nestbeschmutzer" – ein
+einziges Etikett kann eine Debatte beenden, bevor sie beginnt, weil es das
+Argument durch ein Gefühl ersetzt. Ein Etikett muss nichts beweisen, es muss
+nur kleben bleiben; der Test dagegen ist, es abzuziehen und nur die Handlung
+zu beschreiben.
+
+**Verfügbares Material:**
+- 🎬 Reel „Sprache & Etiketten" → Reel-Serie *selbstverteidigung*, Skript, Abschnitt „3 · Sprache & Etiketten"
+- 🖼️ Carousel „4 Wege zur mentalen Freiheit", Schritt „03 · Kritisch denken" → `docs/carousels/marketing-serien.mjs` ⚠ *kein eigener Etiketten-Schritt vorhanden*; LinkedIn zusätzlich „Studien-Fakten", Fakt „04" (Anchoring, Zweitverwendung aus Woche 11)
+- 📝 Blog „Sprache & Etiketten: Wie ein Etikett das Denken beendet" → `/blog/sprache-und-etiketten-wie-ein-etikett-das-denken-beendet`
+- 📚 Deep-Dive „Sprache & Etiketten" (Übung „Etikett abziehen") → `/mitglieder/wissen/sprache-und-etiketten` + PDF `content/pdf/vertiefung-sprache-und-etiketten.pdf`
+- 🧘 Praxis „Der Autopilot-Check" (`autopilot-check`) → `src/lib/practices.ts`
+- 💬 Zitat-Karten (Creme) → `WMDG-Zitat-14-hell.png` (Sonntag) · `WMDG-Zitat-01-hell.png` (FB-Freitag, zweite Runde durch den Ordner)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/sprache-und-etiketten`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Ein Wort beendet jede Debatte." | Reel-Serie selbstverteidigung · „3 · Sprache & Etiketten" | „Welches Reizwort triggert dich sofort? Schreib's in die Kommentare." |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | „Experte" oder „Querulant" bei derselben Aussage – ein Etikett ersetzt das Argument durch ein Gefühl und beendet damit das Prüfen, bevor es beginnt. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/sprache-und-etiketten` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Sobald ein Kollege im Meeting als ‚Bedenkenträger' einsortiert ist, hört niemand mehr, was er inhaltlich sagt." Etiketten in Meeting- und Team-Sprache. | Blog `/blog/sprache-und-etiketten-wie-ein-etikett-das-denken-beendet` (`src/lib/blog.ts`, Zeile 1351–1414) | Kommentar-Frage: „Welches Etikett wird in deinem Team benutzt, um einen Einwand nicht mehr inhaltlich prüfen zu müssen?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: „Schwurbler", „Gutmensch", „Nestbeschmutzer" – ein einziges Etikett kann jede Debatte beenden, bevor sie beginnt. | Blog `/blog/sprache-und-etiketten-wie-ein-etikett-das-denken-beendet` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „Studien-Fakten" – Fakt „04" (Anchoring, Tversky & Kahneman 1974), auf Etiketten als Wort-Anker im Job zugespitzt (Zweitverwendung, anderer Fokus als Woche 11). | Carousel `studien-fakten` (Fakt 04 Zeile 134–136) | „Speichern für das nächste Etikett, das im Meeting fällt, bevor ein Argument geprüft wurde." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Kritisch denken: Das Etikett zuerst abziehen, dann urteilen." | Carousel `4-wege-freiheit`, Schritt „03 · Kritisch denken" ⚠ · Blog + Deep-Dive `sprache-und-etiketten` | „Der Etiketten-Test aus dem Skript – ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Sprache & Etiketten: Wie ein Etikett das Denken beendet." | Blog + Deep-Dive `sprache-und-etiketten` (PDF vertiefung-sprache-und-etiketten.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Ein Etikett zu lösen heißt nicht, jede Aussage gutzuheißen – es heißt, den Kollegen wieder vom Wort zu trennen." Übung „Etikett abziehen". | Deep-Dive `sprache-und-etiketten` · PDF vertiefung-sprache-und-etiketten.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Ein einziges Wort kann eine ganze Diskussion beenden" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Sprache & Etiketten" | „Ganzes Video verlinkt oben ↑" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „Ein Etikett muss nichts beweisen. Es muss nur kleben bleiben" + Frage: „Welches Reizwort triggert bei dir sofort eine Reaktion, bevor du überhaupt geprüft hast, was gesagt wurde?" | Zitat `WMDG-Zitat-01-hell.png` · Deep-Dive sprache-und-etiketten | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Bei welchem Etikett (Experte, Aktivist, Extremist …) hörst du sofort auf zuzuhören?" + Mini-Übung „Der Autopilot-Check". | Praxis `autopilot-check` → `/mitglieder/praxis/autopilot-check` | „Nächstes Mal, wenn ein Etikett fällt: kurz innehalten, selbst benennen – und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Zwischen „so bin ich eben" und „so wähle ich" liegt deine ganze Freiheit." | Zitat `WMDG-Zitat-14-hell.png` · Vertiefung `/mitglieder/wissen/sprache-und-etiketten` | „E-Book laden (/#ebook) → Vertiefung ‚Sprache & Etiketten' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen. Zitat-Kartenzählung beginnt ab dieser Woche bewusst wieder bei `-01` (Ordner umfasst nur 14 Motive, war bis Woche 20 vollständig durchlaufen).
+
+---
+
+### Woche 22 · Medien-Agenda — „Nicht WAS – sondern WORÜBER"
+
+**Kernbotschaft:** Medien müssen nicht sagen, was man denken soll – es
+reicht, festzulegen, worüber man überhaupt nachdenkt. Was ständig vorkommt,
+wirkt automatisch wichtig, was fehlt, existiert für die Debatte kaum. Die
+Auswahl selbst ist schon die Botschaft.
+
+**Verfügbares Material:**
+- 🎬 Reel „Medien-Agenda" → Reel-Serie *selbstverteidigung*, Skript, Abschnitt „4 · Medien & Aufmerksamkeit"
+- 🖼️ Carousel „Wer denkt hier eigentlich?", Step-Slide „Algorithmen & Filterblasen" → `docs/carousels/marketing-serien.mjs` ⚠ *Zweitverwendung aus Woche 12, anderer Fokus (interne Themenauswahl)*; für IG „Bis zu 60.000 Gedanken am Tag", Item „Werbung & Medien"
+- 📝 Blog „Medien-Agenda: Nicht was du denkst, sondern worüber" → `/blog/medien-agenda-nicht-was-sondern-worueber`
+- 📚 Deep-Dive „Medien & Aufmerksamkeit" (Übung „Die Weglass-Frage") → `/mitglieder/wissen/medien-agenda` + PDF `content/pdf/vertiefung-medien-agenda.pdf`
+- 🧘 Praxis „Präsenz-Spaziergang" (`praesenz-spaziergang`) → `src/lib/practices.ts`
+- 💬 Zitat-Karten (Creme) → `WMDG-Zitat-12-hell.png` (Sonntag) · `WMDG-Zitat-02-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/medien-agenda`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Nicht WAS – sondern WORÜBER." | Reel-Serie selbstverteidigung · „4 · Medien & Aufmerksamkeit" | „Welches wichtige Thema kommt in deinem Feed eigentlich gar nicht vor? Schreib's in die Kommentare." |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Medien müssen dir nicht sagen, was du denken sollst – es reicht, festzulegen, worüber du überhaupt nachdenkst. Die Auswahl selbst ist schon die Botschaft. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/medien-agenda` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Wer die Tagesordnung eines Meetings schreibt, entscheidet mehr als jeder Redebeitrag danach." Agenda-Setting in Jour fixe, Statusberichten, internen Kanälen. | Blog `/blog/medien-agenda-nicht-was-sondern-worueber` (`src/lib/blog.ts`, Zeile 1416–1479) | Kommentar-Frage: „Welches Thema müsste in eurem nächsten Team-Meeting eigentlich auf die Tagesordnung – steht aber nie drauf?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Die wichtigste Weiche wird gestellt, lange bevor wir urteilen: bei der Frage, worüber wir überhaupt nachdenken. | Blog `/blog/medien-agenda-nicht-was-sondern-worueber` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – Step-Slide „Algorithmen & Filterblasen", auf interne Informationskanäle (Intranet, Rundmail) zugespitzt (Zweitverwendung aus Woche 12). | Carousel `wer-denkt-hier` (Step-Slide Zeile 99–100) | „Speichern für die nächste Team-Runde, in der ein wichtiges Thema einfach nie auf der Agenda steht." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Wer denkt hier eigentlich? – Werbung & Medien." | Carousel `60000-gedanken`, Item „Werbung & Medien" ⚠ · Blog + Deep-Dive `medien-agenda` | „Die drei stillen Werkzeuge der Medien-Agenda – ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Medien-Agenda: Nicht was du denkst, sondern worüber." | Blog + Deep-Dive `medien-agenda` (PDF vertiefung-medien-agenda.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Die Agenda zu durchschauen macht dich nicht zynisch – es macht dich zum aufmerksameren Kollegen." Übung „Die Weglass-Frage". | Deep-Dive `medien-agenda` · PDF vertiefung-medien-agenda.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Medien müssen dir nicht sagen, was du denken sollst" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Medien-Agenda" | „Folge für mehr Durchblick — ganzes Video oben verlinkt." |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „Nicht die Antwort formt deine Meinung, sondern die Frage, die man dir überhaupt stellt" + Frage: „Welches wichtige Thema fällt dir ein, über das gerade auffällig wenig gesprochen wird?" | Zitat `WMDG-Zitat-02-hell.png` · Deep-Dive medien-agenda | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Wann hast du zuletzt bewusst entschieden, worüber du heute nachdenkst – statt es dir sagen zu lassen?" + Mini-Übung „Präsenz-Spaziergang". | Praxis `praesenz-spaziergang` → `/mitglieder/praxis/praesenz-spaziergang` | „Lass beim nächsten Spaziergang das Handy stecken – und antworte danach auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Wovon du überzeugt bist, formt mit, wie es dir geht." | Zitat `WMDG-Zitat-12-hell.png` · Vertiefung `/mitglieder/wissen/medien-agenda` | „E-Book laden (/#ebook) → Vertiefung ‚Medien & Aufmerksamkeit' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen.
+
+---
+
+### Woche 23 · Angst-Steuerung — „Angst macht dich lenkbar"
+
+**Kernbotschaft:** Unter Bedrohung schaltet der Körper vom abwägenden Denken
+auf den schnellen Reflex um – das gilt auch bei aufgebauschten Bedrohungen,
+denn der Körper unterscheidet nicht zwischen echter Gefahr und Schlagzeile.
+Wer Bedrohung und angebotene Rettung gleichzeitig in der Hand hält, hält
+auch die Entscheidung in der Hand.
+
+**Verfügbares Material:**
+- 🎬 Reel „Angst-Steuerung" → Reel-Serie *selbstverteidigung*, Skript, Abschnitt „9 · Angst als Steuerungsmittel"
+- 🖼️ Carousel „Wer denkt hier eigentlich?", Warnsignal „Starke Emotion" → `docs/carousels/marketing-serien.mjs` ✅ *nennt „Angst … schalten dein kritisches Denken aus" wörtlich – exaktester Treffer der Serie für dieses Thema*
+- 📝 Blog „Angst-Steuerung: Warum Angst dich lenkbar macht" → `/blog/angst-steuerung-warum-angst-dich-lenkbar-macht`
+- 📚 Deep-Dive „Angst als Steuerungsmittel" (Übung „Der Angst-Abstand") → `/mitglieder/wissen/angst-steuerung` + PDF `content/pdf/vertiefung-angst-steuerung.pdf`
+- 🧘 Praxis „Box Breathing" (`box-breathing`) → `src/lib/practices.ts`
+- 💬 Studien-Kachel (Creme) → `WMDG-Studienfakt-02-hell.png` (Lieberman/UCLA 2007, Sonntag) · Zitat `WMDG-Zitat-03-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/angst-steuerung`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Angst macht dich lenkbar." | Reel-Serie selbstverteidigung · „9 · Angst als Steuerungsmittel" | „Triff im Alarm keine großen Entscheidungen. Speicher das für den nächsten Krisen-Feed." |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Unter Bedrohung schaltet der Körper vom abwägenden Denken auf den schnellen Reflex um – auch bei ausgedachten Bedrohungen. Wer beides in der Hand hält, hält die Entscheidung in der Hand. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/angst-steuerung` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Eine Belegschaft in Dauerangst um den Arbeitsplatz denkt eng, schnell und schwarz-weiß – genau dann ist sie am leichtesten zu lenken." Angst-Steuerung in Umstrukturierungen und Verhandlungen. | Blog `/blog/angst-steuerung-warum-angst-dich-lenkbar-macht` (`src/lib/blog.ts`, Zeile 1481–1544) | Kommentar-Frage: „Bei welcher beruflichen Entscheidung hast du zuletzt gemerkt, dass dir zuerst Angst gemacht und danach die einzige Lösung gleich mitgeliefert wurde?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Angst verengt den Blick und schaltet das ruhige Denken ab – der ideale Zustand, um gelenkt zu werden. | Blog `/blog/angst-steuerung-warum-angst-dich-lenkbar-macht` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – List-Slide „So erkennst du Beeinflussung", Punkt „Starke Emotion" (nennt „Angst … schalten dein kritisches Denken aus" wörtlich), ergänzt um Sharepic Affect Labeling (Lieberman 2007). | Carousel `wer-denkt-hier` (List-Slide Zeile 103–108) + Sharepic `WMDG-Studienfakt-02-hell.png` | „Speichern für die nächste Nachricht, die dich sofort in Alarm versetzt." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Wer denkt hier eigentlich? – Warnsignal Angst." | Carousel `wer-denkt-hier`, Warnsignal „Starke Emotion" ✅ · Blog + Deep-Dive `angst-steuerung` | „Ist die Gefahr wirklich so groß – und der Preis es wert? Ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Angst-Steuerung: Warum Angst dich lenkbar macht." | Blog + Deep-Dive `angst-steuerung` (PDF vertiefung-angst-steuerung.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Angst lässt sich nicht abschalten – aber du kannst lernen, aus ihrem Griff zurückzufinden, bevor du unterschreibst." Übung „Der Angst-Abstand". | Deep-Dive `angst-steuerung` · PDF vertiefung-angst-steuerung.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Ein ängstlicher Mensch ist der einfachste, den man lenken kann" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Angst-Steuerung" | „Triff im Alarm keine großen Entscheidungen. Speichern — ganzes Video oben verlinkt." |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „Wer deine Angst kontrolliert, muss deine Meinung nicht mehr überzeugen" + Frage: „Wann hat dir zuletzt jemand zuerst Angst gemacht und gleich danach die einzige Lösung dafür angeboten?" | Zitat `WMDG-Zitat-03-hell.png` · Deep-Dive angst-steuerung | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Wann hat dich zuletzt eine Angst-Schlagzeile zu einer schnellen Reaktion getrieben?" + Mini-Übung „Box Breathing". | Praxis `box-breathing` → `/mitglieder/praxis/box-breathing` | „Probier eine Runde Box Breathing, bevor du auf die nächste Alarm-Meldung reagierst – und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Ein Gefühl zu benennen dämpft die Amygdala – die Alarmzentrale des Gehirns." | Studien-Kachel `WMDG-Studienfakt-02-hell.png` (Lieberman et al., UCLA 2007) · Vertiefung `/mitglieder/wissen/angst-steuerung` | „E-Book laden (/#ebook) → Vertiefung ‚Angst als Steuerungsmittel' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen. Einer der wenigen Wochen in Block C mit exaktem Carousel-Treffer (Warnsignal „Starke Emotion" trifft „Angst" wörtlich).
+
+---
+
+### Woche 24 · Ablenkung — „Keine Lüge. Nur Lärm."
+
+**Kernbotschaft:** Man muss dir eine unbequeme Wahrheit nicht verbergen, es
+reicht, dich abzulenken. Ein ständig wechselndes Karussell aus Aufregern
+hält beschäftigt und erschöpft – und ein erschöpfter Mensch prüft nicht
+mehr, er reagiert nur noch. Die entscheidende Frage: Betrifft mich das
+wirklich, und kann ich etwas daran ändern?
+
+**Verfügbares Material:**
+- 🎬 Reel „Ablenkung" → Reel-Serie *selbstverteidigung*, Skript, Abschnitt „11 · Ablenkung & Überflutung"
+- 🖼️ Carousel „4 Wege zur mentalen Freiheit", Schritt „02 · Informationsdiät" → `docs/carousels/marketing-serien.mjs` ⚠ *deckt Informationsflut, nicht das Empörungs-Karussell im engeren Sinn*
+- 📝 Blog „Ablenkung: Keine Lüge — nur Lärm" → `/blog/ablenkung-keine-luege-nur-laerm`
+- 📚 Deep-Dive „Ablenkung & Überflutung" (Übung „Der Aufreger-Filter") → `/mitglieder/wissen/ablenkung` + PDF `content/pdf/vertiefung-ablenkung.pdf`
+- 🧘 Praxis „4-6-Atmung" (`vier-sechs-atmung`) → `src/lib/practices.ts`
+- 💬 Studien-Kachel (Creme) → `WMDG-Studienfakt-01-hell.png` (Killingsworth & Gilbert, Harvard 2010, Sonntag) · Zitat `WMDG-Zitat-04-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/ablenkung`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Keine Lüge. Nur Lärm." | Reel-Serie selbstverteidigung · „11 · Ablenkung & Überflutung" | „Deine Aufmerksamkeit ist wertvoll. Schütz sie – wovon hast du dich zuletzt ablenken lassen?" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Man muss dir eine unbequeme Wahrheit nicht verbergen, es reicht, dich abzulenken – ein erschöpfter Mensch prüft nicht mehr, er reagiert nur noch. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/ablenkung` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Niemand muss dir eine unbequeme Kennzahl verbieten – es reicht, dass zehn andere Dinge gleichzeitig ‚dringend' sind." Dringend vs. wichtig im Meeting- und Slack-Alltag. | Blog `/blog/ablenkung-keine-luege-nur-laerm` (`src/lib/blog.ts`, Zeile 1546–1609) | Kommentar-Frage: „Welche wichtige, aber leise Entwicklung in deinem Projekt ist zuletzt im Trubel des Tagesgeschäfts untergegangen?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Das Laute ist selten das Wichtige – Empörung verbreitet sich schneller als Abwägung, der Skandal schneller als die stille Entwicklung. | Blog `/blog/ablenkung-keine-luege-nur-laerm` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „4 Wege zur mentalen Freiheit" – Step-Slide „Informationsdiät" (feste Handy-Zeiten, bildschirmfrei), auf Benachrichtigungsflut und Dauererreichbarkeit im Job zugespitzt. | Carousel `4-wege-freiheit` (Step-Slide Zeile 70–72) | „Speichern für den nächsten Tag, an dem zehn Dinge gleichzeitig ‚dringend' sind." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „4 Wege zur mentalen Freiheit – Informationsdiät gegen den Dauer-Lärm." | Carousel `4-wege-freiheit`, Schritt „02 · Informationsdiät" ⚠ · Blog + Deep-Dive `ablenkung` | „Die Frage, die jeden Aufreger entlarvt – ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Ablenkung: Keine Lüge — nur Lärm." | Blog + Deep-Dive `ablenkung` (PDF vertiefung-ablenkung.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Fokus ist im Dauerlärm keine Selbstverständlichkeit, sondern eine Entscheidung, die du im Job täglich neu triffst." Übung „Der Aufreger-Filter". | Deep-Dive `ablenkung` · PDF vertiefung-ablenkung.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Man muss dir die Wahrheit nicht verbergen — es reicht, dich abzulenken" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Ablenkung" | „Deine Aufmerksamkeit ist wertvoll. Schütz sie — ganzes Video oben verlinkt." |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „Du musst niemandem den Mund verbieten, wenn alle gleichzeitig reden" + Frage: „Woran hat sich deine Aufmerksamkeit heute zuletzt festgebissen – und war es wirklich wichtig oder nur laut?" | Zitat `WMDG-Zitat-04-hell.png` · Deep-Dive ablenkung | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Wie oft hast du dich heute schon von einem Aufreger ablenken lassen, der dein Leben gar nicht betrifft?" + Mini-Übung „4-6-Atmung". | Praxis `vier-sechs-atmung` → `/mitglieder/praxis/vier-sechs-atmung` | „Nutz die 4-6-Atmung, bevor du zum nächsten Aufreger scrollst – und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „In rund 47 % der Wachzeit ist unser Geist nicht bei der Sache – und dann unglücklicher." | Studien-Kachel `WMDG-Studienfakt-01-hell.png` (Killingsworth & Gilbert, Harvard 2010) · Vertiefung `/mitglieder/wissen/ablenkung` | „E-Book laden (/#ebook) → Vertiefung ‚Ablenkung & Überflutung' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen. Sonntags-Studienfakt (Mind-Wandering, 47 %) war in Woche 14 nur verwandter Treffer für Reizüberflutung – hier ist er der eigentlich literale Beleg.
+
+---
+
+### Woche 25 · Normalisierung — „War doch schon immer so?"
+
+**Kernbotschaft:** In kleinen Schritten rutscht eine Veränderung durch, die
+auf einen Schlag Widerstand geweckt hätte – jeder einzelne Schritt wirkt zu
+klein, um sich aufzuregen. Ist etwas erst normal, verschwindet die
+Erinnerung daran, dass es einmal anders war; „war doch schon immer so"
+beschreibt eine Gewohnheit und begründet gar nichts.
+
+**Verfügbares Material:**
+- 🎬 Reel „Normalisierung" → Reel-Serie *selbstverteidigung*, Skript, Abschnitt „13 · Normalisierung"
+- 🖼️ Carousel „Wer denkt hier eigentlich?", Warnsignal „Schwarz-Weiß & „alle"" → `docs/carousels/marketing-serien.mjs` ⚠ *nennt „alle machen das" wörtlich, kein eigener Normalisierungs-Slide*; LinkedIn zusätzlich das Setup-Slide derselben Serie
+- 📝 Blog „Normalisierung: Warum „war schon immer so" kein Argument ist" → `/blog/normalisierung-war-doch-schon-immer-so`
+- 📚 Deep-Dive „Normalisierung" (Übung „Der Zeitsprung") → `/mitglieder/wissen/normalisierung` + PDF `content/pdf/vertiefung-normalisierung.pdf`
+- 🧘 Praxis „Herz-Kohärenz" (`herz-kohaerenz`) → `src/lib/practices.ts`
+- 💬 Zitat-Karten (Creme) → `WMDG-Zitat-11-hell.png` (Sonntag) · `WMDG-Zitat-05-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/normalisierung`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „„War doch schon immer so?“" | Reel-Serie selbstverteidigung · „13 · Normalisierung" | „Speicher das – und beobachte dich selbst. Wo hast du eine Veränderung zuletzt einfach hingenommen?" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | In kleinen Schritten rutscht eine Veränderung durch, die auf einen Schlag Widerstand geweckt hätte – „war doch schon immer so" stimmt fast nie. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/normalisierung` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „‚Das war schon immer so' ist im Job selten eine Begründung – es ist der Satz, mit dem sich Gewöhnung selbst tarnt." Normalisierung bei Überstunden, Tonfall, Notlösungs-Prozessen. | Blog `/blog/normalisierung-war-doch-schon-immer-so` (`src/lib/blog.ts`, Zeile 1611–1674) | Kommentar-Frage: „Welche Arbeitsweise in deinem Team würde einem neuen Kollegen am ersten Tag auffallen – dir aber schon lange nicht mehr?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Was oft genug wiederholt wird, fühlt sich irgendwann normal an – auch das, was es nicht sein sollte. | Blog `/blog/normalisierung-war-doch-schon-immer-so` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – Setup-Slide „Nicht alle deine Gedanken sind wirklich deine eigenen", auf schleichende Gewöhnung an Arbeitsnormen zugespitzt. | Carousel `wer-denkt-hier` (Setup-Slide Zeile 95–96) | „Speichern für die nächste Arbeitsweise, die du nur noch normal findest, weil du dich daran gewöhnt hast." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Wer denkt hier eigentlich? – Warnsignal „alle machen das"." | Carousel `wer-denkt-hier`, Warnsignal „Schwarz-Weiß & „alle"" ⚠ · Blog + Deep-Dive `normalisierung` | „Warum „schon immer so" fast nie stimmt – ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Normalisierung: Warum „war schon immer so" kein Argument ist." | Blog + Deep-Dive `normalisierung` (PDF vertiefung-normalisierung.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Die eigenen Maßstäbe bewusst zu halten, statt sie leise verschieben zu lassen, ist im Job eine Führungsaufgabe." Übung „Der Zeitsprung". | Deep-Dive `normalisierung` · PDF vertiefung-normalisierung.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Was gestern undenkbar war, ist heute normal — wie geht das?" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Normalisierung" | „Speicher das — und beobachte dich selbst — ganzes Video oben verlinkt." |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „„War schon immer so“ beschreibt eine Gewohnheit – und begründet gar nichts" + Frage: „Was würde dich heute noch stören, wenn du es zum ersten Mal sehen würdest – aber du hast dich längst daran gewöhnt?" | Zitat `WMDG-Zitat-05-hell.png` · Deep-Dive normalisierung | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Welche Entwicklung hast du in den letzten Jahren als „normal" hingenommen, die dich am Anfang schockiert hätte?" + Mini-Übung „Herz-Kohärenz". | Praxis `herz-kohaerenz` → `/mitglieder/praxis/herz-kohaerenz` | „Nimm dir vor der nächsten Bewertung 5 Minuten Herz-Kohärenz – und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Was du wiederholst, wird zu deiner Bahn. Also wähle bewusst." | Zitat `WMDG-Zitat-11-hell.png` · Vertiefung `/mitglieder/wissen/normalisierung` | „E-Book laden (/#ebook) → Vertiefung ‚Normalisierung' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen. Zitat `-05` (So) und `-06` (Woche 26) sind bereits aus Woche 11/12 bekannte Motive – doppelter Einsatz innerhalb der 26 Wochen möglich, sollte vor Veröffentlichung gegen den Kalender geprüft werden.
+
+---
+
+### Woche 26 · Bildmacht — „Ein Bild ist kein Beweis"
+
+**Kernbotschaft:** Ein Bild überzeugt schneller als jedes Argument – und
+genau darin liegt die Gefahr. Ein Bild beweist, dass etwas fotografiert
+wurde, nicht, was es bedeutet: Was im Ausschnitt fehlt, was davor oder
+danach geschah, entscheidet oft mehr als das Bild selbst. Abschluss der
+16-teiligen Reihe „Mentale Selbstverteidigung" (Woche 11–26).
+
+**Verfügbares Material:**
+- 🎬 Reel „Bildmacht" → Reel-Serie *selbstverteidigung*, Skript, Abschnitt „14 · Bilder statt Argumente"
+- 🖼️ Carousel „Studien-Fakten", Remedy-Slide „So liest du Studien richtig" → `docs/carousels/marketing-serien.mjs` ⚠ *strukturelle Parallele „kein Beweis", kein 1:1-Slide*; LinkedIn zusätzlich Step-Slide „Werbung & Medien" (Zweitverwendung aus Woche 15, Fokus Bild statt Preis-/Zeitdruck)
+- 📝 Blog „Bildmacht: Warum ein Bild kein Beweis ist" → `/blog/bildmacht-ein-bild-ist-kein-beweis`
+- 📚 Deep-Dive „Bilder statt Argumente" (Übung „Über den Rand hinausdenken") → `/mitglieder/wissen/bildmacht` + PDF `content/pdf/vertiefung-bildmacht.pdf`
+- 🧘 Praxis „Body-Scan" (`body-scan`) → `src/lib/practices.ts`
+- 💬 Zitat-Karten (Creme) → `WMDG-Zitat-13-hell.png` (Sonntag, Serien-Abschluss) · `WMDG-Zitat-06-hell.png` (FB-Freitag)
+- 🎯 Funnel: E-Book → `/#ebook` · Vertiefung → `/mitglieder/wissen/bildmacht`
+
+**Tagesplan (Mo–So):**
+
+| Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
+|---|---|---|---|---|---|---|
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Ein Bild ist kein Beweis." | Reel-Serie selbstverteidigung · „14 · Bilder statt Argumente" | „Ton weg, dann urteilen. Speichern – und schreib in die Kommentare, welches Bild dich zuletzt getäuscht hat." |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Ein starkes Bild wirkt in Sekundenbruchteilen und weckt Gefühle, bevor der Verstand fragen kann – und zeigt doch immer nur einen Ausschnitt. | s. IG-Reel (Mo) | „Mehr in der Vertiefung" → `/mitglieder/wissen/bildmacht` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Ein Screenshot in der Kundenpräsentation wirkt wie ein Beweis – ist aber nur ein Ausschnitt, den jemand gewählt hat." Bildmacht in Case-Studies, Dashboards, Teamfotos. | Blog `/blog/bildmacht-ein-bild-ist-kein-beweis` (`src/lib/blog.ts`, Zeile 1676–1739) | Kommentar-Frage: „Welcher Screenshot oder welches Foto hat in deinem Job zuletzt mehr überzeugt, als der Sachverhalt eigentlich hergab?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Ein Bild beweist, dass etwas fotografiert wurde, nicht, was es bedeutet – was im Ausschnitt fehlt, entscheidet oft mehr als das Bild selbst. | Blog `/blog/bildmacht-ein-bild-ist-kein-beweis` | „Ganzen Artikel lesen" |
+| **Mi** | 08:00 | LinkedIn | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – Step-Slide „Werbung & Medien" (emotionale Ansprache), auf Bilder in Pitch-Decks und Case-Studies zugespitzt (Zweitverwendung aus Woche 15). | Carousel `wer-denkt-hier` (Step-Slide Zeile 97–98) | „Speichern für die nächste Präsentation, in der ein Bild mehr überzeugt als die Zahlen dahinter." |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „So liest du Studien richtig – und so liest du auch Bilder." | Carousel `studien-fakten`, Remedy-Slide „So liest du Studien richtig" ⚠ · Blog + Deep-Dive `bildmacht` | „Was liegt außerhalb des Bildrands? Ganzer Artikel im Blog, Link in Bio." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | „Bildmacht: Warum ein Bild kein Beweis ist." | Blog + Deep-Dive `bildmacht` (PDF vertiefung-bildmacht.pdf) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Bilder lesen zu lernen heißt nicht, nichts mehr zu glauben – sondern die Frage wieder zuzulassen, bevor das Gefühl entscheidet." Abschluss-Post der gesamten 16-teiligen Reihe (Framing … Bildmacht), Übung „Über den Rand hinausdenken". | Deep-Dive `bildmacht` · PDF vertiefung-bildmacht.pdf | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: Vertiefung direkt → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Ein Bild fühlt sich an wie ein Beweis — ist aber nur ein Ausschnitt" (identisch zum IG/FB-Reel). | Reel-Serie selbstverteidigung, „Bildmacht" | „Ton weg, dann urteilen. Speichern — ganzes Video oben verlinkt." |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | „Ein Bild beweist, dass etwas fotografiert wurde – nicht, was es bedeutet" + Frage: „Wann hat dich zuletzt ein einzelnes Bild komplett überzeugt – und hast du danach geprüft, was außerhalb des Bildausschnitts lag?" | Zitat `WMDG-Zitat-06-hell.png` · Deep-Dive bildmacht | Kommentiere deine Antwort |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Welches Bild hat zuletzt sofort ein Gefühl in dir ausgelöst, bevor du überhaupt wusstest, worum es geht?" + Mini-Übung „Body-Scan". | Praxis `body-scan` → `/mitglieder/praxis/body-scan` | „Merkst du eine Körperreaktion auf ein Bild, mach kurz den Body-Scan, bevor du reagierst – und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Der erste Schritt ist nicht Kontrolle. Es ist Bemerken." | Zitat `WMDG-Zitat-13-hell.png` · Vertiefung `/mitglieder/wissen/bildmacht` | „E-Book laden (/#ebook) → Vertiefung ‚Bilder statt Argumente' in der Mitgliedschaft." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant. | — | — |
+
+**Frequenz:** IG 4 · FB 3 · LI 3 · YT 1 Video + 1 Short. **Gesamt: 12 Postings.**
+**Tagesmix:** identisch zum Muster der Vorwochen. Letzte Woche des gesamten 26-Wochen-Plans – der LinkedIn-Donnerstag fasst rückblickend alle 16 Themen von Block C zusammen, analog zum Abschluss-Pitch aus Woche 18.
+
+> **Block-C-Abschluss – Gesamtstatus Carousel-Material (Wochen 11–26):** Über
+> alle 16 Wochen deckt `docs/carousels/marketing-serien.mjs` weiterhin nur
+> drei Themen mit einem **eigenen** Schritt ab (Algorithmen/Filterblasen W12,
+> Werbung & Mangel W15, Gruppendruck W16). Für die übrigen 13 Themen (Framing,
+> Wiederholung, Reizüberflutung, Autoritätshörigkeit, Propaganda, Kognitive
+> Dissonanz, Identität & Meinung, Sprache & Etiketten, Medien-Agenda,
+> Angst-Steuerung, Ablenkung, Normalisierung, Bildmacht) wurde jeweils der
+> inhaltlich nächstliegende reale Slide gewählt und die Tiefe über
+> Blog/Deep-Dive sichergestellt (⚠, s. Material-Check je Woche). **Empfehlung
+> an Koordinator/Themen-Strategen:** für den nächsten Redaktionszyklus eine
+> eigene Carousel-Serie „Mentale Selbstverteidigung" mit den 13 fehlenden
+> Themen-Schritten produzieren.
+
+---
 
 ## Der Fahrplan (empfohlene Reihenfolge)
 
@@ -921,7 +1276,14 @@ Mentale Selbstverteidigung:
 | 16 | Gruppendruck | Mentale Selbstverteidigung |
 | 17 | Autoritätshörigkeit | Mentale Selbstverteidigung |
 | 18 | Propaganda | Mentale Selbstverteidigung |
-| ab 19 | Kognitive Dissonanz, … Bildmacht | Mentale Selbstverteidigung |
+| 19 | Kognitive Dissonanz | Mentale Selbstverteidigung |
+| 20 | Identität & Meinung | Mentale Selbstverteidigung |
+| 21 | Sprache & Etiketten | Mentale Selbstverteidigung |
+| 22 | Medien-Agenda | Mentale Selbstverteidigung |
+| 23 | Angst-Steuerung | Mentale Selbstverteidigung |
+| 24 | Ablenkung | Mentale Selbstverteidigung |
+| 25 | Normalisierung | Mentale Selbstverteidigung |
+| 26 | Bildmacht | Mentale Selbstverteidigung |
 
 > Vollständige Material-Zuordnung je Thema: `docs/marketing/redaktionsplan/themen-backlog.md`.
 > Pro Stufe stehen 3 Reel-Varianten (A/B/C) bereit – gut für Wiederholung/AB-Tests.
@@ -950,12 +1312,10 @@ Inhalte zu erfinden.
 
 ---
 
-*Erstellt aus vorhandenem Projekt-Material. Woche 1–18 sind vollständig,
+*Erstellt aus vorhandenem Projekt-Material. Alle 26 Wochen sind vollständig,
 Tag für Tag durchgeplant – Block A · 7 Stufen (1–7), Block B · Praxis &
-Wissenschaft (8–10) und Block C · Mentale Selbstverteidigung (11–18). Woche
-19–26 (Fortsetzung Block C, u. a. Kognitive Dissonanz … Bildmacht) liegen
-kompakt im interaktiven Kalender vor
-(`docs/marketing/redaktionsplan-kalender.html`). Damit ist bereits mehr als
-ein Vierteljahr Content vollständig, weitere ein halbes Jahr kompakt
-kanalübergreifend durchgeplant. Für weitere Themen oder einen neuen Zyklus:
-`/redaktionsplan`.*
+Wissenschaft (8–10) und Block C · Mentale Selbstverteidigung, komplett in
+beiden Hälften (11–18 und 19–26, 16 Themen von Framing bis Bildmacht). Damit
+ist ein volles halbes Jahr Content kanalübergreifend durchgeplant und im
+interaktiven Kalender hinterlegt (`docs/marketing/redaktionsplan-kalender.html`).
+Für weitere Themen oder einen neuen Zyklus: `/redaktionsplan`.*

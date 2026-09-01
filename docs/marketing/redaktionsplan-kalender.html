@@ -969,123 +969,267 @@
 
     { n: 19, stage: "Dissonanz", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 19 · Block C · Mentale Selbstverteidigung", title: "Kognitive Dissonanz — Warum du verteidigst, was dir schadet",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📝 Blog <code>warum-du-verteidigst-…</code>", "📚 Deep-Dive <code>kognitive-dissonanz</code>", "🧘 <code>innerer-beobachter</code>"],
-      days: mkWeekB({ next: "Woche 20 · Identität & Meinung",
-        reelHook: "Warum du wegschaust.", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "Wir verteidigen Entscheidungen, statt sie zu prüfen – teuer im Job.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Warum du verteidigst, was dir schadet", blogSlug: "warum-du-verteidigst-was-dir-schadet",
-        video: "Kognitive Dissonanz: Warum du verteidigst, was dir schadet.", videoSrc: "Blog + Deep-Dive kognitive-dissonanz",
-        practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
-        poll: "Was verteidigst du, obwohl es dir schadet?",
-        pitch: "Dissonanz aushalten statt wegzuschauen – das ist trainierbar.", pitchHref: "/mitglieder/wissen/kognitive-dissonanz",
-        community: "Wo hast du weggeschaut, statt hinzusehen?",
-        zitate: "docs/marketing/zitate/", recap: "Dissonanz-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Kognitive Dissonanz)", "🖼️ Carousel <code>60000-gedanken</code> (Selbstkontrolle ⚠)", "📝 Blog <code>warum-du-verteidigst-was-dir-schadet</code>", "📚 Deep-Dive <code>kognitive-dissonanz</code>", "🧘 <code>loslass-ritual</code>"],
+      // Woche 19 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-19/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Warum du wegschaust.“ (Kognitive Dissonanz)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Wann hast du zuletzt zugegeben, dich geirrt zu haben? Schreib's in die Kommentare" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: Wenn eine neue Information nicht zum eigenen Weltbild passt, entsteht Unbehagen – wir werten lieber die Quelle ab, als den Inhalt zu prüfen.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/kognitive-dissonanz" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Bevor im Projekt-Review eine unbequeme Zahl auftaucht, wird selten die Zahl geprüft – meistens die Quelle.“ Kognitive Dissonanz in Reviews und Feedback-Kultur.", src: "Blog /blog/warum-du-verteidigst-was-dir-schadet", cta: "Kommentar-Frage: „Bei welcher eigenen Entscheidung im Job fällt es dir am schwersten, eine gegenteilige Zahl gelten zu lassen?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Wir lehnen Informationen oft nicht ab, weil sie falsch sind, sondern weil sie unser Weltbild bedrohen.", src: "Blog /blog/warum-du-verteidigst-was-dir-schadet", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Wer denkt hier eigentlich?“ – Remedy-Slide „Bewusstheit gibt dir die Kontrolle zurück“, reflexiv auf die eigene Abwehrreaktion bei unbequemer Rückmeldung zugespitzt.", src: "Carousel wer-denkt-hier · docs/carousels/marketing-serien.mjs", cta: "Speichern für das nächste Review, in dem eine unbequeme Zahl schnell abgetan wird" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Selbstkontrolle oder Selbstschutz? Was du tust, wenn ein Gedanke wehtut.“", src: "Carousel 60000-gedanken (Compare-Slide „Selbstkontrolle“ ⚠) · Blog warum-du-verteidigst-was-dir-schadet · Deep-Dive kognitive-dissonanz", cta: "Die Frage, die den blinden Fleck sichtbar macht – ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Warum du verteidigst, was dir schadet — Kognitive Dissonanz erklärt.“", src: "Blog warum-du-verteidigst-was-dir-schadet + Deep-Dive kognitive-dissonanz (PDF vertiefung-kognitive-dissonanz.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Eine Meinung ändern zu können ist im Job keine Schwäche, sondern die eigentliche Führungsqualität.“ Übung „Der Unbehagen-Marker“.", src: "Deep-Dive kognitive-dissonanz · PDF vertiefung-kognitive-dissonanz.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Wir lehnen Informationen nicht ab, weil sie falsch sind“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Kognitive Dissonanz“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„Unbehagen ist ein Hinweis, genauer hinzuschauen – nicht wegzuschauen“ + Community-Frage: „Wann hast du zuletzt zugegeben, dich geirrt zu haben?“", src: "Zitat WMDG-Zitat-13-hell.png · Deep-Dive kognitive-dissonanz", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Welche Überzeugung hältst du fest, obwohl sie dir eigentlich schadet?“ + Mini-Übung „Loslass-Ritual“.", src: "Praxis loslass-ritual → /mitglieder/praxis/loslass-ritual", cta: "Schreib heute auf, was du eigentlich loslassen müsstest + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Alte Muster sind keine Schwäche. Sie waren einmal dein Schutz.“", src: "Zitat WMDG-Zitat-06-hell.png · Vertiefung /mitglieder/wissen/kognitive-dissonanz", cta: "E-Book laden (/#ebook) → Vertiefung „Kognitive Dissonanz“ in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 20, stage: "Identität", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 20 · Block C · Mentale Selbstverteidigung", title: "Identität & Meinung — Hast du eine Meinung, oder hat sie dich?",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📝 Blog <code>hast-du-eine-meinung-…</code>", "📚 Deep-Dive <code>identitaet-und-meinung</code>", "🧘 <code>innerer-beobachter</code>"],
-      days: mkWeekB({ next: "einen neuen Themen-Zyklus",
-        reelHook: "Hast du eine Meinung – oder sie dich?", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "Wenn Meinung zur Identität wird, wird Feedback zum Angriff.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Hast du eine Meinung – oder hat die Meinung dich?", blogSlug: "hast-du-eine-meinung-oder-hat-sie-dich",
-        video: "Identität & Meinung: Hast du eine Meinung – oder hat sie dich?", videoSrc: "Blog + Deep-Dive identitaet-und-meinung",
-        practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
-        poll: "Ist deine Meinung deine – oder hat sie dich?",
-        pitch: "Meinung von Identität trennen – der letzte Schritt zur Freiheit.", pitchHref: "/mitglieder/wissen/identitaet-und-meinung",
-        community: "Welche Meinung würdest du ungern aufgeben?",
-        zitate: "docs/marketing/zitate/", recap: "Identitäts-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Identität & Meinung)", "🖼️ Carousel <code>60000-gedanken</code> (Gruppendruck ⚠)", "📝 Blog <code>hast-du-eine-meinung-oder-hat-sie-dich</code>", "📚 Deep-Dive <code>identitaet-und-meinung</code>", "🧘 <code>morgen-ausrichtung</code>"],
+      // Woche 20 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-20/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Hast du eine Meinung – oder sie dich?“ (Identität & Meinung)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Bei welchem Thema fühlt sich Widerspruch persönlich an? Schreib's in die Kommentare" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: Eine Meinung ist eigentlich ein Werkzeug – verschmilzt sie mit der Identität, fühlt sich jede Kritik daran wie ein Angriff an.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/identitaet-und-meinung" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Sobald ‚das machen wir hier so‘ zur Identität einer Abteilung wird, ist jeder Verbesserungsvorschlag ein Angriff.“ Meinung als Zugehörigkeit im Team.", src: "Blog /blog/hast-du-eine-meinung-oder-hat-sie-dich", cta: "Kommentar-Frage: „Welche Arbeitsweise in deinem Team würde sofort Widerstand auslösen, wenn sie infrage gestellt würde?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Sobald eine Meinung Teil der Identität wird, fühlt sich Kritik daran wie ein persönlicher Angriff an – der Körper geht in Verteidigung.", src: "Blog /blog/hast-du-eine-meinung-oder-hat-sie-dich", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Wer denkt hier eigentlich?“ – Step-Slide „Gruppendruck“, zugespitzt auf Team-/Abteilungszugehörigkeit als ungeprüfte Quelle fachlicher Positionen.", src: "Carousel wer-denkt-hier · docs/carousels/marketing-serien.mjs", cta: "Speichern für die nächste Diskussion, in der eine Meinung eigentlich nur eine Zugehörigkeit verteidigt" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Wer denkt hier eigentlich? – Meinungen, die gar nicht deine sind.“", src: "Carousel 60000-gedanken (Item „Gruppendruck“ ⚠) · Blog hast-du-eine-meinung-oder-hat-sie-dich · Deep-Dive identitaet-und-meinung", cta: "Der Test, ob eine Meinung wirklich deine ist – ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Hast du eine Meinung — oder hat die Meinung dich? Identität & Meinung erklärt.“", src: "Blog hast-du-eine-meinung-oder-hat-sie-dich + Deep-Dive identitaet-und-meinung (PDF vertiefung-identitaet-und-meinung.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Du bleibst du, auch wenn eine berufliche Meinung geht – das ist der eigentliche Kern von Souveränität im Job.“ Übung „Identität oder Ansicht?“.", src: "Deep-Dive identitaet-und-meinung · PDF vertiefung-identitaet-und-meinung.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Hast du eine Meinung — oder hat die Meinung längst dich?“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Identität & Meinung“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„Solange du eine Meinung hast, kannst du sie prüfen. Sobald die Meinung dich hat, verteidigst du sie wie dein Leben“ + Frage: „Bei welchem Thema fühlt sich Widerspruch für dich ganz persönlich an?“", src: "Zitat WMDG-Zitat-14-hell.png · Deep-Dive identitaet-und-meinung", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Welche Meinung würdest du nie laut infrage stellen – selbst wenn du insgeheim zweifelst?“ + Mini-Übung „Morgen-Ausrichtung“.", src: "Praxis morgen-ausrichtung → /mitglieder/praxis/morgen-ausrichtung", cta: "Wähle morgen früh bewusst eine Haltung + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Freiheit beginnt mit einer Frage: Ist dieser Gedanke wirklich meiner?“", src: "Zitat WMDG-Zitat-07-hell.png · Vertiefung /mitglieder/wissen/identitaet-und-meinung", cta: "E-Book laden (/#ebook) → Vertiefung „Identität & Meinung“ in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 21, stage: "Sprache", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 21 · Block C · Mentale Selbstverteidigung", title: "Sprache & Etiketten — Wie ein Etikett das Denken beendet",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📚 Vertiefung <code>sprache-und-etiketten</code>", "🧘 <code>innerer-beobachter</code>"],
-      days: mkWeekB({ next: "Woche 22 · Medien-Agenda",
-        reelHook: "Ein Wort beendet jede Debatte.", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "Ein Etikett beendet jedes Argument – im Team gefährlich.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Sprache & Etiketten: Wie ein Etikett das Denken beendet", blogSlug: "sprache-und-etiketten-wie-ein-etikett-das-denken-beendet",
-        video: "Sprache & Etiketten: Wie ein Wort jede Debatte beendet.", videoSrc: "Blog + Deep-Dive sprache-und-etiketten",
-        practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
-        poll: "Welches Etikett beendet bei euch jede Diskussion?",
-        pitch: "Etiketten erkennen, bevor sie das Denken ersetzen.", pitchHref: "/mitglieder/wissen/sprache-und-etiketten",
-        community: "Welches Label wird bei euch als Totschlagargument benutzt?",
-        zitate: "docs/marketing/zitate/", recap: "Sprache-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Sprache & Etiketten)", "🖼️ Carousel <code>4-wege-freiheit</code> (Kritisch denken ⚠)", "📝 Blog <code>sprache-und-etiketten-wie-ein-etikett-das-denken-beendet</code>", "📚 Deep-Dive <code>sprache-und-etiketten</code>", "🧘 <code>autopilot-check</code>"],
+      // Woche 21 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-21/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Ein Wort beendet jede Debatte.“ (Sprache & Etiketten)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Welches Reizwort triggert dich sofort? Schreib's in die Kommentare" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: „Experte“ oder „Querulant“ bei derselben Aussage – ein Etikett ersetzt das Argument durch ein Gefühl.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/sprache-und-etiketten" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Sobald ein Kollege im Meeting als ‚Bedenkenträger‘ einsortiert ist, hört niemand mehr, was er inhaltlich sagt.“ Etiketten in Meeting- und Team-Sprache.", src: "Blog /blog/sprache-und-etiketten-wie-ein-etikett-das-denken-beendet", cta: "Kommentar-Frage: „Welches Etikett wird in deinem Team benutzt, um einen Einwand nicht mehr inhaltlich prüfen zu müssen?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: „Schwurbler“, „Gutmensch“, „Nestbeschmutzer“ – ein einziges Etikett kann jede Debatte beenden, bevor sie beginnt.", src: "Blog /blog/sprache-und-etiketten-wie-ein-etikett-das-denken-beendet", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Studien-Fakten“ – Fakt „04“ (Anchoring, Tversky & Kahneman 1974), auf Etiketten als Wort-Anker im Job zugespitzt (Zweitverwendung aus Woche 11).", src: "Carousel studien-fakten · docs/carousels/marketing-serien.mjs", cta: "Speichern für das nächste Etikett, das im Meeting fällt, bevor ein Argument geprüft wurde" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Kritisch denken: Das Etikett zuerst abziehen, dann urteilen.“", src: "Carousel 4-wege-freiheit, Schritt „03 · Kritisch denken“ ⚠ · Blog sprache-und-etiketten-… · Deep-Dive sprache-und-etiketten", cta: "Der Etiketten-Test aus dem Skript – ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Sprache & Etiketten: Wie ein Etikett das Denken beendet.“", src: "Blog sprache-und-etiketten-… + Deep-Dive sprache-und-etiketten (PDF vertiefung-sprache-und-etiketten.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Ein Etikett zu lösen heißt nicht, jede Aussage gutzuheißen – es heißt, den Kollegen wieder vom Wort zu trennen.“ Übung „Etikett abziehen“.", src: "Deep-Dive sprache-und-etiketten · PDF vertiefung-sprache-und-etiketten.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Ein einziges Wort kann eine ganze Diskussion beenden“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Sprache & Etiketten“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„Ein Etikett muss nichts beweisen. Es muss nur kleben bleiben“ + Frage: „Welches Reizwort triggert bei dir sofort eine Reaktion, bevor du überhaupt geprüft hast, was gesagt wurde?“", src: "Zitat WMDG-Zitat-01-hell.png · Deep-Dive sprache-und-etiketten", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Bei welchem Etikett (Experte, Aktivist, Extremist …) hörst du sofort auf zuzuhören?“ + Mini-Übung „Der Autopilot-Check“.", src: "Praxis autopilot-check → /mitglieder/praxis/autopilot-check", cta: "Nächstes Mal, wenn ein Etikett fällt: kurz innehalten + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Zwischen „so bin ich eben“ und „so wähle ich“ liegt deine ganze Freiheit.“", src: "Zitat WMDG-Zitat-14-hell.png · Vertiefung /mitglieder/wissen/sprache-und-etiketten", cta: "E-Book laden (/#ebook) → Vertiefung „Sprache & Etiketten“ in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 22, stage: "Medien-Agenda", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 22 · Block C · Mentale Selbstverteidigung", title: "Medien-Agenda — Nicht was du denkst, sondern worüber",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📚 Vertiefung <code>medien-agenda</code>", "🧘 <code>autopilot-check</code>"],
-      days: mkWeekB({ next: "Woche 23 · Angst-Steuerung",
-        reelHook: "Nicht WAS – sondern WORÜBER.", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "Nicht die Meinung wird gesteuert, sondern das Thema – auch in Meetings.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Medien-Agenda: Nicht was du denkst, sondern worüber", blogSlug: "medien-agenda-nicht-was-sondern-worueber",
-        video: "Medien-Agenda: Wie bestimmt wird, worüber du nachdenkst.", videoSrc: "Blog + Deep-Dive medien-agenda",
-        practice: "autopilot-check", practiceName: "Der Autopilot-Check",
-        poll: "Worüber denkst du gerade nach – wer hat das gesetzt?",
-        pitch: "Die Agenda hinter den Themen sehen.", pitchHref: "/mitglieder/wissen/medien-agenda",
-        community: "Welches Thema war zuletzt überall – und warum?",
-        zitate: "docs/marketing/zitate/", recap: "Agenda-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Medien-Agenda)", "🖼️ Carousel <code>wer-denkt-hier</code> (Algorithmen ⚠) / <code>60000-gedanken</code> (Werbung & Medien ⚠)", "📝 Blog <code>medien-agenda-nicht-was-sondern-worueber</code>", "📚 Deep-Dive <code>medien-agenda</code>", "🧘 <code>praesenz-spaziergang</code>"],
+      // Woche 22 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-22/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Nicht WAS – sondern WORÜBER.“ (Medien-Agenda)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Welches wichtige Thema kommt in deinem Feed eigentlich gar nicht vor? Schreib's in die Kommentare" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: Medien müssen dir nicht sagen, was du denken sollst – es reicht, festzulegen, worüber du überhaupt nachdenkst.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/medien-agenda" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Wer die Tagesordnung eines Meetings schreibt, entscheidet mehr als jeder Redebeitrag danach.“ Agenda-Setting in Jour fixe und Statusberichten.", src: "Blog /blog/medien-agenda-nicht-was-sondern-worueber", cta: "Kommentar-Frage: „Welches Thema müsste in eurem nächsten Team-Meeting eigentlich auf die Tagesordnung – steht aber nie drauf?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Die wichtigste Weiche wird gestellt, lange bevor wir urteilen: bei der Frage, worüber wir überhaupt nachdenken.", src: "Blog /blog/medien-agenda-nicht-was-sondern-worueber", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Wer denkt hier eigentlich?“ – Step-Slide „Algorithmen & Filterblasen“, auf interne Informationskanäle zugespitzt (Zweitverwendung aus Woche 12).", src: "Carousel wer-denkt-hier · docs/carousels/marketing-serien.mjs", cta: "Speichern für die nächste Team-Runde, in der ein wichtiges Thema nie auf der Agenda steht" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Wer denkt hier eigentlich? – Werbung & Medien.“", src: "Carousel 60000-gedanken (Item „Werbung & Medien“ ⚠) · Blog medien-agenda-… · Deep-Dive medien-agenda", cta: "Die drei stillen Werkzeuge der Medien-Agenda – ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Medien-Agenda: Nicht was du denkst, sondern worüber.“", src: "Blog medien-agenda-… + Deep-Dive medien-agenda (PDF vertiefung-medien-agenda.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Die Agenda zu durchschauen macht dich nicht zynisch – es macht dich zum aufmerksameren Kollegen.“ Übung „Die Weglass-Frage“.", src: "Deep-Dive medien-agenda · PDF vertiefung-medien-agenda.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Medien müssen dir nicht sagen, was du denken sollst“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Medien-Agenda“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Folge für mehr Durchblick — ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„Nicht die Antwort formt deine Meinung, sondern die Frage, die man dir überhaupt stellt“ + Frage: „Welches wichtige Thema fällt dir ein, über das gerade auffällig wenig gesprochen wird?“", src: "Zitat WMDG-Zitat-02-hell.png · Deep-Dive medien-agenda", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Wann hast du zuletzt bewusst entschieden, worüber du heute nachdenkst – statt es dir sagen zu lassen?“ + Mini-Übung „Präsenz-Spaziergang“.", src: "Praxis praesenz-spaziergang → /mitglieder/praxis/praesenz-spaziergang", cta: "Lass beim nächsten Spaziergang das Handy stecken + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Wovon du überzeugt bist, formt mit, wie es dir geht.“", src: "Zitat WMDG-Zitat-12-hell.png · Vertiefung /mitglieder/wissen/medien-agenda", cta: "E-Book laden (/#ebook) → Vertiefung „Medien & Aufmerksamkeit“ in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 23, stage: "Angst-Steuerung", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 23 · Block C · Mentale Selbstverteidigung", title: "Angst-Steuerung — Warum Angst dich lenkbar macht",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📚 Vertiefung <code>angst-steuerung</code>", "🧘 <code>verlaengertes-ausatmen</code>"],
-      days: mkWeekB({ next: "Woche 24 · Ablenkung",
-        reelHook: "Angst macht dich lenkbar.", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "Angst verengt den Blick – eine schlechte Basis für Entscheidungen.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Angst-Steuerung: Warum Angst dich lenkbar macht", blogSlug: "angst-steuerung-warum-angst-dich-lenkbar-macht",
-        video: "Angst-Steuerung: Wie Angst dein Urteil verengt.", videoSrc: "Blog + Deep-Dive angst-steuerung",
-        practice: "verlaengertes-ausatmen", practiceName: "Verlängertes Ausatmen",
-        poll: "Woran merkst du, dass Angst gerade entscheidet?",
-        pitch: "Aus dem Angst-Modus zurückfinden – das ist trainierbar.", pitchHref: "/mitglieder/wissen/angst-steuerung",
-        community: "Wo wurde zuletzt mit deiner Angst gearbeitet?",
-        zitate: "docs/marketing/zitate/", recap: "Angst-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Angst-Steuerung)", "🖼️ Carousel <code>wer-denkt-hier</code> (Warnsignal Starke Emotion ✅)", "📝 Blog <code>angst-steuerung-warum-angst-dich-lenkbar-macht</code>", "📚 Deep-Dive <code>angst-steuerung</code>", "🧘 <code>box-breathing</code>"],
+      // Woche 23 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-23/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Angst macht dich lenkbar.“ (Angst-Steuerung)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Triff im Alarm keine großen Entscheidungen. Speicher das für den nächsten Krisen-Feed" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: Unter Bedrohung schaltet der Körper vom abwägenden Denken auf den schnellen Reflex um – auch bei ausgedachten Bedrohungen.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/angst-steuerung" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Eine Belegschaft in Dauerangst um den Arbeitsplatz denkt eng, schnell und schwarz-weiß – genau dann ist sie am leichtesten zu lenken.“ Angst-Steuerung in Umstrukturierungen.", src: "Blog /blog/angst-steuerung-warum-angst-dich-lenkbar-macht", cta: "Kommentar-Frage: „Bei welcher beruflichen Entscheidung hast du zuletzt gemerkt, dass dir zuerst Angst gemacht und danach die Lösung gleich mitgeliefert wurde?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Angst verengt den Blick und schaltet das ruhige Denken ab – der ideale Zustand, um gelenkt zu werden.", src: "Blog /blog/angst-steuerung-warum-angst-dich-lenkbar-macht", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Wer denkt hier eigentlich?“ – List-Slide „So erkennst du Beeinflussung“, Punkt „Starke Emotion“ (nennt „Angst … schalten dein kritisches Denken aus“ wörtlich), plus Sharepic Affect Labeling (Lieberman 2007).", src: "Carousel wer-denkt-hier + Sharepic WMDG-Studienfakt-02-hell.png", cta: "Speichern für die nächste Nachricht, die dich sofort in Alarm versetzt" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Wer denkt hier eigentlich? – Warnsignal Angst.“", src: "Carousel wer-denkt-hier, Warnsignal „Starke Emotion“ ✅ · Blog angst-steuerung-… · Deep-Dive angst-steuerung", cta: "Ist die Gefahr wirklich so groß – und der Preis es wert? Ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Angst-Steuerung: Warum Angst dich lenkbar macht.“", src: "Blog angst-steuerung-… + Deep-Dive angst-steuerung (PDF vertiefung-angst-steuerung.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Angst lässt sich nicht abschalten – aber du kannst lernen, aus ihrem Griff zurückzufinden, bevor du unterschreibst.“ Übung „Der Angst-Abstand“.", src: "Deep-Dive angst-steuerung · PDF vertiefung-angst-steuerung.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Ein ängstlicher Mensch ist der einfachste, den man lenken kann“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Angst-Steuerung“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Triff im Alarm keine großen Entscheidungen. Speichern — ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„Wer deine Angst kontrolliert, muss deine Meinung nicht mehr überzeugen“ + Frage: „Wann hat dir zuletzt jemand zuerst Angst gemacht und gleich danach die einzige Lösung angeboten?“", src: "Zitat WMDG-Zitat-03-hell.png · Deep-Dive angst-steuerung", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Wann hat dich zuletzt eine Angst-Schlagzeile zu einer schnellen Reaktion getrieben?“ + Mini-Übung „Box Breathing“.", src: "Praxis box-breathing → /mitglieder/praxis/box-breathing", cta: "Probier eine Runde Box Breathing + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Ein Gefühl zu benennen dämpft die Amygdala – die Alarmzentrale des Gehirns.“", src: "Studien-Kachel WMDG-Studienfakt-02-hell.png (Lieberman et al., UCLA 2007) · Vertiefung /mitglieder/wissen/angst-steuerung", cta: "E-Book laden (/#ebook) → Vertiefung „Angst als Steuerungsmittel“ in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 24, stage: "Ablenkung", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 24 · Block C · Mentale Selbstverteidigung", title: "Ablenkung — Keine Lüge, nur Lärm",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📚 Vertiefung <code>ablenkung</code>", "🧘 <code>autopilot-check</code>"],
-      days: mkWeekB({ next: "Woche 25 · Normalisierung",
-        reelHook: "Keine Lüge. Nur Lärm.", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "Nicht Desinformation lähmt, sondern Dauerlärm – auch im Postfach.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Ablenkung: Keine Lüge – nur Lärm", blogSlug: "ablenkung-keine-luege-nur-laerm",
-        video: "Ablenkung: Wie Lärm wichtiger wirkt als Wahrheit.", videoSrc: "Blog + Deep-Dive ablenkung",
-        practice: "autopilot-check", practiceName: "Der Autopilot-Check",
-        poll: "Was lenkt dich gerade am meisten ab?",
-        pitch: "Fokus zurückgewinnen im Dauerlärm.", pitchHref: "/mitglieder/wissen/ablenkung",
-        community: "Was raubt dir am meisten Aufmerksamkeit?",
-        zitate: "docs/marketing/zitate/", recap: "Ablenkungs-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Ablenkung)", "🖼️ Carousel <code>4-wege-freiheit</code> (Informationsdiät ⚠)", "📝 Blog <code>ablenkung-keine-luege-nur-laerm</code>", "📚 Deep-Dive <code>ablenkung</code>", "🧘 <code>vier-sechs-atmung</code>"],
+      // Woche 24 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-24/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Keine Lüge. Nur Lärm.“ (Ablenkung)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Deine Aufmerksamkeit ist wertvoll. Schütz sie – wovon hast du dich zuletzt ablenken lassen?" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: Man muss dir eine unbequeme Wahrheit nicht verbergen, es reicht, dich abzulenken – ein erschöpfter Mensch prüft nicht mehr, er reagiert nur noch.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/ablenkung" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Niemand muss dir eine unbequeme Kennzahl verbieten – es reicht, dass zehn andere Dinge gleichzeitig ‚dringend‘ sind.“ Dringend vs. wichtig im Meeting-Alltag.", src: "Blog /blog/ablenkung-keine-luege-nur-laerm", cta: "Kommentar-Frage: „Welche wichtige, aber leise Entwicklung in deinem Projekt ist zuletzt im Trubel des Tagesgeschäfts untergegangen?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Das Laute ist selten das Wichtige – Empörung verbreitet sich schneller als Abwägung, der Skandal schneller als die stille Entwicklung.", src: "Blog /blog/ablenkung-keine-luege-nur-laerm", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „4 Wege zur mentalen Freiheit“ – Step-Slide „Informationsdiät“ (feste Handy-Zeiten, bildschirmfrei), auf Benachrichtigungsflut im Job zugespitzt.", src: "Carousel 4-wege-freiheit · docs/carousels/marketing-serien.mjs", cta: "Speichern für den nächsten Tag, an dem zehn Dinge gleichzeitig ‚dringend‘ sind" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„4 Wege zur mentalen Freiheit – Informationsdiät gegen den Dauer-Lärm.“", src: "Carousel 4-wege-freiheit, Schritt „02 · Informationsdiät“ ⚠ · Blog ablenkung-… · Deep-Dive ablenkung", cta: "Die Frage, die jeden Aufreger entlarvt – ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Ablenkung: Keine Lüge — nur Lärm.“", src: "Blog ablenkung-… + Deep-Dive ablenkung (PDF vertiefung-ablenkung.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Fokus ist im Dauerlärm keine Selbstverständlichkeit, sondern eine Entscheidung, die du im Job täglich neu triffst.“ Übung „Der Aufreger-Filter“.", src: "Deep-Dive ablenkung · PDF vertiefung-ablenkung.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Man muss dir die Wahrheit nicht verbergen — es reicht, dich abzulenken“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Ablenkung“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Deine Aufmerksamkeit ist wertvoll. Schütz sie — ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„Du musst niemandem den Mund verbieten, wenn alle gleichzeitig reden“ + Frage: „Woran hat sich deine Aufmerksamkeit heute zuletzt festgebissen – und war es wirklich wichtig oder nur laut?“", src: "Zitat WMDG-Zitat-04-hell.png · Deep-Dive ablenkung", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Wie oft hast du dich heute schon von einem Aufreger ablenken lassen, der dein Leben gar nicht betrifft?“ + Mini-Übung „4-6-Atmung“.", src: "Praxis vier-sechs-atmung → /mitglieder/praxis/vier-sechs-atmung", cta: "Nutz die 4-6-Atmung, bevor du zum nächsten Aufreger scrollst + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„In rund 47 % der Wachzeit ist unser Geist nicht bei der Sache – und dann unglücklicher.“", src: "Studien-Kachel WMDG-Studienfakt-01-hell.png (Killingsworth & Gilbert, Harvard 2010) · Vertiefung /mitglieder/wissen/ablenkung", cta: "E-Book laden (/#ebook) → Vertiefung „Ablenkung & Überflutung“ in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 25, stage: "Normalisierung", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 25 · Block C · Mentale Selbstverteidigung", title: "Normalisierung — Warum „war schon immer so“ kein Argument ist",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📚 Vertiefung <code>normalisierung</code>", "🧘 <code>innerer-beobachter</code>"],
-      days: mkWeekB({ next: "Woche 26 · Bildmacht",
-        reelHook: "„War doch schon immer so?“", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "„War schon immer so“ ist kein Argument – nur Gewöhnung.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Normalisierung: Warum „war schon immer so“ kein Argument ist", blogSlug: "normalisierung-war-doch-schon-immer-so",
-        video: "Normalisierung: Wie das Unnormale normal wird.", videoSrc: "Blog + Deep-Dive normalisierung",
-        practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
-        poll: "Was hast du zuletzt als „normal“ akzeptiert?",
-        pitch: "Schleichende Normalisierung bemerken.", pitchHref: "/mitglieder/wissen/normalisierung",
-        community: "Was wurde bei euch normal, was es nicht sein sollte?",
-        zitate: "docs/marketing/zitate/", recap: "Normalisierungs-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Normalisierung)", "🖼️ Carousel <code>wer-denkt-hier</code> (Warnsignal „alle machen das“ ⚠)", "📝 Blog <code>normalisierung-war-doch-schon-immer-so</code>", "📚 Deep-Dive <code>normalisierung</code>", "🧘 <code>herz-kohaerenz</code>"],
+      // Woche 25 final aus den vier Kanal-Plänen zusammengeführt:
+      // docs/marketing/redaktionsplan/woche-25/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„„War doch schon immer so?“ (Normalisierung)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Speicher das – und beobachte dich selbst. Wo hast du eine Veränderung zuletzt einfach hingenommen?" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: In kleinen Schritten rutscht eine Veränderung durch, die auf einen Schlag Widerstand geweckt hätte – „war doch schon immer so“ stimmt fast nie.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/normalisierung" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„‚Das war schon immer so‘ ist im Job selten eine Begründung – es ist der Satz, mit dem sich Gewöhnung selbst tarnt.“ Normalisierung bei Überstunden und Prozessen.", src: "Blog /blog/normalisierung-war-doch-schon-immer-so", cta: "Kommentar-Frage: „Welche Arbeitsweise in deinem Team würde einem neuen Kollegen am ersten Tag auffallen – dir aber schon lange nicht mehr?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Was oft genug wiederholt wird, fühlt sich irgendwann normal an – auch das, was es nicht sein sollte.", src: "Blog /blog/normalisierung-war-doch-schon-immer-so", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Wer denkt hier eigentlich?“ – Setup-Slide „Nicht alle deine Gedanken sind wirklich deine eigenen“, auf schleichende Gewöhnung an Arbeitsnormen zugespitzt.", src: "Carousel wer-denkt-hier · docs/carousels/marketing-serien.mjs", cta: "Speichern für die nächste Arbeitsweise, die du nur noch normal findest, weil du dich daran gewöhnt hast" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Wer denkt hier eigentlich? – Warnsignal „alle machen das“.“", src: "Carousel wer-denkt-hier, Warnsignal „Schwarz-Weiß & „alle““ ⚠ · Blog normalisierung-… · Deep-Dive normalisierung", cta: "Warum „schon immer so“ fast nie stimmt – ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Normalisierung: Warum „war schon immer so“ kein Argument ist.“", src: "Blog normalisierung-… + Deep-Dive normalisierung (PDF vertiefung-normalisierung.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Die eigenen Maßstäbe bewusst zu halten, statt sie leise verschieben zu lassen, ist im Job eine Führungsaufgabe.“ Übung „Der Zeitsprung“.", src: "Deep-Dive normalisierung · PDF vertiefung-normalisierung.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Was gestern undenkbar war, ist heute normal — wie geht das?“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Normalisierung“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Speicher das — und beobachte dich selbst — ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„„War schon immer so“ beschreibt eine Gewohnheit – und begründet gar nichts“ + Frage: „Was würde dich heute noch stören, wenn du es zum ersten Mal sehen würdest – aber du hast dich längst daran gewöhnt?“", src: "Zitat WMDG-Zitat-05-hell.png · Deep-Dive normalisierung", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Welche Entwicklung hast du in den letzten Jahren als „normal“ hingenommen, die dich am Anfang schockiert hätte?“ + Mini-Übung „Herz-Kohärenz“.", src: "Praxis herz-kohaerenz → /mitglieder/praxis/herz-kohaerenz", cta: "Nimm dir vor der nächsten Bewertung 5 Minuten Herz-Kohärenz + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Was du wiederholst, wird zu deiner Bahn. Also wähle bewusst.“", src: "Zitat WMDG-Zitat-11-hell.png · Vertiefung /mitglieder/wissen/normalisierung", cta: "E-Book laden (/#ebook) → Vertiefung „Normalisierung“ in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 26, stage: "Bildmacht", serie: "Mentale Selbstverteidigung",
       kicker: "Woche 26 · Block C · Mentale Selbstverteidigung", title: "Bildmacht — Warum ein Bild kein Beweis ist",
-      mats: ["🎬 Reel <code>selbstverteidigung.md</code>", "🖼️ Carousel <code>wer-denkt-hier</code>", "📚 Vertiefung <code>bildmacht</code>", "🧘 <code>innerer-beobachter</code>"],
-      days: mkWeekB({ next: "einen neuen Themen-Zyklus",
-        reelHook: "Ein Bild ist kein Beweis.", reelSrc: "Reel-Serie selbstverteidigung",
-        liBeitrag: "Ein Bild überzeugt schneller als Fakten – Vorsicht in Präsentationen.",
-        carousel: "Wer denkt hier eigentlich?", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Bildmacht: Warum ein Bild kein Beweis ist", blogSlug: "bildmacht-ein-bild-ist-kein-beweis",
-        video: "Bildmacht: Warum ein Bild kein Beweis ist.", videoSrc: "Blog + Deep-Dive bildmacht",
-        practice: "innerer-beobachter", practiceName: "Der innere Beobachter",
-        poll: "Welches Bild hat dich zuletzt überzeugt – zu Recht?",
-        pitch: "Bilder lesen statt ihnen zu glauben.", pitchHref: "/mitglieder/wissen/bildmacht",
-        community: "Welches Bild ging viral und war irreführend?",
-        zitate: "docs/marketing/zitate/", recap: "Bildmacht-Woche" }) },
+      mats: ["🎬 Reel <code>selbstverteidigung.md</code> (Bildmacht)", "🖼️ Carousel <code>studien-fakten</code> (So liest du Studien richtig ⚠) / <code>wer-denkt-hier</code> (Werbung & Medien ⚠)", "📝 Blog <code>bildmacht-ein-bild-ist-kein-beweis</code>", "📚 Deep-Dive <code>bildmacht</code>", "🧘 <code>body-scan</code>"],
+      // Woche 26 final aus den vier Kanal-Plänen zusammengeführt (Abschluss Block C, Woche 11–26):
+      // docs/marketing/redaktionsplan/woche-26/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Ein Bild ist kein Beweis.“ (Bildmacht)", src: "Reel-Serie selbstverteidigung · src/lib/reels.ts · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Ton weg, dann urteilen. Speichern – und schreib in die Kommentare, welches Bild dich zuletzt getäuscht hat" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post: Ein starkes Bild wirkt in Sekundenbruchteilen und weckt Gefühle, bevor der Verstand fragen kann – und zeigt doch nur einen Ausschnitt.", src: "s. IG-Reel (Mo)", cta: "Mehr zum Thema in der Vertiefung → /mitglieder/wissen/bildmacht" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Ein Screenshot in der Kundenpräsentation wirkt wie ein Beweis – ist aber nur ein Ausschnitt, den jemand gewählt hat.“ Bildmacht in Case-Studies und Dashboards.", src: "Blog /blog/bildmacht-ein-bild-ist-kein-beweis", cta: "Kommentar-Frage: „Welcher Screenshot oder welches Foto hat in deinem Job zuletzt mehr überzeugt, als der Sachverhalt eigentlich hergab?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Ein Bild beweist, dass etwas fotografiert wurde, nicht, was es bedeutet – was im Ausschnitt fehlt, entscheidet oft mehr als das Bild selbst.", src: "Blog /blog/bildmacht-ein-bild-ist-kein-beweis", cta: "Ganzen Artikel lesen" },
+          { t: "08:00", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Wer denkt hier eigentlich?“ – Step-Slide „Werbung & Medien“ (emotionale Ansprache), auf Bilder in Pitch-Decks zugespitzt (Zweitverwendung aus Woche 15).", src: "Carousel wer-denkt-hier · docs/carousels/marketing-serien.mjs", cta: "Speichern für die nächste Präsentation, in der ein Bild mehr überzeugt als die Zahlen dahinter" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„So liest du Studien richtig – und so liest du auch Bilder.“", src: "Carousel studien-fakten, Remedy-Slide „So liest du Studien richtig“ ⚠ · Blog bildmacht-… · Deep-Dive bildmacht", cta: "Was liegt außerhalb des Bildrands? Ganzer Artikel im Blog, Link in Bio" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Bildmacht: Warum ein Bild kein Beweis ist.“", src: "Blog bildmacht-… + Deep-Dive bildmacht (PDF vertiefung-bildmacht.pdf)", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Bilder lesen zu lernen heißt nicht, nichts mehr zu glauben – sondern die Frage wieder zuzulassen, bevor das Gefühl entscheidet.“ Abschluss-Post der 16-teiligen Reihe, Übung „Über den Rand hinausdenken“.", src: "Deep-Dive bildmacht · PDF vertiefung-bildmacht.pdf", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Ein Bild fühlt sich an wie ein Beweis — ist aber nur ein Ausschnitt“ (identisch zum IG/FB-Reel).", src: "Reel-Serie selbstverteidigung, „Bildmacht“ · docs/skripte/reels/mentale-selbstverteidigung.md", cta: "Ton weg, dann urteilen. Speichern — ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "„Ein Bild beweist, dass etwas fotografiert wurde – nicht, was es bedeutet“ + Frage: „Wann hat dich zuletzt ein einzelnes Bild komplett überzeugt – und hast du geprüft, was außerhalb des Bildausschnitts lag?“", src: "Zitat WMDG-Zitat-06-hell.png · Deep-Dive bildmacht", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Welches Bild hat zuletzt sofort ein Gefühl in dir ausgelöst, bevor du überhaupt wusstest, worum es geht?“ + Mini-Übung „Body-Scan“.", src: "Praxis body-scan → /mitglieder/praxis/body-scan", cta: "Merkst du eine Körperreaktion auf ein Bild, mach kurz den Body-Scan + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Der erste Schritt ist nicht Kontrolle. Es ist Bemerken.“", src: "Zitat WMDG-Zitat-13-hell.png · Vertiefung /mitglieder/wissen/bildmacht", cta: "E-Book laden (/#ebook) → Vertiefung „Bilder statt Argumente“ in der Mitgliedschaft" },
+        ]},
+      ] },
   ];
 
   const board = document.getElementById("board");
