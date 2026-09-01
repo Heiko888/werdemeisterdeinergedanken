@@ -376,17 +376,38 @@
 
   const WEEKS = [
     { n: 1, stage: "Autopilot", headline: "Wie oft entscheidest du wirklich?",
-      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>60000-gedanken</code>", "📝 Blog <code>drei-muster-…</code>", "📘 <code>/mitglieder/stufe/1</code>", "🧘 <code>autopilot-check</code>"],
-      days: mkWeek({ n: 1, next: "Stufe 2 · Erwachen",
-        reelHook: "Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide.",
-        liBeitrag: "Wie viele Entscheidungen triffst du im Meeting wirklich bewusst?",
-        carousel: "Bis zu 60.000 Gedanken am Tag", carouselSrc: "carousels/marketing-serien.mjs",
-        blogTitle: "Drei Muster, die dich unbewusst steuern", blogSlug: "drei-muster-…",
-        video: "Autopilot: Warum du weniger entscheidest, als du denkst.",
-        practice: "autopilot-check", practiceName: "Der Autopilot-Check",
-        poll: "Wie viel % läuft bei dir auf Autopilot?",
-        pitch: "Bewusster entscheiden lässt sich üben – in 7 Stufen.",
-        community: "Welche Gewohnheit machst du komplett automatisch?" }) },
+      kicker: "Woche 1 · Stufe 1 · Autopilot", title: "Stufe 1 · Autopilot — Wie oft entscheidest du wirklich?",
+      mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>60000-gedanken</code> / <code>stufen-ueberblick</code>", "📝 Blog <code>/blog/drei-muster-…</code>", "📘 <code>/mitglieder/stufe/1</code>", "🧘 <code>autopilot-check</code>"],
+      // Woche 1 final aus den vier Kanal-Plänen zusammengeführt (nicht über mkWeek(),
+      // da Tage/Uhrzeiten von der generischen Vorlage abweichen):
+      // docs/marketing/redaktionsplan/{instagram,facebook,linkedin,youtube}.md
+      days: [
+        { wd: "Montag", n: "Aufmerksamkeit", rest: false, posts: [
+          { t: "18:00", ch: "ig", fmt: "🎬 Reel", title: "„Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide.“ (Autopilot, Variante A)", src: "Reel-Serie stufen · src/lib/reels.ts · docs/skripte/reels/stufen.md", cta: "Folgen · Speichern" },
+          { t: "18:00", ch: "fb", fmt: "🎬 Reel (Crosspost)", title: "Gleiches Reel als Cross-Post + Kontext: der Autopilot spart Energie – bis er wiederholt, was man längst nicht mehr will.", src: "s. IG-Reel (Mo)", cta: "Mehr zu Stufe 1 → /mitglieder/stufe/1" },
+        ]},
+        { wd: "Dienstag", n: "Aha", rest: false, posts: [
+          { t: "07:30", ch: "li", fmt: "📝 Beitrag", title: "„Drei Muster laufen in fast jedem Team unbewusst mit – und sie entscheiden öfter als jeder Meeting-Beschluss.“ Die drei Blog-Muster im Arbeitsalltag.", src: "Blog /blog/drei-muster-die-dich-unbewusst-steuern", cta: "Kommentar-Frage: „Welches Muster erkennst du wieder?“" },
+        ]},
+        { wd: "Mittwoch", n: "Vertiefung", rest: false, posts: [
+          { t: "08:00", ch: "fb", fmt: "📝 Beitrag", title: "Blog-Anriss: Drei innere Muster laufen unbewusst mit und bestimmen, wie wir entscheiden und fühlen.", src: "Blog /blog/drei-muster-die-dich-unbewusst-steuern", cta: "Ganzen Artikel lesen" },
+          { t: "08:15", ch: "li", fmt: "🖼️ Carousel", title: "Document-Post „Bis zu 60.000 Gedanken am Tag – wie viele sind wirklich deine?“, zugespitzt auf Meetings/Priorisierung.", src: "Carousel 60000-gedanken · docs/carousels/marketing-serien.mjs", cta: "Speichern & Teilen" },
+          { t: "12:30", ch: "ig", fmt: "🖼️ Carousel", title: "„Autopilot – du wirst gelebt: 3 Muster, die gerade für dich entscheiden.“ Vertiefung mit Blog + Deep-Dive.", src: "Carousel stufen-ueberblick · Blog /blog/drei-muster-… · Deep-Dive automatische-gedanken", cta: "Link in Bio · Speichern" },
+          { t: "17:00", ch: "yt", fmt: "▶️ Video", title: "Hauptvideo: „Autopilot: Warum du oft gar nicht selbst entscheidest (Stufe 1).“", src: "Blog + Deep-Dive automatische-gedanken + Lektion /mitglieder/stufe/1", cta: "Kostenloses E-Book sichern → /#ebook" },
+        ]},
+        { wd: "Donnerstag", n: "Anwenden", rest: false, posts: [
+          { t: "07:45", ch: "li", fmt: "🎯 Pitch", title: "„Der Weg vom Autopilot zur bewussten Entscheidung beginnt mit einer 2-Minuten-Übung.“ Autopilot-Check + E-Book.", src: "Praxis autopilot-check · Lektion /mitglieder/stufe/1", cta: "Kostenloses E-Book sichern → /#ebook" },
+          { t: "12:00", ch: "yt", fmt: "⚡ Short", title: "„Diese eine Frage entlarvt deinen Autopiloten“ – Der Autopilot-Check (30 Sek.), Variante C, identisch zum IG/FB-Reel-Thema.", src: "Reel-Serie stufen, Variante C · docs/skripte/reels/stufen.md", cta: "Ganzes Video oben verlinkt" },
+        ]},
+        { wd: "Freitag", n: "Angebot", rest: false, posts: [
+          { t: "18:00", ch: "fb", fmt: "💬 Zitat + Community-Frage", title: "Zitatkarte „automatische Bewertung“ + Community-Frage: „Welcher automatische Gedanke meldet sich bei dir am häufigsten?“", src: "Zitat WMDG-Zitat-01-hell.png · Deep-Dive automatische-gedanken", cta: "Kommentiere deine Antwort" },
+          { t: "19:00", ch: "ig", fmt: "📚 Story", title: "Umfrage „Ehrlich – bist du gerade im Autopilot oder bewusst dabei?“ + Mini-Übung „Der Autopilot-Check“.", src: "Praxis autopilot-check → /mitglieder/praxis/autopilot-check", cta: "2-Minuten-Check + Umfrage-Antwort" },
+        ]},
+        { wd: "Samstag", n: "Ruhetag", rest: true, posts: [] },
+        { wd: "Sonntag", n: "Angebot", rest: false, posts: [
+          { t: "08:00", ch: "ig", fmt: "💬 Zitat + 🎯 Pitch", title: "„Raus aus dem Autopilot – rein in echte innere Klarheit.“ Zitat-Kachel + Verweis auf Lektion & E-Book.", src: "Zitat WMDG-Zitat-04-hell.png · Lektion /mitglieder/stufe/1", cta: "E-Book laden (/#ebook) → Stufe 1 in der Mitgliedschaft" },
+        ]},
+      ] },
 
     { n: 2, stage: "Erwachen", headline: "Wer hört zu, wenn du denkst?",
       mats: ["🎬 Reel <code>stufen.md</code>", "🖼️ Carousel <code>stufen-ueberblick</code>", "📝 Blog <code>du-bist-nicht-deine-gedanken</code>", "📘 <code>/mitglieder/stufe/2</code>", "🧘 <code>atembeobachtung</code>"],

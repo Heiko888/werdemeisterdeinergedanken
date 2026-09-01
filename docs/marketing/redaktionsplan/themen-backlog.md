@@ -31,7 +31,7 @@ Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
 
 | Woche | Stufe / Thema | Status | Reel-Hook (Beispiel) | Blog-Slug (`/wissen/blog/…`) | Deep-Dive (`/mitglieder/wissen/…`) | Praxis |
 |---|---|---|---|---|---|---|
-| 1 | **Stufe 1 · Autopilot** | geplant | „Wie oft entscheide ich wirklich?" | `drei-muster-die-dich-unbewusst-steuern` | `automatische-gedanken` | `autopilot-check` |
+| 1 | **Stufe 1 · Autopilot** | geplant | „Wie oft entscheide ich wirklich?" | `drei-muster-die-dich-unbewusst-steuern` ⚠ | `automatische-gedanken` | `autopilot-check` |
 | 2 | **Stufe 2 · Erwachen** | geplant | „Wer hört zu, wenn du denkst?" | `du-bist-nicht-deine-gedanken` | `reiz-reaktions-luecke` | `atembeobachtung` |
 | 3 | **Stufe 3 · Selbstbeobachtung** | geplant | „Nicht in jeden Gedanken springen" | `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` | `kognitive-verzerrungen` | `innerer-beobachter` |
 | 4 | **Stufe 4 · Emotionale Reifung** | geplant | „Wie lang dauert ein Gefühl wirklich?" | `gefuehle-benennen-beruhigt-das-gehirn` | `emotionsregulation` | `verlaengertes-ausatmen` |
@@ -42,6 +42,12 @@ Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
 > Reel-Varianten A/B/C je Stufe erlauben Wiederholung/AB-Tests über mehrere Wochen.
 > ⚠ Für Stufe 3/6/7 ist der Blog-Slug thematisch **naheliegend**, nicht 1:1 –
 > bei Bedarf einen passenden Stufen-Blog ergänzen.
+> ⚠ **Korrektur Woche 1 (vom instagram-planer geprüft):** Der Blog liegt real
+> unter **`/blog/…`** (`src/app/blog/[slug]/page.tsx`), **nicht** unter
+> `/wissen/blog/…` wie die Spaltenüberschrift suggeriert. Für Woche 1 also
+> `/blog/drei-muster-die-dich-unbewusst-steuern` verwenden. Die
+> Spaltenüberschrift wurde für die übrigen Wochen noch nicht einzeln
+> gegengeprüft – bitte bei Bedarf je Woche verifizieren.
 
 ## Block B — Praxis & Wissenschaft (Wochen 8–10, ruhigere Blöcke)
 
