@@ -58,9 +58,7 @@ https://werdemeisterdeinergedanken.de/#ebook
 
 **Stichwort-Tags:** Meditation Wissenschaft, Achtsamkeit, Neuroplastizität, Amygdala, abschweifender Geist
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block B vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-meditation-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
@@ -90,10 +88,7 @@ Präsenz ist kein Luxus
 **CTA im Video:** „Mehr Übungen zur Präsenz — ganzes Video oben
 verlinkt."
 
-**Thumbnail:** Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu
-produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-meditation-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 

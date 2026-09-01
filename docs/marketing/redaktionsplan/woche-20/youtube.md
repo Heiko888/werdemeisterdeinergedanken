@@ -53,9 +53,7 @@ https://werdemeisterdeinergedanken.de/#ebook
 
 **Stichwort-Tags:** Identität und Meinung, Mentale Selbstverteidigung, Manipulation erkennen, kritisches Denken, Selbstreflexion
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-identitaet-und-meinung-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
@@ -81,9 +79,7 @@ https://werdemeisterdeinergedanken.de/#ebook
 **CTA im Video:** „Bei welchem Thema fühlt sich Widerspruch persönlich an? —
 ganzes Video oben verlinkt."
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-identitaet-und-meinung-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
