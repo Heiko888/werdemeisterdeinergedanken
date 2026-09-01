@@ -36,10 +36,10 @@ export default async function ProgrammPage() {
 
   const done = await getProgrammFortschritt();
 
-  // Titelbild des Programms: horizontal gespiegelt dargestellt (-scale-x-100).
-  // Wie bei LessonHero – Seitenverhältnis für das mobile Bildband kommt
-  // automatisch aus der Datei (Fallback auf das native Format, falls es nicht
-  // gelesen werden kann).
+  // Titelbild des Programms (die Datei selbst ist horizontal gespiegelt:
+  // Baum links, Schriftzug rechts). Wie bei LessonHero – Seitenverhältnis für
+  // das mobile Bildband kommt automatisch aus der Datei (Fallback auf das
+  // native Format, falls es nicht gelesen werden kann).
   const heroImage = "/hero-programm.webp";
   const bandAspect = heroImageAspect(heroImage) ?? "1672 / 941";
 
@@ -59,7 +59,7 @@ export default async function ProgrammPage() {
             fill
             priority
             sizes="100vw"
-            className="z-0 -scale-x-100 object-cover object-center"
+            className="z-0 object-cover object-center"
           />
           {/* Unterkante mobil ins Navy blenden, damit Bildband und Textblock
               weich ineinander übergehen. */}
