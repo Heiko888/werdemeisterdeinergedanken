@@ -22,6 +22,32 @@ export function Hero() {
         }}
       />
 
+      {/* Warmes Oberlicht: füllt den Bereich direkt unter dem (weißen) Header
+          mit einem weichen, breiten Gold-Schein, damit dort oben kein dunkler
+          Leerraum entsteht. Läuft nach unten sanft auf transparent aus –
+          keine harte Kante. Hero-spezifisch (die geteilte HERO_GLOW bleibt). */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-1/2"
+        style={{
+          background:
+            "radial-gradient(80% 100% at 50% 0%, color-mix(in oklab, var(--color-gold-500) 13%, transparent), transparent 70%)",
+        }}
+      />
+
+      {/* Weicher Übergang zur hellen Folge-Sektion: Navy-Grund und Porträt lösen
+          sich zum unteren Rand hin in den Papierton auf, damit der Wechsel
+          dunkel→hell nicht als harte Kante bricht. Die Ausblende sitzt bewusst
+          nur im unteren Bereich, damit Text und „7 Stufen"-Kennzahl klar bleiben. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-36 sm:h-48 lg:h-56"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent 0%, transparent 44%, color-mix(in oklab, var(--color-paper) 42%, transparent) 74%, var(--color-paper) 100%)",
+        }}
+      />
+
       <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[0.95fr_1fr] lg:items-end lg:pb-0">
         <div className="flex flex-col items-start gap-7 sm:gap-8 lg:self-center lg:pb-28">
           <Reveal>
@@ -89,20 +115,24 @@ export function Hero() {
 
         <Reveal delay={200} className="relative hidden w-full self-end lg:block">
           <div className="relative mx-auto w-fit">
-            {/* Gold-Glow hinter Kopf/Oberkörper */}
+            {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
+                Schulter umhüllt und diffus in den Navy-Grund ausläuft.
+                Wichtig: inset-0 (bleibt im Bild) + Blur – der Glow darf NICHT
+                über die Sektions-Oberkante hinausragen, sonst kappt das
+                overflow-hidden der Section ihn als harte Kante über dem Kopf. */}
             <div
               aria-hidden
-              className="pointer-events-none absolute left-1/2 top-[2%] -z-10 aspect-square w-[92%] -translate-x-1/2 rounded-full opacity-60 blur-3xl"
+              className="pointer-events-none absolute inset-0 -z-10 opacity-85 blur-[80px]"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), color-mix(in oklab, var(--color-gold-500) 12%, transparent) 40%, transparent 72%)",
+                  "radial-gradient(46% 42% at 50% 34%, color-mix(in oklab, var(--color-gold-500) 34%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 16%, transparent) 40%, color-mix(in oklab, var(--color-gold-500) 5%, transparent) 66%, transparent 92%)",
               }}
             />
             <Image
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_22px_rgba(217,169,58,0.4))_drop-shadow(0_0_48px_rgba(217,169,58,0.28))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
+              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
