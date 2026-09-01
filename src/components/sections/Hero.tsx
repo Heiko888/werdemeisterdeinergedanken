@@ -92,17 +92,17 @@ export function Hero() {
             {/* Gold-Glow hinter Kopf/Oberkörper */}
             <div
               aria-hidden
-              className="pointer-events-none absolute left-1/2 top-[6%] -z-10 aspect-square w-[78%] -translate-x-1/2 rounded-full opacity-70 blur-2xl"
+              className="pointer-events-none absolute left-1/2 top-[2%] -z-10 aspect-square w-[92%] -translate-x-1/2 rounded-full opacity-60 blur-3xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 34%, transparent), transparent 66%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), color-mix(in oklab, var(--color-gold-500) 12%, transparent) 40%, transparent 72%)",
               }}
             />
             <Image
               src={heikoHero}
               alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
               priority
-              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_11px_rgba(217,169,58,0.6))_drop-shadow(0_0_30px_rgba(217,169,58,0.4))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
+              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_22px_rgba(217,169,58,0.4))_drop-shadow(0_0_48px_rgba(217,169,58,0.28))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
             />
             {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
             <div
