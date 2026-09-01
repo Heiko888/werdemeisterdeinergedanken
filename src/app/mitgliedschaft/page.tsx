@@ -155,20 +155,20 @@ export default async function MitgliedschaftPage({
           aria-hidden
           className="pointer-events-none absolute inset-0 z-0 hidden lg:block"
           style={{
-            background: `linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 92%, transparent), color-mix(in oklab, var(--color-navy-900) 68%, transparent) 55%, color-mix(in oklab, var(--color-navy-900) 40%, transparent))`,
+            background: `linear-gradient(to bottom, color-mix(in oklab, var(--color-navy-900) 55%, transparent), transparent 30%, color-mix(in oklab, var(--color-navy-900) 45%, transparent)), linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 97%, transparent), color-mix(in oklab, var(--color-navy-900) 82%, transparent) 42%, color-mix(in oklab, var(--color-navy-900) 50%, transparent) 74%, color-mix(in oklab, var(--color-navy-900) 28%, transparent))`,
           }}
         />
         <Container className="relative z-10">
-          <div className="max-w-xl pb-16 pt-10 sm:pb-20 sm:pt-12 lg:py-28">
+          <div className="max-w-xl pb-16 pt-10 [text-shadow:0_1px_18px_rgba(8,16,42,0.6)] sm:pb-20 sm:pt-12 lg:py-28">
             <Eyebrow>Der Mitgliederbereich</Eyebrow>
             <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
               Vom Autopilot zur <em className="accent">Meisterschaft</em>
             </h1>
-            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/80">
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/90">
               Ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System,
               das mit dir wächst. Raus aus alten Mustern, rein in echte innere Klarheit.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap">
               <CheckoutButton size="lg" className="w-full sm:w-auto">
                 Mitglied werden
               </CheckoutButton>
@@ -179,11 +179,11 @@ export default async function MitgliedschaftPage({
                 Kostenlosen Bewusstseinstest machen
               </Link>
             </div>
-            <p className="mt-4 text-sm text-cream/70">
+            <p className="mt-4 text-sm text-cream/80">
               Ab {PRICE} {PRICE_PER} · oder {PLANS.jahr.price} {PLANS.jahr.per}{" "}
-              <span className="text-cream/50">(2 Monate gratis)</span> · jederzeit kündbar
+              <span className="text-cream/60">(2 Monate gratis)</span> · jederzeit kündbar
             </p>
-            <p className="mt-6 flex items-center gap-2 text-sm text-cream/65">
+            <p className="mt-6 flex items-center gap-2 text-sm text-cream/75">
               <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
               Bodenständig, ehrlich, ohne esoterisches Blabla. In deinem Tempo.
             </p>
