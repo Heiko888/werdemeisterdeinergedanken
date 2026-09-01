@@ -1,14 +1,28 @@
-# Redaktionsplan – Muster-Woche (Start: Die 7 Stufen)
+# Redaktionsplan – Woche 1 (Start: Die 7 Stufen)
 
 > **Prinzip:** Ein Wochenthema, alle Kanäle gleichzeitig. Instagram, Facebook,
 > LinkedIn und YouTube spielen dieselbe Kernidee – jeweils im Format, das auf dem
 > Kanal am besten funktioniert. So entsteht aus **einer** Idee ein **ganzer**
 > Wochen-Content, und die Botschaft wird über die Woche hinweg wiederholt vertieft.
 
-Dieser Plan zeigt **Woche 1** als komplett durchgeplante Muster-Woche. Der
-Einstieg beginnt bewusst **sanft mit den 7 Stufen** (der eigentlichen Programm-
-Reise), nicht mit gesellschaftskritischen „harten" Themen – diese kommen später
-als vertiefender Block (siehe Themen-Backlog).
+Dieser Plan zeigt **Woche 1** als komplett durchgeplante, von den vier
+Kanal-Planern (instagram-planer, facebook-planer, linkedin-planer,
+youtube-planer) final ausgearbeitete Woche. Der Einstieg beginnt bewusst
+**sanft mit den 7 Stufen** (der eigentlichen Programm-Reise), nicht mit
+gesellschaftskritischen „harten" Themen – diese kommen später als vertiefender
+Block (siehe Themen-Backlog).
+
+> **Korrektur (vom instagram-planer verifiziert):** Der Blog-Slug
+> `drei-muster-die-dich-unbewusst-steuern` liegt real unter **`/blog/…`**
+> (Route `src/app/blog/[slug]/page.tsx`), **nicht** unter `/wissen/blog/…`. Alle
+> Blog-Links unten in diesem Plan verwenden den korrekten Pfad
+> `/blog/drei-muster-die-dich-unbewusst-steuern`; der Themen-Backlog wurde
+> entsprechend annotiert.
+>
+> Quelle der einzelnen Kanalpläne: `docs/marketing/redaktionsplan/instagram.md`,
+> `docs/marketing/redaktionsplan/facebook.md`,
+> `docs/marketing/redaktionsplan/linkedin.md`,
+> `docs/marketing/redaktionsplan/youtube.md`.
 
 - **Frequenz (fokussiert / nachhaltig):** Instagram 4× · Facebook 3× · LinkedIn 3× · YouTube 1×
 - **Wochen-Dramaturgie:** Aufmerksamkeit → Aha → Anwenden → Angebot (Pitch)
@@ -54,36 +68,48 @@ als vertiefender Block (siehe Themen-Backlog).
 
 **Verfügbares Material zu diesem Thema:**
 - 🎬 Reel-Skript „Autopilot" (Varianten A/B/C) → `docs/skripte/reels/stufen.md` (`src/lib/reels.ts`, Serie „stufen")
-- 🖼️ Carousel „Bis zu 60.000 Gedanken am Tag" → `docs/carousels/marketing-serien.mjs` (Serie `60000-gedanken`)
-- 📝 Blog „Drei Muster, die dich unbewusst steuern" → `/wissen/blog/drei-muster-die-dich-unbewusst-steuern`
+- 🖼️ Carousel „Bis zu 60.000 Gedanken am Tag" → `docs/carousels/marketing-serien.mjs` (Serie `60000-gedanken`); Carousel-Slide „01 · Autopilot – Du wirst gelebt" → `docs/carousels/stufen-ueberblick.mjs`
+- 📝 Blog „Drei Muster, die dich unbewusst steuern" → **`/blog/drei-muster-die-dich-unbewusst-steuern`** (korrigierter Pfad, s. Hinweis oben; `src/lib/blog.ts`)
 - 📚 Deep-Dive „Automatische Gedanken" → `/mitglieder/wissen/automatische-gedanken`
-- 📘 Lektion „Stufe 1 · Autopilot" → `/mitglieder/stufe/1` · PDF `content/pdf/stufe-1-lektion.pdf`
-- 🧘 Praxis „Der Autopilot-Check" → `src/lib/practices.ts` (`autopilot-check`)
-- 💬 Zitat-Karten → `docs/marketing/zitate/`
+- 📘 Lektion „Stufe 1 · Autopilot" → `/mitglieder/stufe/1` · PDF `content/pdf/stufe-1-lektion.pdf` (+ `stufe-1-uebungen.pdf`)
+- 🧘 Praxis „Der Autopilot-Check" → `src/lib/practices.ts` (`autopilot-check`, `relatedStage: 1`)
+- 💬 Zitat-Karten (Creme `-hell.png` als Standard) → `docs/marketing/zitate/1x1/WMDG-Zitat-04-hell.png` (Sonntags-Pitch) · `docs/marketing/zitate/1x1/WMDG-Zitat-01-hell.png` (Facebook-Community-Post)
 - 🎯 Funnel: E-Book „Die 7 Stufen kompakt" → `/#ebook` · Stufe 1 → `/mitglieder/stufe/1`
 
 ---
 
 ## Tagesplan (Mo–So)
 
+> Quelle je Zeile: der jeweilige Kanal-Teilplan (s. o.). Zeiten/Formate 1:1 aus
+> den vier Kanal-Plänen übernommen, hier nur nach Wochentag sortiert und
+> zusammengeführt.
+
 | Tag | Uhrzeit | Kanal | Format | Inhalt / Hook | Quelle | CTA / Ziel |
 |---|---|---|---|---|---|---|
-| **Mo** | 18:00 | Instagram | 🎬 Reel | „Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide." (Autopilot A) | Reel-Serie *stufen* | Folgen · „Speichern" |
-| **Mo** | 19:00 | Facebook | 🎬 Reel | Gleiches Reel als Cross-Post + 2–3 Sätze Kontext. | s. o. | Kommentar: „Wie viel % deines Tages läuft automatisch?" |
-| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Wie viele Entscheidungen im Meeting triffst du wirklich bewusst?" Autopilot im Arbeitsalltag. | Blog-Kernidee *drei-muster-…* | Diskussion anregen |
-| **Di** | 12:30 | Instagram | 🖼️ Carousel | „Bis zu 60.000 Gedanken am Tag" – wie viel davon läuft automatisch? (Cover → Zahlen → Aha → CTA) | `docs/carousels/marketing-serien.mjs` | „Speichern & Teilen" |
-| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss + Link „Drei Muster, die dich unbewusst steuern". | Blog `drei-muster-…` | Klick auf Blog |
-| **Mi** | 09:00 | LinkedIn | 🖼️ Carousel | Document-Post: „Autopilot – der unsichtbare Chef deines Tages" (sachlicher Ton). | Carousel-Slides | Website / Blog |
-| **Mi** | 17:00 | YouTube | ▶️ Video | Hauptvideo (6–8 min): „Autopilot: Warum du weniger entscheidest, als du denkst." Skript aus Blog + Stufe-1-Lektion + Deep-Dive. | Blog + `stufe-1-lektion.pdf` + `automatische-gedanken` | Abo · E-Book in Beschreibung |
-| **Mi** | 17:30 | YouTube | ⚡ Short | Reel als Short zweitverwertet, verlinkt aufs Hauptvideo. | Reel (Mo) | Zum Hauptvideo |
-| **Do** | 19:00 | Instagram | 📚 Story | 3-teilig: Umfrage („Wie viel % läuft bei dir auf Autopilot?") → Auflösung → Mini-Übung *Der Autopilot-Check*. | `src/lib/practices.ts` (`autopilot-check`) | Antwort-Sticker · Link Blog |
-| **Fr** | 07:30 | LinkedIn | 🎯 Pitch | „Bewusster entscheiden lässt sich üben – in 7 Stufen." Soft-Pitch aufs E-Book „Die 7 Stufen kompakt". | Funnel `/#ebook` | E-Book herunterladen |
-| **Fr** | 08:00 | Instagram | 💬 Zitat/Studie + 🎯 Pitch | Zitatkarte zum Thema + Story-Verweis auf E-Book / Stufe 1. | `docs/marketing/zitate/` · `/mitglieder/stufe/1` | Link in Bio · E-Book |
-| **Fr** | 17:00 | Facebook | 💬 Zitat/Studie | Community-Frage + Zitatkarte: „Welche Gewohnheit machst du komplett automatisch?" | `docs/marketing/zitate/` | Kommentare / Reichweite |
-| **Sa** | — | *(Ruhe / optional)* | 📚 Story | Optional: Wochen-Recap-Story („Das war Stufe 1") + Ausblick auf Stufe 2 · Erwachen. | — | Bindung |
-| **So** | — | *(Ruhe / optional)* | 📝 Beitrag | Optional: leiser Reflexions-Post / Zitat als Wochenausklang. | `docs/marketing/zitate/` | Ruhe, Nähe |
+| **Mo** | 18:00 | Instagram | 🎬 Reel | „Ich hab mal einen Tag lang mitgezählt, wie oft ich wirklich entscheide." (Reel-Serie „stufen", Topic Autopilot, Variante A) | `src/lib/reels.ts` (Serie „stufen") · Skript `docs/skripte/reels/stufen.md`, Abschnitt „01 · Autopilot — Variante A" | Folgen · „Speichern" |
+| **Mo** | 18:00 | Facebook | 🎬 Reel (Crosspost) | Gleiches Reel als Cross-Post + Kontext-Text: der Autopilot spart Energie, wird aber zum Problem, wenn er wiederholt, was man längst nicht mehr will. | s. IG-Reel (Mo) | „Mehr zu Stufe 1 in der Lektion" → `/mitglieder/stufe/1` |
+| **Di** | 07:30 | LinkedIn | 📝 Beitrag | „Drei Muster laufen in fast jedem Team unbewusst mit – und sie entscheiden öfter als jeder Meeting-Beschluss." Die drei Blog-Muster (ständiger Beweiser, Harmonie um jeden Preis, Kontrolle als Sicherheit) ins Arbeitsleben übersetzt. | Blog `/blog/drei-muster-die-dich-unbewusst-steuern` (`src/lib/blog.ts`, Zeilen 309–345) | Kommentar-Frage: „Welches der drei Muster erkennst du in deinem Arbeitsalltag wieder?" |
+| **Mi** | 08:00 | Facebook | 📝 Beitrag | Blog-Anriss: Drei innere Muster laufen unbewusst mit und bestimmen, wie wir entscheiden und fühlen – bevor wir es merken. | Blog `/blog/drei-muster-die-dich-unbewusst-steuern` | „Ganzen Artikel lesen" → `/blog/drei-muster-die-dich-unbewusst-steuern` |
+| **Mi** | 08:15 | LinkedIn | 🖼️ Carousel | Document-Post „Bis zu 60.000 Gedanken am Tag – wie viele sind wirklich deine?" Vier Schritte zurück zur bewussten Wahl, zugespitzt auf Meetings/Priorisierung. | Carousel-Serie `60000-gedanken` in `docs/carousels/marketing-serien.mjs` (Zeilen 29–60) | „Speichern für die nächste Entscheidung, die Autopilot war." (kein Link, Save/Share) |
+| **Mi** | 12:30 | Instagram | 🖼️ Carousel | „Autopilot – du wirst gelebt: 3 Muster, die gerade für dich entscheiden." Vertiefung mit Blog + Deep-Dive. | Carousel-Slide „01 · Autopilot" (`docs/carousels/stufen-ueberblick.mjs`) + Blog `/blog/drei-muster-die-dich-unbewusst-steuern` + Deep-Dive `/mitglieder/wissen/automatische-gedanken` | „Den ganzen Artikel gibt's im Blog – Link in Bio. Speichern, falls du dich gerade selbst erkennst." |
+| **Mi** | 17:00 | YouTube | ▶️ Video | Hauptvideo (Richtwert 6–8 min): „Autopilot: Warum du oft gar nicht selbst entscheidest (Stufe 1)." Skript aus Blog + Deep-Dive + Stufe-1-Lektion, Praxisteil am Ende. | Blog `drei-muster-die-dich-unbewusst-steuern` + Deep-Dive `automatische-gedanken` + Lektion `/mitglieder/stufe/1` (PDF `content/pdf/stufe-1-lektion.pdf`) | „Kostenloses E-Book sichern" → `/#ebook` |
+| **Do** | 07:45 | LinkedIn | 🎯 Pitch | „Der Weg vom Autopilot zur bewussten Entscheidung beginnt nicht mit einem neuen Zeitmanagement-System, sondern mit einer Übung, die 2 Minuten dauert." Stellt den Autopilot-Check vor, verweist aufs E-Book. | Praxis `autopilot-check` (`src/lib/practices.ts`) · Lektion `/mitglieder/stufe/1` + PDF `content/pdf/stufe-1-lektion.pdf` · Deep-Dive `automatische-gedanken` | „Kostenloses E-Book sichern" → `/#ebook`; für Registrierte: „Lektion 1 direkt" → `/mitglieder` |
+| **Do** | 12:00 | YouTube | ⚡ Short | „Diese eine Frage entlarvt deinen Autopiloten" – Der Autopilot-Check (30 Sek.), identisch zum IG/FB-Reel-Thema der Woche, Variante C. | Reel-Serie „stufen", Topic Autopilot, Variante C (`src/lib/reels.ts`) · Skript `docs/skripte/reels/stufen.md`, Zeile 67–84 | „Ganzes Video verlinkt oben ↑ / Playlist ‚Die 7 Stufen'" |
+| **Fr** | 18:00 | Facebook | 💬 Zitat/Studie + Community-Frage | Zitatkarte „automatische Bewertung" + Kontext (automatische Gedanken als blitzschnelle, ungefragte Urteile). Community-Frage: „Welcher automatische Gedanke meldet sich bei dir am häufigsten?" | Zitat-Kachel `docs/marketing/zitate/1x1/WMDG-Zitat-01-hell.png` (Creme) · Bezug: Deep-Dive `automatische-gedanken`, Praxis `autopilot-check` | Kommentiere deine Antwort · Mini-Übung „Autopilot-Check" (Einstieg über `/#ebook`) |
+| **Fr** | 19:00 | Instagram | 📚 Story | Umfrage „Ehrlich – bist du gerade im Autopilot oder bewusst dabei?" + Mini-Übung „Der Autopilot-Check". | Praxis `autopilot-check` (`src/lib/practices.ts`, Kategorie „Rituale", 2 Min., `relatedStage: 1`) → `/mitglieder/praxis/autopilot-check` | „Probier den 2-Minuten-Check jetzt und antworte auf die Umfrage." |
+| **So** | 08:00 | Instagram | 💬 Zitat + 🎯 Pitch | „Raus aus dem Autopilot – rein in echte innere Klarheit." Zitat-Kachel + Verweis auf Lektion & E-Book. | Zitat-Kachel `docs/marketing/zitate/1x1/WMDG-Zitat-04-hell.png` (Creme; Text-Quelle `docs/marketing/content-data.mjs`, `key: "04"`) · Lektion `/mitglieder/stufe/1` + PDF `content/pdf/stufe-1-lektion.pdf` | „Hol dir das kostenlose E-Book – Link in Bio (`/#ebook`) → volle Stufe 1 in der Mitgliedschaft (`/mitglieder`)." |
+| **Sa** | — | *(Ruhetag)* | — | Kein Post geplant (fokussierte Stufe hält Sa/So bewusst frei; kein Kanal-Plan hat einen Sa-Slot vorgesehen). | — | — |
 
-**Zusammenfassung Frequenz:** Instagram 4 Posts (Mo Reel, Di Carousel, Do Story, Fr Zitat+Pitch) · Facebook 3 (Mo, Mi, Fr) · LinkedIn 3 (Di, Mi, Fr) · YouTube 1 Video + 1 Short (Mi). Sa/So bewusst ruhig (nur optionale Stories).
+**Zusammenfassung Frequenz (Stufe „fokussiert", exakt eingehalten):**
+Instagram 4 Posts (Mo Reel, Mi Carousel, Fr Story, So Zitat+Pitch) · Facebook 3 (Mo Reel-Crosspost, Mi Beitrag, Fr Zitat+Community) · LinkedIn 3 (Di Beitrag, Mi Carousel, Do Pitch) · YouTube 1 Video + 1 Short (Mi Video, Do Short). **Gesamt: 12 Postings.**
+
+Tagesmix: Mo (Reichweite/Hook auf IG+FB), Di (LinkedIn allein, Berufsbezug), Mi
+gebündelt als Wochenmitte-„Aha"-Tag (FB-Text 08:00, LI-Carousel 08:15,
+IG-Carousel 12:30, YT-Video 17:00 – bewusst zeitlich gestaffelt, kein
+Überschneiden), Do (LinkedIn-Pitch morgens, YT-Short mittags – „Anwenden" und
+Vertiefung), Fr (FB-Zitat abends, IG-Story abends – Wochenausklang/Community),
+So (IG-Zitat+Pitch morgens – ruhiger Wochenabschluss mit Funnel). Sa bleibt
+frei, da kein Kanal-Plan hierfür einen Slot vorsieht.
 
 ---
 
@@ -214,18 +240,21 @@ Mentale Selbstverteidigung:
 ## Wiederverwendungs-Logik (1 Idee → viele Formate)
 
 ```
-                 ┌── 🎬 IG-Reel (Mo)
-                 ├── 🎬 FB-Reel (Mo)
-   1 Kernidee ──▶├── ⚡ YT-Short (Mi)
-   („Autopilot") ├── 🖼️ IG-Carousel (Di)  ─┐ gleiche Slides,
-                 ├── 🖼️ LI-Carousel (Mi)  ─┘ anderer Ton
-                 ├── 📝 Blog + FB-Link + LI-Text
-                 ├── ▶️ YT-Video (Blog + Stufe-1-Lektion + Deep-Dive als Skript)
-                 ├── 📚 IG-Story (Autopilot-Check + Umfrage)
-                 └── 🎯 Pitch (E-Book / Stufe 1)
+                 ┌── 🎬 IG-Reel (Mo 18:00)
+                 ├── 🎬 FB-Reel Crosspost (Mo 18:00)
+   1 Kernidee ──▶├── 📝 LI-Beitrag (Di 07:30, Berufsbezug)
+   („Autopilot") ├── 📝 FB-Blog-Anriss (Mi 08:00) ─┐ gleicher Blog,
+                 ├── 🖼️ LI-Carousel (Mi 08:15)     │ anderer Ton je Kanal
+                 ├── 🖼️ IG-Carousel (Mi 12:30)     ─┘ (60.000-Gedanken-Serie / Stufen-Slide)
+                 ├── ▶️ YT-Video (Mi 17:00, Blog + Stufe-1-Lektion + Deep-Dive als Skript)
+                 ├── 🎯 LI-Pitch (Do 07:45, Autopilot-Check + E-Book)
+                 ├── ⚡ YT-Short (Do 12:00, Autopilot-Check)
+                 ├── 💬 FB-Zitat + Community-Frage (Fr 18:00)
+                 ├── 📚 IG-Story (Fr 19:00, Autopilot-Check + Umfrage)
+                 └── 💬 IG-Zitat + 🎯 Pitch (So 08:00, E-Book / Stufe 1)
 ```
 
-Ein einziges Wochenthema erzeugt so **11 Postings** über 4 Kanäle – ohne 11-mal neue
+Ein einziges Wochenthema erzeugt so **12 Postings** über 4 Kanäle – ohne 12-mal neue
 Inhalte zu erfinden.
 
 ---
