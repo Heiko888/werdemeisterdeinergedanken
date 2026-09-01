@@ -15,6 +15,7 @@ import {
   logos,
   vorlagenBestand,
   bestandKennzahlen,
+  tuerkisStatus,
 } from "@/lib/marken-uebersicht";
 
 export const dynamic = "force-dynamic";
@@ -33,13 +34,14 @@ function Pill({ children }: { children: ReactNode }) {
 }
 
 /** Kleine schematische Vorschau einer Farbwelt (kein Screenshot – aus echten
- *  Marken-Tokens gebaut), damit Creme und Dunkel direkt vergleichbar sind. */
+ *  Marken-Tokens gebaut), damit Creme, Dunkel und Türkis vergleichbar sind. */
 function WeltPanel({
   variante,
 }: {
-  variante: "hell" | "dunkel";
+  variante: keyof typeof farbWelten;
 }) {
   const w = farbWelten[variante];
+  const emblem = variante === "tuerkis" ? "/logo-brain.png" : "/logo-brain-gold.png";
   return (
     <div
       className="flex flex-col overflow-hidden rounded-2xl border border-ink/10 shadow-card"
@@ -48,7 +50,7 @@ function WeltPanel({
       <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 py-12">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/logo-brain-gold.png"
+          src={emblem}
           alt=""
           className="h-16 w-auto"
         />
@@ -135,15 +137,17 @@ export default async function MarkenUebersichtPage() {
           </h1>
           <p className="max-w-2xl text-[1.02rem] leading-relaxed text-ink-mid">
             Das komplette Farbsystem, sämtliche Logos und der gesamte Vorlagen-Bestand –
-            inklusive Lücken-Check zwischen der <strong className="text-ink">Creme-Welt</strong>{" "}
-            und der <strong className="text-ink">Dunkel-Welt</strong>. Damit du siehst,
+            inklusive Lücken-Check über die drei Farbwelten{" "}
+            <strong className="text-ink">Dunkel/Gold</strong>,{" "}
+            <strong className="text-ink">Creme/Hell</strong> und{" "}
+            <strong className="text-ink">Türkis/Teal</strong>. Damit du siehst,
             was existiert, in welcher Farbe – und was noch fehlt.
           </p>
           <div className="flex flex-wrap gap-2">
             <Pill>
               <strong className="text-ink tabular-nums">{k.motive}</strong> Motive
             </Pill>
-            <Pill>2 Farbwelten · Creme · Dunkel</Pill>
+            <Pill>3 Farbwelten · Dunkel · Creme · Türkis</Pill>
             <Pill>
               <strong className="text-ink tabular-nums">{k.logoVarianten}</strong>{" "}
               Logo-Varianten
@@ -156,27 +160,40 @@ export default async function MarkenUebersichtPage() {
         </Container>
       </section>
 
-      {/* Zwei Welten */}
+      {/* Drei Welten */}
       <section className="border-b border-ink/10 py-12 sm:py-14">
         <Container>
           <Eyebrow>Das Prinzip</Eyebrow>
           <h2 className="mt-1 font-display text-2xl font-medium text-ink">
-            Zwei Farbwelten, ein Motiv
+            Drei Farbwelten, ein Motiv
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
-            Jedes Motiv wird in zwei Welten gerendert:{" "}
-            <strong className="text-ink">Dunkel</strong> (Navy-Grund{" "}
-            <code className="rounded bg-ink/5 px-1">#090b10</code>, Standard – ohne
-            Suffix) und <strong className="text-ink">Hell/Creme</strong> (Papier-Grund{" "}
-            <code className="rounded bg-ink/5 px-1">#f6f4ee</code>, Datei-Suffix{" "}
-            <code className="rounded bg-ink/5 px-1">-hell</code>).{" "}
-            <strong className="text-ink">Türkis</strong> und{" "}
-            <strong className="text-ink">Gold</strong> sind in beiden Welten die Akzente.
+            Jedes Motiv entsteht in drei Welten:{" "}
+            <strong className="text-ink">Dunkel/Gold</strong> (Navy-Grund{" "}
+            <code className="rounded bg-ink/5 px-1">#090b10</code>, Gold-Gehirn &amp;
+            Gold-Akzente, Standard – ohne Suffix),{" "}
+            <strong className="text-ink">Hell/Creme</strong> (Papier-Grund{" "}
+            <code className="rounded bg-ink/5 px-1">#f6f4ee</code>, Suffix{" "}
+            <code className="rounded bg-ink/5 px-1">-hell</code>) und{" "}
+            <strong className="text-ink">Türkis/Teal</strong> (Navy-Grund mit
+            Teal-Schimmer, Türkis-Gehirn &amp; Grün→Teal-Akzente, Suffix{" "}
+            <code className="rounded bg-ink/5 px-1">-tuerkis</code>).
           </p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <WeltPanel variante="hell" />
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
             <WeltPanel variante="dunkel" />
+            <WeltPanel variante="hell" />
+            <WeltPanel variante="tuerkis" />
           </div>
+          {!tuerkisStatus.gerendert && (
+            <div className="mt-4 rounded-2xl border-l-[3px] border-teal-500 bg-surface-2 p-4 text-sm leading-relaxed text-ink-mid">
+              <strong className="text-ink">Türkis ist neu:</strong> als dritte Variante
+              in allen Marketing-Generatoren angelegt (Türkis-Gehirn statt Gold,
+              Grün→Teal-Akzente). Die Dateien{" "}
+              <code className="rounded bg-ink/5 px-1">-tuerkis.png</code> entstehen beim
+              nächsten Rendern – siehe „Für Entwickler" unten. Die schematischen Panels
+              hier sind aus echten Marken-Tokens gebaut.
+            </div>
+          )}
         </Container>
       </section>
 
@@ -190,8 +207,8 @@ export default async function MarkenUebersichtPage() {
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
             Quelle der Wahrheit:{" "}
             <code className="rounded bg-ink/5 px-1">src/app/globals.css</code>. Türkis
-            (Teal) und Gold tragen die Marke; die dunkle und helle Grundfläche bilden die
-            zwei Welten.
+            (Teal) und Gold tragen die Marke; die dunkle und helle Grundfläche plus die
+            Türkis-Akzente bilden die drei Welten.
           </p>
           <div className="mt-8 flex flex-col gap-9">
             {farbGruppen.map((g) => (
@@ -286,13 +303,16 @@ export default async function MarkenUebersichtPage() {
         <Container>
           <Eyebrow>Vorlagen-Bestand &amp; Lücken-Check</Eyebrow>
           <h2 className="mt-1 font-display text-2xl font-medium text-ink">
-            Was existiert – und wo Creme ↔ Dunkel fehlt
+            Was existiert – und wo eine Farbwelt fehlt
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
             Gezählt aus{" "}
             <code className="rounded bg-ink/5 px-1">docs/marketing/</code>. „Motiv" = ein
-            Sujet in einem Format; „Creme"/„Dunkel" = wie viele davon in der jeweiligen
-            Welt vorliegen.
+            Sujet in einem Format; die Spalten zeigen, in wie vielen Motiven die jeweilige
+            Farbwelt vorliegt. <strong className="text-ink">Dunkel</strong> und{" "}
+            <strong className="text-ink">Creme</strong> sind vollständig paarig;{" "}
+            <strong className="text-ink">Türkis</strong> ist neu angelegt und wird beim
+            nächsten Rendern befüllt.
           </p>
 
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -317,13 +337,13 @@ export default async function MarkenUebersichtPage() {
               <span className="text-sm font-medium text-ink">neutrale Vorlagen</span>
               <span className="text-xs text-ink-muted">Hilfslinien &amp; Hintergründe</span>
             </div>
-            <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
-              <span className="font-display text-3xl font-medium text-accent tabular-nums">
-                1
+            <div className="flex flex-col gap-1 rounded-2xl border border-teal-500/40 bg-white p-5 shadow-card">
+              <span className="font-display text-3xl font-medium text-teal-600 tabular-nums">
+                +{tuerkisStatus.erwarteteMotive}
               </span>
-              <span className="text-sm font-medium text-ink">Quell-Foto ohne Hell</span>
+              <span className="text-sm font-medium text-ink">Türkis · neu</span>
               <span className="text-xs text-ink-muted">
-                Greenscreen-Porträt (kein Template)
+                in Generatoren angelegt · nach Render
               </span>
             </div>
           </div>
@@ -343,6 +363,9 @@ export default async function MarkenUebersichtPage() {
                   </th>
                   <th className="px-4 py-3 text-right text-[0.7rem] font-bold uppercase tracking-wide text-ink-muted">
                     Dunkel
+                  </th>
+                  <th className="px-4 py-3 text-right text-[0.7rem] font-bold uppercase tracking-wide text-teal-700">
+                    Türkis
                   </th>
                   <th className="px-4 py-3 text-[0.7rem] font-bold uppercase tracking-wide text-ink-muted">
                     Status
@@ -364,6 +387,9 @@ export default async function MarkenUebersichtPage() {
                       <td className="px-4 py-2.5 text-right tabular-nums text-ink-mid">
                         {r.dunkel}
                       </td>
+                      <td className="px-4 py-2.5 text-right tabular-nums text-teal-700">
+                        {tuerkisStatus.gerendert ? r.motive : "neu"}
+                      </td>
                       <td className="px-4 py-2.5">
                         <span className="inline-flex items-center gap-1 text-[0.82rem] font-semibold text-teal-700">
                           <Check className="h-3.5 w-3.5" />
@@ -380,10 +406,13 @@ export default async function MarkenUebersichtPage() {
                   <td className="px-4 py-3 text-right tabular-nums">{k.motive}</td>
                   <td className="px-4 py-3 text-right tabular-nums">{k.creme}</td>
                   <td className="px-4 py-3 text-right tabular-nums">{k.dunkel}</td>
+                  <td className="px-4 py-3 text-right tabular-nums text-teal-700">
+                    {tuerkisStatus.gerendert ? k.motive : "neu"}
+                  </td>
                   <td className="px-4 py-3">
                     <span className="inline-flex items-center gap-1 text-[0.82rem] font-semibold text-teal-700">
                       <Check className="h-3.5 w-3.5" />
-                      vollständig paarig
+                      Dunkel + Creme paarig
                     </span>
                   </td>
                 </tr>
@@ -391,31 +420,49 @@ export default async function MarkenUebersichtPage() {
             </table>
           </div>
 
-          <div className="mt-6 rounded-2xl border-l-[3px] border-gold-500 bg-surface-2 p-4 text-sm leading-relaxed text-ink-mid">
-            <strong className="text-ink">Ergebnis:</strong> Das Farbwelt-System ist
-            vollständig – jedes der {k.motive} Motive liegt sowohl in Creme als auch in
-            Dunkel vor, es fehlt keine Farbvariante. Die einzige Nicht-Paarung ist das
-            rohe Greenscreen-Porträt{" "}
+          <div className="mt-6 rounded-2xl border-l-[3px] border-teal-500 bg-surface-2 p-4 text-sm leading-relaxed text-ink-mid">
+            <strong className="text-ink">Ergebnis:</strong> Dunkel/Gold und Creme/Hell
+            sind vollständig – jedes der {k.motive} Motive liegt in beiden vor.{" "}
+            <strong className="text-ink">Türkis/Teal ist neu</strong> als dritte Variante
+            in allen Generatoren angelegt und liefert nach dem Rendern dieselben{" "}
+            {tuerkisStatus.erwarteteMotive} Motive (Dateien{" "}
+            <code className="rounded bg-ink/5 px-1">-tuerkis.png</code>). Einzige bewusste
+            Nicht-Paarung bleibt das rohe Greenscreen-Porträt{" "}
             <code className="rounded bg-ink/5 px-1">
               assets/portrait-greenscreen-20260616.jpg
             </code>{" "}
-            – eine Bildquelle, kein Template, daher bewusst ohne Hell-Variante.
+            – eine Bildquelle, kein Template.
           </div>
 
           <details className="mt-8 rounded-2xl border border-ink/10 bg-white p-5">
             <summary className="cursor-pointer text-sm font-semibold text-ink">
-              Für Entwickler: Daten aktualisieren
+              Für Entwickler: Türkis rendern &amp; Daten aktualisieren
             </summary>
             <p className="mt-3 text-sm text-ink-mid">
-              Farben stehen in{" "}
+              Die drei Farbwelten (dunkel/hell/tuerkis) sind in allen Marketing-Generatoren
+              angelegt. Zum Erzeugen alle Skripte laufen lassen (erzeugt Dunkel, Creme{" "}
+              <em>und</em> Türkis):
+            </p>
+            <code className="mt-2 block overflow-x-auto rounded-lg bg-ink px-3 py-2 font-mono text-[0.82rem] text-white">
+              node docs/marketing/brand-assets.mjs<br />
+              node tools/marketing/content-overlays.mjs<br />
+              node tools/marketing/story-overlays.mjs<br />
+              node tools/marketing/story-carousels.mjs<br />
+              node tools/marketing/whatsapp-mitgliedschaft.mjs<br />
+              npm run vorlagen:galerie
+            </code>
+            <p className="mt-3 text-sm text-ink-mid">
+              Nur eine Welt rendern:{" "}
+              <code className="rounded bg-ink/5 px-1">
+                THEME=tuerkis node docs/marketing/brand-assets.mjs
+              </code>
+              . Farben stehen in{" "}
               <code className="rounded bg-ink/5 px-1">src/app/globals.css</code>, die Zahlen
               in{" "}
-              <code className="rounded bg-ink/5 px-1">src/lib/marken-uebersicht.ts</code>.
-              Nach dem Erzeugen neuer Grafiken den Bestand dort nachziehen; die Grafiken
-              selbst entstehen über{" "}
-              <code className="rounded bg-ink/5 px-1">docs/marketing/brand-assets.mjs</code>{" "}
-              und die Galerie über{" "}
-              <code className="rounded bg-ink/5 px-1">npm run vorlagen:galerie</code>.
+              <code className="rounded bg-ink/5 px-1">src/lib/marken-uebersicht.ts</code>{" "}
+              (dort nach dem Rendern{" "}
+              <code className="rounded bg-ink/5 px-1">tuerkisStatus.gerendert</code> auf{" "}
+              <code className="rounded bg-ink/5 px-1">true</code> setzen).
             </p>
             <p className="mt-3 text-sm text-ink-mid">
               Die komplette Galerie aller Vorlagen zum Ansehen &amp; Herunterladen liegt

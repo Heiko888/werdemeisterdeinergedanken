@@ -54,13 +54,14 @@ export type BestandZeile = {
   dunkel: number;
 };
 
-/** Die zwei Grundwelten – kurz erklärt. */
+/** Die drei Grundwelten – kurz erklärt. */
 export const farbWelten = {
   dunkel: {
-    name: "Dunkel · Navy",
+    name: "Dunkel · Gold",
     grund: "#090b10",
     tinte: "#f4f2ec",
     akzent: "#e8c15f",
+    emblem: "Gold-Gehirn",
     suffix: "Standard (ohne Suffix)",
   },
   hell: {
@@ -68,8 +69,31 @@ export const farbWelten = {
     grund: "#f6f4ee",
     tinte: "#16231f",
     akzent: "#7e6410",
+    emblem: "Gold-Gehirn",
     suffix: "Datei-Suffix „-hell“",
   },
+  tuerkis: {
+    name: "Türkis · Teal",
+    grund: "#090b10",
+    tinte: "#f4f2ec",
+    akzent: "#5fd6d2",
+    emblem: "Türkis-Gehirn",
+    suffix: "Datei-Suffix „-tuerkis“",
+  },
+} as const;
+
+/**
+ * Status der Türkis-Welt: als dritte Variante in allen Marketing-Generatoren
+ * angelegt (Gold-Gehirn → Türkis-Gehirn, Gold-Akzente → Grün→Teal). Die
+ * Dateien entstehen beim nächsten Rendern. Optional nur Türkis rendern:
+ *   THEME=tuerkis node docs/marketing/brand-assets.mjs
+ *   THEME=tuerkis node tools/marketing/content-overlays.mjs   (usw.)
+ * danach: npm run vorlagen:galerie
+ */
+export const tuerkisStatus = {
+  angelegt: true,
+  gerendert: false,
+  erwarteteMotive: 360,
 } as const;
 
 export const farbGruppen: FarbGruppe[] = [
