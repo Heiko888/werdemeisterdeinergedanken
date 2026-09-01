@@ -11,7 +11,7 @@ const proof = ["7-Stufen-Modell", "Ohne Esoterik-Floskeln", "Auf Augenhöhe"];
 
 export function Hero() {
   return (
-    <section className="on-dark grain relative overflow-hidden bg-navy-900 text-cream">
+    <section className="on-dark grain relative overflow-hidden bg-navy-900 text-cream lg:min-h-[42rem]">
       {/* Navy-Grund mit Glow (wie /mitgliedschaft) */}
       <div
         aria-hidden
@@ -35,18 +35,49 @@ export function Hero() {
         }}
       />
 
-      {/* Weicher Übergang zur hellen Folge-Sektion: Navy-Grund und Porträt lösen
-          sich zum unteren Rand hin in den Papierton auf, damit der Wechsel
-          dunkel→hell nicht als harte Kante bricht. Die Ausblende sitzt bewusst
-          nur im unteren Bereich, damit Text und „7 Stufen"-Kennzahl klar bleiben. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-36 sm:h-48 lg:h-56"
-        style={{
-          background:
-            "linear-gradient(to bottom, transparent 0%, transparent 44%, color-mix(in oklab, var(--color-paper) 42%, transparent) 74%, var(--color-paper) 100%)",
-        }}
-      />
+      {/* Desktop-Porträt: an die rechte untere Ecke der Section (= Viewport-Rand)
+          geankert und über eine Viewport-Breite skaliert. Dadurch behält das
+          Bild auf jedem Monitor dieselbe Position (bündig rechts) und wächst
+          proportional mit – statt in einem zentrierten Container bei fester
+          Pixelbreite auf großen Bildschirmen klein und „verrutscht" zu wirken. */}
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden items-end lg:flex">
+        <div className="relative w-[clamp(30rem,42vw,48rem)]">
+          {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
+              Schulter umhüllt und diffus in den Navy-Grund ausläuft. */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 -z-10 opacity-85 blur-[80px]"
+            style={{
+              background:
+                "radial-gradient(46% 42% at 50% 34%, color-mix(in oklab, var(--color-gold-500) 34%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 16%, transparent) 40%, color-mix(in oklab, var(--color-gold-500) 5%, transparent) 66%, transparent 92%)",
+            }}
+          />
+          <Image
+            src={heikoHero}
+            alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
+            priority
+            // Nur ab lg sichtbar (hidden lg:flex); Breite = clamp(30rem,42vw,48rem),
+            // also hoechstens 48rem (768px).
+            sizes="48rem"
+            className="block w-full [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)]"
+          />
+          {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
+          <div
+            className="absolute bottom-24 right-8 rounded-xl px-5 py-4 backdrop-blur xl:right-16"
+            style={{
+              background:
+                "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
+              border: "1.5px solid transparent",
+              boxShadow: "0 0 26px -6px rgba(52,196,196,.5)",
+            }}
+          >
+            <p className="font-display text-3xl italic text-cream">7</p>
+            <p className="text-[0.7rem] uppercase tracking-[0.2em] text-cream/60">
+              Stufen
+            </p>
+          </div>
+        </div>
+      </div>
 
       <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[0.95fr_1fr] lg:items-end lg:pb-0">
         <div className="flex flex-col items-start gap-7 sm:gap-8 lg:self-center lg:pb-28">
@@ -117,47 +148,9 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={200} className="relative hidden w-full self-end lg:block">
-          <div className="relative mx-auto w-fit">
-            {/* Gold-Glow hinter Kopf/Oberkörper: weiche Aura, die Kopf und
-                Schulter umhüllt und diffus in den Navy-Grund ausläuft.
-                Wichtig: inset-0 (bleibt im Bild) + Blur – der Glow darf NICHT
-                über die Sektions-Oberkante hinausragen, sonst kappt das
-                overflow-hidden der Section ihn als harte Kante über dem Kopf. */}
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-0 -z-10 opacity-85 blur-[80px]"
-              style={{
-                background:
-                  "radial-gradient(46% 42% at 50% 34%, color-mix(in oklab, var(--color-gold-500) 34%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 16%, transparent) 40%, color-mix(in oklab, var(--color-gold-500) 5%, transparent) 66%, transparent 92%)",
-              }}
-            />
-            <Image
-              src={heikoHero}
-              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
-              priority
-              // Dieser Zweig wird erst ab lg angezeigt (hidden lg:block), dort
-              // ist das Bild hoechstens 560 px breit.
-              sizes="560px"
-              className="mx-auto block w-[min(320px,74vw)] [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_66%,rgba(0,0,0,0.55)_85%,transparent_100%)] lg:w-[min(560px,100%)]"
-            />
-            {/* editoriales Detail: kleine Kennzahl, für dunklen Grund neu gestylt */}
-            <div
-              className="absolute bottom-16 right-0 rounded-xl px-5 py-4 backdrop-blur sm:bottom-20 lg:bottom-28"
-              style={{
-                background:
-                  "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
-                border: "1.5px solid transparent",
-                boxShadow: "0 0 26px -6px rgba(52,196,196,.5)",
-              }}
-            >
-              <p className="font-display text-3xl italic text-cream">7</p>
-              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-cream/60">
-                Stufen
-              </p>
-            </div>
-          </div>
-        </Reveal>
+        {/* Rechte Spalte reserviert nur den Platz – das Porträt liegt als
+            viewport-verankertes, absolut positioniertes Element in der Section. */}
+        <div aria-hidden className="hidden lg:block" />
       </Container>
     </section>
   );
