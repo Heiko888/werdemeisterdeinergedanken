@@ -171,7 +171,7 @@ export default async function BlogPostPage({
     <>
       <ReadingProgress />
       {/* Artikel-Kopf: dunkler Marken-Header als Akzent */}
-      <header className="grain relative overflow-hidden bg-navy-900 pt-20 pb-16 text-cream sm:pt-24 sm:pb-20">
+      <header className="grain relative overflow-hidden bg-navy-900 pt-12 pb-14 text-cream sm:pt-24 sm:pb-20">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
@@ -188,15 +188,21 @@ export default async function BlogPostPage({
           <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-gold-300">
             {post.category}
           </span>
-          <h1 className="text-[2rem] font-medium leading-[1.1] text-cream sm:text-4xl md:text-5xl">
+          <h1 className="text-[1.75rem] font-medium leading-[1.15] text-balance text-cream sm:text-4xl sm:leading-[1.1] md:text-5xl">
             {post.title}
           </h1>
+          {/* Meta: jeder Punkt trägt seinen Trenner als nowrap-Gruppe, damit beim
+              Umbruch nie ein „·" allein am Zeilenende hängen bleibt. */}
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-cream-dim/60">
             <time dateTime={post.date}>{post.dateLabel}</time>
-            <span aria-hidden>·</span>
-            <span>{post.readingMinutes} Min. Lesezeit</span>
-            <span aria-hidden>·</span>
-            <span>Heiko Schwaninger</span>
+            <span className="inline-flex items-center gap-2 whitespace-nowrap">
+              <span aria-hidden>·</span>
+              {post.readingMinutes} Min. Lesezeit
+            </span>
+            <span className="inline-flex items-center gap-2 whitespace-nowrap">
+              <span aria-hidden>·</span>
+              Heiko Schwaninger
+            </span>
           </div>
         </Container>
       </header>
@@ -204,7 +210,7 @@ export default async function BlogPostPage({
       {/* Titelbild – überlappt den dunklen Header für einen redaktionellen
           Übergang. Nur wenn ein redaktionelles Bild hinterlegt ist. */}
       {post.image && (
-        <Container size="narrow" className="relative z-10 -mt-8 sm:-mt-12">
+        <Container size="narrow" className="relative z-10 -mt-12 sm:-mt-12">
           <figure className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-xl ring-1 ring-white/10">
             <Image
               src={post.image.src}
