@@ -49,9 +49,7 @@ Gedanken": https://werdemeisterdeinergedanken.de/#ebook
 
 **Stichwort-Tags:** Filterblase, Algorithmen, Mentale Selbstverteidigung, Social Media, Medienkompetenz
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-algorithmen-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
@@ -77,9 +75,7 @@ Reichweite.
 **CTA im Video:** „Folge heute einer Stimme, die anders denkt — ganzes
 Video oben verlinkt."
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-algorithmen-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 

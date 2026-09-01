@@ -57,9 +57,7 @@ https://werdemeisterdeinergedanken.de/#ebook
 
 **Stichwort-Tags:** Nervensystem beruhigen, Atemübung, Affect Labeling, Stressabbau, Achtsamkeit
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block B vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-atmung-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
@@ -87,10 +85,7 @@ weicher Übergang · 8–10 Zyklen
 **CTA im Video:** „Mach den kostenlosen Bewusstseinstest — ganzes Video
 oben verlinkt."
 
-**Thumbnail:** Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu
-produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-atmung-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 

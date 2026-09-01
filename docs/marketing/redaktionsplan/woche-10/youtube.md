@@ -62,9 +62,7 @@ https://werdemeisterdeinergedanken.de/#ebook
 
 **Stichwort-Tags:** Placebo-Effekt, Erwartung, Körper und Psyche, Nervensystem, Wissenschaft
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block B vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-placebo-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
@@ -95,10 +93,7 @@ wirkt mit
 **CTA im Video:** „Mehr dazu im Blog: ‚Wie Gedanken deinen Körper
 formen' — ganzes Video oben verlinkt."
 
-**Thumbnail:** Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu
-produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-placebo-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 

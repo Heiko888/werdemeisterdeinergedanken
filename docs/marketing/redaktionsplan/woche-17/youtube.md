@@ -51,9 +51,7 @@ Prüfstein du beides unterscheidest. Hol dir dazu das kostenlose E-Book
 
 **Stichwort-Tags:** Autoritätshörigkeit, Mentale Selbstverteidigung, kritisches Denken, Manipulation erkennen, Persönlichkeitsentwicklung
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-autoritaetshoerigkeit-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
@@ -78,9 +76,7 @@ erlaubt.
 **CTA im Video:** „Folge für Teil 2: Wie Angst dich lenkbar macht — ganzes
 Video oben verlinkt."
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-autoritaetshoerigkeit-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 

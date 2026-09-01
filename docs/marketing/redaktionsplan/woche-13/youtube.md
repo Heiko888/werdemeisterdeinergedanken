@@ -50,9 +50,7 @@ unabhängigen Quellen unterscheidest. Hol dir dazu das kostenlose E-Book
 
 **Stichwort-Tags:** Wiederholungseffekt, Mentale Selbstverteidigung, kritisches Denken, Manipulation erkennen, Medienkompetenz
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-wiederholung-wahrheit-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
@@ -76,9 +74,7 @@ verlinkt. Kostenloses E-Book: https://werdemeisterdeinergedanken.de/#ebook
 **CTA im Video:** „Prüf heute eine Sache, die du für selbstverständlich
 hältst — ganzes Video oben verlinkt."
 
-**Thumbnail:** Kein stufenspezifisches Motiv für Block C vorhanden. Basis
-`docs/marketing/youtube/thumbnails/WMDG-Thumbnail-vorlage-hell.png`
-(Creme-Variante, Standard laut Kanal-Vorgabe) — Motiv noch zu produzieren.
+**Thumbnail:** `docs/marketing/youtube/thumbnails/WMDG-Thumbnail-wiederholung-wahrheit-hell.png` (Creme-Variante, Standard; 2560×1440; dunkle Variante ohne `-hell` vorhanden). Themenspezifisches Motiv erstellt und einsatzbereit.
 
 ---
 
