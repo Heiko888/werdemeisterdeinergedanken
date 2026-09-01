@@ -103,6 +103,46 @@ Community die Grundlagen (Block A) kennt.
 > „Mentale Selbstverteidigung", vordatiert als geplante Beiträge). Blog + Vertiefung
 > sind vorhanden.
 
+> **Fußnote – bestätigte Slug-Prüfung (Wochen 8–18):** Für Block B (Wochen 8–10)
+> und die ersten acht Wochen von Block C (11–18) wurden Blog-Slug
+> (`src/lib/blog.ts`), Deep-Dive-Slug (`src/lib/deep-dives.ts`) und – wo
+> zugewiesen – Praxis-Slug (`src/lib/practices.ts`) von den vier Kanal-Planern
+> unabhängig per `rg`/`ls` gegen den Code geprüft (Ergebnisse dokumentiert in
+> `docs/marketing/redaktionsplan/woche-N/{instagram,facebook,linkedin,
+> youtube}.md`, Abschnitt „Material-Check" bzw. „Hinweise"). Keine erfundenen
+> Slugs. Zwei bekannte, im Master-Plan (`docs/marketing/redaktionsplan.md`)
+> und im interaktiven Kalender ausgewiesene Lücken bleiben offen:
+> (a) für Block B/C existiert noch **kein** eigenes YouTube-Thumbnail-Motiv
+> (nur die Basis-Vorlage `WMDG-Thumbnail-vorlage-hell.png`, „Motiv noch zu
+> produzieren"); (b) für die meisten Block-C-Themen (Framing, Wiederholung,
+> Reizüberflutung, Autoritätshörigkeit, Propaganda) fehlt ein eigener
+> Carousel-Slide in `docs/carousels/marketing-serien.mjs` – der jeweils
+> nächstpassende vorhandene Slide wird genutzt und in der jeweiligen Woche mit
+> ⚠ gekennzeichnet.
+
+> **Fußnote – bestätigte Slug-Prüfung (Wochen 19–26, zweite Hälfte Block C):**
+> Kognitive Dissonanz, Identität & Meinung, Sprache & Etiketten, Medien-Agenda,
+> Angst-Steuerung, Ablenkung, Normalisierung und Bildmacht sind **geplant**
+> (Status oben aktualisiert). Blog-Slug (`src/lib/blog.ts`), Deep-Dive-Slug
+> (`src/lib/deep-dives.ts`) und – wo zugewiesen – Praxis-Slug
+> (`src/lib/practices.ts`) wurden auch für diese acht Wochen von den vier
+> Kanal-Planern unabhängig per `rg`/`ls` gegen den Code geprüft (Ergebnisse
+> dokumentiert in `docs/marketing/redaktionsplan/woche-N/{instagram,facebook,
+> linkedin,youtube}.md`, Abschnitt „Material-Check" bzw. „Hinweise"). Keine
+> erfundenen Slugs. Dieselben zwei Lücken wie in Woche 8–18 bleiben bestehen:
+> (a) **kein** eigenes YouTube-Thumbnail-Motiv für Block C (weiterhin nur
+> `WMDG-Thumbnail-vorlage-hell.png`, „Motiv noch zu produzieren"); (b) für
+> sieben der acht Themen (alle außer Angst-Steuerung, wo das Warnsignal
+> „Starke Emotion" aus `wer-denkt-hier` wörtlich „Angst … schalten dein
+> kritisches Denken aus" nennt) fehlt weiterhin ein eigener Carousel-Slide –
+> der jeweils nächstpassende vorhandene Slide (teils aus „wer-denkt-hier",
+> „60000-gedanken", „4-wege-freiheit" oder „studien-fakten", teils
+> Zweitverwendung eines bereits in Woche 11/12/15 genutzten Slides mit
+> anderem inhaltlichen Fokus) wird genutzt und in der jeweiligen Woche mit ⚠
+> gekennzeichnet. Über den gesamten Block C (16 Wochen, 11–26) haben damit nur
+> drei Themen einen **eigenen** Carousel-Schritt: Algorithmen/Filterblasen
+> (W12), Werbung & Mangel (W15), Gruppendruck (W16).
+
 ---
 
 **Funnel-Ziele (für Pitch-Posts):** E-Book „Die 7 Stufen kompakt" → `/#ebook` ·
