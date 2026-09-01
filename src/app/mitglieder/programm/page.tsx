@@ -36,10 +36,10 @@ export default async function ProgrammPage() {
 
   const done = await getProgrammFortschritt();
 
-  // Titelbild des Programms: linksbündige Schrift steht über dem dunklen Teil
-  // des Motivs, der leuchtende Pfad führt nach rechts ins Bild. Wie bei
-  // LessonHero – Seitenverhältnis für das mobile Bildband kommt automatisch aus
-  // der Datei (Fallback auf das native Format, falls es nicht gelesen werden kann).
+  // Titelbild des Programms (die Datei selbst ist horizontal gespiegelt:
+  // Baum links, Schriftzug rechts). Wie bei LessonHero – Seitenverhältnis für
+  // das mobile Bildband kommt automatisch aus der Datei (Fallback auf das
+  // native Format, falls es nicht gelesen werden kann).
   const heroImage = "/hero-programm.webp";
   const bandAspect = heroImageAspect(heroImage) ?? "1672 / 941";
 
