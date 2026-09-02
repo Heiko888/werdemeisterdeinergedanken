@@ -98,7 +98,7 @@ export default function VertiefungenPage() {
                         >
                           <div className="relative aspect-video w-full overflow-hidden bg-navy-900">
                             <Image
-                              src={`/video-thumbnails/vertiefungen/${dive.slug}-hell.png`}
+                              src={`/video-thumbnails/vertiefungen/${dive.slug}.png`}
                               alt=""
                               aria-hidden
                               fill

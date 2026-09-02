@@ -94,7 +94,7 @@ export default async function StagePage({
               <VideoEmbed
                 videoId={(lesson?.video ?? site.placeholderVideoId)!}
                 title={`Video zu Stufe ${stage.number} – ${stage.title}`}
-                poster={`/video-thumbnails/stufen/stufe-${stage.number}-hell.png`}
+                poster={`/video-thumbnails/stufen/stufe-${stage.number}.png`}
               />
             ) : (
               <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">

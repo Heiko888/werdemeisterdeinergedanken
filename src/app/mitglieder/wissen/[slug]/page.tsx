@@ -73,7 +73,7 @@ export default async function DeepDivePage({
               <VideoEmbed
                 videoId={(dive.video ?? site.placeholderVideoId)!}
                 title={`Video zu ${dive.title}`}
-                poster={`/video-thumbnails/vertiefungen/${dive.slug}-hell.png`}
+                poster={`/video-thumbnails/vertiefungen/${dive.slug}.png`}
               />
             ) : (
               <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">

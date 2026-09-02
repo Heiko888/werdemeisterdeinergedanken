@@ -334,7 +334,7 @@ export default async function MembersPage() {
             <VideoEmbed
               videoId={site.placeholderVideoId}
               title="Willkommen in deinem Bereich"
-              poster="/video-thumbnails/willkommen-hell.png"
+              poster="/video-thumbnails/willkommen.png"
             />
           ) : (
             <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">
