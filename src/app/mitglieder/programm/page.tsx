@@ -40,7 +40,7 @@ export default async function ProgrammPage() {
   // Baum links, Schriftzug rechts). Wie bei LessonHero – Seitenverhältnis für
   // das mobile Bildband kommt automatisch aus der Datei (Fallback auf das
   // native Format, falls es nicht gelesen werden kann).
-  const heroImage = "/hero-programm.webp";
+  const heroImage = "/hero-programm.png";
   const bandAspect = heroImageAspect(heroImage) ?? "1672 / 941";
 
   return (
