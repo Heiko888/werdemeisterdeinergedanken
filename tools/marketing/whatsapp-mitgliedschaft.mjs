@@ -284,7 +284,8 @@ function findChrome() {
   throw new Error("Kein Chromium gefunden.");
 }
 const { chromium } = require("playwright");
-if (existsSync(OUT)) rmSync(OUT, { recursive: true, force: true });
+// Nur bei Voll-Lauf leeren; bei Einzel-THEME NICHT löschen.
+if (!process.env.THEME && existsSync(OUT)) rmSync(OUT, { recursive: true, force: true });
 const browser = await chromium.launch({ executablePath: findChrome() });
 const total = SLIDES.length;
 for (const F of FORMATS) {
