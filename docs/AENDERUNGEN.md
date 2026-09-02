@@ -5,6 +5,15 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – Blog-Hero auf Desktop kinematisch (Spotlight)
+
+Denselben Spotlight-Aufbau (siehe Eintrag unten) auch auf **/blog** angewendet:
+`src/app/blog/page.tsx` nutzt jetzt `spotlight="right"`. Das Motiv (Sonnenaufgang,
+leuchtender Pfad, Kompass) sitzt rechts und wird dort freigestellt; die Textspalte
+steht links. Mobil (Bildband) unverändert.
+
+---
+
 ## 2026-09-02 – „Über mich"-Hero auf Desktop kinematisch (wie Mitgliedschaft)
 
 Auf Desktop wirkte der Hero der Seite **/ueber-mich** flach: Das ganze Motiv lag
