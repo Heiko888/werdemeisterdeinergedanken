@@ -13,9 +13,9 @@ mit einem sichtbaren horizontalen Schnitt auf die creme-/paperfarbene Blog-Liste
 langen Verlauf ins Creme – kein harter Übergang mehr.
 
 **Ursache / warum es vorher „nicht ging":** Die Prop `fadeToColor` war im
-`PageHero` **nur im klassischen Layout** implementiert. Der Blog-Hero nutzt aber
-den **Bildband-/Spotlight-Zweig** (`image` + `spotlight="right"`) – dort wurde
-`fadeToColor` schlicht ignoriert.
+`PageHero` **nur im klassischen Layout** implementiert. Der Blog-Hero läuft aber
+über den **Bildband-Zweig** (greift immer, sobald `image` gesetzt ist) – dort
+wurde `fadeToColor` schlicht ignoriert.
 
 **Änderungen**
 
@@ -23,12 +23,60 @@ den **Bildband-/Spotlight-Zweig** (`image` + `spotlight="right"`) – dort wurde
   Bildband-/Spotlight-Zweig gerendert (identische Gradient-Formel wie im
   klassischen Layout, `z-0` vor dem Text-Container mit `z-10`, Höhe
   `h-3/4 sm:h-3/5`). Damit funktioniert das weiche Auslaufen für **jeden** Hero
-  mit Bild/Spotlight – nicht nur für den Blog.
+  mit Bild – mit oder ohne Spotlight.
 - `src/app/blog/page.tsx`: `fadeToColor="var(--color-paper)"` am `PageHero`
   gesetzt, damit das Hero-Ende exakt in die Hintergrundfarbe der Blog-Liste
-  übergeht.
+  übergeht. (Das kurz zuvor entfernte `spotlight="right"` bleibt entfernt – siehe
+  Eintrag direkt darunter; der Creme-Übergang ist davon unabhängig.)
 
 Mobil (Bildband, Text auf Navy darunter) blendet ebenfalls sauber ins Creme aus.
+
+---
+
+## 2026-09-02 – Blog-Hero zurück auf den Standard-Aufbau (kein Spotlight)
+
+Auf `/blog` ist der Hero auf Desktop sehr dunkel – vom Motiv (Gipfel,
+Sonnenaufgang, Kompass) ist kaum etwas zu erkennen.
+
+**Änderung**
+
+- `src/app/blog/page.tsx`: `spotlight="right"` entfernt. Der Hero nutzt wieder
+  den gewohnten gleichmäßigen Navy-Schleier mit zentriertem Text.
+
+**Wichtig: Das hat das Problem NICHT behoben.**
+
+Die ursprüngliche Annahme war, der gerichtete Verlauf ersticke das zentrierte
+Motiv. Nach dem Deploy gemessen (Helligkeit 0–255 über vier Zonen, links → rechts):
+
+| | | | | |
+|---|---|---|---|---|
+| `/blog` mit Spotlight | 31,5 | 24,2 | 22,5 | 25,2 |
+| `/blog` ohne Spotlight | 20,8 | 33,1 | 32,1 | 23,6 |
+| `/ueber-mich` (Referenz, funktioniert) | 39,5 | 44,9 | 48,7 | 40,5 |
+
+Nur marginal heller, weiterhin weit unter der Referenz. Der Spotlight-Verlauf
+war also **nicht** die Ursache.
+
+**Was geprüft und ausgeschlossen ist**
+
+- Der Optimizer liefert das Bild korrekt: `/_next/image?url=%2Fhero-blog-gipfel.webp&w=1920&q=75`
+  → 200, 84 KB, 1672×941, ein intaktes Motiv.
+- Unterhalb von `lg` (mobiles Bildband) erscheint das Bild vollständig.
+- Kein Render-Rennen: fünf Läufe mit unterschiedlichem `--virtual-time-budget`
+  und zusätzlich `--run-all-compositor-stages-before-draw` liefern identische Werte.
+- Das Markup von `/blog` und `/ueber-mich` ist strukturell identisch.
+- Eine CSS-Nachbildung mit demselben Verlauf und Gold-Glow zeigt das Motiv klar
+  (mitte 43,1 / rechts 57,4 statt 22,4 / 24,4 live).
+
+**Ursache weiterhin unbekannt.** Verwandter Fall zum Vergleich: der `?v=2`-Cache-Bust
+brach `next/image` auf Wissen/Praxis und hinterließ schwarze Kästen – dort antwortete
+der Optimizer allerdings mit 400, hier mit 200. Der Mechanismus ist also ein anderer.
+
+**Nicht geändert**
+
+- `/ueber-mich` (`spotlight="left"`) und `/mitglieder/wissen` (`spotlight="right"`)
+  bleiben unverändert. Auf `/ueber-mich` wirkt der Spotlight-Aufbau sehr gut.
+- Mobil war der Blog-Hero nie betroffen.
 
 ---
 
