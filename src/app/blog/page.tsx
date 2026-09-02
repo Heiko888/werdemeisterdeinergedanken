@@ -55,6 +55,7 @@ export default function BlogPage() {
         image="/hero-blog-gipfel.webp"
         imagePosition="center"
         spotlight="right"
+        fadeToColor="var(--color-paper)"
       />
 
       <BlogIndex posts={cards} />

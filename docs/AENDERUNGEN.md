@@ -5,6 +5,33 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – Blog-Hero läuft unten weich in Creme aus
+
+Der Blog-Hero (`/blog`) blieb bisher am unteren Rand hart Navy und setzte dann
+mit einem sichtbaren horizontalen Schnitt auf die creme-/paperfarbene Blog-Liste
+(`bg-paper-aura`, `--color-paper` = `#f6f4ee`) auf. Jetzt gibt es einen weichen,
+langen Verlauf ins Creme – kein harter Übergang mehr.
+
+**Ursache / warum es vorher „nicht ging":** Die Prop `fadeToColor` war im
+`PageHero` **nur im klassischen Layout** implementiert. Der Blog-Hero nutzt aber
+den **Bildband-/Spotlight-Zweig** (`image` + `spotlight="right"`) – dort wurde
+`fadeToColor` schlicht ignoriert.
+
+**Änderungen**
+
+- `src/components/layout/PageHero.tsx`: Den `fadeToColor`-Verlauf jetzt auch im
+  Bildband-/Spotlight-Zweig gerendert (identische Gradient-Formel wie im
+  klassischen Layout, `z-0` vor dem Text-Container mit `z-10`, Höhe
+  `h-3/4 sm:h-3/5`). Damit funktioniert das weiche Auslaufen für **jeden** Hero
+  mit Bild/Spotlight – nicht nur für den Blog.
+- `src/app/blog/page.tsx`: `fadeToColor="var(--color-paper)"` am `PageHero`
+  gesetzt, damit das Hero-Ende exakt in die Hintergrundfarbe der Blog-Liste
+  übergeht.
+
+Mobil (Bildband, Text auf Navy darunter) blendet ebenfalls sauber ins Creme aus.
+
+---
+
 ## 2026-09-02 – Restliche Bild-Heroes geprüft, Wissen ebenfalls Spotlight
 
 Alle vier Bild-Heroes durchgesehen und einheitlich bewertet:

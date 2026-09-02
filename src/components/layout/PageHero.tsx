@@ -176,6 +176,19 @@ export function PageHero({
           className="pointer-events-none absolute inset-0 z-0"
           style={{ background: HERO_GLOW }}
         />
+        {/* Weicher Übergang in die Hintergrundfarbe der Folgesektion: identisch
+            zum klassischen Layout, damit das Hero-Ende ohne harten Schnitt in
+            die nächste Sektion (z. B. Creme/Paper) überläuft. Liegt über Bild
+            und Schleier, aber unter dem Text (z-0 vor Container mit z-10). */}
+        {fadeToColor && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-3/4 sm:h-3/5"
+            style={{
+              background: `linear-gradient(to bottom, transparent 0%, color-mix(in oklab, ${fadeToColor} 45%, transparent) 45%, color-mix(in oklab, ${fadeToColor} 85%, transparent) 75%, ${fadeToColor} 100%)`,
+            }}
+          />
+        )}
         <Container className="relative z-10">
           <div className={columnClass}>{body}</div>
         </Container>
