@@ -69,6 +69,19 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **02.09.2026 – Türkis-Emblem global auf neues 3D-Seitengehirn.** Das
+  Türkis-Marken-Emblem ist jetzt das neue, freigestellte **3D-Seitengehirn**
+  (Grün→Türkis→Blau, Neon-3D-Look). Getauscht: `public/logo-brain-tuerkis.png`
+  **und** `docs/reels/covers/logo.png` (1200 px, transparent, 367 KB).
+  Neu gerendert wurden **alle Türkis-Welten** (`-tuerkis` + `-tuerkis-hell`):
+  Zitate, Studienfakten, Content-Overlays, Story-Overlays, Story-Carousels,
+  WhatsApp-Mitgliedschaft, Instagram-Stories, Profilbilder und
+  Video-Thumbnails (866 Dateien). Die Cover-HTML referenzieren das Emblem nur
+  (PNGs lokal via `npm run covers:png`). Analog zur früheren globalen
+  Gold-Emblem-Umstellung – damit sind alle vier Welten formkonsistent auf
+  freigestellten Seitengehirnen (Gold / Türkis). Lokal neu erzeugen:
+  `npm run marketing:all` · `node docs/marketing/video-thumbnails.mjs` ·
+  `npm run covers:png`.
 - **02.09.2026 – Gold-Emblem global auf Seitengehirn + Schriftlogo überall.**
   Das goldene Marken-Emblem (`public/logo-brain-gold.png`) ist jetzt dasselbe
   freigestellte **Seitengehirn** wie in Türkis (nur golden), damit alle
