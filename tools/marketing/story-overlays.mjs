@@ -21,6 +21,7 @@ const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
+const brainGoldSeite = pathToFileURL(join(ROOT, "public/logo-brain-gold-seite.png")).href;
 const OUT = join(ROOT, "docs/marketing/story-overlays");
 
 // Vier Farbwelten (Grund × Akzent). Optional nur eine rendern:
@@ -101,7 +102,7 @@ h1 em{background:${accentGrad};-webkit-background-clip:text;background-clip:text
 };
 
 const overlayBody = (s, i, theme) => `<div class="scrim"></div>
-<img class="brainmini" src="${theme === "dunkel" ? brain : brainTeal}">
+<img class="brainmini" src="${theme === "dunkel" ? brain : theme === "hell" ? brainGoldSeite : brainTeal}">
 <div class="txt">
   <div class="eyebrow">Persönliche Geschichte · ${String(i + 1).padStart(2, "0")}</div>
   <h1>${s.head}</h1><div class="bar"></div>

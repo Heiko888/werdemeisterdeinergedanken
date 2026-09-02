@@ -24,6 +24,7 @@ const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
+const brainGoldSeite = pathToFileURL(join(ROOT, "public/logo-brain-gold-seite.png")).href;
 const OUT = join(ROOT, "docs/marketing/content-overlays");
 
 // Vier Farbwelten (Grund × Akzent). Suffixe parallel zu -hell.
@@ -32,7 +33,7 @@ const THEMES = (process.env.THEME
   ? [process.env.THEME]
   : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]).filter((t) => t in THEME_SUFFIX);
 // Gold-Front-Emblem nur im Standard „dunkel"; sonst das bunte Seitenansicht-Gehirn.
-const brainFor = (theme) => (theme === "dunkel" ? brain : brainTeal);
+const brainFor = (theme) => (theme === "dunkel" ? brain : theme === "hell" ? brainGoldSeite : brainTeal);
 
 // Breite überall 1080 → Schriftgrößen (w-basiert) bleiben über alle Formate
 // gleich, nur die Höhe (= vertikaler Freiraum) ändert sich.
