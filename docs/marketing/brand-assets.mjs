@@ -124,10 +124,8 @@ const avatarRound = (w, P) => {
   const ringGlow = `
 .ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(${P.ring})}
 .glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.62)}px;height:${Math.round(w*0.62)}px}`;
-  // Türkis: Emblem + kompakte Wortmarke wie im Header (kreis-sicher zentriert).
-  // Gold/Creme: nur das Emblem (unverändert).
-  if (P.teal) {
-    return shell(w, w, `${ringGlow}
+  // Alle Welten: Emblem + kompakte Wortmarke wie im Header (kreis-sicher zentriert).
+  return shell(w, w, `${ringGlow}
 .stack{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:${Math.round(w*0.03)}px;text-align:center;padding:0 ${Math.round(w*0.1)}px}
 .brain{width:${Math.round(w*0.46)}px;height:auto}
 .wm1{font-family:Fraunces,serif;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:${P.hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.06)}px;line-height:1}
@@ -139,12 +137,6 @@ const avatarRound = (w, P) => {
     <div class="wm1">Werde <span>Meister</span></div>
     <div class="wm2"><i></i>Deiner Gedanken<i></i></div>
   </div>`, P);
-  }
-  return shell(w, w, `${ringGlow}
-.center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.brain{width:${Math.round(w*0.6)}px;height:${Math.round(w*0.6)}px}
-`, `<div class="center"><div class="ring"></div><div class="glow"></div>
-  <img class="brain" src="${P.brainUrl}"></div>`, P);
 };
 
 // Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel)

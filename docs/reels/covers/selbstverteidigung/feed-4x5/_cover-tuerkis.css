@@ -1,0 +1,56 @@
+/* Format 4:5 · Feed (Hochformat) · Welt tuerkis · generiert von build.mjs – nicht von Hand ändern */
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#05060c; }
+.cover { position:relative; width:1080px; height:1350px; overflow:hidden;
+  font-family:'Inter',system-ui,sans-serif; }
+.cover::before { content:""; position:absolute; inset:0; z-index:0;
+  background:radial-gradient(60% 40% at 78% 30%, rgba(52,196,196,.35), transparent 60%),radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),linear-gradient(160deg,#071026 0%,#0b2138 45%,#0a1730 100%); }
+.bg { position:absolute; inset:0; z-index:1;
+  background-image:url("vorlage.png"); background-size:cover; background-position:center; }
+.scrim { position:absolute; inset:0; z-index:2;
+  background:linear-gradient(to bottom, transparent 40%, rgba(5,9,20,.55) 72%, rgba(5,9,20,.92) 100%); }
+.content { position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
+  padding:80px; }
+.top { display:flex; align-items:center; justify-content:space-between; gap:40px; }
+/* Marken-Lockup: Gehirn + Wortmarke „Werde Meister / Deiner Gedanken" */
+.brand { display:flex; align-items:center; gap:19px; flex:0 1 auto; }
+.logo { width:146px; height:auto; flex:0 0 auto;
+  filter:drop-shadow(0 4px 26px rgba(52,196,196,.30)); }
+.wm { display:flex; flex-direction:column; gap:7px; line-height:1; }
+.wm1 { font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:30px;
+  letter-spacing:.05em; text-transform:uppercase; color:rgba(244,247,255,.94); white-space:nowrap; }
+.wm1 em { font-style:normal; background:linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%);
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.wm2 { display:flex; align-items:center; gap:7px; font-family:'Fraunces',Georgia,serif;
+  font-weight:400; font-size:16px; letter-spacing:.2em; text-transform:uppercase;
+  color:rgba(167,186,210,.9); white-space:nowrap; }
+.wm2 i { display:block; height:1px; width:20px; background:rgba(95,214,210,.85); }
+/* Reihen-Label oben rechts: Reihenname (bricht ruhig um) + Nummer mit Linie */
+.tag { display:flex; flex-direction:column; align-items:flex-end; gap:12px;
+  max-width:46%; padding-top:3px; text-align:right; }
+.tag .series { font-family:'Inter',sans-serif; font-weight:800; font-size:22px;
+  letter-spacing:.11em; text-transform:uppercase; line-height:1.26;
+  background:linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent;
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,.5)); }
+.tag .no { display:flex; align-items:center; gap:11px;
+  font-family:'Inter',sans-serif; font-weight:700; font-size:25px;
+  letter-spacing:.06em; color:rgba(167,186,210,.9); }
+.tag .no i { display:block; width:26px; height:2px; border-radius:2px;
+  background:linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%); }
+.spacer { flex:1 1 auto; }
+.headline { max-width:100%; font-family:'Fraunces',Georgia,serif; font-weight:600;
+  font-size:120px; line-height:1.04; letter-spacing:-1px; color:#f4f7ff;
+  filter:drop-shadow(0 6px 34px rgba(0,0,0,.6)); }
+.headline.small { font-size:96px; }
+/* Kursiv + Verlauf: padding-right, damit der Verlauf den schrägen Überhang
+   des letzten Buchstabens voll abdeckt (sonst wird z. B. das „d" abgeschnitten) */
+.headline .accent { font-style:italic; font-weight:500;
+  padding-right:.14em; margin-right:-.06em;
+  background:linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent; }
+.handle { margin-top:24px; font-family:'Inter',sans-serif; font-weight:600;
+  font-size:29px; letter-spacing:.04em; color:#a7bad2;
+  text-shadow:0 2px 14px rgba(0,0,0,.7); }

@@ -72,6 +72,10 @@ const cssFor = (F, theme) => {
   const ctaBorder = teal
     ? (hell ? "linear-gradient(120deg,#8cc63f,#0f766e)" : "linear-gradient(120deg,#a3d64f,#21b2bd)")
     : (hell ? "linear-gradient(120deg,#d9a93a,#7e6410)" : "linear-gradient(120deg,#f2d489,#d9a93a)");
+  // Schriftlogo (Wortmarke) neben dem Gehirn – Farben je Welt.
+  const wmMain = hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)";
+  const wmSub = hell ? "rgba(22,35,31,.68)" : "rgba(244,242,236,.68)";
+  const tickCol = teal ? (hell ? "rgba(15,118,110,.85)" : "rgba(95,214,210,.85)") : (hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)");
   const bgLayers = hell
     ? (teal
       ? `
@@ -94,7 +98,13 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
  radial-gradient(1.5px 1.5px at 24% 26%,rgba(255,255,255,.55),transparent),
  radial-gradient(1.3px 1.3px at 66% 18%,rgba(255,255,255,.4),transparent),
  radial-gradient(1.3px 1.3px at 82% 60%,rgba(180,210,255,.45),transparent)}
-.brainmini{position:absolute;top:56px;left:64px;width:84px;z-index:6;filter:drop-shadow(0 6px 30px rgba(${glowRGB},.5))}
+.brandlock{position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:16px;z-index:6}
+.brainmini{width:78px;filter:drop-shadow(0 6px 30px rgba(${glowRGB},.5))}
+.wmlock{display:flex;flex-direction:column;gap:5px;line-height:1}
+.wmlock .wm1{font-family:Fraunces,serif;font-weight:400;font-size:30px;letter-spacing:.06em;text-transform:uppercase;color:${wmMain}}
+.wmlock .wm1 em{font-style:normal;background:${accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
+.wmlock .wm2{display:flex;align-items:center;gap:8px;font-family:Fraunces,serif;font-weight:400;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:${wmSub}}
+.wmlock .wm2 i{display:block;height:1px;width:22px;background:${tickCol}}
 .pageno{position:absolute;top:70px;right:64px;font-size:21px;font-weight:700;letter-spacing:2px;color:${pagenoCol};z-index:6}
 em{background:${accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
 .foot{position:absolute;left:64px;right:64px;bottom:54px;display:flex;justify-content:space-between;align-items:center;z-index:6}
@@ -135,7 +145,7 @@ function doc(F, s, i, total, nr, { transparent, withBg, theme }) {
   const creme = theme === "hell" || theme === "tuerkis-hell";
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
 <style>body{background:${transparent ? "transparent" : (creme ? "#f6f4ee" : "#090b10")}}${cssFor(F, theme)}</style></head><body>
-${bg}<img class="brainmini" src="${brainImg}">${pageno}${slideInner(s)}${foot}</body></html>`;
+${bg}<div class="brandlock"><img class="brainmini" src="${brainImg}"><div class="wmlock"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>${pageno}${slideInner(s)}${foot}</body></html>`;
 }
 
 const require = createRequire(import.meta.url);

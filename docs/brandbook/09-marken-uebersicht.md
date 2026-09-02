@@ -67,6 +67,43 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 **Aufräum-Hinweis:** `public/logo-brain-frei.png` ist byte-identisch mit
 `public/logo-brain.png` (Dublette – eine Datei würde genügen).
 
+## Änderungsprotokoll
+
+- **02.09.2026 – Gold-Emblem global auf Seitengehirn + Schriftlogo überall.**
+  Das goldene Marken-Emblem (`public/logo-brain-gold.png`) ist jetzt dasselbe
+  freigestellte **Seitengehirn** wie in Türkis (nur golden), damit alle
+  Gold-Grafiken formgleich sind. Betroffen und neu gerendert: Banner
+  (LinkedIn/YouTube/WhatsApp/Facebook/Instagram), Profilbilder, Zitat-/Fakt-Kacheln,
+  E-Book-CTA (brand-assets), sowie Content-Overlays, Story-Overlays,
+  Story-Carousels, WhatsApp-Mitgliedschaft und Video-Thumbnails. Außerdem trägt
+  das **runde Profilbild jetzt in allen Welten die Wortmarke** – vorher war das
+  Schriftlogo nur in Türkis aktiv (`avatarRound` ohne `if (P.teal)`-Sonderfall).
+- **02.09.2026 – Video-/Reel-Cover: Schriftlogo + 4 Farbwelten.** Der
+  Cover-Generator (`docs/reels/covers/`) trägt jetzt oben links das komplette
+  Marken-Lockup (Gehirn + „WERDE MEISTER / DEINER GEDANKEN") und existiert in
+  **allen vier Welten** – vorher gab es nur Türkis-Navy. Neu: `dunkel` (Gold,
+  Standard, ohne Suffix), `hell` (Gold/Creme, `-hell`), `tuerkis` (`-tuerkis`,
+  das bisherige Design) und `tuerkis-hell` (`-tuerkis-hell`). Betroffen:
+  `data.mjs` (Palette), `build.mjs`, `export-png.mjs`, neues `logo-gold.png`,
+  alle Cover-HTML (59 Motive × 5 Formate × 4 Welten = 1180). PNGs erzeugen mit
+  `npm run covers:png`. Nachgebessert: das Reihen-Label oben rechts – der
+  Reihenname bricht jetzt ruhig um, die Nummer sitzt darunter mit feiner Linie
+  (statt des baumelnden „· NN"). Das Gold-Emblem ist jetzt dasselbe
+  **Seitengehirn** wie in den Türkis-Welten, nur golden (`logo-gold.png`,
+  freigestellt) – dadurch sind alle vier Welten form- und größengleich
+  (das frühere quadratische Gold-Front-Gehirn wirkte zu groß). `logo-gold.png`
+  auf 900 px verkleinert (0,3 MB) – die 3,3-MB-Fassung sprengte in der
+  Artifact-Galerie das CSS-Custom-Property-Limit, wodurch das Gold-Gehirn dort
+  nicht angezeigt wurde. Das Cover-Studio-Artifact zeigt die Welten jetzt live
+  umschaltbar; die Marken-Übersicht hat einen eigenen Cover-Abschnitt.
+- **02.09.2026 – Schriftlogo in den Story-Carousels.** Neben dem Gehirn-Emblem
+  oben links sitzt jetzt die vollständige Wortmarke („WERDE MEISTER / DEINER
+  GEDANKEN") als Marken-Lockup – in allen vier Welten mit welt-eigenen Farben
+  (Gold auf Dunkel & Creme, Türkis/Grün auf Türkis-Navy & Türkis-Creme).
+  Betroffen: `tools/marketing/story-carousels.mjs` und alle neu gerenderten
+  Folien unter `docs/marketing/story-carousels/**` (9 Slides × 3 Formate ×
+  4 Welten). Neu erzeugen mit `npm run story-carousels`.
+
 ## Daten aktualisieren
 
 Nach dem Erzeugen neuer Grafiken die Zahlen in
