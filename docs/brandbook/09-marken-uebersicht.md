@@ -82,7 +82,11 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
   (statt des baumelnden „· NN"). Das Gold-Emblem ist jetzt dasselbe
   **Seitengehirn** wie in den Türkis-Welten, nur golden (`logo-gold.png`,
   freigestellt) – dadurch sind alle vier Welten form- und größengleich
-  (das frühere quadratische Gold-Front-Gehirn wirkte zu groß).
+  (das frühere quadratische Gold-Front-Gehirn wirkte zu groß). `logo-gold.png`
+  auf 900 px verkleinert (0,3 MB) – die 3,3-MB-Fassung sprengte in der
+  Artifact-Galerie das CSS-Custom-Property-Limit, wodurch das Gold-Gehirn dort
+  nicht angezeigt wurde. Das Cover-Studio-Artifact zeigt die Welten jetzt live
+  umschaltbar; die Marken-Übersicht hat einen eigenen Cover-Abschnitt.
 - **02.09.2026 – Schriftlogo in den Story-Carousels.** Neben dem Gehirn-Emblem
   oben links sitzt jetzt die vollständige Wortmarke („WERDE MEISTER / DEINER
   GEDANKEN") als Marken-Lockup – in allen vier Welten mit welt-eigenen Farben
