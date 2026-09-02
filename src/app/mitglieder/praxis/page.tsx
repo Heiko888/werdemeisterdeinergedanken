@@ -56,7 +56,7 @@ export default function PraxisIndexPage() {
                   >
                     <div className="relative aspect-video w-full overflow-hidden bg-navy-900">
                       <Image
-                        src={`/video-thumbnails/praxis/${practice.slug}.png?v=2`}
+                        src={`/video-thumbnails/praxis/${practice.slug}.png`}
                         alt=""
                         aria-hidden
                         fill
