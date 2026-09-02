@@ -5,6 +5,39 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – „Über mich"-Hero auf Desktop kinematisch (wie Mitgliedschaft)
+
+Auf Desktop wirkte der Hero der Seite **/ueber-mich** flach: Das ganze Motiv lag
+unter einem gleichmäßigen Navy-Schleier (~85 %) und der Text stand mittig – das
+schöne Heiko-Bild war kaum noch sichtbar. Die **Mitgliedschaftsseite** löst das
+deutlich ansprechender (freigestelltes Motiv auf einer Seite, Textspalte auf der
+Gegenseite, gerichteter Verlauf). **Mobil war bereits exzellent** (Bildband) und
+bleibt unverändert.
+
+**Neuer, optionaler Spotlight-Modus im `PageHero`**
+
+- `src/components/layout/PageHero.tsx`: Neue Prop
+  `spotlight?: "left" | "right"`. Wirkt **nur ab `lg`** und nur zusammen mit dem
+  mobilen Bildband. Das Motiv wird auf der genannten Seite freigestellt (bleibt
+  hell/sichtbar), der Text steht als schmale Spalte (`lg:max-w-xl`) auf der
+  Gegenseite (rechts- bzw. linksbündig, mit weichem Text-Schatten). Darunter ein
+  **gerichteter Navy-Verlauf** – am dunkelsten hinter dem Text, zum Motiv hin
+  ausblendend. Die Farbstufen sind **bewusst identisch zur Mitgliedschaftsseite**,
+  damit die Heroes über die Seite hinweg denselben Ton tragen. Hero minimal höher
+  (`lg:min-h-[40rem]` statt `34rem`).
+- `src/app/ueber-mich/page.tsx`: `spotlight="left"` gesetzt – Heiko sitzt am
+  linken Bildrand, der Text steht rechts.
+
+**Nicht geändert**
+
+- Der mobile Aufbau (Bildband oben, Text zentriert darunter) ist unverändert.
+- Alle anderen `PageHero`-Nutzungen ohne `spotlight` (Blog, Praxis, Wissen,
+  Kontakt, Impressum, …) rendern exakt wie bisher – der Default-Aufbau blieb
+  gleich (nur intern in einen inneren Flex-Container verschoben, optisch
+  identisch).
+
+---
+
 ## 2026-09-02 – Logo im Header/Footer dezent vergrößert
 
 Das Emblem war etwas zu klein. Größe zentral in `LogoMark`
