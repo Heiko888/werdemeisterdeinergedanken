@@ -105,7 +105,7 @@ export default async function PracticePage({
               <VideoEmbed
                 videoId={(practice.video ?? site.placeholderVideoId)!}
                 title={`Geführte Praxis: ${practice.title}`}
-                poster={`/video-thumbnails/praxis/${practice.slug}.png`}
+                poster={`/video-thumbnails/praxis/${practice.slug}.png?v=2`}
               />
             ) : (
               <div className="mt-3 flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-paper/50 text-center">

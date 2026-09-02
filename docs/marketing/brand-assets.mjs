@@ -152,6 +152,15 @@ const channelSquare = (w, P) => shell(w, w, `
   <div class="url">www.werdemeisterdeinergedanken.de</div>
 </div>`, P);
 
+// Quadratisches Profilbild NUR Emblem (ohne Schriftzug) – zentriert, kreis-sicher.
+const avatarSquarePlain = (w, P) => shell(w, w, `
+.center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(${P.ring})}
+.glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.66)}px;height:${Math.round(w*0.66)}px}
+.brain{width:${Math.round(w*0.6)}px;height:auto}
+`, `<div class="center"><div class="ring"></div><div class="glow"></div>
+  <img class="brain" src="${P.brainUrl}"></div>`, P);
+
 // YouTube-Video-Thumbnail 16:9 – klickstark, großer Titel + Akzentwort
 const thumbnail = (w, h, data, P) => shell(w, h, `
 .wrap{position:absolute;left:64px;top:50%;transform:translateY(-50%);width:${w-640}px}
@@ -457,6 +466,7 @@ const THUMBS = [
 const TARGETS = [];
 // Avatare
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, hell: true, html: (P) =>avatarRound(1080, P) });
+TARGETS.push({ file: "profil/WMDG-Profilbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarSquarePlain(1080, P) });
 TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
