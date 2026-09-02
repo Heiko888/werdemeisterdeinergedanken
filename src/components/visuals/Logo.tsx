@@ -10,12 +10,12 @@ export function LogoMark({ className }: { className?: string }) {
       src={brainLogo}
       alt="Werde Meister deiner Gedanken – Logo"
       priority
-      // Das Logo erscheint nur ~44 px breit (h-10). Ohne sizes erzeugt Next ein
+      // Das Logo erscheint nur ~52 px breit (h-12). Ohne sizes erzeugt Next ein
       // 1x/2x-Srcset aus der vollen Bildbreite (2000 px) – mit sizes holt der
       // Browser eine passend kleine Variante. Das Emblem ist bereits golden,
       // daher kein Gold-CSS-Filter mehr nötig.
-      sizes="44px"
-      className={cn("h-10 w-auto", className)}
+      sizes="52px"
+      className={cn("h-12 w-auto", className)}
     />
   );
 }
