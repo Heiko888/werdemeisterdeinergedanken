@@ -63,12 +63,20 @@ html,body { background:${P.pageBg}; }
   font-weight:400; font-size:${wm.two}px; letter-spacing:.2em; text-transform:uppercase;
   color:${P.wmSub}; white-space:nowrap; }
 .wm2 i { display:block; height:1px; width:${wm.tickW}px; background:${P.tick}; }
-.tag { text-align:right; max-width:40%; padding-top:2px; font-family:'Inter',sans-serif; font-weight:800;
-  font-size:${f.tagFs}px; letter-spacing:.14em; text-transform:uppercase; line-height:1.3;
+/* Reihen-Label oben rechts: Reihenname (bricht ruhig um) + Nummer mit Linie */
+.tag { display:flex; flex-direction:column; align-items:flex-end; gap:${Math.round(f.tagFs * 0.55)}px;
+  max-width:46%; padding-top:3px; text-align:right; }
+.tag .series { font-family:'Inter',sans-serif; font-weight:800; font-size:${f.tagFs}px;
+  letter-spacing:.11em; text-transform:uppercase; line-height:1.26;
   background:${P.accent};
   -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent;
-  filter:drop-shadow(0 2px 12px rgba(0,0,0,${P.hell ? ".18" : ".55"})); }
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,${P.hell ? ".14" : ".5"})); }
+.tag .no { display:flex; align-items:center; gap:${Math.round(f.tagFs * 0.5)}px;
+  font-family:'Inter',sans-serif; font-weight:700; font-size:${Math.round(f.tagFs * 1.12)}px;
+  letter-spacing:.06em; color:${P.wmSub}; }
+.tag .no i { display:block; width:${Math.round(f.tagFs * 1.2)}px; height:2px; border-radius:2px;
+  background:${P.accent}; }
 .spacer { flex:1 1 auto; }
 .headline { max-width:${f.headMaxW}; font-family:'Fraunces',Georgia,serif; font-weight:600;
   font-size:${f.headFs}px; line-height:1.04; letter-spacing:-1px; color:${P.ink};
@@ -109,7 +117,7 @@ function coverHtml(coll, item, n, theme) {
             <span class="wm2"><i></i>Deiner Gedanken<i></i></span>
           </div>
         </div>
-        <div class="tag">${coll.series} · ${nn}</div>
+        <div class="tag"><span class="series">${coll.series}</span><span class="no"><i></i>${nn}</span></div>
       </div>
       <div class="spacer"></div>
       <div class="headline${cls}">${item.html}</div>

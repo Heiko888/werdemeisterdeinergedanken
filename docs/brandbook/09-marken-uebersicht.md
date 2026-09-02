@@ -77,7 +77,9 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
   das bisherige Design) und `tuerkis-hell` (`-tuerkis-hell`). Betroffen:
   `data.mjs` (Palette), `build.mjs`, `export-png.mjs`, neues `logo-gold.png`,
   alle Cover-HTML (59 Motive × 5 Formate × 4 Welten = 1180). PNGs erzeugen mit
-  `npm run covers:png`.
+  `npm run covers:png`. Nachgebessert: das Reihen-Label oben rechts – der
+  Reihenname bricht jetzt ruhig um, die Nummer sitzt darunter mit feiner Linie
+  (statt des baumelnden „· NN").
 - **02.09.2026 – Schriftlogo in den Story-Carousels.** Neben dem Gehirn-Emblem
   oben links sitzt jetzt die vollständige Wortmarke („WERDE MEISTER / DEINER
   GEDANKEN") als Marken-Lockup – in allen vier Welten mit welt-eigenen Farben
