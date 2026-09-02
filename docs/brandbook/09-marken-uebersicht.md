@@ -12,7 +12,9 @@ Marken-Material gibt – damit der Überblick nicht verloren geht.
 1. **Die drei Farbwelten** – jedes Motiv entsteht in drei Welten:
    - **Dunkel · Gold** – Grund `#090b10`, Gold-Gehirn (`logo-brain-gold.png`) +
      Gold-Akzente. Standard (Datei **ohne** Suffix).
-   - **Hell · Creme** – Grund `#f6f4ee`, Gold-Gehirn, Datei-Suffix `-hell`.
+   - **Hell · Creme** – Grund `#f6f4ee`, **buntes Seitenansicht-Gehirn**
+     (`logo-brain-tuerkis.png`, transparent) + Gold-Text-Akzente. Suffix `-hell`.
+     Nur die **dunklen** Standard-Folien nutzen noch das Gold-Front-Emblem.
    - **Türkis · Navy** – Navy-Grund mit Teal-Schimmer, Türkis-Gehirn
      (`logo-brain-tuerkis.png`, Seitenansicht grün→teal→blau) + Grün→Teal-Akzente.
      Datei-Suffix `-tuerkis`. **Neu**.

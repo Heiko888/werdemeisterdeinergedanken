@@ -74,7 +74,9 @@ function palette(theme) {
   return {
     theme, hell, teal,
     bg: teal ? (hell ? BG_HELL_TEAL : BG_TUERKIS) : (hell ? BG_HELL : BG),
-    brainUrl: teal ? brainTealUrl : brainGoldUrl,
+    // Gold-Front-Emblem nur im Standard „dunkel"; alle anderen Welten (inkl.
+    // Creme/Gold „hell") nutzen das bunte Seitenansicht-Gehirn (freigestellt).
+    brainUrl: theme === "dunkel" ? brainGoldUrl : brainTealUrl,
     // rgb-Tripel für radiale Glows/Auren (Gold vs. Teal)
     glow: teal ? "52,196,196" : "233,193,95",
     // Akzent-Verlauf für Schlüsselwörter (<em>/<span>) – teal auf Hell tiefer (AA)

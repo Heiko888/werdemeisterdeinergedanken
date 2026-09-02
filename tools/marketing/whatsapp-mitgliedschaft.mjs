@@ -30,7 +30,8 @@ const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-
 const THEMES = (process.env.THEME
   ? [process.env.THEME]
   : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]).filter((t) => t in THEME_SUFFIX);
-const brainFor = (theme) => (theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain);
+// Gold-Front-Emblem nur im Standard „dunkel"; sonst das bunte Seitenansicht-Gehirn.
+const brainFor = (theme) => (theme === "dunkel" ? brain : brainTeal);
 
 // Zwei Formate: 4:5 fürs Teilen im Chat/Broadcast (kein Crop), 9:16 für den
 // WhatsApp-Status. padTop/padBottom halten Kopf- und Fußzeile aus den

@@ -41,8 +41,9 @@ function WeltPanel({
   variante: keyof typeof farbWelten;
 }) {
   const w = farbWelten[variante];
-  const istTuerkis = variante === "tuerkis" || variante === "tuerkisHell";
-  const emblem = istTuerkis ? "/logo-brain-tuerkis.png" : "/logo-brain-gold.png";
+  // Gold-Front-Emblem nur im Standard „dunkel"; alle anderen Welten nutzen das
+  // bunte Seitenansicht-Gehirn (auch Creme/Gold „hell").
+  const emblem = variante === "dunkel" ? "/logo-brain-gold.png" : "/logo-brain-tuerkis.png";
   return (
     <div
       className="flex flex-col overflow-hidden rounded-2xl border border-ink/10 shadow-card"

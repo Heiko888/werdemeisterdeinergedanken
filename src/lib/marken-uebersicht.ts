@@ -69,7 +69,7 @@ export const farbWelten = {
     grund: "#f6f4ee",
     tinte: "#16231f",
     akzent: "#7e6410",
-    emblem: "Gold-Gehirn",
+    emblem: "Buntes Gehirn (Gold-Akzente)",
     suffix: "Datei-Suffix „-hell“",
   },
   tuerkis: {

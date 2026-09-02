@@ -131,7 +131,7 @@ function doc(F, s, i, total, nr, { transparent, withBg, theme }) {
   const foot = `<div class="foot"><span class="h">${i === 0 ? "Persönliche Geschichten" : "werdemeisterdeinergedanken.de"}</span>${dots(i, total)}<span class="c">${i + 1}/${total}</span></div>`;
   const pageno = i === 0 ? "" : `<div class="pageno">${nr}</div>`;
   const bg = withBg ? `<div class="bg"></div><div class="stars"></div>` : "";
-  const brainImg = theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain;
+  const brainImg = theme === "dunkel" ? brain : brainTeal;
   const creme = theme === "hell" || theme === "tuerkis-hell";
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
 <style>body{background:${transparent ? "transparent" : (creme ? "#f6f4ee" : "#090b10")}}${cssFor(F, theme)}</style></head><body>

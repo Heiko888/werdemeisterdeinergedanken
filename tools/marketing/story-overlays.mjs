@@ -101,7 +101,7 @@ h1 em{background:${accentGrad};-webkit-background-clip:text;background-clip:text
 };
 
 const overlayBody = (s, i, theme) => `<div class="scrim"></div>
-<img class="brainmini" src="${theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain}">
+<img class="brainmini" src="${theme === "dunkel" ? brain : brainTeal}">
 <div class="txt">
   <div class="eyebrow">Persönliche Geschichte · ${String(i + 1).padStart(2, "0")}</div>
   <h1>${s.head}</h1><div class="bar"></div>
