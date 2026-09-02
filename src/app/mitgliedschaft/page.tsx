@@ -2,6 +2,7 @@ import { HERO_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
@@ -209,10 +210,10 @@ export default async function MitgliedschaftPage({
               ["Reagieren statt wählen", "Zwischen Reiz und Reaktion bleibt kein Raum. Du funktionierst, bevor du entscheidest."],
               ["Gedanken als Tatsachen", "Was du denkst, fühlt sich wahr an. Dabei sind es oft nur alte, antrainierte Gewohnheiten."],
             ].map(([t, d]) => (
-              <div key={t} className="rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+              <Card key={t}>
                 <h3 className="text-lg font-medium text-ink">{t}</h3>
                 <p className="mt-2 text-[0.98rem] leading-relaxed text-ink-mid">{d}</p>
-              </div>
+              </Card>
             ))}
           </div>
           <p className="mx-auto mt-10 max-w-xl text-center font-display text-xl italic text-ink">

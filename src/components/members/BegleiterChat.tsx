@@ -236,7 +236,7 @@ export function BegleiterChat({
       >
         {leer && (
           <div className="rounded-2xl border border-ink/10 bg-paper/60 px-5 py-4">
-            <p className="text-[1.02rem] leading-relaxed text-ink-soft/90">
+            <p className="text-[1.02rem] leading-relaxed text-ink-mid">
               {BEGLEITER_WELCOME}
             </p>
           </div>
@@ -251,7 +251,7 @@ export function BegleiterChat({
             </div>
           ) : (
             <div key={m.id} className="flex justify-start">
-              <div className="flex max-w-[92%] flex-col gap-3 rounded-2xl rounded-bl-md border border-ink/10 bg-paper/60 px-5 py-4 text-[1.02rem] leading-relaxed text-ink-soft/90">
+              <div className="flex max-w-[92%] flex-col gap-3 rounded-2xl rounded-bl-md border border-ink/10 bg-paper/60 px-5 py-4 text-[1.02rem] leading-relaxed text-ink-mid">
                 <Paragraphs text={m.body} />
               </div>
             </div>
@@ -261,7 +261,7 @@ export function BegleiterChat({
         {/* Laufende Antwort */}
         {streaming !== null && (
           <div className="flex justify-start" aria-live="polite">
-            <div className="flex max-w-[92%] flex-col gap-3 rounded-2xl rounded-bl-md border border-ink/10 bg-paper/60 px-5 py-4 text-[1.02rem] leading-relaxed text-ink-soft/90">
+            <div className="flex max-w-[92%] flex-col gap-3 rounded-2xl rounded-bl-md border border-ink/10 bg-paper/60 px-5 py-4 text-[1.02rem] leading-relaxed text-ink-mid">
               {streaming ? (
                 <Paragraphs text={streaming} />
               ) : (

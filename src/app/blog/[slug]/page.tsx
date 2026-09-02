@@ -261,7 +261,7 @@ export default async function BlogPostPage({
                     {block.items.map((it, j) => (
                       <li
                         key={j}
-                        className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-soft/85"
+                        className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-mid"
                       >
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                         {renderInline(it)}
@@ -274,8 +274,8 @@ export default async function BlogPostPage({
                   key={i}
                   className={
                     i === 0
-                      ? "text-[1.05rem] leading-[1.75] text-ink-soft/85 first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:font-display first-letter:text-6xl first-letter:font-medium first-letter:leading-[0.7] first-letter:text-accent"
-                      : "text-[1.05rem] leading-[1.75] text-ink-soft/85"
+                      ? "text-[1.05rem] leading-[1.75] text-ink-mid first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:font-display first-letter:text-6xl first-letter:font-medium first-letter:leading-[0.7] first-letter:text-accent"
+                      : "text-[1.05rem] leading-[1.75] text-ink-mid"
                   }
                 >
                   {renderInline(block.text)}

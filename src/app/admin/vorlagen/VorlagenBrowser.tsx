@@ -515,7 +515,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
                   <div key={kanal} className="mt-8">
                     <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
                       {kanal}{" "}
-                      <span className="text-ink-muted/70">
+                      <span className="text-ink-muted">
                         ({kanalItems.length})
                       </span>
                     </h3>
@@ -524,7 +524,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
                         {zeigeFormate && (
                           <h4 className="mb-2 text-[0.72rem] font-semibold uppercase tracking-wide text-accent">
                             {fmt === "?" ? "Weitere Formate" : `Format ${fmt}`}{" "}
-                            <span className="font-normal text-ink-muted/70">
+                            <span className="font-normal text-ink-muted">
                               ({items.length})
                             </span>
                           </h4>
@@ -557,7 +557,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
                 <h3 className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-ink-muted">
                   <Play className="h-4 w-4 text-accent" />
                   {thema}
-                  <span className="text-ink-muted/70">({items.length})</span>
+                  <span className="text-ink-muted">({items.length})</span>
                 </h3>
                 <div className="grid grid-cols-1 items-start gap-4 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
                   {items.map((a) => (
@@ -581,7 +581,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
             {groupBy(gefiltert.carousel, (a) => a.unterKategorie).map(([serie, items]) => (
               <div key={serie} className="mt-8">
                 <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
-                  {serie} <span className="text-ink-muted/70">({items.length})</span>
+                  {serie} <span className="text-ink-muted">({items.length})</span>
                 </h3>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {items.map((a) => (
@@ -606,7 +606,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
               {groupBy(gefiltert.pdf, (p) => p.gruppe).map(([gruppe, items]) => (
                 <div key={gruppe}>
                   <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
-                    {gruppe} <span className="text-ink-muted/70">({items.length})</span>
+                    {gruppe} <span className="text-ink-muted">({items.length})</span>
                   </h3>
                   <div className="grid gap-3 sm:grid-cols-2">
                     {items.map((p) => (
@@ -637,7 +637,7 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
               {groupBy(gefiltert.workshop, (a) => a.unterKategorie).map(([thema, items]) => (
                 <div key={thema}>
                   <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">
-                    {thema} <span className="text-ink-muted/70">({items.length})</span>
+                    {thema} <span className="text-ink-muted">({items.length})</span>
                   </h3>
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {[...items]

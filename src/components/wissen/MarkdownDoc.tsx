@@ -213,7 +213,7 @@ export function MarkdownDoc({ blocks }: { blocks: Block[] }) {
                 {block.items.map((it, j) => (
                   <li
                     key={j}
-                    className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-soft/85"
+                    className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-mid"
                   >
                     <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                     <span>{renderInline(it, `ul-${i}-${j}`)}</span>
@@ -227,7 +227,7 @@ export function MarkdownDoc({ blocks }: { blocks: Block[] }) {
                 {block.items.map((it, j) => (
                   <li
                     key={j}
-                    className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-soft/85"
+                    className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-mid"
                   >
                     <span className="mt-0.5 min-w-6 shrink-0 font-display text-sm font-semibold text-accent">
                       {j + 1}.
@@ -262,7 +262,7 @@ export function MarkdownDoc({ blocks }: { blocks: Block[] }) {
                         {row.map((c, j) => (
                           <td
                             key={j}
-                            className="border-b border-ink/[0.06] px-4 py-3 text-ink-soft/85"
+                            className="border-b border-ink/[0.06] px-4 py-3 text-ink-mid"
                           >
                             {renderInline(c, `td-${i}-${r}-${j}`)}
                           </td>
@@ -298,7 +298,7 @@ export function MarkdownDoc({ blocks }: { blocks: Block[] }) {
           case "p":
           default:
             return (
-              <p key={i} className="text-[1.05rem] leading-[1.75] text-ink-soft/85">
+              <p key={i} className="text-[1.05rem] leading-[1.75] text-ink-mid">
                 {renderInline(block.text, `p-${i}`)}
               </p>
             );

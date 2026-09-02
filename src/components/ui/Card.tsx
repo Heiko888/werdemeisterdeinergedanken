@@ -16,16 +16,21 @@ export function Card({
   interactive = false,
   className,
   children,
+  ...rest
 }: {
   as?: ElementType;
   tone?: "plain" | "accent";
   interactive?: boolean;
   className?: string;
   children: ReactNode;
-}) {
+  // Übrige Props (z. B. `key`, `action`, `href`, `onClick`) werden an das
+  // gewählte Element weitergereicht, damit die Karte auch als Formular,
+  // Link oder Listeneintrag genutzt werden kann.
+} & Record<string, unknown>) {
   return createElement(
     as,
     {
+      ...rest,
       className: cn(
         "rounded-2xl border bg-surface p-6 shadow-card",
         tone === "accent" ? "border-accent/25" : "border-ink/10",

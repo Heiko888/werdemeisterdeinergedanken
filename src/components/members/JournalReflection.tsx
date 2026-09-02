@@ -94,7 +94,7 @@ export function JournalReflection({
       <ul className="flex flex-col gap-6">
         {questions.map((question, i) => (
           <li key={question} className="flex flex-col gap-2">
-            <div className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-soft/85">
+            <div className="flex items-start gap-3 text-[1.02rem] leading-relaxed text-ink-mid">
               <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/12 text-xs text-accent">
                 <Check />
               </span>

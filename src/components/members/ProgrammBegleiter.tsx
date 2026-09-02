@@ -119,7 +119,7 @@ export function ProgrammBegleiter({
           {tag.titel}
         </h2>
 
-        <p className="text-[1.05rem] leading-relaxed text-ink-soft/90">
+        <p className="text-[1.05rem] leading-relaxed text-ink-mid">
           {tag.impuls}
         </p>
 

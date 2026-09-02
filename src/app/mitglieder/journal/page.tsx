@@ -161,7 +161,7 @@ export default async function JournalPage() {
                 {standort.paragraphs.map((p) => (
                   <p
                     key={p.slice(0, 32)}
-                    className="text-[1.02rem] leading-relaxed text-ink-soft/90"
+                    className="text-[1.02rem] leading-relaxed text-ink-mid"
                   >
                     {p}
                   </p>
@@ -280,7 +280,7 @@ export default async function JournalPage() {
                         {ctx.question}
                       </p>
                     )}
-                    <p className="whitespace-pre-wrap text-[1rem] leading-relaxed text-ink-soft/90">
+                    <p className="whitespace-pre-wrap text-[1rem] leading-relaxed text-ink-mid">
                       {entry.body}
                     </p>
                   </article>

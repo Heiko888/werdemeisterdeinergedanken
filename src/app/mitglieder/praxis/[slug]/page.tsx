@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { ArrowRight, Play } from "@/components/ui/Icon";
 import { practices, getPractice, practiceReflection } from "@/lib/practices";
@@ -56,26 +57,26 @@ export default async function PracticePage({
         <Container size="narrow" className="flex flex-col gap-10">
           {/* Wofür / Wann */}
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+            <Card>
               <h2 className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent">
                 Wofür
               </h2>
-              <p className="mt-2 text-[0.98rem] leading-relaxed text-ink-soft/85">
+              <p className="mt-2 text-[0.98rem] leading-relaxed text-ink-mid">
                 {practice.purpose}
               </p>
-            </div>
-            <div className="rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+            </Card>
+            <Card>
               <h2 className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent">
                 Wann
               </h2>
-              <p className="mt-2 text-[0.98rem] leading-relaxed text-ink-soft/85">
+              <p className="mt-2 text-[0.98rem] leading-relaxed text-ink-mid">
                 {practice.when}
               </p>
-            </div>
+            </Card>
           </div>
 
           {/* Einführung */}
-          <p className="text-lg leading-relaxed text-ink-soft/85">
+          <p className="text-lg leading-relaxed text-ink-mid">
             {practice.intro}
           </p>
 
@@ -134,7 +135,7 @@ export default async function PracticePage({
                   <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent/12 text-sm font-semibold text-accent">
                     {i + 1}
                   </span>
-                  <span className="text-[1.02rem] leading-relaxed text-ink-soft/85">
+                  <span className="text-[1.02rem] leading-relaxed text-ink-mid">
                     {step}
                   </span>
                 </li>
@@ -148,7 +149,7 @@ export default async function PracticePage({
               <h2 className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent">
                 Tipp
               </h2>
-              <p className="text-[1.02rem] leading-relaxed text-ink-soft/85">
+              <p className="text-[1.02rem] leading-relaxed text-ink-mid">
                 {practice.tip}
               </p>
             </div>

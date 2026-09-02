@@ -202,7 +202,7 @@ export function ConsciousnessTest() {
 
         {/* Auswertungstext */}
         <div className="flex flex-col gap-6">
-          <p className="text-lg leading-relaxed text-ink-soft/85">
+          <p className="text-lg leading-relaxed text-ink-mid">
             {resultStage.result.summary}
           </p>
 
@@ -215,7 +215,7 @@ export function ConsciousnessTest() {
               <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-accent">
                 {block.label}
               </h3>
-              <p className="leading-relaxed text-ink-soft/85">{block.text}</p>
+              <p className="leading-relaxed text-ink-mid">{block.text}</p>
             </div>
           ))}
 

@@ -22,8 +22,28 @@ sollten zusätzlich im Browser gegengeprüft werden.
 | 4 | B4 | LCP-Bild auf `.webp` umgestellt (2,36 MB → 248 KB); `hero-programm.png` gelöscht | `src/app/mitglieder/programm/page.tsx:43` |
 | 5 | K2 | Header-CTA (Desktop + Mobil) von Gold `accent` → `secondary`, damit Gold der Sektions-Hauptaktion vorbehalten bleibt | `src/components/layout/Header.tsx:99,159` |
 
-Offen: alle übrigen 🔴/🟠/🟡-Funde unten (System-Vereinheitlichung Card/Button/
-Eyebrow/Text-Kontrast, Homepage-Takt, Hero-Fold mobil, restliche Bild-/Layout-Funde).
+**2026-09-02 — System-Durchgang 1 (Text-Kontrast + Card-Adoption):**
+
+| Fund | Umsetzung | Umfang |
+|------|-----------|--------|
+| **M1** | AA-Opacity-Textstufen auf soliden Token umgestellt: `text-ink-soft/80\|85\|90` → `text-ink-mid`, `text-ink-muted/70` → `text-ink-muted`. Betrifft Blog-Lesetext, Wissensdatenbank, Praxis, Stufen, Begleiter-Panels u. a. | 15 Dateien |
+| M1-Ausnahme | `text-ink-muted/50` in `BlogIndex.tsx:91` **bewusst belassen** (rein dekorativer `aria-hidden`-Punkt, kein Fließtext). | — |
+| **M3** | `Card`-Komponente um Prop-Weitergabe (`…rest`) erweitert, damit sie auch als `section`/`form`/`li`/`p` mit eigenen Props nutzbar ist; erste exakt-identische Basis-Karten migriert (praxis ×2, mitgliedschaft, einstellungen, detektor). | Card-API + 5 Karten |
+
+Verifiziert mit `next build` (Exit 0) und `eslint` (clean). Prüf-Hinweis: `ink-soft/85|90`
+ist auf `.on-dark`/`.member-hero` (Token-Flip in `globals.css:322-345`) praktisch
+identisch zu `ink-mid`, daher überall sicher; der AA-Gewinn greift auf hellem Grund.
+
+Offen (nächste Durchgänge):
+- **M3 Rest** — weitere Basis-Karten inkl. der interaktiven `<Link>`-Karten
+  (`mitglieder/page.tsx`, `wissensdatenbank`, `wissen`) auf `<Card>` umstellen.
+- **M2 Pill-Buttons** — 5+ handkopierte Pill-CTAs (Member-Panels) vereinheitlichen;
+  betrifft `<button type="submit">` mit eigener Disabled-Logik → sichtbare Änderung,
+  besser mit laufender App gegenprüfen.
+- **M5 Eyebrow** — 23 handgeschriebene Labels mit gemischten Farben/Größen; einige
+  sind `<figcaption>` oder liegen auf Dunkel → nur die exakten hellen `text-accent`-
+  Labels adoptieren, mit App-Sichtprüfung.
+- Übrige 🔴/🟠/🟡-Funde unten (Homepage-Takt, Hero-Fold mobil, restliche Bild-/Layout-Funde).
 
 ---
 

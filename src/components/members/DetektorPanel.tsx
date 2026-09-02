@@ -104,7 +104,7 @@ export function DetektorPanel() {
 
       {ergebnis && (
         <div className="flex flex-col gap-4">
-          <p className="text-[1.02rem] leading-relaxed text-ink-soft/90">
+          <p className="text-[1.02rem] leading-relaxed text-ink-mid">
             {ergebnis.gesamt}
           </p>
 
@@ -140,7 +140,7 @@ export function DetektorPanel() {
                       „{f.zitat}“
                     </blockquote>
                   )}
-                  <p className="text-[1rem] leading-relaxed text-ink-soft/90">
+                  <p className="text-[1rem] leading-relaxed text-ink-mid">
                     {f.erklaerung}
                   </p>
                 </li>

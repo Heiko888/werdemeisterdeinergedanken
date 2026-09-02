@@ -78,7 +78,7 @@ export default async function StagePage({
           )}
 
           {/* Einführung */}
-          <p className="text-lg leading-relaxed text-ink-soft/85">
+          <p className="text-lg leading-relaxed text-ink-mid">
             {lesson?.intro ?? stage.description}
           </p>
 
@@ -119,7 +119,7 @@ export default async function StagePage({
                   <h3 className="text-lg font-medium text-ink">
                     {section.heading}
                   </h3>
-                  <p className="leading-relaxed text-ink-soft/85">
+                  <p className="leading-relaxed text-ink-mid">
                     {section.body}
                   </p>
                 </article>
@@ -153,7 +153,7 @@ export default async function StagePage({
                       {exercise.steps.map((step, i) => (
                         <li
                           key={step}
-                          className="flex items-start gap-3 text-[0.98rem] leading-relaxed text-ink-soft/85"
+                          className="flex items-start gap-3 text-[0.98rem] leading-relaxed text-ink-mid"
                         >
                           <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/12 text-xs font-semibold text-accent">
                             {i + 1}
