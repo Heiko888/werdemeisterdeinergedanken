@@ -41,9 +41,14 @@ Seite; dazwischen ein DIN-5008-naher Satzspiegel mit Platzhaltern
   Kopf-/Fuß-Trennlinie ist ein Gold-Absatzrahmen.
 - **Kopf/Fuß** liegen in der Word-Kopf-/Fußzeile → auf jeder Folgeseite
   automatisch vorhanden, der Textbereich bleibt frei beschreibbar.
+- **Logo:** Der Kopf nutzt das **echte Logo als Bild** (`public/email/wmdg-logo-lockup.png`,
+  erzeugt von `npm run logo-lockup`) – goldenes Emblem + Wortmarke mit echtem
+  Gold-Verlauf. So sieht Word 1:1 wie Header/Briefbogen aus (Word kann keinen
+  Verlaufstext). Bei geändertem Emblem/Logo einmal `npm run gold-emblem` und
+  danach `npm run logo-lockup` laufen lassen.
 
-> Baut auf `docx` (npm, devDependency). Das eingebettete Logo stammt aus
-> `public/email/wmdg-signatur-logo.png` – die .docx ist damit eigenständig.
+> Baut auf `docx` (npm, devDependency). Das eingebettete Logo-Bild macht die
+> .docx eigenständig.
 
 ## E-Mail-Signatur (`npm run signatur`)
 

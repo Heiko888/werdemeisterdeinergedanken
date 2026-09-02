@@ -32,9 +32,15 @@ const hex = (h) => h.replace("#", "").toUpperCase();
 const INK = hex(C.ink), MUTED = hex(C.inkMuted), MID = hex(C.inkMid);
 // Gold als tragende Markenfarbe: gold-600 (Antikgold) für die große Wortmarke
 // und Feinlinien, gold-700 (AA auf Hell) für kleine Texte/Links.
-const GOLD_WORD = hex(C.gold600), GOLD_TEXT = hex(C.gold700), LINE = hex(C.gold600);
+const GOLD_TEXT = hex(C.gold700), LINE = hex(C.gold600);
 
-const logo = readFileSync(join(ROOT, "public/email/wmdg-signatur-logo.png"));
+// Vollständiges Logo-Lockup als Bild (Emblem + Wortmarke mit echtem Gold-
+// Verlauf – Word kann keinen Verlaufstext). Erzeugt von tools/print/logo-lockup.mjs.
+const lockup = readFileSync(join(ROOT, "public/email/wmdg-logo-lockup.png"));
+const lockupW = lockup.readUInt32BE(16); // PNG IHDR-Breite
+const lockupH = lockup.readUInt32BE(20); // PNG IHDR-Höhe
+const LOGO_H = 66;                        // Anzeigehöhe im Kopf (px)
+const LOGO_W = Math.round(LOGO_H * lockupW / lockupH);
 
 // Seiten-Inhaltsbreite (A4 11906 DXA − Ränder links 1418 / rechts 1134).
 const CONTENT_W = 11906 - 1418 - 1134; // 9354
@@ -51,40 +57,25 @@ const gap = (pts) => new Paragraph({ spacing: { after: pts * 20 }, children: [] 
 
 // ---------- Kopfzeile -------------------------------------------------------
 function header() {
-  const wordmark = new TableCell({
-    verticalAlign: VerticalAlign.CENTER, margins: { left: 120 }, borders: noBorders,
-    width: { size: 5600, type: WidthType.DXA },
-    children: [
-      // Zeile 1: WERDE MEISTER (MEISTER gold, wie im Original-Logo)
-      new Paragraph({ spacing: { after: 30 }, children: [
-        new TextRun({ text: CONTACT.lockup.pre.toUpperCase() + " ", font: SANS,
-          bold: true, size: 30, color: INK, characterSpacing: 40 }),
-        new TextRun({ text: CONTACT.lockup.gold.toUpperCase(), font: SANS,
-          bold: true, size: 30, color: GOLD_WORD, characterSpacing: 40 }),
-      ] }),
-      // Zeile 2: DEINER GEDANKEN
-      new Paragraph({ children: [new TextRun({
-        text: CONTACT.lockup.sub.toUpperCase(), font: SANS, bold: true, size: 16,
-        color: INK, characterSpacing: 60 })] }),
-    ],
-  });
-  const emblem = new TableCell({
+  // Links: das echte Logo (Emblem + Wortmarke mit Verlauf) als Bild.
+  const logoCell = new TableCell({
     verticalAlign: VerticalAlign.CENTER, borders: noBorders,
-    width: { size: 1200, type: WidthType.DXA },
+    width: { size: 6000, type: WidthType.DXA },
     children: [new Paragraph({ children: [new ImageRun({
-      type: "png", data: logo, transformation: { width: 60, height: 60 } })] })],
+      type: "png", data: lockup, transformation: { width: LOGO_W, height: LOGO_H } })] })],
   });
+  // Rechts: Tagline (klein, tiefes Gold, AA-lesbar).
   const tag = new TableCell({
     verticalAlign: VerticalAlign.CENTER, borders: noBorders,
-    width: { size: 2554, type: WidthType.DXA },
+    width: { size: 3354, type: WidthType.DXA },
     children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({
       text: CONTACT.tagline.toUpperCase(), font: SANS, bold: true, size: 17,
       color: GOLD_TEXT, characterSpacing: 30 })] })],
   });
   return new Header({ children: [
     new Table({ width: { size: CONTENT_W, type: WidthType.DXA }, borders: noBorders,
-      columnWidths: [1200, 5600, 2554],
-      rows: [new TableRow({ children: [emblem, wordmark, tag] })] }),
+      columnWidths: [6000, 3354],
+      rows: [new TableRow({ children: [logoCell, tag] })] }),
     ruleP({ spacing: { before: 80 } }),
   ] });
 }
