@@ -54,25 +54,29 @@ function WeltPanel({
           alt=""
           className="h-16 w-auto"
         />
-        <div className="text-center">
+        {/* Wortmarke wie im Website-Header (Logo.tsx): Versalien, Fraunces,
+            zweite Zeile mit Flankier-Strichen. „Meister" im Welt-Akzent. */}
+        <div className="flex flex-col items-center gap-1.5 leading-none">
           <div
-            className="font-display text-lg font-medium tracking-wide"
+            className="font-display text-lg font-normal uppercase tracking-[0.1em]"
             style={{ color: w.tinte }}
           >
             Werde <span style={{ color: w.akzent }}>Meister</span>
           </div>
           <div
-            className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.28em]"
-            style={{ color: w.tinte, opacity: 0.72 }}
+            className="flex items-center gap-2 font-display text-[0.6rem] font-normal uppercase tracking-[0.24em]"
+            style={{ color: w.tinte, opacity: 0.8 }}
           >
+            <span className="h-px w-3 shrink-0" style={{ background: w.akzent }} aria-hidden />
             Deiner Gedanken
+            <span className="h-px w-3 shrink-0" style={{ background: w.akzent }} aria-hidden />
           </div>
         </div>
       </div>
       <div
         className="flex items-center justify-between px-4 py-3 text-xs"
         style={{
-          background: variante === "dunkel" ? "#0f1218" : "#efece2",
+          background: variante === "hell" ? "#efece2" : "#0f1218",
           color: w.tinte,
         }}
       >
