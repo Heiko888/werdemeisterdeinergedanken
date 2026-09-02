@@ -168,6 +168,13 @@ export default async function AdminPage() {
               Alle Vorlagen verwalten
               <ArrowRight />
             </Link>
+            <Link
+              href="/admin/marken-uebersicht"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
+            >
+              Marken-Übersicht
+              <ArrowRight />
+            </Link>
           </div>
         </Container>
       </section>

@@ -16,7 +16,9 @@ import { dirname, join } from "node:path";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
-const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
+// Zwei Emblem-Farbwelten: Gold (Standard „dunkel") und Türkis (Variante).
+const brainGoldUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
+const brainTealUrl = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const ebookUri = `data:image/webp;base64,${readFileSync(join(ROOT, "public/ebook-mockup.webp")).toString("base64")}`;
 
 // Zitat-/Fakten-Texte kommen aus der gemeinsamen Quelle (auch von den Overlays
@@ -43,53 +45,128 @@ const BG_HELL = `
   radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),
   #f6f4ee;
   box-shadow:inset 0 26px 44px -34px rgba(8,16,42,.22);}`;
+// Türkis-Variante: dunkler Navy-Grund wie „dunkel", aber führender Teal-Schimmer
+// (statt Gold). Passt zum Türkis-Emblem (public/logo-brain.png).
+const BG_TUERKIS = `
+.bg{position:absolute;inset:0;background:
+  radial-gradient(54% 112% at 84% 8%, rgba(52,196,196,.24), transparent 60%),
+  radial-gradient(48% 110% at 6% 96%, rgba(33,178,189,.14), transparent 60%),
+  radial-gradient(44% 92% at 74% 94%, rgba(140,198,63,.12), transparent 60%),
+  #090b10;}`;
+// Creme-Grund mit Teal-Schimmer (für „tuerkis-hell": helle Fläche + Türkis-Emblem).
+const BG_HELL_TEAL = `
+.bg{position:absolute;inset:0;background:
+  radial-gradient(78% 62% at 50% -10%, rgba(52,196,196,.20), transparent 62%),
+  radial-gradient(60% 55% at 96% 4%, rgba(140,198,63,.12), transparent 60%),
+  radial-gradient(58% 52% at 4% 108%, rgba(33,178,189,.12), transparent 60%),
+  #f6f4ee;
+  box-shadow:inset 0 26px 44px -34px rgba(8,16,42,.22);}`;
 
-// hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent in tiefem Gold #7e6410).
-const shell = (w, h, extra, body, hell) => `<!doctype html><html><head><meta charset="utf8">
+/**
+ * Farb-Palette – zwei Achsen: Grund (hell=Creme / dunkel=Navy) × Akzent
+ * (teal=Türkis-Emblem+Grün→Teal / gold). Vier Themes:
+ *   dunkel (gold+navy, Standard), hell (gold+creme, -hell),
+ *   tuerkis (teal+navy, -tuerkis), tuerkis-hell (teal+creme, -tuerkis-hell).
+ */
+function palette(theme) {
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
+  return {
+    theme, hell, teal,
+    bg: teal ? (hell ? BG_HELL_TEAL : BG_TUERKIS) : (hell ? BG_HELL : BG),
+    // Emblem je Welt: Gold-Front-Emblem für die Gold-Welten (dunkel + hell/Creme),
+    // buntes Seitenansicht-Gehirn für die Türkis-Welten.
+    brainUrl: theme === "tuerkis" || theme === "tuerkis-hell" ? brainTealUrl : brainGoldUrl,
+    // rgb-Tripel für radiale Glows/Auren (Gold vs. Teal)
+    glow: teal ? "52,196,196" : "233,193,95",
+    // Akzent-Verlauf für Schlüsselwörter (<em>/<span>) – teal auf Hell tiefer (AA)
+    accentGrad: teal
+      ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
+      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
+    wmGrad: teal
+      ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
+      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"),
+    eyebrow: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489"),
+    url: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#e8c15f"),
+    // E-Book-CTA + Häkchen
+    ctaBg: teal
+      ? "linear-gradient(100deg,#199aa8,#0f766e)"
+      : (hell ? "linear-gradient(100deg,#c79a2f,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
+    ctaFg: teal ? (hell ? "#f4faf9" : "#f4f2ec") : (hell ? "#fdfaf1" : "#241a06"),
+    ckBg: teal ? (hell ? "rgba(15,118,110,.16)" : "rgba(52,196,196,.18)") : (hell ? "rgba(168,132,42,.20)" : "rgba(232,193,95,.16)"),
+    ckCol: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#e8c15f"),
+    // feine Deko-Linie / Fuß-Tick
+    tick: teal ? (hell ? "rgba(15,118,110,.85)" : "rgba(95,214,210,.85)") : (hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)"),
+    // Ring ums runde Profilbild
+    ring: teal ? (hell ? "15,118,110,.38" : "52,196,196,.30") : (hell ? "168,132,42,.38" : "233,193,95,.18"),
+  };
+}
+
+// P = palette(theme). hell=true → Creme; teal → Türkis; sonst Gold/dunkel.
+const shell = (w, h, extra, body, P) => `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
-body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${hell ? "#f6f4ee" : "#090b10"}}
-${hell ? BG_HELL : BG}
-.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(233,193,95,.45))}
-.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".22" : ".35"}), transparent 66%);filter:blur(30px)}
-.wordmark{font-weight:800;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
-.wordmark span{background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
-.url{font-weight:700;color:${hell ? "#7e6410" : "#e8c15f"};letter-spacing:.3px}
-.eyebrow{font-weight:700;letter-spacing:4px;text-transform:uppercase;color:${hell ? "#7e6410" : "#f2d489"}}
+body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${P.hell ? "#f6f4ee" : "#090b10"}}
+${P.bg}
+.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(${P.glow},.45))}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".22" : ".35"}), transparent 66%);filter:blur(30px)}
+.wordmark{font-weight:800;text-transform:uppercase;color:${P.hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
+.wordmark span{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
+.url{font-weight:700;color:${P.url};letter-spacing:.3px}
+.eyebrow{font-weight:700;letter-spacing:4px;text-transform:uppercase;color:${P.eyebrow}}
 ${extra}
 </style></head><body><div class="bg"></div>${body}</body></html>`;
 
 // ---------- Layouts ---------------------------------------------------------
 
 // Rundes Profilbild – Icon zentriert, komplett kreis-sicher (kein Text am Rand)
-const avatarRound = (w, hell) => shell(w, w, `
+const avatarRound = (w, P) => {
+  const ringGlow = `
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(${P.ring})}
+.glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.62)}px;height:${Math.round(w*0.62)}px}`;
+  // Türkis: Emblem + kompakte Wortmarke wie im Header (kreis-sicher zentriert).
+  // Gold/Creme: nur das Emblem (unverändert).
+  if (P.teal) {
+    return shell(w, w, `${ringGlow}
+.stack{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:${Math.round(w*0.03)}px;text-align:center;padding:0 ${Math.round(w*0.1)}px}
+.brain{width:${Math.round(w*0.46)}px;height:auto}
+.wm1{font-family:Fraunces,serif;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:${P.hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.06)}px;line-height:1}
+.wm1 span{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
+.wm2{display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.012)}px;font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.22em;color:${P.hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.75)"};font-size:${Math.round(w*0.026)}px;line-height:1}
+.wm2 i{display:block;height:1px;width:${Math.round(w*0.03)}px;background:${P.tick}}
+`, `<div class="ring"></div><div class="glow"></div>
+  <div class="stack"><img class="brain" src="${P.brainUrl}">
+    <div class="wm1">Werde <span>Meister</span></div>
+    <div class="wm2"><i></i>Deiner Gedanken<i></i></div>
+  </div>`, P);
+  }
+  return shell(w, w, `${ringGlow}
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(${hell ? "168,132,42,.38" : "233,193,95,.18"})}
-.glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.62)}px;height:${Math.round(w*0.62)}px}
 .brain{width:${Math.round(w*0.6)}px;height:${Math.round(w*0.6)}px}
 `, `<div class="center"><div class="ring"></div><div class="glow"></div>
-  <img class="brain" src="${brainUrl}"></div>`, hell);
+  <img class="brain" src="${P.brainUrl}"></div>`, P);
+};
 
 // Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel)
-const channelSquare = (w, hell) => shell(w, w, `
+const channelSquare = (w, P) => shell(w, w, `
 .stack{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:${Math.round(w*0.045)}px;text-align:center;padding:0 ${Math.round(w*0.08)}px}
 .glow{left:50%;top:38%;transform:translate(-50%,-50%);width:${Math.round(w*0.5)}px;height:${Math.round(w*0.5)}px}
 .brain{width:${Math.round(w*0.44)}px;height:${Math.round(w*0.44)}px}
 .wordmark{font-size:${Math.round(w*0.062)}px;letter-spacing:${Math.round(w*0.008)}px;line-height:1.35}
 .url{font-size:${Math.round(w*0.03)}px;margin-top:${Math.round(w*0.01)}px}
 `, `<div class="stack">
-  <img class="brain" src="${brainUrl}">
+  <img class="brain" src="${P.brainUrl}">
   <div class="wordmark">Werde Meister deiner<br><span>Gedanken</span></div>
   <div class="url">www.werdemeisterdeinergedanken.de</div>
-</div>`, hell);
+</div>`, P);
 
 // YouTube-Video-Thumbnail 16:9 – klickstark, großer Titel + Akzentwort
-const thumbnail = (w, h, data, hell) => shell(w, h, `
+const thumbnail = (w, h, data, P) => shell(w, h, `
 .wrap{position:absolute;left:64px;top:50%;transform:translateY(-50%);width:${w-640}px}
 .eyebrow{font-size:23px;margin-bottom:20px}
-.title{font-family:Fraunces,serif;font-weight:600;color:${hell ? "#16231f" : "#f4f2ec"};font-size:62px;line-height:1.06;letter-spacing:-.5px}
-.title em{background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.kicker{margin-top:24px;font-size:24px;font-weight:700;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"};line-height:1.3}
+.title{font-family:Fraunces,serif;font-weight:600;color:${P.hell ? "#16231f" : "#f4f2ec"};font-size:62px;line-height:1.06;letter-spacing:-.5px}
+.title em{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.kicker{margin-top:24px;font-size:24px;font-weight:700;color:${P.hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"};line-height:1.3}
 .glow{right:100px;top:50%;transform:translateY(-50%);width:${Math.round(h*0.6)}px;height:${Math.round(h*0.6)}px}
 .brain{position:absolute;right:120px;top:50%;transform:translateY(-50%);width:${Math.round(h*0.6)}px;height:${Math.round(h*0.6)}px}
 `, `<div class="wrap">
@@ -97,75 +174,76 @@ const thumbnail = (w, h, data, hell) => shell(w, h, `
   <div class="title">${data.title}</div>
   <div class="kicker">${data.kicker}</div>
 </div>
-<div class="glow"></div><img class="brain" src="${brainUrl}">`, hell);
+<div class="glow"></div><img class="brain" src="${P.brainUrl}">`, P);
 
 // Zitat-Kachel – großer Serifensatz, Marke als dezente Signatur unten.
 // Designcode: ein Wort im Zitat trägt den Grün-Türkis-Verlauf (<em>) und ist
 // die visuelle Pointe. Großes, sehr transparentes Anführungszeichen hinter dem
 // Text; weiche Tiefe im Hintergrund (Glow, keine konkreten Motive).
 // hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent in tiefem Gold #7e6410).
-const quoteTile = (w, h, q, hell) => shell(w, h, `
-.aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".16" : ".10"}), rgba(233,193,95,0) 66%);filter:blur(46px)}
+const quoteTile = (w, h, q, P) => shell(w, h, `
+.aura{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".16" : ".10"}), rgba(${P.glow},0) 66%);filter:blur(46px)}
 .qstars{display:none}
-.qmark{position:absolute;left:50%;top:${Math.round(h*0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w*0.6)}px;line-height:.62;color:${hell ? "rgba(126,100,16,.10)" : "rgba(242,212,137,.095)"};pointer-events:none}
+.qmark{position:absolute;left:50%;top:${Math.round(h*0.35)}px;transform:translate(-50%,-50%);font-family:Fraunces,serif;font-weight:600;font-size:${Math.round(w*0.6)}px;line-height:.62;color:${P.hell ? "rgba(126,100,16,.10)" : P.teal ? "rgba(95,214,210,.10)" : "rgba(242,212,137,.095)"};pointer-events:none}
 .qwrap{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.3)}px;text-align:center}
-.quote{font-family:Fraunces,serif;font-weight:500;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.067)}px;line-height:1.32;letter-spacing:-.3px}
-.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{font-family:Fraunces,serif;font-weight:500;color:${P.hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.067)}px;line-height:1.32;letter-spacing:-.3px}
+.quote em{font-style:italic;font-weight:600;font-size:1.07em;background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.016)}px}
 .foot img{width:${Math.round(w*0.052)}px;height:${Math.round(w*0.052)}px;object-fit:contain}
 .foot .wm{display:flex;flex-direction:column;gap:${Math.round(w*0.006)}px;line-height:1;text-align:left}
-.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
-.foot .wm1 em{font-style:normal;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"};-webkit-background-clip:text;background-clip:text;color:transparent}
-.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"}}
-.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:${hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)"}}
+.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:${P.hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
+.foot .wm1 em{font-style:normal;background:${P.wmGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:${P.hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"}}
+.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:${P.tick}}
 `, `<div class="aura"></div><div class="qstars"></div><div class="qmark">„</div>
 <div class="qwrap"><div class="quote">${q}</div></div>
-<div class="foot"><img src="${brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`, hell);
+<div class="foot"><img src="${P.brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`, P);
 
 // Studien-Fakt-Kachel – gleiches Serien-Template wie die Zitate (Verlauf,
 // Serifenschrift, Grün-Türkis-Schlüsselwort als Pointe, Signatur unten),
 // nur mit Eyebrow + Quellenzeile statt Anführungszeichen.
 // hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent in tiefem Gold #7e6410).
-const factTile = (w, h, f, hell) => shell(w, h, `
-.aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".16" : ".10"}), rgba(233,193,95,0) 66%);filter:blur(46px)}
+const factTile = (w, h, f, P) => shell(w, h, `
+.aura{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${Math.round(w*0.95)}px;height:${Math.round(w*0.95)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".16" : ".10"}), rgba(${P.glow},0) 66%);filter:blur(46px)}
 .qstars{display:none}
 .fwrap{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:${w-Math.round(w*0.24)}px;text-align:center}
 .eyebrow{font-size:${Math.round(w*0.024)}px;letter-spacing:.22em;margin-bottom:${Math.round(w*0.045)}px}
-.fact{font-family:Fraunces,serif;font-weight:500;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.064)}px;line-height:1.3;letter-spacing:-.3px}
-.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
-.src{margin-top:${Math.round(w*0.045)}px;font-size:${Math.round(w*0.026)}px;line-height:1.4;color:${hell ? "rgba(22,35,31,.6)" : "rgba(244,242,236,.55)"}}
-.src b{color:${hell ? "#7e6410" : "rgba(232,193,95,.9)"};font-weight:700}
+.fact{font-family:Fraunces,serif;font-weight:500;color:${P.hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.064)}px;line-height:1.3;letter-spacing:-.3px}
+.fact em{font-style:italic;font-weight:600;font-size:1.07em;background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
+.src{margin-top:${Math.round(w*0.045)}px;font-size:${Math.round(w*0.026)}px;line-height:1.4;color:${P.hell ? "rgba(22,35,31,.6)" : "rgba(244,242,236,.55)"}}
+.src b{color:${P.hell ? "#7e6410" : P.teal ? "#5fd6d2" : "rgba(232,193,95,.9)"};font-weight:700}
 .foot{position:absolute;left:0;right:0;bottom:${Math.round(w*0.072)}px;display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.016)}px}
 .foot img{width:${Math.round(w*0.052)}px;height:${Math.round(w*0.052)}px;object-fit:contain}
 .foot .wm{display:flex;flex-direction:column;gap:${Math.round(w*0.006)}px;line-height:1;text-align:left}
-.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
-.foot .wm1 em{font-style:normal;background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"};-webkit-background-clip:text;background-clip:text;color:transparent}
-.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:${hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"}}
-.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:${hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)"}}
+.foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:${P.hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
+.foot .wm1 em{font-style:normal;background:${P.wmGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot .wm2{display:flex;align-items:center;gap:${Math.round(w*0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w*0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:${P.hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.72)"}}
+.foot .wm2 i{display:block;height:1px;width:${Math.round(w*0.022)}px;background:${P.tick}}
 `, `<div class="aura"></div><div class="qstars"></div>
 <div class="fwrap">
   <div class="eyebrow">Studien-Fakt</div>
   <div class="fact">${f.t}</div>
   <div class="src"><b>Quelle:</b> ${f.src}</div>
 </div>
-<div class="foot"><img src="${brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`, hell);
+<div class="foot"><img src="${P.brainUrl}"><div class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>`, P);
 
 // Gratis-E-Book-Einzelpost – orientierungsbewusst (Querformat = zweispaltig),
 // bewusst luftig. Schriftgrößen an der kürzeren Kante ausgerichtet.
 // hell=true → Creme-Theme (dunkle Tinte-Schrift, Akzent/Buttons in tiefem Gold).
-const ebookPost = (w, h, hell) => {
+const ebookPost = (w, h, P) => {
+  const hell = P.hell;
   const land = w > h * 1.15;            // deutlich breiter → Querformat
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v); // Schrift an kürzerer Kante
-  // Farb-Tokens je Theme
+  // Farb-Tokens je Theme (türkis erbt die dunklen Grund-/Textwerte)
   const ink      = hell ? "#16231f" : "#f4f2ec";
-  const accent   = hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)";
-  const ctaBg    = hell ? "linear-gradient(100deg,#c79a2f,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)";
-  const ctaFg    = hell ? "#fdfaf1" : "#241a06";
+  const accent   = P.accentGrad;
+  const ctaBg    = P.ctaBg;
+  const ctaFg    = P.ctaFg;
   const noteCol  = hell ? "rgba(22,35,31,.66)" : "rgba(244,242,236,.68)";
   const bulCol   = hell ? "rgba(22,35,31,.82)" : "rgba(244,242,236,.84)";
-  const ckBg     = hell ? "rgba(168,132,42,.20)" : "rgba(232,193,95,.16)";
-  const ckCol    = hell ? "#7e6410" : "#e8c15f";
+  const ckBg     = P.ckBg;
+  const ckCol    = P.ckCol;
   const bookSh   = hell ? "0 22px 50px rgba(8,16,42,.28)" : "0 22px 50px rgba(0,0,0,.55)";
   const bookShSq = hell ? "0 24px 58px rgba(8,16,42,.30)" : "0 24px 58px rgba(0,0,0,.62)";
 
@@ -177,7 +255,7 @@ const ebookPost = (w, h, hell) => {
 .post{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:${Math.round(h*0.045)}px ${Math.round(w*0.09)}px;gap:${b(0.03)}px}
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.16em}
 .bookwrap{position:relative;display:flex;justify-content:center}
-.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.82)}px;height:${Math.round(bookHsq*0.82)}px;border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,.24), transparent 68%);filter:blur(44px)}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookHsq*0.82)}px;height:${Math.round(bookHsq*0.82)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},.24), transparent 68%);filter:blur(44px)}
 .book{position:relative;height:${bookHsq}px;width:auto;filter:drop-shadow(${bookShSq})}
 .h{font-family:Fraunces,serif;font-weight:600;color:${ink};font-size:${b(0.06)}px;line-height:1.16;letter-spacing:-.5px;max-width:98%}
 .h em{background:${accent};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
@@ -192,7 +270,7 @@ const ebookPost = (w, h, hell) => {
     <div class="cta">E-Book gratis sichern ${ARROW}</div>
     <div class="cta-note">Link in Bio</div>
   </div>
-</div>`, hell);
+</div>`, P);
   }
 
   // Buch höhenbasiert dimensionieren → verlässlicher Rand oben/unten,
@@ -202,7 +280,7 @@ const ebookPost = (w, h, hell) => {
   const bookW = Math.round(bookH / 1.37);
   const common = `
 .eyebrow{font-size:${b(0.026)}px;letter-spacing:.2em}
-.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.35)}px;height:${Math.round(bookW*1.35)}px;border-radius:50%;background:radial-gradient(circle, rgba(232,193,95,.24), transparent 68%);filter:blur(38px)}
+.bookglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(bookW*1.35)}px;height:${Math.round(bookW*1.35)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},.24), transparent 68%);filter:blur(38px)}
 .book{position:relative;width:auto;height:${bookH}px;filter:drop-shadow(${bookSh})}
 .h{font-family:Fraunces,serif;font-weight:600;color:${ink};font-size:${b(0.062)}px;line-height:1.14;letter-spacing:-.5px}
 .h em{background:${accent};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
@@ -235,7 +313,7 @@ const ebookPost = (w, h, hell) => {
       <div class="cta-note">Link in Bio</div>
     </div>
   </div>
-</div>`, hell);
+</div>`, P);
   }
   // Hochformat (4:5, 9:16, 2:3): Conversion-Aufbau – kurzer Eyebrow, großes
   // Cover, Headline, aktiver CTA + „Link in Bio" (keine Punkte, keine URL).
@@ -258,7 +336,7 @@ const ebookPost = (w, h, hell) => {
     <div class="cta">E-Book gratis sichern ${ARROW}</div>
     <div class="cta-note">Link in Bio</div>
   </div>
-</div>`, hell);
+</div>`, P);
 };
 
 // Instagram-Story / Key-Visual – Brain + Marke, orientierungsbewusst.
@@ -269,7 +347,8 @@ const STORY_TEXT = `
     <div class="sub">Raus aus fremden Mustern. Rein in dein eigenes Denken.</div>
     <div class="url">www.werdemeisterdeinergedanken.de</div>`;
 
-const storyPost = (w, h, hell) => {
+const storyPost = (w, h, P) => {
+  const hell = P.hell;
   const land = w > h * 1.15;
   const base = Math.min(w, h);
   const b = (v) => Math.round(base * v);
@@ -278,10 +357,10 @@ const storyPost = (w, h, hell) => {
     : Math.round(base * (h > w * 1.4 ? 0.5 : h > w ? 0.44 : 0.36));
   const common = `
 .eyebrow{font-size:${b(0.024)}px;letter-spacing:.16em}
-.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(233,193,95,${hell ? ".2" : ".32"}), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
+.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".2" : ".32"}), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
 .brain{position:relative;width:${brainSize}px;height:${brainSize}px}
 .h{font-family:Fraunces,serif;font-weight:600;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
-.h .g{background:${hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"};-webkit-background-clip:text;background-clip:text;color:transparent}
+.h .g{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
 .sub{font-size:${b(0.033)}px;line-height:1.42;color:${hell ? "rgba(22,35,31,.80)" : "rgba(244,242,236,.80)"}}
 .url{font-size:${b(0.028)}px}`;
 
@@ -291,9 +370,9 @@ const storyPost = (w, h, hell) => {
 .brainwrap{position:relative;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
 .col{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:${b(0.036)}px;max-width:${Math.round(w*0.5)}px}
 `, `<div class="post">
-  <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${brainUrl}"></div>
+  <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${P.brainUrl}"></div>
   <div class="col">${STORY_TEXT}</div>
-</div>`, hell);
+</div>`, P);
   }
   // Hoch-/Quadratformat: Brain oben, zentrierte Textsäule darunter
   return shell(w, h, `${common}
@@ -301,9 +380,9 @@ const storyPost = (w, h, hell) => {
 .brainwrap{position:relative;display:flex;align-items:center;justify-content:center}
 .col{display:flex;flex-direction:column;align-items:center;gap:${b(0.034)}px;max-width:96%}
 `, `<div class="post">
-  <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${brainUrl}"></div>
+  <div class="brainwrap"><div class="brainglow"></div><img class="brain" src="${P.brainUrl}"></div>
   <div class="col">${STORY_TEXT}</div>
-</div>`, hell);
+</div>`, P);
 };
 
 // ---------- Inhalte ---------------------------------------------------------
@@ -385,28 +464,28 @@ const THUMBS = [
 
 const TARGETS = [];
 // Avatare
-TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, hell: true, html: (hell) => avatarRound(1080, hell) });
-TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (hell) => channelSquare(1080, hell) });
-TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (hell) => channelSquare(1080, hell) });
+TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, hell: true, html: (P) =>avatarRound(1080, P) });
+TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
+TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
 // Info-/Katalog-Kachel mit Wortmarke und ein Status-Banner im Hochformat (9:16).
-TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Profilbild.png",  w: 1080, h: 1080, hell: true, html: (hell) => avatarRound(1080, hell) });
-TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Kanalbild.png",   w: 1080, h: 1080, hell: true, html: (hell) => channelSquare(1080, hell) });
-TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Status-9x16.png", w: 1080, h: 1920, hell: true, html: (hell) => storyPost(1080, 1920, hell) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Profilbild.png",  w: 1080, h: 1080, hell: true, html: (P) =>avatarRound(1080, P) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Kanalbild.png",   w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
+TARGETS.push({ file: "whatsapp/WMDG-WhatsApp-Status-9x16.png", w: 1080, h: 1920, hell: true, html: (P) =>storyPost(1080, 1920, P) });
 // YouTube-Thumbnails
 for (const d of THUMBS)
-  TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, hell: true, html: (hell) => thumbnail(1280, 720, d, hell) });
+  TARGETS.push({ file: `youtube/thumbnails/WMDG-Thumbnail-${d.key}.png`, w: 1280, h: 720, hell: true, html: (P) =>thumbnail(1280, 720, d, P) });
 // Zitat-Kacheln (1:1, 4:5 und 9:16 Story)
 for (const q of QUOTES) {
-  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, hell: true, html: (hell) => quoteTile(1080, 1080, q.t, hell) });
-  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, hell: true, html: (hell) => quoteTile(1080, 1350, q.t, hell) });
-  TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, hell: true, html: (hell) => quoteTile(1080, 1920, q.t, hell) });
+  TARGETS.push({ file: `zitate/1x1/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1080, hell: true, html: (P) =>quoteTile(1080, 1080, q.t, P) });
+  TARGETS.push({ file: `zitate/4x5/WMDG-Zitat-${q.key}.png`,  w: 1080, h: 1350, hell: true, html: (P) =>quoteTile(1080, 1350, q.t, P) });
+  TARGETS.push({ file: `zitate/9x16/WMDG-Zitat-${q.key}.png`, w: 1080, h: 1920, hell: true, html: (P) =>quoteTile(1080, 1920, q.t, P) });
 }
 // Studien-Fakten-Kacheln (1:1, 4:5 und 9:16 Story) – je dunkel + Creme (-hell.png).
 for (const f of FACTS) {
-  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1080, hell: true, html: (hell) => factTile(1080, 1080, f, hell) });
-  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1350, hell: true, html: (hell) => factTile(1080, 1350, f, hell) });
-  TARGETS.push({ file: `zitate/studien-9x16/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1920, hell: true, html: (hell) => factTile(1080, 1920, f, hell) });
+  TARGETS.push({ file: `zitate/studien-1x1/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1080, hell: true, html: (P) =>factTile(1080, 1080, f, P) });
+  TARGETS.push({ file: `zitate/studien-4x5/WMDG-Studienfakt-${f.key}.png`,  w: 1080, h: 1350, hell: true, html: (P) =>factTile(1080, 1350, f, P) });
+  TARGETS.push({ file: `zitate/studien-9x16/WMDG-Studienfakt-${f.key}.png`, w: 1080, h: 1920, hell: true, html: (P) =>factTile(1080, 1920, f, P) });
 }
 // Gratis-E-Book – Einzelpost in 5 Formaten (wie die Cover)
 const EBOOK_FORMATS = [
@@ -417,10 +496,10 @@ const EBOOK_FORMATS = [
   { key: "2x3",  w: 1000, h: 1500 }, // Pinterest
 ];
 for (const F of EBOOK_FORMATS)
-  TARGETS.push({ file: `ebook/WMDG-Ebook-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (hell) => ebookPost(F.w, F.h, hell) });
+  TARGETS.push({ file: `ebook/WMDG-Ebook-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (P) =>ebookPost(F.w, F.h, P) });
 // Instagram-Story / Key-Visual – dieselben 5 Formate wie das E-Book
 for (const F of EBOOK_FORMATS)
-  TARGETS.push({ file: `instagram/WMDG-Instagram-Story-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (hell) => storyPost(F.w, F.h, hell) });
+  TARGETS.push({ file: `instagram/WMDG-Instagram-Story-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (P) =>storyPost(F.w, F.h, P) });
 
 // ---------- Render ----------------------------------------------------------
 const require = createRequire(import.meta.url);
@@ -442,14 +521,20 @@ const targets = only ? TARGETS.filter((t) => t.file.includes(only)) : TARGETS;
 // (passt zu FULL_WIDTH=2160 in tools/vorlagen/build-gallery.mjs).
 const SCALE = Number(process.env.SCALE || "1") || 1;
 const browser = await chromium.launch({ executablePath: findChrome() });
+// Datei-Suffix je Theme: dunkel = ohne Suffix (Standard), hell = -hell,
+// tuerkis = -tuerkis. Optional nur eine Welt rendern:  THEME=tuerkis node …
+const themeSuffix = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-hell": "-tuerkis-hell" };
+const onlyTheme = process.env.THEME; // dunkel | hell | tuerkis | tuerkis-hell
 for (const t of targets){
-  // Standard (dunkel) und – wo markiert (t.hell) – zusätzlich die Creme-Variante.
-  const variants = t.hell ? [false, true] : [false];
-  for (const hell of variants){
-    const outFile = hell ? t.file.replace(/\.png$/, "-hell.png") : t.file;
+  // Vier Welten: dunkel (Gold+Navy, Standard), tuerkis (Teal+Navy) und – wo
+  // markiert (t.hell) – zusätzlich hell (Gold+Creme) und tuerkis-hell (Teal+Creme).
+  let themes = ["dunkel", "tuerkis", ...(t.hell ? ["hell", "tuerkis-hell"] : [])];
+  if (onlyTheme) themes = themes.filter((x) => x === onlyTheme);
+  for (const theme of themes){
+    const outFile = t.file.replace(/\.png$/, `${themeSuffix[theme]}.png`);
     const page = await browser.newPage({ viewport:{ width:t.w, height:t.h }, deviceScaleFactor: SCALE });
     const tmp = join(HERE, `.tmp-asset.html`);
-    writeFileSync(tmp, t.html(hell));
+    writeFileSync(tmp, t.html(palette(theme)));
     await page.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
     mkdirSync(join(HERE, dirname(outFile)), { recursive:true });
     await page.screenshot({ path: join(HERE, outFile) });
