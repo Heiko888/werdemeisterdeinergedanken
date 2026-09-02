@@ -138,7 +138,7 @@ function thumbHtml({ eyebrow, title, sub, num, portrait, tag }, P) {
       <div class="title" style="font-size:${tf}px">${title}</div>
       ${sub ? `<div class="sub">${sub}</div>` : ""}
     </div>
-    <div class="foot"><span class="u">www.werdemeisterdeinergedanken.de</span></div>
+    <div class="foot"></div>
   </div>
 </body></html>`;
 }
