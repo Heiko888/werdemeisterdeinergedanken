@@ -67,6 +67,16 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 **Aufräum-Hinweis:** `public/logo-brain-frei.png` ist byte-identisch mit
 `public/logo-brain.png` (Dublette – eine Datei würde genügen).
 
+## Änderungsprotokoll
+
+- **02.09.2026 – Schriftlogo in den Story-Carousels.** Neben dem Gehirn-Emblem
+  oben links sitzt jetzt die vollständige Wortmarke („WERDE MEISTER / DEINER
+  GEDANKEN") als Marken-Lockup – in allen vier Welten mit welt-eigenen Farben
+  (Gold auf Dunkel & Creme, Türkis/Grün auf Türkis-Navy & Türkis-Creme).
+  Betroffen: `tools/marketing/story-carousels.mjs` und alle neu gerenderten
+  Folien unter `docs/marketing/story-carousels/**` (9 Slides × 3 Formate ×
+  4 Welten). Neu erzeugen mit `npm run story-carousels`.
+
 ## Daten aktualisieren
 
 Nach dem Erzeugen neuer Grafiken die Zahlen in
