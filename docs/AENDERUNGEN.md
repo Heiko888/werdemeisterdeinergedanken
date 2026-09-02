@@ -5,6 +5,28 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – Aufräumen: ungenutzte hochgeladene Roh-PNGs entfernt
+
+Die zuvor hochgeladenen großen Roh-PNGs mit UUID-Dateinamen wurden aus `public`
+entfernt – sie waren **nirgends im Code referenziert** und wurden nur unnötig
+mit ausgeliefert (~10,2 MB). Das für den Footer verwendete freigestellte Motiv
+liegt weiterhin als `public/eisvogel-blau.webp` vor (daraus erzeugt).
+
+**Entfernt (je 1,6–2,5 MB):**
+
+- `public/0d6daecd-ba2c-487a-982b-e85fe433d466.png` (freigestellter Eisvogel –
+  Quelle für `eisvogel-blau.webp`, wird nicht mehr direkt gebraucht)
+- `public/506998a4-c2b1-4f4d-9c02-6841d20063b7.png` (Eisvogel-Foto, dunkler Grund)
+- `public/be4c45e2-facd-4b29-b187-8227d26a7f75.png` (Eisvogel-Foto, dunkler Grund)
+- `public/25703de6-7e68-4ae2-8db1-ca3cd96a36dc.png` (Meditations-Szene)
+- `public/857bc3c9-7eaf-44f3-b9e4-7e10a58cb838.png` (goldenes Gehirn-Logo)
+
+Alle Dateien bleiben über die Git-Historie (Commit `a8c9ecb`) wiederherstellbar,
+falls sie doch noch gebraucht werden. `hero-programm.png` bleibt erhalten (wird
+auf der Mitglieder-Programm-Seite verwendet).
+
+---
+
 ## 2026-09-02 – Footer-Eisvogel: freigestelltes Motiv statt Foto-Rahmen
 
 Der zuvor als **gerahmtes Foto** (dunkler Hintergrund, `rounded-2xl`) eingebaute
