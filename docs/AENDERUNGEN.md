@@ -5,6 +5,15 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – Logo im Header/Footer dezent vergrößert
+
+Das Emblem war etwas zu klein. Größe zentral in `LogoMark`
+(`src/components/visuals/Logo.tsx`) von `h-10` (40 px) auf `h-12` (48 px)
+angehoben – wirkt in **Header** und **Footer** (beide nutzen dieselbe
+Komponente). `sizes`-Hinweis entsprechend angepasst.
+
+---
+
 ## 2026-09-02 – Logo auf der Website getauscht
 
 Das Marken-Emblem wurde **überall auf der Website** durch das neue goldene
