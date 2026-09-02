@@ -5,6 +5,34 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – Eisvogel im Footer getauscht: Gold → Blau (echtes Motiv)
+
+Das Krafttier-Bild ganz unten im Footer (mittig, über der Copyright-Zeile) war
+bisher der **freigestellte goldene Eisvogel** (`eisvogel-gold.webp`, kleines
+Icon ~64–80 px mit goldenem Radial-Glow). Es wurde gegen ein **neues, realistisch
+gerendertes Motiv in natürlichem Blau-Orange** ausgetauscht.
+
+**Änderungen**
+
+- Neues Bild `public/eisvogel-blau.webp` hinzugefügt (aus der hochgeladenen PNG
+  1536×1024 auf 900×600 skaliert, WebP q82 ≈ 72 KB).
+- `src/components/layout/Footer.tsx`:
+  - `src` von `/eisvogel-gold.webp` auf `/eisvogel-blau.webp` umgestellt,
+    `width/height` auf das neue 3:2-Seitenverhältnis (1536×1024) angepasst.
+  - Das Motiv bringt einen **eigenen Glow auf dunklem Grund** mit, daher wurde der
+    künstliche goldene Radial-Glow-`div` entfernt. Stattdessen ist das Bild jetzt
+    als gerahmtes Foto dargestellt: `rounded-2xl`, feiner `ring-white/10` und ein
+    dezenter bläulicher Schatten – deutlich größer (`w-56 sm:w-72`) als das alte
+    Icon, damit die Details zur Geltung kommen.
+  - `alt`-Text und Kommentar von „Goldener Eisvogel" auf „Eisvogel" angepasst.
+- Die alte Datei `public/eisvogel-gold.webp` bleibt vorerst liegen (unbenutzt),
+  falls schnell zurückgetauscht werden soll.
+
+Die begleitende Bildunterschrift („Der Eisvogel – mein Symbol für einen klaren,
+wachen Geist" inkl. Glück/Fokus/Klarheit) bleibt unverändert.
+
+---
+
 ## 2026-09-02 – Creme-Übergang am Blog-Hero wieder entfernt (rückgängig)
 
 Der zuvor eingebaute weiche Creme-/Weiß-Verlauf am unteren Blog-Hero-Rand war
