@@ -19,70 +19,96 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { HANDLE, GRAD, pad2, COLLECTIONS, FORMATS } from "./data.mjs";
+import { HANDLE, GRAD, pad2, COLLECTIONS, FORMATS, THEMES, THEME_SUFFIX, THEME_LABEL, palette } from "./data.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 
+// Wortmarke-Größen relativ zur Logo-Breite (Lockup neben dem Gehirn).
+const wmSizes = (f) => ({
+  gap: Math.round(f.logoW * 0.13),
+  colGap: Math.round(f.logoW * 0.05),
+  one: Math.round(f.logoW * 0.205),
+  two: Math.round(f.logoW * 0.108),
+  tickW: Math.round(f.logoW * 0.14),
+  twoGap: Math.round(f.logoW * 0.05),
+});
 
 // ---------------------------------------------------------------------------
-function coverCss(f) {
-  return `/* Format ${f.label} · generiert von build.mjs – nicht von Hand ändern */
+function coverCss(f, P) {
+  const wm = wmSizes(f);
+  return `/* Format ${f.label} · Welt ${P.theme} · generiert von build.mjs – nicht von Hand ändern */
 * { margin:0; padding:0; box-sizing:border-box; }
-html,body { background:#05060c; }
+html,body { background:${P.pageBg}; }
 .cover { position:relative; width:${f.w}px; height:${f.h}px; overflow:hidden;
   font-family:'Inter',system-ui,sans-serif; }
 .cover::before { content:""; position:absolute; inset:0; z-index:0;
-  background:
-    radial-gradient(60% 40% at 78% 30%, rgba(52,196,196,.35), transparent 60%),
-    radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),
-    linear-gradient(160deg,#071026 0%,#0b2138 45%,#0a1730 100%); }
+  background:${P.bg}; }
 .bg { position:absolute; inset:0; z-index:1;
   background-image:url("vorlage.png"); background-size:cover; background-position:center; }
 .scrim { position:absolute; inset:0; z-index:2;
-  background:linear-gradient(to bottom, transparent 40%, rgba(5,9,20,.55) 72%, rgba(5,9,20,.92) 100%); }
+  background:${P.scrim}; }
 .content { position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
   padding:${f.pad}px; }
-.top { display:flex; align-items:flex-start; justify-content:space-between; gap:40px; }
+.top { display:flex; align-items:center; justify-content:space-between; gap:40px; }
+/* Marken-Lockup: Gehirn + Wortmarke „Werde Meister / Deiner Gedanken" */
+.brand { display:flex; align-items:center; gap:${wm.gap}px; flex:0 1 auto; }
 .logo { width:${f.logoW}px; height:auto; flex:0 0 auto;
-  filter:drop-shadow(0 4px 26px rgba(52,196,196,.30)); }
-.tag { text-align:right; padding-top:8px; font-family:'Inter',sans-serif; font-weight:800;
-  font-size:${f.tagFs}px; letter-spacing:.14em; text-transform:uppercase;
-  background:${GRAD};
+  filter:drop-shadow(0 4px 26px rgba(${P.glowRGB},.30)); }
+.wm { display:flex; flex-direction:column; gap:${wm.colGap}px; line-height:1; }
+.wm1 { font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:${wm.one}px;
+  letter-spacing:.05em; text-transform:uppercase; color:${P.wmMain}; white-space:nowrap; }
+.wm1 em { font-style:normal; background:${P.accent};
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.wm2 { display:flex; align-items:center; gap:${wm.twoGap}px; font-family:'Fraunces',Georgia,serif;
+  font-weight:400; font-size:${wm.two}px; letter-spacing:.2em; text-transform:uppercase;
+  color:${P.wmSub}; white-space:nowrap; }
+.wm2 i { display:block; height:1px; width:${wm.tickW}px; background:${P.tick}; }
+.tag { text-align:right; max-width:40%; padding-top:2px; font-family:'Inter',sans-serif; font-weight:800;
+  font-size:${f.tagFs}px; letter-spacing:.14em; text-transform:uppercase; line-height:1.3;
+  background:${P.accent};
   -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent;
-  filter:drop-shadow(0 2px 12px rgba(0,0,0,.55)); }
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,${P.hell ? ".18" : ".55"})); }
 .spacer { flex:1 1 auto; }
 .headline { max-width:${f.headMaxW}; font-family:'Fraunces',Georgia,serif; font-weight:600;
-  font-size:${f.headFs}px; line-height:1.04; letter-spacing:-1px; color:#f4f7ff;
-  filter:drop-shadow(0 6px 34px rgba(0,0,0,.6)); }
+  font-size:${f.headFs}px; line-height:1.04; letter-spacing:-1px; color:${P.ink};
+  filter:${P.shadow}; }
 .headline.small { font-size:${f.headSmallFs}px; }
 /* Kursiv + Verlauf: padding-right, damit der Verlauf den schrägen Überhang
    des letzten Buchstabens voll abdeckt (sonst wird z. B. das „d" abgeschnitten) */
 .headline .accent { font-style:italic; font-weight:500;
   padding-right:.14em; margin-right:-.06em;
-  background:${GRAD};
+  background:${P.accent};
   -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent; }
 .handle { margin-top:${f.handleGap}px; font-family:'Inter',sans-serif; font-weight:600;
-  font-size:${f.handleFs}px; letter-spacing:.04em; color:#a7bad2;
-  text-shadow:0 2px 14px rgba(0,0,0,.7); }
+  font-size:${f.handleFs}px; letter-spacing:.04em; color:${P.handle};
+  text-shadow:${P.handleShadow}; }
 `;
 }
 
-function coverHtml(coll, item, n) {
+function coverHtml(coll, item, n, theme) {
   const nn = pad2(n);
   const cls = item.cls ? ` ${item.cls}` : "";
+  const P = palette(theme);
+  const sfx = THEME_SUFFIX[theme];
   return `<!doctype html>
-<html lang="de"><head><meta charset="utf-8"><title>${coll.label} ${nn} · ${item.theme}</title>
+<html lang="de"><head><meta charset="utf-8"><title>${coll.label} ${nn} · ${item.theme} · ${THEME_LABEL[theme]}</title>
 <link rel="stylesheet" href="../../_fonts.css">
-<link rel="stylesheet" href="_cover.css"></head>
+<link rel="stylesheet" href="_cover${sfx}.css"></head>
 <body>
   <div class="cover">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="content">
       <div class="top">
-        <img class="logo" src="../../logo.png" alt="Logo">
+        <div class="brand">
+          <img class="logo" src="../../${P.brain}" alt="Logo">
+          <div class="wm">
+            <span class="wm1">Werde <em>Meister</em></span>
+            <span class="wm2"><i></i>Deiner Gedanken<i></i></span>
+          </div>
+        </div>
         <div class="tag">${coll.series} · ${nn}</div>
       </div>
       <div class="spacer"></div>
@@ -159,17 +185,23 @@ for (const coll of COLLECTIONS) {
   for (const f of FORMATS) {
     const dir = join(HERE, coll.key, f.key);
     mkdirSync(dir, { recursive: true });
-    writeFileSync(join(dir, "_cover.css"), coverCss(f));
-    coll.items.forEach((it, i) => {
-      writeFileSync(join(dir, `cover-${pad2(i + 1)}.html`), coverHtml(coll, it, i + 1));
-      totalCovers++;
-    });
-    // Format-Galerie
+    // Je Farbwelt eine eigene CSS + ein Cover-Satz (dunkel ohne Suffix).
+    for (const theme of THEMES) {
+      const sfx = THEME_SUFFIX[theme];
+      writeFileSync(join(dir, `_cover${sfx}.css`), coverCss(f, palette(theme)));
+      coll.items.forEach((it, i) => {
+        writeFileSync(join(dir, `cover-${pad2(i + 1)}${sfx}.html`), coverHtml(coll, it, i + 1, theme));
+        totalCovers++;
+      });
+    }
+    // Format-Galerie – alle vier Welten je Motiv.
     const cards = coll.items
-      .map((it, i) => iframeCard(`cover-${pad2(i + 1)}.html`, f.w, f.h, `${pad2(i + 1)} · ${it.theme}`))
+      .map((it, i) => THEMES.map((theme) =>
+        iframeCard(`cover-${pad2(i + 1)}${THEME_SUFFIX[theme]}.html`, f.w, f.h,
+          `${pad2(i + 1)} · ${it.theme}<br><span class="go">${THEME_LABEL[theme]}</span>`)).join("\n"))
       .join("\n");
     writeFileSync(join(dir, "index.html"),
-      shell(`${coll.label} · ${f.label}`, `${coll.items.length} Motive · ${f.w}×${f.h}px`, cards, "../index.html"));
+      shell(`${coll.label} · ${f.label}`, `${coll.items.length} Motive × 4 Welten · ${f.w}×${f.h}px`, cards, "../index.html"));
   }
   // Bereichs-Übersicht (Format-Auswahl)
   const fcards = FORMATS.map((f) =>
@@ -208,7 +240,10 @@ if (outSelf) {
         <div class="frame" style="width:${fw}px;height:${fh}px">
           <div class="cover ${f.key}" style="transform:scale(${scale.toFixed(4)})">
             <div class="content">
-              <div class="top"><div class="logo"></div>
+              <div class="top">
+                <div class="brand"><div class="logo"></div>
+                  <div class="wm"><span class="wm1">Werde <em>Meister</em></span>
+                    <span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>
                 <div class="tag">${coll.series} · ${pad2(n)}</div></div>
               <div class="spacer"></div>
               <div class="headline${cls}">${item.html}</div>
@@ -250,8 +285,13 @@ ${demoCards}
   const fmtCss = FORMATS.map((f) => `
   .cover.${f.key}{ width:${f.w}px; height:${f.h}px; }
   .cover.${f.key} .content{ padding:${f.pad}px; }
-  .cover.${f.key} .logo{ width:${f.logoW}px; height:${Math.round(f.logoW * 609 / 770)}px; }
-  .cover.${f.key} .tag{ font-size:${f.tagFs}px; }
+  .cover.${f.key} .logo{ width:${f.logoW}px; height:${Math.round(f.logoW * 588 / 640)}px; }
+  .cover.${f.key} .brand{ gap:${Math.round(f.logoW * 0.13)}px; }
+  .cover.${f.key} .wm{ gap:${Math.round(f.logoW * 0.05)}px; }
+  .cover.${f.key} .wm1{ font-size:${Math.round(f.logoW * 0.205)}px; }
+  .cover.${f.key} .wm2{ gap:${Math.round(f.logoW * 0.05)}px; font-size:${Math.round(f.logoW * 0.108)}px; }
+  .cover.${f.key} .wm2 i{ width:${Math.round(f.logoW * 0.14)}px; }
+  .cover.${f.key} .tag{ font-size:${f.tagFs}px; max-width:40%; text-align:right; line-height:1.3; }
   .cover.${f.key} .headline{ font-size:${f.headFs}px; max-width:${f.headMaxW}; }
   .cover.${f.key} .headline.small{ font-size:${f.headSmallFs}px; }
   .cover.${f.key} .handle{ font-size:${f.handleFs}px; margin-top:${f.handleGap}px; }`).join("\n");
@@ -289,8 +329,14 @@ figcaption{ margin-top:11px; font-size:13px; color:var(--muted); text-align:cent
     radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),
     linear-gradient(160deg,#071026 0%,#0b2138 45%,#0a1730 100%); }
 .cover .content{ position:absolute; inset:0; display:flex; flex-direction:column; }
-.cover .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:40px; }
+.cover .top{ display:flex; align-items:center; justify-content:space-between; gap:40px; }
+.cover .brand{ display:flex; align-items:center; }
 .cover .logo{ flex:0 0 auto; background:var(--logo) center/contain no-repeat; filter:drop-shadow(0 4px 26px rgba(52,196,196,.30)); }
+.cover .wm{ display:flex; flex-direction:column; line-height:1; }
+.cover .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:400; letter-spacing:.05em; text-transform:uppercase; color:rgba(244,247,255,.94); white-space:nowrap; }
+.cover .wm1 em{ font-style:normal; background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.cover .wm2{ display:flex; align-items:center; font-family:'Fraunces',Georgia,serif; font-weight:400; letter-spacing:.2em; text-transform:uppercase; color:rgba(167,186,210,.9); white-space:nowrap; }
+.cover .wm2 i{ display:block; height:1px; background:rgba(95,214,210,.85); }
 .cover .tag{ text-align:right; padding-top:8px; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
   background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
 .cover .spacer{ flex:1 1 auto; }

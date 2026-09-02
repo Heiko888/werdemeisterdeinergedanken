@@ -11,6 +11,56 @@ export const A = (s) => `<span class="accent">${s}</span>`; // Akzentwort
 export const pad2 = (n) => String(n).padStart(2, "0");
 
 // ===========================================================================
+// VIER FARBWELTEN (Grund × Akzent) – parallel zu allen anderen Generatoren.
+//   dunkel        = Gold auf Navy      (Standard, Datei ohne Suffix)
+//   hell          = Gold auf Creme     (-hell)
+//   tuerkis       = Türkis auf Navy    (-tuerkis)   ← bisheriges Cover-Design
+//   tuerkis-hell  = Türkis auf Creme   (-tuerkis-hell)
+// ===========================================================================
+export const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-hell": "-tuerkis-hell" };
+export const THEMES = Object.keys(THEME_SUFFIX);
+export const THEME_LABEL = {
+  dunkel: "Gold · Dunkel",
+  hell: "Gold · Creme",
+  tuerkis: "Türkis · Navy",
+  "tuerkis-hell": "Türkis · Creme",
+};
+
+// Alle welt-abhängigen Design-Werte an einer Stelle. Nebenwirkungsfrei.
+export function palette(theme) {
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
+  const brain = teal ? "logo.png" : "logo-gold.png"; // Seiten-Gehirn bunt / Gold-Front
+  const accent = teal
+    ? (hell ? "linear-gradient(120deg,#8cc63f 0%,#0f766e 100%)" : "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)")
+    : (hell ? "linear-gradient(120deg,#d9a93a 0%,#7e6410 100%)" : "linear-gradient(120deg,#f2d489 0%,#d9a93a 100%)");
+  const glowRGB = teal ? "52,196,196" : "233,193,95";
+  const bg = hell
+    ? (teal
+      ? `radial-gradient(70% 55% at 78% 12%, rgba(52,196,196,.20), transparent 62%),radial-gradient(60% 55% at 12% 108%, rgba(33,178,189,.12), transparent 60%),#f6f4ee`
+      : `radial-gradient(70% 55% at 78% 12%, rgba(232,193,95,.26), transparent 62%),radial-gradient(60% 55% at 12% 108%, rgba(217,169,58,.14), transparent 60%),#f6f4ee`)
+    : (teal
+      ? `radial-gradient(60% 40% at 78% 30%, rgba(52,196,196,.35), transparent 60%),radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),linear-gradient(160deg,#071026 0%,#0b2138 45%,#0a1730 100%)`
+      : `radial-gradient(60% 42% at 78% 28%, rgba(233,193,95,.30), transparent 60%),radial-gradient(70% 50% at 18% 8%, rgba(168,132,42,.26), transparent 60%),linear-gradient(160deg,#0b0e16 0%,#12111b 45%,#0a0c13 100%)`);
+  const ink = hell ? "#16231f" : (teal ? "#f4f7ff" : "#f6f4ee");
+  const handle = hell ? "rgba(22,35,31,.6)" : (teal ? "#a7bad2" : "rgba(244,242,236,.62)");
+  const scrim = hell
+    ? `linear-gradient(to bottom, transparent 42%, rgba(246,244,238,.55) 72%, rgba(246,244,238,.92) 100%)`
+    : (teal
+      ? `linear-gradient(to bottom, transparent 40%, rgba(5,9,20,.55) 72%, rgba(5,9,20,.92) 100%)`
+      : `linear-gradient(to bottom, transparent 40%, rgba(6,7,12,.55) 72%, rgba(6,7,12,.92) 100%)`);
+  const wmMain = hell ? "rgba(22,35,31,.92)" : (teal ? "rgba(244,247,255,.94)" : "rgba(244,242,236,.94)");
+  const wmSub = hell ? "rgba(22,35,31,.66)" : (teal ? "rgba(167,186,210,.9)" : "rgba(244,242,236,.66)");
+  const tick = teal
+    ? (hell ? "rgba(15,118,110,.85)" : "rgba(95,214,210,.85)")
+    : (hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)");
+  const pageBg = hell ? "#f6f4ee" : "#05060c";
+  const shadow = hell ? "none" : "drop-shadow(0 6px 34px rgba(0,0,0,.6))";
+  const handleShadow = hell ? "none" : "0 2px 14px rgba(0,0,0,.7)";
+  return { theme, hell, teal, brain, accent, glowRGB, bg, ink, handle, scrim, wmMain, wmSub, tick, pageBg, shadow, handleShadow };
+}
+
+// ===========================================================================
 // BEREICHE. series = Text im Tag oben. cls:"small" = kleiner (mehr Text).
 // ===========================================================================
 export const COLLECTIONS = [

@@ -69,6 +69,15 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **02.09.2026 – Video-/Reel-Cover: Schriftlogo + 4 Farbwelten.** Der
+  Cover-Generator (`docs/reels/covers/`) trägt jetzt oben links das komplette
+  Marken-Lockup (Gehirn + „WERDE MEISTER / DEINER GEDANKEN") und existiert in
+  **allen vier Welten** – vorher gab es nur Türkis-Navy. Neu: `dunkel` (Gold,
+  Standard, ohne Suffix), `hell` (Gold/Creme, `-hell`), `tuerkis` (`-tuerkis`,
+  das bisherige Design) und `tuerkis-hell` (`-tuerkis-hell`). Betroffen:
+  `data.mjs` (Palette), `build.mjs`, `export-png.mjs`, neues `logo-gold.png`,
+  alle Cover-HTML (59 Motive × 5 Formate × 4 Welten = 1180). PNGs erzeugen mit
+  `npm run covers:png`.
 - **02.09.2026 – Schriftlogo in den Story-Carousels.** Neben dem Gehirn-Emblem
   oben links sitzt jetzt die vollständige Wortmarke („WERDE MEISTER / DEINER
   GEDANKEN") als Marken-Lockup – in allen vier Welten mit welt-eigenen Farben
