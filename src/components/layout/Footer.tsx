@@ -99,25 +99,17 @@ export function Footer() {
         </div>
       </Container>
 
-      {/* Krafttier & Symbol – der goldene Eisvogel (mittig, ganz unten) */}
+      {/* Krafttier & Symbol – der Eisvogel (mittig, ganz unten) */}
       <div className="hairline">
         <Container className="flex flex-col items-center gap-3 py-8 text-center">
           <div className="relative shrink-0">
-            <div
-              aria-hidden
-              className="absolute -inset-3 -z-10 rounded-full opacity-60 blur-xl"
-              style={{
-                background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), transparent 68%)",
-              }}
-            />
             <Image
-              src="/eisvogel-gold.webp"
-              alt="Goldener Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
-              width={320}
-              height={320}
-              sizes="(min-width: 640px) 80px, 64px"
-              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(217,169,58,0.3)] sm:w-20"
+              src="/eisvogel-blau.webp"
+              alt="Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
+              width={1536}
+              height={1024}
+              sizes="(min-width: 640px) 288px, 224px"
+              className="mx-auto w-56 rounded-2xl ring-1 ring-white/10 drop-shadow-[0_8px_40px_rgba(56,150,220,0.28)] sm:w-72"
             />
           </div>
 
