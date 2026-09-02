@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – Creme-Übergang am Blog-Hero wieder entfernt (rückgängig)
+
+Der zuvor eingebaute weiche Creme-/Weiß-Verlauf am unteren Blog-Hero-Rand war
+nicht erwünscht und wurde **komplett zurückgenommen**. Der Blog-Hero endet damit
+wieder wie ursprünglich (harter Absatz zur Blog-Liste, kein Verlauf).
+
+**Änderungen (Rücknahme des Eintrags direkt darunter)**
+
+- `src/app/blog/page.tsx`: `fadeToColor="var(--color-paper)"` wieder entfernt.
+- `src/components/layout/PageHero.tsx`: Die zuvor ergänzte `fadeToColor`-Rendering
+  im **Bildband-/Spotlight-Zweig** wieder entfernt. Der ältere `fadeToColor`-Block
+  im klassischen Layout (unverändert seit vorher) bleibt bestehen; die Prop wird
+  aktuell nirgends mehr genutzt.
+
+Damit ist der Stand vor dem Creme-Übergang wiederhergestellt. Der Blog-Hero bleibt
+weiterhin ohne Spotlight (siehe übernächster Eintrag).
+
+---
+
 ## 2026-09-02 – Blog-Hero läuft unten weich in Creme aus
 
 Der Blog-Hero (`/blog`) blieb bisher am unteren Rand hart Navy und setzte dann
