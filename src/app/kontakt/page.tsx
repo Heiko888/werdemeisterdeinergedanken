@@ -86,7 +86,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[2px] border border-accent/25 bg-white p-6 shadow-card">
+            <div className="rounded-3xl border border-accent/25 bg-white p-6 shadow-card">
               <h2 className="font-display text-lg italic text-ink">
                 Kostenloses Erstgespräch
               </h2>

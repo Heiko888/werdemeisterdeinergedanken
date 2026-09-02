@@ -10,6 +10,23 @@ sollten zusätzlich im Browser gegengeprüft werden.
 
 ---
 
+## Umsetzungs-Log
+
+**2026-09-02 — Quick Wins umgesetzt** (Branch `claude/design-review-agent-team-v5qwbk`):
+
+| # | Fund | Umsetzung | Datei |
+|---|------|-----------|-------|
+| 1 | K1 | Button-Basis um `group` + `group-hover:[&>svg:last-child]:translate-x-1` erweitert → nachgestellter Pfeil gleitet bei jedem CTA beim Hover mit | `src/components/ui/Button.tsx` |
+| 2 | B1 | Footer-Eisvogel auf goldene Variante umgestellt | `src/components/layout/Footer.tsx:115` |
+| 3 | – | Radius-Bruch behoben: `rounded-[2px]` → `rounded-3xl` | `src/app/kontakt/page.tsx:89` |
+| 4 | B4 | LCP-Bild auf `.webp` umgestellt (2,36 MB → 248 KB); `hero-programm.png` gelöscht | `src/app/mitglieder/programm/page.tsx:43` |
+| 5 | K2 | Header-CTA (Desktop + Mobil) von Gold `accent` → `secondary`, damit Gold der Sektions-Hauptaktion vorbehalten bleibt | `src/components/layout/Header.tsx:99,159` |
+
+Offen: alle übrigen 🔴/🟠/🟡-Funde unten (System-Vereinheitlichung Card/Button/
+Eyebrow/Text-Kontrast, Homepage-Takt, Hero-Fold mobil, restliche Bild-/Layout-Funde).
+
+---
+
 ## Gesamteindruck
 
 Das Fundament ist stark und markengerecht: Buttons, Karten, Blog-Index und die
