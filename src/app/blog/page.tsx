@@ -54,6 +54,7 @@ export default function BlogPage() {
         intro="Kurze, ehrliche Impulse zu Bewusstsein, alten Mustern und einem klareren Kopf. Kein Ratgeber-Lärm – nur das, was wirklich weiterbringt."
         image="/hero-blog-gipfel.webp"
         imagePosition="center"
+        fadeToColor="var(--color-paper)"
       />
 
       <BlogIndex posts={cards} />
