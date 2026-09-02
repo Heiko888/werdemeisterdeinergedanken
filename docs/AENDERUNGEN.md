@@ -5,6 +5,33 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-02 – Footer-Eisvogel: freigestelltes Motiv statt Foto-Rahmen
+
+Der zuvor als **gerahmtes Foto** (dunkler Hintergrund, `rounded-2xl`) eingebaute
+blaue Eisvogel wurde durch die **freigestellte, transparente Variante** ersetzt und
+wieder auf den **kleinen Icon-Look mit sanftem Gold-Glow** gebracht – wie beim
+ursprünglichen goldenen Eisvogel, nur in den echten Eisvogel-Farben.
+
+**Änderungen**
+
+- `public/eisvogel-blau.webp` **neu erzeugt** aus der freigestellten Vorlage
+  `public/0d6daecd-ba2c-487a-982b-e85fe433d466.png` (transparenter Hintergrund,
+  auf Motiv zugeschnitten, 640 px, WebP mit Alpha ≈ 122 KB). Ersetzt die vorige
+  Foto-WebP gleichen Namens.
+- `src/components/layout/Footer.tsx`:
+  - Rahmen-Darstellung (`rounded-2xl`, `ring`, großer Schatten, `w-56/72`)
+    entfernt.
+  - Zurück auf **kleines Icon**: `w-16 sm:w-20`, zentriert, mit weichem goldenem
+    Radial-Glow (`div` mit `radial-gradient`) und dezentem Gold-Drop-Shadow.
+  - `width/height` auf das neue Seitenverhältnis (640×622) angepasst.
+
+Hinweis: In `public` liegen weitere hochgeladene Motive (dunkle Foto-Versionen
+`506998a4…` / `be4c45e2…`, eine Meditations-Szene, ein Gehirn-Logo). Für den
+Footer wird bewusst die **freigestellte** Datei verwendet. Die alte
+`eisvogel-gold.webp` bleibt weiterhin unbenutzt liegen.
+
+---
+
 ## 2026-09-02 – Eisvogel im Footer getauscht: Gold → Blau (echtes Motiv)
 
 Das Krafttier-Bild ganz unten im Footer (mittig, über der Copyright-Zeile) war
