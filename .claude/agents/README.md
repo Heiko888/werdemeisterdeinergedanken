@@ -115,3 +115,40 @@ Wichtig: Das Redaktions-Team nutzt **nur vorhandenes Projekt-Material** (Slugs/
 Pfade werden am Code belegt, nichts erfunden) und schreibt **ausschließlich**
 nach `docs/marketing/`. Es ändert **keinen** App-, Generator- oder Content-Code –
 die Produktion der Posts (Filmen, Rendern, Veröffentlichen) bleibt bei dir.
+
+---
+
+# Viertes Team: das Design-Team
+
+Dieses Team prüft **weder** Technik noch Inhalt, sondern die **Gestaltung**:
+Wirken Buttons und Bausteine hochwertig oder „stumpf"/flach? Stimmt der Aufbau?
+Sitzen die Bilder richtig und passen zur Marke? Wirkt alles wie aus einem Guss?
+Es **bewertet und schlägt konkret vor** – kein Agent ändert Produktivcode.
+Ergebnis landet in `docs/design/` (priorisierter Bericht mit Quick Wins und
+konkreten Vorschlägen inkl. Tokens/Werten).
+
+Start:
+
+```
+/design-check
+/design-check nur Buttons
+/design-check nur Startseite
+/design-check nur Bilder
+```
+
+`$ARGUMENTS` steuert einen optionalen Schwerpunkt (Bereich oder Seite). Einen
+einzelnen Spezialisten gezielt aufrufen: „Nutze den **komponenten-designer**, um …".
+
+| Agent | Prüft / schlägt vor |
+|-------|---------------------|
+| **design-direktor** | Koordination (Kreativdirektor): steuert die Spezialisten, bündelt die Funde, schreibt den Gesamt-Bericht `docs/design/design-check-<datum>.md` mit Gesamteindruck, Quick Wins und Prioritäten. |
+| **komponenten-designer** | UI-Bausteine: Buttons, Karten, Links, Controls; Tiefe/Materialität, Zustände (hover/focus/active/disabled), Micro-Interactions – der „wirkt stumpf"-Verdacht. |
+| **layout-architekt** | Aufbau & Komposition: visuelle Hierarchie, Abstände/Rhythmus, Ausrichtung, Weißraum, Sektionswechsel, Responsive-Verhalten. |
+| **bild-kurator** | Bildwelt: Passung, Ausschnitt/Crop, Seitenverhältnis, Qualität/Format, einheitliche Bildsprache, `next/image`-Hygiene. |
+| **marken-hueter** | Marken-Konsistenz: Farb-/Typo-/Token-Nutzung, Gold-Akzent-Dosierung, Radien/Schatten – wirkt die Seite wie aus einem Guss? |
+
+Wichtig: Das Design-Team bleibt im bestehenden **Design-System** (Tokens aus
+`src/app/globals.css`), belegt jeden Fund am Code (Datei:Zeile) und schreibt
+**ausschließlich** nach `docs/design/`. Es ändert **keinen** App-, Komponenten-
+oder Content-Code – Umsetzung erst nach deiner Freigabe (bewusst getrennt, wie
+beim Prüf-Team: Prüfen und Ändern werden nie vermischt).
