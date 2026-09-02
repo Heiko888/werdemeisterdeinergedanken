@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
-import brainLogo from "../../../public/logo-brain.png";
+import brainLogo from "../../../public/logo-brain-gold-freigestellt.png";
 
 /** Original-Marken-Emblem (freigestelltes Gehirn aus dem Logo). */
 export function LogoMark({ className }: { className?: string }) {
@@ -11,10 +11,11 @@ export function LogoMark({ className }: { className?: string }) {
       alt="Werde Meister deiner Gedanken – Logo"
       priority
       // Das Logo erscheint nur ~44 px breit (h-10). Ohne sizes erzeugt Next ein
-      // 1x/2x-Srcset aus der vollen Bildbreite (640 px, 78 KB) – mit sizes holt
-      // der Browser eine passend kleine Variante.
+      // 1x/2x-Srcset aus der vollen Bildbreite (2000 px) – mit sizes holt der
+      // Browser eine passend kleine Variante. Das Emblem ist bereits golden,
+      // daher kein Gold-CSS-Filter mehr nötig.
       sizes="44px"
-      className={cn("logo-gold h-10 w-auto", className)}
+      className={cn("h-10 w-auto", className)}
     />
   );
 }
