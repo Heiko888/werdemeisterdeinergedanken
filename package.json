@@ -24,6 +24,7 @@
     "whatsapp:safezone": "node docs/marketing/whatsapp-safezone.mjs",
     "vorlagen:galerie": "node tools/vorlagen/build-gallery.mjs",
     "gold-emblem": "node tools/print/gold-emblem.mjs",
+    "logo-lockup": "node tools/print/logo-lockup.mjs",
     "print": "node tools/print/geschaeftsausstattung.mjs",
     "signatur": "node tools/print/email-signatur.mjs",
     "briefpapier:word": "node tools/print/briefpapier-word.mjs"
