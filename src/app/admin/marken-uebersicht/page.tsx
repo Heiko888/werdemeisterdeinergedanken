@@ -446,18 +446,22 @@ export default async function MarkenUebersichtPage() {
               Für Entwickler: Türkis rendern &amp; Daten aktualisieren
             </summary>
             <p className="mt-3 text-sm text-ink-mid">
-              Die drei Farbwelten (dunkel/hell/tuerkis) sind in allen Marketing-Generatoren
-              angelegt. Zum Erzeugen alle Skripte laufen lassen (erzeugt Dunkel, Creme{" "}
-              <em>und</em> Türkis):
+              Die vier Farbwelten (dunkel/hell/tuerkis/tuerkis-hell) sind in allen
+              Marketing-Generatoren angelegt. Alles in einem Befehl erzeugen (alle fünf
+              Generatoren + Galerie):
             </p>
             <code className="mt-2 block overflow-x-auto rounded-lg bg-ink px-3 py-2 font-mono text-[0.82rem] text-white">
-              node docs/marketing/brand-assets.mjs<br />
-              node tools/marketing/content-overlays.mjs<br />
-              node tools/marketing/story-overlays.mjs<br />
-              node tools/marketing/story-carousels.mjs<br />
-              node tools/marketing/whatsapp-mitgliedschaft.mjs<br />
-              npm run vorlagen:galerie
+              npm run marketing:all
             </code>
+            <p className="mt-3 text-sm text-ink-mid">
+              Das führt nacheinander aus:{" "}
+              <code className="rounded bg-ink/5 px-1">brand-assets</code>,{" "}
+              <code className="rounded bg-ink/5 px-1">content-overlays</code>,{" "}
+              <code className="rounded bg-ink/5 px-1">story-overlays</code>,{" "}
+              <code className="rounded bg-ink/5 px-1">story-carousels</code>,{" "}
+              <code className="rounded bg-ink/5 px-1">whatsapp:mitgliedschaft</code> und{" "}
+              <code className="rounded bg-ink/5 px-1">vorlagen:galerie</code>.
+            </p>
             <p className="mt-3 text-sm text-ink-mid">
               Nur eine Welt rendern (<code className="rounded bg-ink/5 px-1">THEME</code> ∈{" "}
               <code className="rounded bg-ink/5 px-1">dunkel|hell|tuerkis|tuerkis-hell</code>):{" "}

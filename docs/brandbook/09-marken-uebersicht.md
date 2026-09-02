@@ -30,17 +30,15 @@ Marken-Material gibt – damit der Überblick nicht verloren geht.
 
 ## Die drei Farbwelten rendern
 
-Die 3-Wege-Theme-Logik (`dunkel` / `hell` / `tuerkis`) steckt in jedem
-Marketing-Generator. Alle Welten neu erzeugen:
+Die 4-Wege-Theme-Logik (`dunkel` / `hell` / `tuerkis` / `tuerkis-hell`) steckt in
+jedem Marketing-Generator. Alle Welten in einem Befehl erzeugen:
 
 ```
-node docs/marketing/brand-assets.mjs
-node tools/marketing/content-overlays.mjs
-node tools/marketing/story-overlays.mjs
-node tools/marketing/story-carousels.mjs
-node tools/marketing/whatsapp-mitgliedschaft.mjs
-npm run vorlagen:galerie
+npm run marketing:all
 ```
+
+Das führt nacheinander aus: `brand-assets`, `content-overlays`, `story-overlays`,
+`story-carousels`, `whatsapp:mitgliedschaft` und `vorlagen:galerie`.
 
 Nur eine Welt: `THEME=tuerkis-hell node docs/marketing/brand-assets.mjs`
 (analog für jeden Generator; `THEME` ∈ `dunkel|hell|tuerkis|tuerkis-hell`).
