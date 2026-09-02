@@ -57,6 +57,31 @@ bleibt unverändert.
 
 ---
 
+## 2026-09-02 – Titelbild der Programm-Seite getauscht
+
+Das Hero-Bild auf `/mitglieder/programm` (21 Tage Autopilot-Ausstieg) wurde
+durch ein neues Motiv ersetzt.
+
+**Neue Datei**
+
+- `public/hero-programm.png` (1672×941) – neues Titelbild. (Hochgeladen als
+  „ChatGPT Image Sep 2, 2026, 03_48_31 PM.png", zur sauberen Einbindung ohne
+  Leerzeichen umbenannt.)
+
+**Betroffene Stelle**
+
+- `src/app/mitglieder/programm/page.tsx`: `heroImage` von
+  `/hero-programm.webp` auf `/hero-programm.png` umgestellt.
+
+**Details**
+
+- Seitenverhältnis (1672 / 941) ist identisch zum bisherigen Bild; das mobile
+  Bildband wird über `heroImageAspect` weiterhin automatisch aus der Datei
+  gelesen (unterstützt PNG). Next.js `<Image>` optimiert das PNG zur Laufzeit.
+- Die bisherige `public/hero-programm.webp` bleibt als ungenutzte Datei erhalten.
+
+---
+
 ## 2026-09-02 – Logo im Header/Footer dezent vergrößert
 
 Das Emblem war etwas zu klein. Größe zentral in `LogoMark`
