@@ -5,12 +5,22 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
-## 2026-09-02 – Blog-Hero auf Desktop kinematisch (Spotlight)
+## 2026-09-02 – Restliche Bild-Heroes geprüft, Wissen ebenfalls Spotlight
 
-Denselben Spotlight-Aufbau (siehe Eintrag unten) auch auf **/blog** angewendet:
-`src/app/blog/page.tsx` nutzt jetzt `spotlight="right"`. Das Motiv (Sonnenaufgang,
-leuchtender Pfad, Kompass) sitzt rechts und wird dort freigestellt; die Textspalte
-steht links. Mobil (Bildband) unverändert.
+Alle vier Bild-Heroes durchgesehen und einheitlich bewertet:
+
+- **/ueber-mich** – `spotlight="left"` (erledigt, siehe unten).
+- **/blog** – `spotlight="right"` (erledigt, siehe unten).
+- **/mitglieder/wissen** – jetzt **`spotlight="right"`** (`src/app/mitglieder/wissen/page.tsx`).
+  Das warme, beleuchtete Bücherregal rechts wird freigestellt, der Text steht links –
+  wirkt deutlich edler als der bisherige mittige, gleichmäßige Schleier.
+- **/mitglieder/praxis** – **bewusst unverändert**. Das Motiv ist eine gestaltete
+  Grafik mit **eingebrannter „PRAXIS"-Überschrift und Legende** (Atem, Achtsamkeit …)
+  und wird per `lg:object-contain` ganz gezeigt. Ein Spotlight-Verlauf mit seitlicher
+  Textspalte würde mit dem eingebrannten Titel/der Legende kollidieren – daher hier
+  nicht sinnvoll.
+
+Mobil (Bildband) bleibt bei allen unverändert.
 
 ---
 
