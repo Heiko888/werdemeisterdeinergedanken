@@ -34,7 +34,7 @@ export function palette(theme) {
   // Das Gold-Front-Gehirn (640×640, dichteres Motiv) wirkt bei gleicher Breite
   // klobiger als das Türkis-Seitengehirn (640×588). Etwas verkleinern, damit
   // das Lockup wie im Website-Header ausbalanciert ist.
-  const logoScale = teal ? 1 : 0.8;
+  const logoScale = teal ? 1 : 0.55;
   const accent = teal
     ? (hell ? "linear-gradient(120deg,#8cc63f 0%,#0f766e 100%)" : "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)")
     : (hell ? "linear-gradient(120deg,#d9a93a 0%,#7e6410 100%)" : "linear-gradient(120deg,#f2d489 0%,#d9a93a 100%)");

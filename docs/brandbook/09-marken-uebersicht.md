@@ -80,9 +80,9 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
   `npm run covers:png`. Nachgebessert: das Reihen-Label oben rechts – der
   Reihenname bricht jetzt ruhig um, die Nummer sitzt darunter mit feiner Linie
   (statt des baumelnden „· NN"). Zusätzlich das Gold-Front-Gehirn im Lockup auf
-  0,8× verkleinert – es füllt sein Quadrat dichter als das Türkis-Seitengehirn
-  und wirkte sonst zu groß; jetzt ist das Lockup wie im Website-Header
-  ausbalanciert (`logoScale` in `data.mjs`).
+  0,55× verkleinert – es füllt sein Quadrat dichter als das Türkis-Seitengehirn
+  und wirkte sonst zu groß; 0,55× entspricht dem Verhältnis Gehirn/Wortmarke im
+  Website-Header (`logoScale` in `data.mjs`).
 - **02.09.2026 – Schriftlogo in den Story-Carousels.** Neben dem Gehirn-Emblem
   oben links sitzt jetzt die vollständige Wortmarke („WERDE MEISTER / DEINER
   GEDANKEN") als Marken-Lockup – in allen vier Welten mit welt-eigenen Farben

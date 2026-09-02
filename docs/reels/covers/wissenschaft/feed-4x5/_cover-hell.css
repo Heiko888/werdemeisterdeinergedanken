@@ -14,7 +14,7 @@ html,body { background:#f6f4ee; }
 .top { display:flex; align-items:center; justify-content:space-between; gap:40px; }
 /* Marken-Lockup: Gehirn + Wortmarke „Werde Meister / Deiner Gedanken" */
 .brand { display:flex; align-items:center; gap:19px; flex:0 1 auto; }
-.logo { width:117px; height:auto; flex:0 0 auto;
+.logo { width:80px; height:auto; flex:0 0 auto;
   filter:drop-shadow(0 4px 26px rgba(233,193,95,.30)); }
 .wm { display:flex; flex-direction:column; gap:7px; line-height:1; }
 .wm1 { font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:30px;
