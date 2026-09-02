@@ -23,7 +23,6 @@ const ROOT = join(HERE, "..", "..");
 const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
-const brainGoldSeite = pathToFileURL(join(ROOT, "public/logo-brain-gold-seite.png")).href;
 const OUT = join(ROOT, "docs/marketing/whatsapp-mitgliedschaft");
 
 // Vier Farbwelten (Grund × Akzent). Suffixe parallel zu -hell.
@@ -32,7 +31,7 @@ const THEMES = (process.env.THEME
   ? [process.env.THEME]
   : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]).filter((t) => t in THEME_SUFFIX);
 // Gold-Front-Emblem nur im Standard „dunkel"; sonst das bunte Seitenansicht-Gehirn.
-const brainFor = (theme) => (theme === "dunkel" ? brain : theme === "hell" ? brainGoldSeite : brainTeal);
+const brainFor = (theme) => (theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain);
 
 // Zwei Formate: 4:5 fürs Teilen im Chat/Broadcast (kein Crop), 9:16 für den
 // WhatsApp-Status. padTop/padBottom halten Kopf- und Fußzeile aus den
