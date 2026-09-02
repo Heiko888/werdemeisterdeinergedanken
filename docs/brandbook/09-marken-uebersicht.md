@@ -69,6 +69,15 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **02.09.2026 – Gold-Emblem global auf Seitengehirn + Schriftlogo überall.**
+  Das goldene Marken-Emblem (`public/logo-brain-gold.png`) ist jetzt dasselbe
+  freigestellte **Seitengehirn** wie in Türkis (nur golden), damit alle
+  Gold-Grafiken formgleich sind. Betroffen und neu gerendert: Banner
+  (LinkedIn/YouTube/WhatsApp/Facebook/Instagram), Profilbilder, Zitat-/Fakt-Kacheln,
+  E-Book-CTA (brand-assets), sowie Content-Overlays, Story-Overlays,
+  Story-Carousels, WhatsApp-Mitgliedschaft und Video-Thumbnails. Außerdem trägt
+  das **runde Profilbild jetzt in allen Welten die Wortmarke** – vorher war das
+  Schriftlogo nur in Türkis aktiv (`avatarRound` ohne `if (P.teal)`-Sonderfall).
 - **02.09.2026 – Video-/Reel-Cover: Schriftlogo + 4 Farbwelten.** Der
   Cover-Generator (`docs/reels/covers/`) trägt jetzt oben links das komplette
   Marken-Lockup (Gehirn + „WERDE MEISTER / DEINER GEDANKEN") und existiert in
