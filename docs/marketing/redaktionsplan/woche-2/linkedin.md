@@ -1,0 +1,29 @@
+# LinkedIn – Woche 2 · Block A · Stufe 2 „Erwachen"
+
+> Kanal-Planer: linkedin. Frequenz-Stufe: **fokussiert (3 Posts)**. Quelle:
+> `docs/marketing/redaktionsplan/themen-backlog.md`, Block A, Zeile „Woche 2 –
+> Stufe 2 · Erwachen". Alle Slugs/Pfade gegen `src/lib/blog.ts` (Zeile 213),
+> `src/lib/deep-dives.ts` (Zeile 407), `src/lib/practices.ts` (Zeile 63),
+> `docs/carousels/marketing-serien.mjs` und `docs/marketing/content-data.mjs`
+> geprüft (`rg`/`ls`, s. Prüfvermerke unten).
+>
+> Bild-Assets: **Creme-Variante als Standard** (`-hell.png`), s.
+> `docs/marketing/zitate/4x5/` bzw. `docs/marketing/zitate/studien-4x5/`.
+
+## Woche
+
+| Tag | Uhrzeit | Format | Inhalt / Hook | Quelle | CTA |
+|---|---|---|---|---|---|
+| Di | 07:30 | 📝 Beitrag | **Hook (1. Zeile):** „Der Kollege sagt einen Satz – und bevor du nachgedacht hast, bist du schon in der Verteidigung." Text überträgt den Kern des Blogs (der innere Beobachter, der Gedanken nur bemerkt, statt sie zu sein) in eine Meeting-Situation: Ein spitzer Kommentar im Status-Call löst sofort eine Reaktion aus – Rechtfertigung, Gegenangriff oder Rückzug. Wer stattdessen den Gedanken „Ich fühle mich gerade angegriffen" innerlich benennt, hat bereits den ersten Schritt weg vom Autopilot gemacht: Er ist nicht mehr der Gedanke, sondern der, der ihn bemerkt. Genau in diesem winzigen Abstand entsteht die Wahl, wie man antwortet – nicht, wie man reagiert. Schluss: Eine 60-Sekunden-Übung aus dem Artikel (Gedanken wie Wolken vorbeiziehen lassen, benennen, zum Atem zurückkehren) lässt sich unauffällig zwischen zwei Meetings einbauen. | Blog `/blog/du-bist-nicht-deine-gedanken` (verifiziert in `src/lib/blog.ts`, Zeile 213–264: Abschnitt „Der innere Beobachter", Zitat „Zwischen Reiz und Reaktion liegt ein Raum…", Übung „Dreimal am Tag 60 Sekunden") | Kommentar-Frage: „In welcher Besprechung merkst du am ehesten, wie schnell du reagierst, bevor du wirklich nachgedacht hast?" (Soft-Engagement, kein harter Link) |
+| Mi | 08:15 | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – sachlicher Ton, Fokus auf die Slides, die für Arbeitskontexte relevant sind: das Remedy-Slide „Zwischen Reiz und Reaktion liegt ein Raum. In diesem Raum liegt deine Freiheit." sowie die Warnsignal-Liste (starke Emotion, künstlicher Zeitdruck, Schwarz-Weiß-Rhetorik). Im Begleittext auf Verhandlungs- und Entscheidungssituationen im Job zugespitzt: Wer unter Zeitdruck oder starker Emotion zustimmt (befristetes Angebot, aufgeheizte Diskussion), hat selten frei entschieden – das Bemerken dieses Musters ist die eigentliche Kompetenz. | Carousel-Serie `wer-denkt-hier` in `docs/carousels/marketing-serien.mjs`, Zeilen 91–114 (Remedy-Slide Zeile 109–111, Warnsignal-Liste Zeile 103–108). Ergänzend als Sharepic: `docs/marketing/zitate/4x5/WMDG-Zitat-03-hell.png` (Text „Du bist nicht deine Gedanken. Du bist der, der sie bemerkt.", `docs/marketing/content-data.mjs`, `key: "03"` – wortgleich mit dem Blogtitel) | „Speichern für die nächste Verhandlung, in der du merkst: Hier will mich gerade etwas unter Druck setzen." → kein Link, reines Save/Share |
+| Do | 07:45 | 🎯 Pitch | **Hook:** „Die wichtigste Führungskompetenz ist kein neues Framework – sie dauert fünf Minuten und heißt: den eigenen Atem beobachten." Kurzer Text stellt die Reiz-Reaktions-Lücke als Kernidee von Stufe 2 vor (unter Stress übernimmt das schnelle, automatische System, bevor der überlegte Verstand eingreift – im Job führt das zur E-Mail, die man später bereut) und positioniert die Atembeobachtung als niedrigschwelligen Einstieg, um diesen Spalt bewusst zu dehnen. Verweis auf das kostenlose E-Book „Die 7 Stufen kompakt" als Einstieg, mit Blick auf die vollständige Lektion zu Stufe 2 für alle, die tiefer einsteigen wollen. | Deep-Dive `reiz-reaktions-luecke` (verifiziert in `src/lib/deep-dives.ts`, Zeile 407–430: Abschnitt „Warum die Lücke oft verschwindet") · Praxis `atembeobachtung` (`src/lib/practices.ts`, Zeile 63–85, `relatedStage: 2`) · Lektion `/mitglieder/stufe/2` (Route `src/app/mitglieder/stufe/[nr]/page.tsx`) + PDF `content/pdf/stufe-2-lektion.pdf` und Vertiefungs-PDF `content/pdf/vertiefung-reiz-reaktions-luecke.pdf` (beide per `ls content/pdf/` verifiziert) | Soft-CTA: „Kostenloses E-Book sichern" → `/#ebook`; für bereits Registrierte: „Lektion 2 direkt in der Mitgliedschaft" → `/mitglieder` |
+
+## Hinweise zur Umsetzung
+
+- **Rhythmus eingehalten:** Textbeitrag früh in der Pendelzeit (Di 07:30), Carousel Mitte der Woche (Mi 08:15), Pitch zum Wochenausklang (Do 07:45) – identischer Rhythmus wie Woche 1.
+- **Kein Freitag/Wochenende belegt** – bei „fokussiert" bleiben drei Slots Di–Do.
+- **Carousel-Auswahl begründet:** `docs/carousels/marketing-serien.mjs` enthält nur 5 evergreene Serien (keine eigene Serie je Stufe). Woche 1 nutzte bereits `60000-gedanken`. Für Stufe 2 passt `wer-denkt-hier` inhaltlich am besten, weil das Remedy-Slide wörtlich die Reiz-Reaktions-Lücke beschreibt (Kernthema dieser Woche). Die Serie wird in Woche 3–6 mit anderen Slides (Studien-Fakten) erneut verwendet – jeweils mit anderem fachlichen Fokus, um Redundanz zu vermeiden (s. jeweilige Wochen-Dateien).
+- **Kein Video-Slot:** Für Woche 2 existiert zwar ein geplantes YouTube-Hauptvideo (`docs/marketing/redaktionsplan/woche-2/youtube.md`), es handelt sich aber um einen Produktions-/Skriptplan ohne veröffentlichte URL – kein natives Teilen auf LinkedIn möglich. Konsistent mit der Entscheidung aus Woche 1.
+- **Berufsbezug durchgängig:** Meeting-Reaktionen, Verhandlungssituationen, Führungskommunikation – dieselbe Kernthese wie in den anderen Kanälen (Stufe 2 · Erwachen: „Du bist nicht deine Gedanken"), aus Arbeitsperspektive übersetzt.
+- **Ton:** sachlich, wertig, These zuerst – kein Boulevard-Stil.
+- Es wurden keine neuen Slugs/Assets erfunden; alle Quellenangaben sind mit Datei/Zeile oder Verzeichnis-Listing belegt.

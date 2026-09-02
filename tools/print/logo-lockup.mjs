@@ -19,7 +19,7 @@ import { CONTACT, C } from "./marke.mjs";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
 const fontsCss = readFileSync(join(ROOT, "tools/pdf/assets/fonts.css"), "utf8");
-const brain = "data:image/png;base64," + readFileSync(join(ROOT, "public/logo-brain-gold.png")).toString("base64");
+const brain = "data:image/png;base64," + readFileSync(join(ROOT, "public/logo-brain-gold-freigestellt.png")).toString("base64");
 const L = CONTACT.lockup;
 const SCALE = 4; // Wiedergabe-Auflösung (Retina für scharfen Druck)
 

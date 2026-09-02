@@ -31,17 +31,41 @@ Zitate `docs/marketing/zitate/` · Funnel `/#ebook` → `/mitglieder`.
 
 | Woche | Stufe / Thema | Status | Reel-Hook (Beispiel) | Blog-Slug (`/wissen/blog/…`) | Deep-Dive (`/mitglieder/wissen/…`) | Praxis |
 |---|---|---|---|---|---|---|
-| 1 | **Stufe 1 · Autopilot** | geplant | „Wie oft entscheide ich wirklich?" | `drei-muster-die-dich-unbewusst-steuern` | `automatische-gedanken` | `autopilot-check` |
+| 1 | **Stufe 1 · Autopilot** | geplant | „Wie oft entscheide ich wirklich?" | `drei-muster-die-dich-unbewusst-steuern` ⚠ | `automatische-gedanken` | `autopilot-check` |
 | 2 | **Stufe 2 · Erwachen** | geplant | „Wer hört zu, wenn du denkst?" | `du-bist-nicht-deine-gedanken` | `reiz-reaktions-luecke` | `atembeobachtung` |
 | 3 | **Stufe 3 · Selbstbeobachtung** | geplant | „Nicht in jeden Gedanken springen" | `denkfehler-wie-dein-kopf-die-wirklichkeit-verzerrt` | `kognitive-verzerrungen` | `innerer-beobachter` |
 | 4 | **Stufe 4 · Emotionale Reifung** | geplant | „Wie lang dauert ein Gefühl wirklich?" | `gefuehle-benennen-beruhigt-das-gehirn` | `emotionsregulation` | `verlaengertes-ausatmen` |
 | 5 | **Stufe 5 · Schöpferkraft** | geplant | „Was du oft denkst, wird zur Straße im Kopf" | `neuroplastizitaet-warum-dein-gehirn-formbar-ist` | `neuroplastizitaet` | `morgen-ausrichtung` |
 | 6 | **Stufe 6 · Innere Ausrichtung** | geplant | „Der Kopf ist ein guter Diener, schlechter Chef" | `warum-willenskraft-ueberschaetzt-wird` | `werte-und-ziele` | `herz-kohaerenz` |
-| 7 | **Stufe 7 · Meisterschaft** | geplant | „Niemand ist für immer Meister" | `wie-frei-ist-unser-geist` | `integration-und-weitergabe` | `box-breathing` |
+| 7 | **Stufe 7 · Meisterschaft** | geplant | „Niemand ist für immer Meister" | `wie-frei-ist-unser-geist` | `integration-und-weitergabe` | `taegliche-rueckkehr` (korrigiert, s. Fußnote) |
 
 > Reel-Varianten A/B/C je Stufe erlauben Wiederholung/AB-Tests über mehrere Wochen.
 > ⚠ Für Stufe 3/6/7 ist der Blog-Slug thematisch **naheliegend**, nicht 1:1 –
 > bei Bedarf einen passenden Stufen-Blog ergänzen.
+> ⚠ **Korrektur Woche 1 (vom instagram-planer geprüft):** Der Blog liegt real
+> unter **`/blog/…`** (`src/app/blog/[slug]/page.tsx`), **nicht** unter
+> `/wissen/blog/…` wie die Spaltenüberschrift suggeriert. Für Woche 1 also
+> `/blog/drei-muster-die-dich-unbewusst-steuern` verwenden. Die
+> Spaltenüberschrift wurde für die übrigen Wochen noch nicht einzeln
+> gegengeprüft – bitte bei Bedarf je Woche verifizieren.
+> ⚠ **Korrektur Woche 7 (Praxis):** Mehrere Kanal-Planer (Instagram, Facebook,
+> LinkedIn, YouTube) haben unabhängig voneinander geprüft, dass `box-breathing`
+> in `src/lib/practices.ts` `relatedStage: 6` trägt (identisch zu
+> `herz-kohaerenz` aus Woche 6), **nicht** `relatedStage: 7`. Die tatsächlich
+> zu Stufe 7 passende Praxis ist **`taegliche-rueckkehr`** (`src/lib/practices.ts`,
+> Zeile 341–363, `relatedStage: 7`), die inhaltlich exakt zu Deep-Dive
+> `integration-und-weitergabe` passt. Diese Tabelle sowie
+> `docs/marketing/redaktionsplan.md` und `docs/marketing/redaktionsplan-kalender.html`
+> verwenden für Woche 7 durchgängig `taegliche-rueckkehr`.
+>
+> **Fußnote – bestätigte Slug-Prüfung (Wochen 1–7):** Für alle sieben Wochen
+> des Block A wurden Blog-Slug (`src/lib/blog.ts`), Deep-Dive-Slug inkl.
+> `relatedStage` (`src/lib/deep-dives.ts`) und Praxis-Slug inkl.
+> `relatedStage` (`src/lib/practices.ts`) von den vier Kanal-Planern
+> unabhängig per `rg`/`ls` gegen den Code geprüft (Ergebnisse dokumentiert in
+> `docs/marketing/redaktionsplan/woche-N/{instagram,facebook,linkedin,youtube}.md`,
+> Abschnitt „Material-Check" bzw. „Hinweise"). Keine erfundenen Slugs, keine
+> offenen Lücken außer der oben genannten Praxis-Korrektur für Woche 7.
 
 ## Block B — Praxis & Wissenschaft (Wochen 8–10, ruhigere Blöcke)
 
@@ -78,6 +102,46 @@ Community die Grundlagen (Block A) kennt.
 > Woche 21–26 haben jetzt eigene Blogartikel (`src/lib/blog.ts`, Kategorie
 > „Mentale Selbstverteidigung", vordatiert als geplante Beiträge). Blog + Vertiefung
 > sind vorhanden.
+
+> **Fußnote – bestätigte Slug-Prüfung (Wochen 8–18):** Für Block B (Wochen 8–10)
+> und die ersten acht Wochen von Block C (11–18) wurden Blog-Slug
+> (`src/lib/blog.ts`), Deep-Dive-Slug (`src/lib/deep-dives.ts`) und – wo
+> zugewiesen – Praxis-Slug (`src/lib/practices.ts`) von den vier Kanal-Planern
+> unabhängig per `rg`/`ls` gegen den Code geprüft (Ergebnisse dokumentiert in
+> `docs/marketing/redaktionsplan/woche-N/{instagram,facebook,linkedin,
+> youtube}.md`, Abschnitt „Material-Check" bzw. „Hinweise"). Keine erfundenen
+> Slugs. Zwei bekannte, im Master-Plan (`docs/marketing/redaktionsplan.md`)
+> und im interaktiven Kalender ausgewiesene Lücken bleiben offen:
+> (a) für Block B/C existiert noch **kein** eigenes YouTube-Thumbnail-Motiv
+> (nur die Basis-Vorlage `WMDG-Thumbnail-vorlage-hell.png`, „Motiv noch zu
+> produzieren"); (b) für die meisten Block-C-Themen (Framing, Wiederholung,
+> Reizüberflutung, Autoritätshörigkeit, Propaganda) fehlt ein eigener
+> Carousel-Slide in `docs/carousels/marketing-serien.mjs` – der jeweils
+> nächstpassende vorhandene Slide wird genutzt und in der jeweiligen Woche mit
+> ⚠ gekennzeichnet.
+
+> **Fußnote – bestätigte Slug-Prüfung (Wochen 19–26, zweite Hälfte Block C):**
+> Kognitive Dissonanz, Identität & Meinung, Sprache & Etiketten, Medien-Agenda,
+> Angst-Steuerung, Ablenkung, Normalisierung und Bildmacht sind **geplant**
+> (Status oben aktualisiert). Blog-Slug (`src/lib/blog.ts`), Deep-Dive-Slug
+> (`src/lib/deep-dives.ts`) und – wo zugewiesen – Praxis-Slug
+> (`src/lib/practices.ts`) wurden auch für diese acht Wochen von den vier
+> Kanal-Planern unabhängig per `rg`/`ls` gegen den Code geprüft (Ergebnisse
+> dokumentiert in `docs/marketing/redaktionsplan/woche-N/{instagram,facebook,
+> linkedin,youtube}.md`, Abschnitt „Material-Check" bzw. „Hinweise"). Keine
+> erfundenen Slugs. Dieselben zwei Lücken wie in Woche 8–18 bleiben bestehen:
+> (a) **kein** eigenes YouTube-Thumbnail-Motiv für Block C (weiterhin nur
+> `WMDG-Thumbnail-vorlage-hell.png`, „Motiv noch zu produzieren"); (b) für
+> sieben der acht Themen (alle außer Angst-Steuerung, wo das Warnsignal
+> „Starke Emotion" aus `wer-denkt-hier` wörtlich „Angst … schalten dein
+> kritisches Denken aus" nennt) fehlt weiterhin ein eigener Carousel-Slide –
+> der jeweils nächstpassende vorhandene Slide (teils aus „wer-denkt-hier",
+> „60000-gedanken", „4-wege-freiheit" oder „studien-fakten", teils
+> Zweitverwendung eines bereits in Woche 11/12/15 genutzten Slides mit
+> anderem inhaltlichen Fokus) wird genutzt und in der jeweiligen Woche mit ⚠
+> gekennzeichnet. Über den gesamten Block C (16 Wochen, 11–26) haben damit nur
+> drei Themen einen **eigenen** Carousel-Schritt: Algorithmen/Filterblasen
+> (W12), Werbung & Mangel (W15), Gruppendruck (W16).
 
 ---
 

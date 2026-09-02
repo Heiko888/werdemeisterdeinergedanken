@@ -19,7 +19,7 @@ import { spawnSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
-import { FORMATS, COLLECTIONS, pad2 } from "./data.mjs";
+import { FORMATS, COLLECTIONS, pad2, THEMES, THEME_SUFFIX } from "./data.mjs";
 
 const require = createRequire(import.meta.url);
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -58,7 +58,12 @@ function findChrome() {
 }
 
 const { chromium } = require("playwright");
-const [onlyColl, onlyFormat] = process.argv.slice(2);
+const [onlyColl, onlyFormat, onlyTheme] = process.argv.slice(2);
+const themes = THEMES.filter((t) => !onlyTheme || t === onlyTheme);
+if (themes.length === 0) {
+  console.error(`Unbekannte Welt: ${onlyTheme}. Verfügbar: ${THEMES.join(", ")}`);
+  process.exit(1);
+}
 
 // Overlay-Variante: dasselbe Cover, aber Hintergrund transparent (designter
 // Marken-Verlauf + optionale vorlage.png ausgeblendet). Scrim + Inhalt (Logo,
@@ -96,18 +101,21 @@ for (const coll of collections) {
     const ovDir = join(HERE, "export-overlay", coll.key, f.key);
     mkdirSync(outDir, { recursive: true });
     mkdirSync(ovDir, { recursive: true });
-    for (let i = 0; i < coll.items.length; i++) {
-      const nn = pad2(i + 1);
-      await shot(
-        join(srcDir, `cover-${nn}.html`),
-        join(outDir, `cover-${nn}.png`),
-        join(ovDir, `overlay-${nn}.png`),
-        f.w,
-        f.h,
-      );
-      n++;
+    for (const theme of themes) {
+      const sfx = THEME_SUFFIX[theme];
+      for (let i = 0; i < coll.items.length; i++) {
+        const nn = pad2(i + 1);
+        await shot(
+          join(srcDir, `cover-${nn}${sfx}.html`),
+          join(outDir, `cover-${nn}${sfx}.png`),
+          join(ovDir, `overlay-${nn}${sfx}.png`),
+          f.w,
+          f.h,
+        );
+        n++;
+      }
     }
-    console.log(`✓ ${coll.key}/${f.key} · ${coll.items.length} PNG`);
+    console.log(`✓ ${coll.key}/${f.key} · ${coll.items.length} Motive × ${themes.length} Welten`);
   }
 }
 await browser.close();

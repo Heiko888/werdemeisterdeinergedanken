@@ -19,71 +19,105 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { HANDLE, GRAD, pad2, COLLECTIONS, FORMATS } from "./data.mjs";
+import { HANDLE, GRAD, pad2, COLLECTIONS, FORMATS, THEMES, THEME_SUFFIX, THEME_LABEL, palette } from "./data.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 
+// Wortmarke-Größen relativ zur Logo-Breite (Lockup neben dem Gehirn).
+const wmSizes = (f) => ({
+  gap: Math.round(f.logoW * 0.13),
+  colGap: Math.round(f.logoW * 0.05),
+  one: Math.round(f.logoW * 0.205),
+  two: Math.round(f.logoW * 0.108),
+  tickW: Math.round(f.logoW * 0.14),
+  twoGap: Math.round(f.logoW * 0.05),
+});
 
 // ---------------------------------------------------------------------------
-function coverCss(f) {
-  return `/* Format ${f.label} · generiert von build.mjs – nicht von Hand ändern */
+function coverCss(f, P) {
+  const wm = wmSizes(f);
+  return `/* Format ${f.label} · Welt ${P.theme} · generiert von build.mjs – nicht von Hand ändern */
 * { margin:0; padding:0; box-sizing:border-box; }
-html,body { background:#05060c; }
+html,body { background:${P.pageBg}; }
 .cover { position:relative; width:${f.w}px; height:${f.h}px; overflow:hidden;
   font-family:'Inter',system-ui,sans-serif; }
 .cover::before { content:""; position:absolute; inset:0; z-index:0;
-  background:
-    radial-gradient(60% 40% at 78% 30%, rgba(52,196,196,.35), transparent 60%),
-    radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),
-    linear-gradient(160deg,#071026 0%,#0b2138 45%,#0a1730 100%); }
+  background:${P.bg}; }
 .bg { position:absolute; inset:0; z-index:1;
   background-image:url("vorlage.png"); background-size:cover; background-position:center; }
 .scrim { position:absolute; inset:0; z-index:2;
-  background:linear-gradient(to bottom, transparent 40%, rgba(5,9,20,.55) 72%, rgba(5,9,20,.92) 100%); }
+  background:${P.scrim}; }
 .content { position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
   padding:${f.pad}px; }
-.top { display:flex; align-items:flex-start; justify-content:space-between; gap:40px; }
-.logo { width:${f.logoW}px; height:auto; flex:0 0 auto;
-  filter:drop-shadow(0 4px 26px rgba(52,196,196,.30)); }
-.tag { text-align:right; padding-top:8px; font-family:'Inter',sans-serif; font-weight:800;
-  font-size:${f.tagFs}px; letter-spacing:.14em; text-transform:uppercase;
-  background:${GRAD};
+.top { display:flex; align-items:center; justify-content:space-between; gap:40px; }
+/* Marken-Lockup: Gehirn + Wortmarke „Werde Meister / Deiner Gedanken" */
+.brand { display:flex; align-items:center; gap:${wm.gap}px; flex:0 1 auto; }
+.logo { width:${Math.round(f.logoW * P.logoScale)}px; height:auto; flex:0 0 auto;
+  filter:drop-shadow(0 4px 26px rgba(${P.glowRGB},.30)); }
+.wm { display:flex; flex-direction:column; gap:${wm.colGap}px; line-height:1; }
+.wm1 { font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:${wm.one}px;
+  letter-spacing:.05em; text-transform:uppercase; color:${P.wmMain}; white-space:nowrap; }
+.wm1 em { font-style:normal; background:${P.accent};
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.wm2 { display:flex; align-items:center; gap:${wm.twoGap}px; font-family:'Fraunces',Georgia,serif;
+  font-weight:400; font-size:${wm.two}px; letter-spacing:.2em; text-transform:uppercase;
+  color:${P.wmSub}; white-space:nowrap; }
+.wm2 i { display:block; height:1px; width:${wm.tickW}px; background:${P.tick}; }
+/* Reihen-Label oben rechts: Reihenname (bricht ruhig um) + Nummer mit Linie */
+.tag { display:flex; flex-direction:column; align-items:flex-end; gap:${Math.round(f.tagFs * 0.55)}px;
+  max-width:46%; padding-top:3px; text-align:right; }
+.tag .series { font-family:'Inter',sans-serif; font-weight:800; font-size:${f.tagFs}px;
+  letter-spacing:.11em; text-transform:uppercase; line-height:1.26;
+  background:${P.accent};
   -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent;
-  filter:drop-shadow(0 2px 12px rgba(0,0,0,.55)); }
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,${P.hell ? ".14" : ".5"})); }
+.tag .no { display:flex; align-items:center; gap:${Math.round(f.tagFs * 0.5)}px;
+  font-family:'Inter',sans-serif; font-weight:700; font-size:${Math.round(f.tagFs * 1.12)}px;
+  letter-spacing:.06em; color:${P.wmSub}; }
+.tag .no i { display:block; width:${Math.round(f.tagFs * 1.2)}px; height:2px; border-radius:2px;
+  background:${P.accent}; }
 .spacer { flex:1 1 auto; }
 .headline { max-width:${f.headMaxW}; font-family:'Fraunces',Georgia,serif; font-weight:600;
-  font-size:${f.headFs}px; line-height:1.04; letter-spacing:-1px; color:#f4f7ff;
-  filter:drop-shadow(0 6px 34px rgba(0,0,0,.6)); }
+  font-size:${f.headFs}px; line-height:1.04; letter-spacing:-1px; color:${P.ink};
+  filter:${P.shadow}; }
 .headline.small { font-size:${f.headSmallFs}px; }
 /* Kursiv + Verlauf: padding-right, damit der Verlauf den schrägen Überhang
    des letzten Buchstabens voll abdeckt (sonst wird z. B. das „d" abgeschnitten) */
 .headline .accent { font-style:italic; font-weight:500;
   padding-right:.14em; margin-right:-.06em;
-  background:${GRAD};
+  background:${P.accent};
   -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent; }
 .handle { margin-top:${f.handleGap}px; font-family:'Inter',sans-serif; font-weight:600;
-  font-size:${f.handleFs}px; letter-spacing:.04em; color:#a7bad2;
-  text-shadow:0 2px 14px rgba(0,0,0,.7); }
+  font-size:${f.handleFs}px; letter-spacing:.04em; color:${P.handle};
+  text-shadow:${P.handleShadow}; }
 `;
 }
 
-function coverHtml(coll, item, n) {
+function coverHtml(coll, item, n, theme) {
   const nn = pad2(n);
   const cls = item.cls ? ` ${item.cls}` : "";
+  const P = palette(theme);
+  const sfx = THEME_SUFFIX[theme];
   return `<!doctype html>
-<html lang="de"><head><meta charset="utf-8"><title>${coll.label} ${nn} · ${item.theme}</title>
+<html lang="de"><head><meta charset="utf-8"><title>${coll.label} ${nn} · ${item.theme} · ${THEME_LABEL[theme]}</title>
 <link rel="stylesheet" href="../../_fonts.css">
-<link rel="stylesheet" href="_cover.css"></head>
+<link rel="stylesheet" href="_cover${sfx}.css"></head>
 <body>
   <div class="cover">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="content">
       <div class="top">
-        <img class="logo" src="../../logo.png" alt="Logo">
-        <div class="tag">${coll.series} · ${nn}</div>
+        <div class="brand">
+          <img class="logo" src="../../${P.brain}" alt="Logo">
+          <div class="wm">
+            <span class="wm1">Werde <em>Meister</em></span>
+            <span class="wm2"><i></i>Deiner Gedanken<i></i></span>
+          </div>
+        </div>
+        <div class="tag"><span class="series">${coll.series}</span><span class="no"><i></i>${nn}</span></div>
       </div>
       <div class="spacer"></div>
       <div class="headline${cls}">${item.html}</div>
@@ -159,17 +193,23 @@ for (const coll of COLLECTIONS) {
   for (const f of FORMATS) {
     const dir = join(HERE, coll.key, f.key);
     mkdirSync(dir, { recursive: true });
-    writeFileSync(join(dir, "_cover.css"), coverCss(f));
-    coll.items.forEach((it, i) => {
-      writeFileSync(join(dir, `cover-${pad2(i + 1)}.html`), coverHtml(coll, it, i + 1));
-      totalCovers++;
-    });
-    // Format-Galerie
+    // Je Farbwelt eine eigene CSS + ein Cover-Satz (dunkel ohne Suffix).
+    for (const theme of THEMES) {
+      const sfx = THEME_SUFFIX[theme];
+      writeFileSync(join(dir, `_cover${sfx}.css`), coverCss(f, palette(theme)));
+      coll.items.forEach((it, i) => {
+        writeFileSync(join(dir, `cover-${pad2(i + 1)}${sfx}.html`), coverHtml(coll, it, i + 1, theme));
+        totalCovers++;
+      });
+    }
+    // Format-Galerie – alle vier Welten je Motiv.
     const cards = coll.items
-      .map((it, i) => iframeCard(`cover-${pad2(i + 1)}.html`, f.w, f.h, `${pad2(i + 1)} · ${it.theme}`))
+      .map((it, i) => THEMES.map((theme) =>
+        iframeCard(`cover-${pad2(i + 1)}${THEME_SUFFIX[theme]}.html`, f.w, f.h,
+          `${pad2(i + 1)} · ${it.theme}<br><span class="go">${THEME_LABEL[theme]}</span>`)).join("\n"))
       .join("\n");
     writeFileSync(join(dir, "index.html"),
-      shell(`${coll.label} · ${f.label}`, `${coll.items.length} Motive · ${f.w}×${f.h}px`, cards, "../index.html"));
+      shell(`${coll.label} · ${f.label}`, `${coll.items.length} Motive × 4 Welten · ${f.w}×${f.h}px`, cards, "../index.html"));
   }
   // Bereichs-Übersicht (Format-Auswahl)
   const fcards = FORMATS.map((f) =>
@@ -197,19 +237,25 @@ console.log(`✓ Übersicht + ${totalCovers} Cover-Dateien insgesamt`);
 const outSelf = process.argv[2];
 if (outSelf) {
   const fontsCss = readFileSync(join(HERE, "_fonts.css"), "utf8");
-  const logoUri = `data:image/png;base64,${readFileSync(join(HERE, "logo.png")).toString("base64")}`;
+  const logoTealUri = `data:image/png;base64,${readFileSync(join(HERE, "logo.png")).toString("base64")}`;
+  const logoGoldUri = `data:image/png;base64,${readFileSync(join(HERE, "logo-gold.png")).toString("base64")}`;
 
-  const coverDiv = (f, coll, item, n) => {
+  // Ein Cover als skaliertes Live-HTML. Farbwelt kommt über die --cv-*-Variablen
+  // (per Body-Klasse global umschaltbar; im Hero per figure-Klasse fest gesetzt).
+  const coverDiv = (f, coll, item, n, figClass = "") => {
     const scale = 300 / f.w;
     const fw = Math.round(f.w * scale);
     const fh = Math.round(f.h * scale);
     const cls = item.cls ? ` ${item.cls}` : "";
-    return `      <figure class="card">
+    return `      <figure class="card${figClass ? " " + figClass : ""}">
         <div class="frame" style="width:${fw}px;height:${fh}px">
           <div class="cover ${f.key}" style="transform:scale(${scale.toFixed(4)})">
             <div class="content">
-              <div class="top"><div class="logo"></div>
-                <div class="tag">${coll.series} · ${pad2(n)}</div></div>
+              <div class="top">
+                <div class="brand"><div class="logo"></div>
+                  <div class="wm"><span class="wm1">Werde <em>Meister</em></span>
+                    <span class="wm2"><i></i>Deiner Gedanken<i></i></span></div></div>
+                <div class="tag"><span class="series">${coll.series}</span><span class="no"><i></i>${pad2(n)}</span></div></div>
               <div class="spacer"></div>
               <div class="headline${cls}">${item.html}</div>
               <div class="handle">${HANDLE}</div>
@@ -221,6 +267,23 @@ if (outSelf) {
   };
 
   const reel = FORMATS[0];
+
+  // Hero: EIN Motiv in allen vier Welten gleichzeitig.
+  const heroColl = COLLECTIONS[0];
+  const heroItem = heroColl.items[4]; // „Dein Feed ≠ die Welt"
+  const heroCards = THEMES.map((theme) =>
+    coverDiv(reel, heroColl, heroItem, 5, `w-${theme}`)
+      .replace(/<figcaption>.*<\/figcaption>/, `<figcaption>${THEME_LABEL[theme]}</figcaption>`),
+  ).join("\n");
+  const hero = `  <section class="fmt">
+    <h2>Vier Farbwelten <span class="dim">· dasselbe Motiv, umgeschaltet</span></h2>
+    <p class="note">Jedes Cover gibt es in allen vier Welten. Oben kannst du die ganze Galerie umschalten.</p>
+    <div class="grid">
+${heroCards}
+    </div>
+  </section>`;
+
+  // Volle Galerie (folgt der oben gewählten Welt via Body-Klasse).
   const sections = COLLECTIONS.map((coll) => {
     const cards = coll.items.map((it, i) => coverDiv(reel, coll, it, i + 1)).join("\n");
     return `  <section class="fmt">
@@ -232,13 +295,8 @@ ${cards}
   </section>`;
   }).join("\n");
 
-  // Format-Demo: ein Motiv über alle 5 Formate
-  const demoColl = COLLECTIONS[0];
-  const demoItem = demoColl.items[4]; // „Dein Feed ≠ die Welt"
-  const demoCards = FORMATS.map((f) => `      <figure class="card">
-        <div class="frame" style="width:${Math.round(f.w * 300 / f.w)}px">
-          ${coverDiv(f, demoColl, demoItem, 5).split("\n").slice(1).join("\n")}
-      </figure>`).join("\n");
+  // Format-Demo: ein Motiv über alle 5 Formate (in der gewählten Welt).
+  const demoCards = FORMATS.map((f) => coverDiv(f, heroColl, heroItem, 5)).join("\n");
   const demo = `  <section class="fmt">
     <h2>Ein Motiv · fünf Formate <span class="dim">· so passt jedes Cover überall</span></h2>
     <p class="note">Im Repo liegt jedes Motiv in allen fünf Formaten – hier am Beispiel „Dein Feed".</p>
@@ -250,11 +308,41 @@ ${demoCards}
   const fmtCss = FORMATS.map((f) => `
   .cover.${f.key}{ width:${f.w}px; height:${f.h}px; }
   .cover.${f.key} .content{ padding:${f.pad}px; }
-  .cover.${f.key} .logo{ width:${f.logoW}px; height:${Math.round(f.logoW * 609 / 770)}px; }
-  .cover.${f.key} .tag{ font-size:${f.tagFs}px; }
+  .cover.${f.key} .logo{ width:${f.logoW}px; height:${Math.round(f.logoW * 0.94)}px; }
+  .cover.${f.key} .brand{ gap:${Math.round(f.logoW * 0.13)}px; }
+  .cover.${f.key} .wm{ gap:${Math.round(f.logoW * 0.05)}px; }
+  .cover.${f.key} .wm1{ font-size:${Math.round(f.logoW * 0.205)}px; }
+  .cover.${f.key} .wm2{ gap:${Math.round(f.logoW * 0.05)}px; font-size:${Math.round(f.logoW * 0.108)}px; }
+  .cover.${f.key} .wm2 i{ width:${Math.round(f.logoW * 0.14)}px; }
+  .cover.${f.key} .tag{ gap:${Math.round(f.tagFs * 0.55)}px; max-width:44%; }
+  .cover.${f.key} .tag .series{ font-size:${f.tagFs}px; }
+  .cover.${f.key} .tag .no{ gap:${Math.round(f.tagFs * 0.5)}px; font-size:${Math.round(f.tagFs * 1.12)}px; }
+  .cover.${f.key} .tag .no i{ width:${Math.round(f.tagFs * 1.2)}px; }
   .cover.${f.key} .headline{ font-size:${f.headFs}px; max-width:${f.headMaxW}; }
   .cover.${f.key} .headline.small{ font-size:${f.headSmallFs}px; }
   .cover.${f.key} .handle{ font-size:${f.handleFs}px; margin-top:${f.handleGap}px; }`).join("\n");
+
+  // Welt-Klassen (auf body ODER figure) setzen die --cv-*-Variablen – Werte 1:1
+  // aus palette(), damit die Vorschau exakt den echten Covern entspricht.
+  const worldCss = THEMES.map((theme) => {
+    const P = palette(theme);
+    const logoVar = P.teal ? "var(--logo-teal)" : "var(--logo-gold)";
+    return `.w-${theme}{
+  --cv-bg:${P.bg};
+  --cv-logo:${logoVar};
+  --cv-ink:${P.ink};
+  --cv-accent:${P.accent};
+  --cv-wm-main:${P.wmMain};
+  --cv-wm-sub:${P.wmSub};
+  --cv-handle:${P.handle};
+  --cv-tick:${P.tick};
+  --cv-glow:${P.glowRGB};
+}`;
+  }).join("\n");
+
+  const buttons = THEMES.map((theme, i) =>
+    `<button data-w="${theme}"${i === 0 ? ' class="on"' : ""}>${THEME_LABEL[theme]}</button>`,
+  ).join("");
 
   const html = `<!doctype html>
 <html lang="de"><head><meta charset="utf-8">
@@ -262,7 +350,7 @@ ${demoCards}
 <title>Cover-Studio</title>
 <style>
 ${fontsCss}
-:root{ --muted:#a7bad2; --logo:url("${logoUri}"); }
+:root{ --muted:#a7bad2; --logo-teal:url("${logoTealUri}"); --logo-gold:url("${logoGoldUri}"); }
 *{ box-sizing:border-box; }
 body{ margin:0; background:radial-gradient(80% 55% at 50% 0%,#0d2240,#070d1c 70%);
   color:#f4f7ff; font-family:system-ui,-apple-system,'Segoe UI',sans-serif; padding:44px 28px 90px; }
@@ -271,7 +359,15 @@ header{ max-width:1240px; margin:0 auto 8px; }
   background:${GRAD}; -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent; }
 h1{ font-size:34px; margin:8px 0 6px; font-weight:600; }
-p.lead{ color:var(--muted); margin:0; font-size:16px; max-width:660px; line-height:1.5; }
+p.lead{ color:var(--muted); margin:0; font-size:16px; max-width:680px; line-height:1.5; }
+/* Welt-Umschalter */
+.switch{ position:sticky; top:0; z-index:20; max-width:1240px; margin:18px auto 0;
+  display:flex; flex-wrap:wrap; gap:8px; padding:12px 0; background:rgba(7,13,28,.86); backdrop-filter:blur(6px); }
+.switch button{ font:inherit; font-size:13px; font-weight:700; letter-spacing:.03em; cursor:pointer;
+  color:#cdd8ea; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14);
+  border-radius:999px; padding:9px 16px; transition:all .15s; }
+.switch button:hover{ background:rgba(255,255,255,.1); }
+.switch button.on{ color:#08131f; background:${GRAD}; border-color:transparent; }
 .fmt{ max-width:1240px; margin:0 auto; padding-top:26px; }
 .fmt h2{ font-size:21px; font-weight:600; margin:0 0 4px;
   border-top:1px solid rgba(255,255,255,.08); padding-top:26px; }
@@ -282,35 +378,52 @@ p.lead{ color:var(--muted); margin:0; font-size:16px; max-width:660px; line-heig
 .card{ margin:0; }
 .frame{ overflow:hidden; border-radius:13px; box-shadow:0 16px 46px rgba(0,0,0,.5); background:#05060c; }
 figcaption{ margin-top:11px; font-size:13px; color:var(--muted); text-align:center; }
-/* Cover-Basis */
+/* Cover-Basis – Farben kommen aus den --cv-*-Variablen der Welt-Klasse */
 .cover{ position:relative; overflow:hidden; transform-origin:top left; font-family:'Inter',system-ui,sans-serif;
-  background:
-    radial-gradient(60% 40% at 78% 30%, rgba(52,196,196,.35), transparent 60%),
-    radial-gradient(70% 50% at 20% 10%, rgba(40,90,150,.35), transparent 60%),
-    linear-gradient(160deg,#071026 0%,#0b2138 45%,#0a1730 100%); }
+  background:var(--cv-bg); }
 .cover .content{ position:absolute; inset:0; display:flex; flex-direction:column; }
-.cover .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:40px; }
-.cover .logo{ flex:0 0 auto; background:var(--logo) center/contain no-repeat; filter:drop-shadow(0 4px 26px rgba(52,196,196,.30)); }
-.cover .tag{ text-align:right; padding-top:8px; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
-  background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.cover .top{ display:flex; align-items:center; justify-content:space-between; gap:40px; }
+.cover .brand{ display:flex; align-items:center; }
+.cover .logo{ flex:0 0 auto; background:var(--cv-logo) center/contain no-repeat; filter:drop-shadow(0 4px 26px rgba(var(--cv-glow),.30)); }
+.cover .wm{ display:flex; flex-direction:column; line-height:1; }
+.cover .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:400; letter-spacing:.05em; text-transform:uppercase; color:var(--cv-wm-main); white-space:nowrap; }
+.cover .wm1 em{ font-style:normal; background:var(--cv-accent); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.cover .wm2{ display:flex; align-items:center; font-family:'Fraunces',Georgia,serif; font-weight:400; letter-spacing:.2em; text-transform:uppercase; color:var(--cv-wm-sub); white-space:nowrap; }
+.cover .wm2 i{ display:block; height:1px; background:var(--cv-tick); }
+.cover .tag{ display:flex; flex-direction:column; align-items:flex-end; text-align:right; }
+.cover .tag .series{ font-weight:800; letter-spacing:.11em; text-transform:uppercase; line-height:1.26;
+  background:var(--cv-accent); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.cover .tag .no{ display:flex; align-items:center; font-weight:700; letter-spacing:.06em; color:var(--cv-wm-sub); }
+.cover .tag .no i{ display:block; height:2px; border-radius:2px; background:var(--cv-accent); }
 .cover .spacer{ flex:1 1 auto; }
 .cover .headline{ font-family:'Fraunces',Georgia,serif; font-weight:600; line-height:1.04; letter-spacing:-1px;
-  color:#f4f7ff; filter:drop-shadow(0 6px 34px rgba(0,0,0,.6)); }
+  color:var(--cv-ink); filter:drop-shadow(0 6px 34px rgba(0,0,0,.35)); }
 .cover .headline .accent{ font-style:italic; font-weight:500; padding-right:.14em; margin-right:-.06em;
-  background:${GRAD}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
-.cover .handle{ font-weight:600; letter-spacing:.04em; color:#a7bad2; text-shadow:0 2px 14px rgba(0,0,0,.7); }
+  background:var(--cv-accent); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
+.cover .handle{ font-weight:600; letter-spacing:.04em; color:var(--cv-handle); }
+${worldCss}
 ${fmtCss}
 </style></head>
-<body>
+<body class="w-dunkel">
   <header>
     <div class="eyebrow">Werde Meister deiner Gedanken</div>
     <h1>Cover-Studio</h1>
     <p class="lead">${COLLECTIONS.reduce((s, c) => s + c.items.length, 0)} Motive über ${COLLECTIONS.length} Bereiche,
-      jeweils in 5 Formaten. Unten alle Motive in 9:16; ganz unten ein Motiv im Formatvergleich.
-      Hintergrund hier als Verlaufs-Platzhalter – im Repo legst du je Ordner deine eigene <code>vorlage.png</code> ab.</p>
+      jeweils in 5 Formaten und 4 Farbwelten. Oben links das Marken-Lockup (Gehirn + Wortmarke),
+      oben rechts das Reihen-Label. Hintergrund hier als Verlaufs-Platzhalter – im Repo legst du je
+      Ordner deine eigene <code>vorlage.png</code> ab.</p>
   </header>
+  <div class="switch">${buttons}</div>
+${hero}
 ${sections}
 ${demo}
+  <script>
+    const btns = document.querySelectorAll('.switch button');
+    btns.forEach((b) => b.addEventListener('click', () => {
+      document.body.className = 'w-' + b.dataset.w;
+      btns.forEach((x) => x.classList.toggle('on', x === b));
+    }));
+  </script>
 </body></html>
 `;
   writeFileSync(outSelf, html);

@@ -1,0 +1,33 @@
+# LinkedIn – Woche 26 · Block C · Mentale Selbstverteidigung – Bildmacht
+
+> Kanal-Planer: linkedin. Frequenz-Stufe: **fokussiert (3 Posts)**. Quelle:
+> `docs/marketing/redaktionsplan/themen-backlog.md`, Block C, Zeile
+> „Bildmacht" (Zeile 100). Reel-Serie `selbstverteidigung` in
+> `src/lib/reels.ts`, Zeile 44: „Bildmacht", Hook „Ein Bild ist kein Beweis",
+> `filmed: false`. Diese Woche schließt die Reihe „Mentale
+> Selbstverteidigung" (16 Themen, Woche 11–26) ab. Alle Slugs/Pfade gegen
+> `src/lib/blog.ts` (Zeile 1676), `src/lib/deep-dives.ts` (Zeile 1597),
+> `docs/carousels/marketing-serien.mjs` geprüft (`rg`/`ls`, s. Prüfvermerke
+> unten).
+>
+> Bild-Assets: **Creme-Variante als Standard** (`-hell.png`), s.
+> `docs/marketing/zitate/4x5/` bzw. `docs/marketing/zitate/studien-4x5/`.
+
+## Woche
+
+| Tag | Uhrzeit | Format | Inhalt / Hook | Quelle | CTA |
+|---|---|---|---|---|---|
+| Di | 07:30 | 📝 Beitrag | **Hook (1. Zeile):** „Ein Screenshot in der Kundenpräsentation wirkt wie ein Beweis – ist aber nur ein Ausschnitt, den jemand gewählt hat." Text überträgt den Blog-Kern (ein Bild zeigt immer nur einen Ausschnitt, behauptet aber, die ganze Wirklichkeit zu sein; ein Bild beweist, dass etwas fotografiert wurde – nicht, was es bedeutet) auf Arbeitskontexte: ein einzelner positiver Kunden-Screenshot in der internen Präsentation wirkt wie ein repräsentativer Beleg, obwohl er nur ein Einzelfall ist; ein Dashboard-Ausschnitt zu einem bestimmten Zeitpunkt kann eine Entwicklung dramatischer oder harmloser aussehen lassen, je nachdem, welcher Zeitraum gewählt wurde; ein Foto vom Messestand oder Teamevent wird als Beleg für „gute Stimmung im Team" verwendet, ohne dass irgendjemand fragt, was außerhalb des Bildrands passierte. Kern: Nicht die Kamera lügt, sondern der Rahmen entscheidet – derselbe Moment wirkt völlig anders, je nachdem, was der Ausschnitt zeigt und was er verschweigt. Schluss: die Frage aus dem Artikel, auf den Job zugespitzt – „Was liegt außerhalb dieses Ausschnitts – und warum sehe ich es nicht?" | Blog `/blog/bildmacht-ein-bild-ist-kein-beweis` (verifiziert in `src/lib/blog.ts`, Zeile 1676–1739: Zitat „Ein Bild beweist, dass etwas fotografiert wurde – nicht, was es bedeutet" Zeile 1710–1711, Abschnitt „Der Rahmen ist die halbe Botschaft" Zeile 1702–1707, Übungsliste Zeile 1726–1732) | Kommentar-Frage: „Welcher Screenshot oder welches Foto hat in deinem Job zuletzt mehr überzeugt, als der Sachverhalt eigentlich hergab?" (Soft-Engagement, kein harter Link) |
+| Mi | 08:00 | 🖼️ Carousel | Document-Post „Wer denkt hier eigentlich?" – sachlicher Ton, Fokus auf das Step-Slide „Werbung & Medien": „Hunderte Botschaften täglich formen Werte, Kaufentscheidungen und Selbstbild. Emotionale Ansprache und künstlich erzeugter Mangel lenken deine Gedanken in gewünschte Bahnen." Im Begleittext bewusst auf die Bildebene zugespitzt: Der wirksamste Teil „emotionaler Ansprache" ist fast immer das Bild, nicht der Text – ein starkes Motiv in einer Case-Study oder einem Pitch-Deck wirkt, bevor die Zahlen überhaupt gelesen wurden. ⚠ Hinweis: Keine der 5 evergreenen Carousel-Serien führt ein eigenes Slide zu Bildmacht/Bildsprache; das Step-Slide „Werbung & Medien" (bereits Hauptbeleg in Woche 15, dort zu künstlichem Mangel) ist die nächstpassende reale Slide, da Bilder das zentrale Werkzeug „emotionaler Ansprache" in Werbung und Medien sind – hier mit anderem Fokus (Bild statt Preis-/Zeitdruck) erneut herangezogen. | Carousel-Serie `wer-denkt-hier` in `docs/carousels/marketing-serien.mjs`, Zeilen 91–114 (Step-Slide „Werbung & Medien" Zeile 97–98) | „Speichern für die nächste Präsentation, in der ein Bild mehr überzeugt als die Zahlen dahinter." → kein Link, reines Save/Share |
+| Do | 07:45 | 🎯 Pitch | **Hook:** „Bilder lesen zu lernen heißt nicht, nichts mehr zu glauben – sondern die Frage wieder zuzulassen, bevor das Gefühl entscheidet." Kurzer Text stellt Bildmacht als sechzehnten und letzten Baustein der Reihe „Mentale Selbstverteidigung" vor und fasst den gesamten Themenblock (Framing, Filterblase, Wiederholung, Reizüberflutung, Werbung, Gruppendruck, Autorität, Propaganda, kognitive Dissonanz, Identität, Sprache, Medien-Agenda, Angst, Ablenkung, Normalisierung, Bildmacht) kompakt zusammen, mit Verweis auf die konkrete Übung aus der Vertiefung („Über den Rand hinausdenken": bei einem wirkmächtigen Bild fragen, was außerhalb des Ausschnitts liegen könnte). Einstieg über das kostenlose E-Book, vollständige Vertiefung samt PDF im Mitgliederbereich. | Deep-Dive `bildmacht` (verifiziert in `src/lib/deep-dives.ts`, Zeile 1597–1652: Abschnitt „Der Ausschnitt ist die Botschaft" Zeile 1609, Übung „Über den Rand hinausdenken" Zeile 1623–1630) · Route `/mitglieder/wissen/bildmacht` (`src/app/mitglieder/wissen/[slug]/page.tsx`) + PDF `content/pdf/vertiefung-bildmacht.pdf` (verifiziert per `ls content/pdf/`) | Soft-CTA: „Kostenloses E-Book sichern" → `/#ebook`; für bereits Registrierte: „Vertiefung „Bilder statt Argumente" direkt in der Mitgliedschaft" → `/mitglieder` |
+
+## Hinweise zur Umsetzung
+
+- **Rhythmus eingehalten:** Textbeitrag früh in der Pendelzeit (Di 07:30), Carousel Mitte der Woche (Mi 08:00), Pitch zum Wochenausklang (Do 07:45) – identischer Rhythmus wie in Woche 11–25.
+- **Kein Freitag/Wochenende belegt** – bei „fokussiert" bleiben drei Slots Di–Do.
+- **Carousel-Auswahl mit Abweichung:** Bildmacht hat unter den 5 evergreenen Serien kein eigenes Slide. Das Step-Slide „Werbung & Medien" aus `wer-denkt-hier` (bereits Hauptbeleg in Woche 15, dort zu künstlichem Mangel) ist die nächstpassende reale Slide, da Bilder das zentrale Werkzeug emotionaler Werbeansprache sind – klar als Zweitverwendung mit anderem Fokus (⚠) markiert.
+- **Berufsbezug durchgängig:** Pitch-Decks, Case-Studies, Dashboards, Teamfotos – dieselbe Kernthese wie in den anderen Kanälen (Bildmacht: „Ein Bild beweist, dass etwas fotografiert wurde – nicht, was es bedeutet"), aus Arbeitsperspektive übersetzt.
+- **Kein Video-Slot:** Die Reel-Serie „selbstverteidigung" (`src/lib/reels.ts`, Zeile 44, Eintrag „Bildmacht") ist zum Planungszeitpunkt mit `filmed: false` markiert – kein natives YouTube-Teilen möglich.
+- **Ton:** sachlich, wertig, These zuerst – kein Boulevard-Stil. Bewusst überparteilich (Bildmacht wird als allgemeiner Wahrnehmungsmechanismus erklärt, nicht an einem konkreten Nachrichtenbild aufgehängt).
+- **Serienabschluss:** Mit Woche 26 endet der 16-teilige Themenblock „Mentale Selbstverteidigung" (Woche 11–26). Der Do-Pitch fasst die gesamte Reihe zusammen und leitet in Richtung E-Book/Mitgliedschaft über, analog zum Abschluss-Pitch aus Woche 18.
+- Es wurden keine neuen Slugs/Assets erfunden; alle Quellenangaben sind mit Datei/Zeile oder Verzeichnis-Listing belegt.

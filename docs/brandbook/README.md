@@ -23,6 +23,7 @@ an einem Ort fest.
 | 06 | [Bildwelt & Grafik](./06-bildwelt.md) | Realistisch-cinematisch, Verläufe, Glow, Bildsprache |
 | 07 | [Anwendungen](./07-anwendungen.md) | Social Media, Vorlagen, Asset-Formate, Generatoren |
 | 08 | [Struktur & Quellen der Wahrheit](./08-struktur.md) | Wo im Repo welche Markenelemente definiert sind |
+| 09 | [Marken-Übersicht](./09-marken-uebersicht.md) | Admin-Seite: Farbsystem, alle Logos & Vorlagen-Bestand mit Lücken-Check |
 
 ---
 

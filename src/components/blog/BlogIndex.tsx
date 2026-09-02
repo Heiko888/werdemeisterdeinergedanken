@@ -9,7 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { BlogCover } from "@/components/blog/BlogCover";
 import { accentFor, type AccentKey } from "@/lib/blog-accent";
-import brainLogo from "../../../public/logo-brain.png";
+import brainLogo from "../../../public/logo-brain-gold-freigestellt.png";
 
 /** Schlanke Artikel-Form (ohne `content`) – reicht für die Übersicht. */
 export type BlogCard = {
@@ -182,7 +182,7 @@ function FeaturedCard({ post }: { post: BlogCard }) {
               className="absolute -inset-4 rounded-3xl opacity-60 blur-2xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 30%, transparent), transparent 68%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 28%, transparent), transparent 68%)",
               }}
             />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl ring-1 ring-white/10">
@@ -210,7 +210,7 @@ function FeaturedCard({ post }: { post: BlogCard }) {
                 src={brainLogo}
                 alt=""
                 aria-hidden
-                className="logo-gold relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
+                className="relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
               />
             </div>
           </div>

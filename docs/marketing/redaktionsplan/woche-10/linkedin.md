@@ -1,0 +1,32 @@
+# LinkedIn – Woche 10 · Block B · Der Placebo-Effekt / Erwartung
+
+> Kanal-Planer: linkedin. Frequenz-Stufe: **fokussiert (3 Posts)**. Quelle:
+> `docs/marketing/redaktionsplan/themen-backlog.md`, Block B, Zeile „Der
+> Placebo-Effekt / Erwartung" (Zeile 76). Block B ist themenbasiert (s. Woche 8).
+>
+> Alle Slugs/Pfade gegen `src/lib/blog.ts` (Zeile 1251), `src/lib/deep-dives.ts`
+> (Zeile 718), `docs/carousels/marketing-serien.mjs` und
+> `docs/marketing/content-data.mjs` geprüft (`rg`/`ls`, s. Prüfvermerke unten).
+>
+> Bild-Assets: **Creme-Variante als Standard** (`-hell.png`), s.
+> `docs/marketing/zitate/studien-4x5/`.
+
+## Woche
+
+| Tag | Uhrzeit | Format | Inhalt / Hook | Quelle | CTA |
+|---|---|---|---|---|---|
+| Di | 07:30 | 📝 Beitrag | **Hook (1. Zeile):** „Bevor ein Projekt richtig beginnt, entscheidet oft schon eine einzige Erwartung mit über den Ausgang: die deines Teams." Text überträgt den Placebo-Effekt (Erwartung setzt reale körpereigene Endorphine frei, Forschung u. a. von Fabrizio Benedetti) in einen Führungskontext: Wie eine Führungskraft eine schwierige Aufgabe framt („das wird hart, aber machbar" vs. „das schaffen wir sowieso nicht") wirkt nachweislich auf Stresslevel und Energie eines Teams – nicht als esoterisches „positives Denken", sondern als real messbarer physiologischer Mechanismus. Bewusst wird die im Artikel selbst gezogene ehrliche Grenze mitgenommen: Erwartung ersetzt keine Ressourcen, keine realistischen Deadlines und keine echte Problemlösung – wer das überdehnt, betreibt Toxic Positivity statt Führung. | Blog `/blog/der-placebo-effekt-wie-erwartung-wirkt` (verifiziert in `src/lib/blog.ts`, Zeile 1251–1297: Abschnitt „Erwartung wird zu Biologie" Zeile 1269–1275, Abschnitt „Die ehrliche Grenze" Zeile 1281–1287) | Kommentar-Frage: „Wo hast du in deinem Job schon erlebt, dass eine offen ausgesprochene Erwartung das Ergebnis mitgeformt hat – im Guten wie im Schlechten?" (Soft-Engagement, kein harter Link) |
+| Mi | 08:15 | 🖼️ Carousel | Document-Post „Studien-Fakten: Was die Forschung über dein Denken weiß" – sachlicher Ton, Fokus auf das Remedy-Slide „So liest du Studien richtig" (deckt sich mit dem „Die ehrliche Grenze"-Abschnitt aus dem Dienstags-Beitrag). Im Begleittext auf den professionellen Umgang mit „Studien belegen …"-Aussagen in Pitches und Reports zugespitzt, mit dem Placebo-Effekt als konkretem Beispiel: real und belegt, aber leicht überdehnbar, wenn man ihn als Ersatz für echte Lösungen verkauft. | Carousel-Serie `studien-fakten` in `docs/carousels/marketing-serien.mjs`, Zeilen 117–145 (Remedy-Slide Zeile 140–142 – kein eigenes Fakt-Step-Slide zum Placebo-Effekt im Skript vorhanden, dort sind nur 5 Fakten 01–05 fest kodiert). Ergänzend als Sharepic: `docs/marketing/zitate/studien-4x5/WMDG-Studienfakt-12-hell.png` (Text „Der Placebo-Effekt ist real: Erwartung setzt körpereigene Endorphine frei", `docs/marketing/content-data.mjs`, `FACTS`-Eintrag `key: "12"`, Zeile 53) – analog zu Woche 5, wo Sharepic-Nummer und Carousel-Step-Nummer ebenfalls nicht deckungsgleich waren | „Speichern für die nächste 'Studien belegen …'-Folie in einem Pitch-Deck." → kein Link, reines Save/Share |
+| Do | 07:45 | 🎯 Pitch | **Hook:** „Was dein Kopf glaubt, spürt dein Körper mit – auch am Schreibtisch." Kurzer Text zieht die Brücke vom Placebo-Effekt zum Deep-Dive „Muster, Körper & Gesundheit": Anhaltender Druck und Selbstzweifel im Job hinterlassen dieselbe Art körperlicher Spuren wie jede andere chronische Erwartungshaltung – verspannter Nacken und Kiefer, flacher Schlaf, ein Nervensystem im Daueralarm. Vorgestellt wird der „Körper-Stress-Check" aus dem Deep-Dive als Zwei-Minuten-Selbstcheck zwischen zwei Meetings. Mit ausdrücklichem Hinweis (wie im Blog): kein Ersatz für ärztliche Behandlung, sondern ein früher Hinweisgeber. | Deep-Dive `muster-und-koerper` (verifiziert in `src/lib/deep-dives.ts`, Zeile 718–777, `relatedStage: 4`; Übung „Der Körper-Stress-Check" Zeile 746–756) · Vertiefungs-PDF `content/pdf/vertiefung-muster-und-koerper.pdf` (per `ls content/pdf/` verifiziert) · Wissens-Seite `/mitglieder/wissen/muster-und-koerper` (Route `src/app/mitglieder/wissen/[slug]/page.tsx`, per `getDeepDive(slug)` verifiziert) | Soft-CTA: „Kostenloses E-Book sichern" → `/#ebook`; für bereits Registrierte: „Vollständige Vertiefung + Übungen in der Mitgliedschaft" → `/mitglieder` |
+
+## Hinweise zur Umsetzung
+
+- **Rhythmus eingehalten:** Textbeitrag früh (Di 07:30), Carousel Mitte der Woche (Mi 08:15), Pitch zum Wochenausklang (Do 07:45).
+- **Kein Freitag/Wochenende belegt** – drei Slots Di–Do für „fokussiert".
+- **Deep-Dive wie vorgegeben:** `muster-und-koerper` ist im Themen-Backlog für Woche 10 explizit genannt (Zeile 76) und passt inhaltlich direkt an den Placebo-Artikel an (beide behandeln, wie Erwartung/Denken auf reale Körperprozesse wirkt).
+- **Keine dedizierte Praxis diese Woche:** Das Backlog nennt für Woche 10 nur Blog + Deep-Dive + Studien-Zitate, keine Praxis-Übung. Der Pitch-Post stützt sich deshalb allein auf den Deep-Dive samt seiner eingebauten Übung „Der Körper-Stress-Check" statt eine zusätzliche, im Backlog nicht vorgesehene Praxis zu erfinden.
+- **Carousel-Slide-Lücke dokumentiert:** Der Placebo-Effekt (`FACTS`-Eintrag `key: "12"` in `docs/marketing/content-data.mjs`) hat zwar ein eigenes Sharepic im Ordner `docs/marketing/zitate/studien-4x5/`, ist aber **kein** eigenständiges Step-Slide im Carousel-Skript `docs/carousels/marketing-serien.mjs` (dort sind in der Serie `studien-fakten` nur 5 Fakten – 01 Neuroplastizität, 02 Benennen, 03 Autopilot, 04 Denkfehler, 05 Willenskraft – fest kodiert). Deshalb wird das inhaltlich passende Remedy-Slide „So liest du Studien richtig" als Carousel-Kern genutzt und das Placebo-Sharepic ergänzend beigestellt, statt fälschlich ein nicht existierendes Carousel-Slide zu behaupten.
+- **Kein Video-Slot:** Für Woche 10 liegt kein `docs/marketing/redaktionsplan/woche-10/youtube.md` mit veröffentlichter URL vor.
+- **Berufsbezug durchgängig:** Projekt-Framing durch Führungskräfte, Umgang mit Studien in Pitches, körperliche Stresssignale am Schreibtisch – dieselbe Kernthese wie in den anderen Kanälen (Placebo-Effekt / Erwartung), aus Arbeitsperspektive übersetzt.
+- **Ton:** sachlich, wertig, These zuerst, inklusive der im Blog selbst gezogenen ehrlichen Grenze (kein Ersatz für Medizin/Führungsarbeit) – kein Boulevard-Stil, keine Toxic-Positivity-Rhetorik.
+- Es wurden keine neuen Slugs/Assets erfunden; alle Quellenangaben sind mit Datei/Zeile oder Verzeichnis-Listing belegt.

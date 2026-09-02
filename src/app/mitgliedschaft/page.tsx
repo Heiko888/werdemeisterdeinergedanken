@@ -3,13 +3,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { CheckoutButton } from "@/components/membership/CheckoutButton";
 import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { stages, testimonials, faqs } from "@/lib/content";
 import { practices } from "@/lib/practices";
 import { deepDives } from "@/lib/deep-dives";
-import brainLogo from "../../../public/logo-brain.png";
+import heroBild from "../../../public/mitgliedschaft-hero.webp";
 
 export const metadata: Metadata = {
   title: "Mitgliedschaft",
@@ -121,55 +122,77 @@ export default async function MitgliedschaftPage({
         </div>
       )}
       {/* Hero */}
-      <DarkSection className="!py-0">
-        <div className="grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-[1.15fr_.85fr]">
-          <div>
+      <section className="on-dark relative flex flex-col overflow-hidden bg-navy-900 text-cream lg:min-h-[42vw] lg:justify-center">
+        {/* Der Aufstieg vom Autopilot zur Meisterschaft.
+            Bis lg als eigenes Band im Fluss – im hohen, schmalen Hero würde
+            object-cover sonst links und rechts fast alle Figuren wegschneiden.
+            Ab lg liegt das Bild wie bisher als Hintergrund hinter dem Text. */}
+        <div className="relative aspect-[2400/1340] w-full shrink-0 lg:absolute lg:inset-0 lg:z-0 lg:aspect-auto">
+          <Image
+            src={heroBild}
+            alt=""
+            aria-hidden
+            fill
+            priority
+            sizes="100vw"
+            className="pointer-events-none object-cover object-center lg:object-[center_16%]"
+          />
+          {/* Unterkante ins Navy blenden, damit Bildband und Textblock mobil
+              ineinander übergehen statt hart abzusetzen */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-900 to-transparent lg:hidden"
+          />
+        </div>
+        {/* Goldener Hero-Glow – identisch zur Startseite */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0"
+          style={{ background: NAVY_GLOW }}
+        />
+        {/* Navy-Schleier für Lesbarkeit des Textes über dem Bild – erst ab lg,
+            darunter steht der Text ohnehin auf reinem Navy unter dem Bild */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0 hidden lg:block"
+          style={{
+            background: `linear-gradient(to bottom, color-mix(in oklab, var(--color-navy-900) 55%, transparent), transparent 30%, color-mix(in oklab, var(--color-navy-900) 45%, transparent)), linear-gradient(to right, color-mix(in oklab, var(--color-navy-900) 97%, transparent), color-mix(in oklab, var(--color-navy-900) 82%, transparent) 42%, color-mix(in oklab, var(--color-navy-900) 50%, transparent) 74%, color-mix(in oklab, var(--color-navy-900) 28%, transparent))`,
+          }}
+        />
+        <Container className="relative z-10">
+          <div className="max-w-xl pb-16 pt-10 [text-shadow:0_1px_18px_rgba(8,16,42,0.6)] sm:pb-20 sm:pt-12 lg:py-28">
             <Eyebrow>Der Mitgliederbereich</Eyebrow>
             <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
               Vom Autopilot zur <em className="accent">Meisterschaft</em>
             </h1>
-            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/75">
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/90">
               Ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System,
               das mit dir wächst. Raus aus alten Mustern, rein in echte innere Klarheit.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap">
               <CheckoutButton size="lg" className="w-full sm:w-auto">
                 Mitglied werden
               </CheckoutButton>
-              <Link
+              <Button
                 href="/bewusstseinstest"
-                className="inline-flex min-h-[3.25rem] w-full items-center justify-center gap-2 rounded-full border border-cream/30 px-7 py-3 text-center text-base font-medium leading-tight text-cream transition-colors hover:border-cream/60 hover:bg-cream/5 sm:w-auto"
+                variant="secondary"
+                size="lg"
+                className="w-full sm:w-auto"
               >
                 Kostenlosen Bewusstseinstest machen
-              </Link>
+              </Button>
             </div>
-            <p className="mt-4 text-sm text-cream/60">
+            <p className="mt-4 text-sm text-cream/80">
               Ab {PRICE} {PRICE_PER} · oder {PLANS.jahr.price} {PLANS.jahr.per}{" "}
-              <span className="text-cream/45">(2 Monate gratis)</span> · jederzeit kündbar
+              <span className="text-cream/60">(2 Monate gratis)</span> · jederzeit kündbar
             </p>
-            <p className="mt-6 flex items-center gap-2 text-sm text-cream/55">
+            <p className="mt-6 flex items-center gap-2 text-sm text-cream/75">
               <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
               Bodenständig, ehrlich, ohne esoterisches Blabla. In deinem Tempo.
             </p>
           </div>
-          <div className="relative mx-auto">
-            <div
-              aria-hidden
-              className="absolute inset-[-8%] -z-10 rounded-full"
-              style={{
-                background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 22%, transparent), transparent 62%)",
-              }}
-            />
-            <Image
-              src={brainLogo}
-              alt="Werde Meister deiner Gedanken – Logo"
-              priority
-              className="logo-gold mx-auto w-[min(400px,78vw)] drop-shadow-[0_10px_60px_rgba(217,169,58,0.35)]"
-            />
-          </div>
-        </div>
-      </DarkSection>
+        </Container>
+      </section>
 
       {/* Problem */}
       <section className="bg-paper-aura grain-soft relative py-14 sm:py-28">
@@ -405,13 +428,10 @@ export default async function MitgliedschaftPage({
               Kein Druck, keine Deadlines. Du beginnst, wo du stehst, und gehst in
               deinem Tempo – begleitet, Schritt für Schritt.
             </p>
-            <Link
-              href="#faq"
-              className="mt-6 inline-flex items-center gap-2 rounded-full border border-cream/25 px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:border-cream/50"
-            >
+            <Button href="#faq" variant="secondary" size="md" className="mt-6">
               Häufige Fragen ansehen
               <ArrowRight />
-            </Link>
+            </Button>
             <p className="mt-5 text-sm text-cream/55">
               Noch unsicher? Starte kostenlos mit dem{" "}
               <Link href="/bewusstseinstest" className="text-gradient-leaf font-medium">

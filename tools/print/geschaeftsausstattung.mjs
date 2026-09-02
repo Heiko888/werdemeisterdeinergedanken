@@ -31,7 +31,7 @@ const OUT = join(HERE, "out");
 const fontsCss = readFileSync(join(ROOT, "tools/pdf/assets/fonts.css"), "utf8");
 // Goldenes Gehirn-Emblem als data-URI (wie im Website-Header; erzeugt von
 // tools/print/gold-emblem.mjs). PDF bleibt eigenständig.
-const brainB64 = readFileSync(join(ROOT, "public/logo-brain-gold.png")).toString("base64");
+const brainB64 = readFileSync(join(ROOT, "public/logo-brain-gold-freigestellt.png")).toString("base64");
 const BRAIN = `data:image/png;base64,${brainB64}`;
 
 // Kontakt-, Marken- & Farbdaten (Single Source of Truth für tools/print/*).

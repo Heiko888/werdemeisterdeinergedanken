@@ -15,8 +15,15 @@ export const site = {
   email: "info@werdemeisterdeinergedanken.de", // offizielle Kontaktadresse
   // Persönliche Videobotschaft – datenschutzfreundlich über youtube-nocookie
   // eingebettet (siehe CSP frame-src in next.config.ts).
+  // Hier die echte YouTube-ID des «Ein anderer Blickwinkel»-Videos eintragen
+  // (der Teil hinter youtu.be/… bzw. hinter v=). Solange sie null ist, läuft
+  // das globale Platzhalter-Video (placeholderVideoId) – dann aber mit dem
+  // gebrandeten Marken-Thumbnail (public/video-thumbnails/landing/…, erzeugt
+  // von docs/marketing/video-thumbnails.mjs) statt dessen unpassendem YouTube-
+  // Vorschaubild. Sobald hier eine echte ID steht, greift automatisch deren
+  // eigenes Thumbnail (siehe MaybeNotYou-Sektion).
   videoMessage: {
-    youtubeId: "gOvtKBnqGvk",
+    youtubeId: null as string | null,
     title: "Videobotschaft: Ein anderer Blickwinkel",
   },
   // Platzhalter-Video, das vorerst überall dort erscheint, wo noch kein
