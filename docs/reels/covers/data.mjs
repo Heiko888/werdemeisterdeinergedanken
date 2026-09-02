@@ -30,11 +30,9 @@ export const THEME_LABEL = {
 export function palette(theme) {
   const hell = theme === "hell" || theme === "tuerkis-hell";
   const teal = theme === "tuerkis" || theme === "tuerkis-hell";
-  const brain = teal ? "logo.png" : "logo-gold.png"; // Seiten-Gehirn bunt / Gold-Front
-  // Das Gold-Front-Gehirn (640×640, dichteres Motiv) wirkt bei gleicher Breite
-  // klobiger als das Türkis-Seitengehirn (640×588). Etwas verkleinern, damit
-  // das Lockup wie im Website-Header ausbalanciert ist.
-  const logoScale = teal ? 1 : 0.55;
+  const brain = teal ? "logo.png" : "logo-gold.png"; // Seiten-Gehirn: Türkis bunt / Gold
+  // Beide Embleme sind dieselbe Seitenansicht (nur Farbe), daher gleiche Größe.
+  const logoScale = 1;
   const accent = teal
     ? (hell ? "linear-gradient(120deg,#8cc63f 0%,#0f766e 100%)" : "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)")
     : (hell ? "linear-gradient(120deg,#d9a93a 0%,#7e6410 100%)" : "linear-gradient(120deg,#f2d489 0%,#d9a93a 100%)");

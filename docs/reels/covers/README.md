@@ -10,8 +10,8 @@ Jedes Cover gibt es in allen vier Marken-Welten (Datei-Suffix = Welt):
 
 | Welt | Suffix | Grund | Akzent | Gehirn |
 |---|---|---|---|---|
-| Gold · Dunkel | *(kein)* | Navy | Gold | Gold-Front (`logo-gold.png`) |
-| Gold · Creme | `-hell` | Creme | Gold | Gold-Front (`logo-gold.png`) |
+| Gold · Dunkel | *(kein)* | Navy | Gold | Seiten-Gehirn gold (`logo-gold.png`) |
+| Gold · Creme | `-hell` | Creme | Gold | Seiten-Gehirn gold (`logo-gold.png`) |
 | Türkis · Navy | `-tuerkis` | Navy | Grün→Türkis | Seiten-Gehirn bunt (`logo.png`) |
 | Türkis · Creme | `-tuerkis-hell` | Creme | Grün→Türkis | Seiten-Gehirn bunt (`logo.png`) |
 
@@ -22,7 +22,7 @@ covers/
   data.mjs            ← Motive, Formate, Farbwelten-Palette
   _fonts.css          ← eingebettete Marken-Schriften (geteilt)
   logo.png            ← Seiten-Gehirn bunt (Türkis-Welten)
-  logo-gold.png       ← Gold-Front-Gehirn (Gold-Welten)
+  logo-gold.png       ← Gold-Seitengehirn (Gold-Welten)
   index.html          ← Übersicht aller Bereiche  ➜ hier starten
   <bereich>/
     index.html        ← Format-Auswahl des Bereichs
