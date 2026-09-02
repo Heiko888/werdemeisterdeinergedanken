@@ -25,12 +25,12 @@ const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/whatsapp-mitgliedschaft");
 
-// Drei Farbwelten. Türkis erhält das Suffix -tuerkis (parallel zu -hell).
-const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis" };
+// Vier Farbwelten (Grund × Akzent). Suffixe parallel zu -hell.
+const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-hell": "-tuerkis-hell" };
 const THEMES = (process.env.THEME
   ? [process.env.THEME]
-  : ["dunkel", "hell", "tuerkis"]).filter((t) => t in THEME_SUFFIX);
-const brainFor = (theme) => (theme === "tuerkis" ? brainTeal : brain);
+  : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]).filter((t) => t in THEME_SUFFIX);
+const brainFor = (theme) => (theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain);
 
 // Zwei Formate: 4:5 fürs Teilen im Chat/Broadcast (kein Crop), 9:16 für den
 // WhatsApp-Status. padTop/padBottom halten Kopf- und Fußzeile aus den
@@ -121,26 +121,31 @@ const SLIDES = [
 // theme: "dunkel" (Gold) · "hell" (Creme) · "tuerkis" (Teal auf Navy).
 // Gefüllte Chips (Nummern, Badge, CTA-Button) sind je Theme gold bzw. teal.
 const cssFor = (F, theme) => {
-  const hell = theme === "hell";
-  const teal = theme === "tuerkis";
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
   const glowRGB = teal ? "52,196,196" : "233,193,95";
-  const eyebrowCol = hell ? "#7e6410" : teal ? "#5fd6d2" : "#f2d489";
-  const pagenoCol = hell ? "#7e6410" : teal ? "#5fd6d2" : "rgba(242,212,137,.9)";
-  const accentGrad = hell
-    ? "linear-gradient(100deg,#d9a93a,#7e6410)"
-    : teal ? "linear-gradient(100deg,#a3d64f,#21b2bd)" : "linear-gradient(100deg,#f2d489,#d9a93a)";
+  const eyebrowCol = teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489");
+  const pagenoCol = teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "rgba(242,212,137,.9)");
+  const accentGrad = teal
+    ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
+    : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)");
   const chipGrad = teal ? "linear-gradient(120deg,#5fd6d2,#199aa8)" : "linear-gradient(120deg,#f2d489,#d9a93a)";
-  const ctaBorder = hell
-    ? "linear-gradient(120deg,#d9a93a,#7e6410)"
-    : teal ? "linear-gradient(120deg,#a3d64f,#21b2bd)" : "linear-gradient(120deg,#f2d489,#d9a93a)";
-  const fcheckBg = hell ? "rgba(217,169,58,.16)" : teal ? "rgba(52,196,196,.16)" : "rgba(242,212,137,.16)";
-  const fcheckBorder = hell ? "rgba(126,100,16,.45)" : teal ? "rgba(95,214,210,.5)" : "rgba(242,212,137,.5)";
-  const bestBorder = hell ? "rgba(168,132,42,.6)" : teal ? "rgba(52,196,196,.5)" : "rgba(242,212,137,.55)";
-  const bestBg = hell ? "rgba(232,193,95,.16)" : teal ? "rgba(52,196,196,.10)" : "rgba(242,212,137,.08)";
-  const bgLayers = hell ? `
+  const ctaBorder = teal
+    ? (hell ? "linear-gradient(120deg,#8cc63f,#0f766e)" : "linear-gradient(120deg,#a3d64f,#21b2bd)")
+    : (hell ? "linear-gradient(120deg,#d9a93a,#7e6410)" : "linear-gradient(120deg,#f2d489,#d9a93a)");
+  const fcheckBg = teal ? (hell ? "rgba(15,118,110,.14)" : "rgba(52,196,196,.16)") : (hell ? "rgba(217,169,58,.16)" : "rgba(242,212,137,.16)");
+  const fcheckBorder = teal ? (hell ? "rgba(15,118,110,.5)" : "rgba(95,214,210,.5)") : (hell ? "rgba(126,100,16,.45)" : "rgba(242,212,137,.5)");
+  const bestBorder = teal ? (hell ? "rgba(15,118,110,.55)" : "rgba(52,196,196,.5)") : (hell ? "rgba(168,132,42,.6)" : "rgba(242,212,137,.55)");
+  const bestBg = teal ? (hell ? "rgba(52,196,196,.12)" : "rgba(52,196,196,.10)") : (hell ? "rgba(232,193,95,.16)" : "rgba(242,212,137,.08)");
+  const bgLayers = hell
+    ? (teal ? `
+ radial-gradient(78% 62% at 50% -10%, rgba(52,196,196,.20), transparent 62%),
+ radial-gradient(58% 52% at 4% 108%, rgba(33,178,189,.12), transparent 60%),
+ radial-gradient(40% 60% at 82% 6%, rgba(140,198,63,.12), transparent 60%),#f6f4ee` : `
  radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
  radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),
- radial-gradient(40% 60% at 82% 6%, rgba(242,212,137,.14), transparent 60%),#f6f4ee` : teal ? `
+ radial-gradient(40% 60% at 82% 6%, rgba(242,212,137,.14), transparent 60%),#f6f4ee`)
+    : teal ? `
  radial-gradient(52% 70% at 20% 12%, rgba(52,196,196,.28), transparent 60%),
  radial-gradient(48% 72% at 92% 92%, rgba(33,178,189,.20), transparent 60%),
  radial-gradient(40% 60% at 78% 20%, rgba(140,198,63,.12), transparent 60%),#090b10` : `
@@ -213,7 +218,12 @@ em{background:${accentGrad};-webkit-background-clip:text;background-clip:text;co
 .foot .c{font-size:22px;font-weight:700;color:${hell ? "rgba(22,35,31,.6)" : "rgba(244,242,236,.6)"}}`;
 };
 
-const CHECK = (theme) => `<svg viewBox="0 0 24 24" fill="none" stroke="${theme === "hell" ? "#7e6410" : theme === "tuerkis" ? "#5fd6d2" : "#f2d489"}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`;
+const CHECK = (theme) => {
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
+  const stroke = teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489");
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="${stroke}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`;
+};
 
 const dots = (i, total) =>
   `<div class="dots">${Array.from({ length: total }, (_, k) => `<span class="dot ${k === i ? "on" : ""}"></span>`).join("")}</div>`;

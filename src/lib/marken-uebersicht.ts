@@ -73,21 +73,30 @@ export const farbWelten = {
     suffix: "Datei-Suffix „-hell“",
   },
   tuerkis: {
-    name: "Türkis · Teal",
+    name: "Türkis · Navy",
     grund: "#090b10",
     tinte: "#f4f2ec",
     akzent: "#5fd6d2",
     emblem: "Türkis-Gehirn",
     suffix: "Datei-Suffix „-tuerkis“",
   },
+  tuerkisHell: {
+    name: "Türkis · Creme",
+    grund: "#f6f4ee",
+    tinte: "#16231f",
+    akzent: "#0f766e",
+    emblem: "Türkis-Gehirn",
+    suffix: "Datei-Suffix „-tuerkis-hell“",
+  },
 } as const;
 
 /**
- * Status der Türkis-Welt: als dritte Variante in allen Marketing-Generatoren
- * angelegt (Gold-Gehirn → Türkis-Gehirn, Gold-Akzente → Grün→Teal). Die
- * Dateien entstehen beim nächsten Rendern. Optional nur Türkis rendern:
- *   THEME=tuerkis node docs/marketing/brand-assets.mjs
- *   THEME=tuerkis node tools/marketing/content-overlays.mjs   (usw.)
+ * Status der Türkis-Welt: als Akzent-Variante in allen Marketing-Generatoren
+ * angelegt (Gold-Gehirn → Türkis-Gehirn, Gold-Akzente → Grün→Teal) – in zwei
+ * Grundvarianten: „-tuerkis" (auf Navy) und „-tuerkis-hell" (auf Creme). Die
+ * Dateien entstehen beim nächsten Rendern. Optional nur eine Welt rendern:
+ *   THEME=tuerkis      node docs/marketing/brand-assets.mjs
+ *   THEME=tuerkis-hell node docs/marketing/brand-assets.mjs   (usw.)
  * danach: npm run vorlagen:galerie
  */
 export const tuerkisStatus = {

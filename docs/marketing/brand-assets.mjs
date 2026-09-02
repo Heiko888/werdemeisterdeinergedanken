@@ -53,49 +53,50 @@ const BG_TUERKIS = `
   radial-gradient(48% 110% at 6% 96%, rgba(33,178,189,.14), transparent 60%),
   radial-gradient(44% 92% at 74% 94%, rgba(140,198,63,.12), transparent 60%),
   #090b10;}`;
+// Creme-Grund mit Teal-Schimmer (für „tuerkis-hell": helle Fläche + Türkis-Emblem).
+const BG_HELL_TEAL = `
+.bg{position:absolute;inset:0;background:
+  radial-gradient(78% 62% at 50% -10%, rgba(52,196,196,.20), transparent 62%),
+  radial-gradient(60% 55% at 96% 4%, rgba(140,198,63,.12), transparent 60%),
+  radial-gradient(58% 52% at 4% 108%, rgba(33,178,189,.12), transparent 60%),
+  #f6f4ee;
+  box-shadow:inset 0 26px 44px -34px rgba(8,16,42,.22);}`;
 
 /**
- * Farb-Palette je Theme: "dunkel" (Gold, Standard), "hell" (Creme) und
- * "tuerkis" (Teal-Emblem + Grün→Teal-Akzente auf Navy). Nur die Akzent-,
- * Emblem- und Glow-Farben unterscheiden sich; Grund/Tinte teilt sich Türkis
- * mit „dunkel".
+ * Farb-Palette – zwei Achsen: Grund (hell=Creme / dunkel=Navy) × Akzent
+ * (teal=Türkis-Emblem+Grün→Teal / gold). Vier Themes:
+ *   dunkel (gold+navy, Standard), hell (gold+creme, -hell),
+ *   tuerkis (teal+navy, -tuerkis), tuerkis-hell (teal+creme, -tuerkis-hell).
  */
 function palette(theme) {
-  const hell = theme === "hell";
-  const teal = theme === "tuerkis";
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
   return {
     theme, hell, teal,
-    bg: hell ? BG_HELL : teal ? BG_TUERKIS : BG,
+    bg: teal ? (hell ? BG_HELL_TEAL : BG_TUERKIS) : (hell ? BG_HELL : BG),
     brainUrl: teal ? brainTealUrl : brainGoldUrl,
     // rgb-Tripel für radiale Glows/Auren (Gold vs. Teal)
     glow: teal ? "52,196,196" : "233,193,95",
-    // Akzent-Verlauf für Schlüsselwörter (<em>/<span>)
-    accentGrad: hell
-      ? "linear-gradient(100deg,#d9a93a,#7e6410)"
-      : teal
-        ? "linear-gradient(100deg,#a3d64f,#21b2bd)"
-        : "linear-gradient(100deg,#f2d489,#e8c15f)",
-    // Wortmarken-Verlauf im Fuß (dunkel: gold→gold; teal: grün→teal)
-    wmGrad: hell
-      ? "linear-gradient(100deg,#d9a93a,#7e6410)"
-      : teal
-        ? "linear-gradient(100deg,#a3d64f,#21b2bd)"
-        : "linear-gradient(100deg,#f2d489,#d9a93a)",
-    eyebrow: hell ? "#7e6410" : teal ? "#5fd6d2" : "#f2d489",
-    url: hell ? "#7e6410" : teal ? "#5fd6d2" : "#e8c15f",
+    // Akzent-Verlauf für Schlüsselwörter (<em>/<span>) – teal auf Hell tiefer (AA)
+    accentGrad: teal
+      ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
+      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
+    wmGrad: teal
+      ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
+      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"),
+    eyebrow: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489"),
+    url: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#e8c15f"),
     // E-Book-CTA + Häkchen
-    ctaBg: hell
-      ? "linear-gradient(100deg,#c79a2f,#7e6410)"
-      : teal
-        ? "linear-gradient(100deg,#199aa8,#0f766e)"
-        : "linear-gradient(100deg,#f2d489,#e8c15f)",
-    ctaFg: hell ? "#fdfaf1" : teal ? "#f4f2ec" : "#241a06",
-    ckBg: hell ? "rgba(168,132,42,.20)" : teal ? "rgba(52,196,196,.18)" : "rgba(232,193,95,.16)",
-    ckCol: hell ? "#7e6410" : teal ? "#5fd6d2" : "#e8c15f",
+    ctaBg: teal
+      ? "linear-gradient(100deg,#199aa8,#0f766e)"
+      : (hell ? "linear-gradient(100deg,#c79a2f,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
+    ctaFg: teal ? (hell ? "#f4faf9" : "#f4f2ec") : (hell ? "#fdfaf1" : "#241a06"),
+    ckBg: teal ? (hell ? "rgba(15,118,110,.16)" : "rgba(52,196,196,.18)") : (hell ? "rgba(168,132,42,.20)" : "rgba(232,193,95,.16)"),
+    ckCol: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#e8c15f"),
     // feine Deko-Linie / Fuß-Tick
-    tick: hell ? "rgba(168,132,42,.85)" : teal ? "rgba(95,214,210,.85)" : "rgba(242,212,137,.85)",
+    tick: teal ? (hell ? "rgba(15,118,110,.85)" : "rgba(95,214,210,.85)") : (hell ? "rgba(168,132,42,.85)" : "rgba(242,212,137,.85)"),
     // Ring ums runde Profilbild
-    ring: hell ? "168,132,42,.38" : teal ? "52,196,196,.30" : "233,193,95,.18",
+    ring: teal ? (hell ? "15,118,110,.38" : "52,196,196,.30") : (hell ? "168,132,42,.38" : "233,193,95,.18"),
   };
 }
 
@@ -127,9 +128,9 @@ const avatarRound = (w, P) => {
     return shell(w, w, `${ringGlow}
 .stack{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:${Math.round(w*0.03)}px;text-align:center;padding:0 ${Math.round(w*0.1)}px}
 .brain{width:${Math.round(w*0.46)}px;height:auto}
-.wm1{font-family:Fraunces,serif;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:#f4f2ec;font-size:${Math.round(w*0.06)}px;line-height:1}
+.wm1{font-family:Fraunces,serif;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:${P.hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.06)}px;line-height:1}
 .wm1 span{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
-.wm2{display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.012)}px;font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.22em;color:rgba(244,242,236,.75);font-size:${Math.round(w*0.026)}px;line-height:1}
+.wm2{display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.012)}px;font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.22em;color:${P.hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.75)"};font-size:${Math.round(w*0.026)}px;line-height:1}
 .wm2 i{display:block;height:1px;width:${Math.round(w*0.03)}px;background:${P.tick}}
 `, `<div class="ring"></div><div class="glow"></div>
   <div class="stack"><img class="brain" src="${P.brainUrl}">
@@ -520,12 +521,12 @@ const SCALE = Number(process.env.SCALE || "1") || 1;
 const browser = await chromium.launch({ executablePath: findChrome() });
 // Datei-Suffix je Theme: dunkel = ohne Suffix (Standard), hell = -hell,
 // tuerkis = -tuerkis. Optional nur eine Welt rendern:  THEME=tuerkis node …
-const themeSuffix = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis" };
-const onlyTheme = process.env.THEME; // "dunkel" | "hell" | "tuerkis"
+const themeSuffix = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-hell": "-tuerkis-hell" };
+const onlyTheme = process.env.THEME; // dunkel | hell | tuerkis | tuerkis-hell
 for (const t of targets){
-  // Drei Welten: dunkel (Gold, Standard), hell (Creme, wo markiert) und
-  // tuerkis (Teal-Emblem + Grün→Teal-Akzente).
-  let themes = ["dunkel", ...(t.hell ? ["hell"] : []), "tuerkis"];
+  // Vier Welten: dunkel (Gold+Navy, Standard), tuerkis (Teal+Navy) und – wo
+  // markiert (t.hell) – zusätzlich hell (Gold+Creme) und tuerkis-hell (Teal+Creme).
+  let themes = ["dunkel", "tuerkis", ...(t.hell ? ["hell", "tuerkis-hell"] : [])];
   if (onlyTheme) themes = themes.filter((x) => x === onlyTheme);
   for (const theme of themes){
     const outFile = t.file.replace(/\.png$/, `${themeSuffix[theme]}.png`);

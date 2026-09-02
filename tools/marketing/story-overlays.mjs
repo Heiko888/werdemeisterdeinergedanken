@@ -23,12 +23,12 @@ const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/story-overlays");
 
-// Drei Farbwelten. Türkis erhält das Suffix -tuerkis (parallel zu -hell).
-// Optional nur eine rendern:  THEME=tuerkis node tools/marketing/story-overlays.mjs
-const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis" };
+// Vier Farbwelten (Grund × Akzent). Optional nur eine rendern:
+//   THEME=tuerkis-hell node tools/marketing/story-overlays.mjs
+const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-hell": "-tuerkis-hell" };
 const THEMES = (process.env.THEME
   ? [process.env.THEME]
-  : ["dunkel", "hell", "tuerkis"]).filter((t) => t in THEME_SUFFIX);
+  : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]).filter((t) => t in THEME_SUFFIX);
 
 // ===========================================================================
 // FORMATE. Breite überall 1080. Schriftgrößen/Positionen je Format.
@@ -54,19 +54,21 @@ const STORIES = [
 // theme: "dunkel" (Gold, Standard) · "hell" (Creme) · "tuerkis" (Teal-Akzente
 // auf Navy). Türkis erbt den dunklen Grund von „dunkel", nur Akzent/Glow teal.
 const cssFor = (F, theme) => {
-  const hell = theme === "hell";
-  const teal = theme === "tuerkis";
-  const eyebrowCol = hell ? "#7e6410" : teal ? "#5fd6d2" : "#f2d489";
-  const accentGrad = hell
-    ? "linear-gradient(100deg,#d9a93a,#7e6410)"
-    : teal
-      ? "linear-gradient(100deg,#a3d64f,#21b2bd)"
-      : "linear-gradient(100deg,#f2d489,#d9a93a)";
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
+  const eyebrowCol = teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489");
+  const accentGrad = teal
+    ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
+    : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)");
   const glowRGB = teal ? "52,196,196" : "233,193,95";
   const bgLayers = hell
-    ? `
+    ? (teal
+      ? `
+ radial-gradient(78% 62% at 50% -10%, rgba(52,196,196,.20), transparent 62%),
+ radial-gradient(58% 52% at 4% 108%, rgba(33,178,189,.12), transparent 60%),#f6f4ee`
+      : `
  radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
- radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),#f6f4ee`
+ radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),#f6f4ee`)
     : teal
       ? `
  radial-gradient(50% 90% at 20% 16%, rgba(52,196,196,.30), transparent 60%),
@@ -99,7 +101,7 @@ h1 em{background:${accentGrad};-webkit-background-clip:text;background-clip:text
 };
 
 const overlayBody = (s, i, theme) => `<div class="scrim"></div>
-<img class="brainmini" src="${theme === "tuerkis" ? brainTeal : brain}">
+<img class="brainmini" src="${theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain}">
 <div class="txt">
   <div class="eyebrow">Persönliche Geschichte · ${String(i + 1).padStart(2, "0")}</div>
   <h1>${s.head}</h1><div class="bar"></div>

@@ -26,11 +26,11 @@ const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/story-carousels");
 
-// Drei Farbwelten. Türkis erhält das Suffix -tuerkis (parallel zu -hell).
-const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis" };
+// Vier Farbwelten (Grund × Akzent). Suffixe parallel zu -hell.
+const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-hell": "-tuerkis-hell" };
 const THEMES = (process.env.THEME
   ? [process.env.THEME]
-  : ["dunkel", "hell", "tuerkis"]).filter((t) => t in THEME_SUFFIX);
+  : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]).filter((t) => t in THEME_SUFFIX);
 
 const FORMATS = [
   { key: "4x5",  w: 1080, h: 1350 },
@@ -61,25 +61,25 @@ const STORIES = [
 
 // theme: "dunkel" (Gold) · "hell" (Creme) · "tuerkis" (Teal auf Navy).
 const cssFor = (F, theme) => {
-  const hell = theme === "hell";
-  const teal = theme === "tuerkis";
-  const eyebrowCol = hell ? "#7e6410" : teal ? "#5fd6d2" : "#f2d489";
-  const pagenoCol = hell ? "#7e6410" : teal ? "#5fd6d2" : "rgba(242,212,137,.9)";
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
+  const eyebrowCol = teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489");
+  const pagenoCol = teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "rgba(242,212,137,.9)");
   const glowRGB = teal ? "52,196,196" : "233,193,95";
-  const accentGrad = hell
-    ? "linear-gradient(100deg,#d9a93a,#7e6410)"
-    : teal
-      ? "linear-gradient(100deg,#a3d64f,#21b2bd)"
-      : "linear-gradient(100deg,#f2d489,#d9a93a)";
-  const ctaBorder = hell
-    ? "linear-gradient(120deg,#d9a93a,#7e6410)"
-    : teal
-      ? "linear-gradient(120deg,#a3d64f,#21b2bd)"
-      : "linear-gradient(120deg,#f2d489,#d9a93a)";
+  const accentGrad = teal
+    ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
+    : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)");
+  const ctaBorder = teal
+    ? (hell ? "linear-gradient(120deg,#8cc63f,#0f766e)" : "linear-gradient(120deg,#a3d64f,#21b2bd)")
+    : (hell ? "linear-gradient(120deg,#d9a93a,#7e6410)" : "linear-gradient(120deg,#f2d489,#d9a93a)");
   const bgLayers = hell
-    ? `
+    ? (teal
+      ? `
+ radial-gradient(78% 62% at 50% -10%, rgba(52,196,196,.20), transparent 62%),
+ radial-gradient(58% 52% at 4% 108%, rgba(33,178,189,.12), transparent 60%),#f6f4ee`
+      : `
  radial-gradient(78% 62% at 50% -10%, rgba(232,193,95,.26), transparent 62%),
- radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),#f6f4ee`
+ radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),#f6f4ee`)
     : teal
       ? `
  radial-gradient(52% 80% at 22% 14%, rgba(52,196,196,.28), transparent 60%),
@@ -131,9 +131,10 @@ function doc(F, s, i, total, nr, { transparent, withBg, theme }) {
   const foot = `<div class="foot"><span class="h">${i === 0 ? "Persönliche Geschichten" : "werdemeisterdeinergedanken.de"}</span>${dots(i, total)}<span class="c">${i + 1}/${total}</span></div>`;
   const pageno = i === 0 ? "" : `<div class="pageno">${nr}</div>`;
   const bg = withBg ? `<div class="bg"></div><div class="stars"></div>` : "";
-  const brainImg = theme === "tuerkis" ? brainTeal : brain;
+  const brainImg = theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain;
+  const creme = theme === "hell" || theme === "tuerkis-hell";
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
-<style>body{background:${transparent ? "transparent" : (theme === "hell" ? "#f6f4ee" : "#090b10")}}${cssFor(F, theme)}</style></head><body>
+<style>body{background:${transparent ? "transparent" : (creme ? "#f6f4ee" : "#090b10")}}${cssFor(F, theme)}</style></head><body>
 ${bg}<img class="brainmini" src="${brainImg}">${pageno}${slideInner(s)}${foot}</body></html>`;
 }
 

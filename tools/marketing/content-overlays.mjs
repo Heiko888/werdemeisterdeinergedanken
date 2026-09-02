@@ -26,12 +26,12 @@ const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/content-overlays");
 
-// Drei Farbwelten. Türkis erhält das Suffix -tuerkis (wie -hell).
-const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis" };
+// Vier Farbwelten (Grund × Akzent). Suffixe parallel zu -hell.
+const THEME_SUFFIX = { dunkel: "", hell: "-hell", tuerkis: "-tuerkis", "tuerkis-hell": "-tuerkis-hell" };
 const THEMES = (process.env.THEME
   ? [process.env.THEME]
-  : ["dunkel", "hell", "tuerkis"]).filter((t) => t in THEME_SUFFIX);
-const brainFor = (theme) => (theme === "tuerkis" ? brainTeal : brain);
+  : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]).filter((t) => t in THEME_SUFFIX);
+const brainFor = (theme) => (theme === "tuerkis" || theme === "tuerkis-hell" ? brainTeal : brain);
 
 // Breite überall 1080 → Schriftgrößen (w-basiert) bleiben über alle Formate
 // gleich, nur die Höhe (= vertikaler Freiraum) ändert sich.
@@ -84,6 +84,15 @@ const bgCssTeal = `
   radial-gradient(1.4px 1.4px at 90% 38%,rgba(200,180,255,.5),transparent),
   radial-gradient(1.1px 1.1px at 44% 74%,rgba(255,255,255,.4),transparent);}`;
 
+// Creme-Grund mit Teal-Schimmer (für „tuerkis-hell"): helle Fläche, keine Sterne.
+const bgCssHellTeal = `
+.bg-hell{position:absolute;inset:0;background:
+  radial-gradient(78% 62% at 50% -10%, rgba(52,196,196,.20), transparent 62%),
+  radial-gradient(60% 55% at 96% 4%, rgba(140,198,63,.12), transparent 60%),
+  radial-gradient(58% 52% at 4% 108%, rgba(33,178,189,.12), transparent 60%),
+  #f6f4ee;
+  box-shadow:inset 0 26px 44px -34px rgba(8,16,42,.22);}`;
+
 // Scrim: dunkelt die Mitte (Textzone) genug ab, damit heller Fraunces-Satz auf
 // jedem Foto lesbar bleibt – ohne das Foto komplett zu verdecken.
 const scrimCss = `
@@ -104,6 +113,11 @@ const PAL = (theme) => theme === "hell" ? {
   accent: "linear-gradient(100deg,#d9a93a,#7e6410)", qmark: "rgba(168,132,42,.16)",
   eyebrow: "#7e6410", srcMuted: "rgba(22,35,31,.66)", srcB: "#7e6410",
   wm1: "rgba(22,35,31,.92)", wm2: "rgba(22,35,31,.64)", stroke: "rgba(168,132,42,.9)",
+} : theme === "tuerkis-hell" ? {
+  scrim: scrimHellCss, text: "#16231f", shadow: "0 1px 10px rgba(246,244,238,.5)",
+  accent: "linear-gradient(100deg,#8cc63f,#0f766e)", qmark: "rgba(15,118,110,.16)",
+  eyebrow: "#0f766e", srcMuted: "rgba(22,35,31,.66)", srcB: "#0f766e",
+  wm1: "rgba(22,35,31,.92)", wm2: "rgba(22,35,31,.64)", stroke: "rgba(15,118,110,.9)",
 } : theme === "tuerkis" ? {
   scrim: scrimCss, text: "#f4f2ec", shadow: "0 2px 24px rgba(0,0,0,.45)",
   accent: "linear-gradient(100deg,#a3d64f,#21b2bd)", qmark: "rgba(95,214,210,.14)",
@@ -213,6 +227,16 @@ for (const S of SERIES) {
       writeFileSync(tmp, doc(F, bgCssTeal, `<div class="bg"></div><div class="stars"></div>`, false));
       await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
       await pg.screenshot({ path: join(fdir, "_hintergrund-tuerkis.png") });
+      await pg.close(); rmSync(tmp, { force: true });
+    }
+
+    // Creme-Grund mit Teal-Schimmer (tuerkis-hell).
+    if (THEMES.includes("tuerkis-hell")) {
+      const pg = await browser.newPage({ viewport: { width: F.w, height: F.h } });
+      const tmp = join(HERE, `.bghellteal-${S.key}-${F.key}.html`);
+      writeFileSync(tmp, doc(F, bgCssHellTeal, `<div class="bg-hell"></div>`, false));
+      await pg.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+      await pg.screenshot({ path: join(fdir, "_hintergrund-tuerkis-hell.png") });
       await pg.close(); rmSync(tmp, { force: true });
     }
 
