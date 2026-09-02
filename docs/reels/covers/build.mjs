@@ -52,7 +52,7 @@ html,body { background:${P.pageBg}; }
 .top { display:flex; align-items:center; justify-content:space-between; gap:40px; }
 /* Marken-Lockup: Gehirn + Wortmarke „Werde Meister / Deiner Gedanken" */
 .brand { display:flex; align-items:center; gap:${wm.gap}px; flex:0 1 auto; }
-.logo { width:${f.logoW}px; height:auto; flex:0 0 auto;
+.logo { width:${Math.round(f.logoW * P.logoScale)}px; height:auto; flex:0 0 auto;
   filter:drop-shadow(0 4px 26px rgba(${P.glowRGB},.30)); }
 .wm { display:flex; flex-direction:column; gap:${wm.colGap}px; line-height:1; }
 .wm1 { font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:${wm.one}px;

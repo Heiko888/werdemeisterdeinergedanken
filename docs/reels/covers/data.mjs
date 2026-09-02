@@ -31,6 +31,10 @@ export function palette(theme) {
   const hell = theme === "hell" || theme === "tuerkis-hell";
   const teal = theme === "tuerkis" || theme === "tuerkis-hell";
   const brain = teal ? "logo.png" : "logo-gold.png"; // Seiten-Gehirn bunt / Gold-Front
+  // Das Gold-Front-Gehirn (640×640, dichteres Motiv) wirkt bei gleicher Breite
+  // klobiger als das Türkis-Seitengehirn (640×588). Etwas verkleinern, damit
+  // das Lockup wie im Website-Header ausbalanciert ist.
+  const logoScale = teal ? 1 : 0.8;
   const accent = teal
     ? (hell ? "linear-gradient(120deg,#8cc63f 0%,#0f766e 100%)" : "linear-gradient(120deg,#8cc63f 0%,#21b2bd 100%)")
     : (hell ? "linear-gradient(120deg,#d9a93a 0%,#7e6410 100%)" : "linear-gradient(120deg,#f2d489 0%,#d9a93a 100%)");
@@ -57,7 +61,7 @@ export function palette(theme) {
   const pageBg = hell ? "#f6f4ee" : "#05060c";
   const shadow = hell ? "none" : "drop-shadow(0 6px 34px rgba(0,0,0,.6))";
   const handleShadow = hell ? "none" : "0 2px 14px rgba(0,0,0,.7)";
-  return { theme, hell, teal, brain, accent, glowRGB, bg, ink, handle, scrim, wmMain, wmSub, tick, pageBg, shadow, handleShadow };
+  return { theme, hell, teal, brain, logoScale, accent, glowRGB, bg, ink, handle, scrim, wmMain, wmSub, tick, pageBg, shadow, handleShadow };
 }
 
 // ===========================================================================
