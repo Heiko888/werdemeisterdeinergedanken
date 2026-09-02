@@ -9,7 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { BlogCover } from "@/components/blog/BlogCover";
 import { accentFor, type AccentKey } from "@/lib/blog-accent";
-import brainLogo from "../../../public/logo-brain.png";
+import brainLogo from "../../../public/logo-brain-gold-freigestellt.png";
 
 /** Schlanke Artikel-Form (ohne `content`) – reicht für die Übersicht. */
 export type BlogCard = {
@@ -210,7 +210,7 @@ function FeaturedCard({ post }: { post: BlogCard }) {
                 src={brainLogo}
                 alt=""
                 aria-hidden
-                className="logo-gold relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
+                className="relative z-10 mx-auto w-[min(320px,80%)] drop-shadow-[0_12px_60px_rgba(217,169,58,0.4)]"
               />
             </div>
           </div>

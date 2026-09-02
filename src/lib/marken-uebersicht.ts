@@ -168,9 +168,15 @@ export const farbGruppen: FarbGruppe[] = [
 /** Alle Logo-Dateien (public/ ist direkt web-erreichbar). */
 export const logos: LogoDatei[] = [
   {
+    src: "/logo-brain-gold-freigestellt.png",
+    datei: "logo-brain-gold-freigestellt.png",
+    verwendung:
+      "Goldenes Gehirn-Emblem (freigestellt) – aktueller Standard im Web (Header, Footer, Blog, Favicon)",
+  },
+  {
     src: "/logo-brain.png",
     datei: "logo-brain.png",
-    verwendung: "Freigestelltes Gehirn-Emblem – Standard im Web / Header",
+    verwendung: "Freigestelltes Gehirn-Emblem (Blau/Grün) – frühere Web-Variante",
   },
   {
     src: "/logo-brain-gold.png",
