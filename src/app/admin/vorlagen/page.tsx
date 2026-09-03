@@ -27,7 +27,9 @@ function buildPdfListe(): PdfItem[] {
   const items: PdfItem[] = [
     {
       titel: "Gratis-E-Book · Die 7 Stufen der Bewusstseinsentwicklung",
-      href: "/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf",
+      // Liegt unter content/pdf/ und ist daher nur über diese admin-
+      // geschützte Route abrufbar – nicht mehr unter seinem Dateipfad.
+      href: "/admin/vorlagen/ebook",
       gruppe: "Grundlagen",
     },
     {

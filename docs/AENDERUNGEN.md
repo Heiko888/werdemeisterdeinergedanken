@@ -5,6 +5,44 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – E-Book nur noch mit bestätigter Anmeldung
+
+Der Lead-Magnet war auf **zwei** Wegen ohne E-Mail-Adresse zu bekommen:
+
+1. `/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf` – die Datei lag unter
+   `public/`, und alles dort liefert Next.js zusätzlich direkt unter seinem
+   Dateipfad aus. Derselbe Fallstrick wie früher bei den Mitglieder-PDFs und
+   den Vorlagen.
+2. `/ebook` – die Download-Route war `force-static` und prüfte nichts.
+
+Beides ist zu. Das PDF liegt jetzt in `content/pdf/` (wird vom Dockerfile
+ohnehin ins Laufzeit-Image kopiert), `/ebook` ist dynamisch und verlangt ein
+Token. Als Token dient das vorhandene `confirm_token` des Leads – keine
+Migration, keine neue Env-Variable nötig; es ist pro Adresse eindeutig, liegt
+der bestätigten Person vor und wird bei einer erneuten Anfrage eines offenen
+Leads neu erzeugt, womit alte Links verfallen. Bewusst nicht das
+`unsubscribe_token`: ein weitergeleiteter Link würde sonst die Abmeldung
+Dritter erlauben. Ohne bzw. mit falschem Token gibt es 404 statt 403.
+
+Was sich im Ablauf ändert: Die Liefermail und die Bestätigungsseite verlinken
+den Download mit Token; das PDF hängt wie bisher als Anhang an der Mail. Der
+„Notausgang" im Formular (`status === "fallback"`, wenn der Versand klemmt)
+bot bisher das PDF frei an – das war die Lücke in Sichtbarkeit und ist jetzt
+ein „Erneut versuchen". Der Direktlink nach erfolgreichem Absenden bleibt,
+aber nur für bereits bestätigte Adressen: `/api/ebook` gibt dafür eine
+`downloadUrl` mit Token zurück.
+
+Die Admin-Vorlagenübersicht verlinkte den alten `public/`-Pfad. Sie bekommt
+mit `/admin/vorlagen/ebook` eine eigene, an die Anmeldung gebundene Route –
+ein Admin hat kein Lead-Token. `tools/pdf/generate.mjs` schreibt das E-Book
+jetzt nach `content/pdf/` statt `public/`.
+
+Verifiziert gegen einen Wegwerf-Container mit dem fertigen Image: alter
+Dateipfad 404, `/ebook` ohne Token 404, mit erfundenem Token 404, mit dem
+Token eines bestätigten Leads 200 mit 3.549.855 Bytes `application/pdf`.
+
+---
+
 ## 2026-09-03 – Startseite „Warum ich das mache": Portrait-Avatar näher rangezoomt
 
 **Wunsch:** Das Gesicht sitzt im runden Avatar (Heiko Schwaninger) neben dem

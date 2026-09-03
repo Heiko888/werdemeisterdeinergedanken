@@ -72,7 +72,7 @@ export const vorlagenKatalog: VorlagenGruppe[] = [
     beschreibung:
       "Das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“, mit dem neue Interessenten in den Newsletter kommen. Die Texte stehen direkt im Generator und werden dort gepflegt.",
     ordner: "docs/ebook/ · tools/pdf/",
-    ergebnis: "public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf",
+    ergebnis: "content/pdf/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf",
     schritte: [
       {
         text: "Wird zusammen mit den PDFs gebaut",

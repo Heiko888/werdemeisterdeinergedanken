@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { sendEbookDeliveryMail } from "@/lib/ebook-mail";
 import { site } from "@/lib/site";
+import { ebookDownloadUrl } from "@/lib/ebook-download";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -16,10 +17,20 @@ export const dynamic = "force-dynamic";
  * Versand aus – ein erneuter Aufruf zeigt nur die Erfolgsseite.
  */
 
-function htmlPage(title: string, message: string, status = 200) {
+function htmlPage(
+  title: string,
+  message: string,
+  status = 200,
+  downloadToken?: string,
+) {
+  // Der Direkt-Download braucht das Token des bestätigten Leads; ohne Token
+  // bleibt es beim Link zur Website (/ebook antwortet sonst mit 404).
+  const download = downloadToken
+    ? ` <a href="${ebookDownloadUrl(downloadToken)}" style="margin-left:.5rem;color:#3a7a1c">E-Book direkt herunterladen</a>`
+    : "";
   const cta =
     status === 200
-      ? `<p style="margin-top:1.5rem"><a href="${site.url}" style="display:inline-block;background:#141b2b;color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px">Zur Website</a> <a href="${site.url}/ebook" style="margin-left:.5rem;color:#3a7a1c">E-Book direkt herunterladen</a></p>`
+      ? `<p style="margin-top:1.5rem"><a href="${site.url}" style="display:inline-block;background:#141b2b;color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px">Zur Website</a>${download}</p>`
       : "";
   const body = `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>${title}</title></head><body style="font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:32rem;margin:4rem auto;padding:0 1.5rem;line-height:1.6;color:#1a2233"><p style="font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#7a869a;margin:0 0 .75rem">${site.name}</p><h1 style="font-size:1.4rem;margin:0 0 .75rem">${title}</h1><p style="color:#4a5568;margin:0">${message}</p>${cta}</body></html>`;
   return new NextResponse(body, {
@@ -65,7 +76,9 @@ export async function GET(request: Request) {
   if (lead.status === "confirmed") {
     return htmlPage(
       "Schon bestätigt",
-      "Deine Anmeldung ist bereits bestätigt – das E-Book ist unterwegs bzw. schon in deinem Postfach. Über den Button unten kannst du es auch direkt laden.",
+      "Deine Anmeldung ist bereits bestätigt – das E-Book ist unterwegs bzw. schon in deinem Postfach. Über den Link unten kannst du es auch direkt laden.",
+      200,
+      token,
     );
   }
 
@@ -96,14 +109,21 @@ export async function GET(request: Request) {
   if (apiKey) {
     const unsubUrl = `${site.url}/api/ebook/unsubscribe?token=${lead.unsubscribe_token}`;
     try {
-      await sendEbookDeliveryMail(new Resend(apiKey), lead.email as string, unsubUrl);
+      await sendEbookDeliveryMail(
+        new Resend(apiKey),
+        lead.email as string,
+        unsubUrl,
+        token,
+      );
     } catch (err) {
       // Bestätigung ist gespeichert – Lieferung per Mail nur unkritisch
       // fehlgeschlagen. Direkt-Download auf der Seite fängt das ab.
       console.error("E-Book-Lieferung nach Bestätigung fehlgeschlagen:", err);
       return htmlPage(
         "Anmeldung bestätigt",
-        "Danke! Der E-Mail-Versand klemmt gerade – du kommst über den Button unten aber sofort an dein E-Book.",
+        "Danke! Der E-Mail-Versand klemmt gerade – du kommst über den Link unten aber sofort an dein E-Book.",
+        200,
+        token,
       );
     }
   }
@@ -111,5 +131,7 @@ export async function GET(request: Request) {
   return htmlPage(
     "Anmeldung bestätigt – dein E-Book ist unterwegs 🌱",
     "Danke fürs Bestätigen! Wir haben dir dein E-Book gerade per E-Mail geschickt. Schau in dein Postfach (und ggf. in den Spam-Ordner). Du kannst es auch direkt hier laden.",
+    200,
+    token,
   );
 }

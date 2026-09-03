@@ -1,5 +1,6 @@
 import type { Resend } from "resend";
-import { getEbookPdfBytes } from "@/lib/pdf/ebook-file";
+import { getEbookPdfBytes, EBOOK_FILE_NAME } from "@/lib/pdf/ebook-file";
+import { ebookDownloadUrl } from "@/lib/ebook-download";
 import { site } from "@/lib/site";
 
 /**
@@ -79,9 +80,12 @@ export async function sendEbookDeliveryMail(
   resend: Resend,
   to: string,
   unsubscribeUrl?: string,
+  downloadToken?: string,
 ): Promise<void> {
   const pdf = getEbookPdfBytes();
-  const downloadUrl = `${site.url}/ebook`;
+  // Ohne Token kein Link: /ebook liefert nur noch mit gültigem Token aus.
+  // Das E-Book hängt ohnehin als Anhang an dieser Mail.
+  const downloadUrl = downloadToken ? ebookDownloadUrl(downloadToken) : null;
 
   const unsubHtml = unsubscribeUrl
     ? `Du erhältst diese E-Mail, weil du das E-Book auf ${site.url} bestätigt hast.
@@ -98,9 +102,11 @@ export async function sendEbookDeliveryMail(
       Mein Tipp: Nimm dir eine einzige Übung vor und bleib ein paar Tage dabei.
       Der Wandel entsteht nicht durch Wissen, sondern durch Wiederholung.
     </p>
-    <p style="margin:1.5rem 0">
+    ${downloadUrl
+      ? `<p style="margin:1.5rem 0">
       <a href="${downloadUrl}" style="display:inline-block;background:#141b2b;color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px">E-Book herunterladen</a>
-    </p>
+    </p>`
+      : ""}
     <hr style="border:none;border-top:1px solid #e6e9ef;margin:2rem 0 1rem">
     <p style="font-size:12px;line-height:1.5;color:#9aa4b5;margin:0">${unsubHtml}</p>
   `);
@@ -111,8 +117,7 @@ Danke fürs Bestätigen. Im Anhang findest du dein kostenloses E-Book „Die 7 S
 
 Mein Tipp: Nimm dir eine einzige Übung vor und bleib ein paar Tage dabei.
 
-E-Book herunterladen: ${downloadUrl}
-
+${downloadUrl ? `E-Book herunterladen: ${downloadUrl}\n` : ""}
 —
 ${unsubscribeUrl ? `Abmelden: ${unsubscribeUrl}` : ""}
 Werde Meister deiner Gedanken`;
@@ -125,7 +130,7 @@ Werde Meister deiner Gedanken`;
     html,
     attachments: [
       {
-        filename: "Die-7-Stufen-der-Bewusstseinsentwicklung.pdf",
+        filename: EBOOK_FILE_NAME,
         content: Buffer.from(pdf),
       },
     ],

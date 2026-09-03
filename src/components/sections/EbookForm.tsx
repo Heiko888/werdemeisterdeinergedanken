@@ -10,15 +10,20 @@ type Status = "idle" | "sending" | "confirm" | "sent" | "fallback";
  * Front-end-Formular für den Lead-Magneten.
  * Sendet die E-Mail an /api/ebook. Mit Double-Opt-in kommt zunächst eine
  * Bestätigungsmail (Status „confirm"); erst nach dem Klick wird das E-Book
- * geliefert. Bereits bestätigte Adressen bekommen es direkt („sent"). Ist
- * der Versand nicht eingerichtet oder schlägt er fehl, wird der direkte
- * Download angeboten – so kommt jede*r ans E-Book.
+ * geliefert. Bereits bestätigte Adressen bekommen es direkt („sent") und dazu
+ * eine downloadUrl mit Token.
+ *
+ * Bewusst gibt es keinen Download ohne bestätigte Anmeldung mehr: /ebook
+ * liefert nur noch mit gültigem Token aus. Klemmt der Versand („fallback"),
+ * wird deshalb um einen erneuten Versuch gebeten statt das PDF freizugeben –
+ * sonst wäre die Lead-Erfassung mit einem Klick zu umgehen.
  */
 export function EbookForm() {
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState(""); // Honeypot
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+  const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -35,6 +40,7 @@ export function EbookForm() {
       const data = await res.json().catch(() => ({}));
 
       if (res.ok) {
+        if (typeof data?.downloadUrl === "string") setDownloadUrl(data.downloadUrl);
         setStatus(data?.mode === "sent" ? "sent" : "confirm");
         return;
       }
@@ -81,14 +87,16 @@ export function EbookForm() {
             Schau in dein Postfach (und ggf. in den Spam-Ordner).
           </span>
         </div>
-        <a
-          href="/ebook"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-ink-mid underline hover:text-ink"
-        >
-          E-Mail nicht angekommen? E-Book direkt herunterladen
-        </a>
+        {downloadUrl && (
+          <a
+            href={downloadUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-ink-mid underline hover:text-ink"
+          >
+            E-Mail nicht angekommen? E-Book direkt herunterladen
+          </a>
+        )}
       </div>
     );
   }
@@ -98,17 +106,20 @@ export function EbookForm() {
       <div className="flex flex-col gap-4 rounded-2xl border border-accent/30 bg-accent/10 px-5 py-4 text-sm text-ink">
         <span>
           {error
-            ? `${error} Kein Problem – du kannst dein E-Book direkt hier laden:`
-            : "Dein E-Book steht bereit – du kannst es direkt hier laden:"}
+            ? `${error} Bitte versuch es in ein paar Minuten noch einmal – dann kommt dein E-Book per E-Mail.`
+            : "Der Versand klemmt gerade. Bitte versuch es in ein paar Minuten noch einmal – dann kommt dein E-Book per E-Mail."}
         </span>
         <Button
-          href="/ebook"
-          external
+          type="button"
           variant="accent"
           size="lg"
           className="self-start"
+          onClick={() => {
+            setError(null);
+            setStatus("idle");
+          }}
         >
-          E-Book herunterladen
+          Erneut versuchen
           <ArrowRight />
         </Button>
       </div>

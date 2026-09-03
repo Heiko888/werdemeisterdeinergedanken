@@ -23,7 +23,6 @@ const require = createRequire(import.meta.url);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..");
 const BUILD = path.join(HERE, ".build");
-const PUBLIC = path.join(ROOT, "public");
 // Mitglieder-PDFs bewusst NICHT nach public/: alles dort liefert Next.js
 // direkt unter seinem Dateipfad aus, also am Login-Schutz vorbei.
 // Ausgeliefert werden sie ausschließlich über die Routen unter /mitglieder.
@@ -105,7 +104,10 @@ async function main() {
   execFileSync(PY, [path.join(HERE, "build-member.py")], { env, stdio: "inherit" });
 
   console.log("• E-Book rendern …");
-  renderPdf(path.join(BUILD, "ebook.html"), path.join(PUBLIC, "Die-7-Stufen-der-Bewusstseinsentwicklung.pdf"));
+  // Ziel ist content/pdf/ und NICHT public/: unter public/ liefert Next.js die
+  // Datei zusätzlich direkt unter ihrem Pfad aus, womit der Lead-Magnet ohne
+  // Anmeldung abrufbar wäre. Siehe src/lib/pdf/ebook-file.ts.
+  renderPdf(path.join(BUILD, "ebook.html"), path.join(PDFDIR, "Die-7-Stufen-der-Bewusstseinsentwicklung.pdf"));
 
   console.log("• Mitglieder-Dokumente rendern …");
   const manifest = JSON.parse(fs.readFileSync(path.join(BUILD, "m-manifest.json"), "utf8"));
@@ -121,7 +123,7 @@ async function main() {
     path.join(PDFDIR, "arbeitsheft.pdf"),
   );
 
-  console.log(`\n✓ Fertig: public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf und ${manifest.single.length + 1} Dateien in content/pdf/`);
+  console.log(`\n✓ Fertig: E-Book und ${manifest.single.length + 1} weitere Dateien in content/pdf/`);
 }
 
 main().catch((e) => {

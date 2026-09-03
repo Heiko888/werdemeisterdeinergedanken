@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { sendEbookConfirmationMail, sendEbookDeliveryMail } from "@/lib/ebook-mail";
 import { site } from "@/lib/site";
+import { ebookDownloadUrl } from "@/lib/ebook-download";
 
 export const runtime = "nodejs";
 
@@ -20,7 +21,10 @@ export const runtime = "nodejs";
  * Ohne RESEND_API_KEY antwortet die Route mit „not_configured" (503); das
  * Formular bietet dann den direkten Download an.
  *
- * Antwort bei Erfolg: { ok: true, mode: "confirm" | "sent" }.
+ * Antwort bei Erfolg: { ok: true, mode: "confirm" | "sent", downloadUrl? }.
+ * Die downloadUrl kommt nur bei bereits bestätigten Adressen mit – sie
+ * enthält das Token für /ebook. Bei „confirm" gibt es bewusst keinen Link:
+ * ohne bestätigte Einwilligung kein E-Book.
  */
 
 const RATE_WINDOW_MS = 10 * 60 * 1000;
@@ -105,6 +109,8 @@ export async function POST(request: Request) {
   // Fallback ohne Supabase: kein Double-Opt-in möglich, E-Book direkt senden.
   if (!admin) {
     try {
+      // Ohne Supabase gibt es keinen Lead und damit kein Token – die Mail
+      // kommt dann ohne Download-Link, das PDF hängt aber als Anhang dran.
       await sendEbookDeliveryMail(resend, email);
     } catch (err) {
       console.error("E-Book-Direktversand fehlgeschlagen:", err);
@@ -137,8 +143,14 @@ export async function POST(request: Request) {
   // Bereits bestätigt → E-Book direkt erneut zusenden (Einwilligung liegt vor).
   if (existing?.status === "confirmed") {
     const unsubUrl = `${site.url}/api/ebook/unsubscribe?token=${existing.unsubscribe_token}`;
+    const downloadToken = existing.confirm_token as string | null;
     try {
-      await sendEbookDeliveryMail(resend, email, unsubUrl);
+      await sendEbookDeliveryMail(
+        resend,
+        email,
+        unsubUrl,
+        downloadToken ?? undefined,
+      );
     } catch (err) {
       console.error("E-Book-Erneutversand fehlgeschlagen:", err);
       return NextResponse.json(
@@ -149,7 +161,12 @@ export async function POST(request: Request) {
         { status: 502 },
       );
     }
-    return NextResponse.json({ ok: true, mode: "sent" });
+    return NextResponse.json({
+      ok: true,
+      mode: "sent",
+      // Einwilligung liegt vor → der Direkt-Download darf angeboten werden.
+      ...(downloadToken ? { downloadUrl: ebookDownloadUrl(downloadToken) } : {}),
+    });
   }
 
   // Neu oder noch offen → (frisches) Token setzen und Bestätigungsmail senden.
