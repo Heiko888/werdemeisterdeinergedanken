@@ -74,7 +74,7 @@ typischer Farbverlauf), das Icon wird weiß und der Button hebt sich leicht an.
   - Neue `socialColors`-Map mit Marken-`color` (Icon-Grundfarbe) und `bg`
     (Hover-Füllung) je Plattform inkl. `telegram` (für spätere Aktivierung).
   - Buttons setzen die Farben rein über CSS-Variablen (`--social-color`,
-    `--social-bg`) + Tailwind-Utilities (`text-[var(...)]`,
+    `--social-bg`) + Tailwind-Utilities (`text-[var(--social-color)]`,
     `hover:[background:var(--social-bg)]`, `hover:text-white`). Kein JS/Client
     nötig – der Footer bleibt eine Server-Komponente.
   - `CSSProperties`-Typ aus `react` importiert (für die CSS-Variablen im
