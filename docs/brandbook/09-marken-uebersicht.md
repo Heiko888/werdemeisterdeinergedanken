@@ -69,6 +69,14 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **03.09.2026 – Alte Front-Gehirn-Profilbilder entfernt.** Die Legacy-Dateien
+  `WMDG-Profilbild-1080`, `WMDG-Profilbild-rund-1080` und `WMDG-Profilbild-rund-500`
+  (je dunkel + Creme) trugen noch das frühere **frontale** Gehirn und passten nicht
+  mehr zum Seitengehirn-Look. Sie sind gelöscht; der zugehörige Alt-Generator
+  `docs/marketing/profile-avatar.mjs` (nicht in `marketing:all`) wurde ebenfalls
+  entfernt. Ersetzt durch die brand-assets-Profilbilder `WMDG-Profilbild-Rund`,
+  `WMDG-Profilbild-Rund-Emblem` und `WMDG-Profilbild-Quadrat` (aktuelles
+  Seitengehirn, alle vier Welten).
 - **03.09.2026 – Echtes Schriftlogo überall + neues rundes Emblem-Profilbild.**
   Drei Dinge:
   1. **Kanalbild** (`channelSquare` in `brand-assets.mjs`: `WMDG-WhatsApp-Kanalbild`,
