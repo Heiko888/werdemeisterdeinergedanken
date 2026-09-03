@@ -158,33 +158,79 @@ const channelSquare = (w, P) => shell(w, w, `
   <div class="url">www.werdemeisterdeinergedanken.de</div>
 </div>`, P);
 
-// Quadratisches Profilbild NUR Emblem (ohne Schriftzug) – zentriert, kreis-sicher.
-const avatarSquarePlain = (w, P) => shell(w, w, `
+// Quadratisches Profilbild NUR Emblem (ohne Schriftzug) – lebendige Fläche mit
+// warmem Kern-Verlauf, Sheen, Eck-Vignette, feinem Innenrahmen und Aura hinter
+// dem Gehirn (gleiche Bildsprache wie das runde Emblem-Profilbild).
+const avatarSquarePlain = (w, P) => {
+  const hell = P.hell;
+  const discBase = hell
+    ? "radial-gradient(circle at 50% 42%, #faf7f0 0%, #f2ecdd 55%, #e7dfcc 100%)"
+    : "radial-gradient(circle at 50% 42%, #141821 0%, #0c0e13 58%, #060710 100%)";
+  const sheen = hell ? "rgba(255,255,255,.7)" : "rgba(255,255,255,.10)";
+  const edgeShadow = P.teal
+    ? (hell ? "rgba(10,66,76,.26)" : "rgba(0,0,0,.62)")
+    : (hell ? "rgba(120,86,14,.26)" : "rgba(0,0,0,.62)");
+  return `<!doctype html><html><head><meta charset="utf8">
+<link rel="stylesheet" href="${fontsUrl}"><style>
+*{margin:0;box-sizing:border-box}
+body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:${hell ? "#f6f4ee" : "#090b10"}}
+.disc{position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 50% 47%, rgba(${P.glow},${hell ? ".52" : ".62"}), transparent 42%),
+    radial-gradient(circle at 50% 47%, rgba(${P.glow},${hell ? ".26" : ".34"}), transparent 66%),
+    radial-gradient(circle at 30% 20%, ${sheen}, transparent 44%),
+    ${discBase};
+  box-shadow:inset 0 6px 30px ${sheen}, inset 0 -70px 130px -30px ${edgeShadow}, inset 0 0 ${Math.round(w*0.13)}px -${Math.round(w*0.01)}px ${edgeShadow}}
+.frame{position:absolute;inset:${Math.round(w*0.045)}px;border-radius:${Math.round(w*0.06)}px;border:2px solid rgba(${P.ring});box-shadow:0 0 ${Math.round(w*0.03)}px rgba(${P.glow},${hell ? ".22" : ".34"}), inset 0 0 ${Math.round(w*0.02)}px rgba(${P.glow},${hell ? ".14" : ".20"})}
+.aura{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.8)}px;height:${Math.round(w*0.8)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".5" : ".62"}), transparent 66%);filter:blur(44px)}
+.core{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);width:${Math.round(w*0.52)}px;height:${Math.round(w*0.52)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".4" : ".48"}), transparent 60%);filter:blur(22px)}
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.84)}px;height:${Math.round(w*0.84)}px;border-radius:50%;border:1px solid rgba(${P.ring})}
-.glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.66)}px;height:${Math.round(w*0.66)}px}
-.brain{width:${Math.round(w*0.6)}px;height:auto}
-`, `<div class="center"><div class="ring"></div><div class="glow"></div>
-  <img class="brain" src="${P.brainUrl}"></div>`, P);
+.brain{width:${Math.round(w*0.6)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 50px rgba(${P.glow},.65)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".2" : ".42"}))}
+</style></head><body>
+<div class="disc"></div><div class="frame"></div>
+<div class="aura"></div><div class="core"></div>
+<div class="center"><img class="brain" src="${P.brainUrl}"></div>
+</body></html>`;
+};
 
 // Rundes Profilbild NUR Emblem (ohne Schriftzug) – runde Scheibe mit feinem
 // Ring, mittig das Gehirn. Der Grund liegt als Kreis (border-radius:50%), die
 // Ecken sind weiß – so wirkt es als eigenständige runde Grafik und wird von
 // allen Plattformen sauber kreisförmig beschnitten.
-const avatarRoundPlain = (w, P) => `<!doctype html><html><head><meta charset="utf8">
+const avatarRoundPlain = (w, P) => {
+  const hell = P.hell;
+  // Lebendige Scheibe: warmer Kern-Verlauf, diagonaler Sheen, Rand-Vignette und
+  // Rim-Light per inset-Schatten – so wirkt das Medaillon plastisch statt flach.
+  const discBase = hell
+    ? "radial-gradient(circle at 50% 40%, #faf7f0 0%, #f2ecdd 55%, #e7dfcc 100%)"
+    : "radial-gradient(circle at 50% 40%, #141821 0%, #0c0e13 58%, #060710 100%)";
+  const sheen = hell ? "rgba(255,255,255,.7)" : "rgba(255,255,255,.10)";
+  const edgeShadow = P.teal
+    ? (hell ? "rgba(10,66,76,.26)" : "rgba(0,0,0,.62)")
+    : (hell ? "rgba(120,86,14,.26)" : "rgba(0,0,0,.62)");
+  return `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
 body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:#ffffff}
-${P.bg}
-.bg{border-radius:50%}
-.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.955)}px;height:${Math.round(w*0.955)}px;border-radius:50%;border:2px solid rgba(${P.ring})}
-.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.62)}px;height:${Math.round(w*0.62)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".22" : ".35"}), transparent 66%);filter:blur(30px)}
+.disc{position:absolute;inset:0;border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 47%, rgba(${P.glow},${hell ? ".52" : ".62"}), transparent 40%),
+    radial-gradient(circle at 50% 47%, rgba(${P.glow},${hell ? ".26" : ".34"}), transparent 64%),
+    radial-gradient(circle at 32% 22%, ${sheen}, transparent 42%),
+    ${discBase};
+  box-shadow:inset 0 4px 26px ${sheen}, inset 0 -54px 100px -20px ${edgeShadow}, inset 0 0 0 1px rgba(${P.glow},${hell ? ".20" : ".24"})}
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.955)}px;height:${Math.round(w*0.955)}px;border-radius:50%;border:2px solid rgba(${P.ring});box-shadow:0 0 ${Math.round(w*0.03)}px rgba(${P.glow},${hell ? ".30" : ".44"}), inset 0 0 ${Math.round(w*0.018)}px rgba(${P.glow},${hell ? ".18" : ".26"})}
+.ring2{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.86)}px;height:${Math.round(w*0.86)}px;border-radius:50%;border:1px solid rgba(${P.glow},${hell ? ".18" : ".22"})}
+.aura{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.8)}px;height:${Math.round(w*0.8)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".5" : ".62"}), transparent 66%);filter:blur(42px)}
+.core{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:${Math.round(w*0.5)}px;height:${Math.round(w*0.5)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".4" : ".48"}), transparent 60%);filter:blur(22px)}
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.brain{width:${Math.round(w*0.56)}px;height:auto;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(${P.glow},.45))}
+.brain{width:${Math.round(w*0.56)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 50px rgba(${P.glow},.65)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".2" : ".42"}))}
 </style></head><body>
-<div class="bg"></div><div class="ring"></div><div class="glow"></div>
+<div class="disc"></div><div class="ring2"></div><div class="ring"></div>
+<div class="aura"></div><div class="core"></div>
 <div class="center"><img class="brain" src="${P.brainUrl}"></div>
 </body></html>`;
+};
 
 // YouTube-Video-Thumbnail 16:9 – klickstark, großer Titel + Akzentwort
 const thumbnail = (w, h, data, P) => shell(w, h, `

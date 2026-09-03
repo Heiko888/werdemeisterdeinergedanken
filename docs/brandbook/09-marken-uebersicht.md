@@ -69,6 +69,29 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **03.09.2026 – E-Book-PDF neu gerendert (aktuelles Gold-Seitengehirn).** Das
+  Lead-Magnet-PDF `public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf` stammte
+  noch vom 31.08. – also **vor** der Gold-Seitengehirn-Umstellung (02.09.) – und
+  zeigte auf dem Cover noch das alte Front-Gehirn. Neu gebaut mit
+  `tools/pdf/build-ebook.py` (bindet `public/logo-brain-gold.png` ein) →
+  Chromium-Print; Header-Emblem und großes Cover-Motiv sind jetzt das aktuelle
+  Seitengehirn. Voller Neubau aller PDFs via `npm run pdf`.
+- **03.09.2026 – Website-Cover/Mockup ans PDF angeglichen (creme/gold).** Die
+  bisher **inkonsistenten** statischen Bilder (`public/ebook-cover.png`/`.webp`
+  war navy/türkis, `public/ebook-mockup.webp` creme mit altem Front-Gehirn)
+  wurden durch das **echte PDF-Cover-Design** ersetzt: flaches Cover
+  (1000×1414, creme/gold, neues Seitengehirn) aus der gerenderten Cover-Seite,
+  plus ein neues creme Hardcover-3D-**Mockup** (1200×1600) mit demselben Cover.
+  Damit sehen Download-PDF, Website-Vorschau und Mockup einheitlich aus.
+- **03.09.2026 – Rundes Emblem-Profilbild lebendiger.** Die Scheibe von
+  `avatarRoundPlain` (`WMDG-Profilbild-Rund-Emblem`) war zu flach. Jetzt mit
+  warmem Kern-Verlauf (Gold bzw. Türkis je Welt), diagonalem Sheen oben links,
+  Rand-Vignette und Rim-Light (inset-Schatten), zweitem feinem Innenring und
+  stärkerer Aura/Core-Glow hinter dem Gehirn – wirkt plastisch statt flach.
+  Alle vier Welten neu gerendert. **Dasselbe** gilt jetzt für das
+  **quadratische** Emblem-Profilbild (`avatarSquarePlain`,
+  `WMDG-Profilbild-Quadrat`): warme Fläche mit Kern-Verlauf, Sheen,
+  Eck-Vignette und feinem gold-getöntem Innenrahmen.
 - **03.09.2026 – Alte Front-Gehirn-Profilbilder entfernt.** Die Legacy-Dateien
   `WMDG-Profilbild-1080`, `WMDG-Profilbild-rund-1080` und `WMDG-Profilbild-rund-500`
   (je dunkel + Creme) trugen noch das frühere **frontale** Gehirn und passten nicht
