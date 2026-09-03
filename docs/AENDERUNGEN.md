@@ -5,6 +5,32 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Öffentlicher Header: Logo bricht nicht mehr um (Desktop)
+
+Im **öffentlichen** Header (nicht im Mitgliederbereich) brach die Wortmarke auf
+Desktop um: „WERDE MEISTER" rutschte auf zwei Zeilen und wirkte „verschoben".
+
+**Ursache:** Der öffentliche Header trägt mehr Inhalt als der Mitglieder-Header
+– zusätzlich den Nav-Punkt „Mitgliedschaft" **und** den CTA-Button „Kostenloses
+Erstgespräch". Gemessen mit den echten Schriften überschreitet die Zeile den
+Container (max-w-6xl, ~1088 px Inhalt) um ~23 px. Da das Logo keinen festen
+Platz beanspruchte (`flex-shrink` aktiv), wurde es gestaucht und die Wortmarke
+umbrach. Im Mitgliederbereich (weniger Inhalt, kein Button) passt alles → dort
+war das Logo immer korrekt.
+
+**Geändert (nur öffentlicher Header betroffen, Mitgliederbereich unverändert):**
+- `src/components/layout/Header.tsx`:
+  - `<Logo className="shrink-0" />` – das Logo wird nie mehr gestaucht/umbrochen.
+  - Navigation im **öffentlichen** Bereich etwas kompakter: `px-3` statt `px-4`
+    pro Link und engerer Abstand (`gap-0.5`), aktive Unterstreichung
+    `after:inset-x-3`. Im Mitgliederbereich bleibt alles bei `px-4`/`gap-1`
+    (`imMitgliederbereich`-Verzweigung) – dort ändert sich **nichts**.
+
+Damit passt die öffentliche Kopfzeile mit ~25 px Reserve, das Logo steht wie im
+Mitgliederbereich. Verifiziert per Headless-Messung mit Fraunces/Inter.
+
+---
+
 ## 2026-09-03 – Wortmarke: Unterzeile „Deiner Gedanken" zentriert (war verschoben)
 
 Im Schriftlogo (Header hell + Footer dunkel) saß die zweite Zeile

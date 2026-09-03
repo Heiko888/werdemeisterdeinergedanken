@@ -25,6 +25,20 @@ export function Header() {
     ? mainNav.filter((item) => item.href !== "/mitgliedschaft")
     : mainNav;
 
+  // Der öffentliche Header trägt mehr Inhalt als der Mitglieder-Header
+  // (zusätzlicher Nav-Punkt „Mitgliedschaft" plus der CTA-Button „Kostenloses
+  // Erstgespräch"). Ohne Gegenmaßnahme überläuft die Zeile den Container um
+  // ~23 px; da das Logo keinen festen Platz beansprucht, staucht der Flexbox es
+  // und „WERDE MEISTER" bricht auf zwei Zeilen um (wirkt „verschoben"). Deshalb
+  // ist die Navigation im öffentlichen Bereich etwas kompakter (px-3 statt
+  // px-4, engerer Abstand). Der Mitgliederbereich hat reichlich Platz und
+  // bleibt daher unverändert (px-4).
+  const navGap = imMitgliederbereich ? "gap-1" : "gap-0.5";
+  const navItemPad = imMitgliederbereich ? "px-4" : "px-3";
+  const navUnderlineInset = imMitgliederbereich
+    ? "after:inset-x-4"
+    : "after:inset-x-3";
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
@@ -69,17 +83,24 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5 sm:px-8">
-        <Logo />
+        <Logo className="shrink-0" />
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Hauptmenü">
+        <nav
+          className={cn("hidden items-center lg:flex", navGap)}
+          aria-label="Hauptmenü"
+        >
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                "relative whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
+                "relative whitespace-nowrap rounded-full py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
+                navItemPad,
                 pathname === item.href &&
-                  "font-semibold text-gold-700 hover:text-gold-700 after:absolute after:inset-x-4 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-gold-400 after:to-gold-500 after:content-['']",
+                  cn(
+                    "font-semibold text-gold-700 hover:text-gold-700 after:absolute after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-gold-400 after:to-gold-500 after:content-['']",
+                    navUnderlineInset,
+                  ),
               )}
               aria-current={pathname === item.href ? "page" : undefined}
             >
