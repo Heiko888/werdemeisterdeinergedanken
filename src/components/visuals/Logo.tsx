@@ -60,7 +60,7 @@ export function Logo({
           </span>
           {/* Zeile 2: „DEINER GEDANKEN“ – kleiner, weit gesperrt, mit goldenen
               Flankier-Strichen (rein dekorativ). */}
-          <span className="flex items-center gap-2">
+          <span className="flex items-center justify-center gap-2">
             <span
               aria-hidden
               className={cn(

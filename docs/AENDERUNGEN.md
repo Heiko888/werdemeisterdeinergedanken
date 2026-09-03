@@ -5,6 +5,46 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Wortmarke: Unterzeile „Deiner Gedanken" zentriert (war verschoben)
+
+Im Schriftlogo (Header hell + Footer dunkel) saß die zweite Zeile
+`— Deiner Gedanken —` **linksbündig** unter „WERDE MEISTER" und wirkte dadurch
+nach links **verschoben**. Ursache: Die Zeile liegt in einer Flex-Spalte, die
+ihre Kinder auf die Breite der (breiteren) ersten Zeile streckt – ohne
+Zentrierung wurde der Dekor-Strich-Text-Block links gepackt.
+
+**Geändert:**
+- `src/components/visuals/Logo.tsx`: Der zweiten Zeile (`— Deiner Gedanken —`)
+  `justify-center` gegeben, sodass sie **mittig unter „WERDE MEISTER"** sitzt –
+  symmetrisch mit den goldenen Flankier-Strichen, passend zum Marken-Emblem.
+
+Wirkt in beiden Varianten (`tone="onLight"` im Header, `tone="onDark"` im Footer).
+Verifiziert per Headless-Render mit der echten Fraunces-Schrift (Vorher/Nachher).
+
+---
+
+## 2026-09-03 – Footer-Copyright-Zeile: Mobil-Ausrichtung korrigiert
+
+Die untere Copyright-Zeile im Footer (`© … Alle Rechte vorbehalten.` +
+`Werde Meister deiner Gedanken · Bewusstseinsentwicklung in 7 Stufen`) wurde auf
+schmalen/mittleren Bildschirmen **nebeneinander an die Ränder gezogen** (unruhig,
+wirkte „nicht richtig platziert"), weil sie schon ab `sm` (640 px) auf
+`flex-row justify-between` umgeschaltet hat.
+
+**Geändert:**
+- `src/components/layout/Footer.tsx` (Copyright-Leiste):
+  - Umschalt-Breakpoint von `sm:` auf `lg:` (1024 px) angehoben – passt zum
+    restlichen Footer, der ebenfalls erst ab `lg` volle Breite nutzt.
+  - Auf Mobil/Tablet jetzt **gestapelt und zentriert** (`flex-col items-center
+    text-center`); erst ab `lg` nebeneinander und linksbündig
+    (`lg:flex-row lg:justify-between lg:text-left`).
+  - `justify-between` greift dadurch nur noch im Zeilen-Layout ab `lg`.
+
+Verifiziert per Headless-Screenshots bei 500 px (gestapelt/zentriert), 820 px
+(gestapelt/zentriert) und 1100 px (nebeneinander).
+
+---
+
 ## 2026-09-03 – Footer-Eisvogel getauscht: Gold → Blau (echtes Motiv)
 
 Der Eisvogel im Footer wurde vom **goldenen** auf das **blaue** (naturechte)
