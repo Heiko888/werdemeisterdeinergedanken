@@ -11,7 +11,7 @@ import { HERO_GLOW } from "@/lib/gradients";
 import { stages } from "@/lib/content";
 import { withCanonical } from "@/lib/seo";
 import ebookMockup from "../../../public/ebook-mockup.webp";
-import heikoPortrait from "../../../public/heiko-portrait.webp";
+import heikoPortrait from "../../../public/heiko-avatar.webp";
 
 export const metadata: Metadata = withCanonical("/gratis-ebook", {
   title: "Kostenloses E-Book: Die 7 Stufen der Bewusstseinsentwicklung",

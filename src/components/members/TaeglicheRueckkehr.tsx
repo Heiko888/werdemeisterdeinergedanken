@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
 import Link from "next/link";
 import { ArrowRight } from "@/components/ui/Icon";
@@ -167,7 +168,7 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
       {/* Rhythmus der letzten vier Wochen */}
       <div className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between">
-          <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+          <span className={memberEyebrow}>
             Dein Rhythmus
           </span>
           <span className="text-sm text-ink-mid">letzte 4 Wochen</span>

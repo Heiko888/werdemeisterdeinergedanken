@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { memberEyebrow } from "@/lib/uiClasses";
 import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
@@ -66,7 +67,7 @@ export default function VertiefungenPage() {
                 <Brain />
               </span>
               <div>
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                <span className={memberEyebrow}>
                   Zum Nachschlagen · 27 Kapitel
                 </span>
                 <p className="font-display text-lg font-medium text-ink transition-colors group-hover:text-accent">

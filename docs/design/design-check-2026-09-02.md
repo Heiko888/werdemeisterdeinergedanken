@@ -74,17 +74,22 @@ wechselt jetzt durchgehend dunkel/hell).
 
 Verifiziert mit `next build` (Exit 0), `eslint` (clean); L5 zusätzlich per Playwright-Screenshot.
 
-Bewusst **nicht** umgesetzt (mit Begründung):
-- **M3-Rest** — die noch nicht migrierten Basis-Karten haben bespoke Klassen (eigene Hover/`sm:p-8`)
-  und `<div>`-Verschachtelung mit mehrdeutigen Schließ-Tags. Reiner **unsichtbarer** Dedup mit
-  Struktur-Risiko → nicht blind gemacht. `Card` ist einsatzbereit (inkl. Prop-Weitergabe), die
-  exakt-identischen Basis-Karten sind bereits migriert (Durchgang 1). Rest bei Gelegenheit.
-- **M5 Eyebrow** — 21 handgeschriebene `text-accent`-Labels im **Mitgliederbereich**. Adoption von
-  `<Eyebrow>` fügt eine Haarlinie hinzu und weitet die Sperrung (0.2em→0.28em) → **sichtbare**
-  Änderung, hier ohne Login/Supabase nicht am Bild prüfbar. Empfehlung: beim nächsten
-  eingeloggten Durchgang mit Sichtkontrolle.
-- **B5 Avatar-Bild** — `heiko-portrait.webp` (sepia) bricht den warmen Look in kleinen Avataren.
-  Braucht einen **warmen Avatar-Ausschnitt** als neues Asset (kann nicht sinnvoll erfunden werden).
+**2026-09-03 — Durchgang 6 (B5 + M5):**
+
+| Fund | Umsetzung | Datei |
+|------|-----------|-------|
+| **B5** | Neuer warmer Avatar `public/heiko-avatar.webp` — quadratischer, gesichtsfüllender Ausschnitt aus `heiko-hero.webp` (warmes Abendlicht) statt des sepiafarbenen `heiko-portrait.webp`. Ersetzt in WhyMe (Home), gratis-ebook und Blog-Autor. Screenshot-verifiziert bei 56/80/112px. | `WhyMe.tsx`, `gratis-ebook/page.tsx`, `blog/[slug]/page.tsx` |
+| **M5** | Die 21 hand-kopierten Eyebrow-Labels im Mitgliederbereich in eine gemeinsame Konstante `memberEyebrow` gezogen (eine Quelle statt 21 Kopien, **Optik unverändert**). Bewusst die schmalere `0.2em`-Panel-Sperrung beibehalten statt der Marketing-`<Eyebrow>`-Haarlinie — so keine unverifizierte Sicht-Änderung im Login-Bereich. | `lib/uiClasses.ts` + 11 Dateien |
+
+Verifiziert mit `next build` (Exit 0), `eslint` (clean); B5 zusätzlich per Playwright-Screenshot
+(WhyMe/Home, gratis-ebook, Blog-Autor).
+
+Damit sind alle Funde des Berichts adressiert. Verbleibend nur:
+- **M3-Rest** (rein **unsichtbarer** Card-Dedup): die restlichen Basis-Karten haben bespoke Klassen +
+  `<div>`-Verschachtelung mit mehrdeutigen Schließ-Tags → nicht blind konvertiert, kein optischer
+  Gewinn. `Card` steht bereit; exakt-identische Basis-Karten sind migriert. Optionaler Wartungs-Rest.
+- Alte `heiko-portrait.webp` bleibt im Repo (evtl. in E-Mail-Vorlagen/Tools genutzt) — im `src/`-Code
+  nicht mehr referenziert.
 
 ---
 

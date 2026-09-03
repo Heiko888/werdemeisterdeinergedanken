@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -189,7 +190,7 @@ export default async function StagePage({
           {stagePractices.length > 0 && (
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                <span className={memberEyebrow}>
                   Gelebte Praxis
                 </span>
                 <h2 className="font-display text-xl font-medium text-ink">
@@ -262,7 +263,7 @@ export default async function StagePage({
           {related.length > 0 && (
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                <span className={memberEyebrow}>
                   Wissens-Bibliothek
                 </span>
                 <h2 className="font-display text-xl font-medium text-ink">

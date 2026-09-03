@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -319,7 +320,7 @@ export default async function MembersPage() {
       <section className="pt-8 sm:pt-10">
         <Container>
           <div className="flex flex-col gap-2">
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+            <span className={memberEyebrow}>
               Willkommen
             </span>
             <h2 className="font-display text-2xl font-medium text-ink">
@@ -430,7 +431,7 @@ export default async function MembersPage() {
         <Container size="narrow">
           <div className="flex items-baseline justify-between gap-4">
             <div>
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              <span className={memberEyebrow}>
                 Dein Weg
               </span>
               <h2 className="mt-1 font-display text-2xl font-medium text-ink">
@@ -533,7 +534,7 @@ export default async function MembersPage() {
           <Container>
             <div className="flex flex-col items-start justify-between gap-5 rounded-2xl border border-ink/10 bg-white p-7 shadow-card sm:flex-row sm:items-center sm:p-8">
               <div className="flex flex-col gap-1">
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                <span className={memberEyebrow}>
                   Wöchentlicher Impuls
                 </span>
                 <h2 className="font-display text-xl font-medium text-ink">
@@ -556,7 +557,7 @@ export default async function MembersPage() {
         <section className="border-t border-ink/10 bg-surface-2 py-14 sm:py-16">
           <Container>
             <div className="flex flex-col gap-2">
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              <span className={memberEyebrow}>
                 Dein Werkzeugkasten
               </span>
               <h2 className="font-display text-2xl font-medium text-ink">
@@ -605,7 +606,7 @@ export default async function MembersPage() {
         <Container>
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="flex flex-col gap-2">
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              <span className={memberEyebrow}>
                 Wissens-Bibliothek
               </span>
               <h2 className="font-display text-2xl font-medium text-ink">
@@ -662,7 +663,7 @@ export default async function MembersPage() {
                 <Brain />
               </span>
               <div>
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                <span className={memberEyebrow}>
                   Wissensdatenbank · 27 Kapitel
                 </span>
                 <p className="font-display text-lg font-medium text-ink transition-colors group-hover:text-accent">
@@ -680,7 +681,7 @@ export default async function MembersPage() {
         <Container>
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="flex flex-col gap-2">
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              <span className={memberEyebrow}>
                 Gelebte Praxis
               </span>
               <h2 className="font-display text-2xl font-medium text-ink">

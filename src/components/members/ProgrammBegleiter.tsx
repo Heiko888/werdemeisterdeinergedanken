@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { ArrowRight } from "@/components/ui/Icon";
 import { setProgrammTag } from "@/app/mitglieder/programm-actions";
@@ -80,7 +81,7 @@ export function ProgrammBegleiter({
       {/* Fortschritt */}
       <div className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between">
-          <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+          <span className={memberEyebrow}>
             Dein Weg
           </span>
           <span className="text-sm font-medium text-ink-mid tabular-nums">
@@ -104,7 +105,7 @@ export function ProgrammBegleiter({
       {/* Aktueller Tag */}
       <article className="flex flex-col gap-5 rounded-2xl border border-accent/25 bg-white p-7 shadow-card sm:p-9">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+          <span className={memberEyebrow}>
             Tag {tag.tag}
             {woche ? ` · Woche ${woche.nr} – ${woche.titel}` : ""}
           </span>
