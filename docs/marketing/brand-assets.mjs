@@ -139,16 +139,22 @@ const avatarRound = (w, P) => {
   </div>`, P);
 };
 
-// Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel)
+// Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel).
+// Trägt das echte Schriftlogo-Lockup wie im Website-Header: „WERDE MEISTER“
+// (Fraunces, „Meister“ in Gold) über „— DEINER GEDANKEN —“ mit Flankier-Strichen.
 const channelSquare = (w, P) => shell(w, w, `
-.stack{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:${Math.round(w*0.045)}px;text-align:center;padding:0 ${Math.round(w*0.08)}px}
+.stack{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:${Math.round(w*0.038)}px;text-align:center;padding:0 ${Math.round(w*0.08)}px}
 .glow{left:50%;top:38%;transform:translate(-50%,-50%);width:${Math.round(w*0.5)}px;height:${Math.round(w*0.5)}px}
-.brain{width:${Math.round(w*0.44)}px;height:${Math.round(w*0.44)}px}
-.wordmark{font-size:${Math.round(w*0.062)}px;letter-spacing:${Math.round(w*0.008)}px;line-height:1.35}
-.url{font-size:${Math.round(w*0.03)}px;margin-top:${Math.round(w*0.01)}px}
+.brain{width:${Math.round(w*0.42)}px;height:auto}
+.wm1{font-family:Fraunces,serif;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:${P.hell ? "#16231f" : "#f4f2ec"};font-size:${Math.round(w*0.082)}px;line-height:1.06;margin-top:${Math.round(w*0.01)}px}
+.wm1 span{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
+.wm2{display:flex;align-items:center;justify-content:center;gap:${Math.round(w*0.016)}px;font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.24em;color:${P.hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.75)"};font-size:${Math.round(w*0.034)}px;line-height:1}
+.wm2 i{display:block;height:1px;width:${Math.round(w*0.05)}px;background:${P.tick}}
+.url{font-size:${Math.round(w*0.03)}px;margin-top:${Math.round(w*0.02)}px}
 `, `<div class="stack">
   <img class="brain" src="${P.brainUrl}">
-  <div class="wordmark">Werde Meister deiner<br><span>Gedanken</span></div>
+  <div class="wm1">Werde <span>Meister</span></div>
+  <div class="wm2"><i></i>Deiner Gedanken<i></i></div>
   <div class="url">www.werdemeisterdeinergedanken.de</div>
 </div>`, P);
 
@@ -160,6 +166,25 @@ const avatarSquarePlain = (w, P) => shell(w, w, `
 .brain{width:${Math.round(w*0.6)}px;height:auto}
 `, `<div class="center"><div class="ring"></div><div class="glow"></div>
   <img class="brain" src="${P.brainUrl}"></div>`, P);
+
+// Rundes Profilbild NUR Emblem (ohne Schriftzug) – runde Scheibe mit feinem
+// Ring, mittig das Gehirn. Der Grund liegt als Kreis (border-radius:50%), die
+// Ecken sind weiß – so wirkt es als eigenständige runde Grafik und wird von
+// allen Plattformen sauber kreisförmig beschnitten.
+const avatarRoundPlain = (w, P) => `<!doctype html><html><head><meta charset="utf8">
+<link rel="stylesheet" href="${fontsUrl}"><style>
+*{margin:0;box-sizing:border-box}
+body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:#ffffff}
+${P.bg}
+.bg{border-radius:50%}
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.955)}px;height:${Math.round(w*0.955)}px;border-radius:50%;border:2px solid rgba(${P.ring})}
+.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.62)}px;height:${Math.round(w*0.62)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".22" : ".35"}), transparent 66%);filter:blur(30px)}
+.center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.brain{width:${Math.round(w*0.56)}px;height:auto;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(${P.glow},.45))}
+</style></head><body>
+<div class="bg"></div><div class="ring"></div><div class="glow"></div>
+<div class="center"><img class="brain" src="${P.brainUrl}"></div>
+</body></html>`;
 
 // YouTube-Video-Thumbnail 16:9 – klickstark, großer Titel + Akzentwort
 const thumbnail = (w, h, data, P) => shell(w, h, `
@@ -467,6 +492,7 @@ const TARGETS = [];
 // Avatare
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, hell: true, html: (P) =>avatarRound(1080, P) });
 TARGETS.push({ file: "profil/WMDG-Profilbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarSquarePlain(1080, P) });
+TARGETS.push({ file: "profil/WMDG-Profilbild-Rund-Emblem.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarRoundPlain(1080, P) });
 TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische

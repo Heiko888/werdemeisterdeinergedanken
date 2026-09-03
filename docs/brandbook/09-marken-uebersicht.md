@@ -69,6 +69,25 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **03.09.2026 – Echtes Schriftlogo überall + neues rundes Emblem-Profilbild.**
+  Drei Dinge:
+  1. **Kanalbild** (`channelSquare` in `brand-assets.mjs`: `WMDG-WhatsApp-Kanalbild`,
+     `WMDG-Messenger-Kanalbild`, `WMDG-Kanalbild-Quadrat`) zeigte die Wortmarke nur
+     als schlichten Versal-Blocktext. Jetzt trägt es das **vollständige
+     Header-Lockup**: „WERDE MEISTER" in Fraunces („Meister" im Gold-Verlauf) über
+     „— DEINER GEDANKEN —" mit Flankier-Strichen (identisch zu
+     `src/components/visuals/Logo.tsx`). Alle vier Welten neu gerendert.
+  2. **Instagram-Story-Logo** (`logoBody` in `docs/marketing/social-banners.mjs`)
+     nutzte denselben falschen Block-Schriftzug → jetzt ebenfalls echtes Lockup
+     (dunkel + Creme). Andere Banner unverändert.
+  3. Neues **rundes Emblem-Profilbild ohne Schriftzug** (`avatarRoundPlain`,
+     Ziel `profil/WMDG-Profilbild-Rund-Emblem.png`): runde Scheibe mit feinem Ring
+     und zentriertem 3D-Gehirn, in allen vier Welten – die Creme-Variante zeigt das
+     **goldene** Gehirn.
+  Story-Carousels und Content-Overlays trugen das Lockup bereits korrekt.
+  Neu erzeugen: `ONLY=Kanalbild node docs/marketing/brand-assets.mjs` ·
+  `ONLY=Profilbild-Rund-Emblem node docs/marketing/brand-assets.mjs` ·
+  `node docs/marketing/social-banners.mjs`.
 - **03.09.2026 – Willkommens-Thumbnail: „Mitgliederbereich · Video"-Tag unten
   links.** Auf dem Willkommens-Thumbnail (`public/video-thumbnails/willkommen*.png`,
   einziges Motiv mit freigestelltem Porträt) saß der Reihen-Tag oben rechts direkt
