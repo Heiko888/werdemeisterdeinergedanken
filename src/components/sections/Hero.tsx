@@ -86,11 +86,11 @@ export function Hero() {
 
       <Container className="grid gap-8 pt-14 pb-16 sm:gap-10 sm:pt-28 sm:pb-20 lg:grid-cols-[0.95fr_1fr] lg:items-end lg:pb-0">
         <div className="flex flex-col items-start gap-7 sm:gap-8 lg:self-center lg:pb-28">
-          <Reveal>
+          <Reveal className="order-1 lg:order-none">
             <Eyebrow>Bewusstseinsentwicklung in 7 Stufen</Eyebrow>
           </Reveal>
 
-          <Reveal delay={80}>
+          <Reveal delay={80} className="order-2 lg:order-none">
             <h1 className="max-w-2xl text-[2.15rem] font-medium leading-[1.08] text-cream sm:text-5xl md:text-6xl">
               Nicht die <em className="accent">Umstände</em> formen dich,
               sondern was du darüber <em className="accent">denkst</em>.
@@ -98,7 +98,7 @@ export function Hero() {
           </Reveal>
 
           {/* Mobil: Porträt direkt unter der Überschrift (Desktop nutzt die rechte Spalte) */}
-          <Reveal delay={120} className="relative mx-auto w-fit self-center lg:hidden">
+          <Reveal delay={120} className="relative order-4 mx-auto w-fit self-center lg:hidden">
             <div
               aria-hidden
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[104%] w-[100%] -translate-x-1/2 -translate-y-1/2 opacity-70 blur-2xl"
@@ -119,7 +119,7 @@ export function Hero() {
             />
           </Reveal>
 
-          <Reveal delay={160}>
+          <Reveal delay={160} className="order-5 lg:order-none">
             <p className="max-w-xl text-lg leading-relaxed text-cream/75">
               Die meisten Menschen werden von ihren Gedanken gelebt. Lerne, sie zu
               durchschauen, alte Muster zu entprogrammieren und deinen inneren
@@ -127,7 +127,7 @@ export function Hero() {
             </p>
           </Reveal>
 
-          <Reveal delay={220}>
+          <Reveal delay={220} className="order-3 lg:order-none">
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button href="/die-7-stufen" variant="accent" size="lg">
                 Die 7 Stufen entdecken
@@ -139,7 +139,7 @@ export function Hero() {
             </div>
           </Reveal>
 
-          <Reveal delay={280}>
+          <Reveal delay={280} className="order-6 lg:order-none">
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-cream/60">
               {proof.map((p, i) => (
                 <li key={p} className="flex items-center gap-3">

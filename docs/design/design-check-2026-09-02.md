@@ -45,15 +45,25 @@ identisch zu `ink-mid`, daher überall sicher; der AA-Gewinn greift auf hellem G
 
 Verifiziert mit `next build` (Exit 0) und `eslint` (clean).
 
-Offen (nächste Durchgänge — brauchen laufende App zur Sichtprüfung im Mitgliederbereich):
-- **M3 Rest** — weitere Basis-Karten inkl. der interaktiven `<Link>`-Karten
-  (`mitglieder/page.tsx`, `wissensdatenbank`, `wissen`) auf `<Card>` umstellen (unsichtbare Dedup).
-- **M2 Pill-Buttons** — 5+ handkopierte Pill-CTAs (Member-Panels) vereinheitlichen;
-  betrifft `<button type="submit">` mit eigener Disabled-Logik → sichtbare Änderung.
-- **M5 Eyebrow** — 23 handgeschriebene Labels mit gemischten Farben/Größen; einige
-  sind `<figcaption>` oder liegen auf Dunkel → nur die exakten hellen `text-accent`-Labels adoptieren.
-- **L2** Hero-CTA über dem Fold (mobil), **L3** Homepage-Takt (3 helle Sektionen), **L5** leere Rasterzelle
-  `/gratis-ebook`, **B5** Avatar-Bild — jeweils mit Sichtprüfung.
+**2026-09-03 — Durchgang 3 (mit laufender App, Screenshot-verifiziert):**
+
+| Fund | Umsetzung | Datei |
+|------|-----------|-------|
+| **L2** | Hero-CTA über dem Fold (mobil): CTAs erscheinen unter `lg` jetzt **vor** dem Porträt (per `order`-Klassen, Desktop via `lg:order-none` unverändert). Vorher/Nachher am 390×844-Screenshot bestätigt — beide CTAs sind mobil sofort sichtbar. | `Hero.tsx` |
+
+Verifiziert mit `next build` (Exit 0), `eslint` (clean) und Playwright-Screenshots
+(mobil 390×844 + Desktop 1440 zur Regressionskontrolle).
+
+Offen — brauchen eine **Design-Entscheidung** bzw. Mitgliederbereich-Sicht (Login/Supabase):
+- **L3 Homepage-Takt** (Testimonials dunkel → MaybeNotYou/LeadMagnet/Faq **3× hell** → FinalCta dunkel).
+  Sauberer Wechsel bräuchte die **mittlere** Sektion (LeadMagnet) auf Dunkel — aber deren weiße
+  Formular-Karte enthält `text-ink-*`, das unter `.on-dark` auf Weiß flippt und unsichtbar würde.
+  Also **echte Umgestaltung** der Conversion-Sektion (Karten-Text explizit dunkel halten), keine
+  sichere Kleinänderung → Entscheidung/Freigabe nötig.
+- **L5** leere Rasterzelle `/gratis-ebook` (7 Karten in 3 Spalten) — „richtige" Balance ist Geschmackssache.
+- **B5** Avatar-Bild (sepia) — bräuchte einen warmen Avatar-Ausschnitt (Asset fehlt).
+- **M3-Rest** (unsichtbare Card-Dedup), **M2** Pill-Buttons, **M5** Eyebrow — Mitgliederbereich,
+  hier nicht screenshot-verifizierbar.
 
 ---
 
