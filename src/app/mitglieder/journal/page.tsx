@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -99,7 +100,7 @@ export default async function JournalPage() {
         <Container className="flex flex-col items-start gap-5">
           {/* Nur beim Drucken sichtbar: Buch-Kopf */}
           <div className="hidden w-full flex-col gap-1 border-b border-ink/15 pb-4 print:flex">
-            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+            <span className={memberEyebrow}>
               Werde Meister deiner Gedanken
             </span>
             <span className="font-display text-2xl font-medium text-ink">
@@ -148,7 +149,7 @@ export default async function JournalPage() {
         <Container>
           <div className="mx-auto flex max-w-2xl flex-col gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-gold-500/[0.06] to-gold-500/[0.06] p-7 shadow-card sm:p-9">
             <div>
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+              <span className={memberEyebrow}>
                 Deine Standortbestimmung
               </span>
               <h2 className="mt-1 font-display text-2xl font-medium text-ink">
@@ -209,7 +210,7 @@ export default async function JournalPage() {
             <div className="mx-auto max-w-2xl">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <div>
-                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                  <span className={memberEyebrow}>
                     Deine Entwicklung
                   </span>
                   <h2 className="mt-1 font-display text-2xl font-medium text-ink">

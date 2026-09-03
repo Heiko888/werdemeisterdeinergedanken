@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
 import { generateReading, type Reading } from "@/app/mitglieder/reading-actions";
 
@@ -60,7 +61,7 @@ export function ReadingPanel({
   return (
     <div className="flex flex-col gap-5 rounded-2xl border border-accent/25 bg-white p-6 shadow-card sm:p-8">
       <div className="flex flex-col gap-1">
-        <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+        <span className={memberEyebrow}>
           Persönliches Reading
         </span>
         <h2 className="font-display text-2xl font-medium text-ink">

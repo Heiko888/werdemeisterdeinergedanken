@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
 import {
   generateMusterSpiegel,
@@ -64,7 +65,7 @@ export function MusterSpiegelPanel({
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-5 rounded-2xl border border-accent/25 bg-white p-7 shadow-card sm:p-9">
       <div className="flex flex-col gap-1">
-        <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+        <span className={memberEyebrow}>
           Dein Muster-Spiegel
         </span>
         <h2 className="font-display text-2xl font-medium text-ink">

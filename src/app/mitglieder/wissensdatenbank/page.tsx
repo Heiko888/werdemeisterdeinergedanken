@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
@@ -70,7 +71,7 @@ export default async function WissenPage() {
                 <Spark />
               </span>
               <div>
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                <span className={memberEyebrow}>
                   Zum Anwenden &amp; Üben · an deiner Stufe
                 </span>
                 <p className="font-display text-lg font-medium text-ink transition-colors group-hover:text-accent">

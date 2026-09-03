@@ -1,4 +1,5 @@
 import { APP_GLOW } from "@/lib/gradients";
+import { memberEyebrow } from "@/lib/uiClasses";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -225,7 +226,7 @@ export default async function GedankenprofilPage() {
           <section className="border-t border-ink/10 bg-white/60 py-14 sm:py-20">
             <Container>
               <div className="mx-auto max-w-2xl">
-                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+                <span className={memberEyebrow}>
                   Bedarfsanalyse
                 </span>
                 <h2 className="mt-1 font-display text-2xl font-medium text-ink">

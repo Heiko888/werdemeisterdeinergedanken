@@ -287,7 +287,7 @@ export default async function BlogPostPage({
           {/* Autor-Signatur – Gesicht schafft Vertrauen und Handschrift */}
           <div className="mt-14 flex items-center gap-4 border-t border-ink/10 pt-8">
             <Image
-              src="/heiko-portrait.webp"
+              src="/heiko-avatar.webp"
               alt="Heiko Schwaninger"
               width={56}
               height={56}

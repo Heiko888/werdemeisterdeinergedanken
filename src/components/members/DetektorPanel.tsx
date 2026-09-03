@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
 import Link from "next/link";
 import {
@@ -63,7 +64,7 @@ export function DetektorPanel() {
       <div className="flex flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8">
         <label
           htmlFor="detektor-text"
-          className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent"
+          className={memberEyebrow}
         >
           Text zum Prüfen
         </label>

@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { values } from "@/lib/content";
-import heikoPortrait from "../../../public/heiko-portrait.webp";
+import heikoPortrait from "../../../public/heiko-avatar.webp";
 
 export function WhyMe() {
   return (
