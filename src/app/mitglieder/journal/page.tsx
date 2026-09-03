@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -263,7 +264,7 @@ export default async function JournalPage() {
             <ol className="mx-auto flex max-w-2xl flex-col gap-5">
               {resolved.map(({ entry, ctx }) => (
                 <li key={`${entry.itemType}-${entry.itemKey}-${entry.ref}`}>
-                  <article className="flex break-inside-avoid flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card print:shadow-none">
+                  <Card as="article" className="flex break-inside-avoid flex-col gap-3 print:shadow-none">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <Link
                         href={ctx.href}
@@ -284,7 +285,7 @@ export default async function JournalPage() {
                     <p className="whitespace-pre-wrap text-[1rem] leading-relaxed text-ink-mid">
                       {entry.body}
                     </p>
-                  </article>
+                  </Card>
                 </li>
               ))}
             </ol>

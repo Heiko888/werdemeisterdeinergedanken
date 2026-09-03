@@ -86,7 +86,7 @@ export default async function PracticePage({
               Geführte Aufnahme
             </span>
             {practice.audio ? (
-              <div className="mt-3 flex flex-col items-center gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8">
+              <Card className="mt-3 flex flex-col items-center gap-4 sm:p-8">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-2xl text-accent">
                   <Play />
                 </span>
@@ -101,7 +101,7 @@ export default async function PracticePage({
                 >
                   Dein Browser kann diese Audiodatei nicht abspielen.
                 </audio>
-              </div>
+              </Card>
             ) : (practice.video ?? site.placeholderVideoId) ? (
               <VideoEmbed
                 videoId={(practice.video ?? site.placeholderVideoId)!}

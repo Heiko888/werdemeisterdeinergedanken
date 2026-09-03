@@ -209,7 +209,7 @@ export default function GratisEbookPage() {
               const Icon = step.icon;
               return (
                 <Reveal key={step.title} delay={i * 80}>
-                  <li className="flex h-full flex-col gap-4 rounded-2xl border border-ink/10 bg-surface p-6 shadow-card">
+                  <Card as="li" className="flex h-full flex-col gap-4">
                     <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
                       <Icon className="text-xl" />
                     </span>
@@ -224,7 +224,7 @@ export default function GratisEbookPage() {
                     <p className="text-[0.95rem] leading-relaxed text-ink-mid">
                       {step.text}
                     </p>
-                  </li>
+                  </Card>
                 </Reveal>
               );
             })}

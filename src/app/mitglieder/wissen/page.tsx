@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
 import Image from "next/image";
 import Link from "next/link";
@@ -58,9 +59,10 @@ export default function VertiefungenPage() {
           Vertiefungen = anwenden & üben zur Stufe · Wissensdatenbank = nachschlagen) */}
       <section className="pt-2">
         <Container>
-          <Link
+          <Card
+            as={Link}
             href="/mitglieder/wissensdatenbank"
-            className="group flex flex-col items-start gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30 sm:flex-row sm:items-center sm:justify-between"
+            className="group flex flex-col items-start gap-3 transition-all hover:-translate-y-0.5 hover:border-accent/30 sm:flex-row sm:items-center sm:justify-between"
           >
             <div className="flex items-center gap-4">
               <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-500/15 to-gold-500/15 text-lg text-accent">
@@ -76,7 +78,7 @@ export default function VertiefungenPage() {
               </div>
             </div>
             <ArrowRight className="shrink-0 text-ink-muted transition-all group-hover:translate-x-1 group-hover:text-accent" />
-          </Link>
+          </Card>
         </Container>
       </section>
 
