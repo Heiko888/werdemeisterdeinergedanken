@@ -33,11 +33,11 @@ export function WhatToExpect() {
           {expectations.map((item, i) => {
             const Icon = iconMap[item.icon as keyof typeof iconMap];
             return (
-              <Reveal key={item.title} delay={i * 90}>
+              <Reveal key={item.title} delay={i * 90} className="h-full">
                 <Card
                   as="article"
                   interactive
-                  className="flex min-w-0 flex-col gap-4"
+                  className="flex h-full min-w-0 flex-col gap-4"
                 >
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-xl text-navy-950 shadow-card">
                     {Icon && <Icon />}

@@ -23,7 +23,7 @@ export function StageCard({
     <Card
       as="article"
       interactive
-      className={cn("group flex min-w-0 flex-col gap-3", className)}
+      className={cn("group flex h-full min-w-0 flex-col gap-3", className)}
     >
       <div className="flex items-baseline justify-between">
         <span className="font-display text-4xl italic text-accent/80">
@@ -62,7 +62,7 @@ export function SevenStages() {
 
         <div className="mt-16 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {stages.map((stage, i) => (
-            <Reveal key={stage.number} delay={(i % 3) * 80}>
+            <Reveal key={stage.number} delay={(i % 3) * 80} className="h-full">
               <StageCard {...stage} />
             </Reveal>
           ))}

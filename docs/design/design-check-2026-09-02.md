@@ -34,16 +34,26 @@ Verifiziert mit `next build` (Exit 0) und `eslint` (clean). Prüf-Hinweis: `ink-
 ist auf `.on-dark`/`.member-hero` (Token-Flip in `globals.css:322-345`) praktisch
 identisch zu `ink-mid`, daher überall sicher; der AA-Gewinn greift auf hellem Grund.
 
-Offen (nächste Durchgänge):
+**2026-09-02 — Durchgang 2 (sichtbarer Layout-Feinschliff, öffentliche Seiten):**
+
+| Fund | Umsetzung | Datei |
+|------|-----------|-------|
+| **L1** | Header-Innenbreite `max-w-7xl` → `max-w-6xl`, damit Logo/Nav exakt mit dem Content darunter fluchten (site-weit ab ~1280px sichtbar). | `Header.tsx:71` |
+| **L4** | Gleiche Kartenhöhen im Raster: `h-full` auf Karte **und** `Reveal`-Wrapper der Stufen-Karten und der „Was dich erwartet"-Karten. | `SevenStages.tsx`, `WhatToExpect.tsx` |
+| **L9** | Header-CTA-Gruppe `gap-4` → `gap-5` (mehr Trennung zwischen Sekundärlink und Primär-CTA). | `Header.tsx:91` |
+| **L10** | Kontaktseite: symmetrischer Abschluss vor dem Footer, `pb-8` → `pb-12 sm:pb-24`. | `kontakt/page.tsx:30` |
+
+Verifiziert mit `next build` (Exit 0) und `eslint` (clean).
+
+Offen (nächste Durchgänge — brauchen laufende App zur Sichtprüfung im Mitgliederbereich):
 - **M3 Rest** — weitere Basis-Karten inkl. der interaktiven `<Link>`-Karten
-  (`mitglieder/page.tsx`, `wissensdatenbank`, `wissen`) auf `<Card>` umstellen.
+  (`mitglieder/page.tsx`, `wissensdatenbank`, `wissen`) auf `<Card>` umstellen (unsichtbare Dedup).
 - **M2 Pill-Buttons** — 5+ handkopierte Pill-CTAs (Member-Panels) vereinheitlichen;
-  betrifft `<button type="submit">` mit eigener Disabled-Logik → sichtbare Änderung,
-  besser mit laufender App gegenprüfen.
+  betrifft `<button type="submit">` mit eigener Disabled-Logik → sichtbare Änderung.
 - **M5 Eyebrow** — 23 handgeschriebene Labels mit gemischten Farben/Größen; einige
-  sind `<figcaption>` oder liegen auf Dunkel → nur die exakten hellen `text-accent`-
-  Labels adoptieren, mit App-Sichtprüfung.
-- Übrige 🔴/🟠/🟡-Funde unten (Homepage-Takt, Hero-Fold mobil, restliche Bild-/Layout-Funde).
+  sind `<figcaption>` oder liegen auf Dunkel → nur die exakten hellen `text-accent`-Labels adoptieren.
+- **L2** Hero-CTA über dem Fold (mobil), **L3** Homepage-Takt (3 helle Sektionen), **L5** leere Rasterzelle
+  `/gratis-ebook`, **B5** Avatar-Bild — jeweils mit Sichtprüfung.
 
 ---
 
