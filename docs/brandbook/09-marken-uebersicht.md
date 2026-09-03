@@ -69,6 +69,13 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **03.09.2026 – Willkommens-Thumbnail: „Mitgliederbereich · Video"-Tag unten
+  links.** Auf dem Willkommens-Thumbnail (`public/video-thumbnails/willkommen*.png`,
+  einziges Motiv mit freigestelltem Porträt) saß der Reihen-Tag oben rechts direkt
+  neben dem Kopf. Er sitzt jetzt **unten links** in der freien Fußzeile, klar weg
+  vom Gesicht (`.frame.has-portrait .tag` absolut positioniert in
+  `docs/marketing/video-thumbnails.mjs`). Neu gerendert in allen vier Welten mit
+  `ONLY=willkommen node docs/marketing/video-thumbnails.mjs`.
 - **02.09.2026 – Türkis-Emblem global auf neues 3D-Seitengehirn.** Das
   Türkis-Marken-Emblem ist jetzt das neue, freigestellte **3D-Seitengehirn**
   (Grün→Türkis→Blau, Neon-3D-Look). Getauscht: `public/logo-brain-tuerkis.png`
