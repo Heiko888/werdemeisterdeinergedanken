@@ -43,6 +43,35 @@ bleibt inhaltlich unverändert.
 
 ---
 
+## 2026-09-03 – Bewusstseinstest: Titelbild getauscht (Kompass-Plaza im Sonnenuntergang)
+
+Das Titelbild der Seite `/bewusstseinstest` wurde gegen ein neues Motiv
+getauscht: eine dunkle Stein-Plaza mit **Kompass-Intarsie** und leuchtenden
+Rune-Kreisen, die als Weg auf einen **Sonnenuntergang über Bergen** zulaufen –
+passt thematisch zum bisherigen „Kompass & Weg ins Licht".
+
+**Änderungen**
+
+- `public/hero-bewusstseinstest.webp` **neu erzeugt** aus dem hochgeladenen PNG
+  (1672×941, Seitenverhältnis 16:9). WebP Qualität 82 (~127 KB), unter gleichem
+  Namen ersetzt.
+- `src/app/bewusstseinstest/page.tsx`: Hero-Sektion umgebaut – das Bild liegt
+  jetzt auf **allen** Breakpoints (auch Desktop) als eigenes **volles Bildband**
+  im Fluss (`aspect-[16/9]`, volle Deckkraft, unbeschnitten), der Text steht
+  darunter auf reinem Navy.
+  - Zuvor lag das Bild ab `lg` **gedimmt (55 %) als Hintergrund hinter dem Text**
+    (`lg:absolute inset-0`, `lg:opacity-55`) mit Lesbarkeits-Schleier. Diese
+    Desktop-Sonderbehandlung wurde entfernt (auf Wunsch: „volles Bildband wie
+    Mobil"): kein `lg:absolute`, kein `lg:opacity-55`, kein Navy-Schleier mehr,
+    `lg:min-h-[34rem] lg:justify-center` entfernt.
+  - Mobiler Band von `aspect-[3/2]` (altes 3:2-Bild) auf `aspect-[16/9]`
+    (neues Motiv) umgestellt; der Unterkanten-Verlauf ins Navy gilt jetzt auf
+    allen Breakpoints.
+
+Das alte 3:2-Bild bleibt über die Git-Historie wiederherstellbar.
+
+---
+
 ## 2026-09-03 – Öffentlicher Header: Logo bricht nicht mehr um (Desktop)
 
 Im **öffentlichen** Header (nicht im Mitgliederbereich) brach die Wortmarke auf
