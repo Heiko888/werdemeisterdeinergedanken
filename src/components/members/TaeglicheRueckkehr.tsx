@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { pillCta } from "./panelStyles";
 import Link from "next/link";
 import { ArrowRight } from "@/components/ui/Icon";
 import { markiereRueckkehr } from "@/app/mitglieder/rueckkehr-actions";
@@ -156,7 +157,7 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
             type="button"
             onClick={zurueckkehren}
             disabled={pending}
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper shadow-card transition-all hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-60"
+            className={`${pillCta} w-fit`}
           >
             {pending ? "Einen Moment …" : "Heute zurückkehren"}
           </button>

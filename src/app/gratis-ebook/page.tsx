@@ -161,9 +161,15 @@ export default function GratisEbookPage() {
             className="mx-auto items-center"
           />
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* flex-wrap + justify-center statt starrem Raster: die 7. Karte in
+              der letzten Reihe sitzt mittig statt links mit zwei leeren Zellen. */}
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
             {stages.map((stage, i) => (
-              <Reveal key={stage.number} delay={(i % 3) * 60}>
+              <Reveal
+                key={stage.number}
+                delay={(i % 3) * 60}
+                className="w-full sm:w-[calc((100%-1rem)/2)] lg:w-[calc((100%-2rem)/3)]"
+              >
                 <Card as="article" className="h-full">
                   <div className="flex items-baseline gap-3">
                     <span className="font-display text-2xl italic text-accent">

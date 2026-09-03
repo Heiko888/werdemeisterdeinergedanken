@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { pillCta } from "./panelStyles";
 import {
   generateMusterSpiegel,
   type MusterSpiegel,
@@ -105,7 +106,7 @@ export function MusterSpiegelPanel({
           type="button"
           onClick={onGenerate}
           disabled={loading}
-          className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper shadow-card transition-all hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-60"
+          className={pillCta}
         >
           {loading
             ? "Spiegel wird erzeugt …"

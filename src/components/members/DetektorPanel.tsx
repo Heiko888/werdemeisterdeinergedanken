@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { pillCta } from "./panelStyles";
 import Link from "next/link";
 import {
   analyzeText,
@@ -84,7 +85,7 @@ export function DetektorPanel() {
             type="button"
             onClick={onAnalyze}
             disabled={loading || tooLong || text.trim().length === 0}
-            className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper shadow-card transition-all hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-60"
+            className={pillCta}
           >
             {loading ? "Wird geprüft …" : "Text prüfen"}
           </button>
