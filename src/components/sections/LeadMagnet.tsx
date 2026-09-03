@@ -17,7 +17,7 @@ export function LeadMagnet() {
   return (
     <section
       id="ebook"
-      className="bg-surface-aura grain-soft relative scroll-mt-24 py-16 sm:py-32"
+      className="on-dark grain relative isolate scroll-mt-24 overflow-hidden bg-navy-900 py-16 sm:py-32"
     >
       <Container className="grid items-center gap-16 lg:grid-cols-[0.8fr_1fr]">
         {/* Buch-Cover – warmer Gold-Schein und echter Schlagschatten, damit es
@@ -67,7 +67,7 @@ export function LeadMagnet() {
 
             {/* Erhöhte Karte mit Gold-Ring – macht das Formular zum edlen
                 Fokuspunkt, statt es nackt auf die Fläche zu legen. */}
-            <div className="glow-gold w-full rounded-3xl border border-gold-400/30 bg-surface p-6 sm:p-7">
+            <div className="glow-gold on-light w-full rounded-3xl border border-gold-400/30 bg-surface p-6 sm:p-7">
               <ul className="flex flex-col gap-2.5">
                 {bullets.map((b) => (
                   <li
