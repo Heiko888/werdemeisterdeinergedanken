@@ -75,9 +75,14 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
   zeigte auf dem Cover noch das alte Front-Gehirn. Neu gebaut mit
   `tools/pdf/build-ebook.py` (bindet `public/logo-brain-gold.png` ein) →
   Chromium-Print; Header-Emblem und großes Cover-Motiv sind jetzt das aktuelle
-  Seitengehirn. Voller Neubau aller PDFs via `npm run pdf`. Hinweis: das
-  Website-Mockup `public/ebook-mockup.webp`/`ebook-cover.png` (türkis) ist ein
-  separates statisches Bild und noch nicht angeglichen.
+  Seitengehirn. Voller Neubau aller PDFs via `npm run pdf`.
+- **03.09.2026 – Website-Cover/Mockup ans PDF angeglichen (creme/gold).** Die
+  bisher **inkonsistenten** statischen Bilder (`public/ebook-cover.png`/`.webp`
+  war navy/türkis, `public/ebook-mockup.webp` creme mit altem Front-Gehirn)
+  wurden durch das **echte PDF-Cover-Design** ersetzt: flaches Cover
+  (1000×1414, creme/gold, neues Seitengehirn) aus der gerenderten Cover-Seite,
+  plus ein neues creme Hardcover-3D-**Mockup** (1200×1600) mit demselben Cover.
+  Damit sehen Download-PDF, Website-Vorschau und Mockup einheitlich aus.
 - **03.09.2026 – Rundes Emblem-Profilbild lebendiger.** Die Scheibe von
   `avatarRoundPlain` (`WMDG-Profilbild-Rund-Emblem`) war zu flach. Jetzt mit
   warmem Kern-Verlauf (Gold bzw. Türkis je Welt), diagonalem Sheen oben links,
