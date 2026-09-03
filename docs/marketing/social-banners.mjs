@@ -88,8 +88,13 @@ h1 em{background:${p.accent};-webkit-background-clip:text;background-clip:text;c
 .glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(t.brain*0.92)}px;height:${Math.round(t.brain*0.92)}px;border-radius:50%;background:radial-gradient(circle, ${p.brainGlow}, transparent 66%);filter:blur(30px)}
 .brain{position:relative;width:${t.brain}px;height:${t.brain}px;object-fit:contain;filter:drop-shadow(0 10px 60px ${p.brainShadow})}
 .logocard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;text-align:center}
-.wordmark{font-weight:800;font-size:68px;letter-spacing:7px;text-transform:uppercase;line-height:1.4;color:${p.wordmark}}
-.wordmark span{background:${p.accent};-webkit-background-clip:text;background-clip:text;color:transparent}
+/* Echtes Schriftlogo-Lockup wie im Website-Header: „WERDE MEISTER“ (Fraunces,
+   „Meister“ in Gold) über „— DEINER GEDANKEN —“ mit Flankier-Strichen. */
+.wm{display:flex;flex-direction:column;align-items:center;gap:22px}
+.wm1{font-family:Fraunces,serif;font-weight:500;font-size:82px;letter-spacing:.07em;text-transform:uppercase;line-height:1.05;color:${p.wordmark}}
+.wm1 span{background:${p.accent};-webkit-background-clip:text;background-clip:text;color:transparent}
+.wm2{display:flex;align-items:center;justify-content:center;gap:20px;font-family:Fraunces,serif;font-weight:400;font-size:33px;letter-spacing:.24em;text-transform:uppercase;color:${p.sub}}
+.wm2 i{display:block;height:2px;width:52px;background:${p.url}}
 .logocard .url{margin-top:0;font-size:${t.url}px}
 ${t.pinned ? `.wrap{left:0;top:0;transform:none;width:${t.w}px;height:${t.h}px;display:block;gap:0}
 .content{position:absolute;left:${t.padX ?? 110}px;top:50%;transform:translateY(-50%);width:${t.textW}px}
@@ -99,7 +104,10 @@ ${t.pinned ? `.wrap{left:0;top:0;transform:none;width:${t.w}px;height:${t.h}px;d
 const logoBody = () => `<div class="bg"></div><div class="stars"></div>
 <div class="logocard">
   <div class="bwrap"><div class="glow"></div><img class="brain" src="${brainUrl}"></div>
-  <div class="wordmark">Werde Meister deiner<br><span>Gedanken</span></div>
+  <div class="wm">
+    <div class="wm1">Werde <span>Meister</span></div>
+    <div class="wm2"><i></i>Deiner Gedanken<i></i></div>
+  </div>
   <div class="url">www.werdemeisterdeinergedanken.de</div>
 </div>`;
 
