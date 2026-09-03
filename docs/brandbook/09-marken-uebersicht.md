@@ -69,6 +69,15 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **03.09.2026 – E-Book-PDF neu gerendert (aktuelles Gold-Seitengehirn).** Das
+  Lead-Magnet-PDF `public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf` stammte
+  noch vom 31.08. – also **vor** der Gold-Seitengehirn-Umstellung (02.09.) – und
+  zeigte auf dem Cover noch das alte Front-Gehirn. Neu gebaut mit
+  `tools/pdf/build-ebook.py` (bindet `public/logo-brain-gold.png` ein) →
+  Chromium-Print; Header-Emblem und großes Cover-Motiv sind jetzt das aktuelle
+  Seitengehirn. Voller Neubau aller PDFs via `npm run pdf`. Hinweis: das
+  Website-Mockup `public/ebook-mockup.webp`/`ebook-cover.png` (türkis) ist ein
+  separates statisches Bild und noch nicht angeglichen.
 - **03.09.2026 – Rundes Emblem-Profilbild lebendiger.** Die Scheibe von
   `avatarRoundPlain` (`WMDG-Profilbild-Rund-Emblem`) war zu flach. Jetzt mit
   warmem Kern-Verlauf (Gold bzw. Türkis je Welt), diagonalem Sheen oben links,
