@@ -178,26 +178,27 @@ const avatarRoundPlain = (w, P) => {
   const discBase = hell
     ? "radial-gradient(circle at 50% 40%, #faf7f0 0%, #f2ecdd 55%, #e7dfcc 100%)"
     : "radial-gradient(circle at 50% 40%, #141821 0%, #0c0e13 58%, #060710 100%)";
-  const sheen = hell ? "rgba(255,255,255,.65)" : "rgba(255,255,255,.08)";
+  const sheen = hell ? "rgba(255,255,255,.7)" : "rgba(255,255,255,.10)";
   const edgeShadow = P.teal
-    ? (hell ? "rgba(12,70,80,.16)" : "rgba(0,0,0,.55)")
-    : (hell ? "rgba(120,90,20,.16)" : "rgba(0,0,0,.55)");
+    ? (hell ? "rgba(10,66,76,.26)" : "rgba(0,0,0,.62)")
+    : (hell ? "rgba(120,86,14,.26)" : "rgba(0,0,0,.62)");
   return `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
 body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:#ffffff}
 .disc{position:absolute;inset:0;border-radius:50%;
   background:
-    radial-gradient(circle at 50% 46%, rgba(${P.glow},${hell ? ".30" : ".42"}), transparent 50%),
-    radial-gradient(circle at 32% 24%, ${sheen}, transparent 44%),
+    radial-gradient(circle at 50% 47%, rgba(${P.glow},${hell ? ".52" : ".62"}), transparent 40%),
+    radial-gradient(circle at 50% 47%, rgba(${P.glow},${hell ? ".26" : ".34"}), transparent 64%),
+    radial-gradient(circle at 32% 22%, ${sheen}, transparent 42%),
     ${discBase};
-  box-shadow:inset 0 4px 26px ${sheen}, inset 0 -46px 90px -22px ${edgeShadow}, inset 0 0 0 1px rgba(${P.glow},${hell ? ".14" : ".18"})}
-.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.955)}px;height:${Math.round(w*0.955)}px;border-radius:50%;border:2px solid rgba(${P.ring});box-shadow:0 0 ${Math.round(w*0.022)}px rgba(${P.glow},${hell ? ".18" : ".30"})}
-.ring2{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.86)}px;height:${Math.round(w*0.86)}px;border-radius:50%;border:1px solid rgba(${P.glow},${hell ? ".12" : ".16"})}
-.aura{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.74)}px;height:${Math.round(w*0.74)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".34" : ".46"}), transparent 66%);filter:blur(40px)}
-.core{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:${Math.round(w*0.46)}px;height:${Math.round(w*0.46)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".26" : ".34"}), transparent 60%);filter:blur(20px)}
+  box-shadow:inset 0 4px 26px ${sheen}, inset 0 -54px 100px -20px ${edgeShadow}, inset 0 0 0 1px rgba(${P.glow},${hell ? ".20" : ".24"})}
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.955)}px;height:${Math.round(w*0.955)}px;border-radius:50%;border:2px solid rgba(${P.ring});box-shadow:0 0 ${Math.round(w*0.03)}px rgba(${P.glow},${hell ? ".30" : ".44"}), inset 0 0 ${Math.round(w*0.018)}px rgba(${P.glow},${hell ? ".18" : ".26"})}
+.ring2{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.86)}px;height:${Math.round(w*0.86)}px;border-radius:50%;border:1px solid rgba(${P.glow},${hell ? ".18" : ".22"})}
+.aura{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.8)}px;height:${Math.round(w*0.8)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".5" : ".62"}), transparent 66%);filter:blur(42px)}
+.core{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:${Math.round(w*0.5)}px;height:${Math.round(w*0.5)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".4" : ".48"}), transparent 60%);filter:blur(22px)}
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.brain{width:${Math.round(w*0.56)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 46px rgba(${P.glow},.5)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".18" : ".4"}))}
+.brain{width:${Math.round(w*0.56)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 50px rgba(${P.glow},.65)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".2" : ".42"}))}
 </style></head><body>
 <div class="disc"></div><div class="ring2"></div><div class="ring"></div>
 <div class="aura"></div><div class="core"></div>
