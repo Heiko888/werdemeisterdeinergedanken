@@ -330,6 +330,20 @@
   }
 
   /* ------------------------------------------------------------
+     Gegenstück zu .on-dark: setzt die ink-/accent-Variablen auf die hellen
+     Grundwerte zurück. Für eine helle Karte (bg-surface/white) INNERHALB einer
+     .on-dark-Sektion – so bleibt ihr Text dunkel und lesbar, obwohl die Sektion
+     ringsum die Variablen auf Hell-auf-Dunkel schaltet.
+     ------------------------------------------------------------ */
+  .on-light {
+    --color-ink: #16231f;
+    --color-ink-soft: #48524e;
+    --color-ink-mid: #565f5b;
+    --color-ink-muted: #626b67;
+    --color-accent: var(--color-gold-700);
+  }
+
+  /* ------------------------------------------------------------
      Mitgliederbereich – dunkle Navy-Kopfzone
      Bringt das warme Marken-Gold (wie Logo-Schriftzug und Marketing-Assets)
      in den eingeloggten Bereich. Trick: alle text-ink- und accent-Utilities
