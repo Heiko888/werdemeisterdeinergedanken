@@ -5,6 +5,44 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Mitgliederbereich: Marketing-Navigation im Header ausgeblendet
+
+**Gemeldetes Problem:** Im geschützten Mitgliederbereich (`/mitglieder…`) fehlte
+im Header der Punkt „Mitgliedschaft". Das war zwar so gewollt (ein zahlendes
+Mitglied soll keine Verkaufs-Einladung sehen), wirkte aber **irreführend**: Die
+übrigen Header-Links (Die 7 Stufen, Bewusstseinstest, Über mich, Blog) führten
+weiter aus dem geschützten Bereich hinaus. Ein Klick z. B. auf „Bewusstseinstest"
+landete auf einer öffentlichen Seite – und dort war **das volle Menü inkl.
+„Mitgliedschaft" wieder da**. Das Menü „sprang" also je nach Seite.
+
+Sicherheit war nie betroffen: Der Zugriffsschutz liegt im Proxy (`src/proxy.ts`)
+und im `MembersLayout` (Login-Prüfung), **nicht** in der Menü-Sichtbarkeit. Es
+war rein ein UX-/Konsistenz-Thema.
+
+**Entscheidung:** Im Mitgliederbereich die **gesamte** öffentliche
+Marketing-Navigation ausblenden, statt nur einen Punkt. Die inhaltliche
+Orientierung übernimmt weiterhin die `MemberNav` (Mein Bereich, Praxis, Journal,
+Wissen, Programm, Einstellungen) direkt unter dem Header.
+
+**Geändert:**
+- `src/components/layout/Header.tsx`:
+  - Im Mitgliederbereich (`pathname.startsWith("/mitglieder")`) wird die
+    komplette Haupt-Navigation (Desktop **und** mobiles Menü) nicht mehr
+    gerendert – vorher wurde nur „Mitgliedschaft" herausgefiltert.
+  - Rechts im Header erscheinen im Mitgliederbereich stattdessen **„Zur Website"**
+    (Link auf `/`) und **„Abmelden"** (`<form action={signOut}>`, Server-Action
+    aus `src/app/auth/actions.ts`). Außerhalb des Mitgliederbereichs unverändert:
+    „Mitglieder"-Link + CTA „Kostenloses Erstgespräch".
+  - Die frühere Breiten-Kompensation (`imMitgliederbereich`-abhängige
+    `gap`/`px`/`inset`-Werte) entfällt, da die Marketing-Nav im
+    Mitgliederbereich gar nicht mehr angezeigt wird; die öffentliche Nav nutzt
+    weiter die kompakten Werte (`gap-0.5`, `px-3`, `after:inset-x-3`).
+
+Verifiziert: `next build` erfolgreich, ESLint sauber. Der öffentliche Header
+bleibt inhaltlich unverändert.
+
+---
+
 ## 2026-09-03 – Öffentlicher Header: Logo bricht nicht mehr um (Desktop)
 
 Im **öffentlichen** Header (nicht im Mitgliederbereich) brach die Wortmarke auf
