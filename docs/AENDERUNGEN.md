@@ -5,6 +5,31 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Bewusstseinstest-Hero: volles Desktop-Bildband zurückgenommen (wie /mitgliedschaft)
+
+Die zuvor eingebaute Desktop-Variante „volles Bildband" auf `/bewusstseinstest`
+gefiel in der Darstellung nicht und wurde **komplett zurückgenommen**. Die
+Hero-Sektion sieht auf dem Desktop jetzt wieder aus **wie auf `/mitgliedschaft`**:
+Das Bild liegt ab `lg` **dezent (55 %) als Hintergrund hinter dem Text** mit
+Navy-Lesbarkeits-Schleier; auf Mobil bleibt es als eigenes Band im Fluss.
+
+**Geändert:**
+- `src/app/bewusstseinstest/page.tsx`: Hero-Sektion auf das ursprüngliche
+  Mitgliedschafts-Muster zurückgesetzt:
+  - `lg:min-h-[34rem] lg:justify-center` wieder da; Bild-Wrapper wieder
+    `lg:absolute lg:inset-0 lg:aspect-auto`, Bild wieder `lg:opacity-55`.
+  - Navy-Schleier (`hidden lg:block`, horizontaler Verlauf) und der auf `lg`
+    ausgeblendete Unterkanten-Fade (`lg:hidden`) wieder eingesetzt.
+  - Text-Container wieder `lg:py-24`.
+  - **Beibehalten:** der mobile Band nutzt weiterhin `aspect-[16/9]` (passend
+    zum neuen 16:9-Motiv), und das neue Titelbild (`hero-bewusstseinstest.webp`)
+    bleibt unverändert.
+
+Damit ist der Stand vor der „volles-Bildband"-Änderung wiederhergestellt – nur
+mit dem neuen Bild.
+
+---
+
 ## 2026-09-03 – Mitgliederbereich: Marketing-Navigation im Header ausgeblendet
 
 **Gemeldetes Problem:** Im geschützten Mitgliederbereich (`/mitglieder…`) fehlte
