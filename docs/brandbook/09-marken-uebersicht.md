@@ -69,6 +69,12 @@ Nicht-Paarung bleibt das rohe Greenscreen-Porträt
 
 ## Änderungsprotokoll
 
+- **03.09.2026 – Rundes Emblem-Profilbild lebendiger.** Die Scheibe von
+  `avatarRoundPlain` (`WMDG-Profilbild-Rund-Emblem`) war zu flach. Jetzt mit
+  warmem Kern-Verlauf (Gold bzw. Türkis je Welt), diagonalem Sheen oben links,
+  Rand-Vignette und Rim-Light (inset-Schatten), zweitem feinem Innenring und
+  stärkerer Aura/Core-Glow hinter dem Gehirn – wirkt plastisch statt flach.
+  Alle vier Welten neu gerendert.
 - **03.09.2026 – Alte Front-Gehirn-Profilbilder entfernt.** Die Legacy-Dateien
   `WMDG-Profilbild-1080`, `WMDG-Profilbild-rund-1080` und `WMDG-Profilbild-rund-500`
   (je dunkel + Creme) trugen noch das frühere **frontale** Gehirn und passten nicht
