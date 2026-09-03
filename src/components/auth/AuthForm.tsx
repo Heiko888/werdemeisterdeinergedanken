@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
+import { Card } from "@/components/ui/Card";
 import { signIn, signUp, type AuthState } from "@/app/auth/actions";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
@@ -64,9 +65,10 @@ export function AuthForm({
           <p className="text-sm leading-relaxed text-ink-soft">{state.message}</p>
         </div>
       ) : (
-        <form
+        <Card
+          as="form"
           action={activeMode === "login" ? loginAction : signupAction}
-          className="flex flex-col gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8"
+          className="flex flex-col gap-4 sm:p-8"
         >
           {activeMode === "register" && (
             <div className="flex flex-col gap-1.5">
@@ -169,7 +171,7 @@ export function AuthForm({
               </>
             )}
           </p>
-        </form>
+        </Card>
       )}
     </div>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
 import Link from "next/link";
@@ -61,7 +62,7 @@ export function DetektorPanel() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8">
+      <Card className="flex flex-col gap-3 sm:p-8">
         <label
           htmlFor="detektor-text"
           className={memberEyebrow}
@@ -96,7 +97,7 @@ export function DetektorPanel() {
           nicht die Meinung – auch ein Text, dem du zustimmst, kann Techniken
           nutzen.
         </p>
-      </div>
+      </Card>
 
       {error && (
         <p className="rounded-xl border border-ink/10 bg-paper/60 px-4 py-3 text-sm leading-relaxed text-ink-mid">

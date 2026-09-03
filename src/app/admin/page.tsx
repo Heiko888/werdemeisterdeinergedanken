@@ -1,4 +1,5 @@
 import { APP_GLOW } from "@/lib/gradients";
+import { Card } from "@/components/ui/Card";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -220,7 +221,7 @@ export default async function AdminPage() {
               <h2 className="mt-1 font-display text-2xl font-medium text-ink">
                 Wo deine Community startet
               </h2>
-              <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+              <Card className="mt-6 flex flex-col gap-3">
                 {funnel.tests.byStage.map((count, i) => (
                   // Auf Handy stapeln (Label + Zahl oben, Balken darunter), damit
                   // die langen Stufen-Titel nicht in ein enges w-28-Label gequetscht
@@ -245,7 +246,7 @@ export default async function AdminPage() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </Card>
             </div>
           </Container>
         </section>

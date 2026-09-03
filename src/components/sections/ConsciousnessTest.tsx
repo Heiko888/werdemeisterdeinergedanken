@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
@@ -153,7 +154,7 @@ export function ConsciousnessTest() {
         </div>
 
         {/* Profil über alle Stufen */}
-        <div className="rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8">
+        <Card className="sm:p-8">
           <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
             Dein Profil
           </h3>
@@ -198,7 +199,7 @@ export function ConsciousnessTest() {
               );
             })}
           </ul>
-        </div>
+        </Card>
 
         {/* Auswertungstext */}
         <div className="flex flex-col gap-6">

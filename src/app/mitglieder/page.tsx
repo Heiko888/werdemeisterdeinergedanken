@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -634,10 +635,11 @@ export default async function MembersPage() {
           {stageDeepDives.length > 0 && (
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {stageDeepDives.map((dive) => (
-                <Link
+                <Card
+                  as={Link}
                   key={dive.slug}
                   href={`/mitglieder/wissen/${dive.slug}`}
-                  className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                  className="group flex flex-col gap-2 transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
@@ -648,15 +650,16 @@ export default async function MembersPage() {
                   <p className="text-sm leading-relaxed text-ink-mid">
                     {dive.summary}
                   </p>
-                </Link>
+                </Card>
               ))}
             </div>
           )}
 
           {/* Nachschlage-Bibliothek (27 Kapitel) – kompakter Einstieg */}
-          <Link
+          <Card
+            as={Link}
             href="/mitglieder/wissensdatenbank"
-            className="group mt-6 flex items-center justify-between gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
+            className="group mt-6 flex items-center justify-between gap-4 transition-all hover:-translate-y-0.5 hover:border-accent/30"
           >
             <div className="flex items-center gap-4">
               <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-500/15 to-gold-500/15 text-lg text-accent">
@@ -672,7 +675,7 @@ export default async function MembersPage() {
               </div>
             </div>
             <ArrowRight className="shrink-0 text-ink-muted transition-all group-hover:translate-x-1 group-hover:text-accent" />
-          </Link>
+          </Card>
         </Container>
       </section>
 
@@ -709,10 +712,11 @@ export default async function MembersPage() {
           {stagePractices.length > 0 && (
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {stagePractices.map((practice) => (
-                <Link
+                <Card
+                  as={Link}
                   key={practice.slug}
                   href={`/mitglieder/praxis/${practice.slug}`}
-                  className="group flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
+                  className="group flex flex-col gap-2 transition-all duration-300 hover:-translate-y-1 hover:border-accent/30"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="text-lg font-medium text-ink transition-colors group-hover:text-accent">
@@ -725,7 +729,7 @@ export default async function MembersPage() {
                   <p className="text-sm leading-relaxed text-ink-mid">
                     {practice.summary}
                   </p>
-                </Link>
+                </Card>
               ))}
             </div>
           )}

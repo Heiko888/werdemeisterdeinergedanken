@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
@@ -62,9 +63,10 @@ export default async function WissenPage() {
           Gegenstück zum Querverweis auf der Vertiefungen-Seite. */}
       <section className="pt-2">
         <Container>
-          <Link
+          <Card
+            as={Link}
             href="/mitglieder/wissen"
-            className="group flex items-center justify-between gap-4 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
+            className="group flex items-center justify-between gap-4 transition-all hover:-translate-y-0.5 hover:border-accent/30"
           >
             <div className="flex items-center gap-4">
               <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-500/15 to-gold-500/15 text-lg text-accent">
@@ -81,7 +83,7 @@ export default async function WissenPage() {
               </div>
             </div>
             <ArrowRight className="shrink-0 text-ink-muted transition-all group-hover:translate-x-1 group-hover:text-accent" />
-          </Link>
+          </Card>
         </Container>
       </section>
 
@@ -108,7 +110,7 @@ export default async function WissenPage() {
       {gelesenCount > 0 && (
         <section className="pt-6">
           <Container>
-            <div className="flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+            <Card className="flex flex-col gap-2">
               <div className="flex items-baseline justify-between gap-4 text-sm">
                 <span className="font-medium text-ink">Dein Lesefortschritt</span>
                 <span className="tabular-nums text-ink-muted">
@@ -121,7 +123,7 @@ export default async function WissenPage() {
                   style={{ width: `${prozent}%` }}
                 />
               </div>
-            </div>
+            </Card>
           </Container>
         </section>
       )}
@@ -148,9 +150,10 @@ export default async function WissenPage() {
                     if (!c) return null;
                     return (
                       <Reveal key={slug}>
-                        <Link
+                        <Card
+                          as={Link}
                           href={`/mitglieder/wissensdatenbank/${slug}`}
-                          className="group flex h-full flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-6 shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/30"
+                          className="group flex h-full flex-col gap-3 transition-all hover:-translate-y-0.5 hover:border-accent/30"
                         >
                           <span className="flex items-center justify-between gap-2">
                             <span className="font-display text-sm italic text-accent">
@@ -175,7 +178,7 @@ export default async function WissenPage() {
                             Lesen
                             <ArrowRight />
                           </span>
-                        </Link>
+                        </Card>
                       </Reveal>
                     );
                   })}

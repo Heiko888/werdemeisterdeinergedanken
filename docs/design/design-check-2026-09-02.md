@@ -84,12 +84,22 @@ Verifiziert mit `next build` (Exit 0), `eslint` (clean); L5 zusätzlich per Play
 Verifiziert mit `next build` (Exit 0), `eslint` (clean); B5 zusätzlich per Playwright-Screenshot
 (WhyMe/Home, gratis-ebook, Blog-Autor).
 
-Damit sind alle Funde des Berichts adressiert. Verbleibend nur:
-- **M3-Rest** (rein **unsichtbarer** Card-Dedup): die restlichen Basis-Karten haben bespoke Klassen +
-  `<div>`-Verschachtelung mit mehrdeutigen Schließ-Tags → nicht blind konvertiert, kein optischer
-  Gewinn. `Card` steht bereit; exakt-identische Basis-Karten sind migriert. Optionaler Wartungs-Rest.
-- Alte `heiko-portrait.webp` bleibt im Repo (evtl. in E-Mail-Vorlagen/Tools genutzt) — im `src/`-Code
-  nicht mehr referenziert.
+**2026-09-03 — Durchgang 7 (M3-Rest: Card-Migration abgeschlossen):**
+
+| Fund | Umsetzung | Umfang |
+|------|-----------|--------|
+| **M3** | Alle 14 verbliebenen Basis-Karten auf `<Card>` migriert — **8 statische** (`AuthForm`-Formular, `ConsciousnessTest`, `DetektorPanel`, `admin`, `journal`, `wissensdatenbank`, `praxis`, `gratis-ebook`) und **6 interaktive `<Link>`-Karten** (`wissen`, `mitglieder/page` ×3, `wissensdatenbank` ×2) via `as={Link}` (dank Card-Prop-Weitergabe). Bespoke Hover/Layout-Klassen exakt beibehalten → **identische Ausgabe**. | 10 Dateien |
+
+Verifiziert mit `next build` (Exit 0), `eslint` (clean) und Playwright-Screenshots
+(gratis-ebook-Schritte + Fallback-Karten). Einzige verbleibende „Karte" ist der
+Cookie-Consent-Banner in `GoogleAnalytics.tsx` — bewusst **kein** Basis-Muster
+(`bg-white/95`, `p-5`, `backdrop-blur`), daher nicht migriert.
+
+**Damit sind alle Funde des Berichts vollständig umgesetzt.** Card/Button/Eyebrow/
+Pill-Duplikate sind entdupliziert, das Design-System wird konsequent genutzt.
+
+Hinweis: Alte `heiko-portrait.webp` bleibt im Repo (evtl. in E-Mail-Vorlagen/Tools genutzt) —
+im `src/`-Code nicht mehr referenziert.
 
 ---
 
