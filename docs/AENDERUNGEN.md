@@ -5,6 +5,164 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Bewusstseinstest-Hero: volles Desktop-Bildband zurückgenommen (wie /mitgliedschaft)
+
+Die zuvor eingebaute Desktop-Variante „volles Bildband" auf `/bewusstseinstest`
+gefiel in der Darstellung nicht und wurde **komplett zurückgenommen**. Die
+Hero-Sektion sieht auf dem Desktop jetzt wieder aus **wie auf `/mitgliedschaft`**:
+Das Bild liegt ab `lg` **dezent (55 %) als Hintergrund hinter dem Text** mit
+Navy-Lesbarkeits-Schleier; auf Mobil bleibt es als eigenes Band im Fluss.
+
+**Geändert:**
+- `src/app/bewusstseinstest/page.tsx`: Hero-Sektion auf das ursprüngliche
+  Mitgliedschafts-Muster zurückgesetzt:
+  - `lg:min-h-[34rem] lg:justify-center` wieder da; Bild-Wrapper wieder
+    `lg:absolute lg:inset-0 lg:aspect-auto`, Bild wieder `lg:opacity-55`.
+  - Navy-Schleier (`hidden lg:block`, horizontaler Verlauf) und der auf `lg`
+    ausgeblendete Unterkanten-Fade (`lg:hidden`) wieder eingesetzt.
+  - Text-Container wieder `lg:py-24`.
+  - **Beibehalten:** der mobile Band nutzt weiterhin `aspect-[16/9]` (passend
+    zum neuen 16:9-Motiv), und das neue Titelbild (`hero-bewusstseinstest.webp`)
+    bleibt unverändert.
+
+Damit ist der Stand vor der „volles-Bildband"-Änderung wiederhergestellt – nur
+mit dem neuen Bild.
+
+---
+
+## 2026-09-03 – Mitgliederbereich: Marketing-Navigation im Header ausgeblendet
+
+**Gemeldetes Problem:** Im geschützten Mitgliederbereich (`/mitglieder…`) fehlte
+im Header der Punkt „Mitgliedschaft". Das war zwar so gewollt (ein zahlendes
+Mitglied soll keine Verkaufs-Einladung sehen), wirkte aber **irreführend**: Die
+übrigen Header-Links (Die 7 Stufen, Bewusstseinstest, Über mich, Blog) führten
+weiter aus dem geschützten Bereich hinaus. Ein Klick z. B. auf „Bewusstseinstest"
+landete auf einer öffentlichen Seite – und dort war **das volle Menü inkl.
+„Mitgliedschaft" wieder da**. Das Menü „sprang" also je nach Seite.
+
+Sicherheit war nie betroffen: Der Zugriffsschutz liegt im Proxy (`src/proxy.ts`)
+und im `MembersLayout` (Login-Prüfung), **nicht** in der Menü-Sichtbarkeit. Es
+war rein ein UX-/Konsistenz-Thema.
+
+**Entscheidung:** Im Mitgliederbereich die **gesamte** öffentliche
+Marketing-Navigation ausblenden, statt nur einen Punkt. Die inhaltliche
+Orientierung übernimmt weiterhin die `MemberNav` (Mein Bereich, Praxis, Journal,
+Wissen, Programm, Einstellungen) direkt unter dem Header.
+
+**Geändert:**
+- `src/components/layout/Header.tsx`:
+  - Im Mitgliederbereich (`pathname.startsWith("/mitglieder")`) wird die
+    komplette Haupt-Navigation (Desktop **und** mobiles Menü) nicht mehr
+    gerendert – vorher wurde nur „Mitgliedschaft" herausgefiltert.
+  - Rechts im Header erscheinen im Mitgliederbereich stattdessen **„Zur Website"**
+    (Link auf `/`) und **„Abmelden"** (`<form action={signOut}>`, Server-Action
+    aus `src/app/auth/actions.ts`). Außerhalb des Mitgliederbereichs unverändert:
+    „Mitglieder"-Link + CTA „Kostenloses Erstgespräch".
+  - Die frühere Breiten-Kompensation (`imMitgliederbereich`-abhängige
+    `gap`/`px`/`inset`-Werte) entfällt, da die Marketing-Nav im
+    Mitgliederbereich gar nicht mehr angezeigt wird; die öffentliche Nav nutzt
+    weiter die kompakten Werte (`gap-0.5`, `px-3`, `after:inset-x-3`).
+
+Verifiziert: `next build` erfolgreich, ESLint sauber. Der öffentliche Header
+bleibt inhaltlich unverändert.
+
+---
+
+## 2026-09-03 – Bewusstseinstest: Titelbild getauscht (Kompass-Plaza im Sonnenuntergang)
+
+Das Titelbild der Seite `/bewusstseinstest` wurde gegen ein neues Motiv
+getauscht: eine dunkle Stein-Plaza mit **Kompass-Intarsie** und leuchtenden
+Rune-Kreisen, die als Weg auf einen **Sonnenuntergang über Bergen** zulaufen –
+passt thematisch zum bisherigen „Kompass & Weg ins Licht".
+
+**Änderungen**
+
+- `public/hero-bewusstseinstest.webp` **neu erzeugt** aus dem hochgeladenen PNG
+  (1672×941, Seitenverhältnis 16:9). WebP Qualität 82 (~127 KB), unter gleichem
+  Namen ersetzt.
+- `src/app/bewusstseinstest/page.tsx`: Hero-Sektion umgebaut – das Bild liegt
+  jetzt auf **allen** Breakpoints (auch Desktop) als eigenes **volles Bildband**
+  im Fluss (`aspect-[16/9]`, volle Deckkraft, unbeschnitten), der Text steht
+  darunter auf reinem Navy.
+  - Zuvor lag das Bild ab `lg` **gedimmt (55 %) als Hintergrund hinter dem Text**
+    (`lg:absolute inset-0`, `lg:opacity-55`) mit Lesbarkeits-Schleier. Diese
+    Desktop-Sonderbehandlung wurde entfernt (auf Wunsch: „volles Bildband wie
+    Mobil"): kein `lg:absolute`, kein `lg:opacity-55`, kein Navy-Schleier mehr,
+    `lg:min-h-[34rem] lg:justify-center` entfernt.
+  - Mobiler Band von `aspect-[3/2]` (altes 3:2-Bild) auf `aspect-[16/9]`
+    (neues Motiv) umgestellt; der Unterkanten-Verlauf ins Navy gilt jetzt auf
+    allen Breakpoints.
+
+Das alte 3:2-Bild bleibt über die Git-Historie wiederherstellbar.
+
+---
+
+## 2026-09-03 – Öffentlicher Header: Logo bricht nicht mehr um (Desktop)
+
+Im **öffentlichen** Header (nicht im Mitgliederbereich) brach die Wortmarke auf
+Desktop um: „WERDE MEISTER" rutschte auf zwei Zeilen und wirkte „verschoben".
+
+**Ursache:** Der öffentliche Header trägt mehr Inhalt als der Mitglieder-Header
+– zusätzlich den Nav-Punkt „Mitgliedschaft" **und** den CTA-Button „Kostenloses
+Erstgespräch". Gemessen mit den echten Schriften überschreitet die Zeile den
+Container (max-w-6xl, ~1088 px Inhalt) um ~23 px. Da das Logo keinen festen
+Platz beanspruchte (`flex-shrink` aktiv), wurde es gestaucht und die Wortmarke
+umbrach. Im Mitgliederbereich (weniger Inhalt, kein Button) passt alles → dort
+war das Logo immer korrekt.
+
+**Geändert (nur öffentlicher Header betroffen, Mitgliederbereich unverändert):**
+- `src/components/layout/Header.tsx`:
+  - `<Logo className="shrink-0" />` – das Logo wird nie mehr gestaucht/umbrochen.
+  - Navigation im **öffentlichen** Bereich etwas kompakter: `px-3` statt `px-4`
+    pro Link und engerer Abstand (`gap-0.5`), aktive Unterstreichung
+    `after:inset-x-3`. Im Mitgliederbereich bleibt alles bei `px-4`/`gap-1`
+    (`imMitgliederbereich`-Verzweigung) – dort ändert sich **nichts**.
+
+Damit passt die öffentliche Kopfzeile mit ~25 px Reserve, das Logo steht wie im
+Mitgliederbereich. Verifiziert per Headless-Messung mit Fraunces/Inter.
+
+---
+
+## 2026-09-03 – Wortmarke: Unterzeile „Deiner Gedanken" zentriert (war verschoben)
+
+Im Schriftlogo (Header hell + Footer dunkel) saß die zweite Zeile
+`— Deiner Gedanken —` **linksbündig** unter „WERDE MEISTER" und wirkte dadurch
+nach links **verschoben**. Ursache: Die Zeile liegt in einer Flex-Spalte, die
+ihre Kinder auf die Breite der (breiteren) ersten Zeile streckt – ohne
+Zentrierung wurde der Dekor-Strich-Text-Block links gepackt.
+
+**Geändert:**
+- `src/components/visuals/Logo.tsx`: Der zweiten Zeile (`— Deiner Gedanken —`)
+  `justify-center` gegeben, sodass sie **mittig unter „WERDE MEISTER"** sitzt –
+  symmetrisch mit den goldenen Flankier-Strichen, passend zum Marken-Emblem.
+
+Wirkt in beiden Varianten (`tone="onLight"` im Header, `tone="onDark"` im Footer).
+Verifiziert per Headless-Render mit der echten Fraunces-Schrift (Vorher/Nachher).
+
+---
+
+## 2026-09-03 – Footer-Copyright-Zeile: Mobil-Ausrichtung korrigiert
+
+Die untere Copyright-Zeile im Footer (`© … Alle Rechte vorbehalten.` +
+`Werde Meister deiner Gedanken · Bewusstseinsentwicklung in 7 Stufen`) wurde auf
+schmalen/mittleren Bildschirmen **nebeneinander an die Ränder gezogen** (unruhig,
+wirkte „nicht richtig platziert"), weil sie schon ab `sm` (640 px) auf
+`flex-row justify-between` umgeschaltet hat.
+
+**Geändert:**
+- `src/components/layout/Footer.tsx` (Copyright-Leiste):
+  - Umschalt-Breakpoint von `sm:` auf `lg:` (1024 px) angehoben – passt zum
+    restlichen Footer, der ebenfalls erst ab `lg` volle Breite nutzt.
+  - Auf Mobil/Tablet jetzt **gestapelt und zentriert** (`flex-col items-center
+    text-center`); erst ab `lg` nebeneinander und linksbündig
+    (`lg:flex-row lg:justify-between lg:text-left`).
+  - `justify-between` greift dadurch nur noch im Zeilen-Layout ab `lg`.
+
+Verifiziert per Headless-Screenshots bei 500 px (gestapelt/zentriert), 820 px
+(gestapelt/zentriert) und 1100 px (nebeneinander).
+
+---
+
 ## 2026-09-03 – Footer-Eisvogel getauscht: Gold → Blau (echtes Motiv)
 
 Der Eisvogel im Footer wurde vom **goldenen** auf das **blaue** (naturechte)

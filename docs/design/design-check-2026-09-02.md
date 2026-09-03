@@ -95,6 +95,11 @@ Verifiziert mit `next build` (Exit 0), `eslint` (clean) und Playwright-Screensho
 Cookie-Consent-Banner in `GoogleAnalytics.tsx` — bewusst **kein** Basis-Muster
 (`bg-white/95`, `p-5`, `backdrop-blur`), daher nicht migriert.
 
+**2026-09-03 — Avatar-Update (B5):** `public/heiko-avatar.webp` durch ein vom Nutzer
+geliefertes echtes Porträtfoto ersetzt (quadratischer, gesichtszentrierter Ausschnitt,
+640×640). Pfad unverändert → wirkt automatisch in WhyMe (Home), gratis-ebook und
+Blog-Autor. Screenshot-verifiziert (80/112px). Der Ausschnitt aus `heiko-hero` entfällt damit.
+
 **Damit sind alle Funde des Berichts vollständig umgesetzt.** Card/Button/Eyebrow/
 Pill-Duplikate sind entdupliziert, das Design-System wird konsequent genutzt.
 
