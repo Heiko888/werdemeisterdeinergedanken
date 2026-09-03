@@ -96,7 +96,7 @@ export function Header() {
             Mitglieder
           </Link>
           {!imMitgliederbereich && (
-            <Button href="/kontakt" variant="accent" size="md" className="whitespace-nowrap">
+            <Button href="/kontakt" variant="secondary" size="md" className="whitespace-nowrap">
               Kostenloses Erstgespräch
             </Button>
           )}
@@ -156,7 +156,7 @@ export function Header() {
             <div className="mt-3">
               <Button
                 href="/kontakt"
-                variant="accent"
+                variant="secondary"
                 size="lg"
                 className="w-full"
                 onClick={() => setOpen(false)}

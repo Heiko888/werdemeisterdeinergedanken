@@ -62,7 +62,12 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
   } = props;
 
   const classes = cn(
-    "inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:pointer-events-none disabled:opacity-60",
+    // `group` + `[&>svg:last-child]`: ein nachgestelltes Pfeil-Icon (z. B.
+    // <ArrowRight/> als letztes Kind) gleitet beim Hover sanft nach rechts –
+    // dieselbe Micro-Interaction wie bei ArrowLink. Belebt jeden CTA, ohne dass
+    // die Aufrufstellen etwas ergänzen müssen. Ein führendes Icon (nicht als
+    // letztes Kind) bleibt unberührt.
+    "group inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200 ease-out [&>svg:last-child]:transition-transform [&>svg:last-child]:duration-300 [&>svg:last-child]:ease-out group-hover:[&>svg:last-child]:translate-x-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:pointer-events-none disabled:opacity-60",
     variants[variant],
     sizes[size],
     className,

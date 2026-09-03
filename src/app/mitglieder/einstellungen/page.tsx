@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { redirect } from "next/navigation";
+import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { LessonHero } from "@/components/members/LessonHero";
@@ -29,13 +30,13 @@ function SettingCard({
   children: ReactNode;
 }) {
   return (
-    <section className="flex flex-col gap-5 rounded-2xl border border-ink/10 bg-white p-6 shadow-card sm:p-8">
+    <Card as="section" className="flex flex-col gap-5 sm:p-8">
       <div className="flex flex-col gap-1.5">
         <h2 className="font-display text-xl font-medium text-ink">{title}</h2>
         <p className="text-[0.98rem] leading-relaxed text-ink-mid">{description}</p>
       </div>
       {children}
-    </section>
+    </Card>
   );
 }
 

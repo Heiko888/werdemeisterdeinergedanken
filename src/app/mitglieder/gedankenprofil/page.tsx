@@ -112,7 +112,7 @@ export default async function GedankenprofilPage() {
             mit jedem neuen Test schärfer wird.
           </p>
           {profil.hasTest && profil.summary && (
-            <p className="max-w-xl rounded-2xl border border-gold-400/30 bg-white/10 px-6 py-4 text-[1.02rem] leading-relaxed text-ink-soft/90 shadow-card backdrop-blur-sm">
+            <p className="max-w-xl rounded-2xl border border-gold-400/30 bg-white/10 px-6 py-4 text-[1.02rem] leading-relaxed text-ink-mid shadow-card backdrop-blur-sm">
               {profil.summary}
             </p>
           )}
@@ -258,7 +258,7 @@ export default async function GedankenprofilPage() {
                           </div>
                         </div>
 
-                        <p className="leading-relaxed text-ink-soft/90">
+                        <p className="leading-relaxed text-ink-mid">
                           {b.reason}
                         </p>
 
@@ -266,7 +266,7 @@ export default async function GedankenprofilPage() {
                           <span className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent">
                             Dein nächster Schritt
                           </span>
-                          <p className="leading-relaxed text-ink-soft/90">
+                          <p className="leading-relaxed text-ink-mid">
                             {b.suggestion}
                           </p>
                         </div>

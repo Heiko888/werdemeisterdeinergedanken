@@ -2,6 +2,7 @@ import { APP_GLOW } from "@/lib/gradients";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight } from "@/components/ui/Icon";
@@ -70,11 +71,11 @@ export default async function DetektorPage() {
           {configured ? (
             <DetektorPanel />
           ) : (
-            <p className="rounded-2xl border border-ink/10 bg-white p-6 text-[1rem] leading-relaxed text-ink-mid shadow-card">
+            <Card as="p" className="text-[1rem] leading-relaxed text-ink-mid">
               Der Manipulations-Detektor ist gerade nicht verfügbar. Schau in den
               Vertiefungen unter „Mentale Selbstverteidigung“ vorbei – dort
               stehen alle 16 Techniken ausführlich.
-            </p>
+            </Card>
           )}
         </Container>
       </section>

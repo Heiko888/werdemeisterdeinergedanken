@@ -78,7 +78,7 @@ export function ReadingPanel({
           {reading.body.split(/\n{2,}/).map((para, i) => (
             <p
               key={i}
-              className="whitespace-pre-wrap text-[1.02rem] leading-relaxed text-ink-soft/90"
+              className="whitespace-pre-wrap text-[1.02rem] leading-relaxed text-ink-mid"
             >
               {para.trim()}
             </p>
