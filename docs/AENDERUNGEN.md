@@ -17,11 +17,18 @@ passt thematisch zum bisherigen „Kompass & Weg ins Licht".
 - `public/hero-bewusstseinstest.webp` **neu erzeugt** aus dem hochgeladenen PNG
   (1672×941, Seitenverhältnis 16:9). WebP Qualität 82 (~127 KB), unter gleichem
   Namen ersetzt.
-- `src/app/bewusstseinstest/page.tsx`: Der **mobile Bildband** war fest auf
-  `aspect-[3/2]` (passend zum alten 3:2-Bild). Da das neue Motiv 16:9 ist, auf
-  `aspect-[16/9]` umgestellt, damit auf schmalen Displays das ganze Motiv
-  (Kompass unten links + Sonne rechts) unbeschnitten sichtbar bleibt. Ab `lg`
-  liegt das Bild wie bisher dezent als Hintergrund (`aspect-auto`, `object-cover`).
+- `src/app/bewusstseinstest/page.tsx`: Hero-Sektion umgebaut – das Bild liegt
+  jetzt auf **allen** Breakpoints (auch Desktop) als eigenes **volles Bildband**
+  im Fluss (`aspect-[16/9]`, volle Deckkraft, unbeschnitten), der Text steht
+  darunter auf reinem Navy.
+  - Zuvor lag das Bild ab `lg` **gedimmt (55 %) als Hintergrund hinter dem Text**
+    (`lg:absolute inset-0`, `lg:opacity-55`) mit Lesbarkeits-Schleier. Diese
+    Desktop-Sonderbehandlung wurde entfernt (auf Wunsch: „volles Bildband wie
+    Mobil"): kein `lg:absolute`, kein `lg:opacity-55`, kein Navy-Schleier mehr,
+    `lg:min-h-[34rem] lg:justify-center` entfernt.
+  - Mobiler Band von `aspect-[3/2]` (altes 3:2-Bild) auf `aspect-[16/9]`
+    (neues Motiv) umgestellt; der Unterkanten-Verlauf ins Navy gilt jetzt auf
+    allen Breakpoints.
 
 Das alte 3:2-Bild bleibt über die Git-Historie wiederherstellbar.
 
