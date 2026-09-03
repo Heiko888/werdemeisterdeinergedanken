@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Wortmarke: Unterzeile „Deiner Gedanken" zentriert (war verschoben)
+
+Im Schriftlogo (Header hell + Footer dunkel) saß die zweite Zeile
+`— Deiner Gedanken —` **linksbündig** unter „WERDE MEISTER" und wirkte dadurch
+nach links **verschoben**. Ursache: Die Zeile liegt in einer Flex-Spalte, die
+ihre Kinder auf die Breite der (breiteren) ersten Zeile streckt – ohne
+Zentrierung wurde der Dekor-Strich-Text-Block links gepackt.
+
+**Geändert:**
+- `src/components/visuals/Logo.tsx`: Der zweiten Zeile (`— Deiner Gedanken —`)
+  `justify-center` gegeben, sodass sie **mittig unter „WERDE MEISTER"** sitzt –
+  symmetrisch mit den goldenen Flankier-Strichen, passend zum Marken-Emblem.
+
+Wirkt in beiden Varianten (`tone="onLight"` im Header, `tone="onDark"` im Footer).
+Verifiziert per Headless-Render mit der echten Fraunces-Schrift (Vorher/Nachher).
+
+---
+
 ## 2026-09-03 – Footer-Copyright-Zeile: Mobil-Ausrichtung korrigiert
 
 Die untere Copyright-Zeile im Footer (`© … Alle Rechte vorbehalten.` +
