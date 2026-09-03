@@ -138,7 +138,7 @@ export function Footer() {
       </div>
 
       <div className="hairline">
-        <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-mist-300/60 sm:flex-row">
+        <Container className="flex flex-col items-center gap-3 py-6 text-center text-xs text-mist-300/60 lg:flex-row lg:justify-between lg:text-left">
           <p>
             © {year} {site.author}. Alle Rechte vorbehalten.
           </p>
