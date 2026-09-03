@@ -7,6 +7,7 @@ import { Logo } from "@/components/visuals/Logo";
 import { Button } from "@/components/ui/Button";
 import { Menu, Close } from "@/components/ui/Icon";
 import { mainNav } from "@/lib/site";
+import { signOut } from "@/app/auth/actions";
 import { cn } from "@/lib/cn";
 
 export function Header() {
@@ -16,28 +17,17 @@ export function Header() {
   const menuRef = useRef<HTMLElement>(null);
 
   // Im (login-geschützten) Mitgliederbereich ist das Publikum ein zahlendes
-  // Mitglied – Verkaufs-Einladungen gehören dort nicht hin. Wir blenden deshalb
-  // „Mitgliedschaft" aus der Navigation und den „Erstgespräch"-CTA aus. Der
-  // Bereich selbst ist per Proxy/Layout auth-geschützt, sodass der Pfad hier ein
-  // verlässlicher Stellvertreter für „eingeloggtes Mitglied" ist.
+  // Mitglied. Der öffentliche Marketing-Header gehört dort nicht hin: Er zeigte
+  // Links, die aus dem geschützten Bereich hinausführen (Die 7 Stufen,
+  // Bewusstseinstest …), während ausgerechnet „Mitgliedschaft" fehlte – das
+  // wirkte inkonsistent, weil ein Klick auf eine öffentliche Seite das volle
+  // Menü (inkl. „Mitgliedschaft") zurückbrachte. Deshalb blenden wir im
+  // Mitgliederbereich die gesamte Marketing-Navigation aus und zeigen nur noch
+  // „Zur Website" und „Abmelden". Die inhaltliche Navigation übernimmt die
+  // separate `MemberNav` direkt unter dem Header. Der Bereich selbst ist per
+  // Proxy/Layout auth-geschützt, sodass der Pfad hier ein verlässlicher
+  // Stellvertreter für „eingeloggtes Mitglied" ist.
   const imMitgliederbereich = pathname.startsWith("/mitglieder");
-  const navItems = imMitgliederbereich
-    ? mainNav.filter((item) => item.href !== "/mitgliedschaft")
-    : mainNav;
-
-  // Der öffentliche Header trägt mehr Inhalt als der Mitglieder-Header
-  // (zusätzlicher Nav-Punkt „Mitgliedschaft" plus der CTA-Button „Kostenloses
-  // Erstgespräch"). Ohne Gegenmaßnahme überläuft die Zeile den Container um
-  // ~23 px; da das Logo keinen festen Platz beansprucht, staucht der Flexbox es
-  // und „WERDE MEISTER" bricht auf zwei Zeilen um (wirkt „verschoben"). Deshalb
-  // ist die Navigation im öffentlichen Bereich etwas kompakter (px-3 statt
-  // px-4, engerer Abstand). Der Mitgliederbereich hat reichlich Platz und
-  // bleibt daher unverändert (px-4).
-  const navGap = imMitgliederbereich ? "gap-1" : "gap-0.5";
-  const navItemPad = imMitgliederbereich ? "px-4" : "px-3";
-  const navUnderlineInset = imMitgliederbereich
-    ? "after:inset-x-4"
-    : "after:inset-x-3";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -85,41 +75,57 @@ export function Header() {
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Logo className="shrink-0" />
 
-        <nav
-          className={cn("hidden items-center lg:flex", navGap)}
-          aria-label="Hauptmenü"
-        >
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "relative whitespace-nowrap rounded-full py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
-                navItemPad,
-                pathname === item.href &&
-                  cn(
-                    "font-semibold text-gold-700 hover:text-gold-700 after:absolute after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-gold-400 after:to-gold-500 after:content-['']",
-                    navUnderlineInset,
-                  ),
-              )}
-              aria-current={pathname === item.href ? "page" : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Marketing-Navigation nur außerhalb des Mitgliederbereichs. Innerhalb
+            übernimmt die MemberNav die Orientierung. */}
+        {!imMitgliederbereich && (
+          <nav
+            className="hidden items-center gap-0.5 lg:flex"
+            aria-label="Hauptmenü"
+          >
+            {mainNav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "relative whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-ink/[0.04] hover:text-ink",
+                  pathname === item.href &&
+                    "font-semibold text-gold-700 hover:text-gold-700 after:absolute after:-bottom-0.5 after:inset-x-3 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-gold-400 after:to-gold-500 after:content-['']",
+                )}
+                aria-current={pathname === item.href ? "page" : undefined}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        )}
 
         <div className="hidden items-center gap-5 lg:flex">
-          <Link
-            href="/mitglieder"
-            className="text-sm font-medium text-ink-soft transition-colors hover:text-ink"
-          >
-            Mitglieder
-          </Link>
-          {!imMitgliederbereich && (
-            <Button href="/kontakt" variant="secondary" size="md" className="whitespace-nowrap">
-              Kostenloses Erstgespräch
-            </Button>
+          {imMitgliederbereich ? (
+            <>
+              <Link
+                href="/"
+                className="text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+              >
+                Zur Website
+              </Link>
+              <form action={signOut}>
+                <Button type="submit" variant="secondary" size="md">
+                  Abmelden
+                </Button>
+              </form>
+            </>
+          ) : (
+            <>
+              <Link
+                href="/mitglieder"
+                className="text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+              >
+                Mitglieder
+              </Link>
+              <Button href="/kontakt" variant="secondary" size="md" className="whitespace-nowrap">
+                Kostenloses Erstgespräch
+              </Button>
+            </>
           )}
         </div>
 
@@ -151,40 +157,57 @@ export function Header() {
           className="flex flex-col gap-1 px-5 py-5"
           aria-label="Mobiles Menü"
         >
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className={cn(
-                "rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink",
-                pathname === item.href &&
-                  "border-l-2 border-gold-600 font-semibold text-gold-700",
-              )}
-              aria-current={pathname === item.href ? "page" : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
-          <Link
-            href="/mitglieder"
-            onClick={() => setOpen(false)}
-            className="rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink"
-          >
-            Mitglieder
-          </Link>
-          {!imMitgliederbereich && (
-            <div className="mt-3">
-              <Button
-                href="/kontakt"
-                variant="secondary"
-                size="lg"
-                className="w-full"
+          {imMitgliederbereich ? (
+            <>
+              <Link
+                href="/"
                 onClick={() => setOpen(false)}
+                className="rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink"
               >
-                Kostenloses Erstgespräch
-              </Button>
-            </div>
+                Zur Website
+              </Link>
+              <form action={signOut} className="mt-3">
+                <Button type="submit" variant="secondary" size="lg" className="w-full">
+                  Abmelden
+                </Button>
+              </form>
+            </>
+          ) : (
+            <>
+              {mainNav.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className={cn(
+                    "rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink",
+                    pathname === item.href &&
+                      "border-l-2 border-gold-600 font-semibold text-gold-700",
+                  )}
+                  aria-current={pathname === item.href ? "page" : undefined}
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <Link
+                href="/mitglieder"
+                onClick={() => setOpen(false)}
+                className="rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink"
+              >
+                Mitglieder
+              </Link>
+              <div className="mt-3">
+                <Button
+                  href="/kontakt"
+                  variant="secondary"
+                  size="lg"
+                  className="w-full"
+                  onClick={() => setOpen(false)}
+                >
+                  Kostenloses Erstgespräch
+                </Button>
+              </div>
+            </>
           )}
         </nav>
       </div>
