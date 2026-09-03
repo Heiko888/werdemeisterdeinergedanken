@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
@@ -6,6 +7,21 @@ import { socialIcons } from "@/components/ui/Icon";
 import { CookieSettingsButton } from "@/components/analytics/CookieSettingsButton";
 import { GA_ID } from "@/lib/analytics";
 import { mainNav, legalNav, site } from "@/lib/site";
+
+/**
+ * Markenfarben der sozialen Netzwerke – für die farbigen Footer-Buttons.
+ * `bg` füllt den Button beim Hover (Instagram als typischer Verlauf).
+ */
+const socialColors: Record<string, { color: string; bg: string }> = {
+  instagram: {
+    color: "#E1306C",
+    bg: "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)",
+  },
+  facebook: { color: "#1877F2", bg: "#1877F2" },
+  youtube: { color: "#FF0000", bg: "#FF0000" },
+  linkedin: { color: "#0A66C2", bg: "#0A66C2" },
+  telegram: { color: "#229ED9", bg: "#229ED9" },
+};
 
 export function Footer() {
   const year = 2026;
@@ -76,6 +92,7 @@ export function Footer() {
             ).map(([key, href]) => {
               const SocialIcon = socialIcons[key];
               if (!SocialIcon) return null;
+              const brand = socialColors[key];
               return (
                 <a
                   key={key}
@@ -83,7 +100,15 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={key}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-mist-200 transition-all hover:-translate-y-0.5 hover:border-gold-400/50 hover:text-white"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-[var(--social-color,var(--color-mist-200))] transition-all hover:-translate-y-0.5 hover:border-transparent hover:text-white hover:shadow-lg hover:[background:var(--social-bg)]"
+                  style={
+                    brand
+                      ? ({
+                          "--social-color": brand.color,
+                          "--social-bg": brand.bg,
+                        } as CSSProperties)
+                      : undefined
+                  }
                 >
                   <SocialIcon />
                 </a>

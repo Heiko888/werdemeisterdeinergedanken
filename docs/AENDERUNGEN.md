@@ -5,6 +5,28 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Footer: Social-Media-Buttons in Markenfarben
+
+**Wunsch:** Die Social-Media-Buttons im Footer sollen farbig sein.
+
+**Umgesetzt:** Jeder Social-Button erscheint jetzt im Icon in der jeweiligen
+Markenfarbe (Instagram Pink, Facebook Blau, YouTube Rot, LinkedIn Blau). Beim
+Hover/Fokus füllt sich der Button vollständig in der Markenfarbe (Instagram als
+typischer Farbverlauf), das Icon wird weiß und der Button hebt sich leicht an.
+
+**Geändert:**
+- `src/components/layout/Footer.tsx`:
+  - Neue `socialColors`-Map mit Marken-`color` (Icon-Grundfarbe) und `bg`
+    (Hover-Füllung) je Plattform inkl. `telegram` (für spätere Aktivierung).
+  - Buttons setzen die Farben rein über CSS-Variablen (`--social-color`,
+    `--social-bg`) + Tailwind-Utilities (`text-[var(...)]`,
+    `hover:[background:var(--social-bg)]`, `hover:text-white`). Kein JS/Client
+    nötig – der Footer bleibt eine Server-Komponente.
+  - `CSSProperties`-Typ aus `react` importiert (für die CSS-Variablen im
+    `style`-Attribut).
+
+---
+
 ## 2026-09-03 – Bewusstseinstest-Hero: volles Desktop-Bildband zurückgenommen (wie /mitgliedschaft)
 
 Die zuvor eingebaute Desktop-Variante „volles Bildband" auf `/bewusstseinstest`
