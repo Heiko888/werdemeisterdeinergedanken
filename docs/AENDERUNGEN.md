@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Footer-Eisvogel getauscht: Gold → Blau (echtes Motiv)
+
+Der Eisvogel im Footer wurde vom **goldenen** auf das **blaue** (naturechte)
+Motiv umgestellt. Beide Varianten lagen bereits im Repo; die blaue entspricht
+der realen Färbung des Eisvogels.
+
+**Geändert:**
+- `src/components/layout/Footer.tsx`
+  - Bild-`src` von `/eisvogel-gold.webp` auf `/eisvogel-blau.webp` umgestellt.
+  - Glow-Radial von Gold (`--color-gold-500`) auf Teal (`--color-teal-500`)
+    umgestellt, damit der Schein zum blauen Motiv passt.
+  - Drop-Shadow von Gold `rgba(217,169,58,0.3)` auf Teal `rgba(33,178,189,0.3)`
+    angepasst.
+
+Die Datei `public/eisvogel-gold.webp` bleibt vorerst unbenutzt liegen und kann
+später entfernt werden, falls nicht mehr gebraucht.
+
+---
+
 ## 2026-09-02 – Aufräumen: ungenutzte hochgeladene Roh-PNGs entfernt
 
 Die zuvor hochgeladenen großen Roh-PNGs mit UUID-Dateinamen wurden aus `public`

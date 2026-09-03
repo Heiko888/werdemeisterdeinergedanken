@@ -108,16 +108,16 @@ export function Footer() {
               className="absolute -inset-3 -z-10 rounded-full opacity-60 blur-xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 30%, transparent), transparent 68%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 30%, transparent), transparent 68%)",
               }}
             />
             <Image
-              src="/eisvogel-gold.webp"
+              src="/eisvogel-blau.webp"
               alt="Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
               width={640}
               height={622}
               sizes="(min-width: 640px) 80px, 64px"
-              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(217,169,58,0.3)] sm:w-20"
+              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(33,178,189,0.3)] sm:w-20"
             />
           </div>
 
