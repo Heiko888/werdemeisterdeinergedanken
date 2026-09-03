@@ -23,7 +23,7 @@ export default function BewusstseinstestPage() {
             (volle Höhe, unbeschnitten) wie auf der Mitgliedschaftsseite, damit
             auf schmalen Displays das ganze Motiv sichtbar bleibt; ab lg liegt es
             wie bisher dezent als Hintergrund hinter dem Text. */}
-        <div className="relative w-full shrink-0 aspect-[3/2] lg:absolute lg:inset-0 lg:z-0 lg:aspect-auto">
+        <div className="relative w-full shrink-0 aspect-[16/9] lg:absolute lg:inset-0 lg:z-0 lg:aspect-auto">
           <Image
             src={heroBild}
             alt=""

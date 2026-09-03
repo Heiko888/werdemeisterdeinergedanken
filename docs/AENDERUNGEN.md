@@ -5,6 +5,28 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Bewusstseinstest: Titelbild getauscht (Kompass-Plaza im Sonnenuntergang)
+
+Das Titelbild der Seite `/bewusstseinstest` wurde gegen ein neues Motiv
+getauscht: eine dunkle Stein-Plaza mit **Kompass-Intarsie** und leuchtenden
+Rune-Kreisen, die als Weg auf einen **Sonnenuntergang über Bergen** zulaufen –
+passt thematisch zum bisherigen „Kompass & Weg ins Licht".
+
+**Änderungen**
+
+- `public/hero-bewusstseinstest.webp` **neu erzeugt** aus dem hochgeladenen PNG
+  (1672×941, Seitenverhältnis 16:9). WebP Qualität 82 (~127 KB), unter gleichem
+  Namen ersetzt.
+- `src/app/bewusstseinstest/page.tsx`: Der **mobile Bildband** war fest auf
+  `aspect-[3/2]` (passend zum alten 3:2-Bild). Da das neue Motiv 16:9 ist, auf
+  `aspect-[16/9]` umgestellt, damit auf schmalen Displays das ganze Motiv
+  (Kompass unten links + Sonne rechts) unbeschnitten sichtbar bleibt. Ab `lg`
+  liegt das Bild wie bisher dezent als Hintergrund (`aspect-auto`, `object-cover`).
+
+Das alte 3:2-Bild bleibt über die Git-Historie wiederherstellbar.
+
+---
+
 ## 2026-09-03 – Öffentlicher Header: Logo bricht nicht mehr um (Desktop)
 
 Im **öffentlichen** Header (nicht im Mitgliederbereich) brach die Wortmarke auf
