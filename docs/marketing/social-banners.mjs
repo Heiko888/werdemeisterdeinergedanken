@@ -77,7 +77,7 @@ body{width:${t.w}px;height:${t.h}px;overflow:hidden;font-family:Inter,sans-serif
   radial-gradient(1.1px 1.1px at 44% 74%,rgba(255,255,255,.4),transparent);}
 .wrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:${t.gap}px}
 ${t.vertical ? `.wrap{flex-direction:column-reverse;text-align:center;gap:52px} .content{width:auto;max-width:${t.textW}px} .sub{margin-left:auto;margin-right:auto} .eyebrow{margin-bottom:20px}` : ""}
-${t.linkedin ? `.wrap{left:470px;top:46%;transform:translateY(-50%)} .content{width:${t.textW}px}` : ""}
+${t.linkedin ? `.wrap{left:410px;top:46%;transform:translateY(-50%)} .content{width:${t.textW}px}` : ""}
 .content{width:${t.textW}px}
 .eyebrow{font-size:${t.eb}px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${p.eyebrow};margin-bottom:16px}
 h1{font-family:Fraunces,serif;font-weight:600;color:${p.h1};font-size:${t.h1}px;line-height:1.04;letter-spacing:-.5px}
