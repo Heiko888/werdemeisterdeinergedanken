@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-03 – Startseite „Warum ich das mache": Portrait-Avatar näher rangezoomt
+
+**Wunsch:** Das Gesicht sitzt im runden Avatar (Heiko Schwaninger) neben dem
+Namen zu klein – es soll den Kreis stärker ausfüllen.
+
+**Umgesetzt:** Das Portrait wird jetzt eine Stufe hineingezoomt, sodass der Kopf
+den Avatar besser füllt. Der Zoom ist am oberen Rand verankert (`origin-top`),
+damit der Kopf oben bündig bleibt und die Gesichtsmitte im Kreis zentriert liegt.
+
+**Geändert:**
+- `src/components/sections/WhyMe.tsx`: Am `<Image>` des Avatars die Klasse
+  `origin-top scale-[1.35]` ergänzt (zusätzlich zu `object-cover object-top`).
+  Der umgebende `span` hat bereits `overflow-hidden rounded-full`, sodass das
+  vergrößerte Bild sauber im Kreis beschnitten wird.
+
+---
+
 ## 2026-09-03 – Footer: Social-Media-Buttons in Markenfarben
 
 **Wunsch:** Die Social-Media-Buttons im Footer sollen farbig sein.
