@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { clearConversation } from "@/app/mitglieder/begleiter/actions";
 import { cn } from "@/lib/cn";
+import { pillCta } from "./panelStyles";
 import {
   BEGLEITER_SUGGESTIONS,
   BEGLEITER_WELCOME,
@@ -333,7 +334,7 @@ export function BegleiterChat({
             <button
               type="submit"
               disabled={pending || !draft.trim() || zuLang}
-              className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper shadow-card transition-all hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-60"
+              className={pillCta}
             >
               {pending ? "Antwort kommt …" : "Senden"}
             </button>
