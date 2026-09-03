@@ -24,6 +24,29 @@ später entfernt werden, falls nicht mehr gebraucht.
 
 ---
 
+## 2026-09-03 – Programm-Seite: Titelbild getauscht (neues Neon-Gehirn-Logo)
+
+Das Titelbild der Mitglieder-Programm-Seite (`/mitglieder/programm`) wurde gegen
+die neue Motiv-Variante getauscht: identische Meditations-Szene, aber mit dem
+**leuchtenden Neon-Gehirn-Logo** (orange Linien-Umriss) statt des zuvor
+gefüllten goldenen Gehirn-/Baum-Symbols.
+
+**Änderungen**
+
+- `public/hero-programm.webp` **neu erzeugt** aus dem hochgeladenen PNG
+  `public/2fd37d3c-2fe5-4387-910f-6408a0b4f877.png` (1672×941, unverändertes
+  Seitenverhältnis). Aus dem PNG (~2,3 MB) wurde ein optimiertes WebP
+  (Qualität 82, ~183 KB) erzeugt und die Datei **unter gleichem Namen** ersetzt.
+- **Kein Code-Änderung** nötig: `src/app/mitglieder/programm/page.tsx` referenziert
+  weiterhin `/hero-programm.webp`; das Seitenverhältnis wird via
+  `heroImageAspect()` automatisch aus dem Dateikopf gelesen.
+
+Hinweis: Das Roh-PNG `2fd37d3c-…png` liegt bereits auf `main` (vom Upload) und
+wurde **nicht** zusätzlich in diesen Branch übernommen. Das alte Bild bleibt über
+die Git-Historie wiederherstellbar.
+
+---
+
 ## 2026-09-02 – Aufräumen: ungenutzte hochgeladene Roh-PNGs entfernt
 
 Die zuvor hochgeladenen großen Roh-PNGs mit UUID-Dateinamen wurden aus `public`
