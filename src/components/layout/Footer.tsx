@@ -100,14 +100,15 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={key}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-[var(--social-color,var(--color-mist-200))] transition-all hover:-translate-y-0.5 hover:border-transparent hover:text-white hover:shadow-lg hover:[background:var(--social-bg)]"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-lg text-[var(--social-color)] transition-all hover:-translate-y-0.5 hover:border-transparent hover:text-white hover:shadow-lg hover:[background:var(--social-bg)]"
                   style={
-                    brand
-                      ? ({
-                          "--social-color": brand.color,
-                          "--social-bg": brand.bg,
-                        } as CSSProperties)
-                      : undefined
+                    {
+                      // Fallback in die Variable verlagert – ein nachgeschaltetes
+                      // var()-Fallback im Tailwind-Arbitrary-Value (text-[var(a,var(b))])
+                      // erzeugt sonst ungültiges CSS und bricht den Dev-Build.
+                      "--social-color": brand?.color ?? "var(--color-mist-200)",
+                      "--social-bg": brand?.bg ?? "transparent",
+                    } as CSSProperties
                   }
                 >
                   <SocialIcon />
