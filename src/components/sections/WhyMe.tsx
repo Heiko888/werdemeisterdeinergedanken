@@ -44,7 +44,7 @@ export function WhyMe() {
                   alt="Heiko Schwaninger"
                   fill
                   sizes="80px"
-                  className="object-cover object-top"
+                  className="origin-top scale-[1.35] object-cover object-top"
                 />
               </span>
               <div>
