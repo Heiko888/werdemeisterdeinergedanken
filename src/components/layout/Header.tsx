@@ -68,7 +68,7 @@ export function Header() {
           : "border-ink/5",
       )}
     >
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
+      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Logo />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Hauptmenü">
@@ -88,7 +88,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-5 lg:flex">
           <Link
             href="/mitglieder"
             className="text-sm font-medium text-ink-soft transition-colors hover:text-ink"
