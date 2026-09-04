@@ -5,6 +5,41 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-05 – Krafttier im Footer: Eisvogel → Schneeleopard getauscht
+
+Das „Krafttier & Symbol"-Band im Footer zeigt jetzt statt des **Eisvogels** den
+**Schneeleopard** – mit neuem Motiv, neuer Bedeutung und passendem Glow.
+
+**Geändert:**
+- **`src/components/layout/Footer.tsx`:**
+  - Bild-`src` von `/eisvogel-blau.webp` auf `/schneeleopard.webp` umgestellt
+    (`width`/`height` auf 720×646 angepasst, neuer Alt-Text).
+  - Tagline: „Der **Schneeleopard** – mein Symbol für stille Stärke und innere
+    Souveränität."
+  - Attribute: **Stärke & Resilienz · Ruhe & Präsenz · Freiheit &
+    Selbstbestimmung** (vorher: Glück & Hoffnung · Fokus & Präzision · Klarheit
+    & Reinheit).
+  - Glow-Radial + `drop-shadow` von Teal (`--color-teal-500`) auf ein neutrales
+    Silber/Mist (`--color-mist-300`, `rgba(195,207,226,…)`), passend zum
+    schwarz-weißen Motiv.
+
+**Neu:**
+- **`public/schneeleopard.webp`** – zugeschnittenes, verkleinertes WebP
+  (720×646, ~92 KB, transparent), erzeugt aus `public/schneeleopard.png`.
+- **`tools/images/schneeleopard-webp.mjs`** – reproduzierbares Skript
+  (`trim` + `resize` + WebP-Export). Aufruf: `node tools/images/schneeleopard-webp.mjs`.
+
+**Entfernt:**
+- **`public/schneeleopard.png`** (3000×3000, ~11 MB) – wurde von der Seite nicht
+  direkt geladen (nur das WebP) und ist deshalb aus dem ausgelieferten
+  `public/`-Ordner **entfernt** (~11 MB gespart). Bei Bedarf lässt sich das WebP
+  aus einer wieder bereitgestellten Quell-PNG neu erzeugen
+  (`node tools/images/schneeleopard-webp.mjs pfad/zur/schneeleopard.png`).
+
+Verifiziert per ESLint (grün).
+
+---
+
 ## 2026-09-04 – Abstand Überschrift → Text auf `/ueber-mich` vergrößert
 
 Nach dem Entfernen des Hundebild-Blocks stand der Erzähltext zu dicht an der

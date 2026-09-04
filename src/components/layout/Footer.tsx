@@ -125,7 +125,7 @@ export function Footer() {
         </div>
       </Container>
 
-      {/* Krafttier & Symbol – der Eisvogel (mittig, ganz unten) */}
+      {/* Krafttier & Symbol – der Schneeleopard (mittig, ganz unten) */}
       <div className="hairline">
         <Container className="flex flex-col items-center gap-3 py-8 text-center">
           <div className="relative shrink-0">
@@ -134,30 +134,30 @@ export function Footer() {
               className="absolute -inset-3 -z-10 rounded-full opacity-60 blur-xl"
               style={{
                 background:
-                  "radial-gradient(circle, color-mix(in oklab, var(--color-teal-500) 30%, transparent), transparent 68%)",
+                  "radial-gradient(circle, color-mix(in oklab, var(--color-mist-300) 32%, transparent), transparent 68%)",
               }}
             />
             <Image
-              src="/eisvogel-blau.webp"
-              alt="Eisvogel im Flug – Krafttier für Glück, Fokus und einen klaren Geist"
-              width={640}
-              height={622}
+              src="/schneeleopard.webp"
+              alt="Schneeleopard auf einem Felsen – Krafttier für stille Stärke und innere Souveränität"
+              width={720}
+              height={646}
               sizes="(min-width: 640px) 80px, 64px"
-              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(33,178,189,0.3)] sm:w-20"
+              className="mx-auto w-16 drop-shadow-[0_6px_24px_rgba(195,207,226,0.3)] sm:w-20"
             />
           </div>
 
           <div className="min-w-0">
             <p className="text-sm leading-relaxed text-cream-dim/80">
-              <span className="font-medium text-gold-300">Der Eisvogel</span> –
-              mein Symbol für einen klaren, wachen Geist.
+              <span className="font-medium text-gold-300">Der Schneeleopard</span>{" "}
+              – mein Symbol für stille Stärke und innere Souveränität.
             </p>
             <ul className="mt-1 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-cream-dim/55">
-              <li>Glück &amp; Hoffnung</li>
+              <li>Stärke &amp; Resilienz</li>
               <li aria-hidden className="text-cream-dim/25">·</li>
-              <li>Fokus &amp; Präzision</li>
+              <li>Ruhe &amp; Präsenz</li>
               <li aria-hidden className="text-cream-dim/25">·</li>
-              <li>Klarheit &amp; Reinheit</li>
+              <li>Freiheit &amp; Selbstbestimmung</li>
             </ul>
           </div>
         </Container>
