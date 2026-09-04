@@ -71,14 +71,6 @@ export function Footer() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/seiten"
-                className="inline-flex min-h-11 items-center text-sm text-mist-300/70 transition-colors hover:text-white"
-              >
-                Seitenübersicht
-              </Link>
-            </li>
             {GA_ID && (
               <li>
                 <CookieSettingsButton />
