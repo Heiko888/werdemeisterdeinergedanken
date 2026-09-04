@@ -5,6 +5,35 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Buchmockup auf Mobile zwischen Überschrift und Formular
+
+Feinschliff zur vorherigen Änderung: Das Buch stand auf Mobile ganz oben
+über der Überschrift. Gewünscht war es **zwischen Überschrift und Formular**.
+
+Dafür wurde der bisher gemeinsame rechte Block (Überschrift + Intro +
+Formular) in **drei** eigene Grid-Kinder aufgeteilt, DOM-Reihenfolge
+Überschrift → Buch → Formular:
+
+- **Mobile** (eine Spalte): stapelt genau so – das Buch sitzt zwischen dem
+  Intro und der Anmeldekarte.
+- **Desktop** (`lg:`): unverändertes Bild – das Buch rückt per
+  `lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:self-center` in die linke
+  Spalte über beide Zeilen, Überschrift (oben) und Formular (unten) stehen
+  rechts. Grid: `lg:grid-cols-[…] lg:grid-rows-[auto_auto]`.
+
+Betroffen:
+- `src/components/sections/LeadMagnet.tsx` (Startseite) – heading group =
+  Eyebrow + H2 + Intro, dann Buch, dann Formularkarte (Bullets + Formular +
+  Trust-Zeile).
+- `src/app/gratis-ebook/page.tsx` (Landingpage) – heading group = Eyebrow +
+  H1 + Intro + Bullets, dann Buch, dann Formular.
+
+Verifiziert per Production-Build (grün) und Playwright-Screenshots bei
+390 px (Mobile: Reihenfolge korrekt) und 1280 px (Desktop: Buch weiterhin
+links, vertikal zentriert). Reine Layout-/Reihenfolge-Änderung.
+
+---
+
 ## 2026-09-04 – Buchmockup auf Mobile zur Überschrift verschoben
 
 Auf schmalen Screens (Handy) stand das E-Book-Mockup **unter** dem

@@ -87,31 +87,13 @@ export default function GratisEbookPage() {
           className="pointer-events-none absolute inset-0 -z-10"
           style={{ background: HERO_GLOW }}
         />
-        <Container className="grid items-center gap-14 lg:grid-cols-[0.85fr_1fr]">
-          {/* Buch-Cover */}
-          <Reveal className="order-1">
-            <div className="flex justify-center">
-              <div className="relative">
-                <div
-                  aria-hidden
-                  className="absolute inset-0 -z-10 rounded-full opacity-60 blur-3xl"
-                  style={{
-                    background:
-                      "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 35%, transparent), transparent 70%)",
-                  }}
-                />
-                <Image
-                  src={ebookMockup}
-                  alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
-                  priority
-                  className="h-auto w-56 drop-shadow-2xl sm:w-72"
-                />
-              </div>
-            </div>
-          </Reveal>
-
-          {/* Text + Formular */}
-          <Reveal delay={100} className="order-2">
+        {/* Drei Blöcke in DOM-Reihenfolge Intro → Buch → Formular. Auf Mobile
+            stapeln sie so (Buch zwischen Intro und Formular). Auf Desktop rückt
+            das Buch per Grid in die linke Spalte über beide Zeilen, Intro und
+            Formular stehen rechts. */}
+        <Container className="grid items-center gap-10 lg:grid-cols-[0.85fr_1fr] lg:grid-rows-[auto_auto] lg:gap-x-14 lg:gap-y-8">
+          {/* Überschrift + Intro + Bullets – Mobile oben, Desktop oben rechts */}
+          <Reveal className="lg:col-start-2 lg:row-start-1">
             <div className="flex flex-col items-start gap-6">
               <Eyebrow className="text-gold-300/90">Kostenloses E-Book</Eyebrow>
               <h1 className="max-w-2xl text-[1.8rem] font-medium leading-[1.1] text-cream sm:[hyphens:none] sm:text-5xl">
@@ -135,11 +117,40 @@ export default function GratisEbookPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </Reveal>
 
-              {/* Formular auf hellem Grund für maximalen Kontrast/Fokus */}
-              <div className="mt-2 w-full rounded-3xl border border-cream/10 bg-paper/95 p-5 shadow-xl sm:p-6">
-                <EbookForm />
+          {/* Buch-Cover – Mobile zwischen Intro und Formular, Desktop linke
+              Spalte über beide Zeilen */}
+          <Reveal
+            delay={100}
+            className="lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:self-center"
+          >
+            <div className="flex justify-center">
+              <div className="relative">
+                <div
+                  aria-hidden
+                  className="absolute inset-0 -z-10 rounded-full opacity-60 blur-3xl"
+                  style={{
+                    background:
+                      "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 35%, transparent), transparent 70%)",
+                  }}
+                />
+                <Image
+                  src={ebookMockup}
+                  alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
+                  priority
+                  className="h-auto w-56 drop-shadow-2xl sm:w-72"
+                />
               </div>
+            </div>
+          </Reveal>
+
+          {/* Formular auf hellem Grund für maximalen Kontrast/Fokus – Mobile
+              unter dem Buch, Desktop unten rechts */}
+          <Reveal delay={150} className="lg:col-start-2 lg:row-start-2">
+            <div className="w-full rounded-3xl border border-cream/10 bg-paper/95 p-5 shadow-xl sm:p-6">
+              <EbookForm />
             </div>
           </Reveal>
         </Container>
