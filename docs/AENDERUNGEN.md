@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Buchmockup auf Desktop vergrößert
+
+Das Mockup wirkte auf dem Desktop in der linken Spalte zu klein (viel
+Leerraum). Es hatte keine eigene Desktop-Breite, nur `sm:w-72` (288 px).
+
+Neu: `lg:w-96` (384 px), damit das Buch die Spalte füllt und mit der
+Formularkarte rechts optisch gleichzieht. Mobile-Größen (`w-64`/`w-56` bzw.
+`sm:w-72`) bleiben unverändert.
+
+Betroffen:
+- `src/components/sections/LeadMagnet.tsx` (Startseite)
+- `src/app/gratis-ebook/page.tsx` (Landingpage)
+
+Visuell per Screenshot bei 1280 px geprüft.
+
+---
+
 ## 2026-09-04 – Buchmockup auf Mobile zwischen Überschrift und Formular
 
 Feinschliff zur vorherigen Änderung: Das Buch stand auf Mobile ganz oben
