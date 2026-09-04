@@ -5,6 +5,26 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Hundebild auf `/ueber-mich` mitten in den Text verschoben
+
+Der Hundebild-Block (Bild `/ueber-heiko-hund.webp` + Zitat „Ein Hund holt dich
+sofort in den Moment." + Text über Präsenz/Bewusstsein) stand bisher **ganz
+oben** in der Sektion „Meine Geschichte" – direkt unter der Überschrift und
+**vor** dem eigentlichen Erzähltext.
+
+- **Neu platziert:** Der Block sitzt jetzt **mitten im Fließtext**, nach dem
+  Satz „Das war wichtig." und **vor** „Aber der eigentliche Wendepunkt kam durch
+  etwas anderes:". Dort schließt der Meditations-/Wahrnehmen-Gedanke ab, sodass
+  das Zitat („Präsenz / nur das Jetzt") inhaltlich passt.
+- **Datei:** `src/app/ueber-mich/page.tsx` – die separate `<Reveal>`-Umhüllung
+  des Bildes wurde entfernt; das `<figure>` ist nun Teil des Text-Blocks
+  (`my-9` → `my-2`, da der Abstand jetzt über `gap-5` des Text-Containers
+  geregelt wird). Bild, Alt-Text, Zitat und Bildunterschrift unverändert.
+
+Verifiziert per ESLint (grün) und `tsc --noEmit` (keine Fehler in der Datei).
+
+---
+
 ## 2026-09-04 – Seitenübersicht in den Admin-Bereich verschoben (`/admin/seiten`)
 
 Die zuvor öffentliche Seitenübersicht (`/seiten`) ist jetzt **nur noch im
