@@ -8,6 +8,12 @@
 //   Quelle: public/schneeleopard.png   (Original, 3000x3000, RGBA, ~11 MB)
 //   Ziel:   public/schneeleopard.webp  (zugeschnitten + verkleinert, wird vom Footer geladen)
 //
+// Hinweis: Das 11-MB-Quell-PNG ist NICHT mehr im Repo (bewusst entfernt, um
+// den public/-Ordner leicht zu halten). Das ausgelieferte WebP ist bereits
+// erzeugt und committet. Zum erneuten Erzeugen die Original-PNG wieder als
+// Quelle bereitstellen, z. B.:
+//   node tools/images/schneeleopard-webp.mjs pfad/zur/schneeleopard.png
+//
 // Das Quellbild hat bereits einen transparenten Hintergrund – daher kein
 // Freistellen nötig. Wir schneiden nur den transparenten Rand weg (trim),
 // verkleinern auf eine sinnvolle Icon-Größe und exportieren ein kompaktes WebP.

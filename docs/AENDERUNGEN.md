@@ -29,10 +29,12 @@ Das „Krafttier & Symbol"-Band im Footer zeigt jetzt statt des **Eisvogels** de
 - **`tools/images/schneeleopard-webp.mjs`** – reproduzierbares Skript
   (`trim` + `resize` + WebP-Export). Aufruf: `node tools/images/schneeleopard-webp.mjs`.
 
-**Hinweis:** Das Quellbild `public/schneeleopard.png` (3000×3000, ~11 MB, im
-`schneeleopard`-Commit hinzugefügt) wird von der Seite **nicht** direkt geladen
-(nur das WebP). Es kann später nach `tools/images/` verschoben oder entfernt
-werden, um ~11 MB aus dem ausgelieferten `public/`-Ordner zu sparen.
+**Entfernt:**
+- **`public/schneeleopard.png`** (3000×3000, ~11 MB) – wurde von der Seite nicht
+  direkt geladen (nur das WebP) und ist deshalb aus dem ausgelieferten
+  `public/`-Ordner **entfernt** (~11 MB gespart). Bei Bedarf lässt sich das WebP
+  aus einer wieder bereitgestellten Quell-PNG neu erzeugen
+  (`node tools/images/schneeleopard-webp.mjs pfad/zur/schneeleopard.png`).
 
 Verifiziert per ESLint (grün).
 
