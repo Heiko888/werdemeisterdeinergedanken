@@ -5,6 +5,42 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Echte „Meine Geschichte" auf `/ueber-mich`
+
+Der bisherige, generische Platzhaltertext im Abschnitt „Meine Geschichte" wurde
+durch die **echte, persönliche Erzählung** ersetzt – als Storytelling aufgebaut
+und bewusst zu den **7 Stufen der Bewusstseinsentwicklung** hinführend.
+
+Inhaltliche Leitplanken (bewusst so gewählt):
+
+- **Ton:** rein psychologisch – keine spirituellen Begriffe (Reiki, Trance,
+  Frequenzen). Kern: Krise → Meditation/Atem → die richtigen Fragen → Verlust →
+  tiefer schauen → Bewusstseinsentwicklung → Weitergeben.
+- **Verlust (Lena):** nur **angedeutet** – ein schwerer Verlust wird erzählt,
+  aber **nicht** explizit als Suizid benannt. Deshalb bewusst **kein**
+  Telefonseelsorge-Hinweis (würde den Suizid explizit machen).
+- Quelle des Rohmaterials: `docs/buch-1-verwertung/meine-geschichte.md`
+  (E-Book „Unterwegs in anderen Dimensionen"); der Website-Text ist eine
+  eigenständige, vom Betreiber vorgegebene Fassung.
+
+Darstellung:
+
+- Einspaltiges, schmales Lese-Layout (`Container size="narrow"`).
+- Zwei akzentuierte „Fragen"-Blöcke, eine gestapelte „Du beginnst…"-Liste,
+  ein Gold-Callout mit Link auf `/die-7-stufen` und ein Pull-Quote als Abschluss.
+- Das Hunde-Foto samt Zitat bleibt als ruhige Auftakt-Figur erhalten.
+- Die Meilenstein-Timeline („Mein Weg") wurde an den neuen Erzählbogen
+  angeglichen (Anfang → erste Fragen → schwerster Verlust → 7 Stufen heute).
+
+Betroffen:
+- `src/app/ueber-mich/page.tsx` – neue Story-Sektion (ersetzt den Platzhalter),
+  angepasstes `milestones`-Array, `Link`-Import ergänzt. Kein neues Datenmodul.
+
+Verifiziert per `npm run build` (grün, `/ueber-mich` als statische Route ○) und
+`npm run lint` (keine Probleme in der geänderten Datei).
+
+---
+
 ## 2026-09-04 – Neue Seitenübersicht (`/seiten`) mit allen Links zum Anklicken
 
 Neue Seite, die **alle** Seiten der Website als klickbare Liste bündelt,
