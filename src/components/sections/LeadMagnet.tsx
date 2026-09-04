@@ -60,7 +60,7 @@ export function LeadMagnet() {
                 src={ebookMockup}
                 alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
                 priority
-                className="h-auto w-64 drop-shadow-2xl sm:w-72"
+                className="h-auto w-64 drop-shadow-2xl sm:w-72 lg:w-96"
               />
               {/* Feine goldene Standlinie – gibt dem Cover einen Boden. */}
               <div
