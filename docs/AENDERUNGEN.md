@@ -5,6 +5,27 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Buchmockup auf Mobile zur Überschrift verschoben
+
+Auf schmalen Screens (Handy) stand das E-Book-Mockup **unter** dem
+Anmeldeformular, also ganz am Ende der Sektion – weit weg von der
+Überschrift. Ursache: Buch- und Textspalte wurden per `order`-Utilities
+umgedreht (`order-2 lg:order-1` beim Buch, `order-1 lg:order-2` beim Text),
+damit das Buch auf dem Desktop links steht.
+
+Jetzt steht das Buch auf Mobile **oben bei der Überschrift**: Buch = `order-1`,
+Text = `order-2`. Auf dem Desktop (`lg:`) bleibt alles wie gehabt – Buch
+links, Text/Formular rechts, weil das Buch in der DOM-Reihenfolge zuerst
+kommt und das Grid es damit in die linke Spalte legt.
+
+Betroffen (gleiche Struktur, beide angepasst):
+- `src/components/sections/LeadMagnet.tsx` (Startseite)
+- `src/app/gratis-ebook/page.tsx` (Gratis-E-Book-Landingpage)
+
+Reine CSS-Reihenfolge, keine inhaltliche Änderung.
+
+---
+
 ## 2026-09-04 – Neues 3D-Buchmockup auf der Website
 
 Das E-Book-Mockup, das auf der Startseite (`LeadMagnet`) und auf
