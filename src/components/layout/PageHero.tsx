@@ -98,8 +98,11 @@ export function PageHero({
       ? [
           "flex flex-col items-center gap-6 pb-14 pt-8 text-center sm:pb-16 sm:pt-10",
           "lg:max-w-xl lg:gap-7 lg:py-28 lg:[text-shadow:0_1px_18px_rgba(8,16,42,0.55)]",
+          // Beide Seiten linksbündig: rechtsbündiger Text wirkt unruhig. Die
+          // Spalte sitzt via `ml-auto`/`mr-auto` links bzw. rechts, der Text
+          // darin startet aber immer links.
           spotlight === "left"
-            ? "lg:ml-auto lg:items-end lg:text-right"
+            ? "lg:ml-auto lg:items-start lg:text-left"
             : "lg:mr-auto lg:items-start lg:text-left",
         ].join(" ")
       : "flex flex-col items-center gap-6 pb-14 pt-8 text-center sm:pb-16 sm:pt-10 lg:py-24";
