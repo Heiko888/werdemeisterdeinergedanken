@@ -5,6 +5,30 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Neues 3D-Buchmockup auf der Website
+
+Das E-Book-Mockup, das auf der Startseite (`LeadMagnet`) und auf
+`/gratis-ebook` neben dem Anmeldeformular steht, wurde gegen ein neues
+**3D-Buchrender** ausgetauscht (Titel „Die 7 Stufen der
+Bewusstseinsentwicklung", cremeweißer Umschlag mit goldenem Seitengehirn,
+perspektivische Ansicht mit Buchrücken).
+
+- Ersetzt: `public/ebook-mockup.webp` (vorher flache Cover-Ansicht 1200×1600,
+  jetzt 3D-Render 1182×1600, transparenter Hintergrund).
+- **Kein Code-Change nötig**: Beide Stellen importieren die Datei statisch
+  unter demselben Pfad (`LeadMagnet.tsx`, `gratis-ebook/page.tsx`);
+  `next/image` liest die neuen Maße automatisch, die Anzeige nutzt feste
+  Breite + `h-auto`, das Seitenverhältnis passt sich an.
+- Transparenz bewusst beibehalten: Das Buch steht so mit dem vorhandenen
+  Gold-Schein und `drop-shadow-2xl` auf dem Navy-Grund, ohne schwarzen Rand.
+- Quelle 3000×4000 PNG (RGBA) → auf Alpha-Bounding-Box zugeschnitten und auf
+  Höhe 1600 skaliert, als WebP (Q90) gespeichert (~116 KB).
+
+Nicht berührt: `public/ebook-cover.*` (flache Cover-Variante, wird im
+Website-Code nicht referenziert) und das E-Book-PDF selbst.
+
+---
+
 ## 2026-09-03 – E-Book nur noch mit bestätigter Anmeldung
 
 Der Lead-Magnet war auf **zwei** Wegen ohne E-Mail-Adresse zu bekommen:
