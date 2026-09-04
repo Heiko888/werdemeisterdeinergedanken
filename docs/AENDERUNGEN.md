@@ -5,6 +5,39 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Neue Seitenübersicht (`/seiten`) mit allen Links zum Anklicken
+
+Neue Seite, die **alle** Seiten der Website als klickbare Liste bündelt,
+gruppiert nach Bereich. Die dynamischen Gruppen werden aus denselben
+Datenquellen erzeugt wie die echten Seiten – die Liste bleibt also automatisch
+aktuell, sobald neue Inhalte dazukommen.
+
+Gruppen:
+
+- **Öffentliche Seiten** (Startseite, 7 Stufen, Mitgliedschaft + Willkommen,
+  Bewusstseinstest, Über mich, Gratis-eBook, Kontakt, Login)
+- **Blog** – Übersicht + alle veröffentlichten Artikel (`publishedPosts()`)
+- **Mitgliederbereich** – Dashboard, Programm, Rückkehr, Journal,
+  Gedankenprofil, Detektor, Begleiter, Einstellungen
+- **Die 7 Stufen** – jede Stufe aus `stages` (`@/lib/content`)
+- **Praxis** – Übersicht + alle Übungen aus `practices`
+- **Vertiefungen** – Übersicht + alle aus `deepDives`
+- **Wissensdatenbank** – Übersicht + alle Kapitel aus `chapters()` + Glossar
+- **Administration** – Admin-Dashboard, Marken-Übersicht, Redaktionsplan,
+  Vorlagen
+- **Rechtliches** – Impressum, Datenschutz
+
+Betroffen:
+- `src/app/seiten/page.tsx` (neu) – Server-Component, nutzt `PageHero`,
+  `Container`, `ArrowLink`-Optik; `robots: { index: false }`, da sie auch in
+  den geschützten Mitgliederbereich verlinkt.
+- `src/components/layout/Footer.tsx` – dezenter Link „Seitenübersicht" unter
+  „Rechtliches", damit die Seite erreichbar ist.
+
+Verifiziert per Production-Build (grün, `/seiten` als statische Route ○).
+
+---
+
 ## 2026-09-04 – Buchmockup auf Desktop deutlich größer (wirkte verloren)
 
 `lg:w-96` (384 px) reichte nicht – das Buch wirkte in der schmalen linken
