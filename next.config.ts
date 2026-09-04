@@ -63,6 +63,16 @@ const nextConfig: NextConfig = {
         destination: "/mitglieder/wissensdatenbank/:slug",
         permanent: true,
       },
+      /**
+       * Die Seitenuebersicht ist in den Admin-Bereich gewandert. Die kurz
+       * oeffentlich erreichbare /seiten-Adresse dorthin umleiten, statt 404 zu
+       * liefern (der Admin-Bereich erzwingt anschliessend den Login).
+       */
+      {
+        source: "/seiten",
+        destination: "/admin/seiten",
+        permanent: true,
+      },
     ];
   },
 };
