@@ -5,6 +5,28 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Hero-Text auf der rechten Seite linksbündig
+
+Der Hero-Text, der im Spotlight-Aufbau auf der **rechten** Seite sitzt, wird
+jetzt **linksbündig** ausgerichtet statt rechtsbündig – rechtsbündiger Text
+wirkte unruhig. Zentral gelöst, betrifft **alle Seiten mit Hero-Text auf der
+rechten Seite**.
+
+**Geändert:**
+- **`src/components/layout/PageHero.tsx`:** Im `columnClass` für den
+  Spotlight-Modus die `spotlight === "left"`-Variante von
+  `lg:items-end lg:text-right` auf `lg:items-start lg:text-left` umgestellt.
+  Die Textspalte sitzt weiterhin über `ml-auto`/`mr-auto` auf der dem Motiv
+  abgewandten Seite; der Text darin startet nun auf **beiden** Seiten links.
+
+**Betroffen aktuell:** `/blog` (`spotlight="left"` → Text rechts, jetzt
+linksbündig).
+
+Verifiziert per `npm run build` (grün), ESLint (grün) und Screenshot `/blog`
+@1440px (Titelzeilen + Eyebrow starten an derselben linken Kante).
+
+---
+
 ## 2026-09-05 – Krafttier im Footer: Eisvogel → Schneeleopard getauscht
 
 Das „Krafttier & Symbol"-Band im Footer zeigt jetzt statt des **Eisvogels** den
