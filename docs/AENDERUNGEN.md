@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Hundebild-Block von `/ueber-mich` entfernt & archiviert
+
+Der Hundebild-Block (Bild + Zitat „Ein Hund holt dich sofort in den Moment." +
+Präsenz-/Bewusstseins-Text) wurde **komplett von der „Über mich"-Seite
+entfernt** und zur **späteren Wiederverwendung archiviert**.
+
+- **`src/app/ueber-mich/page.tsx`:** `<figure>` mit Bild + `<figcaption>`
+  entfernt; der nun ungenutzte `PhotoFrame`-Import wurde ebenfalls entfernt.
+- **Bild verschoben:** `public/ueber-heiko-hund.webp` →
+  `docs/archiv/hundbild-ueber-mich/ueber-heiko-hund.webp` (nicht mehr im
+  öffentlichen `public/`-Ordner, keine weitere Referenz im Code).
+- **Neu:** `docs/archiv/hundbild-ueber-mich/README.md` – enthält Text, Zitat,
+  Alt-Text und das fertige JSX-Snippet inkl. Wiederverwendungs-Anleitung.
+
+Verifiziert per ESLint (grün) und `tsc --noEmit` (keine Fehler in der Datei).
+
+---
+
 ## 2026-09-04 – Hundebild auf `/ueber-mich` mitten in den Text verschoben
 
 Der Hundebild-Block (Bild `/ueber-heiko-hund.webp` + Zitat „Ein Hund holt dich

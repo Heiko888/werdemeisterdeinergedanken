@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "@/components/ui/Icon";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { PhotoFrame } from "@/components/ui/PhotoFrame";
 import { values } from "@/lib/content";
 import { withCanonical } from "@/lib/seo";
 
@@ -91,25 +90,6 @@ export default function AboutPage() {
                 ihn wahrzunehmen.
               </p>
               <p className="font-medium text-ink">Das war wichtig.</p>
-
-              <figure className="mx-auto my-2 w-full max-w-xs">
-                <PhotoFrame
-                  src="/ueber-heiko-hund.webp"
-                  alt="Heiko mit seinem Hund draußen in der Natur"
-                  aspect="square"
-                />
-                <figcaption className="mt-5 border-l-2 border-accent/40 pl-4">
-                  <p className="font-display text-[1.05rem] italic leading-snug text-ink">
-                    „Ein Hund holt dich sofort in den Moment.“
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-mid">
-                    Meine persönliche Überzeugung: Hunde stärken dein Bewusstsein.
-                    Sie kennen kein Gestern und kein Morgen – nur das Jetzt. Diese
-                    Präsenz steckt an, wenn du dich darauf einlässt.
-                  </p>
-                </figcaption>
-              </figure>
-
               <p>Aber der eigentliche Wendepunkt kam durch etwas anderes:</p>
               <p className="font-display text-xl italic text-ink">
                 Ich begann, mir die richtigen Fragen zu stellen.
