@@ -152,7 +152,13 @@ export function EbookForm() {
           className="hidden"
           aria-hidden="true"
         />
-        <Button type="submit" variant="accent" size="lg" disabled={status === "sending"}>
+        <Button
+          type="submit"
+          variant="accent"
+          size="lg"
+          disabled={status === "sending"}
+          className="shrink-0 whitespace-nowrap"
+        >
           {status === "sending" ? "Wird gesendet …" : "E-Book sichern"}
           <ArrowRight />
         </Button>

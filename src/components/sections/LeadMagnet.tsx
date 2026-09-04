@@ -23,7 +23,7 @@ export function LeadMagnet() {
           Mobile stapeln sie genau so (Buch sitzt zwischen Überschrift und
           Formular). Auf Desktop rückt das Buch per Grid in die linke Spalte
           über beide Zeilen, Überschrift und Formular stehen rechts. */}
-      <Container className="grid items-center gap-10 lg:grid-cols-[0.8fr_1fr] lg:grid-rows-[auto_auto] lg:gap-x-16 lg:gap-y-6">
+      <Container className="grid items-center gap-10 lg:grid-cols-[1fr_1fr] lg:grid-rows-[auto_auto] lg:gap-x-16 lg:gap-y-6">
         {/* Überschrift + Intro – Mobile oben, Desktop oben rechts */}
         <Reveal className="lg:col-start-2 lg:row-start-1">
           <div className="flex flex-col items-start gap-6">
@@ -60,7 +60,7 @@ export function LeadMagnet() {
                 src={ebookMockup}
                 alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
                 priority
-                className="h-auto w-64 drop-shadow-2xl sm:w-72 lg:w-96"
+                className="h-auto w-64 drop-shadow-2xl sm:w-72 lg:w-[28rem]"
               />
               {/* Feine goldene Standlinie – gibt dem Cover einen Boden. */}
               <div

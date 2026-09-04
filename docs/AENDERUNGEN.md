@@ -5,6 +5,28 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Buchmockup auf Desktop deutlich größer (wirkte verloren)
+
+`lg:w-96` (384 px) reichte nicht – das Buch wirkte in der schmalen linken
+Spalte (`0.8fr` bei `max-w-6xl` ≈ 455 px) verloren. Jetzt bekommt die
+Buch-Spalte mehr Breite **und** das Buch mehr Größe:
+
+- **Startseite (`LeadMagnet`):** Grid von `lg:grid-cols-[0.8fr_1fr]` auf
+  `lg:grid-cols-[1fr_1fr]` (gleiche Spalten), Buch `lg:w-[28rem]` (448 px).
+- **`/gratis-ebook`:** Buch `lg:w-[26rem]` (416 px). Hier bleibt das Grid bei
+  `lg:grid-cols-[0.85fr_1fr]` – die große H1 (`text-5xl`,
+  „Bewusstseinsentwicklung") braucht die breitere Textspalte, sonst bricht
+  das lange Wort unschön um.
+- **Formular-Button** (`EbookForm`): `shrink-0 whitespace-nowrap` ergänzt,
+  damit „E-Book sichern" in der schmaleren Spalte einzeilig bleibt und nicht
+  schrumpft.
+
+Mobile-Größen unverändert. Verifiziert per Production-Build (grün) und
+Screenshots bei 1280 px und 1440 px (Buch präsent, Überschrift intakt,
+Button einzeilig).
+
+---
+
 ## 2026-09-04 – Buchmockup auf Desktop vergrößert
 
 Das Mockup wirkte auf dem Desktop in der linken Spalte zu klein (viel
