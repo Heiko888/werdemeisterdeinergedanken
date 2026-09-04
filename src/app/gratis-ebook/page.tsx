@@ -140,7 +140,7 @@ export default function GratisEbookPage() {
                   src={ebookMockup}
                   alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
                   priority
-                  className="h-auto w-56 drop-shadow-2xl sm:w-72 lg:w-96"
+                  className="h-auto w-56 drop-shadow-2xl sm:w-72 lg:w-[26rem]"
                 />
               </div>
             </div>
