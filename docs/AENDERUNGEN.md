@@ -5,6 +5,18 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Abstand Überschrift → Text auf `/ueber-mich` vergrößert
+
+Nach dem Entfernen des Hundebild-Blocks stand der Erzähltext zu dicht an der
+Überschrift „Ich kenne den Kopf, der nie zur Ruhe kommt" (der Block war zuvor
+der Puffer dazwischen).
+
+- **`src/app/ueber-mich/page.tsx`:** Dem Text-Block (`<div>` im zweiten
+  `<Reveal>`) wurde `mt-8` gegeben, damit der Abstand zur Überschrift wieder
+  zum Rhythmus der Seite passt.
+
+---
+
 ## 2026-09-04 – Hundebild-Block von `/ueber-mich` entfernt & archiviert
 
 Der Hundebild-Block (Bild + Zitat „Ein Hund holt dich sofort in den Moment." +

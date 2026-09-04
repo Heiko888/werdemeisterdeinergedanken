@@ -67,7 +67,7 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="flex flex-col gap-5 text-[1.05rem] leading-relaxed text-ink-mid">
+            <div className="mt-8 flex flex-col gap-5 text-[1.05rem] leading-relaxed text-ink-mid">
               <p>
                 Ich rede nicht über etwas, das ich irgendwann in Büchern gelesen
                 habe. Ich habe diesen Weg selbst durchlaufen.
