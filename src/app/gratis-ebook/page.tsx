@@ -89,7 +89,7 @@ export default function GratisEbookPage() {
         />
         <Container className="grid items-center gap-14 lg:grid-cols-[0.85fr_1fr]">
           {/* Buch-Cover */}
-          <Reveal className="order-2 lg:order-1">
+          <Reveal className="order-1">
             <div className="flex justify-center">
               <div className="relative">
                 <div
@@ -111,7 +111,7 @@ export default function GratisEbookPage() {
           </Reveal>
 
           {/* Text + Formular */}
-          <Reveal delay={100} className="order-1 lg:order-2">
+          <Reveal delay={100} className="order-2">
             <div className="flex flex-col items-start gap-6">
               <Eyebrow className="text-gold-300/90">Kostenloses E-Book</Eyebrow>
               <h1 className="max-w-2xl text-[1.8rem] font-medium leading-[1.1] text-cream sm:[hyphens:none] sm:text-5xl">

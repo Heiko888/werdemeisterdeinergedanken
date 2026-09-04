@@ -22,7 +22,7 @@ export function LeadMagnet() {
       <Container className="grid items-center gap-16 lg:grid-cols-[0.8fr_1fr]">
         {/* Buch-Cover – warmer Gold-Schein und echter Schlagschatten, damit es
             auf dem hellen Grund steht statt zu schweben. */}
-        <Reveal className="order-2 lg:order-1">
+        <Reveal className="order-1">
           <div className="flex justify-center">
             <div className="relative">
               <div
@@ -53,7 +53,7 @@ export function LeadMagnet() {
         </Reveal>
 
         {/* Text + Formular */}
-        <Reveal delay={100} className="order-1 lg:order-2">
+        <Reveal delay={100} className="order-2">
           <div className="flex flex-col items-start gap-6">
             <Eyebrow>Gratis-Einstieg</Eyebrow>
             <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
