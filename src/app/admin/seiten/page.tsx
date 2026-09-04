@@ -1,33 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PageHero } from "@/components/layout/PageHero";
+import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
-import { ArrowRight } from "@/components/ui/Icon";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { withCanonical } from "@/lib/seo";
+import { ArrowRight } from "@/components/ui/Icon";
+import { createClient } from "@/lib/supabase/server";
+import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { isAdminEmail } from "@/lib/admin";
 import { publishedPosts } from "@/lib/blog";
 import { practices } from "@/lib/practices";
 import { deepDives } from "@/lib/deep-dives";
 import { stages } from "@/lib/content";
 import { chapters } from "@/lib/wissensdatenbank";
 
-export const metadata: Metadata = withCanonical("/seiten", {
+export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
   title: "Seitenübersicht",
-  description:
-    "Alle Seiten dieser Website auf einen Blick – öffentliche Seiten, Blog-Artikel und der komplette Mitgliederbereich zum direkten Anklicken.",
-  // Diese Übersicht bündelt auch Links in den geschützten Mitgliederbereich und
-  // gehört daher nicht in den Suchmaschinen-Index.
-  robots: { index: false, follow: true },
-});
+  // Interner Admin-Bereich – niemals indexieren.
+  robots: { index: false, follow: false },
+};
 
 type PageLink = { href: string; label: string; hint?: string };
 type PageGroup = { title: string; description?: string; links: PageLink[] };
 
 /**
- * Zentrale, klickbare Übersicht aller Seiten der Website. Die dynamischen
- * Bereiche (Blog, 7 Stufen, Praxis, Vertiefungen, Wissensdatenbank) werden aus
- * denselben Datenquellen erzeugt, die auch die echten Seiten speisen – so bleibt
- * die Liste automatisch aktuell, sobald neue Inhalte hinzukommen.
+ * Interne, klickbare Übersicht aller Seiten der Website (nur Admin-Bereich).
+ * Die dynamischen Gruppen (Blog, 7 Stufen, Praxis, Vertiefungen,
+ * Wissensdatenbank) werden aus denselben Datenquellen erzeugt, die auch die
+ * echten Seiten speisen – so bleibt die Liste automatisch aktuell, sobald neue
+ * Inhalte hinzukommen.
  */
 function buildGroups(): PageGroup[] {
   return [
@@ -130,6 +132,7 @@ function buildGroups(): PageGroup[] {
         { href: "/admin/marken-uebersicht", label: "Marken-Übersicht" },
         { href: "/admin/redaktionsplan", label: "Redaktionsplan" },
         { href: "/admin/vorlagen", label: "Vorlagen" },
+        { href: "/admin/seiten", label: "Seitenübersicht (diese Seite)" },
       ],
     },
     {
@@ -142,17 +145,50 @@ function buildGroups(): PageGroup[] {
   ];
 }
 
-export default function SeitenPage() {
+export default async function AdminSeitenPage() {
+  // Ohne Supabase gibt es keine Anmeldung → kein Admin-Schutz möglich.
+  if (!isSupabaseConfigured) {
+    return (
+      <section className="py-24">
+        <Container className="mx-auto max-w-xl text-center">
+          <Eyebrow>Seitenübersicht</Eyebrow>
+          <h1 className="mt-2 text-2xl font-medium text-ink">Noch nicht verbunden</h1>
+          <p className="mt-3 text-ink-mid">
+            Diese Übersicht braucht eine konfigurierte Supabase-Anbindung, um dich
+            als Admin anzumelden. Sobald die Umgebungsvariablen gesetzt sind, ist
+            diese Seite verfügbar.
+          </p>
+        </Container>
+      </section>
+    );
+  }
+
+  // Zugriffsschutz analog zu den übrigen /admin-Seiten (zusätzlich zur
+  // Middleware in src/proxy.ts, die /admin ohnehin absichert).
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/login?redirect=/admin/seiten");
+  if (!isAdminEmail(user.email)) redirect("/mitglieder");
+
   const groups = buildGroups();
   const total = groups.reduce((sum, group) => sum + group.links.length, 0);
 
   return (
     <>
-      <PageHero
-        eyebrow="Seitenübersicht"
-        title="Alle Seiten auf einen Blick"
-        intro={`${total} Seiten – zum direkten Anklicken, geordnet nach Bereich.`}
-      />
+      <section className="grain relative overflow-hidden border-b border-ink/10 py-16 sm:py-20">
+        <Container className="flex flex-col gap-3">
+          <Eyebrow>Seitenübersicht</Eyebrow>
+          <h1 className="max-w-3xl text-3xl font-medium leading-tight text-ink sm:text-4xl">
+            Alle Seiten auf einen Blick
+          </h1>
+          <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+            {total} Seiten – zum direkten Anklicken, geordnet nach Bereich.
+            Interne Übersicht, nur im Admin-Bereich sichtbar.
+          </p>
+        </Container>
+      </section>
 
       <section className="bg-paper-aura grain-soft relative py-14 sm:py-20">
         <Container className="flex flex-col gap-12">

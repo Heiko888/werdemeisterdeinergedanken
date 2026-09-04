@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-04 – Seitenübersicht in den Admin-Bereich verschoben (`/admin/seiten`)
+
+Die zuvor öffentliche Seitenübersicht (`/seiten`) ist jetzt **nur noch im
+Admin-Bereich** erreichbar. Sie bündelt Links in alle Bereiche (inkl.
+Mitgliederbereich) und ist damit eine interne Werkzeugseite.
+
+- **Neu:** `src/app/admin/seiten/page.tsx` – gleiche Inhalts-Logik wie zuvor,
+  jetzt als Server-Component mit **Admin-Zugriffsschutz** (`createClient` +
+  `isAdminEmail`, `redirect` zu `/login` bzw. `/mitglieder`), analog zu den
+  übrigen `/admin`-Seiten. `dynamic = "force-dynamic"`,
+  `robots: { index: false, follow: false }`. Zusätzlich greift die Middleware
+  (`src/proxy.ts`), die `/admin` ohnehin absichert (Defense-in-Depth).
+- **Entfernt:** `src/app/seiten/page.tsx` (öffentliche Route).
+- **`src/components/layout/Footer.tsx`:** der öffentliche Link
+  „Seitenübersicht" wurde wieder entfernt.
+- **`src/app/admin/page.tsx`:** im Admin-Dashboard gibt es jetzt einen Button
+  „Seitenübersicht" (→ `/admin/seiten`).
+
+Verifiziert per Production-Build (grün, `/admin/seiten` als dynamische Route ƒ,
+kein öffentliches `/seiten` mehr).
+
+---
+
 ## 2026-09-04 – Echte „Meine Geschichte" auf `/ueber-mich`
 
 Der bisherige, generische Platzhaltertext im Abschnitt „Meine Geschichte" wurde
