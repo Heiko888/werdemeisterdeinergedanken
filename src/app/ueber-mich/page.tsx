@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -19,22 +20,22 @@ const milestones = [
   {
     year: "Der Anfang",
     title: "Funktionieren statt leben",
-    text: "Nach außen lief alles – innen herrschte Dauerlärm aus Grübeln und Selbstzweifel. Ich dachte lange, das sei einfach mein Charakter.",
+    text: "Beruflich brach vieles weg, innerlich verlor ich den Halt. Ich funktionierte einfach weiter – und merkte lange nicht, wie sehr alte Muster meine Entscheidungen bestimmten.",
   },
   {
-    year: "Der Wendepunkt",
-    title: "Die entscheidende Erkenntnis",
-    text: "Irgendwann verstand ich: Ich bin nicht meine Gedanken. Ich bin der, der sie bemerkt. Ab da wurde alles anders.",
+    year: "Die ersten Fragen",
+    title: "Vom Kämpfen zum Wahrnehmen",
+    text: "Über die Meditation lernte ich, nicht mehr gegen jeden Gedanken anzukämpfen, sondern ihn wahrzunehmen – und mir endlich die richtigen Fragen zu stellen.",
   },
   {
-    year: "Der Weg",
-    title: "Entprogrammieren und neu ausrichten",
-    text: "Ich habe alte Muster Stück für Stück durchschaut, gelöst und durch bewusste ersetzt. Aus Theorie wurde gelebte Praxis.",
+    year: "Der schwerste Verlust",
+    title: "Tiefer schauen",
+    text: "Als ein Mensch, der mir alles bedeutete, plötzlich nicht mehr da war, trugen einfache Antworten nicht mehr. Erst ehrliche Fragen schufen Klarheit und Bewusstsein.",
   },
   {
     year: "Heute",
-    title: "Andere auf ihrem Weg begleiten",
-    text: "Was mir geholfen hat, gebe ich heute strukturiert weiter – bodenständig, ehrlich und auf Augenhöhe.",
+    title: "Die 7 Stufen weitergeben",
+    text: "Aus dem Weg, den ich selbst gegangen bin, wurde eine Landkarte – die 7 Stufen der Bewusstseinsentwicklung, die ich heute an andere weitergebe.",
   },
 ];
 
@@ -55,7 +56,7 @@ export default function AboutPage() {
       />
 
       <section className="bg-paper-aura grain-soft relative py-12 sm:py-16">
-        <Container className="grid items-center gap-14 lg:grid-cols-[1fr_0.8fr]">
+        <Container size="narrow">
           <Reveal>
             <div className="flex flex-col items-start gap-5">
               <Eyebrow>Meine Geschichte</Eyebrow>
@@ -63,27 +64,11 @@ export default function AboutPage() {
                 Ich kenne den Kopf, der{" "}
                 <em className="accent">nie zur Ruhe kommt</em>
               </h2>
-              <div className="flex flex-col gap-4 text-[1.05rem] leading-relaxed text-ink-mid">
-                <p>
-                  Ich rede nicht über etwas, das ich in Büchern gelesen habe. Ich
-                  war selbst jahrelang gefangen in Gedankenschleifen, Anspannung
-                  und dem Gefühl, mir ständig selbst im Weg zu stehen.
-                </p>
-                <p>
-                  Der Weg heraus war kein Wochenendseminar, sondern echte Arbeit
-                  an der Wurzel. Genau diese Erfahrung – und ein klares,
-                  wiederholbares Modell – gebe ich heute weiter.
-                </p>
-              </div>
-              <Button href="/kontakt" variant="accent" className="mt-1 w-fit">
-                Lern mich kennen
-                <ArrowRight />
-              </Button>
             </div>
           </Reveal>
 
-          <Reveal delay={120}>
-            <figure className="mx-auto w-full max-w-xs">
+          <Reveal delay={80}>
+            <figure className="mx-auto my-9 w-full max-w-xs">
               <PhotoFrame
                 src="/ueber-heiko-hund.webp"
                 alt="Heiko mit seinem Hund draußen in der Natur"
@@ -100,6 +85,180 @@ export default function AboutPage() {
                 </p>
               </figcaption>
             </figure>
+          </Reveal>
+
+          <Reveal delay={120}>
+            <div className="flex flex-col gap-5 text-[1.05rem] leading-relaxed text-ink-mid">
+              <p>
+                Ich rede nicht über etwas, das ich irgendwann in Büchern gelesen
+                habe. Ich habe diesen Weg selbst durchlaufen.
+              </p>
+              <p>
+                Es gab eine Zeit, in der mein Leben komplett auf den Kopf gestellt
+                war. Beruflich brach vieles weg, innerlich verlor ich zunehmend
+                den Halt. Ich funktionierte, reagierte, versuchte irgendwie
+                weiterzumachen – und merkte lange nicht, wie sehr Ängste, Gedanken
+                und alte Muster meine Entscheidungen bestimmten.
+              </p>
+              <p>
+                Auf meiner Suche nach Antworten beschäftigte ich mich mit vielen
+                Dingen. Meditation war eines davon.
+              </p>
+              <p>
+                Meine ersten Versuche waren alles andere als ruhig. Sobald ich die
+                Augen schloss, wurde es im Kopf erst richtig laut. Irgendwann
+                lernte ich, nicht mehr gegen jeden Gedanken anzukämpfen, sondern
+                ihn wahrzunehmen.
+              </p>
+              <p className="font-medium text-ink">Das war wichtig.</p>
+              <p>Aber der eigentliche Wendepunkt kam durch etwas anderes:</p>
+              <p className="font-display text-xl italic text-ink">
+                Ich begann, mir die richtigen Fragen zu stellen.
+              </p>
+
+              <aside className="rounded-2xl border border-accent/25 bg-accent/[0.04] px-6 py-5">
+                <p className="text-sm text-ink-mid">Nicht mehr nur:</p>
+                <p className="mt-1 font-medium text-ink">
+                  Warum passiert mir das alles?
+                </p>
+                <p className="mt-4 text-sm text-ink-mid">Sondern:</p>
+                <ul className="mt-2 flex flex-col gap-2">
+                  {[
+                    "Was passiert hier eigentlich gerade in mir?",
+                    "Warum reagiere ich immer wieder auf dieselbe Weise?",
+                    "Ist das, was ich denke, wirklich wahr?",
+                    "Woher kommt diese Überzeugung überhaupt?",
+                    "Was davon habe ich übernommen, ohne es jemals zu hinterfragen?",
+                  ].map((q) => (
+                    <li key={q} className="flex gap-3 font-medium text-ink">
+                      <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      <span>{q}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-sm text-ink-mid">Und vor allem:</p>
+                <p className="mt-1 font-medium text-ink">
+                  Wer bin ich, wenn ich nicht automatisch jedem Gedanken glaube?
+                </p>
+              </aside>
+
+              <p>Diese Fragen haben mein Leben verändert.</p>
+              <p>
+                Denn plötzlich begann ich Dinge zu erkennen, die vorher unsichtbar
+                gewesen waren. Muster. Ängste. Automatismen. Überzeugungen. Die
+                Art, wie ich Situationen bewertete – und wie diese Bewertungen
+                wiederum mein Handeln bestimmten.
+              </p>
+              <p>
+                Dann kam der schwerste Verlust meines Lebens. Ein Mensch, der mir
+                alles bedeutete, war plötzlich nicht mehr da.
+              </p>
+              <p>Und spätestens dort funktionierten einfache Antworten nicht mehr.</p>
+              <p>
+                Ich konnte den Schmerz nicht wegdenken. Ich konnte ihn auch nicht
+                mit irgendwelchen positiven Gedanken überdecken.
+              </p>
+              <p className="font-medium text-ink">Ich musste tiefer schauen.</p>
+
+              <aside className="rounded-2xl border border-accent/25 bg-accent/[0.04] px-6 py-5">
+                <ul className="flex flex-col gap-2">
+                  {[
+                    "Was geschieht in mir?",
+                    "Wovor habe ich Angst?",
+                    "Woran halte ich fest?",
+                    "Was kann ich beeinflussen – und was nicht?",
+                    "Was bleibt, wenn etwas wegbricht, worüber ich mich bisher definiert habe?",
+                  ].map((q) => (
+                    <li key={q} className="flex gap-3 font-medium text-ink">
+                      <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      <span>{q}</span>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+
+              <p>Mit jeder ehrlichen Frage entstand ein Stück mehr Klarheit.</p>
+              <p>
+                Nicht immer sofort eine Antwort. Aber{" "}
+                <em className="accent not-italic font-medium">Bewusstsein</em>.
+              </p>
+              <p>Und genau das ist für mich der entscheidende Punkt:</p>
+              <p>
+                Bewusstseinsentwicklung beginnt nicht damit, dass dir jemand sagt,
+                was du denken sollst. Sie beginnt in dem Moment, in dem du
+                anfängst, das zu hinterfragen, was du bisher für selbstverständlich
+                gehalten hast.
+              </p>
+
+              <ul className="my-1 flex flex-col gap-2.5">
+                {[
+                  "Du beginnst zu beobachten.",
+                  "Du erkennst Muster.",
+                  "Du verstehst Zusammenhänge.",
+                  "Du übernimmst Verantwortung für deine Reaktionen.",
+                  "Du beginnst bewusst zu entscheiden, worauf du deine Aufmerksamkeit richtest.",
+                ].map((line) => (
+                  <li key={line} className="flex gap-3 text-ink">
+                    <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br from-gold-400 to-gold-500" />
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <p>
+                Und irgendwann verändert sich nicht nur dein Denken. Deine gesamte
+                Art, durchs Leben zu gehen, verändert sich.
+              </p>
+              <p>
+                Rückblickend erkenne ich darin einen Entwicklungsweg mit
+                verschiedenen Stufen.
+              </p>
+
+              <aside className="glow-gold rounded-2xl border border-gold-400/25 bg-surface p-6 shadow-card">
+                <p className="text-ink">
+                  Genau daraus sind für mich die{" "}
+                  <Link
+                    href="/die-7-stufen"
+                    className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                  >
+                    7 Stufen der Bewusstseinsentwicklung
+                  </Link>{" "}
+                  entstanden.
+                </p>
+                <p className="mt-2 text-ink-mid">
+                  Nicht als theoretisches Modell. Sondern als Landkarte für einen
+                  Weg, den ich selbst gegangen bin.
+                </p>
+              </aside>
+
+              <p>Heute weiß ich:</p>
+              <blockquote className="border-l-2 border-accent/40 pl-5">
+                <p className="font-display text-xl italic leading-snug text-ink sm:text-2xl">
+                  Wir sind nicht unsere Gedanken. Wir sind die, die sie bemerken,
+                  hinterfragen und entscheiden können, welchen Gedanken wir weiter
+                  folgen.
+                </p>
+              </blockquote>
+              <p>
+                Und manchmal beginnt eine tiefgreifende Veränderung nicht mit einer
+                neuen Antwort.{" "}
+                <em className="accent not-italic font-medium">
+                  Sondern mit einer besseren Frage.
+                </em>
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={160}>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Button href="/die-7-stufen" variant="accent" className="w-fit">
+                Die 7 Stufen ansehen
+                <ArrowRight />
+              </Button>
+              <Button href="/kontakt" variant="secondary" className="w-fit">
+                Lern mich kennen
+              </Button>
+            </div>
           </Reveal>
         </Container>
       </section>
