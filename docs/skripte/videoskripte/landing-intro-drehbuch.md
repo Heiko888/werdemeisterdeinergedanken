@@ -2,7 +2,7 @@
 
 > Was, wenn es nicht an dir liegt? · Intro-Video + Teaser-Reel
 
-_Automatisch gebündelt aus den Einzel-Skripten – inhaltsgleich zu `WMDG-Video-Drehbuch-Intro.pdf`. Stand 2026-09-05. Neu erzeugen: `node tools/pdf/videoskripte-markdown.mjs`._
+_Automatisch gebündelt aus den Einzel-Skripten – inhaltsgleich zu `WMDG-Video-Drehbuch-Intro.pdf`. Stand 2026-09-06. Neu erzeugen: `node tools/pdf/videoskripte-markdown.mjs`._
 
 ---
 

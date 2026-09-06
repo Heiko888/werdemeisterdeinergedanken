@@ -79,6 +79,24 @@ const BUNDLES = [
       { label: "Mentale Selbstverteidigung", files: [join(SK, "vertiefungen", SV_STICH)] },
     ],
   },
+  {
+    // → WMDG-Reel-Drehbuch-Alle-Serien.pdf (tools/pdf/reel-drehbuch.mjs)
+    // Die Einzel-Serien liegen bereits je als eine Markdown-Datei in
+    // docs/skripte/reels/ vor (= die Einzel-PDFs); hier zusätzlich alle
+    // Serien in EINEM Bündel, analog zum Alle-Serien-PDF.
+    file: "reels-alle-serien.md",
+    title: "Reel-Drehbuch · Alle Serien",
+    subtitle:
+      "Alle Reel-Serien · 7 Stufen · Praxis · Vertiefungen · Mentale Selbstverteidigung · Wissenschaft",
+    pdf: "WMDG-Reel-Drehbuch-Alle-Serien.pdf",
+    sections: [
+      { label: "Die 7 Stufen", files: [join(SK, "reels", "stufen.md")] },
+      { label: "Praxis", files: [join(SK, "reels", "praxis.md")] },
+      { label: "Vertiefungen", files: [join(SK, "reels", "vertiefungen.md")] },
+      { label: "Mentale Selbstverteidigung", files: [join(SK, "reels", "mentale-selbstverteidigung.md")] },
+      { label: "Die Wissenschaft dahinter", files: [join(SK, "reels", "wissenschaft.md")] },
+    ],
+  },
 ];
 
 /**
