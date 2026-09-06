@@ -42,6 +42,17 @@ import {
   FORMAT_META,
   renderManifest,
 } from "./marketing-carousels.mjs";
+import { THEME_SUFFIX, THEME_LABEL } from "../../docs/reels/covers/data.mjs";
+
+// Reverse-Map Datei-Suffix → Farbwelt (z. B. "-tuerkis" → "tuerkis").
+// Längste Suffixe zuerst prüfen, damit "-tuerkis-hell" nicht faelschlich als
+// "-hell" erkannt wird.
+const THEME_BY_SUFFIX = Object.fromEntries(
+  Object.entries(THEME_SUFFIX).map(([theme, sfx]) => [sfx, theme]),
+);
+const THEME_SUFFIXES_LONGEST_FIRST = Object.values(THEME_SUFFIX)
+  .filter(Boolean)
+  .sort((a, b) => b.length - a.length);
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -219,9 +230,17 @@ async function buildReels() {
   const eintraege = await parallel(files, async (file) => {
     const rel = file.slice(src.length + 1); // "stufen/reel-9x16/cover-03.png"
     const bereich = rel.split("/")[0];
-    const coverFile = basename(file); // "cover-03.png"
-    const nr = coverFile.replace(/[^0-9]/g, "");
-    const id = `reel-${bereich}-${nr}`;
+    const coverFile = basename(file); // "cover-03.png" | "cover-03-tuerkis.png"
+    const nrMatch = coverFile.match(/^cover-(\d+)/i);
+    const nr = nrMatch ? nrMatch[1] : coverFile.replace(/[^0-9]/g, "");
+    // Farbwelt aus dem Datei-Suffix ableiten (Standard/dunkel = ohne Suffix).
+    // Ohne diese Unterscheidung kollidierten alle vier Welten auf DIESELBE ID
+    // (`reel-<bereich>-<nr>`) – drei Varianten fielen still aus der Galerie und
+    // schrieben zudem nebenlaeufig auf dieselbe Datei.
+    const base = coverFile.replace(/\.png$/i, ""); // "cover-03-tuerkis"
+    const sfx = THEME_SUFFIXES_LONGEST_FIRST.find((s) => base.endsWith(s)) || "";
+    const theme = THEME_BY_SUFFIX[sfx] ?? "dunkel";
+    const id = `reel-${bereich}-${nr}${sfx}`;
 
     const fullName = `${id}.webp`;
     await sharp(file)
@@ -266,7 +285,7 @@ async function buildReels() {
 
     return {
       kategorie: "reels",
-      titel: `${prettifyLabel(bereich)} · Cover ${nr}`,
+      titel: `${prettifyLabel(bereich)} · Cover ${nr} · ${THEME_LABEL[theme]}`,
       unterKategorie: prettifyLabel(bereich),
       kind: "image",
       thumb: `/admin/vorlagen/datei/thumbs/reels/${fullName}`,

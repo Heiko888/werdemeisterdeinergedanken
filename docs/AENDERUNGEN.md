@@ -5,6 +5,53 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-06 – Reel-Cover: alle 4 Farbwelten in der Galerie
+
+In der Vorlagen-Galerie (`/admin/vorlagen`) erschien pro Reel-Cover nur **eine**
+Farbwelt (türkis), obwohl der Cover-Generator jede Vorlage in **vier** Welten
+erzeugt: Gold · Dunkel, Gold · Creme, Türkis · Navy, Türkis · Creme. Ursache:
+`buildReels` leitete die ID nur aus der Cover-Nummer ab
+(`reel-<bereich>-<nr>`), sodass alle vier Welten auf **dieselbe** ID kollidierten
+(mit `parallel()` zusätzlich eine Race-Condition auf dieselbe Datei) und drei
+Varianten still herausfielen.
+
+**Geändert:**
+- **`tools/vorlagen/build-gallery.mjs`** (`buildReels`): Farbwelt aus dem
+  Datei-Suffix (`""`/`-hell`/`-tuerkis`/`-tuerkis-hell`) ableiten und in die ID
+  (`reel-<bereich>-<nr><suffix>`) und den Titel (`… · <Welt-Label>`) aufnehmen.
+  Import von `THEME_SUFFIX`/`THEME_LABEL` aus `docs/reels/covers/data.mjs`.
+- **`src/lib/vorlagen-assets.ts`**: Reel-Cover-Einträge **59 → 236**
+  (59 Motive × 4 Welten). Alle übrigen Einträge (Social 1423, Carousels 233,
+  Workshop 40) **unverändert** aus dem Server-Stand übernommen.
+
+**Reproduktion:** `npm run covers && npm run covers:png` (Chromium, rendert je
+Cover alle 4 Welten) → `npm run vorlagen:galerie`. Auf dem Server via
+`FULL_REBUILD=1 tools/deploy/update-vorlagen-galerie.sh`. Verifiziert per
+`npm run build` (grün).
+
+> Offen (separat geplant): Die **Carousels** haben im Generator noch kein
+> Farbwelt-System – dort fehlen die Farbvarianten noch.
+
+---
+
+## 2026-09-06 – Deploy-Skript für die Vorlagen-Galerie
+
+Skript, um die Galerie-Bilder im Server-Volume `/opt/website-vorlagen` sicher zu
+aktualisieren, ohne die Live-Galerie zu beschädigen.
+
+**Neu:**
+- **`tools/deploy/update-vorlagen-galerie.sh`**: `git pull` + `npm ci`,
+  Volume-Snapshot, `npm run vorlagen:galerie`, versionierten Katalog
+  wiederherstellen, fehlende Teil-Galerien (Reels/Carousels/Overlays) aus dem
+  Snapshot zurückspielen, **Konsistenz-Check** (bricht bei fehlenden Dateien ab),
+  `rsync` nach `/opt/website-vorlagen`. Env: `REPO_DIR`/`VOLUME_DIR`/`BRANCH`,
+  `FULL_REBUILD=1` für echten Komplett-Neubau (Chromium nötig).
+
+**Geändert:**
+- **`docs/generatoren/marketing-und-galerie.md`**: Abschnitt „Server-Deploy".
+
+---
+
 ## 2026-09-06 – Vorlagen-Galerie auf dem Server neu erzeugt, Generator entschärft
 
 Der Katalog aus dem Vorlauf (05.09.) war in einer Umgebung **ohne** die

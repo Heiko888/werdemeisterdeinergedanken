@@ -18552,7 +18552,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 01",
+    "titel": "Landing / Allgemein · Cover 01 · Gold · Creme",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-01-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-01-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-01-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-01-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-01-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-01-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-01-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-01-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-01-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Landing / Allgemein",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-01.webp",
@@ -18593,7 +18716,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 02",
+    "titel": "Landing / Allgemein · Cover 02 · Gold · Creme",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-02-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-02-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-02-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 02 · Türkis · Creme",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-02-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-02-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-02-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 02 · Türkis · Navy",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-02-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-02-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-02-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Landing / Allgemein",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-02.webp",
@@ -18634,7 +18880,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 03",
+    "titel": "Landing / Allgemein · Cover 03 · Gold · Creme",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-03-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-03-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-03-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 03 · Türkis · Creme",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-03-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-03-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-03-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Landing / Allgemein",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-03-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-landing-03-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-landing-03-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Landing / Allgemein",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-landing-03.webp",
@@ -18675,7 +19044,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 01",
+    "titel": "Praxis · Cover 01 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-01-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-01-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-01-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-01-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-01-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-01-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-01-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-01-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-01-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-01.webp",
@@ -18716,7 +19208,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 02",
+    "titel": "Praxis · Cover 02 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-02-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-02-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-02-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 02 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-02-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-02-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-02-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 02 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-02-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-02-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-02-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-02.webp",
@@ -18757,7 +19372,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 03",
+    "titel": "Praxis · Cover 03 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-03-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-03-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-03-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 03 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-03-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-03-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-03-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-03-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-03-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-03-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-03.webp",
@@ -18798,7 +19536,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 04",
+    "titel": "Praxis · Cover 04 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-04-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-04-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-04-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 04 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-04-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-04-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-04-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 04 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-04-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-04-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-04-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-04.webp",
@@ -18839,7 +19700,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 05",
+    "titel": "Praxis · Cover 05 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-05-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-05-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-05-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 05 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-05-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-05-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-05-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 05 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-05-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-05-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-05-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-05.webp",
@@ -18880,7 +19864,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 06",
+    "titel": "Praxis · Cover 06 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-06-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-06-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-06-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 06 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-06-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-06-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-06-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 06 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-06-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-06-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-06-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-06.webp",
@@ -18921,7 +20028,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 07",
+    "titel": "Praxis · Cover 07 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-07-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-07-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-07-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 07 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-07-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-07-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-07-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 07 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-07-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-07-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-07-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-07.webp",
@@ -18962,7 +20192,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 08",
+    "titel": "Praxis · Cover 08 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-08-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-08-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-08-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 08 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-08-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-08-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-08-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 08 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-08-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-08-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-08-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 08 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-08.webp",
@@ -19003,7 +20356,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 09",
+    "titel": "Praxis · Cover 09 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-09-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-09-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-09-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 09 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-09-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-09-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-09-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 09 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-09-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-09-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-09-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 09 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-09.webp",
@@ -19044,7 +20520,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 10",
+    "titel": "Praxis · Cover 10 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-10-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-10-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-10-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 10 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-10-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-10-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-10-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 10 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-10-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-10-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-10-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 10 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-10.webp",
@@ -19085,7 +20684,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 11",
+    "titel": "Praxis · Cover 11 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-11-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-11-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-11-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 11 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-11-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-11-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-11-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 11 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-11-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-11-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-11-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 11 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-11.webp",
@@ -19126,7 +20848,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 12",
+    "titel": "Praxis · Cover 12 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-12-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-12-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-12-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 12 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-12-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-12-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-12-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 12 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-12-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-12-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-12-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 12 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-12.webp",
@@ -19167,7 +21012,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 13",
+    "titel": "Praxis · Cover 13 · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-13-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-13-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-13-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 13 · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-13-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-13-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-13-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 13 · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-13-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-praxis-13-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-praxis-13-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 13 · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-praxis-13.webp",
@@ -19208,7 +21176,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 01",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-01-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-01-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-01-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-01-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-01.webp",
@@ -19249,7 +21340,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-02-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-02-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-02-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-02-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-02.webp",
@@ -19290,7 +21504,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 03",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-03-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-03-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-03-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-03-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-03.webp",
@@ -19331,7 +21668,133 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-04-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  }
+];
+
+const vorlagenAssets6: VorlagenAsset[] = [
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-04-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-04-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-04-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-04.webp",
@@ -19372,7 +21835,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-05-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-05-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-05-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-05-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-05.webp",
@@ -19413,7 +21999,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-06-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-06-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-06-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-06-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-06.webp",
@@ -19454,7 +22163,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-07-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-07-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-07-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-07-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-07.webp",
@@ -19495,7 +22327,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-08-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-08-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-08-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-08-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-08.webp",
@@ -19536,7 +22491,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-09-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-09-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-09-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-09-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-09.webp",
@@ -19577,7 +22655,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-10-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-10-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-10-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-10-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-10.webp",
@@ -19618,7 +22819,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-11-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-11-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-11-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-11-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-11.webp",
@@ -19659,7 +22983,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-12-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-12-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-12-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-12-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-12.webp",
@@ -19700,7 +23147,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-13-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-13-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-13-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-13-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-13.webp",
@@ -19741,7 +23311,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-14-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-14-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-14-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-14-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-14.webp",
@@ -19782,7 +23475,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-15-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-15-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-15-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-15-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-15.webp",
@@ -19823,7 +23639,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-16-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-16-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-16-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-selbstverteidigung-16-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-selbstverteidigung-16.webp",
@@ -19864,7 +23803,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 01",
+    "titel": "Die 7 Stufen · Cover 01 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-01-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-01-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-01-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-01-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-01-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-01-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-01-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-01-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-01-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-01.webp",
@@ -19922,7 +23984,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 02",
+    "titel": "Die 7 Stufen · Cover 02 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-02-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-02-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-02-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 02 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-02-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-02-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-02-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 02 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-02-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-02-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-02-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-02.webp",
@@ -19980,7 +24165,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 03",
+    "titel": "Die 7 Stufen · Cover 03 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-03-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-03-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-03-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 03 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-03-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-03-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-03-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-03-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-03-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-03-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-03.webp",
@@ -20038,7 +24346,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 04",
+    "titel": "Die 7 Stufen · Cover 04 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-04-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-04-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-04-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 04 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-04-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-04-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-04-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 04 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-04-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-04-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-04-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-04.webp",
@@ -20096,7 +24527,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 05",
+    "titel": "Die 7 Stufen · Cover 05 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-05-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-05-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-05-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 05 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-05-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-05-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-05-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 05 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-05-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-05-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-05-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-05.webp",
@@ -20154,7 +24708,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 06",
+    "titel": "Die 7 Stufen · Cover 06 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-06-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-06-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-06-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 06 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-06-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-06-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-06-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 06 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-06-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-06-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-06-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-06.webp",
@@ -20212,7 +24889,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 07",
+    "titel": "Die 7 Stufen · Cover 07 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-07-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-07-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-07-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 07 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-07-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-07-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-07-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 07 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-07-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-stufen-07-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-stufen-07-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-stufen-07.webp",
@@ -20270,7 +25070,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 01",
+    "titel": "Vertiefungen · Cover 01 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-01-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-01-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-01-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-01-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-01-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-01-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-01-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-01-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-01-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-01.webp",
@@ -20311,7 +25234,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 02",
+    "titel": "Vertiefungen · Cover 02 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-02-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-02-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-02-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 02 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-02-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-02-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-02-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 02 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-02-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-02-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-02-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-02.webp",
@@ -20352,7 +25398,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 03",
+    "titel": "Vertiefungen · Cover 03 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-03-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-03-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-03-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 03 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-03-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-03-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-03-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-03-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-03-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-03-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-03.webp",
@@ -20393,7 +25562,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 04",
+    "titel": "Vertiefungen · Cover 04 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-04-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-04-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-04-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 04 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-04-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-04-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-04-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 04 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-04-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-04-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-04-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-04.webp",
@@ -20434,7 +25726,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 05",
+    "titel": "Vertiefungen · Cover 05 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-05-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-05-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-05-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 05 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-05-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-05-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-05-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 05 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-05-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-05-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-05-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-05.webp",
@@ -20475,7 +25890,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 06",
+    "titel": "Vertiefungen · Cover 06 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-06-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-06-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-06-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 06 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-06-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-06-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-06-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 06 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-06-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-06-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-06-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-06.webp",
@@ -20516,7 +26054,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 07",
+    "titel": "Vertiefungen · Cover 07 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-07-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-07-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-07-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 07 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-07-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-07-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-07-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 07 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-07-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-07-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-07-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-07.webp",
@@ -20557,7 +26218,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 08",
+    "titel": "Vertiefungen · Cover 08 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-08-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-08-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-08-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 08 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-08-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-08-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-08-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 08 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-08-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-08-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-08-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 08 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-08.webp",
@@ -20598,7 +26382,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 09",
+    "titel": "Vertiefungen · Cover 09 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-09-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-09-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-09-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 09 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-09-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-09-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-09-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 09 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-09-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-09-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-09-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 09 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-09.webp",
@@ -20639,7 +26546,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 10",
+    "titel": "Vertiefungen · Cover 10 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-10-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-10-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-10-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 10 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-10-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-10-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-10-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 10 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-10-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-10-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-10-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 10 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-10.webp",
@@ -20680,7 +26710,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 11",
+    "titel": "Vertiefungen · Cover 11 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-11-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-11-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-11-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 11 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-11-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-11-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-11-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 11 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-11-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-11-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-11-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 11 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-11.webp",
@@ -20721,7 +26874,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 12",
+    "titel": "Vertiefungen · Cover 12 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-12-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-12-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-12-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 12 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-12-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-12-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-12-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 12 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-12-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-12-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-12-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 12 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-12.webp",
@@ -20762,7 +27038,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 13",
+    "titel": "Vertiefungen · Cover 13 · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-13-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-13-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-13-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 13 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-13-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-13-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-13-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 13 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-13-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-vertiefungen-13-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-vertiefungen-13-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 13 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-vertiefungen-13.webp",
@@ -20803,7 +27202,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 01",
+    "titel": "Wissenschaft · Cover 01 · Gold · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-01-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-01-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-01-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-01-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-01-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-01-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-01-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-01-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-01-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-01.webp",
@@ -20844,7 +27366,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 02",
+    "titel": "Wissenschaft · Cover 02 · Gold · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-02-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-02-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-02-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 02 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-02-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-02-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-02-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 02 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-02-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-02-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-02-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-02.webp",
@@ -20885,7 +27530,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 03",
+    "titel": "Wissenschaft · Cover 03 · Gold · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-03-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-03-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-03-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 03 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-03-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-03-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-03-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-03-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-03-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-03-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-03.webp",
@@ -20926,7 +27694,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 04",
+    "titel": "Wissenschaft · Cover 04 · Gold · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-04-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-04-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-04-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 04 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-04-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-04-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-04-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 04 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-04-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-04-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-04-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-04.webp",
@@ -20967,7 +27858,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 05",
+    "titel": "Wissenschaft · Cover 05 · Gold · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-05-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-05-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-05-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 05 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-05-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-05-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-05-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 05 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-05-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-05-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-05-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-05.webp",
@@ -21008,7 +28022,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 06",
+    "titel": "Wissenschaft · Cover 06 · Gold · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-06-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-06-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-06-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 06 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-06-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-06-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-06-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 06 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-06-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-06-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-06-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-06.webp",
@@ -21049,7 +28186,130 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 07",
+    "titel": "Wissenschaft · Cover 07 · Gold · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-07-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-07-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-07-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 07 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-07-tuerkis-hell.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-07-tuerkis-hell.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-07-tuerkis-hell.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 07 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-07-tuerkis.webp",
+    "href": "/admin/vorlagen/datei/reels/reel-wissenschaft-07-tuerkis.webp",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ],
+    "zipHref": "/admin/vorlagen/datei/reels/reel-wissenschaft-07-tuerkis.zip",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/reels/reel-wissenschaft-07.webp",
@@ -21740,10 +29000,7 @@ const vorlagenAssets5: VorlagenAsset[] = [
       }
     ],
     "caption": "Ein Bild fühlt sich an wie ein Beweis, obwohl es nur ein Ausschnitt ist – gewählt von jemandem, mit einer Absicht. Der Rahmen entscheidet, ob dasselbe Ereignis friedlich oder bedrohlich wirkt. Schau ein emotionales Video einmal ohne Ton und urteile aus dem Rest. #bilder #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #fakenews #klardenken #werdemeisterdeinergedanken #wahrnehmung"
-  }
-];
-
-const vorlagenAssets6: VorlagenAsset[] = [
+  },
   {
     "kategorie": "carousel",
     "titel": "framing",
@@ -24267,7 +31524,10 @@ const vorlagenAssets6: VorlagenAsset[] = [
         "h": 1920
       }
     ]
-  },
+  }
+];
+
+const vorlagenAssets7: VorlagenAsset[] = [
   {
     "kategorie": "carousel",
     "titel": "Zitat 18",
@@ -30071,10 +37331,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "format": "PDF",
     "sizeMB": 1.4,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Ablesen.pdf"
-  }
-];
-
-const vorlagenAssets7: VorlagenAsset[] = [
+  },
   {
     "kategorie": "workshop",
     "titel": "Video Drehbuch Intro",

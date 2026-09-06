@@ -218,6 +218,29 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
     den Standalone-Modus von `marketing-carousels.mjs` nutzen.
   - Ziel bewusst `content/` statt `public/` (Admin-Schutz der Workbooks/Pläne).
 
+### Server-Deploy: `tools/deploy/update-vorlagen-galerie.sh`
+
+Auf dem Server liegen die Galerie-Dateien im Volume `/opt/website-vorlagen`
+(gemountet nach `/app/content/vorlagen`). Da der Vollbau **destruktiv** ist und
+die Reels-/Carousel-Quellen dort fehlen können (gitignored, per Chromium
+gerendert), NICHT einfach `npm run vorlagen:galerie` auf dem Server laufen
+lassen – das würde Reels/Carousels aus der Galerie werfen. Stattdessen:
+
+```bash
+sudo REPO_DIR=/pfad/zum/checkout VOLUME_DIR=/opt/website-vorlagen \
+  bash tools/deploy/update-vorlagen-galerie.sh
+```
+
+Es baut die Galerie neu, **stellt den versionierten Katalog wieder her**,
+**bewahrt** vorhandene Reels/Carousels aus dem Volume, prüft per
+Konsistenz-Check, dass kein referenziertes Bild fehlt, und synchronisiert erst
+dann. Mit voller Render-Toolchain macht `FULL_REBUILD=1 …` einen Komplett-Neubau
+(inkl. `npm run covers && npm run covers:png` für alle 4 Reel-Farbwelten).
+
+> Der aktualisierte **Katalog** wird erst live, wenn das App-Image neu gebaut
+> und der Container neu gestartet wird (Katalog ist ins Next.js-Build
+> eingebacken). Bilder aus dem Volume erscheinen sofort.
+
 ## tools/vorlagen/marketing-carousels.mjs
 
 - **Zweck:** Verarbeitet die Marketing-/Funnel-Carousels (flachere
