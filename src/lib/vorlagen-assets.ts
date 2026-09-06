@@ -35,10 +35,10 @@ export type VorlagenAsset = {
   sizeMB?: number;
 };
 
-export const vorlagenAssets: VorlagenAsset[] = [
+const vorlagenAssets0: VorlagenAsset[] = [
   {
     "kategorie": "social",
-    "titel": "hintergrund",
+    "titel": "hintergrund hell",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-001.webp",
@@ -51,7 +51,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 01",
+    "titel": "hintergrund tuerkis hell",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-002.webp",
@@ -64,7 +64,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 02",
+    "titel": "hintergrund tuerkis",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-003.webp",
@@ -77,7 +77,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 03",
+    "titel": "hintergrund",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-004.webp",
@@ -90,7 +90,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 04",
+    "titel": "overlay 01",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-005.webp",
@@ -103,7 +103,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 05",
+    "titel": "overlay 02",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-006.webp",
@@ -116,7 +116,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 06",
+    "titel": "overlay 03",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-007.webp",
@@ -129,7 +129,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 07",
+    "titel": "overlay 04",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-008.webp",
@@ -142,7 +142,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 08",
+    "titel": "overlay 05",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-009.webp",
@@ -155,7 +155,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 09",
+    "titel": "overlay 06",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-010.webp",
@@ -168,7 +168,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 10",
+    "titel": "overlay 07",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-011.webp",
@@ -181,7 +181,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 11",
+    "titel": "overlay 08",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-012.webp",
@@ -194,7 +194,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 12",
+    "titel": "overlay 09",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-013.webp",
@@ -207,7 +207,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 13",
+    "titel": "overlay 10",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-014.webp",
@@ -220,7 +220,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 14",
+    "titel": "overlay 11",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-015.webp",
@@ -233,397 +233,397 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "hintergrund",
+    "titel": "overlay 12",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-016.webp",
     "href": "/admin/vorlagen/datei/social/social-016.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 01",
+    "titel": "overlay 13",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-017.webp",
     "href": "/admin/vorlagen/datei/social/social-017.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 02",
+    "titel": "overlay 14",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-018.webp",
     "href": "/admin/vorlagen/datei/social/social-018.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 03",
+    "titel": "overlay hell 01",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-019.webp",
     "href": "/admin/vorlagen/datei/social/social-019.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 04",
+    "titel": "overlay hell 02",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-020.webp",
     "href": "/admin/vorlagen/datei/social/social-020.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 05",
+    "titel": "overlay hell 03",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-021.webp",
     "href": "/admin/vorlagen/datei/social/social-021.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 06",
+    "titel": "overlay hell 04",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-022.webp",
     "href": "/admin/vorlagen/datei/social/social-022.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 07",
+    "titel": "overlay hell 05",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-023.webp",
     "href": "/admin/vorlagen/datei/social/social-023.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 08",
+    "titel": "overlay hell 06",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-024.webp",
     "href": "/admin/vorlagen/datei/social/social-024.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 09",
+    "titel": "overlay hell 07",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-025.webp",
     "href": "/admin/vorlagen/datei/social/social-025.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 10",
+    "titel": "overlay hell 08",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-026.webp",
     "href": "/admin/vorlagen/datei/social/social-026.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 11",
+    "titel": "overlay hell 09",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-027.webp",
     "href": "/admin/vorlagen/datei/social/social-027.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 12",
+    "titel": "overlay hell 10",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-028.webp",
     "href": "/admin/vorlagen/datei/social/social-028.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 13",
+    "titel": "overlay hell 11",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-029.webp",
     "href": "/admin/vorlagen/datei/social/social-029.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 14",
+    "titel": "overlay hell 12",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-030.webp",
     "href": "/admin/vorlagen/datei/social/social-030.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "hintergrund",
+    "titel": "overlay hell 13",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-031.webp",
     "href": "/admin/vorlagen/datei/social/social-031.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 01",
+    "titel": "overlay hell 14",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-032.webp",
     "href": "/admin/vorlagen/datei/social/social-032.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 02",
+    "titel": "overlay tuerkis 01",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-033.webp",
     "href": "/admin/vorlagen/datei/social/social-033.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 03",
+    "titel": "overlay tuerkis 02",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-034.webp",
     "href": "/admin/vorlagen/datei/social/social-034.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 04",
+    "titel": "overlay tuerkis 03",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-035.webp",
     "href": "/admin/vorlagen/datei/social/social-035.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 05",
+    "titel": "overlay tuerkis 04",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-036.webp",
     "href": "/admin/vorlagen/datei/social/social-036.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 06",
+    "titel": "overlay tuerkis 05",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-037.webp",
     "href": "/admin/vorlagen/datei/social/social-037.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 07",
+    "titel": "overlay tuerkis 06",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-038.webp",
     "href": "/admin/vorlagen/datei/social/social-038.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 08",
+    "titel": "overlay tuerkis 07",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-039.webp",
     "href": "/admin/vorlagen/datei/social/social-039.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 09",
+    "titel": "overlay tuerkis 08",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-040.webp",
     "href": "/admin/vorlagen/datei/social/social-040.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 10",
+    "titel": "overlay tuerkis 09",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-041.webp",
     "href": "/admin/vorlagen/datei/social/social-041.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 11",
+    "titel": "overlay tuerkis 10",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-042.webp",
     "href": "/admin/vorlagen/datei/social/social-042.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 12",
+    "titel": "overlay tuerkis 11",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-043.webp",
     "href": "/admin/vorlagen/datei/social/social-043.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 13",
+    "titel": "overlay tuerkis 12",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-044.webp",
     "href": "/admin/vorlagen/datei/social/social-044.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "overlay 14",
+    "titel": "overlay tuerkis 13",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-045.webp",
     "href": "/admin/vorlagen/datei/social/social-045.webp",
     "masse": {
-      "label": "9:16",
+      "label": "1:1",
       "w": 1080,
-      "h": 1920
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "hintergrund",
+    "titel": "overlay tuerkis 14",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-046.webp",
@@ -636,7 +636,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 01",
+    "titel": "overlay tuerkis hell 01",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-047.webp",
@@ -649,7 +649,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 02",
+    "titel": "overlay tuerkis hell 02",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-048.webp",
@@ -662,7 +662,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 03",
+    "titel": "overlay tuerkis hell 03",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-049.webp",
@@ -675,7 +675,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 04",
+    "titel": "overlay tuerkis hell 04",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-050.webp",
@@ -688,7 +688,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 05",
+    "titel": "overlay tuerkis hell 05",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-051.webp",
@@ -701,7 +701,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 06",
+    "titel": "overlay tuerkis hell 06",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-052.webp",
@@ -714,7 +714,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 07",
+    "titel": "overlay tuerkis hell 07",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-053.webp",
@@ -727,7 +727,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 08",
+    "titel": "overlay tuerkis hell 08",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-054.webp",
@@ -740,7 +740,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 09",
+    "titel": "overlay tuerkis hell 09",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-055.webp",
@@ -753,7 +753,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 10",
+    "titel": "overlay tuerkis hell 10",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-056.webp",
@@ -766,7 +766,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 11",
+    "titel": "overlay tuerkis hell 11",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-057.webp",
@@ -779,7 +779,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 12",
+    "titel": "overlay tuerkis hell 12",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-058.webp",
@@ -792,7 +792,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 13",
+    "titel": "overlay tuerkis hell 13",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-059.webp",
@@ -805,7 +805,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 14",
+    "titel": "overlay tuerkis hell 14",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-060.webp",
@@ -818,7 +818,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "hintergrund",
+    "titel": "hintergrund hell",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-061.webp",
@@ -831,7 +831,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 01",
+    "titel": "hintergrund tuerkis hell",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-062.webp",
@@ -844,7 +844,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 02",
+    "titel": "hintergrund tuerkis",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-063.webp",
@@ -857,7 +857,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 03",
+    "titel": "hintergrund",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-064.webp",
@@ -870,7 +870,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 04",
+    "titel": "overlay 01",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-065.webp",
@@ -883,7 +883,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 05",
+    "titel": "overlay 02",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-066.webp",
@@ -896,7 +896,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 06",
+    "titel": "overlay 03",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-067.webp",
@@ -909,7 +909,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 07",
+    "titel": "overlay 04",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-068.webp",
@@ -922,7 +922,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 08",
+    "titel": "overlay 05",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-069.webp",
@@ -935,7 +935,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 09",
+    "titel": "overlay 06",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-070.webp",
@@ -948,7 +948,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 10",
+    "titel": "overlay 07",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-071.webp",
@@ -961,7 +961,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 11",
+    "titel": "overlay 08",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-072.webp",
@@ -974,7 +974,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 12",
+    "titel": "overlay 09",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-073.webp",
@@ -987,7 +987,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 13",
+    "titel": "overlay 10",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-074.webp",
@@ -1000,7 +1000,7 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "overlay 14",
+    "titel": "overlay 11",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-075.webp",
@@ -1013,11 +1013,635 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "hintergrund",
+    "titel": "overlay 12",
     "unterKategorie": "content overlays",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-076.webp",
     "href": "/admin/vorlagen/datei/social/social-076.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
+    "href": "/admin/vorlagen/datei/social/social-077.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
+    "href": "/admin/vorlagen/datei/social/social-078.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
+    "href": "/admin/vorlagen/datei/social/social-079.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
+    "href": "/admin/vorlagen/datei/social/social-080.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
+    "href": "/admin/vorlagen/datei/social/social-081.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
+    "href": "/admin/vorlagen/datei/social/social-082.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
+    "href": "/admin/vorlagen/datei/social/social-083.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
+    "href": "/admin/vorlagen/datei/social/social-084.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
+    "href": "/admin/vorlagen/datei/social/social-085.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
+    "href": "/admin/vorlagen/datei/social/social-086.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
+    "href": "/admin/vorlagen/datei/social/social-087.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
+    "href": "/admin/vorlagen/datei/social/social-088.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
+    "href": "/admin/vorlagen/datei/social/social-089.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
+    "href": "/admin/vorlagen/datei/social/social-090.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
+    "href": "/admin/vorlagen/datei/social/social-091.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
+    "href": "/admin/vorlagen/datei/social/social-092.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
+    "href": "/admin/vorlagen/datei/social/social-093.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
+    "href": "/admin/vorlagen/datei/social/social-094.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
+    "href": "/admin/vorlagen/datei/social/social-095.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
+    "href": "/admin/vorlagen/datei/social/social-096.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
+    "href": "/admin/vorlagen/datei/social/social-097.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
+    "href": "/admin/vorlagen/datei/social/social-098.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
+    "href": "/admin/vorlagen/datei/social/social-099.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
+    "href": "/admin/vorlagen/datei/social/social-100.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-101.webp",
+    "href": "/admin/vorlagen/datei/social/social-101.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-102.webp",
+    "href": "/admin/vorlagen/datei/social/social-102.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-103.webp",
+    "href": "/admin/vorlagen/datei/social/social-103.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-104.webp",
+    "href": "/admin/vorlagen/datei/social/social-104.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-105.webp",
+    "href": "/admin/vorlagen/datei/social/social-105.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-106.webp",
+    "href": "/admin/vorlagen/datei/social/social-106.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-107.webp",
+    "href": "/admin/vorlagen/datei/social/social-107.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-108.webp",
+    "href": "/admin/vorlagen/datei/social/social-108.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-109.webp",
+    "href": "/admin/vorlagen/datei/social/social-109.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-110.webp",
+    "href": "/admin/vorlagen/datei/social/social-110.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-111.webp",
+    "href": "/admin/vorlagen/datei/social/social-111.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-112.webp",
+    "href": "/admin/vorlagen/datei/social/social-112.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-113.webp",
+    "href": "/admin/vorlagen/datei/social/social-113.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-114.webp",
+    "href": "/admin/vorlagen/datei/social/social-114.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-115.webp",
+    "href": "/admin/vorlagen/datei/social/social-115.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-116.webp",
+    "href": "/admin/vorlagen/datei/social/social-116.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-117.webp",
+    "href": "/admin/vorlagen/datei/social/social-117.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-118.webp",
+    "href": "/admin/vorlagen/datei/social/social-118.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-119.webp",
+    "href": "/admin/vorlagen/datei/social/social-119.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-120.webp",
+    "href": "/admin/vorlagen/datei/social/social-120.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-121.webp",
+    "href": "/admin/vorlagen/datei/social/social-121.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-122.webp",
+    "href": "/admin/vorlagen/datei/social/social-122.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-123.webp",
+    "href": "/admin/vorlagen/datei/social/social-123.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-124.webp",
+    "href": "/admin/vorlagen/datei/social/social-124.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1029,8 +1653,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 01",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-077.webp",
-    "href": "/admin/vorlagen/datei/social/social-077.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-125.webp",
+    "href": "/admin/vorlagen/datei/social/social-125.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1042,8 +1666,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 02",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-078.webp",
-    "href": "/admin/vorlagen/datei/social/social-078.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-126.webp",
+    "href": "/admin/vorlagen/datei/social/social-126.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1055,8 +1679,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 03",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-079.webp",
-    "href": "/admin/vorlagen/datei/social/social-079.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-127.webp",
+    "href": "/admin/vorlagen/datei/social/social-127.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1068,8 +1692,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 04",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-080.webp",
-    "href": "/admin/vorlagen/datei/social/social-080.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-128.webp",
+    "href": "/admin/vorlagen/datei/social/social-128.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1081,8 +1705,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 05",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-081.webp",
-    "href": "/admin/vorlagen/datei/social/social-081.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-129.webp",
+    "href": "/admin/vorlagen/datei/social/social-129.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1094,8 +1718,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 06",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-082.webp",
-    "href": "/admin/vorlagen/datei/social/social-082.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-130.webp",
+    "href": "/admin/vorlagen/datei/social/social-130.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1107,8 +1731,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 07",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-083.webp",
-    "href": "/admin/vorlagen/datei/social/social-083.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-131.webp",
+    "href": "/admin/vorlagen/datei/social/social-131.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1120,8 +1744,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 08",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-084.webp",
-    "href": "/admin/vorlagen/datei/social/social-084.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-132.webp",
+    "href": "/admin/vorlagen/datei/social/social-132.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1133,8 +1757,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 09",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-085.webp",
-    "href": "/admin/vorlagen/datei/social/social-085.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-133.webp",
+    "href": "/admin/vorlagen/datei/social/social-133.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1146,8 +1770,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 10",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-086.webp",
-    "href": "/admin/vorlagen/datei/social/social-086.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-134.webp",
+    "href": "/admin/vorlagen/datei/social/social-134.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1159,8 +1783,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 11",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-087.webp",
-    "href": "/admin/vorlagen/datei/social/social-087.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-135.webp",
+    "href": "/admin/vorlagen/datei/social/social-135.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1172,8 +1796,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 12",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-088.webp",
-    "href": "/admin/vorlagen/datei/social/social-088.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-136.webp",
+    "href": "/admin/vorlagen/datei/social/social-136.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1185,8 +1809,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 13",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-089.webp",
-    "href": "/admin/vorlagen/datei/social/social-089.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-137.webp",
+    "href": "/admin/vorlagen/datei/social/social-137.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1198,8 +1822,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "overlay 14",
     "unterKategorie": "content overlays",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-090.webp",
-    "href": "/admin/vorlagen/datei/social/social-090.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-138.webp",
+    "href": "/admin/vorlagen/datei/social/social-138.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1208,15 +1832,4857 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
+    "titel": "overlay hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-139.webp",
+    "href": "/admin/vorlagen/datei/social/social-139.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-140.webp",
+    "href": "/admin/vorlagen/datei/social/social-140.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-141.webp",
+    "href": "/admin/vorlagen/datei/social/social-141.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-142.webp",
+    "href": "/admin/vorlagen/datei/social/social-142.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-143.webp",
+    "href": "/admin/vorlagen/datei/social/social-143.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-144.webp",
+    "href": "/admin/vorlagen/datei/social/social-144.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-145.webp",
+    "href": "/admin/vorlagen/datei/social/social-145.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-146.webp",
+    "href": "/admin/vorlagen/datei/social/social-146.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-147.webp",
+    "href": "/admin/vorlagen/datei/social/social-147.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-148.webp",
+    "href": "/admin/vorlagen/datei/social/social-148.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-149.webp",
+    "href": "/admin/vorlagen/datei/social/social-149.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-150.webp",
+    "href": "/admin/vorlagen/datei/social/social-150.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-151.webp",
+    "href": "/admin/vorlagen/datei/social/social-151.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-152.webp",
+    "href": "/admin/vorlagen/datei/social/social-152.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-153.webp",
+    "href": "/admin/vorlagen/datei/social/social-153.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-154.webp",
+    "href": "/admin/vorlagen/datei/social/social-154.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-155.webp",
+    "href": "/admin/vorlagen/datei/social/social-155.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-156.webp",
+    "href": "/admin/vorlagen/datei/social/social-156.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-157.webp",
+    "href": "/admin/vorlagen/datei/social/social-157.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-158.webp",
+    "href": "/admin/vorlagen/datei/social/social-158.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-159.webp",
+    "href": "/admin/vorlagen/datei/social/social-159.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-160.webp",
+    "href": "/admin/vorlagen/datei/social/social-160.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-161.webp",
+    "href": "/admin/vorlagen/datei/social/social-161.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-162.webp",
+    "href": "/admin/vorlagen/datei/social/social-162.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-163.webp",
+    "href": "/admin/vorlagen/datei/social/social-163.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-164.webp",
+    "href": "/admin/vorlagen/datei/social/social-164.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-165.webp",
+    "href": "/admin/vorlagen/datei/social/social-165.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-166.webp",
+    "href": "/admin/vorlagen/datei/social/social-166.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-167.webp",
+    "href": "/admin/vorlagen/datei/social/social-167.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-168.webp",
+    "href": "/admin/vorlagen/datei/social/social-168.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-169.webp",
+    "href": "/admin/vorlagen/datei/social/social-169.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-170.webp",
+    "href": "/admin/vorlagen/datei/social/social-170.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-171.webp",
+    "href": "/admin/vorlagen/datei/social/social-171.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-172.webp",
+    "href": "/admin/vorlagen/datei/social/social-172.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-173.webp",
+    "href": "/admin/vorlagen/datei/social/social-173.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-174.webp",
+    "href": "/admin/vorlagen/datei/social/social-174.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-175.webp",
+    "href": "/admin/vorlagen/datei/social/social-175.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-176.webp",
+    "href": "/admin/vorlagen/datei/social/social-176.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-177.webp",
+    "href": "/admin/vorlagen/datei/social/social-177.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-178.webp",
+    "href": "/admin/vorlagen/datei/social/social-178.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-179.webp",
+    "href": "/admin/vorlagen/datei/social/social-179.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-180.webp",
+    "href": "/admin/vorlagen/datei/social/social-180.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-181.webp",
+    "href": "/admin/vorlagen/datei/social/social-181.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-182.webp",
+    "href": "/admin/vorlagen/datei/social/social-182.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-183.webp",
+    "href": "/admin/vorlagen/datei/social/social-183.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-184.webp",
+    "href": "/admin/vorlagen/datei/social/social-184.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-185.webp",
+    "href": "/admin/vorlagen/datei/social/social-185.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-186.webp",
+    "href": "/admin/vorlagen/datei/social/social-186.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-187.webp",
+    "href": "/admin/vorlagen/datei/social/social-187.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-188.webp",
+    "href": "/admin/vorlagen/datei/social/social-188.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-189.webp",
+    "href": "/admin/vorlagen/datei/social/social-189.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-190.webp",
+    "href": "/admin/vorlagen/datei/social/social-190.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-191.webp",
+    "href": "/admin/vorlagen/datei/social/social-191.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-192.webp",
+    "href": "/admin/vorlagen/datei/social/social-192.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-193.webp",
+    "href": "/admin/vorlagen/datei/social/social-193.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-194.webp",
+    "href": "/admin/vorlagen/datei/social/social-194.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-195.webp",
+    "href": "/admin/vorlagen/datei/social/social-195.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-196.webp",
+    "href": "/admin/vorlagen/datei/social/social-196.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-197.webp",
+    "href": "/admin/vorlagen/datei/social/social-197.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-198.webp",
+    "href": "/admin/vorlagen/datei/social/social-198.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-199.webp",
+    "href": "/admin/vorlagen/datei/social/social-199.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-200.webp",
+    "href": "/admin/vorlagen/datei/social/social-200.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-201.webp",
+    "href": "/admin/vorlagen/datei/social/social-201.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-202.webp",
+    "href": "/admin/vorlagen/datei/social/social-202.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-203.webp",
+    "href": "/admin/vorlagen/datei/social/social-203.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-204.webp",
+    "href": "/admin/vorlagen/datei/social/social-204.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-205.webp",
+    "href": "/admin/vorlagen/datei/social/social-205.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-206.webp",
+    "href": "/admin/vorlagen/datei/social/social-206.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-207.webp",
+    "href": "/admin/vorlagen/datei/social/social-207.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-208.webp",
+    "href": "/admin/vorlagen/datei/social/social-208.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-209.webp",
+    "href": "/admin/vorlagen/datei/social/social-209.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-210.webp",
+    "href": "/admin/vorlagen/datei/social/social-210.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-211.webp",
+    "href": "/admin/vorlagen/datei/social/social-211.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-212.webp",
+    "href": "/admin/vorlagen/datei/social/social-212.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-213.webp",
+    "href": "/admin/vorlagen/datei/social/social-213.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-214.webp",
+    "href": "/admin/vorlagen/datei/social/social-214.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-215.webp",
+    "href": "/admin/vorlagen/datei/social/social-215.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-216.webp",
+    "href": "/admin/vorlagen/datei/social/social-216.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-217.webp",
+    "href": "/admin/vorlagen/datei/social/social-217.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-218.webp",
+    "href": "/admin/vorlagen/datei/social/social-218.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-219.webp",
+    "href": "/admin/vorlagen/datei/social/social-219.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-220.webp",
+    "href": "/admin/vorlagen/datei/social/social-220.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-221.webp",
+    "href": "/admin/vorlagen/datei/social/social-221.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-222.webp",
+    "href": "/admin/vorlagen/datei/social/social-222.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-223.webp",
+    "href": "/admin/vorlagen/datei/social/social-223.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-224.webp",
+    "href": "/admin/vorlagen/datei/social/social-224.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-225.webp",
+    "href": "/admin/vorlagen/datei/social/social-225.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-226.webp",
+    "href": "/admin/vorlagen/datei/social/social-226.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-227.webp",
+    "href": "/admin/vorlagen/datei/social/social-227.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-228.webp",
+    "href": "/admin/vorlagen/datei/social/social-228.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-229.webp",
+    "href": "/admin/vorlagen/datei/social/social-229.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-230.webp",
+    "href": "/admin/vorlagen/datei/social/social-230.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-231.webp",
+    "href": "/admin/vorlagen/datei/social/social-231.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-232.webp",
+    "href": "/admin/vorlagen/datei/social/social-232.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-233.webp",
+    "href": "/admin/vorlagen/datei/social/social-233.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-234.webp",
+    "href": "/admin/vorlagen/datei/social/social-234.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-235.webp",
+    "href": "/admin/vorlagen/datei/social/social-235.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-236.webp",
+    "href": "/admin/vorlagen/datei/social/social-236.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-237.webp",
+    "href": "/admin/vorlagen/datei/social/social-237.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-238.webp",
+    "href": "/admin/vorlagen/datei/social/social-238.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-239.webp",
+    "href": "/admin/vorlagen/datei/social/social-239.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-240.webp",
+    "href": "/admin/vorlagen/datei/social/social-240.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-241.webp",
+    "href": "/admin/vorlagen/datei/social/social-241.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-242.webp",
+    "href": "/admin/vorlagen/datei/social/social-242.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-243.webp",
+    "href": "/admin/vorlagen/datei/social/social-243.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-244.webp",
+    "href": "/admin/vorlagen/datei/social/social-244.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-245.webp",
+    "href": "/admin/vorlagen/datei/social/social-245.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-246.webp",
+    "href": "/admin/vorlagen/datei/social/social-246.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-247.webp",
+    "href": "/admin/vorlagen/datei/social/social-247.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-248.webp",
+    "href": "/admin/vorlagen/datei/social/social-248.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-249.webp",
+    "href": "/admin/vorlagen/datei/social/social-249.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-250.webp",
+    "href": "/admin/vorlagen/datei/social/social-250.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  }
+];
+
+const vorlagenAssets1: VorlagenAsset[] = [
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-251.webp",
+    "href": "/admin/vorlagen/datei/social/social-251.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-252.webp",
+    "href": "/admin/vorlagen/datei/social/social-252.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-253.webp",
+    "href": "/admin/vorlagen/datei/social/social-253.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-254.webp",
+    "href": "/admin/vorlagen/datei/social/social-254.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-255.webp",
+    "href": "/admin/vorlagen/datei/social/social-255.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-256.webp",
+    "href": "/admin/vorlagen/datei/social/social-256.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-257.webp",
+    "href": "/admin/vorlagen/datei/social/social-257.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-258.webp",
+    "href": "/admin/vorlagen/datei/social/social-258.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-259.webp",
+    "href": "/admin/vorlagen/datei/social/social-259.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-260.webp",
+    "href": "/admin/vorlagen/datei/social/social-260.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-261.webp",
+    "href": "/admin/vorlagen/datei/social/social-261.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-262.webp",
+    "href": "/admin/vorlagen/datei/social/social-262.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-263.webp",
+    "href": "/admin/vorlagen/datei/social/social-263.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-264.webp",
+    "href": "/admin/vorlagen/datei/social/social-264.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-265.webp",
+    "href": "/admin/vorlagen/datei/social/social-265.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-266.webp",
+    "href": "/admin/vorlagen/datei/social/social-266.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-267.webp",
+    "href": "/admin/vorlagen/datei/social/social-267.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-268.webp",
+    "href": "/admin/vorlagen/datei/social/social-268.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-269.webp",
+    "href": "/admin/vorlagen/datei/social/social-269.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-270.webp",
+    "href": "/admin/vorlagen/datei/social/social-270.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-271.webp",
+    "href": "/admin/vorlagen/datei/social/social-271.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-272.webp",
+    "href": "/admin/vorlagen/datei/social/social-272.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-273.webp",
+    "href": "/admin/vorlagen/datei/social/social-273.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-274.webp",
+    "href": "/admin/vorlagen/datei/social/social-274.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-275.webp",
+    "href": "/admin/vorlagen/datei/social/social-275.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-276.webp",
+    "href": "/admin/vorlagen/datei/social/social-276.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-277.webp",
+    "href": "/admin/vorlagen/datei/social/social-277.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-278.webp",
+    "href": "/admin/vorlagen/datei/social/social-278.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-279.webp",
+    "href": "/admin/vorlagen/datei/social/social-279.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-280.webp",
+    "href": "/admin/vorlagen/datei/social/social-280.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-281.webp",
+    "href": "/admin/vorlagen/datei/social/social-281.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-282.webp",
+    "href": "/admin/vorlagen/datei/social/social-282.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-283.webp",
+    "href": "/admin/vorlagen/datei/social/social-283.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-284.webp",
+    "href": "/admin/vorlagen/datei/social/social-284.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-285.webp",
+    "href": "/admin/vorlagen/datei/social/social-285.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-286.webp",
+    "href": "/admin/vorlagen/datei/social/social-286.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-287.webp",
+    "href": "/admin/vorlagen/datei/social/social-287.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-288.webp",
+    "href": "/admin/vorlagen/datei/social/social-288.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-289.webp",
+    "href": "/admin/vorlagen/datei/social/social-289.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-290.webp",
+    "href": "/admin/vorlagen/datei/social/social-290.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-291.webp",
+    "href": "/admin/vorlagen/datei/social/social-291.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-292.webp",
+    "href": "/admin/vorlagen/datei/social/social-292.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-293.webp",
+    "href": "/admin/vorlagen/datei/social/social-293.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-294.webp",
+    "href": "/admin/vorlagen/datei/social/social-294.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-295.webp",
+    "href": "/admin/vorlagen/datei/social/social-295.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-296.webp",
+    "href": "/admin/vorlagen/datei/social/social-296.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-297.webp",
+    "href": "/admin/vorlagen/datei/social/social-297.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-298.webp",
+    "href": "/admin/vorlagen/datei/social/social-298.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-299.webp",
+    "href": "/admin/vorlagen/datei/social/social-299.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-300.webp",
+    "href": "/admin/vorlagen/datei/social/social-300.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-301.webp",
+    "href": "/admin/vorlagen/datei/social/social-301.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-302.webp",
+    "href": "/admin/vorlagen/datei/social/social-302.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-303.webp",
+    "href": "/admin/vorlagen/datei/social/social-303.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-304.webp",
+    "href": "/admin/vorlagen/datei/social/social-304.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-305.webp",
+    "href": "/admin/vorlagen/datei/social/social-305.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-306.webp",
+    "href": "/admin/vorlagen/datei/social/social-306.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-307.webp",
+    "href": "/admin/vorlagen/datei/social/social-307.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-308.webp",
+    "href": "/admin/vorlagen/datei/social/social-308.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-309.webp",
+    "href": "/admin/vorlagen/datei/social/social-309.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-310.webp",
+    "href": "/admin/vorlagen/datei/social/social-310.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-311.webp",
+    "href": "/admin/vorlagen/datei/social/social-311.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-312.webp",
+    "href": "/admin/vorlagen/datei/social/social-312.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-313.webp",
+    "href": "/admin/vorlagen/datei/social/social-313.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-314.webp",
+    "href": "/admin/vorlagen/datei/social/social-314.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-315.webp",
+    "href": "/admin/vorlagen/datei/social/social-315.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-316.webp",
+    "href": "/admin/vorlagen/datei/social/social-316.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-317.webp",
+    "href": "/admin/vorlagen/datei/social/social-317.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-318.webp",
+    "href": "/admin/vorlagen/datei/social/social-318.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-319.webp",
+    "href": "/admin/vorlagen/datei/social/social-319.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-320.webp",
+    "href": "/admin/vorlagen/datei/social/social-320.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-321.webp",
+    "href": "/admin/vorlagen/datei/social/social-321.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-322.webp",
+    "href": "/admin/vorlagen/datei/social/social-322.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-323.webp",
+    "href": "/admin/vorlagen/datei/social/social-323.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-324.webp",
+    "href": "/admin/vorlagen/datei/social/social-324.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-325.webp",
+    "href": "/admin/vorlagen/datei/social/social-325.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-326.webp",
+    "href": "/admin/vorlagen/datei/social/social-326.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-327.webp",
+    "href": "/admin/vorlagen/datei/social/social-327.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-328.webp",
+    "href": "/admin/vorlagen/datei/social/social-328.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-329.webp",
+    "href": "/admin/vorlagen/datei/social/social-329.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-330.webp",
+    "href": "/admin/vorlagen/datei/social/social-330.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-331.webp",
+    "href": "/admin/vorlagen/datei/social/social-331.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-332.webp",
+    "href": "/admin/vorlagen/datei/social/social-332.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-333.webp",
+    "href": "/admin/vorlagen/datei/social/social-333.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-334.webp",
+    "href": "/admin/vorlagen/datei/social/social-334.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-335.webp",
+    "href": "/admin/vorlagen/datei/social/social-335.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-336.webp",
+    "href": "/admin/vorlagen/datei/social/social-336.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-337.webp",
+    "href": "/admin/vorlagen/datei/social/social-337.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-338.webp",
+    "href": "/admin/vorlagen/datei/social/social-338.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-339.webp",
+    "href": "/admin/vorlagen/datei/social/social-339.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-340.webp",
+    "href": "/admin/vorlagen/datei/social/social-340.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-341.webp",
+    "href": "/admin/vorlagen/datei/social/social-341.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-342.webp",
+    "href": "/admin/vorlagen/datei/social/social-342.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-343.webp",
+    "href": "/admin/vorlagen/datei/social/social-343.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-344.webp",
+    "href": "/admin/vorlagen/datei/social/social-344.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-345.webp",
+    "href": "/admin/vorlagen/datei/social/social-345.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-346.webp",
+    "href": "/admin/vorlagen/datei/social/social-346.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-347.webp",
+    "href": "/admin/vorlagen/datei/social/social-347.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-348.webp",
+    "href": "/admin/vorlagen/datei/social/social-348.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-349.webp",
+    "href": "/admin/vorlagen/datei/social/social-349.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-350.webp",
+    "href": "/admin/vorlagen/datei/social/social-350.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-351.webp",
+    "href": "/admin/vorlagen/datei/social/social-351.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-352.webp",
+    "href": "/admin/vorlagen/datei/social/social-352.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-353.webp",
+    "href": "/admin/vorlagen/datei/social/social-353.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-354.webp",
+    "href": "/admin/vorlagen/datei/social/social-354.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-355.webp",
+    "href": "/admin/vorlagen/datei/social/social-355.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-356.webp",
+    "href": "/admin/vorlagen/datei/social/social-356.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-357.webp",
+    "href": "/admin/vorlagen/datei/social/social-357.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-358.webp",
+    "href": "/admin/vorlagen/datei/social/social-358.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-359.webp",
+    "href": "/admin/vorlagen/datei/social/social-359.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-360.webp",
+    "href": "/admin/vorlagen/datei/social/social-360.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-361.webp",
+    "href": "/admin/vorlagen/datei/social/social-361.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-362.webp",
+    "href": "/admin/vorlagen/datei/social/social-362.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-363.webp",
+    "href": "/admin/vorlagen/datei/social/social-363.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-364.webp",
+    "href": "/admin/vorlagen/datei/social/social-364.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-365.webp",
+    "href": "/admin/vorlagen/datei/social/social-365.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-366.webp",
+    "href": "/admin/vorlagen/datei/social/social-366.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-367.webp",
+    "href": "/admin/vorlagen/datei/social/social-367.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-368.webp",
+    "href": "/admin/vorlagen/datei/social/social-368.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-369.webp",
+    "href": "/admin/vorlagen/datei/social/social-369.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-370.webp",
+    "href": "/admin/vorlagen/datei/social/social-370.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-371.webp",
+    "href": "/admin/vorlagen/datei/social/social-371.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-372.webp",
+    "href": "/admin/vorlagen/datei/social/social-372.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-373.webp",
+    "href": "/admin/vorlagen/datei/social/social-373.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-374.webp",
+    "href": "/admin/vorlagen/datei/social/social-374.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-375.webp",
+    "href": "/admin/vorlagen/datei/social/social-375.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-376.webp",
+    "href": "/admin/vorlagen/datei/social/social-376.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-377.webp",
+    "href": "/admin/vorlagen/datei/social/social-377.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-378.webp",
+    "href": "/admin/vorlagen/datei/social/social-378.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-379.webp",
+    "href": "/admin/vorlagen/datei/social/social-379.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-380.webp",
+    "href": "/admin/vorlagen/datei/social/social-380.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-381.webp",
+    "href": "/admin/vorlagen/datei/social/social-381.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-382.webp",
+    "href": "/admin/vorlagen/datei/social/social-382.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-383.webp",
+    "href": "/admin/vorlagen/datei/social/social-383.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-384.webp",
+    "href": "/admin/vorlagen/datei/social/social-384.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-385.webp",
+    "href": "/admin/vorlagen/datei/social/social-385.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-386.webp",
+    "href": "/admin/vorlagen/datei/social/social-386.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-387.webp",
+    "href": "/admin/vorlagen/datei/social/social-387.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-388.webp",
+    "href": "/admin/vorlagen/datei/social/social-388.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-389.webp",
+    "href": "/admin/vorlagen/datei/social/social-389.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-390.webp",
+    "href": "/admin/vorlagen/datei/social/social-390.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-391.webp",
+    "href": "/admin/vorlagen/datei/social/social-391.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-392.webp",
+    "href": "/admin/vorlagen/datei/social/social-392.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-393.webp",
+    "href": "/admin/vorlagen/datei/social/social-393.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-394.webp",
+    "href": "/admin/vorlagen/datei/social/social-394.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-395.webp",
+    "href": "/admin/vorlagen/datei/social/social-395.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-396.webp",
+    "href": "/admin/vorlagen/datei/social/social-396.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-397.webp",
+    "href": "/admin/vorlagen/datei/social/social-397.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-398.webp",
+    "href": "/admin/vorlagen/datei/social/social-398.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-399.webp",
+    "href": "/admin/vorlagen/datei/social/social-399.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-400.webp",
+    "href": "/admin/vorlagen/datei/social/social-400.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-401.webp",
+    "href": "/admin/vorlagen/datei/social/social-401.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-402.webp",
+    "href": "/admin/vorlagen/datei/social/social-402.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-403.webp",
+    "href": "/admin/vorlagen/datei/social/social-403.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-404.webp",
+    "href": "/admin/vorlagen/datei/social/social-404.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-405.webp",
+    "href": "/admin/vorlagen/datei/social/social-405.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-406.webp",
+    "href": "/admin/vorlagen/datei/social/social-406.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-407.webp",
+    "href": "/admin/vorlagen/datei/social/social-407.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-408.webp",
+    "href": "/admin/vorlagen/datei/social/social-408.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-409.webp",
+    "href": "/admin/vorlagen/datei/social/social-409.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-410.webp",
+    "href": "/admin/vorlagen/datei/social/social-410.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-411.webp",
+    "href": "/admin/vorlagen/datei/social/social-411.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-412.webp",
+    "href": "/admin/vorlagen/datei/social/social-412.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-413.webp",
+    "href": "/admin/vorlagen/datei/social/social-413.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-414.webp",
+    "href": "/admin/vorlagen/datei/social/social-414.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-415.webp",
+    "href": "/admin/vorlagen/datei/social/social-415.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-416.webp",
+    "href": "/admin/vorlagen/datei/social/social-416.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-417.webp",
+    "href": "/admin/vorlagen/datei/social/social-417.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-418.webp",
+    "href": "/admin/vorlagen/datei/social/social-418.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-419.webp",
+    "href": "/admin/vorlagen/datei/social/social-419.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-420.webp",
+    "href": "/admin/vorlagen/datei/social/social-420.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-421.webp",
+    "href": "/admin/vorlagen/datei/social/social-421.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-422.webp",
+    "href": "/admin/vorlagen/datei/social/social-422.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-423.webp",
+    "href": "/admin/vorlagen/datei/social/social-423.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-424.webp",
+    "href": "/admin/vorlagen/datei/social/social-424.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-425.webp",
+    "href": "/admin/vorlagen/datei/social/social-425.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-426.webp",
+    "href": "/admin/vorlagen/datei/social/social-426.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-427.webp",
+    "href": "/admin/vorlagen/datei/social/social-427.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-428.webp",
+    "href": "/admin/vorlagen/datei/social/social-428.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-429.webp",
+    "href": "/admin/vorlagen/datei/social/social-429.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-430.webp",
+    "href": "/admin/vorlagen/datei/social/social-430.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-431.webp",
+    "href": "/admin/vorlagen/datei/social/social-431.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-432.webp",
+    "href": "/admin/vorlagen/datei/social/social-432.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-433.webp",
+    "href": "/admin/vorlagen/datei/social/social-433.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-434.webp",
+    "href": "/admin/vorlagen/datei/social/social-434.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-435.webp",
+    "href": "/admin/vorlagen/datei/social/social-435.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-436.webp",
+    "href": "/admin/vorlagen/datei/social/social-436.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-437.webp",
+    "href": "/admin/vorlagen/datei/social/social-437.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-438.webp",
+    "href": "/admin/vorlagen/datei/social/social-438.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-439.webp",
+    "href": "/admin/vorlagen/datei/social/social-439.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-440.webp",
+    "href": "/admin/vorlagen/datei/social/social-440.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-441.webp",
+    "href": "/admin/vorlagen/datei/social/social-441.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-442.webp",
+    "href": "/admin/vorlagen/datei/social/social-442.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-443.webp",
+    "href": "/admin/vorlagen/datei/social/social-443.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-444.webp",
+    "href": "/admin/vorlagen/datei/social/social-444.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-445.webp",
+    "href": "/admin/vorlagen/datei/social/social-445.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-446.webp",
+    "href": "/admin/vorlagen/datei/social/social-446.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-447.webp",
+    "href": "/admin/vorlagen/datei/social/social-447.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-448.webp",
+    "href": "/admin/vorlagen/datei/social/social-448.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-449.webp",
+    "href": "/admin/vorlagen/datei/social/social-449.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-450.webp",
+    "href": "/admin/vorlagen/datei/social/social-450.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-451.webp",
+    "href": "/admin/vorlagen/datei/social/social-451.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay hell 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-452.webp",
+    "href": "/admin/vorlagen/datei/social/social-452.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-453.webp",
+    "href": "/admin/vorlagen/datei/social/social-453.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-454.webp",
+    "href": "/admin/vorlagen/datei/social/social-454.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-455.webp",
+    "href": "/admin/vorlagen/datei/social/social-455.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-456.webp",
+    "href": "/admin/vorlagen/datei/social/social-456.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-457.webp",
+    "href": "/admin/vorlagen/datei/social/social-457.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-458.webp",
+    "href": "/admin/vorlagen/datei/social/social-458.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-459.webp",
+    "href": "/admin/vorlagen/datei/social/social-459.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-460.webp",
+    "href": "/admin/vorlagen/datei/social/social-460.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-461.webp",
+    "href": "/admin/vorlagen/datei/social/social-461.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-462.webp",
+    "href": "/admin/vorlagen/datei/social/social-462.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-463.webp",
+    "href": "/admin/vorlagen/datei/social/social-463.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-464.webp",
+    "href": "/admin/vorlagen/datei/social/social-464.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-465.webp",
+    "href": "/admin/vorlagen/datei/social/social-465.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-466.webp",
+    "href": "/admin/vorlagen/datei/social/social-466.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-467.webp",
+    "href": "/admin/vorlagen/datei/social/social-467.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-468.webp",
+    "href": "/admin/vorlagen/datei/social/social-468.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-469.webp",
+    "href": "/admin/vorlagen/datei/social/social-469.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-470.webp",
+    "href": "/admin/vorlagen/datei/social/social-470.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-471.webp",
+    "href": "/admin/vorlagen/datei/social/social-471.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-472.webp",
+    "href": "/admin/vorlagen/datei/social/social-472.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-473.webp",
+    "href": "/admin/vorlagen/datei/social/social-473.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-474.webp",
+    "href": "/admin/vorlagen/datei/social/social-474.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-475.webp",
+    "href": "/admin/vorlagen/datei/social/social-475.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-476.webp",
+    "href": "/admin/vorlagen/datei/social/social-476.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-477.webp",
+    "href": "/admin/vorlagen/datei/social/social-477.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-478.webp",
+    "href": "/admin/vorlagen/datei/social/social-478.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 01",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-479.webp",
+    "href": "/admin/vorlagen/datei/social/social-479.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 02",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-480.webp",
+    "href": "/admin/vorlagen/datei/social/social-480.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 03",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-481.webp",
+    "href": "/admin/vorlagen/datei/social/social-481.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 04",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-482.webp",
+    "href": "/admin/vorlagen/datei/social/social-482.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 05",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-483.webp",
+    "href": "/admin/vorlagen/datei/social/social-483.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 06",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-484.webp",
+    "href": "/admin/vorlagen/datei/social/social-484.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 07",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-485.webp",
+    "href": "/admin/vorlagen/datei/social/social-485.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 08",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-486.webp",
+    "href": "/admin/vorlagen/datei/social/social-486.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 09",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-487.webp",
+    "href": "/admin/vorlagen/datei/social/social-487.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 10",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-488.webp",
+    "href": "/admin/vorlagen/datei/social/social-488.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 11",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-489.webp",
+    "href": "/admin/vorlagen/datei/social/social-489.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 12",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-490.webp",
+    "href": "/admin/vorlagen/datei/social/social-490.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 13",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-491.webp",
+    "href": "/admin/vorlagen/datei/social/social-491.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 14",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-492.webp",
+    "href": "/admin/vorlagen/datei/social/social-492.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 15",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-493.webp",
+    "href": "/admin/vorlagen/datei/social/social-493.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 16",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-494.webp",
+    "href": "/admin/vorlagen/datei/social/social-494.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 17",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-495.webp",
+    "href": "/admin/vorlagen/datei/social/social-495.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 18",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-496.webp",
+    "href": "/admin/vorlagen/datei/social/social-496.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 19",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-497.webp",
+    "href": "/admin/vorlagen/datei/social/social-497.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 20",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-498.webp",
+    "href": "/admin/vorlagen/datei/social/social-498.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 21",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-499.webp",
+    "href": "/admin/vorlagen/datei/social/social-499.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 22",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-500.webp",
+    "href": "/admin/vorlagen/datei/social/social-500.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  }
+];
+
+const vorlagenAssets2: VorlagenAsset[] = [
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 23",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-501.webp",
+    "href": "/admin/vorlagen/datei/social/social-501.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 24",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-502.webp",
+    "href": "/admin/vorlagen/datei/social/social-502.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 25",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-503.webp",
+    "href": "/admin/vorlagen/datei/social/social-503.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "overlay tuerkis hell 26",
+    "unterKategorie": "content overlays",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-504.webp",
+    "href": "/admin/vorlagen/datei/social/social-504.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 16x9 hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-505.webp",
+    "href": "/admin/vorlagen/datei/social/social-505.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 16x9 tuerkis hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-506.webp",
+    "href": "/admin/vorlagen/datei/social/social-506.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 16x9 tuerkis",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-507.webp",
+    "href": "/admin/vorlagen/datei/social/social-507.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
     "titel": "Ebook 16x9",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-091.webp",
-    "href": "/admin/vorlagen/datei/social/social-091.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-508.webp",
+    "href": "/admin/vorlagen/datei/social/social-508.webp",
     "masse": {
       "label": "16:9",
-      "w": 2160,
-      "h": 1215
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 1x1 hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-509.webp",
+    "href": "/admin/vorlagen/datei/social/social-509.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 1x1 tuerkis hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-510.webp",
+    "href": "/admin/vorlagen/datei/social/social-510.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 1x1 tuerkis",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-511.webp",
+    "href": "/admin/vorlagen/datei/social/social-511.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1224,12 +6690,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 1x1",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-092.webp",
-    "href": "/admin/vorlagen/datei/social/social-092.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-512.webp",
+    "href": "/admin/vorlagen/datei/social/social-512.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 2x3 hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-513.webp",
+    "href": "/admin/vorlagen/datei/social/social-513.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 2x3 tuerkis hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-514.webp",
+    "href": "/admin/vorlagen/datei/social/social-514.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 2x3 tuerkis",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-515.webp",
+    "href": "/admin/vorlagen/datei/social/social-515.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
     }
   },
   {
@@ -1237,12 +6742,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 2x3",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-093.webp",
-    "href": "/admin/vorlagen/datei/social/social-093.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-516.webp",
+    "href": "/admin/vorlagen/datei/social/social-516.webp",
     "masse": {
       "label": "2:3",
-      "w": 2000,
-      "h": 3000
+      "w": 1000,
+      "h": 1500
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 4x5 hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-517.webp",
+    "href": "/admin/vorlagen/datei/social/social-517.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 4x5 tuerkis hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-518.webp",
+    "href": "/admin/vorlagen/datei/social/social-518.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 4x5 tuerkis",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-519.webp",
+    "href": "/admin/vorlagen/datei/social/social-519.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1250,12 +6794,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 4x5",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-094.webp",
-    "href": "/admin/vorlagen/datei/social/social-094.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-520.webp",
+    "href": "/admin/vorlagen/datei/social/social-520.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 9x16 hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-521.webp",
+    "href": "/admin/vorlagen/datei/social/social-521.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 9x16 tuerkis hell",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-522.webp",
+    "href": "/admin/vorlagen/datei/social/social-522.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Ebook 9x16 tuerkis",
+    "unterKategorie": "ebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-523.webp",
+    "href": "/admin/vorlagen/datei/social/social-523.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1263,21 +6846,21 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Ebook 9x16",
     "unterKategorie": "ebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-095.webp",
-    "href": "/admin/vorlagen/datei/social/social-095.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-524.webp",
+    "href": "/admin/vorlagen/datei/social/social-524.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
     }
   },
   {
     "kategorie": "social",
-    "titel": "Facebook Cover",
+    "titel": "Facebook Cover hell",
     "unterKategorie": "Facebook",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-096.webp",
-    "href": "/admin/vorlagen/datei/social/social-096.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-525.webp",
+    "href": "/admin/vorlagen/datei/social/social-525.webp",
     "masse": {
       "label": "",
       "w": 1640,
@@ -1286,15 +6869,106 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
+    "titel": "Facebook Cover",
+    "unterKategorie": "Facebook",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-526.webp",
+    "href": "/admin/vorlagen/datei/social/social-526.webp",
+    "masse": {
+      "label": "",
+      "w": 1640,
+      "h": 624
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-527.webp",
+    "href": "/admin/vorlagen/datei/social/social-527.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9 tuerkis hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-528.webp",
+    "href": "/admin/vorlagen/datei/social/social-528.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9 tuerkis",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-529.webp",
+    "href": "/admin/vorlagen/datei/social/social-529.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
     "titel": "Instagram Story 16x9",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-097.webp",
-    "href": "/admin/vorlagen/datei/social/social-097.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-530.webp",
+    "href": "/admin/vorlagen/datei/social/social-530.webp",
     "masse": {
       "label": "16:9",
-      "w": 2160,
-      "h": 1215
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-531.webp",
+    "href": "/admin/vorlagen/datei/social/social-531.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1 tuerkis hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-532.webp",
+    "href": "/admin/vorlagen/datei/social/social-532.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1 tuerkis",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-533.webp",
+    "href": "/admin/vorlagen/datei/social/social-533.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1302,12 +6976,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 1x1",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-098.webp",
-    "href": "/admin/vorlagen/datei/social/social-098.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-534.webp",
+    "href": "/admin/vorlagen/datei/social/social-534.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 2x3 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-535.webp",
+    "href": "/admin/vorlagen/datei/social/social-535.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 2x3 tuerkis hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-536.webp",
+    "href": "/admin/vorlagen/datei/social/social-536.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 2x3 tuerkis",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-537.webp",
+    "href": "/admin/vorlagen/datei/social/social-537.webp",
+    "masse": {
+      "label": "2:3",
+      "w": 1000,
+      "h": 1500
     }
   },
   {
@@ -1315,12 +7028,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 2x3",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-099.webp",
-    "href": "/admin/vorlagen/datei/social/social-099.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-538.webp",
+    "href": "/admin/vorlagen/datei/social/social-538.webp",
     "masse": {
       "label": "2:3",
-      "w": 2000,
-      "h": 3000
+      "w": 1000,
+      "h": 1500
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 4x5 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-539.webp",
+    "href": "/admin/vorlagen/datei/social/social-539.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 4x5 tuerkis hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-540.webp",
+    "href": "/admin/vorlagen/datei/social/social-540.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 4x5 tuerkis",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-541.webp",
+    "href": "/admin/vorlagen/datei/social/social-541.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1328,12 +7080,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 4x5",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-100.webp",
-    "href": "/admin/vorlagen/datei/social/social-100.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-542.webp",
+    "href": "/admin/vorlagen/datei/social/social-542.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 9x16 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-543.webp",
+    "href": "/admin/vorlagen/datei/social/social-543.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 9x16 tuerkis hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-544.webp",
+    "href": "/admin/vorlagen/datei/social/social-544.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 9x16 tuerkis",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-545.webp",
+    "href": "/admin/vorlagen/datei/social/social-545.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1341,12 +7132,25 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story 9x16",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-101.webp",
-    "href": "/admin/vorlagen/datei/social/social-101.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-546.webp",
+    "href": "/admin/vorlagen/datei/social/social-546.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story Logo hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-547.webp",
+    "href": "/admin/vorlagen/datei/social/social-547.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1354,8 +7158,21 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story Logo",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-102.webp",
-    "href": "/admin/vorlagen/datei/social/social-102.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-548.webp",
+    "href": "/admin/vorlagen/datei/social/social-548.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-549.webp",
+    "href": "/admin/vorlagen/datei/social/social-549.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1367,8 +7184,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Instagram Story",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-103.webp",
-    "href": "/admin/vorlagen/datei/social/social-103.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-550.webp",
+    "href": "/admin/vorlagen/datei/social/social-550.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -1377,11 +7194,11 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "LinkedIn Banner",
+    "titel": "LinkedIn Banner hell",
     "unterKategorie": "LinkedIn",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-104.webp",
-    "href": "/admin/vorlagen/datei/social/social-104.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-551.webp",
+    "href": "/admin/vorlagen/datei/social/social-551.webp",
     "masse": {
       "label": "4:1",
       "w": 2160,
@@ -1390,15 +7207,106 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
+    "titel": "LinkedIn Banner",
+    "unterKategorie": "LinkedIn",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-552.webp",
+    "href": "/admin/vorlagen/datei/social/social-552.webp",
+    "masse": {
+      "label": "4:1",
+      "w": 2160,
+      "h": 540
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Messenger Kanalbild hell",
+    "unterKategorie": "Messenger",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-553.webp",
+    "href": "/admin/vorlagen/datei/social/social-553.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Messenger Kanalbild tuerkis hell",
+    "unterKategorie": "Messenger",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-554.webp",
+    "href": "/admin/vorlagen/datei/social/social-554.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Messenger Kanalbild tuerkis",
+    "unterKategorie": "Messenger",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-555.webp",
+    "href": "/admin/vorlagen/datei/social/social-555.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
     "titel": "Messenger Kanalbild",
     "unterKategorie": "Messenger",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-105.webp",
-    "href": "/admin/vorlagen/datei/social/social-105.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-556.webp",
+    "href": "/admin/vorlagen/datei/social/social-556.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Kanalbild Quadrat hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-557.webp",
+    "href": "/admin/vorlagen/datei/social/social-557.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Kanalbild Quadrat tuerkis hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-558.webp",
+    "href": "/admin/vorlagen/datei/social/social-558.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Kanalbild Quadrat tuerkis",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-559.webp",
+    "href": "/admin/vorlagen/datei/social/social-559.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1406,21 +7314,151 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Kanalbild Quadrat",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-106.webp",
-    "href": "/admin/vorlagen/datei/social/social-106.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-560.webp",
+    "href": "/admin/vorlagen/datei/social/social-560.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Profilbild 1080",
+    "titel": "Profilbild Quadrat hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-107.webp",
-    "href": "/admin/vorlagen/datei/social/social-107.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-561.webp",
+    "href": "/admin/vorlagen/datei/social/social-561.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Quadrat tuerkis hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-562.webp",
+    "href": "/admin/vorlagen/datei/social/social-562.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Quadrat tuerkis",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-563.webp",
+    "href": "/admin/vorlagen/datei/social/social-563.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Quadrat",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-564.webp",
+    "href": "/admin/vorlagen/datei/social/social-564.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Rund Emblem hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-565.webp",
+    "href": "/admin/vorlagen/datei/social/social-565.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Rund Emblem tuerkis hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-566.webp",
+    "href": "/admin/vorlagen/datei/social/social-566.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Rund Emblem tuerkis",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-567.webp",
+    "href": "/admin/vorlagen/datei/social/social-567.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Rund Emblem",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-568.webp",
+    "href": "/admin/vorlagen/datei/social/social-568.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Rund hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-569.webp",
+    "href": "/admin/vorlagen/datei/social/social-569.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Rund tuerkis hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-570.webp",
+    "href": "/admin/vorlagen/datei/social/social-570.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Profilbild Rund tuerkis",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-571.webp",
+    "href": "/admin/vorlagen/datei/social/social-571.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -1432,21 +7470,8 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Profilbild Rund",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-108.webp",
-    "href": "/admin/vorlagen/datei/social/social-108.webp",
-    "masse": {
-      "label": "1:1",
-      "w": 2160,
-      "h": 2160
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Profilbild rund 1080",
-    "unterKategorie": "Profil & Kanal",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-109.webp",
-    "href": "/admin/vorlagen/datei/social/social-109.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-572.webp",
+    "href": "/admin/vorlagen/datei/social/social-572.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -1455,15 +7480,3359 @@ export const vorlagenAssets: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Profilbild rund 500",
-    "unterKategorie": "Profil & Kanal",
+    "titel": "01 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-110.webp",
-    "href": "/admin/vorlagen/datei/social/social-110.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-573.webp",
+    "href": "/admin/vorlagen/datei/social/social-573.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-574.webp",
+    "href": "/admin/vorlagen/datei/social/social-574.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-575.webp",
+    "href": "/admin/vorlagen/datei/social/social-575.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-576.webp",
+    "href": "/admin/vorlagen/datei/social/social-576.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-577.webp",
+    "href": "/admin/vorlagen/datei/social/social-577.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-578.webp",
+    "href": "/admin/vorlagen/datei/social/social-578.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-579.webp",
+    "href": "/admin/vorlagen/datei/social/social-579.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-580.webp",
+    "href": "/admin/vorlagen/datei/social/social-580.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-581.webp",
+    "href": "/admin/vorlagen/datei/social/social-581.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-582.webp",
+    "href": "/admin/vorlagen/datei/social/social-582.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-583.webp",
+    "href": "/admin/vorlagen/datei/social/social-583.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-584.webp",
+    "href": "/admin/vorlagen/datei/social/social-584.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-585.webp",
+    "href": "/admin/vorlagen/datei/social/social-585.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-586.webp",
+    "href": "/admin/vorlagen/datei/social/social-586.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-587.webp",
+    "href": "/admin/vorlagen/datei/social/social-587.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-588.webp",
+    "href": "/admin/vorlagen/datei/social/social-588.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-589.webp",
+    "href": "/admin/vorlagen/datei/social/social-589.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-590.webp",
+    "href": "/admin/vorlagen/datei/social/social-590.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-591.webp",
+    "href": "/admin/vorlagen/datei/social/social-591.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-592.webp",
+    "href": "/admin/vorlagen/datei/social/social-592.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-593.webp",
+    "href": "/admin/vorlagen/datei/social/social-593.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-594.webp",
+    "href": "/admin/vorlagen/datei/social/social-594.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-595.webp",
+    "href": "/admin/vorlagen/datei/social/social-595.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-596.webp",
+    "href": "/admin/vorlagen/datei/social/social-596.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-597.webp",
+    "href": "/admin/vorlagen/datei/social/social-597.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-598.webp",
+    "href": "/admin/vorlagen/datei/social/social-598.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-599.webp",
+    "href": "/admin/vorlagen/datei/social/social-599.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-600.webp",
+    "href": "/admin/vorlagen/datei/social/social-600.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-601.webp",
+    "href": "/admin/vorlagen/datei/social/social-601.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-602.webp",
+    "href": "/admin/vorlagen/datei/social/social-602.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-603.webp",
+    "href": "/admin/vorlagen/datei/social/social-603.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-604.webp",
+    "href": "/admin/vorlagen/datei/social/social-604.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-605.webp",
+    "href": "/admin/vorlagen/datei/social/social-605.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-606.webp",
+    "href": "/admin/vorlagen/datei/social/social-606.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-607.webp",
+    "href": "/admin/vorlagen/datei/social/social-607.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-608.webp",
+    "href": "/admin/vorlagen/datei/social/social-608.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-609.webp",
+    "href": "/admin/vorlagen/datei/social/social-609.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-610.webp",
+    "href": "/admin/vorlagen/datei/social/social-610.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-611.webp",
+    "href": "/admin/vorlagen/datei/social/social-611.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-612.webp",
+    "href": "/admin/vorlagen/datei/social/social-612.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-613.webp",
+    "href": "/admin/vorlagen/datei/social/social-613.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-614.webp",
+    "href": "/admin/vorlagen/datei/social/social-614.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-615.webp",
+    "href": "/admin/vorlagen/datei/social/social-615.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-616.webp",
+    "href": "/admin/vorlagen/datei/social/social-616.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-617.webp",
+    "href": "/admin/vorlagen/datei/social/social-617.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-618.webp",
+    "href": "/admin/vorlagen/datei/social/social-618.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-619.webp",
+    "href": "/admin/vorlagen/datei/social/social-619.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-620.webp",
+    "href": "/admin/vorlagen/datei/social/social-620.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-621.webp",
+    "href": "/admin/vorlagen/datei/social/social-621.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-622.webp",
+    "href": "/admin/vorlagen/datei/social/social-622.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-623.webp",
+    "href": "/admin/vorlagen/datei/social/social-623.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-624.webp",
+    "href": "/admin/vorlagen/datei/social/social-624.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-625.webp",
+    "href": "/admin/vorlagen/datei/social/social-625.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-626.webp",
+    "href": "/admin/vorlagen/datei/social/social-626.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-627.webp",
+    "href": "/admin/vorlagen/datei/social/social-627.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-628.webp",
+    "href": "/admin/vorlagen/datei/social/social-628.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-629.webp",
+    "href": "/admin/vorlagen/datei/social/social-629.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-630.webp",
+    "href": "/admin/vorlagen/datei/social/social-630.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-631.webp",
+    "href": "/admin/vorlagen/datei/social/social-631.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund · 16:9",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-632.webp",
+    "href": "/admin/vorlagen/datei/social/social-632.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-633.webp",
+    "href": "/admin/vorlagen/datei/social/social-633.webp",
     "masse": {
       "label": "1:1",
-      "w": 500,
-      "h": 500
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-634.webp",
+    "href": "/admin/vorlagen/datei/social/social-634.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-635.webp",
+    "href": "/admin/vorlagen/datei/social/social-635.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-636.webp",
+    "href": "/admin/vorlagen/datei/social/social-636.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-637.webp",
+    "href": "/admin/vorlagen/datei/social/social-637.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-638.webp",
+    "href": "/admin/vorlagen/datei/social/social-638.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-639.webp",
+    "href": "/admin/vorlagen/datei/social/social-639.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-640.webp",
+    "href": "/admin/vorlagen/datei/social/social-640.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-641.webp",
+    "href": "/admin/vorlagen/datei/social/social-641.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-642.webp",
+    "href": "/admin/vorlagen/datei/social/social-642.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-643.webp",
+    "href": "/admin/vorlagen/datei/social/social-643.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-644.webp",
+    "href": "/admin/vorlagen/datei/social/social-644.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-645.webp",
+    "href": "/admin/vorlagen/datei/social/social-645.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-646.webp",
+    "href": "/admin/vorlagen/datei/social/social-646.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-647.webp",
+    "href": "/admin/vorlagen/datei/social/social-647.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-648.webp",
+    "href": "/admin/vorlagen/datei/social/social-648.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-649.webp",
+    "href": "/admin/vorlagen/datei/social/social-649.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-650.webp",
+    "href": "/admin/vorlagen/datei/social/social-650.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-651.webp",
+    "href": "/admin/vorlagen/datei/social/social-651.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-652.webp",
+    "href": "/admin/vorlagen/datei/social/social-652.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-653.webp",
+    "href": "/admin/vorlagen/datei/social/social-653.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-654.webp",
+    "href": "/admin/vorlagen/datei/social/social-654.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-655.webp",
+    "href": "/admin/vorlagen/datei/social/social-655.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-656.webp",
+    "href": "/admin/vorlagen/datei/social/social-656.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-657.webp",
+    "href": "/admin/vorlagen/datei/social/social-657.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-658.webp",
+    "href": "/admin/vorlagen/datei/social/social-658.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-659.webp",
+    "href": "/admin/vorlagen/datei/social/social-659.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-660.webp",
+    "href": "/admin/vorlagen/datei/social/social-660.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-661.webp",
+    "href": "/admin/vorlagen/datei/social/social-661.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-662.webp",
+    "href": "/admin/vorlagen/datei/social/social-662.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-663.webp",
+    "href": "/admin/vorlagen/datei/social/social-663.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-664.webp",
+    "href": "/admin/vorlagen/datei/social/social-664.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-665.webp",
+    "href": "/admin/vorlagen/datei/social/social-665.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-666.webp",
+    "href": "/admin/vorlagen/datei/social/social-666.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-667.webp",
+    "href": "/admin/vorlagen/datei/social/social-667.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-668.webp",
+    "href": "/admin/vorlagen/datei/social/social-668.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-669.webp",
+    "href": "/admin/vorlagen/datei/social/social-669.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-670.webp",
+    "href": "/admin/vorlagen/datei/social/social-670.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-671.webp",
+    "href": "/admin/vorlagen/datei/social/social-671.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-672.webp",
+    "href": "/admin/vorlagen/datei/social/social-672.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-673.webp",
+    "href": "/admin/vorlagen/datei/social/social-673.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-674.webp",
+    "href": "/admin/vorlagen/datei/social/social-674.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-675.webp",
+    "href": "/admin/vorlagen/datei/social/social-675.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-676.webp",
+    "href": "/admin/vorlagen/datei/social/social-676.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-677.webp",
+    "href": "/admin/vorlagen/datei/social/social-677.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-678.webp",
+    "href": "/admin/vorlagen/datei/social/social-678.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-679.webp",
+    "href": "/admin/vorlagen/datei/social/social-679.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-680.webp",
+    "href": "/admin/vorlagen/datei/social/social-680.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-681.webp",
+    "href": "/admin/vorlagen/datei/social/social-681.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-682.webp",
+    "href": "/admin/vorlagen/datei/social/social-682.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-683.webp",
+    "href": "/admin/vorlagen/datei/social/social-683.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-684.webp",
+    "href": "/admin/vorlagen/datei/social/social-684.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-685.webp",
+    "href": "/admin/vorlagen/datei/social/social-685.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-686.webp",
+    "href": "/admin/vorlagen/datei/social/social-686.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-687.webp",
+    "href": "/admin/vorlagen/datei/social/social-687.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-688.webp",
+    "href": "/admin/vorlagen/datei/social/social-688.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-689.webp",
+    "href": "/admin/vorlagen/datei/social/social-689.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-690.webp",
+    "href": "/admin/vorlagen/datei/social/social-690.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-691.webp",
+    "href": "/admin/vorlagen/datei/social/social-691.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund · 1:1",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-692.webp",
+    "href": "/admin/vorlagen/datei/social/social-692.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 2160,
+      "h": 2160
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-693.webp",
+    "href": "/admin/vorlagen/datei/social/social-693.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-694.webp",
+    "href": "/admin/vorlagen/datei/social/social-694.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-695.webp",
+    "href": "/admin/vorlagen/datei/social/social-695.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-696.webp",
+    "href": "/admin/vorlagen/datei/social/social-696.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-697.webp",
+    "href": "/admin/vorlagen/datei/social/social-697.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-698.webp",
+    "href": "/admin/vorlagen/datei/social/social-698.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-699.webp",
+    "href": "/admin/vorlagen/datei/social/social-699.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-700.webp",
+    "href": "/admin/vorlagen/datei/social/social-700.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-701.webp",
+    "href": "/admin/vorlagen/datei/social/social-701.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-702.webp",
+    "href": "/admin/vorlagen/datei/social/social-702.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-703.webp",
+    "href": "/admin/vorlagen/datei/social/social-703.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-704.webp",
+    "href": "/admin/vorlagen/datei/social/social-704.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-705.webp",
+    "href": "/admin/vorlagen/datei/social/social-705.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-706.webp",
+    "href": "/admin/vorlagen/datei/social/social-706.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-707.webp",
+    "href": "/admin/vorlagen/datei/social/social-707.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-708.webp",
+    "href": "/admin/vorlagen/datei/social/social-708.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-709.webp",
+    "href": "/admin/vorlagen/datei/social/social-709.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-710.webp",
+    "href": "/admin/vorlagen/datei/social/social-710.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-711.webp",
+    "href": "/admin/vorlagen/datei/social/social-711.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-712.webp",
+    "href": "/admin/vorlagen/datei/social/social-712.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-713.webp",
+    "href": "/admin/vorlagen/datei/social/social-713.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-714.webp",
+    "href": "/admin/vorlagen/datei/social/social-714.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-715.webp",
+    "href": "/admin/vorlagen/datei/social/social-715.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-716.webp",
+    "href": "/admin/vorlagen/datei/social/social-716.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-717.webp",
+    "href": "/admin/vorlagen/datei/social/social-717.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-718.webp",
+    "href": "/admin/vorlagen/datei/social/social-718.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-719.webp",
+    "href": "/admin/vorlagen/datei/social/social-719.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-720.webp",
+    "href": "/admin/vorlagen/datei/social/social-720.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-721.webp",
+    "href": "/admin/vorlagen/datei/social/social-721.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-722.webp",
+    "href": "/admin/vorlagen/datei/social/social-722.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-723.webp",
+    "href": "/admin/vorlagen/datei/social/social-723.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-724.webp",
+    "href": "/admin/vorlagen/datei/social/social-724.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-725.webp",
+    "href": "/admin/vorlagen/datei/social/social-725.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-726.webp",
+    "href": "/admin/vorlagen/datei/social/social-726.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-727.webp",
+    "href": "/admin/vorlagen/datei/social/social-727.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-728.webp",
+    "href": "/admin/vorlagen/datei/social/social-728.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-729.webp",
+    "href": "/admin/vorlagen/datei/social/social-729.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-730.webp",
+    "href": "/admin/vorlagen/datei/social/social-730.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-731.webp",
+    "href": "/admin/vorlagen/datei/social/social-731.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-732.webp",
+    "href": "/admin/vorlagen/datei/social/social-732.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-733.webp",
+    "href": "/admin/vorlagen/datei/social/social-733.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-734.webp",
+    "href": "/admin/vorlagen/datei/social/social-734.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-735.webp",
+    "href": "/admin/vorlagen/datei/social/social-735.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-736.webp",
+    "href": "/admin/vorlagen/datei/social/social-736.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-737.webp",
+    "href": "/admin/vorlagen/datei/social/social-737.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-738.webp",
+    "href": "/admin/vorlagen/datei/social/social-738.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-739.webp",
+    "href": "/admin/vorlagen/datei/social/social-739.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-740.webp",
+    "href": "/admin/vorlagen/datei/social/social-740.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-741.webp",
+    "href": "/admin/vorlagen/datei/social/social-741.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-742.webp",
+    "href": "/admin/vorlagen/datei/social/social-742.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-743.webp",
+    "href": "/admin/vorlagen/datei/social/social-743.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-744.webp",
+    "href": "/admin/vorlagen/datei/social/social-744.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-745.webp",
+    "href": "/admin/vorlagen/datei/social/social-745.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-746.webp",
+    "href": "/admin/vorlagen/datei/social/social-746.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-747.webp",
+    "href": "/admin/vorlagen/datei/social/social-747.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-748.webp",
+    "href": "/admin/vorlagen/datei/social/social-748.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-749.webp",
+    "href": "/admin/vorlagen/datei/social/social-749.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-750.webp",
+    "href": "/admin/vorlagen/datei/social/social-750.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  }
+];
+
+const vorlagenAssets3: VorlagenAsset[] = [
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-751.webp",
+    "href": "/admin/vorlagen/datei/social/social-751.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund · 4:5",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-752.webp",
+    "href": "/admin/vorlagen/datei/social/social-752.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 2160,
+      "h": 2700
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-753.webp",
+    "href": "/admin/vorlagen/datei/social/social-753.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-754.webp",
+    "href": "/admin/vorlagen/datei/social/social-754.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-755.webp",
+    "href": "/admin/vorlagen/datei/social/social-755.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-756.webp",
+    "href": "/admin/vorlagen/datei/social/social-756.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-757.webp",
+    "href": "/admin/vorlagen/datei/social/social-757.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-758.webp",
+    "href": "/admin/vorlagen/datei/social/social-758.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-759.webp",
+    "href": "/admin/vorlagen/datei/social/social-759.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-760.webp",
+    "href": "/admin/vorlagen/datei/social/social-760.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-761.webp",
+    "href": "/admin/vorlagen/datei/social/social-761.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-762.webp",
+    "href": "/admin/vorlagen/datei/social/social-762.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-763.webp",
+    "href": "/admin/vorlagen/datei/social/social-763.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-764.webp",
+    "href": "/admin/vorlagen/datei/social/social-764.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-765.webp",
+    "href": "/admin/vorlagen/datei/social/social-765.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-766.webp",
+    "href": "/admin/vorlagen/datei/social/social-766.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-767.webp",
+    "href": "/admin/vorlagen/datei/social/social-767.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-768.webp",
+    "href": "/admin/vorlagen/datei/social/social-768.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-769.webp",
+    "href": "/admin/vorlagen/datei/social/social-769.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-770.webp",
+    "href": "/admin/vorlagen/datei/social/social-770.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-771.webp",
+    "href": "/admin/vorlagen/datei/social/social-771.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-772.webp",
+    "href": "/admin/vorlagen/datei/social/social-772.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-773.webp",
+    "href": "/admin/vorlagen/datei/social/social-773.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-774.webp",
+    "href": "/admin/vorlagen/datei/social/social-774.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-775.webp",
+    "href": "/admin/vorlagen/datei/social/social-775.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-776.webp",
+    "href": "/admin/vorlagen/datei/social/social-776.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-777.webp",
+    "href": "/admin/vorlagen/datei/social/social-777.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-778.webp",
+    "href": "/admin/vorlagen/datei/social/social-778.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-779.webp",
+    "href": "/admin/vorlagen/datei/social/social-779.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-780.webp",
+    "href": "/admin/vorlagen/datei/social/social-780.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-781.webp",
+    "href": "/admin/vorlagen/datei/social/social-781.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-782.webp",
+    "href": "/admin/vorlagen/datei/social/social-782.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-783.webp",
+    "href": "/admin/vorlagen/datei/social/social-783.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "01 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-784.webp",
+    "href": "/admin/vorlagen/datei/social/social-784.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-785.webp",
+    "href": "/admin/vorlagen/datei/social/social-785.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-786.webp",
+    "href": "/admin/vorlagen/datei/social/social-786.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-787.webp",
+    "href": "/admin/vorlagen/datei/social/social-787.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "02 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-788.webp",
+    "href": "/admin/vorlagen/datei/social/social-788.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-789.webp",
+    "href": "/admin/vorlagen/datei/social/social-789.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-790.webp",
+    "href": "/admin/vorlagen/datei/social/social-790.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-791.webp",
+    "href": "/admin/vorlagen/datei/social/social-791.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "03 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-792.webp",
+    "href": "/admin/vorlagen/datei/social/social-792.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-793.webp",
+    "href": "/admin/vorlagen/datei/social/social-793.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-794.webp",
+    "href": "/admin/vorlagen/datei/social/social-794.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-795.webp",
+    "href": "/admin/vorlagen/datei/social/social-795.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "04 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-796.webp",
+    "href": "/admin/vorlagen/datei/social/social-796.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-797.webp",
+    "href": "/admin/vorlagen/datei/social/social-797.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-798.webp",
+    "href": "/admin/vorlagen/datei/social/social-798.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-799.webp",
+    "href": "/admin/vorlagen/datei/social/social-799.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "05 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-800.webp",
+    "href": "/admin/vorlagen/datei/social/social-800.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-801.webp",
+    "href": "/admin/vorlagen/datei/social/social-801.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-802.webp",
+    "href": "/admin/vorlagen/datei/social/social-802.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-803.webp",
+    "href": "/admin/vorlagen/datei/social/social-803.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "06 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-804.webp",
+    "href": "/admin/vorlagen/datei/social/social-804.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-805.webp",
+    "href": "/admin/vorlagen/datei/social/social-805.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-806.webp",
+    "href": "/admin/vorlagen/datei/social/social-806.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-807.webp",
+    "href": "/admin/vorlagen/datei/social/social-807.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "07 · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-808.webp",
+    "href": "/admin/vorlagen/datei/social/social-808.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-809.webp",
+    "href": "/admin/vorlagen/datei/social/social-809.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis hell · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-810.webp",
+    "href": "/admin/vorlagen/datei/social/social-810.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund tuerkis · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-811.webp",
+    "href": "/admin/vorlagen/datei/social/social-811.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "hintergrund · 9:16",
+    "unterKategorie": "whatsapp mitgliedschaft",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-812.webp",
+    "href": "/admin/vorlagen/datei/social/social-812.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 2160,
+      "h": 3840
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Banner 1920x1080 hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-813.webp",
+    "href": "/admin/vorlagen/datei/social/social-813.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Banner 1920x1080",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-814.webp",
+    "href": "/admin/vorlagen/datei/social/social-814.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Banner hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-815.webp",
+    "href": "/admin/vorlagen/datei/social/social-815.webp",
+    "masse": {
+      "label": "4:1",
+      "w": 2160,
+      "h": 540
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Banner",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-816.webp",
+    "href": "/admin/vorlagen/datei/social/social-816.webp",
+    "masse": {
+      "label": "4:1",
+      "w": 2160,
+      "h": 540
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Kanalbild hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-817.webp",
+    "href": "/admin/vorlagen/datei/social/social-817.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Kanalbild tuerkis hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-818.webp",
+    "href": "/admin/vorlagen/datei/social/social-818.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Kanalbild tuerkis",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-819.webp",
+    "href": "/admin/vorlagen/datei/social/social-819.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Kanalbild",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-820.webp",
+    "href": "/admin/vorlagen/datei/social/social-820.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Profilbild hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-821.webp",
+    "href": "/admin/vorlagen/datei/social/social-821.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Profilbild tuerkis hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-822.webp",
+    "href": "/admin/vorlagen/datei/social/social-822.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Profilbild tuerkis",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-823.webp",
+    "href": "/admin/vorlagen/datei/social/social-823.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Profilbild",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-824.webp",
+    "href": "/admin/vorlagen/datei/social/social-824.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp SafeZone Vorlage",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-825.webp",
+    "href": "/admin/vorlagen/datei/social/social-825.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Status 9x16 hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-826.webp",
+    "href": "/admin/vorlagen/datei/social/social-826.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Status 9x16 tuerkis hell",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-827.webp",
+    "href": "/admin/vorlagen/datei/social/social-827.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Status 9x16 tuerkis",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-828.webp",
+    "href": "/admin/vorlagen/datei/social/social-828.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "WhatsApp Status 9x16",
+    "unterKategorie": "WhatsApp",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-829.webp",
+    "href": "/admin/vorlagen/datei/social/social-829.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "YouTube Banner hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-830.webp",
+    "href": "/admin/vorlagen/datei/social/social-830.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 2160,
+      "h": 1215
     }
   },
   {
@@ -1471,12 +10840,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "YouTube Banner",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-111.webp",
-    "href": "/admin/vorlagen/datei/social/social-111.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-831.webp",
+    "href": "/admin/vorlagen/datei/social/social-831.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
       "h": 1215
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail 01 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-832.webp",
+    "href": "/admin/vorlagen/datei/social/social-832.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail 01 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-833.webp",
+    "href": "/admin/vorlagen/datei/social/social-833.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail 01 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-834.webp",
+    "href": "/admin/vorlagen/datei/social/social-834.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
@@ -1484,12 +10892,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 01",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-112.webp",
-    "href": "/admin/vorlagen/datei/social/social-112.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-835.webp",
+    "href": "/admin/vorlagen/datei/social/social-835.webp",
     "masse": {
       "label": "16:9",
-      "w": 2160,
-      "h": 1215
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail 02 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-836.webp",
+    "href": "/admin/vorlagen/datei/social/social-836.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail 02 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-837.webp",
+    "href": "/admin/vorlagen/datei/social/social-837.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail 02 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-838.webp",
+    "href": "/admin/vorlagen/datei/social/social-838.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
@@ -1497,12 +10944,1247 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail 02",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-113.webp",
-    "href": "/admin/vorlagen/datei/social/social-113.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-839.webp",
+    "href": "/admin/vorlagen/datei/social/social-839.webp",
     "masse": {
       "label": "16:9",
-      "w": 2160,
-      "h": 1215
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail ablenkung hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-840.webp",
+    "href": "/admin/vorlagen/datei/social/social-840.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail ablenkung tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-841.webp",
+    "href": "/admin/vorlagen/datei/social/social-841.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail ablenkung tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-842.webp",
+    "href": "/admin/vorlagen/datei/social/social-842.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail ablenkung",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-843.webp",
+    "href": "/admin/vorlagen/datei/social/social-843.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail algorithmen hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-844.webp",
+    "href": "/admin/vorlagen/datei/social/social-844.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail algorithmen tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-845.webp",
+    "href": "/admin/vorlagen/datei/social/social-845.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail algorithmen tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-846.webp",
+    "href": "/admin/vorlagen/datei/social/social-846.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail algorithmen",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-847.webp",
+    "href": "/admin/vorlagen/datei/social/social-847.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail angst steuerung hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-848.webp",
+    "href": "/admin/vorlagen/datei/social/social-848.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail angst steuerung tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-849.webp",
+    "href": "/admin/vorlagen/datei/social/social-849.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail angst steuerung tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-850.webp",
+    "href": "/admin/vorlagen/datei/social/social-850.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail angst steuerung",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-851.webp",
+    "href": "/admin/vorlagen/datei/social/social-851.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail atmung hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-852.webp",
+    "href": "/admin/vorlagen/datei/social/social-852.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail atmung tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-853.webp",
+    "href": "/admin/vorlagen/datei/social/social-853.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail atmung tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-854.webp",
+    "href": "/admin/vorlagen/datei/social/social-854.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail atmung",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-855.webp",
+    "href": "/admin/vorlagen/datei/social/social-855.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail autoritaetshoerigkeit hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-856.webp",
+    "href": "/admin/vorlagen/datei/social/social-856.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail autoritaetshoerigkeit tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-857.webp",
+    "href": "/admin/vorlagen/datei/social/social-857.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail autoritaetshoerigkeit tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-858.webp",
+    "href": "/admin/vorlagen/datei/social/social-858.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail autoritaetshoerigkeit",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-859.webp",
+    "href": "/admin/vorlagen/datei/social/social-859.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail bildmacht hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-860.webp",
+    "href": "/admin/vorlagen/datei/social/social-860.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail bildmacht tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-861.webp",
+    "href": "/admin/vorlagen/datei/social/social-861.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail bildmacht tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-862.webp",
+    "href": "/admin/vorlagen/datei/social/social-862.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail bildmacht",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-863.webp",
+    "href": "/admin/vorlagen/datei/social/social-863.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail framing hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-864.webp",
+    "href": "/admin/vorlagen/datei/social/social-864.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail framing tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-865.webp",
+    "href": "/admin/vorlagen/datei/social/social-865.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail framing tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-866.webp",
+    "href": "/admin/vorlagen/datei/social/social-866.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail framing",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-867.webp",
+    "href": "/admin/vorlagen/datei/social/social-867.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail gruppendruck hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-868.webp",
+    "href": "/admin/vorlagen/datei/social/social-868.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail gruppendruck tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-869.webp",
+    "href": "/admin/vorlagen/datei/social/social-869.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail gruppendruck tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-870.webp",
+    "href": "/admin/vorlagen/datei/social/social-870.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail gruppendruck",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-871.webp",
+    "href": "/admin/vorlagen/datei/social/social-871.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail identitaet und meinung hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-872.webp",
+    "href": "/admin/vorlagen/datei/social/social-872.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail identitaet und meinung tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-873.webp",
+    "href": "/admin/vorlagen/datei/social/social-873.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail identitaet und meinung tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-874.webp",
+    "href": "/admin/vorlagen/datei/social/social-874.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail identitaet und meinung",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-875.webp",
+    "href": "/admin/vorlagen/datei/social/social-875.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail kognitive dissonanz hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-876.webp",
+    "href": "/admin/vorlagen/datei/social/social-876.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail kognitive dissonanz tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-877.webp",
+    "href": "/admin/vorlagen/datei/social/social-877.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail kognitive dissonanz tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-878.webp",
+    "href": "/admin/vorlagen/datei/social/social-878.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail kognitive dissonanz",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-879.webp",
+    "href": "/admin/vorlagen/datei/social/social-879.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail medien agenda hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-880.webp",
+    "href": "/admin/vorlagen/datei/social/social-880.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail medien agenda tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-881.webp",
+    "href": "/admin/vorlagen/datei/social/social-881.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail medien agenda tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-882.webp",
+    "href": "/admin/vorlagen/datei/social/social-882.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail medien agenda",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-883.webp",
+    "href": "/admin/vorlagen/datei/social/social-883.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail meditation hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-884.webp",
+    "href": "/admin/vorlagen/datei/social/social-884.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail meditation tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-885.webp",
+    "href": "/admin/vorlagen/datei/social/social-885.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail meditation tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-886.webp",
+    "href": "/admin/vorlagen/datei/social/social-886.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail meditation",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-887.webp",
+    "href": "/admin/vorlagen/datei/social/social-887.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail normalisierung hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-888.webp",
+    "href": "/admin/vorlagen/datei/social/social-888.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail normalisierung tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-889.webp",
+    "href": "/admin/vorlagen/datei/social/social-889.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail normalisierung tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-890.webp",
+    "href": "/admin/vorlagen/datei/social/social-890.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail normalisierung",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-891.webp",
+    "href": "/admin/vorlagen/datei/social/social-891.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail placebo hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-892.webp",
+    "href": "/admin/vorlagen/datei/social/social-892.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail placebo tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-893.webp",
+    "href": "/admin/vorlagen/datei/social/social-893.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail placebo tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-894.webp",
+    "href": "/admin/vorlagen/datei/social/social-894.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail placebo",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-895.webp",
+    "href": "/admin/vorlagen/datei/social/social-895.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail propaganda hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-896.webp",
+    "href": "/admin/vorlagen/datei/social/social-896.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail propaganda tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-897.webp",
+    "href": "/admin/vorlagen/datei/social/social-897.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail propaganda tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-898.webp",
+    "href": "/admin/vorlagen/datei/social/social-898.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail propaganda",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-899.webp",
+    "href": "/admin/vorlagen/datei/social/social-899.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail reizueberflutung hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-900.webp",
+    "href": "/admin/vorlagen/datei/social/social-900.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail reizueberflutung tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-901.webp",
+    "href": "/admin/vorlagen/datei/social/social-901.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail reizueberflutung tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-902.webp",
+    "href": "/admin/vorlagen/datei/social/social-902.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail reizueberflutung",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-903.webp",
+    "href": "/admin/vorlagen/datei/social/social-903.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail sprache und etiketten hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-904.webp",
+    "href": "/admin/vorlagen/datei/social/social-904.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail sprache und etiketten tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-905.webp",
+    "href": "/admin/vorlagen/datei/social/social-905.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail sprache und etiketten tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-906.webp",
+    "href": "/admin/vorlagen/datei/social/social-906.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail sprache und etiketten",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-907.webp",
+    "href": "/admin/vorlagen/datei/social/social-907.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 2 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-908.webp",
+    "href": "/admin/vorlagen/datei/social/social-908.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 2 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-909.webp",
+    "href": "/admin/vorlagen/datei/social/social-909.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 2 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-910.webp",
+    "href": "/admin/vorlagen/datei/social/social-910.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 2",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-911.webp",
+    "href": "/admin/vorlagen/datei/social/social-911.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 3 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-912.webp",
+    "href": "/admin/vorlagen/datei/social/social-912.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 3 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-913.webp",
+    "href": "/admin/vorlagen/datei/social/social-913.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 3 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-914.webp",
+    "href": "/admin/vorlagen/datei/social/social-914.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 3",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-915.webp",
+    "href": "/admin/vorlagen/datei/social/social-915.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 4 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-916.webp",
+    "href": "/admin/vorlagen/datei/social/social-916.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 4 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-917.webp",
+    "href": "/admin/vorlagen/datei/social/social-917.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 4 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-918.webp",
+    "href": "/admin/vorlagen/datei/social/social-918.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 4",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-919.webp",
+    "href": "/admin/vorlagen/datei/social/social-919.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 5 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-920.webp",
+    "href": "/admin/vorlagen/datei/social/social-920.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 5 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-921.webp",
+    "href": "/admin/vorlagen/datei/social/social-921.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 5 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-922.webp",
+    "href": "/admin/vorlagen/datei/social/social-922.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 5",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-923.webp",
+    "href": "/admin/vorlagen/datei/social/social-923.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 6 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-924.webp",
+    "href": "/admin/vorlagen/datei/social/social-924.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 6 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-925.webp",
+    "href": "/admin/vorlagen/datei/social/social-925.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 6 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-926.webp",
+    "href": "/admin/vorlagen/datei/social/social-926.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 6",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-927.webp",
+    "href": "/admin/vorlagen/datei/social/social-927.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 7 hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-928.webp",
+    "href": "/admin/vorlagen/datei/social/social-928.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 7 tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-929.webp",
+    "href": "/admin/vorlagen/datei/social/social-929.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 7 tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-930.webp",
+    "href": "/admin/vorlagen/datei/social/social-930.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail stufe 7",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-931.webp",
+    "href": "/admin/vorlagen/datei/social/social-931.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail vorlage hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-932.webp",
+    "href": "/admin/vorlagen/datei/social/social-932.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail vorlage tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-933.webp",
+    "href": "/admin/vorlagen/datei/social/social-933.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail vorlage tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-934.webp",
+    "href": "/admin/vorlagen/datei/social/social-934.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
@@ -1510,12 +12192,155 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Thumbnail vorlage",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-114.webp",
-    "href": "/admin/vorlagen/datei/social/social-114.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-935.webp",
+    "href": "/admin/vorlagen/datei/social/social-935.webp",
     "masse": {
       "label": "16:9",
-      "w": 2160,
-      "h": 1215
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail werbung und mangel hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-936.webp",
+    "href": "/admin/vorlagen/datei/social/social-936.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail werbung und mangel tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-937.webp",
+    "href": "/admin/vorlagen/datei/social/social-937.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail werbung und mangel tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-938.webp",
+    "href": "/admin/vorlagen/datei/social/social-938.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail werbung und mangel",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-939.webp",
+    "href": "/admin/vorlagen/datei/social/social-939.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail wiederholung wahrheit hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-940.webp",
+    "href": "/admin/vorlagen/datei/social/social-940.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail wiederholung wahrheit tuerkis hell",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-941.webp",
+    "href": "/admin/vorlagen/datei/social/social-941.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail wiederholung wahrheit tuerkis",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-942.webp",
+    "href": "/admin/vorlagen/datei/social/social-942.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Thumbnail wiederholung wahrheit",
+    "unterKategorie": "YouTube",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-943.webp",
+    "href": "/admin/vorlagen/datei/social/social-943.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-944.webp",
+    "href": "/admin/vorlagen/datei/social/social-944.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-945.webp",
+    "href": "/admin/vorlagen/datei/social/social-945.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-946.webp",
+    "href": "/admin/vorlagen/datei/social/social-946.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1523,12 +12348,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 01 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-115.webp",
-    "href": "/admin/vorlagen/datei/social/social-115.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-947.webp",
+    "href": "/admin/vorlagen/datei/social/social-947.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-948.webp",
+    "href": "/admin/vorlagen/datei/social/social-948.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-949.webp",
+    "href": "/admin/vorlagen/datei/social/social-949.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-950.webp",
+    "href": "/admin/vorlagen/datei/social/social-950.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1536,12 +12400,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 02 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-116.webp",
-    "href": "/admin/vorlagen/datei/social/social-116.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-951.webp",
+    "href": "/admin/vorlagen/datei/social/social-951.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-952.webp",
+    "href": "/admin/vorlagen/datei/social/social-952.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-953.webp",
+    "href": "/admin/vorlagen/datei/social/social-953.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-954.webp",
+    "href": "/admin/vorlagen/datei/social/social-954.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1549,12 +12452,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 03 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-117.webp",
-    "href": "/admin/vorlagen/datei/social/social-117.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-955.webp",
+    "href": "/admin/vorlagen/datei/social/social-955.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-956.webp",
+    "href": "/admin/vorlagen/datei/social/social-956.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-957.webp",
+    "href": "/admin/vorlagen/datei/social/social-957.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-958.webp",
+    "href": "/admin/vorlagen/datei/social/social-958.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1562,12 +12504,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 04 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-118.webp",
-    "href": "/admin/vorlagen/datei/social/social-118.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-959.webp",
+    "href": "/admin/vorlagen/datei/social/social-959.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-960.webp",
+    "href": "/admin/vorlagen/datei/social/social-960.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-961.webp",
+    "href": "/admin/vorlagen/datei/social/social-961.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-962.webp",
+    "href": "/admin/vorlagen/datei/social/social-962.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1575,12 +12556,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 05 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-119.webp",
-    "href": "/admin/vorlagen/datei/social/social-119.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-963.webp",
+    "href": "/admin/vorlagen/datei/social/social-963.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-964.webp",
+    "href": "/admin/vorlagen/datei/social/social-964.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-965.webp",
+    "href": "/admin/vorlagen/datei/social/social-965.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-966.webp",
+    "href": "/admin/vorlagen/datei/social/social-966.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1588,12 +12608,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 06 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-120.webp",
-    "href": "/admin/vorlagen/datei/social/social-120.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-967.webp",
+    "href": "/admin/vorlagen/datei/social/social-967.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-968.webp",
+    "href": "/admin/vorlagen/datei/social/social-968.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-969.webp",
+    "href": "/admin/vorlagen/datei/social/social-969.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-970.webp",
+    "href": "/admin/vorlagen/datei/social/social-970.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1601,12 +12660,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 07 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-121.webp",
-    "href": "/admin/vorlagen/datei/social/social-121.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-971.webp",
+    "href": "/admin/vorlagen/datei/social/social-971.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-972.webp",
+    "href": "/admin/vorlagen/datei/social/social-972.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-973.webp",
+    "href": "/admin/vorlagen/datei/social/social-973.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-974.webp",
+    "href": "/admin/vorlagen/datei/social/social-974.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1614,12 +12712,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 08 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-122.webp",
-    "href": "/admin/vorlagen/datei/social/social-122.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-975.webp",
+    "href": "/admin/vorlagen/datei/social/social-975.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-976.webp",
+    "href": "/admin/vorlagen/datei/social/social-976.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-977.webp",
+    "href": "/admin/vorlagen/datei/social/social-977.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-978.webp",
+    "href": "/admin/vorlagen/datei/social/social-978.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1627,12 +12764,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 09 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-123.webp",
-    "href": "/admin/vorlagen/datei/social/social-123.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-979.webp",
+    "href": "/admin/vorlagen/datei/social/social-979.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-980.webp",
+    "href": "/admin/vorlagen/datei/social/social-980.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-981.webp",
+    "href": "/admin/vorlagen/datei/social/social-981.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-982.webp",
+    "href": "/admin/vorlagen/datei/social/social-982.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1640,12 +12816,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 10 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-124.webp",
-    "href": "/admin/vorlagen/datei/social/social-124.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-983.webp",
+    "href": "/admin/vorlagen/datei/social/social-983.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-984.webp",
+    "href": "/admin/vorlagen/datei/social/social-984.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-985.webp",
+    "href": "/admin/vorlagen/datei/social/social-985.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-986.webp",
+    "href": "/admin/vorlagen/datei/social/social-986.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1653,12 +12868,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 11 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-125.webp",
-    "href": "/admin/vorlagen/datei/social/social-125.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-987.webp",
+    "href": "/admin/vorlagen/datei/social/social-987.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-988.webp",
+    "href": "/admin/vorlagen/datei/social/social-988.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-989.webp",
+    "href": "/admin/vorlagen/datei/social/social-989.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-990.webp",
+    "href": "/admin/vorlagen/datei/social/social-990.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1666,12 +12920,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 12 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-126.webp",
-    "href": "/admin/vorlagen/datei/social/social-126.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-991.webp",
+    "href": "/admin/vorlagen/datei/social/social-991.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-992.webp",
+    "href": "/admin/vorlagen/datei/social/social-992.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-993.webp",
+    "href": "/admin/vorlagen/datei/social/social-993.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-994.webp",
+    "href": "/admin/vorlagen/datei/social/social-994.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1679,12 +12972,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 13 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-127.webp",
-    "href": "/admin/vorlagen/datei/social/social-127.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-995.webp",
+    "href": "/admin/vorlagen/datei/social/social-995.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-996.webp",
+    "href": "/admin/vorlagen/datei/social/social-996.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-997.webp",
+    "href": "/admin/vorlagen/datei/social/social-997.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-998.webp",
+    "href": "/admin/vorlagen/datei/social/social-998.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -1692,12 +13024,678 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 14 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-128.webp",
-    "href": "/admin/vorlagen/datei/social/social-128.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-999.webp",
+    "href": "/admin/vorlagen/datei/social/social-999.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1000.webp",
+    "href": "/admin/vorlagen/datei/social/social-1000.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  }
+];
+
+const vorlagenAssets4: VorlagenAsset[] = [
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1001.webp",
+    "href": "/admin/vorlagen/datei/social/social-1001.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1002.webp",
+    "href": "/admin/vorlagen/datei/social/social-1002.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1003.webp",
+    "href": "/admin/vorlagen/datei/social/social-1003.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1004.webp",
+    "href": "/admin/vorlagen/datei/social/social-1004.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1005.webp",
+    "href": "/admin/vorlagen/datei/social/social-1005.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1006.webp",
+    "href": "/admin/vorlagen/datei/social/social-1006.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1007.webp",
+    "href": "/admin/vorlagen/datei/social/social-1007.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1008.webp",
+    "href": "/admin/vorlagen/datei/social/social-1008.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1009.webp",
+    "href": "/admin/vorlagen/datei/social/social-1009.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1010.webp",
+    "href": "/admin/vorlagen/datei/social/social-1010.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1011.webp",
+    "href": "/admin/vorlagen/datei/social/social-1011.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1012.webp",
+    "href": "/admin/vorlagen/datei/social/social-1012.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1013.webp",
+    "href": "/admin/vorlagen/datei/social/social-1013.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1014.webp",
+    "href": "/admin/vorlagen/datei/social/social-1014.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1015.webp",
+    "href": "/admin/vorlagen/datei/social/social-1015.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1016.webp",
+    "href": "/admin/vorlagen/datei/social/social-1016.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1017.webp",
+    "href": "/admin/vorlagen/datei/social/social-1017.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1018.webp",
+    "href": "/admin/vorlagen/datei/social/social-1018.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1019.webp",
+    "href": "/admin/vorlagen/datei/social/social-1019.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1020.webp",
+    "href": "/admin/vorlagen/datei/social/social-1020.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1021.webp",
+    "href": "/admin/vorlagen/datei/social/social-1021.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1022.webp",
+    "href": "/admin/vorlagen/datei/social/social-1022.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1023.webp",
+    "href": "/admin/vorlagen/datei/social/social-1023.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1024.webp",
+    "href": "/admin/vorlagen/datei/social/social-1024.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1025.webp",
+    "href": "/admin/vorlagen/datei/social/social-1025.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1026.webp",
+    "href": "/admin/vorlagen/datei/social/social-1026.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1027.webp",
+    "href": "/admin/vorlagen/datei/social/social-1027.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1028.webp",
+    "href": "/admin/vorlagen/datei/social/social-1028.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1029.webp",
+    "href": "/admin/vorlagen/datei/social/social-1029.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1030.webp",
+    "href": "/admin/vorlagen/datei/social/social-1030.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1031.webp",
+    "href": "/admin/vorlagen/datei/social/social-1031.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1032.webp",
+    "href": "/admin/vorlagen/datei/social/social-1032.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1033.webp",
+    "href": "/admin/vorlagen/datei/social/social-1033.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1034.webp",
+    "href": "/admin/vorlagen/datei/social/social-1034.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1035.webp",
+    "href": "/admin/vorlagen/datei/social/social-1035.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1036.webp",
+    "href": "/admin/vorlagen/datei/social/social-1036.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1037.webp",
+    "href": "/admin/vorlagen/datei/social/social-1037.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1038.webp",
+    "href": "/admin/vorlagen/datei/social/social-1038.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1039.webp",
+    "href": "/admin/vorlagen/datei/social/social-1039.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1040.webp",
+    "href": "/admin/vorlagen/datei/social/social-1040.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1041.webp",
+    "href": "/admin/vorlagen/datei/social/social-1041.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1042.webp",
+    "href": "/admin/vorlagen/datei/social/social-1042.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1043.webp",
+    "href": "/admin/vorlagen/datei/social/social-1043.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1044.webp",
+    "href": "/admin/vorlagen/datei/social/social-1044.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis hell · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1045.webp",
+    "href": "/admin/vorlagen/datei/social/social-1045.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1046.webp",
+    "href": "/admin/vorlagen/datei/social/social-1046.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 · 1:1",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1047.webp",
+    "href": "/admin/vorlagen/datei/social/social-1047.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1048.webp",
+    "href": "/admin/vorlagen/datei/social/social-1048.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1049.webp",
+    "href": "/admin/vorlagen/datei/social/social-1049.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1050.webp",
+    "href": "/admin/vorlagen/datei/social/social-1050.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1705,12 +13703,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 01 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-129.webp",
-    "href": "/admin/vorlagen/datei/social/social-129.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1051.webp",
+    "href": "/admin/vorlagen/datei/social/social-1051.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1052.webp",
+    "href": "/admin/vorlagen/datei/social/social-1052.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1053.webp",
+    "href": "/admin/vorlagen/datei/social/social-1053.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1054.webp",
+    "href": "/admin/vorlagen/datei/social/social-1054.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1718,12 +13755,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 02 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-130.webp",
-    "href": "/admin/vorlagen/datei/social/social-130.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1055.webp",
+    "href": "/admin/vorlagen/datei/social/social-1055.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1056.webp",
+    "href": "/admin/vorlagen/datei/social/social-1056.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1057.webp",
+    "href": "/admin/vorlagen/datei/social/social-1057.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1058.webp",
+    "href": "/admin/vorlagen/datei/social/social-1058.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1731,12 +13807,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 03 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-131.webp",
-    "href": "/admin/vorlagen/datei/social/social-131.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1059.webp",
+    "href": "/admin/vorlagen/datei/social/social-1059.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1060.webp",
+    "href": "/admin/vorlagen/datei/social/social-1060.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1061.webp",
+    "href": "/admin/vorlagen/datei/social/social-1061.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1062.webp",
+    "href": "/admin/vorlagen/datei/social/social-1062.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1744,12 +13859,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 04 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-132.webp",
-    "href": "/admin/vorlagen/datei/social/social-132.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1063.webp",
+    "href": "/admin/vorlagen/datei/social/social-1063.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1064.webp",
+    "href": "/admin/vorlagen/datei/social/social-1064.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1065.webp",
+    "href": "/admin/vorlagen/datei/social/social-1065.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1066.webp",
+    "href": "/admin/vorlagen/datei/social/social-1066.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1757,12 +13911,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 05 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-133.webp",
-    "href": "/admin/vorlagen/datei/social/social-133.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1067.webp",
+    "href": "/admin/vorlagen/datei/social/social-1067.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1068.webp",
+    "href": "/admin/vorlagen/datei/social/social-1068.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1069.webp",
+    "href": "/admin/vorlagen/datei/social/social-1069.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1070.webp",
+    "href": "/admin/vorlagen/datei/social/social-1070.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1770,12 +13963,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 06 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-134.webp",
-    "href": "/admin/vorlagen/datei/social/social-134.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1071.webp",
+    "href": "/admin/vorlagen/datei/social/social-1071.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1072.webp",
+    "href": "/admin/vorlagen/datei/social/social-1072.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1073.webp",
+    "href": "/admin/vorlagen/datei/social/social-1073.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1074.webp",
+    "href": "/admin/vorlagen/datei/social/social-1074.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1783,12 +14015,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 07 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-135.webp",
-    "href": "/admin/vorlagen/datei/social/social-135.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1075.webp",
+    "href": "/admin/vorlagen/datei/social/social-1075.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1076.webp",
+    "href": "/admin/vorlagen/datei/social/social-1076.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1077.webp",
+    "href": "/admin/vorlagen/datei/social/social-1077.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1078.webp",
+    "href": "/admin/vorlagen/datei/social/social-1078.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1796,12 +14067,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 08 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-136.webp",
-    "href": "/admin/vorlagen/datei/social/social-136.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1079.webp",
+    "href": "/admin/vorlagen/datei/social/social-1079.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1080.webp",
+    "href": "/admin/vorlagen/datei/social/social-1080.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1081.webp",
+    "href": "/admin/vorlagen/datei/social/social-1081.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1082.webp",
+    "href": "/admin/vorlagen/datei/social/social-1082.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1809,12 +14119,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 09 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-137.webp",
-    "href": "/admin/vorlagen/datei/social/social-137.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1083.webp",
+    "href": "/admin/vorlagen/datei/social/social-1083.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1084.webp",
+    "href": "/admin/vorlagen/datei/social/social-1084.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1085.webp",
+    "href": "/admin/vorlagen/datei/social/social-1085.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1086.webp",
+    "href": "/admin/vorlagen/datei/social/social-1086.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1822,12 +14171,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 10 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-138.webp",
-    "href": "/admin/vorlagen/datei/social/social-138.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1087.webp",
+    "href": "/admin/vorlagen/datei/social/social-1087.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1088.webp",
+    "href": "/admin/vorlagen/datei/social/social-1088.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1089.webp",
+    "href": "/admin/vorlagen/datei/social/social-1089.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1090.webp",
+    "href": "/admin/vorlagen/datei/social/social-1090.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1835,12 +14223,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 11 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-139.webp",
-    "href": "/admin/vorlagen/datei/social/social-139.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1091.webp",
+    "href": "/admin/vorlagen/datei/social/social-1091.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1092.webp",
+    "href": "/admin/vorlagen/datei/social/social-1092.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1093.webp",
+    "href": "/admin/vorlagen/datei/social/social-1093.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1094.webp",
+    "href": "/admin/vorlagen/datei/social/social-1094.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1848,12 +14275,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 12 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-140.webp",
-    "href": "/admin/vorlagen/datei/social/social-140.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1095.webp",
+    "href": "/admin/vorlagen/datei/social/social-1095.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1096.webp",
+    "href": "/admin/vorlagen/datei/social/social-1096.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1097.webp",
+    "href": "/admin/vorlagen/datei/social/social-1097.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1098.webp",
+    "href": "/admin/vorlagen/datei/social/social-1098.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1861,12 +14327,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 13 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-141.webp",
-    "href": "/admin/vorlagen/datei/social/social-141.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1099.webp",
+    "href": "/admin/vorlagen/datei/social/social-1099.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1100.webp",
+    "href": "/admin/vorlagen/datei/social/social-1100.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1101.webp",
+    "href": "/admin/vorlagen/datei/social/social-1101.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1102.webp",
+    "href": "/admin/vorlagen/datei/social/social-1102.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -1874,12 +14379,675 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 14 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-142.webp",
-    "href": "/admin/vorlagen/datei/social/social-142.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1103.webp",
+    "href": "/admin/vorlagen/datei/social/social-1103.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1104.webp",
+    "href": "/admin/vorlagen/datei/social/social-1104.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1105.webp",
+    "href": "/admin/vorlagen/datei/social/social-1105.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1106.webp",
+    "href": "/admin/vorlagen/datei/social/social-1106.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1107.webp",
+    "href": "/admin/vorlagen/datei/social/social-1107.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1108.webp",
+    "href": "/admin/vorlagen/datei/social/social-1108.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1109.webp",
+    "href": "/admin/vorlagen/datei/social/social-1109.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1110.webp",
+    "href": "/admin/vorlagen/datei/social/social-1110.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1111.webp",
+    "href": "/admin/vorlagen/datei/social/social-1111.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1112.webp",
+    "href": "/admin/vorlagen/datei/social/social-1112.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1113.webp",
+    "href": "/admin/vorlagen/datei/social/social-1113.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1114.webp",
+    "href": "/admin/vorlagen/datei/social/social-1114.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1115.webp",
+    "href": "/admin/vorlagen/datei/social/social-1115.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1116.webp",
+    "href": "/admin/vorlagen/datei/social/social-1116.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1117.webp",
+    "href": "/admin/vorlagen/datei/social/social-1117.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1118.webp",
+    "href": "/admin/vorlagen/datei/social/social-1118.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1119.webp",
+    "href": "/admin/vorlagen/datei/social/social-1119.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1120.webp",
+    "href": "/admin/vorlagen/datei/social/social-1120.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1121.webp",
+    "href": "/admin/vorlagen/datei/social/social-1121.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1122.webp",
+    "href": "/admin/vorlagen/datei/social/social-1122.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1123.webp",
+    "href": "/admin/vorlagen/datei/social/social-1123.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1124.webp",
+    "href": "/admin/vorlagen/datei/social/social-1124.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1125.webp",
+    "href": "/admin/vorlagen/datei/social/social-1125.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1126.webp",
+    "href": "/admin/vorlagen/datei/social/social-1126.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1127.webp",
+    "href": "/admin/vorlagen/datei/social/social-1127.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1128.webp",
+    "href": "/admin/vorlagen/datei/social/social-1128.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1129.webp",
+    "href": "/admin/vorlagen/datei/social/social-1129.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1130.webp",
+    "href": "/admin/vorlagen/datei/social/social-1130.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1131.webp",
+    "href": "/admin/vorlagen/datei/social/social-1131.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1132.webp",
+    "href": "/admin/vorlagen/datei/social/social-1132.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1133.webp",
+    "href": "/admin/vorlagen/datei/social/social-1133.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1134.webp",
+    "href": "/admin/vorlagen/datei/social/social-1134.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1135.webp",
+    "href": "/admin/vorlagen/datei/social/social-1135.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1136.webp",
+    "href": "/admin/vorlagen/datei/social/social-1136.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1137.webp",
+    "href": "/admin/vorlagen/datei/social/social-1137.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1138.webp",
+    "href": "/admin/vorlagen/datei/social/social-1138.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1139.webp",
+    "href": "/admin/vorlagen/datei/social/social-1139.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1140.webp",
+    "href": "/admin/vorlagen/datei/social/social-1140.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1141.webp",
+    "href": "/admin/vorlagen/datei/social/social-1141.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1142.webp",
+    "href": "/admin/vorlagen/datei/social/social-1142.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1143.webp",
+    "href": "/admin/vorlagen/datei/social/social-1143.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1144.webp",
+    "href": "/admin/vorlagen/datei/social/social-1144.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1145.webp",
+    "href": "/admin/vorlagen/datei/social/social-1145.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1146.webp",
+    "href": "/admin/vorlagen/datei/social/social-1146.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1147.webp",
+    "href": "/admin/vorlagen/datei/social/social-1147.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1148.webp",
+    "href": "/admin/vorlagen/datei/social/social-1148.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis hell · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1149.webp",
+    "href": "/admin/vorlagen/datei/social/social-1149.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1150.webp",
+    "href": "/admin/vorlagen/datei/social/social-1150.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 · 4:5",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1151.webp",
+    "href": "/admin/vorlagen/datei/social/social-1151.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1152.webp",
+    "href": "/admin/vorlagen/datei/social/social-1152.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1153.webp",
+    "href": "/admin/vorlagen/datei/social/social-1153.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 01 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1154.webp",
+    "href": "/admin/vorlagen/datei/social/social-1154.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1887,12 +15055,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 01 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-143.webp",
-    "href": "/admin/vorlagen/datei/social/social-143.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1155.webp",
+    "href": "/admin/vorlagen/datei/social/social-1155.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1156.webp",
+    "href": "/admin/vorlagen/datei/social/social-1156.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1157.webp",
+    "href": "/admin/vorlagen/datei/social/social-1157.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 02 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1158.webp",
+    "href": "/admin/vorlagen/datei/social/social-1158.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1900,12 +15107,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 02 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-144.webp",
-    "href": "/admin/vorlagen/datei/social/social-144.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1159.webp",
+    "href": "/admin/vorlagen/datei/social/social-1159.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1160.webp",
+    "href": "/admin/vorlagen/datei/social/social-1160.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1161.webp",
+    "href": "/admin/vorlagen/datei/social/social-1161.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1162.webp",
+    "href": "/admin/vorlagen/datei/social/social-1162.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1913,12 +15159,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 03 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-145.webp",
-    "href": "/admin/vorlagen/datei/social/social-145.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1163.webp",
+    "href": "/admin/vorlagen/datei/social/social-1163.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1164.webp",
+    "href": "/admin/vorlagen/datei/social/social-1164.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1165.webp",
+    "href": "/admin/vorlagen/datei/social/social-1165.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1166.webp",
+    "href": "/admin/vorlagen/datei/social/social-1166.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1926,12 +15211,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 04 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-146.webp",
-    "href": "/admin/vorlagen/datei/social/social-146.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1167.webp",
+    "href": "/admin/vorlagen/datei/social/social-1167.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1168.webp",
+    "href": "/admin/vorlagen/datei/social/social-1168.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1169.webp",
+    "href": "/admin/vorlagen/datei/social/social-1169.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1170.webp",
+    "href": "/admin/vorlagen/datei/social/social-1170.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1939,12 +15263,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 05 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-147.webp",
-    "href": "/admin/vorlagen/datei/social/social-147.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1171.webp",
+    "href": "/admin/vorlagen/datei/social/social-1171.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1172.webp",
+    "href": "/admin/vorlagen/datei/social/social-1172.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1173.webp",
+    "href": "/admin/vorlagen/datei/social/social-1173.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1174.webp",
+    "href": "/admin/vorlagen/datei/social/social-1174.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1952,12 +15315,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 06 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-148.webp",
-    "href": "/admin/vorlagen/datei/social/social-148.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1175.webp",
+    "href": "/admin/vorlagen/datei/social/social-1175.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1176.webp",
+    "href": "/admin/vorlagen/datei/social/social-1176.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1177.webp",
+    "href": "/admin/vorlagen/datei/social/social-1177.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1178.webp",
+    "href": "/admin/vorlagen/datei/social/social-1178.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1965,12 +15367,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 07 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-149.webp",
-    "href": "/admin/vorlagen/datei/social/social-149.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1179.webp",
+    "href": "/admin/vorlagen/datei/social/social-1179.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1180.webp",
+    "href": "/admin/vorlagen/datei/social/social-1180.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1181.webp",
+    "href": "/admin/vorlagen/datei/social/social-1181.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1182.webp",
+    "href": "/admin/vorlagen/datei/social/social-1182.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1978,12 +15419,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 08 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-150.webp",
-    "href": "/admin/vorlagen/datei/social/social-150.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1183.webp",
+    "href": "/admin/vorlagen/datei/social/social-1183.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1184.webp",
+    "href": "/admin/vorlagen/datei/social/social-1184.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1185.webp",
+    "href": "/admin/vorlagen/datei/social/social-1185.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1186.webp",
+    "href": "/admin/vorlagen/datei/social/social-1186.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -1991,12 +15471,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 09 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-151.webp",
-    "href": "/admin/vorlagen/datei/social/social-151.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1187.webp",
+    "href": "/admin/vorlagen/datei/social/social-1187.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1188.webp",
+    "href": "/admin/vorlagen/datei/social/social-1188.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1189.webp",
+    "href": "/admin/vorlagen/datei/social/social-1189.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1190.webp",
+    "href": "/admin/vorlagen/datei/social/social-1190.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2004,12 +15523,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 10 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-152.webp",
-    "href": "/admin/vorlagen/datei/social/social-152.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1191.webp",
+    "href": "/admin/vorlagen/datei/social/social-1191.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1192.webp",
+    "href": "/admin/vorlagen/datei/social/social-1192.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1193.webp",
+    "href": "/admin/vorlagen/datei/social/social-1193.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1194.webp",
+    "href": "/admin/vorlagen/datei/social/social-1194.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2017,12 +15575,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 11 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-153.webp",
-    "href": "/admin/vorlagen/datei/social/social-153.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1195.webp",
+    "href": "/admin/vorlagen/datei/social/social-1195.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1196.webp",
+    "href": "/admin/vorlagen/datei/social/social-1196.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1197.webp",
+    "href": "/admin/vorlagen/datei/social/social-1197.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1198.webp",
+    "href": "/admin/vorlagen/datei/social/social-1198.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2030,12 +15627,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 12 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-154.webp",
-    "href": "/admin/vorlagen/datei/social/social-154.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1199.webp",
+    "href": "/admin/vorlagen/datei/social/social-1199.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1200.webp",
+    "href": "/admin/vorlagen/datei/social/social-1200.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1201.webp",
+    "href": "/admin/vorlagen/datei/social/social-1201.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1202.webp",
+    "href": "/admin/vorlagen/datei/social/social-1202.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2043,12 +15679,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 13 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-155.webp",
-    "href": "/admin/vorlagen/datei/social/social-155.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1203.webp",
+    "href": "/admin/vorlagen/datei/social/social-1203.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1204.webp",
+    "href": "/admin/vorlagen/datei/social/social-1204.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1205.webp",
+    "href": "/admin/vorlagen/datei/social/social-1205.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1206.webp",
+    "href": "/admin/vorlagen/datei/social/social-1206.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2056,12 +15731,678 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Zitat 14 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-156.webp",
-    "href": "/admin/vorlagen/datei/social/social-156.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1207.webp",
+    "href": "/admin/vorlagen/datei/social/social-1207.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1208.webp",
+    "href": "/admin/vorlagen/datei/social/social-1208.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1209.webp",
+    "href": "/admin/vorlagen/datei/social/social-1209.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1210.webp",
+    "href": "/admin/vorlagen/datei/social/social-1210.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1211.webp",
+    "href": "/admin/vorlagen/datei/social/social-1211.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1212.webp",
+    "href": "/admin/vorlagen/datei/social/social-1212.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1213.webp",
+    "href": "/admin/vorlagen/datei/social/social-1213.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1214.webp",
+    "href": "/admin/vorlagen/datei/social/social-1214.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1215.webp",
+    "href": "/admin/vorlagen/datei/social/social-1215.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1216.webp",
+    "href": "/admin/vorlagen/datei/social/social-1216.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1217.webp",
+    "href": "/admin/vorlagen/datei/social/social-1217.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1218.webp",
+    "href": "/admin/vorlagen/datei/social/social-1218.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1219.webp",
+    "href": "/admin/vorlagen/datei/social/social-1219.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1220.webp",
+    "href": "/admin/vorlagen/datei/social/social-1220.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1221.webp",
+    "href": "/admin/vorlagen/datei/social/social-1221.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1222.webp",
+    "href": "/admin/vorlagen/datei/social/social-1222.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1223.webp",
+    "href": "/admin/vorlagen/datei/social/social-1223.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1224.webp",
+    "href": "/admin/vorlagen/datei/social/social-1224.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1225.webp",
+    "href": "/admin/vorlagen/datei/social/social-1225.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1226.webp",
+    "href": "/admin/vorlagen/datei/social/social-1226.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1227.webp",
+    "href": "/admin/vorlagen/datei/social/social-1227.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1228.webp",
+    "href": "/admin/vorlagen/datei/social/social-1228.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1229.webp",
+    "href": "/admin/vorlagen/datei/social/social-1229.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1230.webp",
+    "href": "/admin/vorlagen/datei/social/social-1230.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1231.webp",
+    "href": "/admin/vorlagen/datei/social/social-1231.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1232.webp",
+    "href": "/admin/vorlagen/datei/social/social-1232.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1233.webp",
+    "href": "/admin/vorlagen/datei/social/social-1233.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1234.webp",
+    "href": "/admin/vorlagen/datei/social/social-1234.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1235.webp",
+    "href": "/admin/vorlagen/datei/social/social-1235.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1236.webp",
+    "href": "/admin/vorlagen/datei/social/social-1236.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1237.webp",
+    "href": "/admin/vorlagen/datei/social/social-1237.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1238.webp",
+    "href": "/admin/vorlagen/datei/social/social-1238.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1239.webp",
+    "href": "/admin/vorlagen/datei/social/social-1239.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1240.webp",
+    "href": "/admin/vorlagen/datei/social/social-1240.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1241.webp",
+    "href": "/admin/vorlagen/datei/social/social-1241.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1242.webp",
+    "href": "/admin/vorlagen/datei/social/social-1242.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1243.webp",
+    "href": "/admin/vorlagen/datei/social/social-1243.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1244.webp",
+    "href": "/admin/vorlagen/datei/social/social-1244.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1245.webp",
+    "href": "/admin/vorlagen/datei/social/social-1245.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1246.webp",
+    "href": "/admin/vorlagen/datei/social/social-1246.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1247.webp",
+    "href": "/admin/vorlagen/datei/social/social-1247.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1248.webp",
+    "href": "/admin/vorlagen/datei/social/social-1248.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1249.webp",
+    "href": "/admin/vorlagen/datei/social/social-1249.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1250.webp",
+    "href": "/admin/vorlagen/datei/social/social-1250.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  }
+];
+
+const vorlagenAssets5: VorlagenAsset[] = [
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1251.webp",
+    "href": "/admin/vorlagen/datei/social/social-1251.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1252.webp",
+    "href": "/admin/vorlagen/datei/social/social-1252.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1253.webp",
+    "href": "/admin/vorlagen/datei/social/social-1253.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1254.webp",
+    "href": "/admin/vorlagen/datei/social/social-1254.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1255.webp",
+    "href": "/admin/vorlagen/datei/social/social-1255.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1256.webp",
+    "href": "/admin/vorlagen/datei/social/social-1256.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1257.webp",
+    "href": "/admin/vorlagen/datei/social/social-1257.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1258.webp",
+    "href": "/admin/vorlagen/datei/social/social-1258.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2069,12 +16410,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-157.webp",
-    "href": "/admin/vorlagen/datei/social/social-157.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1259.webp",
+    "href": "/admin/vorlagen/datei/social/social-1259.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1260.webp",
+    "href": "/admin/vorlagen/datei/social/social-1260.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1261.webp",
+    "href": "/admin/vorlagen/datei/social/social-1261.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1262.webp",
+    "href": "/admin/vorlagen/datei/social/social-1262.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2082,12 +16462,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-158.webp",
-    "href": "/admin/vorlagen/datei/social/social-158.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1263.webp",
+    "href": "/admin/vorlagen/datei/social/social-1263.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1264.webp",
+    "href": "/admin/vorlagen/datei/social/social-1264.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1265.webp",
+    "href": "/admin/vorlagen/datei/social/social-1265.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1266.webp",
+    "href": "/admin/vorlagen/datei/social/social-1266.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2095,12 +16514,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-159.webp",
-    "href": "/admin/vorlagen/datei/social/social-159.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1267.webp",
+    "href": "/admin/vorlagen/datei/social/social-1267.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1268.webp",
+    "href": "/admin/vorlagen/datei/social/social-1268.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1269.webp",
+    "href": "/admin/vorlagen/datei/social/social-1269.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1270.webp",
+    "href": "/admin/vorlagen/datei/social/social-1270.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2108,12 +16566,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-160.webp",
-    "href": "/admin/vorlagen/datei/social/social-160.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1271.webp",
+    "href": "/admin/vorlagen/datei/social/social-1271.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1272.webp",
+    "href": "/admin/vorlagen/datei/social/social-1272.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1273.webp",
+    "href": "/admin/vorlagen/datei/social/social-1273.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1274.webp",
+    "href": "/admin/vorlagen/datei/social/social-1274.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2121,12 +16618,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-161.webp",
-    "href": "/admin/vorlagen/datei/social/social-161.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1275.webp",
+    "href": "/admin/vorlagen/datei/social/social-1275.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1276.webp",
+    "href": "/admin/vorlagen/datei/social/social-1276.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1277.webp",
+    "href": "/admin/vorlagen/datei/social/social-1277.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1278.webp",
+    "href": "/admin/vorlagen/datei/social/social-1278.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2134,12 +16670,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-162.webp",
-    "href": "/admin/vorlagen/datei/social/social-162.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1279.webp",
+    "href": "/admin/vorlagen/datei/social/social-1279.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1280.webp",
+    "href": "/admin/vorlagen/datei/social/social-1280.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1281.webp",
+    "href": "/admin/vorlagen/datei/social/social-1281.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1282.webp",
+    "href": "/admin/vorlagen/datei/social/social-1282.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2147,12 +16722,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-163.webp",
-    "href": "/admin/vorlagen/datei/social/social-163.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1283.webp",
+    "href": "/admin/vorlagen/datei/social/social-1283.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1284.webp",
+    "href": "/admin/vorlagen/datei/social/social-1284.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1285.webp",
+    "href": "/admin/vorlagen/datei/social/social-1285.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1286.webp",
+    "href": "/admin/vorlagen/datei/social/social-1286.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2160,12 +16774,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-164.webp",
-    "href": "/admin/vorlagen/datei/social/social-164.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1287.webp",
+    "href": "/admin/vorlagen/datei/social/social-1287.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1288.webp",
+    "href": "/admin/vorlagen/datei/social/social-1288.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1289.webp",
+    "href": "/admin/vorlagen/datei/social/social-1289.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1290.webp",
+    "href": "/admin/vorlagen/datei/social/social-1290.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2173,12 +16826,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-165.webp",
-    "href": "/admin/vorlagen/datei/social/social-165.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1291.webp",
+    "href": "/admin/vorlagen/datei/social/social-1291.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1292.webp",
+    "href": "/admin/vorlagen/datei/social/social-1292.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1293.webp",
+    "href": "/admin/vorlagen/datei/social/social-1293.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1294.webp",
+    "href": "/admin/vorlagen/datei/social/social-1294.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2186,12 +16878,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-166.webp",
-    "href": "/admin/vorlagen/datei/social/social-166.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1295.webp",
+    "href": "/admin/vorlagen/datei/social/social-1295.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1296.webp",
+    "href": "/admin/vorlagen/datei/social/social-1296.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1297.webp",
+    "href": "/admin/vorlagen/datei/social/social-1297.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1298.webp",
+    "href": "/admin/vorlagen/datei/social/social-1298.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2199,12 +16930,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-167.webp",
-    "href": "/admin/vorlagen/datei/social/social-167.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1299.webp",
+    "href": "/admin/vorlagen/datei/social/social-1299.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1300.webp",
+    "href": "/admin/vorlagen/datei/social/social-1300.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1301.webp",
+    "href": "/admin/vorlagen/datei/social/social-1301.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1302.webp",
+    "href": "/admin/vorlagen/datei/social/social-1302.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2212,12 +16982,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-168.webp",
-    "href": "/admin/vorlagen/datei/social/social-168.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1303.webp",
+    "href": "/admin/vorlagen/datei/social/social-1303.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1304.webp",
+    "href": "/admin/vorlagen/datei/social/social-1304.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1305.webp",
+    "href": "/admin/vorlagen/datei/social/social-1305.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1306.webp",
+    "href": "/admin/vorlagen/datei/social/social-1306.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2225,12 +17034,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-169.webp",
-    "href": "/admin/vorlagen/datei/social/social-169.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1307.webp",
+    "href": "/admin/vorlagen/datei/social/social-1307.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1308.webp",
+    "href": "/admin/vorlagen/datei/social/social-1308.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 tuerkis hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1309.webp",
+    "href": "/admin/vorlagen/datei/social/social-1309.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 tuerkis · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1310.webp",
+    "href": "/admin/vorlagen/datei/social/social-1310.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
     }
   },
   {
@@ -2238,12 +17086,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-170.webp",
-    "href": "/admin/vorlagen/datei/social/social-170.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1311.webp",
+    "href": "/admin/vorlagen/datei/social/social-1311.webp",
     "masse": {
       "label": "1:1",
-      "w": 2160,
-      "h": 2160
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1312.webp",
+    "href": "/admin/vorlagen/datei/social/social-1312.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1313.webp",
+    "href": "/admin/vorlagen/datei/social/social-1313.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1314.webp",
+    "href": "/admin/vorlagen/datei/social/social-1314.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2251,12 +17138,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-171.webp",
-    "href": "/admin/vorlagen/datei/social/social-171.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1315.webp",
+    "href": "/admin/vorlagen/datei/social/social-1315.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1316.webp",
+    "href": "/admin/vorlagen/datei/social/social-1316.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1317.webp",
+    "href": "/admin/vorlagen/datei/social/social-1317.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1318.webp",
+    "href": "/admin/vorlagen/datei/social/social-1318.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2264,12 +17190,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-172.webp",
-    "href": "/admin/vorlagen/datei/social/social-172.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1319.webp",
+    "href": "/admin/vorlagen/datei/social/social-1319.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1320.webp",
+    "href": "/admin/vorlagen/datei/social/social-1320.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1321.webp",
+    "href": "/admin/vorlagen/datei/social/social-1321.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1322.webp",
+    "href": "/admin/vorlagen/datei/social/social-1322.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2277,12 +17242,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-173.webp",
-    "href": "/admin/vorlagen/datei/social/social-173.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1323.webp",
+    "href": "/admin/vorlagen/datei/social/social-1323.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1324.webp",
+    "href": "/admin/vorlagen/datei/social/social-1324.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1325.webp",
+    "href": "/admin/vorlagen/datei/social/social-1325.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1326.webp",
+    "href": "/admin/vorlagen/datei/social/social-1326.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2290,12 +17294,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-174.webp",
-    "href": "/admin/vorlagen/datei/social/social-174.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1327.webp",
+    "href": "/admin/vorlagen/datei/social/social-1327.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1328.webp",
+    "href": "/admin/vorlagen/datei/social/social-1328.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1329.webp",
+    "href": "/admin/vorlagen/datei/social/social-1329.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1330.webp",
+    "href": "/admin/vorlagen/datei/social/social-1330.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2303,12 +17346,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-175.webp",
-    "href": "/admin/vorlagen/datei/social/social-175.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1331.webp",
+    "href": "/admin/vorlagen/datei/social/social-1331.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1332.webp",
+    "href": "/admin/vorlagen/datei/social/social-1332.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1333.webp",
+    "href": "/admin/vorlagen/datei/social/social-1333.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1334.webp",
+    "href": "/admin/vorlagen/datei/social/social-1334.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2316,12 +17398,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-176.webp",
-    "href": "/admin/vorlagen/datei/social/social-176.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1335.webp",
+    "href": "/admin/vorlagen/datei/social/social-1335.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1336.webp",
+    "href": "/admin/vorlagen/datei/social/social-1336.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1337.webp",
+    "href": "/admin/vorlagen/datei/social/social-1337.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1338.webp",
+    "href": "/admin/vorlagen/datei/social/social-1338.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2329,12 +17450,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-177.webp",
-    "href": "/admin/vorlagen/datei/social/social-177.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1339.webp",
+    "href": "/admin/vorlagen/datei/social/social-1339.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1340.webp",
+    "href": "/admin/vorlagen/datei/social/social-1340.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1341.webp",
+    "href": "/admin/vorlagen/datei/social/social-1341.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1342.webp",
+    "href": "/admin/vorlagen/datei/social/social-1342.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2342,12 +17502,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-178.webp",
-    "href": "/admin/vorlagen/datei/social/social-178.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1343.webp",
+    "href": "/admin/vorlagen/datei/social/social-1343.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1344.webp",
+    "href": "/admin/vorlagen/datei/social/social-1344.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1345.webp",
+    "href": "/admin/vorlagen/datei/social/social-1345.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1346.webp",
+    "href": "/admin/vorlagen/datei/social/social-1346.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2355,12 +17554,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-179.webp",
-    "href": "/admin/vorlagen/datei/social/social-179.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1347.webp",
+    "href": "/admin/vorlagen/datei/social/social-1347.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1348.webp",
+    "href": "/admin/vorlagen/datei/social/social-1348.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1349.webp",
+    "href": "/admin/vorlagen/datei/social/social-1349.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1350.webp",
+    "href": "/admin/vorlagen/datei/social/social-1350.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2368,12 +17606,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-180.webp",
-    "href": "/admin/vorlagen/datei/social/social-180.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1351.webp",
+    "href": "/admin/vorlagen/datei/social/social-1351.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1352.webp",
+    "href": "/admin/vorlagen/datei/social/social-1352.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1353.webp",
+    "href": "/admin/vorlagen/datei/social/social-1353.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1354.webp",
+    "href": "/admin/vorlagen/datei/social/social-1354.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2381,12 +17658,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-181.webp",
-    "href": "/admin/vorlagen/datei/social/social-181.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1355.webp",
+    "href": "/admin/vorlagen/datei/social/social-1355.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1356.webp",
+    "href": "/admin/vorlagen/datei/social/social-1356.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1357.webp",
+    "href": "/admin/vorlagen/datei/social/social-1357.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1358.webp",
+    "href": "/admin/vorlagen/datei/social/social-1358.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2394,12 +17710,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-182.webp",
-    "href": "/admin/vorlagen/datei/social/social-182.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1359.webp",
+    "href": "/admin/vorlagen/datei/social/social-1359.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1360.webp",
+    "href": "/admin/vorlagen/datei/social/social-1360.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1361.webp",
+    "href": "/admin/vorlagen/datei/social/social-1361.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1362.webp",
+    "href": "/admin/vorlagen/datei/social/social-1362.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2407,12 +17762,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-183.webp",
-    "href": "/admin/vorlagen/datei/social/social-183.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1363.webp",
+    "href": "/admin/vorlagen/datei/social/social-1363.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1364.webp",
+    "href": "/admin/vorlagen/datei/social/social-1364.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 tuerkis hell · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1365.webp",
+    "href": "/admin/vorlagen/datei/social/social-1365.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 tuerkis · 4:5",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1366.webp",
+    "href": "/admin/vorlagen/datei/social/social-1366.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
     }
   },
   {
@@ -2420,12 +17814,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-184.webp",
-    "href": "/admin/vorlagen/datei/social/social-184.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1367.webp",
+    "href": "/admin/vorlagen/datei/social/social-1367.webp",
     "masse": {
       "label": "4:5",
-      "w": 2160,
-      "h": 2700
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1368.webp",
+    "href": "/admin/vorlagen/datei/social/social-1368.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1369.webp",
+    "href": "/admin/vorlagen/datei/social/social-1369.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1370.webp",
+    "href": "/admin/vorlagen/datei/social/social-1370.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2433,12 +17866,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-185.webp",
-    "href": "/admin/vorlagen/datei/social/social-185.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1371.webp",
+    "href": "/admin/vorlagen/datei/social/social-1371.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1372.webp",
+    "href": "/admin/vorlagen/datei/social/social-1372.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1373.webp",
+    "href": "/admin/vorlagen/datei/social/social-1373.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 02 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1374.webp",
+    "href": "/admin/vorlagen/datei/social/social-1374.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2446,12 +17918,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-186.webp",
-    "href": "/admin/vorlagen/datei/social/social-186.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1375.webp",
+    "href": "/admin/vorlagen/datei/social/social-1375.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1376.webp",
+    "href": "/admin/vorlagen/datei/social/social-1376.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1377.webp",
+    "href": "/admin/vorlagen/datei/social/social-1377.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 03 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1378.webp",
+    "href": "/admin/vorlagen/datei/social/social-1378.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2459,12 +17970,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-187.webp",
-    "href": "/admin/vorlagen/datei/social/social-187.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1379.webp",
+    "href": "/admin/vorlagen/datei/social/social-1379.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1380.webp",
+    "href": "/admin/vorlagen/datei/social/social-1380.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1381.webp",
+    "href": "/admin/vorlagen/datei/social/social-1381.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 04 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1382.webp",
+    "href": "/admin/vorlagen/datei/social/social-1382.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2472,12 +18022,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-188.webp",
-    "href": "/admin/vorlagen/datei/social/social-188.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1383.webp",
+    "href": "/admin/vorlagen/datei/social/social-1383.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1384.webp",
+    "href": "/admin/vorlagen/datei/social/social-1384.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1385.webp",
+    "href": "/admin/vorlagen/datei/social/social-1385.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 05 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1386.webp",
+    "href": "/admin/vorlagen/datei/social/social-1386.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2485,12 +18074,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-189.webp",
-    "href": "/admin/vorlagen/datei/social/social-189.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1387.webp",
+    "href": "/admin/vorlagen/datei/social/social-1387.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1388.webp",
+    "href": "/admin/vorlagen/datei/social/social-1388.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1389.webp",
+    "href": "/admin/vorlagen/datei/social/social-1389.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 06 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1390.webp",
+    "href": "/admin/vorlagen/datei/social/social-1390.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2498,12 +18126,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-190.webp",
-    "href": "/admin/vorlagen/datei/social/social-190.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1391.webp",
+    "href": "/admin/vorlagen/datei/social/social-1391.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1392.webp",
+    "href": "/admin/vorlagen/datei/social/social-1392.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1393.webp",
+    "href": "/admin/vorlagen/datei/social/social-1393.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 07 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1394.webp",
+    "href": "/admin/vorlagen/datei/social/social-1394.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2511,12 +18178,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-191.webp",
-    "href": "/admin/vorlagen/datei/social/social-191.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1395.webp",
+    "href": "/admin/vorlagen/datei/social/social-1395.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1396.webp",
+    "href": "/admin/vorlagen/datei/social/social-1396.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1397.webp",
+    "href": "/admin/vorlagen/datei/social/social-1397.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 08 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1398.webp",
+    "href": "/admin/vorlagen/datei/social/social-1398.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2524,12 +18230,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-192.webp",
-    "href": "/admin/vorlagen/datei/social/social-192.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1399.webp",
+    "href": "/admin/vorlagen/datei/social/social-1399.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1400.webp",
+    "href": "/admin/vorlagen/datei/social/social-1400.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1401.webp",
+    "href": "/admin/vorlagen/datei/social/social-1401.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 09 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1402.webp",
+    "href": "/admin/vorlagen/datei/social/social-1402.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2537,12 +18282,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-193.webp",
-    "href": "/admin/vorlagen/datei/social/social-193.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1403.webp",
+    "href": "/admin/vorlagen/datei/social/social-1403.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1404.webp",
+    "href": "/admin/vorlagen/datei/social/social-1404.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1405.webp",
+    "href": "/admin/vorlagen/datei/social/social-1405.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 10 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1406.webp",
+    "href": "/admin/vorlagen/datei/social/social-1406.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2550,12 +18334,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-194.webp",
-    "href": "/admin/vorlagen/datei/social/social-194.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1407.webp",
+    "href": "/admin/vorlagen/datei/social/social-1407.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1408.webp",
+    "href": "/admin/vorlagen/datei/social/social-1408.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1409.webp",
+    "href": "/admin/vorlagen/datei/social/social-1409.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 11 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1410.webp",
+    "href": "/admin/vorlagen/datei/social/social-1410.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2563,12 +18386,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-195.webp",
-    "href": "/admin/vorlagen/datei/social/social-195.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1411.webp",
+    "href": "/admin/vorlagen/datei/social/social-1411.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1412.webp",
+    "href": "/admin/vorlagen/datei/social/social-1412.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1413.webp",
+    "href": "/admin/vorlagen/datei/social/social-1413.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 12 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1414.webp",
+    "href": "/admin/vorlagen/datei/social/social-1414.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2576,12 +18438,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-196.webp",
-    "href": "/admin/vorlagen/datei/social/social-196.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1415.webp",
+    "href": "/admin/vorlagen/datei/social/social-1415.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1416.webp",
+    "href": "/admin/vorlagen/datei/social/social-1416.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1417.webp",
+    "href": "/admin/vorlagen/datei/social/social-1417.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 13 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1418.webp",
+    "href": "/admin/vorlagen/datei/social/social-1418.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2589,12 +18490,51 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-197.webp",
-    "href": "/admin/vorlagen/datei/social/social-197.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1419.webp",
+    "href": "/admin/vorlagen/datei/social/social-1419.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1420.webp",
+    "href": "/admin/vorlagen/datei/social/social-1420.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 tuerkis hell · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1421.webp",
+    "href": "/admin/vorlagen/datei/social/social-1421.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 14 tuerkis · 9:16",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1422.webp",
+    "href": "/admin/vorlagen/datei/social/social-1422.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -2602,12 +18542,12 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-198.webp",
-    "href": "/admin/vorlagen/datei/social/social-198.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1423.webp",
+    "href": "/admin/vorlagen/datei/social/social-1423.webp",
     "masse": {
       "label": "9:16",
-      "w": 2160,
-      "h": 3840
+      "w": 1080,
+      "h": 1920
     }
   },
   {
@@ -5800,7 +21740,10 @@ export const vorlagenAssets: VorlagenAsset[] = [
       }
     ],
     "caption": "Ein Bild fühlt sich an wie ein Beweis, obwohl es nur ein Ausschnitt ist – gewählt von jemandem, mit einer Absicht. Der Rahmen entscheidet, ob dasselbe Ereignis friedlich oder bedrohlich wirkt. Schau ein emotionales Video einmal ohne Ton und urteile aus dem Rest. #bilder #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #fakenews #klardenken #werdemeisterdeinergedanken #wahrnehmung"
-  },
+  }
+];
+
+const vorlagenAssets6: VorlagenAsset[] = [
   {
     "kategorie": "carousel",
     "titel": "framing",
@@ -13187,4 +29130,14 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
   }
+];
+
+export const vorlagenAssets: VorlagenAsset[] = [
+  ...vorlagenAssets0,
+  ...vorlagenAssets1,
+  ...vorlagenAssets2,
+  ...vorlagenAssets3,
+  ...vorlagenAssets4,
+  ...vorlagenAssets5,
+  ...vorlagenAssets6,
 ];

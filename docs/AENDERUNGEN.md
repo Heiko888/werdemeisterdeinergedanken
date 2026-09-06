@@ -5,6 +5,49 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-05 – Geänderte Profil-Vorlagen in die Vorlagen-Galerie eingepflegt
+
+Der Vorlagen-Katalog (`/admin/vorlagen`) war veraltet: Die neuen bzw.
+überarbeiteten **Profil-/Kanal-Grafiken** aus `docs/marketing/profil/` fehlten
+noch, und gelöschte Quelldateien standen weiterhin als tote Einträge (mit
+kaputten Vorschaubildern) im Katalog. Der Katalog wurde neu erzeugt, sodass die
+Galerie jetzt dem aktuellen Stand von `docs/marketing/` entspricht.
+
+**Geändert:**
+- **`src/lib/vorlagen-assets.ts`** (auto-generiert via `npm run vorlagen:galerie`):
+  Der **Social-Teil** wurde komplett neu aus `docs/marketing/` aufgebaut
+  (198 → **1423** Einträge, u. a. Zitate/Studien-Fakten in allen Formaten). Die
+  Nicht-Social-Einträge (Reels 59, Carousels 203, Workshop 40) blieben
+  **unverändert** übernommen.
+
+**Neu in der Galerie (Profil & Kanal):**
+- **Profilbild Quadrat** und **Profilbild Rund Emblem** – jeweils in den
+  Varianten normal / hell / türkis / türkis-hell.
+
+**Entfernt (tote Einträge, Quelldateien gelöscht):**
+- **Profilbild 1080**, **Profilbild rund 1080**, **Profilbild rund 500**
+  (inkl. hell-Varianten) – zeigten seit dem Löschen der Quell-PNGs ins Leere.
+
+**Build-Fix (Generator):** Bei jetzt >1000 Katalog-Einträgen brach `next build`
+mit dem TypeScript-Fehler *„Expression produces a union type that is too complex
+to represent"* ab. `renderManifest` in **`tools/vorlagen/marketing-carousels.mjs`**
+schreibt den Katalog deshalb in getypte Teil-Arrays (`vorlagenAssets0…N`,
+je 250 Einträge) und setzt das Export-Array `vorlagenAssets` per Spread daraus
+zusammen. Dadurch bleibt jedes einzelne Array-Literal für TypeScript darstellbar.
+Verifiziert per `npm run build` (grün).
+
+**Hinweis zur Reproduktion:** Nur `src/lib/vorlagen-assets.ts` ist versioniert;
+die Binärdateien unter `content/vorlagen/` sind gitignored und liegen auf dem
+Server (`/opt/website-vorlagen`, per Volume gemountet). Sie werden dort mit
+`npm run vorlagen:galerie` reproduzierbar neu erzeugt. Die Quell-Exporte der
+Reels- und Carousel-Generatoren (`docs/reels/covers/export`,
+`docs/carousels/export`) sind ebenfalls gitignored und lagen in dieser
+Arbeitsumgebung nicht vor – deshalb wurden **nur die geänderten Social-Vorlagen
+neu erzeugt** und die übrigen Katalog-Einträge aus dem bisherigen Stand
+beibehalten, damit keine Reels/Carousels aus dem Katalog verschwinden.
+
+---
+
 ## 2026-09-04 – Hero-Text auf der rechten Seite linksbündig
 
 Der Hero-Text, der im Spotlight-Aufbau auf der **rechten** Seite sitzt, wird
