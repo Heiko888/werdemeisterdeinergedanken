@@ -17,6 +17,7 @@ import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { HANDLE, GRAD, FORMAT, FORMATS, loadCarousels } from "./data.mjs";
+import { palette, THEMES, THEME_SUFFIX } from "../reels/covers/data.mjs";
 import { ARROW } from "../_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -24,9 +25,46 @@ const BUILD = join(HERE, "build");
 const COVERS = join(HERE, "..", "reels", "covers");
 
 // Geteilte Assets aus dem Cover-Studio übernehmen (nicht doppelt versionieren).
+// Beide Seiten-Gehirne (Türkis + Gold) – je Farbwelt das passende (P.brain).
 mkdirSync(BUILD, { recursive: true });
 copyFileSync(join(COVERS, "_fonts.css"), join(HERE, "_fonts.css"));
 copyFileSync(join(COVERS, "logo.png"), join(HERE, "logo.png"));
+copyFileSync(join(COVERS, "logo-gold.png"), join(HERE, "logo-gold.png"));
+
+// Aus der Reels-`palette(theme)` die vier Farbwelten ableiten und die
+// zusätzlichen Carousel-Rollen (Karten, Partikel, Scrim …) daraus bilden – so
+// sehen Carousels und Reel-Cover aus einer Welt.
+function carTokens(theme) {
+  const P = palette(theme);
+  const hell = P.hell;
+  const accentSolid = P.teal
+    ? (hell ? "#0f766e" : "#34c4c4")
+    : (hell ? "#b8860b" : "#e6c15a");
+  const inkSoft = hell ? "rgba(22,35,31,.9)" : "rgba(240,245,252,.94)";
+  const muted = P.handle; // welt-abhängiger gedämpfter Ton
+  const cardBg = hell ? "rgba(22,35,31,.05)" : "rgba(255,255,255,.05)";
+  const cardBorder = hell ? "rgba(22,35,31,.12)" : "rgba(255,255,255,.10)";
+  const faint = hell ? "rgba(22,35,31,.06)" : "rgba(255,255,255,.05)"; // .numbg
+  const dotOff = hell ? "rgba(22,35,31,.20)" : "rgba(255,255,255,.22)";
+  // Partikel-Sterne nur auf dunklem Grund; auf Creme wirken sie wie Staub.
+  const particles = hell
+    ? "none"
+    : `radial-gradient(2.4px 2.4px at 18% 22%, rgba(255,255,255,.5), transparent),
+    radial-gradient(1.7px 1.7px at 80% 16%, rgba(185,222,255,.45), transparent),
+    radial-gradient(2.8px 2.8px at 30% 82%, rgba(255,255,255,.4), transparent),
+    radial-gradient(1.6px 1.6px at 88% 70%, rgba(200,240,235,.5), transparent),
+    radial-gradient(2px 2px at 60% 90%, rgba(255,255,255,.34), transparent)`;
+  const scrim = hell
+    ? "linear-gradient(180deg, rgba(246,244,238,.10), rgba(246,244,238,.04) 42%, rgba(246,244,238,.16))"
+    : "linear-gradient(180deg, rgba(6,9,20,.22), rgba(6,9,20,.06) 42%, rgba(6,9,20,.32))";
+  const shadowStrong = hell ? "none" : "drop-shadow(0 6px 30px rgba(0,0,0,.55))";
+  const shadowSoft = hell ? "none" : "drop-shadow(0 4px 22px rgba(0,0,0,.5))";
+  return {
+    ...P, accentSolid, inkSoft, muted, cardBg, cardBorder, faint, dotOff,
+    particles, scrim, shadowStrong, shadowSoft,
+    logoGlow: `rgba(${P.glowRGB},.30)`, dotGlow: `rgba(${P.glowRGB},.5)`,
+  };
+}
 
 const { w: W, h: H } = FORMAT; // 4:5 – für Galerie-Vorschau-Skalierung
 
@@ -40,76 +78,66 @@ function bodyFs(text) {
   return 33;
 }
 
-/** Slide-CSS je Format – Breite/Schrift konstant, nur Höhe + vert. Paddings. */
-const slideCssFor = (F) => `/* Carousel-Slide ${F.key} · generiert */
+/** Slide-CSS je Format + Farbwelt – Breite/Schrift konstant, nur Höhe/Paddings. */
+const slideCssFor = (F, P) => `/* Carousel-Slide ${F.key} · ${P.theme} · generiert */
 *{ margin:0; padding:0; box-sizing:border-box; }
-html,body{ background:#05060c; overflow:hidden; }
+html,body{ background:${P.pageBg}; overflow:hidden; }
 .slide{ position:relative; width:${F.w}px; height:${F.h}px; overflow:hidden;
-  font-family:'Inter',system-ui,sans-serif; color:#f4f7ff; }
+  font-family:'Inter',system-ui,sans-serif; color:${P.ink}; }
 .slide::before{ content:""; position:absolute; inset:0; z-index:0;
-  background:
-    radial-gradient(50% 120% at 88% 12%, rgba(33,178,189,.30), transparent 60%),
-    radial-gradient(46% 120% at 6% 96%, rgba(54,112,238,.24), transparent 60%),
-    radial-gradient(40% 90% at 74% 90%, rgba(140,198,63,.14), transparent 60%),
-    #08102a; }
+  background:${P.bg}; background-size:cover; }
 .slide::after{ content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-  background-image:
-    radial-gradient(2.4px 2.4px at 18% 22%, rgba(255,255,255,.5), transparent),
-    radial-gradient(1.7px 1.7px at 80% 16%, rgba(185,222,255,.45), transparent),
-    radial-gradient(2.8px 2.8px at 30% 82%, rgba(255,255,255,.4), transparent),
-    radial-gradient(1.6px 1.6px at 88% 70%, rgba(200,240,235,.5), transparent),
-    radial-gradient(2px 2px at 60% 90%, rgba(255,255,255,.34), transparent); }
+  background-image:${P.particles}; }
 .bg{ display:none; }
-.scrim{ position:absolute; inset:0; z-index:2;
-  background:linear-gradient(180deg, rgba(8,16,42,.28), rgba(8,16,42,.10) 42%, rgba(8,16,42,.42)); }
+.scrim{ position:absolute; inset:0; z-index:2; background:${P.scrim}; }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
   padding:${F.padTop}px ${F.padX}px ${F.padBottom}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
-.logo{ width:170px; height:auto; filter:drop-shadow(0 4px 22px rgba(52,196,196,.30)); }
+.logo{ width:170px; height:auto; filter:drop-shadow(0 4px 22px ${P.logoGlow}); }
 .tag{ text-align:right; padding-top:6px; font-weight:800; font-size:20px; letter-spacing:.13em;
-  text-transform:uppercase; background:${GRAD};
+  text-transform:uppercase; background:${P.accent};
   -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:22px; }
 .eyebrow{ font-weight:800; font-size:22px; letter-spacing:.15em; text-transform:uppercase;
-  color:#34c4c4; }
+  color:${P.accentSolid}; }
 .headline{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:92px; line-height:1.03;
-  letter-spacing:-1px; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
-.bar{ width:120px; height:6px; border-radius:6px; background:${GRAD}; }
-.sub{ font-size:34px; line-height:1.35; color:#b7c6dc; max-width:80%; }
-.body{ font-family:'Fraunces',Georgia,serif; font-weight:500; line-height:1.32; color:#eef3fb;
-  filter:drop-shadow(0 4px 22px rgba(0,0,0,.5)); }
+  letter-spacing:-1px; filter:${P.shadowStrong}; }
+.bar{ width:120px; height:6px; border-radius:6px; background:${P.accent}; }
+.sub{ font-size:34px; line-height:1.35; color:${P.muted}; max-width:80%; }
+.body{ font-family:'Fraunces',Georgia,serif; font-weight:500; line-height:1.32; color:${P.inkSoft};
+  filter:${P.shadowSoft}; }
 .numbg{ position:absolute; z-index:2; right:44px; top:50%; transform:translateY(-50%);
   font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:460px; line-height:.8;
-  color:rgba(255,255,255,.05); pointer-events:none; }
-.minibar{ width:72px; height:5px; border-radius:5px; background:${GRAD}; }
+  color:${P.faint}; pointer-events:none; }
+.minibar{ width:72px; height:5px; border-radius:5px; background:${P.accent}; }
 .lead{ font-family:'Fraunces',Georgia,serif; font-weight:600; line-height:1.12; letter-spacing:-.5px;
-  color:#f4f7ff; filter:drop-shadow(0 6px 30px rgba(0,0,0,.55)); }
-.body.sec{ color:#c3d1e4; }
-.body b.lbl{ font-weight:800; color:#f4f7ff; }
+  color:${P.ink}; filter:${P.shadowStrong}; }
+.body.sec{ color:${P.muted}; }
+.body b.lbl{ font-weight:800; color:${P.ink}; }
 .clist{ display:flex; flex-direction:column; gap:24px; }
 .cli{ display:flex; gap:22px; align-items:flex-start; }
-.cli .cd{ margin-top:15px; width:16px; height:16px; border-radius:50%; background:${GRAD}; flex:0 0 auto; }
-.cli .ct{ font-size:36px; line-height:1.3; color:#eaf1fb; }
-.cli .ct b{ font-weight:700; color:#fff; font-family:'Fraunces',Georgia,serif; }
-.cnote{ margin-top:22px; font-size:29px; line-height:1.4; color:#a7bad2; font-style:italic; }
+.cli .cd{ margin-top:15px; width:16px; height:16px; border-radius:50%; background:${P.accent}; flex:0 0 auto; }
+.cli .ct{ font-size:36px; line-height:1.3; color:${P.inkSoft}; }
+.cli .ct b{ font-weight:700; color:${P.ink}; font-family:'Fraunces',Georgia,serif; }
+.cnote{ margin-top:22px; font-size:29px; line-height:1.4; color:${P.muted}; font-style:italic; }
 .cards2{ display:flex; gap:26px; }
-.ccard{ flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.10); border-radius:24px; padding:34px 30px; display:flex; flex-direction:column; gap:14px; }
+.ccard{ flex:1; background:${P.cardBg}; border:1px solid ${P.cardBorder}; border-radius:24px; padding:34px 30px; display:flex; flex-direction:column; gap:14px; }
 .ccard h3{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:42px; line-height:1.08; }
-.ccard p{ font-size:29px; line-height:1.34; color:#c8d5e7; }
+.ccard p{ font-size:29px; line-height:1.34; color:${P.muted}; }
 .cta{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:56px; line-height:1.16;
   letter-spacing:-.5px; }
-.cta-action{ margin-top:20px; padding-left:24px; border-left:5px solid; border-image:${GRAD} 1;
-  font-size:31px; line-height:1.38; color:#cfe0d6; font-weight:600; max-width:88%; }
+.cta-action{ margin-top:20px; padding-left:24px; border-left:5px solid; border-image:${P.accent} 1;
+  font-size:31px; line-height:1.38; color:${P.muted}; font-weight:600; max-width:88%; }
 .cta-handle{ margin-top:22px; font-weight:700; font-size:30px; letter-spacing:.02em;
-  background:${GRAD}; -webkit-background-clip:text; background-clip:text;
+  background:${P.accent}; -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent; color:transparent; }
 .foot{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
-.handle{ font-weight:600; font-size:26px; letter-spacing:.03em; color:#9db1cb; }
+.handle{ font-weight:600; font-size:26px; letter-spacing:.03em; color:${P.muted}; }
 .dots{ display:flex; align-items:center; gap:10px; }
-.dot{ width:11px; height:11px; border-radius:50%; background:rgba(255,255,255,.22); }
-.dot.on{ background:${GRAD}; box-shadow:0 0 12px rgba(52,196,196,.5); }
-.count{ font-size:24px; color:#9db1cb; font-variant-numeric:tabular-nums; }
-.swipe{ font-size:26px; color:#9db1cb; font-weight:600; }
+.dot{ width:11px; height:11px; border-radius:50%; background:${P.dotOff}; }
+.dot.on{ background:${P.accent}; box-shadow:0 0 12px ${P.dotGlow}; }
+.count{ font-size:24px; color:${P.muted}; font-variant-numeric:tabular-nums; }
+.swipe{ font-size:26px; color:${P.muted}; font-weight:600; }
 `;
 
 function dots(active, total) {
@@ -199,7 +227,7 @@ function midHtml(car, slide) {
       </div>`;
 }
 
-function slideHtml(car, slide, idx, total, F) {
+function slideHtml(car, slide, idx, total, F, P) {
   const isCover = slide.role === "cover";
   const foot = `<div class="foot">
         <span class="handle">${isCover ? car.seriesLabel : HANDLE}</span>
@@ -210,7 +238,7 @@ function slideHtml(car, slide, idx, total, F) {
   return `<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><title>${car.topic} – Slide ${idx + 1}</title>
 <link rel="stylesheet" href="../../../../_fonts.css">
-<style>${slideCssFor(F)}</style></head>
+<style>${slideCssFor(F, P)}</style></head>
 <body>
   <div class="slide">
     <div class="bg"></div>
@@ -218,7 +246,7 @@ function slideHtml(car, slide, idx, total, F) {
     ${slide.role === "body" && !OV[ovKey(car, slide)] ? `<div class="numbg">${String(idx + 1).padStart(2, "0")}</div>` : ""}
     <div class="content">
       <div class="top">
-        <img class="logo" src="../../../../logo.png" alt="Logo">
+        <img class="logo" src="../../../../${P.brain}" alt="Logo">
         <div class="tag">${car.seriesLabel}</div>
       </div>
       ${midHtml(car, slide)}
@@ -281,10 +309,18 @@ for (const s of data) {
     for (const F of FORMATS) {
       const fdir = join(BUILD, s.key, car.slug, F.key);
       mkdirSync(fdir, { recursive: true });
-      car.slides.forEach((slide, i) => {
-        writeFileSync(join(fdir, `slide-${String(i + 1).padStart(2, "0")}.html`), slideHtml(car, slide, i, total, F));
-        slideCount++;
-      });
+      // Je Format alle vier Farbwelten schreiben (Standard/dunkel = ohne Suffix).
+      for (const theme of THEMES) {
+        const sfx = THEME_SUFFIX[theme];
+        const P = carTokens(theme);
+        car.slides.forEach((slide, i) => {
+          writeFileSync(
+            join(fdir, `slide-${String(i + 1).padStart(2, "0")}${sfx}.html`),
+            slideHtml(car, slide, i, total, F, P),
+          );
+          slideCount++;
+        });
+      }
     }
     // Carousel-Galerie (4:5-Vorschau)
     const cards = car.slides.map((slide, i) =>

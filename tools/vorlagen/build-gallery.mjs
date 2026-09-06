@@ -42,7 +42,7 @@ import {
   FORMAT_META,
   renderManifest,
 } from "./marketing-carousels.mjs";
-import { THEME_SUFFIX, THEME_LABEL } from "../../docs/reels/covers/data.mjs";
+import { THEMES, THEME_SUFFIX, THEME_LABEL } from "../../docs/reels/covers/data.mjs";
 
 // Reverse-Map Datei-Suffix → Farbwelt (z. B. "-tuerkis" → "tuerkis").
 // Längste Suffixe zuerst prüfen, damit "-tuerkis-hell" nicht faelschlich als
@@ -53,6 +53,13 @@ const THEME_BY_SUFFIX = Object.fromEntries(
 const THEME_SUFFIXES_LONGEST_FIRST = Object.values(THEME_SUFFIX)
   .filter(Boolean)
   .sort((a, b) => b.length - a.length);
+
+/** Datei-Suffix einer Slide/Cover-PNG ableiten: "slide-03-tuerkis.png" → "-tuerkis". */
+function themeSuffixOf(file) {
+  const b = basename(file).replace(/\.[a-z0-9]+$/i, "");
+  const m = b.match(/^(?:slide|cover)-\d+(.*)$/i);
+  return m ? m[1] : "";
+}
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -329,13 +336,17 @@ async function buildCarousels() {
     const serieDir = join(src, serie.name);
     for (const carousel of readdirSync(serieDir, { withFileTypes: true })) {
       if (!carousel.isDirectory()) continue;
-      aufgaben.push({ serie, carousel, cDir: join(serieDir, carousel.name) });
+      // Je Carousel eine eigene Einheit PRO Farbwelt.
+      for (const theme of THEMES) {
+        aufgaben.push({ serie, carousel, cDir: join(serieDir, carousel.name), theme });
+      }
     }
   }
 
-  // Jedes Carousel ist eine eigene Einheit (eigener Slide-Ordner, eigenes ZIP)
-  // und damit unabhaengig von den anderen.
-  const ergebnisse = await parallel(aufgaben, async ({ serie, carousel, cDir }) => {
+  // Jedes Carousel×Farbwelt ist eine eigene Einheit (eigener Slide-Ordner,
+  // eigenes ZIP) und damit unabhaengig von den anderen.
+  const ergebnisse = await parallel(aufgaben, async ({ serie, carousel, cDir, theme }) => {
+    const sfx = THEME_SUFFIX[theme];
     // Seit der Format-Erweiterung liegen die Slides unter <slug>/<format>/.
     // Vorschau immer 4:5; das Download-ZIP enthält alle vorhandenen Formate.
     const FMT_ORDER = ["feed-4x5", "feed-1x1", "reel-9x16"];
@@ -344,10 +355,13 @@ async function buildCarousels() {
     const previewRoot = flat
       ? cDir
       : join(cDir, formats.includes("feed-4x5") ? "feed-4x5" : formats[0]);
-    const slides = collect(previewRoot, [".png"]);
+    // Nur die Slides DIESER Farbwelt (sonst kollidieren die vier Welten).
+    const slides = collect(previewRoot, [".png"]).filter(
+      (f) => themeSuffixOf(f) === sfx,
+    );
     if (slides.length === 0) return null;
 
-    const id = `${serie.name}__${carousel.name}`;
+    const id = `${serie.name}__${carousel.name}${sfx}`;
     const slideDir = join(dir, id);
     ensureDir(slideDir);
 
@@ -371,7 +385,9 @@ async function buildCarousels() {
       ? [{ key: "feed-4x5", root: cDir }]
       : formats.map((f) => ({ key: f, root: join(cDir, f) }));
     for (const zf of zipFormats) {
-      const fslides = collect(zf.root, [".png"]);
+      const fslides = collect(zf.root, [".png"]).filter(
+        (f) => themeSuffixOf(f) === sfx,
+      );
       const fdir = join(tmp, zf.key);
       ensureDir(fdir);
       let m = 0;
@@ -394,7 +410,7 @@ async function buildCarousels() {
 
     return {
       kategorie: "carousel",
-      titel: prettifyName(carousel.name),
+      titel: `${prettifyName(carousel.name)} · ${THEME_LABEL[theme]}`,
       unterKategorie: SERIE[serie.name] ?? prettifyLabel(serie.name),
       kind: "carousel",
       slides: slides.length,
