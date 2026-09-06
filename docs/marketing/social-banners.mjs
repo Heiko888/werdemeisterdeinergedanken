@@ -18,7 +18,13 @@ const TARGETS = [
   { key: "youtube", file: "youtube/WMDG-YouTube-Banner.png", w: 2560, h: 1440,
     brain: 316, gap: 90, textW: 880, h1: 72, eb: 20, sub: 21, url: 20, safe: true },
   { key: "facebook", file: "facebook/WMDG-Facebook-Cover.png", w: 1640, h: 624,
-    brain: 270, gap: 74, textW: 780, h1: 60, eb: 18, sub: 19, url: 18, safe: false, retina: true },
+    brain: 270, gap: 74, textW: 780, h1: 60, eb: 18, sub: 19, url: 18, safe: false, retina: true,
+    // Creme-Variante mit kräftigerem Gold und stärkerem Glow (nur Facebook).
+    palHell: {
+      glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
+      eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
+      brainGlow: "rgba(224,168,45,.55)", brainShadow: "rgba(150,110,15,.55)",
+    } },
   { key: "instagram", file: "instagram/WMDG-Instagram-Story.png", w: 1080, h: 1920,
     brain: 460, gap: 56, textW: 920, h1: 82, eb: 20, sub: 27, url: 24, vertical: true },
   { key: "instagram-logo", file: "instagram/WMDG-Instagram-Story-Logo.png", w: 1080, h: 1920,
@@ -60,7 +66,7 @@ const PAL = (hell) => hell ? {
   brainGlow: "rgba(233,193,95,.35)", brainShadow: "rgba(233,193,95,.45)", wordmark: "rgba(244,242,236,.92)",
 };
 
-const css = (t, hell) => { const p = PAL(hell); return `
+const css = (t, hell) => { const p = { ...PAL(hell), ...(hell && t.palHell ? t.palHell : {}) }; return `
 *{margin:0;box-sizing:border-box}
 body{width:${t.w}px;height:${t.h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${p.base}}
 .bg{position:absolute;inset:0;background:

@@ -40,7 +40,9 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
   Qualität, dank `retina`-Flag), `instagram/WMDG-Instagram-Story.png`,
   `instagram/WMDG-Instagram-Story-Logo.png`. Banner mit `retina: true`
   (LinkedIn, WhatsApp, Facebook) werden zusätzlich in doppelter Auflösung
-  (`…@2x.png`) ausgegeben.
+  (`…@2x.png`) ausgegeben. Ein Target kann per `palHell`-Feld die helle
+  Creme-Palette gezielt überschreiben (z. B. Facebook: kräftigeres Gold +
+  stärkerer Glow), ohne die anderen Kanäle zu verändern.
 - **Verbundene Komponenten:** speist mittelbar die Galerie (`build-gallery.mjs →
   buildSocial()` liest alle `docs/marketing/**/*.png`).
 - **Stolperfalle:** temporäre `.<key>.html` liegen kurz im Quellordner; bei
