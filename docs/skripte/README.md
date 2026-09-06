@@ -33,6 +33,36 @@ Gebrandete **PDF** (zum Ausdrucken / Teleprompter):
 willkommen-skript` (Generator: `tools/pdf/willkommen-skript.mjs`, Text 1:1 aus
 der Markdown-Fassung). Optik wie die Praxis-Sprecherskripte.
 
+## Alle Videoskripte gebündelt als Markdown (`videoskripte/`)
+
+Für jedes Video-**PDF** gibt es zusätzlich **eine** zusammenhängende
+Markdown-Datei – inhaltsgleich zum PDF, aber in einer Datei les- und editierbar.
+So hast du jederzeit den aktuellen Stand jedes Video-Drehbuchs auf einen Blick.
+
+| Bündel (Markdown) | Entspricht PDF | Inhalt |
+|---|---|---|
+| `videoskripte/landing-intro-drehbuch.md` | `WMDG-Video-Drehbuch-Intro.pdf` | Intro-Video + Teaser-Reel („Nicht deine Schuld") |
+| `videoskripte/langvideo-ablesen.md` | `WMDG-Video-Drehbuch-Ablesen.pdf` | Wort-für-Wort: 7 Stufen (komplett) · Praxis · Vertiefungen · Mentale Selbstverteidigung |
+| `videoskripte/langvideo-stichpunkt.md` | `WMDG-Video-Drehbuch-Stichpunkt.pdf` | Stichpunkt: 7 Stufen · Vertiefungen · Mentale Selbstverteidigung |
+| `willkommen/dashboard-willkommen.md` | `Willkommensvideo-Dashboard.pdf` | Willkommensvideo (liegt schon als eigene Markdown-Quelle vor) |
+| `videoskripte/reels-alle-serien.md` | `WMDG-Reel-Drehbuch-Alle-Serien.pdf` | Alle Reel-Serien gebündelt: 7 Stufen · Praxis · Vertiefungen · Mentale Selbstverteidigung · Wissenschaft |
+
+Die **einzelnen** Reel-Serien liegen bereits je als eine Markdown-Datei in
+`reels/` vor (= die Einzel-Serien-PDFs) – gebündelt gibt es sie zusätzlich in
+`videoskripte/reels-alle-serien.md`.
+
+Die Bündel werden **automatisch** aus den Einzel-Skripten erzeugt (gleiche
+Quellen und Reihenfolge wie die PDF-Generatoren), damit Markdown und PDF nie
+auseinanderlaufen:
+
+```
+npm run videoskripte-md      # oder: node tools/pdf/videoskripte-markdown.mjs
+```
+
+Generator: `tools/pdf/videoskripte-markdown.mjs`. Die Bündel nicht von Hand
+bearbeiten – stattdessen die jeweilige Einzel-Quelle ändern (als
+`<!-- Quelle: … -->`-Kommentar über jedem Abschnitt vermerkt) und neu erzeugen.
+
 ## Themenblock „Mentale Selbstverteidigung" (16 Themen)
 
 Video-Skripte zum Block „Wie dein Denken gelenkt wird":
