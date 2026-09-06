@@ -35,7 +35,7 @@ export type VorlagenAsset = {
   sizeMB?: number;
 };
 
-export const vorlagenAssets: VorlagenAsset[] = [
+const vorlagenAssets0: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "hintergrund hell",
@@ -3285,7 +3285,10 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "w": 1080,
       "h": 1080
     }
-  },
+  }
+];
+
+const vorlagenAssets1: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "overlay tuerkis 15",
@@ -6535,7 +6538,10 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "w": 1080,
       "h": 1920
     }
-  },
+  }
+];
+
+const vorlagenAssets2: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "overlay tuerkis hell 23",
@@ -9785,7 +9791,10 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "w": 2160,
       "h": 2700
     }
-  },
+  }
+];
+
+const vorlagenAssets3: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "hintergrund tuerkis · 4:5",
@@ -13035,7 +13044,10 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "w": 1080,
       "h": 1080
     }
-  },
+  }
+];
+
+const vorlagenAssets4: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "Zitat 15 tuerkis hell · 1:1",
@@ -16285,7 +16297,10 @@ export const vorlagenAssets: VorlagenAsset[] = [
       "w": 1080,
       "h": 1920
     }
-  },
+  }
+];
+
+const vorlagenAssets5: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "Zitat 25 · 9:16",
@@ -21725,7 +21740,10 @@ export const vorlagenAssets: VorlagenAsset[] = [
       }
     ],
     "caption": "Ein Bild fühlt sich an wie ein Beweis, obwohl es nur ein Ausschnitt ist – gewählt von jemandem, mit einer Absicht. Der Rahmen entscheidet, ob dasselbe Ereignis friedlich oder bedrohlich wirkt. Schau ein emotionales Video einmal ohne Ton und urteile aus dem Rest. #bilder #medienkompetenz #mentaleselbstverteidigung #kritischesdenken #fakenews #klardenken #werdemeisterdeinergedanken #wahrnehmung"
-  },
+  }
+];
+
+const vorlagenAssets6: VorlagenAsset[] = [
   {
     "kategorie": "carousel",
     "titel": "framing",
@@ -29112,4 +29130,14 @@ export const vorlagenAssets: VorlagenAsset[] = [
     "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
   }
+];
+
+export const vorlagenAssets: VorlagenAsset[] = [
+  ...vorlagenAssets0,
+  ...vorlagenAssets1,
+  ...vorlagenAssets2,
+  ...vorlagenAssets3,
+  ...vorlagenAssets4,
+  ...vorlagenAssets5,
+  ...vorlagenAssets6,
 ];

@@ -28,6 +28,14 @@ Galerie jetzt dem aktuellen Stand von `docs/marketing/` entspricht.
 - **Profilbild 1080**, **Profilbild rund 1080**, **Profilbild rund 500**
   (inkl. hell-Varianten) – zeigten seit dem Löschen der Quell-PNGs ins Leere.
 
+**Build-Fix (Generator):** Bei jetzt >1000 Katalog-Einträgen brach `next build`
+mit dem TypeScript-Fehler *„Expression produces a union type that is too complex
+to represent"* ab. `renderManifest` in **`tools/vorlagen/marketing-carousels.mjs`**
+schreibt den Katalog deshalb in getypte Teil-Arrays (`vorlagenAssets0…N`,
+je 250 Einträge) und setzt das Export-Array `vorlagenAssets` per Spread daraus
+zusammen. Dadurch bleibt jedes einzelne Array-Literal für TypeScript darstellbar.
+Verifiziert per `npm run build` (grün).
+
 **Hinweis zur Reproduktion:** Nur `src/lib/vorlagen-assets.ts` ist versioniert;
 die Binärdateien unter `content/vorlagen/` sind gitignored und liegen auf dem
 Server (`/opt/website-vorlagen`, per Volume gemountet). Sie werden dort mit

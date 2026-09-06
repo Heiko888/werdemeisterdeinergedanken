@@ -345,6 +345,25 @@ export async function buildMarketingCarousels({ OUT, assets }) {
 
 /** Vollständigen Katalog-Text (src/lib/vorlagen-assets.ts) erzeugen. */
 export function renderManifest(assets) {
+  // Der Katalog wird in getypte Teil-Arrays aufgeteilt und per Spread wieder
+  // zusammengesetzt. Grund: Ein einzelnes Array-Literal mit sehr vielen (>1000)
+  // Objekt-Literalen sprengt beim `next build`/`tsc` die TypeScript-Grenze
+  // „Expression produces a union type that is too complex to represent". In
+  // kleinere, jeweils als `VorlagenAsset[]` annotierte Blöcke zerlegt bleibt
+  // jeder Block darstellbar; das finale Export-Array ist nur noch ein Spread
+  // getypter Arrays (kein großes Objekt-Literal mehr).
+  const CHUNK = 250;
+  const chunks = [];
+  for (let i = 0; i < assets.length; i += CHUNK) {
+    chunks.push(assets.slice(i, i + CHUNK));
+  }
+  if (chunks.length === 0) chunks.push([]);
+  const chunkConsts = chunks
+    .map(
+      (c, i) => `const vorlagenAssets${i}: VorlagenAsset[] = ${JSON.stringify(c, null, 2)};`,
+    )
+    .join("\n\n");
+  const spread = chunks.map((_, i) => `  ...vorlagenAssets${i},`).join("\n");
   return `/**
  * AUTO-GENERIERT von tools/vorlagen/build-gallery.mjs – NICHT von Hand ändern.
  * Neu erzeugen mit:  npm run vorlagen:galerie
@@ -382,7 +401,11 @@ export type VorlagenAsset = {
   sizeMB?: number;
 };
 
-export const vorlagenAssets: VorlagenAsset[] = ${JSON.stringify(assets, null, 2)};
+${chunkConsts}
+
+export const vorlagenAssets: VorlagenAsset[] = [
+${spread}
+];
 `;
 }
 
