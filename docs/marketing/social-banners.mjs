@@ -16,7 +16,15 @@ const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 
 const TARGETS = [
   { key: "youtube", file: "youtube/WMDG-YouTube-Banner.png", w: 2560, h: 1440,
-    brain: 316, gap: 90, textW: 880, h1: 72, eb: 20, sub: 21, url: 20, safe: true },
+    brain: 316, gap: 90, textW: 880, h1: 72, eb: 20, sub: 21, url: 20, safe: true,
+    // Wie Facebook/LinkedIn: größerer, kräftigerer Glow-Halo rund ums Gehirn.
+    glowScale: 2.0, glowBlur: 70,
+    // Creme-Variante mit kräftigerem Gold und stärkerem Glow.
+    palHell: {
+      glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
+      eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
+      brainGlow: "rgba(230,178,55,.9)", brainShadow: "rgba(150,110,15,.6)",
+    } },
   { key: "facebook", file: "facebook/WMDG-Facebook-Cover.png", w: 1640, h: 624,
     brain: 270, gap: 74, textW: 780, h1: 60, eb: 18, sub: 19, url: 18, safe: false, retina: true,
     // Kräftigerer, größerer Glow-Halo rund ums Gehirn (nur Facebook).
