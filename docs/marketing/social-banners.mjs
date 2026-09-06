@@ -19,11 +19,13 @@ const TARGETS = [
     brain: 316, gap: 90, textW: 880, h1: 72, eb: 20, sub: 21, url: 20, safe: true },
   { key: "facebook", file: "facebook/WMDG-Facebook-Cover.png", w: 1640, h: 624,
     brain: 270, gap: 74, textW: 780, h1: 60, eb: 18, sub: 19, url: 18, safe: false, retina: true,
+    // Kräftigerer, größerer Glow-Halo rund ums Gehirn (nur Facebook).
+    glowScale: 1.45, glowBlur: 48,
     // Creme-Variante mit kräftigerem Gold und stärkerem Glow (nur Facebook).
     palHell: {
       glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
       eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
-      brainGlow: "rgba(224,168,45,.55)", brainShadow: "rgba(150,110,15,.55)",
+      brainGlow: "rgba(226,172,50,.68)", brainShadow: "rgba(150,110,15,.55)",
     } },
   { key: "instagram", file: "instagram/WMDG-Instagram-Story.png", w: 1080, h: 1920,
     brain: 460, gap: 56, textW: 920, h1: 82, eb: 20, sub: 27, url: 24, vertical: true },
@@ -91,7 +93,7 @@ h1 em{background:${p.accent};-webkit-background-clip:text;background-clip:text;c
 .sub{margin-top:18px;font-size:${t.sub}px;color:${p.sub};line-height:1.4;max-width:${t.textW}px}
 .url{margin-top:14px;font-size:${t.url}px;font-weight:700;color:${p.url};letter-spacing:.3px}
 .bwrap{position:relative;flex:0 0 auto}
-.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(t.brain*0.92)}px;height:${Math.round(t.brain*0.92)}px;border-radius:50%;background:radial-gradient(circle, ${p.brainGlow}, transparent 66%);filter:blur(30px)}
+.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(t.brain*(t.glowScale ?? 0.92))}px;height:${Math.round(t.brain*(t.glowScale ?? 0.92))}px;border-radius:50%;background:radial-gradient(circle, ${p.brainGlow}, transparent 66%);filter:blur(${t.glowBlur ?? 30}px)}
 .brain{position:relative;width:${t.brain}px;height:${t.brain}px;object-fit:contain;filter:drop-shadow(0 10px 60px ${p.brainShadow})}
 .logocard{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;text-align:center}
 /* Echtes Schriftlogo-Lockup wie im Website-Header: „WERDE MEISTER“ (Fraunces,
