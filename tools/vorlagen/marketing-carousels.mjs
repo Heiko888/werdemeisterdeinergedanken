@@ -31,6 +31,7 @@ import { spawnSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { parallel, webpOpts } from "./bild-jobs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -267,19 +268,19 @@ export async function buildMarketingCarousels({ OUT, assets }) {
   const captions = readMarketingCaptions();
   const FMT_ORDER = ["feed-4x5", "feed-1x1", "reel-9x16"];
 
-  let count = 0;
-  for (const key of Object.keys(MARKETING_TITEL)) {
+  // Jede Marketing-Serie ist eine eigene Einheit (Slide-Ordner + ZIP).
+  const ergebnisse = await parallel(Object.keys(MARKETING_TITEL), async (key) => {
     const cDir = join(src, key);
-    if (!existsSync(cDir)) continue;
+    if (!existsSync(cDir)) return null;
     const formats = FMT_ORDER.filter((f) => existsSync(join(cDir, f)));
-    if (formats.length === 0) continue;
+    if (formats.length === 0) return null;
 
     const previewRoot = join(
       cDir,
       formats.includes("feed-4x5") ? "feed-4x5" : formats[0],
     );
     const slides = collectPng(previewRoot);
-    if (slides.length === 0) continue;
+    if (slides.length === 0) return null;
 
     const id = `marketing__${key}`;
     const slideDir = join(dir, id);
@@ -294,7 +295,7 @@ export async function buildMarketingCarousels({ OUT, assets }) {
       await sharp(slide)
         .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
         .sharpen({ sigma: 0.7 })
-        .webp({ quality: 82, effort: 6, smartSubsample: true })
+        .webp(await webpOpts(slide, { quality: 82 }))
         .toFile(join(slideDir, name));
       slidePaths.push(`/admin/vorlagen/datei/carousels/${id}/${name}`);
     }
@@ -309,7 +310,7 @@ export async function buildMarketingCarousels({ OUT, assets }) {
         m++;
         await sharp(slide)
           .resize({ width: 1080, withoutEnlargement: true })
-          .webp({ quality: 88, effort: 6, smartSubsample: true })
+          .webp(await webpOpts(slide, { quality: 88 }))
           .toFile(join(fdir, `slide-${String(m).padStart(2, "0")}.webp`));
       }
     }
@@ -323,7 +324,7 @@ export async function buildMarketingCarousels({ OUT, assets }) {
     });
     if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
 
-    assets.push({
+    return {
       kategorie: "carousel",
       titel: MARKETING_TITEL[key],
       unterKategorie: UNTER_KATEGORIE,
@@ -335,12 +336,13 @@ export async function buildMarketingCarousels({ OUT, assets }) {
       href: `/admin/vorlagen/datei/carousels/${zipName}`,
       formate: formats.map((f) => FORMAT_META[f]).filter(Boolean),
       ...(captions[key] ? { caption: captions[key] } : {}),
-    });
-    count++;
-  }
+    };
+  });
+  const fertige = ergebnisse.filter(Boolean);
+  assets.push(...fertige);
 
   if (existsSync(tmpRoot)) rmSync(tmpRoot, { recursive: true, force: true });
-  return count;
+  return fertige.length;
 }
 
 /** Vollständigen Katalog-Text (src/lib/vorlagen-assets.ts) erzeugen. */

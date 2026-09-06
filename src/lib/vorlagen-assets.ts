@@ -22893,6 +22893,102 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "ja ich meine dich hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ja ich meine dich tuerkis hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ja ich meine dich tuerkis",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.7,
+    "thumb": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "ja ich meine dich",
     "unterKategorie": "Persönliche Geschichten",
     "kind": "carousel",
@@ -22905,6 +23001,102 @@ const vorlagenAssets6: VorlagenAsset[] = [
       "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich/preview-9x16.webp"
     ],
     "href": "/admin/vorlagen/datei/story/story-01-ja-ich-meine-dich.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "aufgehoert zu funktionieren hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "aufgehoert zu funktionieren tuerkis hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "aufgehoert zu funktionieren tuerkis",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.8,
+    "thumb": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-02-aufgehoert-zu-funktionieren-tuerkis.zip",
     "formate": [
       {
         "label": "4:5",
@@ -22957,6 +23149,102 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "nie faul hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-03-nie-faul-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-03-nie-faul-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-03-nie-faul-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "nie faul tuerkis hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "nie faul tuerkis",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.8,
+    "thumb": "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-03-nie-faul-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "nie faul",
     "unterKategorie": "Persönliche Geschichten",
     "kind": "carousel",
@@ -22989,11 +23277,107 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "lautester kritiker hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-04-lautester-kritiker-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-04-lautester-kritiker-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "lautester kritiker tuerkis hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "lautester kritiker tuerkis",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.8,
+    "thumb": "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-04-lautester-kritiker-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "lautester kritiker",
     "unterKategorie": "Persönliche Geschichten",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 2.7,
+    "sizeMB": 2.8,
     "thumb": "/admin/vorlagen/datei/story/story-04-lautester-kritiker/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/story/story-04-lautester-kritiker/preview-4x5.webp",
@@ -23021,11 +23405,107 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "nicht meine gedanken hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "nicht meine gedanken tuerkis hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "nicht meine gedanken tuerkis",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.8,
+    "thumb": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "nicht meine gedanken",
     "unterKategorie": "Persönliche Geschichten",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 2.7,
+    "sizeMB": 2.8,
     "thumb": "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/story/story-05-nicht-meine-gedanken/preview-4x5.webp",
@@ -23053,11 +23533,107 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "vom gruebeln zur stille hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "vom gruebeln zur stille tuerkis hell",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.4,
+    "thumb": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis-hell/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis-hell/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis-hell/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis-hell/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "vom gruebeln zur stille tuerkis",
+    "unterKategorie": "Persönliche Geschichten",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 2.8,
+    "thumb": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis/preview-4x5.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis/preview-1x1.webp",
+      "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "vom gruebeln zur stille",
     "unterKategorie": "Persönliche Geschichten",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 2.7,
+    "sizeMB": 2.8,
     "thumb": "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/story/story-06-vom-gruebeln-zur-stille/preview-4x5.webp",
@@ -23088,8 +23664,8 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "titel": "Der Sommer, der alles veränderte",
     "unterKategorie": "Persönliche Geschichten · Story",
     "kind": "carousel",
-    "slides": 9,
-    "sizeMB": 11.1,
+    "slides": 36,
+    "sizeMB": 38.4,
     "thumb": "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-01.webp",
@@ -23100,7 +23676,34 @@ const vorlagenAssets6: VorlagenAsset[] = [
       "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-06.webp",
       "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-07.webp",
       "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-08.webp",
-      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-09.webp"
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-09.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-10.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-11.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-12.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-13.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-14.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-15.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-16.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-17.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-18.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-19.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-20.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-21.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-22.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-23.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-24.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-25.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-26.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-27.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-28.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-29.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-30.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-31.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-32.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-33.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-34.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-35.webp",
+      "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023/slide-36.webp"
     ],
     "href": "/admin/vorlagen/datei/story-carousel/story-carousel-sommer-2023.zip",
     "formate": [
@@ -23127,7 +23730,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.2,
+    "sizeMB": 3.3,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-01/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-01/preview-4x5.webp",
@@ -23223,7 +23826,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.2,
+    "sizeMB": 3.3,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-04/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-04/preview-4x5.webp",
@@ -23319,7 +23922,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.3,
+    "sizeMB": 3.4,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-07/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-07/preview-4x5.webp",
@@ -23383,7 +23986,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.3,
+    "sizeMB": 3.4,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-09/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-09/preview-4x5.webp",
@@ -23415,7 +24018,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.3,
+    "sizeMB": 3.4,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-10/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-10/preview-4x5.webp",
@@ -23479,7 +24082,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.2,
+    "sizeMB": 3.3,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-12/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-12/preview-4x5.webp",
@@ -23511,7 +24114,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.2,
+    "sizeMB": 3.3,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-13/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-13/preview-4x5.webp",
@@ -23543,7 +24146,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Zitate · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.3,
+    "sizeMB": 3.4,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-14/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-zitate-14/preview-4x5.webp",
@@ -23571,11 +24174,395 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Zitat 15",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-15/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-15/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-15/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-15/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-15.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 16",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-16/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-16/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-16/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-16/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-16.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 17",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-17/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-17/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-17/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-17/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-17.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 18",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-18/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-18/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-18/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-18/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-18.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 19",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-19/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-19/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-19/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-19/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-19.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 20",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.2,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-20/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-20/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-20/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-20/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-20.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 21",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-21/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-21/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-21/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-21/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-21.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 22",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-22/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-22/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-22/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-22/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-22.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 23",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.2,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-23/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-23/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-23/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-23/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-23.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 24",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-24/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-24/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-24/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-24/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-24.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 25",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-25/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-25/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-25/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-25/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-25.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Zitat 26",
+    "unterKategorie": "Zitate · Overlay",
+    "kind": "carousel",
+    "slides": 3,
+    "sizeMB": 3.3,
+    "thumb": "/admin/vorlagen/datei/content-overlay/overlay-zitate-26/preview-4x5.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-26/preview-4x5.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-26/preview-1x1.webp",
+      "/admin/vorlagen/datei/content-overlay/overlay-zitate-26/preview-9x16.webp"
+    ],
+    "href": "/admin/vorlagen/datei/content-overlay/overlay-zitate-26.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Fakt 01",
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.4,
+    "sizeMB": 3.5,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-01/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-01/preview-4x5.webp",
@@ -23671,7 +24658,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.3,
+    "sizeMB": 3.4,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-04/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-04/preview-4x5.webp",
@@ -23735,7 +24722,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.2,
+    "sizeMB": 3.3,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-06/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-06/preview-4x5.webp",
@@ -23767,7 +24754,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.4,
+    "sizeMB": 3.5,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-07/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-07/preview-4x5.webp",
@@ -23799,7 +24786,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.5,
+    "sizeMB": 3.6,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-08/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-08/preview-4x5.webp",
@@ -23831,7 +24818,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.4,
+    "sizeMB": 3.5,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-09/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-09/preview-4x5.webp",
@@ -23863,7 +24850,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.4,
+    "sizeMB": 3.5,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-10/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-10/preview-4x5.webp",
@@ -23895,7 +24882,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.4,
+    "sizeMB": 3.5,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-11/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-11/preview-4x5.webp",
@@ -23927,7 +24914,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Studien-Fakten · Overlay",
     "kind": "carousel",
     "slides": 3,
-    "sizeMB": 3.4,
+    "sizeMB": 3.5,
     "thumb": "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-12/preview-4x5.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/content-overlay/overlay-studien-fakten-12/preview-4x5.webp",
@@ -28812,7 +29799,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Anleitungen",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Anleitung-Stripe-Mitgliedschaft.pdf"
   },
   {
@@ -28875,7 +29862,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Carousel-Texte",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1,
+    "sizeMB": 0.8,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-7-Stufen.pdf"
   },
   {
@@ -28884,7 +29871,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Carousel-Texte",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1.7,
+    "sizeMB": 1.6,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Alle-Serien.pdf"
   },
   {
@@ -28893,7 +29880,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Carousel-Texte",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1.2,
+    "sizeMB": 1,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Mentale-Selbstverteidigung.pdf"
   },
   {
@@ -28902,7 +29889,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Carousel-Texte",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1.1,
+    "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Praxis.pdf"
   },
   {
@@ -28911,7 +29898,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Carousel-Texte",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Carousel-Texte-Vertiefungen.pdf"
   },
   {
@@ -29019,7 +30006,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Reel-Drehbücher",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Mentale-Selbstverteidigung.pdf"
   },
   {
@@ -29028,7 +30015,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Reel-Drehbücher",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Praxis.pdf"
   },
   {
@@ -29046,7 +30033,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Reel-Drehbücher",
     "kind": "file",
     "format": "PDF",
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Reel-Drehbuch-Wissenschaft.pdf"
   },
   {
@@ -29084,7 +30071,10 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "format": "PDF",
     "sizeMB": 1.4,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Video-Drehbuch-Ablesen.pdf"
-  },
+  }
+];
+
+const vorlagenAssets7: VorlagenAsset[] = [
   {
     "kategorie": "workshop",
     "titel": "Video Drehbuch Intro",
@@ -29140,4 +30130,5 @@ export const vorlagenAssets: VorlagenAsset[] = [
   ...vorlagenAssets4,
   ...vorlagenAssets5,
   ...vorlagenAssets6,
+  ...vorlagenAssets7,
 ];

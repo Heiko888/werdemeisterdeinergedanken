@@ -43,3 +43,12 @@ yarn-error.log*
 # src/lib/reels.ts und carousels.ts sind reine Metadaten-Strings, es liest sie
 # nichts aus dem Dateisystem.
 docs
+
+# Vorlagen-Galerie: die Binaerdaten (webp/ZIP/PDF, ~1 GB) erzeugt
+# "npm run vorlagen:galerie" und sie liegen auf dem Server unter
+# /opt/website-vorlagen, das per Volume nach /app/content/vorlagen gemountet
+# wird (docker-compose.yml). Im Build-Kontext haben sie nichts zu suchen: der
+# Next-Build liest sie nicht (der Katalog src/lib/vorlagen-assets.ts enthaelt
+# nur Pfad-Strings), und das Volume ueberlagert zur Laufzeit ohnehin alles,
+# was das Image an dieser Stelle mitbraechte.
+content/vorlagen

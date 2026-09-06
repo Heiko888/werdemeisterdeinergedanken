@@ -5,6 +5,55 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-06 – Vorlagen-Galerie auf dem Server neu erzeugt, Generator entschärft
+
+Der Katalog aus dem Vorlauf (05.09.) war in einer Umgebung **ohne** die
+gitignorierten Quell-Exporte entstanden; die Nicht-Social-Einträge wurden dort
+nur aus dem alten Stand übernommen. Auf dem Server liegen alle Quellen vor,
+deshalb wurde `npm run vorlagen:galerie` dort vollständig durchlaufen lassen.
+
+**Ergebnis:** 1755 Katalog-Einträge (vorher 1725). Es ist **kein** Eintrag
+weggefallen; hinzugekommen sind **30 Content-Overlays** (u. a.
+`overlay-zitate-15` bis `-22`), die mangels Quelldateien vorher nicht gebaut
+werden konnten. Social (1423), Reels (59) und Workshop (40) sind unverändert.
+`content/vorlagen/` umfasst jetzt 4561 Dateien / 933 MB und wurde nach
+`/opt/website-vorlagen` gespiegelt (Volume, siehe `docker-compose.yml`).
+
+**Warum der Generator angefasst wurde:** Der erste Lauf hätte hochgerechnet
+6–21 Stunden gebraucht. Zwei Ursachen, beide behoben:
+
+1. **`effort: 6` bei transparenten Bildern.** Gemessen an einem 2160px-Overlay:
+   **7,39 s** gegenüber **0,60 s** bei `effort: 4` – für nur 12 % kleinere
+   Dateien (118 statt 134 KB). Bei deckenden Bildern ist der Unterschied klein
+   (1,60 s vs. 1,32 s). 592 der 1423 Social-Quelldateien haben einen
+   Alpha-Kanal, die Overlay-Familien fast durchgängig. `effort` ist beim
+   WebP-Encoder reine Suchtiefe und **kein** Qualitätsregler – bei gleichem
+   `quality` bleibt das Bild praktisch identisch. Neu wählt `webpOpts()` in
+   **`tools/vorlagen/bild-jobs.mjs`** die Stufe anhand des Alpha-Kanals.
+   Zwei Stellen bleiben bewusst bei 6: dort nimmt `flatten()` vorher den
+   Alpha-Kanal weg, das Encoding ist also ohnehin schnell.
+2. **Streng sequenzieller Ablauf.** Der Build lastete genau einen Kern aus.
+   `parallel()` (ebenfalls in `bild-jobs.mjs`) arbeitet unabhängige Einheiten
+   über eine Warteschlange begrenzter Breite ab – Standard ist die Kernanzahl,
+   `GALERIE_JOBS` überschreibt sie. Alle acht Builder in `build-gallery.mjs`
+   und `buildMarketingCarousels` wurden umgestellt.
+
+Die **Ergebnisreihenfolge bleibt die der Eingabe**, sonst würden sich
+Katalog-IDs und Slide-Reihenfolgen verschieben. Belegt: die 1423 Social-Dateien
+tragen lückenlos `social-1` … `social-1423`, ohne Duplikate, Thumbs
+deckungsgleich. Laufzeit danach: **12 Minuten**.
+
+**`.dockerignore`:** `content/vorlagen` ergänzt. Der Ordner existierte auf dem
+Server bisher nicht (die Binärdaten lagen nur unter `/opt/website-vorlagen`);
+seit er lokal erzeugt wird, wären sonst ~1 GB in den Build-Kontext und ins
+Image gewandert – zwecklos, weil das Volume den Pfad zur Laufzeit überlagert
+und der Next-Build die Dateien nicht liest. Image blieb dadurch bei 1,08 GB.
+
+**Voraussetzung nachinstalliert:** `zip` fehlte auf dem Server (`unzip` war da).
+Ohne das Binary bricht der Generator beim ersten ZIP hart ab.
+
+---
+
 ## 2026-09-05 – Geänderte Profil-Vorlagen in die Vorlagen-Galerie eingepflegt
 
 Der Vorlagen-Katalog (`/admin/vorlagen`) war veraltet: Die neuen bzw.
