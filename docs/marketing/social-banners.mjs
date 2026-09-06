@@ -32,7 +32,15 @@ const TARGETS = [
   { key: "instagram-logo", file: "instagram/WMDG-Instagram-Story-Logo.png", w: 1080, h: 1920,
     brain: 560, eb: 24, url: 42, logoOnly: true },
   { key: "linkedin", file: "linkedin/WMDG-LinkedIn-Banner.png", w: 1584, h: 396,
-    brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true },
+    brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true,
+    // Wie Facebook: größerer, kräftigerer Glow-Halo rund ums Gehirn.
+    glowScale: 2.0, glowBlur: 70,
+    // Creme-Variante mit kräftigerem Gold und stärkerem Glow.
+    palHell: {
+      glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
+      eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
+      brainGlow: "rgba(230,178,55,.9)", brainShadow: "rgba(150,110,15,.6)",
+    } },
   // WhatsApp-Banner in derselben breiten LinkedIn-Optik (Gehirn rechts, Text
   // links). Gleiche Maße, damit die Grafik 1:1 wie der LinkedIn-Banner wirkt.
   // WhatsApp-Titelbild: das runde Profilbild liegt mittig ueber dem Banner.
