@@ -5,6 +5,26 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-06 – E-Book-Post-Grafiken: falsches Buchcover korrigiert
+
+Die E-Book-Post-Vorlagen in der Galerie (`/admin/vorlagen`, „Ebook 1x1/4x5/…")
+zeigten noch das **alte** Buchcover. Grund: Die Grafiken betten
+`public/ebook-mockup.webp` zur Bauzeit ein; das Mockup wurde am 06.09. auf das
+neue Gold-Seitengehirn (creme/gold) aktualisiert, die Post-Grafiken stammten
+aber noch vom 03.09. und trugen das alte Cover.
+
+**Geändert:**
+- **`docs/marketing/ebook/WMDG-Ebook-*.png`** (20 Dateien: 5 Formate × 4
+  Farbwelten) mit `ONLY=ebook node docs/marketing/brand-assets.mjs` neu gerendert
+  – jetzt mit dem aktuellen Mockup/Cover. Maße unverändert (1080-basiert).
+
+**Wirksam live** nach `npm run vorlagen:galerie` bzw. dem Deploy-Skript
+(`tools/deploy/update-vorlagen-galerie.sh`) – die Galerie-Bilder werden aus
+`docs/marketing/**` neu aufbereitet; die Katalog-Einträge (Pfade/Titel) bleiben
+gleich.
+
+---
+
 ## 2026-09-06 – Reel-Cover: alle 4 Farbwelten in der Galerie
 
 In der Vorlagen-Galerie (`/admin/vorlagen`) erschien pro Reel-Cover nur **eine**
