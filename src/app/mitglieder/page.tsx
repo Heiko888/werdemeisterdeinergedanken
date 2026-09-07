@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
+import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -246,6 +247,23 @@ export default async function MembersPage() {
     <>
       {/* Kopf – dunkle Navy-Kopfzone (Marken-Blau), jetzt schlank ohne Pill-Wolke */}
       <section className="member-hero flex flex-col justify-center overflow-hidden py-14 min-h-[22rem] sm:min-h-[34rem] sm:py-20">
+        {/* Titelbild – die goldene Kompass-Reise als vollflächiger Hintergrund.
+            Das Motiv liegt rechts (Kompass), die Textspalte links über dem
+            dunklen Navy-Verlauf, der die Lesbarkeit sichert. Reine Dekoration:
+            alt="" und aria-hidden. */}
+        <Image
+          src="/hero-mitglieder.png"
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="z-0 object-cover object-right"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/92 via-navy-950/80 to-navy-950/55"
+        />
         <Container className="relative z-10 flex flex-col items-start gap-4">
           <Eyebrow>Mein Bereich</Eyebrow>
           <div className="flex w-full flex-wrap items-end justify-between gap-4">

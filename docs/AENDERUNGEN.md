@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-06 – Titelbild für „Mein Bereich" (/mitglieder)
+
+Der Kopf des Mitgliederbereichs war eine einfarbige Navy-Fläche. Das neu
+hochgeladene Motiv (goldene Kompass-Reise) sitzt jetzt als vollflächiges
+Titelbild dahinter – analog zu den Lektions- und Bibliotheks-Köpfen.
+
+**Geändert:**
+- **`public/hero-mitglieder.png`**: Das mit Commit `5b86500` hochgeladene Bild
+  (`ChatGPT Image Sep 6, 2026, 06_19_19 PM.png`, 1916×821) auf einen sauberen
+  Slug umbenannt (`git mv`), damit der öffentliche Pfad ohne Leerzeichen/Kommas
+  auskommt.
+- **`src/app/mitglieder/page.tsx`**: `next/image` importiert und im
+  `member-hero`-Kopf ein `<Image fill priority object-right>` plus Navy-Verlauf
+  (`from-navy-950/92 … to-navy-950/55`) ergänzt. Das Motiv (Kompass rechts)
+  bleibt sichtbar, die linke Textspalte liegt lesbar über dem Verlauf. Reine
+  Dekoration: `alt=""`, `aria-hidden`. Muster übernommen aus
+  `src/components/members/LessonHero.tsx`.
+
+**Ergebnis:** Das Bild erscheint auf
+`https://www.werdemeisterdeinergedanken.de/mitglieder`.
+
+---
+
 ## 2026-09-06 – Carousels: alle 4 Farbwelten in der Galerie
 
 Die Studio-Carousels gab es bisher nur in **einer** Farbe (Türkis/Navy). Der
