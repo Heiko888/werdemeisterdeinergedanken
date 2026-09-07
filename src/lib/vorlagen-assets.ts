@@ -28350,11 +28350,11 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "4 6 atmung",
+    "titel": "4 6 atmung · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.7,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
@@ -28386,7 +28386,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "abend reflexion",
+    "titel": "4 6 atmung · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 6 atmung · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 6 atmung · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "abend reflexion · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28422,7 +28527,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "atembeobachtung",
+    "titel": "abend reflexion · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "abend reflexion · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "abend reflexion · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "atembeobachtung · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28458,7 +28668,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "body scan",
+    "titel": "atembeobachtung · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "atembeobachtung · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "atembeobachtung · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "body scan · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28494,7 +28809,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "box breathing",
+    "titel": "body scan · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__body-scan-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__body-scan-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "body scan · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "body scan · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__body-scan-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "box breathing · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28530,7 +28950,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "der autopilot check",
+    "titel": "box breathing · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.6,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__box-breathing-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "box breathing · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "box breathing · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.6,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__box-breathing-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der autopilot check · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28566,7 +29091,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "der innere beobachter",
+    "titel": "der autopilot check · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der autopilot check · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der autopilot check · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere beobachter · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28602,7 +29232,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "die taegliche rueckkehr",
+    "titel": "der innere beobachter · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere beobachter · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere beobachter · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die taegliche rueckkehr · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28638,7 +29373,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "herz kohaerenz",
+    "titel": "die taegliche rueckkehr · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die taegliche rueckkehr · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die taegliche rueckkehr · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "herz kohaerenz · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28674,7 +29514,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "loslass ritual",
+    "titel": "herz kohaerenz · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "herz kohaerenz · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "herz kohaerenz · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "loslass ritual · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28710,7 +29655,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "morgen ausrichtung",
+    "titel": "loslass ritual · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "loslass ritual · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "loslass ritual · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "morgen ausrichtung · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28746,7 +29796,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "praesenz spaziergang",
+    "titel": "morgen ausrichtung · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "morgen ausrichtung · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "morgen ausrichtung · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "praesenz spaziergang · Gold · Dunkel",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
@@ -28782,11 +29937,116 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "verlaengertes ausatmen",
+    "titel": "praesenz spaziergang · Gold · Creme",
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.7,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "praesenz spaziergang · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "praesenz spaziergang · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "verlaengertes ausatmen · Gold · Dunkel",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
@@ -28818,7 +30078,112 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "ablenkung",
+    "titel": "verlaengertes ausatmen · Gold · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "verlaengertes ausatmen · Türkis · Navy",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "verlaengertes ausatmen · Türkis · Creme",
+    "unterKategorie": "Praxis",
+    "kind": "carousel",
+    "slides": 6,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell/slide-06.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ablenkung · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -28855,7 +30220,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "algorithmen",
+    "titel": "ablenkung · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ablenkung · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "ablenkung · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "algorithmen · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -28892,7 +30365,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "angst steuerung",
+    "titel": "algorithmen · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "algorithmen · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "algorithmen · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "angst steuerung · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -28929,11 +30510,119 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "autoritaetshoerigkeit",
+    "titel": "angst steuerung · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "angst steuerung · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "angst steuerung · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autoritaetshoerigkeit · Gold · Dunkel",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
@@ -28966,7 +30655,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "bildmacht",
+    "titel": "autoritaetshoerigkeit · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autoritaetshoerigkeit · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autoritaetshoerigkeit · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "bildmacht · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29003,7 +30800,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "framing",
+    "titel": "bildmacht · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "bildmacht · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "bildmacht · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "framing · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29040,7 +30945,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "gruppendruck",
+    "titel": "framing · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "framing · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "framing · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruppendruck · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29077,7 +31090,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "identitaet und meinung",
+    "titel": "gruppendruck · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruppendruck · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruppendruck · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "identitaet und meinung · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29114,7 +31235,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "kognitive dissonanz",
+    "titel": "identitaet und meinung · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "identitaet und meinung · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "identitaet und meinung · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive dissonanz · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29151,7 +31380,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "medien agenda",
+    "titel": "kognitive dissonanz · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive dissonanz · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive dissonanz · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "medien agenda · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29188,7 +31525,118 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "normalisierung",
+    "titel": "medien agenda · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "medien agenda · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  }
+];
+
+const vorlagenAssets7: VorlagenAsset[] = [
+  {
+    "kategorie": "carousel",
+    "titel": "medien agenda · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "normalisierung · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29225,7 +31673,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "propaganda",
+    "titel": "normalisierung · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "normalisierung · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "normalisierung · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "propaganda · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29262,7 +31818,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "reizueberflutung",
+    "titel": "propaganda · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "propaganda · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "propaganda · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "reizueberflutung · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29299,11 +31963,119 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "sprache und etiketten",
+    "titel": "reizueberflutung · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "reizueberflutung · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "reizueberflutung · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "sprache und etiketten · Gold · Dunkel",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
@@ -29336,11 +32108,119 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "werbung und mangel",
+    "titel": "sprache und etiketten · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
     "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "sprache und etiketten · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "sprache und etiketten · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werbung und mangel · Gold · Dunkel",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
@@ -29373,7 +32253,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "wiederholung",
+    "titel": "werbung und mangel · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werbung und mangel · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werbung und mangel · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "wiederholung · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
@@ -29410,7 +32398,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "autopilot",
+    "titel": "wiederholung · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "wiederholung · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "wiederholung · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autopilot · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
@@ -29447,7 +32543,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "emotionale reifung",
+    "titel": "autopilot · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__autopilot-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autopilot · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "autopilot · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionale reifung · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
@@ -29484,7 +32688,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "erwachen",
+    "titel": "emotionale reifung · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionale reifung · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionale reifung · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "erwachen · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
@@ -29521,7 +32833,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "innere ausrichtung",
+    "titel": "erwachen · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__erwachen-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "erwachen · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "erwachen · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "innere ausrichtung · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
@@ -29558,7 +32978,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "meisterschaft",
+    "titel": "innere ausrichtung · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "innere ausrichtung · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "innere ausrichtung · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "meisterschaft · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
@@ -29595,7 +33123,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "schoepferkraft",
+    "titel": "meisterschaft · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "meisterschaft · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "meisterschaft · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "schoepferkraft · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
@@ -29632,7 +33268,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "selbstbeobachtung",
+    "titel": "schoepferkraft · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "schoepferkraft · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "schoepferkraft · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstbeobachtung · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
@@ -29669,7 +33413,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "automatische gedanken",
+    "titel": "selbstbeobachtung · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstbeobachtung · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstbeobachtung · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "automatische gedanken · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29706,7 +33558,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "der innere kritiker",
+    "titel": "automatische gedanken · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "automatische gedanken · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "automatische gedanken · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere kritiker · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29743,7 +33703,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "die reiz reaktions luecke",
+    "titel": "der innere kritiker · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere kritiker · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "der innere kritiker · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die reiz reaktions luecke · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29780,7 +33848,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "emotionsregulation",
+    "titel": "die reiz reaktions luecke · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die reiz reaktions luecke · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "die reiz reaktions luecke · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionsregulation · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29817,7 +33993,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "gruebeln und gedankenkreisen",
+    "titel": "emotionsregulation · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionsregulation · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "emotionsregulation · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruebeln und gedankenkreisen · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29854,7 +34138,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "integration und weitergabe",
+    "titel": "gruebeln und gedankenkreisen · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruebeln und gedankenkreisen · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "gruebeln und gedankenkreisen · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "integration und weitergabe · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29891,7 +34283,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "kernueberzeugungen",
+    "titel": "integration und weitergabe · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "integration und weitergabe · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "integration und weitergabe · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kernueberzeugungen · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29928,7 +34428,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "kognitive verzerrungen",
+    "titel": "kernueberzeugungen · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kernueberzeugungen · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kernueberzeugungen · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive verzerrungen · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -29965,7 +34573,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "konditionierung",
+    "titel": "kognitive verzerrungen · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive verzerrungen · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "kognitive verzerrungen · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "konditionierung · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -30002,7 +34718,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "muster koerper und gesundheit",
+    "titel": "konditionierung · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "konditionierung · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "konditionierung · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "muster koerper und gesundheit · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -30039,7 +34863,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "neuroplastizitaet",
+    "titel": "muster koerper und gesundheit · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "muster koerper und gesundheit · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "muster koerper und gesundheit · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "neuroplastizitaet · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -30076,7 +35008,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "selbstmitgefuehl",
+    "titel": "neuroplastizitaet · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "neuroplastizitaet · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "neuroplastizitaet · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstmitgefuehl · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -30113,7 +35153,115 @@ const vorlagenAssets6: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "werte und ziele",
+    "titel": "selbstmitgefuehl · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstmitgefuehl · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "selbstmitgefuehl · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.3,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werte und ziele · Gold · Dunkel",
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
@@ -30147,6 +35295,114 @@ const vorlagenAssets6: VorlagenAsset[] = [
       }
     ],
     "caption": "Ziele sind Punkte auf einer Landkarte. Werte sind die Himmelsrichtung – sie geben jedem Schritt Bedeutung. Und ein Wert wird erst real, wenn er in einer kleinen konkreten Handlung sichtbar wird: aus „Gesundheit ist mir wichtig\" wird ein Spaziergang. #werte #sinn #ziele #mentalegesundheit #psychologie #selbstreflexion #innerearbeit #werdemeisterdeinergedanken"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werte und ziele · Gold · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werte und ziele · Türkis · Navy",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.2,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "werte und ziele · Türkis · Creme",
+    "unterKategorie": "Vertiefungen",
+    "kind": "carousel",
+    "slides": 7,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-07.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   },
   {
     "kategorie": "carousel",
@@ -31524,10 +36780,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
         "h": 1920
       }
     ]
-  }
-];
-
-const vorlagenAssets7: VorlagenAsset[] = [
+  },
   {
     "kategorie": "carousel",
     "titel": "Zitat 18",
@@ -35603,7 +40856,10 @@ const vorlagenAssets7: VorlagenAsset[] = [
         "h": 1920
       }
     ]
-  },
+  }
+];
+
+const vorlagenAssets8: VorlagenAsset[] = [
   {
     "kategorie": "carousel",
     "titel": "angst steuerung",
@@ -37388,4 +42644,5 @@ export const vorlagenAssets: VorlagenAsset[] = [
   ...vorlagenAssets5,
   ...vorlagenAssets6,
   ...vorlagenAssets7,
+  ...vorlagenAssets8,
 ];

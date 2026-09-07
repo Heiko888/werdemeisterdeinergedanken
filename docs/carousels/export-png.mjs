@@ -17,12 +17,14 @@ import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import { FORMATS, loadCarousels } from "./data.mjs";
+import { THEMES, THEME_SUFFIX } from "../reels/covers/data.mjs";
 
 const require = createRequire(import.meta.url);
 const HERE = dirname(fileURLToPath(import.meta.url));
 const BUILD = join(HERE, "build");
 const SCALE = Number(process.env.SCALE || "1") || 1;
-const [onlySeries, onlySlug] = process.argv.slice(2);
+const [onlySeries, onlySlug, onlyTheme] = process.argv.slice(2);
+const themes = THEMES.filter((t) => !onlyTheme || t === onlyTheme);
 
 function findChrome() {
   if (process.env.CHROME_BIN && existsSync(process.env.CHROME_BIN)) return process.env.CHROME_BIN;
@@ -94,15 +96,18 @@ for (const F of formats) {
       const ovDir = join(HERE, "export-overlay", s.key, car.slug, F.key);
       mkdirSync(outDir, { recursive: true });
       mkdirSync(ovDir, { recursive: true });
-      for (let i = 0; i < car.slides.length; i++) {
-        const nn = String(i + 1).padStart(2, "0");
-        await shot(
-          page,
-          join(srcDir, `slide-${nn}.html`),
-          join(outDir, `slide-${nn}.png`),
-          join(ovDir, `slide-${nn}.png`),
-        );
-        n++;
+      for (const theme of themes) {
+        const sfx = THEME_SUFFIX[theme];
+        for (let i = 0; i < car.slides.length; i++) {
+          const nn = String(i + 1).padStart(2, "0");
+          await shot(
+            page,
+            join(srcDir, `slide-${nn}${sfx}.html`),
+            join(outDir, `slide-${nn}${sfx}.png`),
+            join(ovDir, `slide-${nn}${sfx}.png`),
+          );
+          n++;
+        }
       }
     }
     console.log(`✓ ${F.key} · ${s.key}: ${s.carousels.length} Carousels`);

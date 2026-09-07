@@ -28,6 +28,56 @@ Titelbild dahinter – analog zu den Lektions- und Bibliotheks-Köpfen.
 
 ---
 
+## 2026-09-06 – Carousels: alle 4 Farbwelten in der Galerie
+
+Die Studio-Carousels gab es bisher nur in **einer** Farbe (Türkis/Navy). Der
+Carousel-Generator hatte – anders als die Reel-Cover – kein Farbwelt-System.
+Er wurde jetzt um dieselben vier Welten wie Reels & Co. erweitert: **Gold ·
+Dunkel**, **Gold · Creme**, **Türkis · Navy**, **Türkis · Creme**.
+
+**Geändert:**
+- **`docs/carousels/build.mjs`:** Das Slide-CSS ist über eine aus der
+  Reels-`palette(theme)` abgeleitete Token-Funktion (`carTokens`) themefähig
+  (Hintergrund, Akzent, Text, Karten, Partikel, Scrim, Logo-Gehirn Gold/Türkis).
+  Pro Format werden alle vier Welten geschrieben (`slide-NN{suffix}.html`).
+  Beide Logo-Gehirne (Türkis + Gold) werden aus dem Cover-Studio kopiert.
+- **`docs/carousels/export-png.mjs`:** rendert je Slide alle vier Welten
+  (`slide-NN{suffix}.png`, plus transparente Overlay-Variante). Optional
+  `node … <serie> <slug> <welt>`.
+- **`tools/vorlagen/build-gallery.mjs`** (`buildCarousels`): pro Carousel jetzt
+  **ein Eintrag je Welt** (Suffix in ID/ZIP, Welt-Label im Titel); Slides/ZIP
+  strikt nach Welt gefiltert (sonst mischen sich die vier).
+- **`src/lib/vorlagen-assets.ts`:** Studio-Carousels **49 → 196** (49 × 4
+  Welten). Alle übrigen Einträge unverändert.
+- **`.gitignore`:** `docs/carousels/logo-gold.png` (Build-Artefakt) ergänzt.
+
+**Reproduktion:** `npm run carousels:png` (Chromium, rendert alle Welten) →
+`npm run vorlagen:galerie`. Auf dem Server via `FULL_REBUILD=1`
+`tools/deploy/update-vorlagen-galerie.sh`. Verifiziert per `npm run build`
+(grün) und Sicht-Prüfung aller vier Welten (Cover + Body).
+
+---
+
+## 2026-09-06 – E-Book-Post-Grafiken: falsches Buchcover korrigiert
+
+Die E-Book-Post-Vorlagen in der Galerie (`/admin/vorlagen`, „Ebook 1x1/4x5/…")
+zeigten noch das **alte** Buchcover. Grund: Die Grafiken betten
+`public/ebook-mockup.webp` zur Bauzeit ein; das Mockup wurde am 06.09. auf das
+neue Gold-Seitengehirn (creme/gold) aktualisiert, die Post-Grafiken stammten
+aber noch vom 03.09. und trugen das alte Cover.
+
+**Geändert:**
+- **`docs/marketing/ebook/WMDG-Ebook-*.png`** (20 Dateien: 5 Formate × 4
+  Farbwelten) mit `ONLY=ebook node docs/marketing/brand-assets.mjs` neu gerendert
+  – jetzt mit dem aktuellen Mockup/Cover. Maße unverändert (1080-basiert).
+
+**Wirksam live** nach `npm run vorlagen:galerie` bzw. dem Deploy-Skript
+(`tools/deploy/update-vorlagen-galerie.sh`) – die Galerie-Bilder werden aus
+`docs/marketing/**` neu aufbereitet; die Katalog-Einträge (Pfade/Titel) bleiben
+gleich.
+
+---
+
 ## 2026-09-06 – Reel-Cover: alle 4 Farbwelten in der Galerie
 
 In der Vorlagen-Galerie (`/admin/vorlagen`) erschien pro Reel-Cover nur **eine**
