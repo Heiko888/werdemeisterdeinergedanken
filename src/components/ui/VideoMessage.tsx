@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/cn";
 
 /**
@@ -48,13 +48,20 @@ export function VideoMessage({
   const posterMax = `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`;
   const posterFallback = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
   // Ein übergebenes Cover hat Vorrang; sonst das native YouTube-Vorschaubild.
-  const [poster, setPoster] = useState(posterOverride ?? posterMax);
+  const wunschPoster = posterOverride ?? posterMax;
+  const [poster, setPoster] = useState(wunschPoster);
   const embed = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1`;
 
-  // Bei einem Video-/Cover-Wechsel wieder mit dem Ausgangsbild starten.
-  useEffect(() => {
-    setPoster(posterOverride ?? posterMax);
-  }, [posterOverride, posterMax]);
+  // Bei einem Video-/Cover-Wechsel wieder mit dem Ausgangsbild starten. Statt
+  // eines Effekts (der eine zusätzliche Renderrunde auslöst) passen wir den
+  // abgeleiteten State direkt beim Rendern an – das von React empfohlene Muster
+  // für „State beim Prop-Wechsel zurücksetzen" (react.dev/learn/you-might-not-
+  // need-an-effect). So bleibt der onError-Fallback auf hqdefault erhalten.
+  const [letzterWunschPoster, setLetzterWunschPoster] = useState(wunschPoster);
+  if (wunschPoster !== letzterWunschPoster) {
+    setLetzterWunschPoster(wunschPoster);
+    setPoster(wunschPoster);
+  }
 
   return (
     <figure
