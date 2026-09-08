@@ -5,6 +5,26 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Buch-Design überarbeitet (durchgehend cremefarben + coolere Auftakte)
+
+Nach erstem Feedback („Design nicht cool, Inhalt nicht komplett cremefarben") am
+Buch-Generator `tools/pdf/build-buch.py` überarbeitet:
+
+- **Durchgehend cremefarben:** Beim PDF-Druck füllte der Hintergrund vorher nur den
+  Textbereich – die Seitenränder blieben weiß. Jetzt `@page { margin: 0 }` (Blatt =
+  volle Seite, Creme randlos) und der Textabstand kommt über Section-Padding mit
+  `box-decoration-break: clone`, sodass jede Folgeseite denselben Rand behält.
+  Verifiziert: alle Seitenecken sind cremefarben (245,244,237), Textabstand ~20 mm.
+- **Coolere Kapitel-Auftakte:** große konturierte Ziffer (z. B. „02"), Kicker,
+  Serif-Titel, Gold-Verlauf-Linie – statt schlichter Kicker-Zeile.
+- **Teil-Trennseiten:** große konturierte römische Ziffer (I–V) oben rechts.
+- **Cover:** Gehirn-Motiv leicht nach unten gerückt, damit es den Untertitel nicht
+  mehr überlagert.
+
+Neu bauen mit: `npm run pdf:buch`
+
+---
+
 ## 2026-09-08 – Buch „Werde Meister deiner Gedanken" ins Repo + PDF-Generator
 
 Das vollständige Buch (bisher nur als hochgeladene Markdown-Arbeitsfassung) wurde

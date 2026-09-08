@@ -240,9 +240,11 @@ for node in nodes:
     tp = node["type"]
     if tp == "part":
         eb, pt = split_part(node["title"])
+        roman = re.sub(r"(?i)^teil\s*", "", eb).strip() or eb
         intro = render_blocks(node["blocks"], dropcap=False)
         parts_html.append("""
 <section class="part">
+  <span class="part-num serif">{roman}</span>
   <img class="part-brain" src="{brain}">
   <div class="part-inner">
     <div class="part-eyebrow">{eb}</div>
@@ -251,14 +253,16 @@ for node in nodes:
     <div class="part-intro">{intro}</div>
   </div>
 </section>
-""".format(brain=BRAIN, eb=esc(eb), pt=esc(pt), intro=intro))
+""".format(roman=esc(roman), brain=BRAIN, eb=esc(eb), pt=esc(pt), intro=intro))
     elif tp == "chapter":
-        body = render_blocks(node["blocks"], dropcap=True)
+        body = render_blocks(node["blocks"], dropcap=False)
         parts_html.append("""
 <section class="chapter">
-  <div class="kicker">Kapitel {num}</div>
-  <h2 class="h2 serif">{title}</h2>
-  <div class="rule"></div>
+  <header class="opener">
+    <span class="op-num serif">{num:02d}</span>
+    <div class="op-kicker">Kapitel {num}</div>
+    <h2 class="h2 serif">{title}</h2>
+  </header>
   <div class="body">{body}</div>
 </section>
 """.format(num=node["num"], title=esc(node["title"]), body=body))
@@ -266,9 +270,10 @@ for node in nodes:
         body = render_blocks(node["blocks"], dropcap=True)
         parts_html.append("""
 <section class="chapter">
-  <div class="kicker">{kicker}</div>
-  <h2 class="h2 serif">{title}</h2>
-  <div class="rule"></div>
+  <header class="opener no-num">
+    <div class="op-kicker">{kicker}</div>
+    <h2 class="h2 serif">{title}</h2>
+  </header>
   <div class="body">{body}</div>
 </section>
 """.format(kicker=esc(node["title"]), title=esc(node.get("subtitle") or node["title"]), body=body))
@@ -276,7 +281,7 @@ for node in nodes:
         body = render_blocks(node["blocks"], dropcap=False)
         parts_html.append("""
 <section class="chapter appendix">
-  <div class="kicker">Anhang</div>
+  <header class="opener no-num"><div class="op-kicker">Anhang</div></header>
   <div class="body">{body}</div>
 </section>
 """.format(body=body))
@@ -290,7 +295,12 @@ CSS = r"""
 /*__FONTS__*/
 *{ margin:0; padding:0; box-sizing:border-box; }
 html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+html{ background:var(--paper); }
 body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); background:var(--paper); }
+/* Randlose Creme-Ebene: position:fixed wird von Chromium auf JEDER gedruckten
+   Seite wiederholt und füllt auch die Seitenränder – so ist das Buch komplett
+   cremefarben (die opaken Cover-/Teil-Hintergründe legen sich darüber). */
+body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-index:-1; }
 .serif{ font-family:'Fraunces',Georgia,serif; }
 :root{
   --paper:#f6f4ee; --surface:#efece2; --ink:#16231f; --ink-soft:#48524e;
@@ -299,7 +309,9 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
   --gold-300:#f2d489; --gold-400:#e8c15f; --gold-500:#d9a93a; --gold-700:#7e6410;
   --navy:#0b1636;
 }
-@page { size:A4; margin:22mm 24mm 20mm; }
+@page { size:A4; margin:0; }
+/* Textabstand pro Seite über Padding der Inhalts-Sektionen (Rand bleibt cremefarben) */
+.note, .toc, .chapter{ padding:20mm 24mm; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
 @page cover { margin:0; }
 @page part  { margin:0; }
 
@@ -310,8 +322,8 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
   radial-gradient(60% 42% at 18% 14%, rgba(242,212,137,.26), transparent 60%),
   radial-gradient(55% 40% at 88% 96%, rgba(217,169,58,.18), transparent 62%),
   linear-gradient(160deg,#f8f6f0 0%,#f1eee5 52%,#f6f4ee 100%); }
-.cover .brain{ position:absolute; left:50%; top:calc(58% - 8mm); transform:translate(-50%,-50%);
-  width:70%; max-width:none; opacity:.60; }
+.cover .brain{ position:absolute; left:50%; top:64%; transform:translate(-50%,-50%);
+  width:62%; max-width:none; opacity:.55; }
 .cover .inner{ position:relative; height:100%; padding:22mm 24mm 18mm; display:flex; flex-direction:column; }
 .brandrow{ display:flex; align-items:center; gap:11px; }
 .brandrow img{ width:40px; height:40px; }
@@ -358,6 +370,8 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
   linear-gradient(160deg,#0b1636 0%,#0b1636 100%); }
 .part{ background:linear-gradient(160deg,#101c40 0%,#0a1230 60%,#0b1636 100%); color:#eef1f8; }
 .part-brain{ position:absolute; left:50%; top:46%; transform:translate(-50%,-50%); width:60%; opacity:.16; }
+.part-num{ position:absolute; right:20mm; top:16mm; font-size:150px; line-height:.8; font-weight:600;
+  color:transparent; -webkit-text-stroke:2px rgba(233,193,95,.30); letter-spacing:2px; }
 .part-inner{ position:relative; height:100%; padding:40mm 26mm; display:flex; flex-direction:column; justify-content:center; }
 .part-eyebrow{ font-size:13px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold-400); font-weight:700; }
 .part-title{ font-size:44px; line-height:1.1; font-weight:600; margin-top:14px; letter-spacing:-.4px; max-width:150mm; color:#fff; }
@@ -371,10 +385,18 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
 
 /* ---------- KAPITEL (fließend) ---------- */
 .chapter{ break-before:page; }
-.kicker{ font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); font-weight:700; }
-.h2{ font-size:32px; line-height:1.12; font-weight:600; margin-top:8px; letter-spacing:-.3px; color:var(--ink); }
+/* Kapitel-Auftakt: große konturierte Ziffer, Kicker, Titel, Gold-Linie. */
+.opener{ position:relative; padding-top:2mm; margin-bottom:9mm; }
+.op-num{ display:block; font-size:128px; line-height:.78; font-weight:600; letter-spacing:-3px;
+  color:transparent; -webkit-text-stroke:1.6px rgba(126,100,16,.30);
+  background:linear-gradient(180deg, rgba(233,193,95,.16), rgba(126,100,16,0)); -webkit-background-clip:text; background-clip:text; }
+.op-kicker{ margin-top:10px; font-size:12px; letter-spacing:.26em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+.opener.no-num{ padding-top:6mm; }
+.h2{ font-size:35px; line-height:1.08; font-weight:600; margin-top:9px; letter-spacing:-.5px; color:var(--ink); max-width:155mm; }
+.opener::after{ content:""; display:block; width:64px; height:3px; border-radius:2px;
+  background:linear-gradient(90deg,var(--gold-500),var(--gold-700)); margin-top:20px; }
 .rule{ width:54px; height:2px; background:var(--leaf-500); margin:15px 0 4px; }
-.body{ margin-top:4px; }
+.body{ margin-top:0; }
 .para{ font-size:12.8px; line-height:1.75; color:var(--ink-soft); margin-top:12px; text-align:justify; hyphens:auto; }
 .para b{ color:var(--ink); font-weight:700; }
 .para i{ color:var(--ink); font-style:italic; }
