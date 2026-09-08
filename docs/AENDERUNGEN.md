@@ -5,6 +5,30 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Neues Titelbild für „Praxis" (/mitglieder/praxis)
+
+Das alte Praxis-Herobild (`hero-praxis.webp`) trug ein zentrales Praxis-Symbol
+und musste deshalb per `object-contain` mit schmalen Navy-Rändern gezeigt
+werden. Es wurde durch ein vollflächiges Naturmotiv ersetzt (Yogamatte mit
+Gehirn-Logo, Trinkflasche, Steinturm & Wasserfall vor Bergpanorama im
+Sonnenaufgang).
+
+**Geändert:**
+- **`public/hero-praxis.png`**: Das per Upload (Commit `b700cf0`) hinzugefügte
+  Bild (`ChatGPT Image Sep 8, 2026, 08_38_39 PM.png`, 1672×941) auf den Slug
+  `hero-praxis.png` umbenannt (`git mv`).
+- **`public/hero-praxis.webp`**: das alte, nur hier verwendete Motiv entfernt
+  (`git rm`).
+- **`src/app/mitglieder/praxis/page.tsx`**: `PageHero image` auf
+  `/hero-praxis.png` umgestellt und den `imageClassName="lg:object-contain"`
+  entfernt – das neue Motiv hat kein zentrales Symbol, der formatfüllende
+  `object-cover`-Zuschnitt (Standard) ist hier gewollt.
+
+**Ergebnis:** Das Bild erscheint auf
+`https://www.werdemeisterdeinergedanken.de/mitglieder/praxis`.
+
+---
+
 ## 2026-09-08 – Titelbild für „Mein Journal" (/mitglieder/journal)
 
 Der Journal-Kopf war eine einfarbige Navy-Fläche. Das hochgeladene Motiv

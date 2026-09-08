@@ -22,14 +22,10 @@ export default function PraxisIndexPage() {
         eyebrow="Gelebte Praxis"
         title="Praxis"
         intro="Was die Stufen wirksam macht: geführte Meditationen, Atemübungen und Rituale für den Alltag – jede mit klarer Schritt-für-Schritt-Anleitung."
-        image="/hero-praxis.webp"
-        // Das Motiv traegt das Praxis-Symbol im oberen Drittel. Als
-        // formatfuellender Hintergrund (object-cover) schneidet der Hero ab lg
-        // oben und unten je gut 130 px weg und kappt damit den oberen
-        // Kreisbogen. `contain` zeigt das Motiv deshalb vollstaendig – auf jeder
-        // Bildschirmbreite, um den Preis schmaler Navy-Raender links und rechts.
-        // Mobil bleibt es beim Bildband, dort ist ohnehin nichts beschnitten.
-        imageClassName="lg:object-contain"
+        // Vollflächiges Naturmotiv (Yogamatte, Trinkflasche, Steinturm vor
+        // Bergpanorama). Ohne zentrales Symbol – der formatfüllende
+        // object-cover-Zuschnitt ist hier gewollt (kein object-contain nötig).
+        image="/hero-praxis.png"
       />
 
       <section className="py-14 sm:py-18">
