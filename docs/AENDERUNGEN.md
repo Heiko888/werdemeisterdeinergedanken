@@ -5,6 +5,33 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Buch: Doppelungen Kapitel 2 ↔ Kapitel 19 entschärft
+
+Redaktionelle Überarbeitung der Leserfassung (`docs/ebook/werde-meister-deiner-gedanken.md`):
+Kapitel 2 („Die Programme hinter deinem Leben") und Kapitel 19 („Wer denkt hier
+eigentlich?") erzählten dieselben Inhalte doppelt. Kapitel 2 behält die
+**familiäre/kindliche Prägung**; Kapitel 19 wurde auf die **äußere** Herkunft der
+Gedanken (Schule, Autorität, Medien, Gruppen) zugespitzt.
+
+- „Dein Kopf beginnt nicht bei null" gestrafft; der doppelte Kindheits-/
+  Perfektionismus-Teil weicht einem kurzen Rückverweis auf Kapitel 2 und dem
+  Übergang zum „Netz aus Schule, Autoritäten, Medien und Gruppen".
+- Unterabschnitt „Die Familie – deine erste Realität" (Wiederholung inkl.
+  „Geld wächst nicht auf Bäumen") aufgelöst; die eine eigenständige Aussage
+  (Erfolgswunsch vs. dazugehören → Selbstsabotage) in den Vorabschnitt integriert.
+- „Träume, die gar nicht deine sind": Statt der Wiederholung von „Träume sind
+  Schäume" + Ziele-Liste jetzt ein expliziter Rückverweis auf Kapitel 2 mit neuer
+  Zuspitzung (Werbung/Vergleich/soziale Netzwerke); die einzigartige radikale Frage
+  bleibt.
+- „Träume sind Schäume" steht jetzt nur noch einmal als Kernsatz (Kapitel 2),
+  „Geld wächst nicht auf Bäumen" ebenfalls nur noch in Kapitel 2.
+- Nebenbei ein Formatierungs-Artefakt in Kapitel 19 behoben (erste Listenzeile war
+  ein Zitat statt Aufzählungspunkt).
+
+Buchtext-Umfang jetzt 152 Seiten. Neu bauen mit `npm run pdf:buch`.
+
+---
+
 ## 2026-09-08 – Buch: eigene Kapitel-Auftaktseiten (mutigeres Design)
 
 Auf Wunsch „mutiger, mit eigenen Kapitel-Auftaktseiten" bekommt jedes Kapitel jetzt

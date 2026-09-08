@@ -2608,65 +2608,11 @@ Du weißt nicht:
 
 Du lernst es.
 
-Nicht nur durch direkte Belehrung.
+Nicht nur durch direkte Belehrung, sondern durch Beobachten, durch Gespräche, durch Reaktionen – dadurch, worüber gesprochen und worüber geschwiegen wird.
 
-Du beobachtest.
+Wie diese früheste Prägung in Familie und Kindheit entsteht, hast du in Kapitel 2 gesehen. In diesem Kapitel geht es um etwas anderes: Nicht nur die Familie formt dein Denken. Es ist ein ganzes Netz aus Schule, Autoritäten, Medien und Gruppen, das mitbestimmt, was du für selbstverständlich hältst.
 
-Du hörst Gespräche.
-
-Du spürst Reaktionen.
-
-Du merkst, wann Erwachsene stolz auf dich sind.
-
-Du bemerkst, wann jemand enttäuscht schaut.
-
-Du bekommst mit, worüber gesprochen wird und worüber geschwiegen wird.
-
-Ein Kind lernt nicht nur durch Sätze.
-
-Es lernt durch Atmosphäre.
-
-Wenn Geld zu Hause ständig mit Streit verbunden ist, kann Geld später Gefahr bedeuten. Wenn Leistung Anerkennung bringt, kann Leistung mit Liebe verknüpft werden.
-
-Wenn Fehler beschämt werden, kann Perfektionismus entstehen.
-
-Wenn Anpassung Frieden schafft, kann ein Mensch lernen:
-
-> Wenn ich mich selbst zurücknehme, bin ich sicher.
-
-Niemand muss diesen Satz jemals ausgesprochen haben.
-
-Das Programm kann trotzdem entstehen.
-
-#### Die Familie – deine erste Realität
-
-Deine Familie ist dein erstes soziales System.
-
-Für ein Kind ist dieses System zunächst nicht eine Möglichkeit unter vielen. Es ist die Realität.
-
-Sätze wie:
-
-> „Geld wächst nicht auf Bäumen.“
-
-> „Sei froh, dass du überhaupt Arbeit hast.“
-
-> „Träum nicht so viel.“
-
-> „Mach lieber etwas Sicheres.“
-
-können Jahrzehnte später noch Entscheidungen beeinflussen.
-
-Vielleicht willst du ein Unternehmen aufbauen, aber irgendwo in dir taucht auf:
-
-> Das ist zu riskant.
-
-Vielleicht willst du viel Geld verdienen, doch sobald es wirklich möglich wird, entsteht Unbehagen.
-
-Bewusst möchtest du Erfolg.
-
-Unbewusst möchtest du vielleicht weiterhin zu dem Bild gehören, das du von einem „guten Menschen“ gelernt hast.
-
-So entstehen innere Konflikte, die später wie Selbstsabotage aussehen.
+Und diese Prägung wirkt weiter, wenn längst andere über dein Leben mitreden. Bewusst möchtest du Erfolg. Unbewusst möchtest du vielleicht weiterhin zu dem Bild gehören, das du einmal von einem „guten Menschen“ gelernt hast. So entstehen innere Konflikte, die später wie Selbstsabotage aussehen – und die von außen immer wieder neu bestätigt werden.
 
 #### Schule – wenn Anpassung mit Erfolg verwechselt wird
 
@@ -2676,8 +2622,7 @@ Aber Schule vermittelt gleichzeitig Strukturen.
 
 Du lernst:
 
-> wann du sprechen darfst
-
+- wann du sprechen darfst
 - wann du still sein musst
 - wann du dich bewegen darfst
 - was eine richtige Antwort ist
@@ -2826,32 +2771,14 @@ Entscheidend ist:
 
 #### Träume, die gar nicht deine sind
 
-Einer der Sätze, der sich durch dieses Projekt zieht, lautet:
+Erinnerst du dich an den Satz aus Kapitel 2 – „Träume sind Schäume, wenn es nicht deine eigenen sind“? In Teil V bekommt er eine zweite Bedeutung: Nicht nur die Familie pflanzt fremde Ziele. Auch Werbung, Vergleich und soziale Netzwerke liefern ständig Bilder davon, wie ein „richtiges“ Leben auszusehen hat.
 
-- Träume sind Schäume, wenn es nicht deine eigenen sind.
-Viele Menschen verfolgen Ziele, die sie nie bewusst gewählt haben.
+Vielleicht willst du genau dieses Leben wirklich. Dann ist daran nichts falsch. Aber vielleicht erfüllst du nur ein Bild, das dir von außen so oft gezeigt wurde, bis es sich wie dein eigener Wunsch anfühlt.
 
-Haus.
+Deshalb hilft eine radikale Frage:
 
-Karriere.
+> Wenn niemand mich sehen würde – würde ich dieses Leben trotzdem wollen?
 
-Status.
-
-Titel.
-
-Einkommen.
-
-Anerkennung.
-
-Vielleicht willst du das wirklich.
-
-Dann ist daran nichts falsch.
-
-Aber vielleicht erfüllst du nur ein Bild davon, wie ein erfolgreiches Leben auszusehen hat.
-
-Eine radikale Frage lautet:
-
-- Wenn niemand mich sehen würde – würde ich dieses Leben trotzdem wollen?
 Keine Likes.
 
 Keine Anerkennung.
