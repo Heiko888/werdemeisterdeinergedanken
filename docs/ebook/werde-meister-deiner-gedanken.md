@@ -44,7 +44,7 @@ Ich war über viele Jahre selbstständig. Ich habe aufgebaut, verkauft, beraten,
 
 Und ich kenne Verlust.
 
-Der Tod meiner Lebensgefährtin Lena im Jahr 2020 hat mein bisheriges Verständnis vom Leben nicht einfach erweitert. Er hat es zerschlagen. Es gab ein Davor und ein Danach. Vieles, was vorher wichtig wirkte, verlor plötzlich seine Bedeutung. Gleichzeitig wurden Fragen laut, die ich nicht mehr mit Logik allein beantworten konnte.
+Der Tod meiner Lebensgefährtin im Jahr 2020 hat mein bisheriges Verständnis vom Leben nicht einfach erweitert. Er hat es zerschlagen. Es gab ein Davor und ein Danach. Vieles, was vorher wichtig wirkte, verlor plötzlich seine Bedeutung. Gleichzeitig wurden Fragen laut, die ich nicht mehr mit Logik allein beantworten konnte.
 
 Was bleibt von einem Menschen? Was ist Bewusstsein? Was ist Zeit? Was bedeutet Verbindung? Wie kann ein Schmerz, der alles ausfüllt, sich in einem einzigen außergewöhnlichen Moment verändern?
 
@@ -669,7 +669,7 @@ Krisen zeigen Programme, die im normalen Alltag verborgen bleiben.
 
 #### 2020: Als mehrere Sicherheiten verschwanden
 
-Das Jahr 2020 brachte für viele Menschen Unsicherheit. Für mich kamen Auftragszusammenbruch, gesellschaftlicher Stillstand und der Verlust von Lena zusammen.
+Das Jahr 2020 brachte für viele Menschen Unsicherheit. Für mich kamen Auftragszusammenbruch, gesellschaftlicher Stillstand und der Verlust meiner Lebensgefährtin zusammen.
 
 Es gibt Phasen, in denen sich Probleme nicht ordentlich nacheinander anstellen. Sie kommen gleichzeitig. Dann funktioniert Selbstoptimierung nicht mehr. Du kannst nicht einfach noch produktiver werden, noch mehr planen oder noch schneller denken. Das bisherige Werkzeug versagt.
 
@@ -1444,7 +1444,7 @@ Es gibt die Zeit davor. Und es gibt alles, was danach kommt.
 
 An diesem Tag war ich in einem Supermarkt. Ein alltäglicher Ort. Regale, Einkaufswagen, Menschen, die ihre Dinge erledigten. Die Welt wirkte normal, bis sie es innerhalb eines Moments nicht mehr war.
 
-Die Nachricht über Lenas Tod veränderte alles.
+Die Nachricht über den Tod meiner Lebensgefährtin veränderte alles.
 
 Ich kann diesen Moment nicht in eine saubere spirituelle Erkenntnis verwandeln. Da war kein erhabenes Gefühl von Sinn. Da war ein Bruch. Etwas, das bis dahin zu meinem Leben gehört hatte, war plötzlich nicht mehr in derselben Form da. Der Verstand versucht in solchen Augenblicken, Unfassbares in Sätze zu pressen.
 
@@ -1815,7 +1815,7 @@ Manchmal rennst du sehr schnell in die falsche Richtung.
 
 #### Stille nach einem Verlust
 
-Nach Lenas Tod war Stille nicht automatisch friedlich. Sie konnte schmerzhaft sein, weil die Abwesenheit darin besonders deutlich wurde.
+Nach dem Tod meiner Lebensgefährtin war Stille nicht automatisch friedlich. Sie konnte schmerzhaft sein, weil die Abwesenheit darin besonders deutlich wurde.
 
 Das zeigt: Stille ist keine neutrale Technik. Sie verstärkt, was da ist.
 
@@ -2220,15 +2220,15 @@ Du kannst nach außen funktionieren und innerlich leer sein.
 
 Du kannst beschäftigt sein und trotzdem nicht leben.
 
-#### Nach Lenas Beerdigung
+#### Nach der Beerdigung meiner Lebensgefährtin
 
-Nach der Beerdigung von Lena befand ich mich in einer Wirklichkeit, in der die bisherigen Maßstäbe ihre Bedeutung verloren hatten.
+Nach ihrer Beerdigung befand ich mich in einer Wirklichkeit, in der die bisherigen Maßstäbe ihre Bedeutung verloren hatten.
 
 Ich bereitete eine Trance vor. Beifuß, den ich zuvor geerntet hatte, wurde Teil dieses Rituals. Dazu kamen Palo Santo, Musik und bewusste Atmung.
 
 Was anschließend geschah, lässt sich nur in Bildern beschreiben.
 
-Ich erlebte etwas wie einen Dimensionsstrudel. Mein gewöhnliches Körpergefühl veränderte sich. Es fühlte sich außerkörperlich an. In dieser Erfahrung begegnete ich Lena.
+Ich erlebte etwas wie einen Dimensionsstrudel. Mein gewöhnliches Körpergefühl veränderte sich. Es fühlte sich außerkörperlich an. In dieser Erfahrung begegnete ich ihr.
 
 Die Worte, die bei mir ankamen, waren einfach:
 

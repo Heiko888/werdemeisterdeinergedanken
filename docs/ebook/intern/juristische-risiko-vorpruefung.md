@@ -79,6 +79,13 @@ dokumentieren; alternativ prüfen, ob weitere Anonymisierung gewünscht ist
 (z. B. nur „meine Lebensgefährtin" ohne Namen). Entscheidung des Autors +
 anwaltliche Einordnung.
 
+**Stand 2026-09-08 – erledigt:** Auf Wunsch des Autors ist der Vorname im
+**Buchtext** vollständig entfernt; überall steht jetzt „meine Lebensgefährtin"
+(bzw. „ihr/ihre"). Das interne Story-Material (nicht veröffentlicht) kann den
+Namen als Arbeitsstand behalten. Restrisiko damit deutlich reduziert; ob darüber
+hinaus ein Angehörigen-Einverständnis gewünscht ist, bleibt Entscheidung des
+Autors.
+
 ## 4. Straf-/Insolvenz-Bezüge in der Leserfassung (🟡 – bewusst vage, so lassen)
 
 Die Leserfassung nennt **nur allgemein**: „Hausdurchsuchung, Ermittlungen"

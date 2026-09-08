@@ -5,6 +5,15 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Buch: „Lena" im Buchtext anonymisiert
+
+Auf Wunsch: der Vorname der verstorbenen Lebensgefährtin ist im **Buchtext**
+komplett entfernt. Alle 7 Stellen lauten jetzt „meine Lebensgefährtin" bzw.
+grammatisch angepasst „ihr/ihrer" – Wortlaut sonst unverändert. Das interne
+(nicht veröffentlichte) Story-Material behält den Namen als Arbeitsstand.
+
+---
+
 ## 2026-09-08 – Buch: juristische Vorprüfung + verstärkter Haftungshinweis
 
 Auf Basis einer juristischen **Risiko-Vorprüfung** (kein Rechtsrat; Dokument:
