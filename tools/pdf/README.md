@@ -6,6 +6,33 @@ Erzeugt alle gestalteten PDFs im Markendesign neu – aus einem Befehl:
 npm run pdf
 ```
 
+## Das Buch „Werde Meister deiner Gedanken"
+
+Das vollständige Buch (5 Teile, 24 Kapitel, ~129 Seiten) hat einen eigenen
+Generator und wird separat gebaut:
+
+```bash
+npm run pdf:buch
+```
+
+Das schreibt `content/pdf/Werde-Meister-deiner-Gedanken.pdf`.
+
+- **Quelle:** `docs/ebook/werde-meister-deiner-gedanken.md` – die reine
+  **Leserfassung**. Nur diese Datei wird eingelesen.
+- **Nicht im Build:** `docs/ebook/intern/` enthält das Story-Rohmaterial und die
+  redaktionellen Notizen (teils sensible/rechtliche Rohdaten). Das ist bewusst
+  vom Generator ausgeschlossen und darf nicht in die vermarktete Fassung.
+- **Aufbau des PDFs:** Titelseite · Hinweis des Autors · generiertes
+  Inhaltsverzeichnis · Teil-Trennseiten (Navy, Gehirn-Motiv) · Kapitel (Initial,
+  Zwischenüberschriften, Zitat-/Übungsboxen) · Schlusswort · Anhang.
+- **Generator:** `build-buch.py` (Markdown → HTML) + `build-buch.mjs` (Chromium → PDF).
+  Der Markdown-Parser versteht `#`–`#####`, Zitate (`>`), nummerierte und
+  Aufzählungslisten, `**fett**`/`*kursiv*`.
+
+> Ziel ist `content/pdf/` und **nicht** `public/`: unter `public/` würde Next.js
+> die Datei direkt unter ihrem Pfad ausliefern. Das Buch soll nur über eine
+> geschützte bzw. verkaufte Route zugänglich sein.
+
 Das schreibt:
 
 - `public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf` – das kostenlose Lead-Magnet-E-Book (13 Seiten, mit Inhaltsverzeichnis und persönlicher Seite „Warum es diesen Weg gibt")

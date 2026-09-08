@@ -5,6 +5,55 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Buch „Werde Meister deiner Gedanken" ins Repo + PDF-Generator
+
+Das vollständige Buch (bisher nur als hochgeladene Markdown-Arbeitsfassung) wurde
+ins Projekt aufgenommen, für die Vermarktung aufbereitet und bekommt einen eigenen
+PDF-Generator im Markendesign. Ergebnis: **129-seitiges PDF**, 5 Teile, 24 Kapitel.
+
+**Neu:**
+- **`docs/ebook/werde-meister-deiner-gedanken.md`**: die reine **Leserfassung**
+  (Einleitung, Teil I–V mit Kapitel 1–24, Schlusswort, Anhang). Einzige Quelle des
+  Generators.
+- **`docs/ebook/intern/werde-meister-story-rohmaterial.md`**: das interne
+  Arbeitsmaterial (persönliche Story-Rohmaterialien, Story-Zuordnung, redaktionelle
+  Notizen). Enthält **sensible/rechtliche Rohdaten** (Ermittlungen, Verurteilung,
+  Bewährung, Insolvenz) und ist **bewusst vom Build ausgeschlossen** – nicht
+  veröffentlichen ohne juristische Prüfung.
+- **`tools/pdf/build-buch.py`**: Markdown→HTML-Renderer für das Buch (Titelseite,
+  generiertes Inhaltsverzeichnis, Teil-Trennseiten, Kapitel mit Initial/Zitat-/
+  Übungsboxen, Anhang). Versteht `#`–`#####`, Zitate, Listen, fett/kursiv.
+- **`tools/pdf/build-buch.mjs`** + npm-Skript **`pdf:buch`**: rendert das HTML mit
+  Chromium zu `content/pdf/Werde-Meister-deiner-Gedanken.pdf`.
+- **`content/pdf/Werde-Meister-deiner-Gedanken.pdf`**: das erzeugte Buch-PDF.
+
+**Lektorat / inhaltliche Bereinigung (Leserfassung):**
+- Frontmatter bereinigt: Arbeitsfassungs-Stand, internes Meta zum Manuskript,
+  „Human Design"-Notiz und das manuelle Inhaltsverzeichnis entfernt (das TOC wird
+  jetzt gestaltet generiert). „Hinweis des Autors" bleibt.
+- **Kapitel 22**: fehlende `###`-Überschrift wiederhergestellt (Titel war in den
+  ersten Absatz verschmolzen).
+- Verirrte Überschrift `##### Vergangenheit` (Konvertierungsartefakt) entfernt,
+  umliegende Punkte zu einer Liste zusammengeführt.
+- Drei über zwei Aufzählungspunkte zerrissene Schlüssel-/Schlusssätze
+  (Kap. 19, 20, 22) zu je einem Zitat zusammengeführt.
+- Tippfehler behoben: fehlender Satzpunkt (Kap. 24), „keine vielen Reize" →
+  „nicht viele Reize" (Kap. 20), zwei in einer Zeile verklebte Zitate getrennt
+  (Kap. 9).
+
+**Ablage-Entscheidung:** Das PDF liegt unter `content/pdf/` (login-/nicht-öffentlich),
+**nicht** unter `public/`. Die Auslieferung über eine Verkaufs-/Schutzroute ist
+noch offen und separat zu entscheiden.
+
+**Noch offen (Empfehlung, nicht automatisch geändert):** redaktionelles Zusammen-
+führen der Doppelungen zwischen Kapitel 2 und Kapitel 19, sowie ggf. juristische
+Prüfung, falls konkrete Rechtsdetails aus dem internen Anhang in den Buchtext
+übernommen werden sollen (der Buchtext selbst ist derzeit bewusst vage gehalten).
+
+Neu bauen mit: `npm run pdf:buch`
+
+---
+
 ## 2026-09-08 – Neues Titelbild für „Praxis" (/mitglieder/praxis)
 
 Das alte Praxis-Herobild (`hero-praxis.webp`) trug ein zentrales Praxis-Symbol

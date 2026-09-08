@@ -10,6 +10,7 @@
     "test": "node --test \"src/**/*.test.ts\"",
     "pdf": "node tools/pdf/generate.mjs",
     "pdf:brandbook": "node tools/pdf/build-brandbook.mjs",
+    "pdf:buch": "node tools/pdf/build-buch.mjs",
     "covers": "node docs/reels/covers/build.mjs",
     "covers:png": "node docs/reels/covers/export-png.mjs",
     "carousels:slides": "node docs/carousels/build.mjs",
