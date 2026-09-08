@@ -5,6 +5,30 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Titelbild für „Mein Journal" (/mitglieder/journal)
+
+Der Journal-Kopf war eine einfarbige Navy-Fläche. Das hochgeladene Motiv
+(Kompass, aufgeschlagenes Journal mit Füller & Gehirn-Tasse vor Bergpanorama)
+sitzt jetzt als vollflächiges Titelbild dahinter – analog zum Kopf von
+„Mein Bereich" (/mitglieder).
+
+**Geändert:**
+- **`public/hero-journal.png`**: Das per Upload (Commit `e515db3`) hinzugefügte
+  Bild (`fef1d1cb-…​.png`, 1672×941) auf einen sauberen Slug umbenannt
+  (`git mv`), passend zur `hero-*`-Namenskonvention.
+- **`src/app/mitglieder/journal/page.tsx`**: `next/image` importiert und im
+  `member-hero`-Kopf ein `<Image fill priority object-right>` plus Navy-Verlauf
+  (`from-navy-950/92 … to-navy-950/55`) ergänzt. Das Motiv (rechts) bleibt
+  sichtbar, die linke Textspalte liegt lesbar über dem Verlauf. Reine
+  Dekoration (`alt=""`, `aria-hidden`) und per `print:hidden` beim Drucken
+  ausgeblendet, damit der Journal-Ausdruck sauber bleibt. Muster wie bei
+  `/mitglieder` bzw. `src/components/members/LessonHero.tsx`.
+
+**Ergebnis:** Das Bild erscheint auf
+`https://www.werdemeisterdeinergedanken.de/mitglieder/journal`.
+
+---
+
 ## 2026-09-06 – Titelbild für „Mein Bereich" (/mitglieder)
 
 Der Kopf des Mitgliederbereichs war eine einfarbige Navy-Fläche. Das neu
