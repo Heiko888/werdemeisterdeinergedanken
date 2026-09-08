@@ -5,6 +5,54 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Neues Titelbild für „Praxis" (/mitglieder/praxis)
+
+Das alte Praxis-Herobild (`hero-praxis.webp`) trug ein zentrales Praxis-Symbol
+und musste deshalb per `object-contain` mit schmalen Navy-Rändern gezeigt
+werden. Es wurde durch ein vollflächiges Naturmotiv ersetzt (Yogamatte mit
+Gehirn-Logo, Trinkflasche, Steinturm & Wasserfall vor Bergpanorama im
+Sonnenaufgang).
+
+**Geändert:**
+- **`public/hero-praxis.png`**: Das per Upload (Commit `b700cf0`) hinzugefügte
+  Bild (`ChatGPT Image Sep 8, 2026, 08_38_39 PM.png`, 1672×941) auf den Slug
+  `hero-praxis.png` umbenannt (`git mv`).
+- **`public/hero-praxis.webp`**: das alte, nur hier verwendete Motiv entfernt
+  (`git rm`).
+- **`src/app/mitglieder/praxis/page.tsx`**: `PageHero image` auf
+  `/hero-praxis.png` umgestellt und den `imageClassName="lg:object-contain"`
+  entfernt – das neue Motiv hat kein zentrales Symbol, der formatfüllende
+  `object-cover`-Zuschnitt (Standard) ist hier gewollt.
+
+**Ergebnis:** Das Bild erscheint auf
+`https://www.werdemeisterdeinergedanken.de/mitglieder/praxis`.
+
+---
+
+## 2026-09-08 – Titelbild für „Mein Journal" (/mitglieder/journal)
+
+Der Journal-Kopf war eine einfarbige Navy-Fläche. Das hochgeladene Motiv
+(Kompass, aufgeschlagenes Journal mit Füller & Gehirn-Tasse vor Bergpanorama)
+sitzt jetzt als vollflächiges Titelbild dahinter – analog zum Kopf von
+„Mein Bereich" (/mitglieder).
+
+**Geändert:**
+- **`public/hero-journal.png`**: Das per Upload (Commit `e515db3`) hinzugefügte
+  Bild (`fef1d1cb-…​.png`, 1672×941) auf einen sauberen Slug umbenannt
+  (`git mv`), passend zur `hero-*`-Namenskonvention.
+- **`src/app/mitglieder/journal/page.tsx`**: `next/image` importiert und im
+  `member-hero`-Kopf ein `<Image fill priority object-right>` plus Navy-Verlauf
+  (`from-navy-950/92 … to-navy-950/55`) ergänzt. Das Motiv (rechts) bleibt
+  sichtbar, die linke Textspalte liegt lesbar über dem Verlauf. Reine
+  Dekoration (`alt=""`, `aria-hidden`) und per `print:hidden` beim Drucken
+  ausgeblendet, damit der Journal-Ausdruck sauber bleibt. Muster wie bei
+  `/mitglieder` bzw. `src/components/members/LessonHero.tsx`.
+
+**Ergebnis:** Das Bild erscheint auf
+`https://www.werdemeisterdeinergedanken.de/mitglieder/journal`.
+
+---
+
 ## 2026-09-06 – Titelbild für „Mein Bereich" (/mitglieder)
 
 Der Kopf des Mitgliederbereichs war eine einfarbige Navy-Fläche. Das neu

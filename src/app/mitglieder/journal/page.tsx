@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
+import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -98,7 +99,24 @@ export default async function JournalPage() {
     <>
       {/* Kopf + Cockpit */}
       <section className="member-hero overflow-hidden py-16 print:border-0 print:py-4 sm:py-20">
-        <Container className="flex flex-col items-start gap-5">
+        {/* Titelbild – Kompass, Journal & Gehirn-Tasse als vollflächiger
+            Hintergrund. Das Motiv liegt rechts, die Textspalte links über dem
+            dunklen Navy-Verlauf, der die Lesbarkeit sichert. Reine Dekoration
+            (alt="", aria-hidden) und beim Drucken ausgeblendet. */}
+        <Image
+          src="/hero-journal.png"
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="z-0 object-cover object-right print:hidden"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-navy-950/92 via-navy-950/80 to-navy-950/55 print:hidden"
+        />
+        <Container className="relative z-10 flex flex-col items-start gap-5">
           {/* Nur beim Drucken sichtbar: Buch-Kopf */}
           <div className="hidden w-full flex-col gap-1 border-b border-ink/15 pb-4 print:flex">
             <span className={memberEyebrow}>
