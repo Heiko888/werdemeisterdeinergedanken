@@ -6,7 +6,13 @@
 
 ## Hinweis des Autors
 
-Dieses Buch ersetzt keine medizinische oder psychotherapeutische Behandlung. Es ist eine Einladung zur Selbstbeobachtung, zur persönlichen Entwicklung und zur bewussten Gestaltung des eigenen Lebens. Außergewöhnliche spirituelle Erfahrungen werden als persönliche Erlebnisse beschrieben. Sie sollen weder als allgemeingültiger Beweis noch als Versprechen verstanden werden.
+Dieses Buch dient der persönlichen Entwicklung und Selbstbeobachtung. Es ersetzt keine medizinische, psychotherapeutische, rechtliche oder finanzielle Beratung. Bei gesundheitlichen, seelischen, rechtlichen oder wirtschaftlichen Fragen wende dich bitte an entsprechende Fachpersonen.
+
+Die beschriebenen Übungen führst du in eigener Verantwortung durch. Bei körperlichen oder seelischen Warnsignalen brich sie ab und hole dir Unterstützung.
+
+Spirituelle und energetische Methoden – etwa Meditation, Atemarbeit, Reiki, Klang- und Frequenzarbeit – werden als persönliche Erfahrungen beschrieben. Sie sind keine wissenschaftlich anerkannten Heilverfahren und kein Versprechen auf ein bestimmtes Ergebnis. Erfahrungen sind individuell verschieden.
+
+Namen und persönliche Geschichten werden mit Respekt wiedergegeben. Wo reale Menschen berührt sind, geschieht dies allein aus der subjektiven Perspektive des Autors.
 
 # Einleitung
 

@@ -5,6 +5,28 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Buch: juristische Vorprüfung + verstärkter Haftungshinweis
+
+Auf Basis einer juristischen **Risiko-Vorprüfung** (kein Rechtsrat; Dokument:
+`docs/ebook/intern/juristische-risiko-vorpruefung.md`) zwei konkrete Punkte
+umgesetzt:
+
+- **Haftungshinweis verstärkt** (`docs/ebook/…werde-meister….md`, „Hinweis des
+  Autors"): jetzt auch keine rechtliche/finanzielle Beratung, Übungen in
+  Eigenverantwortung, energetische Methoden ausdrücklich „keine wissenschaftlich
+  anerkannten Heilverfahren, kein Versprechen", Hinweis zu realen Personen.
+- **Copyright-/Impressum-Zeile** auf der Hinweis-Seite: „© 2026 Heiko
+  Schwaninger. Alle Rechte vorbehalten." Die **ladungsfähige Anschrift** (Pflicht
+  beim Verkauf) ist per Env `BUCH_IMPRESSUM` befüllbar – **noch nachzutragen**.
+- Generator (`build-buch.py`) rendert den Hinweis jetzt mehrabsätzig und die
+  Copyright-/Impressum-Zeile.
+
+Offen laut Vorprüfung (anwaltlich abzunehmen): vollständiges Impressum/Anschrift,
+Einordnung „Lena" (Angehörigen-Einverständnis?), finale Freigabe des Disclaimers,
+Marketing-Claims. Internes Story-Material bleibt vom Build ausgeschlossen.
+
+---
+
 ## 2026-09-08 – Buch: Formatierungs-Feinschliff (Lektorat, ohne Wortänderung)
 
 Rein typografischer Reflow der Leserfassung – **kein Wort und kein Satzzeichen

@@ -23,6 +23,10 @@ BUILD = os.environ.get("BUILD_DIR", os.path.join(HERE, ".build"))
 MD = os.environ.get(
     "BUCH_MD", os.path.join(ROOT, "docs", "ebook", "werde-meister-deiner-gedanken.md")
 )
+# Impressum/Anbieterkennzeichnung (ladungsfähige Anschrift/Kontakt) – per Env
+# befüllen, z. B. BUCH_IMPRESSUM="Heiko Schwaninger, Musterstr. 1, 12345 Ort".
+# Leer lassen = keine Impressum-Zeile (dann vor Verkauf nachtragen!).
+IMPRESSUM = os.environ.get("BUCH_IMPRESSUM", "").strip()
 os.makedirs(BUILD, exist_ok=True)
 
 def enc(p, mime):
@@ -90,7 +94,8 @@ raw = open(MD, encoding="utf-8").read().splitlines()
 blocks = parse_blocks(raw)
 
 title = blocks[0][1] if blocks and blocks[0][0] == "h1" else "Werde Meister deiner Gedanken"
-subtitle = author = disclaimer = ""
+subtitle = author = ""
+disclaimer_paras = []
 nodes = []
 
 i = 1
@@ -102,8 +107,8 @@ while i < len(blocks) and blocks[i][0] != "h1":
     elif t == "h2" and not subtitle:
         subtitle = val
     elif t == "p":
-        if seen_hinweis and not disclaimer:
-            disclaimer = val
+        if seen_hinweis:
+            disclaimer_paras.append(val)
         elif val.strip().startswith("**") and not author:
             author = val.strip().strip("*").strip()
     i += 1
@@ -228,17 +233,20 @@ parts_html.append("""
            title=esc(title), subtitle=esc(subtitle),
            author=esc(author or "Heiko Schwaninger")))
 
-# -- Hinweis des Autors ----------------------------------------------------
-if disclaimer:
+# -- Hinweis des Autors + Impressum/Copyright ------------------------------
+if disclaimer_paras:
+    txt = "".join('<p class="note-text">%s</p>' % inline(x) for x in disclaimer_paras)
     parts_html.append("""
 <section class="note">
   <div class="note-inner">
     <div class="kicker">Hinweis des Autors</div>
     <div class="note-rule"></div>
-    <p class="note-text">{txt}</p>
+    {txt}
+    <p class="note-copyright">© {year} {author}. Alle Rechte vorbehalten.{impressum}</p>
   </div>
 </section>
-""".format(txt=inline(disclaimer)))
+""".format(txt=txt, year=2026, author=esc(author or "Heiko Schwaninger"),
+           impressum=(" · " + esc(IMPRESSUM) if IMPRESSUM else "")))
 
 # -- Inhaltsverzeichnis (generiert) ---------------------------------------
 toc = ['<section class="toc"><div class="kicker">Inhalt</div><h2 class="h2 serif">Inhaltsverzeichnis</h2><div class="rule"></div><div class="toc-body">']
@@ -356,7 +364,8 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
 .note-inner{ max-width:150mm; }
 .note .kicker{ font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); font-weight:700; }
 .note-rule{ width:54px; height:2px; background:var(--leaf-500); margin:12px 0 16px; }
-.note-text{ font-family:'Fraunces',serif; font-size:16px; line-height:1.7; color:var(--ink-soft); }
+.note-text{ font-family:'Fraunces',serif; font-size:15px; line-height:1.6; color:var(--ink-soft); margin-top:12px; }
+.note-copyright{ margin-top:20px; padding-top:12px; border-top:1px solid var(--hair); font-size:10.5px; color:var(--ink-soft); }
 
 /* ---------- INHALTSVERZEICHNIS ---------- */
 .toc{ break-before:page; }
