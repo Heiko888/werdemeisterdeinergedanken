@@ -183,6 +183,30 @@ def render_blocks(bl, dropcap=False):
             out.append('<div class="ornament">✦</div>')
     return "\n".join(out)
 
+def opener_page(eyebrow, title, numeral=None):
+    """Eigene, gestaltete Kapitel-/Abschnitts-Auftaktseite (volle Seite)."""
+    if numeral is not None:
+        return """
+<section class="chap-opener">
+  <span class="co-num serif">{num}</span>
+  <div class="co-foot">
+    <div class="co-eyebrow">{eyebrow}</div>
+    <h2 class="co-title serif">{title}</h2>
+    <div class="co-rule"></div>
+  </div>
+</section>
+""".format(num=esc(numeral), eyebrow=esc(eyebrow), title=esc(title))
+    return """
+<section class="chap-opener no-num">
+  <div class="co-center">
+    <img class="co-logo" src="{logo}">
+    <div class="co-eyebrow">{eyebrow}</div>
+    <h2 class="co-title serif">{title}</h2>
+    <div class="co-rule"></div>
+  </div>
+</section>
+""".format(logo=LOGO, eyebrow=esc(eyebrow), title=esc(title))
+
 parts_html = []
 
 # -- Titelseite ------------------------------------------------------------
@@ -255,36 +279,18 @@ for node in nodes:
 </section>
 """.format(roman=esc(roman), brain=BRAIN, eb=esc(eb), pt=esc(pt), intro=intro))
     elif tp == "chapter":
-        body = render_blocks(node["blocks"], dropcap=False)
-        parts_html.append("""
-<section class="chapter">
-  <header class="opener">
-    <span class="op-num serif">{num:02d}</span>
-    <div class="op-kicker">Kapitel {num}</div>
-    <h2 class="h2 serif">{title}</h2>
-  </header>
-  <div class="body">{body}</div>
-</section>
-""".format(num=node["num"], title=esc(node["title"]), body=body))
+        body = render_blocks(node["blocks"], dropcap=True)
+        parts_html.append(opener_page("Kapitel %d" % node["num"],
+                                      node["title"], numeral="%02d" % node["num"]))
+        parts_html.append('<section class="chapter"><div class="body">%s</div></section>' % body)
     elif tp in ("intro", "closing"):
         body = render_blocks(node["blocks"], dropcap=True)
-        parts_html.append("""
-<section class="chapter">
-  <header class="opener no-num">
-    <div class="op-kicker">{kicker}</div>
-    <h2 class="h2 serif">{title}</h2>
-  </header>
-  <div class="body">{body}</div>
-</section>
-""".format(kicker=esc(node["title"]), title=esc(node.get("subtitle") or node["title"]), body=body))
+        parts_html.append(opener_page(node["title"], node.get("subtitle") or node["title"]))
+        parts_html.append('<section class="chapter"><div class="body">%s</div></section>' % body)
     elif tp == "appendix":
         body = render_blocks(node["blocks"], dropcap=False)
-        parts_html.append("""
-<section class="chapter appendix">
-  <header class="opener no-num"><div class="op-kicker">Anhang</div></header>
-  <div class="body">{body}</div>
-</section>
-""".format(body=body))
+        parts_html.append(opener_page("Anhang", "Werkzeuge zum Weiterarbeiten"))
+        parts_html.append('<section class="chapter appendix"><div class="body">%s</div></section>' % body)
     else:
         body = render_blocks(node["blocks"], dropcap=True)
         parts_html.append('<section class="chapter"><h2 class="h2 serif">%s</h2><div class="rule"></div><div class="body">%s</div></section>'
@@ -312,8 +318,9 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
 @page { size:A4; margin:0; }
 /* Textabstand pro Seite über Padding der Inhalts-Sektionen (Rand bleibt cremefarben) */
 .note, .toc, .chapter{ padding:20mm 24mm; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
-@page cover { margin:0; }
-@page part  { margin:0; }
+@page cover    { margin:0; }
+@page part     { margin:0; }
+@page chapopen { margin:0; }
 
 /* ---------- COVER ---------- */
 .cover{ page:cover; position:relative; width:210mm; height:297mm; overflow:hidden;
@@ -383,18 +390,29 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
 .part-intro .leit p{ color:#fff; }
 .part-intro .list li{ color:#c9d0e2; }
 
-/* ---------- KAPITEL (fließend) ---------- */
+/* ---------- KAPITEL-AUFTAKTSEITE (eigene, gestaltete Seite) ---------- */
+.chap-opener{ page:chapopen; position:relative; width:210mm; height:297mm; overflow:hidden;
+  break-before:page; break-after:page;
+  background:radial-gradient(120% 68% at 50% 2%, rgba(233,193,95,.13), transparent 58%), var(--paper); }
+/* feiner Gold-Rahmen als „Plate" */
+.chap-opener::before{ content:""; position:absolute; inset:13mm; border:1px solid rgba(126,100,16,.32); pointer-events:none; }
+/* Riesenziffer */
+.co-num{ position:absolute; top:30mm; left:0; right:0; text-align:center;
+  font-size:300px; line-height:.8; font-weight:600; letter-spacing:-4px;
+  color:transparent; -webkit-text-stroke:2.5px rgba(126,100,16,.32);
+  background:linear-gradient(180deg, rgba(233,193,95,.26), rgba(126,100,16,0)); -webkit-background-clip:text; background-clip:text; }
+.co-foot{ position:absolute; left:26mm; right:26mm; bottom:48mm; }
+.co-eyebrow{ font-size:13px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold-700); font-weight:700; }
+.co-title{ font-size:45px; line-height:1.06; font-weight:600; letter-spacing:-.5px; color:var(--ink); margin-top:12px; max-width:150mm; }
+.co-rule{ width:72px; height:3px; border-radius:2px; background:linear-gradient(90deg,var(--gold-500),var(--gold-700)); margin-top:22px; }
+/* Auftaktseite ohne Nummer (Einleitung/Schlusswort/Anhang): zentriert mit Logo */
+.chap-opener.no-num{ display:flex; align-items:center; justify-content:center; text-align:center; }
+.co-center{ position:relative; max-width:150mm; padding:0 18mm; }
+.co-logo{ width:58px; height:58px; margin:0 auto 20px; display:block; }
+.chap-opener.no-num .co-rule{ margin:24px auto 0; }
+
+/* ---------- KAPITEL (Fließtext, ab Folgeseite) ---------- */
 .chapter{ break-before:page; }
-/* Kapitel-Auftakt: große konturierte Ziffer, Kicker, Titel, Gold-Linie. */
-.opener{ position:relative; padding-top:2mm; margin-bottom:9mm; }
-.op-num{ display:block; font-size:128px; line-height:.78; font-weight:600; letter-spacing:-3px;
-  color:transparent; -webkit-text-stroke:1.6px rgba(126,100,16,.30);
-  background:linear-gradient(180deg, rgba(233,193,95,.16), rgba(126,100,16,0)); -webkit-background-clip:text; background-clip:text; }
-.op-kicker{ margin-top:10px; font-size:12px; letter-spacing:.26em; text-transform:uppercase; color:var(--accent); font-weight:700; }
-.opener.no-num{ padding-top:6mm; }
-.h2{ font-size:35px; line-height:1.08; font-weight:600; margin-top:9px; letter-spacing:-.5px; color:var(--ink); max-width:155mm; }
-.opener::after{ content:""; display:block; width:64px; height:3px; border-radius:2px;
-  background:linear-gradient(90deg,var(--gold-500),var(--gold-700)); margin-top:20px; }
 .rule{ width:54px; height:2px; background:var(--leaf-500); margin:15px 0 4px; }
 .body{ margin-top:0; }
 .para{ font-size:12.8px; line-height:1.75; color:var(--ink-soft); margin-top:12px; text-align:justify; hyphens:auto; }

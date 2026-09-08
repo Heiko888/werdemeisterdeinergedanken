@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Buch: eigene Kapitel-Auftaktseiten (mutigeres Design)
+
+Auf Wunsch „mutiger, mit eigenen Kapitel-Auftaktseiten" bekommt jedes Kapitel jetzt
+eine **eigene, ganzseitige Auftaktseite**; der Fließtext beginnt erst auf der
+Folgeseite (Initial/Drop-Cap auf dem ersten Absatz).
+
+- **Kapitel-Auftaktseite:** feiner Gold-Rahmen als „Plate", riesige konturierte
+  Ziffer (01–24) oben, Kicker + großer Serif-Titel + Gold-Verlauf-Linie unten links.
+- **Einleitung / Schlusswort / Anhang:** analoge Auftaktseite, zentriert, mit
+  Marken-Gehirn statt Ziffer.
+- Umsetzung: eigener `@page chapopen { margin:0 }`, Auftaktseiten via `break-after:page`.
+- Umfang jetzt **153 Seiten**.
+
+Neu bauen mit: `npm run pdf:buch`
+
+---
+
 ## 2026-09-08 – Buch-Design überarbeitet (durchgehend cremefarben + coolere Auftakte)
 
 Nach erstem Feedback („Design nicht cool, Inhalt nicht komplett cremefarben") am
