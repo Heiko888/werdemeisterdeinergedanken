@@ -5,6 +5,27 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-08 – Buch: Formatierungs-Feinschliff (Lektorat, ohne Wortänderung)
+
+Rein typografischer Reflow der Leserfassung – **kein Wort und kein Satzzeichen
+geändert** (automatisch verifiziert: identische Wort-Reihenfolge, 20.440 Tokens
+vorher = nachher).
+
+- **Zusammengelaufene Zitat-Aufzählungen** aufgelöst: `>`-Zeilen mit mehreren
+  Stichpunkten in einer Zeile (z. B. „schnellerer Herzschlag beschleunigte Atmung
+  …", „Gut gegen Böse / Opfer gegen Täter …", „Reform statt Kürzung …") stehen
+  jetzt je Punkt auf eigener Zeile → saubere mehrzeilige Zitatboxen (~45 Stellen).
+- **Fill-in-Prompts mit „…"** (Übungen) je Fragment auf eigene Zeile.
+- **Einzeiler-Bullets in Teil V** (Kap. 19–24), die hervorgehobene Merksätze/
+  Beispielzitate sind, zu `>`-Zitaten vereinheitlicht (~25 Stellen).
+- Fehlende **Leerzeilen** vor Überschriften und nach Listen ergänzt (~30 Stellen).
+
+Absicherung: Vor/nach dem Reflow wurde die komplette Wort-Reihenfolge des Buches
+(Marker/Whitespace herausgerechnet) verglichen und als identisch bestätigt.
+Umfang jetzt 158 Seiten. Neu bauen mit `npm run pdf:buch`.
+
+---
+
 ## 2026-09-08 – Buch: Doppelungen Kapitel 2 ↔ Kapitel 19 entschärft
 
 Redaktionelle Überarbeitung der Leserfassung (`docs/ebook/werde-meister-deiner-gedanken.md`):
