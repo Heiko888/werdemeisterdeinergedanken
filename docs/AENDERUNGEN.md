@@ -54,6 +54,20 @@ nach Screenshot-Prüfung mobil + Desktop, 2026-09-09). Keine Aufhellung.
 
 ---
 
+## 2026-09-09 – Social Media: Gold-Grafiken-Übersicht (Bestandsaufnahme)
+
+Dokumentierter Serverstand aller **Gold**-Social-Media-Grafiken erstellt – ohne
+Löschen oder Neu-Erzeugen. Zwei neue Dateien:
+`docs/marketing/GOLD-GRAFIKEN-UEBERSICHT.md` (lesbare Übersicht pro Kanal mit
+Zweck, Namenskonvention und Gold-only-Render-Befehlen) und
+`docs/marketing/gold-grafiken-manifest.txt` (vollständige Datei-Liste mit
+Datum + Commit im Kopf). Kernaussage: „Gold" = alle Assets **ohne** `-tuerkis`
+(kein Suffix = `dunkel` Gold+Navy, `-hell` = Creme+Gold). Bestand: **828 Gold-PNG
+(≈ 553 MB)** über Instagram, Facebook, LinkedIn, YouTube, WhatsApp, Profil,
+Messenger, E-Book, Zitate, Studien, Story-Overlays/-Carousels und Thumbnails.
+
+---
+
 ## 2026-09-09 – Buch: Impressum-Anschrift eingetragen
 
 Ladungsfähige Anschrift ins Impressum aufgenommen (Hinweis-Seite):
