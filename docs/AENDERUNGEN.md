@@ -5,6 +5,39 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Verkaufsseite `/buch`: Schwerpunkt & Struktur korrigiert
+
+Die Buch-Verkaufsseite lehnte sich inhaltlich zu stark an das **kostenlose
+E-Book** an (7 Stufen / „raus aus dem Autopilot“). Das Buch **„Werde Meister
+deiner Gedanken“** hat aber einen anderen Schwerpunkt: **die Gedanken, die
+nicht deine sind** – Reizüberflutung, Framing, hypnotische/suggestive
+Sprachmuster, Propaganda, Algorithmen & Gruppendruck – und ist in **fünf Teilen
+/ 24 Kapiteln** aufgebaut. `src/app/buch/page.tsx` entsprechend neu getextet:
+
+- **Hero-Unterzeile**: „… in fünf Teilen und 24 Kapiteln“ statt „in 7 Stufen“.
+- **Metadaten/OG-Description**: auf den Beeinflussungs-Schwerpunkt umgestellt.
+- **Problem-Sektion**: „Wer denkt hier eigentlich?“ – Gedanken von außen,
+  Reizüberflutung, unsichtbare Steuerung (statt Autopilot/„du wirst gelebt“).
+- **Inhalt-Sektion**: die „7 Stufen“-Liste (aus `lib/content`) ersetzt durch die
+  echte Buchstruktur mit dem hervorgehobenen Schwerpunkt-Teil **„Die Gedanken,
+  die nicht deine sind“** und dessen Kapiteln 19–24 als Leseprobe.
+- **„Was dich erwartet“, „Für wen“, Angebotsbox-Punkte**: auf Beeinflussung
+  erkennen / selbst denken / 5 Teile, 24 Kapitel umgeschrieben.
+- **FAQ**: neue Fragen „Worum geht es in dem Buch?“ und – zur klaren Abgrenzung –
+  **„Ist das dasselbe wie das kostenlose E-Book?“** (Nein: E-Book = Einstieg
+  in die 7 Stufen; Buch = tiefer, Fokus Beeinflussung von außen).
+
+Kein Import von `stages` mehr auf der Seite. Verifiziert: `npm run lint`
+(0 Fehler), `npm run build` (grün), Smoke `/buch` → HTTP 200 mit sichtbaren
+Schwerpunkt-Kapiteln.
+
+Hinweis: Die vollständige Gliederung (Titel aller fünf Teile + 24 Kapitel) liegt
+noch nicht vollständig vor – aktuell ist der letzte Teil (Kap. 19–24) als
+Schwerpunkt/Leseprobe abgebildet; die restlichen Teile können ergänzt werden,
+sobald die Titel vorliegen.
+
+---
+
 ## 2026-09-09 – Neue Verkaufsseite für das Buch (`/buch`, 29,90 €)
 
 Eigenständige Verkaufsseite (Landingpage) für das gedruckte Buch **„Werde
