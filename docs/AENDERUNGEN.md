@@ -32,6 +32,9 @@ Neu: Das Formular richtet sich nach `thema`.
 Verifiziert: `npx tsc --noEmit` (keine neuen Fehler in den geänderten Dateien),
 `npm run lint` (0 Fehler), `npm run build` (grün).
 
+**Serverstand:** In `main` gemergt via PR #323 (Squash-Commit `4ebbf33`),
+CI grün (Vercel-Deployment erfolgreich) → live in Produktion.
+
 ---
 
 ## 2026-09-09 – Verkaufsseite `/buch`: vollständiges Inhaltsverzeichnis
