@@ -5,6 +5,181 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Buch: Impressum-Anschrift eingetragen
+
+Ladungsfähige Anschrift ins Impressum aufgenommen (Hinweis-Seite):
+„Impressum: Heiko Schwaninger · Dompfaffenweg 30 · 63920 Großheubach". Fest im
+Generator hinterlegt (per Env `BUCH_IMPRESSUM` überschreibbar). Offiziell
+korrigierte Schreibweise „Großheubach" (ß). Kontakt-E-Mail (info@werdemeisterdeinergedanken.de) ergänzt. Vertriebsform-
+spezifische Pflichtangaben ggf. später prüfen (siehe Vorprüfung).
+
+---
+
+## 2026-09-08 – Buch: „Lena" im Buchtext anonymisiert
+
+Auf Wunsch: der Vorname der verstorbenen Lebensgefährtin ist im **Buchtext**
+komplett entfernt. Alle 7 Stellen lauten jetzt „meine Lebensgefährtin" bzw.
+grammatisch angepasst „ihr/ihrer" – Wortlaut sonst unverändert. Das interne
+(nicht veröffentlichte) Story-Material behält den Namen als Arbeitsstand.
+
+---
+
+## 2026-09-08 – Buch: juristische Vorprüfung + verstärkter Haftungshinweis
+
+Auf Basis einer juristischen **Risiko-Vorprüfung** (kein Rechtsrat; Dokument:
+`docs/ebook/intern/juristische-risiko-vorpruefung.md`) zwei konkrete Punkte
+umgesetzt:
+
+- **Haftungshinweis verstärkt** (`docs/ebook/…werde-meister….md`, „Hinweis des
+  Autors"): jetzt auch keine rechtliche/finanzielle Beratung, Übungen in
+  Eigenverantwortung, energetische Methoden ausdrücklich „keine wissenschaftlich
+  anerkannten Heilverfahren, kein Versprechen", Hinweis zu realen Personen.
+- **Copyright-/Impressum-Zeile** auf der Hinweis-Seite: „© 2026 Heiko
+  Schwaninger. Alle Rechte vorbehalten." Die **ladungsfähige Anschrift** (Pflicht
+  beim Verkauf) ist per Env `BUCH_IMPRESSUM` befüllbar – **noch nachzutragen**.
+- Generator (`build-buch.py`) rendert den Hinweis jetzt mehrabsätzig und die
+  Copyright-/Impressum-Zeile.
+
+Offen laut Vorprüfung (anwaltlich abzunehmen): vollständiges Impressum/Anschrift,
+Einordnung „Lena" (Angehörigen-Einverständnis?), finale Freigabe des Disclaimers,
+Marketing-Claims. Internes Story-Material bleibt vom Build ausgeschlossen.
+
+---
+
+## 2026-09-08 – Buch: Formatierungs-Feinschliff (Lektorat, ohne Wortänderung)
+
+Rein typografischer Reflow der Leserfassung – **kein Wort und kein Satzzeichen
+geändert** (automatisch verifiziert: identische Wort-Reihenfolge, 20.440 Tokens
+vorher = nachher).
+
+- **Zusammengelaufene Zitat-Aufzählungen** aufgelöst: `>`-Zeilen mit mehreren
+  Stichpunkten in einer Zeile (z. B. „schnellerer Herzschlag beschleunigte Atmung
+  …", „Gut gegen Böse / Opfer gegen Täter …", „Reform statt Kürzung …") stehen
+  jetzt je Punkt auf eigener Zeile → saubere mehrzeilige Zitatboxen (~45 Stellen).
+- **Fill-in-Prompts mit „…"** (Übungen) je Fragment auf eigene Zeile.
+- **Einzeiler-Bullets in Teil V** (Kap. 19–24), die hervorgehobene Merksätze/
+  Beispielzitate sind, zu `>`-Zitaten vereinheitlicht (~25 Stellen).
+- Fehlende **Leerzeilen** vor Überschriften und nach Listen ergänzt (~30 Stellen).
+
+Absicherung: Vor/nach dem Reflow wurde die komplette Wort-Reihenfolge des Buches
+(Marker/Whitespace herausgerechnet) verglichen und als identisch bestätigt.
+Umfang jetzt 158 Seiten. Neu bauen mit `npm run pdf:buch`.
+
+---
+
+## 2026-09-08 – Buch: Doppelungen Kapitel 2 ↔ Kapitel 19 entschärft
+
+Redaktionelle Überarbeitung der Leserfassung (`docs/ebook/werde-meister-deiner-gedanken.md`):
+Kapitel 2 („Die Programme hinter deinem Leben") und Kapitel 19 („Wer denkt hier
+eigentlich?") erzählten dieselben Inhalte doppelt. Kapitel 2 behält die
+**familiäre/kindliche Prägung**; Kapitel 19 wurde auf die **äußere** Herkunft der
+Gedanken (Schule, Autorität, Medien, Gruppen) zugespitzt.
+
+- „Dein Kopf beginnt nicht bei null" gestrafft; der doppelte Kindheits-/
+  Perfektionismus-Teil weicht einem kurzen Rückverweis auf Kapitel 2 und dem
+  Übergang zum „Netz aus Schule, Autoritäten, Medien und Gruppen".
+- Unterabschnitt „Die Familie – deine erste Realität" (Wiederholung inkl.
+  „Geld wächst nicht auf Bäumen") aufgelöst; die eine eigenständige Aussage
+  (Erfolgswunsch vs. dazugehören → Selbstsabotage) in den Vorabschnitt integriert.
+- „Träume, die gar nicht deine sind": Statt der Wiederholung von „Träume sind
+  Schäume" + Ziele-Liste jetzt ein expliziter Rückverweis auf Kapitel 2 mit neuer
+  Zuspitzung (Werbung/Vergleich/soziale Netzwerke); die einzigartige radikale Frage
+  bleibt.
+- „Träume sind Schäume" steht jetzt nur noch einmal als Kernsatz (Kapitel 2),
+  „Geld wächst nicht auf Bäumen" ebenfalls nur noch in Kapitel 2.
+- Nebenbei ein Formatierungs-Artefakt in Kapitel 19 behoben (erste Listenzeile war
+  ein Zitat statt Aufzählungspunkt).
+
+Buchtext-Umfang jetzt 152 Seiten. Neu bauen mit `npm run pdf:buch`.
+
+---
+
+## 2026-09-08 – Buch: eigene Kapitel-Auftaktseiten (mutigeres Design)
+
+Auf Wunsch „mutiger, mit eigenen Kapitel-Auftaktseiten" bekommt jedes Kapitel jetzt
+eine **eigene, ganzseitige Auftaktseite**; der Fließtext beginnt erst auf der
+Folgeseite (Initial/Drop-Cap auf dem ersten Absatz).
+
+- **Kapitel-Auftaktseite:** feiner Gold-Rahmen als „Plate", riesige konturierte
+  Ziffer (01–24) oben, Kicker + großer Serif-Titel + Gold-Verlauf-Linie unten links.
+- **Einleitung / Schlusswort / Anhang:** analoge Auftaktseite, zentriert, mit
+  Marken-Gehirn statt Ziffer.
+- Umsetzung: eigener `@page chapopen { margin:0 }`, Auftaktseiten via `break-after:page`.
+- Umfang jetzt **153 Seiten**.
+
+Neu bauen mit: `npm run pdf:buch`
+
+---
+
+## 2026-09-08 – Buch-Design überarbeitet (durchgehend cremefarben + coolere Auftakte)
+
+Nach erstem Feedback („Design nicht cool, Inhalt nicht komplett cremefarben") am
+Buch-Generator `tools/pdf/build-buch.py` überarbeitet:
+
+- **Durchgehend cremefarben:** Beim PDF-Druck füllte der Hintergrund vorher nur den
+  Textbereich – die Seitenränder blieben weiß. Jetzt `@page { margin: 0 }` (Blatt =
+  volle Seite, Creme randlos) und der Textabstand kommt über Section-Padding mit
+  `box-decoration-break: clone`, sodass jede Folgeseite denselben Rand behält.
+  Verifiziert: alle Seitenecken sind cremefarben (245,244,237), Textabstand ~20 mm.
+- **Coolere Kapitel-Auftakte:** große konturierte Ziffer (z. B. „02"), Kicker,
+  Serif-Titel, Gold-Verlauf-Linie – statt schlichter Kicker-Zeile.
+- **Teil-Trennseiten:** große konturierte römische Ziffer (I–V) oben rechts.
+- **Cover:** Gehirn-Motiv leicht nach unten gerückt, damit es den Untertitel nicht
+  mehr überlagert.
+
+Neu bauen mit: `npm run pdf:buch`
+
+---
+
+## 2026-09-08 – Buch „Werde Meister deiner Gedanken" ins Repo + PDF-Generator
+
+Das vollständige Buch (bisher nur als hochgeladene Markdown-Arbeitsfassung) wurde
+ins Projekt aufgenommen, für die Vermarktung aufbereitet und bekommt einen eigenen
+PDF-Generator im Markendesign. Ergebnis: **129-seitiges PDF**, 5 Teile, 24 Kapitel.
+
+**Neu:**
+- **`docs/ebook/werde-meister-deiner-gedanken.md`**: die reine **Leserfassung**
+  (Einleitung, Teil I–V mit Kapitel 1–24, Schlusswort, Anhang). Einzige Quelle des
+  Generators.
+- **`docs/ebook/intern/werde-meister-story-rohmaterial.md`**: das interne
+  Arbeitsmaterial (persönliche Story-Rohmaterialien, Story-Zuordnung, redaktionelle
+  Notizen). Enthält **sensible/rechtliche Rohdaten** (Ermittlungen, Verurteilung,
+  Bewährung, Insolvenz) und ist **bewusst vom Build ausgeschlossen** – nicht
+  veröffentlichen ohne juristische Prüfung.
+- **`tools/pdf/build-buch.py`**: Markdown→HTML-Renderer für das Buch (Titelseite,
+  generiertes Inhaltsverzeichnis, Teil-Trennseiten, Kapitel mit Initial/Zitat-/
+  Übungsboxen, Anhang). Versteht `#`–`#####`, Zitate, Listen, fett/kursiv.
+- **`tools/pdf/build-buch.mjs`** + npm-Skript **`pdf:buch`**: rendert das HTML mit
+  Chromium zu `content/pdf/Werde-Meister-deiner-Gedanken.pdf`.
+- **`content/pdf/Werde-Meister-deiner-Gedanken.pdf`**: das erzeugte Buch-PDF.
+
+**Lektorat / inhaltliche Bereinigung (Leserfassung):**
+- Frontmatter bereinigt: Arbeitsfassungs-Stand, internes Meta zum Manuskript,
+  „Human Design"-Notiz und das manuelle Inhaltsverzeichnis entfernt (das TOC wird
+  jetzt gestaltet generiert). „Hinweis des Autors" bleibt.
+- **Kapitel 22**: fehlende `###`-Überschrift wiederhergestellt (Titel war in den
+  ersten Absatz verschmolzen).
+- Verirrte Überschrift `##### Vergangenheit` (Konvertierungsartefakt) entfernt,
+  umliegende Punkte zu einer Liste zusammengeführt.
+- Drei über zwei Aufzählungspunkte zerrissene Schlüssel-/Schlusssätze
+  (Kap. 19, 20, 22) zu je einem Zitat zusammengeführt.
+- Tippfehler behoben: fehlender Satzpunkt (Kap. 24), „keine vielen Reize" →
+  „nicht viele Reize" (Kap. 20), zwei in einer Zeile verklebte Zitate getrennt
+  (Kap. 9).
+
+**Ablage-Entscheidung:** Das PDF liegt unter `content/pdf/` (login-/nicht-öffentlich),
+**nicht** unter `public/`. Die Auslieferung über eine Verkaufs-/Schutzroute ist
+noch offen und separat zu entscheiden.
+
+**Noch offen (Empfehlung, nicht automatisch geändert):** redaktionelles Zusammen-
+führen der Doppelungen zwischen Kapitel 2 und Kapitel 19, sowie ggf. juristische
+Prüfung, falls konkrete Rechtsdetails aus dem internen Anhang in den Buchtext
+übernommen werden sollen (der Buchtext selbst ist derzeit bewusst vage gehalten).
+
+Neu bauen mit: `npm run pdf:buch`
+
+---
+
 ## 2026-09-08 – Neues Titelbild für „Praxis" (/mitglieder/praxis)
 
 Das alte Praxis-Herobild (`hero-praxis.webp`) trug ein zentrales Praxis-Symbol
