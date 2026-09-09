@@ -352,16 +352,17 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
 .cover .brain{ position:absolute; left:50%; top:64%; transform:translate(-50%,-50%);
   width:62%; max-width:none; opacity:.55; }
 /* Foto-Hauptmotiv (Mann auf der Treppe): Vollbild-Band im unteren Drittel,
-   Kanten weich ins Creme ausgeblendet (Maske). Liegt hinter Text/Fuß. */
-.cover .hero-photo{ position:absolute; left:0; right:0; top:29%; bottom:10.5%; z-index:0;
-  background-repeat:no-repeat; background-position:center 40%; background-size:cover;
+   Kanten SEHR weich ins Creme ausgeblendet – lange, sanfte Verläufe an allen
+   Seiten (radiale Vignette + langer Oben-Verlauf). Liegt hinter Text/Fuß. */
+.cover .hero-photo{ position:absolute; left:0; right:0; top:26%; bottom:8%; z-index:0;
+  background-repeat:no-repeat; background-position:center 42%; background-size:cover;
   -webkit-mask-image:
-    linear-gradient(to bottom, transparent 0%, #000 15%, #000 83%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+    radial-gradient(118% 92% at 50% 46%, #000 40%, rgba(0,0,0,0.5) 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 30%, #000 84%, transparent 100%);
   -webkit-mask-composite:source-in;
   mask-image:
-    linear-gradient(to bottom, transparent 0%, #000 15%, #000 83%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+    radial-gradient(118% 92% at 50% 46%, #000 40%, rgba(0,0,0,0.5) 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 30%, #000 84%, transparent 100%);
   mask-composite:intersect; }
 .cover .inner{ position:relative; height:100%; padding:22mm 24mm 18mm; display:flex; flex-direction:column; }
 .brandrow{ display:flex; align-items:center; gap:11px; }
