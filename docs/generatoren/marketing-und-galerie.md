@@ -36,8 +36,15 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 - **Eingaben:** keine Datenquellen — Inhalte fest im `TARGETS`-Array. Assets:
   `tools/pdf/assets/fonts.css`, `public/logo-brain.png`.
 - **Ausgaben** (relativ zu `docs/marketing/`): `youtube/WMDG-YouTube-Banner.png`,
-  `facebook/WMDG-Facebook-Cover.png`, `instagram/WMDG-Instagram-Story.png`,
-  `instagram/WMDG-Instagram-Story-Logo.png`.
+  `facebook/WMDG-Facebook-Cover.png` (zusätzlich `@2x` in 3280×1248 für hohe
+  Qualität, dank `retina`-Flag), `instagram/WMDG-Instagram-Story.png`,
+  `instagram/WMDG-Instagram-Story-Logo.png`. Banner mit `retina: true`
+  (LinkedIn, WhatsApp, Facebook) werden zusätzlich in doppelter Auflösung
+  (`…@2x.png`) ausgegeben. Einheitliche Marken-Optik über alle Kanäle über
+  zwei geteilte Konstanten: `GLOW` (Größe/Weichheit des Gehirn-Halos via
+  `glowScale`/`glowBlur`) und `CREME_GOLD` (kräftigeres Gold + stärkerer
+  Glow der hellen Creme-Variante via `palHell`). Kanäle ohne Gehirn
+  (WhatsApp) übernehmen nur das kräftigere Creme-Gold.
 - **Verbundene Komponenten:** speist mittelbar die Galerie (`build-gallery.mjs →
   buildSocial()` liest alle `docs/marketing/**/*.png`).
 - **Stolperfalle:** temporäre `.<key>.html` liegen kurz im Quellordner; bei
