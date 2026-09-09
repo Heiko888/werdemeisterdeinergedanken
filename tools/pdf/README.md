@@ -42,8 +42,11 @@ Titel/Untertitel, Autor) lässt sich als Bild herausgeben:
 npm run buchcover
 ```
 
-Das schreibt `public/buchcover-werde-meister.png` (**2479 × 3508 px, A4 @ 300 dpi**;
-DPI per Env `BUCHCOVER_DPI` steuerbar).
+Das schreibt `content/pdf/Werde-Meister-deiner-Gedanken-Cover.png`
+(**2479 × 3508 px, A4 @ 300 dpi**; DPI per Env `BUCHCOVER_DPI` steuerbar).
+
+> Ziel ist `content/pdf/` (neben dem Buch-PDF) und **nicht** `public/` – unter
+> `public/` würde Next.js die Datei direkt unter ihrem Pfad ausliefern.
 
 - **Kein Nachbau:** `buchcover-png.py` baut bei Bedarf das Buch-HTML mit
   `build-buch.py`, löst daraus **genau** die `<section class="cover">` heraus und

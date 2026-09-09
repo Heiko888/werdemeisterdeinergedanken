@@ -19,7 +19,9 @@
 #   3. Chromium `--print-to-pdf` → genau eine A4-Seite (das Cover).
 #   4. PyMuPDF rastert Seite 1 bei DPI (Standard 300) → PNG.
 #
-# Ausgabe:  public/buchcover-werde-meister.png   (2479 × 3508 px bei 300 dpi)
+# Ausgabe:  content/pdf/Werde-Meister-deiner-Gedanken-Cover.png (2479×3508 @ 300 dpi)
+#           Bewusst NICHT unter public/ (Next.js würde es sonst direkt ausliefern) –
+#           es liegt neben dem Buch-PDF im geschützten content/pdf/.
 #
 # Voraussetzung: PyMuPDF  ->  pip install pymupdf
 import os, sys, glob, subprocess, tempfile
@@ -28,7 +30,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 BUILD = os.path.join(HERE, ".build")
 BOOK_HTML = os.path.join(BUILD, "book-wmdg.html")
-OUT = os.path.join(ROOT, "public", "buchcover-werde-meister.png")
+OUT = os.path.join(ROOT, "content", "pdf", "Werde-Meister-deiner-Gedanken-Cover.png")
 DPI = int(os.environ.get("BUCHCOVER_DPI", "300"))
 
 
@@ -110,7 +112,8 @@ def main():
         except OSError:
             pass
 
-    print("✓ public/buchcover-werde-meister.png (%d×%d, A4 @ %d dpi)" % (pix.width, pix.height, DPI))
+    rel = os.path.relpath(OUT, ROOT)
+    print("✓ %s (%d×%d, A4 @ %d dpi)" % (rel, pix.width, pix.height, DPI))
 
 
 if __name__ == "__main__":
