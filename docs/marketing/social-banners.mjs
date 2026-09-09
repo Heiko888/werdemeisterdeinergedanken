@@ -14,56 +14,49 @@ const ROOT = join(HERE, "..", "..");
 const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
 const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 
+// Einheitliche Marken-Optik über ALLE Kanäle:
+// GLOW = größerer, weicherer Halo rund ums Gehirn (Größe/Weichzeichnung).
+// CREME_GOLD = kräftigeres Gold + stärkerer Glow für die helle Creme-Variante
+// (überschreibt gezielt die helle Palette via palHell).
+const GLOW = { glowScale: 2.0, glowBlur: 70 };
+const CREME_GOLD = {
+  glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
+  eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
+  brainGlow: "rgba(230,178,55,.9)", brainShadow: "rgba(150,110,15,.6)",
+};
+
 const TARGETS = [
   { key: "youtube", file: "youtube/WMDG-YouTube-Banner.png", w: 2560, h: 1440,
     brain: 316, gap: 90, textW: 880, h1: 72, eb: 20, sub: 21, url: 20, safe: true,
-    // Wie Facebook/LinkedIn: größerer, kräftigerer Glow-Halo rund ums Gehirn.
-    glowScale: 2.0, glowBlur: 70,
-    // Creme-Variante mit kräftigerem Gold und stärkerem Glow.
-    palHell: {
-      glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
-      eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
-      brainGlow: "rgba(230,178,55,.9)", brainShadow: "rgba(150,110,15,.6)",
-    } },
+    ...GLOW, palHell: CREME_GOLD },
   { key: "facebook", file: "facebook/WMDG-Facebook-Cover.png", w: 1640, h: 624,
     brain: 270, gap: 74, textW: 780, h1: 60, eb: 18, sub: 19, url: 18, safe: false, retina: true,
-    // Kräftigerer, größerer Glow-Halo rund ums Gehirn (nur Facebook).
-    glowScale: 2.0, glowBlur: 70,
-    // Creme-Variante mit kräftigerem Gold und stärkerem Glow (nur Facebook).
-    palHell: {
-      glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
-      eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
-      brainGlow: "rgba(230,178,55,.9)", brainShadow: "rgba(150,110,15,.6)",
-    } },
+    ...GLOW, palHell: CREME_GOLD },
   { key: "instagram", file: "instagram/WMDG-Instagram-Story.png", w: 1080, h: 1920,
-    brain: 460, gap: 56, textW: 920, h1: 82, eb: 20, sub: 27, url: 24, vertical: true },
+    brain: 460, gap: 56, textW: 920, h1: 82, eb: 20, sub: 27, url: 24, vertical: true,
+    ...GLOW, palHell: CREME_GOLD },
   { key: "instagram-logo", file: "instagram/WMDG-Instagram-Story-Logo.png", w: 1080, h: 1920,
-    brain: 560, eb: 24, url: 42, logoOnly: true },
+    brain: 560, eb: 24, url: 42, logoOnly: true,
+    ...GLOW, palHell: CREME_GOLD },
   { key: "linkedin", file: "linkedin/WMDG-LinkedIn-Banner.png", w: 1584, h: 396,
     brain: 322, gap: 58, textW: 720, h1: 62, eb: 18, sub: 20, url: 18, linkedin: true, retina: true,
-    // Wie Facebook: größerer, kräftigerer Glow-Halo rund ums Gehirn.
-    glowScale: 2.0, glowBlur: 70,
-    // Creme-Variante mit kräftigerem Gold und stärkerem Glow.
-    palHell: {
-      glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
-      eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",
-      brainGlow: "rgba(230,178,55,.9)", brainShadow: "rgba(150,110,15,.6)",
-    } },
+    ...GLOW, palHell: CREME_GOLD },
   // WhatsApp-Banner in derselben breiten LinkedIn-Optik (Gehirn rechts, Text
   // links). Gleiche Maße, damit die Grafik 1:1 wie der LinkedIn-Banner wirkt.
   // WhatsApp-Titelbild: das runde Profilbild liegt mittig ueber dem Banner.
   // Deshalb KEIN Gehirn (Profilbild ist bereits eins) und der Text steht
   // komplett in der linken Spalte, ausserhalb des mittigen Profilkreises.
+  // Ohne Gehirn greift nur das kräftigere Creme-Gold (kein Glow-Halo).
   { key: "whatsapp", file: "whatsapp/WMDG-WhatsApp-Banner.png", w: 1584, h: 396,
     textW: 450, h1: 42, eb: 14, sub: 17, url: 17, pinned: true, padX: 80,
-    noBrain: true, noUrl: true, retina: true,
+    noBrain: true, noUrl: true, retina: true, palHell: CREME_GOLD,
     eyebrowText: "Mentale Selbstverteidigung",
     subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
   // WhatsApp-Banner auf 1920×1080-Arbeitsflaeche (passend zur Safe-Zone-Vorlage):
   // Text links in der Safe-Zone, mittiger Profilkreis bleibt frei, keine URL.
   { key: "whatsapp-xl", file: "whatsapp/WMDG-WhatsApp-Banner-1920x1080.png", w: 1920, h: 1080,
     textW: 540, h1: 64, eb: 19, sub: 24, url: 24, pinned: true, padX: 140,
-    noBrain: true, noUrl: true,
+    noBrain: true, noUrl: true, palHell: CREME_GOLD,
     eyebrowText: "Mentale Selbstverteidigung",
     subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
 ];
