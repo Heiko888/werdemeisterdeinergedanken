@@ -108,7 +108,7 @@ ${P.bg}
 .glow{position:absolute;left:50%;top:${withLogo ? "42%" : "46%"};transform:translate(-50%,-50%);width:${glow}px;height:${glow}px;border-radius:50%;
   background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".5" : ".55"}), transparent 66%);filter:blur(60px)}
 .brainbg{position:absolute;left:50%;top:34%;transform:translate(-50%,-50%);width:${brainW}px;height:auto;object-fit:contain;opacity:${P.brainOpacity};filter:blur(1px)}
-.person{position:absolute;left:50%;bottom:0;transform:translateX(-50%) scaleX(-1);height:${Math.round(h * 0.98)}px;width:auto;max-width:96%;
+.person{position:absolute;left:44%;bottom:0;transform:translateX(-50%) scaleX(-1);height:${Math.round(h * 0.98)}px;width:auto;max-width:96%;
   object-fit:contain;object-position:bottom;filter:drop-shadow(0 24px 60px rgba(0,0,0,${P.hell ? ".22" : ".5"}))}
 .footer{position:absolute;left:0;right:0;bottom:0;height:${Math.round(h * 0.34)}px;background:linear-gradient(to top, ${P.base} 0%, ${P.base} 34%, transparent 100%)}
 .wm{position:absolute;left:0;right:0;bottom:${u(0.06)}px;display:flex;flex-direction:column;align-items:center;gap:${u(0.02)}px;text-align:center;padding:0 ${u(0.06)}px}
