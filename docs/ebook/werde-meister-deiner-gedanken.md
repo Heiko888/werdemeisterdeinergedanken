@@ -40,7 +40,7 @@ Warum denkst du, was du denkst? Warum reagierst du in bestimmten Situationen imm
 
 Ich habe mir viele dieser Fragen nicht aus reiner Neugier gestellt. Das Leben hat sie mir vor die Füße geworfen.
 
-Ich war über viele Jahre selbstständig. Ich habe aufgebaut, verkauft, beraten, entwickelt und immer wieder neue Wege gesucht. Ich kenne unternehmerischen Druck. Ich kenne das Gefühl, wenn Pläne nicht aufgehen. Ich kenne finanzielle Krisen und den Versuch, nach außen weiterzumachen, obwohl innen längst alles wackelt. Ich kenne eine Hausdurchsuchung, Ermittlungen und die Ohnmacht, wenn andere plötzlich über dein Leben bestimmen. Ich kenne Insolvenz und Wiederaufbau.
+Ich war über viele Jahre selbstständig. Ich habe aufgebaut, verkauft, beraten, entwickelt und immer wieder neue Wege gesucht. Ich kenne unternehmerischen Druck. Ich kenne das Gefühl, wenn Pläne nicht aufgehen. Ich kenne finanzielle Krisen und den Versuch, nach außen weiterzumachen, obwohl innen längst alles wackelt. Ich kenne die Ohnmacht, wenn andere plötzlich über dein Leben bestimmen. Ich kenne Insolvenz und Wiederaufbau.
 
 Und ich kenne Verlust.
 
@@ -659,7 +659,7 @@ Diese Erkenntnis klingt logisch. Emotional muss sie oft langsam gelernt werden.
 
 #### Wenn andere über dein Leben bestimmen
 
-Auch eine Hausdurchsuchung und Ermittlungen haben mir gezeigt, wie schnell das Gefühl von Kontrolle verschwinden kann. Menschen betreten deinen privaten Raum. Abläufe werden von außen bestimmt. Plötzlich stehst du in einem System, dessen Sprache, Regeln und Machtverhältnisse nicht deine sind.
+Auch Phasen, in denen andere über wichtige Teile meines Lebens entschieden haben, haben mir gezeigt, wie schnell das Gefühl von Kontrolle verschwinden kann. Entscheidungen werden von außen getroffen. Abläufe folgen Regeln, die nicht deine sind. Plötzlich stehst du in einem System, dessen Sprache, Regeln und Machtverhältnisse dir fremd sind.
 
 Solche Erfahrungen können den Blick verändern.
 
