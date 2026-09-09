@@ -16,16 +16,6 @@ node tools/print/briefpapier-word.mjs
 Kontakt- und Markendaten liegen gebündelt in `tools/print/marke.mjs`
 (Single Source of Truth für alle Generatoren).
 
-Ausgabe → `tools/print/out/`
-
-| Datei | Inhalt |
-|-------|--------|
-| `WMDG-Visitenkarte.pdf` | 2 Seiten (Vorder-/Rückseite), **85×55 mm + 3 mm Beschnitt** (91×61 mm), mit Schnittmarken |
-| `WMDG-Visitenkarte-Vorschau.png` | Bildschirm-Vorschau beider Seiten (ohne Beschnitt) |
-| `WMDG-Briefpapier.pdf` | **A4**-Briefbogen, leer – die eigentliche Vorlage zum Beschreiben |
-| `WMDG-Briefpapier-Muster.pdf` | A4-Briefbogen mit Beispiel-Anschreiben (zeigt den Satzspiegel) |
-| `WMDG-Briefpapier-Vorschau.png` / `-Muster-Vorschau.png` | Bildschirm-Vorschauen |
-
 ## Briefpapier als Word-Vorlage (`npm run briefpapier:word`)
 
 Ausgabe → `tools/print/out/WMDG-Briefpapier-Vorlage.docx`

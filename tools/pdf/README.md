@@ -33,6 +33,40 @@ Das schreibt `content/pdf/Werde-Meister-deiner-Gedanken.pdf`.
 > die Datei direkt unter ihrem Pfad ausliefern. Das Buch soll nur über eine
 > geschützte bzw. verkaufte Route zugänglich sein.
 
+### Cover als PNG
+
+Die **fertige Titelseite** des Buches (creme Grund, goldenes Gehirn, „Das Buch",
+Titel/Untertitel, Autor) lässt sich als Bild herausgeben:
+
+```bash
+npm run buchcover
+```
+
+Das schreibt `content/pdf/Werde-Meister-deiner-Gedanken-Cover.png`
+(**2479 × 3508 px, A4 @ 300 dpi**; DPI per Env `BUCHCOVER_DPI` steuerbar).
+
+> Ziel ist `content/pdf/` (neben dem Buch-PDF) und **nicht** `public/` – unter
+> `public/` würde Next.js die Datei direkt unter ihrem Pfad ausliefern.
+
+- **Kein Nachbau:** `buchcover-png.py` baut bei Bedarf das Buch-HTML mit
+  `build-buch.py`, löst daraus **genau** die `<section class="cover">` heraus und
+  rendert diese identisch zur PDF-Titelseite.
+- **Hauptmotiv:** Liegt `tools/pdf/assets/cover-treppe.png` vor (Foto „Mann auf
+  der Treppe ins Licht"), nutzt das Cover dieses Foto als weich ins Creme
+  ausgeblendetes Vollbild-Band. Fehlt die Datei, fällt das Cover automatisch auf
+  das goldene Gehirn zurück. Das Motiv wird dadurch auch im **Buch-PDF**
+  (`npm run pdf:buch`) verwendet.
+- **Warum über PDF?** Die Cover-Seite ist im **Druck-Layout** gebaut
+  (`@page`/`.cover{height:297mm}`, Autor-Fuß per `margin-top:auto` an die
+  Seitenkante). Am Bildschirm wächst die Seite mit dem Inhalt und der Fuß würde
+  abgeschnitten. Darum wird – wie das Buch selbst – im Druck-Modus zu einer
+  1-seitigen A4-PDF (Chromium `--print-to-pdf`) gerendert und diese dann zu PNG
+  gerastert.
+- **Voraussetzung:** `pip install pymupdf` (PDF→PNG-Rasterung). Chromium wird
+  über `CHROME_BIN`, `PLAYWRIGHT_BROWSERS_PATH` bzw. `/opt/pw-browsers` gefunden.
+- Nicht mit `public/ebook-cover.png` verwechseln – das ist die Landingpage-Grafik
+  des **Gratis-E-Books** „Die 7 Stufen …", nicht das Buchcover.
+
 Das schreibt:
 
 - `public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf` – das kostenlose Lead-Magnet-E-Book (13 Seiten, mit Inhaltsverzeichnis und persönlicher Seite „Warum es diesen Weg gibt")
