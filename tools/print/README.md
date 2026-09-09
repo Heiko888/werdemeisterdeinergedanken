@@ -16,6 +16,30 @@ node tools/print/briefpapier-word.mjs
 Kontakt- und Markendaten liegen gebündelt in `tools/print/marke.mjs`
 (Single Source of Truth für alle Generatoren).
 
+## Buchcover (`npm run buchcover`)
+
+Ausgabe → `public/buchcover-werde-meister.png` (**1600 × 2400 px, 2:3** – passt
+für Print 6×9 und E-Book-Stores).
+
+Cover des Hauptbuchs **„Werde Meister deiner Gedanken"** im cinematisch-ruhigen
+Marken-Look: Anthrazit-Verlauf, goldenes Gehirn-Emblem mit Glow, Titel im
+Gold-Verlauf (Fraunces-Serif, „Meister" hervorgehoben) und feine Gold-Rahmenlinie
+mit Eckornamenten.
+
+```bash
+npm run buchcover
+# oder direkt:
+node tools/print/buchcover.mjs
+```
+
+- **Inhalt (1:1 aus der Leserfassung):** Titel/Untertitel/Autor stammen aus
+  `docs/ebook/werde-meister-deiner-gedanken.md`, Tagline/Web aus `marke.mjs` –
+  konsistent zur PDF-Titelseite in `tools/pdf/build-buch.py`.
+- **Rendering:** HTML → Chromium → PNG (bevorzugt Playwright; ohne installiertes
+  npm-Paket automatischer Fallback auf Chromium-Headless-Screenshot).
+- Nicht mit `public/ebook-cover.png` verwechseln – das ist die helle
+  Landingpage-Grafik des Gratis-E-Books „Die 7 Stufen …".
+
 Ausgabe → `tools/print/out/`
 
 | Datei | Inhalt |
