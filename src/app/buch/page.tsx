@@ -10,7 +10,7 @@ import { BuchKaufenButton } from "@/components/sections/BuchKaufenButton";
 import { withCanonical } from "@/lib/seo";
 import { HERO_GLOW } from "@/lib/gradients";
 import { bookTestimonials } from "@/lib/content";
-import buchCover from "../../../public/buch-cover.webp";
+import buchCover from "../../../public/buch-cover-3d.webp";
 import heikoPortrait from "../../../public/heiko-avatar.webp";
 
 export const metadata: Metadata = withCanonical("/buch", {
@@ -239,8 +239,8 @@ export default async function BuchPage({
                 src={buchCover}
                 alt="Buchcover „Werde Meister deiner Gedanken“ von Heiko Schwaninger"
                 priority
-                sizes="(min-width: 1024px) 26rem, (min-width: 640px) 18rem, 14rem"
-                className="h-auto w-56 rounded-md shadow-2xl ring-1 ring-cream/10 sm:w-72 lg:w-[24rem]"
+                sizes="(min-width: 1024px) 28rem, (min-width: 640px) 20rem, 15rem"
+                className="h-auto w-60 drop-shadow-2xl sm:w-80 lg:w-[26rem]"
               />
             </div>
           </div>
