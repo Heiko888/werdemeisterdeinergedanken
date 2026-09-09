@@ -7,13 +7,22 @@ import { site } from "@/lib/site";
 
 type Status = "idle" | "sending" | "done" | "error";
 
-export function ContactForm() {
+type ContactFormProps = {
+  /** Lesbares Thema-Label (z. B. „Mitgliedschaft"), aus `/kontakt?thema=…`. */
+  thema?: string;
+  /** Einordnender Hinweis über dem Formular. */
+  hinweis?: string;
+  /** Vorausgefüllte Nachricht. */
+  vorlage?: string;
+};
+
+export function ContactForm({ thema, hinweis, vorlage }: ContactFormProps) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
-    message: "",
+    message: vorlage ?? "",
     company: "",
   });
 
@@ -30,7 +39,7 @@ export function ContactForm() {
       const res = await fetch("/api/kontakt", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, thema }),
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.ok) {
@@ -86,6 +95,17 @@ export function ContactForm() {
       onSubmit={handleSubmit}
       className="flex flex-col gap-4 rounded-3xl border border-ink/10 bg-white p-6 shadow-card sm:p-8"
     >
+      {hinweis && (
+        <div className="rounded-2xl border border-accent/25 bg-accent/[0.07] px-4 py-3.5 text-sm leading-relaxed text-ink-mid">
+          {thema && (
+            <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-accent">
+              {thema}
+            </span>
+          )}
+          {hinweis}
+        </div>
+      )}
+
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="name" className="text-sm font-medium text-ink">
