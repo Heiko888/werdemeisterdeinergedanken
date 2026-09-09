@@ -23,7 +23,7 @@ Und dieses Programm läuft bis heute. Leise. Unbemerkt. Und es fühlt sich nicht
 
 `[Regie] Wärme rein. Entlastung.`
 
-Wenn das stimmt, verändert es alles. Denn dann musst du dich nicht länger für kaputt halten. Du bist nicht dein Muster. Du bist der, der es gerade – vielleicht zum ersten Mal – bemerkt.
+Wenn das stimmt, verändert es alles. Denn dann musst du nicht länger denken, mit dir stimmt etwas nicht. Du bist nicht dein Muster. Du bist der, der es gerade – vielleicht zum ersten Mal – bemerkt.
 
 Und alles, was du bemerkst, kann anfangen sich zu verändern.
 
