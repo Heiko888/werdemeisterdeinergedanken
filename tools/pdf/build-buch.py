@@ -27,7 +27,8 @@ MD = os.environ.get(
 # Fest hinterlegt, per Env BUCH_IMPRESSUM überschreibbar. Vor Verkauf ggf. um
 # Kontakt (E-Mail) und – je nach Vertriebsform – weitere Pflichtangaben ergänzen.
 IMPRESSUM = os.environ.get(
-    "BUCH_IMPRESSUM", "Heiko Schwaninger · Dompfaffenweg 30 · 63920 Großheubach"
+    "BUCH_IMPRESSUM",
+    "Heiko Schwaninger · Dompfaffenweg 30 · 63920 Großheubach · info@werdemeisterdeinergedanken.de"
 ).strip()
 os.makedirs(BUILD, exist_ok=True)
 

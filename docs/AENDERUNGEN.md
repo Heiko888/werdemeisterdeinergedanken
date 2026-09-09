@@ -10,8 +10,8 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 Ladungsfähige Anschrift ins Impressum aufgenommen (Hinweis-Seite):
 „Impressum: Heiko Schwaninger · Dompfaffenweg 30 · 63920 Großheubach". Fest im
 Generator hinterlegt (per Env `BUCH_IMPRESSUM` überschreibbar). Offiziell
-korrigierte Schreibweise „Großheubach" (ß). Kontakt-E-Mail und vertriebsform-
-spezifische Pflichtangaben ggf. später ergänzen (siehe Vorprüfung).
+korrigierte Schreibweise „Großheubach" (ß). Kontakt-E-Mail (info@werdemeisterdeinergedanken.de) ergänzt. Vertriebsform-
+spezifische Pflichtangaben ggf. später prüfen (siehe Vorprüfung).
 
 ---
 
