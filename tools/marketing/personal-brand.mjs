@@ -83,6 +83,11 @@ function palette(theme) {
       : (hell ? "linear-gradient(100deg,#e0a92e,#8a5e05)" : "linear-gradient(100deg,#f2d489,#d9a93a)"),
     url: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#8a6608" : "#e8c15f"),
     sub: hell ? "rgba(22,35,31,.72)" : "rgba(244,242,236,.75)",
+    // Gehirn fürs dezente Hintergrund-Wasserzeichen (freigestellt, transparent)
+    brainUrl: teal
+      ? pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href
+      : pathToFileURL(join(ROOT, "public/logo-brain-gold-freigestellt.png")).href,
+    brainOpacity: hell ? 0.12 : 0.16,
   };
 }
 
@@ -90,10 +95,11 @@ function palette(theme) {
 // withLogo=true blendet UNTEN die Wortmarke „WERDE MEISTER / DEINER GEDANKEN"
 // ein (ohne URL). Der untere Bildrand wird sanft in den Grund ausgeblendet,
 // damit die Schrift auf ruhigem Grund sitzt (auch über dem dunklen Shirt).
-const html = (w, h, P, withLogo) => {
+const html = (w, h, P, withLogo, bgBrain) => {
   const base = Math.min(w, h);
   const glow = Math.round(base * 0.9);
   const u = (v) => Math.round(base * v); // relative Einheit
+  const brainW = Math.round(base * 0.86);
   return `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
@@ -101,6 +107,7 @@ body{width:${w}px;height:${h}px;overflow:hidden;position:relative;background:${P
 ${P.bg}
 .glow{position:absolute;left:50%;top:${withLogo ? "42%" : "46%"};transform:translate(-50%,-50%);width:${glow}px;height:${glow}px;border-radius:50%;
   background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".5" : ".55"}), transparent 66%);filter:blur(60px)}
+.brainbg{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:${brainW}px;height:auto;object-fit:contain;opacity:${P.brainOpacity};filter:blur(1px)}
 .person{position:absolute;left:50%;bottom:0;transform:translateX(-50%) scaleX(-1);height:${Math.round(h * 0.98)}px;width:auto;max-width:96%;
   object-fit:contain;object-position:bottom;filter:drop-shadow(0 24px 60px rgba(0,0,0,${P.hell ? ".22" : ".5"}))}
 .footer{position:absolute;left:0;right:0;bottom:0;height:${Math.round(h * 0.34)}px;background:linear-gradient(to top, ${P.base} 0%, ${P.base} 34%, transparent 100%)}
@@ -111,6 +118,7 @@ ${P.bg}
 .wm2 i{display:block;height:1px;width:${u(0.05)}px;background:${P.url}}
 </style></head><body>
 <div class="bg"></div><div class="glow"></div>
+${bgBrain ? `<img class="brainbg" src="${P.brainUrl}">` : ""}
 <img class="person" src="${portraitUri}">
 ${withLogo ? `<div class="footer"></div>
 <div class="wm">
@@ -149,15 +157,17 @@ console.log("Foto:", portrait);
 for (const F of FORMATS) {
   for (const theme of themes) {
     const P = palette(theme);
-    for (const withLogo of [false, true]) {
-      const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: SCALE });
-      const tmp = join(HERE, `.tmp-personal.html`);
-      writeFileSync(tmp, html(F.w, F.h, P, withLogo));
-      await page.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
-      const name = `WMDG-Personal${withLogo ? "-Logo" : ""}-${F.key}${themeSuffix[theme]}.png`;
-      await page.screenshot({ path: join(OUT_DIR, name) });
-      await page.close(); rmSync(tmp, { force: true });
-      console.log("✓", `personal/${name}`, `${F.w * SCALE}×${F.h * SCALE}`);
+    for (const bgBrain of [false, true]) {
+      for (const withLogo of [false, true]) {
+        const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: SCALE });
+        const tmp = join(HERE, `.tmp-personal.html`);
+        writeFileSync(tmp, html(F.w, F.h, P, withLogo, bgBrain));
+        await page.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
+        const name = `WMDG-Personal${bgBrain ? "-Brain" : ""}${withLogo ? "-Logo" : ""}-${F.key}${themeSuffix[theme]}.png`;
+        await page.screenshot({ path: join(OUT_DIR, name) });
+        await page.close(); rmSync(tmp, { force: true });
+        console.log("✓", `personal/${name}`, `${F.w * SCALE}×${F.h * SCALE}`);
+      }
     }
   }
 }
