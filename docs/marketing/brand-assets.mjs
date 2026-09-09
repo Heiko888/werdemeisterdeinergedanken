@@ -152,6 +152,13 @@ body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:tra
 <div class="wrap"><div class="glow"></div><img class="brain" src="${P.brainUrl}"></div>
 </body></html>`;
 
+// Nur der Marken-Hintergrund (Creme/Navy/Türkis-Schimmer) – OHNE Gehirn, OHNE
+// Schrift, OHNE Rahmen, aber MIT dem zentralen Gold-/Teal-Glow (wo sonst das
+// Gehirn sitzt). Leere Vorlage, um selbst ein Bild/Gehirn einzusetzen.
+const bgOnly = (w, h, P) => shell(w, h, `
+.glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(Math.min(w,h)*0.72)}px;height:${Math.round(Math.min(w,h)*0.72)}px}
+`, `<div class="glow"></div>`, P);
+
 // Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel).
 // Trägt das echte Schriftlogo-Lockup wie im Website-Header: „WERDE MEISTER“
 // (Fraunces, „Meister“ in Gold) über „— DEINER GEDANKEN —“ mit Flankier-Strichen.
@@ -559,6 +566,15 @@ TARGETS.push({ file: "profil/WMDG-Gehirn-Icon-Rund.png",    w: 1080, h: 1080, he
 // Gehirn freigestellt (transparenter Hintergrund) – Gold + Türkis. hell:false,
 // da der Grund transparent ist; transparent:true schaltet omitBackground ein.
 TARGETS.push({ file: "profil/WMDG-Gehirn-Transparent.png", w: 1600, h: 1600, hell: false, transparent: true, html: (P) =>brainTransparent(1600, P) });
+// Leere Marken-Hintergründe MIT zentralem Glow (ohne Gehirn/Schrift/Rahmen) –
+// mehrere Formate, je 4 Farbwelten. Zum Selbst-Einsetzen eines eigenen Bildes.
+for (const F of [
+  { key: "1x1",  w: 1080, h: 1080 },
+  { key: "4x5",  w: 1080, h: 1350 },
+  { key: "9x16", w: 1080, h: 1920 },
+  { key: "16x9", w: 1920, h: 1080 },
+])
+  TARGETS.push({ file: `hintergrund/WMDG-Hintergrund-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (P) =>bgOnly(F.w, F.h, P) });
 TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
