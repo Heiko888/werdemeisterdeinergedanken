@@ -5,6 +5,16 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Buch: Impressum-Anschrift eingetragen
+
+Ladungsfähige Anschrift ins Impressum aufgenommen (Hinweis-Seite):
+„Impressum: Heiko Schwaninger · Dompfaffenweg 30 · 63920 Großheubach". Fest im
+Generator hinterlegt (per Env `BUCH_IMPRESSUM` überschreibbar). Offiziell
+korrigierte Schreibweise „Großheubach" (ß). Kontakt-E-Mail und vertriebsform-
+spezifische Pflichtangaben ggf. später ergänzen (siehe Vorprüfung).
+
+---
+
 ## 2026-09-08 – Buch: „Lena" im Buchtext anonymisiert
 
 Auf Wunsch: der Vorname der verstorbenen Lebensgefährtin ist im **Buchtext**

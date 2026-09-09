@@ -23,10 +23,12 @@ BUILD = os.environ.get("BUILD_DIR", os.path.join(HERE, ".build"))
 MD = os.environ.get(
     "BUCH_MD", os.path.join(ROOT, "docs", "ebook", "werde-meister-deiner-gedanken.md")
 )
-# Impressum/Anbieterkennzeichnung (ladungsfähige Anschrift/Kontakt) – per Env
-# befüllen, z. B. BUCH_IMPRESSUM="Heiko Schwaninger, Musterstr. 1, 12345 Ort".
-# Leer lassen = keine Impressum-Zeile (dann vor Verkauf nachtragen!).
-IMPRESSUM = os.environ.get("BUCH_IMPRESSUM", "").strip()
+# Impressum/Anbieterkennzeichnung (ladungsfähige Anschrift/Kontakt).
+# Fest hinterlegt, per Env BUCH_IMPRESSUM überschreibbar. Vor Verkauf ggf. um
+# Kontakt (E-Mail) und – je nach Vertriebsform – weitere Pflichtangaben ergänzen.
+IMPRESSUM = os.environ.get(
+    "BUCH_IMPRESSUM", "Heiko Schwaninger · Dompfaffenweg 30 · 63920 Großheubach"
+).strip()
 os.makedirs(BUILD, exist_ok=True)
 
 def enc(p, mime):
@@ -242,11 +244,14 @@ if disclaimer_paras:
     <div class="kicker">Hinweis des Autors</div>
     <div class="note-rule"></div>
     {txt}
-    <p class="note-copyright">© {year} {author}. Alle Rechte vorbehalten.{impressum}</p>
+    <div class="note-legal">
+      <p>© {year} {author}. Alle Rechte vorbehalten.</p>
+      {impressum}
+    </div>
   </div>
 </section>
 """.format(txt=txt, year=2026, author=esc(author or "Heiko Schwaninger"),
-           impressum=(" · " + esc(IMPRESSUM) if IMPRESSUM else "")))
+           impressum=('<p>Impressum: %s</p>' % esc(IMPRESSUM) if IMPRESSUM else "")))
 
 # -- Inhaltsverzeichnis (generiert) ---------------------------------------
 toc = ['<section class="toc"><div class="kicker">Inhalt</div><h2 class="h2 serif">Inhaltsverzeichnis</h2><div class="rule"></div><div class="toc-body">']
@@ -365,7 +370,8 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
 .note .kicker{ font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); font-weight:700; }
 .note-rule{ width:54px; height:2px; background:var(--leaf-500); margin:12px 0 16px; }
 .note-text{ font-family:'Fraunces',serif; font-size:15px; line-height:1.6; color:var(--ink-soft); margin-top:12px; }
-.note-copyright{ margin-top:20px; padding-top:12px; border-top:1px solid var(--hair); font-size:10.5px; color:var(--ink-soft); }
+.note-legal{ margin-top:20px; padding-top:12px; border-top:1px solid var(--hair); font-size:10.5px; line-height:1.5; color:var(--ink-soft); }
+.note-legal p{ margin-top:2px; }
 
 /* ---------- INHALTSVERZEICHNIS ---------- */
 .toc{ break-before:page; }

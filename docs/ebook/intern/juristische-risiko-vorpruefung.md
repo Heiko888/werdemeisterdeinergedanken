@@ -43,6 +43,12 @@ Ein verkauftes Buch braucht Pflichtangaben:
 **Empfehlung:** Eine Impressum-/Copyright-Seite ergänzen (kann der Generator als
 eigene Seite direkt nach dem Titel ausgeben). Inhalt vom Anwalt abnehmen lassen.
 
+**Stand 2026-09-09 – teilweise erledigt:** Copyright- und Impressum-Zeile auf der
+Hinweis-Seite ergänzt: „© 2026 Heiko Schwaninger. Alle Rechte vorbehalten." und
+„Impressum: Heiko Schwaninger · Dompfaffenweg 30 · 63920 Großheubach". **Noch zu
+prüfen/ergänzen:** Kontakt (E-Mail) und – je nach Vertriebsform (eigener Download
+vs. Shop vs. Print/ISBN) – ggf. weitere Pflichtangaben.
+
 ## 2. Haftungsausschluss verstärken (🟠)
 
 Der vorhandene „Hinweis des Autors" (Leserfassung, Kopf) ist gut, deckt aber nur
