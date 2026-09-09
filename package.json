@@ -31,7 +31,7 @@
     "vorlagen:galerie": "node tools/vorlagen/build-gallery.mjs",
     "gold-emblem": "node tools/print/gold-emblem.mjs",
     "logo-lockup": "node tools/print/logo-lockup.mjs",
-    "buchcover": "node tools/print/buchcover.mjs",
+    "buchcover": "node tools/pdf/buchcover-png.mjs",
     "print": "node tools/print/geschaeftsausstattung.mjs",
     "signatur": "node tools/print/email-signatur.mjs",
     "briefpapier:word": "node tools/print/briefpapier-word.mjs"

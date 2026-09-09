@@ -16,40 +16,6 @@ node tools/print/briefpapier-word.mjs
 Kontakt- und Markendaten liegen gebündelt in `tools/print/marke.mjs`
 (Single Source of Truth für alle Generatoren).
 
-## Buchcover (`npm run buchcover`)
-
-Ausgabe → `public/buchcover-werde-meister.png` (**1600 × 2400 px, 2:3** – passt
-für Print 6×9 und E-Book-Stores).
-
-Cover des Hauptbuchs **„Werde Meister deiner Gedanken"** im cinematisch-ruhigen
-Marken-Look: Anthrazit-Verlauf, goldenes Gehirn-Emblem mit Glow, Titel im
-Gold-Verlauf (Fraunces-Serif, „Meister" hervorgehoben) und feine Gold-Rahmenlinie
-mit Eckornamenten.
-
-```bash
-npm run buchcover
-# oder direkt:
-node tools/print/buchcover.mjs
-```
-
-- **Inhalt (1:1 aus der Leserfassung):** Titel/Untertitel/Autor stammen aus
-  `docs/ebook/werde-meister-deiner-gedanken.md`, Tagline/Web aus `marke.mjs` –
-  konsistent zur PDF-Titelseite in `tools/pdf/build-buch.py`.
-- **Rendering:** HTML → Chromium → PNG (bevorzugt Playwright; ohne installiertes
-  npm-Paket automatischer Fallback auf Chromium-Headless-Screenshot).
-- Nicht mit `public/ebook-cover.png` verwechseln – das ist die helle
-  Landingpage-Grafik des Gratis-E-Books „Die 7 Stufen …".
-
-Ausgabe → `tools/print/out/`
-
-| Datei | Inhalt |
-|-------|--------|
-| `WMDG-Visitenkarte.pdf` | 2 Seiten (Vorder-/Rückseite), **85×55 mm + 3 mm Beschnitt** (91×61 mm), mit Schnittmarken |
-| `WMDG-Visitenkarte-Vorschau.png` | Bildschirm-Vorschau beider Seiten (ohne Beschnitt) |
-| `WMDG-Briefpapier.pdf` | **A4**-Briefbogen, leer – die eigentliche Vorlage zum Beschreiben |
-| `WMDG-Briefpapier-Muster.pdf` | A4-Briefbogen mit Beispiel-Anschreiben (zeigt den Satzspiegel) |
-| `WMDG-Briefpapier-Vorschau.png` / `-Muster-Vorschau.png` | Bildschirm-Vorschauen |
-
 ## Briefpapier als Word-Vorlage (`npm run briefpapier:word`)
 
 Ausgabe → `tools/print/out/WMDG-Briefpapier-Vorlage.docx`

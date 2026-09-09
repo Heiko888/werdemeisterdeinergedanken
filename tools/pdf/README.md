@@ -33,6 +33,25 @@ Das schreibt `content/pdf/Werde-Meister-deiner-Gedanken.pdf`.
 > die Datei direkt unter ihrem Pfad ausliefern. Das Buch soll nur über eine
 > geschützte bzw. verkaufte Route zugänglich sein.
 
+### Cover als PNG
+
+Die **fertige Titelseite** des Buches (creme Grund, goldenes Gehirn, „Das Buch",
+Titel/Untertitel, Autor) lässt sich als Bild herausgeben:
+
+```bash
+npm run buchcover
+```
+
+Das schreibt `public/buchcover-werde-meister.png` (**2481 × 3509 px, A4 ~300 dpi**).
+
+- **Kein Nachbau:** `buchcover-png.mjs` baut bei Bedarf das Buch-HTML mit
+  `build-buch.py`, löst daraus **genau** die `<section class="cover">` heraus und
+  rendert diese eine A4-Seite via Chromium → identisch zur PDF-Titelseite.
+- Rendering wie im übrigen Toolset (Playwright/Chromium; ohne installiertes
+  npm-Playwright automatischer Fallback auf Chromium-Headless).
+- Nicht mit `public/ebook-cover.png` verwechseln – das ist die Landingpage-Grafik
+  des **Gratis-E-Books** „Die 7 Stufen …", nicht das Buchcover.
+
 Das schreibt:
 
 - `public/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf` – das kostenlose Lead-Magnet-E-Book (13 Seiten, mit Inhaltsverzeichnis und persönlicher Seite „Warum es diesen Weg gibt")
