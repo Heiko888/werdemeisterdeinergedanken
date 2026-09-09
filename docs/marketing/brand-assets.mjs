@@ -161,7 +161,7 @@ const channelSquare = (w, P) => shell(w, w, `
 // Quadratisches Profilbild NUR Emblem (ohne Schriftzug) – lebendige Fläche mit
 // warmem Kern-Verlauf, Sheen, Eck-Vignette, feinem Innenrahmen und Aura hinter
 // dem Gehirn (gleiche Bildsprache wie das runde Emblem-Profilbild).
-const avatarSquarePlain = (w, P) => {
+const avatarSquarePlain = (w, P, opts = {}) => {
   const hell = P.hell;
   const discBase = hell
     ? "radial-gradient(circle at 50% 42%, #faf7f0 0%, #f2ecdd 55%, #e7dfcc 100%)"
@@ -187,7 +187,7 @@ body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:${h
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .brain{width:${Math.round(w*0.6)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 50px rgba(${P.glow},.65)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".2" : ".42"}))}
 </style></head><body>
-<div class="disc"></div><div class="frame"></div>
+<div class="disc"></div>${opts.noFrame ? "" : '<div class="frame"></div>'}
 <div class="aura"></div><div class="core"></div>
 <div class="center"><img class="brain" src="${P.brainUrl}"></div>
 </body></html>`;
@@ -197,7 +197,7 @@ body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:${h
 // Ring, mittig das Gehirn. Der Grund liegt als Kreis (border-radius:50%), die
 // Ecken sind weiß – so wirkt es als eigenständige runde Grafik und wird von
 // allen Plattformen sauber kreisförmig beschnitten.
-const avatarRoundPlain = (w, P) => {
+const avatarRoundPlain = (w, P, opts = {}) => {
   const hell = P.hell;
   // Lebendige Scheibe: warmer Kern-Verlauf, diagonaler Sheen, Rand-Vignette und
   // Rim-Light per inset-Schatten – so wirkt das Medaillon plastisch statt flach.
@@ -226,7 +226,7 @@ body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:#ff
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .brain{width:${Math.round(w*0.56)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 50px rgba(${P.glow},.65)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".2" : ".42"}))}
 </style></head><body>
-<div class="disc"></div><div class="ring2"></div><div class="ring"></div>
+<div class="disc"></div>${opts.noRing ? "" : '<div class="ring2"></div><div class="ring"></div>'}
 <div class="aura"></div><div class="core"></div>
 <div class="center"><img class="brain" src="${P.brainUrl}"></div>
 </body></html>`;
@@ -539,6 +539,10 @@ const TARGETS = [];
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, hell: true, html: (P) =>avatarRound(1080, P) });
 TARGETS.push({ file: "profil/WMDG-Profilbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarSquarePlain(1080, P) });
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund-Emblem.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarRoundPlain(1080, P) });
+// Reine Gehirn-Icons OHNE Schrift/Logo UND OHNE Rahmen/Ringe – als Basis, um ein
+// eigenes/persönliches Bild danebenzusetzen oder frei weiterzuverwenden.
+TARGETS.push({ file: "profil/WMDG-Gehirn-Icon-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarSquarePlain(1080, P, { noFrame: true }) });
+TARGETS.push({ file: "profil/WMDG-Gehirn-Icon-Rund.png",    w: 1080, h: 1080, hell: true, html: (P) =>avatarRoundPlain(1080, P, { noRing: true }) });
 TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
