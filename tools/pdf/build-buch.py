@@ -224,6 +224,8 @@ parts_html = []
 # -- Titelseite ------------------------------------------------------------
 _cover_motif = ('<div class="hero-photo" style="background-image:url(\'%s\')"></div>' % COVER_PHOTO) \
     if COVER_PHOTO else ('<img class="brain" src="%s">' % BRAIN)
+# „Meister" im Titel gold hervorheben (Marken-Akzent wie im Logo).
+_title_html = esc(title).replace("Meister", "<em>Meister</em>", 1)
 parts_html.append("""
 <section class="cover">
   {motif}
@@ -239,7 +241,7 @@ parts_html.append("""
   </div>
 </section>
 """.format(motif=_cover_motif, logo=LOGO, heiko=HEIKO,
-           title=esc(title), subtitle=esc(subtitle),
+           title=_title_html, subtitle=esc(subtitle),
            author=esc(author or "Heiko Schwaninger")))
 
 # -- Hinweis des Autors + Impressum/Copyright ------------------------------
@@ -364,7 +366,7 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
     radial-gradient(118% 92% at 50% 46%, #000 40%, rgba(0,0,0,0.5) 72%, transparent 100%),
     linear-gradient(to bottom, transparent 0%, #000 30%, #000 84%, transparent 100%);
   mask-composite:intersect; }
-.cover .inner{ position:relative; height:100%; padding:22mm 24mm 18mm; display:flex; flex-direction:column; }
+.cover .inner{ position:relative; height:100%; padding:22mm 24mm 18mm; display:flex; flex-direction:column; align-items:center; text-align:center; }
 .brandrow{ display:flex; align-items:center; gap:11px; }
 .brandrow img{ width:40px; height:40px; }
 .brandrow .wm{ display:flex; flex-direction:column; gap:3px; line-height:1; }
@@ -372,12 +374,14 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
 .brandrow .wm1 em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410); -webkit-background-clip:text; background-clip:text; color:transparent; }
 .brandrow .wm2{ display:flex; align-items:center; gap:6px; font-family:'Fraunces',serif; font-size:8px; letter-spacing:.24em; text-transform:uppercase; color:var(--ink-soft); }
 .brandrow .wm2 i{ display:block; height:1px; width:11px; background:var(--gold-500); }
-.cover .eyebrow{ margin-top:16mm; display:inline-flex; align-items:center; gap:9px;
-  font-size:12px; letter-spacing:.24em; text-transform:uppercase; color:var(--gold-700); font-weight:700; }
-.cover .eyebrow::before{ content:""; width:26px; height:1.5px; background:var(--gold-500); display:inline-block; }
-.cover .title{ font-size:58px; line-height:1.04; font-weight:600; margin-top:15px; letter-spacing:-.6px; max-width:150mm; }
-.cover .promise{ margin-top:18px; font-size:19px; line-height:1.5; color:var(--ink-soft); max-width:150mm; font-family:'Fraunces',serif; font-style:italic; }
-.cover .coverfoot{ margin-top:auto; display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgba(22,35,31,.14); padding-top:6mm; }
+.cover .eyebrow{ margin-top:15mm; display:inline-flex; align-items:center; gap:10px;
+  font-size:12.5px; letter-spacing:.26em; text-transform:uppercase; color:var(--gold-700); font-weight:700; }
+.cover .eyebrow::before, .cover .eyebrow::after{ content:""; width:26px; height:1.5px; background:var(--gold-500); display:inline-block; }
+.cover .title{ font-size:62px; line-height:1.08; font-weight:600; margin-top:18px; letter-spacing:-.6px; max-width:170mm; }
+.cover .title em{ font-style:normal; background:linear-gradient(100deg,#d9a93a,#7e6410);
+  -webkit-background-clip:text; background-clip:text; color:transparent; }
+.cover .promise{ margin-top:22px; font-size:19px; line-height:1.55; color:var(--ink-soft); max-width:150mm; font-family:'Fraunces',serif; font-style:italic; }
+.cover .coverfoot{ margin-top:auto; align-self:stretch; display:flex; align-items:center; justify-content:space-between; text-align:left; border-top:1px solid rgba(22,35,31,.14); padding-top:6mm; }
 .cover .author{ display:flex; align-items:center; gap:11px; }
 .cover .author img{ width:44px; height:44px; border-radius:50%; object-fit:cover; border:1.5px solid rgba(168,132,42,.55); }
 .cover .author b{ display:block; font-size:13px; color:var(--ink); font-weight:600; }
