@@ -2750,6 +2750,12 @@ Jetzt hast du aus Bewusstsein eine Handlung gemacht.
 
 Und genau dort beginnt Veränderung.
 
+#### Reflexionsfragen
+
+> Welche Erkenntnis trägst du schon lange mit dir, ohne sie in eine Handlung übersetzt zu haben?
+> Woran erkennst du bei dir den Moment, in dem Verstehen zur Ausrede wird, nichts zu tun?
+> Welcher kleinste konkrete Schritt würde aus dieser Einsicht heute Wirklichkeit machen?
+
 # Teil V – Die Gedanken, die nicht deine sind
 
 Dieser Teil erweitert das Buch um eine zweite Ebene der Gedankenmeisterschaft. Bisher ging es vor allem darum, die eigenen inneren Programme, Reaktionen und Zustände zu erkennen. Doch ein Mensch lebt nicht im luftleeren Raum. Er wird von Sprache, Bildern, Medien, Erziehung, Werbung, Gruppen, Algorithmen und gesellschaftlichen Erzählungen beeinflusst.
@@ -3042,6 +3048,23 @@ Das bedeutet nicht, dass du ihn für immer behalten musst.
 
 > Die Meisterschaft über deine Gedanken beginnt dort, wo du fragst: Ist das wirklich mein Gedanke – oder habe ich nur gelernt, ihn für meinen zu halten?
 
+#### Übung: Woher kommt dieser Gedanke?
+
+Wähle einen Gedanken, der dein Leben spürbar steuert – zum Beispiel „Ich muss immer stark sein“ oder „Fehler sind gefährlich“. Schreibe ihn wörtlich auf und beantworte dann:
+
+> Woher kenne ich diesen Satz – wessen Stimme klingt darin mit?
+> In welchem Alter oder in welcher Situation ist er entstanden?
+> Wofür war er einmal nützlich oder schützend?
+> Was in meinem Leben würde sich verändern, wenn ich ihn nicht mehr glauben würde?
+
+Formuliere zum Schluss einen eigenen Satz, den du bewusst wählst – nicht als Trotzreaktion, sondern als geprüfte Entscheidung.
+
+#### Reflexionsfragen
+
+> Welche deiner Überzeugungen hast du nie selbst geprüft, sondern nur oft genug gehört?
+> Wo verwechselst du Vertrautheit mit Wahrheit?
+> Welchen übernommenen Gedanken möchtest du ab heute nicht mehr behalten?
+
 ## Kapitel 20
 
 ### Reizüberflutung – wie dein Gehirn in Alarmbereitschaft bleibt
@@ -3312,6 +3335,23 @@ Sie schafft die Voraussetzung dafür, Informationen wieder einordnen zu können.
 
 > Du kannst deine Gedanken schwer meistern, während dein gesamtes System glaubt, auf alles reagieren zu müssen.
 
+#### Übung: In welchem Zustand denke ich?
+
+Bevor du das nächste Mal eine wichtige Bewertung triffst oder auf eine Nachricht reagierst, halte für dreißig Sekunden inne und prüfe deinen Zustand:
+
+> Wie schnell atme ich gerade?
+> Wo ist mein Körper angespannt?
+> Bin ich wach und ruhig – oder aufgedreht und in Alarm?
+> Wie viele Reize habe ich in der letzten Stunde aufgenommen?
+
+Atme dann bewusst langsamer aus als ein, bis dein Körper etwas ruhiger wird. Stelle dir erst danach die eigentliche Frage – und beobachte, ob deine Einschätzung sich verändert.
+
+#### Reflexionsfragen
+
+> Welche Entscheidungen triffst du regelmäßig in einem überreizten Zustand?
+> Welcher Reiz zieht dich am zuverlässigsten aus deiner Ruhe?
+> Was hilft deinem Nervensystem, wieder in einen klaren Zustand zu finden?
+
 ## Kapitel 21
 
 ### Framing – wie ein einziges Wort deine Wahrnehmung verändert
@@ -3535,6 +3575,22 @@ Jede Kommunikation braucht einen Rahmen.
 Das Problem beginnt dort, wo der Rahmen selbst unsichtbar wird und als einzige mögliche Wirklichkeit erscheint.
 
 > Gedankenfreiheit beginnt nicht damit, zu allem eine Gegenmeinung zu besitzen. Sie beginnt damit, den Rahmen zu erkennen, bevor du die darin enthaltene Bewertung übernimmst.
+
+#### Übung: Denselben Vorgang neu rahmen
+
+Nimm eine Schlagzeile, eine Werbung oder eine Aussage, die dich heute erreicht hat. Schreibe sie wörtlich auf und untersuche sie:
+
+> Welche Wörter tragen bereits eine Bewertung in sich?
+> Welche Emotion soll entstehen?
+> Welche Information fehlt?
+
+Formuliere denselben Sachverhalt anschließend zweimal neu: einmal deutlich negativer, einmal deutlich positiver. Schreibe zum Schluss eine dritte, möglichst nüchterne Fassung – nur die überprüfbare Tatsache, ohne Rahmen. Achte darauf, wie sehr sich deine Reaktion mit dem Rahmen verändert, obwohl der Vorgang derselbe bleibt.
+
+#### Reflexionsfragen
+
+> Bei welchem Thema übernimmst du besonders leicht den Rahmen anderer?
+> Woran merkst du, dass du auf ein Etikett statt auf eine Tatsache reagierst?
+> Welche Frage hilft dir, den Rahmen zu sehen, bevor du seine Bewertung übernimmst?
 
 ## Kapitel 22
 
@@ -3934,6 +3990,24 @@ Perfekt.
 
 Dann hast du sie wenigstens bewusster geprüft.
 
+#### Übung: Zerlege eine überzeugende Botschaft
+
+Wähle einen Text, der dich überzeugen oder bewegen will – eine Werbung, eine Rede, einen viralen Beitrag. Lies ihn zweimal und markiere:
+
+> Annahmen, die schon als selbstverständlich vorausgesetzt werden
+> emotionale und moralische Begriffe
+> Zukunftsbilder und Versprechen
+> scheinbare Wahlmöglichkeiten, die nur eine Richtung zulassen
+> vage Formulierungen, die dein Kopf selbst füllt
+
+Frage dich danach: Was bliebe von der Botschaft übrig, wenn ich nur die überprüfbaren Aussagen behalte?
+
+#### Reflexionsfragen
+
+> Auf welche Sprachmuster reagierst du besonders zuverlässig?
+> Wo hast du eine Annahme übernommen, nur weil sie geschickt in einen Satz eingebaut war?
+> Was verändert sich, wenn du zwischen der Information und ihrer Inszenierung unterscheidest?
+
 ## Kapitel 23
 
 ### Propaganda – wie Gedanken konditioniert werden
@@ -4213,6 +4287,24 @@ Das Ziel lautet nicht:
 Das Ziel lautet:
 
 > Trenne die Information von der Inszenierung.
+
+#### Übung: Die emotionale Botschaft prüfen
+
+Wähle eine Botschaft, die dich in den letzten Tagen stark emotionalisiert hat – Empörung, Angst oder starke Zustimmung. Schreibe sie auf und prüfe sie ruhig:
+
+> Was ist die nüchterne, überprüfbare Tatsachenbehauptung darin?
+> Welche Emotion wird geweckt – und wer profitiert davon?
+> Wer wird zum „Wir“ gemacht, wer zu „den anderen“?
+> Wird eine komplexe Lage auf eine einzige Ursache verkürzt?
+> Welche Handlung soll ich danach wollen?
+
+Prüfe zuletzt: Würde ich dieselbe Methode akzeptieren, wenn sie gegen meine eigene Überzeugung eingesetzt würde?
+
+#### Reflexionsfragen
+
+> Bei welchen Themen ist deine Empörung besonders leicht auszulösen?
+> Wo hast du eine Vereinfachung übernommen, weil sie sich gut angefühlt hat?
+> Wie trennst du für dich die Information von ihrer Inszenierung?
 
 ## Kapitel 24
 
@@ -4556,6 +4648,12 @@ Zwischen Gruppe und Individuum.
 Zwischen Reiz und Reaktion.
 
 Und in diesem Raum beginnt Freiheit.
+
+#### Reflexionsfragen
+
+> In welchen Momenten passt du deine Meinung an, nur um dazuzugehören?
+> Welche deiner Überzeugungen ist so eng mit deiner Identität verwoben, dass du sie kaum noch prüfen magst?
+> Wo möchtest du künftig den Raum zwischen Reiz und Reaktion bewusster nutzen?
 
 # Schlusswort
 
