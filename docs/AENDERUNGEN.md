@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Bildplan: Fotohintergründe für Carousels & Reel-Cover
+
+Neues Planungsdokument `docs/marketing/BILDPLAN-Fotohintergruende.md` – wie
+eigene Heiko-Fotos als Hintergrund in Carousel-Posts und Reel-Cover integriert
+werden, ohne den Marken-Look zu brechen.
+
+Festgehaltener Serverstand:
+
+- **Reel-Cover** (`docs/reels/covers/build.mjs`) haben bereits eine aktive
+  Foto-Ebene (`.bg` → `vorlage.png` je `<serie>/<format>`-Ordner) **und**
+  exportieren transparente Overlay-PNGs (`export-overlay/…`) zum Drüberlegen
+  über eigene Fotos in Canva.
+- **Carousels** (`docs/carousels/build.mjs`, Z. 91) haben die Foto-Ebene
+  deaktiviert (`.bg{display:none}`); der Overlay-Weg (`export-overlay/…`)
+  funktioniert aber schon. „Foto fest einbrennen" bräuchte eine kleine
+  Code-Änderung (im Bildplan Abschnitt 7 beschrieben) – **noch nicht umgesetzt**.
+
+Der Bildplan enthält: Schichten-Modell, Foto-Regeln aus dem Brandbook,
+Maße/Safe-Zones je Format, Foto-Zuordnung je Serie und eine Umsetzungs-
+Checkliste. Reine Doku – kein Code/Generator geändert.
+
+---
+
 ## 2026-09-09 – Kontaktformular: Thema-Kontext (`/kontakt?thema=…`)
 
 Mehrere Wege enden bewusst auf dem Kontaktformular statt im Bezahlvorgang –
