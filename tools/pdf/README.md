@@ -51,6 +51,11 @@ Das schreibt `content/pdf/Werde-Meister-deiner-Gedanken-Cover.png`
 - **Kein Nachbau:** `buchcover-png.py` baut bei Bedarf das Buch-HTML mit
   `build-buch.py`, löst daraus **genau** die `<section class="cover">` heraus und
   rendert diese identisch zur PDF-Titelseite.
+- **Hauptmotiv:** Liegt `tools/pdf/assets/cover-treppe.png` vor (Foto „Mann auf
+  der Treppe ins Licht"), nutzt das Cover dieses Foto als weich ins Creme
+  ausgeblendetes Vollbild-Band. Fehlt die Datei, fällt das Cover automatisch auf
+  das goldene Gehirn zurück. Das Motiv wird dadurch auch im **Buch-PDF**
+  (`npm run pdf:buch`) verwendet.
 - **Warum über PDF?** Die Cover-Seite ist im **Druck-Layout** gebaut
   (`@page`/`.cover{height:297mm}`, Autor-Fuß per `margin-top:auto` an die
   Seitenkante). Am Bildschirm wächst die Seite mit dem Inhalt und der Fuß würde
