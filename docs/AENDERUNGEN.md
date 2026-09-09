@@ -25,8 +25,10 @@ umgesetzt:
 
 Verifiziert: `npm run lint` (0 Fehler), `npm run build` (129 Seiten, grün).
 
+**Hero-Entscheidung:** Der dunkle Hero bleibt bewusst so (Betreiber-Freigabe
+nach Screenshot-Prüfung mobil + Desktop, 2026-09-09). Keine Aufhellung.
+
 **Noch offen / bewusst NICHT angefasst** (Entscheidung ausstehend):
-- Hero-Aufhellung (zu dunkel) – erst Ist-Zustand als Screenshot ansehen.
 - Platzhalter-Videos (Startseite „demnächst", Mitgliederbereich) – erst prüfen.
 - Blog-Kategorie „Mentale Selbstverteidigung" bleibt deaktiviert (16 Artikel).
   Hinweis: Der Redaktionsplan (`src/lib/redaktionsplan.ts` + `docs/marketing/`)
