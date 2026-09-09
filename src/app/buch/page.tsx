@@ -9,14 +9,14 @@ import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { BuchKaufenButton } from "@/components/sections/BuchKaufenButton";
 import { withCanonical } from "@/lib/seo";
 import { HERO_GLOW } from "@/lib/gradients";
-import { stages, testimonials } from "@/lib/content";
+import { testimonials } from "@/lib/content";
 import buchCover from "../../../public/buch-cover.webp";
 import heikoPortrait from "../../../public/heiko-avatar.webp";
 
 export const metadata: Metadata = withCanonical("/buch", {
   title: "Das Buch: Werde Meister deiner Gedanken",
   description:
-    "Das Buch „Werde Meister deiner Gedanken“ von Heiko Schwaninger – der Weg vom Autopilot zur Meisterschaft in 7 Stufen. Jetzt für 29,90 € bestellen.",
+    "Das Buch „Werde Meister deiner Gedanken“ von Heiko Schwaninger – erkenne die Gedanken, die nicht deine sind: Reizüberflutung, Framing, Sprachmuster, Propaganda und Algorithmen. In fünf Teilen und 24 Kapiteln. Jetzt für 29,90 € bestellen.",
 });
 
 // Preis des Buchs. Zentral hier gepflegt, damit Hero, Angebot und CTA
@@ -28,16 +28,16 @@ const NAVY_GLOW = HERO_GLOW;
 
 const promises = [
   [
-    "Endlich verstehen, warum du reagierst",
-    "Woher deine automatischen Gedanken kommen – und wie du den Raum zwischen Reiz und Reaktion zurückgewinnst.",
+    "Erkenne, was nicht von dir kommt",
+    "Reizüberflutung, Framing, Sprachmuster und Algorithmen setzen dir Gedanken, die sich wie deine eigenen anfühlen. Das Buch macht sie sichtbar.",
   ],
   [
     "Ein Weg statt loser Tipps",
-    "Die 7 Stufen bauen aufeinander auf: vom ersten Bemerken bis zur ruhigen inneren Meisterschaft.",
+    "Fünf Teile, die aufeinander aufbauen – von den Mechanismen der Beeinflussung bis zur ruhigen, klaren inneren Meisterschaft.",
   ],
   [
-    "Übungen für den Alltag",
-    "Konkrete, alltagstaugliche Schritte am Ende jeder Stufe – kein Guru-Getue, nichts, was du nicht sofort ausprobieren kannst.",
+    "Durchschaue die Muster",
+    "Propaganda, Gruppendruck und die personalisierte Realität – konkret erklärt, damit du sie im Alltag erkennst, statt ihnen zu folgen.",
   ],
   [
     "In deinem Tempo",
@@ -46,27 +46,43 @@ const promises = [
 ];
 
 const forWhom = [
-  "Du lebst oft im Autopilot und willst wieder bewusst wählen.",
-  "Du kennst dieselben Muster, Konflikte und Gefühle – und willst sie durchbrechen.",
+  "Du spürst, dass vieles, was du denkst, gar nicht von dir kommt.",
+  "Du fühlst dich von Nachrichten, Werbung und Feeds überflutet und getrieben.",
+  "Du willst wieder selbst denken – klar, unabhängig und wach.",
   "Du suchst einen bodenständigen Weg ohne Esoterik und erhobenen Zeigefinger.",
-  "Du willst nicht nur verstehen, sondern konkret üben.",
+];
+
+// Schwerpunkt des Buches: der Teil „Die Gedanken, die nicht deine sind".
+// Konkrete Kapitel als Leseprobe – zeigt, worum es im Buch wirklich geht.
+const focusChapters: [string, string][] = [
+  ["19", "Wer denkt hier eigentlich?"],
+  ["20", "Reizüberflutung – wie dein Gehirn in Alarmbereitschaft bleibt"],
+  ["21", "Framing – wie ein einziges Wort deine Wahrnehmung verändert"],
+  ["22", "Hypnotische und suggestive Sprachmuster"],
+  ["23", "Propaganda – wie Gedanken konditioniert werden"],
+  ["24", "Algorithmen, Gruppendruck und die personalisierte Realität"],
 ];
 
 const buchFaqs = [
   {
-    question: "In welcher Form bekomme ich das Buch?",
+    question: "Worum geht es in dem Buch?",
     answer:
-      "Du erhältst das gedruckte Buch „Werde Meister deiner Gedanken“ bequem nach Hause geliefert. Nach der Bestellung führen wir dich sicher durch die Bezahlung.",
+      "Darum, die Gedanken zu erkennen, die gar nicht deine sind: wie Reizüberflutung, Framing, Sprachmuster, Propaganda und Algorithmen beeinflussen, was du denkst und für wahr hältst – und wie du dir dein eigenes, klares Denken zurückholst. Aufgebaut in fünf Teilen und 24 Kapiteln.",
+  },
+  {
+    question: "Ist das dasselbe wie das kostenlose E-Book?",
+    answer:
+      "Nein. Das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ ist der kompakte Einstieg – raus aus dem Autopilot. Das Buch geht deutlich tiefer und legt den Schwerpunkt auf die Mechanismen der Beeinflussung von außen. Beides ergänzt sich, das Buch setzt aber keinen Download voraus.",
   },
   {
     question: "Muss ich an Esoterik glauben?",
     answer:
-      "Nein. Das Buch ist bodenständig und ehrlich geschrieben – es verbindet klare Psychologie mit alltagstauglicher Praxis, ohne esoterisches Blabla.",
+      "Nein. Das Buch ist bodenständig und ehrlich geschrieben – es verbindet klare Psychologie und Medienkompetenz mit alltagstauglicher Praxis, ohne esoterisches Blabla.",
   },
   {
     question: "Brauche ich Vorwissen?",
     answer:
-      "Nein. Du startest genau dort, wo du gerade stehst. Die 7 Stufen führen dich Schritt für Schritt, verständlich und ohne Druck.",
+      "Nein. Du startest genau dort, wo du gerade stehst. Die fünf Teile führen dich Kapitel für Kapitel, verständlich und ohne Druck.",
   },
   {
     question: "Passt das Buch zur Mitgliedschaft?",
@@ -178,9 +194,9 @@ export default async function BuchPage({
               Werde Meister deiner <em className="accent">Gedanken</em>
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/90">
-              Der Weg vom Autopilot zur Meisterschaft – in 7 klaren Stufen.
-              Raus aus alten Mustern, rein in echte innere Klarheit. Ehrlich,
-              bodenständig und Schritt für Schritt zum Mitgehen.
+              Der Weg vom Autopilot zur Meisterschaft – in fünf Teilen und 24
+              Kapiteln. Raus aus alten Mustern, rein in echte innere Klarheit.
+              Ehrlich, bodenständig und Schritt für Schritt zum Mitgehen.
             </p>
             <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap sm:items-center">
               <BuchKaufenButton size="lg" className="w-full sm:w-auto">
@@ -212,14 +228,14 @@ export default async function BuchPage({
           <div className="max-w-xl">
             <Eyebrow>Kennst du das?</Eyebrow>
             <h2 className="mt-3 text-[2rem] font-medium text-ink sm:text-4xl">
-              Du wirst <em className="accent">gelebt</em> – statt zu leben.
+              Wer denkt hier <em className="accent">eigentlich</em>?
             </h2>
           </div>
           <div className="mt-11 grid gap-5 sm:grid-cols-3">
             {[
-              ["Dieselben Muster", "Dieselben Konflikte, dieselben Gefühle – immer wieder, obwohl du sie längst nicht mehr willst."],
-              ["Reagieren statt wählen", "Zwischen Reiz und Reaktion bleibt kein Raum. Du funktionierst, bevor du entscheidest."],
-              ["Gedanken als Tatsachen", "Was du denkst, fühlt sich wahr an. Dabei sind es oft nur alte, antrainierte Gewohnheiten."],
+              ["Gedanken von außen", "Medien, Werbung und Sprache setzen dir Gedanken, die sich anfühlen wie deine eigenen – es sind aber nicht deine."],
+              ["Dauer-Alarm", "Reizüberflutung hält dein Gehirn in Alarmbereitschaft. Kein Raum mehr für klares, ruhiges Denken."],
+              ["Unsichtbare Steuerung", "Framing, Algorithmen und Gruppendruck lenken leise, was du für wahr und für normal hältst."],
             ].map(([t, d]) => (
               <Card key={t}>
                 <h3 className="text-lg font-medium text-ink">{t}</h3>
@@ -228,8 +244,8 @@ export default async function BuchPage({
             ))}
           </div>
           <p className="mx-auto mt-10 max-w-xl text-center font-display text-xl italic text-ink">
-            Das ist keine Schwäche. Es ist Autopilot – und dieses Buch zeigt dir,
-            wie du ihn abschaltest.
+            Das ist keine Schwäche. Es ist Beeinflussung – und dieses Buch zeigt
+            dir, wie du sie durchschaust.
           </p>
         </Container>
       </section>
@@ -260,47 +276,58 @@ export default async function BuchPage({
         </Container>
       </section>
 
-      {/* Inhalt: die 7 Stufen */}
+      {/* Inhalt: Buchstruktur (5 Teile, 24 Kapitel) mit Schwerpunkt-Teil */}
       <DarkSection id="inhalt">
         <div className="max-w-2xl">
           <Eyebrow>Der Inhalt</Eyebrow>
           <h2 className="mt-3 text-[2rem] font-medium text-cream sm:text-4xl">
-            Sieben Stufen. Ein <em className="accent">klarer</em> Aufstieg.
+            Fünf Teile, 24 <em className="accent">Kapitel</em>.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-cream/70">
-            Jedes Kapitel ist eine Stufe – kein Sprung ins Ungewisse, sondern
-            ein Schritt nach dem anderen. Jede Stufe baut auf der vorigen auf.
+            Kein Sprung ins Ungewisse, sondern ein Weg – von den Mechanismen der
+            Beeinflussung bis zur ruhigen, klaren inneren Meisterschaft. Der
+            Schwerpunkt liegt auf einer entscheidenden Frage:
           </p>
         </div>
-        <ol className="relative mt-14 max-w-2xl">
-          <span
-            aria-hidden
-            className="absolute bottom-6 left-8 top-6 w-0.5"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(232,193,95,.12), #e8c15f, #d9a93a, rgba(217,169,58,.12))",
-            }}
-          />
-          {stages.map((s) => (
-            <li key={s.number} className="relative flex items-center gap-6 py-4">
-              <span
-                className="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full font-display text-xl font-medium text-cream"
-                style={{
-                  background:
-                    "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
-                  border: "1.5px solid transparent",
-                  boxShadow: "0 0 22px -4px rgba(52,196,196,.5)",
-                }}
+
+        {/* Schwerpunkt-Teil: „Die Gedanken, die nicht deine sind" –
+            konkrete Kapitel als Leseprobe. */}
+        <div className="mt-12 max-w-2xl rounded-3xl border border-cream/15 p-7 sm:p-9"
+          style={{
+            background:
+              "linear-gradient(165deg, rgba(255,255,255,.06), rgba(255,255,255,.02))",
+          }}
+        >
+          <span className="text-xs font-bold uppercase tracking-[0.16em] text-cream/60">
+            Schwerpunkt des Buches
+          </span>
+          <h3 className="mt-2 font-display text-2xl font-medium text-cream sm:text-3xl">
+            Die Gedanken, die nicht deine sind
+          </h3>
+          <ol className="mt-6 flex flex-col">
+            {focusChapters.map(([nr, title]) => (
+              <li
+                key={nr}
+                className="flex items-center gap-4 border-t border-cream/10 py-3.5 first:border-t-0"
               >
-                {s.number}
-              </span>
-              <div>
-                <h3 className="text-2xl font-medium text-cream">{s.title}</h3>
-                <p className="mt-0.5 text-cream/65">{s.subtitle}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
+                <span
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-display text-sm font-medium text-cream"
+                  style={{
+                    background:
+                      "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
+                    border: "1.5px solid transparent",
+                  }}
+                >
+                  {nr}
+                </span>
+                <span className="text-[1.02rem] leading-snug text-cream/90">{title}</span>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-6 text-sm text-cream/55">
+            Ein Teil des Weges über fünf Teile und 24 Kapitel.
+          </p>
+        </div>
       </DarkSection>
 
       {/* Für wen */}
@@ -421,7 +448,7 @@ export default async function BuchPage({
             <ul className="mt-6 flex flex-col gap-3">
               {[
                 "Gedrucktes Buch, zu dir nach Hause geliefert",
-                "Alle 7 Stufen mit Übungen zum Mitgehen",
+                "Fünf Teile, 24 Kapitel – Schritt für Schritt zum Mitgehen",
                 "Bodenständig & ehrlich – ohne Esoterik",
                 "Sichere Bezahlung über Stripe",
               ].map((li) => (
