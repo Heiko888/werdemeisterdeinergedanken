@@ -82,12 +82,12 @@ function palette(theme) {
     // Akzent-Verlauf für Schlüsselwörter (<em>/<span>) – teal auf Hell tiefer (AA)
     accentGrad: teal
       ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
-      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
+      : (hell ? "linear-gradient(100deg,#e0a92e,#8a5e05)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
     wmGrad: teal
       ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
-      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"),
-    eyebrow: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489"),
-    url: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#e8c15f"),
+      : (hell ? "linear-gradient(100deg,#e0a92e,#8a5e05)" : "linear-gradient(100deg,#f2d489,#d9a93a)"),
+    eyebrow: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#8a6608" : "#f2d489"),
+    url: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#8a6608" : "#e8c15f"),
     // E-Book-CTA + Häkchen
     ctaBg: teal
       ? "linear-gradient(100deg,#199aa8,#0f766e)"
@@ -108,8 +108,8 @@ const shell = (w, h, extra, body, P) => `<!doctype html><html><head><meta charse
 *{margin:0;box-sizing:border-box}
 body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${P.hell ? "#f6f4ee" : "#090b10"}}
 ${P.bg}
-.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(${P.glow},.45))}
-.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".22" : ".35"}), transparent 66%);filter:blur(30px)}
+.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(${P.glow},.6))}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".48" : ".55"}), transparent 66%);filter:blur(44px)}
 .wordmark{font-weight:800;text-transform:uppercase;color:${P.hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
 .wordmark span{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
 .url{font-weight:700;color:${P.url};letter-spacing:.3px}
@@ -429,7 +429,7 @@ const storyPost = (w, h, P) => {
     : Math.round(base * (h > w * 1.4 ? 0.5 : h > w ? 0.44 : 0.36));
   const common = `
 .eyebrow{font-size:${b(0.024)}px;letter-spacing:.16em}
-.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".2" : ".32"}), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
+.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".8" : ".6"}), transparent 66%);filter:blur(62px);width:${Math.round(brainSize*1.8)}px;height:${Math.round(brainSize*1.8)}px}
 .brain{position:relative;width:${brainSize}px;height:${brainSize}px}
 .h{font-family:Fraunces,serif;font-weight:600;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
 .h .g{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
