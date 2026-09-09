@@ -42,13 +42,20 @@ Titel/Untertitel, Autor) lässt sich als Bild herausgeben:
 npm run buchcover
 ```
 
-Das schreibt `public/buchcover-werde-meister.png` (**2481 × 3509 px, A4 ~300 dpi**).
+Das schreibt `public/buchcover-werde-meister.png` (**2479 × 3508 px, A4 @ 300 dpi**;
+DPI per Env `BUCHCOVER_DPI` steuerbar).
 
-- **Kein Nachbau:** `buchcover-png.mjs` baut bei Bedarf das Buch-HTML mit
+- **Kein Nachbau:** `buchcover-png.py` baut bei Bedarf das Buch-HTML mit
   `build-buch.py`, löst daraus **genau** die `<section class="cover">` heraus und
-  rendert diese eine A4-Seite via Chromium → identisch zur PDF-Titelseite.
-- Rendering wie im übrigen Toolset (Playwright/Chromium; ohne installiertes
-  npm-Playwright automatischer Fallback auf Chromium-Headless).
+  rendert diese identisch zur PDF-Titelseite.
+- **Warum über PDF?** Die Cover-Seite ist im **Druck-Layout** gebaut
+  (`@page`/`.cover{height:297mm}`, Autor-Fuß per `margin-top:auto` an die
+  Seitenkante). Am Bildschirm wächst die Seite mit dem Inhalt und der Fuß würde
+  abgeschnitten. Darum wird – wie das Buch selbst – im Druck-Modus zu einer
+  1-seitigen A4-PDF (Chromium `--print-to-pdf`) gerendert und diese dann zu PNG
+  gerastert.
+- **Voraussetzung:** `pip install pymupdf` (PDF→PNG-Rasterung). Chromium wird
+  über `CHROME_BIN`, `PLAYWRIGHT_BROWSERS_PATH` bzw. `/opt/pw-browsers` gefunden.
 - Nicht mit `public/ebook-cover.png` verwechseln – das ist die Landingpage-Grafik
   des **Gratis-E-Books** „Die 7 Stufen …", nicht das Buchcover.
 
