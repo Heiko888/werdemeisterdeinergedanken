@@ -12,11 +12,13 @@ npm run video-folien          # = python3 tools/video/foliensatz.py
 
 | Datei | Format | Inhalt |
 |---|---|---|
-| `WMDG-Video-Folien.pptx` | 16:9 | **Langvideos** – pro Stufe eine Titel-Einblendung + eine Merksatz-Folie; pro Praxis-Übung eine Titelfolie; pro Vertiefung Titel- + Merksatz-Folie. Plus Cover und Abschnitts-Trenner. |
+| `WMDG-Video-Folien.pptx` | 16:9 | **Langvideos** – pro Stufe eine Titel-Einblendung + eine Merksatz-Folie; pro Praxis-Übung eine Titelfolie; pro Vertiefung Titel- + Merksatz-Folie; die 16 Themen „Mentale Selbstverteidigung" Titel- + Merksatz-Folie. Plus Cover und Abschnitts-Trenner. |
 | `WMDG-Video-Folien-Reel.pptx` | 9:16 (Hochformat) | **Teaser-Reel** „Nicht deine Schuld" – Cover/Thumbnail, Hook, drei On-Screen-Overlays, CTA-Folie. |
+| `WMDG-Video-Folien-Reels-7-Stufen.pptx` | 9:16 (Hochformat) | **Reel-Serie „Die 7 Stufen"** – 7 Stufen × 3 Varianten (A/B/C); je Reel eine Stufen-Trennfolie sowie Hook-, On-Screen- und CTA-Folien. |
 
-Stand des letzten Baus: **57 Folien** im 16:9-Deck (7 Stufen · 13 Praxis ·
-13 Vertiefungen) und **6 Folien** im Reel-Deck.
+Stand des letzten Baus: **90 Folien** im 16:9-Deck (7 Stufen · 13 Praxis ·
+13 Vertiefungen · 16 Selbstverteidigung), **6 Folien** im Teaser-Reel-Deck und
+**136 Folien** im 7-Stufen-Reel-Deck (21 Reels).
 
 ## Datenquelle → Folie
 
@@ -29,7 +31,9 @@ Cues bzw. den Merksätzen:
 | `docs/skripte/stufen-komplett/*.md` | H1 `Stufe 0X – Name · „Claim"` → **Titelfolie**; Absatz nach „Für heute nimm diesen … Satz mit:" → **Merksatz-Folie** |
 | `docs/skripte/praxis/*.md` | H1 `Praxis – Name (Typ)` + `**Stufe N**`/Länge → **Titelfolie** |
 | `docs/skripte/vertiefungen-komplett/*.md` (ohne `mentale-selbstverteidigung-komplett.md`) | H1 `Vertiefung – Titel (komplett)` → **Titelfolie**; „Nimm diesen Gedanken mit: …" → **Merksatz-Folie** |
-| `docs/skripte/landing/reel-nicht-deine-schuld.md` | `HOOK`, `ON-SCREEN` (·-getrennt), `CTA`, Cover-Text → **Reel-Folien** |
+| `docs/skripte/vertiefungen-komplett/mentale-selbstverteidigung-komplett.md` | je `## N · Titel` → **Titelfolie**; letzter Absatz (Schutz/Gegenmittel/Test) → **Merksatz-Folie** |
+| `docs/skripte/landing/reel-nicht-deine-schuld.md` | `HOOK`, `ON-SCREEN` (·-getrennt), `CTA`, Cover-Text → **Teaser-Reel-Folien** |
+| `docs/skripte/reels/stufen.md` | je `## 0X · Name — Claim` mit `### Variante A/B/C` (`HOOK`/`ON-SCREEN`/`CTA`) → **7-Stufen-Reel-Folien** |
 
 Ändert sich ein Skript, einfach `npm run video-folien` erneut ausführen – die
 Decks werden vollständig neu gebaut (idempotent).
@@ -58,7 +62,8 @@ Jede Folie trägt zusätzlich eine **Notiz** (Sprecher-/Regie-Kontext), z. B.
 
 ## Erweitern
 
-- Weitere Reels/Serien: einen `parse_*` + Folien-Builder ergänzen und in
-  `build_langvideo()`/`build_reel()` einhängen.
-- Die 16 Themen „Mentale Selbstverteidigung" sind bewusst **nicht** enthalten
-  (eigene Bündeldatei); bei Bedarf analog zu den Vertiefungen ergänzen.
+- Weitere Reel-Serien (`docs/skripte/reels/{vertiefungen,praxis,wissenschaft,
+  mentale-selbstverteidigung}.md`): analog zu `parse_stufen_reels` +
+  `build_stufen_reels()` ein eigenes 9:16-Deck ergänzen.
+- Neue Folientypen: `parse_*` + Builder ergänzen und in `build_langvideo()`
+  bzw. `build_reel()`/`build_stufen_reels()` einhängen.

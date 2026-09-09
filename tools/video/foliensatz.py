@@ -327,6 +327,49 @@ def parse_reel(md):
     }
 
 
+def parse_sv_bundle(md):
+    """16 Themen „Mentale Selbstverteidigung" – je ## N · Titel; letzter Absatz = Merksatz."""
+    items = []
+    parts = re.split(r"^##\s+(\d+)\s*·\s*(.+)$", md, flags=re.M)
+    for i in range(1, len(parts), 3):
+        num = parts[i].strip()
+        title = parts[i + 1].strip()
+        bl = blocks(parts[i + 2])
+        ms = re.sub(r"\s+", " ", bl[-1]).strip() if bl else None
+        items.append({"num": num, "title": title, "merksatz": ms})
+    return items
+
+
+def parse_stufen_reels(md):
+    """7-Stufen-Reels – je ## 0X · Name — Claim mit ### Variante A/B/C (HOOK/ON-SCREEN/CTA)."""
+    stages = []
+    parts = re.split(r"^##\s+(\d+)\s*·\s*(.+?)\s*[—–-]\s*(.+)$", md, flags=re.M)
+    for i in range(1, len(parts), 4):
+        num, name, claim = parts[i].strip(), parts[i + 1].strip(), parts[i + 2].strip()
+        body = parts[i + 3]
+        variants = []
+        vp = re.split(r"^###\s+(Variante\s+\w)\s*[—–-]\s*(.+)$", body, flags=re.M)
+        for j in range(1, len(vp), 3):
+            label, vtitle, vbody = vp[j].strip(), strip_quotes(vp[j + 1]), vp[j + 2]
+
+            def fld(lbl):
+                m = re.search(r"\*\*" + lbl + r":\*\*\s*(.+)", vbody)
+                return m.group(1).strip() if m else None
+
+            onscreen = fld("ON-SCREEN")
+            overlays = [strip_quotes(x) for x in re.split(r"\s*·\s*", onscreen)] if onscreen else []
+            hook, cta = fld("HOOK"), fld("CTA")
+            variants.append({
+                "label": label,
+                "vtitle": vtitle,
+                "hook": strip_quotes(hook) if hook else "",
+                "overlays": overlays,
+                "cta": strip_quotes(cta) if cta else "",
+            })
+        stages.append({"num": num, "name": name, "claim": strip_quotes(claim), "variants": variants})
+    return stages
+
+
 def files(subdir, exclude=()):
     d = os.path.join(SKRIPTE, subdir)
     return [
@@ -442,6 +485,19 @@ def merksatz16(prs, kick, quote, ref):
     return sl
 
 
+def simple_title16(prs, kick, title, note=None, title_size=46):
+    """Schlichte Titel-Einblendung: Gold-Eyebrow + Serifen-Headline + Gold-Linie."""
+    sl = new16(prs)
+    eyebrow(sl, ML, 2.5, W16 - 2 * ML, kick)
+    tf = textbox(sl, ML, 3.0, W16 - 2 * ML, 2.0)
+    p = para(tf, first=True, line=1.02)
+    run(p, title, title_size, INK, bold=True, font=HEAD)
+    rrect(sl, ML + 0.02, 4.95, 2.6, 0.06, GOLD, radius=0.5, gradient=(GOLD_LIGHT, GOLD_DEEP), angle=0)
+    footer(sl, W16)
+    notes(sl, note)
+    return sl
+
+
 def praxis_title16(prs, p_):
     sl = new16(prs)
     x = ML
@@ -476,6 +532,18 @@ W9, H9 = 7.5, 13.333
 def new9(prs):
     sl = prs.slides.add_slide(prs.slide_layouts[6])
     bg(sl, PAPER)
+    return sl
+
+
+def divider9(prs, kick, title):
+    sl = new9(prs)
+    rrect(sl, W9 / 2 - 1.3, H9 / 2 - 1.4, 2.6, 0.08, GOLD, radius=0.5,
+          gradient=(GOLD_LIGHT, GOLD_DEEP), angle=0)
+    eyebrow(sl, 0, H9 / 2 - 1.05, W9, kick, align=PP_ALIGN.CENTER)
+    tf = textbox(sl, 0.5, H9 / 2 - 0.6, W9 - 1.0, 1.8, anchor=MSO_ANCHOR.TOP)
+    p = para(tf, first=True, align=PP_ALIGN.CENTER, line=1.03)
+    run(p, title, 42, INK, bold=True, font=HEAD)
+    footer(sl, W9)
     return sl
 
 
@@ -561,25 +629,29 @@ def build_langvideo():
     for f in files("vertiefungen-komplett", exclude=("mentale-selbstverteidigung-komplett.md",)):
         v = parse_vertiefung(read(f))
         ref = "Vertiefung" + (" · Stufe %s" % v["stufe"] if v["stufe"] else "")
-        # Titelfolie
-        sl = new16(prs)
-        eyebrow(sl, ML, 2.5, 10.0, ref)
-        tf = textbox(sl, ML, 3.0, W16 - 2 * ML, 2.0)
-        p = para(tf, first=True, line=1.02)
-        run(p, v["title"], 46, INK, bold=True, font=HEAD)
-        rrect(sl, ML + 0.02, 4.95, 2.6, 0.06, GOLD, radius=0.5, gradient=(GOLD_LIGHT, GOLD_DEEP), angle=0)
-        footer(sl, W16)
-        notes(sl, "Titel-Einblendung Vertiefung: %s." % v["title"])
+        simple_title16(prs, ref, v["title"], "Titel-Einblendung Vertiefung: %s." % v["title"])
         if v["merksatz"]:
             merksatz16(prs, "Merksatz · " + ref, v["merksatz"], v["title"])
         n_vert += 1
+
+    # Mentale Selbstverteidigung (16 Themen)
+    divider16(prs, "Gedankenfreiheit", "Mentale Selbstverteidigung")
+    sv = parse_sv_bundle(read(os.path.join(
+        SKRIPTE, "vertiefungen-komplett", "mentale-selbstverteidigung-komplett.md")))
+    for t in sv:
+        ref = "Mentale Selbstverteidigung · %s" % t["num"].zfill(2)
+        simple_title16(prs, ref, t["title"], "Titel-Einblendung SV %s: %s." % (t["num"], t["title"]),
+                       title_size=42)
+        if t["merksatz"]:
+            merksatz16(prs, "Merksatz · Thema %s" % t["num"].zfill(2), t["merksatz"], t["title"])
+    n_sv = len(sv)
 
     os.makedirs(OUTDIR, exist_ok=True)
     out = os.path.join(OUTDIR, "WMDG-Video-Folien.pptx")
     prs.save(out)
     total = len(prs.slides._sldIdLst)
-    print("✓ %s  (%d Folien · %d Stufen, %d Praxis, %d Vertiefungen)"
-          % (out, total, n_stufen, n_praxis, n_vert))
+    print("✓ %s  (%d Folien · %d Stufen, %d Praxis, %d Vertiefungen, %d Selbstverteidigung)"
+          % (out, total, n_stufen, n_praxis, n_vert, n_sv))
 
 
 def build_reel():
@@ -603,11 +675,42 @@ def build_reel():
           % (out, total, len(r["overlays"])))
 
 
+def build_stufen_reels():
+    prs = Presentation()
+    prs.slide_width = IN(W9)
+    prs.slide_height = IN(H9)
+
+    cover9(prs, "Die 7 Stufen", "Reel-Serie · 7 Stufen × 3 Varianten · Hook · On-Screen · CTA")
+
+    stages = parse_stufen_reels(read(os.path.join(SKRIPTE, "reels", "stufen.md")))
+    n_reels = 0
+    for st in stages:
+        num = st["num"].zfill(2)
+        divider9(prs, "Stufe %s" % num, "%s\n„%s“" % (st["name"], st["claim"]))
+        for v in st["variants"]:
+            vl = v["label"].replace("Variante ", "")  # A / B / C
+            base = "Stufe %s · %s" % (num, vl)
+            big9(prs, base + " · Hook", v["hook"], size=36)
+            for i, ov in enumerate(v["overlays"], 1):
+                big9(prs, "%s · On-Screen %d/%d" % (base, i, len(v["overlays"])), ov, size=40)
+            if v["cta"]:
+                big9(prs, base + " · CTA", v["cta"], size=26)
+            n_reels += 1
+
+    os.makedirs(OUTDIR, exist_ok=True)
+    out = os.path.join(OUTDIR, "WMDG-Video-Folien-Reels-7-Stufen.pptx")
+    prs.save(out)
+    total = len(prs.slides._sldIdLst)
+    print("✓ %s  (%d Folien · %d Reels aus %d Stufen)"
+          % (out, total, n_reels, len(stages)))
+
+
 def main():
     if not os.path.isdir(SKRIPTE):
         sys.exit("Skript-Verzeichnis nicht gefunden: %s" % SKRIPTE)
     build_langvideo()
     build_reel()
+    build_stufen_reels()
 
 
 if __name__ == "__main__":
