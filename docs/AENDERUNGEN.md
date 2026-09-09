@@ -5,6 +5,22 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Sicherheitsupdate: Next.js 16.2.10 → 16.3.4
+
+Next.js von **16.2.10 auf 16.3.4** angehoben (dazu `eslint-config-next` in
+gleicher Version). 16.2.10 war laut `npm audit` als **critical** eingestuft
+(u. a. SSRF in Server Actions/Rewrites, DoS in der Image-Optimization,
+Cache-Konfusion, Offenlegung interner Server-Function-Endpunkte). Nach dem
+Update meldet `npm audit` **keine Next.js-Schwachstelle** mehr (verbleibende
+6 Findings sind transitive Dev-/Build-Abhängigkeiten, nicht laufzeitrelevant).
+
+Verifiziert: `npm run lint` (0 Fehler), `npm run build` (grün), `npm test`
+(8/8), Runtime-Smoke-Test `/`, `/die-7-stufen`, `/blog`, `/mitgliedschaft`,
+`/bewusstseinstest` → alle HTTP 200. Keine Code-Anpassungen nötig (kein
+Breaking Change für dieses Projekt).
+
+---
+
 ## 2026-09-09 – Vor-Launch-Feinschliff: Überschriften, Hero-Badge, Lint
 
 Aus der gebündelten Vor-Launch-Prüfung (`docs/audit/launch-check-2026-09-09.md`)
