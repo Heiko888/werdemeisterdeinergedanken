@@ -252,8 +252,10 @@ export default async function BuchPage({
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/90">
               Der Weg vom Autopilot zur Meisterschaft – in fünf Teilen und 24
-              Kapiteln. Raus aus alten Mustern, rein in echte innere Klarheit.
-              Ehrlich, bodenständig und Schritt für Schritt zum Mitgehen.
+              Kapiteln. Und die Frage, die das Buch trägt: Wer denkt hier
+              eigentlich? Sechs Kapitel darüber, wie Reizüberflutung, Framing,
+              Propaganda und Algorithmen deine Gedanken formen – und wie du sie
+              zurückholst.
             </p>
             <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap sm:items-center">
               <BuchKaufenButton size="lg" className="w-full sm:w-auto">
