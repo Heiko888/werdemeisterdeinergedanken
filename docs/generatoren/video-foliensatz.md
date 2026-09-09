@@ -49,7 +49,8 @@ Decks werden vollständig neu gebaut (idempotent).
 - Tinte `#16231f`, Fließtext `#48524e`, gedämpft `#626b67`
 - Gold-Verlauf `#e8c15f → #d9a93a → #7e6410` (Discs, Linien, Button, Trenner)
 - Headline-Serife **Fraunces**, Fließtext **Inter**
-- Logo: freigestelltes Gold-Gehirn `tools/pdf/assets/brain-freigestellt.png`
+- Logo: goldenes Gehirn-Emblem `public/logo-brain-gold.png` (transparent,
+  identisch zum Drehbuch-Cover)
 
 > **Schriften:** Die Folien setzen die Font-Namen `Fraunces`/`Inter`. Für
 > 1:1-Rendering sollten diese (kostenlosen) Google-Fonts installiert sein –

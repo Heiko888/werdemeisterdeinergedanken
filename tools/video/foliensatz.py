@@ -44,7 +44,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.environ.get("REPO_ROOT", os.path.abspath(os.path.join(HERE, "..", "..")))
 SKRIPTE = os.path.join(ROOT, "docs", "skripte")
 OUTDIR = os.path.join(ROOT, "docs", "video")
-LOGO = os.path.join(ROOT, "tools", "pdf", "assets", "brain-freigestellt.png")
+LOGO = os.path.join(ROOT, "public", "logo-brain-gold.png")  # goldenes Gehirn (transparent), wie Drehbuch-Cover
 
 # --------------------------------------------------------------------------- #
 # Marke – helles Creme-Branding (identisch zu den Drehbuch-PDFs)
@@ -447,7 +447,7 @@ def cover16(prs, title, subtitle):
     # weicher Gold-Schein oben
     band = rect(sl, 0, 0, W16, 0.16, GOLD, gradient=(GOLD_LIGHT, GOLD_DEEP), angle=0)
     if os.path.exists(LOGO):
-        sl.shapes.add_picture(LOGO, IN(W16 / 2 - 0.9), IN(1.35), width=IN(1.8), height=IN(1.8))
+        sl.shapes.add_picture(LOGO, IN(W16 / 2 - 0.9), IN(1.35), width=IN(1.8))
     wordmark(sl, W16 / 2, 3.35, scale=1.15)
     tf = textbox(sl, 1.5, 4.05, W16 - 3.0, 2.0, anchor=MSO_ANCHOR.TOP)
     for i, line in enumerate(title.split("\n")):
@@ -574,7 +574,7 @@ def cover9(prs, cover, subtitle):
     sl = new9(prs)
     rect(sl, 0, 0, W9, 0.16, GOLD, gradient=(GOLD_LIGHT, GOLD_DEEP), angle=0)
     if os.path.exists(LOGO):
-        sl.shapes.add_picture(LOGO, IN(W9 / 2 - 0.85), IN(2.4), width=IN(1.7), height=IN(1.7))
+        sl.shapes.add_picture(LOGO, IN(W9 / 2 - 0.85), IN(2.4), width=IN(1.7))
     wordmark(sl, W9 / 2, 4.4, scale=1.0)
     tf = textbox(sl, 0.7, 5.6, W9 - 1.4, 3.0, anchor=MSO_ANCHOR.TOP)
     p = para(tf, first=True, align=PP_ALIGN.CENTER, line=1.03)
