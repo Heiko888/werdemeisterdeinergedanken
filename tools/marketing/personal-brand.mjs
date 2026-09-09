@@ -99,7 +99,7 @@ const html = (w, h, P, withLogo, bgBrain) => {
   const base = Math.min(w, h);
   const glow = Math.round(base * 0.9);
   const u = (v) => Math.round(base * v); // relative Einheit
-  const brainW = Math.round(base * 0.86);
+  const brainW = Math.round(base * 1.12);
   return `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
@@ -107,7 +107,7 @@ body{width:${w}px;height:${h}px;overflow:hidden;position:relative;background:${P
 ${P.bg}
 .glow{position:absolute;left:50%;top:${withLogo ? "42%" : "46%"};transform:translate(-50%,-50%);width:${glow}px;height:${glow}px;border-radius:50%;
   background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".5" : ".55"}), transparent 66%);filter:blur(60px)}
-.brainbg{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:${brainW}px;height:auto;object-fit:contain;opacity:${P.brainOpacity};filter:blur(1px)}
+.brainbg{position:absolute;left:50%;top:34%;transform:translate(-50%,-50%);width:${brainW}px;height:auto;object-fit:contain;opacity:${P.brainOpacity};filter:blur(1px)}
 .person{position:absolute;left:50%;bottom:0;transform:translateX(-50%) scaleX(-1);height:${Math.round(h * 0.98)}px;width:auto;max-width:96%;
   object-fit:contain;object-position:bottom;filter:drop-shadow(0 24px 60px rgba(0,0,0,${P.hell ? ".22" : ".5"}))}
 .footer{position:absolute;left:0;right:0;bottom:0;height:${Math.round(h * 0.34)}px;background:linear-gradient(to top, ${P.base} 0%, ${P.base} 34%, transparent 100%)}
