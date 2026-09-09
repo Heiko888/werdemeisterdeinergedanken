@@ -139,6 +139,19 @@ const avatarRound = (w, P) => {
   </div>`, P);
 };
 
+// Nur das leuchtende Gehirn auf TRANSPARENTEM Grund – zum Überlagern über ein
+// eigenes/persönliches Bild. Wird mit screenshot({omitBackground:true}) gerendert.
+const brainTransparent = (w, P) => `<!doctype html><html><head><meta charset="utf8">
+<link rel="stylesheet" href="${fontsUrl}"><style>
+*{margin:0;box-sizing:border-box}
+body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:transparent}
+.wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.78)}px;height:${Math.round(w*0.78)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},.42), transparent 66%);filter:blur(50px)}
+.brain{position:relative;width:${Math.round(w*0.72)}px;height:auto;object-fit:contain;filter:drop-shadow(0 10px 46px rgba(${P.glow},.55))}
+</style></head><body>
+<div class="wrap"><div class="glow"></div><img class="brain" src="${P.brainUrl}"></div>
+</body></html>`;
+
 // Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel).
 // Trägt das echte Schriftlogo-Lockup wie im Website-Header: „WERDE MEISTER“
 // (Fraunces, „Meister“ in Gold) über „— DEINER GEDANKEN —“ mit Flankier-Strichen.
@@ -543,6 +556,9 @@ TARGETS.push({ file: "profil/WMDG-Profilbild-Rund-Emblem.png", w: 1080, h: 1080,
 // eigenes/persönliches Bild danebenzusetzen oder frei weiterzuverwenden.
 TARGETS.push({ file: "profil/WMDG-Gehirn-Icon-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarSquarePlain(1080, P, { noFrame: true }) });
 TARGETS.push({ file: "profil/WMDG-Gehirn-Icon-Rund.png",    w: 1080, h: 1080, hell: true, html: (P) =>avatarRoundPlain(1080, P, { noRing: true }) });
+// Gehirn freigestellt (transparenter Hintergrund) – Gold + Türkis. hell:false,
+// da der Grund transparent ist; transparent:true schaltet omitBackground ein.
+TARGETS.push({ file: "profil/WMDG-Gehirn-Transparent.png", w: 1600, h: 1600, hell: false, transparent: true, html: (P) =>brainTransparent(1600, P) });
 TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
@@ -615,7 +631,7 @@ for (const t of targets){
     writeFileSync(tmp, t.html(palette(theme)));
     await page.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
     mkdirSync(join(HERE, dirname(outFile)), { recursive:true });
-    await page.screenshot({ path: join(HERE, outFile) });
+    await page.screenshot({ path: join(HERE, outFile), omitBackground: !!t.transparent });
     await page.close(); rmSync(tmp,{force:true});
     console.log("✓", outFile, `${t.w * SCALE}×${t.h * SCALE}`);
   }
