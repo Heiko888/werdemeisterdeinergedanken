@@ -16,6 +16,7 @@ Gepflegt vom **Generator-Team** (`.claude/agents/`): `generator-architekt`
 | [`visual-generatoren.md`](./visual-generatoren.md) | Carousels & Reels-Cover (`docs/carousels/`, `docs/reels/`) |
 | [`marketing-und-galerie.md`](./marketing-und-galerie.md) | Marketing-Renderer (`docs/marketing/`) & Vorlagen-Galerie (`tools/vorlagen/`) |
 | [`workshop-generator.md`](./workshop-generator.md) | Workshop-PPTX/PDF (`tools/workshop/`) + Spec-Format |
+| [`video-foliensatz.md`](./video-foliensatz.md) | Video-On-Screen-Folien im Creme-Branding (`tools/video/`) |
 | [`content-inventar.md`](./content-inventar.md) | Vollständige Liste aller Inhalte + Zählungen |
 
 ---
@@ -41,6 +42,7 @@ flowchart LR
     mkt["docs/marketing/*.mjs"]:::gen
     ovl["tools/marketing/*.mjs<br/>story- / content-overlays,<br/>story-carousels"]:::gen
     wsh["workshop/build.py"]:::gen
+    fol["video-folien<br/>foliensatz.py"]:::gen
     gal["vorlagen:galerie<br/>build-gallery.mjs"]:::gen
   end
 
@@ -51,6 +53,7 @@ flowchart LR
     ovo["…/export-overlay/ (transparente PNG-Ebenen)"]:::out
     mko["docs/marketing/**/*.png"]:::out
     wso["docs/workshop/<slug>/*.pptx|pdf"]:::out
+    vid["docs/video/*.pptx (16:9 + 9:16)"]:::out
     cvor["content/vorlagen/** + src/lib/vorlagen-assets.ts"]:::out
   end
 
@@ -65,6 +68,7 @@ flowchart LR
   inl --> cov --> exp & ovo
   inl --> car
   spec --> wsh --> wso
+  mdS --> fol --> vid
 
   mko --> gal
   exp --> gal
@@ -111,6 +115,7 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 | Marketing-Carousels (Galerie) | `node tools/vorlagen/marketing-carousels.mjs` | `docs/carousels/export/<key>/**` | `content/vorlagen/carousels/marketing__*` (**additiv**) |
 | Stripe-Anleitung | `node tools/pdf/anleitung-stripe.mjs [zielordner]` | Inline | `docs/workshop/anleitungen/WMDG-Anleitung-Stripe-Mitgliedschaft.pdf` |
 | Workshop | `python3 tools/workshop/build.py <spec>` | `tools/workshop/specs/*.json` | `docs/workshop/<slug>/*` + Spiegel |
+| Video-Folien (Creme) | `npm run video-folien` | `docs/skripte/{stufen-komplett,praxis,vertiefungen-komplett,landing,reels}/*.md` | `docs/video/WMDG-Video-Folien*.pptx` (7 Decks: 16:9-Langvideo · Teaser-Reel · 5 Reel-Serien) |
 | Vorlagen-Galerie | `npm run vorlagen:galerie` | `docs/{marketing,carousels,reels,workshop}/…` | `content/vorlagen/**` + `vorlagen-assets.ts` |
 
 **Ohne npm-Script** (nur direkt startbar): `build-ebook-gedanken.py`,
