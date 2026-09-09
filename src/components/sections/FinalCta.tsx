@@ -17,7 +17,7 @@ export function FinalCta() {
       />
       <Container size="narrow" className="flex flex-col items-center gap-8 text-center">
         <Reveal>
-          <h2 className="max-w-2xl text-[2.3rem] font-medium leading-[1.08] text-cream sm:text-5xl">
+          <h2 className="max-w-2xl text-[2rem] font-medium leading-[1.1] text-cream sm:text-4xl md:text-[2.9rem]">
             Bereit für deinen{" "}
             <em className="accent">nächsten Schritt</em>?
           </h2>

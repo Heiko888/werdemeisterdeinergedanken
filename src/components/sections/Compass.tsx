@@ -34,7 +34,7 @@ export function Compass() {
               </span>
               <Eyebrow>Dein innerer Kompass</Eyebrow>
             </div>
-            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
+            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl md:text-[2.9rem]">
               Durchlaufe alle 7 Stufen –{" "}
               <em className="accent">bewusst und geführt</em>
             </h2>

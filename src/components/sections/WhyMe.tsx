@@ -19,7 +19,7 @@ export function WhyMe() {
               </span>
               <Eyebrow>Warum ich das mache</Eyebrow>
             </div>
-            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
+            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl md:text-[2.9rem]">
               Ich war selbst gefangen{" "}
               <em className="accent">in meinem Kopf</em>
             </h2>

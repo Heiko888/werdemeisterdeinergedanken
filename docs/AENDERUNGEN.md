@@ -5,6 +5,37 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Vor-Launch-Feinschliff: Überschriften, Hero-Badge, Lint
+
+Aus der gebündelten Vor-Launch-Prüfung (`docs/audit/launch-check-2026-09-09.md`)
+umgesetzt:
+
+- **Einheitliche Section-Überschriften auf der Startseite**: Alle H2 der
+  eigenständigen Sections springen auf Desktop nicht mehr zwischen 36 px und
+  48 px, sondern folgen jetzt derselben Skala wie die geteilte `SectionHeading`
+  (`sm:text-4xl md:text-[2.9rem]`). Betroffen: `Compass.tsx`, `WhyMe.tsx`,
+  `LeadMagnet.tsx`, `MaybeNotYou.tsx`, `FinalCta.tsx`.
+- **Hero-Badge-Schatten von Teal auf Gold** (`Hero.tsx`): Der „7 Stufen"-Kachel
+  fehlte die Markendisziplin – der türkise Schein (`rgba(52,196,196,…)`) ist
+  jetzt Gold (`rgba(217,169,58,…)`), passend zur dokumentierten „nur Gold"-Linie.
+- **3 Lint-Fehler behoben** (`npm run lint` jetzt fehlerfrei):
+  `VideoMessage.tsx` setzt den Poster-Zustand nicht mehr im Effekt, sondern per
+  React-empfohlenem Render-Abgleich; zwei nicht-escapte Anführungszeichen in
+  `admin/marken-uebersicht/page.tsx` auf typografische „…" umgestellt.
+
+Verifiziert: `npm run lint` (0 Fehler), `npm run build` (129 Seiten, grün).
+
+**Noch offen / bewusst NICHT angefasst** (Entscheidung ausstehend):
+- Hero-Aufhellung (zu dunkel) – erst Ist-Zustand als Screenshot ansehen.
+- Platzhalter-Videos (Startseite „demnächst", Mitgliederbereich) – erst prüfen.
+- Blog-Kategorie „Mentale Selbstverteidigung" bleibt deaktiviert (16 Artikel).
+  Hinweis: Der Redaktionsplan (`src/lib/redaktionsplan.ts` + `docs/marketing/`)
+  plant weiterhin Social-Posts mit `/blog/<slug>`-Links auf genau diese 16
+  Artikel – diese URLs liefern öffentlich 404. Beim Ausspielen der Social-Posts
+  beachten (kein Website-Bug, aber Planungskonflikt).
+
+---
+
 ## 2026-09-09 – Buch: Impressum-Anschrift eingetragen
 
 Ladungsfähige Anschrift ins Impressum aufgenommen (Hinweis-Seite):

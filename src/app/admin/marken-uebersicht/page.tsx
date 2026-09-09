@@ -197,7 +197,7 @@ export default async function MarkenUebersichtPage() {
               – in zwei Grundvarianten{" "}
               <code className="rounded bg-ink/5 px-1">-tuerkis</code> (Navy) und{" "}
               <code className="rounded bg-ink/5 px-1">-tuerkis-hell</code> (Creme). Die
-              Dateien entstehen beim nächsten Rendern – siehe „Für Entwickler" unten. Die
+              Dateien entstehen beim nächsten Rendern – siehe „Für Entwickler“ unten. Die
               schematischen Panels hier sind aus echten Marken-Tokens gebaut.
             </div>
           )}
@@ -314,7 +314,7 @@ export default async function MarkenUebersichtPage() {
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-mid">
             Gezählt aus{" "}
-            <code className="rounded bg-ink/5 px-1">docs/marketing/</code>. „Motiv" = ein
+            <code className="rounded bg-ink/5 px-1">docs/marketing/</code>. „Motiv“ = ein
             Sujet in einem Format; die Spalten zeigen, in wie vielen Motiven die jeweilige
             Farbwelt vorliegt. <strong className="text-ink">Dunkel</strong> und{" "}
             <strong className="text-ink">Creme</strong> sind vollständig paarig;{" "}
