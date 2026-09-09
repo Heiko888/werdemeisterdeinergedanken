@@ -5,6 +5,53 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Neue Verkaufsseite für das Buch (`/buch`, 29,90 €)
+
+Eigenständige Verkaufsseite (Landingpage) für das gedruckte Buch **„Werde
+Meister deiner Gedanken“** zum Preis **29,90 €** ergänzt.
+
+**Neu:**
+
+- **`src/app/buch/page.tsx`** – die Verkaufsseite im bestehenden Markendesign
+  (Navy/Gold, gleiche Bausteine wie `/mitgliedschaft`): Hero mit echtem
+  Buchcover + Preis, Problem-Sektion, „Was dich erwartet“, die 7 Stufen als
+  Inhaltsübersicht (aus `src/lib/content.ts`), „Für wen“, Autoren-Sektion,
+  Stimmen, Angebots-/Preisbox, buchspezifisches FAQ und Abschluss-CTA. Zeigt
+  Hinweisbanner bei `?checkout=erfolg|abgebrochen|fehler`.
+- **`src/app/api/buch-checkout/route.ts`** – Stripe-Checkout als **Einmalkauf**
+  (`mode: "payment"`, Lieferadresse DE/AT/CH). Wie beim Abo-Checkout: ist Stripe
+  nicht eingerichtet, fällt der Button **sanft aufs Kontaktformular**
+  (`/kontakt?thema=buch`) zurück, läuft also nie ins Leere.
+- **`src/components/sections/BuchKaufenButton.tsx`** – „Bestellen“-Button als
+  echtes Formular (POST → `/api/buch-checkout`), funktioniert ohne Client-JS.
+- **`public/buch-cover.webp`** – web-optimiertes Cover (1000 px, ~131 KB),
+  erzeugt aus `content/pdf/Werde-Meister-deiner-Gedanken-Cover.png`.
+
+**Angepasst:**
+
+- `src/lib/stripe.ts`: neue Konstante `STRIPE_BOOK_PRICE_ID` + Flag
+  `isBookCheckoutConfigured`.
+- `.env.local.example`: neue Variable **`STRIPE_BOOK_PRICE_ID`** dokumentiert
+  (eigener Preis eines Nicht-Abo-Produkts; ohne sie greift der Kontakt-Fallback).
+- `src/lib/site.ts`: Navigationspunkt **„Das Buch“** → `/buch`.
+- `src/app/sitemap.ts`: `/buch` in die Sitemap aufgenommen.
+
+**Preis zentral** in `page.tsx` (`const PRICE = "29,90 €"`) gepflegt – Hero,
+Angebotsbox und CTA zeigen garantiert denselben Betrag.
+
+Verifiziert: `npm run lint` (0 Fehler; 6 unverändert bestehende Warnungen in
+`tools/print`), `npm run build` (grün, Routen `/buch` und `/api/buch-checkout`
+erzeugt), Runtime-Smoke `/buch` → HTTP 200, `/api/buch-checkout` (GET) → 303
+zurück auf `/buch`.
+
+**Vor Livegang noch nötig:** in Stripe ein Buch-Produkt mit Einmalpreis 29,90 €
+anlegen und dessen `price_…`-ID als `STRIPE_BOOK_PRICE_ID` hinterlegen. Bis
+dahin führt der Bestellbutton bewusst zum Kontaktformular. Schritt-für-Schritt-
+Anleitung dazu in `docs/STRIPE-MITGLIEDSCHAFT.md`, Abschnitt „Buch-Einmalkauf
+(`/buch`, 29,90 €)".
+
+---
+
 ## 2026-09-09 – Sicherheitsupdate: Next.js 16.2.10 → 16.3.4
 
 Next.js von **16.2.10 auf 16.3.4** angehoben (dazu `eslint-config-next` in
