@@ -87,35 +87,35 @@ function palette(theme) {
 }
 
 // --- Layout: Foto (gespiegelt) unten verankert, Glow dahinter ----------------
-// withLogo=true blendet oben die Wortmarke „WERDE MEISTER / DEINER GEDANKEN"
-// + URL ein (im freien Bereich über dem Kopf); das Foto wird dafür kleiner.
+// withLogo=true blendet UNTEN die Wortmarke „WERDE MEISTER / DEINER GEDANKEN"
+// ein (ohne URL). Der untere Bildrand wird sanft in den Grund ausgeblendet,
+// damit die Schrift auf ruhigem Grund sitzt (auch über dem dunklen Shirt).
 const html = (w, h, P, withLogo) => {
   const base = Math.min(w, h);
   const glow = Math.round(base * 0.9);
-  const personH = Math.round(h * (withLogo ? 0.8 : 0.98));
   const u = (v) => Math.round(base * v); // relative Einheit
   return `<!doctype html><html><head><meta charset="utf8">
 <link rel="stylesheet" href="${fontsUrl}"><style>
 *{margin:0;box-sizing:border-box}
 body{width:${w}px;height:${h}px;overflow:hidden;position:relative;background:${P.base};font-family:Inter,sans-serif}
 ${P.bg}
-.glow{position:absolute;left:50%;top:${withLogo ? "52%" : "46%"};transform:translate(-50%,-50%);width:${glow}px;height:${glow}px;border-radius:50%;
+.glow{position:absolute;left:50%;top:${withLogo ? "42%" : "46%"};transform:translate(-50%,-50%);width:${glow}px;height:${glow}px;border-radius:50%;
   background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".5" : ".55"}), transparent 66%);filter:blur(60px)}
-.person{position:absolute;left:50%;bottom:0;transform:translateX(-50%) scaleX(-1);height:${personH}px;width:auto;max-width:96%;
+.person{position:absolute;left:50%;bottom:0;transform:translateX(-50%) scaleX(-1);height:${Math.round(h * 0.98)}px;width:auto;max-width:96%;
   object-fit:contain;object-position:bottom;filter:drop-shadow(0 24px 60px rgba(0,0,0,${P.hell ? ".22" : ".5"}))}
-.wm{position:absolute;left:0;right:0;top:${u(0.055)}px;display:flex;flex-direction:column;align-items:center;gap:${u(0.02)}px;text-align:center;padding:0 ${u(0.06)}px}
+.footer{position:absolute;left:0;right:0;bottom:0;height:${Math.round(h * 0.34)}px;background:linear-gradient(to top, ${P.base} 0%, ${P.base} 34%, transparent 100%)}
+.wm{position:absolute;left:0;right:0;bottom:${u(0.06)}px;display:flex;flex-direction:column;align-items:center;gap:${u(0.02)}px;text-align:center;padding:0 ${u(0.06)}px}
 .wm1{font-family:Fraunces,serif;font-weight:500;text-transform:uppercase;letter-spacing:.07em;line-height:1.04;color:${P.ink};font-size:${u(0.082)}px}
 .wm1 span{background:${P.accent};-webkit-background-clip:text;background-clip:text;color:transparent}
 .wm2{display:flex;align-items:center;justify-content:center;gap:${u(0.016)}px;font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.22em;color:${P.sub};font-size:${u(0.032)}px}
 .wm2 i{display:block;height:1px;width:${u(0.05)}px;background:${P.url}}
-.url{margin-top:${u(0.018)}px;font-weight:700;color:${P.url};letter-spacing:.3px;font-size:${u(0.028)}px}
 </style></head><body>
 <div class="bg"></div><div class="glow"></div>
 <img class="person" src="${portraitUri}">
-${withLogo ? `<div class="wm">
+${withLogo ? `<div class="footer"></div>
+<div class="wm">
   <div class="wm1">Werde <span>Meister</span></div>
   <div class="wm2"><i></i>Deiner Gedanken<i></i></div>
-  <div class="url">www.werdemeisterdeinergedanken.de</div>
 </div>` : ""}
 </body></html>`;
 };
