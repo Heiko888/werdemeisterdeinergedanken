@@ -190,6 +190,14 @@ export type Testimonial = {
   rating: number;
 };
 
+// Stimmen speziell zum Buch (/buch). Bewusst getrennt von `testimonials`:
+// die dort hinterlegten Stimmen beziehen sich auf den Weg und die 7 Stufen,
+// also auf den Mitgliederbereich – auf der Buchseite gelesen wirken sie, als
+// beschrieben sie das Buch. Hier gehören ausschließlich Rückmeldungen echter
+// Leserinnen und Leser hinein, wörtlich und mit deren Einverständnis.
+// Solange die Liste leer ist, blendet /buch den Stimmen-Abschnitt aus.
+export const bookTestimonials: Testimonial[] = [];
+
 export const testimonials: Testimonial[] = [
   {
     quote:

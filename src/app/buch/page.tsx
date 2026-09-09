@@ -9,7 +9,7 @@ import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { BuchKaufenButton } from "@/components/sections/BuchKaufenButton";
 import { withCanonical } from "@/lib/seo";
 import { HERO_GLOW } from "@/lib/gradients";
-import { testimonials } from "@/lib/content";
+import { bookTestimonials } from "@/lib/content";
 import buchCover from "../../../public/buch-cover.webp";
 import heikoPortrait from "../../../public/heiko-avatar.webp";
 
@@ -464,17 +464,18 @@ export default async function BuchPage({
         </Container>
       </section>
 
-      {/* Stimmen */}
+      {/* Stimmen zum Buch – nur, wenn es echte gibt (siehe @/lib/content) */}
+      {bookTestimonials.length > 0 && (
       <section className="bg-paper-aura grain-soft relative py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
             <Eyebrow>Stimmen</Eyebrow>
             <h2 className="mt-3 text-[2rem] font-medium text-ink sm:text-4xl">
-              Was Menschen auf dem Weg <em className="accent">erleben</em>.
+              Was Leserinnen und Leser <em className="accent">zurückmelden</em>.
             </h2>
           </div>
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            {testimonials.map((t) => (
+            {bookTestimonials.map((t) => (
               <figure
                 key={t.name}
                 className="flex flex-col rounded-2xl border border-ink/10 bg-white p-7 shadow-card"
@@ -496,6 +497,7 @@ export default async function BuchPage({
           </div>
         </Container>
       </section>
+      )}
 
       {/* Angebot / Preis */}
       <DarkSection id="bestellen">
