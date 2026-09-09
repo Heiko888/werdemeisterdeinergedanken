@@ -39,6 +39,10 @@ FONTS = open(os.path.join(ASSETS, "fonts.css")).read()
 LOGO = enc(os.path.join(ROOT, "public/logo-brain-gold.png"), "image/png")
 HEIKO = enc(os.path.join(ROOT, "public/heiko-portrait.webp"), "image/webp")
 BRAIN = enc(os.path.join(ROOT, "public/logo-brain-gold.png"), "image/png")
+# Cover-Hauptmotiv: Foto (Mann auf der Treppe ins Licht), falls vorhanden – sonst
+# fällt das Cover auf das goldene Gehirn zurück. Ablage: tools/pdf/assets/cover-treppe.png
+_COVER_PHOTO_PATH = os.path.join(ASSETS, "cover-treppe.png")
+COVER_PHOTO = enc(_COVER_PHOTO_PATH, "image/png") if os.path.exists(_COVER_PHOTO_PATH) else None
 
 def esc(s):
     return _html.escape(s, quote=False)
@@ -218,9 +222,11 @@ def opener_page(eyebrow, title, numeral=None):
 parts_html = []
 
 # -- Titelseite ------------------------------------------------------------
+_cover_motif = ('<div class="hero-photo" style="background-image:url(\'%s\')"></div>' % COVER_PHOTO) \
+    if COVER_PHOTO else ('<img class="brain" src="%s">' % BRAIN)
 parts_html.append("""
 <section class="cover">
-  <img class="brain" src="{brain}">
+  {motif}
   <div class="inner">
     <div class="brandrow"><img src="{logo}"><span class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></span></div>
     <div class="eyebrow">Das Buch</div>
@@ -232,7 +238,7 @@ parts_html.append("""
     </div>
   </div>
 </section>
-""".format(brain=BRAIN, logo=LOGO, heiko=HEIKO,
+""".format(motif=_cover_motif, logo=LOGO, heiko=HEIKO,
            title=esc(title), subtitle=esc(subtitle),
            author=esc(author or "Heiko Schwaninger")))
 
@@ -345,6 +351,18 @@ body::before{ content:""; position:fixed; inset:0; background:var(--paper); z-in
   linear-gradient(160deg,#f8f6f0 0%,#f1eee5 52%,#f6f4ee 100%); }
 .cover .brain{ position:absolute; left:50%; top:64%; transform:translate(-50%,-50%);
   width:62%; max-width:none; opacity:.55; }
+/* Foto-Hauptmotiv (Mann auf der Treppe): Vollbild-Band im unteren Drittel,
+   Kanten weich ins Creme ausgeblendet (Maske). Liegt hinter Text/Fuß. */
+.cover .hero-photo{ position:absolute; left:0; right:0; top:29%; bottom:10.5%; z-index:0;
+  background-repeat:no-repeat; background-position:center 40%; background-size:cover;
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 15%, #000 83%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 15%, #000 83%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+  mask-composite:intersect; }
 .cover .inner{ position:relative; height:100%; padding:22mm 24mm 18mm; display:flex; flex-direction:column; }
 .brandrow{ display:flex; align-items:center; gap:11px; }
 .brandrow img{ width:40px; height:40px; }
