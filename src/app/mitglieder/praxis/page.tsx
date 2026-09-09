@@ -25,7 +25,7 @@ export default function PraxisIndexPage() {
         // Vollflächiges Naturmotiv (Yogamatte, Trinkflasche, Steinturm vor
         // Bergpanorama). Ohne zentrales Symbol – der formatfüllende
         // object-cover-Zuschnitt ist hier gewollt (kein object-contain nötig).
-        image="/hero-praxis.png"
+        image="/hero-praxis.webp"
       />
 
       <section className="py-14 sm:py-18">

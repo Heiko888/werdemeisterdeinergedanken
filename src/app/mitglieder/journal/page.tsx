@@ -104,7 +104,7 @@ export default async function JournalPage() {
             dunklen Navy-Verlauf, der die Lesbarkeit sichert. Reine Dekoration
             (alt="", aria-hidden) und beim Drucken ausgeblendet. */}
         <Image
-          src="/hero-journal.png"
+          src="/hero-journal.webp"
           alt=""
           aria-hidden
           fill
