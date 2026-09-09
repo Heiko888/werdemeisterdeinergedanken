@@ -5,6 +5,21 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Verkaufsseite `/buch`: vollständiges Inhaltsverzeichnis
+
+Die Inhalt-Sektion zeigt jetzt das **komplette Inhaltsverzeichnis** des Buchs –
+**fünf Teile mit allen 24 Kapiteln** – statt nur einer Leseprobe. Datenquelle
+sind die echten Überschriften aus `docs/ebook/werde-meister-deiner-gedanken.md`
+(dieselbe Leserfassung, aus der auch das Buch-PDF gebaut wird), fest im
+`bookParts`-Array in `src/app/buch/page.tsx` hinterlegt. **Teil V – „Die
+Gedanken, die nicht deine sind“** bleibt als Schwerpunkt hervorgehoben (Gold-
+Rahmen + „Schwerpunkt“-Badge, über beide Spalten).
+
+Verifiziert: `npm run lint` (0 Fehler), `npm run build` (grün), Smoke `/buch` →
+HTTP 200 mit allen fünf Teilen und Kapiteln.
+
+---
+
 ## 2026-09-09 – Verkaufsseite `/buch`: Schwerpunkt & Struktur korrigiert
 
 Die Buch-Verkaufsseite lehnte sich inhaltlich zu stark an das **kostenlose
