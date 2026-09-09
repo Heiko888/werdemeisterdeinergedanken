@@ -340,34 +340,57 @@ def parse_sv_bundle(md):
     return items
 
 
-def parse_stufen_reels(md):
-    """7-Stufen-Reels – je ## 0X · Name — Claim mit ### Variante A/B/C (HOOK/ON-SCREEN/CTA)."""
-    stages = []
-    parts = re.split(r"^##\s+(\d+)\s*·\s*(.+?)\s*[—–-]\s*(.+)$", md, flags=re.M)
-    for i in range(1, len(parts), 4):
-        num, name, claim = parts[i].strip(), parts[i + 1].strip(), parts[i + 2].strip()
-        body = parts[i + 3]
-        variants = []
-        vp = re.split(r"^###\s+(Variante\s+\w)\s*[—–-]\s*(.+)$", body, flags=re.M)
-        for j in range(1, len(vp), 3):
-            label, vtitle, vbody = vp[j].strip(), strip_quotes(vp[j + 1]), vp[j + 2]
+def _reel_fields(txt):
+    def fld(lbl):
+        m = re.search(r"\*\*" + lbl + r":\*\*\s*(.+)", txt)
+        return m.group(1).strip() if m else None
 
-            def fld(lbl):
-                m = re.search(r"\*\*" + lbl + r":\*\*\s*(.+)", vbody)
-                return m.group(1).strip() if m else None
+    onscreen = fld("ON-SCREEN")
+    overlays = [strip_quotes(x) for x in re.split(r"\s*·\s*", onscreen)] if onscreen else []
+    hook, cta = fld("HOOK"), fld("CTA")
+    return {
+        "hook": strip_quotes(hook) if hook else "",
+        "overlays": overlays,
+        "cta": strip_quotes(cta) if cta else "",
+    }
 
-            onscreen = fld("ON-SCREEN")
-            overlays = [strip_quotes(x) for x in re.split(r"\s*·\s*", onscreen)] if onscreen else []
-            hook, cta = fld("HOOK"), fld("CTA")
-            variants.append({
-                "label": label,
-                "vtitle": vtitle,
-                "hook": strip_quotes(hook) if hook else "",
-                "overlays": overlays,
-                "cta": strip_quotes(cta) if cta else "",
-            })
-        stages.append({"num": num, "name": name, "claim": strip_quotes(claim), "variants": variants})
-    return stages
+
+def parse_reels(md):
+    """Generischer Reel-Parser für docs/skripte/reels/*.md.
+
+    Deckt drei Layouts ab: ## N · Name [— Claim] mit ### Variante A/B/C
+    (Stufen/Vertiefungen/Praxis) und ohne Varianten (Wissenschaft, Mentale
+    Selbstverteidigung). Nur nummerierte H2-Überschriften zählen als Thema –
+    Zusatz-Abschnitte wie „Thumbnail-Texte" werden übersprungen.
+
+    Rückgabe: Liste flacher Reel-Einträge mit num/name/claim/label + Feldern.
+    """
+    reels = []
+    parts = re.split(r"^##\s+(.+)$", md, flags=re.M)
+    for i in range(1, len(parts), 2):
+        heading, body = parts[i].strip(), parts[i + 1]
+        m = re.match(r"^(\d+)\s*·\s*(.+)$", heading)
+        if not m:
+            continue  # z. B. „Thumbnail-Texte"
+        num, rest = m.group(1), m.group(2).strip()
+        name, claim = rest, ""
+        mc = re.match(r"^(.+?)\s+[—–]\s+(.+)$", rest)  # nur Gedankenstrich trennt den Claim
+        if mc:
+            name, claim = mc.group(1).strip(), mc.group(2).strip()
+        vp = re.split(r"^###\s+(.+)$", body, flags=re.M)
+        if len(vp) > 1:
+            for j in range(1, len(vp), 2):
+                vh = vp[j].strip()
+                mv = re.match(r"^(Variante\s+\w)\s*[—–-]\s*(.+)$", vh)
+                label = mv.group(1) if mv else vh
+                d = _reel_fields(vp[j + 1])
+                d.update({"num": num, "name": name, "claim": strip_quotes(claim), "label": label})
+                reels.append(d)
+        else:
+            d = _reel_fields(body)
+            d.update({"num": num, "name": name, "claim": strip_quotes(claim), "label": ""})
+            reels.append(d)
+    return reels
 
 
 def files(subdir, exclude=()):
@@ -675,34 +698,55 @@ def build_reel():
           % (out, total, len(r["overlays"])))
 
 
-def build_stufen_reels():
+def build_reel_series(src, outfile, cover_title, subtitle, kicker_label, cover_text=None):
+    """Generisches 9:16-Reel-Deck aus einer docs/skripte/reels/*.md-Serie."""
     prs = Presentation()
     prs.slide_width = IN(W9)
     prs.slide_height = IN(H9)
 
-    cover9(prs, "Die 7 Stufen", "Reel-Serie · 7 Stufen × 3 Varianten · Hook · On-Screen · CTA")
+    cover9(prs, cover_text or cover_title, subtitle)
 
-    stages = parse_stufen_reels(read(os.path.join(SKRIPTE, "reels", "stufen.md")))
-    n_reels = 0
-    for st in stages:
-        num = st["num"].zfill(2)
-        divider9(prs, "Stufe %s" % num, "%s\n„%s“" % (st["name"], st["claim"]))
-        for v in st["variants"]:
-            vl = v["label"].replace("Variante ", "")  # A / B / C
-            base = "Stufe %s · %s" % (num, vl)
-            big9(prs, base + " · Hook", v["hook"], size=36)
-            for i, ov in enumerate(v["overlays"], 1):
-                big9(prs, "%s · On-Screen %d/%d" % (base, i, len(v["overlays"])), ov, size=40)
-            if v["cta"]:
-                big9(prs, base + " · CTA", v["cta"], size=26)
-            n_reels += 1
+    reels = parse_reels(read(os.path.join(SKRIPTE, "reels", src)))
+    last_num = None
+    for r in reels:
+        num = r["num"].zfill(2)
+        if num != last_num:
+            title = "%s\n„%s“" % (r["name"], r["claim"]) if r["claim"] else r["name"]
+            divider9(prs, "%s %s" % (kicker_label, num), title)
+            last_num = num
+        vl = r["label"].replace("Variante ", "").strip()
+        base = "%s %s" % (kicker_label, num) + (" · %s" % vl if vl else "")
+        big9(prs, base + " · Hook", r["hook"], size=36)
+        for i, ov in enumerate(r["overlays"], 1):
+            big9(prs, "%s · On-Screen %d/%d" % (base, i, len(r["overlays"])), ov, size=40)
+        if r["cta"]:
+            big9(prs, base + " · CTA", r["cta"], size=26)
 
     os.makedirs(OUTDIR, exist_ok=True)
-    out = os.path.join(OUTDIR, "WMDG-Video-Folien-Reels-7-Stufen.pptx")
+    out = os.path.join(OUTDIR, outfile)
     prs.save(out)
     total = len(prs.slides._sldIdLst)
-    print("✓ %s  (%d Folien · %d Reels aus %d Stufen)"
-          % (out, total, n_reels, len(stages)))
+    n_themen = len({r["num"] for r in reels})
+    print("✓ %s  (%d Folien · %d Reels aus %d Themen)" % (out, total, len(reels), n_themen))
+
+
+REEL_SERIES = [
+    dict(src="stufen.md", outfile="WMDG-Video-Folien-Reels-7-Stufen.pptx",
+         cover_title="Die 7 Stufen", kicker_label="Stufe",
+         subtitle="Reel-Serie · 7 Stufen × 3 Varianten · Hook · On-Screen · CTA"),
+    dict(src="vertiefungen.md", outfile="WMDG-Video-Folien-Reels-Vertiefungen.pptx",
+         cover_title="Vertiefungen", kicker_label="Thema",
+         subtitle="Reel-Serie · Vertiefungen · Hook · On-Screen · CTA"),
+    dict(src="praxis.md", outfile="WMDG-Video-Folien-Reels-Praxis.pptx",
+         cover_title="Praxis", kicker_label="Übung",
+         subtitle="Reel-Serie · Praxis-Übungen · Hook · On-Screen · CTA"),
+    dict(src="wissenschaft.md", outfile="WMDG-Video-Folien-Reels-Wissenschaft.pptx",
+         cover_title="Die Wissenschaft dahinter", kicker_label="Thema",
+         subtitle="Reel-Serie · Wissenschaft · Hook · On-Screen · CTA"),
+    dict(src="mentale-selbstverteidigung.md", outfile="WMDG-Video-Folien-Reels-Selbstverteidigung.pptx",
+         cover_title="Mentale Selbstverteidigung", kicker_label="Thema",
+         subtitle="Reel-Serie · Wie dein Denken gelenkt wird · Hook · On-Screen · CTA"),
+]
 
 
 def main():
@@ -710,7 +754,8 @@ def main():
         sys.exit("Skript-Verzeichnis nicht gefunden: %s" % SKRIPTE)
     build_langvideo()
     build_reel()
-    build_stufen_reels()
+    for s in REEL_SERIES:
+        build_reel_series(**s)
 
 
 if __name__ == "__main__":
