@@ -52,15 +52,72 @@ const forWhom = [
   "Du suchst einen bodenständigen Weg ohne Esoterik und erhobenen Zeigefinger.",
 ];
 
-// Schwerpunkt des Buches: der Teil „Die Gedanken, die nicht deine sind".
-// Konkrete Kapitel als Leseprobe – zeigt, worum es im Buch wirklich geht.
-const focusChapters: [string, string][] = [
-  ["19", "Wer denkt hier eigentlich?"],
-  ["20", "Reizüberflutung – wie dein Gehirn in Alarmbereitschaft bleibt"],
-  ["21", "Framing – wie ein einziges Wort deine Wahrnehmung verändert"],
-  ["22", "Hypnotische und suggestive Sprachmuster"],
-  ["23", "Propaganda – wie Gedanken konditioniert werden"],
-  ["24", "Algorithmen, Gruppendruck und die personalisierte Realität"],
+// Vollständiges Inhaltsverzeichnis des Buchs: fünf Teile, 24 Kapitel.
+// Quelle: docs/ebook/werde-meister-deiner-gedanken.md (die Leserfassung, aus der
+// auch das Buch-PDF gebaut wird). Teil V ist der Schwerpunkt der Verkaufsseite.
+type BookPart = {
+  roman: string;
+  title: string;
+  highlight?: boolean;
+  chapters: [number, string][];
+};
+
+const bookParts: BookPart[] = [
+  {
+    roman: "Teil I",
+    title: "Aufwachen aus dem inneren Autopiloten",
+    chapters: [
+      [1, "Du bist nicht jeder Gedanke, den du denkst"],
+      [2, "Die Programme hinter deinem Leben"],
+      [3, "Der Beobachter in dir"],
+      [4, "Wenn der Körper längst entschieden hat"],
+      [5, "Der Zusammenbruch des alten Systems"],
+    ],
+  },
+  {
+    roman: "Teil II",
+    title: "Werkzeuge der Veränderung",
+    chapters: [
+      [6, "Meditation ist keine Flucht"],
+      [7, "Atem, Zustand und innere Führung"],
+      [8, "Mentale Entprogrammierung"],
+      [9, "Energie, Frequenz und Gehirnwellen"],
+      [10, "Manifestation ohne Feenstaub"],
+    ],
+  },
+  {
+    roman: "Teil III",
+    title: "Vertrauen, Stille und eine größere Wirklichkeit",
+    chapters: [
+      [11, "Vertrauen und Hingabe"],
+      [12, "Intuition und Zeichen"],
+      [13, "Die Kraft der Stille"],
+      [14, "Die Illusion der Zeit"],
+    ],
+  },
+  {
+    roman: "Teil IV",
+    title: "Bewusst erschaffen und wirklich leben",
+    chapters: [
+      [15, "Gelebte Manifestation"],
+      [16, "Wahrer Erfolg"],
+      [17, "Dein energetisches Vermächtnis"],
+      [18, "Vom Erkennen ins Handeln"],
+    ],
+  },
+  {
+    roman: "Teil V",
+    title: "Die Gedanken, die nicht deine sind",
+    highlight: true,
+    chapters: [
+      [19, "Wer denkt hier eigentlich?"],
+      [20, "Reizüberflutung – wie dein Gehirn in Alarmbereitschaft bleibt"],
+      [21, "Framing – wie ein einziges Wort deine Wahrnehmung verändert"],
+      [22, "Hypnotische und suggestive Sprachmuster"],
+      [23, "Propaganda – wie Gedanken konditioniert werden"],
+      [24, "Algorithmen, Gruppendruck und die personalisierte Realität"],
+    ],
+  },
 ];
 
 const buchFaqs = [
@@ -276,57 +333,71 @@ export default async function BuchPage({
         </Container>
       </section>
 
-      {/* Inhalt: Buchstruktur (5 Teile, 24 Kapitel) mit Schwerpunkt-Teil */}
+      {/* Inhalt: vollständiges Inhaltsverzeichnis (5 Teile, 24 Kapitel),
+          Teil V als Schwerpunkt hervorgehoben. */}
       <DarkSection id="inhalt">
         <div className="max-w-2xl">
-          <Eyebrow>Der Inhalt</Eyebrow>
+          <Eyebrow>Das Inhaltsverzeichnis</Eyebrow>
           <h2 className="mt-3 text-[2rem] font-medium text-cream sm:text-4xl">
             Fünf Teile, 24 <em className="accent">Kapitel</em>.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-cream/70">
-            Kein Sprung ins Ungewisse, sondern ein Weg – von den Mechanismen der
-            Beeinflussung bis zur ruhigen, klaren inneren Meisterschaft. Der
-            Schwerpunkt liegt auf einer entscheidenden Frage:
+            Ein Weg, kein loser Ratgeber – vom Aufwachen aus dem Autopiloten über
+            konkrete Werkzeuge und eine größere Wirklichkeit bis zu den Gedanken,
+            die gar nicht deine sind.
           </p>
         </div>
 
-        {/* Schwerpunkt-Teil: „Die Gedanken, die nicht deine sind" –
-            konkrete Kapitel als Leseprobe. */}
-        <div className="mt-12 max-w-2xl rounded-3xl border border-cream/15 p-7 sm:p-9"
-          style={{
-            background:
-              "linear-gradient(165deg, rgba(255,255,255,.06), rgba(255,255,255,.02))",
-          }}
-        >
-          <span className="text-xs font-bold uppercase tracking-[0.16em] text-cream/60">
-            Schwerpunkt des Buches
-          </span>
-          <h3 className="mt-2 font-display text-2xl font-medium text-cream sm:text-3xl">
-            Die Gedanken, die nicht deine sind
-          </h3>
-          <ol className="mt-6 flex flex-col">
-            {focusChapters.map(([nr, title]) => (
-              <li
-                key={nr}
-                className="flex items-center gap-4 border-t border-cream/10 py-3.5 first:border-t-0"
-              >
-                <span
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-display text-sm font-medium text-cream"
-                  style={{
-                    background:
-                      "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
-                    border: "1.5px solid transparent",
-                  }}
-                >
-                  {nr}
+        <div className="mt-12 grid gap-5 lg:grid-cols-2">
+          {bookParts.map((part) => (
+            <div
+              key={part.roman}
+              className={`rounded-3xl border p-7 sm:p-8 ${
+                part.highlight
+                  ? "border-gold-500/45 lg:col-span-2"
+                  : "border-cream/15"
+              }`}
+              style={{
+                background: part.highlight
+                  ? "linear-gradient(165deg, rgba(232,193,95,.14), rgba(255,255,255,.02))"
+                  : "linear-gradient(165deg, rgba(255,255,255,.06), rgba(255,255,255,.02))",
+              }}
+            >
+              <div className="flex items-center justify-between gap-4">
+                <span className="text-xs font-bold uppercase tracking-[0.16em] text-cream/60">
+                  {part.roman}
                 </span>
-                <span className="text-[1.02rem] leading-snug text-cream/90">{title}</span>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-6 text-sm text-cream/55">
-            Ein Teil des Weges über fünf Teile und 24 Kapitel.
-          </p>
+                {part.highlight && (
+                  <span className="rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950">
+                    Schwerpunkt
+                  </span>
+                )}
+              </div>
+              <h3 className="mt-2 font-display text-2xl font-medium text-cream">
+                {part.title}
+              </h3>
+              <ol className="mt-5 flex flex-col">
+                {part.chapters.map(([nr, title]) => (
+                  <li
+                    key={nr}
+                    className="flex items-center gap-4 border-t border-cream/10 py-3 first:border-t-0"
+                  >
+                    <span
+                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-display text-sm font-medium text-cream"
+                      style={{
+                        background:
+                          "linear-gradient(#08102a,#08102a) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
+                        border: "1.5px solid transparent",
+                      }}
+                    >
+                      {nr}
+                    </span>
+                    <span className="text-[1rem] leading-snug text-cream/90">{title}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
         </div>
       </DarkSection>
 
