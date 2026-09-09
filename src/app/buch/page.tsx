@@ -144,7 +144,7 @@ const buchFaqs = [
   {
     question: "Passt das Buch zur Mitgliedschaft?",
     answer:
-      "Ja. Das Buch ist der ideale Einstieg und die perfekte Ergänzung. Wenn du tiefer gehen willst, findest du im Mitgliederbereich zu jeder Stufe Videos, Praxis und Begleitung.",
+      "Ja – die beiden ergänzen sich, sind aber nicht dasselbe. Das Buch erzählt den Weg in 24 Kapiteln, mit dem Schwerpunkt auf den Gedanken, die von außen kommen. Der Mitgliederbereich führt dich durch die 7 Stufen der Bewusstseinsentwicklung, mit Videos, Praxis und Begleitung zu jeder Stufe.",
   },
   {
     question: "Kann ich mit einem Gutschein bezahlen?",
@@ -451,7 +451,7 @@ export default async function BuchPage({
                 „Ich habe dieses Buch geschrieben, weil ich selbst weiß, wie es
                 sich anfühlt, von den eigenen Gedanken gelebt zu werden – und
                 wie befreiend der erste bewusste Schritt ist. Es ist der Weg,
-                den ich gegangen bin, in klare Stufen gebracht.“
+                den ich gegangen bin, in klare Kapitel gebracht.“
               </p>
               <span className="text-sm font-medium text-ink">
                 Heiko Schwaninger{" "}
@@ -547,7 +547,7 @@ export default async function BuchPage({
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-cream/70">
               Kein Druck, keine Deadlines. Du beginnst, wo du stehst, und liest
-              in deinem Tempo – Stufe für Stufe.
+              in deinem Tempo – Kapitel für Kapitel.
             </p>
             <Button href="#faq" variant="secondary" size="md" className="mt-6">
               Häufige Fragen ansehen
