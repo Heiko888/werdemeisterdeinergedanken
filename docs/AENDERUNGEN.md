@@ -46,7 +46,9 @@ zurück auf `/buch`.
 
 **Vor Livegang noch nötig:** in Stripe ein Buch-Produkt mit Einmalpreis 29,90 €
 anlegen und dessen `price_…`-ID als `STRIPE_BOOK_PRICE_ID` hinterlegen. Bis
-dahin führt der Bestellbutton bewusst zum Kontaktformular.
+dahin führt der Bestellbutton bewusst zum Kontaktformular. Schritt-für-Schritt-
+Anleitung dazu in `docs/STRIPE-MITGLIEDSCHAFT.md`, Abschnitt „Buch-Einmalkauf
+(`/buch`, 29,90 €)".
 
 ---
 
