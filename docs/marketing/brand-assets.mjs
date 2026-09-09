@@ -82,12 +82,12 @@ function palette(theme) {
     // Akzent-Verlauf für Schlüsselwörter (<em>/<span>) – teal auf Hell tiefer (AA)
     accentGrad: teal
       ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
-      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
+      : (hell ? "linear-gradient(100deg,#e0a92e,#8a5e05)" : "linear-gradient(100deg,#f2d489,#e8c15f)"),
     wmGrad: teal
       ? (hell ? "linear-gradient(100deg,#8cc63f,#0f766e)" : "linear-gradient(100deg,#a3d64f,#21b2bd)")
-      : (hell ? "linear-gradient(100deg,#d9a93a,#7e6410)" : "linear-gradient(100deg,#f2d489,#d9a93a)"),
-    eyebrow: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#f2d489"),
-    url: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#7e6410" : "#e8c15f"),
+      : (hell ? "linear-gradient(100deg,#e0a92e,#8a5e05)" : "linear-gradient(100deg,#f2d489,#d9a93a)"),
+    eyebrow: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#8a6608" : "#f2d489"),
+    url: teal ? (hell ? "#0f766e" : "#5fd6d2") : (hell ? "#8a6608" : "#e8c15f"),
     // E-Book-CTA + Häkchen
     ctaBg: teal
       ? "linear-gradient(100deg,#199aa8,#0f766e)"
@@ -108,8 +108,8 @@ const shell = (w, h, extra, body, P) => `<!doctype html><html><head><meta charse
 *{margin:0;box-sizing:border-box}
 body{width:${w}px;height:${h}px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:${P.hell ? "#f6f4ee" : "#090b10"}}
 ${P.bg}
-.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(${P.glow},.45))}
-.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".22" : ".35"}), transparent 66%);filter:blur(30px)}
+.brain{position:relative;object-fit:contain;filter:drop-shadow(0 10px 60px rgba(${P.glow},.6))}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${P.hell ? ".48" : ".55"}), transparent 66%);filter:blur(44px)}
 .wordmark{font-weight:800;text-transform:uppercase;color:${P.hell ? "rgba(22,35,31,.92)" : "rgba(244,242,236,.92)"}}
 .wordmark span{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
 .url{font-weight:700;color:${P.url};letter-spacing:.3px}
@@ -139,6 +139,26 @@ const avatarRound = (w, P) => {
   </div>`, P);
 };
 
+// Nur das leuchtende Gehirn auf TRANSPARENTEM Grund – zum Überlagern über ein
+// eigenes/persönliches Bild. Wird mit screenshot({omitBackground:true}) gerendert.
+const brainTransparent = (w, P) => `<!doctype html><html><head><meta charset="utf8">
+<link rel="stylesheet" href="${fontsUrl}"><style>
+*{margin:0;box-sizing:border-box}
+body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:transparent}
+.wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(w*0.78)}px;height:${Math.round(w*0.78)}px;border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},.42), transparent 66%);filter:blur(50px)}
+.brain{position:relative;width:${Math.round(w*0.72)}px;height:auto;object-fit:contain;filter:drop-shadow(0 10px 46px rgba(${P.glow},.55))}
+</style></head><body>
+<div class="wrap"><div class="glow"></div><img class="brain" src="${P.brainUrl}"></div>
+</body></html>`;
+
+// Nur der Marken-Hintergrund (Creme/Navy/Türkis-Schimmer) – OHNE Gehirn, OHNE
+// Schrift, OHNE Rahmen, aber MIT dem zentralen Gold-/Teal-Glow (wo sonst das
+// Gehirn sitzt). Leere Vorlage, um selbst ein Bild/Gehirn einzusetzen.
+const bgOnly = (w, h, P) => shell(w, h, `
+.glow{left:50%;top:50%;transform:translate(-50%,-50%);width:${Math.round(Math.min(w,h)*0.72)}px;height:${Math.round(Math.min(w,h)*0.72)}px}
+`, `<div class="glow"></div>`, P);
+
 // Quadratisches Kanalbild mit Wortmarke (Telegram/WhatsApp-Kanal, App-Kachel).
 // Trägt das echte Schriftlogo-Lockup wie im Website-Header: „WERDE MEISTER“
 // (Fraunces, „Meister“ in Gold) über „— DEINER GEDANKEN —“ mit Flankier-Strichen.
@@ -161,7 +181,7 @@ const channelSquare = (w, P) => shell(w, w, `
 // Quadratisches Profilbild NUR Emblem (ohne Schriftzug) – lebendige Fläche mit
 // warmem Kern-Verlauf, Sheen, Eck-Vignette, feinem Innenrahmen und Aura hinter
 // dem Gehirn (gleiche Bildsprache wie das runde Emblem-Profilbild).
-const avatarSquarePlain = (w, P) => {
+const avatarSquarePlain = (w, P, opts = {}) => {
   const hell = P.hell;
   const discBase = hell
     ? "radial-gradient(circle at 50% 42%, #faf7f0 0%, #f2ecdd 55%, #e7dfcc 100%)"
@@ -187,7 +207,7 @@ body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:${h
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .brain{width:${Math.round(w*0.6)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 50px rgba(${P.glow},.65)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".2" : ".42"}))}
 </style></head><body>
-<div class="disc"></div><div class="frame"></div>
+<div class="disc"></div>${opts.noFrame ? "" : '<div class="frame"></div>'}
 <div class="aura"></div><div class="core"></div>
 <div class="center"><img class="brain" src="${P.brainUrl}"></div>
 </body></html>`;
@@ -197,7 +217,7 @@ body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:${h
 // Ring, mittig das Gehirn. Der Grund liegt als Kreis (border-radius:50%), die
 // Ecken sind weiß – so wirkt es als eigenständige runde Grafik und wird von
 // allen Plattformen sauber kreisförmig beschnitten.
-const avatarRoundPlain = (w, P) => {
+const avatarRoundPlain = (w, P, opts = {}) => {
   const hell = P.hell;
   // Lebendige Scheibe: warmer Kern-Verlauf, diagonaler Sheen, Rand-Vignette und
   // Rim-Light per inset-Schatten – so wirkt das Medaillon plastisch statt flach.
@@ -226,7 +246,7 @@ body{width:${w}px;height:${w}px;overflow:hidden;position:relative;background:#ff
 .center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .brain{width:${Math.round(w*0.56)}px;height:auto;object-fit:contain;filter:drop-shadow(0 14px 50px rgba(${P.glow},.65)) drop-shadow(0 2px 6px rgba(0,0,0,${hell ? ".2" : ".42"}))}
 </style></head><body>
-<div class="disc"></div><div class="ring2"></div><div class="ring"></div>
+<div class="disc"></div>${opts.noRing ? "" : '<div class="ring2"></div><div class="ring"></div>'}
 <div class="aura"></div><div class="core"></div>
 <div class="center"><img class="brain" src="${P.brainUrl}"></div>
 </body></html>`;
@@ -429,7 +449,7 @@ const storyPost = (w, h, P) => {
     : Math.round(base * (h > w * 1.4 ? 0.5 : h > w ? 0.44 : 0.36));
   const common = `
 .eyebrow{font-size:${b(0.024)}px;letter-spacing:.16em}
-.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".2" : ".32"}), transparent 66%);filter:blur(34px);width:${Math.round(brainSize*0.98)}px;height:${Math.round(brainSize*0.98)}px}
+.brainglow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle, rgba(${P.glow},${hell ? ".8" : ".6"}), transparent 66%);filter:blur(62px);width:${Math.round(brainSize*1.8)}px;height:${Math.round(brainSize*1.8)}px}
 .brain{position:relative;width:${brainSize}px;height:${brainSize}px}
 .h{font-family:Fraunces,serif;font-weight:600;color:${hell ? "#16231f" : "#f4f2ec"};font-size:${b(0.084)}px;line-height:1.06;letter-spacing:-.5px}
 .h .g{background:${P.accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -539,6 +559,22 @@ const TARGETS = [];
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund.png",   w: 1080, h: 1080, hell: true, html: (P) =>avatarRound(1080, P) });
 TARGETS.push({ file: "profil/WMDG-Profilbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarSquarePlain(1080, P) });
 TARGETS.push({ file: "profil/WMDG-Profilbild-Rund-Emblem.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarRoundPlain(1080, P) });
+// Reine Gehirn-Icons OHNE Schrift/Logo UND OHNE Rahmen/Ringe – als Basis, um ein
+// eigenes/persönliches Bild danebenzusetzen oder frei weiterzuverwenden.
+TARGETS.push({ file: "profil/WMDG-Gehirn-Icon-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>avatarSquarePlain(1080, P, { noFrame: true }) });
+TARGETS.push({ file: "profil/WMDG-Gehirn-Icon-Rund.png",    w: 1080, h: 1080, hell: true, html: (P) =>avatarRoundPlain(1080, P, { noRing: true }) });
+// Gehirn freigestellt (transparenter Hintergrund) – Gold + Türkis. hell:false,
+// da der Grund transparent ist; transparent:true schaltet omitBackground ein.
+TARGETS.push({ file: "profil/WMDG-Gehirn-Transparent.png", w: 1600, h: 1600, hell: false, transparent: true, html: (P) =>brainTransparent(1600, P) });
+// Leere Marken-Hintergründe MIT zentralem Glow (ohne Gehirn/Schrift/Rahmen) –
+// mehrere Formate, je 4 Farbwelten. Zum Selbst-Einsetzen eines eigenen Bildes.
+for (const F of [
+  { key: "1x1",  w: 1080, h: 1080 },
+  { key: "4x5",  w: 1080, h: 1350 },
+  { key: "9x16", w: 1080, h: 1920 },
+  { key: "16x9", w: 1920, h: 1080 },
+])
+  TARGETS.push({ file: `hintergrund/WMDG-Hintergrund-${F.key}.png`, w: F.w, h: F.h, hell: true, html: (P) =>bgOnly(F.w, F.h, P) });
 TARGETS.push({ file: "profil/WMDG-Kanalbild-Quadrat.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 TARGETS.push({ file: "messenger/WMDG-Messenger-Kanalbild.png", w: 1080, h: 1080, hell: true, html: (P) =>channelSquare(1080, P) });
 // WhatsApp Business: rundes Profilbild (wird als Kreis angezeigt), quadratische
@@ -611,7 +647,7 @@ for (const t of targets){
     writeFileSync(tmp, t.html(palette(theme)));
     await page.goto(pathToFileURL(tmp).href, { waitUntil:"networkidle" });
     mkdirSync(join(HERE, dirname(outFile)), { recursive:true });
-    await page.screenshot({ path: join(HERE, outFile) });
+    await page.screenshot({ path: join(HERE, outFile), omitBackground: !!t.transparent });
     await page.close(); rmSync(tmp,{force:true});
     console.log("✓", outFile, `${t.w * SCALE}×${t.h * SCALE}`);
   }
