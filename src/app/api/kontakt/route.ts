@@ -88,6 +88,11 @@ export async function POST(request: Request) {
   const email = String(body.email ?? "").trim();
   const message = String(body.message ?? "").trim();
   const honeypot = String(body.company ?? "").trim();
+  // Optionales Thema (z. B. „Mitgliedschaft") aus `/kontakt?thema=…`. Auf eine
+  // knappe Länge begrenzt, damit es nicht zum Vehikel für Betreff-Spam wird.
+  const thema = String(body.thema ?? "")
+    .trim()
+    .slice(0, 60);
 
   // Spam-Schutz: Honeypot ausgefüllt → still verwerfen (Erfolg vortäuschen)
   if (honeypot) return NextResponse.json({ ok: true });
@@ -128,6 +133,7 @@ export async function POST(request: Request) {
     name: escapeHtml(name),
     email: escapeHtml(email),
     message: escapeHtml(message),
+    thema: escapeHtml(thema),
   };
 
   // 1) Benachrichtigung an Heiko
@@ -136,11 +142,18 @@ export async function POST(request: Request) {
       from: FROM,
       to: TO,
       replyTo: email,
-      subject: `Neue Kontaktanfrage von ${name}`,
-      text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
+      subject: thema
+        ? `Neue Kontaktanfrage (${thema}) von ${name}`
+        : `Neue Kontaktanfrage von ${name}`,
+      text:
+        `Name: ${name}\nE-Mail: ${email}\n` +
+        (thema ? `Thema: ${thema}\n` : "") +
+        `\nNachricht:\n${message}`,
       html: `<h2 style="font-family:sans-serif">Neue Kontaktanfrage</h2>
         <p style="font-family:sans-serif"><strong>Name:</strong> ${safe.name}<br>
-        <strong>E-Mail:</strong> ${safe.email}</p>
+        <strong>E-Mail:</strong> ${safe.email}${
+          safe.thema ? `<br><strong>Thema:</strong> ${safe.thema}` : ""
+        }</p>
         <p style="font-family:sans-serif;white-space:pre-wrap">${safe.message}</p>`,
     });
     if (error) throw error;

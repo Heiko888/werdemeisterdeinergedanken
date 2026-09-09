@@ -5,6 +5,35 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-09 – Kontaktformular: Thema-Kontext (`/kontakt?thema=…`)
+
+Mehrere Wege enden bewusst auf dem Kontaktformular statt im Bezahlvorgang –
+der sanfte Fallback aus `/api/checkout` leitet auf `/kontakt?thema=mitgliedschaft`,
+`/api/buch-checkout` auf `/kontakt?thema=buch` (wenn Stripe noch nicht
+eingerichtet ist). Bisher wurde der `thema`-Parameter **ignoriert**: Wer über
+den Mitgliedschafts-Button kam, stand vor einem leeren, neutralen Formular.
+
+Neu: Das Formular richtet sich nach `thema`.
+
+- **Neue Quelle der Wahrheit** `src/lib/kontakt-themen.ts` (`KONTAKT_THEMEN` +
+  `resolveThema`) – für Client (Formular) und Server (E-Mail) gemeinsam, ohne
+  server-only-Importe. Bekannte Themen: `mitgliedschaft`, `buch`.
+- **`src/app/kontakt/page.tsx`** liest jetzt `searchParams` (async Page,
+  gleiche Konvention wie `/mitgliedschaft`) und reicht Label, Hinweis und
+  vorausgefüllte Nachricht an das Formular.
+- **`src/components/sections/ContactForm.tsx`** zeigt einen einordnenden
+  Hinweis (Gold-Akzent) über dem Formular, füllt die Nachricht passend vor und
+  schickt das `thema` im Request mit. Ohne `thema` verhält sich alles wie zuvor.
+- **`src/app/api/kontakt/route.ts`** übernimmt das `thema` (auf 60 Zeichen
+  begrenzt, HTML-escaped) in **Betreff** („Neue Kontaktanfrage (Mitgliedschaft)
+  von …“) und Text/HTML der Benachrichtigung, damit sofort erkennbar ist,
+  worum es geht.
+
+Verifiziert: `npx tsc --noEmit` (keine neuen Fehler in den geänderten Dateien),
+`npm run lint` (0 Fehler), `npm run build` (grün).
+
+---
+
 ## 2026-09-09 – Verkaufsseite `/buch`: vollständiges Inhaltsverzeichnis
 
 Die Inhalt-Sektion zeigt jetzt das **komplette Inhaltsverzeichnis** des Buchs –

@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import { Mail, socialIcons } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
 import { withCanonical } from "@/lib/seo";
+import { resolveThema } from "@/lib/kontakt-themen";
 
 export const metadata: Metadata = withCanonical("/kontakt", {
   title: "Kontakt",
@@ -13,7 +14,14 @@ export const metadata: Metadata = withCanonical("/kontakt", {
     "Nimm Kontakt auf und vereinbare ein kostenloses Erstgespräch. Gemeinsam finden wir heraus, wo du stehst und was dein nächster Schritt ist.",
 });
 
-export default function ContactPage() {
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ thema?: string | string[] }>;
+}) {
+  const { thema } = await searchParams;
+  const thema_ = resolveThema(thema);
+
   return (
     <>
       <PageHero
@@ -29,7 +37,11 @@ export default function ContactPage() {
 
       <section className="bg-paper-aura grain-soft relative pt-10 pb-12 sm:pt-16 sm:pb-24">
         <Container className="grid gap-10 lg:grid-cols-[1.4fr_1fr] [&>*]:min-w-0">
-          <ContactForm />
+          <ContactForm
+            thema={thema_?.label}
+            hinweis={thema_?.hinweis}
+            vorlage={thema_?.vorlage}
+          />
 
           <aside className="flex min-w-0 flex-col gap-5">
             <Image
