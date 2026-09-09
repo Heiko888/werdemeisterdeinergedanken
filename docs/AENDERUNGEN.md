@@ -180,6 +180,31 @@ Neu bauen mit: `npm run pdf:buch`
 
 ---
 
+## 2026-09-08 – Hero-Bilder Journal & Praxis von PNG auf WebP
+
+Die beiden neu hinzugefügten Titelbilder lagen als verlustfreies PNG im Repo
+und waren dadurch 15–20× so groß wie alle übrigen Hero-Bilder der Seite, die
+seit jeher verlustbehaftetes WebP sind – bei identischen Abmessungen
+(1672×941).
+
+**Geändert:**
+- **`public/hero-journal.webp`** (108 KB) ersetzt `hero-journal.png` (1,64 MB).
+- **`public/hero-praxis.webp`** (257 KB) ersetzt `hero-praxis.png` (2,28 MB).
+  Konvertiert mit `sharp` bei `quality: 85` – das trifft die Größenordnung der
+  bestehenden Heros (`hero-blog-gipfel.webp` 118 KB,
+  `hero-bewusstseinstest.webp` 127 KB, `hero-programm.webp` 183 KB).
+- **`src/app/mitglieder/journal/page.tsx`** und
+  **`src/app/mitglieder/praxis/page.tsx`**: die `src`- bzw. `image`-Angabe auf
+  `.webp` umgestellt. Sonst keine Änderung – Zuschnitt, Verlauf und Layout
+  bleiben identisch.
+
+**Warum:** Die PNGs lagen mit zusammen ~4 MB in Git und im Docker-Image, und
+der Next-Optimizer musste bei jeder noch nicht gecachten Breite ein 2,3-MB-PNG
+neu durchrechnen. Sichtbar ändert sich nichts: Der Optimizer liefert Browsern
+ohnehin WebP, die ausgelieferten Bytes bleiben praktisch gleich.
+
+---
+
 ## 2026-09-08 – Neues Titelbild für „Praxis" (/mitglieder/praxis)
 
 Das alte Praxis-Herobild (`hero-praxis.webp`) trug ein zentrales Praxis-Symbol
