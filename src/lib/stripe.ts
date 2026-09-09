@@ -15,6 +15,9 @@ import Stripe from "stripe";
  */
 export const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID; // Monatsabo (Standard)
 export const STRIPE_PRICE_ID_YEARLY = process.env.STRIPE_PRICE_ID_YEARLY; // Jahresabo (optional)
+// Einmalkauf des Buchs „Werde Meister deiner Gedanken" (29,90 €). Eigener
+// Preis (price_…) für ein Nicht-Abo-Produkt – steuert die /buch-Verkaufsseite.
+export const STRIPE_BOOK_PRICE_ID = process.env.STRIPE_BOOK_PRICE_ID;
 export const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET;
 
 const SECRET = process.env.STRIPE_SECRET_KEY;
@@ -24,6 +27,9 @@ export const isStripeConfigured = Boolean(SECRET && STRIPE_PRICE_ID);
 
 /** True, wenn zusätzlich ein Jahresabo hinterlegt ist. */
 export const hasYearlyPlan = Boolean(STRIPE_PRICE_ID_YEARLY);
+
+/** True, wenn der Buch-Einmalkauf über Stripe starten kann (Key + Buchpreis). */
+export const isBookCheckoutConfigured = Boolean(SECRET && STRIPE_BOOK_PRICE_ID);
 
 export type Plan = "monat" | "jahr";
 

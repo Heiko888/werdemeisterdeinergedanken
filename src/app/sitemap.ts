@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/die-7-stufen",
+    "/buch",
     "/mitgliedschaft",
     "/ueber-mich",
     "/bewusstseinstest",

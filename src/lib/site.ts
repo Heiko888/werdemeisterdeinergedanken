@@ -47,6 +47,7 @@ export type NavItem = { label: string; href: string };
 
 export const mainNav: NavItem[] = [
   { label: "Die 7 Stufen", href: "/die-7-stufen" },
+  { label: "Das Buch", href: "/buch" },
   { label: "Mitgliedschaft", href: "/mitgliedschaft" },
   { label: "Bewusstseinstest", href: "/bewusstseinstest" },
   { label: "Über mich", href: "/ueber-mich" },
