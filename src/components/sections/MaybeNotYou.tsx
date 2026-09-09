@@ -29,7 +29,7 @@ export function MaybeNotYou() {
               </span>
               <Eyebrow>Ein anderer Blickwinkel</Eyebrow>
             </div>
-            <h2 className="text-[2.1rem] font-medium leading-[1.1] text-ink sm:text-5xl">
+            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl md:text-[2.9rem]">
               Was, wenn es{" "}
               <em className="accent">nicht an dir</em> liegt?
             </h2>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/cn";
 
 /**
@@ -48,13 +48,18 @@ export function VideoMessage({
   const posterMax = `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`;
   const posterFallback = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
   // Ein übergebenes Cover hat Vorrang; sonst das native YouTube-Vorschaubild.
-  const [poster, setPoster] = useState(posterOverride ?? posterMax);
+  const initialPoster = posterOverride ?? posterMax;
+  const [poster, setPoster] = useState(initialPoster);
   const embed = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1`;
 
-  // Bei einem Video-/Cover-Wechsel wieder mit dem Ausgangsbild starten.
-  useEffect(() => {
-    setPoster(posterOverride ?? posterMax);
-  }, [posterOverride, posterMax]);
+  // Bei einem Video-/Cover-Wechsel wieder mit dem Ausgangsbild starten – ohne
+  // Effekt: React empfiehlt, abgeleiteten Zustand direkt beim Render zu
+  // korrigieren. Der gemerkte vorige Ausgangswert verhindert eine Schleife.
+  const [prevInitial, setPrevInitial] = useState(initialPoster);
+  if (initialPoster !== prevInitial) {
+    setPrevInitial(initialPoster);
+    setPoster(initialPoster);
+  }
 
   return (
     <figure

@@ -28,7 +28,7 @@ export function LeadMagnet() {
         <Reveal className="lg:col-start-2 lg:row-start-1">
           <div className="flex flex-col items-start gap-6">
             <Eyebrow>Gratis-Einstieg</Eyebrow>
-            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
+            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl md:text-[2.9rem]">
               Werde zum bewussten{" "}
               <em className="accent">Gestalter deiner Gedanken</em>
             </h2>

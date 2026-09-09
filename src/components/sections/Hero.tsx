@@ -72,7 +72,7 @@ export function Hero() {
                 background:
                   "linear-gradient(rgba(8,16,42,.85),rgba(8,16,42,.85)) padding-box, linear-gradient(120deg,#e8c15f,#d9a93a) border-box",
                 border: "1.5px solid transparent",
-                boxShadow: "0 0 26px -6px rgba(52,196,196,.5)",
+                boxShadow: "0 0 26px -6px rgba(217,169,58,.5)",
               }}
             >
               <p className="font-display text-3xl italic text-cream">7</p>
