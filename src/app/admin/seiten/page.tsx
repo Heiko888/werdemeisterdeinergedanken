@@ -132,6 +132,11 @@ function buildGroups(): PageGroup[] {
         { href: "/admin/marken-uebersicht", label: "Marken-Übersicht" },
         { href: "/admin/redaktionsplan", label: "Redaktionsplan" },
         { href: "/admin/vorlagen", label: "Vorlagen" },
+        {
+          href: "/admin/bewusstseinsbibliothek",
+          label: "Bewusstseinsbibliothek",
+          hint: "Quellen, Tätigkeiten & Content-Reservoir (nur Admin)",
+        },
         { href: "/admin/seiten", label: "Seitenübersicht (diese Seite)" },
       ],
     },
