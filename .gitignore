@@ -60,6 +60,10 @@ docs/carousels/_fonts.css
 docs/carousels/logo.png
 docs/carousels/logo-gold.png
 docs/carousels/**/vorlage.png
+# Eigene Foto-Hintergründe (Quelle) – nicht versionieren, nur die README bleibt:
+docs/carousels/vorlagen/**/*.png
+docs/carousels/vorlagen/**/*.jpg
+docs/carousels/vorlagen/**/*.webp
 
 # Vorlagen-Galerie (generiert, ~650 MB Binaerdaten).
 # Liegt seit 18.08.2026 unter /opt/website-vorlagen auf dem Server und wird

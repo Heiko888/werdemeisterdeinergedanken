@@ -5,6 +5,52 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Carousel-Studio: Foto-Hintergründe eingebrannt (Cover/CTA)
+
+Carousels können jetzt eigene Fotos als Hintergrund **einbrennen** – vorher ging
+das nur bei Reel-Covern (Carousels hatten die Foto-Ebene `.bg` deaktiviert).
+
+Umgesetzt in `docs/carousels/build.mjs`:
+
+- Neue Quell-Ablage `docs/carousels/vorlagen/<serie>/<slug>/` –
+  `<format>.png` (pro Format) oder `vorlage.png` (Allrounder). `findVorlage()`
+  kopiert das Foto in den Build-Ordner.
+- Foto-Ebene `.bg` wird **nur auf Cover- und CTA-Slide** aktiv
+  (Klasse `.has-photo`); Body-Slides bleiben auf dem Marken-Verlauf (langer Text).
+- Neuer, kräftigerer `photoScrim` für Foto-Slides (dunkle Welten dunkeln ab,
+  Creme-Welten hellen auf) + Partikel-Sterne über Foto aus.
+- `.gitignore`: `docs/carousels/vorlagen/**` (Fotos bleiben lokal, README versioniert).
+
+Kein Effekt auf bestehende Carousels, solange kein Foto abgelegt ist. Verifiziert:
+Cover/CTA erhalten `has-photo` + kopierte `vorlage.png`, Body-Slides und Carousels
+ohne Foto bleiben unverändert. Doku: `docs/marketing/BILDPLAN-Fotohintergruende.md`
+(Abschnitt 7) und `docs/carousels/vorlagen/README.md`.
+
+---
+
+## 2026-09-09 – Bildplan: Fotohintergründe für Carousels & Reel-Cover
+
+Neues Planungsdokument `docs/marketing/BILDPLAN-Fotohintergruende.md` – wie
+eigene Heiko-Fotos als Hintergrund in Carousel-Posts und Reel-Cover integriert
+werden, ohne den Marken-Look zu brechen.
+
+Festgehaltener Serverstand:
+
+- **Reel-Cover** (`docs/reels/covers/build.mjs`) haben bereits eine aktive
+  Foto-Ebene (`.bg` → `vorlage.png` je `<serie>/<format>`-Ordner) **und**
+  exportieren transparente Overlay-PNGs (`export-overlay/…`) zum Drüberlegen
+  über eigene Fotos in Canva.
+- **Carousels** (`docs/carousels/build.mjs`, Z. 91) haben die Foto-Ebene
+  deaktiviert (`.bg{display:none}`); der Overlay-Weg (`export-overlay/…`)
+  funktioniert aber schon. „Foto fest einbrennen" bräuchte eine kleine
+  Code-Änderung (im Bildplan Abschnitt 7 beschrieben) – **noch nicht umgesetzt**.
+
+Der Bildplan enthält: Schichten-Modell, Foto-Regeln aus dem Brandbook,
+Maße/Safe-Zones je Format, Foto-Zuordnung je Serie und eine Umsetzungs-
+Checkliste. Reine Doku – kein Code/Generator geändert.
+
+---
+
 ## 2026-09-09 – Kontaktformular: Thema-Kontext (`/kontakt?thema=…`)
 
 Mehrere Wege enden bewusst auf dem Kontaktformular statt im Bezahlvorgang –
