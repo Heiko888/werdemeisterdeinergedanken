@@ -183,6 +183,13 @@ export default async function AdminPage() {
               Seitenübersicht
               <ArrowRight />
             </Link>
+            <Link
+              href="/admin/bewusstseinsbibliothek"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
+            >
+              Bewusstseinsbibliothek
+              <ArrowRight />
+            </Link>
           </div>
         </Container>
       </section>

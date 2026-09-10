@@ -5,6 +5,45 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Bewusstseinsbibliothek als native Admin-Seite (im Website-Design)
+
+**Was:** Das Artifact „Bewusstseinsbibliothek" (Quellenkennzeichnung,
+Tätigkeiten, Themen-Bibliothek mit Buchempfehlungen, ARTE-Doku-Liste,
+72er-Content-Reservoir, Bearbeitungsreihenfolge und Pflege) ist jetzt fest im
+Projekt und **ausschließlich für Admins** erreichbar – als echte Next.js-Seite
+im Marken-Design (Gold-Akzent, Projekt-Fonts, `PageHero`/`Container`/`Card`,
+warmer Papier-Hintergrund), nicht mehr als eingebettetes Fremd-HTML.
+
+**Wo/Zugriff:** Seite `/admin/bewusstseinsbibliothek`. Unter `/admin/*` doppelt
+geschützt: der Proxy (`src/proxy.ts`) lässt `/admin` nur für angemeldete Admins
+durch, und die Seite prüft zusätzlich `isAdminEmail` (sonst Redirect zu
+`/mitglieder` bzw. `/login`) – wie die übrigen Admin-Seiten. `robots: noindex`.
+
+**Umsetzung:** Server-Komponente (Auth + Hero + Grundgedanke/Legende) plus
+Client-Komponente `BibliothekBrowser` für Volltextsuche und Filter nach
+Quellentyp (W/P/G/E/L). Die Inhalte liegen typisiert als Daten, damit sie mit
+den Projekt-Komponenten gerendert und durchsucht werden können.
+
+**Geändert / neu:**
+- **`src/lib/bewusstseinsbibliothek.ts`** (neu): alle Inhalte als typisierte
+  Daten (Quellen-Legende, Tätigkeiten, 13 Themenfelder mit Büchern, Romane,
+  ARTE-Dokus, Content-Reservoir 1–72, Runden, Pflege, Quellenkarte).
+- **`src/components/members/BibliothekBrowser.tsx`** (neu): Client-Komponente,
+  Suche + Quellentyp-Filter, rendert alles im Design-System.
+- **`src/app/admin/bewusstseinsbibliothek/page.tsx`** (neu): admin-geschützte
+  Seite mit `PageHero`, Grundgedanke/Legende und dem Browser.
+- **`src/app/admin/page.tsx`** / **`src/app/admin/seiten/page.tsx`**:
+  Verlinkung im Admin-Kopf und in der Seitenübersicht (normale `next/link`).
+- **Entfernt** (durch die native Seite ersetzt): der frühere Route-Handler
+  `src/app/admin/bewusstseinsbibliothek/route.ts`, die Datei
+  `content/admin/bewusstseinsbibliothek.html` und der Leser
+  `src/lib/bewusstseinsbibliothek-file.ts`.
+
+**Geprüft:** `npm run build` erfolgreich, Seite erscheint als
+`ƒ /admin/bewusstseinsbibliothek`; ESLint der geänderten Dateien ohne Befund.
+
+---
+
 ## 2026-09-10 – Cover-Overlays: vier Farbwelten statt vierfacher Dublette
 
 **Symptom:** In der Galerie waren alle Cover-Overlays braun – die vier
