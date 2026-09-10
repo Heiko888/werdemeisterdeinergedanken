@@ -2,7 +2,11 @@ import { NextResponse } from "next/server";
 import type Stripe from "stripe";
 import { getStripe, STRIPE_WEBHOOK_SECRET } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { sendBuchPdfMail, sendBuchPrintOrderMail } from "@/lib/buch-mail";
 import { site } from "@/lib/site";
+
+/** Metadaten-Kennung des Buch-Einmalkaufs (siehe /api/buch-checkout). */
+const BUCH_PRODUKT = "buch-werde-meister-deiner-gedanken";
 
 export const runtime = "nodejs";
 
@@ -68,6 +72,12 @@ async function onCheckoutCompleted(
   ).toLowerCase();
   if (!email) return;
 
+  // Buch-Einmalkauf: eigener Zweig – KEINE Mitgliedschaft, KEIN Konto anlegen.
+  if (session.metadata?.produkt === BUCH_PRODUKT) {
+    await onBookPurchase(session, email);
+    return;
+  }
+
   const customerId =
     typeof session.customer === "string" ? session.customer : session.customer?.id ?? null;
   const subscriptionId =
@@ -101,6 +111,40 @@ async function onCheckoutCompleted(
     await provisionAccess(email);
   } catch (err) {
     console.error("membership provisioning failed", err);
+  }
+}
+
+/**
+ * Zustellung nach einem Buch-Einmalkauf.
+ *   • edition „pdf"  → Buch als PDF-Anhang per E-Mail (automatische Lieferung).
+ *   • edition „print" → Bestellbestätigung (Versand erfolgt manuell).
+ *
+ * Fehler werden bewusst NICHT verschluckt: schlägt der Versand fehl, endet der
+ * Webhook mit 500 und Stripe stellt erneut zu – so geht keine Lieferung verloren.
+ */
+async function onBookPurchase(session: Stripe.Checkout.Session, email: string) {
+  // Nur bei tatsächlich bezahltem Kauf ausliefern (z. B. nicht bei noch
+  // offenen, asynchronen Zahlungsmethoden).
+  const paid =
+    session.payment_status === "paid" ||
+    session.payment_status === "no_payment_required";
+  if (!paid) return;
+
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.warn("buch delivery: kein RESEND_API_KEY – Zustellung übersprungen");
+    return;
+  }
+
+  const edition = session.metadata?.edition === "print" ? "print" : "pdf";
+
+  const { Resend } = await import("resend");
+  const resend = new Resend(apiKey);
+
+  if (edition === "print") {
+    await sendBuchPrintOrderMail(resend, email);
+  } else {
+    await sendBuchPdfMail(resend, email);
   }
 }
 
