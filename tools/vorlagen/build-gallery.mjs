@@ -816,8 +816,19 @@ async function buildCoverOverlays() {
   const ergebnisse = await parallel(
     aufgaben,
     async ({ bereich, bDir, formate, ov }) => {
-    const nr = basename(ov).replace(/[^0-9]/g, "");
-    const id = `cover-overlay-${bereich.name}-${nr}`;
+    // Farbwelt aus dem Datei-Suffix ableiten – exakt wie bei den Reel-Covern
+    // (buildReels). Ohne diese Unterscheidung warf
+    // `replace(/[^0-9]/g, "")` jeden Buchstaben weg, sodass
+    // overlay-01.png, -01-hell, -01-tuerkis und -01-tuerkis-hell alle auf
+    // dieselbe nr "01" und damit dieselbe ID fielen: ein ZIP wurde viermal
+    // ueberschrieben, der Katalog bekam vier identische Eintraege und in der
+    // Galerie sah jede "Farbwelt" gleich aus (die suffixlose, dunkle).
+    const ovBase = basename(ov).replace(/\.png$/i, ""); // "overlay-01-tuerkis"
+    const nrMatch = ovBase.match(/^overlay-(\d+)/i);
+    const nr = nrMatch ? nrMatch[1] : ovBase.replace(/[^0-9]/g, "");
+    const sfx = THEME_SUFFIXES_LONGEST_FIRST.find((s) => ovBase.endsWith(s)) || "";
+    const theme = THEME_BY_SUFFIX[sfx] ?? "dunkel";
+    const id = `cover-overlay-${bereich.name}-${nr}${sfx}`;
     const slideDir = join(dir, id);
     ensureDir(slideDir);
     const tmp = join(tmpRoot, id);
@@ -825,9 +836,9 @@ async function buildCoverOverlays() {
 
     const slidePaths = [];
     for (const F of formate) {
-      const ovPng = join(bDir, F.key, `overlay-${nr}.png`);
+      const ovPng = join(bDir, F.key, `overlay-${nr}${sfx}.png`);
       if (!existsSync(ovPng)) continue;
-      const full = join(fullRoot, bereich.name, F.key, `cover-${nr}.png`);
+      const full = join(fullRoot, bereich.name, F.key, `cover-${nr}${sfx}.png`);
       const name = `preview-${F.key}.webp`;
       // Vorschau: fertiges Cover (falls vorhanden), sonst Overlay auf Dunkel.
       let buf;
@@ -865,7 +876,7 @@ async function buildCoverOverlays() {
       // ZIP-Download je Format rendert (VorlagenBrowser waehlt die Karte
       // nach a.kind, nicht nach a.kategorie).
       kategorie: "reels",
-      titel: `${prettifyLabel(bereich.name)} · Cover ${nr}`,
+      titel: `${prettifyLabel(bereich.name)} · Cover ${nr} · ${THEME_LABEL[theme]}`,
       unterKategorie: `${prettifyLabel(bereich.name)} · Cover-Overlay`,
       kind: "carousel",
       slides: slidePaths.length,

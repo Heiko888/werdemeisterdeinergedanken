@@ -5,6 +5,50 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Cover-Overlays: vier Farbwelten statt vierfacher Dublette
+
+**Symptom:** In der Galerie waren alle Cover-Overlays braun – die vier
+Farbwelten fehlten, obwohl der Katalog 236 Einträge auswies.
+
+**Ursache:** Die 236 Einträge waren **59 Overlays, jedes viermal gelistet** –
+mit identischem Titel und identischem ZIP. Die vier Welten stecken im
+Datei-Suffix (`overlay-01.png` = Gold/Dunkel, `-hell` = Gold/Creme,
+`-tuerkis` = Türkis/Navy, `-tuerkis-hell` = Türkis/Creme). `buildCoverOverlays`
+zog die Nummer aber mit
+
+```js
+const nr = basename(ov).replace(/[^0-9]/g, "");
+```
+
+heraus – das wirft jeden Buchstaben weg. Alle vier Dateien ergaben `nr = "01"`,
+damit dieselbe ID `cover-overlay-<bereich>-01`, dasselbe ZIP (viermal
+nebenläufig überschrieben) und vier gleiche Katalog-Einträge. Ins Paket wanderte
+stets `overlay-01.png`, also Gold/Dunkel – daher durchgehend braun.
+
+**Exakt derselbe Fehler war im Reel-Cover-Zweig schon repariert** (`199abe20`,
+inklusive Kommentar „drei Varianten fielen still aus der Galerie und schrieben
+zudem nebenläufig auf dieselbe Datei"). Bei den Cover-Overlays wurde die
+Korrektur nie nachgezogen.
+
+**Geändert:**
+- **`tools/vorlagen/build-gallery.mjs`** (`buildCoverOverlays`): Nummer per
+  `/^overlay-(\d+)/` statt Ziffern-Filter; Farbwelt über
+  `THEME_SUFFIXES_LONGEST_FIRST` aus dem Suffix ableiten (längstes zuerst,
+  sonst gilt `-tuerkis-hell` fälschlich als `-hell`); Suffix in ID **und**
+  Dateiauswahl (`overlay-${nr}${sfx}.png`, Vorschau `cover-${nr}${sfx}.png`);
+  Welt-Label im Titel, wie bei den Reel-Covern.
+- **`src/lib/vorlagen-assets.ts`**: per `npm run vorlagen:galerie` neu erzeugt
+  (~55 min, 2,1 GB). Overlays jetzt **236 Einträge mit 236 eigenständigen
+  ZIPs**, je 59 pro Farbwelt. Gesamtzahl unverändert 2352.
+- **`docs/AENDERUNGEN.md`**: Korrekturhinweis am Eintrag von `b152951f`, dessen
+  Aussage „je Cover alle vier Welten" auf den Dubletten beruhte.
+
+Verifiziert: 236 distinkte `href`, 236 distinkte Titel, Häufigkeit je ZIP
+genau 1; die vier Welten eines Covers unterscheiden sich in Prüfsumme und Größe
+(953 KB dunkel gegen 729 KB creme), ebenso ihre Vorschaubilder.
+
+---
+
 ## 2026-09-10 – Cover-Overlays erscheinen jetzt beim Reel-Cover statt bei den Carousels
 
 **Symptom:** Nach dem Deploy der 236 Cover-Overlays waren sie unter
@@ -95,11 +139,15 @@ Kein Deploy nötig – an der laufenden Seite ändert sich nichts.
 
 ## 2026-09-10 – Vorlagen-Galerie neu erzeugt: Cover-Overlays in allen 4 Farbwelten
 
+> **Korrektur (siehe Eintrag ganz oben vom selben Tag):** Die Aussage, je Cover
+> lägen nun alle vier Farbwelten vor, war **falsch**. Es waren 59 Overlays, die
+> der Generator viermal identisch in den Katalog schrieb – alle in Gold/Dunkel.
+> Der Zählstand 236 entstand durch Dubletten, nicht durch Farbwelten.
+
 Die **Cover-Overlays** gab es in der Galerie bisher nur in einer Farbe. Nach dem
-Farbwelt-Umbau von Reel-Covern (`199abe20`) und Carousels (`c52eb0e7`) zieht nun
-auch der Overlay-Zweig nach: `npm run vorlagen:galerie` erzeugt je Cover alle
-vier Welten (**Gold · Dunkel**, **Gold · Creme**, **Türkis · Navy**,
-**Türkis · Creme**).
+Farbwelt-Umbau von Reel-Covern (`199abe20`) und Carousels (`c52eb0e7`) sollte nun
+auch der Overlay-Zweig nachziehen (**Gold · Dunkel**, **Gold · Creme**,
+**Türkis · Navy**, **Türkis · Creme**).
 
 **Geändert:**
 - **`src/lib/vorlagen-assets.ts`** (auto-generiert): Katalog 2079 → 2352 Einträge.
