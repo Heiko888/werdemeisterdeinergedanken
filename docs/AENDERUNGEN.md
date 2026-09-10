@@ -5,6 +5,40 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Vorlagen-Galerie `/admin/vorlagen`: fehlender Volume-Mount behoben
+
+**Symptom:** Auf `/admin/vorlagen` wurden fast keine Vorlagen angezeigt – überall
+gebrochene Bilder/Downloads, nur die PDF-Dokumente-Liste funktionierte.
+
+**Ursache:** Die Vorlagen-Dateien (webp/PDF/ZIP, ~1 GB) liegen bewusst **nicht**
+im Docker-Image (`content/vorlagen` steht in `.dockerignore`), sondern auf dem
+Host unter `/opt/website-vorlagen` und müssen per Volume nach
+`/app/content/vorlagen` in den Container gemountet werden. Genau dieser
+Volume-Mount **fehlte** in `deploy/docker-compose.yml` – obwohl `.dockerignore`
+und `.gitignore` ihn als vorhanden dokumentieren. Dadurch war
+`/app/content/vorlagen` im Container leer und die Route
+`/admin/vorlagen/datei/…` lieferte für jede Datei **404**. (Die PDF-Liste
+verlinkt auf andere Routen – `/mitglieder/…` bzw. das E-Book aus `content/pdf`,
+das im Image liegt – und blieb deshalb sichtbar.)
+
+- **`deploy/docker-compose.yml`**: `volumes:`-Eintrag ergänzt –
+  `${VORLAGEN_VOLUME_DIR:-/opt/website-vorlagen}:/app/content/vorlagen:ro`
+  (read-only, da die Route nur liest). Kopf- und Inline-Kommentar erklären den
+  Zusammenhang.
+- **`deploy/.env.example`**: `VORLAGEN_VOLUME_DIR` als optional überschreibbaren
+  Host-Pfad dokumentiert.
+
+**Zum Live-Setzen nötig:** Auf dem Server neu ausrollen, damit der Mount greift:
+`git pull && docker compose -f deploy/docker-compose.yml up -d --build`.
+Voraussetzung ist, dass der Host-Ordner `/opt/website-vorlagen` mit den
+Vorlagen-Dateien befüllt ist (falls nicht/veraltet:
+`tools/deploy/update-vorlagen-galerie.sh`, ggf. `FULL_REBUILD=1`) und für den
+Container-Nutzer lesbar ist.
+
+Verifiziert: `docker compose -f deploy/docker-compose.yml config` (gültig).
+
+---
+
 ## 2026-09-10 – Buch: automatische PDF-Zustellung nach Zahlung
 
 Der Kauf der **PDF-Edition** liefert das Buch jetzt **automatisch** aus: Nach
