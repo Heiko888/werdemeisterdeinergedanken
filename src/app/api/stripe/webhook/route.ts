@@ -3,6 +3,7 @@ import type Stripe from "stripe";
 import { getStripe, STRIPE_WEBHOOK_SECRET } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { sendBuchPdfMail, sendBuchPrintOrderMail } from "@/lib/buch-mail";
+import { createBuchDownloadToken, buchDownloadUrl } from "@/lib/buch-download";
 import { site } from "@/lib/site";
 
 /** Metadaten-Kennung des Buch-Einmalkaufs (siehe /api/buch-checkout). */
@@ -144,7 +145,11 @@ async function onBookPurchase(session: Stripe.Checkout.Session, email: string) {
   if (edition === "print") {
     await sendBuchPrintOrderMail(resend, email);
   } else {
-    await sendBuchPdfMail(resend, email);
+    // Signierter, 30 Tage gültiger Download-Link (null, falls kein Secret gesetzt
+    // → Mail fällt auf den PDF-Anhang zurück).
+    const token = createBuchDownloadToken();
+    const url = token ? buchDownloadUrl(token) : null;
+    await sendBuchPdfMail(resend, email, url);
   }
 }
 
