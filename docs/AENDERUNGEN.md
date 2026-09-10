@@ -5,6 +5,49 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Cover-Overlays erscheinen jetzt beim Reel-Cover statt bei den Carousels
+
+**Symptom:** Nach dem Deploy der 236 Cover-Overlays waren sie unter
+`/admin/vorlagen` → **Reel-Cover** nicht zu finden.
+
+**Ursache:** Keine fehlenden Daten – eine falsche Einsortierung. Der Generator
+vergab für Cover-Overlays fest `kategorie: "carousel"`, obwohl die Quelle
+`docs/reels/covers/export-overlay/` ist, es sich also um Reel-/Feed-Cover
+handelt. Die Chips der Galerie filtern genau auf dieses Feld
+(`kategorie === "reels"` bzw. `"carousel"`), deshalb lagen die Overlays im Tab
+**Carousels** unter Gruppen wie „Praxis · Cover-Overlay".
+
+Der Grund für die alte Zuordnung war technisch: ein Overlay hat mehrere Slides
+und ein ZIP mit allen fünf Formaten und braucht deshalb die `CarouselKarte`.
+Die Reel-Cover-Sektion rendert aber `BildKarte` (Einzelbild) – ein bloßes
+Umhängen der Kategorie hätte Slide-Ansicht und ZIP-Download gekostet.
+
+**Geändert:**
+- **`tools/vorlagen/build-gallery.mjs`** (`buildCoverOverlays`): `kategorie`
+  jetzt `"reels"`. `kind` bleibt `"carousel"` – das steuert die Darstellung,
+  nicht den Tab.
+- **`src/lib/vorlagen-assets.ts`** (auto-generiert): dieselbe Umstellung für die
+  236 vorhandenen Einträge nachgezogen, damit kein kompletter Generator-Lauf
+  (~2 GB Bilddaten) nötig war. Ein späterer `npm run vorlagen:galerie` erzeugt
+  denselben Stand. Reel-Cover 236 → **472**, Carousels 557 → **321**.
+- **`src/app/admin/vorlagen/VorlagenBrowser.tsx`**: Die Reel-Cover-Sektion wählt
+  Karte und Raster jetzt pro Gruppe anhand von `a.kind` – `CarouselKarte` im
+  3-spaltigen Raster für Overlays, `BildKarte` im 5-spaltigen für die fertigen
+  Cover. Neue Hilfsfunktion `mitOverlaysEinsortieren` hängt jede
+  Overlay-Gruppe direkt hinter die Cover-Gruppe ihres Bereichs, statt alle
+  Overlays gesammelt ans Ende zu setzen; Overlay-Gruppen ohne passende
+  Cover-Gruppe (etwa wenn die Suche nur das Overlay trifft) fallen hinten an
+  und gehen nicht verloren. Overlay-Gruppen bekommen zusätzlich das
+  Download-Icon und einen Einzeiler zum 3-Ebenen-Workflow.
+
+**Merke:** In `VorlagenAsset` steuert `kategorie` den Tab, `kind` die
+Darstellung. Die beiden zu vermischen war genau der Fehler.
+
+Verifiziert per `docker compose build website` (grün, 131 Seiten) und im
+gebauten Image: 236 Overlays mit `kategorie:"reels"`, 0 mit `"carousel"`.
+
+---
+
 ## 2026-09-10 – `deploy/` auf das echte Setup umgeschrieben
 
 **Anlass:** PR #331 hat den fehlenden Volume-Mount in `deploy/docker-compose.yml`

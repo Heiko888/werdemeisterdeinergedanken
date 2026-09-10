@@ -859,7 +859,12 @@ async function buildCoverOverlays() {
     if (res.status !== 0) throw new Error(`zip fehlgeschlagen für ${id}`);
 
     return {
-      kategorie: "carousel",
+      // Gehoert in den Tab "Reel-Cover", nicht zu den Carousels: die Quelle
+      // ist docs/reels/covers/export-overlay, es sind also Reel-/Feed-Cover.
+      // kind bleibt "carousel", damit die Galerie die Slide-Ansicht und den
+      // ZIP-Download je Format rendert (VorlagenBrowser waehlt die Karte
+      // nach a.kind, nicht nach a.kategorie).
+      kategorie: "reels",
       titel: `${prettifyLabel(bereich.name)} · Cover ${nr}`,
       unterKategorie: `${prettifyLabel(bereich.name)} · Cover-Overlay`,
       kind: "carousel",

@@ -38769,7 +38769,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 01",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -38813,7 +38813,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 01",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -38857,7 +38857,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 01",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -38901,7 +38901,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 01",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -38945,7 +38945,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 02",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -38989,7 +38989,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 02",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -39033,7 +39033,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 02",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -39077,7 +39077,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 02",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -39121,7 +39121,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 03",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -39165,7 +39165,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 03",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -39209,7 +39209,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 03",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -39253,7 +39253,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Landing / Allgemein · Cover 03",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
@@ -39297,7 +39297,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 01",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39341,7 +39341,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 01",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39385,7 +39385,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 01",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39429,7 +39429,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 01",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39473,7 +39473,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 02",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39517,7 +39517,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 02",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39561,7 +39561,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 02",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39605,7 +39605,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 02",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39649,7 +39649,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 03",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39693,7 +39693,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 03",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39737,7 +39737,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 03",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39781,7 +39781,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 03",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39825,7 +39825,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 04",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39869,7 +39869,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 04",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39913,7 +39913,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 04",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -39957,7 +39957,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 04",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40001,7 +40001,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 05",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40045,7 +40045,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 05",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40089,7 +40089,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 05",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40133,7 +40133,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 05",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40177,7 +40177,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 06",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40221,7 +40221,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 06",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40265,7 +40265,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 06",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40309,7 +40309,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 06",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40353,7 +40353,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 07",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40397,7 +40397,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 07",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40441,7 +40441,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 07",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40485,7 +40485,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 07",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40529,7 +40529,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 08",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40573,7 +40573,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 08",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40617,7 +40617,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 08",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40661,7 +40661,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 08",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40705,7 +40705,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 09",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40749,7 +40749,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 09",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40793,7 +40793,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 09",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40837,7 +40837,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 09",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40881,7 +40881,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 10",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40925,7 +40925,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 10",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -40969,7 +40969,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 10",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41013,7 +41013,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 10",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41057,7 +41057,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 11",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41101,7 +41101,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 11",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41145,7 +41145,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 11",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41189,7 +41189,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 11",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41233,7 +41233,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 12",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41277,7 +41277,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 12",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41321,7 +41321,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 12",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41365,7 +41365,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 12",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41409,7 +41409,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 13",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41453,7 +41453,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 13",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41497,7 +41497,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 13",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41541,7 +41541,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Praxis · Cover 13",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
@@ -41585,7 +41585,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 01",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41629,7 +41629,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 01",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41673,7 +41673,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 01",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41717,7 +41717,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 01",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41761,7 +41761,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 02",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41805,7 +41805,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 02",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41849,7 +41849,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 02",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41893,7 +41893,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 02",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41937,7 +41937,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 03",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -41981,7 +41981,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 03",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42025,7 +42025,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 03",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42069,7 +42069,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 03",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42113,7 +42113,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 04",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42157,7 +42157,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 04",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42201,7 +42201,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 04",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42245,7 +42245,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 04",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42289,7 +42289,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 05",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42333,7 +42333,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 05",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42377,7 +42377,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 05",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42421,7 +42421,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 05",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42465,7 +42465,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 06",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42509,7 +42509,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 06",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42553,7 +42553,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 06",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42597,7 +42597,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 06",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42641,7 +42641,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 07",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42685,7 +42685,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 07",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42729,7 +42729,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 07",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42773,7 +42773,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 07",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42817,7 +42817,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 08",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42861,7 +42861,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 08",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42905,7 +42905,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 08",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42949,7 +42949,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 08",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -42993,7 +42993,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 09",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43037,7 +43037,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 09",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43081,7 +43081,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 09",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43125,7 +43125,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 09",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43169,7 +43169,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 10",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43213,7 +43213,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 10",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43257,7 +43257,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 10",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43301,7 +43301,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 10",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43345,7 +43345,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 11",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43389,7 +43389,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 11",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43433,7 +43433,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 11",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43477,7 +43477,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 11",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43521,7 +43521,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 12",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43565,7 +43565,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 12",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43609,7 +43609,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 12",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43653,7 +43653,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 12",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43697,7 +43697,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 13",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43741,7 +43741,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 13",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43785,7 +43785,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 13",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43829,7 +43829,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 13",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43873,7 +43873,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 14",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43917,7 +43917,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 14",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -43961,7 +43961,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 14",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44005,7 +44005,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 14",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44049,7 +44049,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 15",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44093,7 +44093,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 15",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44137,7 +44137,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 15",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44181,7 +44181,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 15",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44225,7 +44225,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 16",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44269,7 +44269,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 16",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44313,7 +44313,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 16",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44357,7 +44357,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 16",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -44401,7 +44401,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 01",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44445,7 +44445,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 01",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44489,7 +44489,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 01",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44533,7 +44533,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 01",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44577,7 +44577,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 02",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44621,7 +44621,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 02",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44665,7 +44665,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 02",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44709,7 +44709,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 02",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44753,7 +44753,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 03",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44797,7 +44797,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 03",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44841,7 +44841,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 03",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44885,7 +44885,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 03",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44929,7 +44929,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 04",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -44973,7 +44973,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 04",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45017,7 +45017,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 04",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45061,7 +45061,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 04",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45105,7 +45105,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 05",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45149,7 +45149,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 05",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45193,7 +45193,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 05",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45237,7 +45237,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 05",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45281,7 +45281,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 06",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45325,7 +45325,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 06",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45369,7 +45369,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 06",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45413,7 +45413,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 06",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45457,7 +45457,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 07",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45501,7 +45501,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 07",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45545,7 +45545,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 07",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45589,7 +45589,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Die 7 Stufen · Cover 07",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -45633,7 +45633,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 01",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45677,7 +45677,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 01",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45721,7 +45721,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 01",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45765,7 +45765,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 01",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45809,7 +45809,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 02",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45853,7 +45853,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 02",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45897,7 +45897,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 02",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45941,7 +45941,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 02",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -45985,7 +45985,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 03",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46029,7 +46029,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 03",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46073,7 +46073,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 03",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46117,7 +46117,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 03",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46161,7 +46161,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 04",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46205,7 +46205,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 04",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46249,7 +46249,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 04",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46293,7 +46293,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 04",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46337,7 +46337,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 05",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46381,7 +46381,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 05",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46425,7 +46425,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 05",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46469,7 +46469,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 05",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46513,7 +46513,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 06",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46557,7 +46557,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 06",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46601,7 +46601,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 06",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46645,7 +46645,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 06",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46689,7 +46689,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 07",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46733,7 +46733,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 07",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46777,7 +46777,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 07",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46821,7 +46821,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 07",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46865,7 +46865,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 08",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46909,7 +46909,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 08",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46953,7 +46953,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 08",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -46997,7 +46997,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 08",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47041,7 +47041,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 09",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47085,7 +47085,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 09",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47129,7 +47129,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 09",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47173,7 +47173,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 09",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47217,7 +47217,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 10",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47261,7 +47261,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 10",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47305,7 +47305,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 10",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47349,7 +47349,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 10",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47393,7 +47393,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 11",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47437,7 +47437,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 11",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47481,7 +47481,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 11",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47525,7 +47525,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 11",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47569,7 +47569,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 12",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47613,7 +47613,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 12",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47657,7 +47657,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 12",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47701,7 +47701,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 12",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47745,7 +47745,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 13",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47789,7 +47789,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 13",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47833,7 +47833,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 13",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47877,7 +47877,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Vertiefungen · Cover 13",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -47921,7 +47921,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 01",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -47965,7 +47965,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 01",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48009,7 +48009,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 01",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48053,7 +48053,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 01",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48097,7 +48097,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 02",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48141,7 +48141,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 02",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48185,7 +48185,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 02",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48229,7 +48229,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 02",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48273,7 +48273,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 03",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48317,7 +48317,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 03",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48361,7 +48361,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 03",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48405,7 +48405,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 03",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48449,7 +48449,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 04",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48493,7 +48493,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 04",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48537,7 +48537,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 04",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48581,7 +48581,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 04",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48625,7 +48625,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 05",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48669,7 +48669,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 05",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48713,7 +48713,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 05",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48757,7 +48757,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 05",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48801,7 +48801,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 06",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48845,7 +48845,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 06",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48889,7 +48889,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 06",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48933,7 +48933,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 06",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -48977,7 +48977,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 07",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -49021,7 +49021,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 07",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -49068,7 +49068,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
 
 const vorlagenAssets9: VorlagenAsset[] = [
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 07",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
@@ -49112,7 +49112,7 @@ const vorlagenAssets9: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
+    "kategorie": "reels",
     "titel": "Wissenschaft · Cover 07",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",

@@ -28,6 +28,34 @@ function groupBy<T>(items: T[], key: (t: T) => string): [string, T[]][] {
   return [...map.entries()];
 }
 
+// Cover-Overlays liegen in derselben Kategorie wie die Reel-Cover, bilden
+// aber eigene Gruppen ("<Bereich> · Cover-Overlay"). Damit sie nicht alle
+// gesammelt hinter den Covern haengen, wird jede Overlay-Gruppe direkt hinter
+// die Cover-Gruppe ihres Bereichs gezogen. Reihenfolge der Bereiche bleibt.
+const OVERLAY_SUFFIX = " · Cover-Overlay";
+
+function mitOverlaysEinsortieren<T>(gruppen: [string, T[]][]): [string, T[]][] {
+  const overlays = new Map(
+    gruppen
+      .filter(([name]) => name.endsWith(OVERLAY_SUFFIX))
+      .map(([name, items]) => [name.slice(0, -OVERLAY_SUFFIX.length), [name, items] as [string, T[]]]),
+  );
+  const sortiert: [string, T[]][] = [];
+  for (const gruppe of gruppen) {
+    if (gruppe[0].endsWith(OVERLAY_SUFFIX)) continue;
+    sortiert.push(gruppe);
+    const passend = overlays.get(gruppe[0]);
+    if (passend) {
+      sortiert.push(passend);
+      overlays.delete(gruppe[0]);
+    }
+  }
+  // Overlays ohne zugehoerige Cover-Gruppe (z.B. wenn die Suche nur das
+  // Overlay trifft) gehen nicht verloren, sondern haengen hinten an.
+  for (const rest of overlays.values()) sortiert.push(rest);
+  return sortiert;
+}
+
 // Reihenfolge, in der Formate innerhalb eines Kanals erscheinen sollen.
 const FORMAT_REIHENFOLGE = [
   "1:1", "4:5", "9:16", "2:3", "3:2", "16:9", "5:4", "4:3", "3:4", "4:1",
@@ -552,20 +580,48 @@ export function VorlagenBrowser({ social, reels, carousels, workshop, pdfs }: Pr
             <h2 className="mt-1 font-display text-2xl font-medium text-ink">
               Titelbilder für deine Reels
             </h2>
-            {groupBy(gefiltert.reels, (a) => a.unterKategorie).map(([thema, items]) => (
-              <div key={thema} className="mt-8">
-                <h3 className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-ink-muted">
-                  <Play className="h-4 w-4 text-accent" />
-                  {thema}
-                  <span className="text-ink-muted">({items.length})</span>
-                </h3>
-                <div className="grid grid-cols-1 items-start gap-4 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
-                  {items.map((a) => (
-                    <BildKarte key={a.href} a={a} />
-                  ))}
+            {mitOverlaysEinsortieren(
+              groupBy(gefiltert.reels, (a) => a.unterKategorie),
+            ).map(([thema, items]) => {
+              // Overlay-Gruppen sind kind:"carousel" – sie brauchen die
+              // CarouselKarte (Slides + ZIP je Format) und wegen der breiteren
+              // Karte ein grosszuegigeres Raster als die einzelnen Cover.
+              const istOverlay = items[0]?.kind === "carousel";
+              return (
+                <div key={thema} className="mt-8">
+                  <h3 className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-ink-muted">
+                    {istOverlay ? (
+                      <Download className="h-4 w-4 text-accent" />
+                    ) : (
+                      <Play className="h-4 w-4 text-accent" />
+                    )}
+                    {thema}
+                    <span className="text-ink-muted">({items.length})</span>
+                  </h3>
+                  {istOverlay && (
+                    <p className="mb-3 max-w-2xl text-sm text-ink-muted">
+                      Transparente Ebene zum Legen über ein eigenes Foto. Das ZIP
+                      enthält alle fünf Formate und eine Kurzanleitung.
+                    </p>
+                  )}
+                  <div
+                    className={
+                      istOverlay
+                        ? "grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+                        : "grid grid-cols-1 items-start gap-4 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
+                    }
+                  >
+                    {items.map((a) =>
+                      istOverlay ? (
+                        <CarouselKarte key={a.href} a={a} />
+                      ) : (
+                        <BildKarte key={a.href} a={a} />
+                      ),
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </Container>
         </section>
       )}
