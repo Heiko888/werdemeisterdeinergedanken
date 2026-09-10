@@ -5,6 +5,33 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Header: Navigation nicht mehr „zusammengepfercht"
+
+**Symptom:** Nach Aufnahme eines weiteren Menüpunkts wirkte die Kopfzeile
+gedrängt – Logo, 6 Hauptmenü-Punkte, der „Mitglieder"-Link und der breite
+CTA-Button teilten sich zu wenig Platz.
+
+**Ursache:** Die Desktop-Navigation erschien bereits ab `lg` (1024 px), der
+Container ist aber nur `max-w-6xl` (1152 px) breit. Zwischen ~1024 und ~1200 px
+mussten sich 6 Menü-Punkte (alle `whitespace-nowrap`, kein Umbruch) plus rechte
+Aktionsgruppe den Raum teilen und wurden zusammengedrückt.
+
+**Geändert:**
+- **`src/components/layout/Header.tsx`**: Umschaltpunkt zwischen Desktop-Leiste
+  und Hamburger-Menü von `lg` auf `xl` (1280 px) angehoben – an allen vier
+  Stellen konsistent (Haupt-`nav`, rechte Aktionsgruppe, Hamburger-Button,
+  mobiles Menü). Unter 1280 px greift jetzt das mobile Menü, das die Punkte
+  sauber untereinander listet.
+- CTA-Button in der Top-Leiste von „Kostenloses Erstgespräch" auf
+  „Erstgespräch" gekürzt. Im mobilen Menü (voll­breiter Button, genug Platz)
+  bleibt die vollständige Beschriftung erhalten.
+
+**Wirkung:** Ab 1280 px stehen die 6+ Punkte mit Luft nebeneinander; darunter
+übernimmt das aufgeräumte mobile Menü. Reine Layout-/Text-Anpassung, keine
+Logik- oder Datenänderung.
+
+---
+
 ## 2026-09-10 – Cover-Overlays: vier Farbwelten statt vierfacher Dublette
 
 **Symptom:** In der Galerie waren alle Cover-Overlays braun – die vier

@@ -79,7 +79,7 @@ export function Header() {
             übernimmt die MemberNav die Orientierung. */}
         {!imMitgliederbereich && (
           <nav
-            className="hidden items-center gap-0.5 lg:flex"
+            className="hidden items-center gap-0.5 xl:flex"
             aria-label="Hauptmenü"
           >
             {mainNav.map((item) => (
@@ -99,7 +99,7 @@ export function Header() {
           </nav>
         )}
 
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="hidden items-center gap-5 xl:flex">
           {imMitgliederbereich ? (
             <>
               <Link
@@ -123,7 +123,7 @@ export function Header() {
                 Mitglieder
               </Link>
               <Button href="/kontakt" variant="secondary" size="md" className="whitespace-nowrap">
-                Kostenloses Erstgespräch
+                Erstgespräch
               </Button>
             </>
           )}
@@ -132,7 +132,7 @@ export function Header() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-ink/15 bg-ink/[0.03] text-2xl text-ink lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-ink/15 bg-ink/[0.03] text-2xl text-ink xl:hidden"
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
           aria-controls="mobiles-menue"
@@ -148,7 +148,7 @@ export function Header() {
         id="mobiles-menue"
         inert={!open}
         className={cn(
-          "lg:hidden overflow-hidden border-t border-ink/10 bg-white transition-[max-height,opacity] duration-300",
+          "xl:hidden overflow-hidden border-t border-ink/10 bg-white transition-[max-height,opacity] duration-300",
           open ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0",
         )}
       >
