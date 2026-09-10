@@ -21,9 +21,10 @@
 - **Reel-Cover** können ein Foto zusätzlich **fest einbrennen**: eine
   `vorlage.png` in den Format-Ordner legen → der Build rendert das Foto direkt
   als Hintergrund. Bereits eingebaut.
-- **Carousels** können das **noch nicht** – die Foto-Ebene (`.bg`) ist im Code
-  deaktiviert. Für „Foto fest eingebrannt" bei Carousels ist **eine kleine
-  Code-Änderung** nötig (siehe Abschnitt 7). Bis dahin: Overlay-Weg nutzen.
+- **Carousels** können das **seit 2026-09-10 ebenfalls**: Foto in
+  `docs/carousels/vorlagen/<serie>/<slug>/` ablegen → der Build brennt es auf
+  **Cover- und CTA-Slide** ein (Body-Slides bleiben auf dem Verlauf).
+  Siehe Abschnitt 7.
 
 **Empfehlung:** Für den Start **Weg A (Overlay über Foto in Canva)** nehmen –
 kein Code nötig, flexibel, brandkonform. Weg B (einbrennen) nur, wenn du eine
@@ -38,16 +39,18 @@ Jede Slide / jedes Cover besteht aus vier übereinanderliegenden Ebenen:
 | z | Ebene | Reel-Cover | Carousel |
 |---|-------|-----------|----------|
 | 0 | **Marken-Grund** (`::before`) | Verlauf `P.bg` | Verlauf `P.bg` |
-| 1 | **Foto** (`.bg`) | `url("vorlage.png")` **aktiv** | `display:none` — **inaktiv** |
+| 1 | **Foto** (`.bg`) | `url("vorlage.png")` **aktiv** | **aktiv** auf Cover/CTA (seit 2026-09-10) |
 | 2 | **Scrim** (Abdunkler) | stark unten (für Headline) | dezent oben+unten |
 | 3 | **Inhalt** (`.content`) | Logo, Reihen-Tag, Headline, Handle | Logo, Tag, Text, Dots |
 
 - **Reel-Cover** (`docs/reels/covers/build.mjs`, Zeile 46–47): die `.bg`-Ebene
   lädt `vorlage.png` aus dem jeweiligen `<serie>/<format>`-Ordner. Liegt keine
   Datei da, bleibt der Marken-Verlauf sichtbar.
-- **Carousel** (`docs/carousels/build.mjs`, Zeile 91): `.bg{ display:none; }` –
-  die Foto-Ebene ist bewusst abgeschaltet. Deshalb greift bei Carousels heute
-  nur der Overlay-Weg.
+- **Carousel** (`docs/carousels/build.mjs`): die Foto-Ebene ist standardmäßig
+  aus und wird **nur für Cover- und CTA-Slides** aktiviert (`.slide.has-photo`),
+  wenn für das Carousel ein Foto unter
+  `docs/carousels/vorlagen/<serie>/<slug>/` liegt. Body-Slides bleiben immer auf
+  dem Marken-Verlauf.
 
 ### Vier Farbwelten (Themes)
 Beide Systeme rendern jede Slide in vier Welten:
@@ -169,13 +172,17 @@ langer Text, ein Foto würde die Lesbarkeit kosten.
 | **vertiefungen** | `heiko-portrait.webp` | `heiko-portrait.webp` | Verlauf |
 | **mitgliederbereich** | `heiko-hero.webp`, warm | `heiko-portrait.webp` | Verlauf |
 
-**Umsetzung Carousel — heute nur Weg A:**
+**Umsetzung Carousel — beide Wege verfügbar:**
 
-- **Weg A · Overlay (verfügbar):** Overlay-PNG aus
-  `docs/carousels/export-overlay/<serie>/<slug>/<format>/overlay-NN.png` (bzw.
-  `slide-NN`) in Canva über dein Foto legen. Für Cover + CTA dein Foto, für
-  Body-Slides einfach das fertige `export/...`-PNG mit Verlauf nehmen.
-- **Weg B · Einbrennen:** erst nach der Code-Änderung in Abschnitt 7 möglich.
+- **Weg A · Overlay:** Overlay-PNG aus
+  `docs/carousels/export-overlay/<serie>/<slug>/<format>/slide-NN.png` in Canva
+  über dein Foto legen. Für Cover + CTA dein Foto, für Body-Slides einfach das
+  fertige `export/...`-PNG mit Verlauf nehmen.
+- **Weg B · Einbrennen (seit 2026-09-10):** Foto ablegen unter
+  `docs/carousels/vorlagen/<serie>/<slug>/<format>.png` (oder `vorlage.png` für
+  alle Formate), dann `node docs/carousels/export-png.mjs <serie> <slug>` →
+  fertiges PNG in `docs/carousels/export/<serie>/<slug>/<format>/`. Es landet
+  automatisch nur auf **Cover- und CTA-Slide**.
 
 ---
 
@@ -184,6 +191,9 @@ langer Text, ein Foto würde die Lesbarkeit kosten.
 - **Eingebrannt (Reel-Cover):** genau `vorlage.png` (Kleinschreibung) im
   Ordner `docs/reels/covers/<serie>/<format>/`. Pro Format eine eigene, passend
   gecroppte Datei (9:16 ≠ 1:1 ≠ 16:9).
+- **Eingebrannt (Carousel):** `docs/carousels/vorlagen/<serie>/<slug>/<format>.png`
+  (z. B. `feed-4x5.png`) oder `vorlage.png` als Allrounder. Wirkt nur auf
+  Cover-/CTA-Slide.
 - **Foto-Ablage der Quellen:** neue Heiko-Fotos nach `public/` (Web) bzw. für
   die reine Grafik-Pipeline zusätzlich als zugeschnittene `vorlage.png`.
 - **Export-Ergebnisse** (git-ignoriert, nicht committen):
@@ -194,20 +204,35 @@ langer Text, ein Foto würde die Lesbarkeit kosten.
 
 ---
 
-## 7. Offener Punkt — Carousel foto-fähig machen (Code)
+## 7. Carousel-Einbrennen — so funktioniert es (umgesetzt am 2026-09-10)
 
-Damit Carousels ein Foto **fest einbrennen** können (Weg B), sind zwei kleine
-Änderungen nötig – aktuell **noch nicht umgesetzt**:
+Carousels können ein Foto jetzt **fest einbrennen** – automatisch nur auf
+**Cover- und CTA-Slide**, Body-Slides bleiben auf dem Marken-Verlauf.
 
-1. `docs/carousels/build.mjs`, Zeile 91: `.bg{ display:none; }` durch eine
-   aktive Foto-Ebene ersetzen, die pro Carousel eine `vorlage.png` lädt
-   (analog zu `docs/reels/covers/build.mjs` Zeile 46–47) – idealerweise nur für
-   Cover-/CTA-Slides.
-2. Scrim für Foto-Slides verstärken (der Carousel-Scrim ist heute sehr dezent
-   und reicht über einem Foto nicht für sichere Lesbarkeit).
+**So legst du ein Foto ab:**
 
-> Sag Bescheid, wenn ich das einbauen soll – dann dokumentiere ich die Änderung
-> hier und in `docs/AENDERUNGEN.md` und passe den Build an.
+```
+docs/carousels/vorlagen/<serie>/<slug>/<format>.png   ← pro Format (empfohlen)
+docs/carousels/vorlagen/<serie>/<slug>/vorlage.png    ← ein Foto für alle Formate
+```
+
+- `<serie>`: `selbstverteidigung` · `stufen` · `praxis` · `vertiefungen` · `mitgliederbereich`
+- `<slug>`: Carousel-Ordnername (z. B. `autopilot`) – wie unter `docs/carousels/export/<serie>/<slug>/`.
+- `<format>`: `feed-4x5` · `feed-1x1` · `reel-9x16`
+- Der Build sucht zuerst `<format>.png`, sonst `vorlage.png`; fehlt beides,
+  bleibt der Verlauf. Details: `docs/carousels/vorlagen/README.md`.
+
+**Was der Code macht** (`docs/carousels/build.mjs`):
+
+1. `findVorlage()` sucht das Quell-Foto und kopiert es in den Build-Ordner.
+2. Cover-/CTA-Slides bekommen die Klasse `has-photo` → die Foto-Ebene `.bg`
+   wird sichtbar (`background-size:cover`), die Partikel-Sterne aus.
+3. Über dem Foto liegt ein **kräftigerer Scrim** (`photoScrim`): dunkle Welten
+   dunkeln ab, Creme-Welten hellen auf – Text bleibt lesbar.
+
+Die Fotos selbst sind **gitignoriert** (`.gitignore`: `docs/carousels/vorlagen/**`),
+nur die README ist versioniert. Nichts an bestehenden Carousels ändert sich,
+solange kein Foto abgelegt ist.
 
 ---
 
@@ -220,5 +245,7 @@ Damit Carousels ein Foto **fest einbrennen** können (Weg B), sind zwei kleine
 - [ ] Weg A: Overlays exportieren
       (`node docs/reels/covers/export-png.mjs` bzw.
       `node docs/carousels/export-png.mjs`) und in Canva über die Fotos legen.
-- [ ] Weg B (nur Reels heute): `vorlage.png` je Ordner ablegen, PNG exportieren.
-- [ ] Optional: Carousel-Einbrennen freischalten (Abschnitt 7) – auf Zuruf.
+- [ ] Weg B: Foto ablegen und PNG exportieren –
+      Reel-Cover: `vorlage.png` je `docs/reels/covers/<serie>/<format>/`;
+      Carousel: `docs/carousels/vorlagen/<serie>/<slug>/<format>.png`.
+- [x] Carousel-Einbrennen freigeschaltet (Abschnitt 7) – erledigt 2026-09-10.

@@ -13,7 +13,7 @@
  *
  * PNG-Export: node docs/carousels/export-png.mjs
  */
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { HANDLE, GRAD, FORMAT, FORMATS, loadCarousels } from "./data.mjs";
@@ -23,6 +23,24 @@ import { ARROW } from "../_glyphs.mjs";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const BUILD = join(HERE, "build");
 const COVERS = join(HERE, "..", "reels", "covers");
+// Quelle für eingebrannte Foto-Hintergründe (eigene Heiko-Fotos).
+// Ablage:  docs/carousels/vorlagen/<serie>/<slug>/<format>.png  (pro Format)
+//     oder docs/carousels/vorlagen/<serie>/<slug>/vorlage.png   (ein Foto für alle Formate)
+// Die Fotos selbst sind gitignoriert (siehe .gitignore); nur die README ist versioniert.
+const VORLAGEN = join(HERE, "vorlagen");
+// Nur diese Slide-Rollen bekommen ein Foto (Body-Slides tragen langen Text und
+// bleiben auf dem ruhigen Marken-Verlauf – vgl. docs/marketing/BILDPLAN-Fotohintergruende.md).
+const PHOTO_ROLES = new Set(["cover", "cta"]);
+
+/** Quell-Foto für ein Carousel+Format finden (Format-spezifisch vor Allround). */
+function findVorlage(serie, slug, formatKey) {
+  const base = join(VORLAGEN, serie, slug);
+  for (const name of [`${formatKey}.png`, "vorlage.png"]) {
+    const p = join(base, name);
+    if (existsSync(p)) return p;
+  }
+  return null;
+}
 
 // Geteilte Assets aus dem Cover-Studio übernehmen (nicht doppelt versionieren).
 // Beide Seiten-Gehirne (Türkis + Gold) – je Farbwelt das passende (P.brain).
@@ -57,11 +75,16 @@ function carTokens(theme) {
   const scrim = hell
     ? "linear-gradient(180deg, rgba(246,244,238,.10), rgba(246,244,238,.04) 42%, rgba(246,244,238,.16))"
     : "linear-gradient(180deg, rgba(6,9,20,.22), rgba(6,9,20,.06) 42%, rgba(6,9,20,.32))";
+  // Kräftigerer Scrim für Foto-Slides: der Text steht zentriert über dem Foto,
+  // darum muss der ganze Verlauf abdunkeln (dunkel) bzw. aufhellen (creme).
+  const photoScrim = hell
+    ? "linear-gradient(180deg, rgba(246,244,238,.66), rgba(246,244,238,.50) 45%, rgba(246,244,238,.86))"
+    : "linear-gradient(180deg, rgba(6,9,20,.60), rgba(6,9,20,.46) 45%, rgba(6,9,20,.80))";
   const shadowStrong = hell ? "none" : "drop-shadow(0 6px 30px rgba(0,0,0,.55))";
   const shadowSoft = hell ? "none" : "drop-shadow(0 4px 22px rgba(0,0,0,.5))";
   return {
     ...P, accentSolid, inkSoft, muted, cardBg, cardBorder, faint, dotOff,
-    particles, scrim, shadowStrong, shadowSoft,
+    particles, scrim, photoScrim, shadowStrong, shadowSoft,
     logoGlow: `rgba(${P.glowRGB},.30)`, dotGlow: `rgba(${P.glowRGB},.5)`,
   };
 }
@@ -88,7 +111,12 @@ html,body{ background:${P.pageBg}; overflow:hidden; }
   background:${P.bg}; background-size:cover; }
 .slide::after{ content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
   background-image:${P.particles}; }
-.bg{ display:none; }
+/* Foto-Ebene: standardmäßig aus; nur bei .has-photo (Cover/CTA mit vorlage.png). */
+.bg{ display:none; position:absolute; inset:0; z-index:1;
+  background-image:url("vorlage.png"); background-size:cover; background-position:center; }
+.slide.has-photo .bg{ display:block; }
+.slide.has-photo::after{ display:none; }             /* Partikel-Sterne über Foto aus */
+.slide.has-photo .scrim{ background:${P.photoScrim}; } /* kräftigerer Scrim für Lesbarkeit */
 .scrim{ position:absolute; inset:0; z-index:2; background:${P.scrim}; }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column;
   padding:${F.padTop}px ${F.padX}px ${F.padBottom}px; }
@@ -227,7 +255,7 @@ function midHtml(car, slide) {
       </div>`;
 }
 
-function slideHtml(car, slide, idx, total, F, P) {
+function slideHtml(car, slide, idx, total, F, P, hasPhoto = false) {
   const isCover = slide.role === "cover";
   const foot = `<div class="foot">
         <span class="handle">${isCover ? car.seriesLabel : HANDLE}</span>
@@ -240,7 +268,7 @@ function slideHtml(car, slide, idx, total, F, P) {
 <link rel="stylesheet" href="../../../../_fonts.css">
 <style>${slideCssFor(F, P)}</style></head>
 <body>
-  <div class="slide">
+  <div class="slide${hasPhoto ? " has-photo" : ""}">
     <div class="bg"></div>
     <div class="scrim"></div>
     ${slide.role === "body" && !OV[ovKey(car, slide)] ? `<div class="numbg">${String(idx + 1).padStart(2, "0")}</div>` : ""}
@@ -309,14 +337,19 @@ for (const s of data) {
     for (const F of FORMATS) {
       const fdir = join(BUILD, s.key, car.slug, F.key);
       mkdirSync(fdir, { recursive: true });
+      // Optionales eigenes Foto für dieses Carousel+Format in den Ordner kopieren.
+      // Existiert eins, tragen Cover- und CTA-Slides es als Hintergrund (.bg).
+      const srcImg = findVorlage(s.key, car.slug, F.key);
+      if (srcImg) copyFileSync(srcImg, join(fdir, "vorlage.png"));
       // Je Format alle vier Farbwelten schreiben (Standard/dunkel = ohne Suffix).
       for (const theme of THEMES) {
         const sfx = THEME_SUFFIX[theme];
         const P = carTokens(theme);
         car.slides.forEach((slide, i) => {
+          const hasPhoto = Boolean(srcImg) && PHOTO_ROLES.has(slide.role);
           writeFileSync(
             join(fdir, `slide-${String(i + 1).padStart(2, "0")}${sfx}.html`),
-            slideHtml(car, slide, i, total, F, P),
+            slideHtml(car, slide, i, total, F, P, hasPhoto),
           );
           slideCount++;
         });
