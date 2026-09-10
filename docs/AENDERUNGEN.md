@@ -5,6 +5,31 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Buch-PDF: signierter Download-Link in der Liefermail
+
+Die PDF-Liefermail enthält jetzt zusätzlich zum Anhang einen **signierten,
+zeitlich begrenzten Download-Link** (30 Tage) – so kommt das Buch auch dann an,
+wenn der 7,5-MB-Anhang an Größengrenzen eines Mailanbieters scheitert.
+
+- **`src/lib/buch-download.ts`** (neu): stateless **HMAC-SHA256**-Token
+  (`<payload>.<signatur>`, payload = base64url `{ exp }`), Prüfung timing-safe.
+  Geheimnis `BUCH_DOWNLOAD_SECRET`, ersatzweise `STRIPE_WEBHOOK_SECRET`; ohne
+  Geheimnis wird kein Link erzeugt (Mail fällt auf den Anhang zurück). Keine
+  Datenbank nötig.
+- **`src/app/api/buch-download/route.ts`** (neu): liefert die Buch-PDF nur mit
+  gültigem, nicht abgelaufenem Token aus – sonst 404 (kein Hinweis für Unbefugte).
+- **`src/lib/buch-mail.ts`**: `sendBuchPdfMail` nimmt optional die Download-URL
+  und rendert einen „Buch als PDF herunterladen"-Button (Anhang bleibt erhalten).
+- **`src/app/api/stripe/webhook/route.ts`**: erzeugt beim PDF-Kauf den Token und
+  übergibt die URL an die Liefermail.
+- **`.env.local.example`** + **`docs/STRIPE-MITGLIEDSCHAFT.md`**: `BUCH_DOWNLOAD_SECRET`
+  und der Download-Link dokumentiert.
+
+Verifiziert: `npm run lint` (0 Fehler), `npm run build` (grün), `/api/buch-download`
+als Route erzeugt; ohne/ungültiger Token → 404.
+
+---
+
 ## 2026-09-10 – Buch: automatische PDF-Zustellung nach Zahlung
 
 Der Kauf der **PDF-Edition** liefert das Buch jetzt **automatisch** aus: Nach
