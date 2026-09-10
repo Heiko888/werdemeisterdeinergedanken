@@ -183,17 +183,13 @@ export default async function AdminPage() {
               Seitenübersicht
               <ArrowRight />
             </Link>
-            {/* Route-Handler (eigenständiges HTML-Dokument), daher als
-                <a target="_blank"> statt next/link – wie E-Book/Arbeitsheft. */}
-            <a
+            <Link
               href="/admin/bewusstseinsbibliothek"
-              target="_blank"
-              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
             >
               Bewusstseinsbibliothek
               <ArrowRight />
-            </a>
+            </Link>
           </div>
         </Container>
       </section>
