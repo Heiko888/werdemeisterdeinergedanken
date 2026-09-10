@@ -5,6 +5,36 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Verkaufsseite `/buch`: zwei Editionen (PDF 29,90 € / gedruckt 39,90 €)
+
+Das Buch ist jetzt in **zwei Editionen** kaufbar: **als PDF für 29,90 €**
+(Download) und **gedruckt für 39,90 €** (Versand DE/AT/CH).
+
+- **`src/lib/stripe.ts`**: neue Variable `STRIPE_BOOK_PRICE_ID_PRINT` (gedruckt);
+  `STRIPE_BOOK_PRICE_ID` ist jetzt die PDF-Edition. Helfer
+  `bookPriceIdForEdition(edition)` + Typ `BookEdition`; `isBookCheckoutConfigured`
+  ist wahr, sobald **eine** der beiden Editionen angelegt ist.
+- **`src/app/api/buch-checkout/route.ts`**: liest `edition=pdf|print` aus dem
+  Formular, wählt den passenden Preis. Nur die gedruckte Edition erfasst eine
+  Lieferadresse; PDF ist reiner Download. Fehlt der Preis einer Edition, greift
+  weiterhin der sanfte Kontakt-Fallback. `success_url` trägt `edition` mit.
+- **`src/components/sections/BuchKaufenButton.tsx`**: neues Prop `edition`
+  (verstecktes Formularfeld).
+- **`src/app/buch/page.tsx`**: Preis-Konstanten `PRICE_PDF` / `PRICE_PRINT`;
+  Angebotsbox mit **zwei Optionen** (PDF + gedruckt, gedruckt hervorgehoben);
+  Hero- und Final-CTA verweisen auf die Auswahl (`#bestellen`) und nennen beide
+  Preise; Erfolgs-Hinweis editionsabhängig (Download vs. Versand); neue FAQ
+  „Als PDF oder gedruckt – was ist der Unterschied?".
+- **`.env.local.example`** und **`docs/STRIPE-MITGLIEDSCHAFT.md`**: um die zweite
+  Preis-Variable und den Zwei-Editionen-Ablauf ergänzt (inkl. Fulfillment-Hinweis:
+  PDF-Versand und Buchversand aktuell manuell über das Stripe-Dashboard).
+
+Verifiziert: `npm run lint` (0 Fehler), `npm run build` (grün), Smoke `/buch` →
+HTTP 200 mit beiden Preisen, beiden Optionen und den versteckten `edition`-Feldern
+(`pdf`/`print`).
+
+---
+
 ## 2026-09-09 – Kontaktformular: Thema-Kontext (`/kontakt?thema=…`)
 
 Mehrere Wege enden bewusst auf dem Kontaktformular statt im Bezahlvorgang –
