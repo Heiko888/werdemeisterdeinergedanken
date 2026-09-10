@@ -101,6 +101,16 @@ export function Star(props: IconProps) {
   );
 }
 
+export function User(props: IconProps) {
+  const { rest } = base(props);
+  return (
+    <svg viewBox="0 0 24 24" width="1em" height="1em" {...stroke} {...rest}>
+      <circle cx="12" cy="8" r="3.2" />
+      <path d="M5.5 20a6.5 6.5 0 0113 0" />
+    </svg>
+  );
+}
+
 export function Menu(props: IconProps) {
   const { rest } = base(props);
   return (

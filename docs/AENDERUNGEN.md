@@ -5,6 +5,30 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Header: „Mitglieder" hebt sich als gold-getönte Login-Pill ab
+
+**Symptom:** Der „Mitglieder"-Link im Header war ein schlichter Text-Link neben
+dem CTA-Button und ging optisch unter – er ließ sich kaum vom übrigen Menü
+unterscheiden.
+
+**Geändert:**
+- **`src/components/ui/Icon.tsx`**: neues `User`-Icon (Personen-Silhouette,
+  gleicher Strich-Stil wie die übrigen Icons).
+- **`src/components/layout/Header.tsx`**: „Mitglieder" ist jetzt eine
+  eigenständige, gold-getönte Pill mit Personen-Icon (Rundung, feiner
+  Gold-Rahmen `gold-600/40`, Tint `gold-500/10`, Text `gold-700` = AA-tauglich,
+  sanfte Hover-Anhebung). Höhe `h-11` = gleiche Höhe wie der Erstgespräch-Button,
+  sodass das Aktionspaar sauber ausgerichtet ist. Im mobilen Menü dieselbe
+  gold-getönte Identität, damit sich „Mitglieder" auch dort vom Content-Menü
+  abhebt.
+
+**Wirkung:** Der Mitglieder-Login liest sich als exklusiver Marken-Akzent
+(Gold) und ist klar erkennbar, bleibt neben dem neutralen Erstgespräch-Button
+aber die ruhigere der beiden Aktionen. Reine Layout-/Style-Änderung, keine
+Logik- oder Datenänderung.
+
+---
+
 ## 2026-09-10 – Header: Navigation nicht mehr „zusammengepfercht"
 
 **Symptom:** Nach Aufnahme eines weiteren Menüpunkts wirkte die Kopfzeile
