@@ -1737,6 +1737,80 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "sinnesueberladung-warum-du-ins-reptiliengehirn-rutschst",
+    title:
+      "Wie deine Sinne überladen werden – und du ins Reptiliengehirn rutschst",
+    excerpt:
+      "Zu viele Reize auf einmal, und dein Kopf schaltet vom Denken aufs Überleben um. Wie Sinnesüberladung den langsamen, klugen Teil deines Gehirns abschaltet – und wie du wieder ans Steuer kommst.",
+    category: "Wissenschaft",
+    date: "2026-09-22",
+    dateLabel: "22. September 2026",
+    readingMinutes: 7,
+    content: [
+      {
+        type: "p",
+        text: "Du kennst diese Momente: Zu viele offene Tabs, ein Gespräch, im Hintergrund ein Bildschirm, das Handy vibriert – und plötzlich reagierst du gereizt, triffst eine schnelle, schlechte Entscheidung oder erstarrst einfach. Das ist kein Charakterfehler. Es ist die vorhersehbare Reaktion eines überladenen Nervensystems, das vom Denken aufs Überleben umschaltet.",
+      },
+      {
+        type: "h2",
+        text: "Drei Ebenen in einem Kopf",
+      },
+      {
+        type: "p",
+        text: "Ein bekanntes Bild beschreibt das Gehirn in drei grob gestapelten Schichten: ein uraltes „Reptiliengehirn“ für Reflexe und Überleben, ein „Säugetiergehirn“ für Gefühle und Bindung, und obenauf der Neocortex für Sprache, Planung und Abwägen. Wichtig zur Ehrlichkeit: Diese Dreiteilung ist ein vereinfachtes Modell, kein exakter Bauplan – die Bereiche arbeiten viel enger verzahnt, als das Bild vermuten lässt. Als Landkarte für einen realen Effekt taugt es trotzdem: Unter Belastung verschiebt sich der Einfluss von den langsamen, denkenden Systemen hin zu den schnellen, reagierenden.",
+      },
+      {
+        type: "h2",
+        text: "Was „Sinnesüberladung“ wirklich bedeutet",
+      },
+      {
+        type: "p",
+        text: "Deine Aufmerksamkeit ist ein Nadelöhr. Sie kann in einem Moment nur wenig scharf verarbeiten – der Rest läuft grob und automatisch. Sinnesüberladung entsteht nicht einfach durch viele Reize, sondern wenn zu viele davon gleichzeitig wichtig erscheinen, ständig wechseln und emotional aufgeladen sind. Genau das liefern Feeds, Pushs und Dauer-Empörung im Sekundentakt. Dein System kommt nicht mehr zum Sortieren – und behandelt im Zweifel alles als potenzielle Gefahr.",
+      },
+      {
+        type: "quote",
+        text: "Nicht die Menge der Reize kippt dich, sondern dass keiner mehr unwichtig sein darf.",
+      },
+      {
+        type: "h2",
+        text: "Der Kipppunkt: Wenn die Amygdala übernimmt",
+      },
+      {
+        type: "p",
+        text: "Im Zentrum des Umschaltens steht die Amygdala – der schnelle Gefahren-Melder des Gehirns. Bewertet sie die Lage als bedrohlich (und Überlastung fühlt sich für den Körper bedrohlich an), löst sie eine Stressreaktion aus: Adrenalin und später Cortisol machen dich reaktionsbereit. Zugleich arbeitet der präfrontale Cortex – zuständig für Impulskontrolle, Planen und Abwägen – schlechter. Man nennt das gern „Amygdala-Hijack“: Der schnelle Teil reißt das Steuer an sich, der langsame, kluge Teil ist kurz offline. Genau das meint „aus dem Reptiliengehirn agieren“ – handeln, bevor du gedacht hast.",
+      },
+      {
+        type: "h2",
+        text: "Woran du merkst, dass du im Überlebensmodus bist",
+      },
+      {
+        type: "p",
+        text: "Der Zustand kündigt sich körperlich an, bevor du ihn benennst. Typisch sind flache, schnelle Atmung, angespannte Schultern und Kiefer, ein enger Blick und das Gefühl, sofort reagieren zu müssen. Dein Denken wird schwarz-weiß, dein Radius für Alternativen schrumpft. Kampf, Flucht oder Erstarren zeigt sich im Alltag als Gereiztheit, hektisches Wegklicken oder als das Gefühl, blockiert und leer zu sein.",
+      },
+      {
+        type: "h2",
+        text: "Zurück in den denkenden Kopf",
+      },
+      {
+        type: "p",
+        text: "Aus dem Überlebensmodus kommst du nicht durch mehr Input heraus, sondern durch Signale von Sicherheit an den Körper. Der schnellste Hebel ist die Atmung, denn ein längeres Ausatmen beruhigt das Nervensystem messbar.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Zähle einmal, wie viele Reizquellen gerade gleichzeitig laufen – und schalte eine ab.",
+          "Atme ein paar Minuten mit längerem Ausatmen als Einatmen; das signalisiert dem Körper Sicherheit.",
+          "Bring die Sinne an einen Ort: Spür deine Füße, nenn dir drei Dinge, die du siehst, hörst, fühlst.",
+          "Triff im Alarmzustand keine großen Entscheidungen. Warte, bis der Blick wieder weiter wird.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Du kannst deine Gedanken nicht meistern, solange dein System glaubt, auf alles reagieren zu müssen. Die eigentliche Freiheit liegt im Spalt zwischen Reiz und Reaktion – und den kannst du trainieren. Die Vertiefung [„Die Reiz-Reaktions-Lücke“](/mitglieder/wissen/reiz-reaktions-luecke) im Mitgliederbereich zeigt, wie; den ganzen Weg zu klarem Denken bündelt das kostenlose [E-Book „Die 7 Stufen der Bewusstseinsentwicklung“](/#ebook).",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {

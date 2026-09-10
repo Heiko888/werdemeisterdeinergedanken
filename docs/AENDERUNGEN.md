@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Blog: neuer Artikel „Sinnesüberladung & Reptiliengehirn"
+
+Neuer Blog-Beitrag darüber, **wie Sinnesüberladung den denkenden Teil des
+Gehirns abschaltet** und man dadurch „aus dem Reptiliengehirn" (Überlebensmodus)
+handelt – inkl. ehrlicher Einordnung des Dreihirn-Modells, Amygdala-Hijack und
+praktischem Ausweg.
+
+- **`src/lib/blog.ts`**: neuer Post
+  `slug: "sinnesueberladung-warum-du-ins-reptiliengehirn-rutschst"`,
+  Titel „Wie deine Sinne überladen werden – und du ins Reptiliengehirn rutschst",
+  Datum `2026-09-22` (vorausdatiert = Redaktionsplan, erscheint erst am Datum).
+- **Kategorie `Wissenschaft`** (bewusst **nicht** „Mentale Selbstverteidigung" –
+  diese Rubrik steht in `DEACTIVATED_CATEGORIES` und wäre überall unsichtbar/404).
+  Kein eigenes Titelbild → generatives Cover (Teal-Farbwelt aus der Kategorie).
+  Verlinkt die Vertiefung `/mitglieder/wissen/reiz-reaktions-luecke` und das
+  Gratis-E-Book.
+
+Verifiziert: `npm run lint` (0 Fehler), `npm run build` (grün), Route
+`/blog/sinnesueberladung-warum-du-ins-reptiliengehirn-rutschst` inkl.
+OpenGraph-Bild prerendered.
+
+---
+
 ## 2026-09-10 – Buch-PDF: signierter Download-Link in der Liefermail
 
 Die PDF-Liefermail enthält jetzt zusätzlich zum Anhang einen **signierten,
