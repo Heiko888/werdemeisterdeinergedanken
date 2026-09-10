@@ -148,9 +148,13 @@ umgekehrt. Die Seite bleibt also jederzeit funktionsfähig.
 > **Hinweis Fulfillment:**
 > - **PDF-Edition: automatisch.** Nach erfolgreicher Zahlung schickt der
 >   Stripe-Webhook (`checkout.session.completed`, `metadata.produkt=buch-…`,
->   `edition=pdf`) das Buch-PDF automatisch per E-Mail an die Kaufadresse
->   (`content/pdf/Werde-Meister-deiner-Gedanken.pdf` als Anhang). Voraussetzung:
->   `RESEND_API_KEY` gesetzt und der Webhook-Endpoint eingerichtet (s. o.).
+>   `edition=pdf`) das Buch-PDF automatisch per E-Mail an die Kaufadresse –
+>   **als Anhang UND als signierter Download-Link** (`/api/buch-download`,
+>   30 Tage gültig, HMAC-signiert, ohne Datenbank). Der Link sichert die
+>   Zustellung ab, falls der 7,5-MB-Anhang an Größengrenzen des Mailanbieters
+>   scheitert. Voraussetzung: `RESEND_API_KEY` gesetzt und der Webhook-Endpoint
+>   eingerichtet (s. o.); der Link nutzt `BUCH_DOWNLOAD_SECRET` (ersatzweise
+>   `STRIPE_WEBHOOK_SECRET`). Fehlt beides, enthält die Mail nur den Anhang.
 > - **Gedruckte Edition: manuell.** Die Käufer:in bekommt automatisch eine
 >   **Bestellbestätigung** per E-Mail; der **Versand** selbst erfolgt von Hand –
 >   die Bestellung inkl. Lieferadresse liegt in Stripe (Dashboard → Payments).
@@ -184,5 +188,7 @@ umgekehrt. Die Seite bleibt also jederzeit funktionsfähig.
 - `src/app/api/buch-checkout/route.ts` – startet den Buch-Einmalkauf (Edition `pdf`/`print`)
 - `src/app/buch/page.tsx` – Verkaufsseite Buch (Preis-Konstanten `PRICE_PDF` / `PRICE_PRINT`)
 - `src/app/api/stripe/webhook/route.ts` – liefert das Buch nach Zahlung aus (PDF-Mail bzw. Print-Bestätigung)
-- `src/lib/buch-mail.ts` – Liefer-/Bestätigungsmail für den Buch-Kauf (Resend)
-- `src/lib/pdf/buch-file.ts` – lädt das Buch-PDF (`content/pdf/…`) für den Anhang
+- `src/lib/buch-mail.ts` – Liefer-/Bestätigungsmail für den Buch-Kauf (Resend), inkl. Download-Button
+- `src/lib/pdf/buch-file.ts` – lädt das Buch-PDF (`content/pdf/…`) für Anhang und Download
+- `src/lib/buch-download.ts` – signierter, zeitlich begrenzter Download-Token (HMAC, stateless)
+- `src/app/api/buch-download/route.ts` – liefert die Buch-PDF nur mit gültigem Token aus
