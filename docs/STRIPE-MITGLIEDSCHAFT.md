@@ -4,9 +4,9 @@ Die „Mitglied werden"-Buttons auf `/mitgliedschaft` starten einen echten
 Stripe-Abo-Checkout. Nach erfolgreicher Zahlung legt ein Webhook den Zugang an
 und schickt der Kundin/dem Kunden eine Mail zum Setzen des Passworts.
 
-> Der **Buch-Einmalkauf** auf `/buch` (29,90 €) nutzt denselben Stripe-Account,
-> ist aber ein separates Produkt mit eigener Route – siehe Abschnitt
-> [Buch-Einmalkauf (`/buch`, 29,90 €)](#buch-einmalkauf-buch-2990-).
+> Der **Buch-Einmalkauf** auf `/buch` (PDF 29,90 € / gedruckt 39,90 €) nutzt
+> denselben Stripe-Account, ist aber ein separates Produkt mit eigener Route –
+> siehe Abschnitt [Buch-Einmalkauf (`/buch`)](#buch-einmalkauf-buch).
 
 ## Schnell-Checkliste „Bezahlen zuerst" (Selbstbedienung, kein Konto von Hand)
 
@@ -96,63 +96,78 @@ REQUIRE_ACTIVE_MEMBERSHIP=true
 Dann brauchen Nicht-Admins eine aktive Mitgliedschaft. Admins (`ADMIN_EMAILS`)
 kommen immer rein.
 
-## Buch-Einmalkauf (`/buch`, 29,90 €)
+## Buch-Einmalkauf (`/buch`)
 
-Neben dem Abo gibt es die Verkaufsseite `/buch` für das **gedruckte Buch**
-„Werde Meister deiner Gedanken". Anders als die Mitgliedschaft ist das ein
-**Einmalkauf** (`mode: "payment"`, kein Abo) – daher eigenes Produkt, eigener
-Preis und eine eigene Checkout-Route (`/api/buch-checkout`). Der Webhook und die
-Supabase-Tabelle `memberships` sind **nicht** beteiligt: Es entsteht kein
-Konto und kein Mitgliederzugang, nur eine Bestellung in Stripe.
+Neben dem Abo gibt es die Verkaufsseite `/buch` für das Buch „Werde Meister
+deiner Gedanken" – in **zwei Editionen**:
+
+- **PDF/Download** – **29,90 €** → `STRIPE_BOOK_PRICE_ID`
+- **gedruckt/Versand** – **39,90 €** → `STRIPE_BOOK_PRICE_ID_PRINT`
+
+Anders als die Mitgliedschaft ist das ein **Einmalkauf** (`mode: "payment"`,
+kein Abo) – daher ein eigenes Produkt mit zwei Preisen und eine eigene
+Checkout-Route (`/api/buch-checkout`). Der Webhook und die Supabase-Tabelle
+`memberships` sind **nicht** beteiligt: Es entsteht kein Konto und kein
+Mitgliederzugang, nur eine Bestellung in Stripe.
 
 ### Schnell-Checkliste
 
-1. **Stripe-Produkt + Preis** anlegen: ein Produkt „Werde Meister deiner
-   Gedanken (Buch)" mit einem **einmaligen** Preis **29,90 € (EUR)** → die
-   `price_…`-ID wird `STRIPE_BOOK_PRICE_ID`.
-2. **Env-Variable** im Hosting setzen: `STRIPE_BOOK_PRICE_ID=price_…`
-   (`STRIPE_SECRET_KEY` ist derselbe wie beim Abo, muss also nur einmal gesetzt
-   sein).
-3. Im **Stripe-Testmodus** mit Karte `4242 4242 4242 4242` einen Kauf
-   durchspielen → in Stripe erscheint eine bezahlte `Payment`/`Checkout Session`
-   mit den Metadaten `produkt=buch-werde-meister-deiner-gedanken`.
+1. **Stripe-Produkt** „Werde Meister deiner Gedanken (Buch)" anlegen und **zwei
+   einmalige Preise** hinzufügen: **29,90 € (EUR)** für die PDF-Edition
+   → `STRIPE_BOOK_PRICE_ID`, und **39,90 € (EUR)** für die gedruckte Edition
+   → `STRIPE_BOOK_PRICE_ID_PRINT`.
+2. **Env-Variablen** im Hosting setzen: `STRIPE_BOOK_PRICE_ID=price_…` und
+   `STRIPE_BOOK_PRICE_ID_PRINT=price_…` (`STRIPE_SECRET_KEY` ist derselbe wie
+   beim Abo, muss also nur einmal gesetzt sein).
+3. Im **Stripe-Testmodus** mit Karte `4242 4242 4242 4242` je einen Kauf
+   (PDF und gedruckt) durchspielen → in Stripe erscheint eine bezahlte
+   `Checkout Session` mit den Metadaten `produkt=buch-werde-meister-deiner-gedanken`
+   und `edition=pdf` bzw. `edition=print`.
 4. Auf **Live-Keys** umstellen.
-5. **Preis** in `src/app/buch/page.tsx` (Konstante `PRICE`) anpassen, falls sich
-   der Betrag ändert (steht dort zentral für Hero, Angebotsbox und CTA).
+5. **Preise** in `src/app/buch/page.tsx` (Konstanten `PRICE_PDF` / `PRICE_PRINT`)
+   anpassen, falls sich die Beträge ändern (dort zentral für Hero, Angebotsbox
+   und CTA).
 
-Solange `STRIPE_BOOK_PRICE_ID` (oder der Secret-Key) **nicht** gesetzt ist,
-führt der „Bestellen"-Button sanft zum Kontaktformular
-(`/kontakt?thema=buch`) – die Seite bleibt also jederzeit funktionsfähig.
+Ist ein Preis (oder der Secret-Key) **nicht** gesetzt, führt der jeweilige
+Bestell-Button sanft zum Kontaktformular (`/kontakt?thema=buch`). Nur die PDF-
+Edition angelegt? Dann bleibt PDF kaufbar, „Gedruckt" landet beim Kontakt – und
+umgekehrt. Die Seite bleibt also jederzeit funktionsfähig.
 
 ### Ablauf
 
-1. Besucher klickt **Jetzt für 29,90 € bestellen** → `POST /api/buch-checkout`.
-2. Die Route erstellt eine Stripe-Checkout-Session (Modus: **Einmalzahlung**,
-   mit Rechnungs- und Lieferadresse für DE/AT/CH) und leitet auf die gehostete
-   Stripe-Bezahlseite weiter.
-3. Nach Zahlung → Weiterleitung auf `/buch?checkout=erfolg` (Danke-Hinweis).
-   Abbruch → `/buch?checkout=abgebrochen`, Fehler → `/buch?checkout=fehler`.
+1. Besucher wählt eine Edition und klickt **PDF für 29,90 € kaufen** bzw.
+   **Gedruckt für 39,90 € bestellen** → `POST /api/buch-checkout` (Formularfeld
+   `edition=pdf|print`).
+2. Die Route erstellt eine Stripe-Checkout-Session (Modus: **Einmalzahlung**).
+   Nur die **gedruckte** Edition erfasst zusätzlich eine **Lieferadresse**
+   (Versand DE/AT/CH); die PDF-Edition ist ein reiner Download.
+3. Nach Zahlung → Weiterleitung auf `/buch?checkout=erfolg&edition=…`
+   (editionsabhängiger Danke-Hinweis). Abbruch → `/buch?checkout=abgebrochen`,
+   Fehler → `/buch?checkout=fehler`.
 
-> **Hinweis Fulfillment/Versand:** Der Versand des gedruckten Buchs wird
-> aktuell **nicht** automatisiert. Die Bestellung inkl. Lieferadresse liegt in
-> Stripe (Dashboard → Payments); von dort aus versenden. Wer den Versand später
-> automatisieren möchte, kann analog zur Abo-Lösung einen Webhook auf
-> `checkout.session.completed` mit `metadata.produkt=buch-…` ergänzen.
+> **Hinweis Fulfillment:** Weder der **PDF-Versand** noch der **Buchversand**
+> sind aktuell automatisiert. Jede Bestellung (bei „gedruckt" inkl. Lieferadresse)
+> liegt in Stripe (Dashboard → Payments) und wird von dort aus bedient: PDF per
+> E-Mail schicken bzw. Buch versenden. Die Edition steht in den Session-Metadaten
+> (`edition`). Wer das später automatisieren möchte, kann einen Webhook auf
+> `checkout.session.completed` mit `metadata.produkt=buch-…` ergänzen (für PDF
+> analog zum Gratis-E-Book-Versand über Resend, siehe `src/lib/ebook-mail.ts`).
 
 ### Einrichtung (durch Heiko)
 
 - Stripe-Dashboard → **Product catalog** → Produkt „Werde Meister deiner
   Gedanken (Buch)" anlegen.
-- Preis hinzufügen: **Einmalig**, **29,90 EUR** → **Price-ID** (`price_…`)
-  kopieren.
+- **Zwei** Preise hinzufügen, jeweils **Einmalig**: **29,90 EUR** (PDF) und
+  **39,90 EUR** (gedruckt) → beide **Price-IDs** (`price_…`) kopieren.
 - Env (Vercel → Settings → Environment Variables):
   ```
-  STRIPE_BOOK_PRICE_ID=price_…
+  STRIPE_BOOK_PRICE_ID=price_…          # PDF (29,90 €)
+  STRIPE_BOOK_PRICE_ID_PRINT=price_…    # gedruckt (39,90 €)
   ```
 - Testen wie oben (Testkarte `4242 4242 4242 4242`), dann Live.
 
 ## Beteiligte Dateien
-- `src/lib/stripe.ts` – Stripe-Client & Konfiguration (inkl. `STRIPE_BOOK_PRICE_ID`)
+- `src/lib/stripe.ts` – Stripe-Client & Konfiguration (inkl. `STRIPE_BOOK_PRICE_ID`, `STRIPE_BOOK_PRICE_ID_PRINT`, `bookPriceIdForEdition`)
 - `src/lib/membership.ts` – Status-Abfrage pro E-Mail
 - `src/components/membership/CheckoutButton.tsx` – Abo-Button (Formular → Checkout)
 - `src/app/api/checkout/route.ts` – startet den Abo-Checkout
@@ -160,5 +175,5 @@ führt der „Bestellen"-Button sanft zum Kontaktformular
 - `src/app/mitgliedschaft/willkommen/page.tsx` – Danke-/Nächste-Schritte-Seite
 - `supabase/migrations/0007_membership.sql` – Tabelle `memberships`
 - `src/components/sections/BuchKaufenButton.tsx` – Buch-Button (Formular → Checkout)
-- `src/app/api/buch-checkout/route.ts` – startet den Buch-Einmalkauf
-- `src/app/buch/page.tsx` – Verkaufsseite Buch (Preis-Konstante `PRICE`)
+- `src/app/api/buch-checkout/route.ts` – startet den Buch-Einmalkauf (Edition `pdf`/`print`)
+- `src/app/buch/page.tsx` – Verkaufsseite Buch (Preis-Konstanten `PRICE_PDF` / `PRICE_PRINT`)

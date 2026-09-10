@@ -16,12 +16,13 @@ import heikoPortrait from "../../../public/heiko-avatar.webp";
 export const metadata: Metadata = withCanonical("/buch", {
   title: "Das Buch: Werde Meister deiner Gedanken",
   description:
-    "Das Buch „Werde Meister deiner Gedanken“ von Heiko Schwaninger – erkenne die Gedanken, die nicht deine sind: Reizüberflutung, Framing, Sprachmuster, Propaganda und Algorithmen. In fünf Teilen und 24 Kapiteln. Jetzt für 29,90 € bestellen.",
+    "Das Buch „Werde Meister deiner Gedanken“ von Heiko Schwaninger – erkenne die Gedanken, die nicht deine sind: Reizüberflutung, Framing, Sprachmuster, Propaganda und Algorithmen. In fünf Teilen und 24 Kapiteln. Als PDF für 29,90 € oder gedruckt für 39,90 €.",
 });
 
-// Preis des Buchs. Zentral hier gepflegt, damit Hero, Angebot und CTA
-// garantiert denselben Betrag zeigen.
-const PRICE = "29,90 €";
+// Preise der beiden Editionen. Zentral hier gepflegt, damit Hero, Angebot und
+// CTA garantiert dieselben Beträge zeigen.
+const PRICE_PDF = "29,90 €";
+const PRICE_PRINT = "39,90 €";
 
 // Der goldene Hero-Verlauf – identisch zur Startseite/Mitgliedschaft.
 const NAVY_GLOW = HERO_GLOW;
@@ -127,9 +128,14 @@ const buchFaqs = [
       "Darum, die Gedanken zu erkennen, die gar nicht deine sind: wie Reizüberflutung, Framing, Sprachmuster, Propaganda und Algorithmen beeinflussen, was du denkst und für wahr hältst – und wie du dir dein eigenes, klares Denken zurückholst. Aufgebaut in fünf Teilen und 24 Kapiteln.",
   },
   {
+    question: "Als PDF oder gedruckt – was ist der Unterschied?",
+    answer:
+      "Inhaltlich sind beide identisch. Das PDF (29,90 €) bekommst du digital per E-Mail und kannst sofort loslegen – am Computer, Tablet oder Smartphone. Die gedruckte Ausgabe (39,90 €) wird dir nach Hause geliefert (Versand nach DE/AT/CH). Wähle einfach beim Bestellen die Edition, die dir lieber ist.",
+  },
+  {
     question: "Ist das dasselbe wie das kostenlose E-Book?",
     answer:
-      "Nein. Das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ ist der kompakte Einstieg – raus aus dem Autopilot. Das Buch geht deutlich tiefer und legt den Schwerpunkt auf die Mechanismen der Beeinflussung von außen. Beides ergänzt sich, das Buch setzt aber keinen Download voraus.",
+      "Nein. Das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ ist der kompakte Einstieg – raus aus dem Autopilot. Das Buch geht deutlich tiefer und legt den Schwerpunkt auf die Mechanismen der Beeinflussung von außen. Beides ergänzt sich.",
   },
   {
     question: "Muss ich an Esoterik glauben?",
@@ -156,7 +162,7 @@ const buchFaqs = [
 const NOTICES: Record<string, { tone: "info" | "warn" | "success"; text: string }> = {
   erfolg: {
     tone: "success",
-    text: "Vielen Dank für deine Bestellung! Du bekommst gleich eine Bestätigung per E-Mail. Dein Buch macht sich auf den Weg zu dir.",
+    text: "Vielen Dank für deine Bestellung! Du bekommst gleich eine Bestätigung per E-Mail.",
   },
   abgebrochen: {
     tone: "info",
@@ -195,10 +201,21 @@ function DarkSection({
 export default async function BuchPage({
   searchParams,
 }: {
-  searchParams: Promise<{ checkout?: string }>;
+  searchParams: Promise<{ checkout?: string; edition?: string }>;
 }) {
-  const { checkout } = await searchParams;
-  const notice = (checkout && NOTICES[checkout]) || null;
+  const { checkout, edition } = await searchParams;
+  const baseNotice = (checkout && NOTICES[checkout]) || null;
+  // Erfolgsmeldung an die Edition anpassen (Download vs. Versand).
+  const notice =
+    baseNotice && checkout === "erfolg"
+      ? {
+          tone: baseNotice.tone,
+          text:
+            edition === "print"
+              ? "Vielen Dank für deine Bestellung! Du bekommst gleich eine Bestätigung per E-Mail – dein gedrucktes Buch macht sich auf den Weg zu dir."
+              : "Vielen Dank für deinen Kauf! Du bekommst dein PDF in Kürze per E-Mail – schau bei Bedarf auch im Spam-Ordner nach.",
+        }
+      : baseNotice;
 
   return (
     <>
@@ -258,9 +275,9 @@ export default async function BuchPage({
               zurückholst.
             </p>
             <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap sm:items-center">
-              <BuchKaufenButton size="lg" className="w-full sm:w-auto">
-                Jetzt für {PRICE} bestellen
-              </BuchKaufenButton>
+              <Button href="#bestellen" size="lg" variant="accent" className="w-full sm:w-auto">
+                Jetzt bestellen
+              </Button>
               <Button
                 href="#inhalt"
                 variant="secondary"
@@ -271,7 +288,7 @@ export default async function BuchPage({
               </Button>
             </div>
             <p className="mt-4 text-sm text-cream/80">
-              {PRICE} inkl. MwSt. · gedruckt · sichere Bezahlung
+              Als PDF für {PRICE_PDF} · gedruckt für {PRICE_PRINT} · inkl. MwSt.
             </p>
             <p className="mt-6 flex items-center gap-2 text-sm text-cream/75">
               <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
@@ -505,29 +522,68 @@ export default async function BuchPage({
       <DarkSection id="bestellen">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_.9fr]">
           <div
-            className="relative rounded-3xl border border-cream/15 p-9 sm:p-10"
+            className="relative rounded-3xl border border-cream/15 p-7 sm:p-8"
             style={{
               background:
                 "linear-gradient(165deg, rgba(255,255,255,.06), rgba(255,255,255,.02))",
             }}
           >
             <span className="text-xs font-bold uppercase tracking-[0.16em] text-cream/60">
-              Das Buch
+              Wähle deine Edition
             </span>
-            <div className="mt-4 flex items-baseline gap-2">
-              <span className="font-display text-5xl font-medium text-cream">
-                {PRICE}
-              </span>
-              <span className="text-sm text-cream/60">inkl. MwSt.</span>
+
+            <div className="mt-5 flex flex-col gap-3">
+              {/* PDF / Download */}
+              <div className="rounded-2xl border border-cream/15 p-5">
+                <div className="flex items-baseline justify-between gap-3">
+                  <div>
+                    <div className="text-xs font-bold uppercase tracking-[0.14em] text-cream/60">
+                      Als PDF
+                    </div>
+                    <div className="mt-1 font-display text-3xl font-medium text-cream">
+                      {PRICE_PDF}
+                      <span className="ml-1 font-sans text-sm font-medium text-cream/60">
+                        inkl. MwSt.
+                      </span>
+                    </div>
+                  </div>
+                  <span className="text-sm text-cream/50">Sofort als Download</span>
+                </div>
+                <BuchKaufenButton edition="pdf" variant="secondary" size="lg" className="mt-4 w-full">
+                  PDF für {PRICE_PDF} kaufen
+                </BuchKaufenButton>
+              </div>
+
+              {/* Gedruckt / Versand – hervorgehoben */}
+              <div className="relative rounded-2xl border border-gold-500/45 bg-gold-500/12 p-5">
+                <span className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950">
+                  Zum Anfassen
+                </span>
+                <div className="text-xs font-bold uppercase tracking-[0.14em] text-cream/60">
+                  Gedruckt
+                </div>
+                <div className="mt-1 font-display text-4xl font-medium text-cream">
+                  {PRICE_PRINT}
+                  <span className="ml-1 font-sans text-base font-medium text-cream/60">
+                    inkl. MwSt.
+                  </span>
+                </div>
+                <div className="mt-1 text-sm text-cream/60">
+                  Gedrucktes Buch, zu dir nach Hause geliefert (DE/AT/CH)
+                </div>
+                <BuchKaufenButton edition="print" size="lg" className="mt-4 w-full">
+                  Gedruckt für {PRICE_PRINT} bestellen
+                </BuchKaufenButton>
+              </div>
             </div>
-            <ul className="mt-6 flex flex-col gap-3">
+
+            <ul className="mt-6 flex flex-col gap-2.5">
               {[
-                "Gedrucktes Buch, zu dir nach Hause geliefert",
                 "Fünf Teile, 24 Kapitel – Schritt für Schritt zum Mitgehen",
                 "Bodenständig & ehrlich – ohne Esoterik",
                 "Sichere Bezahlung über Stripe",
               ].map((li) => (
-                <li key={li} className="flex items-start gap-3 text-[0.98rem] text-cream/85">
+                <li key={li} className="flex items-start gap-3 text-[0.95rem] text-cream/80">
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-gold-400 to-gold-500 text-navy-950">
                     <Check className="h-3 w-3" />
                   </span>
@@ -535,12 +591,6 @@ export default async function BuchPage({
                 </li>
               ))}
             </ul>
-            <BuchKaufenButton size="lg" className="mt-7 w-full">
-              Jetzt für {PRICE} bestellen
-            </BuchKaufenButton>
-            <p className="mt-3 text-center text-xs text-cream/55">
-              Weiter zur sicheren Bezahlseite
-            </p>
           </div>
           <div>
             <Eyebrow>Dein erster Schritt</Eyebrow>
@@ -600,10 +650,13 @@ export default async function BuchPage({
           Werde Meister deiner <em className="accent">Gedanken</em>.
         </h2>
         <p className="mx-auto mt-5 max-w-md text-lg leading-relaxed text-cream/70">
-          Der erste Schritt ist nicht ändern, sondern sehen. Fang heute an.
+          Der erste Schritt ist nicht ändern, sondern sehen. Fang heute an –
+          als PDF für {PRICE_PDF} oder gedruckt für {PRICE_PRINT}.
         </p>
         <div className="mt-8 flex justify-center">
-          <BuchKaufenButton size="lg">Jetzt für {PRICE} bestellen</BuchKaufenButton>
+          <Button href="#bestellen" size="lg" variant="accent">
+            Jetzt bestellen
+          </Button>
         </div>
         <p className="text-gradient-leaf mt-7 text-sm font-semibold tracking-wide">
           www.werdemeisterdeinergedanken.de

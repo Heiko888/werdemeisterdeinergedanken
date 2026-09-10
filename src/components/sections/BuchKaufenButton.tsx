@@ -14,14 +14,18 @@ export function BuchKaufenButton({
   size = "lg",
   className,
   variant = "accent",
+  edition = "pdf",
 }: {
   children: ReactNode;
   size?: "md" | "lg";
   className?: string;
   variant?: "accent" | "secondary" | "primary";
+  /** Gewählte Buch-Edition: als PDF (Download) oder gedruckt (Versand). */
+  edition?: "pdf" | "print";
 }) {
   return (
     <form action="/api/buch-checkout" method="POST" className="contents">
+      <input type="hidden" name="edition" value={edition} />
       <Button type="submit" variant={variant} size={size} className={className}>
         {children}
       </Button>

@@ -15,9 +15,12 @@ import Stripe from "stripe";
  */
 export const STRIPE_PRICE_ID = process.env.STRIPE_PRICE_ID; // Monatsabo (Standard)
 export const STRIPE_PRICE_ID_YEARLY = process.env.STRIPE_PRICE_ID_YEARLY; // Jahresabo (optional)
-// Einmalkauf des Buchs „Werde Meister deiner Gedanken" (29,90 €). Eigener
-// Preis (price_…) für ein Nicht-Abo-Produkt – steuert die /buch-Verkaufsseite.
-export const STRIPE_BOOK_PRICE_ID = process.env.STRIPE_BOOK_PRICE_ID;
+// Einmalkauf des Buchs „Werde Meister deiner Gedanken" – zwei Editionen mit
+// eigenem Nicht-Abo-Preis (price_…), steuern die /buch-Verkaufsseite:
+//   • PDF/Download (29,90 €)  → STRIPE_BOOK_PRICE_ID
+//   • gedruckt/Versand (39,90 €) → STRIPE_BOOK_PRICE_ID_PRINT
+export const STRIPE_BOOK_PRICE_ID = process.env.STRIPE_BOOK_PRICE_ID; // PDF
+export const STRIPE_BOOK_PRICE_ID_PRINT = process.env.STRIPE_BOOK_PRICE_ID_PRINT; // gedruckt
 export const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET;
 
 const SECRET = process.env.STRIPE_SECRET_KEY;
@@ -28,8 +31,18 @@ export const isStripeConfigured = Boolean(SECRET && STRIPE_PRICE_ID);
 /** True, wenn zusätzlich ein Jahresabo hinterlegt ist. */
 export const hasYearlyPlan = Boolean(STRIPE_PRICE_ID_YEARLY);
 
-/** True, wenn der Buch-Einmalkauf über Stripe starten kann (Key + Buchpreis). */
-export const isBookCheckoutConfigured = Boolean(SECRET && STRIPE_BOOK_PRICE_ID);
+/** True, wenn mindestens eine Buch-Edition über Stripe kaufbar ist. */
+export const isBookCheckoutConfigured = Boolean(
+  SECRET && (STRIPE_BOOK_PRICE_ID || STRIPE_BOOK_PRICE_ID_PRINT),
+);
+
+/** Buch-Edition: als PDF (Download) oder gedruckt (Versand). */
+export type BookEdition = "pdf" | "print";
+
+/** Preis-ID zur gewählten Buch-Edition. `undefined`, wenn (noch) nicht angelegt. */
+export function bookPriceIdForEdition(edition: BookEdition): string | undefined {
+  return edition === "print" ? STRIPE_BOOK_PRICE_ID_PRINT : STRIPE_BOOK_PRICE_ID;
+}
 
 export type Plan = "monat" | "jahr";
 
