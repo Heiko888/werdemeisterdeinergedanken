@@ -145,13 +145,19 @@ umgekehrt. Die Seite bleibt also jederzeit funktionsfähig.
    (editionsabhängiger Danke-Hinweis). Abbruch → `/buch?checkout=abgebrochen`,
    Fehler → `/buch?checkout=fehler`.
 
-> **Hinweis Fulfillment:** Weder der **PDF-Versand** noch der **Buchversand**
-> sind aktuell automatisiert. Jede Bestellung (bei „gedruckt" inkl. Lieferadresse)
-> liegt in Stripe (Dashboard → Payments) und wird von dort aus bedient: PDF per
-> E-Mail schicken bzw. Buch versenden. Die Edition steht in den Session-Metadaten
-> (`edition`). Wer das später automatisieren möchte, kann einen Webhook auf
-> `checkout.session.completed` mit `metadata.produkt=buch-…` ergänzen (für PDF
-> analog zum Gratis-E-Book-Versand über Resend, siehe `src/lib/ebook-mail.ts`).
+> **Hinweis Fulfillment:**
+> - **PDF-Edition: automatisch.** Nach erfolgreicher Zahlung schickt der
+>   Stripe-Webhook (`checkout.session.completed`, `metadata.produkt=buch-…`,
+>   `edition=pdf`) das Buch-PDF automatisch per E-Mail an die Kaufadresse
+>   (`content/pdf/Werde-Meister-deiner-Gedanken.pdf` als Anhang). Voraussetzung:
+>   `RESEND_API_KEY` gesetzt und der Webhook-Endpoint eingerichtet (s. o.).
+> - **Gedruckte Edition: manuell.** Die Käufer:in bekommt automatisch eine
+>   **Bestellbestätigung** per E-Mail; der **Versand** selbst erfolgt von Hand –
+>   die Bestellung inkl. Lieferadresse liegt in Stripe (Dashboard → Payments).
+>
+> Schlägt der Mailversand fehl, endet der Webhook mit 500 und Stripe stellt
+> erneut zu – so geht keine Lieferung verloren. Absender über `BUCH_FROM`
+> (fällt sonst auf `EBOOK_FROM`/`CONTACT_FROM` zurück).
 
 ### Einrichtung (durch Heiko)
 
@@ -177,3 +183,6 @@ umgekehrt. Die Seite bleibt also jederzeit funktionsfähig.
 - `src/components/sections/BuchKaufenButton.tsx` – Buch-Button (Formular → Checkout)
 - `src/app/api/buch-checkout/route.ts` – startet den Buch-Einmalkauf (Edition `pdf`/`print`)
 - `src/app/buch/page.tsx` – Verkaufsseite Buch (Preis-Konstanten `PRICE_PDF` / `PRICE_PRINT`)
+- `src/app/api/stripe/webhook/route.ts` – liefert das Buch nach Zahlung aus (PDF-Mail bzw. Print-Bestätigung)
+- `src/lib/buch-mail.ts` – Liefer-/Bestätigungsmail für den Buch-Kauf (Resend)
+- `src/lib/pdf/buch-file.ts` – lädt das Buch-PDF (`content/pdf/…`) für den Anhang

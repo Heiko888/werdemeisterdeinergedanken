@@ -5,6 +5,37 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Buch: automatische PDF-Zustellung nach Zahlung
+
+Der Kauf der **PDF-Edition** liefert das Buch jetzt **automatisch** aus: Nach
+erfolgreicher Zahlung schickt der Stripe-Webhook das Buch-PDF per E-Mail
+(Anhang). Die **gedruckte** Edition löst automatisch eine **Bestellbestätigung**
+aus; der Versand bleibt manuell.
+
+- **`src/app/api/stripe/webhook/route.ts`**: In `checkout.session.completed`
+  werden Buch-Käufe (`metadata.produkt=buch-werde-meister-deiner-gedanken`) jetzt
+  **abgezweigt** – sie legen **keine Mitgliedschaft und kein Konto** mehr an
+  (behebt einen latenten Fehler: der Einmalkauf wäre sonst als „aktive
+  Mitgliedschaft“ verbucht worden). Neuer Handler `onBookPurchase`: prüft
+  `payment_status`, wählt anhand `metadata.edition` die PDF-Lieferung bzw. die
+  Print-Bestätigung. Fehler beim Versand werden **nicht** verschluckt → 500 →
+  Stripe stellt erneut zu (keine verlorene Lieferung).
+- **`src/lib/buch-mail.ts`** (neu): `sendBuchPdfMail` (PDF als Anhang) und
+  `sendBuchPrintOrderMail` (Bestellbestätigung); Absender `BUCH_FROM`.
+- **`src/lib/pdf/buch-file.ts`** (neu): lädt `content/pdf/Werde-Meister-deiner-
+  Gedanken.pdf` (liegt bewusst nicht unter `public/`).
+- **`.env.local.example`** + **`docs/STRIPE-MITGLIEDSCHAFT.md`**: PDF-Zustellung
+  dokumentiert, `BUCH_FROM` ergänzt, Fulfillment-Hinweis aktualisiert
+  (PDF automatisch, gedruckt manuell).
+
+Voraussetzung für die Auslieferung: `RESEND_API_KEY` gesetzt und der
+Stripe-Webhook-Endpoint (`…/api/stripe/webhook`) mit Event
+`checkout.session.completed` eingerichtet.
+
+Verifiziert: `npm run lint` (0 Fehler), `npm run build` (grün).
+
+---
+
 ## 2026-09-10 – Verkaufsseite `/buch`: zwei Editionen (PDF 29,90 € / gedruckt 39,90 €)
 
 Das Buch ist jetzt in **zwei Editionen** kaufbar: **als PDF für 29,90 €**
