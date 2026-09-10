@@ -1,5 +1,12 @@
 # Domain-Umzug: `neu` → Hauptdomain (`www`)
 
+> **Historisch – abgeschlossen.** Dieses Dokument beschreibt den Umzug von
+> Vercel/OnePage auf Hetzner samt einer nginx-Variante, die so nie in Betrieb
+> ging. Produktiv läuft die Seite hinter **Caddy** im Stack
+> `/opt/mattermost/docker-compose.yml`. Die unten genannten Befehle
+> `docker compose -f deploy/docker-compose.yml …` sind **überholt** und rollen
+> nichts aus – der aktuelle Weg steht in **[../deploy/README.md](../deploy/README.md)**.
+
 Ziel: Die App, die bisher unter **`neu.werdemeisterdeinergedanken.de`** getestet
 wurde, wird zur offiziellen Seite unter **`www.werdemeisterdeinergedanken.de`**
 (inkl. Weiterleitung der nackten Domain).

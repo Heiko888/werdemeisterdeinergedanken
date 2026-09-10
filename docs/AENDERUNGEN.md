@@ -5,6 +5,51 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – `deploy/` auf das echte Setup umgeschrieben
+
+**Anlass:** PR #331 hat den fehlenden Volume-Mount in `deploy/docker-compose.yml`
+repariert – einer Datei, die produktiv **niemand ausführt**. Live läuft die
+Website als Service `website` im Stack `/opt/mattermost/docker-compose.yml`
+(dort war der Mount längst vorhanden). Die Repo-Datei beschrieb dagegen ein
+Setup, das es auf dem Server nie gab: eigenes Compose-Projekt, Image
+`wmdg-web:latest`, Host-Port `127.0.0.1:3000`, nginx als Reverse-Proxy. Wer sie
+benutzte, startete einen zweiten Container und änderte an der Live-Seite nichts.
+
+**Geändert:**
+- **`deploy/docker-compose.yml`:** Vollständig neu als **Spiegelung** des
+  produktiven Service `website`. Gleiche Build-Args, Umgebungsvariablen,
+  `expose: 3000` (kein Host-Port) und Volume-Mount. Entfernt: Image-Name
+  `wmdg-web`, Port-Mapping, nginx-Annahmen, die nur dort gesetzten
+  `CONTACT_TO`/`CONTACT_FROM`. Ergänzt: die produktiv verdrahteten
+  `SUPABASE_SERVICE_ROLE_KEY`, `CRON_SECRET`, `ANTHROPIC_API_KEY`,
+  `ADMIN_EMAILS`. Kopfzeile warnt jetzt in der Datei selbst, dass hier nichts
+  ausgerollt wird; eigener Projektname `wmdg-website-spiegel` verhindert, dass
+  ein versehentlicher Start den Stack `mattermost` anfasst.
+- **`deploy/.env.example`:** Beschreibt jetzt `/opt/mattermost/.env` statt einer
+  `deploy/.env`, die es nie gab. Die vier oben genannten Variablen ergänzt.
+  Zusätzlich dokumentiert: 13 Variablen, die `src/` liest, die aber nirgends
+  gesetzt sind (`CONTACT_*`, `*_FROM`, `BUCH_DOWNLOAD_SECRET`, `STRIPE_*`,
+  `REQUIRE_ACTIVE_MEMBERSHIP`, `ALLOW_SELF_REGISTRATION`). Alle haben einen
+  Fallback – nichts ist kaputt, aber es war bisher unsichtbar.
+- **`deploy/README.md`:** Tabelle nicht mehr „Altbestand"; erklärt, warum
+  gespiegelt wird, und enthält einen `diff`-Befehl, der beide Dateien
+  vergleicht (muss leer ausgeben).
+- **`docs/DOMAIN-UMZUG.md`:** Als historisch gekennzeichnet – die dort zweimal
+  genannten `docker compose -f deploy/docker-compose.yml …` sind überholt.
+- **`deploy/nginx/…conf`:** Als Altbestand gekennzeichnet (nginx läuft nicht,
+  die App hat keinen Host-Port mehr).
+
+**Wichtig:** Beide Compose-Dateien müssen von Hand synchron gehalten werden –
+der produktive Stack kann nicht ins Repo wandern, weil dort auch Caddy,
+Mattermost und Postgres liegen. Der `diff`-Befehl in `deploy/README.md` prüft
+das.
+
+Verifiziert: `docker compose -f deploy/docker-compose.yml config` gültig; der
+aufgelöste Service `website` ist **zeichengleich** mit dem produktiven.
+Kein Deploy nötig – an der laufenden Seite ändert sich nichts.
+
+---
+
 ## 2026-09-10 – Vorlagen-Galerie neu erzeugt: Cover-Overlays in allen 4 Farbwelten
 
 Die **Cover-Overlays** gab es in der Galerie bisher nur in einer Farbe. Nach dem

@@ -1,11 +1,12 @@
 # Deployment (Hetzner)
 
-> **Achtung – die Dateien in diesem Ordner sind NICHT der produktive Weg.**
+> **Achtung – aus diesem Ordner heraus wird nichts ausgerollt.**
 > Produktiv läuft die Website als Service `website` im Compose-Stack
 > `/opt/mattermost/docker-compose.yml`, mit **Caddy** (nicht nginx) als
-> Reverse-Proxy und automatischem TLS. Der Ordner hier ist eine ältere,
-> eigenständige Variante, die auf dem Server nirgends aktiv ist: es existiert
-> weder eine `deploy/.env` noch ein laufender nginx.
+> Reverse-Proxy und automatischem TLS. `docker-compose.yml` hier ist die
+> versionierte **Spiegelung** jenes Service – zum Nachschlagen, nicht zum
+> Starten. Eine `deploy/.env` existiert auf dem Server nicht (die Werte
+> stehen in `/opt/mattermost/.env`), und nginx läuft dort nirgends.
 >
 > Vollständiger Ablauf des Domain-Umzugs: **[../docs/DOMAIN-UMZUG.md](../docs/DOMAIN-UMZUG.md)**.
 
@@ -53,15 +54,33 @@ werden zur **Laufzeit** gelesen – dort genügt:
 docker compose -f /opt/mattermost/docker-compose.yml up -d website
 ```
 
-## Inhalt dieses Ordners (Altbestand)
+## Inhalt dieses Ordners
 
 | Datei | Zweck |
 |-------|-------|
-| `docker-compose.yml` | Eigenständiger Stack, bindet die App an `127.0.0.1:3000` – ungenutzt |
-| `.env.example` | Vorlage für ein `deploy/.env`, das produktiv nicht existiert |
-| `nginx/werdemeisterdeinergedanken.conf` | nginx-Variante für TLS + Routing – nginx läuft auf dem Server nicht |
+| `docker-compose.yml` | **Spiegelung** des produktiven Service `website` – versioniert, damit Build-Args, Env und Mounts im Repo nachvollziehbar sind |
+| `.env.example` | Dokumentiert die Variablen, die produktiv in `/opt/mattermost/.env` stehen |
+| `nginx/werdemeisterdeinergedanken.conf` | Altbestand aus der nginx-Ära – nginx läuft auf dem Server nicht, TLS macht Caddy |
 
-Diese Dateien sind als Referenz bzw. für ein mögliches Ausweichszenario
-aufgehoben. Wer sie benutzt, startet einen **zweiten**, parallelen Container
-neben dem produktiven – beim Port-Mapping auf `3000` kollidiert das mit
-`coaching-app`. Also nur bewusst und nach Rücksprache verwenden.
+### Warum eine Spiegelung?
+
+Der produktive Stack liegt unter `/opt/mattermost/docker-compose.yml` und kann
+nicht in dieses Repo wandern: dort stehen auch Caddy, Mattermost und Postgres.
+Damit trotzdem versioniert ist, *wie* die App läuft, bildet
+`deploy/docker-compose.yml` den Service `website` 1:1 nach.
+
+**Beide Dateien müssen von Hand synchron gehalten werden.** Ob sie es sind,
+prüft dieser Vergleich – er darf nichts ausgeben:
+
+```bash
+diff <(docker compose -f /opt/mattermost/docker-compose.yml config \
+         | awk '/^  website:/{f=1} f&&/^  [a-z]/&&!/^  website:/{f=0} f') \
+     <(docker compose --env-file /opt/mattermost/.env \
+         -f /opt/website/deploy/docker-compose.yml config \
+         | awk '/^  website:/{f=1} f&&/^  [a-z]/&&!/^  website:/{f=0} f')
+```
+
+Ein `docker compose -f deploy/docker-compose.yml up` startet einen **zweiten**,
+isolierten Container (eigener Projektname `wmdg-website-spiegel`, eigenes Netz,
+kein Host-Port). Caddy kennt ihn nicht – die Live-Seite bleibt unberührt. Er
+kostet nur Plattenplatz und stiftet Verwirrung; gewollt ist er nie.

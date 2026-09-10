@@ -1,62 +1,117 @@
-# Produktions-Deployment auf dem Hetzner-Server.
-# Baut das Image aus dem Dockerfile und lässt die App NUR lokal auf
-# 127.0.0.1:3000 lauschen – öffentlich erreichbar wird sie erst über nginx
-# (siehe deploy/nginx/werdemeisterdeinergedanken.conf).
-#
-# Nutzung:
-#   1. deploy/.env aus deploy/.env.example anlegen und Werte eintragen
-#   2. docker compose -f deploy/docker-compose.yml up -d --build
-#   3. Update später:  git pull && docker compose -f deploy/docker-compose.yml up -d --build
-#
-# Wichtig: NEXT_PUBLIC_* werden zur BUILD-Zeit ins Client-Bundle eingebacken
-# (deshalb als build.args), die übrigen Werte gelten zur Laufzeit (environment).
-#
-# Vorlagen-Galerie: Der Host-Ordner mit den Vorlagen-Dateien
-# (Standard /opt/website-vorlagen) wird read-only als Volume in den Container
-# gemountet – siehe `volumes:` unten. Ohne diesen Mount ist /admin/vorlagen
-# leer/kaputt (jede Datei 404).
+# ┌────────────────────────────────────────────────────────────────────────┐
+# │  DIES IST NICHT DIE PRODUKTIVE COMPOSE-DATEI.                          │
+# │                                                                        │
+# │  Produktiv läuft die Website als Service "website" im Stack            │
+# │      /opt/mattermost/docker-compose.yml                                │
+# │  (dort liegen auch Caddy, Mattermost und Postgres – deshalb kann der   │
+# │  Stack nicht in diesem Repo liegen). Secrets: /opt/mattermost/.env     │
+# │                                                                        │
+# │  Ausrollen – der einzig richtige Weg:                                  │
+# │      git -C /opt/website pull                                          │
+# │      docker compose -f /opt/mattermost/docker-compose.yml \            │
+# │              up -d --build website                                     │
+# │                                                                        │
+# │  Diese Datei ist die versionierte SPIEGELUNG jenes Service, damit im   │
+# │  Repo nachvollziehbar bleibt, mit welchen Build-Args, Umgebungs-       │
+# │  variablen und Mounts die App produktiv läuft. Änderungen hier wirken  │
+# │  NICHT live – sie müssen in /opt/mattermost/docker-compose.yml         │
+# │  nachgezogen werden (und umgekehrt).                                   │
+# │                                                                        │
+# │  Ein "docker compose -f deploy/docker-compose.yml up" startet einen    │
+# │  ZWEITEN, isolierten Container (eigenes Projekt, eigenes Netz). Caddy  │
+# │  kennt ihn nicht, die Live-Seite ändert sich dadurch nicht.            │
+# │                                                                        │
+# │  Hintergrund und Routing: deploy/README.md                             │
+# └────────────────────────────────────────────────────────────────────────┘
+
+# Eigener Projektname, damit ein versehentlicher Start hier niemals den
+# produktiven Stack "mattermost" überschreibt oder dessen Container ersetzt.
+name: wmdg-website-spiegel
 
 services:
-  web:
+  website:
     build:
+      # Produktiv steht hier der absolute Pfad /opt/website – aus dem Repo
+      # heraus ist das derselbe Ordner, nur eine Ebene über deploy/.
       context: ..
-      dockerfile: Dockerfile
       args:
-        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
-        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
-        # NEXT_PUBLIC_GA_ID wird zur Build-Zeit ins Client-Bundle eingebacken.
-        # Ohne diese Zeile bleibt GA_ID leer und der Cookie-/Consent-Banner
-        # erscheint nicht (GoogleAnalytics.tsx: `if (!GA_ID) return null`).
-        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID}
-    image: wmdg-web:latest
+        # NEXT_PUBLIC_* backt Next.js zur BUILD-Zeit ins Client-Bundle ein.
+        # Als reine Laufzeit-Variable käme der Wert im Browser nie an –
+        # deshalb build.args. Änderung ⇒ Rebuild mit --build nötig.
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY:-}
+        # GA4-Measurement-ID. Seit Commit 48e817a hat src/lib/analytics.ts
+        # keinen Code-Default mehr: fehlt der Wert, bleiben Analytics UND
+        # Cookie-Banner still inaktiv – ohne Fehler im Log.
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
     restart: unless-stopped
-    # Nur an localhost binden – Zugriff ausschließlich über nginx
-    ports:
-      - "127.0.0.1:3000:3000"
-    volumes:
-      # Vorlagen-Galerie (/admin/vorlagen): Die Binärdaten (webp/PDF/ZIP, ~1 GB)
-      # liegen bewusst NICHT im Image (content/vorlagen steht in .dockerignore),
-      # sondern auf dem Host und werden hier read-only in den Container
-      # eingehängt. OHNE diesen Mount ist /app/content/vorlagen im Container leer
-      # und die Galerie zeigt nur gebrochene Bilder/Downloads – die Route
-      # /admin/vorlagen/datei/… liefert dann für jede Datei 404 (nur die
-      # PDF-Dokumente-Liste funktioniert, weil sie auf andere Routen verlinkt).
-      # Befüllt/aktualisiert wird der Host-Ordner mit
-      # tools/deploy/update-vorlagen-galerie.sh. Host-Pfad bei Bedarf über
-      # VORLAGEN_VOLUME_DIR in deploy/.env überschreibbar.
-      - ${VORLAGEN_VOLUME_DIR:-/opt/website-vorlagen}:/app/content/vorlagen:ro
+
     environment:
       NODE_ENV: production
-      # Kanonischen Host erzwingen (neu./apex → www). Zum vorübergehenden
-      # Abschalten während des Umbaus: ENFORCE_CANONICAL_HOST=false
+      PORT: 3000
+
+      # --- Laufzeit: Änderung braucht nur "up -d", keinen Rebuild ---
+
+      # Versand über Resend (Kontaktformular, E-Book, Impulse).
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      # ACHTUNG: umgeht sämtliche Row-Level-Security in Supabase. Nur für
+      # serverseitige Routen (E-Book-Leads, Impuls-Versand). Kein
+      # NEXT_PUBLIC_-Präfix – darf niemals im Browser landen.
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY:-}
+      # Schützt /api/impulses (Serienversand der E-Mail-Impulse). Ohne
+      # diesen Wert lehnt die Route jeden Aufruf ab.
+      CRON_SECRET: ${CRON_SECRET:-}
+      # KI-Reading zum Gedankenprofil (/mitglieder/gedankenprofil). Fehlt der
+      # Wert, blendet die Seite die Reading-Option aus – kein Fehler.
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      # Zugang zum Marketing-Cockpit /admin (kommagetrennte Adressen).
+      #
+      # ACHTUNG: Diese Zeile setzt die Variable IMMER – fehlt der Wert in der
+      # .env, kommt ein LEERER String an. src/lib/admin.ts fällt aber nur bei
+      # undefined auf seine eingebaute Liste zurück (`??`), nicht bei "".
+      # Ein leerer Wert sperrt also ALLE aus /admin aus. Muss gefüllt bleiben.
+      ADMIN_EMAILS: ${ADMIN_EMAILS:-}
+      # Apex und "neu." per 301 auf www. Seit dem Cutover dauerhaft true.
       ENFORCE_CANONICAL_HOST: ${ENFORCE_CANONICAL_HOST:-true}
-      # Kontaktformular (Resend)
-      RESEND_API_KEY: ${RESEND_API_KEY}
-      CONTACT_TO: ${CONTACT_TO}
-      CONTACT_FROM: ${CONTACT_FROM}
-    healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/"]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-      start_period: 20s
+
+      # --- Vom Code gelesen, produktiv NICHT gesetzt ---------------------
+      # Die folgenden Variablen wertet src/ aus, sie stehen aber weder hier
+      # noch in /opt/mattermost/.env. Alle haben einen Fallback, es ist also
+      # nichts kaputt – der Standard greift:
+      #
+      #   CONTACT_TO           → Fallback site.email
+      #   CONTACT_FROM         → Fallback onboarding@resend.dev
+      #   EBOOK_FROM           → Fallback wie CONTACT_FROM
+      #   MEMBERSHIP_FROM      → Fallback wie CONTACT_FROM
+      #   IMPULSE_FROM         → Fallback wie CONTACT_FROM
+      #   BUCH_FROM            → Fallback wie CONTACT_FROM
+      #   BUCH_DOWNLOAD_SECRET → Fallback STRIPE_WEBHOOK_SECRET, sonst null
+      #   REQUIRE_ACTIVE_MEMBERSHIP / ALLOW_SELF_REGISTRATION → beide false
+      #                          (Code prüft strikt === "true")
+      #   STRIPE_*             → ohne Wert bleibt der Bezahlweg inaktiv
+      #
+      # Sobald eine eigene Resend-Domain steht, gehören die *_FROM-Adressen
+      # hier UND in /opt/mattermost/docker-compose.yml verdrahtet.
+
+    # Kein ports:-Mapping – produktiv ist die App vom Host aus nicht direkt
+    # erreichbar, der Zugriff läuft ausschließlich über Caddy
+    # (reverse_proxy website:3000) im internen Docker-Netz, damit alles über
+    # HTTPS geht. Der frühere Vorschau-Port 3002 wurde nach dem Cutover
+    # entfernt; ihn hier wieder zu öffnen würde die Seite unverschlüsselt
+    # ins Internet hängen.
+    expose:
+      - "3000"
+
+    volumes:
+      # Vorlagen-Galerie (~2 GB generierte Bilder/ZIPs, /admin/vorlagen).
+      # Liegt bewusst NICHT im Repo und NICHT im Image: sie wird bei jedem
+      # Generator-Lauf komplett neu geschrieben, ist aus docs/** reproduzier-
+      # bar und hat das Git-Repo sonst pro Lauf um hunderte MB wachsen lassen
+      # (content/vorlagen steht deshalb in .dockerignore und .gitignore).
+      # Erzeugt mit "npm run vorlagen:galerie" nach /opt/website-vorlagen.
+      # Nur lesend – die Seite liefert die Dateien lediglich aus
+      # (src/app/admin/vorlagen/datei/[...pfad]).
+      #
+      # OHNE diesen Mount ist /app/content/vorlagen im Container leer und die
+      # Galerie liefert für jede Datei 404.
+      - /opt/website-vorlagen:/app/content/vorlagen:ro
