@@ -1,0 +1,641 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>Bewusstseinsbibliothek</title>
+<!-- Google-Fonts-Link bewusst entfernt: Die Content-Security-Policy der Seite
+     (style-src 'self', font-src 'self' data:) blockiert externe Fonts. Die
+     CSS-Schriftstapel unten greifen daher auf Georgia/System-Fonts zurueck. -->
+<style>
+  :root{
+    --bg:#EFF1F3;
+    --panel:#F6F7F8;
+    --elevated:#FFFFFF;
+    --ink:#1B2129;
+    --ink-soft:#535C68;
+    --ink-faint:#848E9A;
+    --border:#DBE0E5;
+    --border-soft:#E7EAED;
+    --shadow:rgba(20,26,33,0.08);
+    --accent:#2C5F8A;
+    --accent-soft:#E4EBF1;
+
+    --kz-w:#2C5F8A; --kz-p:#6B4E9B; --kz-g:#AD5A2A; --kz-e:#3F7D5C; --kz-l:#963C3C;
+
+    --font-display:'Newsreader', Georgia, 'Times New Roman', serif;
+    --font-body:'Karla', -apple-system, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#12161B; --panel:#171C22; --elevated:#1D232A;
+      --ink:#E7EAED; --ink-soft:#AAB3BC; --ink-faint:#748089;
+      --border:#2B333B; --border-soft:#232B32; --shadow:rgba(0,0,0,0.4);
+      --accent:#7FB3DD; --accent-soft:rgba(127,179,221,0.12);
+      --kz-w:#7FB3DD; --kz-p:#B9A3E0; --kz-g:#E0A46E; --kz-e:#82C4A0; --kz-l:#E08A8A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12161B; --panel:#171C22; --elevated:#1D232A;
+    --ink:#E7EAED; --ink-soft:#AAB3BC; --ink-faint:#748089;
+    --border:#2B333B; --border-soft:#232B32; --shadow:rgba(0,0,0,0.4);
+    --accent:#7FB3DD; --accent-soft:rgba(127,179,221,0.12);
+    --kz-w:#7FB3DD; --kz-p:#B9A3E0; --kz-g:#E0A46E; --kz-e:#82C4A0; --kz-l:#E08A8A;
+  }
+
+  *{box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:var(--font-display);margin:0;text-wrap:balance;color:var(--ink);}
+  a{color:var(--accent);}
+  ::selection{background:var(--accent-soft);}
+
+  .shell{max-width:1180px;margin:0 auto;}
+
+  /* -------- topbar -------- */
+  .topbar{
+    position:sticky;top:0;z-index:20;
+    background:var(--bg);
+    border-bottom:1px solid var(--border);
+    padding:16px clamp(14px,3vw,28px);
+  }
+  .topbar-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .brand{display:flex;flex-direction:column;gap:2px;margin-right:auto;}
+  .brand-title{font-size:22px;font-weight:600;letter-spacing:-0.01em;}
+  .brand-sub{font-size:12.5px;color:var(--ink-faint);font-family:var(--font-mono);}
+  .search-wrap{position:relative;flex:1;min-width:180px;max-width:340px;}
+  .search-wrap input{
+    width:100%;padding:9px 13px 9px 32px;border-radius:9px;border:1px solid var(--border);
+    background:var(--elevated);color:var(--ink);font-family:var(--font-body);font-size:14px;
+  }
+  .search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+  .search-wrap svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--ink-faint);}
+  .nav-toggle{
+    display:none;border:1px solid var(--border);background:var(--elevated);color:var(--ink);
+    border-radius:8px;padding:8px 12px;font-family:var(--font-body);font-size:14px;font-weight:600;cursor:pointer;
+  }
+  .result-note{font-size:12.5px;color:var(--ink-faint);font-family:var(--font-mono);white-space:nowrap;}
+
+  .legend-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;}
+  .legend-chip{
+    display:inline-flex;align-items:center;gap:6px;
+    font-family:var(--font-mono);font-size:12px;font-weight:600;
+    padding:5px 10px 5px 8px;border-radius:99px;cursor:pointer;user-select:none;
+    border:1px solid var(--chip-color);color:var(--chip-color);background:transparent;
+    transition:background .12s ease, color .12s ease;
+  }
+  .legend-chip .dot{width:7px;height:7px;border-radius:50%;background:var(--chip-color);}
+  .legend-chip.active{background:var(--chip-color);color:var(--bg);}
+  .legend-chip.active .dot{background:var(--bg);}
+  .legend-reset{
+    font-size:12px;color:var(--ink-faint);font-family:var(--font-mono);background:none;border:none;
+    cursor:pointer;padding:5px 6px;text-decoration:underline;text-underline-offset:2px;
+  }
+
+  /* -------- layout -------- */
+  .layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:0;align-items:start;}
+  .sidebar{
+    position:sticky;top:126px;align-self:start;
+    max-height:calc(100vh - 146px);overflow-y:auto;
+    padding:22px 14px 40px clamp(14px,3vw,28px);
+    font-size:13.5px;
+  }
+  .sidebar h5{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin:18px 0 6px;}
+  .sidebar h5:first-child{margin-top:0;}
+  .sidebar a{display:block;color:var(--ink-soft);text-decoration:none;padding:3px 8px;border-radius:6px;}
+  .sidebar a:hover{background:var(--panel);color:var(--ink);}
+  .sidebar a.top{font-weight:700;color:var(--ink);margin-top:4px;}
+
+  .content{padding:28px clamp(14px,3vw,28px) 100px;max-width:800px;}
+
+  /* -------- teil / unit -------- */
+  .teil-head{
+    display:flex;align-items:baseline;gap:12px;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:10px;margin:52px 0 22px;
+  }
+  .teil-head:first-child{margin-top:0;}
+  .teil-head h1{font-size:clamp(22px,3.2vw,28px);font-weight:600;}
+  .teil-lede{color:var(--ink-soft);font-size:14.5px;margin:-10px 0 26px;max-width:64ch;}
+
+  .unit{margin-bottom:34px;scroll-margin-top:130px;}
+  .unit h2{font-size:19px;font-weight:600;margin-bottom:6px;}
+  .unit h3{font-size:15.5px;font-weight:600;color:var(--accent);margin:18px 0 8px;}
+  .unit p.lede{color:var(--ink-soft);font-size:14px;margin:0 0 12px;max-width:62ch;}
+
+  .kicker{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin:16px 0 8px;}
+  ul.plain{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  ul.plain li{position:relative;padding-left:16px;font-size:14.5px;}
+  ul.plain li::before{content:"–";position:absolute;left:0;color:var(--ink-faint);}
+
+  .book-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+  .book{
+    display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;
+    padding:9px 12px;border:1px solid var(--border-soft);border-radius:8px;background:var(--elevated);
+    transition:opacity .15s ease;font-size:14px;
+  }
+  .book.dimmed{opacity:.2;}
+  .book .who{font-weight:700;}
+  .book .ti{font-style:italic;font-family:var(--font-display);font-weight:500;font-size:15px;}
+  .book .tags{display:inline-flex;gap:4px;margin-left:auto;flex-wrap:wrap;}
+  .btag{
+    --c:var(--ink-faint);
+    font-family:var(--font-mono);font-size:10.5px;font-weight:600;letter-spacing:.02em;
+    color:var(--c);border:1px solid var(--c);border-radius:5px;padding:1px 6px;
+    background:color-mix(in srgb, var(--c) 12%, transparent);
+    white-space:nowrap;
+  }
+
+  .callout{
+    display:flex;gap:10px;margin:14px 0 4px;padding:12px 14px;border-radius:8px;
+    background:color-mix(in srgb, var(--kz-g) 10%, var(--elevated));
+    border-left:3px solid var(--kz-g);
+  }
+  .callout .lbl{font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--kz-g);letter-spacing:.04em;text-transform:uppercase;flex:none;padding-top:1px;}
+  .callout p{margin:0;font-size:13.5px;font-style:italic;color:var(--ink-soft);}
+
+  blockquote{
+    margin:12px 0 16px;padding:2px 0 2px 16px;border-left:3px solid var(--ink);
+    font-family:var(--font-display);font-style:italic;font-size:16px;color:var(--ink-soft);
+  }
+
+  .arte-card{border:1px solid var(--border-soft);border-radius:10px;background:var(--elevated);padding:14px 16px;margin-bottom:14px;box-shadow:0 1px 2px var(--shadow);}
+  .arte-card h3{margin:0 0 8px;color:var(--ink);font-size:16.5px;}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:13px;margin-bottom:8px;}
+  .kv dt{color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.03em;padding-top:2px;}
+  .kv dd{margin:0;}
+  .arte-card .themen{font-size:13.5px;color:var(--ink-soft);margin:6px 0 0;}
+
+  .res-row{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid var(--border-soft);font-size:14.5px;}
+  .res-row:last-child{border-bottom:none;}
+  .res-num{font-family:var(--font-mono);color:var(--accent);font-weight:600;flex:none;width:26px;font-size:13px;padding-top:1px;font-variant-numeric:tabular-nums;}
+
+  .round-block{border:1px solid var(--border-soft);border-radius:10px;padding:14px 16px;margin-bottom:16px;background:var(--elevated);}
+  .round-block h2{font-size:17px;}
+  .round-block ol{margin:10px 0 10px;padding-left:20px;font-size:14px;}
+  .round-block li{margin-bottom:4px;}
+  .round-result{font-size:13.5px;color:var(--ink-soft);border-top:1px dashed var(--border);padding-top:8px;margin-top:6px;}
+  .round-result b{color:var(--ink);}
+
+  pre.card{
+    background:var(--panel);border:1px solid var(--border-soft);border-radius:8px;
+    padding:14px 16px;font-family:var(--font-mono);font-size:12.5px;line-height:1.6;
+    overflow-x:auto;white-space:pre;color:var(--ink-soft);
+  }
+
+  .schluss{margin-top:40px;padding:22px 22px;border-radius:12px;background:var(--panel);border:1px solid var(--border-soft);}
+
+  .no-hits{display:none;color:var(--ink-faint);font-size:14px;padding:30px 0;text-align:center;}
+
+  @media (max-width:860px){
+    .layout{grid-template-columns:1fr;}
+    .sidebar{
+      position:fixed;inset:0 0 0 auto;width:min(78vw,300px);top:0;height:100vh;
+      background:var(--elevated);border-left:1px solid var(--border);
+      transform:translateX(100%);transition:transform .2s ease;z-index:30;
+      padding-top:70px;max-height:none;
+    }
+    .sidebar.open{transform:translateX(0);box-shadow:-8px 0 24px var(--shadow);}
+    .nav-toggle{display:inline-block;}
+    .content{padding-top:20px;}
+  }
+  @media (prefers-reduced-motion: reduce){ .sidebar{transition:none;} }
+</style>
+
+<div class="shell">
+  <header class="topbar">
+    <div class="topbar-row">
+      <div class="brand">
+        <span class="brand-title">Bewusstseinsbibliothek</span>
+        <span class="brand-sub">Werde Meister deiner Gedanken · Stand 4. September 2026</span>
+      </div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="text" placeholder="Durchsuchen … Autor, Thema, Buch" autocomplete="off">
+      </div>
+      <span class="result-note" id="resultNote"></span>
+      <button class="nav-toggle" id="navToggle">Inhalt</button>
+    </div>
+    <div class="legend-row" id="legendRow"></div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar">
+      <h5>Grundlagen</h5>
+      <a class="top" href="#grundgedanke">1–2 · Grundgedanke &amp; Kennzeichnung</a>
+      <h5>Teil I · Tätigkeiten</h5>
+      <a href="#t3">3 Wahrnehmung &amp; Aufmerksamkeit</a>
+      <a href="#t4">4 Neue Perspektiven erleben</a>
+      <a href="#t5">5 Handlungsspielraum erweitern</a>
+      <a href="#t6">6 Stille, Natur, Umgebung</a>
+      <h5>Teil II · Bibliothek</h5>
+      <a href="#t7">7 Wahrnehmung &amp; Wirklichkeit</a>
+      <a href="#t8">8 Bewusstsein, Selbst, Ego</a>
+      <a href="#t9">9 Autopilot &amp; Denkfehler</a>
+      <a href="#t10">10 Emotionen &amp; Körper</a>
+      <a href="#t11">11 Freier Wille</a>
+      <a href="#t12">12 Sprache &amp; Framing</a>
+      <a href="#t13">13 Gruppendruck &amp; Gehorsam</a>
+      <a href="#t14">14 Propaganda &amp; Medien</a>
+      <a href="#t15">15 Kultur &amp; das Normale</a>
+      <a href="#t16">16 Systeme &amp; Verbundenheit</a>
+      <a href="#t17">17 Meditation &amp; Kontemplation</a>
+      <a href="#t18">18 Tod, Sinn, Endlichkeit</a>
+      <a href="#t19">19 Literatur</a>
+      <h5>Teil III · ARTE</h5>
+      <a href="#t20">20 Relevante Dokumentationen</a>
+      <a href="#t21">21 Ergänzende Themen</a>
+      <h5>Teil IV · Reservoir</h5>
+      <a href="#t22">22–30 Content-Reservoir (72)</a>
+      <h5>Teil V–VII</h5>
+      <a href="#t31">31–33 Content entwickeln</a>
+      <a href="#t34">34–37 Bearbeitungsreihenfolge</a>
+      <a href="#t38">Pflege &amp; Schlussgedanke</a>
+    </nav>
+
+    <main class="content" id="content"></main>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var KZ = {
+    W: { name: "Wissenschaftlich", desc: "empirische Forschung, Neurowissenschaft, Psychologie oder Kognitionswissenschaft." },
+    P: { name: "Philosophisch", desc: "begriffliche Argumentation über Bewusstsein, Selbst, Freiheit oder Wirklichkeit." },
+    G: { name: "Gesellschaftlich", desc: "Medien, Sprache, Macht, Kultur, Gruppendynamik und soziale Systeme." },
+    E: { name: "Erfahrungsorientiert", desc: "Meditation, Achtsamkeit, Kontemplation oder spirituelle Innenperspektive." },
+    L: { name: "Literatur", desc: "Romane und Erzählungen, durch die eine fremde Perspektive erlebt werden kann." },
+  };
+
+  function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  function codesOf(tag){
+    return tag.split(/[\/,]/).map(function(s){ return s.trim(); }).filter(function(s){ return KZ[s]; });
+  }
+  function tagBadges(tag){
+    var codes = codesOf(tag);
+    if (!codes.length) return '<span class="btag" style="--c:var(--ink-faint)">' + esc(tag) + '</span>';
+    return codes.map(function(c){ return '<span class="btag" style="--c:var(--kz-' + c.toLowerCase() + ')">' + c + '</span>'; }).join('');
+  }
+  function book(author, title, tag){
+    var codes = codesOf(tag).join(' ');
+    return '<li class="book" data-codes="' + codes + '"><span class="who">' + esc(author) + '</span> – <span class="ti">' + esc(title) + '</span><span class="tags">' + tagBadges(tag) + '</span></li>';
+  }
+  function novel(author, title, theme){
+    return '<li class="book" data-codes=""><span class="who">' + esc(author) + '</span> – <span class="ti">' + esc(title) + '</span><span class="tags"><span class="btag" style="--c:var(--kz-l)">' + esc(theme) + '</span></span></li>';
+  }
+  function plain(items){ return '<ul class="plain">' + items.map(function(t){ return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>'; }
+  function callout(text){ return '<div class="callout"><span class="lbl">Kritischer&nbsp;Hinweis</span><p>' + esc(text) + '</p></div>'; }
+
+  // ---------------------------------------------------------------- data
+
+  var bibliothek = [
+    { n:"7", t:"Wahrnehmung und Wirklichkeit", books:[
+        ["Donald D. Hoffman","Relativ real: Warum wir die Wirklichkeit nicht erfassen können und wie die Evolution unsere Wahrnehmung geformt hat","W/P"],
+        ["Alva Noë","Du bist nicht dein Gehirn: Eine radikale Philosophie des Bewusstseins","P/W"],
+        ["Humberto R. Maturana und Francisco J. Varela","Der Baum der Erkenntnis: Die biologischen Wurzeln menschlichen Erkennens","W/P"],
+        ["Anil Seth","Being You: A New Science of Consciousness","W, englisch"] ],
+      fields:["Wir sehen kein neutrales Abbild der Wirklichkeit.","Wahrnehmung ist Auswahl, Vorhersage und Interpretation.","Warum zwei Menschen dasselbe Ereignis unterschiedlich erleben.","Das Gehirn ergänzt fehlende Informationen, ohne um Erlaubnis zu fragen.","Gewissheit ist ein inneres Gefühl und noch kein Beweis.","Wahrnehmung dient dem Überleben – nicht zwingend der objektiven Wahrheit."],
+      kritisch:"Hoffmans These ist provokant und nicht mit einem wissenschaftlichen Konsens gleichzusetzen. Gerade deshalb eignet sie sich gut im Vergleich mit Noë, Seth und klassisch realistischen Positionen." },
+    { n:"8", t:"Bewusstsein, Selbst und Ego", books:[
+        ["Thomas Metzinger","Der Ego-Tunnel: Eine neue Philosophie des Selbst","P/W"],
+        ["Antonio Damasio","Selbst ist der Mensch: Körper, Geist und die Entstehung des menschlichen Bewusstseins","W"],
+        ["Douglas Hofstadter","Ich bin eine seltsame Schleife","P/W"],
+        ["Siri Hustvedt","Die Illusion der Gewissheit","P/W"] ],
+      fields:["Existiert ein festes Ich – oder entsteht es fortwährend neu?","Das Selbst als Modell, Geschichte und sozialer Prozess.","Wer oder was bemerkt einen Gedanken?","Warum wir unsere innere Erzählung mit unserer Identität verwechseln.","Körper und Umwelt als Bestandteile des Bewusstseins.","Was nach dem Wegfall einer Rolle vom Menschen übrig bleibt."] },
+    { n:"9", t:"Autopilot, Unterbewusstsein und Denkfehler", books:[
+        ["David Eagleman","Inkognito: Die geheimen Eigenleben unseres Gehirns","W"],
+        ["Daniel Kahneman","Schnelles Denken, langsames Denken","W"],
+        ["Leonard Mlodinow","Subliminal: Wie unser Unterbewusstsein unser Verhalten steuert","W"],
+        ["Stanislas Dehaene","Denken: Wie das Gehirn Bewusstsein schafft","W"],
+        ["Rolf Dobelli","Die Kunst des klaren Denkens","populärwissenschaftlich"] ],
+      fields:["Wie oft der Verstand Entscheidungen lediglich nachträglich erklärt.","Warum mentale Abkürzungen gleichzeitig nützlich und gefährlich sind.","Bestätigungsfehler, Verfügbarkeitsheuristik und Verlustangst.","Wie Erwartungen beeinflussen, was überhaupt wahrgenommen wird.","Warum Intelligenz nicht automatisch vor Selbsttäuschung schützt.","Der Unterschied zwischen einem schnellen Impuls und einer bewussten Entscheidung."],
+      kritisch:"Kahnemans Werk ist grundlegend, einzelne Befunde aus dem Umfeld der älteren Priming-Forschung wurden jedoch später nicht stabil repliziert. Nicht jede populäre Denkfehlerliste darf daher ungeprüft als Naturgesetz übernommen werden." },
+    { n:"10", t:"Emotionen, Körper und Nervensystem", books:[
+        ["Lisa Feldman Barrett","Wie Gefühle entstehen: Eine neue Sicht auf unsere Emotionen","W"],
+        ["Antonio Damasio","Descartes' Irrtum: Fühlen, Denken und das menschliche Gehirn","W"],
+        ["Bessel van der Kolk","Verkörperter Schrecken","klinisch/wissenschaftlich"],
+        ["Gabor Maté und Daniel Maté","Der Mythos des Normalen","klinisch/gesellschaftlich"] ],
+      fields:["Gefühle sind nicht einfach das Gegenteil von Vernunft.","Wie das Gehirn Körpersignalen Bedeutung gibt.","Weshalb der Körper manchmal reagiert, bevor der Verstand eine Erklärung besitzt.","Emotionale Begriffe erweitern den möglichen Umgang mit Empfindungen.","Alarmbereitschaft, Stress und verengte Wahrnehmung.","Warum „normal“ nicht automatisch gesund bedeutet."],
+      kritisch:"Barretts Theorie der konstruierten Emotionen ist ein einflussreicher Forschungsansatz, aber nicht die einzige Emotionstheorie. Klinische und gesellschaftliche Deutungen von Maté sind ebenfalls nicht mit einem einheitlichen wissenschaftlichen Konsens gleichzusetzen." },
+    { n:"11", t:"Freier Wille, Prägung und Verantwortung", sub:"Bewusst gegensätzliche Bücher", books:[
+        ["Peter Bieri","Das Handwerk der Freiheit: Über die Entdeckung des eigenen Willens","P"],
+        ["Christian List","Warum der freie Wille existiert","P"],
+        ["Robert M. Sapolsky","Determined: A Science of Life Without Free Will","W/P, englisch"],
+        ["Sam Harris","Free Will","P/W, englisch"] ],
+      fields:["Muss eine freie Entscheidung vollkommen ursachenlos sein?","Wie Gene, Erfahrungen, Umgebung und momentaner Zustand Entscheidungen beeinflussen.","Freiheit als wachsender Handlungsspielraum statt völliger Unabhängigkeit.","Verantwortung ohne moralische Selbstverdammung.","Der Unterschied zwischen Erklärung und Entschuldigung.","Kann Bewusstheit eine Kausalkette unterbrechen oder zumindest verändern?"] },
+    { n:"12", t:"Sprache, Begriffe und Framing", books:[
+        ["Elisabeth Wehling","Politisches Framing","G/W"],
+        ["George Lakoff und Elisabeth Wehling","Auf leisen Sohlen ins Gehirn","G/W"],
+        ["Victor Klemperer","LTI: Notizbuch eines Philologen","G"],
+        ["Marshall B. Rosenberg","Gewaltfreie Kommunikation","G/Praxis"] ],
+      fields:["Sprache beschreibt Wirklichkeit nicht nur, sondern ordnet sie.","Wie Metaphern unsichtbare Schlussfolgerungen mitliefern.","Warum das Wiederholen einer Verneinung den zugrunde liegenden Rahmen stärken kann.","Etiketten verändern, was wir in einem Menschen sehen.","Wie politische Begriffe Gefühle aktivieren.","Der Unterschied zwischen Beobachtung, Bewertung und Unterstellung."],
+      kritisch:"Framing ist real, seine Reichweite wird in populären Darstellungen aber teilweise überzogen. Wehlings konkrete Deutungen sollten als Perspektive und nicht als unbestrittene Letzterklärung behandelt werden." },
+    { n:"13", t:"Gruppendruck, Gehorsam und soziale Prägung", books:[
+        ["Robert B. Cialdini","Die Psychologie des Überzeugens","W/G"],
+        ["Stanley Milgram","Das Milgram-Experiment","W/G"],
+        ["Erich Fromm","Die Furcht vor der Freiheit","P/G"],
+        ["Gustave Le Bon","Psychologie der Massen","historisch/G"],
+        ["Jonathan Haidt","The Righteous Mind","W/G, englisch"] ],
+      fields:["Weshalb Zugehörigkeit häufig stärker wirkt als ein sachliches Argument.","Wie Autoritäten persönliche Verantwortung verschieben können.","Warum Menschen ihre Wahrnehmung einer Gruppe anpassen.","Moralische Intuition kommt oft vor der rationalen Begründung.","Sympathie, Knappheit, Gegenseitigkeit und soziale Bewährtheit.","Wann eine Gruppe klüger wird – und wann sie kollektiv irrt."] },
+    { n:"14", t:"Propaganda, Medien und digitale Steuerung", books:[
+        ["Edward Bernays","Propaganda: Die Kunst der Public Relations","G"],
+        ["Edward S. Herman und Noam Chomsky","Die Konsensfabrik","G"],
+        ["Eli Pariser","Filter Bubble: Wie wir im Internet entmündigt werden","G"],
+        ["Shoshana Zuboff","Das Zeitalter des Überwachungskapitalismus","G"],
+        ["Jaron Lanier","Zehn Gründe, warum du deine Social Media Accounts sofort löschen musst","G"],
+        ["Neil Postman","Wir amüsieren uns zu Tode","G"] ],
+      fields:["Wie Themen ausgewählt werden, bevor über sie diskutiert wird.","Warum Reichweite nicht dasselbe wie gesellschaftliche Bedeutung ist.","Algorithmen zeigen nicht die Welt, sondern eine berechnete Auswahl.","Aufmerksamkeit als Geschäftsmodell.","Empörung als Bindungsinstrument.","Wie Wiederholung Vertrautheit und scheinbare Wahrheit erzeugt.","Warum Beeinflussung keinen geheimen zentralen Steuerer benötigt.","Der Unterschied zwischen Propaganda, Werbung, PR und Information."] },
+    { n:"15", t:"Kultur und die Illusion des Normalen", books:[
+        ["Joseph Henrich","Die seltsamsten Menschen der Welt","W/G"],
+        ["David Graeber und David Wengrow","Anfänge: Eine neue Geschichte der Menschheit","G"],
+        ["Hans Rosling, Ola Rosling und Anna Rosling Rönnlund","Factfulness","W/G"],
+        ["Rutger Bregman","Im Grunde gut","G"],
+        ["Yuval Noah Harari","Eine kurze Geschichte der Menschheit","G, große Synthese"] ],
+      fields:["Das eigene „Normal“ ist häufig nur das vertraute kulturelle Modell.","Warum westliche Psychologie nicht automatisch die gesamte Menschheit beschreibt.","Wie Institutionen Persönlichkeit und Denken mitformen.","Was historische Alternativen über heutige Grenzen verraten.","Warum negative Nachrichten unser Weltbild systematisch verzerren können.","Menschenbilder verändern Politik, Erziehung und Zusammenarbeit."],
+      kritisch:"Henrich, Graeber/Wengrow, Bregman und Harari erzählen große historische Zusammenhänge. Solche Synthesen sind erkenntnisreich, enthalten aber zwangsläufig Auswahl, Deutung und umstrittene Verallgemeinerungen." },
+    { n:"16", t:"Systeme, Wechselwirkungen und Verbundenheit", books:[
+        ["Gregory Bateson","Ökologie des Geistes","P/W"],
+        ["Donella H. Meadows","Thinking in Systems","W/G, englisch"],
+        ["Fritjof Capra","Lebensnetz","W/P"],
+        ["Nassim Nicholas Taleb","Antifragilität","P/G"] ],
+      fields:["Warum lineares Ursache-Wirkungs-Denken häufig zu kurz greift.","Rückkopplungen: Wenn die Reaktion ein Problem verstärkt.","Kurzfristige Lösungen mit langfristigen Nebenwirkungen.","Verhalten als Ergebnis von Person und System.","Wie Beziehungen Eigenschaften hervorbringen, die kein Einzelteil besitzt.","Kontrolle versus Anpassungsfähigkeit."] },
+    { n:"17", t:"Meditation, Kontemplation und innere Beobachtung", books:[
+        ["Jiddu Krishnamurti","Einbruch in die Freiheit","E/P"],
+        ["Jon Kabat-Zinn","Im Alltag Ruhe finden","E/W"],
+        ["Eckhart Tolle","Jetzt! Die Kraft der Gegenwart","E"],
+        ["Michael A. Singer","Die unbändige Seele","E"],
+        ["Thich Nhat Hanh","Das Wunder der Achtsamkeit","E"] ],
+      fields:["Der Unterschied zwischen einem Gedanken und dem Bemerken eines Gedankens.","Beobachten ohne unmittelbares Eingreifen.","Warum der Kampf gegen Gedanken sie verstärken kann.","Präsenz als Fähigkeit, nicht als Dauerzustand.","Stille als Kontakt mit der Wirklichkeit statt als Flucht.","Meditation ohne spirituelle Überhöhung."],
+      kritisch:"Erfahrungsberichte und spirituelle Modelle können wertvoll sein, sind aber keine neurowissenschaftlichen Beweise. Wo wissenschaftliche Aussagen gemacht werden, benötigen sie zusätzliche empirische Quellen." },
+    { n:"18", t:"Tod, Verlust, Sinn und Endlichkeit", books:[
+        ["Viktor E. Frankl","… trotzdem Ja zum Leben sagen","P/Erfahrung"],
+        ["Irvin D. Yalom","In die Sonne schauen","P/klinisch"],
+        ["Ernest Becker","Die Verleugnung des Todes","P/G"],
+        ["Sheldon Solomon, Jeff Greenberg und Tom Pyszczynski","Der Wurm in unserem Herzen","W/G"],
+        ["Pema Chödrön","Wenn alles zusammenbricht","E"] ],
+      fields:["Wie Todesbewusstsein Prioritäten verändert.","Warum Verlust die bisherige Identität erschüttern kann.","Kontrolle als Antwort auf existenzielle Angst.","Sinn wird nicht nur gefunden, sondern auch durch Handeln geschaffen.","Trauer verändert Zeit, Körper und Wahrnehmung.","Was Krisen sichtbar machen, das vorher bereits im Leben angelegt war."] },
+  ];
+
+  var novels = [
+    ["George Orwell","1984","Sprache, Macht und Wirklichkeitskontrolle"],
+    ["Aldous Huxley","Schöne neue Welt","Konditionierung, Konsum und freiwillige Ablenkung"],
+    ["Hermann Hesse","Siddhartha","Erfahrung jenseits übernommener Lehren"],
+    ["Ursula K. Le Guin","Freie Geister","alternative Gesellschaftsordnungen"],
+    ["Daniel Keyes","Blumen für Algernon","Intelligenz, Würde und Identität"],
+    ["Kazuo Ishiguro","Klara und die Sonne","Bewusstsein, Beziehung und künstliche Intelligenz"],
+  ];
+
+  var arteDocs = [
+    { t:"Wie unser Gehirn uns austrickst", link:"https://www.arte.tv/de/videos/RC-027733/wie-unser-gehirn-uns-austrickst/", format:"Zweiteiler", verf:"bis 13. Dezember 2026",
+      parts:["Teil 1: Mein Hirn und ich","Teil 2: Mein Hirn und die anderen"],
+      themen:"mentale Abkürzungen, Wahrnehmungsfilter, optische Täuschungen, kognitive Verzerrungen, Konformismus und sozialer Einfluss.",
+      ableitungen:["Dein Gehirn belügt dich nicht – es konstruiert eine brauchbare Version.","Warum wir sehen, was wir erwarten.","Was Zaubertricks über Bewusstsein verraten.","Weshalb andere Menschen unsere Wahrnehmung verändern.","Ein praktischer Tag ohne vorschnelles Urteil."] },
+    { t:"Geheimnisse unseres Gehirns", link:"https://www.arte.tv/de/videos/RC-027985/geheimnisse-unseres-gehirns/", format:"Zweiteiler", verf:"bis 30. März 2027",
+      parts:["Teil 1: Von der Nervenzelle zum Denkorgan","Teil 2: Intelligent durch Beziehungen"],
+      themen:"Evolution des Gehirns, Intelligenz, Gedächtnis, Emotionen, soziale Beziehungen und biologische gegenüber künstlicher Intelligenz." },
+    { t:"Bin ich mein Hirn?", link:"https://www.arte.tv/de/videos/108567-004-A/bin-ich-mein-hirn/", laenge:"22 Minuten", verf:"bis 1. März 2028",
+      themen:"Neuroreduktionismus, Selbst, Verantwortung und die Grenzen rein biologischer Erklärungen." },
+    { t:"Verliert unser Gehirn den Fokus?", link:"https://www.arte.tv/de/videos/121326-017-A/verliert-unser-gehirn-den-fokus/", reihe:"42 – Die Antwort auf fast alles",
+      themen:"Push-Nachrichten, Kurzvideos, Konzentration, Ablenkung und Anpassung an die digitale Reizwelt." },
+    { t:"Können wir Zeit fühlen?", link:"https://www.arte.tv/de/videos/115511-007-A/koennen-wir-zeit-fuehlen/", laenge:"26 Minuten", verf:"bis 28. März 2028",
+      themen:"subjektive Zeit, Routinen, Gefahr, Erinnerung und die Veränderbarkeit des persönlichen Zeiterlebens." },
+    { t:"Können wir Erinnerung festhalten?", link:"https://www.arte.tv/de/videos/115511-005-A/koennen-wir-erinnerung-festhalten/", reihe:"42 – Die Antwort auf fast alles",
+      themen:"Erinnerung, Identität, Rekonstruktion, falsche Erinnerungen und die Veränderung von Erinnerungen durch erneutes Abrufen." },
+    { t:"Der digitale Tsunami", link:"https://www.arte.tv/de/videos/114598-000-A/der-digitale-tsunami/", laenge:"84 Minuten", verf:"bis 20. Oktober 2026",
+      themen:"digitale Medien, künstliche Intelligenz, Wahrnehmung, Entscheidungsdelegation und gesellschaftliche Folgen der Digitalisierung." },
+  ];
+
+  var reservoir = [
+    { n:"22", t:"Wahrnehmung", start:1, items:["Du siehst nicht alles, was vor deinen Augen geschieht.","Aufmerksamkeit ist kein Scheinwerfer mit unbegrenzter Reichweite.","Das Gehirn erkennt Muster – auch dort, wo keine sind.","Erwartungen verändern die Wahrnehmung vor dem bewussten Urteil.","Warum Bekanntes automatisch wahrer wirkt.","Der blinde Fleck existiert nicht nur im Auge.","Wahrnehmung ist eine Wette des Gehirns auf die wahrscheinlichste Erklärung.","Warum zwei ehrliche Zeugen Verschiedenes erinnern können."] },
+    { n:"23", t:"Gedanken und Identität", start:9, items:["Ein Gedanke erscheint – aber wer hat ihn bestellt?","Warum nicht jeder Gedanke eine persönliche Wahrheit ist.","Das Ich als fortlaufende Erzählung.","Was Rollen mit Identität machen.","Der Unterschied zwischen „Ich bin“ und „Ich erlebe gerade“.","Warum wir eine konsistente Geschichte über uns erfinden.","Das Bedürfnis, recht zu behalten, schützt häufig das Selbstbild.","Wenn eine Meinung Teil der Identität wird."] },
+    { n:"24", t:"Gefühle und Körper", start:17, items:["Gefühle sind Informationen, aber keine Befehle.","Der Körper reagiert, während der Verstand noch nach Worten sucht.","Warum derselbe Herzschlag Angst oder Vorfreude bedeuten kann.","Emotionale Differenzierung erweitert Handlungsmöglichkeiten.","Stress verengt nicht nur den Körper, sondern auch das Weltbild.","Was dauerhafte Alarmbereitschaft mit Entscheidungen macht.","Warum Unterdrücken nicht dasselbe wie Regulieren ist.","Der Mythos vom rein rationalen Menschen."] },
+    { n:"25", t:"Freiheit und Entscheidung", start:25, items:["Ist eine Entscheidung frei, wenn sie eine Vorgeschichte besitzt?","Freiheit beginnt möglicherweise zwischen Impuls und Handlung.","Erklärung ist nicht automatisch Entschuldigung.","Verantwortung ohne Schuldspirale.","Warum Einsicht ohne Handlung wirkungslos bleibt.","Jede Gewohnheit war irgendwann eine einzelne Handlung.","Wahlfreiheit wächst mit der Zahl der wahrgenommenen Möglichkeiten.","Wenn Angst eine Entscheidung trifft und Vernunft sie später begründet."] },
+    { n:"26", t:"Sprache und Manipulation", start:33, items:["Wer den Begriff bestimmt, bestimmt einen Teil der Debatte.","Warum Etiketten Menschen unsichtbar machen können.","Worte aktivieren ganze Bedeutungsnetze.","Wiederholung erzeugt Vertrautheit – nicht Wahrheit.","Wie passive Sprache Verantwortung verschwinden lässt.","Warum „alternativlos“ ein Bewusstseinsrahmen ist.","Der Unterschied zwischen Überzeugen und Manipulieren.","Wenn Sprache das Denken verkürzt."] },
+    { n:"27", t:"Gruppe und Gesellschaft", start:41, items:["Warum Menschen der Gruppe widersprechen und trotzdem an sich zweifeln.","Gehorsam beginnt oft mit kleinen, scheinbar harmlosen Schritten.","Zugehörigkeit kann wichtiger werden als Wahrheit.","Moralische Urteile entstehen häufig vor ihrer Begründung.","Warum normale Menschen in unnormalen Systemen problematisch handeln.","Die Verantwortung verschwindet nicht, nur weil sie verteilt wird.","Wann Schwarmintelligenz funktioniert – und wann Gruppendenken entsteht.","Warum Außenseiter für Systeme unbequem und wertvoll sind."] },
+    { n:"28", t:"Medien und digitale Welt", start:49, items:["Dein Feed ist keine Weltkarte.","Algorithmen kennen Reaktionen, nicht deine Wahrheit.","Empörung hält Aufmerksamkeit länger fest als Differenzierung.","Kostenloser Inhalt wird häufig mit Aufmerksamkeit und Daten bezahlt.","Warum extreme Positionen sichtbarer erscheinen als die gesellschaftliche Mitte.","Auswahl kann lenken, ohne dass eine Aussage gelogen ist.","Der Unterschied zwischen Relevanz und Reichweite.","Was Dauerbeschallung mit dem inneren Dialog macht."] },
+    { n:"29", t:"Kultur, Wirklichkeit und Sinn", start:57, items:["Normal ist oft nur das, was nie hinterfragt wurde.","Andere Kulturen erzeugen andere selbstverständliche Wirklichkeiten.","Fortschritt ist real und trotzdem ungleich verteilt.","Menschenbilder erschaffen die Systeme, die sie anschließend bestätigen.","Was der Umgang mit Tod über eine Gesellschaft verrät.","Warum Krisen alte Identitäten aufbrechen.","Sinn ist keine fertige Antwort, sondern zeigt sich im Handeln.","Das Ende einer Gewissheit kann der Beginn von Bewusstsein sein."] },
+    { n:"30", t:"Bewusstsein im Alltag", start:65, items:["Warum Erkenntnis im vertrauten Umfeld wieder verschwindet.","Der Alltag ist der eigentliche Bewusstseinstest.","Kleine Unterbrechungen machen den Autopiloten sichtbar.","Ein neues Verhalten erzeugt Informationen, die Nachdenken allein nicht liefern kann.","Bewusstheit bedeutet nicht permanente Ruhe.","Wer alles bewertet, kann wenig neu wahrnehmen.","Stille ist nicht leer – sie macht vorhandene Aktivität hörbar.","Der nächste Entwicklungsschritt ist häufig kleiner und konkreter als erwartet."] },
+  ];
+
+  var rounds = [
+    { n:"34", t:"Erste Runde: Fundament", items:["ARTE: Wie unser Gehirn uns austrickst","David Eagleman: Inkognito","Lisa Feldman Barrett: Wie Gefühle entstehen","Thomas Metzinger: Der Ego-Tunnel","Alva Noë: Du bist nicht dein Gehirn"], erg:"Wahrnehmung, Autopilot, Emotion, Selbst und Gegenposition zum reinen Gehirnmodell." },
+    { n:"35", t:"Zweite Runde: Fremdsteuerung", items:["Stanley Milgram: Das Milgram-Experiment","Robert Cialdini: Die Psychologie des Überzeugens","Elisabeth Wehling: Politisches Framing","Edward Bernays: Propaganda","Eli Pariser: Filter Bubble","ARTE: Der digitale Tsunami"], erg:"Gruppendruck, Autorität, Sprache, Medien, Algorithmen und Aufmerksamkeit." },
+    { n:"36", t:"Dritte Runde: Freiheit und Entwicklung", items:["Peter Bieri: Das Handwerk der Freiheit","Christian List: Warum der freie Wille existiert","Robert Sapolsky: Determined","Humberto Maturana und Francisco Varela: Der Baum der Erkenntnis","Jiddu Krishnamurti: Einbruch in die Freiheit"], erg:"widersprüchliche Modelle von Freiheit, Verantwortung, Beobachtung und Handlung." },
+    { n:"37", t:"Vierte Runde: Horizonterweiterung", items:["Joseph Henrich: Die seltsamsten Menschen der Welt","David Graeber und David Wengrow: Anfänge","Gregory Bateson: Ökologie des Geistes","Viktor Frankl: … trotzdem Ja zum Leben sagen","ein ausgewählter Roman aus Abschnitt 19"], erg:"Kultur, Systeme, Geschichte, Sinn und erlebter Perspektivwechsel." },
+  ];
+
+  // ---------------------------------------------------------------- render helpers
+
+  function unit(id, html){ return '<div class="unit" id="' + id + '">' + html + '</div>'; }
+
+  function bibUnit(e){
+    var h = '<h2>' + e.n + '. ' + esc(e.t) + '</h2>';
+    if (e.sub) h += '<p class="lede">' + esc(e.sub) + '</p>';
+    h += '<div class="kicker">Empfohlene Bücher</div><ul class="book-list">' + e.books.map(function(b){ return book(b[0], b[1], b[2]); }).join('') + '</ul>';
+    h += '<div class="kicker">Mögliche Contentfelder</div>' + plain(e.fields);
+    if (e.kritisch) h += callout(e.kritisch);
+    return unit('t' + e.n, h);
+  }
+
+  function arteUnit(d){
+    var h = '<h3>' + esc(d.t) + '</h3>';
+    h += '<dl class="kv">';
+    h += '<dt>Link</dt><dd><a href="' + d.link + '" target="_blank" rel="noopener">' + d.link + '</a></dd>';
+    if (d.format) h += '<dt>Format</dt><dd>' + esc(d.format) + '</dd>';
+    if (d.laenge) h += '<dt>Länge</dt><dd>' + esc(d.laenge) + '</dd>';
+    if (d.reihe) h += '<dt>Reihe</dt><dd>' + esc(d.reihe) + '</dd>';
+    h += '<dt>Verfügbar</dt><dd>' + esc(d.verf || 'siehe Reihe') + '</dd>';
+    h += '</dl>';
+    if (d.parts) h += plain(d.parts);
+    h += '<p class="themen"><strong>Themen:</strong> ' + esc(d.themen) + '</p>';
+    if (d.ableitungen){ h += '<div class="kicker">Mögliche Ableitungen</div>' + plain(d.ableitungen); }
+    return '<div class="arte-card">' + h + '</div>';
+  }
+
+  function resUnit(cat){
+    var rows = cat.items.map(function(it, i){
+      return '<div class="res-row"><span class="res-num">' + (cat.start + i) + '</span><span>' + esc(it) + '</span></div>';
+    }).join('');
+    return unit('r' + cat.n, '<h2>' + cat.n + '. ' + esc(cat.t) + '</h2>' + rows);
+  }
+
+  function roundBlock(r){
+    var lis = r.items.map(function(it){ return '<li>' + esc(it) + '</li>'; }).join('');
+    return '<div class="round-block"><h2>' + r.n + '. ' + esc(r.t) + '</h2><ol>' + lis + '</ol><p class="round-result"><b>Ergebnis:</b> ' + esc(r.erg) + '</p></div>';
+  }
+
+  // ---------------------------------------------------------------- assemble page
+
+  var out = '';
+
+  out += unit('grundgedanke',
+    '<div class="teil-head"><h1>1–2 · Grundgedanke &amp; Kennzeichnung der Quellen</h1></div>' +
+    '<p>Persönlichkeitsentwicklung und Bewusstseinsentwicklung sind nicht dasselbe.</p>' +
+    '<blockquote>Persönlichkeitsentwicklung fragt häufig: „Wie kann ich mich verbessern oder optimieren?“<br>Bewusstseinsentwicklung fragt: „Wer ist dieses Ich überhaupt – und wodurch entstehen seine Wahrnehmung, Gedanken, Gefühle und Entscheidungen?“</blockquote>' +
+    '<p>Wenn sich Wahrnehmung und Bewusstsein verändern, kann sich dadurch auch die Persönlichkeit entwickeln. Das geschieht jedoch nicht allein durch intellektuelles Verstehen. Erst wenn eine neue Erkenntnis Entscheidungen, Verhalten und Handlungen verändert, wird sie im Leben wirksam.</p>' +
+    '<blockquote>Bewusstsein wird erst durch Handlung wirksam.</blockquote>' +
+    '<p>Bewusstseinsentwicklung lässt sich für dieses Projekt in drei Bewegungen gliedern: <strong>Wahrnehmung erweitern</strong> (mehr bemerken, Automatismen erkennen, Sinneseindrücke differenzieren), <strong>Perspektive erweitern</strong> (andere Weltbilder, Lebenswirklichkeiten und Erklärungen kennenlernen) und <strong>Handlungsspielraum erweitern</strong> (trotz alter Muster neue Entscheidungen treffen und Erfahrungen ermöglichen).</p>' +
+    '<div class="kicker" style="margin-top:26px">Kennzeichnung der Quellen</div>' +
+    '<p class="lede">Nicht jede Quelle hat denselben wissenschaftlichen Status. Die folgenden Kürzel verhindern, dass Neurowissenschaft, Philosophie, Gesellschaftskritik und spirituelle Erfahrung miteinander vermischt werden — nutze die Chips oben, um die Bibliothek nach Quellentyp zu filtern.</p>' +
+    Object.keys(KZ).map(function(c){
+      return '<p style="margin:6px 0;font-size:14px"><span class="btag" style="--c:var(--kz-' + c.toLowerCase() + ')">' + c + '</span>&nbsp; <strong>' + KZ[c].name + '</strong> — ' + KZ[c].desc + '</p>';
+    }).join('') +
+    '<p class="lede" style="margin-top:10px"><em>Eine Quelle ist kein Wahrheitsbeweis. Besonders ergiebig sind Quellen, die einander widersprechen.</em></p>'
+  );
+
+  // Teil I
+  function taetig(id, title, items){ return unit(id, '<h2>' + title + '</h2>' + plain(items)); }
+  out += '<div class="teil-head"><h1>Teil I – Konkrete Tätigkeiten zur Bewusstseinserweiterung</h1></div>' +
+    '<p class="teil-lede">Bewusst keine Reflexionsfragen: Erfahrungen und Handlungen, die sich in den Alltag übertragen lassen.</p>';
+
+  out += unit('t3', '<h2>3. Wahrnehmung und Aufmerksamkeit</h2>' +
+    '<h3>3.1 Autopilot unterbrechen</h3>' + plain(["Einen vollständigen Tagesablauf in einer anderen Reihenfolge gestalten.","Einen anderen Weg zu einem vertrauten Ziel nehmen.","An einem ungewohnten Platz essen, arbeiten oder sitzen.","Eine alltägliche Tätigkeit mit der nicht dominanten Hand ausführen.","Eine Mahlzeit schweigend und ohne Bildschirm zu sich nehmen.","Eine bekannte Tätigkeit absichtlich sehr langsam ausführen."]) +
+    '<h3>3.2 Sinneswahrnehmung differenzieren</h3>' + plain(["Einen Spaziergang ausschließlich auf Geräusche ausrichten.","Einen zweiten Spaziergang auf Farben, Formen, Licht und Schatten ausrichten.","Einen vertrauten Raum für fünf Minuten nur über Gerüche und Körperempfindungen wahrnehmen.","Ein Lebensmittel mit geschlossenen Augen ertasten, riechen und schmecken.","Eine Stunde ohne Musik, Podcast, Telefon und Gespräch verbringen.","Einen bekannten Ort zu einer völlig ungewohnten Tageszeit besuchen."]) +
+    '<h3>3.3 Aufmerksamkeit zurückerobern</h3>' + plain(["Einen halben oder ganzen Tag sämtliche Push-Benachrichtigungen abschalten.","Das Smartphone für eine festgelegte Zeit außerhalb des eigenen Sichtfeldes aufbewahren.","Einen Tag lang jeden automatischen Griff zum Smartphone um zehn Minuten verschieben.","Einen vollständigen Text ohne parallele Tabs, Nachrichten oder Musik lesen.","Einen Tag lang nur zu zwei vorher festgelegten Zeiten Nachrichten konsumieren.","Einen analogen Gegenstand benutzen, wo sonst automatisch das Smartphone verwendet wird: Uhr, Notizbuch, Kamera, Karte oder Wecker."])
+  );
+
+  out += unit('t4', '<h2>4. Neue Perspektiven erleben</h2>' +
+    '<h3>4.1 Andere Lebenswelten</h3>' + plain(["Eine öffentliche Veranstaltung besuchen, deren Publikum normalerweise nicht zum eigenen Umfeld gehört.","Einen Menschen für einige Stunden bei seiner Arbeit begleiten.","In einem sozialen Projekt, Tierheim, Hospiz oder einer Lebensmittelausgabe mithelfen.","Eine religiöse oder kulturelle Veranstaltung als respektvoller Gast besuchen.","Ein Gericht aus einer unbekannten Kultur gemeinsam mit Menschen aus dieser Kultur zubereiten.","Eine Ausstellung, ein Theaterstück oder ein Konzert außerhalb des eigenen Geschmacks besuchen."]) +
+    '<h3>4.2 Andere Weltbilder</h3>' + plain(["Ein ausführliches Gespräch mit einem Menschen führen, dessen Weltbild dem eigenen widerspricht – mit dem einzigen Ziel, seine innere Logik zu verstehen.","Eine ernstzunehmende Gegenposition zur eigenen Überzeugung vollständig lesen oder ansehen.","Dieselbe Nachricht bei mehreren Medien mit unterschiedlichen politischen und kulturellen Hintergründen vergleichen.","Einen historischen Konflikt aus den Quellen mehrerer beteiligter Seiten betrachten.","Einen Roman lesen, dessen Hauptfigur aus einer fremden sozialen, kulturellen oder körperlichen Lebenswirklichkeit stammt."]) +
+    '<h3>4.3 Anfängerbewusstsein</h3>' + plain(["Etwas lernen, in dem man keinerlei Vorsprung besitzt: Tanzen, Zeichnen, Sprache, Instrument, Kochen, Handwerk oder Improvisation.","Einen Kurs besuchen, ohne das Ergebnis veröffentlichen oder verwerten zu wollen.","Sich von einem deutlich jüngeren oder älteren Menschen etwas beibringen lassen.","Eine Tätigkeit ausprobieren, für die man sich bisher für „nicht talentiert“ hielt.","Ein kleines Objekt herstellen, reparieren oder gestalten, statt es neu zu kaufen."])
+  );
+
+  out += unit('t5', '<h2>5. Handlungsspielraum erweitern</h2>' +
+    '<h3>5.1 Unsicherheit aushalten</h3>' + plain(["Allein ein Café, Restaurant, Kino oder eine Veranstaltung besuchen.","Eine fremde Person respektvoll ansprechen.","In einer geeigneten Situation als Erste oder Erster eine ehrliche Meinung äußern.","Eine Aufgabe beginnen, bevor man sich vollkommen vorbereitet fühlt.","Einen kleinen Fehler sichtbar stehen lassen, wenn seine Korrektur nur dem Perfektionismus dienen würde."]) +
+    '<h3>5.2 Grenzen und Verantwortung</h3>' + plain(["Eine unnötige Verpflichtung freundlich, aber eindeutig ablehnen.","Eine Zusage einhalten, obwohl die ursprüngliche Motivation bereits verschwunden ist.","Einen selbst verursachten Fehler ohne Rechtfertigung korrigieren.","Eine Entscheidung treffen, die dem erkannten Wert entspricht, obwohl das alte Muster bequemer wäre.","Eine offene Angelegenheit durch einen konkreten ersten Schritt in Bewegung bringen."]) +
+    '<h3>5.3 Schaffen statt konsumieren</h3>' + plain(["Eine Seite schreiben, ein Bild gestalten, etwas bauen oder eine Mahlzeit entwickeln, ohne es zu veröffentlichen.","Einen konsumfreien Abend gestalten.","Aus einer gelesenen oder gesehenen Idee ein eigenes Experiment entwickeln.","Einen Gedanken in eine konkrete Hilfe für einen anderen Menschen übersetzen.","Eine Woche lang jeden Tag etwas Kleines erschaffen."])
+  );
+
+  out += taetig('t6', '6. Stille, Natur und veränderte Umgebung', ["Einen halben Tag schweigend verbringen.","Allein und ohne Kopfhörer durch einen Wald gehen.","Sonnenaufgang oder Sonnenuntergang ohne Kamera beobachten.","Eine Nacht oder einen längeren Zeitraum sicher vorbereitet in der Natur verbringen.","An einem seriös begleiteten Schweige- oder Meditationsretreat teilnehmen.","Einen Ort bereisen, an dem Sprache, Alltag und soziale Regeln ungewohnt sind.","Eine lokale Mikroreise unternehmen: einen unbekannten Ort in der eigenen Region wie ein Reisender erkunden."]);
+
+  // Teil II
+  out += '<div class="teil-head"><h1>Teil II – Die Bewusstseinsbibliothek</h1></div>' +
+    '<p class="teil-lede">Dreizehn Themenfelder mit Buchempfehlungen, Contentfeldern und, wo nötig, kritischem Hinweis.</p>';
+  out += bibliothek.map(bibUnit).join('');
+  out += unit('t19', '<h2>19. Literatur als erlebter Perspektivwechsel</h2>' +
+    '<div class="kicker">Empfohlene Romane und Erzählungen</div>' +
+    '<ul class="book-list">' + novels.map(function(n){ return novel(n[0], n[1], n[2]); }).join('') + '</ul>' +
+    '<p class="lede" style="margin-top:12px">Literatur ist kein bloßer Zusatz. Ein Sachbuch beschreibt eine fremde Perspektive; ein guter Roman lässt den Leser eine Zeit lang in ihr leben.</p>'
+  );
+
+  // Teil III
+  out += '<div class="teil-head"><h1>Teil III – ARTE-Dokumentationen</h1></div>' +
+    '<p class="teil-lede">Verfügbarkeiten Stand 4. September 2026 – können sich ändern.</p>';
+  out += unit('t20', '<h2>20. Unmittelbar relevante Dokumentationen</h2>' + arteDocs.map(arteUnit).join(''));
+  out += unit('t21', '<h2>21. Geeignete ergänzende ARTE-Themen</h2>' +
+    '<p class="lede">Besonders Folgen aus <em>42 – Die Antwort auf fast alles</em> sowie <em>Offene Ideen</em> sind interessant. Gesucht werden sollte regelmäßig nach:</p>' +
+    plain(["Aufmerksamkeit und Konzentration","Erinnerung und Identität","Zeitwahrnehmung","Empathie und Mitgefühl","Angst und gesellschaftlicher Stress","Einsamkeit und soziale Ansteckung","künstliche Intelligenz und Emotionserkennung","Konkurrenz und Kooperation","Sucht und Belohnungssystem","Sprache und Wirklichkeit","Medien, Algorithmen und digitale Macht"])
+  );
+
+  // Teil IV
+  out += '<div class="teil-head"><h1>Teil IV – Content-Reservoir</h1></div>' +
+    '<p class="teil-lede">72 durchnummerierte Ansätze in neun Kategorien.</p>';
+  out += unit('t22', reservoir.map(function(cat){
+    return '<h2>' + cat.n + '. ' + esc(cat.t) + '</h2>' + cat.items.map(function(it,i){ return '<div class="res-row"><span class="res-num">' + (cat.start+i) + '</span><span>' + esc(it) + '</span></div>'; }).join('');
+  }).join('<div style="height:18px"></div>'));
+
+  // Teil V
+  out += '<div class="teil-head"><h1>Teil V – Aus Quellen verwertbaren Content entwickeln</h1></div>';
+  out += unit('t31', '<h2>31. Quellenkarte für jedes Buch oder jede Dokumentation</h2>' +
+    '<p class="lede">Für jede bearbeitete Quelle wird eine eigene Karte angelegt:</p>' +
+    '<pre class="card">' + esc(
+'# Quellenkarte\n\n## Basisdaten\n- Titel:\n- Autorin/Autor bzw. Produktion:\n- Jahr:\n- Link/ISBN:\n- Kennzeichnung: W / P / G / E / L\n\n## Kernaussage in eigenen Worten\n\n## Zentrale Begriffe\n- \n- \n\n## Verwendete Experimente oder Fallbeispiele\n- \n\n## Gegenpositionen und Kritik\n- \n\n## Beobachtbares Alltagsphänomen\n- \n\n## Konkrete Tätigkeit oder Bewusstseinsexperiment\n- \n\n## Content-Ableitungen\n- Grundlagenartikel:\n- Vertiefungsartikel:\n- Reel/Short:\n- Video:\n- Kursbaustein:\n- persönlicher Story-Anschluss:\n\n## Verbindung zu den sieben Stufen\n- passende Stufe:\n- Funktion innerhalb der Stufe:\n\n## Offene Prüfung\n- Welche Aussage benötigt eine Primärquelle?\n- Was ist Interpretation statt gesicherter Befund?'
+    ) + '</pre>' +
+    '<h2 style="margin-top:28px">32. Minimaler Output pro Quelle</h2>' +
+    '<p class="lede">Aus jedem gründlich bearbeiteten Buch oder jeder Dokumentation sollten mindestens entstehen:</p>' +
+    plain(["eine verständliche Kernaussage,","eine ernstzunehmende Gegenposition,","ein beobachtbares Alltagsbeispiel,","eine konkrete Tätigkeit,","ein ausführlicher Artikel oder Kursbaustein,","drei bis fünf kurze Contentansätze."]) +
+    '<p class="lede">Damit ergeben 30 sauber bearbeitete Quellen bereits weit über 150 eigenständige Contentansätze, ohne bloß fremde Inhalte nachzuerzählen.</p>' +
+    '<h2 style="margin-top:28px">33. Qualitätsregel</h2>' +
+    '<p class="lede">Für größere Aussagen möglichst drei Ebenen miteinander verbinden:</p>' +
+    '<ol style="padding-left:20px;font-size:14.5px"><li><strong>Forschung:</strong> Was wurde tatsächlich untersucht?</li><li><strong>Philosophie:</strong> Welche Bedeutung und welche Grenzen hat der Befund?</li><li><strong>Erfahrung:</strong> Wie zeigt sich das Thema im wirklichen Alltag?</li></ol>' +
+    '<p class="lede">Erst danach erfolgt die Zuspitzung für Marketing oder Social Media. Eine starke Headline darf vereinfachen; der zugrunde liegende Inhalt darf dadurch nicht falsch werden.</p>'
+  );
+
+  // Teil VI
+  out += '<div class="teil-head"><h1>Teil VI – Sinnvolle Bearbeitungsreihenfolge</h1></div>';
+  out += unit('t34', rounds.map(roundBlock).join(''));
+
+  // Teil VII + Schluss
+  out += unit('t38',
+    '<div class="teil-head" style="margin-top:0"><h1>Teil VII – Pflege der Sammlung</h1></div>' +
+    plain(["Neue Quellen werden monatlich geprüft.","Bereits vorhandene Titel werden nicht erneut aufgenommen, außer eine neue Ausgabe oder neue Forschung verändert die Bewertung.","Bei Dokumentationen werden Verfügbarkeit und Abrufdatum notiert.","Wissenschaftliche Behauptungen werden nach Möglichkeit bis zur Primärquelle zurückverfolgt.","Spirituelle, philosophische und empirische Aussagen bleiben erkennbar getrennt.","Jede starke These erhält mindestens eine Gegenposition.","Die Zuordnung zu den sieben Bewusstseinsstufen erfolgt erst nach inhaltlicher Prüfung, nicht allein anhand eines Schlagworts."]) +
+    '<div class="schluss"><h2 style="font-size:19px;margin-bottom:8px">Schlussgedanke</h2>' +
+    '<p style="color:var(--ink-soft);font-size:14.5px">Das Ziel ist nicht, möglichst viele Bücher zu besitzen oder möglichst viele Dokumentationen gesehen zu haben. Bewusstsein wächst, wenn eine Quelle die eigene Wahrnehmung irritiert, eine bisher unsichtbare Möglichkeit zeigt und schließlich zu einer anderen Erfahrung oder Handlung führt.</p>' +
+    '<blockquote style="margin-bottom:0">Eine Bibliothek erweitert den Horizont nur dann, wenn sie nicht zur nächsten Bestätigungsblase wird.</blockquote></div>'
+  );
+
+  document.getElementById('content').innerHTML = out + '<p class="no-hits" id="noHits">Keine Treffer.</p>';
+
+  // legend chips
+  var legendRow = document.getElementById('legendRow');
+  var activeCodes = [];
+  Object.keys(KZ).forEach(function(c){
+    var chip = document.createElement('button');
+    chip.className = 'legend-chip';
+    chip.style.setProperty('--chip-color', 'var(--kz-' + c.toLowerCase() + ')');
+    chip.innerHTML = '<span class="dot"></span>' + c + ' · ' + KZ[c].name;
+    chip.addEventListener('click', function(){
+      chip.classList.toggle('active');
+      var idx = activeCodes.indexOf(c);
+      if (chip.classList.contains('active') && idx === -1) activeCodes.push(c);
+      if (!chip.classList.contains('active') && idx !== -1) activeCodes.splice(idx, 1);
+      applyFilter();
+    });
+    legendRow.appendChild(chip);
+  });
+  var resetBtn = document.createElement('button');
+  resetBtn.className = 'legend-reset';
+  resetBtn.textContent = 'Filter zurücksetzen';
+  resetBtn.addEventListener('click', function(){
+    activeCodes = [];
+    legendRow.querySelectorAll('.legend-chip').forEach(function(c){ c.classList.remove('active'); });
+    applyFilter();
+  });
+  legendRow.appendChild(resetBtn);
+
+  function applyFilter(){
+    var books = document.querySelectorAll('.book');
+    books.forEach(function(b){
+      if (!activeCodes.length) { b.classList.remove('dimmed'); return; }
+      var codes = (b.dataset.codes || '').split(' ').filter(Boolean);
+      var match = codes.some(function(c){ return activeCodes.indexOf(c) !== -1; });
+      b.classList.toggle('dimmed', !match);
+    });
+  }
+
+  // search
+  var units = Array.prototype.slice.call(document.querySelectorAll('.unit'));
+  units.forEach(function(u){ u.dataset.search = u.textContent.toLowerCase(); });
+  var teilHeads = Array.prototype.slice.call(document.querySelectorAll('.teil-head, .teil-lede'));
+
+  var input = document.getElementById('searchInput');
+  var note = document.getElementById('resultNote');
+  var noHits = document.getElementById('noHits');
+
+  input.addEventListener('input', function(){
+    var q = input.value.trim().toLowerCase();
+    var visible = 0;
+    units.forEach(function(u){
+      var show = !q || u.dataset.search.indexOf(q) !== -1;
+      u.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (q) {
+      note.textContent = visible + ' Abschnitt' + (visible === 1 ? '' : 'e');
+      teilHeads.forEach(function(h){ h.style.display = 'none'; });
+    } else {
+      note.textContent = '';
+      teilHeads.forEach(function(h){ h.style.display = ''; });
+    }
+    noHits.style.display = (q && visible === 0) ? 'block' : 'none';
+  });
+
+  // mobile nav toggle
+  var sidebar = document.getElementById('sidebar');
+  var navToggle = document.getElementById('navToggle');
+  navToggle.addEventListener('click', function(){ sidebar.classList.toggle('open'); });
+  sidebar.addEventListener('click', function(e){ if (e.target.tagName === 'A') sidebar.classList.remove('open'); });
+
+})();
+</script>
+
+</body></html>

@@ -5,6 +5,46 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Bewusstseinsbibliothek in den Admin-Bereich integriert
+
+**Was:** Das Artifact „Bewusstseinsbibliothek" (Quellenkennzeichnung,
+Tätigkeiten, Themen-Bibliothek mit Buchempfehlungen, ARTE-Doku-Liste,
+72er-Content-Reservoir, Bearbeitungsreihenfolge und Pflege) ist jetzt fest im
+Projekt und **ausschließlich für Admins** erreichbar.
+
+**Wo/Zugriff:** Neue Route `GET /admin/bewusstseinsbibliothek`. Sie liegt unter
+`/admin/*` und ist damit doppelt geschützt: der Proxy (`src/proxy.ts`) lässt
+`/admin` nur für angemeldete Admins durch, und der Route-Handler selbst prüft
+noch einmal `isAdminEmail` und antwortet für alle anderen mit **404** (verrät
+die Existenz der Seite nicht). Das Artifact ist ein in sich geschlossenes
+HTML-Dokument (eigenes Layout, Sidebar, Volltextsuche, Filter nach Quellentyp),
+darum als komplette Seite ausgeliefert und in neuem Tab geöffnet – analog zur
+E-Book-Route.
+
+**Geändert / neu:**
+- **`content/admin/bewusstseinsbibliothek.html`** (neu): das fertige Artifact.
+  Bewusst unter `content/` statt `public/`, damit es nur über die geschützte
+  Route erreichbar ist (nichts unter `public/` ist login-/adminsicher). Wird
+  im Dockerfile ohnehin ins Laufzeit-Image kopiert
+  (`COPY --from=builder /app/content ./content`). Der externe Google-Fonts-Link
+  wurde entfernt, weil die CSP (`style-src 'self'`, `font-src 'self' data:`)
+  ihn blockiert; es greifen die CSS-Fallbacks (Georgia/System-Schriften).
+- **`src/lib/bewusstseinsbibliothek-file.ts`** (neu): liest das HTML einmalig
+  aus `content/admin/` und cacht es (Muster wie `src/lib/pdf/ebook-file.ts`).
+- **`src/app/admin/bewusstseinsbibliothek/route.ts`** (neu): admin-geschützter
+  Route-Handler, liefert das HTML mit `Cache-Control: private, no-store` und
+  `X-Robots-Tag: noindex`.
+- **`src/app/admin/page.tsx`**: Button „Bewusstseinsbibliothek" im Admin-Kopf
+  (als `<a target="_blank">`, da Route-Handler statt React-Seite).
+- **`src/app/admin/seiten/page.tsx`**: Eintrag in der Gruppe „Administration";
+  `PageLink` um ein `external`-Flag ergänzt, damit solche Route-Handler in
+  neuem Tab statt per `next/link` geöffnet werden.
+
+**Geprüft:** `npm run build` erfolgreich, Route erscheint als
+`ƒ /admin/bewusstseinsbibliothek`; ESLint der geänderten Dateien ohne Befund.
+
+---
+
 ## 2026-09-10 – Cover-Overlays: vier Farbwelten statt vierfacher Dublette
 
 **Symptom:** In der Galerie waren alle Cover-Overlays braun – die vier

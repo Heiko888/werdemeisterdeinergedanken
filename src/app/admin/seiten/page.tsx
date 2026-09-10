@@ -21,7 +21,14 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-type PageLink = { href: string; label: string; hint?: string };
+type PageLink = {
+  href: string;
+  label: string;
+  hint?: string;
+  // true = eigenständiges HTML-Dokument (Route-Handler), in neuem Tab öffnen –
+  // nicht per Client-Navigation (next/link) ansteuern.
+  external?: boolean;
+};
 type PageGroup = { title: string; description?: string; links: PageLink[] };
 
 /**
@@ -132,6 +139,12 @@ function buildGroups(): PageGroup[] {
         { href: "/admin/marken-uebersicht", label: "Marken-Übersicht" },
         { href: "/admin/redaktionsplan", label: "Redaktionsplan" },
         { href: "/admin/vorlagen", label: "Vorlagen" },
+        {
+          href: "/admin/bewusstseinsbibliothek",
+          label: "Bewusstseinsbibliothek",
+          hint: "Quellen, Tätigkeiten & Content-Reservoir (nur Admin)",
+          external: true,
+        },
         { href: "/admin/seiten", label: "Seitenübersicht (diese Seite)" },
       ],
     },
@@ -210,12 +223,11 @@ export default async function AdminSeitenPage() {
               </div>
 
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {group.links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="group flex h-full flex-col justify-between gap-2 rounded-2xl border border-ink/10 bg-white p-4 shadow-card transition-all hover:-translate-y-0.5 hover:border-gold-500/40 hover:shadow-lg"
-                    >
+                {group.links.map((link) => {
+                  const cardClass =
+                    "group flex h-full flex-col justify-between gap-2 rounded-2xl border border-ink/10 bg-white p-4 shadow-card transition-all hover:-translate-y-0.5 hover:border-gold-500/40 hover:shadow-lg";
+                  const inner = (
+                    <>
                       <div className="flex items-start justify-between gap-3">
                         <span className="font-medium text-ink">
                           {link.label}
@@ -230,9 +242,28 @@ export default async function AdminSeitenPage() {
                       <span className="text-xs text-ink-soft/60">
                         {link.href}
                       </span>
-                    </Link>
-                  </li>
-                ))}
+                    </>
+                  );
+                  return (
+                    <li key={link.href}>
+                      {link.external ? (
+                        // Route-Handler (eigenständiges HTML) → neuer Tab.
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={cardClass}
+                        >
+                          {inner}
+                        </a>
+                      ) : (
+                        <Link href={link.href} className={cardClass}>
+                          {inner}
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
