@@ -5,6 +5,15 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – ChatGPT-Bildprompts für Hintergründe
+
+Neues Dokument `docs/marketing/CHATGPT-Bildprompts-Hintergruende.md` – fertige
+Copy-&-Paste-Prompts, um in ChatGPT markenkonforme **Hintergründe** je Serie
+(Cover + CTA) für Carousels und Reel-Cover zu erzeugen. Enthält Basis-Stil,
+Seitenverhältnis-Tabelle und Foto-/Freiraum-Regeln. Reine Doku.
+
+---
+
 ## 2026-09-10 – Carousel-Studio: Foto-Hintergründe eingebrannt (Cover/CTA)
 
 Carousels können jetzt eigene Fotos als Hintergrund **einbrennen** – vorher ging
