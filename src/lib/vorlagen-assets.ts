@@ -38770,7 +38770,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 01",
+    "titel": "Landing / Allgemein · Cover 01 · Gold · Creme",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Landing / Allgemein · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -38814,20 +38946,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 01",
+    "titel": "Landing / Allgemein · Cover 02 · Gold · Creme",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38858,20 +38990,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 01",
+    "titel": "Landing / Allgemein · Cover 02 · Türkis · Creme",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38902,20 +39034,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 01",
+    "titel": "Landing / Allgemein · Cover 02 · Türkis · Navy",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38946,7 +39078,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 02",
+    "titel": "Landing / Allgemein · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -38990,20 +39122,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 02",
+    "titel": "Landing / Allgemein · Cover 03 · Gold · Creme",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39034,20 +39166,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 02",
+    "titel": "Landing / Allgemein · Cover 03 · Türkis · Creme",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39078,20 +39210,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 02",
+    "titel": "Landing / Allgemein · Cover 03 · Türkis · Navy",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39122,51 +39254,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 03",
-    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 03",
+    "titel": "Landing / Allgemein · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -39210,20 +39298,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 03",
-    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "titel": "Praxis · Cover 01 · Gold · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39254,20 +39342,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Landing / Allgemein · Cover 03",
-    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "titel": "Praxis · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39298,7 +39386,51 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 01",
+    "titel": "Praxis · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -39342,20 +39474,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 01",
+    "titel": "Praxis · Cover 02 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39386,20 +39518,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 01",
+    "titel": "Praxis · Cover 02 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39430,20 +39562,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 01",
+    "titel": "Praxis · Cover 02 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39474,51 +39606,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 02",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 02",
+    "titel": "Praxis · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -39562,20 +39650,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 02",
+    "titel": "Praxis · Cover 03 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39606,20 +39694,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 02",
+    "titel": "Praxis · Cover 03 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39650,64 +39738,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 03",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 03",
+    "titel": "Praxis · Cover 03 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39738,7 +39782,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 03",
+    "titel": "Praxis · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -39782,20 +39826,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 03",
+    "titel": "Praxis · Cover 04 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39826,20 +39870,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 04",
+    "titel": "Praxis · Cover 04 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39870,64 +39914,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 04",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 04",
+    "titel": "Praxis · Cover 04 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39958,7 +39958,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 04",
+    "titel": "Praxis · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -40002,7 +40002,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 05",
+    "titel": "Praxis · Cover 05 · Gold · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 05 · Türkis · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 05 · Türkis · Navy",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -40046,20 +40178,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 05",
+    "titel": "Praxis · Cover 06 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40090,20 +40222,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 05",
+    "titel": "Praxis · Cover 06 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40134,64 +40266,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 05",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 06",
+    "titel": "Praxis · Cover 06 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40222,7 +40310,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 06",
+    "titel": "Praxis · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -40266,20 +40354,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 06",
+    "titel": "Praxis · Cover 07 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40310,20 +40398,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 06",
+    "titel": "Praxis · Cover 07 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40354,20 +40442,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 07",
+    "titel": "Praxis · Cover 07 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40398,51 +40486,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 07",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 07",
+    "titel": "Praxis · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -40486,20 +40530,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 07",
+    "titel": "Praxis · Cover 08 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40530,20 +40574,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 08",
+    "titel": "Praxis · Cover 08 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40574,20 +40618,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 08",
+    "titel": "Praxis · Cover 08 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40618,51 +40662,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 08",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 08",
+    "titel": "Praxis · Cover 08 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -40706,7 +40706,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 09",
+    "titel": "Praxis · Cover 09 · Gold · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 09 · Türkis · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 09 · Türkis · Navy",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 09 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -40750,20 +40882,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 09",
+    "titel": "Praxis · Cover 10 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40794,20 +40926,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 09",
+    "titel": "Praxis · Cover 10 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40838,20 +40970,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 09",
+    "titel": "Praxis · Cover 10 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40882,7 +41014,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 10",
+    "titel": "Praxis · Cover 10 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -40926,20 +41058,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 10",
+    "titel": "Praxis · Cover 11 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+    "sizeMB": 0.6,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -40970,20 +41102,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 10",
+    "titel": "Praxis · Cover 11 · Türkis · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+    "sizeMB": 0.6,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41014,20 +41146,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 10",
+    "titel": "Praxis · Cover 11 · Türkis · Navy",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41058,7 +41190,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 11",
+    "titel": "Praxis · Cover 11 · Gold · Dunkel",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -41102,20 +41234,372 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 11",
+    "titel": "Praxis · Cover 12 · Gold · Creme",
     "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 12 · Türkis · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 12 · Türkis · Navy",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 12 · Gold · Dunkel",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 13 · Gold · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 13 · Türkis · Creme",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 13 · Türkis · Navy",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Praxis · Cover 13 · Gold · Dunkel",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.8,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41146,20 +41630,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 11",
-    "unterKategorie": "Praxis · Cover-Overlay",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.8,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41190,20 +41674,108 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 11",
-    "unterKategorie": "Praxis · Cover-Overlay",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 01 · Gold · Dunkel",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.8,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41234,372 +41806,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Praxis · Cover 12",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 12",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 12",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 12",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 13",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 13",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 13",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Praxis · Cover 13",
-    "unterKategorie": "Praxis · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 01",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41630,20 +41850,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 01",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41674,95 +41894,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 01",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 01",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "titel": "Mentale Selbstverteidigung · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -41806,20 +41938,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41850,20 +41982,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41894,20 +42026,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -41938,51 +42070,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 03",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 03",
+    "titel": "Mentale Selbstverteidigung · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -42026,20 +42114,108 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 03",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42070,139 +42246,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 03",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 04",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 04",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "titel": "Mentale Selbstverteidigung · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -42246,20 +42290,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42290,20 +42334,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42334,64 +42378,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 05",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42422,7 +42422,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "titel": "Mentale Selbstverteidigung · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -42466,7 +42466,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -42510,20 +42642,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42554,20 +42686,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42598,20 +42730,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42642,7 +42774,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "titel": "Mentale Selbstverteidigung · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -42686,20 +42818,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42730,20 +42862,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42774,64 +42906,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 07",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42862,7 +42950,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "titel": "Mentale Selbstverteidigung · Cover 08 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -42906,20 +42994,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42950,20 +43038,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -42994,7 +43082,51 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 09 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -43038,20 +43170,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43082,20 +43214,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43126,64 +43258,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 09",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43214,7 +43302,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "titel": "Mentale Selbstverteidigung · Cover 10 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -43258,20 +43346,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43302,20 +43390,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43346,20 +43434,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43390,51 +43478,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 11",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "titel": "Mentale Selbstverteidigung · Cover 11 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -43478,20 +43522,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43522,20 +43566,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43566,20 +43610,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43610,51 +43654,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 12",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "titel": "Mentale Selbstverteidigung · Cover 12 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -43698,7 +43698,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Gold · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Türkis · Creme",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Türkis · Navy",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Mentale Selbstverteidigung · Cover 13 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -43742,20 +43874,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43786,20 +43918,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43830,20 +43962,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -43874,51 +44006,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 14",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "titel": "Mentale Selbstverteidigung · Cover 14 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -43962,20 +44050,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44006,20 +44094,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44050,64 +44138,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 15",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44138,7 +44182,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "titel": "Mentale Selbstverteidigung · Cover 15 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -44182,20 +44226,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Gold · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44226,20 +44270,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44270,64 +44314,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 16",
-    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Türkis · Navy",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44358,7 +44358,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "titel": "Mentale Selbstverteidigung · Cover 16 · Gold · Dunkel",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -44402,7 +44402,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 01",
+    "titel": "Die 7 Stufen · Cover 01 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -44446,20 +44578,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 01",
+    "titel": "Die 7 Stufen · Cover 02 · Gold · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44490,20 +44622,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 01",
+    "titel": "Die 7 Stufen · Cover 02 · Türkis · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44534,64 +44666,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 01",
-    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 02",
+    "titel": "Die 7 Stufen · Cover 02 · Türkis · Navy",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44622,7 +44710,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 02",
+    "titel": "Die 7 Stufen · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -44666,20 +44754,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 02",
+    "titel": "Die 7 Stufen · Cover 03 · Gold · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44710,20 +44798,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 02",
+    "titel": "Die 7 Stufen · Cover 03 · Türkis · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44754,7 +44842,51 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 03",
+    "titel": "Die 7 Stufen · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -44798,20 +44930,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 03",
+    "titel": "Die 7 Stufen · Cover 04 · Gold · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44842,20 +44974,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 03",
+    "titel": "Die 7 Stufen · Cover 04 · Türkis · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44886,20 +45018,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 03",
+    "titel": "Die 7 Stufen · Cover 04 · Türkis · Navy",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -44930,51 +45062,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 04",
-    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 04",
+    "titel": "Die 7 Stufen · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -45018,20 +45106,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 04",
+    "titel": "Die 7 Stufen · Cover 05 · Gold · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45062,20 +45150,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 04",
+    "titel": "Die 7 Stufen · Cover 05 · Türkis · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45106,64 +45194,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 05",
-    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 05",
+    "titel": "Die 7 Stufen · Cover 05 · Türkis · Navy",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45194,7 +45238,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 05",
+    "titel": "Die 7 Stufen · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -45238,20 +45282,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 05",
+    "titel": "Die 7 Stufen · Cover 06 · Gold · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45282,20 +45326,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 06",
+    "titel": "Die 7 Stufen · Cover 06 · Türkis · Creme",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45326,20 +45370,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 06",
+    "titel": "Die 7 Stufen · Cover 06 · Türkis · Navy",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45370,51 +45414,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 06",
-    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 06",
+    "titel": "Die 7 Stufen · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -45458,7 +45458,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 07",
+    "titel": "Die 7 Stufen · Cover 07 · Gold · Creme",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 07 · Türkis · Creme",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 07 · Türkis · Navy",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Die 7 Stufen · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -45502,20 +45634,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 07",
-    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "titel": "Vertiefungen · Cover 01 · Gold · Creme",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45546,20 +45678,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 07",
-    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "titel": "Vertiefungen · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45590,20 +45722,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Die 7 Stufen · Cover 07",
-    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "titel": "Vertiefungen · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45634,7 +45766,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 01",
+    "titel": "Vertiefungen · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -45678,20 +45810,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 01",
+    "titel": "Vertiefungen · Cover 02 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45722,20 +45854,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 01",
+    "titel": "Vertiefungen · Cover 02 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45766,20 +45898,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 01",
+    "titel": "Vertiefungen · Cover 02 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45810,51 +45942,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 02",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 02",
+    "titel": "Vertiefungen · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -45898,20 +45986,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 02",
+    "titel": "Vertiefungen · Cover 03 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45942,20 +46030,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 02",
+    "titel": "Vertiefungen · Cover 03 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -45986,20 +46074,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 03",
+    "titel": "Vertiefungen · Cover 03 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46030,51 +46118,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 03",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 03",
+    "titel": "Vertiefungen · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -46118,20 +46162,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 03",
+    "titel": "Vertiefungen · Cover 04 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46162,20 +46206,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 04",
+    "titel": "Vertiefungen · Cover 04 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46206,20 +46250,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 04",
+    "titel": "Vertiefungen · Cover 04 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46250,51 +46294,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 04",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 04",
+    "titel": "Vertiefungen · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -46338,7 +46338,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 05",
+    "titel": "Vertiefungen · Cover 05 · Gold · Creme",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 05 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 05 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -46382,20 +46514,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 05",
+    "titel": "Vertiefungen · Cover 06 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46426,20 +46558,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 05",
+    "titel": "Vertiefungen · Cover 06 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46470,20 +46602,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 05",
+    "titel": "Vertiefungen · Cover 06 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46514,7 +46646,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 06",
+    "titel": "Vertiefungen · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -46558,20 +46690,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 06",
+    "titel": "Vertiefungen · Cover 07 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46602,20 +46734,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 06",
+    "titel": "Vertiefungen · Cover 07 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46646,64 +46778,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 06",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 07",
+    "titel": "Vertiefungen · Cover 07 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46734,7 +46822,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 07",
+    "titel": "Vertiefungen · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -46778,20 +46866,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 07",
+    "titel": "Vertiefungen · Cover 08 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46822,20 +46910,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 07",
+    "titel": "Vertiefungen · Cover 08 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46866,20 +46954,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 08",
+    "titel": "Vertiefungen · Cover 08 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -46910,51 +46998,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 08",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 08",
+    "titel": "Vertiefungen · Cover 08 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -46998,20 +47042,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 08",
+    "titel": "Vertiefungen · Cover 09 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47042,7 +47086,95 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 09",
+    "titel": "Vertiefungen · Cover 09 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 09 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 09 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -47086,20 +47218,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 09",
+    "titel": "Vertiefungen · Cover 10 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47130,20 +47262,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 09",
+    "titel": "Vertiefungen · Cover 10 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47174,64 +47306,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 09",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 10",
+    "titel": "Vertiefungen · Cover 10 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47262,7 +47350,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 10",
+    "titel": "Vertiefungen · Cover 10 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -47306,20 +47394,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 10",
+    "titel": "Vertiefungen · Cover 11 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47350,20 +47438,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 10",
+    "titel": "Vertiefungen · Cover 11 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47394,20 +47482,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 11",
+    "titel": "Vertiefungen · Cover 11 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47438,51 +47526,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 11",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 11",
+    "titel": "Vertiefungen · Cover 11 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -47526,20 +47570,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 11",
+    "titel": "Vertiefungen · Cover 12 · Gold · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47570,20 +47614,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 12",
+    "titel": "Vertiefungen · Cover 12 · Türkis · Creme",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47614,20 +47658,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 12",
+    "titel": "Vertiefungen · Cover 12 · Türkis · Navy",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47658,51 +47702,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 12",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 12",
+    "titel": "Vertiefungen · Cover 12 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -47746,7 +47746,139 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 13",
+    "titel": "Vertiefungen · Cover 13 · Gold · Creme",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 13 · Türkis · Creme",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 13 · Türkis · Navy",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Vertiefungen · Cover 13 · Gold · Dunkel",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -47790,20 +47922,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 13",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "titel": "Wissenschaft · Cover 01 · Gold · Creme",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47834,20 +47966,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 13",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "titel": "Wissenschaft · Cover 01 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47878,20 +48010,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Vertiefungen · Cover 13",
-    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "titel": "Wissenschaft · Cover 01 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -47922,7 +48054,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 01",
+    "titel": "Wissenschaft · Cover 01 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -47966,20 +48098,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 01",
+    "titel": "Wissenschaft · Cover 02 · Gold · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48010,20 +48142,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 01",
+    "titel": "Wissenschaft · Cover 02 · Türkis · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48054,20 +48186,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 01",
+    "titel": "Wissenschaft · Cover 02 · Türkis · Navy",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48098,51 +48230,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 02",
-    "unterKategorie": "Wissenschaft · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 02",
+    "titel": "Wissenschaft · Cover 02 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -48186,20 +48274,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 02",
+    "titel": "Wissenschaft · Cover 03 · Gold · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48230,20 +48318,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 02",
+    "titel": "Wissenschaft · Cover 03 · Türkis · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1.1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48274,7 +48362,51 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 03",
+    "titel": "Wissenschaft · Cover 03 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 03 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -48318,20 +48450,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 03",
+    "titel": "Wissenschaft · Cover 04 · Gold · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48362,20 +48494,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 03",
+    "titel": "Wissenschaft · Cover 04 · Türkis · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48406,20 +48538,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 03",
+    "titel": "Wissenschaft · Cover 04 · Türkis · Navy",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48450,51 +48582,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 04",
-    "unterKategorie": "Wissenschaft · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 04",
+    "titel": "Wissenschaft · Cover 04 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -48538,20 +48626,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 04",
+    "titel": "Wissenschaft · Cover 05 · Gold · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48582,20 +48670,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 04",
+    "titel": "Wissenschaft · Cover 05 · Türkis · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48626,20 +48714,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 05",
+    "titel": "Wissenschaft · Cover 05 · Türkis · Navy",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48670,51 +48758,7 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 05",
-    "unterKategorie": "Wissenschaft · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 05",
+    "titel": "Wissenschaft · Cover 05 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -48758,20 +48802,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 05",
+    "titel": "Wissenschaft · Cover 06 · Gold · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48802,7 +48846,95 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 06",
+    "titel": "Wissenschaft · Cover 06 · Türkis · Creme",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.7,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis-hell/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis-hell/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 06 · Türkis · Navy",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06-tuerkis.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "reels",
+    "titel": "Wissenschaft · Cover 06 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
@@ -48846,20 +48978,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 06",
+    "titel": "Wissenschaft · Cover 07 · Gold · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -48890,152 +49022,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 06",
+    "titel": "Wissenschaft · Cover 07 · Türkis · Creme",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis-hell/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis-hell/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis-hell/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis-hell/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis-hell/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis-hell/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 06",
-    "unterKategorie": "Wissenschaft · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 07",
-    "unterKategorie": "Wissenschaft · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07.zip",
-    "formate": [
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      },
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "2:3",
-        "w": 1080,
-        "h": 1620
-      },
-      {
-        "label": "16:9",
-        "w": 1920,
-        "h": 1080
-      }
-    ]
-  },
-  {
-    "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 07",
-    "unterKategorie": "Wissenschaft · Cover-Overlay",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-landscape-16x9.webp"
-    ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis-hell.zip",
     "formate": [
       {
         "label": "9:16",
@@ -49069,20 +49069,20 @@ const vorlagenAssets8: VorlagenAsset[] = [
 const vorlagenAssets9: VorlagenAsset[] = [
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 07",
+    "titel": "Wissenschaft · Cover 07 · Türkis · Navy",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
-    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis/preview-reel-9x16.webp",
     "slidePaths": [
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-4x5.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-1x1.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-pin-2x3.webp",
-      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-landscape-16x9.webp"
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis/preview-landscape-16x9.webp"
     ],
-    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07.zip",
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07-tuerkis.zip",
     "formate": [
       {
         "label": "9:16",
@@ -49113,7 +49113,7 @@ const vorlagenAssets9: VorlagenAsset[] = [
   },
   {
     "kategorie": "reels",
-    "titel": "Wissenschaft · Cover 07",
+    "titel": "Wissenschaft · Cover 07 · Gold · Dunkel",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
