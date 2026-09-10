@@ -6863,8 +6863,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-525.webp",
     "masse": {
       "label": "",
-      "w": 1640,
-      "h": 624
+      "w": 2160,
+      "h": 822
     }
   },
   {
@@ -6876,14 +6876,14 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "href": "/admin/vorlagen/datei/social/social-526.webp",
     "masse": {
       "label": "",
-      "w": 1640,
-      "h": 624
+      "w": 2160,
+      "h": 822
     }
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 16x9 hell",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 16x9 hell",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-527.webp",
     "href": "/admin/vorlagen/datei/social/social-527.webp",
@@ -6895,8 +6895,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 16x9 tuerkis hell",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 16x9 tuerkis hell",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-528.webp",
     "href": "/admin/vorlagen/datei/social/social-528.webp",
@@ -6908,8 +6908,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 16x9 tuerkis",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 16x9 tuerkis",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-529.webp",
     "href": "/admin/vorlagen/datei/social/social-529.webp",
@@ -6921,8 +6921,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 16x9",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 16x9",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-530.webp",
     "href": "/admin/vorlagen/datei/social/social-530.webp",
@@ -6934,8 +6934,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 1x1 hell",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 1x1 hell",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-531.webp",
     "href": "/admin/vorlagen/datei/social/social-531.webp",
@@ -6947,8 +6947,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 1x1 tuerkis hell",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 1x1 tuerkis hell",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-532.webp",
     "href": "/admin/vorlagen/datei/social/social-532.webp",
@@ -6960,8 +6960,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 1x1 tuerkis",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 1x1 tuerkis",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-533.webp",
     "href": "/admin/vorlagen/datei/social/social-533.webp",
@@ -6973,8 +6973,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 1x1",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 1x1",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-534.webp",
     "href": "/admin/vorlagen/datei/social/social-534.webp",
@@ -6986,11 +6986,219 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Instagram Story 2x3 hell",
-    "unterKategorie": "Instagram",
+    "titel": "Hintergrund 4x5 hell",
+    "unterKategorie": "hintergrund",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-535.webp",
     "href": "/admin/vorlagen/datei/social/social-535.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Hintergrund 4x5 tuerkis hell",
+    "unterKategorie": "hintergrund",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-536.webp",
+    "href": "/admin/vorlagen/datei/social/social-536.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Hintergrund 4x5 tuerkis",
+    "unterKategorie": "hintergrund",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-537.webp",
+    "href": "/admin/vorlagen/datei/social/social-537.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Hintergrund 4x5",
+    "unterKategorie": "hintergrund",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-538.webp",
+    "href": "/admin/vorlagen/datei/social/social-538.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Hintergrund 9x16 hell",
+    "unterKategorie": "hintergrund",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-539.webp",
+    "href": "/admin/vorlagen/datei/social/social-539.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Hintergrund 9x16 tuerkis hell",
+    "unterKategorie": "hintergrund",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-540.webp",
+    "href": "/admin/vorlagen/datei/social/social-540.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Hintergrund 9x16 tuerkis",
+    "unterKategorie": "hintergrund",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-541.webp",
+    "href": "/admin/vorlagen/datei/social/social-541.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Hintergrund 9x16",
+    "unterKategorie": "hintergrund",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-542.webp",
+    "href": "/admin/vorlagen/datei/social/social-542.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-543.webp",
+    "href": "/admin/vorlagen/datei/social/social-543.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9 tuerkis hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-544.webp",
+    "href": "/admin/vorlagen/datei/social/social-544.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9 tuerkis",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-545.webp",
+    "href": "/admin/vorlagen/datei/social/social-545.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 16x9",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-546.webp",
+    "href": "/admin/vorlagen/datei/social/social-546.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-547.webp",
+    "href": "/admin/vorlagen/datei/social/social-547.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1 tuerkis hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-548.webp",
+    "href": "/admin/vorlagen/datei/social/social-548.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1 tuerkis",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-549.webp",
+    "href": "/admin/vorlagen/datei/social/social-549.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 1x1",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-550.webp",
+    "href": "/admin/vorlagen/datei/social/social-550.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Instagram Story 2x3 hell",
+    "unterKategorie": "Instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-551.webp",
+    "href": "/admin/vorlagen/datei/social/social-551.webp",
     "masse": {
       "label": "2:3",
       "w": 1000,
@@ -7002,8 +7210,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 2x3 tuerkis hell",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-536.webp",
-    "href": "/admin/vorlagen/datei/social/social-536.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-552.webp",
+    "href": "/admin/vorlagen/datei/social/social-552.webp",
     "masse": {
       "label": "2:3",
       "w": 1000,
@@ -7015,8 +7223,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 2x3 tuerkis",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-537.webp",
-    "href": "/admin/vorlagen/datei/social/social-537.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-553.webp",
+    "href": "/admin/vorlagen/datei/social/social-553.webp",
     "masse": {
       "label": "2:3",
       "w": 1000,
@@ -7028,8 +7236,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 2x3",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-538.webp",
-    "href": "/admin/vorlagen/datei/social/social-538.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-554.webp",
+    "href": "/admin/vorlagen/datei/social/social-554.webp",
     "masse": {
       "label": "2:3",
       "w": 1000,
@@ -7041,8 +7249,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 4x5 hell",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-539.webp",
-    "href": "/admin/vorlagen/datei/social/social-539.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-555.webp",
+    "href": "/admin/vorlagen/datei/social/social-555.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -7054,8 +7262,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 4x5 tuerkis hell",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-540.webp",
-    "href": "/admin/vorlagen/datei/social/social-540.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-556.webp",
+    "href": "/admin/vorlagen/datei/social/social-556.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -7067,8 +7275,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 4x5 tuerkis",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-541.webp",
-    "href": "/admin/vorlagen/datei/social/social-541.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-557.webp",
+    "href": "/admin/vorlagen/datei/social/social-557.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -7080,8 +7288,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 4x5",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-542.webp",
-    "href": "/admin/vorlagen/datei/social/social-542.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-558.webp",
+    "href": "/admin/vorlagen/datei/social/social-558.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -7093,8 +7301,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 9x16 hell",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-543.webp",
-    "href": "/admin/vorlagen/datei/social/social-543.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-559.webp",
+    "href": "/admin/vorlagen/datei/social/social-559.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7106,8 +7314,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 9x16 tuerkis hell",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-544.webp",
-    "href": "/admin/vorlagen/datei/social/social-544.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-560.webp",
+    "href": "/admin/vorlagen/datei/social/social-560.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7119,8 +7327,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 9x16 tuerkis",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-545.webp",
-    "href": "/admin/vorlagen/datei/social/social-545.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-561.webp",
+    "href": "/admin/vorlagen/datei/social/social-561.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7132,8 +7340,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story 9x16",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-546.webp",
-    "href": "/admin/vorlagen/datei/social/social-546.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-562.webp",
+    "href": "/admin/vorlagen/datei/social/social-562.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7145,8 +7353,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story Logo hell",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-547.webp",
-    "href": "/admin/vorlagen/datei/social/social-547.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-563.webp",
+    "href": "/admin/vorlagen/datei/social/social-563.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7158,8 +7366,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story Logo",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-548.webp",
-    "href": "/admin/vorlagen/datei/social/social-548.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-564.webp",
+    "href": "/admin/vorlagen/datei/social/social-564.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7171,8 +7379,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story hell",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-549.webp",
-    "href": "/admin/vorlagen/datei/social/social-549.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-565.webp",
+    "href": "/admin/vorlagen/datei/social/social-565.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7184,8 +7392,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Instagram Story",
     "unterKategorie": "Instagram",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-550.webp",
-    "href": "/admin/vorlagen/datei/social/social-550.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-566.webp",
+    "href": "/admin/vorlagen/datei/social/social-566.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -7197,8 +7405,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "LinkedIn Banner hell",
     "unterKategorie": "LinkedIn",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-551.webp",
-    "href": "/admin/vorlagen/datei/social/social-551.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-567.webp",
+    "href": "/admin/vorlagen/datei/social/social-567.webp",
     "masse": {
       "label": "4:1",
       "w": 2160,
@@ -7210,8 +7418,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "LinkedIn Banner",
     "unterKategorie": "LinkedIn",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-552.webp",
-    "href": "/admin/vorlagen/datei/social/social-552.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-568.webp",
+    "href": "/admin/vorlagen/datei/social/social-568.webp",
     "masse": {
       "label": "4:1",
       "w": 2160,
@@ -7223,8 +7431,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Messenger Kanalbild hell",
     "unterKategorie": "Messenger",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-553.webp",
-    "href": "/admin/vorlagen/datei/social/social-553.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-569.webp",
+    "href": "/admin/vorlagen/datei/social/social-569.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7236,8 +7444,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Messenger Kanalbild tuerkis hell",
     "unterKategorie": "Messenger",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-554.webp",
-    "href": "/admin/vorlagen/datei/social/social-554.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-570.webp",
+    "href": "/admin/vorlagen/datei/social/social-570.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7249,8 +7457,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Messenger Kanalbild tuerkis",
     "unterKategorie": "Messenger",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-555.webp",
-    "href": "/admin/vorlagen/datei/social/social-555.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-571.webp",
+    "href": "/admin/vorlagen/datei/social/social-571.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7262,8 +7470,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Messenger Kanalbild",
     "unterKategorie": "Messenger",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-556.webp",
-    "href": "/admin/vorlagen/datei/social/social-556.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-572.webp",
+    "href": "/admin/vorlagen/datei/social/social-572.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7272,11 +7480,1025 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
+    "titel": "Personal 16x9 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-573.webp",
+    "href": "/admin/vorlagen/datei/social/social-573.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 16x9 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-574.webp",
+    "href": "/admin/vorlagen/datei/social/social-574.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 16x9 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-575.webp",
+    "href": "/admin/vorlagen/datei/social/social-575.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 16x9",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-576.webp",
+    "href": "/admin/vorlagen/datei/social/social-576.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 1x1 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-577.webp",
+    "href": "/admin/vorlagen/datei/social/social-577.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 1x1 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-578.webp",
+    "href": "/admin/vorlagen/datei/social/social-578.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 1x1 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-579.webp",
+    "href": "/admin/vorlagen/datei/social/social-579.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 1x1",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-580.webp",
+    "href": "/admin/vorlagen/datei/social/social-580.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 4x5 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-581.webp",
+    "href": "/admin/vorlagen/datei/social/social-581.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 4x5 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-582.webp",
+    "href": "/admin/vorlagen/datei/social/social-582.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 4x5 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-583.webp",
+    "href": "/admin/vorlagen/datei/social/social-583.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 4x5",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-584.webp",
+    "href": "/admin/vorlagen/datei/social/social-584.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 9x16 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-585.webp",
+    "href": "/admin/vorlagen/datei/social/social-585.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 9x16 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-586.webp",
+    "href": "/admin/vorlagen/datei/social/social-586.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 9x16 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-587.webp",
+    "href": "/admin/vorlagen/datei/social/social-587.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal 9x16",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-588.webp",
+    "href": "/admin/vorlagen/datei/social/social-588.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 16x9 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-589.webp",
+    "href": "/admin/vorlagen/datei/social/social-589.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 16x9 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-590.webp",
+    "href": "/admin/vorlagen/datei/social/social-590.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 16x9 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-591.webp",
+    "href": "/admin/vorlagen/datei/social/social-591.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 16x9",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-592.webp",
+    "href": "/admin/vorlagen/datei/social/social-592.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 1x1 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-593.webp",
+    "href": "/admin/vorlagen/datei/social/social-593.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 1x1 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-594.webp",
+    "href": "/admin/vorlagen/datei/social/social-594.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 1x1 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-595.webp",
+    "href": "/admin/vorlagen/datei/social/social-595.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 1x1",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-596.webp",
+    "href": "/admin/vorlagen/datei/social/social-596.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 4x5 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-597.webp",
+    "href": "/admin/vorlagen/datei/social/social-597.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 4x5 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-598.webp",
+    "href": "/admin/vorlagen/datei/social/social-598.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 4x5 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-599.webp",
+    "href": "/admin/vorlagen/datei/social/social-599.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 4x5",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-600.webp",
+    "href": "/admin/vorlagen/datei/social/social-600.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 9x16 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-601.webp",
+    "href": "/admin/vorlagen/datei/social/social-601.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 9x16 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-602.webp",
+    "href": "/admin/vorlagen/datei/social/social-602.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 9x16 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-603.webp",
+    "href": "/admin/vorlagen/datei/social/social-603.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain 9x16",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-604.webp",
+    "href": "/admin/vorlagen/datei/social/social-604.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 16x9 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-605.webp",
+    "href": "/admin/vorlagen/datei/social/social-605.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 16x9 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-606.webp",
+    "href": "/admin/vorlagen/datei/social/social-606.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 16x9 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-607.webp",
+    "href": "/admin/vorlagen/datei/social/social-607.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 16x9",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-608.webp",
+    "href": "/admin/vorlagen/datei/social/social-608.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 1x1 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-609.webp",
+    "href": "/admin/vorlagen/datei/social/social-609.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 1x1 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-610.webp",
+    "href": "/admin/vorlagen/datei/social/social-610.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 1x1 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-611.webp",
+    "href": "/admin/vorlagen/datei/social/social-611.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 1x1",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-612.webp",
+    "href": "/admin/vorlagen/datei/social/social-612.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 4x5 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-613.webp",
+    "href": "/admin/vorlagen/datei/social/social-613.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 4x5 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-614.webp",
+    "href": "/admin/vorlagen/datei/social/social-614.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 4x5 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-615.webp",
+    "href": "/admin/vorlagen/datei/social/social-615.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 4x5",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-616.webp",
+    "href": "/admin/vorlagen/datei/social/social-616.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 9x16 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-617.webp",
+    "href": "/admin/vorlagen/datei/social/social-617.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 9x16 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-618.webp",
+    "href": "/admin/vorlagen/datei/social/social-618.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 9x16 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-619.webp",
+    "href": "/admin/vorlagen/datei/social/social-619.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Brain Logo 9x16",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-620.webp",
+    "href": "/admin/vorlagen/datei/social/social-620.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 16x9 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-621.webp",
+    "href": "/admin/vorlagen/datei/social/social-621.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 16x9 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-622.webp",
+    "href": "/admin/vorlagen/datei/social/social-622.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 16x9 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-623.webp",
+    "href": "/admin/vorlagen/datei/social/social-623.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 16x9",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-624.webp",
+    "href": "/admin/vorlagen/datei/social/social-624.webp",
+    "masse": {
+      "label": "16:9",
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 1x1 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-625.webp",
+    "href": "/admin/vorlagen/datei/social/social-625.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 1x1 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-626.webp",
+    "href": "/admin/vorlagen/datei/social/social-626.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 1x1 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-627.webp",
+    "href": "/admin/vorlagen/datei/social/social-627.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 1x1",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-628.webp",
+    "href": "/admin/vorlagen/datei/social/social-628.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 4x5 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-629.webp",
+    "href": "/admin/vorlagen/datei/social/social-629.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 4x5 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-630.webp",
+    "href": "/admin/vorlagen/datei/social/social-630.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 4x5 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-631.webp",
+    "href": "/admin/vorlagen/datei/social/social-631.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 4x5",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-632.webp",
+    "href": "/admin/vorlagen/datei/social/social-632.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 9x16 hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-633.webp",
+    "href": "/admin/vorlagen/datei/social/social-633.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 9x16 tuerkis hell",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-634.webp",
+    "href": "/admin/vorlagen/datei/social/social-634.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 9x16 tuerkis",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-635.webp",
+    "href": "/admin/vorlagen/datei/social/social-635.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Personal Logo 9x16",
+    "unterKategorie": "personal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-636.webp",
+    "href": "/admin/vorlagen/datei/social/social-636.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "portrait feed 4x5 zentriert",
+    "unterKategorie": "portrait instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-637.webp",
+    "href": "/admin/vorlagen/datei/social/social-637.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "portrait original 1080x1350",
+    "unterKategorie": "portrait instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-638.webp",
+    "href": "/admin/vorlagen/datei/social/social-638.webp",
+    "masse": {
+      "label": "4:5",
+      "w": 1080,
+      "h": 1350
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "portrait post 1x1 zentriert",
+    "unterKategorie": "portrait instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-639.webp",
+    "href": "/admin/vorlagen/datei/social/social-639.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "portrait story 9x16 zentriert",
+    "unterKategorie": "portrait instagram",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-640.webp",
+    "href": "/admin/vorlagen/datei/social/social-640.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Quadrat hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-641.webp",
+    "href": "/admin/vorlagen/datei/social/social-641.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Quadrat tuerkis hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-642.webp",
+    "href": "/admin/vorlagen/datei/social/social-642.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Quadrat tuerkis",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-643.webp",
+    "href": "/admin/vorlagen/datei/social/social-643.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Quadrat",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-644.webp",
+    "href": "/admin/vorlagen/datei/social/social-644.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Rund hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-645.webp",
+    "href": "/admin/vorlagen/datei/social/social-645.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Rund tuerkis hell",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-646.webp",
+    "href": "/admin/vorlagen/datei/social/social-646.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Rund tuerkis",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-647.webp",
+    "href": "/admin/vorlagen/datei/social/social-647.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Icon Rund",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-648.webp",
+    "href": "/admin/vorlagen/datei/social/social-648.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1080,
+      "h": 1080
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Transparent tuerkis",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-649.webp",
+    "href": "/admin/vorlagen/datei/social/social-649.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1600,
+      "h": 1600
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Gehirn Transparent",
+    "unterKategorie": "Profil & Kanal",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-650.webp",
+    "href": "/admin/vorlagen/datei/social/social-650.webp",
+    "masse": {
+      "label": "1:1",
+      "w": 1600,
+      "h": 1600
+    }
+  },
+  {
+    "kategorie": "social",
     "titel": "Kanalbild Quadrat hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-557.webp",
-    "href": "/admin/vorlagen/datei/social/social-557.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-651.webp",
+    "href": "/admin/vorlagen/datei/social/social-651.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7288,8 +8510,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Kanalbild Quadrat tuerkis hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-558.webp",
-    "href": "/admin/vorlagen/datei/social/social-558.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-652.webp",
+    "href": "/admin/vorlagen/datei/social/social-652.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7301,8 +8523,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Kanalbild Quadrat tuerkis",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-559.webp",
-    "href": "/admin/vorlagen/datei/social/social-559.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-653.webp",
+    "href": "/admin/vorlagen/datei/social/social-653.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7314,8 +8536,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Kanalbild Quadrat",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-560.webp",
-    "href": "/admin/vorlagen/datei/social/social-560.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-654.webp",
+    "href": "/admin/vorlagen/datei/social/social-654.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7327,8 +8549,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Quadrat hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-561.webp",
-    "href": "/admin/vorlagen/datei/social/social-561.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-655.webp",
+    "href": "/admin/vorlagen/datei/social/social-655.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7340,8 +8562,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Quadrat tuerkis hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-562.webp",
-    "href": "/admin/vorlagen/datei/social/social-562.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-656.webp",
+    "href": "/admin/vorlagen/datei/social/social-656.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7353,8 +8575,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Quadrat tuerkis",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-563.webp",
-    "href": "/admin/vorlagen/datei/social/social-563.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-657.webp",
+    "href": "/admin/vorlagen/datei/social/social-657.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7366,8 +8588,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Quadrat",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-564.webp",
-    "href": "/admin/vorlagen/datei/social/social-564.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-658.webp",
+    "href": "/admin/vorlagen/datei/social/social-658.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7379,8 +8601,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund Emblem hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-565.webp",
-    "href": "/admin/vorlagen/datei/social/social-565.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-659.webp",
+    "href": "/admin/vorlagen/datei/social/social-659.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7392,8 +8614,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund Emblem tuerkis hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-566.webp",
-    "href": "/admin/vorlagen/datei/social/social-566.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-660.webp",
+    "href": "/admin/vorlagen/datei/social/social-660.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7405,8 +8627,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund Emblem tuerkis",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-567.webp",
-    "href": "/admin/vorlagen/datei/social/social-567.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-661.webp",
+    "href": "/admin/vorlagen/datei/social/social-661.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7418,8 +8640,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund Emblem",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-568.webp",
-    "href": "/admin/vorlagen/datei/social/social-568.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-662.webp",
+    "href": "/admin/vorlagen/datei/social/social-662.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7431,8 +8653,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-569.webp",
-    "href": "/admin/vorlagen/datei/social/social-569.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-663.webp",
+    "href": "/admin/vorlagen/datei/social/social-663.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7444,8 +8666,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund tuerkis hell",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-570.webp",
-    "href": "/admin/vorlagen/datei/social/social-570.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-664.webp",
+    "href": "/admin/vorlagen/datei/social/social-664.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7457,8 +8679,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund tuerkis",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-571.webp",
-    "href": "/admin/vorlagen/datei/social/social-571.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-665.webp",
+    "href": "/admin/vorlagen/datei/social/social-665.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7470,8 +8692,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "Profilbild Rund",
     "unterKategorie": "Profil & Kanal",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-572.webp",
-    "href": "/admin/vorlagen/datei/social/social-572.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-666.webp",
+    "href": "/admin/vorlagen/datei/social/social-666.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -7480,11 +8702,37 @@ const vorlagenAssets2: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
+    "titel": "buchcover mockup 3d",
+    "unterKategorie": "quellen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-667.webp",
+    "href": "/admin/vorlagen/datei/social/social-667.webp",
+    "masse": {
+      "label": "3:4",
+      "w": 2160,
+      "h": 2880
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "heiko portrait freigestellt",
+    "unterKategorie": "quellen",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-668.webp",
+    "href": "/admin/vorlagen/datei/social/social-668.webp",
+    "masse": {
+      "label": "3:4",
+      "w": 2160,
+      "h": 2880
+    }
+  },
+  {
+    "kategorie": "social",
     "titel": "01 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-573.webp",
-    "href": "/admin/vorlagen/datei/social/social-573.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-669.webp",
+    "href": "/admin/vorlagen/datei/social/social-669.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7496,8 +8744,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-574.webp",
-    "href": "/admin/vorlagen/datei/social/social-574.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-670.webp",
+    "href": "/admin/vorlagen/datei/social/social-670.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7509,8 +8757,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-575.webp",
-    "href": "/admin/vorlagen/datei/social/social-575.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-671.webp",
+    "href": "/admin/vorlagen/datei/social/social-671.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7522,8 +8770,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-576.webp",
-    "href": "/admin/vorlagen/datei/social/social-576.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-672.webp",
+    "href": "/admin/vorlagen/datei/social/social-672.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7535,8 +8783,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-577.webp",
-    "href": "/admin/vorlagen/datei/social/social-577.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-673.webp",
+    "href": "/admin/vorlagen/datei/social/social-673.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7548,8 +8796,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-578.webp",
-    "href": "/admin/vorlagen/datei/social/social-578.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-674.webp",
+    "href": "/admin/vorlagen/datei/social/social-674.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7561,8 +8809,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-579.webp",
-    "href": "/admin/vorlagen/datei/social/social-579.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-675.webp",
+    "href": "/admin/vorlagen/datei/social/social-675.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7574,8 +8822,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-580.webp",
-    "href": "/admin/vorlagen/datei/social/social-580.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-676.webp",
+    "href": "/admin/vorlagen/datei/social/social-676.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7587,8 +8835,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-581.webp",
-    "href": "/admin/vorlagen/datei/social/social-581.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-677.webp",
+    "href": "/admin/vorlagen/datei/social/social-677.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7600,8 +8848,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-582.webp",
-    "href": "/admin/vorlagen/datei/social/social-582.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-678.webp",
+    "href": "/admin/vorlagen/datei/social/social-678.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7613,8 +8861,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-583.webp",
-    "href": "/admin/vorlagen/datei/social/social-583.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-679.webp",
+    "href": "/admin/vorlagen/datei/social/social-679.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7626,8 +8874,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-584.webp",
-    "href": "/admin/vorlagen/datei/social/social-584.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-680.webp",
+    "href": "/admin/vorlagen/datei/social/social-680.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7639,8 +8887,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-585.webp",
-    "href": "/admin/vorlagen/datei/social/social-585.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-681.webp",
+    "href": "/admin/vorlagen/datei/social/social-681.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7652,8 +8900,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-586.webp",
-    "href": "/admin/vorlagen/datei/social/social-586.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-682.webp",
+    "href": "/admin/vorlagen/datei/social/social-682.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7665,8 +8913,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-587.webp",
-    "href": "/admin/vorlagen/datei/social/social-587.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-683.webp",
+    "href": "/admin/vorlagen/datei/social/social-683.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7678,8 +8926,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-588.webp",
-    "href": "/admin/vorlagen/datei/social/social-588.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-684.webp",
+    "href": "/admin/vorlagen/datei/social/social-684.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7691,8 +8939,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-589.webp",
-    "href": "/admin/vorlagen/datei/social/social-589.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-685.webp",
+    "href": "/admin/vorlagen/datei/social/social-685.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7704,8 +8952,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-590.webp",
-    "href": "/admin/vorlagen/datei/social/social-590.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-686.webp",
+    "href": "/admin/vorlagen/datei/social/social-686.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7717,8 +8965,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-591.webp",
-    "href": "/admin/vorlagen/datei/social/social-591.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-687.webp",
+    "href": "/admin/vorlagen/datei/social/social-687.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7730,8 +8978,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-592.webp",
-    "href": "/admin/vorlagen/datei/social/social-592.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-688.webp",
+    "href": "/admin/vorlagen/datei/social/social-688.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7743,8 +8991,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-593.webp",
-    "href": "/admin/vorlagen/datei/social/social-593.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-689.webp",
+    "href": "/admin/vorlagen/datei/social/social-689.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7756,8 +9004,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-594.webp",
-    "href": "/admin/vorlagen/datei/social/social-594.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-690.webp",
+    "href": "/admin/vorlagen/datei/social/social-690.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7769,8 +9017,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-595.webp",
-    "href": "/admin/vorlagen/datei/social/social-595.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-691.webp",
+    "href": "/admin/vorlagen/datei/social/social-691.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7782,8 +9030,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-596.webp",
-    "href": "/admin/vorlagen/datei/social/social-596.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-692.webp",
+    "href": "/admin/vorlagen/datei/social/social-692.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7795,8 +9043,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-597.webp",
-    "href": "/admin/vorlagen/datei/social/social-597.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-693.webp",
+    "href": "/admin/vorlagen/datei/social/social-693.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7808,8 +9056,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-598.webp",
-    "href": "/admin/vorlagen/datei/social/social-598.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-694.webp",
+    "href": "/admin/vorlagen/datei/social/social-694.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7821,8 +9069,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-599.webp",
-    "href": "/admin/vorlagen/datei/social/social-599.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-695.webp",
+    "href": "/admin/vorlagen/datei/social/social-695.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7834,8 +9082,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-600.webp",
-    "href": "/admin/vorlagen/datei/social/social-600.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-696.webp",
+    "href": "/admin/vorlagen/datei/social/social-696.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7847,8 +9095,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-601.webp",
-    "href": "/admin/vorlagen/datei/social/social-601.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-697.webp",
+    "href": "/admin/vorlagen/datei/social/social-697.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7860,8 +9108,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-602.webp",
-    "href": "/admin/vorlagen/datei/social/social-602.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-698.webp",
+    "href": "/admin/vorlagen/datei/social/social-698.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7873,8 +9121,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-603.webp",
-    "href": "/admin/vorlagen/datei/social/social-603.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-699.webp",
+    "href": "/admin/vorlagen/datei/social/social-699.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7886,8 +9134,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-604.webp",
-    "href": "/admin/vorlagen/datei/social/social-604.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-700.webp",
+    "href": "/admin/vorlagen/datei/social/social-700.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7899,8 +9147,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-605.webp",
-    "href": "/admin/vorlagen/datei/social/social-605.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-701.webp",
+    "href": "/admin/vorlagen/datei/social/social-701.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7912,8 +9160,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-606.webp",
-    "href": "/admin/vorlagen/datei/social/social-606.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-702.webp",
+    "href": "/admin/vorlagen/datei/social/social-702.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7925,8 +9173,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-607.webp",
-    "href": "/admin/vorlagen/datei/social/social-607.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-703.webp",
+    "href": "/admin/vorlagen/datei/social/social-703.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7938,8 +9186,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-608.webp",
-    "href": "/admin/vorlagen/datei/social/social-608.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-704.webp",
+    "href": "/admin/vorlagen/datei/social/social-704.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7951,8 +9199,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-609.webp",
-    "href": "/admin/vorlagen/datei/social/social-609.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-705.webp",
+    "href": "/admin/vorlagen/datei/social/social-705.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7964,8 +9212,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-610.webp",
-    "href": "/admin/vorlagen/datei/social/social-610.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-706.webp",
+    "href": "/admin/vorlagen/datei/social/social-706.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7977,8 +9225,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-611.webp",
-    "href": "/admin/vorlagen/datei/social/social-611.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-707.webp",
+    "href": "/admin/vorlagen/datei/social/social-707.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -7990,8 +9238,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-612.webp",
-    "href": "/admin/vorlagen/datei/social/social-612.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-708.webp",
+    "href": "/admin/vorlagen/datei/social/social-708.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8003,8 +9251,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-613.webp",
-    "href": "/admin/vorlagen/datei/social/social-613.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-709.webp",
+    "href": "/admin/vorlagen/datei/social/social-709.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8016,8 +9264,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-614.webp",
-    "href": "/admin/vorlagen/datei/social/social-614.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-710.webp",
+    "href": "/admin/vorlagen/datei/social/social-710.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8029,8 +9277,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-615.webp",
-    "href": "/admin/vorlagen/datei/social/social-615.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-711.webp",
+    "href": "/admin/vorlagen/datei/social/social-711.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8042,8 +9290,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-616.webp",
-    "href": "/admin/vorlagen/datei/social/social-616.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-712.webp",
+    "href": "/admin/vorlagen/datei/social/social-712.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8055,8 +9303,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-617.webp",
-    "href": "/admin/vorlagen/datei/social/social-617.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-713.webp",
+    "href": "/admin/vorlagen/datei/social/social-713.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8068,8 +9316,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-618.webp",
-    "href": "/admin/vorlagen/datei/social/social-618.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-714.webp",
+    "href": "/admin/vorlagen/datei/social/social-714.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8081,8 +9329,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-619.webp",
-    "href": "/admin/vorlagen/datei/social/social-619.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-715.webp",
+    "href": "/admin/vorlagen/datei/social/social-715.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8094,8 +9342,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-620.webp",
-    "href": "/admin/vorlagen/datei/social/social-620.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-716.webp",
+    "href": "/admin/vorlagen/datei/social/social-716.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8107,8 +9355,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-621.webp",
-    "href": "/admin/vorlagen/datei/social/social-621.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-717.webp",
+    "href": "/admin/vorlagen/datei/social/social-717.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8120,8 +9368,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-622.webp",
-    "href": "/admin/vorlagen/datei/social/social-622.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-718.webp",
+    "href": "/admin/vorlagen/datei/social/social-718.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8133,8 +9381,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-623.webp",
-    "href": "/admin/vorlagen/datei/social/social-623.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-719.webp",
+    "href": "/admin/vorlagen/datei/social/social-719.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8146,8 +9394,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-624.webp",
-    "href": "/admin/vorlagen/datei/social/social-624.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-720.webp",
+    "href": "/admin/vorlagen/datei/social/social-720.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8159,8 +9407,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-625.webp",
-    "href": "/admin/vorlagen/datei/social/social-625.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-721.webp",
+    "href": "/admin/vorlagen/datei/social/social-721.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8172,8 +9420,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-626.webp",
-    "href": "/admin/vorlagen/datei/social/social-626.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-722.webp",
+    "href": "/admin/vorlagen/datei/social/social-722.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8185,8 +9433,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-627.webp",
-    "href": "/admin/vorlagen/datei/social/social-627.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-723.webp",
+    "href": "/admin/vorlagen/datei/social/social-723.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8198,8 +9446,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-628.webp",
-    "href": "/admin/vorlagen/datei/social/social-628.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-724.webp",
+    "href": "/admin/vorlagen/datei/social/social-724.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8211,8 +9459,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-629.webp",
-    "href": "/admin/vorlagen/datei/social/social-629.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-725.webp",
+    "href": "/admin/vorlagen/datei/social/social-725.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8224,8 +9472,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund tuerkis hell · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-630.webp",
-    "href": "/admin/vorlagen/datei/social/social-630.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-726.webp",
+    "href": "/admin/vorlagen/datei/social/social-726.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8237,8 +9485,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund tuerkis · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-631.webp",
-    "href": "/admin/vorlagen/datei/social/social-631.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-727.webp",
+    "href": "/admin/vorlagen/datei/social/social-727.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8250,8 +9498,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund · 16:9",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-632.webp",
-    "href": "/admin/vorlagen/datei/social/social-632.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-728.webp",
+    "href": "/admin/vorlagen/datei/social/social-728.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -8263,8 +9511,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-633.webp",
-    "href": "/admin/vorlagen/datei/social/social-633.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-729.webp",
+    "href": "/admin/vorlagen/datei/social/social-729.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8276,8 +9524,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-634.webp",
-    "href": "/admin/vorlagen/datei/social/social-634.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-730.webp",
+    "href": "/admin/vorlagen/datei/social/social-730.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8289,8 +9537,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-635.webp",
-    "href": "/admin/vorlagen/datei/social/social-635.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-731.webp",
+    "href": "/admin/vorlagen/datei/social/social-731.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8302,8 +9550,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-636.webp",
-    "href": "/admin/vorlagen/datei/social/social-636.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-732.webp",
+    "href": "/admin/vorlagen/datei/social/social-732.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8315,8 +9563,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-637.webp",
-    "href": "/admin/vorlagen/datei/social/social-637.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-733.webp",
+    "href": "/admin/vorlagen/datei/social/social-733.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8328,8 +9576,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-638.webp",
-    "href": "/admin/vorlagen/datei/social/social-638.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-734.webp",
+    "href": "/admin/vorlagen/datei/social/social-734.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8341,8 +9589,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-639.webp",
-    "href": "/admin/vorlagen/datei/social/social-639.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-735.webp",
+    "href": "/admin/vorlagen/datei/social/social-735.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8354,8 +9602,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-640.webp",
-    "href": "/admin/vorlagen/datei/social/social-640.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-736.webp",
+    "href": "/admin/vorlagen/datei/social/social-736.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8367,8 +9615,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-641.webp",
-    "href": "/admin/vorlagen/datei/social/social-641.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-737.webp",
+    "href": "/admin/vorlagen/datei/social/social-737.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8380,8 +9628,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-642.webp",
-    "href": "/admin/vorlagen/datei/social/social-642.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-738.webp",
+    "href": "/admin/vorlagen/datei/social/social-738.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8393,8 +9641,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-643.webp",
-    "href": "/admin/vorlagen/datei/social/social-643.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-739.webp",
+    "href": "/admin/vorlagen/datei/social/social-739.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8406,8 +9654,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-644.webp",
-    "href": "/admin/vorlagen/datei/social/social-644.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-740.webp",
+    "href": "/admin/vorlagen/datei/social/social-740.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8419,8 +9667,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-645.webp",
-    "href": "/admin/vorlagen/datei/social/social-645.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-741.webp",
+    "href": "/admin/vorlagen/datei/social/social-741.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8432,8 +9680,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-646.webp",
-    "href": "/admin/vorlagen/datei/social/social-646.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-742.webp",
+    "href": "/admin/vorlagen/datei/social/social-742.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8445,8 +9693,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-647.webp",
-    "href": "/admin/vorlagen/datei/social/social-647.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-743.webp",
+    "href": "/admin/vorlagen/datei/social/social-743.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8458,8 +9706,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-648.webp",
-    "href": "/admin/vorlagen/datei/social/social-648.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-744.webp",
+    "href": "/admin/vorlagen/datei/social/social-744.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8471,8 +9719,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-649.webp",
-    "href": "/admin/vorlagen/datei/social/social-649.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-745.webp",
+    "href": "/admin/vorlagen/datei/social/social-745.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8484,8 +9732,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-650.webp",
-    "href": "/admin/vorlagen/datei/social/social-650.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-746.webp",
+    "href": "/admin/vorlagen/datei/social/social-746.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8497,8 +9745,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-651.webp",
-    "href": "/admin/vorlagen/datei/social/social-651.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-747.webp",
+    "href": "/admin/vorlagen/datei/social/social-747.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8510,8 +9758,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-652.webp",
-    "href": "/admin/vorlagen/datei/social/social-652.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-748.webp",
+    "href": "/admin/vorlagen/datei/social/social-748.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8523,8 +9771,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-653.webp",
-    "href": "/admin/vorlagen/datei/social/social-653.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-749.webp",
+    "href": "/admin/vorlagen/datei/social/social-749.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8536,21 +9784,24 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-654.webp",
-    "href": "/admin/vorlagen/datei/social/social-654.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-750.webp",
+    "href": "/admin/vorlagen/datei/social/social-750.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
       "h": 2160
     }
-  },
+  }
+];
+
+const vorlagenAssets3: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "06 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-655.webp",
-    "href": "/admin/vorlagen/datei/social/social-655.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-751.webp",
+    "href": "/admin/vorlagen/datei/social/social-751.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8562,8 +9813,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-656.webp",
-    "href": "/admin/vorlagen/datei/social/social-656.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-752.webp",
+    "href": "/admin/vorlagen/datei/social/social-752.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8575,8 +9826,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-657.webp",
-    "href": "/admin/vorlagen/datei/social/social-657.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-753.webp",
+    "href": "/admin/vorlagen/datei/social/social-753.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8588,8 +9839,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-658.webp",
-    "href": "/admin/vorlagen/datei/social/social-658.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-754.webp",
+    "href": "/admin/vorlagen/datei/social/social-754.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8601,8 +9852,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-659.webp",
-    "href": "/admin/vorlagen/datei/social/social-659.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-755.webp",
+    "href": "/admin/vorlagen/datei/social/social-755.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8614,8 +9865,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-660.webp",
-    "href": "/admin/vorlagen/datei/social/social-660.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-756.webp",
+    "href": "/admin/vorlagen/datei/social/social-756.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8627,8 +9878,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-661.webp",
-    "href": "/admin/vorlagen/datei/social/social-661.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-757.webp",
+    "href": "/admin/vorlagen/datei/social/social-757.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8640,8 +9891,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-662.webp",
-    "href": "/admin/vorlagen/datei/social/social-662.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-758.webp",
+    "href": "/admin/vorlagen/datei/social/social-758.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8653,8 +9904,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-663.webp",
-    "href": "/admin/vorlagen/datei/social/social-663.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-759.webp",
+    "href": "/admin/vorlagen/datei/social/social-759.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8666,8 +9917,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-664.webp",
-    "href": "/admin/vorlagen/datei/social/social-664.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-760.webp",
+    "href": "/admin/vorlagen/datei/social/social-760.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8679,8 +9930,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-665.webp",
-    "href": "/admin/vorlagen/datei/social/social-665.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-761.webp",
+    "href": "/admin/vorlagen/datei/social/social-761.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8692,8 +9943,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-666.webp",
-    "href": "/admin/vorlagen/datei/social/social-666.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-762.webp",
+    "href": "/admin/vorlagen/datei/social/social-762.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8705,8 +9956,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-667.webp",
-    "href": "/admin/vorlagen/datei/social/social-667.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-763.webp",
+    "href": "/admin/vorlagen/datei/social/social-763.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8718,8 +9969,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-668.webp",
-    "href": "/admin/vorlagen/datei/social/social-668.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-764.webp",
+    "href": "/admin/vorlagen/datei/social/social-764.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8731,8 +9982,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-669.webp",
-    "href": "/admin/vorlagen/datei/social/social-669.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-765.webp",
+    "href": "/admin/vorlagen/datei/social/social-765.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8744,8 +9995,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-670.webp",
-    "href": "/admin/vorlagen/datei/social/social-670.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-766.webp",
+    "href": "/admin/vorlagen/datei/social/social-766.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8757,8 +10008,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-671.webp",
-    "href": "/admin/vorlagen/datei/social/social-671.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-767.webp",
+    "href": "/admin/vorlagen/datei/social/social-767.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8770,8 +10021,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-672.webp",
-    "href": "/admin/vorlagen/datei/social/social-672.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-768.webp",
+    "href": "/admin/vorlagen/datei/social/social-768.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8783,8 +10034,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-673.webp",
-    "href": "/admin/vorlagen/datei/social/social-673.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-769.webp",
+    "href": "/admin/vorlagen/datei/social/social-769.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8796,8 +10047,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-674.webp",
-    "href": "/admin/vorlagen/datei/social/social-674.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-770.webp",
+    "href": "/admin/vorlagen/datei/social/social-770.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8809,8 +10060,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-675.webp",
-    "href": "/admin/vorlagen/datei/social/social-675.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-771.webp",
+    "href": "/admin/vorlagen/datei/social/social-771.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8822,8 +10073,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-676.webp",
-    "href": "/admin/vorlagen/datei/social/social-676.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-772.webp",
+    "href": "/admin/vorlagen/datei/social/social-772.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8835,8 +10086,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-677.webp",
-    "href": "/admin/vorlagen/datei/social/social-677.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-773.webp",
+    "href": "/admin/vorlagen/datei/social/social-773.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8848,8 +10099,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-678.webp",
-    "href": "/admin/vorlagen/datei/social/social-678.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-774.webp",
+    "href": "/admin/vorlagen/datei/social/social-774.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8861,8 +10112,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-679.webp",
-    "href": "/admin/vorlagen/datei/social/social-679.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-775.webp",
+    "href": "/admin/vorlagen/datei/social/social-775.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8874,8 +10125,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-680.webp",
-    "href": "/admin/vorlagen/datei/social/social-680.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-776.webp",
+    "href": "/admin/vorlagen/datei/social/social-776.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8887,8 +10138,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-681.webp",
-    "href": "/admin/vorlagen/datei/social/social-681.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-777.webp",
+    "href": "/admin/vorlagen/datei/social/social-777.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8900,8 +10151,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-682.webp",
-    "href": "/admin/vorlagen/datei/social/social-682.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-778.webp",
+    "href": "/admin/vorlagen/datei/social/social-778.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8913,8 +10164,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-683.webp",
-    "href": "/admin/vorlagen/datei/social/social-683.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-779.webp",
+    "href": "/admin/vorlagen/datei/social/social-779.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8926,8 +10177,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-684.webp",
-    "href": "/admin/vorlagen/datei/social/social-684.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-780.webp",
+    "href": "/admin/vorlagen/datei/social/social-780.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8939,8 +10190,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-685.webp",
-    "href": "/admin/vorlagen/datei/social/social-685.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-781.webp",
+    "href": "/admin/vorlagen/datei/social/social-781.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8952,8 +10203,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-686.webp",
-    "href": "/admin/vorlagen/datei/social/social-686.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-782.webp",
+    "href": "/admin/vorlagen/datei/social/social-782.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8965,8 +10216,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-687.webp",
-    "href": "/admin/vorlagen/datei/social/social-687.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-783.webp",
+    "href": "/admin/vorlagen/datei/social/social-783.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8978,8 +10229,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-688.webp",
-    "href": "/admin/vorlagen/datei/social/social-688.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-784.webp",
+    "href": "/admin/vorlagen/datei/social/social-784.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -8991,8 +10242,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-689.webp",
-    "href": "/admin/vorlagen/datei/social/social-689.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-785.webp",
+    "href": "/admin/vorlagen/datei/social/social-785.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -9004,8 +10255,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund tuerkis hell · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-690.webp",
-    "href": "/admin/vorlagen/datei/social/social-690.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-786.webp",
+    "href": "/admin/vorlagen/datei/social/social-786.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -9017,8 +10268,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund tuerkis · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-691.webp",
-    "href": "/admin/vorlagen/datei/social/social-691.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-787.webp",
+    "href": "/admin/vorlagen/datei/social/social-787.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -9030,8 +10281,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund · 1:1",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-692.webp",
-    "href": "/admin/vorlagen/datei/social/social-692.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-788.webp",
+    "href": "/admin/vorlagen/datei/social/social-788.webp",
     "masse": {
       "label": "1:1",
       "w": 2160,
@@ -9043,8 +10294,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-693.webp",
-    "href": "/admin/vorlagen/datei/social/social-693.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-789.webp",
+    "href": "/admin/vorlagen/datei/social/social-789.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9056,8 +10307,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-694.webp",
-    "href": "/admin/vorlagen/datei/social/social-694.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-790.webp",
+    "href": "/admin/vorlagen/datei/social/social-790.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9069,8 +10320,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-695.webp",
-    "href": "/admin/vorlagen/datei/social/social-695.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-791.webp",
+    "href": "/admin/vorlagen/datei/social/social-791.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9082,8 +10333,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-696.webp",
-    "href": "/admin/vorlagen/datei/social/social-696.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-792.webp",
+    "href": "/admin/vorlagen/datei/social/social-792.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9095,8 +10346,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-697.webp",
-    "href": "/admin/vorlagen/datei/social/social-697.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-793.webp",
+    "href": "/admin/vorlagen/datei/social/social-793.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9108,8 +10359,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-698.webp",
-    "href": "/admin/vorlagen/datei/social/social-698.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-794.webp",
+    "href": "/admin/vorlagen/datei/social/social-794.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9121,8 +10372,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-699.webp",
-    "href": "/admin/vorlagen/datei/social/social-699.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-795.webp",
+    "href": "/admin/vorlagen/datei/social/social-795.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9134,8 +10385,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-700.webp",
-    "href": "/admin/vorlagen/datei/social/social-700.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-796.webp",
+    "href": "/admin/vorlagen/datei/social/social-796.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9147,8 +10398,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-701.webp",
-    "href": "/admin/vorlagen/datei/social/social-701.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-797.webp",
+    "href": "/admin/vorlagen/datei/social/social-797.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9160,8 +10411,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-702.webp",
-    "href": "/admin/vorlagen/datei/social/social-702.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-798.webp",
+    "href": "/admin/vorlagen/datei/social/social-798.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9173,8 +10424,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-703.webp",
-    "href": "/admin/vorlagen/datei/social/social-703.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-799.webp",
+    "href": "/admin/vorlagen/datei/social/social-799.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9186,8 +10437,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-704.webp",
-    "href": "/admin/vorlagen/datei/social/social-704.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-800.webp",
+    "href": "/admin/vorlagen/datei/social/social-800.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9199,8 +10450,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-705.webp",
-    "href": "/admin/vorlagen/datei/social/social-705.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-801.webp",
+    "href": "/admin/vorlagen/datei/social/social-801.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9212,8 +10463,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-706.webp",
-    "href": "/admin/vorlagen/datei/social/social-706.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-802.webp",
+    "href": "/admin/vorlagen/datei/social/social-802.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9225,8 +10476,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-707.webp",
-    "href": "/admin/vorlagen/datei/social/social-707.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-803.webp",
+    "href": "/admin/vorlagen/datei/social/social-803.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9238,8 +10489,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-708.webp",
-    "href": "/admin/vorlagen/datei/social/social-708.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-804.webp",
+    "href": "/admin/vorlagen/datei/social/social-804.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9251,8 +10502,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-709.webp",
-    "href": "/admin/vorlagen/datei/social/social-709.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-805.webp",
+    "href": "/admin/vorlagen/datei/social/social-805.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9264,8 +10515,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-710.webp",
-    "href": "/admin/vorlagen/datei/social/social-710.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-806.webp",
+    "href": "/admin/vorlagen/datei/social/social-806.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9277,8 +10528,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-711.webp",
-    "href": "/admin/vorlagen/datei/social/social-711.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-807.webp",
+    "href": "/admin/vorlagen/datei/social/social-807.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9290,8 +10541,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-712.webp",
-    "href": "/admin/vorlagen/datei/social/social-712.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-808.webp",
+    "href": "/admin/vorlagen/datei/social/social-808.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9303,8 +10554,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-713.webp",
-    "href": "/admin/vorlagen/datei/social/social-713.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-809.webp",
+    "href": "/admin/vorlagen/datei/social/social-809.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9316,8 +10567,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-714.webp",
-    "href": "/admin/vorlagen/datei/social/social-714.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-810.webp",
+    "href": "/admin/vorlagen/datei/social/social-810.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9329,8 +10580,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-715.webp",
-    "href": "/admin/vorlagen/datei/social/social-715.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-811.webp",
+    "href": "/admin/vorlagen/datei/social/social-811.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9342,8 +10593,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-716.webp",
-    "href": "/admin/vorlagen/datei/social/social-716.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-812.webp",
+    "href": "/admin/vorlagen/datei/social/social-812.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9355,8 +10606,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-717.webp",
-    "href": "/admin/vorlagen/datei/social/social-717.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-813.webp",
+    "href": "/admin/vorlagen/datei/social/social-813.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9368,8 +10619,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-718.webp",
-    "href": "/admin/vorlagen/datei/social/social-718.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-814.webp",
+    "href": "/admin/vorlagen/datei/social/social-814.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9381,8 +10632,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-719.webp",
-    "href": "/admin/vorlagen/datei/social/social-719.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-815.webp",
+    "href": "/admin/vorlagen/datei/social/social-815.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9394,8 +10645,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-720.webp",
-    "href": "/admin/vorlagen/datei/social/social-720.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-816.webp",
+    "href": "/admin/vorlagen/datei/social/social-816.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9407,8 +10658,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-721.webp",
-    "href": "/admin/vorlagen/datei/social/social-721.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-817.webp",
+    "href": "/admin/vorlagen/datei/social/social-817.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9420,8 +10671,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-722.webp",
-    "href": "/admin/vorlagen/datei/social/social-722.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-818.webp",
+    "href": "/admin/vorlagen/datei/social/social-818.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9433,8 +10684,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-723.webp",
-    "href": "/admin/vorlagen/datei/social/social-723.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-819.webp",
+    "href": "/admin/vorlagen/datei/social/social-819.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9446,8 +10697,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "01 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-724.webp",
-    "href": "/admin/vorlagen/datei/social/social-724.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-820.webp",
+    "href": "/admin/vorlagen/datei/social/social-820.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9459,8 +10710,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-725.webp",
-    "href": "/admin/vorlagen/datei/social/social-725.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-821.webp",
+    "href": "/admin/vorlagen/datei/social/social-821.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9472,8 +10723,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-726.webp",
-    "href": "/admin/vorlagen/datei/social/social-726.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-822.webp",
+    "href": "/admin/vorlagen/datei/social/social-822.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9485,8 +10736,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-727.webp",
-    "href": "/admin/vorlagen/datei/social/social-727.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-823.webp",
+    "href": "/admin/vorlagen/datei/social/social-823.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9498,8 +10749,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "02 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-728.webp",
-    "href": "/admin/vorlagen/datei/social/social-728.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-824.webp",
+    "href": "/admin/vorlagen/datei/social/social-824.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9511,8 +10762,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-729.webp",
-    "href": "/admin/vorlagen/datei/social/social-729.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-825.webp",
+    "href": "/admin/vorlagen/datei/social/social-825.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9524,8 +10775,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-730.webp",
-    "href": "/admin/vorlagen/datei/social/social-730.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-826.webp",
+    "href": "/admin/vorlagen/datei/social/social-826.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9537,8 +10788,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-731.webp",
-    "href": "/admin/vorlagen/datei/social/social-731.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-827.webp",
+    "href": "/admin/vorlagen/datei/social/social-827.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9550,8 +10801,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "03 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-732.webp",
-    "href": "/admin/vorlagen/datei/social/social-732.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-828.webp",
+    "href": "/admin/vorlagen/datei/social/social-828.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9563,8 +10814,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-733.webp",
-    "href": "/admin/vorlagen/datei/social/social-733.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-829.webp",
+    "href": "/admin/vorlagen/datei/social/social-829.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9576,8 +10827,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-734.webp",
-    "href": "/admin/vorlagen/datei/social/social-734.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-830.webp",
+    "href": "/admin/vorlagen/datei/social/social-830.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9589,8 +10840,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-735.webp",
-    "href": "/admin/vorlagen/datei/social/social-735.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-831.webp",
+    "href": "/admin/vorlagen/datei/social/social-831.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9602,8 +10853,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "04 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-736.webp",
-    "href": "/admin/vorlagen/datei/social/social-736.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-832.webp",
+    "href": "/admin/vorlagen/datei/social/social-832.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9615,8 +10866,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-737.webp",
-    "href": "/admin/vorlagen/datei/social/social-737.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-833.webp",
+    "href": "/admin/vorlagen/datei/social/social-833.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9628,8 +10879,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-738.webp",
-    "href": "/admin/vorlagen/datei/social/social-738.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-834.webp",
+    "href": "/admin/vorlagen/datei/social/social-834.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9641,8 +10892,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-739.webp",
-    "href": "/admin/vorlagen/datei/social/social-739.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-835.webp",
+    "href": "/admin/vorlagen/datei/social/social-835.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9654,8 +10905,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "05 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-740.webp",
-    "href": "/admin/vorlagen/datei/social/social-740.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-836.webp",
+    "href": "/admin/vorlagen/datei/social/social-836.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9667,8 +10918,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-741.webp",
-    "href": "/admin/vorlagen/datei/social/social-741.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-837.webp",
+    "href": "/admin/vorlagen/datei/social/social-837.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9680,8 +10931,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-742.webp",
-    "href": "/admin/vorlagen/datei/social/social-742.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-838.webp",
+    "href": "/admin/vorlagen/datei/social/social-838.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9693,8 +10944,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-743.webp",
-    "href": "/admin/vorlagen/datei/social/social-743.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-839.webp",
+    "href": "/admin/vorlagen/datei/social/social-839.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9706,8 +10957,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "06 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-744.webp",
-    "href": "/admin/vorlagen/datei/social/social-744.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-840.webp",
+    "href": "/admin/vorlagen/datei/social/social-840.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9719,8 +10970,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-745.webp",
-    "href": "/admin/vorlagen/datei/social/social-745.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-841.webp",
+    "href": "/admin/vorlagen/datei/social/social-841.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9732,8 +10983,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-746.webp",
-    "href": "/admin/vorlagen/datei/social/social-746.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-842.webp",
+    "href": "/admin/vorlagen/datei/social/social-842.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9745,8 +10996,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-747.webp",
-    "href": "/admin/vorlagen/datei/social/social-747.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-843.webp",
+    "href": "/admin/vorlagen/datei/social/social-843.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9758,8 +11009,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "07 · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-748.webp",
-    "href": "/admin/vorlagen/datei/social/social-748.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-844.webp",
+    "href": "/admin/vorlagen/datei/social/social-844.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9771,8 +11022,8 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-749.webp",
-    "href": "/admin/vorlagen/datei/social/social-749.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-845.webp",
+    "href": "/admin/vorlagen/datei/social/social-845.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9784,24 +11035,21 @@ const vorlagenAssets2: VorlagenAsset[] = [
     "titel": "hintergrund tuerkis hell · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-750.webp",
-    "href": "/admin/vorlagen/datei/social/social-750.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-846.webp",
+    "href": "/admin/vorlagen/datei/social/social-846.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
       "h": 2700
     }
-  }
-];
-
-const vorlagenAssets3: VorlagenAsset[] = [
+  },
   {
     "kategorie": "social",
     "titel": "hintergrund tuerkis · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-751.webp",
-    "href": "/admin/vorlagen/datei/social/social-751.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-847.webp",
+    "href": "/admin/vorlagen/datei/social/social-847.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9813,8 +11061,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "hintergrund · 4:5",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-752.webp",
-    "href": "/admin/vorlagen/datei/social/social-752.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-848.webp",
+    "href": "/admin/vorlagen/datei/social/social-848.webp",
     "masse": {
       "label": "4:5",
       "w": 2160,
@@ -9826,8 +11074,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-753.webp",
-    "href": "/admin/vorlagen/datei/social/social-753.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-849.webp",
+    "href": "/admin/vorlagen/datei/social/social-849.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9839,8 +11087,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-754.webp",
-    "href": "/admin/vorlagen/datei/social/social-754.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-850.webp",
+    "href": "/admin/vorlagen/datei/social/social-850.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9852,8 +11100,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-755.webp",
-    "href": "/admin/vorlagen/datei/social/social-755.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-851.webp",
+    "href": "/admin/vorlagen/datei/social/social-851.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9865,8 +11113,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-756.webp",
-    "href": "/admin/vorlagen/datei/social/social-756.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-852.webp",
+    "href": "/admin/vorlagen/datei/social/social-852.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9878,8 +11126,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-757.webp",
-    "href": "/admin/vorlagen/datei/social/social-757.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-853.webp",
+    "href": "/admin/vorlagen/datei/social/social-853.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9891,8 +11139,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-758.webp",
-    "href": "/admin/vorlagen/datei/social/social-758.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-854.webp",
+    "href": "/admin/vorlagen/datei/social/social-854.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9904,8 +11152,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-759.webp",
-    "href": "/admin/vorlagen/datei/social/social-759.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-855.webp",
+    "href": "/admin/vorlagen/datei/social/social-855.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9917,8 +11165,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-760.webp",
-    "href": "/admin/vorlagen/datei/social/social-760.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-856.webp",
+    "href": "/admin/vorlagen/datei/social/social-856.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9930,8 +11178,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-761.webp",
-    "href": "/admin/vorlagen/datei/social/social-761.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-857.webp",
+    "href": "/admin/vorlagen/datei/social/social-857.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9943,8 +11191,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-762.webp",
-    "href": "/admin/vorlagen/datei/social/social-762.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-858.webp",
+    "href": "/admin/vorlagen/datei/social/social-858.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9956,8 +11204,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-763.webp",
-    "href": "/admin/vorlagen/datei/social/social-763.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-859.webp",
+    "href": "/admin/vorlagen/datei/social/social-859.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9969,8 +11217,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-764.webp",
-    "href": "/admin/vorlagen/datei/social/social-764.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-860.webp",
+    "href": "/admin/vorlagen/datei/social/social-860.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9982,8 +11230,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-765.webp",
-    "href": "/admin/vorlagen/datei/social/social-765.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-861.webp",
+    "href": "/admin/vorlagen/datei/social/social-861.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -9995,8 +11243,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-766.webp",
-    "href": "/admin/vorlagen/datei/social/social-766.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-862.webp",
+    "href": "/admin/vorlagen/datei/social/social-862.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10008,8 +11256,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-767.webp",
-    "href": "/admin/vorlagen/datei/social/social-767.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-863.webp",
+    "href": "/admin/vorlagen/datei/social/social-863.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10021,8 +11269,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-768.webp",
-    "href": "/admin/vorlagen/datei/social/social-768.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-864.webp",
+    "href": "/admin/vorlagen/datei/social/social-864.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10034,8 +11282,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-769.webp",
-    "href": "/admin/vorlagen/datei/social/social-769.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-865.webp",
+    "href": "/admin/vorlagen/datei/social/social-865.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10047,8 +11295,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-770.webp",
-    "href": "/admin/vorlagen/datei/social/social-770.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-866.webp",
+    "href": "/admin/vorlagen/datei/social/social-866.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10060,8 +11308,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-771.webp",
-    "href": "/admin/vorlagen/datei/social/social-771.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-867.webp",
+    "href": "/admin/vorlagen/datei/social/social-867.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10073,8 +11321,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-772.webp",
-    "href": "/admin/vorlagen/datei/social/social-772.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-868.webp",
+    "href": "/admin/vorlagen/datei/social/social-868.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10086,8 +11334,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-773.webp",
-    "href": "/admin/vorlagen/datei/social/social-773.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-869.webp",
+    "href": "/admin/vorlagen/datei/social/social-869.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10099,8 +11347,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-774.webp",
-    "href": "/admin/vorlagen/datei/social/social-774.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-870.webp",
+    "href": "/admin/vorlagen/datei/social/social-870.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10112,8 +11360,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-775.webp",
-    "href": "/admin/vorlagen/datei/social/social-775.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-871.webp",
+    "href": "/admin/vorlagen/datei/social/social-871.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10125,8 +11373,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-776.webp",
-    "href": "/admin/vorlagen/datei/social/social-776.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-872.webp",
+    "href": "/admin/vorlagen/datei/social/social-872.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10138,8 +11386,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-777.webp",
-    "href": "/admin/vorlagen/datei/social/social-777.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-873.webp",
+    "href": "/admin/vorlagen/datei/social/social-873.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10151,8 +11399,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-778.webp",
-    "href": "/admin/vorlagen/datei/social/social-778.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-874.webp",
+    "href": "/admin/vorlagen/datei/social/social-874.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10164,8 +11412,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-779.webp",
-    "href": "/admin/vorlagen/datei/social/social-779.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-875.webp",
+    "href": "/admin/vorlagen/datei/social/social-875.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10177,8 +11425,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-780.webp",
-    "href": "/admin/vorlagen/datei/social/social-780.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-876.webp",
+    "href": "/admin/vorlagen/datei/social/social-876.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10190,8 +11438,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-781.webp",
-    "href": "/admin/vorlagen/datei/social/social-781.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-877.webp",
+    "href": "/admin/vorlagen/datei/social/social-877.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10203,8 +11451,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-782.webp",
-    "href": "/admin/vorlagen/datei/social/social-782.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-878.webp",
+    "href": "/admin/vorlagen/datei/social/social-878.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10216,8 +11464,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-783.webp",
-    "href": "/admin/vorlagen/datei/social/social-783.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-879.webp",
+    "href": "/admin/vorlagen/datei/social/social-879.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10229,8 +11477,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "01 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-784.webp",
-    "href": "/admin/vorlagen/datei/social/social-784.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-880.webp",
+    "href": "/admin/vorlagen/datei/social/social-880.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10242,8 +11490,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-785.webp",
-    "href": "/admin/vorlagen/datei/social/social-785.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-881.webp",
+    "href": "/admin/vorlagen/datei/social/social-881.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10255,8 +11503,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-786.webp",
-    "href": "/admin/vorlagen/datei/social/social-786.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-882.webp",
+    "href": "/admin/vorlagen/datei/social/social-882.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10268,8 +11516,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-787.webp",
-    "href": "/admin/vorlagen/datei/social/social-787.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-883.webp",
+    "href": "/admin/vorlagen/datei/social/social-883.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10281,8 +11529,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "02 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-788.webp",
-    "href": "/admin/vorlagen/datei/social/social-788.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-884.webp",
+    "href": "/admin/vorlagen/datei/social/social-884.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10294,8 +11542,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-789.webp",
-    "href": "/admin/vorlagen/datei/social/social-789.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-885.webp",
+    "href": "/admin/vorlagen/datei/social/social-885.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10307,8 +11555,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-790.webp",
-    "href": "/admin/vorlagen/datei/social/social-790.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-886.webp",
+    "href": "/admin/vorlagen/datei/social/social-886.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10320,8 +11568,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-791.webp",
-    "href": "/admin/vorlagen/datei/social/social-791.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-887.webp",
+    "href": "/admin/vorlagen/datei/social/social-887.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10333,8 +11581,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "03 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-792.webp",
-    "href": "/admin/vorlagen/datei/social/social-792.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-888.webp",
+    "href": "/admin/vorlagen/datei/social/social-888.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10346,8 +11594,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-793.webp",
-    "href": "/admin/vorlagen/datei/social/social-793.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-889.webp",
+    "href": "/admin/vorlagen/datei/social/social-889.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10359,8 +11607,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-794.webp",
-    "href": "/admin/vorlagen/datei/social/social-794.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-890.webp",
+    "href": "/admin/vorlagen/datei/social/social-890.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10372,8 +11620,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-795.webp",
-    "href": "/admin/vorlagen/datei/social/social-795.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-891.webp",
+    "href": "/admin/vorlagen/datei/social/social-891.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10385,8 +11633,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "04 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-796.webp",
-    "href": "/admin/vorlagen/datei/social/social-796.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-892.webp",
+    "href": "/admin/vorlagen/datei/social/social-892.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10398,8 +11646,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-797.webp",
-    "href": "/admin/vorlagen/datei/social/social-797.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-893.webp",
+    "href": "/admin/vorlagen/datei/social/social-893.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10411,8 +11659,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-798.webp",
-    "href": "/admin/vorlagen/datei/social/social-798.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-894.webp",
+    "href": "/admin/vorlagen/datei/social/social-894.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10424,8 +11672,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-799.webp",
-    "href": "/admin/vorlagen/datei/social/social-799.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-895.webp",
+    "href": "/admin/vorlagen/datei/social/social-895.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10437,8 +11685,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "05 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-800.webp",
-    "href": "/admin/vorlagen/datei/social/social-800.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-896.webp",
+    "href": "/admin/vorlagen/datei/social/social-896.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10450,8 +11698,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-801.webp",
-    "href": "/admin/vorlagen/datei/social/social-801.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-897.webp",
+    "href": "/admin/vorlagen/datei/social/social-897.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10463,8 +11711,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-802.webp",
-    "href": "/admin/vorlagen/datei/social/social-802.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-898.webp",
+    "href": "/admin/vorlagen/datei/social/social-898.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10476,8 +11724,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-803.webp",
-    "href": "/admin/vorlagen/datei/social/social-803.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-899.webp",
+    "href": "/admin/vorlagen/datei/social/social-899.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10489,8 +11737,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "06 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-804.webp",
-    "href": "/admin/vorlagen/datei/social/social-804.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-900.webp",
+    "href": "/admin/vorlagen/datei/social/social-900.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10502,8 +11750,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-805.webp",
-    "href": "/admin/vorlagen/datei/social/social-805.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-901.webp",
+    "href": "/admin/vorlagen/datei/social/social-901.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10515,8 +11763,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-806.webp",
-    "href": "/admin/vorlagen/datei/social/social-806.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-902.webp",
+    "href": "/admin/vorlagen/datei/social/social-902.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10528,8 +11776,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-807.webp",
-    "href": "/admin/vorlagen/datei/social/social-807.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-903.webp",
+    "href": "/admin/vorlagen/datei/social/social-903.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10541,8 +11789,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "07 · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-808.webp",
-    "href": "/admin/vorlagen/datei/social/social-808.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-904.webp",
+    "href": "/admin/vorlagen/datei/social/social-904.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10554,8 +11802,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "hintergrund hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-809.webp",
-    "href": "/admin/vorlagen/datei/social/social-809.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-905.webp",
+    "href": "/admin/vorlagen/datei/social/social-905.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10567,8 +11815,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "hintergrund tuerkis hell · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-810.webp",
-    "href": "/admin/vorlagen/datei/social/social-810.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-906.webp",
+    "href": "/admin/vorlagen/datei/social/social-906.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10580,8 +11828,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "hintergrund tuerkis · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-811.webp",
-    "href": "/admin/vorlagen/datei/social/social-811.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-907.webp",
+    "href": "/admin/vorlagen/datei/social/social-907.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10593,8 +11841,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "hintergrund · 9:16",
     "unterKategorie": "whatsapp mitgliedschaft",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-812.webp",
-    "href": "/admin/vorlagen/datei/social/social-812.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-908.webp",
+    "href": "/admin/vorlagen/datei/social/social-908.webp",
     "masse": {
       "label": "9:16",
       "w": 2160,
@@ -10606,8 +11854,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Banner 1920x1080 hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-813.webp",
-    "href": "/admin/vorlagen/datei/social/social-813.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-909.webp",
+    "href": "/admin/vorlagen/datei/social/social-909.webp",
     "masse": {
       "label": "16:9",
       "w": 1920,
@@ -10619,8 +11867,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Banner 1920x1080",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-814.webp",
-    "href": "/admin/vorlagen/datei/social/social-814.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-910.webp",
+    "href": "/admin/vorlagen/datei/social/social-910.webp",
     "masse": {
       "label": "16:9",
       "w": 1920,
@@ -10632,8 +11880,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Banner hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-815.webp",
-    "href": "/admin/vorlagen/datei/social/social-815.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-911.webp",
+    "href": "/admin/vorlagen/datei/social/social-911.webp",
     "masse": {
       "label": "4:1",
       "w": 2160,
@@ -10645,8 +11893,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Banner",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-816.webp",
-    "href": "/admin/vorlagen/datei/social/social-816.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-912.webp",
+    "href": "/admin/vorlagen/datei/social/social-912.webp",
     "masse": {
       "label": "4:1",
       "w": 2160,
@@ -10658,8 +11906,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Kanalbild hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-817.webp",
-    "href": "/admin/vorlagen/datei/social/social-817.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-913.webp",
+    "href": "/admin/vorlagen/datei/social/social-913.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10671,8 +11919,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Kanalbild tuerkis hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-818.webp",
-    "href": "/admin/vorlagen/datei/social/social-818.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-914.webp",
+    "href": "/admin/vorlagen/datei/social/social-914.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10684,8 +11932,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Kanalbild tuerkis",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-819.webp",
-    "href": "/admin/vorlagen/datei/social/social-819.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-915.webp",
+    "href": "/admin/vorlagen/datei/social/social-915.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10697,8 +11945,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Kanalbild",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-820.webp",
-    "href": "/admin/vorlagen/datei/social/social-820.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-916.webp",
+    "href": "/admin/vorlagen/datei/social/social-916.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10710,8 +11958,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Profilbild hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-821.webp",
-    "href": "/admin/vorlagen/datei/social/social-821.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-917.webp",
+    "href": "/admin/vorlagen/datei/social/social-917.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10723,8 +11971,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Profilbild tuerkis hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-822.webp",
-    "href": "/admin/vorlagen/datei/social/social-822.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-918.webp",
+    "href": "/admin/vorlagen/datei/social/social-918.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10736,8 +11984,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Profilbild tuerkis",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-823.webp",
-    "href": "/admin/vorlagen/datei/social/social-823.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-919.webp",
+    "href": "/admin/vorlagen/datei/social/social-919.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10749,8 +11997,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Profilbild",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-824.webp",
-    "href": "/admin/vorlagen/datei/social/social-824.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-920.webp",
+    "href": "/admin/vorlagen/datei/social/social-920.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -10762,8 +12010,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp SafeZone Vorlage",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-825.webp",
-    "href": "/admin/vorlagen/datei/social/social-825.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-921.webp",
+    "href": "/admin/vorlagen/datei/social/social-921.webp",
     "masse": {
       "label": "16:9",
       "w": 1920,
@@ -10775,8 +12023,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Status 9x16 hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-826.webp",
-    "href": "/admin/vorlagen/datei/social/social-826.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-922.webp",
+    "href": "/admin/vorlagen/datei/social/social-922.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -10788,8 +12036,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Status 9x16 tuerkis hell",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-827.webp",
-    "href": "/admin/vorlagen/datei/social/social-827.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-923.webp",
+    "href": "/admin/vorlagen/datei/social/social-923.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -10801,8 +12049,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Status 9x16 tuerkis",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-828.webp",
-    "href": "/admin/vorlagen/datei/social/social-828.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-924.webp",
+    "href": "/admin/vorlagen/datei/social/social-924.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -10814,8 +12062,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "WhatsApp Status 9x16",
     "unterKategorie": "WhatsApp",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-829.webp",
-    "href": "/admin/vorlagen/datei/social/social-829.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-925.webp",
+    "href": "/admin/vorlagen/datei/social/social-925.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -10827,8 +12075,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "YouTube Banner hell",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-830.webp",
-    "href": "/admin/vorlagen/datei/social/social-830.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-926.webp",
+    "href": "/admin/vorlagen/datei/social/social-926.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -10840,8 +12088,8 @@ const vorlagenAssets3: VorlagenAsset[] = [
     "titel": "YouTube Banner",
     "unterKategorie": "YouTube",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-831.webp",
-    "href": "/admin/vorlagen/datei/social/social-831.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-927.webp",
+    "href": "/admin/vorlagen/datei/social/social-927.webp",
     "masse": {
       "label": "16:9",
       "w": 2160,
@@ -10851,1254 +12099,6 @@ const vorlagenAssets3: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "Thumbnail 01 hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-832.webp",
-    "href": "/admin/vorlagen/datei/social/social-832.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail 01 tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-833.webp",
-    "href": "/admin/vorlagen/datei/social/social-833.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail 01 tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-834.webp",
-    "href": "/admin/vorlagen/datei/social/social-834.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail 01",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-835.webp",
-    "href": "/admin/vorlagen/datei/social/social-835.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail 02 hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-836.webp",
-    "href": "/admin/vorlagen/datei/social/social-836.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail 02 tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-837.webp",
-    "href": "/admin/vorlagen/datei/social/social-837.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail 02 tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-838.webp",
-    "href": "/admin/vorlagen/datei/social/social-838.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail 02",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-839.webp",
-    "href": "/admin/vorlagen/datei/social/social-839.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail ablenkung hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-840.webp",
-    "href": "/admin/vorlagen/datei/social/social-840.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail ablenkung tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-841.webp",
-    "href": "/admin/vorlagen/datei/social/social-841.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail ablenkung tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-842.webp",
-    "href": "/admin/vorlagen/datei/social/social-842.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail ablenkung",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-843.webp",
-    "href": "/admin/vorlagen/datei/social/social-843.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail algorithmen hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-844.webp",
-    "href": "/admin/vorlagen/datei/social/social-844.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail algorithmen tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-845.webp",
-    "href": "/admin/vorlagen/datei/social/social-845.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail algorithmen tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-846.webp",
-    "href": "/admin/vorlagen/datei/social/social-846.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail algorithmen",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-847.webp",
-    "href": "/admin/vorlagen/datei/social/social-847.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail angst steuerung hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-848.webp",
-    "href": "/admin/vorlagen/datei/social/social-848.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail angst steuerung tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-849.webp",
-    "href": "/admin/vorlagen/datei/social/social-849.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail angst steuerung tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-850.webp",
-    "href": "/admin/vorlagen/datei/social/social-850.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail angst steuerung",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-851.webp",
-    "href": "/admin/vorlagen/datei/social/social-851.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail atmung hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-852.webp",
-    "href": "/admin/vorlagen/datei/social/social-852.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail atmung tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-853.webp",
-    "href": "/admin/vorlagen/datei/social/social-853.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail atmung tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-854.webp",
-    "href": "/admin/vorlagen/datei/social/social-854.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail atmung",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-855.webp",
-    "href": "/admin/vorlagen/datei/social/social-855.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail autoritaetshoerigkeit hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-856.webp",
-    "href": "/admin/vorlagen/datei/social/social-856.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail autoritaetshoerigkeit tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-857.webp",
-    "href": "/admin/vorlagen/datei/social/social-857.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail autoritaetshoerigkeit tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-858.webp",
-    "href": "/admin/vorlagen/datei/social/social-858.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail autoritaetshoerigkeit",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-859.webp",
-    "href": "/admin/vorlagen/datei/social/social-859.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail bildmacht hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-860.webp",
-    "href": "/admin/vorlagen/datei/social/social-860.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail bildmacht tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-861.webp",
-    "href": "/admin/vorlagen/datei/social/social-861.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail bildmacht tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-862.webp",
-    "href": "/admin/vorlagen/datei/social/social-862.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail bildmacht",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-863.webp",
-    "href": "/admin/vorlagen/datei/social/social-863.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail framing hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-864.webp",
-    "href": "/admin/vorlagen/datei/social/social-864.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail framing tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-865.webp",
-    "href": "/admin/vorlagen/datei/social/social-865.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail framing tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-866.webp",
-    "href": "/admin/vorlagen/datei/social/social-866.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail framing",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-867.webp",
-    "href": "/admin/vorlagen/datei/social/social-867.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail gruppendruck hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-868.webp",
-    "href": "/admin/vorlagen/datei/social/social-868.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail gruppendruck tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-869.webp",
-    "href": "/admin/vorlagen/datei/social/social-869.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail gruppendruck tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-870.webp",
-    "href": "/admin/vorlagen/datei/social/social-870.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail gruppendruck",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-871.webp",
-    "href": "/admin/vorlagen/datei/social/social-871.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail identitaet und meinung hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-872.webp",
-    "href": "/admin/vorlagen/datei/social/social-872.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail identitaet und meinung tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-873.webp",
-    "href": "/admin/vorlagen/datei/social/social-873.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail identitaet und meinung tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-874.webp",
-    "href": "/admin/vorlagen/datei/social/social-874.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail identitaet und meinung",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-875.webp",
-    "href": "/admin/vorlagen/datei/social/social-875.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail kognitive dissonanz hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-876.webp",
-    "href": "/admin/vorlagen/datei/social/social-876.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail kognitive dissonanz tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-877.webp",
-    "href": "/admin/vorlagen/datei/social/social-877.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail kognitive dissonanz tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-878.webp",
-    "href": "/admin/vorlagen/datei/social/social-878.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail kognitive dissonanz",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-879.webp",
-    "href": "/admin/vorlagen/datei/social/social-879.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail medien agenda hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-880.webp",
-    "href": "/admin/vorlagen/datei/social/social-880.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail medien agenda tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-881.webp",
-    "href": "/admin/vorlagen/datei/social/social-881.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail medien agenda tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-882.webp",
-    "href": "/admin/vorlagen/datei/social/social-882.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail medien agenda",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-883.webp",
-    "href": "/admin/vorlagen/datei/social/social-883.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail meditation hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-884.webp",
-    "href": "/admin/vorlagen/datei/social/social-884.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail meditation tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-885.webp",
-    "href": "/admin/vorlagen/datei/social/social-885.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail meditation tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-886.webp",
-    "href": "/admin/vorlagen/datei/social/social-886.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail meditation",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-887.webp",
-    "href": "/admin/vorlagen/datei/social/social-887.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail normalisierung hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-888.webp",
-    "href": "/admin/vorlagen/datei/social/social-888.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail normalisierung tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-889.webp",
-    "href": "/admin/vorlagen/datei/social/social-889.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail normalisierung tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-890.webp",
-    "href": "/admin/vorlagen/datei/social/social-890.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail normalisierung",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-891.webp",
-    "href": "/admin/vorlagen/datei/social/social-891.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail placebo hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-892.webp",
-    "href": "/admin/vorlagen/datei/social/social-892.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail placebo tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-893.webp",
-    "href": "/admin/vorlagen/datei/social/social-893.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail placebo tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-894.webp",
-    "href": "/admin/vorlagen/datei/social/social-894.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail placebo",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-895.webp",
-    "href": "/admin/vorlagen/datei/social/social-895.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail propaganda hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-896.webp",
-    "href": "/admin/vorlagen/datei/social/social-896.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail propaganda tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-897.webp",
-    "href": "/admin/vorlagen/datei/social/social-897.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail propaganda tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-898.webp",
-    "href": "/admin/vorlagen/datei/social/social-898.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail propaganda",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-899.webp",
-    "href": "/admin/vorlagen/datei/social/social-899.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail reizueberflutung hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-900.webp",
-    "href": "/admin/vorlagen/datei/social/social-900.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail reizueberflutung tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-901.webp",
-    "href": "/admin/vorlagen/datei/social/social-901.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail reizueberflutung tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-902.webp",
-    "href": "/admin/vorlagen/datei/social/social-902.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail reizueberflutung",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-903.webp",
-    "href": "/admin/vorlagen/datei/social/social-903.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail sprache und etiketten hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-904.webp",
-    "href": "/admin/vorlagen/datei/social/social-904.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail sprache und etiketten tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-905.webp",
-    "href": "/admin/vorlagen/datei/social/social-905.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail sprache und etiketten tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-906.webp",
-    "href": "/admin/vorlagen/datei/social/social-906.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail sprache und etiketten",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-907.webp",
-    "href": "/admin/vorlagen/datei/social/social-907.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 2 hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-908.webp",
-    "href": "/admin/vorlagen/datei/social/social-908.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 2 tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-909.webp",
-    "href": "/admin/vorlagen/datei/social/social-909.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 2 tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-910.webp",
-    "href": "/admin/vorlagen/datei/social/social-910.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 2",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-911.webp",
-    "href": "/admin/vorlagen/datei/social/social-911.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 3 hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-912.webp",
-    "href": "/admin/vorlagen/datei/social/social-912.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 3 tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-913.webp",
-    "href": "/admin/vorlagen/datei/social/social-913.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 3 tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-914.webp",
-    "href": "/admin/vorlagen/datei/social/social-914.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 3",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-915.webp",
-    "href": "/admin/vorlagen/datei/social/social-915.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 4 hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-916.webp",
-    "href": "/admin/vorlagen/datei/social/social-916.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 4 tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-917.webp",
-    "href": "/admin/vorlagen/datei/social/social-917.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 4 tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-918.webp",
-    "href": "/admin/vorlagen/datei/social/social-918.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 4",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-919.webp",
-    "href": "/admin/vorlagen/datei/social/social-919.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 5 hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-920.webp",
-    "href": "/admin/vorlagen/datei/social/social-920.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 5 tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-921.webp",
-    "href": "/admin/vorlagen/datei/social/social-921.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 5 tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-922.webp",
-    "href": "/admin/vorlagen/datei/social/social-922.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 5",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-923.webp",
-    "href": "/admin/vorlagen/datei/social/social-923.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 6 hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-924.webp",
-    "href": "/admin/vorlagen/datei/social/social-924.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 6 tuerkis hell",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-925.webp",
-    "href": "/admin/vorlagen/datei/social/social-925.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 6 tuerkis",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-926.webp",
-    "href": "/admin/vorlagen/datei/social/social-926.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 6",
-    "unterKategorie": "YouTube",
-    "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-927.webp",
-    "href": "/admin/vorlagen/datei/social/social-927.webp",
-    "masse": {
-      "label": "16:9",
-      "w": 1280,
-      "h": 720
-    }
-  },
-  {
-    "kategorie": "social",
-    "titel": "Thumbnail stufe 7 hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-928.webp",
@@ -12111,7 +12111,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail stufe 7 tuerkis hell",
+    "titel": "Thumbnail 01 tuerkis hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-929.webp",
@@ -12124,7 +12124,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail stufe 7 tuerkis",
+    "titel": "Thumbnail 01 tuerkis",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-930.webp",
@@ -12137,7 +12137,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail stufe 7",
+    "titel": "Thumbnail 01",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-931.webp",
@@ -12150,7 +12150,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail vorlage hell",
+    "titel": "Thumbnail 02 hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-932.webp",
@@ -12163,7 +12163,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail vorlage tuerkis hell",
+    "titel": "Thumbnail 02 tuerkis hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-933.webp",
@@ -12176,7 +12176,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail vorlage tuerkis",
+    "titel": "Thumbnail 02 tuerkis",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-934.webp",
@@ -12189,7 +12189,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail vorlage",
+    "titel": "Thumbnail 02",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-935.webp",
@@ -12202,7 +12202,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail werbung und mangel hell",
+    "titel": "Thumbnail ablenkung hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-936.webp",
@@ -12215,7 +12215,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail werbung und mangel tuerkis hell",
+    "titel": "Thumbnail ablenkung tuerkis hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-937.webp",
@@ -12228,7 +12228,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail werbung und mangel tuerkis",
+    "titel": "Thumbnail ablenkung tuerkis",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-938.webp",
@@ -12241,7 +12241,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail werbung und mangel",
+    "titel": "Thumbnail ablenkung",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-939.webp",
@@ -12254,7 +12254,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail wiederholung wahrheit hell",
+    "titel": "Thumbnail algorithmen hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-940.webp",
@@ -12267,7 +12267,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail wiederholung wahrheit tuerkis hell",
+    "titel": "Thumbnail algorithmen tuerkis hell",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-941.webp",
@@ -12280,7 +12280,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail wiederholung wahrheit tuerkis",
+    "titel": "Thumbnail algorithmen tuerkis",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-942.webp",
@@ -12293,7 +12293,7 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Thumbnail wiederholung wahrheit",
+    "titel": "Thumbnail algorithmen",
     "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-943.webp",
@@ -12306,743 +12306,743 @@ const vorlagenAssets3: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail angst steuerung hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-944.webp",
     "href": "/admin/vorlagen/datei/social/social-944.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail angst steuerung tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-945.webp",
     "href": "/admin/vorlagen/datei/social/social-945.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail angst steuerung tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-946.webp",
     "href": "/admin/vorlagen/datei/social/social-946.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail angst steuerung",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-947.webp",
     "href": "/admin/vorlagen/datei/social/social-947.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail atmung hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-948.webp",
     "href": "/admin/vorlagen/datei/social/social-948.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail atmung tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-949.webp",
     "href": "/admin/vorlagen/datei/social/social-949.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail atmung tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-950.webp",
     "href": "/admin/vorlagen/datei/social/social-950.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail atmung",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-951.webp",
     "href": "/admin/vorlagen/datei/social/social-951.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail autoritaetshoerigkeit hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-952.webp",
     "href": "/admin/vorlagen/datei/social/social-952.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail autoritaetshoerigkeit tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-953.webp",
     "href": "/admin/vorlagen/datei/social/social-953.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail autoritaetshoerigkeit tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-954.webp",
     "href": "/admin/vorlagen/datei/social/social-954.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail autoritaetshoerigkeit",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-955.webp",
     "href": "/admin/vorlagen/datei/social/social-955.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail bildmacht hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-956.webp",
     "href": "/admin/vorlagen/datei/social/social-956.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail bildmacht tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-957.webp",
     "href": "/admin/vorlagen/datei/social/social-957.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail bildmacht tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-958.webp",
     "href": "/admin/vorlagen/datei/social/social-958.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail bildmacht",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-959.webp",
     "href": "/admin/vorlagen/datei/social/social-959.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail framing hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-960.webp",
     "href": "/admin/vorlagen/datei/social/social-960.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail framing tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-961.webp",
     "href": "/admin/vorlagen/datei/social/social-961.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail framing tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-962.webp",
     "href": "/admin/vorlagen/datei/social/social-962.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail framing",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-963.webp",
     "href": "/admin/vorlagen/datei/social/social-963.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail gruppendruck hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-964.webp",
     "href": "/admin/vorlagen/datei/social/social-964.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail gruppendruck tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-965.webp",
     "href": "/admin/vorlagen/datei/social/social-965.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail gruppendruck tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-966.webp",
     "href": "/admin/vorlagen/datei/social/social-966.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail gruppendruck",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-967.webp",
     "href": "/admin/vorlagen/datei/social/social-967.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail identitaet und meinung hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-968.webp",
     "href": "/admin/vorlagen/datei/social/social-968.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail identitaet und meinung tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-969.webp",
     "href": "/admin/vorlagen/datei/social/social-969.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail identitaet und meinung tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-970.webp",
     "href": "/admin/vorlagen/datei/social/social-970.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail identitaet und meinung",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-971.webp",
     "href": "/admin/vorlagen/datei/social/social-971.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail kognitive dissonanz hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-972.webp",
     "href": "/admin/vorlagen/datei/social/social-972.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail kognitive dissonanz tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-973.webp",
     "href": "/admin/vorlagen/datei/social/social-973.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail kognitive dissonanz tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-974.webp",
     "href": "/admin/vorlagen/datei/social/social-974.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail kognitive dissonanz",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-975.webp",
     "href": "/admin/vorlagen/datei/social/social-975.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail medien agenda hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-976.webp",
     "href": "/admin/vorlagen/datei/social/social-976.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail medien agenda tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-977.webp",
     "href": "/admin/vorlagen/datei/social/social-977.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail medien agenda tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-978.webp",
     "href": "/admin/vorlagen/datei/social/social-978.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail medien agenda",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-979.webp",
     "href": "/admin/vorlagen/datei/social/social-979.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail meditation hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-980.webp",
     "href": "/admin/vorlagen/datei/social/social-980.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail meditation tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-981.webp",
     "href": "/admin/vorlagen/datei/social/social-981.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail meditation tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-982.webp",
     "href": "/admin/vorlagen/datei/social/social-982.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail meditation",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-983.webp",
     "href": "/admin/vorlagen/datei/social/social-983.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail normalisierung hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-984.webp",
     "href": "/admin/vorlagen/datei/social/social-984.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail normalisierung tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-985.webp",
     "href": "/admin/vorlagen/datei/social/social-985.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail normalisierung tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-986.webp",
     "href": "/admin/vorlagen/datei/social/social-986.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail normalisierung",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-987.webp",
     "href": "/admin/vorlagen/datei/social/social-987.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail placebo hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-988.webp",
     "href": "/admin/vorlagen/datei/social/social-988.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail placebo tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-989.webp",
     "href": "/admin/vorlagen/datei/social/social-989.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail placebo tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-990.webp",
     "href": "/admin/vorlagen/datei/social/social-990.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail placebo",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-991.webp",
     "href": "/admin/vorlagen/datei/social/social-991.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail propaganda hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-992.webp",
     "href": "/admin/vorlagen/datei/social/social-992.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail propaganda tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-993.webp",
     "href": "/admin/vorlagen/datei/social/social-993.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail propaganda tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-994.webp",
     "href": "/admin/vorlagen/datei/social/social-994.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail propaganda",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-995.webp",
     "href": "/admin/vorlagen/datei/social/social-995.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail reizueberflutung hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-996.webp",
     "href": "/admin/vorlagen/datei/social/social-996.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail reizueberflutung tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-997.webp",
     "href": "/admin/vorlagen/datei/social/social-997.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail reizueberflutung tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-998.webp",
     "href": "/admin/vorlagen/datei/social/social-998.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail reizueberflutung",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-999.webp",
     "href": "/admin/vorlagen/datei/social/social-999.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail sprache und etiketten hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1000.webp",
     "href": "/admin/vorlagen/datei/social/social-1000.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   }
 ];
@@ -13050,514 +13050,514 @@ const vorlagenAssets3: VorlagenAsset[] = [
 const vorlagenAssets4: VorlagenAsset[] = [
   {
     "kategorie": "social",
-    "titel": "Zitat 15 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail sprache und etiketten tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1001.webp",
     "href": "/admin/vorlagen/datei/social/social-1001.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail sprache und etiketten tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1002.webp",
     "href": "/admin/vorlagen/datei/social/social-1002.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail sprache und etiketten",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1003.webp",
     "href": "/admin/vorlagen/datei/social/social-1003.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 2 hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1004.webp",
     "href": "/admin/vorlagen/datei/social/social-1004.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 2 tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1005.webp",
     "href": "/admin/vorlagen/datei/social/social-1005.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 2 tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1006.webp",
     "href": "/admin/vorlagen/datei/social/social-1006.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 2",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1007.webp",
     "href": "/admin/vorlagen/datei/social/social-1007.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 3 hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1008.webp",
     "href": "/admin/vorlagen/datei/social/social-1008.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 3 tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1009.webp",
     "href": "/admin/vorlagen/datei/social/social-1009.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 3 tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1010.webp",
     "href": "/admin/vorlagen/datei/social/social-1010.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 3",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1011.webp",
     "href": "/admin/vorlagen/datei/social/social-1011.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 4 hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1012.webp",
     "href": "/admin/vorlagen/datei/social/social-1012.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 4 tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1013.webp",
     "href": "/admin/vorlagen/datei/social/social-1013.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 4 tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1014.webp",
     "href": "/admin/vorlagen/datei/social/social-1014.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 4",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1015.webp",
     "href": "/admin/vorlagen/datei/social/social-1015.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 5 hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1016.webp",
     "href": "/admin/vorlagen/datei/social/social-1016.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 5 tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1017.webp",
     "href": "/admin/vorlagen/datei/social/social-1017.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 5 tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1018.webp",
     "href": "/admin/vorlagen/datei/social/social-1018.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 5",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1019.webp",
     "href": "/admin/vorlagen/datei/social/social-1019.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 6 hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1020.webp",
     "href": "/admin/vorlagen/datei/social/social-1020.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 6 tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1021.webp",
     "href": "/admin/vorlagen/datei/social/social-1021.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 6 tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1022.webp",
     "href": "/admin/vorlagen/datei/social/social-1022.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 6",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1023.webp",
     "href": "/admin/vorlagen/datei/social/social-1023.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 7 hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1024.webp",
     "href": "/admin/vorlagen/datei/social/social-1024.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 7 tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1025.webp",
     "href": "/admin/vorlagen/datei/social/social-1025.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 7 tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1026.webp",
     "href": "/admin/vorlagen/datei/social/social-1026.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail stufe 7",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1027.webp",
     "href": "/admin/vorlagen/datei/social/social-1027.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail vorlage hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1028.webp",
     "href": "/admin/vorlagen/datei/social/social-1028.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail vorlage tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1029.webp",
     "href": "/admin/vorlagen/datei/social/social-1029.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail vorlage tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1030.webp",
     "href": "/admin/vorlagen/datei/social/social-1030.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail vorlage",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1031.webp",
     "href": "/admin/vorlagen/datei/social/social-1031.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail werbung und mangel hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1032.webp",
     "href": "/admin/vorlagen/datei/social/social-1032.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail werbung und mangel tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1033.webp",
     "href": "/admin/vorlagen/datei/social/social-1033.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail werbung und mangel tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1034.webp",
     "href": "/admin/vorlagen/datei/social/social-1034.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail werbung und mangel",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1035.webp",
     "href": "/admin/vorlagen/datei/social/social-1035.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail wiederholung wahrheit hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1036.webp",
     "href": "/admin/vorlagen/datei/social/social-1036.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 tuerkis hell · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail wiederholung wahrheit tuerkis hell",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1037.webp",
     "href": "/admin/vorlagen/datei/social/social-1037.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 tuerkis · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail wiederholung wahrheit tuerkis",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1038.webp",
     "href": "/admin/vorlagen/datei/social/social-1038.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 · 1:1",
-    "unterKategorie": "Zitate",
+    "titel": "Thumbnail wiederholung wahrheit",
+    "unterKategorie": "YouTube",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1039.webp",
     "href": "/admin/vorlagen/datei/social/social-1039.webp",
     "masse": {
-      "label": "1:1",
-      "w": 1080,
-      "h": 1080
+      "label": "16:9",
+      "w": 1280,
+      "h": 720
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 hell · 1:1",
+    "titel": "Zitat 01 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1040.webp",
@@ -13570,7 +13570,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 tuerkis hell · 1:1",
+    "titel": "Zitat 01 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1041.webp",
@@ -13583,7 +13583,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 tuerkis · 1:1",
+    "titel": "Zitat 01 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1042.webp",
@@ -13596,7 +13596,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 · 1:1",
+    "titel": "Zitat 01 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1043.webp",
@@ -13609,7 +13609,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 hell · 1:1",
+    "titel": "Zitat 02 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1044.webp",
@@ -13622,7 +13622,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 tuerkis hell · 1:1",
+    "titel": "Zitat 02 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1045.webp",
@@ -13635,7 +13635,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 tuerkis · 1:1",
+    "titel": "Zitat 02 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1046.webp",
@@ -13648,7 +13648,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 · 1:1",
+    "titel": "Zitat 02 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1047.webp",
@@ -13661,1255 +13661,1255 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 hell · 4:5",
+    "titel": "Zitat 03 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1048.webp",
     "href": "/admin/vorlagen/datei/social/social-1048.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 tuerkis hell · 4:5",
+    "titel": "Zitat 03 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1049.webp",
     "href": "/admin/vorlagen/datei/social/social-1049.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 tuerkis · 4:5",
+    "titel": "Zitat 03 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1050.webp",
     "href": "/admin/vorlagen/datei/social/social-1050.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 · 4:5",
+    "titel": "Zitat 03 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1051.webp",
     "href": "/admin/vorlagen/datei/social/social-1051.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 hell · 4:5",
+    "titel": "Zitat 04 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1052.webp",
     "href": "/admin/vorlagen/datei/social/social-1052.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 tuerkis hell · 4:5",
+    "titel": "Zitat 04 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1053.webp",
     "href": "/admin/vorlagen/datei/social/social-1053.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 tuerkis · 4:5",
+    "titel": "Zitat 04 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1054.webp",
     "href": "/admin/vorlagen/datei/social/social-1054.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 · 4:5",
+    "titel": "Zitat 04 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1055.webp",
     "href": "/admin/vorlagen/datei/social/social-1055.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 hell · 4:5",
+    "titel": "Zitat 05 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1056.webp",
     "href": "/admin/vorlagen/datei/social/social-1056.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 tuerkis hell · 4:5",
+    "titel": "Zitat 05 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1057.webp",
     "href": "/admin/vorlagen/datei/social/social-1057.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 tuerkis · 4:5",
+    "titel": "Zitat 05 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1058.webp",
     "href": "/admin/vorlagen/datei/social/social-1058.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 · 4:5",
+    "titel": "Zitat 05 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1059.webp",
     "href": "/admin/vorlagen/datei/social/social-1059.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 hell · 4:5",
+    "titel": "Zitat 06 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1060.webp",
     "href": "/admin/vorlagen/datei/social/social-1060.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 tuerkis hell · 4:5",
+    "titel": "Zitat 06 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1061.webp",
     "href": "/admin/vorlagen/datei/social/social-1061.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 tuerkis · 4:5",
+    "titel": "Zitat 06 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1062.webp",
     "href": "/admin/vorlagen/datei/social/social-1062.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 · 4:5",
+    "titel": "Zitat 06 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1063.webp",
     "href": "/admin/vorlagen/datei/social/social-1063.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 hell · 4:5",
+    "titel": "Zitat 07 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1064.webp",
     "href": "/admin/vorlagen/datei/social/social-1064.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 tuerkis hell · 4:5",
+    "titel": "Zitat 07 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1065.webp",
     "href": "/admin/vorlagen/datei/social/social-1065.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 tuerkis · 4:5",
+    "titel": "Zitat 07 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1066.webp",
     "href": "/admin/vorlagen/datei/social/social-1066.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 · 4:5",
+    "titel": "Zitat 07 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1067.webp",
     "href": "/admin/vorlagen/datei/social/social-1067.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 hell · 4:5",
+    "titel": "Zitat 08 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1068.webp",
     "href": "/admin/vorlagen/datei/social/social-1068.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 tuerkis hell · 4:5",
+    "titel": "Zitat 08 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1069.webp",
     "href": "/admin/vorlagen/datei/social/social-1069.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 tuerkis · 4:5",
+    "titel": "Zitat 08 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1070.webp",
     "href": "/admin/vorlagen/datei/social/social-1070.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 · 4:5",
+    "titel": "Zitat 08 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1071.webp",
     "href": "/admin/vorlagen/datei/social/social-1071.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 hell · 4:5",
+    "titel": "Zitat 09 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1072.webp",
     "href": "/admin/vorlagen/datei/social/social-1072.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 tuerkis hell · 4:5",
+    "titel": "Zitat 09 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1073.webp",
     "href": "/admin/vorlagen/datei/social/social-1073.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 tuerkis · 4:5",
+    "titel": "Zitat 09 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1074.webp",
     "href": "/admin/vorlagen/datei/social/social-1074.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 · 4:5",
+    "titel": "Zitat 09 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1075.webp",
     "href": "/admin/vorlagen/datei/social/social-1075.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 hell · 4:5",
+    "titel": "Zitat 10 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1076.webp",
     "href": "/admin/vorlagen/datei/social/social-1076.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 tuerkis hell · 4:5",
+    "titel": "Zitat 10 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1077.webp",
     "href": "/admin/vorlagen/datei/social/social-1077.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 tuerkis · 4:5",
+    "titel": "Zitat 10 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1078.webp",
     "href": "/admin/vorlagen/datei/social/social-1078.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 · 4:5",
+    "titel": "Zitat 10 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1079.webp",
     "href": "/admin/vorlagen/datei/social/social-1079.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 hell · 4:5",
+    "titel": "Zitat 11 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1080.webp",
     "href": "/admin/vorlagen/datei/social/social-1080.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 tuerkis hell · 4:5",
+    "titel": "Zitat 11 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1081.webp",
     "href": "/admin/vorlagen/datei/social/social-1081.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 tuerkis · 4:5",
+    "titel": "Zitat 11 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1082.webp",
     "href": "/admin/vorlagen/datei/social/social-1082.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 · 4:5",
+    "titel": "Zitat 11 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1083.webp",
     "href": "/admin/vorlagen/datei/social/social-1083.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 hell · 4:5",
+    "titel": "Zitat 12 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1084.webp",
     "href": "/admin/vorlagen/datei/social/social-1084.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 tuerkis hell · 4:5",
+    "titel": "Zitat 12 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1085.webp",
     "href": "/admin/vorlagen/datei/social/social-1085.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 tuerkis · 4:5",
+    "titel": "Zitat 12 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1086.webp",
     "href": "/admin/vorlagen/datei/social/social-1086.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 · 4:5",
+    "titel": "Zitat 12 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1087.webp",
     "href": "/admin/vorlagen/datei/social/social-1087.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 hell · 4:5",
+    "titel": "Zitat 13 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1088.webp",
     "href": "/admin/vorlagen/datei/social/social-1088.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 tuerkis hell · 4:5",
+    "titel": "Zitat 13 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1089.webp",
     "href": "/admin/vorlagen/datei/social/social-1089.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 tuerkis · 4:5",
+    "titel": "Zitat 13 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1090.webp",
     "href": "/admin/vorlagen/datei/social/social-1090.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 · 4:5",
+    "titel": "Zitat 13 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1091.webp",
     "href": "/admin/vorlagen/datei/social/social-1091.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 hell · 4:5",
+    "titel": "Zitat 14 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1092.webp",
     "href": "/admin/vorlagen/datei/social/social-1092.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 tuerkis hell · 4:5",
+    "titel": "Zitat 14 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1093.webp",
     "href": "/admin/vorlagen/datei/social/social-1093.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 tuerkis · 4:5",
+    "titel": "Zitat 14 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1094.webp",
     "href": "/admin/vorlagen/datei/social/social-1094.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 · 4:5",
+    "titel": "Zitat 14 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1095.webp",
     "href": "/admin/vorlagen/datei/social/social-1095.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 hell · 4:5",
+    "titel": "Zitat 15 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1096.webp",
     "href": "/admin/vorlagen/datei/social/social-1096.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 tuerkis hell · 4:5",
+    "titel": "Zitat 15 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1097.webp",
     "href": "/admin/vorlagen/datei/social/social-1097.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 tuerkis · 4:5",
+    "titel": "Zitat 15 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1098.webp",
     "href": "/admin/vorlagen/datei/social/social-1098.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 · 4:5",
+    "titel": "Zitat 15 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1099.webp",
     "href": "/admin/vorlagen/datei/social/social-1099.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 hell · 4:5",
+    "titel": "Zitat 16 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1100.webp",
     "href": "/admin/vorlagen/datei/social/social-1100.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 tuerkis hell · 4:5",
+    "titel": "Zitat 16 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1101.webp",
     "href": "/admin/vorlagen/datei/social/social-1101.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 tuerkis · 4:5",
+    "titel": "Zitat 16 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1102.webp",
     "href": "/admin/vorlagen/datei/social/social-1102.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 · 4:5",
+    "titel": "Zitat 16 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1103.webp",
     "href": "/admin/vorlagen/datei/social/social-1103.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 hell · 4:5",
+    "titel": "Zitat 17 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1104.webp",
     "href": "/admin/vorlagen/datei/social/social-1104.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 tuerkis hell · 4:5",
+    "titel": "Zitat 17 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1105.webp",
     "href": "/admin/vorlagen/datei/social/social-1105.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 tuerkis · 4:5",
+    "titel": "Zitat 17 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1106.webp",
     "href": "/admin/vorlagen/datei/social/social-1106.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 · 4:5",
+    "titel": "Zitat 17 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1107.webp",
     "href": "/admin/vorlagen/datei/social/social-1107.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 hell · 4:5",
+    "titel": "Zitat 18 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1108.webp",
     "href": "/admin/vorlagen/datei/social/social-1108.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 tuerkis hell · 4:5",
+    "titel": "Zitat 18 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1109.webp",
     "href": "/admin/vorlagen/datei/social/social-1109.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 tuerkis · 4:5",
+    "titel": "Zitat 18 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1110.webp",
     "href": "/admin/vorlagen/datei/social/social-1110.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 · 4:5",
+    "titel": "Zitat 18 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1111.webp",
     "href": "/admin/vorlagen/datei/social/social-1111.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 hell · 4:5",
+    "titel": "Zitat 19 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1112.webp",
     "href": "/admin/vorlagen/datei/social/social-1112.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 tuerkis hell · 4:5",
+    "titel": "Zitat 19 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1113.webp",
     "href": "/admin/vorlagen/datei/social/social-1113.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 tuerkis · 4:5",
+    "titel": "Zitat 19 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1114.webp",
     "href": "/admin/vorlagen/datei/social/social-1114.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 · 4:5",
+    "titel": "Zitat 19 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1115.webp",
     "href": "/admin/vorlagen/datei/social/social-1115.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 hell · 4:5",
+    "titel": "Zitat 20 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1116.webp",
     "href": "/admin/vorlagen/datei/social/social-1116.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 tuerkis hell · 4:5",
+    "titel": "Zitat 20 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1117.webp",
     "href": "/admin/vorlagen/datei/social/social-1117.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 tuerkis · 4:5",
+    "titel": "Zitat 20 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1118.webp",
     "href": "/admin/vorlagen/datei/social/social-1118.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 · 4:5",
+    "titel": "Zitat 20 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1119.webp",
     "href": "/admin/vorlagen/datei/social/social-1119.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 hell · 4:5",
+    "titel": "Zitat 21 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1120.webp",
     "href": "/admin/vorlagen/datei/social/social-1120.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 tuerkis hell · 4:5",
+    "titel": "Zitat 21 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1121.webp",
     "href": "/admin/vorlagen/datei/social/social-1121.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 tuerkis · 4:5",
+    "titel": "Zitat 21 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1122.webp",
     "href": "/admin/vorlagen/datei/social/social-1122.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 · 4:5",
+    "titel": "Zitat 21 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1123.webp",
     "href": "/admin/vorlagen/datei/social/social-1123.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 hell · 4:5",
+    "titel": "Zitat 22 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1124.webp",
     "href": "/admin/vorlagen/datei/social/social-1124.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 tuerkis hell · 4:5",
+    "titel": "Zitat 22 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1125.webp",
     "href": "/admin/vorlagen/datei/social/social-1125.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 tuerkis · 4:5",
+    "titel": "Zitat 22 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1126.webp",
     "href": "/admin/vorlagen/datei/social/social-1126.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 · 4:5",
+    "titel": "Zitat 22 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1127.webp",
     "href": "/admin/vorlagen/datei/social/social-1127.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 hell · 4:5",
+    "titel": "Zitat 23 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1128.webp",
     "href": "/admin/vorlagen/datei/social/social-1128.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 tuerkis hell · 4:5",
+    "titel": "Zitat 23 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1129.webp",
     "href": "/admin/vorlagen/datei/social/social-1129.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 tuerkis · 4:5",
+    "titel": "Zitat 23 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1130.webp",
     "href": "/admin/vorlagen/datei/social/social-1130.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 · 4:5",
+    "titel": "Zitat 23 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1131.webp",
     "href": "/admin/vorlagen/datei/social/social-1131.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 hell · 4:5",
+    "titel": "Zitat 24 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1132.webp",
     "href": "/admin/vorlagen/datei/social/social-1132.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 tuerkis hell · 4:5",
+    "titel": "Zitat 24 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1133.webp",
     "href": "/admin/vorlagen/datei/social/social-1133.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 tuerkis · 4:5",
+    "titel": "Zitat 24 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1134.webp",
     "href": "/admin/vorlagen/datei/social/social-1134.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 · 4:5",
+    "titel": "Zitat 24 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1135.webp",
     "href": "/admin/vorlagen/datei/social/social-1135.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 hell · 4:5",
+    "titel": "Zitat 25 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1136.webp",
     "href": "/admin/vorlagen/datei/social/social-1136.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 tuerkis hell · 4:5",
+    "titel": "Zitat 25 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1137.webp",
     "href": "/admin/vorlagen/datei/social/social-1137.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 tuerkis · 4:5",
+    "titel": "Zitat 25 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1138.webp",
     "href": "/admin/vorlagen/datei/social/social-1138.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 · 4:5",
+    "titel": "Zitat 25 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1139.webp",
     "href": "/admin/vorlagen/datei/social/social-1139.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 hell · 4:5",
+    "titel": "Zitat 26 hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1140.webp",
     "href": "/admin/vorlagen/datei/social/social-1140.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 tuerkis hell · 4:5",
+    "titel": "Zitat 26 tuerkis hell · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1141.webp",
     "href": "/admin/vorlagen/datei/social/social-1141.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 tuerkis · 4:5",
+    "titel": "Zitat 26 tuerkis · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1142.webp",
     "href": "/admin/vorlagen/datei/social/social-1142.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 · 4:5",
+    "titel": "Zitat 26 · 1:1",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1143.webp",
     "href": "/admin/vorlagen/datei/social/social-1143.webp",
     "masse": {
-      "label": "4:5",
+      "label": "1:1",
       "w": 1080,
-      "h": 1350
+      "h": 1080
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 hell · 4:5",
+    "titel": "Zitat 01 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1144.webp",
@@ -14922,7 +14922,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 tuerkis hell · 4:5",
+    "titel": "Zitat 01 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1145.webp",
@@ -14935,7 +14935,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 tuerkis · 4:5",
+    "titel": "Zitat 01 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1146.webp",
@@ -14948,7 +14948,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 · 4:5",
+    "titel": "Zitat 01 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1147.webp",
@@ -14961,7 +14961,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 hell · 4:5",
+    "titel": "Zitat 02 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1148.webp",
@@ -14974,7 +14974,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 tuerkis hell · 4:5",
+    "titel": "Zitat 02 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1149.webp",
@@ -14987,7 +14987,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 tuerkis · 4:5",
+    "titel": "Zitat 02 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1150.webp",
@@ -15000,7 +15000,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 · 4:5",
+    "titel": "Zitat 02 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1151.webp",
@@ -15013,1255 +15013,1255 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 hell · 9:16",
+    "titel": "Zitat 03 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1152.webp",
     "href": "/admin/vorlagen/datei/social/social-1152.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 tuerkis hell · 9:16",
+    "titel": "Zitat 03 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1153.webp",
     "href": "/admin/vorlagen/datei/social/social-1153.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 tuerkis · 9:16",
+    "titel": "Zitat 03 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1154.webp",
     "href": "/admin/vorlagen/datei/social/social-1154.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 01 · 9:16",
+    "titel": "Zitat 03 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1155.webp",
     "href": "/admin/vorlagen/datei/social/social-1155.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 hell · 9:16",
+    "titel": "Zitat 04 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1156.webp",
     "href": "/admin/vorlagen/datei/social/social-1156.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 tuerkis hell · 9:16",
+    "titel": "Zitat 04 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1157.webp",
     "href": "/admin/vorlagen/datei/social/social-1157.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 tuerkis · 9:16",
+    "titel": "Zitat 04 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1158.webp",
     "href": "/admin/vorlagen/datei/social/social-1158.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 02 · 9:16",
+    "titel": "Zitat 04 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1159.webp",
     "href": "/admin/vorlagen/datei/social/social-1159.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 hell · 9:16",
+    "titel": "Zitat 05 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1160.webp",
     "href": "/admin/vorlagen/datei/social/social-1160.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 tuerkis hell · 9:16",
+    "titel": "Zitat 05 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1161.webp",
     "href": "/admin/vorlagen/datei/social/social-1161.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 tuerkis · 9:16",
+    "titel": "Zitat 05 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1162.webp",
     "href": "/admin/vorlagen/datei/social/social-1162.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 03 · 9:16",
+    "titel": "Zitat 05 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1163.webp",
     "href": "/admin/vorlagen/datei/social/social-1163.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 hell · 9:16",
+    "titel": "Zitat 06 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1164.webp",
     "href": "/admin/vorlagen/datei/social/social-1164.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 tuerkis hell · 9:16",
+    "titel": "Zitat 06 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1165.webp",
     "href": "/admin/vorlagen/datei/social/social-1165.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 tuerkis · 9:16",
+    "titel": "Zitat 06 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1166.webp",
     "href": "/admin/vorlagen/datei/social/social-1166.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 04 · 9:16",
+    "titel": "Zitat 06 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1167.webp",
     "href": "/admin/vorlagen/datei/social/social-1167.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 hell · 9:16",
+    "titel": "Zitat 07 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1168.webp",
     "href": "/admin/vorlagen/datei/social/social-1168.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 tuerkis hell · 9:16",
+    "titel": "Zitat 07 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1169.webp",
     "href": "/admin/vorlagen/datei/social/social-1169.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 tuerkis · 9:16",
+    "titel": "Zitat 07 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1170.webp",
     "href": "/admin/vorlagen/datei/social/social-1170.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 05 · 9:16",
+    "titel": "Zitat 07 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1171.webp",
     "href": "/admin/vorlagen/datei/social/social-1171.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 hell · 9:16",
+    "titel": "Zitat 08 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1172.webp",
     "href": "/admin/vorlagen/datei/social/social-1172.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 tuerkis hell · 9:16",
+    "titel": "Zitat 08 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1173.webp",
     "href": "/admin/vorlagen/datei/social/social-1173.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 tuerkis · 9:16",
+    "titel": "Zitat 08 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1174.webp",
     "href": "/admin/vorlagen/datei/social/social-1174.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 06 · 9:16",
+    "titel": "Zitat 08 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1175.webp",
     "href": "/admin/vorlagen/datei/social/social-1175.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 hell · 9:16",
+    "titel": "Zitat 09 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1176.webp",
     "href": "/admin/vorlagen/datei/social/social-1176.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 tuerkis hell · 9:16",
+    "titel": "Zitat 09 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1177.webp",
     "href": "/admin/vorlagen/datei/social/social-1177.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 tuerkis · 9:16",
+    "titel": "Zitat 09 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1178.webp",
     "href": "/admin/vorlagen/datei/social/social-1178.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 07 · 9:16",
+    "titel": "Zitat 09 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1179.webp",
     "href": "/admin/vorlagen/datei/social/social-1179.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 hell · 9:16",
+    "titel": "Zitat 10 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1180.webp",
     "href": "/admin/vorlagen/datei/social/social-1180.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 tuerkis hell · 9:16",
+    "titel": "Zitat 10 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1181.webp",
     "href": "/admin/vorlagen/datei/social/social-1181.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 tuerkis · 9:16",
+    "titel": "Zitat 10 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1182.webp",
     "href": "/admin/vorlagen/datei/social/social-1182.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 08 · 9:16",
+    "titel": "Zitat 10 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1183.webp",
     "href": "/admin/vorlagen/datei/social/social-1183.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 hell · 9:16",
+    "titel": "Zitat 11 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1184.webp",
     "href": "/admin/vorlagen/datei/social/social-1184.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 tuerkis hell · 9:16",
+    "titel": "Zitat 11 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1185.webp",
     "href": "/admin/vorlagen/datei/social/social-1185.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 tuerkis · 9:16",
+    "titel": "Zitat 11 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1186.webp",
     "href": "/admin/vorlagen/datei/social/social-1186.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 09 · 9:16",
+    "titel": "Zitat 11 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1187.webp",
     "href": "/admin/vorlagen/datei/social/social-1187.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 hell · 9:16",
+    "titel": "Zitat 12 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1188.webp",
     "href": "/admin/vorlagen/datei/social/social-1188.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 tuerkis hell · 9:16",
+    "titel": "Zitat 12 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1189.webp",
     "href": "/admin/vorlagen/datei/social/social-1189.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 tuerkis · 9:16",
+    "titel": "Zitat 12 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1190.webp",
     "href": "/admin/vorlagen/datei/social/social-1190.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 10 · 9:16",
+    "titel": "Zitat 12 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1191.webp",
     "href": "/admin/vorlagen/datei/social/social-1191.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 hell · 9:16",
+    "titel": "Zitat 13 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1192.webp",
     "href": "/admin/vorlagen/datei/social/social-1192.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 tuerkis hell · 9:16",
+    "titel": "Zitat 13 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1193.webp",
     "href": "/admin/vorlagen/datei/social/social-1193.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 tuerkis · 9:16",
+    "titel": "Zitat 13 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1194.webp",
     "href": "/admin/vorlagen/datei/social/social-1194.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 11 · 9:16",
+    "titel": "Zitat 13 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1195.webp",
     "href": "/admin/vorlagen/datei/social/social-1195.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 hell · 9:16",
+    "titel": "Zitat 14 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1196.webp",
     "href": "/admin/vorlagen/datei/social/social-1196.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 tuerkis hell · 9:16",
+    "titel": "Zitat 14 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1197.webp",
     "href": "/admin/vorlagen/datei/social/social-1197.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 tuerkis · 9:16",
+    "titel": "Zitat 14 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1198.webp",
     "href": "/admin/vorlagen/datei/social/social-1198.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 12 · 9:16",
+    "titel": "Zitat 14 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1199.webp",
     "href": "/admin/vorlagen/datei/social/social-1199.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 hell · 9:16",
+    "titel": "Zitat 15 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1200.webp",
     "href": "/admin/vorlagen/datei/social/social-1200.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 tuerkis hell · 9:16",
+    "titel": "Zitat 15 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1201.webp",
     "href": "/admin/vorlagen/datei/social/social-1201.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 tuerkis · 9:16",
+    "titel": "Zitat 15 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1202.webp",
     "href": "/admin/vorlagen/datei/social/social-1202.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 13 · 9:16",
+    "titel": "Zitat 15 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1203.webp",
     "href": "/admin/vorlagen/datei/social/social-1203.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 hell · 9:16",
+    "titel": "Zitat 16 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1204.webp",
     "href": "/admin/vorlagen/datei/social/social-1204.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 tuerkis hell · 9:16",
+    "titel": "Zitat 16 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1205.webp",
     "href": "/admin/vorlagen/datei/social/social-1205.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 tuerkis · 9:16",
+    "titel": "Zitat 16 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1206.webp",
     "href": "/admin/vorlagen/datei/social/social-1206.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 14 · 9:16",
+    "titel": "Zitat 16 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1207.webp",
     "href": "/admin/vorlagen/datei/social/social-1207.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 hell · 9:16",
+    "titel": "Zitat 17 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1208.webp",
     "href": "/admin/vorlagen/datei/social/social-1208.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 tuerkis hell · 9:16",
+    "titel": "Zitat 17 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1209.webp",
     "href": "/admin/vorlagen/datei/social/social-1209.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 tuerkis · 9:16",
+    "titel": "Zitat 17 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1210.webp",
     "href": "/admin/vorlagen/datei/social/social-1210.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 15 · 9:16",
+    "titel": "Zitat 17 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1211.webp",
     "href": "/admin/vorlagen/datei/social/social-1211.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 hell · 9:16",
+    "titel": "Zitat 18 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1212.webp",
     "href": "/admin/vorlagen/datei/social/social-1212.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 tuerkis hell · 9:16",
+    "titel": "Zitat 18 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1213.webp",
     "href": "/admin/vorlagen/datei/social/social-1213.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 tuerkis · 9:16",
+    "titel": "Zitat 18 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1214.webp",
     "href": "/admin/vorlagen/datei/social/social-1214.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 16 · 9:16",
+    "titel": "Zitat 18 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1215.webp",
     "href": "/admin/vorlagen/datei/social/social-1215.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 hell · 9:16",
+    "titel": "Zitat 19 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1216.webp",
     "href": "/admin/vorlagen/datei/social/social-1216.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 tuerkis hell · 9:16",
+    "titel": "Zitat 19 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1217.webp",
     "href": "/admin/vorlagen/datei/social/social-1217.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 tuerkis · 9:16",
+    "titel": "Zitat 19 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1218.webp",
     "href": "/admin/vorlagen/datei/social/social-1218.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 17 · 9:16",
+    "titel": "Zitat 19 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1219.webp",
     "href": "/admin/vorlagen/datei/social/social-1219.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 hell · 9:16",
+    "titel": "Zitat 20 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1220.webp",
     "href": "/admin/vorlagen/datei/social/social-1220.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 tuerkis hell · 9:16",
+    "titel": "Zitat 20 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1221.webp",
     "href": "/admin/vorlagen/datei/social/social-1221.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 tuerkis · 9:16",
+    "titel": "Zitat 20 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1222.webp",
     "href": "/admin/vorlagen/datei/social/social-1222.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 18 · 9:16",
+    "titel": "Zitat 20 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1223.webp",
     "href": "/admin/vorlagen/datei/social/social-1223.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 hell · 9:16",
+    "titel": "Zitat 21 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1224.webp",
     "href": "/admin/vorlagen/datei/social/social-1224.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 tuerkis hell · 9:16",
+    "titel": "Zitat 21 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1225.webp",
     "href": "/admin/vorlagen/datei/social/social-1225.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 tuerkis · 9:16",
+    "titel": "Zitat 21 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1226.webp",
     "href": "/admin/vorlagen/datei/social/social-1226.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 19 · 9:16",
+    "titel": "Zitat 21 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1227.webp",
     "href": "/admin/vorlagen/datei/social/social-1227.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 hell · 9:16",
+    "titel": "Zitat 22 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1228.webp",
     "href": "/admin/vorlagen/datei/social/social-1228.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 tuerkis hell · 9:16",
+    "titel": "Zitat 22 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1229.webp",
     "href": "/admin/vorlagen/datei/social/social-1229.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 tuerkis · 9:16",
+    "titel": "Zitat 22 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1230.webp",
     "href": "/admin/vorlagen/datei/social/social-1230.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 20 · 9:16",
+    "titel": "Zitat 22 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1231.webp",
     "href": "/admin/vorlagen/datei/social/social-1231.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 hell · 9:16",
+    "titel": "Zitat 23 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1232.webp",
     "href": "/admin/vorlagen/datei/social/social-1232.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 tuerkis hell · 9:16",
+    "titel": "Zitat 23 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1233.webp",
     "href": "/admin/vorlagen/datei/social/social-1233.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 tuerkis · 9:16",
+    "titel": "Zitat 23 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1234.webp",
     "href": "/admin/vorlagen/datei/social/social-1234.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 21 · 9:16",
+    "titel": "Zitat 23 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1235.webp",
     "href": "/admin/vorlagen/datei/social/social-1235.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 hell · 9:16",
+    "titel": "Zitat 24 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1236.webp",
     "href": "/admin/vorlagen/datei/social/social-1236.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 tuerkis hell · 9:16",
+    "titel": "Zitat 24 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1237.webp",
     "href": "/admin/vorlagen/datei/social/social-1237.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 tuerkis · 9:16",
+    "titel": "Zitat 24 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1238.webp",
     "href": "/admin/vorlagen/datei/social/social-1238.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 22 · 9:16",
+    "titel": "Zitat 24 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1239.webp",
     "href": "/admin/vorlagen/datei/social/social-1239.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 hell · 9:16",
+    "titel": "Zitat 25 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1240.webp",
     "href": "/admin/vorlagen/datei/social/social-1240.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 tuerkis hell · 9:16",
+    "titel": "Zitat 25 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1241.webp",
     "href": "/admin/vorlagen/datei/social/social-1241.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 tuerkis · 9:16",
+    "titel": "Zitat 25 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1242.webp",
     "href": "/admin/vorlagen/datei/social/social-1242.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 23 · 9:16",
+    "titel": "Zitat 25 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1243.webp",
     "href": "/admin/vorlagen/datei/social/social-1243.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 hell · 9:16",
+    "titel": "Zitat 26 hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1244.webp",
     "href": "/admin/vorlagen/datei/social/social-1244.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 tuerkis hell · 9:16",
+    "titel": "Zitat 26 tuerkis hell · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1245.webp",
     "href": "/admin/vorlagen/datei/social/social-1245.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 tuerkis · 9:16",
+    "titel": "Zitat 26 tuerkis · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1246.webp",
     "href": "/admin/vorlagen/datei/social/social-1246.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 24 · 9:16",
+    "titel": "Zitat 26 · 4:5",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1247.webp",
     "href": "/admin/vorlagen/datei/social/social-1247.webp",
     "masse": {
-      "label": "9:16",
+      "label": "4:5",
       "w": 1080,
-      "h": 1920
+      "h": 1350
     }
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 hell · 9:16",
+    "titel": "Zitat 01 hell · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1248.webp",
@@ -16274,7 +16274,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 tuerkis hell · 9:16",
+    "titel": "Zitat 01 tuerkis hell · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1249.webp",
@@ -16287,7 +16287,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 25 tuerkis · 9:16",
+    "titel": "Zitat 01 tuerkis · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1250.webp",
@@ -16303,7 +16303,7 @@ const vorlagenAssets4: VorlagenAsset[] = [
 const vorlagenAssets5: VorlagenAsset[] = [
   {
     "kategorie": "social",
-    "titel": "Zitat 25 · 9:16",
+    "titel": "Zitat 01 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1251.webp",
@@ -16316,7 +16316,7 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 hell · 9:16",
+    "titel": "Zitat 02 hell · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1252.webp",
@@ -16329,7 +16329,7 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 tuerkis hell · 9:16",
+    "titel": "Zitat 02 tuerkis hell · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1253.webp",
@@ -16342,7 +16342,7 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 tuerkis · 9:16",
+    "titel": "Zitat 02 tuerkis · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1254.webp",
@@ -16355,7 +16355,7 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Zitat 26 · 9:16",
+    "titel": "Zitat 02 · 9:16",
     "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1255.webp",
@@ -16368,11 +16368,1259 @@ const vorlagenAssets5: VorlagenAsset[] = [
   },
   {
     "kategorie": "social",
-    "titel": "Studienfakt 01 hell · 1:1",
-    "unterKategorie": "Studien-Fakten",
+    "titel": "Zitat 03 hell · 9:16",
+    "unterKategorie": "Zitate",
     "kind": "image",
     "thumb": "/admin/vorlagen/datei/thumbs/social/social-1256.webp",
     "href": "/admin/vorlagen/datei/social/social-1256.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1257.webp",
+    "href": "/admin/vorlagen/datei/social/social-1257.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1258.webp",
+    "href": "/admin/vorlagen/datei/social/social-1258.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 03 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1259.webp",
+    "href": "/admin/vorlagen/datei/social/social-1259.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1260.webp",
+    "href": "/admin/vorlagen/datei/social/social-1260.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1261.webp",
+    "href": "/admin/vorlagen/datei/social/social-1261.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1262.webp",
+    "href": "/admin/vorlagen/datei/social/social-1262.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 04 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1263.webp",
+    "href": "/admin/vorlagen/datei/social/social-1263.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1264.webp",
+    "href": "/admin/vorlagen/datei/social/social-1264.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1265.webp",
+    "href": "/admin/vorlagen/datei/social/social-1265.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1266.webp",
+    "href": "/admin/vorlagen/datei/social/social-1266.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 05 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1267.webp",
+    "href": "/admin/vorlagen/datei/social/social-1267.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1268.webp",
+    "href": "/admin/vorlagen/datei/social/social-1268.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1269.webp",
+    "href": "/admin/vorlagen/datei/social/social-1269.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1270.webp",
+    "href": "/admin/vorlagen/datei/social/social-1270.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 06 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1271.webp",
+    "href": "/admin/vorlagen/datei/social/social-1271.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1272.webp",
+    "href": "/admin/vorlagen/datei/social/social-1272.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1273.webp",
+    "href": "/admin/vorlagen/datei/social/social-1273.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1274.webp",
+    "href": "/admin/vorlagen/datei/social/social-1274.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 07 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1275.webp",
+    "href": "/admin/vorlagen/datei/social/social-1275.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1276.webp",
+    "href": "/admin/vorlagen/datei/social/social-1276.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1277.webp",
+    "href": "/admin/vorlagen/datei/social/social-1277.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1278.webp",
+    "href": "/admin/vorlagen/datei/social/social-1278.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 08 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1279.webp",
+    "href": "/admin/vorlagen/datei/social/social-1279.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1280.webp",
+    "href": "/admin/vorlagen/datei/social/social-1280.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1281.webp",
+    "href": "/admin/vorlagen/datei/social/social-1281.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1282.webp",
+    "href": "/admin/vorlagen/datei/social/social-1282.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 09 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1283.webp",
+    "href": "/admin/vorlagen/datei/social/social-1283.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1284.webp",
+    "href": "/admin/vorlagen/datei/social/social-1284.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1285.webp",
+    "href": "/admin/vorlagen/datei/social/social-1285.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1286.webp",
+    "href": "/admin/vorlagen/datei/social/social-1286.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 10 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1287.webp",
+    "href": "/admin/vorlagen/datei/social/social-1287.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1288.webp",
+    "href": "/admin/vorlagen/datei/social/social-1288.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1289.webp",
+    "href": "/admin/vorlagen/datei/social/social-1289.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1290.webp",
+    "href": "/admin/vorlagen/datei/social/social-1290.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 11 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1291.webp",
+    "href": "/admin/vorlagen/datei/social/social-1291.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1292.webp",
+    "href": "/admin/vorlagen/datei/social/social-1292.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1293.webp",
+    "href": "/admin/vorlagen/datei/social/social-1293.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1294.webp",
+    "href": "/admin/vorlagen/datei/social/social-1294.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 12 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1295.webp",
+    "href": "/admin/vorlagen/datei/social/social-1295.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1296.webp",
+    "href": "/admin/vorlagen/datei/social/social-1296.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1297.webp",
+    "href": "/admin/vorlagen/datei/social/social-1297.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1298.webp",
+    "href": "/admin/vorlagen/datei/social/social-1298.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 13 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1299.webp",
+    "href": "/admin/vorlagen/datei/social/social-1299.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1300.webp",
+    "href": "/admin/vorlagen/datei/social/social-1300.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1301.webp",
+    "href": "/admin/vorlagen/datei/social/social-1301.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1302.webp",
+    "href": "/admin/vorlagen/datei/social/social-1302.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 14 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1303.webp",
+    "href": "/admin/vorlagen/datei/social/social-1303.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1304.webp",
+    "href": "/admin/vorlagen/datei/social/social-1304.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1305.webp",
+    "href": "/admin/vorlagen/datei/social/social-1305.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1306.webp",
+    "href": "/admin/vorlagen/datei/social/social-1306.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 15 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1307.webp",
+    "href": "/admin/vorlagen/datei/social/social-1307.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1308.webp",
+    "href": "/admin/vorlagen/datei/social/social-1308.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1309.webp",
+    "href": "/admin/vorlagen/datei/social/social-1309.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1310.webp",
+    "href": "/admin/vorlagen/datei/social/social-1310.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 16 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1311.webp",
+    "href": "/admin/vorlagen/datei/social/social-1311.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1312.webp",
+    "href": "/admin/vorlagen/datei/social/social-1312.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1313.webp",
+    "href": "/admin/vorlagen/datei/social/social-1313.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1314.webp",
+    "href": "/admin/vorlagen/datei/social/social-1314.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 17 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1315.webp",
+    "href": "/admin/vorlagen/datei/social/social-1315.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1316.webp",
+    "href": "/admin/vorlagen/datei/social/social-1316.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1317.webp",
+    "href": "/admin/vorlagen/datei/social/social-1317.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1318.webp",
+    "href": "/admin/vorlagen/datei/social/social-1318.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 18 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1319.webp",
+    "href": "/admin/vorlagen/datei/social/social-1319.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1320.webp",
+    "href": "/admin/vorlagen/datei/social/social-1320.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1321.webp",
+    "href": "/admin/vorlagen/datei/social/social-1321.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1322.webp",
+    "href": "/admin/vorlagen/datei/social/social-1322.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 19 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1323.webp",
+    "href": "/admin/vorlagen/datei/social/social-1323.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1324.webp",
+    "href": "/admin/vorlagen/datei/social/social-1324.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1325.webp",
+    "href": "/admin/vorlagen/datei/social/social-1325.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1326.webp",
+    "href": "/admin/vorlagen/datei/social/social-1326.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 20 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1327.webp",
+    "href": "/admin/vorlagen/datei/social/social-1327.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1328.webp",
+    "href": "/admin/vorlagen/datei/social/social-1328.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1329.webp",
+    "href": "/admin/vorlagen/datei/social/social-1329.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1330.webp",
+    "href": "/admin/vorlagen/datei/social/social-1330.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 21 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1331.webp",
+    "href": "/admin/vorlagen/datei/social/social-1331.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1332.webp",
+    "href": "/admin/vorlagen/datei/social/social-1332.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1333.webp",
+    "href": "/admin/vorlagen/datei/social/social-1333.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1334.webp",
+    "href": "/admin/vorlagen/datei/social/social-1334.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 22 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1335.webp",
+    "href": "/admin/vorlagen/datei/social/social-1335.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1336.webp",
+    "href": "/admin/vorlagen/datei/social/social-1336.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1337.webp",
+    "href": "/admin/vorlagen/datei/social/social-1337.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1338.webp",
+    "href": "/admin/vorlagen/datei/social/social-1338.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 23 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1339.webp",
+    "href": "/admin/vorlagen/datei/social/social-1339.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1340.webp",
+    "href": "/admin/vorlagen/datei/social/social-1340.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1341.webp",
+    "href": "/admin/vorlagen/datei/social/social-1341.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1342.webp",
+    "href": "/admin/vorlagen/datei/social/social-1342.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 24 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1343.webp",
+    "href": "/admin/vorlagen/datei/social/social-1343.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1344.webp",
+    "href": "/admin/vorlagen/datei/social/social-1344.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1345.webp",
+    "href": "/admin/vorlagen/datei/social/social-1345.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1346.webp",
+    "href": "/admin/vorlagen/datei/social/social-1346.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 25 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1347.webp",
+    "href": "/admin/vorlagen/datei/social/social-1347.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1348.webp",
+    "href": "/admin/vorlagen/datei/social/social-1348.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis hell · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1349.webp",
+    "href": "/admin/vorlagen/datei/social/social-1349.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 tuerkis · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1350.webp",
+    "href": "/admin/vorlagen/datei/social/social-1350.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Zitat 26 · 9:16",
+    "unterKategorie": "Zitate",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1351.webp",
+    "href": "/admin/vorlagen/datei/social/social-1351.webp",
+    "masse": {
+      "label": "9:16",
+      "w": 1080,
+      "h": 1920
+    }
+  },
+  {
+    "kategorie": "social",
+    "titel": "Studienfakt 01 hell · 1:1",
+    "unterKategorie": "Studien-Fakten",
+    "kind": "image",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1352.webp",
+    "href": "/admin/vorlagen/datei/social/social-1352.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16384,8 +17632,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1257.webp",
-    "href": "/admin/vorlagen/datei/social/social-1257.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1353.webp",
+    "href": "/admin/vorlagen/datei/social/social-1353.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16397,8 +17645,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1258.webp",
-    "href": "/admin/vorlagen/datei/social/social-1258.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1354.webp",
+    "href": "/admin/vorlagen/datei/social/social-1354.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16410,8 +17658,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1259.webp",
-    "href": "/admin/vorlagen/datei/social/social-1259.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1355.webp",
+    "href": "/admin/vorlagen/datei/social/social-1355.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16423,8 +17671,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1260.webp",
-    "href": "/admin/vorlagen/datei/social/social-1260.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1356.webp",
+    "href": "/admin/vorlagen/datei/social/social-1356.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16436,8 +17684,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1261.webp",
-    "href": "/admin/vorlagen/datei/social/social-1261.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1357.webp",
+    "href": "/admin/vorlagen/datei/social/social-1357.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16449,8 +17697,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1262.webp",
-    "href": "/admin/vorlagen/datei/social/social-1262.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1358.webp",
+    "href": "/admin/vorlagen/datei/social/social-1358.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16462,8 +17710,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1263.webp",
-    "href": "/admin/vorlagen/datei/social/social-1263.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1359.webp",
+    "href": "/admin/vorlagen/datei/social/social-1359.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16475,8 +17723,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1264.webp",
-    "href": "/admin/vorlagen/datei/social/social-1264.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1360.webp",
+    "href": "/admin/vorlagen/datei/social/social-1360.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16488,8 +17736,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1265.webp",
-    "href": "/admin/vorlagen/datei/social/social-1265.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1361.webp",
+    "href": "/admin/vorlagen/datei/social/social-1361.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16501,8 +17749,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1266.webp",
-    "href": "/admin/vorlagen/datei/social/social-1266.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1362.webp",
+    "href": "/admin/vorlagen/datei/social/social-1362.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16514,8 +17762,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1267.webp",
-    "href": "/admin/vorlagen/datei/social/social-1267.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1363.webp",
+    "href": "/admin/vorlagen/datei/social/social-1363.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16527,8 +17775,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1268.webp",
-    "href": "/admin/vorlagen/datei/social/social-1268.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1364.webp",
+    "href": "/admin/vorlagen/datei/social/social-1364.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16540,8 +17788,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1269.webp",
-    "href": "/admin/vorlagen/datei/social/social-1269.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1365.webp",
+    "href": "/admin/vorlagen/datei/social/social-1365.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16553,8 +17801,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1270.webp",
-    "href": "/admin/vorlagen/datei/social/social-1270.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1366.webp",
+    "href": "/admin/vorlagen/datei/social/social-1366.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16566,8 +17814,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1271.webp",
-    "href": "/admin/vorlagen/datei/social/social-1271.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1367.webp",
+    "href": "/admin/vorlagen/datei/social/social-1367.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16579,8 +17827,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1272.webp",
-    "href": "/admin/vorlagen/datei/social/social-1272.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1368.webp",
+    "href": "/admin/vorlagen/datei/social/social-1368.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16592,8 +17840,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1273.webp",
-    "href": "/admin/vorlagen/datei/social/social-1273.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1369.webp",
+    "href": "/admin/vorlagen/datei/social/social-1369.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16605,8 +17853,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1274.webp",
-    "href": "/admin/vorlagen/datei/social/social-1274.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1370.webp",
+    "href": "/admin/vorlagen/datei/social/social-1370.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16618,8 +17866,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1275.webp",
-    "href": "/admin/vorlagen/datei/social/social-1275.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1371.webp",
+    "href": "/admin/vorlagen/datei/social/social-1371.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16631,8 +17879,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1276.webp",
-    "href": "/admin/vorlagen/datei/social/social-1276.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1372.webp",
+    "href": "/admin/vorlagen/datei/social/social-1372.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16644,8 +17892,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1277.webp",
-    "href": "/admin/vorlagen/datei/social/social-1277.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1373.webp",
+    "href": "/admin/vorlagen/datei/social/social-1373.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16657,8 +17905,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1278.webp",
-    "href": "/admin/vorlagen/datei/social/social-1278.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1374.webp",
+    "href": "/admin/vorlagen/datei/social/social-1374.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16670,8 +17918,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1279.webp",
-    "href": "/admin/vorlagen/datei/social/social-1279.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1375.webp",
+    "href": "/admin/vorlagen/datei/social/social-1375.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16683,8 +17931,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1280.webp",
-    "href": "/admin/vorlagen/datei/social/social-1280.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1376.webp",
+    "href": "/admin/vorlagen/datei/social/social-1376.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16696,8 +17944,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1281.webp",
-    "href": "/admin/vorlagen/datei/social/social-1281.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1377.webp",
+    "href": "/admin/vorlagen/datei/social/social-1377.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16709,8 +17957,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1282.webp",
-    "href": "/admin/vorlagen/datei/social/social-1282.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1378.webp",
+    "href": "/admin/vorlagen/datei/social/social-1378.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16722,8 +17970,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1283.webp",
-    "href": "/admin/vorlagen/datei/social/social-1283.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1379.webp",
+    "href": "/admin/vorlagen/datei/social/social-1379.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16735,8 +17983,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1284.webp",
-    "href": "/admin/vorlagen/datei/social/social-1284.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1380.webp",
+    "href": "/admin/vorlagen/datei/social/social-1380.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16748,8 +17996,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1285.webp",
-    "href": "/admin/vorlagen/datei/social/social-1285.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1381.webp",
+    "href": "/admin/vorlagen/datei/social/social-1381.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16761,8 +18009,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1286.webp",
-    "href": "/admin/vorlagen/datei/social/social-1286.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1382.webp",
+    "href": "/admin/vorlagen/datei/social/social-1382.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16774,8 +18022,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1287.webp",
-    "href": "/admin/vorlagen/datei/social/social-1287.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1383.webp",
+    "href": "/admin/vorlagen/datei/social/social-1383.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16787,8 +18035,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1288.webp",
-    "href": "/admin/vorlagen/datei/social/social-1288.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1384.webp",
+    "href": "/admin/vorlagen/datei/social/social-1384.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16800,8 +18048,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1289.webp",
-    "href": "/admin/vorlagen/datei/social/social-1289.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1385.webp",
+    "href": "/admin/vorlagen/datei/social/social-1385.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16813,8 +18061,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1290.webp",
-    "href": "/admin/vorlagen/datei/social/social-1290.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1386.webp",
+    "href": "/admin/vorlagen/datei/social/social-1386.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16826,8 +18074,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1291.webp",
-    "href": "/admin/vorlagen/datei/social/social-1291.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1387.webp",
+    "href": "/admin/vorlagen/datei/social/social-1387.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16839,8 +18087,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1292.webp",
-    "href": "/admin/vorlagen/datei/social/social-1292.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1388.webp",
+    "href": "/admin/vorlagen/datei/social/social-1388.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16852,8 +18100,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1293.webp",
-    "href": "/admin/vorlagen/datei/social/social-1293.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1389.webp",
+    "href": "/admin/vorlagen/datei/social/social-1389.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16865,8 +18113,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1294.webp",
-    "href": "/admin/vorlagen/datei/social/social-1294.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1390.webp",
+    "href": "/admin/vorlagen/datei/social/social-1390.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16878,8 +18126,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1295.webp",
-    "href": "/admin/vorlagen/datei/social/social-1295.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1391.webp",
+    "href": "/admin/vorlagen/datei/social/social-1391.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16891,8 +18139,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1296.webp",
-    "href": "/admin/vorlagen/datei/social/social-1296.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1392.webp",
+    "href": "/admin/vorlagen/datei/social/social-1392.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16904,8 +18152,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1297.webp",
-    "href": "/admin/vorlagen/datei/social/social-1297.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1393.webp",
+    "href": "/admin/vorlagen/datei/social/social-1393.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16917,8 +18165,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1298.webp",
-    "href": "/admin/vorlagen/datei/social/social-1298.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1394.webp",
+    "href": "/admin/vorlagen/datei/social/social-1394.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16930,8 +18178,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1299.webp",
-    "href": "/admin/vorlagen/datei/social/social-1299.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1395.webp",
+    "href": "/admin/vorlagen/datei/social/social-1395.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16943,8 +18191,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1300.webp",
-    "href": "/admin/vorlagen/datei/social/social-1300.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1396.webp",
+    "href": "/admin/vorlagen/datei/social/social-1396.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16956,8 +18204,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1301.webp",
-    "href": "/admin/vorlagen/datei/social/social-1301.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1397.webp",
+    "href": "/admin/vorlagen/datei/social/social-1397.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16969,8 +18217,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1302.webp",
-    "href": "/admin/vorlagen/datei/social/social-1302.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1398.webp",
+    "href": "/admin/vorlagen/datei/social/social-1398.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16982,8 +18230,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1303.webp",
-    "href": "/admin/vorlagen/datei/social/social-1303.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1399.webp",
+    "href": "/admin/vorlagen/datei/social/social-1399.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -16995,8 +18243,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1304.webp",
-    "href": "/admin/vorlagen/datei/social/social-1304.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1400.webp",
+    "href": "/admin/vorlagen/datei/social/social-1400.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17008,8 +18256,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1305.webp",
-    "href": "/admin/vorlagen/datei/social/social-1305.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1401.webp",
+    "href": "/admin/vorlagen/datei/social/social-1401.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17021,8 +18269,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1306.webp",
-    "href": "/admin/vorlagen/datei/social/social-1306.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1402.webp",
+    "href": "/admin/vorlagen/datei/social/social-1402.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17034,8 +18282,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1307.webp",
-    "href": "/admin/vorlagen/datei/social/social-1307.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1403.webp",
+    "href": "/admin/vorlagen/datei/social/social-1403.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17047,8 +18295,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1308.webp",
-    "href": "/admin/vorlagen/datei/social/social-1308.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1404.webp",
+    "href": "/admin/vorlagen/datei/social/social-1404.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17060,8 +18308,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 tuerkis hell · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1309.webp",
-    "href": "/admin/vorlagen/datei/social/social-1309.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1405.webp",
+    "href": "/admin/vorlagen/datei/social/social-1405.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17073,8 +18321,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 tuerkis · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1310.webp",
-    "href": "/admin/vorlagen/datei/social/social-1310.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1406.webp",
+    "href": "/admin/vorlagen/datei/social/social-1406.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17086,8 +18334,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 1:1",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1311.webp",
-    "href": "/admin/vorlagen/datei/social/social-1311.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1407.webp",
+    "href": "/admin/vorlagen/datei/social/social-1407.webp",
     "masse": {
       "label": "1:1",
       "w": 1080,
@@ -17099,8 +18347,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1312.webp",
-    "href": "/admin/vorlagen/datei/social/social-1312.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1408.webp",
+    "href": "/admin/vorlagen/datei/social/social-1408.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17112,8 +18360,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1313.webp",
-    "href": "/admin/vorlagen/datei/social/social-1313.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1409.webp",
+    "href": "/admin/vorlagen/datei/social/social-1409.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17125,8 +18373,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1314.webp",
-    "href": "/admin/vorlagen/datei/social/social-1314.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1410.webp",
+    "href": "/admin/vorlagen/datei/social/social-1410.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17138,8 +18386,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1315.webp",
-    "href": "/admin/vorlagen/datei/social/social-1315.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1411.webp",
+    "href": "/admin/vorlagen/datei/social/social-1411.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17151,8 +18399,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1316.webp",
-    "href": "/admin/vorlagen/datei/social/social-1316.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1412.webp",
+    "href": "/admin/vorlagen/datei/social/social-1412.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17164,8 +18412,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1317.webp",
-    "href": "/admin/vorlagen/datei/social/social-1317.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1413.webp",
+    "href": "/admin/vorlagen/datei/social/social-1413.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17177,8 +18425,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1318.webp",
-    "href": "/admin/vorlagen/datei/social/social-1318.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1414.webp",
+    "href": "/admin/vorlagen/datei/social/social-1414.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17190,8 +18438,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1319.webp",
-    "href": "/admin/vorlagen/datei/social/social-1319.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1415.webp",
+    "href": "/admin/vorlagen/datei/social/social-1415.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17203,8 +18451,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1320.webp",
-    "href": "/admin/vorlagen/datei/social/social-1320.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1416.webp",
+    "href": "/admin/vorlagen/datei/social/social-1416.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17216,8 +18464,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1321.webp",
-    "href": "/admin/vorlagen/datei/social/social-1321.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1417.webp",
+    "href": "/admin/vorlagen/datei/social/social-1417.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17229,8 +18477,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1322.webp",
-    "href": "/admin/vorlagen/datei/social/social-1322.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1418.webp",
+    "href": "/admin/vorlagen/datei/social/social-1418.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17242,8 +18490,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1323.webp",
-    "href": "/admin/vorlagen/datei/social/social-1323.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1419.webp",
+    "href": "/admin/vorlagen/datei/social/social-1419.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17255,8 +18503,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1324.webp",
-    "href": "/admin/vorlagen/datei/social/social-1324.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1420.webp",
+    "href": "/admin/vorlagen/datei/social/social-1420.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17268,8 +18516,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1325.webp",
-    "href": "/admin/vorlagen/datei/social/social-1325.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1421.webp",
+    "href": "/admin/vorlagen/datei/social/social-1421.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17281,8 +18529,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1326.webp",
-    "href": "/admin/vorlagen/datei/social/social-1326.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1422.webp",
+    "href": "/admin/vorlagen/datei/social/social-1422.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17294,8 +18542,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1327.webp",
-    "href": "/admin/vorlagen/datei/social/social-1327.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1423.webp",
+    "href": "/admin/vorlagen/datei/social/social-1423.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17307,8 +18555,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1328.webp",
-    "href": "/admin/vorlagen/datei/social/social-1328.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1424.webp",
+    "href": "/admin/vorlagen/datei/social/social-1424.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17320,8 +18568,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1329.webp",
-    "href": "/admin/vorlagen/datei/social/social-1329.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1425.webp",
+    "href": "/admin/vorlagen/datei/social/social-1425.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17333,8 +18581,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1330.webp",
-    "href": "/admin/vorlagen/datei/social/social-1330.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1426.webp",
+    "href": "/admin/vorlagen/datei/social/social-1426.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17346,8 +18594,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1331.webp",
-    "href": "/admin/vorlagen/datei/social/social-1331.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1427.webp",
+    "href": "/admin/vorlagen/datei/social/social-1427.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17359,8 +18607,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1332.webp",
-    "href": "/admin/vorlagen/datei/social/social-1332.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1428.webp",
+    "href": "/admin/vorlagen/datei/social/social-1428.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17372,8 +18620,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1333.webp",
-    "href": "/admin/vorlagen/datei/social/social-1333.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1429.webp",
+    "href": "/admin/vorlagen/datei/social/social-1429.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17385,8 +18633,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1334.webp",
-    "href": "/admin/vorlagen/datei/social/social-1334.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1430.webp",
+    "href": "/admin/vorlagen/datei/social/social-1430.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17398,8 +18646,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1335.webp",
-    "href": "/admin/vorlagen/datei/social/social-1335.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1431.webp",
+    "href": "/admin/vorlagen/datei/social/social-1431.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17411,8 +18659,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1336.webp",
-    "href": "/admin/vorlagen/datei/social/social-1336.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1432.webp",
+    "href": "/admin/vorlagen/datei/social/social-1432.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17424,8 +18672,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1337.webp",
-    "href": "/admin/vorlagen/datei/social/social-1337.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1433.webp",
+    "href": "/admin/vorlagen/datei/social/social-1433.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17437,8 +18685,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1338.webp",
-    "href": "/admin/vorlagen/datei/social/social-1338.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1434.webp",
+    "href": "/admin/vorlagen/datei/social/social-1434.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17450,8 +18698,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1339.webp",
-    "href": "/admin/vorlagen/datei/social/social-1339.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1435.webp",
+    "href": "/admin/vorlagen/datei/social/social-1435.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17463,8 +18711,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1340.webp",
-    "href": "/admin/vorlagen/datei/social/social-1340.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1436.webp",
+    "href": "/admin/vorlagen/datei/social/social-1436.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17476,8 +18724,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1341.webp",
-    "href": "/admin/vorlagen/datei/social/social-1341.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1437.webp",
+    "href": "/admin/vorlagen/datei/social/social-1437.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17489,8 +18737,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1342.webp",
-    "href": "/admin/vorlagen/datei/social/social-1342.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1438.webp",
+    "href": "/admin/vorlagen/datei/social/social-1438.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17502,8 +18750,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1343.webp",
-    "href": "/admin/vorlagen/datei/social/social-1343.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1439.webp",
+    "href": "/admin/vorlagen/datei/social/social-1439.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17515,8 +18763,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1344.webp",
-    "href": "/admin/vorlagen/datei/social/social-1344.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1440.webp",
+    "href": "/admin/vorlagen/datei/social/social-1440.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17528,8 +18776,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1345.webp",
-    "href": "/admin/vorlagen/datei/social/social-1345.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1441.webp",
+    "href": "/admin/vorlagen/datei/social/social-1441.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17541,8 +18789,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1346.webp",
-    "href": "/admin/vorlagen/datei/social/social-1346.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1442.webp",
+    "href": "/admin/vorlagen/datei/social/social-1442.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17554,8 +18802,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1347.webp",
-    "href": "/admin/vorlagen/datei/social/social-1347.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1443.webp",
+    "href": "/admin/vorlagen/datei/social/social-1443.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17567,8 +18815,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1348.webp",
-    "href": "/admin/vorlagen/datei/social/social-1348.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1444.webp",
+    "href": "/admin/vorlagen/datei/social/social-1444.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17580,8 +18828,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1349.webp",
-    "href": "/admin/vorlagen/datei/social/social-1349.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1445.webp",
+    "href": "/admin/vorlagen/datei/social/social-1445.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17593,8 +18841,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1350.webp",
-    "href": "/admin/vorlagen/datei/social/social-1350.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1446.webp",
+    "href": "/admin/vorlagen/datei/social/social-1446.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17606,8 +18854,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1351.webp",
-    "href": "/admin/vorlagen/datei/social/social-1351.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1447.webp",
+    "href": "/admin/vorlagen/datei/social/social-1447.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17619,8 +18867,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1352.webp",
-    "href": "/admin/vorlagen/datei/social/social-1352.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1448.webp",
+    "href": "/admin/vorlagen/datei/social/social-1448.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17632,8 +18880,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1353.webp",
-    "href": "/admin/vorlagen/datei/social/social-1353.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1449.webp",
+    "href": "/admin/vorlagen/datei/social/social-1449.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17645,8 +18893,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1354.webp",
-    "href": "/admin/vorlagen/datei/social/social-1354.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1450.webp",
+    "href": "/admin/vorlagen/datei/social/social-1450.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17658,8 +18906,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1355.webp",
-    "href": "/admin/vorlagen/datei/social/social-1355.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1451.webp",
+    "href": "/admin/vorlagen/datei/social/social-1451.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17671,8 +18919,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1356.webp",
-    "href": "/admin/vorlagen/datei/social/social-1356.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1452.webp",
+    "href": "/admin/vorlagen/datei/social/social-1452.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17684,8 +18932,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1357.webp",
-    "href": "/admin/vorlagen/datei/social/social-1357.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1453.webp",
+    "href": "/admin/vorlagen/datei/social/social-1453.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17697,8 +18945,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1358.webp",
-    "href": "/admin/vorlagen/datei/social/social-1358.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1454.webp",
+    "href": "/admin/vorlagen/datei/social/social-1454.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17710,8 +18958,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1359.webp",
-    "href": "/admin/vorlagen/datei/social/social-1359.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1455.webp",
+    "href": "/admin/vorlagen/datei/social/social-1455.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17723,8 +18971,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1360.webp",
-    "href": "/admin/vorlagen/datei/social/social-1360.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1456.webp",
+    "href": "/admin/vorlagen/datei/social/social-1456.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17736,8 +18984,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1361.webp",
-    "href": "/admin/vorlagen/datei/social/social-1361.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1457.webp",
+    "href": "/admin/vorlagen/datei/social/social-1457.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17749,8 +18997,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1362.webp",
-    "href": "/admin/vorlagen/datei/social/social-1362.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1458.webp",
+    "href": "/admin/vorlagen/datei/social/social-1458.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17762,8 +19010,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1363.webp",
-    "href": "/admin/vorlagen/datei/social/social-1363.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1459.webp",
+    "href": "/admin/vorlagen/datei/social/social-1459.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17775,8 +19023,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1364.webp",
-    "href": "/admin/vorlagen/datei/social/social-1364.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1460.webp",
+    "href": "/admin/vorlagen/datei/social/social-1460.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17788,8 +19036,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 tuerkis hell · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1365.webp",
-    "href": "/admin/vorlagen/datei/social/social-1365.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1461.webp",
+    "href": "/admin/vorlagen/datei/social/social-1461.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17801,8 +19049,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 tuerkis · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1366.webp",
-    "href": "/admin/vorlagen/datei/social/social-1366.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1462.webp",
+    "href": "/admin/vorlagen/datei/social/social-1462.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17814,8 +19062,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 4:5",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1367.webp",
-    "href": "/admin/vorlagen/datei/social/social-1367.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1463.webp",
+    "href": "/admin/vorlagen/datei/social/social-1463.webp",
     "masse": {
       "label": "4:5",
       "w": 1080,
@@ -17827,8 +19075,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1368.webp",
-    "href": "/admin/vorlagen/datei/social/social-1368.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1464.webp",
+    "href": "/admin/vorlagen/datei/social/social-1464.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17840,8 +19088,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1369.webp",
-    "href": "/admin/vorlagen/datei/social/social-1369.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1465.webp",
+    "href": "/admin/vorlagen/datei/social/social-1465.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17853,8 +19101,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1370.webp",
-    "href": "/admin/vorlagen/datei/social/social-1370.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1466.webp",
+    "href": "/admin/vorlagen/datei/social/social-1466.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17866,8 +19114,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 01 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1371.webp",
-    "href": "/admin/vorlagen/datei/social/social-1371.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1467.webp",
+    "href": "/admin/vorlagen/datei/social/social-1467.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17879,8 +19127,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1372.webp",
-    "href": "/admin/vorlagen/datei/social/social-1372.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1468.webp",
+    "href": "/admin/vorlagen/datei/social/social-1468.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17892,8 +19140,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1373.webp",
-    "href": "/admin/vorlagen/datei/social/social-1373.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1469.webp",
+    "href": "/admin/vorlagen/datei/social/social-1469.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17905,8 +19153,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1374.webp",
-    "href": "/admin/vorlagen/datei/social/social-1374.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1470.webp",
+    "href": "/admin/vorlagen/datei/social/social-1470.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17918,8 +19166,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 02 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1375.webp",
-    "href": "/admin/vorlagen/datei/social/social-1375.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1471.webp",
+    "href": "/admin/vorlagen/datei/social/social-1471.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17931,8 +19179,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1376.webp",
-    "href": "/admin/vorlagen/datei/social/social-1376.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1472.webp",
+    "href": "/admin/vorlagen/datei/social/social-1472.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17944,8 +19192,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1377.webp",
-    "href": "/admin/vorlagen/datei/social/social-1377.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1473.webp",
+    "href": "/admin/vorlagen/datei/social/social-1473.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17957,8 +19205,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1378.webp",
-    "href": "/admin/vorlagen/datei/social/social-1378.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1474.webp",
+    "href": "/admin/vorlagen/datei/social/social-1474.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17970,8 +19218,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 03 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1379.webp",
-    "href": "/admin/vorlagen/datei/social/social-1379.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1475.webp",
+    "href": "/admin/vorlagen/datei/social/social-1475.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17983,8 +19231,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1380.webp",
-    "href": "/admin/vorlagen/datei/social/social-1380.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1476.webp",
+    "href": "/admin/vorlagen/datei/social/social-1476.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -17996,8 +19244,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1381.webp",
-    "href": "/admin/vorlagen/datei/social/social-1381.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1477.webp",
+    "href": "/admin/vorlagen/datei/social/social-1477.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18009,8 +19257,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1382.webp",
-    "href": "/admin/vorlagen/datei/social/social-1382.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1478.webp",
+    "href": "/admin/vorlagen/datei/social/social-1478.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18022,8 +19270,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 04 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1383.webp",
-    "href": "/admin/vorlagen/datei/social/social-1383.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1479.webp",
+    "href": "/admin/vorlagen/datei/social/social-1479.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18035,8 +19283,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1384.webp",
-    "href": "/admin/vorlagen/datei/social/social-1384.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1480.webp",
+    "href": "/admin/vorlagen/datei/social/social-1480.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18048,8 +19296,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1385.webp",
-    "href": "/admin/vorlagen/datei/social/social-1385.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1481.webp",
+    "href": "/admin/vorlagen/datei/social/social-1481.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18061,8 +19309,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1386.webp",
-    "href": "/admin/vorlagen/datei/social/social-1386.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1482.webp",
+    "href": "/admin/vorlagen/datei/social/social-1482.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18074,8 +19322,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 05 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1387.webp",
-    "href": "/admin/vorlagen/datei/social/social-1387.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1483.webp",
+    "href": "/admin/vorlagen/datei/social/social-1483.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18087,8 +19335,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1388.webp",
-    "href": "/admin/vorlagen/datei/social/social-1388.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1484.webp",
+    "href": "/admin/vorlagen/datei/social/social-1484.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18100,8 +19348,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1389.webp",
-    "href": "/admin/vorlagen/datei/social/social-1389.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1485.webp",
+    "href": "/admin/vorlagen/datei/social/social-1485.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18113,8 +19361,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1390.webp",
-    "href": "/admin/vorlagen/datei/social/social-1390.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1486.webp",
+    "href": "/admin/vorlagen/datei/social/social-1486.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18126,8 +19374,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 06 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1391.webp",
-    "href": "/admin/vorlagen/datei/social/social-1391.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1487.webp",
+    "href": "/admin/vorlagen/datei/social/social-1487.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18139,8 +19387,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1392.webp",
-    "href": "/admin/vorlagen/datei/social/social-1392.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1488.webp",
+    "href": "/admin/vorlagen/datei/social/social-1488.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18152,8 +19400,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1393.webp",
-    "href": "/admin/vorlagen/datei/social/social-1393.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1489.webp",
+    "href": "/admin/vorlagen/datei/social/social-1489.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18165,8 +19413,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1394.webp",
-    "href": "/admin/vorlagen/datei/social/social-1394.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1490.webp",
+    "href": "/admin/vorlagen/datei/social/social-1490.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18178,8 +19426,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 07 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1395.webp",
-    "href": "/admin/vorlagen/datei/social/social-1395.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1491.webp",
+    "href": "/admin/vorlagen/datei/social/social-1491.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18191,8 +19439,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1396.webp",
-    "href": "/admin/vorlagen/datei/social/social-1396.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1492.webp",
+    "href": "/admin/vorlagen/datei/social/social-1492.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18204,8 +19452,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1397.webp",
-    "href": "/admin/vorlagen/datei/social/social-1397.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1493.webp",
+    "href": "/admin/vorlagen/datei/social/social-1493.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18217,8 +19465,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1398.webp",
-    "href": "/admin/vorlagen/datei/social/social-1398.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1494.webp",
+    "href": "/admin/vorlagen/datei/social/social-1494.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18230,8 +19478,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 08 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1399.webp",
-    "href": "/admin/vorlagen/datei/social/social-1399.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1495.webp",
+    "href": "/admin/vorlagen/datei/social/social-1495.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18243,8 +19491,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1400.webp",
-    "href": "/admin/vorlagen/datei/social/social-1400.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1496.webp",
+    "href": "/admin/vorlagen/datei/social/social-1496.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18256,8 +19504,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1401.webp",
-    "href": "/admin/vorlagen/datei/social/social-1401.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1497.webp",
+    "href": "/admin/vorlagen/datei/social/social-1497.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18269,8 +19517,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1402.webp",
-    "href": "/admin/vorlagen/datei/social/social-1402.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1498.webp",
+    "href": "/admin/vorlagen/datei/social/social-1498.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18282,8 +19530,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 09 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1403.webp",
-    "href": "/admin/vorlagen/datei/social/social-1403.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1499.webp",
+    "href": "/admin/vorlagen/datei/social/social-1499.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18295,21 +19543,24 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1404.webp",
-    "href": "/admin/vorlagen/datei/social/social-1404.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1500.webp",
+    "href": "/admin/vorlagen/datei/social/social-1500.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
       "h": 1920
     }
-  },
+  }
+];
+
+const vorlagenAssets6: VorlagenAsset[] = [
   {
     "kategorie": "social",
     "titel": "Studienfakt 10 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1405.webp",
-    "href": "/admin/vorlagen/datei/social/social-1405.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1501.webp",
+    "href": "/admin/vorlagen/datei/social/social-1501.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18321,8 +19572,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1406.webp",
-    "href": "/admin/vorlagen/datei/social/social-1406.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1502.webp",
+    "href": "/admin/vorlagen/datei/social/social-1502.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18334,8 +19585,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 10 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1407.webp",
-    "href": "/admin/vorlagen/datei/social/social-1407.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1503.webp",
+    "href": "/admin/vorlagen/datei/social/social-1503.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18347,8 +19598,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1408.webp",
-    "href": "/admin/vorlagen/datei/social/social-1408.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1504.webp",
+    "href": "/admin/vorlagen/datei/social/social-1504.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18360,8 +19611,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1409.webp",
-    "href": "/admin/vorlagen/datei/social/social-1409.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1505.webp",
+    "href": "/admin/vorlagen/datei/social/social-1505.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18373,8 +19624,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1410.webp",
-    "href": "/admin/vorlagen/datei/social/social-1410.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1506.webp",
+    "href": "/admin/vorlagen/datei/social/social-1506.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18386,8 +19637,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 11 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1411.webp",
-    "href": "/admin/vorlagen/datei/social/social-1411.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1507.webp",
+    "href": "/admin/vorlagen/datei/social/social-1507.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18399,8 +19650,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1412.webp",
-    "href": "/admin/vorlagen/datei/social/social-1412.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1508.webp",
+    "href": "/admin/vorlagen/datei/social/social-1508.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18412,8 +19663,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1413.webp",
-    "href": "/admin/vorlagen/datei/social/social-1413.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1509.webp",
+    "href": "/admin/vorlagen/datei/social/social-1509.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18425,8 +19676,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1414.webp",
-    "href": "/admin/vorlagen/datei/social/social-1414.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1510.webp",
+    "href": "/admin/vorlagen/datei/social/social-1510.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18438,8 +19689,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 12 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1415.webp",
-    "href": "/admin/vorlagen/datei/social/social-1415.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1511.webp",
+    "href": "/admin/vorlagen/datei/social/social-1511.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18451,8 +19702,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1416.webp",
-    "href": "/admin/vorlagen/datei/social/social-1416.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1512.webp",
+    "href": "/admin/vorlagen/datei/social/social-1512.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18464,8 +19715,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1417.webp",
-    "href": "/admin/vorlagen/datei/social/social-1417.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1513.webp",
+    "href": "/admin/vorlagen/datei/social/social-1513.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18477,8 +19728,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1418.webp",
-    "href": "/admin/vorlagen/datei/social/social-1418.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1514.webp",
+    "href": "/admin/vorlagen/datei/social/social-1514.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18490,8 +19741,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 13 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1419.webp",
-    "href": "/admin/vorlagen/datei/social/social-1419.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1515.webp",
+    "href": "/admin/vorlagen/datei/social/social-1515.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18503,8 +19754,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1420.webp",
-    "href": "/admin/vorlagen/datei/social/social-1420.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1516.webp",
+    "href": "/admin/vorlagen/datei/social/social-1516.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18516,8 +19767,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 tuerkis hell · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1421.webp",
-    "href": "/admin/vorlagen/datei/social/social-1421.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1517.webp",
+    "href": "/admin/vorlagen/datei/social/social-1517.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18529,8 +19780,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 tuerkis · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1422.webp",
-    "href": "/admin/vorlagen/datei/social/social-1422.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1518.webp",
+    "href": "/admin/vorlagen/datei/social/social-1518.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -18542,8 +19793,8 @@ const vorlagenAssets5: VorlagenAsset[] = [
     "titel": "Studienfakt 14 · 9:16",
     "unterKategorie": "Studien-Fakten",
     "kind": "image",
-    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1423.webp",
-    "href": "/admin/vorlagen/datei/social/social-1423.webp",
+    "thumb": "/admin/vorlagen/datei/thumbs/social/social-1519.webp",
+    "href": "/admin/vorlagen/datei/social/social-1519.webp",
     "masse": {
       "label": "9:16",
       "w": 1080,
@@ -21706,10 +22957,7 @@ const vorlagenAssets5: VorlagenAsset[] = [
       "w": 1080,
       "h": 1920
     }
-  }
-];
-
-const vorlagenAssets6: VorlagenAsset[] = [
+  },
   {
     "kategorie": "reels",
     "titel": "Mentale Selbstverteidigung · Cover 04 · Türkis · Creme",
@@ -28142,7 +29390,10 @@ const vorlagenAssets6: VorlagenAsset[] = [
       "w": 1080,
       "h": 1920
     }
-  },
+  }
+];
+
+const vorlagenAssets7: VorlagenAsset[] = [
   {
     "kategorie": "reels",
     "titel": "Wissenschaft · Cover 06 · Gold · Dunkel",
@@ -28354,7 +29605,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__4-6-atmung/slide-01.webp",
@@ -28566,7 +29817,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis/slide-01.webp",
@@ -28601,7 +29852,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__abend-reflexion-tuerkis-hell/slide-01.webp",
@@ -28707,7 +29958,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis/slide-01.webp",
@@ -28742,7 +29993,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__atembeobachtung-tuerkis-hell/slide-01.webp",
@@ -28777,7 +30028,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__body-scan/slide-01.webp",
@@ -28918,7 +30169,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.7,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__box-breathing/slide-01.webp",
@@ -29130,7 +30381,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis/slide-01.webp",
@@ -29165,7 +30416,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-autopilot-check-tuerkis-hell/slide-01.webp",
@@ -29271,7 +30522,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis/slide-01.webp",
@@ -29306,7 +30557,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__der-innere-beobachter-tuerkis-hell/slide-01.webp",
@@ -29341,7 +30592,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__die-taegliche-rueckkehr/slide-01.webp",
@@ -29553,7 +30804,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis/slide-01.webp",
@@ -29588,7 +30839,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__herz-kohaerenz-tuerkis-hell/slide-01.webp",
@@ -29659,7 +30910,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-hell/slide-01.webp",
@@ -29694,7 +30945,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis/slide-01.webp",
@@ -29729,7 +30980,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__loslass-ritual-tuerkis-hell/slide-01.webp",
@@ -29835,7 +31086,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.9,
+    "sizeMB": 0.8,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis/slide-01.webp",
@@ -29870,7 +31121,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__morgen-ausrichtung-tuerkis-hell/slide-01.webp",
@@ -29941,7 +31192,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-hell/slide-01.webp",
@@ -30011,7 +31262,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__praesenz-spaziergang-tuerkis-hell/slide-01.webp",
@@ -30046,7 +31297,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.8,
+    "sizeMB": 0.7,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen/slide-01.webp",
@@ -30082,7 +31333,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Praxis",
     "kind": "carousel",
     "slides": 6,
-    "sizeMB": 0.7,
+    "sizeMB": 0.6,
     "thumb": "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/praxis__verlaengertes-ausatmen-hell/slide-01.webp",
@@ -30187,7 +31438,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung/slide-01.webp",
@@ -30224,7 +31475,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-hell/slide-01.webp",
@@ -30260,7 +31511,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__ablenkung-tuerkis/slide-01.webp",
@@ -30332,7 +31583,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen/slide-01.webp",
@@ -30369,7 +31620,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-hell/slide-01.webp",
@@ -30405,7 +31656,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__algorithmen-tuerkis/slide-01.webp",
@@ -30550,7 +31801,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis/slide-01.webp",
@@ -30586,7 +31837,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__angst-steuerung-tuerkis-hell/slide-01.webp",
@@ -30622,7 +31873,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
@@ -30659,7 +31910,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__autoritaetshoerigkeit-hell/slide-01.webp",
@@ -30840,7 +32091,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis/slide-01.webp",
@@ -30876,7 +32127,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__bildmacht-tuerkis-hell/slide-01.webp",
@@ -30912,7 +32163,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing/slide-01.webp",
@@ -30949,7 +32200,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-hell/slide-01.webp",
@@ -30985,7 +32236,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis/slide-01.webp",
@@ -31021,7 +32272,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__framing-tuerkis-hell/slide-01.webp",
@@ -31057,7 +32308,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck/slide-01.webp",
@@ -31094,7 +32345,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__gruppendruck-hell/slide-01.webp",
@@ -31275,7 +32526,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis/slide-01.webp",
@@ -31311,7 +32562,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__identitaet-und-meinung-tuerkis-hell/slide-01.webp",
@@ -31347,7 +32598,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz/slide-01.webp",
@@ -31384,7 +32635,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-hell/slide-01.webp",
@@ -31420,7 +32671,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__kognitive-dissonanz-tuerkis/slide-01.webp",
@@ -31529,7 +32780,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-hell/slide-01.webp",
@@ -31565,7 +32816,7 @@ const vorlagenAssets6: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis/slide-01.webp",
@@ -31594,17 +32845,14 @@ const vorlagenAssets6: VorlagenAsset[] = [
         "h": 1920
       }
     ]
-  }
-];
-
-const vorlagenAssets7: VorlagenAsset[] = [
+  },
   {
     "kategorie": "carousel",
     "titel": "medien agenda · Türkis · Creme",
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__medien-agenda-tuerkis-hell/slide-01.webp",
@@ -31713,7 +32961,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis/slide-01.webp",
@@ -31749,7 +32997,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__normalisierung-tuerkis-hell/slide-01.webp",
@@ -31785,7 +33033,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda/slide-01.webp",
@@ -31822,7 +33070,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-hell/slide-01.webp",
@@ -31858,7 +33106,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis/slide-01.webp",
@@ -31894,7 +33142,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__propaganda-tuerkis-hell/slide-01.webp",
@@ -31930,7 +33178,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung/slide-01.webp",
@@ -31967,7 +33215,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-hell/slide-01.webp",
@@ -32003,7 +33251,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis/slide-01.webp",
@@ -32039,7 +33287,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__reizueberflutung-tuerkis-hell/slide-01.webp",
@@ -32075,7 +33323,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten/slide-01.webp",
@@ -32112,7 +33360,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-hell/slide-01.webp",
@@ -32184,7 +33432,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__sprache-und-etiketten-tuerkis-hell/slide-01.webp",
@@ -32220,7 +33468,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel/slide-01.webp",
@@ -32257,7 +33505,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-hell/slide-01.webp",
@@ -32329,7 +33577,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__werbung-und-mangel-tuerkis-hell/slide-01.webp",
@@ -32365,7 +33613,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung/slide-01.webp",
@@ -32402,7 +33650,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-hell/slide-01.webp",
@@ -32438,7 +33686,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/selbstverteidigung__wiederholung-tuerkis/slide-01.webp",
@@ -32583,7 +33831,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis/slide-01.webp",
@@ -32619,7 +33867,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__autopilot-tuerkis-hell/slide-01.webp",
@@ -32764,7 +34012,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__emotionale-reifung-tuerkis-hell/slide-01.webp",
@@ -32873,7 +34121,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis/slide-01.webp",
@@ -32909,7 +34157,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__erwachen-tuerkis-hell/slide-01.webp",
@@ -33018,7 +34266,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis/slide-01.webp",
@@ -33054,7 +34302,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__innere-ausrichtung-tuerkis-hell/slide-01.webp",
@@ -33163,7 +34411,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis/slide-01.webp",
@@ -33199,7 +34447,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__meisterschaft-tuerkis-hell/slide-01.webp",
@@ -33308,7 +34556,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis/slide-01.webp",
@@ -33344,7 +34592,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__schoepferkraft-tuerkis-hell/slide-01.webp",
@@ -33453,7 +34701,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis/slide-01.webp",
@@ -33489,7 +34737,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Die 7 Stufen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/stufen__selbstbeobachtung-tuerkis-hell/slide-01.webp",
@@ -33525,7 +34773,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken/slide-01.webp",
@@ -33562,7 +34810,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-hell/slide-01.webp",
@@ -33598,7 +34846,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis/slide-01.webp",
@@ -33634,7 +34882,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__automatische-gedanken-tuerkis-hell/slide-01.webp",
@@ -33707,7 +34955,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-hell/slide-01.webp",
@@ -33743,7 +34991,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis/slide-01.webp",
@@ -33779,7 +35027,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__der-innere-kritiker-tuerkis-hell/slide-01.webp",
@@ -33852,7 +35100,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-hell/slide-01.webp",
@@ -33888,7 +35136,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis/slide-01.webp",
@@ -33924,7 +35172,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__die-reiz-reaktions-luecke-tuerkis-hell/slide-01.webp",
@@ -33960,7 +35208,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation/slide-01.webp",
@@ -33997,7 +35245,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-hell/slide-01.webp",
@@ -34033,7 +35281,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis/slide-01.webp",
@@ -34069,7 +35317,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__emotionsregulation-tuerkis-hell/slide-01.webp",
@@ -34142,7 +35390,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-hell/slide-01.webp",
@@ -34178,7 +35426,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis/slide-01.webp",
@@ -34214,7 +35462,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__gruebeln-und-gedankenkreisen-tuerkis-hell/slide-01.webp",
@@ -34250,7 +35498,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe/slide-01.webp",
@@ -34287,7 +35535,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-hell/slide-01.webp",
@@ -34323,7 +35571,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis/slide-01.webp",
@@ -34359,7 +35607,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__integration-und-weitergabe-tuerkis-hell/slide-01.webp",
@@ -34395,7 +35643,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen/slide-01.webp",
@@ -34432,7 +35680,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-hell/slide-01.webp",
@@ -34468,7 +35716,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis/slide-01.webp",
@@ -34504,7 +35752,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kernueberzeugungen-tuerkis-hell/slide-01.webp",
@@ -34577,7 +35825,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-hell/slide-01.webp",
@@ -34613,7 +35861,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis/slide-01.webp",
@@ -34649,7 +35897,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__kognitive-verzerrungen-tuerkis-hell/slide-01.webp",
@@ -34685,7 +35933,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung/slide-01.webp",
@@ -34722,7 +35970,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-hell/slide-01.webp",
@@ -34758,7 +36006,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis/slide-01.webp",
@@ -34794,7 +36042,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__konditionierung-tuerkis-hell/slide-01.webp",
@@ -34867,7 +36115,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-hell/slide-01.webp",
@@ -34939,7 +36187,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__muster-koerper-und-gesundheit-tuerkis-hell/slide-01.webp",
@@ -34975,7 +36223,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet/slide-01.webp",
@@ -35012,7 +36260,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-hell/slide-01.webp",
@@ -35048,7 +36296,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.2,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis/slide-01.webp",
@@ -35084,7 +36332,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__neuroplastizitaet-tuerkis-hell/slide-01.webp",
@@ -35157,7 +36405,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-hell/slide-01.webp",
@@ -35193,7 +36441,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.4,
+    "sizeMB": 1.3,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis/slide-01.webp",
@@ -35229,7 +36477,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.3,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__selbstmitgefuehl-tuerkis-hell/slide-01.webp",
@@ -35302,7 +36550,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-hell/slide-01.webp",
@@ -35338,7 +36586,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.2,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis/slide-01.webp",
@@ -35374,7 +36622,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen",
     "kind": "carousel",
     "slides": 7,
-    "sizeMB": 1.1,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousels/vertiefungen__werte-und-ziele-tuerkis-hell/slide-01.webp",
@@ -37004,7 +38252,10 @@ const vorlagenAssets7: VorlagenAsset[] = [
         "h": 1920
       }
     ]
-  },
+  }
+];
+
+const vorlagenAssets8: VorlagenAsset[] = [
   {
     "kategorie": "carousel",
     "titel": "Zitat 25",
@@ -37523,7 +38774,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 01",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 01",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 01",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-01/preview-reel-9x16.webp",
@@ -37567,7 +38950,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 02",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 02",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 02",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-02/preview-reel-9x16.webp",
@@ -37611,7 +39126,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Landing / Allgemein · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
@@ -37621,6 +39136,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 03",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 03",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Landing / Allgemein · Cover 03",
+    "unterKategorie": "Landing / Allgemein · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-landing-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 01",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 01",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 01",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-01.zip",
     "formate": [
       {
         "label": "9:16",
@@ -37739,11 +39518,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "Praxis · Cover 03",
+    "titel": "Praxis · Cover 02",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 02",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 02",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 03",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 03",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 03",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 03",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-03/preview-reel-9x16.webp",
@@ -37827,11 +39870,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "Praxis · Cover 05",
+    "titel": "Praxis · Cover 04",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 04",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 04",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 05",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 05",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 05",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 05",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-05/preview-reel-9x16.webp",
@@ -37915,11 +40222,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Praxis · Cover 06",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 06",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 06",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Praxis · Cover 07",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.8,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 07",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 07",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 07",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-07/preview-reel-9x16.webp",
@@ -37963,7 +40534,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.8,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 08",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 08",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 08",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-08/preview-reel-9x16.webp",
@@ -38007,7 +40710,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
@@ -38017,6 +40720,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 09",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 09",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 09",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 10",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 10",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 10",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-10.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38135,11 +41102,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "Praxis · Cover 12",
+    "titel": "Praxis · Cover 11",
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 11",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 11",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.8,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 12",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 12",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 12",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 12",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-12/preview-reel-9x16.webp",
@@ -38183,7 +41414,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Praxis · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 13",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 13",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Praxis · Cover 13",
+    "unterKategorie": "Praxis · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-praxis-13/preview-reel-9x16.webp",
@@ -38227,7 +41590,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
@@ -38237,6 +41600,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 01",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 01",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 01",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 02",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-02.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38355,11 +41982,143 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "titel": "Mentale Selbstverteidigung · Cover 03",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 03",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 03",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
@@ -38369,6 +42128,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 04",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 05",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-05.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38487,6 +42510,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 06",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 07",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Mentale Selbstverteidigung · Cover 07",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
@@ -38535,7 +42822,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 08",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-08/preview-reel-9x16.webp",
@@ -38579,7 +42998,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 09",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-09/preview-reel-9x16.webp",
@@ -38623,7 +43174,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
@@ -38633,6 +43184,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 10",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 11",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-11.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38751,11 +43566,143 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 12",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Mentale Selbstverteidigung · Cover 13",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
@@ -38765,6 +43712,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 13",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 14",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-14.zip",
     "formate": [
       {
         "label": "9:16",
@@ -38883,11 +44094,143 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 15",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-15.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Mentale Selbstverteidigung · Cover 16",
     "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
@@ -38897,6 +44240,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung · Cover 16",
+    "unterKategorie": "Mentale Selbstverteidigung · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-selbstverteidigung-16.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 01",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 01",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 01",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-01.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39015,6 +44622,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 02",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 02",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 02",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 03",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 03",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 03",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Die 7 Stufen · Cover 03",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
@@ -39103,11 +44974,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "Die 7 Stufen · Cover 05",
+    "titel": "Die 7 Stufen · Cover 04",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 04",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 04",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 05",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 05",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 05",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 05",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-05/preview-reel-9x16.webp",
@@ -39191,11 +45326,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 06",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 06",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 06",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Die 7 Stufen · Cover 07",
     "unterKategorie": "Die 7 Stufen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 07",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 07",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Die 7 Stufen · Cover 07",
+    "unterKategorie": "Die 7 Stufen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-stufen-07/preview-reel-9x16.webp",
@@ -39279,11 +45678,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 01",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 01",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 01",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Vertiefungen · Cover 02",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 02",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 02",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 02",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-02/preview-reel-9x16.webp",
@@ -39367,11 +46030,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 03",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 03",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 03",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Vertiefungen · Cover 04",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 04",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 04",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 04",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-04/preview-reel-9x16.webp",
@@ -39415,7 +46342,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 05",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 05",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 05",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-05/preview-reel-9x16.webp",
@@ -39499,11 +46558,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "Vertiefungen · Cover 07",
+    "titel": "Vertiefungen · Cover 06",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 06",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 06",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 07",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 07",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 07",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 07",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-07/preview-reel-9x16.webp",
@@ -39547,7 +46870,7 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
@@ -39557,6 +46880,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
     ],
     "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 08",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 08",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 08",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-08.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 09",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 09",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 09",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-09.zip",
     "formate": [
       {
         "label": "9:16",
@@ -39675,6 +47262,270 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 10",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 10",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 10",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-10.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 11",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 11",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 11",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-11.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Vertiefungen · Cover 11",
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
@@ -39723,7 +47574,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Vertiefungen · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 12",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 12",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 12",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-12/preview-reel-9x16.webp",
@@ -39807,11 +47790,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 13",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 13",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Vertiefungen · Cover 13",
+    "unterKategorie": "Vertiefungen · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-vertiefungen-13.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Wissenschaft · Cover 01",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 01",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 01",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 01",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-01/preview-reel-9x16.webp",
@@ -39855,7 +48102,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 1,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 02",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 02",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 02",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1.1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-02/preview-reel-9x16.webp",
@@ -39899,7 +48278,139 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 03",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 03",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 03",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-03/preview-reel-9x16.webp",
@@ -39983,11 +48494,275 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 04",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 04",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 04",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-04.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
     "titel": "Wissenschaft · Cover 05",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
-    "sizeMB": 0.9,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 05",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 05",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 05",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-05/preview-reel-9x16.webp",
@@ -40071,11 +48846,278 @@ const vorlagenAssets7: VorlagenAsset[] = [
   },
   {
     "kategorie": "carousel",
-    "titel": "Wissenschaft · Cover 07",
+    "titel": "Wissenschaft · Cover 06",
     "unterKategorie": "Wissenschaft · Cover-Overlay",
     "kind": "carousel",
     "slides": 5,
     "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 06",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 06",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-06.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 07",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 07",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  }
+];
+
+const vorlagenAssets9: VorlagenAsset[] = [
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 07",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-4x5.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-feed-1x1.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-pin-2x3.webp",
+      "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-landscape-16x9.webp"
+    ],
+    "href": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07.zip",
+    "formate": [
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      },
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "2:3",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "label": "16:9",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wissenschaft · Cover 07",
+    "unterKategorie": "Wissenschaft · Cover-Overlay",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
     "thumb": "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/cover-overlay/cover-overlay-wissenschaft-07/preview-reel-9x16.webp",
@@ -40118,8 +49160,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "das wissen",
     "unterKategorie": "Mitgliederbereich · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.6,
+    "slides": 28,
+    "sizeMB": 20.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-01.webp",
@@ -40128,7 +49170,28 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__das-wissen.zip",
     "formate": [
@@ -40154,8 +49217,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "dein journal",
     "unterKategorie": "Mitgliederbereich · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.2,
+    "slides": 28,
+    "sizeMB": 19.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-01.webp",
@@ -40164,7 +49227,28 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-journal.zip",
     "formate": [
@@ -40190,8 +49274,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "dein raum",
     "unterKategorie": "Mitgliederbereich · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.4,
+    "slides": 28,
+    "sizeMB": 19.9,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-01.webp",
@@ -40200,7 +49284,28 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__dein-raum.zip",
     "formate": [
@@ -40226,8 +49331,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "der einstieg",
     "unterKategorie": "Mitgliederbereich · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.6,
+    "slides": 28,
+    "sizeMB": 20.4,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-01.webp",
@@ -40236,7 +49341,28 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-einstieg.zip",
     "formate": [
@@ -40262,8 +49388,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "der weg",
     "unterKategorie": "Mitgliederbereich · Overlay",
     "kind": "carousel",
-    "slides": 8,
-    "sizeMB": 6.2,
+    "slides": 32,
+    "sizeMB": 22.5,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-01.webp",
@@ -40273,7 +49399,31 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-06.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-07.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-08.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-28.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-29.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-30.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-31.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg/slide-32.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__der-weg.zip",
     "formate": [
@@ -40299,8 +49449,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "zur ruhe kommen",
     "unterKategorie": "Mitgliederbereich · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.5,
+    "slides": 28,
+    "sizeMB": 20.1,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-01.webp",
@@ -40309,7 +49459,28 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-mitgliederbereich__zur-ruhe-kommen.zip",
     "formate": [
@@ -40335,8 +49506,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "4 6 atmung",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.4,
+    "slides": 24,
+    "sizeMB": 16,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-01.webp",
@@ -40344,7 +49515,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__4-6-atmung.zip",
     "formate": [
@@ -40370,8 +49559,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "abend reflexion",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.4,
+    "slides": 24,
+    "sizeMB": 16.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-01.webp",
@@ -40379,7 +49568,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__abend-reflexion.zip",
     "formate": [
@@ -40405,8 +49612,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "atembeobachtung",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.4,
+    "slides": 24,
+    "sizeMB": 16.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-01.webp",
@@ -40414,7 +49621,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__atembeobachtung.zip",
     "formate": [
@@ -40440,8 +49665,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "body scan",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.4,
+    "slides": 24,
+    "sizeMB": 16.1,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-01.webp",
@@ -40449,7 +49674,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__body-scan.zip",
     "formate": [
@@ -40475,8 +49718,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "box breathing",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 3.9,
+    "slides": 24,
+    "sizeMB": 14.8,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-01.webp",
@@ -40484,7 +49727,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__box-breathing.zip",
     "formate": [
@@ -40510,8 +49771,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "der autopilot check",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.3,
+    "slides": 24,
+    "sizeMB": 15.8,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-01.webp",
@@ -40519,7 +49780,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-autopilot-check.zip",
     "formate": [
@@ -40545,8 +49824,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "der innere beobachter",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.4,
+    "slides": 24,
+    "sizeMB": 16.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-01.webp",
@@ -40554,7 +49833,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__der-innere-beobachter.zip",
     "formate": [
@@ -40580,8 +49877,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "die taegliche rueckkehr",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.7,
+    "slides": 24,
+    "sizeMB": 17.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-01.webp",
@@ -40589,7 +49886,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__die-taegliche-rueckkehr.zip",
     "formate": [
@@ -40615,8 +49930,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "herz kohaerenz",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.6,
+    "slides": 24,
+    "sizeMB": 16.6,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-01.webp",
@@ -40624,7 +49939,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__herz-kohaerenz.zip",
     "formate": [
@@ -40650,8 +49983,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "loslass ritual",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.6,
+    "slides": 24,
+    "sizeMB": 16.9,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-01.webp",
@@ -40659,7 +49992,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__loslass-ritual.zip",
     "formate": [
@@ -40685,8 +50036,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "morgen ausrichtung",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.6,
+    "slides": 24,
+    "sizeMB": 16.8,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-01.webp",
@@ -40694,7 +50045,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__morgen-ausrichtung.zip",
     "formate": [
@@ -40720,8 +50089,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "praesenz spaziergang",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.5,
+    "slides": 24,
+    "sizeMB": 16.4,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-01.webp",
@@ -40729,7 +50098,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__praesenz-spaziergang.zip",
     "formate": [
@@ -40755,8 +50142,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "verlaengertes ausatmen",
     "unterKategorie": "Praxis · Overlay",
     "kind": "carousel",
-    "slides": 6,
-    "sizeMB": 4.2,
+    "slides": 24,
+    "sizeMB": 15.6,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-01.webp",
@@ -40764,7 +50151,25 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-03.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-05.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-06.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-06.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen/slide-24.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-praxis__verlaengertes-ausatmen.zip",
     "formate": [
@@ -40790,8 +50195,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "ablenkung",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.9,
+    "slides": 28,
+    "sizeMB": 21.4,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-01.webp",
@@ -40800,7 +50205,28 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__ablenkung.zip",
     "formate": [
@@ -40826,8 +50252,8 @@ const vorlagenAssets7: VorlagenAsset[] = [
     "titel": "algorithmen",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.8,
+    "slides": 28,
+    "sizeMB": 21.1,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-01.webp",
@@ -40836,7 +50262,28 @@ const vorlagenAssets7: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__algorithmen.zip",
     "formate": [
@@ -40856,17 +50303,14 @@ const vorlagenAssets7: VorlagenAsset[] = [
         "h": 1920
       }
     ]
-  }
-];
-
-const vorlagenAssets8: VorlagenAsset[] = [
+  },
   {
     "kategorie": "carousel",
     "titel": "angst steuerung",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.9,
+    "slides": 28,
+    "sizeMB": 21.4,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-01.webp",
@@ -40875,7 +50319,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__angst-steuerung.zip",
     "formate": [
@@ -40901,8 +50366,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "autoritaetshoerigkeit",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.8,
+    "slides": 28,
+    "sizeMB": 21.1,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-01.webp",
@@ -40911,7 +50376,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__autoritaetshoerigkeit.zip",
     "formate": [
@@ -40937,8 +50423,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "bildmacht",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6,
+    "slides": 28,
+    "sizeMB": 21.7,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-01.webp",
@@ -40947,7 +50433,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__bildmacht.zip",
     "formate": [
@@ -40973,8 +50480,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "framing",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.7,
+    "slides": 28,
+    "sizeMB": 20.9,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-01.webp",
@@ -40983,7 +50490,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__framing.zip",
     "formate": [
@@ -41009,8 +50537,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "gruppendruck",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.7,
+    "slides": 28,
+    "sizeMB": 21.1,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-01.webp",
@@ -41019,7 +50547,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__gruppendruck.zip",
     "formate": [
@@ -41045,8 +50594,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "identitaet und meinung",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.8,
+    "slides": 28,
+    "sizeMB": 21.1,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-01.webp",
@@ -41055,7 +50604,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__identitaet-und-meinung.zip",
     "formate": [
@@ -41081,8 +50651,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "kognitive dissonanz",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.1,
+    "slides": 28,
+    "sizeMB": 22.2,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-01.webp",
@@ -41091,7 +50661,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__kognitive-dissonanz.zip",
     "formate": [
@@ -41117,8 +50708,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "medien agenda",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.7,
+    "slides": 28,
+    "sizeMB": 21,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-01.webp",
@@ -41127,7 +50718,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__medien-agenda.zip",
     "formate": [
@@ -41153,8 +50765,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "normalisierung",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.9,
+    "slides": 28,
+    "sizeMB": 21.6,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-01.webp",
@@ -41163,7 +50775,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__normalisierung.zip",
     "formate": [
@@ -41189,8 +50822,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "propaganda",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.7,
+    "slides": 28,
+    "sizeMB": 21,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-01.webp",
@@ -41199,7 +50832,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__propaganda.zip",
     "formate": [
@@ -41225,8 +50879,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "reizueberflutung",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.2,
+    "slides": 28,
+    "sizeMB": 22.5,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-01.webp",
@@ -41235,7 +50889,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__reizueberflutung.zip",
     "formate": [
@@ -41261,8 +50936,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "sprache und etiketten",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.4,
+    "slides": 28,
+    "sizeMB": 20,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-01.webp",
@@ -41271,7 +50946,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__sprache-und-etiketten.zip",
     "formate": [
@@ -41297,8 +50993,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "werbung und mangel",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.7,
+    "slides": 28,
+    "sizeMB": 20.9,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-01.webp",
@@ -41307,7 +51003,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__werbung-und-mangel.zip",
     "formate": [
@@ -41333,8 +51050,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "wiederholung",
     "unterKategorie": "Mentale Selbstverteidigung · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.8,
+    "slides": 28,
+    "sizeMB": 21.2,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-01.webp",
@@ -41343,7 +51060,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-selbstverteidigung__wiederholung.zip",
     "formate": [
@@ -41369,8 +51107,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "autopilot",
     "unterKategorie": "Die 7 Stufen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.4,
+    "slides": 28,
+    "sizeMB": 20,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-01.webp",
@@ -41379,7 +51117,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__autopilot.zip",
     "formate": [
@@ -41405,8 +51164,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "emotionale reifung",
     "unterKategorie": "Die 7 Stufen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.8,
+    "slides": 28,
+    "sizeMB": 20.9,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-01.webp",
@@ -41415,7 +51174,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__emotionale-reifung.zip",
     "formate": [
@@ -41441,8 +51221,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "erwachen",
     "unterKategorie": "Die 7 Stufen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.6,
+    "slides": 28,
+    "sizeMB": 20.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-01.webp",
@@ -41451,7 +51231,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__erwachen.zip",
     "formate": [
@@ -41477,8 +51278,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "innere ausrichtung",
     "unterKategorie": "Die 7 Stufen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.4,
+    "slides": 28,
+    "sizeMB": 19.8,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-01.webp",
@@ -41487,7 +51288,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__innere-ausrichtung.zip",
     "formate": [
@@ -41513,8 +51335,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "meisterschaft",
     "unterKategorie": "Die 7 Stufen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.7,
+    "slides": 28,
+    "sizeMB": 20.5,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-01.webp",
@@ -41523,7 +51345,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__meisterschaft.zip",
     "formate": [
@@ -41549,8 +51392,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "schoepferkraft",
     "unterKategorie": "Die 7 Stufen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.7,
+    "slides": 28,
+    "sizeMB": 20.6,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-01.webp",
@@ -41559,7 +51402,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__schoepferkraft.zip",
     "formate": [
@@ -41585,8 +51449,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "selbstbeobachtung",
     "unterKategorie": "Die 7 Stufen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.6,
+    "slides": 28,
+    "sizeMB": 20.5,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-01.webp",
@@ -41595,7 +51459,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-stufen__selbstbeobachtung.zip",
     "formate": [
@@ -41621,8 +51506,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "automatische gedanken",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.4,
+    "slides": 28,
+    "sizeMB": 23,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-01.webp",
@@ -41631,7 +51516,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__automatische-gedanken.zip",
     "formate": [
@@ -41657,8 +51563,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "der innere kritiker",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.4,
+    "slides": 28,
+    "sizeMB": 22.9,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-01.webp",
@@ -41667,7 +51573,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__der-innere-kritiker.zip",
     "formate": [
@@ -41693,8 +51620,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "die reiz reaktions luecke",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.4,
+    "slides": 28,
+    "sizeMB": 23,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-01.webp",
@@ -41703,7 +51630,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__die-reiz-reaktions-luecke.zip",
     "formate": [
@@ -41729,8 +51677,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "emotionsregulation",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.2,
+    "slides": 28,
+    "sizeMB": 22.4,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-01.webp",
@@ -41739,7 +51687,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__emotionsregulation.zip",
     "formate": [
@@ -41765,8 +51734,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "gruebeln und gedankenkreisen",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.3,
+    "slides": 28,
+    "sizeMB": 22.9,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-01.webp",
@@ -41775,7 +51744,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__gruebeln-und-gedankenkreisen.zip",
     "formate": [
@@ -41801,8 +51791,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "integration und weitergabe",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.1,
+    "slides": 28,
+    "sizeMB": 22.3,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-01.webp",
@@ -41811,7 +51801,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__integration-und-weitergabe.zip",
     "formate": [
@@ -41837,8 +51848,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "kernueberzeugungen",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.3,
+    "slides": 28,
+    "sizeMB": 22.7,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-01.webp",
@@ -41847,7 +51858,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kernueberzeugungen.zip",
     "formate": [
@@ -41873,8 +51905,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "kognitive verzerrungen",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.3,
+    "slides": 28,
+    "sizeMB": 22.7,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-01.webp",
@@ -41883,7 +51915,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__kognitive-verzerrungen.zip",
     "formate": [
@@ -41909,8 +51962,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "konditionierung",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.3,
+    "slides": 28,
+    "sizeMB": 22.7,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-01.webp",
@@ -41919,7 +51972,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__konditionierung.zip",
     "formate": [
@@ -41945,8 +52019,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "muster koerper und gesundheit",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.6,
+    "slides": 28,
+    "sizeMB": 23.7,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-01.webp",
@@ -41955,7 +52029,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__muster-koerper-und-gesundheit.zip",
     "formate": [
@@ -41981,8 +52076,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "neuroplastizitaet",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.3,
+    "slides": 28,
+    "sizeMB": 22.7,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-01.webp",
@@ -41991,7 +52086,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__neuroplastizitaet.zip",
     "formate": [
@@ -42017,8 +52133,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "selbstmitgefuehl",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 6.3,
+    "slides": 28,
+    "sizeMB": 23,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-01.webp",
@@ -42027,7 +52143,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__selbstmitgefuehl.zip",
     "formate": [
@@ -42053,8 +52190,8 @@ const vorlagenAssets8: VorlagenAsset[] = [
     "titel": "werte und ziele",
     "unterKategorie": "Vertiefungen · Overlay",
     "kind": "carousel",
-    "slides": 7,
-    "sizeMB": 5.9,
+    "slides": 28,
+    "sizeMB": 21.4,
     "thumb": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-01.webp",
     "slidePaths": [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-01.webp",
@@ -42063,7 +52200,28 @@ const vorlagenAssets8: VorlagenAsset[] = [
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-04.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-05.webp",
       "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-06.webp",
-      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-07.webp"
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-07.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-08.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-09.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-10.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-11.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-12.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-13.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-14.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-15.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-16.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-17.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-18.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-19.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-20.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-21.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-22.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-23.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-24.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-25.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-26.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-27.webp",
+      "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele/slide-28.webp"
     ],
     "href": "/admin/vorlagen/datei/carousel-overlay/carousel-overlay-vertiefungen__werte-und-ziele.zip",
     "formate": [
@@ -42645,4 +52803,5 @@ export const vorlagenAssets: VorlagenAsset[] = [
   ...vorlagenAssets6,
   ...vorlagenAssets7,
   ...vorlagenAssets8,
+  ...vorlagenAssets9,
 ];

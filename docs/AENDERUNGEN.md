@@ -5,6 +5,40 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-10 – Vorlagen-Galerie neu erzeugt: Cover-Overlays in allen 4 Farbwelten
+
+Die **Cover-Overlays** gab es in der Galerie bisher nur in einer Farbe. Nach dem
+Farbwelt-Umbau von Reel-Covern (`199abe20`) und Carousels (`c52eb0e7`) zieht nun
+auch der Overlay-Zweig nach: `npm run vorlagen:galerie` erzeugt je Cover alle
+vier Welten (**Gold · Dunkel**, **Gold · Creme**, **Türkis · Navy**,
+**Türkis · Creme**).
+
+**Geändert:**
+- **`src/lib/vorlagen-assets.ts`** (auto-generiert): Katalog 2079 → 2352 Einträge.
+  - Cover-Overlays 59 → 236 (je Cover ×4 Welten): Mentale Selbstverteidigung
+    16→64, Vertiefungen 13→52, Praxis 13→52, Wissenschaft 7→28, Die 7 Stufen
+    7→28, Landing/Allgemein 3→12.
+  - `carousel` 380 → 557, `social` 1423 → 1519; `reels` (236) und `workshop`
+    (40) unverändert.
+  - Neue Quellordner unter `social`: `personal` (64), `hintergrund` (16),
+    `portrait instagram` (4), `quellen` (2); `Profil & Kanal` 16 → 26.
+  - Die Chunk-Aufteilung (`vorlagenAssets0..9`) aus `ea714d7f` bleibt erhalten –
+    nötig, damit der Next-Build bei >1000 Einträgen nicht bricht.
+- Die Binärdaten (webp/PDF/ZIP) liegen wie gehabt **nicht** im Repo, sondern
+  unter `/opt/website-vorlagen` (2,0 GB, 7540 Dateien) und werden per Volume
+  nach `/app/content/vorlagen` gemountet. Alle 2135 im Katalog referenzierten
+  Vorschaubilder wurden gegen das Volume geprüft – **0 fehlend**.
+
+**Hinweis zum Deploy:** Produktiv läuft die Website als Service `website` im
+Compose-Projekt `mattermost` (`/opt/mattermost/docker-compose.yml`, Caddy leitet
+`www.` per `reverse_proxy website:3000` dorthin). Die Datei
+`deploy/docker-compose.yml` im Repo beschreibt ein **anderes**, nicht
+produktives Setup (eigenes Projekt, Image `wmdg-web:latest`, nginx-Annahme) –
+ein `up -d --build` darauf startet einen zweiten Container und ändert die
+Live-Seite nicht.
+
+---
+
 ## 2026-09-10 – Vorlagen-Galerie `/admin/vorlagen`: fehlender Volume-Mount behoben
 
 **Symptom:** Auf `/admin/vorlagen` wurden fast keine Vorlagen angezeigt – überall
