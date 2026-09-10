@@ -45,10 +45,10 @@ export default async function ContactPage({
 
           <aside className="flex min-w-0 flex-col gap-5">
             <Image
-              src="/heiko-brain-portrait.webp"
-              alt="Heiko Schwaninger vor einem leuchtenden Gehirn-Netzwerk"
-              width={1536}
-              height={2048}
+              src="/WMDG-Personal-Logo-4x5-hell.png"
+              alt="Heiko Schwaninger – Werde Meister deiner Gedanken"
+              width={1080}
+              height={1350}
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="h-auto w-full rounded-3xl border border-ink/10 shadow-card"
             />
