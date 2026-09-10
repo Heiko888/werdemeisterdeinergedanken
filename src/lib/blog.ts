@@ -1744,8 +1744,8 @@ export const posts: Post[] = [
     excerpt:
       "Zu viele Reize auf einmal, und dein Kopf schaltet vom Denken aufs Überleben um. Wie Sinnesüberladung den langsamen, klugen Teil deines Gehirns abschaltet – und wie du wieder ans Steuer kommst.",
     category: "Wissenschaft",
-    date: "2026-09-22",
-    dateLabel: "22. September 2026",
+    date: "2026-09-10",
+    dateLabel: "10. September 2026",
     readingMinutes: 7,
     content: [
       {

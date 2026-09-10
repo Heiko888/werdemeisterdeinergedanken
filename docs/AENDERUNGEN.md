@@ -15,7 +15,7 @@ praktischem Ausweg.
 - **`src/lib/blog.ts`**: neuer Post
   `slug: "sinnesueberladung-warum-du-ins-reptiliengehirn-rutschst"`,
   Titel „Wie deine Sinne überladen werden – und du ins Reptiliengehirn rutschst",
-  Datum `2026-09-22` (vorausdatiert = Redaktionsplan, erscheint erst am Datum).
+  Datum `2026-09-10` (= heute, damit der Artikel sofort öffentlich sichtbar ist).
 - **Kategorie `Wissenschaft`** (bewusst **nicht** „Mentale Selbstverteidigung" –
   diese Rubrik steht in `DEACTIVATED_CATEGORIES` und wäre überall unsichtbar/404).
   Kein eigenes Titelbild → generatives Cover (Teal-Farbwelt aus der Kategorie).
