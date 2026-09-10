@@ -10,6 +10,11 @@
 #
 # Wichtig: NEXT_PUBLIC_* werden zur BUILD-Zeit ins Client-Bundle eingebacken
 # (deshalb als build.args), die übrigen Werte gelten zur Laufzeit (environment).
+#
+# Vorlagen-Galerie: Der Host-Ordner mit den Vorlagen-Dateien
+# (Standard /opt/website-vorlagen) wird read-only als Volume in den Container
+# gemountet – siehe `volumes:` unten. Ohne diesen Mount ist /admin/vorlagen
+# leer/kaputt (jede Datei 404).
 
 services:
   web:
@@ -28,6 +33,18 @@ services:
     # Nur an localhost binden – Zugriff ausschließlich über nginx
     ports:
       - "127.0.0.1:3000:3000"
+    volumes:
+      # Vorlagen-Galerie (/admin/vorlagen): Die Binärdaten (webp/PDF/ZIP, ~1 GB)
+      # liegen bewusst NICHT im Image (content/vorlagen steht in .dockerignore),
+      # sondern auf dem Host und werden hier read-only in den Container
+      # eingehängt. OHNE diesen Mount ist /app/content/vorlagen im Container leer
+      # und die Galerie zeigt nur gebrochene Bilder/Downloads – die Route
+      # /admin/vorlagen/datei/… liefert dann für jede Datei 404 (nur die
+      # PDF-Dokumente-Liste funktioniert, weil sie auf andere Routen verlinkt).
+      # Befüllt/aktualisiert wird der Host-Ordner mit
+      # tools/deploy/update-vorlagen-galerie.sh. Host-Pfad bei Bedarf über
+      # VORLAGEN_VOLUME_DIR in deploy/.env überschreibbar.
+      - ${VORLAGEN_VOLUME_DIR:-/opt/website-vorlagen}:/app/content/vorlagen:ro
     environment:
       NODE_ENV: production
       # Kanonischen Host erzwingen (neu./apex → www). Zum vorübergehenden
