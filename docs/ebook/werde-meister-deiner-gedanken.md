@@ -1278,7 +1278,7 @@ Du wirst vielleicht erkennen, dass deine „Energie“ weniger geheimnisvoll und
 
 ## Kapitel 10
 
-### Manifestation ohne Feenstaub
+### Manifestation – realistisch verstanden
 
 Manifestation ist eines der meistverkauften und am häufigsten missverstandenen Themen der persönlichen Entwicklung.
 

@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Buch: Kapitel 10 umbenannt („Manifestation – realistisch verstanden")
+
+**Änderung:** Die Überschrift von **Kapitel 10** wurde von
+„Manifestation ohne Feenstaub" auf **„Manifestation – realistisch verstanden"**
+geändert.
+
+**Geändert (2 Stellen, damit Verkaufsseite und Leserfassung/PDF konsistent bleiben):**
+- **`src/app/buch/page.tsx`** – Inhaltsverzeichnis der Buch-Verkaufsseite (Teil II,
+  Kapitel 10).
+- **`docs/ebook/werde-meister-deiner-gedanken.md`** – Leserfassung, aus der auch das
+  Buch-PDF gebaut wird (Kapitel-Überschrift `### …`).
+
+**Wirkung:** Reine Titeländerung, kein Eingriff in den Kapitelinhalt oder die Logik.
+Wird das Buch-PDF neu gebaut, trägt es automatisch den neuen Titel.
+
+---
+
 ## 2026-09-11 – Vorlagen: Marketing/Funnel-Carousels in allen 4 Designfarben
 
 **Symptom:** In `/admin/vorlagen` gab es die Marketing/Funnel-Carousels

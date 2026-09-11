@@ -83,7 +83,7 @@ const bookParts: BookPart[] = [
       [7, "Atem, Zustand und innere Führung"],
       [8, "Mentale Entprogrammierung"],
       [9, "Energie, Frequenz und Gehirnwellen"],
-      [10, "Manifestation ohne Feenstaub"],
+      [10, "Manifestation – realistisch verstanden"],
     ],
   },
   {
