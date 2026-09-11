@@ -26,6 +26,7 @@ _Stand: 2026-09-11_
 | 07 | [Generatoren & Folien](./07-generatoren-und-folien.md) | Alle `tools/`-Skripte: PDF, Marketing, Print, Bilder, Vorlagen-Galerie, Video-Folien, Workshop-Präsentationen |
 | 08 | [Verzeichnisse & Datenstruktur](./08-verzeichnisse-und-daten.md) | Kompletter Verzeichnisbaum, `src/lib`-Module, `content/`, `public/`, `docs/`, Datenbank-Datensicht |
 | 09 | [Geplante Erweiterungen & Roadmap](./09-geplante-erweiterungen.md) | Deaktivierte/versteckte Funktionen, Platzhalter, Feature-Flags, offene Audit-Punkte, latente Strukturen |
+| ★ | [GESAMT-Dokument](./GESAMT.md) | Alle Kapitel oben in einer einzigen Datei gebündelt (zum Lesen/Exportieren) |
 
 ---
 
