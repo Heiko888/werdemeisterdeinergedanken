@@ -5,6 +5,33 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Vollständige Seiten- & Funktionsdokumentation (`docs/seiten/`)
+
+**Anlass:** Es fehlte eine zentrale Dokumentation, die jede Seite mit ihren
+Funktionen und der jeweiligen Konfiguration erklärt und den aktuellen
+Serverstand festhält.
+
+**Neu:** Ordner **`docs/seiten/`** mit 9 Kapiteln + Inhaltsverzeichnis
+(`README.md`), erstellt durch ein Doku-Team direkt am echten Quellcode:
+- `01-oeffentliche-seiten.md` – öffentliche Seiten (Landing, Buch, E-Book, Blog, Rechtliches)
+- `02-mitgliedschaft-auth.md` – Login, Mitgliedschaft, Willkommen, Auth-Callback + Checkout-Fluss
+- `03-mitgliederbereich.md` – kompletter geschützter Bereich inkl. Zugriffsschutz & KI-Funktionen
+- `04-admin.md` – Admin-Seiten inkl. Zugriffsschutz & Pfad-Traversal-Schutz
+- `05-api-routes.md` – alle API-Routen (Stripe, Double-Opt-In, Downloads, RSS)
+- `06-konfiguration-infrastruktur.md` – Layout/SEO, next.config, Proxy, Umgebungsvariablen, Supabase/DB, Resend, Docker
+- `07-generatoren-und-folien.md` – alle `tools/`-Generatoren inkl. Video-Folien & Workshop-Präsentationen
+- `08-verzeichnisse-und-daten.md` – Verzeichnisbaum, `src/lib`-Module, `content/`, `public/`, Datenbank-Datensicht
+- `09-geplante-erweiterungen.md` – Roadmap: deaktivierte/versteckte Funktionen, Platzhalter, Feature-Flags, offene Audit-Punkte
+
+**Nebeneffekt:** Beim Verifizieren gegen den echten Code wurden veraltete
+Angaben in `docs/generatoren/{README,pdf-generatoren,content-inventar}.md`
+korrigiert (Skript-Namen, PDF-Zählungen).
+
+**Wirkung:** Reine Dokumentation, kein Code-/Logik-Eingriff. Ab sofort ist der
+aktuelle Seiten- und Funktionsstand zentral unter `docs/seiten/` nachschlagbar.
+
+---
+
 ## 2026-09-10 – Header: „Mitglieder" hebt sich als gold-getönte Login-Pill ab
 
 **Symptom:** Der „Mitglieder"-Link im Header war ein schlichter Text-Link neben
