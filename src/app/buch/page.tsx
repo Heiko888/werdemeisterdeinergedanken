@@ -93,7 +93,7 @@ const bookParts: BookPart[] = [
       [11, "Vertrauen und Hingabe"],
       [12, "Intuition und Zeichen"],
       [13, "Die Kraft der Stille"],
-      [14, "Die Illusion der Zeit"],
+      [14, "Zeit ist nicht, was sie scheint"],
     ],
   },
   {

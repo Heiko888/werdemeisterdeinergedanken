@@ -1899,7 +1899,7 @@ Vereinbare mit dir, eine Minute zu warten, bevor du handelst. Atme, spüre die F
 
 ## Kapitel 14
 
-### Die Illusion der Zeit
+### Zeit ist nicht, was sie scheint
 
 Der Verstand liebt Linien.
 
