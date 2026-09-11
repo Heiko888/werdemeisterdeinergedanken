@@ -42,11 +42,31 @@ rendert. Die alten Font-CSS (`tools/pdf/assets/fonts.css`,
 `docs/reels/covers/_fonts.css`) bleiben unverändert – PDFs und Reels-Cover
 wurden bewusst nicht angefasst.
 
+**Bilder neu gerendert (aktueller Stand):** Die PNGs der vier reproduzierbaren
+Generatoren wurden neu erzeugt und eingecheckt – sie nutzen jetzt den Website-
+Schnitt:
+- `docs/marketing/content-overlays/` (Zitate + Studien-Fakten)
+- `docs/marketing/story-carousels/` (sommer-2023)
+- `docs/marketing/story-overlays/`
+- `docs/marketing/whatsapp-mitgliedschaft/`
+
+Per Pixel-Diff gegen die alten Bilder verifiziert: Änderungen sind auf die
+Textzonen (Wortmarke, Zitate, Headlines) begrenzt – Hintergründe, Gehirn-Logo und
+Layout unverändert.
+
+**Noch offen – `docs/marketing/personal/`:** Bewusst **nicht** neu gerendert. Die
+Portrait-Eingabe (`docs/marketing/_input/portrait.png`) liegt nicht im Repo; ein
+Test-Render mit `docs/marketing/quellen/heiko-portrait-freigestellt.png` zeigte,
+dass das ein **anderes Foto** ist (die ganze Person wich ab). Ein Neu-Rendern
+hätte also das Foto ausgetauscht. Diese Bilder bitte **lokal mit dem Original-
+portrait** neu erzeugen:
+`PORTRAIT=<pfad-zum-freigestellten-original> node tools/marketing/personal-brand.mjs`
+(Ausgabe: `docs/marketing/personal/…-Logo-…`). Der Code-Fix steckt bereits drin –
+dann rendert auch die Personal-Wortmarke im Website-Schnitt.
+
 **Verifiziert:** `node --check` für alle 5 Generatoren grün; Render-Vergleich
 (Chromium headless) bestätigt, dass die korrigierte Wortmarke deckungsgleich zum
-Website-Header-Logo ist. Hinweis: Zum tatsächlichen Neu-Erzeugen der PNGs müssen
-die Dev-Deps (`playwright`) installiert sein (`npm install`), dann die üblichen
-`npm run …`-Marketing-Skripte laufen lassen.
+Website-Header-Logo ist.
 
 ---
 
