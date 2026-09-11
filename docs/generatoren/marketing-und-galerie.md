@@ -269,6 +269,18 @@ dann. Mit voller Render-Toolchain macht `FULL_REBUILD=1 …` einen Komplett-Neub
 - **Stolperfalle:** Der Katalog-Parser ist an das exakte Format
   `vorlagenAssets: VorlagenAsset[] = [ … ];` gebunden — manuelle Umformatierung
   bricht ihn.
+- **Stolperfalle Server:** Der Standalone-Lauf schreibt nach
+  `<checkout>/content/vorlagen`, ausgeliefert wird aber das Volume
+  `/opt/website-vorlagen` (`:ro` nach `/app/content/vorlagen`). Ohne Spiegelung
+  zeigen die neuen Katalog-Einträge auf 404. Für den reinen Marketing-Lauf
+  genügt additives Spiegeln — `--delete` ist hier **nicht** nötig und wäre
+  riskant, weil im Volume Reels/Carousels liegen können, die der Teil-Lauf nicht
+  erzeugt:
+  ```bash
+  rsync -a /opt/website/content/vorlagen/ /opt/website-vorlagen/
+  ```
+  Für den **Vollbau** stattdessen `tools/deploy/update-vorlagen-galerie.sh`
+  nehmen (siehe oben) — das Skript bewahrt die Volume-Bestände selbst.
 
 ---
 

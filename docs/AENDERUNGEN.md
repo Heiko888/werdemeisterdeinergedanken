@@ -88,6 +88,32 @@ Wird das Buch-PDF neu gebaut, trägt es automatisch den neuen Titel.
 
 ---
 
+## 2026-09-11 – Serverlauf & Deploy der 4-farbigen Marketing-Carousels
+
+Die Änderungen des Eintrags unten auf dem Hetzner-Server ausgeführt und live
+gestellt.
+
+- **Gerendert:** `docs/carousels/marketing-serien.mjs` — 7 Serien × 3 Formate ×
+  4 Designfarben, ~20 min, `docs/carousels/export` jetzt 2,8 GB.
+- **Katalog:** `node tools/vorlagen/marketing-carousels.mjs` — 28 Einträge
+  ergänzt (2347 → 2375), 69 Captions. Das neu geschriebene
+  `src/lib/vorlagen-assets.ts` war **byte-identisch** mit der versionierten
+  Fassung — der Generator ist also reproduzierbar.
+- **Node 22 nötig:** Der System-Node des Servers (v18.19.1) ist für
+  `playwright@1.62` zu alt. Dafür liegt jetzt ein eigenständiges Node 22 unter
+  `/opt/node22`; `/usr/bin/node` bleibt unverändert. Details in
+  `docs/generatoren/README.md` → „Umgebung & Voraussetzungen".
+- **Galerie gespiegelt:** 280 neue/geänderte Dateien (57 MB) additiv per
+  `rsync -a` (ohne `--delete`) von `content/vorlagen` nach
+  `/opt/website-vorlagen`. Ohne diesen Schritt wären die neuen Katalog-Einträge
+  auf 404 gelaufen.
+- **Deploy:** Image neu gebaut, `up -d website`. Verifiziert: Startseite 200 in
+  0,23 s, `/admin/vorlagen` 307 → Login (korrekt geschützt), 56
+  `marketing__`-Einträge im Container sichtbar, alle 72 Bildvarianten der
+  Startseite mit WebP-Accept-Header vorgewärmt (kein Optimizer-Deadlock).
+
+---
+
 ## 2026-09-11 – Vorlagen: Marketing/Funnel-Carousels in allen 4 Designfarben
 
 **Symptom:** In `/admin/vorlagen` gab es die Marketing/Funnel-Carousels

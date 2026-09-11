@@ -128,7 +128,20 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 
 ## Umgebung & Voraussetzungen
 
-- **Node** (getestet v22) — alle `.mjs`-Generatoren.
+- **Node** (getestet v22) — alle `.mjs`-Generatoren. **Mindestens v20**, sobald
+  Playwright im Spiel ist: `playwright@1.62` bricht sonst noch vor dem ersten
+  Render mit „You are running Node.js 18.19.1. Playwright requires Node.js 20 or
+  higher." ab. Auf dem Hetzner-Server steht der System-Node auf
+  **v18.19.1** (`/usr/bin/node`, Ubuntu-Paket); daneben liegt ein
+  eigenständiges **Node 22** unter `/opt/node22`. Generatoren dort also mit
+  vollem Pfad starten:
+  ```bash
+  PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers \
+    /opt/node22/bin/node docs/carousels/marketing-serien.mjs
+  ```
+  Ein `node:22-bookworm`-Container ist **kein** Ersatz: dem Image fehlen die
+  Chromium-Systembibliotheken (`libnss3`, `libatk-1.0`, `libgbm`, `libasound`
+  u. a.), die der Host vollständig mitbringt.
 - **Python 3** — `tools/pdf/*.py` und `tools/workshop/build.py`. Pakete:
   `python-pptx` + `Pillow` (Workshop); die E-Book/Member-Skripte nutzen nur
   die Standardbibliothek.
