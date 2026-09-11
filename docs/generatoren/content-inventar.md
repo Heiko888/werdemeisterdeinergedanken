@@ -92,8 +92,11 @@ Bild-Geschichte, aus `tools/marketing/story-carousels.mjs`).
 Moderationspläne, 6 Reel-Drehbücher, 3 Video-Drehbücher, 8 Workbooks, 8
 Workshops (PPTX) + 1 Präsentationsvorlage (PPTX).
 
-**`content/pdf/`** — 44 fertige PDFs: 14 Stufen-PDFs (`stufe-1…7` × `lektion`/
-`uebungen`) + 1 `arbeitsheft.pdf` + 29 `vertiefung-*.pdf`.
+**`content/pdf/`** — 46 fertige PDFs + 1 PNG: 14 Stufen-PDFs (`stufe-1…7` ×
+`lektion`/`uebungen`) + 1 `arbeitsheft.pdf` + 29 `vertiefung-*.pdf` + eine Kopie
+des 7-Stufen-E-Books (`Die-7-Stufen-der-Bewusstseinsentwicklung.pdf`) + das Buch
+`Werde-Meister-deiner-Gedanken.pdf` (`npm run pdf:buch`) sowie dessen Titelseite
+`Werde-Meister-deiner-Gedanken-Cover.png` (`npm run buchcover`).
 
 ---
 

@@ -106,8 +106,7 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 | Reel-Cover-PNG | `npm run covers:png` | Cover-HTMLs (**Vorlauf nötig**) | `docs/reels/covers/export/**` + `export-overlay/**` (PNG) |
 | Endcards | `npm run endcard` | Inline | `docs/reels/covers/endcard/*` (HTML) |
 | Social-Banner | `node docs/marketing/social-banners.mjs` | Inline | `docs/marketing/**/*.png` |
-| Profil-Avatar | `node docs/marketing/profile-avatar.mjs` | Inline | `docs/marketing/profil/*.png` |
-| Brand-Assets | `SCALE=2 node docs/marketing/brand-assets.mjs` | Inline + `docs/marketing/content-data.mjs` | `docs/marketing/**/*.png` |
+| Brand-Assets (inkl. Profil/Avatar) | `SCALE=2 node docs/marketing/brand-assets.mjs` (auch `npm run brand-assets`) | Inline + `docs/marketing/content-data.mjs` | `docs/marketing/**/*.png` |
 | Video-Thumbnails | `node docs/marketing/video-thumbnails.mjs` | `src/lib/{content,deep-dives,practices}.ts` | `public/video-thumbnails/**` |
 | Story-Overlays | `npm run story-overlays` | Inline (`STORIES`) | `docs/marketing/story-overlays/**` |
 | Content-Overlays | `npm run content-overlays` | `docs/marketing/content-data.mjs` | `docs/marketing/content-overlays/**` |
@@ -119,10 +118,20 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 | Vorlagen-Galerie | `npm run vorlagen:galerie` | `docs/{marketing,carousels,reels,workshop}/…` | `content/vorlagen/**` + `vorlagen-assets.ts` |
 
 **Ohne npm-Script** (nur direkt startbar): `build-ebook-gedanken.py`,
-`carousel-texte.mjs`, `intro-video-drehbuch.mjs`, `anleitung-stripe.mjs`,
-`marketing-serien.mjs`, `stufen-ueberblick.mjs`, `profile-avatar.mjs`,
-`social-banners.mjs`, `brand-assets.mjs`, `video-thumbnails.mjs`,
-`story-carousels.mjs`, `marketing-carousels.mjs`.
+`build-reel-skripte.py`, `carousel-texte.mjs`, `intro-video-drehbuch.mjs`,
+`anleitung-stripe.mjs`, `praxis-sprecherskript.mjs`, `marketing-serien.mjs`,
+`stufen-ueberblick.mjs`, `social-banners.mjs`, `video-thumbnails.mjs`,
+`personal-brand.mjs`, `marketing-carousels.mjs`,
+`tools/images/eisvogel-transparent.mjs`, `tools/images/schneeleopard-webp.mjs`.
+(`brand-assets.mjs` und `story-carousels.mjs` haben inzwischen ein npm-Script;
+`profile-avatar.mjs` existiert nicht mehr — die Avatar-Grafik erzeugt
+`brand-assets.mjs`.)
+
+> Eine **konsolidierte Gesamtübersicht** aller Generatoren, Skripte und
+> Folien/Präsentationen — inkl. der zusätzlichen npm-Scripts `pdf:buch`,
+> `pdf:brandbook`, `buchcover`, `willkommen-skript`, `videoskripte-md`,
+> `whatsapp:mitgliedschaft`, `whatsapp:safezone` und der Print-Generatoren —
+> steht in [`../seiten/07-generatoren-und-folien.md`](../seiten/07-generatoren-und-folien.md).
 
 ---
 

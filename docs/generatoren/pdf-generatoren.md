@@ -9,10 +9,19 @@ PATH) und rendern per Headless-Chromium `--print-to-pdf`. Env `KEEP_HTML` (bei
 den `.mjs`-Drehbüchern) behält die temporäre HTML-Datei. Zwischen-HTML der
 Haupt-Pipeline liegt in `tools/pdf/.build/` (git-ignoriert).
 
-**npm-Scripts:** nur `pdf` (→ `generate.mjs`), `reel-drehbuch` und
-`langvideo-drehbuch` starten PDF-Generatoren direkt. `carousel-texte.mjs`,
-`intro-video-drehbuch.mjs` und `build-ebook-gedanken.py` haben **kein**
-npm-Script und werden von keinem Orchestrator aufgerufen — manuell starten.
+**npm-Scripts:** PDF-Generatoren starten über `pdf` (→ `generate.mjs`),
+`pdf:buch` (→ `build-buch.mjs`), `pdf:brandbook` (→ `build-brandbook.mjs`),
+`buchcover` (→ `buchcover-png.py`), `reel-drehbuch`, `langvideo-drehbuch`,
+`willkommen-skript` und `videoskripte-md`. **Kein** npm-Script (manuell starten):
+`carousel-texte.mjs`, `intro-video-drehbuch.mjs`, `anleitung-stripe.mjs`,
+`praxis-sprecherskript.mjs`, `build-ebook-gedanken.py`, `build-reel-skripte.py`.
+
+> Dieses Dokument beschreibt die Kern-Pipeline im Detail. Die zusätzlichen
+> PDF-Generatoren (`build-buch`, `build-brandbook`, `buchcover-png`,
+> `willkommen-skript`, `videoskripte-markdown`, `praxis-sprecherskript`,
+> `build-reel-skripte`, `anleitung-stripe`) sind in der konsolidierten Übersicht
+> [`../seiten/07-generatoren-und-folien.md`](../seiten/07-generatoren-und-folien.md)
+> (Abschnitt 3.1) mit Zweck, Quelle und Ausgabe dokumentiert.
 
 ---
 
