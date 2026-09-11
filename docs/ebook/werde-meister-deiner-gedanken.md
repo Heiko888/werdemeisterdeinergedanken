@@ -1,6 +1,6 @@
 # Werde Meister deiner Gedanken
 
-## Wie du mit Energie, Bewusstsein und Praxis dein Leben neu gestaltest
+## Wer denkt hier eigentlich?
 
 **Heiko Schwaninger**
 

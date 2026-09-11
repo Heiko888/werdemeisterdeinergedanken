@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Buch-Cover: Unterüberschrift geändert („Wer denkt hier eigentlich?")
+
+**Änderung:** Die Unterüberschrift (Untertitel) auf dem **Buch-Cover** wurde von
+„Wie du mit Energie, Bewusstsein und Praxis dein Leben neu gestaltest" auf
+**„Wer denkt hier eigentlich?"** getauscht.
+
+**Geändert:**
+- **`docs/ebook/werde-meister-deiner-gedanken.md`** – erster `##` (Zeile 3). Dieser
+  wird in `tools/pdf/build-buch.py` ausschließlich als Cover-Untertitel
+  (`<p class="promise">`) verwendet und taucht nicht im Fließtext auf.
+- **`content/pdf/Werde-Meister-deiner-Gedanken.pdf`** – neu gebaut (`npm run pdf:buch`),
+  Titelseite trägt den neuen Untertitel.
+- **`content/pdf/Werde-Meister-deiner-Gedanken-Cover.png`** – neu gerendert
+  (`npm run buchcover`, 2479×3508 @ 300 dpi).
+
+**Wirkung:** Reine Cover-/Untertitel-Änderung, kein Eingriff in den Buchinhalt.
+
+---
+
 ## 2026-09-11 – Buch: Kapitel 15 umbenannt („Vom Wunsch zum Handeln")
 
 **Änderung:** Die Überschrift von **Kapitel 15** wurde von
