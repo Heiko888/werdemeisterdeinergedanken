@@ -44,9 +44,25 @@ export const MARKETING_TITEL = {
   "wer-denkt-hier": "Wer denkt hier eigentlich?",
   "studien-fakten": "Studien-Fakten",
   "gratis-ebook": "Gratis-E-Book",
+  "mentale-selbstverteidigung-1": "Mentale Selbstverteidigung I",
+  "mentale-selbstverteidigung-2": "Mentale Selbstverteidigung II",
 };
 
 const UNTER_KATEGORIE = "Marketing / Funnel";
+
+/**
+ * Farbwelten der Marketing-Carousels. docs/carousels/marketing-serien.mjs
+ * rendert jede Serie in zwei Welten:
+ *   - Dunkel · Gold  → Format-Ordner ohne Suffix (feed-4x5, …)
+ *   - Hell · Creme   → Format-Ordner mit Suffix „-hell" (feed-4x5-hell, …)
+ * Jede Welt wird ein eigener Galerie-Eintrag (eigene Vorschau + eigenes ZIP),
+ * damit beide Farben in /admin/vorlagen erscheinen. Der Basis-Eintrag (Dunkel)
+ * behält seine bisherige ID `marketing__<key>`; Creme bekommt `-hell` angehängt.
+ */
+const MARKETING_WELTEN = [
+  { suffix: "", welt: "Gold · Dunkel", idSuffix: "" },
+  { suffix: "-hell", welt: "Gold · Creme", idSuffix: "-hell" },
+];
 
 /** Format-Metadaten (Label + Pixelmaße) für die Card-Beschriftung. */
 export const FORMAT_META = {
@@ -268,21 +284,30 @@ export async function buildMarketingCarousels({ OUT, assets }) {
   const captions = readMarketingCaptions();
   const FMT_ORDER = ["feed-4x5", "feed-1x1", "reel-9x16"];
 
-  // Jede Marketing-Serie ist eine eigene Einheit (Slide-Ordner + ZIP).
-  const ergebnisse = await parallel(Object.keys(MARKETING_TITEL), async (key) => {
+  // Aufgabenliste: jede Serie × jede vorhandene Farbwelt ist eine eigene
+  // Einheit (eigener Slide-Ordner + eigenes ZIP + eigener Katalog-Eintrag).
+  // Reihenfolge: pro Serie erst Dunkel, dann Creme – so stehen die zwei Farben
+  // einer Serie in der Galerie direkt nebeneinander.
+  const aufgaben = [];
+  for (const key of Object.keys(MARKETING_TITEL)) {
+    for (const welt of MARKETING_WELTEN) aufgaben.push({ key, welt });
+  }
+
+  const ergebnisse = await parallel(aufgaben, async ({ key, welt }) => {
     const cDir = join(src, key);
     if (!existsSync(cDir)) return null;
-    const formats = FMT_ORDER.filter((f) => existsSync(join(cDir, f)));
+    // Format-Ordner tragen den Welt-Suffix (z. B. „feed-4x5-hell"); Label und
+    // ZIP-Ordner bleiben der Basisname (feed-4x5), damit der Download sauber ist.
+    const formats = FMT_ORDER.filter((f) =>
+      existsSync(join(cDir, `${f}${welt.suffix}`)),
+    );
     if (formats.length === 0) return null;
 
-    const previewRoot = join(
-      cDir,
-      formats.includes("feed-4x5") ? "feed-4x5" : formats[0],
-    );
-    const slides = collectPng(previewRoot);
+    const previewBase = formats.includes("feed-4x5") ? "feed-4x5" : formats[0];
+    const slides = collectPng(join(cDir, `${previewBase}${welt.suffix}`));
     if (slides.length === 0) return null;
 
-    const id = `marketing__${key}`;
+    const id = `marketing__${key}${welt.idSuffix}`;
     const slideDir = join(dir, id);
     mkdirSync(slideDir, { recursive: true });
 
@@ -306,7 +331,7 @@ export async function buildMarketingCarousels({ OUT, assets }) {
       const fdir = join(tmp, f);
       mkdirSync(fdir, { recursive: true });
       let m = 0;
-      for (const slide of collectPng(join(cDir, f))) {
+      for (const slide of collectPng(join(cDir, `${f}${welt.suffix}`))) {
         m++;
         await sharp(slide)
           .resize({ width: 1080, withoutEnlargement: true })
@@ -326,7 +351,7 @@ export async function buildMarketingCarousels({ OUT, assets }) {
 
     return {
       kategorie: "carousel",
-      titel: MARKETING_TITEL[key],
+      titel: `${MARKETING_TITEL[key]} · ${welt.welt}`,
       unterKategorie: UNTER_KATEGORIE,
       kind: "carousel",
       slides: slides.length,
@@ -413,6 +438,33 @@ ${spread}
 
 // --- Standalone: additiv & idempotent in bestehenden Katalog eintragen ------
 
+/**
+ * Bestehenden Katalog (src/lib/vorlagen-assets.ts) einlesen.
+ * renderManifest() teilt die Liste in getypte Chunk-Konstanten
+ * (`const vorlagenAssets0: VorlagenAsset[] = [ … ];`) auf; das finale
+ * `export const vorlagenAssets` ist nur noch ein Spread und damit kein JSON.
+ * Deshalb werden die Chunk-Arrays einzeln geparst und der Reihenfolge nach
+ * wieder zusammengesetzt. Ältere Einzel-Array-Manifeste werden als Fallback
+ * weiterhin unterstützt.
+ */
+function parseKatalog(text) {
+  // Top-Level-Chunk-Arrays: das schließende „\n]" steht am Zeilenanfang
+  // (JSON.stringify rückt verschachtelte Arrays ein), daher trennt „\n]"
+  // zuverlässig vom Chunk-Ende, ohne verschachtelte […] zu treffen.
+  const chunkRe =
+    /const vorlagenAssets(\d+): VorlagenAsset\[\] = (\[[\s\S]*?\n\]);/g;
+  const chunks = [...text.matchAll(chunkRe)].sort(
+    (a, b) => Number(a[1]) - Number(b[1]),
+  );
+  if (chunks.length > 0) {
+    return chunks.flatMap((m) => JSON.parse(m[2]));
+  }
+  // Fallback: ein einzelnes Array-Literal (alte Manifest-Form).
+  const single = text.match(/vorlagenAssets: VorlagenAsset\[\] = (\[[\s\S]*\]);\s*$/);
+  if (!single) throw new Error("Katalog-Array in vorlagen-assets.ts nicht gefunden.");
+  return JSON.parse(single[1]);
+}
+
 async function applyStandalone() {
   const OUT = join(ROOT, "content", "vorlagen");
   const manifestPath = join(ROOT, "src", "lib", "vorlagen-assets.ts");
@@ -420,10 +472,7 @@ async function applyStandalone() {
     throw new Error("src/lib/vorlagen-assets.ts fehlt – zuerst npm run vorlagen:galerie ausführen.");
   }
   const text = readFileSync(manifestPath, "utf8");
-  const m = text.match(/vorlagenAssets: VorlagenAsset\[\] = (\[[\s\S]*\]);\s*$/);
-  if (!m) throw new Error("Katalog-Array in vorlagen-assets.ts nicht gefunden.");
-
-  let assets = JSON.parse(m[1]);
+  let assets = parseKatalog(text);
   // Idempotent: bestehende Marketing-Einträge entfernen und neu aufbauen.
   assets = assets.filter(
     (a) => !String(a.href || "").includes("/carousels/marketing__"),

@@ -5,6 +5,59 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Vorlagen: Marketing/Funnel-Carousels in Dunkel UND Creme
+
+**Symptom:** In `/admin/vorlagen` gab es die Marketing/Funnel-Carousels
+(„Bis zu 60.000 Gedanken am Tag", „4 Wege zur mentalen Freiheit", „Wer denkt
+hier eigentlich?", „Studien-Fakten", „Gratis-E-Book") nur in **einer** Farbwelt.
+Die zweite Marken-Welt (Gold auf Creme) fehlte, obwohl der Generator sie längst
+mitrendert. Zusätzlich tauchten 2 vorhandene Serien gar nicht in der Galerie auf.
+
+**Ursache (zwei Lücken):**
+1. **Galerie-Builder:** `buildMarketingCarousels` (`tools/vorlagen/marketing-carousels.mjs`)
+   las nur die Basis-Format-Ordner (`feed-4x5`, `feed-1x1`, `reel-9x16` = Dunkel)
+   und legte pro Serie **genau einen** Eintrag ohne Farb-Unterscheidung an. Die
+   von `docs/carousels/marketing-serien.mjs` ebenfalls erzeugte Creme-Variante
+   (Ordner-Suffix `-hell`) wurde nie in den Katalog übernommen.
+2. **Serien-Liste:** `MARKETING_TITEL` kannte nur 5 der inzwischen 7 Serien –
+   „Mentale Selbstverteidigung I + II" fehlten.
+3. **Nebenbefund:** Der Standalone-Modus (`node tools/vorlagen/marketing-carousels.mjs`)
+   parste den Katalog noch als einzelnes Array; seit der Chunk-Aufteilung
+   (`vorlagenAssets0…9` + Spread) hätte `JSON.parse` das gescheitert.
+
+**Geändert (`tools/vorlagen/marketing-carousels.mjs`):**
+- Neue Konstante `MARKETING_WELTEN` (Gold · Dunkel = kein Suffix, Gold · Creme =
+  Suffix `-hell`). `buildMarketingCarousels` baut jetzt **pro Serie × Welt** einen
+  eigenen Eintrag: eigene Vorschau, eigenes ZIP, Farb-Label im Titel
+  (z. B. „Studien-Fakten · Gold · Creme"). Die Dunkel-ID bleibt `marketing__<key>`
+  (unverändert), Creme bekommt `marketing__<key>-hell`.
+- „Mentale Selbstverteidigung I + II" zu `MARKETING_TITEL` ergänzt.
+- Neuer, chunk-fester Katalog-Parser `parseKatalog()` (liest die `vorlagenAssetsN`-
+  Blöcke einzeln, Fallback auf altes Einzel-Array).
+
+**Wirkung:** `/admin/vorlagen` → Marketing/Funnel zeigt jetzt **14 Carousels**
+(7 Serien je in Gold·Dunkel und Gold·Creme). `src/lib/vorlagen-assets.ts` neu
+erzeugt (2352 → 2361 Einträge). Reine Galerie-/Tooling-Änderung, keine Logik der
+Website.
+
+**Serverstand / wichtig:** Die Bilddateien liegen unter `content/vorlagen/…` und
+sind bewusst **nicht im Git** (Volume `/opt/website-vorlagen` → Container
+`/app/content/vorlagen`, siehe `.gitignore`). Damit die neuen Carousels live
+sichtbar werden, müssen die neu gerenderten Dateien auf den Server:
+```
+# 1. Rendern + Galerie-Einträge (lokal, braucht Chromium):
+node docs/carousels/marketing-serien.mjs
+node tools/vorlagen/marketing-carousels.mjs
+# 2. Neue/aktualisierte Dateien nach /opt/website-vorlagen spiegeln, u. a.:
+#    content/vorlagen/carousels/marketing__<serie>[-hell].zip
+#    content/vorlagen/carousels/marketing__<serie>[-hell]/slide-*.webp
+```
+Betroffen sind alle 14 `marketing__…` ZIPs und Vorschau-Ordner. Ohne diesen
+Schritt erscheinen die neuen Einträge zwar in der Galerie, ihre Bilder blieben
+aber leer (404).
+
+---
+
 ## 2026-09-11 – Header: mehr Luft (breiterer Container + engere Abstände)
 
 **Symptom:** Ab 1280 px zeigte sich die Desktop-Leiste weiterhin „gequetscht".
