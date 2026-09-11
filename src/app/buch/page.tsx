@@ -83,7 +83,7 @@ const bookParts: BookPart[] = [
       [7, "Atem, Zustand und innere Führung"],
       [8, "Mentale Entprogrammierung"],
       [9, "Energie, Frequenz und Gehirnwellen"],
-      [10, "Manifestation ohne Feenstaub"],
+      [10, "Manifestation – realistisch verstanden"],
     ],
   },
   {
@@ -93,14 +93,14 @@ const bookParts: BookPart[] = [
       [11, "Vertrauen und Hingabe"],
       [12, "Intuition und Zeichen"],
       [13, "Die Kraft der Stille"],
-      [14, "Die Illusion der Zeit"],
+      [14, "Zeit ist nicht, was sie scheint"],
     ],
   },
   {
     roman: "Teil IV",
     title: "Bewusst erschaffen und wirklich leben",
     chapters: [
-      [15, "Gelebte Manifestation"],
+      [15, "Vom Wunsch zum Handeln"],
       [16, "Wahrer Erfolg"],
       [17, "Dein energetisches Vermächtnis"],
       [18, "Vom Erkennen ins Handeln"],
