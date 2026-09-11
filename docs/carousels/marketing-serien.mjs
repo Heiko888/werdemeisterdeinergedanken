@@ -22,43 +22,80 @@ const FORMATS = [
 ];
 const HANDLE = "www.werdemeisterdeinergedanken.de";
 
-// Marken-Palette – dunkel (Gold auf Anthrazit) und hell (Creme, tiefes Gold).
+// Marken-Palette – vier Designfarben aus zwei Achsen:
+//   Grund:  Dunkel (Navy #090b10) ↔ Hell (Creme #f6f4ee)
+//   Akzent: Gold (Erkenntnis) ↔ Türkis/Teal (Bewusstsein)
 // 1:1 an brand-assets.mjs angeglichen, damit die Carousels zur restlichen
-// Bildwelt passen. hell=true → Creme-Grund #f6f4ee, dunkle Tinte-Schrift.
-const PAL = (hell) => hell ? {
-  page: "#efe9de", stars: "none",
-  bg: `radial-gradient(78% 62% at 50% -12%, rgba(232,193,95,.22), transparent 62%),
+// Bildwelt passen. theme: "dunkel" | "hell" | "tuerkis" | "tuerkis-hell".
+const BG_GOLD_HELL = `radial-gradient(78% 62% at 50% -12%, rgba(232,193,95,.22), transparent 62%),
        radial-gradient(60% 55% at 96% 4%, rgba(242,212,137,.12), transparent 60%),
        radial-gradient(58% 52% at 4% 108%, rgba(217,169,58,.13), transparent 60%),
-       #f6f4ee`,
-  grad: "linear-gradient(120deg,#d9a93a 0%,#7e6410 100%)",
-  eyebrow: "#7e6410", ink: "#16231f", sub: "rgba(22,35,31,.66)",
-  body: "rgba(22,35,31,.82)", strong: "#16231f", statlabel: "rgba(22,35,31,.85)",
-  numbg: "rgba(22,35,31,.05)",
-  cardBg: "rgba(22,35,31,.045)", cardBorder: "rgba(22,35,31,.12)", cardText: "rgba(22,35,31,.72)",
-  chipGoodBg: "rgba(120,150,40,.14)", chipGoodText: "#5c6b1f", chipGoodBorder: "rgba(120,150,40,.4)",
-  chipBadBg: "rgba(180,80,50,.12)", chipBadText: "#9a4426", chipBadBorder: "rgba(180,80,50,.38)",
-  onGrad: "#fdfaf1",
-  hintBg: "rgba(168,132,42,.10)", hintBorder: "#b8901f", hintHl: "#7e6410",
-  merkText: "#4a5a2f", merkBorder: "#a8842a",
-  muted: "rgba(22,35,31,.55)", dotOff: "rgba(22,35,31,.18)", logoShadow: "rgba(168,132,42,.28)",
-} : {
-  page: "#05060c", stars: "block",
-  bg: `radial-gradient(52% 110% at 86% 10%, rgba(233,193,95,.20), transparent 60%),
+       #f6f4ee`;
+const BG_GOLD_DARK = `radial-gradient(52% 110% at 86% 10%, rgba(233,193,95,.20), transparent 60%),
        radial-gradient(46% 110% at 6% 96%, rgba(168,132,42,.12), transparent 60%),
        radial-gradient(42% 90% at 74% 92%, rgba(217,169,58,.12), transparent 60%),
-       #090b10`,
-  grad: "linear-gradient(120deg,#f2d489 0%,#e8c15f 100%)",
-  eyebrow: "#f2d489", ink: "#f4f2ec", sub: "rgba(244,242,236,.72)",
-  body: "rgba(244,242,236,.86)", strong: "#ffffff", statlabel: "rgba(244,242,236,.9)",
-  numbg: "rgba(255,255,255,.05)",
-  cardBg: "rgba(255,255,255,.05)", cardBorder: "rgba(255,255,255,.10)", cardText: "rgba(244,242,236,.78)",
-  chipGoodBg: "rgba(140,198,63,.16)", chipGoodText: "#b9e08a", chipGoodBorder: "rgba(140,198,63,.4)",
-  chipBadBg: "rgba(230,120,90,.14)", chipBadText: "#f0b49b", chipBadBorder: "rgba(230,120,90,.38)",
-  onGrad: "#241a06",
-  hintBg: "rgba(233,193,95,.10)", hintBorder: "#e8c15f", hintHl: "#f2d489",
-  merkText: "#efe2c4", merkBorder: "#e8c15f",
-  muted: "rgba(244,242,236,.6)", dotOff: "rgba(255,255,255,.22)", logoShadow: "rgba(233,193,95,.30)",
+       #090b10`;
+// Türkis-Grund (Teal-Schimmer + Leaf) – analog BG_TUERKIS / BG_HELL_TEAL in brand-assets.
+const BG_TEAL_DARK = `radial-gradient(54% 112% at 84% 8%, rgba(52,196,196,.24), transparent 60%),
+       radial-gradient(48% 110% at 6% 96%, rgba(33,178,189,.14), transparent 60%),
+       radial-gradient(44% 92% at 74% 94%, rgba(140,198,63,.12), transparent 60%),
+       #090b10`;
+const BG_TEAL_HELL = `radial-gradient(78% 62% at 50% -10%, rgba(52,196,196,.20), transparent 62%),
+       radial-gradient(60% 55% at 96% 4%, rgba(140,198,63,.12), transparent 60%),
+       radial-gradient(58% 52% at 4% 108%, rgba(33,178,189,.12), transparent 60%),
+       #f6f4ee`;
+
+const PAL = (theme) => {
+  const hell = theme === "hell" || theme === "tuerkis-hell";
+  const teal = theme === "tuerkis" || theme === "tuerkis-hell";
+  const base = hell ? {
+    page: "#efe9de", stars: "none",
+    bg: teal ? BG_TEAL_HELL : BG_GOLD_HELL,
+    grad: "linear-gradient(120deg,#d9a93a 0%,#7e6410 100%)",
+    eyebrow: "#7e6410", ink: "#16231f", sub: "rgba(22,35,31,.66)",
+    body: "rgba(22,35,31,.82)", strong: "#16231f", statlabel: "rgba(22,35,31,.85)",
+    numbg: "rgba(22,35,31,.05)",
+    cardBg: "rgba(22,35,31,.045)", cardBorder: "rgba(22,35,31,.12)", cardText: "rgba(22,35,31,.72)",
+    chipGoodBg: "rgba(120,150,40,.14)", chipGoodText: "#5c6b1f", chipGoodBorder: "rgba(120,150,40,.4)",
+    chipBadBg: "rgba(180,80,50,.12)", chipBadText: "#9a4426", chipBadBorder: "rgba(180,80,50,.38)",
+    onGrad: "#fdfaf1",
+    hintBg: "rgba(168,132,42,.10)", hintBorder: "#b8901f", hintHl: "#7e6410",
+    merkText: "#4a5a2f", merkBorder: "#a8842a",
+    muted: "rgba(22,35,31,.55)", dotOff: "rgba(22,35,31,.18)", logoShadow: "rgba(168,132,42,.28)",
+    accentShadow: "184,144,34",
+  } : {
+    page: "#05060c", stars: "block",
+    bg: teal ? BG_TEAL_DARK : BG_GOLD_DARK,
+    grad: "linear-gradient(120deg,#f2d489 0%,#e8c15f 100%)",
+    eyebrow: "#f2d489", ink: "#f4f2ec", sub: "rgba(244,242,236,.72)",
+    body: "rgba(244,242,236,.86)", strong: "#ffffff", statlabel: "rgba(244,242,236,.9)",
+    numbg: "rgba(255,255,255,.05)",
+    cardBg: "rgba(255,255,255,.05)", cardBorder: "rgba(255,255,255,.10)", cardText: "rgba(244,242,236,.78)",
+    chipGoodBg: "rgba(140,198,63,.16)", chipGoodText: "#b9e08a", chipGoodBorder: "rgba(140,198,63,.4)",
+    chipBadBg: "rgba(230,120,90,.14)", chipBadText: "#f0b49b", chipBadBorder: "rgba(230,120,90,.38)",
+    onGrad: "#241a06",
+    hintBg: "rgba(233,193,95,.10)", hintBorder: "#e8c15f", hintHl: "#f2d489",
+    merkText: "#efe2c4", merkBorder: "#e8c15f",
+    muted: "rgba(244,242,236,.6)", dotOff: "rgba(255,255,255,.22)", logoShadow: "rgba(233,193,95,.30)",
+    accentShadow: "233,193,95",
+  };
+  if (!teal) return base;
+  // Türkis: Gold-Akzente durch Teal/Leaf ersetzen – Grund (Navy/Creme) bleibt.
+  return {
+    ...base,
+    grad: hell
+      ? "linear-gradient(120deg,#8cc63f 0%,#0f766e 100%)"
+      : "linear-gradient(120deg,#a3d64f 0%,#21b2bd 100%)",
+    eyebrow: hell ? "#0f766e" : "#5fd6d2",
+    onGrad: hell ? "#f4faf9" : "#08221f",
+    hintBg: hell ? "rgba(15,118,110,.10)" : "rgba(52,196,196,.10)",
+    hintBorder: hell ? "#0f766e" : "#34c4c4",
+    hintHl: hell ? "#0f766e" : "#5fd6d2",
+    merkText: hell ? "#125a52" : "#bfeae6",
+    merkBorder: hell ? "#0f766e" : "#34c4c4",
+    logoShadow: hell ? "rgba(52,150,140,.28)" : "rgba(52,196,196,.30)",
+    accentShadow: hell ? "33,178,189" : "52,196,196",
+  };
 };
 
 // ---------------------------------------------------------------------------
@@ -284,7 +321,7 @@ const SERIES = [
 ];
 
 // ---------------------------------------------------------------------------
-const cssFor = (W, H, PAD, hell) => { const p = PAL(hell); return `
+const cssFor = (W, H, PAD, theme) => { const p = PAL(theme); const hell = theme === "hell" || theme === "tuerkis-hell"; return `
 *{ margin:0; padding:0; box-sizing:border-box; }
 html,body{ background:${p.page}; overflow:hidden; }
 .slide{ position:relative; width:${W}px; height:${H}px; overflow:hidden;
@@ -323,7 +360,7 @@ html,body{ background:${p.page}; overflow:hidden; }
   filter:drop-shadow(0 4px 22px rgba(0,0,0,${hell ? ".08" : ".5"})); }
 .numbig{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:180px; line-height:.9; letter-spacing:-2px;
   background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 8px 30px rgba(184,144,34,.25)); }
+  filter:drop-shadow(0 8px 30px rgba(${p.accentShadow},.25)); }
 .statlabel{ font-weight:700; font-size:30px; line-height:1.3; color:${p.statlabel}; }
 .numbg{ position:absolute; z-index:1; right:40px; top:50%; transform:translateY(-50%); font-family:'Fraunces',Georgia,serif;
   font-weight:600; font-size:440px; line-height:.8; color:${p.numbg}; }
@@ -363,15 +400,18 @@ html,body{ background:${p.page}; overflow:hidden; }
 .handle{ font-weight:600; font-size:25px; letter-spacing:.03em; color:${p.muted}; }
 .dots{ display:flex; align-items:center; gap:9px; }
 .dot2{ width:10px; height:10px; border-radius:50%; background:${p.dotOff}; }
-.dot2.on{ background:${p.grad}; box-shadow:0 0 12px rgba(184,144,34,.4); }
+.dot2.on{ background:${p.grad}; box-shadow:0 0 12px rgba(${p.accentShadow},.4); }
 .count{ font-size:23px; color:${p.muted}; font-variant-numeric:tabular-nums; }
 .swipe{ font-size:25px; color:${p.muted}; font-weight:600; }
 `; };
 
 const fontsCss = readFileSync(join(COVERS, "_fonts.css"), "utf8");
-// Goldenes Marken-Gehirn (wie brand-assets.mjs) statt des bunten Reels-Logos –
-// passt zur Gold-/Creme-Markenoptik.
-const logoUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
+// Emblem je Welt (wie brand-assets.mjs): Gold-Gehirn für die Gold-Welten,
+// Türkis-Gehirn für die Türkis-Welten.
+const logoGoldUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
+const logoTealUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-tuerkis.png")).toString("base64")}`;
+const logoFor = (theme) =>
+  theme === "tuerkis" || theme === "tuerkis-hell" ? logoTealUri : logoGoldUri;
 const fit = (t, big, mid, sm) => (t.length <= 120 ? big : t.length <= 240 ? mid : sm);
 
 function dots(active, total) {
@@ -408,15 +448,15 @@ function mid(s) {
     default: return "";
   }
 }
-function slideHtml(series, s, idx, total, css) {
+function slideHtml(series, s, idx, total, css, logo) {
   const isCover = s.role === "cover";
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
   // Cover trägt die Wortmarke (Schriftlogo) neben dem Gehirn; Folgeslides den Tag.
   const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2">Deiner Gedanken</span></div>`;
   const top = isCover
-    ? `<div class="top cover"><img class="logo" src="${logoUri}" alt="">${wm}</div>`
-    : `<div class="top"><img class="logo" src="${logoUri}" alt=""><div class="tag">${series.tag}</div></div>`;
+    ? `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`
+    : `<div class="top"><img class="logo" src="${logo}" alt=""><div class="tag">${series.tag}</div></div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
   ${top}
@@ -443,17 +483,25 @@ const browser = await chromium.launch({ executablePath: findChrome() });
 for (const F of FORMATS) {
   if (only && F.key !== only) continue;
   const page = await browser.newPage({ viewport: { width: F.w, height: F.h }, deviceScaleFactor: 1 });
-  // Jede Serie in beiden Themes: dunkel (Standard, Unterordner <format>)
-  // und Creme (Unterordner <format>-hell).
-  for (const hell of [false, true]) {
-    const css = cssFor(F.w, F.h, F.pad, hell);
-    const sub = hell ? `${F.key}-hell` : F.key;
+  // Jede Serie in allen vier Designfarben. Unterordner je Welt:
+  //   dunkel → <format>            (Gold auf Navy, Standard)
+  //   hell   → <format>-hell       (Gold auf Creme)
+  //   tuerkis→ <format>-tuerkis    (Türkis auf Navy)
+  //   tuerkis-hell → <format>-tuerkis-hell (Türkis auf Creme)
+  // Optional nur ein Theme rendern: THEME=tuerkis node docs/carousels/marketing-serien.mjs
+  const themes = (process.env.THEME
+    ? [process.env.THEME]
+    : ["dunkel", "hell", "tuerkis", "tuerkis-hell"]);
+  for (const theme of themes) {
+    const css = cssFor(F.w, F.h, F.pad, theme);
+    const logo = logoFor(theme);
+    const sub = theme === "dunkel" ? F.key : `${F.key}-${theme}`;
     for (const series of SERIES) {
       const dir = join(OUTBASE, series.key, sub);
       mkdirSync(dir, { recursive: true });
       const total = series.slides.length;
       for (let i = 0; i < series.slides.length; i++) {
-        await page.setContent(slideHtml(series, series.slides[i], i, total, css), { waitUntil: "networkidle" });
+        await page.setContent(slideHtml(series, series.slides[i], i, total, css, logo), { waitUntil: "networkidle" });
         await page.screenshot({ path: join(dir, `slide-${String(i + 1).padStart(2, "0")}.png`) });
       }
       console.log(`✓ ${sub} · ${series.label}: ${total} Slides`);

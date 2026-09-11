@@ -52,16 +52,21 @@ const UNTER_KATEGORIE = "Marketing / Funnel";
 
 /**
  * Farbwelten der Marketing-Carousels. docs/carousels/marketing-serien.mjs
- * rendert jede Serie in zwei Welten:
- *   - Dunkel · Gold  → Format-Ordner ohne Suffix (feed-4x5, …)
- *   - Hell · Creme   → Format-Ordner mit Suffix „-hell" (feed-4x5-hell, …)
+ * rendert jede Serie in allen vier Designfarben (Format-Ordner je Welt):
+ *   - Gold · Dunkel   → ohne Suffix          (feed-4x5, …)
+ *   - Gold · Creme    → „-hell"              (feed-4x5-hell, …)
+ *   - Türkis · Dunkel → „-tuerkis"           (feed-4x5-tuerkis, …)
+ *   - Türkis · Creme  → „-tuerkis-hell"      (feed-4x5-tuerkis-hell, …)
  * Jede Welt wird ein eigener Galerie-Eintrag (eigene Vorschau + eigenes ZIP),
- * damit beide Farben in /admin/vorlagen erscheinen. Der Basis-Eintrag (Dunkel)
- * behält seine bisherige ID `marketing__<key>`; Creme bekommt `-hell` angehängt.
+ * damit alle vier Farben in /admin/vorlagen erscheinen. Der Basis-Eintrag
+ * (Gold · Dunkel) behält seine bisherige ID `marketing__<key>`; die übrigen
+ * hängen ihren Suffix an. Welten ohne gerenderte Dateien werden übersprungen.
  */
 const MARKETING_WELTEN = [
   { suffix: "", welt: "Gold · Dunkel", idSuffix: "" },
   { suffix: "-hell", welt: "Gold · Creme", idSuffix: "-hell" },
+  { suffix: "-tuerkis", welt: "Türkis · Dunkel", idSuffix: "-tuerkis" },
+  { suffix: "-tuerkis-hell", welt: "Türkis · Creme", idSuffix: "-tuerkis-hell" },
 ];
 
 /** Format-Metadaten (Label + Pixelmaße) für die Card-Beschriftung. */
