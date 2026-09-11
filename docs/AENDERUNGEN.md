@@ -20,6 +20,74 @@ Verifiziert: `npm run build` (grün), `/buch` zeigt das neue Cover.
 
 ---
 
+## 2026-09-11 – Buch-Cover: Unterüberschrift geändert („Wer denkt hier eigentlich?")
+
+**Änderung:** Die Unterüberschrift (Untertitel) auf dem **Buch-Cover** wurde von
+„Wie du mit Energie, Bewusstsein und Praxis dein Leben neu gestaltest" auf
+**„Wer denkt hier eigentlich?"** getauscht.
+
+**Geändert:**
+- **`docs/ebook/werde-meister-deiner-gedanken.md`** – erster `##` (Zeile 3). Dieser
+  wird in `tools/pdf/build-buch.py` ausschließlich als Cover-Untertitel
+  (`<p class="promise">`) verwendet und taucht nicht im Fließtext auf.
+- **`content/pdf/Werde-Meister-deiner-Gedanken.pdf`** – neu gebaut (`npm run pdf:buch`),
+  Titelseite trägt den neuen Untertitel.
+- **`content/pdf/Werde-Meister-deiner-Gedanken-Cover.png`** – neu gerendert
+  (`npm run buchcover`, 2479×3508 @ 300 dpi).
+
+**Wirkung:** Reine Cover-/Untertitel-Änderung, kein Eingriff in den Buchinhalt.
+
+---
+
+## 2026-09-11 – Buch: Kapitel 15 umbenannt („Vom Wunsch zum Handeln")
+
+**Änderung:** Die Überschrift von **Kapitel 15** wurde von
+„Gelebte Manifestation" auf **„Vom Wunsch zum Handeln"** geändert.
+
+**Geändert (2 Stellen, damit Verkaufsseite und Leserfassung/PDF konsistent bleiben):**
+- **`src/app/buch/page.tsx`** – Inhaltsverzeichnis der Buch-Verkaufsseite (Teil IV,
+  Kapitel 15).
+- **`docs/ebook/werde-meister-deiner-gedanken.md`** – Leserfassung, aus der auch das
+  Buch-PDF gebaut wird (Kapitel-Überschrift `### …`).
+
+**Wirkung:** Reine Titeländerung, kein Eingriff in den Kapitelinhalt oder die Logik.
+Wird das Buch-PDF neu gebaut, trägt es automatisch den neuen Titel.
+
+---
+
+## 2026-09-11 – Buch: Kapitel 14 umbenannt („Zeit ist nicht, was sie scheint")
+
+**Änderung:** Die Überschrift von **Kapitel 14** wurde von
+„Die Illusion der Zeit" auf **„Zeit ist nicht, was sie scheint"** geändert.
+
+**Geändert (2 Stellen, damit Verkaufsseite und Leserfassung/PDF konsistent bleiben):**
+- **`src/app/buch/page.tsx`** – Inhaltsverzeichnis der Buch-Verkaufsseite (Teil III,
+  Kapitel 14).
+- **`docs/ebook/werde-meister-deiner-gedanken.md`** – Leserfassung, aus der auch das
+  Buch-PDF gebaut wird (Kapitel-Überschrift `### …`).
+
+**Wirkung:** Reine Titeländerung, kein Eingriff in den Kapitelinhalt oder die Logik.
+Wird das Buch-PDF neu gebaut, trägt es automatisch den neuen Titel.
+
+---
+
+## 2026-09-11 – Buch: Kapitel 10 umbenannt („Manifestation – realistisch verstanden")
+
+**Änderung:** Die Überschrift von **Kapitel 10** wurde von
+„Manifestation ohne Feenstaub" auf **„Manifestation – realistisch verstanden"**
+geändert.
+
+**Geändert (2 Stellen, damit Verkaufsseite und Leserfassung/PDF konsistent bleiben):**
+- **`src/app/buch/page.tsx`** – Inhaltsverzeichnis der Buch-Verkaufsseite (Teil II,
+  Kapitel 10).
+- **`docs/ebook/werde-meister-deiner-gedanken.md`** – Leserfassung, aus der auch das
+  Buch-PDF gebaut wird (Kapitel-Überschrift `### …`).
+
+**Wirkung:** Reine Titeländerung, kein Eingriff in den Kapitelinhalt oder die Logik.
+Wird das Buch-PDF neu gebaut, trägt es automatisch den neuen Titel.
+
+---
+
 ## 2026-09-11 – Vorlagen: Marketing/Funnel-Carousels in allen 4 Designfarben
 
 **Symptom:** In `/admin/vorlagen` gab es die Marketing/Funnel-Carousels

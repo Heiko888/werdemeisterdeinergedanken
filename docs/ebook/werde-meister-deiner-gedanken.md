@@ -1,6 +1,6 @@
 # Werde Meister deiner Gedanken
 
-## Wie du mit Energie, Bewusstsein und Praxis dein Leben neu gestaltest
+## Wer denkt hier eigentlich?
 
 **Heiko Schwaninger**
 
@@ -1278,7 +1278,7 @@ Du wirst vielleicht erkennen, dass deine „Energie“ weniger geheimnisvoll und
 
 ## Kapitel 10
 
-### Manifestation ohne Feenstaub
+### Manifestation – realistisch verstanden
 
 Manifestation ist eines der meistverkauften und am häufigsten missverstandenen Themen der persönlichen Entwicklung.
 
@@ -1899,7 +1899,7 @@ Vereinbare mit dir, eine Minute zu warten, bevor du handelst. Atme, spüre die F
 
 ## Kapitel 14
 
-### Die Illusion der Zeit
+### Zeit ist nicht, was sie scheint
 
 Der Verstand liebt Linien.
 
@@ -2075,7 +2075,7 @@ Beide Antworten brauchen etwas anderes.
 
 ## Kapitel 15
 
-### Gelebte Manifestation
+### Vom Wunsch zum Handeln
 
 Es ist leicht, Manifestation zu erklären, solange sie theoretisch bleibt.
 
