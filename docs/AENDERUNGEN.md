@@ -5,6 +5,21 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Buch-Cover auf `/buch` getauscht
+
+Neues 3D-Buchcover mit dem Untertitel **„Wer denkt hier eigentlich?"** (passt zum
+Schwerpunkt des Buchs) statt der bisherigen Fassung („Wie du mit Energie,
+Bewusstsein und Praxis dein Leben neu gestaltest"). Quelle: `public/Buchcover.png`
+(1080×1920, RGBA) vom Branch `claude/uebungen-teil5`. Daraus web-optimiertes WebP
+(900 px, Transparenz erhalten, ~71 KB) erzeugt und die auf der Seite genutzte
+Datei **`public/buch-cover-3d.webp`** überschrieben – kein Code-Änderung nötig,
+der Import in `src/app/buch/page.tsx` bleibt gleich. Das große Roh-PNG wird
+bewusst nicht unter `public/` eingecheckt.
+
+Verifiziert: `npm run build` (grün), `/buch` zeigt das neue Cover.
+
+---
+
 ## 2026-09-11 – Buch-Cover: Unterüberschrift geändert („Wer denkt hier eigentlich?")
 
 **Änderung:** Die Unterüberschrift (Untertitel) auf dem **Buch-Cover** wurde von
