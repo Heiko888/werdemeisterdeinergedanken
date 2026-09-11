@@ -100,7 +100,7 @@ const bookParts: BookPart[] = [
     roman: "Teil IV",
     title: "Bewusst erschaffen und wirklich leben",
     chapters: [
-      [15, "Gelebte Manifestation"],
+      [15, "Vom Wunsch zum Handeln"],
       [16, "Wahrer Erfolg"],
       [17, "Dein energetisches Vermächtnis"],
       [18, "Vom Erkennen ins Handeln"],

@@ -2075,7 +2075,7 @@ Beide Antworten brauchen etwas anderes.
 
 ## Kapitel 15
 
-### Gelebte Manifestation
+### Vom Wunsch zum Handeln
 
 Es ist leicht, Manifestation zu erklären, solange sie theoretisch bleibt.
 

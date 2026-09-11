@@ -5,6 +5,22 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Buch: Kapitel 15 umbenannt („Vom Wunsch zum Handeln")
+
+**Änderung:** Die Überschrift von **Kapitel 15** wurde von
+„Gelebte Manifestation" auf **„Vom Wunsch zum Handeln"** geändert.
+
+**Geändert (2 Stellen, damit Verkaufsseite und Leserfassung/PDF konsistent bleiben):**
+- **`src/app/buch/page.tsx`** – Inhaltsverzeichnis der Buch-Verkaufsseite (Teil IV,
+  Kapitel 15).
+- **`docs/ebook/werde-meister-deiner-gedanken.md`** – Leserfassung, aus der auch das
+  Buch-PDF gebaut wird (Kapitel-Überschrift `### …`).
+
+**Wirkung:** Reine Titeländerung, kein Eingriff in den Kapitelinhalt oder die Logik.
+Wird das Buch-PDF neu gebaut, trägt es automatisch den neuen Titel.
+
+---
+
 ## 2026-09-11 – Buch: Kapitel 14 umbenannt („Zeit ist nicht, was sie scheint")
 
 **Änderung:** Die Überschrift von **Kapitel 14** wurde von
