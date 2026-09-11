@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/visuals/Logo";
 import { Button } from "@/components/ui/Button";
-import { Menu, Close } from "@/components/ui/Icon";
+import { Menu, Close, User } from "@/components/ui/Icon";
 import { mainNav } from "@/lib/site";
 import { signOut } from "@/app/auth/actions";
 import { cn } from "@/lib/cn";
@@ -116,10 +116,16 @@ export function Header() {
             </>
           ) : (
             <>
+              {/* „Mitglieder" als eigenständige, gold-getönte Pill mit Personen-
+                  Icon – hebt den Login zum exklusiven Bereich klar vom übrigen
+                  Menü ab, bleibt aber neben dem neutralen Erstgespräch-Button
+                  die ruhigere der beiden Aktionen. `h-11` = gleiche Höhe wie der
+                  Button, damit das Aktionspaar sauber ausgerichtet ist. */}
               <Link
                 href="/mitglieder"
-                className="text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+                className="inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-full border border-gold-600/40 bg-gold-500/10 px-4 text-sm font-semibold text-gold-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-gold-600/60 hover:bg-gold-500/[0.16] hover:shadow-[0_8px_20px_-12px_rgb(168_132_42_/_0.55)]"
               >
+                <User className="text-base" />
                 Mitglieder
               </Link>
               <Button href="/kontakt" variant="secondary" size="md" className="whitespace-nowrap">
@@ -189,11 +195,14 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              {/* Mobil dieselbe gold-getönte Identität wie im Desktop-Header,
+                  damit „Mitglieder" sich auch hier vom Content-Menü abhebt. */}
               <Link
                 href="/mitglieder"
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-4 py-3 text-base font-medium text-ink-soft hover:bg-ink/[0.04] hover:text-ink"
+                className="mt-2 flex items-center gap-2 rounded-xl border border-gold-600/40 bg-gold-500/10 px-4 py-3 text-base font-semibold text-gold-700 hover:bg-gold-500/[0.16]"
               >
+                <User className="text-lg" />
                 Mitglieder
               </Link>
               <div className="mt-3">
