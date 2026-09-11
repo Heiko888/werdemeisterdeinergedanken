@@ -5,6 +5,26 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Header: mehr Luft (breiterer Container + engere Abstände)
+
+**Symptom:** Ab 1280 px zeigte sich die Desktop-Leiste weiterhin „gequetscht".
+
+**Ursache:** Header = drei Blöcke (Logo · Menü · Aktionen) mit `justify-between`.
+Das Logo ist mit zweizeiligem Schriftzug ~210 px breit; zusammen mit 6
+Menüpunkten, Gold-Pill und Button füllte der Inhalt den `max-w-6xl`-Container
+(1152 px) fast komplett – die Zwischenräume schrumpften auf ~0, alles klebte
+aneinander. (Das frühere Anheben auf `xl` half nur *unterhalb* 1280 px.)
+
+**Geändert (`src/components/layout/Header.tsx`):**
+- Header-Container `max-w-6xl` → `max-w-7xl` (1152 → 1280 px) = +128 px Luft.
+- Aktionsgruppe rechts `gap-5` → `gap-3`.
+- Mitglieder-Pill etwas kompakter (`px-4` → `px-3.5`).
+
+**Wirkung:** Zwischen Logo · Menü · Aktionen bleiben jetzt sichtbare Abstände;
+die Leiste wirkt nicht mehr zusammengedrängt. Reine Layout-Änderung.
+
+---
+
 ## 2026-09-10 – Header: „Mitglieder" hebt sich als gold-getönte Login-Pill ab
 
 **Symptom:** Der „Mitglieder"-Link im Header war ein schlichter Text-Link neben

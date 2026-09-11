@@ -72,7 +72,7 @@ export function Header() {
           : "border-ink/5",
       )}
     >
-      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5 sm:px-8">
+      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
         <Logo className="shrink-0" />
 
         {/* Marketing-Navigation nur außerhalb des Mitgliederbereichs. Innerhalb
@@ -99,7 +99,7 @@ export function Header() {
           </nav>
         )}
 
-        <div className="hidden items-center gap-5 xl:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           {imMitgliederbereich ? (
             <>
               <Link
@@ -123,7 +123,7 @@ export function Header() {
                   Button, damit das Aktionspaar sauber ausgerichtet ist. */}
               <Link
                 href="/mitglieder"
-                className="inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-full border border-gold-600/40 bg-gold-500/10 px-4 text-sm font-semibold text-gold-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-gold-600/60 hover:bg-gold-500/[0.16] hover:shadow-[0_8px_20px_-12px_rgb(168_132_42_/_0.55)]"
+                className="inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-full border border-gold-600/40 bg-gold-500/10 px-3.5 text-sm font-semibold text-gold-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-gold-600/60 hover:bg-gold-500/[0.16] hover:shadow-[0_8px_20px_-12px_rgb(168_132_42_/_0.55)]"
               >
                 <User className="text-base" />
                 Mitglieder
