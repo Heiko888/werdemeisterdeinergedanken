@@ -21,7 +21,8 @@ import { QUOTES, FACTS } from "../../docs/marketing/content-data.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
-const fonts = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
+// Website-Schriften (Fraunces Display-Schnitt) – siehe tools/marketing/_website-fonts.css.
+const fonts = pathToFileURL(join(ROOT, "tools/marketing/_website-fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/content-overlays");
@@ -138,7 +139,7 @@ const footCss = (w, p) => `
 .foot .wm{display:flex;flex-direction:column;gap:${Math.round(w * 0.006)}px;line-height:1;text-align:left}
 .foot .wm1{font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w * 0.028)}px;letter-spacing:.1em;text-transform:uppercase;color:${p.wm1}}
 .foot .wm1 em{font-style:normal;background:${p.accent};-webkit-background-clip:text;background-clip:text;color:transparent}
-.foot .wm2{display:flex;align-items:center;gap:${Math.round(w * 0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w * 0.0145)}px;letter-spacing:.22em;text-transform:uppercase;color:${p.wm2}}
+.foot .wm2{display:flex;align-items:center;gap:${Math.round(w * 0.008)}px;font-family:Fraunces,serif;font-weight:400;font-size:${Math.round(w * 0.0145)}px;letter-spacing:.24em;text-transform:uppercase;color:${p.wm2}}
 .foot .wm2 i{display:block;height:1px;width:${Math.round(w * 0.022)}px;background:${p.stroke}}`;
 
 // Zitat-Overlay – Typografie 1:1 wie quoteTile in brand-assets.mjs.

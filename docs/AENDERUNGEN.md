@@ -5,6 +5,51 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Marketing-Wortmarke: gleiches Schriftlogo wie die Hauptseite
+
+**Problem:** Das „Werde Meister / Deiner Gedanken"-Schriftlogo in den
+Marketing-Posts wich vom Header-Logo der Website ab. Ursache lag am Generator –
+und zwar an zwei Punkten:
+
+1. **Falscher Schrift-Schnitt.** Die Generatoren betteten die **Google-Static-
+   Fraunces** ein (`tools/pdf/assets/fonts.css` bzw. `docs/reels/covers/_fonts.css`).
+   Diese Datei ist zwar variabel, hat aber die optische Achse `opsz` mit
+   **Default 9** (Text-Schnitt) – die Website nutzt dagegen
+   `src/app/fonts/Fraunces-latin-variable.woff2`, bei der `opsz` auf den
+   **Display-Schnitt** fixiert ist (dramatische Serifen, hoher Kontrast).
+   Gleicher Name „Fraunces", anderer optischer Schnitt → sichtbar andere Optik.
+2. **Abweichende Formatierung der Wortmarke.** Gewicht und Sperrung wichen vom
+   Website-Logo (`src/components/visuals/Logo.tsx`: Gewicht 400, Sperrung
+   `.1em` / `.24em`) ab.
+
+**Geändert:**
+- **Neu: `tools/marketing/_website-fonts.css`** – bettet exakt die Website-
+  Schriften ein (Fraunces normal + kursiv im Display-Schnitt, Inter), ein
+  variabler Schnitt deckt alle Gewichte 100–900 ab.
+- **Font-Quelle umgestellt** in allen 5 Marketing-Generatoren
+  (`personal-brand`, `content-overlays`, `story-carousels`, `story-overlays`,
+  `whatsapp-mitgliedschaft`) → zeigen jetzt auf `_website-fonts.css`.
+- **Wortmarken-Formatierung an die Website angeglichen:**
+  - `personal-brand.mjs`: Zeile 1 Gewicht **500 → 400**, Sperrung
+    **.07em → .1em**; Zeile 2 Sperrung **.22em → .24em**, Größe
+    **0.032 → 0.039** (Verhältnis wie Website ~0.48).
+  - `story-carousels.mjs`: Sperrung Zeile 1 **.06em → .1em**, Zeile 2 **.2em → .24em**.
+  - `content-overlays.mjs`: Sperrung Zeile 2 **.22em → .24em**.
+
+**Wirkung:** Betrifft **jeden Fraunces-Text** der Marketing-Posts (Wortmarke,
+Cover-Headlines, Zitate), der nun im gleichen Display-Schnitt wie die Website
+rendert. Die alten Font-CSS (`tools/pdf/assets/fonts.css`,
+`docs/reels/covers/_fonts.css`) bleiben unverändert – PDFs und Reels-Cover
+wurden bewusst nicht angefasst.
+
+**Verifiziert:** `node --check` für alle 5 Generatoren grün; Render-Vergleich
+(Chromium headless) bestätigt, dass die korrigierte Wortmarke deckungsgleich zum
+Website-Header-Logo ist. Hinweis: Zum tatsächlichen Neu-Erzeugen der PNGs müssen
+die Dev-Deps (`playwright`) installiert sein (`npm install`), dann die üblichen
+`npm run …`-Marketing-Skripte laufen lassen.
+
+---
+
 ## 2026-09-11 – Buch-Cover auf `/buch` getauscht
 
 Neues 3D-Buchcover mit dem Untertitel **„Wer denkt hier eigentlich?"** (passt zum

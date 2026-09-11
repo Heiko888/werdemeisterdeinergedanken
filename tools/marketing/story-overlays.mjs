@@ -18,7 +18,8 @@ import { ARROW } from "../../docs/_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
-const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
+// Website-Schriften (Fraunces Display-Schnitt) – siehe tools/marketing/_website-fonts.css.
+const fonts = pathToFileURL(join(ROOT, "tools/marketing/_website-fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/story-overlays");
