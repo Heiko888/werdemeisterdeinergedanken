@@ -5,6 +5,66 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-11 – Vorlagen: Marketing/Funnel-Carousels in allen 4 Designfarben
+
+**Symptom:** In `/admin/vorlagen` gab es die Marketing/Funnel-Carousels
+(„Bis zu 60.000 Gedanken am Tag", „4 Wege zur mentalen Freiheit", „Wer denkt
+hier eigentlich?", „Studien-Fakten", „Gratis-E-Book") nur in **einer** Farbwelt
+(live: Türkis). Die anderen **drei** Marken-Designfarben fehlten. Zusätzlich
+tauchten 2 vorhandene Serien gar nicht in der Galerie auf.
+
+**Ursache (drei Lücken):**
+1. **Generator:** `docs/carousels/marketing-serien.mjs` konnte nur Gold rendern
+   (Palette `PAL(hell)` = Dunkel + Creme, beide Gold). Die Türkis-Welten gab es
+   dort gar nicht – anders als in `brand-assets.mjs`.
+2. **Galerie-Builder:** `buildMarketingCarousels` (`tools/vorlagen/marketing-carousels.mjs`)
+   las nur die Basis-Format-Ordner (`feed-4x5`, `feed-1x1`, `reel-9x16`) und
+   legte pro Serie **genau einen** Eintrag ohne Farb-Unterscheidung an. Weitere
+   Welt-Ordner (`-hell`, `-tuerkis`, `-tuerkis-hell`) wurden nie übernommen.
+3. **Serien-Liste:** `MARKETING_TITEL` kannte nur 5 der inzwischen 7 Serien –
+   „Mentale Selbstverteidigung I + II" fehlten.
+4. **Nebenbefund:** Der Standalone-Modus (`node tools/vorlagen/marketing-carousels.mjs`)
+   parste den Katalog noch als einzelnes Array; seit der Chunk-Aufteilung
+   (`vorlagenAssets0…9` + Spread) hätte `JSON.parse` das gescheitert.
+
+**Geändert:**
+- **`docs/carousels/marketing-serien.mjs`** – Palette von `PAL(hell)` auf
+  `PAL(theme)` umgestellt (vier Designfarben: `dunkel`, `hell`, `tuerkis`,
+  `tuerkis-hell`; Teal/Leaf-Akzente + Türkis-Emblem `logo-brain-tuerkis.png`,
+  1:1 an `brand-assets.mjs` angelehnt). Render-Schleife erzeugt nun alle vier
+  Welten je Format (`<format>`, `-hell`, `-tuerkis`, `-tuerkis-hell`); optional
+  eine Welt via `THEME=tuerkis …`.
+- **`tools/vorlagen/marketing-carousels.mjs`** – neue Konstante
+  `MARKETING_WELTEN` (4 Welten). `buildMarketingCarousels` baut **pro Serie × Welt**
+  einen eigenen Eintrag: eigene Vorschau, eigenes ZIP, Farb-Label im Titel
+  (z. B. „Studien-Fakten · Türkis · Creme"). Gold·Dunkel behält die ID
+  `marketing__<key>`, die übrigen hängen ihren Suffix an. „Mentale
+  Selbstverteidigung I + II" ergänzt. Neuer, chunk-fester Katalog-Parser
+  `parseKatalog()` (liest `vorlagenAssetsN`-Blöcke einzeln, Fallback auf altes
+  Einzel-Array).
+
+**Wirkung:** `/admin/vorlagen` → Marketing/Funnel zeigt jetzt **28 Carousels**
+(7 Serien je in Gold·Dunkel, Gold·Creme, Türkis·Dunkel, Türkis·Creme).
+`src/lib/vorlagen-assets.ts` neu erzeugt (2352 → 2375 Einträge). Reine Galerie-/
+Tooling-Änderung, keine Logik der Website.
+
+**Serverstand / wichtig:** Die Bilddateien liegen unter `content/vorlagen/…` und
+sind bewusst **nicht im Git** (Volume `/opt/website-vorlagen` → Container
+`/app/content/vorlagen`, siehe `.gitignore`). Damit die neuen Carousels live
+sichtbar werden, müssen die neu gerenderten Dateien auf den Server:
+```
+# 1. Rendern + Galerie-Einträge (lokal, braucht Chromium):
+node docs/carousels/marketing-serien.mjs
+node tools/vorlagen/marketing-carousels.mjs
+# 2. Alle 28 marketing__-Ordner + ZIPs nach /opt/website-vorlagen/carousels/ spiegeln:
+#    content/vorlagen/carousels/marketing__<serie>[-hell|-tuerkis|-tuerkis-hell].zip
+#    content/vorlagen/carousels/marketing__<serie>[…]/slide-*.webp
+```
+Ohne diesen Schritt erscheinen die neuen Einträge zwar in der Galerie, ihre
+Bilder blieben aber leer (404).
+
+---
+
 ## 2026-09-11 – Header: mehr Luft (breiterer Container + engere Abstände)
 
 **Symptom:** Ab 1280 px zeigte sich die Desktop-Leiste weiterhin „gequetscht".

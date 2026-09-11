@@ -52243,195 +52243,6 @@ const vorlagenAssets9: VorlagenAsset[] = [
     ]
   },
   {
-    "kategorie": "carousel",
-    "titel": "Bis zu 60.000 Gedanken am Tag",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 9,
-    "sizeMB": 1.6,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
-      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "4 Wege zur mentalen Freiheit",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 8,
-    "sizeMB": 1.4,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Wer denkt hier eigentlich?",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 8,
-    "sizeMB": 1.5,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Studien-Fakten",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 9,
-    "sizeMB": 1.8,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
-      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
-  },
-  {
-    "kategorie": "carousel",
-    "titel": "Gratis-E-Book",
-    "unterKategorie": "Marketing / Funnel",
-    "kind": "carousel",
-    "slides": 5,
-    "sizeMB": 0.9,
-    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
-    "slidePaths": [
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
-      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
-    ],
-    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
-    "formate": [
-      {
-        "label": "4:5",
-        "w": 1080,
-        "h": 1350
-      },
-      {
-        "label": "1:1",
-        "w": 1080,
-        "h": 1080
-      },
-      {
-        "label": "9:16",
-        "w": 1080,
-        "h": 1920
-      }
-    ],
-    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
-  },
-  {
     "kategorie": "workshop",
     "titel": "Moderationsplan 7 Stufen",
     "unterKategorie": "Die 7 Stufen",
@@ -52790,6 +52601,1090 @@ const vorlagenAssets9: VorlagenAsset[] = [
     "format": "PPTX",
     "sizeMB": 0.9,
     "href": "/admin/vorlagen/datei/workshop/WMDG-Workshop-Wissensreise-Dein-Gehirn-verstehen.pptx"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag · Gold · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.7,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag · Gold · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.6,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag · Türkis · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.7,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Bis zu 60.000 Gedanken am Tag · Türkis · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.6,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__60000-gedanken-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Bis zu 60.000 Gedanken am Tag – und die wenigsten hast du bewusst gewählt. Die meisten laufen im Autopilot: geprägt von Erinnerungen, Emotionen und Botschaften von außen, oft dieselben Muster, besonders die negativen. Mentale Freiheit beginnt nicht damit, nicht zu denken – sondern zu bemerken, dass nicht jeder Gedanke wirklich deiner ist. Speicher dir den Post und beobachte heute einmal, wie oft du tatsächlich selbst denkst. #werdemeisterdeinergedanken #gedankenkontrolle #mentalefreiheit #achtsamkeit #selbstreflexion #bewusstsein #mindset #innereruhe"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit · Gold · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.5,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit · Gold · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit · Türkis · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.6,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "4 Wege zur mentalen Freiheit · Türkis · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__4-wege-freiheit-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Deine Gedanken gehören dir – hol sie dir zurück. Vier Praktiken, die du sofort umsetzen kannst: Achtsamkeit üben, Informationsdiät halten, kritisch denken und positive Gewohnheiten stärken. Du musst nicht alles auf einmal – wähle einen Weg für diese Woche. Speicher dir den Post und schreib mir in die Kommentare, mit welchem Weg du startest. #werdemeisterdeinergedanken #mentalefreiheit #achtsamkeit #informationsdiät #kritischdenken #gewohnheiten #selbstführung #mindset"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich? · Gold · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.5,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich? · Gold · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich? · Türkis · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.6,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Wer denkt hier eigentlich? · Türkis · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 8,
+    "sizeMB": 1.4,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell/slide-08.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__wer-denkt-hier-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Nicht alle deine Gedanken sind wirklich deine eigenen. Werbung, Algorithmen und Gruppendruck formen dein Denken – oft, ohne dass du es merkst. Doch zwischen Reiz und Reaktion liegt ein Raum, und in diesem Raum liegt deine Freiheit. Frag bei jeder Botschaft: Woher kommt sie? Wer profitiert? Welche Emotion soll sie auslösen? Wer das fragt, entscheidet wieder selbst. Speicher dir den Post und beobachte heute einmal bewusst, was deine Gedanken auslöst. #werdemeisterdeinergedanken #werdenkthiereigentlich #manipulation #algorithmen #gruppendruck #achtsamkeit #mentalefreiheit #bewusstsein"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten · Gold · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.9,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten · Gold · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.8,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten · Türkis · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.9,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Studien-Fakten · Türkis · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 9,
+    "sizeMB": 1.8,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell/slide-09.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__studien-fakten-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Was weiß die Forschung wirklich über dein Denken? Fünf belegte Erkenntnisse – ehrlich eingeordnet, ohne Hype: Wir sind fast die Hälfte der Zeit gedanklich abwesend (Harvard, 2010). Dein Gehirn bleibt ein Leben lang formbar. Und ein Gefühl in Worte zu fassen, beruhigt messbar die Alarmzentrale im Kopf. Wichtig bleibt: Eine einzelne Studie ist ein Hinweis, kein Beweis – gute Wissenschaft nennt ihre Grenzen selbst. Speicher dir den Post; die Vertiefungen mit allen Quellen findest du auf der Website. #werdemeisterdeinergedanken #neurowissenschaft #neuroplastizität #achtsamkeit #psychologie #gehirn #mentaltraining #wissenschaft"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book · Gold · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book · Gold · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-hell/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book · Türkis · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 1,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Gratis-E-Book · Türkis · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 5,
+    "sizeMB": 0.9,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis-hell/slide-05.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__gratis-ebook-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ],
+    "caption": "Werde zum bewussten Gestalter deiner Gedanken – und fang heute an. Mein kostenloses E-Book bringt dir die 7 Stufen der Bewusstseinsentwicklung auf den Punkt: vom Autopilot bis zur Meisterschaft, mit ersten Übungen für den Alltag. Ohne Vorwissen, ohne Druck, in 30 Sekunden in deinem Postfach. Link in Bio oder direkt auf werdemeisterdeinergedanken.de – speicher dir den Post, damit du ihn wiederfindest. #werdemeisterdeinergedanken #7stufen #bewusstsein #achtsamkeit #persönlichkeitsentwicklung #gratisebook #mentaltraining #selbstentwicklung"
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung I · Gold · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.3,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung I · Gold · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.1,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung I · Türkis · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.3,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung I · Türkis · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.1,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-1-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung II · Gold · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.2,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung II · Gold · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.1,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung II · Türkis · Dunkel",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.3,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
+  },
+  {
+    "kategorie": "carousel",
+    "titel": "Mentale Selbstverteidigung II · Türkis · Creme",
+    "unterKategorie": "Marketing / Funnel",
+    "kind": "carousel",
+    "slides": 12,
+    "sizeMB": 2.1,
+    "thumb": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-01.webp",
+    "slidePaths": [
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-01.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-02.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-03.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-04.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-05.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-06.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-07.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-08.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-09.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-10.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-11.webp",
+      "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell/slide-12.webp"
+    ],
+    "href": "/admin/vorlagen/datei/carousels/marketing__mentale-selbstverteidigung-2-tuerkis-hell.zip",
+    "formate": [
+      {
+        "label": "4:5",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "label": "1:1",
+        "w": 1080,
+        "h": 1080
+      },
+      {
+        "label": "9:16",
+        "w": 1080,
+        "h": 1920
+      }
+    ]
   }
 ];
 
