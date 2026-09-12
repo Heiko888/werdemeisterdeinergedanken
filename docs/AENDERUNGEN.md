@@ -5,6 +5,32 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-12 – Buch-Hero: Buch besser geerdet (kein „Draufgesetzt"-Look)
+
+**Änderung:** Das Buch-Cover im `/buch`-Hero wirkte trotz Bodenschatten noch
+schwebend/„draufgesetzt". Die Erdung wurde überarbeitet.
+
+**Geändert (`src/app/buch/page.tsx`, nur Hero-Buchspalte):**
+- Buch **tiefer gesetzt** (`lg:self-end` + `lg:pb-3.5`), sodass die Basis auf
+  der **Felskante im Vordergrund** des Fotos aufsitzt statt über dem Tal zu
+  schweben.
+- Neue Schatten-Ebenen statt des einzelnen weichen Bodenschattens:
+  **„Sitz"-Vertiefung** (breit, weich), **Umgebungsschatten** (leicht nach
+  links geworfen, da die Sonne von rechts kommt) und ein **harter
+  Kontaktschatten** direkt an der Buchkante – letzterer erdet das Buch.
+- **Gerichteter Schlagschatten** am Cover (`drop-shadow(-9px 18px 22px …)`)
+  passend zur Lichtrichtung statt des generischen `drop-shadow-2xl`.
+- Die **goldene Reflexion** (screen-Blend) wurde entfernt – sie verstärkte den
+  Composite-Look.
+- Halo minimal reduziert.
+
+**Wirkung:** Reine Feinabstimmung der Buch-Darstellung im Hero. Layout, Foto,
+Text, Preis & Wegpunkte unverändert. Visuell über das Mockup geprüft;
+`npm run build`/Lint hier mangels `node_modules` nicht ausführbar – CI/Vercel
+prüft beim Push.
+
+---
+
 ## 2026-09-12 – Buch-Hero: Hintergrundfoto getauscht
 
 **Änderung:** Das Hero-Hintergrundfoto auf **`/buch`** wurde gegen ein neues
