@@ -5,6 +5,64 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-12 – Buch-Hero: Hintergrundfoto getauscht
+
+**Änderung:** Das Hero-Hintergrundfoto auf **`/buch`** wurde gegen ein neues
+Motiv getauscht (hellerer Tag, See & Steinweg statt goldenem Sonnenaufgang).
+
+**Geändert:**
+- **`public/buch-hero-bg.webp`** – überschrieben mit dem neuen, web-optimierten
+  Bild (1672×941, **~364 KB** WebP; Quelle `public/ChatGPT Image Sep 13, 2026,
+  12_52_45 AM.png`, ~2,97 MB, von `origin/main`). Gleicher Dateiname → **keine
+  Code-Änderung nötig**, der Import in `src/app/buch/page.tsx` bleibt gleich.
+
+**Wirkung:** Reiner Bildtausch. Die bestehenden Abdunklungs-Ebenen wurden im
+Mockup gegen das hellere Motiv geprüft – Creme-Text und Cover bleiben AA-lesbar,
+daher unverändert übernommen. Layout, Buch, Halo, Wegpunkte & Preis unverändert.
+
+---
+
+## 2026-09-12 – Buch-Hero: Foto-Hintergrund + Neugestaltung
+
+**Änderung:** Der Hero der Verkaufsseite **`/buch`** hat statt der flachen,
+fast schwarzen Fläche (`bg-navy-900` + Gold-Verlauf) jetzt ein **Foto im
+Hintergrund** (Sonnenaufgang über Wald & See) mit „cinematischem" Treatment.
+Das Buch-Cover wirkte auf dem schwarzen Grund zu schwer.
+
+**Geändert:**
+- **`public/buch-hero-bg.webp`** (neu) – das Hero-Hintergrundfoto,
+  web-optimiert (1672×941, **~280 KB** WebP; Quelle war ein ~2,6 MB großes PNG).
+  Next.js optimiert die Auslieferung zusätzlich zu WebP/AVIF.
+- **`src/app/buch/page.tsx`** – Hero-Sektion neu aufgebaut:
+  - Foto als `next/image fill` mit drei Abdunklungs-Ebenen
+    (`HERO_PHOTO_BASE/DESKTOP/MOBILE`), damit Creme-Text & Cover AA-lesbar
+    bleiben (links satt dunkel für Text-Ruhe, rechts offener fürs Foto;
+    mobil oben dunkler wegen gestapeltem Text).
+  - **Niedrigere, definierte Höhe** (`lg:h-[45rem]` ≈ 720 px statt fast
+    bildschirmfüllend), Inhalt vertikal zentriert.
+  - **Buch größer & dominanter** (`lg:w-[21rem]`), Text + Buch als
+    zusammenhängendes, **zentriertes Paar** (kein Auseinanderdriften an die
+    Ränder).
+  - **Bodenschatten + warmgoldene Reflexion + dezentes Gold-Halo** hinter dem
+    Buch, damit es nicht mehr schwebt.
+  - **7 goldene Wegpunkte** (die 7 Stufen) als sehr dezenter, aufsteigender
+    Pfad im Tal – nur Desktop.
+  - **Ruhe links** hinter der Headline (keine Grafik).
+  - **Autor-/Trust-Zeile** („Von Heiko Schwaninger …") direkt an die Buttons
+    gerückt, mit kleinem Gold-Badge.
+  - **Preis dezent strukturiert** (PDF · Hardcover als zweigeteilte Box) statt
+    reiner Textzeile.
+
+**Wirkung:** Reine Gestaltung des `/buch`-Heros. Inhalte, Preise, Links und die
+übrigen Sektionen unverändert.
+
+**Verifiziert:** Visuell über ein pixelgenaues Mockup (identische Farb-/Layout-
+Werte, mit echtem Foto & Cover). `npm run build`/Lint konnten in dieser
+Remote-Umgebung mangels installierter `node_modules` nicht laufen – bitte beim
+nächsten lokalen/CI-Build gegenprüfen.
+
+---
+
 ## 2026-09-11 – Buch-Cover auf `/buch` getauscht
 
 Neues 3D-Buchcover mit dem Untertitel **„Wer denkt hier eigentlich?"** (passt zum

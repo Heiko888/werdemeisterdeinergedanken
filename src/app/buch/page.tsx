@@ -12,6 +12,7 @@ import { HERO_GLOW } from "@/lib/gradients";
 import { bookTestimonials } from "@/lib/content";
 import buchCover from "../../../public/buch-cover-3d.webp";
 import heikoPortrait from "../../../public/heiko-avatar.webp";
+import heroBg from "../../../public/buch-hero-bg.webp";
 
 export const metadata: Metadata = withCanonical("/buch", {
   title: "Das Buch: Werde Meister deiner Gedanken",
@@ -26,6 +27,32 @@ const PRICE_PRINT = "39,90 €";
 
 // Der goldene Hero-Verlauf – identisch zur Startseite/Mitgliedschaft.
 const NAVY_GLOW = HERO_GLOW;
+
+// Foto-Hero (Sonnenaufgang über Wald & See) braucht eine Abdunklung, damit
+// Creme-Text und Cover AA-lesbar bleiben. Drei Ebenen über dem Foto:
+//  BASE  – dezentes Gold-Rimlight oben rechts + gleichmäßige, leichte Abdunklung
+//  DESKTOP – links satt dunkel → rechts offener (Text-Ruhe links, Foto rechts)
+//  MOBILE  – oben dunkler, weil sich Text dort über das Foto stapelt
+const HERO_PHOTO_BASE =
+  "radial-gradient(50% 42% at 80% 4%, color-mix(in oklab, var(--color-gold-400) 16%, transparent), transparent 60%)," +
+  "linear-gradient(0deg, rgba(9,11,16,0.32), rgba(9,11,16,0.12))";
+const HERO_PHOTO_DESKTOP =
+  "linear-gradient(90deg, rgba(9,11,16,0.90) 0%, rgba(9,11,16,0.70) 34%, rgba(9,11,16,0.26) 70%, rgba(9,11,16,0.44) 100%)";
+const HERO_PHOTO_MOBILE =
+  "linear-gradient(180deg, rgba(9,11,16,0.88) 0%, rgba(9,11,16,0.55) 46%, rgba(9,11,16,0.60) 100%)";
+
+// Sieben goldene Wegpunkte (die 7 Stufen) als aufsteigender Pfad im Tal –
+// verbindet Buch, „7 Stufen" und Marke. Bewusst sehr dezent, nur auf Desktop.
+// Tupel: [left %, top %, Größe px, Deckkraft].
+const HERO_WAYPOINTS: [number, number, number, number][] = [
+  [44, 80, 15, 0.55],
+  [48, 73, 13, 0.5],
+  [52, 66, 11, 0.44],
+  [56, 60, 9.5, 0.38],
+  [59, 55, 8, 0.32],
+  [62, 51, 6.5, 0.27],
+  [65, 47, 5.5, 0.22],
+];
 
 const promises = [
   [
@@ -233,67 +260,143 @@ export default async function BuchPage({
         </div>
       )}
 
-      {/* Hero: Cover + Angebot */}
-      <section className="on-dark relative overflow-hidden bg-navy-900 py-14 text-cream sm:py-24">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10"
-          style={{ background: NAVY_GLOW }}
+      {/* Hero: Foto-Hintergrund + Cover als dominantes Produkt.
+          Niedrigere, definierte Höhe auf Desktop; Inhalt vertikal zentriert.
+          Text + Buch stehen als zusammenhängendes, zentriertes Paar. */}
+      <section className="on-dark relative isolate flex min-h-[36rem] items-center overflow-hidden py-16 text-cream lg:h-[45rem] lg:py-0">
+        {/* Foto-Hintergrund (Next optimiert Auslieferung zu webp/avif) */}
+        <Image
+          src={heroBg}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="-z-30 object-cover object-[center_42%]"
         />
-        <Container className="grid items-center gap-12 lg:grid-cols-[0.85fr_1fr] lg:gap-16">
-          {/* Buch-Cover mit warmem Gold-Schein */}
-          <div className="flex justify-center lg:order-last">
-            <div className="relative">
-              <div
-                aria-hidden
-                className="absolute inset-0 -z-10 rounded-full opacity-60 blur-3xl"
-                style={{
-                  background:
-                    "radial-gradient(circle, color-mix(in oklab, var(--color-gold-500) 35%, transparent), transparent 70%)",
-                }}
-              />
-              <Image
-                src={buchCover}
-                alt="Buchcover „Werde Meister deiner Gedanken“ von Heiko Schwaninger"
-                priority
-                sizes="(min-width: 1024px) 28rem, (min-width: 640px) 20rem, 15rem"
-                className="h-auto w-60 drop-shadow-2xl sm:w-80 lg:w-[26rem]"
-              />
-            </div>
-          </div>
+        {/* Lesbarkeits-Overlays */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-20" style={{ background: HERO_PHOTO_BASE }} />
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-20 hidden lg:block" style={{ background: HERO_PHOTO_DESKTOP }} />
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-20 lg:hidden" style={{ background: HERO_PHOTO_MOBILE }} />
+        {/* 7 Wegpunkte (7 Stufen) – sehr dezent, nur Desktop */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden lg:block">
+          {HERO_WAYPOINTS.map(([l, t, s, o], i) => (
+            <span
+              key={i}
+              className="absolute rounded-full"
+              style={{
+                left: `${l}%`,
+                top: `${t}%`,
+                width: `${s}px`,
+                height: `${s}px`,
+                opacity: o,
+                background:
+                  "radial-gradient(circle, #f2d489, color-mix(in oklab, var(--color-gold-500) 60%, transparent) 45%, transparent 72%)",
+                filter: "blur(1.2px)",
+                boxShadow: "0 0 14px 3px color-mix(in oklab, var(--color-gold-400) 40%, transparent)",
+              }}
+            />
+          ))}
+        </div>
 
-          <div className="max-w-xl [text-shadow:0_1px_18px_rgba(8,16,42,0.6)]">
-            <Eyebrow>Das Buch</Eyebrow>
-            <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
-              Werde Meister deiner <em className="accent">Gedanken</em>
-            </h1>
-            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/90">
-              Der Weg vom Autopilot zur Meisterschaft – in fünf Teilen und 24
-              Kapiteln. Und die Frage, die das Buch trägt: Wer denkt hier
-              eigentlich? Sechs Kapitel darüber, wie Reizüberflutung, Framing,
-              Propaganda und Algorithmen deine Gedanken formen – und wie du sie
-              zurückholst.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap sm:items-center">
-              <Button href="#bestellen" size="lg" variant="accent" className="w-full sm:w-auto">
-                Jetzt bestellen
-              </Button>
-              <Button
-                href="#inhalt"
-                variant="secondary"
-                size="lg"
-                className="w-full sm:w-auto"
+        <Container className="relative z-10">
+          <div className="mx-auto grid max-w-[64rem] items-center gap-10 lg:grid-cols-[minmax(0,32rem)_auto] lg:justify-center lg:gap-10">
+            {/* Textspalte – bewusst ruhig, keine Grafik dahinter */}
+            <div className="max-w-xl [text-shadow:0_2px_22px_rgba(8,16,42,0.9)]">
+              <Eyebrow>Das Buch</Eyebrow>
+              <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
+                Werde Meister deiner <em className="accent">Gedanken</em>
+              </h1>
+              <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/90">
+                Der Weg vom Autopilot zur Meisterschaft – in fünf Teilen und 24
+                Kapiteln. Und die Frage, die das Buch trägt: Wer denkt hier
+                eigentlich?
+              </p>
+              <div className="mt-7 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap sm:items-center">
+                <Button href="#bestellen" size="lg" variant="accent" className="w-full sm:w-auto">
+                  Jetzt bestellen
+                </Button>
+                <Button
+                  href="#inhalt"
+                  variant="secondary"
+                  size="lg"
+                  className="w-full sm:w-auto"
+                >
+                  Was drin steckt
+                </Button>
+              </div>
+              {/* Autor-/Trust-Zeile – direkt an die Buttons gerückt */}
+              <div className="mt-5 flex items-center gap-3 [text-shadow:none]">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-600 font-display text-sm font-bold text-navy-950">
+                  H
+                </span>
+                <span className="text-sm leading-snug text-cream/80">
+                  <span className="font-semibold text-cream">Von Heiko Schwaninger</span>{" "}
+                  · ohne esoterisches Blabla, in deinem Tempo.
+                </span>
+              </div>
+              {/* Preis – dezent strukturiert statt reiner Textzeile */}
+              <div
+                className="mt-6 inline-flex overflow-hidden rounded-xl border bg-navy-950/35 [text-shadow:none]"
+                style={{ borderColor: "color-mix(in oklab, var(--color-gold-400) 34%, transparent)" }}
               >
-                Was drin steckt
-              </Button>
+                <div className="px-4 py-2">
+                  <div className="text-[0.62rem] font-bold uppercase tracking-[0.14em] text-cream/60">
+                    PDF
+                  </div>
+                  <div className="font-display text-lg font-medium text-cream">{PRICE_PDF}</div>
+                </div>
+                <div
+                  className="border-l px-4 py-2"
+                  style={{ borderColor: "color-mix(in oklab, var(--color-gold-400) 22%, transparent)" }}
+                >
+                  <div className="text-[0.62rem] font-bold uppercase tracking-[0.14em] text-cream/60">
+                    Hardcover
+                  </div>
+                  <div className="font-display text-lg font-medium text-gold-300">{PRICE_PRINT}</div>
+                </div>
+              </div>
             </div>
-            <p className="mt-4 text-sm text-cream/80">
-              Als PDF für {PRICE_PDF} · gedruckt für {PRICE_PRINT} · inkl. MwSt.
-            </p>
-            <p className="mt-6 flex items-center gap-2 text-sm text-cream/75">
-              <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
-              Von Heiko Schwaninger · ohne esoterisches Blabla, in deinem Tempo.
-            </p>
+
+            {/* Buch – dominantes Produkt, mit Bodenschatten, Reflexion & Halo */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-64 sm:w-72 lg:w-[21rem]">
+                {/* subtiles goldenes Rimlight / Halo hinter dem Buch */}
+                <div
+                  aria-hidden
+                  className="absolute left-1/2 top-[44%] -z-10 h-[96%] w-[118%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-lg"
+                  style={{
+                    background:
+                      "radial-gradient(closest-side, color-mix(in oklab, var(--color-gold-400) 26%, transparent), color-mix(in oklab, var(--color-gold-500) 10%, transparent) 58%, transparent 74%)",
+                  }}
+                />
+                {/* weicher Bodenschatten */}
+                <div
+                  aria-hidden
+                  className="absolute bottom-[-1.6rem] left-1/2 -z-10 h-11 w-[78%] -translate-x-1/2 rounded-[50%] blur-lg"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at center, rgba(0,0,0,0.55), rgba(0,0,0,0.28) 45%, transparent 72%)",
+                  }}
+                />
+                {/* warmgoldene Reflexion */}
+                <div
+                  aria-hidden
+                  className="absolute bottom-[-0.9rem] left-1/2 -z-10 h-6 w-[56%] -translate-x-1/2 rounded-[50%] blur-md"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at center, color-mix(in oklab, var(--color-gold-400) 34%, transparent), color-mix(in oklab, var(--color-gold-500) 14%, transparent) 50%, transparent 74%)",
+                    mixBlendMode: "screen",
+                  }}
+                />
+                <Image
+                  src={buchCover}
+                  alt="Buchcover „Werde Meister deiner Gedanken“ von Heiko Schwaninger"
+                  priority
+                  sizes="(min-width: 1024px) 21rem, (min-width: 640px) 18rem, 16rem"
+                  className="relative h-auto w-full drop-shadow-2xl"
+                />
+              </div>
+            </div>
           </div>
         </Container>
       </section>
