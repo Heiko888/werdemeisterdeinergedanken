@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-12 – Buch-Hero: Hintergrundfoto getauscht
+
+**Änderung:** Das Hero-Hintergrundfoto auf **`/buch`** wurde gegen ein neues
+Motiv getauscht (hellerer Tag, See & Steinweg statt goldenem Sonnenaufgang).
+
+**Geändert:**
+- **`public/buch-hero-bg.webp`** – überschrieben mit dem neuen, web-optimierten
+  Bild (1672×941, **~364 KB** WebP; Quelle `public/ChatGPT Image Sep 13, 2026,
+  12_52_45 AM.png`, ~2,97 MB, von `origin/main`). Gleicher Dateiname → **keine
+  Code-Änderung nötig**, der Import in `src/app/buch/page.tsx` bleibt gleich.
+
+**Wirkung:** Reiner Bildtausch. Die bestehenden Abdunklungs-Ebenen wurden im
+Mockup gegen das hellere Motiv geprüft – Creme-Text und Cover bleiben AA-lesbar,
+daher unverändert übernommen. Layout, Buch, Halo, Wegpunkte & Preis unverändert.
+
+---
+
 ## 2026-09-12 – Buch-Hero: Foto-Hintergrund + Neugestaltung
 
 **Änderung:** Der Hero der Verkaufsseite **`/buch`** hat statt der flachen,
