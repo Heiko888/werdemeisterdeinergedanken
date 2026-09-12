@@ -21,7 +21,8 @@ import { ARROW } from "../../docs/_glyphs.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
-const fonts = pathToFileURL(join(ROOT, "docs/reels/covers/_fonts.css")).href;
+// Website-Schriften (Fraunces Display-Schnitt) – siehe tools/marketing/_website-fonts.css.
+const fonts = pathToFileURL(join(ROOT, "tools/marketing/_website-fonts.css")).href;
 const brain = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 const brainTeal = pathToFileURL(join(ROOT, "public/logo-brain-tuerkis.png")).href;
 const OUT = join(ROOT, "docs/marketing/story-carousels");
@@ -101,9 +102,9 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
 .brandlock{position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:16px;z-index:6}
 .brainmini{width:78px;filter:drop-shadow(0 6px 30px rgba(${glowRGB},.5))}
 .wmlock{display:flex;flex-direction:column;gap:5px;line-height:1}
-.wmlock .wm1{font-family:Fraunces,serif;font-weight:400;font-size:30px;letter-spacing:.06em;text-transform:uppercase;color:${wmMain}}
+.wmlock .wm1{font-family:Fraunces,serif;font-weight:400;font-size:30px;letter-spacing:.1em;text-transform:uppercase;color:${wmMain}}
 .wmlock .wm1 em{font-style:normal;background:${accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
-.wmlock .wm2{display:flex;align-items:center;gap:8px;font-family:Fraunces,serif;font-weight:400;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:${wmSub}}
+.wmlock .wm2{display:flex;align-items:center;justify-content:center;gap:8px;font-family:Fraunces,serif;font-weight:400;font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:${wmSub}}
 .wmlock .wm2 i{display:block;height:1px;width:22px;background:${tickCol}}
 .pageno{position:absolute;top:70px;right:64px;font-size:21px;font-weight:700;letter-spacing:2px;color:${pagenoCol};z-index:6}
 em{background:${accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}

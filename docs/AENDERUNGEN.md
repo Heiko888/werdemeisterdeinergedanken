@@ -5,6 +5,132 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-12 – Carousels: volles Schriftlogo auf allen Slides
+
+**Problem:** In `docs/carousels/marketing-serien.mjs` trug nur das Cover (slide-01)
+das volle Schriftlogo (Gehirn + „WERDE MEISTER / DEINER GEDANKEN"). Die Folgeslides
+zeigten nur das Gehirn-Emblem + einen Themen-Tag rechts – das wirkte inkonsistent.
+
+**Fix:** Der Kopfbereich (`top`) verwendet jetzt auf **allen** Slides die
+Cover-Variante (Gehirn + Wortmarke). Der bisherige Themen-Tag der Folgeslides
+entfällt. Betrifft alle 7 Serien dieses Generators; Carousel-PNGs werden on demand
+erzeugt.
+
+---
+
+## 2026-09-12 – Wortmarke: „Deiner Gedanken" zentriert (wie Website-Logo)
+
+**Problem:** In mehreren Generatoren stand die zweite Wortmarken-Zeile
+„Deiner Gedanken" **linksbündig** statt zentriert unter „WERDE MEISTER" – im
+Website-Logo (`Logo.tsx`) ist sie zentriert (`justify-center`).
+
+**Fix:** `justify-content:center` bei `.wm2` ergänzt in:
+- `docs/carousels/marketing-serien.mjs` (Carousels, u. a. „60.000 Gedanken")
+- `tools/marketing/story-carousels.mjs`
+- `tools/marketing/content-overlays.mjs`
+
+(`tools/marketing/personal-brand.mjs` war bereits zentriert.) Die committeten
+PNGs von story-carousels und content-overlays wurden neu gerendert; Carousel-PNGs
+werden on demand erzeugt.
+
+---
+
+## 2026-09-12 – Carousel-Generator: Wortmarke/Schrift wie die Hauptseite
+
+**Problem:** Der Carousel-Generator `docs/carousels/marketing-serien.mjs`
+(u. a. Serie „60.000 Gedanken") wurde beim Font-Fix vom 11.09. **übersehen** – er
+ist ein eigener Generator mit eigener Schrift-Einbindung. Sein Schriftlogo wich
+weiter vom Website-Header ab.
+
+**Ursache & Fix:**
+- **Font-Quelle** war `docs/reels/covers/_fonts.css` (Google-Static-Fraunces,
+  opsz-Default 9 = Text-Schnitt) → umgestellt auf `tools/marketing/_website-fonts.css`
+  (Display-Schnitt der Website).
+- **Wortmarken-Formatierung** an `Logo.tsx` angeglichen:
+  - Zeile 1 „Werde **Meister**": Gewicht **600 → 400**, Sperrung **.02em → .1em**
+    (inkl. `<b>`-Gold-Teil auf 400).
+  - Zeile 2 „Deiner Gedanken": war **Inter, Gewicht 700** ohne Striche → jetzt
+    **Fraunces, Gewicht 400, .24em** mit den goldenen Flankier-Strichen (`<i></i>`,
+    Farbe = `p.eyebrow`) wie im Website-Logo.
+- **Neuer optionaler Filter** `SERIES=<key>` (analog zu `FORMAT`/`THEME`), um gezielt
+  eine einzelne Serie zu rendern, z. B.
+  `SERIES=60000-gedanken THEME=hell node docs/carousels/marketing-serien.mjs`.
+
+**Wirkung:** Betrifft alle mit diesem Generator erzeugten Carousels (7 Serien) –
+Wortmarke und Fraunces-Headlines rendern nun im Website-Schnitt. Die Carousel-PNGs
+liegen nicht im Repo (werden nach `docs/carousels/export/` bzw. ein übergebenes
+Zielverzeichnis erzeugt), daher kein Bild-Commit nötig; bei Bedarf neu rendern.
+
+**Verifiziert:** `node --check` grün; Render der Serie „60.000 Gedanken" (Creme),
+Cover-Wortmarke deckungsgleich mit dem Website-Header-Logo.
+
+---
+
+## 2026-09-11 – Marketing-Wortmarke: gleiches Schriftlogo wie die Hauptseite
+
+**Problem:** Das „Werde Meister / Deiner Gedanken"-Schriftlogo in den
+Marketing-Posts wich vom Header-Logo der Website ab. Ursache lag am Generator –
+und zwar an zwei Punkten:
+
+1. **Falscher Schrift-Schnitt.** Die Generatoren betteten die **Google-Static-
+   Fraunces** ein (`tools/pdf/assets/fonts.css` bzw. `docs/reels/covers/_fonts.css`).
+   Diese Datei ist zwar variabel, hat aber die optische Achse `opsz` mit
+   **Default 9** (Text-Schnitt) – die Website nutzt dagegen
+   `src/app/fonts/Fraunces-latin-variable.woff2`, bei der `opsz` auf den
+   **Display-Schnitt** fixiert ist (dramatische Serifen, hoher Kontrast).
+   Gleicher Name „Fraunces", anderer optischer Schnitt → sichtbar andere Optik.
+2. **Abweichende Formatierung der Wortmarke.** Gewicht und Sperrung wichen vom
+   Website-Logo (`src/components/visuals/Logo.tsx`: Gewicht 400, Sperrung
+   `.1em` / `.24em`) ab.
+
+**Geändert:**
+- **Neu: `tools/marketing/_website-fonts.css`** – bettet exakt die Website-
+  Schriften ein (Fraunces normal + kursiv im Display-Schnitt, Inter), ein
+  variabler Schnitt deckt alle Gewichte 100–900 ab.
+- **Font-Quelle umgestellt** in allen 5 Marketing-Generatoren
+  (`personal-brand`, `content-overlays`, `story-carousels`, `story-overlays`,
+  `whatsapp-mitgliedschaft`) → zeigen jetzt auf `_website-fonts.css`.
+- **Wortmarken-Formatierung an die Website angeglichen:**
+  - `personal-brand.mjs`: Zeile 1 Gewicht **500 → 400**, Sperrung
+    **.07em → .1em**; Zeile 2 Sperrung **.22em → .24em**, Größe
+    **0.032 → 0.039** (Verhältnis wie Website ~0.48).
+  - `story-carousels.mjs`: Sperrung Zeile 1 **.06em → .1em**, Zeile 2 **.2em → .24em**.
+  - `content-overlays.mjs`: Sperrung Zeile 2 **.22em → .24em**.
+
+**Wirkung:** Betrifft **jeden Fraunces-Text** der Marketing-Posts (Wortmarke,
+Cover-Headlines, Zitate), der nun im gleichen Display-Schnitt wie die Website
+rendert. Die alten Font-CSS (`tools/pdf/assets/fonts.css`,
+`docs/reels/covers/_fonts.css`) bleiben unverändert – PDFs und Reels-Cover
+wurden bewusst nicht angefasst.
+
+**Bilder neu gerendert (aktueller Stand):** Die PNGs der vier reproduzierbaren
+Generatoren wurden neu erzeugt und eingecheckt – sie nutzen jetzt den Website-
+Schnitt:
+- `docs/marketing/content-overlays/` (Zitate + Studien-Fakten)
+- `docs/marketing/story-carousels/` (sommer-2023)
+- `docs/marketing/story-overlays/`
+- `docs/marketing/whatsapp-mitgliedschaft/`
+
+Per Pixel-Diff gegen die alten Bilder verifiziert: Änderungen sind auf die
+Textzonen (Wortmarke, Zitate, Headlines) begrenzt – Hintergründe, Gehirn-Logo und
+Layout unverändert.
+
+**Noch offen – `docs/marketing/personal/`:** Bewusst **nicht** neu gerendert. Die
+Portrait-Eingabe (`docs/marketing/_input/portrait.png`) liegt nicht im Repo; ein
+Test-Render mit `docs/marketing/quellen/heiko-portrait-freigestellt.png` zeigte,
+dass das ein **anderes Foto** ist (die ganze Person wich ab). Ein Neu-Rendern
+hätte also das Foto ausgetauscht. Diese Bilder bitte **lokal mit dem Original-
+portrait** neu erzeugen:
+`PORTRAIT=<pfad-zum-freigestellten-original> node tools/marketing/personal-brand.mjs`
+(Ausgabe: `docs/marketing/personal/…-Logo-…`). Der Code-Fix steckt bereits drin –
+dann rendert auch die Personal-Wortmarke im Website-Schnitt.
+
+**Verifiziert:** `node --check` für alle 5 Generatoren grün; Render-Vergleich
+(Chromium headless) bestätigt, dass die korrigierte Wortmarke deckungsgleich zum
+Website-Header-Logo ist.
+
+---
+
 ## 2026-09-11 – Buch-Cover auf `/buch` getauscht
 
 Neues 3D-Buchcover mit dem Untertitel **„Wer denkt hier eigentlich?"** (passt zum

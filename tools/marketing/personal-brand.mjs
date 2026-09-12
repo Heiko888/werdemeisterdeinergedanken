@@ -16,7 +16,11 @@ import { dirname, join } from "node:path";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
-const fontsUrl = pathToFileURL(join(ROOT, "tools/pdf/assets/fonts.css")).href;
+// Marken-Schriften: exakt die Website-Dateien (Fraunces im Display-Schnitt),
+// damit die Wortmarke identisch zum Header-Logo der Hauptseite rendert. Die
+// frühere Google-Static-Fraunces (opsz-Default 9) ergab einen abweichenden
+// Text-Schnitt – siehe tools/marketing/_website-fonts.css.
+const fontsUrl = pathToFileURL(join(ROOT, "tools/marketing/_website-fonts.css")).href;
 const INPUT_DIR = join(ROOT, "docs/marketing/_input");
 const OUT_DIR = join(ROOT, "docs/marketing/personal");
 
@@ -112,9 +116,9 @@ ${P.bg}
   object-fit:contain;object-position:bottom;filter:drop-shadow(0 24px 60px rgba(0,0,0,${P.hell ? ".22" : ".5"}))}
 .footer{position:absolute;left:0;right:0;bottom:0;height:${Math.round(h * 0.34)}px;background:linear-gradient(to top, ${P.base} 0%, ${P.base} 34%, transparent 100%)}
 .wm{position:absolute;left:0;right:0;bottom:${u(0.06)}px;display:flex;flex-direction:column;align-items:center;gap:${u(0.02)}px;text-align:center;padding:0 ${u(0.06)}px}
-.wm1{font-family:Fraunces,serif;font-weight:500;text-transform:uppercase;letter-spacing:.07em;line-height:1.04;color:${P.ink};font-size:${u(0.082)}px}
+.wm1{font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.1em;line-height:1.04;color:${P.ink};font-size:${u(0.082)}px}
 .wm1 span{background:${P.accent};-webkit-background-clip:text;background-clip:text;color:transparent}
-.wm2{display:flex;align-items:center;justify-content:center;gap:${u(0.016)}px;font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.22em;color:${P.sub};font-size:${u(0.032)}px}
+.wm2{display:flex;align-items:center;justify-content:center;gap:${u(0.016)}px;font-family:Fraunces,serif;font-weight:400;text-transform:uppercase;letter-spacing:.24em;color:${P.sub};font-size:${u(0.039)}px}
 .wm2 i{display:block;height:1px;width:${u(0.05)}px;background:${P.url}}
 </style></head><body>
 <div class="bg"></div><div class="glow"></div>

@@ -344,9 +344,10 @@ html,body{ background:${p.page}; overflow:hidden; }
   text-transform:uppercase; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
 .top.cover{ align-items:center; justify-content:flex-start; gap:26px; }
 .wm{ display:flex; flex-direction:column; gap:6px; line-height:1; }
-.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:34px; letter-spacing:.02em; text-transform:uppercase; color:${p.ink}; }
-.wm .wm1 b{ font-weight:600; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-.wm .wm2{ font-weight:700; font-size:17px; letter-spacing:.26em; text-transform:uppercase; color:${p.muted}; }
+.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:34px; letter-spacing:.1em; text-transform:uppercase; color:${p.ink}; }
+.wm .wm1 b{ font-weight:400; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.wm .wm2{ display:flex; align-items:center; justify-content:center; gap:9px; font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:16px; letter-spacing:.24em; text-transform:uppercase; color:${p.muted}; }
+.wm .wm2 i{ display:block; height:1px; width:16px; background:${p.eyebrow}; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
   color:${p.eyebrow}; }
@@ -405,7 +406,10 @@ html,body{ background:${p.page}; overflow:hidden; }
 .swipe{ font-size:25px; color:${p.muted}; font-weight:600; }
 `; };
 
-const fontsCss = readFileSync(join(COVERS, "_fonts.css"), "utf8");
+// Website-Schriften (Fraunces im Display-Schnitt) statt der Google-Static-
+// Variante (opsz-Default 9 = Text-Schnitt) – damit Wortmarke und Headlines
+// exakt wie das Header-Logo der Hauptseite rendern. Siehe tools/marketing/_website-fonts.css.
+const fontsCss = readFileSync(join(ROOT, "tools", "marketing", "_website-fonts.css"), "utf8");
 // Emblem je Welt (wie brand-assets.mjs): Gold-Gehirn für die Gold-Welten,
 // Türkis-Gehirn für die Türkis-Welten.
 const logoGoldUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
@@ -453,10 +457,11 @@ function slideHtml(series, s, idx, total, css, logo) {
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
   // Cover trägt die Wortmarke (Schriftlogo) neben dem Gehirn; Folgeslides den Tag.
-  const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2">Deiner Gedanken</span></div>`;
-  const top = isCover
-    ? `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`
-    : `<div class="top"><img class="logo" src="${logo}" alt=""><div class="tag">${series.tag}</div></div>`;
+  const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div>`;
+  // Volles Schriftlogo (Gehirn + Wortmarke) wie auf dem Cover – auf ALLEN Slides,
+  // damit die Marke durchgängig konsistent ist (vorher trugen die Folgeslides nur
+  // das Gehirn-Emblem + einen Themen-Tag, was „nicht passte").
+  const top = `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
   ${top}
@@ -497,6 +502,8 @@ for (const F of FORMATS) {
     const logo = logoFor(theme);
     const sub = theme === "dunkel" ? F.key : `${F.key}-${theme}`;
     for (const series of SERIES) {
+      // Optional nur eine Serie rendern: SERIES=60000-gedanken node docs/carousels/marketing-serien.mjs
+      if (process.env.SERIES && series.key !== process.env.SERIES) continue;
       const dir = join(OUTBASE, series.key, sub);
       mkdirSync(dir, { recursive: true });
       const total = series.slides.length;
