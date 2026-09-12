@@ -5,6 +5,37 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-12 – Carousel-Generator: Wortmarke/Schrift wie die Hauptseite
+
+**Problem:** Der Carousel-Generator `docs/carousels/marketing-serien.mjs`
+(u. a. Serie „60.000 Gedanken") wurde beim Font-Fix vom 11.09. **übersehen** – er
+ist ein eigener Generator mit eigener Schrift-Einbindung. Sein Schriftlogo wich
+weiter vom Website-Header ab.
+
+**Ursache & Fix:**
+- **Font-Quelle** war `docs/reels/covers/_fonts.css` (Google-Static-Fraunces,
+  opsz-Default 9 = Text-Schnitt) → umgestellt auf `tools/marketing/_website-fonts.css`
+  (Display-Schnitt der Website).
+- **Wortmarken-Formatierung** an `Logo.tsx` angeglichen:
+  - Zeile 1 „Werde **Meister**": Gewicht **600 → 400**, Sperrung **.02em → .1em**
+    (inkl. `<b>`-Gold-Teil auf 400).
+  - Zeile 2 „Deiner Gedanken": war **Inter, Gewicht 700** ohne Striche → jetzt
+    **Fraunces, Gewicht 400, .24em** mit den goldenen Flankier-Strichen (`<i></i>`,
+    Farbe = `p.eyebrow`) wie im Website-Logo.
+- **Neuer optionaler Filter** `SERIES=<key>` (analog zu `FORMAT`/`THEME`), um gezielt
+  eine einzelne Serie zu rendern, z. B.
+  `SERIES=60000-gedanken THEME=hell node docs/carousels/marketing-serien.mjs`.
+
+**Wirkung:** Betrifft alle mit diesem Generator erzeugten Carousels (7 Serien) –
+Wortmarke und Fraunces-Headlines rendern nun im Website-Schnitt. Die Carousel-PNGs
+liegen nicht im Repo (werden nach `docs/carousels/export/` bzw. ein übergebenes
+Zielverzeichnis erzeugt), daher kein Bild-Commit nötig; bei Bedarf neu rendern.
+
+**Verifiziert:** `node --check` grün; Render der Serie „60.000 Gedanken" (Creme),
+Cover-Wortmarke deckungsgleich mit dem Website-Header-Logo.
+
+---
+
 ## 2026-09-11 – Marketing-Wortmarke: gleiches Schriftlogo wie die Hauptseite
 
 **Problem:** Das „Werde Meister / Deiner Gedanken"-Schriftlogo in den
