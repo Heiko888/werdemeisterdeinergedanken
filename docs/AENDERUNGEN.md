@@ -5,6 +5,19 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-12 – Carousels: volles Schriftlogo auf allen Slides
+
+**Problem:** In `docs/carousels/marketing-serien.mjs` trug nur das Cover (slide-01)
+das volle Schriftlogo (Gehirn + „WERDE MEISTER / DEINER GEDANKEN"). Die Folgeslides
+zeigten nur das Gehirn-Emblem + einen Themen-Tag rechts – das wirkte inkonsistent.
+
+**Fix:** Der Kopfbereich (`top`) verwendet jetzt auf **allen** Slides die
+Cover-Variante (Gehirn + Wortmarke). Der bisherige Themen-Tag der Folgeslides
+entfällt. Betrifft alle 7 Serien dieses Generators; Carousel-PNGs werden on demand
+erzeugt.
+
+---
+
 ## 2026-09-12 – Wortmarke: „Deiner Gedanken" zentriert (wie Website-Logo)
 
 **Problem:** In mehreren Generatoren stand die zweite Wortmarken-Zeile

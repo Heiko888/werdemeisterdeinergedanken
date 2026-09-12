@@ -458,9 +458,10 @@ function slideHtml(series, s, idx, total, css, logo) {
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
   // Cover trägt die Wortmarke (Schriftlogo) neben dem Gehirn; Folgeslides den Tag.
   const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></div>`;
-  const top = isCover
-    ? `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`
-    : `<div class="top"><img class="logo" src="${logo}" alt=""><div class="tag">${series.tag}</div></div>`;
+  // Volles Schriftlogo (Gehirn + Wortmarke) wie auf dem Cover – auf ALLEN Slides,
+  // damit die Marke durchgängig konsistent ist (vorher trugen die Folgeslides nur
+  // das Gehirn-Emblem + einen Themen-Tag, was „nicht passte").
+  const top = `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
   ${top}
