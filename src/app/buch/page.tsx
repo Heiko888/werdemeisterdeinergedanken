@@ -357,35 +357,45 @@ export default async function BuchPage({
               </div>
             </div>
 
-            {/* Buch – dominantes Produkt, mit Bodenschatten, Reflexion & Halo */}
-            <div className="flex justify-center lg:justify-end">
+            {/* Buch – dominantes Produkt. Tiefer gesetzt (self-end), damit die
+                Basis auf der Felskante im Vordergrund aufsitzt; geerdet durch
+                Kontakt- + Umgebungsschatten statt zu schweben. */}
+            <div className="flex justify-center lg:justify-end lg:self-end lg:pb-3.5">
               <div className="relative w-64 sm:w-72 lg:w-[21rem]">
                 {/* subtiles goldenes Rimlight / Halo hinter dem Buch */}
                 <div
                   aria-hidden
-                  className="absolute left-1/2 top-[44%] -z-10 h-[96%] w-[118%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-lg"
+                  className="absolute left-1/2 top-[42%] -z-10 h-[92%] w-[116%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[12px]"
                   style={{
                     background:
-                      "radial-gradient(closest-side, color-mix(in oklab, var(--color-gold-400) 26%, transparent), color-mix(in oklab, var(--color-gold-500) 10%, transparent) 58%, transparent 74%)",
+                      "radial-gradient(closest-side, color-mix(in oklab, var(--color-gold-400) 22%, transparent), color-mix(in oklab, var(--color-gold-500) 8%, transparent) 58%, transparent 74%)",
                   }}
                 />
-                {/* weicher Bodenschatten */}
+                {/* dunkle „Sitz"-Vertiefung – erdet das Buch in die Szene */}
                 <div
                   aria-hidden
-                  className="absolute bottom-[-1.6rem] left-1/2 -z-10 h-11 w-[78%] -translate-x-1/2 rounded-[50%] blur-lg"
+                  className="absolute bottom-[-0.9rem] left-[47%] -z-10 h-[70px] w-[96%] -translate-x-1/2 rounded-[50%] blur-[16px]"
                   style={{
                     background:
-                      "radial-gradient(ellipse at center, rgba(0,0,0,0.55), rgba(0,0,0,0.28) 45%, transparent 72%)",
+                      "radial-gradient(ellipse at center, rgba(0,0,0,0.5), rgba(0,0,0,0.24) 46%, transparent 72%)",
                   }}
                 />
-                {/* warmgoldene Reflexion */}
+                {/* weicher Umgebungsschatten – leicht nach links geworfen (Sonne v. rechts) */}
                 <div
                   aria-hidden
-                  className="absolute bottom-[-0.9rem] left-1/2 -z-10 h-6 w-[56%] -translate-x-1/2 rounded-[50%] blur-md"
+                  className="absolute bottom-[-6px] left-[45%] -z-10 h-[34px] w-[88%] -translate-x-1/2 rounded-[50%] blur-[15px]"
                   style={{
                     background:
-                      "radial-gradient(ellipse at center, color-mix(in oklab, var(--color-gold-400) 34%, transparent), color-mix(in oklab, var(--color-gold-500) 14%, transparent) 50%, transparent 74%)",
-                    mixBlendMode: "screen",
+                      "radial-gradient(ellipse at center, rgba(0,0,0,0.5), rgba(0,0,0,0.26) 50%, transparent 74%)",
+                  }}
+                />
+                {/* harter Kontaktschatten direkt an der Buchkante */}
+                <div
+                  aria-hidden
+                  className="absolute bottom-[2px] left-[48.5%] -z-10 h-[13px] w-1/2 -translate-x-1/2 rounded-[50%] blur-[3px]"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at center, rgba(0,0,0,0.78), rgba(0,0,0,0.45) 55%, transparent 80%)",
                   }}
                 />
                 <Image
@@ -393,7 +403,7 @@ export default async function BuchPage({
                   alt="Buchcover „Werde Meister deiner Gedanken“ von Heiko Schwaninger"
                   priority
                   sizes="(min-width: 1024px) 21rem, (min-width: 640px) 18rem, 16rem"
-                  className="relative h-auto w-full drop-shadow-2xl"
+                  className="relative h-auto w-full [filter:drop-shadow(-9px_18px_22px_rgba(0,0,0,0.5))]"
                 />
               </div>
             </div>
