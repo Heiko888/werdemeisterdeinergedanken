@@ -104,7 +104,7 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
 .wmlock{display:flex;flex-direction:column;gap:5px;line-height:1}
 .wmlock .wm1{font-family:Fraunces,serif;font-weight:400;font-size:30px;letter-spacing:.1em;text-transform:uppercase;color:${wmMain}}
 .wmlock .wm1 em{font-style:normal;background:${accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent}
-.wmlock .wm2{display:flex;align-items:center;gap:8px;font-family:Fraunces,serif;font-weight:400;font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:${wmSub}}
+.wmlock .wm2{display:flex;align-items:center;justify-content:center;gap:8px;font-family:Fraunces,serif;font-weight:400;font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:${wmSub}}
 .wmlock .wm2 i{display:block;height:1px;width:22px;background:${tickCol}}
 .pageno{position:absolute;top:70px;right:64px;font-size:21px;font-weight:700;letter-spacing:2px;color:${pagenoCol};z-index:6}
 em{background:${accentGrad};-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}

@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-12 – Wortmarke: „Deiner Gedanken" zentriert (wie Website-Logo)
+
+**Problem:** In mehreren Generatoren stand die zweite Wortmarken-Zeile
+„Deiner Gedanken" **linksbündig** statt zentriert unter „WERDE MEISTER" – im
+Website-Logo (`Logo.tsx`) ist sie zentriert (`justify-center`).
+
+**Fix:** `justify-content:center` bei `.wm2` ergänzt in:
+- `docs/carousels/marketing-serien.mjs` (Carousels, u. a. „60.000 Gedanken")
+- `tools/marketing/story-carousels.mjs`
+- `tools/marketing/content-overlays.mjs`
+
+(`tools/marketing/personal-brand.mjs` war bereits zentriert.) Die committeten
+PNGs von story-carousels und content-overlays wurden neu gerendert; Carousel-PNGs
+werden on demand erzeugt.
+
+---
+
 ## 2026-09-12 – Carousel-Generator: Wortmarke/Schrift wie die Hauptseite
 
 **Problem:** Der Carousel-Generator `docs/carousels/marketing-serien.mjs`

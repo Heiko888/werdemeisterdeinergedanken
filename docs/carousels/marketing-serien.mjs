@@ -346,7 +346,7 @@ html,body{ background:${p.page}; overflow:hidden; }
 .wm{ display:flex; flex-direction:column; gap:6px; line-height:1; }
 .wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:34px; letter-spacing:.1em; text-transform:uppercase; color:${p.ink}; }
 .wm .wm1 b{ font-weight:400; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-.wm .wm2{ display:flex; align-items:center; gap:9px; font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:16px; letter-spacing:.24em; text-transform:uppercase; color:${p.muted}; }
+.wm .wm2{ display:flex; align-items:center; justify-content:center; gap:9px; font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:16px; letter-spacing:.24em; text-transform:uppercase; color:${p.muted}; }
 .wm .wm2 i{ display:block; height:1px; width:16px; background:${p.eyebrow}; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
