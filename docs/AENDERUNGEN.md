@@ -5,6 +5,33 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-13 – Buch-Hero: Produkt-Inszenierung (Bühne, Reflexion, Tiefe)
+
+**Änderung:** Größerer Rework des `/buch`-Heros, damit das Buch nicht mehr
+freigestellt/„aufgesetzt" wirkt, sondern als inszeniertes Produkt Teil einer
+ruhigen, edlen, dunklen Hero-Szene ist.
+
+**Geändert (`src/app/buch/page.tsx`):**
+- **Overlays neu geschichtet** (`HERO_PHOTO_BASE/DESKTOP/MOBILE`): elegant
+  abgedunkelte Grundstimmung, **Top-Vignette** (heller Himmel gezähmt), **linke
+  Textzone** als großer weicher dunkler Verlauf (organisch, kein Balken) und
+  unten eine **dunkle Bodenfläche/„Bühne"**, in die das Buch sinkt. Foto-
+  Ausschnitt tiefer (`object-[center_60%]`) → mehr Wald/Tal, weniger Himmel.
+- **Buch als Produkt inszeniert:** dunkle Bühne + **echte, gespiegelte
+  Reflexion** des Covers, **harter Kontaktschatten**, warme Bodenreflexion,
+  **Rimlight** an der rechten Kante (Sonne v. rechts) und Gold-Halo für Tiefe.
+- **Buch präsenter:** größer (`lg:w-[24rem]`, ~+14 %) und leicht nach rechts
+  (`lg:translate-x-4`), tiefer gesetzt (`lg:self-end`).
+- Text/CTAs/Preis/Trust-Zeile inhaltlich unverändert – nur besser eingebettet;
+  linke Conversion-Zone bleibt ruhig & gut lesbar. Höhe weiter ~720 px.
+
+**Wirkung:** Buch und Hintergrund bilden eine gemeinsame Szene; rechts mehr
+Tiefe/Atmosphäre, links ruhige Conversion-Zone. Visuell über ein pixelgenaues
+Mockup geprüft; `npm run build`/Lint hier mangels `node_modules` nicht
+ausführbar – Vercel/CI prüft beim Push.
+
+---
+
 ## 2026-09-12 – Buch-Hero: Buch besser geerdet (kein „Draufgesetzt"-Look)
 
 **Änderung:** Das Buch-Cover im `/buch`-Hero wirkte trotz Bodenschatten noch
