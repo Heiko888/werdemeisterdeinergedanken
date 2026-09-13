@@ -103,6 +103,7 @@ export const COLLECTIONS = [
       { theme: "05 · Schöpferkraft",      cls: "",      html: `Du erschaffst –<br>${A("bewusst")}` },
       { theme: "06 · Innere Ausrichtung", cls: "",      html: `Kopf, Herz<br>und ${A("Handeln")}` },
       { theme: "07 · Meisterschaft",      cls: "",      html: `Du bist der<br>${A("Gestalter")}` },
+      { theme: "08 · Autopilot (Reel A)", cls: "small", html: `Läuft das<br>${A("automatisch?")}` },
     ],
   },
   {

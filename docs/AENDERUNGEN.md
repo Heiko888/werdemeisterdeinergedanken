@@ -5,6 +5,32 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-13 – Cover-Studio: neues Motiv „Läuft das automatisch?" (Stufe 08)
+
+**Änderung:** Neues Cover-Motiv für den Reel „01 · Autopilot · Variante A"
+(Titel „Läuft das automatisch?") im Cover-Generator angelegt und in der
+Farbwelt **Gold · Creme** (`-hell`) im Format **9:16** exportiert.
+
+**Geändert (`docs/reels/covers/data.mjs`):**
+- In der Sammlung `stufen` als **8. Motiv** ergänzt:
+  `{ theme: "08 · Autopilot (Reel A)", cls: "small", html: "Läuft das<br>automatisch?" }`
+  (Akzentwort „automatisch?" gold-kursiv). Hinweis: „Die 7 Stufen" hat dadurch
+  jetzt 8 Cover-Motive (Nummern-Badge „08").
+
+**Neu erzeugt:**
+- Alle Cover neu gebaut: `node docs/reels/covers/build.mjs`
+  (1200 Cover-Dateien insgesamt, `stufen` = 8 Motive × 5 Formate × 4 Welten).
+- PNG-Export creme/9:16: `node docs/reels/covers/export-png.mjs stufen reel-9x16 hell`
+  → `docs/reels/covers/export/stufen/reel-9x16/cover-08-hell.png` (1080×1920)
+  sowie transparente Overlay-Variante
+  `docs/reels/covers/export-overlay/stufen/reel-9x16/overlay-08-hell.png`.
+
+**Hinweis:** `playwright` war im frischen Web-Clone nicht installiert; für den
+Export einmalig `PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm install playwright`
+(Chromium ist in der Umgebung vorinstalliert, kein Browser-Download nötig).
+
+---
+
 ## 2026-09-13 – Buch-Hero: Produkt-Inszenierung (Bühne, Reflexion, Tiefe)
 
 **Änderung:** Größerer Rework des `/buch`-Heros, damit das Buch nicht mehr
