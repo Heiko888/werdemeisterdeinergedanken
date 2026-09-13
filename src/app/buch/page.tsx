@@ -28,30 +28,34 @@ const PRICE_PRINT = "39,90 €";
 // Der goldene Hero-Verlauf – identisch zur Startseite/Mitgliedschaft.
 const NAVY_GLOW = HERO_GLOW;
 
-// Foto-Hero (Sonnenaufgang über Wald & See) braucht eine Abdunklung, damit
-// Creme-Text und Cover AA-lesbar bleiben. Drei Ebenen über dem Foto:
-//  BASE  – dezentes Gold-Rimlight oben rechts + gleichmäßige, leichte Abdunklung
-//  DESKTOP – links satt dunkel → rechts offener (Text-Ruhe links, Foto rechts)
-//  MOBILE  – oben dunkler, weil sich Text dort über das Foto stapelt
+// Foto-Hero: elegante, dunkle Grundstimmung, in der das Buch als inszeniertes
+// Produkt steht. Mehrere Ebenen über dem Foto, damit Creme-Text & Cover
+// AA-lesbar bleiben und links Ruhe / rechts Atmosphäre entsteht:
+//  BASE  – Gold-Rimlight o.r. + Top-Vignette (Himmel zähmen) + leichte
+//          Gesamt-Abdunklung + unten dunkle „Bühne", in die das Buch sinkt
+//  DESKTOP – großer, weicher dunkler Verlauf über die Textzone (kein Balken)
+//  MOBILE  – oben dunkler, weil sich der Text dort über das Foto stapelt
 const HERO_PHOTO_BASE =
-  "radial-gradient(50% 42% at 80% 4%, color-mix(in oklab, var(--color-gold-400) 16%, transparent), transparent 60%)," +
-  "linear-gradient(0deg, rgba(9,11,16,0.32), rgba(9,11,16,0.12))";
+  "radial-gradient(44% 40% at 84% 8%, color-mix(in oklab, var(--color-gold-400) 16%, transparent), transparent 60%)," +
+  "linear-gradient(to bottom, rgba(9,11,16,0.62) 0%, rgba(9,11,16,0.22) 24%, transparent 46%)," +
+  "linear-gradient(0deg, rgba(9,11,16,0.42), rgba(9,11,16,0.32))," +
+  "linear-gradient(to top, rgba(9,11,16,0.95) 0%, rgba(9,11,16,0.60) 13%, rgba(9,11,16,0.20) 33%, transparent 52%)";
 const HERO_PHOTO_DESKTOP =
-  "linear-gradient(90deg, rgba(9,11,16,0.90) 0%, rgba(9,11,16,0.70) 34%, rgba(9,11,16,0.26) 70%, rgba(9,11,16,0.44) 100%)";
+  "radial-gradient(95% 135% at -8% 46%, rgba(9,11,16,0.95), rgba(9,11,16,0.66) 46%, transparent 76%)";
 const HERO_PHOTO_MOBILE =
-  "linear-gradient(180deg, rgba(9,11,16,0.88) 0%, rgba(9,11,16,0.55) 46%, rgba(9,11,16,0.60) 100%)";
+  "linear-gradient(180deg, rgba(9,11,16,0.86) 0%, rgba(9,11,16,0.52) 42%, transparent 66%)";
 
 // Sieben goldene Wegpunkte (die 7 Stufen) als aufsteigender Pfad im Tal –
 // verbindet Buch, „7 Stufen" und Marke. Bewusst sehr dezent, nur auf Desktop.
 // Tupel: [left %, top %, Größe px, Deckkraft].
 const HERO_WAYPOINTS: [number, number, number, number][] = [
-  [44, 80, 15, 0.55],
-  [48, 73, 13, 0.5],
-  [52, 66, 11, 0.44],
-  [56, 60, 9.5, 0.38],
-  [59, 55, 8, 0.32],
-  [62, 51, 6.5, 0.27],
-  [65, 47, 5.5, 0.22],
+  [40, 74, 13, 0.5],
+  [44, 68, 11, 0.44],
+  [48, 62, 9.5, 0.38],
+  [52, 57, 8, 0.32],
+  [55, 53, 6.8, 0.27],
+  [58, 49, 5.6, 0.22],
+  [61, 46, 4.8, 0.18],
 ];
 
 const promises = [
@@ -271,7 +275,7 @@ export default async function BuchPage({
           fill
           priority
           sizes="100vw"
-          className="-z-30 object-cover object-[center_42%]"
+          className="-z-30 object-cover object-[center_60%]"
         />
         {/* Lesbarkeits-Overlays */}
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-20" style={{ background: HERO_PHOTO_BASE }} />
@@ -299,7 +303,7 @@ export default async function BuchPage({
         </div>
 
         <Container className="relative z-10">
-          <div className="mx-auto grid max-w-[64rem] items-center gap-10 lg:grid-cols-[minmax(0,32rem)_auto] lg:justify-center lg:gap-10">
+          <div className="mx-auto grid max-w-[70rem] items-center gap-9 lg:grid-cols-[minmax(0,32rem)_auto] lg:justify-center">
             {/* Textspalte – bewusst ruhig, keine Grafik dahinter */}
             <div className="max-w-xl [text-shadow:0_2px_22px_rgba(8,16,42,0.9)]">
               <Eyebrow>Das Buch</Eyebrow>
@@ -357,53 +361,88 @@ export default async function BuchPage({
               </div>
             </div>
 
-            {/* Buch – dominantes Produkt. Tiefer gesetzt (self-end), damit die
-                Basis auf der Felskante im Vordergrund aufsitzt; geerdet durch
-                Kontakt- + Umgebungsschatten statt zu schweben. */}
-            <div className="flex justify-center lg:justify-end lg:self-end lg:pb-3.5">
-              <div className="relative w-64 sm:w-72 lg:w-[21rem]">
-                {/* subtiles goldenes Rimlight / Halo hinter dem Buch */}
+            {/* Buch – als inszeniertes Produkt auf dunkler Bühne. Größer & leicht
+                nach rechts, tiefer gesetzt (self-end), damit es in die dunkle
+                Bodenfläche sinkt. Geerdet durch Bühne + Kontaktschatten +
+                echte Reflexion; Rimlight & Halo geben Tiefe/Trennung. */}
+            <div className="flex justify-center lg:justify-end lg:translate-x-4 lg:self-end lg:pb-16">
+              <div className="relative w-64 sm:w-72 lg:w-[24rem]">
+                {/* dezentes Gold-Halo hinter dem Buch (Tiefe, Trennung vom Foto) */}
                 <div
                   aria-hidden
-                  className="absolute left-1/2 top-[42%] -z-10 h-[92%] w-[116%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[12px]"
+                  className="absolute left-1/2 top-[40%] h-[88%] w-[120%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[16px]"
                   style={{
+                    zIndex: -4,
                     background:
-                      "radial-gradient(closest-side, color-mix(in oklab, var(--color-gold-400) 22%, transparent), color-mix(in oklab, var(--color-gold-500) 8%, transparent) 58%, transparent 74%)",
+                      "radial-gradient(closest-side, color-mix(in oklab, var(--color-gold-400) 24%, transparent), color-mix(in oklab, var(--color-gold-500) 9%, transparent) 58%, transparent 74%)",
                   }}
                 />
-                {/* dunkle „Sitz"-Vertiefung – erdet das Buch in die Szene */}
+                {/* dunkle „Bühne" / Bodenfläche, in die das Buch sinkt */}
                 <div
                   aria-hidden
-                  className="absolute bottom-[-0.9rem] left-[47%] -z-10 h-[70px] w-[96%] -translate-x-1/2 rounded-[50%] blur-[16px]"
+                  className="absolute left-1/2 top-[calc(100%_-_6px)] h-[150px] w-[168%] -translate-x-1/2 blur-[7px]"
                   style={{
+                    zIndex: -3,
                     background:
-                      "radial-gradient(ellipse at center, rgba(0,0,0,0.5), rgba(0,0,0,0.24) 46%, transparent 72%)",
+                      "radial-gradient(ellipse 58% 100% at 50% 0%, rgba(9,11,16,0.85), rgba(9,11,16,0.5) 40%, transparent 74%)",
                   }}
                 />
-                {/* weicher Umgebungsschatten – leicht nach links geworfen (Sonne v. rechts) */}
+                {/* warme Bodenreflexion (Licht auf der Bühne) */}
                 <div
                   aria-hidden
-                  className="absolute bottom-[-6px] left-[45%] -z-10 h-[34px] w-[88%] -translate-x-1/2 rounded-[50%] blur-[15px]"
+                  className="absolute left-1/2 top-[calc(100%_+_6px)] h-[26px] w-[70%] -translate-x-1/2 rounded-[50%] blur-[9px]"
                   style={{
+                    zIndex: -3,
                     background:
-                      "radial-gradient(ellipse at center, rgba(0,0,0,0.5), rgba(0,0,0,0.26) 50%, transparent 74%)",
+                      "radial-gradient(ellipse at center, color-mix(in oklab, var(--color-gold-400) 26%, transparent), color-mix(in oklab, var(--color-gold-500) 10%, transparent) 50%, transparent 75%)",
+                    mixBlendMode: "screen",
+                  }}
+                />
+                {/* echte, gespiegelte Reflexion des Buchs auf der Bühne */}
+                <Image
+                  src={buchCover}
+                  alt=""
+                  aria-hidden
+                  sizes="(min-width: 1024px) 24rem, (min-width: 640px) 18rem, 16rem"
+                  className="pointer-events-none absolute left-0 top-full h-auto w-full"
+                  style={{
+                    zIndex: -2,
+                    transform: "scaleY(-1)",
+                    transformOrigin: "top",
+                    opacity: 0.2,
+                    filter: "blur(1.5px)",
+                    maskImage:
+                      "linear-gradient(to bottom, rgba(0,0,0,0.75), transparent 52%)",
+                    WebkitMaskImage:
+                      "linear-gradient(to bottom, rgba(0,0,0,0.75), transparent 52%)",
+                  }}
+                />
+                {/* warmes Rimlight an der rechten Kante (Sonne von rechts) */}
+                <div
+                  aria-hidden
+                  className="absolute right-[-3%] top-[8%] h-[82%] w-[22%] rounded-[40%] blur-[9px]"
+                  style={{
+                    zIndex: -1,
+                    background:
+                      "linear-gradient(90deg, transparent, color-mix(in oklab, var(--color-gold-300) 40%, transparent) 70%, color-mix(in oklab, var(--color-gold-400) 10%, transparent))",
                   }}
                 />
                 {/* harter Kontaktschatten direkt an der Buchkante */}
                 <div
                   aria-hidden
-                  className="absolute bottom-[2px] left-[48.5%] -z-10 h-[13px] w-1/2 -translate-x-1/2 rounded-[50%] blur-[3px]"
+                  className="absolute bottom-[-8px] left-1/2 h-[15px] w-[56%] -translate-x-1/2 rounded-[50%] blur-[3.5px]"
                   style={{
+                    zIndex: -1,
                     background:
-                      "radial-gradient(ellipse at center, rgba(0,0,0,0.78), rgba(0,0,0,0.45) 55%, transparent 80%)",
+                      "radial-gradient(ellipse at center, rgba(0,0,0,0.8), rgba(0,0,0,0.45) 55%, transparent 80%)",
                   }}
                 />
                 <Image
                   src={buchCover}
                   alt="Buchcover „Werde Meister deiner Gedanken“ von Heiko Schwaninger"
                   priority
-                  sizes="(min-width: 1024px) 21rem, (min-width: 640px) 18rem, 16rem"
-                  className="relative h-auto w-full [filter:drop-shadow(-9px_18px_22px_rgba(0,0,0,0.5))]"
+                  sizes="(min-width: 1024px) 24rem, (min-width: 640px) 18rem, 16rem"
+                  className="relative h-auto w-full [filter:drop-shadow(-10px_20px_26px_rgba(0,0,0,0.55))]"
                 />
               </div>
             </div>
