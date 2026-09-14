@@ -38,21 +38,23 @@ export default function SevenStagesPage() {
             "var(--color-navy-950)",
         }}
       >
-        {/* Das durchlaufende Bild (Hochformat): oben verankert, deckt Hero +
-            Anfang der Timeline und blendet nach unten weich ins Kosmos-Feld aus.
-            Ein einziges Bild – kein zweiter, neu ansetzender Ausschnitt. */}
+        {/* Das durchlaufende Bild: oben verankert, deckt Hero + Anfang der
+            Timeline und blendet nach unten weich ins Kosmos-Feld aus. Ein
+            einziges Bild – kein zweiter, neu ansetzender Ausschnitt. Querformat,
+            daher object-center: Wanderer, leuchtender Pfad und Gipfel bleiben
+            über alle Bildschirmgrößen im Bild. */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[46rem] overflow-hidden sm:h-[64rem]"
         >
           <Image
-            src="/kompass-weg.webp"
+            src="/hero-7-stufen-gipfel.webp"
             alt=""
             aria-hidden
             fill
             priority
             sizes="100vw"
-            className="object-cover object-top saturate-[1.05] brightness-[1.02] contrast-[1.02]"
+            className="object-cover object-center saturate-[1.05] brightness-[1.02] contrast-[1.02]"
             style={{
               maskImage:
                 "linear-gradient(to bottom, #000 0%, #000 60%, transparent 100%)",

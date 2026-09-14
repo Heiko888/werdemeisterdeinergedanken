@@ -5,6 +5,31 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Die 7 Stufen: neues Hero-Hintergrundbild (Wanderer am Gipfel)
+
+**Änderung:** Das durchlaufende Hero-Hintergrundbild der Seite `/die-7-stufen`
+wurde vom bisherigen `kompass-weg.webp` auf das neue Motiv „Wanderer blickt auf
+den leuchtenden Pfad zum Gipfel bei Sonnenaufgang" getauscht – passt inhaltlich
+besser zum „Weg in 7 Stufen".
+
+**Neu:**
+- `public/hero-7-stufen-gipfel.webp` – für Web optimierte Fassung (189 KB,
+  1672×941, WEBP q82) des hochgeladenen Originals
+  `public/c788f202-aa65-4520-ac9f-a99c47419e95.png`. **Das Original (2,3 MB PNG)
+  bleibt unberührt im Repo liegen.**
+
+**Geändert (`src/app/die-7-stufen/page.tsx`):**
+- Bild-`src` von `/kompass-weg.webp` auf `/hero-7-stufen-gipfel.webp` umgestellt.
+- Bildposition von `object-top` auf **`object-center`** geändert, weil das neue
+  Motiv Querformat ist (statt Hochformat): so bleiben Wanderer, leuchtender Pfad
+  und Gipfel über alle Bildschirmgrößen im sichtbaren Ausschnitt.
+- Übrige Ebenen (Sterne, Hero-Scrim, warme Glows, weiche Ausblendung nach unten
+  ins Kosmos-Feld) unverändert.
+
+**Datenbank:** keine.
+
+---
+
 ## 2026-09-14 – Gratis-E-Book: Berg-Hintergrundbild im Hero (wie Startseite)
 
 **Änderung:** Der Hero der Seite `/gratis-ebook` bekommt – analog zur Startseite
