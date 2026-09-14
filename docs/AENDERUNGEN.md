@@ -5,6 +5,19 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Startseite: Deckkraft des E-Book-Hintergrundbilds erhöht
+
+**Änderung:** Das Sonnenaufgang-Hintergrundbild in der E-Book-Sektion
+(`LeadMagnet`) ist jetzt deutlich präsenter.
+
+**Geändert (`src/components/sections/LeadMagnet.tsx`):**
+- Bild-Deckkraft von `opacity-35` → `opacity-70`, Maske etwas später ausblendend
+  (55 % → 62 %).
+- Navy-Verlauf darüber reduziert (55/78 % → 38/64 %), damit das Motiv
+  durchkommt – Überschrift und Formular bleiben klar lesbar.
+
+---
+
 ## 2026-09-14 – Startseite: Sonnenaufgang-Bild als Hintergrund der E-Book-Sektion
 
 **Änderung:** Die Sektion „Gratis-Einstieg / kostenloses E-Book" (`LeadMagnet`)
