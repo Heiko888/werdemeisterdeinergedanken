@@ -5,6 +5,46 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Startseite: Hero „Gratis-Einstieg" ruhiger ausgerichtet
+
+**Änderung:** Reine Layout-/Ausrichtungspflege der E-Book-Sektion (`LeadMagnet`,
+Eyebrow „Gratis-Einstieg"). **Kein neues Design** – gleiche Farben, Schriften,
+Bilder und Texte; nur Ausrichtung, Größenverhältnisse, Abstände und Raster.
+
+**Geändert (`src/components/sections/LeadMagnet.tsx`):**
+- **Gleiches Raster wie der Header:** `Container` auf `size="wide"` (`max-w-7xl`)
+  gesetzt – Hero und Navigation teilen jetzt exakt dieselbe Breite und dieselben
+  linken/rechten Außenkanten (vorher `max-w-6xl`).
+- **2-Spalten-Verhältnis 46/54** (`lg:grid-cols-[46fr_54fr]`, `fr` statt `%`,
+  damit der Spaltenabstand keinen horizontalen Überlauf erzeugt), Spaltenabstand
+  von 64px → 56px (`lg:gap-x-14`), Zeilenabstand Text→Formular 24px → 32px
+  (`lg:gap-y-8`). Buch und Content rücken näher zusammen.
+- **Buchcover:** auf Desktop rechtsbündig zur Spaltenkante (`lg:justify-end`),
+  ~16px tiefer (`lg:translate-y-4`) und minimal kleiner (28rem → 27rem) für mehr
+  Luft nach unten – das Buch gehört optisch zum Contentblock statt links zu
+  schweben.
+- **Headline:** überschreibt die globalen Heading-Regeln
+  (`[hyphens:none] [overflow-wrap:normal] [word-break:normal]`), damit
+  „bewussten" nie getrennt wird. Ab `sm` bricht die goldene Italic-Phrase per
+  `sm:block` sauber in Zeile 2 → „Werde zum bewussten" / „Gestalter deiner
+  Gedanken". Die Gold/Italic-Hervorhebung bleibt erhalten.
+- **Rechter Block als Einheit:** Textblock und Formular teilen dieselbe linke
+  Achse und dieselbe Zielbreite `lg:max-w-[560px]`; Abstand Eyebrow→Headline→
+  Beschreibung einheitlich 20px (`gap-5`).
+- **Goldene Standlinie** unter dem Buch dichter herangerückt (`mt-5` → `mt-2`),
+  damit keine zweite optische Achse entsteht.
+
+**Responsive:** Desktop/Tablet zeigen die bevorzugte 2-zeilige Headline; auf
+Mobile stapeln Buch und Content sauber untereinander. Per Playwright bei
+320/375/820/1280/1440px geprüft: keine horizontalen Überläufe, keine
+Worttrennung innerhalb von „bewussten".
+
+**Datenbank:** keine.
+
+**Geprüft:** `npm run lint` (0 Fehler) + visuelle Screenshots (s. o.).
+
+---
+
 ## 2026-09-14 – Adminbereich: Gesprächs-Cockpit fürs Klarheitsgespräch
 
 **Änderung:** Neues Werkzeug im Adminbereich, das Heiko **live durch das
