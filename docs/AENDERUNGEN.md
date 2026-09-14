@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Startseite: Sonnenaufgang-Bild als Hintergrund der E-Book-Sektion
+
+**Änderung:** Die Sektion „Gratis-Einstieg / kostenloses E-Book" (`LeadMagnet`)
+auf der **Startseite** hat jetzt ein atmosphärisches Hintergrundbild – goldener
+Sonnenaufgang über den Bergen. Liegt hinter Überschrift, Buch-Cover und Formular,
+gedimmt und nach unten ausgeblendet, sodass alle Inhalte klar lesbar bleiben.
+
+**Geändert:**
+- Bild `public/ChatGPT Image Sep 14, 2026, 06_48_33 PM.png` bundler-freundlich
+  umbenannt in `public/ebook-sonnenaufgang.png`.
+- `src/components/sections/LeadMagnet.tsx`: Bild per statischem Import als
+  Hintergrundebene eingebaut (`object-cover`, `opacity-35`, weiche Maske nach
+  unten) plus Navy-Verlauf darüber für ruhigen Kontrast. Vorhandenes Layout
+  (Überschrift, Buch-Cover, Formular) unverändert.
+
+---
+
 ## 2026-09-14 – Website: E-Book-Mockup auf neues Treppen-Cover getauscht
 
 **Änderung:** Das auf der Website gezeigte 3D-Mockup des kostenlosen E-Books
