@@ -18,7 +18,7 @@ const brainUrl = pathToFileURL(join(ROOT, "public/logo-brain-gold.png")).href;
 // GLOW = größerer, weicherer Halo rund ums Gehirn (Größe/Weichzeichnung).
 // CREME_GOLD = kräftigeres Gold + stärkerer Glow für die helle Creme-Variante
 // (überschreibt gezielt die helle Palette via palHell).
-const GLOW = { glowScale: 2.0, glowBlur: 70 };
+const GLOW = { glowScale: 1.35, glowBlur: 48 };
 const CREME_GOLD = {
   glow1: "rgba(224,168,45,.52)", glow2: "rgba(200,148,30,.34)", glow3: "rgba(240,205,120,.32)",
   eyebrow: "#8a6608", accent: "linear-gradient(100deg,#e0a92e,#8a5e05)", url: "#8a6608",

@@ -30,6 +30,8 @@ Gehirn bleibt bestehen – es ist jetzt Teil des Logo-Lockups.
 - LinkedIn (nur 396 px hoch): Gehirn verkleinert (322 → 196 px), damit das
   gestapelte Lockup ohne Beschnitt in die Höhe passt.
 - Gilt für beide Themes (dunkel + hell/Creme) inkl. der @2x-Reserven.
+- Glow-Halo ums Gehirn dezenter: `GLOW` von `{glowScale:2.0, glowBlur:70}` auf
+  `{glowScale:1.35, glowBlur:48}` reduziert.
 
 **Neu erzeugt:** Alle Banner-PNGs unter `docs/marketing/{youtube,facebook,
 instagram,linkedin,whatsapp}/` via `node docs/marketing/social-banners.mjs`.
