@@ -318,6 +318,35 @@ const SERIES = [
         sub: "Speichere beide Teile als Nachschlagewerk und schreib mir deine Nummer. Vertiefungen mit Quellen findest du auf der Website.", button: `Mehr erfahren ${ARROW}` },
     ],
   },
+  {
+    key: "autopilot-meeting", label: "Autopilot im Meeting", tag: "Stufe 1 · Autopilot",
+    slides: [
+      { role: "cover", eyebrow: "Autopilot im Meeting",
+        title: "Wie viele Entscheidungen triffst du im Meeting wirklich bewusst?",
+        sub: "Ehrliche Antwort: die meisten laufen auf Autopilot – und du merkst es nicht." },
+      { role: "list", eyebrow: "Kennst du das?", title: "Der Autopilot im Meeting",
+        items: [
+          { lead: "Der Vorschlag kommt", text: "und du bist schon dagegen, bevor er zu Ende ist." },
+          { lead: "Jemand widerspricht", text: "und dein Puls reagiert, nicht dein Argument." },
+          { lead: "„Wer übernimmt das?“", text: "und deine Hand ist oben, bevor du dein Zeitfenster geprüft hast." },
+        ] },
+      { role: "stat", eyebrow: "Keine Willensschwäche – Effizienz", num: "60.000",
+        label: "Gedanken am Tag – die meisten unbewusst, die meisten wie gestern",
+        text: "Dein Gehirn spart Energie, indem es Muster wiederholt. Im Meeting heißt das: Du reagierst aus alten Rollen, statt aus der aktuellen Situation zu entscheiden." },
+      { role: "recap", eyebrow: "Drei Muster laufen fast überall mit", title: "Erkennst du dich?",
+        items: [
+          { lead: "Der ständige Beweiser", text: "wer sich in jedem Status-Meeting neu beweisen muss, arbeitet gegen die eigene Erschöpfung." },
+          { lead: "Harmonie um jeden Preis", text: "wer Konflikte vermeidet, verliert den Kontakt zur eigenen fachlichen Position." },
+          { lead: "Kontrolle als Sicherheit", text: "wer alles durchplanen will, gerät bei jeder Planänderung unter Stress." },
+        ],
+        close: "Der erste Schritt ist nicht, sie zu bekämpfen – sondern sie zu bemerken." },
+      { role: "remedy", eyebrow: "Der 2-Minuten-Check", title: "Innehalten. Atmen. Fragen.",
+        text: "Halte einmal am Tag kurz inne. Ein bewusster Atemzug. Eine Frage: „Was tue ich gerade – und bin ich wirklich dabei?“ Mehr braucht es am Anfang nicht.",
+        merksatz: "Was du bemerkst, entscheidet nicht mehr für dich." },
+      { role: "cta", eyebrow: "Deine Frage für heute", title: "Welches der drei Muster erkennst du in deinem Arbeitsalltag wieder?",
+        sub: "Kostenloses E-Book „Die 7 Stufen kompakt“ – der Weg vom Autopilot zur bewussten Entscheidung.", button: `Zum Autopilot-Check ${ARROW}` },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
