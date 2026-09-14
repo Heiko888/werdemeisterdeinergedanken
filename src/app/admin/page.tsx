@@ -156,8 +156,15 @@ export default async function AdminPage() {
 
           <div className="mt-2 flex flex-wrap gap-3">
             <Link
-              href="/admin/redaktionsplan"
+              href="/admin/erstgespraeche"
               className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            >
+              Erstgespräche
+              <ArrowRight />
+            </Link>
+            <Link
+              href="/admin/redaktionsplan"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
             >
               Redaktionsplan öffnen
               <ArrowRight />
