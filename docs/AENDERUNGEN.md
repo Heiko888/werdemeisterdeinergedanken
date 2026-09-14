@@ -5,6 +5,34 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Social-Media-Banner: Wortlogo wie auf der Hauptseite
+
+**Änderung:** Die großen Banner (YouTube, Facebook, Instagram, LinkedIn,
+WhatsApp) tragen jetzt das echte **Wortlogo** (Gehirn + „WERDE MEISTER / — DEINER
+GEDANKEN —") exakt in der Typografie des Website-Headers. Damit sich Logo und
+Headline nicht doppeln, ist der große Spruch **„Werde Meister deiner Gedanken."**
+durch den werblichen Zweitspruch **„Raus aus dem *Autopilot*."** ersetzt. Das
+goldene Gehirn bleibt bestehen – es ist jetzt Teil des Logo-Lockups.
+
+**Geändert (`docs/marketing/social-banners.mjs`):**
+- Neuer, zentral gepflegter `HEADLINE`-Spruch (Default „Raus aus dem
+  *Autopilot*.") – zum Wechseln genügt diese eine Zeile.
+- Wortmarke 1:1 an `src/components/visuals/Logo.tsx` angeglichen: Fraunces,
+  Gewicht 400, `tracking .1em`, „Meister" im Gold-Verlauf, Zeile 2 „DEINER
+  GEDANKEN" mit goldenen Flankier-Strichen (`tracking .24em`); Größe aus der
+  Headline abgeleitet (`w1`), pro Banner via `wm1` überschreibbar, einzeilig.
+- Neues `brandmark`-Lockup (Gehirn + Wortmarke, gestapelt) ersetzt das bloße
+  Gehirn auf allen Content-Bannern; WhatsApp (Profilbild = Gehirn) zeigt nur die
+  Wortmarke.
+- LinkedIn (nur 396 px hoch): Gehirn verkleinert (322 → 196 px), damit das
+  gestapelte Lockup ohne Beschnitt in die Höhe passt.
+- Gilt für beide Themes (dunkel + hell/Creme) inkl. der @2x-Reserven.
+
+**Neu erzeugt:** Alle Banner-PNGs unter `docs/marketing/{youtube,facebook,
+instagram,linkedin,whatsapp}/` via `node docs/marketing/social-banners.mjs`.
+
+---
+
 ## 2026-09-14 – Website: E-Book-Mockup auf neues Treppen-Cover getauscht
 
 **Änderung:** Das auf der Website gezeigte 3D-Mockup des kostenlosen E-Books
