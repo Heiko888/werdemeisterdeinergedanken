@@ -6,6 +6,7 @@ import { Check } from "@/components/ui/Icon";
 import { StarRating } from "@/components/ui/StarRating";
 import { EbookForm } from "./EbookForm";
 import ebookMockup from "../../../public/ebook-mockup.webp";
+import ebookSunrise from "../../../public/ebook-sonnenaufgang.png";
 
 const bullets = [
   "Die 7 Stufen im Überblick",
@@ -19,6 +20,29 @@ export function LeadMagnet() {
       id="ebook"
       className="on-dark grain relative isolate scroll-mt-24 overflow-hidden bg-navy-900 py-16 sm:py-32"
     >
+      {/* Atmosphärischer Hintergrund: goldener Sonnenaufgang über den Bergen.
+          Liegt hinter dem Inhalt, sanft gedimmt und nach unten ausgeblendet,
+          damit Überschrift und Formular klar lesbar bleiben. */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-20">
+        <Image
+          src={ebookSunrise}
+          alt=""
+          priority={false}
+          sizes="100vw"
+          className="h-full w-full object-cover object-center opacity-35 [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.5)_55%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.5)_55%,transparent_100%)]"
+        />
+      </div>
+      {/* Navy-Verlauf über dem Bild – hält den dunklen Grundton der Sektion und
+          sorgt für ruhigen Kontrast hinter Text und Karte. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(180deg, color-mix(in oklab, var(--color-navy-900) 55%, transparent) 0%, color-mix(in oklab, var(--color-navy-900) 78%, transparent) 100%)",
+        }}
+      />
+
       {/* Drei Blöcke in DOM-Reihenfolge Überschrift → Buch → Formular. Auf
           Mobile stapeln sie genau so (Buch sitzt zwischen Überschrift und
           Formular). Auf Desktop rückt das Buch per Grid in die linke Spalte
