@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Gratis-E-Book: Cover-Motiv Gehirn → Treppe getauscht
+
+**Änderung:** Das Hauptmotiv auf dem Cover des kostenlosen E-Books „Die 7 Stufen
+der Bewusstseinsentwicklung" ist vom goldenen Gehirn-Logo auf das Foto „Mann auf
+der goldenen Treppe ins Licht" umgestellt. Passt thematisch stärker (Aufstieg in
+7 Stufen vom Autopilot zur Meisterschaft).
+
+**Geändert (`tools/pdf/build-ebook.py`):**
+- Neues Cover-Asset `tools/pdf/assets/ebook-cover-treppe.png` (eigenes Motiv des
+  Gratis-E-Books, bewusst getrennt vom Buch-Cover-Motiv `cover-treppe.png`, damit
+  das Buch-Cover unverändert bleibt).
+- Foto als **weich ins Creme ausgeblendetes Band** eingebettet (radiale Vignette
+  + langer Verlauf, `mask-composite`) – dasselbe Marken-Muster wie das Buch-Cover.
+  Liegt hinter dem Text; Titel, Eyebrow „Kostenloses E-Book", Bullet-Reihe und
+  Autor/Domain bleiben voll lesbar.
+- **Fallback** auf das goldene Gehirn bleibt erhalten, falls das Foto fehlt.
+- Layout, Texte und die übrigen 12 Innenseiten unverändert.
+
+**Neu erzeugt:** `content/pdf/Die-7-Stufen-der-Bewusstseinsentwicklung.pdf`
+(13 Seiten, die ausgelieferte Lead-Magnet-Datei). Neu bauen mit `npm run pdf`.
+
+---
+
 ## 2026-09-13 – Buch-Hero: Produkt-Inszenierung (Bühne, Reflexion, Tiefe)
 
 **Änderung:** Größerer Rework des `/buch`-Heros, damit das Buch nicht mehr
