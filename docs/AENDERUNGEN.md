@@ -38,6 +38,81 @@ instagram,linkedin,whatsapp}/` via `node docs/marketing/social-banners.mjs`.
 
 ---
 
+## 2026-09-14 – Adminbereich: Gesprächs-Cockpit fürs Klarheitsgespräch
+
+**Änderung:** Neues Werkzeug im Adminbereich, das Heiko **live durch das
+kostenlose Erstgespräch** (Klarheitsgespräch) führt – sechs Phasen, Fragebogen
+im Blick, Gesprächsuhr, Notizen mit Auto-Speichern, Zitatsammlung, Einwände &
+Angebote als Schnellzugriff und ein Abschluss, der den Follow-up-Text baut.
+
+**Neu:**
+- `src/lib/erstgespraech/phasen.ts` – fester Gesprächsinhalt als Code-Konstante
+  (6 Phasen mit Wortlaut/Fragen/Hinweisen, 7 Einwände, Angebote, die 7 Stufen,
+  Follow-up-Vorlage). Bewusst nicht in der Datenbank.
+- `src/lib/erstgespraech/types.ts` – Zeilentypen der drei `erstgespraech_*`-Tabellen.
+- `src/app/admin/erstgespraeche/page.tsx` – Übersicht: offene Fragebögen +
+  geführte Gespräche, fälliger nächster Schritt hervorgehoben.
+- `src/app/admin/erstgespraeche/[id]/page.tsx` + `Cockpit.tsx` – das dreigeteilte
+  Live-Cockpit (Uhr, Fragebogen links, Phasen Mitte, Zitate/Einwände/Angebote
+  rechts, Abschluss unten). Tastatur: `Cmd/Ctrl + →/←` wechselt die Phase.
+- `src/app/admin/erstgespraeche/actions.ts` – Server-Actions (Gespräch starten,
+  Notiz/Abhaken auto-speichern, Zitat sichern/löschen, Uhr, Abschluss).
+- `src/app/admin/erstgespraeche/Aktionen.tsx` – Startknöpfe (aus Fragebogen bzw.
+  „ohne Fragebogen").
+- `src/app/admin/page.tsx` – Verweis „Erstgespräche" ins Cockpit ergänzt.
+
+**Datenbank:** **Keine Migration.** Genutzt werden die vorhandenen Tabellen
+`erstgespraech_fragebogen`, `erstgespraech_gespraeche`, `erstgespraech_zitate`
+(Supabase `csnyohpbyhwiattnkzuz`, Migrationen `create_erstgespraech_fragebogen`
++ `erstgespraech_cockpit`).
+
+**Zugriff:** Seiten-Schutz wie im übrigen Adminbereich über `isAdminEmail`; die
+Daten selbst liegen zusätzlich hinter der RLS-Regel `ist_admin()`. Beides greift
+nur beim in `admin_users` hinterlegten Konto **`heiko.schwaninger@outlook.com`**
+– **fürs Cockpit mit diesem Konto anmelden** (die Gmail-Adresse ist zwar in der
+Admin-Liste, aber nicht in der Datenbank). Ist das falsche Konto angemeldet,
+zeigt die Übersicht einen deutlichen Hinweis statt leerer Listen.
+
+**Geprüft:** `npm run lint` (0 Fehler) und `npm run build` (erfolgreich); beide
+Routen als dynamisch gebaut.
+
+**Offen / bewusst weggelassen:** Das öffentliche Vorab-Formular
+(`erstgespraech_fragebogen` befüllen) liegt nicht in diesem Repo – die Liste
+„Offene Fragebögen" bleibt leer, bis es Daten liefert; zum Testen dient
+„Gespräch ohne Fragebogen".
+
+---
+
+## 2026-09-14 – Startseite: Deckkraft des E-Book-Hintergrundbilds erhöht
+
+**Änderung:** Das Sonnenaufgang-Hintergrundbild in der E-Book-Sektion
+(`LeadMagnet`) ist jetzt deutlich präsenter.
+
+**Geändert (`src/components/sections/LeadMagnet.tsx`):**
+- Bild-Deckkraft von `opacity-35` → `opacity-70`, Maske etwas später ausblendend
+  (55 % → 62 %).
+- Navy-Verlauf darüber reduziert (55/78 % → 38/64 %), damit das Motiv
+  durchkommt – Überschrift und Formular bleiben klar lesbar.
+
+---
+
+## 2026-09-14 – Startseite: Sonnenaufgang-Bild als Hintergrund der E-Book-Sektion
+
+**Änderung:** Die Sektion „Gratis-Einstieg / kostenloses E-Book" (`LeadMagnet`)
+auf der **Startseite** hat jetzt ein atmosphärisches Hintergrundbild – goldener
+Sonnenaufgang über den Bergen. Liegt hinter Überschrift, Buch-Cover und Formular,
+gedimmt und nach unten ausgeblendet, sodass alle Inhalte klar lesbar bleiben.
+
+**Geändert:**
+- Bild `public/ChatGPT Image Sep 14, 2026, 06_48_33 PM.png` bundler-freundlich
+  umbenannt in `public/ebook-sonnenaufgang.png`.
+- `src/components/sections/LeadMagnet.tsx`: Bild per statischem Import als
+  Hintergrundebene eingebaut (`object-cover`, `opacity-35`, weiche Maske nach
+  unten) plus Navy-Verlauf darüber für ruhigen Kontrast. Vorhandenes Layout
+  (Überschrift, Buch-Cover, Formular) unverändert.
+
+---
+
 ## 2026-09-14 – Website: E-Book-Mockup auf neues Treppen-Cover getauscht
 
 **Änderung:** Das auf der Website gezeigte 3D-Mockup des kostenlosen E-Books
