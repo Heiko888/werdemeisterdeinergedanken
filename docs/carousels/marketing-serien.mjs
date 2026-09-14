@@ -318,6 +318,35 @@ const SERIES = [
         sub: "Speichere beide Teile als Nachschlagewerk und schreib mir deine Nummer. Vertiefungen mit Quellen findest du auf der Website.", button: `Mehr erfahren ${ARROW}` },
     ],
   },
+  {
+    key: "autopilot-meeting", label: "Autopilot im Meeting", tag: "Stufe 1 · Autopilot",
+    slides: [
+      { role: "cover", eyebrow: "Autopilot im Meeting",
+        title: "Wie viele Entscheidungen triffst du im Meeting wirklich bewusst?",
+        sub: "Ehrliche Antwort: die meisten laufen auf Autopilot – und du merkst es nicht." },
+      { role: "list", eyebrow: "Kennst du das?", title: "Der Autopilot im Meeting",
+        items: [
+          { lead: "Der Vorschlag kommt", text: "und du bist schon dagegen, bevor er zu Ende ist." },
+          { lead: "Jemand widerspricht", text: "und dein Puls reagiert, nicht dein Argument." },
+          { lead: "„Wer übernimmt das?“", text: "und deine Hand ist oben, bevor du dein Zeitfenster geprüft hast." },
+        ] },
+      { role: "stat", eyebrow: "Keine Willensschwäche – Effizienz", num: "60.000",
+        label: "Gedanken am Tag – die meisten unbewusst, die meisten wie gestern",
+        text: "Dein Gehirn spart Energie, indem es Muster wiederholt. Im Meeting heißt das: Du reagierst aus alten Rollen, statt aus der aktuellen Situation zu entscheiden." },
+      { role: "recap", eyebrow: "Drei Muster laufen fast überall mit", title: "Erkennst du dich?",
+        items: [
+          { lead: "Der ständige Beweiser", text: "wer sich in jedem Status-Meeting neu beweisen muss, arbeitet gegen die eigene Erschöpfung." },
+          { lead: "Harmonie um jeden Preis", text: "wer Konflikte vermeidet, verliert den Kontakt zur eigenen fachlichen Position." },
+          { lead: "Kontrolle als Sicherheit", text: "wer alles durchplanen will, gerät bei jeder Planänderung unter Stress." },
+        ],
+        close: "Der erste Schritt ist nicht, sie zu bekämpfen – sondern sie zu bemerken." },
+      { role: "remedy", eyebrow: "Der 2-Minuten-Check", title: "Innehalten. Atmen. Fragen.",
+        text: "Halte einmal am Tag kurz inne. Ein bewusster Atemzug. Eine Frage: „Was tue ich gerade – und bin ich wirklich dabei?“ Mehr braucht es am Anfang nicht.",
+        merksatz: "Was du bemerkst, entscheidet nicht mehr für dich." },
+      { role: "cta", eyebrow: "Deine Frage für heute", title: "Welches der drei Muster erkennst du in deinem Arbeitsalltag wieder?",
+        sub: "Kostenloses E-Book „Die 7 Stufen kompakt“ – der Weg vom Autopilot zur bewussten Entscheidung.", button: `Zum Autopilot-Check ${ARROW}` },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -339,14 +368,15 @@ html,body{ background:${p.page}; overflow:hidden; }
     radial-gradient(2px 2px at 60% 90%, rgba(255,255,255,.34), transparent); }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; padding:${PAD}px 80px ${Math.max(56, PAD - 12)}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
-.logo{ width:160px; height:auto; filter:drop-shadow(0 4px 22px ${p.logoShadow}); }
+.logo{ width:108px; height:auto; filter:drop-shadow(0 4px 22px ${p.logoShadow}); }
 .tag{ text-align:right; padding-top:6px; font-weight:800; font-size:19px; letter-spacing:.13em;
   text-transform:uppercase; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
 .top.cover{ align-items:center; justify-content:flex-start; gap:26px; }
-.wm{ display:flex; flex-direction:column; gap:6px; line-height:1; }
-.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:34px; letter-spacing:.02em; text-transform:uppercase; color:${p.ink}; }
-.wm .wm1 b{ font-weight:600; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-.wm .wm2{ font-weight:700; font-size:17px; letter-spacing:.26em; text-transform:uppercase; color:${p.muted}; }
+.wm{ display:flex; flex-direction:column; gap:9px; line-height:1; }
+.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:40px; letter-spacing:.1em; text-transform:uppercase; color:${p.ink}; }
+.wm .wm1 b{ font-weight:400; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.wm .wm2{ display:flex; align-items:center; justify-content:center; gap:11px; font-weight:400; font-size:18px; letter-spacing:.24em; text-transform:uppercase; color:${p.muted}; }
+.wm .wm2::before, .wm .wm2::after{ content:""; flex:0 0 auto; width:22px; height:2px; border-radius:2px; background:${p.grad}; opacity:.85; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
   color:${p.eyebrow}; }
@@ -408,7 +438,7 @@ html,body{ background:${p.page}; overflow:hidden; }
 const fontsCss = readFileSync(join(COVERS, "_fonts.css"), "utf8");
 // Emblem je Welt (wie brand-assets.mjs): Gold-Gehirn für die Gold-Welten,
 // Türkis-Gehirn für die Türkis-Welten.
-const logoGoldUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
+const logoGoldUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold-freigestellt.png")).toString("base64")}`;
 const logoTealUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-tuerkis.png")).toString("base64")}`;
 const logoFor = (theme) =>
   theme === "tuerkis" || theme === "tuerkis-hell" ? logoTealUri : logoGoldUri;
@@ -452,11 +482,10 @@ function slideHtml(series, s, idx, total, css, logo) {
   const isCover = s.role === "cover";
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
-  // Cover trägt die Wortmarke (Schriftlogo) neben dem Gehirn; Folgeslides den Tag.
+  // Jede Slide trägt die volle Wortmarke (Schriftlogo) neben dem Gehirn –
+  // Zeile 2 „Deiner Gedanken" zentriert unter Zeile 1, wie auf der Startseite.
   const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2">Deiner Gedanken</span></div>`;
-  const top = isCover
-    ? `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`
-    : `<div class="top"><img class="logo" src="${logo}" alt=""><div class="tag">${series.tag}</div></div>`;
+  const top = `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
   ${top}
