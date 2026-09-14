@@ -5,6 +5,21 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Die 7 Stufen: Hero-Bild auf Mobile links verankert
+
+**Problem:** Auf schmalen Screens (Mobile/Tablet) war die Person im Hero-Bild
+nicht sichtbar. Der Container ist dort hoch/schmal, `object-cover` skaliert das
+Querformat-Bild auf die Höhe und beschneidet die Breite – bei `object-center`
+fällt die links stehende Person aus dem Ausschnitt.
+
+**Fix (`src/app/die-7-stufen/page.tsx`):** Bildposition auf `object-left`
+(Person sichtbar) gesetzt und erst ab `xl` (genug Breite für Person **und**
+Sonne/Treppe) auf `object-center` (`object-left … xl:object-center`).
+
+**Datenbank:** keine.
+
+---
+
 ## 2026-09-14 – Die 7 Stufen: Hero-Bild ersetzt (Wanderer mit Steintreppe)
 
 **Änderung:** Das Hero-Hintergrundbild von `/die-7-stufen` wurde erneut
