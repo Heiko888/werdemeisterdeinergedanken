@@ -30,7 +30,7 @@ const CREME_GOLD = {
 // Header) und würde sich sonst mit dem Logo doppeln. Hier steht der werbliche
 // Zweitspruch; zum Wechseln einfach diese eine Zeile ändern (das gold gesetzte
 // Schlüsselwort in <em>…</em>).
-const HEADLINE = "Raus aus dem <em>Autopilot</em>.";
+const HEADLINE = "Rein ins eigene <em>Denken</em>.";
 
 const TARGETS = [
   { key: "youtube", file: "youtube/WMDG-YouTube-Banner.png", w: 2560, h: 1440,
@@ -60,14 +60,14 @@ const TARGETS = [
     textW: 450, h1: 42, eb: 14, sub: 17, url: 17, pinned: true, padX: 80,
     noBrain: true, noUrl: true, retina: true, palHell: CREME_GOLD,
     eyebrowText: "Mentale Selbstverteidigung",
-    subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
+    subText: "Raus aus fremden Mustern." },
   // WhatsApp-Banner auf 1920×1080-Arbeitsflaeche (passend zur Safe-Zone-Vorlage):
   // Text links in der Safe-Zone, mittiger Profilkreis bleibt frei, keine URL.
   { key: "whatsapp-xl", file: "whatsapp/WMDG-WhatsApp-Banner-1920x1080.png", w: 1920, h: 1080,
     textW: 540, h1: 64, eb: 19, sub: 24, url: 24, pinned: true, padX: 140,
     noBrain: true, noUrl: true, palHell: CREME_GOLD,
     eyebrowText: "Mentale Selbstverteidigung",
-    subText: "Raus aus fremden Mustern.<br>Rein in dein eigenes Denken." },
+    subText: "Raus aus fremden Mustern." },
 ];
 
 // Theme-Palette: dunkel (Standard, Navy-Grund #090b10) oder hell (Creme-Grund
@@ -160,7 +160,7 @@ const htmlFor = (t, hell) => t.logoOnly
   <div class="content">
     <div class="eyebrow">${t.eyebrowText ?? "Bewusstsein · Mentale Selbstverteidigung · 7 Stufen"}</div>
     <h1>${t.headlineHtml ?? HEADLINE}</h1>
-    <div class="sub">${t.subText ?? "Raus aus fremden Mustern. Rein in dein eigenes Denken."}</div>
+    <div class="sub">${t.subText ?? "Raus aus fremden Mustern."}</div>
     ${t.noUrl ? "" : `<div class="url">www.werdemeisterdeinergedanken.de</div>`}
   </div>
   ${brandmarkHtml(t)}

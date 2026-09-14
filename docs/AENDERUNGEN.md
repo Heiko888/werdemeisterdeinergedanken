@@ -11,12 +11,15 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 WhatsApp) tragen jetzt das echte **Wortlogo** (Gehirn + „WERDE MEISTER / — DEINER
 GEDANKEN —") exakt in der Typografie des Website-Headers. Damit sich Logo und
 Headline nicht doppeln, ist der große Spruch **„Werde Meister deiner Gedanken."**
-durch den werblichen Zweitspruch **„Raus aus dem *Autopilot*."** ersetzt. Das
-goldene Gehirn bleibt bestehen – es ist jetzt Teil des Logo-Lockups.
+durch die Hauptüberschrift **„Rein ins eigene *Denken*."** ersetzt; die
+Unterüberschrift lautet nur noch **„Raus aus fremden Mustern."**. Das goldene
+Gehirn bleibt bestehen – es ist jetzt Teil des Logo-Lockups.
 
 **Geändert (`docs/marketing/social-banners.mjs`):**
-- Neuer, zentral gepflegter `HEADLINE`-Spruch (Default „Raus aus dem
-  *Autopilot*.") – zum Wechseln genügt diese eine Zeile.
+- Neuer, zentral gepflegter `HEADLINE`-Spruch (Default „Rein ins eigene
+  *Denken*.") – zum Wechseln genügt diese eine Zeile.
+- Unterüberschrift auf „Raus aus fremden Mustern." gekürzt (Satz „Rein in dein
+  eigenes Denken" entfernt, auch in den WhatsApp-Varianten).
 - Wortmarke 1:1 an `src/components/visuals/Logo.tsx` angeglichen: Fraunces,
   Gewicht 400, `tracking .1em`, „Meister" im Gold-Verlauf, Zeile 2 „DEINER
   GEDANKEN" mit goldenen Flankier-Strichen (`tracking .24em`); Größe aus der
