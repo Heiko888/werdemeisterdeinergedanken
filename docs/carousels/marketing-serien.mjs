@@ -346,7 +346,7 @@ html,body{ background:${p.page}; overflow:hidden; }
 .wm{ display:flex; flex-direction:column; gap:9px; line-height:1; }
 .wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:40px; letter-spacing:.1em; text-transform:uppercase; color:${p.ink}; }
 .wm .wm1 b{ font-weight:400; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-.wm .wm2{ display:flex; align-items:center; gap:11px; font-weight:400; font-size:18px; letter-spacing:.24em; text-transform:uppercase; color:${p.muted}; }
+.wm .wm2{ display:flex; align-items:center; justify-content:center; gap:11px; font-weight:400; font-size:18px; letter-spacing:.24em; text-transform:uppercase; color:${p.muted}; }
 .wm .wm2::before, .wm .wm2::after{ content:""; flex:0 0 auto; width:22px; height:2px; border-radius:2px; background:${p.grad}; opacity:.85; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
@@ -453,11 +453,10 @@ function slideHtml(series, s, idx, total, css, logo) {
   const isCover = s.role === "cover";
   const numbg = s.role === "step" ? `<div class="numbg">${s.n}</div>` : "";
   const foot = `<div class="foot"><span class="handle">${isCover ? series.label : HANDLE}</span>${dots(idx, total)}<span class="count">${isCover ? `<span class="swipe">wischen ${ARROW}</span>` : `${idx + 1}/${total}`}</span></div>`;
-  // Cover trägt die Wortmarke (Schriftlogo) neben dem Gehirn; Folgeslides den Tag.
+  // Jede Slide trägt die volle Wortmarke (Schriftlogo) neben dem Gehirn –
+  // Zeile 2 „Deiner Gedanken" zentriert unter Zeile 1, wie auf der Startseite.
   const wm = `<div class="wm"><span class="wm1">Werde <b>Meister</b></span><span class="wm2">Deiner Gedanken</span></div>`;
-  const top = isCover
-    ? `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`
-    : `<div class="top"><img class="logo" src="${logo}" alt=""><div class="tag">${series.tag}</div></div>`;
+  const top = `<div class="top cover"><img class="logo" src="${logo}" alt="">${wm}</div>`;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${fontsCss}\n${css}</style></head>
 <body><div class="slide">${numbg}<div class="content">
   ${top}
