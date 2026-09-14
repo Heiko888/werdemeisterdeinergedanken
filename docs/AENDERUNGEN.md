@@ -5,6 +5,51 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Adminbereich: Gesprächs-Cockpit fürs Klarheitsgespräch
+
+**Änderung:** Neues Werkzeug im Adminbereich, das Heiko **live durch das
+kostenlose Erstgespräch** (Klarheitsgespräch) führt – sechs Phasen, Fragebogen
+im Blick, Gesprächsuhr, Notizen mit Auto-Speichern, Zitatsammlung, Einwände &
+Angebote als Schnellzugriff und ein Abschluss, der den Follow-up-Text baut.
+
+**Neu:**
+- `src/lib/erstgespraech/phasen.ts` – fester Gesprächsinhalt als Code-Konstante
+  (6 Phasen mit Wortlaut/Fragen/Hinweisen, 7 Einwände, Angebote, die 7 Stufen,
+  Follow-up-Vorlage). Bewusst nicht in der Datenbank.
+- `src/lib/erstgespraech/types.ts` – Zeilentypen der drei `erstgespraech_*`-Tabellen.
+- `src/app/admin/erstgespraeche/page.tsx` – Übersicht: offene Fragebögen +
+  geführte Gespräche, fälliger nächster Schritt hervorgehoben.
+- `src/app/admin/erstgespraeche/[id]/page.tsx` + `Cockpit.tsx` – das dreigeteilte
+  Live-Cockpit (Uhr, Fragebogen links, Phasen Mitte, Zitate/Einwände/Angebote
+  rechts, Abschluss unten). Tastatur: `Cmd/Ctrl + →/←` wechselt die Phase.
+- `src/app/admin/erstgespraeche/actions.ts` – Server-Actions (Gespräch starten,
+  Notiz/Abhaken auto-speichern, Zitat sichern/löschen, Uhr, Abschluss).
+- `src/app/admin/erstgespraeche/Aktionen.tsx` – Startknöpfe (aus Fragebogen bzw.
+  „ohne Fragebogen").
+- `src/app/admin/page.tsx` – Verweis „Erstgespräche" ins Cockpit ergänzt.
+
+**Datenbank:** **Keine Migration.** Genutzt werden die vorhandenen Tabellen
+`erstgespraech_fragebogen`, `erstgespraech_gespraeche`, `erstgespraech_zitate`
+(Supabase `csnyohpbyhwiattnkzuz`, Migrationen `create_erstgespraech_fragebogen`
++ `erstgespraech_cockpit`).
+
+**Zugriff:** Seiten-Schutz wie im übrigen Adminbereich über `isAdminEmail`; die
+Daten selbst liegen zusätzlich hinter der RLS-Regel `ist_admin()`. Beides greift
+nur beim in `admin_users` hinterlegten Konto **`heiko.schwaninger@outlook.com`**
+– **fürs Cockpit mit diesem Konto anmelden** (die Gmail-Adresse ist zwar in der
+Admin-Liste, aber nicht in der Datenbank). Ist das falsche Konto angemeldet,
+zeigt die Übersicht einen deutlichen Hinweis statt leerer Listen.
+
+**Geprüft:** `npm run lint` (0 Fehler) und `npm run build` (erfolgreich); beide
+Routen als dynamisch gebaut.
+
+**Offen / bewusst weggelassen:** Das öffentliche Vorab-Formular
+(`erstgespraech_fragebogen` befüllen) liegt nicht in diesem Repo – die Liste
+„Offene Fragebögen" bleibt leer, bis es Daten liefert; zum Testen dient
+„Gespräch ohne Fragebogen".
+
+---
+
 ## 2026-09-14 – Startseite: Deckkraft des E-Book-Hintergrundbilds erhöht
 
 **Änderung:** Das Sonnenaufgang-Hintergrundbild in der E-Book-Sektion
