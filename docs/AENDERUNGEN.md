@@ -5,6 +5,32 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Gratis-E-Book: Formular-Boxen wieder lesbar (Farbkontrast-Fix)
+
+**Problem:** Auf der Seite `/gratis-ebook` waren die E-Mail-Anmelde-Boxen
+praktisch unlesbar – weiße Schrift auf weißem/hellem Grund.
+
+**Ursache:** Beide `EbookForm`-Container stehen auf hellem Grund (`bg-paper/95`),
+liegen aber innerhalb der `on-dark`-Hero- bzw. Abschluss-CTA-Sektion. `.on-dark`
+schaltet die Farb-Variablen (u. a. `--color-ink`) auf **weiß**, damit Text auf
+dem dunklen Navy-Grund hell erscheint. Diese hellen Werte werden in die
+darin liegenden hellen Formular-Boxen weitervererbt → weißer Eingabe-/Hinweistext
+auf hellem Grund.
+
+**Fix (`src/app/gratis-ebook/page.tsx`):** An beiden Formular-Containern (Hero
+und Abschluss-CTA) die bereits vorhandene Gegenstück-Klasse **`on-light`**
+ergänzt. Sie setzt `--color-ink`, `--color-ink-*` und `--color-accent` lokal
+auf die dunklen Grundwerte zurück, sodass der Text im hellen Kasten wieder
+dunkel und lesbar ist. Dieselbe Technik nutzt `LeadMagnet.tsx` bereits – der
+Gratis-E-Book-Seite fehlte die Klasse schlicht.
+
+**Design:** Keine neuen Farben/Tokens; nur die bestehende `on-light`-Klasse
+angewandt. Marken-Look unverändert.
+
+**Datenbank:** keine.
+
+---
+
 ## 2026-09-14 – Startseite: Sonnenaufgang-Bild als Hero-Hintergrund
 
 **Änderung:** Der Haupt-Hero (`Hero`, oberste Sektion der Startseite) bekommt
