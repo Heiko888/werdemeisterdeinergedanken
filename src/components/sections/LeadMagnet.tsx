@@ -29,7 +29,7 @@ export function LeadMagnet() {
           alt=""
           priority={false}
           sizes="100vw"
-          className="h-full w-full object-cover object-center opacity-35 [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.5)_55%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.5)_55%,transparent_100%)]"
+          className="h-full w-full object-cover object-center opacity-70 [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.6)_62%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.6)_62%,transparent_100%)]"
         />
       </div>
       {/* Navy-Verlauf über dem Bild – hält den dunklen Grundton der Sektion und
@@ -39,7 +39,7 @@ export function LeadMagnet() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(180deg, color-mix(in oklab, var(--color-navy-900) 55%, transparent) 0%, color-mix(in oklab, var(--color-navy-900) 78%, transparent) 100%)",
+            "linear-gradient(180deg, color-mix(in oklab, var(--color-navy-900) 38%, transparent) 0%, color-mix(in oklab, var(--color-navy-900) 64%, transparent) 100%)",
         }}
       />
 
