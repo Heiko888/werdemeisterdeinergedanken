@@ -41,8 +41,10 @@ export default function SevenStagesPage() {
         {/* Das durchlaufende Bild: oben verankert, deckt Hero + Anfang der
             Timeline und blendet nach unten weich ins Kosmos-Feld aus. Ein
             einziges Bild – kein zweiter, neu ansetzender Ausschnitt. Querformat,
-            daher object-center: Wanderer, leuchtender Pfad und Gipfel bleiben
-            über alle Bildschirmgrößen im Bild. */}
+            die Person steht links: Auf schmalen Screens (Mobile/Tablet) schneidet
+            ein zentrierter Ausschnitt die Person weg, daher hier links verankert
+            (object-left). Erst ab xl (genug Breite für Person + Sonne/Treppe)
+            wird zentriert. */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[46rem] overflow-hidden sm:h-[64rem]"
@@ -54,7 +56,7 @@ export default function SevenStagesPage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center saturate-[1.05] brightness-[1.02] contrast-[1.02]"
+            className="object-cover object-left saturate-[1.05] brightness-[1.02] contrast-[1.02] xl:object-center"
             style={{
               maskImage:
                 "linear-gradient(to bottom, #000 0%, #000 60%, transparent 100%)",

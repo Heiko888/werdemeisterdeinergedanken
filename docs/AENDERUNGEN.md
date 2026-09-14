@@ -63,6 +63,39 @@ hinken hier nur historisch hinterher.
 
 ---
 
+## 2026-09-14 – Die 7 Stufen: Hero-Bild auf Mobile links verankert
+
+**Problem:** Auf schmalen Screens (Mobile/Tablet) war die Person im Hero-Bild
+nicht sichtbar. Der Container ist dort hoch/schmal, `object-cover` skaliert das
+Querformat-Bild auf die Höhe und beschneidet die Breite – bei `object-center`
+fällt die links stehende Person aus dem Ausschnitt.
+
+**Fix (`src/app/die-7-stufen/page.tsx`):** Bildposition auf `object-left`
+(Person sichtbar) gesetzt und erst ab `xl` (genug Breite für Person **und**
+Sonne/Treppe) auf `object-center` (`object-left … xl:object-center`).
+
+**Datenbank:** keine.
+
+---
+
+## 2026-09-14 – Die 7 Stufen: Hero-Bild ersetzt (Wanderer mit Steintreppe)
+
+**Änderung:** Das Hero-Hintergrundbild von `/die-7-stufen` wurde erneut
+getauscht – auf das neue Motiv „Wanderer blickt über die Berge, rechts eine
+in die Sonne führende Steintreppe". Die Treppen-Stufen passen besonders gut zum
+Thema „7 Stufen".
+
+**Geändert:**
+- `public/hero-7-stufen-gipfel.webp` mit der optimierten Fassung (199 KB,
+  1672×941, WEBP q82) des neuen Originals
+  `public/d10edd8e-5bf0-4413-b336-77519066b9c8.png` überschrieben. Dateiname und
+  Einbindung in `src/app/die-7-stufen/page.tsx` (`object-center`) bleiben
+  unverändert, daher kein Code-Change nötig. Beide Original-PNGs bleiben im Repo.
+
+**Datenbank:** keine.
+
+---
+
 ## 2026-09-14 – Die 7 Stufen: neues Hero-Hintergrundbild (Wanderer am Gipfel)
 
 **Änderung:** Das durchlaufende Hero-Hintergrundbild der Seite `/die-7-stufen`
