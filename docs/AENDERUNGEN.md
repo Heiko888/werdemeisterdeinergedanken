@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Website: E-Book-Mockup auf neues Treppen-Cover getauscht
+
+**Änderung:** Das auf der Website gezeigte 3D-Mockup des kostenlosen E-Books
+zeigt jetzt das neue Treppen-Cover (statt der alten Gehirn-Variante) – auf der
+**Startseite** (`LeadMagnet`) und der **Gratis-E-Book-Seite** (`/gratis-ebook`).
+
+**Geändert:**
+- `public/ebook-mockup.webp` durch das neue 3D-Mockup ersetzt (aus
+  `public/BuchCoverneu.png`, eng auf das Buch zugeschnitten, transparenter Rand,
+  gebackener Schatten erhalten; 1012×1359).
+- **Kein Code geändert:** Beide Stellen
+  (`src/components/sections/LeadMagnet.tsx`, `src/app/gratis-ebook/page.tsx`)
+  binden dieselbe Datei `ebook-mockup.webp` ein und übernehmen das neue Bild
+  automatisch. Seitenverhältnis nahezu identisch → Layout unverändert.
+
+---
+
 ## 2026-09-14 – Gratis-E-Book: Cover-Motiv Gehirn → Treppe getauscht
 
 **Änderung:** Das Hauptmotiv auf dem Cover des kostenlosen E-Books „Die 7 Stufen
