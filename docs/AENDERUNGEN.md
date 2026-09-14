@@ -32,6 +32,8 @@ Gehirn bleibt bestehen – es ist jetzt Teil des Logo-Lockups.
 - Gilt für beide Themes (dunkel + hell/Creme) inkl. der @2x-Reserven.
 - Glow-Halo ums Gehirn dezenter: `GLOW` von `{glowScale:2.0, glowBlur:70}` auf
   `{glowScale:1.35, glowBlur:48}` reduziert.
+- YouTube: Logo-Lockup verkleinert (Gehirn 316 → 236 px, `wm1` 34), damit es in
+  YouTubes zentraler Safe-Zone bleibt und nicht oben/unten aus dem Bild läuft.
 
 **Neu erzeugt:** Alle Banner-PNGs unter `docs/marketing/{youtube,facebook,
 instagram,linkedin,whatsapp}/` via `node docs/marketing/social-banners.mjs`.

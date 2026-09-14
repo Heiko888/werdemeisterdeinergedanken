@@ -33,8 +33,11 @@ const CREME_GOLD = {
 const HEADLINE = "Rein ins eigene <em>Denken</em>.";
 
 const TARGETS = [
+  // YouTube zeigt nur ein zentrales Safe-Band (~423 px hoch) auf allen Geräten.
+  // Gehirn + Wortmarke daher kleiner, damit das Logo-Lockup nicht oben/unten
+  // aus der Safe-Zone läuft.
   { key: "youtube", file: "youtube/WMDG-YouTube-Banner.png", w: 2560, h: 1440,
-    brain: 316, gap: 90, textW: 880, h1: 72, eb: 20, sub: 21, url: 20, safe: true,
+    brain: 236, gap: 90, textW: 880, h1: 72, eb: 20, sub: 21, url: 20, wm1: 34, safe: true,
     ...GLOW, palHell: CREME_GOLD },
   { key: "facebook", file: "facebook/WMDG-Facebook-Cover.png", w: 1640, h: 624,
     brain: 270, gap: 74, textW: 780, h1: 60, eb: 18, sub: 19, url: 18, safe: false, retina: true,
