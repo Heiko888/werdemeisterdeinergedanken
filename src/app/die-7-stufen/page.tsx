@@ -44,10 +44,13 @@ export default function SevenStagesPage() {
             die Person steht links: Auf schmalen Screens (Mobile/Tablet) schneidet
             ein zentrierter Ausschnitt die Person weg, daher hier links verankert
             (object-left). Erst ab xl (genug Breite für Person + Sonne/Treppe)
-            wird zentriert. */}
+            wird zentriert. Auf Mobile ist der Bildbereich bewusst flacher
+            (h-[30rem]): sonst zoomt object-cover das Querformat im hohen, schmalen
+            Container stark hinein – die Person würde zu groß, das Panorama zu
+            knapp. */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[46rem] overflow-hidden sm:h-[64rem]"
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[30rem] overflow-hidden sm:h-[64rem]"
         >
           <Image
             src="/hero-7-stufen-gipfel.webp"

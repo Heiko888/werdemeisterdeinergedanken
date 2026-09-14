@@ -5,6 +5,7 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+<<<<<<< Updated upstream
 ## 2026-09-14 – Klarheitsgespräch: öffentlicher Vorab-Fragebogen mit teilbarem Link
 
 **Anlass:** Klienten sollen den Fragebogen zum kostenlosen Klarheitsgespräch
@@ -60,6 +61,20 @@ vorhanden (aus früheren Sessions, direkt in Supabase angelegt):
 nicht als Dateien unter `supabase/migrations/` eingecheckt (sie wurden damals
 direkt in Supabase angelegt). Der Live-Stand ist vollständig; die Repo-Dateien
 hinken hier nur historisch hinterher.
+=======
+## 2026-09-14 – Die 7 Stufen: Hero-Bild auf Mobile flacher (mehr Panorama)
+
+**Problem:** Auf Mobile wirkte die Person im Hero zu groß, das Panorama war zu
+knapp – der Bildbereich war sehr hoch/schmal (`h-[46rem]`), dadurch zoomt
+`object-cover` das Querformat-Bild stark hinein.
+
+**Fix (`src/app/die-7-stufen/page.tsx`):** Mobile-Höhe des Bildbereichs von
+`h-[46rem]` auf `h-[30rem]` reduziert. Weniger Zoom → Person kleiner, mehr
+Panorama-Breite sichtbar. Desktop (`sm:h-[64rem]`) und `object-left …
+xl:object-center` unverändert.
+
+**Datenbank:** keine.
+>>>>>>> Stashed changes
 
 ---
 
