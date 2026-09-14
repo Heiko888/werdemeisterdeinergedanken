@@ -5,6 +5,32 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Gratis-E-Book: Berg-Hintergrundbild im Hero (wie Startseite)
+
+**Änderung:** Der Hero der Seite `/gratis-ebook` bekommt – analog zur Startseite
+(`Hero.tsx`) – das Sonnenaufgang-/Berg-Bild als atmosphärischen Hintergrund
+hinter dem Buch-Cover. Vorher lag dort nur der `HERO_GLOW`-Verlauf, das Bild
+fehlte.
+
+**Geändert (`src/app/gratis-ebook/page.tsx`):**
+- `public/hero-bg-berge.webp` als unterste Ebene (`-z-30`, `object-cover`, nach
+  unten ausgeblendete Maske) eingezogen – dieselbe Technik/Datei wie im
+  Startseiten-Hero.
+- Navy-Schleier (`-z-20`) darüber: oben (unter Header, wo Überschrift/Intro
+  sitzen) nahezu deckend, zur Mitte durchlässig – dort scheinen Berge und
+  Sonnenaufgang hinter dem Buch-Cover durch; unten wieder etwas dunkler.
+- **`isolate`** an der Section ergänzt, damit die `-z`-Ebenen (Bild, Schleier,
+  Glow) über dem `bg-navy-900`-Grund liegen (gleiche Technik wie `Hero`/
+  `LeadMagnet`).
+
+**Design:** Farbwelt (Navy/Gold), Schriften und Texte unverändert; das Bild
+fügt sich gedimmt in den bestehenden dunklen Look ein. Formular-Box bleibt
+hell/lesbar (`on-light`).
+
+**Datenbank:** keine.
+
+---
+
 ## 2026-09-14 – Gratis-E-Book: Formular-Boxen wieder lesbar (Farbkontrast-Fix)
 
 **Problem:** Auf der Seite `/gratis-ebook` waren die E-Mail-Anmelde-Boxen
