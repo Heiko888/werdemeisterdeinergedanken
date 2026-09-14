@@ -11,9 +11,9 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 (`LeadMagnet`) ist jetzt deutlich präsenter.
 
 **Geändert (`src/components/sections/LeadMagnet.tsx`):**
-- Bild-Deckkraft von `opacity-35` → `opacity-60`, Maske etwas später ausblendend
-  (55 % → 60 %).
-- Navy-Verlauf darüber leicht reduziert (55/78 % → 42/68 %), damit das Motiv
+- Bild-Deckkraft von `opacity-35` → `opacity-70`, Maske etwas später ausblendend
+  (55 % → 62 %).
+- Navy-Verlauf darüber reduziert (55/78 % → 38/64 %), damit das Motiv
   durchkommt – Überschrift und Formular bleiben klar lesbar.
 
 ---
