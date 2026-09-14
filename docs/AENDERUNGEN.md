@@ -5,6 +5,41 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Social-Media-Banner: Wortlogo wie auf der Hauptseite
+
+**Änderung:** Die großen Banner (YouTube, Facebook, Instagram, LinkedIn,
+WhatsApp) tragen jetzt das echte **Wortlogo** (Gehirn + „WERDE MEISTER / — DEINER
+GEDANKEN —") exakt in der Typografie des Website-Headers. Damit sich Logo und
+Headline nicht doppeln, ist der große Spruch **„Werde Meister deiner Gedanken."**
+durch die Hauptüberschrift **„Rein ins eigene *Denken*."** ersetzt; die
+Unterüberschrift lautet nur noch **„Raus aus fremden Mustern."**. Das goldene
+Gehirn bleibt bestehen – es ist jetzt Teil des Logo-Lockups.
+
+**Geändert (`docs/marketing/social-banners.mjs`):**
+- Neuer, zentral gepflegter `HEADLINE`-Spruch (Default „Rein ins eigene
+  *Denken*.") – zum Wechseln genügt diese eine Zeile.
+- Unterüberschrift auf „Raus aus fremden Mustern." gekürzt (Satz „Rein in dein
+  eigenes Denken" entfernt, auch in den WhatsApp-Varianten).
+- Wortmarke 1:1 an `src/components/visuals/Logo.tsx` angeglichen: Fraunces,
+  Gewicht 400, `tracking .1em`, „Meister" im Gold-Verlauf, Zeile 2 „DEINER
+  GEDANKEN" mit goldenen Flankier-Strichen (`tracking .24em`); Größe aus der
+  Headline abgeleitet (`w1`), pro Banner via `wm1` überschreibbar, einzeilig.
+- Neues `brandmark`-Lockup (Gehirn + Wortmarke, gestapelt) ersetzt das bloße
+  Gehirn auf allen Content-Bannern; WhatsApp (Profilbild = Gehirn) zeigt nur die
+  Wortmarke.
+- LinkedIn (nur 396 px hoch): Gehirn verkleinert (322 → 196 px), damit das
+  gestapelte Lockup ohne Beschnitt in die Höhe passt.
+- Gilt für beide Themes (dunkel + hell/Creme) inkl. der @2x-Reserven.
+- Glow-Halo ums Gehirn dezenter: `GLOW` von `{glowScale:2.0, glowBlur:70}` auf
+  `{glowScale:1.35, glowBlur:48}` reduziert.
+- YouTube: Logo-Lockup verkleinert (Gehirn 316 → 236 px, `wm1` 34), damit es in
+  YouTubes zentraler Safe-Zone bleibt und nicht oben/unten aus dem Bild läuft.
+
+**Neu erzeugt:** Alle Banner-PNGs unter `docs/marketing/{youtube,facebook,
+instagram,linkedin,whatsapp}/` via `node docs/marketing/social-banners.mjs`.
+
+---
+
 ## 2026-09-14 – Startseite: Hero „Gratis-Einstieg" ruhiger ausgerichtet
 
 **Änderung:** Reine Layout-/Ausrichtungspflege der E-Book-Sektion (`LeadMagnet`,
