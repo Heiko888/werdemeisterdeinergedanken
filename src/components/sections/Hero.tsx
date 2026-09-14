@@ -6,12 +6,48 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight } from "@/components/ui/Icon";
 import heikoHero from "../../../public/heiko-hero.webp";
+import heroBackdrop from "../../../public/hero-bg-berge.webp";
 
 const proof = ["7-Stufen-Modell", "Ohne Esoterik-Floskeln", "Auf Augenhöhe"];
 
 export function Hero() {
   return (
-    <section className="on-dark grain relative overflow-hidden bg-navy-900 text-cream lg:min-h-[42rem]">
+    <section className="on-dark grain relative isolate overflow-hidden bg-navy-900 text-cream lg:min-h-[42rem]">
+      {/* Atmosphärischer Hintergrund: Sonnenaufgang über den Bergen. Liegt ganz
+          hinten (-z-30) über dem Navy-Grund, dezent gedimmt und nach unten
+          ausgeblendet, damit Überschrift und Buttons klar lesbar bleiben. Das
+          Porträt und alle Textebenen liegen darüber und bleiben unberührt. */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-30">
+        <Image
+          src={heroBackdrop}
+          alt=""
+          priority={false}
+          sizes="100vw"
+          className="h-full w-full object-cover object-center [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.9)_70%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.9)_70%,transparent_100%)]"
+        />
+      </div>
+      {/* Navy-Schleier über dem Bild: hält Textlesbarkeit und den dunklen
+          Grundton. Links (unter der Überschrift) nahezu deckend, zur Mitte hin
+          durchlässig – rechts scheinen Berge und Sonnenaufgang klar durch. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-20"
+        style={{
+          background:
+            "linear-gradient(90deg, color-mix(in oklab, var(--color-navy-900) 92%, transparent) 0%, color-mix(in oklab, var(--color-navy-900) 78%, transparent) 26%, color-mix(in oklab, var(--color-navy-900) 40%, transparent) 55%, transparent 100%)",
+        }}
+      />
+      {/* Sanfter Navy-Verlauf von unten: gibt Buttons und Proof-Zeile einen
+          ruhigen, dunklen Grund, egal wie hell das Bild dort ist. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 -z-20 h-2/5"
+        style={{
+          background:
+            "linear-gradient(to top, color-mix(in oklab, var(--color-navy-900) 85%, transparent), transparent)",
+        }}
+      />
+
       {/* Navy-Grund mit Glow (wie /mitgliedschaft) */}
       <div
         aria-hidden
