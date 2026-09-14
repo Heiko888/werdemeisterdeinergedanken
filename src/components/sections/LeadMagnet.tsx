@@ -46,15 +46,33 @@ export function LeadMagnet() {
       {/* Drei Blöcke in DOM-Reihenfolge Überschrift → Buch → Formular. Auf
           Mobile stapeln sie genau so (Buch sitzt zwischen Überschrift und
           Formular). Auf Desktop rückt das Buch per Grid in die linke Spalte
-          über beide Zeilen, Überschrift und Formular stehen rechts. */}
-      <Container className="grid items-center gap-10 lg:grid-cols-[1fr_1fr] lg:grid-rows-[auto_auto] lg:gap-x-16 lg:gap-y-6">
-        {/* Überschrift + Intro – Mobile oben, Desktop oben rechts */}
+          über beide Zeilen, Überschrift und Formular stehen rechts.
+          `size="wide"` (max-w-7xl) setzt Hero und Header auf dasselbe
+          horizontale Raster – gleiche Außenkanten links wie rechts. Die
+          Spalten stehen im Verhältnis 46/54 (fr statt %, damit der
+          Spaltenabstand nicht zum horizontalen Überlauf führt) und rücken mit
+          56px Spaltenabstand näher zusammen. */}
+      <Container
+        size="wide"
+        className="grid items-center gap-10 lg:grid-cols-[46fr_54fr] lg:grid-rows-[auto_auto] lg:gap-x-14 lg:gap-y-8"
+      >
+        {/* Überschrift + Intro – Mobile oben, Desktop oben rechts. Der Block
+            teilt sich mit dem Formular dieselbe linke Achse und dieselbe
+            Zielbreite (~560px), damit der rechte Bereich als eine Einheit
+            wirkt. */}
         <Reveal className="lg:col-start-2 lg:row-start-1">
-          <div className="flex flex-col items-start gap-6">
+          <div className="flex flex-col items-start gap-5 lg:max-w-[560px]">
             <Eyebrow>Gratis-Einstieg</Eyebrow>
-            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl md:text-[2.9rem]">
+            {/* hyphens/overflow-wrap/word-break überschreiben die globalen
+                Heading-Regeln (hyphens:auto + overflow-wrap:anywhere), damit
+                „bewussten" nie getrennt wird. Ab sm bricht die goldene
+                Italic-Phrase per `sm:block` sauber in die zweite Zeile:
+                „Werde zum bewussten" / „Gestalter deiner Gedanken". Auf sehr
+                schmalem Mobile bleibt sie inline und fließt kompakt weiter –
+                immer nur an Wortgrenzen, nie innerhalb eines Wortes. */}
+            <h2 className="text-[2rem] font-medium leading-[1.12] text-ink [hyphens:none] [overflow-wrap:normal] [word-break:normal] sm:text-4xl md:text-[2.9rem]">
               Werde zum bewussten{" "}
-              <em className="accent">Gestalter deiner Gedanken</em>
+              <em className="accent sm:block">Gestalter deiner Gedanken</em>
             </h2>
             <p className="text-[1.05rem] leading-relaxed text-ink-mid">
               Sichere dir das kostenlose E-Book und mach den ersten Schritt.
@@ -70,8 +88,13 @@ export function LeadMagnet() {
           delay={100}
           className="lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:self-center"
         >
-          <div className="flex justify-center">
-            <div className="relative">
+          {/* Auf Desktop rechtsbündig (justify-end): das Buch rückt an die
+              Spaltenkante zum Content und gehört so optisch zum Contentblock,
+              statt links zu schweben. `translate-y` setzt es ~16px tiefer,
+              die etwas kleinere Breite (27rem statt 28rem) schafft unten mehr
+              Luft. */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative lg:translate-y-4">
               <div
                 aria-hidden
                 className="absolute inset-0 -z-10 rounded-full opacity-60 blur-3xl"
@@ -84,12 +107,13 @@ export function LeadMagnet() {
                 src={ebookMockup}
                 alt="Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ von Heiko Schwaninger"
                 priority
-                className="h-auto w-64 drop-shadow-2xl sm:w-72 lg:w-[28rem]"
+                className="h-auto w-64 drop-shadow-2xl sm:w-72 lg:w-[27rem]"
               />
-              {/* Feine goldene Standlinie – gibt dem Cover einen Boden. */}
+              {/* Feine goldene Standlinie – gibt dem Cover einen Boden, dicht
+                  unter dem Buch, damit keine zweite optische Achse entsteht. */}
               <div
                 aria-hidden
-                className="mx-auto mt-5 h-px w-40 max-w-[70%]"
+                className="mx-auto mt-2 h-px w-40 max-w-[70%]"
                 style={{
                   background:
                     "linear-gradient(to right, transparent, color-mix(in oklab, var(--color-gold-500) 70%, transparent), transparent)",
@@ -102,8 +126,9 @@ export function LeadMagnet() {
         {/* Formular – Mobile unter dem Buch, Desktop unten rechts */}
         <Reveal delay={150} className="lg:col-start-2 lg:row-start-2">
           {/* Erhöhte Karte mit Gold-Ring – macht das Formular zum edlen
-              Fokuspunkt, statt es nackt auf die Fläche zu legen. */}
-          <div className="glow-gold on-light w-full rounded-3xl border border-gold-400/30 bg-surface p-6 sm:p-7">
+              Fokuspunkt, statt es nackt auf die Fläche zu legen. Dieselbe
+              Zielbreite (~560px) und linke Achse wie der Textblock darüber. */}
+          <div className="glow-gold on-light w-full rounded-3xl border border-gold-400/30 bg-surface p-6 sm:p-7 lg:max-w-[560px]">
             <ul className="flex flex-col gap-2.5">
               {bullets.map((b) => (
                 <li
