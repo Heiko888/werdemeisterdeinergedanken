@@ -5,6 +5,41 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Startseite: Sonnenaufgang-Bild als Hero-Hintergrund
+
+**Änderung:** Der Haupt-Hero (`Hero`, oberste Sektion der Startseite) bekommt
+das Berg-/Sonnenaufgang-Bild als atmosphärischen Hintergrund. Das bestehende
+Porträt (`heiko-hero.webp`) bleibt unverändert und liegt weiterhin darüber.
+
+**Neu:**
+- `public/hero-bg-berge.webp` – für Web optimierte Fassung (120 KB, 1672×941)
+  des hochgeladenen Bildes `public/ChatGPT Image Sep 14, 2026, 08_56_01 PM.png`.
+  **Das Original bleibt unberührt im Repo liegen.**
+
+**Geändert (`src/components/sections/Hero.tsx`):**
+- Hintergrundbild als unterste Ebene (`-z-30`, `object-cover`, nach unten
+  ausgeblendete Maske) eingezogen.
+- Zwei Navy-Schleier (`-z-20`) darüber: links (unter Überschrift/Text) nahezu
+  deckend, zur Mitte/rechts durchlässig, plus ein Verlauf von unten für Buttons
+  und Proof-Zeile – so bleiben alle Texte klar lesbar, während Berge und Sonne
+  rechts sichtbar sind.
+- **`isolate`** an der Section ergänzt: erst dadurch bildet die Section einen
+  eigenen Stacking-Context, sodass die `-z`-Ebenen (Bild + Glow) über dem
+  `bg-navy-900`-Grund liegen statt dahinter (vorher wurden sie verdeckt). Gleiche
+  Technik wie in der `LeadMagnet`-Sektion.
+
+**Design:** Farbwelt (Navy/Gold), Schriften und Texte unverändert; das Bild
+fügt sich gedimmt in den bestehenden dunklen Look ein.
+
+**Responsive:** Desktop (1280px) und Mobile (375px) per Playwright geprüft –
+keine horizontalen Überläufe, Überschrift/Absatz/Buttons lesbar.
+
+**Datenbank:** keine.
+
+**Geprüft:** `npm run lint` (0 Fehler) + visuelle Screenshots.
+
+---
+
 ## 2026-09-14 – Startseite: Hero „Gratis-Einstieg" ruhiger ausgerichtet
 
 **Änderung:** Reine Layout-/Ausrichtungspflege der E-Book-Sektion (`LeadMagnet`,
