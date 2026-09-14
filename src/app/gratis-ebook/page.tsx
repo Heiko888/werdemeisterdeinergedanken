@@ -12,6 +12,7 @@ import { stages } from "@/lib/content";
 import { withCanonical } from "@/lib/seo";
 import ebookMockup from "../../../public/ebook-mockup.webp";
 import heikoPortrait from "../../../public/heiko-avatar.webp";
+import heroBackdrop from "../../../public/hero-bg-berge.webp";
 
 export const metadata: Metadata = withCanonical("/gratis-ebook", {
   title: "Kostenloses E-Book: Die 7 Stufen der Bewusstseinsentwicklung",
@@ -81,7 +82,32 @@ export default function GratisEbookPage() {
   return (
     <>
       {/* Hero: Cover + Formular (der eine Zweck dieser Seite – die Anmeldung) */}
-      <section className="on-dark grain relative overflow-hidden bg-navy-900 pt-16 pb-16 text-cream sm:pt-28 sm:pb-24">
+      <section className="on-dark grain relative isolate overflow-hidden bg-navy-900 pt-16 pb-16 text-cream sm:pt-28 sm:pb-24">
+        {/* Atmosphärischer Hintergrund: Sonnenaufgang über den Bergen – wie auf
+            der Startseite. Liegt ganz hinten (-z-30) über dem Navy-Grund,
+            gedimmt und nach unten ausgeblendet, damit das Buch-Cover davor und
+            alle Texte klar lesbar bleiben. */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-30">
+          <Image
+            src={heroBackdrop}
+            alt=""
+            priority={false}
+            sizes="100vw"
+            className="h-full w-full object-cover object-center [-webkit-mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.9)_70%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.9)_70%,transparent_100%)]"
+          />
+        </div>
+        {/* Navy-Schleier über dem Bild: hält den dunklen Grundton und die
+            Textlesbarkeit. Oben (unter dem Header, wo Überschrift/Intro sitzen)
+            nahezu deckend, zur Mitte hin durchlässig – dort scheinen Berge und
+            Sonnenaufgang hinter dem Buch-Cover durch. */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-20"
+          style={{
+            background:
+              "linear-gradient(to bottom, color-mix(in oklab, var(--color-navy-900) 88%, transparent) 0%, color-mix(in oklab, var(--color-navy-900) 60%, transparent) 40%, color-mix(in oklab, var(--color-navy-900) 42%, transparent) 68%, color-mix(in oklab, var(--color-navy-900) 72%, transparent) 100%)",
+          }}
+        />
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
