@@ -5,6 +5,64 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-14 – Klarheitsgespräch: öffentlicher Vorab-Fragebogen mit teilbarem Link
+
+**Anlass:** Klienten sollen den Fragebogen zum kostenlosen Klarheitsgespräch
+vorab ausfüllen. Bisher gab es die Datenbank-Seite dafür (Tabelle, Regeln,
+E-Mail-Benachrichtigung – siehe „Serverstand" unten), aber **kein Formular auf
+der Website**. Heiko brauchte einen Link, den er vor Ort oder per E-Mail
+verschicken kann, wenn jemand den Fragebogen noch nicht ausgefüllt hat.
+
+**Neu:**
+- `src/app/klarheitsgespraech/page.tsx` – öffentliche Seite mit dem Fragebogen.
+  **Das ist der teilbare Link:** `…/klarheitsgespraech`. Bewusst `noindex`
+  (kein Google-Eintrag; nicht in `robots.ts` gesperrt und nicht in der Sitemap –
+  wie /impressum). Optionaler Parameter `?q=` überschreibt die gespeicherte
+  Herkunft (`quelle`), z. B. `?q=vor-ort`; ohne Parameter gilt „direktlink".
+- `src/components/sections/KlarheitsgespraechForm.tsx` – das Formular (Name,
+  E-Mail, „Warum jetzt?", Muster/Thema, schon versucht, gewünschte Veränderung,
+  optionale Selbsteinschätzung der Stufe, optional Sonstiges, Pflicht-
+  Einwilligung). Honeypot gegen Bots, klare Feld-Fehlermeldungen, Danke-Ansicht
+  nach dem Absenden.
+- `src/app/api/klarheitsgespraech/route.ts` – nimmt das Formular an, prüft alles
+  server­seitig (spiegelt die DB-Prüfregeln), Honeypot + IP-Ratenbremse, und
+  schreibt die Antwort über den anonymen Supabase-Client in
+  `erstgespraech_fragebogen`. **Kein eigener Mailversand** – die
+  Benachrichtigung an Heiko läuft bereits über den DB-Trigger (siehe unten).
+- `src/app/admin/erstgespraeche/FragebogenLink.tsx` – im Admin-Cockpit unter
+  „Erstgespräche" gibt es jetzt eine Box **„Fragebogen-Link zum Weitergeben"**
+  mit dem fertigen Link, einem „Link kopieren"-Knopf und „Per E-Mail" (öffnet
+  einen fertigen E-Mail-Entwurf mit dem Link).
+
+**Geändert:**
+- `src/app/admin/erstgespraeche/page.tsx` – Link-Box in den Kopfbereich
+  eingehängt (`FragebogenLink`, URL = `site.url` + `/klarheitsgespraech`).
+
+**Ablauf:** Klient öffnet den Link → füllt aus → Antwort landet in
+`erstgespraech_fragebogen` → erscheint automatisch im Cockpit unter „Offene
+Fragebögen" → Heiko bekommt zusätzlich eine E-Mail (über den bestehenden
+DB-Trigger → Edge Function `neuer-fragebogen`).
+
+**Datenbank:** **keine Änderung nötig.** Das Backend war bereits vollständig
+vorhanden (aus früheren Sessions, direkt in Supabase angelegt):
+- Tabelle `public.erstgespraech_fragebogen` mit RLS. Anonyme Inserts sind über
+  eine **spaltenweise** INSERT-Berechtigung erlaubt (nur die Formularfelder,
+  nicht `status`/`notiz`); die Policy verlangt `einwilligung = true`. Kein
+  Lesezugriff über den Public Key.
+- DB-Trigger `erstgespraech_fragebogen_benachrichtigung` → Edge Function
+  `neuer-fragebogen` → verschickt die Benachrichtigungs-E-Mail via Resend.
+- Geprüft: anonymer Insert der Formularfelder funktioniert; das war vorher nur
+  ungenutzt, weil das Formular fehlte.
+
+**Hinweis (Repo ↔ Server):** Die drei zugehörigen DB-Migrationen
+(`create_erstgespraech_fragebogen`, `erstgespraech_cockpit`,
+`benachrichtigung_neuer_fragebogen`) liegen **im Supabase-Projekt**, sind aber
+nicht als Dateien unter `supabase/migrations/` eingecheckt (sie wurden damals
+direkt in Supabase angelegt). Der Live-Stand ist vollständig; die Repo-Dateien
+hinken hier nur historisch hinterher.
+
+---
+
 ## 2026-09-14 – Die 7 Stufen: Hero-Bild auf Mobile links verankert
 
 **Problem:** Auf schmalen Screens (Mobile/Tablet) war die Person im Hero-Bild
