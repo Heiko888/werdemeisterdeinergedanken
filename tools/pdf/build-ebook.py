@@ -16,6 +16,12 @@ FONTS = open(os.path.join(ASSETS, "fonts.css")).read()
 LOGO = enc(os.path.join(ROOT, "public/logo-brain-gold.png"), "image/png")
 HEIKO = enc(os.path.join(ROOT, "public/heiko-portrait.webp"), "image/webp")
 BRAIN = enc(os.path.join(ROOT, "public/logo-brain-gold.png"), "image/png")  # goldenes Gehirn, transparent
+# Cover-Hauptmotiv: Foto (Mann auf der goldenen Treppe ins Licht), falls vorhanden –
+# sonst fällt das Cover auf das goldene Gehirn zurück. Ablage:
+# tools/pdf/assets/ebook-cover-treppe.png (eigenes Motiv des Gratis-E-Books,
+# bewusst getrennt vom Buch-Cover-Motiv cover-treppe.png).
+_COVER_PHOTO_PATH = os.path.join(ASSETS, "ebook-cover-treppe.png")
+COVER_PHOTO = enc(_COVER_PHOTO_PATH, "image/png") if os.path.exists(_COVER_PHOTO_PATH) else None
 
 CSS = r"""
 /*__FONTS__*/
@@ -52,6 +58,19 @@ body{ font-family:'Inter',ui-sans-serif,system-ui,sans-serif; color:var(--ink); 
   linear-gradient(160deg, #f8f6f0 0%, #f1eee5 52%, #f6f4ee 100%); }
 .cover .brain{ position:absolute; left:50%; top:calc(60% - 12mm); transform:translate(-50%,-50%);
   width:66%; max-width:none; mix-blend-mode:normal; opacity:.62; }
+/* Foto-Hauptmotiv (Mann auf der goldenen Treppe): großes Band im mittleren/unteren
+   Bereich zwischen Versprechen (oben) und Bullet-Reihe (unten). Kanten SEHR weich
+   ins Creme ausgeblendet (radiale Vignette + langer Verlauf), liegt hinter dem Text. */
+.cover .hero-photo{ position:absolute; left:4%; right:4%; top:29%; bottom:20%; z-index:0;
+  background-repeat:no-repeat; background-position:center 44%; background-size:cover;
+  -webkit-mask-image:
+    radial-gradient(120% 96% at 50% 46%, #000 42%, rgba(0,0,0,0.5) 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 22%, #000 82%, transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:
+    radial-gradient(120% 96% at 50% 46%, #000 42%, rgba(0,0,0,0.5) 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 22%, #000 82%, transparent 100%);
+  mask-composite:intersect; }
 .cover .inner{ position:relative; height:100%; padding:19mm 22mm 15mm; display:flex; flex-direction:column; }
 .brandrow{ display:flex; align-items:center; gap:11px; }
 .brandrow img{ width:38px; height:38px; }
@@ -169,9 +188,12 @@ def path_steps():
         ) % (heights[i], num, name)
     return out
 
+_COVER_MOTIF = ('<div class="hero-photo" style="background-image:url(\'%s\')"></div>' % COVER_PHOTO) \
+    if COVER_PHOTO else ('<img class="brain" src="%s">' % BRAIN)
+
 COVER = """
 <div class="page cover">
-  <img class="brain" src="__BRAIN__">
+  __MOTIF__
   <div class="inner">
     <div class="brandrow"><img src="__LOGO__"><span class="wm"><span class="wm1">Werde <em>Meister</em></span><span class="wm2"><i></i>Deiner Gedanken<i></i></span></span></div>
     <div class="eyebrow">Kostenloses E-Book</div>
@@ -190,7 +212,7 @@ COVER = """
   </div>
 </div>
 """
-COVER = COVER.replace("__BRAIN__", BRAIN).replace("__LOGO__", LOGO).replace("__HEIKO__", HEIKO)
+COVER = COVER.replace("__MOTIF__", _COVER_MOTIF).replace("__LOGO__", LOGO).replace("__HEIKO__", HEIKO)
 
 def overview_rows():
     out = ""
