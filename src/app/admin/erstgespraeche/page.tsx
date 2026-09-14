@@ -17,7 +17,9 @@ import {
   type Ergebnis,
 } from "@/lib/erstgespraech/phasen";
 import type { FragebogenRow, GespraechRow } from "@/lib/erstgespraech/types";
+import { site } from "@/lib/site";
 import { OhneFragebogenButton, StartGespraechButton } from "./Aktionen";
+import { FragebogenLink } from "./FragebogenLink";
 
 export const dynamic = "force-dynamic";
 
@@ -131,6 +133,7 @@ export default async function ErstgespraechePage() {
             nächste Schritt steht an. Ein Klick öffnet das Gesprächs-Cockpit.
           </p>
           <OhneFragebogenButton />
+          <FragebogenLink url={`${site.url}/klarheitsgespraech`} />
         </Container>
       </section>
 
