@@ -339,14 +339,15 @@ html,body{ background:${p.page}; overflow:hidden; }
     radial-gradient(2px 2px at 60% 90%, rgba(255,255,255,.34), transparent); }
 .content{ position:absolute; inset:0; z-index:3; display:flex; flex-direction:column; padding:${PAD}px 80px ${Math.max(56, PAD - 12)}px; }
 .top{ display:flex; align-items:flex-start; justify-content:space-between; gap:32px; }
-.logo{ width:160px; height:auto; filter:drop-shadow(0 4px 22px ${p.logoShadow}); }
+.logo{ width:108px; height:auto; filter:drop-shadow(0 4px 22px ${p.logoShadow}); }
 .tag{ text-align:right; padding-top:6px; font-weight:800; font-size:19px; letter-spacing:.13em;
   text-transform:uppercase; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
 .top.cover{ align-items:center; justify-content:flex-start; gap:26px; }
-.wm{ display:flex; flex-direction:column; gap:6px; line-height:1; }
-.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:34px; letter-spacing:.02em; text-transform:uppercase; color:${p.ink}; }
-.wm .wm1 b{ font-weight:600; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-.wm .wm2{ font-weight:700; font-size:17px; letter-spacing:.26em; text-transform:uppercase; color:${p.muted}; }
+.wm{ display:flex; flex-direction:column; gap:9px; line-height:1; }
+.wm .wm1{ font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:40px; letter-spacing:.1em; text-transform:uppercase; color:${p.ink}; }
+.wm .wm1 b{ font-weight:400; background:${p.grad}; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.wm .wm2{ display:flex; align-items:center; gap:11px; font-weight:400; font-size:18px; letter-spacing:.24em; text-transform:uppercase; color:${p.muted}; }
+.wm .wm2::before, .wm .wm2::after{ content:""; flex:0 0 auto; width:22px; height:2px; border-radius:2px; background:${p.grad}; opacity:.85; }
 .mid{ flex:1 1 auto; display:flex; flex-direction:column; justify-content:center; gap:20px; }
 .eyebrow{ font-weight:800; font-size:21px; letter-spacing:.15em; text-transform:uppercase;
   color:${p.eyebrow}; }
@@ -408,7 +409,7 @@ html,body{ background:${p.page}; overflow:hidden; }
 const fontsCss = readFileSync(join(COVERS, "_fonts.css"), "utf8");
 // Emblem je Welt (wie brand-assets.mjs): Gold-Gehirn für die Gold-Welten,
 // Türkis-Gehirn für die Türkis-Welten.
-const logoGoldUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold.png")).toString("base64")}`;
+const logoGoldUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-gold-freigestellt.png")).toString("base64")}`;
 const logoTealUri = `data:image/png;base64,${readFileSync(join(ROOT, "public", "logo-brain-tuerkis.png")).toString("base64")}`;
 const logoFor = (theme) =>
   theme === "tuerkis" || theme === "tuerkis-hell" ? logoTealUri : logoGoldUri;
