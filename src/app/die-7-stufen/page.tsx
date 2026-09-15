@@ -38,19 +38,37 @@ export default function SevenStagesPage() {
             "var(--color-navy-950)",
         }}
       >
-        {/* Das durchlaufende Bild: oben verankert, deckt Hero + Anfang der
-            Timeline und blendet nach unten weich ins Kosmos-Feld aus. Ein
-            einziges Bild – kein zweiter, neu ansetzender Ausschnitt. Querformat,
-            die Person steht links: Auf schmalen Screens (Mobile/Tablet) schneidet
-            ein zentrierter Ausschnitt die Person weg, daher hier links verankert
-            (object-left). Erst ab xl (genug Breite für Person + Sonne/Treppe)
-            wird zentriert. Auf Mobile ist der Bildbereich bewusst flacher
-            (h-[30rem]): sonst zoomt object-cover das Querformat im hohen, schmalen
-            Container stark hinein – die Person würde zu groß, das Panorama zu
-            knapp. */}
+        {/* MOBILE: Das Bild als eigener Banner ganz oben (nur < sm). Im nativen
+            Seitenverhältnis (1672×941) ist das ganze Panorama inkl. Person zu
+            sehen – nichts wird beschnitten, die Person ist angenehm groß. Die
+            Überschrift sitzt DARUNTER auf ruhigem Navy, liegt also nicht mehr
+            über dem Gesicht. Unten weiche Ausblendung ins Kosmos-Feld. */}
+        <div aria-hidden className="relative w-full sm:hidden">
+          <Image
+            src="/hero-7-stufen-gipfel.webp"
+            alt=""
+            aria-hidden
+            width={1672}
+            height={941}
+            priority
+            sizes="100vw"
+            className="h-auto w-full saturate-[1.05] brightness-[1.02] contrast-[1.02]"
+            style={{
+              maskImage:
+                "linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%)",
+            }}
+          />
+        </div>
+
+        {/* DESKTOP (ab sm): Das durchlaufende Bild – oben verankert, deckt Hero +
+            Anfang der Timeline und blendet nach unten weich ins Kosmos-Feld aus.
+            Ein einziges Bild, kein zweiter Ausschnitt. Querformat, die Person
+            steht links; ab xl (genug Breite für Person + Sonne/Treppe) zentriert. */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[30rem] overflow-hidden sm:h-[64rem]"
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden overflow-hidden sm:block sm:h-[64rem]"
         >
           <Image
             src="/hero-7-stufen-gipfel.webp"
@@ -88,7 +106,7 @@ export default function SevenStagesPage() {
         />
 
         {/* Kopfbereich */}
-        <Container className="relative z-10 flex flex-col items-center gap-6 pt-16 pb-14 text-center sm:pt-28 sm:pb-20">
+        <Container className="relative z-10 flex flex-col items-center gap-6 pt-8 pb-14 text-center sm:pt-28 sm:pb-20">
           <Reveal>
             <Eyebrow>Der Weg</Eyebrow>
           </Reveal>

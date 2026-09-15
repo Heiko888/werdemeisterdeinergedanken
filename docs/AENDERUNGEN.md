@@ -5,7 +5,26 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
-<<<<<<< Updated upstream
+## 2026-09-15 – Die 7 Stufen: Hero auf Mobile als Banner (Text nicht mehr über Gesicht)
+
+**Problem:** Auf Mobile lag die zentrierte Überschrift über dem Gesicht der
+Person. Im hohen, schmalen Container zeigt `object-cover` immer die volle
+Bildhöhe – Kopf/Gesicht sitzen zwangsläufig oben, genau dort, wo der Text
+beginnt; per Bildposition nicht lösbar.
+
+**Fix (`src/app/die-7-stufen/page.tsx`):**
+- Auf Mobile (`< sm`) wird das Bild jetzt als **eigener Banner ganz oben** im
+  Fluss gezeigt – im nativen Seitenverhältnis (1672×941), also das ganze
+  Panorama inkl. Person, ohne Beschnitt. Unten weiche Ausblendung ins Navy.
+- Die Überschrift sitzt **darunter** auf ruhigem Navy und liegt nicht mehr über
+  dem Gesicht. Oberes Padding des Kopfbereichs auf Mobile von `pt-16` → `pt-8`.
+- Ab `sm` unverändert: das durchlaufende absolute Hintergrundbild (jetzt
+  `hidden sm:block`), `object-left … xl:object-center`.
+
+**Datenbank:** keine.
+
+---
+
 ## 2026-09-14 – Klarheitsgespräch: öffentlicher Vorab-Fragebogen mit teilbarem Link
 
 **Anlass:** Klienten sollen den Fragebogen zum kostenlosen Klarheitsgespräch
@@ -61,7 +80,9 @@ vorhanden (aus früheren Sessions, direkt in Supabase angelegt):
 nicht als Dateien unter `supabase/migrations/` eingecheckt (sie wurden damals
 direkt in Supabase angelegt). Der Live-Stand ist vollständig; die Repo-Dateien
 hinken hier nur historisch hinterher.
-=======
+
+---
+
 ## 2026-09-14 – Die 7 Stufen: Hero-Bild auf Mobile flacher (mehr Panorama)
 
 **Problem:** Auf Mobile wirkte die Person im Hero zu groß, das Panorama war zu
@@ -74,7 +95,6 @@ Panorama-Breite sichtbar. Desktop (`sm:h-[64rem]`) und `object-left …
 xl:object-center` unverändert.
 
 **Datenbank:** keine.
->>>>>>> Stashed changes
 
 ---
 
