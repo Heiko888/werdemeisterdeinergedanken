@@ -5,6 +5,45 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-16 – Reproduzierbarkeit & Zahlung↔Konto (A5 / B3)
+
+**Anlass:** Aus dem Prüfbericht die Punkte A5 (fehlende Migrationen nachziehen)
+und B3 (Mitgliedschaft fest ans Konto koppeln).
+
+**A5 – fehlendes DB-Fundament ins Repo aufgenommen (war nur live vorhanden):**
+- `supabase/migrations/20260910190940_create_erstgespraech_fragebogen.sql`
+- `supabase/migrations/20260914172539_erstgespraech_cockpit.sql`
+  (enthält u.a. `admin_users` + Funktion `ist_admin()` – Basis auch für die
+  Coaching-Methoden-RLS)
+- `supabase/migrations/20260914174236_benachrichtigung_neuer_fragebogen.sql`
+  (DB-Trigger → Edge Function; das Webhook-Geheimnis ist im Repo bewusst durch
+  einen Platzhalter ersetzt – der echte Wert bleibt im Vault der Produktion)
+- `supabase/functions/neuer-fragebogen/index.ts` + `supabase/functions/README.md`
+  (Edge-Function-Quelle, nutzt nur Env-Secrets)
+- Dateien = exakter Produktionsstand (Versionen stimmen mit
+  `supabase_migrations.schema_migrations` überein), idempotent. Nicht erneut
+  eingespielt (existieren bereits). Eine frische Umgebung ist damit
+  reproduzierbar.
+
+**B3 – Zahlung fest ans Login-Konto gekoppelt:**
+- Neue Spalte `memberships.user_id` (FK auf auth.users, nullable) +
+  Index. Migration `supabase/migrations/20260916193035_membership_user_id.sql`
+  – **in Produktion eingespielt** (Tabelle hatte 0 Zeilen, kein Backfill nötig).
+- Stripe-Webhook koppelt die Mitgliedschaft beim Bereitstellen des Kontos an die
+  `user_id` (`provisionAccess` gibt jetzt die User-ID zurück).
+  (`src/app/api/stripe/webhook/route.ts`)
+- Bezahlschranke prüft jetzt kontostabil über `user_id` mit Fallback auf die
+  E-Mail: neue `getMembershipForUser` / `isActiveMemberForUser`
+  (`src/lib/membership.ts`), genutzt in `mitglieder/layout.tsx` und
+  `lib/members/download-guard.ts`. So bleibt der Zugang erhalten, wenn ein Kunde
+  später eine andere/geänderte E-Mail nutzt.
+
+**Sonstiges:** `supabase/functions/**` aus dem Next-Typecheck/ESLint ausgenommen
+(Deno-Runtime). Geprüft: `npm run build` + `npm test` (11/11) grün, ESLint ohne
+Befund.
+
+---
+
 ## 2026-09-16 – Zentrale Admin-Übersicht + Admin-Navigation (A1 / A2 / B1)
 
 **Anlass:** Aus dem Prüfbericht

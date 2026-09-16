@@ -109,10 +109,24 @@ async function onCheckoutCompleted(
   // Zugang bereitstellen: Konto anlegen (falls neu) und Setzen-Passwort-Mail
   // schicken. Best-effort – Fehler hier dürfen den Webhook nicht scheitern lassen.
   try {
-    await provisionAccess(email);
+    const userId = await provisionAccess(email);
+    // Mitgliedschaft fest ans Konto koppeln (B3): so bleibt der Zugang auch bei
+    // späterer E-Mail-Änderung erhalten.
+    if (userId) await linkMembershipUser(email, userId);
   } catch (err) {
     console.error("membership provisioning failed", err);
   }
+}
+
+/** Verknüpft die (per E-Mail angelegte) Mitgliedschaft mit dem auth-Konto. */
+async function linkMembershipUser(email: string, userId: string) {
+  const admin = createAdminClient();
+  if (!admin) return;
+  const { error } = await admin
+    .from("memberships")
+    .update({ user_id: userId })
+    .eq("email", email);
+  if (error) console.error("membership user link error", error);
 }
 
 /**
@@ -274,10 +288,13 @@ async function upsertMembership(row: MembershipUpsert) {
 /**
  * Legt bei Bedarf ein Supabase-Konto an und schickt eine Mail zum Setzen des
  * Passworts, damit die zahlende Person sich einloggen kann.
+ *
+ * Gibt die auth-User-ID zurück (für die Kopplung der Mitgliedschaft, B3) –
+ * `null`, wenn nicht konfiguriert oder die ID nicht ermittelbar war.
  */
-async function provisionAccess(email: string) {
+async function provisionAccess(email: string): Promise<string | null> {
   const admin = createAdminClient();
-  if (!admin) return;
+  if (!admin) return null;
 
   // Konto anlegen (idempotent: „already registered“ wird ignoriert).
   const { error: createErr } = await admin.auth.admin.createUser({
@@ -288,7 +305,8 @@ async function provisionAccess(email: string) {
     console.error("createUser error", createErr);
   }
 
-  // Setzen-/Reset-Link erzeugen und per Resend versenden.
+  // Setzen-/Reset-Link erzeugen und per Resend versenden. Die Antwort enthält
+  // auch das User-Objekt – unabhängig davon, ob das Konto neu oder schon da war.
   const { data: linkData, error: linkErr } = await admin.auth.admin.generateLink({
     type: "recovery",
     email,
@@ -296,10 +314,11 @@ async function provisionAccess(email: string) {
   });
   if (linkErr || !linkData?.properties?.action_link) {
     console.error("generateLink error", linkErr);
-    return;
+    return linkData?.user?.id ?? null;
   }
 
   await sendWelcomeMail(email, linkData.properties.action_link);
+  return linkData.user?.id ?? null;
 }
 
 async function sendWelcomeMail(email: string, actionLink: string) {
