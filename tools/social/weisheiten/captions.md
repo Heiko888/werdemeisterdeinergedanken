@@ -153,3 +153,42 @@ Unausgesprochenes ist nicht weg – es arbeitet im Hintergrund weiter. Aussprech
 Nicht wissen ist kein Makel – es ist der Moment, in dem echtes Lernen beginnt.
 Wer alles zu wissen glaubt, hört auf zu fragen.
 👉 Wo darfst du heute ehrlich „keine Ahnung" sagen?
+
+---
+
+# Serie „Klartext & Entscheidung" + E-Book
+
+Aufrechte, klare Gesten – Ton: direkt, auf Augenhöhe, ermutigend.
+
+**Basis-Hashtags:** wie oben, plus `#klartext #entscheidung #selbstverantwortung`
+
+## K1 · „Der Moment der Erkenntnis verändert alles."
+Nicht die Jahre verändern uns – der eine Moment, in dem der Groschen fällt.
+Ab da siehst du dasselbe Leben mit anderen Augen.
+👉 Was war deine letzte echte Erkenntnis?
+
+## K2 · „Niemand denkt das für dich – nur du."
+Ratschläge, Bücher, Impulse: alles gut. Aber den Gedanken denken, der dich
+verändert, kann dir niemand abnehmen. Das ist deine Freiheit – und deine Verantwortung.
+👉 Welchen Gedanken schiebst du gerade auf?
+
+## K3 · „Nein ist ein vollständiger Satz."
+Du musst dich nicht rechtfertigen, erklären, verteidigen. Ein klares Nein schützt
+dein Ja. Grenzen sind kein Egoismus – sie sind Selbstachtung.
+👉 Wo ist ein Nein längst überfällig?
+
+## K4 · „Alles beginnt da, wo du hinschaust: bei dir."
+Nicht bei den anderen, nicht bei den Umständen – bei dir. Das ist keine Schuld,
+sondern deine größte Kraft: Wo du hinschaust, verändert sich etwas.
+👉 Wohin richtest du heute deine Aufmerksamkeit?
+
+## K5 · „Eine Entscheidung ist stärker als hundert Vorsätze."
+Vorsätze halten die Tür offen. Eine echte Entscheidung schließt sie – und schafft Klarheit.
+👉 Welche Entscheidung ist bei dir gerade dran?
+
+## E-Book · „Dein Startpunkt: das E-Book – kostenlos."
+Der einfachste erste Schritt: das kostenlose E-Book „Werde Meister deiner Gedanken".
+Kein Esoterik-Kram, sondern ein bodenständiger Einstieg in die 7 Stufen.
+👉 Hol es dir – Link in Bio. 📖
+
+_Extra-Tags:_ `#gratisebook #ebook #7stufen`

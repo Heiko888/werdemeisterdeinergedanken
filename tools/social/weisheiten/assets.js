@@ -35,5 +35,12 @@ module.exports = {
     ohrenZu: dataUri(path.join(__dirname, "quellen/heiko-pose-ohren-zu.png"), "image/png"),
     mundZu: dataUri(path.join(__dirname, "quellen/heiko-pose-mund-zu.png"), "image/png"),
     schulterzucken: dataUri(path.join(__dirname, "quellen/heiko-pose-schulterzucken.png"), "image/png"),
+    // Serie „Klartext & Entscheidung" + E-Book
+    fingerhoch: dataUri(path.join(__dirname, "quellen/heiko-pose-fingerhoch.png"), "image/png"),
+    zeigen: dataUri(path.join(__dirname, "quellen/heiko-pose-zeigen.png"), "image/png"),
+    stopp: dataUri(path.join(__dirname, "quellen/heiko-pose-stopp.png"), "image/png"),
+    handBrust: dataUri(path.join(__dirname, "quellen/heiko-pose-hand-brust.png"), "image/png"),
+    punkt: dataUri(path.join(__dirname, "quellen/heiko-pose-punkt.png"), "image/png"),
+    ebook: dataUri(path.join(__dirname, "quellen/heiko-pose-ebook.png"), "image/png"),
   },
 };
