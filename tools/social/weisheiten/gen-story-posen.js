@@ -105,6 +105,6 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 
 POSTS.forEach((o, i) => {
   const n = String(i + 1).padStart(2, "0");
-  fs.writeFileSync(path.join(BUILD, `weisheit-story-${n}.html`), page(o));
+  fs.writeFileSync(path.join(BUILD, `weisheit-story-posen-${n}.html`), page(o));
 });
 console.log(`Serie C (Story 9:16): ${POSTS.length} Seiten -> tools/social/weisheiten/build/`);

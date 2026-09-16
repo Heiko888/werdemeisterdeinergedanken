@@ -8,9 +8,10 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
 - **Serie B – Ganzkörper-Posen** (`gen-posen.js`): 5 freigestellte Posen
   (`tools/social/weisheiten/quellen/`) ins Bergmotiv (`public/hero-bg-berge.webp`)
   gesetzt, 3 davon gespiegelt → 8 Posts (4:5, 1080×1350).
-- **Serie C – Story/Reel** (`gen-story.js`): dieselben Posen im **9:16-Format
-  (1080×1920)**, Text im oberen und Logo im unteren sicheren Bereich (Story-UI-safe)
-  → 8 Stories.
+- **Serie C1 – Posen-Story** (`gen-story-posen.js`): die Posen im **9:16-Format
+  (1080×1920)**, Text oben, Logo unten (Story-UI-safe) → 8 Stories.
+- **Serie C2 – Porträt-Story** (`gen-story-portrait.js`): das Porträt im **9:16-Format
+  (1080×1920)**, gleicher Story-Aufbau → 8 Stories.
 
 > **Hinweis:** Die Bilder liegen bewusst unter `tools/…` (Quellen + fertige
 > Ausgabe), **nicht** unter `public/`. Sie sind Social-Assets/Build-Inputs und
@@ -30,8 +31,9 @@ cd tools/social/weisheiten
 CHROME=/pfad/zu/chrome ./render.sh
 ```
 
-Ergebnis: 24 PNGs in `tools/social/weisheiten/output/`
-(`weisheit-portrait-01…08.png`, `weisheit-pose-01…08.png`, `weisheit-story-01…08.png`).
+Ergebnis: 32 PNGs in `tools/social/weisheiten/output/`
+(`weisheit-portrait-01…08.png`, `weisheit-pose-01…08.png`,
+`weisheit-story-posen-01…08.png`, `weisheit-story-portrait-01…08.png`).
 
 Warum „Überscan + Crop": Headless-Chromium hat einen kleinen Viewport-Versatz; deshalb
 wird mit 1080×1470 gerendert und mit `lib/pngcrop.js` (nur Node/zlib, ohne Fremd-Libs)
@@ -57,7 +59,8 @@ exakt auf 1080×1350 zugeschnitten.
 | `assets.js` | lädt Schriften/Bilder aus dem Repo als base64-Data-URIs |
 | `gen-portrait.js` | Serie A (Porträt, 4:5) → HTML nach `build/` |
 | `gen-posen.js` | Serie B (Posen, 4:5) → HTML nach `build/` |
-| `gen-story.js` | Serie C (Story, 9:16) → HTML nach `build/` |
+| `gen-story-posen.js` | Serie C1 (Posen-Story, 9:16) → HTML nach `build/` |
+| `gen-story-portrait.js` | Serie C2 (Porträt-Story, 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |
 | `captions.md` | fertige Feed-Captions + Hashtags je Weisheit |

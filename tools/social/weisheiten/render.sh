@@ -20,10 +20,12 @@ OVERSCAN=120   # Überscan gegen Headless-Viewport-Versatz, wird weggeschnitten
 command -v node >/dev/null || { echo "node fehlt"; exit 1; }
 [ -x "$CHROME" ] || { echo "Chromium nicht gefunden: $CHROME (via \$CHROME setzen)"; exit 1; }
 
-mkdir -p "$OUT"
-node gen-portrait.js   # Serie A (Porträt, 4:5 1080x1350)
-node gen-posen.js      # Serie B (Posen, 4:5 1080x1350)
-node gen-story.js      # Serie C (Story, 9:16 1080x1920)
+mkdir -p "$OUT" "$BUILD"
+rm -f "$BUILD"/*.html "$BUILD"/*.png   # alte Zwischenstände raus (sonst werden sie mitgerendert)
+node gen-portrait.js        # Serie A (Porträt, 4:5 1080x1350)
+node gen-posen.js           # Serie B (Posen, 4:5 1080x1350)
+node gen-story-posen.js     # Serie C1 (Posen-Story, 9:16 1080x1920)
+node gen-story-portrait.js  # Serie C2 (Porträt-Story, 9:16 1080x1920)
 
 shopt -s nullglob
 for html in "$BUILD"/*.html; do
