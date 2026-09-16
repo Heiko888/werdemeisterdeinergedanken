@@ -45,7 +45,7 @@ function place(pose, targetH, centerX, footY) {
   };
 }
 
-function page(o) {
+function page(o, bg) {
   const p = place(o.pose, o.targetH, o.centerX, o.footY);
   const textRight = o.textSide === "right";
   const veilAngle = textRight ? "240deg" : "120deg";
@@ -92,7 +92,7 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 .brand .l2 .ln{height:1px;width:14px;background:rgba(242,212,137,.85);}
 .brand .l2 .t{font-family:'Fraunces',serif;font-weight:400;text-transform:uppercase;letter-spacing:.24em;font-size:11.5px;line-height:1;}
 </style></head><body><div class="stage">
-  <div class="backdrop"><img src="${a.berge}" alt=""></div>
+  <div class="backdrop"><img src="${bg}" alt=""></div>
   <div class="veil-x"></div><div class="veil-t"></div><div class="veil-b"></div><div class="glow"></div>
   <div class="figure"><img src="${a.posen[o.pose]}" alt="Heiko Schwaninger"></div>
   <div class="content"><h1>${o.q}</h1><div class="rule"></div></div>
@@ -105,6 +105,6 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 
 POSTS.forEach((o, i) => {
   const n = String(i + 1).padStart(2, "0");
-  fs.writeFileSync(path.join(BUILD, `weisheit-story-posen-${n}.html`), page(o));
+  fs.writeFileSync(path.join(BUILD, `weisheit-story-posen-${n}.html`), page(o, a.backdrops[i % a.backdrops.length]));
 });
 console.log(`Serie C (Story 9:16): ${POSTS.length} Seiten -> tools/social/weisheiten/build/`);

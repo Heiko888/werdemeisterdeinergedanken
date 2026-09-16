@@ -19,6 +19,13 @@ module.exports = {
   frauncesI: dataUri(path.join(fontsDir, "Fraunces-latin-italic-variable.woff2"), "font/woff2"),
   // Motive
   berge: dataUri(path.join(pub, "hero-bg-berge.webp"), "image/webp"),
+  // Wechselnde Berg-/Sonnenaufgang-Hintergründe (für Abwechslung im Feed).
+  // Index 0 = Original-Bergmotiv, 1–6 = zusätzliche Panoramen (unter quellen/hintergruende).
+  backdrops: [
+    dataUri(path.join(pub, "hero-bg-berge.webp"), "image/webp"),
+    ...["berg-01", "berg-02", "berg-03", "berg-04", "berg-05", "berg-06"].map((n) =>
+      dataUri(path.join(__dirname, "quellen/hintergruende", n + ".png"), "image/png")),
+  ],
   logo: dataUri(path.join(pub, "logo-brain-gold-freigestellt.png"), "image/png"),
   portrait: dataUri(path.join(pub, "heiko-hero.webp"), "image/webp"),
   // Freigestellte Ganzkörper-Posen (transparent). Liegen als Build-Inputs unter

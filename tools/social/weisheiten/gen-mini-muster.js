@@ -49,7 +49,7 @@ function place(pose, targetH, footY, frameW) {
   };
 }
 
-function page(fmtKey, item) {
+function page(fmtKey, item, bg) {
   const f = FMT[fmtKey];
   const p = place(item.pose, f.targetH, f.footY, f.w);
   const isStory = fmtKey === "9x16";
@@ -91,7 +91,7 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 .brand .l2 .ln{height:1px;width:13px;background:rgba(242,212,137,.85);}
 .brand .l2 .t{font-family:'Fraunces',serif;font-weight:400;text-transform:uppercase;letter-spacing:.24em;font-size:${isStory ? 11.5 : 11}px;line-height:1;}
 </style></head><body><div class="stage">
-  <div class="backdrop"><img src="${a.berge}" alt=""></div>
+  <div class="backdrop"><img src="${bg}" alt=""></div>
   <div class="veil-t"></div><div class="veil-b"></div><div class="glow"></div><div class="ground"></div>
   <div class="figure"><img src="${a.posen[item.pose]}" alt="Heiko Schwaninger"></div>
   <div class="content"><h1>${item.q}</h1><div class="rule"></div></div>
@@ -104,7 +104,8 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 
 ITEMS.forEach((item, i) => {
   const n = String(i + 1).padStart(2, "0");
-  fs.writeFileSync(path.join(BUILD, `muster-${n}-${item.key}-4x5.html`), page("4x5", item));
-  fs.writeFileSync(path.join(BUILD, `muster-${n}-${item.key}-9x16.html`), page("9x16", item));
+  const bg = a.backdrops[i % a.backdrops.length];
+  fs.writeFileSync(path.join(BUILD, `muster-${n}-${item.key}-4x5.html`), page("4x5", item, bg));
+  fs.writeFileSync(path.join(BUILD, `muster-${n}-${item.key}-9x16.html`), page("9x16", item, bg));
 });
 console.log(`Mini-Serie „Muster & Vermeidung": ${ITEMS.length}x2 Seiten -> tools/social/weisheiten/build/`);

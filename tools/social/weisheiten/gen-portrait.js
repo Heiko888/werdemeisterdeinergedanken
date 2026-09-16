@@ -23,7 +23,7 @@ const VARIANTS = [
 
 const ZOOM = { normal: { pw: 660, ph: 900 }, wide: { pw: 560, ph: 780 }, close: { pw: 800, ph: 1090 } };
 
-function page(quoteHTML, o) {
+function page(quoteHTML, o, bg) {
   const left = o.side === "left";
   const z = ZOOM[o.zoom] || ZOOM.normal;
   const textRight = left;
@@ -75,7 +75,7 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 .brand .l2 .ln{height:1px;width:14px;background:rgba(242,212,137,.85);}
 .brand .l2 .t{font-family:'Fraunces',serif;font-weight:400;text-transform:uppercase;letter-spacing:.24em;font-size:12px;line-height:1;}
 </style></head><body><div class="stage">
-  <div class="backdrop"><img src="${a.berge}" alt=""></div>
+  <div class="backdrop"><img src="${bg}" alt=""></div>
   <div class="veil-x"></div><div class="veil-b"></div><div class="glow"></div><div class="toplight"></div>
   <div class="portrait"><div class="aura"></div><img src="${a.portrait}" alt="Heiko Schwaninger"></div>
   <div class="content"><h1>${quoteHTML}</h1><div class="rule"></div></div>
@@ -89,6 +89,6 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 
 QUOTES.forEach((q, i) => {
   const n = String(i + 1).padStart(2, "0");
-  fs.writeFileSync(path.join(BUILD, `weisheit-portrait-${n}.html`), page(q.html, VARIANTS[i]));
+  fs.writeFileSync(path.join(BUILD, `weisheit-portrait-${n}.html`), page(q.html, VARIANTS[i], a.backdrops[i % a.backdrops.length]));
 });
 console.log(`Serie A (Porträt): ${QUOTES.length} Seiten -> tools/social/weisheiten/build/`);

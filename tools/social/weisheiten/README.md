@@ -31,6 +31,10 @@ Look: Navy-Grund, Gold-Akzente, Schriften **Inter** (Fließtext) + **Fraunces** 
 Kursiv-Schlüsselwörter), Logo unten (freigestelltes Gehirn + Wortmarke). Das **Gesicht
 ist immer das echte Foto** – keine KI-Veränderung, nur Rahmung/Spiegelung/Ausschnitt.
 
+**Wechselnde Hintergründe:** Jeder Post nutzt rotierend eines von 7 Sonnenaufgang-
+Panoramen (`assets.js` → `backdrops`: das Original `hero-bg-berge.webp` plus 6 unter
+`quellen/hintergruende/`). Neue Panoramen dort ablegen und in `assets.js` registrieren.
+
 ## Erzeugen
 
 ```bash
