@@ -70,6 +70,7 @@ type MethodeInput = {
   wann_einsetzen: string;
   ablauf: string[];
   beispielfragen: string[];
+  sprechtext: string;
   dauer: string;
   setting: string;
   hinweise: string;
@@ -88,6 +89,7 @@ function normalize(input: Record<string, unknown>): MethodeInput {
     wann_einsetzen: text(input.wann_einsetzen, 2000),
     ablauf: list(input.ablauf),
     beispielfragen: list(input.beispielfragen),
+    sprechtext: text(input.sprechtext, 20000),
     dauer: text(input.dauer, 100),
     setting: text(input.setting, 200),
     hinweise: text(input.hinweise, 3000),

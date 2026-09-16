@@ -5,6 +5,35 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-16 – Coaching-Methoden: Sprechtexte für Trance & Hypnose (v1.5)
+
+**Anlass:** In `/admin/methoden` fehlten die wortwörtlichen **Sprechtexte zum
+Vorlesen** für die Hypnose-/Trance-Methoden (Induktion, Vertiefung, Suggestionen,
+Rückführung). Die Methoden beschrieben bisher nur den Ablauf.
+
+**Neu:**
+- Datenbank-Feld `coaching_methoden.sprechtext` (`text`, Default `''`).
+  Migration `coaching_methoden_sprechtext`
+  (`supabase/migrations/20260916140225_coaching_methoden_sprechtext.sql`) –
+  bereits in Produktion eingespielt. Der Volltextsuche-Trigger indexiert
+  `sprechtext` mit.
+- Sprechtexte für alle **14 Trance-Methoden** eingespielt (Fixations-,
+  Fraktionierung, Utilisation, Vertiefung, Ideomotorik, Handlevitation,
+  posthypnotische Suggestion/Ausleitung, hypnosystemische Lösungstrance,
+  Zukunftsprogression, Selbsthypnose, Autogenes Training, Konfusionstechnik,
+  Rahmen/Aufklärung, Trancezeichen). Referenz-Seed:
+  `supabase/seed/coaching_methoden_sprechtexte.sql` + `.json`.
+- UI: Sprechtext wird in der Karte als eigener, gut lesbarer Block
+  (Serifenschrift, Kopieren-Button, Legende „… = Pause · [ ] = Regie") angezeigt
+  und ist im Editor als großes Feld pflegbar. Volltextsuche schließt ihn ein.
+  Betroffen: `src/lib/coaching-methoden.ts`, `src/app/admin/methoden/actions.ts`,
+  `MethodenBrowser.tsx`, `MethodeEditor.tsx`.
+
+**Inhaltsversion:** 1.4 → **1.5**. Sprechtexte sind Coaching-Skripte; die Grenzen
+zur Therapie (Feld `hinweise`, Warnbox) bleiben erhalten.
+
+---
+
 ## 2026-09-16 – Admin: Coaching-Methoden-Bibliothek (Nachschlagewerk)
 
 **Anlass:** Ein durchsuchbares, nach Kategorien filterbares Nachschlagewerk aller

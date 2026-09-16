@@ -22,6 +22,7 @@ function suchtext(m: MethodeRow): string {
     m.hinweise,
     m.dauer,
     m.setting,
+    m.sprechtext,
     m.eigene_notizen,
     ...m.ablauf,
     ...m.beispielfragen,
@@ -331,6 +332,8 @@ function MethodenKarte({
             </Abschnitt>
           )}
 
+          {m.sprechtext && <Sprechtext text={m.sprechtext} />}
+
           {(m.dauer || m.setting || m.herkunft) && (
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {m.dauer && <Fakt k="Dauer" v={m.dauer} />}
@@ -405,6 +408,42 @@ function Abschnitt({ titel, children }: { titel: string; children: React.ReactNo
         {titel}
       </div>
       <div className="mt-1.5">{children}</div>
+    </div>
+  );
+}
+
+/** Wortwörtlicher Sprechtext zum Vorlesen – hervorgehoben, mit Kopieren-Button. */
+function Sprechtext({ text }: { text: string }) {
+  const [kopiert, setKopiert] = useState(false);
+  const kopieren = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setKopiert(true);
+      setTimeout(() => setKopiert(false), 2000);
+    } catch {
+      // Zwischenablage nicht verfügbar – Text bleibt zum Markieren sichtbar.
+    }
+  };
+  return (
+    <div className="mt-4 rounded-xl border border-accent/25 bg-accent/[0.04] p-4">
+      <div className="flex items-center justify-between gap-3">
+        <div className="text-xs font-semibold uppercase tracking-wide text-accent">
+          Sprechtext · zum Vorlesen
+        </div>
+        <button
+          type="button"
+          onClick={kopieren}
+          className="shrink-0 rounded-full border border-ink/15 px-3 py-1 text-xs text-ink-mid transition-colors hover:border-ink/30 hover:text-ink"
+        >
+          {kopiert ? "Kopiert ✓" : "Kopieren"}
+        </button>
+      </div>
+      <p className="mt-2 whitespace-pre-wrap font-serif text-[15px] leading-[1.85] text-ink-soft">
+        {text}
+      </p>
+      <p className="mt-2 text-[11px] text-ink-muted">
+        {"„…“ markiert eine Pause · [ ] sind Regieanweisungen (nicht vorlesen)."}
+      </p>
     </div>
   );
 }

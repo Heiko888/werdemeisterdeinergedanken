@@ -11,7 +11,7 @@
  */
 
 /** Aktuelle Inhaltsversion der Bibliothek. Bei inhaltlichen Änderungen erhöhen. */
-export const INHALTSVERSION = "1.4";
+export const INHALTSVERSION = "1.5";
 
 export type KategorieRow = {
   id: string;
@@ -32,6 +32,7 @@ export type MethodeRow = {
   wann_einsetzen: string;
   ablauf: string[];
   beispielfragen: string[];
+  sprechtext: string;
   dauer: string;
   setting: string;
   hinweise: string;

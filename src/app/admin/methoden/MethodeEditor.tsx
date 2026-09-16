@@ -19,6 +19,7 @@ type FormState = {
   wann_einsetzen: string;
   ablauf: string[];
   beispielfragen: string[];
+  sprechtext: string;
   dauer: string;
   setting: string;
   hinweise: string;
@@ -38,6 +39,7 @@ function initial(methode: MethodeRow | null, kategorien: KategorieRow[]): FormSt
       wann_einsetzen: methode.wann_einsetzen,
       ablauf: methode.ablauf.length ? methode.ablauf : [""],
       beispielfragen: methode.beispielfragen.length ? methode.beispielfragen : [""],
+      sprechtext: methode.sprechtext,
       dauer: methode.dauer,
       setting: methode.setting,
       hinweise: methode.hinweise,
@@ -58,6 +60,7 @@ function initial(methode: MethodeRow | null, kategorien: KategorieRow[]): FormSt
     dauer: "",
     setting: "",
     hinweise: "",
+    sprechtext: "",
     tags: [],
     sortierung: 0,
     aktiv: true,
@@ -220,6 +223,25 @@ export function MethodeEditor({ kategorien, methode }: Props) {
         mehrzeilig
         platzhalter="Beispielfrage …"
       />
+
+      {/* Sprechtext zum Vorlesen */}
+      <div className="rounded-2xl border border-accent/25 bg-accent/[0.04] p-5">
+        <label className="flex flex-col gap-1">
+          <span className={labelCls}>Sprechtext (zum Vorlesen)</span>
+          <textarea
+            className={`${feld} min-h-[180px] resize-y font-serif leading-[1.8]`}
+            value={form.sprechtext}
+            onChange={(e) => set("sprechtext", e.target.value)}
+            placeholder={
+              "Wortwörtlicher Text zum Vorlesen (Induktion, Vertiefung, Suggestion, Rückführung).\nKonvention: „…“ = Pause · [ ] = Regieanweisung (nicht vorlesen)."
+            }
+          />
+          <span className="text-xs text-ink-muted">
+            Wird im Nachschlagewerk als eigener, gut lesbarer Block mit Kopieren-Button
+            angezeigt. Vor allem für Trance & Hypnose.
+          </span>
+        </label>
+      </div>
 
       {/* Hinweise & Grenzen */}
       <div className="rounded-2xl border border-gold-400/50 bg-gold-300/10 p-5">
