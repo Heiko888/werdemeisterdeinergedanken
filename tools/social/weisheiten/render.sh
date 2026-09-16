@@ -14,20 +14,26 @@ CHROME="${CHROME:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}"
 # Bilder nicht Teil des Vercel-Deployments werden (Deploy-Größenlimit).
 OUT="output"
 BUILD="build"
-W=1080; H=1350; WIN_H=1470   # WIN_H = H + Überscan gegen Headless-Versatz
+W=1080
+OVERSCAN=120   # Überscan gegen Headless-Viewport-Versatz, wird weggeschnitten
 
 command -v node >/dev/null || { echo "node fehlt"; exit 1; }
 [ -x "$CHROME" ] || { echo "Chromium nicht gefunden: $CHROME (via \$CHROME setzen)"; exit 1; }
 
 mkdir -p "$OUT"
-node gen-portrait.js
-node gen-posen.js
+node gen-portrait.js   # Serie A (Porträt, 4:5 1080x1350)
+node gen-posen.js      # Serie B (Posen, 4:5 1080x1350)
+node gen-story.js      # Serie C (Story, 9:16 1080x1920)
 
 shopt -s nullglob
 for html in "$BUILD"/*.html; do
   base="$(basename "$html" .html)"
+  case "$base" in
+    *story*) H=1920 ;;   # 9:16
+    *)       H=1350 ;;   # 4:5
+  esac
   "$CHROME" --headless --no-sandbox --disable-gpu --hide-scrollbars \
-    --force-device-scale-factor=1 --window-size=${W},${WIN_H} \
+    --force-device-scale-factor=1 --window-size=${W},$((H + OVERSCAN)) \
     --screenshot="$BUILD/_big.png" "file://$(pwd)/$html" >/dev/null 2>&1
   node lib/pngcrop.js "$BUILD/_big.png" "$OUT/$base.png" $W $H >/dev/null
   echo "  $OUT/$base.png"
