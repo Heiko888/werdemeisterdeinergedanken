@@ -15,6 +15,7 @@ import {
   type ContentSection,
 } from "@/lib/admin-stats";
 import { stages } from "@/lib/content";
+import { formatEuro } from "./_ui";
 
 export const dynamic = "force-dynamic";
 
@@ -144,8 +145,16 @@ export default async function AdminPage() {
           </p>
 
           <div className="mt-2 grid w-full grid-cols-2 gap-3 sm:grid-cols-4">
-            <Stat value={funnel.members} label="Mitglieder" />
-            <Stat value={funnel.newsletter} label="Newsletter-Abos" />
+            <Stat
+              value={funnel.memberships.available ? funnel.memberships.active : "–"}
+              label="Aktive Abos"
+              sub={
+                funnel.memberships.available
+                  ? `${funnel.memberships.total} gesamt`
+                  : "keine Daten"
+              }
+            />
+            <Stat value={funnel.members} label="Konten" />
             <Stat
               value={funnel.leads.confirmed}
               label="E-Book-Leads"
@@ -156,8 +165,36 @@ export default async function AdminPage() {
 
           <div className="mt-2 flex flex-wrap gap-3">
             <Link
-              href="/admin/erstgespraeche"
+              href="/admin/mitglieder"
               className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            >
+              Mitglieder
+              <ArrowRight />
+            </Link>
+            <Link
+              href="/admin/leads"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
+            >
+              E-Book-Leads
+              <ArrowRight />
+            </Link>
+            <Link
+              href="/admin/kontakt"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
+            >
+              Kontaktanfragen
+              <ArrowRight />
+            </Link>
+            <Link
+              href="/admin/bestellungen"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
+            >
+              Buch-Bestellungen
+              <ArrowRight />
+            </Link>
+            <Link
+              href="/admin/erstgespraeche"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
             >
               Erstgespräche
               <ArrowRight />
@@ -236,6 +273,71 @@ export default async function AdminPage() {
               <Stat value={funnel.leads.unsubscribed} label="Abgemeldet" />
               <Stat value={`${conversion}%`} label="Bestätigungsrate" />
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Umsatz & Kundschaft (Abos + Buch-Bestellungen) */}
+      <section className="border-t border-ink/10 py-12">
+        <Container>
+          <div className="mx-auto max-w-2xl">
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <Eyebrow>Umsatz & Kundschaft</Eyebrow>
+                <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+                  Abos & Buch-Verkäufe
+                </h2>
+              </div>
+              <Link
+                href="/admin/mitglieder"
+                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
+              >
+                Alle Mitglieder
+                <ArrowRight />
+              </Link>
+            </div>
+
+            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <Stat value={funnel.memberships.active} label="Aktive Abos" />
+              <Stat value={funnel.memberships.pastDue} label="Zahlung fällig" />
+              <Stat value={funnel.memberships.canceled} label="Gekündigt" />
+              <Stat value={funnel.newsletter} label="Newsletter-Abos" />
+            </div>
+
+            <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <Stat value={funnel.orders.total} label="Buch-Bestellungen" />
+              <Stat
+                value={funnel.orders.printOpen}
+                label="Print offen"
+                sub="noch zu versenden"
+              />
+              <Stat
+                value={formatEuro(funnel.orders.revenue, funnel.orders.currency)}
+                label="Buch-Umsatz"
+              />
+              <div className="flex flex-col justify-center gap-1 rounded-2xl border border-ink/10 bg-white p-5 text-sm shadow-card">
+                <Link
+                  href="/admin/bestellungen"
+                  className="inline-flex items-center gap-1.5 font-medium text-accent hover:underline"
+                >
+                  Bestellungen <ArrowRight />
+                </Link>
+                <Link
+                  href="/admin/leads"
+                  className="inline-flex items-center gap-1.5 font-medium text-accent hover:underline"
+                >
+                  E-Book-Leads <ArrowRight />
+                </Link>
+              </div>
+            </div>
+
+            {(!funnel.memberships.available || !funnel.orders.available) && (
+              <p className="mt-4 text-sm text-ink-muted">
+                Hinweis: Manche Zahlen sind 0, weil die zugehörige Tabelle noch nicht
+                eingespielt ist (Buch-Bestellungen: Migration{" "}
+                <code className="rounded bg-ink/5 px-1">0016_book_orders.sql</code>).
+              </p>
+            )}
           </div>
         </Container>
       </section>

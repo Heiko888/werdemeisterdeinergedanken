@@ -15,6 +15,9 @@ const eslintConfig = defineConfig([
     // Node-Test-Dateien (laufen über `npm test`, nicht über den Next-Build).
     // Sie nutzen bewusst `.ts`-Importe für den nativen Node-Test-Runner.
     "src/**/*.test.ts",
+    // Supabase Edge Functions laufen auf Deno (eigene Runtime/Globals),
+    // nicht im Next-Build – daher hier ausgenommen.
+    "supabase/functions/**",
   ]),
 ]);
 

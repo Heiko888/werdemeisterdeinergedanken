@@ -16,6 +16,7 @@ import {
   getTestProfile,
   getCompletedStages,
 } from "@/app/mitglieder/actions";
+import { getProgrammFortschritt } from "@/app/mitglieder/programm-actions";
 import {
   buildGedankenprofil,
   type StageLevel,
@@ -58,10 +59,12 @@ export default async function GedankenprofilPage() {
     }
   }
 
-  const [{ startStage, scores }, completedKeys] = await Promise.all([
-    getTestProfile(),
-    getCompletedStages(),
-  ]);
+  const [{ startStage, scores }, completedKeys, programmTage] =
+    await Promise.all([
+      getTestProfile(),
+      getCompletedStages(),
+      getProgrammFortschritt(),
+    ]);
 
   // Fortschritts-Schlüssel ("01" … "07") → Stufen-Nummern (1 … 7)
   const completedNumbers = completedKeys
@@ -72,6 +75,7 @@ export default async function GedankenprofilPage() {
     startStage,
     scores,
     completedNumbers,
+    programmDone: programmTage.length,
   });
 
   // KI-Reading nur anbieten, wenn serverseitig konfiguriert und ein Test vorliegt.
@@ -140,6 +144,27 @@ export default async function GedankenprofilPage() {
         </section>
       ) : (
         <>
+          {/* Testabhängige Empfehlung für den nächsten Schritt (B7) */}
+          {profil.empfehlung && (
+            <section className="py-12 sm:py-14">
+              <Container>
+                <div className="mx-auto flex max-w-2xl flex-col items-start gap-4 rounded-2xl border border-accent/30 bg-white p-7 shadow-card sm:p-8">
+                  <span className={memberEyebrow}>Dein nächster Schritt</span>
+                  <h2 className="font-display text-2xl font-medium text-ink">
+                    {profil.empfehlung.title}
+                  </h2>
+                  <p className="text-[1.02rem] leading-relaxed text-ink-mid">
+                    {profil.empfehlung.text}
+                  </p>
+                  <Button href={profil.empfehlung.href} variant="accent">
+                    {profil.empfehlung.cta}
+                    <ArrowRight />
+                  </Button>
+                </div>
+              </Container>
+            </section>
+          )}
+
           {/* Profil über alle 7 Stufen */}
           <section className="py-14 sm:py-16">
             <Container>

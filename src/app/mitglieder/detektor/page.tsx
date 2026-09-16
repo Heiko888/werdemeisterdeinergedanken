@@ -12,7 +12,10 @@ import {
   REQUIRE_MEMBER_LOGIN,
 } from "@/lib/supabase/config";
 import { DetektorPanel } from "@/components/members/DetektorPanel";
-import { isDetektorConfigured } from "@/app/mitglieder/detektor-actions";
+import {
+  isDetektorConfigured,
+  getDetektorHistory,
+} from "@/app/mitglieder/detektor-actions";
 
 export const dynamic = "force-dynamic";
 
@@ -33,6 +36,11 @@ export default async function DetektorPage() {
   }
 
   const configured = await isDetektorConfigured();
+  const verlauf = configured ? await getDetektorHistory(8) : [];
+  const dateFmt = new Intl.DateTimeFormat("de-DE", {
+    dateStyle: "medium",
+    timeZone: "Europe/Berlin",
+  });
 
   return (
     <>
@@ -79,6 +87,58 @@ export default async function DetektorPage() {
           )}
         </Container>
       </section>
+
+      {/* Verlauf der letzten Prüfungen */}
+      {verlauf.length > 0 && (
+        <section className="border-t border-ink/10 py-12 sm:py-16">
+          <Container className="max-w-2xl">
+            <Eyebrow>Dein Verlauf</Eyebrow>
+            <h2 className="mt-1 font-display text-2xl font-medium text-ink">
+              Zuletzt geprüft
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-ink-mid">
+              Deine letzten Prüfungen – nur für dich sichtbar. Mit der Zeit siehst
+              du, welche Hebel dir immer wieder begegnen.
+            </p>
+            <ul className="mt-6 flex flex-col gap-3">
+              {verlauf.map((v) => (
+                <li
+                  key={v.id}
+                  className="flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-5 shadow-card"
+                >
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <span className="text-xs font-medium text-ink-muted">
+                      {dateFmt.format(new Date(v.createdAt))}
+                    </span>
+                    <span className="text-xs text-ink-muted">
+                      {v.funde.length === 0
+                        ? "keine Technik erkannt"
+                        : `${v.funde.length} Technik${v.funde.length === 1 ? "" : "en"}`}
+                    </span>
+                  </div>
+                  <p className="line-clamp-2 text-[0.95rem] italic leading-relaxed text-ink-mid">
+                    „{v.eingabe.slice(0, 180)}
+                    {v.eingabe.length > 180 ? "…" : ""}&ldquo;
+                  </p>
+                  {v.funde.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {v.funde.map((f) => (
+                        <Link
+                          key={f.slug}
+                          href={f.href}
+                          className="rounded-full border border-accent/25 bg-accent/[0.06] px-3 py-1 text-xs font-medium text-accent hover:bg-accent/10"
+                        >
+                          {f.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </Container>
+        </section>
+      )}
     </>
   );
 }

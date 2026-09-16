@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { site } from "@/lib/site";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 export const runtime = "nodejs";
 
@@ -53,6 +54,28 @@ function clientIp(request: Request): string {
 
 function isEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+/**
+ * Anfrage zusätzlich in Supabase sichern (Übersicht unter /admin/kontakt).
+ * Best effort: fehlt der Service-Role-Key oder die Tabelle, wird nur geloggt –
+ * der Mailversand läuft unabhängig weiter.
+ */
+async function persistKontakt(row: {
+  name: string;
+  email: string;
+  thema: string | null;
+  message: string;
+  request_ip: string;
+}): Promise<void> {
+  const admin = createAdminClient();
+  if (!admin) return;
+  try {
+    const { error } = await admin.from("kontakt_anfragen").insert(row);
+    if (error) console.error("kontakt_anfragen insert error", error);
+  } catch (err) {
+    console.error("kontakt_anfragen insert failed", err);
+  }
 }
 
 function escapeHtml(value: string): string {
@@ -115,6 +138,16 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
+
+  // Anfrage sichern, bevor der Mailversand versucht wird – so geht sie auch
+  // dann nicht verloren, wenn der Versand (noch) nicht eingerichtet ist.
+  await persistKontakt({
+    name,
+    email,
+    thema: thema || null,
+    message,
+    request_ip: clientIp(request),
+  });
 
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {

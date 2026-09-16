@@ -250,7 +250,10 @@ export function ConsciousnessTest() {
                     Kostenloses Klarheitsgespräch
                     <ArrowRight />
                   </Button>
-                  <Button href="/#angebot" variant="secondary">
+                  <Button href="/mitgliedschaft" variant="secondary">
+                    Mitglied werden
+                  </Button>
+                  <Button href="/gratis-ebook" variant="secondary">
                     E-Book sichern
                   </Button>
                 </>

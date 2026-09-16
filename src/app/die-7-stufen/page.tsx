@@ -253,6 +253,9 @@ export default function SevenStagesPage() {
                 Bewusstseinstest starten
                 <ArrowRight />
               </Button>
+              <Button href="/mitgliedschaft" variant="secondary" size="lg">
+                Den ganzen Weg begleitet gehen
+              </Button>
               <Button href="/kontakt" variant="secondary" size="lg">
                 Kostenloses Erstgespräch
               </Button>

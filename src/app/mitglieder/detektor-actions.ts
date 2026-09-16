@@ -1,6 +1,7 @@
 "use server";
 
 import Anthropic from "@anthropic-ai/sdk";
+import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { deepDives } from "@/lib/deep-dives";
@@ -185,17 +186,72 @@ Regeln:
       });
     }
 
-    return {
-      status: "ok",
-      ergebnis: {
-        gesamt: gesamt || (funde.length === 0
+    const ergebnis: DetektorErgebnis = {
+      gesamt:
+        gesamt ||
+        (funde.length === 0
           ? "In diesem Text sind keine der bekannten Techniken deutlich erkennbar."
           : "Im Text wirken die folgenden Techniken."),
-        funde,
-      },
+      funde,
     };
+
+    // Verlauf speichern (A6): geprüfter Text + Funde. Best effort – ein Fehler
+    // beim Speichern darf das Ergebnis für die Person nicht verhindern.
+    try {
+      await supabase.from("detektor_checks").insert({
+        user_id: user.id,
+        eingabe: text,
+        gesamt: ergebnis.gesamt,
+        funde: ergebnis.funde,
+      });
+      revalidatePath("/mitglieder/detektor");
+    } catch (err) {
+      console.error("[detektor] Verlauf speichern fehlgeschlagen:", err);
+    }
+
+    return { status: "ok", ergebnis };
   } catch (err) {
     console.error("[detektor] KI-Aufruf fehlgeschlagen:", err);
     return { status: "error" };
   }
+}
+
+export type DetektorVerlaufEintrag = {
+  id: string;
+  eingabe: string;
+  gesamt: string;
+  funde: DetektorFund[];
+  createdAt: string;
+};
+
+/**
+ * Die jüngsten Detektor-Prüfungen der angemeldeten Person (für den Verlauf auf
+ * der Detektor-Seite und als Kontext für den Begleiter). Leer, wenn die Tabelle
+ * fehlt oder niemand angemeldet ist.
+ */
+export async function getDetektorHistory(
+  limit = 10,
+): Promise<DetektorVerlaufEintrag[]> {
+  if (!isSupabaseConfigured) return [];
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return [];
+
+  const { data, error } = await supabase
+    .from("detektor_checks")
+    .select("id, eingabe, gesamt, funde, created_at")
+    .eq("user_id", user.id)
+    .order("created_at", { ascending: false })
+    .limit(limit);
+
+  if (error) return [];
+  return (data ?? []).map((row) => ({
+    id: row.id as string,
+    eingabe: row.eingabe as string,
+    gesamt: (row.gesamt as string) ?? "",
+    funde: Array.isArray(row.funde) ? (row.funde as DetektorFund[]) : [],
+    createdAt: row.created_at as string,
+  }));
 }

@@ -5,6 +5,170 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-16 – Mitglieder-Vernetzung & Lead-Nurture (A6 / B5 / B6 / B7)
+
+**Anlass:** Aus dem Prüfbericht die „verhaltensnahen" Brüche schließen –
+Detektor & Praxis waren Sackgassen, der Begleiter kannte kein Momentum, der
+Test führte zu keiner Empfehlung, und E-Book-Leads bekamen nie wieder Post.
+
+**A6 – Detektor & Praxis sind keine Sackgassen mehr:**
+- Neue Tabelle `detektor_checks` (Migration `20260916205711`, in Produktion
+  eingespielt): Der Manipulations-Detektor speichert geprüften Text + Funde.
+  Neuer Verlauf („Zuletzt geprüft") auf `/mitglieder/detektor`; die Funde
+  fließen zusätzlich als Kontext in den Begleiter.
+  (`detektor-actions.ts`, `detektor/page.tsx`)
+- Praxis-Abschluss: neuer „Übung gemacht"-Schalter auf der Praxis-Detailseite
+  (Fortschritt in `progress`, item_type `practice` – keine neue Tabelle nötig).
+  (`PracticeCompleteToggle.tsx`, `actions.ts`, `praxis/[slug]/page.tsx`)
+
+**B6 – Begleiter kennt jetzt das Momentum:** Der System-Prompt bekommt einen
+Abschnitt „Momentum der Person" mit Rückkehr-Serie, 21-Tage-Programm-Fortschritt,
+gemachten Übungen und den im Detektor häufig erkannten Techniken – so kann er
+konkret „dranbleiben" spiegeln statt allgemein zu ermutigen.
+(`begleiter-prompt.ts` `behaviorFacts`, `begleiter/antwort/route.ts`)
+
+**B7 – Test → nächster Schritt:** Das Gedankenprofil leitet aus Schwerpunkt-Stufe
+und Programm-Fortschritt eine konkrete Empfehlung ab (niedrige Stufe/kein Start →
+21-Tage-Programm · mittendrin → fortsetzen · durch → tägliche Rückkehr · höhere
+Stufe → vertiefen) und zeigt sie oben im Profil.
+(`gedankenprofil.ts` `startEmpfehlung`, `gedankenprofil/page.tsx`)
+
+**B5 – E-Book-Lead-Nurture:** Der Impuls-Cron (`/api/impulses`) schickt dieselbe
+Impuls-Rotation jetzt auch an bestätigte E-Book-Leads (Brücke E-Book →
+Mitgliedschaft), mit eigener Serienposition und E-Book-Abmeldelink. Wer zugleich
+Mitglied ist, bekommt den Impuls nicht doppelt. Neue Spalten `impulse_index`,
+`last_impulse_at`, `nurture_opt_in` auf `ebook_leads` (Migration
+`20260916205745`, in Produktion eingespielt).
+
+**Geprüft:** `npm run build` + `npm test` (11/11) grün, ESLint ohne Befund. Alle
+neuen Tabellen/Spalten mit aktivem RLS (nur eigene Zeilen bzw. Service-Role).
+
+---
+
+## 2026-09-16 – Reproduzierbarkeit & Zahlung↔Konto (A5 / B3)
+
+**Anlass:** Aus dem Prüfbericht die Punkte A5 (fehlende Migrationen nachziehen)
+und B3 (Mitgliedschaft fest ans Konto koppeln).
+
+**A5 – fehlendes DB-Fundament ins Repo aufgenommen (war nur live vorhanden):**
+- `supabase/migrations/20260910190940_create_erstgespraech_fragebogen.sql`
+- `supabase/migrations/20260914172539_erstgespraech_cockpit.sql`
+  (enthält u.a. `admin_users` + Funktion `ist_admin()` – Basis auch für die
+  Coaching-Methoden-RLS)
+- `supabase/migrations/20260914174236_benachrichtigung_neuer_fragebogen.sql`
+  (DB-Trigger → Edge Function; das Webhook-Geheimnis ist im Repo bewusst durch
+  einen Platzhalter ersetzt – der echte Wert bleibt im Vault der Produktion)
+- `supabase/functions/neuer-fragebogen/index.ts` + `supabase/functions/README.md`
+  (Edge-Function-Quelle, nutzt nur Env-Secrets)
+- Dateien = exakter Produktionsstand (Versionen stimmen mit
+  `supabase_migrations.schema_migrations` überein), idempotent. Nicht erneut
+  eingespielt (existieren bereits). Eine frische Umgebung ist damit
+  reproduzierbar.
+
+**B3 – Zahlung fest ans Login-Konto gekoppelt:**
+- Neue Spalte `memberships.user_id` (FK auf auth.users, nullable) +
+  Index. Migration `supabase/migrations/20260916193035_membership_user_id.sql`
+  – **in Produktion eingespielt** (Tabelle hatte 0 Zeilen, kein Backfill nötig).
+- Stripe-Webhook koppelt die Mitgliedschaft beim Bereitstellen des Kontos an die
+  `user_id` (`provisionAccess` gibt jetzt die User-ID zurück).
+  (`src/app/api/stripe/webhook/route.ts`)
+- Bezahlschranke prüft jetzt kontostabil über `user_id` mit Fallback auf die
+  E-Mail: neue `getMembershipForUser` / `isActiveMemberForUser`
+  (`src/lib/membership.ts`), genutzt in `mitglieder/layout.tsx` und
+  `lib/members/download-guard.ts`. So bleibt der Zugang erhalten, wenn ein Kunde
+  später eine andere/geänderte E-Mail nutzt.
+
+**Sonstiges:** `supabase/functions/**` aus dem Next-Typecheck/ESLint ausgenommen
+(Deno-Runtime). Geprüft: `npm run build` + `npm test` (11/11) grün, ESLint ohne
+Befund.
+
+---
+
+## 2026-09-16 – Zentrale Admin-Übersicht + Admin-Navigation (A1 / A2 / B1)
+
+**Anlass:** Aus dem Prüfbericht
+`docs/audit/system-faehigkeiten-und-verknuepfungen-2026-09-16.md` die Punkte
+A1 (zentrale Lead-/Kunden-Übersicht), A2 (echte Abo-/Umsatzzahlen im Cockpit)
+und B1 (gemeinsame Admin-Navigation) umgesetzt.
+
+**Neu – gemeinsame Admin-Navigation (B1):**
+- `src/app/admin/layout.tsx` + `src/app/admin/AdminNav.tsx`: sticky Tab-Leiste
+  über allen /admin-Seiten mit Aktiv-Markierung – direkter Sprung zwischen
+  Sektionen ohne Umweg übers Cockpit.
+
+**Neu – Übersichtsseiten (A1), je mit CSV-Export:**
+- `/admin/mitglieder` – zahlende Stripe-Abos aus `memberships` mit Status
+  (aktiv/fällig/gekündigt) und Laufzeit.
+- `/admin/leads` – E-Book-Leads aus `ebook_leads` (Double-Opt-in-Status, Quelle).
+- `/admin/kontakt` – gespeicherte Kontaktanfragen (siehe Persistenz unten).
+- `/admin/bestellungen` – Buch-Käufe mit Umsatz und Print-Versandstatus.
+- Gemeinsame UI-Bausteine: `src/app/admin/_ui.tsx`; Datenzugriff:
+  `src/lib/admin-data.ts`; Route-Guard: `src/lib/admin-guard.ts`.
+- Export-Routen: `/admin/<bereich>/export` (admin-geschützt, CSV mit UTF-8-BOM
+  für Excel).
+
+**Neu – Persistenz eingehender Daten (A1):**
+- Kontaktformular schreibt zusätzlich in neue Tabelle `kontakt_anfragen`
+  (`supabase/migrations/0015_kontakt_anfragen.sql`). Mailversand unverändert;
+  Speichern ist best-effort und blockiert den Versand nicht.
+  (`src/app/api/kontakt/route.ts`)
+- Stripe-Webhook protokolliert jeden bezahlten Buch-Kauf in neue Tabelle
+  `book_orders` (`supabase/migrations/0016_book_orders.sql`), idempotent über die
+  Stripe-Session-ID, best-effort (blockiert die Auslieferung nie).
+  (`src/app/api/stripe/webhook/route.ts`)
+
+**Geändert – Cockpit (A2):**
+- `src/lib/admin-stats.ts` liest jetzt `memberships` (Status-Breakdown) und
+  `book_orders` (Anzahl, Print-offen, Umsatz).
+- `src/app/admin/page.tsx`: Kennzahl „Mitglieder" (= alle Konten) ersetzt durch
+  „Aktive Abos" + „Konten"; neue Sektion „Umsatz & Kundschaft"; Schnell-Links zu
+  den neuen Übersichten.
+- `src/app/admin/seiten/page.tsx`: neue Seiten in die Sitemap aufgenommen.
+
+**Migrationen eingespielt:** Die Tabellen `kontakt_anfragen` (0015) und
+`book_orders` (0016) wurden am 2026-09-16 in die Produktions-Supabase
+(Projekt `werde-meister-deiner-gedanken`) eingespielt – RLS aktiv, keine
+Policies (nur Service-Role, wie ebook_leads/memberships). Alle vier
+Übersichten sind damit voll funktionsfähig.
+
+**Geprüft:** `npm run build` erfolgreich, ESLint der geänderten Dateien ohne
+Befund. Alle neuen Routen als dynamische Server-Routen registriert; Zugriff
+doppelt geschützt (Middleware `src/proxy.ts` + seiten-/routeneigener
+Admin-Check).
+
+---
+
+## 2026-09-16 – Schnelle Gewinne aus der Systemprüfung: Anker-Fix & Verlinkungen
+
+**Anlass:** Aus dem Prüfbericht
+`docs/audit/system-faehigkeiten-und-verknuepfungen-2026-09-16.md` die schnell
+umsetzbaren Verlinkungs-Verbesserungen und ein Anker-Bug behoben, damit die
+Funnels schlüssiger führen.
+
+**Behoben / ergänzt:**
+- **Anker-Bug (A3):** Button „E-Book sichern" im Bewusstseinstest-Ergebnis zeigte
+  auf `/#angebot` (7-Stufen-Karten) statt aufs E-Book. Jetzt `/gratis-ebook`.
+  (`src/components/sections/ConsciousnessTest.tsx`)
+- **Testergebnis → Mitgliedschaft (H5):** Im ausgeloggten Zweig zusätzlicher CTA
+  „Mitglied werden" → `/mitgliedschaft`.
+  (`src/components/sections/ConsciousnessTest.tsx`)
+- **7-Stufen → Mitgliedschaft (H4):** Abschluss-CTA „Den ganzen Weg begleitet
+  gehen" → `/mitgliedschaft` ergänzt. (`src/app/die-7-stufen/page.tsx`)
+- **Mitgliedschaft → Buch (B9):** Rückverlinkung „das Buch" → `/buch` im
+  Zugangs-Abschnitt ergänzt (bisher nur einseitig).
+  (`src/app/mitgliedschaft/page.tsx`)
+- **Blog-E-Book-CTA (B4):** Artikel-CTA „E-Book gratis sichern" führt jetzt auf
+  die dedizierte Landingpage `/gratis-ebook` statt auf den Homepage-Anker
+  `/#ebook`. (`src/app/blog/[slug]/page.tsx`)
+- **Admin-Sitemap (B2):** Fehlende Einträge `Erstgespräche` und `Methoden` in der
+  Seitenübersicht (Gruppe „Administration") ergänzt.
+  (`src/app/admin/seiten/page.tsx`)
+
+**Geprüft:** `npm run build` erfolgreich, ESLint der geänderten Dateien ohne
+Befund. Keine Datenbank-/API-Änderungen.
+
+---
+
 ## 2026-09-16 – Coaching-Methoden: Sprechtexte für Trance & Hypnose (v1.5)
 
 **Anlass:** In `/admin/methoden` fehlten die wortwörtlichen **Sprechtexte zum

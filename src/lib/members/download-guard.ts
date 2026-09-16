@@ -5,7 +5,7 @@ import {
   REQUIRE_ACTIVE_MEMBERSHIP,
 } from "@/lib/supabase/config";
 import { isAdminEmail } from "@/lib/admin";
-import { isActiveMember } from "@/lib/membership";
+import { isActiveMemberForUser } from "@/lib/membership";
 
 /**
  * Zugriffsschutz für Datei-Downloads (route.ts) im Mitgliederbereich.
@@ -46,7 +46,7 @@ export async function guardMemberDownload(
 
   // Optionale Bezahlschranke: aktive Mitgliedschaft oder Admin.
   if (REQUIRE_ACTIVE_MEMBERSHIP && !isAdminEmail(user.email)) {
-    const active = await isActiveMember(user.email);
+    const active = await isActiveMemberForUser(user);
     if (!active) {
       return Response.redirect(
         new URL("/mitgliedschaft?zugang=abo", request.url),

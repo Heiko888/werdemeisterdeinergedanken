@@ -438,7 +438,11 @@ export default async function MitgliedschaftPage({
               <Link href="/bewusstseinstest" className="text-gradient-leaf font-medium">
                 Bewusstseinstest
               </Link>{" "}
-              und finde deinen Startpunkt.
+              und finde deinen Startpunkt – oder lies erst in Ruhe{" "}
+              <Link href="/buch" className="text-gradient-leaf font-medium">
+                das Buch
+              </Link>
+              .
             </p>
           </div>
         </div>
