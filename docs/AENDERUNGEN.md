@@ -5,6 +5,46 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-16 – Admin: Coaching-Methoden-Bibliothek (Nachschlagewerk)
+
+**Anlass:** Ein durchsuchbares, nach Kategorien filterbares Nachschlagewerk aller
+Coaching-Methoden mit Ablauf, Beispielfragen, Dauer, Setting und Grenzen – nur für
+Admins, gleiche Absicherung wie die Erstgespräche (`public.ist_admin()`).
+
+**Neu (Website / Repo):**
+- `src/lib/coaching-methoden.ts` – Row-Typen, Kategorie-Reihenfolge, Sortier- und
+  Slug-Helfer (Umlaute → ae/oe/ue, ß → ss). Tests in
+  `src/lib/coaching-methoden.test.ts`.
+- `src/app/admin/methoden/page.tsx` – Listenansicht (Kategorie-Rail, Volltextsuche,
+  aufklappbare Karten mit Ablauf, Zitat-Fragen und Warnbox für Grenzen). *(noindex)*
+- `src/app/admin/methoden/MethodenBrowser.tsx` – clientseitige Suche/Filter,
+  „Alle öffnen/schließen“, „Filter zurücksetzen“, „Inaktive anzeigen“,
+  Tags-anklickbar → Suche, Schnell-Umschalter aktiv/inaktiv.
+- `src/app/admin/methoden/[slug]/page.tsx` + `MethodeEditor.tsx` – Detail/Bearbeiten
+  aller Felder; `ablauf`, `beispielfragen`, `tags` als editierbare Listen
+  (hinzufügen/entfernen/sortieren); `eigene_notizen` prominent. Route `…/neu` legt
+  eine neue Methode an (Slug automatisch aus dem Namen). „Deaktivieren“ statt Löschen.
+- `src/app/admin/methoden/actions.ts` – Server-Actions (RLS-gebundener Client +
+  `isAdminEmail`-Gate), Validierung, `revalidatePath`.
+- Link „Coaching-Methoden“ im Marketing-Cockpit (`src/app/admin/page.tsx`).
+
+**Datenbank:** bereits am 2026-09-16 eingespielt (Supabase `csnyohpbyhwiattnkzuz`),
+Migration `coaching_methoden_schema`. **Nicht** erneut ausgeführt – nur ins Repo
+nachgezogen:
+- `supabase/migrations/20260916084531_coaching_methoden_schema.sql` (Server-Zeitstempel)
+- `supabase/seed/coaching_methoden.sql` + `.json` (Referenz, wird nicht automatisch
+  ausgeführt; idempotent, überschreibt `eigene_notizen`/`aktiv` nicht) + `README.md`
+
+**Inhalt:** Version **1.4** – 13 Kategorien, 141 Methoden. Quelle:
+`coaching-methoden-export` (JSON-Prüfsumme `370c560d600bf2b5f36b79adc34f104d`).
+Tabellen `coaching_kategorien`, `coaching_methoden`; RLS aktiv (nur `ist_admin()`),
+Volltextsuche (`suchtext`, deutsch) per Trigger gepflegt.
+
+> Jede spätere inhaltliche Änderung erhöht die Version (1.5, 1.6 …) und wird hier
+> vermerkt, damit der Serverstand jederzeit nachvollziehbar bleibt.
+
+---
+
 ## 2026-09-15 – Die 7 Stufen: Hero auf Mobile als Banner (Text nicht mehr über Gesicht)
 
 **Problem:** Auf Mobile lag die zentrierte Überschrift über dem Gesicht der

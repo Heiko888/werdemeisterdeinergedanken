@@ -163,6 +163,13 @@ export default async function AdminPage() {
               <ArrowRight />
             </Link>
             <Link
+              href="/admin/methoden"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
+            >
+              Coaching-Methoden
+              <ArrowRight />
+            </Link>
+            <Link
               href="/admin/redaktionsplan"
               className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-ink/30"
             >
