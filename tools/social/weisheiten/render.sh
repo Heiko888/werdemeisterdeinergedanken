@@ -10,7 +10,9 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 CHROME="${CHROME:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}"
-OUT="../../../public/social/weisheiten"
+# Ausgabe unter tools/.../output – bewusst NICHT unter public/, damit die großen
+# Bilder nicht Teil des Vercel-Deployments werden (Deploy-Größenlimit).
+OUT="output"
 BUILD="build"
 W=1080; H=1350; WIN_H=1470   # WIN_H = H + Überscan gegen Headless-Versatz
 

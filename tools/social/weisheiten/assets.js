@@ -21,12 +21,13 @@ module.exports = {
   berge: dataUri(path.join(pub, "hero-bg-berge.webp"), "image/webp"),
   logo: dataUri(path.join(pub, "logo-brain-gold-freigestellt.png"), "image/png"),
   portrait: dataUri(path.join(pub, "heiko-hero.webp"), "image/webp"),
-  // Freigestellte Ganzkörper-Posen (transparent)
+  // Freigestellte Ganzkörper-Posen (transparent). Liegen als Build-Inputs unter
+  // tools/.../quellen – NICHT unter public/, damit sie nicht mitdeployt werden.
   posen: {
-    stehend: dataUri(path.join(pub, "social/weisheiten/quellen/heiko-pose-stehend.png"), "image/png"),
-    portrait34: dataUri(path.join(pub, "social/weisheiten/quellen/heiko-pose-portrait34.png"), "image/png"),
-    faust: dataUri(path.join(pub, "social/weisheiten/quellen/heiko-pose-faust.png"), "image/png"),
-    nachdenken: dataUri(path.join(pub, "social/weisheiten/quellen/heiko-pose-nachdenken.png"), "image/png"),
-    taschen: dataUri(path.join(pub, "social/weisheiten/quellen/heiko-pose-taschen.png"), "image/png"),
+    stehend: dataUri(path.join(__dirname, "quellen/heiko-pose-stehend.png"), "image/png"),
+    portrait34: dataUri(path.join(__dirname, "quellen/heiko-pose-portrait34.png"), "image/png"),
+    faust: dataUri(path.join(__dirname, "quellen/heiko-pose-faust.png"), "image/png"),
+    nachdenken: dataUri(path.join(__dirname, "quellen/heiko-pose-nachdenken.png"), "image/png"),
+    taschen: dataUri(path.join(__dirname, "quellen/heiko-pose-taschen.png"), "image/png"),
   },
 };
