@@ -8,6 +8,7 @@ import { practices, getPractice, practiceReflection } from "@/lib/practices";
 import { stages } from "@/lib/content";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { JournalReflection } from "@/components/members/JournalReflection";
+import { PracticeCompleteToggle } from "@/components/members/PracticeCompleteToggle";
 import { LessonHero } from "@/components/members/LessonHero";
 import { site } from "@/lib/site";
 
@@ -154,6 +155,20 @@ export default async function PracticePage({
               </p>
             </div>
           )}
+
+          {/* Abschluss – „Übung gemacht" (fließt in Fortschritt & Momentum) */}
+          <div className="flex flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-6 shadow-card">
+            <span className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent">
+              Geschafft?
+            </span>
+            <p className="text-[0.98rem] leading-relaxed text-ink-mid">
+              Markier die Übung als gemacht – so siehst du im Verlauf, was du schon
+              geübt hast, und dein Begleiter kann daran anknüpfen.
+            </p>
+            <div className="mt-1">
+              <PracticeCompleteToggle slug={practice.slug} />
+            </div>
+          </div>
 
           {/* Nachklang – Reflexion nach der Übung (fließt ins Journal) */}
           <JournalReflection

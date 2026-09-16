@@ -141,6 +141,70 @@ export function journalFacts(entries: JournalEntry[]): string {
 }
 
 /**
+ * „Dranbleiben"-Fakten: was die Person tatsächlich tut (Rückkehr-Serie,
+ * 21-Tage-Programm, gemachte Übungen, Detektor-Nutzung). Damit kann der
+ * Begleiter konkret spiegeln – „du bist seit acht Tagen dran" – statt nur
+ * allgemein zu ermutigen. (B6)
+ */
+export function behaviorFacts(input: {
+  rueckkehrStreak: number;
+  rueckkehrTotal: number;
+  programmDone: number;
+  programmTotal: number;
+  practicesDone: number;
+  detektorTop: string[];
+}): string {
+  const {
+    rueckkehrStreak,
+    rueckkehrTotal,
+    programmDone,
+    programmTotal,
+    practicesDone,
+    detektorTop,
+  } = input;
+
+  const lines: string[] = [];
+
+  if (rueckkehrStreak > 0) {
+    lines.push(
+      `- Tägliche Rückkehr: aktuelle Serie ${rueckkehrStreak} Tag(e), insgesamt ${rueckkehrTotal} Tage markiert.`,
+    );
+  } else if (rueckkehrTotal > 0) {
+    lines.push(
+      `- Tägliche Rückkehr: insgesamt ${rueckkehrTotal} Tage, aber die Serie ist gerade unterbrochen.`,
+    );
+  }
+
+  if (programmDone > 0) {
+    lines.push(
+      `- Programm „21 Tage Autopilot-Ausstieg": ${programmDone} von ${programmTotal} Tagen abgeschlossen${
+        programmDone >= programmTotal ? " (durch!)" : ""
+      }.`,
+    );
+  }
+
+  if (practicesDone > 0) {
+    lines.push(`- Als gemacht markierte Praxis-Übungen: ${practicesDone}.`);
+  }
+
+  if (detektorTop.length > 0) {
+    lines.push(
+      `- Im Manipulations-Detektor zuletzt häufig erkannt: ${detektorTop.join(", ")}.`,
+    );
+  }
+
+  if (lines.length === 0) {
+    return "Zur konkreten Aktivität (Rückkehr, Programm, Übungen) liegt noch nichts vor – setz also keinen Rhythmus voraus, lade eher behutsam zum ersten Schritt ein.";
+  }
+
+  return [
+    "Woran die Person gerade dranbleibt (nur als Kontext – erkenne es ehrlich",
+    "an, aber mach keinen Druck und keine Zahlen zum Selbstzweck):",
+    ...lines,
+  ].join("\n");
+}
+
+/**
  * Der System-Prompt des Begleiters.
  *
  * Enthält bewusst harte Grenzen: keine Therapie, keine Diagnosen, keine
@@ -151,11 +215,13 @@ export function buildSystemPrompt({
   name,
   profile,
   journal,
+  behavior,
   catalogue,
 }: {
   name: string;
   profile: string;
   journal: string;
+  behavior: string;
   catalogue: string;
 }): string {
   const anrede = name
@@ -208,6 +274,9 @@ ${profile}
 
 AUS DEM JOURNAL DER PERSON
 ${journal}
+
+MOMENTUM DER PERSON
+${behavior}
 
 VERZEICHNIS DER VERFÜGBAREN INHALTE
 ${catalogue}`;

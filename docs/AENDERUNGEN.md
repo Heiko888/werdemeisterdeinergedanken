@@ -5,6 +5,46 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-16 – Mitglieder-Vernetzung & Lead-Nurture (A6 / B5 / B6 / B7)
+
+**Anlass:** Aus dem Prüfbericht die „verhaltensnahen" Brüche schließen –
+Detektor & Praxis waren Sackgassen, der Begleiter kannte kein Momentum, der
+Test führte zu keiner Empfehlung, und E-Book-Leads bekamen nie wieder Post.
+
+**A6 – Detektor & Praxis sind keine Sackgassen mehr:**
+- Neue Tabelle `detektor_checks` (Migration `20260916205711`, in Produktion
+  eingespielt): Der Manipulations-Detektor speichert geprüften Text + Funde.
+  Neuer Verlauf („Zuletzt geprüft") auf `/mitglieder/detektor`; die Funde
+  fließen zusätzlich als Kontext in den Begleiter.
+  (`detektor-actions.ts`, `detektor/page.tsx`)
+- Praxis-Abschluss: neuer „Übung gemacht"-Schalter auf der Praxis-Detailseite
+  (Fortschritt in `progress`, item_type `practice` – keine neue Tabelle nötig).
+  (`PracticeCompleteToggle.tsx`, `actions.ts`, `praxis/[slug]/page.tsx`)
+
+**B6 – Begleiter kennt jetzt das Momentum:** Der System-Prompt bekommt einen
+Abschnitt „Momentum der Person" mit Rückkehr-Serie, 21-Tage-Programm-Fortschritt,
+gemachten Übungen und den im Detektor häufig erkannten Techniken – so kann er
+konkret „dranbleiben" spiegeln statt allgemein zu ermutigen.
+(`begleiter-prompt.ts` `behaviorFacts`, `begleiter/antwort/route.ts`)
+
+**B7 – Test → nächster Schritt:** Das Gedankenprofil leitet aus Schwerpunkt-Stufe
+und Programm-Fortschritt eine konkrete Empfehlung ab (niedrige Stufe/kein Start →
+21-Tage-Programm · mittendrin → fortsetzen · durch → tägliche Rückkehr · höhere
+Stufe → vertiefen) und zeigt sie oben im Profil.
+(`gedankenprofil.ts` `startEmpfehlung`, `gedankenprofil/page.tsx`)
+
+**B5 – E-Book-Lead-Nurture:** Der Impuls-Cron (`/api/impulses`) schickt dieselbe
+Impuls-Rotation jetzt auch an bestätigte E-Book-Leads (Brücke E-Book →
+Mitgliedschaft), mit eigener Serienposition und E-Book-Abmeldelink. Wer zugleich
+Mitglied ist, bekommt den Impuls nicht doppelt. Neue Spalten `impulse_index`,
+`last_impulse_at`, `nurture_opt_in` auf `ebook_leads` (Migration
+`20260916205745`, in Produktion eingespielt).
+
+**Geprüft:** `npm run build` + `npm test` (11/11) grün, ESLint ohne Befund. Alle
+neuen Tabellen/Spalten mit aktivem RLS (nur eigene Zeilen bzw. Service-Role).
+
+---
+
 ## 2026-09-16 – Reproduzierbarkeit & Zahlung↔Konto (A5 / B3)
 
 **Anlass:** Aus dem Prüfbericht die Punkte A5 (fehlende Migrationen nachziehen)

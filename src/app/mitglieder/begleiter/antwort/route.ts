@@ -5,14 +5,20 @@ import { isAdminEmail } from "@/lib/admin";
 import {
   getTestProfile,
   getCompletedStages,
+  getCompletedPractices,
   getJournalEntries,
 } from "@/app/mitglieder/actions";
+import { getProgrammFortschritt } from "@/app/mitglieder/programm-actions";
+import { getRueckkehrDaten } from "@/app/mitglieder/rueckkehr-actions";
+import { getDetektorHistory } from "@/app/mitglieder/detektor-actions";
+import { PROGRAMM_TAGE_GESAMT } from "@/lib/programm";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
 import {
   buildSystemPrompt,
   contentCatalogue,
   profileFacts,
   journalFacts,
+  behaviorFacts,
 } from "@/lib/begleiter-prompt";
 import {
   BEGLEITER_MODEL,
@@ -46,6 +52,34 @@ export const maxDuration = 60;
 /** Fehler als JSON – die Oberfläche macht daraus einen verständlichen Satz. */
 function fail(error: BegleiterError, status: number): Response {
   return Response.json({ error }, { status });
+}
+
+/** UTC-Datum als YYYY-MM-DD, verschoben um `offset` Tage. */
+function utcTag(offset: number): string {
+  const d = new Date();
+  d.setUTCDate(d.getUTCDate() + offset);
+  return d.toISOString().slice(0, 10);
+}
+
+/**
+ * Aktuelle Rückkehr-Serie: aufeinanderfolgende Tage, die bis heute (oder
+ * gestern, falls heute noch offen) zurückreichen. `tage` sind YYYY-MM-DD.
+ */
+function rueckkehrStreak(tage: string[]): number {
+  const set = new Set(tage);
+  const heute = utcTag(0);
+  const gestern = utcTag(-1);
+  if (!set.has(heute) && !set.has(gestern)) return 0;
+
+  const cursor = new Date();
+  if (!set.has(heute)) cursor.setUTCDate(cursor.getUTCDate() - 1);
+
+  let streak = 0;
+  while (set.has(cursor.toISOString().slice(0, 10))) {
+    streak++;
+    cursor.setUTCDate(cursor.getUTCDate() - 1);
+  }
+  return streak;
 }
 
 export async function POST(request: Request): Promise<Response> {
@@ -123,10 +157,38 @@ export async function POST(request: Request): Promise<Response> {
     .filter((n) => Number.isInteger(n) && n >= 1 && n <= 7);
   const profil = buildGedankenprofil({ startStage, scores, completedNumbers });
 
+  // Verhaltens-/Momentum-Kontext (B6): woran die Person tatsächlich dranbleibt.
+  const [programmTage, rueckkehr, practices, detektorHist] = await Promise.all([
+    getProgrammFortschritt(),
+    getRueckkehrDaten(),
+    getCompletedPractices(),
+    getDetektorHistory(20),
+  ]);
+  const detektorZaehler = new Map<string, number>();
+  for (const eintrag of detektorHist) {
+    for (const f of eintrag.funde) {
+      detektorZaehler.set(f.title, (detektorZaehler.get(f.title) ?? 0) + 1);
+    }
+  }
+  const detektorTop = [...detektorZaehler.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([title]) => title);
+
+  const behavior = behaviorFacts({
+    rueckkehrStreak: rueckkehrStreak(rueckkehr.tage),
+    rueckkehrTotal: rueckkehr.tage.length,
+    programmDone: programmTage.length,
+    programmTotal: PROGRAMM_TAGE_GESAMT,
+    practicesDone: practices.length,
+    detektorTop,
+  });
+
   const system = buildSystemPrompt({
     name,
     profile: profileFacts(profil),
     journal: journalFacts(journalEntries),
+    behavior,
     catalogue: contentCatalogue(),
   });
 

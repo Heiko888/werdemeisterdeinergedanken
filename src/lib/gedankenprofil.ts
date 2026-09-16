@@ -53,6 +53,19 @@ export type BedarfItem = {
   deepDive?: { title: string; slug: string };
 };
 
+/**
+ * Ein testabhängiger nächster-Schritt-Vorschlag (B7): je nach Schwerpunkt-Stufe
+ * und Programm-Fortschritt entweder ins 21-Tage-Programm, in die tägliche
+ * Rückkehr oder in die Vertiefungen.
+ */
+export type StartEmpfehlung = {
+  kind: "programm" | "rueckkehr" | "vertiefen";
+  title: string;
+  text: string;
+  href: string;
+  cta: string;
+};
+
 export type Gedankenprofil = {
   /** Liegen verwertbare Testdaten vor? */
   hasTest: boolean;
@@ -68,6 +81,8 @@ export type Gedankenprofil = {
   strengths: number[];
   /** Ein zusammenfassender Absatz. */
   summary: string;
+  /** Testabhängige Empfehlung für den nächsten Schritt (oder null). */
+  empfehlung: StartEmpfehlung | null;
 };
 
 export type GedankenprofilInput = {
@@ -77,7 +92,57 @@ export type GedankenprofilInput = {
   scores: number[] | null;
   /** Als abgeschlossen markierte Stufen-Nummern (1–7). */
   completedNumbers: number[];
+  /** Abgeschlossene Tage im 21-Tage-Programm (0–21). Für die Empfehlung. */
+  programmDone?: number;
 };
+
+/**
+ * Leitet den konkretesten nächsten Schritt aus Schwerpunkt-Stufe und
+ * Programm-Fortschritt ab. Deterministisch, ohne Datenbankzugriff.
+ */
+function startEmpfehlung(
+  focusStage: number | null,
+  programmDone: number,
+): StartEmpfehlung {
+  if (programmDone >= 21) {
+    return {
+      kind: "rueckkehr",
+      title: "Vom Programm in den Alltag",
+      text: "Du hast die 21 Tage durch – jetzt hält die tägliche Rückkehr das, was du aufgebaut hast, lebendig. Ein bewusster Moment pro Tag genügt.",
+      href: "/mitglieder/rueckkehr",
+      cta: "Zur täglichen Rückkehr",
+    };
+  }
+
+  if (programmDone > 0) {
+    return {
+      kind: "programm",
+      title: "Bleib am Programm dran",
+      text: `Du bist bei Tag ${programmDone} von 21 im „Autopilot-Ausstieg". Der nächste kleine Schritt wartet schon.`,
+      href: "/mitglieder/programm",
+      cta: "Programm fortsetzen",
+    };
+  }
+
+  // Noch nicht gestartet: niedriger Schwerpunkt → Programm, höherer → vertiefen.
+  if (focusStage == null || focusStage <= 3) {
+    return {
+      kind: "programm",
+      title: "Dein konkretester Startpunkt",
+      text: "Für deinen Schwerpunkt ist der geführte Bogen „21 Tage Autopilot-Ausstieg“ der klarste nächste Schritt – ein kleiner Impuls und eine 2–5-Minuten-Übung pro Tag.",
+      href: "/mitglieder/programm",
+      cta: "Programm starten",
+    };
+  }
+
+  return {
+    kind: "vertiefen",
+    title: "Vertiefen, wo du schon stehst",
+    text: "Dein Schwerpunkt liegt weiter oben – statt bei null anzufangen, vertief die Stufen gezielt mit den passenden Vertiefungen und der Wissensdatenbank.",
+    href: "/mitglieder/wissen",
+    cta: "Zu den Vertiefungen",
+  };
+}
 
 function levelOf(pct: number): StageLevel {
   if (pct >= ANCHORED_MIN) return "verankert";
@@ -189,7 +254,7 @@ function reasonFor(
 export function buildGedankenprofil(
   input: GedankenprofilInput,
 ): Gedankenprofil {
-  const { startStage, scores, completedNumbers } = input;
+  const { startStage, scores, completedNumbers, programmDone = 0 } = input;
 
   const completed = new Set(completedNumbers);
   const hasTest =
@@ -206,6 +271,7 @@ export function buildGedankenprofil(
       bedarf: [],
       strengths: [],
       summary: "",
+      empfehlung: null,
     };
   }
 
@@ -285,5 +351,6 @@ export function buildGedankenprofil(
     bedarf,
     strengths,
     summary: summaryParts.join(" "),
+    empfehlung: startEmpfehlung(focusStage, programmDone),
   };
 }

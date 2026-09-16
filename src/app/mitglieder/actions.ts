@@ -134,6 +134,88 @@ export async function setStageCompleted(
 }
 
 // ------------------------------------------------------------
+// Praxis-Abschluss (A6): „Übung gemacht" analog zum Stufen-Abschluss.
+// Nutzt die bestehende progress-Tabelle (item_type = 'practice').
+// ------------------------------------------------------------
+
+/** Slugs aller als gemacht markierten Übungen der Person. */
+export async function getCompletedPractices(): Promise<string[]> {
+  if (!isSupabaseConfigured) return [];
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return [];
+
+  const { data } = await supabase
+    .from("progress")
+    .select("item_key")
+    .eq("user_id", user.id)
+    .eq("item_type", "practice")
+    .eq("status", "completed");
+
+  return (data ?? []).map((row) => row.item_key as string);
+}
+
+/** Ist eine einzelne Übung als gemacht markiert? */
+export async function isPracticeCompleted(slug: string): Promise<boolean> {
+  if (!isSupabaseConfigured) return false;
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return false;
+
+  const { data } = await supabase
+    .from("progress")
+    .select("item_key")
+    .eq("user_id", user.id)
+    .eq("item_type", "practice")
+    .eq("item_key", slug)
+    .eq("status", "completed")
+    .maybeSingle();
+
+  return Boolean(data);
+}
+
+/** Eine Übung als gemacht markieren bzw. die Markierung entfernen. */
+export async function setPracticeCompleted(
+  slug: string,
+  completed: boolean,
+): Promise<{ completed: boolean }> {
+  if (!isSupabaseConfigured) return { completed: false };
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { completed: false };
+
+  if (completed) {
+    await supabase.from("progress").upsert(
+      {
+        user_id: user.id,
+        item_type: "practice",
+        item_key: slug,
+        status: "completed",
+        completed_at: new Date().toISOString(),
+      },
+      { onConflict: "user_id,item_type,item_key" },
+    );
+  } else {
+    await supabase
+      .from("progress")
+      .delete()
+      .eq("user_id", user.id)
+      .eq("item_type", "practice")
+      .eq("item_key", slug);
+  }
+
+  revalidatePath("/mitglieder");
+  revalidatePath(`/mitglieder/praxis/${slug}`);
+  return { completed };
+}
+
+// ------------------------------------------------------------
 // Journal / Notizen zu Reflexionsfragen
 // ------------------------------------------------------------
 

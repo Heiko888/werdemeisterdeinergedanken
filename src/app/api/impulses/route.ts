@@ -58,6 +58,7 @@ function renderHtml(
   impulse: (typeof impulses)[number],
   ctaUrl: string,
   unsubUrl: string,
+  aboGrund: string,
 ): string {
   const paragraphs = impulse.body
     .map(
@@ -83,11 +84,26 @@ function renderHtml(
     </p>
     <hr style="border:none;border-top:1px solid #e6e9ef;margin:2rem 0 1rem">
     <p style="font-size:12px;line-height:1.5;color:#9aa4b5;margin:0">
-      Du erhältst diese Impulse, weil du sie in deinem Bereich abonniert hast.
+      ${escapeHtml(aboGrund)}
       <a href="${unsubUrl}" style="color:#9aa4b5">Jederzeit abmelden</a>.
     </p>
   </div>`;
 }
+
+/** Textfassung der Impuls-Mail (Plain-Text-Alternative). */
+function renderText(
+  impulse: (typeof impulses)[number],
+  ctaUrl: string,
+  unsubUrl: string,
+  aboGrund: string,
+): string {
+  return `${impulse.heading}\n\n${impulse.body.join("\n\n")}\n\n${impulse.ctaLabel}: ${ctaUrl}\n\n—\n${aboGrund}\nAbmelden: ${unsubUrl}`;
+}
+
+const ABO_GRUND_MITGLIED =
+  "Du erhältst diese Impulse, weil du sie in deinem Bereich abonniert hast.";
+const ABO_GRUND_LEAD =
+  "Du erhältst diese Impulse, weil du das kostenlose E-Book angefordert hast.";
 
 async function handle(request: Request) {
   if (!authorized(request)) {
@@ -128,12 +144,17 @@ async function handle(request: Request) {
   let failed = 0;
   let skipped = 0;
 
+  // E-Mails der Mitglieder merken – damit ein E-Book-Lead, der zugleich Mitglied
+  // ist, den Impuls nicht doppelt bekommt.
+  const memberEmails = new Set<string>();
+
   for (const r of recipients ?? []) {
     const email = r.email as string | null;
     if (!email) {
       skipped += 1;
       continue;
     }
+    memberEmails.add(email.toLowerCase());
     const idx = ((r.impulse_index as number) ?? 0) % impulses.length;
     const impulse = impulses[idx];
     const ctaUrl = `${site.url}${impulse.ctaPath}`;
@@ -144,8 +165,8 @@ async function handle(request: Request) {
         from: FROM,
         to: email,
         subject: impulse.subject,
-        text: `${impulse.heading}\n\n${impulse.body.join("\n\n")}\n\n${impulse.ctaLabel}: ${ctaUrl}\n\n—\nDu erhältst diese Impulse, weil du sie in deinem Bereich abonniert hast.\nAbmelden: ${unsubUrl}`,
-        html: renderHtml(impulse, ctaUrl, unsubUrl),
+        text: renderText(impulse, ctaUrl, unsubUrl, ABO_GRUND_MITGLIED),
+        html: renderHtml(impulse, ctaUrl, unsubUrl, ABO_GRUND_MITGLIED),
       });
       if (sendErr) throw sendErr;
 
@@ -160,12 +181,60 @@ async function handle(request: Request) {
     }
   }
 
+  // ---- E-Book-Lead-Nurture (B5) ----
+  // Dieselbe Impuls-Rotation an bestätigte E-Book-Leads, die noch keine
+  // Mitglieder sind. So bekommt der große Funnel (E-Book → Mitgliedschaft) eine
+  // automatische Brücke. Fehlt die Nurture-Spalte (Migration nicht eingespielt),
+  // wird der Block einfach übersprungen.
+  let leadsSent = 0;
+  let leadsFailed = 0;
+
+  const { data: leads } = await admin
+    .from("ebook_leads")
+    .select("id, email, impulse_index, unsubscribe_token, nurture_opt_in")
+    .eq("status", "confirmed")
+    .eq("nurture_opt_in", true);
+
+  for (const lead of leads ?? []) {
+    const email = lead.email as string | null;
+    if (!email || memberEmails.has(email.toLowerCase())) {
+      skipped += 1;
+      continue;
+    }
+    const idx = ((lead.impulse_index as number) ?? 0) % impulses.length;
+    const impulse = impulses[idx];
+    const ctaUrl = `${site.url}${impulse.ctaPath}`;
+    const unsubUrl = `${site.url}/api/ebook/unsubscribe?token=${lead.unsubscribe_token}`;
+
+    try {
+      const { error: sendErr } = await resend.emails.send({
+        from: FROM,
+        to: email,
+        subject: impulse.subject,
+        text: renderText(impulse, ctaUrl, unsubUrl, ABO_GRUND_LEAD),
+        html: renderHtml(impulse, ctaUrl, unsubUrl, ABO_GRUND_LEAD),
+      });
+      if (sendErr) throw sendErr;
+
+      await admin
+        .from("ebook_leads")
+        .update({ impulse_index: idx + 1, last_impulse_at: new Date().toISOString() })
+        .eq("id", lead.id);
+      leadsSent += 1;
+    } catch (err) {
+      console.error("Impuls-Versand (Lead) fehlgeschlagen für", lead.id, err);
+      leadsFailed += 1;
+    }
+  }
+
   return NextResponse.json({
     ok: true,
-    total: (recipients ?? []).length,
+    total: (recipients ?? []).length + (leads ?? []).length,
     sent,
     failed,
     skipped,
+    leadsSent,
+    leadsFailed,
   });
 }
 
