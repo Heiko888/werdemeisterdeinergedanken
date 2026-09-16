@@ -46,12 +46,11 @@ und B1 (gemeinsame Admin-Navigation) umgesetzt.
   den neuen Übersichten.
 - `src/app/admin/seiten/page.tsx`: neue Seiten in die Sitemap aufgenommen.
 
-**⚠️ Noch offen – Migrationen einspielen:** Die Tabellen `kontakt_anfragen`
-(0015) und `book_orders` (0016) müssen noch in die Produktions-Supabase
-eingespielt werden. Bis dahin zeigen `/admin/kontakt` und `/admin/bestellungen`
-einen Hinweis, und neue Kontaktanfragen/Buchkäufe werden nur per E-Mail
-zugestellt (nicht gespeichert). `/admin/mitglieder` und `/admin/leads` nutzen
-bestehende Tabellen und funktionieren sofort.
+**Migrationen eingespielt:** Die Tabellen `kontakt_anfragen` (0015) und
+`book_orders` (0016) wurden am 2026-09-16 in die Produktions-Supabase
+(Projekt `werde-meister-deiner-gedanken`) eingespielt – RLS aktiv, keine
+Policies (nur Service-Role, wie ebook_leads/memberships). Alle vier
+Übersichten sind damit voll funktionsfähig.
 
 **Geprüft:** `npm run build` erfolgreich, ESLint der geänderten Dateien ohne
 Befund. Alle neuen Routen als dynamische Server-Routen registriert; Zugriff
