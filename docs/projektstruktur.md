@@ -106,6 +106,8 @@ Seiten sind *noindex* und in `robots.txt` gesperrt.
 | `/mitglieder/arbeitsheft` | `.../arbeitsheft/route.ts` | Gesamt-Arbeitsheft über alle 7 Stufen als PDF |
 | `/admin` | `app/admin/page.tsx` | Marketing-Cockpit: Funnel-Statistiken & Content-Inventar (nur Admin-E-Mails) *(noindex)* |
 | `/admin/marken-uebersicht` | `app/admin/marken-uebersicht/page.tsx` | Marken-Übersicht: Farbsystem, alle Logos & Vorlagen-Bestand mit Lücken-Check Creme↔Dunkel (nur Admin) *(noindex)* |
+| `/admin/methoden` | `app/admin/methoden/page.tsx` | Coaching-Methoden-Bibliothek: durchsuchbares Nachschlagewerk (141 Methoden, 13 Kategorien) mit Suche, Filter & aufklappbaren Karten (nur Admin) *(noindex)* |
+| `/admin/methoden/[slug]` | `app/admin/methoden/[slug]/page.tsx` | Methode bearbeiten/anlegen (`…/neu`): alle Felder, editierbare Listen & eigene Notizen (nur Admin) *(noindex)* |
 
 ### Die 7 Stufen (`/mitglieder/stufe/1–7`)
 
