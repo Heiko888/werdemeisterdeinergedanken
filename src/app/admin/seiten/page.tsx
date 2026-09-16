@@ -129,6 +129,16 @@ function buildGroups(): PageGroup[] {
       description: "Interner Bereich – nur mit Admin-Rechten.",
       links: [
         { href: "/admin", label: "Admin-Dashboard" },
+        {
+          href: "/admin/erstgespraeche",
+          label: "Erstgespräche",
+          hint: "Fragebögen & Gesprächs-Cockpit (nur Admin)",
+        },
+        {
+          href: "/admin/methoden",
+          label: "Methoden",
+          hint: "Coaching-Methoden-Nachschlagewerk (nur Admin)",
+        },
         { href: "/admin/marken-uebersicht", label: "Marken-Übersicht" },
         { href: "/admin/redaktionsplan", label: "Redaktionsplan" },
         { href: "/admin/vorlagen", label: "Vorlagen" },

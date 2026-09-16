@@ -5,6 +5,37 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-16 – Schnelle Gewinne aus der Systemprüfung: Anker-Fix & Verlinkungen
+
+**Anlass:** Aus dem Prüfbericht
+`docs/audit/system-faehigkeiten-und-verknuepfungen-2026-09-16.md` die schnell
+umsetzbaren Verlinkungs-Verbesserungen und ein Anker-Bug behoben, damit die
+Funnels schlüssiger führen.
+
+**Behoben / ergänzt:**
+- **Anker-Bug (A3):** Button „E-Book sichern" im Bewusstseinstest-Ergebnis zeigte
+  auf `/#angebot` (7-Stufen-Karten) statt aufs E-Book. Jetzt `/gratis-ebook`.
+  (`src/components/sections/ConsciousnessTest.tsx`)
+- **Testergebnis → Mitgliedschaft (H5):** Im ausgeloggten Zweig zusätzlicher CTA
+  „Mitglied werden" → `/mitgliedschaft`.
+  (`src/components/sections/ConsciousnessTest.tsx`)
+- **7-Stufen → Mitgliedschaft (H4):** Abschluss-CTA „Den ganzen Weg begleitet
+  gehen" → `/mitgliedschaft` ergänzt. (`src/app/die-7-stufen/page.tsx`)
+- **Mitgliedschaft → Buch (B9):** Rückverlinkung „das Buch" → `/buch` im
+  Zugangs-Abschnitt ergänzt (bisher nur einseitig).
+  (`src/app/mitgliedschaft/page.tsx`)
+- **Blog-E-Book-CTA (B4):** Artikel-CTA „E-Book gratis sichern" führt jetzt auf
+  die dedizierte Landingpage `/gratis-ebook` statt auf den Homepage-Anker
+  `/#ebook`. (`src/app/blog/[slug]/page.tsx`)
+- **Admin-Sitemap (B2):** Fehlende Einträge `Erstgespräche` und `Methoden` in der
+  Seitenübersicht (Gruppe „Administration") ergänzt.
+  (`src/app/admin/seiten/page.tsx`)
+
+**Geprüft:** `npm run build` erfolgreich, ESLint der geänderten Dateien ohne
+Befund. Keine Datenbank-/API-Änderungen.
+
+---
+
 ## 2026-09-16 – Coaching-Methoden: Sprechtexte für Trance & Hypnose (v1.5)
 
 **Anlass:** In `/admin/methoden` fehlten die wortwörtlichen **Sprechtexte zum
