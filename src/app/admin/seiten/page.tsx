@@ -130,6 +130,26 @@ function buildGroups(): PageGroup[] {
       links: [
         { href: "/admin", label: "Admin-Dashboard" },
         {
+          href: "/admin/mitglieder",
+          label: "Mitglieder",
+          hint: "Zahlende Stripe-Abos mit Status (nur Admin)",
+        },
+        {
+          href: "/admin/leads",
+          label: "E-Book-Leads",
+          hint: "Double-Opt-in-Leads mit Export (nur Admin)",
+        },
+        {
+          href: "/admin/kontakt",
+          label: "Kontaktanfragen",
+          hint: "Gespeicherte Nachrichten aus dem Kontaktformular (nur Admin)",
+        },
+        {
+          href: "/admin/bestellungen",
+          label: "Buch-Bestellungen",
+          hint: "Buch-Käufe & Print-Versandstatus (nur Admin)",
+        },
+        {
           href: "/admin/erstgespraeche",
           label: "Erstgespräche",
           hint: "Fragebögen & Gesprächs-Cockpit (nur Admin)",

@@ -10,6 +10,11 @@
  *     funktioniert immer, auch ohne Datenbank.
  */
 import { createAdminClient } from "@/lib/supabase/admin";
+import {
+  getMemberships,
+  getBookOrders,
+  membershipStats,
+} from "@/lib/admin-data";
 import { stages } from "@/lib/content";
 import { practices } from "@/lib/practices";
 import { deepDives } from "@/lib/deep-dives";
@@ -24,12 +29,29 @@ const SELBSTVERTEIDIGUNG = "Mentale Selbstverteidigung";
 
 export type FunnelStats = {
   configured: boolean;
+  /** Anzahl Login-Konten (profiles) – NICHT identisch mit zahlenden Abos. */
   members: number;
   newsletter: number;
   leads: { pending: number; confirmed: number; unsubscribed: number; total: number };
   /** bestätigte Leads der letzten 30 Tage */
   leadsRecent: number;
   tests: { total: number; byStage: number[] };
+  /** Zahlende Mitgliedschaften (Stripe-Abos) nach Status. */
+  memberships: {
+    available: boolean;
+    active: number;
+    pastDue: number;
+    canceled: number;
+    total: number;
+  };
+  /** Buch-Einmalkäufe. */
+  orders: {
+    available: boolean;
+    total: number;
+    printOpen: number;
+    revenue: number;
+    currency: string | null;
+  };
 };
 
 /** Zaehl-Query, wie sie `admin.from(t).select("*", { count, head })` liefert. */
@@ -62,6 +84,8 @@ export async function getFunnelStats(): Promise<FunnelStats> {
     leads: { pending: 0, confirmed: 0, unsubscribed: 0, total: 0 },
     leadsRecent: 0,
     tests: { total: 0, byStage: [0, 0, 0, 0, 0, 0, 0] },
+    memberships: { available: false, active: 0, pastDue: 0, canceled: 0, total: 0 },
+    orders: { available: false, total: 0, printOpen: 0, revenue: 0, currency: null },
   };
   if (!admin) return empty;
 
@@ -95,6 +119,17 @@ export async function getFunnelStats(): Promise<FunnelStats> {
     // Tabelle evtl. noch nicht migriert
   }
 
+  // Zahlende Mitgliedschaften + Buch-Bestellungen (eigene Tabellen, tolerant).
+  const membershipListing = await getMemberships();
+  const mStats = membershipStats(membershipListing);
+  const orderListing = await getBookOrders();
+  const printOpen = orderListing.rows.filter(
+    (o) => o.edition === "print" && o.status === "bezahlt",
+  ).length;
+  const revenue = orderListing.rows
+    .filter((o) => o.status !== "erstattet")
+    .reduce((sum, o) => sum + (o.amount_total ?? 0), 0);
+
   return {
     configured: true,
     members,
@@ -107,6 +142,20 @@ export async function getFunnelStats(): Promise<FunnelStats> {
     },
     leadsRecent,
     tests: { total: testsTotal, byStage },
+    memberships: {
+      available: mStats.available,
+      active: mStats.active,
+      pastDue: mStats.pastDue,
+      canceled: mStats.canceled,
+      total: mStats.total,
+    },
+    orders: {
+      available: orderListing.available,
+      total: orderListing.rows.length,
+      printOpen,
+      revenue,
+      currency: orderListing.rows[0]?.currency ?? null,
+    },
   };
 }
 

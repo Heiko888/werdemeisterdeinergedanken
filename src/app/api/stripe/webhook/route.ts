@@ -131,13 +131,17 @@ async function onBookPurchase(session: Stripe.Checkout.Session, email: string) {
     session.payment_status === "no_payment_required";
   if (!paid) return;
 
+  const edition = session.metadata?.edition === "print" ? "print" : "pdf";
+
+  // Bestellung protokollieren (Übersicht unter /admin/bestellungen).
+  // Best effort und idempotent – darf die Auslieferung niemals blockieren.
+  await recordBookOrder(session, email, edition);
+
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.warn("buch delivery: kein RESEND_API_KEY – Zustellung übersprungen");
     return;
   }
-
-  const edition = session.metadata?.edition === "print" ? "print" : "pdf";
 
   const { Resend } = await import("resend");
   const resend = new Resend(apiKey);
@@ -151,6 +155,82 @@ async function onBookPurchase(session: Stripe.Checkout.Session, email: string) {
     const url = token ? buchDownloadUrl(token) : null;
     await sendBuchPdfMail(resend, email, url);
   }
+}
+
+/**
+ * Buch-Bestellung in Supabase protokollieren (Übersicht unter
+ * /admin/bestellungen). Idempotent über die Stripe-Session-ID: eine erneute
+ * Zustellung desselben Events legt keinen zweiten Eintrag an. Best effort –
+ * Fehler (fehlende Tabelle / kein Service-Role-Key) werden nur geloggt und
+ * dürfen die Auslieferung nicht verhindern.
+ */
+async function recordBookOrder(
+  session: Stripe.Checkout.Session,
+  email: string,
+  edition: "pdf" | "print",
+) {
+  const admin = createAdminClient();
+  if (!admin) return;
+
+  const customerId =
+    typeof session.customer === "string"
+      ? session.customer
+      : session.customer?.id ?? null;
+
+  // Lieferadresse (nur Print) tolerant auslesen – je nach Stripe-SDK-Version
+  // unter shipping_details oder collected_information.shipping_details.
+  const shipping =
+    (session as unknown as { shipping_details?: ShippingLike }).shipping_details ??
+    (
+      session as unknown as {
+        collected_information?: { shipping_details?: ShippingLike };
+      }
+    ).collected_information?.shipping_details ??
+    null;
+
+  try {
+    const { error } = await admin.from("book_orders").upsert(
+      {
+        email,
+        edition,
+        amount_total: session.amount_total ?? null,
+        currency: session.currency ?? null,
+        stripe_session_id: session.id,
+        stripe_customer_id: customerId,
+        status: "bezahlt",
+        shipping_name: shipping?.name ?? null,
+        shipping_address: formatAddress(shipping?.address),
+      },
+      { onConflict: "stripe_session_id", ignoreDuplicates: true },
+    );
+    if (error) console.error("book_orders insert error", error);
+  } catch (err) {
+    console.error("book_orders insert failed", err);
+  }
+}
+
+type ShippingLike = {
+  name?: string | null;
+  address?: {
+    line1?: string | null;
+    line2?: string | null;
+    postal_code?: string | null;
+    city?: string | null;
+    state?: string | null;
+    country?: string | null;
+  } | null;
+};
+
+function formatAddress(a?: ShippingLike["address"]): string | null {
+  if (!a) return null;
+  const parts = [
+    a.line1,
+    a.line2,
+    [a.postal_code, a.city].filter(Boolean).join(" "),
+    a.state,
+    a.country,
+  ].filter((p) => p && String(p).trim());
+  return parts.length ? parts.join(", ") : null;
 }
 
 /** Status einer Subscription spiegeln (Kündigung, Zahlungsausfall, Reaktivierung). */

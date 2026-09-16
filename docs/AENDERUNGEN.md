@@ -5,6 +5,61 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-16 – Zentrale Admin-Übersicht + Admin-Navigation (A1 / A2 / B1)
+
+**Anlass:** Aus dem Prüfbericht
+`docs/audit/system-faehigkeiten-und-verknuepfungen-2026-09-16.md` die Punkte
+A1 (zentrale Lead-/Kunden-Übersicht), A2 (echte Abo-/Umsatzzahlen im Cockpit)
+und B1 (gemeinsame Admin-Navigation) umgesetzt.
+
+**Neu – gemeinsame Admin-Navigation (B1):**
+- `src/app/admin/layout.tsx` + `src/app/admin/AdminNav.tsx`: sticky Tab-Leiste
+  über allen /admin-Seiten mit Aktiv-Markierung – direkter Sprung zwischen
+  Sektionen ohne Umweg übers Cockpit.
+
+**Neu – Übersichtsseiten (A1), je mit CSV-Export:**
+- `/admin/mitglieder` – zahlende Stripe-Abos aus `memberships` mit Status
+  (aktiv/fällig/gekündigt) und Laufzeit.
+- `/admin/leads` – E-Book-Leads aus `ebook_leads` (Double-Opt-in-Status, Quelle).
+- `/admin/kontakt` – gespeicherte Kontaktanfragen (siehe Persistenz unten).
+- `/admin/bestellungen` – Buch-Käufe mit Umsatz und Print-Versandstatus.
+- Gemeinsame UI-Bausteine: `src/app/admin/_ui.tsx`; Datenzugriff:
+  `src/lib/admin-data.ts`; Route-Guard: `src/lib/admin-guard.ts`.
+- Export-Routen: `/admin/<bereich>/export` (admin-geschützt, CSV mit UTF-8-BOM
+  für Excel).
+
+**Neu – Persistenz eingehender Daten (A1):**
+- Kontaktformular schreibt zusätzlich in neue Tabelle `kontakt_anfragen`
+  (`supabase/migrations/0015_kontakt_anfragen.sql`). Mailversand unverändert;
+  Speichern ist best-effort und blockiert den Versand nicht.
+  (`src/app/api/kontakt/route.ts`)
+- Stripe-Webhook protokolliert jeden bezahlten Buch-Kauf in neue Tabelle
+  `book_orders` (`supabase/migrations/0016_book_orders.sql`), idempotent über die
+  Stripe-Session-ID, best-effort (blockiert die Auslieferung nie).
+  (`src/app/api/stripe/webhook/route.ts`)
+
+**Geändert – Cockpit (A2):**
+- `src/lib/admin-stats.ts` liest jetzt `memberships` (Status-Breakdown) und
+  `book_orders` (Anzahl, Print-offen, Umsatz).
+- `src/app/admin/page.tsx`: Kennzahl „Mitglieder" (= alle Konten) ersetzt durch
+  „Aktive Abos" + „Konten"; neue Sektion „Umsatz & Kundschaft"; Schnell-Links zu
+  den neuen Übersichten.
+- `src/app/admin/seiten/page.tsx`: neue Seiten in die Sitemap aufgenommen.
+
+**⚠️ Noch offen – Migrationen einspielen:** Die Tabellen `kontakt_anfragen`
+(0015) und `book_orders` (0016) müssen noch in die Produktions-Supabase
+eingespielt werden. Bis dahin zeigen `/admin/kontakt` und `/admin/bestellungen`
+einen Hinweis, und neue Kontaktanfragen/Buchkäufe werden nur per E-Mail
+zugestellt (nicht gespeichert). `/admin/mitglieder` und `/admin/leads` nutzen
+bestehende Tabellen und funktionieren sofort.
+
+**Geprüft:** `npm run build` erfolgreich, ESLint der geänderten Dateien ohne
+Befund. Alle neuen Routen als dynamische Server-Routen registriert; Zugriff
+doppelt geschützt (Middleware `src/proxy.ts` + seiten-/routeneigener
+Admin-Check).
+
+---
+
 ## 2026-09-16 – Schnelle Gewinne aus der Systemprüfung: Anker-Fix & Verlinkungen
 
 **Anlass:** Aus dem Prüfbericht
