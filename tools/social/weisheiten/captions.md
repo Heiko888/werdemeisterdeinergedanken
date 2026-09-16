@@ -119,3 +119,109 @@ Folg für den täglichen Impuls. ✨
 Mehr dazu: Die 7 Stufen → Link in Bio.
 
 _Extra-Tags:_ `#perspektive #innerercode #neuentscheiden`
+
+---
+
+# Mini-Serie „Muster & Vermeidung"
+
+Für die Gesten-Posen (nichts sehen/hören/sagen, ratlos, Schulterzucken). Gleicher
+Ton, Thema: die Muster, mit denen wir uns selbst ausweichen.
+
+**Basis-Hashtags:** wie oben, plus `#vermeidung #schattenarbeit #ehrlichkeitmitdirselbst`
+
+## M1 · „Verwirrung ist der erste Schritt zur Klarheit."
+Bevor es klar wird, wird es oft erst unübersichtlich. Verwirrung ist kein Rückschritt –
+sie ist das Zeichen, dass ein altes Denkmuster ins Wanken kommt.
+👉 Wo darfst du gerade verwirrt sein, ohne es sofort „lösen" zu müssen?
+
+## M2 · „Was du nicht anschauen willst, steuert dich."
+Was wir wegschauen, verschwindet nicht – es übernimmt leise die Regie. Erst der
+ehrliche Blick nimmt einem Muster die Macht.
+👉 Wovor schaust du gerade weg?
+
+## M3 · „Die Wahrheit, die du nicht hören willst, meint dich."
+Genau der Satz, bei dem du innerlich zumachst, trifft meist den wunden Punkt.
+Zuhören heißt nicht zustimmen – aber hinhören lohnt sich.
+👉 Welche Rückmeldung überhörst du beharrlich?
+
+## M4 · „Was du verschweigst, bestimmt dich im Stillen."
+Unausgesprochenes ist nicht weg – es arbeitet im Hintergrund weiter. Aussprechen
+(und sei es nur dir selbst gegenüber) nimmt Druck raus.
+👉 Was sagst du dir selbst gerade nicht?
+
+## M5 · „‚Keine Ahnung' ist oft der ehrlichste Anfang."
+Nicht wissen ist kein Makel – es ist der Moment, in dem echtes Lernen beginnt.
+Wer alles zu wissen glaubt, hört auf zu fragen.
+👉 Wo darfst du heute ehrlich „keine Ahnung" sagen?
+
+---
+
+# Serie „Klartext & Entscheidung" + E-Book
+
+Aufrechte, klare Gesten – Ton: direkt, auf Augenhöhe, ermutigend.
+
+**Basis-Hashtags:** wie oben, plus `#klartext #entscheidung #selbstverantwortung`
+
+## K1 · „Der Moment der Erkenntnis verändert alles."
+Nicht die Jahre verändern uns – der eine Moment, in dem der Groschen fällt.
+Ab da siehst du dasselbe Leben mit anderen Augen.
+👉 Was war deine letzte echte Erkenntnis?
+
+## K2 · „Niemand denkt das für dich – nur du."
+Ratschläge, Bücher, Impulse: alles gut. Aber den Gedanken denken, der dich
+verändert, kann dir niemand abnehmen. Das ist deine Freiheit – und deine Verantwortung.
+👉 Welchen Gedanken schiebst du gerade auf?
+
+## K3 · „Nein ist ein vollständiger Satz."
+Du musst dich nicht rechtfertigen, erklären, verteidigen. Ein klares Nein schützt
+dein Ja. Grenzen sind kein Egoismus – sie sind Selbstachtung.
+👉 Wo ist ein Nein längst überfällig?
+
+## K4 · „Alles beginnt da, wo du hinschaust: bei dir."
+Nicht bei den anderen, nicht bei den Umständen – bei dir. Das ist keine Schuld,
+sondern deine größte Kraft: Wo du hinschaust, verändert sich etwas.
+👉 Wohin richtest du heute deine Aufmerksamkeit?
+
+## K5 · „Eine Entscheidung ist stärker als hundert Vorsätze."
+Vorsätze halten die Tür offen. Eine echte Entscheidung schließt sie – und schafft Klarheit.
+👉 Welche Entscheidung ist bei dir gerade dran?
+
+## E-Book · „Dein Startpunkt: das E-Book – kostenlos."
+Der einfachste erste Schritt: das kostenlose E-Book „Werde Meister deiner Gedanken".
+Kein Esoterik-Kram, sondern ein bodenständiger Einstieg in die 7 Stufen.
+👉 Hol es dir – Link in Bio. 📖
+
+_Extra-Tags:_ `#gratisebook #ebook #7stufen`
+
+---
+
+# Serie „Einladung & Reflexion"
+
+Ruhige, einladende Gesten – Ton: warm, offen, nachdenklich.
+
+**Basis-Hashtags:** wie oben, plus `#reflexion #innehalten #achtsamleben`
+
+## R1 · „Wer fragt, hat den ersten Schritt schon gemacht."
+Antworten kommen später – die ehrliche Frage ist der eigentliche Anfang. Wer fragt,
+hat aufgehört, alles schon zu wissen.
+👉 Welche Frage begleitet dich gerade?
+
+## R2 · „Alles, was du brauchst, trägst du schon in dir."
+Nicht mehr Wissen, nicht mehr Werkzeuge – meist fehlt nur der ruhige Blick nach innen.
+Das Wesentliche ist längst da.
+👉 Was in dir wartet gerade darauf, gehört zu werden?
+
+## R3 · „Hör auf das, was leiser ist als deine Gedanken."
+Unter dem lauten Gedanken-Karussell liegt eine leisere Stimme. Sie drängt nicht –
+aber sie weiß oft mehr.
+👉 Wann warst du zuletzt wirklich still?
+
+## R4 · „Du bist nicht zufällig hier."
+Dass dich genau dieser Weg anspricht, ist kein Zufall. Irgendetwas in dir sucht schon
+länger nach Klarheit.
+👉 Was hat dich hierher geführt?
+
+## R5 · „Nimm dir Zeit für den Gedanken, der dich trägt."
+Nicht jeder Gedanke zieht dich runter – manche tragen. Gib den guten mehr Raum
+als den lauten.
+👉 Welcher Gedanke tut dir gerade gut?
