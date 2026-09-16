@@ -192,3 +192,36 @@ Kein Esoterik-Kram, sondern ein bodenständiger Einstieg in die 7 Stufen.
 👉 Hol es dir – Link in Bio. 📖
 
 _Extra-Tags:_ `#gratisebook #ebook #7stufen`
+
+---
+
+# Serie „Einladung & Reflexion"
+
+Ruhige, einladende Gesten – Ton: warm, offen, nachdenklich.
+
+**Basis-Hashtags:** wie oben, plus `#reflexion #innehalten #achtsamleben`
+
+## R1 · „Wer fragt, hat den ersten Schritt schon gemacht."
+Antworten kommen später – die ehrliche Frage ist der eigentliche Anfang. Wer fragt,
+hat aufgehört, alles schon zu wissen.
+👉 Welche Frage begleitet dich gerade?
+
+## R2 · „Alles, was du brauchst, trägst du schon in dir."
+Nicht mehr Wissen, nicht mehr Werkzeuge – meist fehlt nur der ruhige Blick nach innen.
+Das Wesentliche ist längst da.
+👉 Was in dir wartet gerade darauf, gehört zu werden?
+
+## R3 · „Hör auf das, was leiser ist als deine Gedanken."
+Unter dem lauten Gedanken-Karussell liegt eine leisere Stimme. Sie drängt nicht –
+aber sie weiß oft mehr.
+👉 Wann warst du zuletzt wirklich still?
+
+## R4 · „Du bist nicht zufällig hier."
+Dass dich genau dieser Weg anspricht, ist kein Zufall. Irgendetwas in dir sucht schon
+länger nach Klarheit.
+👉 Was hat dich hierher geführt?
+
+## R5 · „Nimm dir Zeit für den Gedanken, der dich trägt."
+Nicht jeder Gedanke zieht dich runter – manche tragen. Gib den guten mehr Raum
+als den lauten.
+👉 Welcher Gedanke tut dir gerade gut?

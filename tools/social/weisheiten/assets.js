@@ -42,5 +42,11 @@ module.exports = {
     handBrust: dataUri(path.join(__dirname, "quellen/heiko-pose-hand-brust.png"), "image/png"),
     punkt: dataUri(path.join(__dirname, "quellen/heiko-pose-punkt.png"), "image/png"),
     ebook: dataUri(path.join(__dirname, "quellen/heiko-pose-ebook.png"), "image/png"),
+    // Serie „Einladung & Reflexion"
+    kinn: dataUri(path.join(__dirname, "quellen/heiko-pose-kinn.png"), "image/png"),
+    offeneHand: dataUri(path.join(__dirname, "quellen/heiko-pose-offenehand.png"), "image/png"),
+    handHerz: dataUri(path.join(__dirname, "quellen/heiko-pose-hand-herz.png"), "image/png"),
+    ansprache: dataUri(path.join(__dirname, "quellen/heiko-pose-ansprache.png"), "image/png"),
+    offeneHand2: dataUri(path.join(__dirname, "quellen/heiko-pose-offenehand2.png"), "image/png"),
   },
 };
