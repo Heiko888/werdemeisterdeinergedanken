@@ -119,3 +119,37 @@ Folg für den täglichen Impuls. ✨
 Mehr dazu: Die 7 Stufen → Link in Bio.
 
 _Extra-Tags:_ `#perspektive #innerercode #neuentscheiden`
+
+---
+
+# Mini-Serie „Muster & Vermeidung"
+
+Für die Gesten-Posen (nichts sehen/hören/sagen, ratlos, Schulterzucken). Gleicher
+Ton, Thema: die Muster, mit denen wir uns selbst ausweichen.
+
+**Basis-Hashtags:** wie oben, plus `#vermeidung #schattenarbeit #ehrlichkeitmitdirselbst`
+
+## M1 · „Verwirrung ist der erste Schritt zur Klarheit."
+Bevor es klar wird, wird es oft erst unübersichtlich. Verwirrung ist kein Rückschritt –
+sie ist das Zeichen, dass ein altes Denkmuster ins Wanken kommt.
+👉 Wo darfst du gerade verwirrt sein, ohne es sofort „lösen" zu müssen?
+
+## M2 · „Was du nicht anschauen willst, steuert dich."
+Was wir wegschauen, verschwindet nicht – es übernimmt leise die Regie. Erst der
+ehrliche Blick nimmt einem Muster die Macht.
+👉 Wovor schaust du gerade weg?
+
+## M3 · „Die Wahrheit, die du nicht hören willst, meint dich."
+Genau der Satz, bei dem du innerlich zumachst, trifft meist den wunden Punkt.
+Zuhören heißt nicht zustimmen – aber hinhören lohnt sich.
+👉 Welche Rückmeldung überhörst du beharrlich?
+
+## M4 · „Was du verschweigst, bestimmt dich im Stillen."
+Unausgesprochenes ist nicht weg – es arbeitet im Hintergrund weiter. Aussprechen
+(und sei es nur dir selbst gegenüber) nimmt Druck raus.
+👉 Was sagst du dir selbst gerade nicht?
+
+## M5 · „‚Keine Ahnung' ist oft der ehrlichste Anfang."
+Nicht wissen ist kein Makel – es ist der Moment, in dem echtes Lernen beginnt.
+Wer alles zu wissen glaubt, hört auf zu fragen.
+👉 Wo darfst du heute ehrlich „keine Ahnung" sagen?

@@ -12,6 +12,9 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
   (1080×1920)**, Text oben, Logo unten (Story-UI-safe) → 8 Stories.
 - **Serie C2 – Porträt-Story** (`gen-story-portrait.js`): das Porträt im **9:16-Format
   (1080×1920)**, gleicher Story-Aufbau → 8 Stories.
+- **Serie D – Mini „Muster & Vermeidung"** (`gen-mini-muster.js`): 5 frontale Gesten-Posen
+  (nichts sehen/hören/sagen, ratlos, Schulterzucken) mit eigenen Weisheiten, zentrierter
+  Aufbau, je Motiv **4:5 + 9:16** → 10 Motive.
 
 > **Hinweis:** Die Bilder liegen bewusst unter `tools/…` (Quellen + fertige
 > Ausgabe), **nicht** unter `public/`. Sie sind Social-Assets/Build-Inputs und
@@ -31,9 +34,9 @@ cd tools/social/weisheiten
 CHROME=/pfad/zu/chrome ./render.sh
 ```
 
-Ergebnis: 32 PNGs in `tools/social/weisheiten/output/`
-(`weisheit-portrait-01…08.png`, `weisheit-pose-01…08.png`,
-`weisheit-story-posen-01…08.png`, `weisheit-story-portrait-01…08.png`).
+Ergebnis: 42 PNGs in `tools/social/weisheiten/output/`
+(`weisheit-portrait-01…08`, `weisheit-pose-01…08`, `weisheit-story-posen-01…08`,
+`weisheit-story-portrait-01…08` sowie `muster-01…05-<key>-4x5` und `-9x16`).
 
 Warum „Überscan + Crop": Headless-Chromium hat einen kleinen Viewport-Versatz; deshalb
 wird mit 1080×1470 gerendert und mit `lib/pngcrop.js` (nur Node/zlib, ohne Fremd-Libs)
@@ -61,6 +64,7 @@ exakt auf 1080×1350 zugeschnitten.
 | `gen-posen.js` | Serie B (Posen, 4:5) → HTML nach `build/` |
 | `gen-story-posen.js` | Serie C1 (Posen-Story, 9:16) → HTML nach `build/` |
 | `gen-story-portrait.js` | Serie C2 (Porträt-Story, 9:16) → HTML nach `build/` |
+| `gen-mini-muster.js` | Serie D (Mini „Muster & Vermeidung", 4:5 + 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |
 | `captions.md` | fertige Feed-Captions + Hashtags je Weisheit |

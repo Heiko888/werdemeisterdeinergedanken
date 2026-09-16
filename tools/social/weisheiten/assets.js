@@ -29,5 +29,11 @@ module.exports = {
     faust: dataUri(path.join(__dirname, "quellen/heiko-pose-faust.png"), "image/png"),
     nachdenken: dataUri(path.join(__dirname, "quellen/heiko-pose-nachdenken.png"), "image/png"),
     taschen: dataUri(path.join(__dirname, "quellen/heiko-pose-taschen.png"), "image/png"),
+    // Mini-Serie „Muster & Vermeidung"
+    kopfkratzen: dataUri(path.join(__dirname, "quellen/heiko-pose-kopfkratzen.png"), "image/png"),
+    augenZu: dataUri(path.join(__dirname, "quellen/heiko-pose-augen-zu.png"), "image/png"),
+    ohrenZu: dataUri(path.join(__dirname, "quellen/heiko-pose-ohren-zu.png"), "image/png"),
+    mundZu: dataUri(path.join(__dirname, "quellen/heiko-pose-mund-zu.png"), "image/png"),
+    schulterzucken: dataUri(path.join(__dirname, "quellen/heiko-pose-schulterzucken.png"), "image/png"),
   },
 };

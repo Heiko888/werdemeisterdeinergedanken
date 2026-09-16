@@ -26,13 +26,14 @@ node gen-portrait.js        # Serie A (Porträt, 4:5 1080x1350)
 node gen-posen.js           # Serie B (Posen, 4:5 1080x1350)
 node gen-story-posen.js     # Serie C1 (Posen-Story, 9:16 1080x1920)
 node gen-story-portrait.js  # Serie C2 (Porträt-Story, 9:16 1080x1920)
+node gen-mini-muster.js     # Serie D  (Mini „Muster & Vermeidung", 4:5 + 9:16)
 
 shopt -s nullglob
 for html in "$BUILD"/*.html; do
   base="$(basename "$html" .html)"
   case "$base" in
-    *story*) H=1920 ;;   # 9:16
-    *)       H=1350 ;;   # 4:5
+    *story*|*9x16*) H=1920 ;;   # 9:16
+    *)             H=1350 ;;    # 4:5
   esac
   "$CHROME" --headless --no-sandbox --disable-gpu --hide-scrollbars \
     --force-device-scale-factor=1 --window-size=${W},$((H + OVERSCAN)) \
