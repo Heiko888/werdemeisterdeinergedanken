@@ -4,6 +4,7 @@ import { getStripe, STRIPE_WEBHOOK_SECRET } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { sendBuchPdfMail, sendBuchPrintOrderMail } from "@/lib/buch-mail";
 import { createBuchDownloadToken, buchDownloadUrl } from "@/lib/buch-download";
+import { isLexofficeConfigured, createBookInvoiceDraft } from "@/lib/lexoffice";
 import { site } from "@/lib/site";
 
 /** Metadaten-Kennung des Buch-Einmalkaufs (siehe /api/buch-checkout). */
@@ -151,6 +152,10 @@ async function onBookPurchase(session: Stripe.Checkout.Session, email: string) {
   // Best effort und idempotent – darf die Auslieferung niemals blockieren.
   await recordBookOrder(session, email, edition);
 
+  // Rechnungs-ENTWURF in lexoffice anlegen (best effort, idempotent). Fehler
+  // hier dürfen die Auslieferung des Buchs niemals verhindern.
+  await recordLexofficeInvoice(session, email, edition);
+
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.warn("buch delivery: kein RESEND_API_KEY – Zustellung übersprungen");
@@ -220,6 +225,54 @@ async function recordBookOrder(
     if (error) console.error("book_orders insert error", error);
   } catch (err) {
     console.error("book_orders insert failed", err);
+  }
+}
+
+/**
+ * Legt in lexoffice einen Rechnungs-ENTWURF zum Buch-Kauf an und hinterlegt die
+ * Referenz (ID + Link) an der Bestellung in Supabase.
+ *
+ * Best effort und idempotent: Ist die Anbindung nicht konfiguriert, fehlt der
+ * Service-Role-Key oder existiert bereits ein Entwurf (lexoffice_invoice_id
+ * gesetzt), passiert nichts. Fehler werden nur geloggt – die Buch-Auslieferung
+ * darf dadurch nie scheitern.
+ */
+async function recordLexofficeInvoice(
+  session: Stripe.Checkout.Session,
+  email: string,
+  edition: "pdf" | "print",
+) {
+  if (!isLexofficeConfigured()) return;
+
+  const admin = createAdminClient();
+  if (!admin) {
+    console.warn("lexoffice: kein Service-Role-Key – Rechnungs-Referenz wird nicht gespeichert");
+    return;
+  }
+
+  try {
+    // Idempotenz: bei erneuter Zustellung desselben Events keinen zweiten
+    // Entwurf anlegen. Nutzt die bereits protokollierte Bestellung.
+    const { data: existing } = await admin
+      .from("book_orders")
+      .select("lexoffice_invoice_id")
+      .eq("stripe_session_id", session.id)
+      .maybeSingle();
+    if (existing?.lexoffice_invoice_id) return;
+
+    const invoice = await createBookInvoiceDraft(session, email, edition);
+    if (!invoice) return;
+
+    const { error } = await admin
+      .from("book_orders")
+      .update({
+        lexoffice_invoice_id: invoice.id,
+        lexoffice_invoice_url: invoice.url,
+      })
+      .eq("stripe_session_id", session.id);
+    if (error) console.error("lexoffice invoice ref update error", error);
+  } catch (err) {
+    console.error("lexoffice invoice draft failed", err);
   }
 }
 
