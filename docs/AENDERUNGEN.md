@@ -5,6 +5,21 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Bewusstseinstest-Hero: Figur vom Rand eingerückt
+
+**Anlass:** Die freigestellte Figur stand zu nah am Rand.
+
+**Feinschliff der Vordergrund-Figur (`PageHero`):**
+- **Desktop:** Figur mit Innenabstand zur Spotlight-Kante (`lg:me-6 xl:me-16`,
+  bzw. `ms` bei `spotlight="left"`), damit sie nicht am Rand klebt.
+- **Mobil:** Figur im Bildband weiter nach innen versetzt (`right-10 sm:right-14`).
+(`components/layout/PageHero.tsx`)
+
+**Geprüft:** `tsc --noEmit` und ESLint ohne Befund; Desktop/Mobil per Screenshot
+kontrolliert.
+
+---
+
 ## 2026-09-17 – Bewusstseinstest-Hero: freigestellte Figur über dem Hintergrund
 
 **Anlass:** Der Hero der Seite `/bewusstseinstest` sollte ein Bild (freigestellter,
