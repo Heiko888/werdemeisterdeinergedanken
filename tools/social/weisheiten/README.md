@@ -22,8 +22,9 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
   (Kinn, offene Hand, Hand aufs Herz, Ansprache) mit reflektierenden Weisheiten, zentrierter
   Aufbau, je Motiv **4:5 + 9:16** → 10 Motive.
 - **Einzel-Story „Papa, kannste mal erklären?"** (`gen-papa.js`): Hook-Story im **9:16-Format
-  (1080×1920)**, einladende „offene Hand"-Pose, Gold-Kursiv auf „erklären", zentrierter
-  Aufbau → 1 Motiv (`output/papa-erklaeren-9x16.png`).
+  (1080×1920)** mit **2 Personen** – Junge (freigestellt, Blick nach oben, Rucksack) links,
+  Papa (freigestellt, Hände in den Taschen, Blick zum Kind) rechts und größer, einander
+  zugewandt. Text oben, Gold-Kursiv auf „erklären" → 1 Motiv (`output/papa-erklaeren-9x16.png`).
 
 > **Hinweis:** Die Bilder liegen bewusst unter `tools/…` (Quellen + fertige
 > Ausgabe), **nicht** unter `public/`. Sie sind Social-Assets/Build-Inputs und

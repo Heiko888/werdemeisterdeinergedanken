@@ -55,5 +55,8 @@ module.exports = {
     handHerz: dataUri(path.join(__dirname, "quellen/heiko-pose-hand-herz.png"), "image/png"),
     ansprache: dataUri(path.join(__dirname, "quellen/heiko-pose-ansprache.png"), "image/png"),
     offeneHand2: dataUri(path.join(__dirname, "quellen/heiko-pose-offenehand2.png"), "image/png"),
+    // Story „Papa, kannste mal erklären?" (2 Personen: Papa + Kind)
+    papaTaschen: dataUri(path.join(__dirname, "quellen/heiko-pose-papa-taschen.png"), "image/png"),
+    kindRucksack: dataUri(path.join(__dirname, "quellen/kind-pose-rucksack.png"), "image/png"),
   },
 };
