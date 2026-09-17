@@ -34,7 +34,8 @@ const NAVY_GLOW = HERO_GLOW;
 //  BASE  – Gold-Rimlight o.r. + Top-Vignette (Himmel zähmen) + leichte
 //          Gesamt-Abdunklung + unten dunkle „Bühne", in die das Buch sinkt
 //  DESKTOP – großer, weicher dunkler Verlauf über die Textzone (kein Balken)
-//  MOBILE  – oben dunkler, weil sich der Text dort über das Foto stapelt
+// Beide Overlays gelten nur ab lg – mobil steht das Foto als eigenes Bildband
+// über dem Textblock und braucht keine Text-Lesbarkeits-Schleier.
 const HERO_PHOTO_BASE =
   "radial-gradient(44% 40% at 84% 8%, color-mix(in oklab, var(--color-gold-400) 16%, transparent), transparent 60%)," +
   "linear-gradient(to bottom, rgba(9,11,16,0.62) 0%, rgba(9,11,16,0.22) 24%, transparent 46%)," +
@@ -42,8 +43,6 @@ const HERO_PHOTO_BASE =
   "linear-gradient(to top, rgba(9,11,16,0.95) 0%, rgba(9,11,16,0.60) 13%, rgba(9,11,16,0.20) 33%, transparent 52%)";
 const HERO_PHOTO_DESKTOP =
   "radial-gradient(95% 135% at -8% 46%, rgba(9,11,16,0.95), rgba(9,11,16,0.66) 46%, transparent 76%)";
-const HERO_PHOTO_MOBILE =
-  "linear-gradient(180deg, rgba(9,11,16,0.86) 0%, rgba(9,11,16,0.52) 42%, transparent 66%)";
 
 // Sieben goldene Wegpunkte (die 7 Stufen) als aufsteigender Pfad im Tal –
 // verbindet Buch, „7 Stufen" und Marke. Bewusst sehr dezent, nur auf Desktop.
@@ -267,20 +266,22 @@ export default async function BuchPage({
       {/* Hero: Foto-Hintergrund + Cover als dominantes Produkt.
           Niedrigere, definierte Höhe auf Desktop; Inhalt vertikal zentriert.
           Text + Buch stehen als zusammenhängendes, zentriertes Paar. */}
-      <section className="on-dark relative isolate flex min-h-[36rem] items-center overflow-hidden py-16 text-cream lg:h-[45rem] lg:py-0">
-        {/* Foto-Hintergrund (Next optimiert Auslieferung zu webp/avif) */}
+      <section className="on-dark relative isolate flex flex-col overflow-hidden bg-navy-900 text-cream lg:h-[45rem] lg:justify-center lg:py-0">
+        {/* Foto-Hintergrund – nur Desktop; mobil steht das Foto als Bildband
+            weiter unten (Next optimiert Auslieferung zu webp/avif). */}
         <Image
           src={heroBg}
           alt=""
           fill
           priority
           sizes="100vw"
-          className="-z-30 object-cover object-[center_60%]"
+          className="-z-30 hidden object-cover object-[center_60%] lg:block"
         />
-        {/* Lesbarkeits-Overlays */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-20" style={{ background: HERO_PHOTO_BASE }} />
+        {/* Goldener Glow hinter dem mobilen Textblock (Desktop: Foto) */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-20 lg:hidden" style={{ background: NAVY_GLOW }} />
+        {/* Lesbarkeits-Overlays – nur Desktop */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-20 hidden lg:block" style={{ background: HERO_PHOTO_BASE }} />
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-20 hidden lg:block" style={{ background: HERO_PHOTO_DESKTOP }} />
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-20 lg:hidden" style={{ background: HERO_PHOTO_MOBILE }} />
         {/* 7 Wegpunkte (7 Stufen) – sehr dezent, nur Desktop */}
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden lg:block">
           {HERO_WAYPOINTS.map(([l, t, s, o], i) => (
@@ -302,10 +303,40 @@ export default async function BuchPage({
           ))}
         </div>
 
-        <Container className="relative z-10">
+        {/* Mobiles Bildband: Foto mit dem Buchcover als Held – wie auf den
+            anderen Seiten. Die Unterkante blendet ins Navy, damit Bildband und
+            Textblock ineinander übergehen. Ab lg ausgeblendet. */}
+        <div className="relative aspect-[16/12] w-full shrink-0 lg:hidden">
+          <Image
+            src={heroBg}
+            alt=""
+            aria-hidden
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[center_50%]"
+          />
+          {/* Buchcover mittig, stehend – als Held des Bildbands */}
+          <div className="absolute inset-0 flex items-end justify-center pb-8">
+            <Image
+              src={buchCover}
+              alt="Buchcover „Werde Meister deiner Gedanken“ von Heiko Schwaninger"
+              priority
+              sizes="(max-width: 640px) 40vw, 11rem"
+              className="h-auto w-36 [filter:drop-shadow(-8px_16px_22px_rgba(0,0,0,0.55))] sm:w-44"
+            />
+          </div>
+          {/* Unterkante ins Navy blenden */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-900 via-navy-900/60 to-transparent"
+          />
+        </div>
+
+        <Container className="relative z-10 pb-14 pt-6 lg:py-0">
           <div className="mx-auto grid max-w-[70rem] items-center gap-9 lg:grid-cols-[minmax(0,32rem)_auto] lg:justify-center">
             {/* Textspalte – bewusst ruhig, keine Grafik dahinter */}
-            <div className="max-w-xl [text-shadow:0_2px_22px_rgba(8,16,42,0.9)]">
+            <div className="max-w-xl lg:[text-shadow:0_2px_22px_rgba(8,16,42,0.9)]">
               <Eyebrow>Das Buch</Eyebrow>
               <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
                 Werde Meister deiner <em className="accent">Gedanken</em>
@@ -361,11 +392,10 @@ export default async function BuchPage({
               </div>
             </div>
 
-            {/* Buch – als inszeniertes Produkt auf dunkler Bühne. Größer & leicht
-                nach rechts, tiefer gesetzt (self-end), damit es in die dunkle
-                Bodenfläche sinkt. Geerdet durch Bühne + Kontaktschatten +
-                echte Reflexion; Rimlight & Halo geben Tiefe/Trennung. */}
-            <div className="flex justify-center lg:justify-end lg:translate-x-4 lg:self-end lg:pb-16">
+            {/* Buch – Desktop-Inszenierung auf dunkler Bühne (mobil steht das
+                Cover bereits im Bildband oben). Geerdet durch Bühne +
+                Kontaktschatten + echte Reflexion; Rimlight & Halo geben Tiefe. */}
+            <div className="hidden lg:flex lg:justify-end lg:translate-x-4 lg:self-end lg:pb-16">
               <div className="relative w-64 sm:w-72 lg:w-[24rem]">
                 {/* dezentes Gold-Halo hinter dem Buch (Tiefe, Trennung vom Foto) */}
                 <div
