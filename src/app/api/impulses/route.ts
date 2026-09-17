@@ -23,6 +23,14 @@ export const dynamic = "force-dynamic";
  *
  * Einrichten: z. B. Vercel Cron (wöchentlich) auf diese URL zeigen lassen,
  * mit dem Secret im Authorization-Header.
+ *
+ * TESTSENDUNG (kein Echtversand):
+ *   ?test=<email>       – schickt EINEN Impuls an genau diese Adresse und
+ *                         lässt die Empfängerliste sowie alle Zähler unberührt.
+ *   &impulse=<index>    – optional: welcher Impuls (0-basiert, Standard 0).
+ *   Braucht nur CRON_SECRET + RESEND_API_KEY (kein Service-Role-Key nötig).
+ *   Beispiel:
+ *     /api/impulses?secret=<CRON_SECRET>&test=name@example.com&impulse=2
  */
 
 const FROM =
@@ -104,6 +112,82 @@ const ABO_GRUND_MITGLIED =
   "Du erhältst diese Impulse, weil du sie in deinem Bereich abonniert hast.";
 const ABO_GRUND_LEAD =
   "Du erhältst diese Impulse, weil du das kostenlose E-Book angefordert hast.";
+const ABO_GRUND_TEST =
+  "Dies ist eine Testsendung – sie ging nur an diese eine Adresse, kein Verteiler wurde angeschrieben.";
+
+/** Sehr einfache Plausibilitätsprüfung einer E-Mail-Adresse. */
+function isValidEmail(value: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+/**
+ * Testsendung: schickt genau EINEN Impuls an EINE Adresse.
+ * Liest die Empfängerliste NICHT und verändert KEINE Zähler – ideal, um den
+ * Versandweg (Resend/Absender/Rendering) gefahrlos zu prüfen.
+ */
+async function handleTestSend(
+  toEmail: string,
+  impulseParam: string | null,
+): Promise<Response> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json(
+      {
+        ok: false,
+        code: "not_configured",
+        error: "Testsendung nicht möglich: RESEND_API_KEY fehlt.",
+      },
+      { status: 503 },
+    );
+  }
+
+  if (!isValidEmail(toEmail)) {
+    return NextResponse.json(
+      { ok: false, error: `Ungültige Test-Adresse: ${toEmail}` },
+      { status: 400 },
+    );
+  }
+
+  // Impuls-Index wählen (0-basiert, robust gegen Unsinn) und zyklisch klemmen.
+  const parsed = Number.parseInt(impulseParam ?? "0", 10);
+  const idx =
+    ((Number.isFinite(parsed) ? parsed : 0) % impulses.length + impulses.length) %
+    impulses.length;
+  const impulse = impulses[idx];
+  const ctaUrl = `${site.url}${impulse.ctaPath}`;
+  // Kein echter Abmelde-Token nötig – Platzhalter, damit die Vorlage vollständig ist.
+  const unsubUrl = `${site.url}/api/impulses/unsubscribe?token=TESTSENDUNG`;
+
+  try {
+    const resend = new Resend(apiKey);
+    const { error: sendErr } = await resend.emails.send({
+      from: FROM,
+      to: toEmail,
+      subject: `[TEST] ${impulse.subject}`,
+      text: renderText(impulse, ctaUrl, unsubUrl, ABO_GRUND_TEST),
+      html: renderHtml(impulse, ctaUrl, unsubUrl, ABO_GRUND_TEST),
+    });
+    if (sendErr) throw sendErr;
+  } catch (err) {
+    console.error("Impuls-Testsendung fehlgeschlagen an", toEmail, err);
+    return NextResponse.json(
+      {
+        ok: false,
+        error: err instanceof Error ? err.message : "Versand fehlgeschlagen.",
+      },
+      { status: 502 },
+    );
+  }
+
+  return NextResponse.json({
+    ok: true,
+    test: true,
+    to: toEmail,
+    impulseIndex: idx,
+    subject: `[TEST] ${impulse.subject}`,
+    note: "Testsendung verschickt – Empfängerliste und Zähler wurden nicht berührt.",
+  });
+}
 
 async function handle(request: Request) {
   if (!authorized(request)) {
@@ -111,6 +195,13 @@ async function handle(request: Request) {
       { ok: false, error: "Nicht autorisiert." },
       { status: 401 },
     );
+  }
+
+  // --- Testmodus: nur an eine Adresse, ohne Verteiler/Zähler zu berühren ---
+  const params = new URL(request.url).searchParams;
+  const testEmail = params.get("test");
+  if (testEmail) {
+    return handleTestSend(testEmail, params.get("impulse"));
   }
 
   const apiKey = process.env.RESEND_API_KEY;

@@ -38,6 +38,31 @@ ausgelöst durch einen externen Cron-Aufruf.
    `?secret=<CRON_SECRET>` oder dem Header `Authorization: Bearer <CRON_SECRET>`
    (so würde z. B. Vercel Cron den Header automatisch setzen).
 
+## Testsendung (gefahrlos prüfen)
+
+Ob der Versandweg funktioniert (Resend-Key, Absender, Rendering), lässt sich mit
+einer **Testsendung an eine einzige Adresse** prüfen – **ohne** dass der
+Verteiler angeschrieben oder ein Zähler verändert wird:
+
+```
+GET/POST /api/impulses?secret=<CRON_SECRET>&test=<empfaenger-email>
+                       [&impulse=<index>]   # optional, 0-basiert, Standard 0
+```
+
+- Braucht nur `CRON_SECRET` **und** `RESEND_API_KEY` (kein Service-Role-Key).
+- Der Betreff wird mit `[TEST]` gekennzeichnet; die Mail liest die
+  Empfängertabellen **nicht** und schreibt **keine** `impulse_index`-Werte fort.
+- Antwort bei Erfolg: `{ ok: true, test: true, to, impulseIndex, subject }`.
+- Solange die Domain bei Resend nicht verifiziert ist (Absender
+  `onboarding@resend.dev`), stellt Resend nur an die eigene Konto-Adresse zu –
+  für den Test also die eigene Adresse verwenden.
+
+Beispiel (produktiv, intern im Docker-Netz):
+
+```
+curl "http://website:3000/api/impulses?secret=$CRON_SECRET&test=du@example.com"
+```
+
 ## Ablauf
 
 - Jeder Lauf schickt der Reihe nach:
