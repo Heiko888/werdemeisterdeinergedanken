@@ -153,6 +153,10 @@ export function behaviorFacts(input: {
   programmTotal: number;
   practicesDone: number;
   detektorTop: string[];
+  /** Auszug des zuletzt erzeugten KI-Readings (oder null). */
+  lastReading?: string | null;
+  /** Auszug des zuletzt erzeugten Muster-Spiegels (oder null). */
+  lastMuster?: string | null;
 }): string {
   const {
     rueckkehrStreak,
@@ -161,7 +165,14 @@ export function behaviorFacts(input: {
     programmTotal,
     practicesDone,
     detektorTop,
+    lastReading,
+    lastMuster,
   } = input;
+
+  const kürzen = (t: string, max = 240) => {
+    const s = t.trim().replace(/\s+/g, " ");
+    return s.length > max ? `${s.slice(0, max)}…` : s;
+  };
 
   const lines: string[] = [];
 
@@ -191,6 +202,14 @@ export function behaviorFacts(input: {
     lines.push(
       `- Im Manipulations-Detektor zuletzt häufig erkannt: ${detektorTop.join(", ")}.`,
     );
+  }
+
+  if (lastReading && lastReading.trim()) {
+    lines.push(`- Letztes persönliches KI-Reading (Auszug): „${kürzen(lastReading)}"`);
+  }
+
+  if (lastMuster && lastMuster.trim()) {
+    lines.push(`- Zuletzt gespiegeltes Muster (Auszug): „${kürzen(lastMuster)}"`);
   }
 
   if (lines.length === 0) {

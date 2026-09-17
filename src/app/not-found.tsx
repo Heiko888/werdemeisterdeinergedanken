@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { APP_GLOW } from "@/lib/gradients";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -29,6 +30,27 @@ export default function NotFound() {
           Zur Startseite
           <ArrowRight />
         </Button>
+
+        {/* Rückführung statt Sackgasse: die wichtigsten Wege direkt anbieten. */}
+        <nav
+          aria-label="Beliebte Seiten"
+          className="mt-2 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm"
+        >
+          {[
+            { href: "/die-7-stufen", label: "Die 7 Stufen" },
+            { href: "/blog", label: "Blog" },
+            { href: "/bewusstseinstest", label: "Bewusstseinstest" },
+            { href: "/kontakt", label: "Kontakt" },
+          ].map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="font-medium text-accent underline-offset-2 hover:underline"
+            >
+              {l.label}
+            </Link>
+          ))}
+        </nav>
       </Container>
     </section>
   );

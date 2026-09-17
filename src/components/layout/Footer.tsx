@@ -53,6 +53,16 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            {/* Kontakt als eigenständiger Nav-Eintrag (bislang nur als
+                Header-Button erreichbar). */}
+            <li>
+              <Link
+                href="/kontakt"
+                className="inline-flex min-h-11 items-center text-sm text-mist-300/70 transition-colors hover:text-white"
+              >
+                Kontakt
+              </Link>
+            </li>
           </ul>
         </div>
 

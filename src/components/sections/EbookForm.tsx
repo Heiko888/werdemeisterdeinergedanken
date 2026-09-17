@@ -18,7 +18,7 @@ type Status = "idle" | "sending" | "confirm" | "sent" | "fallback";
  * wird deshalb um einen erneuten Versuch gebeten statt das PDF freizugeben –
  * sonst wäre die Lead-Erfassung mit einem Klick zu umgehen.
  */
-export function EbookForm() {
+export function EbookForm({ source = "lead-magnet" }: { source?: string } = {}) {
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState(""); // Honeypot
   const [status, setStatus] = useState<Status>("idle");
@@ -35,7 +35,7 @@ export function EbookForm() {
       const res = await fetch("/api/ebook", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, company }),
+        body: JSON.stringify({ email, company, source }),
       });
       const data = await res.json().catch(() => ({}));
 

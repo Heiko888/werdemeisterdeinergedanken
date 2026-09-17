@@ -144,7 +144,7 @@ export function LeadMagnet() {
             </ul>
 
             <div className="mt-6">
-              <EbookForm />
+              <EbookForm source="startseite" />
             </div>
 
             {/* Trust-Zeile – Social Proof, der auf Hell bisher fehlte. */}

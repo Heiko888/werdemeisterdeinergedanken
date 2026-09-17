@@ -115,3 +115,40 @@ services:
       # OHNE diesen Mount ist /app/content/vorlagen im Container leer und die
       # Galerie liefert für jede Datei 404.
       - /opt/website-vorlagen:/app/content/vorlagen:ro
+
+  # ──────────────────────────────────────────────────────────────────────
+  # Wöchentlicher Impuls-/Nurture-Versand (E-Mail-Impulse).
+  #
+  # Statt eines externen Schedulers (z. B. Vercel Cron – gibt es hier nicht)
+  # übernimmt ein winziger busybox-crond-Dienst die Zeitsteuerung und ruft die
+  # geschützte Route /api/impulses im INTERNEN Docker-Netz auf (Servicename
+  # "website", kein öffentlicher Port nötig). Ein Lauf schickt die nächste
+  # Impuls-Rotation an alle Mitglieder mit Opt-in UND an bestätigte
+  # E-Book-Leads (Nurture-Strecke).
+  #
+  # Das CRON_SECRET wird beim Start in die container-interne crontab
+  # geschrieben (nicht ins Image, nicht ins Repo). Fehlt es, lehnt die Route
+  # jeden Aufruf mit 401 ab – es wird dann nichts verschickt.
+  #
+  # WICHTIG: wie der website-Service ist auch dies nur die versionierte
+  # Spiegelung. Produktiv muss der Dienst ebenso in
+  # /opt/mattermost/docker-compose.yml stehen.
+  impuls-cron:
+    image: busybox:1.37
+    restart: unless-stopped
+    depends_on:
+      - website
+    environment:
+      CRON_SECRET: ${CRON_SECRET:-}
+    command:
+      - sh
+      - -c
+      - |
+        set -eu
+        mkdir -p /var/spool/cron/crontabs
+        # Montags 07:00 (Container-Zeit = UTC). $$CRON_SECRET wird von der
+        # Shell beim Schreiben eingesetzt – der doppelte $ verhindert, dass
+        # Compose die Variable schon beim Parsen ersetzt.
+        echo "0 7 * * 1 wget -q -O- \"http://website:3000/api/impulses?secret=$$CRON_SECRET\" >/dev/null 2>&1" \
+          > /var/spool/cron/crontabs/root
+        exec crond -f -l 8
