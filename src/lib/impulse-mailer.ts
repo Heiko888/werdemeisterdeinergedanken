@@ -82,6 +82,33 @@ export function isValidEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+/**
+ * Holt eine lesbare Fehlermeldung aus beliebigem Fehler-Wert.
+ *
+ * Wichtig: Das Resend-SDK liefert bei `emails.send` KEIN Error-Objekt, sondern
+ * ein schlichtes `{ name, message, statusCode }`. `err instanceof Error` greift
+ * dort also nicht – deshalb ziehen wir `name`/`message` gezielt heraus, damit
+ * der echte Grund (z. B. „Domain nicht verifiziert") nicht verloren geht.
+ */
+export function errorMessage(err: unknown): string {
+  if (!err) return "Unbekannter Fehler.";
+  if (typeof err === "string") return err;
+  if (err instanceof Error) return err.message;
+  if (typeof err === "object") {
+    const o = err as Record<string, unknown>;
+    const name = typeof o.name === "string" ? o.name : "";
+    const message = typeof o.message === "string" ? o.message : "";
+    const joined = [name, message].filter(Boolean).join(": ");
+    if (joined) return joined;
+    try {
+      return JSON.stringify(err);
+    } catch {
+      return String(err);
+    }
+  }
+  return String(err);
+}
+
 /** Beliebige Eingabe zyklisch auf einen gültigen Impuls-Index klemmen. */
 export function resolveImpulseIndex(value: string | number | null | undefined): number {
   const parsed =
@@ -137,14 +164,14 @@ export async function sendTestImpulse(
       text: renderText(impulse, ctaUrl, unsubUrl, ABO_GRUND_TEST),
       html: renderHtml(impulse, ctaUrl, unsubUrl, ABO_GRUND_TEST),
     });
-    if (sendErr) throw sendErr;
+    // Resend meldet Fehler im `error`-Feld (kein throw) – Text gezielt auslesen.
+    if (sendErr) {
+      console.error("Impuls-Testsendung: Resend-Fehler an", email, sendErr);
+      return { ok: false, status: 502, error: errorMessage(sendErr) };
+    }
   } catch (err) {
     console.error("Impuls-Testsendung fehlgeschlagen an", email, err);
-    return {
-      ok: false,
-      status: 502,
-      error: err instanceof Error ? err.message : "Versand fehlgeschlagen.",
-    };
+    return { ok: false, status: 502, error: errorMessage(err) };
   }
 
   return { ok: true, to: email, impulseIndex: idx, subject };
