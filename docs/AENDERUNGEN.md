@@ -5,6 +5,31 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Verteilte Ratenbegrenzung (C2)
+
+**Anlass:** Letzter offener Punkt aus der Systemprüfung. Die Ratenbremse der
+öffentlichen Routen (Kontakt, E-Book, Klarheitsgespräch) lag bisher im
+Arbeitsspeicher – pro Container, beim Neustart verloren und bei mehreren
+Instanzen wirkungslos.
+
+**Neu:**
+- Tabelle `rate_limits` + atomare DB-Funktion `rate_limit_hit(bucket, ident,
+  max, window)` (Fixed-Window-Zähler, nur Service-Role). Migration
+  `20260917125609_rate_limits.sql` – in Produktion eingespielt.
+- Gemeinsamer Helfer `src/lib/rate-limit.ts` (`isRateLimited`, `clientIp`):
+  nutzt die DB-Funktion und fällt bei fehlendem Service-Role-Key / Fehler auf
+  einen In-Memory-Zähler zurück – das Limit wird also nie schlechter als bisher,
+  im Normalfall aber prozessübergreifend.
+- Die drei Routen `api/kontakt`, `api/ebook`, `api/klarheitsgespraech` nutzen
+  jetzt diesen Helfer (eigener `bucket` je Route), die lokalen In-Memory-Limiter
+  sind entfernt.
+
+**Geprüft:** `npm run build` + `npm test` (11/11) grün, ESLint ohne Befund.
+
+Damit sind ALLE Punkte aus dem Prüfbericht (Hoch/Mittel/Niedrig) umgesetzt.
+
+---
+
 ## 2026-09-17 – Feinschliff aus der Systemprüfung (Cron, Nurture-Doku, kleine Vernetzung)
 
 **Anlass:** Restliche „Feinschliff"-Punkte aus dem Prüfbericht.

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { site } from "@/lib/site";
+import { isRateLimited, clientIp } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -25,28 +26,10 @@ export const dynamic = "force-dynamic";
  * gespeichert.
  */
 
-// Ratenbremse pro IP – bewusst im Arbeitsspeicher (reicht für einen Container,
-// geht beim Neustart verloren). Gleiche Technik wie im Kontaktformular.
+// Ratenbremse pro IP – gemeinsamer Speicher über Supabase (lib/rate-limit.ts),
+// mit In-Memory-Fallback. Gleiche Technik wie im Kontaktformular.
 const RATE_WINDOW_MS = 10 * 60 * 1000;
 const RATE_MAX = 8;
-const hits = new Map<string, number[]>();
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
-  recent.push(now);
-  hits.set(ip, recent);
-  if (hits.size > 5000) hits.clear();
-  return recent.length > RATE_MAX;
-}
-
-function clientIp(request: Request): string {
-  // `x-real-ip` setzt unser nginx zuverlässig; `x-forwarded-for` ist
-  // client-manipulierbar, daher nur der letzte Eintrag als Fallback.
-  const xff = request.headers.get("x-forwarded-for");
-  const xffLast = xff?.split(",").pop()?.trim();
-  return request.headers.get("x-real-ip") || xffLast || "unknown";
-}
 
 function str(v: unknown): string {
   return String(v ?? "").trim();
@@ -75,7 +58,7 @@ export async function POST(request: Request) {
     );
   }
 
-  if (isRateLimited(clientIp(request))) {
+  if (await isRateLimited("klarheitsgespraech", clientIp(request), RATE_MAX, RATE_WINDOW_MS)) {
     return NextResponse.json(
       {
         ok: false,

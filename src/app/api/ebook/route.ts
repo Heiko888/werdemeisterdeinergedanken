@@ -4,6 +4,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { sendEbookConfirmationMail, sendEbookDeliveryMail } from "@/lib/ebook-mail";
 import { site } from "@/lib/site";
 import { ebookDownloadUrl } from "@/lib/ebook-download";
+import { isRateLimited, clientIp } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 
@@ -27,28 +28,10 @@ export const runtime = "nodejs";
  * ohne bestätigte Einwilligung kein E-Book.
  */
 
+// Ratenbremse: gemeinsamer Speicher über Supabase (lib/rate-limit.ts),
+// mit In-Memory-Fallback.
 const RATE_WINDOW_MS = 10 * 60 * 1000;
 const RATE_MAX = 5;
-const hits = new Map<string, number[]>();
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
-  recent.push(now);
-  hits.set(ip, recent);
-  if (hits.size > 5000) hits.clear();
-  return recent.length > RATE_MAX;
-}
-
-function clientIp(request: Request): string {
-  return (
-    // Siehe kontakt/route.ts: x-real-ip zuerst (nginx-gesetzt, nicht
-    // fälschbar); x-forwarded-for nur als Fallback und dort den letzten Eintrag.
-    request.headers.get("x-real-ip") ||
-    request.headers.get("x-forwarded-for")?.split(",").pop()?.trim() ||
-    "unknown"
-  );
-}
 
 function isEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
@@ -56,7 +39,7 @@ function isEmail(value: string): boolean {
 
 export async function POST(request: Request) {
   const ip = clientIp(request);
-  if (isRateLimited(ip)) {
+  if (await isRateLimited("ebook", ip, RATE_MAX, RATE_WINDOW_MS)) {
     return NextResponse.json(
       {
         ok: false,

@@ -8,6 +8,18 @@
 
 ---
 
+## Umsetzungsstand (Stand 2026-09-17)
+
+**Alle** priorisierten Punkte dieses Berichts sind umgesetzt (Details je Änderung in `docs/AENDERUNGEN.md`):
+
+- **Hoch:** A1 (zentrale Admin-Übersichten Leads/Mitglieder/Kontakt/Bestellungen), A2 (echte Abo-/Umsatzzahlen im Cockpit), A3 (Anker-Bug), A4 (Content→Buch/Mitgliedschaft-Verlinkung), A5 (fehlende Migrationen nachgezogen), A6 (Detektor-Verlauf + Praxis-Abschluss).
+- **Mittel:** B1 (gemeinsame Admin-Navigation), B2 (Sitemap-Links), B3 (Zahlung↔Konto über `user_id`), B4 (`/gratis-ebook` eingebunden), B5 (E-Book-Lead-Nurture), B6 (Begleiter-Momentum-Kontext), B7 (Test→Empfehlung), B8 (Begriffe), B9 (Buch↔Mitgliedschaft).
+- **Niedrig/Feinschliff:** C1 (Impuls-/Nurture-Cron als Docker-Dienst), C2 (verteilte Ratenbegrenzung), C9 (Lead-Herkunft), N1 (Kontakt im Footer), N3 (404-Rückführung), L8 (Begleiter kennt Reading/Muster-Spiegel).
+
+**Offene Ops-Aufgabe (kein Code):** Den Dienst `impuls-cron` aus `deploy/docker-compose.yml` noch in die produktive `/opt/mattermost/docker-compose.yml` übernehmen und starten, damit der wöchentliche Versand läuft.
+
+---
+
 ## 0. Gesamtbild in einem Satz
 
 Das System ist funktional breit und technisch sauber gebaut (sichere Bezahl- und Mail-Flüsse, ein datengetriebener Mitgliederbereich mit KI-Funktionen, drei echte Admin-CRUD-Bereiche). Die größte übergreifende Schwäche ist **fehlende Zusammenführung**: Leads, Käufer und Mitglieder laufen in getrennte Kanäle, ohne zentralen Admin-Überblick; die bezahlten Produkte (Buch, Mitgliedschaft) sind im Content kaum verlinkt; und verhaltensnahe Mitglieder-Tools erzeugen Daten, die nirgends zurückfließen.
