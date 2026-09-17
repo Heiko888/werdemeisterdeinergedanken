@@ -62,6 +62,8 @@ export function PageHero({
   fadeToColor,
   mobileBand,
   spotlight,
+  foreground,
+  foregroundAlt = "",
   children,
 }: {
   eyebrow?: string;
@@ -74,6 +76,15 @@ export function PageHero({
   fadeToColor?: string;
   mobileBand?: string;
   spotlight?: "left" | "right";
+  /**
+   * Optionales freigestelltes Motiv (PNG mit Transparenz), das über dem
+   * Hintergrundbild auf der Spotlight-Seite steht – z. B. eine Person. Wirkt nur
+   * ab `lg` und nur zusammen mit dem Spotlight-Aufbau (`image` + `spotlight`).
+   * Auf Mobile bleibt der Aufbau unverändert (Bildband oben, Text darunter).
+   */
+  foreground?: string;
+  /** Alt-Text der Vordergrund-Figur. Leer lassen, wenn sie rein dekorativ ist. */
+  foregroundAlt?: string;
   children?: ReactNode;
 }) {
   // Mit Bildband auf Mobile: das Bild liegt als eigenes Band im Fluss und wird
@@ -156,6 +167,31 @@ export function PageHero({
             aria-hidden
             className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-900 to-transparent lg:hidden"
           />
+          {/* Freigestellte Figur direkt im Bildband (nur bis lg): steht rechts
+              auf dem Motiv, unten bündig, Füße blenden weich in die Navy-Kante.
+              Dekorativ (aria-hidden) – der Alt-Text hängt an der Desktop-Figur. */}
+          {foreground && (
+            <div
+              aria-hidden
+              className="pointer-events-none absolute bottom-0 right-1 top-[6%] z-[1] w-[42%] sm:w-[36%] lg:hidden"
+            >
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 -z-10 opacity-70 blur-[50px]"
+                style={{
+                  background:
+                    "radial-gradient(46% 40% at 55% 30%, color-mix(in oklab, var(--color-gold-500) 26%, transparent) 0%, transparent 82%)",
+                }}
+              />
+              <Image
+                src={foreground}
+                alt=""
+                fill
+                sizes="42vw"
+                className="object-contain object-right-bottom [filter:drop-shadow(0_0_22px_rgba(217,169,58,0.16))] [-webkit-mask-image:linear-gradient(to_bottom,#000_86%,rgba(0,0,0,0.5)_95%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_86%,rgba(0,0,0,0.5)_95%,transparent_100%)]"
+              />
+            </div>
+          )}
         </div>
         {/* Navy-Schleier für Lesbarkeit über dem Bild – erst ab lg, darunter
             steht der Text ohnehin auf reinem Navy unter dem Band. Im
@@ -179,6 +215,42 @@ export function PageHero({
           className="pointer-events-none absolute inset-0 z-0"
           style={{ background: HERO_GLOW }}
         />
+        {/* Freigestellte Vordergrund-Figur über dem Hintergrund (nur ab lg).
+            Liegt über dem Navy-Schleier (z-[5]), damit sie hell bleibt, aber
+            unter dem Text (z-10). Am Content-Container (max-w-6xl) auf der
+            Spotlight-Seite verankert und unten bündig. */}
+        {foreground && (
+          <div
+            className={`pointer-events-none absolute inset-0 z-[5] hidden lg:block`}
+          >
+            <div
+              className={`mx-auto flex h-full max-w-6xl items-end px-5 sm:px-8 ${
+                spotlight === "left" ? "justify-start" : "justify-end"
+              }`}
+            >
+              <div className="relative h-[94%] w-[clamp(21rem,32vw,32rem)] self-end">
+                {/* weiche Gold-Aura hinter Kopf/Oberkörper */}
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 -z-10 opacity-80 blur-[80px]"
+                  style={{
+                    background:
+                      "radial-gradient(44% 40% at 50% 26%, color-mix(in oklab, var(--color-gold-500) 30%, transparent) 0%, color-mix(in oklab, var(--color-gold-500) 13%, transparent) 42%, transparent 90%)",
+                  }}
+                />
+                <Image
+                  src={foreground}
+                  alt={foregroundAlt}
+                  aria-hidden={foregroundAlt ? undefined : true}
+                  fill
+                  priority
+                  sizes="32rem"
+                  className="object-contain object-bottom [filter:drop-shadow(0_0_32px_rgba(217,169,58,0.14))_drop-shadow(0_0_80px_rgba(217,169,58,0.12))] [-webkit-mask-image:linear-gradient(to_bottom,#000_90%,rgba(0,0,0,0.6)_96%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_90%,rgba(0,0,0,0.6)_96%,transparent_100%)]"
+                />
+              </div>
+            </div>
+          </div>
+        )}
         <Container className="relative z-10">
           <div className={columnClass}>{body}</div>
         </Container>
