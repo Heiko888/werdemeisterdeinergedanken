@@ -5,6 +5,32 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Bewusstseinstest-Hero: freigestellte Figur über dem Hintergrund
+
+**Anlass:** Der Hero der Seite `/bewusstseinstest` sollte ein Bild (freigestellter,
+zeigender Heiko) über dem Hintergrundmotiv bekommen.
+
+**PageHero um Vordergrund-Figur erweitert:** Neuer optionaler Parameter
+`foreground` (freigestelltes PNG mit Transparenz) plus `foregroundAlt` in
+`PageHero`. Das Motiv liegt über dem Hintergrundbild auf der Spotlight-Seite,
+mit dezenter Gold-Aura und weichem Boden-/Unterkanten-Übergang. Wirkt nur im
+Spotlight-Aufbau (`image` + `spotlight`); andere Seiten bleiben unberührt.
+(`components/layout/PageHero.tsx`)
+- **Desktop (ab lg):** Figur groß rechts (Spotlight-Seite) über dem Hintergrund,
+  am Content-Container verankert und unten bündig – der Zeigefinger deutet zur
+  Textspalte.
+- **Mobil (bis lg):** Figur direkt im Bildband oben rechts, auf dem Motiv
+  stehend; Text darunter bleibt zentriert.
+
+**Bewusstseinstest-Seite:** `foreground="/632bbec8-e58f-4130-b74d-914b0f0860f0.png"`
+(freigestellte Ganzkörper-Aufnahme, zeigende Pose) am `PageHero` gesetzt.
+(`app/bewusstseinstest/page.tsx`)
+
+**Geprüft:** `tsc --noEmit` und ESLint ohne Befund; Desktop- und Mobil-Ansicht
+per Screenshot kontrolliert.
+
+---
+
 ## 2026-09-16 – Mitglieder-Vernetzung & Lead-Nurture (A6 / B5 / B6 / B7)
 
 **Anlass:** Aus dem Prüfbericht die „verhaltensnahen" Brüche schließen –
