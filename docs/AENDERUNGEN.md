@@ -5,6 +5,27 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Buch-Seite: mobiles Hero-Bildband mit Buchcover
+
+**Anlass:** Auf `/buch` war der Hero mobil ein Vollflächen-Foto hinter dem
+Text – anders als die übrigen Seiten (z. B. `/mitgliedschaft`), die das
+Hero-Bild mobil als eigenes „Bildband" über dem Textblock zeigen. Das
+Buchcover soll in diesem Bildband stehen.
+
+**Neu (`src/app/buch/page.tsx`):**
+- Der Hero ist mobil jetzt als **Bildband** aufgebaut (Muster wie
+  `/mitgliedschaft`): volles Foto im Fluss über dem Text, Unterkante blendet
+  ins Navy. Das **Buchcover steht als Held mittig im Bildband**.
+- Das Foto liegt nur noch ab `lg` als Vollflächen-Hintergrund hinter dem Text;
+  die Desktop-Buch-Inszenierung (rechte Spalte) ist ab `lg` sichtbar. Der
+  Desktop-Hero bleibt unverändert.
+- Overlays (`HERO_PHOTO_BASE`/`HERO_PHOTO_DESKTOP`) gelten nur noch ab `lg`;
+  der nicht mehr genutzte `HERO_PHOTO_MOBILE`-Verlauf wurde entfernt. Mobil
+  liegt hinter dem Textblock der übliche Navy-Glow.
+
+**Geprüft:** `npm run build` grün, ESLint ohne Befund, mobiler Screenshot
+(390 px) kontrolliert.
+
 ## 2026-09-17 – Hero-Bild der Buch-Seite zu WebP optimiert
 
 **Anlass:** Das neue Hero-Bild lag als PNG (~2,5 MB) im Repo. Zur Optimierung
