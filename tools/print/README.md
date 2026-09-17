@@ -33,9 +33,12 @@ Seite; dazwischen ein DIN-5008-naher Satzspiegel mit Platzhaltern
   automatisch vorhanden, der Textbereich bleibt frei beschreibbar.
 - **Logo:** Der Kopf nutzt das **echte Logo als Bild** (`public/email/wmdg-logo-lockup.png`,
   erzeugt von `npm run logo-lockup`) – goldenes Emblem + Wortmarke mit echtem
-  Gold-Verlauf. So sieht Word 1:1 wie Header/Briefbogen aus (Word kann keinen
-  Verlaufstext). Bei geändertem Emblem/Logo einmal `npm run gold-emblem` und
-  danach `npm run logo-lockup` laufen lassen.
+  Gold-Verlauf. Die Unterüberschrift („DEINER GEDANKEN" mit Flankenstrichen)
+  sitzt **zentriert** unter der Kopfzeile. So sieht Word 1:1 wie Header/Brief-
+  bogen aus (Word kann keinen Verlaufstext). Bei geändertem Emblem/Logo einmal
+  `npm run gold-emblem` und danach `npm run logo-lockup` laufen lassen.
+- **Schriftlogo:** Derselbe Lauf erzeugt zusätzlich `public/email/wmdg-schriftlogo.png`
+  – die **reine Wortmarke ohne Emblem** (ebenfalls mit zentrierter Unterüberschrift).
 
 > Baut auf `docx` (npm, devDependency). Das eingebettete Logo-Bild macht die
 > .docx eigenständig.

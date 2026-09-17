@@ -204,6 +204,20 @@ export const logos: LogoDatei[] = [
     verwendung: "E-Mail-Signatur-Logo",
   },
   {
+    src: "/email/wmdg-logo-lockup.png",
+    datei: "email/wmdg-logo-lockup.png",
+    verwendung:
+      "Logo-Lockup: Gold-Emblem + Wortmarke „WERDE MEISTER / DEINER GEDANKEN\" (Unterüberschrift zentriert) – für Word/Print",
+    hinweis: "Erzeugt von tools/print/logo-lockup.mjs (npm run logo-lockup).",
+  },
+  {
+    src: "/email/wmdg-schriftlogo.png",
+    datei: "email/wmdg-schriftlogo.png",
+    verwendung:
+      "Schriftlogo: reine Wortmarke „WERDE MEISTER / DEINER GEDANKEN\" ohne Emblem (Unterüberschrift zentriert)",
+    hinweis: "Erzeugt von tools/print/logo-lockup.mjs (npm run logo-lockup).",
+  },
+  {
     src: "/logo-brain-frei.png",
     datei: "logo-brain-frei.png",
     verwendung: "Freigestellte Emblem-Variante",

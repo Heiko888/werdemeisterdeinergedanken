@@ -6,9 +6,16 @@
  * Rendert das vollständige Marken-Logo – goldenes Emblem + Wortmarke
  * „WERDE MEISTER / DEINER GEDANKEN" (MEISTER im Gold-Verlauf, wie Header/
  * Briefbogen) – einmal via Chromium in ein transparentes PNG, damit es 1:1
- * (inkl. Verlauf) in die Word-Vorlage eingebettet werden kann.
+ * (inkl. Verlauf) in die Word-Vorlage eingebettet werden kann. Die Unter-
+ * überschrift („DEINER GEDANKEN" mit Flankenstrichen) sitzt zentriert unter
+ * der Kopfzeile.
  *
- * Ausgabe: public/email/wmdg-logo-lockup.png
+ * Aus demselben Renderer entsteht zusätzlich das reine Schriftlogo (Wortmarke
+ * ohne Emblem).
+ *
+ * Ausgaben:
+ *   public/email/wmdg-logo-lockup.png   Emblem + Wortmarke (Lockup)
+ *   public/email/wmdg-schriftlogo.png   nur Wortmarke (Schriftlogo)
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 import { createRequire } from "node:module";
@@ -31,7 +38,7 @@ html,body{background:transparent}
 .lock img{width:${34 * SCALE}px;height:${34 * SCALE}px;filter:drop-shadow(0 0 ${2 * SCALE}px rgba(216,169,58,.30))}
 .wm .l1{font-family:Inter,sans-serif;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:${13 * SCALE}px;line-height:1;color:${C.ink}}
 .wm .l1 .g{background:linear-gradient(100deg,${C.gold500},${C.gold700});-webkit-background-clip:text;background-clip:text;color:transparent}
-.wm .l2{margin-top:${2.4 * SCALE}px;display:flex;align-items:center;gap:${2.4 * SCALE}px;font-family:Inter,sans-serif;font-weight:600;letter-spacing:.26em;text-transform:uppercase;font-size:${5 * SCALE}px;color:${C.ink}}
+.wm .l2{margin-top:${2.4 * SCALE}px;display:flex;align-items:center;justify-content:center;gap:${2.4 * SCALE}px;font-family:Inter,sans-serif;font-weight:600;letter-spacing:.26em;text-transform:uppercase;font-size:${5 * SCALE}px;color:${C.ink}}
 .wm .l2 i{display:block;width:${5 * SCALE}px;height:${0.9 * SCALE}px;background:linear-gradient(90deg,${C.gold500},${C.gold600})}
 .wm .l2 span{padding-left:.26em}
 </style></head><body>
@@ -59,9 +66,16 @@ writeFileSync(tmp, html);
 const browser = await chromium.launch({ executablePath: findChrome() });
 const page = await browser.newPage({ deviceScaleFactor: 1 });
 await page.goto(pathToFileURL(tmp).href, { waitUntil: "networkidle" });
-const el = await page.$(".lock");
-const out = join(ROOT, "public/email/wmdg-logo-lockup.png");
-await el.screenshot({ path: out, omitBackground: true });
+const lock = await page.$(".lock");
+const lockOut = join(ROOT, "public/email/wmdg-logo-lockup.png");
+await lock.screenshot({ path: lockOut, omitBackground: true });
+
+// Reines Schriftlogo (Wortmarke ohne Emblem) aus demselben Render.
+const wm = await page.$(".wm");
+const wmOut = join(ROOT, "public/email/wmdg-schriftlogo.png");
+await wm.screenshot({ path: wmOut, omitBackground: true });
+
 await browser.close();
 try { require("node:fs").rmSync(tmp, { force: true }); } catch {}
 console.log("✓ public/email/wmdg-logo-lockup.png");
+console.log("✓ public/email/wmdg-schriftlogo.png");
