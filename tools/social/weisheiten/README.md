@@ -24,7 +24,8 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
 - **Einzel-Story „Papa, kannste mal erklären?"** (`gen-papa.js`): Hook-Story im **9:16-Format
   (1080×1920)** mit **2 Personen** – Junge (freigestellt, Blick nach oben, Rucksack) links,
   Papa (freigestellt, Hände in den Taschen, Blick zum Kind) rechts und größer, einander
-  zugewandt. Text oben, Gold-Kursiv auf „erklären" → 1 Motiv (`output/papa-erklaeren-9x16.png`).
+  zugewandt. Text oben, Gold-Kursiv auf „erklären", je **9:16 + 4:5** → 2 Motive
+  (`output/papa-erklaeren-9x16.png`, `output/papa-erklaeren-4x5.png`).
 
 > **Hinweis:** Die Bilder liegen bewusst unter `tools/…` (Quellen + fertige
 > Ausgabe), **nicht** unter `public/`. Sie sind Social-Assets/Build-Inputs und
