@@ -4,6 +4,14 @@ import { Resend } from "resend";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { impulses } from "@/lib/impulses";
 import { site } from "@/lib/site";
+import {
+  FROM,
+  ABO_GRUND_MITGLIED,
+  ABO_GRUND_LEAD,
+  renderHtml,
+  renderText,
+  sendTestImpulse,
+} from "@/lib/impulse-mailer";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -31,12 +39,8 @@ export const dynamic = "force-dynamic";
  *   Braucht nur CRON_SECRET + RESEND_API_KEY (kein Service-Role-Key nötig).
  *   Beispiel:
  *     /api/impulses?secret=<CRON_SECRET>&test=name@example.com&impulse=2
+ *   Im Admin-Cockpit geht das per Button unter /admin/impulse.
  */
-
-const FROM =
-  process.env.IMPULSE_FROM ||
-  process.env.CONTACT_FROM ||
-  "Werde Meister deiner Gedanken <onboarding@resend.dev>";
 
 /** Zeitkonstanter String-Vergleich – verhindert Timing-Rückschlüsse aufs Secret. */
 function safeEqual(a: string, b: string): boolean {
@@ -55,140 +59,6 @@ function authorized(request: Request): boolean {
   return query != null && safeEqual(query, secret);
 }
 
-function escapeHtml(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
-
-function renderHtml(
-  impulse: (typeof impulses)[number],
-  ctaUrl: string,
-  unsubUrl: string,
-  aboGrund: string,
-): string {
-  const paragraphs = impulse.body
-    .map(
-      (p) =>
-        `<p style="margin:0 0 1rem;font-size:16px;line-height:1.6;color:#2a3446">${escapeHtml(
-          p,
-        )}</p>`,
-    )
-    .join("");
-
-  return `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:34rem;margin:0 auto;padding:8px">
-    <p style="font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#7a869a;margin:0 0 .5rem">${escapeHtml(
-      site.name,
-    )}</p>
-    <h1 style="font-size:22px;line-height:1.25;color:#141b2b;margin:0 0 1.25rem">${escapeHtml(
-      impulse.heading,
-    )}</h1>
-    ${paragraphs}
-    <p style="margin:1.5rem 0">
-      <a href="${ctaUrl}" style="display:inline-block;background:#141b2b;color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px">${escapeHtml(
-        impulse.ctaLabel,
-      )}</a>
-    </p>
-    <hr style="border:none;border-top:1px solid #e6e9ef;margin:2rem 0 1rem">
-    <p style="font-size:12px;line-height:1.5;color:#9aa4b5;margin:0">
-      ${escapeHtml(aboGrund)}
-      <a href="${unsubUrl}" style="color:#9aa4b5">Jederzeit abmelden</a>.
-    </p>
-  </div>`;
-}
-
-/** Textfassung der Impuls-Mail (Plain-Text-Alternative). */
-function renderText(
-  impulse: (typeof impulses)[number],
-  ctaUrl: string,
-  unsubUrl: string,
-  aboGrund: string,
-): string {
-  return `${impulse.heading}\n\n${impulse.body.join("\n\n")}\n\n${impulse.ctaLabel}: ${ctaUrl}\n\n—\n${aboGrund}\nAbmelden: ${unsubUrl}`;
-}
-
-const ABO_GRUND_MITGLIED =
-  "Du erhältst diese Impulse, weil du sie in deinem Bereich abonniert hast.";
-const ABO_GRUND_LEAD =
-  "Du erhältst diese Impulse, weil du das kostenlose E-Book angefordert hast.";
-const ABO_GRUND_TEST =
-  "Dies ist eine Testsendung – sie ging nur an diese eine Adresse, kein Verteiler wurde angeschrieben.";
-
-/** Sehr einfache Plausibilitätsprüfung einer E-Mail-Adresse. */
-function isValidEmail(value: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-}
-
-/**
- * Testsendung: schickt genau EINEN Impuls an EINE Adresse.
- * Liest die Empfängerliste NICHT und verändert KEINE Zähler – ideal, um den
- * Versandweg (Resend/Absender/Rendering) gefahrlos zu prüfen.
- */
-async function handleTestSend(
-  toEmail: string,
-  impulseParam: string | null,
-): Promise<Response> {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    return NextResponse.json(
-      {
-        ok: false,
-        code: "not_configured",
-        error: "Testsendung nicht möglich: RESEND_API_KEY fehlt.",
-      },
-      { status: 503 },
-    );
-  }
-
-  if (!isValidEmail(toEmail)) {
-    return NextResponse.json(
-      { ok: false, error: `Ungültige Test-Adresse: ${toEmail}` },
-      { status: 400 },
-    );
-  }
-
-  // Impuls-Index wählen (0-basiert, robust gegen Unsinn) und zyklisch klemmen.
-  const parsed = Number.parseInt(impulseParam ?? "0", 10);
-  const idx =
-    ((Number.isFinite(parsed) ? parsed : 0) % impulses.length + impulses.length) %
-    impulses.length;
-  const impulse = impulses[idx];
-  const ctaUrl = `${site.url}${impulse.ctaPath}`;
-  // Kein echter Abmelde-Token nötig – Platzhalter, damit die Vorlage vollständig ist.
-  const unsubUrl = `${site.url}/api/impulses/unsubscribe?token=TESTSENDUNG`;
-
-  try {
-    const resend = new Resend(apiKey);
-    const { error: sendErr } = await resend.emails.send({
-      from: FROM,
-      to: toEmail,
-      subject: `[TEST] ${impulse.subject}`,
-      text: renderText(impulse, ctaUrl, unsubUrl, ABO_GRUND_TEST),
-      html: renderHtml(impulse, ctaUrl, unsubUrl, ABO_GRUND_TEST),
-    });
-    if (sendErr) throw sendErr;
-  } catch (err) {
-    console.error("Impuls-Testsendung fehlgeschlagen an", toEmail, err);
-    return NextResponse.json(
-      {
-        ok: false,
-        error: err instanceof Error ? err.message : "Versand fehlgeschlagen.",
-      },
-      { status: 502 },
-    );
-  }
-
-  return NextResponse.json({
-    ok: true,
-    test: true,
-    to: toEmail,
-    impulseIndex: idx,
-    subject: `[TEST] ${impulse.subject}`,
-    note: "Testsendung verschickt – Empfängerliste und Zähler wurden nicht berührt.",
-  });
-}
-
 async function handle(request: Request) {
   if (!authorized(request)) {
     return NextResponse.json(
@@ -201,7 +71,21 @@ async function handle(request: Request) {
   const params = new URL(request.url).searchParams;
   const testEmail = params.get("test");
   if (testEmail) {
-    return handleTestSend(testEmail, params.get("impulse"));
+    const res = await sendTestImpulse(testEmail, params.get("impulse"));
+    if (!res.ok) {
+      return NextResponse.json(
+        { ok: false, code: res.code, error: res.error },
+        { status: res.status },
+      );
+    }
+    return NextResponse.json({
+      ok: true,
+      test: true,
+      to: res.to,
+      impulseIndex: res.impulseIndex,
+      subject: res.subject,
+      note: "Testsendung verschickt – Empfängerliste und Zähler wurden nicht berührt.",
+    });
   }
 
   const apiKey = process.env.RESEND_API_KEY;

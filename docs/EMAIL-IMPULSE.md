@@ -11,7 +11,9 @@ ausgelöst durch einen externen Cron-Aufruf.
 | Opt-in am Profil + Abmelde-Token | `supabase/migrations/0004_newsletter.sql` |
 | Opt-in-Schalter (Dashboard) | `src/components/members/NewsletterToggle.tsx`, Action in `src/app/mitglieder/actions.ts` |
 | Impuls-Inhalte | `src/lib/impulses.ts` |
+| Versand-Bausteine (Rendering + Testsendung) | `src/lib/impulse-mailer.ts` |
 | Serienversand (geschützt) | `src/app/api/impulses/route.ts` |
+| Admin-Button „Testimpuls senden" | `src/app/admin/impulse/` (`page.tsx`, `ImpulsTest.tsx`, `actions.ts`) |
 | 1-Klick-Abmeldung | `src/app/api/impulses/unsubscribe/route.ts` |
 | Service-Role-Client | `src/lib/supabase/admin.ts` |
 
@@ -42,7 +44,14 @@ ausgelöst durch einen externen Cron-Aufruf.
 
 Ob der Versandweg funktioniert (Resend-Key, Absender, Rendering), lässt sich mit
 einer **Testsendung an eine einzige Adresse** prüfen – **ohne** dass der
-Verteiler angeschrieben oder ein Zähler verändert wird:
+Verteiler angeschrieben oder ein Zähler verändert wird.
+
+**Per Klick (empfohlen):** Im Admin-Cockpit unter **`/admin/impulse`** (Reiter
+„Impulse" bzw. Button „Testimpuls senden" auf der Übersicht). Adresse eingeben,
+Impuls wählen, senden. Zugriff nur für angemeldete Admins – kein `CRON_SECRET`
+nötig, nur `RESEND_API_KEY`.
+
+**Per URL (Cron/Terminal):**
 
 ```
 GET/POST /api/impulses?secret=<CRON_SECRET>&test=<empfaenger-email>
