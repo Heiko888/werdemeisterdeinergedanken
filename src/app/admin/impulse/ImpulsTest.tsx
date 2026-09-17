@@ -5,8 +5,16 @@ import { cn } from "@/lib/cn";
 import { Mail } from "@/components/ui/Icon";
 import { sendTestImpulseAction, type SendResult } from "./actions";
 
+/** Für die Vorschau nötige Felder eines Impulses (ohne interne Pfade). */
+export type ImpulsVorschau = {
+  subject: string;
+  heading: string;
+  body: string[];
+  ctaLabel: string;
+};
+
 /**
- * Formular hinter dem Button „Testimpuls senden".
+ * Formular hinter dem Button „Testimpuls senden" – mit Live-Vorschau.
  *
  * Schickt genau EINEN Impuls an EINE Adresse – ohne Verteiler oder Zähler zu
  * berühren. Der eigentliche Versand läuft über die Server-Action
@@ -14,16 +22,18 @@ import { sendTestImpulseAction, type SendResult } from "./actions";
  */
 export function ImpulsTest({
   defaultEmail,
-  betreffe,
+  vorschauen,
 }: {
   defaultEmail: string;
-  /** Betreffzeilen aller Impulse – für die Auswahl im Dropdown. */
-  betreffe: string[];
+  /** Alle Impulse (Betreff, Überschrift, Text, CTA) für Auswahl + Vorschau. */
+  vorschauen: ImpulsVorschau[];
 }) {
   const [email, setEmail] = useState(defaultEmail);
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState<SendResult | null>(null);
   const [pending, startTransition] = useTransition();
+
+  const aktuell = vorschauen[index] ?? vorschauen[0];
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -54,13 +64,43 @@ export function ImpulsTest({
           onChange={(e) => setIndex(Number(e.target.value))}
           className="min-h-11 rounded-xl border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-accent/50"
         >
-          {betreffe.map((betreff, i) => (
+          {vorschauen.map((v, i) => (
             <option key={i} value={i}>
-              {i + 1}. {betreff}
+              {i + 1}. {v.subject}
             </option>
           ))}
         </select>
       </label>
+
+      {/* Live-Vorschau des gewählten Impulses (so kommt er – bis auf [TEST]) */}
+      {aktuell && (
+        <div className="flex flex-col gap-1.5">
+          <span className="text-sm font-medium text-ink">Vorschau</span>
+          <div className="rounded-xl border border-ink/10 bg-white p-5 shadow-card">
+            <p className="text-xs uppercase tracking-[0.15em] text-ink-muted">
+              Betreff: <span className="normal-case">[TEST] {aktuell.subject}</span>
+            </p>
+            <h3 className="mt-3 font-display text-lg font-medium leading-snug text-ink">
+              {aktuell.heading}
+            </h3>
+            <div className="mt-2 flex flex-col gap-2">
+              {aktuell.body.map((p, i) => (
+                <p key={i} className="text-sm leading-relaxed text-ink-mid">
+                  {p}
+                </p>
+              ))}
+            </div>
+            <span className="mt-4 inline-flex w-fit items-center rounded-full bg-ink px-4 py-2 text-xs font-semibold text-white">
+              {aktuell.ctaLabel}
+            </span>
+            <p className="mt-4 border-t border-ink/10 pt-3 text-xs leading-relaxed text-ink-muted">
+              Dies ist eine Testsendung – sie geht nur an diese eine Adresse, kein
+              Verteiler wird angeschrieben. <span className="underline">Jederzeit
+              abmelden</span>.
+            </p>
+          </div>
+        </div>
+      )}
 
       <button
         type="submit"

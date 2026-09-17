@@ -43,7 +43,14 @@ export default async function AdminImpulsePage() {
   if (!isAdminEmail(user.email)) redirect("/mitglieder");
 
   const resendReady = Boolean(process.env.RESEND_API_KEY);
-  const betreffe = impulses.map((i) => i.subject);
+  // Nur die für die Vorschau nötigen Felder ans Client-Formular geben
+  // (keine internen CTA-Pfade).
+  const vorschauen = impulses.map(({ subject, heading, body, ctaLabel }) => ({
+    subject,
+    heading,
+    body,
+    ctaLabel,
+  }));
 
   return (
     <>
@@ -92,7 +99,7 @@ export default async function AdminImpulsePage() {
           )}
 
           <Card className="flex flex-col gap-5">
-            <ImpulsTest defaultEmail={user.email ?? ""} betreffe={betreffe} />
+            <ImpulsTest defaultEmail={user.email ?? ""} vorschauen={vorschauen} />
           </Card>
 
           <p className="mt-6 text-sm text-ink-muted">
