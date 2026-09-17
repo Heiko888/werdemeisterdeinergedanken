@@ -20,6 +20,7 @@ const SECTIONS: { href: string; label: string }[] = [
   { href: "/admin/erstgespraeche", label: "Erstgespräche" },
   { href: "/admin/methoden", label: "Methoden" },
   { href: "/admin/redaktionsplan", label: "Redaktionsplan" },
+  { href: "/admin/impulse", label: "Impulse" },
   { href: "/admin/vorlagen", label: "Vorlagen" },
   { href: "/admin/marken-uebersicht", label: "Marken" },
   { href: "/admin/bewusstseinsbibliothek", label: "Bibliothek" },

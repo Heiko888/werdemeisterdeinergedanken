@@ -4,6 +4,14 @@ import { Resend } from "resend";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { impulses } from "@/lib/impulses";
 import { site } from "@/lib/site";
+import {
+  FROM,
+  ABO_GRUND_MITGLIED,
+  ABO_GRUND_LEAD,
+  renderHtml,
+  renderText,
+  sendTestImpulse,
+} from "@/lib/impulse-mailer";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -23,12 +31,16 @@ export const dynamic = "force-dynamic";
  *
  * Einrichten: z. B. Vercel Cron (wöchentlich) auf diese URL zeigen lassen,
  * mit dem Secret im Authorization-Header.
+ *
+ * TESTSENDUNG (kein Echtversand):
+ *   ?test=<email>       – schickt EINEN Impuls an genau diese Adresse und
+ *                         lässt die Empfängerliste sowie alle Zähler unberührt.
+ *   &impulse=<index>    – optional: welcher Impuls (0-basiert, Standard 0).
+ *   Braucht nur CRON_SECRET + RESEND_API_KEY (kein Service-Role-Key nötig).
+ *   Beispiel:
+ *     /api/impulses?secret=<CRON_SECRET>&test=name@example.com&impulse=2
+ *   Im Admin-Cockpit geht das per Button unter /admin/impulse.
  */
-
-const FROM =
-  process.env.IMPULSE_FROM ||
-  process.env.CONTACT_FROM ||
-  "Werde Meister deiner Gedanken <onboarding@resend.dev>";
 
 /** Zeitkonstanter String-Vergleich – verhindert Timing-Rückschlüsse aufs Secret. */
 function safeEqual(a: string, b: string): boolean {
@@ -47,70 +59,33 @@ function authorized(request: Request): boolean {
   return query != null && safeEqual(query, secret);
 }
 
-function escapeHtml(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
-
-function renderHtml(
-  impulse: (typeof impulses)[number],
-  ctaUrl: string,
-  unsubUrl: string,
-  aboGrund: string,
-): string {
-  const paragraphs = impulse.body
-    .map(
-      (p) =>
-        `<p style="margin:0 0 1rem;font-size:16px;line-height:1.6;color:#2a3446">${escapeHtml(
-          p,
-        )}</p>`,
-    )
-    .join("");
-
-  return `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:34rem;margin:0 auto;padding:8px">
-    <p style="font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#7a869a;margin:0 0 .5rem">${escapeHtml(
-      site.name,
-    )}</p>
-    <h1 style="font-size:22px;line-height:1.25;color:#141b2b;margin:0 0 1.25rem">${escapeHtml(
-      impulse.heading,
-    )}</h1>
-    ${paragraphs}
-    <p style="margin:1.5rem 0">
-      <a href="${ctaUrl}" style="display:inline-block;background:#141b2b;color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:999px">${escapeHtml(
-        impulse.ctaLabel,
-      )}</a>
-    </p>
-    <hr style="border:none;border-top:1px solid #e6e9ef;margin:2rem 0 1rem">
-    <p style="font-size:12px;line-height:1.5;color:#9aa4b5;margin:0">
-      ${escapeHtml(aboGrund)}
-      <a href="${unsubUrl}" style="color:#9aa4b5">Jederzeit abmelden</a>.
-    </p>
-  </div>`;
-}
-
-/** Textfassung der Impuls-Mail (Plain-Text-Alternative). */
-function renderText(
-  impulse: (typeof impulses)[number],
-  ctaUrl: string,
-  unsubUrl: string,
-  aboGrund: string,
-): string {
-  return `${impulse.heading}\n\n${impulse.body.join("\n\n")}\n\n${impulse.ctaLabel}: ${ctaUrl}\n\n—\n${aboGrund}\nAbmelden: ${unsubUrl}`;
-}
-
-const ABO_GRUND_MITGLIED =
-  "Du erhältst diese Impulse, weil du sie in deinem Bereich abonniert hast.";
-const ABO_GRUND_LEAD =
-  "Du erhältst diese Impulse, weil du das kostenlose E-Book angefordert hast.";
-
 async function handle(request: Request) {
   if (!authorized(request)) {
     return NextResponse.json(
       { ok: false, error: "Nicht autorisiert." },
       { status: 401 },
     );
+  }
+
+  // --- Testmodus: nur an eine Adresse, ohne Verteiler/Zähler zu berühren ---
+  const params = new URL(request.url).searchParams;
+  const testEmail = params.get("test");
+  if (testEmail) {
+    const res = await sendTestImpulse(testEmail, params.get("impulse"));
+    if (!res.ok) {
+      return NextResponse.json(
+        { ok: false, code: res.code, error: res.error },
+        { status: res.status },
+      );
+    }
+    return NextResponse.json({
+      ok: true,
+      test: true,
+      to: res.to,
+      impulseIndex: res.impulseIndex,
+      subject: res.subject,
+      note: "Testsendung verschickt – Empfängerliste und Zähler wurden nicht berührt.",
+    });
   }
 
   const apiKey = process.env.RESEND_API_KEY;
