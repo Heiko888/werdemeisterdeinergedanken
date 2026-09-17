@@ -12,7 +12,7 @@ import { HERO_GLOW } from "@/lib/gradients";
 import { bookTestimonials } from "@/lib/content";
 import buchCover from "../../../public/buch-cover-3d.webp";
 import heikoPortrait from "../../../public/heiko-avatar.webp";
-import heroBg from "../../../public/95752990-9d57-488f-b19c-6134fd48413e.png";
+import heroBg from "../../../public/buch-hero-bg.webp";
 
 export const metadata: Metadata = withCanonical("/buch", {
   title: "Das Buch: Werde Meister deiner Gedanken",

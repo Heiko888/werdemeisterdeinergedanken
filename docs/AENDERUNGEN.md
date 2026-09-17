@@ -5,6 +5,19 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Hero-Bild der Buch-Seite zu WebP optimiert
+
+**Anlass:** Das neue Hero-Bild lag als PNG (~2,5 MB) im Repo. Zur Optimierung
+in ein schlankes WebP umgewandelt.
+
+**Neu:**
+- `public/buch-hero-bg.webp` enthält jetzt das neue Küsten-/Sonnenuntergangs-
+  Motiv (aus dem PNG konvertiert, Qualität 82). **273 KB statt 2,5 MB.**
+- `src/app/buch/page.tsx`: Hero-Import (`heroBg`) zeigt wieder auf
+  `public/buch-hero-bg.webp`.
+- Das große PNG `public/95752990-9d57-488f-b19c-6134fd48413e.png` wurde
+  entfernt.
+
 ## 2026-09-17 – Neues Hero-Bild auf der Buch-Seite
 
 **Anlass:** Wunsch, das Hintergrundbild im Hero der Buch-Seite auszutauschen.
