@@ -5,6 +5,18 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Neues Hero-Bild auf der Buch-Seite
+
+**Anlass:** Wunsch, das Hintergrundbild im Hero der Buch-Seite auszutauschen.
+
+**Neu:**
+- `src/app/buch/page.tsx`: Der Hero-Hintergrund (`heroBg`) importiert jetzt
+  `public/95752990-9d57-488f-b19c-6134fd48413e.png` (Sonnenuntergang/Küste)
+  statt `public/buch-hero-bg.webp`. Nur der Import-Pfad wurde geändert –
+  Overlays, Layout und Buch-Inszenierung bleiben unverändert.
+
+---
+
 ## 2026-09-17 – Verteilte Ratenbegrenzung (C2)
 
 **Anlass:** Letzter offener Punkt aus der Systemprüfung. Die Ratenbremse der
