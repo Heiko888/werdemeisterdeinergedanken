@@ -173,7 +173,7 @@ export function PageHero({
           {foreground && (
             <div
               aria-hidden
-              className="pointer-events-none absolute bottom-0 right-1 top-[6%] z-[1] w-[42%] sm:w-[36%] lg:hidden"
+              className="pointer-events-none absolute bottom-0 right-10 top-[6%] z-[1] w-[42%] sm:right-14 sm:w-[36%] lg:hidden"
             >
               <div
                 aria-hidden
@@ -228,7 +228,11 @@ export function PageHero({
                 spotlight === "left" ? "justify-start" : "justify-end"
               }`}
             >
-              <div className="relative h-[94%] w-[clamp(21rem,32vw,32rem)] self-end">
+              <div
+                className={`relative h-[94%] w-[clamp(21rem,32vw,32rem)] self-end ${
+                  spotlight === "left" ? "lg:ms-6 xl:ms-16" : "lg:me-6 xl:me-16"
+                }`}
+              >
                 {/* weiche Gold-Aura hinter Kopf/Oberkörper */}
                 <div
                   aria-hidden
