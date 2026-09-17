@@ -5,6 +5,39 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Gesprächs-Cockpit: Fragebogen-Zitate füllen die Platzhalter
+
+**Anlass:** Im Gesprächs-Cockpit (`/admin/erstgespraeche/[id]`) standen in den
+Phasentexten nur die rohen Variablen wie `{Zitat aus dem Fragebogen}`, `{X}`
+oder `{Zeitraum}` – ohne Inhalt. Das Zitat aus dem Fragebogen wurde nur an
+einer Stelle (Einstieg Phase 2) und auch nur bei verknüpftem Fragebogen
+ersetzt; alle übrigen `{…}`-Platzhalter blieben roh stehen.
+
+**Neu (`src/app/admin/erstgespraeche/[id]/Cockpit.tsx`):**
+- Neue `Vorlage`-Komponente rendert jeden Text mit `{…}`-Platzhaltern: Aus dem
+  Fragebogen befüllbare Platzhalter werden mit dem echten Inhalt gefüllt und
+  hervorgehoben, alle übrigen erscheinen als **dezente Lücke** zum mündlichen
+  Ergänzen – **nie mehr als roher `{…}`-Code**.
+- `baueVorlagenWerte()` + `VORLAGEN_FELDER` mappen die Platzhalter auf die
+  Fragebogen-Felder: `{Zitat aus dem Fragebogen}` → `anlass`,
+  `{Schon versucht}` / `{Versuche}` → `versucht`, `{Selbsteinschätzung}` →
+  `stufe`.
+- Angewendet auf Wortlaut, Einstieg und Fragen aller Phasen sowie auf die
+  Einwand-Antworten (Schnellzugriffe). Die alte Einzel-Ersetzung im Einstieg
+  entfällt.
+
+**Neu (`src/lib/erstgespraech/phasen.ts`):**
+- Mehrdeutige Platzhalter eindeutig benannt, damit sie sicher zugeordnet werden
+  können: `{X}` → `{Schon versucht}` (Phase 3) bzw. `{Selbsteinschätzung}`,
+  `{Y}` → `{Fremdeinschätzung}` (Phase 5).
+
+**Hinweis:** Die beiden bestehenden Test-Gespräche wurden „ohne Fragebogen"
+angelegt (kein `fragebogen_id`), deshalb bleiben dort die Zitat-Platzhalter
+leer und werden als Lücke gezeigt. Sobald ein Gespräch aus einem Fragebogen
+gestartet wird, füllen sich die Platzhalter mit dessen Inhalt.
+
+**Geprüft:** `npm run build` grün, ESLint ohne Befund.
+
 ## 2026-09-17 – Buch-Seite: mobiles Hero-Bildband mit Buchcover
 
 **Anlass:** Auf `/buch` war der Hero mobil ein Vollflächen-Foto hinter dem

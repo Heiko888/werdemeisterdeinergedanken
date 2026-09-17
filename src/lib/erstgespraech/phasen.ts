@@ -110,7 +110,7 @@ export const PHASEN: Phase[] = [
       { id: "q2", text: "Wen kostet es außer dir noch etwas?" },
       {
         id: "q3",
-        text: "Du hast gesagt, du hast schon {X} versucht. Was hat da gefehlt?",
+        text: "Du hast gesagt, du hast schon {Schon versucht} versucht. Was hat da gefehlt?",
       },
       {
         id: "q4",
@@ -168,7 +168,7 @@ export const PHASEN: Phase[] = [
       "Schritt 1 — Spiegeln, in seinen Worten:",
       "„Was ich gehört habe: Du {Problem in seinen Worten}. Das geht seit {Zeitraum}. Du hast {Versuche} probiert, und es hat nicht gehalten. Und was dich am meisten stört, ist {sein Punkt}. Richtig? Habe ich was Wichtiges ausgelassen?“ — auf ein klares „Ja, genau“ warten.",
       "Schritt 2 — Einordnen:",
-      "„Du hast dich im Fragebogen auf Stufe {X} eingeschätzt. Von außen würde ich sagen: Du bist eigentlich schon bei {Y} — du bemerkst es ja, sonst säßest du nicht hier. Was fehlt, ist nicht Einsicht. Was fehlt, ist Übung und jemand, der dranbleibt, wenn du es nicht tust.“",
+      "„Du hast dich im Fragebogen auf Stufe {Selbsteinschätzung} eingeschätzt. Von außen würde ich sagen: Du bist eigentlich schon bei {Fremdeinschätzung} — du bemerkst es ja, sonst säßest du nicht hier. Was fehlt, ist nicht Einsicht. Was fehlt, ist Übung und jemand, der dranbleibt, wenn du es nicht tust.“",
       "Schritt 3 — Eine Option empfehlen, nicht drei. (Wortlaute je Angebot rechts unter „Angebote“.)",
       "Schritt 4 — Nach dem Preis schweigen. Wer nach dem Preis weiterredet, verhandelt gegen sich selbst.",
     ],

@@ -48,6 +48,80 @@ type Props = {
 
 const NOTIZ_DEBOUNCE = 800;
 
+// ---------------------------------------------------------------------------
+// Platzhalter in den Phasentexten aus dem Fragebogen füllen
+// ---------------------------------------------------------------------------
+
+/**
+ * Welche `{Platzhalter}` sich direkt aus dem Fragebogen befüllen lassen.
+ * Alles andere (z. B. `{Zeitraum}`, `{Situation}`) wird im Gespräch mündlich
+ * ergänzt und als dezente Lücke angezeigt – nie als roher `{…}`-Code.
+ */
+const VORLAGEN_FELDER: Record<string, keyof FragebogenRow> = {
+  "Zitat aus dem Fragebogen": "anlass",
+  "Schon versucht": "versucht",
+  Versuche: "versucht",
+  Selbsteinschätzung: "stufe",
+};
+
+/** Baut die Ersetzungen für die Phasentexte aus dem Fragebogen. */
+function baueVorlagenWerte(
+  fragebogen: FragebogenRow | null,
+): Record<string, string> {
+  const werte: Record<string, string> = {};
+  if (!fragebogen) return werte;
+  for (const [platzhalter, feld] of Object.entries(VORLAGEN_FELDER)) {
+    const roh = fragebogen[feld];
+    if (roh == null) continue;
+    const wert = String(roh).trim();
+    if (wert) werte[platzhalter] = wert;
+  }
+  return werte;
+}
+
+/**
+ * Rendert einen Text mit `{Platzhalter}`. Bekannte Platzhalter werden mit dem
+ * Fragebogen-Inhalt gefüllt und hervorgehoben; unbekannte erscheinen als
+ * dezente Lücke zum mündlichen Ergänzen.
+ */
+function Vorlage({
+  text,
+  werte,
+}: {
+  text: string;
+  werte: Record<string, string>;
+}) {
+  const teile = text.split(/(\{[^}]+\})/g);
+  return (
+    <>
+      {teile.map((teil, i) => {
+        const treffer = /^\{([^}]+)\}$/.exec(teil);
+        if (!treffer) return teil;
+        const name = treffer[1].trim();
+        const wert = werte[name];
+        if (wert) {
+          return (
+            <mark
+              key={i}
+              className="rounded bg-accent/12 px-1 font-medium text-ink"
+            >
+              {wert}
+            </mark>
+          );
+        }
+        return (
+          <span
+            key={i}
+            className="rounded bg-ink/[0.06] px-1 italic text-ink-muted"
+          >
+            {name}
+          </span>
+        );
+      })}
+    </>
+  );
+}
+
 function mmss(total: number): string {
   const s = Math.max(0, Math.floor(total));
   const m = Math.floor(s / 60);
@@ -102,6 +176,12 @@ function leseUhrStart(g: GespraechRow): { elapsed: number; laeuft: boolean } {
 
 export function Cockpit({ gespraech, fragebogen, zitateInitial }: Props) {
   const id = gespraech.id;
+
+  // Platzhalter der Phasentexte aus dem Fragebogen füllen (z. B. das Zitat).
+  const vorlagenWerte = useMemo(
+    () => baueVorlagenWerte(fragebogen),
+    [fragebogen],
+  );
 
   // --- Notizen (Auto-Speichern + localStorage-Entwurf) ---------------------
   const [notizen, setNotizen] = useState<Record<string, string>>(
@@ -417,7 +497,7 @@ export function Cockpit({ gespraech, fragebogen, zitateInitial }: Props) {
             phaseRefs={phaseRefs}
             textareaRefs={textareaRefs}
             onZitatMarkierung={zitatAusMarkierung}
-            fragebogen={fragebogen}
+            vorlagenWerte={vorlagenWerte}
           />
         </div>
 
@@ -425,6 +505,7 @@ export function Cockpit({ gespraech, fragebogen, zitateInitial }: Props) {
           <Schnellzugriffe
             zitate={zitate}
             onLoeschen={loescheZitat}
+            vorlagenWerte={vorlagenWerte}
           />
         </div>
       </div>
@@ -526,7 +607,7 @@ function PhasenSpalte({
   phaseRefs,
   textareaRefs,
   onZitatMarkierung,
-  fragebogen,
+  vorlagenWerte,
 }: {
   offen: string;
   setOffen: (k: string) => void;
@@ -540,7 +621,7 @@ function PhasenSpalte({
     Record<string, HTMLTextAreaElement | null>
   >;
   onZitatMarkierung: (phaseKey: string) => void;
-  fragebogen: FragebogenRow | null;
+  vorlagenWerte: Record<string, string>;
 }) {
   return (
     <div className="flex flex-col gap-3">
@@ -562,7 +643,7 @@ function PhasenSpalte({
             textareaRefs.current[phase.key] = el;
           }}
           onZitatMarkierung={() => onZitatMarkierung(phase.key)}
-          fragebogen={fragebogen}
+          vorlagenWerte={vorlagenWerte}
         />
       ))}
     </div>
@@ -581,7 +662,7 @@ function PhaseCard({
   setRef,
   setTextareaRef,
   onZitatMarkierung,
-  fragebogen,
+  vorlagenWerte,
 }: {
   phase: Phase;
   offen: boolean;
@@ -594,16 +675,8 @@ function PhaseCard({
   setRef: (el: HTMLDivElement | null) => void;
   setTextareaRef: (el: HTMLTextAreaElement | null) => void;
   onZitatMarkierung: () => void;
-  fragebogen: FragebogenRow | null;
+  vorlagenWerte: Record<string, string>;
 }) {
-  const einstieg =
-    phase.einstieg && fragebogen?.anlass
-      ? phase.einstieg.replace(
-          "{Zitat aus dem Fragebogen}",
-          fragebogen.anlass.trim(),
-        )
-      : phase.einstieg;
-
   return (
     <section
       ref={setRef}
@@ -638,15 +711,15 @@ function PhaseCard({
                   key={i}
                   className="font-display mb-2 text-[1.02rem] leading-relaxed text-ink last:mb-0"
                 >
-                  {satz}
+                  <Vorlage text={satz} werte={vorlagenWerte} />
                 </p>
               ))}
             </div>
           )}
 
-          {einstieg && (
+          {phase.einstieg && (
             <p className="font-display text-[1.02rem] leading-relaxed text-ink">
-              {einstieg}
+              <Vorlage text={phase.einstieg} werte={vorlagenWerte} />
             </p>
           )}
 
@@ -676,7 +749,7 @@ function PhaseCard({
                           drin ? "text-ink-muted line-through" : "text-ink-soft"
                         }`}
                       >
-                        {f.text}
+                        <Vorlage text={f.text} werte={vorlagenWerte} />
                       </span>
                     </button>
                   </li>
@@ -738,9 +811,11 @@ function PhaseCard({
 function Schnellzugriffe({
   zitate,
   onLoeschen,
+  vorlagenWerte,
 }: {
   zitate: ZitatRow[];
   onLoeschen: (id: string) => void;
+  vorlagenWerte: Record<string, string>;
 }) {
   const [offenerEinwand, setOffenerEinwand] = useState<string | null>(null);
 
@@ -814,7 +889,7 @@ function Schnellzugriffe({
                         key={i}
                         className="mb-2 text-sm leading-relaxed text-ink-mid last:mb-0"
                       >
-                        {a}
+                        <Vorlage text={a} werte={vorlagenWerte} />
                       </p>
                     ))}
                   </div>
