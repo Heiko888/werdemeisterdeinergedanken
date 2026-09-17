@@ -20,8 +20,8 @@ const FOOT = 1885; // gemeinsame Fußlinie
 
 // Figuren-Setup: targetH = Höhe der Silhouette in px, centerX = horizontale Mitte
 const FIGS = [
-  { pose: "kindRucksack", targetH: 850,  centerX: 330, z: 2 }, // Kind vorne/links, kleiner
-  { pose: "papaTaschen",  targetH: 1120, centerX: 730, z: 1 }, // Papa rechts, größer
+  { pose: "kindRucksack", targetH: 985,  centerX: 322, z: 2 }, // Kind vorne/links, kleiner
+  { pose: "papaTaschen",  targetH: 1295, centerX: 742, z: 1 }, // Papa rechts, größer
 ];
 
 const TEXT = `Papa, kannste<br>mal <em>erkl&auml;ren</em>?`;
