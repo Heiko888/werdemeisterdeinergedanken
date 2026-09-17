@@ -176,7 +176,7 @@ export default function GratisEbookPage() {
               unter dem Buch, Desktop unten rechts */}
           <Reveal delay={150} className="lg:col-start-2 lg:row-start-2">
             <div className="on-light w-full rounded-3xl border border-cream/10 bg-paper/95 p-5 shadow-xl sm:p-6">
-              <EbookForm />
+              <EbookForm source="gratis-ebook" />
             </div>
           </Reveal>
         </Container>
@@ -331,7 +331,7 @@ export default function GratisEbookPage() {
               Sofort per E-Mail, jederzeit abbestellbar.
             </p>
             <div className="on-light mt-2 w-full max-w-xl rounded-3xl border border-cream/10 bg-paper/95 p-5 text-left shadow-xl sm:p-6">
-              <EbookForm />
+              <EbookForm source="gratis-ebook" />
             </div>
           </Reveal>
         </Container>

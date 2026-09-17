@@ -5,6 +5,37 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-17 – Feinschliff aus der Systemprüfung (Cron, Nurture-Doku, kleine Vernetzung)
+
+**Anlass:** Restliche „Feinschliff"-Punkte aus dem Prüfbericht.
+
+- **Impuls-/Nurture-Cron (C1):** Der wöchentliche Versand hatte keinen im Repo
+  definierten Scheduler (nur ein Vercel-Beispiel – hier läuft aber Docker
+  Compose + Caddy). Neuer Dienst **`impuls-cron`** (busybox-crond) in
+  `deploy/docker-compose.yml`: ruft montags 07:00 intern
+  `/api/impulses?secret=…` auf und bedient so Mitglieder **und** die
+  E-Book-Lead-Nurture-Strecke. Muss produktiv in
+  `/opt/mattermost/docker-compose.yml` gespiegelt werden. Doku
+  `docs/EMAIL-IMPULSE.md` entsprechend aktualisiert (Docker statt Vercel,
+  Nurture-Ablauf, bewusst zyklische Serie).
+- **Lead-Herkunft (C9):** Das Gratis-E-Book-Formular übergibt jetzt eine
+  `source` („startseite" bzw. „gratis-ebook"); die Route speichert sie beim
+  ersten Anlegen in `ebook_leads.source` (auswertbar unter /admin/leads).
+  (`EbookForm.tsx`, `LeadMagnet.tsx`, `gratis-ebook/page.tsx`, `api/ebook/route.ts`)
+- **Kontakt im Footer (N1):** „Kontakt" ist jetzt ein eigener Footer-Nav-Eintrag
+  (bisher nur als Header-Button). (`Footer.tsx`)
+- **404-Rückführung (N3):** Die Nicht-gefunden-Seite bietet neben „Zur
+  Startseite" nun Direktlinks zu 7 Stufen, Blog, Bewusstseinstest und Kontakt.
+  (`not-found.tsx`)
+- **Begleiter kennt KI-Snapshots (L8):** Der KI-Begleiter bekommt einen kurzen
+  Auszug des letzten Readings und des letzten Muster-Spiegels als Kontext –
+  vorher lagen diese isoliert. (`begleiter-prompt.ts`, `begleiter/antwort/route.ts`)
+
+**Geprüft:** `npm run build` + `npm test` (11/11) grün, ESLint ohne Befund,
+Compose-YAML valide. Keine Datenbank-Änderung nötig.
+
+---
+
 ## 2026-09-17 – Bewusstseinstest-Hero: Figur vom Rand eingerückt
 
 **Anlass:** Die freigestellte Figur stand zu nah am Rand.

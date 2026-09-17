@@ -80,6 +80,14 @@ export async function POST(request: Request) {
   const body = (data ?? {}) as Record<string, unknown>;
   const email = String(body.email ?? "").trim().toLowerCase();
   const honeypot = String(body.company ?? "").trim();
+  // Herkunft des Leads (z. B. "startseite", "gratis-ebook") – auf einen
+  // slug-artigen Wert begrenzt, damit die Spalte auswertbar bleibt.
+  const source =
+    String(body.source ?? "")
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9_-]/g, "")
+      .slice(0, 40) || "lead-magnet";
 
   // Spam-Schutz: Honeypot ausgefüllt → still verwerfen (Erfolg vortäuschen)
   if (honeypot) return NextResponse.json({ ok: true, mode: "confirm" });
@@ -180,7 +188,9 @@ export async function POST(request: Request) {
         request_ip: ip,
         // Bei bestehendem „pending"-Lead ein neues Token erzwingen, damit alte
         // Links ungültig werden; Standard-Default greift nur beim Insert.
-        ...(existing ? { confirm_token: crypto.randomUUID() } : {}),
+        // Die Herkunft (source) wird nur beim ersten Anlegen gesetzt, damit ein
+        // erneuter Eintrag die ursprüngliche Quelle nicht überschreibt.
+        ...(existing ? { confirm_token: crypto.randomUUID() } : { source }),
       },
       { onConflict: "email" },
     )

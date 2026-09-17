@@ -26,23 +26,34 @@ ausgelöst durch einen externen Cron-Aufruf.
    - `CRON_SECRET` – schützt die Versand-Route
    - `IMPULSE_FROM` (optional) – Absenderadresse (nach Domain-Verifizierung
      bei Resend die eigene Domain verwenden)
-3. **Cron einrichten**, der wöchentlich die Versand-Route aufruft, z. B. mit
-   Vercel Cron (`vercel.json`):
-   ```json
-   {
-     "crons": [{ "path": "/api/impulses", "schedule": "0 7 * * 1" }]
-   }
-   ```
-   Vercel Cron sendet automatisch den Header `Authorization: Bearer $CRON_SECRET`,
-   wenn `CRON_SECRET` als Env-Var gesetzt ist. Alternativ ein beliebiger
-   Scheduler mit `?secret=<CRON_SECRET>` oder dem Bearer-Header.
+3. **Cron einrichten**, der wöchentlich die Versand-Route aufruft. Produktiv
+   läuft die Seite als Docker-Compose-Stack (kein Vercel), deshalb übernimmt das
+   ein eigener `busybox`-crond-Dienst **`impuls-cron`** in der Compose-Datei
+   (`deploy/docker-compose.yml`, produktiv gespiegelt in
+   `/opt/mattermost/docker-compose.yml`). Er ruft montags 07:00 intern
+   `http://website:3000/api/impulses?secret=$CRON_SECRET` auf – kein
+   öffentlicher Port nötig.
+
+   Jeder andere Scheduler funktioniert ebenso: Aufruf mit
+   `?secret=<CRON_SECRET>` oder dem Header `Authorization: Bearer <CRON_SECRET>`
+   (so würde z. B. Vercel Cron den Header automatisch setzen).
 
 ## Ablauf
 
-- Jeder Lauf schickt jeder opted-in Person den **nächsten** Impuls
-  (`impulse_index` am Profil zählt hoch, die Serie läuft zyklisch über alle
-  Einträge in `impulses.ts`).
-- Jede Mail enthält einen **Abmeldelink** (`/api/impulses/unsubscribe?token=…`).
+- Jeder Lauf schickt der Reihe nach:
+  1. jedem **Mitglied** mit Opt-in (`profiles.newsletter_opt_in`) den nächsten
+     Impuls (`profiles.impulse_index` zählt hoch),
+  2. jedem **bestätigten E-Book-Lead** mit `nurture_opt_in`
+     (`ebook_leads.status = 'confirmed'`) den nächsten Impuls
+     (`ebook_leads.impulse_index` zählt hoch) – die Brücke E-Book →
+     Mitgliedschaft.
+- **Keine Doppel-Mails:** Wer als Mitglied schon eine Mail bekommen hat, wird in
+  der Lead-Schleife übersprungen (Abgleich per E-Mail).
+- Die Serie läuft **zyklisch** über alle Einträge in `impulses.ts` (bewusst
+  endlos – die Impulse sind als wiederkehrender Rhythmus gedacht, nicht als
+  einmaliger Kurs).
+- Jede Mail enthält einen **Abmeldelink**: Mitglieder
+  `/api/impulses/unsubscribe?token=…`, Leads `/api/ebook/unsubscribe?token=…`.
 - Ohne die nötigen Keys antwortet die Route mit `503 not_configured` und
   verschickt nichts – nichts bricht.
 

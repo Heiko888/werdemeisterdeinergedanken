@@ -11,6 +11,8 @@ import {
 import { getProgrammFortschritt } from "@/app/mitglieder/programm-actions";
 import { getRueckkehrDaten } from "@/app/mitglieder/rueckkehr-actions";
 import { getDetektorHistory } from "@/app/mitglieder/detektor-actions";
+import { getLatestReading } from "@/app/mitglieder/reading-actions";
+import { getLatestMusterSpiegel } from "@/app/mitglieder/muster-actions";
 import { PROGRAMM_TAGE_GESAMT } from "@/lib/programm";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
 import {
@@ -158,12 +160,15 @@ export async function POST(request: Request): Promise<Response> {
   const profil = buildGedankenprofil({ startStage, scores, completedNumbers });
 
   // Verhaltens-/Momentum-Kontext (B6): woran die Person tatsächlich dranbleibt.
-  const [programmTage, rueckkehr, practices, detektorHist] = await Promise.all([
-    getProgrammFortschritt(),
-    getRueckkehrDaten(),
-    getCompletedPractices(),
-    getDetektorHistory(20),
-  ]);
+  const [programmTage, rueckkehr, practices, detektorHist, letztesReading, letzterSpiegel] =
+    await Promise.all([
+      getProgrammFortschritt(),
+      getRueckkehrDaten(),
+      getCompletedPractices(),
+      getDetektorHistory(20),
+      getLatestReading(),
+      getLatestMusterSpiegel(),
+    ]);
   const detektorZaehler = new Map<string, number>();
   for (const eintrag of detektorHist) {
     for (const f of eintrag.funde) {
@@ -182,6 +187,8 @@ export async function POST(request: Request): Promise<Response> {
     programmTotal: PROGRAMM_TAGE_GESAMT,
     practicesDone: practices.length,
     detektorTop,
+    lastReading: letztesReading?.body ?? null,
+    lastMuster: letzterSpiegel?.body ?? null,
   });
 
   const system = buildSystemPrompt({
