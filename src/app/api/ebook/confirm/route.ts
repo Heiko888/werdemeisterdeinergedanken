@@ -4,6 +4,8 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { sendEbookDeliveryMail } from "@/lib/ebook-mail";
 import { site } from "@/lib/site";
 import { ebookDownloadUrl } from "@/lib/ebook-download";
+import { sendSequenceStep } from "@/lib/sequence-mailer";
+import { testLeadSequence } from "@/lib/sequences";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -15,6 +17,13 @@ export const dynamic = "force-dynamic";
  * Das E-Book wird nur beim Übergang pending → confirmed verschickt. So lösen
  * Link-Vorschauen/Scanner, die den Link mehrfach abrufen, keinen doppelten
  * Versand aus – ein erneuter Aufruf zeigt nur die Erfolgsseite.
+ *
+ * Leads aus dem Bewusstseinstest (Spalte `stufe` gesetzt, /api/test-lead)
+ * nutzen dieselbe Bestätigung: Statt der E-Book-Lieferung geht die Tag-0-Mail
+ * der Verkaufsstrecke raus (Ergebnis + Gratis-Kapitel, idempotent über
+ * lead_sequence_state) und der Browser landet direkt auf der Ergebnisseite
+ * /bewusstseinstest/ergebnis/<stufe>. Hat dieselbe Adresse vorher auch das
+ * E-Book angefordert (source ≠ bewusstseinstest), wird es zusätzlich geliefert.
  */
 
 function htmlPage(
@@ -60,7 +69,7 @@ export async function GET(request: Request) {
 
   const { data: lead, error } = await admin
     .from("ebook_leads")
-    .select("id, email, status, unsubscribe_token")
+    .select("id, email, status, unsubscribe_token, stufe, source")
     .eq("confirm_token", token)
     .maybeSingle();
 
@@ -72,8 +81,15 @@ export async function GET(request: Request) {
     );
   }
 
+  const stufe = typeof lead.stufe === "number" ? lead.stufe : null;
+  const isTestLead = stufe != null && stufe >= 1 && stufe <= 7;
+  const ergebnisUrl = `${site.url}/bewusstseinstest/ergebnis/${stufe}?bestaetigt=1`;
+
   // Schon bestätigt → nicht erneut senden (schützt vor Link-Vorschau-Doppelversand).
   if (lead.status === "confirmed") {
+    if (isTestLead && lead.source === "bewusstseinstest") {
+      return NextResponse.redirect(ergebnisUrl, 303);
+    }
     return htmlPage(
       "Schon bestätigt",
       "Deine Anmeldung ist bereits bestätigt – das E-Book ist unterwegs bzw. schon in deinem Postfach. Über den Link unten kannst du es auch direkt laden.",
@@ -106,6 +122,35 @@ export async function GET(request: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
+
+  // Test-Lead: Tag-0-Mail (Ergebnis + Kapitel) und Weiterleitung zur
+  // Ergebnisseite. Versandfehler sind unkritisch – die Seite zeigt alles.
+  if (isTestLead) {
+    if (apiKey) {
+      try {
+        await sendSequenceStep(
+          admin,
+          new Resend(apiKey),
+          {
+            id: String(lead.id),
+            email: String(lead.email),
+            stufe,
+            unsubscribe_token: String(lead.unsubscribe_token),
+          },
+          testLeadSequence,
+          0,
+        );
+      } catch (err) {
+        console.error("Ergebnis-Mail nach Bestätigung fehlgeschlagen:", err);
+      }
+    }
+    // Reiner Test-Lead → direkt zur Ergebnisseite. Wer vorher auch das E-Book
+    // wollte, bekommt es unten noch geliefert und sieht die Bestätigungsseite.
+    if (lead.source === "bewusstseinstest") {
+      return NextResponse.redirect(ergebnisUrl, 303);
+    }
+  }
+
   if (apiKey) {
     const unsubUrl = `${site.url}/api/ebook/unsubscribe?token=${lead.unsubscribe_token}`;
     try {

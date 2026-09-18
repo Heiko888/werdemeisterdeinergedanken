@@ -19,7 +19,7 @@ export const FROM =
 export const ABO_GRUND_MITGLIED =
   "Du erhältst diese Impulse, weil du sie in deinem Bereich abonniert hast.";
 export const ABO_GRUND_LEAD =
-  "Du erhältst diese Impulse, weil du das kostenlose E-Book angefordert hast.";
+  "Du erhältst diese Impulse, weil du den Bewusstseinstest gemacht oder das kostenlose E-Book angefordert hast.";
 export const ABO_GRUND_TEST =
   "Dies ist eine Testsendung – sie ging nur an diese eine Adresse, kein Verteiler wurde angeschrieben.";
 

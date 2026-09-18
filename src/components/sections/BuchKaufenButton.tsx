@@ -1,5 +1,9 @@
+"use client";
+
 import type { ReactNode } from "react";
 import { Button } from "@/components/ui/Button";
+import { UtmHiddenFields } from "@/components/analytics/UtmHiddenFields";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * „Buch bestellen"-Button, der den Stripe-Einmalkauf startet.
@@ -8,6 +12,9 @@ import { Button } from "@/components/ui/Button";
  * /api/buch-checkout): funktioniert ohne Client-JavaScript und leitet
  * serverseitig zur Stripe-Bezahlseite weiter. Ist Stripe noch nicht
  * eingerichtet, führt die Route sanft zum Kontaktformular.
+ *
+ * Client-Komponente nur für das `begin_checkout`-Event (nur mit Einwilligung)
+ * und die gemerkten UTM-Parameter als versteckte Felder (→ Stripe-Metadaten).
  */
 export function BuchKaufenButton({
   children,
@@ -24,8 +31,20 @@ export function BuchKaufenButton({
   edition?: "pdf" | "print";
 }) {
   return (
-    <form action="/api/buch-checkout" method="POST" className="contents">
+    <form
+      action="/api/buch-checkout"
+      method="POST"
+      className="contents"
+      onSubmit={() =>
+        trackEvent("begin_checkout", {
+          item: `buch-${edition}`,
+          value: edition === "print" ? 39.9 : 29.9,
+          currency: "EUR",
+        })
+      }
+    >
       <input type="hidden" name="edition" value={edition} />
+      <UtmHiddenFields />
       <Button type="submit" variant={variant} size={size} className={className}>
         {children}
       </Button>

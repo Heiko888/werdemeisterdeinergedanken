@@ -3,6 +3,8 @@
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
+import { trackEvent } from "@/lib/analytics";
+import { getUtm } from "@/lib/utm";
 
 type Status = "idle" | "sending" | "confirm" | "sent" | "fallback";
 
@@ -35,11 +37,13 @@ export function EbookForm({ source = "lead-magnet" }: { source?: string } = {}) 
       const res = await fetch("/api/ebook", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, company, source }),
+        // UTMs des ersten Seitenaufrufs mitschicken (Kampagnen-Zuordnung).
+        body: JSON.stringify({ email, company, source, ...getUtm() }),
       });
       const data = await res.json().catch(() => ({}));
 
       if (res.ok) {
+        trackEvent("generate_lead", { source, lead_type: "ebook" });
         if (typeof data?.downloadUrl === "string") setDownloadUrl(data.downloadUrl);
         setStatus(data?.mode === "sent" ? "sent" : "confirm");
         return;

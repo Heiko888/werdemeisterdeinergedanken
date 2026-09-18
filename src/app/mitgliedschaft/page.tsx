@@ -315,7 +315,8 @@ export default async function MitgliedschaftPage({
         </ol>
       </DarkSection>
 
-      {/* Stimmen */}
+      {/* Stimmen – nur mit echten Stimmen (content.ts, `testimonials`). */}
+      {testimonials.length > 0 && (
       <section className="bg-paper-aura grain-soft relative py-14 sm:py-28">
         <Container>
           <div className="max-w-xl">
@@ -347,6 +348,7 @@ export default async function MitgliedschaftPage({
           </div>
         </Container>
       </section>
+      )}
 
       {/* Zugang / Preis */}
       <DarkSection id="zugang">

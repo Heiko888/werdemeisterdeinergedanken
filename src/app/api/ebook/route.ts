@@ -5,6 +5,7 @@ import { sendEbookConfirmationMail, sendEbookDeliveryMail } from "@/lib/ebook-ma
 import { site } from "@/lib/site";
 import { ebookDownloadUrl } from "@/lib/ebook-download";
 import { isRateLimited, clientIp } from "@/lib/rate-limit";
+import { pickUtm } from "@/lib/utm";
 
 export const runtime = "nodejs";
 
@@ -71,6 +72,8 @@ export async function POST(request: Request) {
       .toLowerCase()
       .replace(/[^a-z0-9_-]/g, "")
       .slice(0, 40) || "lead-magnet";
+  // Kampagnen-Herkunft (utm_*), vom Formular aus sessionStorage mitgeschickt.
+  const utm = pickUtm(body);
 
   // Spam-Schutz: Honeypot ausgefüllt → still verwerfen (Erfolg vortäuschen)
   if (honeypot) return NextResponse.json({ ok: true, mode: "confirm" });
@@ -171,9 +174,9 @@ export async function POST(request: Request) {
         request_ip: ip,
         // Bei bestehendem „pending"-Lead ein neues Token erzwingen, damit alte
         // Links ungültig werden; Standard-Default greift nur beim Insert.
-        // Die Herkunft (source) wird nur beim ersten Anlegen gesetzt, damit ein
-        // erneuter Eintrag die ursprüngliche Quelle nicht überschreibt.
-        ...(existing ? { confirm_token: crypto.randomUUID() } : { source }),
+        // Die Herkunft (source, utm_*) wird nur beim ersten Anlegen gesetzt,
+        // damit ein erneuter Eintrag die ursprüngliche Quelle nicht überschreibt.
+        ...(existing ? { confirm_token: crypto.randomUUID() } : { source, ...utm }),
       },
       { onConflict: "email" },
     )

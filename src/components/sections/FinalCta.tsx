@@ -29,13 +29,15 @@ export function FinalCta() {
           </p>
         </Reveal>
         <Reveal delay={160}>
+          {/* CTA-Regel (Kampagnen-Check): Test als erster Schritt, Buch als
+              zweiter – kein Erstgespräch mehr auf der Startseite. */}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button href="/kontakt" variant="accent" size="lg">
-              Kostenloses Erstgespräch
+            <Button href="/bewusstseinstest" variant="accent" size="lg">
+              Bewusstseinstest starten
               <ArrowRight />
             </Button>
-            <Button href="/die-7-stufen" variant="secondary" size="lg">
-              Die 7 Stufen ansehen
+            <Button href="/buch" variant="secondary" size="lg">
+              Das Buch
             </Button>
           </div>
         </Reveal>

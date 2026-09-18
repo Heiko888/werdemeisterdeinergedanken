@@ -64,7 +64,7 @@ export const testStages: TestStage[] = [
       nextStep:
         "Hol dir kleine Momente der Bewusstheit in den Alltag: einmal am Tag kurz innehalten und bemerken, was du gerade denkst und fühlst – ganz ohne es zu ändern.",
       recommendation:
-        "Ein guter Einstieg ist das kostenlose E-Book. Wenn du magst, schauen wir in einem Gespräch gemeinsam, wo dein Autopilot dich am stärksten steuert.",
+        "Ein guter Einstieg ist das Gratis-Kapitel zu deiner Stufe: eine einzige Übung, ein paar Tage dranbleiben. Im Mitgliederbereich schauen wir dann gemeinsam, wo dein Autopilot dich am stärksten steuert.",
     },
   },
   {

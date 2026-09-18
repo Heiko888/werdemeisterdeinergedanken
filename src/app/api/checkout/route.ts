@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getStripe, STRIPE_PRICE_ID, priceIdForPlan, type Plan } from "@/lib/stripe";
 import { createClient } from "@/lib/supabase/server";
 import { site } from "@/lib/site";
+import { pickUtm, type UtmParams } from "@/lib/utm";
 
 export const runtime = "nodejs";
 
@@ -42,12 +43,15 @@ export async function POST(request: Request) {
     return NextResponse.redirect(`${origin}/kontakt?thema=mitgliedschaft`, 303);
   }
 
-  // Gewählten Plan (Monats-/Jahresabo) aus dem Formular lesen.
+  // Gewählten Plan (Monats-/Jahresabo) und die gemerkten UTM-Parameter
+  // (Kampagnen-Herkunft, versteckte Felder) aus dem Formular lesen.
   let plan: Plan | undefined;
+  let utm: UtmParams = {};
   try {
     const form = await request.formData();
     const p = String(form.get("plan") || "");
     if (p === "monat" || p === "jahr") plan = p;
+    utm = pickUtm(Object.fromEntries(form.entries()));
   } catch {
     // Kein Formular (z. B. direkter Aufruf) → Standard (Monatsabo).
   }
@@ -77,7 +81,13 @@ export async function POST(request: Request) {
       billing_address_collection: "auto",
       customer_email: email,
       client_reference_id: userId,
-      metadata: { ...(userId ? { supabase_user_id: userId } : {}), plan: plan ?? "monat" },
+      // UTMs wandern als Metadaten mit – so ist im Stripe-Dashboard (und im
+      // Webhook) sichtbar, über welche Kampagne der Kauf kam.
+      metadata: {
+        ...(userId ? { supabase_user_id: userId } : {}),
+        plan: plan ?? "monat",
+        ...utm,
+      },
       subscription_data: userId
         ? { metadata: { supabase_user_id: userId } }
         : undefined,
