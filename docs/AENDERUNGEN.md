@@ -5,6 +5,56 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-18 – Reel-Skripte neu gefasst (emotionale Aufladung) + Kampagnen-Check
+
+**Anlass:** Marketing-Analyse des Repos (`docs/audit/kampagnen-check-2026-09-18.md`):
+Die 97 Reel-Skripte waren Kurskapitel in Reel-Länge – Lehrbuch-Sprache,
+Hooks ohne Payoff, ein Format, fünf verschiedene CTAs, keine eigene
+Geschichte. Heikos Einschätzung („so funktioniert das nicht“, „mir fehlt das
+emotionale Aufladen“) bestätigt.
+
+**Neu (`docs/skripte/reels/`):**
+- `stufen.md` (21 Reels), `vertiefungen.md` (26 Reels) und
+  `mentale-selbstverteidigung.md` (16 Reels) komplett neu geschrieben nach dem
+  Rezept „Emotionale Aufladung“ (sieben Hebel: Szene statt Begriff, Körper vor
+  Kopf, innerer Satz wörtlich, Wendung als Entlastung, Beweis, eigene Haut,
+  Erlösung statt Moral). 50–75 gesprochene Wörter, drei Hook-Varianten pro
+  Reel (identischer Body), Folgen-Nummer im Cover.
+- Serien heißen auf Social jetzt „Der Satz, der dich festhält“ (Stufen +
+  Vertiefungen, Format A Talking Head mit Szene) und „Wessen Gedanke ist das?“
+  (Selbstverteidigung, Format B Green Screen vor Beweis-Bild).
+- **CTA-Regel für alle Serien:** nur in Caption und angepinntem Kommentar
+  („Schreib TEST – ich schick dir den Link zum kostenlosen Bewusstseinstest“),
+  nie im Video. Alle anderen CTAs (E-Book, Blog, Folgen, Mitglieder) entfallen.
+- Heikos echte Geschichte (2004 Insolvenz, erste Meditation, Juli 2020) ist
+  mit seinem Einverständnis vom 18.09.2026 eingebaut; Reel 19 (Stufen) und
+  jede Caption dazu tragen den Telefonseelsorge-Hinweis 0800 111 0 111.
+- Stellen in `[eckigen Klammern]` müssen vor dem Dreh mit Heikos eigenen
+  Zahlen/Namen gefüllt werden.
+- Alte Fassungen liegen in `docs/archiv/reels-2026-09-vor-neufassung/`.
+- `praxis.md` und `wissenschaft.md` sind noch unverändert (Praxis-Variante A
+  laut Befund als Reel ungeeignet – Umbau offen).
+
+**Neu (`src/lib/reels.ts`):**
+- Typ `Reel` erweitert um `nr`, `format` (A/B/C), `hookAlternatives`,
+  `winningHook`, `metrics` (3-s-Haltequote, Durchschauquote, Saves/1k,
+  Follows/1k, TEST-Kommentare) für das After-Action Review.
+- Die drei Serien aus den neuen Skripten regeneriert (Labels, Hooks,
+  Alternativen); Praxis, Landing und Wissenschaft unverändert. Gesamtzahl
+  bleibt 98, alle `filmed: false`. Admin-Cockpit (`admin-stats.ts`) benötigt
+  keine Anpassung.
+
+**Neu (`docs/audit/kampagnen-check-2026-09-18.md`):** vollständiger Befund
+(Angebot, Funnel, zehn Schwächen, Reel-Analyse), neue Kampagnen-Architektur
+(Funnel, CTA-Regel, Preisleiter, 7-Mail-Verkaufsstrecke), 30-Tage-Plan und
+Change-Liste für Code/Server (Punkte 1–15). Punkte 1–7 werden im Branch
+`claude/kampagnen-funnel` umgesetzt und hier gesondert protokolliert.
+
+**Geprüft:** Skripte per Skript aus dem Claude-Doc exportiert, Anzahl
+Reels/Serie gegen `reels.ts` abgeglichen (16/21/26).
+
+---
+
 ## 2026-09-17 – Gesprächs-Cockpit: Fragebogen-Zitate füllen die Platzhalter
 
 **Anlass:** Im Gesprächs-Cockpit (`/admin/erstgespraeche/[id]`) standen in den
