@@ -91,6 +91,31 @@ curl "http://website:3000/api/impulses?secret=$CRON_SECRET&test=du@example.com"
 - Ohne die nötigen Keys antwortet die Route mit `503 not_configured` und
   verschickt nichts – nichts bricht.
 
+## Verkaufsstrecken (Sequenzen) – seit 18.09.2026
+
+Vor der Impuls-Rotation durchlaufen neue Leads eine feste Mail-Strecke
+(Kampagnen-Check, Punkt 4):
+
+| Teil | Datei |
+|------|-------|
+| Inhalte: `testLeadSequence` (Tag 0/1/3/5/7/9/11), `bookBuyerSequence` (Tag 3/10/21) | `src/lib/sequences.ts` |
+| Versand + Zustand (`runSequences`, `emailsInActiveSequence`) | `src/lib/sequence-mailer.ts` |
+| Täglicher Cron-Endpoint (gleiche Absicherung wie `/api/impulses`) | `src/app/api/sequences/route.ts` |
+| Versandstand je Lead/Sequenz/Schritt | `supabase/migrations/0018_lead_sequence_state.sql` |
+| Test-Stufe + UTMs am Lead | `supabase/migrations/0017_leads_stufe.sql` |
+
+- Anker: `confirmed_at` des Leads (Double-Opt-in) bzw. `created_at` der
+  ersten Buch-Bestellung. Nur Leads/Käufe ab `SEQUENCE_ELIGIBLE_FROM`
+  (2026-09-18) – Bestandsleads bleiben in der Impuls-Rotation.
+- Pro Lead und Lauf höchstens ein Schritt; idempotent über die Tabelle.
+- Leads in laufender Strecke bekommen **keinen** Wochen-Impuls
+  (`leadsInSequence` im JSON von `/api/impulses`); danach übernimmt die
+  Rotation, deren CTAs für Nicht-Mitglieder auf
+  `/bewusstseinstest/ergebnis/N` zeigen (`ctaPathFor` in `impulses.ts`).
+- Cron: `impuls-cron` in `deploy/docker-compose.yml` ruft täglich 08:00 UTC
+  `/api/sequences?secret=$CRON_SECRET` auf (produktiv in
+  `/opt/mattermost/docker-compose.yml` nachziehen).
+
 ## Hinweise / DSGVO
 
 - Es gilt **Single-Opt-in** für bereits eingeloggte, verifizierte Mitglieder,

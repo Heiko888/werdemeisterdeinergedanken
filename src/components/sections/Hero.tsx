@@ -164,13 +164,16 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={220} className="order-3 lg:order-none">
+            {/* CTA-Regel (Kampagnen-Check): primär der Test als Einstieg in
+                den Funnel, sekundär die 7 Stufen. Das Erstgespräch bleibt nur
+                im Footer/Kontakt erreichbar. */}
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button href="/die-7-stufen" variant="accent" size="lg">
-                Die 7 Stufen entdecken
+              <Button href="/bewusstseinstest" variant="accent" size="lg">
+                Bewusstseinstest starten (kostenlos, 3 Minuten)
                 <ArrowRight />
               </Button>
-              <Button href="/kontakt" variant="secondary" size="lg">
-                Kostenloses Erstgespräch
+              <Button href="/die-7-stufen" variant="secondary" size="lg">
+                Die 7 Stufen entdecken
               </Button>
             </div>
           </Reveal>

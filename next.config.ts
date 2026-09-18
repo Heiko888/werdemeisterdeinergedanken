@@ -27,13 +27,15 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "img-src 'self' data: blob: https:",
+      // www.facebook.com: Tracking-Pixel des Meta-Pixels (nur nach Einwilligung).
+      "img-src 'self' data: blob: https: https://www.facebook.com",
       "style-src 'self' 'unsafe-inline'",
       // googletagmanager.com: Google-Analytics-Script (lädt erst nach Einwilligung).
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+      // connect.facebook.net: Meta-Pixel-Script (fbevents.js, nur nach Einwilligung).
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net",
       "font-src 'self' data:",
-      // https: deckt die GA-Beacons (google-analytics.com) mit ab.
-      "connect-src 'self' https:",
+      // https: deckt die GA-Beacons (google-analytics.com) und Meta (www.facebook.com) mit ab.
+      "connect-src 'self' https: https://www.facebook.com",
       "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
       "frame-ancestors 'self'",
       "base-uri 'self'",

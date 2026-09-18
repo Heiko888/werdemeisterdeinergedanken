@@ -198,29 +198,13 @@ export type Testimonial = {
 // Solange die Liste leer ist, blendet /buch den Stimmen-Abschnitt aus.
 export const bookTestimonials: Testimonial[] = [];
 
-export const testimonials: Testimonial[] = [
-  {
-    quote:
-      "Zum ersten Mal habe ich verstanden, warum ich immer wieder in denselben Mustern gelandet bin. Heikos Ansatz ist tief, aber unglaublich klar. Das hat mein Leben verändert.",
-    name: "Sandra M.",
-    role: "Unternehmerin",
-    rating: 5,
-  },
-  {
-    quote:
-      "Ich war skeptisch bei allem, was nach „Bewusstsein“ klingt. Genau deshalb funktioniert es: bodenständig, ehrlich und ohne esoterisches Blabla. Absolut empfehlenswert.",
-    name: "Michael R.",
-    role: "Projektleiter",
-    rating: 5,
-  },
-  {
-    quote:
-      "Die 7 Stufen geben dem Ganzen eine Struktur, an der ich mich festhalten konnte. Ich bin ruhiger, klarer und deutlich freier in meinem Kopf geworden.",
-    name: "Julia K.",
-    role: "Coachin",
-    rating: 5,
-  },
-];
+// Stimmen für Startseite (Testimonials.tsx) und /mitgliedschaft. Hier gehören
+// ausschließlich echte Stimmen mit Einverständnis hinein (Name, Rolle, Zitat
+// wörtlich). Die früheren drei Platzhalter (Sandra M., Michael R., Julia K.)
+// wurden am 18.09.2026 entfernt – erfundene Zitate schaden dem Vertrauen mehr,
+// als ein leerer Abschnitt es tut. Solange die Liste leer ist, blenden die
+// Startseite und /mitgliedschaft den Stimmen-Abschnitt aus.
+export const testimonials: Testimonial[] = [];
 
 export type Faq = { question: string; answer: string };
 

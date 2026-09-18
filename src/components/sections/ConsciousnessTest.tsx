@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -16,9 +16,22 @@ import {
 } from "@/lib/consciousness-test";
 import { saveStartStage } from "@/app/bewusstseinstest/actions";
 import { cn } from "@/lib/cn";
+import { trackEvent } from "@/lib/analytics";
+import { getUtm } from "@/lib/utm";
 
 // Zwischenspeicher der Antworten – überlebt den Login-Umweg (siehe unten).
 const TEST_STORAGE_KEY = "wmdg:test-antworten";
+// Merkt sich (nur für diesen Tab), dass die E-Mail-Schranke schon passiert
+// wurde – wer den Test im selben Tab wiederholt, muss sie nicht erneut sehen.
+const LEAD_DONE_KEY = "wmdg:test-lead";
+
+/**
+ * Sichtbarkeit des Ergebnisses:
+ *   checking → Test fertig, wir prüfen gerade, ob jemand angemeldet ist
+ *   email    → nicht angemeldet: E-Mail-Schranke (Lead) vor dem Ergebnis
+ *   open     → Ergebnis sichtbar (Mitglied gespeichert ODER E-Mail abgegeben)
+ */
+type Gate = "checking" | "email" | "open";
 
 export function ConsciousnessTest() {
   const total = testQuestions.length;
@@ -30,6 +43,10 @@ export function ConsciousnessTest() {
   // Wurde das Ergebnis am (eingeloggten) Profil gespeichert?
   const [memberSaved, setMemberSaved] = useState(false);
   const savedRef = useRef(false);
+  const [gate, setGate] = useState<Gate>("checking");
+  // Rückmeldung der Lead-Route: "confirm" = Bestätigungsmail unterwegs.
+  const [leadMode, setLeadMode] = useState<string | null>(null);
+  const trackedRef = useRef(false);
 
   const scores = useMemo(() => scoreByStage(answers), [answers]);
   const resultNr = useMemo(() => topStage(scores), [scores]);
@@ -85,7 +102,9 @@ export function ConsciousnessTest() {
   }, [done, answers]);
 
   // Beim Abschluss einmalig versuchen, das Ergebnis zu speichern.
-  // Ist niemand angemeldet, gibt die Action still `{ saved: false }` zurück.
+  // Ist niemand angemeldet, gibt die Action still `{ saved: false }` zurück –
+  // dann kommt vor dem Ergebnis die E-Mail-Schranke (Lead), es sei denn, sie
+  // wurde in diesem Tab schon passiert. Für Mitglieder bleibt alles wie bisher.
   useEffect(() => {
     if (!done || !resultStage || savedRef.current) return;
     savedRef.current = true;
@@ -100,9 +119,23 @@ export function ConsciousnessTest() {
             // ignorieren
           }
         }
+        let leadDone = false;
+        try {
+          leadDone = window.sessionStorage.getItem(LEAD_DONE_KEY) === "1";
+        } catch {
+          // ignorieren
+        }
+        setGate(res.saved || leadDone ? "open" : "email");
       })
-      .catch(() => {});
+      .catch(() => setGate("email"));
   }, [done, resultStage, answers]);
+
+  // Ergebnis sichtbar → einmalig als Konversion melden (nur mit Einwilligung).
+  useEffect(() => {
+    if (gate !== "open" || !resultStage || trackedRef.current) return;
+    trackedRef.current = true;
+    trackEvent("test_complete", { stufe: resultStage.nr, member: memberSaved });
+  }, [gate, resultStage, memberSaved]);
 
   function choose(value: number) {
     setAnswers((prev) => {
@@ -122,7 +155,10 @@ export function ConsciousnessTest() {
     setCurrent(0);
     setDone(false);
     setMemberSaved(false);
+    setGate("checking");
+    setLeadMode(null);
     savedRef.current = false;
+    trackedRef.current = false;
     if (typeof window !== "undefined") {
       try {
         window.localStorage.removeItem(TEST_STORAGE_KEY);
@@ -131,6 +167,40 @@ export function ConsciousnessTest() {
       }
       window.scrollTo({ top: 0 });
     }
+  }
+
+  /* ---------- Auswertung läuft ---------- */
+  if (done && resultStage && gate === "checking") {
+    return (
+      <Container size="narrow" className="flex flex-col items-center gap-3 py-16 text-center">
+        <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+          Dein Ergebnis
+        </span>
+        <p className="text-ink-mid" aria-live="polite">
+          Einen Moment – deine Antworten werden ausgewertet …
+        </p>
+      </Container>
+    );
+  }
+
+  /* ---------- E-Mail-Schranke (nur ohne Anmeldung) ---------- */
+  if (done && resultStage && gate === "email") {
+    return (
+      <EmailGate
+        stufe={resultStage.nr}
+        answers={answers}
+        onDone={(mode) => {
+          setLeadMode(mode);
+          try {
+            window.sessionStorage.setItem(LEAD_DONE_KEY, "1");
+          } catch {
+            // ignorieren
+          }
+          setGate("open");
+          window.scrollTo({ top: 0 });
+        }}
+      />
+    );
   }
 
   /* ---------- Ergebnis ---------- */
@@ -233,6 +303,13 @@ export function ConsciousnessTest() {
                 Gedankenprofil zeigt dir jetzt, wo noch Bedarf ist.
               </p>
             )}
+            {!memberSaved && leadMode === "confirm" && (
+              <p className="max-w-xl text-sm leading-relaxed text-accent">
+                Wir haben dir eine E-Mail geschickt – bitte bestätige darin kurz
+                deine Adresse. Dann kommt dein Ergebnis samt Gratis-Kapitel auch
+                in dein Postfach (schau ggf. im Spam-Ordner nach).
+              </p>
+            )}
             <div className="flex flex-col gap-3 sm:flex-row">
               {memberSaved ? (
                 <>
@@ -246,15 +323,12 @@ export function ConsciousnessTest() {
                 </>
               ) : (
                 <>
-                  <Button href="/kontakt" variant="accent">
-                    Kostenloses Klarheitsgespräch
+                  <Button href={`/bewusstseinstest/ergebnis/${resultStage.nr}`} variant="accent">
+                    Dein Gratis-Kapitel zu Stufe {resultStage.nr}
                     <ArrowRight />
                   </Button>
                   <Button href="/mitgliedschaft" variant="secondary">
-                    Mitglied werden
-                  </Button>
-                  <Button href="/gratis-ebook" variant="secondary">
-                    E-Book sichern
+                    Mitgliedschaft 7 Tage testen
                   </Button>
                 </>
               )}
@@ -372,6 +446,162 @@ export function ConsciousnessTest() {
           Zurück
         </button>
       )}
+    </Container>
+  );
+}
+
+/* ---------- E-Mail-Schranke vor dem Ergebnis (Lead, Double-Opt-in) ---------- */
+
+type GateStatus = "idle" | "sending" | "error";
+
+/**
+ * Fragt vor dem Ergebnis E-Mail + Einwilligung ab und meldet den Lead an
+ * /api/test-lead (Vorbild: EbookForm). Die Stufe wird dort serverseitig aus
+ * den rohen Antworten neu berechnet. Bei „nicht eingerichtet" (kein Resend /
+ * Supabase) antwortet die Route trotzdem mit 200 – das Ergebnis erscheint
+ * immer. Nur echte Fehler (ungültige Adresse, Versand klemmt) halten die
+ * Schranke offen und zeigen die Meldung.
+ */
+function EmailGate({
+  stufe,
+  answers,
+  onDone,
+}: {
+  stufe: number;
+  answers: (number | null)[];
+  onDone: (mode: string) => void;
+}) {
+  const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
+  const [company, setCompany] = useState(""); // Honeypot
+  const [status, setStatus] = useState<GateStatus>("idle");
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    if (!email || !consent || status === "sending") return;
+    setStatus("sending");
+    setError(null);
+    try {
+      const res = await fetch("/api/test-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          company,
+          answers,
+          source: "bewusstseinstest",
+          ...getUtm(),
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok) {
+        if (data?.mode !== "not_configured") {
+          trackEvent("generate_lead", { source: "bewusstseinstest", stufe });
+        }
+        onDone(typeof data?.mode === "string" ? data.mode : "confirm");
+        return;
+      }
+      setError(data?.error ?? "Senden fehlgeschlagen. Bitte versuch es noch einmal.");
+      setStatus("error");
+    } catch {
+      setError("Verbindung fehlgeschlagen. Bitte versuch es noch einmal.");
+      setStatus("error");
+    }
+  }
+
+  return (
+    <Container size="narrow" className="flex flex-col gap-8 py-6">
+      <div className="flex flex-col items-center gap-3 text-center">
+        <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent">
+          Fast geschafft
+        </span>
+        <h2 className="font-display text-[2rem] font-medium leading-tight text-ink sm:text-4xl">
+          Dein Ergebnis ist <em className="accent not-italic">fertig</em>.
+        </h2>
+        <p className="max-w-xl text-lg leading-relaxed text-ink-mid">
+          Wohin dürfen wir es schicken? Du bekommst deine Auswertung, das
+          Gratis-Kapitel zu deiner Stufe und in den nächsten Tagen ein paar
+          kurze Mails von Heiko – ehrlich, ohne Druck, jederzeit abbestellbar.
+        </p>
+      </div>
+
+      <Card as="form" onSubmit={handleSubmit} className="flex flex-col gap-4 sm:p-8">
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <label htmlFor="test-email" className="sr-only">
+            Deine E-Mail-Adresse
+          </label>
+          <input
+            id="test-email"
+            type="email"
+            required
+            autoComplete="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Deine E-Mail-Adresse"
+            className="h-13 flex-1 rounded-xl border border-ink/15 bg-paper/60 px-5 text-sm text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          />
+          {/* Honeypot: für echte Nutzer unsichtbar, füllen nur Bots aus. */}
+          <input
+            type="text"
+            name="company"
+            tabIndex={-1}
+            autoComplete="off"
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+            className="hidden"
+            aria-hidden="true"
+          />
+          <Button
+            type="submit"
+            variant="accent"
+            size="lg"
+            disabled={status === "sending" || !consent}
+            className="shrink-0 whitespace-nowrap"
+          >
+            {status === "sending" ? "Wird gesendet …" : "Ergebnis anzeigen"}
+            <ArrowRight />
+          </Button>
+        </div>
+
+        <label className="flex items-start gap-3 text-sm leading-relaxed text-ink-mid">
+          <input
+            type="checkbox"
+            required
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-1 h-4 w-4 shrink-0 accent-[var(--color-gold-500)]"
+          />
+          <span>
+            Ja, schickt mir mein Ergebnis, das Gratis-Kapitel und weitere
+            E-Mails zur Bewusstseinsentwicklung. Ich kann mich jederzeit mit
+            einem Klick abmelden. Es gilt die{" "}
+            <a href="/datenschutz" className="underline hover:text-ink">
+              Datenschutzerklärung
+            </a>
+            .
+          </span>
+        </label>
+
+        {error && (
+          <p className="text-sm text-red-700" role="alert">
+            {error}
+          </p>
+        )}
+
+        <p className="text-xs text-ink-muted">
+          Kein Spam, keine Weitergabe. Du bekommst zuerst eine kurze
+          Bestätigungsmail (Double-Opt-in).{" "}
+          Schon Mitglied?{" "}
+          <a
+            href="/login?redirect=%2Fbewusstseinstest%3Ffortsetzen%3D1"
+            className="font-medium text-accent underline-offset-2 hover:underline"
+          >
+            Melde dich an
+          </a>{" "}
+          – dann speichern wir dein Ergebnis direkt in deinem Bereich.
+        </p>
+      </Card>
     </Container>
   );
 }

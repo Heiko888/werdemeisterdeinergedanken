@@ -308,17 +308,17 @@ Ziel nach 30 Tagen: 40 Reels veröffentlicht, 200–500 Test-Abschlüsse mit E-M
 
 ## Änderungen am Repo (Change-Liste zur Dokumentation)
 
-Status 18.09.2026: Punkt 14 (Reel-Skripte + `src/lib/reels.ts`) ist umgesetzt, Punkte 1–7 sind im PR `claude/kampagnen-funnel` in Arbeit; Rest offen. Jede Zeile wird nach Umsetzung in `docs/AENDERUNGEN.md` und als Audit-Datei `docs/audit/kampagnen-check-<Datum>.md` festgehalten, damit der Serverstand nachvollziehbar bleibt.
+Status 18.09.2026: Punkt 14 (Reel-Skripte + `src/lib/reels.ts`) ist umgesetzt, Punkte 1–7 sind im PR `claude/kampagnen-funnel` umgesetzt (Protokoll in `docs/AENDERUNGEN.md`, Eintrag „Funnel-Fixes 1–7“); Rest offen. Jede Zeile wird nach Umsetzung in `docs/AENDERUNGEN.md` und als Audit-Datei `docs/audit/kampagnen-check-<Datum>.md` festgehalten, damit der Serverstand nachvollziehbar bleibt.
 
 | # | Änderung | Dateien | Priorität |
 | --- | --- | --- | --- |
-| 1 | Bewusstseinstest: E-Mail-Feld vor dem Ergebnis (Double-Opt-in wie E-Book), Stufe in `ebook_leads` speichern (neue Spalte `stufe`, `source = test`) | `src/components/sections/ConsciousnessTest.tsx`, `src/app/api/ebook/route.ts`, neue Migration `supabase/migrations/00xx_leads_stufe.sql` | Blocker |
-| 2 | Ergebnis-Seite je Stufe mit Gratis-Kapitel (öffentlich, ohne Login) | `src/app/bewusstseinstest/ergebnis/[stufe]/page.tsx`, Inhalte aus `content/pdf/stufe-N-lektion.pdf` | Blocker |
-| 3 | Impuls-Links: für Leads ohne Mitgliedschaft auf öffentliche Seiten statt `/mitglieder/stufe/N` | `src/lib/impulses.ts:33ff`, `src/lib/impulse-mailer.ts` | Blocker |
-| 4 | 7-Mail-Verkaufsstrecke nach Test/E-Book (Tag 0–11), danach Impuls-Rotation; 3-Mail-Strecke für Buch-Käufer | neue `src/lib/sequences.ts`, Cron-Logik in `deploy/docker-compose.yml`, Tabelle `lead_sequence_state` | Blocker |
-| 5 | Hero-CTA → Test; Erstgespräch ans Seitenende; Final-CTA → Test | `src/components/sections/Hero.tsx`, `FinalCta.tsx` | Hoch |
-| 6 | Conversion-Events in GA4 (`lead`, `test_complete`, `begin_checkout`, `purchase`) + Meta-Pixel mit Consent + UTM-Parameter in Lead- und Order-Tabellen speichern | `src/lib/analytics.ts`, `next.config.ts` (CSP für connect.facebook.net), `src/app/api/ebook/route.ts`, Stripe-Metadaten | Hoch |
-| 7 | Testimonials: Platzhalter entfernen, `testimonials` leer lassen bis echte vorliegen; Abschnitt blendet sich aus wie bei `bookTestimonials` | `src/lib/content.ts:201–224`, `Testimonials.tsx` | Hoch |
+| 1 | Bewusstseinstest: E-Mail-Feld vor dem Ergebnis (Double-Opt-in wie E-Book), Stufe in `ebook_leads` speichern (neue Spalte `stufe`, `source = test`) | `src/components/sections/ConsciousnessTest.tsx`, `src/app/api/ebook/route.ts`, neue Migration `supabase/migrations/00xx_leads_stufe.sql` | umgesetzt (PR) |
+| 2 | Ergebnis-Seite je Stufe mit Gratis-Kapitel (öffentlich, ohne Login) | `src/app/bewusstseinstest/ergebnis/[stufe]/page.tsx`, Inhalte aus `content/pdf/stufe-N-lektion.pdf` | umgesetzt (PR) |
+| 3 | Impuls-Links: für Leads ohne Mitgliedschaft auf öffentliche Seiten statt `/mitglieder/stufe/N` | `src/lib/impulses.ts:33ff`, `src/lib/impulse-mailer.ts` | umgesetzt (PR) |
+| 4 | 7-Mail-Verkaufsstrecke nach Test/E-Book (Tag 0–11), danach Impuls-Rotation; 3-Mail-Strecke für Buch-Käufer | neue `src/lib/sequences.ts`, Cron-Logik in `deploy/docker-compose.yml`, Tabelle `lead_sequence_state` | umgesetzt (PR) |
+| 5 | Hero-CTA → Test; Erstgespräch ans Seitenende; Final-CTA → Test | `src/components/sections/Hero.tsx`, `FinalCta.tsx` | umgesetzt (PR) |
+| 6 | Conversion-Events in GA4 (`lead`, `test_complete`, `begin_checkout`, `purchase`) + Meta-Pixel mit Consent + UTM-Parameter in Lead- und Order-Tabellen speichern | `src/lib/analytics.ts`, `next.config.ts` (CSP für connect.facebook.net), `src/app/api/ebook/route.ts`, Stripe-Metadaten | umgesetzt (PR) |
+| 7 | Testimonials: Platzhalter entfernen, `testimonials` leer lassen bis echte vorliegen; Abschnitt blendet sich aus wie bei `bookTestimonials` | `src/lib/content.ts:201–224`, `Testimonials.tsx` | umgesetzt (PR) |
 | 8 | Mitgliedschaft: Preis final, 7-Tage-Test (Stripe `trial_period_days`) oder Garantie-Text; 21-Tage-Programm als Einzelprodukt | `src/app/mitgliedschaft/page.tsx`, `src/app/api/checkout/route.ts`, `docs/STRIPE-MITGLIEDSCHAFT.md` | Hoch |
 | 9 | `/ueber-mich` mit Heikos Geschichte (Teil 1–3), Telefonseelsorge-Hinweis am Fuß | `src/app/ueber-mich/page.tsx`, Quelle `docs/buch-1-verwertung/meine-geschichte.md` | Hoch |
 | 10 | Navigationsfreie Ad-Landingpage `/test` mit Hook-Varianten per Query (\`?h=a | b | c\`) |

@@ -5,6 +5,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BackToTop } from "@/components/ui/BackToTop";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
+import { UtmCapture } from "@/components/analytics/UtmCapture";
 import { site } from "@/lib/site";
 
 // Fonts bewusst selbst-gehostet (next/font/local) statt next/font/google:
@@ -105,6 +107,8 @@ export default function RootLayout({
         <Footer />
         <BackToTop />
         <GoogleAnalytics />
+        <MetaPixel />
+        <UtmCapture />
       </body>
     </html>
   );

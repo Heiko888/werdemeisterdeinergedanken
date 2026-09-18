@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getStripe, bookPriceIdForEdition, type BookEdition } from "@/lib/stripe";
 import { site } from "@/lib/site";
+import { pickUtm, type UtmParams } from "@/lib/utm";
 
 export const runtime = "nodejs";
 
@@ -35,12 +36,15 @@ export async function POST(request: Request) {
   const origin = baseUrl(request);
   const stripe = getStripe();
 
-  // Gewählte Edition aus dem Formular lesen (Standard: PDF).
+  // Gewählte Edition (Standard: PDF) und die gemerkten UTM-Parameter
+  // (Kampagnen-Herkunft, versteckte Felder) aus dem Formular lesen.
   let edition: BookEdition = "pdf";
+  let utm: UtmParams = {};
   try {
     const form = await request.formData();
     const e = String(form.get("edition") || "");
     if (e === "print" || e === "pdf") edition = e;
+    utm = pickUtm(Object.fromEntries(form.entries()));
   } catch {
     // Kein Formular (z. B. direkter Aufruf) → Standard (PDF).
   }
@@ -63,7 +67,8 @@ export async function POST(request: Request) {
       ...(isPrint
         ? { shipping_address_collection: { allowed_countries: ["DE", "AT", "CH"] } }
         : {}),
-      metadata: { produkt: "buch-werde-meister-deiner-gedanken", edition },
+      // UTMs als Metadaten – Kampagnen-Herkunft des Kaufs im Stripe-Dashboard.
+      metadata: { produkt: "buch-werde-meister-deiner-gedanken", edition, ...utm },
       success_url: `${origin}/buch?checkout=erfolg&edition=${edition}&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/buch?checkout=abgebrochen`,
     });

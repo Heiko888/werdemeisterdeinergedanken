@@ -19,6 +19,7 @@ export default function Home() {
       <WhyMe />
       <WhatToExpect />
       {/* <Creed /> */}
+      {/* Rendert nichts, solange `testimonials` in content.ts leer ist. */}
       <Testimonials />
       <MaybeNotYou />
       <LeadMagnet />

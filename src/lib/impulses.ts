@@ -1,11 +1,16 @@
 /**
- * Wöchentliche E-Mail-Impulse für Mitglieder.
+ * Wöchentliche E-Mail-Impulse für Mitglieder und bestätigte Leads.
  *
  * Die Cron-Route (src/app/api/impulses/route.ts) verschickt pro Lauf den
  * nächsten Impuls an alle Mitglieder mit aktivem Opt-in. `impulse_index` am
  * Profil merkt sich, wie weit jede Person ist – die Serie läuft zyklisch.
  *
  * Bewusst bodenständig und kurz gehalten (ein Gedanke + eine kleine Übung).
+ *
+ * Der `ctaPath` zeigt in den Mitgliederbereich. Für Empfänger OHNE
+ * Mitgliedschaft (E-Book-/Test-Leads) endete er bisher an der Login-Wand –
+ * deshalb liefert `ctaPathFor()` für sie die öffentliche Ergebnisseite der
+ * jeweiligen Stufe (/bewusstseinstest/ergebnis/N).
  */
 
 export type Impulse = {
@@ -93,3 +98,18 @@ export const impulses: Impulse[] = [
     ctaPath: "/mitglieder/stufe/7",
   },
 ];
+
+/**
+ * CTA-Ziel je Empfängertyp: Mitglieder landen im Mitgliederbereich,
+ * Leads ohne Mitgliedschaft auf der öffentlichen Ergebnisseite der Stufe
+ * (kein Login nötig). Pfade, die nicht dem Muster /mitglieder/stufe/N folgen,
+ * bleiben unverändert.
+ */
+export function ctaPathFor(
+  impulse: Pick<Impulse, "ctaPath">,
+  { isMember }: { isMember: boolean },
+): string {
+  if (isMember) return impulse.ctaPath;
+  const m = /^\/mitglieder\/stufe\/([1-7])$/.exec(impulse.ctaPath);
+  return m ? `/bewusstseinstest/ergebnis/${m[1]}` : impulse.ctaPath;
+}

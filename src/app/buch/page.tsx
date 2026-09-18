@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { BuchKaufenButton } from "@/components/sections/BuchKaufenButton";
+import { PurchaseTracker } from "@/components/analytics/PurchaseTracker";
+import { getPurchaseInfo } from "@/lib/checkout-purchase";
 import { withCanonical } from "@/lib/seo";
 import { HERO_GLOW } from "@/lib/gradients";
 import { bookTestimonials } from "@/lib/content";
@@ -231,10 +233,16 @@ function DarkSection({
 export default async function BuchPage({
   searchParams,
 }: {
-  searchParams: Promise<{ checkout?: string; edition?: string }>;
+  searchParams: Promise<{ checkout?: string; edition?: string; session_id?: string }>;
 }) {
-  const { checkout, edition } = await searchParams;
+  const { checkout, edition, session_id } = await searchParams;
   const baseNotice = (checkout && NOTICES[checkout]) || null;
+  // Nach erfolgreichem Stripe-Checkout: Kaufdaten für das purchase-Event
+  // (best effort – ohne Stripe/ID bleibt es einfach null).
+  const purchase =
+    checkout === "erfolg"
+      ? await getPurchaseInfo(session_id, `buch-${edition === "print" ? "print" : "pdf"}`)
+      : null;
   // Erfolgsmeldung an die Edition anpassen (Download vs. Versand).
   const notice =
     baseNotice && checkout === "erfolg"
@@ -249,6 +257,14 @@ export default async function BuchPage({
 
   return (
     <>
+      {purchase && (
+        <PurchaseTracker
+          transactionId={purchase.transactionId}
+          value={purchase.value}
+          currency={purchase.currency}
+          item={purchase.item}
+        />
+      )}
       {notice && (
         <div
           className={`border-b px-4 py-3 text-center text-sm leading-relaxed ${

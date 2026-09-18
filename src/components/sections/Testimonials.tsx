@@ -5,6 +5,9 @@ import { StarRating } from "@/components/ui/StarRating";
 import { testimonials } from "@/lib/content";
 
 export function Testimonials() {
+  // Ohne echte Stimmen keinen Abschnitt – siehe Kommentar in content.ts.
+  if (testimonials.length === 0) return null;
+
   return (
     <section
       id="stimmen"
@@ -59,8 +62,8 @@ export function Testimonials() {
         </div>
 
         <p className="mt-12 text-center text-xs text-ink-muted">
-          Namen geändert · Erfahrungsberichte sind individuell und keine Garantie
-          für ein bestimmtes Ergebnis.
+          Echte Stimmen, mit Einverständnis veröffentlicht · Erfahrungsberichte
+          sind individuell und keine Garantie für ein bestimmtes Ergebnis.
         </p>
       </Container>
     </section>

@@ -4,6 +4,8 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight, Check } from "@/components/ui/Icon";
+import { PurchaseTracker } from "@/components/analytics/PurchaseTracker";
+import { getPurchaseInfo } from "@/lib/checkout-purchase";
 
 export const metadata: Metadata = {
   title: "Willkommen",
@@ -26,9 +28,25 @@ const steps = [
   ],
 ];
 
-export default function WillkommenPage() {
+export default async function WillkommenPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ session_id?: string }>;
+}) {
+  const { session_id } = await searchParams;
+  // Kaufdaten für das purchase-Event (GA4/Meta) – best effort, s. lib.
+  const purchase = await getPurchaseInfo(session_id, "mitgliedschaft-monat");
+
   return (
     <>
+      {purchase && (
+        <PurchaseTracker
+          transactionId={purchase.transactionId}
+          value={purchase.value}
+          currency={purchase.currency}
+          item={purchase.item}
+        />
+      )}
       <PageHero
         eyebrow="Zahlung erfolgreich"
         title={

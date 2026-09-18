@@ -44,6 +44,9 @@ services:
         # keinen Code-Default mehr: fehlt der Wert, bleiben Analytics UND
         # Cookie-Banner still inaktiv – ohne Fehler im Log.
         NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
+        # Meta-Pixel-ID (optional). Lädt nur nach Einwilligung im Cookie-
+        # Banner; ohne Wert bleibt der Pixel komplett inaktiv.
+        NEXT_PUBLIC_META_PIXEL_ID: ${NEXT_PUBLIC_META_PIXEL_ID:-}
     restart: unless-stopped
 
     environment:
@@ -117,14 +120,18 @@ services:
       - /opt/website-vorlagen:/app/content/vorlagen:ro
 
   # ──────────────────────────────────────────────────────────────────────
-  # Wöchentlicher Impuls-/Nurture-Versand (E-Mail-Impulse).
+  # Wöchentlicher Impuls-/Nurture-Versand (E-Mail-Impulse) + tägliche
+  # Verkaufsstrecken (E-Mail-Sequenzen).
   #
   # Statt eines externen Schedulers (z. B. Vercel Cron – gibt es hier nicht)
   # übernimmt ein winziger busybox-crond-Dienst die Zeitsteuerung und ruft die
-  # geschützte Route /api/impulses im INTERNEN Docker-Netz auf (Servicename
-  # "website", kein öffentlicher Port nötig). Ein Lauf schickt die nächste
-  # Impuls-Rotation an alle Mitglieder mit Opt-in UND an bestätigte
-  # E-Book-Leads (Nurture-Strecke).
+  # geschützten Routen im INTERNEN Docker-Netz auf (Servicename "website",
+  # kein öffentlicher Port nötig):
+  #   - montags 07:00  /api/impulses  – nächste Impuls-Rotation an Mitglieder
+  #     mit Opt-in UND bestätigte Leads (außer Leads in laufender Sequenz)
+  #   - täglich 08:00  /api/sequences – fällige Schritte der 7-Mail-Strecke
+  #     nach Test/E-Book (Tag 0–11) und der 3-Mail-Strecke für Buch-Käufer
+  #     (Tag 3/10/21); idempotent über lead_sequence_state (Migration 0018).
   #
   # Das CRON_SECRET wird beim Start in die container-interne crontab
   # geschrieben (nicht ins Image, nicht ins Repo). Fehlt es, lehnt die Route
@@ -151,4 +158,7 @@ services:
         # Compose die Variable schon beim Parsen ersetzt.
         echo "0 7 * * 1 wget -q -O- \"http://website:3000/api/impulses?secret=$$CRON_SECRET\" >/dev/null 2>&1" \
           > /var/spool/cron/crontabs/root
+        # Täglich 08:00 (UTC): E-Mail-Verkaufsstrecken (Tag-genaue Taktung).
+        echo "0 8 * * * wget -q -O- \"http://website:3000/api/sequences?secret=$$CRON_SECRET\" >/dev/null 2>&1" \
+          >> /var/spool/cron/crontabs/root
         exec crond -f -l 8

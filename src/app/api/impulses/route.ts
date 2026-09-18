@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
-import { timingSafeEqual } from "crypto";
 import { Resend } from "resend";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { impulses } from "@/lib/impulses";
+import { impulses, ctaPathFor } from "@/lib/impulses";
 import { site } from "@/lib/site";
+import { cronAuthorized } from "@/lib/cron-auth";
+import { runSequences, emailsInActiveSequence } from "@/lib/sequence-mailer";
 import {
   FROM,
   ABO_GRUND_MITGLIED,
@@ -32,6 +33,11 @@ export const dynamic = "force-dynamic";
  * Einrichten: z. B. Vercel Cron (wöchentlich) auf diese URL zeigen lassen,
  * mit dem Secret im Authorization-Header.
  *
+ * Verkaufsstrecken: Vor der Impuls-Rotation werden die fälligen Schritte der
+ * E-Mail-Sequenzen verschickt (src/lib/sequence-mailer.ts; täglich zusätzlich
+ * über /api/sequences). Leads, die gerade in einer laufenden Strecke stecken,
+ * bekommen in diesem Lauf KEINEN Impuls – die Rotation übernimmt erst danach.
+ *
  * TESTSENDUNG (kein Echtversand):
  *   ?test=<email>       – schickt EINEN Impuls an genau diese Adresse und
  *                         lässt die Empfängerliste sowie alle Zähler unberührt.
@@ -42,25 +48,8 @@ export const dynamic = "force-dynamic";
  *   Im Admin-Cockpit geht das per Button unter /admin/impulse.
  */
 
-/** Zeitkonstanter String-Vergleich – verhindert Timing-Rückschlüsse aufs Secret. */
-function safeEqual(a: string, b: string): boolean {
-  const ab = Buffer.from(a);
-  const bb = Buffer.from(b);
-  if (ab.length !== bb.length) return false;
-  return timingSafeEqual(ab, bb);
-}
-
-function authorized(request: Request): boolean {
-  const secret = process.env.CRON_SECRET;
-  if (!secret) return false;
-  const header = request.headers.get("authorization");
-  if (header && safeEqual(header, `Bearer ${secret}`)) return true;
-  const query = new URL(request.url).searchParams.get("secret");
-  return query != null && safeEqual(query, secret);
-}
-
 async function handle(request: Request) {
-  if (!authorized(request)) {
+  if (!cronAuthorized(request)) {
     return NextResponse.json(
       { ok: false, error: "Nicht autorisiert." },
       { status: 401 },
@@ -114,6 +103,10 @@ async function handle(request: Request) {
     );
   }
 
+  // Erst die Verkaufsstrecken (idempotent), dann die Rotation.
+  const sequences = await runSequences();
+  const inSequence = await emailsInActiveSequence(admin);
+
   const resend = new Resend(apiKey);
   let sent = 0;
   let failed = 0;
@@ -132,7 +125,7 @@ async function handle(request: Request) {
     memberEmails.add(email.toLowerCase());
     const idx = ((r.impulse_index as number) ?? 0) % impulses.length;
     const impulse = impulses[idx];
-    const ctaUrl = `${site.url}${impulse.ctaPath}`;
+    const ctaUrl = `${site.url}${ctaPathFor(impulse, { isMember: true })}`;
     const unsubUrl = `${site.url}/api/impulses/unsubscribe?token=${r.unsubscribe_token}`;
 
     try {
@@ -156,13 +149,15 @@ async function handle(request: Request) {
     }
   }
 
-  // ---- E-Book-Lead-Nurture (B5) ----
-  // Dieselbe Impuls-Rotation an bestätigte E-Book-Leads, die noch keine
-  // Mitglieder sind. So bekommt der große Funnel (E-Book → Mitgliedschaft) eine
+  // ---- E-Book-/Test-Lead-Nurture (B5) ----
+  // Dieselbe Impuls-Rotation an bestätigte Leads, die noch keine Mitglieder
+  // sind. So bekommt der große Funnel (Test/E-Book → Mitgliedschaft) eine
   // automatische Brücke. Fehlt die Nurture-Spalte (Migration nicht eingespielt),
-  // wird der Block einfach übersprungen.
+  // wird der Block einfach übersprungen. Leads in laufender Verkaufsstrecke
+  // werden ausgelassen; ihre CTAs zeigen auf öffentliche Seiten (ctaPathFor).
   let leadsSent = 0;
   let leadsFailed = 0;
+  let leadsInSequence = 0;
 
   const { data: leads } = await admin
     .from("ebook_leads")
@@ -176,9 +171,13 @@ async function handle(request: Request) {
       skipped += 1;
       continue;
     }
+    if (inSequence.has(email.toLowerCase())) {
+      leadsInSequence += 1;
+      continue;
+    }
     const idx = ((lead.impulse_index as number) ?? 0) % impulses.length;
     const impulse = impulses[idx];
-    const ctaUrl = `${site.url}${impulse.ctaPath}`;
+    const ctaUrl = `${site.url}${ctaPathFor(impulse, { isMember: false })}`;
     const unsubUrl = `${site.url}/api/ebook/unsubscribe?token=${lead.unsubscribe_token}`;
 
     try {
@@ -210,6 +209,8 @@ async function handle(request: Request) {
     skipped,
     leadsSent,
     leadsFailed,
+    leadsInSequence,
+    sequences,
   });
 }
 

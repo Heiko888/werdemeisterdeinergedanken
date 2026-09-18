@@ -49,10 +49,10 @@ gestalten – und die bereit sind, in die Tiefe zu gehen.
 
 ### Sekundäres Segment (mitnehmen, nicht abschrecken)
 
-Der bodenständig-skeptische Typ (wie in den Testimonials: Unternehmer:in,
-Projektleiter:in) ist ein wichtiges **Zweitpublikum**. Für ihn gilt: die Tiefe
-bleibt, aber **belegt und erdverbunden** – das „ohne esoterisches Blabla"
-(Michael R.) muss trotz spiritueller Kern-Ansprache glaubwürdig bleiben.
+Der bodenständig-skeptische Typ (Unternehmer:in, Projektleiter:in) ist ein
+wichtiges **Zweitpublikum**. Für ihn gilt: die Tiefe bleibt, aber **belegt und
+erdverbunden** – das „ohne esoterisches Blabla" muss trotz spiritueller
+Kern-Ansprache glaubwürdig bleiben.
 Deshalb: spirituelle Wärme **ja**, Guru-Sprech und Dogma **nein** (siehe Werte
 & Kap. 02).
 
@@ -91,13 +91,14 @@ Das inhaltliche Rückgrat der Marke. Quelle: `src/lib/content.ts` (`stages`).
 
 ## Stimmen / Testimonials
 
-Quelle: `src/lib/content.ts` (`testimonials`). Alle mit 5★-Bewertung.
+Quelle: `src/lib/content.ts` (`testimonials`).
 
-| Stimme | Rolle | Kernaussage |
-|--------|-------|-------------|
-| Sandra M. | Unternehmerin | „Zum ersten Mal habe ich verstanden, warum ich immer wieder in denselben Mustern gelandet bin. … Das hat mein Leben verändert." |
-| Michael R. | Projektleiter | „Bodenständig, ehrlich und ohne esoterisches Blabla. Absolut empfehlenswert." |
-| Julia K. | Coachin | „Die 7 Stufen geben dem Ganzen eine Struktur … Ich bin ruhiger, klarer und deutlich freier im Kopf geworden." |
+> **Hinweis (18.09.2026):** Die drei früheren Beispiel-Stimmen (Sandra M.,
+> Michael R., Julia K.) waren Platzhalter ohne reale Person dahinter und
+> wurden im Zuge des Kampagnen-Checks aus Code und Brandbook entfernt. Die
+> Liste ist leer; Startseite und `/mitgliedschaft` blenden den Abschnitt aus,
+> bis echte Stimmen vorliegen – ausschließlich mit Einverständnis, wörtlich,
+> mit Name, Rolle und (optional) Stufe im Test.
 
 > Ton der Testimonials zahlt bewusst auf die Werte ein: bodenständig,
 > struktur­gebend, kein Guru-Getue. Neue Stimmen im selben Ton auswählen.

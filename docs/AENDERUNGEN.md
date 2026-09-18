@@ -5,6 +5,172 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-18 – Funnel-Fixes 1–7 (Kampagnen-Check)
+
+**Anlass:** Change-Liste aus `docs/audit/kampagnen-check-2026-09-18.md`
+(„Änderungen am Repo“, Punkte 1–7): Der Bewusstseinstest sammelte keine
+E-Mail, die Impuls-Links endeten für Leads an der Login-Wand, es gab keine
+Verkaufsstrecke per Mail, der Hero-CTA zeigte aufs Erstgespräch, keine
+Konversionsmessung, drei erfundene Testimonials. Branch
+`claude/kampagnen-funnel`.
+
+**Neu – Bewusstseinstest fängt E-Mail (Punkt 1):**
+- `src/components/sections/ConsciousnessTest.tsx`: Nach der letzten Frage
+  prüft der Test wie bisher per `saveStartStage`, ob jemand angemeldet ist.
+  **Mitglieder:** unverändert (Ergebnis wird am Profil + im Verlauf
+  gespeichert, Ergebnis sofort sichtbar). **Nicht angemeldet:** neue
+  E-Mail-Schranke (`EmailGate`) mit Pflichtfeld, Einwilligungs-Checkbox,
+  Datenschutz-Hinweis, Honeypot; erst nach dem Absenden erscheint das
+  Ergebnis. Schranke wird je Tab nur einmal gezeigt (`sessionStorage`).
+  Nicht-Mitglieder bekommen im Ergebnis jetzt genau zwei CTAs: „Dein
+  Gratis-Kapitel zu Stufe N“ (→ Ergebnisseite) und „Mitgliedschaft 7 Tage
+  testen“; Klarheitsgespräch/E-Book-Buttons entfallen dort.
+- `src/app/api/test-lead/route.ts` (neu, Vorbild `/api/ebook`): speichert den
+  Lead in `ebook_leads` mit `source = 'bewusstseinstest'` und `stufe` (aus
+  den rohen Antworten serverseitig neu berechnet), Ratenbremse, Honeypot,
+  UTMs. Double-Opt-in über die bestehende `/api/ebook/confirm`. Ohne
+  `RESEND_API_KEY`/Supabase antwortet die Route mit 200 +
+  `mode: "not_configured"` – das Ergebnis erscheint immer (graceful).
+  Bereits bestätigte Adressen: Stufe aktualisieren, Ergebnis-Mail direkt.
+- `src/lib/test-lead-mail.ts` (neu): Bestätigungsmail für Test-Leads („Dein
+  Ergebnis wartet“).
+- `src/app/api/ebook/confirm/route.ts`: Leads mit `stufe` bekommen nach dem
+  Klick die Tag-0-Mail der Verkaufsstrecke (idempotent) und werden per 303
+  auf `/bewusstseinstest/ergebnis/<stufe>?bestaetigt=1` weitergeleitet.
+  Reine E-Book-Leads: unverändert (E-Book-Lieferung + Bestätigungsseite).
+- `src/lib/consciousness-test.ts`: Empfehlungstext Stufe 1 zeigt aufs
+  Gratis-Kapitel statt auf E-Book/Gespräch.
+
+**Neu – Öffentliche Ergebnisseite je Stufe (Punkt 2):**
+- `src/app/bewusstseinstest/ergebnis/[stufe]/page.tsx` (neu, 1–7, sonst 404,
+  `robots: noindex`, statisch vorgerendert): Name + Kurzbeschreibung aus
+  `stages` (content.ts), „Was das bedeutet“ (erkennen / festhalten /
+  Fähigkeit / nächster Schritt), Gratis-Kapitel-Download, genau EIN primärer
+  CTA „7-Tage-Test der Mitgliedschaft“ → `/mitgliedschaft`, sekundär „Das
+  Buch“ → `/buch`. Kein Erstgespräch.
+- `src/app/api/stufe-kapitel/[stufe]/route.ts` (neu): streamt
+  `content/pdf/stufe-N-lektion.pdf` ohne Login als Download
+  (`Content-Disposition: attachment`, `X-Robots-Tag: noindex`). Keine Kopie
+  unter `public/` (Dateien sind groß und lägen dort ungeschützt).
+
+**Neu – Impuls-Links für Nicht-Mitglieder (Punkt 3):**
+- `src/lib/impulses.ts`: `ctaPathFor(impulse, { isMember })` – Mitglieder
+  → `/mitglieder/stufe/N`, Leads → `/bewusstseinstest/ergebnis/N`.
+- `src/app/api/impulses/route.ts`: nutzt `ctaPathFor` (Mitglieder aus
+  `profiles`, Leads aus `ebook_leads`), überspringt Leads in laufender
+  Verkaufsstrecke (`leadsInSequence` im Ergebnis-JSON), ruft vorab
+  `runSequences()` auf. Cron-Auth in `src/lib/cron-auth.ts` ausgelagert.
+- `src/lib/impulse-mailer.ts`: Abo-Grund für Leads nennt Test und E-Book.
+
+**Neu – 7-Mail-Verkaufsstrecke (Punkt 4):**
+- `src/lib/sequences.ts` (neu): `testLeadSequence` (Tag 0, 1, 3, 5, 7, 9, 11:
+  Ergebnis + Kapitel → Heikos Geschichte 2004 → Kernüberzeugungen + Übung →
+  90 Sekunden → Buch → Rundgang Mitgliederbereich → letzte Mail mit drei
+  Einwänden) und `bookBuyerSequence` (Tag 3, 10, 21: Frage → vom Lesen ins
+  Üben → Einladung). Reine Daten (subject, preheader, body, ctaLabel,
+  ctaPath, optional `requiresStufe`, `footerNote`). Lena/2020 nur in Mail 2,
+  mit Telefonseelsorge-Hinweis 0800 111 0 111 im Fuß. Ein CTA je Mail.
+- `src/lib/sequence-mailer.ts` (neu): `runSequences()` verschickt an
+  bestätigte Leads (DOI, `nurture_opt_in`) bzw. Buch-Käufer (`book_orders`)
+  den nächsten fälligen Schritt – höchstens einen je Lead und Lauf,
+  idempotent über `lead_sequence_state` (Insert vor Versand, Rücknahme bei
+  Fehler). Aktive Mitglieder ausgenommen. Nur Leads/Käufe ab
+  `SEQUENCE_ELIGIBLE_FROM = 2026-09-18` (Bestandsleads bleiben in der
+  Impuls-Rotation). Buch-Käufer ohne Lead-Datensatz bekommen einen mit
+  `source = 'buch-kauf'`. Reply-To = `CONTACT_TO`. Jede Mail mit dem
+  bestehenden 1-Klick-Abmeldelink (`/api/ebook/unsubscribe`).
+  `emailsInActiveSequence()` liefert dem Impuls-Mailer die Pausenliste.
+- `src/app/api/sequences/route.ts` (neu): täglicher Cron-Endpoint (gleiche
+  Absicherung wie `/api/impulses`).
+- `deploy/docker-compose.yml`: zweite Crontab-Zeile im `impuls-cron`-Dienst
+  (täglich 08:00 UTC → `/api/sequences`), Build-Arg
+  `NEXT_PUBLIC_META_PIXEL_ID`.
+
+**Neu – Hero-CTA → Test (Punkt 5):**
+- `src/components/sections/Hero.tsx`: primär „Bewusstseinstest starten
+  (kostenlos, 3 Minuten)“ → `/bewusstseinstest`, sekundär „Die 7 Stufen
+  entdecken“. `FinalCta.tsx`: primär Test, sekundär `/buch`. Erstgespräch nur
+  noch über Footer/Kontakt.
+
+**Neu – Conversion-Tracking (Punkt 6):**
+- `src/lib/analytics.ts`: Consent-Store (localStorage + Listener) hierher
+  verschoben, `META_PIXEL_ID`, `TRACKING_ENABLED`, `trackEvent(name,
+  params)` (gtag + fbq, nur mit Einwilligung), Cookie-Löschung auch für
+  `_fbp/_fbc`. Events: `generate_lead` (E-Book + Test, mit `source`),
+  `test_complete` (mit `stufe`), `begin_checkout` (Buch/Mitgliedschaft),
+  `purchase` (Erfolgsseiten). Meta: Lead / InitiateCheckout / Purchase.
+- `src/components/analytics/GoogleAnalytics.tsx`: nutzt den gemeinsamen
+  Store; Banner erscheint, sobald GA ODER Pixel konfiguriert ist, und nennt
+  den Meta-Pixel im Text.
+- `src/components/analytics/MetaPixel.tsx` (neu): lädt fbevents.js nur nach
+  Einwilligung; `PurchaseTracker.tsx` (neu): feuert `purchase` einmal je
+  Stripe-Session; `UtmCapture.tsx` (neu): merkt UTMs beim ersten Aufruf;
+  `UtmHiddenFields.tsx` (neu): versteckte Felder für die Checkout-Formulare.
+- `src/lib/utm.ts` (neu): `captureUtm/getUtm/pickUtm` (sessionStorage,
+  first touch, nur `utm_source/medium/campaign/content`).
+- `src/lib/checkout-purchase.ts` (neu): liest Betrag/Währung der
+  Stripe-Session für das purchase-Event (best effort).
+- `src/app/layout.tsx`: `<MetaPixel />` + `<UtmCapture />`.
+- `next.config.ts`: CSP um `https://connect.facebook.net` (script) und
+  `https://www.facebook.com` (img/connect) erweitert.
+- `src/components/sections/EbookForm.tsx`, `src/app/api/ebook/route.ts`:
+  UTMs mitschicken/speichern, `generate_lead`.
+- `src/components/membership/CheckoutButton.tsx`,
+  `src/components/sections/BuchKaufenButton.tsx`: jetzt Client-Komponenten
+  (Formular bleibt ohne JS funktionsfähig) mit `begin_checkout` + UTM-Feldern;
+  `src/app/api/checkout/route.ts`, `src/app/api/buch-checkout/route.ts`:
+  UTMs als Stripe-`metadata`.
+- `src/app/buch/page.tsx`, `src/app/mitgliedschaft/willkommen/page.tsx`:
+  `PurchaseTracker` nach erfolgreichem Checkout (`session_id`).
+- `Dockerfile`: Build-Arg/ENV `NEXT_PUBLIC_META_PIXEL_ID`.
+
+**Neu – Testimonials (Punkt 7):**
+- `src/lib/content.ts`: die drei Platzhalter (Sandra M., Michael R., Julia
+  K.) entfernt, `testimonials = []` mit Kommentar (nur echte Stimmen mit
+  Einverständnis; leer → Abschnitt ausgeblendet).
+- `src/components/sections/Testimonials.tsx` rendert bei leerer Liste
+  nichts (Hinweis in `src/app/page.tsx`); `src/app/mitgliedschaft/page.tsx`
+  blendet den Stimmen-Abschnitt ebenfalls aus. Fußnote „Namen geändert“
+  durch „Echte Stimmen, mit Einverständnis“ ersetzt.
+- `docs/brandbook/01-marke.md`: Zitat-Tabelle durch Hinweis ersetzt, dass
+  die Platzhalter entfernt wurden.
+
+**Migrationen (im Supabase-SQL-Editor ausführen, in dieser Reihenfolge):**
+- `supabase/migrations/0017_leads_stufe.sql`: `ebook_leads.stufe smallint
+  (1–7)` + `utm_source/utm_medium/utm_campaign/utm_content text`.
+- `supabase/migrations/0018_lead_sequence_state.sql`: Tabelle
+  `lead_sequence_state (lead_id → ebook_leads, sequence, step, sent_at)`,
+  RLS ohne Policies (nur Service-Role).
+  Ohne 0017 antwortet `/api/test-lead` mit 500 (Spalte fehlt) – das Ergebnis
+  im Test erscheint trotzdem, nur der Lead wird nicht gespeichert; ohne 0018
+  überspringt `runSequences()` den Versand und loggt den Fehler.
+
+**ENV-Variablen:** neu `NEXT_PUBLIC_META_PIXEL_ID` (optional, Build-Zeit).
+`.env.local.example` ergänzt (Pixel, Hinweis Sequenz-Cron). Alles andere
+nutzt die vorhandenen Variablen (`RESEND_API_KEY`,
+`SUPABASE_SERVICE_ROLE_KEY`, `CRON_SECRET`, `CONTACT_TO` als Reply-To).
+
+**Geprüft:** `npm run build` grün (neue Routen `/api/test-lead`,
+`/api/sequences`, `/api/stufe-kapitel/[stufe]`, `/bewusstseinstest/ergebnis/1–7`
+statisch), `npx eslint src` ohne Befund (die 29 bestehenden `require()`-
+Fehler in `tools/social/weisheiten/*.js` sind unverändert und nicht Teil
+dieses Änderungssatzes), `npm test` 11/11.
+
+**Offene Ops-Aufgaben:**
+- [ ] Migrationen 0017 + 0018 im Supabase-Dashboard ausführen.
+- [ ] `NEXT_PUBLIC_META_PIXEL_ID` in `/opt/mattermost/.env` setzen (optional)
+      und die neue `build.args`-Zeile + die zweite Crontab-Zeile aus
+      `deploy/docker-compose.yml` in `/opt/mattermost/docker-compose.yml`
+      nachziehen; danach `up -d --build website` und `up -d impuls-cron`.
+- [ ] Cron prüfen: `wget -O- "http://website:3000/api/sequences?secret=…"`
+      aus dem Cron-Container – Antwort `{ ok: true, testLead: …, bookBuyer: … }`.
+- [ ] `/mitgliedschaft` bietet noch keinen 7-Tage-Test (Punkt 8 der
+      Change-Liste, Stripe `trial_period_days`); die CTAs versprechen ihn
+      bereits – Punkt 8 zeitnah umsetzen oder Button-Text anpassen.
+- [ ] Datenschutzerklärung um Meta-Pixel ergänzen, sobald die ID gesetzt ist.
+
+---
+
 ## 2026-09-18 – Reel-Skripte neu gefasst (emotionale Aufladung) + Kampagnen-Check
 
 **Anlass:** Marketing-Analyse des Repos (`docs/audit/kampagnen-check-2026-09-18.md`):
