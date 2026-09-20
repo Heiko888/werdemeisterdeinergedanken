@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-20 – Hero-Überschrift „7 Stufen": Wirkung geschärft
+
+**Anlass:** Die Überschrift „Die 7 Stufen der Bewusstseinsentwicklung" wirkte
+zu technisch/schwach. Neuer, aspirativer Akzent, der direkt an die Marke
+„Werde Meister deiner Gedanken" anknüpft. Branch
+`claude/confident-gauss-7xjgdp`.
+
+**Geändert – Akzentwort „Bewusstseinsentwicklung" → „Meisterschaft":**
+- `src/app/die-7-stufen/page.tsx`: Hero-`<h1>` jetzt „Die 7 Stufen zur
+  **Meisterschaft**"; Metadaten-`title` von „Die 7 Stufen der
+  Bewusstseinsentwicklung" auf „Die 7 Stufen zur Meisterschaft" angepasst.
+- `src/components/sections/SevenStages.tsx`: identische Section-Überschrift
+  auf der Startseite ebenfalls auf „Die 7 Stufen zur **Meisterschaft**"
+  geändert, damit Teaser und Zielseite zusammenpassen.
+
+**Bewusst NICHT geändert:** Der feste Produkt-/Markenbegriff
+„Bewusstseinsentwicklung" bleibt erhalten, wo er zum Namen gehört bzw. als
+SEO-Keyword dient – u. a. der E-Book-Titel „Die 7 Stufen der
+Bewusstseinsentwicklung", die Meta-`description` von `/die-7-stufen`, der
+Footer-Slogan, Kompass-Alt-Text und die `keywords` im Layout.
+
+---
+
 ## 2026-09-18 – Funnel-Fixes 1–7 (Kampagnen-Check)
 
 **Anlass:** Change-Liste aus `docs/audit/kampagnen-check-2026-09-18.md`
