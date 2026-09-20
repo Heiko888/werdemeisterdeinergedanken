@@ -5,6 +5,22 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-20 – Bewusstseinstest: Hero-Person ausgetauscht
+
+**Anlass:** Neues freigestelltes Motiv von Heiko (zeigt auf den Betrachter)
+soll die bisherige Vordergrund-Figur im Hero von `/bewusstseinstest` ersetzen.
+Branch `claude/eloquent-hamilton-mmxwb0`.
+
+- Neues Bild `public/heiko-bewusstseinstest-zeigt.png` (941×1672, PNG mit
+  Transparenz) aus `public/ChatGPT Image 21. Sept. 2026, 01_00_07.png`
+  (von `main`) unter sauberem, leerzeichenfreiem Dateinamen abgelegt.
+- `src/app/bewusstseinstest/page.tsx`: `foreground` des `PageHero` von
+  `/632bbec8-e58f-4130-b74d-914b0f0860f0.png` auf
+  `/heiko-bewusstseinstest-zeigt.png` umgestellt. Alt-Text und Layout
+  unverändert. Das alte Bild bleibt im Repo (nicht mehr referenziert).
+
+---
+
 ## 2026-09-20 – Hero-Überschrift „7 Stufen": Wirkung geschärft
 
 **Anlass:** Die Überschrift „Die 7 Stufen der Bewusstseinsentwicklung" wirkte

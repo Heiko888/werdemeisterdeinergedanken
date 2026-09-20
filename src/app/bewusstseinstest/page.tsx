@@ -25,7 +25,7 @@ export default function BewusstseinstestPage() {
         intro="21 ehrliche Fragen zeigen dir, auf welcher der 7 Stufen der Bewusstseinsentwicklung du aktuell stehst – und welcher nächste Schritt für dich möglich ist. Antworte spontan; es gibt kein Richtig oder Falsch. Dauer: etwa 5 Minuten."
         image="/hero-bewusstseinstest.webp"
         spotlight="right"
-        foreground="/632bbec8-e58f-4130-b74d-914b0f0860f0.png"
+        foreground="/heiko-bewusstseinstest-zeigt.png"
         foregroundAlt="Heiko Schwaninger deutet einladend auf dich – jetzt den Bewusstseinstest starten"
       />
 
