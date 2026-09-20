@@ -10,7 +10,7 @@ import { stages } from "@/lib/content";
 import { withCanonical } from "@/lib/seo";
 
 export const metadata: Metadata = withCanonical("/die-7-stufen", {
-  title: "Die 7 Stufen der Bewusstseinsentwicklung",
+  title: "Die 7 Stufen zur Meisterschaft",
   description:
     "Der strukturierte Weg vom Autopilot bis zur Meisterschaft über deine Gedanken – die 7 Stufen der Bewusstseinsentwicklung im Detail.",
 });
@@ -112,8 +112,8 @@ export default function SevenStagesPage() {
           </Reveal>
           <Reveal delay={80}>
             <h1 className="max-w-3xl text-[1.7rem] font-medium leading-[1.1] text-cream sm:text-5xl sm:[hyphens:none] sm:[overflow-wrap:normal] md:text-[3.4rem]">
-              Die 7 Stufen der{" "}
-              <em className="accent">Bewusstseinsentwicklung</em>
+              Die 7 Stufen zur{" "}
+              <em className="accent">Meisterschaft</em>
             </h1>
           </Reveal>
           <Reveal delay={140}>

@@ -52,8 +52,8 @@ export function SevenStages() {
             eyebrow="Der Weg"
             title={
               <>
-                Die 7 Stufen der{" "}
-                <em className="accent">Bewusstseinsentwicklung</em>
+                Die 7 Stufen zur{" "}
+                <em className="accent">Meisterschaft</em>
               </>
             }
             intro="Kein loser Werkzeugkasten, sondern ein klarer Weg. Jede Stufe baut auf der vorherigen auf – von der ersten Ahnung bis zur echten Meisterschaft über deine Gedanken."
