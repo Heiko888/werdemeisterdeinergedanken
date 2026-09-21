@@ -58,5 +58,15 @@ module.exports = {
     // Story „Papa, kannste mal erklären?" (2 Personen: Papa + Kind)
     papaTaschen: dataUri(path.join(__dirname, "quellen/heiko-pose-papa-taschen.png"), "image/png"),
     kindRucksack: dataUri(path.join(__dirname, "quellen/kind-pose-rucksack.png"), "image/png"),
+    // Serie „Aufbruch & Energie" (dynamische Posen)
+    sprung: dataUri(path.join(__dirname, "quellen/heiko-pose-sprung.png"), "image/png"),
+    rennt: dataUri(path.join(__dirname, "quellen/heiko-pose-rennt.png"), "image/png"),
+    reichtHand: dataUri(path.join(__dirname, "quellen/heiko-pose-reicht-hand.png"), "image/png"),
+    gehtZeigt: dataUri(path.join(__dirname, "quellen/heiko-pose-geht-zeigt.png"), "image/png"),
+    offeneArme: dataUri(path.join(__dirname, "quellen/heiko-pose-offene-arme.png"), "image/png"),
+    merke: dataUri(path.join(__dirname, "quellen/heiko-pose-merke.png"), "image/png"),
+    maler: dataUri(path.join(__dirname, "quellen/heiko-pose-maler.png"), "image/png"),
   },
+  // Gold-auf-Schwarz-Wandbild (Vollszene, mit Hintergrund) – als Full-Bleed-Motiv.
+  goldwand: dataUri(path.join(__dirname, "quellen/heiko-szene-goldwand.png"), "image/png"),
 };

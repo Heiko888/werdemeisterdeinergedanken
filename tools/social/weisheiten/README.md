@@ -21,6 +21,12 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
 - **Serie F – „Einladung & Reflexion"** (`gen-einladung.js`): 5 ruhige/einladende Gesten
   (Kinn, offene Hand, Hand aufs Herz, Ansprache) mit reflektierenden Weisheiten, zentrierter
   Aufbau, je Motiv **4:5 + 9:16** → 10 Motive.
+- **Serie G – „Aufbruch & Energie"** (`gen-aufbruch.js`): 6 dynamische Posen (Sprung,
+  Laufen, Hand reichen, Gehen/Zeigen, offene Arme, Finger hoch) mit energetischen
+  Weisheiten, zentrierter Aufbau, je Motiv **4:5 + 9:16** → 12 Motive.
+- **Motiv „Gold auf Schwarz"** (`gen-goldschwarz.js`): die Wandbild-Szene (Gold auf
+  Schwarz streichen) als Full-Bleed-Bild mit Markentext „Wo andere nur Schwarz sehen,
+  trägst du Gold auf.", je **4:5 + 9:16** → 2 Motive.
 - **Einzel-Story „Papa, kannste mal erklären?"** (`gen-papa.js`): Hook-Story im **9:16-Format
   (1080×1920)** mit **2 Personen** – Junge (freigestellt, Blick nach oben, Rucksack) links,
   Papa (freigestellt, Hände in den Taschen, Blick zum Kind) rechts und größer, einander
@@ -83,7 +89,9 @@ exakt auf 1080×1350 zugeschnitten.
 | `gen-mini-muster.js` | Serie D (Mini „Muster & Vermeidung", 4:5 + 9:16) → HTML nach `build/` |
 | `gen-klartext.js` | Serie E („Klartext & Entscheidung" + E-Book, 4:5 + 9:16) → HTML nach `build/` |
 | `gen-einladung.js` | Serie F („Einladung & Reflexion", 4:5 + 9:16) → HTML nach `build/` |
-| `gen-papa.js` | Einzel-Story „Papa, kannste mal erklären?" (9:16) → HTML nach `build/` |
+| `gen-papa.js` | Einzel-Story „Papa, kannste mal erklären?" (9:16 + 4:5) → HTML nach `build/` |
+| `gen-aufbruch.js` | Serie G („Aufbruch & Energie", 4:5 + 9:16) → HTML nach `build/` |
+| `gen-goldschwarz.js` | Motiv „Gold auf Schwarz" (4:5 + 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |
 | `captions.md` | fertige Feed-Captions + Hashtags je Weisheit |

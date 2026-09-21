@@ -29,7 +29,9 @@ node gen-story-portrait.js  # Serie C2 (Porträt-Story, 9:16 1080x1920)
 node gen-mini-muster.js     # Serie D  (Mini „Muster & Vermeidung", 4:5 + 9:16)
 node gen-klartext.js        # Serie E  („Klartext & Entscheidung" + E-Book, 4:5 + 9:16)
 node gen-einladung.js       # Serie F  („Einladung & Reflexion", 4:5 + 9:16)
-node gen-papa.js            # Einzel-Story „Papa, kannste mal erklären?" (9:16)
+node gen-papa.js            # Einzel-Story „Papa, kannste mal erklären?" (9:16 + 4:5)
+node gen-aufbruch.js        # Serie G  („Aufbruch & Energie", 4:5 + 9:16)
+node gen-goldschwarz.js     # Motiv „Gold auf Schwarz" (4:5 + 9:16)
 
 shopt -s nullglob
 for html in "$BUILD"/*.html; do
