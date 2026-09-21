@@ -34,6 +34,7 @@ node gen-aufbruch.js        # Serie G  („Aufbruch & Energie", 4:5 + 9:16)
 node gen-haltung.js         # Serie H  („Haltung & Klarheit", 4:5 + 9:16)
 node gen-extra-serien.js    # Serien I–L (Loslassen/Mut/Fokus/Handeln, 4:5 + 9:16)
 node gen-goldschwarz.js     # Motiv „Gold auf Schwarz" (4:5 + 9:16)
+node gen-wiederholung.js    # Motiv „Wiederholung → Meisterschaft" (4:5 + 9:16)
 
 shopt -s nullglob
 for html in "$BUILD"/*.html; do

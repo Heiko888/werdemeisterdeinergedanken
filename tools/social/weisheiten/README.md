@@ -36,6 +36,9 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
 - **Motiv „Gold auf Schwarz"** (`gen-goldschwarz.js`): die Wandbild-Szene (Gold auf
   Schwarz streichen) als Full-Bleed-Bild mit Markentext „Wo andere nur Schwarz sehen,
   trägst du Gold auf.", je **4:5 + 9:16** → 2 Motive.
+- **Motiv „Wiederholung → Meisterschaft"** (`gen-wiederholung.js`): ruhig-selbstbewusste
+  Pose (Arme verschränkt) mit „Du kannst nicht eine Sache ständig wiederholen, ohne dabei
+  immer besser zu werden.", je **4:5 + 9:16** → 2 Motive.
 - **Einzel-Story „Papa, kannste mal erklären?"** (`gen-papa.js`): Hook-Story im **9:16-Format
   (1080×1920)** mit **2 Personen** – Junge (freigestellt, Blick nach oben, Rucksack) links,
   Papa (freigestellt, Hände in den Taschen, Blick zum Kind) rechts und größer, einander
@@ -103,6 +106,7 @@ exakt auf 1080×1350 zugeschnitten.
 | `gen-haltung.js` | Serie H („Haltung & Klarheit", 4:5 + 9:16) → HTML nach `build/` |
 | `gen-extra-serien.js` | Serien I–L (Loslassen/Mut/Fokus/Handeln, 4:5 + 9:16) → HTML nach `build/` |
 | `gen-goldschwarz.js` | Motiv „Gold auf Schwarz" (4:5 + 9:16) → HTML nach `build/` |
+| `gen-wiederholung.js` | Motiv „Wiederholung → Meisterschaft" (4:5 + 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |
 | `captions.md` | fertige Feed-Captions + Hashtags je Weisheit |
