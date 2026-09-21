@@ -9,9 +9,10 @@ fs.mkdirSync(BUILD, { recursive: true });
 
 const TEXT = `Wo andere nur<br><em>Schwarz</em> sehen,<br>tr&auml;gst du <em>Gold</em> auf.`;
 
+// Text sitzt UNTEN (über dem dunklen Eimer-/Boden-Bereich), damit das Gesicht oben frei bleibt.
 const FMT = {
-  "4x5":  { w: 1080, h: 1350, textTop: 78,  font: 60, maxw: 940, logoBottom: 60,  ruleTop: 24, objPos: "50% 42%" },
-  "9x16": { w: 1080, h: 1920, textTop: 150, font: 72, maxw: 960, logoBottom: 150, ruleTop: 28, objPos: "56% 46%" },
+  "4x5":  { w: 1080, h: 1350, contentBottom: 190, font: 56, maxw: 960, logoBottom: 60,  ruleTop: 22, objPos: "50% 34%" },
+  "9x16": { w: 1080, h: 1920, contentBottom: 320, font: 66, maxw: 980, logoBottom: 150, ruleTop: 26, objPos: "54% 40%" },
 };
 
 function page(fmtKey) {
@@ -28,13 +29,13 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--navy-950);color:v
 .stage{position:absolute;inset:0;overflow:hidden;isolation:isolate;}
 .backdrop{position:absolute;inset:0;z-index:-30;}
 .backdrop img{width:100%;height:100%;object-fit:cover;object-position:${f.objPos};}
-.veil-t{position:absolute;left:0;right:0;top:0;height:44%;z-index:-18;
-  background:linear-gradient(to bottom,color-mix(in oklab,var(--navy-950) 88%,transparent) 0%,color-mix(in oklab,var(--navy-950) 62%,transparent) 42%,color-mix(in oklab,var(--navy-950) 24%,transparent) 74%,transparent);}
-.veil-b{position:absolute;left:0;right:0;bottom:0;height:30%;z-index:-18;
-  background:linear-gradient(to top,color-mix(in oklab,var(--navy-950) 82%,transparent) 0%,color-mix(in oklab,var(--navy-950) 34%,transparent) 46%,transparent 80%);}
+.veil-t{position:absolute;left:0;right:0;top:0;height:22%;z-index:-18;
+  background:linear-gradient(to bottom,color-mix(in oklab,var(--navy-950) 46%,transparent) 0%,color-mix(in oklab,var(--navy-950) 18%,transparent) 55%,transparent);}
+.veil-b{position:absolute;left:0;right:0;bottom:0;height:52%;z-index:-18;
+  background:linear-gradient(to top,color-mix(in oklab,var(--navy-950) 92%,transparent) 0%,color-mix(in oklab,var(--navy-950) 74%,transparent) 34%,color-mix(in oklab,var(--navy-950) 38%,transparent) 62%,transparent 90%);}
 .grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
-.content{position:absolute;z-index:4;top:${f.textTop}px;left:50%;transform:translateX(-50%);width:${f.maxw}px;text-align:center;}
+.content{position:absolute;z-index:4;bottom:${f.contentBottom}px;left:50%;transform:translateX(-50%);width:${f.maxw}px;text-align:center;}
 h1{margin:0;font-size:${f.font}px;line-height:1.14;font-weight:500;letter-spacing:-.5px;color:var(--cream);text-shadow:0 2px 34px rgba(9,11,16,.85);}
 h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1.34em;line-height:1;
   color:transparent;background:linear-gradient(120deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;}
