@@ -61,6 +61,15 @@ ist immer das echte Foto** – keine KI-Veränderung, nur Rahmung/Spiegelung/Aus
 Panoramen (`assets.js` → `backdrops`: das Original `hero-bg-berge.webp` plus 6 unter
 `quellen/hintergruende/`). Neue Panoramen dort ablegen und in `assets.js` registrieren.
 
+**Gemeinsames Layout-Modul (`lib/centered.js`):** Alle zentrierten Serien (D–M) teilen sich
+*ein* Layout-Modul. Die Serien-Generatoren sind nur noch schlanke Configs (Posen + Weisheiten)
+und rufen `buildSeries({...})`. Grafische Aufwertungen landen damit an einer Stelle und gelten
+überall. Enthalten:
+- **Serien-Kicker** (Gold-Label) + **Fortschritts-Punkte** (Position in der Serie)
+- **Kontaktschatten** unter den Füßen + **Scrim** hinter dem Logo (Lesbarkeit)
+- einheitliche **Warm-Tonung** (Color-Grade) + Typo-Feinschliff
+- **Cover-/Titelkarte je Serie** (`<prefix>-00-cover-4x5/9x16`) für Carousel-Start / Reel-Cover
+
 ## Erzeugen
 
 ```bash
@@ -112,5 +121,6 @@ exakt auf 1080×1350 zugeschnitten.
 | `gen-uebung.js` | Serie M („Übung & Meisterschaft", 4:5 + 9:16) → HTML nach `build/` |
 | `gen-wiederholung.js` | Motiv „Wiederholung → Meisterschaft" (4:5 + 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
+| `lib/centered.js` | gemeinsames Layout-Modul für die zentrierten Serien (Look + Aufwertungen + Cover) |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |
 | `captions.md` | fertige Feed-Captions + Hashtags je Weisheit |
