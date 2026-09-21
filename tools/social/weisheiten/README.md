@@ -24,6 +24,9 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
 - **Serie G – „Aufbruch & Energie"** (`gen-aufbruch.js`): 6 dynamische Posen (Sprung,
   Laufen, Hand reichen, Gehen/Zeigen, offene Arme, Finger hoch) mit energetischen
   Weisheiten, zentrierter Aufbau, je Motiv **4:5 + 9:16** → 12 Motive.
+- **Serie H – „Haltung & Klarheit"** (`gen-haltung.js`): 6 Posen (Arme verschränkt
+  seitl./frontal, Erklären, Zeigen seitl., Doppelzeiger, Finger hoch) mit klaren
+  Weisheiten zum Standpunkt-Beziehen, je Motiv **4:5 + 9:16** → 12 Motive.
 - **Motiv „Gold auf Schwarz"** (`gen-goldschwarz.js`): die Wandbild-Szene (Gold auf
   Schwarz streichen) als Full-Bleed-Bild mit Markentext „Wo andere nur Schwarz sehen,
   trägst du Gold auf.", je **4:5 + 9:16** → 2 Motive.
@@ -91,6 +94,7 @@ exakt auf 1080×1350 zugeschnitten.
 | `gen-einladung.js` | Serie F („Einladung & Reflexion", 4:5 + 9:16) → HTML nach `build/` |
 | `gen-papa.js` | Einzel-Story „Papa, kannste mal erklären?" (9:16 + 4:5) → HTML nach `build/` |
 | `gen-aufbruch.js` | Serie G („Aufbruch & Energie", 4:5 + 9:16) → HTML nach `build/` |
+| `gen-haltung.js` | Serie H („Haltung & Klarheit", 4:5 + 9:16) → HTML nach `build/` |
 | `gen-goldschwarz.js` | Motiv „Gold auf Schwarz" (4:5 + 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |

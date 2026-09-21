@@ -31,6 +31,7 @@ node gen-klartext.js        # Serie E  („Klartext & Entscheidung" + E-Book, 4:
 node gen-einladung.js       # Serie F  („Einladung & Reflexion", 4:5 + 9:16)
 node gen-papa.js            # Einzel-Story „Papa, kannste mal erklären?" (9:16 + 4:5)
 node gen-aufbruch.js        # Serie G  („Aufbruch & Energie", 4:5 + 9:16)
+node gen-haltung.js         # Serie H  („Haltung & Klarheit", 4:5 + 9:16)
 node gen-goldschwarz.js     # Motiv „Gold auf Schwarz" (4:5 + 9:16)
 
 shopt -s nullglob

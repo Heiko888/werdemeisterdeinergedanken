@@ -66,6 +66,16 @@ module.exports = {
     offeneArme: dataUri(path.join(__dirname, "quellen/heiko-pose-offene-arme.png"), "image/png"),
     merke: dataUri(path.join(__dirname, "quellen/heiko-pose-merke.png"), "image/png"),
     maler: dataUri(path.join(__dirname, "quellen/heiko-pose-maler.png"), "image/png"),
+    // Serie „Haltung & Klarheit" + weitere freigestellte Posen
+    armeVerschraenktSeite: dataUri(path.join(__dirname, "quellen/heiko-pose-arme-verschraenkt-seite.png"), "image/png"),
+    armeVerschraenktA: dataUri(path.join(__dirname, "quellen/heiko-pose-arme-verschraenkt-a.png"), "image/png"),
+    armeVerschraenktB: dataUri(path.join(__dirname, "quellen/heiko-pose-arme-verschraenkt-b.png"), "image/png"),
+    erklaert: dataUri(path.join(__dirname, "quellen/heiko-pose-erklaert.png"), "image/png"),
+    zeigtSeite: dataUri(path.join(__dirname, "quellen/heiko-pose-zeigt-seite.png"), "image/png"),
+    doppelzeiger: dataUri(path.join(__dirname, "quellen/heiko-pose-doppelzeiger.png"), "image/png"),
+    fingerhochTasche: dataUri(path.join(__dirname, "quellen/heiko-pose-fingerhoch-tasche.png"), "image/png"),
+    fragendeHaende: dataUri(path.join(__dirname, "quellen/heiko-pose-fragende-haende.png"), "image/png"),
+    winkt: dataUri(path.join(__dirname, "quellen/heiko-pose-winkt.png"), "image/png"),
   },
   // Gold-auf-Schwarz-Wandbild (Vollszene, mit Hintergrund) – als Full-Bleed-Motiv.
   goldwand: dataUri(path.join(__dirname, "quellen/heiko-szene-goldwand.png"), "image/png"),
