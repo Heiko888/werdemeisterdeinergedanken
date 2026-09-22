@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-22 – Startseite Sektion 06: Videobotschaft eingebaut
+
+**Anlass:** Das echte „Ein anderer Blickwinkel"-Video (YouTube
+`https://youtu.be/rAfmZMtpOIc`) soll in Sektion 06 („Ein anderer Blickwinkel",
+Komponente `MaybeNotYou`) der Startseite laufen – statt des bisherigen
+Platzhalter-Videos. Branch `claude/kind-hawking-2qqh9v`.
+
+- `src/lib/site.ts`: `videoMessage.youtubeId` von `null` auf `"rAfmZMtpOIc"`
+  gesetzt. Dadurch greift laut vorbereiteter Logik in
+  `src/components/sections/MaybeNotYou.tsx` automatisch das echte Video inkl.
+  seines eigenen YouTube-Thumbnails (kein gebrandetes Platzhalter-Thumbnail
+  mehr, `placeholderVideoId` wird für diese Sektion nicht mehr verwendet).
+- Keine weiteren Codeänderungen nötig: Die CSP `frame-src` in `next.config.ts`
+  erlaubt `youtube-nocookie.com`/`youtube.com` bereits, die Einbettung
+  funktioniert ohne Anpassung.
+
+---
+
 ## 2026-09-20 – Bewusstseinstest: Hero-Person ausgetauscht
 
 **Anlass:** Neues freigestelltes Motiv von Heiko (zeigt auf den Betrachter)

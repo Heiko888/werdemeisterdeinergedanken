@@ -23,7 +23,7 @@ export const site = {
   // Vorschaubild. Sobald hier eine echte ID steht, greift automatisch deren
   // eigenes Thumbnail (siehe MaybeNotYou-Sektion).
   videoMessage: {
-    youtubeId: null as string | null,
+    youtubeId: "rAfmZMtpOIc" as string | null,
     title: "Videobotschaft: Ein anderer Blickwinkel",
   },
   // Platzhalter-Video, das vorerst überall dort erscheint, wo noch kein
