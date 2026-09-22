@@ -5,7 +5,7 @@ const { buildSeries } = require("./lib/centered");
 
 const POSES = {
   armeVerschraenktB: { nat: [1024, 1536], bb: { minx: 317, maxx: 751,  miny: 35, maxy: 1507 } },
-  erklaert:          { nat: [941, 1670],  bb: { minx: 253, maxx: 841,  miny: 30, maxy: 1602 } },
+  taschen:           { nat: [1024, 1536], bb: { minx: 318, maxx: 887,  miny: 27, maxy: 1526 } },
   kinn:              { nat: [1024, 1536], bb: { minx: 160, maxx: 858,  miny: 28, maxy: 1534 } },
   kopfkratzen:       { nat: [1024, 1536], bb: { minx: 194, maxx: 786,  miny: 46, maxy: 1482 } },
   zeigtSeite:        { nat: [941, 1672],  bb: { minx: 292, maxx: 733,  miny: 39, maxy: 1583 } },
@@ -23,7 +23,7 @@ const n = buildSeries({
   items: [
     { n: 1, key: "hook", pose: "armeVerschraenktB", scale: 0.84,
       q: `Was du st&auml;ndig<br><em>wiederholst</em>,<br>darin wirst du<br><em>besser</em>.` },
-    { n: 2, key: "gedanken", pose: "erklaert", scale: 0.88,
+    { n: 2, key: "gedanken", pose: "taschen", scale: 0.88,
       q: `Das gilt f&uuml;r alles &ndash;<br>auch f&uuml;r deine<br><em>Gedanken</em>.` },
     { n: 3, key: "spur", pose: "kinn", scale: 0.92,
       q: `Jeder Gedanke,<br>den du oft denkst,<br>gr&auml;bt eine <em>Spur</em>.` },
