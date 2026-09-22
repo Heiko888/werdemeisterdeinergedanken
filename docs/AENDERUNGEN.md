@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-22 – Stufen 02–07: Teleprompter-Fassungen (Elgato)
+
+**Anlass:** Wie bei Stufe 01 sollen auch die restlichen Stufen-Skripte direkt im
+Elgato-Prompter (Camera Hub) ablesbar sein. Branch
+`claude/inspiring-lamport-h7xuhp`.
+
+- Neu, je reiner Sprechtext in Atem-Zeilen (Leerzeilen = Pausen, ohne
+  Regie/Titel), wortgleich zur jeweiligen `*-komplett.md`-Quelle:
+  - `docs/skripte/stufen-komplett/stufe-02-erwachen-teleprompter.txt`
+  - `docs/skripte/stufen-komplett/stufe-03-selbstbeobachtung-teleprompter.txt`
+  - `docs/skripte/stufen-komplett/stufe-04-emotionale-reifung-teleprompter.txt`
+  - `docs/skripte/stufen-komplett/stufe-05-schoepferkraft-teleprompter.txt`
+  - `docs/skripte/stufen-komplett/stufe-06-innere-ausrichtung-teleprompter.txt`
+  - `docs/skripte/stufen-komplett/stufe-07-meisterschaft-teleprompter.txt`
+- Damit liegen alle 7 Stufen als Teleprompter-`.txt` vor (Stufe 01 seit dem
+  vorigen Eintrag).
+
+---
+
 ## 2026-09-22 – Stufe 01 „Autopilot": Teleprompter-Fassung (Elgato)
 
 **Anlass:** Das Wort-für-Wort-Skript zu Stufe 01 soll direkt im Elgato-Prompter
