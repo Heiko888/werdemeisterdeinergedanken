@@ -5,6 +5,26 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-22 – Skripte als .txt für den Elgato Prompter
+
+**Anlass:** Die Sprechtexte werden für den Elgato Prompter als reine
+Textdateien gebraucht. Branch `claude/tender-franklin-kzchk8`.
+
+- Neuer Generator `tools/pdf/elgato-txt.mjs` (`npm run elgato-txt`): erzeugt
+  `docs/skripte/elgato/` mit einer .txt pro Video (UTF-8), gegliedert in
+  `01-intro` … `07-reels/<serie>`, plus `LIESMICH.txt` und
+  `WMDG-Elgato-Skripte.zip`.
+- Inhalt: nur der gesprochene Text. Kopfzeilen, `[Regie]`-Hinweise,
+  Überschriften und Markdown-Zeichen werden entfernt; Pausen-Marker der
+  Praxis-Skripte (`…`, `[…Pause: 10 Sek]`) bleiben. Reels: Primär-Hook +
+  Sprechtext. Mentale Selbstverteidigung in 16 Einzeldateien aufgeteilt.
+- 148 Dateien: 2 Intro, 1 Willkommen, 7 Stufen, 13 Vertiefungen,
+  16 Mentale Selbstverteidigung, 13 Praxis, 96 Reels.
+- Quellen bleiben die Markdown-Dateien in `docs/skripte/`; nach Änderungen
+  `npm run elgato-txt` neu ausführen. README-Schnellübersicht ergänzt.
+
+---
+
 ## 2026-09-22 – Skripte: Reel-PDFs & Markdown-Bündel auf aktuellen Stand
 
 **Anlass:** Alle Video-/Reel-Skripte sollten gesammelt bereitgestellt werden.

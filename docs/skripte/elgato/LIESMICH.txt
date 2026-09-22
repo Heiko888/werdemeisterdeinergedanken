@@ -1,0 +1,17 @@
+WMDG – Sprechtexte für den Elgato Prompter
+Stand: 2026-09-22 · automatisch erzeugt mit: npm run elgato-txt
+
+Eine Datei = ein Video. Nur der Text, der gesprochen wird –
+ohne Regie-Hinweise, Überschriften und Formatierung.
+In den Praxis-Skripten stehen die Pausen: … = kurze Pause, […Pause: 10 Sek] = längere Stille.
+In den Reels steht zuerst der Hook, dann der Sprechtext. [Eckige Klammern] = eigene Zahl/Situation einsetzen.
+
+01-intro                       2 Dateien  (Startseite: Intro-Video + Teaser-Reel)
+02-willkommen                  1 Datei    (Willkommensvideo im Mitgliederbereich)
+03-stufen                      7 Dateien  (7 Stufen, lange Videos 6–10 Min)
+04-vertiefungen                13 Dateien (Vertiefungen, 3–5 Min)
+05-mentale-selbstverteidigung  16 Dateien (Themenblock, je 3–5 Min)
+06-praxis                      13 Dateien (Meditationen, Atemübungen, Rituale)
+07-reels                       96 Dateien (alle Reel-Serien)
+
+Nicht von Hand ändern – die Quellen liegen in docs/skripte/ (Markdown).

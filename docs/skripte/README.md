@@ -39,8 +39,14 @@ die Einzel-Quellen in `stufen/`, `stufen-komplett/`, `vertiefungen/`,
 `vertiefungen-komplett/`, `praxis/`, `reels/`, `landing/`, `willkommen/`,
 `carousels/`, `wissenschaft/`.
 
+**Für den Elgato Prompter (reine .txt, ein Video pro Datei):** `elgato/` –
+148 Dateien (Intro, Willkommen, 7 Stufen, Vertiefungen, Mentale
+Selbstverteidigung, Praxis, 96 Reels) plus alles als `elgato/WMDG-Elgato-Skripte.zip`.
+Ohne Regie-Hinweise und Formatierung; Pausen-Marker in der Praxis bleiben.
+Details in `elgato/LIESMICH.txt`.
+
 **Aktualisieren nach Änderung einer Quelle:**
-`npm run videoskripte-md` · `npm run reel-drehbuch` · `npm run langvideo-drehbuch`
+`npm run videoskripte-md` · `npm run reel-drehbuch` · `npm run langvideo-drehbuch` · `npm run elgato-txt`
 
 ## Willkommensvideo (Dashboard)
 
