@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-22 – Intro-Video: Teleprompter-Fassung (Elgato)
+
+**Anlass:** Das Intro-Skript „Was, wenn es nicht an dir liegt?" soll direkt im
+Elgato-Prompter (Camera Hub) nutzbar sein. Branch
+`claude/inspiring-lamport-h7xuhp`.
+
+- Neu: `docs/skripte/landing/intro-nicht-deine-schuld-teleprompter.md` –
+  Prompter-taugliche Aufbereitung: kurze Atem-Zeilen, Leerzeilen als Pausen,
+  plus Kurzanleitung für Camera Hub (Schriftgröße, Scroll-Tempo) und die
+  Produktions-Cues (Titel/CTA einblenden) getrennt vom Sprechtext.
+- Neu: `docs/skripte/landing/intro-nicht-deine-schuld-teleprompter.txt` – reiner
+  Sprechtext ohne Überschriften, zum direkten Einfügen in den Prompter.
+- Inhaltlich wortgleich zur Quelle
+  `docs/skripte/landing/intro-nicht-deine-schuld.md`; nur Zeilenumbrüche und
+  Pausen fürs Ablesen aufbereitet. Regie-Hinweise aus dem Lesefluss entfernt.
+
+---
+
 ## 2026-09-20 – Bewusstseinstest: Hero-Person ausgetauscht
 
 **Anlass:** Neues freigestelltes Motiv von Heiko (zeigt auf den Betrachter)
