@@ -1,7 +1,8 @@
 # LinkedIn – Woche 1 · Stufe 1 „Autopilot" · fertige Posts
 
 > Ausformulierte, veröffentlichungsfertige Posts zu den drei Slots aus
-> `docs/marketing/redaktionsplan/linkedin.md` (Di Beitrag · Mi Carousel · Do Pitch).
+> `docs/marketing/redaktionsplan/linkedin.md` (Di Beitrag · Mi Carousel · Do Pitch)
+> plus den Freitags-Pitch aus dem Standard-Plan (`src/lib/redaktionsplan.ts`).
 > Belegte Quellen: Blog `drei-muster-die-dich-unbewusst-steuern` (`src/lib/blog.ts` 309–345),
 > Carousel-Serie `autopilot-meeting` (`docs/carousels/marketing-serien.mjs`),
 > Praxis `autopilot-check` (`src/lib/practices.ts` 231–246), E-Book `/#ebook`.
@@ -93,10 +94,44 @@ Was ist heute dein Moment zum Innehalten?
 
 ---
 
+## Post 4 · Freitag 07:30 · Pitch (Soft-Pitch E-Book)
+
+> Slot aus dem Standard-Plan `src/lib/redaktionsplan.ts` (Woche 1, `pitch:`
+> „Bewusster entscheiden lässt sich üben – in 7 Stufen."). E-Book-Name wie auf
+> der Website: „Die 7 Stufen der Bewusstseinsentwicklung" (`/gratis-ebook`).
+
+**Bewusster entscheiden ist kein Talent. Es lässt sich üben – in 7 Stufen.**
+
+Diese Woche ging es hier um den Autopiloten: um die Muster, die im Meeting mitentscheiden, und um die Zusage, die schneller draußen ist als der Gedanke dazu.
+
+Die ehrliche Frage danach lautet: Und jetzt?
+
+Einmal bemerken reicht nicht. Aber es ist der Anfang. Wer bewusster entscheiden will, braucht keinen großen Umbruch, sondern einen Weg, der Schritt für Schritt aufbaut:
+
+1. **Autopilot** – bemerken, was automatisch läuft
+2. **Erwachen** – den Moment zwischen Reiz und Reaktion entdecken
+3. **Selbstbeobachtung** – Gedanken sehen, ohne in jeden hineinzuspringen
+4. **Emotionale Reifung** – fühlen, ohne überflutet zu werden
+5. **Schöpferkraft** – Gewohnheiten bewusst neu ausrichten
+6. **Innere Ausrichtung** – Entscheidungen an den eigenen Werten messen
+7. **Meisterschaft** – Klarheit, die auch unter Druck trägt
+
+Genau diesen Weg habe ich in einem kostenlosen E-Book zusammengefasst: „Die 7 Stufen der Bewusstseinsentwicklung". Kompakt erklärt, mit einer ersten, sofort umsetzbaren Übung für jede Stufe – und einem Blick darauf, wo du gerade stehst.
+
+Kein Guru-Versprechen, kein 30-Tage-Programm. Nur ein klarer nächster Schritt.
+
+Auf welcher Stufe würdest du dich im Arbeitsalltag gerade einordnen?
+
+#Selbstführung #Entscheidungen #Achtsamkeit #Leadership #PersönlicheEntwicklung
+
+*(Kommentar 1: Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung" → /gratis-ebook · für Mitglieder: Lektion 1 → /mitglieder/stufe/1)*
+
+---
+
 ## Veröffentlichungs-Hinweise
 
 - **Hook** immer allein in Zeile 1 (LinkedIn zeigt in der Timeline nur die erste Zeile).
 - **Links** in den ersten Kommentar, nicht in den Post-Text.
-- **Rhythmus:** Di 07:30 · Mi 08:15 · Do 07:45 (beste DACH-Zeiten, Frequenz „fokussiert").
+- **Rhythmus:** Di 07:30 · Mi 08:15 · Do 07:45 · Fr 07:30 (beste DACH-Zeiten, Frequenz „fokussiert").
 - **Mittwoch** als Dokument-Post (Carousel-PDF) → höchste Verweildauer.
 - **Ton:** sachlich, wertig, These zuerst – kein Klickbait.

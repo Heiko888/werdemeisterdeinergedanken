@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-22 – LinkedIn Woche 1: Freitags-Pitch ausformuliert
+
+**Anlass:** Der Slot „🎯 Pitch – „Bewusster entscheiden lässt sich üben – in 7
+Stufen." Soft-Pitch E-Book" (Woche 1, Freitag 07:30, Standard-Plan
+`src/lib/redaktionsplan.ts`) war nur als Stichzeile geplant. Branch
+`claude/inspiring-ptolemy-fzy4an`.
+
+- `docs/marketing/redaktionsplan/woche-1/linkedin-posts.md`: neuer
+  „Post 4 · Freitag 07:30 · Pitch" als veröffentlichungsfertiger Text
+  (Hook, Wochen-Rückblick Autopilot, die 7 Stufen als Liste, Soft-Pitch,
+  Frage, Hashtags, Link im ersten Kommentar). Rhythmus-Hinweis um Fr 07:30
+  ergänzt.
+- E-Book-Name im Post bewusst wie auf der Website („Die 7 Stufen der
+  Bewusstseinsentwicklung", Landingpage `/gratis-ebook`). Hinweis: Ältere
+  Planungsdateien (`redaktionsplan-kalender.html`, Woche-1-Posts 2/3) nennen
+  noch den Arbeitstitel „Die 7 Stufen kompakt".
+
+---
+
 ## 2026-09-22 – Startseite Sektion 06: Videobotschaft eingebaut
 
 **Anlass:** Das echte „Ein anderer Blickwinkel"-Video (YouTube
