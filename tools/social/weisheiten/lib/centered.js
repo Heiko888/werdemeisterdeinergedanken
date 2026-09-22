@@ -71,9 +71,10 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--navy-900);color:v
   font-size:${isStory ? 20 : 18}px;color:transparent;background:linear-gradient(100deg,var(--gold-300),var(--gold-500));
   -webkit-background-clip:text;background-clip:text;white-space:nowrap;}
 .content{position:absolute;z-index:4;top:${f.textTop}px;left:50%;transform:translateX(-50%);width:${f.maxw}px;text-align:center;}
-h1{margin:0;font-size:${f.font}px;line-height:1.13;font-weight:500;letter-spacing:-.5px;color:var(--cream);text-shadow:0 2px 34px rgba(9,11,16,.74);}
+h1{margin:0;font-size:${f.font}px;line-height:1.13;font-weight:500;letter-spacing:-.5px;color:var(--cream);text-shadow:0 2px 28px rgba(9,11,16,.82),0 1px 3px rgba(9,11,16,.55);}
 h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1.34em;line-height:1;letter-spacing:-.01em;
-  color:transparent;background:linear-gradient(120deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;}
+  color:transparent;background:linear-gradient(120deg,#f2d489,#d9a93a);-webkit-background-clip:text;background-clip:text;
+  filter:drop-shadow(0 1px 2px rgba(9,11,16,.62)) drop-shadow(0 0 1px rgba(9,11,16,.5));}
 .rule{margin:${f.ruleTop}px auto 0;width:68px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--gold-400),var(--gold-500));box-shadow:0 0 16px rgba(217,169,58,.5);}
 .cta{margin:${Math.round(f.ruleTop * 0.9)}px auto 0;display:inline-block;padding:${isStory ? "14px 28px" : "12px 24px"};border-radius:999px;
   font-size:${isStory ? 26 : 23}px;font-weight:600;letter-spacing:.02em;color:var(--navy-950);
@@ -81,7 +82,7 @@ h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:1
 /* Scrim hinter dem Logo – hält es auch über hellen Strahlen lesbar */
 .brand-scrim{position:absolute;z-index:5;left:50%;bottom:${f.logoBottom - (isStory ? 46 : 40)}px;transform:translateX(-50%);
   width:${isStory ? 640 : 560}px;height:${isStory ? 200 : 170}px;pointer-events:none;
-  background:radial-gradient(50% 50% at 50% 50%,rgba(9,11,16,.6),rgba(9,11,16,.22) 55%,transparent 76%);filter:blur(6px);}
+  background:radial-gradient(50% 50% at 50% 50%,rgba(9,11,16,.74),rgba(9,11,16,.32) 55%,transparent 78%);filter:blur(6px);}
 .brand{position:absolute;bottom:${f.logoBottom}px;left:50%;transform:translateX(-50%);z-index:6;display:inline-flex;align-items:center;gap:15px;filter:drop-shadow(0 2px 20px rgba(9,11,16,.78));}
 .brand img{height:${isStory ? 62 : 58}px;width:auto;display:block;filter:drop-shadow(0 0 18px rgba(217,169,58,.28));}
 .brand .wm{display:flex;flex-direction:column;gap:6px;line-height:1;color:var(--cream);}
@@ -116,7 +117,8 @@ function dotsBlock(index, total) {
 }
 
 function motifPage(fmtKey, cfg, item, i, bg) {
-  const f = FMT[fmtKey];
+  const f0 = FMT[fmtKey];
+  const f = Object.assign({}, f0, { font: item.font || f0.font, textTop: item.textTop != null ? item.textTop : f0.textTop });
   const isStory = fmtKey === "9x16";
   const poseObj = cfg.poses[item.pose];
   const targetH = Math.round(f.targetH * (item.scale || 1));
