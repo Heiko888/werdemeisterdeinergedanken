@@ -2,7 +2,7 @@
 
 > Zum freien Sprechen · Mitgliederbereich
 
-_Automatisch gebündelt aus den Einzel-Skripten – inhaltsgleich zu `WMDG-Video-Drehbuch-Stichpunkt.pdf`. Stand 2026-09-06. Neu erzeugen: `node tools/pdf/videoskripte-markdown.mjs`._
+_Automatisch gebündelt aus den Einzel-Skripten – inhaltsgleich zu `WMDG-Video-Drehbuch-Stichpunkt.pdf`. Stand 2026-09-22. Neu erzeugen: `node tools/pdf/videoskripte-markdown.mjs`._
 
 **Hinweis:** Praxis-Meditationen gibt es nur als Wort-für-Wort-Fassung (siehe „Langvideo · Wort für Wort“) – sie werden ohnehin ruhig vorgelesen.
 

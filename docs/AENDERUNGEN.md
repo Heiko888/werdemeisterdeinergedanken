@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-22 – Skripte: Reel-PDFs & Markdown-Bündel auf aktuellen Stand
+
+**Anlass:** Alle Video-/Reel-Skripte sollten gesammelt bereitgestellt werden.
+Dabei fiel auf, dass die Reel-PDFs und `videoskripte/reels-alle-serien.md`
+noch die alten Reel-Fassungen (vor der Neufassung vom 18.09.) enthielten.
+Branch `claude/tender-franklin-kzchk8`.
+
+- `npm run reel-drehbuch`: alle 6 Reel-PDFs in `docs/workshop/reel-skripte/`
+  neu erzeugt (97 Reels, jetzt mit den Neufassungen aus `docs/skripte/reels/`).
+- `npm run videoskripte-md`: Markdown-Bündel in `docs/skripte/videoskripte/`
+  neu erzeugt (Reels-Bündel inhaltlich aktualisiert, übrige nur Datum).
+- `docs/skripte/README.md`: neue „Schnellübersicht: Wo liegt welches Skript?"
+  mit allen fertigen PDFs und Pfaden.
+- Langvideo-PDFs (Ablesen/Stichpunkt/Intro) unverändert – ihre Quellen haben
+  sich seit dem 14.09. nicht geändert.
+
+---
+
 ## 2026-09-22 – Startseite Sektion 06: Videobotschaft eingebaut
 
 **Anlass:** Das echte „Ein anderer Blickwinkel"-Video (YouTube

@@ -2,7 +2,7 @@
 
 > Zum Ablesen (Teleprompter) · Mitgliederbereich
 
-_Automatisch gebündelt aus den Einzel-Skripten – inhaltsgleich zu `WMDG-Video-Drehbuch-Ablesen.pdf`. Stand 2026-09-06. Neu erzeugen: `node tools/pdf/videoskripte-markdown.mjs`._
+_Automatisch gebündelt aus den Einzel-Skripten – inhaltsgleich zu `WMDG-Video-Drehbuch-Ablesen.pdf`. Stand 2026-09-22. Neu erzeugen: `node tools/pdf/videoskripte-markdown.mjs`._
 
 ---
 

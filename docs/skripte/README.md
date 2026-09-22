@@ -20,6 +20,28 @@ inhaltlich zusammen.
 - **Fett** – der eine Satz, der genau so fallen sollte (Hook, Leitsatz)
 - Bei Praxis: `…` = bewusste Sprechpause, kursiv = Regieton (leise, langsam)
 
+## Schnellübersicht: Wo liegt welches Skript? (Stand 2026-09-22)
+
+**Fertige PDFs (zum Drehen / Teleprompter):**
+
+| Was | Datei |
+|---|---|
+| Lange Videos – Wort für Wort (7 Stufen, Praxis, Vertiefungen, Mentale Selbstverteidigung) | `docs/workshop/video-drehbuecher/WMDG-Video-Drehbuch-Ablesen.pdf` |
+| Lange Videos – Stichpunkte (frei sprechen) | `docs/workshop/video-drehbuecher/WMDG-Video-Drehbuch-Stichpunkt.pdf` |
+| Intro-Video Startseite + Teaser-Reel | `docs/workshop/video-drehbuecher/WMDG-Video-Drehbuch-Intro.pdf` |
+| Willkommensvideo Mitglieder-Dashboard | `docs/skripte/willkommen/Willkommensvideo-Dashboard.pdf` |
+| Alle Reels (97 Stück, alle Serien) | `docs/workshop/reel-skripte/WMDG-Reel-Drehbuch-Alle-Serien.pdf` |
+| Reels je Serie | `docs/workshop/reel-skripte/WMDG-Reel-Drehbuch-<Serie>.pdf` |
+| Praxis mit Stimme (13 Übungen) | `docs/mitglieder/sprecherskripte/WMDG-Praxis-mit-Stimme-Gesamtmappe.pdf` (+ `einzel/`) |
+
+**Dieselben Inhalte als Markdown:** `videoskripte/` (Bündel, siehe unten) sowie
+die Einzel-Quellen in `stufen/`, `stufen-komplett/`, `vertiefungen/`,
+`vertiefungen-komplett/`, `praxis/`, `reels/`, `landing/`, `willkommen/`,
+`carousels/`, `wissenschaft/`.
+
+**Aktualisieren nach Änderung einer Quelle:**
+`npm run videoskripte-md` · `npm run reel-drehbuch` · `npm run langvideo-drehbuch`
+
 ## Willkommensvideo (Dashboard)
 
 `willkommen/dashboard-willkommen.md` – das Intro auf der Startseite des
