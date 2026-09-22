@@ -21,6 +21,7 @@ der Serie in **4:5** und – wo vorhanden – **9:16**, inkl. Serien-Cover.
 | `serie-L-handeln.zip` | Serie L – Verantwortung & Handeln (+ Cover) |
 | `serie-M-uebung.zip` | Serie M – Übung & Meisterschaft (+ Cover) |
 | `sondermotive.zip` | Papa-Story, Gold auf Schwarz, Wiederholung |
+| `story-meisterschaft.zip` | Story „Meisterschaft" – 6 Slides (9:16) |
 
 > Hinweis: Diese ZIPs sind Bequemlichkeits-Downloads. Die Einzelbilder liegen in
 > `../output/`, die Captions/Hashtags in `../captions.md`. Neu erzeugen: `../render.sh`.
