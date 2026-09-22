@@ -478,3 +478,34 @@ Die ehrlichsten Fragen kommen von Kindern. „Warum eigentlich?" ist der Anfang 
 echten Klarheit.
 👉 Welche einfache Frage traust du dich gerade nicht zu stellen?
 _Extra-Tags:_ `#familie #fragenstellen #klarheit`
+
+---
+---
+
+# Story „Meisterschaft" (6 Slides, 9:16)
+
+**Slide-Texte (bereits im Bild):**
+1. „Du kannst nicht eine Sache ständig wiederholen, ohne dabei immer besser zu werden."
+2. „Das gilt für alles – auch für deine Gedanken."
+3. „Jeder Gedanke, den du oft denkst, gräbt eine Spur."
+4. „Wiederholst du Zweifel, wirst du Meister im Zweifeln."
+5. „Wiederholst du Klarheit, wirst du Meister der Klarheit."
+6. „Also – worin willst du besser werden? Fang heute an."
+
+**Sticker-Ideen (Story):**
+- Slide 4/5: **Umfrage-Sticker** „Zweifel 😟 oder Klarheit ✨?"
+- Slide 6: **Frage-Sticker** „Worin willst du besser werden?" + **Link-Sticker** (E-Book / Bio)
+- Slide 1 oder 6: **Quiz-/Emoji-Slider** „Wie oft übst du deine Gedanken? 🧠"
+
+**Caption (falls du die Story auch als Reel/Carousel postest):**
+
+Wiederholung macht dich besser – in allem. Auch im Denken. 🧠
+Jeder Gedanke, den du oft denkst, gräbt eine Spur. Wiederholst du Zweifel,
+wirst du Meister im Zweifeln. Wiederholst du Klarheit, wirst du Meister der Klarheit.
+Die Frage ist also nicht, *ob* du übst – sondern *was*.
+
+👉 Worin willst du besser werden? Speicher dir den Post und fang heute an. 🔖
+Mehr dazu: Link in Bio.
+
+**Hashtags:**
+`#werdemeisterdeinergedanken #meisterschaft #übung #wiederholung #dranbleiben #wachstum #gedanken #mindset #achtsamkeit #selbstreflexion #persönlichkeitsentwicklung #gewohnheiten #klarheit #mentalefitness #bewusstsein #disziplin #7stufen`
