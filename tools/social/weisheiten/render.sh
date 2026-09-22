@@ -36,6 +36,7 @@ node gen-extra-serien.js    # Serien I–L (Loslassen/Mut/Fokus/Handeln, 4:5 + 9
 node gen-goldschwarz.js     # Motiv „Gold auf Schwarz" (4:5 + 9:16)
 node gen-wiederholung.js    # Motiv „Wiederholung → Meisterschaft" (4:5 + 9:16)
 node gen-uebung.js          # Serie M  („Übung & Meisterschaft", 4:5 + 9:16)
+node gen-story-meisterschaft.js  # Story „Meisterschaft" (6 Slides, nur 9:16)
 
 shopt -s nullglob
 for html in "$BUILD"/*.html; do

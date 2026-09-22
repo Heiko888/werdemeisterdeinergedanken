@@ -162,16 +162,19 @@ function coverPage(fmtKey, cfg, bg) {
 function buildSeries(cfg) {
   fs.mkdirSync(BUILD, { recursive: true });
   const bd = a.backdrops;
+  const formats = cfg.formats || ["4x5", "9x16"];
   cfg.items.forEach((item, i) => {
     const nn = String(item.n || i + 1).padStart(2, "0");
     const bg = bd[i % bd.length];
-    fs.writeFileSync(path.join(BUILD, `${cfg.prefix}-${nn}-${item.key}-4x5.html`), motifPage("4x5", cfg, item, i, bg));
-    fs.writeFileSync(path.join(BUILD, `${cfg.prefix}-${nn}-${item.key}-9x16.html`), motifPage("9x16", cfg, item, i, bg));
+    formats.forEach((fmt) => {
+      fs.writeFileSync(path.join(BUILD, `${cfg.prefix}-${nn}-${item.key}-${fmt}.html`), motifPage(fmt, cfg, item, i, bg));
+    });
   });
   if ((cfg.coverTitle || cfg.tag) && !cfg.noCover) {
     const cbg = cfg.coverBg != null ? bd[cfg.coverBg % bd.length] : bd[0];
-    fs.writeFileSync(path.join(BUILD, `${cfg.prefix}-00-cover-4x5.html`), coverPage("4x5", cfg, cbg));
-    fs.writeFileSync(path.join(BUILD, `${cfg.prefix}-00-cover-9x16.html`), coverPage("9x16", cfg, cbg));
+    formats.forEach((fmt) => {
+      fs.writeFileSync(path.join(BUILD, `${cfg.prefix}-00-cover-${fmt}.html`), coverPage(fmt, cfg, cbg));
+    });
   }
   return cfg.items.length;
 }

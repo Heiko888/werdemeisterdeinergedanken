@@ -42,6 +42,9 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
 - **Motiv „Wiederholung → Meisterschaft"** (`gen-wiederholung.js`): ruhig-selbstbewusste
   Pose (Arme verschränkt) mit „Du kannst nicht eine Sache ständig wiederholen, ohne dabei
   immer besser zu werden.", je **4:5 + 9:16** → 2 Motive.
+- **Story „Meisterschaft"** (`gen-story-meisterschaft.js`): dieselbe Weisheit als
+  **6-teilige 9:16-Story** ausgebaut und auf die Marke angewandt (Wiederholung →
+  Meisterschaft der Gedanken), mit Fortschritts-Punkten und CTA-Slide → 6 Slides.
 - **Einzel-Story „Papa, kannste mal erklären?"** (`gen-papa.js`): Hook-Story im **9:16-Format
   (1080×1920)** mit **2 Personen** – Junge (freigestellt, Blick nach oben, Rucksack) links,
   Papa (freigestellt, Hände in den Taschen, Blick zum Kind) rechts und größer, einander
@@ -120,6 +123,7 @@ exakt auf 1080×1350 zugeschnitten.
 | `gen-goldschwarz.js` | Motiv „Gold auf Schwarz" (4:5 + 9:16) → HTML nach `build/` |
 | `gen-uebung.js` | Serie M („Übung & Meisterschaft", 4:5 + 9:16) → HTML nach `build/` |
 | `gen-wiederholung.js` | Motiv „Wiederholung → Meisterschaft" (4:5 + 9:16) → HTML nach `build/` |
+| `gen-story-meisterschaft.js` | Story „Meisterschaft" (6 Slides, nur 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
 | `lib/centered.js` | gemeinsames Layout-Modul für die zentrierten Serien (Look + Aufwertungen + Cover) |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |
