@@ -5,6 +5,20 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-22 – Stufe 01 „Autopilot": Teleprompter-Fassung (Elgato)
+
+**Anlass:** Das Wort-für-Wort-Skript zu Stufe 01 soll direkt im Elgato-Prompter
+(Camera Hub) ablesbar sein. Branch `claude/inspiring-lamport-h7xuhp`.
+
+- Neu: `docs/skripte/stufen-komplett/stufe-01-autopilot-teleprompter.txt` –
+  reiner Sprechtext in kurzen Atem-Zeilen, Leerzeilen als Pausen, Regie-Hinweise
+  aus dem Lesefluss entfernt. Zum direkten Einfügen in den Prompter.
+- Inhaltlich wortgleich zur Quelle
+  `docs/skripte/stufen-komplett/stufe-01-autopilot-komplett.md`; nur
+  Zeilenumbrüche/Pausen fürs Ablesen aufbereitet.
+
+---
+
 ## 2026-09-22 – Intro-Video: Teleprompter-Fassung (Elgato)
 
 **Anlass:** Das Intro-Skript „Was, wenn es nicht an dir liegt?" soll direkt im
