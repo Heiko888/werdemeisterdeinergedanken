@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-23 – Generator-Handbuch vervollständigt (nur Doku)
+
+**Anlass:** Mehrere Generatoren fehlten im Generator-Handbuch
+(`docs/generatoren/`). Branch `claude/serene-lamport-1f7qoe`. Kein Generator-
+oder App-Code geändert.
+
+- `pdf-generatoren.md`: Brandbook (`pdf:brandbook`), Buch (`pdf:buch`),
+  Buchcover (`buchcover`), `build-reel-skripte.py`, Willkommen-Skript,
+  Praxis-Sprecherskript, Videoskripte-MD und Stripe-Anleitung ergänzt.
+- `marketing-und-galerie.md`: WhatsApp-Mitgliedschaft/-Safezone, `bild-jobs.mjs`
+  (Hilfsmodul) und die Instagram-Weisheiten-Serie A–F ergänzt.
+- Neu `print-und-bildwerkzeuge.md`: `tools/print/*` (Geschäftsausstattung,
+  Signatur, Briefpapier-Word, Gold-Emblem, Logo-Lockup, `marke.mjs`) und
+  `tools/images/*` (Eisvogel, Schneeleopard).
+- `README.md`: Übersichtstabelle, zweites Mermaid-Diagramm (Nebenketten),
+  Umgebungs-Kapitel und gesammelte „⚠ zu klären"-Punkte aktualisiert.
+- Wichtigste offene Punkte: `docs/marketing/profile-avatar.mjs` existiert nicht
+  (Profilbilder nicht reproduzierbar); `public/schneeleopard.png` fehlt;
+  `render.sh` der Weisheiten-Serie hat fest verdrahteten Chromium-Pfad;
+  `build-reel-skripte.py` wirkt verwaist.
+
+---
+
 ## 2026-09-22 – Startseite Sektion 06: Videobotschaft eingebaut
 
 **Anlass:** Das echte „Ein anderer Blickwinkel"-Video (YouTube
