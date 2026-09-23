@@ -8,16 +8,30 @@ Drei klar getrennte Familien:
    WMDG-Look, schießen mit Playwright/Chromium Screenshots und legen PNGs
    **neben sich** in `docs/marketing/…` (bzw. `video-thumbnails.mjs` nach
    `public/`) ab. Sie lesen/schreiben **nichts** unter `content/vorlagen/`.
-   Start jeweils direkt per `node …` (kein npm-Script).
+   Meist direkt per `node …` gestartet; `whatsapp-safezone.mjs` hat inzwischen
+   ein npm-Script (`npm run whatsapp:safezone`). `profile-avatar.mjs` ist in
+   README/Agenten-Revier gelistet, **existiert aber nicht im Repo** — siehe
+   eigener Abschnitt unten.
 2. **`tools/marketing/*.mjs`** — die **Overlay-Renderer**. Gleiche Technik wie
    Familie 1, aber sie erzeugen **transparente Text-Ebenen** (plus passenden
    Marken-Hintergrund) zum Überlagern eines eigenen Fotos in Canva. Ausgabe
-   ebenfalls unter `docs/marketing/…`. Drei davon haben ein npm-Script.
+   ebenfalls unter `docs/marketing/…`. Vier davon haben ein npm-Script
+   (`story-overlays`, `content-overlays`, `story-carousels`,
+   `whatsapp:mitgliedschaft`) — `whatsapp-mitgliedschaft.mjs` liefert dabei
+   zusätzlich zu den Overlays auch fertige, marken-hinterlegte Folien (siehe
+   eigener Abschnitt unten).
 3. **`tools/vorlagen/*.mjs`** — der **Galerie-Bauer** fürs Admin-Dashboard
    `/admin/vorlagen`. Sammelt fertige Dateien aus `docs/**`, wandelt sie in
    webp/ZIP, schreibt nach **`content/vorlagen/`** und erzeugt den Katalog
    `src/lib/vorlagen-assets.ts`. Start: **`npm run vorlagen:galerie`** (einziges
-   npm-Script dieser Familie).
+   npm-Script dieser Familie). `bild-jobs.mjs` ist kein eigener Generator,
+   sondern ein gemeinsames Hilfsmodul für die beiden anderen Skripte dieser
+   Familie.
+
+Außerhalb dieser drei Familien und außerhalb der Galerie-Integration steht die
+**Instagram-Weisheiten-Serie** unter `tools/social/weisheiten/` (eigener
+Abschnitt weiter unten) — eigenes Verzeichnis, eigenes Build-Skript
+(`render.sh`), kein npm-Script, keine Anbindung an `build-gallery.mjs`.
 
 Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 `docs/reels/covers/_fonts.css` (Fraunces/Inter), `public/logo-brain.png` bzw.
@@ -92,6 +106,66 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
   Formatänderungen dort brechen die Extraktion. Wird **nicht** von der Galerie
   eingesammelt (liegt in `public/`).
 
+## docs/marketing/profile-avatar.mjs — ⚠ zu klären: Skript fehlt im Repo
+
+- **Befund:** Die Datei `docs/marketing/profile-avatar.mjs` existiert **nicht**
+  im Arbeitsbaum (`find`/`ls` liefern nichts) und hat **auch in der
+  Git-Historie nie existiert** (`git log --all -- docs/marketing/profile-avatar.mjs`
+  liefert keinen Treffer). Dennoch wird sie an zwei Stellen als vorhanden
+  referenziert:
+  - `docs/generatoren/README.md` (Tabelle „Alle Generatoren auf einen Blick":
+    `Profil-Avatar | node docs/marketing/profile-avatar.mjs | Inline |
+    docs/marketing/profil/*.png`) und in der Liste „Ohne npm-Script".
+  - `.claude/agents/visual-dokumentar.md` (Zeile 13, Revier-Aufzählung
+    `docs/marketing/{social-banners,brand-assets,video-thumbnails,
+    profile-avatar}.mjs`).
+- **Was es stattdessen gibt:** Der Zielordner `docs/marketing/profil/` **ist**
+  befüllt (siehe `docs/AENDERUNGEN.md`, Eintrag „2026-09-05 – Geänderte
+  Profil-Vorlagen in die Vorlagen-Galerie eingepflegt") und wird auch von
+  `build-gallery.mjs → buildSocial()` eingesammelt (liest alle
+  `docs/marketing/**/*.png`, siehe Abschnitt weiter unten). Die dort liegenden
+  PNGs sind also vorhanden, aber es ist **unklar, mit welchem Skript sie
+  erzeugt wurden** — möglicherweise Handarbeit, ein gelöschtes Skript oder ein
+  Teil von `brand-assets.mjs` (dessen `THUMBS`/Profil-Targets dieselbe Optik
+  wie andere `docs/marketing/*.mjs`-Renderer haben).
+- **Reproduzierbarkeit:** Aktuell **nicht reproduzierbar** — ohne Quellskript
+  lässt sich `docs/marketing/profil/*.png` nicht aus Repo-Daten neu erzeugen.
+  ⚠ zu klären: Wurde das Skript versehentlich nie committet, umbenannt (z. B.
+  in `brand-assets.mjs` aufgegangen) oder war es nie mehr als ein geplanter
+  Programmpunkt? Bis das geklärt ist, sollten README/Agent-Revier diesen
+  Eintrag entweder korrigieren oder explizit als fehlend kennzeichnen.
+
+## docs/marketing/whatsapp-safezone.mjs
+
+- **Zweck:** Reine **Planungsvorlage** (kein fertiges Marken-Asset): zeigt für
+  das WhatsApp-Business-Banner (Arbeitsfläche 1920×1080) die Safe-Zone, die
+  Rand-Bereiche, die je nach Display abgeschnitten werden können, sowie die
+  Position des mittigen Profilbild-Overlays, damit dort nichts Wichtiges
+  platziert wird.
+- **Aufruf:** `npm run whatsapp:safezone` (`node
+  docs/marketing/whatsapp-safezone.mjs`).
+- **Voraussetzungen:** Node, `playwright`, Chromium. `findChrome()`:
+  `CHROME_BIN` → Playwright → `PLAYWRIGHT_BROWSERS_PATH`/`/opt/pw-browsers`.
+  Assets: `tools/pdf/assets/fonts.css`.
+- **Eingaben:** keine Datenquelle — alle Maße (`CROP`, `SAFE_X/Y/W/H`,
+  `PB_CX/CY/R`, `TEXT_X/Y/W/H`) und der Beispieltext („Mentale
+  Selbstverteidigung" / „Werde Meister deiner Gedanken") sind fest im Skript
+  berechnet bzw. inline.
+- **Ablauf:** baut ein einzelnes HTML (Crop-Bänder, Safe-Zone-Rahmen,
+  Textspalten-Rahmen, Profilbild-Kreis, Mittelachsen) in eine temporäre Datei
+  `.safezone.html` neben dem Skript, rendert sie mit Chromium
+  (`deviceScaleFactor: 1`) und löscht die temporäre Datei danach.
+- **Ausgaben:** `docs/marketing/whatsapp/WMDG-WhatsApp-SafeZone-Vorlage.png`
+  (1920×1080).
+- **Verbundene Komponenten:** dient als Referenz beim manuellen Gestalten
+  eines echten WhatsApp-Business-Banners (z. B. mit `whatsapp-mitgliedschaft`-
+  Motiven oder in Canva) — erzeugt selbst kein ausspielbares Banner. Nicht Teil
+  des Galerie-Einsammelns im engeren Sinn (liegt aber unter
+  `docs/marketing/**/*.png` und würde von `buildSocial()` technisch
+  mit-eingesammelt, wenn `vorlagen:galerie` läuft — ⚠ zu klären, ob das so
+  gewollt ist, da es sich um eine interne Planungsgrafik und kein
+  Kunden-Asset handelt).
+
 ---
 
 ## docs/_glyphs.mjs — gezeichnete Sonderzeichen
@@ -151,6 +225,52 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 - **Ausgaben:** `docs/marketing/content-overlays/<serie>/<format>/*.png`.
 - **Verbundene Komponenten:** `build-gallery.mjs → buildContentOverlays()` →
   `content/vorlagen/content-overlay/`.
+
+## tools/marketing/whatsapp-mitgliedschaft.mjs
+
+- **Zweck:** Siebenteilige WhatsApp-Verkaufsserie für die Mitgliedschaft
+  (Hook → Problem → 7-Stufen-Weg → Inhalte → So funktioniert's → Preis → CTA),
+  in vier Farbwelten (`dunkel`/`hell`/`tuerkis`/`tuerkis-hell`) und vier
+  Formaten (4:5, 9:16, 1:1, 16:9). Liegt technisch in der Overlay-Familie
+  (`tools/marketing/*.mjs`), erzeugt aber **zusätzlich zu** den transparenten
+  Canva-Overlays auch die fertigen, marken-hinterlegten Folien in einem Lauf —
+  anders als `story-overlays`/`content-overlays`, die nur Overlays liefern.
+- **Aufruf:** `npm run whatsapp:mitgliedschaft` (`node
+  tools/marketing/whatsapp-mitgliedschaft.mjs`). Einzelne Farbwelt über Env:
+  `THEME=tuerkis node tools/marketing/whatsapp-mitgliedschaft.mjs` (löscht dann
+  den Zielordner **nicht** vorher, anders als der Voll-Lauf).
+- **Voraussetzungen:** Node, `playwright`, Chromium (`findChrome()`:
+  `CHROME_BIN` → Playwright → `PLAYWRIGHT_BROWSERS_PATH`/`/opt/pw-browsers`).
+  Assets: `docs/reels/covers/_fonts.css`, `public/logo-brain-gold.png`
+  (Themes `dunkel`/`hell`), `public/logo-brain-tuerkis.png` (Themes
+  `tuerkis`/`tuerkis-hell`).
+- **Eingaben:** Texte/Struktur **inline** im `SLIDES`-Array (Rollen `cover`,
+  `statement`, `list`, `features`, `steps`, `price`, `cta`); Akzentwort per
+  `<em>…</em>`. Stile/Farbverläufe je Theme in `cssFor()`.
+- **Ablauf:** Für jedes Format (`FORMATS`) zuerst je Farbwelt einen reinen
+  Marken-Hintergrund rendern (`overlay/_hintergrund<suffix>.png`, Ebene 1 in
+  Canva), danach für jede der 7 Folien × jede Farbwelt zwei Screenshots:
+  (1) die fertige Folie mit Hintergrund nach `<format>/NN<suffix>.png`, (2)
+  dieselbe Folie transparent (`omitBackground: true`) nach
+  `<format>/overlay/NN<suffix>.png`. Ohne gesetztes `THEME` wird der
+  Zielordner zu Beginn komplett geleert (`rmSync`, destruktiv).
+- **Ausgaben:** `docs/marketing/whatsapp-mitgliedschaft/{4x5,9x16,1x1,16x9}/`
+  mit `01.png … 07.png` (+ Theme-Suffix `-hell`/`-tuerkis`/`-tuerkis-hell` für
+  alle Themes außer `dunkel`) sowie je Unterordner `overlay/` mit denselben
+  Namen (transparent) plus `_hintergrund<suffix>.png`.
+- **Verbundene Komponenten:** Wird von `build-gallery.mjs` **nicht**
+  automatisch eingesammelt — weder `buildSocial()` (liest nur
+  `docs/marketing/**/*.png`, würde die fertigen Folien technisch mit
+  erfassen) noch ein eigener `buildWhatsapp…()`-Schritt existiert in
+  `tools/vorlagen/build-gallery.mjs` (kein Treffer für „whatsapp" dort). ⚠ zu
+  klären: Die fertigen Folien unter `<format>/*.png` **würden** von
+  `buildSocial()` eingesammelt (liegen unter `docs/marketing/**`), die
+  `overlay/`-Unterordner dagegen nicht (kein `buildCoverOverlays`-Äquivalent
+  für diese Serie) — ob das beabsichtigt ist, ist unklar.
+- **Stolperfalle:** `npm run marketing:all` ruft dieses Skript mit auf
+  (`brand-assets && content-overlays && story-overlays && story-carousels &&
+  whatsapp:mitgliedschaft && vorlagen:galerie`), aber `whatsapp:safezone` ist
+  **nicht** Teil dieser Kette.
 
 ## tools/marketing/story-carousels.mjs
 
@@ -282,6 +402,30 @@ dann. Mit voller Render-Toolchain macht `FULL_REBUILD=1 …` einen Komplett-Neub
   Für den **Vollbau** stattdessen `tools/deploy/update-vorlagen-galerie.sh`
   nehmen (siehe oben) — das Skript bewahrt die Volume-Bestände selbst.
 
+## tools/vorlagen/bild-jobs.mjs — kein eigener Generator, gemeinsames Hilfsmodul
+
+- **Zweck:** Zwei Helfer für die Galerie-Generatoren, kein eigenständig
+  aufrufbares Skript (kein `main()`, keine Shebang, kein npm-Script):
+  1. `parallel(items, fn)` — wie `Promise.all(items.map(fn))`, aber mit
+     höchstens `MAX_JOBS` gleichzeitigen Läufen (Warteschlange begrenzter
+     Breite), Ergebnisreihenfolge bleibt erhalten (wichtig für Katalog-IDs wie
+     `social-001…` und Slide-Reihenfolgen). Ausdrücklich **nicht
+     verschachtelbar** (Deadlock-Gefahr laut Kommentar im Code).
+  2. `webpOpts(quelle, { quality, effort })` — liest nur den Bild-Header
+     (`sharp().metadata()`, kein Decode) und senkt `effort` bei Bildern **mit
+     Alpha-Kanal** von 6 auf `ALPHA_EFFORT = 4` (laut Modul-Kommentar 7,39 s →
+     0,60 s Renderzeit für ein transparentes 2160px-Overlay, bei nur 12 %
+     größerer Datei).
+- **Aufruf:** nur als ES-Modul-Import — `import { parallel, webpOpts } from
+  "./bild-jobs.mjs"` in `tools/vorlagen/build-gallery.mjs` und
+  `tools/vorlagen/marketing-carousels.mjs`.
+- **Voraussetzungen:** Node, `sharp` (für `webpOpts`).
+- **Env-Variable:** `GALERIE_JOBS` überschreibt `MAX_JOBS` (Default:
+  `cpus().length`); `GALERIE_JOBS=1` erzwingt sequenzielle Verarbeitung.
+- **Eingaben/Ausgaben:** keine eigenen — reine Bibliotheksfunktionen, wirken
+  nur über die aufrufenden Generatoren (siehe `build-gallery.mjs` und
+  `marketing-carousels.mjs` oben).
+
 ---
 
 ## Wo `content/vorlagen/` liegt (seit 18.08.2026)
@@ -362,3 +506,96 @@ stehen zentral im generierten Katalog `src/lib/vorlagen-assets.ts`.
 
 Ordner je Präfix: `marketing__` 5 · `praxis__` 13 · `selbstverteidigung__` 16 ·
 `stufen__` 7 · `vertiefungen__` 13 = **54 Ordner** (+ je ein gleichnamiges ZIP).
+
+---
+
+## tools/social/weisheiten/ — Instagram-Weisheiten-Serie (A–F)
+
+Eigenständiges Verzeichnis **außerhalb** der drei oben beschriebenen Familien:
+eigene HTML-Generatoren, eigenes Render-Skript, eigene Bild-Quellen — **kein**
+npm-Script, **keine** Anbindung an `tools/vorlagen/build-gallery.mjs` (kein
+Treffer für „weisheiten" in `build-gallery.mjs`/`marketing-carousels.mjs`).
+Primärquelle ist `tools/social/weisheiten/README.md`; die folgenden Angaben
+sind gegen den Code geprüft.
+
+- **Zweck:** Zwei bis sieben markengerechte, 8- bzw. 5/10/12-teilige
+  Instagram-Serien (Feed 4:5 = 1080×1350 bzw. zusätzlich Story 9:16 =
+  1080×1920) mit denselben 8 Kern-Weisheiten (Serien A–C) bzw. eigenen
+  Weisheiten für thematische Mini-Serien (D–F). Das Gesicht ist immer das
+  echte Foto von Heiko Schwaninger (Rahmung/Spiegelung/Ausschnitt, keine
+  KI-Veränderung).
+- **Serien (laut README, gegen Code geprüft):**
+  - **A – Kopf-Porträt** (`gen-portrait.js`, 94 Zeilen): `VARIANTS`-Array mit
+    8 Einträgen (`side`/`flip`/`bgFlip`/`zoom`), 1:1 zu den 8 Einträgen in
+    `quotes.js` (Reihenfolge gekoppelt, siehe Kommentar „Reihenfolge =
+    quotes.js"). Quelle: `public/heiko-hero.webp`.
+  - **B – Ganzkörper-Posen** (`gen-posen.js`, 111 Zeilen): 5 freigestellte
+    Posen aus `quellen/`, vor rotierenden Berg-Hintergründen
+    (`assets.js` → `backdrops`, 7 Panoramen: `public/hero-bg-berge.webp` +
+    6× `quellen/hintergruende/berg-0N.png`).
+  - **C1 – Posen-Story** (`gen-story-posen.js`, 110 Zeilen) und **C2 –
+    Porträt-Story** (`gen-story-portrait.js`, 89 Zeilen): dieselben Motive wie
+    A/B im 9:16-Story-Format, Text oben/Logo unten (Story-UI-safe).
+  - **D – Mini „Muster & Vermeidung"** (`gen-mini-muster.js`, 111 Zeilen): 5
+    frontale Gesten-Posen (nichts sehen/hören/sagen, ratlos, Schulterzucken),
+    eigene Weisheiten, je Motiv 4:5 **und** 9:16 → 10 Dateien.
+  - **E – „Klartext & Entscheidung" + E-Book** (`gen-klartext.js`, 116
+    Zeilen): 5 aufrechte Gesten + 1 E-Book-CTA-Motiv, je 4:5 + 9:16 → 12
+    Dateien.
+  - **F – „Einladung & Reflexion"** (`gen-einladung.js`, 107 Zeilen): 5
+    ruhige/einladende Gesten, je 4:5 + 9:16 → 10 Dateien.
+- **Aufruf:** kein npm-Script. Aus dem Ordner selbst:
+  ```bash
+  cd tools/social/weisheiten
+  ./render.sh            # nutzt Playwright-Chromium des Environments
+  CHROME=/pfad/zu/chrome ./render.sh   # eigenes Chromium erzwingen
+  ```
+- **Voraussetzungen:** `bash`, `node` (die `gen-*.js`-Skripte sind CommonJS,
+  `require(...)`, kein ESM), ein headless Chromium-Binary. `render.sh` nutzt
+  **nicht** `playwright.chromium.executablePath()` wie die übrigen
+  Generatoren, sondern einen fest verdrahteten Default-Pfad
+  `CHROME="${CHROME:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}"` —
+  ⚠ zu klären: dieser Pfad ist an eine konkrete Chromium-Build-Nummer
+  (`chromium-1194`) gebunden und bricht mit `Chromium nicht gefunden`, sobald
+  sich die installierte Version ändert (die übrigen `.mjs`-Generatoren im Repo
+  suchen stattdessen dynamisch per `readdirSync` nach einem `chromium*`-
+  Verzeichnis). Aufruf selbst rendert **ohne** Playwright-API, direkt per
+  `chrome --headless --no-sandbox --disable-gpu …`.
+- **Eingaben / Datenzugriff:**
+  - `quotes.js` — die 8 Kern-Weisheiten (`html` mit `<br>`/`<em>`), geteilt von
+    Serie A–C.
+  - `assets.js` — lädt Schriften (`src/app/fonts/{Inter,Fraunces}-latin*
+    -variable.woff2`) und Bilder aus dem Repo als Base64-Data-URIs:
+    `public/hero-bg-berge.webp`, `public/logo-brain-gold-freigestellt.png`,
+    `public/heiko-hero.webp`, sowie 21 freigestellte Posen-PNGs und 6
+    Hintergrund-Panoramen unter `tools/social/weisheiten/quellen/`.
+  - Motiv-/Weisheiten-Texte für Serien D–F liegen **inline** in den
+    jeweiligen `gen-*.js` (nicht in `quotes.js`).
+- **Ablauf:** `render.sh` räumt `build/*.html`/`build/*.png` auf, ruft
+  nacheinander alle sieben `gen-*.js` (jedes schreibt nur HTML nach
+  `build/`), rendert dann jede `build/*.html` mit dem CLI-Chrome in
+  **Überscan**-Auflösung (`W=1080`, `H+OVERSCAN` mit `OVERSCAN=120`, Story-
+  Dateien anhand `*story*`/`*9x16*` im Namen mit `H=1920`, sonst `H=1350`) und
+  schneidet danach mit `lib/pngcrop.js` (reine Node/zlib-Implementierung, ohne
+  Fremd-Libs) exakt auf `1080×1350` bzw. `1080×1920` zu. Grund für den
+  Überscan-Umweg laut Kommentar: „Headless-Chromium hat einen kleinen
+  Viewport-Versatz".
+- **Ausgaben:** `tools/social/weisheiten/output/*.png`, **64 Dateien** laut
+  README (`weisheit-portrait-01…08`, `weisheit-pose-01…08`,
+  `weisheit-story-posen-01…08`, `weisheit-story-portrait-01…08`,
+  `muster-01…05-<key>-{4x5,9x16}`, `klartext-01…05-<key>-{4x5,9x16}` +
+  `ebook-01-gratis-{4x5,9x16}`, `einladung-01…05-<key>-{4x5,9x16}`) — der
+  bestehende Ordnerinhalt (siehe `ls output/`) deckt sich mit diesem Schema.
+  Bewusst **nicht** unter `public/` (README: Deploy-Payload/Vercel-
+  Größenlimit) und **nicht** unter `content/vorlagen/` — die Serie ist von
+  `tools/vorlagen/build-gallery.mjs` nicht erreichbar.
+- **Captions:** `captions.md` (Feed-Captions + Hashtags je Weisheit),
+  themenzugehörig, wird von keinem Skript automatisch eingelesen (manuelle
+  Zuordnung beim Posten).
+- **Verbundene Komponenten:** keine — die Serie ist ein Insel-Toolset für
+  manuelles Posten, nicht Teil der Vorlagen-Galerie/`content/vorlagen/`-Kette.
+- **Reproduzierbarkeit:** vollständig aus Repo-Dateien reproduzierbar
+  (`quellen/`, `public/hero-bg-berge.webp`, `public/heiko-hero.webp`,
+  `public/logo-brain-gold-freigestellt.png`, `src/app/fonts/*`), solange der
+  in `render.sh` fest verdrahtete Chromium-Pfad zur installierten Version
+  passt (siehe Stolperfalle oben) oder `CHROME=…` gesetzt wird.
