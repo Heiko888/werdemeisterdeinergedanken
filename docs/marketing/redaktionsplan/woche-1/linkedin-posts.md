@@ -1,128 +1,134 @@
-# LinkedIn – Woche 1 · Stufe 1 „Autopilot" · fertige Posts
+# LinkedIn – Woche 1 · Stufe 1 „Autopilot" · fertige Posts (Version 2)
 
-> Ausformulierte, veröffentlichungsfertige Posts zu den drei Slots aus
-> `docs/marketing/redaktionsplan/linkedin.md` (Di Beitrag · Mi Carousel · Do Pitch)
-> plus den Freitags-Pitch aus dem Standard-Plan (`src/lib/redaktionsplan.ts`).
-> Belegte Quellen: Blog `drei-muster-die-dich-unbewusst-steuern` (`src/lib/blog.ts` 309–345),
+> Neu formulierte, veröffentlichungsfertige Posts zu den vier LinkedIn-Slots
+> von Woche 1 (Di Beitrag · Mi Carousel · Do Pitch · Fr Pitch).
+> Version 1 (Stand 2026-09-22) liegt in der Git-Historie dieser Datei.
+> Belegte Quellen: Blog `drei-muster-die-dich-unbewusst-steuern` (`src/lib/blog.ts`),
 > Carousel-Serie `autopilot-meeting` (`docs/carousels/marketing-serien.mjs`),
-> Praxis `autopilot-check` (`src/lib/practices.ts` 231–246), E-Book `/#ebook`.
+> Praxis `autopilot-check` (`src/lib/practices.ts`), Standard-Plan
+> `src/lib/redaktionsplan.ts` (Woche 1), E-Book „Die 7 Stufen der
+> Bewusstseinsentwicklung" (`/gratis-ebook`).
 > CTA-Links jeweils in den ersten Kommentar, nicht in den Post (schützt Reichweite).
 
 ---
 
 ## Post 1 · Dienstag 07:30 · Textbeitrag
 
-**Drei Muster laufen in fast jedem Team unbewusst mit – und sie entscheiden öfter als jeder Meeting-Beschluss.**
+**„Das haben wir schon immer so gemacht" ist selten ein Satz. Meistens ist es ein Muster.**
 
-Nicht die Agenda steuert das Meeting. Oft sind es alte Muster, die längst auf Autopilot laufen:
+Und Muster sitzen nicht nur in Prozessen. Sie sitzen in uns – und kommen jeden Morgen mit ins Büro.
 
-→ **Der ständige Beweiser.** Wer sich in jedem Status-Meeting neu beweisen muss, arbeitet auf Dauer gegen die eigene Erschöpfung.
+Drei davon begegnen mir immer wieder:
 
-→ **Harmonie um jeden Preis.** Wer Konflikte im Projekt vermeidet, verliert den Kontakt zur eigenen fachlichen Position.
+**1. Der ständige Beweiser**
+Jedes Status-Update fühlt sich an wie eine Prüfung. Die Leistung stimmt – aber die Erschöpfung wächst leise mit.
 
-→ **Kontrolle als Sicherheit.** Wer jeden Prozess durchplanen will, gerät bei jeder Planänderung unter Stress.
+**2. Harmonie um jeden Preis**
+Lieber einmal mehr nicken als einmal zu viel widersprechen. Das Projekt läuft ruhig. Die eigene fachliche Position verschwindet.
 
-Diese Muster sind keine Charakterfehler. Sie waren irgendwann sinnvoll – und liefen seitdem einfach weiter.
+**3. Kontrolle als Sicherheit**
+Alles durchgeplant, alles abgesichert. Bis sich der Plan ändert – und mit ihm der Puls.
 
-Der erste Führungs- und Selbstführungsschritt ist nicht, sie zu bekämpfen. Sondern sie überhaupt zu bemerken. Denn was du bemerkst, steuert dich nicht mehr im Verborgenen.
+Das Interessante: Keines dieser Muster ist dumm. Jedes hat irgendwann geholfen. Es wurde nur nie wieder abgeschaltet.
 
-Welches der drei Muster erkennst du in deinem Arbeitsalltag wieder?
+Deshalb bringt es wenig, dagegen anzukämpfen. Der erste Schritt ist unspektakulärer: es im Moment zu bemerken. „Ah – da ist er wieder, der Beweiser."
 
-#Leadership #Selbstführung #Teamkultur #NewWork #Achtsamkeit
+Was du benennen kannst, steuert dich nicht mehr unbemerkt.
+
+Welches der drei läuft bei dir am häufigsten mit?
+
+#Selbstführung #Leadership #Teamkultur #Arbeitswelt #Achtsamkeit
 
 *(Kommentar 1: Blogartikel „Drei Muster, die dich unbewusst steuern" → /wissen/blog/drei-muster-die-dich-unbewusst-steuern)*
 
 ---
 
-## Post 2 · Mittwoch 08:15 · Carousel (9→6 Folien: Serie `autopilot-meeting`)
+## Post 2 · Mittwoch 08:15 · Carousel (Serie `autopilot-meeting`, 6 Folien)
 
-**Wie viele Entscheidungen triffst du im Meeting wirklich bewusst?**
+**Du hast heute schon Dutzende Entscheidungen getroffen. Wie viele davon bewusst?**
 
-Ehrliche Antwort: die meisten laufen auf Autopilot.
+Ein kleiner Test für dein nächstes Meeting. Achte nur auf drei Momente:
 
-Der Vorschlag kommt – und du bist schon dagegen, bevor er zu Ende ist.
-Jemand widerspricht – und dein Puls reagiert, nicht dein Argument.
-Die Frage „Wer übernimmt das?" fällt – und deine Hand ist oben, bevor du überlegt hast, ob du das Zeitfenster überhaupt hast.
+→ Ein Vorschlag wird vorgestellt. Bist du innerlich schon dagegen, bevor der Satz zu Ende ist?
+→ Jemand widerspricht dir. Antwortet dein Argument – oder dein Puls?
+→ „Wer übernimmt das?" Ist deine Hand oben, bevor du in den Kalender geschaut hast?
 
-Das ist keine Willensschwäche. Das ist Effizienz.
-Bis zu 60.000 Gedanken laufen am Tag durch deinen Kopf – die allermeisten unbewusst, die allermeisten wie gestern. Dein Gehirn spart Energie, indem es Muster wiederholt. Im Meeting heißt das: Du reagierst aus alten Rollen, statt aus der aktuellen Situation zu entscheiden.
+Wenn du dich wiedererkennst: willkommen im Club. Das ist kein Charakterproblem, sondern Biologie. Bis zu 60.000 Gedanken ziehen täglich durch den Kopf, die meisten unbewusst und die meisten wie gestern. Das Gehirn spart Energie, indem es wiederholt, was sich bewährt hat.
 
-Drei laufen fast überall mit:
+Im Meeting heißt das allerdings: Oft entscheidet nicht die Situation, sondern die alte Rolle.
 
-→ **Der ständige Beweiser** – wer sich in jedem Status-Meeting neu beweisen muss, arbeitet gegen die eigene Erschöpfung.
-→ **Harmonie um jeden Preis** – wer Konflikte vermeidet, verliert den Kontakt zur eigenen fachlichen Position.
-→ **Kontrolle als Sicherheit** – wer alles durchplanen will, gerät bei jeder Planänderung unter Stress.
+In den Folien:
+• die drei typischen Autopilot-Momente im Meeting
+• warum das Effizienz ist und keine Willensschwäche
+• drei Muster, die fast überall mitlaufen
+• ein Check, der zwei Minuten dauert
 
-Der erste Schritt ist nicht, sie zu bekämpfen. Sondern sie zu **bemerken**.
+Speichere dir den Beitrag fürs nächste Meeting – und zähl mal mit.
 
-Genau dafür gibt es einen 2-Minuten-Check:
-Halte einmal am Tag kurz inne. Ein bewusster Atemzug. Eine Frage:
-*„Was tue ich gerade – und bin ich wirklich dabei?"*
+#Meetingkultur #Entscheidungen #Selbstführung #Leadership #NewWork
 
-Mehr braucht es am Anfang nicht. Denn was du bemerkst, entscheidet nicht mehr für dich.
-
-Welches der drei Muster erkennst du in deinem Arbeitsalltag wieder?
-
-#Selbstführung #Achtsamkeit #Leadership #Entscheidungen #NewWork
-
-*(Als Dokument-Post: die 6 Folien der Serie `autopilot-meeting` als PDF hochladen. Kommentar 1: E-Book „Die 7 Stufen kompakt" → /#ebook)*
+*(Als Dokument-Post: die 6 Folien der Serie `autopilot-meeting` als PDF hochladen. Kommentar 1: Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung" → /gratis-ebook)*
 
 ---
 
-## Post 3 · Donnerstag 07:45 · Pitch
+## Post 3 · Donnerstag 07:45 · Pitch (Praxis `autopilot-check`)
 
-**Der Weg vom Autopilot zur bewussten Entscheidung beginnt nicht mit einem neuen Zeitmanagement-System – sondern mit einer Übung, die 2 Minuten dauert.**
+**Die produktivsten zwei Minuten meines Tages sind die, in denen ich nichts erledige.**
 
-Wir suchen die Lösung meist im Großen: neue Tools, neue Methoden, mehr Disziplin. Dabei beginnt bewusste Entscheidung viel kleiner – mit einem einzigen Moment des Innehaltens.
+Klingt paradox. Ist aber der Kern von bewusster Selbstführung.
 
-Der **Autopilot-Check** ist genau das:
+Wir versuchen Autopilot meistens mit mehr Struktur zu lösen: neue Tools, neue Routinen, mehr Disziplin. Das Problem: Auch das läuft nach drei Wochen wieder automatisch.
 
-1. Halte kurz inne – im Stehen, Sitzen oder Gehen.
-2. Ein bewusster Atemzug. Frag dich: *Was tue ich gerade – und bin ich wirklich dabei?*
-3. Bemerke, was in dir läuft – Gedanke, Stimmung, Impuls.
-4. Benenne es innerlich in einem Wort („Eile", „Sorge", „Leere") – ohne es zu bewerten.
+Was stattdessen hilft, ist ein kurzer Stopp. Ich nenne ihn den Autopilot-Check:
 
-Kein Bewerten, kein Optimieren. Nur bemerken. Genau das trainiert die Fähigkeit, aus automatischen Mustern auszusteigen – im Meeting, in der Priorisierung, in der nächsten schnellen Zusage.
+① Kurz innehalten – egal wo, im Sitzen, Stehen oder zwischen zwei Calls.
+② Ein bewusster Atemzug und eine Frage: „Was tue ich gerade – und bin ich wirklich dabei?"
+③ Wahrnehmen, was gerade läuft: ein Gedanke, eine Stimmung, ein Impuls.
+④ Es in einem Wort benennen – „Eile", „Sorge", „Leere". Ohne Bewertung.
+⑤ Ausatmen. Weitermachen.
 
-Wenn du den ganzen Weg sehen willst: Das kostenlose E-Book „Die 7 Stufen kompakt" zeigt, wie aus einzelnen Momenten des Bemerkens eine neue Gewohnheit wird.
+Das ist alles. Kein Optimieren, kein Analysieren.
 
-Was ist heute dein Moment zum Innehalten?
+Mein Tipp: Koppel den Check an etwas, das sowieso passiert. Der erste Schluck Kaffee. Das Zuklappen des Laptops nach einem Meeting. Die Türklinke zum Besprechungsraum.
 
-#Achtsamkeit #Selbstführung #Gewohnheiten #MentaleStärke #Leadership
+So wird aus einem guten Vorsatz eine Gewohnheit, die dich an dich selbst erinnert.
 
-*(Kommentar 1: Kostenloses E-Book „Die 7 Stufen kompakt" → /#ebook · für Mitglieder: Lektion 1 → /mitglieder/stufe/1)*
+Wo würdest du deinen Check einbauen?
+
+#Achtsamkeit #Selbstführung #Gewohnheiten #MentaleGesundheit #Produktivität
+
+*(Kommentar 1: Die ganze Übung und der Weg dahinter im kostenlosen E-Book „Die 7 Stufen der Bewusstseinsentwicklung" → /gratis-ebook · für Mitglieder: Lektion 1 → /mitglieder/stufe/1)*
 
 ---
 
 ## Post 4 · Freitag 07:30 · Pitch (Soft-Pitch E-Book)
 
 > Slot aus dem Standard-Plan `src/lib/redaktionsplan.ts` (Woche 1, `pitch:`
-> „Bewusster entscheiden lässt sich üben – in 7 Stufen."). E-Book-Name wie auf
-> der Website: „Die 7 Stufen der Bewusstseinsentwicklung" (`/gratis-ebook`).
+> „Bewusster entscheiden lässt sich üben – in 7 Stufen.").
 
-**Bewusster entscheiden ist kein Talent. Es lässt sich üben – in 7 Stufen.**
+**Niemand kommt als bewusster Entscheider auf die Welt. Es ist Übungssache.**
 
-Diese Woche ging es hier um den Autopiloten: um die Muster, die im Meeting mitentscheiden, und um die Zusage, die schneller draußen ist als der Gedanke dazu.
+Diese Woche ging es hier um den Autopiloten: die Muster, die im Meeting mitreden. Die Zusage, die schneller draußen ist als der Gedanke dazu. Die zwei Minuten, die ihn sichtbar machen.
 
-Die ehrliche Frage danach lautet: Und jetzt?
+Vielleicht fragst du dich jetzt: Und wie geht es weiter, wenn ich ihn bemerkt habe?
 
-Einmal bemerken reicht nicht. Aber es ist der Anfang. Wer bewusster entscheiden will, braucht keinen großen Umbruch, sondern einen Weg, der Schritt für Schritt aufbaut:
+Bewusstsein wächst nicht auf einmal, sondern in Stufen – ähnlich wie Führungskompetenz:
 
-1. **Autopilot** – bemerken, was automatisch läuft
-2. **Erwachen** – den Moment zwischen Reiz und Reaktion entdecken
-3. **Selbstbeobachtung** – Gedanken sehen, ohne in jeden hineinzuspringen
-4. **Emotionale Reifung** – fühlen, ohne überflutet zu werden
-5. **Schöpferkraft** – Gewohnheiten bewusst neu ausrichten
-6. **Innere Ausrichtung** – Entscheidungen an den eigenen Werten messen
-7. **Meisterschaft** – Klarheit, die auch unter Druck trägt
+Zuerst bemerkst du, was automatisch läuft.
+Dann entdeckst du den Moment zwischen Reiz und Reaktion.
+Du lernst, Gedanken zu beobachten, statt in jeden hineinzuspringen.
+Gefühle zu fühlen, ohne von ihnen überrollt zu werden.
+Gewohnheiten bewusst neu zu setzen.
+Entscheidungen an deinen Werten auszurichten.
+Und irgendwann trägt diese Klarheit auch unter Druck.
 
-Genau diesen Weg habe ich in einem kostenlosen E-Book zusammengefasst: „Die 7 Stufen der Bewusstseinsentwicklung". Kompakt erklärt, mit einer ersten, sofort umsetzbaren Übung für jede Stufe – und einem Blick darauf, wo du gerade stehst.
+Sieben Stufen. Jede baut auf der vorherigen auf – und für jede gibt es eine Übung, mit der du morgen anfangen kannst.
 
-Kein Guru-Versprechen, kein 30-Tage-Programm. Nur ein klarer nächster Schritt.
+Genau das steht in meinem kostenlosen E-Book „Die 7 Stufen der Bewusstseinsentwicklung". Kompakt, ohne Guru-Getue, mit einem Blick darauf, wo du gerade stehst.
 
-Auf welcher Stufe würdest du dich im Arbeitsalltag gerade einordnen?
+Welche Stufe wäre für dich im Job gerade die wichtigste?
 
-#Selbstführung #Entscheidungen #Achtsamkeit #Leadership #PersönlicheEntwicklung
+#Selbstführung #PersönlicheEntwicklung #Entscheidungen #Leadership #Achtsamkeit
 
 *(Kommentar 1: Kostenloses E-Book „Die 7 Stufen der Bewusstseinsentwicklung" → /gratis-ebook · für Mitglieder: Lektion 1 → /mitglieder/stufe/1)*
 
@@ -132,6 +138,11 @@ Auf welcher Stufe würdest du dich im Arbeitsalltag gerade einordnen?
 
 - **Hook** immer allein in Zeile 1 (LinkedIn zeigt in der Timeline nur die erste Zeile).
 - **Links** in den ersten Kommentar, nicht in den Post-Text.
-- **Rhythmus:** Di 07:30 · Mi 08:15 · Do 07:45 · Fr 07:30 (beste DACH-Zeiten, Frequenz „fokussiert").
+- **Rhythmus:** Di 07:30 · Mi 08:15 · Do 07:45 · Fr 07:30 (beste DACH-Zeiten).
 - **Mittwoch** als Dokument-Post (Carousel-PDF) → höchste Verweildauer.
-- **Ton:** sachlich, wertig, These zuerst – kein Klickbait.
+  Hinweis: Die CTA-Folie der Serie `autopilot-meeting` nennt noch den
+  Arbeitstitel „Die 7 Stufen kompakt".
+- **Dramaturgie der Woche:** Di Muster erkennen → Mi Selbsttest im Meeting →
+  Do konkrete Übung → Fr der ganze Weg (E-Book). Jeder Post funktioniert
+  auch einzeln.
+- **Ton:** sachlich, persönlich, These zuerst – kein Klickbait.

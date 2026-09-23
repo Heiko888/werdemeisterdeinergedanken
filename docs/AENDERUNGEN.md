@@ -5,6 +5,23 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-23 – LinkedIn Woche 1: alle vier Posts neu formuliert (Version 2)
+
+**Anlass:** Wunsch nach anderen LinkedIn-Posts für Woche 1. Branch
+`claude/inspiring-ptolemy-fzy4an`.
+
+- `docs/marketing/redaktionsplan/woche-1/linkedin-posts.md` komplett neu:
+  Di Textbeitrag (Hook „Das haben wir schon immer so gemacht"), Mi
+  Carousel-Begleittext als Meeting-Selbsttest, Do Pitch zum Autopilot-Check
+  (Hook „Die produktivsten zwei Minuten …"), Fr Soft-Pitch E-Book (Hook
+  „Niemand kommt als bewusster Entscheider auf die Welt"). Termine und
+  Quellen unverändert; Version 1 liegt in der Git-Historie.
+- Alle Posts nennen jetzt einheitlich das E-Book „Die 7 Stufen der
+  Bewusstseinsentwicklung" mit Link `/gratis-ebook`. Offen: Die CTA-Folie der
+  Carousel-Serie `autopilot-meeting` nennt noch „Die 7 Stufen kompakt".
+
+---
+
 ## 2026-09-22 – LinkedIn Woche 1: Freitags-Pitch ausformuliert
 
 **Anlass:** Der Slot „🎯 Pitch – „Bewusster entscheiden lässt sich üben – in 7
