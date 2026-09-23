@@ -21,6 +21,35 @@ mit den gleichen 8 Weisheiten – reproduzierbar aus Repo-Dateien.
 - **Serie F – „Einladung & Reflexion"** (`gen-einladung.js`): 5 ruhige/einladende Gesten
   (Kinn, offene Hand, Hand aufs Herz, Ansprache) mit reflektierenden Weisheiten, zentrierter
   Aufbau, je Motiv **4:5 + 9:16** → 10 Motive.
+- **Serie G – „Aufbruch & Energie"** (`gen-aufbruch.js`): 6 dynamische Posen (Sprung,
+  Laufen, Hand reichen, Gehen/Zeigen, offene Arme, Finger hoch) mit energetischen
+  Weisheiten, zentrierter Aufbau, je Motiv **4:5 + 9:16** → 12 Motive.
+- **Serie H – „Haltung & Klarheit"** (`gen-haltung.js`): 6 Posen (Arme verschränkt
+  seitl./frontal, Erklären, Zeigen seitl., Doppelzeiger, Finger hoch) mit klaren
+  Weisheiten zum Standpunkt-Beziehen, je Motiv **4:5 + 9:16** → 12 Motive.
+- **Serien I–L** (`gen-extra-serien.js`, aus der bestehenden Pose-Bibliothek, je 6 Motive,
+  **4:5 + 9:16**):
+  - **Serie I – „Loslassen & Frieden"** (ruhige Posen, Kontrolle abgeben)
+  - **Serie J – „Mut & Selbstwert"** (kraftvolle Posen, sich trauen)
+  - **Serie K – „Fokus & Disziplin"** (klare Posen, dranbleiben)
+  - **Serie L – „Verantwortung & Handeln"** (aktive Posen, ins Tun kommen)
+- **Motiv „Gold auf Schwarz"** (`gen-goldschwarz.js`): die Wandbild-Szene (Gold auf
+  Schwarz streichen) als Full-Bleed-Bild mit Markentext „Wo andere nur Schwarz sehen,
+  trägst du Gold auf.", je **4:5 + 9:16** → 2 Motive.
+- **Serie M – „Übung & Meisterschaft"** (`gen-uebung.js`): 6 Posen (Arme verschränkt seitl.,
+  Laufen, Punkt, Nachdenken, Gehen/Zeigen, Faust) mit Weisheiten zu Wiederholung, Dranbleiben
+  und Wachstum, je Motiv **4:5 + 9:16** → 12 Motive.
+- **Motiv „Wiederholung → Meisterschaft"** (`gen-wiederholung.js`): ruhig-selbstbewusste
+  Pose (Arme verschränkt) mit „Du kannst nicht eine Sache ständig wiederholen, ohne dabei
+  immer besser zu werden.", je **4:5 + 9:16** → 2 Motive.
+- **Story „Meisterschaft"** (`gen-story-meisterschaft.js`): dieselbe Weisheit als
+  **6-teilige 9:16-Story** ausgebaut und auf die Marke angewandt (Wiederholung →
+  Meisterschaft der Gedanken), mit Fortschritts-Punkten und CTA-Slide → 6 Slides.
+- **Einzel-Story „Papa, kannste mal erklären?"** (`gen-papa.js`): Hook-Story im **9:16-Format
+  (1080×1920)** mit **2 Personen** – Junge (freigestellt, Blick nach oben, Rucksack) links,
+  Papa (freigestellt, Hände in den Taschen, Blick zum Kind) rechts und größer, einander
+  zugewandt. Text oben, Gold-Kursiv auf „erklären", je **9:16 + 4:5** → 2 Motive
+  (`output/papa-erklaeren-9x16.png`, `output/papa-erklaeren-4x5.png`).
 
 > **Hinweis:** Die Bilder liegen bewusst unter `tools/…` (Quellen + fertige
 > Ausgabe), **nicht** unter `public/`. Sie sind Social-Assets/Build-Inputs und
@@ -34,6 +63,15 @@ ist immer das echte Foto** – keine KI-Veränderung, nur Rahmung/Spiegelung/Aus
 **Wechselnde Hintergründe:** Jeder Post nutzt rotierend eines von 7 Sonnenaufgang-
 Panoramen (`assets.js` → `backdrops`: das Original `hero-bg-berge.webp` plus 6 unter
 `quellen/hintergruende/`). Neue Panoramen dort ablegen und in `assets.js` registrieren.
+
+**Gemeinsames Layout-Modul (`lib/centered.js`):** Alle zentrierten Serien (D–M) teilen sich
+*ein* Layout-Modul. Die Serien-Generatoren sind nur noch schlanke Configs (Posen + Weisheiten)
+und rufen `buildSeries({...})`. Grafische Aufwertungen landen damit an einer Stelle und gelten
+überall. Enthalten:
+- **Serien-Kicker** (Gold-Label) + **Fortschritts-Punkte** (Position in der Serie)
+- **Kontaktschatten** unter den Füßen + **Scrim** hinter dem Logo (Lesbarkeit)
+- einheitliche **Warm-Tonung** (Color-Grade) + Typo-Feinschliff
+- **Cover-/Titelkarte je Serie** (`<prefix>-00-cover-4x5/9x16`) für Carousel-Start / Reel-Cover
 
 ## Erzeugen
 
@@ -78,6 +116,15 @@ exakt auf 1080×1350 zugeschnitten.
 | `gen-mini-muster.js` | Serie D (Mini „Muster & Vermeidung", 4:5 + 9:16) → HTML nach `build/` |
 | `gen-klartext.js` | Serie E („Klartext & Entscheidung" + E-Book, 4:5 + 9:16) → HTML nach `build/` |
 | `gen-einladung.js` | Serie F („Einladung & Reflexion", 4:5 + 9:16) → HTML nach `build/` |
+| `gen-papa.js` | Einzel-Story „Papa, kannste mal erklären?" (9:16 + 4:5) → HTML nach `build/` |
+| `gen-aufbruch.js` | Serie G („Aufbruch & Energie", 4:5 + 9:16) → HTML nach `build/` |
+| `gen-haltung.js` | Serie H („Haltung & Klarheit", 4:5 + 9:16) → HTML nach `build/` |
+| `gen-extra-serien.js` | Serien I–L (Loslassen/Mut/Fokus/Handeln, 4:5 + 9:16) → HTML nach `build/` |
+| `gen-goldschwarz.js` | Motiv „Gold auf Schwarz" (4:5 + 9:16) → HTML nach `build/` |
+| `gen-uebung.js` | Serie M („Übung & Meisterschaft", 4:5 + 9:16) → HTML nach `build/` |
+| `gen-wiederholung.js` | Motiv „Wiederholung → Meisterschaft" (4:5 + 9:16) → HTML nach `build/` |
+| `gen-story-meisterschaft.js` | Story „Meisterschaft" (6 Slides, nur 9:16) → HTML nach `build/` |
 | `render.sh` | HTML erzeugen + rendern + auf 1080×1350 zuschneiden |
+| `lib/centered.js` | gemeinsames Layout-Modul für die zentrierten Serien (Look + Aufwertungen + Cover) |
 | `lib/pngcrop.js` | PNG-Crop (nur Node/zlib) |
 | `captions.md` | fertige Feed-Captions + Hashtags je Weisheit |
