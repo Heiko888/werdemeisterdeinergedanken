@@ -31,6 +31,7 @@ Alle im Ordner `public/`:
 | `logo-brain-frei.png` | Freigestellte Variante des Emblems |
 | `logo.svg` | Vektor-Logo (skalierbar, für Print/große Flächen) |
 | `logo-full.png` | Vollständiges Logo (Emblem + Wortmarke) als Rastergrafik |
+| `docs/marketing/logo-paket/` | **Logo-Paket zum Weitergeben:** Gold-Emblem, Schriftlogo (hell/dunkel), Komplett-Logo, Creme-Hintergründe – `npm run logo-paket` |
 | `src/app/icon.png` | Favicon / App-Icon (Next.js App-Icon-Konvention), 28 KB |
 
 ⚠️ PRÜFEN: Ob eine **rein vektorisierte Wortmarke** (SVG mit Text als Pfade)

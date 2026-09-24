@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-24 – Logo-Paket: Gold-Emblem, Schriftlogo, Creme-Hintergrund
+
+**Anlass:** Logo in Gold, das Schriftlogo und der cremefarbene Hintergrund
+werden als eigenständige Dateien zum Weitergeben gebraucht. Branch
+`claude/confident-goodall-c5wez9`.
+
+- Neu: `tools/print/logo-paket.mjs` (+ npm-Script `npm run logo-paket`) –
+  rendert per Chromium alle Dateien nach `docs/marketing/logo-paket/`.
+- Inhalt: Gold-Emblem (2000 px, transparent), Schriftlogo „WERDE MEISTER /
+  DEINER GEDANKEN" für helle und dunkle Flächen (transparent, 1:1 wie
+  Website-Header in Fraunces), Komplett-Logo (Emblem + Schrift), Creme-
+  Hintergrund `#f6f4ee` pur und mit Gold-Aura in 1:1, 4:5, 9:16, 16:9 sowie
+  eine Vorschau „Logo auf Creme".
+- Farbwerte und Dateiliste: `docs/marketing/logo-paket/README.md`;
+  Brandbook `docs/brandbook/03-logo.md` verweist darauf.
+- Keine Änderungen an der Website selbst.
+
+---
+
 ## 2026-09-22 – Startseite Sektion 06: Videobotschaft eingebaut
 
 **Anlass:** Das echte „Ein anderer Blickwinkel"-Video (YouTube
