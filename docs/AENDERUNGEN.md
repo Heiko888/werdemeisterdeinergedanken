@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-28 – Mitgliedschaft: Hero-Bild ausgetauscht
+
+**Anlass:** Neues Hero-Motiv für `/mitgliedschaft` (Pfad durch Olivenhain,
+warmes Morgenlicht, Blick auf See und Hügel). Branch
+`claude/gifted-albattani-fv90nx`.
+
+- `public/mitgliedschaft-hero.webp` ersetzt: neu aus
+  `public/ChatGPT-Bild 28. Sept. 2026, 20_23_39.png` (1672×941) als WebP
+  (Qualität 82, ~320 KB) erzeugt. Dateiname bleibt gleich, der Import in
+  `src/app/mitgliedschaft/page.tsx` ist unverändert.
+- `src/app/mitgliedschaft/page.tsx`: Seitenverhältnis des mobilen Bildbands
+  von `aspect-[2400/1340]` auf `aspect-[1672/941]` angepasst; Desktop-Ausschnitt
+  von `object-[center_16%]` auf `object-center`, damit Horizont und Weg sichtbar
+  bleiben. Navy-Schleier für die Textlesbarkeit bleibt unverändert.
+- Das Original-PNG bleibt im Repo (nicht referenziert).
+
+---
+
 ## 2026-09-22 – Startseite Sektion 06: Videobotschaft eingebaut
 
 **Anlass:** Das echte „Ein anderer Blickwinkel"-Video (YouTube
