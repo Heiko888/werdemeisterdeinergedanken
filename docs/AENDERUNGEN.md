@@ -12,14 +12,19 @@ warmes Morgenlicht, Blick auf See und Hügel). Branch
 `claude/gifted-albattani-fv90nx`.
 
 - `public/mitgliedschaft-hero.webp` ersetzt: neu aus
-  `public/ChatGPT-Bild 28. Sept. 2026, 20_23_39.png` (1672×941) als WebP
+  dem Original-PNG (1672×941, jetzt `docs/marketing/quellen/mitgliedschaft-hero-original.png`) als WebP
   (Qualität 82, ~320 KB) erzeugt. Dateiname bleibt gleich, der Import in
   `src/app/mitgliedschaft/page.tsx` ist unverändert.
 - `src/app/mitgliedschaft/page.tsx`: Seitenverhältnis des mobilen Bildbands
   von `aspect-[2400/1340]` auf `aspect-[1672/941]` angepasst; Desktop-Ausschnitt
   von `object-[center_16%]` auf `object-center`, damit Horizont und Weg sichtbar
   bleiben. Navy-Schleier für die Textlesbarkeit bleibt unverändert.
-- Das Original-PNG bleibt im Repo (nicht referenziert).
+- Das Original-PNG lag zunächst unter `public/` und war damit öffentlich
+  abrufbar; nach `docs/marketing/quellen/mitgliedschaft-hero-original.png`
+  verschoben. Die beiden Posen-PNGs `public/5e84e0df-….png` und
+  `public/e0042f5e-….png` aus demselben Upload entfernt – sie liegen bereits als
+  `tools/social/weisheiten/quellen/heiko-pose-papa-taschen.png` bzw.
+  `kind-pose-rucksack.png` im Repo (md5-identisch).
 
 ---
 
