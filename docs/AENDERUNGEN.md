@@ -5,6 +5,22 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-29 – Blog: Hero-Bild ausgetauscht
+
+**Anlass:** Neues Hero-Motiv für `/blog` (helles, abstraktes Licht-Motiv in
+Creme/Gold mit Lichtreflexen und geschwungenen Flächen). Branch
+`claude/gifted-albattani-fv90nx`.
+
+- `public/hero-blog-gipfel.webp` ersetzt: neu aus dem hochgeladenen PNG
+  (1672×941) als WebP (Qualität 82, ~47 KB) erzeugt. Dateiname bleibt gleich,
+  `src/app/blog/page.tsx` (`PageHero image="/hero-blog-gipfel.webp"`) ist
+  unverändert – der Name „gipfel" beschreibt das Motiv nicht mehr, wurde aber
+  bewusst beibehalten, um keinen Code anfassen zu müssen.
+- Original-PNG aus `public/` (öffentlich abrufbar) nach
+  `docs/marketing/quellen/blog-hero-original.png` verschoben.
+
+---
+
 ## 2026-09-28 – Mitgliedschaft: Hero-Bild ausgetauscht
 
 **Anlass:** Neues Hero-Motiv für `/mitgliedschaft` (Pfad durch Olivenhain,
