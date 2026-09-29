@@ -5,15 +5,8 @@ import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
 import Link from "next/link";
 import { ArrowRight } from "@/components/ui/Icon";
+import { impulsFuer, lokalesDatum } from "@/lib/tagesimpulse";
 import { markiereRueckkehr } from "@/app/mitglieder/rueckkehr-actions";
-
-/** Date → "YYYY-MM-DD" in LOKALER Zeit (nicht UTC). */
-function lokalesDatum(d: Date): string {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const t = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${t}`;
-}
 
 /** n Tage vor `basis` als lokales YYYY-MM-DD. */
 function tageVor(basis: Date, n: number): string {
@@ -21,17 +14,6 @@ function tageVor(basis: Date, n: number): string {
   d.setDate(d.getDate() - n);
   return lokalesDatum(d);
 }
-
-/** Sanfte, nicht bestrafende Impulse – deterministisch nach Tag gewählt. */
-const IMPULSE = [
-  "Es geht nicht ums Nie-mehr-Abschweifen. Es geht ums Zurückkommen.",
-  "Der Weg zurück ist kurz – oft nur ein Atemzug.",
-  "Du musst nicht ruhig sein, um zurückzukehren. Du kehrst zurück, und dann wird es ruhig.",
-  "Ein ausgelassener Tag ist kein Bruch. Er ist eine neue Gelegenheit.",
-  "Zurückkehren ist keine Leistung. Es ist eine Freundlichkeit dir gegenüber.",
-  "Je öfter du den Weg zurück gehst, desto vertrauter wird er.",
-  "Nicht das Fallen zählt, sondern wie sanft du wieder aufstehst.",
-];
 
 /**
  * „Die tägliche Rückkehr" – offene Tages-Praxis mit sanftem Rhythmus.
@@ -43,6 +25,7 @@ const IMPULSE = [
 export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
   const [tage, setTage] = useState<Set<string>>(new Set(initialTage));
   const [pending, setPending] = useState(false);
+  const [fehler, setFehler] = useState(false);
 
   const heute = useMemo(() => lokalesDatum(new Date()), []);
   const gestern = useMemo(() => tageVor(new Date(), 1), []);
@@ -75,30 +58,29 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
     return felder;
   }, [tage, heute]);
 
-  const impuls = useMemo(() => {
-    // Deterministisch nach Kalendertag – gleicher Impuls für den ganzen Tag.
-    const tagZahl = Number(heute.replaceAll("-", ""));
-    return IMPULSE[tagZahl % IMPULSE.length];
-  }, [heute]);
+  const impuls = useMemo(() => impulsFuer(heute), [heute]);
 
   async function zurueckkehren() {
     if (pending || heuteSchon) return;
     setPending(true);
+    setFehler(false);
     setTage((prev) => new Set(prev).add(heute)); // optimistisch
-    try {
-      const res = await markiereRueckkehr(heute);
-      if (res.status === "ok") setTage(new Set(res.tage));
-      else setTage((prev) => {
-        const next = new Set(prev);
-        next.delete(heute);
-        return next;
-      });
-    } catch {
+    // Bei Fehler zurücknehmen – und es sichtbar sagen statt still zu springen.
+    const zuruecknehmen = () => {
       setTage((prev) => {
         const next = new Set(prev);
         next.delete(heute);
         return next;
       });
+      setFehler(true);
+    };
+    try {
+      const res = await markiereRueckkehr(heute);
+      if (res.status === "ok") setTage(new Set(res.tage));
+      else zuruecknehmen();
+    } catch (err) {
+      console.error(err);
+      zuruecknehmen();
     } finally {
       setPending(false);
     }
@@ -117,12 +99,21 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
           </span>
         </div>
         <div className="flex flex-col gap-1 rounded-2xl border border-ink/10 bg-white p-5 shadow-card">
-          <span className="font-display text-3xl font-medium text-accent tabular-nums">
-            {serie}
-          </span>
-          <span className="text-sm text-ink-mid">
-            {serie === 1 ? "Tag in Folge" : "Tage in Folge"}
-          </span>
+          {/* Eine große „0" wirkt wie ein Vorwurf – dann lieber eine Einladung. */}
+          {serie === 0 ? (
+            <span className="font-display text-lg font-medium leading-snug text-accent">
+              Heute ist ein guter Tag zum Zurückkommen.
+            </span>
+          ) : (
+            <>
+              <span className="font-display text-3xl font-medium text-accent tabular-nums">
+                {serie}
+              </span>
+              <span className="text-sm text-ink-mid">
+                {serie === 1 ? "Tag in Folge" : "Tage in Folge"}
+              </span>
+            </>
+          )}
         </div>
       </div>
 
@@ -138,7 +129,8 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
           </span>
           <p className="text-[1.02rem] leading-relaxed text-ink">
             Halte einen Moment inne, atme ein paar Mal bewusst und komm in deine
-            Mitte zurück. Ein, zwei Minuten reichen – die kurze Praxis führt dich.
+            Mitte zurück. Ein, zwei Minuten reichen – die kurze Praxis führt
+            dich.
           </p>
           <Link
             href="/mitglieder/praxis/taegliche-rueckkehr"
@@ -149,28 +141,33 @@ export function TaeglicheRueckkehr({ initialTage }: { initialTage: string[] }) {
           </Link>
         </div>
 
-        {heuteSchon ? (
-          <div className="flex items-center gap-2 rounded-full border border-gold-500/45 bg-gold-500/[0.08] px-5 py-3 text-sm font-semibold text-gold-700">
-            ✓ Du bist heute zurückgekehrt. Schön, dass du da warst.
-          </div>
-        ) : (
-          <button
-            type="button"
-            onClick={zurueckkehren}
-            disabled={pending}
-            className={`${pillCta} w-fit`}
-          >
-            {pending ? "Einen Moment …" : "Heute zurückkehren"}
-          </button>
-        )}
+        <div className="flex flex-col gap-2">
+          {heuteSchon ? (
+            <div className="flex items-center gap-2 rounded-full border border-gold-500/45 bg-gold-500/[0.08] px-5 py-3 text-sm font-semibold text-gold-700">
+              ✓ Du bist heute zurückgekehrt. Schön, dass du da warst.
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={zurueckkehren}
+              disabled={pending}
+              className={`${pillCta} w-fit`}
+            >
+              {pending ? "Einen Moment …" : "Heute zurückkehren"}
+            </button>
+          )}
+          <p role="status" className="text-sm text-danger">
+            {fehler
+              ? "Konnte gerade nicht gespeichert werden. Versuch es gleich noch einmal."
+              : ""}
+          </p>
+        </div>
       </article>
 
       {/* Rhythmus der letzten vier Wochen */}
       <div className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between">
-          <span className={memberEyebrow}>
-            Dein Rhythmus
-          </span>
+          <span className={memberEyebrow}>Dein Rhythmus</span>
           <span className="text-sm text-ink-mid">letzte 4 Wochen</span>
         </div>
         <div

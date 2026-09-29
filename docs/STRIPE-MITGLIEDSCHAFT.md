@@ -96,6 +96,30 @@ REQUIRE_ACTIVE_MEMBERSHIP=true
 Dann brauchen Nicht-Admins eine aktive Mitgliedschaft. Admins (`ADMIN_EMAILS`)
 kommen immer rein.
 
+### 7. Kundenportal aktivieren (Kündigen, Rechnungen, Zahlungsart) – Pflicht
+In `/mitglieder/einstellungen` gibt es die Karte **„Mitgliedschaft"** mit Status
+(aktiv / gekündigt zum … / keine Mitgliedschaft gefunden), Verlängerungs- bzw.
+Enddatum und dem Button **„Mitgliedschaft kündigen"** (Kündigungsbutton nach
+§ 312k BGB) sowie **„Rechnungen & Zahlungsart"**. Beide öffnen das
+**Stripe Customer Portal** (Server Action
+`src/app/mitglieder/einstellungen/abo-actions.ts`); „kündigen" springt direkt
+in den Kündigungsdialog. Die Stripe-Customer-ID wird dabei nur serverseitig aus
+`memberships` des eingeloggten Kontos gelesen.
+
+Damit das funktioniert, muss das Portal im Stripe-Dashboard eingerichtet sein
+(**Settings → Billing → Customer portal**, getrennt für Test- und Live-Modus):
+- **Kündigung erlauben** („Customers can cancel subscriptions") – Modus
+  **„Am Ende des Abrechnungszeitraums kündigen"** (Zugang bleibt bis dahin).
+- **Rechnungen anzeigen** (Invoice history) aktivieren.
+- **Zahlungsmethode ändern** (Update payment methods) aktivieren.
+- Unternehmensangaben, **Datenschutz-** und **AGB-Link** hinterlegen und speichern.
+
+Ohne aktiviertes Portal schlägt das Öffnen fehl; die Seite zeigt dann einen
+freundlichen Hinweis mit Link auf `/kontakt?thema=mitgliedschaft`. Gleiches gilt,
+wenn Stripe nicht konfiguriert ist oder zum Konto kein Stripe-Kunde existiert.
+Eine vorgemerkte Kündigung („gekündigt zum …") liest die Seite live aus Stripe
+(`cancel_at_period_end`), weil der Abo-Status bis zum Ende `active` bleibt.
+
 ## Buch-Einmalkauf (`/buch`)
 
 Neben dem Abo gibt es die Verkaufsseite `/buch` für das Buch „Werde Meister
@@ -179,6 +203,8 @@ umgekehrt. Die Seite bleibt also jederzeit funktionsfähig.
 ## Beteiligte Dateien
 - `src/lib/stripe.ts` – Stripe-Client & Konfiguration (inkl. `STRIPE_BOOK_PRICE_ID`, `STRIPE_BOOK_PRICE_ID_PRINT`, `bookPriceIdForEdition`)
 - `src/lib/membership.ts` – Status-Abfrage pro E-Mail
+- `src/app/mitglieder/einstellungen/abo-actions.ts` – öffnet das Stripe-Kundenportal (Kündigen, Rechnungen, Zahlungsart)
+- `src/app/mitglieder/einstellungen/abo-status.ts` / `MitgliedschaftKarte.tsx` – Karte „Mitgliedschaft" in den Einstellungen
 - `src/components/membership/CheckoutButton.tsx` – Abo-Button (Formular → Checkout)
 - `src/app/api/checkout/route.ts` – startet den Abo-Checkout
 - `src/app/api/stripe/webhook/route.ts` – pflegt die Mitgliedschaft

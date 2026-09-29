@@ -75,7 +75,9 @@ export function ReadingPanel({
         </p>
       </div>
 
-      {reading && (
+      {loading && <ErgebnisSkeleton />}
+
+      {!loading && reading && (
         <div className="flex flex-col gap-3 rounded-2xl border border-ink/10 bg-paper/60 p-6">
           {reading.body.split(/\n{2,}/).map((para, i) => (
             <p
@@ -96,7 +98,7 @@ export function ReadingPanel({
       {error && (
         <p
           role="alert"
-          className="rounded-xl border border-ink/10 bg-paper/60 px-4 py-3 text-sm leading-relaxed text-ink-mid"
+          className="rounded-xl border border-danger/25 bg-danger/[0.05] px-4 py-3 text-sm leading-relaxed text-danger"
         >
           {error}
         </p>
@@ -121,6 +123,25 @@ export function ReadingPanel({
           </span>
         )}
       </div>
+    </div>
+  );
+}
+
+/**
+ * Ruhiger Platzhalter im Ergebnisbereich, solange die KI arbeitet. Rein
+ * dekorativ (aria-hidden) – der Button-Text meldet den Ladezustand.
+ */
+function ErgebnisSkeleton() {
+  return (
+    <div
+      aria-hidden
+      className="flex flex-col gap-3 rounded-2xl border border-ink/10 bg-paper/60 p-6 animate-pulse motion-reduce:animate-none"
+    >
+      <div className="h-3.5 w-full rounded-full bg-ink/10" />
+      <div className="h-3.5 w-11/12 rounded-full bg-ink/10" />
+      <div className="h-3.5 w-4/5 rounded-full bg-ink/10" />
+      <div className="mt-2 h-3.5 w-full rounded-full bg-ink/10" />
+      <div className="h-3.5 w-2/3 rounded-full bg-ink/10" />
     </div>
   );
 }

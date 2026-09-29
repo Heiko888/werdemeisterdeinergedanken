@@ -54,8 +54,9 @@ export default async function RueckkehrPage() {
             Die tägliche <em className="accent">Rückkehr</em>
           </h1>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-            Nach dem Programm bleibt eine einzige Gewohnheit: einmal am Tag
-            innehalten und in deine Mitte zurückkehren. Nicht das Nie-mehr-Fallen
+            Eine Gewohnheit, die dich vom ersten Tag an trägt – und die bleibt,
+            wenn alles andere geschafft ist: einmal am Tag innehalten und in
+            deine Mitte zurückkehren. Nicht das Nie-mehr-Fallen
             ist das Ziel, sondern das ruhige Zurückkommen – jeden Tag ein wenig
             vertrauter.
           </p>

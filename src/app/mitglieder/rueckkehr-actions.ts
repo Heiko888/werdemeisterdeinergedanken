@@ -56,7 +56,8 @@ export async function getRueckkehrDaten(): Promise<RueckkehrDaten> {
 export type MarkiereResult =
   | { status: "ok"; tage: string[] }
   | { status: "invalid" }
-  | { status: "unauthenticated" };
+  | { status: "unauthenticated" }
+  | { status: "error" };
 
 /**
  * Hält die Rückkehr für den übergebenen (lokalen) Kalendertag fest. Idempotent:
@@ -73,12 +74,13 @@ export async function markiereRueckkehr(datum: string): Promise<MarkiereResult> 
   if (!user) return { status: "unauthenticated" };
 
   // Idempotent: bereits vorhandener Tag bleibt unberührt.
-  await supabase
+  const { error } = await supabase
     .from("rueckkehr")
     .upsert(
       { user_id: user.id, datum },
       { onConflict: "user_id,datum", ignoreDuplicates: true },
     );
+  if (error) return { status: "error" };
 
   revalidatePath("/mitglieder/rueckkehr");
   const { tage } = await getRueckkehrDaten();

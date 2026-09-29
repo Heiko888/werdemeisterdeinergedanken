@@ -66,6 +66,18 @@ export default async function LoginPage({
                 drin.
               </p>
             )}
+            {!ALLOW_SELF_REGISTRATION && (
+              <p className="text-xs leading-relaxed text-ink-muted">
+                Gerade gebucht, aber die Willkommens-Mail ist weg oder der Link
+                abgelaufen?{" "}
+                <Link
+                  href="/passwort-vergessen"
+                  className="font-medium text-accent underline-offset-4 hover:underline"
+                >
+                  Neuen Link anfordern
+                </Link>
+              </p>
+            )}
           </div>
         ) : (
           <div className="w-full max-w-md rounded-2xl border border-gold-500/40 bg-gold-300/20 p-6 text-left text-sm leading-relaxed text-ink-soft shadow-card">

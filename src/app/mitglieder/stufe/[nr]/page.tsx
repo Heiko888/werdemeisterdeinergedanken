@@ -6,7 +6,11 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Play, Download } from "@/components/ui/Icon";
 import { stages } from "@/lib/content";
-import { getStageLesson } from "@/lib/stage-lessons";
+import {
+  EMPFOHLENER_RHYTHMUS,
+  getStageLesson,
+  lessonLesezeit,
+} from "@/lib/stage-lessons";
 import { deepDivesForStage } from "@/lib/deep-dives";
 import { practicesForStage } from "@/lib/practices";
 import { StageCompleteToggle } from "@/components/members/StageCompleteToggle";
@@ -14,6 +18,7 @@ import { JournalReflection } from "@/components/members/JournalReflection";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { LessonHero } from "@/components/members/LessonHero";
 import { site } from "@/lib/site";
+import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
 
 export function generateStaticParams() {
   return stages.map((_, i) => ({ nr: String(i + 1) }));
@@ -55,6 +60,7 @@ export default async function StagePage({
   const prev = idx > 0 ? idx : null; // 0-basiert → Nummer = idx
   const next = idx < stages.length - 1 ? idx + 2 : null;
   const nextStage = next ? stages[next - 1] : null;
+  const begleiterVerfuegbar = await isBegleiterConfigured();
 
   return (
     <>
@@ -83,8 +89,20 @@ export default async function StagePage({
             {lesson?.intro ?? stage.description}
           </p>
 
-          {/* Fortschritt: Stufe als abgeschlossen markieren */}
-          <StageCompleteToggle stageKey={stage.number} />
+          {/* Zeit & Rhythmus – damit klar ist, worauf man sich einlässt */}
+          {lesson && (
+            <p className="-mt-6 flex flex-wrap gap-x-4 gap-y-1 text-sm text-ink-muted">
+              <span>ca. {lessonLesezeit(lesson)} Min. Lektion</span>
+              {lesson.exercises.length > 0 && (
+                <span>
+                  {lesson.exercises.length}{" "}
+                  {lesson.exercises.length === 1 ? "Übung" : "Übungen"} für den
+                  Alltag
+                </span>
+              )}
+              <span>Empfehlung: {EMPFOHLENER_RHYTHMUS}</span>
+            </p>
+          )}
 
           {/* Video */}
           <div>
@@ -242,6 +260,14 @@ export default async function StagePage({
             </div>
           )}
 
+          {/* Abschluss – bewusst am Ende, nach Lektion, Übungen und Reflexion */}
+          <StageCompleteToggle
+            stageKey={stage.number}
+            stageNr={idx + 1}
+            affirmation={lesson?.affirmation}
+            nextStage={next && nextStage ? { nr: next, title: nextStage.title } : null}
+          />
+
           {/* Fallback, falls (noch) keine Lektion hinterlegt ist */}
           {!lesson && (
             <div className="flex flex-col items-start gap-4 rounded-2xl border border-dashed border-ink/20 bg-paper/40 p-8">
@@ -298,13 +324,25 @@ export default async function StagePage({
               Fragen zu dieser Stufe?
             </h2>
             <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-              Wenn etwas in dir aufkommt oder du nicht weiterweißt – ich bin
-              jederzeit für dich da. Schreib mir einfach.
+              {begleiterVerfuegbar
+                ? "Wenn etwas in dir aufkommt oder du nicht weiterweißt: Dein Begleiter kennt diese Stufe und ist sofort da. Und wenn du lieber mir schreibst – jederzeit."
+                : "Wenn etwas in dir aufkommt oder du nicht weiterweißt – ich bin jederzeit für dich da. Schreib mir einfach."}
             </p>
-            <Button href="/kontakt" variant="accent">
-              Kontakt aufnehmen
-              <ArrowRight />
-            </Button>
+            <div className="flex flex-wrap items-center gap-3">
+              {begleiterVerfuegbar && (
+                <Button href="/mitglieder/begleiter" variant="accent">
+                  Frag deinen Begleiter
+                  <ArrowRight />
+                </Button>
+              )}
+              <Button
+                href="/kontakt"
+                variant={begleiterVerfuegbar ? "secondary" : "accent"}
+              >
+                {begleiterVerfuegbar ? "Mir schreiben" : "Kontakt aufnehmen"}
+                <ArrowRight />
+              </Button>
+            </div>
           </div>
 
           {/* Vor / Zurück – der nächste Schritt zieht als gefüllter CTA */}
@@ -349,10 +387,10 @@ export default async function StagePage({
               >
                 <span className="flex flex-col text-left">
                   <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-navy-950/60">
-                    Geschafft
+                    Die letzte Stufe
                   </span>
                   <span className="text-sm font-semibold leading-snug">
-                    Alle Stufen durchlaufen – zu meinem Bereich
+                    Zurück zu meinem Weg
                   </span>
                 </span>
                 <ArrowRight className="shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
