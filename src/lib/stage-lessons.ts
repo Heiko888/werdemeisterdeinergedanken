@@ -437,3 +437,24 @@ export const stageLessons: StageLesson[] = [
 export function getStageLesson(number: string): StageLesson | undefined {
   return stageLessons.find((l) => l.number === number);
 }
+
+/** Empfohlener Rhythmus für den Weg durch die Stufen (Erwartungsmanagement). */
+export const EMPFOHLENER_RHYTHMUS = "eine Stufe pro Woche";
+
+/**
+ * Geschätzte Lesezeit einer Lektion in Minuten (Einführung, Abschnitte,
+ * Übungsschritte; ~200 Wörter pro Minute, aufgerundet, mindestens 5 Min.).
+ * Wird aus dem Text berechnet – so bleibt die Angabe stimmig, wenn sich eine
+ * Lektion ändert.
+ */
+export function lessonLesezeit(lesson: StageLesson): number {
+  const texte = [
+    lesson.keyIdea,
+    lesson.intro,
+    ...lesson.sections.flatMap((s) => [s.heading, s.body]),
+    ...lesson.exercises.flatMap((e) => [e.title, ...e.steps]),
+    ...lesson.reflection,
+  ];
+  const woerter = texte.join(" ").split(/\s+/).filter(Boolean).length;
+  return Math.max(5, Math.ceil(woerter / 200));
+}

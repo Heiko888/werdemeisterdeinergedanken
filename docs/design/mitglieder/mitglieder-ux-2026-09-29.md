@@ -4,6 +4,8 @@
 **Beteiligt:** nutzerreise-designer · navigations-architekt · motivations-designer · mitglieder-ui-designer · luecken-scout · Zusammenführung: mitglieder-ux-lead
 **Methode:** Code-Review (kein Produktivcode geändert), Abgleich mit `docs/audit/mitgliederbereich-ux-audit-2026-08-26.md` und `docs/AENDERUNGEN.md`. Jeder Fund ist am Code belegt; eine eingeloggte Sichtprüfung (Playwright) steht noch aus – siehe Ende.
 
+> **Umsetzungsstand (29.09., später am Tag):** Welle 1 und „Was fehlt?" 2–4 sind umgesetzt – R1, R2, R4, Quick Wins 2–6, O1 (ohne Mails), O2, O4 (teilweise), O6 (Suche + Zuletzt gemacht; Merkliste offen), O9, O10 (Schreibfläche), O16 (Footer), Soforthilfe. Bewusst ausgelassen: alles zu Video/Audio/Heikos Stimme (R3, R5, in Produktion). Details: `docs/AENDERUNGEN.md`, Eintrag „Welle 1 + Tagesrhythmus …".
+
 ---
 
 ## 1. Gesamteindruck

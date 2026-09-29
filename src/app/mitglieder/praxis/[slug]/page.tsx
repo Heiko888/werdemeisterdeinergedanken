@@ -195,16 +195,43 @@ export default async function PracticePage({
             </Link>
           )}
 
-          {/* Zurück */}
-          <div className="border-t border-ink/10 pt-8">
-            <Link
-              href="/mitglieder"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-ink-soft transition-colors hover:text-ink"
-            >
-              <ArrowRight className="rotate-180 transition-transform duration-300 group-hover:-translate-x-1" />
-              Zur Übersicht
-            </Link>
-          </div>
+          {/* Zurück + Als Nächstes: die nächste Übung derselben Stufe (sonst die
+              nächste in der Bibliothek) – damit keine Übung in einer Sackgasse endet. */}
+          {(() => {
+            const gleicheStufe = practices.filter(
+              (p) => p.relatedStage === practice.relatedStage && p.slug !== practice.slug,
+            );
+            const idx = practices.findIndex((p) => p.slug === practice.slug);
+            const naechste =
+              gleicheStufe[0] ?? practices[(idx + 1) % practices.length];
+            return (
+              <div className="flex flex-col gap-5 border-t border-ink/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+                <Link
+                  href="/mitglieder/praxis"
+                  className="group inline-flex items-center gap-2 text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+                >
+                  <ArrowRight className="rotate-180 transition-transform duration-300 group-hover:-translate-x-1" />
+                  Alle Übungen
+                </Link>
+                {naechste && naechste.slug !== practice.slug && (
+                  <Link
+                    href={`/mitglieder/praxis/${naechste.slug}`}
+                    className="group inline-flex items-center justify-between gap-4 rounded-2xl border border-ink/10 bg-white px-5 py-3.5 shadow-card transition-all hover:border-accent/35"
+                  >
+                    <span className="flex flex-col text-left">
+                      <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-ink-muted">
+                        Als Nächstes
+                      </span>
+                      <span className="text-sm font-semibold text-ink group-hover:text-accent">
+                        {naechste.title} · {naechste.duration}
+                      </span>
+                    </span>
+                    <ArrowRight className="shrink-0 text-ink-muted transition-transform group-hover:translate-x-1 group-hover:text-accent" />
+                  </Link>
+                )}
+              </div>
+            );
+          })()}
         </Container>
       </section>
     </>

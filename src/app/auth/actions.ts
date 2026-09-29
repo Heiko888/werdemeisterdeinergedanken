@@ -8,6 +8,8 @@ import {
   ALLOW_SELF_REGISTRATION,
 } from "@/lib/supabase/config";
 import { safeInternalPath } from "@/lib/safe-redirect";
+import { isRateLimited } from "@/lib/rate-limit";
+import { site } from "@/lib/site";
 
 export type AuthState = { error?: string; message?: string };
 
@@ -86,6 +88,48 @@ export async function signUp(
   }
 
   redirect("/mitglieder");
+}
+
+/** Neutrale Antwort – verrät nie, ob zu einer Adresse ein Konto existiert. */
+const RESET_NEUTRAL_MESSAGE =
+  "Falls zu dieser Adresse ein Konto existiert, ist eine E-Mail mit einem Link zum Setzen deines Passworts unterwegs. Schau auch im Spam-Ordner nach.";
+
+/**
+ * „Passwort vergessen“: schickt eine Supabase-Recovery-Mail. Der Link führt
+ * nach /passwort-setzen (PKCE, `?code=`). Die Antwort ist bewusst immer
+ * gleich (keine Konto-Enumeration); Ratenbegrenzung je IP und je Adresse.
+ */
+export async function requestPasswordReset(
+  _prev: AuthState,
+  formData: FormData,
+): Promise<AuthState> {
+  if (!isSupabaseConfigured)
+    return { error: "Der Mitgliederbereich ist noch nicht konfiguriert." };
+
+  const email = String(formData.get("email") || "")
+    .trim()
+    .toLowerCase();
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254)
+    return { error: "Bitte gib eine gültige E-Mail-Adresse an." };
+
+  const hdrs = await headers();
+  const xffLast = hdrs.get("x-forwarded-for")?.split(",").pop()?.trim();
+  const ip = hdrs.get("x-real-ip") || xffLast || "unknown";
+
+  // 5 Anfragen pro IP je 15 Min., 3 je Adresse pro Stunde. Bei Überschreitung
+  // wird still nichts verschickt – die Antwort bleibt neutral.
+  const limited =
+    (await isRateLimited("passwort-reset-ip", ip, 5, 15 * 60 * 1000)) ||
+    (await isRateLimited("passwort-reset-mail", email, 3, 60 * 60 * 1000));
+  if (limited) return { message: RESET_NEUTRAL_MESSAGE };
+
+  const supabase = await createClient();
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: `${site.url}/passwort-setzen`,
+  });
+  if (error) console.error("resetPasswordForEmail error", error.message);
+
+  return { message: RESET_NEUTRAL_MESSAGE };
 }
 
 export async function signOut() {

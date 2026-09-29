@@ -11,44 +11,58 @@ import { setNewsletterOptIn } from "@/app/mitglieder/actions";
 export function NewsletterToggle({ initialOptIn }: { initialOptIn: boolean }) {
   const [optIn, setOptIn] = useState(initialOptIn);
   const [pending, startTransition] = useTransition();
+  const [fehler, setFehler] = useState(false);
 
   function toggle() {
     const next = !optIn;
     setOptIn(next); // optimistisch
+    setFehler(false);
     startTransition(async () => {
-      const res = await setNewsletterOptIn(next);
-      setOptIn(res.optIn);
+      try {
+        const res = await setNewsletterOptIn(next);
+        setOptIn(res.ok ? res.optIn : !next);
+        if (!res.ok) setFehler(true);
+      } catch (err) {
+        console.error(err);
+        setOptIn(!next);
+        setFehler(true);
+      }
     });
   }
 
   return (
-    <button
-      type="button"
-      role="switch"
-      aria-checked={optIn}
-      onClick={toggle}
-      disabled={pending}
-      className={cn(
-        "inline-flex min-h-11 items-center gap-3 rounded-full border px-4 py-2.5 text-sm font-medium transition-all disabled:opacity-60",
-        optIn
-          ? "border-accent/40 bg-accent/[0.08] text-ink"
-          : "border-ink/20 bg-white text-ink hover:border-accent/40",
-      )}
-    >
-      <span
+    <div className="flex flex-col gap-2">
+      <button
+        type="button"
+        role="switch"
+        aria-checked={optIn}
+        onClick={toggle}
+        disabled={pending}
         className={cn(
-          "relative h-5 w-9 shrink-0 rounded-full transition-colors",
-          optIn ? "bg-gradient-to-r from-gold-400 to-gold-500" : "bg-ink/20",
+          "inline-flex min-h-11 items-center gap-3 rounded-full border px-4 py-2.5 text-sm font-medium transition-all disabled:opacity-60",
+          optIn
+            ? "border-accent/40 bg-accent/[0.08] text-ink"
+            : "border-ink/20 bg-white text-ink hover:border-accent/40",
         )}
       >
         <span
           className={cn(
-            "absolute top-0.5 h-4 w-4 rounded-full bg-white shadow-sm transition-all",
-            optIn ? "left-[1.125rem]" : "left-0.5",
+            "relative h-5 w-9 shrink-0 rounded-full transition-colors",
+            optIn ? "bg-gradient-to-r from-gold-400 to-gold-500" : "bg-ink/20",
           )}
-        />
-      </span>
-      {optIn ? "Impulse abonniert" : "Impulse abonnieren"}
-    </button>
+        >
+          <span
+            className={cn(
+              "absolute top-0.5 h-4 w-4 rounded-full bg-white shadow-sm transition-all",
+              optIn ? "left-[1.125rem]" : "left-0.5",
+            )}
+          />
+        </span>
+        {optIn ? "Impulse abonniert" : "Impulse abonnieren"}
+      </button>
+      <p role="status" className="text-sm text-danger">
+        {fehler ? "Konnte gerade nicht gespeichert werden." : ""}
+      </p>
+    </div>
   );
 }

@@ -6,7 +6,8 @@ import { Logo } from "@/components/visuals/Logo";
 import { socialIcons } from "@/components/ui/Icon";
 import { CookieSettingsButton } from "@/components/analytics/CookieSettingsButton";
 import { GA_ID } from "@/lib/analytics";
-import { mainNav, legalNav, site } from "@/lib/site";
+import { legalNav, site } from "@/lib/site";
+import { FooterNav } from "@/components/layout/FooterNav";
 
 /**
  * Markenfarben der sozialen Netzwerke – für die farbigen Footer-Buttons.
@@ -38,33 +39,8 @@ export function Footer() {
           </p>
         </div>
 
-        <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            Navigation
-          </h3>
-          <ul className="flex flex-col gap-0.5">
-            {mainNav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="inline-flex min-h-11 items-center text-sm text-mist-300/70 transition-colors hover:text-white"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-            {/* Kontakt als eigenständiger Nav-Eintrag (bislang nur als
-                Header-Button erreichbar). */}
-            <li>
-              <Link
-                href="/kontakt"
-                className="inline-flex min-h-11 items-center text-sm text-mist-300/70 transition-colors hover:text-white"
-              >
-                Kontakt
-              </Link>
-            </li>
-          </ul>
-        </div>
+        {/* Navigation – im Mitgliederbereich ohne Marketing-Links */}
+        <FooterNav />
 
         <div>
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">

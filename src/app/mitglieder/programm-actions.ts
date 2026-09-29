@@ -37,40 +37,42 @@ export async function getProgrammFortschritt(): Promise<string[]> {
 export async function setProgrammTag(
   tag: number,
   completed: boolean,
-): Promise<{ completed: boolean }> {
-  if (!isSupabaseConfigured) return { completed: false };
+): Promise<{ ok: boolean; completed: boolean }> {
+  if (!isSupabaseConfigured) return { ok: false, completed: false };
   if (!Number.isInteger(tag) || tag < 1 || tag > 21) {
-    return { completed: false };
+    return { ok: false, completed: false };
   }
 
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return { completed: false };
+  if (!user) return { ok: false, completed: false };
 
   const key = tagKey(tag);
 
-  if (completed) {
-    await supabase.from("progress").upsert(
-      {
-        user_id: user.id,
-        item_type: "programm",
-        item_key: key,
-        status: "completed",
-        completed_at: new Date().toISOString(),
-      },
-      { onConflict: "user_id,item_type,item_key" },
-    );
-  } else {
-    await supabase
-      .from("progress")
-      .delete()
-      .eq("user_id", user.id)
-      .eq("item_type", "programm")
-      .eq("item_key", key);
-  }
+  // DB-Fehler nicht still als Erfolg melden – der Client nimmt sonst einen
+  // Haken an, der nie gespeichert wurde.
+  const { error } = completed
+    ? await supabase.from("progress").upsert(
+        {
+          user_id: user.id,
+          item_type: "programm",
+          item_key: key,
+          status: "completed",
+          completed_at: new Date().toISOString(),
+        },
+        { onConflict: "user_id,item_type,item_key" },
+      )
+    : await supabase
+        .from("progress")
+        .delete()
+        .eq("user_id", user.id)
+        .eq("item_type", "programm")
+        .eq("item_key", key);
+
+  if (error) return { ok: false, completed: !completed };
 
   revalidatePath("/mitglieder/programm");
-  return { completed };
+  return { ok: true, completed };
 }

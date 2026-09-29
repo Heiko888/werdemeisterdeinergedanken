@@ -233,12 +233,16 @@ export async function getNotes(
   } = await supabase.auth.getUser();
   if (!user) return {};
 
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("notes")
     .select("ref, body")
     .eq("user_id", user.id)
     .eq("item_type", itemType)
     .eq("item_key", itemKey);
+
+  // Ladefehler NICHT als „keine Notizen" tarnen: Sonst schaltet der Client
+  // leere Felder frei und das erste Tippen überschreibt gespeicherte Antworten.
+  if (error) throw new Error("Notizen konnten nicht geladen werden.");
 
   const map: Record<string, string> = {};
   for (const row of data ?? []) {
@@ -442,13 +446,13 @@ export async function getTestProfile(): Promise<TestProfile> {
 /** Wöchentliche E-Mail-Impulse abonnieren bzw. abbestellen. */
 export async function setNewsletterOptIn(
   optIn: boolean,
-): Promise<{ optIn: boolean }> {
-  if (!isSupabaseConfigured) return { optIn: false };
+): Promise<{ ok: boolean; optIn: boolean }> {
+  if (!isSupabaseConfigured) return { ok: false, optIn: false };
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return { optIn: false };
+  if (!user) return { ok: false, optIn: false };
 
   const { error } = await supabase
     .from("profiles")
@@ -458,10 +462,12 @@ export async function setNewsletterOptIn(
     })
     .eq("id", user.id);
 
-  if (error) return { optIn: !optIn };
+  // Bei Fehler bleibt der alte Zustand – `ok: false` lässt den Client eine
+  // sichtbare Meldung zeigen statt still zurückzuspringen.
+  if (error) return { ok: false, optIn: !optIn };
 
   revalidatePath("/mitglieder");
-  return { optIn };
+  return { ok: true, optIn };
 }
 
 /**

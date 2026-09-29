@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "@/components/ui/Container";
@@ -25,21 +26,35 @@ const items = [
   // bleibt auch auf der reinen Nachschlage-Wissensdatenbank aktiv – beide liegen
   // unter dem Pfad-Präfix /mitglieder/wissen…
   { href: "/mitglieder/wissen", label: "Wissen", match: "/mitglieder/wissen" },
-  { href: "/mitglieder/programm", label: "Programm" },
+  // „21 Tage" statt „Programm": sonst wird es leicht als das 7-Stufen-Programm gelesen.
+  { href: "/mitglieder/programm", label: "21 Tage" },
+  { href: "/mitglieder/soforthilfe", label: "Soforthilfe" },
+  { href: "/mitglieder/suche", label: "Suche" },
   { href: "/mitglieder/einstellungen", label: "Einstellungen" },
 ] as const;
 
 export function MemberNav() {
   const pathname = usePathname();
 
-  // „Mein Bereich" ist nur auf dem Dashboard selbst aktiv; Einträge mit `match`
+  // „Mein Bereich" ist auf dem Dashboard und den Stufen-Seiten aktiv (der Weg
+  // durch die 7 Stufen gehört zum eigenen Bereich); Einträge mit `match`
   // gelten für einen ganzen Pfad-Präfix (z. B. „Wissen" für Vertiefungen UND
   // Wissensdatenbank); alle übrigen auch auf ihren Unterseiten.
   const isActive = (item: (typeof items)[number]) => {
-    if (item.href === "/mitglieder") return pathname === "/mitglieder";
+    if (item.href === "/mitglieder") {
+      return pathname === "/mitglieder" || pathname.startsWith("/mitglieder/stufe");
+    }
     if ("match" in item && item.match) return pathname.startsWith(item.match);
     return pathname === item.href || pathname.startsWith(`${item.href}/`);
   };
+
+  // Mobil läuft die Leiste seitlich aus dem Bild – den aktiven Eintrag beim
+  // Seitenwechsel in den sichtbaren Bereich holen.
+  const listRef = useRef<HTMLUListElement>(null);
+  useEffect(() => {
+    const el = listRef.current?.querySelector<HTMLElement>('[aria-current="page"]');
+    el?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [pathname]);
 
   return (
     <nav
@@ -47,8 +62,10 @@ export function MemberNav() {
       className="sticky top-[4.5rem] z-40 border-b border-ink/10 bg-white/85 backdrop-blur-sm"
     >
       <Container size="wide">
+        {/* Weiche Kante rechts (nur mobil) zeigt: hier geht es weiter. */}
         <ul
-          className="-mx-1 flex items-center gap-1 overflow-x-auto py-2.5"
+          ref={listRef}
+          className="-mx-1 flex items-center gap-1 overflow-x-auto py-2.5 [mask-image:linear-gradient(to_right,#000_85%,transparent)] sm:[mask-image:none]"
           style={{ scrollbarWidth: "none" }}
         >
           {items.map((item) => {
