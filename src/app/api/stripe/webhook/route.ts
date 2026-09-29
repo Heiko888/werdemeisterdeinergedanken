@@ -307,10 +307,13 @@ async function provisionAccess(email: string): Promise<string | null> {
 
   // Setzen-/Reset-Link erzeugen und per Resend versenden. Die Antwort enthält
   // auch das User-Objekt – unabhängig davon, ob das Konto neu oder schon da war.
+  // Ziel ist /passwort-setzen: Dort liest die Seite die Session aus dem
+  // URL-Fragment (#access_token=…&type=recovery) und lässt das Passwort setzen.
+  // Die URL muss in Supabase → Auth → URL Configuration → Redirect URLs stehen.
   const { data: linkData, error: linkErr } = await admin.auth.admin.generateLink({
     type: "recovery",
     email,
-    options: { redirectTo: `${site.url}/login` },
+    options: { redirectTo: `${site.url}/passwort-setzen` },
   });
   if (linkErr || !linkData?.properties?.action_link) {
     console.error("generateLink error", linkErr);
@@ -351,6 +354,10 @@ async function sendWelcomeMail(email: string, actionLink: string) {
         <p style="line-height:1.6;color:#626b67;font-size:14px">
         Falls der Button nicht funktioniert, öffne diesen Link:<br>
         <a href="${actionLink}">${actionLink}</a></p>
+        <p style="line-height:1.6;color:#626b67;font-size:14px">
+        Der Link ist aus Sicherheitsgründen nur begrenzt gültig. Ist er abgelaufen,
+        forderst du hier einfach einen neuen an:
+        <a href="${site.url}/passwort-vergessen">${site.url}/passwort-vergessen</a></p>
         <p style="line-height:1.6;color:#626b67;font-size:14px">Herzlich, Heiko</p>
       </div>`,
   });

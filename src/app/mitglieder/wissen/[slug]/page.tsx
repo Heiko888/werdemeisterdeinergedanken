@@ -243,11 +243,11 @@ export default async function DeepDivePage({
           {/* Fragen */}
           <div className="flex items-center justify-between gap-4 border-t border-ink/10 pt-8">
             <Link
-              href="/mitglieder"
+              href="/mitglieder/wissen"
               className="group inline-flex items-center gap-2 text-sm font-medium text-ink-soft transition-colors hover:text-ink"
             >
               <ArrowRight className="rotate-180 transition-transform duration-300 group-hover:-translate-x-1" />
-              Zur Übersicht
+              Alle Vertiefungen
             </Link>
             <Button href="/kontakt" variant="ghost">
               Frage stellen

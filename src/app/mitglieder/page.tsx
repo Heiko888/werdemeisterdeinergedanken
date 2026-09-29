@@ -21,10 +21,16 @@ import { isAdminEmail } from "@/lib/admin";
 import { signOut } from "@/app/auth/actions";
 import { stages } from "@/lib/content";
 import { deepDivesForStage } from "@/lib/deep-dives";
-import { practicesForStage } from "@/lib/practices";
+import { getPractice, practicesForStage, type Practice } from "@/lib/practices";
 import { NewsletterToggle } from "@/components/members/NewsletterToggle";
 import { MomentumRow } from "@/components/members/MomentumRow";
-import { PROGRAMM_TAGE_GESAMT } from "@/lib/programm";
+import { HeuteKarte } from "@/components/members/HeuteKarte";
+import { PROGRAMM_TAGE_GESAMT, programmTage, tagKey } from "@/lib/programm";
+import {
+  EMPFOHLENER_RHYTHMUS,
+  getStageLesson,
+  lessonLesezeit,
+} from "@/lib/stage-lessons";
 import { VideoEmbed } from "@/components/members/VideoEmbed";
 import { site } from "@/lib/site";
 import { isBegleiterConfigured } from "@/app/mitglieder/begleiter/actions";
@@ -48,6 +54,15 @@ function firstName(raw: string): string {
   return token.charAt(0).toUpperCase() + token.slice(1);
 }
 
+/**
+ * Nach einer Pause (7+ Tage ohne Aktivität) wird freundlich zurückgeholt –
+ * ohne Vorwurf, ohne „Nachholen". Serverzeit reicht für diese grobe Schwelle.
+ */
+function istNachPause(lastActivity: string | null): boolean {
+  if (!lastActivity) return false;
+  return Date.now() - new Date(lastActivity).getTime() > 7 * 24 * 60 * 60 * 1000;
+}
+
 export default async function MembersPage() {
   let name = "";
   let loggedIn = false;
@@ -59,7 +74,10 @@ export default async function MembersPage() {
   // Momentum-Signale für den Kopf (Serie, Programm-Fortschritt, letzte Aktivität).
   let rueckkehrTage: string[] = [];
   let programmDone = 0;
+  let programmKeys: string[] = [];
   let lastActivity: string | null = null;
+  // Zuletzt gemachte Übungen – für den schnellen Wiedereinstieg.
+  let zuletztGemacht: Practice[] = [];
 
   if (isSupabaseConfigured) {
     const supabase = await createClient();
@@ -140,7 +158,20 @@ export default async function MembersPage() {
         .eq("user_id", user.id)
         .eq("item_type", "programm")
         .eq("status", "completed");
-      programmDone = (programmRows ?? []).length;
+      programmKeys = (programmRows ?? []).map((row) => row.item_key as string);
+      programmDone = programmKeys.length;
+
+      const { data: practiceRows } = await supabase
+        .from("progress")
+        .select("item_key, completed_at")
+        .eq("user_id", user.id)
+        .eq("item_type", "practice")
+        .eq("status", "completed")
+        .order("completed_at", { ascending: false })
+        .limit(3);
+      zuletztGemacht = (practiceRows ?? [])
+        .map((row) => getPractice(row.item_key as string))
+        .filter((p): p is Practice => Boolean(p));
 
       // „Zuletzt aktiv": das jüngste von letzter Reflexion und letzter Rückkehr.
       const { data: lastNote } = await supabase
@@ -153,6 +184,7 @@ export default async function MembersPage() {
       const kandidaten = [
         lastNote?.updated_at as string | undefined,
         rueckkehrTage[0] ? `${rueckkehrTage[0]}T00:00:00Z` : undefined,
+        (practiceRows ?? [])[0]?.completed_at as string | undefined,
       ].filter(Boolean) as string[];
       lastActivity =
         kandidaten.length > 0
@@ -198,6 +230,14 @@ export default async function MembersPage() {
   const currentPractice = allStagesDone
     ? null
     : practicesForStage(currentOrdinal)[0] ?? null;
+  const currentLesson = currentStage ? getStageLesson(currentStage.number) : undefined;
+
+  // 21-Tage-Programm: der nächste offene Tag (null, wenn alle 21 geschafft).
+  const programmErledigt = new Set(programmKeys);
+  const naechsterProgrammTag =
+    programmTage.find((t) => !programmErledigt.has(tagKey(t.tag))) ?? null;
+
+  const nachPause = istNachPause(lastActivity);
 
   // Kuratierte Auswahl fürs Dashboard: nur wenige, zur aktuellen Stufe passende
   // Vertiefungen und Übungen. Die vollständigen Bibliotheken liegen auf eigenen
@@ -295,8 +335,9 @@ export default async function MembersPage() {
             )}
           </div>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-            Dein persönlicher Raum für deine Reise durch die 7 Stufen. Unten
-            siehst du, wo du stehst und was als Nächstes dran ist.
+            {nachPause
+              ? "Schön, dass du wieder da bist. Kein Nachholen nötig – ein Atemzug, und du bist zurück. Hier geht es genau dort weiter, wo du warst."
+              : "Dein persönlicher Raum für deine Reise durch die 7 Stufen. Unten siehst du, wo du stehst und was als Nächstes dran ist."}
           </p>
 
           {/* Mini-Fortschritt direkt im Kopf */}
@@ -331,6 +372,163 @@ export default async function MembersPage() {
           )}
         </Container>
       </section>
+
+      {/* EBENE 1 – „Hier weitermachen": der einzige dominante Anker, darunter
+          der tägliche Rhythmus („Heute") */}
+      {loggedIn && (
+        <section className="py-8 sm:py-10">
+          <Container className="flex flex-col gap-5">
+            {allStagesDone ? (
+              <div
+                id="abschluss"
+                className="flex scroll-mt-40 flex-col items-start gap-5 rounded-2xl border border-accent/30 bg-gradient-to-br from-gold-500/[0.08] to-white p-7 shadow-card sm:p-9"
+              >
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-xl text-navy-950">
+                  <Check />
+                </span>
+                <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">
+                  Du bist alle 7 Stufen gegangen.
+                </h2>
+                <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+                  Du bist nicht „fertig“ – du bist aufmerksamer geworden.
+                  Meisterschaft ist kein Ziel, sondern eine Praxis. Vier Wege,
+                  wie es jetzt weitergeht:
+                </p>
+                <ul className="grid w-full gap-3 sm:grid-cols-2">
+                  {[
+                    {
+                      href: "/mitglieder/journal",
+                      titel: "Deine Reise nachlesen",
+                      text: "Lies deine ersten und deine letzten Einträge nebeneinander – und druck dir deine Reise als PDF.",
+                    },
+                    {
+                      href: "/bewusstseinstest",
+                      titel: "Den Test noch einmal machen",
+                      text: "Sieh in deiner Wachstumskurve, was sich seit dem Anfang bewegt hat.",
+                    },
+                    {
+                      href: "/mitglieder/rueckkehr",
+                      titel: "Die Praxis, die bleibt",
+                      text: "Die tägliche Rückkehr – eine Minute am Tag, ohne Druck.",
+                    },
+                    {
+                      href: "/mitglieder/wissen",
+                      titel: "Nach Interesse vertiefen",
+                      text: "Die Vertiefungen warten ohne Reihenfolge auf dich.",
+                    },
+                  ].map((w) => (
+                    <li key={w.href}>
+                      <Link
+                        href={w.href}
+                        className="group flex h-full flex-col gap-1 rounded-xl border border-ink/10 bg-white p-4 transition-all hover:border-accent/35"
+                      >
+                        <span className="flex items-center justify-between gap-3 font-medium text-ink group-hover:text-accent">
+                          {w.titel}
+                          <ArrowRight className="shrink-0 text-ink-muted transition-transform group-hover:translate-x-0.5 group-hover:text-accent" />
+                        </span>
+                        <span className="text-sm leading-relaxed text-ink-mid">
+                          {w.text}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              currentStage && (
+                <div className="flex flex-col gap-6 rounded-2xl border border-gold-500/35 bg-white p-7 shadow-card sm:p-9">
+                  <div className="flex flex-col gap-2">
+                    <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-gold-700">
+                      Hier weitermachen · Stufe {currentOrdinal} von {stages.length}
+                    </span>
+                    <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">
+                      Stufe {currentStage.number}:{" "}
+                      <span className="text-gold-700">{currentStage.title}</span>
+                    </h2>
+                    <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
+                      {currentStage.description}
+                    </p>
+                    {currentLesson && (
+                      <p className="text-sm text-ink-muted">
+                        ca. {lessonLesezeit(currentLesson)} Min. Lektion · dazu
+                        Übungen für den Alltag · Empfehlung: {EMPFOHLENER_RHYTHMUS}
+                      </p>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Link
+                      href={`/mitglieder/stufe/${currentOrdinal}`}
+                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-6 py-3 text-sm font-semibold text-navy-950 shadow-card transition-all hover:opacity-95"
+                    >
+                      Weiter mit Stufe {currentOrdinal}
+                      <ArrowRight />
+                    </Link>
+                    {currentPractice && (
+                      <Link
+                        href={`/mitglieder/praxis/${currentPractice.slug}`}
+                        className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-3 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
+                      >
+                        <Play />
+                        Passende Praxis: {currentPractice.title}
+                      </Link>
+                    )}
+                  </div>
+                  {!startStage && (
+                    <p className="text-sm text-ink-muted">
+                      Noch nicht sicher, wo du stehst?{" "}
+                      <Link
+                        href="/bewusstseinstest"
+                        className="font-medium text-accent underline-offset-4 hover:underline"
+                      >
+                        Mach den Bewusstseinstest
+                      </Link>{" "}
+                      – dein Ergebnis passt den Startpunkt an.
+                    </p>
+                  )}
+                </div>
+              )
+            )}
+
+            <HeuteKarte
+              rueckkehrTage={rueckkehrTage}
+              naechsterTag={
+                naechsterProgrammTag
+                  ? { tag: naechsterProgrammTag.tag, titel: naechsterProgrammTag.titel }
+                  : null
+              }
+              programmDone={programmDone}
+              programmTotal={PROGRAMM_TAGE_GESAMT}
+            />
+
+            {/* Schneller Wiedereinstieg + Soforthilfe */}
+            <div className="flex flex-wrap items-center gap-2 text-sm">
+              {zuletztGemacht.length > 0 && (
+                <>
+                  <span className="text-ink-muted">Zuletzt gemacht:</span>
+                  {zuletztGemacht.map((p) => (
+                    <Link
+                      key={p.slug}
+                      href={`/mitglieder/praxis/${p.slug}`}
+                      className="inline-flex min-h-10 items-center rounded-full border border-ink/15 bg-white px-4 font-medium text-ink transition-colors hover:border-accent/40 hover:text-accent"
+                    >
+                      {p.title}
+                    </Link>
+                  ))}
+                </>
+              )}
+              {naechsterProgrammTag && (
+                <Link
+                  href="/mitglieder/soforthilfe"
+                  className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-ink/15 bg-white px-4 font-medium text-ink transition-colors hover:border-accent/40 hover:text-accent sm:ml-auto"
+                >
+                  Soforthilfe: Was ist gerade los?
+                  <ArrowRight />
+                </Link>
+              )}
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Willkommensvideo – kurzes Intro & Orientierung fürs Dashboard.
           Facade-Muster wie auf den Stufen-Seiten: erst Poster, YouTube lädt
@@ -368,82 +566,6 @@ export default async function MembersPage() {
           )}
         </Container>
       </section>
-
-      {/* EBENE 1 – „Hier weitermachen": der einzige dominante Anker */}
-      {loggedIn && (
-        <section className="py-8 sm:py-10">
-          <Container>
-            {allStagesDone ? (
-              <div className="flex flex-col items-start gap-4 rounded-2xl border border-accent/30 bg-gradient-to-br from-gold-500/[0.08] to-gold-500/[0.08] p-7 shadow-card sm:p-9">
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-xl text-navy-950">
-                  <Check />
-                </span>
-                <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">
-                  Du hast alle 7 Stufen abgeschlossen.
-                </h2>
-                <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-                  Ein großer Schritt. Vertiefe, wiederhole oder halte deine
-                  Reise im Journal fest – Meisterschaft ist kein Ziel, sondern
-                  eine Praxis.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <Button href="/mitglieder/journal" variant="accent">
-                    Zu meinem Journal
-                    <ArrowRight />
-                  </Button>
-                </div>
-              </div>
-            ) : (
-              currentStage && (
-                <div className="flex flex-col gap-6 rounded-2xl border border-gold-500/35 bg-white p-7 shadow-card sm:p-9">
-                  <div className="flex flex-col gap-2">
-                    <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-gold-700">
-                      Hier weitermachen · Stufe {currentOrdinal} von {stages.length}
-                    </span>
-                    <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">
-                      Stufe {currentStage.number}:{" "}
-                      <span className="text-gold-700">{currentStage.title}</span>
-                    </h2>
-                    <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-                      {currentStage.description}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <Link
-                      href={`/mitglieder/stufe/${currentOrdinal}`}
-                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-6 py-3 text-sm font-semibold text-navy-950 shadow-card transition-all hover:opacity-95"
-                    >
-                      Weiter mit Stufe {currentOrdinal}
-                      <ArrowRight />
-                    </Link>
-                    {currentPractice && (
-                      <Link
-                        href={`/mitglieder/praxis/${currentPractice.slug}`}
-                        className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white px-5 py-3 text-sm font-medium text-ink transition-all hover:border-accent/40 hover:text-accent"
-                      >
-                        <Play />
-                        Passende Praxis: {currentPractice.title}
-                      </Link>
-                    )}
-                  </div>
-                  {!startStage && (
-                    <p className="text-sm text-ink-muted">
-                      Noch nicht sicher, wo du stehst?{" "}
-                      <Link
-                        href="/bewusstseinstest"
-                        className="font-medium text-accent underline-offset-4 hover:underline"
-                      >
-                        Mach den Bewusstseinstest
-                      </Link>{" "}
-                      – dein Ergebnis passt den Startpunkt an.
-                    </p>
-                  )}
-                </div>
-              )
-            )}
-          </Container>
-        </section>
-      )}
 
       {/* EBENE 2 – „Dein Weg": chronologischer Stepper mit Status */}
       <section className="py-14 sm:py-20">

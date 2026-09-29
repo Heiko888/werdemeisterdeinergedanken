@@ -139,7 +139,7 @@ export default async function JournalPage() {
           </h1>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
             Hier sammeln sich alle deine Reflexionen an einem Ort – aus den 7
-            Stufen und den Vertiefungen. Ein persönlicher Spiegel, der mit jeder
+            Stufen, den Vertiefungen und deinen Übungen. Ein persönlicher Spiegel, der mit jeder
             Frage, die du beantwortest, weiterwächst.
           </p>
 
@@ -266,15 +266,18 @@ export default async function JournalPage() {
                 Dein Journal ist noch leer
               </h2>
               <p className="text-[1.02rem] leading-relaxed text-ink-mid">
-                Sobald du zu einer Reflexionsfrage in einer Stufe oder Vertiefung
-                etwas schreibst, erscheint es hier – und dein Journal beginnt zu
-                wachsen. Am besten fängst du mit der ersten Stufe an.
+                Sobald du zu einer Reflexionsfrage in einer Stufe, Vertiefung
+                oder Übung etwas schreibst, erscheint es hier – und dein Journal
+                beginnt zu wachsen.{" "}
+                {startStageData
+                  ? `Am besten fängst du bei deiner Startstufe an: Stufe ${Number(startStageData.number)}.`
+                  : "Am besten fängst du mit der ersten Stufe an."}
               </p>
               <Link
-                href="/mitglieder/stufe/1"
+                href={`/mitglieder/stufe/${startStageData ? Number(startStageData.number) : 1}`}
                 className="group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition-all hover:bg-ink/90"
               >
-                Mit Stufe 1 beginnen
+                Mit Stufe {startStageData ? Number(startStageData.number) : 1} beginnen
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             </div>

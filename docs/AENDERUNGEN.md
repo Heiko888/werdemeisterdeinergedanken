@@ -29,6 +29,133 @@ Geändert wurde nur `src/app/ueber-mich/page.tsx`:
 
 ---
 
+## 2026-09-29 – Mitgliederbereich: Welle 1 + Tagesrhythmus, Abschluss-Momente, Soforthilfe & Suche
+
+**Anlass:** Umsetzung aus `docs/design/mitglieder/mitglieder-ux-2026-09-29.md`
+(Welle 1 sowie „Was fehlt?" Punkte 2–4). **Bewusst ausgelassen:** alles zu
+Videos/Audios und Heikos Stimme/Gesicht (in Produktion) – `placeholderVideoId`
+und Video-Inhalte sind unverändert. Branch `claude/relaxed-dijkstra-n9o86k`.
+
+**Passwort-Weg (erster Login nach Kauf, vergessenes Passwort)**
+- Neu: `/passwort-setzen` (`src/app/passwort-setzen/`, `PasswortSetzenForm.tsx`)
+  liest die Session aus dem Link (`#access_token` aus der Willkommensmail oder
+  `?code=` aus „Passwort vergessen"), lässt ein Passwort setzen und leitet nach
+  `/mitglieder`. Klare Fehlerzustände (abgelaufen / anderer Browser).
+- Neu: `/passwort-vergessen` + Server Action `requestPasswordReset`
+  (`src/app/auth/actions.ts`): neutrale Antwort (keine Konto-Ausforschung),
+  Rate-Limit über `src/lib/rate-limit.ts`.
+- `/login`: Link „Passwort vergessen?" + Hinweis für neue Käufer.
+- Stripe-Webhook: `redirectTo` → `/passwort-setzen`; Willkommensmail nennt
+  `/passwort-vergessen`, falls der Link abgelaufen ist.
+- ⚠️ **Server-Einstellung nötig:** In Supabase → Auth → URL Configuration →
+  Redirect URLs `https://www.werdemeisterdeinergedanken.de/passwort-setzen`
+  eintragen. Danach **einen echten Testkauf** bis zum ersten Login machen.
+
+**Mitgliedschaft selbst verwalten**
+- Einstellungen: neue Karte „Mitgliedschaft" (`MitgliedschaftKarte.tsx`,
+  `abo-status.ts`, `abo-actions.ts`) mit Status in Klartext, „Mitgliedschaft
+  kündigen" (öffnet direkt den Kündigungsdialog im Stripe-Kundenportal) und
+  „Rechnungen & Zahlungsart". Customer-ID nur serverseitig.
+- ⚠️ **Server-Einstellung nötig:** Stripe → Settings → Billing → Customer portal
+  aktivieren (Kündigung, Rechnungen, Zahlungsart) – Details in
+  `docs/STRIPE-MITGLIEDSCHAFT.md` Abschnitt 7.
+- Offen (rechtlich prüfen): § 312k BGB verlangt nach verbreiteter Ansicht einen
+  Kündigungsbutton, der auch **ohne Login** erreichbar ist.
+
+**Lade- und Fehlerzustände**
+- Neu: `src/app/mitglieder/loading.tsx` (Skeleton) und `error.tsx`
+  („Erneut versuchen" über `retry()` aus Next 16.3).
+- Token `--color-danger`/`--color-danger-soft` in `globals.css`.
+- `JournalReflection`: sichtbarer Speicherfehler mit „Erneut speichern";
+  scheitert das Laden, bleiben die Felder gesperrt (kein Überschreiben
+  gespeicherter Antworten). 16 px Schrift (kein iOS-Zoom), 5 Zeilen, echte Labels.
+  `getNotes` wirft jetzt bei DB-Fehlern.
+- Programm-Tag, tägliche Rückkehr, Newsletter-Schalter: Fehler werden angezeigt
+  statt still zurückgenommen (`programm-actions.ts`, `rueckkehr-actions.ts`,
+  `setNewsletterOptIn` liefern jetzt `ok`).
+- Detektor, Muster-Spiegel, Reading: Skeleton beim Laden, Fehler mit `role="alert"`.
+
+**Tagesrhythmus**
+- Dashboard: „Hier weitermachen" steht jetzt direkt unter dem Kopf (vor dem
+  Willkommensvideo), mit Zeitangabe („ca. X Min. Lektion · Empfehlung: eine
+  Stufe pro Woche").
+- Neu: „Heute"-Karte (`HeuteKarte.tsx`): Tagesimpuls + „Heute zurückkehren"
+  mit einem Klick, daneben der nächste Tag des 21-Tage-Programms bzw. eine
+  Einladung für Neue. „Zuletzt gemacht" (letzte 3 Übungen) als Schnellzugriff.
+- Nach 7+ Tagen Pause: freundliche „Schön, dass du wieder da bist"-Begrüßung.
+- Stufenseiten: Zeit/Rhythmus-Zeile unter der Einführung
+  (`lessonLesezeit()`/`EMPFOHLENER_RHYTHMUS` in `stage-lessons.ts`).
+- Tagesimpulse zentral in `src/lib/tagesimpulse.ts`; bei Serie 0 zeigt die
+  Rückkehr-Seite eine Einladung statt einer großen „0"; Rückkehr-Text rahmt die
+  Praxis als „vom ersten Tag an" statt „nach dem Programm".
+
+**Abschluss-Momente**
+- Stufen-Häkchen ans Seitenende verschoben (nach Lektion, Übungen, Reflexion,
+  Leitsatz), ehrlicher Text „Ich habe mit dieser Stufe gearbeitet". Nach dem
+  Klick: Abschluss-Karte mit der eigenen ersten Reflexion („Lies es heute noch
+  einmal. Was ist anders?"), Leitsatz und nächster Stufe.
+- Stufe 7: kein pauschales „Geschafft" mehr am Seitenende.
+- Dashboard nach allen 7 Stufen: Abschluss-Block (`#abschluss`) mit vier Wegen
+  (Reise nachlesen/drucken, Test wiederholen, tägliche Rückkehr, Vertiefungen).
+- 21-Tage-Programm-Ende verlinkt die tägliche Rückkehr.
+
+**Soforthilfe & Wiederfinden**
+- Neu: `/mitglieder/soforthilfe` („Was ist gerade los?"): 6 Situationen
+  (Grübeln, Stress, Wut, Einschlafen, Selbstkritik, Reizüberflutung) mit
+  1-Minuten-Schritt, passender Übung, Vertiefung und Krisennummern. Daten in
+  `src/lib/soforthilfe.ts`, Test `soforthilfe.test.ts` prüft alle Verweise.
+- Neu: `/mitglieder/suche` – Volltextsuche über Stufen, Praxis, Vertiefungen,
+  Wissensdatenbank, Soforthilfe und das eigene Journal (`suchindex.ts`,
+  `MitgliederSuche.tsx`), mit Bereichs-Filter.
+- `MemberNav`: neue Einträge „Soforthilfe" und „Suche", „Programm" heißt jetzt
+  „21 Tage", „Mein Bereich" ist auch auf Stufen-Seiten aktiv, mobil weiche
+  Kante rechts + aktiver Eintrag wird in den sichtbaren Bereich gescrollt.
+- Footer im Mitgliederbereich ohne Marketing-Links (`FooterNav.tsx`): Mein
+  Bereich, Soforthilfe, Einstellungen & Mitgliedschaft, Hilfe & Kontakt, Zur Website.
+- Wegführung: Praxis-Seiten enden mit „Alle Übungen" + „Als Nächstes";
+  Vertiefungen mit „Alle Vertiefungen"; Stufenseite bietet bei Fragen zuerst den
+  Begleiter an (wenn eingerichtet); leeres Journal verweist auf die Startstufe;
+  Journal-Texte nennen die Übungen als Quelle.
+
+**Nicht umgesetzt (bewusst/später):** Merkliste (braucht DB-Migration),
+Erinnerungs-Mails/Onboarding-Mails, anonyme Gemeinsamkeits-Signale, Vorher/
+Nachher je Stufe im Gedankenprofil.
+
+**Geprüft:** `tsc` (ohne Fehler außer den bekannten Bild-Typen ohne
+`next-env.d.ts`), `eslint src` sauber, `npm test` 13/13, `next build`
+erfolgreich, Sichtprüfung 390 px (Soforthilfe, Suche, Stufen-Abschluss,
+Passwort-Seite). Eingeloggt (Supabase) lokal nicht testbar.
+
+---
+
+## 2026-09-29 – Neues Mitglieder-UX-Team + erster Review des Mitgliederbereichs
+
+**Anlass:** Wunsch nach einem Team von Web-UI/UX-Designern speziell für den
+geschützten Bereich – „irgendwie fehlt mir noch was". Branch
+`claude/relaxed-dijkstra-n9o86k`. **Kein Produktivcode geändert.**
+
+- **Neue Agenten** in `.claude/agents/`: `mitglieder-ux-lead` (Leitung),
+  `nutzerreise-designer`, `navigations-architekt`, `motivations-designer`,
+  `mitglieder-ui-designer`, `luecken-scout`. Beschreibung im Abschnitt
+  „Fünftes Team" in `.claude/agents/README.md`.
+- **Neuer Befehl** `/mitglieder-design` (`.claude/commands/mitglieder-design.md`),
+  optional mit Schwerpunkt („nur Dashboard", „nur Lücken", „nur mobil").
+  Berichte landen in `docs/design/mitglieder/`.
+- **Erster Durchlauf:** `docs/design/mitglieder/mitglieder-ux-2026-09-29.md`.
+  Kernaussage: Der Bereich ist ein sehr gutes Buch, aber noch keine Begleitung –
+  es fehlen Heikos Stimme (Audios/Videos), ein Alltagstakt („Heute", Zeitangaben,
+  Erinnerungen), Abschluss-Momente, Soforthilfe/Suche.
+- **Kritische Funde (noch offen, nicht behoben):**
+  - Erster Login nach dem Kauf sehr wahrscheinlich Sackgasse: Der
+    Willkommens-Link (`generateLink` recovery → `/login`) liefert die Session im
+    `#`-Fragment, das nichts ausliest; es gibt kein „Passwort setzen/vergessen".
+    **Mit einem echten Testkauf bestätigen.**
+  - Kein Stripe-Kundenportal / Kündigungsbutton im Bereich (§ 312k BGB).
+  - `placeholderVideoId` weiterhin gesetzt (`src/lib/site.ts:34`).
+  - Kein `loading.tsx`/`error.tsx`; Autosave der Reflexion verschluckt Fehler.
+
+---
+
 ## 2026-09-29 – Blog: Hero-Bild ausgetauscht
 
 **Anlass:** Neues Hero-Motiv für `/blog` (helles, abstraktes Licht-Motiv in

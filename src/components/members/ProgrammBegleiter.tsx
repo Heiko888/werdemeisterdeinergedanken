@@ -5,11 +5,7 @@ import { memberEyebrow } from "@/lib/uiClasses";
 import Link from "next/link";
 import { ArrowRight } from "@/components/ui/Icon";
 import { setProgrammTag } from "@/app/mitglieder/programm-actions";
-import {
-  type ProgrammTag,
-  type ProgrammWoche,
-  tagKey,
-} from "@/lib/programm";
+import { type ProgrammTag, type ProgrammWoche, tagKey } from "@/lib/programm";
 
 /**
  * Der Begleiter durch das 21-Tage-Programm. Selbst-getaktet: alle Tage sind
@@ -27,6 +23,7 @@ export function ProgrammBegleiter({
 }) {
   const [done, setDone] = useState<Set<string>>(new Set(initialDone));
   const [pending, setPending] = useState(false);
+  const [fehler, setFehler] = useState(false);
 
   // Erster nicht abgeschlossener Tag – oder der letzte, wenn alles erledigt ist.
   const ersterOffen = useMemo(() => {
@@ -46,6 +43,7 @@ export function ProgrammBegleiter({
   async function toggle() {
     if (pending) return;
     setPending(true);
+    setFehler(false);
     const naechster = !istDone;
     // Optimistisch umschalten.
     setDone((prev) => {
@@ -54,8 +52,22 @@ export function ProgrammBegleiter({
       else next.delete(key);
       return next;
     });
+    // Bei Fehler den optimistischen Schritt zurücknehmen – und es sagen.
+    const zuruecknehmen = () => {
+      setDone((prev) => {
+        const next = new Set(prev);
+        if (naechster) next.delete(key);
+        else next.add(key);
+        return next;
+      });
+      setFehler(true);
+    };
     try {
-      await setProgrammTag(tag.tag, naechster);
+      const res = await setProgrammTag(tag.tag, naechster);
+      if (!res.ok) {
+        zuruecknehmen();
+        return;
+      }
       // Nach dem Abschließen sanft zum nächsten offenen Tag weiterführen.
       if (naechster) {
         const folge = tage.find(
@@ -63,14 +75,9 @@ export function ProgrammBegleiter({
         );
         if (folge) setViewTag(folge.tag);
       }
-    } catch {
-      // Bei Fehler den optimistischen Schritt zurücknehmen.
-      setDone((prev) => {
-        const next = new Set(prev);
-        if (naechster) next.delete(key);
-        else next.add(key);
-        return next;
-      });
+    } catch (err) {
+      console.error(err);
+      zuruecknehmen();
     } finally {
       setPending(false);
     }
@@ -81,9 +88,7 @@ export function ProgrammBegleiter({
       {/* Fortschritt */}
       <div className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between">
-          <span className={memberEyebrow}>
-            Dein Weg
-          </span>
+          <span className={memberEyebrow}>Dein Weg</span>
           <span className="text-sm font-medium text-ink-mid tabular-nums">
             {erledigt} / {tage.length} Tagen
           </span>
@@ -97,7 +102,14 @@ export function ProgrammBegleiter({
         {alleFertig && (
           <p className="text-sm leading-relaxed text-ink-mid">
             Du hast alle 21 Tage gegangen. Das Wichtigste beginnt jetzt: die
-            eine Praxis, die deine bleibt.
+            eine Praxis, die deine bleibt.{" "}
+            <Link
+              href="/mitglieder/rueckkehr"
+              className="group inline-flex items-center gap-1 font-medium text-accent underline-offset-2 hover:underline"
+            >
+              Zur täglichen Rückkehr
+              <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
+            </Link>
           </p>
         )}
       </div>
@@ -140,40 +152,46 @@ export function ProgrammBegleiter({
           </Link>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <button
-            type="button"
-            onClick={toggle}
-            disabled={pending}
-            className={`inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 py-2 text-[0.8rem] font-semibold leading-tight shadow-card transition-all disabled:cursor-not-allowed disabled:opacity-60 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm ${
-              istDone
-                ? "border border-ink/20 bg-white text-ink hover:border-accent/40 hover:text-accent"
-                : "bg-ink text-paper hover:bg-ink/90"
-            }`}
-          >
-            {istDone ? "Als offen markieren" : "Tag abschließen"}
-          </button>
+        <div className="flex flex-col gap-2">
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              onClick={toggle}
+              disabled={pending}
+              className={`inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 py-2 text-[0.8rem] font-semibold leading-tight shadow-card transition-all disabled:cursor-not-allowed disabled:opacity-60 sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm ${
+                istDone
+                  ? "border border-ink/20 bg-white text-ink hover:border-accent/40 hover:text-accent"
+                  : "bg-ink text-paper hover:bg-ink/90"
+              }`}
+            >
+              {istDone ? "Als offen markieren" : "Tag abschließen"}
+            </button>
 
-          <div className="ml-auto flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() => setViewTag((t) => Math.max(1, t - 1))}
-              disabled={tag.tag <= 1}
-              aria-label="Vorheriger Tag"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              <ArrowRight className="rotate-180" />
-            </button>
-            <button
-              type="button"
-              onClick={() => setViewTag((t) => Math.min(tage.length, t + 1))}
-              disabled={tag.tag >= tage.length}
-              aria-label="Nächster Tag"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              <ArrowRight />
-            </button>
+            <div className="ml-auto flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setViewTag((t) => Math.max(1, t - 1))}
+                disabled={tag.tag <= 1}
+                aria-label="Vorheriger Tag"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                <ArrowRight className="rotate-180" />
+              </button>
+              <button
+                type="button"
+                onClick={() => setViewTag((t) => Math.min(tage.length, t + 1))}
+                disabled={tag.tag >= tage.length}
+                aria-label="Nächster Tag"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 bg-white text-ink transition-all hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                <ArrowRight />
+              </button>
+            </div>
           </div>
+
+          <p role="status" className="text-sm text-danger">
+            {fehler ? "Konnte gerade nicht gespeichert werden." : ""}
+          </p>
         </div>
       </article>
 

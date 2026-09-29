@@ -1,16 +1,15 @@
 "use client";
 
 import { useActionState, useState } from "react";
+import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { signIn, signUp, type AuthState } from "@/app/auth/actions";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Check } from "@/components/ui/Icon";
 import { cn } from "@/lib/cn";
+import { authInputClass as inputClass } from "./styles";
 
 const initial: AuthState = {};
-
-const inputClass =
-  "w-full rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink-muted focus:border-accent focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
 export function AuthForm({
   redirectTo = "/mitglieder",
@@ -101,9 +100,19 @@ export function AuthForm({
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="password" className="text-sm font-medium text-ink">
-              Passwort
-            </label>
+            <div className="flex items-baseline justify-between gap-3">
+              <label htmlFor="password" className="text-sm font-medium text-ink">
+                Passwort
+              </label>
+              {activeMode === "login" && (
+                <Link
+                  href="/passwort-vergessen"
+                  className="text-xs font-medium text-accent underline-offset-4 hover:text-ink hover:underline"
+                >
+                  Passwort vergessen?
+                </Link>
+              )}
+            </div>
             <input
               id="password"
               name="password"
@@ -132,6 +141,7 @@ export function AuthForm({
             variant="accent"
             size="lg"
             className="mt-1 w-full"
+            disabled={pending}
           >
             {pending
               ? "Bitte warten …"

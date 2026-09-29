@@ -11,6 +11,8 @@ import { PasswordForm } from "@/components/members/PasswordForm";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { signOut } from "@/app/auth/actions";
+import { getAboUebersicht } from "./abo-status";
+import { MitgliedschaftKarte } from "./MitgliedschaftKarte";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +23,7 @@ export const metadata: Metadata = {
 
 /** Einheitliche Karten-Sektion für die Einstellungen. */
 function SettingCard({
+  id,
   title,
   description,
   children,
@@ -28,9 +31,10 @@ function SettingCard({
   title: string;
   description: string;
   children: ReactNode;
+  id?: string;
 }) {
   return (
-    <Card as="section" className="flex flex-col gap-5 sm:p-8">
+    <Card as="section" id={id} className="flex flex-col gap-5 sm:p-8">
       <div className="flex flex-col gap-1.5">
         <h2 className="font-display text-xl font-medium text-ink">{title}</h2>
         <p className="text-[0.98rem] leading-relaxed text-ink-mid">{description}</p>
@@ -40,7 +44,11 @@ function SettingCard({
   );
 }
 
-export default async function EinstellungenPage() {
+export default async function EinstellungenPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
   if (!isSupabaseConfigured) {
     return (
       <>
@@ -77,12 +85,16 @@ export default async function EinstellungenPage() {
   const newsletterOptIn = Boolean(profile?.newsletter_opt_in);
   const email = user.email ?? "";
 
+  const abo = await getAboUebersicht({ id: user.id, email: user.email });
+  const aboParam = (await searchParams).abo;
+  const aboFehler = typeof aboParam === "string" ? aboParam : null;
+
   return (
     <>
       <LessonHero
         eyebrow="Mein Bereich"
         title="Einstellungen"
-        subtitle="Verwalte deinen Namen, deine Impulse, dein Passwort und dein Konto."
+        subtitle="Verwalte deinen Namen, deine Impulse, dein Passwort, deine Mitgliedschaft und dein Konto."
       />
 
       <section className="py-14 sm:py-20">
@@ -106,6 +118,14 @@ export default async function EinstellungenPage() {
             description="Setze ein neues Passwort für deinen Zugang."
           >
             <PasswordForm />
+          </SettingCard>
+
+          <SettingCard
+            id="mitgliedschaft"
+            title="Mitgliedschaft"
+            description="Kündigen, Rechnungen, Zahlungsart ändern – über unser Zahlungssystem Stripe. Dein Zugang bleibt bis zum Ende des bezahlten Zeitraums."
+          >
+            <MitgliedschaftKarte abo={abo} fehler={aboFehler} />
           </SettingCard>
 
           <SettingCard
