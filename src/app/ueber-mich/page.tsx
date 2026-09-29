@@ -38,6 +38,46 @@ const milestones = [
   },
 ];
 
+/** Woher mein Wissen kommt – ehrlich: Ausbildungen ohne Diplom, viel
+    Selbststudium und vor allem der eigene Weg. Keine erfundenen Titel. */
+const foundations = [
+  {
+    title: "Ausbildungen",
+    text: "Ich habe verschiedene Ausbildungen durchlaufen – nicht, um ein Diplom an die Wand zu hängen, sondern weil ich verstehen wollte, wie Denken, Wahrnehmung und Veränderung wirklich funktionieren.",
+  },
+  {
+    title: "Selbststudium",
+    text: "Einen großen Teil habe ich mir autodidaktisch erarbeitet: über Jahre gelesen, ausprobiert, verworfen, neu verknüpft – und nur behalten, was sich im echten Leben bewährt hat.",
+  },
+  {
+    title: "Eigene Erfahrung",
+    text: "Das Wichtigste stand in keinem Lehrbuch. Jede Stufe, über die ich heute spreche, bin ich selbst gegangen – mit allen Umwegen, Rückschritten und Aha-Momenten.",
+  },
+];
+
+/** Abschluss: Test als erster Schritt, Buch als zweiter (CTA-Regel aus
+    FinalCta), Mitgliedschaft für den geführten Weg. */
+const nextSteps = [
+  {
+    href: "/bewusstseinstest",
+    eyebrow: "Kostenlos starten",
+    title: "Bewusstseinstest",
+    text: "Finde in wenigen Minuten heraus, auf welcher der 7 Stufen du gerade stehst.",
+  },
+  {
+    href: "/buch",
+    eyebrow: "Zum Nachlesen",
+    title: "Das Buch",
+    text: "„Werde Meister deiner Gedanken“ – erkenne die Gedanken, die gar nicht deine sind.",
+  },
+  {
+    href: "/mitgliedschaft",
+    eyebrow: "Geführter Weg",
+    title: "Mitgliedschaft",
+    text: "Alle 7 Stufen mit Videos und Praxis – Schritt für Schritt, in deinem Tempo.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -72,6 +112,7 @@ export default function AboutPage() {
                 Ich rede nicht über etwas, das ich irgendwann in Büchern gelesen
                 habe. Ich habe diesen Weg selbst durchlaufen.
               </p>
+              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Als vieles wegbrach</h3>
               <p>
                 Es gab eine Zeit, in der mein Leben komplett auf den Kopf gestellt
                 war. Beruflich brach vieles weg, innerlich verlor ich zunehmend
@@ -79,6 +120,7 @@ export default function AboutPage() {
                 weiterzumachen – und merkte lange nicht, wie sehr Ängste, Gedanken
                 und alte Muster meine Entscheidungen bestimmten.
               </p>
+              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Die richtigen Fragen</h3>
               <p>
                 Auf meiner Suche nach Antworten beschäftigte ich mich mit vielen
                 Dingen. Meditation war eines davon.
@@ -128,6 +170,7 @@ export default function AboutPage() {
                 Art, wie ich Situationen bewertete – und wie diese Bewertungen
                 wiederum mein Handeln bestimmten.
               </p>
+              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Der schwerste Verlust</h3>
               <p>
                 Dann kam der schwerste Verlust meines Lebens. Ein Mensch, der mir
                 alles bedeutete, war plötzlich nicht mehr da.
@@ -156,6 +199,7 @@ export default function AboutPage() {
                 </ul>
               </aside>
 
+              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Was daraus entstanden ist</h3>
               <p>Mit jeder ehrlichen Frage entstand ein Stück mehr Klarheit.</p>
               <p>
                 Nicht immer sofort eine Antwort. Aber{" "}
@@ -276,6 +320,39 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      {/* Woher mein Wissen kommt – ehrliche Einordnung statt Titel-Liste */}
+      <section className="bg-paper-aura grain-soft relative py-16 sm:py-24">
+        <Container>
+          <div className="max-w-2xl">
+            <Eyebrow>Woher mein Wissen kommt</Eyebrow>
+            <h2 className="mt-4 text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
+              Kein Titel. Sondern ein <em className="accent">gegangener Weg</em>
+            </h2>
+            <p className="mt-5 text-[1.05rem] leading-relaxed text-ink-mid">
+              Ich schmücke mich nicht mit Diplomen oder großen Titeln. Was ich
+              weitergebe, ist aus drei Quellen gewachsen:
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {foundations.map((f, i) => (
+              <Reveal key={f.title} delay={i * 80}>
+                <div className="h-full rounded-2xl border border-ink/10 bg-surface p-6 shadow-card">
+                  <span className="font-display text-2xl italic text-accent">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="mt-2 text-lg font-medium text-ink">{f.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-ink-mid">{f.text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <p className="mt-8 max-w-2xl text-sm leading-relaxed text-ink-muted">
+            Wichtig: Ich bin kein Arzt und kein Therapeut. Meine Begleitung ersetzt
+            keine medizinische oder psychotherapeutische Behandlung.
+          </p>
+        </Container>
+      </section>
+
       {/* Werte – dunkles Kontrast-Band, die Zahlen leuchten auf Navy */}
       <section className="relative isolate overflow-hidden bg-cosmic on-dark py-20 sm:py-28">
         <div
@@ -299,6 +376,39 @@ export default function AboutPage() {
                     {v.text}
                   </p>
                 </div>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Nächste Schritte – die Seite endet nicht bei den Werten, sondern
+          zeigt, wie man mit mir weitergehen kann */}
+      <section className="bg-paper-aura grain-soft relative py-16 sm:py-24">
+        <Container>
+          <div className="max-w-2xl">
+            <Eyebrow>Wie es weitergeht</Eyebrow>
+            <h2 className="mt-4 text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
+              Dein <em className="accent">nächster Schritt</em>
+            </h2>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {nextSteps.map((n, i) => (
+              <Reveal key={n.href} delay={i * 80}>
+                <Link
+                  href={n.href}
+                  className="group flex h-full flex-col rounded-2xl border border-ink/10 bg-surface p-6 shadow-card transition hover:-translate-y-0.5 hover:border-accent/40 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+                >
+                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-accent/90">
+                    {n.eyebrow}
+                  </span>
+                  <h3 className="mt-2 text-xl font-medium text-ink">{n.title}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-mid">{n.text}</p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-accent">
+                    Ansehen
+                    <ArrowRight className="transition group-hover:translate-x-0.5" />
+                  </span>
+                </Link>
               </Reveal>
             ))}
           </div>

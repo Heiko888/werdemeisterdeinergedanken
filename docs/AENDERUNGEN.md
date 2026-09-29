@@ -5,6 +5,30 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-29 – Über-mich-Seite überarbeitet
+
+**Anlass:** Die Über-mich-Seite soll neben der persönlichen Geschichte auch
+zeigen, woher Heikos Wissen kommt, und mit klaren nächsten Schritten enden.
+Anstoß war ein Vergleich mit anderen Über-mich-Seiten der Branche. Branch
+`claude/gifted-albattani-fv90nx`.
+
+Geändert wurde nur `src/app/ueber-mich/page.tsx`:
+
+- **Zwischenüberschriften in „Meine Geschichte“:** „Als vieles wegbrach“,
+  „Die richtigen Fragen“, „Der schwerste Verlust“, „Was daraus entstanden ist“.
+  Der Text selbst ist unverändert, er ist jetzt nur leichter zu überfliegen.
+- **Neue Sektion „Woher mein Wissen kommt“** (nach „Mein Weg“, vor den
+  Werten). Überschrift „Kein Titel. Sondern ein gegangener Weg“, drei Karten:
+  Ausbildungen (ohne Diplom), Selbststudium (autodidaktisch) und eigene
+  Erfahrung. Keine erfundenen Titel oder Ausbildungsnamen. Dazu der Hinweis:
+  kein Arzt, kein Therapeut, ersetzt keine Behandlung.
+- **Neue Abschluss-Sektion „Dein nächster Schritt“** (nach den Werten). Drei
+  verlinkte Karten: Bewusstseinstest → Buch → Mitgliedschaft, in der
+  Reihenfolge der CTA-Regel aus `FinalCta` (Test zuerst, Buch als zweites).
+- Unverändert: Hero, Zeitleiste „Mein Weg“, Werte, Metadaten.
+
+---
+
 ## 2026-09-29 – Mitgliederbereich: Welle 1 + Tagesrhythmus, Abschluss-Momente, Soforthilfe & Suche
 
 **Anlass:** Umsetzung aus `docs/design/mitglieder/mitglieder-ux-2026-09-29.md`
