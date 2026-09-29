@@ -152,3 +152,35 @@ Wichtig: Das Design-Team bleibt im bestehenden **Design-System** (Tokens aus
 **ausschließlich** nach `docs/design/`. Es ändert **keinen** App-, Komponenten-
 oder Content-Code – Umsetzung erst nach deiner Freigabe (bewusst getrennt, wie
 beim Prüf-Team: Prüfen und Ändern werden nie vermischt).
+
+---
+
+# Fünftes Team: das Mitglieder-UX-Team
+
+Das Design-Team oben schaut vor allem auf die **öffentliche** Website. Dieses
+Team kümmert sich ausschließlich um den **geschützten Mitgliederbereich**
+(`/mitglieder/*`) – aus Sicht eines zahlenden Mitglieds: Fühlt sich der Bereich
+wie ein persönliches Entwicklungs-Zuhause an? Finde ich mich zurecht? Warum
+komme ich morgen wieder? Und vor allem: **Was fehlt noch?**
+
+Start:
+
+```
+/mitglieder-design
+/mitglieder-design nur Dashboard
+/mitglieder-design nur Lücken
+/mitglieder-design nur mobil
+```
+
+| Agent | Schaut auf |
+|-------|-----------|
+| **mitglieder-ux-lead** | Leitung: steuert die Spezialisten, gleicht mit dem Audit vom 26.08. ab (✅/⏳), schreibt den Bericht `docs/design/mitglieder/mitglieder-ux-<datum>.md` mit Quick Wins, fehlenden Bausteinen und Roadmap. |
+| **nutzerreise-designer** | Die Reise: Kauf → erster Login → erste Woche → Rückkehr nach Pause → Stufe 7 → danach. Onboarding, Leerzustände, „Was als Nächstes?". |
+| **navigations-architekt** | Informationsarchitektur: Sitemap, `MemberNav`, Begriffe (Wissen/Vertiefungen/Wissensdatenbank …), Suche, Querverbindungen, Sackgassen. |
+| **motivations-designer** | Dranbleiben: Fortschritt, Gewohnheit, Rituale, Meilensteine, Personalisierung, Beziehung zu Heiko – ruhig und erwachsen, kein grelles Gamification. |
+| **mitglieder-ui-designer** | Interface im Bereich: Dashboard-Komposition, Karten, Journal-/Formularflächen, Begleiter-Chat, Lade-/Leer-/Fehlerzustände, mobile Darstellung. |
+| **luecken-scout** | „Irgendwie fehlt noch was": Checkliste gegen hochwertige Lern-/Achtsamkeits-Plattformen (Audio, Favoriten, Suche, Erinnerungen, Zertifikat, Live-Q&A, PWA …) mit Aufwand und vorhandener Vorarbeit. |
+
+Wichtig: Auch dieses Team **bewertet und schlägt vor** – es ändert keinen
+Produktivcode und schreibt ausschließlich nach `docs/design/mitglieder/`.
+Zugriffsschutz bleibt Sache des **mitglieder-waechter** im Prüf-Team.
