@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-29 – Blog-Hero: helle Variante statt Navy-Abdunklung
+
+**Anlass:** Das neue, helle Licht-Motiv im Blog-Hero wirkte unter dem
+Navy-Schleier grau und abgedunkelt. Branch `claude/gifted-albattani-fv90nx`.
+
+- `src/components/layout/PageHero.tsx`: neue optionale Prop `tone="light"`
+  (Standard bleibt `"dark"`, alle anderen Seiten sind unverändert). Hell heißt:
+  - Desktop: kein Navy-Schleier, sondern ein Papier-Verlauf nur hinter der
+    Textspalte, der zum Motiv hin ganz ausblendet. Das Bild bleibt hell.
+  - Text dunkel (Ink) statt Creme, kein Text-Schatten, kein Gold-Glow.
+  - Mobil: Bildband blendet in Papier statt in Navy aus, Text steht auf Papier.
+- `src/app/blog/page.tsx`: `tone="light"` gesetzt und `spotlight` von `left`
+  auf `right` gedreht. Die Lichtbögen des Motivs sitzen rechts, der Text steht
+  jetzt links auf der ruhigen, hellen Bildseite.
+- Lokal per Screenshot geprüft (Desktop 1440 px, Mobil 390 px).
+
+---
+
 ## 2026-09-29 – Über-mich-Seite überarbeitet
 
 **Anlass:** Die Über-mich-Seite soll neben der persönlichen Geschichte auch
