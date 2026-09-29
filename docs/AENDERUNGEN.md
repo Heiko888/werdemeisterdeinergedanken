@@ -5,6 +5,34 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-09-29 – Neues Mitglieder-UX-Team + erster Review des Mitgliederbereichs
+
+**Anlass:** Wunsch nach einem Team von Web-UI/UX-Designern speziell für den
+geschützten Bereich – „irgendwie fehlt mir noch was". Branch
+`claude/relaxed-dijkstra-n9o86k`. **Kein Produktivcode geändert.**
+
+- **Neue Agenten** in `.claude/agents/`: `mitglieder-ux-lead` (Leitung),
+  `nutzerreise-designer`, `navigations-architekt`, `motivations-designer`,
+  `mitglieder-ui-designer`, `luecken-scout`. Beschreibung im Abschnitt
+  „Fünftes Team" in `.claude/agents/README.md`.
+- **Neuer Befehl** `/mitglieder-design` (`.claude/commands/mitglieder-design.md`),
+  optional mit Schwerpunkt („nur Dashboard", „nur Lücken", „nur mobil").
+  Berichte landen in `docs/design/mitglieder/`.
+- **Erster Durchlauf:** `docs/design/mitglieder/mitglieder-ux-2026-09-29.md`.
+  Kernaussage: Der Bereich ist ein sehr gutes Buch, aber noch keine Begleitung –
+  es fehlen Heikos Stimme (Audios/Videos), ein Alltagstakt („Heute", Zeitangaben,
+  Erinnerungen), Abschluss-Momente, Soforthilfe/Suche.
+- **Kritische Funde (noch offen, nicht behoben):**
+  - Erster Login nach dem Kauf sehr wahrscheinlich Sackgasse: Der
+    Willkommens-Link (`generateLink` recovery → `/login`) liefert die Session im
+    `#`-Fragment, das nichts ausliest; es gibt kein „Passwort setzen/vergessen".
+    **Mit einem echten Testkauf bestätigen.**
+  - Kein Stripe-Kundenportal / Kündigungsbutton im Bereich (§ 312k BGB).
+  - `placeholderVideoId` weiterhin gesetzt (`src/lib/site.ts:34`).
+  - Kein `loading.tsx`/`error.tsx`; Autosave der Reflexion verschluckt Fehler.
+
+---
+
 ## 2026-09-29 – Blog: Hero-Bild ausgetauscht
 
 **Anlass:** Neues Hero-Motiv für `/blog` (helles, abstraktes Licht-Motiv in
