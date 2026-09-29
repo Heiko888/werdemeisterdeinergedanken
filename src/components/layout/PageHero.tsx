@@ -50,6 +50,11 @@ import { Eyebrow } from "@/components/ui/SectionHeading";
  * der Text steht dann rechts. Wirkt nur ab `lg` und nur zusammen mit dem mobilen
  * Bildband (`image` + lesbares Seitenverhältnis) – der mobile Aufbau bleibt exakt
  * wie bisher (Bild oben, Text zentriert darunter).
+ *
+ * Optional mit `tone="light"` (nur im Bildband-Aufbau): für helle Motive (z. B.
+ * Creme/Gold-Lichtstimmungen), die unter dem Navy-Schleier grau und matt würden.
+ * Statt Navy liegt dann ein heller Papier-Verlauf hinter der Textspalte, der
+ * Text ist dunkel (Ink) und mobil steht er auf Papier statt auf Navy.
  */
 export function PageHero({
   eyebrow,
@@ -64,6 +69,7 @@ export function PageHero({
   spotlight,
   foreground,
   foregroundAlt = "",
+  tone = "dark",
   children,
 }: {
   eyebrow?: string;
@@ -85,6 +91,8 @@ export function PageHero({
   foreground?: string;
   /** Alt-Text der Vordergrund-Figur. Leer lassen, wenn sie rein dekorativ ist. */
   foregroundAlt?: string;
+  /** "light" für helle Motive: kein Navy-Schleier, dunkler Text (siehe oben). */
+  tone?: "dark" | "light";
   children?: ReactNode;
 }) {
   // Mit Bildband auf Mobile: das Bild liegt als eigenes Band im Fluss und wird
@@ -100,7 +108,14 @@ export function PageHero({
     const spotlightDir = spotlight === "left" ? "to left" : "to right";
     const navy = (pct: number) =>
       `color-mix(in oklab, var(--color-navy-900) ${pct}%, transparent)`;
-    const spotlightOverlay = `linear-gradient(to bottom, ${navy(55)}, transparent 30%, ${navy(45)}), linear-gradient(${spotlightDir}, ${navy(97)}, ${navy(82)} 42%, ${navy(50)} 74%, ${navy(28)})`;
+    const light = tone === "light";
+    // Helle Variante: Papier statt Navy, nur hinter der Textspalte deckend und
+    // zum Motiv hin vollständig ausgeblendet – das Bild bleibt hell und klar.
+    const paper = (pct: number) =>
+      `color-mix(in oklab, var(--color-paper) ${pct}%, transparent)`;
+    const spotlightOverlay = light
+      ? `linear-gradient(${spotlightDir}, ${paper(88)}, ${paper(70)} 38%, ${paper(25)} 62%, transparent 80%)`
+      : `linear-gradient(to bottom, ${navy(55)}, transparent 30%, ${navy(45)}), linear-gradient(${spotlightDir}, ${navy(97)}, ${navy(82)} 42%, ${navy(50)} 74%, ${navy(28)})`;
 
     // Textspalte: mobil unverändert zentriert unter dem Bildband; ab lg im
     // Spotlight-Modus als schmale Spalte auf der dem Motiv abgewandten Seite,
@@ -108,7 +123,9 @@ export function PageHero({
     const columnClass = spotlight
       ? [
           "flex flex-col items-center gap-6 pb-14 pt-8 text-center sm:pb-16 sm:pt-10",
-          "lg:max-w-xl lg:gap-7 lg:py-28 lg:[text-shadow:0_1px_18px_rgba(8,16,42,0.55)]",
+          light
+            ? "lg:max-w-xl lg:gap-7 lg:py-28"
+            : "lg:max-w-xl lg:gap-7 lg:py-28 lg:[text-shadow:0_1px_18px_rgba(8,16,42,0.55)]",
           // Beide Seiten linksbündig: rechtsbündiger Text wirkt unruhig. Die
           // Spalte sitzt via `ml-auto`/`mr-auto` links bzw. rechts, der Text
           // darin startet aber immer links.
@@ -126,13 +143,13 @@ export function PageHero({
           </Reveal>
         )}
         <Reveal delay={80}>
-          <h1 className="max-w-3xl text-[1.7rem] font-medium leading-[1.1] text-cream sm:[hyphens:none] sm:[overflow-wrap:normal] sm:text-5xl md:text-[3.4rem]">
+          <h1 className={`max-w-3xl text-[1.7rem] font-medium leading-[1.1] sm:[hyphens:none] sm:[overflow-wrap:normal] sm:text-5xl md:text-[3.4rem] ${light ? "text-ink" : "text-cream"}`}>
             {title}
           </h1>
         </Reveal>
         {intro && (
           <Reveal delay={140}>
-            <p className="max-w-2xl text-[1.05rem] leading-relaxed text-cream/75">
+            <p className={`max-w-2xl text-[1.05rem] leading-relaxed ${light ? "text-ink-mid" : "text-cream/75"}`}>
               {intro}
             </p>
           </Reveal>
@@ -143,7 +160,7 @@ export function PageHero({
 
     return (
       <section
-        className={`on-dark grain relative flex flex-col overflow-hidden bg-navy-900 text-cream lg:justify-center ${spotlight ? "lg:min-h-[40rem]" : "lg:min-h-[34rem]"}`}
+        className={`grain relative flex flex-col overflow-hidden lg:justify-center ${light ? "bg-paper text-ink" : "on-dark bg-navy-900 text-cream"} ${spotlight ? "lg:min-h-[40rem]" : "lg:min-h-[34rem]"}`}
       >
         {/* Bild: bis lg als Band im Fluss (volle Höhe, unbeschnitten),
             ab lg als vollflächiger Hintergrund hinter dem Text. */}
@@ -165,7 +182,7 @@ export function PageHero({
               weich ineinander übergehen statt hart abzusetzen. */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-900 to-transparent lg:hidden"
+            className={`pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t to-transparent lg:hidden ${light ? "from-paper" : "from-navy-900"}`}
           />
           {/* Freigestellte Figur direkt im Bildband (nur bis lg): steht rechts
               auf dem Motiv, unten bündig, Füße blenden weich in die Navy-Kante.
@@ -209,12 +226,15 @@ export function PageHero({
             className={`pointer-events-none absolute inset-0 z-0 hidden bg-gradient-to-b lg:block ${overlayClassName}`}
           />
         )}
-        {/* Gold-Glow wie auf den übrigen Seiten, damit der Farbton passt. */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 z-0"
-          style={{ background: HERO_GLOW }}
-        />
+        {/* Gold-Glow wie auf den übrigen Seiten, damit der Farbton passt –
+            nicht bei hellen Motiven, die bringen ihr Licht selbst mit. */}
+        {!light && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-0"
+            style={{ background: HERO_GLOW }}
+          />
+        )}
         {/* Freigestellte Vordergrund-Figur über dem Hintergrund (nur ab lg).
             Liegt über dem Navy-Schleier (z-[5]), damit sie hell bleibt, aber
             unter dem Text (z-10). Am Content-Container (max-w-6xl) auf der
