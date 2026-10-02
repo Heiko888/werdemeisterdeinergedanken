@@ -31,7 +31,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const KICKER = "Werde Meister deiner Gedanken";
 
 const FPS = 30;
-const DURATION = 6; // Sekunden (Einblendung ~2,5 s, danach ruhiges Atmen)
+const DURATION = 4; // Sekunden (Einblendung ~2,7 s, danach kurz ruhig stehen)
 
 const FORMATS = [
   { id: "16x9", w: 1920, h: 1080 },

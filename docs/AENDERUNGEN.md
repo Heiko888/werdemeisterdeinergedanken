@@ -5,6 +5,17 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-02 – CTA-Video-Folien auf 4 Sekunden gekürzt
+
+- `tools/video/cta-folie.mjs`: `DURATION` von 6 auf 4 s (120 Frames bei
+  30 fps). Alle Einblendungen sind nach ~2,7 s fertig, danach steht die Folie
+  noch gut 1 s ruhig.
+- YouTube- und Instagram-Folien (16:9 + 9:16) in `docs/video/youtube-folie/`
+  und `docs/video/instagram-folie/` neu gebaut.
+- Doku: `docs/generatoren/video-foliensatz.md` (Dauer angepasst).
+
+---
+
 ## 2026-10-02 – Video-Folie „Volles Video auf YouTube“ + Generator für beide Plattformen
 
 **Anlass:** Die Folie soll aufs volle Video auf **YouTube** verweisen, mit

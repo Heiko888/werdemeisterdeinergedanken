@@ -94,8 +94,8 @@ Je Ordner (`<id>` = `youtube` / `instagram`):
 
 | Datei | Format | Inhalt |
 |---|---|---|
-| `<id>-folie-16x9.mp4` | 1920×1080, 30 fps, 6 s | Langvideo |
-| `<id>-folie-9x16.mp4` | 1080×1920, 30 fps, 6 s | Reels / Shorts / Stories |
+| `<id>-folie-16x9.mp4` | 1920×1080, 30 fps, 4 s | Langvideo |
+| `<id>-folie-9x16.mp4` | 1080×1920, 30 fps, 4 s | Reels / Shorts / Stories |
 | `<id>-folie-16x9.png`, `-9x16.png` | Standbild | Endzustand (z. B. als Thumbnail) |
 | `<id>-folie.html` | 16:9 | Animation im Browser ansehen (Endlos-Schleife) |
 
