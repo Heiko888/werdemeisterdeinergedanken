@@ -21,7 +21,7 @@
     "willkommen-skript": "node tools/pdf/willkommen-skript.mjs",
     "videoskripte-md": "node tools/pdf/videoskripte-markdown.mjs",
     "video-folien": "python3 tools/video/foliensatz.py",
-    "video-instagram-folie": "node tools/video/instagram-folie.mjs",
+    "video-cta-folie": "node tools/video/cta-folie.mjs",
     "brand-assets": "node docs/marketing/brand-assets.mjs",
     "story-overlays": "node tools/marketing/story-overlays.mjs",
     "story-carousels": "node tools/marketing/story-carousels.mjs",

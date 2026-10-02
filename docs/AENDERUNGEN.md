@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-02 – Video-Folie „Volles Video auf YouTube“ + Generator für beide Plattformen
+
+**Anlass:** Die Folie soll aufs volle Video auf **YouTube** verweisen, mit
+YouTube-Logo. Branch `claude/tender-einstein-bdc32y`.
+
+- Generator umbenannt und erweitert: `tools/video/instagram-folie.mjs` →
+  `tools/video/cta-folie.mjs`, npm-Skript `video-instagram-folie` →
+  `video-cta-folie` (optional `-- youtube` / `-- instagram`).
+- Neu: `docs/video/youtube-folie/` – „Volles Video auf YouTube“ mit animiertem
+  YouTube-Logo (rotes Rechteck, Play-Dreieck zeichnet sich), Link
+  `youtube.com/@WerdeMeisterdeinerGedanken`; MP4 16:9 + 9:16, PNG, HTML.
+- Instagram-Variante bleibt erhalten, die Link-Zeile zeigt jetzt
+  `instagram.com/werde.meister.deiner.gedanken` statt des YouTube-Links
+  (vorher widersprüchlich). Dateien in `docs/video/instagram-folie/` neu gebaut.
+- Doku: `docs/generatoren/video-foliensatz.md` (Abschnitt neu gefasst),
+  `docs/generatoren/README.md`.
+
+---
+
 ## 2026-10-02 – Animierte Video-Folie „Volles Video auf Instagram“
 
 **Anlass:** Einblende-Folie mit Instagram-Logo als Hinweis aufs volle Video.

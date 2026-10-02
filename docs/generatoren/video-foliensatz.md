@@ -73,34 +73,47 @@ Jede Folie trägt zusätzlich eine **Notiz** (Sprecher-/Regie-Kontext), z. B.
 - Neue Folientypen im Langvideo-Deck: `parse_*` + Builder ergänzen und in
   `build_langvideo()` einhängen.
 
-## Animierte Instagram-Folie (`tools/video/instagram-folie.mjs`)
+## Animierte CTA-Folien „Volles Video auf YouTube / Instagram“ (`tools/video/cta-folie.mjs`)
 
-Einblende-Folie **„Volles Video auf Instagram“** mit animiertem Instagram-Logo
-– als fertiges **MP4** zum direkten Einschneiden (kein PowerPoint).
+Einblende-Folien **„Volles Video auf YouTube“** (YouTube-Logo) und
+**„Volles Video auf Instagram“** (Instagram-Logo) – als fertige **MP4** zum
+direkten Einschneiden (kein PowerPoint).
 
 ```bash
-npm run video-instagram-folie   # = node tools/video/instagram-folie.mjs
+npm run video-cta-folie              # = node tools/video/cta-folie.mjs (alle Varianten)
+npm run video-cta-folie -- youtube   # nur YouTube
+npm run video-cta-folie -- instagram # nur Instagram
 ```
 
-| Datei (`docs/video/instagram-folie/`) | Format | Inhalt |
+| Variante | Ordner | Link-Zeile |
 |---|---|---|
-| `instagram-folie-16x9.mp4` | 1920×1080, 30 fps, 6 s | Langvideo / YouTube |
-| `instagram-folie-9x16.mp4` | 1080×1920, 30 fps, 6 s | Reels / Shorts / Stories |
-| `instagram-folie-16x9.png`, `-9x16.png` | Standbild | Endzustand (z. B. als Thumbnail) |
-| `instagram-folie.html` | 16:9 | Animation im Browser ansehen (Endlos-Schleife) |
+| `youtube` | `docs/video/youtube-folie/` | `youtube.com/@WerdeMeisterdeinerGedanken` |
+| `instagram` | `docs/video/instagram-folie/` | `instagram.com/werde.meister.deiner.gedanken` |
+
+Je Ordner (`<id>` = `youtube` / `instagram`):
+
+| Datei | Format | Inhalt |
+|---|---|---|
+| `<id>-folie-16x9.mp4` | 1920×1080, 30 fps, 6 s | Langvideo |
+| `<id>-folie-9x16.mp4` | 1080×1920, 30 fps, 6 s | Reels / Shorts / Stories |
+| `<id>-folie-16x9.png`, `-9x16.png` | Standbild | Endzustand (z. B. als Thumbnail) |
+| `<id>-folie.html` | 16:9 | Animation im Browser ansehen (Endlos-Schleife) |
 
 **Ablauf der Animation:** Marken-Kicker blendet ein (0,1 s) → Logo „ploppt“ mit
-Drehung auf (0,25 s) → Kamera-Rahmen und Linse zeichnen sich (0,7–1,5 s), Punkt
-springt auf → „Volles Video / auf *Instagram*“ steigt zeilenweise auf (1,05 s /
-1,3 s, „Instagram“ im Instagram-Verlauf) → Goldlinie wächst (1,6 s) →
+Drehung auf (0,25 s) → Logo-Inneres zeichnet sich (YouTube: Play-Dreieck wird
+gezeichnet und gefüllt; Instagram: Kamera-Rahmen, Linse, Punkt; 0,7–1,5 s) →
+„Volles Video / auf *Plattform*“ steigt zeilenweise auf (1,05 s / 1,3 s,
+Plattformname im Plattform-Farbverlauf) → Goldlinie wächst (1,6 s) →
 Link-Pille (1,85 s). Danach ruhig: Logo schwebt, goldene Ringe pulsieren,
-Glanzlicht läuft über das Logo, Link-Pille pulsiert.
+Glanzlicht läuft über das Logo, Link-Pille pulsiert (YouTube: Play-Dreieck
+„schlägt“ leicht).
 
 **Technik:** Selbst-enthaltenes HTML (Fraunces/Inter aus `src/app/fonts/`
-eingebettet, Logo als SVG). Playwright setzt pro Frame alle CSS-Animationen
+eingebettet, Logos als SVG). Playwright setzt pro Frame alle CSS-Animationen
 deterministisch über `document.getAnimations()` auf die Zielzeit, macht einen
 Screenshot und pipet ihn an `ffmpeg` (libx264, CRF 18, yuv420p, faststart).
 Voraussetzungen: `playwright` (devDependency) mit Chromium und `ffmpeg` im PATH.
 
-**Texte ändern:** Objekt `TEXT` oben im Skript (`kicker`, `line1`, `line2`,
-`link`), Dauer über `DURATION`, danach neu bauen.
+**Texte ändern:** Objekt `VARIANTS` im Skript (`platform`, `link`, Farben),
+Marken-Kicker über `KICKER`, Dauer über `DURATION`, danach neu bauen. Eine
+neue Plattform = neuer Eintrag in `VARIANTS` mit eigenem Logo-SVG.
