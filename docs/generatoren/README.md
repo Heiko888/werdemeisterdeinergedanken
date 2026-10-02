@@ -16,7 +16,7 @@ Gepflegt vom **Generator-Team** (`.claude/agents/`): `generator-architekt`
 | [`visual-generatoren.md`](./visual-generatoren.md) | Carousels & Reels-Cover (`docs/carousels/`, `docs/reels/`) |
 | [`marketing-und-galerie.md`](./marketing-und-galerie.md) | Marketing-Renderer (`docs/marketing/`) & Vorlagen-Galerie (`tools/vorlagen/`) |
 | [`workshop-generator.md`](./workshop-generator.md) | Workshop-PPTX/PDF (`tools/workshop/`) + Spec-Format |
-| [`video-foliensatz.md`](./video-foliensatz.md) | Video-On-Screen-Folien im Creme-Branding (`tools/video/`) |
+| [`video-foliensatz.md`](./video-foliensatz.md) | Video-On-Screen-Folien im Creme-Branding (`tools/video/`), inkl. animierter Instagram-Folie (MP4) |
 | [`content-inventar.md`](./content-inventar.md) | Vollständige Liste aller Inhalte + Zählungen |
 
 ---
@@ -116,6 +116,7 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 | Stripe-Anleitung | `node tools/pdf/anleitung-stripe.mjs [zielordner]` | Inline | `docs/workshop/anleitungen/WMDG-Anleitung-Stripe-Mitgliedschaft.pdf` |
 | Workshop | `python3 tools/workshop/build.py <spec>` | `tools/workshop/specs/*.json` | `docs/workshop/<slug>/*` + Spiegel |
 | Video-Folien (Creme) | `npm run video-folien` | `docs/skripte/{stufen-komplett,praxis,vertiefungen-komplett,landing,reels}/*.md` | `docs/video/WMDG-Video-Folien*.pptx` (7 Decks: 16:9-Langvideo · Teaser-Reel · 5 Reel-Serien) |
+| Instagram-Folie (animiert) | `npm run video-instagram-folie` | Texte im Skript (`TEXT`) | `docs/video/instagram-folie/*.mp4/.png/.html` (16:9 + 9:16) |
 | Vorlagen-Galerie | `npm run vorlagen:galerie` | `docs/{marketing,carousels,reels,workshop}/…` | `content/vorlagen/**` + `vorlagen-assets.ts` |
 
 **Ohne npm-Script** (nur direkt startbar): `build-ebook-gedanken.py`,

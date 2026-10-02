@@ -5,6 +5,25 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-02 – Animierte Video-Folie „Volles Video auf Instagram“
+
+**Anlass:** Einblende-Folie mit Instagram-Logo als Hinweis aufs volle Video.
+Branch `claude/tender-einstein-bdc32y`.
+
+- Neu: `tools/video/instagram-folie.mjs` (`npm run video-instagram-folie`).
+  Baut eine HTML-Animation im Creme-Branding der Video-Folien und rendert sie
+  per Playwright + ffmpeg als MP4 (6 s, 30 fps).
+- Neu: `docs/video/instagram-folie/` mit `instagram-folie-16x9.mp4`
+  (1920×1080), `instagram-folie-9x16.mp4` (1080×1920), Standbildern (PNG) und
+  der HTML-Animation.
+- Text: „Volles Video auf Instagram“, Link-Zeile
+  `youtube.com/@WerdeMeisterdeinerGedanken` (wie vorgegeben). Texte lassen
+  sich im Objekt `TEXT` im Skript ändern.
+- Doku: `docs/generatoren/video-foliensatz.md` (neuer Abschnitt),
+  `docs/generatoren/README.md` (Übersicht + Befehlstabelle).
+
+---
+
 ## 2026-09-29 – Blog-Hero: helle Variante statt Navy-Abdunklung
 
 **Anlass:** Das neue, helle Licht-Motiv im Blog-Hero wirkte unter dem

@@ -72,3 +72,35 @@ Jede Folie trägt zusätzlich eine **Notiz** (Sprecher-/Regie-Kontext), z. B.
   `parse_reels` + `build_reel_series` deckt Themen mit und ohne Varianten ab.
 - Neue Folientypen im Langvideo-Deck: `parse_*` + Builder ergänzen und in
   `build_langvideo()` einhängen.
+
+## Animierte Instagram-Folie (`tools/video/instagram-folie.mjs`)
+
+Einblende-Folie **„Volles Video auf Instagram“** mit animiertem Instagram-Logo
+– als fertiges **MP4** zum direkten Einschneiden (kein PowerPoint).
+
+```bash
+npm run video-instagram-folie   # = node tools/video/instagram-folie.mjs
+```
+
+| Datei (`docs/video/instagram-folie/`) | Format | Inhalt |
+|---|---|---|
+| `instagram-folie-16x9.mp4` | 1920×1080, 30 fps, 6 s | Langvideo / YouTube |
+| `instagram-folie-9x16.mp4` | 1080×1920, 30 fps, 6 s | Reels / Shorts / Stories |
+| `instagram-folie-16x9.png`, `-9x16.png` | Standbild | Endzustand (z. B. als Thumbnail) |
+| `instagram-folie.html` | 16:9 | Animation im Browser ansehen (Endlos-Schleife) |
+
+**Ablauf der Animation:** Marken-Kicker blendet ein (0,1 s) → Logo „ploppt“ mit
+Drehung auf (0,25 s) → Kamera-Rahmen und Linse zeichnen sich (0,7–1,5 s), Punkt
+springt auf → „Volles Video / auf *Instagram*“ steigt zeilenweise auf (1,05 s /
+1,3 s, „Instagram“ im Instagram-Verlauf) → Goldlinie wächst (1,6 s) →
+Link-Pille (1,85 s). Danach ruhig: Logo schwebt, goldene Ringe pulsieren,
+Glanzlicht läuft über das Logo, Link-Pille pulsiert.
+
+**Technik:** Selbst-enthaltenes HTML (Fraunces/Inter aus `src/app/fonts/`
+eingebettet, Logo als SVG). Playwright setzt pro Frame alle CSS-Animationen
+deterministisch über `document.getAnimations()` auf die Zielzeit, macht einen
+Screenshot und pipet ihn an `ffmpeg` (libx264, CRF 18, yuv420p, faststart).
+Voraussetzungen: `playwright` (devDependency) mit Chromium und `ffmpeg` im PATH.
+
+**Texte ändern:** Objekt `TEXT` oben im Skript (`kicker`, `line1`, `line2`,
+`link`), Dauer über `DURATION`, danach neu bauen.
