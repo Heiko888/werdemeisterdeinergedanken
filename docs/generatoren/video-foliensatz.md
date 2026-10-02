@@ -117,3 +117,29 @@ Voraussetzungen: `playwright` (devDependency) mit Chromium und `ffmpeg` im PATH.
 **Texte ändern:** Objekt `VARIANTS` im Skript (`platform`, `link`, Farben),
 Marken-Kicker über `KICKER`, Dauer über `DURATION`, danach neu bauen. Eine
 neue Plattform = neuer Eintrag in `VARIANTS` mit eigenem Logo-SVG.
+
+## Animierte Marken-Folie „Werde Meister deiner Gedanken“ (`tools/video/marken-folie.mjs`)
+
+Nur der Schriftzug im Original-Lockup (wie Header/Briefbogen, Texte aus
+`tools/print/marke.mjs` → `CONTACT.lockup`): **WERDE MEISTER** (MEISTER im
+Gold-Verlauf) über **— DEINER GEDANKEN —**. Kein Emblem, kein weiterer Text.
+
+```bash
+npm run video-marken-folie   # = node tools/video/marken-folie.mjs
+```
+
+| Datei (`docs/video/marken-folie/`) | Format | Inhalt |
+|---|---|---|
+| `marken-folie-16x9.mp4` | 1920×1080, 30 fps, 4 s | Langvideo |
+| `marken-folie-9x16.mp4` | 1080×1920, 30 fps, 4 s | Reels / Shorts / Stories |
+| `marken-folie-16x9.png`, `-9x16.png` | Standbild | Endzustand |
+| `marken-folie.html` | 16:9 | Animation im Browser ansehen |
+
+**Ablauf:** goldener Schimmer blendet ein → „WERDE“ steigt Buchstabe für
+Buchstabe aus der Unschärfe auf (ab 0,15 s) → „MEISTER“ wird in Gold von links
+nach rechts aufgedeckt (0,75–1,65 s) → „DEINER GEDANKEN“ zieht von weiter
+Laufweite zusammen, die Goldstriche wachsen nach außen (1,3–2,3 s) →
+Glanzlicht läuft über „MEISTER“ (2,1–3,3 s), danach steht die Folie ruhig.
+
+Technik und Voraussetzungen wie bei den CTA-Folien (Playwright + ffmpeg).
+

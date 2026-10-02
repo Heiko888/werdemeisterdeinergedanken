@@ -22,6 +22,7 @@
     "videoskripte-md": "node tools/pdf/videoskripte-markdown.mjs",
     "video-folien": "python3 tools/video/foliensatz.py",
     "video-cta-folie": "node tools/video/cta-folie.mjs",
+    "video-marken-folie": "node tools/video/marken-folie.mjs",
     "brand-assets": "node docs/marketing/brand-assets.mjs",
     "story-overlays": "node tools/marketing/story-overlays.mjs",
     "story-carousels": "node tools/marketing/story-carousels.mjs",

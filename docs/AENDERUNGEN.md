@@ -5,6 +5,21 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-02 – Animierte Marken-Folie „Werde Meister deiner Gedanken“
+
+**Anlass:** Animierte Folie nur mit dem Schriftzug, ohne Logo und Zusatztext.
+Branch `claude/tender-einstein-bdc32y`.
+
+- Neu: `tools/video/marken-folie.mjs` (`npm run video-marken-folie`).
+  Original-Lockup „WERDE MEISTER / — DEINER GEDANKEN —“ (Texte und Farben aus
+  `tools/print/marke.mjs`), Creme-Grund, 4 s, 30 fps.
+- Neu: `docs/video/marken-folie/` mit `marken-folie-9x16.mp4` (1080×1920),
+  `marken-folie-16x9.mp4` (1920×1080), Standbildern (PNG) und HTML.
+- Doku: `docs/generatoren/video-foliensatz.md` (neuer Abschnitt),
+  `docs/generatoren/README.md`.
+
+---
+
 ## 2026-10-02 – CTA-Video-Folien auf 4 Sekunden gekürzt
 
 - `tools/video/cta-folie.mjs`: `DURATION` von 6 auf 4 s (120 Frames bei

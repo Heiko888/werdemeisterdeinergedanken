@@ -16,7 +16,7 @@ Gepflegt vom **Generator-Team** (`.claude/agents/`): `generator-architekt`
 | [`visual-generatoren.md`](./visual-generatoren.md) | Carousels & Reels-Cover (`docs/carousels/`, `docs/reels/`) |
 | [`marketing-und-galerie.md`](./marketing-und-galerie.md) | Marketing-Renderer (`docs/marketing/`) & Vorlagen-Galerie (`tools/vorlagen/`) |
 | [`workshop-generator.md`](./workshop-generator.md) | Workshop-PPTX/PDF (`tools/workshop/`) + Spec-Format |
-| [`video-foliensatz.md`](./video-foliensatz.md) | Video-On-Screen-Folien im Creme-Branding (`tools/video/`), inkl. animierter CTA-Folien YouTube/Instagram (MP4) |
+| [`video-foliensatz.md`](./video-foliensatz.md) | Video-On-Screen-Folien im Creme-Branding (`tools/video/`), inkl. animierter CTA-Folien YouTube/Instagram und Marken-Folie (MP4) |
 | [`content-inventar.md`](./content-inventar.md) | Vollständige Liste aller Inhalte + Zählungen |
 
 ---
@@ -117,6 +117,7 @@ Ausgaben der übrigen Generatoren (`docs/marketing/`, `docs/*/export/`,
 | Workshop | `python3 tools/workshop/build.py <spec>` | `tools/workshop/specs/*.json` | `docs/workshop/<slug>/*` + Spiegel |
 | Video-Folien (Creme) | `npm run video-folien` | `docs/skripte/{stufen-komplett,praxis,vertiefungen-komplett,landing,reels}/*.md` | `docs/video/WMDG-Video-Folien*.pptx` (7 Decks: 16:9-Langvideo · Teaser-Reel · 5 Reel-Serien) |
 | CTA-Folien „Volles Video auf …“ (animiert) | `npm run video-cta-folie [-- youtube\|instagram]` | Texte im Skript (`VARIANTS`) | `docs/video/{youtube,instagram}-folie/*.mp4/.png/.html` (16:9 + 9:16) |
+| Marken-Folie „Werde Meister deiner Gedanken“ (animiert) | `npm run video-marken-folie` | `tools/print/marke.mjs` (`CONTACT.lockup`) | `docs/video/marken-folie/*.mp4/.png/.html` (16:9 + 9:16) |
 | Vorlagen-Galerie | `npm run vorlagen:galerie` | `docs/{marketing,carousels,reels,workshop}/…` | `content/vorlagen/**` + `vorlagen-assets.ts` |
 
 **Ohne npm-Script** (nur direkt startbar): `build-ebook-gedanken.py`,
