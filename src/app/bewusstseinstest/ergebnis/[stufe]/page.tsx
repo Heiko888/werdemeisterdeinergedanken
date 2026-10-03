@@ -19,7 +19,7 @@ import { site } from "@/lib/site";
  * nötig. Inhalt: Name + Kurzbeschreibung der Stufe (src/lib/content.ts),
  * „Was das bedeutet" (Auswertung aus src/lib/consciousness-test.ts), das
  * Gratis-Kapitel als Download (/api/stufe-kapitel/N) und genau EIN primärer
- * CTA (7-Tage-Test der Mitgliedschaft) plus sekundär das Buch – bewusst kein
+ * CTA (kostenloses Erstgespräch – die Mitgliedschaft startet erst demnächst) plus sekundär das Buch – bewusst kein
  * Erstgespräch. Nicht indexieren: die Seite ist ein persönliches Ergebnis.
  */
 
@@ -147,13 +147,13 @@ export default async function ErgebnisPage({
                 Von der Erkenntnis ins <em className="accent">Üben</em>.
               </h2>
               <p className="max-w-xl leading-relaxed text-ink-mid">
-                {test.result.nextStep} Im Mitgliederbereich gehst du genau diesen Schritt
-                – mit einer Übung pro Woche, einem Journal für deinen Satz und einem
-                Begleiter, der nachfragt. Sieben Tage testen, dann entscheidest du.
+                {test.result.nextStep} Wenn du diesen Schritt nicht allein gehen
+                willst, lass uns sprechen: Im kostenlosen Erstgespräch schauen wir
+                gemeinsam, wo du stehst. Der Mitgliederbereich startet demnächst.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <Button href="/mitgliedschaft" variant="accent" size="lg">
-                  7-Tage-Test der Mitgliedschaft
+                <Button href="/kontakt?thema=erstgespraech" variant="accent" size="lg">
+                  Kostenloses Erstgespräch
                   <ArrowRight />
                 </Button>
                 <Button href="/buch" variant="secondary" size="lg">

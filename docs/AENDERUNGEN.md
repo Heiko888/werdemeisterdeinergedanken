@@ -5,6 +5,68 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-03 – Mitgliedschaft auf „Demnächst“, Preise entfernt, Checkout gesperrt
+
+**Anlass:** Die Bezahl-Mitgliedschaft ist noch nicht aktiv. Vor dem Start
+müssen rechtliche Punkte geklärt werden (u. a. AGB, Widerrufsbelehrung,
+Preisangaben, Kündigungsbutton). Bis dahin: keine Preise, kein Kauf, der
+Einstieg läuft über ein kostenloses Erstgespräch. Branch
+`claude/membership-pricing-update-bbpwan`.
+
+**Zentraler Schalter**
+- Neu: `src/lib/membership-launch.ts` mit `MITGLIEDSCHAFT_AKTIV = false` und
+  `ERSTGESPRAECH_HREF = "/kontakt?thema=erstgespraech"`. Bewusst eine
+  Konstante im Code (keine Env-Variable), damit die Mitgliedschaft nur mit
+  einem bewussten Commit freigeschaltet werden kann.
+
+**Sicherheit: Checkout serverseitig gesperrt**
+- `src/app/api/checkout/route.ts`: Solange der Schalter aus ist, wird **keine
+  Stripe-Session** angelegt, auch nicht bei einem direkten POST (z. B. per
+  curl), selbst wenn Stripe-Keys gesetzt sind. Antwort ist immer ein 303 auf
+  das Erstgespräch. Geprüft: `POST /api/checkout` → 303
+  `…/kontakt?thema=erstgespraech`.
+- Der Stripe-Webhook und der Mitgliederbereich (Zugriffsschutz) sind
+  unverändert. Bestehende Konten und Admin-Zugang funktionieren weiter.
+
+**/mitgliedschaft**
+- Alle Preise (49 €/Monat, 490 €/Jahr, „2 Monate gratis“, „jederzeit
+  kündbar“) und alle Kauf-Buttons (`CheckoutButton`) entfernt.
+- „Demnächst“-Badge im Hero und in der Zugangs-Box. Alle CTAs → „Kostenloses
+  Erstgespräch“ (`/kontakt?thema=erstgespraech`).
+- Hinweis bei `?zugang=abo` (Weiterleitung aus dem Mitgliederbereich) sagt
+  jetzt, dass der Bereich demnächst startet. Die Checkout-Hinweise
+  (`?checkout=abgebrochen|fehler`) sind entfallen.
+- Meta-Description erwähnt „startet demnächst“ und das Erstgespräch.
+
+**Kontaktformular**
+- `src/lib/kontakt-themen.ts`: neues Thema `erstgespraech` (Hinweis +
+  vorausgefüllte Nachricht). Das Thema `mitgliedschaft` sagt jetzt
+  „startet demnächst“.
+
+**Weitere Stellen (kein Kauf- oder Test-Versprechen mehr)**
+- `/bewusstseinstest/ergebnis/[stufe]` und `ConsciousnessTest.tsx`:
+  „7-Tage-Test der Mitgliedschaft“ → „Kostenloses Erstgespräch“. Einen
+  7-Tage-Test gibt es nicht, das Versprechen war rechtlich heikel.
+- `/login`: „Jetzt Mitglied werden“ → Hinweis „startet demnächst“ + Link zum
+  Erstgespräch.
+- `/ueber-mich`, `/die-7-stufen`, `/buch`: Mitgliedschaft als „demnächst“
+  gekennzeichnet.
+- `src/lib/sequences.ts` (E-Mail-Folgen Test-Leads und Buchkäufer): Texte und
+  CTAs „7 Tage testen“ → kostenloses Erstgespräch.
+
+**Bewusst unverändert**
+- `src/lib/erstgespraech/phasen.ts` (internes Gesprächsskript im Admin-Cockpit)
+  enthält weiter Preise. Es ist nicht öffentlich, sollte aber vor
+  Erstgesprächen angepasst werden, solange die Mitgliedschaft nicht buchbar ist.
+- `/mitgliedschaft/willkommen`, `CheckoutButton.tsx`, Stripe-Konfiguration:
+  bleiben für den späteren Start erhalten.
+
+**Freischalten später:** Rechtliches klären → Preise und Kauf-Buttons wieder
+einbauen (Git-Historie vor diesem Eintrag) → `MITGLIEDSCHAFT_AKTIV = true` →
+Texte „demnächst“/Erstgespräch an den oben genannten Stellen zurücknehmen.
+
+---
+
 ## 2026-09-29 – Blog-Hero: helle Variante statt Navy-Abdunklung
 
 **Anlass:** Das neue, helle Licht-Motiv im Blog-Hero wirkte unter dem

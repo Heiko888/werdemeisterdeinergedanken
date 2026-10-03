@@ -254,7 +254,7 @@ export default function SevenStagesPage() {
                 <ArrowRight />
               </Button>
               <Button href="/mitgliedschaft" variant="secondary" size="lg">
-                Den ganzen Weg begleitet gehen
+                Mitgliedschaft (demnächst)
               </Button>
               <Button href="/kontakt" variant="secondary" size="lg">
                 Kostenloses Erstgespräch
