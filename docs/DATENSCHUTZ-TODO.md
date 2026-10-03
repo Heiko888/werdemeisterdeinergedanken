@@ -20,13 +20,45 @@ Stand: 2026-10-03 · Grundlage: Code-Durchsicht (`package.json`,
   91522 Ansbach (ohne Link/Telefon/E-Mail – nicht im Projekt hinterlegt).
 - Falsche Querverweise in Punkt 8 (Resend = Punkt 9, Supabase = Punkt 10).
 
+## Am 2026-10-03 ergänzt (zweiter Schritt)
+
+Neue Abschnitte, beschrieben nach dem, was der Code tatsächlich tut:
+7 Meta-Pixel, 8 YouTube-Videos, 13 Stripe, 14 KI-Funktionen (Anthropic).
+Nummerierung und Querverweise angepasst (jetzt 1–17); Cookie-Abschnitt nennt
+den Meta-Pixel und die Cookies, die beim Widerruf gelöscht werden; die
+Supabase-Liste nennt KI-Ergebnisse und Buchbestellungen.
+
+**Noch selbst zu prüfen** (stehen bewusst nicht als Behauptung im Text):
+- Vertragspartner bei Anthropic (Anthropic PBC oder eine EU-Gesellschaft),
+  Grundlage der USA-Übermittlung (z. B. Standardvertragsklauseln, DPF),
+  Aufbewahrungsdauer bei Anthropic, Nutzung der Daten zum Training.
+- Art. 9 DSGVO: Journal-Reflexionen können Gesundheitsangaben enthalten.
+  Klären, ob für den Muster-Spiegel eine ausdrückliche Einwilligung nötig ist
+  (dann Rechtsgrundlage und Text vor dem Button anpassen).
+- Meta-Pixel: gemeinsame Verantwortlichkeit mit Meta (Art. 26 DSGVO) und
+  Grundlage der USA-Übermittlung. Außerdem prüfen, ob die Test-Stufe (1–7)
+  überhaupt an Meta und GA gehen soll (`test_complete` in
+  `ConsciousnessTest.tsx`) – derzeit so im Code und deshalb so beschrieben.
+- ~~YouTube-Vorschaubild auf der Startseite~~ – erledigt 2026-10-03:
+  `MaybeNotYou.tsx` nutzt immer das lokale Cover
+  `public/video-thumbnails/landing/ein-anderer-blickwinkel.png`; vor dem Klick
+  wird nichts mehr von YouTube geladen. Punkt 8 entsprechend angepasst.
+- Stripe: Rolle (eigener Verantwortlicher für Zahlungsdaten), Grundlage der
+  USA-Übermittlung, Aufbewahrungsfristen für Bestellungen in `book_orders`.
+- Datenschutz-Links der Anbieter (Meta, Stripe, Anthropic) einmal aufrufen und
+  auf Aktualität prüfen.
+- Sobald die Mitgliedschaft buchbar ist: Stripe-Abschnitt um das Abo ergänzen.
+- Vor Einschalten von `KI_BEGLEITER_ENABLED` / `KI_READING_ENABLED`:
+  Punkt 14 ergänzen (Begleiter sendet zusätzlich Vorname, Profilwerte,
+  Journal-Auszüge und Gesprächsverlauf).
+
 ## Offen – je Dienst
 
 ### Anthropic API (KI)
 - **Im Code:** `@anthropic-ai/sdk`; Muster-Spiegel (`muster-actions.ts`, aktiv),
   Manipulations-Detektor (`detektor-actions.ts`, aktiv sobald Key gesetzt),
   KI-Begleiter und KI-Reading (per Schalter derzeit **aus**).
-- **In der Erklärung:** **fehlt komplett.**
+- **In der Erklärung:** seit 2026-10-03 Punkt 14 (offene Fragen siehe oben).
 - Prüfen: Welche Daten gehen raus (Journal-Texte, Detektor-Eingaben,
   Profilwerte)? Rechtsgrundlage, Einwilligung vor dem Klick, Anbieter/Sitz,
   Drittlandtransfer, AV-Vertrag/Datenschutzbedingungen, Speicherdauer beim
@@ -36,7 +68,7 @@ Stand: 2026-10-03 · Grundlage: Code-Durchsicht (`package.json`,
 ### Stripe (Zahlungen)
 - **Im Code:** `stripe`; `/api/buch-checkout` (Buchverkauf, aktiv),
   `/api/checkout` (Mitgliedschaft, derzeit gesperrt), `/api/stripe/webhook`.
-- **In der Erklärung:** **fehlt komplett.**
+- **In der Erklärung:** seit 2026-10-03 Punkt 13 (offene Fragen siehe oben).
 - Prüfen: Rolle (eigener Verantwortlicher vs. Auftragsverarbeiter), übermittelte
   Daten (E-Mail, Zahlungsdaten bei Stripe), Rechtsgrundlage, Drittland,
   Aufbewahrung (steuerliche Pflichten).
@@ -77,13 +109,15 @@ Stand: 2026-10-03 · Grundlage: Code-Durchsicht (`package.json`,
 ## Weitere im Code gefundene Dienste (nicht in der Aufgabenliste, aber zu prüfen)
 
 - **Meta-Pixel** (`src/components/analytics/MetaPixel.tsx`): lädt nach
-  Einwilligung, sobald `NEXT_PUBLIC_META_PIXEL_ID` gesetzt ist. **Fehlt in der
-  Erklärung**, der Cookie-Banner deckt ihn laut Code mit ab.
+  Einwilligung, sobald `NEXT_PUBLIC_META_PIXEL_ID` gesetzt ist. Seit
+  2026-10-03 Punkt 7 der Erklärung.
 - **YouTube** (`youtube-nocookie.com`, Vorschaubilder direkt von `i.ytimg.com`)
-  in `VideoEmbed.tsx` / `VideoMessage.tsx`: **fehlt in der Erklärung**. Prüfen,
-  ob Vorschaubilder schon vor dem Klick vom YouTube-Server geladen werden.
+  in `VideoEmbed.tsx` / `VideoMessage.tsx`: seit 2026-10-03 Punkt 8 der
+  Erklärung. Geprüft: Im Mitgliederbereich eigene Vorschaubilder, auf der
+  Startseite seit 2026-10-03 ebenfalls lokales Cover – vor dem Klick kein
+  Kontakt zu YouTube.
 - **Bewusstseinstest-Leads** (`/api/test-lead`): Speicherung von E-Mail und
-  ermittelter Test-Stufe in `ebook_leads`, danach E-Mail-Folge – in Punkt 8 nur
+  ermittelter Test-Stufe in `ebook_leads`, danach E-Mail-Folge – in Punkt 10 nur
   „Newsletter & E-Book“ genannt.
 - **Kontaktformular**: Speicherung in Supabase (`kontakt_anfragen`) zusätzlich
   zur E-Mail – Speicherdauer fehlt.
