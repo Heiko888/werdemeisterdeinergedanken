@@ -5,6 +5,30 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-03 – Datenschutzerklärung: Meta-Pixel, YouTube, Stripe, Anthropic
+
+**Anlass:** Vier tatsächlich eingesetzte Dienste fehlten in
+`src/app/datenschutz/page.tsx`. Beschrieben ist nur, was der Code wirklich
+tut; Vertragsdetails, die nicht im Projekt stehen, sind nicht behauptet,
+sondern in `docs/DATENSCHUTZ-TODO.md` als offen notiert.
+
+- **Neu Punkt 7 Meta-Pixel:** nur nach Einwilligung; übermittelte Ereignisse
+  (Lead, Testabschluss mit Stufe, Checkout-Start, Kauf), Cookies `_fbp`/`_fbc`.
+- **Neu Punkt 8 YouTube-Videos:** youtube-nocookie, Player erst nach Klick.
+  Offen benannt: Das Vorschaubild der Videobotschaft auf der Startseite lädt
+  schon beim Seitenaufruf von `i.ytimg.com`.
+- **Neu Punkt 13 Stripe:** Buchkauf, an Stripe übergebene Daten, in
+  `book_orders` gespeicherte Felder, Rechtsgrundlage.
+- **Neu Punkt 14 KI-Funktionen (Anthropic):** Muster-Spiegel und
+  Manipulations-Detektor (nur auf Klick, ohne Name/E-Mail), was gespeichert
+  wird; Begleiter und Reading als derzeit nicht aktiv genannt.
+- Cookie-Abschnitt nennt Meta-Pixel und die beim Widerruf gelöschten Cookies;
+  Supabase-Liste ergänzt (KI-Ergebnisse, Buchbestellungen).
+- Nummerierung jetzt 1–17, alle Querverweise angepasst.
+- Code unverändert – nur der Text der Datenschutzerklärung und die Doku.
+
+---
+
 ## 2026-10-03 – Produktabgrenzung: Mitgliedschaft als digitale Plattform (Phase 1)
 
 **Anlass:** Außendarstellung und tatsächliche Funktion sollen übereinstimmen:
