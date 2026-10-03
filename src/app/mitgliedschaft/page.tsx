@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { CheckoutButton } from "@/components/membership/CheckoutButton";
+import { ERSTGESPRAECH_HREF } from "@/lib/membership-launch";
 import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { stages, testimonials, faqs } from "@/lib/content";
 import { practices } from "@/lib/practices";
@@ -16,29 +16,13 @@ import heroBild from "../../../public/mitgliedschaft-hero.webp";
 export const metadata: Metadata = {
   title: "Mitgliedschaft",
   description:
-    "Der Mitgliederbereich: ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System, das mit dir wächst. Vom Autopilot zur Meisterschaft.",
+    "Der Mitgliederbereich startet demnächst: ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System, das mit dir wächst. Der Einstieg läuft über ein kostenloses Erstgespräch.",
   alternates: { canonical: "/mitgliedschaft" },
 };
 
-// Preis-Platzhalter – vor dem Livegang durch das echte Modell ersetzen.
-const PLANS = {
-  monat: {
-    plan: "monat" as const,
-    label: "Monatlich",
-    price: "49 €",
-    per: "/ Monat",
-    note: "Monatlich kündbar",
-  },
-  jahr: {
-    plan: "jahr" as const,
-    label: "Jährlich",
-    price: "490 €",
-    per: "/ Jahr",
-    note: "2 Monate gratis · ≈ 40,83 €/Monat",
-  },
-};
-const PRICE = PLANS.monat.price;
-const PRICE_PER = PLANS.monat.per;
+// Die Mitgliedschaft ist noch nicht buchbar (MITGLIEDSCHAFT_AKTIV in
+// src/lib/membership-launch.ts). Deshalb hier bewusst keine Preise und keine
+// Kauf-Buttons – alle Wege führen ins kostenlose Erstgespräch.
 
 const features = [
   ["Geführte Videos", "Zu jeder Stufe ein klarer, ruhiger Impuls zum Mitgehen."],
@@ -86,28 +70,17 @@ function DarkSection({
 const NOTICES: Record<string, { tone: "info" | "warn"; text: string }> = {
   abo: {
     tone: "info",
-    text: "Für den Mitgliederbereich brauchst du eine aktive Mitgliedschaft. Schließe sie hier in einer Minute ab – dein Zugang wird sofort freigeschaltet.",
-  },
-  abgebrochen: {
-    tone: "info",
-    text: "Der Checkout wurde abgebrochen – kein Problem. Du kannst jederzeit fortfahren, wenn du bereit bist.",
-  },
-  fehler: {
-    tone: "warn",
-    text: "Beim Checkout ist leider etwas schiefgelaufen. Bitte versuch es erneut – oder melde dich über die Kontaktseite, dann kümmern wir uns persönlich.",
+    text: "Der Mitgliederbereich ist noch nicht geöffnet – er startet demnächst. Wenn du jetzt schon begleitet werden möchtest, vereinbare ein kostenloses Erstgespräch.",
   },
 };
 
 export default async function MitgliedschaftPage({
   searchParams,
 }: {
-  searchParams: Promise<{ zugang?: string; checkout?: string }>;
+  searchParams: Promise<{ zugang?: string }>;
 }) {
-  const { zugang, checkout } = await searchParams;
-  const notice =
-    (zugang === "abo" && NOTICES.abo) ||
-    (checkout && NOTICES[checkout]) ||
-    null;
+  const { zugang } = await searchParams;
+  const notice = (zugang === "abo" && NOTICES.abo) || null;
 
   return (
     <>
@@ -162,7 +135,12 @@ export default async function MitgliedschaftPage({
         />
         <Container className="relative z-10">
           <div className="max-w-xl pb-16 pt-10 [text-shadow:0_1px_18px_rgba(8,16,42,0.6)] sm:pb-20 sm:pt-12 lg:py-28">
-            <Eyebrow>Der Mitgliederbereich</Eyebrow>
+            <div className="flex flex-wrap items-center gap-3">
+              <Eyebrow>Der Mitgliederbereich</Eyebrow>
+              <span className="rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950 [text-shadow:none]">
+                Demnächst
+              </span>
+            </div>
             <h1 className="mt-4 text-[2.15rem] font-medium leading-[1.03] text-cream sm:text-6xl">
               Vom Autopilot zur <em className="accent">Meisterschaft</em>
             </h1>
@@ -171,9 +149,9 @@ export default async function MitgliedschaftPage({
               das mit dir wächst. Raus aus alten Mustern, rein in echte innere Klarheit.
             </p>
             <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap">
-              <CheckoutButton size="lg" className="w-full sm:w-auto">
-                Mitglied werden
-              </CheckoutButton>
+              <Button href={ERSTGESPRAECH_HREF} size="lg" className="w-full sm:w-auto">
+                Kostenloses Erstgespräch
+              </Button>
               <Button
                 href="/bewusstseinstest"
                 variant="secondary"
@@ -184,8 +162,8 @@ export default async function MitgliedschaftPage({
               </Button>
             </div>
             <p className="mt-4 text-sm text-cream/80">
-              Ab {PRICE} {PRICE_PER} · oder {PLANS.jahr.price} {PLANS.jahr.per}{" "}
-              <span className="text-cream/60">(2 Monate gratis)</span> · jederzeit kündbar
+              Die Mitgliedschaft startet demnächst. Bis dahin beginnt der Weg mit
+              einem kostenlosen, unverbindlichen Erstgespräch.
             </p>
             <p className="mt-6 flex items-center gap-2 text-sm text-cream/75">
               <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
@@ -380,46 +358,19 @@ export default async function MitgliedschaftPage({
               ))}
             </ul>
 
-            {/* Zwei Abo-Optionen: Jahr (hervorgehoben) + Monat */}
-            <div className="mt-7 flex flex-col gap-3">
-              <div className="relative rounded-2xl border border-gold-500/45 bg-gold-500/12 p-5">
-                <span className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950">
-                  2 Monate gratis
-                </span>
-                <div className="text-xs font-bold uppercase tracking-[0.14em] text-cream/60">
-                  {PLANS.jahr.label}
-                </div>
-                <div className="mt-1 font-display text-4xl font-medium text-cream">
-                  {PLANS.jahr.price}
-                  <span className="ml-1 font-sans text-base font-medium text-cream/60">
-                    {PLANS.jahr.per}
-                  </span>
-                </div>
-                <div className="mt-1 text-sm text-cream/60">{PLANS.jahr.note}</div>
-                <CheckoutButton plan="jahr" size="lg" className="mt-4 w-full">
-                  Jährlich Mitglied werden
-                </CheckoutButton>
-              </div>
-
-              <div className="rounded-2xl border border-cream/15 p-5">
-                <div className="flex items-baseline justify-between">
-                  <div>
-                    <div className="text-xs font-bold uppercase tracking-[0.14em] text-cream/60">
-                      {PLANS.monat.label}
-                    </div>
-                    <div className="mt-1 font-display text-3xl font-medium text-cream">
-                      {PLANS.monat.price}
-                      <span className="ml-1 font-sans text-sm font-medium text-cream/60">
-                        {PLANS.monat.per}
-                      </span>
-                    </div>
-                  </div>
-                  <span className="text-sm text-cream/50">{PLANS.monat.note}</span>
-                </div>
-                <CheckoutButton plan="monat" variant="secondary" size="lg" className="mt-4 w-full">
-                  Monatlich Mitglied werden
-                </CheckoutButton>
-              </div>
+            {/* Noch nicht buchbar: statt Preisen der Hinweis „Demnächst“ */}
+            <div className="mt-7 rounded-2xl border border-gold-500/45 bg-gold-500/12 p-5">
+              <span className="inline-block rounded-full bg-gradient-to-r from-gold-400 to-gold-500 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-navy-950">
+                Demnächst
+              </span>
+              <p className="mt-3 text-[0.98rem] leading-relaxed text-cream/85">
+                Der Mitgliederbereich öffnet in Kürze. Der Einstieg läuft über ein
+                kostenloses Erstgespräch – dort schauen wir gemeinsam, wo du stehst
+                und welcher Weg zu dir passt.
+              </p>
+              <Button href={ERSTGESPRAECH_HREF} size="lg" className="mt-4 w-full">
+                Kostenloses Erstgespräch vereinbaren
+              </Button>
             </div>
           </div>
           <div>
@@ -495,7 +446,9 @@ export default async function MitgliedschaftPage({
           Der erste Schritt ist nicht ändern, sondern sehen. Fang heute an.
         </p>
         <div className="mt-8 flex justify-center">
-          <CheckoutButton size="lg">Jetzt Mitglied werden</CheckoutButton>
+          <Button href={ERSTGESPRAECH_HREF} size="lg">
+            Kostenloses Erstgespräch
+          </Button>
         </div>
         <p className="text-gradient-leaf mt-7 text-sm font-semibold tracking-wide">
           www.werdemeisterdeinergedanken.de

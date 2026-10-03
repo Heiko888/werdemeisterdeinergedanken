@@ -1,5 +1,10 @@
 # Bezahl-Mitgliedschaft mit Stripe
 
+> **Stand 2026-10-03: Mitgliedschaft gesperrt („Demnächst“).** Der Checkout
+> legt keine Stripe-Session an, solange `MITGLIEDSCHAFT_AKTIV` in
+> `src/lib/membership-launch.ts` auf `false` steht – auch dann nicht, wenn alle
+> Stripe-Variablen gesetzt sind. Details: `docs/AENDERUNGEN.md`.
+
 Die „Mitglied werden"-Buttons auf `/mitgliedschaft` starten einen echten
 Stripe-Abo-Checkout. Nach erfolgreicher Zahlung legt ein Webhook den Zugang an
 und schickt der Kundin/dem Kunden eine Mail zum Setzen des Passworts.

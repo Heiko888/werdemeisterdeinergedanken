@@ -72,9 +72,9 @@ const nextSteps = [
   },
   {
     href: "/mitgliedschaft",
-    eyebrow: "Geführter Weg",
+    eyebrow: "Demnächst",
     title: "Mitgliedschaft",
-    text: "Alle 7 Stufen mit Videos und Praxis – Schritt für Schritt, in deinem Tempo.",
+    text: "Alle 7 Stufen mit Videos und Praxis – startet demnächst. Bis dahin über ein kostenloses Erstgespräch.",
   },
 ];
 

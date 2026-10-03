@@ -55,15 +55,15 @@ export default async function LoginPage({
             />
             {!ALLOW_SELF_REGISTRATION && (
               <p className="text-sm leading-relaxed text-ink-mid">
-                Noch kein Zugang?{" "}
+                Noch kein Zugang? Die Mitgliedschaft startet demnächst – bis
+                dahin geht es los mit einem{" "}
                 <Link
-                  href="/mitgliedschaft"
+                  href="/kontakt?thema=erstgespraech"
                   className="font-semibold text-accent underline-offset-4 hover:underline"
                 >
-                  Jetzt Mitglied werden
-                </Link>{" "}
-                – nach der Buchung richtest du dein Passwort ein und bist sofort
-                drin.
+                  kostenlosen Erstgespräch
+                </Link>
+                .
               </p>
             )}
             {!ALLOW_SELF_REGISTRATION && (

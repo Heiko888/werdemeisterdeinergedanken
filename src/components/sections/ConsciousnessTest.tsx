@@ -327,8 +327,8 @@ export function ConsciousnessTest() {
                     Dein Gratis-Kapitel zu Stufe {resultStage.nr}
                     <ArrowRight />
                   </Button>
-                  <Button href="/mitgliedschaft" variant="secondary">
-                    Mitgliedschaft 7 Tage testen
+                  <Button href="/kontakt?thema=erstgespraech" variant="secondary">
+                    Kostenloses Erstgespräch
                   </Button>
                 </>
               )}

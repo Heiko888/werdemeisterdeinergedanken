@@ -3,6 +3,7 @@ import { getStripe, STRIPE_PRICE_ID, priceIdForPlan, type Plan } from "@/lib/str
 import { createClient } from "@/lib/supabase/server";
 import { site } from "@/lib/site";
 import { pickUtm, type UtmParams } from "@/lib/utm";
+import { ERSTGESPRAECH_HREF, MITGLIEDSCHAFT_AKTIV } from "@/lib/membership-launch";
 
 export const runtime = "nodejs";
 
@@ -27,6 +28,9 @@ function baseUrl(request: Request): string {
  * Startet den Stripe-Checkout für die Abo-Mitgliedschaft.
  *
  * Ablauf:
+ *   0. Ist die Mitgliedschaft noch nicht freigeschaltet (MITGLIEDSCHAFT_AKTIV),
+ *      wird nie eine Stripe-Session angelegt – auch nicht bei direktem POST –,
+ *      sondern aufs kostenlose Erstgespräch umgeleitet.
  *   1. Ist Stripe nicht eingerichtet (kein Key/Preis) → sanfter Fallback aufs
  *      Kontaktformular, damit der Button nie ins Leere läuft.
  *   2. Eine bestehende Anmeldung wird – falls vorhanden – mit der Checkout-
@@ -37,6 +41,11 @@ function baseUrl(request: Request): string {
  */
 export async function POST(request: Request) {
   const origin = baseUrl(request);
+
+  if (!MITGLIEDSCHAFT_AKTIV) {
+    return NextResponse.redirect(`${origin}${ERSTGESPRAECH_HREF}`, 303);
+  }
+
   const stripe = getStripe();
 
   if (!stripe || !STRIPE_PRICE_ID) {

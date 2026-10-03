@@ -804,7 +804,7 @@ export default async function BuchPage({
               <ArrowRight />
             </Button>
             <p className="mt-5 text-sm text-cream/55">
-              Du willst tiefer gehen? Entdecke die{" "}
+              Du willst tiefer gehen? Demnächst startet die{" "}
               <Link href="/mitgliedschaft" className="text-gradient-leaf font-medium">
                 Mitgliedschaft
               </Link>{" "}
