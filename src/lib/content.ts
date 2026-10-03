@@ -179,7 +179,7 @@ export const expectations: Feature[] = [
   {
     icon: "shield",
     title: "Ein sicherer Raum",
-    text: "Begleitung ohne Wertung. Ein Ort, an dem du ehrlich hinschauen und wirklich wachsen darfst.",
+    text: "Ohne Wertung, ohne Prüfung. Ein Ort, an dem du ehrlich hinschauen und in deinem Tempo wachsen darfst.",
   },
 ];
 
@@ -232,6 +232,6 @@ export const faqs: Faq[] = [
   {
     question: "Wie fange ich am besten an?",
     answer:
-      "Sichere dir das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ oder schreib mir direkt. Von dort finden wir gemeinsam den passenden nächsten Schritt.",
+      "Sichere dir das kostenlose E-Book „Die 7 Stufen der Bewusstseinsentwicklung“ oder mach den kostenlosen Bewusstseinstest. Beides gibt dir eine erste Orientierung für deinen eigenen nächsten Schritt.",
   },
 ];

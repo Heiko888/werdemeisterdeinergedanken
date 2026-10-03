@@ -321,12 +321,12 @@ export default async function StagePage({
           {/* Kontakt-Hinweis */}
           <div className="flex flex-col items-start gap-4 rounded-2xl border border-ink/10 bg-white p-8 shadow-card">
             <h2 className="font-display text-xl italic text-ink">
-              Fragen zu dieser Stufe?
+              Fragen zum Mitgliederbereich?
             </h2>
             <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
               {begleiterVerfuegbar
-                ? "Wenn etwas in dir aufkommt oder du nicht weiterweißt: Dein Begleiter kennt diese Stufe und ist sofort da. Und wenn du lieber mir schreibst – jederzeit."
-                : "Wenn etwas in dir aufkommt oder du nicht weiterweißt – ich bin jederzeit für dich da. Schreib mir einfach."}
+                ? "Dein Begleiter kennt die Inhalte dieser Stufe und hilft dir, dich darin zurechtzufinden. Bei technischen oder organisatorischen Fragen erreichst du mich über das Kontaktformular."
+                : "Bei technischen oder organisatorischen Fragen zum Mitgliederbereich erreichst du mich über das Kontaktformular."}
             </p>
             <div className="flex flex-wrap items-center gap-3">
               {begleiterVerfuegbar && (

@@ -26,6 +26,8 @@ Im System-Prompt (`src/lib/begleiter-prompt.ts`) stehen harte Grenzen:
 - keine Therapie, keine Beratung, keine Diagnosen, keine Deutung von Symptomen,
 - keine medizinischen, juristischen oder finanziellen Ratschläge,
 - keine erfundenen Titel, Pfade, Studien oder Zitate,
+- keine Prüfung, Benotung oder Richtig/Falsch-Bewertung von Antworten der
+  Mitglieder (siehe `docs/RECHTLICHE-PRODUKTABGRENZUNG.md`),
 - keine Heilsversprechen und kein esoterisches Übertreiben.
 
 Bei Hinweisen auf eine **akute Krise** (Suizidgedanken, Selbstverletzung, schwere
@@ -36,16 +38,34 @@ Hinweis steht dauerhaft unter dem Gespräch auf der Seite.
 
 ---
 
+## Status: derzeit abgeschaltet (Feature-Flag)
+
+Seit 2026-10-03 hängt der Begleiter zusätzlich am serverseitigen Schalter
+**`KI_BEGLEITER_ENABLED`** (Standard: aus, `src/lib/ki-features.ts`). Nur der
+Wert `true` schaltet ihn ein. Solange er aus ist:
+
+- kein schwebender Launcher, kein Dashboard-Link, kein Hinweis auf Stufen-,
+  Profil- oder Soforthilfe-Seite (alles hängt an `isBegleiterConfigured()`),
+- `/mitglieder/begleiter` leitet still nach `/mitglieder` um (keine tote Seite),
+- `POST /mitglieder/begleiter/antwort` antwortet mit 404 `not_configured`.
+
+Der Code, die Tabelle `begleiter_messages` und vorhandene Verläufe bleiben
+unverändert erhalten. Dasselbe gilt für das KI-Reading zum Gedankenprofil mit
+dem Schalter **`KI_READING_ENABLED`**. Hintergrund:
+`docs/RECHTLICHE-PRODUKTABGRENZUNG.md`.
+
 ## Einrichten
 
+0. **`KI_BEGLEITER_ENABLED=true`** setzen – erst nach Prüfung gegen
+   `docs/RECHTLICHE-PRODUKTABGRENZUNG.md`.
 1. **`ANTHROPIC_API_KEY`** setzen (lokal in `.env.local`, in Produktion in den
    Umgebungsvariablen). Derselbe Key versorgt auch das KI-Reading zum
    Gedankenprofil. Niemals mit `NEXT_PUBLIC_` prefixen.
 2. **Migration einspielen:** `supabase/migrations/0009_begleiter_chat.sql`
    (Tabelle `public.begleiter_messages` mit Row-Level-Security).
 
-Fehlt eines von beidem, bleibt die Seite erreichbar und erklärt ruhig, dass der
-Begleiter noch nicht eingerichtet ist. Der Link im Mitglieder-Dashboard wird
+Ist der Schalter an, fehlt aber Key oder Migration, bleibt die Seite erreichbar
+und erklärt ruhig, dass der Begleiter noch nicht eingerichtet ist. Der Link im Mitglieder-Dashboard wird
 dann gar nicht erst angezeigt – es entsteht also kein toter Weg.
 
 ---

@@ -112,9 +112,10 @@ export default async function GedankenprofilPage() {
             Mein <em className="accent">Gedankenprofil</em>
           </h1>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-            So verteilen sich deine sieben Stufen aus dem Bewusstseinstest – und
-            wo es sich lohnt, noch einmal dranzugehen. Ein ehrlicher Spiegel, der
-            mit jedem neuen Test schärfer wird.
+            So verteilen sich deine sieben Stufen laut deiner eigenen
+            Selbsteinschätzung im Bewusstseinstest – und welche Bereiche du dir
+            näher ansehen könntest. Eine Orientierung aus deinen Antworten, keine
+            Diagnose und keine Bewertung.
           </p>
           {profil.hasTest && profil.summary && (
             <p className="max-w-xl rounded-2xl border border-gold-400/30 bg-white/10 px-6 py-4 text-[1.02rem] leading-relaxed text-ink-mid shadow-card backdrop-blur-sm">
@@ -174,8 +175,8 @@ export default async function GedankenprofilPage() {
                 </h2>
                 <p className="mt-2 text-[1rem] leading-relaxed text-ink-mid">
                   Der Balken zeigt, wie ausgeprägt jede Stufe laut deiner
-                  Selbsteinschätzung gerade ist. Ein Haken bedeutet: von dir als
-                  abgeschlossen markiert.
+                  Selbsteinschätzung gerade ist. Ein Haken bedeutet: von dir
+                  markiert, dass du mit dieser Stufe gearbeitet hast.
                 </p>
 
                 <ul className="mt-8 flex flex-col gap-4">
@@ -211,7 +212,7 @@ export default async function GedankenprofilPage() {
                               {p.done && (
                                 <span
                                   className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-gold-400 to-gold-500 text-[0.6rem] text-navy-950"
-                                  title="Abgeschlossen"
+                                  title="Mit dieser Stufe gearbeitet"
                                 >
                                   <Check />
                                 </span>
@@ -247,20 +248,20 @@ export default async function GedankenprofilPage() {
             </Container>
           </section>
 
-          {/* Bedarfsanalyse – wo noch dranzugehen ist */}
+          {/* Orientierung – Bereiche zum Näher-Ansehen (intern: bedarf) */}
           <section className="border-t border-ink/10 bg-white/60 py-14 sm:py-20">
             <Container>
               <div className="mx-auto max-w-2xl">
                 <span className={memberEyebrow}>
-                  Bedarfsanalyse
+                  Orientierung aus deinen Antworten
                 </span>
                 <h2 className="mt-1 font-display text-2xl font-medium text-ink">
-                  Wo noch Bedarf ist
+                  Bereiche, die du dir näher ansehen könntest
                 </h2>
                 <p className="mt-2 text-[1rem] leading-relaxed text-ink-mid">
                   {profil.bedarf.length > 0
-                    ? "Diese Stufen laden dich gerade am meisten ein, noch einmal dranzugehen – priorisiert nach dem, was dein Profil zeigt."
-                    : "Gerade zeigt sich kein dringender Bedarf. Ein guter Moment, das Erreichte in der täglichen Praxis zu vertiefen und den Test in ein paar Wochen zu wiederholen."}
+                    ? "Diese Stufen könnten dich gerade am meisten einladen, noch einmal hinzuschauen – sortiert nach dem, was deine Antworten zeigen. Du entscheidest selbst, womit du weitermachst."
+                    : "Aus deinen Antworten ergibt sich gerade kein besonderer Schwerpunkt. Ein guter Moment, in der täglichen Praxis zu vertiefen, was dir guttut, und den Test in ein paar Wochen zu wiederholen."}
                 </p>
 
                 {profil.bedarf.length > 0 && (
@@ -290,7 +291,7 @@ export default async function GedankenprofilPage() {
 
                         <div className="flex flex-col gap-1.5">
                           <span className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent">
-                            Dein nächster Schritt
+                            Ein möglicher nächster Schritt
                           </span>
                           <p className="leading-relaxed text-ink-mid">
                             {b.suggestion}
@@ -344,7 +345,7 @@ export default async function GedankenprofilPage() {
 
                 <p className="mt-8 text-xs leading-relaxed text-ink-muted">
                   Dieses Profil fasst ausschließlich deine eigenen Antworten aus
-                  dem Bewusstseinstest und deinen markierten Fortschritt zusammen
+                  dem Bewusstseinstest und deinen markierten Bearbeitungsstand zusammen
                   – keine Bewertung, keine Vorhersage. Es wächst mit dem, was du
                   einbringst.
                 </p>

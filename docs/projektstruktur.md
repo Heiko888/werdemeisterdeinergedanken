@@ -82,8 +82,9 @@ sofern nicht als *noindex* markiert.
 | `/datenschutz` | `app/datenschutz/page.tsx` | DSGVO-Hinweise (Footer) *(noindex)* |
 
 **Hauptnavigation:** Die 7 Stufen · Bewusstseinstest · Über mich · Angebot
-(`/#angebot`) · Blog · Kontakt — plus „Mitglieder" und CTA „Kostenloses
-Erstgespräch" (→ `/kontakt`).
+(`/#angebot`) · Blog · Kontakt — plus „Mitglieder" und der neutrale Button
+„Kontakt" (→ `/kontakt`). Seit 2026-10-03 kein „Erstgespräch"-CTA mehr, siehe
+`docs/RECHTLICHE-PRODUKTABGRENZUNG.md`.
 
 ---
 

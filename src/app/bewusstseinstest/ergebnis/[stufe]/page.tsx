@@ -19,8 +19,9 @@ import { site } from "@/lib/site";
  * nötig. Inhalt: Name + Kurzbeschreibung der Stufe (src/lib/content.ts),
  * „Was das bedeutet" (Auswertung aus src/lib/consciousness-test.ts), das
  * Gratis-Kapitel als Download (/api/stufe-kapitel/N) und genau EIN primärer
- * CTA (kostenloses Erstgespräch – die Mitgliedschaft startet erst demnächst) plus sekundär das Buch – bewusst kein
- * Erstgespräch. Nicht indexieren: die Seite ist ein persönliches Ergebnis.
+ * CTA (Mitgliedschaft ansehen – sie startet erst demnächst) plus sekundär das
+ * Buch. Bewusst kein 1:1-Gespräch als Einstieg (docs/RECHTLICHE-PRODUKTABGRENZUNG.md).
+ * Nicht indexieren: die Seite ist ein persönliches Ergebnis.
  */
 
 type Params = { stufe: string };
@@ -147,13 +148,13 @@ export default async function ErgebnisPage({
                 Von der Erkenntnis ins <em className="accent">Üben</em>.
               </h2>
               <p className="max-w-xl leading-relaxed text-ink-mid">
-                {test.result.nextStep} Wenn du diesen Schritt nicht allein gehen
-                willst, lass uns sprechen: Im kostenlosen Erstgespräch schauen wir
-                gemeinsam, wo du stehst. Der Mitgliederbereich startet demnächst.
+                {test.result.nextStep} Demnächst startet die digitale
+                Mitgliederplattform: Videos, Wissen, Praxisimpulse und Reflexion
+                zu allen sieben Stufen – eigenständig in deinem Tempo.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <Button href="/kontakt?thema=erstgespraech" variant="accent" size="lg">
-                  Kostenloses Erstgespräch
+                <Button href="/mitgliedschaft" variant="accent" size="lg">
+                  Mitgliedschaft ansehen
                   <ArrowRight />
                 </Button>
                 <Button href="/buch" variant="secondary" size="lg">
@@ -161,6 +162,8 @@ export default async function ErgebnisPage({
                 </Button>
               </div>
               <p className="text-sm text-ink-muted">
+                Dieses Ergebnis ist eine persönliche Selbsteinschätzung aus deinen
+                eigenen Antworten – keine Diagnose und kein Leistungstest.
                 Ergebnis nicht mehr stimmig?{" "}
                 <a
                   href="/bewusstseinstest"

@@ -53,11 +53,13 @@ function renderInline(text: string): ReactNode {
 type Cta = { title: string; body: string; href: string; label: string };
 
 const CTA_BY_VARIANT: Record<CtaVariant, Cta> = {
+  // Schlüssel aus Kompatibilitätsgründen beibehalten (CtaVariant in lib/blog.ts),
+  // inhaltlich aber kein 1:1-Gespräch mehr, sondern die Selbsteinschätzung.
   erstgespraech: {
     title: "Bereit, es selbst zu erleben?",
-    body: "Wenn dich dieser Impuls angesprochen hat, lass uns unverbindlich sprechen – und herausfinden, wo du gerade stehst.",
-    href: "/kontakt",
-    label: "Kostenloses Erstgespräch",
+    body: "Wenn dich dieser Impuls angesprochen hat: Der kostenlose Bewusstseinstest gibt dir in wenigen Minuten eine Orientierung aus deinen eigenen Antworten.",
+    href: "/bewusstseinstest",
+    label: "Bewusstseinstest starten",
   },
   ebook: {
     title: "Der kompakte Einstieg – kostenlos",

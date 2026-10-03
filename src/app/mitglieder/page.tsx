@@ -345,7 +345,7 @@ export default async function MembersPage() {
             <div className="flex items-baseline justify-between text-sm text-ink-mid">
               <span>
                 {allStagesDone
-                  ? "Alle Stufen abgeschlossen"
+                  ? "Mit allen Stufen gearbeitet"
                   : `Stufe ${currentOrdinal} von ${stages.length}`}
               </span>
               <span className="tabular-nums text-ink-muted">
@@ -580,7 +580,7 @@ export default async function MembersPage() {
               </h2>
             </div>
             <span className="shrink-0 text-sm text-ink-muted">
-              {completedCount} / {stages.length} abgeschlossen
+              {completedCount} / {stages.length} als gemacht markiert
             </span>
           </div>
 

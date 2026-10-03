@@ -212,7 +212,7 @@ export function ConsciousnessTest() {
             Dein Ergebnis
           </span>
           <p className="text-sm text-ink-muted">
-            Deine aktuelle Hauptstufe
+            Schwerpunkt deiner aktuellen Selbsteinschätzung
           </p>
           <h2 className="font-display text-[2rem] font-medium leading-tight text-ink sm:text-4xl">
             Stufe {resultStage.nr}:{" "}
@@ -226,8 +226,12 @@ export function ConsciousnessTest() {
         {/* Profil über alle Stufen */}
         <Card className="sm:p-8">
           <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-ink-muted">
-            Dein Profil
+            Deine Standortübersicht
           </h3>
+          <p className="mt-2 text-sm leading-relaxed text-ink-mid">
+            Orientierung aus deinen Antworten: Die Balken zeigen, wie stark du
+            die Aussagen zu jeder Stufe für dich selbst bejaht hast.
+          </p>
           <ul className="mt-5 flex flex-col gap-3">
             {testStages.map((stage) => {
               const pct = Math.round(
@@ -280,7 +284,7 @@ export function ConsciousnessTest() {
           {[
             { label: "Deine Herausforderung", text: resultStage.result.challenge },
             { label: "Dein Potenzial", text: resultStage.result.potential },
-            { label: "Dein nächster Schritt", text: resultStage.result.nextStep },
+            { label: "Ein möglicher nächster Schritt", text: resultStage.result.nextStep },
           ].map((block) => (
             <div key={block.label} className="flex flex-col gap-1.5">
               <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-accent">
@@ -292,7 +296,7 @@ export function ConsciousnessTest() {
 
           <div className="flex flex-col items-start gap-4 rounded-2xl border border-accent/25 bg-white p-8 shadow-card">
             <h3 className="font-display text-xl italic text-ink">
-              Meine Empfehlung
+              Eine Anregung für dich
             </h3>
             <p className="max-w-xl leading-relaxed text-ink-mid">
               {resultStage.result.recommendation}
@@ -300,7 +304,8 @@ export function ConsciousnessTest() {
             {memberSaved && (
               <p className="max-w-xl text-sm leading-relaxed text-accent">
                 Dein Ergebnis ist in deinem Bereich gespeichert – dein
-                Gedankenprofil zeigt dir jetzt, wo noch Bedarf ist.
+                Gedankenprofil zeigt dir jetzt Bereiche, die du dir näher
+                ansehen könntest.
               </p>
             )}
             {!memberSaved && leadMode === "confirm" && (
@@ -327,8 +332,8 @@ export function ConsciousnessTest() {
                     Dein Gratis-Kapitel zu Stufe {resultStage.nr}
                     <ArrowRight />
                   </Button>
-                  <Button href="/kontakt?thema=erstgespraech" variant="secondary">
-                    Kostenloses Erstgespräch
+                  <Button href="/buch" variant="secondary">
+                    Das Buch
                   </Button>
                 </>
               )}
@@ -348,6 +353,13 @@ export function ConsciousnessTest() {
               </p>
             )}
           </div>
+
+          <p className="text-center text-xs leading-relaxed text-ink-muted">
+            Dieses Ergebnis ist eine persönliche Selbsteinschätzung und beruht
+            ausschließlich auf deinen eigenen Antworten. Es ist keine
+            psychologische Diagnostik und kein Leistungs- oder Wissenstest –
+            es gibt kein Richtig oder Falsch.
+          </p>
 
           <button
             type="button"

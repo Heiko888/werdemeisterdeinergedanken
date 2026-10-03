@@ -90,7 +90,7 @@ export default function PrivacyPage() {
                 Anmeldung im Mitgliederbereich eingeloggt hält (gültig bis zum
                 Logout bzw. bis zum Ablauf der Sitzung). Rechtsgrundlage ist
                 Art. 6 Abs. 1 lit. f DSGVO in Verbindung mit § 25 Abs. 2 Nr. 2
-                TTDSG (unbedingt erforderliche Cookies).
+                TDDDG (unbedingt erforderliche Cookies).
               </p>
               <p>
                 Darüber hinaus setzen wir zur Reichweitenmessung Google Analytics
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
                 im Seitenfuß ändern oder widerrufen; die Rechtmäßigkeit der bis
                 zum Widerruf erfolgten Verarbeitung bleibt unberührt.
                 Rechtsgrundlage für die Analyse-Cookies ist Art. 6 Abs. 1 lit. a
-                DSGVO (Einwilligung) in Verbindung mit § 25 Abs. 1 TTDSG.
+                DSGVO (Einwilligung) in Verbindung mit § 25 Abs. 1 TDDDG.
               </p>
 
               <h2>6. Google Analytics</h2>
@@ -160,8 +160,8 @@ export default function PrivacyPage() {
                 wird deine E-Mail-Adresse sowie der Zeitpunkt der Anmeldung (zur
                 Dokumentation der Einwilligung). Du kannst deine Einwilligung
                 jederzeit über den Abmeldelink in jeder Mail widerrufen. Der
-                Versand erfolgt über Resend (siehe Punkt 8), die Speicherung der
-                Anmeldedaten über Supabase (siehe Punkt 9). Rechtsgrundlage ist
+                Versand erfolgt über Resend (siehe Punkt 9), die Speicherung der
+                Anmeldedaten über Supabase (siehe Punkt 10). Rechtsgrundlage ist
                 Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
               </p>
 
@@ -197,8 +197,8 @@ export default function PrivacyPage() {
                 <li>E-Mail-Adresse und Passwort (als Hash)</li>
                 <li>Profilangaben (z. B. Name)</li>
                 <li>
-                  dein Lernfortschritt (abgeschlossene Stufen) und dein Ergebnis
-                  aus dem Bewusstseinstest
+                  dein Nutzungsfortschritt (z. B. als gemacht markierte Stufen
+                  und Übungen) und dein Ergebnis aus dem Bewusstseinstest
                 </li>
                 <li>deine persönlichen Notizen und Reflexionen</li>
                 <li>dein Opt-in-Status für die E-Mail-Impulse</li>
@@ -246,18 +246,11 @@ export default function PrivacyPage() {
                 Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu
                 beschweren, z. B.:
                 <br />
-                Der Bayerische Landesbeauftragte für den Datenschutz
+                Bayerisches Landesamt für Datenschutzaufsicht
                 <br />
-                Wagmüllerstraße 18, 80538 München
+                Promenade 18
                 <br />
-                <a
-                  href="https://www.datenschutz-bayern.de"
-                  className="break-all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  www.datenschutz-bayern.de
-                </a>
+                91522 Ansbach
               </p>
 
               <h2>13. Aktualität</h2>

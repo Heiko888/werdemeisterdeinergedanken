@@ -30,6 +30,7 @@ import {
   type BegleiterError,
 } from "@/lib/begleiter";
 import { KI_MODELL_ERSATZ, istKapazitaetsfehler } from "@/lib/ki-modell";
+import { isKiBegleiterEnabled } from "@/lib/ki-features";
 
 /**
  * KI-Begleiter – Antwort erzeugen (gestreamt).
@@ -85,6 +86,8 @@ function rueckkehrStreak(tage: string[]): number {
 }
 
 export async function POST(request: Request): Promise<Response> {
+  // Schalter KI_BEGLEITER_ENABLED (Standard: aus) – auch direkte POSTs prüfen.
+  if (!isKiBegleiterEnabled()) return fail("not_configured", 404);
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey || !isSupabaseConfigured) return fail("not_configured", 503);
 

@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { ERSTGESPRAECH_HREF } from "@/lib/membership-launch";
+import { MITGLIEDSCHAFT_KONTAKT_HREF } from "@/lib/membership-launch";
 import { ArrowRight, Check, Star } from "@/components/ui/Icon";
 import { stages, testimonials, faqs } from "@/lib/content";
 import { practices } from "@/lib/practices";
@@ -16,27 +16,29 @@ import heroBild from "../../../public/mitgliedschaft-hero.webp";
 export const metadata: Metadata = {
   title: "Mitgliedschaft",
   description:
-    "Der Mitgliederbereich startet demnächst: ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System, das mit dir wächst. Der Einstieg läuft über ein kostenloses Erstgespräch.",
+    "Die digitale Mitgliederplattform startet demnächst: dein eigener Weg durch die 7 Stufen – mit Videos, Wissen, Praxisimpulsen und Reflexion, eigenständig in deinem Tempo.",
   alternates: { canonical: "/mitgliedschaft" },
 };
 
 // Die Mitgliedschaft ist noch nicht buchbar (MITGLIEDSCHAFT_AKTIV in
 // src/lib/membership-launch.ts). Deshalb hier bewusst keine Preise und keine
-// Kauf-Buttons – alle Wege führen ins kostenlose Erstgespräch.
+// Kauf-Buttons. Persönliche 1:1-Gespräche sind kein Bestandteil und kein
+// Einstieg der Mitgliedschaft (docs/RECHTLICHE-PRODUKTABGRENZUNG.md) – Fragen
+// laufen neutral über das Kontaktformular.
 
 const features = [
-  ["Geführte Videos", "Zu jeder Stufe ein klarer, ruhiger Impuls zum Mitgehen."],
+  ["Videos zu jeder Stufe", "Zu jeder Stufe ein klarer, ruhiger Impuls zum Anschauen und Mitmachen."],
   [`${practices.length} Praxis-Übungen`, "Atem, Meditationen und Rituale für deinen Alltag."],
   [`${deepDives.length} Vertiefungen`, "Das psychologische Wissen hinter der Veränderung."],
-  ["Bewusstseinstest & Kurve", "Finde deinen Startpunkt – und sieh deine Entwicklung über die Zeit."],
-  ["Dein Journal", "Alle Reflexionen an einem Ort. Ein Spiegel, der mit dir wächst."],
+  ["Bewusstseinstest & Kurve", "Deine Selbsteinschätzung als Orientierung – und wie sie sich über die Zeit verändert."],
+  ["Dein Journal", "Alle deine Reflexionen an einem Ort – privat, nur für dich."],
   ["Arbeitshefte & PDFs", "Zum Ausdrucken, Mitschreiben und Vertiefen."],
 ];
 
 const steps = [
-  ["Bewusstseinstest machen", "In wenigen Minuten findest du heraus, wo du gerade stehst."],
-  ["Deiner Stufe folgen", "Geführt, ohne Druck, ganz in deinem Tempo."],
-  ["Dranbleiben & wachsen", "Journal und Wachstumskurve halten dich sanft auf Kurs."],
+  ["Bewusstseinstest machen", "In wenigen Minuten schätzt du selbst ein, wo du gerade stehst."],
+  ["Deine Stufe wählen", "Eigenständig, ohne Druck, ganz in deinem Tempo."],
+  ["Dranbleiben & reflektieren", "Journal und Kurve zeigen dir, womit du schon gearbeitet hast."],
 ];
 
 // Identisch zur Startseite (Hero.tsx), damit der Hero-Verlauf konsistent ist.
@@ -70,7 +72,7 @@ function DarkSection({
 const NOTICES: Record<string, { tone: "info" | "warn"; text: string }> = {
   abo: {
     tone: "info",
-    text: "Der Mitgliederbereich ist noch nicht geöffnet – er startet demnächst. Wenn du jetzt schon begleitet werden möchtest, vereinbare ein kostenloses Erstgespräch.",
+    text: "Der Mitgliederbereich ist noch nicht geöffnet – er startet demnächst. Bei Fragen zur Mitgliedschaft erreichst du uns über das Kontaktformular.",
   },
 };
 
@@ -145,25 +147,26 @@ export default async function MitgliedschaftPage({
               Vom Autopilot zur <em className="accent">Meisterschaft</em>
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-cream/90">
-              Ein geführter Weg in 7 Stufen – mit Videos, Praxis und einem System,
-              das mit dir wächst. Raus aus alten Mustern, rein in echte innere Klarheit.
+              Deine digitale Mitgliederplattform für die 7 Stufen – mit Videos, Wissen,
+              Praxisimpulsen und Reflexion, eigenständig in deinem Tempo. Raus aus
+              alten Mustern, rein in echte innere Klarheit.
             </p>
             <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap">
-              <Button href={ERSTGESPRAECH_HREF} size="lg" className="w-full sm:w-auto">
-                Kostenloses Erstgespräch
+              <Button href="/bewusstseinstest" size="lg" className="w-full sm:w-auto">
+                Kostenlosen Bewusstseinstest machen
               </Button>
               <Button
-                href="/bewusstseinstest"
+                href={MITGLIEDSCHAFT_KONTAKT_HREF}
                 variant="secondary"
                 size="lg"
                 className="w-full sm:w-auto"
               >
-                Kostenlosen Bewusstseinstest machen
+                Frage zur Mitgliedschaft
               </Button>
             </div>
             <p className="mt-4 text-sm text-cream/80">
-              Die Mitgliedschaft startet demnächst. Bis dahin beginnt der Weg mit
-              einem kostenlosen, unverbindlichen Erstgespräch.
+              Die Mitgliedschaft startet demnächst. Bis dahin kannst du mit dem
+              kostenlosen Bewusstseinstest oder dem Buch beginnen.
             </p>
             <p className="mt-6 flex items-center gap-2 text-sm text-cream/75">
               <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-gold-400 to-gold-500" />
@@ -343,7 +346,7 @@ export default async function MitgliedschaftPage({
             </span>
             <ul className="mt-5 flex flex-col gap-3">
               {[
-                "Alle 7 Stufen mit geführten Videos",
+                "Alle 7 Stufen mit Videos",
                 `${practices.length} Praxis-Übungen & ${deepDives.length} Vertiefungen`,
                 "Bewusstseinstest, Wachstumskurve & Journal",
                 "Arbeitshefte & PDFs zum Download",
@@ -364,12 +367,12 @@ export default async function MitgliedschaftPage({
                 Demnächst
               </span>
               <p className="mt-3 text-[0.98rem] leading-relaxed text-cream/85">
-                Der Mitgliederbereich öffnet in Kürze. Der Einstieg läuft über ein
-                kostenloses Erstgespräch – dort schauen wir gemeinsam, wo du stehst
-                und welcher Weg zu dir passt.
+                Der Mitgliederbereich öffnet in Kürze. Alle Inhalte sind dann
+                selbstständig nutzbar – du gehst deinen eigenen Weg durch die
+                sieben Stufen. Hast du vorab eine Frage? Schreib uns.
               </p>
-              <Button href={ERSTGESPRAECH_HREF} size="lg" className="mt-4 w-full">
-                Kostenloses Erstgespräch vereinbaren
+              <Button href={MITGLIEDSCHAFT_KONTAKT_HREF} size="lg" className="mt-4 w-full">
+                Frage zur Mitgliedschaft
               </Button>
             </div>
           </div>
@@ -380,7 +383,7 @@ export default async function MitgliedschaftPage({
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-cream/70">
               Kein Druck, keine Deadlines. Du beginnst, wo du stehst, und gehst in
-              deinem Tempo – begleitet, Schritt für Schritt.
+              deinem Tempo – eigenständig, Schritt für Schritt.
             </p>
             <Button href="#faq" variant="secondary" size="md" className="mt-6">
               Häufige Fragen ansehen
@@ -391,7 +394,7 @@ export default async function MitgliedschaftPage({
               <Link href="/bewusstseinstest" className="text-gradient-leaf font-medium">
                 Bewusstseinstest
               </Link>{" "}
-              und finde deinen Startpunkt – oder lies erst in Ruhe{" "}
+              als persönliche Orientierung – oder lies erst in Ruhe{" "}
               <Link href="/buch" className="text-gradient-leaf font-medium">
                 das Buch
               </Link>
@@ -446,8 +449,8 @@ export default async function MitgliedschaftPage({
           Der erste Schritt ist nicht ändern, sondern sehen. Fang heute an.
         </p>
         <div className="mt-8 flex justify-center">
-          <Button href={ERSTGESPRAECH_HREF} size="lg">
-            Kostenloses Erstgespräch
+          <Button href="/bewusstseinstest" size="lg">
+            Kostenlosen Bewusstseinstest machen
           </Button>
         </div>
         <p className="text-gradient-leaf mt-7 text-sm font-semibold tracking-wide">

@@ -118,7 +118,7 @@ export function Header() {
             <>
               {/* „Mitglieder" als eigenständige, gold-getönte Pill mit Personen-
                   Icon – hebt den Login zum exklusiven Bereich klar vom übrigen
-                  Menü ab, bleibt aber neben dem neutralen Erstgespräch-Button
+                  Menü ab, bleibt aber neben dem neutralen Kontakt-Button
                   die ruhigere der beiden Aktionen. `h-11` = gleiche Höhe wie der
                   Button, damit das Aktionspaar sauber ausgerichtet ist. */}
               <Link
@@ -129,7 +129,7 @@ export function Header() {
                 Mitglieder
               </Link>
               <Button href="/kontakt" variant="secondary" size="md" className="whitespace-nowrap">
-                Erstgespräch
+                Kontakt
               </Button>
             </>
           )}
@@ -213,7 +213,7 @@ export function Header() {
                   className="w-full"
                   onClick={() => setOpen(false)}
                 >
-                  Kostenloses Erstgespräch
+                  Kontakt
                 </Button>
               </div>
             </>

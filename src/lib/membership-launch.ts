@@ -3,9 +3,13 @@
  *
  * Solange `false`:
  *   • /mitgliedschaft zeigt „Demnächst“, keine Preise und keine Kauf-Buttons –
- *     der Weg läuft über das kostenlose Erstgespräch (/kontakt?thema=erstgespraech).
+ *     Fragen laufen neutral über das Kontaktformular (/kontakt?thema=mitgliedschaft).
  *   • /api/checkout legt KEINE Stripe-Session an, auch nicht bei direktem POST
- *     (z. B. per curl), sondern leitet aufs Erstgespräch um.
+ *     (z. B. per curl), sondern leitet aufs Kontaktformular um.
+ *
+ * Persönliche 1:1-Gespräche sind NICHT Bestandteil und NICHT Einstieg der
+ * Mitgliedschaft und werden in keinem Mitgliedschafts-, Test-, Newsletter- oder
+ * Verkaufsweg angeboten (siehe docs/RECHTLICHE-PRODUKTABGRENZUNG.md).
  *
  * Bewusst eine Konstante im Code und keine Umgebungsvariable: Freigeschaltet
  * wird nur mit einem bewussten Commit, nachdem die rechtlichen Punkte
@@ -15,4 +19,4 @@
 export const MITGLIEDSCHAFT_AKTIV = false;
 
 /** Ziel aller „Mitglied werden“-Wege, solange die Mitgliedschaft nicht aktiv ist. */
-export const ERSTGESPRAECH_HREF = "/kontakt?thema=erstgespraech";
+export const MITGLIEDSCHAFT_KONTAKT_HREF = "/kontakt?thema=mitgliedschaft";
