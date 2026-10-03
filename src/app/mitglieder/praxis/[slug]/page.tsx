@@ -163,7 +163,7 @@ export default async function PracticePage({
             </span>
             <p className="text-[0.98rem] leading-relaxed text-ink-mid">
               Markier die Übung als gemacht – so siehst du im Verlauf, was du schon
-              geübt hast, und dein Begleiter kann daran anknüpfen.
+              geübt hast.
             </p>
             <div className="mt-1">
               <PracticeCompleteToggle slug={practice.slug} />

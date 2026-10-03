@@ -11,7 +11,7 @@ import { resolveThema } from "@/lib/kontakt-themen";
 export const metadata: Metadata = withCanonical("/kontakt", {
   title: "Kontakt",
   description:
-    "Nimm Kontakt auf und vereinbare ein kostenloses Erstgespräch. Gemeinsam finden wir heraus, wo du stehst und was dein nächster Schritt ist.",
+    "Nimm Kontakt auf – bei Fragen zum Buch, zur Mitgliedschaft oder zur Website.",
 });
 
 export default async function ContactPage({
@@ -28,11 +28,11 @@ export default async function ContactPage({
         eyebrow="Kontakt"
         title={
           <>
-            Lass uns über deinen{" "}
-            <em className="accent">nächsten Schritt</em> sprechen
+            Schreib mir – ich freue mich auf{" "}
+            <em className="accent">deine Nachricht</em>
           </>
         }
-        intro="Ob konkrete Frage oder einfach der Wunsch, endlich anzufangen – schreib mir. Ich lese jede Nachricht persönlich."
+        intro="Ob Frage zum Buch, zur Mitgliedschaft oder zur Website – schreib mir. Ich lese jede Nachricht persönlich."
       />
 
       <section className="bg-paper-aura grain-soft relative pt-10 pb-12 sm:pt-16 sm:pb-24">
@@ -100,11 +100,12 @@ export default async function ContactPage({
 
             <div className="rounded-3xl border border-accent/25 bg-white p-6 shadow-card">
               <h2 className="font-display text-lg italic text-ink">
-                Kostenloses Erstgespräch
+                Frage zur Mitgliedschaft?
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-ink-mid">
-                Unverbindlich und ehrlich. Wir klären, ob und wie ich dich am
-                besten unterstützen kann – ganz ohne Verkaufsdruck.
+                Die digitale Mitgliederplattform startet demnächst. Fragen zu
+                Inhalten, Zugang oder Start beantworte ich dir gern über dieses
+                Formular.
               </p>
             </div>
           </aside>

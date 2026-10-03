@@ -16,6 +16,7 @@ import {
   isBegleiterConfigured,
   getConversation,
 } from "@/app/mitglieder/begleiter/actions";
+import { isKiBegleiterEnabled } from "@/lib/ki-features";
 
 /**
  * Der KI-Begleiter im Mitgliederbereich.
@@ -23,6 +24,10 @@ import {
  * Ein Gespräch, das die Inhalte des Angebots kennt und weiß, wo die Person in
  * den 7 Stufen steht. Ohne ANTHROPIC_API_KEY (oder ohne Migration 0009) bleibt
  * die Seite erreichbar und erklärt ruhig, dass der Begleiter noch schläft.
+ *
+ * Solange der Schalter KI_BEGLEITER_ENABLED nicht auf "true" steht (Standard,
+ * src/lib/ki-features.ts), leitet die Seite still ins Dashboard um – so landet
+ * niemand über einen alten Link auf einer toten Seite.
  */
 
 export const dynamic = "force-dynamic";
@@ -33,6 +38,8 @@ export const metadata: Metadata = {
 };
 
 export default async function BegleiterPage() {
+  if (!isKiBegleiterEnabled()) redirect("/mitglieder");
+
   if (isSupabaseConfigured) {
     const supabase = await createClient();
     const {

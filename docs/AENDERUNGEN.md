@@ -5,6 +5,99 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-03 – Produktabgrenzung: Mitgliedschaft als digitale Plattform (Phase 1)
+
+**Anlass:** Außendarstellung und tatsächliche Funktion sollen übereinstimmen:
+Die Mitgliedschaft ist eine digitale Plattform zur eigenständigen Nutzung –
+ohne individuelle menschliche Betreuung, ohne Korrektur, Prüfung oder
+Lernerfolgskontrolle. Persönliche 1:1-Leistungen sind ein separates Thema und
+werden nicht mehr öffentlich als Einstieg angeboten. Leitlinie:
+`docs/RECHTLICHE-PRODUKTABGRENZUNG.md` (neu). Branch `ccr-5901ea80-16p4fk`.
+
+**1:1-Verweise aus öffentlichen Wegen entfernt**
+- `src/lib/membership-launch.ts`: `ERSTGESPRAECH_HREF` →
+  `MITGLIEDSCHAFT_KONTAKT_HREF = "/kontakt?thema=mitgliedschaft"`.
+  `/api/checkout` leitet bei gesperrter Mitgliedschaft dorthin um (geprüft: 303).
+- `src/lib/kontakt-themen.ts`: Thema `erstgespraech` entfernt (alte Links aus
+  bereits versendeten Mails landen auf dem neutralen Formular); Thema
+  `mitgliedschaft` heißt jetzt „Frage zur Mitgliedschaft“.
+- `/mitgliedschaft`: alle „Kostenloses Erstgespräch“-CTAs und „dort schauen wir
+  gemeinsam“ entfernt → Bewusstseinstest bzw. „Frage zur Mitgliedschaft“.
+- Header (Desktop + Mobil): Button „Erstgespräch“ → „Kontakt“ (gleiches Ziel).
+- `/kontakt`: Meta-Text, Überschrift und Seitenbox ohne Erstgespräch.
+- `/die-7-stufen`, `/login`, `/ueber-mich`, `/bewusstseinstest/ergebnis/[stufe]`,
+  `ConsciousnessTest.tsx`: Erstgespräch-CTAs → Mitgliedschaft/Buch.
+- Blog-CTA-Variante `erstgespraech` (Fallback): Schlüssel bleibt, zeigt jetzt
+  auf den Bewusstseinstest.
+- E-Mail-Folgen `src/lib/sequences.ts`: Tag 9 / Tag 11 (Test-Leads) und Tag 21
+  (Buchkäufer) ohne Erstgespräch; KI-Begleiter nicht mehr als Bestandteil
+  beschrieben (ist abgeschaltet).
+- Unverändert intern: `/klarheitsgespraech` (noindex, nicht in Sitemap, kein
+  öffentlicher Link mehr darauf), `/admin/erstgespraeche`, `src/lib/erstgespraech/`.
+
+**Mitgliedschaft neutral beschrieben**
+- „geführter Weg“, „begleitet, Schritt für Schritt“, „Begleitung ohne Wertung“,
+  „gemeinsam finden wir…“ ersetzt durch „digitale Mitgliederplattform“,
+  „eigenständig in deinem Tempo“, „Videos, Wissen, Praxisimpulse und Reflexion“
+  (`/mitgliedschaft`, `src/lib/content.ts`, `/buch`, `/ueber-mich`).
+- Stufenseite im Mitgliederbereich: „ich bin jederzeit für dich da“ →
+  Hinweis auf technische/organisatorische Fragen über das Kontaktformular.
+
+**Bewusstseinstest als Selbsteinschätzung** (Punkteberechnung unverändert)
+- „Deine aktuelle Hauptstufe“ → „Schwerpunkt deiner aktuellen
+  Selbsteinschätzung“; „Dein Profil“ → „Deine Standortübersicht“ mit Satz
+  „Orientierung aus deinen Antworten“; „Meine Empfehlung“ → „Eine Anregung für
+  dich“; neuer Hinweis unter dem Ergebnis: Selbsteinschätzung aus eigenen
+  Antworten, keine psychologische Diagnostik, kein Leistungs-/Wissenstest.
+- `src/lib/consciousness-test.ts`: Auswertungstexte „Du bist …“ →
+  „Deinen Antworten nach …“; 1:1-Empfehlungen (Stufen 1, 2, 6, 7) ersetzt.
+- Gedankenprofil: „Bedarfsanalyse / Wo noch Bedarf ist“ → „Orientierung aus
+  deinen Antworten / Bereiche, die du dir näher ansehen könntest“; Begründungen
+  subjektbezogen. Interner Bezeichner `bedarf` bleibt.
+
+**Fortschritt nicht als Lernerfolg** (Logik/Daten unverändert)
+- „abgeschlossen“ in sichtbaren Texten → „als gemacht markiert“ / „mit dieser
+  Stufe gearbeitet“ (Dashboard, Journal-Statistik, Stufen-Toggle,
+  Programm-Tag, Gedankenprofil).
+
+**KI-Feature-Flags** (neu: `src/lib/ki-features.ts`, Standard AUS)
+- `KI_BEGLEITER_ENABLED`: hängt in `isBegleiterConfigured()` → kein Launcher,
+  keine Links/CTAs; `/mitglieder/begleiter` leitet auf `/mitglieder` um;
+  `POST /mitglieder/begleiter/antwort` → 404 `not_configured`.
+- `KI_READING_ENABLED`: hängt in `isReadingConfigured()` und `generateReading()`
+  → kein Reading-Panel im Gedankenprofil.
+- In `.env.local.example` dokumentiert. **Auf dem Server nichts zu tun:** ohne
+  Variable bleiben beide aus. Code und Tabellen bleiben vollständig erhalten.
+- Muster-Spiegel-Prompt ergänzt: keine Verständnisprüfung, keine Bewertung der
+  fachlichen Richtigkeit, kein bestanden/nicht bestanden, keine Aussage über
+  Lernziele, nur Spiegelung und Strukturierung. Gleiche Grenze als eine Zeile
+  auch im Begleiter- und Reading-Prompt.
+
+**Rechtstexte**
+- Impressum: Abschnitt „Streitschlichtung“ (EU-OS-Plattform-Link) und
+  generischer Abschnitt „Haftung für Inhalte“ entfernt. Name, Anschrift,
+  E-Mail, USt-ID, Urheberrecht unverändert.
+- Datenschutz: `TTDSG` → `TDDDG` (2×); „Lernfortschritt“ →
+  „Nutzungsfortschritt“; Aufsichtsbehörde → Bayerisches Landesamt für
+  Datenschutzaufsicht, Promenade 18, 91522 Ansbach (ohne Link/Kontaktdaten);
+  falsche Querverweise in Punkt 8 korrigiert (Resend = 9, Supabase = 10).
+- Neu: `docs/DATENSCHUTZ-TODO.md` – offene Abgleiche je Dienst (Anthropic,
+  Stripe, Supabase, Resend, Google Analytics, Hetzner, zusätzlich Meta-Pixel,
+  YouTube, Test-Leads). Keine Klauseln erfunden.
+
+**Geprüft:** `tsc --noEmit` ✓, `npm test` (13/13) ✓, `npm run build` ✓,
+ESLint auf allen geänderten Dateien ✓ (`npm run lint` meldet 48 bestehende
+Probleme in `tools/`, identisch vor der Änderung). Laufzeit-Check per
+`next start`: kein „Erstgespräch“, „TTDSG“ oder OS-Link auf den öffentlichen
+Seiten.
+
+**Offen / bewusst nicht geändert**
+- `tools/workshop/specs/bewusstseinstest.json` (Workshop-Folien): enthält noch
+  „geführter Weg“, „persönlicher Bedarfsanalyse“ und den Preis 49 €/Monat.
+- `src/lib/erstgespraech/phasen.ts` (Admin-Gesprächsskript) unverändert.
+
+---
+
 ## 2026-10-03 – Mitgliedschaft auf „Demnächst“, Preise entfernt, Checkout gesperrt
 
 **Anlass:** Die Bezahl-Mitgliedschaft ist noch nicht aktiv. Vor dem Start

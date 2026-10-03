@@ -1,11 +1,13 @@
 /**
- * Regelbasiertes „Gedankenprofil" mit Bedarfsanalyse.
+ * Regelbasiertes „Gedankenprofil" mit Orientierungshinweisen.
  *
  * Nimmt die bereits gespeicherten Daten der Person (Bewusstseinstest-Ergebnis
  * pro Stufe + abgeschlossene Stufen) und macht daraus zwei Dinge:
  *
  *   1. ein Profil über alle 7 Stufen (wie verankert ist jede Stufe?)
- *   2. eine Bedarfsanalyse: wo lohnt es sich, noch einmal dranzugehen?
+ *   2. Orientierung: welche Bereiche könnte sich die Person näher ansehen?
+ *      (intern weiterhin `bedarf` genannt – sichtbar aber nie als „Bedarf“,
+ *      sondern als Anregung aus der eigenen Selbsteinschätzung)
  *
  * Deterministisch und serverseitig – es verlässt nichts den Server, und es ist
  * bewusst KEINE Vorhersage, sondern nur ein Zusammenfassen dessen, was die
@@ -218,35 +220,35 @@ function reasonFor(
 
   if (belowFocus && p.level === "entwicklungsraum") {
     return {
-      reason: `Diese Stufe liegt unter deinem Schwerpunkt, ist aber erst schwach ausgeprägt (${p.pct}%). Eine Grundlage, die noch wackelt – und die weiter oben viel trägt.`,
+      reason: `Diese Stufe liegt unter deinem Schwerpunkt, ist in deiner Selbsteinschätzung aber erst schwach ausgeprägt (${p.pct}%). Eine Grundlage, die weiter oben viel trägt – vielleicht lohnt sich ein zweiter Blick.`,
       suggestion: stage.result.nextStep,
     };
   }
 
   if (isFocus && !p.done) {
     return {
-      reason: `Hier liegt gerade dein Schwerpunkt (${p.pct}%), und du hast die Stufe noch nicht als abgeschlossen markiert. Der natürlichste Ort, um dranzubleiben.`,
+      reason: `Hier liegt gerade der Schwerpunkt deiner Selbsteinschätzung (${p.pct}%), und du hast noch nicht markiert, dass du mit dieser Stufe gearbeitet hast. Ein naheliegender Ort, um weiterzumachen.`,
       suggestion: stage.result.nextStep,
     };
   }
 
   if (p.level === "entwicklungsraum") {
     return {
-      reason: `Diese Stufe ist bislang kaum ausgeprägt (${p.pct}%). Hier ist noch viel Entwicklungsraum.`,
+      reason: `Diese Stufe ist in deiner Selbsteinschätzung bislang wenig ausgeprägt (${p.pct}%). Hier ist noch viel Entwicklungsraum.`,
       suggestion: stage.result.nextStep,
     };
   }
 
   if (p.level === "im-aufbau") {
     return {
-      reason: `Diese Stufe ist im Aufbau (${p.pct}%) – ein gutes Fundament ist da, aber noch nicht verankert.`,
+      reason: `Diese Stufe ist laut deiner Selbsteinschätzung im Aufbau (${p.pct}%) – ein gutes Fundament ist da.`,
       suggestion: stage.result.nextStep,
     };
   }
 
   // verankert, aber nicht abgeschlossen
   return {
-    reason: `Diese Stufe ist gut ausgeprägt (${p.pct}%), aber noch nicht abgeschlossen. Ein Durchgang würde sie verankern.`,
+    reason: `Diese Stufe ist in deiner Selbsteinschätzung gut ausgeprägt (${p.pct}%). Als gemacht markiert hast du sie noch nicht – vielleicht magst du sie dir in Ruhe ansehen.`,
     suggestion: stage.result.nextStep,
   };
 }
@@ -293,7 +295,7 @@ export function buildGedankenprofil(
 
   const focusStage = startStage ?? null;
 
-  // Bedarfsanalyse: gewichten, sortieren, die stärksten bis zu drei nehmen.
+  // Orientierung: gewichten, sortieren, die stärksten bis zu drei nehmen.
   const bedarf: BedarfItem[] = profile
     .map((p) => ({ p, w: bedarfWeight(p, focusStage) }))
     .filter((x) => x.w > 0)
@@ -321,26 +323,26 @@ export function buildGedankenprofil(
   const summaryParts: string[] = [];
   if (focus) {
     summaryParts.push(
-      `Dein Schwerpunkt liegt bei Stufe ${focus.nr} – ${focus.name}.`,
+      `Der Schwerpunkt deiner Selbsteinschätzung liegt bei Stufe ${focus.nr} – ${focus.name}.`,
     );
   }
   if (strengths.length > 0) {
     summaryParts.push(
       strengths.length === 1
-        ? `Gut verankert ist bei dir Stufe ${strengths[0]}.`
-        : `Gut verankert sind bei dir die Stufen ${strengths.join(", ")}.`,
+        ? `Nach deinen Antworten gut verankert ist Stufe ${strengths[0]}.`
+        : `Nach deinen Antworten gut verankert sind die Stufen ${strengths.join(", ")}.`,
     );
   }
   if (bedarf.length > 0) {
     const nrs = bedarf.map((b) => b.nr);
     summaryParts.push(
       nrs.length === 1
-        ? `Noch Bedarf zeigt sich bei Stufe ${nrs[0]} – darauf lohnt es sich, den nächsten Blick zu richten.`
-        : `Noch Bedarf zeigt sich vor allem bei den Stufen ${nrs.join(", ")}.`,
+        ? `Näher ansehen könntest du dir Stufe ${nrs[0]} – darauf lohnt es sich, den nächsten Blick zu richten.`
+        : `Näher ansehen könntest du dir vor allem die Stufen ${nrs.join(", ")}.`,
     );
   } else {
     summaryParts.push(
-      "Aktuell zeigt sich kein dringender Bedarf – ein guter Moment, das Erreichte in der täglichen Praxis zu vertiefen.",
+      "Aus deinen Antworten ergibt sich gerade kein besonderer Schwerpunkt zum Nachschauen – ein guter Moment, in der täglichen Praxis zu vertiefen, was dir guttut.",
     );
   }
 

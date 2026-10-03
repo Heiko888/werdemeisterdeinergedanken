@@ -22,19 +22,12 @@ export type KontaktThema = {
 };
 
 export const KONTAKT_THEMEN: Record<string, KontaktThema> = {
-  erstgespraech: {
-    label: "Kostenloses Erstgespräch",
-    hinweis:
-      "Schön, dass du ein kostenloses Erstgespräch möchtest. Schreib mir kurz, worum es dir geht und wie ich dich am besten erreiche – ich melde mich persönlich für einen Termin.",
-    vorlage:
-      "Hallo Heiko,\n\nich wünsche mir ein kostenloses Erstgespräch. Kurz zu mir und worum es mir geht:\n\n",
-  },
   mitgliedschaft: {
-    label: "Mitgliedschaft",
+    label: "Frage zur Mitgliedschaft",
     hinweis:
-      "Die Mitgliedschaft startet demnächst. Schreib mir gern deine Frage oder sag Bescheid, wenn du ein kostenloses Erstgespräch möchtest – ich melde mich persönlich.",
+      "Die Mitgliedschaft startet demnächst. Hast du eine Frage zur digitalen Mitgliederplattform, zu den Inhalten oder zum Start? Schreib sie mir hier.",
     vorlage:
-      "Hallo Heiko,\n\nich interessiere mich für die Mitgliedschaft und habe dazu folgende Frage:\n\n",
+      "Hallo Heiko,\n\nich habe eine Frage zur Mitgliedschaft:\n\n",
   },
   buch: {
     label: "Das Buch",

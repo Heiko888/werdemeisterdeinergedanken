@@ -182,7 +182,7 @@ const buchFaqs = [
   {
     question: "Passt das Buch zur Mitgliedschaft?",
     answer:
-      "Ja – die beiden ergänzen sich, sind aber nicht dasselbe. Das Buch erzählt den Weg in 24 Kapiteln, mit dem Schwerpunkt auf den Gedanken, die von außen kommen. Der Mitgliederbereich führt dich durch die 7 Stufen der Bewusstseinsentwicklung, mit Videos, Praxis und Begleitung zu jeder Stufe.",
+      "Ja – die beiden ergänzen sich, sind aber nicht dasselbe. Das Buch erzählt den Weg in 24 Kapiteln, mit dem Schwerpunkt auf den Gedanken, die von außen kommen. Der Mitgliederbereich ist eine digitale Plattform zu den 7 Stufen der Bewusstseinsentwicklung, mit Videos, Wissen und Praxisimpulsen zu jeder Stufe – eigenständig nutzbar.",
   },
   {
     question: "Kann ich mit einem Gutschein bezahlen?",
@@ -808,7 +808,7 @@ export default async function BuchPage({
               <Link href="/mitgliedschaft" className="text-gradient-leaf font-medium">
                 Mitgliedschaft
               </Link>{" "}
-              mit Videos, Praxis und Begleitung zu jeder Stufe.
+              mit Videos, Wissen und Praxisimpulsen zu jeder Stufe.
             </p>
           </div>
         </div>

@@ -3,6 +3,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import type { ChatMessage, ChatRole } from "@/lib/begleiter";
+import { isKiBegleiterEnabled } from "@/lib/ki-features";
 
 /**
  * KI-Begleiter – Verlauf laden und löschen.
@@ -12,9 +13,20 @@ import type { ChatMessage, ChatRole } from "@/lib/begleiter";
  * gestreamt werden (Wort für Wort statt zehn Sekunden Warten).
  */
 
-/** Ist der Begleiter serverseitig einsatzbereit? */
+/**
+ * Ist der Begleiter serverseitig einsatzbereit?
+ *
+ * Neben API-Key und Supabase muss der Schalter KI_BEGLEITER_ENABLED=true
+ * gesetzt sein (Standard: aus, siehe src/lib/ki-features.ts). Alle Einstiege –
+ * Launcher, Dashboard-Link, Profil- und Soforthilfe-Hinweis – hängen an dieser
+ * einen Prüfung.
+ */
 export async function isBegleiterConfigured(): Promise<boolean> {
-  return Boolean(process.env.ANTHROPIC_API_KEY) && isSupabaseConfigured;
+  return (
+    isKiBegleiterEnabled() &&
+    Boolean(process.env.ANTHROPIC_API_KEY) &&
+    isSupabaseConfigured
+  );
 }
 
 /**

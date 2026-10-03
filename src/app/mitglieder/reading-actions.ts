@@ -6,6 +6,7 @@ import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { getTestProfile, getCompletedStages } from "@/app/mitglieder/actions";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
 import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
+import { isKiReadingEnabled } from "@/lib/ki-features";
 
 /**
  * KI-Readings zum Gedankenprofil.
@@ -14,15 +15,17 @@ import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
  * ausdrückliche Freigabe (Button-Klick → `generateReading`). Das regelbasierte
  * Gedankenprofil bleibt davon unberührt und funktioniert ohne KI weiter.
  *
- * Ist kein ANTHROPIC_API_KEY gesetzt, meldet die Funktion `not_configured` –
- * die Seite blendet die Reading-Option dann einfach aus.
+ * Ist kein ANTHROPIC_API_KEY gesetzt ODER der Schalter KI_READING_ENABLED
+ * nicht auf "true" (Standard: aus, siehe src/lib/ki-features.ts), meldet die
+ * Funktion `not_configured` – die Seite blendet die Reading-Option dann einfach
+ * aus.
  */
 
 const MODEL = KI_MODELL;
 
 /** Ist die KI-Reading-Funktion serverseitig konfiguriert? */
 export async function isReadingConfigured(): Promise<boolean> {
-  return Boolean(process.env.ANTHROPIC_API_KEY);
+  return isKiReadingEnabled() && Boolean(process.env.ANTHROPIC_API_KEY);
 }
 
 export type Reading = { body: string; createdAt: string; model: string | null };
@@ -65,7 +68,7 @@ export type GenerateResult =
  */
 export async function generateReading(): Promise<GenerateResult> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return { status: "not_configured" };
+  if (!isKiReadingEnabled() || !apiKey) return { status: "not_configured" };
   if (!isSupabaseConfigured) return { status: "unauthenticated" };
 
   const supabase = await createClient();
@@ -120,6 +123,8 @@ Regeln:
 - Deute nur die vorhandenen Werte; erfinde keine Zahlen, keine Biografie,
   keine Diagnosen und keine Vorhersagen.
 - Kein esoterisches Übertreiben, keine Heilsversprechen. Ruhig, klar, ermutigend.
+- Keine Bewertung als richtig/falsch oder bestanden/nicht bestanden, keine
+  Aussage über erreichte Lernziele – das Profil ist eine Selbsteinschätzung.
 - Struktur: (1) kurze Spiegelung des aktuellen Schwerpunkts, (2) was schon
   trägt, (3) wo es sich lohnt, noch einmal dranzugehen, (4) ein konkreter,
   sanfter nächster Schritt.

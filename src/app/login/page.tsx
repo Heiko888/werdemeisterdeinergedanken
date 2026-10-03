@@ -55,13 +55,12 @@ export default async function LoginPage({
             />
             {!ALLOW_SELF_REGISTRATION && (
               <p className="text-sm leading-relaxed text-ink-mid">
-                Noch kein Zugang? Die Mitgliedschaft startet demnächst – bis
-                dahin geht es los mit einem{" "}
+                Noch kein Zugang? Die Mitgliedschaft startet demnächst –{" "}
                 <Link
-                  href="/kontakt?thema=erstgespraech"
+                  href="/mitgliedschaft"
                   className="font-semibold text-accent underline-offset-4 hover:underline"
                 >
-                  kostenlosen Erstgespräch
+                  hier erfährst du mehr
                 </Link>
                 .
               </p>

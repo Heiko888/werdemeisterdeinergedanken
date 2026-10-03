@@ -243,10 +243,9 @@ export default function SevenStagesPage() {
               Finde heraus, wo du gerade stehst.
             </h2>
             <p className="max-w-xl text-[1.05rem] leading-relaxed text-ink-mid">
-              Der Bewusstseinstest zeigt dir in wenigen Minuten deine aktuelle
-              Stufe – und welcher Schritt als Nächstes dran ist. Willst du danach
-              persönlich draufschauen, ist das kostenlose Erstgespräch dein
-              zweiter Schritt.
+              Der Bewusstseinstest gibt dir in wenigen Minuten eine Orientierung
+              aus deinen eigenen Antworten – als persönliche Selbsteinschätzung,
+              in welcher Stufe du dich gerade wiederfindest.
             </p>
             <div className="mt-1 flex flex-col gap-3 sm:flex-row">
               <Button href="/bewusstseinstest" variant="accent" size="lg">
@@ -255,9 +254,6 @@ export default function SevenStagesPage() {
               </Button>
               <Button href="/mitgliedschaft" variant="secondary" size="lg">
                 Mitgliedschaft (demnächst)
-              </Button>
-              <Button href="/kontakt" variant="secondary" size="lg">
-                Kostenloses Erstgespräch
               </Button>
             </div>
           </div>

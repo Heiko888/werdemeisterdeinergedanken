@@ -51,32 +51,6 @@ export default function ImprintPage() {
                 Anschrift wie oben
               </p>
 
-              <h2>Streitschlichtung</h2>
-              <p>
-                Die Europäische Kommission stellt eine Plattform zur
-                Online-Streitbeilegung (OS) bereit:{" "}
-                <a
-                  href="https://ec.europa.eu/consumers/odr/"
-                  className="break-all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://ec.europa.eu/consumers/odr/
-                </a>
-                . Wir sind nicht bereit oder verpflichtet, an
-                Streitbeilegungsverfahren vor einer
-                Verbraucherschlichtungsstelle teilzunehmen.
-              </p>
-
-              <h2>Haftung für Inhalte</h2>
-              <p>
-                Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für eigene
-                Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
-                verantwortlich. Nach §§ 8 bis 10 DDG sind wir als
-                Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
-                gespeicherte fremde Informationen zu überwachen.
-              </p>
-
               <h2>Urheberrecht</h2>
               <p>
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf

@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Bewusstseinstest – Wo findest du dich gerade?",
   description:
-    "Der kostenlose Bewusstseinstest: 21 Fragen zeigen dir, auf welcher der 7 Stufen der Bewusstseinsentwicklung du gerade stehst – und was dein nächster Schritt ist.",
+    "Der kostenlose Bewusstseinstest: 21 Aussagen zur persönlichen Selbsteinschätzung – als Orientierung, wo du dich in den 7 Stufen der Bewusstseinsentwicklung gerade wiederfindest.",
   alternates: { canonical: `${site.url}/bewusstseinstest` },
 };
 
@@ -22,7 +22,7 @@ export default function BewusstseinstestPage() {
             Wo findest du dich <em className="accent">gerade</em>?
           </>
         }
-        intro="21 ehrliche Fragen zeigen dir, auf welcher der 7 Stufen der Bewusstseinsentwicklung du aktuell stehst – und welcher nächste Schritt für dich möglich ist. Antworte spontan; es gibt kein Richtig oder Falsch. Dauer: etwa 5 Minuten."
+        intro="21 Aussagen zur persönlichen Selbsteinschätzung: Du schätzt selbst ein, was auf dich zutrifft – und erhältst eine Orientierung, in welcher der 7 Stufen der Bewusstseinsentwicklung du dich gerade wiederfindest. Keine Diagnose, kein Wissenstest, kein Richtig oder Falsch. Antworte spontan. Dauer: etwa 5 Minuten."
         image="/hero-bewusstseinstest.webp"
         spotlight="right"
         foreground="/heiko-bewusstseinstest-zeigt.png"

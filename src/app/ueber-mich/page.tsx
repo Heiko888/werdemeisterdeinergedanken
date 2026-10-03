@@ -56,7 +56,7 @@ const foundations = [
 ];
 
 /** Abschluss: Test als erster Schritt, Buch als zweiter (CTA-Regel aus
-    FinalCta), Mitgliedschaft für den geführten Weg. */
+    FinalCta), Mitgliedschaft als digitale Plattform für den eigenen Weg. */
 const nextSteps = [
   {
     href: "/bewusstseinstest",
@@ -74,7 +74,7 @@ const nextSteps = [
     href: "/mitgliedschaft",
     eyebrow: "Demnächst",
     title: "Mitgliedschaft",
-    text: "Alle 7 Stufen mit Videos und Praxis – startet demnächst. Bis dahin über ein kostenloses Erstgespräch.",
+    text: "Die digitale Mitgliederplattform mit allen 7 Stufen, Videos und Praxis – startet demnächst.",
   },
 ];
 

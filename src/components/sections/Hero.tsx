@@ -165,8 +165,8 @@ export function Hero() {
 
           <Reveal delay={220} className="order-3 lg:order-none">
             {/* CTA-Regel (Kampagnen-Check): primär der Test als Einstieg in
-                den Funnel, sekundär die 7 Stufen. Das Erstgespräch bleibt nur
-                im Footer/Kontakt erreichbar. */}
+                den Funnel, sekundär die 7 Stufen. Kontakt bleibt über Header
+                und Footer erreichbar. */}
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button href="/bewusstseinstest" variant="accent" size="lg">
                 Bewusstseinstest starten (kostenlos, 3 Minuten)

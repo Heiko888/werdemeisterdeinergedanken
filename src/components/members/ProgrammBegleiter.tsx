@@ -123,7 +123,7 @@ export function ProgrammBegleiter({
           </span>
           {istDone && (
             <span className="rounded-full bg-gold-500/15 px-3 py-1 text-xs font-semibold text-gold-700">
-              abgeschlossen
+              gemacht
             </span>
           )}
         </div>

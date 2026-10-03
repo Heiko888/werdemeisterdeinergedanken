@@ -3,7 +3,7 @@ import { getStripe, STRIPE_PRICE_ID, priceIdForPlan, type Plan } from "@/lib/str
 import { createClient } from "@/lib/supabase/server";
 import { site } from "@/lib/site";
 import { pickUtm, type UtmParams } from "@/lib/utm";
-import { ERSTGESPRAECH_HREF, MITGLIEDSCHAFT_AKTIV } from "@/lib/membership-launch";
+import { MITGLIEDSCHAFT_KONTAKT_HREF, MITGLIEDSCHAFT_AKTIV } from "@/lib/membership-launch";
 
 export const runtime = "nodejs";
 
@@ -30,7 +30,7 @@ function baseUrl(request: Request): string {
  * Ablauf:
  *   0. Ist die Mitgliedschaft noch nicht freigeschaltet (MITGLIEDSCHAFT_AKTIV),
  *      wird nie eine Stripe-Session angelegt – auch nicht bei direktem POST –,
- *      sondern aufs kostenlose Erstgespräch umgeleitet.
+ *      sondern neutral aufs Kontaktformular (Thema Mitgliedschaft) umgeleitet.
  *   1. Ist Stripe nicht eingerichtet (kein Key/Preis) → sanfter Fallback aufs
  *      Kontaktformular, damit der Button nie ins Leere läuft.
  *   2. Eine bestehende Anmeldung wird – falls vorhanden – mit der Checkout-
@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   const origin = baseUrl(request);
 
   if (!MITGLIEDSCHAFT_AKTIV) {
-    return NextResponse.redirect(`${origin}${ERSTGESPRAECH_HREF}`, 303);
+    return NextResponse.redirect(`${origin}${MITGLIEDSCHAFT_KONTAKT_HREF}`, 303);
   }
 
   const stripe = getStripe();

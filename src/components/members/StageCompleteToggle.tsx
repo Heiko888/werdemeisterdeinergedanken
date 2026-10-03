@@ -185,7 +185,7 @@ export function StageCompleteToggle({
         </h2>
         <p className="max-w-xl text-[0.98rem] leading-relaxed text-ink-mid">
           {done
-            ? "Du hast diese Stufe für dich abgeschlossen. Komm gern zurück, wann immer du magst."
+            ? "Du hast markiert, dass du mit dieser Stufe gearbeitet hast. Komm gern zurück, wann immer du magst."
             : started
               ? "Du hast hier schon gearbeitet. Wenn es sich rund anfühlt, halte es fest."
               : "Tipp: Mach zuerst eine Übung oder schreib ein paar Zeilen in die Reflexion – dann bleibt mehr hängen."}
