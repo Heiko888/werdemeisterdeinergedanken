@@ -188,19 +188,14 @@ export default function PrivacyPage() {
                 Videos auf dieser Website und im Mitgliederbereich werden über
                 YouTube bereitgestellt, einen Dienst der Google Ireland Limited,
                 Irland. Wir binden sie im erweiterten Datenschutzmodus
-                (youtube-nocookie.com) ein. Der eigentliche Player wird erst
-                geladen, wenn du auf das Vorschaubild klickst. Erst dann werden
+                (youtube-nocookie.com) ein. Zunächst siehst du nur ein
+                Vorschaubild, das von unserem eigenen Server kommt. Der
+                eigentliche Player wird erst geladen, wenn du darauf klickst.
+                Erst dann werden
                 Daten wie deine IP-Adresse, die aufgerufene Seite und technische
                 Browserinformationen an YouTube übermittelt, und YouTube kann
                 Cookies oder ähnliche Technologien einsetzen. Eine Übermittlung
                 in die USA an die Google LLC ist dabei möglich.
-              </p>
-              <p>
-                Ausnahme: Für die Videobotschaft auf der Startseite wird das
-                Vorschaubild schon beim Aufruf der Seite direkt von einem
-                YouTube-Server (i.ytimg.com) geladen. Dabei wird deine IP-Adresse
-                an Google übermittelt. Im Mitgliederbereich verwenden wir eigene
-                Vorschaubilder, die von unserem Server kommen.
               </p>
               <p>
                 Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes

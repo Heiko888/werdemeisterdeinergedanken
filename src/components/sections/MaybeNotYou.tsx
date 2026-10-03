@@ -7,16 +7,13 @@ import { ArrowRight } from "@/components/ui/Icon";
 import { site } from "@/lib/site";
 
 export function MaybeNotYou() {
-  // Solange kein eigenes «Ein anderer Blickwinkel»-Video existiert, läuft das
-  // globale Platzhalter-Video – aber mit dem gebrandeten Marken-Thumbnail
-  // (gleiches Layout wie die Mitgliederbereich-Thumbnails, erzeugt von
-  // docs/marketing/video-thumbnails.mjs) statt seines unpassenden YouTube-
-  // Vorschaubilds. Sobald videoMessage.youtubeId gesetzt ist, greift dessen
-  // echtes Thumbnail automatisch.
+  // Vorschaubild immer das gebrandete Marken-Cover von unserem eigenen Server
+  // (erzeugt von docs/marketing/video-thumbnails.mjs) – NIE das YouTube-
+  // Thumbnail von i.ytimg.com: Das würde schon beim Seitenaufruf, also vor
+  // jedem Klick, die IP-Adresse an Google übermitteln (Datenschutzerklärung,
+  // Punkt 8). YouTube selbst lädt erst beim Klick auf das Cover.
   const videoId = site.videoMessage.youtubeId ?? site.placeholderVideoId;
-  const poster = site.videoMessage.youtubeId
-    ? undefined
-    : "/video-thumbnails/landing/ein-anderer-blickwinkel.png";
+  const poster = "/video-thumbnails/landing/ein-anderer-blickwinkel.png";
 
   return (
     <section className="bg-paper-aura seam-gold grain-soft relative py-16 sm:py-32">

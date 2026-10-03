@@ -39,10 +39,10 @@ Supabase-Liste nennt KI-Ergebnisse und Buchbestellungen.
   Grundlage der USA-Übermittlung. Außerdem prüfen, ob die Test-Stufe (1–7)
   überhaupt an Meta und GA gehen soll (`test_complete` in
   `ConsciousnessTest.tsx`) – derzeit so im Code und deshalb so beschrieben.
-- YouTube: Das Vorschaubild der Videobotschaft auf der Startseite lädt ohne
-  Klick von `i.ytimg.com` (`MaybeNotYou.tsx`, weil `site.videoMessage.youtubeId`
-  gesetzt ist). Empfehlung: eigenes Vorschaubild unter `public/` hinterlegen –
-  dann kann die Ausnahme im Text entfallen.
+- ~~YouTube-Vorschaubild auf der Startseite~~ – erledigt 2026-10-03:
+  `MaybeNotYou.tsx` nutzt immer das lokale Cover
+  `public/video-thumbnails/landing/ein-anderer-blickwinkel.png`; vor dem Klick
+  wird nichts mehr von YouTube geladen. Punkt 8 entsprechend angepasst.
 - Stripe: Rolle (eigener Verantwortlicher für Zahlungsdaten), Grundlage der
   USA-Übermittlung, Aufbewahrungsfristen für Bestellungen in `book_orders`.
 - Datenschutz-Links der Anbieter (Meta, Stripe, Anthropic) einmal aufrufen und
@@ -114,7 +114,8 @@ Supabase-Liste nennt KI-Ergebnisse und Buchbestellungen.
 - **YouTube** (`youtube-nocookie.com`, Vorschaubilder direkt von `i.ytimg.com`)
   in `VideoEmbed.tsx` / `VideoMessage.tsx`: seit 2026-10-03 Punkt 8 der
   Erklärung. Geprüft: Im Mitgliederbereich eigene Vorschaubilder, auf der
-  Startseite lädt das Vorschaubild von `i.ytimg.com` (siehe oben).
+  Startseite seit 2026-10-03 ebenfalls lokales Cover – vor dem Klick kein
+  Kontakt zu YouTube.
 - **Bewusstseinstest-Leads** (`/api/test-lead`): Speicherung von E-Mail und
   ermittelter Test-Stufe in `ebook_leads`, danach E-Mail-Folge – in Punkt 10 nur
   „Newsletter & E-Book“ genannt.

@@ -14,9 +14,13 @@ sondern in `docs/DATENSCHUTZ-TODO.md` als offen notiert.
 
 - **Neu Punkt 7 Meta-Pixel:** nur nach Einwilligung; übermittelte Ereignisse
   (Lead, Testabschluss mit Stufe, Checkout-Start, Kauf), Cookies `_fbp`/`_fbc`.
-- **Neu Punkt 8 YouTube-Videos:** youtube-nocookie, Player erst nach Klick.
-  Offen benannt: Das Vorschaubild der Videobotschaft auf der Startseite lädt
-  schon beim Seitenaufruf von `i.ytimg.com`.
+- **Neu Punkt 8 YouTube-Videos:** youtube-nocookie, Vorschaubild vom eigenen
+  Server, Player erst nach Klick.
+- **Code-Fix Startseite:** `src/components/sections/MaybeNotYou.tsx` zeigt für
+  die Videobotschaft immer das lokale Cover
+  `/video-thumbnails/landing/ein-anderer-blickwinkel.png` statt des
+  YouTube-Thumbnails von `i.ytimg.com`. Vorher ging schon beim Seitenaufruf
+  (ohne Klick) die IP-Adresse an Google; jetzt erst beim Abspielen.
 - **Neu Punkt 13 Stripe:** Buchkauf, an Stripe übergebene Daten, in
   `book_orders` gespeicherte Felder, Rechtsgrundlage.
 - **Neu Punkt 14 KI-Funktionen (Anthropic):** Muster-Spiegel und
@@ -25,7 +29,7 @@ sondern in `docs/DATENSCHUTZ-TODO.md` als offen notiert.
 - Cookie-Abschnitt nennt Meta-Pixel und die beim Widerruf gelöschten Cookies;
   Supabase-Liste ergänzt (KI-Ergebnisse, Buchbestellungen).
 - Nummerierung jetzt 1–17, alle Querverweise angepasst.
-- Code unverändert – nur der Text der Datenschutzerklärung und die Doku.
+- Sonst kein Code geändert.
 
 ---
 
