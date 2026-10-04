@@ -5,6 +5,47 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-04 – Über-mich-Seite in die Produktabgrenzung einbezogen
+
+**Anlass:** Ergänzung zu Phase 1. `/ueber-mich` bleibt Heikos persönliche
+Geschichte, positioniert ihn aber als Gründer statt als persönlichen Begleiter
+innerhalb des digitalen Angebots. Nur Texte geändert; Layout, Bilder, Timeline,
+Fragenboxen, Karten und Animationen unverändert. Regel ergänzt in
+`docs/RECHTLICHE-PRODUKTABGRENZUNG.md` („Über-mich-Seite und Rolle von Heiko“).
+
+`src/app/ueber-mich/page.tsx`
+- Meta-Beschreibung: „Begleiter für mentale Entprogrammierung … warum ich
+  Menschen helfe …“ → „Gründer von Werde Meister deiner Gedanken … wie aus
+  meinem eigenen Weg die 7 Stufen … entstanden sind.“
+- Hero-Intro: „Begleiter für mentale Entprogrammierung. Ich helfe Menschen …“ →
+  „Werde Meister deiner Gedanken ist aus meinem eigenen Weg entstanden – …“
+- Meilenstein „Heute“: „Die 7 Stufen weitergeben“ → „Aus meinem Weg wurden die
+  7 Stufen“, Text neu (Grundlage von Werde Meister deiner Gedanken).
+- „Woher mein Wissen kommt“: „Was ich weitergebe …“ → „Die Inhalte von Werde
+  Meister deiner Gedanken sind aus drei Quellen gewachsen“.
+- „Ausbildungen“: Satz ergänzt, dass keine ärztliche, psychotherapeutische
+  oder heilkundliche Qualifikation damit verbunden ist.
+- „Eigene Erfahrung“: neuer Text nach Vorgabe.
+- Hinweis: „Ich bin kein Arzt … Meine Begleitung ersetzt …“ → Inhalte dienen der
+  Selbstreflexion …, ersetzen keine Diagnose oder Behandlung; Verweis an
+  qualifizierte Fachpersonen.
+- CTA: „Lern mich kennen“ → „Nachricht schreiben“ (weiter `/kontakt`).
+- Karten „Nächste Schritte“: Test als Selbsteinschätzung, Mitgliedschaft als
+  Plattform zur eigenständigen Nutzung.
+- Persönliche Geschichte (Zusammenbruch, Ängste, Meditation, Fragen, Verlust,
+  Identität, Bewusstsein, Entstehung der 7 Stufen) unverändert.
+
+`src/lib/content.ts` – `values` (wirkt auf `/ueber-mich` **und** Startseite
+`WhyMe.tsx`): Authentizität, Eigenverantwortung, Klarheit, Tiefe nach Vorgabe
+neu formuliert („Ehrliche Arbeit auf Augenhöhe“, „Ich gebe dir Werkzeuge“,
+„Wir gehen an die Wurzel deiner Muster“ entfallen).
+
+**Bewusst nicht geändert, aber gefunden:** „Begleiter für mentale
+Entprogrammierung“ steht noch auf der Startseite (`WhyMe.tsx`, Z. 55) und im
+Autorenkasten der Blogartikel (`src/app/blog/[slug]/page.tsx`, Z. 301).
+
+---
+
 ## 2026-10-03 – Datenschutzerklärung: Meta-Pixel, YouTube, Stripe, Anthropic
 
 **Anlass:** Vier tatsächlich eingesetzte Dienste fehlten in

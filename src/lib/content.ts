@@ -146,19 +146,19 @@ export type Value = { title: string; text: string };
 export const values: Value[] = [
   {
     title: "Authentizität",
-    text: "Kein Guru-Getue, keine Floskeln. Ehrliche Arbeit auf Augenhöhe – so, wie ich sie selbst gebraucht hätte.",
+    text: "Kein Guru-Getue, keine Floskeln. Die Inhalte bleiben verständlich, ehrlich und ohne künstliche Überhöhung.",
   },
   {
     title: "Eigenverantwortung",
-    text: "Ich gebe dir Werkzeuge, keine Abhängigkeit. Das Steuer bleibt in deiner Hand.",
+    text: "Du bekommst Impulse und Werkzeuge zur eigenen Reflexion. Was davon für dich passt und was du daraus machst, entscheidest du selbst.",
   },
   {
     title: "Klarheit",
-    text: "Komplexe innere Prozesse in verständliche, umsetzbare Schritte übersetzt.",
+    text: "Komplexe Zusammenhänge werden verständlich und alltagstauglich aufbereitet.",
   },
   {
     title: "Tiefe",
-    text: "Wir kratzen nicht an der Oberfläche. Wir gehen an die Wurzel deiner Muster.",
+    text: "Nicht nur schnelle Tipps. Die Inhalte schauen auch auf Hintergründe, Prägungen und Zusammenhänge hinter wiederkehrenden Denk- und Verhaltensmustern.",
   },
 ];
 
