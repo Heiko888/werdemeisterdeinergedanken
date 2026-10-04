@@ -31,8 +31,8 @@ export function WhyMe() {
                 meine Gedanken. Ich kann lernen, sie zu meistern.
               </p>
               <p>
-                Dieser Weg hat mein Leben verändert. Heute begleite ich Menschen
-                dabei, denselben Schritt zu gehen – bodenständig, ehrlich und ohne
+                Dieser Weg hat mein Leben verändert. Daraus ist Werde Meister
+                deiner Gedanken entstanden – bodenständig, ehrlich und ohne
                 Umwege über spirituelle Floskeln.
               </p>
             </div>
@@ -52,7 +52,7 @@ export function WhyMe() {
                   Heiko Schwaninger
                 </p>
                 <p className="text-sm text-ink-muted">
-                  Begleiter für mentale Entprogrammierung
+                  Gründer von Werde Meister deiner Gedanken
                 </p>
               </div>
             </div>

@@ -40,9 +40,20 @@ Fragenboxen, Karten und Animationen unverändert. Regel ergänzt in
 neu formuliert („Ehrliche Arbeit auf Augenhöhe“, „Ich gebe dir Werkzeuge“,
 „Wir gehen an die Wurzel deiner Muster“ entfallen).
 
-**Bewusst nicht geändert, aber gefunden:** „Begleiter für mentale
-Entprogrammierung“ steht noch auf der Startseite (`WhyMe.tsx`, Z. 55) und im
-Autorenkasten der Blogartikel (`src/app/blog/[slug]/page.tsx`, Z. 301).
+**Rollenbezeichnung seitenweit ersetzt** (Freigabe am selben Tag):
+„Begleiter für mentale Entprogrammierung“ bzw. „Begleiter für
+Bewusstseinsentwicklung“ → „Gründer von Werde Meister deiner Gedanken“ in
+- `src/components/sections/WhyMe.tsx` (Startseite, Signatur)
+- `src/app/blog/[slug]/page.tsx` (Autorenkasten)
+- `src/app/buch/page.tsx` und `src/app/gratis-ebook/page.tsx` (Zitat-Signatur)
+- `src/components/sections/Hero.tsx` (2× Alt-Text des Porträts)
+- Zusätzlich `WhyMe.tsx`: „Heute begleite ich Menschen dabei, denselben
+  Schritt zu gehen“ → „Daraus ist Werde Meister deiner Gedanken entstanden“.
+
+Bewusst belassen: „mentale Entprogrammierung“ als **Thema** (Blog-Beschreibung,
+Buchkapitel 8, SEO-Keyword in `layout.tsx`); „Die 7 Stufen begleiten dich“
+(FAQ, meint die Inhalte); „ich helfe dir persönlich weiter“ bei
+Zahlungsproblemen (organisatorischer Support).
 
 ---
 
