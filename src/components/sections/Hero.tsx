@@ -95,7 +95,7 @@ export function Hero() {
             />
             <Image
               src={heikoHero}
-              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
+              alt="Heiko Schwaninger – Gründer von Werde Meister deiner Gedanken"
               priority
               // Nur ab lg sichtbar; Breite hoechstens 36rem (576px).
               sizes="36rem"
@@ -145,7 +145,7 @@ export function Hero() {
             />
             <Image
               src={heikoHero}
-              alt="Heiko Schwaninger – Begleiter für Bewusstseinsentwicklung"
+              alt="Heiko Schwaninger – Gründer von Werde Meister deiner Gedanken"
               priority
               // Ohne `sizes` nimmt der Browser 100vw an und laedt die groesste
               // Variante (99 KB) fuer ein 280 px breites Bild. 280px = 68vw bei

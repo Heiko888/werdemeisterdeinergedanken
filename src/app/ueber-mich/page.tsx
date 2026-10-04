@@ -12,7 +12,7 @@ import { withCanonical } from "@/lib/seo";
 export const metadata: Metadata = withCanonical("/ueber-mich", {
   title: "Über mich",
   description:
-    "Heiko Schwaninger – Begleiter für mentale Entprogrammierung. Meine Geschichte, meine Haltung und warum ich Menschen helfe, ihre Gedanken zu meistern.",
+    "Heiko Schwaninger – Gründer von Werde Meister deiner Gedanken. Meine Geschichte, meine Haltung und wie aus meinem eigenen Weg die 7 Stufen der Bewusstseinsentwicklung entstanden sind.",
 });
 
 const milestones = [
@@ -33,8 +33,8 @@ const milestones = [
   },
   {
     year: "Heute",
-    title: "Die 7 Stufen weitergeben",
-    text: "Aus dem Weg, den ich selbst gegangen bin, wurde eine Landkarte – die 7 Stufen der Bewusstseinsentwicklung, die ich heute an andere weitergebe.",
+    title: "Aus meinem Weg wurden die 7 Stufen",
+    text: "Aus vielen Jahren eigener Erfahrung, Selbststudium und intensiver Auseinandersetzung mit Denken, Wahrnehmung und Veränderung entstand eine Landkarte: die 7 Stufen der Bewusstseinsentwicklung. Heute bilden sie die Grundlage von Werde Meister deiner Gedanken.",
   },
 ];
 
@@ -43,7 +43,7 @@ const milestones = [
 const foundations = [
   {
     title: "Ausbildungen",
-    text: "Ich habe verschiedene Ausbildungen durchlaufen – nicht, um ein Diplom an die Wand zu hängen, sondern weil ich verstehen wollte, wie Denken, Wahrnehmung und Veränderung wirklich funktionieren.",
+    text: "Ich habe verschiedene Ausbildungen durchlaufen – nicht, um ein Diplom an die Wand zu hängen, sondern weil ich verstehen wollte, wie Denken, Wahrnehmung und Veränderung wirklich funktionieren. Daraus kommt ein Teil meines Wissens – eine ärztliche, psychotherapeutische oder heilkundliche Qualifikation ist damit nicht verbunden.",
   },
   {
     title: "Selbststudium",
@@ -51,7 +51,7 @@ const foundations = [
   },
   {
     title: "Eigene Erfahrung",
-    text: "Das Wichtigste stand in keinem Lehrbuch. Jede Stufe, über die ich heute spreche, bin ich selbst gegangen – mit allen Umwegen, Rückschritten und Aha-Momenten.",
+    text: "Viele der Themen, die heute in Werde Meister deiner Gedanken vorkommen, kenne ich nicht nur aus Büchern. Ich habe mich selbst über Jahre damit auseinandergesetzt – mit Umwegen, Rückschritten und eigenen Erkenntnissen.",
   },
 ];
 
@@ -62,7 +62,7 @@ const nextSteps = [
     href: "/bewusstseinstest",
     eyebrow: "Kostenlos starten",
     title: "Bewusstseinstest",
-    text: "Finde in wenigen Minuten heraus, auf welcher der 7 Stufen du gerade stehst.",
+    text: "Eine kurze Selbsteinschätzung, die dir zeigt, welche der 7 Stufen bei deinen aktuellen Antworten besonders im Vordergrund steht.",
   },
   {
     href: "/buch",
@@ -74,7 +74,7 @@ const nextSteps = [
     href: "/mitgliedschaft",
     eyebrow: "Demnächst",
     title: "Mitgliedschaft",
-    text: "Die digitale Mitgliederplattform mit allen 7 Stufen, Videos und Praxis – startet demnächst.",
+    text: "Die digitale Plattform mit den 7 Stufen, Videos, Wissen, Praxisimpulsen und Reflexion – zur eigenständigen Nutzung in deinem Tempo.",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function AboutPage() {
             Hallo, ich bin <em className="accent">Heiko</em>
           </>
         }
-        intro="Begleiter für mentale Entprogrammierung. Ich helfe Menschen, den Lärm im Kopf zu verstehen, alte Programme zu lösen und wieder selbst am Steuer zu sitzen."
+        intro="Werde Meister deiner Gedanken ist aus meinem eigenen Weg entstanden – aus der Frage, wie Gedanken, Prägungen und automatische Muster unser Leben beeinflussen und wie wir lernen können, bewusster damit umzugehen."
         image="/ueber-heiko-berg.webp"
         imagePosition="30% 15%"
         spotlight="left"
@@ -279,7 +279,7 @@ export default function AboutPage() {
                 <ArrowRight />
               </Button>
               <Button href="/kontakt" variant="secondary" className="w-fit">
-                Lern mich kennen
+                Nachricht schreiben
               </Button>
             </div>
           </Reveal>
@@ -329,8 +329,8 @@ export default function AboutPage() {
               Kein Titel. Sondern ein <em className="accent">gegangener Weg</em>
             </h2>
             <p className="mt-5 text-[1.05rem] leading-relaxed text-ink-mid">
-              Ich schmücke mich nicht mit Diplomen oder großen Titeln. Was ich
-              weitergebe, ist aus drei Quellen gewachsen:
+              Ich schmücke mich nicht mit Diplomen oder großen Titeln. Die Inhalte
+              von Werde Meister deiner Gedanken sind aus drei Quellen gewachsen:
             </p>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -347,8 +347,12 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-ink-muted">
-            Wichtig: Ich bin kein Arzt und kein Therapeut. Meine Begleitung ersetzt
-            keine medizinische oder psychotherapeutische Behandlung.
+            Wichtig: Die Inhalte von Werde Meister deiner Gedanken dienen der
+            persönlichen Selbstreflexion, Bewusstseinsentwicklung und allgemeinen
+            Wissensvermittlung. Sie ersetzen keine medizinische,
+            psychotherapeutische oder sonstige heilkundliche Diagnose oder
+            Behandlung. Bei psychischen oder körperlichen Beschwerden wende dich
+            bitte an entsprechend qualifizierte Fachpersonen.
           </p>
         </Container>
       </section>

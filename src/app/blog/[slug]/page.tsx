@@ -300,7 +300,7 @@ export default async function BlogPostPage({
                 Heiko Schwaninger
               </span>
               <span className="text-sm text-ink-mid">
-                Begleiter für mentale Entprogrammierung
+                Gründer von Werde Meister deiner Gedanken
               </span>
             </div>
           </div>

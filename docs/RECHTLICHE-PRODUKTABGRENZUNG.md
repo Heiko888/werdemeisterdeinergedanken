@@ -87,6 +87,25 @@ Kündigung, Fehler) laufen über das Kontaktformular bzw. E-Mail und sind von
 den Inhalten der Mitgliedschaft getrennt. Sie sind keine inhaltliche
 Betreuung. Themenvorschläge für neue Inhalte sind ebenfalls willkommen.
 
+### Über-mich-Seite und Rolle von Heiko
+
+`src/app/ueber-mich/page.tsx` erzählt Heikos tatsächlichen Weg – persönlich und
+unverwässert. Botschaft: „Das ist meine Geschichte. Daraus ist Werde Meister
+deiner Gedanken entstanden.“ Nicht: „Ich betreue, berate oder coache dich
+persönlich innerhalb dieses digitalen Angebots.“
+
+- Primäre Positionierung: **Gründer von Werde Meister deiner Gedanken**.
+- Keine Rollenbezeichnung als Coach, persönlicher Begleiter, Therapeut, Berater
+  oder „Begleiter für mentale Entprogrammierung“ im Zusammenhang mit dem
+  digitalen Produkt. „Mentale Entprogrammierung“ darf als Thema vorkommen,
+  nicht als Berufsbezeichnung.
+- Keine erfundenen Abschlüsse oder Qualifikationen; Ausbildungen erklären nur,
+  woher Wissen stammt – ausdrücklich keine heilkundliche Qualifikation.
+- Kein Überkorrigieren: „Dieser Gedanke hat mich begleitet“ ist unproblematisch.
+  Geändert wird nur, was eine geschuldete persönliche Betreuung suggeriert.
+- Die Werte (`values` in `src/lib/content.ts`) erscheinen auf `/ueber-mich` und
+  auf der Startseite (`WhyMe.tsx`) und folgen derselben Regel.
+
 ### Persönliche 1:1-Leistungen
 
 Offline angebotene persönliche 1:1-Leistungen sind ein **separates Angebot**
