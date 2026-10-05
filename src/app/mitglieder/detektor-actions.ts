@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { deepDives } from "@/lib/deep-dives";
 import { mitErsatzmodell } from "@/lib/ki-modell";
+import { isKiDetektorEnabled } from "@/lib/ki-features";
 
 /**
  * Manipulations-Detektor.
@@ -16,8 +17,10 @@ import { mitErsatzmodell } from "@/lib/ki-modell";
  * nüchterner Erklärung. Kein Werturteil über das Thema des Textes; es geht um
  * die Mechanik, nicht um Gesinnung.
  *
- * Ein Aufruf passiert ausschließlich auf Klick. Ohne ANTHROPIC_API_KEY meldet
- * die Funktion `not_configured`; die Seite blendet das Werkzeug dann aus.
+ * Ein Aufruf passiert ausschließlich auf Klick. Ohne ANTHROPIC_API_KEY oder
+ * ohne den Schalter KI_DETEKTOR_ENABLED=true (Standard: aus,
+ * src/lib/ki-features.ts) meldet die Funktion `not_configured`; Dashboard-Link
+ * und Seite entfallen, und es geht kein Text an die KI.
  */
 
 const MIN_CHARS = 40;
@@ -25,7 +28,7 @@ const MAX_CHARS = 5000;
 
 /** Ist der Detektor serverseitig konfiguriert? */
 export async function isDetektorConfigured(): Promise<boolean> {
-  return Boolean(process.env.ANTHROPIC_API_KEY);
+  return isKiDetektorEnabled() && Boolean(process.env.ANTHROPIC_API_KEY);
 }
 
 /** Die 16 Techniken als Klassifikationsgrundlage – Single Source of Truth. */
@@ -79,6 +82,9 @@ function extractJson(text: string): string | null {
  * Freigabe (Button-Klick) aufrufen.
  */
 export async function analyzeText(input: string): Promise<AnalyzeResult> {
+  // Schalter zuerst – auch ein direkter Aufruf der Server-Action überträgt
+  // bei ausgeschalteter Funktion keinen Text an die KI.
+  if (!isKiDetektorEnabled()) return { status: "not_configured" };
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return { status: "not_configured" };
   if (!isSupabaseConfigured) return { status: "unauthenticated" };

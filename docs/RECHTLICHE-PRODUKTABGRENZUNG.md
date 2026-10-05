@@ -73,12 +73,35 @@ nur, was die Person selbst eingebracht hat.
 |---|---|---|
 | KI-Begleiter (Chat) | `src/app/mitglieder/begleiter/` | **aus** – Schalter `KI_BEGLEITER_ENABLED` (Standard `false`) |
 | KI-Reading zum Gedankenprofil | `src/app/mitglieder/reading-actions.ts` | **aus** – Schalter `KI_READING_ENABLED` (Standard `false`) |
-| Muster-Spiegel (Journal) | `src/app/mitglieder/muster-actions.ts` | aktiv; Prompt enthält ausdrücklich: keine Prüfung des Verständnisses, keine Bewertung der fachlichen Richtigkeit, kein bestanden/nicht bestanden, keine Aussage über Lernziele, nur Spiegelung und Strukturierung |
+| Muster-Spiegel (Journal) | `src/app/mitglieder/muster-actions.ts` | **aus** (seit 2026-10-05) – Schalter `KI_MUSTER_SPIEGEL_ENABLED` (Standard `false`). Prompt enthält ausdrücklich: keine Prüfung des Verständnisses, keine Bewertung der fachlichen Richtigkeit, kein bestanden/nicht bestanden, keine Aussage über Lernziele, nur Spiegelung und Strukturierung |
+| Manipulations-Detektor | `src/app/mitglieder/detektor-actions.ts` | **aus** (seit 2026-10-05) – Schalter `KI_DETEKTOR_ENABLED` (Standard `false`). Sendet bei Nutzung den eingefügten Text an Anthropic |
 
-Die Schalter liegen in `src/lib/ki-features.ts`. Solange sie aus sind, gibt es
-keinen Launcher, keinen Link, keine tote Seite und keine Fehlermeldung an
-Mitglieder; der Code bleibt vollständig erhalten. Vor dem Einschalten diese
-Datei erneut prüfen.
+Die Schalter liegen in `src/lib/ki-features.ts`; nur der exakte Wert `true`
+schaltet ein. Solange sie aus sind, gibt es keinen Launcher, keinen Link,
+keinen Button, keine tote Seite (`/mitglieder/begleiter` und
+`/mitglieder/detektor` leiten ins Dashboard um) und keine Fehlermeldung an
+Mitglieder. Auch direkte Aufrufe der Server-Actions bzw. der Begleiter-Route
+übertragen nichts. **Solange alle vier aus sind, gehen keine Nutzereingaben an
+Anthropic.** Code und gespeicherte Ergebnisse bleiben vollständig erhalten.
+
+Vor dem Einschalten einer Funktion:
+1. diese Datei und `docs/DATENSCHUTZ-TODO.md` prüfen,
+2. Datenschutzerklärung Punkt 14 um Anbieter, Daten, Rechtsgrundlage und
+   Drittlandbezug ergänzen – nur mit den tatsächlich geltenden
+   Anthropic-Vertragsunterlagen,
+3. erst dann den Schalter auf `true` setzen.
+
+Hinweis Begleiter: Wird er eingeschaltet, nimmt er auch gespeicherte
+Spiegeltexte und Detektor-Ergebnisse als Kontext mit – Punkt 14 muss das dann
+ebenfalls nennen.
+
+### Analytics und Bewusstseinstest
+
+An Google Analytics geht beim Test nur die Tatsache „Test abgeschlossen“
+(`test_complete` ohne Parameter) bzw. „Lead aus dem Test“ (nur
+`source: "bewusstseinstest"`). Keine Stufe, keine Punkte, keine Antworten, kein
+Mitgliedsstatus. An Meta geht `test_complete` überhaupt nicht – Meta erhält nur
+die in `META_EVENT` (`src/lib/analytics.ts`) zugeordneten Standard-Ereignisse.
 
 ### Support
 
