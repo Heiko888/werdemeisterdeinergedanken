@@ -81,7 +81,10 @@ export type TrackEventName =
 
 export type TrackEventParams = Record<string, string | number | boolean | undefined>;
 
-/** Zuordnung GA4-Event → Meta-Standard-Event (nur wo es eines gibt). */
+/**
+ * Zuordnung GA4-Event → Meta-Standard-Event. Nur Ereignisse, die hier stehen,
+ * gehen an Meta – alles andere (insbesondere `test_complete`) bleibt bei GA4.
+ */
 const META_EVENT: Partial<Record<TrackEventName, string>> = {
   generate_lead: "Lead",
   begin_checkout: "InitiateCheckout",
@@ -107,12 +110,11 @@ export function trackEvent(name: TrackEventName, params: TrackEventParams = {}):
     window.gtag("event", name, clean);
   }
 
+  // Meta nur für zugeordnete Standard-Ereignisse. Kein Custom-Event-Fallback
+  // mehr: `test_complete` (Bewusstseinstest) geht bewusst NICHT an Meta.
   const metaName = META_EVENT[name];
   if (META_PIXEL_ID && metaName && typeof window.fbq === "function") {
     window.fbq("track", metaName, clean);
-  } else if (META_PIXEL_ID && typeof window.fbq === "function") {
-    // Ereignisse ohne Meta-Standard (z. B. test_complete) als Custom-Event.
-    window.fbq("trackCustom", name, clean);
   }
 }
 

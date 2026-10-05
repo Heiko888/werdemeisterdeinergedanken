@@ -123,10 +123,10 @@ export function MusterSpiegelPanel({
       </div>
 
       <p className="text-xs leading-relaxed text-ink-muted">
-        Dein Journal bleibt privat. Erst wenn du hier klickst, werden deine
-        Reflexionen einmalig an die KI übergeben, um daraus deinen Spiegel zu
-        schreiben – es läuft nichts automatisch. Deine Reflexionstexte selbst
-        werden dabei nicht gespeichert.
+        Deine Journaleinträge sind grundsätzlich nur in deinem Account
+        sichtbar. Wenn du den Muster-Spiegel ausdrücklich startest, werden die
+        dafür verwendeten Reflexionen zur Erstellung des Spiegeltexts an unseren
+        KI-Dienstleister übertragen.
       </p>
     </div>
   );

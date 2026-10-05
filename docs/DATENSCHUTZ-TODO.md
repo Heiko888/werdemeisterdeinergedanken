@@ -36,9 +36,10 @@ Supabase-Liste nennt KI-Ergebnisse und Buchbestellungen.
   Klären, ob für den Muster-Spiegel eine ausdrückliche Einwilligung nötig ist
   (dann Rechtsgrundlage und Text vor dem Button anpassen).
 - Meta-Pixel: gemeinsame Verantwortlichkeit mit Meta (Art. 26 DSGVO) und
-  Grundlage der USA-Übermittlung. Außerdem prüfen, ob die Test-Stufe (1–7)
-  überhaupt an Meta und GA gehen soll (`test_complete` in
-  `ConsciousnessTest.tsx`) – derzeit so im Code und deshalb so beschrieben.
+  Grundlage der USA-Übermittlung.
+- ~~Test-Stufe an Meta und GA~~ – erledigt 2026-10-05: `test_complete` ohne
+  Parameter, nur noch an GA; `generate_lead` aus dem Test ohne Stufe; Meta
+  bekommt `test_complete` gar nicht. Punkte 6 und 7 angepasst.
 - ~~YouTube-Vorschaubild auf der Startseite~~ – erledigt 2026-10-03:
   `MaybeNotYou.tsx` nutzt immer das lokale Cover
   `public/video-thumbnails/landing/ein-anderer-blickwinkel.png`; vor dem Klick
@@ -50,15 +51,35 @@ Supabase-Liste nennt KI-Ergebnisse und Buchbestellungen.
 - Sobald die Mitgliedschaft buchbar ist: Stripe-Abschnitt um das Abo ergänzen.
 - Vor Einschalten von `KI_BEGLEITER_ENABLED` / `KI_READING_ENABLED`:
   Punkt 14 ergänzen (Begleiter sendet zusätzlich Vorname, Profilwerte,
-  Journal-Auszüge und Gesprächsverlauf).
+  Journal-Auszüge, Gesprächsverlauf sowie gespeicherte Spiegeltexte und
+  Detektor-Ergebnisse).
+
+## Am 2026-10-05: alle KI-Funktionen aus
+
+Bis die Datenschutzgrundlage für Journalinhalte und Anthropic geklärt ist,
+sind **alle vier KI-Funktionen abgeschaltet** (Begleiter, Reading,
+Muster-Spiegel, Manipulations-Detektor; Schalter in `src/lib/ki-features.ts`,
+Standard aus). Es gehen keine Nutzereingaben an Anthropic. Punkt 14 der
+Erklärung sagt nur noch, dass die Funktionen vorbereitet, aber nicht aktiv sind
+– **ohne** Angaben zu Vertragspartner, Speicherdauer, Training,
+Drittlandtransfer oder Standardvertragsklauseln/DPF.
+
+Vor dem Einschalten von `KI_MUSTER_SPIEGEL_ENABLED` bzw. `KI_DETEKTOR_ENABLED`:
+- alle Anthropic-Fragen unten mit den tatsächlich für dieses Projekt geltenden
+  Vertragsunterlagen beantworten,
+- Art. 9 DSGVO für Journalinhalte klären (ausdrückliche Einwilligung?),
+- Punkt 14 der Erklärung neu schreiben,
+- den Hinweis im `MusterSpiegelPanel.tsx` (bereits vorbereitet: Übertragung an
+  den KI-Dienstleister, keine Aussage zur Speicherung beim Anbieter) prüfen.
+- Bereits gespeicherte Ergebnisse (`muster_spiegel`, `detektor_checks`) bleiben
+  erhalten; ob sie aus früherer Nutzung stammen, in Supabase nachsehen.
 
 ## Offen – je Dienst
 
 ### Anthropic API (KI)
-- **Im Code:** `@anthropic-ai/sdk`; Muster-Spiegel (`muster-actions.ts`, aktiv),
-  Manipulations-Detektor (`detektor-actions.ts`, aktiv sobald Key gesetzt),
-  KI-Begleiter und KI-Reading (per Schalter derzeit **aus**).
-- **In der Erklärung:** seit 2026-10-03 Punkt 14 (offene Fragen siehe oben).
+- **Im Code:** `@anthropic-ai/sdk`; Muster-Spiegel, Manipulations-Detektor,
+  KI-Begleiter und KI-Reading – seit 2026-10-05 alle per Schalter **aus**.
+- **In der Erklärung:** Punkt 14, nur als „vorbereitet, nicht aktiv“.
 - Prüfen: Welche Daten gehen raus (Journal-Texte, Detektor-Eingaben,
   Profilwerte)? Rechtsgrundlage, Einwilligung vor dem Klick, Anbieter/Sitz,
   Drittlandtransfer, AV-Vertrag/Datenschutzbedingungen, Speicherdauer beim

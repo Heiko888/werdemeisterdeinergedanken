@@ -23,6 +23,46 @@ ansehen“) unverändert – sie sind theme-fähig und auf Dunkel korrekt.
 
 ---
 
+## 2026-10-05 – Kontroll-Patch: Tracking ohne Test-Stufe, alle KI-Funktionen aus
+
+**Anlass:** Kontrolle nach PR #389–#391. Bis die Datenschutzgrundlage für
+Journalinhalte und Anthropic geklärt ist, gehen keine Nutzereingaben an
+Anthropic und keine Testergebnisse an Analytics/Marketing.
+
+- **Über-mich-Seite & Werte:** geprüft – auf `main` bereits korrekt (PR #391),
+  keine Änderung nötig.
+- **Tracking** (`ConsciousnessTest.tsx`, `src/lib/analytics.ts`):
+  `test_complete` ohne Parameter (vorher `stufe` + `member`); `generate_lead`
+  aus dem Test ohne `stufe`. Meta bekommt nur noch die zugeordneten
+  Standard-Ereignisse (Lead, InitiateCheckout, Purchase) – der
+  Custom-Event-Fallback, über den `test_complete` an Meta ging, ist entfernt.
+- **Neue Schalter** (`src/lib/ki-features.ts`, Standard aus):
+  `KI_MUSTER_SPIEGEL_ENABLED` (Journal-Seite ohne Panel, Server-Action
+  `generateMusterSpiegel` verweigert) und `KI_DETEKTOR_ENABLED`
+  (Dashboard-Link weg, `/mitglieder/detektor` → `/mitglieder`, Server-Action
+  `analyzeText` verweigert). Alle vier Schalter schalten jetzt nur bei exakt
+  `true` ein (vorher auch „TRUE“/„ true“). In `.env.local.example`
+  dokumentiert. **Auf dem Server nichts zu tun:** ohne Variablen alles aus.
+- **MusterSpiegelPanel.tsx:** Hinweis „Dein Journal bleibt privat … nicht
+  gespeichert“ → vorbereitete Formulierung zur Übertragung an den
+  KI-Dienstleister, ohne Aussage zur Speicherung beim Anbieter.
+- **Datenschutzerklärung:** Punkt 6 nennt die gezählten Aktionen (Test nur als
+  „abgeschlossen“); Punkt 7 ohne Test-Stufe, Test-Ereignisse gehen nicht an
+  Meta; Punkt 14 neu: KI-Funktionen vorbereitet, **derzeit nicht aktiv**,
+  keine Übertragung – Angaben zu Vertragspartner, USA-Verarbeitung und
+  Rechtsgrundlage für Anthropic entfernt, Datenschutz-Link entfernt.
+- **Workshop-Vorlage** `tools/workshop/specs/bewusstseinstest.json`: Schlüssel
+  `_INTERN_HINWEIS` (nicht freigegeben, vor öffentlicher Nutzung prüfen);
+  vom Generator ignoriert. Inhalt unverändert.
+- Doku: `docs/RECHTLICHE-PRODUKTABGRENZUNG.md` (KI-Tabelle, neuer Abschnitt
+  „Analytics und Bewusstseinstest“), `docs/DATENSCHUTZ-TODO.md`.
+
+**Geprüft:** `tsc` ✓, `npm test` 13/13 ✓, ESLint geänderte Dateien ✓,
+`npm run build` ✓. Laufzeit: `/mitglieder/detektor` → Redirect, kein
+Detektor-Link, kein Muster-Spiegel-Panel im Journal.
+
+---
+
 ## 2026-10-04 – Über-mich-Seite in die Produktabgrenzung einbezogen
 
 **Anlass:** Ergänzung zu Phase 1. `/ueber-mich` bleibt Heikos persönliche

@@ -131,11 +131,13 @@ export function ConsciousnessTest() {
   }, [done, resultStage, answers]);
 
   // Ergebnis sichtbar → einmalig als Konversion melden (nur mit Einwilligung).
+  // Bewusst OHNE Parameter: keine Stufe, Punkte, Antworten oder Mitgliedsstatus
+  // an externe Dienste. Meta bekommt dieses Ereignis gar nicht (analytics.ts).
   useEffect(() => {
     if (gate !== "open" || !resultStage || trackedRef.current) return;
     trackedRef.current = true;
-    trackEvent("test_complete", { stufe: resultStage.nr, member: memberSaved });
-  }, [gate, resultStage, memberSaved]);
+    trackEvent("test_complete");
+  }, [gate, resultStage]);
 
   function choose(value: number) {
     setAnswers((prev) => {
@@ -187,7 +189,6 @@ export function ConsciousnessTest() {
   if (done && resultStage && gate === "email") {
     return (
       <EmailGate
-        stufe={resultStage.nr}
         answers={answers}
         onDone={(mode) => {
           setLeadMode(mode);
@@ -475,11 +476,9 @@ type GateStatus = "idle" | "sending" | "error";
  * Schranke offen und zeigen die Meldung.
  */
 function EmailGate({
-  stufe,
   answers,
   onDone,
 }: {
-  stufe: number;
   answers: (number | null)[];
   onDone: (mode: string) => void;
 }) {
@@ -509,7 +508,8 @@ function EmailGate({
       const data = await res.json().catch(() => ({}));
       if (res.ok) {
         if (data?.mode !== "not_configured") {
-          trackEvent("generate_lead", { source: "bewusstseinstest", stufe });
+          // Ohne Test-Stufe – nur die Quelle des Leads (siehe test_complete).
+          trackEvent("generate_lead", { source: "bewusstseinstest" });
         }
         onDone(typeof data?.mode === "string" ? data.mode : "confirm");
         return;

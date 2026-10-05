@@ -6,6 +6,7 @@ import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { getJournalEntries } from "@/app/mitglieder/actions";
 import { resolveEntry } from "@/lib/journal";
 import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
+import { isKiMusterSpiegelEnabled } from "@/lib/ki-features";
 
 /**
  * Muster-Spiegel: KI-Auswertung der eigenen Journal-Reflexionen.
@@ -15,8 +16,11 @@ import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
  * werden die Reflexionstexte einmalig an die KI übergeben; im Hintergrund läuft
  * nichts. Die regelbasierte Standortbestimmung bleibt davon unberührt.
  *
- * Ist kein ANTHROPIC_API_KEY gesetzt, meldet die Funktion `not_configured` –
- * die Journal-Seite blendet die Spiegel-Option dann einfach aus.
+ * Ist kein ANTHROPIC_API_KEY gesetzt ODER der Schalter KI_MUSTER_SPIEGEL_ENABLED
+ * nicht auf "true" (Standard: aus, src/lib/ki-features.ts), meldet die Funktion
+ * `not_configured` – die Journal-Seite blendet die Spiegel-Option dann aus und
+ * es werden keine Journaltexte an die KI übertragen. Gespeicherte Spiegel
+ * bleiben in der Datenbank erhalten.
  */
 
 const MODEL = KI_MODELL;
@@ -29,7 +33,7 @@ const MAX_INPUT_CHARS = 6000;
 
 /** Ist die Muster-Spiegel-Funktion serverseitig konfiguriert? */
 export async function isMusterSpiegelConfigured(): Promise<boolean> {
-  return Boolean(process.env.ANTHROPIC_API_KEY);
+  return isKiMusterSpiegelEnabled() && Boolean(process.env.ANTHROPIC_API_KEY);
 }
 
 export type MusterSpiegel = {
@@ -75,6 +79,9 @@ export type GenerateMusterResult =
  * ihn und gibt ihn zurück. Nur nach ausdrücklicher Freigabe aufrufen.
  */
 export async function generateMusterSpiegel(): Promise<GenerateMusterResult> {
+  // Schalter zuerst – auch ein direkter Aufruf der Server-Action überträgt
+  // bei ausgeschalteter Funktion keine Journaltexte.
+  if (!isKiMusterSpiegelEnabled()) return { status: "not_configured" };
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return { status: "not_configured" };
   if (!isSupabaseConfigured) return { status: "unauthenticated" };

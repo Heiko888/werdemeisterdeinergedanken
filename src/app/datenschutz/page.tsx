@@ -124,7 +124,11 @@ export default function PrivacyPage() {
                 Erhoben werden pseudonymisierte Nutzungsdaten wie aufgerufene
                 Seiten, ungefährer Standort (auf Basis der gekürzten IP-Adresse),
                 Verweildauer, verwendetes Gerät und Browser sowie die Referrer-
-                Quelle. Die IP-Anonymisierung ist aktiviert, sodass deine
+                Quelle. Zusätzlich zählen wir einzelne Aktionen: Anmeldung zu
+                E-Book oder Bewusstseinstest, Abschluss des Bewusstseinstests
+                (nur die Tatsache, dass er abgeschlossen wurde – ohne Ergebnis,
+                Stufe, Punkte oder Antworten), Start eines Bezahlvorgangs und
+                abgeschlossener Kauf. Die IP-Anonymisierung ist aktiviert, sodass deine
                 IP-Adresse nicht vollständig gespeichert wird. Wir nutzen diese
                 Daten ausschließlich, um die Website zu verbessern; eine
                 Zusammenführung mit deinen Account-Daten findet nicht statt.
@@ -157,10 +161,11 @@ export default function PrivacyPage() {
               </p>
               <p>
                 Übermittelt werden dabei Seitenaufrufe und folgende Ereignisse:
-                Anmeldung zu E-Book oder Bewusstseinstest (&bdquo;Lead&ldquo;),
-                Abschluss des Bewusstseinstests einschließlich der ermittelten
-                Stufe (1–7), Start eines Bezahlvorgangs und abgeschlossener Kauf
-                (Bestellkennung, Produkt, Betrag, Währung). Dazu verarbeitet Meta technische Daten
+                Anmeldung zu E-Book oder Bewusstseinstest (&bdquo;Lead&ldquo;,
+                ohne Testergebnis), Start eines Bezahlvorgangs und
+                abgeschlossener Kauf (Bestellkennung, Produkt, Betrag, Währung).
+                Ergebnisse oder den Abschluss des Bewusstseinstests übermitteln
+                wir nicht an Meta. Dazu verarbeitet Meta technische Daten
                 wie IP-Adresse und Browserinformationen und setzt die Cookies
                 _fbp bzw. _fbc. Meta kann diese Daten mit einem bestehenden
                 Facebook- oder Instagram-Konto verknüpfen und auch außerhalb der
@@ -333,52 +338,29 @@ export default function PrivacyPage() {
                 </a>
               </p>
 
-              <h2>14. KI-Funktionen im Mitgliederbereich (Anthropic)</h2>
+              <h2>14. KI-Funktionen im Mitgliederbereich</h2>
               <p>
-                Im Mitgliederbereich bieten wir Werkzeuge an, die auf einem
-                KI-Sprachmodell der Anthropic PBC, USA, beruhen. Eine Übermittlung
-                an Anthropic erfolgt ausschließlich, wenn du die jeweilige Funktion
-                selbst per Klick startest – im Hintergrund läuft nichts
-                automatisch. Die Übermittlung erfolgt von unserem Server aus; dabei
-                werden weder dein Name noch deine E-Mail-Adresse an Anthropic
-                weitergegeben. Die Verarbeitung bei Anthropic findet in den USA
-                statt.
-              </p>
-              <ul>
-                <li>
-                  <strong>Muster-Spiegel:</strong> Auf deinen Klick werden deine
-                  Journal-Reflexionen samt der zugehörigen Fragen an Anthropic
-                  übermittelt. Gespeichert wird nur der erzeugte Spiegeltext mit
-                  Datum und der Anzahl der berücksichtigten Einträge – deine
-                  Reflexionstexte werden dafür nicht noch einmal gespeichert.
-                </li>
-                <li>
-                  <strong>Manipulations-Detektor:</strong> Der Text, den du
-                  einfügst, wird auf deinen Klick an Anthropic übermittelt.
-                  Gespeichert werden der eingefügte Text und das Ergebnis in deinem
-                  Verlauf.
-                </li>
-              </ul>
-              <p>
-                Bitte füge dort keine Daten anderer Personen und keine sensiblen
-                Angaben ein, die du nicht übermitteln möchtest. Die Ergebnisse sind
-                nur für dich sichtbar (siehe Punkt 12). Weitere KI-Funktionen (ein
-                KI-Gespräch und ein KI-Text zum Gedankenprofil) sind derzeit nicht
-                aktiv; vor einer Aktivierung ergänzen wir diese Erklärung.
+                Für den Mitgliederbereich sind Werkzeuge vorbereitet, die auf
+                einem Sprachmodell eines externen KI-Anbieters (Anthropic)
+                beruhen: ein Muster-Spiegel zu deinen Journal-Reflexionen, ein
+                Manipulations-Detektor für eingefügte Texte, ein KI-Gespräch und
+                ein KI-Text zum Gedankenprofil.
               </p>
               <p>
-                Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der
-                von dir angeforderten Funktion im Rahmen deines Zugangs).
-                <br />
-                Datenschutz Anthropic:{" "}
-                <a
-                  href="https://www.anthropic.com/legal/privacy"
-                  className="break-all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  anthropic.com/legal/privacy
-                </a>
+                <strong>Alle diese Funktionen sind derzeit nicht aktiv.</strong>{" "}
+                Es werden keine Journaleinträge, Texte oder sonstigen Eingaben an
+                einen KI-Anbieter übertragen. Bevor wir eine dieser Funktionen
+                einschalten, ergänzen wir diese Erklärung um den Anbieter, die
+                übermittelten Daten, die Rechtsgrundlage und einen etwaigen
+                Drittlandbezug.
+              </p>
+              <p>
+                Ergebnisse, die bei einer früheren Nutzung entstanden sind (z. B.
+                ein gespeicherter Spiegeltext oder Detektor-Verlauf), bleiben in
+                deinem Account gespeichert und sind nur für dich sichtbar (siehe
+                Punkt 12). Auf Wunsch löschen wir sie – eine formlose Mail an{" "}
+                <a href={`mailto:${site.email}`} className="break-all">{site.email}</a>{" "}
+                genügt.
               </p>
 
               <h2>15. Deine Rechte</h2>

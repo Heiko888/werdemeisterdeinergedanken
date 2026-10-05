@@ -16,6 +16,7 @@ import {
   isDetektorConfigured,
   getDetektorHistory,
 } from "@/app/mitglieder/detektor-actions";
+import { isKiDetektorEnabled } from "@/lib/ki-features";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +26,10 @@ export const metadata: Metadata = {
 };
 
 export default async function DetektorPage() {
+  // Schalter KI_DETEKTOR_ENABLED aus (Standard) → still ins Dashboard, damit
+  // niemand über einen alten Link auf einer toten Seite landet.
+  if (!isKiDetektorEnabled()) redirect("/mitglieder");
+
   if (isSupabaseConfigured) {
     const supabase = await createClient();
     const {
