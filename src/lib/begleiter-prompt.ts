@@ -14,9 +14,20 @@ import { stages } from "@/lib/content";
 import { deepDives } from "@/lib/deep-dives";
 import { practices } from "@/lib/practices";
 import { chapters } from "@/lib/wissensdatenbank";
-import type { Gedankenprofil } from "@/lib/gedankenprofil";
 import type { JournalEntry } from "@/app/mitglieder/actions";
 import { resolveEntry } from "@/lib/journal";
+import {
+  BEGLEITER_KEINE_LERNKONTROLLE,
+  KI_ZFU_GRENZEN,
+} from "@/lib/ki-grenzen";
+
+// Kontext-Bausteine liegen in lib/ki-grenzen (gemeinsam mit dem Reading und
+// ohne Laufzeit-Importe testbar); hier für die Begleiter-Route weitergereicht.
+export {
+  selbsteinschaetzungFacts,
+  bearbeitungsstandFacts,
+  behaviorFacts,
+} from "@/lib/ki-grenzen";
 
 /**
  * Verzeichnis aller Mitglieder-Inhalte mit echten Pfaden.
@@ -68,39 +79,8 @@ export function contentCatalogue(): string {
       ? ["", "WISSENSDATENBANK (Kapitel):", ...chapterLines]
       : []),
     "",
-    "WEITERE SEITEN: /mitglieder (Übersicht) · /mitglieder/journal (eigene Notizen) · /mitglieder/gedankenprofil (Auswertung des Bewusstseinstests) · /bewusstseinstest (Test) · /kontakt (Kontakt zu Heiko)",
+    "WEITERE SEITEN: /mitglieder (Übersicht) · /mitglieder/journal (eigene Notizen) · /mitglieder/gedankenprofil (Übersicht der eigenen Selbsteinschätzung aus dem Bewusstseinstest) · /bewusstseinstest (Test) · /kontakt (Kontakt zu Heiko)",
   ].join("\n");
-}
-
-/**
- * Faktische Kurzfassung des Gedankenprofils – dieselbe Grundlage wie beim
- * Reading. Ohne Testergebnis bleibt das Feld leer und der Begleiter weiß,
- * dass er nichts über den Stand der Person voraussetzen darf.
- */
-export function profileFacts(profil: Gedankenprofil): string {
-  if (!profil.hasTest) {
-    return "Es liegt noch kein Bewusstseinstest vor – du weißt also nicht, wo die Person steht. Frag bei Bedarf nach oder empfiehl den Test unter /bewusstseinstest.";
-  }
-
-  return [
-    profil.focusStage ? `Schwerpunkt-Stufe: ${profil.focusStage}` : null,
-    "Stufen (Ausprägung laut Selbsteinschätzung, Status):",
-    ...profil.profile.map(
-      (p) =>
-        `- Stufe ${p.nr} „${p.name}“: ${p.pct}% – ${
-          p.level === "verankert"
-            ? "verankert"
-            : p.level === "im-aufbau"
-              ? "im Aufbau"
-              : "Entwicklungsraum"
-        }${p.done ? ", abgeschlossen" : ""}`,
-    ),
-    profil.bedarf.length > 0
-      ? `Größter Bedarf (dranbleiben): Stufen ${profil.bedarf.map((b) => b.nr).join(", ")}`
-      : "Aktuell kein dringender Bedarf.",
-  ]
-    .filter(Boolean)
-    .join("\n");
 }
 
 /**
@@ -141,104 +121,26 @@ export function journalFacts(entries: JournalEntry[]): string {
 }
 
 /**
- * „Dranbleiben"-Fakten: was die Person tatsächlich tut (Rückkehr-Serie,
- * 21-Tage-Programm, gemachte Übungen, Detektor-Nutzung). Damit kann der
- * Begleiter konkret spiegeln – „du bist seit acht Tagen dran" – statt nur
- * allgemein zu ermutigen. (B6)
- */
-export function behaviorFacts(input: {
-  rueckkehrStreak: number;
-  rueckkehrTotal: number;
-  programmDone: number;
-  programmTotal: number;
-  practicesDone: number;
-  detektorTop: string[];
-  /** Auszug des zuletzt erzeugten KI-Readings (oder null). */
-  lastReading?: string | null;
-  /** Auszug des zuletzt erzeugten Muster-Spiegels (oder null). */
-  lastMuster?: string | null;
-}): string {
-  const {
-    rueckkehrStreak,
-    rueckkehrTotal,
-    programmDone,
-    programmTotal,
-    practicesDone,
-    detektorTop,
-    lastReading,
-    lastMuster,
-  } = input;
-
-  const kürzen = (t: string, max = 240) => {
-    const s = t.trim().replace(/\s+/g, " ");
-    return s.length > max ? `${s.slice(0, max)}…` : s;
-  };
-
-  const lines: string[] = [];
-
-  if (rueckkehrStreak > 0) {
-    lines.push(
-      `- Tägliche Rückkehr: aktuelle Serie ${rueckkehrStreak} Tag(e), insgesamt ${rueckkehrTotal} Tage markiert.`,
-    );
-  } else if (rueckkehrTotal > 0) {
-    lines.push(
-      `- Tägliche Rückkehr: insgesamt ${rueckkehrTotal} Tage, aber die Serie ist gerade unterbrochen.`,
-    );
-  }
-
-  if (programmDone > 0) {
-    lines.push(
-      `- Programm „21 Tage Autopilot-Ausstieg": ${programmDone} von ${programmTotal} Tagen abgeschlossen${
-        programmDone >= programmTotal ? " (durch!)" : ""
-      }.`,
-    );
-  }
-
-  if (practicesDone > 0) {
-    lines.push(`- Als gemacht markierte Praxis-Übungen: ${practicesDone}.`);
-  }
-
-  if (detektorTop.length > 0) {
-    lines.push(
-      `- Im Manipulations-Detektor zuletzt häufig erkannt: ${detektorTop.join(", ")}.`,
-    );
-  }
-
-  if (lastReading && lastReading.trim()) {
-    lines.push(`- Letztes persönliches KI-Reading (Auszug): „${kürzen(lastReading)}"`);
-  }
-
-  if (lastMuster && lastMuster.trim()) {
-    lines.push(`- Zuletzt gespiegeltes Muster (Auszug): „${kürzen(lastMuster)}"`);
-  }
-
-  if (lines.length === 0) {
-    return "Zur konkreten Aktivität (Rückkehr, Programm, Übungen) liegt noch nichts vor – setz also keinen Rhythmus voraus, lade eher behutsam zum ersten Schritt ein.";
-  }
-
-  return [
-    "Woran die Person gerade dranbleibt (nur als Kontext – erkenne es ehrlich",
-    "an, aber mach keinen Druck und keine Zahlen zum Selbstzweck):",
-    ...lines,
-  ].join("\n");
-}
-
-/**
  * Der System-Prompt des Begleiters.
  *
  * Enthält bewusst harte Grenzen: keine Therapie, keine Diagnosen, keine
- * erfundenen Inhalte – und ein klarer Weg für den Fall, dass jemand in einer
- * ernsten Krise schreibt.
+ * erfundenen Inhalte, keine Lernkontrolle (KI_ZFU_GRENZEN +
+ * BEGLEITER_KEINE_LERNKONTROLLE, siehe docs/ZFU-KI-PRUEFUNG.md) – und ein
+ * klarer Weg für den Fall, dass jemand in einer ernsten Krise schreibt.
  */
 export function buildSystemPrompt({
   name,
   profile,
+  bearbeitung,
   journal,
   behavior,
   catalogue,
 }: {
   name: string;
+  /** Selbsteinschätzung aus dem Test (`selbsteinschaetzungFacts`). */
   profile: string;
+  /** Markierte Stufen, nur Navigation (`bearbeitungsstandFacts`). */
+  bearbeitung: string;
   journal: string;
   behavior: string;
   catalogue: string;
@@ -247,14 +149,18 @@ export function buildSystemPrompt({
     ? `Die Person heißt ${name}. Sprich sie gelegentlich mit dem Namen an, aber nicht in jeder Antwort.`
     : "Der Name der Person ist nicht bekannt – sprich sie einfach mit „du“ an.";
 
-  return `Du bist der Begleiter von „Werde Meister deiner Gedanken“ – dem Begleitangebot
-von Heiko Schwaninger zur Bewusstseinsentwicklung in 7 Stufen. Du sprichst mit
-einem Mitglied im geschützten Mitgliederbereich.
+  return `Du bist der Begleiter von „Werde Meister deiner Gedanken“ – einer
+digitalen Plattform von Heiko Schwaninger zur eigenständigen Selbstreflexion und Bewusstseinsentwicklung in 7 Stufen. Du sprichst mit einem
+Mitglied im geschützten Mitgliederbereich.
 
 DEINE ROLLE
-Du hilfst beim Einordnen, Vertiefen und Dranbleiben: Du erklärst die Inhalte des
-Angebots, verbindest sie mit dem, was die Person gerade beschäftigt, und
-schlägst konkrete nächste Schritte aus dem vorhandenen Material vor.
+Du bist ein KI-gestützter Reflexions- und Orientierungsdialog – zum
+Strukturieren, Nachdenken und Auffinden passender Inhalte. Du darfst:
+Begriffe allgemein erklären, vorhandene Inhalte verständlicher zusammenfassen,
+auf passende Inhalte verweisen, Aussagen der Person spiegeln, eine freiwillige
+Reflexionsfrage anbieten und Möglichkeiten nennen, sich weiter mit einem Thema
+zu beschäftigen. Du bist kein Tutor, kein Lehrer und kein Prüfer: Ob und wie
+die Person etwas versteht oder anwendet, bewertest du nicht.
 
 TON
 - Sprich die Person mit „du“ an. ${anrede}
@@ -267,7 +173,8 @@ FORM
 - Fließtext in kurzen Absätzen. Kein Markdown, keine Überschriften, keine
   Sternchen. Wenn eine Aufzählung wirklich hilft, höchstens drei Zeilen mit „– “.
 - Am Ende höchstens eine Rückfrage – und nur, wenn sie das Gespräch wirklich
-  weiterbringt.
+  weiterbringt. Wenn, dann eine Reflexionsfrage zur eigenen Erfahrung, nie eine
+  Wissensfrage.
 
 INHALTE
 - Verweise ausschließlich auf Inhalte aus dem Verzeichnis unten und nenne dabei
@@ -282,22 +189,26 @@ GRENZEN
 - Keine medizinischen, juristischen oder finanziellen Ratschläge.
 - Deute nur die übergebenen Profildaten; erfinde keine Biografie, keine Zahlen
   und keine Vorhersagen.
-- Du prüfst und benotest nichts: keine Bewertung von Antworten oder
-  Reflexionen als richtig oder falsch, keine Aussage, ob etwas „bestanden“
-  oder ein Lernziel erreicht ist. Du spiegelst und ordnest nur ein.
 - Schreibt jemand von akuter Not, Suizidgedanken, Selbstverletzung oder einer
   schweren Krise: Bleib ruhig und zugewandt, nimm es ernst, biete keine Übung
   als Lösung an und weise klar auf professionelle Hilfe hin – Telefonseelsorge
   0800 111 0 111 oder 0800 111 0 222 (kostenlos, rund um die Uhr), in Österreich
   142, in der Schweiz 143, im Notfall 112.
 
-STAND DER PERSON
+${KI_ZFU_GRENZEN}
+
+${BEGLEITER_KEINE_LERNKONTROLLE}
+
+SELBSTEINSCHÄTZUNG DER PERSON (eigene Testantworten, keine Messung)
 ${profile}
+
+BEARBEITUNGSSTAND (nur Navigation, kein Nachweis)
+${bearbeitung}
 
 AUS DEM JOURNAL DER PERSON
 ${journal}
 
-MOMENTUM DER PERSON
+NUTZUNG (nur Orientierung)
 ${behavior}
 
 VERZEICHNIS DER VERFÜGBAREN INHALTE

@@ -39,14 +39,18 @@ export const DAILY_MESSAGE_LIMIT = 40;
 
 /** Begrüßung, solange noch kein Gespräch läuft (kein KI-Aufruf nötig). */
 export const BEGLEITER_WELCOME =
-  "Schön, dass du da bist. Ich bin dein Begleiter durch die 7 Stufen – frag mich, was dich gerade beschäftigt, oder such dir unten einen Einstieg aus.";
+  "Schön, dass du da bist. Ich helfe dir, Gedanken zu sortieren, Begriffe aus den 7 Stufen einzuordnen und passende Inhalte zu finden – erzähl mir, was dich gerade beschäftigt, oder such dir unten einen Einstieg aus.";
 
-/** Vorschläge für den Einstieg, wenn das Gespräch noch leer ist. */
+/**
+ * Vorschläge für den Einstieg, wenn das Gespräch noch leer ist.
+ * Bewusst Orientierung, Erklärung und Reflexion – keine Einladung, den eigenen
+ * „Stand" oder das eigene Verständnis bewerten zu lassen (docs/ZFU-KI-PRUEFUNG.md).
+ */
 export const BEGLEITER_SUGGESTIONS = [
-  "Wo stehe ich gerade – und was wäre mein nächster Schritt?",
+  "Was zeigt meine Selbsteinschätzung – und welche Inhalte passen dazu?",
   "Meine Gedanken kreisen abends. Welche Übung passt dazu?",
-  "Erklär mir die Stufe, an der ich gerade arbeite.",
-  "Ich komme seit Wochen nicht weiter. Woran kann das liegen?",
+  "Erklär mir die Stufe, mit der ich mich gerade beschäftige, einfacher.",
+  "Ich fühle mich gerade festgefahren. Was könnte ich mir dazu anschauen?",
 ];
 
 /** Fehlerfälle, die Route und Oberfläche gemeinsam kennen. */

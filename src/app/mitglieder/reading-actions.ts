@@ -3,10 +3,11 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
-import { getTestProfile, getCompletedStages } from "@/app/mitglieder/actions";
+import { getTestProfile } from "@/app/mitglieder/actions";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
 import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
 import { isKiReadingEnabled } from "@/lib/ki-features";
+import { readingSystemPrompt, selbsteinschaetzungFacts } from "@/lib/ki-grenzen";
 
 /**
  * KI-Readings zum Gedankenprofil.
@@ -63,7 +64,7 @@ export type GenerateResult =
   | { status: "error" };
 
 /**
- * Erzeugt ein persönliches Reading aus dem (deterministischen) Gedankenprofil,
+ * Erzeugt eine KI-gestützte Reflexion auf Basis der eigenen Selbsteinschätzung,
  * speichert es und gibt es zurück. Nur nach ausdrücklicher Freigabe aufrufen.
  */
 export async function generateReading(): Promise<GenerateResult> {
@@ -77,58 +78,18 @@ export async function generateReading(): Promise<GenerateResult> {
   } = await supabase.auth.getUser();
   if (!user) return { status: "unauthenticated" };
 
-  // Datengrundlage laden und das deterministische Profil bauen.
-  const [{ startStage, scores }, completedKeys] = await Promise.all([
-    getTestProfile(),
-    getCompletedStages(),
-  ]);
-  const completedNumbers = completedKeys
-    .map((k) => Number(k))
-    .filter((n) => Number.isInteger(n) && n >= 1 && n <= 7);
-
-  const profil = buildGedankenprofil({ startStage, scores, completedNumbers });
+  // Datengrundlage: ausschließlich die eigene Selbsteinschätzung aus dem
+  // Bewusstseinstest. Als bearbeitet markierte Stufen gehen bewusst NICHT ein
+  // (früher `getCompletedStages()`): Das Reading ist eine Reflexion der
+  // eigenen Angaben, keine Lernstands- oder Fortschrittsauswertung – siehe
+  // docs/ZFU-KI-PRUEFUNG.md.
+  const { startStage, scores } = await getTestProfile();
+  const profil = buildGedankenprofil({ startStage, scores, completedNumbers: [] });
   if (!profil.hasTest) return { status: "no_test" };
 
-  // Kompakte, faktische Zusammenfassung als Grundlage für das Reading –
-  // damit die KI nur die vorhandenen Daten deutet und nichts erfindet.
-  const profileFacts = [
-    profil.focusStage ? `Schwerpunkt-Stufe: ${profil.focusStage}` : null,
-    "Stufen (Ausprägung laut Selbsteinschätzung, Status):",
-    ...profil.profile.map(
-      (p) =>
-        `- Stufe ${p.nr} „${p.name}" (${p.tagline}): ${p.pct}% – ${
-          p.level === "verankert"
-            ? "verankert"
-            : p.level === "im-aufbau"
-              ? "im Aufbau"
-              : "Entwicklungsraum"
-        }${p.done ? ", abgeschlossen" : ""}`,
-    ),
-    profil.bedarf.length > 0
-      ? `Größter Bedarf (dranbleiben): Stufen ${profil.bedarf
-          .map((b) => b.nr)
-          .join(", ")}`
-      : "Aktuell kein dringender Bedarf.",
-  ]
-    .filter(Boolean)
-    .join("\n");
-
-  const system = `Du schreibst für „Werde Meister deiner Gedanken" von Heiko Schwaninger –
-ein Begleitangebot zur Bewusstseinsentwicklung in 7 Stufen.
-Verfasse ein persönliches, warmes und geerdetes „Reading" zum Gedankenprofil
-einer Person, ausschließlich auf Basis der übergebenen Daten.
-
-Regeln:
-- Sprich die Person mit „du" an.
-- Deute nur die vorhandenen Werte; erfinde keine Zahlen, keine Biografie,
-  keine Diagnosen und keine Vorhersagen.
-- Kein esoterisches Übertreiben, keine Heilsversprechen. Ruhig, klar, ermutigend.
-- Keine Bewertung als richtig/falsch oder bestanden/nicht bestanden, keine
-  Aussage über erreichte Lernziele – das Profil ist eine Selbsteinschätzung.
-- Struktur: (1) kurze Spiegelung des aktuellen Schwerpunkts, (2) was schon
-  trägt, (3) wo es sich lohnt, noch einmal dranzugehen, (4) ein konkreter,
-  sanfter nächster Schritt.
-- 200–300 Wörter, Fließtext in kurzen Absätzen, kein Markdown, keine Überschriften.`;
+  // Kompakte, faktische Zusammenfassung – die KI deutet nur diese Angaben.
+  const profileFacts = selbsteinschaetzungFacts(profil);
+  const system = readingSystemPrompt();
 
   try {
     const anthropic = new Anthropic({ apiKey });
@@ -144,7 +105,7 @@ Regeln:
         messages: [
           {
             role: "user",
-            content: `Hier ist mein Gedankenprofil. Schreib mir mein persönliches Reading dazu.\n\n${profileFacts}`,
+            content: `Hier ist meine Selbsteinschätzung aus dem Bewusstseinstest. Schreib mir eine Reflexion dazu.\n\n${profileFacts}`,
           },
         ],
       }),

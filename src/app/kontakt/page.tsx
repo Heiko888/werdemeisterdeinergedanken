@@ -103,9 +103,9 @@ export default async function ContactPage({
                 Frage zur Mitgliedschaft?
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-ink-mid">
-                Die digitale Mitgliederplattform startet demnächst. Fragen zu
-                Inhalten, Zugang oder Start beantworte ich dir gern über dieses
-                Formular.
+                Die digitale Mitgliederplattform startet demnächst. Fragen zur
+                Mitgliedschaft, zum Zugang oder zum Start beantworte ich dir gern
+                über dieses Formular.
               </p>
             </div>
           </aside>

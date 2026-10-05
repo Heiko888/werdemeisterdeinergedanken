@@ -369,12 +369,13 @@ export default async function GedankenprofilPage() {
               <Container>
                 <div className="mx-auto flex max-w-2xl flex-col items-start gap-4 rounded-2xl border border-ink/10 bg-white p-7 shadow-card sm:p-8">
                   <h2 className="font-display text-xl font-medium text-ink">
-                    Fragen zu deinem Profil?
+                    Mit deiner Selbsteinschätzung weiterdenken?
                   </h2>
                   <p className="text-[1.02rem] leading-relaxed text-ink-mid">
-                    Dein Begleiter kennt diese Auswertung. Frag ihn, was die
-                    Werte für deinen Alltag bedeuten – und welcher nächste
-                    Schritt gerade zu dir passt.
+                    Dein Begleiter kennt diese Übersicht aus deinen eigenen
+                    Antworten. Sprich mit ihm darüber, was die Schwerpunkte in
+                    deinem Alltag bedeuten könnten – und welche Inhalte dazu
+                    passen.
                   </p>
                   <Button href="/mitglieder/begleiter" variant="secondary">
                     Zum Begleiter
