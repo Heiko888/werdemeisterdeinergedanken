@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container } from "@/components/ui/Container";
@@ -12,46 +13,126 @@ import { withCanonical } from "@/lib/seo";
 export const metadata: Metadata = withCanonical("/ueber-mich", {
   title: "Über mich",
   description:
-    "Heiko Schwaninger – Gründer von Werde Meister deiner Gedanken. Meine Geschichte, meine Haltung und wie aus meinem eigenen Weg die 7 Stufen der Bewusstseinsentwicklung entstanden sind.",
+    "Heiko Schwaninger – Gründer von Werde Meister deiner Gedanken. Meine Geschichte: vom Verstehen technischer Systeme über Menschen und Kommunikation bis zum eigenen inneren System – und wie daraus die 7 Stufen der Bewusstseinsentwicklung entstanden sind.",
 });
 
-const milestones = [
+/*
+ * Aufbau (Stand 2026-10-05): Die Geschichte wird genau EINMAL vollständig
+ * erzählt (zwei Story-Sektionen). Die Timeline „Auf einen Blick“ ist nur eine
+ * stark verkürzte Zusammenfassung der Lebensphasen, „Woher meine Perspektive
+ * kommt“ nennt die fachlichen Grundlagen. Rote Linie: Systeme verstehen →
+ * Systeme enttarnen → das eigene innere System enttarnen.
+ *
+ * Chronologie (bitte bei Änderungen beibehalten): Lenas Tod → rund zwei Jahre
+ * Vollgas → etwa drei Jahre nach ihrem Tod die Implosion → Reset/Neuaufbau →
+ * erst DANACH Programmierung, Docker, Server, eigene technische Entwicklung.
+ */
+
+/** Hervorgehobene Kernaussage im Fließtext. */
+function Kernsatz({ children }: { children: ReactNode }) {
+  return (
+    <p className="font-display text-xl italic leading-snug text-ink sm:text-2xl">
+      {children}
+    </p>
+  );
+}
+
+/** Fragen-Box im Stil der bisherigen Seite. */
+function Fragen({ intro, fragen }: { intro?: string; fragen: string[] }) {
+  return (
+    <aside className="rounded-2xl border border-accent/25 bg-accent/[0.04] px-6 py-5">
+      {intro && <p className="mb-2 text-sm text-ink-mid">{intro}</p>}
+      <ul className="flex flex-col gap-2">
+        {fragen.map((q) => (
+          <li key={q} className="flex gap-3 font-medium text-ink">
+            <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+            <span>{q}</span>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+}
+
+/** Kurze Aufzählung mit Gold-Punkten. */
+function Punkte({ items }: { items: string[] }) {
+  return (
+    <ul className="my-1 flex flex-col gap-2.5">
+      {items.map((line) => (
+        <li key={line} className="flex gap-3 text-ink">
+          <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br from-gold-400 to-gold-500" />
+          <span>{line}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** Zwischenüberschrift innerhalb der Geschichte. */
+function Kapitel({ children }: { children: ReactNode }) {
+  return (
+    <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">
+      {children}
+    </h3>
+  );
+}
+
+/** Stark verkürzte Zusammenfassung der Lebensphasen – keine Wiederholung des Fließtexts. */
+const phases = [
   {
-    year: "Der Anfang",
-    title: "Funktionieren statt leben",
-    text: "Beruflich brach vieles weg, innerlich verlor ich den Halt. Ich funktionierte einfach weiter – und merkte lange nicht, wie sehr alte Muster meine Entscheidungen bestimmten.",
+    year: "Technik",
+    title: "Verstehen, wie Systeme funktionieren",
+    text: "Kfz-Mechaniker, danach Betriebsinformatiker.",
   },
   {
-    year: "Die ersten Fragen",
-    title: "Vom Kämpfen zum Wahrnehmen",
-    text: "Über die Meditation lernte ich, nicht mehr gegen jeden Gedanken anzukämpfen, sondern ihn wahrzunehmen – und mir endlich die richtigen Fragen zu stellen.",
+    year: "Menschen",
+    title: "Vom technischen System zum Menschen",
+    text: "Versicherung, Vertrieb, Gastronomie, Immobilien, Referent, Marketing.",
   },
   {
-    year: "Der schwerste Verlust",
-    title: "Tiefer schauen",
-    text: "Als ein Mensch, der mir alles bedeutete, plötzlich nicht mehr da war, trugen einfache Antworten nicht mehr. Erst ehrliche Fragen schufen Klarheit und Bewusstsein.",
+    year: "Lange Jahre",
+    title: "Viel Wissen – und funktionieren",
+    text: "Immer in Bewegung, wenig Blick auf das eigene Innere.",
+  },
+  {
+    year: "Der Einschnitt",
+    title: "Lenas Tod",
+    text: "Danach rund zwei Jahre Vollgas.",
+  },
+  {
+    year: "Etwa drei Jahre später",
+    title: "Die Implosion",
+    text: "Meine bisherige Identität bricht zusammen.",
+  },
+  {
+    year: "Neuaufbau",
+    title: "Das eigene innere System enttarnen",
+    text: "Fragen, Schreiben, Coaching – danach auch Programmierung, Server und KI.",
   },
   {
     year: "Heute",
     title: "Aus meinem Weg wurden die 7 Stufen",
-    text: "Aus vielen Jahren eigener Erfahrung, Selbststudium und intensiver Auseinandersetzung mit Denken, Wahrnehmung und Veränderung entstand eine Landkarte: die 7 Stufen der Bewusstseinsentwicklung. Heute bilden sie die Grundlage von Werde Meister deiner Gedanken.",
+    text: "Werde Meister deiner Gedanken – als Landkarte, weiter in Entwicklung.",
   },
 ];
 
-/** Woher mein Wissen kommt – ehrlich: Ausbildungen ohne Diplom, viel
-    Selbststudium und vor allem der eigene Weg. Keine erfundenen Titel. */
+/** Woher meine Perspektive kommt – tatsächliche Grundlagen, keine erfundenen Titel. */
 const foundations = [
   {
-    title: "Ausbildungen",
-    text: "Ich habe verschiedene Ausbildungen durchlaufen – nicht, um ein Diplom an die Wand zu hängen, sondern weil ich verstehen wollte, wie Denken, Wahrnehmung und Veränderung wirklich funktionieren. Daraus kommt ein Teil meines Wissens – eine ärztliche, psychotherapeutische oder heilkundliche Qualifikation ist damit nicht verbunden.",
+    title: "Technisches Fundament",
+    text: "Abgeschlossene Ausbildung zum Kfz-Mechaniker, danach Betriebsinformatiker. Später eigene technische Praxis mit Programmierung, Servern und digitalen Projekten.",
   },
   {
-    title: "Selbststudium",
-    text: "Einen großen Teil habe ich mir autodidaktisch erarbeitet: über Jahre gelesen, ausprobiert, verworfen, neu verknüpft – und nur behalten, was sich im echten Leben bewährt hat.",
+    title: "Kaufmännische Praxis",
+    text: "Kaufmännische Abläufe, Buchhaltung, steuerliche Themen und Organisation – vieles selbst gemacht und praktisch gelernt, statt es auszulagern.",
   },
   {
-    title: "Eigene Erfahrung",
-    text: "Viele der Themen, die heute in Werde Meister deiner Gedanken vorkommen, kenne ich nicht nur aus Büchern. Ich habe mich selbst über Jahre damit auseinandergesetzt – mit Umwegen, Rückschritten und eigenen Erkenntnissen.",
+    title: "Menschen & Kommunikation",
+    text: "Langjährige Berufserfahrung in Versicherung, Vertrieb und Verkauf, Gastronomie und Immobilienumfeld, rund sieben Jahre als Referent, dazu Online-Marketing, Storytelling und Video.",
+  },
+  {
+    title: "Weiterbildung & Selbststudium",
+    text: "Umfangreiche Weiterbildungen und jahrzehntelanges Selbststudium – unter anderem zu Rhetorik, Körpersprache, NLP, Reframing, Meditation, Atem und Trance, Psychologie und Bewusstsein. Dazu die eigene Erfahrung aus Krise und Neuaufbau.",
   },
 ];
 
@@ -88,20 +169,21 @@ export default function AboutPage() {
             Hallo, ich bin <em className="accent">Heiko</em>
           </>
         }
-        intro="Werde Meister deiner Gedanken ist aus meinem eigenen Weg entstanden – aus der Frage, wie Gedanken, Prägungen und automatische Muster unser Leben beeinflussen und wie wir lernen können, bewusster damit umzugehen."
+        intro="Gründer von Werde Meister deiner Gedanken. Ich wollte mein Leben lang verstehen, wie Systeme funktionieren – erst in der Technik, dann beim Menschen und schließlich in mir selbst. Aus diesem Weg ist Werde Meister deiner Gedanken entstanden."
         image="/ueber-heiko-berg.webp"
         imagePosition="30% 15%"
         spotlight="left"
       />
 
+      {/* Teil 1 der Geschichte: Systeme verstehen, Funktionieren, Verlust, Implosion */}
       <section className="bg-paper-aura grain-soft relative py-12 sm:py-16">
         <Container size="narrow">
           <Reveal>
             <div className="flex flex-col items-start gap-5">
               <Eyebrow>Meine Geschichte</Eyebrow>
               <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
-                Ich kenne den Kopf, der{" "}
-                <em className="accent">nie zur Ruhe kommt</em>
+                Ich wollte wissen, wie{" "}
+                <em className="accent">Systeme funktionieren</em>
               </h2>
             </div>
           </Reveal>
@@ -109,166 +191,356 @@ export default function AboutPage() {
           <Reveal delay={120}>
             <div className="mt-8 flex flex-col gap-5 text-[1.05rem] leading-relaxed text-ink-mid">
               <p>
-                Ich rede nicht über etwas, das ich irgendwann in Büchern gelesen
-                habe. Ich habe diesen Weg selbst durchlaufen.
+                Wenn ich auf mein Leben zurückschaue, zieht sich ein Faden durch
+                fast alles, was ich getan habe: Ich wollte verstehen, wie Dinge
+                funktionieren. Nicht nur, dass sie funktionieren – sondern warum.
               </p>
-              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Als vieles wegbrach</h3>
+              <Kernsatz>
+                Irgendwann wollte ich Systeme nicht mehr nur verstehen, sondern
+                enttarnen.
+              </Kernsatz>
               <p>
-                Es gab eine Zeit, in der mein Leben komplett auf den Kopf gestellt
-                war. Beruflich brach vieles weg, innerlich verlor ich zunehmend
-                den Halt. Ich funktionierte, reagierte, versuchte irgendwie
-                weiterzumachen – und merkte lange nicht, wie sehr Ängste, Gedanken
-                und alte Muster meine Entscheidungen bestimmten.
-              </p>
-              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Die richtigen Fragen</h3>
-              <p>
-                Auf meiner Suche nach Antworten beschäftigte ich mich mit vielen
-                Dingen. Meditation war eines davon.
-              </p>
-              <p>
-                Meine ersten Versuche waren alles andere als ruhig. Sobald ich die
-                Augen schloss, wurde es im Kopf erst richtig laut. Irgendwann
-                lernte ich, nicht mehr gegen jeden Gedanken anzukämpfen, sondern
-                ihn wahrzunehmen.
-              </p>
-              <p className="font-medium text-ink">Das war wichtig.</p>
-              <p>Aber der eigentliche Wendepunkt kam durch etwas anderes:</p>
-              <p className="font-display text-xl italic text-ink">
-                Ich begann, mir die richtigen Fragen zu stellen.
+                Welche Mechanismen wirken im Hintergrund? Warum funktioniert etwas
+                bei dem einen Menschen und bei dem anderen nicht? Welche Regeln,
+                Prägungen, Denkweisen und Interessen sind auf den ersten Blick
+                nicht zu sehen?
               </p>
 
-              <aside className="rounded-2xl border border-accent/25 bg-accent/[0.04] px-6 py-5">
-                <p className="text-sm text-ink-mid">Nicht mehr nur:</p>
-                <p className="mt-1 font-medium text-ink">
-                  Warum passiert mir das alles?
+              <Kapitel>Vom technischen System zum Menschen</Kapitel>
+              <p>
+                Mein beruflicher Weg begann mit einer Ausbildung zum
+                Kfz-Mechaniker. Danach folgte die Ausbildung zum
+                Betriebsinformatiker.
+              </p>
+              <p>
+                Schon dort zeigte sich, was mich bis heute antreibt: Ich wollte
+                wissen, wie einzelne Komponenten zusammenwirken – und wo die
+                Ursache liegt, wenn ein System nicht funktioniert.
+              </p>
+              <p>
+                Später verlagerte sich diese Neugier immer mehr vom technischen
+                System auf den Menschen.
+              </p>
+
+              <Kapitel>Menschen, Kommunikation und das, was dahinter liegt</Kapitel>
+              <p>
+                Nach der Informatik wechselte ich in die Versicherungsbranche.
+                Schon in dieser Zeit beschäftigte ich mich intensiv mit Verkauf,
+                Rhetorik, Körpersprache, Kommunikation und Menschenkenntnis – und
+                ebenso mit NLP, Reframing, Meditation, Trance und veränderten
+                inneren Zuständen.
+              </p>
+              <p>
+                Dazu kam immer der kaufmännische Teil: Abläufe, Buchhaltung,
+                steuerliche Fragen, Organisation. Vieles davon habe ich selbst
+                gemacht und mir praktisch beigebracht, statt es abzugeben. Ich
+                wollte Wissen nicht nur kennen. Ich wollte es anwenden können.
+              </p>
+              <p>
+                Später kamen weitere Stationen: die Gastronomie – ohne
+                gastronomische Ausbildung, aber mit jahrelanger Praxis –, rund
+                sieben Jahre als Referent, Vertrieb und Verkauf, das
+                Immobilienumfeld, Online-Marketing und Kampagnen, Storytelling,
+                Video und Kamerapräsenz, Atemtechniken.
+              </p>
+              <p>
+                Das bedeutete vor allem eines: jeden Tag echte Menschen. Ich habe
+                beobachtet, wie sie reagieren und entscheiden, was sie nach außen
+                zeigen und was dahinter liegt – und was sich verändert, wenn Geld,
+                Druck, Status, Angst, Erfolg oder Unsicherheit ins Spiel kommen.
+              </p>
+              <p>
+                Ich bin dabei auch Menschen begegnet, die beruflich oder
+                wirtschaftlich deutlich weiter waren als ich, und habe genau
+                hingeschaut, wie sie denken, entscheiden und handeln. Nicht, um sie
+                zu kopieren, sondern mit diesen Fragen:
+              </p>
+              <Fragen
+                fragen={[
+                  "Was kann ich daraus verstehen?",
+                  "Was ist Substanz – und was nur Fassade?",
+                  "Was funktioniert für mich – und was nicht?",
+                ]}
+              />
+
+              <Kapitel>Kein Modell einfach glauben</Kapitel>
+              <p>
+                Parallel habe ich über viele Jahre sehr viel gelesen und gelernt –
+                nicht nur klassische Erfolgsbücher. Mich interessierten Denken,
+                Psychologie und menschliches Verhalten, Erfolg und persönliche
+                Entwicklung, Kommunikation, Spiritualität, Meditation und
+                Bewusstsein, gesellschaftliche Mechanismen, Marketing und
+                Beeinflussung.
+              </p>
+              <p>
+                Ich wollte nie ein Modell glauben, nur weil jemand behauptet, dass
+                es funktioniert. Ich wollte wissen: Warum funktioniert es? Unter
+                welchen Bedingungen? Wo liegen die Grenzen – und was fehlt?
+              </p>
+              <p>Mein Vorgehen war dabei fast immer dasselbe:</p>
+              <Punkte
+                items={[
+                  "beobachten",
+                  "ausprobieren",
+                  "auseinandernehmen",
+                  "verstehen",
+                  "rekonstruieren",
+                  "mit anderen Erkenntnissen verbinden",
+                  "daraus ein eigenes Gesamtbild entwickeln",
+                ]}
+              />
+              <Kernsatz>
+                Ich habe Systeme beobachtet, ausprobiert, auseinandergenommen und
+                rekonstruiert.
+              </Kernsatz>
+
+              <Kapitel>Funktionieren</Kapitel>
+              <p>
+                Trotz all dieses Wissens war mein eigenes Leben alles andere als
+                sortiert. Über lange Zeit war ich ständig in Bewegung.
+              </p>
+              <p className="font-medium text-ink">
+                Arbeiten. Probleme lösen. Weitermachen. Aushalten. Funktionieren.
+              </p>
+              <p>
+                Ich hielt mich für jemanden, der einfach sehr viel einstecken kann.
+                Rückblickend musste ich lernen: Belastbarkeit und Verdrängung
+                liegen manchmal erstaunlich nah beieinander. Dinge mit sich selbst
+                auszumachen kann eine Stärke sein. Es kann aber auch zum Muster
+                werden.
+              </p>
+
+              <Kapitel>Der Verlust</Kapitel>
+              <p>
+                Der Tod meiner Lebensgefährtin Lena war einer der schwersten
+                Einschnitte meines Lebens.
+              </p>
+              <p>
+                Ich habe danach nicht aufgehört. Im Gegenteil: Vor allem über
+                ungefähr zwei Jahre habe ich extrem viel gearbeitet. Vollgas.
+                Zeitweise bestand mein Leben fast nur aus Arbeit.
+              </p>
+              <p>
+                Hohe Intensität ist dabei nicht per se das Problem – sie gehört zu
+                mir. Schwierig wurde die Mischung: jahrelanger Druck, emotionale
+                Belastungen, der Verlust, permanentes Funktionieren, Unsicherheit,
+                immer neue Baustellen, später auch wegbrechende Aufträge – und
+                trotzdem weiter Vollgas.
+              </p>
+              <p className="font-medium text-ink">Es wurde zunehmend schwerer.</p>
+
+              <Kapitel>Drei Jahre später: die Implosion</Kapitel>
+              <p>
+                Ungefähr drei Jahre nach Lenas Tod kam der komplette Einschlag.
+                Nicht ein einzelnes Problem. Nicht nur beruflich, nicht nur
+                finanziell, nicht nur emotional.
+              </p>
+              <Kernsatz>Meine bisherige Identität brach zusammen.</Kernsatz>
+              <p>
+                In dieser Zeit spiegelte mir eine Begegnung – genauer: eine
+                zwischenmenschliche Konstellation – plötzlich sehr vieles aus
+                meinem bisherigen Leben. Auf einmal sah ich Zusammenhänge: zu
+                meinem Aufwachsen und familiären Dynamiken, zu früheren
+                Erfahrungen, zu Vertrauen und Rückzug, Funktionieren und
+                Verdrängung, zu Beziehungen, Selbstbildern, Schutzmechanismen und
+                Reaktionen, die sich immer wiederholten.
+              </p>
+              <p>
+                Ich begann zu sehen, dass manche meiner Reaktionen und Denkweisen
+                eine Geschichte hatten. Mein ganzes Leben schien sich auf einmal zu
+                spiegeln.
+              </p>
+              <p>
+                Emotional war ich in dieser Phase extrem überladen. Ich war
+                innerlich unruhig, mein Körper zuckte, und es fühlte sich an, als
+                wäre mein gesamtes Nervensystem überreizt. Über ungefähr drei bis
+                vier Monate war teilweise nur das Nötigste möglich.
+              </p>
+              <p className="font-medium text-ink">
+                Und genau da konnte ich nicht mehr einfach weiterrennen.
+              </p>
+            </div>
+          </Reveal>
+        </Container>
+      </section>
+
+      {/* Teil 2 der Geschichte: inneres System, Reset, Neuaufbau, Gesamtbild */}
+      <section className="bg-surface-aura grain-soft relative py-12 sm:py-16">
+        <Container size="narrow">
+          <Reveal>
+            <div className="flex flex-col items-start gap-5">
+              <Eyebrow>Was danach kam</Eyebrow>
+              <h2 className="text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
+                Mein eigenes <em className="accent">inneres System</em>{" "}
+                enttarnen
+              </h2>
+            </div>
+          </Reveal>
+
+          <Reveal delay={120}>
+            <div className="mt-8 flex flex-col gap-5 text-[1.05rem] leading-relaxed text-ink-mid">
+              <aside className="glow-gold rounded-2xl border border-gold-400/25 bg-surface p-6 shadow-card">
+                <p className="text-ink">
+                  Ich hatte mein Leben lang versucht, Systeme im Außen zu verstehen
+                  und zu enttarnen.
                 </p>
-                <p className="mt-4 text-sm text-ink-mid">Sondern:</p>
-                <ul className="mt-2 flex flex-col gap-2">
-                  {[
-                    "Was passiert hier eigentlich gerade in mir?",
-                    "Warum reagiere ich immer wieder auf dieselbe Weise?",
-                    "Ist das, was ich denke, wirklich wahr?",
-                    "Woher kommt diese Überzeugung überhaupt?",
-                    "Was davon habe ich übernommen, ohne es jemals zu hinterfragen?",
-                  ].map((q) => (
-                    <li key={q} className="flex gap-3 font-medium text-ink">
-                      <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                      <span>{q}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-4 text-sm text-ink-mid">Und vor allem:</p>
-                <p className="mt-1 font-medium text-ink">
-                  Wer bin ich, wenn ich nicht automatisch jedem Gedanken glaube?
+                <p className="mt-2 font-display text-xl italic leading-snug text-ink">
+                  Nach meinem Zusammenbruch musste ich anfangen, mein eigenes
+                  inneres System zu enttarnen.
                 </p>
               </aside>
 
-              <p>Diese Fragen haben mein Leben verändert.</p>
+              <Kapitel>Der Reset</Kapitel>
               <p>
-                Denn plötzlich begann ich Dinge zu erkennen, die vorher unsichtbar
-                gewesen waren. Muster. Ängste. Automatismen. Überzeugungen. Die
-                Art, wie ich Situationen bewertete – und wie diese Bewertungen
-                wiederum mein Handeln bestimmten.
+                Das war der Punkt, an dem sich wirklich etwas veränderte. Ich
+                begann, mein bisheriges Fundament auseinanderzunehmen und neu
+                aufzubauen.
               </p>
-              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Der schwerste Verlust</h3>
               <p>
-                Dann kam der schwerste Verlust meines Lebens. Ein Mensch, der mir
-                alles bedeutete, war plötzlich nicht mehr da.
+                Nicht mit der Frage: „Wie werde ich möglichst schnell wieder
+                funktionstüchtig?“ Sondern mit der Frage:
               </p>
-              <p>Und spätestens dort funktionierten einfache Antworten nicht mehr.</p>
-              <p>
-                Ich konnte den Schmerz nicht wegdenken. Ich konnte ihn auch nicht
-                mit irgendwelchen positiven Gedanken überdecken.
-              </p>
-              <p className="font-medium text-ink">Ich musste tiefer schauen.</p>
+              <Kernsatz>„Was ist hier eigentlich passiert?“</Kernsatz>
+              <Fragen
+                intro="Ich wollte Ursachen verstehen:"
+                fragen={[
+                  "Welche Muster laufen in mir – und woher kommen sie?",
+                  "Wann wurden sie geprägt?",
+                  "Welche Reaktion war einmal Schutz – und brauche ich sie heute noch?",
+                  "Welche Überzeugungen habe ich übernommen, und was gehört tatsächlich zu mir?",
+                  "Was kann ich verändern – und was kann ich nicht einfach löschen, aber bewusst anders handhaben?",
+                ]}
+              />
 
-              <aside className="rounded-2xl border border-accent/25 bg-accent/[0.04] px-6 py-5">
-                <ul className="flex flex-col gap-2">
-                  {[
-                    "Was geschieht in mir?",
-                    "Wovor habe ich Angst?",
-                    "Woran halte ich fest?",
-                    "Was kann ich beeinflussen – und was nicht?",
-                    "Was bleibt, wenn etwas wegbricht, worüber ich mich bisher definiert habe?",
-                  ].map((q) => (
-                    <li key={q} className="flex gap-3 font-medium text-ink">
-                      <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                      <span>{q}</span>
-                    </li>
-                  ))}
-                </ul>
-              </aside>
-
-              <h3 className="mt-6 font-display text-2xl italic text-ink first:mt-0">Was daraus entstanden ist</h3>
-              <p>Mit jeder ehrlichen Frage entstand ein Stück mehr Klarheit.</p>
+              <Kapitel>Ein Mensch hat viele Seiten</Kapitel>
               <p>
-                Nicht immer sofort eine Antwort. Aber{" "}
-                <em className="accent not-italic font-medium">Bewusstsein</em>.
+                In dieser Zeit habe ich unter anderem selbst ein sehr intensives
+                Coaching in Anspruch genommen, das mir ausgesprochen geholfen hat.
+                Über mehrere Sitzungen ging es dabei auch um unterschiedliche
+                Persönlichkeitsanteile – etwa den ordentlichen, den chaotischen,
+                den nachdenklichen, den bequemen oder den aktiven. Diese Anteile
+                wurden bewusst betrachtet, sortiert und anschließend in einem
+                trance- bzw. hypnoseähnlichen Zustand weiter bearbeitet und
+                verankert.
               </p>
-              <p>Und genau das ist für mich der entscheidende Punkt:</p>
               <p>
-                Bewusstseinsentwicklung beginnt nicht damit, dass dir jemand sagt,
-                was du denken sollst. Sie beginnt in dem Moment, in dem du
-                anfängst, das zu hinterfragen, was du bisher für selbstverständlich
-                gehalten hast.
+                Was ich daraus mitgenommen habe: Ein Mensch hat nicht nur „eine
+                Persönlichkeit“. Er trägt unterschiedliche Seiten, Bedürfnisse und
+                Reaktionsweisen in sich. Es ging nicht darum, einzelne Anteile
+                wegzumachen, sondern sie zu erkennen und neu zu ordnen.
               </p>
 
-              <ul className="my-1 flex flex-col gap-2.5">
-                {[
-                  "Du beginnst zu beobachten.",
-                  "Du erkennst Muster.",
-                  "Du verstehst Zusammenhänge.",
-                  "Du übernimmst Verantwortung für deine Reaktionen.",
-                  "Du beginnst bewusst zu entscheiden, worauf du deine Aufmerksamkeit richtest.",
-                ].map((line) => (
-                  <li key={line} className="flex gap-3 text-ink">
-                    <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br from-gold-400 to-gold-500" />
-                    <span>{line}</span>
-                  </li>
-                ))}
-              </ul>
-
+              <Kapitel>Was sich verändern lässt – und was nicht</Kapitel>
               <p>
-                Und irgendwann verändert sich nicht nur dein Denken. Deine gesamte
-                Art, durchs Leben zu gehen, verändert sich.
+                Manche Muster lassen sich verändern. Manche Prägungen verlieren an
+                Macht, sobald man sie erkennt und ihnen neue Erfahrungen und
+                Verhaltensweisen entgegensetzt. Anderes gehört tiefer zur eigenen
+                Geschichte oder Persönlichkeit und verschwindet nicht einfach.
               </p>
               <p>
-                Rückblickend erkenne ich darin einen Entwicklungsweg mit
-                verschiedenen Stufen.
+                Bewusstseinsentwicklung bedeutet für mich deshalb nicht, alles an
+                sich selbst zu löschen. Sondern zu erkennen, was in einem wirkt und
+                woher es kommt – und bewusster entscheiden zu können, wie man damit
+                umgeht.
+              </p>
+
+              <Kapitel>Neu aufbauen</Kapitel>
+              <p>
+                In dieser Phase begann ich wieder intensiv zu schreiben. Schreiben
+                half mir, Erkenntnisse festzuhalten und Zusammenhänge sichtbar zu
+                machen. Ich hörte sehr viele Podcasts aus ganz unterschiedlichen
+                Themengebieten, oft auf Autofahrten. Dazu kamen weiterhin Bücher,
+                Meditation, Selbstbeobachtung, das Coaching, eigene Erfahrungen und
+                ständiges Hinterfragen.
+              </p>
+              <p>
+                Nicht als Selbstoptimierung. Es ging darum, das große Ganze zu
+                verstehen.
+              </p>
+              <p>
+                Erst in dieser Zeit kam auch die Technik zurück – tiefer als zuvor:
+                Programmierung und Coding, Entwicklung mit Claude, Docker, Server
+                und technische Infrastruktur, eigene digitale Projekte und KI. Und
+                wieder zeigte sich dasselbe Muster: Ich möchte verstehen, wie ein
+                System funktioniert. Ich baue Dinge selbst, teste sie, zerlege
+                Probleme und setze Lösungen neu zusammen.
+              </p>
+
+              <Kapitel>Kein Happy End – aber ein Unterschied</Kapitel>
+              <p>
+                Das hier ist keine Geschichte, in der danach alles perfekt ist.
+                Auch heute tauchen alte Muster wieder auf. Auch heute komme ich
+                wieder in mein Vollgas.
+              </p>
+              <p>
+                Der Unterschied: Ich erkenne manches früher. Ich kann eher
+                unterscheiden, ob eine intensive Phase mich trägt – oder ob ich
+                wieder nur funktioniere und gegen mich selbst arbeite.
+              </p>
+              <p>
+                Arbeit und hohe Intensität sind nicht automatisch das Problem. Wenn
+                mich etwas begeistert und ich einen Sinn darin sehe, kann intensive
+                Arbeit sogar Energie geben. Quälend wird es dort, wo man dauerhaft
+                gegen sich selbst arbeitet, nur noch funktioniert oder versucht, ein
+                Leben aufrechtzuerhalten, das nicht mehr zu einem passt.
+              </p>
+
+              <Kapitel>Von einzelnen Methoden zum Gesamtbild</Kapitel>
+              <p>
+                Aus all dem ist nicht über Nacht ein Modell entstanden. Über Jahre
+                wuchs ein Gesamtbild. Ich hatte viele einzelne Systeme
+                kennengelernt: Kommunikation, NLP, Reframing, Meditation, Verkauf,
+                Psychologie, Spiritualität, Erfolgsmodelle, Marketing,
+                Storytelling, Technik, Unternehmertum, Coaching und
+                Bewusstseinsarbeit – und meine eigenen Krisen und Muster.
+              </p>
+              <p>
+                Und immer wieder fehlte mir etwas:{" "}
+                <em className="accent not-italic font-medium">der Zusammenhang</em>.
+                Eine Methode kann an einer Stelle helfen. Aber sie erklärt nicht
+                automatisch das ganze System Mensch.
+              </p>
+              <Kernsatz>
+                Ich hatte viel Wissen. Aber Wissen allein verändert noch kein Leben.
+              </Kernsatz>
+              <p>
+                Daraus wuchs der Wunsch, die einzelnen Puzzleteile in eine
+                nachvollziehbare Struktur zu bringen.
               </p>
 
               <aside className="glow-gold rounded-2xl border border-gold-400/25 bg-surface p-6 shadow-card">
                 <p className="text-ink">
-                  Genau daraus sind für mich die{" "}
+                  Die{" "}
                   <Link
                     href="/die-7-stufen"
                     className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
                   >
                     7 Stufen der Bewusstseinsentwicklung
                   </Link>{" "}
-                  entstanden.
+                  sind der heutige Stand dieses Weges.
                 </p>
                 <p className="mt-2 text-ink-mid">
-                  Nicht als theoretisches Modell. Sondern als Landkarte für einen
-                  Weg, den ich selbst gegangen bin.
+                  Nicht als absolute Wahrheit, nicht als fertige Wissenschaft,
+                  nicht als Therapie und nicht als Heilsversprechen. Sondern als
+                  Landkarte und Orientierungssystem.
                 </p>
               </aside>
 
-              <p>Heute weiß ich:</p>
+              <p>
+                Werde Meister deiner Gedanken ist dabei selbst noch in
+                Entwicklung. Es ist die Basis eines größeren Systems, das Wissen,
+                praktische Anwendung, Reflexion und Bewusstseinsentwicklung
+                langfristig enger miteinander verbinden soll.
+              </p>
+              <p>
+                Erkennen ist der Anfang. Entscheidend ist, was daraus im Alltag
+                entsteht.
+              </p>
               <blockquote className="border-l-2 border-accent/40 pl-5">
                 <p className="font-display text-xl italic leading-snug text-ink sm:text-2xl">
-                  Wir sind nicht unsere Gedanken. Wir sind die, die sie bemerken,
-                  hinterfragen und entscheiden können, welchen Gedanken wir weiter
-                  folgen.
+                  Bewusstsein wird erst durch Handlung wirksam.
                 </p>
               </blockquote>
-              <p>
-                Und manchmal beginnt eine tiefgreifende Veränderung nicht mit einer
-                neuen Antwort.{" "}
-                <em className="accent not-italic font-medium">
-                  Sondern mit einer besseren Frage.
-                </em>
-              </p>
             </div>
           </Reveal>
 
@@ -286,16 +558,16 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Meilensteine – vertikale Timeline mit gefüllten Markern */}
-      <section className="bg-surface-aura grain-soft relative py-16 sm:py-24">
+      {/* Auf einen Blick – verkürzte Phasen, keine Wiederholung des Fließtexts */}
+      <section className="bg-paper-aura grain-soft relative py-16 sm:py-24">
         <Container size="narrow">
-          <Eyebrow>Mein Weg</Eyebrow>
+          <Eyebrow>Mein Weg auf einen Blick</Eyebrow>
           <ol className="relative mt-10">
             <span
               aria-hidden
               className="absolute left-[7px] top-2 bottom-3 w-px bg-gradient-to-b from-gold-500/55 via-gold-400/35 to-transparent"
             />
-            {milestones.map((m) => (
+            {phases.map((m) => (
               <Reveal key={m.year}>
                 <li className="relative flex gap-6 pb-9 last:pb-0">
                   <span
@@ -320,22 +592,23 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Woher mein Wissen kommt – ehrliche Einordnung statt Titel-Liste */}
-      <section className="bg-paper-aura grain-soft relative py-16 sm:py-24">
+      {/* Woher meine Perspektive kommt – tatsächliche Grundlagen + Abgrenzung */}
+      <section className="bg-surface-aura grain-soft relative py-16 sm:py-24">
         <Container>
           <div className="max-w-2xl">
-            <Eyebrow>Woher mein Wissen kommt</Eyebrow>
+            <Eyebrow>Woher meine Perspektive kommt</Eyebrow>
             <h2 className="mt-4 text-[2rem] font-medium leading-[1.12] text-ink sm:text-4xl">
-              Kein Titel. Sondern ein <em className="accent">gegangener Weg</em>
+              Erfahrung aus <em className="accent">unterschiedlichen Welten</em>
             </h2>
             <p className="mt-5 text-[1.05rem] leading-relaxed text-ink-mid">
-              Ich schmücke mich nicht mit Diplomen oder großen Titeln. Die Inhalte
-              von Werde Meister deiner Gedanken sind aus drei Quellen gewachsen:
+              Die Inhalte von Werde Meister deiner Gedanken sind aus Ausbildung,
+              Berufspraxis, Weiterbildung, Selbststudium und eigener Erfahrung
+              gewachsen:
             </p>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {foundations.map((f, i) => (
-              <Reveal key={f.title} delay={i * 80}>
+              <Reveal key={f.title} delay={(i % 2) * 80}>
                 <div className="h-full rounded-2xl border border-ink/10 bg-surface p-6 shadow-card">
                   <span className="font-display text-2xl italic text-accent">
                     {String(i + 1).padStart(2, "0")}
@@ -347,8 +620,10 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-ink-muted">
-            Wichtig: Die Inhalte von Werde Meister deiner Gedanken dienen der
-            persönlichen Selbstreflexion, Bewusstseinsentwicklung und allgemeinen
+            Wichtig: Aus diesen Ausbildungen und Erfahrungen ergibt sich keine
+            ärztliche, psychotherapeutische oder heilkundliche Qualifikation. Die
+            Inhalte von Werde Meister deiner Gedanken dienen der persönlichen
+            Selbstreflexion, Bewusstseinsentwicklung und allgemeinen
             Wissensvermittlung. Sie ersetzen keine medizinische,
             psychotherapeutische oder sonstige heilkundliche Diagnose oder
             Behandlung. Bei psychischen oder körperlichen Beschwerden wende dich
@@ -387,7 +662,7 @@ export default function AboutPage() {
       </section>
 
       {/* Nächste Schritte – die Seite endet nicht bei den Werten, sondern
-          zeigt, wie man mit mir weitergehen kann */}
+          zeigt die nächsten Möglichkeiten */}
       <section className="bg-paper-aura grain-soft relative py-16 sm:py-24">
         <Container>
           <div className="max-w-2xl">
