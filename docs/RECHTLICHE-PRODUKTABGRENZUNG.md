@@ -69,10 +69,16 @@ Die KI darf **nicht prüfen, benoten oder richtig/falsch bewerten** – auch kei
 Aussage über „bestanden“ oder erreichte Lernziele. Sie spiegelt und strukturiert
 nur, was die Person selbst eingebracht hat.
 
+Ausführliche Leitlinie, Prüfbericht und Ampel je Funktion:
+**`docs/ZFU-KI-PRUEFUNG.md`** (Stand 2026-10-05). Die gemeinsame Promptregel
+`KI_ZFU_GRENZEN` liegt in `src/lib/ki-grenzen.ts` und wird von Begleiter,
+Reading und Muster-Spiegel genutzt; Tests in `src/lib/ki-grenzen.test.ts`.
+Ampel: Detektor GRÜN · Muster-Spiegel GRÜN · Reading GRÜN · Begleiter GELB.
+
 | Funktion | Datei | Status |
 |---|---|---|
 | KI-Begleiter (Chat) | `src/app/mitglieder/begleiter/` | **aus** – Schalter `KI_BEGLEITER_ENABLED` (Standard `false`) |
-| KI-Reading zum Gedankenprofil | `src/app/mitglieder/reading-actions.ts` | **aus** – Schalter `KI_READING_ENABLED` (Standard `false`) |
+| KI-Reading zum Gedankenprofil | `src/app/mitglieder/reading-actions.ts` | **aus** – Schalter `KI_READING_ENABLED` (Standard `false`). Seit 2026-10-05 nur noch Selbsteinschätzung als Eingabe, keine markierten Stufen |
 | Muster-Spiegel (Journal) | `src/app/mitglieder/muster-actions.ts` | **aus** (seit 2026-10-05) – Schalter `KI_MUSTER_SPIEGEL_ENABLED` (Standard `false`). Prompt enthält ausdrücklich: keine Prüfung des Verständnisses, keine Bewertung der fachlichen Richtigkeit, kein bestanden/nicht bestanden, keine Aussage über Lernziele, nur Spiegelung und Strukturierung |
 | Manipulations-Detektor | `src/app/mitglieder/detektor-actions.ts` | **aus** (seit 2026-10-05) – Schalter `KI_DETEKTOR_ENABLED` (Standard `false`). Sendet bei Nutzung den eingefügten Text an Anthropic |
 
@@ -156,5 +162,8 @@ und **nicht Bestandteil der Mitgliedschaft**. Sie werden derzeit nicht
 - [ ] Wird nichts geprüft, korrigiert, benotet oder zertifiziert?
 - [ ] Sind Häkchen/Fortschritt nur Orientierung für die Person selbst?
 - [ ] Ist der Test als Selbsteinschätzung formuliert?
-- [ ] Bleibt jede KI-Funktion bei Spiegelung und Strukturierung?
+- [ ] Bleibt jede KI-Funktion bei Spiegelung und Strukturierung? (Checkliste in
+      `docs/ZFU-KI-PRUEFUNG.md`, Abschnitt 6)
+- [ ] Verspricht kein Text inhaltliche Fragen/Antworten an Heiko (Support nur
+      technisch/organisatorisch, Vertiefungen: „Thema vorschlagen“)?
 - [ ] Kein Heilversprechen, keine Therapie-Anmutung?

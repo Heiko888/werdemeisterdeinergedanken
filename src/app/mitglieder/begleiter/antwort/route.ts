@@ -18,7 +18,8 @@ import { buildGedankenprofil } from "@/lib/gedankenprofil";
 import {
   buildSystemPrompt,
   contentCatalogue,
-  profileFacts,
+  selbsteinschaetzungFacts,
+  bearbeitungsstandFacts,
   journalFacts,
   behaviorFacts,
 } from "@/lib/begleiter-prompt";
@@ -160,9 +161,14 @@ export async function POST(request: Request): Promise<Response> {
   const completedNumbers = completedKeys
     .map((k) => Number(k))
     .filter((n) => Number.isInteger(n) && n >= 1 && n <= 7);
-  const profil = buildGedankenprofil({ startStage, scores, completedNumbers });
+  // Die Selbsteinschätzung geht OHNE markierte Stufen an die KI – sonst könnte
+  // sie aus Testwerten + Häkchen einen „Lernstand" ableiten. Die markierten
+  // Stufen bekommt sie getrennt und ausdrücklich nur zur Navigation
+  // („Du hast Stufe 2 bereits als bearbeitet markiert"), siehe
+  // docs/ZFU-KI-PRUEFUNG.md.
+  const profil = buildGedankenprofil({ startStage, scores, completedNumbers: [] });
 
-  // Verhaltens-/Momentum-Kontext (B6): woran die Person tatsächlich dranbleibt.
+  // Nutzungskontext (B6): Rückkehr, Programm, Übungen – nur Orientierung.
   const [programmTage, rueckkehr, practices, detektorHist, letztesReading, letzterSpiegel] =
     await Promise.all([
       getProgrammFortschritt(),
@@ -196,7 +202,8 @@ export async function POST(request: Request): Promise<Response> {
 
   const system = buildSystemPrompt({
     name,
-    profile: profileFacts(profil),
+    profile: selbsteinschaetzungFacts(profil),
+    bearbeitung: bearbeitungsstandFacts(completedNumbers),
     journal: journalFacts(journalEntries),
     behavior,
     catalogue: contentCatalogue(),

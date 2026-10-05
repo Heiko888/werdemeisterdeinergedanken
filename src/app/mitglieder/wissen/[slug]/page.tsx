@@ -240,7 +240,9 @@ export default async function DeepDivePage({
             );
           })()}
 
-          {/* Fragen */}
+          {/* Themenvorschlag – bewusst kein „Frage stellen": Die Mitgliedschaft
+              verspricht keine individuelle inhaltliche Betreuung
+              (docs/ZFU-KI-PRUEFUNG.md, Abschnitt Support). */}
           <div className="flex items-center justify-between gap-4 border-t border-ink/10 pt-8">
             <Link
               href="/mitglieder/wissen"
@@ -250,7 +252,7 @@ export default async function DeepDivePage({
               Alle Vertiefungen
             </Link>
             <Button href="/kontakt" variant="ghost">
-              Frage stellen
+              Thema vorschlagen
               <ArrowRight />
             </Button>
           </div>

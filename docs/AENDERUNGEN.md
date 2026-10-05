@@ -5,6 +5,44 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-05 – ZFU-KI-Prüfung: KI-Funktionen ohne Lernerfolgskontrolle
+
+**Anlass:** Alle KI-Funktionen sollen innerhalb der Produktarchitektur möglichst
+keine individuelle Lernerfolgskontrolle erzeugen. Funktionen bleiben erhalten;
+**alle vier Schalter bleiben aus** (`KI_BEGLEITER_ENABLED`,
+`KI_READING_ENABLED`, `KI_MUSTER_SPIEGEL_ENABLED`, `KI_DETEKTOR_ENABLED`) –
+nichts wurde eingeschaltet. Vollständiger Prüfbericht mit Inventar, Ampel und
+Antworten A–F: **`docs/ZFU-KI-PRUEFUNG.md`**.
+
+- **Neu `src/lib/ki-grenzen.ts`:** gemeinsame Promptregel `KI_ZFU_GRENZEN`
+  (keine Verständnisprüfung, kein Richtig/Falsch, keine Soll-Lösung, keine
+  Anwendungskontrolle, keine Note/Bestehen, keine Lernziel-/„beherrscht“-/
+  „bereit“-Aussagen), Begleiter-Regeln `BEGLEITER_KEINE_LERNKONTROLLE`
+  (Umgang mit Bewertungswünschen, Quiz-Verbot, Nutzung von Profil/Journal),
+  neutrale Kontext-Bausteine und die Prompts von Reading und Muster-Spiegel.
+- **Begleiter:** Rolle „KI-gestützter Reflexions- und Orientierungsdialog“;
+  Selbsteinschätzung ohne Häkchen und ohne „verankert/Bedarf“; markierte
+  Stufen getrennt als reine Navigationsinfo; Nutzungsdaten neutral
+  („als erledigt markiert“).
+- **Reading:** liest keine markierten Stufen mehr (`getCompletedStages()`
+  entfernt), neuer Prompt „Reflexion auf Grundlage der eigenen
+  Selbsteinschätzung“, keine „Nachholbedarf“-Struktur.
+- **Muster-Spiegel:** zusätzlich keine Lernerfolgs-/Entwicklungsaussagen.
+- **Detektor:** eine Regel ergänzt (analysiert den Text, nicht die Person).
+- **Texte:** Begleiter-Begrüßung, -Einstiegsvorschläge und -Seite,
+  Gedankenprofil-Box, Reading-, Spiegel- und Detektor-Beschreibung; Button
+  „Frage stellen“ unter Vertiefungen → „Thema vorschlagen“; Kontaktseite und
+  Kontaktthema ohne „Fragen zu Inhalten“.
+- **Tests:** `src/lib/ki-grenzen.test.ts` (9 Tests, keine API-Aufrufe).
+- **Doku:** `docs/ZFU-KI-PRUEFUNG.md` (neu), `docs/RECHTLICHE-PRODUKTABGRENZUNG.md`,
+  `docs/KI-BEGLEITER.md`.
+- **Prüfungen:** `npm test` 22/22, `tsc` fehlerfrei, `npm run build` ok,
+  `npm run lint` unverändert zum Vorstand (Altlasten nur in `tools/`).
+- **Server:** keine Migration, keine neue Umgebungsvariable, keine
+  Flag-Änderung. Nach dem Deploy sind die KI-Funktionen weiterhin unsichtbar.
+
+---
+
 ## 2026-10-05 – Mitgliedschaft: Button-Farbe auf dunklem Grund korrigiert
 
 **Anlass:** Auf `/mitgliedschaft` passten die Haupt-Buttons farblich nicht.

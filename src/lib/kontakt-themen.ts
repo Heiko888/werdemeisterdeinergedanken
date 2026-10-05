@@ -25,7 +25,7 @@ export const KONTAKT_THEMEN: Record<string, KontaktThema> = {
   mitgliedschaft: {
     label: "Frage zur Mitgliedschaft",
     hinweis:
-      "Die Mitgliedschaft startet demnächst. Hast du eine Frage zur digitalen Mitgliederplattform, zu den Inhalten oder zum Start? Schreib sie mir hier.",
+      "Die Mitgliedschaft startet demnächst. Hast du eine Frage zur digitalen Mitgliederplattform, zum Umfang der Inhalte oder zum Start? Schreib sie mir hier.",
     vorlage:
       "Hallo Heiko,\n\nich habe eine Frage zur Mitgliedschaft:\n\n",
   },

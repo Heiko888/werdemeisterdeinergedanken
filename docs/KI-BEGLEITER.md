@@ -1,8 +1,9 @@
 # KI-Begleiter im Mitgliederbereich
 
-Ein Gespräch unter **`/mitglieder/begleiter`**: Mitglieder fragen, der Begleiter
-antwortet – auf Basis der echten Inhalte des Angebots und des eigenen
-Gedankenprofils.
+Ein Gespräch unter **`/mitglieder/begleiter`**: ein KI-gestützter Reflexions-
+und Orientierungsdialog – zum Strukturieren, Nachdenken und Auffinden passender
+Inhalte, auf Basis der echten Inhalte der Plattform und der eigenen
+Selbsteinschätzung. Keine Lernkontrolle – siehe `docs/ZFU-KI-PRUEFUNG.md`.
 
 ---
 
@@ -11,9 +12,14 @@ Gedankenprofils.
 - Er kennt **alle Inhalte**: die 7 Stufen, alle Vertiefungen, alle
   Praxis-Anleitungen und die Kapitel der Wissensdatenbank – jeweils mit dem
   echten Pfad. Er verweist nur auf Seiten, die es wirklich gibt.
-- Er kennt den **Stand der Person**: Schwerpunkt-Stufe, Ausprägung aller sieben
-  Stufen und abgeschlossene Stufen – dieselbe Grundlage wie das Gedankenprofil.
-  Ohne Bewusstseinstest weiß er das und fragt nach, statt zu raten.
+- Er kennt die **Selbsteinschätzung der Person** (Schwerpunkt und Ausprägung
+  aller sieben Stufen laut Bewusstseinstest, `selbsteinschaetzungFacts` in
+  `src/lib/ki-grenzen.ts`) – ohne markierte Stufen und ohne Begriffe wie
+  „verankert“ oder „Bedarf“. Getrennt davon bekommt er die **als bearbeitet
+  markierten Stufen nur zur Navigation** (`bearbeitungsstandFacts`), sowie
+  Nutzungsdaten (Rückkehr, Programmtage, Übungen) ausdrücklich als
+  Orientierung, nie als Leistungsnachweis. Ohne Test weiß er das und setzt
+  nichts voraus.
 - Er **merkt sich das Gespräch**: Der Verlauf liegt in Supabase und ist beim
   nächsten Besuch wieder da – auch auf einem anderen Gerät.
 - Er **antwortet gestreamt**, Wort für Wort, statt zehn Sekunden lang einen
@@ -26,8 +32,12 @@ Im System-Prompt (`src/lib/begleiter-prompt.ts`) stehen harte Grenzen:
 - keine Therapie, keine Beratung, keine Diagnosen, keine Deutung von Symptomen,
 - keine medizinischen, juristischen oder finanziellen Ratschläge,
 - keine erfundenen Titel, Pfade, Studien oder Zitate,
-- keine Prüfung, Benotung oder Richtig/Falsch-Bewertung von Antworten der
-  Mitglieder (siehe `docs/RECHTLICHE-PRODUKTABGRENZUNG.md`),
+- keine Lernkontrolle: kein Prüfen von Wissen/Verständnis, kein Richtig/Falsch,
+  keine Korrektur, keine Aussage über Lernziele, „beherrscht“ oder „bereit für
+  die nächste Stufe“ (gemeinsame Konstante `KI_ZFU_GRENZEN`), keine
+  Quizfragen, und bei ausdrücklichen Bewertungswünschen ein natürlicher
+  Hinweis plus Erklärung/Reflexionsangebot (`BEGLEITER_KEINE_LERNKONTROLLE`,
+  beides `src/lib/ki-grenzen.ts`; Details `docs/ZFU-KI-PRUEFUNG.md`),
 - keine Heilsversprechen und kein esoterisches Übertreiben.
 
 Bei Hinweisen auf eine **akute Krise** (Suizidgedanken, Selbstverletzung, schwere

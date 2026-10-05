@@ -21,8 +21,9 @@ import { isKiBegleiterEnabled } from "@/lib/ki-features";
 /**
  * Der KI-Begleiter im Mitgliederbereich.
  *
- * Ein Gespräch, das die Inhalte des Angebots kennt und weiß, wo die Person in
- * den 7 Stufen steht. Ohne ANTHROPIC_API_KEY (oder ohne Migration 0009) bleibt
+ * Ein KI-gestützter Reflexions- und Orientierungsdialog, der die Inhalte der
+ * Plattform kennt – zum Strukturieren, Nachdenken und Auffinden passender
+ * Inhalte. Keine Lernkontrolle (docs/ZFU-KI-PRUEFUNG.md). Ohne ANTHROPIC_API_KEY (oder ohne Migration 0009) bleibt
  * die Seite erreichbar und erklärt ruhig, dass der Begleiter noch schläft.
  *
  * Solange der Schalter KI_BEGLEITER_ENABLED nicht auf "true" steht (Standard,
@@ -75,10 +76,12 @@ export default async function BegleiterPage() {
             Sprich mit deinem <em className="accent">Begleiter</em>
           </h1>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
-            Er kennt die 7 Stufen, die Vertiefungen und die Praxis-Anleitungen –
-            und er weiß, wo du in deinem Profil gerade stehst. Frag ihn, wenn du
-            nicht weiterkommst, etwas einordnen willst oder einen nächsten
-            Schritt suchst.
+            Ein KI-gestützter Dialog zum Strukturieren, Nachdenken und Auffinden
+            passender Inhalte. Er kennt die 7 Stufen, die Vertiefungen und die
+            Praxis-Anleitungen und bezieht deine Selbsteinschätzung und deine
+            Notizen als Gesprächskontext ein. Er erklärt Begriffe, fasst Inhalte
+            zusammen und bietet Perspektiven an – eine Bewertung deines
+            Verständnisses ist er nicht.
           </p>
         </Container>
       </section>

@@ -71,8 +71,8 @@ export default async function DetektorPage() {
           </h1>
           <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
             Füg einen Text ein – eine Schlagzeile, eine Werbung, einen Post. Die
-            KI prüft ihn gegen die 16 Techniken aus den Vertiefungen und zeigt
-            dir, welche Hebel darin wirken – mit der Textstelle und einer
+            KI analysiert ihn anhand transparenter Kriterien – der 16 Techniken
+            aus den Vertiefungen – und zeigt dir, welche Hebel darin wirken – mit der Textstelle und einer
             nüchternen Erklärung. Nicht, um dir zu sagen, was du denken sollst,
             sondern damit du die Mechanik selbst siehst.
           </p>

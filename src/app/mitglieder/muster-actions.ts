@@ -7,9 +7,11 @@ import { getJournalEntries } from "@/app/mitglieder/actions";
 import { resolveEntry } from "@/lib/journal";
 import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
 import { isKiMusterSpiegelEnabled } from "@/lib/ki-features";
+import { musterSystemPrompt } from "@/lib/ki-grenzen";
 
 /**
- * Muster-Spiegel: KI-Auswertung der eigenen Journal-Reflexionen.
+ * Muster-Spiegel: Spiegelung wiederkehrender Themen aus den eigenen
+ * Journal-Reflexionen (keine Bewertung, keine Lernkontrolle).
  *
  * WICHTIG: Ein Spiegel wird NIE automatisch erzeugt, sondern ausschließlich auf
  * ausdrückliche Freigabe (Button-Klick → `generateMusterSpiegel`). Erst dann
@@ -129,37 +131,8 @@ export async function generateMusterSpiegel(): Promise<GenerateMusterResult> {
   const sourceFrom = dates[0] ?? null;
   const sourceTo = dates[dates.length - 1] ?? null;
 
-  const system = `Du schreibst für „Werde Meister deiner Gedanken" von Heiko Schwaninger –
-ein Begleitangebot zur Bewusstseinsentwicklung in 7 Stufen. Der Kern der
-Methode: Gedanken und Muster zu bemerken, statt von ihnen gelebt zu werden.
-
-Deine Aufgabe: Lies die Journal-Reflexionen einer Person und halte ihr einen
-behutsamen „Muster-Spiegel" vor – benenne EIN bis ZWEI wiederkehrende Muster,
-die sich über mehrere Einträge zeigen (ein Glaubenssatz, eine innere Stimme,
-eine Autopilot-Schleife, ein wiederkehrendes Thema).
-
-Du bist ein Spiegel, kein Orakel. Halte dich strikt daran:
-- Sprich die Person mit „du" an. Ruhig, warm, geerdet, auf Augenhöhe.
-- Deute NUR, was tatsächlich dasteht. Belege jedes benannte Muster mit ihren
-  eigenen Worten – kurz zitiert. Erfinde nichts: keine Biografie, keine
-  Diagnose, keine Zahlen, keine Vorhersage.
-- Kein esoterisches Übertreiben, keine Heilsversprechen, keine Floskeln.
-- Ein Muster ist eine Beobachtung, kein Urteil. Formuliere es als etwas, das
-  sich zeigt („Über mehrere Einträge taucht … auf"), nicht als Etikett.
-- Zeigen die Einträge zu wenig Zusammenhang für ein echtes Muster, sag das
-  ehrlich und lade ein, weiterzuschreiben – erfinde kein Muster.
-- Schließe mit EINER sanften Frage oder einem kleinen nächsten Schritt zum
-  Selber-Nachspüren – keine Vorschrift, keine To-do-Liste.
-- Du prüfst NICHT, ob Inhalte richtig verstanden wurden, und bewertest NICHT
-  die fachliche Richtigkeit der Einträge. Es gibt hier kein Richtig oder Falsch.
-- Keine Einstufung als bestanden oder nicht bestanden, keine Note, kein Urteil
-  über Leistung oder Fortschritt.
-- Keine Aussage darüber, ob Lernziele erreicht wurden oder ein Inhalt
-  „gekonnt“ wird.
-- Du spiegelst und strukturierst ausschließlich, was die Person selbst
-  geschrieben hat – nicht mehr.
-- 180–280 Wörter, Fließtext in kurzen Absätzen, kein Markdown, keine
-  Überschriften.`;
+  // Prompt samt gemeinsamer Grenzen (KI_ZFU_GRENZEN) in lib/ki-grenzen.
+  const system = musterSystemPrompt();
 
   try {
     const anthropic = new Anthropic({ apiKey });
@@ -174,7 +147,7 @@ Du bist ein Spiegel, kein Orakel. Halte dich strikt daran:
         messages: [
           {
             role: "user",
-            content: `Hier sind meine Journal-Reflexionen. Halte mir meinen Muster-Spiegel vor.\n\n${reflections}`,
+            content: `Hier sind meine Journal-Reflexionen. Spiegle mir, welche Themen darin wiederkehren.\n\n${reflections}`,
           },
         ],
       }),

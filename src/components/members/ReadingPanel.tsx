@@ -6,7 +6,8 @@ import { pillCta } from "./panelStyles";
 import { generateReading, type Reading } from "@/app/mitglieder/reading-actions";
 
 /**
- * KI-Reading zum Gedankenprofil.
+ * KI-Reading: KI-gestützte Reflexion auf Basis der eigenen Angaben im
+ * Bewusstseinstest (keine Lernstands- oder Leistungsauswertung).
  *
  * Das Reading wird ausschließlich auf ausdrückliche Freigabe erzeugt: erst ein
  * Klick auf „Reading erzeugen" ruft die KI auf. Ein bereits gespeichertes
@@ -62,16 +63,16 @@ export function ReadingPanel({
     <div className="flex flex-col gap-5 rounded-2xl border border-accent/25 bg-white p-6 shadow-card sm:p-8">
       <div className="flex flex-col gap-1">
         <span className={memberEyebrow}>
-          Persönliches Reading
+          KI-gestützte Reflexion
         </span>
         <h2 className="font-display text-2xl font-medium text-ink">
-          Dein Profil in Worten
+          Deine Selbsteinschätzung in Worten
         </h2>
         <p className="max-w-xl text-[1rem] leading-relaxed text-ink-mid">
-          Auf deinen Wunsch fasst eine KI dein Gedankenprofil in einen
-          persönlichen, ausformulierten Text – als Ergänzung zur Auswertung
-          oben. Nichts wird automatisch erzeugt; du gibst es mit einem Klick
-          frei.
+          Auf deinen Wunsch formuliert eine KI aus deinen eigenen Antworten im
+          Bewusstseinstest eine mögliche Perspektive – als Ergänzung zur
+          Übersicht oben, ohne Bewertung. Nichts wird automatisch erzeugt; du
+          gibst es mit einem Klick frei.
         </p>
       </div>
 
@@ -119,7 +120,8 @@ export function ReadingPanel({
         </button>
         {!reading && !loading && (
           <span className="text-xs text-ink-muted">
-            Erzeugt aus deinen eigenen Profildaten – keine Vorhersage.
+            Nur aus deiner eigenen Selbsteinschätzung – keine Bewertung, keine
+            Vorhersage.
           </span>
         )}
       </div>

@@ -73,8 +73,8 @@ export function MusterSpiegelPanel({
         </h2>
         <p className="max-w-xl text-[1rem] leading-relaxed text-ink-mid">
           Auf deinen Wunsch liest eine KI deine gesammelten Reflexionen und
-          benennt behutsam ein bis zwei wiederkehrende Muster – belegt mit
-          deinen eigenen Worten. Ein Spiegel, kein Urteil.
+          spiegelt ein bis zwei Themen, die darin wiederkehren – belegt mit
+          deinen eigenen Worten. Ein Spiegel, keine Bewertung.
         </p>
       </div>
 

@@ -11,11 +11,15 @@ import { isKiDetektorEnabled } from "@/lib/ki-features";
 /**
  * Manipulations-Detektor.
  *
- * Die Person fügt einen Text ein (Werbung, Schlagzeile, Post) – eine KI prüft
- * ihn gegen die 16 Techniken aus der Vertiefungs-Kategorie „Mentale
+ * Die Person fügt einen fremden Text ein (Werbung, Schlagzeile, Post) – eine KI
+ * analysiert ihn anhand der 16 Techniken aus der Vertiefungs-Kategorie „Mentale
  * Selbstverteidigung" und benennt, welche darin wirken, mit Zitat und
  * nüchterner Erklärung. Kein Werturteil über das Thema des Textes; es geht um
  * die Mechanik, nicht um Gesinnung.
+ *
+ * ZFU-Einordnung (docs/ZFU-KI-PRUEFUNG.md): Analysiert wird nur der fremde
+ * Text anhand einer festen Taxonomie – keine Wissensabfrage, keine Bewertung
+ * der Person, kein Abgleich mit einer Lösung der Person.
  *
  * Ein Aufruf passiert ausschließlich auf Klick. Ohne ANTHROPIC_API_KEY oder
  * ohne den Schalter KI_DETEKTOR_ENABLED=true (Standard: aus,
@@ -123,6 +127,11 @@ Regeln:
   ein Text, dem du inhaltlich zustimmst, kann Techniken nutzen.
 - Findest du nichts Belastbares, ist das ein gültiges Ergebnis: leere Fund-Liste.
   Erzwinge keine Treffer.
+- Du analysierst ausschließlich den eingefügten Text – nicht die Person. Du
+  prüfst nicht ihr Wissen über die Techniken und bewertest nicht, ob sie
+  Techniken selbst richtig erkennt. Enthält die Eingabe eigene Vermutungen der
+  Person („ich glaube, das ist X – stimmt das?"), bestätigst oder korrigierst
+  du diese nicht, sondern analysierst nur den fremden Text.
 - Antworte AUSSCHLIESSLICH mit einem JSON-Objekt, ohne Text davor oder danach:
   {"gesamt": "<ein nüchterner Satz zum Gesamteindruck>",
    "funde": [{"technik": "<kürzel>", "zitat": "<kurzes Zitat>", "erklaerung": "<1-2 Sätze>"}]}`;
