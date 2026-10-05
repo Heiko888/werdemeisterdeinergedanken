@@ -152,7 +152,7 @@ export default async function MitgliedschaftPage({
               alten Mustern, rein in echte innere Klarheit.
             </p>
             <div className="mt-8 flex flex-col gap-3 [text-shadow:none] sm:flex-row sm:flex-wrap">
-              <Button href="/bewusstseinstest" size="lg" className="w-full sm:w-auto">
+              <Button href="/bewusstseinstest" variant="accent" size="lg" className="w-full sm:w-auto">
                 Kostenlosen Bewusstseinstest machen
               </Button>
               <Button
@@ -371,7 +371,7 @@ export default async function MitgliedschaftPage({
                 selbstständig nutzbar – du gehst deinen eigenen Weg durch die
                 sieben Stufen. Hast du vorab eine Frage? Schreib uns.
               </p>
-              <Button href={MITGLIEDSCHAFT_KONTAKT_HREF} size="lg" className="mt-4 w-full">
+              <Button href={MITGLIEDSCHAFT_KONTAKT_HREF} variant="accent" size="lg" className="mt-4 w-full">
                 Frage zur Mitgliedschaft
               </Button>
             </div>
@@ -449,7 +449,7 @@ export default async function MitgliedschaftPage({
           Der erste Schritt ist nicht ändern, sondern sehen. Fang heute an.
         </p>
         <div className="mt-8 flex justify-center">
-          <Button href="/bewusstseinstest" size="lg">
+          <Button href="/bewusstseinstest" variant="accent" size="lg">
             Kostenlosen Bewusstseinstest machen
           </Button>
         </div>

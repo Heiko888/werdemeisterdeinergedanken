@@ -5,6 +5,24 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-05 – Mitgliedschaft: Button-Farbe auf dunklem Grund korrigiert
+
+**Anlass:** Auf `/mitgliedschaft` passten die Haupt-Buttons farblich nicht.
+Ursache: Sie nutzten die Standard-Variante `primary` (dunkler Verlauf bis
+`ink`). In den dunklen `.on-dark`-Sektionen schaltet `ink` auf Weiß um – der
+Button lief dadurch von Dunkelgrün in Weiß, mit hellem Text darauf.
+
+`src/app/mitgliedschaft/page.tsx` – drei Buttons auf `variant="accent"`
+(goldener Button, wie Startseiten-Hero und Final-CTA):
+- Hero: „Kostenlosen Bewusstseinstest machen“
+- Zugang-Box: „Frage zur Mitgliedschaft“
+- Final-CTA: „Kostenlosen Bewusstseinstest machen“
+
+Sekundär-Buttons („Frage zur Mitgliedschaft“ im Hero, „Häufige Fragen
+ansehen“) unverändert – sie sind theme-fähig und auf Dunkel korrekt.
+
+---
+
 ## 2026-10-04 – Über-mich-Seite in die Produktabgrenzung einbezogen
 
 **Anlass:** Ergänzung zu Phase 1. `/ueber-mich` bleibt Heikos persönliche
