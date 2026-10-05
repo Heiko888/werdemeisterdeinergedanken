@@ -126,6 +126,10 @@ persönlich innerhalb dieses digitalen Angebots.“
   woher Wissen stammt – ausdrücklich keine heilkundliche Qualifikation.
 - Kein Überkorrigieren: „Dieser Gedanke hat mich begleitet“ ist unproblematisch.
   Geändert wird nur, was eine geschuldete persönliche Betreuung suggeriert.
+- Feste Chronologie (Stand 2026-10-05): Lenas Tod → rund zwei Jahre Vollgas →
+  etwa drei Jahre nach ihrem Tod die Implosion → Reset/Neuaufbau → erst danach
+  Programmierung, Docker, Server, KI. Das Coaching ist eines, das Heiko selbst
+  erhalten hat – kein Angebot. Keine privaten Familien- oder Geldgeschichten.
 - Die Werte (`values` in `src/lib/content.ts`) erscheinen auf `/ueber-mich` und
   auf der Startseite (`WhyMe.tsx`) und folgen derselben Regel.
 

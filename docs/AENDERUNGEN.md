@@ -23,6 +23,39 @@ ansehen“) unverändert – sie sind theme-fähig und auf Dunkel korrekt.
 
 ---
 
+## 2026-10-05 – Über-mich-Seite inhaltlich neu strukturiert
+
+**Anlass:** Der bisherige Text war unvollständig und chronologisch falsch (u. a.
+Zusammenbruch direkt nach dem Verlust), Geschichte und Timeline doppelten sich.
+Nur `src/app/ueber-mich/page.tsx` geändert; Design, Bausteine (PageHero,
+Fragen-Boxen, Gold-Box, Zitat, Timeline, Karten, Werte, Nächste Schritte),
+Header/Footer und `values` unverändert.
+
+- **Roter Faden:** Systeme verstehen → Systeme enttarnen → das eigene innere
+  System enttarnen.
+- **Neue Struktur:** Hero · Meine Geschichte (Systeme; Technik → Mensch;
+  Menschen & Kommunikation; kein Modell einfach glauben; Funktionieren; Der
+  Verlust; Drei Jahre später: die Implosion) · Was danach kam (inneres System;
+  Reset; Persönlichkeitsanteile; was sich verändern lässt; Neu aufbauen; kein
+  Happy End; vom Methodenwissen zum Gesamtbild; 7 Stufen; „Bewusstsein wird erst
+  durch Handlung wirksam.“) · Mein Weg auf einen Blick (7 kurze Phasen) · Woher
+  meine Perspektive kommt (4 Karten + Hinweis) · Werte · Nächste Schritte.
+- **Chronologie korrigiert:** Lenas Tod → rund zwei Jahre Vollgas → etwa drei
+  Jahre nach ihrem Tod die Implosion → Reset/Neuaufbau → erst danach
+  Programmierung, Coding, Docker, Server, KI.
+- **„Woher mein Wissen kommt“** → „Woher meine Perspektive kommt / Erfahrung aus
+  unterschiedlichen Welten“ mit den tatsächlichen Grundlagen (Kfz-Mechaniker,
+  Betriebsinformatiker, Berufspraxis, ~7 Jahre Referent, Weiterbildung,
+  Selbststudium) und ausdrücklich ohne ärztliche/psychotherapeutische/
+  heilkundliche Qualifikation. Rechtlicher Hinweis beibehalten.
+- Produktabgrenzung eingehalten: Gründer statt Begleiter, Coaching nur als selbst
+  erhaltenes Coaching, keine Heil- oder Wirkversprechen.
+
+**Geprüft:** `tsc` ✓, `npm test` 13/13 ✓, ESLint ✓, `npm run build` ✓;
+Playwright 375 / 768 / 1440 px: kein horizontaler Überlauf.
+
+---
+
 ## 2026-10-05 – Kontroll-Patch: Tracking ohne Test-Stufe, alle KI-Funktionen aus
 
 **Anlass:** Kontrolle nach PR #389–#391. Bis die Datenschutzgrundlage für
