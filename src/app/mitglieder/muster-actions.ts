@@ -6,6 +6,7 @@ import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { getJournalEntries } from "@/app/mitglieder/actions";
 import { resolveEntry } from "@/lib/journal";
 import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
+import { erfasseKiEinwilligung } from "@/lib/ki-einwilligung-server";
 import { isKiMusterSpiegelEnabled } from "@/lib/ki-features";
 import { musterSystemPrompt } from "@/lib/ki-grenzen";
 
@@ -133,6 +134,10 @@ export async function generateMusterSpiegel(): Promise<GenerateMusterResult> {
 
   // Prompt samt gemeinsamer Grenzen (KI_ZFU_GRENZEN) in lib/ki-grenzen.
   const system = musterSystemPrompt();
+
+  // Nachweis der Einwilligung (Art. 7 Abs. 1 DSGVO) – ohne ihn geht nichts
+  // an die KI.
+  if (!(await erfasseKiEinwilligung(supabase, "muster"))) return { status: "error" };
 
   try {
     const anthropic = new Anthropic({ apiKey });

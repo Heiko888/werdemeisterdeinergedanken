@@ -277,7 +277,8 @@ export default function PrivacyPage() {
                 </li>
                 <li>deine persönlichen Notizen und Reflexionen</li>
                 <li>
-                  Ergebnisse der von dir genutzten KI-Funktionen (siehe Punkt 14)
+                  Ergebnisse der von dir genutzten KI-Funktionen und Nachweise
+                  deiner Einwilligungen dazu (siehe Punkt 14)
                 </li>
                 <li>Angaben zu Buchbestellungen (siehe Punkt 13)</li>
                 <li>dein Opt-in-Status für die E-Mail-Impulse</li>
@@ -421,6 +422,17 @@ export default function PrivacyPage() {
                 formlose Mail an{" "}
                 <a href={`mailto:${site.email}`} className="break-all">{site.email}</a>{" "}
                 genügt.
+              </p>
+              <p>
+                <strong>Nachweis deiner Einwilligung:</strong> Bei jeder
+                Nutzung eines KI-Werkzeugs speichern wir vor der Übertragung
+                den Zeitpunkt, das Werkzeug sowie die Version und eine
+                Prüfsumme des angezeigten Einwilligungstexts – nicht den Inhalt
+                deiner Eingabe. Damit erfüllen wir unsere Pflicht, eine
+                Einwilligung nachweisen zu können (Art. 7 Abs. 1 DSGVO);
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. c DSGVO. Die Einträge
+                kannst nur du einsehen, ändern kann sie niemand; sie werden
+                mit deinem Account gelöscht.
               </p>
               <p>
                 Die KI-Werkzeuge bewerten nicht dein Wissen oder deine

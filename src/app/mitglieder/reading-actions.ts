@@ -6,6 +6,7 @@ import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { getTestProfile } from "@/app/mitglieder/actions";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
 import { KI_MODELL, mitErsatzmodell } from "@/lib/ki-modell";
+import { erfasseKiEinwilligung } from "@/lib/ki-einwilligung-server";
 import { isKiReadingEnabled } from "@/lib/ki-features";
 import { readingSystemPrompt, selbsteinschaetzungFacts } from "@/lib/ki-grenzen";
 
@@ -90,6 +91,10 @@ export async function generateReading(): Promise<GenerateResult> {
   // Kompakte, faktische Zusammenfassung – die KI deutet nur diese Angaben.
   const profileFacts = selbsteinschaetzungFacts(profil);
   const system = readingSystemPrompt();
+
+  // Nachweis der Einwilligung (Art. 7 Abs. 1 DSGVO) – ohne ihn geht nichts
+  // an die KI.
+  if (!(await erfasseKiEinwilligung(supabase, "reading"))) return { status: "error" };
 
   try {
     const anthropic = new Anthropic({ apiKey });

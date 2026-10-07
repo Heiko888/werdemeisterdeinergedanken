@@ -5,6 +5,29 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-07 – Nachweis der KI-Einwilligung mit Zeitstempel
+
+- **Migration (neu, noch NICHT eingespielt):**
+  `supabase/migrations/20261007120000_ki_einwilligungen.sql` – Tabelle
+  `ki_einwilligungen` (id, user_id, werkzeug, text_version, text_sha256,
+  created_at), RLS: nur Lesen eigener Zeilen; Schreiben ausschließlich über
+  security-definer-Funktion `ki_einwilligung_erfassen` (user_id aus
+  `auth.uid()`), kein Update/Delete. Löschung mit dem Account.
+- **Server:** `src/lib/ki-einwilligung-server.ts` (`erfasseKiEinwilligung`)
+  wird in Begleiter-Route, Reading-, Muster- und Detektor-Action **vor** dem
+  KI-Aufruf ausgeführt. Scheitert der Eintrag, geht nichts an Anthropic.
+- **Texte:** `KI_EINWILLIGUNG_VERSION = "2026-10-07"` und
+  `einwilligungsWortlaut()` in `src/lib/ki-einwilligung.ts`; Test bricht,
+  wenn ein Text ohne neue Version geändert wird.
+- **Datenschutz:** Punkt 14 (neuer Absatz „Nachweis deiner Einwilligung“,
+  Art. 7 Abs. 1 / Art. 6 Abs. 1 lit. c DSGVO) und Punkt 12 ergänzt.
+- **Tests:** 3 neue → 33/33.
+- **Server – vor dem Einschalten eines KI-Werkzeugs:** Migration einspielen.
+  Solange alle Schalter aus sind, hat die fehlende Tabelle keine Wirkung.
+  **Kein Schalter geändert.**
+
+---
+
 ## 2026-10-07 – Probelauf-Werkzeug für den KI-Begleiter
 
 - Neu `tools/ki/begleiter-probelauf.mjs` + `npm run ki:probelauf`: echter
