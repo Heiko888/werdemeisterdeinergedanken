@@ -54,6 +54,39 @@ Supabase-Liste nennt KI-Ergebnisse und Buchbestellungen.
   Journal-Auszüge, Gesprächsverlauf sowie gespeicherte Spiegeltexte und
   Detektor-Ergebnisse).
 
+## Am 2026-10-07: Punkt 14 für die KI-Werkzeuge neu geschrieben
+
+Grundlage (Angaben des Betreibers + öffentliche Anthropic-Unterlagen, abgerufen
+2026-10-07):
+- Vertrag: Anthropic **Commercial Terms** mit einbezogenem **DPA**
+  (anthropic.com/legal/commercial-terms, …/data-processing-addendum).
+- Vertragspartner für Kunden im EWR: **Anthropic Ireland, Limited**.
+- Anthropic ist **Auftragsverarbeiter**; Drittlandübermittlung über
+  **EU-Standardvertragsklauseln** (Module 2/3). Das DPA erwähnt das
+  EU-US Data Privacy Framework **nicht** – deshalb nicht genannt.
+- **Kein Training** auf Kundeninhalten („Anthropic may not train models on
+  Customer Content from Services.“).
+- **Speicherdauer bei Anthropic:** Das DPA nennt keine feste Frist (nur
+  Löschung binnen 30 Tagen nach Vertragsende). Deshalb steht in Punkt 14
+  **keine** Frist. Bei Bedarf in der Anthropic-Konsole/den Unterlagen klären
+  und nachtragen.
+- Rechtsgrundlage (Entscheidung Betreiber): **Einwilligung** Art. 6 Abs. 1
+  lit. a, für mögliche Gesundheitsangaben Art. 9 Abs. 2 lit. a DSGVO.
+- Text bewusst so formuliert („wenn du ein Werkzeug startest …“), dass er
+  auch stimmt, solange die Schalter aus sind.
+
+**Noch offen vor dem Einschalten:**
+- **Einwilligung in der Oberfläche:** Punkt 14 stützt sich auf eine
+  Einwilligung „durch Starten des Werkzeugs“. Für Art. 9 (ausdrückliche
+  Einwilligung) braucht es vor dem ersten Start einen kurzen, klaren Hinweis
+  am Werkzeug (Begleiter-Eingabe, Reading-, Spiegel-, Detektor-Button), der
+  auf Punkt 14 verweist – idealerweise eine einmalige Bestätigung. Heute hat
+  nur der Muster-Spiegel einen Übertragungshinweis.
+- Unterauftragsverarbeiter-Liste von Anthropic einmal ansehen.
+- Prüfen, ob der DPA im Anthropic-Konto tatsächlich akzeptiert/abgeschlossen
+  ist (nicht nur öffentlich verfügbar).
+- Juristische Durchsicht des neuen Punkt 14 empfohlen.
+
 ## Am 2026-10-05: alle KI-Funktionen aus
 
 Bis die Datenschutzgrundlage für Journalinhalte und Anthropic geklärt ist,

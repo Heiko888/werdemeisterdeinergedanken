@@ -5,6 +5,30 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-07 – Datenschutzerklärung Punkt 14: KI-Werkzeuge
+
+`src/app/datenschutz/page.tsx`, Punkt 14 neu („KI-Werkzeuge im
+Mitgliederbereich“, vorher nur „vorbereitet, nicht aktiv“):
+- Werkzeuge freiwillig, KI-generiert, nicht Heiko persönlich; Übertragung nur
+  beim selbst gestarteten Werkzeug.
+- Übermittelte Daten je Werkzeug (Begleiter, Muster-Spiegel,
+  KI-Reflexion zum Gedankenprofil, Detektor) – wie im Code
+  (`docs/KI-PRODUKTMODELL.md` Abschnitt 4/5).
+- Anbieter Anthropic Ireland, Limited als Auftragsverarbeiter (Art. 28),
+  Drittland USA über EU-Standardvertragsklauseln, kein Training auf Inhalten
+  (laut Commercial Terms + DPA, abgerufen 2026-10-07). Keine Speicherfrist
+  genannt, weil das DPA keine feste Frist enthält.
+- Rechtsgrundlage Einwilligung (Art. 6 Abs. 1 lit. a; Art. 9 Abs. 2 lit. a für
+  mögliche Gesundheitsangaben), Widerruf, Speicherung der Ergebnisse in
+  Supabase, Löschung.
+- Formulierung stimmt auch bei ausgeschalteten Werkzeugen („wenn du ein
+  Werkzeug startest“). **Kein Schalter geändert.**
+- Offen (DATENSCHUTZ-TODO): Einwilligungshinweis in der Oberfläche vor dem
+  ersten Start, DPA-Abschluss im Anthropic-Konto bestätigen, juristische
+  Durchsicht.
+
+---
+
 ## 2026-10-07 – KI-Begleiter Freigabeprüfung, KI-Werkzeuge als eigenes Produktmodell
 
 **Anlass:** Prüfen, ob der Begleiter nach der ZFU-Abgrenzung vom 2026-10-05

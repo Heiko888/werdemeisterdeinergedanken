@@ -470,11 +470,11 @@ Vor dem Einschalten:
    die Antworten in dieser Datei unter 7.7 protokollieren. Weicht das Modell
    ab: Regel in `BEGLEITER_KEINE_LERNKONTROLLE` (`src/lib/ki-grenzen.ts`)
    schärfen.
-2. **Datenschutz** (kein ZFU-Punkt, aber Voraussetzung):
-   `src/app/datenschutz/page.tsx`, Abschnitt „14. KI-Funktionen im
-   Mitgliederbereich“ – Anbieter, übermittelte Kategorien laut
-   `docs/KI-PRODUKTMODELL.md` Abschnitt 5, Drittlandbezug; offen in
-   `docs/DATENSCHUTZ-TODO.md`.
+2. **Datenschutz** (kein ZFU-Punkt, aber Voraussetzung): Punkt 14 in
+   `src/app/datenschutz/page.tsx` ist seit 2026-10-07 neu geschrieben
+   („14. KI-Werkzeuge im Mitgliederbereich“). Noch offen: Einwilligungshinweis
+   in der Oberfläche vor dem ersten Start (`docs/DATENSCHUTZ-TODO.md`,
+   Abschnitt 2026-10-07).
 
 **`KI_READING_ENABLED` – JA** (ZFU). Datenschutz Punkt 14 bleibt Voraussetzung.
 Empfehlung: Umbenennung in „Standortreflexion“ vor oder mit Aktivierung
