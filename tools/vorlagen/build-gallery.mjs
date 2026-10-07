@@ -1027,6 +1027,7 @@ function buildWorkshop() {
     "blog": "Blog & Deep-Dives",
     "journal": "Journal & Impulse",
     "reel-skripte": "Reel-Drehbücher",
+    "ueber-mich-skripte": "Über mich – YouTube & Reel-Talk",
     "video-drehbuecher": "Video-Drehbücher",
     "carousel-texte": "Carousel-Texte",
     "anleitungen": "Anleitungen",

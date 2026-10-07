@@ -187,8 +187,14 @@ ansehen“) unverändert – sie sind theme-fähig und auf Dunkel korrekt.
   Beschreibung mit Kapitelmarken, Thumbnail, angepinnter Kommentar.
 - Inhalt 1:1 aus der Über-mich-Seite, gleiche Produktabgrenzung (Gründer, keine
   Heilversprechen, kein Coaching-/Erstgespräch-CTA) und gleiche Chronologie.
-- `docs/skripte/README.md` um den Abschnitt ergänzt. Noch nicht in den
-  PDF-/Bündel-Generatoren (`npm run videoskripte-md`, `reel-drehbuch`).
+- `docs/skripte/README.md` um den Abschnitt ergänzt.
+- **PDFs:** neuer Generator `tools/pdf/ueber-mich-skripte.mjs`
+  (`npm run ueber-mich-skripte`), Optik wie `reel-drehbuch.mjs`; Ausgabe
+  `docs/workshop/ueber-mich-skripte/WMDG-Reel-Talk-Meine-Geschichte.pdf`
+  (11 Seiten) und `…/WMDG-YouTube-Talk-Meine-Geschichte.pdf` (10 Seiten).
+  Galerie-Label „Über mich – YouTube & Reel-Talk“ in
+  `tools/vorlagen/build-gallery.mjs` – sichtbar nach dem nächsten
+  `npm run vorlagen:galerie` (nicht ausgeführt, baut den ganzen Katalog neu).
 
 ---
 

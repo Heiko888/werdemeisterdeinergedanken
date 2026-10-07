@@ -89,8 +89,15 @@ Talking-Head-Content zu Heikos Geschichte, Grundlage ist ausschließlich die
 
 Regeln: Heiko spricht als Gründer, keine Heilversprechen, kein Coaching- oder
 Erstgespräch-CTA, feste Chronologie (Lenas Tod → zwei Jahre Vollgas → etwa drei
-Jahre später die Implosion → Neuaufbau → erst danach Technik/KI). Noch nicht in
-den PDF-/Bündel-Generatoren enthalten.
+Jahre später die Implosion → Neuaufbau → erst danach Technik/KI).
+
+Gebrandete **PDFs** (Optik wie die Reel-Drehbücher):
+`docs/workshop/ueber-mich-skripte/WMDG-Reel-Talk-Meine-Geschichte.pdf` und
+`…/WMDG-YouTube-Talk-Meine-Geschichte.pdf` – erzeugt mit
+`npm run ueber-mich-skripte` (Generator: `tools/pdf/ueber-mich-skripte.mjs`,
+Text 1:1 aus den Markdown-Dateien). Nach Textänderungen den Befehl erneut
+ausführen. In der Vorlagen-Galerie erscheinen sie nach dem nächsten
+`npm run vorlagen:galerie` unter „Über mich – YouTube & Reel-Talk“.
 
 ## Drehreihenfolge (Empfehlung)
 
