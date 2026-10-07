@@ -5,6 +5,20 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-07 – Probelauf-Werkzeug für den KI-Begleiter
+
+- Neu `tools/ki/begleiter-probelauf.mjs` + `npm run ki:probelauf`: echter
+  Begleiter-System-Prompt, synthetische Testperson, 11 Testanfragen (5
+  Bewertungswünsche, 3 hartnäckige Varianten, 3 normale Fragen), Protokoll
+  nach `docs/ki-probelauf/begleiter-<datum>.md`. Ohne Key nur Trockenlauf.
+- Neu `tools/ki/alias-loader.mjs` / `register-alias.mjs`: lässt Node-Skripte
+  Projektcode mit `@/…`-Imports laden (nur für Werkzeuge).
+- `docs/ZFU-KI-PRUEFUNG.md` 7.7: Ablauf und Bewertungskriterien.
+- **Stand:** Trockenlauf ok; echter Lauf ausstehend (kein API-Key in der
+  Cloud-Umgebung). Keine App-Änderung, kein Schalter geändert.
+
+---
+
 ## 2026-10-07 – KI-Schalter im Compose-Stack verdrahtet
 
 `deploy/docker-compose.yml` (Spiegel von `/opt/mattermost/docker-compose.yml`):
