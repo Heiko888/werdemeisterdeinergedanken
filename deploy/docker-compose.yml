@@ -64,9 +64,18 @@ services:
       # Schützt /api/impulses (Serienversand der E-Mail-Impulse). Ohne
       # diesen Wert lehnt die Route jeden Aufruf ab.
       CRON_SECRET: ${CRON_SECRET:-}
-      # KI-Reading zum Gedankenprofil (/mitglieder/gedankenprofil). Fehlt der
-      # Wert, blendet die Seite die Reading-Option aus – kein Fehler.
+      # API-Key für alle KI-Werkzeuge (Begleiter, Reading, Muster-Spiegel,
+      # Detektor). Fehlt der Wert, bleiben alle vier unsichtbar – kein Fehler.
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      # Schalter je KI-Werkzeug (src/lib/ki-features.ts). Nur der exakte Wert
+      # "true" schaltet ein; Standard false = Werkzeug unsichtbar, keine Daten
+      # an Anthropic. Einschalten erst nach Freigabe laut
+      # docs/ZFU-KI-PRUEFUNG.md Abschnitt 7 – dann nur den Wert in
+      # /opt/mattermost/.env ändern und "up -d website" (kein Rebuild).
+      KI_BEGLEITER_ENABLED: ${KI_BEGLEITER_ENABLED:-false}
+      KI_READING_ENABLED: ${KI_READING_ENABLED:-false}
+      KI_MUSTER_SPIEGEL_ENABLED: ${KI_MUSTER_SPIEGEL_ENABLED:-false}
+      KI_DETEKTOR_ENABLED: ${KI_DETEKTOR_ENABLED:-false}
       # Zugang zum Marketing-Cockpit /admin (kommagetrennte Adressen).
       #
       # ACHTUNG: Diese Zeile setzt die Variable IMMER – fehlt der Wert in der
@@ -92,14 +101,6 @@ services:
       #   REQUIRE_ACTIVE_MEMBERSHIP / ALLOW_SELF_REGISTRATION → beide false
       #                          (Code prüft strikt === "true")
       #   STRIPE_*             → ohne Wert bleibt der Bezahlweg inaktiv
-      #   KI_BEGLEITER_ENABLED / KI_READING_ENABLED /
-      #   KI_MUSTER_SPIEGEL_ENABLED / KI_DETEKTOR_ENABLED
-      #                        → alle vier KI-Werkzeuge aus (src/lib/ki-features.ts,
-      #                          strikt === "true"). Zum späteren Einschalten
-      #                          NICHT nur die .env ändern: die Zeile, z. B.
-      #                          KI_BEGLEITER_ENABLED: ${KI_BEGLEITER_ENABLED:-false},
-      #                          muss hier UND in /opt/mattermost/docker-compose.yml
-      #                          stehen. Freigabe: docs/ZFU-KI-PRUEFUNG.md, Abschnitt 7.
       #
       # Sobald eine eigene Resend-Domain steht, gehören die *_FROM-Adressen
       # hier UND in /opt/mattermost/docker-compose.yml verdrahtet.

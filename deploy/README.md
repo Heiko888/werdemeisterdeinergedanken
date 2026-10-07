@@ -47,7 +47,8 @@ TLS-Zertifikate holt und erneuert Caddy selbst – kein certbot, kein Cron.
 `NEXT_PUBLIC_*` wird zur **Buildzeit** ins Client-Bundle eingebacken. Werden
 diese Werte in `/opt/mattermost/.env` geändert, braucht es ein `--build`.
 Alle übrigen Variablen (`RESEND_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`,
-`CRON_SECRET`, `ANTHROPIC_API_KEY`, `ADMIN_EMAILS`, `ENFORCE_CANONICAL_HOST`)
+`CRON_SECRET`, `ANTHROPIC_API_KEY`, `KI_*_ENABLED`, `ADMIN_EMAILS`,
+`ENFORCE_CANONICAL_HOST`)
 werden zur **Laufzeit** gelesen – dort genügt:
 
 ```bash
