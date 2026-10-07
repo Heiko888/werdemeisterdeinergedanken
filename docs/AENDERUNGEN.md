@@ -5,6 +5,50 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-07 – Einwilligungshinweis an den KI-Werkzeugen
+
+Damit die Einwilligung aus Datenschutz Punkt 14 in der Oberfläche tatsächlich
+erteilt wird: kurzer, sachlicher Hinweis direkt am Start-Element jedes
+KI-Werkzeugs – Begleiter (unter dem Eingabefeld, zusammen mit der
+KI-Kennzeichnung), Reading (unter dem Button), Muster-Spiegel (ersetzt den
+bisherigen Übertragungshinweis), Detektor (unter dem Button).
+
+- Neu `src/lib/ki-einwilligung.ts` (Texte je Werkzeug, Link
+  `/datenschutz#ki-werkzeuge`) und `src/components/members/KiEinwilligungsHinweis.tsx`.
+- Begleiter und Spiegel nennen mögliche Gesundheitsangaben (Art. 9 DSGVO);
+  alle nennen Anthropic und den Widerruf.
+- `src/app/datenschutz/page.tsx`: Anker `id="ki-werkzeuge"` an Punkt 14,
+  Satz zur Rechtsgrundlage beschreibt jetzt den Hinweis am Werkzeug.
+- Tests: `src/lib/ki-einwilligung.test.ts` (4) → gesamt 30/30.
+- Keine Einwilligung wird gespeichert, keine Migration, **kein Schalter
+  geändert** – sichtbar wird alles erst mit eingeschaltetem Werkzeug.
+
+---
+
+## 2026-10-07 – Datenschutzerklärung Punkt 14: KI-Werkzeuge
+
+`src/app/datenschutz/page.tsx`, Punkt 14 neu („KI-Werkzeuge im
+Mitgliederbereich“, vorher nur „vorbereitet, nicht aktiv“):
+- Werkzeuge freiwillig, KI-generiert, nicht Heiko persönlich; Übertragung nur
+  beim selbst gestarteten Werkzeug.
+- Übermittelte Daten je Werkzeug (Begleiter, Muster-Spiegel,
+  KI-Reflexion zum Gedankenprofil, Detektor) – wie im Code
+  (`docs/KI-PRODUKTMODELL.md` Abschnitt 4/5).
+- Anbieter Anthropic Ireland, Limited als Auftragsverarbeiter (Art. 28),
+  Drittland USA über EU-Standardvertragsklauseln, kein Training auf Inhalten
+  (laut Commercial Terms + DPA, abgerufen 2026-10-07). Keine Speicherfrist
+  genannt, weil das DPA keine feste Frist enthält.
+- Rechtsgrundlage Einwilligung (Art. 6 Abs. 1 lit. a; Art. 9 Abs. 2 lit. a für
+  mögliche Gesundheitsangaben), Widerruf, Speicherung der Ergebnisse in
+  Supabase, Löschung.
+- Formulierung stimmt auch bei ausgeschalteten Werkzeugen („wenn du ein
+  Werkzeug startest“). **Kein Schalter geändert.**
+- Offen (DATENSCHUTZ-TODO): Einwilligungshinweis in der Oberfläche vor dem
+  ersten Start, DPA-Abschluss im Anthropic-Konto bestätigen, juristische
+  Durchsicht.
+
+---
+
 ## 2026-10-07 – KI-Begleiter Freigabeprüfung, KI-Werkzeuge als eigenes Produktmodell
 
 **Anlass:** Prüfen, ob der Begleiter nach der ZFU-Abgrenzung vom 2026-10-05

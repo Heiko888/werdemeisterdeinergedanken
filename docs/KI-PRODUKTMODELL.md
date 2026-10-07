@@ -250,6 +250,13 @@ persönlicher Kontext und bleibt Grundlage für Verweise.
 | Standortreflexion | Selbsteinschätzungswerte (Prozent je Stufe, Schwerpunkt) | `gedanken_readings` (RLS) | geringster Umfang; trotzdem Punkt 14 |
 | Manipulations-Detektor | vom Nutzer eingefügter Text (40–5 000 Zeichen) | `detektor_checks` (RLS) | Text kann Daten Dritter enthalten (z. B. kopierte Nachrichten) – Hinweis prüfen |
 
+Seit 2026-10-07 beschreibt Punkt 14 der Datenschutzerklärung
+(`src/app/datenschutz/page.tsx`) diese Datenkategorien je Werkzeug, Anbieter
+Anthropic Ireland, Limited, Auftragsverarbeitung, Standardvertragsklauseln,
+kein Training, Einwilligung (Art. 6 Abs. 1 lit. a / Art. 9 Abs. 2 lit. a).
+Der Einwilligungshinweis steht an allen vier Werkzeugen
+(`src/lib/ki-einwilligung.ts`, `KiEinwilligungsHinweis.tsx`).
+
 Produktiver Ist-Stand (read-only geprüft 2026-10-07): Alle vier Tabellen
 existieren mit aktivem RLS und je einer Policy `…_rw_own`.
 

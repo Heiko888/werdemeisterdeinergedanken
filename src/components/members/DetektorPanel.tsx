@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/Card";
 import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
+import { KiEinwilligungsHinweis } from "./KiEinwilligungsHinweis";
 import Link from "next/link";
 import {
   analyzeText,
@@ -92,11 +93,10 @@ export function DetektorPanel() {
             {loading ? "Wird geprüft …" : "Text prüfen"}
           </button>
         </div>
-        <p className="text-xs leading-relaxed text-ink-muted">
-          Der Text geht erst beim Klick an die KI. Geprüft wird die Mechanik,
-          nicht die Meinung – auch ein Text, dem du zustimmst, kann Techniken
-          nutzen.
-        </p>
+        <KiEinwilligungsHinweis
+          werkzeug="detektor"
+          vorsatz="Geprüft wird die Mechanik, nicht die Meinung – auch ein Text, dem du zustimmst, kann Techniken nutzen."
+        />
       </Card>
 
       {error && (

@@ -338,29 +338,94 @@ export default function PrivacyPage() {
                 </a>
               </p>
 
-              <h2>14. KI-Funktionen im Mitgliederbereich</h2>
+              <h2 id="ki-werkzeuge">14. KI-Werkzeuge im Mitgliederbereich</h2>
               <p>
-                Für den Mitgliederbereich sind Werkzeuge vorbereitet, die auf
-                einem Sprachmodell eines externen KI-Anbieters (Anthropic)
-                beruhen: ein Muster-Spiegel zu deinen Journal-Reflexionen, ein
-                Manipulations-Detektor für eingefügte Texte, ein KI-Gespräch und
-                ein KI-Text zum Gedankenprofil.
+                Im Mitgliederbereich gibt es freiwillige KI-Werkzeuge. Sie
+                beruhen auf einem Sprachmodell von Anthropic. Antworten und
+                Auswertungen dieser Werkzeuge erzeugt eine KI – nicht Heiko
+                persönlich. Die Werkzeuge sind optional; alle übrigen Inhalte
+                des Mitgliederbereichs funktionieren auch ohne sie.
               </p>
               <p>
-                <strong>Alle diese Funktionen sind derzeit nicht aktiv.</strong>{" "}
-                Es werden keine Journaleinträge, Texte oder sonstigen Eingaben an
-                einen KI-Anbieter übertragen. Bevor wir eine dieser Funktionen
-                einschalten, ergänzen wir diese Erklärung um den Anbieter, die
-                übermittelten Daten, die Rechtsgrundlage und einen etwaigen
-                Drittlandbezug.
+                Daten werden nur übertragen, wenn du ein Werkzeug selbst
+                startest – also eine Nachricht an den Begleiter schickst oder
+                auf den jeweiligen Button klickst. Im Hintergrund läuft nichts
+                automatisch. Je Werkzeug gehen folgende Daten an Anthropic:
+              </p>
+              <ul>
+                <li>
+                  <strong>Begleiter (KI-Gespräch):</strong> deine Nachricht und
+                  die letzten Nachrichten des Gesprächs, dein Name aus dem Profil,
+                  die Werte deiner Selbsteinschätzung aus dem
+                  Bewusstseinstest, die von dir als bearbeitet markierten
+                  Stufen, kurze Auszüge deiner jüngsten Journal-Reflexionen,
+                  Angaben zur Nutzung (tägliche Rückkehr, Tage im
+                  21-Tage-Programm) sowie – wenn du diese Werkzeuge nutzt – die
+                  zuletzt im Manipulations-Detektor erkannten Techniken und ein
+                  Auszug deines letzten Muster-Spiegels.
+                </li>
+                <li>
+                  <strong>Muster-Spiegel:</strong> deine Journal-Reflexionen
+                  (die jüngsten, begrenzt auf etwa 6.000 Zeichen) samt der
+                  jeweiligen Reflexionsfrage.
+                </li>
+                <li>
+                  <strong>KI-Reflexion zum Gedankenprofil:</strong> die Werte
+                  deiner Selbsteinschätzung aus dem Bewusstseinstest.
+                </li>
+                <li>
+                  <strong>Manipulations-Detektor:</strong> der Text, den du
+                  einfügst. Bitte füge keine personenbezogenen Daten anderer
+                  Menschen ein, die du nicht weitergeben darfst.
+                </li>
+              </ul>
+              <p>
+                <strong>Anbieter:</strong> Anthropic Ireland, Limited (Irland).
+                Anthropic verarbeitet die Daten als unser
+                Auftragsverarbeiter auf Grundlage eines
+                Auftragsverarbeitungsvertrags (Art. 28 DSGVO). Dabei können Daten
+                auch in Drittländer, insbesondere die USA, übermittelt werden;
+                hierfür sind EU-Standardvertragsklauseln vereinbart. Anthropic
+                darf die Inhalte nach den vereinbarten Bedingungen nicht zum
+                Training seiner Modelle verwenden. Datenschutz Anthropic:{" "}
+                <a
+                  href="https://www.anthropic.com/legal/privacy"
+                  className="break-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  anthropic.com/legal/privacy
+                </a>
               </p>
               <p>
-                Ergebnisse, die bei einer früheren Nutzung entstanden sind (z. B.
-                ein gespeicherter Spiegeltext oder Detektor-Verlauf), bleiben in
-                deinem Account gespeichert und sind nur für dich sichtbar (siehe
-                Punkt 12). Auf Wunsch löschen wir sie – eine formlose Mail an{" "}
+                <strong>Rechtsgrundlage:</strong> deine Einwilligung (Art. 6
+                Abs. 1 lit. a DSGVO). Am jeweiligen Werkzeug steht direkt beim
+                Senden-Feld bzw. Button ein kurzer Hinweis, welche Daten
+                übertragen werden; mit dem Senden bzw. Klick erteilst du die
+                Einwilligung. Deine Journal-Reflexionen und Gesprächsnachrichten
+                können Angaben zu deiner Gesundheit enthalten; soweit das der
+                Fall ist, verarbeiten wir sie nur mit deiner ausdrücklichen
+                Einwilligung (Art. 9 Abs. 2 lit. a DSGVO). Du kannst deine
+                Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen,
+                indem du das Werkzeug nicht mehr nutzt und uns formlos
+                schreibst; die Rechtmäßigkeit der bis dahin erfolgten
+                Verarbeitung bleibt unberührt.
+              </p>
+              <p>
+                <strong>Speicherung bei uns:</strong> Die Ergebnisse (Verlauf
+                des Begleiter-Gesprächs, Muster-Spiegel, KI-Reflexion,
+                Detektor-Prüfungen) speichern wir in deinem Account (siehe
+                Punkt 12), sichtbar nur für dich, bis zur Löschung deines
+                Accounts. Das Begleiter-Gespräch kannst du jederzeit selbst
+                löschen; alle anderen Ergebnisse löschen wir auf Wunsch – eine
+                formlose Mail an{" "}
                 <a href={`mailto:${site.email}`} className="break-all">{site.email}</a>{" "}
                 genügt.
+              </p>
+              <p>
+                Die KI-Werkzeuge bewerten nicht dein Wissen oder deine
+                Leistung, stellen keine Diagnosen und ersetzen keine
+                therapeutische oder ärztliche Beratung.
               </p>
 
               <h2>15. Deine Rechte</h2>
