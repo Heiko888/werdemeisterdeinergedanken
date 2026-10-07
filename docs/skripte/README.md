@@ -77,6 +77,28 @@ Video-Skripte zum Block „Wie dein Denken gelenkt wird":
 Themenblock „Wie dein Denken gelenkt wird", je mit Hook, Skript, On-Screen-Text
 und CTA.
 
+## Über mich – YouTube & Reel-Talk (`ueber-mich/`)
+
+Talking-Head-Content zu Heikos Geschichte, Grundlage ist ausschließlich die
+Über-mich-Seite (`src/app/ueber-mich/page.tsx`, Stand 2026-10-05):
+
+| Datei | Inhalt |
+|---|---|
+| `ueber-mich/reels-talk-meine-geschichte.md` | 15 Reel-Talks (30–60 Sek) chronologisch: Hook · Talk · On-Screen · CTA · Caption, dazu Cover-Texte und Hashtag-Pool |
+| `ueber-mich/youtube-talk-meine-geschichte.md` | Hauptvideo „Meine Geschichte“ (ca. 14–18 Min) als Talk-Drehbuch mit Kapiteln, zwei Themen-Talks (6–9 Min), Titel, Beschreibung, Kapitelmarken, Thumbnail, angepinnter Kommentar |
+
+Regeln: Heiko spricht als Gründer, keine Heilversprechen, kein Coaching- oder
+Erstgespräch-CTA, feste Chronologie (Lenas Tod → zwei Jahre Vollgas → etwa drei
+Jahre später die Implosion → Neuaufbau → erst danach Technik/KI).
+
+Gebrandete **PDFs** (Optik wie die Reel-Drehbücher):
+`docs/workshop/ueber-mich-skripte/WMDG-Reel-Talk-Meine-Geschichte.pdf` und
+`…/WMDG-YouTube-Talk-Meine-Geschichte.pdf` – erzeugt mit
+`npm run ueber-mich-skripte` (Generator: `tools/pdf/ueber-mich-skripte.mjs`,
+Text 1:1 aus den Markdown-Dateien). Nach Textänderungen den Befehl erneut
+ausführen. In der Vorlagen-Galerie erscheinen sie nach dem nächsten
+`npm run vorlagen:galerie` unter „Über mich – YouTube & Reel-Talk“.
+
 ## Drehreihenfolge (Empfehlung)
 
 1. **7 Stufen** – Kernprodukt, jeder durchläuft sie → `stufen/`
