@@ -155,6 +155,10 @@ export function DetektorPanel() {
               ))}
             </ul>
           )}
+          <p className="text-xs leading-relaxed text-ink-muted">
+            KI-generierte Analyse des eingefügten Textes – keine Bewertung von
+            dir.
+          </p>
         </div>
       )}
     </div>

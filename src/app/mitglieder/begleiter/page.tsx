@@ -71,7 +71,7 @@ export default async function BegleiterPage() {
             <ArrowRight className="rotate-180" />
             Mein Bereich
           </Link>
-          <Eyebrow>Dein Begleiter</Eyebrow>
+          <Eyebrow>Dein Begleiter · KI-gestützt</Eyebrow>
           <h1 className="text-[2rem] font-medium text-ink sm:text-4xl">
             Sprich mit deinem <em className="accent">Begleiter</em>
           </h1>
@@ -111,7 +111,8 @@ export default async function BegleiterPage() {
 
             {/* Einordnung – bewusst unter dem Gespräch, nicht davor. */}
             <p className="mx-auto mt-6 max-w-2xl text-center text-xs leading-relaxed text-ink-muted">
-              Der Begleiter ist eine KI. Er ergänzt die Inhalte, ersetzt aber
+              Der Begleiter ist eine KI – seine Antworten schreibt nicht Heiko
+              persönlich. Er ergänzt die Inhalte, ersetzt aber
               keine Therapie, keine Beratung und kein Gespräch mit einem
               Menschen. In einer akuten Krise erreichst du die Telefonseelsorge
               rund um die Uhr und kostenlos unter 0800 111 0 111 oder

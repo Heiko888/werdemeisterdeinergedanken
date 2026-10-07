@@ -6,6 +6,7 @@ import { clearConversation } from "@/app/mitglieder/begleiter/actions";
 import { cn } from "@/lib/cn";
 import { pillCta } from "./panelStyles";
 import {
+  BEGLEITER_KI_HINWEIS,
   BEGLEITER_SUGGESTIONS,
   BEGLEITER_WELCOME,
   MAX_INPUT_CHARS,
@@ -358,6 +359,9 @@ export function BegleiterChat({
             {begleiterErrorText.too_long} ({draft.length} Zeichen)
           </p>
         )}
+        <p className="text-xs leading-relaxed text-ink-muted">
+          {BEGLEITER_KI_HINWEIS}
+        </p>
       </form>
     </div>
   );

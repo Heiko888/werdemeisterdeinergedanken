@@ -39,12 +39,20 @@ Möglichkeiten nennen, sich weiter mit einem Thema zu beschäftigen.`;
  * Zusatzregeln nur für den Begleiter: Er ist der einzige freie Dialog und
  * deshalb am ehesten Bewertungswünschen ausgesetzt.
  */
-export const BEGLEITER_KEINE_LERNKONTROLLE = `WENN DIE PERSON EINE BEWERTUNG IHRES VERSTÄNDNISSES ODER IHRER LEISTUNG VERLANGT
+export const BEGLEITER_KEINE_LERNKONTROLLE = `NORMALE FRAGEN BLEIBEN NORMAL
+Fragen wie „Was bedeutet kognitive Dissonanz?", „Kannst du mir diesen Gedanken
+einfacher erklären?" oder „Ich merke, dass ich bei Kritik sofort zumache.
+Welche Inhalte könnten dazu passen?" beantwortest du direkt, hilfreich und ohne
+Vorbehalt: Begriff erklären, Inhalt einfacher zusammenfassen, Gedanken spiegeln,
+passende Inhalte nennen. Kein Hinweis auf Bewertungsgrenzen, keine Ausflüchte.
+
+WENN DIE PERSON EINE BEWERTUNG IHRES VERSTÄNDNISSES ODER IHRER LEISTUNG VERLANGT
 Beispiele: „Habe ich Stufe 3 richtig verstanden?", „Prüfe, ob meine Antwort
-stimmt.", „Wende ich das richtig an?", „Bewerte bitte, ob ich das Konzept
+stimmt.", „Ist meine Antwort richtig?", „Wende ich das richtig an?", „Prüf
+bitte, ob ich das richtig anwende.", „Bewerte bitte, ob ich das Konzept
 richtig angewendet habe.", „Bin ich bereit für die nächste Stufe?", „Habe ich
 das Lernziel erreicht?", „Habe ich Stufe 3 gemeistert?", „Teste mein Wissen zu
-Stufe 4."
+Stufe 4.", „Teste mein Wissen."
 - Führe keine Kontrolle durch: kein Urteil, keine Korrektur, kein Abhaken.
 - Sag einmal, natürlich und ohne Belehrung, dass du nicht bewertest, ob etwas
   richtig oder falsch verstanden oder angewendet ist – sinngemäß: „Ich bewerte
@@ -139,19 +147,24 @@ export function bearbeitungsstandFacts(markierteStufen: number[]): string {
 }
 
 /**
- * Nutzungsdaten (Rückkehr, 21-Tage-Programm, Übungen, Detektor, frühere
- * KI-Texte) als Begleiter-Kontext. Neutral formuliert („als erledigt
- * markiert" statt „abgeschlossen"), damit nichts nach Leistung klingt.
+ * Nutzungsdaten (Rückkehr, 21-Tage-Programm, Detektor, letzter Spiegel) als
+ * Begleiter-Kontext. Neutral formuliert („als erledigt markiert" statt
+ * „abgeschlossen"), damit nichts nach Leistung klingt.
+ *
+ * Bewusst NICHT (mehr) enthalten – Datensparsamkeit, siehe
+ * docs/KI-PRODUKTMODELL.md, Abschnitt Kontext:
+ * - Anzahl als gemacht markierter Praxis-Übungen: eine nackte Zahl ohne
+ *   Navigationswert, lädt nur zu Leistungs-Deutungen ein.
+ * - Auszug des letzten KI-Readings: doppelt zur Selbsteinschätzung, und vor
+ *   2026-10-05 gespeicherte Readings können alte Lernstand-Formulierungen
+ *   enthalten.
  */
 export function behaviorFacts(input: {
   rueckkehrStreak: number;
   rueckkehrTotal: number;
   programmDone: number;
   programmTotal: number;
-  practicesDone: number;
   detektorTop: string[];
-  /** Auszug des zuletzt erzeugten KI-Readings (oder null). */
-  lastReading?: string | null;
   /** Auszug des zuletzt erzeugten Muster-Spiegels (oder null). */
   lastMuster?: string | null;
 }): string {
@@ -160,9 +173,7 @@ export function behaviorFacts(input: {
     rueckkehrTotal,
     programmDone,
     programmTotal,
-    practicesDone,
     detektorTop,
-    lastReading,
     lastMuster,
   } = input;
 
@@ -189,18 +200,10 @@ export function behaviorFacts(input: {
     );
   }
 
-  if (practicesDone > 0) {
-    lines.push(`- Als gemacht markierte Praxis-Übungen: ${practicesDone}.`);
-  }
-
   if (detektorTop.length > 0) {
     lines.push(
       `- Im Manipulations-Detektor in eingefügten Texten zuletzt häufig erkannt: ${detektorTop.join(", ")}.`,
     );
-  }
-
-  if (lastReading && lastReading.trim()) {
-    lines.push(`- Letztes persönliches KI-Reading (Auszug): „${kürzen(lastReading)}"`);
   }
 
   if (lastMuster && lastMuster.trim()) {
@@ -208,7 +211,7 @@ export function behaviorFacts(input: {
   }
 
   if (lines.length === 0) {
-    return "Zur Nutzung (Rückkehr, Programm, Übungen) liegt noch nichts vor – setz also keinen Rhythmus voraus, lade eher behutsam zum ersten Schritt ein.";
+    return "Zur Nutzung (Rückkehr, Programm) liegt noch nichts vor – setz also keinen Rhythmus voraus, lade eher behutsam zum ersten Schritt ein.";
   }
 
   return [

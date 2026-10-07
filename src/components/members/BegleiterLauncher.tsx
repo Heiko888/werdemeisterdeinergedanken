@@ -99,7 +99,7 @@ export function BegleiterLauncher() {
           <div className="flex items-center justify-between gap-3 border-b border-ink/10 bg-white px-5 py-3.5">
             <div className="flex flex-col">
               <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                Dein Begleiter
+                Dein Begleiter · KI
               </span>
               <span className="font-display text-base font-medium text-ink">
                 Frag mich etwas

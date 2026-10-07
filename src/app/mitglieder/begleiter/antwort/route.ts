@@ -5,13 +5,11 @@ import { isAdminEmail } from "@/lib/admin";
 import {
   getTestProfile,
   getCompletedStages,
-  getCompletedPractices,
   getJournalEntries,
 } from "@/app/mitglieder/actions";
 import { getProgrammFortschritt } from "@/app/mitglieder/programm-actions";
 import { getRueckkehrDaten } from "@/app/mitglieder/rueckkehr-actions";
 import { getDetektorHistory } from "@/app/mitglieder/detektor-actions";
-import { getLatestReading } from "@/app/mitglieder/reading-actions";
 import { getLatestMusterSpiegel } from "@/app/mitglieder/muster-actions";
 import { PROGRAMM_TAGE_GESAMT } from "@/lib/programm";
 import { buildGedankenprofil } from "@/lib/gedankenprofil";
@@ -31,7 +29,11 @@ import {
   type BegleiterError,
 } from "@/lib/begleiter";
 import { KI_MODELL_ERSATZ, istKapazitaetsfehler } from "@/lib/ki-modell";
-import { isKiBegleiterEnabled } from "@/lib/ki-features";
+import {
+  isKiBegleiterEnabled,
+  isKiDetektorEnabled,
+  isKiMusterSpiegelEnabled,
+} from "@/lib/ki-features";
 
 /**
  * KI-Begleiter – Antwort erzeugen (gestreamt).
@@ -168,15 +170,20 @@ export async function POST(request: Request): Promise<Response> {
   // docs/ZFU-KI-PRUEFUNG.md.
   const profil = buildGedankenprofil({ startStage, scores, completedNumbers: [] });
 
-  // Nutzungskontext (B6): Rückkehr, Programm, Übungen – nur Orientierung.
-  const [programmTage, rueckkehr, practices, detektorHist, letztesReading, letzterSpiegel] =
+  // Nutzungskontext (B6): Rückkehr und Programm – nur Orientierung.
+  // Ergebnisse anderer KI-Werkzeuge (Detektor, Spiegel) fließen nur ein,
+  // solange deren eigener Schalter an ist: Ein abgeschaltetes Werkzeug soll
+  // auch nicht über den Begleiter weiterwirken (Kill-Switch je Werkzeug,
+  // docs/KI-PRODUKTMODELL.md). Praxis-Zähler und letztes Reading gehen
+  // bewusst nicht mehr ein (siehe behaviorFacts).
+  const [programmTage, rueckkehr, detektorHist, letzterSpiegel] =
     await Promise.all([
       getProgrammFortschritt(),
       getRueckkehrDaten(),
-      getCompletedPractices(),
-      getDetektorHistory(20),
-      getLatestReading(),
-      getLatestMusterSpiegel(),
+      isKiDetektorEnabled() ? getDetektorHistory(20) : Promise.resolve([]),
+      isKiMusterSpiegelEnabled()
+        ? getLatestMusterSpiegel()
+        : Promise.resolve(null),
     ]);
   const detektorZaehler = new Map<string, number>();
   for (const eintrag of detektorHist) {
@@ -194,9 +201,7 @@ export async function POST(request: Request): Promise<Response> {
     rueckkehrTotal: rueckkehr.tage.length,
     programmDone: programmTage.length,
     programmTotal: PROGRAMM_TAGE_GESAMT,
-    practicesDone: practices.length,
     detektorTop,
-    lastReading: letztesReading?.body ?? null,
     lastMuster: letzterSpiegel?.body ?? null,
   });
 

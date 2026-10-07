@@ -372,7 +372,7 @@ export default async function GedankenprofilPage() {
                     Mit deiner Selbsteinschätzung weiterdenken?
                   </h2>
                   <p className="text-[1.02rem] leading-relaxed text-ink-mid">
-                    Dein Begleiter kennt diese Übersicht aus deinen eigenen
+                    Dein KI-Begleiter kennt diese Übersicht aus deinen eigenen
                     Antworten. Sprich mit ihm darüber, was die Schwerpunkte in
                     deinem Alltag bedeuten könnten – und welche Inhalte dazu
                     passen.

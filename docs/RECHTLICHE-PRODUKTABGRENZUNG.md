@@ -74,6 +74,9 @@ Ausführliche Leitlinie, Prüfbericht und Ampel je Funktion:
 `KI_ZFU_GRENZEN` liegt in `src/lib/ki-grenzen.ts` und wird von Begleiter,
 Reading und Muster-Spiegel genutzt; Tests in `src/lib/ki-grenzen.test.ts`.
 Ampel: Detektor GRÜN · Muster-Spiegel GRÜN · Reading GRÜN · Begleiter GELB.
+Die vier Funktionen gelten als eigenständige **„WMDG KI-Werkzeuge“** neben der
+Plattform (Stufen, Wissen, Praxis, Journal); Produktmodell, spätere
+Einzelfreischaltung und Datenschutz je Werkzeug: **`docs/KI-PRODUKTMODELL.md`**.
 
 | Funktion | Datei | Status |
 |---|---|---|

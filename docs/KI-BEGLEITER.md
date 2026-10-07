@@ -17,8 +17,12 @@ Selbsteinschätzung. Keine Lernkontrolle – siehe `docs/ZFU-KI-PRUEFUNG.md`.
   `src/lib/ki-grenzen.ts`) – ohne markierte Stufen und ohne Begriffe wie
   „verankert“ oder „Bedarf“. Getrennt davon bekommt er die **als bearbeitet
   markierten Stufen nur zur Navigation** (`bearbeitungsstandFacts`), sowie
-  Nutzungsdaten (Rückkehr, Programmtage, Übungen) ausdrücklich als
-  Orientierung, nie als Leistungsnachweis. Ohne Test weiß er das und setzt
+  Nutzungsdaten (Rückkehr, Programmtage) ausdrücklich als Orientierung, nie
+  als Leistungsnachweis. Detektor-Funde und Spiegel-Auszug nur, wenn das
+  jeweilige Werkzeug eingeschaltet ist; Praxis-Zähler und Reading-Auszug gehen
+  seit 2026-10-07 nicht mehr ein (`docs/KI-PRODUKTMODELL.md`, Abschnitt 4).
+- Er ist im Gespräch als KI gekennzeichnet („Antworten erzeugt eine KI – nicht
+  Heiko persönlich. Die Nutzung ist freiwillig.“, `BEGLEITER_KI_HINWEIS`). Ohne Test weiß er das und setzt
   nichts voraus.
 - Er **merkt sich das Gespräch**: Der Verlauf liegt in Supabase und ist beim
   nächsten Besuch wieder da – auch auf einem anderen Gerät.
