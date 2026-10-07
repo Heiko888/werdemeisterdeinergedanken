@@ -113,7 +113,7 @@ export default async function SoforthilfePage() {
                         href="/mitglieder/begleiter"
                         className="inline-flex min-h-11 items-center gap-2 font-medium text-ink-mid underline-offset-4 hover:text-ink hover:underline"
                       >
-                        Mit dem Begleiter darüber sprechen
+                        Mit dem KI-Begleiter darüber sprechen
                         <ArrowRight />
                       </Link>
                     )}

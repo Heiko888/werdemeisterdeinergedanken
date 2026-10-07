@@ -5,6 +5,46 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-07 – KI-Begleiter Freigabeprüfung, KI-Werkzeuge als eigenes Produktmodell
+
+**Anlass:** Prüfen, ob der Begleiter nach der ZFU-Abgrenzung vom 2026-10-05
+freigabereif ist, und die vier KI-Funktionen als eigenständige „WMDG
+KI-Werkzeuge“ von der Plattform trennen (spätere Einzelfreischaltung
+vorbereiten). **Kein Schalter aktiviert, keine Verkaufsseite, keine Preise,
+keine Stripe-Produkte, keine Migration.**
+
+- **Neu `docs/KI-PRODUKTMODELL.md`:** Plattform vs. KI-Werkzeuge
+  (Reflexionsbegleiter, Muster-Spiegel, Standortreflexion = bisher Reading,
+  Manipulations-Detektor), Zweck/Abgrenzung/Verkaufbarkeit je Werkzeug,
+  Zugriffsarchitektur (globaler Kill-Switch + spätere persönliche Berechtigung
+  `ki_berechtigungen`, `src/lib/ki-zugang.ts`), manueller Freischalt-Ablauf,
+  Kontextprüfung Begleiter, Datenschutz-Datenkategorien je Werkzeug,
+  KI-Transparenz in der UI. Namensempfehlung „Standortreflexion“ – nicht umgesetzt.
+- **`docs/ZFU-KI-PRUEFUNG.md` Abschnitt 7:** Verifikation, Testanfragen,
+  Aktivierungsprüfung (Begleiter JA, ABER – Probelauf + Datenschutz Punkt 14;
+  Reading/Muster-Spiegel/Detektor JA aus ZFU-Sicht), technische
+  Aktivierungs-Checkliste.
+- **Begleiter-Kontext datensparsamer** (`src/app/mitglieder/begleiter/antwort/route.ts`,
+  `src/lib/ki-grenzen.ts`): kein Praxis-Zähler, kein Reading-Auszug mehr;
+  Detektor-Historie und Spiegel-Auszug nur bei eingeschaltetem Werkzeug.
+- **Begleiter-Prompt:** Abschnitt „NORMALE FRAGEN BLEIBEN NORMAL“ gegen
+  Überregulierung; weitere Bewertungswunsch-Beispiele.
+- **KI-Kennzeichnung:** Hinweis „Antworten erzeugt eine KI – nicht Heiko
+  persönlich. Die Nutzung ist freiwillig.“ am Gespräch (Seite + Panel),
+  Launcher „Dein Begleiter · KI“, Seite „KI-gestützt“, Detektor-Ergebnis
+  „KI-generierte Analyse …“, Links „KI-Begleiter“ (Stufe, Soforthilfe,
+  Gedankenprofil).
+- **Server-Hinweis:** `/opt/mattermost/docker-compose.yml` reicht die
+  `KI_*`-Schalter derzeit **nicht** in den Container durch. Zum späteren
+  Einschalten muss die Zeile dort ergänzt werden – nur `.env` reicht nicht.
+  Dokumentiert in `deploy/docker-compose.yml` (Kommentar), `deploy/.env.example`.
+- **Produktiv geprüft (read-only):** Tabellen `begleiter_messages`,
+  `gedanken_readings`, `muster_spiegel`, `detektor_checks` vorhanden, RLS aktiv.
+- **Tests:** 4 neue (13 in `ki-grenzen.test.ts`, gesamt 26/26); `tsc`, Build ok.
+- **Server:** keine Migration, keine neue Pflicht-Variable, kein Flag geändert.
+
+---
+
 ## 2026-10-05 – ZFU-KI-Prüfung: KI-Funktionen ohne Lernerfolgskontrolle
 
 **Anlass:** Alle KI-Funktionen sollen innerhalb der Produktarchitektur möglichst

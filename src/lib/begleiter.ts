@@ -37,6 +37,13 @@ export const HISTORY_LIMIT = 24;
  */
 export const DAILY_MESSAGE_LIMIT = 40;
 
+/**
+ * Kurze KI-Kennzeichnung direkt am Gespräch (Seite UND schwebendes Panel):
+ * KI-generiert, freiwillig, keine persönliche Antwort von Heiko.
+ */
+export const BEGLEITER_KI_HINWEIS =
+  "Antworten erzeugt eine KI – nicht Heiko persönlich. Die Nutzung ist freiwillig.";
+
 /** Begrüßung, solange noch kein Gespräch läuft (kein KI-Aufruf nötig). */
 export const BEGLEITER_WELCOME =
   "Schön, dass du da bist. Ich helfe dir, Gedanken zu sortieren, Begriffe aus den 7 Stufen einzuordnen und passende Inhalte zu finden – erzähl mir, was dich gerade beschäftigt, oder such dir unten einen Einstieg aus.";

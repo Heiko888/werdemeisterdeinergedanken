@@ -325,7 +325,7 @@ export default async function StagePage({
             </h2>
             <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink-mid">
               {begleiterVerfuegbar
-                ? "Dein Begleiter kennt die Inhalte dieser Stufe und hilft dir, dich darin zurechtzufinden. Bei technischen oder organisatorischen Fragen erreichst du mich über das Kontaktformular."
+                ? "Dein KI-Begleiter kennt die Inhalte dieser Stufe und hilft dir, dich darin zurechtzufinden und passende Inhalte zu finden. Bei technischen oder organisatorischen Fragen erreichst du mich über das Kontaktformular."
                 : "Bei technischen oder organisatorischen Fragen zum Mitgliederbereich erreichst du mich über das Kontaktformular."}
             </p>
             <div className="flex flex-wrap items-center gap-3">

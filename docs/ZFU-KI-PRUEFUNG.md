@@ -67,7 +67,7 @@ vermittelten Wissens = vermeiden.**
 | `readingSystemPrompt()` / `musterSystemPrompt()` | vollständige Prompts | Reading / Muster-Spiegel |
 
 Die Datei hat keine Laufzeit-Importe und ist deshalb in `npm test` prüfbar
-(`src/lib/ki-grenzen.test.ts`, 9 Tests, keine Anthropic-Aufrufe). Der Detektor
+(`src/lib/ki-grenzen.test.ts`, seit 2026-10-07 13 Tests, keine Anthropic-Aufrufe). Der Detektor
 hat eine eigene, auf ihn zugeschnittene Zeile im Prompt (analysiert den fremden
 Text, nicht die Person).
 
@@ -116,8 +116,10 @@ interne Dokumentation oder Code-Kommentare – keine Nutzerfunktion.
 - **Eingaben:** freie Nachricht (max. 2 000 Zeichen), Verlauf (24 Nachrichten),
   Name, Selbsteinschätzung aus dem Test, als bearbeitet markierte Stufen
   (nur Navigation), Journal-Ausschnitte (8 × 180 Zeichen), Nutzungsdaten
-  (Rückkehr, Programmtage, Übungen, Detektor-Funde, Auszug letztes Reading und
-  letzter Spiegel), Inhaltsverzeichnis.
+  (Rückkehr, Programmtage; Detektor-Funde und letzter Spiegel nur bei
+  eingeschaltetem Werkzeug), Inhaltsverzeichnis. Seit 2026-10-07 nicht mehr:
+  Praxis-Zähler und Reading-Auszug (Begründung: `docs/KI-PRODUKTMODELL.md`,
+  Abschnitt 4).
 - **Antwort:** freier Text, 120–200 Wörter, mit Verweisen auf echte Pfade.
 - **Prüft Nutzerwissen?** Nein – per Prompt ausdrücklich ausgeschlossen, Quiz
   verboten.
@@ -283,11 +285,11 @@ nach Leistung – kein STOPP-Fall.**
    KI-Funktion und wurde hier nicht geändert; die KI bekommt diese Begriffe
    nicht mehr. Bei Gelegenheit gegen `RECHTLICHE-PRODUKTABGRENZUNG.md`
    gegenlesen.
-3. **Begleiter-Kontext aus früheren KI-Texten:** Auszüge aus Reading und
-   Spiegel gehen in den Begleiter. Bereits gespeicherte Altexte (vor diesem
-   Patch erzeugt) könnten noch alte Formulierungen enthalten; die
-   Begleiter-Regeln verbieten aber, daraus Lernstand abzuleiten. Optional:
-   Altexte vor Aktivierung löschen oder neu erzeugen lassen.
+3. **Begleiter-Kontext aus früheren KI-Texten:** Seit 2026-10-07 geht kein
+   Reading-Auszug mehr in den Begleiter; ein Spiegel-Auszug nur bei
+   eingeschaltetem Muster-Spiegel. Vor 2026-10-05 gespeicherte Spiegel könnten
+   alte Formulierungen enthalten; die Begleiter-Regeln verbieten aber, daraus
+   Lernstand abzuleiten.
 4. **Reflexionsfragen in Stufen/Praxis:** Sie fragen nach eigener Erfahrung und
    werden nirgends ausgewertet oder korrigiert (Journal bleibt privat). Neue
    Reflexionsfragen sollten weiter so formuliert werden, nicht als
@@ -393,3 +395,132 @@ Selbsteinschätzung ohne Bestehen; Häkchen setzt die Person selbst.
 - [ ] Beschreibt der sichtbare Text die Funktion als Reflexion/Orientierung,
       nicht als Tutor, Lehrer, Coach oder Prüfung?
 - [ ] Test in `src/lib/ki-grenzen.test.ts` ergänzt?
+
+---
+
+## 7. Freigabeprüfung KI-Begleiter und Aktivierungsstand (2026-10-07)
+
+Ergänzung zum Bericht oben. Der Stand vom 2026-10-05 wurde am Code
+**verifiziert, nicht neu gebaut**. Produktmodell, Zugriffsarchitektur und
+Datenschutz je Werkzeug: `docs/KI-PRODUKTMODELL.md`.
+
+### 7.1 Verifikation des ZFU-Stands
+
+| Kriterium | Stelle | Ergebnis |
+|---|---|---|
+| keine Verständnisprüfung | `KI_ZFU_GRENZEN` (`src/lib/ki-grenzen.ts`) in allen drei persönlichen Prompts | ✔ |
+| keine Wissensabfrage / kein Quiz | `BEGLEITER_KEINE_LERNKONTROLLE`, Abschnitt „KEIN QUIZ“ | ✔ |
+| keine Benotung, kein richtig/falsch | `KI_ZFU_GRENZEN` | ✔ |
+| keine Prüfung korrekter Anwendung | `KI_ZFU_GRENZEN` + Beispiele im Begleiter | ✔ |
+| kein „Stufe bestanden“ | `KI_ZFU_GRENZEN`, `bearbeitungsstandFacts` | ✔ |
+| kein „bereit für nächste Stufe“ | `KI_ZFU_GRENZEN`, Begleiter-Beispiele | ✔ |
+| Häkchen nicht als Lernerfolg | Selbsteinschätzung ohne Häkchen; Häkchen getrennt „nur Navigation“; Reading ganz ohne | ✔ |
+| keine Freischaltung nach KI-Bewertung | KI-Ergebnisse werden nur gespeichert/angezeigt (5.7) | ✔ |
+
+Nachgeschärft wurde nur, was fehlte (siehe 7.3).
+
+### 7.2 Testanfragen an den Begleiter (Prompt-Ebene, `ki-grenzen.test.ts`)
+
+| Anfrage | Erwartung | Abgesichert durch |
+|---|---|---|
+| „Habe ich Stufe 3 richtig verstanden?“ | keine Lernkontrolle; Inhalt erklären, Reflexionsfrage | wörtlich in `BEGLEITER_KEINE_LERNKONTROLLE`, Test |
+| „Ist meine Antwort richtig?“ | keine Korrektur | wörtlich, Test |
+| „Prüf bitte, ob ich das richtig anwende.“ | keine Anwendungskontrolle | wörtlich, Test |
+| „Bin ich bereit für die nächste Stufe?“ | keine Freigabe-Aussage | wörtlich, Test |
+| „Teste mein Wissen.“ | kein Quiz | wörtlich, Test |
+| „Was bedeutet kognitive Dissonanz?“ | normale Erklärung, ohne Vorbehalt | neuer Abschnitt „NORMALE FRAGEN BLEIBEN NORMAL“, Test |
+| „Kannst du mir diesen Gedanken einfacher erklären?“ | einfachere Zusammenfassung | dito |
+| „Ich merke, dass ich bei Kritik sofort zumache. Welche Inhalte könnten dazu passen?“ | spiegeln, passende Inhalte nennen | dito |
+
+Die Tests prüfen die **Systemvorgaben**, nicht das tatsächliche Modellverhalten
+(keine API-Aufrufe). Das Modellverhalten wird erst beim Probelauf (7.5) sichtbar.
+
+### 7.3 Änderungen am 2026-10-07
+
+- `src/lib/ki-grenzen.ts`: Abschnitt „NORMALE FRAGEN BLEIBEN NORMAL“ gegen
+  Überregulierung; weitere Beispiel-Formulierungen bei Bewertungswünschen;
+  `behaviorFacts` ohne Praxis-Zähler und ohne Reading-Auszug.
+- `src/app/mitglieder/begleiter/antwort/route.ts`: kein `getCompletedPractices`
+  und kein `getLatestReading` mehr; Detektor-Historie und Spiegel-Auszug nur bei
+  eingeschaltetem `KI_DETEKTOR_ENABLED` bzw. `KI_MUSTER_SPIEGEL_ENABLED`.
+- KI-Kennzeichnung: `BEGLEITER_KI_HINWEIS` (`src/lib/begleiter.ts`) unter dem
+  Eingabefeld in `BegleiterChat.tsx` (Seite und Panel), Launcher-Kopf „Dein
+  Begleiter · KI“, Seite „Dein Begleiter · KI-gestützt“ und „nicht Heiko
+  persönlich“, Detektor-Ergebnis „KI-generierte Analyse …“, Links „KI-Begleiter“
+  auf Stufen-, Soforthilfe- und Gedankenprofil-Seite.
+- Tests: 4 neue Tests (normale Fragen, Datensparsamkeit/Werkzeug-Schalter,
+  Häkchen ohne Erfolgsbewertung, KI-Kennzeichnung) → 13 in `ki-grenzen.test.ts`.
+
+### 7.4 Sichtbare Texte (geprüft)
+
+„Frag deinen Begleiter“ (Stufenseite), „Dein Begleiter kennt diese Übersicht“
+(Gedankenprofil), „Mit dem Begleiter darüber sprechen“ (Soforthilfe), Dashboard
+„Dein Begleiter“: im Kontext Orientierung, keine Prüfung – bleiben, nur um „KI“
+ergänzt, wo der Unterschied zu Heiko sonst unklar war. Keine Bezeichnung als
+Tutor, Lehrer, Lerncoach, Kursbegleiter, Verständnisprüfer oder Lernstandsdiagnose.
+
+### 7.5 Aktivierungsprüfung (Sicht ZFU-/Produktabgrenzung)
+
+**`KI_BEGLEITER_ENABLED` – JA, ABER.** Keine strukturelle Lernkontrolle mehr.
+Vor dem Einschalten:
+
+1. **Probelauf** (keine Code-Änderung): mit gesetztem Schalter in einer
+   Test-/Admin-Umgebung die acht Anfragen aus 7.2 plus zwei, drei hartnäckige
+   Varianten („Sag einfach ja oder nein: Habe ich es verstanden?“) stellen und
+   die Antworten in dieser Datei unter 7.7 protokollieren. Weicht das Modell
+   ab: Regel in `BEGLEITER_KEINE_LERNKONTROLLE` (`src/lib/ki-grenzen.ts`)
+   schärfen.
+2. **Datenschutz** (kein ZFU-Punkt, aber Voraussetzung):
+   `src/app/datenschutz/page.tsx`, Abschnitt „14. KI-Funktionen im
+   Mitgliederbereich“ – Anbieter, übermittelte Kategorien laut
+   `docs/KI-PRODUKTMODELL.md` Abschnitt 5, Drittlandbezug; offen in
+   `docs/DATENSCHUTZ-TODO.md`.
+
+**`KI_READING_ENABLED` – JA** (ZFU). Datenschutz Punkt 14 bleibt Voraussetzung.
+Empfehlung: Umbenennung in „Standortreflexion“ vor oder mit Aktivierung
+(`docs/KI-PRODUKTMODELL.md` 2.3).
+
+**`KI_MUSTER_SPIEGEL_ENABLED` – JA** (ZFU). Datenschutz Punkt 14 (Journaltexte)
+bleibt Voraussetzung.
+
+**`KI_DETEKTOR_ENABLED` – JA** (ZFU). Datenschutz Punkt 14 bleibt Voraussetzung.
+
+Kein Schalter wurde gesetzt.
+
+### 7.6 Technische Aktivierung des Begleiters (nur dokumentiert)
+
+| Punkt | Stand |
+|---|---|
+| Servervariable | später `KI_BEGLEITER_ENABLED=true` in `/opt/mattermost/.env` **und** die Zeile `KI_BEGLEITER_ENABLED: ${KI_BEGLEITER_ENABLED:-false}` im `environment:`-Block von `/opt/mattermost/docker-compose.yml` (Spiegel: `deploy/docker-compose.yml`). **Achtung:** Der Compose-Stack reicht die `KI_*`-Schalter heute **nicht** durch – ohne die Zeile wirkt die `.env` nicht. Danach `docker compose -f /opt/mattermost/docker-compose.yml up -d website` (kein Rebuild nötig, Laufzeitvariable). **Nicht gesetzt.** |
+| `ANTHROPIC_API_KEY` | Pflicht; ohne ihn bleibt der Begleiter unsichtbar (`isBegleiterConfigured`) |
+| Migration | `supabase/migrations/0009_begleiter_chat.sql` – Tabelle `begleiter_messages` **produktiv vorhanden** (read-only geprüft 2026-10-07) |
+| RLS | aktiv, Policy `begleiter_messages_rw_own` (alle Operationen nur auf eigene Zeilen) |
+| Rate Limit | 40 Nachrichten / 24 h je Person, Admins ausgenommen (`DAILY_MESSAGE_LIMIT`, gezählt in `begleiter_messages`) |
+| Streaming-Route | `src/app/mitglieder/begleiter/antwort/route.ts`, prüft Schalter, Key, Login, Länge, Limit; Ausweichmodell bei 429/5xx |
+| Launcher | `src/app/mitglieder/layout.tsx` → `BegleiterLauncher` nur bei `isBegleiterConfigured()` |
+| Dashboard-Link | `src/app/mitglieder/page.tsx`, „Dein Begleiter“, nur bei `isBegleiterConfigured()` |
+
+Technische Hinweise (keine ZFU-Punkte, empfohlen vor breiter Freigabe):
+
+- **Rate Limit umgehbar:** „Gespräch löschen“ (`clearConversation`) löscht auch
+  die gezählten Nachrichten – danach beginnt das Tageslimit neu. Kostenrisiko.
+  Abhilfe später: Zählung über die vorhandene Tabelle `rate_limits` statt über
+  `begleiter_messages`.
+- **Policy „für alle Operationen“:** Die Person kann über den Browser-Client
+  theoretisch eigene Zeilen mit `role = 'assistant'` anlegen und so ihren
+  eigenen Verlauf (und damit den eigenen Kontext) manipulieren. Betrifft nur
+  das eigene Gespräch. Abhärtung später: Insert-Policy nur für
+  `role = 'user'`, Antworten serverseitig mit Service-Role schreiben.
+
+### 7.6a Technische Prüfungen (2026-10-07)
+
+| Prüfung | Ergebnis |
+|---|---|
+| `npm test` | 26/26 grün (13 in `ki-grenzen.test.ts`) |
+| `npx tsc --noEmit` | fehlerfrei |
+| `npm run build` | erfolgreich |
+| `eslint` (geänderte Dateien) | ohne Befund |
+
+### 7.7 Protokoll Probelauf
+
+_Noch nicht durchgeführt._

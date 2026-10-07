@@ -92,6 +92,14 @@ services:
       #   REQUIRE_ACTIVE_MEMBERSHIP / ALLOW_SELF_REGISTRATION → beide false
       #                          (Code prüft strikt === "true")
       #   STRIPE_*             → ohne Wert bleibt der Bezahlweg inaktiv
+      #   KI_BEGLEITER_ENABLED / KI_READING_ENABLED /
+      #   KI_MUSTER_SPIEGEL_ENABLED / KI_DETEKTOR_ENABLED
+      #                        → alle vier KI-Werkzeuge aus (src/lib/ki-features.ts,
+      #                          strikt === "true"). Zum späteren Einschalten
+      #                          NICHT nur die .env ändern: die Zeile, z. B.
+      #                          KI_BEGLEITER_ENABLED: ${KI_BEGLEITER_ENABLED:-false},
+      #                          muss hier UND in /opt/mattermost/docker-compose.yml
+      #                          stehen. Freigabe: docs/ZFU-KI-PRUEFUNG.md, Abschnitt 7.
       #
       # Sobald eine eigene Resend-Domain steht, gehören die *_FROM-Adressen
       # hier UND in /opt/mattermost/docker-compose.yml verdrahtet.
