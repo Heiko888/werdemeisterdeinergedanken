@@ -494,7 +494,7 @@ Kein Schalter wurde gesetzt.
 |---|---|
 | Servervariable | später `KI_BEGLEITER_ENABLED=true` in `/opt/mattermost/.env` **und** die Zeile `KI_BEGLEITER_ENABLED: ${KI_BEGLEITER_ENABLED:-false}` im `environment:`-Block von `/opt/mattermost/docker-compose.yml` (Spiegel: `deploy/docker-compose.yml`). Die vier `KI_*`-Zeilen stehen seit 2026-10-07 in der Repo-Spiegelung `deploy/docker-compose.yml` (Standard `false`); **auf dem Server in `/opt/mattermost/docker-compose.yml` manuell übernehmen** – ohne sie wirkt die `.env` nicht. Danach `docker compose -f /opt/mattermost/docker-compose.yml up -d website` (kein Rebuild nötig, Laufzeitvariable). **Nicht gesetzt.** |
 | `ANTHROPIC_API_KEY` | Pflicht; ohne ihn bleibt der Begleiter unsichtbar (`isBegleiterConfigured`) |
-| Migration | `supabase/migrations/0009_begleiter_chat.sql` – Tabelle `begleiter_messages` **produktiv vorhanden** (read-only geprüft 2026-10-07) |
+| Migration | `supabase/migrations/0009_begleiter_chat.sql` – Tabelle `begleiter_messages` **produktiv vorhanden** (read-only geprüft 2026-10-07). **Zusätzlich nötig:** `20261007120000_ki_einwilligungen.sql` (Einwilligungsnachweis) – ohne sie bricht jeder KI-Aufruf ab |
 | RLS | aktiv, Policy `begleiter_messages_rw_own` (alle Operationen nur auf eigene Zeilen) |
 | Rate Limit | 40 Nachrichten / 24 h je Person, Admins ausgenommen (`DAILY_MESSAGE_LIMIT`, gezählt in `begleiter_messages`) |
 | Streaming-Route | `src/app/mitglieder/begleiter/antwort/route.ts`, prüft Schalter, Key, Login, Länge, Limit; Ausweichmodell bei 429/5xx |

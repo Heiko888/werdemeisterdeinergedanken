@@ -29,6 +29,7 @@ import {
   type BegleiterError,
 } from "@/lib/begleiter";
 import { KI_MODELL_ERSATZ, istKapazitaetsfehler } from "@/lib/ki-modell";
+import { erfasseKiEinwilligung } from "@/lib/ki-einwilligung-server";
 import {
   isKiBegleiterEnabled,
   isKiDetektorEnabled,
@@ -213,6 +214,12 @@ export async function POST(request: Request): Promise<Response> {
     behavior,
     catalogue: contentCatalogue(),
   });
+
+  // ---- Nachweis der Einwilligung (Art. 7 Abs. 1 DSGVO) ----
+  // Ohne gespeicherten Nachweis geht nichts an die KI.
+  if (!(await erfasseKiEinwilligung(supabase, "begleiter"))) {
+    return fail("not_configured", 503);
+  }
 
   // ---- Frage speichern, bevor geantwortet wird ----
   // Die id merken: Scheitert der KI-Aufruf, wird diese Zeile wieder entfernt,

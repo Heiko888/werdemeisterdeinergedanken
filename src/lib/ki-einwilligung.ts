@@ -31,3 +31,21 @@ export const KI_EINWILLIGUNG: Record<KiWerkzeug, string> = {
 /** Gemeinsamer Nachsatz: Widerruf und Verweis. */
 export const KI_EINWILLIGUNG_WIDERRUF =
   "Die Einwilligung kannst du jederzeit widerrufen.";
+
+/**
+ * Version der Einwilligungstexte – wird mit jeder Nutzung im Protokoll
+ * `ki_einwilligungen` gespeichert (Nachweis, Art. 7 Abs. 1 DSGVO).
+ *
+ * WICHTIG: Bei JEDER Änderung an KI_EINWILLIGUNG oder
+ * KI_EINWILLIGUNG_WIDERRUF diese Version erhöhen. Der Test
+ * `ki-einwilligung.test.ts` schlägt sonst fehl.
+ */
+export const KI_EINWILLIGUNG_VERSION = "2026-10-07";
+
+/**
+ * Der Wortlaut, dessen SHA-256 im Protokoll steht: Einwilligungssatz plus
+ * Widerrufssatz, genau wie am Werkzeug angezeigt (ohne Link und Vorsatz).
+ */
+export function einwilligungsWortlaut(werkzeug: KiWerkzeug): string {
+  return `${KI_EINWILLIGUNG[werkzeug]} ${KI_EINWILLIGUNG_WIDERRUF}`;
+}

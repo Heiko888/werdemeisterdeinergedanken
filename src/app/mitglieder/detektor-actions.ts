@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { deepDives } from "@/lib/deep-dives";
 import { mitErsatzmodell } from "@/lib/ki-modell";
+import { erfasseKiEinwilligung } from "@/lib/ki-einwilligung-server";
 import { isKiDetektorEnabled } from "@/lib/ki-features";
 
 /**
@@ -135,6 +136,10 @@ Regeln:
 - Antworte AUSSCHLIESSLICH mit einem JSON-Objekt, ohne Text davor oder danach:
   {"gesamt": "<ein nüchterner Satz zum Gesamteindruck>",
    "funde": [{"technik": "<kürzel>", "zitat": "<kurzes Zitat>", "erklaerung": "<1-2 Sätze>"}]}`;
+
+  // Nachweis der Einwilligung (Art. 7 Abs. 1 DSGVO) – ohne ihn geht nichts
+  // an die KI.
+  if (!(await erfasseKiEinwilligung(supabase, "detektor"))) return { status: "error" };
 
   try {
     const anthropic = new Anthropic({ apiKey });

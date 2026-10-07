@@ -82,10 +82,16 @@ Grundlage (Angaben des Betreibers + öffentliche Anthropic-Unterlagen, abgerufen
   Gesundheitsangaben, Widerruf, Link auf `/datenschutz#ki-werkzeuge`).
   Texte: `src/lib/ki-einwilligung.ts`, Komponente
   `src/components/members/KiEinwilligungsHinweis.tsx`, Tests
-  `src/lib/ki-einwilligung.test.ts`. Es wird **keine** Einwilligung
-  gespeichert (Button-Einwilligung je Nutzung). Falls ein Nachweis gewünscht
-  ist: später einmalige Bestätigung mit Zeitstempel in Supabase (Migration
-  nötig).
+  `src/lib/ki-einwilligung.test.ts`. Seit 2026-10-07 mit **Nachweis**:
+  Append-only-Tabelle `ki_einwilligungen` (Zeitpunkt, Werkzeug, Textversion,
+  SHA-256 des Wortlauts; keine Eingabeinhalte), geschrieben nur über die
+  security-definer-Funktion `ki_einwilligung_erfassen`, vor jeder Übertragung;
+  ohne Nachweis bricht der Server ab. Migration
+  `supabase/migrations/20261007120000_ki_einwilligungen.sql` – **vor dem
+  Einschalten eines Werkzeugs einspielen**. Punkt 14 und Punkt 12 nennen den
+  Nachweis (Art. 7 Abs. 1, Art. 6 Abs. 1 lit. c DSGVO). Offen: Ob der Nachweis
+  nach Account-Löschung noch eine Zeit lang aufbewahrt werden soll (heute:
+  Löschung mit dem Account) – juristisch klären.
 - Unterauftragsverarbeiter-Liste von Anthropic einmal ansehen.
 - Prüfen, ob der DPA im Anthropic-Konto tatsächlich akzeptiert/abgeschlossen
   ist (nicht nur öffentlich verfügbar).

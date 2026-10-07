@@ -255,7 +255,9 @@ Seit 2026-10-07 beschreibt Punkt 14 der Datenschutzerklärung
 Anthropic Ireland, Limited, Auftragsverarbeitung, Standardvertragsklauseln,
 kein Training, Einwilligung (Art. 6 Abs. 1 lit. a / Art. 9 Abs. 2 lit. a).
 Der Einwilligungshinweis steht an allen vier Werkzeugen
-(`src/lib/ki-einwilligung.ts`, `KiEinwilligungsHinweis.tsx`).
+(`src/lib/ki-einwilligung.ts`, `KiEinwilligungsHinweis.tsx`); jede Nutzung
+wird vorher im Protokoll `ki_einwilligungen` nachgewiesen
+(`src/lib/ki-einwilligung-server.ts`).
 
 Produktiver Ist-Stand (read-only geprüft 2026-10-07): Alle vier Tabellen
 existieren mit aktivem RLS und je einer Policy `…_rw_own`.
