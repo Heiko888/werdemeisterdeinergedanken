@@ -472,9 +472,10 @@ Vor dem Einschalten:
    schärfen.
 2. **Datenschutz** (kein ZFU-Punkt, aber Voraussetzung): Punkt 14 in
    `src/app/datenschutz/page.tsx` ist seit 2026-10-07 neu geschrieben
-   („14. KI-Werkzeuge im Mitgliederbereich“). Noch offen: Einwilligungshinweis
-   in der Oberfläche vor dem ersten Start (`docs/DATENSCHUTZ-TODO.md`,
-   Abschnitt 2026-10-07).
+   („14. KI-Werkzeuge im Mitgliederbereich“). Der Einwilligungshinweis steht
+   seit 2026-10-07 an allen vier Werkzeugen. Offen: DPA-Abschluss im
+   Anthropic-Konto bestätigen, juristische Durchsicht
+   (`docs/DATENSCHUTZ-TODO.md`, Abschnitt 2026-10-07).
 
 **`KI_READING_ENABLED` – JA** (ZFU). Datenschutz Punkt 14 bleibt Voraussetzung.
 Empfehlung: Umbenennung in „Standortreflexion“ vor oder mit Aktivierung

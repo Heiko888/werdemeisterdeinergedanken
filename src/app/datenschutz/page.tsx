@@ -338,7 +338,7 @@ export default function PrivacyPage() {
                 </a>
               </p>
 
-              <h2>14. KI-Werkzeuge im Mitgliederbereich</h2>
+              <h2 id="ki-werkzeuge">14. KI-Werkzeuge im Mitgliederbereich</h2>
               <p>
                 Im Mitgliederbereich gibt es freiwillige KI-Werkzeuge. Sie
                 beruhen auf einem Sprachmodell von Anthropic. Antworten und
@@ -399,8 +399,10 @@ export default function PrivacyPage() {
               </p>
               <p>
                 <strong>Rechtsgrundlage:</strong> deine Einwilligung (Art. 6
-                Abs. 1 lit. a DSGVO), die du erteilst, indem du ein Werkzeug
-                startest. Deine Journal-Reflexionen und Gesprächsnachrichten
+                Abs. 1 lit. a DSGVO). Am jeweiligen Werkzeug steht direkt beim
+                Senden-Feld bzw. Button ein kurzer Hinweis, welche Daten
+                übertragen werden; mit dem Senden bzw. Klick erteilst du die
+                Einwilligung. Deine Journal-Reflexionen und Gesprächsnachrichten
                 können Angaben zu deiner Gesundheit enthalten; soweit das der
                 Fall ist, verarbeiten wir sie nur mit deiner ausdrücklichen
                 Einwilligung (Art. 9 Abs. 2 lit. a DSGVO). Du kannst deine

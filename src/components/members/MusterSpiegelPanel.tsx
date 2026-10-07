@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
+import { KiEinwilligungsHinweis } from "./KiEinwilligungsHinweis";
 import {
   generateMusterSpiegel,
   type MusterSpiegel,
@@ -122,12 +123,10 @@ export function MusterSpiegelPanel({
         </button>
       </div>
 
-      <p className="text-xs leading-relaxed text-ink-muted">
-        Deine Journaleinträge sind grundsätzlich nur in deinem Account
-        sichtbar. Wenn du den Muster-Spiegel ausdrücklich startest, werden die
-        dafür verwendeten Reflexionen zur Erstellung des Spiegeltexts an unseren
-        KI-Dienstleister übertragen.
-      </p>
+      <KiEinwilligungsHinweis
+        werkzeug="muster"
+        vorsatz="Deine Journaleinträge sind grundsätzlich nur in deinem Account sichtbar."
+      />
     </div>
   );
 }

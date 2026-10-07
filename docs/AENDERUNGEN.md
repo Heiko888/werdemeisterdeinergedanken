@@ -5,6 +5,26 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-07 – Einwilligungshinweis an den KI-Werkzeugen
+
+Damit die Einwilligung aus Datenschutz Punkt 14 in der Oberfläche tatsächlich
+erteilt wird: kurzer, sachlicher Hinweis direkt am Start-Element jedes
+KI-Werkzeugs – Begleiter (unter dem Eingabefeld, zusammen mit der
+KI-Kennzeichnung), Reading (unter dem Button), Muster-Spiegel (ersetzt den
+bisherigen Übertragungshinweis), Detektor (unter dem Button).
+
+- Neu `src/lib/ki-einwilligung.ts` (Texte je Werkzeug, Link
+  `/datenschutz#ki-werkzeuge`) und `src/components/members/KiEinwilligungsHinweis.tsx`.
+- Begleiter und Spiegel nennen mögliche Gesundheitsangaben (Art. 9 DSGVO);
+  alle nennen Anthropic und den Widerruf.
+- `src/app/datenschutz/page.tsx`: Anker `id="ki-werkzeuge"` an Punkt 14,
+  Satz zur Rechtsgrundlage beschreibt jetzt den Hinweis am Werkzeug.
+- Tests: `src/lib/ki-einwilligung.test.ts` (4) → gesamt 30/30.
+- Keine Einwilligung wird gespeichert, keine Migration, **kein Schalter
+  geändert** – sichtbar wird alles erst mit eingeschaltetem Werkzeug.
+
+---
+
 ## 2026-10-07 – Datenschutzerklärung Punkt 14: KI-Werkzeuge
 
 `src/app/datenschutz/page.tsx`, Punkt 14 neu („KI-Werkzeuge im

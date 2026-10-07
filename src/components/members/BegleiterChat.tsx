@@ -5,6 +5,7 @@ import Link from "next/link";
 import { clearConversation } from "@/app/mitglieder/begleiter/actions";
 import { cn } from "@/lib/cn";
 import { pillCta } from "./panelStyles";
+import { KiEinwilligungsHinweis } from "./KiEinwilligungsHinweis";
 import {
   BEGLEITER_KI_HINWEIS,
   BEGLEITER_SUGGESTIONS,
@@ -359,9 +360,10 @@ export function BegleiterChat({
             {begleiterErrorText.too_long} ({draft.length} Zeichen)
           </p>
         )}
-        <p className="text-xs leading-relaxed text-ink-muted">
-          {BEGLEITER_KI_HINWEIS}
-        </p>
+        <KiEinwilligungsHinweis
+          werkzeug="begleiter"
+          vorsatz={BEGLEITER_KI_HINWEIS}
+        />
       </form>
     </div>
   );

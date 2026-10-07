@@ -254,7 +254,8 @@ Seit 2026-10-07 beschreibt Punkt 14 der Datenschutzerklärung
 (`src/app/datenschutz/page.tsx`) diese Datenkategorien je Werkzeug, Anbieter
 Anthropic Ireland, Limited, Auftragsverarbeitung, Standardvertragsklauseln,
 kein Training, Einwilligung (Art. 6 Abs. 1 lit. a / Art. 9 Abs. 2 lit. a).
-Offen bleibt der Einwilligungshinweis in der Oberfläche (DATENSCHUTZ-TODO).
+Der Einwilligungshinweis steht an allen vier Werkzeugen
+(`src/lib/ki-einwilligung.ts`, `KiEinwilligungsHinweis.tsx`).
 
 Produktiver Ist-Stand (read-only geprüft 2026-10-07): Alle vier Tabellen
 existieren mit aktivem RLS und je einer Policy `…_rw_own`.

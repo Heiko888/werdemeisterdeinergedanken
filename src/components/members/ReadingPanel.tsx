@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { memberEyebrow } from "@/lib/uiClasses";
 import { pillCta } from "./panelStyles";
+import { KiEinwilligungsHinweis } from "./KiEinwilligungsHinweis";
 import { generateReading, type Reading } from "@/app/mitglieder/reading-actions";
 
 /**
@@ -125,6 +126,8 @@ export function ReadingPanel({
           </span>
         )}
       </div>
+
+      <KiEinwilligungsHinweis werkzeug="reading" />
     </div>
   );
 }

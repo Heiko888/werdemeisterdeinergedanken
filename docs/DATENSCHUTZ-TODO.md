@@ -76,12 +76,16 @@ Grundlage (Angaben des Betreibers + öffentliche Anthropic-Unterlagen, abgerufen
   auch stimmt, solange die Schalter aus sind.
 
 **Noch offen vor dem Einschalten:**
-- **Einwilligung in der Oberfläche:** Punkt 14 stützt sich auf eine
-  Einwilligung „durch Starten des Werkzeugs“. Für Art. 9 (ausdrückliche
-  Einwilligung) braucht es vor dem ersten Start einen kurzen, klaren Hinweis
-  am Werkzeug (Begleiter-Eingabe, Reading-, Spiegel-, Detektor-Button), der
-  auf Punkt 14 verweist – idealerweise eine einmalige Bestätigung. Heute hat
-  nur der Muster-Spiegel einen Übertragungshinweis.
+- ~~**Einwilligung in der Oberfläche**~~ – erledigt 2026-10-07: Hinweis direkt
+  am Start-Element aller vier Werkzeuge („Mit dem Senden/Klick willigst du
+  ein, dass … an Anthropic übertragen wird“, bei Begleiter und Spiegel mit
+  Gesundheitsangaben, Widerruf, Link auf `/datenschutz#ki-werkzeuge`).
+  Texte: `src/lib/ki-einwilligung.ts`, Komponente
+  `src/components/members/KiEinwilligungsHinweis.tsx`, Tests
+  `src/lib/ki-einwilligung.test.ts`. Es wird **keine** Einwilligung
+  gespeichert (Button-Einwilligung je Nutzung). Falls ein Nachweis gewünscht
+  ist: später einmalige Bestätigung mit Zeitstempel in Supabase (Migration
+  nötig).
 - Unterauftragsverarbeiter-Liste von Anthropic einmal ansehen.
 - Prüfen, ob der DPA im Anthropic-Konto tatsächlich akzeptiert/abgeschlossen
   ist (nicht nur öffentlich verfügbar).
