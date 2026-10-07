@@ -492,7 +492,7 @@ Kein Schalter wurde gesetzt.
 
 | Punkt | Stand |
 |---|---|
-| Servervariable | später `KI_BEGLEITER_ENABLED=true` in `/opt/mattermost/.env` **und** die Zeile `KI_BEGLEITER_ENABLED: ${KI_BEGLEITER_ENABLED:-false}` im `environment:`-Block von `/opt/mattermost/docker-compose.yml` (Spiegel: `deploy/docker-compose.yml`). **Achtung:** Der Compose-Stack reicht die `KI_*`-Schalter heute **nicht** durch – ohne die Zeile wirkt die `.env` nicht. Danach `docker compose -f /opt/mattermost/docker-compose.yml up -d website` (kein Rebuild nötig, Laufzeitvariable). **Nicht gesetzt.** |
+| Servervariable | später `KI_BEGLEITER_ENABLED=true` in `/opt/mattermost/.env` **und** die Zeile `KI_BEGLEITER_ENABLED: ${KI_BEGLEITER_ENABLED:-false}` im `environment:`-Block von `/opt/mattermost/docker-compose.yml` (Spiegel: `deploy/docker-compose.yml`). Die vier `KI_*`-Zeilen stehen seit 2026-10-07 in der Repo-Spiegelung `deploy/docker-compose.yml` (Standard `false`); **auf dem Server in `/opt/mattermost/docker-compose.yml` manuell übernehmen** – ohne sie wirkt die `.env` nicht. Danach `docker compose -f /opt/mattermost/docker-compose.yml up -d website` (kein Rebuild nötig, Laufzeitvariable). **Nicht gesetzt.** |
 | `ANTHROPIC_API_KEY` | Pflicht; ohne ihn bleibt der Begleiter unsichtbar (`isBegleiterConfigured`) |
 | Migration | `supabase/migrations/0009_begleiter_chat.sql` – Tabelle `begleiter_messages` **produktiv vorhanden** (read-only geprüft 2026-10-07) |
 | RLS | aktiv, Policy `begleiter_messages_rw_own` (alle Operationen nur auf eigene Zeilen) |

@@ -5,6 +5,22 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-07 – KI-Schalter im Compose-Stack verdrahtet
+
+`deploy/docker-compose.yml` (Spiegel von `/opt/mattermost/docker-compose.yml`):
+vier neue `environment:`-Zeilen `KI_BEGLEITER_ENABLED`, `KI_READING_ENABLED`,
+`KI_MUSTER_SPIEGEL_ENABLED`, `KI_DETEKTOR_ENABLED`, jeweils mit Standard
+`false`. Vorher wurden die Schalter nicht in den Container durchgereicht.
+`deploy/.env.example` und `deploy/README.md` angepasst.
+
+**Server – manuell nötig:** den Block in `/opt/mattermost/docker-compose.yml`
+unter `ANTHROPIC_API_KEY` einfügen, dann
+`docker compose -f /opt/mattermost/docker-compose.yml up -d website`.
+Solange in `/opt/mattermost/.env` nichts oder `false` steht, bleibt alles aus.
+**Kein Schalter aktiviert.**
+
+---
+
 ## 2026-10-07 – Einwilligungshinweis an den KI-Werkzeugen
 
 Damit die Einwilligung aus Datenschutz Punkt 14 in der Oberfläche tatsächlich
