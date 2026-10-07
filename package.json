@@ -16,6 +16,7 @@
     "carousels:slides": "node docs/carousels/build.mjs",
     "carousels:png": "node docs/carousels/export-png.mjs",
     "reel-drehbuch": "node tools/pdf/reel-drehbuch.mjs",
+    "ueber-mich-skripte": "node tools/pdf/ueber-mich-skripte.mjs",
     "endcard": "node docs/reels/covers/endcard.mjs",
     "langvideo-drehbuch": "node tools/pdf/langvideo-drehbuch.mjs",
     "willkommen-skript": "node tools/pdf/willkommen-skript.mjs",

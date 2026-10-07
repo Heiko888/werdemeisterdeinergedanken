@@ -198,6 +198,29 @@ ansehen“) unverändert – sie sind theme-fähig und auf Dunkel korrekt.
 
 ---
 
+## 2026-10-07 – YouTube- und Reel-Talk-Skripte zur Über-mich-Geschichte
+
+**Neu:** `docs/skripte/ueber-mich/` – reine Content-Dateien, kein Code geändert.
+- `reels-talk-meine-geschichte.md`: 15 Talking-Head-Reels (30–60 Sek),
+  chronologisch, je Hook · Talk · On-Screen · CTA · Caption; Cover-Texte,
+  Hashtag-Pool. Bei Folge 7 (Verlust) und 8 (Implosion) Telefonseelsorge-Hinweis
+  in der Caption, Folge 8 mit „meine Erfahrung, keine Diagnose“.
+- `youtube-talk-meine-geschichte.md`: Hauptvideo (ca. 14–18 Min) als
+  Talk-Drehbuch in 12 Kapiteln, zwei Themen-Talks, Titel-Varianten,
+  Beschreibung mit Kapitelmarken, Thumbnail, angepinnter Kommentar.
+- Inhalt 1:1 aus der Über-mich-Seite, gleiche Produktabgrenzung (Gründer, keine
+  Heilversprechen, kein Coaching-/Erstgespräch-CTA) und gleiche Chronologie.
+- `docs/skripte/README.md` um den Abschnitt ergänzt.
+- **PDFs:** neuer Generator `tools/pdf/ueber-mich-skripte.mjs`
+  (`npm run ueber-mich-skripte`), Optik wie `reel-drehbuch.mjs`; Ausgabe
+  `docs/workshop/ueber-mich-skripte/WMDG-Reel-Talk-Meine-Geschichte.pdf`
+  (11 Seiten) und `…/WMDG-YouTube-Talk-Meine-Geschichte.pdf` (10 Seiten).
+  Galerie-Label „Über mich – YouTube & Reel-Talk“ in
+  `tools/vorlagen/build-gallery.mjs` – sichtbar nach dem nächsten
+  `npm run vorlagen:galerie` (nicht ausgeführt, baut den ganzen Katalog neu).
+
+---
+
 ## 2026-10-05 – Über-mich-Seite inhaltlich neu strukturiert
 
 **Anlass:** Der bisherige Text war unvollständig und chronologisch falsch (u. a.
