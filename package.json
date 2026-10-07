@@ -34,7 +34,8 @@
     "buchcover": "python3 tools/pdf/buchcover-png.py",
     "print": "node tools/print/geschaeftsausstattung.mjs",
     "signatur": "node tools/print/email-signatur.mjs",
-    "briefpapier:word": "node tools/print/briefpapier-word.mjs"
+    "briefpapier:word": "node tools/print/briefpapier-word.mjs",
+    "ki:probelauf": "node --no-warnings --import ./tools/ki/register-alias.mjs tools/ki/begleiter-probelauf.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.115.0",

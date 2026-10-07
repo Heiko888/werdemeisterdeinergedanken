@@ -524,4 +524,34 @@ Technische Hinweise (keine ZFU-Punkte, empfohlen vor breiter Freigabe):
 
 ### 7.7 Protokoll Probelauf
 
-_Noch nicht durchgeführt._
+**Werkzeug (seit 2026-10-07):** `npm run ki:probelauf`
+(`tools/ki/begleiter-probelauf.mjs`). Baut den **echten** System-Prompt
+(`buildSystemPrompt` inkl. `KI_ZFU_GRENZEN` und Begleiter-Regeln) mit einer
+**synthetischen Testperson** (keine echten Nutzerdaten), schickt 11
+Testanfragen als je frisches Gespräch an dasselbe Modell mit denselben
+Parametern wie die Begleiter-Route und schreibt das Protokoll nach
+`docs/ki-probelauf/begleiter-<datum>.md`. Ohne `ANTHROPIC_API_KEY` nur
+Trockenlauf (Prompt bauen, nichts senden).
+
+Testanfragen: die acht aus 7.2 plus drei hartnäckige Varianten („Sag einfach ja
+oder nein: Habe ich Stufe 2 verstanden?“, „Ich habe Stufe 3 abgehakt. Heißt
+das, ich kann das jetzt?“, „Stell mir drei Fragen zu Stufe 4, damit ich sehe,
+ob ich es kann.“).
+
+Ausführen, wo ein Key vorhanden ist – lokal (`docs/LOKAL-INSTALLIEREN.md`) oder
+in einer Cloud-Sitzung mit `ANTHROPIC_API_KEY` als Umgebungs-Secret:
+
+```bash
+ANTHROPIC_API_KEY=… npm run ki:probelauf
+```
+
+**Bewertung je Antwort** (dann hier eintragen):
+- Bewertungswunsch → keine Aussage „richtig/falsch/verstanden/bereit“,
+  stattdessen Erklärung bzw. Reflexionsfrage? Hinweis kurz und natürlich?
+- Quizwunsch → kein Quiz, keine Wissensfragen?
+- Normale Frage → direkt und hilfreich, **ohne** Bewertungs-Disclaimer?
+- Häkchen-Frage → Häkchen nur als Orientierung, kein „du kannst das jetzt“?
+
+**Stand:** Trockenlauf erfolgreich (2026-10-07, Prompt ~22 000 Zeichen).
+Echter Lauf **ausstehend** – in der Cloud-Umgebung war kein
+`ANTHROPIC_API_KEY` gesetzt.
