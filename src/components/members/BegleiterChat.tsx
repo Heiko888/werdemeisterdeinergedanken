@@ -80,6 +80,19 @@ function linkify(text: string): ReactNode[] {
   return out;
 }
 
+/** Das Eingabefeld wächst mit dem Text mit (Obergrenze über max-h im CSS). */
+function autoGrow(el: HTMLTextAreaElement) {
+  // Ab sm gilt die feste Mindesthöhe samt resize-y – dort nicht eingreifen.
+  if (window.matchMedia("(min-width: 640px)").matches) return;
+  el.style.height = "auto";
+  el.style.height = `${el.scrollHeight + 2}px`;
+}
+
+/** Touch-Gerät ohne Hardware-Tastatur? Dann hat Enter keinen Shift-Partner. */
+function isTouch(): boolean {
+  return window.matchMedia("(pointer: coarse)").matches;
+}
+
 /** Antworttext in Absätze zerlegen – Zeilenumbrüche innerhalb bleiben erhalten. */
 function Paragraphs({ text }: { text: string }) {
   return (
@@ -133,6 +146,7 @@ export function BegleiterChat({
     setError(null);
     setPending(true);
     setDraft("");
+    if (inputRef.current) inputRef.current.style.height = "";
     // Die eigene Frage sofort zeigen; die id ist nur fürs Rendern gedacht,
     // beim nächsten Laden kommt die echte aus der Datenbank.
     setMessages((prev) => [
@@ -226,7 +240,7 @@ export function BegleiterChat({
         "flex flex-col bg-white",
         fill
           ? "h-full gap-4 p-4"
-          : "gap-5 rounded-2xl border border-accent/25 p-5 shadow-card sm:p-7",
+          : "gap-5 rounded-2xl border border-accent/25 p-4 shadow-card sm:p-7",
       )}
     >
       {/* Verlauf */}
@@ -314,25 +328,48 @@ export function BegleiterChat({
         <label htmlFor="begleiter-frage" className="sr-only">
           Deine Nachricht an den Begleiter
         </label>
-        <textarea
-          id="begleiter-frage"
-          ref={inputRef}
-          value={draft}
-          onChange={(e) => setDraft(e.target.value)}
-          onKeyDown={(e) => {
-            // Enter sendet, Shift+Enter macht einen Absatz.
-            if (e.key === "Enter" && !e.shiftKey) {
-              e.preventDefault();
-              if (!zuLang) send(draft);
-            }
-          }}
-          rows={3}
-          disabled={pending}
-          placeholder="Was beschäftigt dich gerade?"
-          className="w-full resize-y rounded-2xl border border-ink/15 bg-paper/40 px-4 py-3 text-[1rem] leading-relaxed text-ink placeholder:text-ink-muted focus-visible:border-accent/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-60"
-        />
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-3">
+        {/* Mobil stehen Feld und Senden nebeneinander und das Feld startet
+            einzeilig: Bei offener Tastatur bleibt sonst kaum Platz zum Lesen. */}
+        <div className="flex items-end gap-2 sm:flex-col sm:items-stretch sm:gap-3">
+          <textarea
+            id="begleiter-frage"
+            ref={inputRef}
+            value={draft}
+            onChange={(e) => {
+              setDraft(e.target.value);
+              autoGrow(e.target);
+            }}
+            onKeyDown={(e) => {
+              // Enter sendet, Shift+Enter macht einen Absatz. Auf Touch-Geräten
+              // gibt es kein Shift – dort macht Enter den Absatz, gesendet
+              // wird über den Knopf.
+              if (e.key === "Enter" && !e.shiftKey && !isTouch()) {
+                e.preventDefault();
+                if (!zuLang) send(draft);
+              }
+            }}
+            rows={1}
+            enterKeyHint="enter"
+            disabled={pending}
+            placeholder="Was beschäftigt dich gerade?"
+            className="max-h-40 min-w-0 flex-1 resize-none rounded-2xl border border-ink/15 bg-paper/40 px-4 py-2.5 text-[1rem] leading-relaxed text-ink placeholder:text-ink-muted focus-visible:border-accent/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-60 sm:max-h-none sm:min-h-[6.5rem] sm:w-full sm:resize-y sm:py-3"
+          />
+          <button
+            type="submit"
+            disabled={pending || !draft.trim() || zuLang}
+            aria-label="Senden"
+            className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-ink text-paper shadow-card transition-all hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-60 sm:hidden"
+          >
+            <span aria-hidden>{pending ? "…" : "↑"}</span>
+          </button>
+        </div>
+        <div
+          className={cn(
+            "flex-wrap items-center justify-between gap-3",
+            messages.length > 0 ? "flex" : "hidden sm:flex",
+          )}
+        >
+          <div className="hidden flex-wrap items-center gap-3 sm:flex">
             <button
               type="submit"
               disabled={pending || !draft.trim() || zuLang}

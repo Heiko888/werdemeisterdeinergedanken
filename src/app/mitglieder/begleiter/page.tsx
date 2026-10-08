@@ -57,13 +57,13 @@ export default async function BegleiterPage() {
   return (
     <>
       {/* Kopf */}
-      <section className="member-hero overflow-hidden py-16 sm:py-20">
+      <section className="member-hero overflow-hidden py-10 sm:py-20">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
           style={{ background: APP_GLOW }}
         />
-        <Container className="flex flex-col items-start gap-5">
+        <Container className="flex flex-col items-start gap-4 sm:gap-5">
           <Link
             href="/mitglieder"
             className="inline-flex items-center gap-2 text-sm text-ink-mid transition-colors hover:text-ink"
@@ -87,7 +87,7 @@ export default async function BegleiterPage() {
       </section>
 
       {/* Gespräch */}
-      <section className="py-12 sm:py-16">
+      <section className="py-6 sm:py-16">
         <Container>
           <div className="mx-auto max-w-3xl">
             {configured ? (
