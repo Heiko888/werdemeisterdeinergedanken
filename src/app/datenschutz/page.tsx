@@ -226,6 +226,20 @@ export default function PrivacyPage() {
                 Rechtsgrundlage ist Art. 6 Abs. 1 lit. a und b DSGVO. Diese Daten
                 geben wir nicht ohne deine Einwilligung weiter.
               </p>
+              <p>
+                Wenn du über &bdquo;Vertrag hier widerrufen&ldquo; (Seite{" "}
+                <a href="/widerruf">/widerruf</a>) einen Vertrag widerrufst,
+                verarbeiten wir deinen Namen, deine E-Mail-Adresse, den
+                betroffenen Vertrag, deine freiwilligen Angaben zur Bestellung
+                bzw. Anmerkung sowie den Zeitpunkt des Eingangs. Wir speichern den
+                Widerruf in unserer Datenbank (Supabase, siehe Punkt 12) und
+                schicken dir über Resend (siehe Punkt 11) eine
+                Eingangsbestätigung. Zum Schutz vor Missbrauch wird außerdem die
+                IP-Adresse der Anfrage gespeichert. Rechtsgrundlage ist Art. 6
+                Abs. 1 lit. c DSGVO (Bearbeitung und Bestätigung des Widerrufs
+                als gesetzliche Pflicht) und für den Missbrauchsschutz Art. 6
+                Abs. 1 lit. f DSGVO.
+              </p>
 
               <h2>10. Newsletter &amp; E-Book-Anmeldung</h2>
               <p>

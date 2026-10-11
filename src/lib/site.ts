@@ -54,7 +54,10 @@ export const mainNav: NavItem[] = [
   { label: "Blog", href: "/blog" },
 ];
 
+// „Vertrag hier widerrufen“: Widerrufsfunktion (src/lib/widerruf.ts) – muss
+// dauerhaft und ohne Login erreichbar sein, deshalb fest im Footer.
 export const legalNav: NavItem[] = [
   { label: "Impressum", href: "/impressum" },
   { label: "Datenschutz", href: "/datenschutz" },
+  { label: "Vertrag hier widerrufen", href: "/widerruf" },
 ];

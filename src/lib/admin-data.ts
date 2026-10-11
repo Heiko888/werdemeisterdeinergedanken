@@ -48,6 +48,18 @@ export type KontaktRow = {
   created_at: string;
 };
 
+export type WiderrufRow = {
+  id: string;
+  referenz: string;
+  name: string;
+  email: string;
+  produkt: string;
+  bestellung: string | null;
+  nachricht: string | null;
+  status: string;
+  eingegangen_at: string;
+};
+
 export type BookOrderRow = {
   id: string;
   email: string;
@@ -105,6 +117,14 @@ export function getKontaktAnfragen() {
     "kontakt_anfragen",
     "id,name,email,thema,message,status,created_at",
     "created_at",
+  );
+}
+
+export function getWiderrufe() {
+  return listTable<WiderrufRow>(
+    "widerrufe",
+    "id,referenz,name,email,produkt,bestellung,nachricht,status,eingegangen_at",
+    "eingegangen_at",
   );
 }
 

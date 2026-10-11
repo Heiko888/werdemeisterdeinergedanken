@@ -139,6 +139,7 @@ export function StatusPill({ status }: { status: string }) {
     confirmed: "bg-emerald-100 text-emerald-800",
     versendet: "bg-emerald-100 text-emerald-800",
     beantwortet: "bg-emerald-100 text-emerald-800",
+    bearbeitet: "bg-emerald-100 text-emerald-800",
     pending: "bg-gold-300/50 text-ink",
     neu: "bg-gold-300/50 text-ink",
     bezahlt: "bg-gold-300/50 text-ink",
