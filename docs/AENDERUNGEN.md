@@ -5,6 +5,53 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-11 – Kündigungsbutton (§ 312k BGB) für die Mitgliedschaft
+
+**Anlass:** Wer Abos online verkauft, muss eine Kündigung ebenso online
+ermöglichen – dauerhaft erreichbar, ohne Login, zweistufig mit gesetzlich
+vorgegebenen Beschriftungen und sofortiger Bestätigung in Textform.
+
+**Stand auf dem Server: noch AUS.** Alles hängt an `MITGLIEDSCHAFT_AKTIV`
+(`src/lib/membership-launch.ts`, aktuell `false`). Solange die Mitgliedschaft
+nicht buchbar ist, gibt es nichts zu kündigen (geprüft: `memberships` ist in
+Supabase leer). Wird der Schalter auf `true` gesetzt, ist der Button
+automatisch live.
+
+| Baustein | Datei | Verhalten |
+|---|---|---|
+| Logik & Texte | `src/lib/kuendigung.ts` (+ Test) | Prüfung, Referenz `KU-XXXXXXXX`, Bestätigungstext, Vertragsende-Satz |
+| Footer-Schaltfläche | `src/lib/site.ts` (`legalNav`) | „Verträge hier kündigen“ – nur bei `MITGLIEDSCHAFT_AKTIV` |
+| Bestätigungsseite | `src/app/kuendigen/page.tsx`, `src/components/sections/KuendigungForm.tsx` | ohne Login; fragt Art (ordentlich/außerordentlich + Grund), Name, E-Mail, Vertrag, freiwillig Vertragsnr., Zeitpunkt (Standard: nächstmöglich, alternativ Datum); Schaltfläche „Jetzt kündigen“; danach Ansicht mit Inhalt, Datum/Uhrzeit, Referenz und Knopf „speichern oder drucken“; bei `false` → 404 |
+| Annahme | `src/app/api/kuendigung/route.ts` | Rate-Limit 10/10 min, Honeypot, gleiche Prüfung; sucht aktive Mitgliedschaft zur E-Mail (Periodenende), speichert in `kuendigungen`, Mail an Heiko + Bestätigung an die Person (Inhalt, Eingang, Vertragsende); 503 mit E-Mail-Ausweg, wenn weder gespeichert noch Mail an Heiko; bei `false` → 404 |
+| Datenbank | `supabase/migrations/20261011180000_kuendigungen.sql` | Tabelle `kuendigungen`, RLS ohne Policies (nur Service-Role) – **noch NICHT eingespielt** |
+| Admin | `src/app/admin/kuendigungen/page.tsx`, `AdminNav` | Liste mit Eingang, Referenz, Art, Zeitpunkt, Periodenende bzw. „keine aktive Mitgliedschaft gefunden“, Status |
+| Datenschutz | `src/app/datenschutz/page.tsx`, Punkt 9 | Absatz zur Kündigung – erscheint nur bei `MITGLIEDSCHAFT_AKTIV` |
+
+**Bewusste Entscheidungen**
+- Das Abo wird in Stripe **manuell** beendet (Heiko bekommt eine Mail mit
+  Aufgabe). Die Kündigung ist mit dem Eingang erklärt; die Abwicklung ist ein
+  zweiter Schritt. Automatisches Beenden kann später ergänzt werden.
+- Das Vertragsende (Periodenende laut `memberships`) steht **nur in der E-Mail**
+  an die Mitgliedsadresse, nicht in der Antwort der Seite – sonst ließe sich
+  über das Formular abfragen, ob jemand Mitglied ist.
+- Ohne gefundene Mitgliedschaft wird kein Datum geraten; die Mail sagt, dass
+  manuell zugeordnet wird.
+- Der bestehende Weg für angemeldete Mitglieder (Stripe-Kundenportal unter
+  `/mitglieder/einstellungen`) bleibt zusätzlich bestehen.
+
+**Getestet:** `tsc`, ESLint, `npm test` (50/50), `npm run build`; mit temporär
+eingeschaltetem Schalter per Playwright: Footer-Link, Pflichtfeld-, Grund- und
+Datumsprüfung, 503-Ausweg (hier ohne Supabase/Resend), Honeypot, Erfolgsansicht
+(API gemockt). Schalter danach wieder auf `false`. Echter Versand und echtes
+Speichern sind erst nach Migration + Freischaltung testbar.
+
+**Vor dem Freischalten der Mitgliedschaft:**
+1. Migration `20261011180000_kuendigungen.sql` in Supabase einspielen.
+2. Einmal selbst kündigen (Test-Abo) und prüfen: Eintrag in `/admin/kuendigungen`,
+   Mail an Heiko, Bestätigung an die Person mit richtigem Periodenende.
+
+---
+
 ## 2026-10-11 – Supabase: Sicherheitshinweise behoben (Funktionsrechte)
 
 **Anlass:** Security-Advisor von Supabase (Projekt `werde-meister-deiner-gedanken`).

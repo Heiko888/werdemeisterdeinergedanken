@@ -18,6 +18,7 @@ const SECTIONS: { href: string; label: string }[] = [
   { href: "/admin/kontakt", label: "Kontakt" },
   { href: "/admin/bestellungen", label: "Bestellungen" },
   { href: "/admin/widerrufe", label: "Widerrufe" },
+  { href: "/admin/kuendigungen", label: "Kündigungen" },
   { href: "/admin/erstgespraeche", label: "Erstgespräche" },
   { href: "/admin/methoden", label: "Methoden" },
   { href: "/admin/redaktionsplan", label: "Redaktionsplan" },

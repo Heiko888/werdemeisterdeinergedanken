@@ -4,6 +4,9 @@
  * (Kontakt, Social-Links, rechtliche Angaben).
  */
 
+import { MITGLIEDSCHAFT_AKTIV } from "./membership-launch";
+import { KUENDIGUNG_BUTTON, KUENDIGUNG_HREF } from "./kuendigung";
+
 export const site = {
   name: "Werde Meister deiner Gedanken",
   shortName: "WMDG",
@@ -56,8 +59,11 @@ export const mainNav: NavItem[] = [
 
 // „Vertrag hier widerrufen“: Widerrufsfunktion (src/lib/widerruf.ts) – muss
 // dauerhaft und ohne Login erreichbar sein, deshalb fest im Footer.
+// „Verträge hier kündigen“: Kündigungsbutton nach § 312k BGB
+// (src/lib/kuendigung.ts) – erscheint, sobald die Mitgliedschaft buchbar ist.
 export const legalNav: NavItem[] = [
   { label: "Impressum", href: "/impressum" },
   { label: "Datenschutz", href: "/datenschutz" },
   { label: "Vertrag hier widerrufen", href: "/widerruf" },
+  ...(MITGLIEDSCHAFT_AKTIV ? [{ label: KUENDIGUNG_BUTTON, href: KUENDIGUNG_HREF }] : []),
 ];

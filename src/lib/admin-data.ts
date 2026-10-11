@@ -60,6 +60,22 @@ export type WiderrufRow = {
   eingegangen_at: string;
 };
 
+export type KuendigungRow = {
+  id: string;
+  referenz: string;
+  name: string;
+  email: string;
+  vertrag: string;
+  vertragsnummer: string | null;
+  art: string;
+  grund: string | null;
+  zeitpunkt: string;
+  wunschdatum: string | null;
+  periode_ende: string | null;
+  status: string;
+  eingegangen_at: string;
+};
+
 export type BookOrderRow = {
   id: string;
   email: string;
@@ -124,6 +140,14 @@ export function getWiderrufe() {
   return listTable<WiderrufRow>(
     "widerrufe",
     "id,referenz,name,email,produkt,bestellung,nachricht,status,eingegangen_at",
+    "eingegangen_at",
+  );
+}
+
+export function getKuendigungen() {
+  return listTable<KuendigungRow>(
+    "kuendigungen",
+    "id,referenz,name,email,vertrag,vertragsnummer,art,grund,zeitpunkt,wunschdatum,periode_ende,status,eingegangen_at",
     "eingegangen_at",
   );
 }
