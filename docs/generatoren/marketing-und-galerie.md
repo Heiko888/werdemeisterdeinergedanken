@@ -182,11 +182,14 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
   `docs/reels/covers/_fonts.css`, `public/logo-brain-{gold,tuerkis}.png`).
 - **Eingaben:** `STORIES`-Array **inline**; Frame-Rollen `text` (fertiger
   Frame), `overlay` (transparent, kommt über das Originalbild), `bild`
-  (Originalbild, wird nicht gerendert). Optional das Bild unter
-  `docs/marketing/_input/<bild>` → dann zusätzlich Vorschau-PNGs.
+  (Originalbild → `NN-bild-8s.mp4` per `ffmpeg`). Bildpfad je Story in
+  `bild` (aktuell `public/takt rhytmus.jpeg`); fehlt das Bild, entstehen nur
+  die Overlays ohne Vorschau und ohne Video.
 - **Ausgaben:** `docs/marketing/interaktive-stories/<slug>/9x16/`
   `NN.png` / `NN-hell.png` (Text-Frames, Standard dunkel + Creme),
-  `NN-overlay.png`, ggf. `NN-vorschau.png`. Voll-Lauf leert den Ordner.
+  `NN-overlay.png`, `NN-vorschau.png` (Overlay + Bild), `NN-bild-8s.mp4`.
+  Voll-Lauf leert den Ordner. Zusätzliche Voraussetzung: `ffmpeg` (optional,
+  nur fürs Video).
 - **Skript dazu:** `docs/skripte/stories/<slug>.md` (Sprechtext, Sticker-Texte,
   Folge-Story) – Texte dort und im `STORIES`-Array gemeinsam pflegen.
 - **Galerie:** noch **nicht** in `build-gallery.mjs` eingebunden.

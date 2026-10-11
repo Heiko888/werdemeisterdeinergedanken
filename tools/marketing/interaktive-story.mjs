@@ -14,7 +14,7 @@
  *     NN.png               Text-Frame mit Marken-Hintergrund (fertig)
  *     NN-overlay.png       transparentes Overlay – kommt ÜBER das Bild
  *     NN-vorschau.png      Overlay + Bild zusammen (nur wenn das Bild unter
- *                          docs/marketing/_input/<bild> liegt)
+ *                          story.bild existiert)
  *
  * role: text | overlay | bild.  sticker: "oben" | "unten" | null – wo im
  * Frame Platz für den Instagram-Sticker bleibt. Akzentwort mit <em>…</em>.
@@ -22,6 +22,7 @@
  * docs/skripte/stories/auf-welcher-seite-stehst-du.md – Texte dort und hier
  * gemeinsam pflegen.
  */
+import { execFileSync } from "node:child_process";
 import { writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:fs";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -45,7 +46,7 @@ const THEMES = (process.env.THEME ? [process.env.THEME] : ["dunkel", "hell"]).fi
 const STORIES = [
   {
     slug: "auf-welcher-seite-stehst-du",
-    bild: "auf-welcher-seite.jpg", // docs/marketing/_input/<bild> (optional, nur für Vorschau)
+    bild: "public/takt rhytmus.jpeg", // Originalbild (relativ zum Repo) – für die Vorschau-Frames
     frames: [
       { role: "text", sticker: null, lead: `Schau dir dieses Bild mal <em>ganz genau</em> an.`, body: `Nicht nur kurz. Wirklich genau.` },
       { role: "bild" },
@@ -88,7 +89,7 @@ body{width:${F.w}px;height:${F.h}px;overflow:hidden;font-family:Inter,sans-serif
  radial-gradient(1.5px 1.5px at 24% 26%,rgba(255,255,255,.55),transparent),
  radial-gradient(1.3px 1.3px at 66% 18%,rgba(255,255,255,.4),transparent),
  radial-gradient(1.3px 1.3px at 82% 60%,rgba(180,210,255,.45),transparent)}
-.scrim{position:absolute;left:0;right:0;top:0;height:62%;background:linear-gradient(to bottom, rgba(5,9,20,.9) 0%, rgba(5,9,20,.72) 45%, transparent 100%)}
+.scrim{position:absolute;left:0;right:0;top:0;height:50%;background:linear-gradient(to bottom, rgba(5,9,20,.88) 0%, rgba(5,9,20,.66) 50%, transparent 100%)}
 .brandlock{position:absolute;left:0;right:0;bottom:250px;display:flex;justify-content:center;align-items:center;gap:14px;z-index:6}
 .brainmini{width:56px;filter:drop-shadow(0 6px 24px rgba(${glowRGB},.5))}
 .wm{font-family:Fraunces,serif;font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:VAR_INK;opacity:.8}
@@ -126,8 +127,9 @@ function doc(fr, theme, { photo } = {}) {
   const layers = isOverlay
     ? `${photo ? `<img class="photo" src="${photo}">` : ""}<div class="scrim"></div>`
     : `<div class="bg"></div><div class="stars"></div>`;
-  // Kein Logo auf Frames mit Sticker unten – dort sitzt der Sticker.
-  const brand = fr.sticker === "unten" ? "" : `<div class="brandlock"><img class="brainmini" src="${brainImg}"><span class="wm">Werde Meister deiner Gedanken</span></div>`;
+  // Kein Logo auf Frames mit Sticker unten (dort sitzt der Sticker) und
+  // nicht auf Overlays (würde Bilddetails verdecken).
+  const brand = fr.sticker === "unten" || isOverlay ? "" : `<div class="brandlock"><img class="brainmini" src="${brainImg}"><span class="wm">Werde Meister deiner Gedanken</span></div>`;
   return `<!doctype html><html><head><meta charset="utf8"><link rel="stylesheet" href="${fonts}">
 <style>body{background:transparent}${isOverlay ? overlayCss() : cssFor(theme)}</style></head><body>
 ${layers}${inner(fr)}${brand}</body></html>`;
@@ -158,13 +160,24 @@ async function shot(html, path, transparent) {
 for (const story of STORIES) {
   const dir = join(OUT, story.slug, "9x16");
   mkdirSync(dir, { recursive: true });
-  const bildPfad = join(ROOT, "docs/marketing/_input", story.bild);
+  const bildPfad = join(ROOT, story.bild);
   const photo = existsSync(bildPfad) ? pathToFileURL(bildPfad).href : null;
   let n = 0;
   for (let i = 0; i < story.frames.length; i++) {
     const fr = story.frames[i];
     const nr = String(i + 1).padStart(2, "0");
-    if (fr.role === "bild") continue; // Originalbild – wird nicht gerendert.
+    if (fr.role === "bild") {
+      // Foto-Storys stehen nur 5 s – als 8-s-Video steht das Bild lange genug.
+      if (photo) {
+        try {
+          execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-loop", "1", "-i", bildPfad, "-t", "8", "-r", "30",
+            "-vf", `scale=${F.w}:${F.h}:force_original_aspect_ratio=increase,crop=${F.w}:${F.h}`,
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", join(dir, `${nr}-bild-8s.mp4`)]);
+          n++;
+        } catch { console.warn("! ffmpeg fehlt – Frame", nr, "ohne 8-s-Video"); }
+      }
+      continue;
+    }
     if (fr.role === "overlay") {
       // Overlay ist farbwelt-unabhängig (liegt immer auf dem Bild).
       await shot(doc(fr, "dunkel"), join(dir, `${nr}-overlay.png`), true); n++;
@@ -175,6 +188,6 @@ for (const story of STORIES) {
       await shot(doc(fr, theme), join(dir, `${nr}${THEME_SUFFIX[theme]}.png`), false); n++;
     }
   }
-  console.log("✓", story.slug, `(${n} Dateien${photo ? ", mit Bild-Vorschau" : ", ohne Bild-Vorschau – Bild fehlt unter docs/marketing/_input/" + story.bild})`);
+  console.log("✓", story.slug, `(${n} Dateien${photo ? ", mit Bild-Vorschau" : ", ohne Bild-Vorschau – Bild fehlt: " + story.bild})`);
 }
 await browser.close();

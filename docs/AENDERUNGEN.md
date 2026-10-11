@@ -20,10 +20,16 @@ Marketing-Material im Repo.
 | Fertige Frames (9:16, dunkel + Creme, Overlays transparent) | `docs/marketing/interaktive-stories/auf-welcher-seite-stehst-du/9x16/` |
 | Doku | `docs/generatoren/marketing-und-galerie.md`, `docs/skripte/README.md`, `docs/marketing/_input/README.md` |
 
-**Offen:** Das Originalbild liegt nicht im Repo. Unter
-`docs/marketing/_input/auf-welcher-seite.jpg` ablegen und neu rendern, dann
-entstehen fertige Vorschau-Frames (Bild + Text). Die Frames sind noch nicht in
-der Vorlagen-Galerie (`build-gallery.mjs`).
+**Bild:** `public/takt rhytmus.jpeg` (per Upload auf `main`). Daraus erzeugt
+der Generator fertige Bild-Frames `NN-vorschau.png` (03, 05, 06, 11, 12) und
+`02-bild-8s.mp4` (Bild als 8-s-Video, weil Foto-Storys nur 5 s stehen). Auf
+den Bild-Frames kein Logo, Verlauf oben nur 50 % – sonst verdeckt es Details
+(sitzender Mann, Herzlinie).
+
+**Offen:** Die Frames sind noch nicht in der Vorlagen-Galerie
+(`build-gallery.mjs`). Das Bild liegt in `public/` und wäre damit auch unter
+`/takt rhytmus.jpeg` öffentlich abrufbar – es wird aber auf keiner Seite
+verwendet.
 
 ---
 

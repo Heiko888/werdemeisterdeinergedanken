@@ -40,9 +40,9 @@ Legende: `[Regie]` = nicht sprechen · **Fett** = genau so sagen
 
 ### 02 – Das Bild (Originalbild, kein Text)
 - `[Regie]` Bild bildschirmfüllend, **6–8 Sekunden ohne Sprache, ohne Musik-Wechsel**.
-- **Tipp:** Ein Foto steht in Instagram nur 5 Sekunden. Für 8 Sekunden das
-  Bild als kurzes Video hochladen (Canva: Seite auf 8 s stellen, als MP4
-  exportieren – oder per `ffmpeg -loop 1 -i bild.jpg -t 8 -r 30 -pix_fmt yuv420p bild-8s.mp4`).
+- **Datei:** `02-bild-8s.mp4` – das Bild als 8-Sekunden-Video. Ein Foto steht
+  in Instagram nur 5 Sekunden; das Video steht lange genug. (Erzeugt der
+  Generator automatisch per `ffmpeg`.)
 
 ### 03 – Wohin wandert dein Blick? (Overlay `03-overlay.png` über dem Bild)
 - **Text:** „Wohin wandert dein Blick *zuerst*?"
@@ -163,15 +163,19 @@ Grobe Linie für das Folgevideo:
 
 ## Produktion
 
-1. Bild ablegen (für die Vorschau): `docs/marketing/_input/auf-welcher-seite.jpg`
+1. Originalbild: `public/takt rhytmus.jpeg` (864×1536, 9:16).
 2. Rendern: `npm run interaktive-story` (dunkel + Creme; Türkis per
    `THEME=tuerkis npm run interaktive-story`)
 3. In Canva/Instagram zusammensetzen:
    - **Text-Frames** (`01, 04, 07–10, 13, 14`) direkt hochladen.
-   - **Overlay-Frames** (`03, 05, 06, 11, 12`): Originalbild als Ebene 1,
-     `NN-overlay.png` darüber. Liegt das Bild unter `_input/`, erzeugt der
-     Generator zusätzlich `NN-vorschau.png` – fertig zum Hochladen.
-   - **Sticker** in Instagram setzen. Frames mit Sticker haben das untere
-     Drittel frei (dort ist auch kein Logo).
+   - **Bild-Frame** `02-bild-8s.mp4` hochladen.
+   - **Overlay-Frames** (`03, 05, 06, 11, 12`): `NN-vorschau.png` ist fertig
+     (Bild + Text) und kann direkt hochgeladen werden. `NN-overlay.png` ist die
+     transparente Ebene, falls du in Canva noch etwas änderst.
+   - **Sticker** in Instagram setzen. Text-Frames mit Sticker haben das untere
+     Drittel frei (dort ist auch kein Logo). **Auf den Bild-Frames 03 und 06**
+     den Umfrage-Sticker etwas kleiner **unten links über den Wasserfall**
+     setzen – unten rechts sitzt der Mann, in der Mitte die Herzlinie; beide
+     sollen sichtbar bleiben.
 4. Farbwelt einheitlich halten: entweder alle Text-Frames dunkel oder alle Creme.
    Dunkel passt besser zum Bild.
