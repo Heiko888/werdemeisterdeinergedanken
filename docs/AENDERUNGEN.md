@@ -38,9 +38,21 @@ zeigt Zeitpunkt und Referenz sofort an.
 `src/app/admin/_ui.tsx` (Status „bearbeitet“), Datenschutzerklärung Punkt 9
 (Absatz zur Widerrufsfunktion, Art. 6 Abs. 1 lit. c / f DSGVO).
 
-**Auf dem Server zu tun:** Migration `20261011120000_widerrufe.sql` in Supabase
-einspielen. Ohne Tabelle funktioniert der Widerruf nur über die E-Mails.
-`RESEND_API_KEY`, `CONTACT_FROM`/`CONTACT_TO` wie beim Kontaktformular.
+**Serverstand Supabase (2026-10-11, Projekt `werde-meister-deiner-gedanken`,
+eu-central-1):** Tabelle `widerrufe` ist **eingespielt** – 12 Spalten, RLS aktiv
+ohne Policies, CHECKs für `produkt`/`status`, Indizes (pkey, `referenz` unique,
+`eingegangen_at`), Trigger `t_widerrufe_touch`. Geprüft per Probezeile in einer
+zurückgerollten Transaktion: Schreiben ok, `anon` sieht 0 Zeilen, Tabelle danach
+leer. Supabase-Advisor: nur der erwartete Info-Hinweis „RLS ohne Policy“ (wie bei
+`kontakt_anfragen`).
+- Eingespielt per `execute_sql`, **nicht** über `apply_migration`: Das Tool brach
+  zweimal mit Timeout ab (vermutlich wartete `drop trigger if exists` auf eine
+  Bestätigung). Deshalb steht der Eintrag nicht in der Supabase-Migrationsliste –
+  wie schon bei `ki_einwilligungen`. Die Datei im Repo ist die Quelle der
+  Wahrheit; das Skript ist wiederholbar.
+- Für den Livebetrieb weiter nötig: `RESEND_API_KEY`, `CONTACT_FROM`/`CONTACT_TO`
+  (wie beim Kontaktformular). Nach dem Deploy einmal einen Test-Widerruf absenden
+  und unter `/admin/widerrufe` prüfen.
 
 **Geprüft:** `tsc` ✓, `npm test` 40/40 ✓, ESLint ✓, `npm run build` ✓;
 API-Fehlerfälle (Pflichtfelder, falscher Vertrag, Honeypot, kein JSON, weder
