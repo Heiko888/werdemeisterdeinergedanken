@@ -23,7 +23,7 @@ automatisch live.
 | Footer-Schaltfläche | `src/lib/site.ts` (`legalNav`) | „Verträge hier kündigen“ – nur bei `MITGLIEDSCHAFT_AKTIV` |
 | Bestätigungsseite | `src/app/kuendigen/page.tsx`, `src/components/sections/KuendigungForm.tsx` | ohne Login; fragt Art (ordentlich/außerordentlich + Grund), Name, E-Mail, Vertrag, freiwillig Vertragsnr., Zeitpunkt (Standard: nächstmöglich, alternativ Datum); Schaltfläche „Jetzt kündigen“; danach Ansicht mit Inhalt, Datum/Uhrzeit, Referenz und Knopf „speichern oder drucken“; bei `false` → 404 |
 | Annahme | `src/app/api/kuendigung/route.ts` | Rate-Limit 10/10 min, Honeypot, gleiche Prüfung; sucht aktive Mitgliedschaft zur E-Mail (Periodenende), speichert in `kuendigungen`, Mail an Heiko + Bestätigung an die Person (Inhalt, Eingang, Vertragsende); 503 mit E-Mail-Ausweg, wenn weder gespeichert noch Mail an Heiko; bei `false` → 404 |
-| Datenbank | `supabase/migrations/20261011180000_kuendigungen.sql` | Tabelle `kuendigungen`, RLS ohne Policies (nur Service-Role) – **noch NICHT eingespielt** |
+| Datenbank | `supabase/migrations/20261011180000_kuendigungen.sql` | Tabelle `kuendigungen`, RLS ohne Policies (nur Service-Role) – **auf dem Server eingespielt** (2026-10-11, per `execute_sql`, daher nicht in der Supabase-Migrationsliste) |
 | Admin | `src/app/admin/kuendigungen/page.tsx`, `AdminNav` | Liste mit Eingang, Referenz, Art, Zeitpunkt, Periodenende bzw. „keine aktive Mitgliedschaft gefunden“, Status |
 | Datenschutz | `src/app/datenschutz/page.tsx`, Punkt 9 | Absatz zur Kündigung – erscheint nur bei `MITGLIEDSCHAFT_AKTIV` |
 
@@ -45,8 +45,12 @@ Datumsprüfung, 503-Ausweg (hier ohne Supabase/Resend), Honeypot, Erfolgsansicht
 (API gemockt). Schalter danach wieder auf `false`. Echter Versand und echtes
 Speichern sind erst nach Migration + Freischaltung testbar.
 
+**Server-Prüfung nach dem Einspielen:** RLS aktiv, 0 Policies, Trigger
+`t_kuendigungen_touch` vorhanden; Test-Insert (zurückgerollt) klappt, Rolle
+`anon` sieht keine Zeilen. Keine Testdaten zurückgeblieben.
+
 **Vor dem Freischalten der Mitgliedschaft:**
-1. Migration `20261011180000_kuendigungen.sql` in Supabase einspielen.
+1. ~~Migration einspielen~~ – erledigt.
 2. Einmal selbst kündigen (Test-Abo) und prüfen: Eintrag in `/admin/kuendigungen`,
    Mail an Heiko, Bestätigung an die Person mit richtigem Periodenende.
 
