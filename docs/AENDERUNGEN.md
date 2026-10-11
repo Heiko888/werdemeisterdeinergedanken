@@ -5,6 +5,55 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-11 – Widerrufsfunktion „Vertrag hier widerrufen“
+
+**Anlass:** Seit 19.06.2026 gilt die EU-Widerrufsfunktion (Richtlinie
+2023/2673): Wer online Verträge mit Widerrufsrecht schließt, muss während der
+Widerrufsfrist eine leicht auffindbare Funktion zum Widerrufen anbieten, mit
+Bestätigungsschritt und Eingangsbestätigung auf einem dauerhaften Datenträger.
+Buchverkauf und Mitgliedschaft sind noch **nicht** freigeschaltet – die
+Funktion steht damit bereit, bevor der erste Vertrag möglich ist.
+
+**Ablauf:** Footer-Link „Vertrag hier widerrufen“ (dauerhaft, ohne Login) →
+`/widerruf`: Name, E-Mail, Vertrag (Buch PDF / Buch Druck / Mitgliedschaft /
+Anderer), freiwillig Bestellung und Anmerkung → Schaltfläche „Widerruf
+bestätigen“ → `/api/widerruf` speichert mit Eingangszeitpunkt und Referenz
+(z. B. `WR-3F9A2C71`), benachrichtigt Heiko und schickt der Person eine
+Eingangsbestätigung per E-Mail (Inhalt, Datum, Uhrzeit, Referenz). Die Seite
+zeigt Zeitpunkt und Referenz sofort an.
+
+**Neu**
+- `src/lib/widerruf.ts` – Prüfung, Texte, Referenz, Zeitformat (eine Quelle
+  für Formular und Server) · `src/lib/widerruf.test.ts` (7 Tests)
+- `src/app/widerruf/page.tsx` (noindex) · `src/components/sections/WiderrufForm.tsx`
+- `src/app/api/widerruf/route.ts` – Rate-Limit, Honeypot. Meldet nur Erfolg,
+  wenn der Widerruf gespeichert ODER bei Heiko angekommen ist; sonst Fehler mit
+  E-Mail-Adresse als Ausweg. Scheitert nur die Bestätigungsmail, sagt die
+  Seite das ehrlich und bittet, die Seite zu speichern.
+- `supabase/migrations/20261011120000_widerrufe.sql` – Tabelle `widerrufe`
+  (RLS ohne Policies, nur Service-Role)
+- `src/app/admin/widerrufe/page.tsx` + Eintrag „Widerrufe“ in der Admin-Navigation
+
+**Geändert:** `src/lib/site.ts` (Footer-Link), `src/lib/admin-data.ts`,
+`src/app/admin/_ui.tsx` (Status „bearbeitet“), Datenschutzerklärung Punkt 9
+(Absatz zur Widerrufsfunktion, Art. 6 Abs. 1 lit. c / f DSGVO).
+
+**Auf dem Server zu tun:** Migration `20261011120000_widerrufe.sql` in Supabase
+einspielen. Ohne Tabelle funktioniert der Widerruf nur über die E-Mails.
+`RESEND_API_KEY`, `CONTACT_FROM`/`CONTACT_TO` wie beim Kontaktformular.
+
+**Geprüft:** `tsc` ✓, `npm test` 40/40 ✓, ESLint ✓, `npm run build` ✓;
+API-Fehlerfälle (Pflichtfelder, falscher Vertrag, Honeypot, kein JSON, weder
+Datenbank noch Mail → 503) per `next start`; Erfolgsablauf im Browser
+(Playwright, 375 px, simulierte Server-Antwort) ohne Überlauf.
+
+**Offen:** Widerrufsbelehrung/Muster-Widerrufsformular, AGB, Zustimmung zum
+Erlöschen des Widerrufsrechts beim PDF im Checkout, Kündigungsbutton nach
+§ 312k BGB für die Mitgliedschaft – vor Freischaltung von Buch bzw.
+Mitgliedschaft. Rechtliche Prüfung der Umsetzung empfohlen.
+
+---
+
 ## 2026-10-07 – Nachweis der KI-Einwilligung mit Zeitstempel
 
 - **Migration (neu, noch NICHT eingespielt):**
