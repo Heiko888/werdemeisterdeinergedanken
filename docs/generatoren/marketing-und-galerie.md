@@ -170,6 +170,27 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 > die ganze Geschichte. Beide lesen ihr eigenes `STORIES`-Array — bei neuen
 > Geschichten **beide** pflegen, sonst laufen sie auseinander.
 
+
+## tools/marketing/interaktive-story.mjs
+
+- **Zweck:** Interaktive **Instagram-Story** (nur 9:16) – eine Frage-Sequenz
+  mit freiem Platz für Instagram-Sticker (Umfrage, Emoji-Slider,
+  Fragen-Sticker). Erste Story: „Auf welcher Seite stehst du?".
+- **Aufruf:** `npm run interaktive-story` (`THEME=hell|tuerkis|tuerkis-hell`
+  rendert nur eine Farbwelt, ohne den Ordner zu leeren).
+- **Voraussetzungen:** wie story-overlays (Node, `playwright`, Chromium,
+  `docs/reels/covers/_fonts.css`, `public/logo-brain-{gold,tuerkis}.png`).
+- **Eingaben:** `STORIES`-Array **inline**; Frame-Rollen `text` (fertiger
+  Frame), `overlay` (transparent, kommt über das Originalbild), `bild`
+  (Originalbild, wird nicht gerendert). Optional das Bild unter
+  `docs/marketing/_input/<bild>` → dann zusätzlich Vorschau-PNGs.
+- **Ausgaben:** `docs/marketing/interaktive-stories/<slug>/9x16/`
+  `NN.png` / `NN-hell.png` (Text-Frames, Standard dunkel + Creme),
+  `NN-overlay.png`, ggf. `NN-vorschau.png`. Voll-Lauf leert den Ordner.
+- **Skript dazu:** `docs/skripte/stories/<slug>.md` (Sprechtext, Sticker-Texte,
+  Folge-Story) – Texte dort und im `STORIES`-Array gemeinsam pflegen.
+- **Galerie:** noch **nicht** in `build-gallery.mjs` eingebunden.
+
 ---
 
 ## tools/vorlagen/build-gallery.mjs — Galerie-Vollbau

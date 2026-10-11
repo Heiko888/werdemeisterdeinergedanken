@@ -12,3 +12,11 @@ Danach rendern:
 Ergebnis: `docs/marketing/personal/WMDG-Personal-<format><theme>.png`
 (Foto auf Marken-Hintergrund mit zentralem Glow – 1:1, 4:5, 9:16, 16:9;
 je Creme/Dunkel/Türkis/Türkis-Creme).
+
+## Bild für die interaktive Story „Auf welcher Seite stehst du?"
+
+    docs/marketing/_input/auf-welcher-seite.jpg   (9:16, z. B. 864×1536)
+
+Dann `npm run interaktive-story` – erzeugt zusätzlich fertige
+`NN-vorschau.png` (Overlay + Bild) unter
+`docs/marketing/interaktive-stories/auf-welcher-seite-stehst-du/9x16/`.

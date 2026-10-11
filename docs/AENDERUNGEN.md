@@ -5,6 +5,28 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-11 – Interaktive Instagram-Story „Auf welcher Seite stehst du?"
+
+**Anlass:** Story zum Bild Natur ↔ Uhrwerk – Fragen statt Erklärung, die
+Leute sollen sich selbst im Bild erkennen; Botschaft erst am Ende, offen.
+
+**Serverstand:** keine Änderung an Website, Datenbank oder Server. Nur
+Marketing-Material im Repo.
+
+| Baustein | Datei |
+|---|---|
+| Skript (14 Frames, Sticker, Sprechtext, Folge-Story Tag 2, Real Talk 2) | `docs/skripte/stories/auf-welcher-seite-stehst-du.md` |
+| Generator (neu) | `tools/marketing/interaktive-story.mjs`, npm-Script `interaktive-story` |
+| Fertige Frames (9:16, dunkel + Creme, Overlays transparent) | `docs/marketing/interaktive-stories/auf-welcher-seite-stehst-du/9x16/` |
+| Doku | `docs/generatoren/marketing-und-galerie.md`, `docs/skripte/README.md`, `docs/marketing/_input/README.md` |
+
+**Offen:** Das Originalbild liegt nicht im Repo. Unter
+`docs/marketing/_input/auf-welcher-seite.jpg` ablegen und neu rendern, dann
+entstehen fertige Vorschau-Frames (Bild + Text). Die Frames sind noch nicht in
+der Vorlagen-Galerie (`build-gallery.mjs`).
+
+---
+
 ## 2026-10-11 – Kündigungsbutton (§ 312k BGB) für die Mitgliedschaft
 
 **Anlass:** Wer Abos online verkauft, muss eine Kündigung ebenso online

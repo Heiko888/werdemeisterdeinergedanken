@@ -77,6 +77,15 @@ Video-Skripte zum Block „Wie dein Denken gelenkt wird":
 Themenblock „Wie dein Denken gelenkt wird", je mit Hook, Skript, On-Screen-Text
 und CTA.
 
+## Interaktive Stories (Instagram, `stories/`)
+
+| Story | Skript | Frames |
+|---|---|---|
+| „Auf welcher Seite stehst du?" (Bild Natur ↔ Uhrwerk) | `stories/auf-welcher-seite-stehst-du.md` | `docs/marketing/interaktive-stories/auf-welcher-seite-stehst-du/9x16/` (`npm run interaktive-story`) |
+
+Fragen statt Erklärung, Sticker in jedem zweiten Frame, offenes Ende; mit
+Folge-Story (Tag 2) und Anschluss an Real Talk 2.
+
 ## Über mich – YouTube & Reel-Talk (`ueber-mich/`)
 
 Talking-Head-Content zu Heikos Geschichte, Grundlage ist ausschließlich die
