@@ -5,6 +5,40 @@ aktuelle Stand nachvollziehbar ist. Neueste Einträge oben.
 
 ---
 
+## 2026-10-11 – Supabase: Sicherheitshinweise behoben (Funktionsrechte)
+
+**Anlass:** Security-Advisor von Supabase (Projekt `werde-meister-deiner-gedanken`).
+Datei: `supabase/migrations/20261011160000_rechte_haerten.sql`. **Auf dem Server
+bereits eingespielt** (per `execute_sql` in einer Transaktion, daher nicht in der
+Supabase-Migrationsliste – wie `ki_einwilligungen` und `widerrufe`).
+
+| Funktion | Befund | Änderung |
+|---|---|---|
+| `set_updated_at()` | `search_path` nicht gesetzt | `set search_path = ''`. War in `0013_redaktionsplan.sql` schon so gesichert, wurde von `20260914172539_erstgespraech_cockpit.sql` per `create or replace` ohne Absicherung überschrieben (Rückschritt). |
+| `ist_admin()` | von `anon` aufrufbar (SECURITY DEFINER) | EXECUTE für `PUBLIC`, `anon` entzogen; `authenticated` und `service_role` behalten es (RLS-Policies der Admin-Tabellen und `rpc("ist_admin")` in `/admin/methoden`, `/admin/erstgespraeche`). |
+| `benachrichtige_neuer_fragebogen()` | von `anon`/`authenticated` per `/rest/v1/rpc` aufrufbar | EXECUTE für `PUBLIC`, `anon`, `authenticated` entzogen – reine Trigger-Funktion (liest Vault-Geheimnis, ruft Edge-Function). |
+
+**Vorab getestet (zurückgerollte Transaktionen):** anonymer Fragebogen-Insert
+ohne EXECUTE-Recht klappt, Trigger feuert weiter; `ist_admin()` für
+`authenticated` aufrufbar, für `anon` nicht; nach dem Einspielen
+`set_updated_at`-Trigger an `redaktionsplan_posts` geprüft (setzt `updated_at`).
+Keine Testdaten zurückgeblieben.
+
+**Advisor danach:** nur noch
+- `ist_admin()` und `ki_einwilligung_erfassen()` für `authenticated` – **gewollt**,
+  beide sind für angemeldete Nutzer gebaut (Admin-Prüfung bzw. Nachweis der
+  KI-Einwilligung mit `auth.uid()`).
+- „RLS ohne Policy“ (Info) für Tabellen, auf die nur der Server zugreift – gewollt.
+- „Leaked Password Protection“ aus – **Einstellung im Supabase-Dashboard**
+  (Authentication → Passwort-Sicherheit), nicht per SQL.
+
+**Rückweg, falls nötig:**
+`alter function public.set_updated_at() reset search_path;`
+`grant execute on function public.ist_admin() to anon;`
+`grant execute on function public.benachrichtige_neuer_fragebogen() to anon, authenticated;`
+
+---
+
 ## 2026-10-11 – Widerrufsfunktion „Vertrag hier widerrufen“
 
 **Anlass:** Seit 19.06.2026 gilt die EU-Widerrufsfunktion (Richtlinie
