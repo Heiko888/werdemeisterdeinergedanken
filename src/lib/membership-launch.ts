@@ -13,7 +13,13 @@
  *
  * Bewusst eine Konstante im Code und keine Umgebungsvariable: Freigeschaltet
  * wird nur mit einem bewussten Commit, nachdem die rechtlichen Punkte
- * (AGB, Widerrufsbelehrung, Preisangaben, Kündigungsbutton) geklärt sind.
+ * (AGB, Widerrufsbelehrung, Preisangaben) geklärt sind.
+ *
+ * Kündigungsbutton (§ 312k BGB) ist gebaut und hängt an diesem Schalter:
+ * Bei `true` erscheint „Verträge hier kündigen“ im Footer, /kuendigen und
+ * /api/kuendigung sind erreichbar und die Datenschutzerklärung nennt die
+ * Verarbeitung (src/lib/kuendigung.ts). Vorher Migration
+ * 20261011180000_kuendigungen.sql einspielen!
  * Siehe docs/AENDERUNGEN.md, Eintrag 2026-10-03.
  */
 export const MITGLIEDSCHAFT_AKTIV = false;

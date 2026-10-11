@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Prose } from "@/components/layout/Prose";
 import { site } from "@/lib/site";
 import { withCanonical } from "@/lib/seo";
+import { MITGLIEDSCHAFT_AKTIV } from "@/lib/membership-launch";
 
 export const metadata: Metadata = withCanonical("/datenschutz", {
   title: "Datenschutzerklärung",
@@ -240,6 +241,27 @@ export default function PrivacyPage() {
                 als gesetzliche Pflicht) und für den Missbrauchsschutz Art. 6
                 Abs. 1 lit. f DSGVO.
               </p>
+              {/* Erst sichtbar, wenn die Mitgliedschaft buchbar ist (wie der Kündigungsbutton). */}
+              {MITGLIEDSCHAFT_AKTIV && (
+                <p>
+                  Wenn du über &bdquo;Verträge hier kündigen&ldquo; (Seite{" "}
+                  <a href="/kuendigen">/kuendigen</a>) deine Mitgliedschaft
+                  kündigst, verarbeiten wir deinen Namen, deine E-Mail-Adresse, den
+                  Vertrag, deine freiwillige Kunden- oder Vertragsnummer, Art und
+                  gewünschten Zeitpunkt der Kündigung, bei einer außerordentlichen
+                  Kündigung den von dir genannten Grund sowie den Zeitpunkt des
+                  Eingangs. Anhand deiner E-Mail-Adresse gleichen wir die Kündigung
+                  mit deiner Mitgliedschaft ab, um dir das Vertragsende nennen zu
+                  können. Wir speichern die Kündigung in unserer Datenbank
+                  (Supabase, siehe Punkt 12) und schicken dir über Resend (siehe
+                  Punkt 11) eine Kündigungsbestätigung. Zum Schutz vor Missbrauch
+                  wird außerdem die IP-Adresse der Anfrage gespeichert.
+                  Rechtsgrundlage ist Art. 6 Abs. 1 lit. b und c DSGVO
+                  (Vertragsbeendigung und gesetzliche Bestätigungspflicht nach
+                  § 312k BGB) und für den Missbrauchsschutz Art. 6 Abs. 1 lit. f
+                  DSGVO.
+                </p>
+              )}
 
               <h2>10. Newsletter &amp; E-Book-Anmeldung</h2>
               <p>
