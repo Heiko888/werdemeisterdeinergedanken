@@ -23,7 +23,7 @@
  * gemeinsam pflegen.
  */
 import { execFileSync } from "node:child_process";
-import { writeFileSync, existsSync, readdirSync, mkdirSync, rmSync } from "node:fs";
+import { writeFileSync, existsSync, readdirSync, mkdirSync, rmSync, copyFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
@@ -46,7 +46,7 @@ const THEMES = (process.env.THEME ? [process.env.THEME] : ["dunkel", "hell"]).fi
 const STORIES = [
   {
     slug: "auf-welcher-seite-stehst-du",
-    bild: "public/takt rhytmus.jpeg", // Originalbild (relativ zum Repo) – für die Vorschau-Frames
+    bild: "docs/marketing/_input/takt-rhythmus.jpeg", // Originalbild (relativ zum Repo) – für die Vorschau-Frames
     frames: [
       { role: "text", sticker: null, lead: `Schau dir dieses Bild mal <em>ganz genau</em> an.`, body: `Nicht nur kurz. Wirklich genau.` },
       { role: "bild" },
@@ -157,6 +157,28 @@ async function shot(html, path, transparent) {
   await pg.close(); rmSync(tmp, { force: true });
 }
 
+// Download-Paket: hochladen/ (fertige Frames in Story-Reihenfolge, dunkel),
+// creme/ (Text-Frames in Creme), overlays/ (transparente Ebenen) + Skript.
+function packZip(story, dir) {
+  const stage = join(OUT, `.zip-${story.slug}`);
+  rmSync(stage, { recursive: true, force: true });
+  const files = readdirSync(dir);
+  const put = (sub, name) => { mkdirSync(join(stage, sub), { recursive: true }); copyFileSync(join(dir, name), join(stage, sub, name)); };
+  story.frames.forEach((fr, i) => {
+    const nr = String(i + 1).padStart(2, "0");
+    const pick = fr.role === "bild" ? `${nr}-bild-8s.mp4` : fr.role === "overlay" ? `${nr}-vorschau.png` : `${nr}.png`;
+    if (files.includes(pick)) put("hochladen", pick);
+  });
+  files.filter((f) => /-hell\.png$/.test(f)).forEach((f) => put("creme", f));
+  files.filter((f) => /-overlay\.png$/.test(f)).forEach((f) => put("overlays", f));
+  const skript = join(ROOT, "docs/skripte/stories", `${story.slug}.md`);
+  if (existsSync(skript)) copyFileSync(skript, join(stage, "skript.md"));
+  const zip = join(OUT, `${story.slug}.zip`);
+  rmSync(zip, { force: true });
+  try { execFileSync("zip", ["-qr", zip, "."], { cwd: stage }); } catch { console.warn("! zip fehlt – kein Download-Paket"); }
+  rmSync(stage, { recursive: true, force: true });
+}
+
 for (const story of STORIES) {
   const dir = join(OUT, story.slug, "9x16");
   mkdirSync(dir, { recursive: true });
@@ -188,6 +210,7 @@ for (const story of STORIES) {
       await shot(doc(fr, theme), join(dir, `${nr}${THEME_SUFFIX[theme]}.png`), false); n++;
     }
   }
+  packZip(story, dir);
   console.log("✓", story.slug, `(${n} Dateien${photo ? ", mit Bild-Vorschau" : ", ohne Bild-Vorschau – Bild fehlt: " + story.bild})`);
 }
 await browser.close();

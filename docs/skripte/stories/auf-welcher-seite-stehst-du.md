@@ -163,7 +163,9 @@ Grobe Linie für das Folgevideo:
 
 ## Produktion
 
-1. Originalbild: `public/takt rhytmus.jpeg` (864×1536, 9:16).
+1. Originalbild: `docs/marketing/_input/takt-rhythmus.jpeg` (864×1536, 9:16).
+   **Download-Paket:** `docs/marketing/interaktive-stories/auf-welcher-seite-stehst-du.zip`
+   – Ordner `hochladen/` enthält alle 14 Frames in Story-Reihenfolge.
 2. Rendern: `npm run interaktive-story` (dunkel + Creme; Türkis per
    `THEME=tuerkis npm run interaktive-story`)
 3. In Canva/Instagram zusammensetzen:

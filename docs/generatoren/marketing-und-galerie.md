@@ -183,12 +183,14 @@ Gemeinsame Assets: `tools/pdf/assets/fonts.css` bzw.
 - **Eingaben:** `STORIES`-Array **inline**; Frame-Rollen `text` (fertiger
   Frame), `overlay` (transparent, kommt über das Originalbild), `bild`
   (Originalbild → `NN-bild-8s.mp4` per `ffmpeg`). Bildpfad je Story in
-  `bild` (aktuell `public/takt rhytmus.jpeg`); fehlt das Bild, entstehen nur
+  `bild` (aktuell `docs/marketing/_input/takt-rhythmus.jpeg`); fehlt das Bild, entstehen nur
   die Overlays ohne Vorschau und ohne Video.
 - **Ausgaben:** `docs/marketing/interaktive-stories/<slug>/9x16/`
   `NN.png` / `NN-hell.png` (Text-Frames, Standard dunkel + Creme),
   `NN-overlay.png`, `NN-vorschau.png` (Overlay + Bild), `NN-bild-8s.mp4`.
-  Voll-Lauf leert den Ordner. Zusätzliche Voraussetzung: `ffmpeg` (optional,
+  Dazu das Download-Paket `docs/marketing/interaktive-stories/<slug>.zip`
+  (`hochladen/` = fertige Frames in Story-Reihenfolge, `creme/`, `overlays/`,
+  `skript.md`; braucht `zip`). Voll-Lauf leert den Ordner. Zusätzliche Voraussetzung: `ffmpeg` (optional,
   nur fürs Video).
 - **Skript dazu:** `docs/skripte/stories/<slug>.md` (Sprechtext, Sticker-Texte,
   Folge-Story) – Texte dort und im `STORIES`-Array gemeinsam pflegen.
